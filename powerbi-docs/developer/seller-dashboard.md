@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002532"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223661"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Soumettre un visuel Power BI à AppSource à l'aide du tableau de bord vendeur
 
@@ -103,7 +103,7 @@ Suivez les instructions de cette section afin de soumettre un visuel Power BI p
     * [Respect des exigences](power-bi-custom-visuals-certified.md#certification-requirements)
     * Revue du code réussie
 
-2. L’équipe de Microsoft en charge des visuels Power BI vous avertit quand votre visuel Power BI est certifié et ajouté à la [liste certifiée](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified). S’il est rejeté, un rapport des problèmes à résoudre vous est envoyé. Il incombe au développeur d’ouvrir et de maintenir ouverte une ligne de communication avec Microsoft, ainsi que de mettre à jour ses visuels certifiés au besoin.
+2. L’équipe de Microsoft en charge des visuels Power BI vous avertit quand votre visuel Power BI est certifié et ajouté à la liste des [visuels Power BI certifiés](power-bi-custom-visuals-certified.md#certified-power-bi-visuals). S’il est rejeté, un rapport des problèmes à résoudre vous est envoyé. Il incombe au développeur d’ouvrir et de maintenir ouverte une ligne de communication avec Microsoft, ainsi que de mettre à jour ses visuels certifiés au besoin.
 
 ## <a name="tracking-submission-status-and-usage"></a>Suivi de l’utilisation et de l’état de la soumission
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695194"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304170"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX : Fonction DIVIDE ou opérateur de division (/)
 
@@ -58,7 +58,7 @@ Nous vous recommandons d’utiliser la fonction DIVIDE chaque fois que le dénom
 
 Dans le cas où le dénominateur est une valeur constante, nous vous recommandons d’utiliser l’opérateur de division. Dans ce cas, la réussite de la division est garantie et votre expression est plus performante, car elle évite les tests inutiles.
 
-Déterminez avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il convient généralement mieux de retourner BLANK quand un résultat significatif ne peut pas être évalué. Pour plus d’informations, consultez [Éviter de convertir des blancs (BLANK) en valeurs](dax-avoid-converting-blank.md).
+Déterminez avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il est généralement préférable qu’elle retourne BLANK. Il est préférable de retourner BLANK parce que les visuels de rapport éliminent par défaut les regroupements quand les totalisations ont la valeur BLANK. Cela permet au visuel de fixer son attention sur les groupes où il existe des données. Si nécessaire, vous pouvez configurer le visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option [Afficher les éléments sans données](../desktop-show-items-no-data.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

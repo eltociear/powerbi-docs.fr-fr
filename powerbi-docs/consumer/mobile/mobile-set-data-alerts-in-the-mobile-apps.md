@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870108"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221374"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Définir des alertes de données dans les applications mobiles Power BI
 S’applique à :
@@ -62,7 +62,8 @@ Vous pouvez gérer des alertes spécifiques sur votre appareil mobile ou [gérer
 
 1. Dans un tableau de bord, appuyez sur une vignette numérique ou de jauge associée à une alerte.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Appuyez sur l’icône en forme de cloche ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Appuyez sur le nom de l’alerte pour la modifier, appuyez sur le curseur pour désactiver les alertes par courrier électronique ou sur la poubelle pour supprimer l’alerte.
    
@@ -148,10 +149,12 @@ Les sources de données sont souvent configurées pour être actualisées tous l
 2. Si vous avez défini l’alerte de façon à recevoir un courrier électronique, vous recevez un message semblable à celui-ci dans votre boîte de réception.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI ajoute un message à votre **centre de notification** et ajoute une nouvelle icône d’alerte à la vignette applicable ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png).
-4. Appuyez sur le bouton de navigation globale ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) pour [ouvrir le **centre de notification**](mobile-apps-notification-center.md) et afficher les détails de l’alerte.
+3. Power BI ajoute un message à votre [Centre de notification](mobile-apps-notification-center.md) et ajoute un point jaune à l’icône représentant une cloche ![icône représentant une cloche](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) sur la barre de titre (iOS et Android) ou au bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (appareils Windows 10).
+
+
+4. Appuyez sur l’icône représentant une cloche ![icône représentant une cloche](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) ou sur le bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) pour [ouvrir votre **Centre de notifications**](mobile-apps-notification-center.md) et consulter les détails de l’alerte.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > Les alertes fonctionnent uniquement sur les données actualisées Lorsque les données sont actualisées, Power BI vérifie si une alerte est définie pour celles-ci. Si les données ont atteint un seuil d’alerte, une alerte est déclenchée.

@@ -10,13 +10,13 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
 ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311421"
 ---
-# <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
+# <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
 
 Avec **Power BI Embedded dans Azure** ou l’**incorporation de Power BI dans Office**, vous pouvez incorporer des rapports paginés dans une application à l’aide de l’exemple App Owns Data (L’application possède les données). **Application possède des données** vise à permettre d’avoir une application qui utilise Power BI comme sa plateforme d’analyse incorporée. En tant qu’**éditeur de logiciels indépendant (ISV)** ou que **développeur**, vous pouvez créer du contenu Power BI qui affiche des rapports paginés dans une application qui est entièrement intégrée et interactive, sans exiger des utilisateurs qu’ils disposent d’une licence Power BI. Ce tutoriel montre comment intégrer un rapport paginé dans une application à l’aide du SDK Power BI .NET avec l’API JavaScript Power BI.
 
@@ -27,7 +27,7 @@ Dans ce tutoriel, vous allez découvrir comment :
 > * inscrire une application dans Azure ;
 > * incorporer un rapport paginé Power BI dans une application.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour commencer, vous devez disposer des éléments suivants :
 
@@ -203,7 +203,7 @@ Dans **tenant**, indiquez votre ID de locataire Azure. Vous pouvez obtenir ces i
 
 Même si les étapes permettant d’incorporer vos rapports paginés Power BI sont effectuées avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **SDK .NET**.
 
-L’incorporation de rapports paginés Power BI pour vos clients dans votre application nécessite que vous disposiez d’un [principal de service](embed-service-principal.md) **Azure AD** et que vous obteniez un [jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI, avant d’effectuer des appels aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+L’incorporation de rapports paginés Power BI pour vos clients dans votre application vous demande de disposer d’un [principal de service](embed-service-principal.md) **Azure AD** et d’obtenir un [jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI, avant d’effectuer des appels aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
 
 Pour créer le client Power BI avec votre **jeton d’accès**, créez un objet client Power BI pour interagir avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
 

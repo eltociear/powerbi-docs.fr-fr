@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Utiliser Cognitive Services dans Power BI (préversion)'
+title: 'Tutoriel : Utiliser Cognitive Services dans Power BI (préversion)'
 description: Dans ce tutoriel, vous utilisez Cognitive Services et des flux de données dans Power BI.
 author: davidiseminger
 ms.reviewer: SarinaJoan
@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bdf35d04a5b4dc7000a9ada0afcb23d882d17780
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e9b34d79a70207e175c873a88ec4d5dfe5417747
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871243"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224230"
 ---
-# <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
+# <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
 
 Power BI permet d’accéder à un ensemble de fonctions d’Azure Cognitive Services pour enrichir vos données dans la préparation des données de libre-service pour les flux de données. Les services actuellement pris en charge sont l’[analyse des sentiments](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), l’[extraction de phrases clés](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), la [détection de langue](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) et le [balisage des images](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). Les transformations sont exécutées sur le service Power BI et ne nécessitent pas d’abonnement Azure Cognitive Services. Cette fonctionnalité requiert Power BI Premium.
 
@@ -31,7 +31,7 @@ Dans ce tutoriel, vous allez découvrir comment :
 > * vous connecter aux résultats à partir de Power BI Desktop.
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour suivre ce tutoriel, vous devez avoir de ce qui suit : 
 
@@ -180,6 +180,6 @@ Dans ce tutoriel, vous avez appliqué des fonctions de scoring des sentiments et
 
 Les articles suivants pourraient également vous intéresser.
 
-* [Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)](service-tutorial-invoke-machine-learning-model.md)
+* [Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)](service-tutorial-invoke-machine-learning-model.md)
 * [Intégration d’Azure Machine Learning dans Power BI (préversion)](service-machine-learning-integration.md)
 * [Cognitive Services dans Power BI (préversion)](service-cognitive-services.md)

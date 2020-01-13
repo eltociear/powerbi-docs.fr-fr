@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: dced3d2bfe844e857556386fb208395faab3fd8b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698966"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548588"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -61,7 +61,7 @@ Le tableau suivant décrit les nombreuses tâches effectuées par les administra
 | Assurer la conformité aux stratégies internes, à la législation et aux réglementations | <ul><li>Gérer la classification de données métiers<br><li>Participer à la publication de contenu et au partage de stratégies</ul>|
 | Gérer les ressources Power BI |<ul><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés<br><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications|
 | Offrir de l’aide et un support aux utilisateurs du client |<ul><li>Résoudre les problèmes d’accès aux données et autres</ul>|
-| Autres tâches |<ul><li>Déployer Power BI Desktop, par exemple, avec System Center Configuration Manager<br><li>Gérer le déploiement d’applications mobiles Power BI avec Intune<br><li>Gérer la sécurité et la confidentialité des données, notamment des données sources</ul>|
+| Autres tâches |<ul><li>Déployer Power BI Desktop, par exemple avec Microsoft Endpoint Configuration Manager<br><li>Gérer le déploiement d’applications mobiles Power BI avec Intune<br><li>Gérer la sécurité et la confidentialité des données, notamment des données sources</ul>|
 
 ## <a name="administrative-tools"></a>Outils d’administration
 
@@ -70,7 +70,7 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 | **Outil** | **Tâches courantes** |
 | --- | --- |
 | Portail d’administration Power BI |<ul><li>Acquérir et travailler avec une capacité Premium</li><li>Garantir la qualité de service</li><li>Gérer la classification de données métiers</li><li>Participer à la publication de contenu et au partage de stratégies</li><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés</li><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications</li><li>Résoudre les problèmes d’accès aux données et autres</li></ul>|
-| Centre d’administration Microsoft 365 |<ul><li>Gérer l’inscription des utilisateurs</li><li>Acheter et affecter des licences Pro</li><li>Empêcher les utilisateurs d’accéder à Power BI</li></ul>|
+| Centre d'administration Microsoft 365 |<ul><li>Gérer l’inscription des utilisateurs</li><li>Acheter et affecter des licences Pro</li><li>Empêcher les utilisateurs d’accéder à Power BI</li></ul>|
 | Centre de sécurité et conformité Office 365 |<ul><li>Examiner et gérer les audits d’événements</li></ul>|
 | Azure Active Directory (AAD) sur le Portail Azure |<ul><li>Configurer l’accès conditionnel aux ressources de Power BI avec AAD</li><li>Approvisionner la capacité de Power BI Embedded</li></ul>|
 | Applets de commande PowerShell |<ul><li>Gérer les espaces de travail et d’autres aspects de Power BI avec des scripts</li></ul>|

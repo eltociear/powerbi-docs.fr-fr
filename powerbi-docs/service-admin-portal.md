@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882901"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224203"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -168,9 +168,9 @@ Les sections suivantes fournissent une vue d’ensemble des différents types de
 
 Les utilisateurs dans l’organisation peuvent accéder à l’aide interne et aux ressources de support dans le menu d’aide de Power BI. Plus précisément, ces paramètres changent le comportement des éléments du menu Apprendre, Communauté et Obtenir de l’aide.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+De plus, en spécifiant une URL pour les demandes de licences, vous personnalisez l’URL cible du bouton **Mettre à niveau le compte**. Les utilisateurs qui n’ont pas de licence Power BI Pro voient ce bouton dans la boîte de dialogue **Mettre à niveau vers Power BI Pro** ainsi que dans la page **Gérer le stockage personnel**. Par ailleurs, Power BI ne présente plus le bouton **Essayez gratuitement la version Pro** dans cette boîte de dialogue ni dans cette page du stockage. Ainsi, Power BI guidera les utilisateurs de manière fiable tout au long des processus définis dans votre organisation par le biais de votre solution de gestion des licences.
 
-En spécifiant une URL pour les demandes de licences, vous personnalisez l’URL cible du bouton **Mettre à niveau le compte** qu’un utilisateur sans licence Power BI Pro peut trouver dans la boîte de dialogue **Mettre à niveau vers Power BI Pro**, ainsi que dans la page **Gérer le stockage personnel**. De plus, Power BI ne propose plus le bouton **Essayez gratuitement la version Pro** dans cette boîte de dialogue ni dans la page de stockage. Ceci est fait pour garantir que Power BI guidera vos utilisateurs de manière fiable tout au long des processus définis au sein de votre organisation via votre solution de gestion des licences.
+![Paramètre d’activation sélective](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Recevoir des notifications par e-mail pour les pannes ou incidents du service
 

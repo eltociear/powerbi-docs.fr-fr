@@ -1,19 +1,19 @@
 ---
 title: Affichage de vos données hors connexion dans les applications mobiles Power BI
 description: 'Découvrez un avantage de l’affichage de Power BI dans une application mobile plutôt qu’un navigateur mobile : la possibilité de visualiser vos données même quand vous n’êtes connecté à aucun réseau.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870614"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219071"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -34,7 +34,7 @@ Quand vous êtes en mode hors connexion, vous pouvez accéder à tous les tablea
 Vous avez également accès en lecture seule à tous les rapports Power BI auxquels vous avez précédemment accédés depuis l’application mobile. Vous pouvez voir le rapport complet, mais vous ne pouvez pas filtrer, effectuer un filtrage croisé, trier ou utiliser des segments.
 
 ## <a name="background-data-refresh"></a>Actualisation des données en arrière-plan
-L’actualisation en arrière-plan met à jour vos tableaux de bord favoris, ainsi que les tableaux de bord et les rapports que vous avez sélectionnés au cours des deux dernières semaines, avec les données sur le service Power BI (et pas la source de données). Si vous êtes connecté à Internet via Wi-Fi, l’actualisation en arrière-plan se met à jour toutes les 2 heures. Sinon, si vous êtes sur un réseau 3G, Power BI se met à jour toutes les 24 heures.
+L’actualisation en arrière-plan met à jour vos tableaux de bord favoris, ainsi que les tableaux de bord et les rapports que vous avez sélectionnés au cours des deux dernières semaines, avec les données sur le service Power BI (et pas la source de données). Si vous êtes connecté au Wi-Fi, l’actualisation en arrière-plan effectue une mise à jour toutes les 2 heures. Sinon, si vous êtes sur un réseau 3G, Power BI se met à jour toutes les 24 heures.
 
 Vous pouvez désactiver l’actualisation en arrière-plan, par exemple pour éviter l’utilisation du réseau. Vérifiez les paramètres sur votre appareil.
 
@@ -52,7 +52,7 @@ Power BI fournit des indicateurs clairs lorsque vous entrez ou quittez le mode h
 Les restrictions suivantes peuvent s’appliquer en mode hors connexion avec Power BI sur un appareil mobile :
 
 * Power BI peut mettre en cache jusqu’à 250 Mo de données hors connexion.
-* Certains types de vignette nécessitent une connexion active au serveur et ne sont donc pas disponibles hors ligne. C’est le cas des vignettes Bing ou des vignettes personnalisées par exemple.
+* Certains types de vignette demandent une connexion active au serveur et ne sont donc pas disponibles hors connexion. C’est le cas des vignettes Bing ou de certaines vignettes personnalisées, par exemple.
 * Les classeurs Excel entiers dans Power BI ne sont pas disponibles en mode hors connexion.
 * Vous ne pouvez voir les rapports mobiles Reporting Services et les indicateurs de performance clés en mode hors connexion que si vous les avez consultés en étant connecté. Ils ne s’actualisent pas en arrière-plan. Ils s’actualisent chaque fois que vous les ouvrez.
 * Dans les applications mobiles Power BI, vous ne pouvez pas voir les fichiers Power BI Desktop (.pbix) enregistrés dans Power BI Report Server. 
@@ -65,4 +65,3 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 * Suivez @MSPowerBI sur Twitter
 * Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
-

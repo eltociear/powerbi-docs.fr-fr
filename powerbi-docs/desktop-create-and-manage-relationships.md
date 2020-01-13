@@ -10,10 +10,10 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869131"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
@@ -23,12 +23,12 @@ Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des
 Si vous interrogez plusieurs tables en même temps, quand les données sont chargées, Power BI Desktop tente de trouver et de créer des relations pour vous. Les propriétés Cardinalité, Direction du filtrage croisé et Active sont automatiquement définies. Power BI Desktop examine les noms des colonnes des tables que vous interrogez pour déterminer s’il existe des relations potentielles. S’il en existe, ces relations sont automatiquement créées. Si Power BI Desktop ne peut pas déterminer avec un niveau de confiance élevé qu’il existe une correspondance, il ne crée pas la relation automatiquement. Vous pouvez néanmoins utiliser la boîte de dialogue Gérer les relations pour créer ou modifier des relations.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Créer une relation à l’aide de la fonctionnalité Détection automatique
-Sous l’onglet **Accueil**, cliquez sur **Gérer les relations**\>**Détection automatique**.
+Sous l’onglet **Accueil**, cliquez sur **Gérer les relations** \> **Détection automatique**.
 
 ![](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## <a name="create-a-relationship-manually"></a>Créer une relation manuellement
-1. Sous l’onglet **Accueil**, cliquez sur **Gérer les relations**\>**Nouveau**.
+1. Sous l’onglet **Accueil**, cliquez sur **Gérer les relations** \> **Nouveau**.
 2. Dans la boîte de dialogue **Créer une relation**, dans la première liste déroulante de tables, sélectionnez une table, puis sélectionnez la colonne que vous souhaitez utiliser dans la relation.
 3. Dans la seconde liste déroulante de tables, sélectionnez l’autre table que vous souhaitez dans la relation, puis l’autre colonne que vous souhaitez utiliser, puis cliquez sur **OK**.
 
@@ -80,7 +80,7 @@ Une fois que vous avez connecté deux tables avec une relation, vous pouvez util
 Nous allons suivre un rapide didacticiel pour mieux illustrer le fonctionnement des relations dans Power BI Desktop.
 
 >[!TIP]
->Vous pouvez effectuer cette leçon vous-même. Copiez la table HeuresProjet ci-dessous dans une feuille de calcul Excel, sélectionnez toutes les cellules, puis cliquez sur **Insertion**\>**Tableau**. Dans la boîte de dialogue **Créer un tableau**, cliquez sur **OK**. Dans **Nom du tableau**, tapez **HeuresProjet**. Faites de même pour la table ProjetEntreprise. Vous pouvez ensuite importer les données avec l’option **Obtenir des données** dans Power BI Desktop. Sélectionnez votre classeur et le tables comme source de données.
+>Vous pouvez effectuer cette leçon vous-même. Copiez la table HeuresProjet ci-dessous dans une feuille de calcul Excel, sélectionnez toutes les cellules, puis cliquez sur **Insertion** \> **Tableau**. Dans la boîte de dialogue **Créer un tableau**, cliquez sur **OK**. Dans **Nom du tableau**, tapez **HeuresProjet**. Faites de même pour la table ProjetEntreprise. Vous pouvez ensuite importer les données avec l’option **Obtenir des données** dans Power BI Desktop. Sélectionnez votre classeur et le tables comme source de données.
 
 La première table, HeuresProjet, contient les tickets de travail qui enregistrent le nombre d’heures qu’une personne a travaillé sur un projet particulier. 
 
@@ -88,17 +88,17 @@ La première table, HeuresProjet, contient les tickets de travail qui enregistre
 
 | **Ticket** | **SoumisPar** | **Heures** | **Projet** | **DateSoumission** |
 | ---:|:--- | ---:|:--- | ---:|
-| 1001 |Brewer, Alan |22 |Bleu |1/1/2013 |
-| 1002 |Brewer, Alan |26 |Rouge |2/1/2013 |
-| 1003 |Ito, Shu |34 |Jaune |12/4/2012 |
+| 1001 |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1002 |Brewer, Alan |26 |Red |2/1/2013 |
+| 1003 |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Bowen, Eli |29 |Violet |10/1/2013 |
-| 1006 |Bento, Nuno |35 |Vert |2/1/2013 |
-| 1007 |Hamilton, David |10 |Jaune |10/1/2013 |
+| 1005 |Bowen, Eli |29 |Violet |1/10/2013 |
+| 1006 |Bento, Nuno |35 |Green |2/1/2013 |
+| 1007 |Hamilton, David |10 |Yellow |1/10/2013 |
 | 1008 |Han, Mu |28 |Orange |1/2/2012 |
-| 1009 |Ito, Shu |22 |Violet |2/1/2013 |
-| 1010 |Bowen, Eli |28 |Vert |10/1/2013 |
-| 1011 |Bowen, Eli |9 |Bleu |10/15/2013 |
+| 1009 |Ito, Shu |22 |Purple |2/1/2013 |
+| 1010 |Bowen, Eli |28 |Green |10/1/2013 |
+| 1011 |Bowen, Eli |9 |Blue |10/15/2013 |
 
 La seconde table, ProjetEntreprise, est une liste de projets affectés d’une priorité (A, B ou C). 
 
@@ -106,11 +106,11 @@ La seconde table, ProjetEntreprise, est une liste de projets affectés d’une p
 
 | **NomProjet** | **Priorité** |
 | --- | --- |
-| Bleu |A |
+| Blue |A |
 | Rouge |B |
-| Vert |C |
+| Green |C |
 | Jaune |C |
-| Violet |B |
+| Purple |B |
 | Orange |C |
 
 Notez que chaque table possède une colonne de projet. Chacune a un nom légèrement différent, mais les valeurs semblent identiques. Ce point est important, et nous y reviendrons rapidement.
@@ -184,19 +184,19 @@ La table PrioritéProjetEntreprise ci-dessous répertorie tous les projets de l�
 
 | **ProjetsApprouvés** | **AllocationBudget** | **DateAllocation** |
 |:--- | ---:| ---:|
-| Bleu |40,000 |12/1/2012 |
-| Rouge |100,000 |12/1/2012 |
+| Blue |40,000 |12/1/2012 |
+| Red |100,000 |12/1/2012 |
 | Vert |50,000 |12/1/2012 |
 
 **PrioritéProjetEntreprise**
 
 | **Projet** | **Priorité** |
 | --- | --- |
-| Bleu |A |
+| Blue |A |
 | Rouge |B |
-| Vert |C |
+| Green |C |
 | Jaune |C |
-| Violet |B |
+| Purple |B |
 | Orange |C |
 
 Si nous créons une relation entre la colonne Projet de la table PrioritéProjetEntreprise et la colonne ProjetsApprouvés de la table BudgetProjet, comme suit :
@@ -208,10 +208,10 @@ La cardinalité prend automatiquement la valeur Un à un (1:1) et la direction d
 | **Projet** | **Priorité** | **AllocationBudget** | **DateAllocation** |
 |:--- | --- | ---:| ---:|
 | Bleu |A |40,000 |12/1/2012 |
-| Rouge |B |100,000 |12/1/2012 |
-| Vert |C |50,000 |12/1/2012 |
-| Jaune |C |<br /> |<br /> |
-| Violet |B |<br /> |<br /> |
+| Red |B |100 000 |12/1/2012 |
+| Green |C |50,000 |12/1/2012 |
+| Yellow |C |<br /> |<br /> |
+| Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
 
 Il existe une relation un à un entre nos deux tables, car la colonne Projet de la table combinée ne contient pas de doublons. La colonne Projet est unique, car chaque valeur n’y apparaît qu’une seule fois. Ainsi, les lignes des deux tables peuvent être combinées directement sans aucune duplication.
@@ -222,24 +222,24 @@ Toutefois, supposons que les données sont censées changer à la prochaine actu
 
 | **ProjetsApprouvés** | **AllocationBudget** | **DateAllocation** |
 | --- | ---:| ---:|
-| Bleu |40,000 |12/1/2012 |
-| Rouge |100,000 |12/1/2012 |
+| Blue |40,000 |12/1/2012 |
+| Red |100,000 |12/1/2012 |
 | Vert |50,000 |12/1/2012 |
-| Bleu |80,000 |6/1/2013 |
-| Rouge |90,000 |6/1/2013 |
+| Blue |80,000 |6/1/2013 |
+| Red |90,000 |6/1/2013 |
 
  Cela signifie que la meilleure combinaison des deux tables ressemble maintenant à ceci : 
 
 | **Projet** | **Priorité** | **AllocationBudget** | **DateAllocation** |
 | --- | --- | ---:| ---:|
 | Bleu |A |40,000 |12/1/2012 |
-| Rouge |B |100,000 |12/1/2012 |
-| Vert |C |50,000 |12/1/2012 |
-| Jaune |C |<br /> |<br /> |
-| Violet |B |<br /> |<br /> |
+| Red |B |100 000 |12/1/2012 |
+| Green |C |50,000 |12/1/2012 |
+| Yellow |C |<br /> |<br /> |
+| Purple |B |<br /> |<br /> |
 | Orange |C |<br /> |<br /> |
-| Bleu |A |80000 |6/1/2013 |
-| Rouge |B |90000 |6/1/2013 |
+| Blue |A |80000 |6/1/2013 |
+| Red |B |90000 |6/1/2013 |
 
 Dans cette nouvelle table combinée, la colonne Projet contient des doublons. Les deux tables d’origine n’auront pas de relation un à un une fois la table actualisée. Dans ce cas, comme nous savons que ces mises à jour ultérieures engendreront des doublons dans la colonne Projet, nous souhaitons définir la cardinalité sur Plusieurs à un (\*:1), avec la composante « plusieurs » côté BudgetProjet et la composante « un » côté PrioritéProjetEntreprise.
 
@@ -290,17 +290,17 @@ Examinons un exemple. Voici deux tables, TicketsProjet et RôleEmployé.
 
 | **Ticket** | **OuvertPar** | **SoumisPar** | **Heures** | **Projet** | **DateSoumission** |
 | ---:|:--- |:--- | ---:|:--- | ---:|
-| 1001 |Perham, Tom |Brewer, Alan |22 |Bleu |1/1/2013 |
-| 1002 |Roman, Daniel |Brewer, Alan |26 |Rouge |2/1/2013 |
-| 1003 |Roth, Daniel |Ito, Shu |34 |Jaune |12/4/2012 |
+| 1001 |Perham, Tom |Brewer, Alan |22 |Blue |1/1/2013 |
+| 1002 |Roman, Daniel |Brewer, Alan |26 |Red |2/1/2013 |
+| 1003 |Roth, Daniel |Ito, Shu |34 |Yellow |12/4/2012 |
 | 1004 |Perham, Tom |Brewer, Alan |13 |Orange |1/2/2012 |
-| 1005 |Roman, Daniel |Bowen, Eli |29 |Violet |10/1/2013 |
-| 1006 |Roth, Daniel |Bento, Nuno |35 |Vert |2/1/2013 |
-| 1007 |Roth, Daniel |Hamilton, David |10 |Jaune |10/1/2013 |
+| 1005 |Roman, Daniel |Bowen, Eli |29 |Violet |1/10/2013 |
+| 1006 |Roth, Daniel |Bento, Nuno |35 |Green |2/1/2013 |
+| 1007 |Roth, Daniel |Hamilton, David |10 |Yellow |1/10/2013 |
 | 1008 |Perham, Tom |Han, Mu |28 |Orange |1/2/2012 |
-| 1009 |Roman, Daniel |Ito, Shu |22 |Violet |2/1/2013 |
-| 1010 |Roth, Daniel |Bowen, Eli |28 |Vert |10/1/2013 |
-| 1011 |Perham, Tom |Bowen, Eli |9 |Bleu |10/15/2013 |
+| 1009 |Roman, Daniel |Ito, Shu |22 |Purple |2/1/2013 |
+| 1010 |Roth, Daniel |Bowen, Eli |28 |Green |10/1/2013 |
+| 1011 |Perham, Tom |Bowen, Eli |9 |Blue |10/15/2013 |
 
 **RôleEmployé**
 

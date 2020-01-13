@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48efc58c7428961b70fb31a96f404139a75a1ac3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861843"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217866"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Changer l’affichage d’une page de rapport
 
@@ -52,6 +52,26 @@ Les options du menu **Affichage** vous permettent d’afficher les pages d’un 
     ![Rapport affiché en mode Plein écran](media/end-user-report-view/power-bi-full-screen.png)
 
 Quand vous quittez le rapport, les **paramètres d’affichage** ne sont pas enregistrés. Les valeurs par défaut sont rétablies. Si vous tenez à enregistrer ces paramètres, utilisez des [signets](end-user-bookmarks.md).
+
+## <a name="use-your-browser-to-change-page-display"></a>Utiliser votre navigateur pour modifier l’affichage des pages
+
+Les contrôles de zoom de votre navigateur permettent d’augmenter et de diminuer la zone de dessin disponible. La diminution du zoom augmente la taille de la zone de dessin, et vice versa. 
+
+![petite vidéo présentant les contrôles de zoom du navigateur](media/end-user-report-view/power-bi-zoom.png)
+
+Le redimensionnement de l’ensemble du navigateur est une autre façon de changer la taille d’affichage de votre rapport. 
+
+![courte vidéo montrant le redimensionnement du navigateur](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## <a name="zoom-in-on-a-visual"></a>Zoom avant sur un visuel
+Parfois, il est difficile de voir les détails d’un visuel. Vous pouvez faire en sorte que ce visuel s’affiche en plus grand et seul. Pour plus d’informations, consultez [Mode Focus et mode Plein écran](end-user-focus.md).
+
+### <a name="a-visual-in-focus-mode"></a>Visuel en mode *Focus*
+
+![Capture d’écran d’un visuel ouvert en mode Focus.](media/end-user-report-view/power-bi-focus.png)
+
+### <a name="a-visual-in-full-screen-mode"></a>Visuel en mode *Plein écran*
+![Capture d’écran d’un visuel ouvert en mode Plein écran](media/end-user-report-view/power-bi-full-screen.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

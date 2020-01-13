@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
-ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4b8dd876cfaca3fa4ad91bf5b4d94aa5b4be311
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861972"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218004"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
 
@@ -32,7 +32,7 @@ Nous allons ouvrir un rapport qui a été partagé avec vous directement, puis u
    ![Page d'accueil](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Ouvrir un rapport qui a été partagé avec vous
-Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant automatiquement. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre volet de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
+Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien envoyé par e-mail, ou en l’ajoutant à votre page d’accueil Power BI. Les rapports qui sont partagés de cette façon s’affichent dans le conteneur **Partagé avec moi** sur votre volet de navigation, et dans la section **Partagé avec moi** du canevas de votre page d’accueil.
 
 1. Ouvrir dans le service Power BI (app.powerbi.com).
 
@@ -40,7 +40,7 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
 
    ![Canevas Accueil](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Faites défiler vers le bas jusqu'à ce que vous voyiez **Partagé avec moi**. Recherchez l’icône de rapport ![icône de rapport](./media/end-user-report-open/power-bi-report-icon.png). Dans cette capture d’écran, nous avons un tableau de bord et un rapport nommé *Sales and marketing sample*. 
+3. Faites défiler vers le bas jusqu'à ce que vous voyiez **Partagé avec moi**. Recherchez l’icône de rapport ![icône de rapport](./media/end-user-report-open/power-bi-report-icon.png). Dans cette capture d’écran, nous avons un tableau de bord et un rapport. Le rapport se nomme *Exemple Vente et marketing*. 
    
    ![section Partagé avec moi de la page d’accueil](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -64,10 +64,12 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
 
    ![ajuster à la page](./media/end-user-report-open/power-bi-actual.png)
 
-### <a name="open-a-report-that-is-part-of-an-app"></a>Ouvrez un rapport qui fait partie d’une application
-Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre volet de navigation. Une [application](end-user-apps.md) est un ensemble de tableaux de bord et de rapports.
+Il existe de nombreuses façons d’interagir avec un rapport dans le but de découvrir des insights et de prendre des décisions métier.  Utilisez la table des matières sur la gauche pour consulter d’autres articles sur les rapports Power BI. 
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="open-a-report-that-is-part-of-an-app"></a>Ouvrez un rapport qui fait partie d’une application
+Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre volet de navigation. Une [application](end-user-apps.md) est une collection de tableaux de bord et de rapports qui ont été regroupés pour vous par un *concepteur* Power BI.
+
+### <a name="prerequisites"></a>Prérequis
 Pour suivre la procédure, téléchargez l’application Marketing et ventes.
 1. Dans votre navigateur, accédez à appsource.microsoft.com.
 1. Recherchez « Marketing et ventes » et sélectionnez **Microsoft Sample - Sales & Marketing**.
@@ -80,17 +82,17 @@ Vous pouvez ouvrir l’application à partir de votre conteneur d’applications
 
    ![Page d’accueil](./media/end-user-report-open/power-bi-app.png)
 
-8. Sélectionnez votre nouvelle application de marketing et de ventes pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Cette application s’ouvre sur un tableau de bord.  
+8. Sélectionnez votre nouvelle application *Vente et marketing* pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Cette application s’ouvre sur un tableau de bord.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Ouvrir un rapport à partir d’un tableau de bord
 Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart des [vignettes](end-user-tiles.md) de tableau de bord sont *épinglées* à partir de rapports. Si une vignette est sélectionnée, le rapport utilisé pour la créer s’ouvre. 
 
-1. À partir du tableau de bord, sélectionnez une vignette. Dans cet exemple, nous avons sélectionné la vignette d’histogramme « Total Units YTD... ».
+1. À partir du tableau de bord, sélectionnez une vignette. Dans cet exemple, nous avons sélectionné la vignette d’histogramme *Total Units YTD...* .
 
     ![tableau de bord avec la vignette sélectionnée](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  Le rapport associé s’ouvre. Notez que nous sommes sur la page « YTD Category ». Il s’agit de la page de rapport qui contient l’histogramme que nous avons sélectionné à partir du tableau de bord.
+2.  Le rapport associé s’ouvre. Notez que nous sommes dans la page *YTD Category*. Il s’agit de la page de rapport qui contient l’histogramme que nous avons sélectionné à partir du tableau de bord.
 
     ![rapport ouvert en mode Lecture](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -100,7 +102,7 @@ Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Autres moyens pour ouvrir un rapport
 Une fois que vous serez familiarisé avec la navigation dans le service Power BI, vous pourrez déterminer le workflow qui vous convient le mieux. Voici d’autres façons d’accéder aux rapports :
-- À partir du volet de navigation, en utilisant **Favoris** et **Récent**    
+- À partir du volet de navigation, en utilisant [Favoris](end-user-favorite.md) et [Récent](end-user-recent.md)    
 - À l’aide de [Afficher les éléments associés](end-user-related.md)    
 - Dans un e-mail quand un utilisateur [partage avec vous](../service-share-reports.md) ou que vous [définissez une alerte](end-user-alerts.md)    
 - À partir du [Centre de notifications](end-user-notification-center.md)    

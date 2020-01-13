@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870035"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221169"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -40,11 +40,14 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    Dans un graphique en secteurs, appuyez sur un secteur du graphique pour afficher la valeur du segment en haut du graphique.  
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
-3. Dans une carte, appuyez sur l’icône **Centrer la carte** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) pour centrer la carte sur votre emplacement actuel.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Appuyer sur l’icône de partage ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) pour [annoter et partager une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) avec d’autres utilisateurs
+3. Dans une carte, appuyez sur l’icône **Centrer la carte**![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) pour centrer la carte sur votre emplacement actuel.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Appuyez sur l’icône de crayon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) pour [annoter une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), puis sur l’icône de partage ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) pour [la partager avec d’autres utilisateurs](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Ajoutez une alerte à la vignette](mobile-set-data-alerts-in-the-mobile-apps.md). Si les valeurs sont supérieures ou inférieures aux objectifs, Power BI vous avertit.
+
 6. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, elle a donc une icône de lien ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) lorsqu’elle est en mode Focus :
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -54,7 +57,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     Une fois que vous avez ouvert le lien dans l’application Power BI, vous pouvez le copier et l’ouvrir dans une fenêtre de navigateur.
-7. [Ouvrez le rapport](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) sur lequel la vignette est basée.
+7. [Ouvrez le rapport](mobile-reports-in-the-mobile-apps.md) ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) sur lequel est basée la vignette.
 8. Pour quitter le mode focus de la vignette, appuyez sur le nom de la vignette, puis sur le nom du tableau de bord ou **Mon espace de travail**.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,9 +71,9 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
     En mode focus, vous pouvez :
    
    * Appuyer sur le graphique pour déplacer la barre dans un graphique en courbes, à barres, à colonnes ou en bulles, pour afficher les valeurs d’un point spécifique dans la visualisation.  
-   * Appuyez sur l’icône de partage de capture instantanée ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [annoter et partager la vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) avec d’autres utilisateurs.
+   * Appuyez sur l’icône Crayon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) pour [annoter une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), puis sur l’icône Partager l’instantané ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [la partager](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) avec d’autres utilisateurs.
    * Cliquez sur l’icône Ouvrir le rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
-3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, lorsque vous appuyez sur le bouton de sélection vertical ( **...** ), vous pouvez afficher l’option **Ouvrir le lien** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) :
+3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
@@ -104,14 +107,14 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    *Dans ce graphique à barres, les valeurs pour la barre **Décoration** sont indiquées en haut du graphique.*
    
-   Cliquez sur l’icône **Plein écran** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode Plein écran, sans les barres de navigation et de menus.
+   Cliquez sur l’icône **Plein écran**![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode Plein écran, sans les barres de navigation et de menus.
    
    > [!NOTE]
    > Vous pouvez également [afficher des tableaux de bord et des rapports en mode Plein écran](mobile-windows-10-app-presentation-mode.md) dans l’application mobile Power BI pour Windows 10.
    > 
    > 
    
-   Dans une carte, appuyez sur l’icône **Centrer la carte** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) pour centrer la carte sur votre emplacement actuel.
+   Dans une carte, appuyez sur l’icône **Centrer la carte**![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) pour centrer la carte sur votre emplacement actuel.
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    

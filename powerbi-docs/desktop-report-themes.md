@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880009"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223537"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Avec les **Thèmes de rapport**, vous pouvez appliquer des modifications de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en modifiant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
@@ -23,10 +23,10 @@ Avec les **Thèmes de rapport**, vous pouvez appliquer des modifications de conc
 
 Lorsque vous appliquez un **thème de rapport** personnalisé, vous avez besoin d’un fichier JSON qui utilise une structure de base. Vous pouvez ensuite importer ce fichier JSON dans Power BI Desktop et l’appliquer à votre rapport.
 
-Vous pouvez également personnaliser et normaliser presque tous les éléments affichés dans le volet **Mise en forme** par le biais du fichier JSON du thème. L’objectif est de vous donner un contrôle complet sur l’apparence des rapports à un niveau granulaire.
+Vous pouvez également personnaliser et normaliser presque tous les éléments affichés dans le volet **Mise en forme** via des personnalisations effectuées directement dans Power BI Desktop ou via le fichier JSON du thème. L’objectif est de vous donner un contrôle complet sur l’apparence des rapports à un niveau granulaire.
 
 ## <a name="how-report-themes-work"></a>Fonctionnement des thèmes de rapport
-Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez effectuer votre choix parmi les thèmes de rapport intégrés disponibles ou importer un thème personnalisé.
+Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez effectuer votre choix parmi les thèmes de rapport intégrés disponibles, ou bien créer ou importer un thème personnalisé.
 
 | Thème de rapport intégré | Séquence de couleurs par défaut    |
 |------ |---------- |
@@ -70,7 +70,48 @@ Une fois le fichier de thème correctement chargé, Power BI Desktop vous en inf
 
 ![Thème importé correctement](media/desktop-report-themes/report-themes_5.png)
 
-À présent que nous avons importé un fichier de thème, examinons la structure du fichier JSON.
+Il y a deux façons de personnaliser des thèmes dans Power BI Desktop. Examinons plus en détail chacun d’entre eux.
+
+
+## <a name="customize-report-themes-preview"></a>Personnaliser les thèmes de rapport (préversion)
+
+À compter de la version de décembre 2019 de **Power BI Desktop**, il existe maintenant deux façons de personnaliser un thème de rapport :
+
+* Créer et personnaliser un thème dans Power BI Desktop (préversion)
+* Création et personnalisation d’un fichier JSON de thème de rapport personnalisé
+
+Pour personnaliser un thème directement dans Power BI Desktop, vous devez d’abord sélectionner **Fichier > Options et paramètres > Options** puis, dans la section **Fonctionnalités en préversion**, cochez la case en regard de **Personnaliser le thème actif**, comme illustré dans l’image suivante.
+
+![Activer les thèmes personnalisés](media/desktop-report-themes/report-themes_5a.png)
+
+Vous pouvez être invité à redémarrer Power BI Desktop pour activer la fonctionnalité en préversion.
+
+Après avoir redémarré, vous pouvez commencer à personnaliser le thème actif en sélectionnant le ruban **Accueil**, puis en sélectionnant **Changer de thème > Personnaliser le thème actif** dans le ruban. Une boîte de dialogue s’affiche, qui présente les différentes façons de personnaliser un thème existant.
+
+![Personnaliser le thème](media/desktop-report-themes/report-themes_5b.png)
+
+Si vous aimez un thème existant et que vous souhaitez effectuer quelques ajustements, vous pouvez le sélectionner, puis sélectionner **Personnaliser le thème actif** dans la boîte de dialogue, comme illustré dans l’image suivante. 
+
+![Personnaliser le thème actif](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> L’image précédente a été capturée avec le nouveau ruban activé, qui est actuellement en préversion. Vous pouvez activer la préversion du nouveau ruban en sélectionnant **Fichier > Options et paramètres > Options** puis, dans la section **Fonctionnalités en préversion**, sélectionnez **Préversion du nouveau ruban**.
+
+Les paramètres de thème qui peuvent être personnalisés se trouvent dans les catégories suivantes, qui apparaissent dans la boîte de dialogue Personnaliser le thème :
+
+* Nom du thème (vous pouvez nommer le thème que vous personnalisez) et différents paramètres de couleur (couleurs du thème, couleurs de sentiment, couleurs divergentes, etc.)
+* Paramètres de texte, notamment la famille de polices, la taille et la couleur, ainsi que les titres d’axe, les couleurs, les cartes et les indicateurs de performance clés, et les en-têtes des onglets
+* Éléments des visuels, comme l’arrière-plan, la bordure, l’en-tête et les info-bulles
+* Éléments des pages, comme le papier peint et l’arrière-plan
+* Paramètres du volet de filtre, notamment la couleur d’arrière-plan, la transparence, la police et la couleur des icônes, la taille, les cartes de filtre, etc.
+
+Une fois que vous avez apporté vos modifications et sélectionné le bouton **Appliquer et enregistrer**, votre thème est enregistré, et il peut ensuite être utilisé dans le rapport actif et être exporté. 
+
+La personnalisation du thème actif de cette façon peut vous permettre de travailler rapidement et facilement sur la personnalisation des thèmes. Il existe cependant un nombre limité d’ajustements pour les thèmes qui nécessitent la modification du fichier JSON du thème, comme décrit dans la section suivante.
+
+> [!TIP]
+> Vous pouvez personnaliser la plupart des éléments des thèmes en utilisant des éléments visuels avec la boîte de dialogue **Personnaliser le thème actif**, puis vous pouvez exporter le fichier JSON et effectuer manuellement les ajustements (en modifiant le fichier JSON lui-même). Ensuite, vous pouvez renommer ce fichier JSON optimisé, l’importer et disposer ainsi de tous les ajustements souhaités.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Structure d’un fichier JSON de thème de rapport
  Ouvert dans un éditeur, le fichier JSON de base sélectionné dans la section précédente (fichier *St Patrick's Day.json*) ressemble à la capture d’écran suivante :
@@ -256,7 +297,7 @@ La liste des tableaux affiche les informations suivantes :
 |---------|---------|---------|---------|---------|
 | Légende   | N/A   | légende | DIN <br> #252423 <br> 45pt |Étiquettes de données de carte <br> Indicateurs de performance clés|
 |En-tête|N/A|en-tête|Segoe UI Semibold <br> #252423 <br> 12pt |En-têtes d’influenceurs clés |
-| Fonction || title    |DIN <br> #252423 <br> 12pt |Titre de l'axe de catégorie <br> Titre de l'axe des ordonnées <br> Titre de carte à plusieurs lignes * <br> En-tête de segment|
+| Titre || title    |DIN <br> #252423 <br> 12pt |Titre de l'axe de catégorie <br> Titre de l'axe des ordonnées <br> Titre de carte à plusieurs lignes * <br> En-tête de segment|
 |-| Grand titre | largeTitle    |14pt   |Titre visuel |
 |Étiquette ||label |Segoe UI<br>#252423<br>10pt |En-têtes de colonnes de tableau et de matrice <br> En-têtes de lignes de matrice<br>Grille de tableau et de matrice<br>Valeurs de table et de matrice |
 |-|Demi-gras |semiboldLabel| Segoe UI Semibold   | Texte du profil des influenceurs clés

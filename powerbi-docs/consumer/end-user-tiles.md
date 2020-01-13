@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861408"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
@@ -57,11 +57,11 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
    
 
    * [Ouvrir le classeur utilisé pour créer cette vignette ](end-user-reports.md) ![icône de classeur](./media/end-user-tiles/power-bi-open-worksheet.png)  
-   * [Afficher la vignette en mode focus](end-user-focus.md) ![icône de focus](./media/end-user-tiles/fullscreen-icon.jpg)  
-   * [Voir insights ](end-user-insights.md) ![icône insights](./media/end-user-tiles/power-bi-insights.png)
+   * [Afficher la vignette en mode Focus](end-user-focus.md) ![icône de focus](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Voir les insights ](end-user-insights.md) ![icône insights](./media/end-user-tiles/power-bi-insights.png)
    * [Ajouter un commentaire et démarrer une discussion](end-user-comment.md) ![icône de commentaire](./media/end-user-tiles/comment-icons.png)
-   * [Gérer les alertes définies sur une vignette de tableau de bord](end-user-alerts.md)  ![icône d’alerte](./media/end-user-tiles/power-bi-alert-icon.png)
-   * [Ouvrir les données dans Excel](end-user-export.md)  ![icône d’exportation](./media/end-user-tiles/power-bi-export-icon.png)
+   * [Gérer les alertes définies sur une vignette de tableau de bord](end-user-alerts.md) ![icône d’alerte](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Ouvrir les données dans Excel](end-user-export.md) ![icône d’exportation](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. Pour fermer le menu d’actions, sélectionnez une zone vide dans la zone de dessin.

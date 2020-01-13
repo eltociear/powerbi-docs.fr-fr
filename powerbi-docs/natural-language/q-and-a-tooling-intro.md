@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
 ms.openlocfilehash: 17d0a68782f34c09286be5ebe020668a15061ee4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874953"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Présentation des outils Questions et réponses pour entraîner Questions et réponses Power BI (préversion)
@@ -80,7 +80,7 @@ Vous pouvez également masquer des champs et des tables pour qu’ils n’appara
 
 1. Dans Power BI Desktop, sélectionnez la vue Modélisation.
 
-2. Sélectionnez un champ ou une table pour afficher le volet **Propriétés**, puis positionnez **Est masqué** sur **Activé**.
+2. Sélectionnez un champ ou une table pour afficher le volet **Propriétés** et définissez **Est masqué** sur **Activé**.
 
     Questions et réponses respecte ce paramètre et garantit que ce champ ne sera pas reconnu. Par exemple, vous souhaitez peut-être masquer les champs d’ID et les clés étrangères pour éviter des champs en double inutiles portant le même nom. Même si vous masquez ce champ, vous pouvez encore l’utiliser dans Power BI Desktop dans des visuels en dehors de Questions et réponses.
 

@@ -6,15 +6,15 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862655"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218174"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Questions et réponses pour les **consommateurs** Power BI
 
@@ -67,28 +67,30 @@ Par exemple :
 
 Une fois que vous vous êtes familiarisé avec les données, retournez ensuite au tableau de bord et placez votre curseur dans la zone de question. Cette opération ouvre l’écran Questions et réponses.
 
-![Écran Questions et réponses](media/end-user-q-and-a/power-bi-screen.png) 
+![Écran Questions et réponses](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Avant même que vous commenciez à taper votre question, Q&R affiche dans un nouvel écran des suggestions de formulation de votre question. Vous voyez des phrases et des questions contenant le nom des tables dans les jeux de données sous-jacents et vous pouvez également voir les questions *proposées* créées par le propriétaire du jeu de données.
 
 Vous pouvez sélectionner une d'entre elles pour les ajouter à la question et l’affiner afin de trouver une réponse spécifique. 
 
-Questions et réponses peut aussi vous aider à poser des questions avec des invites, une saisie semi-automatique et des signaux visuels. 
+![Écran Questions et réponses](media/end-user-q-and-a/power-bi-result.png) 
+
+Power BI peut aussi vous aider à poser des questions à l’aide de fonctionnalités telles que des invites, l’autocomplétion et des signaux visuels. Power BI fournit cette aide pour la fonctionnalité Questions et réponses qui est disponible dans les tableaux de bord et les rapports, ainsi que pour le visuel Questions et réponses. Nous abordons ces fonctionnalités en détail ci-dessous, dans la section [Créer un visuel Questions et réponses en tapant une requête en langage naturel](#create-a-qa-visual-by-typing-a-natural-language-query).
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## <a name="the-qa-visual"></a>Le visuel Questions et réponses
+## <a name="the-qa-visual-in-power-bi-reports"></a>Visuel Questions et réponses dans les rapports Power BI
 
-Le visuel Questions et réponses vous permet de poser des questions en langage naturel et d’obtenir des réponses sous la forme d’un visuel. Le visuel Questions et réponses se comporte comme les autres types de visuels ; il prend en charge le filtrage croisé/la sélection croisée, les signets et les commentaires. 
+Le visuel Questions et réponses vous permet de poser des questions en langage naturel et d’obtenir des réponses sous la forme d’un visuel. Le visuel Questions et réponses se comporte comme les autres types de visuels de rapport. Il prend en charge le filtrage croisé, la sélection croisée, les signets et les commentaires. 
 
 Vous pouvez identifier un visuel Questions et réponses par sa zone de question dans la partie supérieure. C’est là que vous entrez ou tapez des questions en langage naturel. Le visuel Questions et réponses peut être réutilisé pour poser des questions sur vos données. Quand vous quittez le rapport, le visuel de Questions et réponses retrouve sa configuration par défaut. 
 
 ![Capture d’écran du visuel Questions et réponses par défaut](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## <a name="use-the-qa-visual"></a>Utiliser le visuel Questions et réponses
-Pour utiliser le visuel Questions et réponses, sélectionnez l’une des questions suggérées ou tapez votre propre question en langage naturel. 
+## <a name="use-qa"></a>Utiliser Questions et réponses 
+Pour utiliser Questions et réponses dans un tableau de bord ou pour utiliser le visuel Questions et réponses dans un rapport, sélectionnez l’une des questions suggérées ou tapez votre propre question en langage naturel. 
 
 ### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Créer un visuel Questions et réponses à l’aide d’une question suggérée
 
@@ -105,26 +107,45 @@ Toutefois, vous pouvez indiquer à Power BI un type de visuel spécifique à ut
 
 Si vous n’êtes pas sûr du type de questions à poser ou de la terminologie à employer, développez **Montrer toutes les suggestions** ou examinez les autres visuels dans le rapport. Vous pourrez ainsi vous familiariser avec les termes et le contenu du jeu de données.
 
-1. Tapez votre question dans le champ Questions et réponses en langage naturel. À mesure que vous tapez votre question, Power BI vous aide avec l’autocomplétion, des suggestions et des commentaires.
+1. Tapez votre question dans le champ Questions et réponses en langage naturel. À mesure que vous tapez votre question, Power BI vous aide avec l’autocomplétion, des signaux visuels et des commentaires.
 
-    - Power BI utilise un trait de soulignement rouge pour les mots qu’il ne reconnaît pas. Chaque fois que cela est possible, Power BI vous aide à définir ces mots. Si vous voyez la bonne définition, sélectionnez-la dans la liste déroulante.  
+    **Autocomplétion** : à mesure que vous tapez votre question, la fonctionnalité Questions et réponses de Power BI affiche des suggestions pertinentes et contextuelles qui vous aident à devenir rapidement productif avec le langage naturel. Pendant la saisie, vous recevez des commentaires et des résultats immédiats. L’expérience est similaire à la saisie dans un moteur de recherche.
 
-        ![Terme souligné en rouge dans la zone de question de Questions et réponses](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    Dans cet exemple, la suggestion que nous voulons est la dernière. 
 
-    - Si aucune des définitions n’est correcte, essayez un autre terme ou sélectionnez le mot souligné en rouge pour demander au propriétaire du rapport d’ajouter le mot.
+    ![Questions et réponses avec un mot souligné en bleu](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Saisie d’une question dans le champ Questions et réponses](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Traits de soulignement rouges/bleus** : la fonctionnalité Questions et réponses de Power BI affiche des mots avec des traits de soulignement pour vous aider à voir les mots qu’a reconnus Power BI et ceux qu’il n’a pas reconnus. Un trait de soulignement bleu plein indique que Power BI a reconnu le mot. L’exemple ci-dessous montre que la fonctionnalité Questions et réponses a reconnu le mot **store** (magasin).
 
-    - Si vous continuez à taper la question, Power BI vous signale s’il ne comprend pas la question et tente de vous aider. Dans l’exemple ci-dessous, Power BI vous demande « Vous voulez dire... » et suggère une autre formulation de votre question avec la terminologie employée dans votre jeu de données. 
+    ![Questions et réponses avec une liste déroulante de suggestions pour compléter la question](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Visuel Questions et réponses proposant des suggestions de correction](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    Sélectionnez un mot souligné en bleu pour afficher la liste déroulante des questions suggérées. 
 
-2. Une fois la correction de Power BI sélectionnée, les résultats s’affichent sous la forme d’un graphique en courbes. 
+    ![Liste déroulante « Vous pouvez également essayer : »](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Souvent, lorsque vous tapez un mot dans Questions et réponses, celui-ci est marqué d’un trait de soulignement rouge. Un trait de soulignement rouge peut indiquer deux problèmes potentiels. Le premier type de problème appartient à la catégorie « fiabilité faible ». Si vous tapez un mot vague ou ambigu, le champ est souligné en rouge. Le mot « Location » (Emplacement) en est un exemple. Plusieurs champs peuvent contenir le mot « Location », si bien que le système utilise un trait de soulignement rouge pour vous inviter à choisir le champ que vous souhaitez. Dans cet exemple, Power BI vous invite à sélectionner le champ que vous souhaitez utiliser pour « VanArsdel ».
+    
+    ![Terme souligné en rouge dans la zone de question de Questions et réponses](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Un autre exemple de niveau de fiabilité faible pourrait être de saisir le mot « area » (région) et d’obtenir l’affichage de la colonne « district ». La fonctionnalité Questions et réponses Power BI reconnaît les mots de même signification, grâce à son intégration à Bing et Office. Questions et réponses souligne le mot en rouge pour vous indiquer qu’il ne s’agit pas d’une correspondance directe.
+
+    ![Questions et réponses reformule la question à l’aide d’un synonyme](media/end-user-q-and-a/power-bi-red.png)
+
+    Le deuxième type de problème se pose quand Questions et réponses ne reconnaît pas du tout le mot. L’utilisation du mot « geography » alors qu’il ne figure pas dans les données en est un exemple. Le mot figure dans le dictionnaire anglais, mais Questions et réponses marque ce terme d’un trait de soulignement rouge. La fonctionnalité Questions et réponses de Power BI ne peut pas créer de visualisation et vous suggère de demander au concepteur de rapports d’ajouter le terme.
+
+    ![Questions et réponses suggérant de demander au concepteur d’ajouter le mot « geography »](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Suggestions** : lorsque vous tapez la question, Power BI vous signale s’il ne la comprend pas et tente de vous aider. Dans l’exemple ci-dessous, Power BI vous demande « Vous voulez dire... » et suggère une autre formulation de votre question avec la terminologie employée dans votre jeu de données. 
+
+    ![Visuel Questions et réponses proposant des suggestions de correction](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    Une fois la correction de Power BI sélectionnée, les résultats s’affichent sous la forme d’un graphique en courbes. 
 
     ![Résultats du visuel Questions et réponses sous la forme d’un graphique en courbes](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. Toutefois, vous pouvez remplacer le graphique en courbes par un autre type de visuel.  
+    Toutefois, vous pouvez remplacer le graphique en courbes par un autre type de visuel.  
 
     ![Visuel Questions et réponses avec « as a column chart » (sous forme d’histogramme) ajouté à la question](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 

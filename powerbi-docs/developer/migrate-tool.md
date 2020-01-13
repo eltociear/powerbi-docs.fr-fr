@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 01f79bfaae13b60d3c63abd8f7fc801998075ee6
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265278"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Outil de migration Power BI Embedded
@@ -184,7 +184,7 @@ Vous pouvez vérifier que l’espace de travail a bien été créé en vous conn
 
 Une fois l’espace de travail créé, vous pouvez passer à l’onglet **Charger**.
 
-## <a name="step-4-upload"></a>Étape 4 : Charger
+## <a name="step-4-upload"></a>Étape 4 : Charger
 
 L’onglet **Charger** permet de charger les rapports dans le service Power BI. Il comprend une liste des rapports téléchargés dans l’onglet Télécharger, ainsi que le nom des groupes cibles conformément à votre plan de migration.
 

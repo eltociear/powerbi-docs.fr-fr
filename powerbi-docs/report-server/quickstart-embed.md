@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 195be0766e135dcccc2124a998fb5a32e8703d5b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fe91de89e7eec601c516895089e3dcc03eff14ea
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875015"
+ms.lasthandoff: 01/04/2020
+ms.locfileid: "75657210"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 
@@ -21,10 +21,11 @@ Dans cet article, vous allez apprendre à incorporer un rapport Power BI Report
 
 ![Exemple iFrame](media/quickstart-embed/quickstart_embed_01.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installé et configuré
 * [Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md) installé
 * Un environnement [SharePoint](https://docs.microsoft.com/sharepoint/install/install) installé et configuré
+* Internet Explorer 11 est pris en charge uniquement en cas d’utilisation de SharePoint Online.  Vous pouvez utiliser d’autres navigateurs pris en charge dans les deux cas de figure.
 
 ## <a name="create-the-power-bi-report-url"></a>Créer l’URL d’un rapport Power BI
 

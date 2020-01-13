@@ -1,19 +1,19 @@
 ---
 title: Explorer des rapports dans les applications mobiles Power BI
 description: Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869759"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220717"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -96,29 +96,43 @@ Pour plus d’informations, découvrez comment [ajouter l’extraction à Power 
 ![Pied de page du rapport](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 Vous pouvez effectuer les actions suivantes à partir du pied de page :
-- Réinitialiser le filtre de rapport et rétablir l’état d’origine des sélections croisées.
-- Ouvrir le volet de conversation pour voir ou ajouter des commentaires dans le rapport.
-- Ouvrir le volet de filtre pour voir ou modifier le filtre actuellement appliqué au rapport.
-- Lister toutes les pages du rapport. Un appui sur le nom d’une page permet de charger et de présenter cette page.
+* Réinitialiser le filtre de rapport et rétablir l’état d’origine des sélections croisées.
+* Ouvrir le volet de conversation pour voir ou ajouter des commentaires dans le rapport.
+* Ouvrir le volet de filtre pour voir ou modifier le filtre actuellement appliqué au rapport.
+* Lister toutes les pages du rapport. Un appui sur le nom d’une page permet de charger et de présenter cette page.
 Vous pouvez passer d’une page de rapport à une autre, en effectuant un balayage du bord de l’écran vers le centre.
-- Voir toutes les actions du rapport
+* Voir toutes les actions du rapport
 
 #### <a name="all-report-actions"></a>Toutes les actions du rapport
 Quand vous appuyez sur le bouton **Plus d’options** (...) dans le pied de page du rapport, vous voyez toutes les actions que vous pouvez effectuer sur un rapport :
 
 
-![Toutes les actions du rapport](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Toutes les actions du rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Certaines des actions peuvent être désactivées, car elles dépendent de fonctionnalités du rapport spécifiques.
 Par exemple :
+
+L’option **Signets** est présente uniquement si les [signets](mobile-reports-in-the-mobile-apps.md#bookmarks) ont été définis dans le rapport. Les signets personnels que vous pouvez définir dans le service Power BI ainsi que les signets définis par le créateur du rapport sont affichés. Si l’un des signets a été défini comme signet par défaut, le rapport s’ouvre dans cette vue lors de son chargement.
+
+L’option **Annoter et partager** peut être désactivée si une [stratégie de protection Intune](https://docs.microsoft.com/intune/app-protection-policies) de votre organisation interdit le partage à partir d’une application mobile Power BI.
+
+**Inviter** est activée uniquement si vous avez l’autorisation de partager le rapport avec d’autres utilisateurs. Vous disposez de cette autorisation uniquement si vous êtes le propriétaire du rapport ou si celui-ci vous a accordé l’autorisation de repartage.
 
 **Filtrer par emplacement actuel** est activée si l’auteur du rapport l’a classé avec des données géographiques. Pour plus d’informations, découvrez comment [identifier des données géographiques dans un rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Analyser pour filtrer le rapport par code-barres** est activée uniquement si le jeu de données dans votre rapport est balisé comme **code-barres**. Pour plus d’informations, découvrez comment [baliser des codes-barres dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Inviter** est activée uniquement si vous avez l’autorisation de partager le rapport avec d’autres utilisateurs. Vous disposez de cette autorisation uniquement si vous êtes le propriétaire du rapport ou si celui-ci vous a accordé l’autorisation de repartage.
+### <a name="bookmarks"></a>Signets
 
-L’option **Annoter et partager** peut être désactivée si une [stratégie de protection Intune](https://docs.microsoft.com/intune/app-protection-policies) de votre organisation interdit le partage à partir d’une application mobile Power BI.
+L’application mobile Power BI prend en charge aussi bien les signets de rapport que le créateur du rapport a définis que les signets personnels que vous pouvez définir dans le service Power BI. Le menu Signets se trouve sous **Autres options** (...) dans la [barre d’outils Actions du rapport](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![menu Signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît en haut du rapport.
+
+![vue de signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Découvrez-en plus sur les signets dans le service Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

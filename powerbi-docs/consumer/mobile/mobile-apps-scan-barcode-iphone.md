@@ -1,19 +1,19 @@
 ---
 title: Scanner un code-barres à partir de l’application mobile Power BI
 description: Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: bbc787203293fc6c9075400abf674345710faaed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879176"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217806"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scanner un code-barres avec votre appareil à partir de l’application mobile Power BI
 Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
@@ -32,15 +32,13 @@ Supposons qu’un collègue ait [marqué un champ de code-barres dans un rapport
 Quand vous scannez un code-barres de produit avec le scanner de l’application Power BI de votre appareil, vous voyez le rapport (ou une liste de rapports) avec ce code-barres. Vous pouvez ouvrir ce rapport filtré selon ce code-barres.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Scanner un code-barres avec le scanner de Power BI
-1. Dans l’application mobile Power BI, ouvrez le menu de navigation principal ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) dans le coin supérieur gauche. 
-2. Recherchez le **scanner** et sélectionnez-le. 
-   
+1. Dans la barre de navigation, appuyez sur **Autres options** (...), puis sur **Scanneur**.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Si votre appareil photo n’est pas activé, vous devez autoriser l’application Power BI à l’utiliser. Il s’agit d’une autorisation à usage unique. 
-4. Pointez le scanner sur un code-barres de produit. 
-   
-    Vous pouvez voir une liste des rapports associés à ce code-barres.
-5. Appuyez sur le nom du rapport pour l’ouvrir sur votre appareil, automatiquement filtré selon ce code-barres.
+
+2. Si votre appareil photo n’est pas activé, vous devez autoriser l’application Power BI à l’utiliser. Il s’agit d’une autorisation à usage unique. 
+4. Pointez le scanner sur un code-barres de produit. Une liste des rapports associés à ce code-barres s’affiche.
+5. Appuyez sur le nom du rapport, automatiquement filtré selon ce code-barres, pour l’ouvrir sur votre appareil.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrer selon d’autres codes-barres dans un rapport
 Quand vous consultez un rapport filtré selon un code-barres sur votre appareil, vous pouvez filtrer ce rapport en fonction d’un autre code-barres.

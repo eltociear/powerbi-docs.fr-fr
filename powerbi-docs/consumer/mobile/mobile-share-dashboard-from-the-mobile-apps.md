@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70ecd56f2823e608aa62deb4a5033f53272d3382
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879076"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220994"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
 S’applique à :
@@ -26,120 +26,73 @@ Avec une [licence Power BI Pro](../../service-features-license-type.md), vous po
 
 À partir de l’application mobile Power BI pour iOS et Android, vous pouvez également [annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
-## <a name="share-from-your-iphone"></a>Partager à partir de votre iPhone
-1. Dans la barre d’actions en bas du tableau de bord ou rapport, appuyez sur l’icône **Partager** ![icône Partager](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
+## <a name="share-from-your-iphone-or-ipad"></a>Partager à partir de votre iPhone ou de votre iPad
+
+1. Vous pouvez partager un tableau de bord ou un rapport à partir du tableau de bord ou du rapport lui-même, ou à partir de leur page d’accueil :
+    *  À partir d’un tableau de bord ou d’un rapport, appuyez sur l’icône **Partager** ![icône Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) dans la barre d’actions située en bas.
+    *  Dans la page d’accueil d’un tableau de bord ou d’un rapport, appuyez sur l’icône **Informations** ![Informations supplémentaires](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png) en regard du nom du tableau de bord ou du rapport, puis sur l’icône **Partager** ![icône Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) sous l’onglet Informations qui s’affiche.
+2. Tapez les noms, séparés par des virgules, et un message pour accompagner votre invitation. Pour autoriser le repartage, laissez cochée l’option **Autoriser les destinataires à repartager**. Le repartage permet à vos collègues de transférer le message d’invitation à d’autres membres de votre organisation par le biais du web ou des applications mobiles.
+3. Cliquez sur **Envoyer** dans le coin supérieur droit.
    
-   ![Icône de partage iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Tapez les noms, séparés par des virgules, et un message pour accompagner votre invitation.
-3. Pour autoriser le repartage, laissez cochée l’option **Autoriser les destinataires à repartager**.
+   Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Quand l’utilisateur l’ouvre dans le service Power BI ou dans l’application mobile Power BI, elle est ajoutée à la section **Partagé avec moi** de son compte Power BI. Pour accéder à votre section Partagé avec moi :
    
-   Le repartage permet à vos collègues de transférer le message d’invitation à d’autres membres de votre organisation par le biais du web ou des applications mobiles.
-5. Cliquez sur **Envoyer** dans le coin supérieur droit.
-   
-   Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
-   
-   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
+   * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
    
    Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-iphone"></a>Annuler le partage à partir de votre iPhone
+### <a name="unshare-from-your-iphone-or-ipad"></a>Annuler un partage à partir de votre iPhone ou de votre iPad
 Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 
-1. Dans la barre d’actions en bas du tableau de bord ou rapport, appuyez sur l’icône **Partager** ![icône Partager](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
-2. Appuyez sur **Inviter un collègue**.
-   
-   La liste des collègues avec qui vous avez partagé ce tableau de bord ou ce rapport s’affiche avec les mentions suivantes :
-   
-   * **Affichage** : Ils peuvent consulter, mais pas partager.
-   * **Affichage et invitation** : Ils peuvent consulter et partager avec d’autres collègues.
-1. Appuyez sur **Modifier**.
-   
-    ![Icône de modification](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
-4. Pour annuler le partage, appuyez sur le cercle rouge en regard du nom et appuyez sur **Supprimer**.
+1. Dans la barre d’actions en bas du tableau de bord ou rapport, appuyez sur l’icône **Partager**![icône Partager](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+2. Appuyez sur **Partagé avec**. La liste des collègues avec qui vous avez partagé ce tableau de bord ou rapport apparaît.
 
-## <a name="share-from-your-ipad"></a>Partager à partir de votre iPad
-1. Appuyez sur l’icône **Partager** ![icône Partager](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) en haut à droite de votre tableau de bord ou rapport.
-2. Tapez les adresses e-mail et un message pour accompagner votre invitation.
-3. Pour autoriser le repartage, laissez cochée l’option **Autoriser les destinataires à repartager**.
-   
-   Le repartage permet à vos collègues de transférer le message d’invitation à d’autres membres de votre organisation par le biais du web ou des applications mobiles. 
+3. Appuyez sur **Plus d’options** (...) en regard du nom de la personne pour qui vous souhaitez annuler le partage, puis indiquez si vous souhaitez supprimer l’accès uniquement au tableau de bord partagé ou également à tout contenu sous-jacent qu’il utilise.
 
-4. Cliquez sur **Envoyer** dans le coin supérieur droit.
-   
-   Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
-   
-   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
-   
-   Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-ipad"></a>Annuler le partage à partir de votre iPad
-Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
-
-1. Appuyez sur l’icône **Partager** ![icône Partager](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) en haut à droite de votre tableau de bord ou rapport.
-   
-   La liste des collègues avec qui vous avez partagé ce tableau de bord ou ce rapport s’affiche avec les mentions suivantes :
-   
-   * **Affichage** : Ils peuvent consulter, mais pas partager.
-   * **Affichage et invitation** : Ils peuvent consulter et partager avec d’autres collègues.
-2. Appuyez sur **Modifier**.
-3. Pour annuler le partage, appuyez sur le cercle rouge en regard du nom et appuyez sur **Supprimer**.
 
 ## <a name="share-from-your-android-device"></a>Partager à partir de votre appareil Android
-1. Dans la page d’accueil des tableaux de bord ou rapports, appuyez sur **Plus d’options** (...) et sur **Inviter un collègue**.
+1. Vous pouvez partager un tableau de bord ou un rapport à partir du tableau de bord ou du rapport lui-même, ou à partir de leur page d’accueil :
+    *  À partir d’un tableau de bord ou d’un rapport, appuyez sur **Plus d’options** (...) en haut, puis choisissez **Inviter un collègue**.
+    *  Dans la page d’accueil d’un tableau de bord ou d’un rapport, appuyez sur **Plus d’options** (...) en regard du nom du tableau de bord ou du rapport, puis sur l’icône **Partager** ![icône Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) sous l’onglet Informations qui s’affiche.
+ 
+2. Tapez les adresses de messagerie et un message pour accompagner votre invitation. Si vous ne le faites pas, Power BI envoie un message par défaut. Pour autoriser le repartage, laissez l’option **Autoriser les destinataires à partager ce tableau de bord** sélectionnée. Le repartage permet à vos collègues de transférer le message d’invitation à d’autres membres de votre organisation par le biais du navigateur ou des applications mobiles.
    
-   ![Inviter un collègue](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Ou, dans un tableau de bord ou un rapport, appuyez sur l’icône Inviter ![Icône Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+3. Appuyez sur l’icône **Envoyer**![icône Envoyer](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) en haut à droite pour envoyer l’e-mail.
+   
+    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Quand l’utilisateur l’ouvre dans le service Power BI ou dans l’application mobile Power BI, elle est ajoutée à la section **Partagé avec moi** de son compte Power BI. Pour accéder à votre section Partagé avec moi :
+   * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
+   * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
+   
+   Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 
-    Si vous êtes le propriétaire du tableau de bord, la liste des collègues avec qui vous avez partagé ce tableau de bord ou rapport s’affiche avec les mentions suivantes :
-
-    -   **Affichage** : Ils peuvent consulter, mais pas partager.
-    -   **Affichage et repartage** : Ils peuvent consulter et partager avec d’autres collègues.
-
-1. Tapez les adresses de messagerie et un message pour accompagner votre invitation. Si vous ne le faites pas, Power BI envoie un message par défaut.
-2. Pour autoriser le repartage, laissez l’option **Autoriser les destinataires à partager ce tableau de bord** sélectionnée.
-   
-   Le repartage permet à vos collègues de transférer le message d’invitation à d’autres membres de votre organisation par le biais du navigateur ou des applications mobiles.
-   
-1. Appuyez sur l’icône **Envoyer** ![icône Envoyer](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) en haut à droite pour envoyer l’e-mail.
-   
-   Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
-   
-   ![Partagé avec moi](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
-   
-   Découvrez d’autres [remarques sur le partage de tableaux de bord avec vos collègues](../../service-share-dashboards.md).
 
 ### <a name="unshare-from-your-android-device"></a>Annuler le partage à partir de votre appareil Android
 Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 
-1. Appuyez sur l’icône Inviter en haut à droite de votre tableau de bord ![Icône Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png). 
-   
-   La liste des collègues avec qui vous avez partagé ce tableau de bord ou rapport apparaît.
-2. Pour arrêter le partage avec un collègue, appuyez sur **X** à côté d’un nom \> **Supprimer**.
+1. Vous pouvez annuler le partage d’un tableau de bord ou d’un rapport à partir du tableau de bord ou du rapport lui-même, ou à partir de leur page d’accueil :
+    *  À partir d’un tableau de bord ou d’un rapport, appuyez sur **Plus d’options** (...) en haut, puis choisissez **Inviter un collègue**.
+    *  Dans la page d’accueil d’un tableau de bord ou d’un rapport, appuyez sur **Plus d’options** (...) en regard du nom du tableau de bord ou du rapport, puis sur l’icône **Partager** ![icône Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) sous l’onglet Informations qui s’affiche.
+
+2. En bas de la page **Ajouter des personnes** qui s’ouvre, la liste des collègues avec qui vous avez partagé ce tableau de bord ou rapport s’affiche. Appuyez sur le nom du collègue pour qui vous souhaitez annuler le partage.
+3. Dans la page **Qui a accès** qui s’affiche, appuyez sur l’icône **Supprimer** ![icône Supprimer](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png), puis indiquez si vous souhaitez supprimer l’accès uniquement au tableau de bord partagé ou également à tout contenu sous-jacent qu’il utilise.
 
 ## <a name="share-from-your-windows-10-device"></a>Partager à partir de votre appareil Windows 10
-1. Dans un tableau de bord ou rapport, appuyez sur l’icône Inviter ![Icône Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_inviteicon.png).
+
+1. Vous pouvez partager un tableau de bord ou un rapport à partir du tableau de bord ou du rapport lui-même, ou à partir de leur page d’accueil :
+    * À partir d’un tableau de bord ou d’un rapport, appuyez sur l’icône **Partager** ![icône Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+    * Dans la page d’accueil d’un tableau de bord ou d’un rapport, cliquez avec le bouton droit ou effectuez un appui long, puis choisissez **Inviter**.
    
-   Sinon, dans la page d’accueil des tableaux de bord ou rapports, cliquez avec le bouton droit, ou effectuez un appui long et appuyez, sur **Inviter**.
+   Si vous êtes le propriétaire du tableau de bord, la liste des collègues avec qui vous avez partagé ce tableau de bord ou rapport s’affiche.
+
+2. Tapez les adresses e-mail et un message pour accompagner votre invitation. Si vous ne le faites pas, Power BI envoie un message par défaut. Pour autoriser le repartage, laissez l’option **Autoriser les destinataires à partager ce tableau de bord** sélectionnée. Le repartage permet à vos collègues de partager avec d’autres personnes de votre organisation via le navigateur ou les applications mobiles.
    
-   ![Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10_sharedash.png)
+3. Appuyez sur l’icône **Envoyer**![icône Envoyer](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Si vous êtes le propriétaire du tableau de bord, la liste des collègues avec lesquels vous avez partagé ce tableau de bord s’affiche, avec les notes suivantes :
+    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Quand l’utilisateur l’ouvre dans le service Power BI ou dans l’application mobile Power BI, elle est ajoutée à la section **Partagé avec moi** de son compte Power BI. Pour accéder à votre section Partagé avec moi :
    
-   **Affichage** : Ils peuvent consulter, mais pas partager.
-   
-   **Affichage et repartage** : Ils peuvent consulter et partager avec d’autres collègues.
-2. Tapez les adresses e-mail et un message pour accompagner votre invitation. Si vous ne le faites pas, Power BI envoie un message par défaut.
-   
-   ![Boîte de dialogue Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
-3. Pour autoriser le repartage, laissez cochée l’option **Autoriser les destinataires à repartager**.
-   
-   Le repartage permet à vos collègues de partager avec d’autres personnes de votre organisation via le navigateur ou les applications mobiles.
-   
-1. Appuyez sur l’icône **Envoyer** ![icône Envoyer](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
-   
-   Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
-   
-   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
+   * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
    
    Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 

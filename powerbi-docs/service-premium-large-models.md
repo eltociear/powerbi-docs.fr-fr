@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696758"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223704"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Grands modèles dans Power BI Premium (préversion)
 
@@ -118,23 +118,4 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grand
 - **Prise en charge de plusieurs zones géographiques** : les jeux de données activés pour les fichiers Premium échouent sur les capacités où [plusieurs zones géographiques](service-admin-premium-multi-geo.md) sont également activées.
 
 - **Télécharger sur Power BI Desktop** : si un jeu de données est stocké dans des fichiers Premium, le [téléchargement en tant que fichier. pbix](service-export-to-pbix.md) échoue.
-- **Régions prises en charge** : les grands modèles sont pris en charge par les régions suivantes.
-  - Australie Est
-  - Australie Sud-Est
-  - USA Centre
-  - Asie Est
-  - USA Est
-  - USA Est 2
-  - Japon Est
-  - Japon Ouest
-  - Corée Centre
-  - Corée Sud
-  - USA Centre Nord
-  - Europe Nord
-  - USA Centre Sud
-  - Asie Sud-Est
-  - Royaume-Uni Sud
-  - Royaume-Uni Ouest
-  - Europe Ouest
-  - USA Ouest
-  - USA Ouest 2
+- **Régions prises en charge** : Les grands modèles sont pris en charge dans toutes les régions Azure qui prennent en charge le stockage de fichiers Premium. Pour plus d’informations, consultez [Disponibilité des produits par région](https://azure.microsoft.com/global-infrastructure/services/?products=storage).

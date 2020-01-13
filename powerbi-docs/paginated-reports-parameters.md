@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 8afa43cf9d49286a1ec04f7f60aa4a4c4ca7fd16
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: fac23cf5814513c488a3403be420a2273992bae5
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831175"
+ms.lasthandoff: 01/04/2020
+ms.locfileid: "75657164"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
 
@@ -61,7 +61,12 @@ L’illustration suivante montre le mode Design dans le Générateur de rapports
     -   Pour masquer le paramètre et empêcher sa modification sur le serveur de rapports une fois le rapport publié, sélectionnez **Interne**. Le paramètre du rapport ne peut alors s’afficher que dans la définition de rapport. Pour cette option, vous devez définir une valeur par défaut ou autoriser le paramètre à accepter une valeur Null.  
   
 9. Sélectionnez **OK**. 
-  
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
+- Si vous utilisez un jeu de données Power BI ou un modèle Analysis Services comme source de données, vous ne pouvez pas passer plus de 1 000 valeurs de paramètre dans une seule requête en raison de limitations propres à DAX. 
+
+ 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Consultez [Afficher les paramètres des rapports paginés](consumer/paginated-reports-view-parameters.md) pour voir à quoi ressemblent les paramètres dans le service Power BI.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 0029d275e5180c29e8653f549d8450014362b59b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009634"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304243"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Relations de modèle dans Power BI Desktop
 
@@ -73,7 +73,7 @@ Au moment de configurer une relation Un-à-plusieurs ou Plusieurs-à-un, vous de
 
 Une relation **Un-à-un** indique que les deux colonnes contiennent des valeurs uniques. Ce type de cardinalité n’est pas courant et ne correspond sûrement pas à une conception de modèle optimale du fait du stockage de données redondantes.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-Une relation **Plusieurs-à-plusieurs** signifie que les deux colonnes peuvent contenir des valeurs en double. Ce type de cardinalité n’est pas souvent employé. Il est généralement utile pour concevoir des modèles complexes.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+Une relation **Plusieurs-à-plusieurs** signifie que les deux colonnes peuvent contenir des valeurs en double. Ce type de cardinalité n’est pas souvent employé. Il est généralement utile pour concevoir des modèles complexes. Pour obtenir des conseils sur l’utilisation de ce type de cardinalité, lisez les [conseils au sujet des relations Plusieurs-à-plusieurs](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > Le type de cardinalité Plusieurs-à-plusieurs n’est actuellement pas pris en charge pour les modèles développés pour Power BI Report Server.
@@ -226,4 +226,5 @@ La liste suivante classe les performances de propagation de filtre, des plus rap
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Comprendre le schéma en étoile et son importance pour Power BI](guidance/star-schema.md)
+- [Conseils sur les relations Plusieurs-à-plusieurs](guidance/relationships-many-to-many.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

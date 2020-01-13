@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010014"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75220514"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -21,6 +21,20 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="november-2019"></a>Novembre 2019
+
+### <a name="power-bi-apps-new-look-is-now-on-by-default"></a>La nouvelle apparence de l’application Power BI est maintenant activée par défaut
+ 
+Désormais, quand vous ouvrez l’application, les nouvelles barres de navigation et de recherche sont automatiquement activées, ce qui simplifie la recherche et l’ouverture du contenu. Utilisez la [page d’accueil](mobile-apps-home-page.md) de l’application comme point de départ. Vous obtenez un accès rapide à votre contenu le plus important, ainsi qu’un [flux d’activités](mobile-apps-home-page.md#activity-feed) qui vous permet de vous tenir informé de toutes vos dernières alertes et notifications, et plus encore.
+
+### <a name="see-all-your-latest-power-bi-activity"></a>Voir l’ensemble de vos dernières activités Power BI
+ 
+Le flux d’activités vous permet de suivre l’utilisation de votre contenu Power BI, en temps réel. Accédez simplement à la page d’accueil de l’application et ouvrez l’onglet Activité pour voir l’ensemble des notifications, alertes, commentaires, @mentions les plus récents, et plus encore. [En savoir plus](mobile-apps-home-page.md#activity-feed).
+
+### <a name="use-bookmarks-in-your-reports"></a>Utiliser des signets dans vos rapports
+
+L’application mobile Power BI prend désormais en charge les signets créés dans Power BI. Quand vous ouvrez l’application, vous pouvez tirer parti des signets créés par l’auteur du rapport et de tous les signets personnels que vous avez vous-même créés. [En savoir plus](mobile-reports-in-the-mobile-apps.md#bookmarks).
 
 ## <a name="october-2019"></a>Octobre 2019
 
@@ -469,7 +483,7 @@ Lisez le [résumé des fonctionnalités de janvier 2017 sur le blog dédié aux 
 #### <a name="ios"></a>iOS
 **Authentification SSRS utilisant la préversion d’Active Directory Federation Services (ADFS)** Vous pouvez maintenant vous connecter à des serveurs SQL Server Reporting Services locaux à partir de votre appareil mobile avec votre compte professionnel. En savoir plus sur l’[utilisation de OAuth pour la connexion aux serveurs SSRS](mobile-oauth-ssrs.md).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Téléphone
 **Authentification SSRS utilisant la préversion d’Active Directory Federation Services (ADFS)** Vous pouvez maintenant vous connecter à des serveurs SQL Server Reporting Services locaux à partir de votre appareil mobile avec votre compte professionnel. En savoir plus sur l’[utilisation de OAuth pour la connexion aux serveurs SSRS](mobile-oauth-ssrs.md).
 
 **Nouveauté et améliorations : annotez et partagez rapidement des insights (analyses)** Le partage et l’annotation sont maintenant entièrement fonctionnels sur les appareils Android. Le menu amélioré permet d’annoter et de partager plus rapidement et facilement les analyses. Vous pouvez également partager un rapport annoté ou directement à partir de l’application Power BI.
@@ -503,7 +517,7 @@ Si une vignette d’image a une URL personnalisée définie par le propriétaire
 
 Vous pouvez maintenant actualiser les données de l’Apple Watch directement à partir de l’application Watch. Dans la page d’index du tableau de bord, appuyez longuement pour actualiser vos données. Pour que cela fonctionne, l’application mobile Power BI doit s’exécuter en arrière-plan sur un iPhone.
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Téléphone
 **URL personnalisée sur une vignette d’image**
 
 Si une vignette d’image a une URL personnalisée définie par le propriétaire du tableau de bord, lorsque vous appuyez sur la vignette, vous accédez directement à cette URL sans ouvrir la vignette en mode focus. En outre, les vignettes de tableau de bord contenant des URL personnalisées prédéfinies peuvent maintenant rediriger les lecteurs vers les rapports au sein de l’application.
@@ -520,7 +534,7 @@ Lisez le [résumé de novembre 2016 des fonctionnalités d’application mobile
 #### <a name="android-devices"></a>Appareils Android
 **Préversion : Intune Mobile Application Management** : la prise en charge de Microsoft Intune Mobile Application Manager (MAM) pour Power BI est désormais disponible en version préliminaire pour les utilisateurs de Power BI Pro sur les appareils Android. 
 
-**Favoris** : identifiez vos tableaux de bord favoris sur votre appareil Android et affichez l’ensemble de vos [tableaux de bord Power BI favoris et indicateurs de performance clés et rapports mobiles Reporting Services](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) dans un même emplacement pratique. 
+**Favoris** : identifiez vos tableaux de bord favoris sur votre appareil Android et affichez l’ensemble de vos [tableaux de bord Power BI favoris et indicateurs de performance clés et rapports mobiles Reporting Services](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) dans un même emplacement pratique. 
 
 #### <a name="ios-devices"></a>Appareils iOS
 **Liens** : les URL dans les vignettes et les visualisations sont maintenant interactives et s’ouvrent dans un navigateur.
@@ -667,7 +681,7 @@ Lisez le [blog sur les applications mobiles Power BI de mars 2016](https://pow
 **Vignettes Bing et R** Ouvrez Bing et R en mode focus.
 
 #### <a name="android-mobile-app"></a>Applications mobiles Android
-**Rapports mobiles et indicateurs de performance clés SQL Server 2016** [Affichez les rapports mobiles et les indicateurs de performance clés SQL Server 2016](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) et naviguez parmi les dossiers SSRS.
+**Rapports mobiles et indicateurs de performance clés SQL Server 2016** [Affichez les rapports mobiles et les indicateurs de performance clés SQL Server 2016](mobile-app-ssrs-kpis-mobile-on-premises-reports.md), puis naviguez parmi les dossiers SSRS.
 
 **Afficher les rapports** Ouvrez des rapports à partir de vignettes dans vos tableaux de bord.
 
@@ -678,7 +692,7 @@ Lisez le [blog sur les applications mobiles Power BI de mars 2016](https://pow
 
 **Vignettes Bing et R** Ouvrez Bing et R en mode focus.
 
-**Davantage de vignettes dynamiques sur votre écran d’accueil** [Épinglez des indicateurs de performance clés et cartes à lignes sur votre écran d’accueil](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) sous forme de vignettes dynamiques, afin de voir toutes vos métriques critiques en un coup d’œil.
+**Davantage de vignettes dynamiques sur votre écran de démarrage** [Épinglez des indicateurs de performance clés et des cartes à lignes sur votre écran de démarrage](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) sous forme de vignettes dynamiques, afin de voir toutes vos métriques essentielles en un coup d’œil.
 
 **Pincement pour zoomer** Pincez deux doigts pour zoomer sur votre tablette afin d’examiner les tableaux de bord de plus près.
 
@@ -687,7 +701,7 @@ Lisez le [blog sur les applications mobiles Power BI de mars 2016](https://pow
 **Galerie de rapports** Ouvrez vos rapports directement dans la galerie de rapports.
 
 ### <a name="february-2016"></a>Février 2016
-#### <a name="android"></a>Android
+#### <a name="android"></a>Téléphone
 Affichez les tableaux de bord en [mode paysage sur les téléphones Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Application Power BI pour les appareils Windows 10

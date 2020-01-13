@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834721"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221939"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Extension de visuels avec des info-bulles de page de rapport
 
@@ -61,15 +61,15 @@ Une info-bulle de page est révélée. Elle présente des statistiques et attrib
 
 ### <a name="add-help"></a>Ajouter de l’aide
 
-Les en-têtes de visuel peuvent être configurés pour révéler des info-bulles de page. Vous pouvez ajouter du contenu d’aide à une info-bulle de page à l’aide de zones de texte richement mises en forme. Il est également possible d’ajouter des images et des formes.
+Les en-têtes de visuel peuvent être configurés pour révéler des info-bulles de page. Vous pouvez ajouter une documentation d’aide à une info-bulle de page en utilisant des zones de texte parfaitement mises en forme. Il est également possible d’ajouter des images et des formes.
 
 Il est intéressant de noter que les boutons, les images, les zones de texte et les formes peuvent également révéler une info-bulle de page d’en-tête de visuel.
 
-L’exemple suivant montre ce qui se produit lorsque l’utilisateur du rapport passe son curseur au-dessus de l’icône de l’en-tête de visuel.
+L’exemple suivant montre ce qui se produit quand l’utilisateur du rapport passe son curseur au-dessus de l’[icône d’en-tête de visuel](../desktop-visual-elements-for-reports.md).
 
 ![L’utilisateur d’un rapport a pointé son curseur sur l’icône d’en-tête de visuel (point d’interrogation). Une info-bulle richement mise en forme est apparue.](media/report-page-tooltips/suggestion-add-help.png)
 
-Une info-bulle de page est révélée. Elle présente du texte avec une mise en forme enrichie qui décrit les mesures présentées par le visuel. L’info-bulle comprend également une forme (ligne).
+Une info-bulle de page est révélée. Elle présente du texte parfaitement mis en forme dans quatre zones de texte ainsi qu’une forme (ligne). L’info-bulle de page apporte de l’aide en décrivant chaque acronyme affiché dans le visuel.
 
 ## <a name="recommendations"></a>Recommandations
 
@@ -87,5 +87,6 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 
 - [Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop](../desktop-tooltips.md)
 - [Personnalisation des info-bulles dans Power BI Desktop](../desktop-custom-tooltips.md)
+- [Utiliser des visuels pour améliorer des rapports Power BI](../desktop-visual-elements-for-reports.md)
 - Vidéo Guy in a Cube : [Info-bulle de page de rapport Power BI : guide pratique pour en créer une dans Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

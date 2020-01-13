@@ -1,43 +1,123 @@
 ---
-title: Utiliser l’audit dans votre organisation
-description: Apprenez à utiliser l’audit avec Power BI pour analyser et examiner les actions effectuées. Vous pouvez utiliser le centre Sécurité et conformité ou utiliser PowerShell.
+title: Suivre les activités utilisateur dans Power BI
+description: Découvrez comment utiliser les journaux d’activité et l’audit avec Power BI pour surveiller et examiner les actions effectuées.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 868d3dc2463f5ed94b8d8ccd85e5edff33ca1c6e
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698920"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75657187"
 ---
-# <a name="use-auditing-within-your-organization"></a>Utiliser l’audit dans votre organisation
+# <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
-Il est important de savoir qui effectue une action sur un élément donné de votre abonné Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements. Utilisez l’audit Power BI pour auditer les actions effectuées par les utilisateurs, comme « Voir le rapport » et « Voir le tableau de bord ». Vous ne pouvez pas utiliser l’audit pour auditer les autorisations.
+Il est important de savoir qui effectue une action sur un élément donné de votre abonné Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements. Power BI propose deux options pour suivre l’activité utilisateur : le [journal d’activité de Power BI](#use-the-activity-log) et le [journal d’audit unifié d’Office 365](#use-the-audit-log). Ces journaux contiennent tous les deux une copie complète des [données d’audit de Power BI](#operations-available-in-the-audit-and-activity-logs), mais il existe plusieurs différences importantes qui sont résumées dans le tableau ci-après.
 
-Utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou PowerShell. L’audit s’appuie sur des fonctionnalités d’Exchange Online, qui est automatiquement configuré de façon à prendre en charge Power BI.
+| **Journal d’audit unifié d’Office 365** | **Journal d’activité de Power BI** |
+| --- | --- |
+| Inclut les événements de SharePoint Online, Exchange Online, Dynamics 365 et d’autres services en plus des événements d’audit de Power BI. | Inclut uniquement les événements d’audit de Power BI. |
+| Seuls les utilisateurs ayant des autorisations Journaux d’audit ou Journaux d’audit en affichage seul, comme les administrateurs généraux et les auditeurs, ont accès à ce journal. | Les administrateurs généraux et les administrateurs de service Power BI ont accès à ce journal. |
+| Les administrateurs généraux et les auditeurs peuvent faire des recherches dans le journal d’audit unifié à partir du Centre de sécurité et conformité Office 365, du Centre de sécurité Microsoft 365 et du Centre de conformité Microsoft 365. | Il n’existe pas encore d’interface utilisateur permettant d’effectuer des recherches dans le journal d’activité. |
+| Les administrateurs généraux et les auditeurs peuvent télécharger des entrées du journal d’audit à l’aide d’API et d’applets de commande de gestion Office 365. | Les administrateurs généraux et les administrateurs de service Power BI peuvent télécharger des entrées du journal d’activité à l’aide d’une API REST Power BI et d’une applet de commande de gestion. |
+| Conserve les données d’audit pendant 90 jours. | Conserve les données d’activité pendant 30 jours (préversion publique). |
+| | |
+
+## <a name="use-the-activity-log"></a>Utiliser le journal d’activité
+
+En tant qu’administrateur de service Power BI, vous pouvez analyser l’utilisation de toutes les ressources Power BI au niveau du locataire à l’aide de rapports personnalisés basés sur le journal d’activité de Power BI. Vous pouvez télécharger les activités à l’aide d’une API REST ou d’une applet de commande PowerShell. Vous pouvez aussi filtrer les données d’activité par plage de dates, par utilisateur et par type d’activité.
+
+### <a name="activity-log-requirements"></a>Conditions requises pour le journal d’activité
+
+Vous devez remplir ces conditions requises pour accéder au journal d’activité de Power BI :
+
+- Être administrateur général ou administrateur de service Power BI.
+- Avoir installé les [applets de commande de gestion Power BI](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt) localement ou utiliser les applets de commande de gestion Power BI dans Azure Cloud Shell.
+
+### <a name="activityevents-rest-api"></a>API REST ActivityEvents
+
+Vous pouvez utiliser une application d’administration basée sur les API REST de Power BI pour exporter des événements d’activité vers un magasin d’objets blob ou une base de données SQL. Vous pouvez ensuite créer un rapport d’utilisation personnalisé à partir des données exportées. Dans l’appel de l’API REST **ActivityEvents**, vous devez spécifier une date de début et une date de fin, et éventuellement un filtre pour sélectionner des activités par type d’activité ou ID d’utilisateur. Du fait que le journal d’activité est susceptible de contenir une grande quantité de données, l’API **ActivityEvents** limite le téléchargement à un seul jour de données par requête. En d’autres termes, les dates de début et de fin doivent spécifier le même jour, comme dans l’exemple suivant. Vous devez spécifier les valeurs DateTime au format UTC.
+
+```
+https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
+```
+
+Si le nombre d’entrées est élevé, l’API **ActivityEvents** retourne seulement environ 5 000 à 10 000 entrées ainsi qu’un jeton de continuation. Vous devez ensuite rappeler l’API **ActivityEvents** avec le jeton de continuation retourné pour obtenir le lot d’entrées suivant, en répétant cette opération jusqu’à ce que vous ayez récupéré toutes les entrées et que vous ne receviez plus de jeton de continuation. L’exemple suivant montre comment utiliser le jeton de continuation.
+
+```
+https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
+```
+
+Quel que soit le nombre d’entrées retournées, tant qu’un jeton de continuation est retourné dans les résultats, vous devez rappeler l’API avec ce jeton pour récupérer les données restantes. Il peut arriver qu’un appel retourne un jeton de continuation même en l’absence d’entrées d’événement. L’exemple suivant montre comment effectuer une boucle avec un jeton de continuation retourné dans la réponse :
+
+```
+while(response.ContinuationToken != null)
+{
+   // Store the activity event results in a list for example
+    completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+
+    // Make another call to the API with continuation token
+    response = GetPowerBIActivityEvents(response.ContinuationToken)
+}
+completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+```
+
+### <a name="get-powerbiactivityevent-cmdlet"></a>Applet de commande Get-PowerBIActivityEvent
+
+Vous pouvez aisément télécharger des événements d’activité à l’aide des applets de commande de gestion Power BI pour PowerShell, notamment avec l’applet de commande **Get-PowerBIActivityEvent** qui gère automatiquement le jeton de continuation pour vous. L’applet de commande **Get-PowerBIActivityEvent** utilise les paramètres StartDateTime et EndDateTime avec les mêmes restrictions que l’API REST **ActivityEvents**. Autrement dit, les dates de début et de fin doivent faire référence à la même valeur de date, car vous pouvez récupérer les données d’activité d’un seul jour à la fois.
+
+Le script suivant montre comment télécharger toutes les activités Power BI. La commande convertit les résultats au format JSON en objets .NET pour pouvoir accéder directement aux propriétés de chaque activité.
+
+```powershell
+Login-PowerBI
+
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' | ConvertFrom-Json
+
+$activities.Count
+$activities[0]
+
+```
+
+### <a name="filter-activity-data"></a>Filtrer les données d’activité
+
+Vous pouvez filtrer les événements d’activité par type d’activité et ID d’utilisateur. Le script suivant montre comment télécharger seulement les données d’événement correspondant à l’activité **ViewDashboard**. Pour plus d’informations sur les paramètres pris en charge, utilisez la commande `Get-Help Get-PowerBIActivityEvent`.
+
+```powershell
+Login-PowerBI
+
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' -ActivityType 'ViewDashboard' | ConvertFrom-Json
+
+$activities.Count
+$activities[0]
+
+```
+
+## <a name="use-the-audit-log"></a>Utiliser le journal d’audit
+
+Si vous devez effectuer le suivi des activités des utilisateurs dans Power BI et Office 365, utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou utilisez PowerShell. L’audit s’appuie sur des fonctionnalités d’Exchange Online, qui est automatiquement configuré de façon à prendre en charge Power BI.
 
 Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de bord, rapport, jeu de données et type d’activité. Vous pouvez également télécharger les activités dans un fichier .csv (valeurs séparées par des virgules) pour les analyser hors connexion.
 
-## <a name="requirements"></a>Configuration requise
+### <a name="audit-log-requirements"></a>Conditions requises pour le journal d’audit
 
-Vous devez respecter ces exigences suivantes pour accéder aux journaux d’audit :
+Vous devez remplir ces conditions requises pour accéder aux journaux d’audit :
 
-* Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange.
+- Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange.
 
     Pour donner accès au journal d’audit à des comptes non administrateurs, vous devez ajouter l’utilisateur à la liste des membres de l’un de ces groupes de rôles. Une autre possibilité, si vous le souhaitez, consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Si vous ne pouvez pas accéder au Centre d’administration Exchange à partir du centre d’administration Microsoft 365, accédez à https://outlook.office365.com/ecp et connectez-vous avec vos informations d’identification.
 
-* Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez utiliser un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+- Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez utiliser un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
-## <a name="access-your-audit-logs"></a>Accéder à vos journaux d’audit
+### <a name="access-your-audit-logs"></a>Accéder à vos journaux d’audit
 
 Pour accéder aux journaux, vous devez d’abord activer la journalisation dans Power BI. Pour plus d’informations, consultez [Journaux d’audit](service-admin-portal.md#audit-logs) dans la documentation du portail d’administration. Il peut y avoir jusqu’à un délai de 48 heures entre l’activation de l’audit et le moment où vous pouvez afficher les données d’audit. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
 
@@ -53,9 +133,9 @@ Les journaux d’audit de Power BI sont disponibles directement dans le [Centre 
 
    ![Capture d’écran du portail d’administration avec l’option Journaux d’audit et les options Accéder au centre d’administration Microsoft Office 365 mises en évidence.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
-## <a name="search-only-power-bi-activities"></a>Rechercher des activités Power BI uniquement
+### <a name="search-only-power-bi-activities"></a>Rechercher des activités Power BI uniquement
 
-Limitez les résultats aux seules activités Power BI en suivant ces étapes. Pour la liste des activités, consultez la liste des [activités auditées par Power BI](#activities-audited-by-power-bi) plus loin dans cet article.
+Limitez les résultats aux seules activités Power BI en suivant ces étapes. Pour la liste des activités, consultez la liste des [activités auditées par Power BI](#operations-available-in-the-audit-and-activity-logs) plus loin dans cet article.
 
 1. Dans la page **Recherche dans le journal d’audit**, sous **Recherche**, sélectionnez la liste déroulante **Activités**.
 
@@ -67,7 +147,7 @@ Limitez les résultats aux seules activités Power BI en suivant ces étapes. P
 
 Vos recherches ne retournent que des activités Power BI.
 
-## <a name="search-the-audit-logs-by-date"></a>Rechercher les journaux d’audit par date
+### <a name="search-the-audit-logs-by-date"></a>Rechercher les journaux d’audit par date
 
 Vous pouvez rechercher dans les journaux par plage de dates à l’aide des champs **Date de début** et **Date de fin**. La sélection par défaut est Sept derniers jours. L’affichage présente la date et l’heure au format UTC (temps universel coordonné). La période maximale que vous pouvez spécifier est de 90 jours. 
 
@@ -75,17 +155,17 @@ Vous recevez une erreur si la période sélectionnée est supérieure à 90 jou
 
 ![Capture d’écran de la recherche dans les journaux d’audit avec les options Date de début et Date de fin mises en évidence.](media/service-admin-auditing/search-audit-log-by-date.png)
 
-## <a name="search-the-audit-logs-by-users"></a>Rechercher les journaux d’audit par utilisateur
+### <a name="search-the-audit-logs-by-users"></a>Rechercher les journaux d’audit par utilisateur
 
 Vous pouvez rechercher des entrées du journal d’audit pour les activités effectuées par des utilisateurs spécifiques. Entrez un ou plusieurs noms d’utilisateur dans le champ **Utilisateurs**. Le nom d’utilisateur ressemble à une adresse e-mail. Il s’agit du compte auquel les utilisateurs se connectent à Power BI. Laissez cette zone vide afin de renvoyer les entrées pour tous les utilisateurs (et les comptes de service) de votre organisation.
 
 ![Rechercher par utilisateurs](media/service-admin-auditing/search-audit-log-by-user.png)
 
-## <a name="view-search-results"></a>Afficher les résultats de recherche
+### <a name="view-search-results"></a>Afficher les résultats de recherche
 
 Une fois que vous sélectionnez **Rechercher**, les résultats de la recherche sont chargés. Après quelques instants, ils s’affichent sous **Résultats**. Une fois la recherche terminée, l’affichage indique le nombre de résultats trouvés. **Recherche dans le journal d’audit** affiche un maximum de 1000 événements. Si plus de 1000 événements répondent aux critères de recherche, l’application affiche les 1000 événements les plus récents.
 
-### <a name="view-the-main-results"></a>Afficher les principaux résultats
+#### <a name="view-the-main-results"></a>Afficher les principaux résultats
 
 La zone **Résultats** contient les informations suivantes sur chaque événement retourné par la recherche. Sélectionnez un en-tête de colonne sous **Résultats** pour trier les résultats.
 
@@ -94,11 +174,11 @@ La zone **Résultats** contient les informations suivantes sur chaque événemen
 | Date |Date et heure (au format UTC) auxquelles l’événement s’est produit. |
 | Adresse IP |L’adresse IP de l’appareil utilisé pour l’activité journalisée. L’application affiche l’adresse IP au format d’adresse IPv4 ou IPv6. |
 | Utilisateur |L’utilisateur (ou compte de service) qui a effectué l’action qui a déclenché l’événement. |
-| Activité |L’activité exécutée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement du journal d’audit d’administrateur Exchange, la valeur de cette colonne est une cmdlet Exchange. |
-| Article |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Seule une partie des activités a une valeur dans cette colonne. |
+| Activité |Activité exécutée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement du journal d’audit d’administrateur Exchange, la valeur de cette colonne est une cmdlet Exchange. |
+| Article |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne. |
 | Détails |Détails supplémentaires sur une activité. Là encore, seule une partie des activités a une valeur. |
 
-### <a name="view-the-details-for-an-event"></a>Afficher les détails d’un événement
+#### <a name="view-the-details-for-an-event"></a>Afficher les détails d’un événement
 
 Pour afficher plus de détails sur un événement, sélectionnez l’enregistrement de l’événement dans la liste des résultats de recherche. Une page **Détails** s’affiche avec les propriétés détaillées de l’enregistrement de l’événement. La page **Détails** affiche les propriétés en fonction du service Office 365 dans lequel l’événement se produit.
 
@@ -106,7 +186,7 @@ Pour afficher ces détails, sélectionnez **Plus d’informations**. Toutes les 
 
    ![Capture d’écran de la boîte de dialogue Détails de l’audit avec l’option Plus d’informations mise en évidence.](media/service-admin-auditing/audit-details.png)
 
-## <a name="export-search-results"></a>Exporter les résultats de recherche
+### <a name="export-search-results"></a>Exporter les résultats de recherche
 
 Pour exporter le journal d’audit Power BI dans un fichier CSV, suivez ces étapes.
 
@@ -116,9 +196,9 @@ Pour exporter le journal d’audit Power BI dans un fichier CSV, suivez ces ét
 
     ![Capture d’écran de l’option Exporter les résultats.](media/service-admin-auditing/export-auditing-results.png)
 
-## <a name="use-powershell-to-search-audit-logs"></a>Utiliser PowerShell pour rechercher dans les journaux d’audit
+### <a name="use-powershell-to-search-audit-logs"></a>Utiliser PowerShell pour rechercher dans les journaux d’audit
 
-Vous pouvez aussi utiliser PowerShell pour accéder aux journaux d’audit en fonction de votre connexion. L’exemple suivant montre comment se connecter à Exchange Online PowerShell, puis utiliser la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) pour extraire les entrées du journal d’audit Power BI. Pour exécuter le script, un administrateur doit vous attribuer les autorisations nécessaires, qui sont décrites dans la section [Exigences](#requirements).
+Vous pouvez aussi utiliser PowerShell pour accéder aux journaux d’audit en fonction de votre connexion. L’exemple suivant montre comment se connecter à Exchange Online PowerShell, puis utiliser la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) pour extraire les entrées du journal d’audit Power BI. Pour exécuter le script, un administrateur doit vous attribuer les autorisations nécessaires, qui sont décrites dans la section [Conditions requises pour le journal d’audit](#audit-log-requirements).
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -131,9 +211,9 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-## <a name="use-powershell-to-export-audit-logs"></a>Utiliser PowerShell pour exporter les journaux d’audit
+### <a name="use-powershell-to-export-audit-logs"></a>Utiliser PowerShell pour exporter les journaux d’audit
 
-Vous pouvez également utiliser PowerShell pour exporter les résultats de votre recherche de journaux d’audit. L’exemple suivant montre comment envoyer à partir de la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) et exporter les résultats avec l’applet de commande [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv). Pour exécuter le script, un administrateur doit vous attribuer les autorisations nécessaires, qui sont décrites dans la section [Exigences](#requirements).
+Vous pouvez également utiliser PowerShell pour exporter les résultats de votre recherche de journaux d’audit. L’exemple suivant montre comment envoyer à partir de la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) et exporter les résultats avec l’applet de commande [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv). Pour exécuter le script, un administrateur doit vous attribuer les autorisations nécessaires, qui sont décrites dans la section [Conditions requises pour le journal d’audit](#audit-log-requirements).
 
 ```powershell
 $UserCredential = Get-Credential
@@ -149,9 +229,9 @@ Remove-PSSession $Session
 
 Pour plus d’informations sur la connexion à Exchange Online, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Pour un autre exemple d’utilisation de PowerShell avec les journaux d’audit, consultez [Utilisation du journal d’audit Power BI et de PowerShell pour attribuer des licences Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
-## <a name="activities-audited-by-power-bi"></a>Activités auditées par Power BI
+## <a name="operations-available-in-the-audit-and-activity-logs"></a>Opérations disponibles dans les journaux d’audit et d’activité
 
-Les activités suivantes sont auditées par Power BI :
+Les opérations suivantes sont disponibles à la fois dans les journaux d’audit et les journaux d’activité.
 
 | Nom convivial                                     | Nom de l’opération                              | Notes                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|

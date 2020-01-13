@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699679"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223777"
 ---
-# <a name="power-automate-and-power-bi"></a>Power Automate et Power BI
+# <a name="power-automate-and-power-bi"></a>Power Automate et Power BI
 
-[Power Automate](https://flow.microsoft.com/documentation/getting-started) est une offre SaaS pour l’automatisation des workflows dans un nombre croissant d’applications et de services SaaS sur lesquels les utilisateurs professionnels s’appuient. Flow vous permet d’automatiser des tâches en intégrant vos applications et services favoris (y compris Power BI) pour obtenir des notifications, synchroniser des fichiers, collecter des données et bien plus encore. Les tâches répétitives sont simplifiées grâce à l’automatisation des flux de travail.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) est une offre SaaS pour l’automatisation des workflows dans un nombre croissant d’applications et de services SaaS sur lesquels les utilisateurs professionnels s’appuient. Flow vous permet d’automatiser des tâches en intégrant vos applications et services favoris (y compris Power BI) pour obtenir des notifications, synchroniser des fichiers, collecter des données et bien plus encore. Les tâches répétitives sont simplifiées grâce à l’automatisation des flux de travail.
 
-[Prenez en main Flow dès maintenant.](https://flow.microsoft.com/documentation/getting-started)
+[Prenez en main Flow dès maintenant.](https://docs.microsoft.com/power-automate/getting-started)
 
 Découvrez la façon dont Sirui crée un flux qui envoie un message détaillé à ses collègues quand une alerte Power BI est déclenchée. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.
 
@@ -29,7 +29,7 @@ Découvrez la façon dont Sirui crée un flux qui envoie un message détaillé �
 
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Créer un flux déclenché par une alerte de données Power BI
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour la suite, [créez une alerte de données dans Power BI](service-set-data-alerts.md), créez un compte Slack gratuit et [inscrivez-vous gratuitement à Power Automate](https://flow.microsoft.com/#home-signup).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Créer un flux qui utilise Power BI - à partir d’un modèle
@@ -47,7 +47,7 @@ Dans cette tâche, vous allez utiliser un modèle pour créer un simple flux qui
     ![résultats de la recherche](media/service-flow-integration/power-bi-flow-alert.png)
 
 
-### <a name="build-the-flow"></a>Créer le flux
+### <a name="build-the-flow"></a>Générer le flux
 Ce modèle a un déclencheur (alerte de données Power BI en cas de nouvelles médailles olympiques pour l’Irlande) et une action (envoyer un e-mail). Lorsque vous sélectionnez un champ, Flow affiche du contenu dynamique que vous pouvez inclure.  Dans cet exemple, nous avons inclus la valeur de vignette et l’URL de vignette dans le corps du message.
 
 ![modèle de flux](media/service-flow-integration/power-bi-template1.png)
@@ -107,7 +107,7 @@ Dans cette tâche, vous allez créer entièrement un simple flux qui est déclen
     ![Le flux déclenche une notification Outlook](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Bien démarrer avec Power Automate](https://flow.microsoft.com/documentation/getting-started/)
+* [Bien démarrer avec Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
 * [Définir des alertes de données dans le service Power BI](service-set-data-alerts.md)
 * [Définir des alertes de données sur votre iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Définir des alertes dans l’application mobile Power BI pour Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

@@ -11,10 +11,10 @@ ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
 ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873660"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Gérer le stockage de données dans les espaces de travail Power BI
@@ -48,7 +48,7 @@ Consultez l’espace de stockage des données que vous utilisez dans votre compt
 1. Pour gérer votre propre stockage, accédez à **Mon espace de travail** dans le volet de navigation.
    
     ![Mon espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
-2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage personnel**.
+2. Sélectionnez l’icône représentant un engrenage ![Icône Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage personnel**.
    
     La barre supérieure montre la part de votre limite de stockage que vous avez utilisée.
    
@@ -63,10 +63,10 @@ Consultez l’espace de stockage des données que vous utilisez dans votre compt
 N’oubliez pas que vous-même ou une autre personne pouvez avoir des rapports et des tableaux de bord basés sur un jeu de données. Si vous supprimez le jeu de données, les rapports et les tableaux de bord ne fonctionneront plus.
 
 ## <a name="manage-your-workspace"></a>Gérer votre espace de travail
-1. Sélectionnez la flèche en regard de **Espaces de travail** \>, puis sélectionnez le nom de l’espace de travail.
+1. Sélectionnez la flèche à côté de **Espaces de travail** \>, puis sélectionnez le nom de l’espace de travail.
    
     ![Sélectionner un espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage de groupe**.
+2. Sélectionnez l’icône représentant un engrenage ![Icône Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage de groupe**.
    
     La barre supérieure montre la part de la limite de stockage du groupe qui est utilisée.
    

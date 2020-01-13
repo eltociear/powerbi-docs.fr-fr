@@ -1,6 +1,6 @@
 ---
 title: Copier des rapports à partir d’autres espaces de travail (préversion) - Power BI
-description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs au sein de l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
+description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881937"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223857"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Copier des rapports à partir d’autres espaces de travail (préversion)
 
@@ -37,7 +37,7 @@ Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou u
 
     ![Boîte de dialogue Enregistrer une copie](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Vous pouvez enregistrer le rapport dans l’espace de travail actuel ou un autre dans le service Power BI. Vous voyez uniquement les espaces de travail de nouvelle expérience, desquels vous êtes membre.
+    L’espace de travail dans lequel vous pouvez enregistrer un rapport dépend de l’origine de la copie. Si la copie provient d’un espace de travail, vous pouvez enregistrer le rapport dans l’espace de travail actuel ou un autre dans le service Power BI. Vous voyez uniquement les espaces de travail de nouvelle expérience, desquels vous êtes membre. Si la copie provient d’une application, vous pouvez enregistrer le rapport dans Mon espace de travail.
   
 4. Sélectionnez **Enregistrer**.
 

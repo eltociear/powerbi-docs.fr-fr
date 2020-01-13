@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870666"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218340"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -131,7 +131,7 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
    
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
-   * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
+   * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord qui ont été mis en favoris. 
    * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
 3. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    

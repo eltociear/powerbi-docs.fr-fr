@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
+title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
 description: Dans ce tutoriel, vous créez une machine virtuelle avec Power BI Report Server déjà installé, puis explorez le portail web.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -9,13 +9,13 @@ ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73859257"
 ---
-# <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
+# <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
 Dans ce tutoriel, vous créez une machine virtuelle Azure avec Power BI Report Server déjà installé, pour pouvoir afficher, modifier et gérer des exemples de rapports Power BI Report Server et paginés ainsi que des indicateurs de performance clés.
 
 ![Portail web Power BI Report Server](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm-no-numbers.png)
@@ -206,7 +206,7 @@ Vous pouvez afficher et gérer des rapports paginés et lancer le Générateur d
 
     Vous pouvez modifier ce paramètre ici, ainsi que les autres paramètres, sans modifier les valeurs par défaut.
 
-1. Sélectionnez **Commande** **SO48339** > **Afficher le rapport**.
+1. Sélectionnez **Order** **SO48339** > **Voir le rapport**.
 
 4. Vous voyez qu’il s’agit de la page 1 de 2. Sélectionnez la flèche droite pour afficher la deuxième page. La table continue sur cette page.
 

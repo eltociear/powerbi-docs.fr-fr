@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28e6cea55b02fabddd0b2f118631a09c0344b66f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863088"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303873"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Comment les visuels s’entrefiltrent dans un rapport Power BI
 Une des grandes fonctionnalités de Power BI est la façon dont tous les éléments visuels sur une page de rapport sont interconnectés. Si vous sélectionnez un point de données sur l’un des éléments visuels, tous les autres éléments visuels de la page qui contiennent ces données changent en fonction de cette sélection. 
@@ -27,20 +27,31 @@ Par défaut, quand vous sélectionnez un point de données dans un visuel d’un
 
 Si vous débutez avec les hiérarchies ou l’exploration, vous pouvez consulter des informations complètes à ce sujet dans cet article sur l’[exploration dans Power BI](end-user-drill.md). 
 
-Le filtrage croisé et la sélection croisée peuvent être utiles pour savoir comment une valeur dans vos données impacte une autre valeur. Par exemple, la sélection du segment Moderation (Modération) dans le graphique en anneau permet de montrer l’impact de ce segment sur chaque colonne du graphique « Total units by Month » (Nombre total d’unités par mois) et de filtrer le graphique en courbes.
+### <a name="cross-filtering-and-cross-highlighting"></a>Filtrage croisé et sélection croisée
 
-![image montrant l’interaction des visuels](media/end-user-interactions/power-bi-interactions.png)
+Le filtrage croisé et la sélection croisée peuvent être utiles pour savoir comment une valeur dans vos données impacte une autre valeur. Les termes *filtrage croisé* et *sélection croisée* permettent de distinguer le comportement décrit ici de celui qui résulte de l’utilisation du volet **Filtres** pour filtrer et mettre en évidence des visuels.  
 
-Consultez [À propos du filtrage et de la mise en évidence](end-user-report-filter.md). 
+Nous allons définir ces termes en examinant les pages du rapport ci-dessous. Le graphique en anneau « Total category volume by segment » (Volume total des catégories par segment) comprend deux valeurs : « Moderation » (Modération) et « Convenience » (Commodité). 
 
+![Page du rapport](media/end-user-interactions/power-bi-interactions-before.png)
 
-  
-> [!NOTE]
-> Les termes *filtrage croisé* et *sélection croisée* permettent de distinguer le comportement décrit ici de celui qui résulte de l’utilisation du volet **Filtres** pour filtrer et mettre en évidence des visuels.  
+1. Voyons ce qui se passe lorsque vous sélectionnez **Moderation**.
+
+    ![Page du rapport après la sélection du segment Moderation dans le graphique en anneau](media/end-user-interactions/power-bi-interactions-after.png)
+
+2. Le **filtrage croisé** supprime les données non applicables. Le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer un filtrage croisé du graphique en courbes. Le graphique en courbes affiche alors uniquement les points de données concernant le segment Moderation. 
+
+3. La **sélection croisée** conserve tous les points de données d’origine, mais grise ceux qui ne s’appliquent pas à votre sélection. Le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer une sélection croisée de l’histogramme. L’histogramme grise toutes les données qui ne concernent pas le segment Convenience et sélectionne toutes les données qui concernent le segment Moderation. 
+
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 - Si votre rapport comprend un visuel qui prend en charge l’[exploration](end-user-drill.md), par défaut, le fait d’explorer un visuel n’a aucun effet sur les autres visuels de la page du rapport.     
-- Si vous utilisez le visuel A pour interagir avec le visuel B, les filtres appliqués au niveau du visuel A seront appliqués au visuel B.
+- Les filtres appliqués au niveau des visuels sont conservés lors du filtrage croisé et lors de la sélection croisée des autres visuels de la page du rapport. Ainsi, si des filtres ont été appliqués au niveau du visuel A par le concepteur de rapports ou par vous-même, et si vous utilisez le visuel A pour interagir avec le visuel B, les filtres appliqués au niveau du visuel A seront appliqués au visuel B.
+
+    ![Page du rapport après la sélection du segment Moderation dans le graphique en anneau](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Utilisation des filtres de rapport](../power-bi-how-to-report-filter.md)
+[Utilisation des filtres de rapport](../power-bi-how-to-report-filter.md)    
+
+
+[À propos du filtrage et de la sélection](end-user-report-filter.md) 

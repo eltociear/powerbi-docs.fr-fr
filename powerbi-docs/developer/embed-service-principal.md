@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264184"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223378"
 ---
 # <a name="service-principal-with-power-bi"></a>Principal de service avec Power BI
 
@@ -53,7 +53,7 @@ Vous ne pouvez utiliser le principal de service que si vos artefacts et ressourc
 
 Il existe des différences selon que vous utilisez un principal de service ou un compte principal standard (licence Power BI Pro) pour l’authentification. Les principales différences sont listées dans le tableau ci-dessous.
 
-| personnalisée | Compte d’utilisateur principal <br> (licence Power BI Pro) | Principal de service <br> (jeton d’application uniquement) |
+| Fonction | Compte d’utilisateur principal <br> (licence Power BI Pro) | Principal de service <br> (jeton d’application uniquement) |
 |------------------------------------------------------|---------------------|-------------------|
 | Peut se connecter au service Power BI  | Oui | Non |
 | Activé dans le portail d’administration Power BI | Non | Oui |
@@ -150,7 +150,7 @@ Voici les étapes à suivre pour obtenir l’ID objet du principal de service à
 
    ![Application managée dans le répertoire local](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > L’ID objet dans l’image ci-dessus n’est pas celui utilisé avec le principal de service.
 
 3. Sélectionnez **Propriétés** pour afficher l’ID objet.
@@ -174,6 +174,7 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 * Les applications [incorporant du contenu pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
 * La gestion de [flux de données](../service-dataflows-overview.md) n’est pas prise en charge.
 * Le principal de service ne prend actuellement pas en charge aucune API administrateur.
+* Quand vous utilisez un principal de service avec une source de données [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview), le principal de service doit lui-même disposer d’autorisations d’instance Azure Analysis Services. L’utilisation d’un groupe de sécurité qui contient le principal du service à cet effet ne fonctionne pas.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

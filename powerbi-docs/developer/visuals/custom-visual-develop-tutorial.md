@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: 5bf3fee0f3df7b5be04b99e16a8a4043e8fcf30e
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6a481681801b580b9eec47c5c704d8bdea8835f1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128012"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222100"
 ---
-# <a name="tutorial-developing-a-power-bi-visual"></a>Tutoriel : Développement d’un visuel Power BI
+# <a name="tutorial-developing-a-power-bi-visual"></a>Tutoriel : Développement d’un visuel Power BI
 
 Nous permettons aux développeurs d’ajouter facilement des visuels Power BI à Power BI utilisables dans les tableaux de bord et les rapports. Pour vous aider à démarrer, nous avons publié le code de toutes nos visualisations sur GitHub.
 
@@ -34,11 +34,11 @@ Dans ce tutoriel, vous allez découvrir comment :
 > * configurer la liaison de données avec les visuels ;
 > * mettre en forme les valeurs de données.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 * Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 * Vous devez avoir installé [Visual Studio Code](https://www.visualstudio.com/).
-* Vous devez avoir [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 ou ultérieure pour les utilisateurs Windows OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
+* Vous devez avoir [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 ou ultérieure pour les utilisateurs Windows OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
 
 ## <a name="setting-up-the-developer-environment"></a>Configuration de l’environnement de développeur
 
@@ -235,7 +235,7 @@ Dans cette section, nous allons tester le visuel personnalisé CircleCard en té
 
     Vous pouvez [télécharger](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) un exemple de rapport Power BI Desktop si vous n’en avez encore créé aucun.
 
-    ![Obtenir des données](media/custom-visual-develop-tutorial/get-data.png) ![Fichier local](media/custom-visual-develop-tutorial/local-file.png)
+    ![Obtenir les données](media/custom-visual-develop-tutorial/get-data.png) ![Fichier local](media/custom-visual-develop-tutorial/local-file.png)
 
     Pour voir le rapport, sélectionnez à présent **US_Sales_Analysis** dans la section **Rapport** du volet de navigation de gauche.
 
@@ -398,6 +398,9 @@ Nous pouvons maintenant explorer comment développer le visuel personnalisé pou
     import IVisual = powerbi.extensibility.IVisual;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
     import * as d3 from "d3";
     type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;

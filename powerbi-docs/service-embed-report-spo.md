@@ -1,21 +1,21 @@
 ---
 title: Incorporer avec le composant WebPart Rapport dans SharePoint Online
 description: Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/16/2019
-ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/18/2019
+ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881880"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75221709"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -29,6 +29,7 @@ Pour que les rapports **Incorporer dans SharePoint Online** fonctionnent, vous d
 
 * Une licence Power BI Pro ou une [capacité Power BI Premium (référence SKU EM ou P)](service-premium-what-is.md) avec une licence Power BI.
 * Le composant WebPart Power BI pour SharePoint Online nécessite des [pages modernes](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
+* Pour consommer un rapport incorporé, les utilisateurs doivent se connecter au service Power BI pour activer leur licence Power BI.
 
 ## <a name="embed-your-report"></a>Incorporer votre rapport
 Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL de rapport et l’utiliser avec le composant WebPart Power BI de SharePoint Online.
@@ -138,9 +139,9 @@ Il existe deux raisons habituelles pour ce message.
 
 Contactez le propriétaire de la page SharePoint Online pour qu’il vous aide à résoudre le problème.
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Licences
 
-Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’une **licence Power BI Pro** ou le contenu doit se trouver dans un espace de travail qui se trouve dans une  **[capacité Power BI Premium (référence SKU EM ou P)](service-admin-premium-purchase.md)** .
+Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’une **licence Power BI Pro** ou le contenu doit se trouver dans un espace de travail qui se trouve dans une **[capacité Power BI Premium (référence SKU EM ou P)](service-admin-premium-purchase.md)** .
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 

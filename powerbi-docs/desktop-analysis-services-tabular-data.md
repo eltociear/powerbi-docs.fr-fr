@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
+ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878822"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75523024"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Utilisation de données tabulaires Analysis Services dans Power BI Desktop
 Avec Power BI Desktop, il existe deux moyens de se connecter aux modèles tabulaires SQL Server Analysis Services et d’en récupérer des données : les explorer à l’aide d’une connexion active ou sélectionner des éléments et les importer dans Power BI Desktop.
@@ -51,31 +51,37 @@ Quand vous avez créé des rapports dynamiques dans Power BI Desktop, vous pouve
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
-**Question :** Une passerelle de données locale est-elle nécessaire ?
+**Question :** Une passerelle de données locale est-elle nécessaire ?
 
 **Réponse :** Cela dépend. Si vous utilisez Power BI Desktop pour vous connecter en temps réel à un modèle tabulaire mais que vous n’avez pas l’intention de publier sur votre site Power BI, vous n’avez pas besoin de passerelle. En revanche, si vous envisagez de publier sur votre site Power BI, une passerelle de données est nécessaire pour garantir une communication sécurisée entre le service Power BI et votre serveur Analysis Services local. Parlez à votre administrateur de serveur Analysis Services avant d’installer une passerelle de données.
 
 Si vous choisissez de sélectionner des éléments et d’obtenir des données, vous importez des données de modèle tabulaire directement dans votre fichier Power BI Desktop. Dans ce cas, aucune passerelle n’est nécessaire.
 
-**Question :** Quelle est la différence entre une connexion active à un modèle tabulaire à partir du service Power BI et une connexion active à partir de Power BI Desktop ?
+**Question :** Quelle est la différence entre une connexion active à un modèle tabulaire à partir du service Power BI et une connexion active à partir de Power BI Desktop ?
 
 **Réponse :** Si vous établissez une connexion active à un modèle tabulaire de votre site dans le service Power BI vers une base de données Analysis Services locale dans votre organisation, une passerelle de données locale est nécessaire pour sécuriser les communications. Lors de la connexion active à un modèle tabulaire à partir de Power BI Desktop, une passerelle n’est pas nécessaire car Power BI Desktop et le serveur Analysis Services auquel vous vous connectez s’exécutent localement dans votre organisation. Toutefois, si vous publiez votre fichier Power BI Desktop sur votre site Power BI, une passerelle est nécessaire.
 
-**Question :** Si j’ai créé une connexion active, puis-je me connecter à une autre source de données dans le même fichier Power BI Desktop ?
+**Question :** Si j’ai créé une connexion active, puis-je me connecter à une autre source de données dans le même fichier Power BI Desktop ?
 
 **Réponse :** Non. Vous ne pouvez pas explorer des données actives et vous connecter à un autre type de source de données dans le même fichier. Si vous avez déjà importé des données ou si vous vous êtes connecté à une autre source de données dans un fichier Power BI Desktop, vous devez créer un fichier pour effectuer une exploration active.
 
-**Question :** Si j’ai créé une connexion active, puis-je modifier le modèle ou la requête dans Power BI Desktop ?
+**Question :** Si j’ai créé une connexion active, puis-je modifier le modèle ou la requête dans Power BI Desktop ?
 
 **Réponse :** Vous pouvez créer des mesures au niveau du rapport dans Power BI Desktop, mais toutes les autres fonctionnalités de requêtes et de modélisation sont désactivées lors de l’exploration de données actives.
 
-**Question :** La connexion active que j’ai créée est-elle sécurisée ?
+**Question :** La connexion active que j’ai créée est-elle sécurisée ?
 
 **Réponse :** Oui. Vos informations d’identification Windows actuelles sont utilisées pour la connexion au serveur Analysis Services. Vous ne pouvez pas utiliser d’informations d’identification de base ou stockées dans le service Power BI ou Power BI Desktop lors de l’exploration active.
 
-**Question :** Dans le navigateur, je vois un modèle et une perspective. Quelle est la différence ?
+**Question :** Dans le navigateur, je vois un modèle et une perspective. Quelle est la différence ?
 
 **Réponse :** Une perspective est une présentation particulière d’un modèle tabulaire. Elle peut inclure uniquement des tables, des colonnes ou des mesures spécifiques, en fonction des besoins d’analyse des données. Un modèle tabulaire contient toujours au moins une perspective, qui peut inclure tout le contenu du modèle. Si vous ne savez pas quoi sélectionner, contactez votre administrateur.
+
+**Question :** Existe-t-il des fonctionnalités d’Analysis Services qui changent le comportement Power BI ?
+
+**Réponse :** Oui. Selon les fonctionnalités utilisées par votre modèle tabulaire, l’expérience dans Power BI Desktop peut changer. Voici quelques exemples :
+* Vous pouvez voir des mesures du modèle regroupées en haut de la liste des champs au lieu qu’elles se trouvent dans des tableaux en regard des colonnes. Ne vous inquiétez pas ! Vous pouvez néanmoins toujours les utiliser comme d’habitude : elles sont simplement plus faciles à trouver !
+* Si des groupes de calcul sont définis pour le modèle tabulaire, vous pouvez les utiliser seulement en combinaison avec les mesures de modèle, et non pas avec les mesures implicites que vous créez en ajoutant des champs numériques à un visuel. L’indicateur **DiscourageImplicitMeasures** peut également avoir été défini manuellement pour le modèle, ce qui a le même effet. Pour plus d’informations, consultez [Groupes de calcul dans Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Pour modifier le nom du serveur après la connexion initiale
 Lorsque vous créez un fichier Power BI Desktop avec une connexion active, il peut arriver que vous souhaitiez basculer la connexion vers un autre serveur. Par exemple, si vous avez créé votre fichier Power BI Desktop lors de la connexion à un serveur de développement, et avant la publication vers le service Power BI, vous souhaitez basculer la connexion vers un serveur de production.

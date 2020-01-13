@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410952"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222137"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -24,24 +24,22 @@ Pour vous connecter à des données, sélectionnez **Obtenir des données** à p
 
 ![Obtenir des données dans Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
-En sélectionnant **Plus...** dans le menu **Les plus courantes**, vous accédez à la fenêtre **Obtenir les données**. Vous pouvez également faire apparaître la fenêtre **Obtenir les données** (et ignorer le menu **Les plus courantes** ) en sélectionnant directement le **bouton d’icône** **Obtenir les données**.
+En sélectionnant **Plus...** dans le menu **Les plus courantes**, vous accédez à la fenêtre **Obtenir les données**. Vous pouvez également faire apparaître la fenêtre **Obtenir les données** (et ignorer le menu **Les plus courantes**) en sélectionnant directement le **bouton d’icône** **Obtenir les données**.
 
 ![Bouton Get Data](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> L’équipe Power BI enrichit en permanence les sources de données disponibles pour **Power BI Desktop** et le **service Power BI**. Par conséquent, les premières versions des sources de données en cours de création sont souvent marquées de la mention *Bêta* ou *Préversion*. Une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production. 
-
-> De plus, une source de données marquée de la mention *Bêta* ou *Préversion* pour **Power BI Desktop** risque de ne pas pouvoir être utilisée dans le **service Power BI** ou dans d’autres services Microsoft tant que la source de données n’a pas été mise à la disposition générale.
+> L’équipe Power BI enrichit en permanence les sources de données disponibles pour **Power BI Desktop** et le **service Power BI**. Par conséquent, les premières versions des sources de données en cours de création sont souvent marquées de la mention *Bêta* ou *Préversion*. Une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production. De plus, une source de données marquée de la mention *Bêta* ou *Préversion* pour **Power BI Desktop** risque de ne pas pouvoir être utilisée dans le **service Power BI** ou dans d’autres services Microsoft tant que la source de données n’a pas été mise à la disposition générale.
 
 ## <a name="data-sources"></a>Sources de données
 Les types de données sont organisés dans les catégories suivantes :
 
-* Toutes
+* Tout
 * Fichier
 * Base de données
 * Power BI
 * Azure
-* Online Services
+* Services en ligne
 * Autre
 
 La catégorie **Toutes** comprend tous les types de connexion de données de toutes les catégories.
@@ -82,7 +80,7 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Vertica
 * Snowflake
 * Essbase
-* Cubes AtScale (bêta)
+* Cubes AtScale
 * Connecteur BI
 * Dremio
 * Exasol
@@ -104,7 +102,7 @@ La catégorie **Power Platform** fournit les connexions de données suivantes :
 * Jeux de données Power BI
 * Dataflows Power BI
 * Common Data Service
-* Dataflows Power Platform (Bêta)
+* Dataflows Power Platform
 
 L’image suivante représente la fenêtre **Obtenir des données** pour **Power Platform**.
 
@@ -118,13 +116,14 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (bêta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (bêta)
+* Azure Cost Management
+* Azure Time Series Insights (bêta)
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
 
@@ -136,7 +135,7 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Microsoft Exchange Online
 * Dynamics 365 (Online)
 * Dynamics NAV
-* Dynamics 365 Business Central
+* Dynamics 365 Business Central
 * Dynamics 365 Business Central (local)
 * Microsoft Azure Consumption Insights (bêta)
 * Azure DevOps (bêta)
@@ -236,7 +235,7 @@ Lorsqu’un auteur ouvre un fichier .PBIDS, Power BI Desktop s’ouvre et invite
 
 À partir de là, l’utilisateur peut commencer à créer des visualisations ou à réexaminer les *Sources récentes* pour charger un nouvel ensemble de tables dans le modèle. 
 
-Actuellement, les fichiers .PBIDS prennent en charge une seule source de données dans un seul fichier. La spécification de plusieurs sources de données génère une erreur. 
+Actuellement, les fichiers .PBIDS prennent en charge une seule source de données dans un même fichier. La spécification de plusieurs sources de données génère une erreur. 
 
 Pour créer le fichier .PBIDS, les administrateurs doivent spécifier les entrées requises pour une seule connexion et peuvent spécifier le mode de la connexion, **DirectQuery** ou **Importation**. Si **mode** manque ou est null dans le fichier, l’utilisateur qui ouvre le fichier dans Power BI Desktop est invité à sélectionner DirectQuery ou Importation. 
 
