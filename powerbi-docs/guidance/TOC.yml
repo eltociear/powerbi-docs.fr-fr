@@ -48,6 +48,10 @@
           href: relationships-many-to-many.md
         - name: Désactiver l’actualisation de l’arrière-plan de Power Query
           href: power-query-background-refresh.md
+        - name: Quand utiliser des rapports paginés dans Power BI
+          href: report-paginated-or-power-bi.md
+        - name: Migrer les rapports SQL Server Reporting Services vers Power BI
+          href: migrate-ssrs-reports-to-power-bi.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs

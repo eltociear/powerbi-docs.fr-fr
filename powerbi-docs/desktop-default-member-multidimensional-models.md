@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: afd85404dd926cab396222d3ba9b4bf62e689054
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea60400a4522dd496e19d508f13760581c0b2620
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876343"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761246"
 ---
-# <a name="default-member-in-multidimensional-models-in-power-bi"></a>Membre par défaut dans des modèles multidimensionnels dans Power BI
+# <a name="work-with-multidimensional-models-in-power-bi"></a>Utiliser des modèles multidimensionnels dans Power BI
 
 Vous pouvez vous connecter à des modèles multidimensionnels dans Power BI et créer des rapports permettant de visualiser toutes sortes de données dans le modèle. Lorsque des modèles multidimensionnels sont utilisés, Power BI applique des règles au traitement des données, en fonction de la colonne définie comme *membre par défaut*. 
 

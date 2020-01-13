@@ -2,19 +2,18 @@
 title: Glossaire pour les consommateurs de Power BI
 description: Power BI introduit de nombreux termes nouveaux, ainsi que de nouvelles utilisations de termes familiers. Utilisez notre glossaire pour bien comprendre la terminologie de Power BI.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548534"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303922"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -76,7 +75,9 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **content view (affichage du contenu)**
 
-**cross filter, cross highlight (filtre croisé, sélection croisée)**
+**filtrage croisé** S’applique aux interactions visuelles. Le filtrage croisé supprime les données non applicables. Par exemple, le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer un filtrage croisé du graphique en courbes. Le graphique en courbes affiche alors uniquement les points de données qui concernent le segment Moderation.
+
+**sélection croisée** S’applique aux interactions visuelles. La sélection croisée conserve tous les points de données d’origine, mais grise ceux qui ne s’appliquent pas à votre sélection. Par exemple, le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer une sélection croisée de l’histogramme. L’histogramme grise toutes les données qui ne concernent pas le segment Moderation et sélectionne toutes les données qui concernent le segment Moderation.
 
 **custom visual (visuel personnalisé)** Visuels qui sont créés par la communauté et par Microsoft. Ils peuvent être téléchargés à partir du store Office pour être utilisés dans des rapports Power BI.
 
@@ -310,6 +311,8 @@ Les tableaux de bord Power BI contiennent des vignettes de rapport.
 **value, values (valeur, valeurs)** Données numériques à visualiser.
 
 **visual, visualization (visuel, visualisation)** Graphique. Voici quelques visuels : graphique à barres, treemap, graphique en anneau, carte.
+
+**Interaction visuelle** L’une des plus importantes fonctionnalités de Power BI est celle qui permet d’interconnecter tous les visuels d’une page de rapport. Si vous sélectionnez un point de données sur l’un des éléments visuels, tous les autres éléments visuels de la page qui contiennent ces données changent en fonction de cette sélection.
 
 **Visualizations pane (volet Visualisations)** Nom des modèles de visualisation fournis dans le canevas de rapport partagé pour Power BI Desktop et le service Power BI. Contient de petits modèles, également appelés « icônes », pour chaque type de visualisation natif.  
 

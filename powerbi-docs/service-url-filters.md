@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876922"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836717"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -46,7 +46,7 @@ Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, l
 
 Comme dans cet exemple :
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Types de champ
 
@@ -104,7 +104,7 @@ Pour filtrer sur des champs supplémentaires, ajoutez un '**and**' et un autre c
 
 Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tableau ci-dessous liste ces opérateurs, ainsi que le type de contenu qu’ils prennent en charge.
 
-|Opérateur  | Définition | chaîne  | nombre | Date |  Example|
+|Opérateur  | Définition | chaîne  | nombre | Date |  Exemple|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | et |  oui      | oui |  oui|  product/price le 200 and price gt 3,5 |
 |**eq**     | est égal à |  oui      | oui   |  oui       | Address/City eq 'Redmond' |
@@ -122,7 +122,7 @@ Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tablea
 
 Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
-|Type de nombre  |Example  |
+|Type de nombre  |Exemple  |
 |---------|---------|
 |**integer**     |   5      |
 |**long**     |   5 L ou 5 l      |
