@@ -709,6 +709,8 @@
               href: service-dataflows-overview.md
             - name: Créer et utiliser des dataflows
               href: service-dataflows-create-use.md
+            - name: Utiliser le moteur de calcul amélioré avec des dataflows
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Entités calculées avec Power BI Premium
               href: service-dataflows-computed-entities-premium.md
             - name: Se connecter à des sources de données avec des dataflows
@@ -801,6 +803,8 @@
               items:
                 - name: Se connecter à des services avec des applications
                   href: service-connect-to-services.md
+                - name: Calculatrice Azure Carbon
+                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
                 - name: Office365Mon
