@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3f71bf3b7b457370fccb8b5fbae4bd7bae3b227d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3928b90d3aba8084cb5f1bf3677adb31afb01722
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75223487"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729670"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
 Cet article décrit les précédentes mises à jour de **Power BI Desktop**. Pour la version du mois la plus récente, consultez les dernières mises à jour [**Power BI Desktop**](desktop-latest-update.md).
 
-La dernière version de Power BI Desktop est disponible dans le [Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=58494). Si vous exécutez Windows 10, vous pouvez également obtenir Power BI Desktop à partir du Microsoft Store sur Windows 10. Quelle que soit la façon dont vous installez Power BI Desktop, les versions mensuelles sont identiques, même si la numérotation des versions peut différer. Pour plus d’informations sur le téléchargement et l’installation de Power BI Desktop, consultez [Obtenir Power BI Desktop](desktop-get-the-desktop.md). 
+La dernière version de Power BI Desktop est disponible dans le [Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=58494). Si vous exécutez Windows 10, vous pouvez également vous procurer Power BI Desktop dans le Windows Store sur Windows 10. Quelle que soit la façon dont vous installez Power BI Desktop, les versions mensuelles sont identiques (même si la numérotation des versions peut différer). Pour plus d’informations sur le téléchargement et l’installation de Power BI Desktop, consultez [Obtenir Power BI Desktop](desktop-get-the-desktop.md). 
 
 Les liens en regard de chaque mise à jour signifient ce qui suit :
 
@@ -1016,7 +1016,7 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en ao�
 
 ### <a name="analytics"></a>Analytique
 
-* Mise en forme conditionnelle en fonction de valeurs [[vidéo]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[article]](desktop-conditional-table-formatting.md#color-formatting-by-field-value)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
+* Mise en forme conditionnelle en fonction de valeurs [[vidéo]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[article]](desktop-conditional-table-formatting.md#color-by-color-values)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
 * Intégration de Python [[vidéo]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * Améliorations de Questions et réponses  [[vidéo]](https://youtu.be/dgv5HhHxxe8?t=13m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 

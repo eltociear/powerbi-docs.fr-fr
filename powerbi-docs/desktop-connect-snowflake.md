@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: a62d1cf6d21df822265c3c41d4e74e74181b7051
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304296"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885177"
 ---
-# <a name="connect-to-snowflake-in-power-bi-desktop"></a>Se connecter à Snowflake dans Power BI Desktop
+# <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake Computing** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop. 
 
 > [!NOTE]
@@ -35,7 +35,7 @@ Dans la fenêtre **Snowflake** qui s’affiche, tapez ou collez le nom de votre 
 
 Lorsque vous y êtes invité, indiquez votre nom d’utilisateur et votre mot de passe.
 
-![](media/desktop-connect-snowflake/connect_snowflake_4.png)
+![](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Une fois que vous indiquez le nom d’utilisateur et le mot de passe d’un serveur **Snowflake** donné, Power BI Desktop les utilise dans les tentatives de connexion ultérieures. Pour modifier ces informations d’identification, accédez à **Fichier > Options et paramètres > Paramètres de la source de données**.
