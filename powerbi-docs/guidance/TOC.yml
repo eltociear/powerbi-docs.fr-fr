@@ -10,48 +10,56 @@
     - name: Concepts
       expanded: true
       items:
-        - name: "Qu’est-ce qu’un schéma en étoile\_?"
-          href: star-schema.md
-        - name: Réduire la taille du modèle de données
-          href: import-modeling-data-reduction.md
-        - name: Fonction DIVIDE ou opérateur de division (/)
-          href: dax-divide-function-operator.md
-        - name: Utiliser SELECTEDVALUE à la place de VALUES
-          href: dax-selectedvalue.md
-        - name: L’importance du Query Folding
-          href: power-query-folding.md
-        - name: Utilisation appropriée des fonctions d’erreur
-          href: dax-error-functions.md
-        - name: Utiliser des variables pour améliorer des formules
-          href: dax-variables.md
-        - name: COUNTROWS à la place de COUNT
-          href: dax-countrows.md
-        - name: Éviter de convertir des blancs (BLANK) en valeurs
-          href: dax-avoid-converting-blank.md
-        - name: Références de colonne et de mesure
-          href: dax-column-measure-references.md
-        - name: Évitez d’utiliser FILTER comme argument de filtre
-          href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Bonnes pratiques pour les dataflows
-          href: ../service-dataflows-best-practices.md
-        - name: Guide du modèle DirectQuery dans Power BI Desktop
-          href: directquery-model-guidance.md
-        - name: Référencement des requêtes Power Query
-          href: power-query-referenced-queries.md
-        - name: Extension de visuels avec des info-bulles de page de rapport
-          href: report-page-tooltips.md
-        - name: Extraction de page de rapport
-          href: report-drillthrough.md
-        - name: Conseils sur les dates/heures automatiques dans Power BI Desktop
-          href: auto-date-time.md
-        - name: Conseils sur les relations plusieurs-à-plusieurs
-          href: relationships-many-to-many.md
-        - name: Désactiver l’actualisation de l’arrière-plan de Power Query
-          href: power-query-background-refresh.md
-        - name: Quand utiliser des rapports paginés dans Power BI
-          href: report-paginated-or-power-bi.md
-        - name: Migrer les rapports SQL Server Reporting Services vers Power BI
-          href: migrate-ssrs-reports-to-power-bi.md
+        - name: Transformez et mettez en forme des données
+          items:
+            - name: L’importance du Query Folding
+              href: power-query-folding.md
+            - name: Référencement des requêtes Power Query
+              href: power-query-referenced-queries.md
+            - name: Désactiver l’actualisation en arrière-plan de Power Query
+              href: power-query-background-refresh.md
+            - name: Bonnes pratiques pour les dataflows
+              href: ../service-dataflows-best-practices.md
+        - name: Modélisation des données
+          items:
+            - name: "Qu’est-ce qu’un schéma en étoile\_?"
+              href: star-schema.md
+            - name: Réduire la taille du modèle de données
+              href: import-modeling-data-reduction.md
+            - name: Conseils sur les dates/heures automatiques dans Power BI Desktop
+              href: auto-date-time.md
+            - name: Conseils sur les relations plusieurs-à-plusieurs
+              href: relationships-many-to-many.md
+            - name: Guide du modèle DirectQuery dans Power BI Desktop
+              href: directquery-model-guidance.md
+        - name: DAX
+          items:
+            - name: Fonction DIVIDE ou opérateur de division (/)
+              href: dax-divide-function-operator.md
+            - name: Utilisation appropriée des fonctions d’erreur
+              href: dax-error-functions.md
+            - name: Utiliser SELECTEDVALUE à la place de VALUES
+              href: dax-selectedvalue.md
+            - name: COUNTROWS à la place de COUNT
+              href: dax-countrows.md
+            - name: Utiliser des variables pour améliorer des formules
+              href: dax-variables.md
+            - name: Éviter de convertir des blancs (BLANK) en valeurs
+              href: dax-avoid-converting-blank.md
+            - name: Références de colonne et de mesure
+              href: dax-column-measure-references.md
+            - name: Évitez d’utiliser FILTER comme argument de filtre
+              href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Création de rapports
+          items:
+            - name: Extension de visuels avec des info-bulles de page de rapport
+              href: report-page-tooltips.md
+            - name: Extraction de page de rapport
+              href: report-drillthrough.md
+            - name: Quand utiliser des rapports paginés dans Power BI
+              href: report-paginated-or-power-bi.md
+            - name: Migrer les rapports SQL Server Reporting Services vers Power BI
+              href: migrate-ssrs-reports-to-power-bi.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs

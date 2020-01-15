@@ -4,7 +4,7 @@
       items:
         - name: "Qu’est-ce que Power\_BI\_Desktop\_?"
           href: desktop-what-is-desktop.md
-    - name: Guides de démarrage rapide
+    - name: Démarrages rapides
       expanded: true
       items:
         - name: "Se connecter à des données dans Power\_BI\_Desktop"
@@ -83,7 +83,7 @@
           href: developer/power-bi-custom-visuals-faq.md
     - name: Guides pratiques
       items:
-        - name: "Obtenir Power\_BI\_Desktop"
+        - name: Obtenir Power BI Desktop
           href: desktop-get-the-desktop.md
         - name: "Bien démarrer avec Power\_BI Desktop"
           href: desktop-getting-started.md
@@ -101,7 +101,7 @@
           href: desktop-relationship-view.md
         - name: Utiliser la vue Rapport
           href: desktop-report-view.md
-        - name: Se connecter à la source de données
+        - name: Se connecter aux sources de données
           href: desktop-connect-to-data.md
         - name: Publier des jeux de données et des rapports
           href: desktop-upload-desktop-files.md
@@ -117,7 +117,7 @@
           href: desktop-auto-date-time.md
         - name: Se connecter aux données
           items:
-            - name: Se connecter à la source de données
+            - name: Se connecter aux sources de données
               href: desktop-data-sources.md
             - name: Créer un rapport sur une liste SharePoint
               href: desktop-sharepoint-online-list.md
@@ -395,7 +395,7 @@
               href: natural-language/q-and-a-best-practices.md
             - name: Limitations de Questions et réponses
               href: natural-language/q-and-a-limitations.md
-        - name: Résoudre des problèmes
+        - name: Dépanner
           items:
             - name: Résoudre les problèmes liés à l’importation de fichiers Access et .xls Excel
               href: desktop-access-database-errors.md
@@ -403,7 +403,7 @@
               href: desktop-error-launching-desktop.md
             - name: Résoudre les problèmes liés au développement de modèles DirectQuery
               href: desktop-directquery-troubleshoot.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: "Types de données dans Power\_BI\_Desktop"
           href: desktop-data-types.md
@@ -439,7 +439,7 @@
               href: desktop-accessibility-consuming-tools.md
             - name: "Raccourcis clavier dans Power\_BI Desktop"
               href: desktop-accessibility-keyboard-shortcuts.md
-- name: "Service Power\_BI"
+- name: Service Power BI
   items:
     - name: Vue d’ensemble
       items:
@@ -479,7 +479,7 @@
               href: service-datasets-understand.md
             - name: Comprendre les modes de jeu de données Power BI
               href: service-dataset-modes-understand.md
-            - name: "Actualisation des données dans Power\_BI"
+            - name: Actualisation des données dans Power BI
               href: refresh-data.md
         - name: "Collaborer dans Power\_BI"
           items:
@@ -489,7 +489,7 @@
               href: service-how-to-collaborate-distribute-dashboards-reports.md
             - name: Surveiller l’utilisation de Power BI
               href: service-usage-metrics.md
-        - name: Licences
+        - name: Licence
           items:
             - name: "S’inscrire à Power\_BI"
               href: service-self-service-signup-for-power-bi.md
@@ -515,7 +515,7 @@
               href: service-flow-integration.md
             - name: Utiliser des applications tierces
               href: service-power-bi-get-started-third-party-apps.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Obtenir des données de fichiers
           items:
@@ -523,7 +523,7 @@
               href: service-get-data-from-files.md
             - name: Passer d’Excel à des rapports impressionnants
               href: service-from-excel-to-stunning-report.md
-            - name: Obtenir des données de classeurs Excel
+            - name: Obtenir des données de classeurs excel
               href: service-excel-workbook-files.md
             - name: "Obtenir des données de fichiers Power\_BI Desktop"
               href: service-desktop-files.md
@@ -569,7 +569,7 @@
               href: sql-server-analysis-services-tabular-data.md
         - name: Actualiser les données
           items:
-            - name: Configurer une actualisation planifiée
+            - name: Configuration d'une actualisation planifiée
               href: refresh-scheduled-refresh.md
             - name: "Actualiser un jeu de données à partir d’un fichier Power\_BI\_Desktop local"
               href: refresh-desktop-file-local-drive.md
@@ -587,7 +587,7 @@
           items:
             - name: Présentation des tableaux de bord
               href: service-dashboards.md
-            - name: Mise à jour des vignettes de tableau de bord
+            - name: Vignettes de tableau de bord
               href: service-dashboard-tiles.md
             - name: Créer un tableau de bord à partir d’un rapport
               href: service-dashboard-create.md
@@ -607,7 +607,7 @@
               href: service-set-data-alerts.md
             - name: 'Ajouter une image, une zone de texte, une vidéo ou du code à un tableau de bord'
               href: service-dashboard-add-widget.md
-            - name: Modifier une vignette
+            - name: Modification d'une vignette
               href: service-dashboard-edit-tile.md
             - name: Conseils pour la conception d’un tableau de bord réussi
               href: service-dashboards-design-tips.md
@@ -701,7 +701,7 @@
               href: service-publish-to-web.md
             - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: "Power\_BI Publisher pour Excel"
+            - name: Power BI Publisher pour Excel
               href: publisher-for-excel.md
         - name: Préparation des données en libre-service
           items:
@@ -729,7 +729,7 @@
               href: service-dataflows-azure-data-lake-integration.md
             - name: Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
               href: service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Configurer les paramètres de flux de données d’un espace de travail (préversion)
+            - name: Configurer les paramètres de dataflow d’espace de travail (préversion)
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
               href: service-dataflows-add-cdm-folder.md
@@ -761,7 +761,7 @@
               href: service-template-update-delete-extract.md
             - name: Exemples d’applications modèles
               href: service-template-apps-samples.md
-        - name: Résoudre des problèmes
+        - name: Dépanner
           items:
             - name: "Vous avez oublié votre mot de passe Power BI\_?"
               href: service-admin-forgot-your-password.md
@@ -799,14 +799,14 @@
               href: service-govus-signup.md
             - name: Supprimer pratiquement tout dans Power BI
               href: service-delete.md
-            - name: Se connecter aux services
+            - name: Se connecter à des services
               items:
                 - name: Se connecter à des services avec des applications
                   href: service-connect-to-services.md
-                - name: Calculatrice Azure Carbon
-                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
+                - name: Microsoft Sustainability Calculator
+                  href: service-connect-to-microsoft-sustainability-calculator.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
                 - name: Project Online
@@ -833,7 +833,7 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Supprimer une connexion à un pack de contenu
                   href: service-organizational-content-pack-disconnect.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: Langues et pays/régions pris en charge
           href: supported-languages-countries-regions.md
@@ -841,7 +841,7 @@
           href: power-bi-browsers.md
     - name: Ressources
       items:
-        - name: Vidéos
+        - name: Videos
           href: videos.md
         - name: Webinaires
           href: webinars.md
@@ -861,7 +861,7 @@
           href: service-premium-capacity-scenarios.md
         - name: "FAQ Power\_BI Premium"
           href: service-premium-faq.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Acheter Power BI Premium
           href: service-admin-premium-purchase.md
@@ -887,7 +887,7 @@
           href: service-admin-premium-restart.md
         - name: Se connecter à des jeux de données avec des applications et des outils clients
           href: service-premium-connect-tools.md
-- name: Générateur de rapports paginés Power BI
+- name: Générateur de rapports Power BI
   items:
     - name: Vue d’ensemble
       items:
@@ -927,7 +927,7 @@
           href: report-builder-previewing-reports.md
         - name: Forum aux questions sur les rapports paginés
           href: paginated-reports-faq.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Entrer des données directement dans un rapport paginé
           href: paginated-reports-enter-data.md
@@ -993,7 +993,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Incorporer des rapports
               href: report-server/quickstart-embed.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: "Installer Power\_BI\_Desktop"
           href: report-server/install-powerbi-desktop.md
@@ -1017,7 +1017,7 @@
               href: report-server/access-dataset-odata.md
             - name: Changer les chaînes de connexion de source de données avec PowerShell
               href: report-server/connect-data-source-apis.md
-            - name: Configurer une actualisation planifiée
+            - name: Configuration d'une actualisation planifiée
               href: report-server/configure-scheduled-refresh.md
             - name: Ajouter des commentaires à un rapport
               href: report-server/add-comments.md
@@ -1039,7 +1039,7 @@
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Héberger des classeurs Excel
               href: report-server/excel-oos.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: API REST
           href: report-server/rest-api.md
@@ -1069,7 +1069,7 @@
           href: service-gateway-deployment-guidance.md
         - name: FAQ Passerelle de données locale
           href: service-gateway-power-bi-faq.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Informations approfondies sur la passerelle de données locale
           href: service-gateway-onprem-indepth.md
