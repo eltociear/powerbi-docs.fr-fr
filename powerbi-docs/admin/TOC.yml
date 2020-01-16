@@ -54,8 +54,6 @@
               href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Sécurité au niveau des lignes
           href: ../service-admin-rls.md
-        - name: Espace de travail archivé
-          href: ../service-admin-power-bi-archived-workspace.md
         - name: Configurer des applications mobiles avec Intune
           href: ../service-admin-mobile-intune.md
     - name: Référence
