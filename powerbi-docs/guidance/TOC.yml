@@ -52,12 +52,14 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Création de rapports
           items:
-            - name: Extension de visuels avec des info-bulles de page de rapport
+            - name: Étendre des visuels avec des info-bulles de page de rapport
               href: report-page-tooltips.md
-            - name: Extraction de page de rapport
+            - name: Utiliser l’extraction de page de rapport
               href: report-drillthrough.md
             - name: Quand utiliser des rapports paginés dans Power BI
               href: report-paginated-or-power-bi.md
+            - name: Éviter les pages blanches lors de l’impression de rapports paginés
+              href: report-paginated-blank-page.md
             - name: Migrer les rapports SQL Server Reporting Services vers Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Livres blancs
