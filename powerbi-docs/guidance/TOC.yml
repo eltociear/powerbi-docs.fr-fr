@@ -26,11 +26,11 @@
               href: star-schema.md
             - name: Réduire la taille du modèle de données
               href: import-modeling-data-reduction.md
-            - name: Conseils sur les dates/heures automatiques dans Power BI Desktop
+            - name: Conseils sur la date/heure automatique
               href: auto-date-time.md
             - name: Conseils sur les relations plusieurs-à-plusieurs
               href: relationships-many-to-many.md
-            - name: Guide du modèle DirectQuery dans Power BI Desktop
+            - name: Conseils sur le modèle DirectQuery
               href: directquery-model-guidance.md
         - name: DAX
           items:
@@ -58,9 +58,11 @@
               href: report-drillthrough.md
             - name: Quand utiliser des rapports paginés dans Power BI
               href: report-paginated-or-power-bi.md
+            - name: Utiliser des paramètres en cascade dans les rapports paginés
+              href: paginated-report-cascading-parameter.md
             - name: Éviter les pages blanches lors de l’impression de rapports paginés
               href: report-paginated-blank-page.md
-            - name: Migrer les rapports SQL Server Reporting Services vers Power BI
+            - name: Migrer les rapports SSRS vers Power BI
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Livres blancs
       items:
