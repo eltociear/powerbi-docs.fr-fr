@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699012"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837619"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Actualisation planifiée de rapport Power BI dans Power BI Report Server
 L’actualisation planifiée des rapports Power BI permet de tenir à jour les données d’un rapport.
@@ -61,8 +61,10 @@ Pour plus d’informations sur la façon de surveiller une instance Analysis Ser
 
 Pour plus d’informations sur les paramètres de mémoire dans Analysis Services, voir [Propriétés de mémoire](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### <a name="data-model-size-limit"></a>Limite concernant la taille des modèles de données
+Le modèle de données qui est chargé dans le moteur interne Analysis Services lors d’une actualisation planifiée a une taille maximale de 2 000 Mo (2 Go). Cette taille ne peut pas être configurée. Si votre modèle de données dépasse les 2 Go, l’erreur d’actualisation suivante s’affichera : « La longueur du résultat dépasse la limite de longueur (2 Go) du type cible ». Dans ce cas, nous vous recommandons d’héberger le modèle dans une instance Analysis Services, et d’utiliser une connexion active au modèle du rapport.
+
 ## <a name="next-steps"></a>Étapes suivantes
 Configurez une [actualisation planifiée](configure-scheduled-refresh.md) sur un rapport Power BI.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

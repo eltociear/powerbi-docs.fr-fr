@@ -7,61 +7,60 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: eae7ffdaa6f21ed0732500539f922cf10eb7bb61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 525f7bf4c967722d8f98a9184127bc8c7907cea1
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878176"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729920"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Utiliser le regroupement et le compartimentage dans Power BI Desktop
-Lorsque **Power BI Desktop** crée des visuels, il regroupe vos données en blocs (ou groupes) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez souhaiter afficher les chiffres de ventes dans des compartiments de 1 000 000 dollars, au lieu de compartiments de 923 983 dollars divisés de façon égale.
+Lorsque Power BI Desktop crée des visuels, il regroupe vos données en blocs (ou groupes) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez souhaiter afficher les chiffres de ventes dans des compartiments de 1 000 000 dollars, au lieu de compartiments de 923 983 dollars.
 
-Dans Power BI Desktop, vous pouvez **Grouper** des points de données pour vous aider à afficher, analyser et explorer plus clairement les données et les tendances de vos visuels. Vous pouvez également définir la **Taille du compartiment**, souvent appelée *quantification*, pour placer des valeurs dans des groupes de taille égale qui vous permettent de visualiser les données de manière explicite.
+Dans Power BI Desktop, vous pouvez *regrouper* des points de données pour vous aider à afficher, analyser et explorer plus clairement les données et les tendances de vos visuels. Vous pouvez également définir la *taille du compartiment* pour placer des valeurs dans des groupes de taille égale qui vous permettent de visualiser les données de manière explicite. Cette action est souvent appelée *binning*.
 
 ## <a name="using-grouping"></a>Utilisation du regroupement
-Pour utiliser le regroupement, sélectionnez deux éléments ou plus d’un visuel à l’aide de Ctrl+clic pour sélectionner plusieurs éléments. Cliquez ensuite avec le bouton de droite sur les éléments sélectionnés, puis sélectionnez **Groupe** dans le menu qui s’affiche.
+Pour utiliser le regroupement, sélectionnez deux éléments ou plus d’un visuel à l’aide de Ctrl+clic pour sélectionner plusieurs éléments. Cliquez ensuite avec le bouton droit sur l’un des éléments de sélection, puis choisissez **Grouper** dans le menu contextuel.
 
-![](media/desktop-grouping-and-binning/grouping-binning_1.png)
+![Commande Grouper, graphe, regroupement (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_1.png)
 
-Une fois créé, le groupe est ajouté au compartiment **Légende** du visuel et apparaît également dans la liste **Champs**.
+Une fois créé, le groupe est ajouté au compartiment **Légende** du visuel. Le groupe s’affiche également dans la liste **Champs**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_2.png)
+![Listes Légende et Champs, regroupement (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_2.png)
 
-Une fois que vous disposez d’un groupe, vous pouvez facilement modifier les membres de ce groupe en cliquant avec le bouton de droite sur le champ à partir du compartiment **Légende** ou de la liste **Champs**, puis en sélectionnant **Modifier les groupes**.
+Une fois que vous disposez d’un groupe, vous pouvez facilement en modifier les membres. Cliquez avec le bouton droit sur le champ à partir du compartiment **Légende** ou de la liste **Champs**, puis choisissez **Modifier les groupes**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_3.png)
+![Commande Modifier les groupes, listes Légende et Champs (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_3.png)
 
-Dans la fenêtre **Groupes** qui s’affiche, vous pouvez créer des groupes ou modifier les groupes existants. Vous pouvez également *renommer* un groupe en double-cliquant sur le titre du groupe dans la boîte **Groupes et membres**, puis en appuyant sur un nouveau nom.
+Dans la boîte de dialogue **Groupes**, vous pouvez créer des groupes ou modifier les groupes existants. Vous pouvez également *renommer* un groupe. Il vous suffit de double-cliquer sur le titre du groupe dans la zone **Groupes et membres**, puis d’entrer un nouveau nom.
 
-Vous pouvez réaliser toute sorte de choses avec les groupes. Vous pouvez ajouter des éléments de la liste **Valeurs non groupées** dans un nouveau groupe ou dans les groupes existants. Pour créer un nouveau groupe, sélectionnez deux éléments ou plus (à l’aide de Ctrl+clic) à partir de la boîte **Valeurs non groupées**, puis cliquez sur le bouton **Groupe** sous cette boîte.
+Vous pouvez effectuer toutes sortes d’opérations avec les groupes. Vous pouvez ajouter des éléments de la liste **Valeurs non groupées** dans un nouveau groupe ou dans les groupes existants. Pour créer un groupe, sélectionnez deux éléments ou plus (à l’aide de Ctrl+clic) à partir de la zone **Valeurs non groupées**, puis sélectionnez le bouton **Grouper** sous cette zone.
 
-Vous pouvez ajouter une valeur non groupée dans un groupe existant : sélectionnez simplement la valeur non groupée, puis le groupe existant auquel vous souhaitez l’ajouter et cliquez sur le bouton **Groupe**. Pour supprimer un élément d’un groupe, sélectionnez-le dans la zone **Groupes et membres**, puis cliquez sur **Dissocier**. Vous pouvez également indiquer si les catégories sans groupe doivent être placées dans le groupe **Autres** ou rester non groupées.
+Vous pouvez ajouter une valeur non groupée dans un groupe existant : sélectionnez simplement une des **valeurs non groupées**, puis le groupe existant auquel vous souhaitez l’ajouter et sélectionnez le bouton **Grouper**. Pour supprimer un élément d’un groupe, sélectionnez-le dans la zone **Groupes et membres**, puis sélectionnez **Dissocier**. Vous pouvez également déplacer des catégories non groupées dans le groupe **Autre** ou les laisser non groupées.
 
-![](media/desktop-grouping-and-binning/grouping-binning_4.png)
+![Boîte de dialogue Groupes (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_4.png)
 
 > [!NOTE]
 > Vous pouvez créer des groupes pour n’importe quel champ de la zone **Champs** sans avoir à effectuer une sélection multiple à partir d’un visuel existant. Cliquez avec le bouton de droite et sélectionnez **Nouveau groupe** dans le menu qui s’affiche.
 
 ## <a name="using-binning"></a>Utilisation du compartimentage
-Vous pouvez définir la taille de compartiment des champs numériques et horaires dans **Power BI Desktop.** Vous pouvez utiliser le compartimentage pour redimensionner correctement les données affichées par **Power BI Desktop**.
+Vous pouvez définir la taille de compartiment des champs numériques et horaires dans **Power BI Desktop.** Vous pouvez utiliser le compartimentage (binning) pour redimensionner correctement les données affichées par Power BI Desktop.
 
-Pour appliquer une taille de compartiment, cliquez avec le bouton de droite sur un **Champ** et sélectionnez **Nouveau groupe**.
+Pour appliquer une taille de compartiment, cliquez avec le bouton droit sur un **champ** et choisissez **Nouveau groupe**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_5.png)
+![Commande Nouveau groupe, liste champs (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_5.png)
 
-Dans la fenêtre **Groupes**, configurez la **taille de compartiment** souhaitée.
+Dans la boîte de dialogue **Groupes**, configurez la **taille de compartiment** souhaitée.
 
-![](media/desktop-grouping-and-binning/grouping-binning_6.png)
+![Taille de compartiment, boîte de dialogue Groupes (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-Lorsque vous sélectionnez **OK**, vous remarquez qu’un nouveau champ s’affiche dans le volet **Champs** et que *(compartiments)* a été ajouté. Vous pouvez ensuite faire glisser ce champ sur le canevas pour utiliser la taille de compartiment dans un visuel.
+Lorsque vous sélectionnez **OK**, vous remarquez qu’un nouveau champ s’affiche dans le volet **Champs** et que **(compartiments)** a été ajouté. Vous pouvez ensuite faire glisser ce champ sur le canevas pour utiliser la taille de compartiment dans un visuel.
 
-![](media/desktop-grouping-and-binning/grouping-binning_7.png)
+![Faites glisser le champ des compartiments sur le canevas (Power BI Desktop)](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-Pour voir le **compartimentage** en action, regardez cette [vidéo](https://www.youtube.com/watch?v=BRvdZSfO0DY).
+Pour voir le *compartimentage* en action, regardez cette [vidéo](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
-Voici tout ce que vous deviez savoir sur l’utilisation du **regroupement** et du **compartimentage** pour vous assurer que les visuels de vos rapports affichent vos données uniquement comme vous le souhaitez.
-
+Voici tout ce que vous deviez savoir sur l’utilisation du *regroupement* et du *compartimentage* pour vous assurer que les visuels de vos rapports affichent vos données uniquement comme vous le souhaitez.

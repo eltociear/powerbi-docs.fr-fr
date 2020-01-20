@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958468"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762114"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Apporter vos propres clés de chiffrement pour Power BI (préversion)
 
@@ -104,6 +104,8 @@ Avant d’activer BYOK, gardez à l’esprit les points suivants :
 - À l’heure actuelle, vous ne pouvez pas désactiver BYOK après l’avoir activé. Selon la façon dont vous spécifiez les paramètres pour `Add-PowerBIEncryptionKey`, vous pouvez contrôler la façon dont vous utilisez BYOK pour une ou plusieurs de vos capacités. Toutefois, vous ne pouvez pas annuler l’introduction des clés dans votre locataire. Pour plus d’informations, consultez [Activer BYOK](#enable-byok).
 
 - Vous ne pouvez pas _directement_ déplacer un espace de travail qui utilise BYOK d’une capacité dédiée dans Power BI Premium vers une capacité partagée. Vous devez d’abord déplacer l’espace de travail vers une capacité dédiée pour laquelle BYOK n’est pas activé.
+
+- Si vous déplacez un espace de travail qui utilise BYOK d’une capacité dédiée dans Power BI Premium vers une capacité partagée, les rapports et les jeux de données deviennent inaccessibles, car ils sont chiffrés avec la clé. Pour éviter cette situation, vous devez d’abord déplacer l’espace de travail vers une capacité dédiée pour laquelle BYOK n’est pas activé.
 
 ### <a name="enable-byok"></a>Activer BYOK
 

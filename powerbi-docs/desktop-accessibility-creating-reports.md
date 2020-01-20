@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4686b15e04d3724256c76d7ba27a125cb04e86b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878979"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761976"
 ---
-# <a name="creating-accessible-reports-in-power-bi"></a>Création de rapports accessibles dans Power BI
+# <a name="design-power-bi-reports-for-accessibility"></a>Concevoir des rapports Power BI pour l’accessibilité
 Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisant leur accessibilité. Quel que soit le public concerné, vous devez veiller à ce que tous les rapports que vous créez puissent être utilisés par le plus grand nombre de personnes possible sans nécessiter ni adaptation, ni conception spéciale.
 
 ![Paramètres Windows de contraste élevé](media/desktop-accessibility/accessibility-05.png)
@@ -233,7 +233,7 @@ Outre une diversité d’outils et fonctionnalités d’accessibilité, Power BI
 * N’utilisez pas d’info-bulles pour communiquer des informations importantes. Les utilisateurs présentant des troubles moteurs et ceux qui n’utilisent pas la souris auront des difficultés à y accéder.
 * N’ajoutez pas d’info-bulles aux graphiques pour apporter des informations complémentaires. Elles sont incluses dans la table d’accessibilité **Afficher les données** pour chaque visuel.
 
-### <a name="video"></a>Video
+### <a name="video"></a>Vidéo
 * Évitez les vidéos qui démarrent automatiquement à l’affichage d’une page.
 * Vérifiez que votre vidéo contient des sous-titres ou qu’elle est accompagnée d’une transcription.
 
@@ -270,5 +270,5 @@ Voici la liste des articles dédiés à l’accessibilité dans Power BI :
 * [Vue d’ensemble de l’accessibilité dans Power BI](desktop-accessibility-overview.md) 
 * [Consommation des rapports Power BI avec les outils d’accessibilité](desktop-accessibility-consuming-tools.md)
 * [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
-* [Raccourcis clavier d’accessibilité pour les rapports Power BI](desktop-accessibility-keyboard-shortcuts.md)
+* [Raccourcis clavier d’accessibilité pour les rapports Power BI](desktop-accessibility-keyboard-shortcuts.md)
 * [Liste de vérification de l’accessibilité des rapports](#report-accessibility-checklist)

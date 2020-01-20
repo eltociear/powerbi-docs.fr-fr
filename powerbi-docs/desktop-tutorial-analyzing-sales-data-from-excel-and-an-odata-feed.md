@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData dans Power BI Desktop'
-description: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData'
+title: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData dans Power BI Desktop'
+description: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData'
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 712864afdea5431fa630d052271e8cb2c05e9dd2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866088"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759879"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de vente à partir d’Excel et d’un flux OData
+# <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Analyser des données de vente à partir d’Excel et d’un flux OData
 
 Il est courant d’avoir des données dans plusieurs sources de données. Par exemple, vous pouvez avoir deux bases de données : l’une pour les produits et l’autre pour les ventes. Avec **Power BI Desktop**, vous pouvez combiner des données à partir de sources différentes pour créer des visualisations et des analyses de données intéressantes. 
 

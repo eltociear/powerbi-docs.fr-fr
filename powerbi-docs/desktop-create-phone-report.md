@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 16af5a6c8b5341067c458329c68da0a1a0fe14a5
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311485"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761476"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimiser les rapports pour les applications mobiles Power BI
+# <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimiser les rapports Power BI pour l’application mobile
 Vous pouvez améliorer l’expérience d’affichage des rapports dans les applications mobiles en créant une disposition en mode portrait. Dans Power BI Desktop et le service Power BI, vous réorganisez et redimensionnez les visuels de rapport pour une expérience optimale en mode portrait.  
 
 Vous cherchez plutôt des informations sur l’affichage des rapports sur un appareil mobile ? Essayez le démarrage rapide [Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).

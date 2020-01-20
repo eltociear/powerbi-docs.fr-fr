@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 21ec26182efe2d0b08b2a64227264d5b80756962
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877978"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760724"
 ---
-# <a name="create-power-bi-visuals-using-python"></a>Créer des visuels Power BI avec Python
+# <a name="create-power-bi-visuals-by-using-python"></a>Créer des visuels Power BI avec Python
 **Power BI Desktop** vous permet d’utiliser **Python** pour visualiser vos données.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Suivez le tutoriel [Exécuter des scripts Python dans Power BI Desktop](desktop-python-scripts.md) à l’aide du script Python suivant :
 
@@ -167,6 +167,7 @@ Ce tutoriel est conçu pour vous aider à commencer à créer des visuels avec P
 Les visuels Python dans **Power BI Desktop** présentent quelques limitations :
 
 * Limites concernant la taille des données : les données utilisées par les visuels Python pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image.
+* Résolution : tous les visuels Python sont affichés dans une résolution de 72 ppp.
 * Limite concernant la durée du calcul : si le calcul d’un visuel Python prend plus de 5 minutes, le délai d’exécution est dépassé et une erreur est générée.
 * Relations : comme avec d’autres éléments visuels Power BI Desktop, si des champs de données issus de différentes tables avec aucune relation définie entre elles sont sélectionnés, une erreur se produit.
 * Les visuels Python sont actualisés lors de la mise à jour, du filtrage et de la sélection des données. Toutefois, l’image elle-même n’est pas interactive et ne peut pas être la source du filtrage croisé.

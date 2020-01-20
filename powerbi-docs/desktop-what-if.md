@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8b9f1fc618e30d93da36b28f710dbd33f8125054
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876043"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759311"
 ---
-# <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Créer et utiliser le paramètre What if pour visualiser des variables dans Power BI Desktop
+# <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Créer et utiliser le paramètre what-if pour visualiser des variables dans Power BI Desktop
 À compter de la version d’août 2018 de **Power BI Desktop**, vous pouvez créer des variables **Scénarios** pour vos rapports, interagir avec la variable en tant que sélecteur, ainsi que visualiser et quantifier différentes valeurs de clés dans vos rapports.
 
 ![](media/desktop-what-if/what-if_01.png)

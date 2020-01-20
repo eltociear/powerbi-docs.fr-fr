@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 294bd8017d6e6c8a1eaca836b32c7bd5d50d88e1
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876301"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760793"
 ---
-# <a name="query-overview-in-power-bi-desktop"></a>Présentation des requêtes dans Power BI Desktop
+# <a name="about-using-query-editor-in-power-bi-desktop"></a>À propos de l’éditeur de requête dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez vous connecter à tout un monde de données, créer des rapports attrayants et fondamentaux, puis les partager avec d’autres utilisateurs, qui peuvent ensuite s’appuyer sur votre travail pour développer leurs talents en matière de décisionnel.
 
 Power BI Desktop propose trois vues :
@@ -33,7 +33,7 @@ Power BI Desktop propose également un **Éditeur de requête**, avec lequel vou
 
 Ce document fournit une vue d’ensemble de ce que vous pouvez faire avec des données dans **l’Éditeur de requête**. Il existe bien entendu de nombreuses autres fonctionnalités. À la fin de ce document, vous trouverez des liens vers des informations détaillées et de l’aide sur les types de données pris en charge, la connexion aux données, la mise en forme des données, la création de relations et la prise en main.
 
-Mais tout d’abord, nous allons nous familiariser avec l’ **Éditeur de requête**.
+Mais tout d’abord, nous allons nous familiariser avec l’**éditeur de requête**.
 
 ## <a name="the-query-editor"></a>Éditeur de requête
 Pour accéder à l’**Éditeur de requête**, sous l’onglet **Accueil** de Power BI Desktop, sélectionnez **Modifier les requêtes**.  

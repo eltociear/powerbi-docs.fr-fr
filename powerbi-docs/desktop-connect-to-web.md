@@ -1,6 +1,6 @@
 ---
 title: Se connecter à une page web à partir de Power BI Desktop
-description: Se connecter à une page web et utiliser les données de cette page dans Power BI Desktop
+description: Connectez-vous facilement à une page web et utiliser les données de cette page dans Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,15 +10,16 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 139cdcfe9629afb25a78bf50ae7714db670721e3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f76d3e61c3817d3e5ab4480c935abe4dc7346e54
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878432"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761516"
 ---
-# <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Se connecter à une page web à partir de Power BI Desktop
-Vous pouvez vous connecter à une page web et importer ses données dans Power BI Desktop, pour les utiliser dans vos éléments visuels et dans vos modèles de données.
+# <a name="connect-to-webpages-from-power-bi-desktop"></a>Se connecter à des pages web à partir de Power BI Desktop
+
+Vous pouvez vous connecter à une page web et importer ses données dans Power BI Desktop pour les utiliser ensuite dans vos visuels et vos modèles de données.
 
 Dans Power BI Desktop, sélectionnez **Obtenir des données > Web** dans le ruban **Accueil**.
 

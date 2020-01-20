@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762229"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quels exemples de données pouvez-vous utiliser avec Power BI ?
+# <a name="get-sample-data-for-power-bi"></a>Obtenir des exemples de données pour Power BI
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Ou peut-être que vous disposez déjà d’un jeu de données, mais comme vous ne savez pas encore comment fonctionne Power BI, vous avez peur d’endommager votre jeu de données ?
 
 Ne vous inquiétez pas. obviEnce ([www.obvience.com](http://www.obvience.com/)) et Microsoft ont créé des exemples de données que vous pouvez utiliser pour vous familiariser avec Power BI.  Ces données sont anonymes et représentatives de différents secteurs d’activité : finances, ressources humaines, ventes et bien plus encore. En outre, notre documentation en ligne utilise ces mêmes exemples dans les tutoriels, ce qui vous permettra de suivre.      
@@ -30,7 +30,7 @@ Avant de démarrer, lisez les mentions légales concernant l’utilisation des e
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Instructions d’utilisation pour les classeurs Excel d’exemples Power BI
 
-©2015 Microsoft Corporation. Tous droits réservés. Les documents et les classeurs sont fournis « en l’état ». Les informations et les opinions exprimées dans les classeurs, y compris les URL et les autres références à des sites web Internet, sont susceptibles d’être modifiées sans préavis. Vous assumez les risques liés à leur utilisation. Certains exemples sont fournis à des fins d’illustration et sont fictifs. Aucune association réelle n’est voulue ni sous-entendue. Microsoft exclut toute garantie, expresse ou implicite, concernant les informations fournies ici.
+©2015 Microsoft Corporation. All rights reserved. Les documents et les classeurs sont fournis « en l’état ». Les informations et les opinions exprimées dans les classeurs, y compris les URL et les autres références à des sites web Internet, sont susceptibles d’être modifiées sans préavis. Vous assumez les risques liés à leur utilisation. Certains exemples sont fournis à des fins d’illustration et sont fictifs. Aucune association réelle n’est voulue ni sous-entendue. Microsoft exclut toute garantie, expresse ou implicite, concernant les informations fournies ici.
 
 Les classeurs ne vous confèrent aucun droit légal sur toute propriété intellectuelle dans un quelconque produit Microsoft. Vous pouvez copier et utiliser ce classeur pour un usage interne, à titre de référence.
 
@@ -127,10 +127,10 @@ Chacun des exemples de packs de contenu est également disponible en tant que cl
    * [Exemple Vente et marketing](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Enregistrez le fichier téléchargé. L’emplacement d’enregistrement de votre fichier change tout.
 
-   * ![Local](media/sample-datasets/power-bi-local-file2.png) **Local** : si votre fichier est enregistré sur un disque local de votre ordinateur ou à un autre emplacement de votre organisation, vous pouvez importer votre fichier dans Power BI. Votre fichier est en fait conservé sur votre disque local. Il n’est donc pas entièrement importé dans Power BI. En réalité, un nouveau jeu de données est créé dans votre site Power BI, et les données (et parfois, le modèle de données) sont chargées dans ce jeu de données. Si votre fichier contient des rapports, ceux-ci s’affichent dans votre site Power BI sous Rapports.
-   * ![OneDrive Entreprise](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive Entreprise** : si vous disposez de OneDrive Entreprise et que vous vous connectez avec le même compte que pour Power BI, c’est de loin la méthode la plus efficace pour que votre travail dans Excel, Power BI ou un fichier CSV reste synchronisé avec votre jeu de données, vos rapports et vos tableaux de bord dans Power BI. Power BI et OneDrive étant tous les deux dans le cloud, Power BI se connecte à votre fichier sur OneDrive toutes les heures environ. Si des modifications sont détectées, vos jeu de données, rapports et tableaux de bord sont automatiquement mis à jour dans Power BI.
-   * ![OneDrive personnel](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive personnel** : si vos fichiers sont enregistrés sur votre propre compte OneDrive, vous bénéficiez de la plupart des avantages de OneDrive Entreprise. La différence principale réside dans le fait que, la première fois que vous vous connectez à votre fichier (via Obtenir des données > Fichiers > OneDrive personnel), vous devez vous connecter à votre compte OneDrive avec votre compte Microsoft, qui est généralement différent de celui utilisé pour vous connecter à Power BI. Lorsque vous vous connectez à OneDrive avec votre compte Microsoft, veillez à sélectionner l’option Maintenir la connexion. Power BI peut ainsi se connecter à votre fichier toutes les heures environ et s’assurer que votre jeu de données dans Power BI est synchronisé.
-   * ![Sites d’équipe SharePoint](media/sample-datasets/power-bi-sharepoint2.png) **Sites d’équipe SharePoint** : la procédure d’enregistrement de fichiers Power BI sur des sites d’équipe SharePoint est presque la même que dans OneDrive Entreprise. La différence majeure réside dans la manière dont vous vous connectez au fichier à partir de Power BI. Vous pouvez spécifier une URL ou vous connecter au dossier racine.
+   * ![Local](media/sample-datasets/power-bi-local-file2.png)  **Local** – Si vous enregistrez votre fichier sur un disque local de votre ordinateur ou à un autre emplacement au sein de votre organisation, vous pouvez importer votre fichier dans Power BI, à partir de Power BI. Votre fichier est en fait conservé sur votre disque local. Il n’est donc pas entièrement importé dans Power BI. En réalité, un nouveau jeu de données est créé dans votre site Power BI, et les données (et parfois, le modèle de données) sont chargées dans ce jeu de données. Si votre fichier contient des rapports, ceux-ci s’affichent dans votre site Power BI sous Rapports.
+   * ![OneDrive Entreprise](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive Entreprise** – Si vous disposez de OneDrive Entreprise et que vous vous connectez avec le même compte que pour Power BI, c’est de loin la méthode la plus efficace pour que votre travail dans Excel, Power BI ou un fichier CSV reste synchronisé avec votre jeu de données, vos rapports et vos tableaux de bord dans Power BI. Power BI et OneDrive étant tous les deux dans le cloud, Power BI se connecte à votre fichier sur OneDrive toutes les heures environ. Si des modifications sont détectées, vos jeu de données, rapports et tableaux de bord sont automatiquement mis à jour dans Power BI.
+   * ![OneDrive personnel](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – Personnel** – Si vous enregistrez vos fichiers dans votre propre compte OneDrive, vous bénéficiez de la plupart des avantages de OneDrive Entreprise. La différence principale réside dans le fait que, la première fois que vous vous connectez à votre fichier (via Obtenir des données > Fichiers > OneDrive personnel), vous devez vous connecter à votre compte OneDrive avec votre compte Microsoft, qui est généralement différent de celui utilisé pour vous connecter à Power BI. Lorsque vous vous connectez à OneDrive avec votre compte Microsoft, veillez à sélectionner l’option Maintenir la connexion. Power BI peut ainsi se connecter à votre fichier toutes les heures environ et s’assurer que votre jeu de données dans Power BI est synchronisé.
+   * ![Sites d’équipe SharePoint](media/sample-datasets/power-bi-sharepoint2.png) **Sites d’équipe SharePoint** – La procédure d’enregistrement de fichiers Power BI sur des sites d’équipe SharePoint est presque la même que dans OneDrive Entreprise. La différence majeure réside dans la manière dont vous vous connectez au fichier à partir de Power BI. Vous pouvez spécifier une URL ou vous connecter au dossier racine.
 1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
 
    > [!TIP]
@@ -193,7 +193,7 @@ Chacun des exemples de packs de contenu est également disponible en tant que fi
 ## <a name="next-steps"></a>Étapes suivantes
 [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
-[Tutoriel : Se connecter aux exemples Power BI](sample-tutorial-connect-to-the-samples.md)
+[Tutoriel : Se connecter aux exemples Power BI](sample-tutorial-connect-to-the-samples.md)
 
 [Sources de données pour Power BI](service-get-data.md)
 

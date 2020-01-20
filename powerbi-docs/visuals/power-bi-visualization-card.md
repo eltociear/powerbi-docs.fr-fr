@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 37b7a85534e1ad8f1f301994dea895e098758d1b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2b584c0664623f62b6d1d77cce74eaa51b0e9041
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870994"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758034"
 ---
-# <a name="card-visualizations"></a>Visualisations de carte
+# <a name="create-card-visualizations"></a>Créer des visualisations de carte
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -40,7 +40,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
 La première méthode pour créer une carte est d’utiliser l’éditeur de rapport dans Power BI Desktop.
 
-1. Démarrez sur une page de rapport vierge, puis sélectionnez le champ **Store (Magasin)** \> **Open store count (Nombre de magasins ouverts)** .
+1. Démarrez dans une page de rapport vierge, puis sélectionnez le champ **Store** \> **Open store count** (Magasin > Nombre de magasins ouverts).
 
     Power BI crée un histogramme à partir d’un seul nombre.
 

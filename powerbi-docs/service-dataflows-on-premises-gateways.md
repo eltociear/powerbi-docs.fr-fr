@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877271"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762574"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Utilisation de flux de données avec des sources de données locales
 
@@ -24,7 +24,8 @@ Les **flux de données** vous permettent de créer une collection de données à
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Configuration d’une passerelle d’entreprise pour une utilisation avec des flux de données
 
-Pour utiliser une source de données locale dans un flux de données, l’utilisateur qui crée le flux de données doit avoir installé et configuré une **passerelle d’entreprise**. L’utilisateur qui crée le flux de données doit également être administrateur de la passerelle d’entreprise afin de pouvoir utiliser cette passerelle pour un flux de données.
+Pour créer un dataflow en utilisant une passerelle, l’utilisateur doit être l’administrateur d’Enterprise Gateway, ou l’administrateur doit avoir partagé la source de données qu’il envisage d’utiliser avec l’utilisateur. 
+
 
 > [!NOTE]
 > Les flux de données sont uniquement pris en charge avec des passerelles d’entreprise.
@@ -35,7 +36,7 @@ Lorsque vous créez un flux de données, sélectionnez une source de données lo
 
 ![Choisir une source de données locale](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Après avoir effectué votre sélection, vous êtes invité à fournir les détails de la connexion de la passerelle d’entreprise qui servira à accéder aux données locales. Vous devez sélectionner la passerelle elle-même et fournir des informations d’identification pour la passerelle sélectionnée. Seules les passerelles dont l’utilisateur est un administrateur s’affichent dans la liste déroulante.
+Après avoir effectué votre sélection, vous êtes invité à fournir les détails de la connexion de la passerelle d’entreprise qui servira à accéder aux données locales. Vous devez sélectionner la passerelle elle-même et fournir des informations d’identification pour la passerelle sélectionnée.
 
 ![Fournir les détails de la connexion](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

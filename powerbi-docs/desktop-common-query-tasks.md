@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 116575898812e82f2f15126d0fee640902367ace
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878675"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761746"
 ---
-# <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
+# <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Effectuer des tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
 
 Les tâches courantes relatives aux requêtes illustrées ici sont les suivantes :
@@ -47,7 +47,7 @@ Pour commencer, sélectionnez **Excel** , accédez au classeur, puis sélectionn
 
 Vous pouvez sélectionner **Modifier la requête** pour ajuster, ou *mettre en forme* , les données avant de les charger dans Power BI Desktop. Modifier une requête avant le chargement s’avère particulièrement utile pour alléger les jeux de données volumineux. Nous voulons le faire, et nous sélectionnons **Modifier**.
 
-Il est tout aussi facile de se connecter à différents types de données. Nous souhaitons également nous connecter à une ressource web. Sélectionnez **Obtenir des données \> Autres...** , puis **Autre \> Web**.
+Il est tout aussi facile de se connecter à différents types de données. Nous souhaitons également nous connecter à une ressource web. Sélectionnez **Obtenir des données \> Autres...**, puis **Autre \> Web**.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
@@ -62,7 +62,7 @@ Les autres connexions de données sont similaires. Si l’authentification est n
 Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois qu’ils sont chargés dans l’Éditeur de requête, on obtient le résultat suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles listées dans le volet **Requêtes**, sur le côté gauche de la fenêtre Éditeur de requête).
 
@@ -149,17 +149,17 @@ Power BI Desktop fournit un ensemble complet de catégories de formules. Pour 
 
 Les catégories de formules pour l’Éditeur de requête sont les suivantes :
 
-* Number
+* Nombre
   * Constantes
   * Informations
   * Conversion et mise en forme
-  * Format
+  * Mettre en forme
   * Arrondi
   * Opérations
   * Nombre aléatoire
   * Trigonométrie
   * Octets
-* Text
+* Texte
   * Informations
   * Comparaisons de texte
   * Extraction
@@ -168,8 +168,8 @@ Les catégories de formules pour l’Éditeur de requête sont les suivantes :
   * Transformations
 * Logical
 * Date
-* Time
-* DateTime
+* Heure
+* Date/Heure
 * DateTimeZone
 * Duration
 * Record
@@ -177,7 +177,7 @@ Les catégories de formules pour l’Éditeur de requête sont les suivantes :
   * Transformations
   * Sélection
   * Sérialisation
-* List
+* Liste
   * Informations
   * Sélection
   * Transformation
@@ -203,7 +203,7 @@ Les catégories de formules pour l’Éditeur de requête sont les suivantes :
 * URI
 * Formats binaires
   * Lecture de nombres
-* Binary
+* Binaire
 * Lines
 * Expression
 * Function

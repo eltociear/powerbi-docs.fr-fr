@@ -1,22 +1,22 @@
 ---
 title: Tutoriel sur les visualisations d’influenceurs clés
-description: 'Tutoriel : Créer une visualisation d’influenceurs clés dans Power BI'
+description: 'Tutoriel : Créer une visualisation d’influenceurs clés dans Power BI'
 author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871017"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885324"
 ---
-# <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
+# <a name="create-key-influencers-visualizations"></a>Créer des visualisations des influenceurs clés
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -57,7 +57,7 @@ Regardez cette vidéo pour découvrir comment créer un visuel d’influenceurs 
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Sélectionnez l’un des liens, puis sélectionnez **Télécharger** dans la page GitHub qui s’ouvre.
+Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Sélectionnez l’un des liens, puis sélectionnez **Télécharger** dans la page GitHub qui s’ouvre.
 
 > [!NOTE]
 > Le jeu de données de commentaires clients est basé sur [Moro et al., 2014] S. Moro, P. Cortez et P. Rita. « A Data-Driven Approach to Predict the Success of Bank Telemarketing. » *Decision Support Systems*, Elsevier, 62:22-31, juin 2014. 
@@ -267,6 +267,8 @@ Si vous voulez en savoir plus sur la façon dont vous pouvez analyser des mesure
  
 Le visuel Influenceur clés présente certaines limitations :
 
+
+
 - La requête directe n’est pas prise en charge
 - La connexion active à Azure Analysis Services et à SQL Server Analysis Services n’est pas prise en charge
 - La publication sur le web n’est pas prise en charge
@@ -357,6 +359,9 @@ Dans l’exemple suivant, les clients qui sont des consommateurs attribuent des 
 La raison de cette détermination est que la visualisation prend également en compte le nombre de points de données quand elle trouve des influenceurs. L’exemple suivant a plus de 29 000 consommateurs et 10 fois moins d’administrateurs, environ 2 900. Seuls 390 d’entre eux ont donné une évaluation faible. Le visuel n’a pas suffisamment de données pour déterminer s’il a détecté une tendance avec les évaluations des administrateurs ou s’il s’agit simplement d’une déduction hasardeuse. 
 
 ![Détermination des influenceurs](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Quelles sont les limites de points de données pour les influenceurs clés ?**
+Nous lançons l’analyse sur un échantillon de 10 000 points de données. Les bulles sur un côté affichent tous les influenceurs trouvés. Les histogrammes et les nuages de points sur l’autre côté appliquent les stratégies d’échantillonnage définies pour ces visuels principaux.
 
 **Comment calculer les influenceurs clés pour l’analyse par catégorie ?**
 

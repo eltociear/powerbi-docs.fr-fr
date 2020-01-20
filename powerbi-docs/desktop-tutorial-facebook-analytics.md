@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b19412546ad921979656e8367cbe8b034aafcf67
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73876272"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760040"
 ---
-# <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutoriel : Analyses Facebook avec Power BI Desktop
+# <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Tutoriel : Analyser les données Facebook à l’aide de Power BI Desktop
 
 Dans ce didacticiel, vous apprenez à importer des données depuis Facebook et à les utiliser dans Power BI Desktop. Vous allez vous connecter et importer des données depuis la page Facebook Power BI, vous appliquerez des transformations aux données importées et vous utiliserez les données dans des visualisations de rapport.
 

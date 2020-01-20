@@ -1,23 +1,23 @@
 ---
 title: Arborescence hiérarchique
-description: "Tutoriel : Créer une visualisation de l'arborescence hiérarchique dans Power BI"
+description: "Tutoriel : Créer une visualisation de l'arborescence hiérarchique dans Power BI"
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060514"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885271"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>Utiliser le visuel de l’arborescence hiérarchique dans Power BI (préversion)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI (préversion)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Le visuel de l’arborescence hiérarchique dans Power BI vous permet de visualiser les données sur plusieurs dimensions. Il agrège automatiquement les données et permet d'explorer vos dimensions dans n'importe quel ordre. Comme il s’agit également d’une visualisation à intelligence artificielle (IA), vous pouvez lui demander de trouver la prochaine dimension à explorer selon certains critères. Cela en fait un outil précieux pour l'exploration ad hoc et l'analyse de la cause racine.
@@ -131,6 +131,8 @@ Dans l'exemple ci-dessous, les deux premiers niveaux sont verrouillés. Cela sig
 ![Verrouillage de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Limites connues
+
+Le nombre maximal de niveaux dans l’arborescence est de 50. Le nombre maximal de points de données visualisables simultanément dans l’arborescence est de 5 000. Nous tronquons les niveaux pour afficher les n premiers. Actuellement, nous affichons les 10 premiers par niveau. 
 
 L'arborescence hiérarchique n'est pas prise en charge dans les scénarios suivants :  
 -   Services Analysis Services locaux

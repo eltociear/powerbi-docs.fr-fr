@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907815"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757850"
 ---
-# <a name="filled-maps-choropleth-in-power-bi"></a>Cartes choroplèthes dans Power BI
+# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -45,7 +45,7 @@ Les cartes choroplèthes sont conseillées :
 * quand les régions définies sont de grande taille ;
 * pour obtenir une vue d’ensemble de la répartition entre les zones géographiques.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**
    
@@ -66,7 +66,7 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
 [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Créer une carte choroplèthe
-1. Dans le volet Champs, sélectionnez le champ **Géo** \> **État**.    
+1. Dans le volet Champs, sélectionnez le champ **Geo** \> **State** (Géo > État).    
 
    ![coche jaune en regard de State (État)](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
 2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en carte choroplèthe. Notez que **État** figure maintenant dans **Emplacement**. Bing Cartes utilise le champ dans **Emplacement** pour créer la carte.  L’emplacement peut être différents endroits valides : pays, état, région, ville, code postal ou autre code, etc. Bing Cartes fournit des formats de cartes choroplèthes pour de nombreux emplacements dans le monde. À défaut d’entrée valide pour l’emplacement, Power BI ne peut pas créer la carte choroplèthe.  

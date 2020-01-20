@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907941"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761792"
 ---
-# <a name="aggregations-in-power-bi-desktop"></a>Agrégations dans Power BI Desktop
+# <a name="manage-aggregations-in-power-bi-desktop"></a>Gérer des agrégations dans Power BI Desktop
 
 Les **agrégations** de Power BI permettent d’effectuer une analyse interactive du Big Data qui jusqu’ici était impossible. Les **agrégations** peuvent réduire considérablement le coût de déverrouillage des jeux de données volumineux pour la prise de décision.
 

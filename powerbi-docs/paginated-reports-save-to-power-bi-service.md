@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
-ms.openlocfilehash: a7f0e6f08f25d47cd50789a3c8f296ae20c4cab0
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.date: 01/03/2020
+ms.openlocfilehash: 5f77e17eccf4c99e7a391ea310a34848c604e01d
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831215"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732081"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
 
 Dans cet article, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local. Vous pouvez charger des rapports paginés vers Mon espace de travail ou d’autres espaces de travail, tant que l’espace de travail figure dans une capacité Premium. Recherchez l’icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom de l'espace de travail. 
 
-Si la source de données de votre rapport est locale, vous devez [créer une passerelle](#create-a-gateway) après avoir chargé le rapport.
+Si la source de données de votre rapport est locale, vous devez créer une passerelle après avoir chargé le rapport. Consultez la section [Créer une passerelle](#create-a-gateway) plus loin dans cet article.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Ajouter un espace de travail à une capacité Premium
 
@@ -35,8 +35,33 @@ Si l’espace de travail n’affiche aucune icône en forme de losange ![Icône 
 
    Vous ne pourrez peut-être pas modifier cette option. Dans ce cas, contactez votre administrateur de capacité Power BI Premium afin qu’il vous donne des droits d’attribution pour ajouter votre espace de travail à une capacité Premium.
 
+## <a name="from-report-builder-publish-a-paginated-report"></a>À partir de Report Builder, publier un rapport paginé
 
-## <a name="upload-a-paginated-report"></a>Charger un rapport paginé
+1. Créez votre rapport paginé dans le Générateur de rapports et enregistrez-le sur votre ordinateur local.
+
+1. Dans le menu **Fichier** de Report Builder, sélectionnez **Enregistrer sous**.
+
+    ![Menu Fichier> Enregistrer > Enregistrer sous](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+
+    Si vous n’êtes pas encore connecté à Power BI, vous devez vous y connecter ou créer un compte dès maintenant. Dans l’angle supérieur droit de Report Builder, sélectionnez **Se connecter** et effectuez les étapes.
+
+2. Dans la liste des espaces de travail à gauche, sélectionnez un espace de travail dont le nom est suivi de l’icône de diamant ![icône de diamant pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png). Tapez un **nom de fichier** dans la zone > **Enregistrer**. 
+
+    ![Sélectionner un espace de travail Premium](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
+
+4. Ouvrez le service Power BI dans un navigateur et accédez à l’espace de travail Premium dans lequel vous avez publié le rapport paginé. Sous l’onglet **Rapports**, vous voyez votre rapport.
+
+    ![Rapport paginé dans la liste des rapports](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
+
+5. Sélectionnez le rapport paginé pour l’ouvrir dans le service Power BI. S’il possède des paramètres, vous devez les sélectionner avant de pouvoir afficher le rapport.
+
+    ![Sélectionner les paramètres](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Si la source de données de votre rapport est locale, découvrez comment [créer une passerelle](#create-a-gateway) dans cet article pour accéder à la source de données.
+
+## <a name="from-the-power-bi-service-upload-a-paginated-report"></a>À partir du service Power BI, charger un rapport paginé
+
+Vous pouvez aussi charger un rapport paginé à partir du service Power BI.
 
 1. Créez votre rapport paginé dans le Générateur de rapports et enregistrez-le sur votre ordinateur local.
 
@@ -62,13 +87,15 @@ Si l’espace de travail n’affiche aucune icône en forme de losange ![Icône 
 
     ![Modifier les informations d’identification](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
 
-   Votre rapport apparaît dans la liste des rapports.
+   Sous l’onglet **Rapports**, vous voyez votre rapport.
 
     ![Rapport paginé dans la liste des rapports](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 
 1. Sélectionnez-le pour l’ouvrir dans le service Power BI. S’il possède des paramètres, vous devez les sélectionner avant de pouvoir afficher le rapport.
  
     ![Sélectionner les paramètres](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
+
+6. Si la source de données de votre rapport est locale, découvrez comment [créer une passerelle](#create-a-gateway) dans cet article pour accéder à la source de données.
 
 ## <a name="create-a-gateway"></a>Créer une passerelle
 
@@ -89,4 +116,5 @@ Actuellement, les passerelles ne prennent pas en charge les paramètres à valeu
 
 - [Afficher un rapport paginé dans le service Power BI](consumer/paginated-reports-view-power-bi-service.md)
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
+- [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](developer/embed-paginated-reports-customers.md)
 

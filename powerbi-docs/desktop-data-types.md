@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868518"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729710"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -51,7 +51,7 @@ Power BI Desktop prend en charge trois types numériques :
 >
 
 ### <a name="datetime-types"></a>Types Date/Heure
-Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue Requête et trois dans la vue Rapport et le modèle.   Les types Date/Heure/Fuseau horaire et Durée sont convertis pendant le chargement dans le modèle.
+Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue Requête.  Les types Date/Heure/Fuseau horaire et Durée sont convertis pendant le chargement dans le modèle. Le modèle de données Power BI Desktop prend en charge uniquement la date et l’heure, mais il peut être mis en forme sous forme de dates ou d’heures de manière indépendante. 
 
 **Date/Heure** : représente une valeur de date et d’heure.  Dans les coulisses, la valeur Date/Heure est stockée au format Nombre décimal.  Vous pouvez donc effectuer une conversion entre les deux.   La partie heure d’une date est stockée sous forme de fraction de multiples entiers de 1/300 de seconde (3,33 ms).  Les dates comprises entre les années 1900 et 9999 sont prises en charge.
 
@@ -59,7 +59,7 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 
 **Heure** : représente seulement une heure (aucune partie date).  En cas de conversion dans le modèle, une valeur d’Heure est identique à une valeur de Date/Heure sans aucun chiffre à gauche du séparateur décimal.
 
-**Date/Heure/Fuseau horaire** : représente une Date/Heure au format UTC.  Actuellement, ce format est converti en Date/Heure lors du chargement dans le modèle.
+**Date/Heure/Fuseau horaire** : représente une Date/Heure au format UTC avec un décalage de fuseau horaire.  Ce format est converti en Date/Heure pendant le chargement dans le modèle. Le modèle Power BI n’ajuste pas le fuseau horaire en fonction de la localisation ou des paramètres régionaux d’un utilisateur. Si la valeur 09:00 est chargée dans le modèle aux États-Unis, elle s’affiche au format 09:00 chaque fois que le rapport est ouvert ou consulté. 
 
 **Durée** : représente une durée. Ce format est converti au format Nombre décimal lors du chargement dans le modèle.  En tant que type Nombre décimal, il peut être ajouté ou soustrait d’un champ Date/Heure avec des résultats corrects.  S’agissant d’un type Nombre décimal, vous pouvez facilement l’utiliser dans des visualisations qui indiquent un ordre de grandeur.
 
@@ -163,7 +163,7 @@ Les conversions sont effectuées implicitement pour les types numériques ou de 
 | ENTIER |ENTIER |DEVISE |RÉEL |RÉEL |
 | DEVISE |DEVISE |DEVISE |RÉEL |RÉEL |
 | RÉEL |RÉEL |RÉEL |RÉEL |RÉEL |
-| Date/Heure |RÉEL |RÉEL |RÉEL |Date/Heure |
+| Date/Heure |RÉEL |RÉEL |RÉEL |Date/heure |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Gestion des vides, des chaînes vides et des valeurs zéro
 Dans DAX, une valeur Null, une valeur vide, une cellule vide ou une valeur manquante sont toutes représentées par le même nouveau type de valeur, VIDE. Vous pouvez également générer des vides à l’aide de la fonction VIDE, ou vérifier la présence de vides à l’aide de la fonction ESTVIDE.

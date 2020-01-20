@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875026"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732035"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Créer un rapport paginé pour Power BI Report Server
+Dans cet article, vous allez créer un rapport paginé pour Power BI Report Server en quelques étapes simples.
+
+Vous cherchez de l’aide concernant la création de rapports paginés dans Report Builder pour le service Power BI ? Consultez [Générateur de rapports paginés Power BI](../report-builder-power-bi.md).
+
 Comme le suggère leur intitulé, les rapports paginés peuvent s’étendre sur plusieurs pages. Ils sont dans un format fixe et permettent une personnalisation précise. Les rapports paginés sont des fichiers .rdl.
 
 Vous pouvez stocker et gérer des rapports paginés dans le portail web Power BI Report Server de la même façon que dans le portail web SQL Server Reporting Services (SSRS). Créez-les et modifiez-les dans le Générateur de rapports ou le Concepteur de rapports dans SQL Server Data Tools (SSDT), puis publiez-les vers l’un des portails web. Les lecteurs au sein de votre organisation peuvent alors les consulter dans un navigateur ou dans une application mobile Power BI sur leur appareil mobile.
@@ -24,7 +28,7 @@ Vous pouvez stocker et gérer des rapports paginés dans le portail web Power BI
 
 Si vous avez déjà créé des rapports paginés à l’aide du Générateur de rapports ou du Concepteur de rapports, vous êtes prêt à créer des rapports paginés pour Power BI Report Server. Dans ce cas, voici quelques étapes rapides pour vous démarrer.
 
-## <a name="step-1-install-and-start-report-builder"></a>Étape 1 : Installer et démarrer le Générateur de rapports
+## <a name="step-1-start-report-builder"></a>Étape 1 : Démarrer le Générateur de rapports
 Vous avez peut-être déjà installé le Générateur de rapports afin de créer des rapports pour un serveur SSRS. Vous pouvez utiliser la même version ou le Générateur de rapports pour créer des rapports pour Power BI Report Server. Si vous ne l’avez pas installé, le processus est simple.
 
 1. Dans le portail web Power BI Report Server, sélectionnez **Nouveau** > **Rapport paginé**.
@@ -81,7 +85,7 @@ Vous pouvez ajouter toutes sortes d’autres visualisations : jauges, tables, m
 
 ![Mode Création du Générateur de rapports](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>Étape 4 : Enregistrer votre rapport sur le serveur de rapports
+## <a name="step-4-save-your-report-to-the-report-server"></a>Étape 4 : Enregistrer votre rapport sur le serveur de rapports
 Une fois le rapport prêt, enregistrez-le sur Power BI Report Server.
 
 1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous**, puis enregistrez le rapport dans le serveur de rapports. 

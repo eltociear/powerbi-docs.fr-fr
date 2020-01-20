@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 68ae5b04f951fcc0fa8a067e60a408d1610c3fdd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ccae3f9d1f6d56f2b58706fbb8d8bf36d55d2165
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879656"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759856"
 ---
-# <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Se connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
+# <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Découvrez comment vous connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
 Power BI Desktop vous permet d’accéder aux **modèles multidimensionnels SSAS**, communément appelés **SSAS MD**.
 
 Pour vous connecter à une base de données **SSAS MD**, sélectionnez **Obtenir des données &gt; Base de données &gt; Base de données SQL Server Analysis Services**, comme indiqué dans l’image suivante :
@@ -41,7 +41,7 @@ Le tableau suivant illustre la correspondance entre les objets multidimensionnel
 | Mesures sans groupe de mesures associé |Dans une table appelée *Mesures* |
 | Relation groupe de mesures -> dimension de Cube |Relation |
 | Perspective |Perspective |
-| Indicateur de performance clé |Indicateur de performance clé |
+| Indicateur de performance clé |KPI |
 | Hiérarchies parent-enfant/utilisateur |Hiérarchies |
 
 ### <a name="measures-measure-groups-and-kpis"></a>Mesures, groupes de mesures et indicateurs de performance clés
@@ -96,7 +96,7 @@ Les fonctionnalités suivantes de SSAS MD sont pris en charge dans Power BI Des
   * Hiérarchies
   * Mesures (avec ou sans groupes de mesures)
   * Mesures en tant que Variant
-  * Indicateurs de performance clés (KPI)
+  * Indicateurs de performance clés
   * ImageUrls
   * Sécurité de la dimension
 

@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 57bc7eed7e8e51463494e2c4f562dcdb1e6a88c9
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699610"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837646"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données stocké sur OneDrive ou SharePoint Online
 L’importation de fichiers à partir de OneDrive ou de SharePoint Online dans le service Power BI est un excellent moyen de s’assurer que le travail effectué dans Power BI Desktop reste synchronisé avec le service Power BI.
@@ -35,6 +35,9 @@ Lorsque vous actualisez le jeu de données, Power BI ne se connecte pas au fich
 
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
 Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Planifier l’actualisation** pour des jeux de données créés à partir de fichiers Power BI Desktop importés d’un lecteur local où vous utilisez **Obtenir des données** ou **Éditeur de requête** pour vous connecter aux sources de données suivantes, à partir desquelles vous chargez des données.
+
+> [!NOTE]
+> Les fichiers importés dans OneDrive sont pris en charge, mais les jeux de données connectés en direct dans OneDrive ne sont pas pris en charge en tant que scénario d’actualisation OneDrive.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Toutes les sources de données en ligne affichées sous **Obtenir des données** dans l’**éditeur de requête** et dans Power BI Desktop.

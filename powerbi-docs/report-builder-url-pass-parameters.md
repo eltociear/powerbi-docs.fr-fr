@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: 44e56613a69069351f21aa7d515fc2bb296e6728
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74128257"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762137"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Passer un paramètre de rapport dans une URL pour un rapport paginé dans Power BI 
 
@@ -64,6 +64,8 @@ Pour passer une valeur booléenne, utilisez 0 pour « false » et 1 pour « t
 
 > [!NOTE]
 > Si votre rapport contient un paramètre de rapport qui a une valeur par défaut et que la valeur de la propriété **Prompt** (Demander) est **false** (autrement dit, si la propriété **Demander à l’utilisateur** n’est pas sélectionnée dans le Gestionnaire de rapports), vous ne pouvez pas passer une valeur pour ce paramètre de rapport dans une URL. Ceci permet aux administrateurs d’empêcher les utilisateurs finaux d’ajouter ou de modifier les valeurs de certains paramètres de rapport.
+
+> Power BI ne prend pas en charge les chaînes de requête de plus de 900 caractères.  Cette valeur peut être dépassée si vous utilisez des paramètres d’URL pour afficher votre rapport paginé.  Cela est particulièrement vrai si vous utilisez des paramètres multivaleurs.
 
 ## <a name="additional-examples"></a>Exemples supplémentaires 
 

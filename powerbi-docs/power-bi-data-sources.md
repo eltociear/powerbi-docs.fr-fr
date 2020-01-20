@@ -6,18 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
-ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 2578f8621140a64b85e6765d80d860c1489a5900
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958491"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762551"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
 Le tableau suivant montre les sources de données qui sont prises en charge par Power BI pour les jeux de données, y compris des informations sur DirectQuery et sur la passerelle de données locale. Pour plus d'informations sur les dataflows, voir [Se connecter à des sources de données pour les dataflows Power BI](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> Bon nombre de connecteurs de données pour Power BI Desktop ont besoin d’Internet Explorer 10 (ou une version plus récente) pour l’authentification. 
+
 
 | Paramètres | Connexion à partir de Desktop | Connexion et actualisation à partir du service | DirectQuery/Connexions actives | Passerelle (prise en charge) | Passerelle (obligatoire) |
 |---|---|---|---|---|---|---|---|
@@ -33,7 +37,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Azure Cost Management | Oui | Oui | Non | Non | Non |
 | Azure Data Explorer (Kusto) | Oui | Oui | Oui | Non | Non |
 | Azure Data Lake Storage Gen1 | Oui | Oui | Non | Non | Non |
-| Azure Data Lake Storage Gen2 | Oui | Oui | Non | Non | Non |
+| Azure Data Lake Storage Gen2 | Oui | Oui | Non | Oui | Non |
 | Azure DevOps | Oui | Oui | Non | Non | Non |
 | Azure DevOps Server | Oui | Oui | Non | Oui | Oui |
 | Azure HDInsight (HDFS) | Oui | Oui | Non | Non | Non |
@@ -65,8 +69,8 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Google BigQuery | Oui | Oui | Non | Non | Non |
 | Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non |
 | HDInsight Interactive Query | Oui | Oui | Oui | Non | Non |
-| IBM DB2 | Oui | Oui | Oui | Oui | Oui |
-| Base de données Informix IBM | Oui | Oui | Non | Oui | Oui |
+| IBM DB2 | Oui | Oui | Oui | Oui | Non |
+| Base de données Informix IBM | Oui | Oui | Non | Oui | Non |
 | IBM Netezza | Oui | Oui | Oui | Oui | Oui |
 | Impala | Oui | Oui | Oui | Oui | Oui |
 | Indexima | Oui | Oui | Oui | Oui | Oui |
@@ -95,7 +99,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Planview Enterprise One - CTM | Oui | Oui | Non | Non | Non |
 | Planview Enterprise One - PRM | Oui | Oui | Non | Non | Non |
 | Planview Projectplace | Oui | Oui | Non | Non | Non |
-| PostgreSQL | Oui | Oui | Oui | Oui | Oui |
+| PostgreSQL | Oui | Oui | Oui | Oui | Non |
 | Dataflows Power BI | Oui | Oui | Non | Non | Non |
 | Jeux de données Power BI | Oui | Oui | Oui | Non | Non |
 | Dataflows Power Platform | Oui | Oui | Non | Non | Non |
@@ -114,7 +118,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Liste SharePoint | Oui | Oui | Non | Oui | Non <sup>4</sup> |
 | Liste SharePoint Online | Oui | Oui | Non | Oui <sup>2</sup> | Non |
 | Smartsheet | Oui | Oui | Non | Non | Non |
-| Snowflake | Oui | Oui | Oui | Oui | Oui |
+| Snowflake | Oui | Oui | Oui | Oui | Non |
 | Spark | Oui | Oui | Oui | Oui | Non |
 | SparkPost | Oui | Oui | Non | Non | Non |
 | SQL Server | Oui | Oui | Oui | Oui | Oui |

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762091"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -59,6 +59,7 @@ Certaines des fonctionnalités disponibles dans la version commerciale du **serv
 * **Métriques d’utilisation des tableaux de bord et des rapports** : les métriques d’utilisation ne sont pas disponibles pour les rapports et les tableaux de bord. Les clients peuvent utiliser les données du journal d’audit pour obtenir des informations sur l’utilisation du contenu dans leur organisation.
 * **Dataflows** - Les dataflows ne sont pas disponibles.
 * **Rapports paginés** - Des rapports paginés sont actuellement disponibles dans USGov Virginia uniquement.  La prise en charge de USGov Texas est planifiée, mais pas encore disponible.
+* L’incorporation de contenu Power BI à partir d’une plateforme Cloud de la communauté du secteur public (GCC) ne peut s’effectuer qu’avec une référence SKU Office 365. Les clients GCC High peuvent utiliser des [références SKU Office 365 ou Azure](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 Si vous avez des licences gratuites **Power BI** attribuées à votre compte, ces comptes s’exécutent dans une version commerciale du service **Power BI** et ne font pas partie de l’offre **Power BI US Government**. Pour ces comptes Gratuits, vous pouvez rencontrer les problèmes suivants :
 
@@ -72,19 +73,19 @@ Pour résoudre ces problèmes, contactez votre responsable de compte.
 ## <a name="frequently-asked-questions-faq-for-the-us-government-version-of-the-power-bi-service"></a>FAQ sur la version US Government du service Power BI
 Les questions (et réponses) suivantes sont fournies pour vous aider à obtenir rapidement les informations nécessaires au sujet du service.
 
-**Question :** Comment migrer mes données commerciales **Power BI** vers le **service Power BI** US Government ?
+**Question :** Comment migrer mes données commerciales **Power BI** vers le **service Power BI** US Government ?
 
 **Réponse :** Votre administrateur doit créer une nouvelle instance de **Power BI** sous un abonnement distinct spécifique à la version US Government. Vous pouvez ensuite répliquer vos données commerciales dans le **service Power BI** US Government, supprimer votre licence commerciale et associer votre domaine existant au nouveau service US Government.
 
-**Question :** Pourquoi ne puis-je pas me connecter à un pack de contenu spécifique ?
+**Question :** Pourquoi ne puis-je pas me connecter à un pack de contenu spécifique ?
 
 **Réponse :** Vous devez vérifier que votre abonnement est activé avant de vous connecter à ce pack de contenu.
 
-**Question :** Je souhaite obtenir **Power BI** pour mon organisation US Government. Par quoi commencer ?
+**Question :** Je souhaite obtenir **Power BI** pour mon organisation US Government. Par quoi commencer ?
 
 **Réponse :** L’inscription (souvent appelée *intégration*) peut varier en fonction de vos licences et abonnements existants. Pour plus d’informations, voir [Inscription à la version US Government de Power BI](service-govus-signup.md).
 
-**Question :** Est-ce que l’URL de connexion à la version US Government de **Power BI** est différente de celle de la version commerciale de **Power BI** ? Existe-t-il une URL différente pour les clients Government Community Cloud High (GCC High) ?
+**Question :** Est-ce que l’URL de connexion à la version US Government de **Power BI** est différente de celle de la version commerciale de **Power BI** ? Existe-t-il une URL différente pour les clients Government Community Cloud High (GCC High) ?
 
 **Réponse :** Oui, les URL sont différentes. Le tableau suivant présente chaque URL :
 
@@ -92,7 +93,7 @@ Les questions (et réponses) suivantes sont fournies pour vous aider à obtenir 
 | --- | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
-**Question :** Mon compte est provisionné dans plusieurs clouds nationaux. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
+**Question :** Mon compte est provisionné dans plusieurs clouds nationaux. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
 
 **Réponse :** À partir de la version de juillet 2018 de **Power BI Desktop**, vous pouvez choisir le cloud que vous voulez utiliser quand vous vous connectez à **Power BI Desktop**.
 

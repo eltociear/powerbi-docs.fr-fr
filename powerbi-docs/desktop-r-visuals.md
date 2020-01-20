@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 046a8f61154db5956efa10a0e10e847bbb69374c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 69295657702f995786379b18d3ad1ed3641bcbb8
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265120"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729807"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Créer des éléments visuels Power BI avec R
 Power BI Desktop vous permet d’utiliser *R* pour visualiser vos données. [R](https://mran.revolutionanalytics.com/documents/what-is-r) est un langage et un environnement pour le calcul de statistiques et les graphiques.
@@ -128,6 +128,8 @@ Les visuels R sont créés à partir de scripts R, qui peuvent contenir du cod
 Les visuels R dans Power BI Desktop ont les limitations suivantes :
 
 * Tailles des données : Les données utilisées par un visuel R pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image.
+
+* Résolution : tous les visuels R sont affichés dans une résolution de 72 ppp.
 
 * Temps de calcul : Si un calcul visuel R dépasse cinq minutes, il provoque une erreur de délai d’expiration.
 

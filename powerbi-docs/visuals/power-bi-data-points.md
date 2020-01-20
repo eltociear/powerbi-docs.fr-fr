@@ -2,21 +2,21 @@
 title: Jeux de données volumineux, limites de point de données et stratégies de données
 description: Limites des données pour les visuels et stratégies de réduction des données
 author: mihart
-ms.reviewer: amac
+ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011297"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885249"
 ---
-# <a name="data-point-limits-and-strategies-by-visual-type"></a>Limites et stratégies par type de visuel du point de données
+# <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
 
 Lors du rendu d’un visuel dans Power BI, la visualisation doit être rapide et précise. Cela nécessite des algorithmes sous-jacents configurés pour chaque type de visuel. Les visuels dans Power BI doivent être suffisamment flexibles pour gérer différentes tailles de jeux de données. Certains jeux de données n’ont que peu de points de données, tandis que d’autres jeux de données ont plusieurs pétaoctets de points de données. Cet article explique les stratégies utilisées par Power BI pour afficher des visualisations.
 
@@ -75,7 +75,7 @@ Consultez [Fonctionnement de l’échantillonnage de ligne](../desktop-high-dens
  Utilise les mêmes stratégies que l’histogramme. Notez que la ligne dans le **graphique combiné** n’utilise pas l’algorithme haute densité utilisé par le **graphique en courbes**.
 
 ### <a name="custom-visuals"></a>Visuels personnalisés
-Peut aller jusqu’à 30 000 mais c’est aux auteurs du visuel d’indiquer les stratégies à utiliser
+Leur nombre peut atteindre 30 000 mais c’est aux auteurs des visuels d’indiquer les stratégies à utiliser. La limite par défaut est de 1 000, mais le créateur du visuel peut la changer, jusqu’à un maximum de 30 000.
 
 ### <a name="doughnut"></a>Anneau
 - Points max. : 3,500
@@ -119,6 +119,9 @@ Selon la configuration, une carte peut avoir :
 - Lignes : Virtualisation à l’aide d’une fenêtre de 500 lignes à la fois
 - Colonnes : 100 premières colonnes de regroupement 
 - Valeurs : plusieurs valeurs n’entrent pas dans la réduction des données
+
+### <a name="powerapps-visual"></a>Visuel PowerApps
+Leur nombre peut atteindre 30 000 mais c’est aux auteurs des visuels d’indiquer les stratégies à utiliser. La limite par défaut est de 1 000, mais le créateur du visuel peut la changer, jusqu’à un maximum de 30 000.
 
 ### <a name="radial-gauge"></a>Jauge radiale
 Aucune stratégie de réduction

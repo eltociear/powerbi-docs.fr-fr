@@ -6,62 +6,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4da25e0c6ea7115111bc057947183a8b86b5c2f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878688"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837342"
 ---
-# <a name="using-calculated-tables-in-power-bi-desktop"></a>Utilisation de tables calculées dans Power BI Desktop
-Avec les tables calculées, vous pouvez ajouter une nouvelle table au modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans les colonnes de votre nouvelle table à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la table. Dans Power BI Desktop, vous pouvez créer des tables calculées à l’aide de la fonctionnalité Nouvelle table dans la vue Rapport ou Données.
+# <a name="create-calculated-tables-in-power-bi-desktop"></a>Créer des tables calculées dans Power BI Desktop
+La plupart du temps, vous créez des tables en important des données dans votre modèle à partir d’une source de données externe. Toutefois, avec les *tables calculées*, vous pouvez aussi ajouter de nouvelles tables basées sur des données que vous avez déjà chargées dans le modèle. Au lieu d’interroger et de charger les valeurs dans les colonnes de votre nouvelle table à partir d’une source de données, vous créez une formule [DAX (Data Analysis Expressions)](/dax/index) qui définit les valeurs de la table.
 
-La plupart du temps, vous importez des données dans votre modèle à partir d’une source de données externe. Toutefois, les tables calculées procurent certains avantages. Elles sont généralement plus adaptées aux calculs intermédiaires et aux données que vous souhaitez stocker dans le cadre du modèle plutôt que calculer à la volée ou dans le cadre d’une requête.
+DAX est un langage de formule permettant d’utiliser des données relationnelles, comme dans Power BI Desktop. Le langage DAX inclut une bibliothèque de plus de 200 fonctions, opérateurs et constructions. Il offre ainsi une flexibilité considérable pour créer des formules afin d’effectuer les calculs nécessaires pour quasiment tout type d’analyse de données. Utilisez des tables calculées pour des calculs intermédiaires et des données que vous souhaitez stocker dans le modèle plutôt que pour des calculs à la volée ou sous forme de résultats de requête. Par exemple, vous pouvez choisir de lier deux tables existantes par une *union* ou une *jointure croisée*.
 
-Contrairement aux tables créées dans le cadre d’une requête, les tables calculées créées dans la vue Rapport ou Données sont basées sur des données que vous avez déjà chargées dans le modèle. Par exemple, vous pouvez choisir d’effectuer l’union ou la jointure croisée de deux tables.
+Tout comme les autres tables Power BI Desktop, les tables calculées peuvent avoir des relations avec d’autres tables. Les colonnes de tables calculées ont des types de données et une mise en forme, et elles peuvent appartenir à une catégorie de données. Vous pouvez nommer vos colonnes comme vous le souhaitez et les ajouter à des visualisations de rapport comme d’autres champs. Les tables calculées sont recalculées si l’une des tables dont elles tirent (pull) des données sont actualisées ou mises à jour.
 
-Tout comme les tables normales, les tables calculées peuvent avoir des relations avec d’autres tables. Les colonnes de votre table calculée ont des types de données et une mise en forme, et elles peuvent appartenir à une catégorie de données. Vous pouvez nommer vos colonnes comme vous le souhaitez et les ajouter à une visualisation de rapport comme d’autres champs. Les tables calculées sont recalculées si l’une des tables à partir desquelles elles extraient des données sont actualisées ou mises à jour.
+## <a name="create-a-calculated-table"></a>Créer une table calculée
 
-Les tables calculées calculent les résultats en utilisant [DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx), langage de formule conçu pour fonctionner avec les données relationnelles comme dans Power BI Desktop. Le langage DAX inclut une bibliothèque de plus de 200 fonctions, opérateurs et constructions. Il offre ainsi une flexibilité considérable pour créer des formules afin d’effectuer les calculs nécessaires pour quasiment tout type d’analyse de données.
+Vous créez des tables calculées à l’aide de la fonctionnalité **Nouvelle table** dans la vue Rapport ou Données de Power BI Desktop.
 
-## <a name="lets-look-at-an-example"></a>Examinons un exemple.
-Jeff, chef de projet chez Contoso, a une table avec les employés de la région Nord-ouest et une autre table avec les employés de la région Sud-ouest. Il souhaite rassembler ces deux tables dans une seule table.
+Par exemple, imaginons que vous êtes responsable du personnel et que vous utilisez ces deux tables : la table **Northwest Employees** pour les employés de la région Nord-Ouest et la table **Southwest Employees** pour les employés de la région Sud-Ouest. Vous souhaitez combiner les deux tables dans une seule table appelée **Western Region Employees**.
 
-**NorthwestEmployees**
+Table **Northwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**SouthwestEmployees**
+Table **Southwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Il est très facile de rassembler ces deux tables avec une table calculée. Jeff peut créer une table calculée dans la vue Rapport ou Données, mais c’est un peu plus facile dans la vue Données car il peut tout de suite voir la nouvelle table calculée.
+Dans la vue Rapport ou Données de Power BI Desktop, dans le groupe **Calculs** de l’onglet **Modélisation**, sélectionnez **Nouvelle table**. Il est plus simple de travailler dans la vue Données, car vous voyez immédiatement votre nouvelle table calculée.
 
-Dans la **Vue de données**, sous l’onglet **Modélisation** , Jeff clique sur **Nouvelle table**. Une barre de formule apparaît.
+ ![Nouvelle table dans la vue Données](media/desktop-calculated-tables/calctables_formulabarempty.png)
 
- ![](media/desktop-calculated-tables/calctables_formulabarempty.png)
+Entrez la formule suivante dans la barre de formule :
 
-Jeff entre ensuite la formule suivante :
+```dax
+Western Region Employees = UNION('Northwest Employees', 'Southwest Employees')
+```
 
- ![](media/desktop-calculated-tables/calctables_formulabarformula.png)
+Une nouvelle table nommée **Western Region Employees** est créée et s’affiche comme toutes les tables dans le volet **Champs**. Vous pouvez créer des relations avec d’autres tables, ajouter des mesures et des colonnes calculées, et ajouter les champs à des rapports comme avec toute autre table.
 
-Une nouvelle table nommée Western Region Employees est créée.
+ ![Nouvelle table calculée](media/desktop-calculated-tables/calctables_westregionempl.png)
 
- ![](media/desktop-calculated-tables/calctables_westregionempl.png)
-
-La nouvelle table « Western Region Employees » de Jeff apparaît comme toute autre table dans la liste Champs. Jeff peut même créer des relations avec d’autres tables, ajouter des mesures et des colonnes calculées, et ajouter ses champs à des rapports comme avec toute autre table.
-
- ![](media/desktop-calculated-tables/calctables_fieldlist.png)
+ ![Nouvelle table dans le volet Champs](media/desktop-calculated-tables/calctables_fieldlist.png)
 
 ## <a name="functions-for-calculated-tables"></a>Fonctions pour les tables calculées
-Les tables calculées peuvent être définies par toute expression DAX qui retourne une table, y compris une simple référence à une autre table. Par exemple :
 
- ![](media/desktop-calculated-tables/calctables_formulabarsimpleformula.png)
+Vous pouvez définir une table calculée par toute expression DAX qui retourne une table, y compris une simple référence à une autre table. Par exemple :
 
-Vous pouvez utiliser des tables calculées avec DAX pour résoudre de nombreux problèmes analytiques. Nous vous avons fourni ici une brève introduction aux tables calculées. Voici quelques-unes des fonctions de table DAX les plus courantes qui pourront vous être utiles quand vous commencerez à travailler avec des tables calculées :
+```dax
+New Western Region Employees = 'Western Region Employees'
+```
+
+Cet article fournit une brève introduction aux tables calculées. Vous pouvez utiliser des tables calculées avec DAX pour résoudre de nombreux problèmes analytiques. Voici quelques-unes des fonctions de table DAX les plus couramment utilisées :
 
 * DISTINCT
 * VALEURS
@@ -73,5 +73,5 @@ Vous pouvez utiliser des tables calculées avec DAX pour résoudre de nombreux p
 * CALENDAR
 * CALENDARAUTO
 
-Pour plus d’informations sur ces fonctions et sur d’autres fonctions DAX qui retournent des tables, consultez la [Référence des fonctions DAX](https://msdn.microsoft.com/ee634396.aspx).
+Pour plus d’informations sur ces fonctions et d’autres fonctions DAX qui retournent des tables, consultez les [informations de référence sur les fonctions DAX](/dax/dax-function-reference).
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4125ff59f32de8453fe131685f0a05e1c45220c3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c6987c5849fd2f971c1d7bdc7fe6130dcd09ce59
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876525"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761723"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 
@@ -164,18 +164,18 @@ Vous devez ensuite déplacer les colonnes ou mesures personnalisées que vous av
 3. Remplacez *Query1* par le nom de la table des détails d’origine.
 4. Pour créer des mesures de table et des colonnes personnalisées, cliquez avec le bouton droit sur votre table, puis choisissez **Nouvelle mesure**. Ensuite, coupez et collez chacune de vos mesures et colonnes stockées.
 
-### <a name="step-4-relink-tables-that-had-relationships"></a>Étape 4 : Lier à nouveau les tables qui avaient des relations
+### <a name="step-4-relink-tables-that-had-relationships"></a>Étape 4 : Lier à nouveau les tables qui avaient des relations
 De nombreux tableaux de bord comportent des tables supplémentaires qui sont utilisées pour la recherche ou le filtrage, telles que des tables de dates ou des tables destinées à des projets personnalisés. Le rétablissement de ces relations résout la plupart des problèmes restants. Voici comment procéder.
 
 - Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez à nouveau vos tables en fonction des besoins.
 
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
-### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : Vérifier vos visuels et ajuster la mise en forme des champs au besoin
+### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : Vérifier vos visuels et ajuster la mise en forme des champs au besoin
 À ce stade, la plupart de vos visuels, tables et vues détaillées d’origine devraient fonctionner comme prévu. Toutefois, certaines modifications mineures peuvent être nécessaires pour en mettre en forme avec précision l’apparence. Prenez un peu de temps pour jeter un coup d’œil à chacun de vos tableaux de bord et visuels pour vérifier qu’ils s’affichent comme vous le souhaitez.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Utilisation de l’API ACI (Azure Consumption Insights) pour obtenir des données de consommation
-Azure fournit également l’[ **API ACI (Azure Consumption Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). L’API ACI vous permet de créer vos propres solutions personnalisées pour la collecte et la visualisation d’informations, ainsi que la création de rapports.
+Azure fournit également l’[**API ACI (Azure Consumption Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). L’API ACI vous permet de créer vos propres solutions personnalisées pour la collecte et la visualisation d’informations, ainsi que la création de rapports.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Mappage des noms et des détails d’utilisation entre le portail, le connecteur et l’API
 Les colonnes et les noms des détails sur le portail Azure sont similaires dans l’API et dans le connecteur, mais pas toujours identiques. Pour aider à la clarification, le tableau suivant en fournit un mappage. Il spécifie également si des colonnes sont obsolètes. Pour plus d’informations et des définitions de ces termes, consultez le [dictionnaire des données de facturation d’Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
@@ -231,7 +231,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez vous connecter à de nombreuses sources de données différentes à l’aide de Power BI Desktop. Pour plus d’informations, consultez les articles suivants :
+Vous pouvez vous connecter à de nombreuses sources de données différentes à l’aide de Power BI Desktop. Pour plus d’informations, consultez les articles suivants :
 
 * [Se connecter aux données d’Azure Cost Management dans Power BI Desktop](desktop-connect-azure-cost-management.md)
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
