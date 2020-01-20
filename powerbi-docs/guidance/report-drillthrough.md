@@ -1,5 +1,5 @@
 ---
-title: Extraction de page de rapport
+title: Utiliser l’extraction de page de rapport
 description: Conseils d’utilisation de l’extraction de page de rapport.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 48942b30b84706c933ccef455129c84a67ac5a1b
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223622"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040368"
 ---
-# <a name="report-page-drillthrough"></a>Extraction de page de rapport
+# <a name="use-report-page-drillthrough"></a>Utiliser l’extraction de page de rapport
 
 Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il fournit des suggestions et des recommandations pour créer une [extraction de page de rapport](../desktop-drillthrough.md).
 
