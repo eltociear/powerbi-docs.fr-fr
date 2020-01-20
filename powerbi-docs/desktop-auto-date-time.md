@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000155"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761838"
 ---
-# <a name="auto-datetime-in-power-bi-desktop"></a>Date/heure automatique dans Power BI Desktop
+# <a name="apply-auto-datetime-in-power-bi-desktop"></a>Appliquer l’option de date/heure automatique dans Power BI Desktop
 
 Cet article s’adresse aux modélisateurs de données développant des modèles d’importation ou composites dans Power BI Desktop. Il présente et décrit l’option _Date/heure automatique_.
 
@@ -63,7 +63,7 @@ Vous disposez, par ailleurs, d’une fonctionnalité supplémentaire qui n’est
 
 ![Exemple de configuration de champ visuel pour la hiérarchie OrderDate. Le menu contextuel est ouvert. Il présente deux options qui permettent de basculer entre l’utilisation de la colonne OrderDate et celle de la hiérarchie de dates.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
-Enfin, les calculs de modèle, écrits en DAX, peuvent référencer une colonne de date (directement) ou les colonnes d’une table de date/heure automatique masquées (indirectement).
+Enfin, les calculs de modèle, écrits en DAX, peuvent référencer une colonne de date _directement_ ou les colonnes d’une table de date/heure automatique masquées _indirectement_.
 
 Une formule écrite dans Power BI Desktop peut référencer une colonne de date de façon classique. Toutefois, les colonnes d’une table de date/heure automatique doivent être référencées à l’aide d’une syntaxe étendue spéciale. Commencez par référencer la colonne de date et faites-la suivre d’un point (.). Dans la barre de formule, la saisie semi-automatique vous permet de sélectionner une colonne dans la table de date/heure automatique.
 
