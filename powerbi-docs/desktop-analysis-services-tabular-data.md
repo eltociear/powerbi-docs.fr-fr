@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523024"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762068"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Utilisation de données tabulaires Analysis Services dans Power BI Desktop
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Connexion aux données tabulaires Analysis Services dans Power BI Desktop
 Avec Power BI Desktop, il existe deux moyens de se connecter aux modèles tabulaires SQL Server Analysis Services et d’en récupérer des données : les explorer à l’aide d’une connexion active ou sélectionner des éléments et les importer dans Power BI Desktop.
 
 Examinons cela de plus près.
 
-**Explorer à l’aide d’une connexion active** : lors de l’utilisation d’une connexion active, les éléments dans votre perspective ou modèle tabulaire, comme les tables, les colonnes et les mesures, apparaissent dans votre liste Champs dans Power BI Desktop. Vous pouvez utiliser les outils de visualisation et de création de rapports avancés de Power BI Desktop pour explorer votre modèle tabulaire de manière interactive et novatrice.
+**Explorer à l’aide d’une connexion active** : lors de l’utilisation d’une connexion active, les éléments dans votre perspective ou modèle tabulaire, comme les tables, les colonnes et les mesures, apparaissent dans votre liste Champs dans Power BI Desktop. Vous pouvez utiliser les outils de visualisation et de création de rapports avancés de Power BI Desktop pour explorer votre modèle tabulaire de manière interactive et novatrice.
 
 Lors de la connexion en temps réel, aucune donnée du modèle tabulaire n’est importée dans Power BI Desktop. Chaque fois que vous interagissez avec une visualisation, Power BI Desktop interroge le modèle tabulaire et calcule les résultats que vous voyez. Vous visualisez toujours les données les plus récentes qui sont disponibles dans le modèle tabulaire, provenant du dernier traitement ou des tables DirectQuery disponibles dans le modèle tabulaire. 
 
@@ -29,7 +29,7 @@ Gardez à l’esprit que les modèles tabulaires sont hautement sécurisés. Les
 
 Quand vous avez créé des rapports dynamiques dans Power BI Desktop, vous pouvez les partager en les publiant sur votre site Power BI. Quand vous publiez sur votre site Power BI un fichier Power BI Desktop avec une connexion active à un modèle tabulaire, une passerelle de données locale doit être installée et configurée par un administrateur. Pour plus d’informations, consultez [Passerelle de données locale](service-gateway-onprem.md).
 
-**Sélectionner des éléments et les importer dans Power BI Desktop** : lorsque vous vous connectez avec cette option, vous pouvez sélectionner des éléments tels que des tables, des colonnes et des mesures dans votre perspective ou modèle tabulaire et les charger dans un modèle Power BI Desktop. Vous pouvez utiliser l’Éditeur de requête avancé de Power BI Desktop pour préciser ce que vous souhaitez obtenir. Vous pouvez utiliser les fonctionnalités de modélisation de Power BI Desktop pour modéliser davantage les données. Aucune connexion active entre Power BI Desktop et le modèle tabulaire n’est conservée. Vous pouvez ensuite explorer votre modèle Power BI Desktop hors connexion ou le publier sur votre site Power BI.
+**Sélectionner des éléments et les importer dans Power BI Desktop** : lorsque vous vous connectez avec cette option, vous pouvez sélectionner des éléments tels que des tables, des colonnes et des mesures dans votre perspective ou modèle tabulaire et les charger dans un modèle Power BI Desktop. Vous pouvez utiliser l’Éditeur de requête avancé de Power BI Desktop pour préciser ce que vous souhaitez obtenir. Vous pouvez utiliser les fonctionnalités de modélisation de Power BI Desktop pour modéliser davantage les données. Aucune connexion active entre Power BI Desktop et le modèle tabulaire n’est conservée. Vous pouvez ensuite explorer votre modèle Power BI Desktop hors connexion ou le publier sur votre site Power BI.
 
 ## <a name="to-connect-to-a-tabular-model"></a>Pour vous connecter à un modèle tabulaire
 1. Dans Power BI Desktop, sous l’onglet **Accueil**, cliquez sur **Obtenir des données**.

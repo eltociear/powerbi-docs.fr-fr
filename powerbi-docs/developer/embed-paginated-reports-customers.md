@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/04/2019
+ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311421"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731240"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
 
@@ -271,6 +271,12 @@ Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouv
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez appris à incorporer des rapports paginés Power BI dans une application pour vos clients. Vous pouvez aussi essayer d’incorporer du contenu Power BI pour votre organisation.
+Dans ce tutoriel, vous avez appris à incorporer des rapports paginés Power BI dans une application pour vos clients. Vous pouvez aussi essayer d’incorporer du contenu Power BI pour vos clients ou votre organisation.
+
+> [!div class="nextstepaction"]
+>[Incorporer du contenu pour vos clients](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Incorporer du contenu pour votre organisation](embed-sample-for-your-organization.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
