@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837646"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038549"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données stocké sur OneDrive ou SharePoint Online
 L’importation de fichiers à partir de OneDrive ou de SharePoint Online dans le service Power BI est un excellent moyen de s’assurer que le travail effectué dans Power BI Desktop reste synchronisé avec le service Power BI.
@@ -37,7 +37,7 @@ Lorsque vous actualisez le jeu de données, Power BI ne se connecte pas au fich
 Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Planifier l’actualisation** pour des jeux de données créés à partir de fichiers Power BI Desktop importés d’un lecteur local où vous utilisez **Obtenir des données** ou **Éditeur de requête** pour vous connecter aux sources de données suivantes, à partir desquelles vous chargez des données.
 
 > [!NOTE]
-> Les fichiers importés dans OneDrive sont pris en charge, mais les jeux de données connectés en direct dans OneDrive ne sont pas pris en charge en tant que scénario d’actualisation OneDrive.
+> L’actualisation OneDrive pour les jeux de données de connexion active est prise en charge. Toutefois, le fait de modifier le jeu de données de connexion active, d’un jeu de données à un autre dans un rapport déjà publié, n’est pas pris en charge dans le scénario d’actualisation OneDrive.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Toutes les sources de données en ligne affichées sous **Obtenir des données** dans l’**éditeur de requête** et dans Power BI Desktop.

@@ -1,7 +1,7 @@
 ---
 title: Introduction aux tableaux de bord pour les concepteurs Power BI
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI. Un tableau de bord est une page unique, souvent appelée canevas, qui raconte une histoire au moyen de visualisations.
-author: maggieMSFT
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 41381a2f0ccc2c5db904d9ac94c7dad19edfa4e5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872741"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160785"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
@@ -38,7 +38,7 @@ Les tableaux de bord constituent un moyen formidable de superviser votre activit
 Un tableau de bord n’est pas qu’une jolie image. Il est extrêmement interactif, les vignettes se mettent à jour dès que changent les données sous-jacentes.
 
 ## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
-La capacité de créer un tableau de bord est une fonctionnalité de *créateur* qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md), vous êtes *consommateur* du rapport. Vous ne pourrez pas épingler de vignettes à un tableau de bord. 
+La capacité de créer un tableau de bord est une fonctionnalité de *créateur* qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans l’espace de travail ABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md), vous êtes *consommateur* du rapport. Vous ne pourrez pas épingler de vignettes à un tableau de bord. 
 
 > [!IMPORTANT]
 > Vous devez être titulaire d’une licence [Power BI Pro](service-free-vs-pro.md) pour créer des tableaux de bord dans des espaces de travail. Vous pouvez créer des tableaux de bord dans votre propre espace de travail sans licence Power BI Pro.

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/26/2019
-ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565771"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160601"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -146,6 +146,7 @@ Ouvrez le port TCP que vous avez configuré pour l’URL du service web et l’U
 * Pour configurer l’intégration avec le service Power BI afin de pouvoir épingler des éléments de rapport à un tableau de bord Power BI, voir [Intégration de Power BI Report Server](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
 * Pour configurer le courrier pour le traitement des abonnements, voir [Paramètres du courrier](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) et [Remise du courrier dans un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
 * Pour configurer le portail web de façon à pouvoir y accéder sur un ordinateur de rapport pour afficher et gérer les rapports, voir [Configurer un pare-feu pour l’accès au serveur de rapports](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) et [Configurer un serveur de rapports pour l’administration à distance](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
+* Pour plus d’informations sur la définition des propriétés système du serveur de rapports dans SQL Server Management Studio, consultez la [page avancée Propriétés du serveur](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Sauf indication contraire, les options s’appliquent à la fois à Power BI Report Server et à SQL Server Reporting Services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
