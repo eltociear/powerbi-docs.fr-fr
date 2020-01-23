@@ -100,7 +100,7 @@
               href: end-user-recent.md
             - name: Afficher du contenu dans le conteneur Partagés avec moi
               href: end-user-shared-with-me.md
-            - name: S’abonner à un rapport ou tableau de bord
+            - name: S’abonner à un rapport ou à un tableau de bord
               href: end-user-subscribe.md
             - name: Rechercher et trier du contenu dans Power BI
               href: end-user-search-sort.md
@@ -122,7 +122,7 @@
               href: end-user-app-marketing.md
         - name: Posez des questions sur vos données
           items:
-            - name: "Q&R dans Power\_BI"
+            - name: "Q&A dans Power\_BI"
               href: end-user-q-and-a.md
             - name: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power\_BI"
               href: end-user-q-and-a-tips.md
@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoris dans les applications mobiles
               href: mobile/mobile-apps-favorites.md
-            - name: Configurer l’interaction avec les rapports dans les applications mobiles (téléphone uniquement)
-              href: mobile/mobile-app-single-tap.md
+            - name: Configurer les paramètres d’interaction (téléphone uniquement)
+              href: mobile/mobile-app-interaction-settings.md
             - name: "Définir des alertes de données dans les applications mobiles Power\_BI"
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: "Obtenir des notifications dans les applications mobiles Power\_BI"
