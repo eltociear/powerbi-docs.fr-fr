@@ -961,16 +961,18 @@
       items:
         - name: Nouveautés
           href: report-server/whats-new.md
+        - name: Vue d’ensemble de l’administrateur
+          href: report-server/admin-handbook-overview.md
         - name: Journal des modifications
           href: report-server/changelog.md
         - name: Chronologie du support technique
           href: report-server/support-timeline.md
+        - name: Prise en charge d’Always Encrypted
+          href: report-server/always-encrypted-support.md
         - name: Configuration matérielle et logicielle requise
           href: report-server/system-requirements.md
         - name: Navigateurs pris en charge
           href: report-server/browser-support.md
-        - name: Vue d’ensemble de l’administrateur
-          href: report-server/admin-handbook-overview.md
         - name: Informations de base sur les serveurs de rapports
           items:
             - name: "Actualisation planifiée de rapport Power\_BI"
