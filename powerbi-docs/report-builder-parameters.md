@@ -1,6 +1,6 @@
 ---
 title: Paramètres de rapport dans le Générateur de rapports Power BI
-description: Cette rubrique décrit les utilisations courantes des paramètres de rapport du Générateur de rapports paginés Power BI, les propriétés que vous pouvez définir et plus encore.
+description: Cette rubrique décrit les utilisations courantes des paramètres des rapports Power BI Report Builder, les propriétés que l’on peut définir et plus encore.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 5a7e91c03b11902f324d6a7c639a03f7652acf16
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128425"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160854"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Paramètres de rapport dans le Générateur de rapports Power BI
 
-Cette rubrique décrit les utilisations courantes des paramètres de rapport du Générateur de rapports paginés Power BI, les propriétés que vous pouvez définir et plus encore. Les paramètres de rapport vous permettent de contrôler les données du rapport, de relier des rapports connexes et de modifier la présentation du rapport. Vous pouvez utiliser des paramètres de rapport dans les rapports paginés que vous créez dans le Générateur de rapports.
+Cette rubrique décrit les utilisations courantes des paramètres des rapports Power BI Report Builder, les propriétés que l’on peut définir et plus encore. Les paramètres de rapport vous permettent de contrôler les données du rapport, de relier des rapports connexes et de modifier la présentation du rapport. Vous pouvez utiliser des paramètres de rapport dans les rapports paginés que vous créez dans le Générateur de rapports.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Utilisations courantes des paramètres
 
@@ -93,7 +93,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
   
 - Sélectionner plusieurs valeurs de paramètre dans une liste déroulante.  
   
-- Sélectionner une valeur dans une liste déroulante pour un paramètre, qui détermine les valeurs qui sont disponibles dans la liste déroulante pour un autre paramètre. Il s’agit de paramètres en cascade. Les paramètres en cascade vous permettent de filtrer successivement des valeurs de paramètre sur des milliers de valeurs pour arriver à un nombre plus gérable.  
+- Sélectionner une valeur dans une liste déroulante pour un paramètre, qui détermine les valeurs qui sont disponibles dans la liste déroulante pour un autre paramètre. Il s’agit de paramètres en cascade. Les paramètres en cascade vous permettent de filtrer successivement des valeurs de paramètre sur des milliers de valeurs pour arriver à un nombre plus gérable. Pour plus d’informations, voir [Utiliser des paramètres en cascade dans les rapports paginés](guidance/paginated-report-cascading-parameter.md).
   
 - Exécuter le rapport sans devoir d’abord sélectionner une valeur de paramètre, car une valeur par défaut a été créée pour le paramètre.  
   
@@ -148,5 +148,4 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Utiliser des paramètres en cascade dans les rapports paginés](guidance/paginated-report-cascading-parameter.md)

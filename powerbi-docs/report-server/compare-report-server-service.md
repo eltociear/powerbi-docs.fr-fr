@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 12/03/2019
-ms.openlocfilehash: 88df45a95e485695a9a2f36358c1fcca9670f258
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: f7f163a8930d8bd90d6270f59e8afa602e89dd57
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74831138"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160831"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -31,6 +31,7 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Cycle de mise en production | Trois fois par an (janvier, mai, septembre) | Une fois par mois | Les derniers correctifs et fonctionnalités sont d’abord disponibles pour le service Power BI. La plupart des fonctionnalités de base sont intégrées à Power BI Report Server dans les prochaines versions, et certaines fonctionnalités sont uniquement destinées au service Power BI. |
 | Créer des rapports Power BI dans Power BI Desktop | Oui | Oui |  |
 | Créer des rapports Power BI dans le navigateur | Non | Oui |  |
+| Héberger des jeux de données partagés Power BI et s’y connecter | Non | Oui | [Introduction aux jeux de données entre plusieurs espaces de travail](../service-datasets-across-workspaces.md) |
 | Passerelle obligatoire | Non | Oui, pour les sources de données locales |  |
 | Streaming en temps réel | Non | Oui | [Streaming en temps réel dans Power BI](../service-real-time-streaming.md) |
 | Tableaux de bord | Non | Oui | [Tableaux de bord dans le service Power BI](../consumer/end-user-dashboards.md) |

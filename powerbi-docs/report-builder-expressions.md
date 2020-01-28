@@ -1,6 +1,6 @@
 ---
 title: Expressions dans le Générateur de rapports Power BI
-description: Les expressions sont largement utilisées dans les rapports paginés du Générateur de rapports paginés Power BI pour récupérer, calculer, afficher, regrouper, trier, filtrer, paramétrer et mettre en forme les données.
+description: Les expressions sont largement utilisées dans les rapports paginés Power BI Report Builder pour récupérer, calculer, afficher, regrouper, trier, filtrer, paramétrer et mettre en forme les données.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3a72fd967eeb24cfa1093d16c4434447d5fc89d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840622"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953856"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Expressions dans le Générateur de rapports Power BI
-  Les expressions sont largement utilisées dans les rapports paginés du Générateur de rapports paginés Power BI pour récupérer, calculer, afficher, regrouper, trier, filtrer, paramétrer et mettre en forme les données. 
+  Les expressions sont largement utilisées dans les rapports paginés Power BI Report Builder pour récupérer, calculer, afficher, regrouper, trier, filtrer, paramétrer et mettre en forme les données. 
   
   Vous pouvez définir un grand nombre de propriétés d’élément de rapport dans une expression. Les expressions vous permettent de contrôler le contenu, la conception et l’interactivité de votre rapport. Les expressions sont écrites en Microsoft Visual Basic, enregistrées dans la définition de rapport et évaluées par le processeur de rapports quand vous exécutez le rapport.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "66840622"
 
 Les expressions simples utilisent des symboles pour indiquer si la référence est à un champ, un paramètre, une collection prédéfinie ou la collection ReportItems. Le tableau suivant montre des exemples de texte d’affichage et d’expression :  
   
-|Élément|Exemple de texte d’affichage|Exemple de texte d’expression|  
+|Article|Exemple de texte d’affichage|Exemple de texte d’expression|  
 |----------|--------------------------|-----------------------------|  
 |Champs de jeu de données|`[Sales]`<br /><br /> `[SUM(Sales)]`<br /><br /> `[FIRST(Store)]`|`=Fields!Sales.Value`<br /><br /> `=Sum(Fields!Sales.Value)`<br /><br /> `=First(Fields!Store.Value)`|  
 |Paramètres de rapport|`[@Param]`<br /><br /> `[@Param.Label]`|`=Parameters!Param.Value`<br /><br /> `=Parameters!Param.Label`|  

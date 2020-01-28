@@ -1,6 +1,6 @@
 ---
-title: Générateur de rapports paginés Power BI
-description: Le Générateur de rapports paginés Power BI est un outil qui permet de créer des rapports paginés.
+title: Générateur de rapports Power BI
+description: Power BI Report Builder est un outil qui permet de créer des rapports paginés.
 ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: faba36a609abd94b2439006fbbcf01a1d193c585
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565289"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953914"
 ---
-# <a name="power-bi-paginated-report-builder"></a>Générateur de rapports paginés Power BI
+# <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
 
- Le Générateur de rapports paginés Power BI est un outil qui permet de créer des rapports paginés.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
+ Power BI Report Builder est un outil qui permet de créer des rapports paginés.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
 
 Essayez le [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 

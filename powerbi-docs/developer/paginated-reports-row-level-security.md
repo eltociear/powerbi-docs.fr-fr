@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311507"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953767"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implémentation de la sécurité au niveau des lignes dans des rapports paginés incorporés (préversion)
 
@@ -32,7 +32,7 @@ Après avoir affecté le paramètre à **UserID**, utilisez l’API [GenerateTok
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Utiliser UserID comme filtre au niveau du rapport ou de la requête
 
-Vous pouvez utiliser **UserId** comme *filtre* ou dans une *requête* sur la source de données dans le [Générateur de rapports paginés Power BI](../report-builder-power-bi.md).
+Vous pouvez utiliser **UserId** comme *filtre* ou dans une *requête* sur la source de données dans [Power BI Report Builder](../report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>Utilisation du filtre
 

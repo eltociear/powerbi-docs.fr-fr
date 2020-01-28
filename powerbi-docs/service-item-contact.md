@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2010
+ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872144"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160555"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Définir les informations de contact pour les rapports et les tableaux de bord dans le service Power BI
 Cet article vous explique comment définir les informations de contact d'un tableau de bord ou d'un rapport dans le service Power BI.
@@ -60,6 +60,7 @@ Les informations de la liste de contacts sont également utilisées à d'autres 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 * Le contact est automatiquement défini pour les nouveaux éléments créés dans le service Power BI. Les éléments existants afficheront l'espace de travail par défaut.
 * Vous pouvez définir n'importe quel utilisateur ou groupe dans la liste de contacts, mais ils n'auront pas automatiquement l'autorisation d'accéder à l'élément. Utilisez le partage ou donnez à l'utilisateur qui en a besoin l'accès à l'espace de travail en lui attribuant un rôle. 
+* La liste de contacts au niveau élément ne fait pas l’objet d’une transmission de type push dans les applications lors de leur publication. La nouvelle expérience de navigation dans les applications comporte une URL de support configurable de façon à mieux gérer les commentaires d’un grand nombre d’utilisateurs.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

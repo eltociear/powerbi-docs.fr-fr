@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877371"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040452"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Création et utilisation de flux de données dans Power BI
 
@@ -155,6 +155,14 @@ La connexion à des sources de données pour des flux de données peut poser des
 * **Connecteur de fichier JSON** : actuellement, vous pouvez vous connecter à un fichier JSON à l’aide de l’authentification de base uniquement.  La connexion à un fichier JSON en fournissant les informations d’identification dans l’URL (par exemple, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) n’est **pas** prise en charge.  
 
 * **Azure SQL Data Warehouse** : les flux de données ne prennent pas en charge l’authentification Azure Active Directory (AAD) pour Azure SQL Data Warehouse. Utilisez l’authentification de base pour ce scénario.
+
+## <a name="considerations-and-limitations"></a>Considérations et limitations
+
+Les flux de données présentent quelques limitations connues, décrites dans la liste suivante.
+
+* Un flux de données doit générer l’un des types suivants : *Date/Hheure, Nombre décimal, Texte, Nombre entier, Date/Heure/Zone, Vrai/Faux, date, Heure*.
+* Les fonctions dynamiques ne sont actuellement pas prises en charge dans les flux de données.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

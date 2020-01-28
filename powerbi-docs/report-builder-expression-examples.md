@@ -1,6 +1,6 @@
 ---
 title: Exemples d’expressions dans le Générateur de rapports Power BI
-description: Les expressions sont fréquemment utilisées dans les rapports paginés du Générateur de rapports Power BI pour contrôler le contenu et l’apparence du rapport.
+description: Les expressions sont fréquemment utilisées dans les rapports paginés Power BI Report Builder pour contrôler le contenu et l’apparence des rapports.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728561"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953981"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Exemples d’expressions dans le Générateur de rapports Power BI
-Les expressions sont fréquemment utilisées dans les rapports paginés du Générateur de rapports Power BI pour contrôler le contenu et l’apparence du rapport. Les expressions sont écrites en Microsoft Visual Basic et elles peuvent utiliser des fonctions intégrées, du code personnalisé, des variables de rapport et de groupe, et des variables définies par l’utilisateur. Les expressions commencent par un signe égal (=).   
+Les expressions sont fréquemment utilisées dans les rapports paginés Power BI Report Builder pour contrôler le contenu et l’apparence des rapports. Les expressions sont écrites en Microsoft Visual Basic et elles peuvent utiliser des fonctions intégrées, du code personnalisé, des variables de rapport et de groupe, et des variables définies par l’utilisateur. Les expressions commencent par un signe égal (=).   
 
 Cette rubrique fournit des exemples d’expressions qui peuvent être utilisées pour les tâches courantes dans un rapport.  
   
@@ -152,7 +152,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
   
 -   Les expressions suivantes affichent différentes dates en fonction de la valeur d’un paramètre de date sélectionnée par l’utilisateur.  
   
-|Description de l’exemple|Example|  
+|Description de l’exemple|Exemple|  
 |-------------------------|-------------|  
 |Hier|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value)-1)`|  
 |Il y a deux jours|`=DateSerial(Year(Parameters!TodaysDate.Value),Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value)-2)`|  

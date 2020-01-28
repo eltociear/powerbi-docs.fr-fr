@@ -1,6 +1,6 @@
 ---
 title: Conseils pour la conception des rapports dans le Générateur de rapports Power BI
-description: Utilisez les conseils suivants pour concevoir vos rapports paginés dans le Générateur de rapports paginés Power BI.
+description: Appliquez les conseils suivants pour concevoir vos rapports paginés dans Power BI Report Builder.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840346"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160532"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Conseils pour la conception des rapports dans le Générateur de rapports Power BI
-  Utilisez les conseils suivants pour concevoir vos rapports paginés dans le Générateur de rapports paginés Power BI.  
+  Appliquez les conseils suivants pour concevoir vos rapports paginés dans Power BI Report Builder.  
   
    
   
@@ -131,7 +131,7 @@ ms.locfileid: "66840346"
   
 -   Si vous prévoyez d’enregistrer le rapport sous forme de fichier .pdf, la largeur du rapport doit être définie explicitement sur une valeur qui vous donne les résultats souhaités dans le format de fichier d’exportation. Par exemple, définissez la largeur de la page de rapport sur exactement 20,1612 cm, et les marges gauche et droite sur 1,27 cm.  
   
--   Utilisez **Format d’impression** et **Mise en page** sur la barre d’outils de la visionneuse de rapports pour afficher un rapport dans une vue compatible avec l’impression. Pour supprimer les pages horizontales non souhaitées, procédez comme suit :  
+-   Utilisez **Format d’impression** et **Mise en page** sur la barre d’outils de la visionneuse de rapports pour afficher un rapport dans une vue compatible avec l’impression. Pour supprimer les pages vierges inutiles, suivez les étapes ci-dessous :  
   
     1.  Supprimez tout l’espace vide superflu entre les régions de données et sur les bords du rapport.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840346"
     3.  Utilisez des **Rectangles** comme conteneurs pour contrôler la façon dont les éléments de rapport sont rendus.  
   
     4.  Dans les en-têtes de colonne, modifiez la propriété de zone de texte WritingMode pour qu’elle utilise du texte vertical.  
-  
- La combinaison de ce comportement, des propriétés de largeur et de hauteur des éléments de rapport, de la taille du corps du rapport, de la définition de la hauteur et de la largeur des pages, des paramètres de marge du rapport parent et de la prise en charge spécifique au convertisseur pour la pagination détermine quels éléments de rapport tiennent ensemble dans une page rendue. 
+
+ Pour obtenir de l’aide, consultez [Éviter les pages vierges lors de l’impression de rapports paginés](guidance/report-paginated-blank-page.md).
+
+ La combinaison de ce comportement, des propriétés de largeur et de hauteur des éléments de rapport, de la taille du corps du rapport, de la définition de la hauteur et de la largeur des pages, des paramètres de marge du rapport parent et de la prise en charge spécifique au convertisseur pour la pagination détermine quels éléments de rapport tiennent ensemble dans une page rendue.
  
 ## <a name="next-steps"></a>Étapes suivantes
 

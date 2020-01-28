@@ -1,6 +1,6 @@
 ---
 title: Planification d’un rapport dans le Générateur de rapports Power BI
-description: Le Générateur de rapports paginés Power BI vous permet de créer de nombreux types de rapports paginés. Pour créer un rapport facilement compréhensible utile, le planifier aide.
+description: Power BI Report Builder permet de créer divers types de rapports paginés. Pour créer un rapport facilement compréhensible utile, le planifier aide.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623870"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953806"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planification d’un rapport dans le Générateur de rapports Power BI
 
-Le Générateur de rapports paginés Power BI vous permet de créer de nombreux types de rapports paginés. Par exemple, vous pouvez créer des rapports qui montrent des données de ventes synthétiques ou détaillées, des tendances de vente et marketing, des rapports opérationnels ou des tableaux de bord. Vous pouvez aussi créer des rapports qui tirent parti de texte richement mis en forme, comme dans les commandes, les catalogues de produits ou les lettres types. Tous ces rapports sont créés en utilisant différentes combinaisons des mêmes modules de base dans le Générateur de rapports. Pour créer un rapport facilement compréhensible utile, le planifier aide. Avant de commencer, voici quelques points que vous voudrez probablement prendre en considération :  
+Power BI Report Builder permet de créer divers types de rapports paginés. Par exemple, vous pouvez créer des rapports qui montrent des données de ventes synthétiques ou détaillées, des tendances de vente et marketing, des rapports opérationnels ou des tableaux de bord. Vous pouvez aussi créer des rapports qui tirent parti de texte richement mis en forme, comme dans les commandes, les catalogues de produits ou les lettres types. Tous ces rapports sont créés en utilisant différentes combinaisons des mêmes modules de base dans le Générateur de rapports. Pour créer un rapport facilement compréhensible utile, le planifier aide. Avant de commencer, voici quelques points que vous voudrez probablement prendre en considération :  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>Dans quel format souhaitez-vous créer le rapport ?
   

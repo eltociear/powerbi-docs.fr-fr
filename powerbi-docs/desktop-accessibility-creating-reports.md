@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761976"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925692"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Concevoir des rapports Power BI pour l’accessibilité
 Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisant leur accessibilité. Quel que soit le public concerné, vous devez veiller à ce que tous les rapports que vous créez puissent être utilisés par le plus grand nombre de personnes possible sans nécessiter ni adaptation, ni conception spéciale.
@@ -22,6 +22,8 @@ Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisan
 ![Paramètres Windows de contraste élevé](media/desktop-accessibility/accessibility-05.png)
 
 Cet article décrit les outils et fonctionnalités permettant de créer des rapports accessibles dans Power BI.
+
+En général, lorsque vous utilisez Power BI avec un lecteur d’écran, nous vous recommandons de désactiver le mode d’analyse ou le mode de navigation.
 
 Pour améliorer le processus de création de rapports avec les lecteurs d’écran, un menu contextuel est disponible. Le menu permet de déplacer des champs dans le puits vers le haut ou vers le bas dans la liste **Champs**. Il permet également de déplacer le champ vers d’autres puits, comme **Légende** ou **Valeur**, entre autres.
 

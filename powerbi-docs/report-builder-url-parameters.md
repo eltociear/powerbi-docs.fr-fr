@@ -1,6 +1,6 @@
 ---
 title: Paramètres d’URL dans les rapports paginés - Générateur de rapports Power BI
-description: Cette rubrique décrit les utilisations courantes des paramètres de rapport du Générateur de rapports paginés Power BI, les propriétés que vous pouvez définir et plus encore.
+description: Cette rubrique décrit les utilisations courantes des paramètres des rapports Power BI Report Builder, les propriétés que l’on peut définir et plus encore.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 09/10/2019
-ms.openlocfilehash: e39864081ce4dd1ad415224454b75404e882e9ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 35df214da19d5f35130408ce8128643f52682428
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128313"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953789"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>Paramètres d’URL dans les rapports paginés de Power BI
 

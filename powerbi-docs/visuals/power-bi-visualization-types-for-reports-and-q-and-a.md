@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099940"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040471"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -145,6 +145,13 @@ Pour plus d’informations, consultez [Visuels Matrice dans Power BI](desktop-m
 
 >[!TIP]
 >Ils montrent la relation des parties par rapport à un tout. 
+
+### <a name="power-apps-visual"></a>Visuel Power Apps
+![Visuel Power Apps](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Les Concepteurs de rapports peuvent créer une application Power Apps et l’incorporer dans un rapport Power BI sous forme de visuel. Les consommateurs peuvent interagir avec ce visuel dans le rapport Power BI. 
+
+Pour plus d’informations, consultez [Ajouter un visuel Power Apps à un rapport](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Visuel de Questions et réponses
 ![Visuels Questions et réponses](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

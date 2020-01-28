@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/23/2019
-ms.openlocfilehash: aeb47f7f2a6e2de7c8c5095561819367ab16a7e9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/21/2020
+ms.openlocfilehash: 7b8c106f13df381152b6323cf1263747a3064709
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873937"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540564"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 
@@ -38,10 +38,11 @@ Cet article mentionne les configurations matérielle et logicielle requises pour
 
 SQL Server est utilisé pour héberger les bases de données des serveurs de rapports. L’instance du moteur de base de données SQL Server peut être locale ou distante. Voici les versions prises en charge du moteur de base de données SQL Server qui peuvent être utilisées pour héberger les bases de données des serveurs de rapports :
 
+* SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016
 * SQL Server 2014
-* SQL Server 2012
+* SQL Server 2012
 
 Lorsque vous créez la base de données du serveur de rapports sur un ordinateur distant, vous devez configurer la connexion pour utiliser un compte d’utilisateur de domaine ou un compte de service ayant accès au réseau. Si vous décidez d’utiliser une instance distante de SQL Server, choisissez attentivement quelles informations d’identification le serveur de rapports doit utiliser pour se connecter à l’instance SQL Server. Pour plus d’informations, consultez [Configurer la connexion de base de données d’un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

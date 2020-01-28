@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: v-pemyer
-ms.openlocfilehash: becde542f68b2f9fb1412a904793f46a8f154856
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308246"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161291"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 
@@ -120,7 +120,7 @@ Lorsque vous avez une relation plusieurs à plusieurs entre des tables de type d
 - Ajoutez une table de pontage pour stocker les entités associées
 - Créez des relations de type un à plusieurs entre les trois tables
 - Configurez **une** relation bidirectionnelle pour permettre à la propagation de filtres de continuer jusqu’aux tables de type fait
-- Lorsqu’il n’est pas approprié d’avoir des valeurs ID manquantes, affectez la valeur TRUE à la propriété **Est nullable** des colonnes ID : l’actualisation des données échoue si des valeurs manquantes sont provisionnées
+- Lorsqu’il n’est pas approprié d’avoir des valeurs ID manquantes, affectez la valeur FALSE à la propriété **Est nullable** des colonnes ID : l’actualisation des données échoue si des valeurs manquantes sont provisionnées
 - Masquez la table de pontage (à moins qu’elle ne contienne des colonnes ou des mesures supplémentaires requises pour la création de rapports)
 - Masquez les colonnes ID qui ne conviennent pas pour la création de rapports (par exemple, lorsque les ID sont des clés de substitution)
 - S’il est judicieux de conserver une colonne ID visible, vérifiez qu’elle se trouve sur le côté « un » de la relation, et masquez toujours la colonne côté « plusieurs ». Il en résulte des performances de filtre optimales.

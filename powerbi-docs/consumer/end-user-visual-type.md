@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861322"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039107"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses. Certains types de visuel sont inclus dans Power BI et d’autres sont des *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports et aux tableaux de bord Power BI. 
@@ -59,7 +59,7 @@ Les graphiques combinés sont conseillés :
 - quand vous avez un graphique en courbes et un histogramme avec le même axe X ;
 - pour comparer plusieurs mesures avec des plages de valeurs différentes
 - pour illustrer la corrélation entre deux mesures dans le même visuel
-- pour vérifier si une mesure correspond à la cible qui est définie par une autre mesure ;
+- pour vérifier si une mesure correspond à la cible définie par une autre mesure ;
 - pour utiliser moins d’espace sur le canevas
 
 ### <a name="doughnut-charts"></a>Graphiques en anneau
@@ -139,6 +139,19 @@ Le visuel de matrice est un type de visuel de tableau (voir « Tableau » ci-d
 ![graphique en secteurs](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 Ils montrent la relation des parties par rapport à un tout. 
+
+### <a name="power-apps-visual"></a>Visuel Power Apps
+![Visuel Power Apps](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Les Concepteurs de rapports peuvent créer une application Power Apps et l’incorporer dans un rapport Power BI. Les consommateurs peuvent interagir avec ce visuel dans le rapport Power BI. 
+
+### <a name="qa-visual"></a>Visuel de Questions et réponses
+![Visuels Questions et réponses](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>À l’instar de [Questions et réponses dans les tableaux de bord](../power-bi-tutorial-q-and-a.md), le visuel Questions et réponses vous permet de poser des questions sur vos données en langage naturel. 
+
+Pour plus d’informations, consultez [Visuels Questions et réponses dans Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="ribbon-chart"></a>Graphique de ruban
 ![graphique de ruban](media/end-user-visual-type/power-bi-ribbon.png)

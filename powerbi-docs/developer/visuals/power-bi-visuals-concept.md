@@ -1,132 +1,134 @@
 ---
-title: Concept visuel Power BI
-description: L’article décrit comment un visuel s’intègre à Power BI
-author: zBritva
-ms.author: v-ilgali
+title: Concepts des visuels Power BI
+description: Cet article explique comment les visuels s’intègrent à Power BI et comment un utilisateur peut interagir avec un visuel dans Power BI.
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 36742917829013a6efca9d74f88b01bc686437a8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74700843"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925587"
 ---
-# <a name="power-bi-visual-concept"></a>Concept visuel Power BI
+# <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
-L’article explique comment un utilisateur et un visuel interagissent avec Power BI et comment un utilisateur interagit avec un visuel Power BI. Dans le diagramme, vous voyez quelles actions ont un impact direct sur le visuel ou via Power BI (par exemple, l’utilisateur sélectionne des signets).
+Cet article explique comment les visuels s’intègrent à Power BI et comment un utilisateur peut interagir avec un visuel dans Power BI. 
 
-![Visuel Power BI](./media/visual-concept.svg)
+La figure suivante montre comment sont traitées dans Power BI les actions basées sur des visuels courantes effectuées par un utilisateur, notamment la sélection d’un signet.
 
-## <a name="the-visual-gets-update-from-power-bi"></a>Le visuel obtient la mise à jour de Power BI
+![Diagramme des actions basées sur des visuels Power BI](./media/visual-concept.svg)
 
-Le visuel a la méthode `update` et cette méthode contient généralement la logique principale du visuel et est responsable du rendu du graphique ou de la visualisation des données.
+## <a name="visuals-get-updates-from-power-bi"></a>Les visuels obtiennent des mises à jour à partir de Power BI
 
-D’autres mises à jour accompagnent l’appel de la méthode`update`.
+Un visuel appelle une méthode `update` pour obtenir des mises à jour à partir de Power BI. La méthode `update` contient généralement la logique principale du visuel et est responsable du rendu d’un graphique ou la visualisation des données.
 
-### <a name="user-interacts-with-visual-through-power-bi"></a>L’utilisateur interagit avec le visuel via Power BI
+Les mises à jour sont déclenchées lorsque le visuel appelle la méthode `update`.
 
-* L’utilisateur ouvre le panneau des propriétés visuelles.
+## <a name="action-and-update-patterns"></a>Modèles d’action et de mise à jour
 
-    Power BI extrait les propriétés et les objets pris en charge à partir du `capabilities.json` du visuel et, pour recevoir les valeurs réelles des propriétés, Power BI appelle la méthode `enumerateObjectInstances` du visuel.
+Les actions et les mises à jour suivantes dans les visuels Power BI surviennent dans l’un de ces trois modèles :
 
-    Le visuel doit retourner les valeurs réelles des propriétés.
+* L’utilisateur interagit avec un visuel via Power BI.
+* L’utilisateur interagit directement avec le visuel.
+* Le visuel interagit avec Power BI.
 
-    Pour plus d’informations, [découvrez les fonctionnalités visuelles](capabilities.md).
+### <a name="user-interacts-with-a-visual-through-power-bi"></a>L’utilisateur interagit avec un visuel via Power BI
 
-* [L’utilisateur change la propriété du visuel](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) dans le panneau de format.
+* Un utilisateur ouvre le panneau des propriétés du visuel.
 
-    Après avoir modifié la valeur d’une propriété, Power BI appelle la méthode `update` du visuel et passe à la méthode de mise à jour les nouvelles `options` avec les nouvelles valeurs des objets.
+    Quand un utilisateur ouvre le panneau des propriétés du visuel, Power BI extrait les propriétés et les objets pris en charge à partir du fichier *capabilities.json* du visuel. Pour recevoir les valeurs réelles des propriétés, Power BI appelle la méthode `enumerateObjectInstances` du visuel. Le visuel retourne les valeurs réelles des propriétés.
 
-    Pour plus d’informations, [découvrez les objets et propriétés du visuel](objects-properties.md).
+    Pour plus d’informations, consultez [Fonctionnalités et propriétés des visuels Power BI](capabilities.md).
 
-* L’utilisateur redimensionne le visuel.
+* Un utilisateur [change une propriété du visuel](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) dans le panneau de format.
 
-    Quand un utilisateur change la taille du visuel, Power BI appelle la méthode `update` avec le nouvel objet `option`. Les options comportent un objet `viewport` imbriqué avec les nouvelles largeur et hauteur du visuel.
+    Quand un utilisateur change la valeur d’une propriété dans le panneau de format, Power BI appelle la méthode `update` du visuel. Power BI passe le nouvel objet `options` à la méthode `update`. Les objets contiennent les nouvelles valeurs.
 
-* L’utilisateur applique un filtre de rapport, de page ou de niveau visuel.
+    Pour plus d’informations, consultez [Objets et propriétés des visuels Power BI](objects-properties.md).
 
-    Power BI filtre les données en fonction des conditions de filtre et appelle la méthode `update` du visuel pour fournir de nouvelles données au visuel.
+* Un utilisateur redimensionne le visuel.
 
-    Le visuel obtient une nouvelle mise à jour des `options` avec de nouvelles données dans l’un des objets imbriqués. Cela dépend de la configuration du mappage de vues de données du visuel.
+    Quand un utilisateur change la taille d’un visuel, Power BI appelle la méthode `update` avec le nouvel objet `options`. Les objets `options` comportent des objets `viewport` imbriqués qui contiennent les nouvelles valeurs de largeur et de hauteur du visuel.
 
-    Pour plus d’informations, [découvrez les mappages de vues de données](dataview-mappings.md).
+* Un utilisateur applique un filtre au niveau du rapport, de la page ou du visuel.
 
-* L’utilisateur sélectionne un point de données dans un autre visuel du rapport.
+    Power BI filtre les données en fonction de conditions de filtre. Power BI appelle la méthode `update` du visuel pour le mettre à jour avec les nouvelles données.
 
-    Power BI filtre ou met en surbrillance les points de données sélectionnés et appelle la méthode `update` du visuel.
+    Le visuel obtient une nouvelle mise à jour des `options` objets lorsque de nouvelles données sont ajoutées à l’un des objets imbriqués. La méthode de mise à jour dépend de la configuration du mappage des vues de données du visuel.
 
-    Le visuel obtient de nouvelles données filtrées ou les mêmes données avec un tableau de mises en surbrillance.
+    Pour plus d’informations, consultez [Présentation du mappage des vues de données dans les visuels Power BI](dataview-mappings.md).
 
-    Pour plus d’informations, [découvrez comment mettre en surbrillance des données dans des visuels](highlight.md).
+* Un utilisateur sélectionne un point de données dans un autre visuel du rapport.
 
-* L’utilisateur sélectionne un signet dans le panneau des signets du rapport.
+    Lorsqu’un utilisateur sélectionne un point de données dans un autre visuel du rapport, Power BI filtre ou met en surbrillance les points de données sélectionnés puis appelle la méthode `update` du visuel. Le visuel obtient de nouvelles données filtrées ou les mêmes données avec un tableau de mises en surbrillance.
 
-    Deux actions peuvent alors se produire :
+    Pour plus d’informations, consultez [Mettre en surbrillance des points de données dans les visuels Power BI](highlight.md).
 
-    1. Power BI appelle la fonction passée inscrite par la méthode `registerOnSelectionCallback` et la fonction de rappel obtient des tableaux de sélections pour le signet correspondant.
+* Un utilisateur sélectionne un signet dans le panneau des signets du rapport.
 
-    2. Power BI appelle la méthode `update` avec l’objet filtre correspondant dans `options`.
+    Lorsqu’un utilisateur sélectionne un signet dans le panneau des signets d’un rapport, l’une des deux actions suivantes peut se produire :
 
-    Dans les deux cas, le visuel doit modifier l’état de visualisation en fonction des sélections reçues ou de l’objet filtre.
+    * Power BI appelle une fonction passée et enregistrée par la méthode `registerOnSelectionCallback`. La fonction de rappel obtient des tableaux de sélections pour le signet correspondant.
 
-    Pour plus d’informations sur les signets, [découvrez comment gérer les signets](filter-api.md).
+    * Power BI appelle la méthode `update` avec un objet `filter` correspondant au sein de l’objet `options`.
 
-    Pour plus d’informations sur les filtres, [découvrez comment les visuels Power BI peuvent filtrer les données dans d’autres visuels](filter-api.md).
+    Dans les deux cas, le visuel doit modifier son état en fonction des sélections reçues ou de l’objet `filter`.
 
-### <a name="user-interacts-with-visual-directly"></a>L’utilisateur interagit directement avec le visuel
+    Pour plus d’informations sur les signets et les filtres, consultez [API Filtres de visuels dans les visuels Power BI](filter-api.md).
 
-* L’utilisateur pointe la souris sur l’élément de données
+### <a name="user-interacts-with-the-visual-directly"></a>L’utilisateur interagit directement avec le visuel
 
-    Le visuel peut afficher des informations supplémentaires sur le point de données via l’API des info-bulles Power BI.
-    L’utilisateur pointe la souris sur l’élément visuel. Le visuel peut gérer l’événement et afficher des données sur l’élément info-bulle.
+* Un utilisateur pointe la souris sur un élément de données.
 
-    Le visuel peut afficher une info-bulle standard ou une info-bulle de page de rapport.
+    Un visuel peut afficher des informations supplémentaires sur un point de données via l’API des info-bulles Power BI. Quand un utilisateur pointe la souris sur un élément visuel, le visuel peut gérer l’événement et afficher des données sur l’élément info-bulle associé. Le visuel peut afficher une info-bulle standard ou une info-bulle de page de rapport.
 
-    Pour plus d’informations, lisez [Guide pratique pour ajouter des info-bulles](add-tooltips.md).
+    Pour plus d’informations, consultez [Info-bulles dans les visuels Power BI](add-tooltips.md).
 
-* L’utilisateur modifie les propriétés visuelles (par exemple, il développe l’arborescence et le visuel enregistre l’état dans les propriétés)
+* Un utilisateur modifie les propriétés du visuel. (Par exemple, un utilisateur développe une arborescence et le visuel enregistre l’état dans ses propriétés.)
 
-    Le visuel peut enregistrer des valeurs de propriétés via l’API Power BI, par exemple lorsque l’utilisateur interagit avec le visuel. Le visuel doit aussi enregistrer ou mettre à jour les valeurs de propriétés. Pour cela, le visuel peut appeler la méthode `presistProperties`.
+    Un visuel peut enregistrer des valeurs de propriétés via l’API Power BI. Par exemple, lorsqu’un utilisateur interagit avec le visuel et que ce dernier doit enregistrer ou mettre à jour des valeurs de propriétés, le visuel peut appeler la méthode `presistProperties`.
 
-* L’utilisateur clique sur le lien de l’URL.
+* Un utilisateur sélectionne une URL.
 
-    Par défaut, le visuel ne peut pas ouvrir l’URL. Pour ouvrir l’URL dans le nouvel onglet, le visuel doit appeler la méthode `launchURL` et passer l’URL en tant que paramètre.
+    Par défaut, un visuel ne peut pas ouvrir directement une URL. Pour ouvrir une URL dans un nouvel onglet, le visuel peut appeler la méthode `launchUrl` et passer l’URL en tant que paramètre.
 
-    Pour plus d’informations, consultez [API d’URL de lancement](launch-url.md).
+    Pour plus d’informations, consultez [Créer une URL de lancement](launch-url.md).
 
-* L’utilisateur applique un filtre via le visuel
+* Un utilisateur applique un filtre sur le visuel.
 
-    Le visuel appelle `applyJSONFilter` et passe des conditions de filtre au filtre pour filtrer les données dans un autre visuel.
+    Un visuel peut appeler la méthode `applyJsonFilter` et passer des conditions pour filtrer les données d’autres visuels. Plusieurs types de filtres sont disponibles, notamment les filtres De base, Avancés et Tuple.
 
-    Le visuel peut utiliser plusieurs types de filtres, par exemple un filtre de base, un filtre avancé, un filtre de tuple.
+    Pour plus d’informations, consultez [API Filtres de visuels dans les visuels Power BI](filter-api.md).
 
-    Pour plus d’informations sur les filtres, [découvrez comment les visuels Power BI peuvent filtrer les données dans d’autres visuels](filter-api.md).
+* Un utilisateur sélectionne des éléments dans le visuel.
 
-* L’utilisateur clique sur des éléments ou les sélectionne sur le visuel.
+    Pour plus d’informations sur les sélections dans un visuel Power BI, consultez [Ajouter de l’interactivité grâce à des sélections de visuels Power BI](selection-api.md).
 
-    Pour plus d’informations sur les sélections, [découvrez le mode d’interaction du visuel](selection-api.md).
+### <a name="visual-interacts-with-power-bi"></a>Le visuel interagit avec Power BI
 
-### <a name="the-visual-interacts-with-power-bi"></a>Le visuel interagit avec Power BI
+* Un visuel demande plus de données à Power BI.
 
-* Le visuel demande plus de données à Power BI.
+    Un visuel traite les données en plusieurs parties. La méthode de l’API `fetchMoreData` demande le fragment de données suivant du jeu de données.
 
-    Le visuel peut traiter les données en plusieurs parties. La méthode de l’API FetchMoreData demande le fragment suivant du jeu de données.
+    Pour plus d’informations, consultez [Extraire davantage de données de Power BI](fetch-more-data.md).
 
-    Pour plus d’informations sur `fetchMoreData`, [découvrez comment extraire davantage de données de Power BI](fetch-more-data.md)
+* Le service d’événements se déclenche.
 
-* Service d’événements
+    Power BI permet d’exporter un rapport au format PDF ou d’envoyer un rapport par e-mail (s’applique uniquement aux visuels certifiés). Pour notifier Power BI que le rendu est terminé et que le visuel est prêt à être capturé au format PDF ou envoyé par e-mail, le visuel doit appeler l’API d’événements de rendu.
 
-    Power BI peut exporter des rapports au format PDF ou les envoyer par e-mail (seuls les visuels certifiés sont pris en charge). Pour indiquer à Power BI que le rendu est terminé et qu’il est prêt à capturer le fichier PDF/l’e-mail, le visuel doit appeler l’API d’événements de rendu.
+    Pour plus d’informations, consultez [Exporter des rapports Power BI au format PDF](../../consumer/end-user-pdf.md).
 
-    Pour plus d’informations, [découvrez l’exportation de rapports de Power BI au format PDF](../../consumer/end-user-pdf.md)
-
-    Recherchez d’autres [informations sur le service d’événements](event-service.md)
+    Pour en savoir plus sur le service d’événements, consultez [Afficher des événements dans des visuels Power BI](event-service.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous êtes un développeur web et souhaitez créer vos propres visualisations et les ajouter à AppSource ? Consultez [Développement d’un visuel Power BI](./custom-visual-develop-tutorial.md) et découvrez comment [publier des visuels Power BI sur AppSource](../office-store.md).
+Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ? Reportez-vous aux articles suivants :
+
+* [Développer un visuel Power BI](./custom-visual-develop-tutorial.md)
+* [Publier des visuels Power BI sur l’Espace partenaires](../office-store.md)

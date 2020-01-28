@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 77be727de3cda1d3b6fd5c34b6e572b1d505fc54
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872806"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76282003"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Épingler une vignette à un tableau de bord à partir de Questions et réponses
 ## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
@@ -53,7 +53,7 @@ Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vent
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Quand vous commencez à taper une question, Q&R recherche immédiatement la meilleure réponse dans tous les jeux de données associés au tableau de bord actif.  Le « tableau de bord actuel » est le tableau de bord répertorié dans le volet de navigation supérieur. Par exemple, cette question est posée dans le tableau de bord **Exemple Analyse de la vente au détail** qui fait partie de l’espace de travail **mihart**.
 
-  ![vues miniatures](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
+  ![vues miniatures](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Comment la fonctionnalité Q&R sait-elle quels jeux de données utiliser ?**  Questions et réponses a accès à tous les jeux de données dont au moins une visualisation est épinglée au tableau de bord.
 
 * **Vous ne voyez pas la zone de questions** ? Contactez votre administrateur Power BI. L’administrateur a la possibilité de désactiver Questions et réponses.
