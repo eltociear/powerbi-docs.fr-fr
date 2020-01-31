@@ -7,38 +7,33 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8aeae0075ed32a832c27f475ef3786b7df76576c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 141dabdce7816d21c49d8c7f98d1438c2fc20e8d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761769"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709837"
 ---
 # <a name="enable-bidirectional-cross-filtering-for-directquery-in-power-bi-desktop"></a>Activer le filtrage croisé bidirectionnel pour DirectQuery dans Power BI Desktop
 
-Lorsqu’ils filtrent les tables afin de créer la vue de données appropriée, les créateurs de rapports (et les modélisateurs de données) font face à des difficultés pour déterminer comment le filtrage est appliqué au rapport. Le contexte de filtre d’une table a été maintenu d’un côté de la relation mais pas de l’autre, nécessitant ainsi souvent des formules DAX complexes pour obtenir les résultats souhaités.
+Quand ils filtrent les tables pour voir les données dont ils ont besoin, les créateurs de rapports et les modélisateurs de données ont parfois du mal à savoir comment appliquer les filtres à un rapport. Avant, le contexte de filtre de la table était conservé d’un seul côté de la relation. Cette conception amenait souvent à créer une formule DAX complexe pour obtenir les résultats souhaités.
 
-Avec le filtrage bidirectionnel croisé, les créateurs de rapports (et les modélisateurs de données) peuvent désormais mieux contrôler la façon dont les filtres sont appliqués sur les tables liées, ces filtres étant appliqués des *deux* côtés de la relation de table. Pour cela, le contexte de filtre doit être propagé vers une deuxième table liée de l’autre côté de la relation de table.
+Avec le filtrage croisé bidirectionnel, les créateurs de rapports et les modélisateurs de données peuvent désormais mieux contrôler l’application des filtres avec les tables associées. Le filtrage croisé bidirectionnel leur permet d’appliquer des filtres des *deux* côtés d’une relation de table. Il est possible d’appliquer les filtres en propageant le contexte de filtre vers une deuxième table associée de l’autre côté de la relation de table.
 
-## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Livre blanc détaillé pour le filtrage croisé bidirectionnel
-Un [livre blanc détaillé](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) explique le filtrage croisé bidirectionnel dans Power BI Desktop. (Ce livre blanc aborde également SQL Server Analysis Services 2016, tous les deux ayant le même comportement).
+## <a name="enable-bidirectional-cross-filtering-for-directquery"></a>Activer le filtrage croisé bidirectionnel pour DirectQuery
 
-* Télécharger le livre blanc sur le [filtrage croisé bidirectionnel pour Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+Vous pouvez activer le filtrage croisé dans la boîte de dialogue **Modifier la relation**. Pour activer le filtrage croisé dans une relation, vous devez configurer les options suivantes :
 
-## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Activer le filtrage croisé bidirectionnel pour DirectQuery
+* Définissez l’option **Direction du filtrage croisé** sur **À double sens**.
+* Sélectionnez **Appliquer le filtre de sécurité dans les deux directions**.
 
-Pour activer le filtrage croisé, dans la boîte de dialogue **Modifier la relation** d’une relation, les éléments suivants doivent être activés :
-
-* La valeur de **Direction du filtrage croisé** doit être **Les deux**.
-* L’option **Appliquer le filtre de sécurité dans les deux directions** doit également être activée.
-
-  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![Configurez le filtrage bidirectionnel dans Power BI Desktop.](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Lors de la création de formules DAX de filtrage croisé dans Power BI Desktop, utilisez le *nom d’utilisateur principal* (qui est souvent le même que le nom de connexion de l’utilisateur, par exemple <em>joe@contoso.com</em>), plutôt que le *nom d’utilisateur*. Par conséquent, vous devez peut-être créer une table liée qui mappe le *nom d’utilisateur* (ou l’ID d’employé, par exemple) au *nom d’utilisateur principal*.
+> Quand vous créez des formules DAX de filtrage croisé dans Power BI Desktop, utilisez *UserPrincipalName*. Ce champ correspond souvent au nom de connexion d’un utilisateur, par exemple <em>joe@contoso.com</em>, au lieu de *UserName*. Par conséquent, vous devrez peut-être créer une table associée qui mappe *UserName* ou *EmployeeID* à *UserPrincipalName*.
 
-Pour plus d’informations et pour obtenir des exemples de fonctionnement du filtrage croisé bidirectionnel, consultez le [livre blanc](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentionné plus haut dans cet article.
+Pour obtenir plus d’informations et des exemples d’utilisation du filtrage croisé bidirectionnel, consultez le [livre blanc sur le filtrage croisé bidirectionnel pour Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

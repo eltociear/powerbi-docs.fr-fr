@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 56ff7d09530030d1a1ae046a3439022cbf638b9d
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
+ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760569"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309105"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Créer des relations de modèle dans Power BI Desktop
 
@@ -227,4 +227,6 @@ La liste suivante classe les performances de propagation de filtre, des plus rap
 
 - [Comprendre le schéma en étoile et son importance pour Power BI](guidance/star-schema.md)
 - [Conseils sur les relations Plusieurs-à-plusieurs](guidance/relationships-many-to-many.md)
+- Vidéo : [Les comportements appropriés et déconseillés concernant les relations Power BI](https://youtu.be/78d6mwR8GtA)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

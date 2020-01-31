@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836660"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537804"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -77,6 +77,10 @@ Les **Auto Insights** sont maintenant appelées *Quick Insights*.
 
 **content view (affichage du contenu)**
 
+**Variable continue** : une variable continue peut être n’importe quelle valeur comprise entre ses limites minimale et maximale ; dans le cas contraire, il s’agit d’une variable discrète. La température, le poids, l’âge et l’heure sont des exemples. Les variables continues peuvent inclure des fractions ou des parties de la valeur. Le nombre total de skateboards bleus vendus est une variable discrète dans la mesure où nous ne pouvons pas vendre un demi-skateboard.
+
+**Corrélation** : une corrélation nous indique comment le comportement des éléments est lié.  Si leurs modèles d’augmentation et de diminution sont similaires, ils sont corrélés positivement. Si leurs modèles sont opposés, ils sont corrélés négativement. Par exemple, si les ventes de nos skateboards rouges augmentent chaque fois que nous faisons une campagne marketing à la télévision, les ventes des skateboards rouges et la campagne à la télévision sont corrélées positivement.
+
 **filtrage croisé** S’applique aux interactions visuelles. Le filtrage croisé supprime les données non applicables. Par exemple, le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer un filtrage croisé du graphique en courbes. Le graphique en courbes affiche alors uniquement les points de données qui concernent le segment Moderation.
 
 **sélection croisée** S’applique aux interactions visuelles. La sélection croisée conserve tous les points de données d’origine, mais grise ceux qui ne s’appliquent pas à votre sélection. Par exemple, le fait de sélectionner **Moderation** dans le graphique en anneau a pour effet d’effectuer une sélection croisée de l’histogramme. L’histogramme grise toutes les données qui ne concernent pas le segment Moderation et sélectionne toutes les données qui concernent le segment Moderation.
@@ -93,7 +97,7 @@ Les **Auto Insights** sont maintenant appelées *Quick Insights*.
 
 **le modèle de données Modèle de données Excel** dans le contenu Power BI, un modèle de données fait référence à une carte de structures de données dans un format de table. Le modèle de données affiche les relations utilisées pour créer des bases de données. Les concepteurs de rapports, les administrateurs et les développeurs créent et utilisent des modèles de données pour créer un contenu Power BI.
 
-**flux de données** Les flux de données sont utilisés pour ingérer, transformer, intégrer et enrichir du Big Data en définissant des connexions de source de données, une logique ETL, des planifications d’actualisation et bien plus encore. Anciennement pool de données.
+**flux de données** Les flux de données sont utilisés pour ingérer, transformer, intégrer et enrichir du Big Data en définissant des connexions de source de données, une logique ETL, des planifications d’actualisation et bien plus encore. Anciennement, pool de données.
 
 **dataset (jeu de données)** ou **data source (source de données)** Un **dataset (jeu de données)** est une collection de données utilisées pour créer des visualisations et des rapports.
 
@@ -102,8 +106,9 @@ Les **Auto Insights** sont maintenant appelées *Quick Insights*.
 L’outil Power BI gratuit **Desktop** ou **Power BI Desktop** utilisé principalement par des concepteurs de rapports, administrateurs et développeurs. 
 
 
-
 **diamond (losange)** Power BI Premium. Forme de l’icône représentant un espace de travail qui est un espace de travail de capacité Premium.
+
+**Dimension** : les dimensions sont des données (texte) de catégories. Une dimension décrit une personne, un objet, un élément, des produits, un lieu et une heure. Dans un jeu de données, les dimensions sont un moyen de regrouper des *mesures* en catégories utiles. Pour notre entreprise de skateboards, certaines dimensions peuvent consister à regarder les ventes (une mesure) par modèle, par couleur, par pays ou par campagne marketing.   
 
 **monter, descendre dans la hiérarchie, extraction** dans Power BI, utilisez descendre dans la hiérarchie et monter pour faire référence à la possibilité d’explorer le niveau de détail suivant dans un rapport ou un visuel. Utilisez l’extraction pour faire référence à la possibilité de sélectionner une partie d’un élément visuel et d’être dirigé vers une autre page du rapport, filtrée sur les données relatives à la partie de l’élément visuel que vous avez sélectionnée dans la page d’origine.
 L’exploration des détails signifie généralement que les enregistrements sous-jacents sont affichés.
@@ -169,6 +174,8 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 ## <a name="m"></a>M
 
+**Mesure** : une mesure est un champ (numérique) quantitatif qui peut être utilisé pour effectuer des calculs. La somme, la moyenne et le minimum sont des calculs courants. Par exemple, si notre société fabrique et vend des skateboards, nos mesures peuvent être le nombre de skateboards vendus et le bénéfice moyen par an.
+
 **Mobile app (Application mobile)** Applications qui vous permettent d’exécuter Power BI sur des appareils iOS, Android et Windows.
 
 **modeling (modélisation)** [Power BI Desktop] Obtention des données auxquelles vous êtes connecté, prêtes pour une utilisation dans Power BI. Ceci inclut la création de relations entre des tables dans plusieurs sources de données, la création de mesures et l’affectation de métriques.
@@ -177,7 +184,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 ## <a name="n"></a>N
 
-**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)* . Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
+**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)*. Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
 
 **volet de navigation** ou **volet nav** les contrôles le long du bord gauche du service Power BI.
 
@@ -213,7 +220,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 **épingler, désépingler** l’action exécuter par un *concepteur de rapports* consistant à placer un visuel, généralement à partir d’un rapport, sur un tableau de bord.
 
-**Power BI**, **Power BI service (service Power BI)** , **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *Power BI service (service Power BI)* et *Power BI Mobile*, après la première mention du nom complet du produit.
+**Power BI**, **Power BI service (service Power BI)**, **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *Power BI service (service Power BI)* et *Power BI Mobile*, après la première mention du nom complet du produit.
 
 **Power BI Desktop** Également appelé *Desktop*. L’application Windows gratuite de Power BI est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Utilisée par les administrateurs et les concepteurs de rapports. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md).
 
@@ -294,7 +301,7 @@ Sur les appareils mobiles, « partager » peut faire référence à la fonctionn
 
 **streaming data (streaming de données)** Voir *streaming en temps réel*.
 
-**subscriptions (abonnements)** , **Subscribe (s’abonner)**  
+**subscriptions (abonnements)**, **Subscribe (s’abonner)**  
 Vous pouvez vous abonner à des pages de rapport, des applications et des tableaux de bord, et recevoir des e-mails contenant une capture instantanée. Nécessite une licence Power BI Pro.
 
 **summarization (totalisation)** [Power BI Desktop] Opération qui est appliquée aux valeurs d’une même colonne.
@@ -302,6 +309,8 @@ Vous pouvez vous abonner à des pages de rapport, des applications et des tablea
 ## <a name="t"></a>T
 **tiles (vignettes)**  
 Les tableaux de bord Power BI contiennent des vignettes de rapport.
+
+**Séries chronologiques** : une série chronologique est un moyen de montrer le temps sous forme de points de données successifs. Ces points de données peuvent être des incréments, comme des secondes, des heures, des mois ou des années.  
 
 
 ## <a name="u"></a>U

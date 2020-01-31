@@ -1,27 +1,27 @@
 ---
-title: Prise en main de la mise en forme des couleurs et des propriétés d’axe
-description: Prise en main de la mise en forme des couleurs et des propriétés d’axe
+title: Bien démarrer avec la mise en forme des visualisations de rapport
+description: Commencer à utiliser les options de mise en forme des visualisations de rapport
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762252"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540618"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Guide pratique pour la mise en forme des couleurs et des propriétés d’axe
-Dans **Power BI**, vous pouvez modifier la couleur des séries de données, des points de données et même l’arrière-plan des visualisations. Vous pouvez également modifier la façon dont les axes X et Y sont présentés, ce qui vous donne un contrôle total de la façon dont vos tableaux de bord et vos rapports s’affichent.
+# <a name="getting-started-with-the-formatting-pane"></a>Bien démarrer avec le volet de mise en forme
+Si vous avez des autorisations de modification sur un rapport, vous avez de nombreuses options de mise en forme à disposition. Dans les rapports **Power BI**, vous pouvez changer la couleur des séries de données, des points de données et même l’arrière-plan des visualisations. Vous pouvez changer la présentation de l’axe x et de l’axe y. Vous pouvez même mettre en forme les propriétés de police des visualisations, des formes et des titres, ce qui vous donne un contrôle total sur l’apparence de vos rapports.
 
-Pour commencer, sélectionnez un **rapport** dans le volet **Mon espace de travail** . Ensuite, dans la zone de menu supérieure, sélectionnez **Modifier le rapport**.  
+Pour commencer, ouvrez un rapport dans Power BI Desktop ou dans le service Power BI. Les deux offrent des options de mise en forme quasiment identiques. Quand vous ouvrez un rapport dans le service Power BI, veillez à sélectionner **Modifier le rapport** dans la barre de menus.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![barre de menus montrant l’option Modifier](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 Quand vous modifiez un rapport alors qu’une visualisation est sélectionnée, le volet **Visualisations** s’affiche, ce qui vous permet d’ajouter ou de modifier des visualisations. Sous les visualisations disponibles se trouvent trois icônes : l’icône **Champs** (représentant des barres les unes sur les autres), l’icône **Format** (représentant un pinceau) et l’icône **Analytique** (représentant une loupe). Dans l’image ci-dessous, l’icône **Champs** est sélectionnée, ce qu’indique une barre jaune située sous l’icône.
 

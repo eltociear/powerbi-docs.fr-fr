@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223873"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710195"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
 
@@ -45,7 +45,7 @@ Avant de pouvoir configurer Power BI avec un compte Azure Data Lake Storage Gen2
 1. Le compte de stockage doit être créé dans le même locataire AAD que votre locataire Power BI.
 2. Le compte de stockage doit être créé dans la même région que votre locataire Power BI. Pour savoir où se trouve votre locataire Power BI, consultez [Où est situé mon locataire Power BI ?](service-admin-where-is-my-tenant-located.md).
 3. Le compte de stockage doit avoir la fonctionnalité *Espace de noms hiérarchique* activée.
-4. Le service Power BI doit avoir le rôle *Lecteur* sur le compte de stockage.
+4. Le service Power BI doit avoir les rôles *Lecteur* et *Accès aux données* sur le compte de stockage.
 5. Un système de fichiers nommé **powerbi** doit être créé.
 6. Les services Power BI doivent être autorisés dans le système de fichiers **powerbi** que vous créez.
 
@@ -59,16 +59,13 @@ Suivez les étapes de l’article [Créer un compte de stockage Azure Data Lake 
 2. Veillez à activer la fonctionnalité d’espace de noms hiérarchique
 3. Il est recommandé de définir le paramètre de réplication **Stockage géoredondant avec accès en lecture (RA-GRS)**
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Accorder le rôle Lecteur au service Power BI
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Accorder au service Power BI les rôles Lecteur et Accès aux données
 
-Ensuite, vous devez accorder au service Power BI un rôle Lecteur dans votre compte de stockage créé. Il s’agit d’un rôle intégré, par conséquent, les étapes sont simples. 
+Ensuite, vous devez accorder au service Power BI les rôles Lecteur et Accès aux données sur le compte de stockage que vous avez créé. Comme ce sont deux rôles intégrés, les étapes sont simples. 
 
 Suivez les étapes indiquées dans [Affecter un rôle RBAC intégré](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
-Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez le rôle **Lecteur** à attribuer au service Power BI. Puis, utilisez Rechercher pour localiser **Service Power BI**. L’illustration suivante montre le rôle **Lecteur** attribué au service Power BI.
-
-![Rôle Lecteur attribué au service Power BI](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez les rôles **Lecteur** et **Accès aux données** à attribuer au service Power BI. Puis, utilisez Rechercher pour localiser **Service Power BI**. 
 
 > [!NOTE]
 > Accordez au moins 30 minutes pour que l’autorisation se propage à Power BI à partir du portail. Chaque fois que vous modifiez des autorisations dans le portail, prévoyez 30 minutes pour que ces autorisations soient reflétées dans Power BI. 

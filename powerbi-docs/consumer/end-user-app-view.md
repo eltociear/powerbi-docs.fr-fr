@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851284"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537588"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -48,12 +48,13 @@ Vous pouvez également rechercher et installer des applications à partir de Mic
 1. Sélectionnez **Applications**  > **Obtenir des applications**. 
    
     ![Icône Obtenir des applications](./media/end-user-app-view/power-bi-get-app2.png)    
-2. Dans AppSource, vous pouvez chercher sous **Mon organisation** pour affiner les résultats et trouver l’application souhaitée.
+2. Dans AppSource, cherchez sous **Mon organisation** pour affiner les résultats et trouver l’application souhaitée.
    
     ![Dans AppSource sous Mon organisation](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. Sélectionnez **Obtenir maintenant** pour l’ajouter à votre liste de contenu Applications. 
 
-## <a name="get-an-app-from-the-microsoft-appsource-website-httpsappsourcemicrosoftcom"></a>Obtenir une application à partir du site web Microsoft AppSource (https://appsource.microsoft.com)
+## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Obtenir une application à partir du site web Microsoft AppSource 
+
 Dans cet exemple, nous allons ouvrir un des exemples d’applications Microsoft. Sur AppSource, vous trouverez des applications pour de nombreux services que vous utilisez pour votre activité.  Des services comme Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, etc. Pour plus d’informations, consultez [Applications pour les services que vous utilisez avec Power BI](../service-connect-to-services.md). 
 
 1. Dans un navigateur, ouvrez https://appsource.microsoft.com, puis sélectionnez **Applications Power BI**.
@@ -92,12 +93,36 @@ Dans cet exemple, nous allons ouvrir un des exemples d’applications Microsoft.
     ![Explorer avec des exemples de données](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagir avec les tableaux de bord et rapports dans l’application
 Prenez le temps d’explorer les données dans les tableaux de bord et les rapports qui composent l’application. Vous avez accès à toutes les interactions Power BI standard, comme le filtrage, la mise en évidence, le tri et l’exploration.  Vous ne voyez pas encore très bien la différence entre les tableaux de bord et les rapports ?  Lisez l’[article sur les tableaux de bord](end-user-dashboards.md) et l’[article sur les rapports](end-user-reports.md).  
 
+## <a name="update-an-app"></a>Mettre à jour une application 
 
+De temps à autre, les créateurs d’applications sont susceptibles de publier de nouvelles versions de leurs applications. La façon dont vous obtenez la nouvelle version dépend de la façon dont vous avez reçu l’original. 
+
+* Si vous avez reçu l’application de votre organisation, la mise à jour de la nouvelle version est entièrement transparente : vous n’avez rien à faire. 
+
+* Si vous avez obtenu l’application auprès d’AppSource, la prochaine fois que vous ouvrez l’application, vous voyez une bannière de notification. La notification vous informe qu’une nouvelle version est disponible. 
+
+    1. Sélectionnez **Obtenir** pour mettre à jour.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. Quand vous êtes invité à installer l’application mise à jour, sélectionnez **Installer**. 
+
+        ![Installer la mise à jour](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Comme vous avez déjà une version de cette application, décidez si vous souhaitez remplacer la version existante ou si vous souhaitez installer l’application mise à jour dans un nouvel espace de travail.   
+
+        ![Remplacer l’ancienne version de l’application](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > L’installation d’une nouvelle version remplace toutes les modifications que vous avez apportées aux rapports et aux tableaux de bord. Pour conserver vos rapports et tableaux de bord mis à jour, vous pouvez les enregistrer sous un autre nom ou à un autre emplacement avant d’effectuer l’installation. 
+
+    4. Une fois que vous avez installé la version mise à jour, sélectionnez **Mettre à jour l’application** pour effectuer le processus de mise à jour. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Étapes suivantes

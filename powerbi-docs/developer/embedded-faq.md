@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 7670f8147af54f3b3a6c2c0eba34bb3ca7843eda
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264085"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539046"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -67,8 +67,8 @@ Voici une liste non exhaustive des différences de fonctionnalités qui existent
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | Capacité Azure SKU A | Capacité O365 SKU EM | Capacité O365 SKU P |
 | Incorporer des artefacts provenant d’un espace de travail Power BI | Oui | Oui | Oui |
-| Utiliser des rapports Power BI dans une application incorporée - SaaS | Non | Oui | Oui |
-| Utiliser des rapports Power BI dans une application incorporée - PaaS | Oui | Oui | Oui |
+| Consommer des rapports Power BI dans une application incorporée pour votre organisation  | Non | Oui | Oui |
+| Consommer des rapports Power BI dans une application incorporée pour vos clients | Oui | Oui | Oui |
 | Utiliser des rapports Power BI dans SharePoint | Non | Oui | Oui |
 | Utiliser des rapports Power BI dans Dynamics | Non | Oui | Oui |
 | Utiliser des rapports Power BI dans Teams (à l’exception de l’application mobile) | Non | Oui | Oui |
@@ -122,7 +122,7 @@ L’utilisateur peut résoudre ce problème en appelant [l’API refreshUserPerm
 
 La région de votre locataire PBI est accessible sur le portail PBI.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > À propos de Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > À propos de Power BI
 
 ![À propos de Power BI](media/embedded-faq/about-01.png)
 ![Région du locataire](media/embedded-faq/tenant-location-01.png)
@@ -224,9 +224,9 @@ Ce cas de figure a son importance quand vous ajoutez le principal du service com
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Quand utiliser un ID d’application ou un ID d’objet de principal du service ?
 
-L’ **[ID d’application](embed-sample-for-customers.md#application-id)**  est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
+L’**[ID d’application](embed-sample-for-customers.md#application-id)** est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
 
-Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’ **[ID d’objet de principal du service](embed-service-principal.md#how-to-get-the-service-principal-object-id)** .
+Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’**[ID d’objet de principal du service](embed-service-principal.md#how-to-get-the-service-principal-object-id)**.
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Est-il possible de gérer une passerelle de données locale avec un principal du service ?
 
@@ -246,7 +246,7 @@ De plus, vous ne pouvez pas utiliser du contenu en tant qu’utilisateur dans de
 
 [Performances de Power BI Embedded](embedded-performance-best-practices.md)
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Licences
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Comment acheter Power BI Embedded ?
 

@@ -7,30 +7,28 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1f54ce3a6bfd69caa3f386b7684e3df7f725523d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74164066"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709547"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Connecter un rapport à un jeu de données à l’aide de la liaison dynamique 
 
-Quand un rapport est connecté à un jeu de données, vous pouvez utiliser la liaison dynamique. La connexion entre le rapport et le jeu de données est appelée *liaison*. Lorsque la liaison est déterminée au point d’incorporation, par opposition à une prédétermination antérieure, la liaison est connue sous le nom de [liaison dynamique](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLate_binding&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C5d5b0d2d62cf4818f0c108d7635b151e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637087115150775585&sdata=AbEtdJvgy4ivi4v4ziuui%2Bw2ibTQQXBQNYRKbXn5scA%3D&reserved=0).
- 
+Quand un rapport est connecté à un jeu de données, vous pouvez utiliser la liaison dynamique. La connexion entre le rapport et le jeu de données est appelée *liaison*. Quand la liaison est déterminée au point d’incorporation, et non pas prédéterminée auparavant, la liaison est appelée « liaison dynamique ».
+
 Lors de l’incorporation d’un rapport Power BI à l’aide de la *liaison dynamique*, vous pouvez connecter le même rapport à différents jeux de données en fonction des informations d’identification de l’utilisateur.
- 
+
 Cela signifie que vous pouvez utiliser un rapport pour afficher des informations différentes, en fonction du jeu de données auquel il est connecté. Par exemple, un rapport qui indique les valeurs de vente au détail peut être connecté à différents jeux de données du détaillant et produire des résultats différents, en fonction du jeu de données du détaillant auquel il est connecté.
- 
+
 Le rapport et le jeu de données n’ont pas besoin de se trouver dans le même espace de travail. Les deux espaces de travail (celui contenant le rapport et celui contenant le jeu de données) doivent être affectés à une [capacité](azure-pbie-create-capacity.md).
 
 Dans le cadre du processus d’incorporation, assurez-vous que vous *générez un jeton avec des autorisations suffisantes* et *ajustez l’objet de configuration*.
 
-
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Génération d’un jeton avec des autorisations suffisantes
 
 La liaison dynamique est prise en charge dans les deux scénarios : *Incorporation pour votre organisation* et *Incorporation pour vos clients*. Le tableau ci-dessous décrit les considérations relatives à chaque scénario.
-
 
 |Scénario  |Propriété des données  |Jeton  |Configuration requise  |
 |---------|---------|---------|---------|

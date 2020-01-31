@@ -6,69 +6,80 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863482"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537903"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
 
-La service Power BI peut automatiquement rechercher des insights dans vos tableaux de bord ou rapports.
+Vous pouvez demander à Power BI d’examiner vos données et de rechercher des tendances et des modèles intéressants. Ces tendances et ces modèles sont présentés sous forme de visuels, qui sont appelés *insights*. 
+
+Pour découvrir comment utiliser les insights, consultez [Insights Power BI](end-user-insights.md)
+
+![Un ensemble d’insights](media/end-user-insight-types/power-bi-insight.png)
 
 ## <a name="how-does-insights-work"></a>Comment fonctionnent les informations ?
-Power BI recherche rapidement différents sous-ensembles de votre jeu de données. Au fil de la recherche, Power BI applique un ensemble d’algorithmes sophistiqués pour découvrir des insights potentiellement intéressants. Power BI analyse autant que possible le jeu de données dans le délai imparti.
+Power BI recherche rapidement différents sous-ensembles de votre jeu de données. Au fil de la recherche, Power BI applique un ensemble d’algorithmes sophistiqués pour découvrir des insights potentiellement intéressants. Les *consommateurs* Power BI peuvent exécuter des insights sur les vignettes des tableaux de bord.
 
-Vous pouvez exécuter des informations sur un jeu de données ou une vignette de tableau de bord.   
+## <a name="some-terminology"></a>Un peu de terminologie
+Power BI utilise des algorithmes statistiques pour découvrir des insights. Les algorithmes sont listés et décrits dans la section suivante de cet article. Avant d’accéder aux algorithmes, voici les définitions de certains termes qui ne vous sont pas nécessairement familiers. 
 
-## <a name="what-types-of-insights-can-we-find"></a>Quels types d’informations pouvons-nous trouver ?
-Voici certains des algorithmes que nous utilisons :
+* **Mesure** - Une mesure est un champ (numérique) quantitatif qui peut être utilisé pour effectuer des calculs. La somme, la moyenne et le minimum sont des calculs courants. Par exemple, si notre société fabrique et vend des skateboards, nos mesures peuvent être le nombre de skateboards vendus et le bénéfice moyen par an.  
+* **Dimension** - Les dimensions sont des données (texte) de catégories. Une dimension décrit une personne, un objet, un élément, des produits, un lieu et une heure. Dans un jeu de données, les dimensions sont un moyen de regrouper des *mesures* en catégories utiles. Pour notre entreprise de skateboards, certaines dimensions peuvent consister à regarder les ventes (une mesure) par modèle, par couleur, par pays ou par campagne marketing.   
+* **Corrélation** - Une corrélation nous indique comment le comportement des éléments est lié.  Si leurs modèles d’augmentation et de diminution sont similaires, ils sont corrélés positivement. Si leurs modèles sont opposés, ils sont corrélés négativement. Par exemple, si les ventes de nos skateboards rouges augmentent chaque fois que nous faisons une campagne marketing à la télévision, les ventes des skateboards rouges et la campagne à la télévision sont corrélées positivement.
+* **Séries chronologiques** - Une série chronologique est un moyen de montrer le temps sous forme de points de données successifs. Ces points de données peuvent être des incréments, comme des secondes, des heures, des mois ou des années.  
+* **Variable continue** - Une variable continue peut être n’importe quelle valeur comprise entre ses limites minimale et maximale ; dans le cas contraire, il s’agit d’une variable discrète. La température, le poids, l’âge et l’heure sont des exemples. Les variables continues peuvent inclure des fractions ou des parties de la valeur. Le nombre total de skateboards bleus vendus est une variable discrète dans la mesure où nous ne pouvons pas vendre un demi-skateboard.  
 
-## <a name="category-outliers-topbottom"></a>Valeurs hors norme de catégorie (de haut en bas)
-Met en évidence les cas où, pour une mesure dans le modèle, un ou deux membres d’une dimension ont des valeurs beaucoup plus grandes que d’autres membres de la dimension.  
+## <a name="what-types-of-insights-can-you-find"></a>Quels types d’insights pouvez-vous trouver ?
+Voici les algorithmes que Power BI utilise. 
+
+### <a name="category-outliers-topbottom"></a>Valeurs hors norme de catégorie (de haut en bas)
+Met en évidence les cas où une ou deux catégories ont des valeurs nettement supérieures à celles des autres catégories.  
 
 ![Exemple de valeurs hors norme de catégorie](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
-## <a name="change-points-in-a-time-series"></a>Points de changement dans une série chronologique
+### <a name="change-points-in-a-time-series"></a>Points de changement dans une série chronologique
 Met en surbrillance les cas où il existe des modifications significatives dans les tendances d’une série chronologique de données.
 
 ![Exemple de points de changement dans une série chronologique](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
-## <a name="correlation"></a>Corrélation
-Détecte les cas où plusieurs mesures montrent une corrélation les unes avec les autres lorsqu’elles sont représentées par rapport à une dimension du jeu de données.
+### <a name="correlation"></a>Corrélation
+Détecte les cas où plusieurs mesures montrent un modèle ou une tendance similaire quand elles sont tracées sur une catégorie ou une valeur du jeu de données.
 
 ![Exemple de corrélation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
-## <a name="low-variance"></a>Écart faible
+### <a name="low-variance"></a>Écart faible
 Détecte les cas où des points de données ne sont pas éloignés de la moyenne.
 
 ![Exemple d’écart faible](./media/end-user-insight-types/power-bi-low-variance.png)
 
-## <a name="majority-major-factors"></a>Majorité (facteurs majeurs)
+### <a name="majority-major-factors"></a>Majorité (facteurs majeurs)
 Recherche les cas où une majorité d’une valeur totale peut être attribuée à un facteur unique en cas de répartition par une autre dimension.  
 
 ![Exemple de facteurs majeurs](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
-## <a name="overall-trends-in-time-series"></a>Tendances générales dans une série chronologique
+### <a name="overall-trends-in-time-series"></a>Tendances générales dans une série chronologique
 Détecte les tendances vers le haut ou vers le bas dans les données d’une série chronologique.
 
 ![Exemple de tendances générales dans une série chronologique](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
-## <a name="seasonality-in-time-series"></a>Caractère saisonnier d’une série chronologique
+### <a name="seasonality-in-time-series"></a>Caractère saisonnier d’une série chronologique
 Recherche des modèles récurrents dans les données d’une série chronologiques, comme un caractère saisonnier (hebdomadaire, mensuel ou annuel).
 
 ![Exemple de caractère saisonnier](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
-## <a name="steady-share"></a>Partage stable
+### <a name="steady-share"></a>Partage stable
 Met en évidence les cas où il existe une corrélation parent-enfant entre le partage d’une valeur enfant par rapport à la valeur globale du parent dans une variable continue.
 
 ![Exemple de partage stable](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
-## <a name="time-series-outliers"></a>Valeurs hors norme d’une série chronologique
+### <a name="time-series-outliers"></a>Valeurs hors norme d’une série chronologique
 Pour les données d’une série chronologique, détecte les cas où il existe des dates ou heures avec des valeurs fondamentalement différentes des autres valeurs de date et d’heure.
 
 ![Exemple de valeurs hors norme d’une série chronologique](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)

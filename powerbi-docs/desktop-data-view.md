@@ -6,44 +6,45 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8e1babaa39a1f52a06c69dcb9aac2441ca02452b
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: a82465adb5b0c7fe8be0e6e724c5eda1bfcf7ec0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761269"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538648"
 ---
 # <a name="work-with-data-view-in-power-bi-desktop"></a>Utiliser la vue Données dans Power BI Desktop
-La **vue Données** vous permet d’inspecter, d’explorer et de comprendre les données dans votre modèle **Power BI Desktop**. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans **l’Éditeur de requête**. Avec la vue Données, vous examinez vos données *après* qu’elles sont été chargées dans le modèle.
 
-Quand vous modélisez vos données, vous souhaitez parfois consulter le contenu réel d’une table ou d’une colonne sans créer d’élément visuel sur le canevas de rapport, bien souvent jusqu’au niveau de la ligne. C’est particulièrement utile lorsque vous créez des mesures et des colonnes calculées ou quand vous devez identifier un type de données ou une catégorie de données.
+La *Vue de données* vous permet d’inspecter, d’explorer et de comprendre les données dans votre modèle *Power BI Desktop*. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans l’*éditeur Power Query*. La Vue de données vous permet d’examiner vos données *après* leur chargement dans le modèle.
 
-Regardons de plus près certains des éléments trouvés dans la **vue Données**.
+Quand vous modélisez vos données, vous souhaitez parfois consulter le contenu réel d’une table ou d’une colonne sans créer un visuel sur le canevas de rapport. Vous voudrez peut-être voir le contenu jusqu’au niveau de la ligne. Cette possibilité se révèle particulièrement utile quand vous créez des mesures et des colonnes calculées, ou quand vous devez identifier un type de données ou une catégorie de données.
+
+Regardons de plus près certains des éléments trouvés dans la Vue de données.
 
 ![Vue Données dans Power BI Desktop](media/desktop-data-view/dataview_fullscreen.png)
 
-1. **Icône de la vue Données** : Sélectionnez cette icône pour accéder à la vue Données.
+1. **Icône Vue de données**. Sélectionnez cette icône pour accéder à la Vue de données.
 
-2. **Grille de données** : Montre la table sélectionnée et toutes les colonnes et les lignes qu’elle contient. Les colonnes masquées dans la **vue Rapport** sont grisées. Vous pouvez cliquer avec le bouton droit sur une colonne pour afficher des options.
+2. **Grille de données**. Cette zone montre la table sélectionnée et toutes les colonnes et lignes qu’elle contient. Les colonnes masquées dans la vue *Rapport* sont grisées. Vous pouvez cliquer avec le bouton droit sur une colonne pour afficher des options.
 
-3. **Ruban de modélisation** : Ici, vous pouvez gérer les relations, créer des calculs, changer le type de données, le format ou la catégorie de données d’une colonne.
+3. **Ruban de modélisation**. Vous pouvez ici gérer les relations, créer des calculs et changer le type de données, le format ou la catégorie de données pour une colonne.
 
-4. **Barre de formule** : Entrez des formules DAX pour des mesures et des colonnes calculées.
+4. **Barre de formule**. Entrez des formules DAX (Data Analysis Expression) pour les mesures et les colonnes calculées.
 
-5. **Rechercher** : Recherchez une table ou une colonne dans votre modèle.
+5. **Rechercher**. Recherchez une table ou une colonne dans votre modèle.
 
-6. **Liste de champs** : Sélectionnez une table ou une colonne à voir dans la grille de données.
+6. **Liste de champs**. Sélectionnez une table ou une colonne à voir dans la grille de données.
 
-## <a name="filtering-in-data-view"></a>Filtrage dans la vue Données
+## <a name="filtering-in-data-view"></a>Filtrage dans la Vue de données
 
-Vous pouvez également filtrer et trier les données dans la **vue Données**. Chaque colonne affiche une icône qui identifie le sens du tri (si appliqué).
+Vous pouvez également filtrer et trier les données dans la Vue de données. Chaque colonne montre une icône qui identifie le sens du tri, s’il est appliqué.
 
 ![Trier et filtrer dans la vue Données dans Power BI Desktop](media/desktop-data-view/dataview_sort-and-filter.png)
 
-Vous pouvez filtrer des valeurs individuelles ou utiliser le filtrage avancé en fonction des données de la colonne. 
+Vous pouvez filtrer des valeurs individuelles ou utiliser le filtrage avancé en fonction des données de la colonne.
 
 > [!NOTE]
-> Quand un modèle Power BI est créé dans une autre culture que celle de votre interface utilisateur actuelle (par exemple, si le modèle a été créé en anglais des États-Unis et que vous l’affichez en français), la zone de recherche ne s’affiche que pour les champs de texte de l’interface utilisateur et rien d’autre.
+> Quand un modèle Power BI est créé dans une autre culture que celle de votre interface utilisateur actuelle, la zone de recherche ne s’affiche que pour les champs de texte de l’interface utilisateur de la Vue de données, et rien d’autre. Cette situation serait celle, par exemple, d’un modèle, créé en anglais américain, que vous consultez en français.

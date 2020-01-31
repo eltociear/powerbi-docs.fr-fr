@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
-ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75220514"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538402"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -21,6 +21,27 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="december-2019"></a>Décembre 2019
+
+### <a name="docked-report-footer-and-a-refresh-button---new-experiences-for-interacting-with-reports-android"></a>Pied de page de rapport ancré et un bouton d’actualisation - nouvelles expériences pour l’interaction avec les rapports (Android)
+
+Nous avons appris de nos utilisateurs Android que leur expérience d’utilisation des rapports n’était pas optimale : il est difficile d’utiliser le pied de page du rapport et la fonctionnalité Balayer pour actualiser est trop sensible sur certains appareils. Par conséquent, dans cette version, nous avons changé ces comportements :
+* **Pied de page de rapport ancré** - maintenant, quand vous ouvrez un rapport sur votre téléphone, le pied de page du rapport est ancré en bas de la page du rapport, où il est toujours visible et disponible, quelles que soient vos actions sur la page. Ceci facilite l’utilisation de toutes les options qu’il fournit.
+* **Bouton d’actualisation dans l’en-tête du rapport** - vous trouverez également un bouton d’actualisation dans l’en-tête du rapport, ce qui en facilite l’actualisation au moment exact où vous en décidez.
+
+Les utilisateurs qui préfèrent le comportement précédent peuvent restaurer ces comportements avec les nouveaux [paramètres d’interaction](./mobile-app-interaction-settings.md) étendus de l’application mobile.
+
+De plus, les administrateurs informatiques peuvent [remplacer à distance les nouveaux paramètres par défaut](./mobile-app-configuration.md#interaction-settings-android) pour le compte de leurs utilisateurs, en utilisant l’outil MDM de leur choix avec un fichier de configuration d’application. De cette façon, le même comportement peut être configuré pour tous les utilisateurs d’une organisation.
+
+> [!NOTE]
+> Les paramètres d’interaction pour le bouton d’actualisation et pour l’ancrage du pied de page du rapport n’ont actuellement pas d’effet sur les rapports Report Server. Cela changera avec la version de Report Server de janvier.
+
+### <a name="set-default-bookmarks-from-your-mobile-app"></a>Définir des signets par défaut à partir de votre application mobile
+Vous pouvez désormais définir des signets par défaut pour vos rapports directement à partir de votre application mobile Power BI. Ensuite, chaque fois que vous ouvrez un rapport, son signet par défaut est appliqué automatiquement. [En savoir plus](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### <a name="filtering-by-location-on-android-tablets"></a>Filtrage par localisation sur les tablettes Android
+Le géofiltrage vous permet de filtrer vos rapports en fonction de votre localisation actuelle. Cette fonctionnalité est désormais également disponible dans l’application Power BI pour tablettes Android. [En savoir plus](./mobile-apps-geographic-filtering.md)
 
 ## <a name="november-2019"></a>Novembre 2019
 

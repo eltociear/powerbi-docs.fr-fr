@@ -1,28 +1,34 @@
 ---
 title: Acheter et attribuer des licences Power BI Pro
-description: Découvrez comment acheter et attribuer des licences Power BI Pro pour permettre à vos utilisateurs d’accéder à du contenu et de collaborer avec des collègues dans le service Power BI.
+description: Découvrez comment acheter des licences Power BI Pro et les attribuer aux utilisateurs pour leur permettre d’accéder à du contenu et de collaborer avec d’autres personnes dans le service Power BI.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: quickstart
-ms.date: 12/18/2019
+ms.topic: conceptual
+ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 01eb30857b0b76f96e7e18115d92fb1d68dbef0c
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223824"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753188"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 
-Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec des rapports et des tableaux de bord que d’autres utilisateurs ont publiés dans le service Power BI, et de partager du contenu et de collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs disposant d’une licence utilisateur Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d'informations, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
+>[!IMPORTANT]
+>Êtes-vous prêt à passer à une licence Power BI Pro ? Accédez directement à la [Prise en main de Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) pour configurer votre compte.
 
-## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
+Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec les rapports et les tableaux de bord publiés par d’autres utilisateurs sur le service Power BI. Les utilisateurs disposant de ce type de licence peuvent partager du contenu et collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d'informations, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
 
-Cet article explique comment acheter des licences utilisateur Power BI Pro dans le Centre d’administration Microsoft 365, puis explique deux options des administrateurs pour attribuer ces licences à des utilisateurs individuels : dans le Centre d’administration Microsoft 365 et dans le portail Azure (choisissez une option).
+## <a name="purchase-power-bi-pro-user-licenses"></a>Acheter des licences utilisateur Power BI Pro
+
+Cet article explique comment acheter des licences utilisateur Power BI Pro dans le Centre d’administration Microsoft 365. Une fois que vous avez acheté des licences, vous pouvez les affecter aux utilisateurs dans le Centre d’administration Microsoft 365 ou sur le Portail Azure.
+
+> [!NOTE]
+> À compter du 14 janvier 2020, les fonctionnalités d’achat, d’abonnement et de gestion des licences libre-service pour les produits Power Platform (Power BI, Power Apps et Power Automate) sont disponibles pour les clients du cloud commercial aux États-Unis. Pour plus d’informations, notamment sur les étapes à suivre pour activer ou désactiver l’achat libre-service dans votre organisation, consultez [FAQ sur l’achat libre-service](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ### <a name="prerequisites"></a>Prérequis
 
@@ -34,47 +40,43 @@ Pour attribuer des licences dans le portail Azure, vous devez être propriétair
 
 Suivez ces étapes pour acheter des licences Power BI Pro dans le Centre d’administration Microsoft 365 :
 
-1. Ouvrez le [Centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
 
-2. Dans le volet de navigation, sélectionnez **Facturation**, puis sélectionnez **Abonnements**.
+2. Dans le menu de navigation, sélectionnez **Facturation** > **Acheter des services**.
 
-3. Dans le coin supérieur droit de la page **Abonnements**, cliquez sur **Ajouter des abonnements**.
+3. Effectuez une recherche ou faites défiler la liste pour trouver l’abonnement que vous souhaitez acheter. Vous trouverez **Power BI** sous **Autres catégories susceptibles de vous intéresser** en bas de la page. Sélectionnez le lien pour afficher les abonnements Power BI disponibles pour votre organisation.
 
-4. Recherchez l’offre d’abonnement souhaitée :
+4. Sélectionnez **Power BI Pro**.
 
-    - Sous **Enterprise Suite**, sélectionnez **Office 365 Entreprise E5**.
+5. Sur la page **Acheter des services**, sélectionnez **Acheter**.
 
-    - Sous **Autres forfaits**, sélectionnez **Power BI Pro**.
+6. Choisissez **Paiement mensuel** ou **Paiement pour toute une année**, en fonction de vos préférences de paiement.
 
-5. Placez le curseur sur les points de suspension ( **. . .** ) pour l’abonnement souhaité et sélectionnez **Acheter maintenant**.
+7. Sous **Combien d’utilisateurs voulez-vous ?** , entrez le nombre de licences que vous souhaitez acheter, puis sélectionnez **Régler maintenant** pour finaliser la transaction.
 
-6. Choisissez **Paiement mensuel** ou **Paiement pour toute une année**, en fonction de vos préférences de facturation.
+8. Pour vérifier votre achat, accédez à **Facturation** > **Produits et services** et recherchez **Power BI Pro**.
 
-7. Sous **Combien d’utilisateurs voulez-vous ?** , entrez le nombre de licences souhaité, puis sélectionnez **Commander maintenant** pour finaliser la transaction.
+9. Pour ajouter d’autres licences ultérieurement, recherchez **Power BI Pro** sur la page **Produits et services**, puis sélectionnez **Ajouter/supprimer des licences**.
 
-8. Vérifiez que l’abonnement acquis apparaît maintenant sur la page **Abonnements**.
-
-9. Pour ajouter d’autres licences après l’achat initial, sélectionnez **Power BI Pro** dans la page **Abonnements**, puis sélectionnez **Modifier le nombre de licences**.
-
-### <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Attribuer des licences dans le Centre d’administration Microsoft 365
+## <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Attribuer des licences dans le Centre d’administration Microsoft 365
 
 Pour obtenir des informations sur l’attribution de licences dans le Centre d’administration Microsoft 365, consultez [Attribuer des licences aux utilisateurs](/office365/admin/manage/assign-licenses-to-users).
 
-Pour les utilisateurs invités, consultez [Attribution de licences à des utilisateurs via la page Licences](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Avant d’attribuer des licences Pro à des utilisateurs invités, vérifiez auprès de votre responsable de compte Microsoft que vous remplissez les conditions de votre contrat avec Microsoft.
+Pour les utilisateurs invités, consultez [Attribution de licences à des utilisateurs via la page Licences](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Avant d’attribuer des licences Pro à des utilisateurs invités, vérifiez auprès de votre responsable de compte Microsoft que vous respectez les conditions de votre contrat avec Microsoft.
 
-### <a name="assign-licenses-in-the-azure-portal"></a>Attribuer des licences dans le portail Azure
+## <a name="assign-licenses-in-the-azure-portal"></a>Attribuer des licences dans le portail Azure
 
 Suivez ces étapes pour affecter des licences Power BI Pro à des comptes d’utilisateur individuels :
 
-1. Accédez au [portail Azure](https://portal.azure.com/).
+1. Connectez-vous au [portail Azure](https://portal.azure.com/).
 
 2. Recherchez et sélectionnez **Azure Active Directory**.
 
-3. Sous **Azure Active Directory**, sélectionnez **Licences**.
+3. Sous **Gérer** dans le menu de ressources **Azure Active Directory**, sélectionnez **Licences**.
 
-4. Sous **Licences**, sélectionnez **Tous les produits**, puis **Power BI Pro** pour afficher la liste des utilisateurs avec licence.
+4. Sélectionnez **Tous les produits** dans le menu de ressources **Licences – Vue d’ensemble**, puis **Power BI Pro** pour afficher la liste des utilisateurs sous licence.
 
-5. Sélectionnez **Attribuer** pour ajouter une licence Power BI Pro à un compte d’utilisateur.
+5. Dans la barre de commandes, sélectionnez **+ Attribuer**. Sur la page **Attribuer une licence**, commencez par choisir un utilisateur, puis sélectionnez **Options d’affectation** afin d’activer une licence Power BI Pro pour le compte d’utilisateur sélectionné.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

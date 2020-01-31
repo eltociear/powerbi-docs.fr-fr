@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74791661"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537551"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -63,6 +63,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Les filtres d’URL ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
 * Les rapports avec des tailles de page personnalisées inhabituelles peuvent rencontrer des problèmes dans les scénarios d’exportation. Pour optimiser les résultats, donnez une taille de page standard à votre rapport.
 * Lors de l’exportation au format PDF, la police personnalisée des thèmes utilisés dans les rapports est remplacée par une police par défaut.
+* Si nous veillons à fournir une expérience cohérente, nous ne pouvons néanmoins pas garantir que le fichier PDF exporté depuis le service Power BI correspondra toujours au fichier PDF exporté à partir d’un fichier Power BI Desktop local.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Imprimer un rapport](end-user-print.md)

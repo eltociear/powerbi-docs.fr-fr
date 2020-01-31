@@ -7,20 +7,25 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad7e2133d531abcbb2165dc2be9846a6a70f4fc0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862721"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537420"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Accéder aux fonctionnalités de préversion du service Power BI
 ## <a name="what-are-preview-features"></a>Que sont les*fonctionnalités en version préliminaire*?
 Dans le cadre des améliorations que nous apportons à Power BI, nous allons publier certaines nouvelles fonctionnalités sous la forme de *fonctionnalités de préversion*. Vous pouvez activer et désactiver ces dernières afin de les essayer.
 
+Certaines fonctionnalités en préversion peuvent être activées ou désactivées à partir de votre tableau de bord Power BI, de votre page d’accueil ou de votre rapport lui-même.
+
+   ![Bascule Nouvelle apparence](./media/end-user-preview-features/power-bi-toggle.png)
+
+Tandis que d’autres fonctionnalités en préversion sont disponibles à partir de votre menu *Paramètres*. Cet article vous montre comment accéder aux fonctionnalités en préversion via le menu Paramètres.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Trouver des préversions et les activer (ou désactiver)
 1. Ouvrez le menu Paramètres en sélectionnant l’icône en forme de roue dentée située en haut à droite de l’écran Power BI, puis choisissez **Paramètres**.
@@ -28,7 +33,7 @@ Dans le cadre des améliorations que nous apportons à Power BI, nous allons pu
    ![menu Paramètres](./media/end-user-preview-features/power-bi-settings.png).
 2. Sélectionnez l’onglet **Général**. S’il existe des préversions, vous voyez une option **Fonctionnalités en préversion** ou une fonctionnalité en préversion à gauche.  Dans cet exemple, il existe une préversion répertoriée pour ArcGIS Maps. 
    
-   ![onglet Général](./media/end-user-preview-features/power-bi-preview-esri.png)
+   ![Onglet Général](./media/end-user-preview-features/power-bi-preview-esri.png)
 3. Sélectionnez le bouton radio **Activé** ou cochez la case pour essayer la nouvelle expérience. Sélectionnez ensuite **Appliquer**.
 4. Pour désactiver les fonctionnalités d’évaluation, suivez les étapes 1 à 3 ci-dessus, puis, à l’étape 3, sélectionnez **Désactiver** ou décochez la case, puis sélectionnez **Appliquer**.
 

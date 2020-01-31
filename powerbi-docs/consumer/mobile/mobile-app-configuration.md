@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622369"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538264"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurer à distance l’application Power BI à l’aide d’un outil MDM
 
@@ -21,8 +21,9 @@ L’application Power BI Mobile pour iOS et Android prend en charge des paramè
 
 L’application Power BI Mobile pour prend en charge les scénarios de configuration suivants :
 
-- Configuration du serveur de rapports (iOS et Android)
-- Paramètres de protection des données (iOS)
+* Configuration du serveur de rapports (iOS et Android)
+* Paramètres de protection des données (iOS et Android)
+* Paramètres d’interaction (Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Configuration du serveur de rapports (iOS et Android)
 
@@ -37,11 +38,21 @@ L’application Power BI pour iOS et Android permet aux administrateurs d’env
 
 ## <a name="data-protection-settings-ios"></a>Paramètres de protection des données (iOS)
 
-L’application Power BI pour iOS permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code pour accéder à l’application Power BI.
+L’application Power BI pour iOS et Android permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code pour accéder à l’application Power BI.
 
 | Key | Type | Description |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booléen | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID, peut être nécessaire pour accéder à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
+
+## <a name="interaction-settings-android"></a>Paramètres d’interaction (Android)
+
+L’application Power BI pour Android offre aux administrateurs la possibilité de configurer des paramètres d’interaction s’il est décidé que les paramètres d’interaction par défaut doivent être changés pour les groupes d’utilisateurs d’une organisation. 
+
+| Key | Type | Valeurs | Description |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Chaîne |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configurer si l ’appui sur un visuel sélectionne également un point de données. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur a un bouton pour actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
+| com.microsoft.powerbi.mobile.FooterAppearance | Chaîne |  docked<br>dynamique | Configurer si le pied de page des rapports est ancré en bas du rapport ou s’il est masqué automatiquement. |
 
 ## <a name="deploying-app-configuration-settings"></a>Déploiement des paramètres de configuration d’application
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874177"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540587"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -202,12 +202,12 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |Non |
 | Base de données Oracle |Non |Non |Oui |Oui |Oui |
 | Serveur SAP Business Warehouse |Non |Non |Oui |Non |Non |
-| Base de données SAP HANA |Non |Non |Oui |Oui |Non |
+| Base de données SAP HANA |Non |Non |Oui |Oui |Oui** |
 | Teradata |Non |Non |Oui |Oui |Oui |
 
+** SAP HANA prend en charge DirectQuery avec l’authentification Windows intégrée uniquement quand vous l’utilisez en tant que base de données relationnelle dans le fichier Power BI Desktop publié (.pbix).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous êtes connecté à votre source de données, [créez un rapport Power BI](quickstart-create-powerbi-report.md) à l’aide des données de cette source de données.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

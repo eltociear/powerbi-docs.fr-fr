@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220717"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538117"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -53,6 +53,13 @@ Pour accéder à un rapport à partir d’un tableau de bord, appuyez sur **Plus
 ## <a name="interact-with-reports"></a>Interagir avec les rapports
 Une fois que vous avez ouvert un rapport dans l’application, vous pouvez commencer à l’utiliser. Vous pouvez faire beaucoup de choses avec votre rapport et les données qu’il contient. Dans le pied de page du rapport, vous trouverez les actions que vous pouvez effectuer sur le rapport. En appuyant brièvement ou longuement sur les données du rapport, vous pouvez aussi segmenter les données.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Interaction d’appui simple ou d’appui double
+Quand vous téléchargez l’application mobile Power BI, elle est définie pour une interaction avec appui simple. Cela signifie que quand vous appuyez dans un visuel pour effectuer une action, par exemple la sélection d’un élément d’un sélecteur, la sélection croisée, un clic sur un lien ou un bouton, etc., l’appui sélectionne le visuel et effectue aussi l’action souhaitée.
+
+Si vous préférez, vous pouvez passer à l’interaction d’appui double. Avec l’interaction d’appui double, vous appuyez d’abord sur un visuel pour le sélectionner, puis vous rappuyez dans le visuel pour effectuer l’action souhaitée.
+
+Pour passer à l’interaction d’appui double ou pour revenir à l’interaction d’appui simple, accédez à [Paramètres d’interaction de l’application](./mobile-app-interaction-settings.md).
+
 ### <a name="using-tap-and-long-tap"></a>Utilisation de l’appui et de l’appui long
 Un appui équivaut à un clic de souris. Par conséquent, si vous souhaitez effectuer la sélection croisée du rapport en fonction d’un point de données, appuyez sur ce point de données.
 Si vous appuyez sur une valeur de segment, elle est sélectionnée et le reste du rapport est découpé en fonction de cette valeur.
@@ -63,7 +70,6 @@ Vous avez probablement remarqué que, si vous appuyez sur un visuel, une bordure
 ![Visuel et menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>Info-bulle et actions d’exploration
-
 Quand vous appuyez longuement sur un point de données, une info-bulle s’affiche et présente les valeurs que ce point de données représente :
 
 ![Info-bulle](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -126,6 +132,8 @@ L’option **Annoter et partager** peut être désactivée si une [stratégie de
 
 L’application mobile Power BI prend en charge aussi bien les signets de rapport que le créateur du rapport a définis que les signets personnels que vous pouvez définir dans le service Power BI. Le menu Signets se trouve sous **Autres options** (...) dans la [barre d’outils Actions du rapport](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Les signets par défaut sont indiqués par une icône spéciale. Pour les signets personnels, vous pouvez définir, annuler ou changer le paramètre par défaut en appuyant sur **Plus d’options (...)** à côté du signet que vous voulez changer, puis en choisissant **Utiliser par défaut** ou **Effacer la valeur par défaut**.
+
 ![menu Signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît en haut du rapport.
@@ -133,6 +141,15 @@ Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît e
 ![vue de signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Découvrez-en plus sur les signets dans le service Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Configurer votre expérience avec les rapports
+L’application mobile Power BI a un certain nombre de paramètres qui vous permettent de contrôler votre expérience avec les rapports. Actuellement, vous pouvez configurer
+* **Interaction avec les visuels de rapport** : Vous pouvez choisir d’utiliser une interaction d’appui simple ou d’appui double.
+* **Méthode d’actualisation des données** : Vous pouvez choisir d’avoir un bouton d’actualisation ou une action de balayage vers le bas pour actualiser les données d’un rapport.
+* **Visibilité du pied de page des rapports** : Vous pouvez choisir d’avoir un pied de page ancré toujours visible ou un pied de page dynamique qui est masqué et réapparaît en fonction de vos actions (par exemple le défilement).
+
+Pour plus d’informations sur le changement de ces paramètres, consultez [Paramètres d’interaction d’application](./mobile-app-interaction-settings.md).
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

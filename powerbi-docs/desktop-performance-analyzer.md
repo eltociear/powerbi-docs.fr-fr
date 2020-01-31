@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866428"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709776"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport
 
@@ -58,6 +58,9 @@ Les informations de journal de chaque visuel incluent le temps passé (durée) �
 * **Affichage de visuel** : temps nécessaire pour que le visuel s’affiche à l’écran, comprenant le temps nécessaire pour récupérer les images web ou le géocodage. 
 * **Autre** : temps nécessaire au visuel pour préparer les requêtes, pour attendre la fin de l’exécution des autres visuels ou pour effectuer un autre traitement en arrière-plan.
 
+Les valeurs **Durée (ms)** indiquent la différence entre une heure de *début* une heure de *fin* pour chaque opération. La plupart des opérations de canevas et de visuels s’exécutent de façon séquentielle sur un seul thread d’interface utilisateur, qui est partagé par plusieurs opérations. Les durées signalées incluent le temps passé en file d’attente pendant l’exécution d’autres opérations. L’[exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) sur GitHub et la [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) qui lui est associée fournissent des détails sur la façon dont les visuels interrogent les données et dont ils s’affichent.
+
+
 ![Éléments des informations du journal](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 Une fois que vous avez interagi avec les éléments du rapport à mesurer avec l’analyseur de performances, vous pouvez sélectionner le bouton **Arrêter**. Lorsque vous sélectionnez **Arrêter**, les informations sur les performances restent dans le volet pour que vous puissiez les analyser.
@@ -89,3 +92,7 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 
+Pour plus d’informations sur l’exemple de l’Analyseur de performances, consultez les ressources suivantes.
+
+* [Exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Documentation de l’exemple de l’Analyseur de performances](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

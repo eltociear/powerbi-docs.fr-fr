@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218174"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709800"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Questions et réponses pour les **consommateurs** Power BI
+# <a name="qa-for-power-bi-consumers"></a>Questions et réponses pour les consommateurs Power BI
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Choisissez ensuite **Paramètres** > **Tableaux de bord**. Vérifiez qu’il y a
 **Réponse** : Sélectionnez l’option permettant de contacter le propriétaire du rapport ou du tableau de bord. Vous pouvez le faire directement à partir de la page de tableau de bord Questions et réponses ou du visuel Questions et réponses. Ou bien vous pouvez rechercher le propriétaire à partir de l’en-tête Power BI.  Il y a beaucoup de choses que le concepteur peut faire pour améliorer les résultats de Questions et réponses. Par exemple, il peut renommer des colonnes dans le jeu de données pour utiliser des termes qui sont faciles à comprendre (`CustomerFirstName` au lieu de `CustFN`). Étant donné que le concepteur connaît parfaitement le jeu de données, il peut également trouver des questions utiles et les ajouter aux questions suggérées de Questions et réponses.
 
 ![Afficher les informations de contact](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Confidentialité
+
+Microsoft est susceptible d’utiliser vos questions pour améliorer Power BI. Pour plus d’informations, consultez la [Déclaration de confidentialité Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour savoir comment un visuel Questions et réponses est créé et géré par un *concepteur* de rapports, consultez [Type de visuel Questions et réponses](../visuals/power-bi-visualization-q-and-a.md).
