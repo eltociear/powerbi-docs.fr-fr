@@ -1,19 +1,19 @@
 ---
 title: API de stockage local dans les visuels Power BI
 description: L’article explique comment utiliser des API de visuels Power BI pour accéder au stockage local du navigateur
-author: uve
-ms.author: v-grniki
-ms.reviewer: KesemSharabi
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 01/21/2019
-ms.openlocfilehash: 85517fcd7ec773f947135614c94c0c4e4638ea48
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 7665f0c8e3c909263f194a0fd54a54ed2a752c8c
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539322"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819097"
 ---
 # <a name="local-storage-api"></a>API de stockage local
 

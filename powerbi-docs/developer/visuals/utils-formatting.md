@@ -1,20 +1,20 @@
 ---
 title: Présentation de l’utilisation des utilitaires de mise en forme dans un visuel Power BI
 description: Cet article explique comment utiliser les utilitaires de mise en forme pour mettre en forme des valeurs et appliquer la localisation à des valeurs dans un visuel Power BI
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 425a872c395df1b69297ae799e7059de687f8fb0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 9ae7e4b976cef2217c3742ef808a9a7063695cbc
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74700337"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819465"
 ---
 # <a name="formatting-utils"></a>Utilitaires de mise en forme
 
@@ -153,7 +153,7 @@ Cette fonction estime la hauteur du texte avec les propriétés de texte SVG don
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-Exemple d’utilisation d’`estimateSvgTextHeight` :
+Exemple d’utilisation de `estimateSvgTextHeight` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -353,7 +353,7 @@ Cette fonction vérifie si une chaîne se termine par une sous-chaîne.
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-Exemple d’utilisation d’`endsWith` :
+Exemple d’utilisation de `endsWith` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";

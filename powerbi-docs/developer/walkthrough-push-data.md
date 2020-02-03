@@ -1,19 +1,19 @@
 ---
 title: Transmission de données à un jeu de données
 description: Transmission de données à un jeu de données Power BI
-author: rkarlin
-ms.author: rkarlin
-ms.reviewer: madia
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ceebf32f62395db8741eaf43cfc494652fbbbf98
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875450"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818798"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
@@ -26,8 +26,8 @@ Avant de commencer, vous devez disposer d’un annuaire Azure Active Directory (
 * Étape 1 : [Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
 * Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
 * Étape 3 : [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
-* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
-* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
+* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
+* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
 
 La section suivante est une présentation générale des opérations de l’API Power BI qui transmettent des données.
 
@@ -105,7 +105,7 @@ Pour un schéma de table Power BI, vous pouvez utiliser les types de données su
 | --- | --- |
 | Int64 |Valeurs Int64.MaxValue et Int64.MinValue non autorisées. |
 | Double |Les valeurs Double.MaxValue et Double.MinValue ne sont pas autorisées. NAN non pris en charge. + Infinity et - Infinity non pris en charge dans certaines fonctions (par exemple, Min, Max). |
-| Booléen |Aucun |
+| Booléen |Aucune |
 | DateTime |Lors du chargement des données nous quantifions les valeurs avec des fractions de jour en multiples de 1/300e de seconde (3,33 ms). |
 | Chaîne |Autorise actuellement jusqu’à 128 ko de caractères. |
 
