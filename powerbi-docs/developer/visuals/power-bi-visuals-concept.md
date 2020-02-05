@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75925587"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
@@ -128,7 +128,7 @@ Les actions et les mises à jour suivantes dans les visuels Power BI surviennen
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ? Reportez-vous aux articles suivants :
+Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ?  Reportez-vous aux articles suivants :
 
 * [Développer un visuel Power BI](./custom-visual-develop-tutorial.md)
 * [Publier des visuels Power BI sur l’Espace partenaires](../office-store.md)
