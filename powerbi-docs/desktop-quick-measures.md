@@ -11,10 +11,10 @@ ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
-ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74415274"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Utiliser les mesures rapides pour effectuer des calculs courants
@@ -134,5 +134,5 @@ Gardez à l’esprit les considérations et les limitations suivantes.
 Vous pouvez utiliser vos propres tables de dates personnalisées avec les mesures rapides Time Intelligence. Si vous utilisez un modèle tabulaire externe, vérifiez que la colonne de date principale de la table a été marquée en tant que table de dates lors de la création du modèle, comme décrit dans [Spécifier l’option Marquer en tant que table de dates en vue d’une utilisation de Time Intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Si vous importez votre propre table de dates, marquez-la en tant que table de dates, comme décrit dans [Définir et utiliser des tables de dates dans Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Exemples et informations supplémentaires
-Vous avez une idée de mesure rapide ? Super ! Accédez à la page [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) et envoyez-nous vos idées et vos formules DAX pour les mesures rapides que vous aimeriez voir dans Power BI Desktop. Nous verrons si nous pouvons les ajouter à la liste des mesures rapides dans une prochaine version.
+Vous avez une idée de mesure rapide ? Great! Accédez à la page [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) et envoyez-nous vos idées et vos formules DAX pour les mesures rapides que vous aimeriez voir dans Power BI Desktop. Nous verrons si nous pouvons les ajouter à la liste des mesures rapides dans une prochaine version.
 

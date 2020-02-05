@@ -10,10 +10,10 @@ ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
 ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265332"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -361,7 +361,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 * Analyser dans Excel : connectez votre modèle de données Power BI à Excel et réalisez votre analyse dans Excel au lieu de Power BI.
 
-***Autres***
+***Autre***
 
 * Power BI en Australie : désormais, tout le monde en Australie (particuliers et entreprises) peut accéder à powerbi.microsoft.com et s’inscrire à Power BI.
 * Paramètres de langue : vous pouvez désormais choisir une langue autre que celle détectée automatiquement pour Power BI.

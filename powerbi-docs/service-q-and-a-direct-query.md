@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265502"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Activer la fonctionnalité Questions et réponses pour les connexions actives dans Power BI
@@ -60,7 +60,7 @@ La fonctionnalité présente certaines limitations :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passerelle de données locale](service-gateway-onprem.md)  
+- [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)  
 - [Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)  
 - [Présentation de Questions et réponses dans Power BI](consumer/end-user-q-and-a.md)  

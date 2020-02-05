@@ -10,10 +10,10 @@ ms.date: 01/16/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76538722"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Utiliser des agrégations dans Power BI Desktop
@@ -75,7 +75,7 @@ La plupart des validations sont appliquées en désactivant les valeurs de liste
 
 ### <a name="aggregation-tables-are-hidden"></a>Les tables d’agrégation sont masquées
 
-Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)*. Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
+Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)* . Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
 
 Pour cette raison, les tables d’agrégation sont masquées dans la vue **Rapport**. Si la table n’est pas déjà masquée, la boîte de dialogue **Gérer les agrégations** la définit comme masquée lorsque vous sélectionnez **Appliquer tout**.
 

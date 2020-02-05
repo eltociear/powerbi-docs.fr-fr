@@ -10,13 +10,13 @@ ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.openlocfilehash: 0e1f3361abfc4f45f71edaf82a197cfa3ea8cad3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74695424"
 ---
-# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
+# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 
 Découvrez comment incorporer du contenu analytique dans vos applications de processus d’entreprise pour le cloud national. Vous pouvez utiliser le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer un rapport, un tableau de bord ou une vignette dans vos applications web.
 

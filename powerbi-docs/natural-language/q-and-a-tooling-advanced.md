@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
 ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958514"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Modifier le schéma linguistique de la fonctionnalité Questions et réponses et ajouter des formulations dans Power BI Desktop 
@@ -32,7 +32,7 @@ Ces formulations se présentent dans diverses formes et tailles. Certaines corre
 
 Les schémas linguistiques sont enregistrés dans un format .yaml. Ce format est similaire au format JSON répandu, mais sa syntaxe est plus flexible et plus facilement lisible. Les schémas linguistiques peuvent être modifiés, exportés et importés dans Power BI Desktop.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Si vous n’avez pas encore lu l’article expliquant comment [améliorer votre modèle de données pour Questions et réponses](q-and-a-best-practices.md), vous voudrez peut-être le faire maintenant. Cet article fournit de nombreux conseils pour vous aider à créer et améliorer votre modèle de données. Il comporte aussi une section importante sur l’ajout des synonymes.  
 - Téléchargez des exemples de [fichiers .yaml et .pbix](https://go.microsoft.com/fwlink/?linkid=871858).   

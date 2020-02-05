@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ef1d72754d7f77d7cb3c835c1a2b94e0f7e324f4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 5497c56f358470d0d24f69f0d67865dbbd7839a3
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039698"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026735"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Tutoriel : Analyser les données d’une page web à l’aide de Power BI Desktop
 
@@ -201,7 +201,7 @@ Power BI Desktop fournit une expérience de bout en bout transparente, allant 
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Autres didacticiels Power BI Desktop](/guided-learning/)
+* [Autres didacticiels Power BI Desktop](/power-bi/guided-learning/)
 * [Vidéos relatives à Power BI Desktop](desktop-videos.md)
 * [Forum Power BI](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Blog Power BI](https://go.microsoft.com/fwlink/?LinkID=519327)

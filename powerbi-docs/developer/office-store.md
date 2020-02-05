@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/02/2019
 ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999893"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
@@ -31,7 +31,7 @@ Avant de soumettre un visuel Power BI à AppSource, assurez-vous d'avoir lu les
 
 Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il répond à toutes les exigences énumérées ci-dessous.
 
-| Article | Obligatoire | Description |
+| Article | Requis | Description |
 | --- | --- | --- |
 | Package Pbiviz |Oui |Empaquetez votre visuel Power BI dans un package Pbiviz contenant toutes les métadonnées requises.<br>Nom du visuel<br>Nom d’affichage<br>GUID<br>Version<br>Description<br>Nom et e-mail de l’auteur |
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez aider les utilisateurs à se familiariser avec ce visuel. Insistez sur la valeur que le visuel apporte à l’utilisateur et donnez des exemples d’utilisation et d’options de mise en forme. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, et expliquez ce qu’il faut éviter de faire.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe. |
@@ -51,7 +51,7 @@ Avant de créer le package **pbiviz**, vous devez renseigner les champs suivants
 * description
 * supportUrl
 * auteur
-* nom
+* name
 * e-mail
 
 Joignez le **fichier pbiviz** et **l’exemple de fichier de rapport pbix** à votre e-mail. Dans sa réponse, l’équipe Power BI vous donne des instructions et un fichier XML de package d’application à charger. Ce package d’application XML est requis pour soumettre votre visuel par le biais du Centre pour développeurs Office.
