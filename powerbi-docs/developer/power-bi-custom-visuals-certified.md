@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2019
-ms.openlocfilehash: 04954397a16fecddabca63067c903dee742873ef
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925572"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026666"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -45,7 +45,7 @@ Bien qu’il ne soit pas nécessaire de partager publiquement le code dans GitHu
 
 Le référentiel doit contenir le code d’un seul visuel Power BI. Il ne peut pas contenir le code de plusieurs visuels Power BI ou du code sans rapport.
 
-Le référentiel doit contenir une branche nommée **certification**. Le code source de cette branche doit correspondre au package soumis. Ce code ne peut être mis à jour que lors du processus d’envoi suivant, si vous envoyez à nouveau votre visuel Power BI.
+Le dépôt doit contenir une branche nommée **certification** (obligatoirement en minuscules). Le code source de cette branche doit correspondre au package soumis. Ce code ne peut être mis à jour que lors du processus d’envoi suivant, si vous envoyez à nouveau votre visuel Power BI.
 
 Si votre visuel Power BI utilise des packages npm privés ou des sous-modules GIT, vous devez fournir l’accès aux référentiels supplémentaires contenant ce code.
 
