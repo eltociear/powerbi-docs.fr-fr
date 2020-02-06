@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74699088"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
@@ -82,7 +82,7 @@ Jetons un œil à chacune de ces approches.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Utilisation des API REST Power BI pour transmettre des données
 Vous pouvez utiliser les **API REST Power BI** pour créer et envoyer des données à des jeux de données de **transmission** et à des jeux de données de **streaming**. Lorsque vous créez un jeu de données à l’aide des API REST Power BI, l’indicateur *defaultMode* spécifie s’il s’agit d’un jeu de données de transmission ou de streaming. Si aucun indicateur *defaultMode* n’est défini, il s’agit par défaut d’un jeu de données de **transmission**.
 
-Si la valeur de l’indicateur *defaultMode* est *pushStreaming*, le jeu de données est à la fois un jeu de données de **transmission** *et* **de streaming**, avec les avantages de ces deux types de jeu de données. 
+Si la valeur de l’indicateur *defaultMode* est *pushStreaming*, le jeu de données est à la fois un jeu de données de **transmission** *et de* **streaming**, avec les avantages de ces deux types de jeu de données. 
 
 > [!NOTE]
 > Lorsque vous utilisez des jeux de données avec l’indicateur *defaultMode* défini sur *pushStreaming*, si une requête dépasse la restriction de taille de 15 Ko pour un jeu de données de **streaming**, mais qu’elle est inférieure à la restriction de taille de 16 Mo d’un jeu de données de **transmission**, la requête aboutit et les données sont actualisées dans le jeu de données de transmission. Toutefois, les vignettes de streaming échouent de façon temporaire.

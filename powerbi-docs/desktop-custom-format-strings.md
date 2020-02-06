@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791583"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Utiliser des chaînes de format personnalisées dans Power BI Desktop
@@ -143,7 +143,7 @@ Le tableau suivant identifie les caractères que vous pouvez utiliser pour crée
 | ( **:** ) | Séparateur d’heure. Pour certains paramètres régionaux, d’autres caractères peuvent être utilisés pour représenter le séparateur d’heure. Le séparateur d’heure sépare les heures, les minutes et les secondes lors de la mise en forme des valeurs d’heure. Le caractère réel utilisé comme séparateur d’heure dans le résultat mis en forme est déterminé par vos paramètres système. |
 | ( **/** ) | Séparateur de date. Pour certains paramètres régionaux, d’autres caractères peuvent être utilisés pour représenter le séparateur de date. Le séparateur de date sépare le jour, le mois et l’année lorsque les valeurs de date sont mises en forme. Le caractère réel utilisé comme séparateur de date dans le résultat mis en forme est déterminé par vos paramètres système. |
 | (**E- E+ e- e+** ) | Format scientifique. Si l’expression de format contient au moins un espace réservé de chiffre (**0** ou **#** ) à droite de E-, E+, e- ou e+, le nombre est affiché au format scientifique et E ou e est inséré entre le nombre et son exposant. Le nombre d’espaces réservés de chiffre à droite détermine le nombre de chiffres dans l’exposant. Utilisez E- ou e- pour placer un signe moins à côté des exposants négatifs. Utilisez E+ ou e+ pour insérer un signe moins à côté des exposants négatifs et un signe plus à côté des exposants positifs. |
-| **- + $**  ( ) | Affiche un caractère littéral. Pour afficher un caractère autre que ceux répertoriés, faites-le précéder d’une barre oblique inverse (\) ou placez-le entre guillemets doubles (&quot; &quot;). |
+| **- + $**  ( ) | Affiche un caractère littéral. Pour afficher un caractère autre que les caractères listés, faites-le précéder d’une barre oblique inverse (\) ou placez-le entre guillemets doubles (&quot; &quot;). |
 | (* *\** ) | Affiche le caractère suivant dans la chaîne de format. Pour afficher un caractère ayant une signification spéciale sous forme de caractère littéral, faites-le précéder d’une barre oblique inverse (\). La barre oblique inverse elle-même n’est pas affichée. L’utilisation d’une barre oblique inverse revient à mettre le caractère suivant entre guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (\\). Exemples de caractères pouvant être affichés comme caractères littéraux : caractères de mise en forme de date et d’heure (a, c, d, h, m, n, p, q, s, t, w, / et :), caractères de format numérique (#, 0, %, E, e, virgule et point) et caractères de format de chaîne (@, &amp;, \&lt;, \&gt; et !). |
 | (&quot;ABC&quot;) | Affiche la chaîne à l’intérieur des guillemets doubles (&quot; &quot;). |
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858953"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975007"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Créer un rapport Power BI pour Power BI Report Server
 Vous pouvez stocker et gérer des rapports Power BI localement sur le portail web Power BI Report Server tout comme vous pouvez stocker des rapports Power BI dans le cloud, dans le service Power BI (https://powerbi.com) ). Créez et modifiez des rapports dans Power BI Desktop, puis publiez-les sur le portail web. Les lecteurs au sein de votre organisation peuvent alors les consulter dans un navigateur ou dans une application mobile Power BI sur un appareil mobile.
@@ -81,7 +81,7 @@ Par exemple, vous pouvez créer un graphique en entonnoir de valeurs de clients 
 
 En savoir plus sur la [conception d’un rapport Power BI](../desktop-report-view.md).
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>Étape 4 : Enregistrer votre rapport sur le serveur de rapports
+## <a name="step-4-save-your-report-to-the-report-server"></a>Étape 4 : Enregistrer votre rapport sur le serveur de rapports
 Une fois le rapport prêt, enregistrez-le sur le serveur de rapports Power BI Report Server que vous avez choisi à l’étape 2.
 
 1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous** > **Power BI Report Server**.
@@ -90,6 +90,9 @@ Une fois le rapport prêt, enregistrez-le sur le serveur de rapports Power BI Re
 2. Vous pouvez à présent l’afficher dans le portail web.
    
     ![Afficher le rapport dans le portail web](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> Si, par la suite, vous décidez de modifier le rapport, sachez que les données affichées dans le bureau sont toujours celles qui ont été mises en cache au moment de la création initiale du rapport.  Pour voir les données les plus récentes quand vous modifiez le rapport, vous devez actualiser les données dans votre application Power BI Desktop.
 
 ## <a name="next-steps"></a>Étapes suivantes
 ### <a name="power-bi-desktop"></a>Power BI Desktop

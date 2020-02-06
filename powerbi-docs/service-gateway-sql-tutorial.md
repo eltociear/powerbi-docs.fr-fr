@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Se connecter à des données locales dans SQL Server'
+title: 'Tutoriel : Se connecter à des données locales dans SQL Server'
 description: Découvrez comment utiliser SQL Server comme une source de données de passerelle, y compris comment actualiser les données.
 author: arthiriyer
 ms.reviewer: kayu
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958430"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
@@ -30,7 +30,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 > * Passer en revue l’historique des actualisations pour analyser les résultats des cycles d’actualisation précédents
 > * Nettoyer les ressources en supprimant les artefacts créés dans ce tutoriel
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Si ce n’est pas déjà fait, inscrivez-vous à un [essai gratuit de Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 - [Installez Power BI Desktop](https://powerbi.microsoft.com/desktop/) sur un ordinateur local.
