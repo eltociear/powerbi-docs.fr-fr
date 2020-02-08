@@ -1,24 +1,24 @@
 ---
 title: Publication sur le web à partir de Power BI
 description: Avec la fonctionnalité Publier sur le web de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311702"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76913622"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
-Avec l’option **Publier sur le web** de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix. Vous pouvez également modifier, mettre à jour ou actualiser vos éléments visuels publiés, ou bien annuler leur partage.
+Avec l’option **Publier sur le web** de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou des réseaux sociaux, sur l’appareil de votre choix. Vous pouvez également modifier, mettre à jour ou actualiser vos éléments visuels publiés, ou bien annuler leur partage.
 
 > [!WARNING]
 > Quand vous utilisez **Publier sur le web**, tout le monde sur Internet peut voir le rapport ou visuel que vous publiez. Aucune authentification n’est nécessaire et cela inclut les données de niveau de détail qui sont agrégées dans vos rapports. Avant de publier un rapport, vérifiez que vous voulez bien partager les données et les visualisations publiquement. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
@@ -39,20 +39,24 @@ Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 1. Ouvrez un rapport dans votre espace de travail que vous pouvez modifier et sélectionnez **Fichier > Publier sur le web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Contactez votre administrateur Power BI s’il ne vous a pas autorisé à créer des codes incorporés.
 
-2. Passez en revue le contenu de la boîte de dialogue et sélectionnez **Créer un code incorporé**.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Passez en revue le contenu de la boîte de dialogue et sélectionnez **Créer un code incorporé**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Lisez l’avertissement, illustré ici, puis confirmez que les données peuvent être incorporées dans un site web public. Le cas échéant, sélectionnez **Publier**.
+4. Lisez l’avertissement, illustré ici, puis confirmez que les données peuvent être incorporées dans un site web public. Le cas échéant, sélectionnez **Publier**.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. Une boîte de dialogue s’affiche avec un lien. Vous pouvez envoyer ce lien par e-mail, l’incorporer dans le code (comme un iFrame) ou le coller directement dans une page web ou un blog.
+5. Une boîte de dialogue s’affiche avec un lien. Vous pouvez envoyer ce lien par e-mail, l’incorporer dans le code (comme un iFrame) ou le coller directement dans une page web ou un blog.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web**, vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, la boîte de dialogue **Code incorporé** s’affiche :
+6. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web**, vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, la boîte de dialogue **Code incorporé** s’affiche :
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -73,7 +77,7 @@ Le tableau suivant fournit des instructions sur le mode d’affichage et les eff
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Conseils et astuces pour la hauteur et la largeur de l’iFrame
 
-Un code incorporé **Publier sur le web** ressemble à ce qui suit :
+Un code incorporé **Publier sur le web** se présente comme l’exemple suivant :
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -83,11 +87,11 @@ Pour obtenir un ajustement idéal, vous pouvez essayer d’ajouter 56 pixels à
 
 | Proportions | Taille | Dimensions (largeur x hauteur) |
 | --- | --- | --- |
-| 16:9 |Petite |640 x 416 px |
-| 16:9 |Moyenne |800 x 506 px |
-| 16:9 |Grande |960 x 596 px |
+| 16:9 |Small |640 x 416 px |
+| 16:9 |Medium |800 x 506 px |
+| 16:9 |Large |960 x 596 px |
 | 4:3 |Petite |640 x 536 px |
-| 4:3 |Moyenne |800 x 656 px |
+| 4:3 |Medium |800 x 656 px |
 | 4:3 |Grande |960 x 776 px |
 
 ## <a name="manage-embed-codes"></a>Gérer des codes incorporés
@@ -141,16 +145,27 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la majeure pa
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 
-Les administrateurs Power BI peuvent activer ou désactiver la fonctionnalité **Publier sur le web**. Ils peuvent également restreindre l’accès à des groupes spécifiques, ce qui peut impacter votre capacité à créer un code incorporé.
+Le paramètre **Publier sur le web** fournit des options pour lesquelles les utilisateurs peuvent créer des codes incorporés.
+
+![Paramètre Publier sur le web](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+Vous devrez contacter un administrateur Power BI pour créer un code incorporé lorsque l’option **Choisir comment fonctionnent les codes incorporés** est définie sur **Autoriser uniquement les codes incorporés existants** et que le paramètre **Publier sur le web** est **Activé**.
+
+![Invite Publier sur le web](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+Les administrateurs Power BI peuvent activer ou désactiver la fonctionnalité **Publier sur le web**. Ils peuvent également restreindre l’accès à des groupes spécifiques, ce qui peut impacter votre capacité à créer un code incorporé. Les options présentées dans l’interface utilisateur varient en fonction de la nature du paramètre **Publier sur le web**.
 
 |Caractéristique |Activée pour toute l’organisation |Désactivée pour toute l’organisation |Groupes de sécurité spécifiques   |
 |---------|---------|---------|---------|
 |**Publier sur le web** sous le menu **Fichier** du rapport|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
 |**Gérer les codes d’incorporation** sous **Paramètres**|Activée pour tous|Activée pour tous|Activée pour tous.<br><br>Option * **Supprimer** uniquement pour les utilisateurs ou groupes autorisés.<br>* **Obtenir les codes** activé pour tous.|
-|**Codes d’incorporation** au sein du portail d’administration|L’état reflète une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état affiche **violation**.|
+|**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des valeurs suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des valeurs suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état affiche **violation**.|
 |Rapports publiés existants|Tout activé|Tout désactivé|Les rapports continuent à être restitués pour tous.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>Présentation de la colonne d’état du code incorporé
+
+>[!Note]
+>Examinez régulièrement les codes incorporés que vous avez publiés et supprimez ceux qui n’ont plus besoin d’être accessibles publiquement. 
 
 La page **Gérer des codes incorporés** comprend une colonne d’état. Par défaut, les codes incorporés sont **actifs**, mais peuvent aussi présenter l’un des états listés ci-dessous.
 
@@ -178,7 +193,7 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 
 Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette approche garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
-Le cache est un cache à long terme, donc si vous mettez à jour la définition du rapport (par exemple, si vous changez son mode d’affichage) ou actualisez les données du rapport, vous pouvez attendre environ une heure avant que les modifications ne soient répercutées dans la version du rapport consultée par vos utilisateurs. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** uniquement quand vous êtes satisfait des paramètres.
+Le cache étant un cache à long terme, si vous mettez à jour la définition de rapport (par exemple, si vous changez son mode d’affichage) ou actualisez les données du rapport, les modifications se reflèteront dans la version du rapport consultée par vos utilisateurs au bout d’une heure environ. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** uniquement quand vous êtes satisfait des paramètres.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

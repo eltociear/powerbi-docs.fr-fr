@@ -7,15 +7,15 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 2485d9120b10b41d193189de383a1a92b15378d5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 116ff1df7ddc75df79e6f2f28296543449498599
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010989"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894711"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Modifier l’interaction des visuels dans un rapport Power BI
 Si vous avez des autorisations de modification sur un rapport, vous pouvez utiliser des **interactions entre visuels** pour changer l’impact entre les visualisations d’une page de rapport. 
@@ -52,7 +52,7 @@ Si vous disposez des droits d'édition d'un rapport, vous pouvez activer les con
 
         ![Liste déroulante des interactions entre les visuels](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. Pour afficher les commandes d’interaction entre visualisations, sélectionnez **Modifier les interactions**. Power BI ajoute les icônes de filtrage et de sélection à toutes les autres visualisations de la page de rapport. Vous pouvez maintenant modifier la façon dont la visualisation sélectionnée interagit avec les autres visualisations dans la page du rapport.
+3. Pour afficher les commandes d’interaction entre visualisations, sélectionnez **Modifier les interactions**. Power BI ajoute les icônes de filtrage et de sélection à toutes les autres visualisations de la page de rapport. Nous pouvons voir que le compartimentage filtre le graphique en courbes et la carte, et qu’il met en surbrillance l’histogramme. Vous pouvez maintenant modifier la façon dont la visualisation sélectionnée interagit avec les autres visualisations dans la page du rapport.
    
     ![rapport avec l’option Interactions entre les visuels activée](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -61,25 +61,32 @@ Si vous disposez des droits d'édition d'un rapport, vous pouvez activer les con
 Familiarisez-vous avec la façon dont vos visualisations interagissent en sélectionnant une par une chaque visualisation sur votre page de rapport.  Sélectionnez un point de données, une barre ou une forme, puis observez l'impact sur les autres visualisations. Si le comportement affiché ne vous convient pas, vous pouvez modifier les interactions. Ces modifications sont enregistrées avec le rapport, de sorte que vous et les utilisateurs de votre rapport aurez la même expérience d'interaction visuelle.
 
 
-Déterminez l’impact de la **visualisation sélectionnée** sur les autres visualisations.  Répétez éventuellement cette opération pour toutes les autres visualisations de la page de rapport.
+Commencez par sélectionner une visualisation pour l’activer.  Notez que toutes les autres visualisations de la page présentent maintenant des icônes d’interaction. L’icône en gras est celle qui est appliquée. Déterminez maintenant l’impact que la **visualisation sélectionnée** doit avoir sur les autres.  Répétez éventuellement cette opération pour toutes les autres visualisations de la page de rapport.
+
+Si la visualisation sélectionnée doit :
    
-   * Si le filtrage croisé doit être appliqué à la visualisation, sélectionnez l’icône **filtre** ![icône de filtre](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * Si la sélection croisée doit être appliquée à la visualisation, sélectionnez l’icône **sélection** ![icône de sélection](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * Si elle n’a aucun impact, sélectionnez l’icône **aucun impact** ![icône aucun impact](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * filtrer de façon croisée l’une des autres visualisations de la page, sélectionnez l’icône **filtrer** en haut à droite de cette visualisation ![icône de filtre](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * mettre en surbrillance l’une des autres visualisations de la page, sélectionnez l’icône **mettre en surbrillance** ![icône de surbrillance](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * n’avoir aucun impact sur les autres visualisations de la page, sélectionnez l’icône **aucun impact** ![icône aucun impact](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## <a name="change-the-interactions-of-drillable-visualizations"></a>Modifier les interactions des visualisations explorables
 [Certaines visualisations Power BI peuvent être explorées](consumer/end-user-drill.md). Par défaut, lorsque vous explorez une visualisation, elle n'a aucun impact sur les autres visualisations de la page du rapport. Mais, ce comportement peut être modifié. 
-
-1. Sélectionnez le visuel explorable pour l’activer. 
 
 > [!TIP]
 > Testez-le vous-même en utilisant l'[exemple de fichier PBIX Ressources humaines](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). Vous disposez d’un histogramme dont l'onglet **Nouvelles recrues** a été développé.
 >
 
+1. Sélectionnez le visuel explorable pour l’activer. 
+
+2. Pour activer l’exploration, sélectionnez l’icône Explorer au niveau du détail.
+
+    ![Activer l’exploration](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. Dans la barre de menus, sélectionnez **Format** > **L'exploration filtre les autres visuels**.  Maintenant, quand vous explorez une visualisation, les autres visualisations de la page de rapport changent pour refléter votre sélection d’exploration actuelle. 
 
-    ![activer L'exploration filtre les autres visuels](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![activer L'exploration filtre les autres visuels](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. Si le comportement affiché ne vous convient pas, vous pouvez modifier les interactions [comme ci-dessus](#change-the-interaction-behavior).
     
 ## <a name="next-steps"></a>Étapes suivantes
 [Filtrage et mise en évidence dans les rapports Power BI](power-bi-reports-filters-and-highlighting.md)

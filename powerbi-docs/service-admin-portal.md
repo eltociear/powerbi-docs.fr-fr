@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885298"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76819580"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -203,11 +203,24 @@ L’image suivante présente le message qui s’affiche quand vous faites un par
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
-Les utilisateurs de l’organisation peuvent publier des rapports sur le web. [En savoir plus](service-publish-to-web.md)
+Les utilisateurs de l’organisation peuvent publier des rapports sur le web. [En savoir plus](service-publish-to-web.md). Cela rend le rapport et les données qu’il contient accessibles à n’importe qui sur le web.
+
+> [!NOTE]
+> Un administrateur Power BI doit autoriser la création de codes incorporés Publier sur le web. Les organisations peuvent diposer déjà de codes incorporés. Pour examiner les rapports actuellement publiés, consultez la page [Codes incorporés](service-admin-portal.md#embed-codes).
 
 L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Publier sur le web** est activé.
 
-![Paramètre Publier sur le web](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publier sur le web dans le menu Fichier](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Le paramètre **Publier sur le web** fournit des options pour lesquelles les utilisateurs peuvent créer des codes incorporés.
+
+![Paramètre Publier sur le web](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Les utilisateurs sont invités à contacter l’administrateur Power BI pour demander l’autorisation de créer un code incorporé lorsque l’option **Choisir comment fonctionnent les codes incorporés** est définie sur **Autoriser uniquement les codes incorporés existants** et que le paramètre **Publier sur le web** est **Activé**.
+
+![Invite Publier sur le web](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Les options présentées aux utilisateurs dans l’interface utilisateur varient en fonction de la nature du paramètre **Publier sur le web**.
 
@@ -449,7 +462,7 @@ Pour plus d’informations sur la gestion des paramètres de Power BI Embedded (
 
 ## <a name="embed-codes"></a>Codes incorporés
 
-En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont générés pour votre locataire. Vous pouvez également révoquer ou supprimer des codes. [En savoir plus](service-publish-to-web.md)
+En tant qu’administrateur, vous pouvez afficher les codes incorporés générés pour votre tenant pour partager publiquement les rapports. Vous pouvez également révoquer ou supprimer des codes. [En savoir plus](service-publish-to-web.md)
 
 ![Codes incorporés au sein du portail d’administration Power BI](media/service-admin-portal/embed-codes.png)
 

@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836717"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913546"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -33,7 +33,7 @@ Une autre utilisation des paramètres de chaîne de requête concerne la créati
 
 Avec des paramètres, vous pouvez filtrer le rapport pour une ou plusieurs valeurs, même si ces valeurs contiennent des espaces ou des caractères spéciaux. La syntaxe de base est assez simple. Il suffit d’accéder à l’URL du rapport, d’ajouter un point d’interrogation, puis d’ajouter la syntaxe du filtre.
 
-URL?filter=***Tableau***/***Champ*** eq '***valeur***'
+*URL*?filter=*Tableau*/*Champ* eq '*valeur*'
 
 ![URL avec filtre](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -84,6 +84,18 @@ Notre rapport étant filtré sur la Caroline du Nord, les visualisations affich�
 
 ![Rapport filtré pour Caroline du Nord](media/service-url-filters/power-bi-report4.png)
 
+## <a name="filter-on-more-than-one-value-in-a-field"></a>Filtrer sur plusieurs valeurs d’un champ
+
+Pour filtrer sur plusieurs valeurs dans un champ unique, on utilise l’opérateur **in** au lieu de l’opérateur **and**. La syntaxe est :
+
+*URL*?filter=*Tableau*/*Champ* **in** ('*valeur1*', '*valeur2*')
+
+Reprenons le même exemple : pour filtrer le rapport afin d’afficher uniquement les données des magasins situés en « NC » (Caroline du Nord) ou au « TN » (Tennessee), ajoutez ceci à l’URL :
+
+?filter=Store/Territory in ('NC', 'TN')
+
+Pour obtenir une liste d’autres opérateurs utiles, consultez le tableau [Opérateurs](#operators) plus loin dans cet article.
+
 ## <a name="filter-on-multiple-fields"></a>Filtrer sur plusieurs champs
 
 Vous pouvez également filtrer plusieurs champs en ajoutant des paramètres supplémentaires à votre URL. Revenons à notre paramètre de filtre d’origine.
@@ -97,8 +109,6 @@ Pour filtrer sur des champs supplémentaires, ajoutez un '**and**' et un autre c
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="operators"></a>Opérateurs
 

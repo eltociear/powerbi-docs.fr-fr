@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040410"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895471"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -41,25 +41,24 @@ Dans cet exemple, chaque ligne du visuel de la matrice tout à droite affiche le
 
 Lorsque vous examinez des totaux et des sous-totaux, n’oubliez pas que ces valeurs sont basées sur les données sous-jacentes. Elles ne sont pas uniquement basées sur des valeurs visibles.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Développer et réduire des en-têtes de lignes
+Il existe deux manières de développer des en-têtes de lignes. La première se fait par le biais du menu contextuel, qui comporte des options pour développer l’en-tête de ligne sélectionné, le niveau tout entier ou absolument tout jusqu’au dernier niveau de la hiérarchie. Il existe des options similaires pour réduire les en-têtes de lignes.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+Vous pouvez également ajouter des boutons +/-aux en-têtes de lignes grâce au volet Mise en forme sous la carte **En-têtes de lignes**. Par défaut, les icônes correspondent à la mise en forme de l’en-tête de ligne, mais vous pouvez personnaliser la couleur et la taille des icônes séparément si vous le souhaitez.
+
+Une fois activées, elles fonctionnent comme les icônes de tableau croisé dynamique dans Excel.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+L’état de développement de la matrice sera enregistré avec le rapport. Une matrice peut être épinglée à un tableau de bord développé ou réduit. Lorsque cette vignette de tableau de bord est sélectionnée et que le rapport s’ouvre, l’état de développement peut encore être modifié dans le rapport. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Utilisation de la descente dans la hiérarchie avec le visuel de matrice
 Le visuel de la matrice vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
 
@@ -183,6 +182,16 @@ Votre matrice ou votre table peuvent avoir du contenu que vous souhaitez utilise
 * La copie sera une autre visualisation matricielle, mais ne contiendra que vos données copiées.
 
     ![Capture d'écran montrant un exemple visuel de la copie](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Définir une valeur de matrice comme URL personnalisée
+
+Si vous avez une colonne ou une mesure qui contient des URL de site web, vous pouvez utiliser la mise en forme conditionnelle pour appliquer ces URL à des champs sous forme de liens actifs. Vous trouverez cette option sous la carte **Mise en forme conditionnelle** dans le volet Mise en forme.
+
+![Carte de filtres montrant les lignes choisies](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Activez **URL Web**, puis sélectionnez un champ à utiliser comme URL de la colonne. Une fois appliquées, les valeurs de ce champ (colonne) deviennent des liens actifs. Placez le curseur dessus pour voir le lien, puis sélectionnez-le pour accéder à cette page. 
+
+Pour plus d’informations, consultez [Mise en forme conditionnelle des tableaux](../desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Couleurs d’ombrage et de police avec les visuels Matrice
 Avec le visuel de matrice, vous pouvez appliquer la mise en forme conditionnelle (couleurs et ombrage ainsi que barres de données) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.

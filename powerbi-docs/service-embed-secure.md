@@ -1,20 +1,20 @@
 ---
 title: Incorporer un rapport dans un site web ou portail sécurisé
 description: La fonctionnalité d’intégration de Power BI permet aux utilisateurs d’incorporer des rapports dans les portails web internes de manière simple et sécurisée.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4495a2021f008326d76c7fd9ff686d639827e90
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565752"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913607"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -50,7 +50,7 @@ L’option **Incorporer** ne permet pas automatiquement aux utilisateurs de voir
 
 Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Office 365, vous pouvez lister l’utilisateur comme membre de l’espace de travail. Pour plus d’informations, consultez [Gérer l’espace de travail dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Licences
 
 Pour que les utilisateurs puissent voir le rapport incorporé, ils ont besoin d’une licence Power BI Pro ou le contenu doit se trouver dans un espace de travail qui se trouve dans une [capacité Power BI Premium (référence SKU EM ou P)](service-admin-premium-purchase.md).
 
@@ -129,7 +129,11 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 
 * Certains navigateurs vous obligent à actualiser la page après la connexion, en particulier lorsque vous utilisez les modes InPrivate ou Incognito.
 
-* Pour obtenir une expérience d’authentification unique, utilisez l’option Incorporer dans SharePoint Online, ou générez une incorporation personnalisée à l’aide de la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
+* Vous risquez de rencontrer des problèmes si vous utilisez des versions de navigateur non prises en charge. Power BI prend en charge [la liste de navigateurs suivante](power-bi-browsers.md).
+
+* La version classique de SharePoint Server n’est pas prise en charge, car elle requiert des versions d’Internet Explorer antérieures à la version 11, ou l’activation du mode d’Affichage de compatibilité.
+
+* Pour obtenir une expérience d’authentification unique, utilisez [l’option Incorporer dans SharePoint Online](service-embed-report-spo.md), ou générez une intégration personnalisée suivant la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
 
 * La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
 

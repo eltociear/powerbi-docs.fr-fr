@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 01/29/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 07fd9a00034a210dfbcc6cae4aa721e3b09bd37a
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74958560"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76889394"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -223,7 +223,7 @@ Avec la version Premium, tous les utilisateurs, qu’ils appartiennent ou non à
 
 ![Partage de contenu](media/service-premium-what-is/premium-sharing.png)
 
-Premium permet aux utilisateurs Pro de distribuer du contenu sans exiger que les destinataires disposent d’une licence Pro. Des licences Pro sont toutefois nécessaires pour les créateurs de contenu. Les créateurs se connectent aux sources de données, modélisent les données et créent des rapports et des tableaux de bord qui sont présentés sous la forme d’applications d’espace de travail. 
+Premium permet aux utilisateurs Pro de distribuer du contenu sans exiger que les destinataires disposent d’une licence Pro. Des licences Pro sont toutefois nécessaires pour les créateurs de contenu. Les créateurs se connectent aux sources de données, modélisent les données et créent des rapports et des tableaux de bord qui sont présentés sous la forme d’applications d’espace de travail. L’utilisateur sans licence Pro peut toujours accéder à un espace de travail qui se trouve dans une capacité Power BI Premium, à condition d’avoir le rôle Visionneur. 
 
 Pour plus d’informations, consultez [Gestion des licences Power BI](service-admin-licensing-organization.md).
 

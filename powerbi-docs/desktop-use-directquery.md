@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759196"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889279"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec *Power BI Desktop*, quand vous vous connectez à une source de données, vous pouvez toujours importer une copie des données dans Power BI Desktop. Pour certaines sources de données, une autre approche est possible : vous connecter directement à la source de données à l’aide de DirectQuery.
@@ -55,9 +55,9 @@ Il existe actuellement quelques limitations à l’utilisation de DirectQuery :
 
 - Des limitations sont imposées aux expressions DAX autorisées dans les mesures pour garantir des performances acceptables aux requêtes envoyées à la source de données sous-jacente.
 
-- Le retour de données est limité à un million de lignes avec DirectQuery. Cette limite ne s’applique pas aux agrégations ou calculs utilisés pour créer le jeu de données retourné à l’aide de DirectQuery. Elle s’applique uniquement aux lignes retournées.
+- Les données retournées sont limitées à un million de lignes avec DirectQuery, sauf avec une capacité Premium. Cette limite ne s’applique pas aux agrégations ou calculs utilisés pour créer le jeu de données retourné à l’aide de DirectQuery. Elle s’applique uniquement aux lignes retournées. Les capacités Premium peuvent définir des limites de lignes maximales, comme le décrit [ce billet](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    Par exemple, vous pouvez agréger 10 millions de lignes avec une requête exécutée sur la source de données. La requête retourne avec précision les résultats de cette agrégation à Power BI à l’aide de DirectQuery si les données Power BI retournées représentent moins de un million de lignes. Si plus d’un million de lignes sont retournées par DirectQuery, Power BI génère une erreur.
+    Par exemple, vous pouvez agréger 10 millions de lignes avec une requête exécutée sur la source de données. La requête retourne avec précision les résultats de cette agrégation à Power BI à l’aide de DirectQuery si les données Power BI retournées représentent moins de un million de lignes. Si DirectQuery retourne plus d’un million de lignes, Power BI retourne une erreur (sauf avec la capacité Premium, si le nombre de lignes est inférieur à la limite définie par l’administrateur).
 
 ## <a name="important-considerations-when-using-directquery"></a>Considérations importantes concernant l’utilisation de DirectQuery
 Si vous utilisez DirectQuery, prenez en considération les trois points suivants :

@@ -6,30 +6,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 006288cd380a56ba57697ed285b04b38985b69db
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831632"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76894979"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
 Power BI vous propose de nombreuses façons de personnaliser vos tableaux de bord et vos rapports. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
 
-Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer ? Excellent ! Envoyez-la nous et nous verrons si nous pouvons l’ajouter à notre liste.
+Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer ? Great! Envoyez-la nous et nous verrons si nous pouvons l’ajouter à notre liste.
 
 * Appliquer un thème à l’ensemble du rapport
 * Modifier la couleur d’un seul point de données
+* Mise en forme conditionnelle
 * Baser les couleurs du graphique sur une valeur numérique
 * Baser la couleur des points de données sur une valeur de champ
 * Personnaliser les couleurs de l’échelle de couleurs
 * Utiliser des échelles de couleurs divergentes
+* Ajouter de la couleur aux lignes des tableaux
 * Comment annuler dans Power BI
 
-Pour apporter des modifications, vous devez modifiez un rapport. Ouvrez le rapport, puis sélectionnez **Modifier le rapport** dans la barre de menus, comme illustré dans l’image suivante.
+Pour apporter des changements, vous devez disposer d’autorisations de modification du rapport. Dans Power BI Desktop, ouvrez le rapport en affichage **Rapport**. Dans le service Power BI, cela signifie ouvrir le rapport et sélectionner **Modifier** dans la barre de menus, comme l’illustre l’image suivante.
 
 ![où trouver le menu Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -47,7 +49,7 @@ Ici, nous avons appliqué le thème **Innover** au rapport Ventes et marketing.
 ![Thème Innover appliqué](media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Modifier la couleur d’un seul point de données
-Parfois, il peut être nécessaire de mettre en évidence un point de données particulier. Il peut s’agir du chiffre de ventes pour le lancement d’un nouveau produit ou de scores d’amélioration de la qualité après le lancement d’un nouveau programme. Avec Power BI, vous pouvez mettre en évidence un point de données spécifique en modifiant sa couleur.
+Parfois, il peut être nécessaire de mettre en évidence un point de données particulier. Il peut s’agir du chiffre de ventes pour le lancement d’un nouveau produit ou de l’amélioration des scores de qualité après la mise en place d’un nouveau programme. Avec Power BI, vous pouvez mettre en évidence un point de données spécifique en modifiant sa couleur.
 
 La visualisation suivante classe les unités vendues par segment de produit. 
 
@@ -55,7 +57,7 @@ La visualisation suivante classe les unités vendues par segment de produit.
 
 Maintenant imaginez que vous souhaitez appeler le segment **Convenience** pour afficher les performances de ce tout nouveau segment, à l’aide de la couleur. Voici les étapes à suivre :
 
-Développez la section **Couleurs des données**, puis mettez le curseur sur Activé pour **Tout afficher**. Cela affiche les couleurs de chaque élément de données de la visualisation. Modifiez l’un des points de données.
+Développez la carte **Couleurs des données**, puis positionnez le curseur **Tout afficher** sur Activé. Cela affiche les couleurs de chaque élément de données de la visualisation. Vous pouvez maintenant modifier les points de données de votre choix.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -71,7 +73,7 @@ Vous pouvez modifier la couleur d’un point de données pour un, plusieurs ou t
 
 ![graphique à barres avec des barres vertes, jaunes et bleues](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
-Vous pouvez réaliser toutes sortes de choses avec les couleurs. Dans la section suivante, nous parlerons des dégradés.
+Vous pouvez réaliser toutes sortes de choses avec les couleurs. Dans la section suivante, nous parlerons de mise en forme conditionnelle.
 
 ## <a name="conditional-formatting-for-visualizations"></a>Mise en forme conditionnelle pour les visualisations
 Il est souvent utile de définir les couleurs d’une visualisation de façon dynamique, en fonction de la valeur numérique d’un champ. Cela vous permet, par exemple, d’afficher une valeur différente pour la taille d’une barre, et d’afficher deux valeurs sur un même graphique. Vous pouvez également utiliser cette méthode pour mettre en évidence des points de données supérieurs (ou inférieurs) à une certaine valeur (par exemple, en mettant en surbrillance les régions à faible rentabilité).
@@ -79,7 +81,7 @@ Il est souvent utile de définir les couleurs d’une visualisation de façon dy
 Les sections suivantes présentent différentes manières de baser les couleurs sur une valeur numérique.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Baser la couleur des points de données sur une valeur
-Pour changer la couleur en fonction d’une valeur, sélectionnez une visualisation pour l’activer. Ouvrez le volet Mise en forme en sélectionnant l’icône représentant un rouleau de peinture, puis en développant la carte **Couleurs des données**. Pointez le curseur sur une carte, puis sélectionnez les trois points verticaux qui s’affichent et choisissez **Mise en forme conditionnelle**.  
+Pour changer la couleur en fonction d’une valeur, sélectionnez une visualisation pour l’activer. Ouvrez le volet Mise en forme en sélectionnant l’icône représentant un rouleau, puis ouvrez la carte **Couleurs des données**. Pointez le curseur sur une carte, puis sélectionnez les trois points verticaux qui s’affichent et choisissez **Mise en forme conditionnelle**.  
 
 ![sélectionner l’option de mise en forme conditionnelle en cliquant sur les trois points verticaux](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -103,9 +105,9 @@ Dans cette première image, notez comment les barres du graphique reflètent le 
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Maintenant, nous allons voir ce qui se passe si nous indiquons des valeurs numériques dans les zones **Minimum** et **Maximum**. Sélectionnez **Nombre** dans les zones déroulantes **Minimum** et **Maximum**, puis définissez **Minimum** sur 3 500 et **Maximum** sur 6 000.
+Maintenant, nous allons voir ce qui se passe si nous indiquons des valeurs numériques dans les zones **Minimum** et **Maximum**. Sélectionnez **Personnalisé** dans les zones déroulantes **Minimum** et **Maximum**, puis définissez **Minimum** sur 3 500 et **Maximum** sur 6 000.
 
-![Mettre en forme de façon conditionnelle en fonction des nombres](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-number.png)
+![Mettre en forme de façon conditionnelle en fonction des nombres](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-numbers.png)
 
 Quand nous définissons ces valeurs, le dégradé n’est plus appliqué aux valeurs du graphique qui sont inférieures à la valeur **Minimum** ou supérieures à la valeur **Maximum**. Toute barre ayant une valeur supérieure à la valeur **Maximum** est de couleur verte et toute barre dont la valeur est inférieure à la valeur **Minimum** est de couleur rouge.
 
@@ -116,22 +118,36 @@ Parfois, vos données peuvent avoir une échelle naturellement divergente. Par e
 
 Pour utiliser des échelles de couleurs divergentes, cochez la case **Divergent**. Quand **Divergent** est activé, un autre sélecteur de couleurs (appelé **Centre**) s’affiche, comme indiqué dans l’image suivante.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
+![Boîte de dialogue Couleur par défaut avec Échelle de couleurs sélectionné](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging-colors.png)
 
 Quand le curseur **Divergent** est activé, vous pouvez définir séparément les couleurs des valeurs **Minimum**, **Maximum** et **Centre**. Dans l’image suivante, **Centre** a la valeur 0,2 pour **% Market Share SPLY YTD**. Les barres dont la valeur est supérieure à 1 seront donc d’une nuance de vert et les barres dont la valeur est inférieure à 1 seront d’une nuance de rouge.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+![Histogramme avec barres rouges et vertes](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
+
+## <a name="add-color-to-table-rows"></a>Ajouter de la couleur aux lignes des tableaux
+Les tableaux et les matrices offrent de nombreuses options de mise en forme des couleurs. 
+
+![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+
+L’une des méthodes les plus rapides pour appliquer une couleur à un tableau ou une matrice consiste à ouvrir l’onglet Mise en forme et à sélectionner **Style**.  Dans l’image ci-dessous, nous avons sélectionné **Bold header flashy rows** (Lignes fluo d’en-tête en gras).
+
+![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+
+Testez d’autres options de mise en forme des couleurs. Dans cette image, nous avons modifié la couleur d’arrière-plan sous **En-têtes de colonne**, ainsi que la **Couleur d’arrière-plan** et la **Couleur d’arrière-plan alternative** des **Valeurs** (lignes).
+
+![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Comment annuler dans Power BI
 Comme de nombreux autres services et logiciels Microsoft, Power BI permet d’annuler facilement la dernière commande. Par exemple, supposons que vous ayez modifié la couleur d’un point de données ou d’une série de points de données, et que vous n’aimiez pas la couleur une fois que vous la voyez dans la visualisation. Vous voulez rétablir la couleur précédente, mais vous ne vous souvenez pas exactement de quelle couleur il s’agissait.
 
 Pour **Annuler** votre dernière action ou les quelques actions précédentes, il vous suffit de taper CTRL+Z.
 
+Pour abandonner toutes les modifications apportées à une carte Mise en forme, sélectionnez **Rétablir les valeurs par défaut**.
+
+![Carte Mise en forme indiquant Rétablir les valeurs par défaut en bas](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
+
 ## <a name="feedback"></a>Commentaires
 Vous avez une astuce que vous aimeriez partager ? Envoyez-la nous et nous verrons si nous pouvons l’inclure dans notre rubrique.
-
->[!NOTE]
->Les personnalisations des couleurs, des axes et autres qui sont disponibles quand l’icône **Format** est sélectionnée sont également disponibles dans Power BI Desktop.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Prise en main de la mise en forme des couleurs et des propriétés d’axe](service-getting-started-with-color-formatting-and-axis-properties.md)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886110"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889233"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Effectuer la migration des rapports SQL Server Reporting Services vers Power BI
 
@@ -104,6 +104,8 @@ Toutefois, les types d’éléments SSRS suivants ne peuvent pas faire l’obje
 
 Si vos rapports RDL s’appuient sur des fonctionnalités qui ne sont [pas encore prises en charge par les rapports paginés Power BI](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), vous pouvez envisager de les redévelopper comme des rapports [Power BI](../consumer/end-user-reports.md). Même si vos rapports RDL peuvent faire l’objet d’une migration, nous vous recommandons de les moderniser sous forme de rapports Power BI, quand cela vous paraît judicieux.
 
+Si vos rapports RDL doivent récupérer des données à partir de _sources de données locales_, ils ne peuvent pas utiliser l’authentification unique (SSO). Actuellement, toutes les extractions de données à partir de ces sources sont effectuées dans le contexte de sécurité du _compte d’utilisateur de la source de données de la passerelle_. Il n’est pas possible pour SQL Server Analysis Services (SSAS) d’appliquer la Sécurité au niveau des lignes (SNL) pour chaque utilisateur.
+
 En général, les rapports paginés Power BI sont optimisés pour l’**impression** et la **génération de PDF**. Les rapports Power BI sont optimisés pour l’**exploration et l’interactivité**. Pour plus d’informations, consultez [Quand utiliser des rapports paginés dans Power BI](report-paginated-or-power-bi.md).
 
 ### <a name="prepare"></a>Préparer
@@ -116,6 +118,8 @@ L’objectif de la phase de _préparation_ consiste à s’assurer que tout est 
 1. Familiarisez-vous avec le partage Power BI et planifiez la façon dont vous allez distribuer le contenu en publiant des [applications Power BI](../service-create-distribute-apps.md).
 1. Vous pouvez utiliser des [jeux de données Power BI partagés](../service-datasets-build-permissions.md) à la place de vos sources de données partagées SSRS.
 1. Utilisez [Power BI Desktop](../desktop-what-is-desktop.md) pour développer des rapports optimisés pour les appareils mobiles (par exemple à l’aide du [visuel personnalisé Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview)) au lieu de vos rapports mobiles et de vos indicateurs de performance clés SSRS.
+1. Réévaluez l’utilisation du champ prédéfini **UserID** dans vos rapports. Si vous vous fiez à **UserID** pour sécuriser les données des rapports, sachez que, pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), il retourne le nom d’utilisateur principal (UPN). Ainsi, au lieu de renvoyer le nom du compte NT, par exemple _AW\mblythe_, le champ intégré renvoie un résultat du type _m.blythe&commat;adventureworks.com_. Vous devrez réviser vos définitions de jeu de données, et éventuellement les données sources. Après révision et publication, nous vous recommandons de bien vérifier que les autorisations de données fonctionnent comme prévu dans vos rapports.
+1. Réévaluez l’utilisation du champ prédéfini **ExecutionTime** dans vos rapports. Pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), le champ prédéfini retourne la date/heure _au format UTC (temps universel coordonné)_ . Cela peut avoir un impact sur les valeurs par défaut des paramètres et les étiquettes de durée d’exécution des rapports (généralement ajoutées aux pieds de page des rapports).
 1. Vérifiez que vos auteurs de rapports ont installé [Power BI Report Builder](../report-builder-power-bi.md) et que les versions ultérieures peuvent être facilement distribuées dans l’ensemble de votre organisation.
 
 ## <a name="migration-stage"></a>Étape de migration

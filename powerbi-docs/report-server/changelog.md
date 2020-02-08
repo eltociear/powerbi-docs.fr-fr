@@ -7,19 +7,44 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
-ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/27/2020
+ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874269"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819534"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
 Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
 
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
+
+
+## <a name="january-2020"></a>Janvier 2020
+- **Power BI Report Server**
+    - *Version : 1.6.7327.3007 (build 15.0.1102.759), date de publication : 23 janvier 2020*
+         - Fonctionnalités
+            -  Exportation vers Excel à partir de rapports Power BI.
+           -  Prise en charge des jeux de données Power BI Premium pour les rapports paginés.
+           -  Prise en charge d’AltText (texte de remplacement) pour les éléments de rapports paginés.
+           -  Prise en charge des en-têtes personnalisés.
+           -  Prise en charge d’Azure SQL Managed Instance comme catalogue.
+           -  Chiffrement transparent de base de données pour le catalogue.
+        - Mises à jour de sécurité
+        - Corrections de bogues
+            - Correction de l’accessibilité des lecteurs d’écran, de la génération de rapports et de la navigation au clavier.
+            - Correction de l’enregistrement des titres de rapports sur plusieurs octets.
+            - Correction de la journalisation détaillée qui affecte la fiabilité du serveur de rapports.
+          - Correction permettant d’obtenir des données en direct dans les rapports Power BI sur mobile.
+          - Correction de l’application de la mise en surbrillance sur plusieurs visuels dans l’exportation filtrée de rapports Power BI.
+          - Correction de l’écriture des pieds de page lors de l’exportation vers Word avec expression de la visibilité des rapports paginés. 
+     
+- **Power BI Desktop optimisé pour Power BI Report Server**
+    - *Version : 2.76.5678.1521 (janvier 2020), date de publication : 23 janvier 2020* (nouvelle build et nouvelle version)
+        - Contient les changements nécessaires pour la connexion à Power BI Report Server (janvier 2020)        
+
 
 ## <a name="september-2019"></a>Septembre 2019
 - **Power BI Report Server**

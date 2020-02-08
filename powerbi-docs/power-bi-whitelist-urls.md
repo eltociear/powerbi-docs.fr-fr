@@ -1,26 +1,26 @@
 ---
 title: URL Power BI pour mise sur liste verte
-description: Cet article décrit les points de terminaison qui doivent être accessibles pour les clients à l’aide de Power BI.
+description: Cet article présente les points de terminaison d’URL et les ports à mettre sur liste fiable pour la connectivité à Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: cd13e36ca7216036a22db332a508e3c825fecf4b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698782"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894657"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL Power BI pour mise sur liste verte
 
 **Le service en ligne Power BI**, également appelé « application SaaS Power BI », nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant le service en ligne Power BI.
 
-Pour utiliser le service en ligne Power BI, vous devez avoir accès à une connexion aux points de terminaison marqués **obligatoires** dans les tableaux ci-dessous et aux points de terminaison marqués **obligatoires** sur les sites liés. Si le lien vers un site externe fait référence à une section spécifique, vous devez seulement passer en revue les points de terminaison de cette section.
+Pour utiliser le service en ligne Power BI, vous devez être en mesure de vous connecter aux points de terminaison marqués **obligatoires** dans les tableaux ci-dessous et aux points de terminaison marqués **obligatoires** sur les sites liés. Si le lien vers un site externe fait référence à une section spécifique, vous devez seulement passer en revue les points de terminaison de cette section.
 
 Les points de terminaison marqués **facultatifs** peuvent également être **placés dans la liste verte** pour que des fonctionnalités spécifiques puissent fonctionner.
 
@@ -46,16 +46,17 @@ Pour l’utilisation générale de Power BI, vous devez être en mesure de vous 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Obligatoire :** API de back-end | *.analysis.windows.net | TCP 443 |
-| 2 | **Obligatoire :** Intégration Office 365 | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
-| 3 | **Obligatoire :** Portail | app.powerbi.com | TCP 443 |
-| 4 | **Obligatoire :** Données de télémétrie du service | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Facultatif :** Messages d’information | dynmsg.modpim.com | TCP 443 |
-| 6 | **Facultatif :** Sondages NPS | nps.onyx.azure.net | TCP 443 |
+| 2 | **Obligatoire :** API de back-end | *.pbidedicated.windows.net | TCP 443 |
+| 3 | **Obligatoire :** Intégration Office 365 | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
+| 4 | **Obligatoire :** Portail | app.powerbi.com | TCP 443 |
+| 5 | **Obligatoire :** Données de télémétrie du service | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Facultatif :** Messages d’information | dynmsg.modpim.com | TCP 443 |
+| 7 | **Facultatif :** Sondages NPS | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
 
-Pour effectuer des fonctions d’administration au sein de Power BI, vous devez pouvoir vous connecter aux points de terminaison dans les sites liés ci-dessous.
+Pour effectuer des fonctions d’administration dans Power BI, vous devez être en mesure de vous connecter aux points de terminaison des sites liés ci-dessous.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -64,7 +65,7 @@ Pour effectuer des fonctions d’administration au sein de Power BI, vous devez 
 
 ## <a name="getting-data"></a>Obtention de données
 
-Pour obtenir des données auprès de sources de données spécifiques, comme OneDrive, vous devez être en mesure de vous connecter aux points de terminaison dans le tableau ci-dessous. L’accès à des domaines et URL Internet supplémentaires peut être nécessaire pour les sources de données spécifiques utilisées au sein de votre organisation.
+Pour obtenir des données auprès de sources de données spécifiques, comme OneDrive, vous devez être en mesure de vous connecter aux points de terminaison dans le tableau ci-dessous. L’accès à des domaines Internet et URL supplémentaires peut être nécessaire pour les sources de données spécifiques utilisées dans votre organisation.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -77,7 +78,7 @@ Pour obtenir des données auprès de sources de données spécifiques, comme One
 
 ## <a name="dashboard-and-report-integration"></a>Intégration des tableaux de bord et des rapports
 
-Power BI dépend de certains points de terminaison pour pouvoir prendre en charge vos tableaux de bord et vos rapports. Vous devez être en mesure de vous connecter aux points de terminaison dans le tableau et les sites liés ci-dessous.
+Power BI dépend de certains points de terminaison pour prendre en charge vos tableaux de bord et vos rapports. Vous devez être en mesure de vous connecter aux points de terminaison dans le tableau et les sites liés ci-dessous.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -86,7 +87,7 @@ Power BI dépend de certains points de terminaison pour pouvoir prendre en charg
 
 ## <a name="custom-visuals"></a>Visuels personnalisés
 
-Power BI dépend de certains points de terminaison pour pouvoir voir et accéder aux visuels personnalisés. Vous devez être en mesure de vous connecter aux points de terminaison dans le tableau et les sites liés ci-dessous.
+Power BI dépend de certains points de terminaison pour voir et accéder aux visuels personnalisés. Vous devez être en mesure de vous connecter aux points de terminaison dans le tableau et les sites liés ci-dessous.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -98,7 +99,7 @@ Power BI dépend de certains points de terminaison pour pouvoir voir et accéder
 
 ## <a name="related-external-sites"></a>Sites externes connexes
 
-Power BI établit des liaisons vers d’autres sites connexes. Ces sites incluent, entre autres, ceux liés à la documentation, au support et aux demandes de nouvelles fonctionnalités. Ces sites n’affectant pas les fonctionnalités de Power BI, vous pouvez les placer dans la liste verte si vous le souhaitez.
+Power BI établit des liaisons vers d’autres sites connexes. Ces sites hébergent la documentation, le support, les demandes de nouvelles fonctionnalités, etc. L’accès à ces sites n’affecte pas les fonctionnalités de Power BI. La liste verte est donc facultative.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |

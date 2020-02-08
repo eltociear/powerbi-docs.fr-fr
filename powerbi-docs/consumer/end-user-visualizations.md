@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c182639e97bcaf272c656d2ee2e002e7470efc40
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860987"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888521"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagir avec les visuels dans les rapports, les tableaux de bord et les applications
 
@@ -37,7 +37,7 @@ Pour la plupart de ces options, votre administrateur ou le *concepteur* peut dé
 
 
 > [!IMPORTANT]
-> Mais tout d’abord, parlons de Q&A. Q&A est l’outil de recherche en langage naturel de Power BI. Vous tapez une question à l’aide du langage naturel et Q&A répond à la question sous la forme d’un visuel. Q&A est un moyen pour les consommateurs de créer leurs propres visuels. Toutefois, les visuels que vous créez avec Q&A ne peuvent pas être enregistrés. Mais Q&A constitue une excellente option si vous voulez apprendre quelque chose de spécifique sur les données et que le concepteur n’a pas inclus cet élément dans un rapport ou un tableau de bord. Pour en savoir plus sur Q&A, consultez [Q&A pour les consommateurs](end-user-q-and-a.md).
+> Mais tout d’abord, parlons de Q&A. Q&A est l’outil de recherche en langage naturel de Power BI. Vous tapez une question à l’aide du langage naturel et Q&A répond à la question sous la forme d’un visuel. Questions et réponses permet aux consommateurs de créer leurs propres visuels à la volée. Toutefois, les visuels que vous créez avec Q&A ne peuvent pas être enregistrés. Mais Q&A constitue une excellente option si vous voulez apprendre quelque chose de spécifique sur les données et que le concepteur n’a pas inclus cet élément dans un rapport ou un tableau de bord. Pour en savoir plus sur Q&A, consultez [Q&A pour les consommateurs](end-user-q-and-a.md).
 
 
 
@@ -45,13 +45,13 @@ Pour la plupart de ces options, votre administrateur ou le *concepteur* peut dé
 |---------|---------|---------|--------|
 |[Ajouter des commentaires à un visuel pour vous-même ou démarrer une conversation sur le visuel avec des collègues](end-user-comment.md).     |  oui       |   oui      |  non  |
 |[Ouvrir et explorer le rapport où le visuel a été créé](end-user-tiles.md).     |    oui     |   N/A      |  non |
-|[Afficher la liste des filtres et des segments qui impactent le visuel](end-user-report-filter.md).     |    non     |   oui      |  oui |
+|[Afficher la liste des filtres et des segments qui impactent le visuel](end-user-report-filter.md).     |    oui, en mode Focus     |   oui      |  non |
 |[Ouvrir et explorer un visuel dans Questions et réponses (si le *concepteur* a utilisé Questions et réponses pour créer le visuel)](end-user-q-and-a.md).     |   oui      |   N/A      |  N/A  |
 |[Créer un visuel dans Questions et réponses (pour l’exploration, vous ne pourrez pas l’enregistrer)](end-user-q-and-a.md).     |   oui      |   si le concepteur a ajouté Questions et réponses au rapport      |  oui  |
-|[Demander à Power BI de rechercher pour vous des faits intéressants ou des tendances](end-user-insights.md) dans les données du visuel.  Ces visuels générés automatiquement sont appelés *insights*.     |    oui     |  pour le rapport entier, pas par visuel       | non   |
-|[Afficher un seule visuel à la fois avec le mode *Focus*](end-user-focus.md).     | oui        |   oui      | N/A  |
+|[Demander à Power BI de rechercher pour vous des faits intéressants ou des tendances](end-user-insights.md) dans les données du visuel.  Ces visuels générés automatiquement sont appelés *insights*.     |    oui, pour les vignettes    |  non       | non   |
+|[Afficher un seule visuel à la fois avec le mode *Focus*](end-user-focus.md).     | oui, pour les vignettes        |   oui, pour les visuels      | N/A  |
 |[Rechercher la dernière actualisation du visuel](end-user-fresh.md).     |  oui       |    oui     | N/A  |
-|[Afficher un seul visuel à la fois, sans bordures ni volets de navigation, à l’aide du mode *plein écran* ou *focus*](end-user-focus.md).     |   oui      |  oui       | par défaut  |
+|[Afficher un seul visuel à la fois, sans bordures ni volets de navigation, en mode *plein écran*](end-user-focus.md).     |   oui      |  oui       | par défaut  |
 |[Imprimer](end-user-print.md).     |  oui       |   oui      | non  |
 |[Explorer le visuel en ajoutant et en modifiant les filtres du visuel.](end-user-report-filter.md)     |    non     |   oui      | non  |
 |Pointer sur un visuel pour afficher des info-bulles et des détails supplémentaires.     |    oui     |   oui      | oui  |
@@ -60,8 +60,8 @@ Pour la plupart de ces options, votre administrateur ou le *concepteur* peut dé
 | [Modifier l’ordre de tri du visuel](end-user-change-sort.md). | non  | oui  | peut modifier le tri en reformulant la question  |
 | Ajoutez un projecteur à un visuel. | non  | oui  |  non |
 | [Exporter vers Excel.](end-user-export.md) | oui | oui | non|
-| [Créer une alerte](end-user-alerts.md) pour vous avertir lorsqu’une valeur dépasse un seuil que vous avez défini.  | oui  | Non  | non |
-| [Appliquer un filtrage croisé et une sélection croisée aux autres visuels de la page](end-user-report-filter.md).  | non      | oui  | non  |
+| [Créer une alerte](end-user-alerts.md) pour vous avertir lorsqu’une valeur dépasse un seuil que vous avez défini.  | oui  | non  | non |
+| [Appliquer un filtrage croisé et une sélection croisée aux autres visuels de la page](end-user-report-filter.md).  | non      | oui  | N/A |
 | [Explorer un visuel qui a une hiérarchie](end-user-drill.md).  | non  | oui   | non |
 
 ## <a name="next-steps"></a>Étapes suivantes

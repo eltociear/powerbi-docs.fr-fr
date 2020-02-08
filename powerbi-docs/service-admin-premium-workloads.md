@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831297"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889371"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -67,7 +67,7 @@ La charge de travail des jeux de données est activée par défaut et ne peut pa
 | **Nombre maximal de lignes intermédiaires** | Nombre maximal de lignes intermédiaires retournées par DirectQuery. La valeur par défaut est 1000000 et la plage autorisée est comprise entre 100000 et 2147483647. |
 | **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est définie par la référence SKU et la plage autorisée est comprise entre 0,1 et 10 Go. |
 | **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. |
-| **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible qui peut être utilisé pour des résultats temporaires dans une requête ou une mesure DAX. |
+| **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible dans la charge de travail qui peut être utilisé pour exécuter une requête MDX ou DAX. |
 | **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. |
 | **Actualisation automatique des pages (préversion)** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages. |
 | **Intervalle minimal d'actualisation** | Si l’actualisation automatique de la page est activée, il s’agit de l’intervalle minimal autorisé pour l’intervalle d’actualisation de la page. La valeur par défaut est de cinq minutes, et la valeur minimale autorisée est d’une seconde. |
@@ -99,11 +99,17 @@ Notez que ce paramètre s’applique uniquement aux requêtes DAX, alors que le 
 
 Utilisez ce paramètre pour contrôler l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. Certaines requêtes et certains calculs peuvent générer des résultats intermédiaires qui utilisent beaucoup de mémoire sur la capacité. Cette situation peut ralentir fortement l’exécution d’autres requêtes, donner lieu à l’éviction d’autres jeux de données de la capacité et provoquer des erreurs de mémoire insuffisante pour d’autres utilisateurs de la capacité.
 
-Ce paramètre s’applique à l’actualisation des données et à la génération des rapports. Le processus d’actualisation des données actualise les données de la source de données ainsi que les requêtes, sauf si l’actualisation des requêtes est désactivée. Si l’actualisation des requêtes est activée, cette limite de mémoire s’applique également aux requêtes. Quand une requête échoue, l’actualisation planifiée est mise dans un état d’échec, même si l’actualisation des données a réussi.
+Ce paramètre s’applique à toutes les requêtes DAX et MDX exécutées par les rapports Power BI, les rapports Analyser dans Excel, ainsi que d’autres outils susceptibles de se connecter via le point de terminaison XMLA.
+
+Notez que les opérations d’actualisation des données peuvent également exécuter des requêtes DAX dans le cadre de l’actualisation des vignettes de tableaux de bord et des caches de visuels une fois les données du jeu de données actualisées. De telles requêtes peuvent également échouer en raison de ce paramètre, ce qui peut faire apparaître l’opération d’actualisation des données en état d’échec, même si les données du jeu de données ont bien été mises à jour.
 
 #### <a name="query-timeout"></a>Délai d’expiration de la requête
 
-Utilisez ce paramètre pour mieux contrôler les requêtes de longue durée, lesquelles peuvent ralentir le chargement des rapports pour les utilisateurs. Ce paramètre s’applique à l’actualisation des données et à la génération des rapports. Le processus d’actualisation des données actualise les données de la source de données ainsi que les requêtes, sauf si l’actualisation des requêtes est désactivée. Si l’actualisation des requêtes est activée, ce délai d’expiration s’applique également aux requêtes.
+Utilisez ce paramètre pour mieux contrôler les requêtes de longue durée, lesquelles peuvent ralentir le chargement des rapports pour les utilisateurs.
+
+Ce paramètre s’applique à toutes les requêtes DAX et MDX exécutées par les rapports Power BI, les rapports Analyser dans Excel, ainsi que d’autres outils susceptibles de se connecter via le point de terminaison XMLA.
+
+Notez que les opérations d’actualisation des données peuvent également exécuter des requêtes DAX dans le cadre de l’actualisation des vignettes de tableaux de bord et des caches de visuels une fois les données du jeu de données actualisées. De telles requêtes peuvent également échouer en raison de ce paramètre, ce qui peut faire apparaître l’opération d’actualisation des données en état d’échec, même si les données du jeu de données ont bien été mises à jour.
 
 Ce paramètre s’applique à chaque requête, et pas à la durée d’exécution de toutes les requêtes liées à la mise à jour d’un jeu de données ou d’un rapport. Prenez l’exemple suivant :
 
@@ -144,7 +150,7 @@ Pour tirer parti du nouveau moteur de calcul, fractionnez l’ingestion des donn
 
 #### <a name="container-size"></a>Taille du conteneur
 
-Lors de l’actualisation d’un dataflow, la charge de travail du dataflow génère un conteneur pour chaque entité dans le dataflow. Chaque conteneur peut prendre de la mémoire jusqu’au volume spécifié dans le paramètre **Taille du conteneur. La valeur par défaut pour toutes les références SKU est 700 Mo. Vous pouvez souhaiter modifier ce paramètre si :
+Lors de l’actualisation d’un dataflow, la charge de travail du dataflow génère un conteneur pour chaque entité dans le dataflow. Chaque conteneur peut prendre de la mémoire jusqu’au volume spécifié dans le paramètre Taille du conteneur. La valeur par défaut pour toutes les références SKU est 700 Mo. Vous pouvez souhaiter modifier ce paramètre si :
 
 - L’actualisation des dataflows prend trop de temps ou l’actualisation d’un dataflow échoue en cas d’expiration du délai.
 - Les entités de dataflow incluent des étapes de calcul ; par exemple, une jointure.  

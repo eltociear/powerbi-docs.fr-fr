@@ -1,66 +1,57 @@
 ---
-title: Rechercher et trier votre contenu dans le service Power BI
-description: documentation sur la recherche et le tri de contenu dans Mon espace de travail Power BI
+title: Rechercher du contenu
+description: Documentation relative à la recherche de contenu dans le service Power BI.
 author: mihart
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/27/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64570b23700e125e9040f493630317c0c6350d0e
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861733"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889091"
 ---
-# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation : recherche et tri de votre contenu dans le service Power BI
+# <a name="navigation-for-power-bi-consumers-sorting-content"></a>Navigation pour les consommateurs de Power BI : trier du contenu
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Il existe plusieurs façons de parcourir votre contenu dans le service Power BI. Dans votre espace de travail, le contenu est organisé par type : tableaux de bord et rapports.  De plus, le contenu est également organisé par utilisation : favori, récent, application, partagé avec moi et par défaut. Pour assurer une navigation fluide, l’*Accueil* Power BI organise tout le contenu sur une page. Cette organisation du contenu vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.  
 
-## <a name="navigation-within-workspaces"></a>Navigation dans les espaces de travail
+Si vous utilisez le service Power BI depuis peu, vous n’avez pas beaucoup de contenus (tableaux de bord, rapports et applications). Mais, si vos collègues en partagent avec vous et que vous téléchargez des applications, vous pouvez vous retrouver avec de longues listes de contenus. C’est à ce moment-là que vous trouverez la recherche et le tri extrêmement utiles.
 
-Les *consommateurs* Power BI n’ont généralement qu’un seul espace de travail : **Mon espace de travail**. **Mon espace de travail** ne contient du contenu que si vous avez téléchargé les exemples Microsoft, ou créé ou téléchargé vos propres tableaux de bord, rapports ou applications.  
+## <a name="searching-for-content"></a>Recherche de contenu
+ La recherche est disponible presque partout dans le service Power BI. Repérez simplement la zone ou l’icône de recherche ![icône de loupe](./media/end-user-search-sort/power-bi-search-icon.png).
 
-Au sein de **Mon espace de travail**, le service Power BI sépare votre contenu par type : tableaux de bord, rapports, classeurs et jeux de données. Cette organisation est visible lorsque vous sélectionnez un espace de travail. Dans cet exemple, **Mon espace de travail** contient un tableau de bord, un rapport, aucun classeur et un jeu de données.
+ Dans le champ Rechercher, tapez tout ou partie du nom d’un tableau de bord, d’un rapport, d’un classeur, d’une application ou d’un propriétaire. Power BI effectue une recherche sur l’ensemble de votre contenu. 
 
-![vidéo](./media/end-user-search-sort/myworkspace/myworkspace.gif)
+ ![rechercher un rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 
-________________________________________
-## <a name="navigation-using-the-search-field"></a>Navigation avec le champ Rechercher
-Utilisez la vue du contenu de **Mon espace de travail** pour explorer, filtrer et trier votre contenu. Dans le champ Rechercher, tapez tout ou partie du nom d’un tableau de bord, d’un rapport, d’un classeur ou d’un propriétaire.  
+ Dans certaines zones de Power BI, comme les espaces de travail, vous trouverez deux champs de recherche différents. Celui de la barre de menus effectue la recherche sur l’ensemble de votre contenu, tandis que celui du canevas de l’espace de travail porte uniquement sur cet espace de travail.
 
-Si vous obtenez peu d’éléments, vous n’avez pas besoin de rechercher et de filtrer.  Toutefois, vous trouverez la recherche et le tri très utiles si vous avez de longues listes de tableaux de bord et de rapports. Par exemple, la liste de rapports ci-dessous, contient 83 éléments. 
+ ![Recherche dans un espace de travail](./media/end-user-search-sort/power-bi-search-fields.png) 
 
-![rechercher un rapport](./media/end-user-experience/power-bi-search.png)
+## <a name="sorting-content-lists"></a>Tri de listes de contenu
 
-Vous pouvez également trier le contenu par nom ou propriétaire. Notez la flèche vers le haut à droite de **Nom**. Nous trions actuellement 83 éléments par ordre alphabétique par nom, dans l’ordre croissant. Pour utiliser l’ordre de tri décroissant, sélectionnez **Nom**. La flèche vers le haut est remplacée par une flèche vers le bas.
+Si vous n’avez pas beaucoup de contenus, le tri ne vous sera pas forcément nécessaire.  Si, en revanche, vous disposez de longues listes de tableaux de bord et de rapports, il vous aidera à trouver ce dont vous avez besoin. Par exemple, cette liste de contenus **Partagés avec moi** contient 63 éléments. 
 
-![trier le contenu](./media/end-user-experience/power-bi-sort-new.png)
+![Liste de contenus Partagés avec moi](./media/end-user-search-sort/power-bi-long-lists.png)
+
+Pour le moment, cette liste de contenus est triée par date, du plus récent au plus ancien. Pour modifier les critères de tri, sélectionnez la flèche à droite de **Date (le plus récent)** .
+
+![Menu déroulant de tri](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+Le tri est également disponible dans les espaces de travail. Dans cet exemple, le contenu est trié par date **d’Actualisation**. Pour définir des critères de tri pour les espaces de travail, sélectionnez un en-tête de colonne une fois, puis une deuxième afin de changer de sens de tri. 
+
+![rechercher un rapport](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Toutes les colonnes ne peuvent pas être triées. Placez le curseur sur les en-têtes de colonne pour savoir lesquelles peuvent être triées.
-
-___________________________________________________________________
-## <a name="navigation-using-the-nav-pane"></a>Navigation avec le volet de navigation
-Le volet de navigation classifie votre contenu de manière à vous aider à trouver rapidement ce dont vous avez besoin.  
-
-![volet de navigation](./media/end-user-search-sort/power-bi-nav pane.png)
-
-
-- Le contenu partagé avec vous est disponible dans **Partagé avec moi**.
-- Le dernier contenu que vous avez consulté est disponible dans **Récent**. 
-- Vos applications peuvent être trouvées en sélectionnant **Applications**.
-- **Accueil** est un affichage de page unique de votre contenu le plus important et de suggestions de contenu ainsi que de sources de formation.
-
-De plus, vous pouvez marquer le contenu comme [favori](end-user-favorite.md) et [par défaut](end-user-featured.md). Choisissez le tableau de bord ou le rapport que vous prévoyez de consulter le plus souvent et définissez-le comme votre contenu *par défaut*. Chaque fois que vous ouvrez le service Power BI, votre tableau de bord par défaut s’affiche en premier. Vous disposez de plusieurs tableaux de bord et applications que vous consultez souvent ? Si vous les définissez en tant que favoris, ils sont toujours disponibles dans votre volet de navigation.
-
-![menu volant Favoris](./media/end-user-search-sort/power-bi-favorite.png).
-
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 512ef5058fdb586a893c5ff9406abf6902ccc4e2
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303873"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888497"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Comment les visuels s’entrefiltrent dans un rapport Power BI
 Une des grandes fonctionnalités de Power BI est la façon dont tous les éléments visuels sur une page de rapport sont interconnectés. Si vous sélectionnez un point de données sur l’un des éléments visuels, tous les autres éléments visuels de la page qui contiennent ces données changent en fonction de cette sélection. 
@@ -45,7 +45,8 @@ Nous allons définir ces termes en examinant les pages du rapport ci-dessous. Le
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-- Si votre rapport comprend un visuel qui prend en charge l’[exploration](end-user-drill.md), par défaut, le fait d’explorer un visuel n’a aucun effet sur les autres visuels de la page du rapport.     
+- Si votre rapport comprend un visuel qui prend en charge l’[exploration](end-user-drill.md), par défaut, le fait d’explorer un visuel n’a aucun effet sur les autres visuels de la page du rapport. Toutefois, le *Concepteur* de rapports peut modifier ce comportement. Vérifiez donc sur vos visuels explorables si les **filtres d’exploration – Autres visuels** ont été activés par le *Concepteur* de rapports.
+    
 - Les filtres appliqués au niveau des visuels sont conservés lors du filtrage croisé et lors de la sélection croisée des autres visuels de la page du rapport. Ainsi, si des filtres ont été appliqués au niveau du visuel A par le concepteur de rapports ou par vous-même, et si vous utilisez le visuel A pour interagir avec le visuel B, les filtres appliqués au niveau du visuel A seront appliqués au visuel B.
 
     ![Page du rapport après la sélection du segment Moderation dans le graphique en anneau](media/end-user-interactions/power-bi-visual-filters.png)

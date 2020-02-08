@@ -1,6 +1,6 @@
 ---
-title: Conformité de l’extension de rendu PDF à la norme ISO 14289-1 - Power BI Report Server
-description: Ce document décrit la conformité de l’extension de rendu PDF de Power BI Report Server et SQL Reporting Services aux spécifications ISO 14289-1 (PDF/UA).
+title: Conformité de l’extension de rendu PDF à la norme ISO 14289-1 – Power BI Report Server et SSRS
+description: Ce document décrit la conformité de l’extension de rendu PDF de Power BI Report Server et SQL Server Reporting Services aux spécifications ISO 14289-1 (PDF/UA).
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,18 +8,18 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638077"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819511"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>Conformité de l’extension de rendu PDF à la norme ISO 14289-1 - Power BI Report Server 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>Conformité de l’extension de rendu PDF à la norme ISO 14289-1 – Power BI Report Server et SSRS
 
-S’applique à : Power BI Report Server et SQL Reporting Services
+S’applique à : Power BI Report Server et SQL Server Reporting Services (SSRS)
 
-Ce document décrit la conformité de l’extension de rendu PDF de Power BI Report Server et SQL Reporting Services aux spécifications [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/).
+Ce document décrit la conformité de l’extension de rendu PDF de Power BI Report Server et SQL Server Reporting Services aux spécifications [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/).
 
 > [!NOTE]
 > Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis **Enregistrer au format PDF**.
@@ -106,7 +106,7 @@ Non applicable
 
 Customization of the product voids this conformance statement from Microsoft. Please consult with Assistive Technology (AT) vendors for compatibility specifications of specific AT products.
 
-This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+Ce document est fourni à titre d’information uniquement. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
 
 ## <a name="next-steps"></a>Étapes suivantes
