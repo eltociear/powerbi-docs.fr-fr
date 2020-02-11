@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 016b83e983f2b3139eb040a1f1d8d48d70b44a52
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: c6f1a04f7178719eb68bcd54674ea0312c97ef3e
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953504"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076589"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nouveautés dans Power BI Desktop
 
@@ -31,10 +31,10 @@ La dernière version de Power BI Desktop est disponible dans le [Centre de tél�
 
 Les liens en regard de chaque fonctionnalité dans la liste des mises à jour de Power BI Desktop signifient ce qui suit :
 
-* [blog]: Most features are explained in a section in the monthly update blog post.
-* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
-* [article]: Some features have an article that provides more detail.
-* Les fonctionnalités restantes sont explicites et ne nécessitent pas d’article ou de vidéo.
+* \[blog\] : La plupart des fonctionnalités sont expliquées une section du billet de blog sur la mise à jour mensuelle.
+* \[vidéo\] : Certaines fonctionnalités présentent un extrait vidéo qui traite de la fonctionnalité et pouvant être lu dans un nouvel onglet de navigateur.
+* \[article\] : Certaines fonctionnalités ont un article qui fournit plus de détails.
+* Les fonctionnalités restantes sont explicites, et ne nécessitent pas d’article ou de vidéo.
 
 Vous pouvez également regarder l’intégralité de la [vidéo des mises à jour mensuelles de Power BI Desktop](#power-bi-desktop-monthly-update-video).
 

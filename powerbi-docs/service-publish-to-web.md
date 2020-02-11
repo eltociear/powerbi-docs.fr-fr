@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76913622"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076702"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
-Avec l’option **Publier sur le web** de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou des réseaux sociaux, sur l’appareil de votre choix. Vous pouvez également modifier, mettre à jour ou actualiser vos éléments visuels publiés, ou bien annuler leur partage.
+Avec l’option **Publier sur le web** de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou des réseaux sociaux, sur l’appareil de votre choix. Vous pouvez également modifier, mettre à jour ou actualiser vos visuels publiés, ou bien annuler leur partage.
 
 > [!WARNING]
 > Quand vous utilisez **Publier sur le web**, tout le monde sur Internet peut voir le rapport ou visuel que vous publiez. Aucune authentification n’est nécessaire et cela inclut les données de niveau de détail qui sont agrégées dans vos rapports. Avant de publier un rapport, vérifiez que vous voulez bien partager les données et les visualisations publiquement. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
@@ -40,9 +40,11 @@ Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Contactez votre administrateur Power BI s’il ne vous a pas autorisé à créer des codes incorporés.
+2. Contactez votre [administrateur Power BI](service-admin-role.md) s’il ne vous a pas autorisé à créer des codes incorporés
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   Pour obtenir de l’aide sur la recherche de la personne qui peut activer la fonctionnalité Publier sur le web dans votre organisation, [consultez ces conseils](#how-to-find-your-power-bi-administrator).
 
 3. Passez en revue le contenu de la boîte de dialogue et sélectionnez **Créer un code incorporé**.
 
@@ -71,7 +73,7 @@ Le tableau suivant fournit des instructions sur le mode d’affichage et les eff
 
 | Mode d’affichage | Son aspect quand il est incorporé |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur *Dynamique* (par exemple, 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un *cadre*, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de votre iFrame de manière appropriée. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur *Dynamique* (par exemple, 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un *cadre*, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de l’iFrame de manière appropriée. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle**, le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Des barres de défilement peuvent ainsi apparaître dans votre iFrame. Définissez la hauteur et la largeur de l’iFrame afin d’éviter les barres de défilement. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur**, le contenu tient dans la zone horizontale de l’iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
 
@@ -194,6 +196,21 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette approche garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
 Le cache étant un cache à long terme, si vous mettez à jour la définition de rapport (par exemple, si vous changez son mode d’affichage) ou actualisez les données du rapport, les modifications se reflèteront dans la version du rapport consultée par vos utilisateurs au bout d’une heure environ. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** uniquement quand vous êtes satisfait des paramètres.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>Recherche de votre administrateur Power BI
+
+Pour modifier les [paramètres de locataire Publier sur le web](#tenant-setting), vous devez collaborer avec [l’administrateur Power BI](service-admin-role.md) de votre organisation.
+
+Pour les organisations de petite taille ou les personnes qui se sont inscrites à Power BI, vous n’avez peut-être pas encore un administrateur Power BI. Vous devez suivre notre [procédure de prise de contrôle de l’administrateur du locataire](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Dès que vous disposez d’un administrateur Power BI, il peut activer la création d’un code incorporé.
+
+En général, les organisations établies disposent déjà d’un administrateur Power BI. Les personnes avec l’un des rôles suivants peuvent agir en tant qu’administrateur Power BI :
+
+- Administrateurs Office 365
+- Administrateurs Azure Active Directory
+- Utilisateurs avec le rôle d’administrateur du service Power BI dans Azure Active Directory
+
+Vous devez [rechercher l’une de ces personnes](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) au sein de votre organisation, car elle peut mettre à jour les paramètres.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

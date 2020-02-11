@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837299"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076652"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -312,7 +312,7 @@ Au-delà des suggestions ci-dessus, sachez que chacune des fonctions de créatio
 
 * **Médiane :** en règle générale, toute agrégation (comme `Sum` ou `Count Distinct`) est envoyée (push) à la source sous-jacente. Toutefois, cela n’est pas vrai pour la valeur médiane, car cet agrégat n’est généralement pas pris en charge par la source sous-jacente. Dans ce cas, les données détaillées sont extraites de la source sous-jacente, et la valeur médiane calculée à partir des résultats retournés. Cette approche est raisonnable quand la valeur médiane doit être calculée sur un nombre relativement restreint de résultats. Cependant, des problèmes de performances ou des échecs de requêtes (en raison de la limite de 1 million de lignes) se produisent si la cardinalité est importante. Par exemple, une **valeur médiane de population d’un pays** pourrait être raisonnable, tandis qu’une **valeur médiane de prix de vente** pourrait ne pas l’être.
 
-* **Filtres de texte avancés (* contient* et autres) :* * lors d’un filtrage sur une colonne de texte, le filtrage avancé permet d’utiliser des filtres tels que *contient*, *commence par*, etc. Ces filtres peuvent certainement entraîner une dégradation des performances pour certaines sources de données. En particulier, le filtre par défaut *contient* ne doit pas être utilisé en cas de recherche d’une correspondance exacte. Si les résultats peuvent être identiques, en fonction des données réelles, les performances peuvent être considérablement différentes en raison de l’utilisation d’index.
+* **Filtres de texte avancés (_contient_ et autres) :** Lors d’un filtrage sur une colonne de texte, un filtrage avancé permet d’utiliser des filtres tels que *contient*, *commence par*, etc. Ces filtres peuvent certainement entraîner une dégradation des performances pour certaines sources de données. En particulier, le filtre par défaut *contient* ne doit pas être utilisé en cas de recherche d’une correspondance exacte. Si les résultats peuvent être identiques, en fonction des données réelles, les performances peuvent être considérablement différentes en raison de l’utilisation d’index.
 
 * **Multisélection de segments :** par défaut, les segments n’autorisent qu’une seule sélection. L’autorisation d’une multisélection dans les filtres peut entraîner des problèmes de performances, car l’utilisateur sélectionne un ensemble d’éléments dans le segment. Par exemple, si l’utilisateur sélectionne les 10 produits qui l’intéressent, chaque nouvelle sélection entraîne l’envoi de requêtes à la source. Même si l’utilisateur peut sélectionner l’élément suivant avant la fin de requête, cette approche entraîne une charge supplémentaire sur la source sous-jacente.
 

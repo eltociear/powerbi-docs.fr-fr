@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: 17d5661cf68b3a79598dc370ecff17c1c438fc8e
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 57d1c0673594a6fa3ddadba48299f610f8f08338
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895094"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076559"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -27,7 +27,7 @@ Les rapports paginés prennent en charge en mode natif la liste suivante de sour
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | De base, authentification unique (SSO), OAuth2 |   |
 | Azure SQL Managed Instance | De base | via un point de terminaison public à l’aide de l’extension Azure SQL Database  |
-| Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP  |
+| Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP.  L’utilisation d’un alias n’est pas prise en charge  |
 | Jeu de données Power BI | SSO | Jeux de données Power BI Premium et non Premium. Nécessite une autorisation de lecture |
 | Jeu de données Premium Power BI (XMLA) | SSO |   |
 | Entrer des données | N/A | Les données sont incorporées dans le rapport. |

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819557"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026712"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -160,7 +160,7 @@ Avec le Proxy d’application Azure Active Directory, vous n’avez plus besoin 
 
 #### <a name="custom-headers"></a>En-têtes personnalisés
 
-Définit des valeurs d’en-tête pour toutes les URL correspondant au modèle regex spécifié. Les utilisateurs peuvent mettre à jour la valeur d’en-tête personnalisé avec du code XML valide pour les URL de demande sélectionnées. Les administrateurs peuvent ajouter autant d’en-têtes qu’ils le souhaitent dans le code XML. Pour plus d’informations, consultez [En-têtes personnalisés](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) dans l’article **Page Propriétés de serveur avancées** Reporting Services.
+Définit des valeurs d’en-tête pour toutes les URL correspondant au modèle regex spécifié. Les utilisateurs peuvent mettre à jour la valeur d’en-tête personnalisé avec du code XML valide pour les URL de demande sélectionnées. Les administrateurs peuvent ajouter autant d’en-têtes qu’ils le souhaitent dans le code XML. Pour plus d’informations, consultez [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders) dans l’article **Page Propriétés de serveur avancées** de Reporting Services.
 
 #### <a name="transparent-database-encryption"></a>Chiffrement transparent de base de données
 

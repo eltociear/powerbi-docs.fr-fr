@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913546"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076638"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -193,7 +193,7 @@ Cette divergence est utile quand vous voulez afficher des résultats différents
 Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder certaines choses à l’esprit.
 
 * Quand vous utilisez l’opérateur *in*, les valeurs à droite de *in* doivent être sous forme de liste séparée par des virgules et placée entre des parenthèses.    
-* Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont transmis directement dans le moteur de traitement de rapport.
+* Power BI Report Server offre également la possibilité de spécifier des filtres supplémentaires à l’aide du paramètre d’URL « filter ».  Par exemple, dans Power BI Report Server, l’URL peut se présenter comme suit : https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md) ou [Exporter au format PDF](consumer/end-user-pdf.md).
 * [Incorporer avec le composant du rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
