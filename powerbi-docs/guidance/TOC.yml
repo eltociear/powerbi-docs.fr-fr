@@ -66,6 +66,8 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Administration et déploiement
           items:
+            - name: Paramètres d’administration du locataire
+              href: admin-tenant-settings.md
             - name: Dimensionnement de la passerelle de données locale
               href: gateway-onprem-sizing.md
     - name: Livres blancs
