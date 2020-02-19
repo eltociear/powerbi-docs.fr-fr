@@ -52,15 +52,19 @@
               href: dax-column-measure-references.md
             - name: Évitez d’utiliser FILTER comme argument de filtre
               href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Rapports Power BI
+          items:
             - name: Étendre des visuels avec des info-bulles de page de rapport
               href: report-page-tooltips.md
             - name: Utiliser l’extraction de page de rapport
               href: report-drillthrough.md
-            - name: Quand utiliser des rapports paginés dans Power BI
+        - name: "Rapports paginés Power\_BI"
+          items:
+            - name: "Quand utiliser des rapports paginés\_?"
               href: report-paginated-or-power-bi.md
-            - name: Utiliser des paramètres en cascade dans les rapports paginés
+            - name: Utiliser des paramètres en cascade
               href: paginated-report-cascading-parameter.md
-            - name: Éviter les pages blanches lors de l’impression de rapports paginés
+            - name: Éviter les pages vierges lors de l’impression
               href: report-paginated-blank-page.md
             - name: Migrer les rapports SSRS vers Power BI
               href: migrate-ssrs-reports-to-power-bi.md
