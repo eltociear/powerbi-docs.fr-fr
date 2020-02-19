@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 148e5283e1a2e2d5ef61027c24df1a4c3e574822
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877198"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77179217"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
 
@@ -62,7 +62,7 @@ Les expériences et fonctionnalités spécifiques basées sur les capacités des
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 - En tant qu’éditeur d’applications, vous devez vous assurer que votre public a accès à des jeux de données en dehors de l’espace de travail. Sinon, les utilisateurs rencontreront des problèmes lors de l'interaction avec votre application : les rapports ne s'ouvriront pas sans accès aux jeux de données, et les vignettes du tableau de bord apparaîtront comme verrouillées. Par ailleurs, les utilisateurs ne pourront pas ouvrir l'application si le premier élément de la navigation est un rapport sans accès au jeu de données.
-- La génération d’un rapport à partir d’un jeu de données dans un autre espace de travail nécessite la nouvelle expérience d’espace de travail aux deux extrémités : Le rapport ainsi que le jeu de données doivent se trouver dans une nouvelle expérience d’espace de travail.
+- La génération d’un rapport à partir d’un jeu de données dans un autre espace de travail nécessite la nouvelle expérience d’espace de travail aux deux extrémités : Le rapport ainsi que le jeu de données doivent se trouver dans une nouvelle expérience d’espace de travail. Vous pouvez uniquement copier des rapports d’une nouvelle expérience d’espace de travail vers une autre et non vers des espaces de travail classiques ou Mon espace de travail. 
 - Dans un espace de travail classique, l’expérience de découverte de jeux de données affiche uniquement les jeux de données dans cet espace de travail.
 - Par défaut, « Publier sur le web » ne fonctionne pas pour un rapport basé sur un jeu de données partagé.
 - Si deux personnes sont membres d’un espace de travail qui accède à un jeu de données partagé, il est possible que seule l’une d’entre elles puisse voir le jeu de données connexe dans l’espace de travail. Seuls les utilisateurs possédant au moins un accès en lecture au jeu de données peuvent voir le jeu de données partagé. 

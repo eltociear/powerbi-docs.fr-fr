@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548588"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115259"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -80,10 +80,9 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 
 Nous espérons que cet article vous aura donné un rapide éclairage sur le travail de l’administrateur de Power BI et les rôles, tâches et outils impliqués. Nous vous recommandons de consulter les deux rubriques suivantes pour approfondir votre compréhension.
 
-[Utiliser le portail d’administration de Power BI](service-admin-portal.md)
-
-[Utiliser les applets de commande PowerShell](/powershell/power-bi/overview)
-
-[FAQ sur l’administration de Power BI](service-admin-faq.md)
-
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- [Utiliser le portail d’administration de Power BI](service-admin-portal.md)
+- [Indications concernant les paramètres d’administration de locataire](guidance/admin-tenant-settings.md)
+- [Utiliser les applets de commande PowerShell](/powershell/power-bi/overview)
+- [FAQ sur l’administration de Power BI](service-admin-faq.md)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

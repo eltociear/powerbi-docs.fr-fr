@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/27/2019
-ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.date: 02/11/2020
+ms.openlocfilehash: 3561d122dde324f1d383d40a152bccc193a2afbe
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539046"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259695"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -55,37 +55,11 @@ Les jetons d’incorporation des licences PRO sont destinés aux tests de déve
 
 ## <a name="technical"></a>Technique
 
-### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Quelle est la différence entre les références SKU A dans Azure et les références SKU EM dans Office 365 ?
+### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Où trouver des informations complémentaires sur la capacité et les références SKU de l’analytique incorporée de Power BI ?
 
-PowerBI.com est une solution SaaS qui comprend de nombreuses fonctionnalités telles que la collaboration sociale ou l’abonnement aux e-mails. PowerBI.com aide les éditeurs de logiciels indépendants à gérer le contenu des solutions d’analytique incorporée et les paramètres au niveau du locataire.
+Consultez [Capacité et références SKU dans l’analytique incorporée de Power BI](embedded-capacity.md).
 
-Power BI Embedded est un ensemble d’API PaaS que les développeurs peuvent utiliser pour créer une solution d’analytique incorporée.
-
-Voici une liste non exhaustive des différences de fonctionnalités qui existent entre ces solutions.
-
-| Caractéristique | Power BI Embedded | Capacité Power BI Premium | Capacité Power BI Premium |
-|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | Capacité Azure SKU A | Capacité O365 SKU EM | Capacité O365 SKU P |
-| Incorporer des artefacts provenant d’un espace de travail Power BI | Oui | Oui | Oui |
-| Consommer des rapports Power BI dans une application incorporée pour votre organisation  | Non | Oui | Oui |
-| Consommer des rapports Power BI dans une application incorporée pour vos clients | Oui | Oui | Oui |
-| Utiliser des rapports Power BI dans SharePoint | Non | Oui | Oui |
-| Utiliser des rapports Power BI dans Dynamics | Non | Oui | Oui |
-| Utiliser des rapports Power BI dans Teams (à l’exception de l’application mobile) | Non | Oui | Oui |
-| Accéder à du contenu avec une licence Power BI gratuite dans Powerbi.com et Power BI Mobile | Non | Non | Oui |
-| Accéder à du contenu incorporé dans des applications MS Office avec une licence Power BI GRATUITE | Non | Oui | Oui |
-
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI propose maintenant trois références SKU pour l’incorporation : A, EM et P. Laquelle dois-je acheter pour mon scénario ?
-
-|  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
-|---------|---------|---------|---------|
-|Achat  |Portail Azure |Office |Office |
-|Cas d’usage | Incorporer du contenu dans votre application | <li> Incorporer du contenu dans votre application <br><br><br> <li> Incorporer du contenu dans les applications MS Office : <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (à l’exception de l’application mobile)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Incorporer du contenu dans votre application <br><br><br> <li> Incorporer du contenu dans les applications MS Office : <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (à l’exception de l’application mobile)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Partager du contenu avec des utilisateurs de Power BI par le biais du [service Power BI](https://powerbi.microsoft.com/)  |
-|Facturation |Toutes les heures |Mensuelle |Mensuelle |
-|Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
-|Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams (à l’exception de l’application mobile) |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
-
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Quelles sont les prérequis à la création d’une capacité PBIE dans Azure ?
+### <a name="what-are-the-prerequisites-for-creating-a-pbie-capacity-in-azure"></a>Quels sont les prérequis à respecter pour créer une capacité PBIE dans Azure ?
 
 * Connectez-vous à l’annuaire de votre organisation (les comptes Microsoft ne sont pas pris en charge).
 * Vous devez avoir un locataire Power BI (c’est-à-dire qu’au moins un utilisateur de votre annuaire doit être inscrit auprès de Power BI). 
@@ -122,7 +96,7 @@ L’utilisateur peut résoudre ce problème en appelant [l’API refreshUserPerm
 
 La région de votre locataire PBI est accessible sur le portail PBI.
 
-[https://app.powerbi.com/](https://app.powerbi.com/) > ? > À propos de Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > À propos de Power BI
 
 ![À propos de Power BI](media/embedded-faq/about-01.png)
 ![Région du locataire](media/embedded-faq/tenant-location-01.png)
@@ -224,9 +198,9 @@ Ce cas de figure a son importance quand vous ajoutez le principal du service com
 
 ### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Quand utiliser un ID d’application ou un ID d’objet de principal du service ?
 
-L’**[ID d’application](embed-sample-for-customers.md#application-id)** est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
+L’ **[ID d’application](embed-sample-for-customers.md#application-id)** est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
 
-Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’**[ID d’objet de principal du service](embed-service-principal.md#how-to-get-the-service-principal-object-id)**.
+Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’ **[ID d’objet de principal du service](embed-service-principal.md#how-to-get-the-service-principal-object-id)** .
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Est-il possible de gérer une passerelle de données locale avec un principal du service ?
 

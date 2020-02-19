@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220199"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259809"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -52,11 +52,11 @@ Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](https:
 1. Sur l’écran d’accueil de votre appareil Android, ouvrez l’application Power BI pour Android.
    
    ![Icône de Power BI](./media/mobile-android-app-get-started/power-bi-logo-android.png)
-2. Pour afficher vos tableaux de bord et vos rapports Power BI, appuyez sur **Power BI**.  
-   
-   Si vous recevez un message indiquant que Power BI ne peut pas vous connecter, consultez [Authentification impossible car votre certificat SSL d'entreprise n'est pas approuvé par cet appareil](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) pour plus d’informations sur la façon de résoudre le problème.
+2. Pour vous connecter à Power BI, appuyez sur l’onglet **Power BI** et renseignez vos infos d’identification.
 
-   Pour afficher vos rapports et indicateurs de performance clés Power BI Report Server et Reporting Services, appuyez sur **Report Server**.
+    Si vous recevez un message indiquant que Power BI ne peut pas vous connecter, consultez [Authentification impossible car votre certificat SSL d'entreprise n'est pas approuvé par cet appareil](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) pour plus d’informations sur la façon de résoudre le problème.
+
+   Pour vous connecter à vos rapports mobiles et indicateurs de performance clés Reporting Services, appuyez sur l’onglet **Serveur de rapports** et renseignez vos infos d’identification.
    
    ![Connectez-vous à Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 

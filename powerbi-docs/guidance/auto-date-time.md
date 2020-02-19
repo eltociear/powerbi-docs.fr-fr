@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 30bfacc1024035f0849440eec8b1c7051ff4d82a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a65b17c91640f6ea7fff1d762e8d5b71cc99575e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75002440"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154140"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Conseils sur les dates/heures automatiques dans Power BI Desktop
 
@@ -26,7 +26,7 @@ L'option _Date/heure automatique_ fournit une intelligence temporelle pratique, 
 
 La liste à puces suivante décrit les considérations, et les éventuelles limites, liées à l'option _Date/heure automatique_.
 
-- **S'applique à toutes ou à aucune :** Lorsque l'option _Date/heure automatique_ est activée, elle s'applique à toutes les colonnes de date dans les tables d'importation qui ne figurant pas dans la partie &quot;plusieurs&quot; d'une relation. Elle ne peut pas être activée ou désactivée de manière sélective colonne par colonne.
+- **S'applique à toutes ou à aucune :** Quand l’option _Date/heure automatique_ est activée, elle s'applique à toutes les colonnes de date (à l’exclusion des colonnes calculées) des tables d’importation qui ne figurent pas dans la partie &quot;plusieurs&quot; d’une relation. Elle ne peut pas être activée ou désactivée de manière sélective colonne par colonne.
 - **Périodes calendaires uniquement :** Les colonnes de l'année et du trimestre se rapportent à des périodes civiles. Cela signifie que l'année commence le 1er janvier et se termine le 31 décembre. Il n'est pas possible de personnaliser la date de début (ou de fin) d'année.
 - **Personnalisation :** Il n'est pas possible de personnaliser les valeurs utilisées pour décrire les périodes. De plus, il n'est pas possible d'ajouter des colonnes supplémentaires pour décrire d'autres périodes, par exemple, les semaines.
 - **Filtrage par année :** Les valeurs des colonnes **Trimestre**, **Mois** et **Jour** n'incluent pas la valeur année. Par exemple, la colonne **Mois** contient uniquement les noms des mois (c'est-à-dire janvier, février, etc.). Les valeurs ne sont pas totalement auto-descriptives et, dans certains rapports, les conceptions de rapports peuvent ne pas communiquer le contexte du filtre d'année.
@@ -34,6 +34,7 @@ La liste à puces suivante décrit les considérations, et les éventuelles limi
     C'est pourquoi il est important d’appliquer les filtres ou le regroupement à la colonne **Année**. En cas de descente dans la hiérarchie, les données seront filtrées par année, sauf si le niveau **Année** a été intentionnellement supprimé. S'il n'y a aucun filtre ou regroupement par année, un regroupement par mois, par exemple, peut résumer les valeurs de toutes les années pour ce mois.
 - **Filtrage de la date dans une seule table :** Comme chaque colonne de date produit sa propre table de date/heure automatique (masquée), il n'est pas possible d'appliquer un filtre horaire à une table et de le propager à plusieurs tables de modèles. Le filtrage de cette façon est une exigence commune de modélisation lorsqu'il s'agit d'établir des rapports sur plusieurs sujets (tableaux de type fait) comme des ventes et un budget des ventes. Lors de l'utilisation de la fonctionnalité de date/heure automatique, l'auteur du rapport devra appliquer des filtres à chacune des différentes colonnes de date.
 - **Taille du modèle :** Chaque colonne de date qui génère une table de date/heure automatique masquée entraîne une augmentation de la taille du modèle et un allongement du délai d’actualisation des données.
+- **Autres outils de création de rapports :** Il n’est pas possible d’utiliser des tables de date/heure automatique quand [Analyser dans Excel](../service-analyze-in-excel.md) est utilisé ou que vous vous connectez au modèle avec des concepteurs de rapports non Power BI.
 
 ## <a name="recommendations"></a>Recommandations
 
@@ -50,3 +51,4 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 - [Date/heure automatique dans Power BI Desktop](../desktop-auto-date-time.md)
 - [Définir et utiliser des tables de dates dans Power BI Desktop](../desktop-date-tables.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

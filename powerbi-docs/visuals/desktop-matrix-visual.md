@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895471"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154383"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -136,17 +136,32 @@ Vous pouvez aisément ajuster les paramètres de la disposition échelonnée. Le
 
 Si vous désactivez la disposition échelonnée, Power BI affiche les sous-catégories dans une autre colonne au lieu de s’afficher en retrait sous la catégorie parente.
 
-## <a name="subtotals-with-matrix-visuals"></a>Sous-totaux avec les visuels Matrice
+## <a name="subtotals-and-grand-totals-with-matrix-visuals"></a>Sous-totaux et totaux généraux avec visuels Matrice
 
-Vous pouvez activer ou désactiver des sous-totaux dans les visuels Matrice, aussi bien pour les lignes que les colonnes. Dans l’image suivante, vous pouvez voir que les sous-totaux de ligne sont définis sur **Activé**.
+Vous pouvez activer ou désactiver des sous-totaux dans les visuels Matrice, aussi bien pour les lignes que les colonnes. Dans l’image suivante, vous pouvez voir que les sous-totaux de ligne sont définis sur **Activé** et pour s’afficher au bas.
 
-![matrice montrant les totaux et les sous-totaux](media/desktop-matrix-visual/matrix-visual_20.png)
+![matrice montrant les totaux et les sous-totaux](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-Dans la section Format du volet Visualisations, développez la carte **Sous-totaux** et définissez le curseur des sous-totaux des lignes sur **Off (Désactivé)** . Lorsque vous procédez ainsi, les sous-totaux ne sont pas affichés.
+Quand vous activez **Sous-totaux** et que vous ajoutez une étiquette, Power BI ajoute aussi une ligne (et la même étiquette) pour la valeur de total général. Pour mettre en forme le total général, sélectionnez l’option de format pour **Total général**. 
 
-![matrice avec sous-totaux désactivés](media/desktop-matrix-visual/matrix-visual_21.png)
+![matrice montrant la carte Total général](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+Si vous voulez désactiver les sous-totaux et le total général, dans la section Format du volet Visualisations, développez la carte **Sous-totaux**. Mettez le curseur des sous-totaux de ligne sur la position **Désactivé**. Lorsque vous procédez ainsi, les sous-totaux ne sont pas affichés.
+
+![matrice avec sous-totaux désactivés](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 Le même processus s’applique pour les sous-totaux des colonnes.
+
+## <a name="add-conditional-icons"></a>Ajouter des icônes conditionnelles
+Ajoutez des signaux visuels à votre table ou matrice avec des *icônes conditionnelles*. 
+
+Dans la section Format du volet Visualisations, développez la carte **Mise en forme conditionnelle**. Mettez le curseur **Icônes** sur la position **Activé** et sélectionnez **Contrôles avancés**.
+
+![Matrice avec l’écran Icônes affiché](media/desktop-matrix-visual/power-bi-icons.png)
+
+Ajustez les conditions, les icônes et les couleurs de votre matrice, puis sélectionnez **OK**. Dans cet exemple, nous avons utilisé un indicateur rouge pour les valeurs basses, un cercle violet pour les valeurs élevées et un triangle jaune pour tout ce qui se trouve entre les deux. 
+
+![Matrice avec les icônes affichées](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Sélection croisée avec des visuels de matrice
 

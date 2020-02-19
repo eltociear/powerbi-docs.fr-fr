@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830886"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154260"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
@@ -98,22 +98,19 @@ Il existe de nombreuses façons de mettre en forme un tableau. Cet article n’e
 
 ### <a name="conditional-formatting"></a>Mise en forme conditionnelle
 
-*Mise en forme conditionnelle* est un type de mise en forme. Power BI applique une mise en forme conditionnelle aux champs de la section **Valeurs** du volet **Visualisations**.
+*Mise en forme conditionnelle* est un type de mise en forme. Power BI peut appliquer une mise en forme conditionnelle à l’un des champs que vous avez ajoutés à la zone **Valeurs**  du volet **Visualisations**.
 
-Dans le contexte des tables, la mise en forme conditionnelle vous permet de spécifier des couleurs personnalisées d’arrière-plan et de police de cellule en fonction des valeurs de cellule, notamment en utilisant des couleurs de dégradé.
+![Volet Visualisation](media/power-bi-visualization-tables/power-bi-table-values.png)
 
-1. Dans le volet **Visualisations**, sélectionnez l’icône **Champs** ![icône champs](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+Dans le contexte des tables, la mise en forme conditionnelle vous permet de spécifier des icônes, des URL, des couleurs d’arrière-plan de cellule et des couleurs de police en fonction des valeurs de cellule, notamment en utilisant des couleurs de dégradé.
 
-1. Sélectionnez la flèche vers le bas en regard de la valeur dans la zone de configuration **Valeurs** que vous voulez mettre en forme (ou cliquez avec le bouton droit sur le champ).
+1. Dans le volet **Format**, ouvrez la carte **Mise en forme conditionnelle**.
 
-    > [!NOTE]
-    > Vous pouvez uniquement gérer la mise en forme conditionnelle des champs dans la zone **Valeurs** de la zone **Champs**.
+    ![Carte Mise en forme conditionnelle](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-    ![chemin permettant d’accéder à Échelles de couleurs de l’arrière-plan](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
+1. Sélectionnez le champ à mettre en forme, puis mettez le curseur **Couleur d’arrière-plan** sur la position Activé. Power BI applique un dégradé en fonction des valeurs de la colonne. Pour changer les couleurs par défaut, sélectionnez **Contrôles avancés**.
 
-1. Sélectionnez **Couleur d’arrière-plan**.
-
-1. Dans la boîte de dialogue qui s’affiche, vous pouvez configurer la couleur, ainsi que les valeurs **Minimum** et **Maximum**. Si vous sélectionnez l’option **Divergent**, vous pouvez également configurer une valeur **Centrale** en option.
+    Si vous sélectionnez l’option **Divergent**, vous pouvez également configurer une valeur **Centrale** en option.
 
     ![écran Échelles de couleurs de l’arrière-plan](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,11 +121,11 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 
     ![montre un nouveau champ à droite](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Ajoutez à la barre de données une mise en forme conditionnelle en sélectionnant la flèche vers le bas en regard de **Total Sales Variance**, puis en choisissant **Mise en forme conditionnelle > Barres de données**.
+1. Ajoutez la mise en forme conditionnelle des barres de données en mettant le curseur **Barres de données** sur la position Activé.  
 
-    ![chemin permettant d’accéder à Barres de données](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Carte Mise en forme conditionnelle avec les barres de données définies sur Activé](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. Dans la boîte de dialogue qui s’affiche, définissez des couleurs pour la **Barre positive** et la **Barre négative**, sélectionnez l’option **Afficher seulement la barre**, puis apportez d’autres modifications souhaitées.
+1. Pour personnaliser les barres de données, sélectionnez **Contrôles avancés**. Dans la boîte de dialogue qui s’affiche, définissez des couleurs pour la **Barre positive** et la **Barre négative**, sélectionnez l’option **Afficher seulement la barre**, puis apportez d’autres modifications souhaitées.
 
     ![Afficher uniquement la barre coché](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -138,10 +135,10 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 
     ![même tableau mais avec des barres dans la dernière colonne](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-Si vous souhaitez supprimer la mise en forme conditionnelle d’une visualisation, cliquez à nouveau avec le bouton droit sur le champ et de sélectionner **Supprimer la mise en forme conditionnelle**.
+1. Ajoutez des signaux visuels à votre table avec des *icônes conditionnelles*.  Dans la carte **Mise en forme conditionnelle**, sélectionnez **This year sales** (Ventes de cette année) dans le menu déroulant. Mettez le curseur **Icônes** sur la position **Activé**.  Pour personnaliser les icônes, sélectionnez **Contrôles avancés**.
 
-> [!TIP]
-> L’option Mise en forme conditionnelle est également disponible dans le volet **Mise en forme**. Sélectionnez la valeur à mettre en forme, puis **activez** les options **Échelles de couleurs** ou **Barres de données** pour appliquer les paramètres par défaut. Ou bien, pour personnaliser les paramètres, sélectionnez **Contrôles avancés**.
+    ![Tableau avec Icônes ajouté](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Copier les valeurs à partir des tables Power BI pour une utilisation dans d’autres applications
 
@@ -175,12 +172,13 @@ Parfois, Power BI tronque l’en-tête d’une colonne dans un tableau de bord e
 
 ![gros plan vidéo sur le redimensionnement de colonne](media/power-bi-visualization-tables/resizetable.gif)
 
+
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
 Quand vous appliquez une mise en forme de colonne, vous ne pouvez choisir qu’une option d’alignement par colonne : **Automatique**, **Gauche**, **Centre**, **Droite**. Habituellement, une colonne ne contient que du texte ou que des nombres, mais pas une combinaison des deux. Dans les cas où une colonne contient à la fois des nombres et du texte, **Automatique** aligne le texte à gauche et les nombres à droite. Ce comportement prend en charge les langues qui se lisent de gauche à droite.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Treemap dans Power BI](power-bi-visualization-treemaps.md)
+* [Graphiques de compartimentage dans Power BI](power-bi-visualization-treemaps.md)
 
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
