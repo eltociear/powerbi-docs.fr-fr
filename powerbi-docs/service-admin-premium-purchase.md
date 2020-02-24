@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75223915"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427734"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Acheter Power BI Premium
 
 Cet article explique comment acheter de la capacité Power BI Premium pour votre organisation. L’article décrit deux scénarios :
 
-- L’utilisation de références SKU P pour les scénarios de production classiques. Les références SKU P nécessitent un engagement mensuel ou annuel et donnent lieu à une facturation mensuelle. Vous achetez des références SKU P dans le [Centre d’administration Microsoft 365](https://admmin.microsoft.com).
+- L’utilisation de références SKU P pour les scénarios de production classiques. Les références SKU P nécessitent un engagement mensuel ou annuel et donnent lieu à une facturation mensuelle.
 
 - L’utilisation de références SKU A pour les scénarios de test ou dans les cas où vous n’avez pas les autorisations nécessaires pour acheter des références SKU P (rôle Administrateur général Microsoft 365 ou rôle Administrateur de facturation). Les références SKU ne nécessitent aucun engagement et sont facturées à l’heure. Vous achetez des références SKU A dans le [portail Azure](https://portal.azure.com).
 

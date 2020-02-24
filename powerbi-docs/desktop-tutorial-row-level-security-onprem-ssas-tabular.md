@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b90357aa6d8f66612857e8247a8b48dc2c2c369
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 83cf7517fac569f8439f1debcdf621a786835d2c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539591"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427366"
 ---
 # <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implémenter la sécurité au niveau des lignes avec un modèle tabulaire Analysis Services
 
@@ -34,7 +34,7 @@ Ce tutoriel utilise la [base de données AdventureworksDW2012](https://github.co
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tâche 1 : Créer la table de sécurité utilisateur et définir la relation de données
 
-Il existe de nombreux articles expliquant comment définir la sécurité dynamique au niveau des lignes avec le modèle *tabulaire SQL Server Analysis Services (SSAS)*. Pour notre exemple, nous utilisons l’article [Implémenter la sécurité dynamique à l’aide des filtres de lignes](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+Il existe de nombreux articles expliquant comment définir la sécurité dynamique au niveau des lignes avec le modèle *tabulaire SQL Server Analysis Services (SSAS)* . Pour notre exemple, nous utilisons l’article [Implémenter la sécurité dynamique à l’aide des filtres de lignes](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
 
 Les étapes décrites ici nécessitent l’utilisation de la base de données relationnelle AdventureworksDW2012.
 
@@ -44,7 +44,7 @@ Les étapes décrites ici nécessitent l’utilisation de la base de données re
 
 1. Après avoir créé et enregistré la table, vous devez établir la relation entre la colonne `SalesTerritoryID` de la table `DimUserSecurity` et la colonne `SalesTerritoryKey` de la table `DimSalesTerritory`, comme indiqué ci-dessous.
 
-   Dans SSMS, cliquez avec le bouton droit sur **DimUserSecurity**, puis sélectionnez **Conception**. Sélectionnez ensuite **Concepteur de tables** > **Relations...**. Une fois terminé, enregistrez la table.
+   Dans SSMS, cliquez avec le bouton droit sur **DimUserSecurity**, puis sélectionnez **Conception**. Sélectionnez ensuite **Concepteur de tables** > **Relations...** . Une fois terminé, enregistrez la table.
 
    ![Relations de clé étrangère](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 
@@ -82,7 +82,7 @@ Une fois que votre entrepôt de données relationnelles est en place, vous devez
 
 1. La fonction `LOOKUPVALUE` retourne les valeurs d’une colonne où le nom d’utilisateur Windows correspond à celui retourné par la fonction `USERNAME`. Vous pouvez ensuite limiter les requêtes aux emplacements où les valeurs retournées par `LOOKUPVALUE` correspondent à celles de la même table ou d’une table associée. Dans la colonne **Filtre DAX**, tapez la formule suivante :
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -95,7 +95,7 @@ Une fois que votre entrepôt de données relationnelles est en place, vous devez
 
 1. Pour la table `DimUserSecurity`, dans la colonne **Filtre DAX**, ajoutez la formule suivante :
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -175,7 +175,7 @@ Si d’autres activités ont lieu dans le tableau de bord, avec SQL Server Profi
 
 Vous pouvez également voir ci-dessous la requête DAX exécutée pour remplir les données du rapport.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))
