@@ -579,6 +579,8 @@
           items:
             - name: Configurer une actualisation planifiée
               href: refresh-scheduled-refresh.md
+            - name: Configurer une actualisation incrémentielle
+              href: service-premium-incremental-refresh.md
             - name: "Actualiser un jeu de données à partir d’un fichier Power\_BI\_Desktop local"
               href: refresh-desktop-file-local-drive.md
             - name: "Actualiser un jeu de données à partir d’un fichier Power\_BI\_Desktop cloud"
@@ -701,6 +703,8 @@
               href: service-url-filters.md
             - name: Inscrire les autres et vous-même
               href: service-report-subscribe.md
+            - name: Incorporer un rapport dans Microsoft Teams
+              href: service-embed-report-microsoft-teams.md
             - name: Incorporer le rapport à SharePoint Online
               href: service-embed-report-spo.md
             - name: Incorporer un rapport dans un site web ou portail sécurisé
@@ -885,8 +889,6 @@
           href: service-premium-metrics-app.md
         - name: Superviser les capacités dans le portail d’administration
           href: service-admin-premium-monitor-portal.md
-        - name: Configurer une actualisation incrémentielle
-          href: service-premium-incremental-refresh.md
         - name: Configurer des grands modèles (préversion)
           href: service-premium-large-models.md
         - name: Configurer des zones géographiques multiples

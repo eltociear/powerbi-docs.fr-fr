@@ -62,6 +62,10 @@
           items:
             - name: "Quand utiliser des rapports paginés\_?"
               href: report-paginated-or-power-bi.md
+            - name: Conseils pour extraire des données
+              href: report-paginated-data-retrieval.md
+            - name: Conseils pour utiliser des images
+              href: report-paginated-image.md
             - name: Utiliser des paramètres en cascade
               href: paginated-report-cascading-parameter.md
             - name: Éviter les pages vierges lors de l’impression
