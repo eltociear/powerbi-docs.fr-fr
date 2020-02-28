@@ -6,21 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889210"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496476"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 
-
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ Les visuels affichés sur un tableau de bord ne peuvent pas être triés, mais d
 
 ## <a name="get-started"></a>Commencer
 
-Pour commencer, sélectionnez un visuel de rapport, puis choisissez **Plus d’actions** (…).  Il existe trois options pour le tri : **Tri décroissant**, **Tri croissant** et **Trier par**. 
+Pour commencer, ouvrez un rapport qui a été partagé avec vous. Sélectionnez un visuel (pouvant être trié) et choisissez **Plus d’actions** (...).  Il existe trois options pour le tri : **Tri décroissant**, **Tri croissant** et **Trier par**. 
     
 
 ![graphique à barres trié par l’axe des X](media/end-user-change-sort/power-bi-more-actions.png)
@@ -69,9 +67,9 @@ Il peut parfois être utile de trier un visuel selon un autre champ (non inclus 
 
 Seule la personne qui a conçu le rapport peut apporter ces changements pour vous. Vous pouvez trouver les informations de contact du *concepteur* en sélectionnant le nom du rapport dans la barre d’en-tête.
 
-Si vous êtes *concepteur* et que vous disposez d’autorisations de modification sur le contenu, lisez [Trier par colonne dans Power BI Desktop](../desktop-sort-by-column.md) pour savoir comment mettre à jour le jeu de données et autoriser ce type de tri.
-
 ![Liste déroulante indiquant les informations de contact](media/end-user-change-sort/power-bi-contact.png)
+
+Si vous êtes *concepteur* et que vous disposez d’autorisations de modification sur le contenu, lisez [Trier par colonne dans Power BI Desktop](../desktop-sort-by-column.md) pour savoir comment mettre à jour le jeu de données et autoriser ce type de tri.
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les [visualisations dans les rapports Power BI](end-user-visualizations.md).

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160762"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496943"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Office 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis diffère de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -37,7 +37,7 @@ Office 365 propose différents environnements pour les organismes gouvernementau
 
 * Le [Cloud de la communauté du secteur public (GCC) Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
 
-* Le [Cloud de la communauté du secteur public High (GCC High) Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
+* Le [Cloud de la communauté du secteur public High (GCC High) Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
 
 * [L’environnement Office 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis. 
 
@@ -89,12 +89,12 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
 |  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
 |  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
-|  |Rapports paginés|Disponible uniquement dans USGov Texas et USGov Virginie |Disponible|Dans la feuille de route|
+|  |Rapports paginés|Disponible|Disponible|Dans la feuille de route|
 |  |Applications modèles|Non disponible|Non disponible|Non disponible|
 |Se connecter aux données|Importer des données et des rapports à partir d’Excel|Disponible|Disponible|Disponible|
 |  |Importer des données à partir de fichiers CSV|Disponible|Disponible|Disponible|
 |  |Importer des données à partir de fichiers Power BI Desktop|Disponible|Disponible|Disponible|
-|  |Connectivité à CDS|Non disponible|Non disponible|Non disponible|
+|  |Connectivité à CDS|Disponible|Non disponible|Non disponible|
 |  |Connecteur Azure Data Lake Storage Gen2|Non disponible|Non disponible|Non disponible|
 |Gestion des données|Passerelle de gestion des données|Disponible|Disponible|Disponible|
 |  |Chiffrement de données dans Azure SQL|Disponible|Disponible|Disponible|
@@ -103,7 +103,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Incorporation dans SharePoint Online à l’aide du composant WebPart Incorporer|Disponible|Disponible|Disponible|
 |  |Flux de données et fonctions d’IA|Non disponible|Non disponible|Non disponible|
 |  |Connectivité Power Automate pour les alertes de données|Non disponible|Non disponible|Non disponible|
-|  |Onglet Power BI dans Teams|Non disponible|Non disponible|Non disponible|
+|  |Onglet Power BI dans Teams|Disponible|Non disponible|Non disponible|
 |  |Machine Learning automatisé|Non disponible|Non disponible|Non disponible|
 |  |Cognitive Services|Non disponible|Non disponible|Non disponible|
 |  |Azure ML|Non disponible|Non disponible|Non disponible|
@@ -111,7 +111,6 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Inscription à Power BI for US Government](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Démonstration de Power BI US Government</a>
-* [Prise en main du service Power BI](service-get-started.md)
-* [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
-

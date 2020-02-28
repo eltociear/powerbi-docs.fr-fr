@@ -1,110 +1,115 @@
 ---
 title: Trier par colonne dans Power BI Desktop
-description: Trier par colonne dans Power BI Desktop
+description: Dans Power BI, vous pouvez changer l’apparence d’un visuel en le triant selon différents champs de données.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 01/30/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 0cbba86bd77debda9ab2162b8f9b190e1846b99c
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223436"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464668"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Trier par colonne dans Power BI Desktop
-Dans **Power BI Desktop** et le **service Power BI**, vous pouvez modifier l’apparence d’un visuel en le triant par différents champs de données. En changeant la façon dont vous triez un visuel, vous pouvez mettre en évidence les informations que vous voulez transmettre et vérifier que le visuel reflète cette tendance (ou cette importance).
+Dans Power BI Desktop et le service Power BI, vous pouvez changer l’apparence d’un visuel en le triant selon différents champs de données. En changeant la façon dont vous triez un visuel, vous pouvez mettre en évidence les informations que vous voulez transmettre et vérifier que le visuel reflète cette tendance (ou cette importance).
 
-Que vous utilisiez des données numériques (par exemple des chiffres de ventes) ou des données texte (comme des noms d’État), vous pouvez trier vos visualisations comme vous le souhaitez et leur donner l’aspect souhaité.  **Power BI** offre une grande souplesse sur le plan du tri et des menus rapides que vous pouvez utiliser. Sur n’importe quel visuel, sélectionnez le menu des points de suspension (…), puis sélectionnez ensuite le champ sur lequel vous voulez trier, comme illustré dans l’image suivante.
+Que vous utilisiez des données numériques (par exemple, des chiffres de ventes) ou des données de texte (comme des noms de région), vous pouvez trier vos visualisations et leur donner l’aspect souhaité. Power BI offre une grande souplesse sur le plan du tri et des menus rapides que vous pouvez utiliser. Pour trier un visuel, sélectionnez son menu **Plus d’options** (...), **Trier par**, puis le champ en fonction duquel vous souhaitez effectuer le tri.
 
 ![Menu Plus d’options](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-## <a name="more-depth-and-an-example"></a>Approfondissement et exemple
-Prenons un exemple plus approfondi et voyons comment il fonctionne dans **Power BI Desktop**.
+## <a name="sorting-example"></a>Exemple de tri
+Prenons un exemple plus approfondi et voyons comment il fonctionne dans Power BI Desktop.
 
-La visualisation suivante montre les coûts, les quantités et les montants par nom de fabricant. Voici la visualisation telle qu’elle apparaît avant le tri.
+La visualisation suivante montre les coûts, les quantités et les montants par nom de fabricant. Voici la visualisation telle qu’elle apparaît avant le tri :
 
 ![Visualisation initiale](media/desktop-sort-by-column/sortbycolumn_1.png)
 
-Le visuel est actuellement trié par **SalesQuantity**. Nous pouvons le constater d’après la correspondance entre la couleur des barres décroissantes et la légende, mais il existe une meilleure méthode pour déterminer la colonne de tri active : le menu des points de suspension (...) dans le coin supérieur droit du visuel. Lorsque vous sélectionnez les points de suspension, vous observez ce qui suit :
+Le visuel est actuellement trié selon la colonne **SalesQuantity**. Nous pouvons identifier la colonne de tri d’après la correspondance entre la couleur des barres croissantes et la légende, mais il existe une meilleure méthode : le menu **Plus d’options**, accessible en sélectionnant les points de suspension (...).
 
 ![Menu Plus d’options](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-* Le champ de tri actuel est **SalesQuantity**, ce qui est indiqué par le fait que **Trier par SalesQuantity** est en gras et a une barre jaune. 
+Les sélections de tri sont les suivantes :
 
-* L’ordre du tri actuel est du plus petit au plus grand, comme indiqué par la petite icône **A/Z** (A au-dessus de Z) et une flèche vers le bas.
+* Le champ de tri actuel est **SalesQuantity**, indiqué par l’option **SalesQuantity** en gras précédée d’une barre jaune. 
 
-Nous allons examiner distinctement le champ de tri et l’ordre de tri dans les deux sections suivantes.
+* L’ordre du tri actuel est croissant, comme indiqué par l’option **Tri croissant** en gras précédée d’une barre jaune.
 
-## <a name="selecting-which-column-to-use-for-sorting"></a>Sélection de la colonne à utiliser pour le tri
-Vous avez remarqué la barre jaune à côté de **Trier par SalesQuantity** dans le menu **Plus d’options**, qui indique que le visuel est trié sur la colonne **SalesQuantity**. Il est facile de trier sur une autre colonne : sélectionnez simplement les points de suspension pour afficher le menu correspondant, puis sélectionnez une autre colonne.
+Nous allons examiner le champ de tri et l’ordre de tri dans les deux sections suivantes.
 
-Dans l’image suivante, nous avons sélectionné *DiscountAmount* comme colonne sur laquelle nous voulons trier. Cette colonne se trouve être une des lignes sur l’élément visuel, plutôt qu’une des barres. Voici le visuel une fois que nous avons sélectionné **Trier par DiscountAmount**.
+## <a name="select-which-column-to-use-for-sorting"></a>Sélectionner la colonne à utiliser pour le tri
+Vous avez remarqué la barre jaune précédant **SalesQuantity** dans le menu **Plus d’options**, qui indique que le visuel est trié selon la colonne **SalesQuantity**. Il est simple de trier selon une autre colonne : sélectionnez les points de suspension (...) pour afficher le menu **Plus d’options**, **Trier par**, puis une autre colonne.
 
-![Trier par DiscoutAmount](media/desktop-sort-by-column/sortbycolumn_3.png)
+Dans l’image suivante, nous sélectionnons **DiscountAmount** comme colonne selon laquelle nous voulons trier. Cette colonne apparaît comme une des lignes sur le visuel, et non comme une des barres. 
 
-Remarquez les changements sur l’élément visuel. Les valeurs sont maintenant classées de la plus grande valeur de DiscountAmount, qui dans ce visuel est Fabrikam Inc., à Northwind Traders, qui a la valeur la plus faible. 
+![Trier par DiscountAmount](media/desktop-sort-by-column/sortbycolumn_3.png)
+
+Remarquez les changements sur l’élément visuel. Les valeurs sont maintenant classées de la valeur la plus élevée de **DiscountAmount**, Fabrikam Inc., à la valeur la plus faible, Northwind Traders. 
 
 Mais que se passe-t-il si nous souhaitons effectuer un tri en ordre croissant, plutôt que décroissant ? La section suivante montre à quel point cela est simple.
 
-## <a name="selecting-the-sort-order---smallest-to-largest-largest-to-smallest"></a>Sélection de l’ordre de tri : du plus petit au plus grand, du plus grand au plus petit
-Quand nous examinons de plus près le menu **Options** dans l’image précédente, nous voyons que l’icône à côté de **Trier par DiscountAmount** montre **Z/A** (Z au-dessus de A). Jetons un œil :
+## <a name="select-the-sort-order"></a>Sélectionner l’ordre de tri
+Lorsque nous examinons de plus près le menu **Plus d’options** à partir de l’image précédente, nous voyons que l’option **Tri décroissant** est en gras précédée d’une barre jaune.
 
 ![Trier du plus grand au plus petit](media/desktop-sort-by-column/sortbycolumn_4.png)
 
-Lorsque **Z/A** s’affiche, cela signifie que l’élément visuel est trié en fonction de la colonne sélectionnée, de la plus grande à la plus petite valeur. Vous souhaitez changer cela ? Aucun problème. Appuyez ou cliquez simplement sur l’icône **Z/A** pour modifier l’ordre sur **A/Z** et trier l’élément visuel (sur la base de la colonne sélectionnée) de la plus petite à la plus grande valeur.
+Quand l’option **Tri décroissant** est sélectionnée, cela signifie que le visuel est trié en fonction de la colonne sélectionnée, de la valeur la plus élevée à la plus faible. Vous souhaitez changer cela ? Aucun problème. Il vous suffit de sélectionner **Tri croissant** et l’ordre de tri de la colonne sélectionnée s’établit de la valeur la plus faible à la plus élevée.
 
-Voici le même visuel, cette fois après avoir appuyé sur l’icône **Z/A** de l’élément de menu **Trier par DiscountAmount** pour en changer l’ordre. Notez que Northwind Traders est maintenant le premier constructeur de la liste, et que Fabrikam Inc. est le dernier, c’est-à-dire l’inverse du tri précédent.
+Voici le même visuel, après la modification de l’ordre de **DiscountAmount**. Notez que Northwind Traders est maintenant le premier fabricant de la liste et que Fabrikam Inc. est le dernier, c’est-à-dire l’inverse du tri précédent.
 
 ![Trier du plus petit au plus grand](media/desktop-sort-by-column/sortbycolumn_5.png)
 
-Vous pouvez trier sur n’importe quelle colonne incluse dans le visuel : nous pouvons facilement sélectionner SalesQuantity comme colonne en fonction de laquelle nous voulons trier, puis sélectionner **Trier par SalesQuantity** dans le menu pour afficher d’abord les fabricants avec le plus de ventes, tout en conservant les autres colonnes dans le visuel, indépendamment de leur valeur pour ce fabricant. Voici un aperçu de l’élément visuel avec ces paramètres.
+Vous pouvez trier selon n’importe quelle colonne incluse dans le visuel : nous pourrions aussi bien avoir sélectionné **SalesQuantity** comme colonne en fonction de laquelle trier pour afficher d’abord les fabricants avec le plus de ventes, tout en conservant les autres colonnes dans le visuel, car elles s’appliquent à ce fabricant. Voici un aperçu du visuel avec ces paramètres :
 
 ![Trier par SalesQuantity](media/desktop-sort-by-column/sortbycolumn_6.png)
 
 ## <a name="sort-using-the-sort-by-column-button"></a>Tri à l’aide du bouton Trier par colonne
-Il existe une autre façon de trier vos données : utilisez le bouton **Trier par colonne** situé dans le ruban **Modélisation**.
+Il existe une autre façon de trier vos données, en utilisant le bouton **Trier par colonne** situé dans le ruban **Modélisation**.
 
 ![Bouton Trier par colonne](media/desktop-sort-by-column/sortbycolumn_8.png)
 
-Cette méthode de tri nécessite que vous sélectionniez une colonne dans le volet **Champs**, puis le bouton **Trier par colonne** pour choisir comment vous souhaitez trier votre visuel (par quelle colonne). Vous devez sélectionner la colonne (le champ) que vous souhaitez trier dans le volet **Champs** afin d’activer le bouton **Trier par colonne**. Sinon, le bouton est inactif.
+Cette approche du tri exige que vous sélectionniez d’abord la colonne (le champ) à trier dans le volet **Champs**, puis **Modélisation** > **Trier par colonne** pour trier votre visuel. Si vous ne sélectionnez pas de colonne, le bouton **Trier par colonne** est inactif.
 
-Examinons un exemple courant : vous avez des données pour chaque mois de l’année et vous voulez les trier par ordre chronologique. Pour cela, procédez comme suit.
+Examinons un exemple courant. Vous avez des données pour chaque mois de l’année et vous voulez les trier par ordre chronologique. Pour cela, procédez comme suit :
 
-1. Tout d’abord, notez que lorsque le visuel est sélectionné, mais qu’aucune colonne n’est sélectionnée dans le volet **Champs**, le bouton **Trier par colonne** est inactif (grisé).
+1. Notez que quand le visuel est sélectionné, mais qu’aucune colonne n’est sélectionnée dans le volet **Champs**, le bouton **Trier par colonne** est inactif (grisé).
    
    ![Bouton Trier par colonne inactif](media/desktop-sort-by-column/sortbycolumn_9.png)
 
 2. Lorsque vous sélectionnez la colonne selon laquelle effectuer le tri, dans le volet **Champs**, le bouton **Trier par colonne** devient actif.
    
    ![Bouton Trier par colonne actif](media/desktop-sort-by-column/sortbycolumn_10.png)
-3. À présent, le visuel étant sélectionné, vous pouvez sélectionner *MonthOfYear* au lieu de la valeur par défaut (*MonthName*) pour trier le visuel dans l’ordre souhaité : en fonction du mois de l’année.
+3. À présent, le visuel étant sélectionné, vous pouvez sélectionner **MonthOfYear** au lieu de la valeur par défaut **MonthName** pour trier le visuel dans l’ordre souhaité : en fonction du mois de l’année.
    
    ![Menu Trier par colonne](media/desktop-sort-by-column/sortbycolumn_11.png)
 
-C’est tout. N’oubliez pas que vous devez sélectionner une colonne dans le volet **Champs** pour que le bouton **Trier par colonne** devienne actif.
 
-## <a name="getting-back-to-default-column-for-sorting"></a>Retour à la colonne par défaut pour le tri
-Vous pouvez trier avec la colonne de votre choix, mais vous pourriez souhaiter rétablir l’élément visuel à sa colonne de tri par défaut. Aucun problème. Pour un visuel qui a une colonne de tri sélectionnée (comme nous l’avons vu, une colonne de tri sélectionnée apparaît avec une barre jaune à côté d’elle dans le menu des points de suspension), ouvrez simplement le menu **Plus d’options** et resélectionnez cette colonne : la visualisation revient à sa colonne de tri par défaut.
+<!---
+This functionality is no longer active. Jan 2020
 
-Par exemple, voici notre graphique précédent :
+## Getting back to default column for sorting
+You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. No problem. For a visual that has a sort column selected, open the **More options** menu and select that column again, and the visualization returns to its default sort column.
 
-![Visualisation initiale](media/desktop-sort-by-column/sortbycolumn_6.png)
+For example, here's our previous chart:
 
-Quand vous revenez au menu et que vous resélectionnez **SalesQuantity**, le visuel est de nouveau trié selon l’ordre alphabétique de **Manufacturer**, le comportement par défaut, comme illustré dans l’image suivante.
+![Initial visualization](media/desktop-sort-by-column/sortbycolumn_6.png)
 
-![Ordre de tri par défaut](media/desktop-sort-by-column/sortbycolumn_7.png)
+When we go back to the menu and select **SalesQuantity** again, the visual defaults to being ordered alphabetically by **Manufacturer**, as shown in the following image.
 
-Avec autant d’options de tri de vos éléments visuels, la création du graphique ou de l’image que vous souhaitez est un jeu d’enfant.
+![Default sort order](media/desktop-sort-by-column/sortbycolumn_7.png)
+
+With so many options for sorting your visuals, creating just the chart or image you want is easy.
+--->
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Les articles suivants pourraient également vous intéresser :
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md) (Utiliser une extraction interrapport dans Power BI Desktop)
-* [Utilisation de segments Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+* [Segments dans Power BI](visuals/power-bi-visualization-slicers.md)
 

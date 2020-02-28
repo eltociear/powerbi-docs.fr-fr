@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259750"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426630"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Bien démarrer avec l’application mobile Power BI sur les appareils iOS
 L’application Microsoft Power BI pour iOS sur les iPhone et iPad fournit une expérience mobile pour Power BI, Power BI Report Server et Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
@@ -32,7 +32,7 @@ Découvrez les [nouveautés sur les applications mobiles Power BI](mobile-whats
 ## <a name="download-the-app"></a>Télécharger l’application
 [Téléchargez l’application iOS](https://go.microsoft.com/fwlink/?LinkId=522062 "Télécharger l’application iOS") à partir de l’Apple App Store sur votre iPhone ou iPad.
 
-Vous pouvez exécuter l’application Power BI pour iOS sur n’importe quel appareil exécutant iOS 11 ou ultérieur. 
+Vous pouvez exécuter l’application mobile Power BI pour iOS sur n’importe quel appareil exécutant iOS 11 ou ultérieur. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
 Si vous ne vous êtes pas déjà inscrit, accédez à [powerbi.com](https://powerbi.microsoft.com/get-started/) puis, sous **Power BI - Collaboration et partage cloud**, sélectionnez **Essai gratuit**.

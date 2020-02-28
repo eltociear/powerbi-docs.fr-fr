@@ -1,37 +1,37 @@
 ---
-title: Actualisation incrémentielle dans Power BI Premium
-description: Découvrez comment permettre l’utilisation de jeux de données très volumineux dans le service Power BI Premium.
+title: Actualisation incrémentielle dans Power BI
+description: Découvrez comment permettre l’utilisation de très grands jeux de données dans Power BI.
 author: davidiseminger
-ms.reviewer: kayu
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: cc2b005ef72700891a603162a281fbba23aa5120
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699288"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527618"
 ---
-# <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
+# <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
-L’actualisation incrémentielle permet d’utiliser des jeux de données très volumineux dans le service Power BI Premium, en offrant les avantages suivants :
+L’actualisation incrémentielle permet d’utiliser de très grands jeux de données dans Power BI et offre les avantages suivants :
 
 > [!div class="checklist"]
 > * **Actualisations plus rapides** : Seules les données qui ont changé ont besoin d’être actualisées. Par exemple, vous pouvez actualiser uniquement les données des cinq derniers jours dans un jeu de données de dix ans.
 > * **Actualisations plus fiables** : Il n’est plus nécessaire de maintenir des connexions à long terme à des systèmes sources volatiles.
 > * **Consommation réduite des ressources** : Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
 
+> [!NOTE]
+> L’actualisation incrémentielle est maintenant disponible pour les abonnements et jeux de données Power BI Pro, Premium et partagés. 
+
 ## <a name="configure-incremental-refresh"></a>Configurer une actualisation incrémentielle
 
 Les stratégies d’actualisation incrémentielle sont définies dans Power BI Desktop et sont appliquées une fois publiées sur le service Power BI.
 
-Pour commencer, activez l’actualisation incrémentielle dans les **fonctionnalités d’évaluation**.
-
-![Options - fonctionnalités en préversion](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer des jeux de données volumineux dans Power BI Desktop
 
@@ -54,7 +54,7 @@ Vérifiez que les lignes sont filtrées quand la valeur de colonne *est postéri
 ![Filtrer les lignes](media/service-premium-incremental-refresh/filter-rows.png)
 
 > [!IMPORTANT]
-> Vérifiez que les requêtes présentent un signe égal (=) sur **RangeStart** ou **RangeEnd**, mais pas les deux. Si le signe égal (=) figure sur les deux paramètres, une ligne peut satisfaire aux conditions de deux partitions, ce qui peut entraîner des données en double dans le modèle. Par exemple :  
+> Vérifiez que les requêtes présentent un signe égal (=) sur **RangeStart** ou **RangeEnd**, mais pas les deux. Si le signe égal (=) figure sur les deux paramètres, une ligne peut satisfaire aux conditions de deux partitions, ce qui peut entraîner des données en double dans le modèle. Par exemple,  
 > \#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] **>= RangeStart** and [OrderDate] **<= RangeEnd**) peut entraîner des données en double.
 
 > [!TIP]
@@ -72,7 +72,7 @@ Le filtre sur la colonne de date sert à répartir dynamiquement les données da
 
 Il est important que le filtre de partition soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le pliage de requêtes. La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob, le web et les flux OData. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
 
-Étant donné les différents niveaux de prise en charge du pliage de requêtes pour chaque source de données, il est recommandé de vérifier que la logique de filtre est incluse dans les requêtes sources. Pour faciliter l’opération, Power BI Desktop tente d’effectuer cette vérification pour vous. S’il est impossible de l’effectuer, un avertissement s’affiche dans la boîte de dialogue de l’actualisation incrémentielle lors de la définition de la stratégie d’actualisation incrémentielle. Les sources de données basées sur SQL, comme SQL, Oracle et Teradata, peuvent se fier à cet avertissement. Les autres sources de données peuvent ne pas être en mesure d’effectuer la vérification sans suivi des requêtes. Si Power BI Desktop ne peut pas confirmer, l’avertissement suivant s’affiche.
+Étant donné les différents niveaux de prise en charge du pliage de requêtes pour chaque source de données, il est recommandé de vérifier que la logique de filtre est incluse dans les requêtes sources. Pour faciliter l’opération, Power BI Desktop tente d’effectuer cette vérification pour vous. S’il est impossible de l’effectuer, un avertissement s’affiche dans la boîte de dialogue de l’actualisation incrémentielle lors de la définition de la stratégie d’actualisation incrémentielle. Les sources de données basées sur SQL, comme SQL, Oracle et Teradata, peuvent se fier à cet avertissement. Les autres sources de données peuvent ne pas être en mesure d’effectuer la vérification sans suivi des requêtes. Si Power BI Desktop ne peut pas confirmer, l’avertissement suivant s’affiche. Si vous voyez cet avertissement et que vous souhaitez vérifier que le Query Folding nécessaire se produit, vous pouvez utiliser la fonctionnalité Diagnostics de requête ou suivre les requêtes reçues par la base de données source.
 
  ![Pliage de requêtes](media/service-premium-incremental-refresh/query-folding.png)
 
@@ -93,7 +93,7 @@ La boîte de dialogue Actualisation incrémentielle s’affiche. Utilisez le bou
 
 Le texte d’en-tête décrit ce qui suit :
 
-- L’actualisation incrémentielle est prise en charge uniquement pour les espaces de travail sur des fonctionnalités Premium. Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
+- Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
 
 - Si vous pouvez télécharger le fichier PBIX contenant une stratégie d’actualisation incrémentielle à partir du service Power BI, le fichier ne s’ouvre pas dans Power BI Desktop. Cela ne sera peut-être plus le cas dans une version future, mais sachez que la taille de ces jeux de données peut augmenter considérablement, au point qu’il ne soit plus possible de les télécharger ni de les ouvrir sur un ordinateur de bureau classique.
 
@@ -110,6 +110,13 @@ L’exemple suivant définit une stratégie d’actualisation pour stocker les d
 La première actualisation effectuée dans le service Power BI peut être plus longue, car toutes les données des cinq années calendaires complètes doivent être importées. Les actualisations suivantes sont généralement très rapides.
 
 ![Plages d’actualisation](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+
+#### <a name="current-date"></a>Date actuelle
+
+La *date actuelle* est basée sur la date système au moment de l’actualisation. Si l’actualisation planifiée est activée pour le jeu de données dans le service Power BI, le fuseau horaire spécifié est pris en compte pour la détermination de la date actuelle. Les actualisations planifiées et appelées manuellement tiennent compte du fuseau horaire s’il est disponible. Par exemple, une actualisation qui se produit à 20 h heure du Pacifique (États-Unis et Canada) avec un fuseau horaire spécifié détermine la date actuelle en fonction de l’heure du Pacifique et non de l’heure GMT (qui correspondrait au jour suivant).
+
+![Fuseau horaire](media/service-premium-incremental-refresh/time-zone2.png)
 
 > [!NOTE]
 > Quand vous avez terminé la définition de ces plages, vous pouvez passer directement à l’étape de publication suivante. Les autres menus déroulants concernent des fonctionnalités avancées.
@@ -143,10 +150,6 @@ Un autre exemple est l’actualisation des données d’un système financier o�
 > Les opérations d’actualisation dans le service sont effectuées selon l’heure UTC. Cela peut déterminer la date d’effet de l’actualisation et impacter les périodes complètes. Nous prévoyons d’ajouter la possibilité d’ignorer la date d’effet pour une opération d’actualisation.
 
 ## <a name="publish-to-the-service"></a>Publier sur le service
-
-L’actualisation incrémentielle est une fonctionnalité disponible uniquement dans Premium. Dans la boîte de dialogue Publier, vous pouvez donc uniquement sélectionner un espace de travail sur une capacité Premium.
-
-![Publier sur le service](media/service-premium-incremental-refresh/publish.png)
 
 Vous pouvez désormais actualiser le modèle. La première actualisation peut être plus longue en raison de l’importation des données d’historique. Les actualisations suivantes peuvent être beaucoup plus rapides si elles sont effectuées à l’aide de l’actualisation incrémentielle.
 

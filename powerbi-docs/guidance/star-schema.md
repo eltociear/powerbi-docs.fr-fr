@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410840"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527519"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
@@ -71,9 +71,10 @@ Il est important de comprendre que les modèles Power BI prennent en charge une 
 
 ![Exemple d’icône dans la liste de champs](media/star-schema/field-list-example.png)
 
-Toutefois, il existe deux raisons impérieuses de créer des mesures, même pour des totalisations simples au niveau des colonnes :
+Toutefois, il existe trois raisons impérieuses de créer des mesures, même pour des totalisations simples au niveau des colonnes :
 
 - Quand vous savez que vos auteurs de rapports sont susceptibles d’interroger le modèle en utilisant [MDX (expressions multidimensionnelles)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), le modèle doit inclure des _mesures explicites_. Les mesures explicites sont définies en utilisant DAX. Cette approche de conception est très appropriée quand un jeu de données Power BI est interrogé avec MDX, car MDX ne peut pas totaliser les valeurs de colonne. MDX est notamment utilisé avec [Analyser dans Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (les tableaux croisés dynamiques émettent des requêtes MDX).
+- Quand vous savez que vos auteurs de rapports sont susceptibles de créer des rapports paginés Power BI à l’aide du concepteur de requêtes MDX, le modèle doit inclure des mesures explicites. Seul le concepteur de requêtes MDX prend en charge les [agrégats de serveur](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Par conséquent, si les auteurs de rapports doivent faire évaluer les mesures par Power BI (et non par le moteur de rapport paginé), ils doivent utiliser le concepteur de requêtes MDX.
 - Si vous devez vous assurer que vos auteurs de rapports peuvent uniquement totaliser des colonnes de manière spécifique. Par exemple, la colonne **Unit Price** de la table Reseller Sales (qui représente un tarif par unité) peut être totalisée, mais uniquement à l’aide de fonctions d’agrégation spécifiques. Elle ne doit jamais être cumulée, mais il est approprié de la totaliser à l’aide d’autres fonctions d’agrégation (valeur minimale, valeur minimale, moyenne, etc.). Dans ce cas, le modélisateur peut masquer la colonne **Unit Price** et créer des mesures pour toutes les fonctions d’agrégation appropriées.
 
 Notez que cette approche de conception fonctionne bien pour les rapports créés dans le service Power BI et pour Questions et réponses. Toutefois, les connexions actives Power BI Desktop permettent aux auteurs de rapports d’afficher les champs masqués dans le volet **Champs**, ce qui peut entraîner le contournement de cette approche de conception.
@@ -117,7 +118,7 @@ La théorie de la conception de schémas en étoile fait référence à deux typ
 
 ### <a name="type-1-scd"></a>SCD de type 1
 
-Une **SCD** de **type 1** reflète toujours les valeurs les plus récentes ; ainsi, quand des modifications sont détectées dans les données sources, les données de la table de dimension sont simplement remplacées. Cette approche de conception est courante pour les colonnes qui stockent des valeurs complémentaires, telles que l’adresse e-mail ou le numéro de téléphone d’un client. Quand l’adresse e-mail ou le numéro de téléphone d’un client change, la table de dimension met à jour la ligne du client avec les nouvelles valeurs. C’est comme si le client avait toujours eu ces informations de contact.
+Une **SCD** de **Type 1** reflète toujours les valeurs les plus récentes ; ainsi, quand des modifications sont détectées dans les données sources, les données de la table de dimension sont simplement remplacées. Cette approche de conception est courante pour les colonnes qui stockent des valeurs complémentaires, telles que l’adresse e-mail ou le numéro de téléphone d’un client. Quand l’adresse e-mail ou le numéro de téléphone d’un client change, la table de dimension met à jour la ligne du client avec les nouvelles valeurs. C’est comme si le client avait toujours eu ces informations de contact.
 
 Une actualisation non incrémentielle d’une table de type dimension du modèle Power BI atteint le résultat d’une SCD de type 1. Elle actualise les données de la table afin que les valeurs les plus récentes soient chargées.
 

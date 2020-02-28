@@ -8,21 +8,25 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77260129"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496898"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Concepts de base pour les consommateurs du service Power BI
+
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Cet article suppose que vous avez déjà lu la [Vue d’ensemble de Power BI](../fundamentals/power-bi-overview.md) et que vous vous êtes identifié comme [ **_consommateur_** Power BI](end-user-consumer.md). Les consommateurs reçoivent du contenu Power BI, comme des tableaux de bord et des rapports, de leurs collègues. Les consommateurs utilisent le service Power BI, qui est la version basée sur un site web de Power BI.
+
+Pour recevoir du contenu d’autres personnes, il faut une licence utilisateur Power BI Pro ou une licence de capacité Power BI Premium. [Rechercher votre type de licence](end-user-license.md)
 
 Vous entendrez sans aucun doute le terme « Power BI Desktop » ou simplement « Desktop ». Il s’agit de l’outil autonome utilisé par les *concepteurs* qui créent et partagent des tableaux de bord et des rapports avec vous. Il est important de savoir qu’il existe d’autres outils Power BI. Tant que vous êtes consommateur, vous travaillez uniquement avec le service Power BI. Cet article s’applique uniquement au service Power BI.
 
@@ -38,7 +42,7 @@ Pour commencer, ouvrez un navigateur et saisissez **app.powerbi.com**. La premi�
 
 ![Une capture d’écran de l’écran d’accueil pour le service Power BI.](media/end-user-basic-concepts/power-bi-home.png)
 
-Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web. Par exemple, certaines personnes aiment que Power BI s’ouvre sur la **page d’accueil**, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, cet article va vous apprendre à personnaliser votre expérience.
+Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web. Par exemple, certaines personnes aiment que Power BI s’ouvre sur la **page d’accueil**, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, cet article va vous apprendre à personnaliser votre expérience.
 
 - [Présentation de l’accueil Power BI et de la recherche globale](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)
 
@@ -179,6 +183,9 @@ _______________________________________________________
 ## <a name="apps"></a>Applications
 
 Ces collections de tableaux de bord et de rapports organisent du contenu associé dans un seul et même package. Les *concepteurs* Power BI les génèrent et les partagent avec des personnes, des groupes, toute une organisation ou tout le monde. En tant que consommateur, vous pouvez être certain que vous et vos collègues travaillez avec les mêmes données, car il existe une seule version approuvée.
+
+> [!NOTE]
+> Pour utiliser des applications, il faut une licence Power BI Pro ou Premium. 
 
 ![Capture d’écran des applications sélectionnées dans le volet gauche de Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 

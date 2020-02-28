@@ -1,29 +1,37 @@
 ---
-ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8dc488a47ac2b5b4e7980b7404b2722b1120b6ab
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193841"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464377"
 ---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Valider les rôles dans Power BI Desktop
 Après avoir créé vos rôles, vous pouvez tester les résultats de ces rôles dans Power BI Desktop.
 
-1. Sélectionnez **Afficher comme rôles**. 
+1. Sous l’onglet **Modélisation**, sélectionnez **Afficher comme rôles**. 
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+    ![Sélectionner Afficher comme rôles](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-    Dans **Afficher comme rôles**, vous voyez les rôles que vous avez créés.
+    Dans la fenêtre **Afficher comme rôles** qui s’ouvre, vous voyez les rôles que vous avez créés.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    ![Fenêtre Afficher comme rôles](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-3. Sélectionnez un rôle que vous avez créé, puis **OK** pour appliquer ce rôle. Le rapport affiche les données pertinentes pour ce rôle. 
+3. Sélectionnez un rôle que vous avez créé, puis **OK** pour l’appliquer. 
 
-4. Vous pouvez également sélectionner **Autre utilisateur** et indiquer un utilisateur spécifique. Il est préférable de fournir le nom d’utilisateur principal (UPN), celui-ci étant utilisé par le service Power BI et Power BI Report Server.
+   Le rapport affiche les données pertinentes pour ce rôle.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. Vous pouvez également sélectionner **Autre utilisateur** et indiquer un utilisateur spécifique. 
 
-1. Sélectionnez **OK** pour afficher le rapport en fonction de ce que cet utilisateur peut voir. 
+    ![Sélectionner Autre utilisateur](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 
-Dans Power BI Desktop, **Autre utilisateur** affiche des résultats différents uniquement si vous utilisez la sécurité dynamique basée sur vos expressions DAX. 
+   Il est préférable de fournir le nom d’utilisateur principal (UPN), celui-ci étant utilisé par le service Power BI et Power BI Report Server.
+
+   Dans Power BI Desktop, **Autre utilisateur** montre des résultats différents uniquement si vous utilisez la sécurité dynamique basée sur vos expressions DAX. 
+
+5. Sélectionnez **OK**. 
+
+   Le rapport est affiché en fonction de ce que cet utilisateur peut voir.
+
+
 

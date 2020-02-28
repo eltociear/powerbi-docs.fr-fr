@@ -1,5 +1,5 @@
 ---
-title: Apporter vos propres clés de chiffrement pour Power BI (préversion)
+title: Apporter vos propres clés de chiffrement pour Power BI
 description: Découvrez comment utiliser vos propres clés de chiffrement dans Power BI Premium.
 author: davidiseminger
 ms.author: davidi
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 133d807d26ba6571eeb614852f3f651a749a369f
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75762114"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527768"
 ---
-# <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Apporter vos propres clés de chiffrement pour Power BI (préversion)
+# <a name="bring-your-own-encryption-keys-for-power-bi"></a>Apporter vos propres clés de chiffrement pour Power BI
 
 Power BI chiffre les données _au repos_ et _in-process_. Par défaut, Power BI utilise des clés managées par Microsoft pour chiffrer vos données. Dans Power BI Premium, vous pouvez également utiliser vos propres clés pour les données au repos qui sont importées dans un jeu de données (voir [Considérations relatives aux données sources et au stockage](#data-source-and-storage-considerations) pour plus d’informations). Cette approche est souvent décrite par le terme _Bring Your Own Key_ (BYOK).
 
 ## <a name="why-use-byok"></a>Pourquoi utiliser BYOK ?
 
-BYOK facilite le respect des exigences de conformité qui spécifient des modalités d’utilisation des clés avec le fournisseur de services cloud (en l’occurrence, Microsoft). Avec BYOK, vous fournissez et contrôlez les clés de chiffrement pour vos données au repos Power BI au niveau de l’application. Ainsi, vous pouvez exercer un contrôle et révoquer les clés de votre organisation, si vous décidez de quitter le service. Quand vous révoquez les clés, les données deviennent illisibles par le service.
+BYOK facilite le respect des exigences de conformité qui spécifient des modalités d’utilisation des clés avec le fournisseur de services cloud (en l’occurrence, Microsoft). Avec BYOK, vous fournissez et contrôlez les clés de chiffrement pour vos données au repos Power BI au niveau de l’application. Ainsi, vous pouvez exercer un contrôle et révoquer les clés de votre organisation, si vous décidez de quitter le service. Quand vous révoquez les clés, les données deviennent illisibles par le service dans les 30 minutes qui suivent.
 
 ## <a name="data-source-and-storage-considerations"></a>Considérations relatives aux sources de données et au stockage
 
@@ -34,7 +34,12 @@ Pour utiliser BYOK, vous devez charger les données sur le service Power BI à p
 - [Jeux de données en streaming](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Grands modèles](service-premium-large-models.md)
 
-BYOK s’applique uniquement au jeu de données associé au fichier PBIX, pas aux caches de résultats de requête pour les mosaïques et visuels.
+BYOK s’applique uniquement aux jeux de données. Les jeux de données d’envoi (push), les fichiers Excel et les fichiers CSV que les utilisateurs peuvent charger vers le service ne sont pas chiffrés à l’aide de votre propre clé. Pour identifier les artefacts stockés dans vos espaces de travail, utilisez la commande PowerShell suivante :
+
+```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
+
+> [!NOTE]
+> Cette cmdlet nécessite le module de gestion Power BI v1.0.840. Pour savoir quelle version vous utilisez, exécutez Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installez la version la plus récente en exécutant Install-Module -Name MicrosoftPowerBIMgmt. Pour plus d’informations sur les cmdlets Power BI et leurs paramètres, consultez [Modules PowerShell pour cmdlets Power BI](https://docs.microsoft.com/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Configurer Azure Key Vault
 
@@ -183,3 +188,17 @@ Power BI fournit des applets de commande supplémentaires pour vous aider à gé
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
+
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+* [Modules PowerShell pour applets de commande Power BI](https://docs.microsoft.com/powershell/power-bi/overview) 
+
+* [Moyens de partager votre travail dans Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
+
+* [Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL](service-url-filters.md)
+
+* [Incorporer avec le composant WebPart Rapport dans SharePoint Online](service-embed-report-spo.md)
+
+* [Publier sur le web à partir de Power BI](service-publish-to-web.md)

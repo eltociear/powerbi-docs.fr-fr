@@ -7,23 +7,28 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 59ba4d0e62613ed25569efd0602815e3d98aec4d
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852029"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496509"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un tableau de bord ou d’un rapport avec vos collègues. Les **commentaires** sont une fonctionnalité parmi d’autres qui permet à un *consommateur* de collaborer avec d’autres personnes. 
 
 ![commentaires vidéo](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> Pour collaborer avec d’autres personnes, notamment ajouter des commentaires à des rapports partagés, vous devez avoir une licence Power BI Pro ou Premium. [Quel type de licence j’ai ?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>Comment utiliser la fonctionnalité Commentaires
 Les commentaires peuvent être ajoutés à l’ensemble d’un tableau de bord, à chacun des visuels d’un tableau de bord, à une page de rapport, à un rapport paginé et à chacun des visuels d’une page de rapport. Le commentaire que vous ajoutez peut être général ou cibler certains collègues.  
@@ -34,7 +39,7 @@ Lorsque vous ajoutez un commentaire à un rapport, Power BI capture le filtre et
 
 Pourquoi est-ce important ? Prenons l’exemple d’un collègue ayant appliqué un filtre qui a révélé une information intéressante qu’il souhaite partager avec l’équipe. Si ce filtre n’était pas sélectionné, le commentaire serait probablement moins pertinent.
 
-Si vous utilisez un rapport paginé, vous ne pouvez écrire que des commentaires d’ordre général sur votre rapport.  Il n’est pas possible d’écrire des commentaires pour un visuel de rapport.
+Si vous utilisez un rapport paginé, vous ne pouvez écrire que des commentaires d’ordre général sur votre rapport.  Il n’est pas possible d’écrire des commentaires pour un visuel de rapport paginé.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Ajouter un commentaire général à un tableau de bord ou à un rapport
 Les processus d’ajout de commentaires à un tableau de bord ou à un rapport sont similaires.  Dans cet exemple, nous utilisons un tableau de bord. 

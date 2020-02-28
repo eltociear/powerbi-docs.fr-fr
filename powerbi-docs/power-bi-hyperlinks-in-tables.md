@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954094"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427803"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Ajouter des liens hypertextes (URL) à une table ou à une matrice
 Cette rubrique explique comment ajouter des liens hypertextes (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertextes (URL) à un jeu de données. Vous pouvez ajouter des liens hypertextes à vos matrices et tables de rapports dans Power BI Desktop ou le service Power BI. Vous pouvez ensuite afficher l’URL ou une icône de lien, ou mettre en forme une autre colonne comme texte de lien.
@@ -34,7 +34,7 @@ Il est possible de mettre en forme un champ comportant des URL comme liens hyper
     > [!NOTE]
     > On ne peut pas créer de colonne en mode DirectQuery.  Mais si vos données contiennent déjà des URL, vous pouvez les convertir en liens hypertexte.
 
-2. Dans la Vue de données, sélectionnez la colonne. 
+2. Dans la vue Données ou Rapport, sélectionnez la colonne. 
 
 3. Dans l’onglet **Modélisation**, sélectionnez **Catégorie de données** > **URL Web**.
    
@@ -79,13 +79,20 @@ Vous pouvez également mettre en forme un autre champ d’une table comme lien h
 
 1. Si un champ comportant un lien hypertexte n’existe pas déjà dans votre jeu de données, utilisez Power BI Desktop pour l’ajouter en tant que [colonne personnalisée](desktop-common-query-tasks.md). Là encore, on ne peut pas créer de colonne en mode DirectQuery.  Mais si vos données contiennent déjà des URL, vous pouvez les convertir en liens hypertexte.
 
-2. Dans l’affichage Rapport, créez une table ou une matrice avec la colonne que vous allez mettre en forme comme texte de lien.
+2. Dans la vue Données ou Rapport, sélectionnez la colonne qui contient l’URL. 
+
+3. Sous l’onglet **Modélisation**, sélectionnez **Catégorie de données**. Vérifiez que la colonne est mise en forme comme **Sans catégorie**.
+
+2. Dans la vue Rapport, créez une table ou une matrice avec la colonne d’URL et la colonne que vous allez mettre en forme comme texte de lien.
 
 3. Une fois la table sélectionnée, sélectionnez l’icône **Mettre en forme** ![Icône en forme de rouleau](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) pour ouvrir l’onglet Mettre en forme.
 
-4. Développez **Mise en forme conditionnelle**, en veillant à ce que le nom dans la zone corresponde à la colonne que vous souhaitez mettre en forme comme texte de lien. Recherchez **Icône d’URL** et **activez-la**.
+4. Développez **Mise en forme conditionnelle**, en veillant à ce que le nom dans la zone corresponde à la colonne que vous souhaitez mettre en forme comme texte de lien. Recherchez **URL web** et **activez-la**.
 
     ![Mise en forme conditionnelle d’une URL Web](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > Si vous ne voyez pas d’option **URL web**, vérifiez que la colonne qui contient les liens hypertexte n’est *pas* mise en forme comme **URL web** dans la zone de liste déroulante **Catégorie de données**.
 
 5. Dans la boîte de dialogue **URL Web**, sélectionnez le champ contenant l’URL dans la zone **En fonction du champ** > **OK**.
 

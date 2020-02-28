@@ -3,21 +3,22 @@ title: Qu’est-ce qu’une application Power BI ?
 description: Dans Power BI, les applications rassemblent les rapports et tableaux de bord associés dans un même emplacement.
 author: mihart
 ms.reviewer: lukaszp
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 784c0ed368a12951220ccf719c70ac7d8d3db040
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851019"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496709"
 ---
 # <a name="apps-in-power-bi"></a>Applications dans Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -29,9 +30,9 @@ Vos applications sont organisées dans la liste de contenu **Applications**. Sé
 ![Applications dans Power BI](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
-> L’utilisation de la fonctionnalité d’applications nécessite une licence Power BI Pro. <!-- add link to how to figure out your license -->
+> L’utilisation de la fonctionnalité d’applications nécessite une licence Power BI Pro. [Rechercher votre type de licence](end-user-license.md)
 
-## <a name="app-designers-and-app-consumers"></a>***Concepteurs*** et ***consommateurs*** d’applications
+## <a name="app-designers-and-app-consumers"></a>*Concepteurs* et *consommateurs* d’applications
 Selon votre rôle, vous pouvez être quelqu’un qui crée des applications (un *concepteur*) pour votre usage personnel ou pour les partager avec des collègues. Vous pouvez aussi être quelqu’un qui reçoit et télécharge des applications (un *consommateur*) créées par d’autres personnes. Cet article s’adresse aux *consommateurs* d’applications.
 
 ## <a name="advantages-of-apps"></a>Avantages des applications

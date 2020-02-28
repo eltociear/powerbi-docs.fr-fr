@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2665e33d5f268bf8037634406aca819c23f3513c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698184"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558686"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -43,13 +43,26 @@ La plupart des opérations de gestion des sources de données peuvent également
 
     ![Paramètres de la source de données](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Pour SQL Server, vous choisissez la **Méthode d’authentification** **Windows** ou **De base** (Authentification SQL). Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
+5. Pour SQL Server, vous choisissez la **Méthode d’authentification****Windows** ou **De base** (Authentification SQL). Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
 
-6. Sous **Paramètres avancés**, vous pouvez si vous le souhaitez configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
+6. Sous **Paramètres avancés**, vous pouvez configurer [Authentification unique (SSO)](service-gateway-sso-overview.md) pour votre source de données. 
+
+    ![Paramètres avancés](media/service-gateway-data-sources/advanced-settings-02.png)
+
+Vous pouvez configurer **Utiliser SSO via Kerberos pour les requêtes DirectQuery** ou **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** pour les rapports basés sur DirectQuery et **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** pour les rapports basés sur l’actualisation.
+
+Si vous utilisez **Utiliser SSO via Kerberos pour les requêtes DirectQuery** et cette source de données pour un rapport basé sur DirectQuery, elle utilise l’utilisateur mappé à l’utilisateur (Azure) Active Directory qui se connecte au service Power BI. Pour un rapport basé sur l’actualisation, elle utilise les informations d’identification que vous entrez dans les champs **Nom d’utilisateur** et **Mot de passe**.
+
+Si vous utilisez **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation**, vous n’avez pas besoin de fournir d’informations d’identification. Si cette source de données est utilisée pour un rapport basé sur DirectQuery, elle utilise l’utilisateur mappé à l’utilisateur (Azure) Active Directory qui se connecte au service Power BI.  Pour un rapport basé sur l’actualisation, elle utilise le contexte de sécurité du propriétaire du jeu de données.
+
+> [!NOTE]
+>L’authentification unique pour les requêtes d’importation est disponible uniquement pour la liste des sources de données SSO utilisant la [délégation Kerberos contrainte](service-gateway-sso-kerberos.md).
+
+7. Sous **Paramètres avancés**, vous pouvez si vous le souhaitez configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
 
     ![Paramètres avancés](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Sélectionnez **Ajouter**. Le message *Connexion établie* apparaît si l’opération réussit.
+8. Sélectionnez **Ajouter**. Le message *Connexion établie* apparaît si l’opération réussit.
 
     ![Connexion établie](media/service-gateway-data-sources/connection-successful.png)
 

@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851459"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496409"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Mode d’exploration d’un visuel dans Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -32,6 +34,7 @@ Les dates sont un type unique de hiérarchie.  Les concepteurs de rapports ajout
 Vous ne savez pas quels visuels Power BI contiennent une hiérarchie ? Pointez sur un visuel. Si vous voyez une combinaison de ces contrôles d’exploration en haut, c’est que votre visuel a une hiérarchie.
 
 ![Capture d’écran des icônes d’exploration.](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## <a name="learn-how-to-drill-down-and-up"></a>Découvrir comment descendre et monter dans la hiérarchie
 
@@ -141,12 +144,14 @@ Notez que les totaux sont les mêmes pour les champs **City** (Ville), **PostalC
 
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
-Par défaut, l’exploration ne filtre pas les autres visuels d’un rapport. Le concepteur de rapports peut toutefois changer ce comportement par défaut. Au fur et à mesure de l’exploration, regardez s’il y a des interactions de filtrage croisé ou de sélection croisée sur les autres visuels de la page.
+- Par défaut, l’exploration ne filtre pas les autres visuels d’un rapport. Le concepteur de rapports peut toutefois changer ce comportement par défaut. Au fur et à mesure de l’exploration, regardez s’il y a des interactions de filtrage croisé ou de sélection croisée sur les autres visuels de la page.
+
+- Pour consulter un rapport partagé avec vous, vous devez avoir une licence Power BI Pro ou Premium. [Quelle est ma licence ?](end-user-license.md)
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Visuels dans les rapports Power BI](../visuals/power-bi-report-visualizations.md)
+[Visuels dans les rapports Power BI](../visuals/power-bi-report-visualizations.md)
 
 [Rapports Power BI](end-user-reports.md)
 

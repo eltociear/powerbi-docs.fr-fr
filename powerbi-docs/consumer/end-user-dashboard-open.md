@@ -1,22 +1,24 @@
 ---
 title: Afficher un tableau de bord Power BI
-description: Les tableaux de bord sont une fonctionnalité clé du service Power BI ; découvrez comment ouvrir et afficher un tableau de bord.
+description: Les tableaux de bord sont une fonctionnalité clé du service Power BI. Découvrez comment ouvrir et consulter un tableau de bord.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f250d380fc8938f7b5d7723b5b8becb65f27d79d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852604"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496289"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ Les *utilisateurs* de Power BI consacrent beaucoup de temps à la consultation 
 ![tableau de bord](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
 
-Power BI Pro est nécessaire pour partager un tableau de bord et afficher un tableau de bord partagé.
+Une licence Power BI Pro ou Premium est nécessaire pour partager un tableau de bord et consulter un tableau de bord partagé. [Quelle est ma licence ?](end-user-license.md) 
 
 ## <a name="open-a-dashboard"></a>Ouvrir un tableau de bord
 
@@ -33,7 +35,7 @@ Power BI Pro est nécessaire pour partager un tableau de bord et afficher un ta
 
 |              |         |
 |------------|--------------------------------|
-|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, il est simple de l’ouvrir : il suffit de le sélectionner pour que le tableau de bord remplisse <br>votre canevas Power BI. |
+|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, son ouverture est simple : il suffit de le sélectionner pour que le tableau de bord remplisse votre canevas Power BI. |
 |                    |          |
 
 
@@ -52,5 +54,5 @@ Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de na
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-* Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../sample-tutorial-connect-to-the-samples.md).
+* Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../sample-tutorial-connect-to-the-samples.md).    
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.

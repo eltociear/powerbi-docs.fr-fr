@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76538722"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427650"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Utiliser des agrégations dans Power BI Desktop
 
@@ -75,7 +75,7 @@ La plupart des validations sont appliquées en désactivant les valeurs de liste
 
 ### <a name="aggregation-tables-are-hidden"></a>Les tables d’agrégation sont masquées
 
-Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)* . Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
+Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)*. Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
 
 Pour cette raison, les tables d’agrégation sont masquées dans la vue **Rapport**. Si la table n’est pas déjà masquée, la boîte de dialogue **Gérer les agrégations** la définit comme masquée lorsque vous sélectionnez **Appliquer tout**.
 
@@ -185,6 +185,10 @@ La fonction AVERAGE peut tirer parti des agrégations. La requête suivante atte
 Dans certains cas, la fonction DISTINCTCOUNT peut tirer parti des agrégations. La requête suivante atteint l’agrégation, car il existe une entrée GroupBy pour **CustomerKey**, qui préserve le caractère distinct de **CustomerKey** dans la table d’agrégation. Cette technique peut encore atteindre le seuil de performances, où une quantité de valeurs distinctes comprise entre deux et cinq millions peut affecter le niveau de performance des requêtes. Toutefois, elle peut être utile dans les scénarios où il existe des milliards de lignes dans la table de détails mais entre deux et cinq millions de valeurs distinctes dans la colonne. Dans ce cas, la fonction DISTINCTCOUNT peut être plus rapide que l’analyse de la table contenant des milliards de lignes, même si elles ont été mises en cache en mémoire.
 
 ![Requête d’agrégation DISTINCTCOUNT](media/desktop-aggregations/aggregations-code_07.jpg)
+
+Les fonctions temporelles DAX prennent en charge l’agrégation. La requête suivante atteint l’agrégation, car la fonction DATESYTD génère une table de valeurs **CalendarDay** et la table d’agrégation se situe à un niveau de précision couvert pour les colonnes group-by dans la table **Date**. Il s’agit d’un exemple de filtre table pour la fonction CALCULATE, qui peut fonctionner avec des agrégations.
+
+![Requête d’agrégation SUMMARIZECOLUMNS](media/desktop-aggregations/aggregations-code-07b.jpg)
 
 ## <a name="aggregation-based-on-groupby-columns"></a>Agrégation basée sur des colonnes GroupBy 
 

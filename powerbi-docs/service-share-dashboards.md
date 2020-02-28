@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 96f78ff87dc4f955e134815e6237e4fb5a1ca1e7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565650"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426676"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -37,7 +37,7 @@ Regardez Amanda partager le tableau de bord avec des collègues à l’intérieu
 
 ## <a name="share-a-dashboard-or-report"></a>Partager un tableau de bord ou un rapport
 
-1. Dans la liste des tableaux de bord ou des rapports, ou dans un tableau de bord ou un rapport ouvert, sélectionnez **Partage** ![Icône de partage](media/service-share-dashboards/power-bi-share-icon.png).
+1. Dans une liste de tableaux de bord ou de rapports, ou dans un tableau de bord ou un rapport ouvert, sélectionnez **Partager** ![Icône Partager](media/service-share-dashboards/power-bi-share-icon.png).
 
 2. Dans la zone supérieure, entrez les adresses e-mail complètes des personnes, des groupes de distribution ou des groupes de sécurité. Vous ne pouvez pas effectuer de partage avec des listes de distribution dynamique. 
    
@@ -89,6 +89,8 @@ Elles ne peuvent modifier aucun contenu dans ce tableau de bord ou ce rapport. E
 Seuls les destinataires directs voient le tableau de bord ou le rapport partagé. Par exemple, si vous avez envoyé l’e-mail à Vicki@contoso.com, seule Vicki voit le tableau de bord. Personne d’autre ne peut voir le tableau de bord, même si Vicki transfère le lien. Vicki doit utiliser la même adresse e-mail pour y accéder. Si Vicki se connecte avec une autre adresse e-mail, elle n’a pas accès au tableau de bord.
 
 Les personnes extérieures à votre organisation ne voient pas du tout les données si la sécurité au niveau des rôles ou des lignes est établie selon les modèles tabulaires Analysis Services locaux.
+
+Utilisez un groupe de sécurité, et non un groupe de distribution, à partager avec un groupe qui comprend des personnes disposant d’adresses e-mail externes. Les personnes disposant d’adresses e-mail externes dans un groupe de distribution ne peuvent pas voir le contenu que vous partagez, à moins qu’il ne s’agisse d’utilisateurs invités Azure Active Directory (Azure AD) B2B. Découvrez-en plus sur les [utilisateurs invités Azure AD B2B](service-admin-azure-ad-b2b.md).
 
 Si vous envoyez un lien à partir d’une application mobile Power BI à des personnes extérieures à votre organisation, le fait de cliquer sur le lien ouvre le tableau de bord dans un navigateur, et pas dans l’application mobile Power BI.
 

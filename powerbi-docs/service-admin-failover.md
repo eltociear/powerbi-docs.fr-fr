@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 24867d231cca0135c09119f4b885b393cb2b8dd8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699058"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527335"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -53,7 +53,10 @@ Une notification est publiée sur la page de support de Power BI ([https://power
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Combien de temps faut-il à Power BI pour effectuer le basculement ?
 
-À partir du moment où la décision d’effectuer le basculement est prise, l’instance de basculement peut être disponible au bout de 60 minutes.
+Quand la nécessité d’un basculement a été déterminée, Power BI est de nouveau opérationnel au bout de 15 minutes environ. Le temps nécessaire pour déterminer qu’un basculement est nécessaire varie en fonction du scénario d’interruption. 
+
+Dès lors qu’un basculement est effectué, Power BI utilise la géoréplication du stockage Azure pour effectuer le basculement. En règle générale, ces réplications ont un point de retour de 15 minutes. Cependant, le [stockage Azure ne garantit pas ce délai](https://docs.microsoft.com/azure/storage/common/storage-redundancy) dans le cadre d’un SLA. Power BI n’est donc pas en mesure de garantir un délai non plus. 
+
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Quand mon instance Power BI retourne-t-elle dans la région d’origine ?
 

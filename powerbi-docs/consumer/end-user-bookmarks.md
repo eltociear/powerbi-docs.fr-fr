@@ -5,21 +5,23 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852254"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496635"
 ---
 # <a name="what-are-bookmarks"></a>Qu’est-ce qu’un signet ?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Les signets capturent la vue actuellement configurée d’une page de rapport, notamment les filtres, les segments et l’état des visuels. Lorsque vous sélectionnez un signet, Power BI vous ramène à cette vue. Il existe deux types de signets : ceux que vous créez et ceux qui sont créés par les *concepteurs* de rapports.
+Les signets capturent la vue actuellement configurée d’une page de rapport, notamment les filtres, les segments et l’état des visuels. Lorsque vous sélectionnez un signet, Power BI vous ramène à cette vue. Il existe deux types de signets : ceux que vous créez et ceux qui sont créés par les *concepteurs* de rapports. Tout utilisateur Power BI peut créer des signets personnels. Toutefois, pour utiliser des signets créés par d’autres personnes, il faut une licence Power BI Pro ou Premium. [Quelle est ma licence ?](end-user-license.md)
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les signets ont de nombreuses utilisations. Imaginons que vous ayez découvert un insight très intéressant et que vous souhaitiez en garder une trace. Pour cela, vous pouvez créer un signet afin d’y revenir plus tard. Si vous souhaitez enregistrer votre travail avant de quitter le bureau, vous pouvez là aussi créer un signet. Vous pouvez même créer un signet correspondant à la vue par défaut de votre rapport. Ainsi, chaque fois que vous rouvrez le rapport, c’est cette vue qui s’affiche en premier. 
@@ -33,6 +35,9 @@ Pour ouvrir le volet Signets, sélectionnez **Signets** > **Afficher d’autres 
 
 ### <a name="report-bookmarks"></a>Signets du rapport
 Si le *concepteur* de rapports a créé des signets, vous les trouverez sous **Signets du rapport**. Cette page de rapport a deux signets, B1 et B2. 
+
+> [!NOTE]
+> Vous avez besoin de Power BI Pro ou Premium pour voir des rapports partagés. 
 
 ![Affichage des signets du rapport](media/end-user-bookmarks/power-bi-report.png)
 

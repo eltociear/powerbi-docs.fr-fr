@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73865841"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427251"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -36,7 +36,7 @@ Dans le navigateur de l’Éditeur de requête de Power BI Desktop, quand vous c
 
 * Quand vous utilisez des fichiers comme source de données d’une requête, le chemin d’accès absolu au fichier est stocké dans la requête. Cela vous permet de gagner du temps lors du partage ou du déplacement d’un fichier Power BI Desktop ou d’un classeur Excel, car il vous suffit de mettre à jour le chemin d’accès une seule fois.
 
-Par défaut, toutes les requêtes chargent une feuille de calcul Excel ou le modèle de données (ou les deux). Certaines requêtes sont des étapes intermédiaires qui ne sont pas destinées aux utilisateurs. Quand vous référencez des requêtes comme indiqué ci-dessus, cela arrive fréquemment. Vous pouvez contrôler le comportement du chargement en cliquant avec le bouton droit sur la requête dans le navigateur et en activant ou en désactivant l’option « Activer le chargement ». Si l’option *Activer le chargement* n’est pas cochée, la requête est toujours disponible sous l’onglet Requête et vous pouvez l’utiliser avec d’autres requêtes. Cela est particulièrement utile si vous utilisez conjointement des transformations Fusionner, Ajouter et Référence. Toutefois, étant donné que les résultats de la requête ne sont pas chargés dans le modèle de données, la requête n’encombre pas la liste des champs de vos rapports ni votre modèle de données. 
+Par défaut, toutes les requêtes sont chargées dans le modèle de données. Certaines requêtes sont des étapes intermédiaires qui ne sont pas destinées aux utilisateurs. Quand vous référencez des requêtes comme indiqué ci-dessus, cela arrive fréquemment. Vous pouvez contrôler le comportement du chargement en cliquant avec le bouton droit sur la requête dans le navigateur et en activant ou en désactivant l’option « Activer le chargement ». Si l’option *Activer le chargement* n’est pas cochée, la requête est toujours disponible sous l’onglet Requête et vous pouvez l’utiliser avec d’autres requêtes. Cela est particulièrement utile si vous utilisez conjointement des transformations Fusionner, Ajouter et Référence. Toutefois, étant donné que les résultats de la requête ne sont pas chargés dans le modèle de données, la requête n’encombre pas la liste des champs de vos rapports ni votre modèle de données. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Nécessité d’un identificateur de point dans les nuages de points
 Prenons un exemple simple d’une table contenant des températures et les heures de mesure. Si vous tracez ces données directement sur un nuage de points, Power BI regroupe toutes les valeurs en un seul point. Pour afficher les points de données individuels, vous devez ajouter un champ dans le compartiment Détails de la zone des champs. Pour ce faire dans Power BI Desktop, un moyen simple consiste à utiliser l’option « Ajouter une colonne d’index » sous l’onglet Requête dans le ruban « Ajouter une colonne ». 
@@ -116,7 +116,7 @@ Nous allons charger un jeu de données de demandes de support technique actives 
 > 
 > 
 
-Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données. Certains éléments de travail (WorkItems) ne sont peut-être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL. Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné. 
+Quand nous voulons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données. Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL. Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné. 
 
 ### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Création de relations dans Power BI Desktop, lorsque les données comprennent des valeurs null ou vides
 Il arrive que des jeux de données contiennent des colonnes avec des valeurs null ou vides. Cela peut poser des problèmes lors de la création de relations. Pour résoudre le problème, deux options s’offrent à vous. Vous pouvez supprimer les lignes qui contiennent des valeurs null ou vides. Pour cela, utilisez la fonctionnalité de filtre sous l’onglet requête ou, si vous fusionnez des requêtes, sélectionnez l’option « Conserver uniquement les lignes correspondantes ». Vous pouvez aussi remplacer les valeurs null ou vides par des valeurs qui fonctionnent dans les relations, en général des chaînes comme « NULL » et « (Vide) ». Il n’y a pas une approche meilleure que l’autre. Le filtrage de lignes dans l’étape de requête supprime les lignes et peut affecter les calculs et les statistiques récapitulatives. Cette dernière approche conserve les lignes de données. Le problème, c’est que des lignes sans relation peuvent apparaître comme liées dans le modèle, ce qui peut engendrer des erreurs de calcul. Si vous adoptez cette solution, veillez, le cas échéant, à utiliser des filtres au niveau de la vue ou du graphique pour obtenir des résultats précis. Plus important encore, déterminez les lignes qui sont conservées/supprimés et mesurez l’impact global sur l’analyse. 
@@ -132,7 +132,7 @@ Nous allons charger un jeu de données de demandes de support technique actives 
 > 
 > 
 
-Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données. Certains éléments de travail (WorkItems) ne sont peut être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL. Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ». Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné. 
+Quand nous voulons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données. Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL. Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ». Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné. 
 
 Pour créer une relation dans ce cas, nous devons créer un jeu de données logique de tous les éléments CustomerNames dans les deux jeux de données. Sous l’onglet Requête, vous pouvez utiliser la séquence suivante pour créer le jeu de données logique :
 

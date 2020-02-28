@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538264"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496751"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurer à distance l’application Power BI à l’aide d’un outil MDM
 
@@ -51,7 +51,7 @@ L’application Power BI pour Android offre aux administrateurs la possibilité 
 | Key | Type | Valeurs | Description |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Chaîne |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configurer si l ’appui sur un visuel sélectionne également un point de données. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur a un bouton pour actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
+| com.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur a un bouton pour actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Chaîne |  docked<br>dynamique | Configurer si le pied de page des rapports est ancré en bas du rapport ou s’il est masqué automatiquement. |
 
 ## <a name="deploying-app-configuration-settings"></a>Déploiement des paramètres de configuration d’application

@@ -9,16 +9,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfa4534b625a965226dfced17403a7e2da7a7f84
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699196"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527588"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Vue d’ensemble de l’authentification unique (SSO) pour les passerelles dans Power BI
 
-Vous pouvez bénéficier d’une connectivité avec authentification unique fluide qui permet de mettre à jour des rapports et des tableaux de bord Power BI à partir de données locales, en configurant la passerelle de données locale. Vous avez la possibilité de configurer votre passerelle avec la délégation [Kerberos](service-gateway-sso-kerberos.md) contrainte ou avec [SAML](service-gateway-sso-saml.md). La passerelle de données locale prend en charge l’authentification unique avec [DirectQuery](desktop-directquery-about.md), qu’elle utilise pour se connecter à des sources de données locales.
+Vous pouvez bénéficier d’une connectivité avec authentification unique fluide qui permet de mettre à jour des rapports et des tableaux de bord Power BI à partir de données locales, en configurant la passerelle de données locale. Vous avez la possibilité de configurer votre passerelle avec la délégation [Kerberos](service-gateway-sso-kerberos.md) contrainte ou avec [SAML](service-gateway-sso-saml.md). La passerelle de données locale prend en charge l’authentification unique avec [DirectQuery](desktop-directquery-about.md), qu’elle utilise pour la connexion à des sources de données locales, notamment pour l’actualisation. 
 
 Power BI prend en charge les sources de données suivantes :
 
@@ -33,7 +33,9 @@ Power BI prend en charge les sources de données suivantes :
 
 L’authentification unique pour [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md) n’est pas prise en charge.
 
-Quand un utilisateur interagit avec un rapport DirectQuery dans le service Power BI, chaque opération de filtrage croisé, de découpage, de tri et de modification de rapport peut entraîner l’envoi de requêtes actives à la source de données locale sous-jacente. Quand vous configurez l’authentification unique pour la source de données, les requêtes s’exécutent sous l’identité de l’utilisateur qui interagit avec Power BI via l’expérience web ou des applications mobiles Power BI. Par conséquent, chaque utilisateur voit précisément dans la source de données sous-jacente les données pour lesquelles il dispose d’autorisations. Une fois l’authentification unique configurée, la mise en cache des données n’est pas partagée entre les utilisateurs.
+Quand un utilisateur interagit avec un rapport DirectQuery dans le service Power BI, chaque opération de filtrage croisé, de découpage, de tri et de modification de rapport peut entraîner l’envoi de requêtes actives à la source de données locale sous-jacente. Quand vous configurez l’authentification unique pour la source de données, les requêtes s’exécutent sous l’identité de l’utilisateur qui interagit avec Power BI via l’expérience web ou des applications mobiles Power BI. Par conséquent, chaque utilisateur voit précisément dans la source de données sous-jacente les données pour lesquelles il dispose d’autorisations. 
+
+Vous pouvez également configurer un rapport dont l’actualisation dans le service Power BI utilisera l’authentification unique. Quand vous configurez l’authentification unique pour cette source de données, les requêtes s’exécutent sous l’identité du propriétaire du jeu de données dans Power BI. L’actualisation se produit donc en fonction des autorisations du propriétaire du jeu de données sur la source de données sous-jacente. Pour le moment, l’actualisation avec l’authentification unique est activée uniquement pour les sources de données utilisant une délégation [Kerberos](service-gateway-sso-kerberos.md) contrainte. 
 
 ## <a name="query-steps-when-running-sso"></a>Étapes d’une requête durant l’exécution de l’authentification unique
 

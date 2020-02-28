@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f7debd49541679b2ec5d41eaa2307c50bf170ce
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016132"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527419"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Utiliser le ruban mis à jour dans Power BI Desktop (préversion)
 
@@ -51,7 +51,18 @@ Ces avantages peuvent être regroupés dans les catégories suivantes :
 
 * **Un ruban à une seule ligne qui vous fait gagner de l'espace une fois réduit** : un autre avantage du ruban mis à jour est la possibilité de réduire le ruban sur une seule ligne afin d’afficher dynamiquement les éléments du ruban selon le contexte. 
 
-    ![Thèmes améliorés](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Ruban réduit](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Touches d’accès pour parcourir et sélectionner des boutons** : pour mieux parcourir le ruban, vous pouvez appuyer sur **Alt+touche Windows** pour activer les touches d’accès. Une fois activées, vous pouvez appuyer sur les touches affichées de votre clavier pour naviguer.
+
+    ![Touches d’accès](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Chaînes de format personnalisées** : en plus de la définition de chaînes de format personnalisées dans le volet *Propriétés*, vous pouvez également les définir dans le ruban. Sélectionnez la mesure ou la colonne à personnaliser et un onglet contextuel **Outils de mesure** ou **Outils de colonne** s’affiche, en fonction de votre sélection. Dans la section de mise en forme de cet onglet, vous pouvez taper votre chaîne de format personnalisée directement dans la zone de liste déroulante.
+
+    ![Chaînes de format personnalisées](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Accessibilité** : la barre de titre, le ruban et le menu Fichier sont entièrement accessibles. Appuyez sur Ctrl+F6 pour accéder à la section du ruban. À partir de là, vous pouvez utiliser **Tab** pour vous déplacer entre les barres supérieure et inférieure, et les touches de direction pour vous déplacer entre les éléments.
+
 
 En plus de ces changements visibles, un ruban mis à jour nous permet également d’intégrer les futures mises à jour à Power BI Desktop et à son ruban, par exemple :
 

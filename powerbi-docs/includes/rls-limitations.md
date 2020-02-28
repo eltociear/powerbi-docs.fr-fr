@@ -2,28 +2,28 @@
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 09/13/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: 6d1a239954a64da1c92cc68b56912e6f4ab67228
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: b67025de5e2a70876a31fd42e22c9572403288fa
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74882794"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464378"
 ---
 ## <a name="limitations"></a>Limites
 
-Voici une liste des limites actuelles pour la sécurité au niveau des lignes sur les modèles cloud.
+Les limitations actuelles pour la sécurité au niveau des lignes sur les modèles cloud sont les suivantes :
 
 * Si vous avez précédemment défini des rôles et des règles dans le service Power BI, vous devez les recréer dans Power BI Desktop.
 
-* Vous pouvez définir la sécurité au niveau des lignes (SNL) uniquement sur les jeux de données créés à l’aide de Power BI Desktop. Pour activer la sécurité au niveau des lignes pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). [En savoir plus](../desktop-import-excel-workbooks.md)
+* Vous pouvez définir la sécurité au niveau des lignes (SNL) uniquement sur les jeux de données créés à l’aide de Power BI Desktop. Pour activer la sécurité au niveau des lignes pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). [En savoir plus](../desktop-import-excel-workbooks.md).
 
 * Seules les connexions Import et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
 
 ## <a name="known-issues"></a>Problèmes connus
 
-Il existe un problème connu : vous obtenez un message d’erreur quand vous tentez de publier un rapport déjà publié à partir de Power BI Desktop. Le scénario est le suivant.
+Il existe un problème connu : vous obtenez un message d’erreur quand vous tentez de publier un rapport déjà publié à partir de Power BI Desktop. Le scénario est le suivant :
 
 1. Anna possède un jeu de données publié sur le service Power BI et a configuré la sécurité au niveau des lignes.
 

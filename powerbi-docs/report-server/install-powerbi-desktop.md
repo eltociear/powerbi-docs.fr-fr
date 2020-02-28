@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/03/2019
-ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 02/13/2020
+ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874115"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426653"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 
@@ -89,15 +89,19 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 
 * Visuels R
 * ArcGIS Maps
-* Éléments visuels personnalisés
+* Visuels personnalisés
 * Fil d’Ariane
 * Filtrage basé sur la géolocalisation ou codes barres
+
+### <a name="custom-security"></a>Sécurité personnalisée
+
+Power BI Desktop optimisé pour Power BI Report Server ne prend pas en charge la sécurité personnalisée. Si votre Power BI Report Server est configuré avec une extension de sécurité personnalisée, vous ne pouvez pas enregistrer un rapport Power BI à partir de Power BI Desktop (optimisé pour Power BI Report Server) sur l’instance Power BI Report Server. Vous devez enregistrer le fichier de rapport .pbix à partir de Power BI Desktop et le charger sur le site du portail Power BI Report Server.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop pour les versions antérieures de Power BI Report Server
 
 Si votre serveur de rapports est d’une version antérieure, vous avez besoin de la version correspondante de Power BI Desktop. Voici le lien permettant de télécharger une version précédente.
 
-- Microsoft Power BI Desktop ([optimisé pour Power BI Report Server - janvier 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([optimisé pour Power BI Report Server - Septembre 2019](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## <a name="next-steps"></a>Étapes suivantes
 

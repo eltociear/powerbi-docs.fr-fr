@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: c59f1c1653e3b1a506f342bffed6fa539dfe58b3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819580"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427872"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -233,14 +233,14 @@ Les options présentées aux utilisateurs dans l’interface utilisateur varient
 
 ### <a name="export-data"></a>Exporter des données
 
-Les utilisateurs de l’organisation peuvent exporter des données depuis une vignette ou une visualisation. [En savoir plus](visuals/power-bi-visualization-export-data.md)
+Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](visuals/power-bi-visualization-export-data.md).
 
 L’image suivante présente l’option d’exportation de données à partir d’une vignette.
 
 ![Exporter des données à partir d’une vignette](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel** ainsi que la connexion active du service Power BI.
+> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité [Analyser dans Excel](service-analyze-in-excel.md) ainsi que la connexion active du service Power BI.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exporter les rapports comme présentations PowerPoint ou documents PDF
 
@@ -442,7 +442,7 @@ Les utilisateurs de l’organisation peuvent télécharger et installer des appl
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>Installer des applications modèles non répertoriées sur AppSource
 
-Choisissez quels utilisateurs dans l’organisation peuvent télécharger et installer des applications modèles **non répertoriées sur [AppSource](https://appsource.microsoft.com)** .
+Choisissez quels utilisateurs dans l’organisation peuvent télécharger et installer des applications modèles **non répertoriées sur [AppSource](https://appsource.microsoft.com)**.
 
 ![Portail d’administration Power BI, paramètre Installer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 

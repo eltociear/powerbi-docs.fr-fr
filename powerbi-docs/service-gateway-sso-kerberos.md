@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000109"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558653"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Configurer l’authentification unique basée sur Kerberos du service Power BI vers des sources de données locales
 
@@ -185,7 +185,7 @@ Effectuez les étapes de configuration suivantes :
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Accorder au compte du service de passerelle les droits de stratégie locaux sur la machine de passerelle
 
-Enfin, sur la machine exécutant le service de passerelle (dans notre exemple, **MyGatewayMachine**), attribuez au compte de service de passerelle les stratégies locales **Emprunter l’identité d’un client après l’authentification** et **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** . Effectuez cette configuration avec l’Éditeur de stratégie de groupe locale (**gpedit.mscx**).
+Enfin, sur la machine exécutant le service de passerelle (dans notre exemple, **MyGatewayMachine**), attribuez au compte de service de passerelle les stratégies locales **Emprunter l’identité d’un client après l’authentification** et **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)**. Effectuez cette configuration avec l’Éditeur de stratégie de groupe locale (**gpedit.mscx**).
 
 1. Sur la machine de la passerelle, exécutez **gpedit.msc**.
 
@@ -246,11 +246,17 @@ SAP HANA et SAP BW ont des exigences de configuration supplémentaires spécifiq
 
 ## <a name="run-a-power-bi-report"></a>Générer un rapport Power BI
 
-Une fois que vous avez terminé toutes les étapes de configuration, utilisez la page **Gérer la passerelle** dans Power BI pour configurer la source de données à utiliser pour l’authentification unique. Si vous avez plusieurs passerelles, assurez-vous de sélectionner la passerelle que vous avez configurée pour l’authentification unique Kerberos. Ensuite, sous **Paramètres avancés** pour la source de données, vérifiez que l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery** est cochée.
+Une fois que vous avez terminé toutes les étapes de configuration, utilisez la page **Gérer la passerelle** dans Power BI pour configurer la source de données à utiliser pour l’authentification unique. Si vous avez plusieurs passerelles, assurez-vous de sélectionner la passerelle que vous avez configurée pour l’authentification unique Kerberos. Ensuite, dans la zone **Paramètres avancés** de votre source de données, assurez-vous que l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery** ou **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** est activée pour les rapports basés sur DirectQuery et que l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** est activée pour les rapports basés sur l’actualisation.
 
-![Option Paramètres avancés](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Option Paramètres avancés](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
- Publiez un rapport basé sur DirectQuery à partir de Power BI Desktop. Ce rapport doit utiliser des données qui sont accessibles à l’utilisateur mappé à l’utilisateur (Azure) Active Directory qui se connecte au service Power BI. En raison du fonctionnement de l’actualisation, vous devez utiliser DirectQuery au lieu de l’importation. Quand la passerelle actualise des rapports basés sur l’importation, elle utilise les informations d’identification que vous avez entrées dans les champs **Nom d’utilisateur** et **Mot de passe** lors de la création de la source de données. En d’autres termes, l’authentification unique Kerberos n’est *pas* utilisée. Quand vous publiez, sélectionnez la passerelle que vous avez configurée pour l’authentification unique si vous avez plusieurs passerelles. Dans le service Power BI, vous pouvez maintenant actualiser le rapport ou en créer un basé sur le jeu de données publié.
+Si vous publiez un rapport basé sur DirectQuery à partir de Power BI Desktop et que vous le mappez à une source de données pour laquelle l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery** ou **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** est activée, ce rapport utilise les données accessibles à l’utilisateur mappé à l’utilisateur (Azure) Active Directory qui se connecte au service Power BI.
+
+De même, si vous publiez un rapport basé sur l’actualisation à partir de Power BI Desktop et que vous le mappez à une source de données pour laquelle l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** est activée, vous n’avez pas besoin de fournir d’informations d’identification. L’actualisation est exécutée dans le contexte Active Directory du propriétaire du jeu de données.
+
+Toutefois, si vous le mappez à une source de données pour laquelle l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation** n’est pas activée, l’actualisation utilise les informations d’identification que vous avez entrées dans les champs **Nom d’utilisateur** et **Mot de passe** au moment de la création de la source de données. En d’autres termes, l’authentification unique Kerberos n’est *pas* utilisée. 
+
+ Quand vous publiez, sélectionnez la passerelle que vous avez configurée pour l’authentification unique si vous avez plusieurs passerelles. 
 
 Cette configuration est appropriée dans la plupart des cas. Toutefois, avec Kerberos, il peut y avoir différentes configurations en fonction de votre environnement. Si vous ne parvenez pas à charger le rapport, contactez votre administrateur de domaine pour résoudre le problème. Si votre source de données est SAP BW, reportez-vous aux sections de résolution des problèmes des pages de configuration spécifiques à la source de données pour [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) et [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), en fonction de la bibliothèque SNC que vous avez choisie.
 

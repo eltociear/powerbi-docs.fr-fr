@@ -3,20 +3,21 @@ title: Qu’est-ce qu’un « consommateur » Power BI ?
 description: Vue d’ensemble de Power BI pour les consommateurs (également appelés « utilisateurs finaux » ou « utilisateurs métier »).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863805"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496198"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Service Power BI pour les consommateurs
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Vous vivez dans une culture de la donnée, où les décisions métier sont basées sur des faits, et non pas sur des opinions. Vous avez besoin de données pour prendre ces décisions et vos collègues vous y aident.     
  
@@ -43,6 +44,8 @@ La façon dont vous interagissez avec Power BI dépend de votre travail. En tant
 En tant que consommateur, vous n’avez pas accès à toutes les fonctionnalités de Power BI, mais ce n’est pas un problème, car votre travail ne consiste pas à créer des tableaux de bord et des rapports. Vous allez utiliser le service Power BI pour analyser, superviser, explorer et prendre des décisions. 
 
 Vous entendrez sans doute le terme « Power BI Desktop » ou simplement « Desktop » : il s’agit d’un outil autonome utilisé par les *concepteurs* qui créent et partagent des tableaux de bord et des rapports avec vous.  Il est important de savoir qu’il existe d’autres outils Power BI, mais si vous êtes consommateur, vous utiliserez seulement le service Power BI. 
+
+Et parce que vous travaillez avec du *contenu* partagé, vous avez besoin d’une licence Power BI Pro ou Premium. [Quelle est ma licence ?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée 

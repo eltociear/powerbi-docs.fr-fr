@@ -1,31 +1,31 @@
 ---
-title: 'Tutoriel : Utiliser Analyser dans Excel'
-description: Ce tutoriel utilise la page Jeux de données Power BI pour importer des jeux de données dans Excel.
+title: 'Tutoriel : Utiliser la fonctionnalité Analyser dans Excel de Power BI, en démarrant dans Excel'
+description: Dans ce tutoriel, vous démarrez dans Excel et vous vous connectez à la page Jeux de données Power BI pour importer des jeux de données dans Excel.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a68adccec019e64e554d199d23d7dddd782f56a2
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: d3795c34e477c593af4afefbe5cc01040026bfa4
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921482"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426538"
 ---
-# <a name="tutorial-use-analyze-in-excel"></a>Tutoriel : Utiliser Analyser dans Excel
+# <a name="tutorial-use-power-bi-analyze-in-excel-starting-in-excel"></a>Tutoriel : Utiliser la fonctionnalité Analyser dans Excel de Power BI, en démarrant dans Excel
 
-Votre organisation utilise Power BI pour partager l’accès aux données. Utilisez la fonctionnalité Analyser dans Excel pour créer des tableaux croisés dynamiques et des graphiques croisés dynamiques afin d’ajouter du contexte à vos analyses ou de réduire le temps nécessaire pour trouver et importer les jeux de données pertinents.
+Votre organisation utilise Power BI pour partager l’accès aux données. Vous démarrez la fonctionnalité Analyser dans Excel de Power BI à partir d’Excel pour créer des tableaux croisés dynamiques et des graphiques croisés dynamiques dans Excel. Ces tableaux et graphiques peuvent préciser le contexte de votre analyse ou réduire le temps nécessaire pour trouver et importer les jeux de données appropriés.
 
-Pour sélectionner un jeu de données, sélectionnez « Analyser dans Excel ». Vous serez guidé pour créer un tableau croisé dynamique qui utilise les données.  
+Pour démarrer avec un jeu de données Power BI, dans Excel, sélectionnez « Analyser dans Excel ». Vous êtes alors guidé pour créer un tableau croisé dynamique qui utilise les données.  
 
 Vous trouverez d’autres jeux de données partagés par votre organisation en revenant à la page Jeux de données.
 
-Si vous rencontrez des problèmes à une étape, sélectionnez Non à l’étape concernée dans le flux ci-dessous et indiquez vos commentaires dans le formulaire lié.  
+Si vous rencontrez des problèmes à une étape, sélectionnez **Non** à l’étape concernée dans le flux ci-dessous et indiquez vos commentaires dans le formulaire lié.  
 
 Dans ce tutoriel, vous allez découvrir comment :
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c876a1f87afcb5bbaa3e27bdcb88bda2a04496e5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758505"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558591"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI échoue à créer la visualisation de carte, elle demande l’aide de Bing Cartes. 
@@ -28,17 +28,17 @@ Vous ou votre administrateur devrez peut-être mettre à jour votre pare-feu pou
 Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les conseils suivants. Vous pouvez utiliser le premier ensemble de conseils si vous avez accès au jeu de données lui-même. Le deuxième ensemble de conseils reprend ce que vous pouvez effectuer dans Power BI si vous n’avez pas accès au jeu de données. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Ce qui est envoyé à Bing Cartes
-Le service Power BI et Power BI Desktop envoient à Bing les données géographiques nécessaires pour créer la visualisation de carte. Il peut s’agir des données des compartiments d’**emplacement**, de **latitude** et de **longitude** et des champs de données géographiques dans un des compartiments de filtrage **Niveau rapport**, **Niveau page** ou **Niveau visuel**. Ce qui est envoyé exactement varie en fonction du type de carte. Pour en savoir plus, consultez [Bing Cartes](https://go.microsoft.com/fwlink/?LinkID=248686).
+Le service Power BI et Power BI Desktop envoient à Bing les données géographiques nécessaires pour créer la visualisation de carte. Elles peuvent inclure les données des compartiments **Emplacement**, **Latitude** et **Longitude** de la zone des champs du visuel. Ce qui est envoyé exactement varie en fonction du type de carte. Pour en savoir plus, consultez [Bing Cartes](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Pour les cartes (à bulles, en nuages de points et à points), si la latitude et la longitude sont fournies, aucune donnée n’est envoyée à Bing. Dans le cas contraire, toutes les données des compartiments **Emplacement** (et de filtre) sont envoyées à Bing.     
+* Pour les cartes (à bulles, en nuages de points et à points), si la latitude et la longitude sont fournies, aucune donnée n’est envoyée à Bing. Dans le cas contraire, toutes les données du compartiment **Emplacement** sont envoyées à Bing.     
 
 * Les cartes choroplèthes nécessitent un champ dans le compartiment **Emplacement**, même si la latitude et la longitude sont fournies. Les données figurant dans les compartiments **Emplacement**, **Latitude** et **Longitude** sont envoyées à Bing.
   
-    Dans l’exemple ci-dessous, le champ **Vendor** est utilisé pour le géocodage, donc toutes les données concernant le fournisseur sont envoyées à Bing. Les données des compartiments **Taille** et **Saturation de la couleur** ne sont pas envoyées à Bing.
+    Dans l’exemple ci-dessous, le champ **Vendor** est utilisé pour le géocodage. Les données de la colonne Vendor sont donc envoyées à Bing. Les données des compartiments **Taille** et **Saturation de la couleur** ne sont pas envoyées à Bing.
   
     ![envoyé à Bing Cartes](./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png)
   
-    Dans le deuxième exemple ci-dessous, le champ **Territory** (Secteur) est utilisé pour le géocodage, donc toutes les données concernant le secteur sont envoyées à Bing. Les données des compartiments **Légende** et **Saturation de la couleur** ne sont pas envoyées à Bing.
+    Dans le deuxième exemple ci-dessous, le champ **Territory** est utilisé pour le géocodage. Les données de la colonne Territory sont donc envoyées à Bing. Les données des compartiments **Légende** et **Saturation de la couleur** ne sont pas envoyées à Bing.
   
     ![Cartes choroplèthes et Bing](./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png)
 

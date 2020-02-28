@@ -1,18 +1,18 @@
 ---
 title: Créer un rapport paginé avec un jeu de données partagé Power BI – Power BI Report Builder
 description: Créez un rapport paginé dans Power BI Report Builder sur la base d’un jeu de données partagé Power BI.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 4a46f0aae642b42cd797940e0b0991cfa77a077e
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691460"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427834"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Créer un rapport paginé sur la base d’un jeu de données partagé Power BI
 
@@ -27,6 +27,7 @@ Le jeu de données ne doit pas nécessairement se trouver dans un espace de trav
 Voici une liste de ce dont vous avez besoin et ce dont vous n’avez pas besoin pour utiliser un jeu de données partagé dans un générateur de rapports Power BI.
 
 - Générateur de rapports Power BI. [Télécharger et installer le générateur de rapports Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Télécharger et installer Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - Pour accéder à un jeu de données Power BI, vous devez disposer de l’autorisation Build pour le jeu de données. En savoir plus sur [l’autorisation de génération](service-datasets-build-permissions.md).
 - Vous n’avez pas besoin d’une licence Power BI Pro pour créer un rapport paginé dans le générateur de rapports. 
 - Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium. 
@@ -57,12 +58,26 @@ Voici une liste de ce dont vous avez besoin et ce dont vous n’avez pas besoin 
     N’oubliez pas que vous pouvez vous connecter à plusieurs jeux de données Power BI et à d’autres sources de données dans le même rapport paginé.
 
 
-## <a name="get-the-query-for-the-dataset"></a>Obtenir la requête pour le jeu de données
+## <a name="get-the-dax-query-for-the-dataset"></a>Obtenir la requête DAX pour le jeu de données
 
 Lorsque vous souhaitez que les données présentes dans votre rapport Power BI et dans votre rapport du générateur de rapports soient identiques, il ne suffit pas de vous connecter au jeu de données. Vous avez également besoin de la requête générée sur ce jeu de données.
 
+### <a name="video-get-the-dax-query"></a>Vidéo : Obtenir la requête DAX
+
+Dans la vidéo suivante, Chris Finlan montre comment obtenir la requête DAX dont vous avez besoin pour votre rapport paginé.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### <a name="steps-to-get-the-dax-query"></a>Étapes à suivre pour obtenir la requête DAX
+
+Voici à présent les étapes à suivre pour obtenir la requête.
+
 1. Ouvrez le rapport Power BI (.pbix) dans Power BI Desktop.
-1. Vérifiez que vous disposez d’une table dans votre rapport contenant toutes les données que vous souhaitez dans votre rapport paginé.
+1. Vérifiez que vous disposez d’une table dans votre rapport contenant toutes les données que vous souhaitez dans votre rapport paginé. La table doit répondre à ces deux exigences :
+    - Il doit s’agir d’une table plate, et non d’une matrice ou d’un autre visuel. S’il ne s’agit pas d’une table, effectuez une conversion en table, suivez les étapes de l’Analyseur de performances ci-après, puis reconvertissez-la en visuel de votre choix.
+    - Pour vos champs numériques, vous devez utiliser des *mesures prédéfinies*. Ils ont un symbole de calculatrice affiché en regard de chacun d’eux. Apprenez-en plus sur la [création de mesures](desktop-measures.md). 
+
+        ![Icône de mesure](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. Sur le ruban **Affichage**, sélectionnez **Analyseur de performances**.
 
@@ -72,7 +87,7 @@ Lorsque vous souhaitez que les données présentes dans votre rapport Power BI e
 
     ![Actualiser les visuels](media/report-builder-shared-datasets/power-bi-performance-analyzer-refresh-visuals.png)
 
-1. Développez le signe plus ( **+** ) à côté du nom de la table, puis sélectionnez **Copier une requête**. La requête est la formule DAX dont vous avez besoin pour le jeu de données dans le générateur de rapports Power BI.
+1. Développez le signe plus (**+**) à côté du nom de la table, puis sélectionnez **Copier une requête**. La requête est la formule DAX dont vous avez besoin pour le jeu de données dans le générateur de rapports Power BI.
 
     ![Copier la requête](media/report-builder-shared-datasets/power-bi-performance-analyzer-copy-query.png)
 
@@ -204,6 +219,7 @@ Par exemple, imaginons que votre rapport a un format 8,5 pouces x 11 pouces et q
 
 - Pour les jeux de données qui utilisent une connexion active à Analysis Services, vous pouvez vous connecter directement à l’aide de la connexion Analysis Services sous-jacente au lieu d’un jeu de données partagé.
 - Les jeux de données avec des mentions Promues ou Certifiées apparaissent dans la liste des jeux de données disponibles, mais ils ne sont pas marqués comme tels. 
+- Vous ne pouvez pas incorporer des rapports paginés basés sur des jeux de données partagés Power BI dans le scénario « App Owns Data ».
 
 ## <a name="next-steps"></a>Étapes suivantes
 

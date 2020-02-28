@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925666"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426561"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -68,15 +68,16 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
 | Ajouter/supprimer des personnes, y compris d’autres administrateurs.  | X  |   |   |   |
 | Ajouter des membres ou d’autres rôles avec des autorisations inférieures.  |  X | X  |   |   |
 | Publier et mettre à jour une application. |  X | X  |   |   |
-| Partager un élément ou une application. |  X | X  |   |   |
-| Permettre à d’autres utilisateurs de repartager des éléments. |  X | X  |   |   |
+| Partager un élément ou une application.<sup>1</sup> |  X | X  |   |   |
+| Permettre à d’autres utilisateurs de repartager des éléments.<sup>1</sup> |  X | X  |   |   |
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
 | Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>1</sup> |  X | X  | X  |   |
-| Copier un rapport.<sup>1</sup> | X | X | X |  |
-| Voir et utiliser un élément.<sup>2</sup> |  X | X  | X  | X  |
+| Copier un rapport.<sup>2</sup> | X | X | X |  |
+| Voir et utiliser un élément.<sup>3</sup> |  X | X  | X  | X  |
 
-1. Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, vous devez remplir quelques critères supplémentaires :
+1. Les contributeurs et les lecteurs peuvent partager des éléments dans un espace de travail s’ils ont des autorisations de repartage.
+2. Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, vous devez remplir quelques critères supplémentaires :
     - Vous avez besoin d’une licence Power BI Pro. Voir la section suivante, [Gestion des licences](#licensing), pour plus de détails.
     - Vous devez avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
 2. Même si vous n’avez pas de licence Power BI Pro, vous pouvez voir et utiliser les éléments du service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.

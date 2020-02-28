@@ -1,26 +1,32 @@
 ---
 title: Autorisation de génération pour les jeux de données partagés (préversion)
-description: Découvrez comment vous pouvez garder le contrôle de qui peut accéder aux données à l’aide de l’autorisation de génération.
+description: Découvrez comment contrôler l’accès aux données à l’aide de l’autorisation de génération.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872563"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426607"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Autorisation de génération pour les jeux de données partagés (préversion)
 
-En tant que créateur de *modèles de données* dans Power BI Desktop, vous pouvez les partager en tant que *jeux de données* dans le service Power BI. Les créateurs de rapports peuvent alors facilement découvrir et réutiliser les jeux de données que vous avez partagés. Découvrez comment garder le contrôle de qui peut accéder aux données à l’aide de l’autorisation de génération.
+Quand vous créez un rapport dans Power BI Desktop, les données de ce rapport sont stockées dans un *modèle de données*. Quand vous publiez vos rapports dans le service Power BI, vous publiez également les données sous la forme d’un *jeu de données*. Vous pouvez accorder à d’autres utilisateurs l’*autorisation de génération* pour ce rapport. Ils peuvent ainsi découvrir et réutiliser le jeu de données que vous avez partagé. Cet article explique comment contrôler l’accès aux données à l’aide de l’autorisation de génération.
 
-L’autorisation de génération concerne uniquement les jeux de données. Lorsque vous accordez aux utilisateurs l’autorisation de génération, ils peuvent créer un nouveau contenu sur un jeu de données, comme des rapports, des tableaux de bord, des vignettes épinglées à partir de Q&R et Insights Discovery. Elles peuvent également générer un nouveau contenu sur le jeu de données hors de Power BI, comme des feuilles Excel par le biais de la fonctionnalité Analyser dans Excel, XMLA, et exporter des données sous-jacentes.
+L’autorisation de génération s’applique aux jeux de données. Quand vous accordez aux utilisateurs l’autorisation de génération, ils peuvent créer un nouveau contenu sur votre jeu de données, comme des rapports, des tableaux de bord, des vignettes épinglées à partir de Questions et réponses et Insights Discovery. 
+
+Les utilisateurs ont également besoin d’autorisations de génération pour utiliser les données *en dehors* de Power BI :
+
+- Pour exporter les données sous-jacentes
+- Pour créer un nouveau contenu sur le jeu de données, par exemple avec la fonctionnalité [Analyser dans Excel](service-analyze-in-excel.md)
+- Pour accéder aux données par le biais du point de terminaison XMLA
 
 ## <a name="ways-to-give-build-permission"></a>Méthodes pour accorder l’autorisation de génération
 
@@ -65,7 +71,7 @@ Supposons que vous ayez distribué une application d'un espace de travail à un 
 
 1. Dans une page de la liste des espaces de travail, sélectionnez **Mettre à jour l’application**. 
 
-    ![Mettre à jour l'application](media/service-datasets-build-permissions/power-bi-app-update.png)
+    ![Mettre à jour l’application](media/service-datasets-build-permissions/power-bi-app-update.png)
 
 1. Dans l'onglet **Autorisations**, sélectionnez **X** pour supprimer la personne ou le groupe. 
 

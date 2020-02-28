@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: d8432ae10afab6cbf12c017a8f315fd55825212d
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889279"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427228"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec *Power BI Desktop*, quand vous vous connectez à une source de données, vous pouvez toujours importer une copie des données dans Power BI Desktop. Pour certaines sources de données, une autre approche est possible : vous connecter directement à la source de données à l’aide de DirectQuery.
@@ -46,8 +46,6 @@ Il y a plusieurs avantages à utiliser DirectQuery :
 
 ## <a name="limitations-of-directquery"></a>Limitations de DirectQuery
 Il existe actuellement quelques limitations à l’utilisation de DirectQuery :
-
-- Toutes les tables doivent provenir d’une seule base de données, sauf si vous utilisez des [modèles composites](desktop-composite-models.md).
 
 - Si la requête de l’**Éditeur de requête** est trop complexe, une erreur se produit. Pour corriger cette erreur, supprimez l’étape problématique dans l’**Éditeur de requête** ou *importez* les données au lieu d’utiliser DirectQuery. Pour des sources multidimensionnelles comme SAP Business Warehouse, aucun **Éditeur de requête** n’est disponible.
 
@@ -94,7 +92,7 @@ Si la source de données utilisée n’a pas besoin de la **passerelle de donné
 
 4. Ajoutez les informations d’identification. Si vous ne fournissez pas ces informations, une erreur se produit lorsque vous ouvrez un rapport publié ou explorez un jeu de données créé avec une connexion DirectQuery.
 
-Pour créer une connexion de données à une source de données autre que **Azure SQL Database**, **Azure SQL Data Warehouse** et **Redshift** qui utilise DirectQuery, installez une **passerelle de données locale** et inscrivez la source de données. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md)
+Pour créer une connexion de données à des sources de données utilisant DirectQuery autres que **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift** ou **Snowflake Data Warehouse**, installez une **passerelle de données locale** et inscrivez la source de données. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur DirectQuery, consultez les ressources suivantes :

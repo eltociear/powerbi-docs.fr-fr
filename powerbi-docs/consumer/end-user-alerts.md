@@ -7,17 +7,19 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7ebc459379dbf292603a605db8d3f9c7162e92f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851276"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496512"
 ---
-# <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Tutoriel : Définir des alertes de tableau de bord sur des tableaux de bord Power BI
+# <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Tutoriel : Définir des alertes sur des tableaux de bord Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -112,6 +114,7 @@ Il existe de nombreuses façons de gérer vos alertes : à partir de la vignett
 * Les alertes peuvent être définies seulement sur les jauges, les indicateurs de performance clés et les cartes.
 * Si vous ne parvenez pas à définir une alerte pour une jauge, un indicateur de performance clé ou une carte, contactez votre administrateur système pour obtenir de l’aide. Des alertes sont parfois désactivées ou indisponibles pour votre tableau de bord ou pour des types spécifiques de vignettes de tableau de bord.
 * Les alertes fonctionnent uniquement sur les données actualisées (pas sur les données statiques). La plupart des exemples fournis par Microsoft sont statiques. 
+* Les *consommateurs* ne créent pas leurs propres tableaux de bord ; ce sont les *concepteurs* qui créent des tableaux de bord et qui les partagent avec les consommateurs. Une licence Power BI Pro ou Premium est nécessaire pour recevoir et afficher du contenu partagé. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md) 
 
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources

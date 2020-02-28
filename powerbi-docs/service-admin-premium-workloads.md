@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889371"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427711"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
-Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](service-cognitive-services.md)** , **[Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** et **[Rapports paginés](paginated-reports-save-to-power-bi-service.md)** .
+Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](service-cognitive-services.md)**, **[Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** et **[Rapports paginés](paginated-reports-save-to-power-bi-service.md)**.
 
 ## <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -170,7 +170,7 @@ La charge de travail des rapports paginés vous permet d’exécuter des rapport
 | **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les rapports paginés peuvent utiliser dans une capacité. |
 |  |  |
 
-Les rapports paginés permettent d’exécuter du code personnalisé lors du rendu d’un rapport. C’est, par exemple, le cas lors du changement dynamique de la couleur du texte en fonction du contenu, ce qui peut prendre de la quantité supplémentaire de mémoire. Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. 
+Les rapports paginés offrent les mêmes possibilités que les rapports SQL Server Reporting Services (SSRS) actuels, y compris la possibilité pour les créateurs de rapports d’ajouter du code personnalisé.  Les auteurs peuvent alors modifier dynamiquement les rapports, par exemple en changeant les couleurs de texte en fonction des expressions de code.  Pour assurer une isolation appropriée, les rapports paginés sont générés dans un bac à sable (sandbox) protégé pour chaque capacité. La génération de rapports avec la même capacité peut provoquer des effets secondaires entre les rapports. De la même façon que vous pouvez restreindre les auteurs autorisés à publier du contenu sur une instance de SSRS, nous vous recommandons de suivre une pratique similaire avec les rapports paginés. Assurez-vous que les auteurs qui publient du contenu sur une capacité sont approuvés par l’organisation. Vous pouvez renforcer la sécurité de votre environnement en provisionnant plusieurs capacités et en affectant des auteurs différents à chacune d’elles. 
 
 Dans certains cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 

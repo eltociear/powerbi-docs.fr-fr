@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: e65dd42e8ec787d0c6edba534f79cdb06e5ba14c
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889233"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527289"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Effectuer la migration des rapports SQL Server Reporting Services vers Power BI
 
@@ -41,16 +41,16 @@ Lorsque vous préparez la migration de vos rapports vers Power BI, vérifiez d�
 
 ### <a name="supported-versions"></a>Versions prises en charge
 
-Vous pouvez effectuer la migration d’instances SSRS qui sont exécutées localement ou sur des machines virtuelles hébergées par des fournisseurs cloud, comme Azure. 
+Vous pouvez effectuer la migration d’instances SSRS qui sont exécutées localement ou sur des machines virtuelles hébergées par des fournisseurs cloud, comme Azure.
 
 La liste suivante fournit les versions de SQL Server qui sont prises en charge pour la migration vers Power BI :
 
 > [!div class="checklist"]
-> * SQL Server 2012
-> * SQL Server 2014
-> * SQL Server 2016
-> * SQL Server 2017
-> * SQL Server 2019
+> - SQL Server 2012
+> - SQL Server 2014
+> - SQL Server 2016
+> - SQL Server 2017
+> - SQL Server 2019
 
 La migration à partir de Power BI Report Server est également possible.
 
@@ -60,11 +60,11 @@ Nous vous recommandons d’utiliser l’[outil de migration RDL](https://github
 
 L’outil automatise les tâches suivantes :
 
-* La recherche des [sources de données non prises en charge](../paginated-reports-data-sources.md) et des [fonctionnalités de rapport non prises en charge](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
-* La conversion de toutes les ressources _partagées_ en ressources _incorporées_ :
-  * Les **sources de données** partagées deviennent des sources de données incorporées
-  * Les **jeux de données** partagés deviennent des jeux de données incorporés
-* La publication des rapports (qui ont été validés) sous forme de rapports paginés, dans un espace de travail Power BI spécifié (sur une capacité Premium)
+- La recherche des [sources de données non prises en charge](../paginated-reports-data-sources.md) et des [fonctionnalités de rapport non prises en charge](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi)
+- La conversion de toutes les ressources _partagées_ en ressources _incorporées_ :
+  - Les **sources de données** partagées deviennent des sources de données incorporées
+  - Les **jeux de données** partagés deviennent des jeux de données incorporés
+- La publication des rapports (qui ont été validés) sous forme de rapports paginés, dans un espace de travail Power BI spécifié (sur une capacité Premium)
 
 L’outil ne modifie pas et ne supprime pas vos rapports existants. À l’issue de l’opération, il génère un récapitulatif de toutes les actions terminées, qu’elles aient réussi ou non.
 
@@ -92,13 +92,13 @@ Seuls les rapports RDL peuvent faire l’objet d’une migration entre vos serv
 
 Toutefois, les types d’éléments SSRS suivants ne peuvent pas faire l’objet d’une migration vers Power BI :
 
-* Sources de données partagées <sup>1</sup>
-* Jeux de données partagés <sup>1</sup>
-* Ressources, comme des fichiers image
-* Indicateurs de performance clés (SSRS 2016 ou version ultérieure — Enterprise Edition uniquement)
-* Rapports mobiles (SSRS 2016 ou version ultérieure — Enterprise Edition uniquement)
-* Modèles de rapport (dépréciés)
-* Parties de rapport (dépréciées)
+- Sources de données partagées <sup>1</sup>
+- Jeux de données partagés <sup>1</sup>
+- Ressources, comme des fichiers image
+- Indicateurs de performance clés (SSRS 2016 ou version ultérieure — Enterprise Edition uniquement)
+- Rapports mobiles (SSRS 2016 ou version ultérieure — Enterprise Edition uniquement)
+- Modèles de rapport (dépréciés)
+- Parties de rapport (dépréciées)
 
 <sup>1</sup> L’[outil de migration RDL](https://github.com/microsoft/RdlMigration) convertit automatiquement les sources de données partagées et les jeux de données partagés, à condition qu’ils utilisent des sources de données prises en charge.
 
@@ -119,7 +119,8 @@ L’objectif de la phase de _préparation_ consiste à s’assurer que tout est 
 1. Vous pouvez utiliser des [jeux de données Power BI partagés](../service-datasets-build-permissions.md) à la place de vos sources de données partagées SSRS.
 1. Utilisez [Power BI Desktop](../desktop-what-is-desktop.md) pour développer des rapports optimisés pour les appareils mobiles (par exemple à l’aide du [visuel personnalisé Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview)) au lieu de vos rapports mobiles et de vos indicateurs de performance clés SSRS.
 1. Réévaluez l’utilisation du champ prédéfini **UserID** dans vos rapports. Si vous vous fiez à **UserID** pour sécuriser les données des rapports, sachez que, pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), il retourne le nom d’utilisateur principal (UPN). Ainsi, au lieu de renvoyer le nom du compte NT, par exemple _AW\mblythe_, le champ intégré renvoie un résultat du type _m.blythe&commat;adventureworks.com_. Vous devrez réviser vos définitions de jeu de données, et éventuellement les données sources. Après révision et publication, nous vous recommandons de bien vérifier que les autorisations de données fonctionnent comme prévu dans vos rapports.
-1. Réévaluez l’utilisation du champ prédéfini **ExecutionTime** dans vos rapports. Pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), le champ prédéfini retourne la date/heure _au format UTC (temps universel coordonné)_ . Cela peut avoir un impact sur les valeurs par défaut des paramètres et les étiquettes de durée d’exécution des rapports (généralement ajoutées aux pieds de page des rapports).
+1. Réévaluez l’utilisation du champ prédéfini **ExecutionTime** dans vos rapports. Pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), le champ prédéfini retourne la date/heure _au format UTC (temps universel coordonné)_. Cela peut avoir un impact sur les valeurs par défaut des paramètres et les étiquettes de durée d’exécution des rapports (généralement ajoutées aux pieds de page des rapports).
+1. Si votre source de données est SQL Server (au niveau local), vérifiez que les rapports n’utilisent pas de visualisations de carte. La visualisation de carte repose sur des types de données spatiales SQL Server qui ne sont pas pris en charge par la passerelle. Pour plus d’informations, consultez l’[aide sur l’extraction de données pour les rapports paginés (types de données SQL Server complexes)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
 1. Vérifiez que vos auteurs de rapports ont installé [Power BI Report Builder](../report-builder-power-bi.md) et que les versions ultérieures peuvent être facilement distribuées dans l’ensemble de votre organisation.
 
 ## <a name="migration-stage"></a>Étape de migration
@@ -146,8 +147,8 @@ Toute personne autorisée à accéder à l’instance SSRS et à l’espace de 
 
 Il existe deux options pour la migration automatisée. Vous pouvez utiliser :
 
-* L’outil de migration RDL
-* Les API disponibles publiquement pour SSRS et Power BI
+- L’outil de migration RDL
+- Les API disponibles publiquement pour SSRS et Power BI
 
 L’[outil de migration RDL](#migration-tool) a déjà été décrit dans cet article.
 
@@ -155,8 +156,8 @@ Vous pouvez également utiliser les API SSRS et Power BI disponibles publiquem
 
 Pour plus d’informations sur les API, consultez :
 
-* [Informations de référence sur l’API REST de Power BI](../developer/rest-api-reference.md)
-* [API REST SQL Server Reporting Services](/sql/reporting-services/developer/rest-api)
+- [Informations de référence sur l’API REST de Power BI](../developer/rest-api-reference.md)
+- [API REST SQL Server Reporting Services](/sql/reporting-services/developer/rest-api)
 
 ## <a name="post-migration-stage"></a>Étape de post-migration
 
@@ -182,20 +183,21 @@ La phase de post-migration est essentielle pour résoudre les problèmes, notamm
 
 Pour plus d’informations sur ces problèmes, notamment sur leur compréhension et leur atténuation, consultez les articles suivants :
 
-* [Optimiser les capacités Premium](../service-premium-capacity-optimize.md)
-* [Superviser les capacités Premium avec l’application](../service-admin-premium-monitor-capacity.md)
+- [Optimiser les capacités Premium](../service-premium-capacity-optimize.md)
+- [Superviser les capacités Premium avec l’application](../service-admin-premium-monitor-capacity.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur cet article, consultez les ressources suivantes :
 
-* [Présentation des rapports paginés dans Power BI Premium](../paginated-reports-report-builder-power-bi.md)
-* Vidéo Guy in a Cube : [Présentation des rapports paginés dans Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
-* [Quand utiliser des rapports paginés dans Power BI](report-paginated-or-power-bi.md)
-* [Rapports paginés dans Power BI : Questions fréquentes (FAQ)](../paginated-reports-faq.md)
-* [Questions fréquentes Power BI Premium](../service-premium-faq.md)
-* [Outil de migration RDL](https://github.com/microsoft/RdlMigration)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-* Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
+- [Présentation des rapports paginés dans Power BI Premium](../paginated-reports-report-builder-power-bi.md)
+- [Aide sur l’extraction de données pour les rapports paginés](report-paginated-data-retrieval.md)
+- Vidéo Guy in a Cube : [Présentation des rapports paginés dans Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
+- [Quand utiliser des rapports paginés dans Power BI](report-paginated-or-power-bi.md)
+- [Rapports paginés dans Power BI : Questions fréquentes (FAQ)](../paginated-reports-faq.md)
+- [Questions fréquentes Power BI Premium](../service-premium-faq.md)
+- [Outil de migration RDL](https://github.com/microsoft/RdlMigration)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
 
 Les partenaires Power BI sont là pour aider votre organisation dans son processus de migration. Pour contacter un partenaire Power BI, accédez au [portail des partenaires Power BI](https://powerbi.microsoft.com/partners/).

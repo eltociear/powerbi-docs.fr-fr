@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039840"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427550"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -89,8 +89,8 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Vertica
 * Snowflake
 * Essbase
-* Cubes AtScale (bêta)
-* Connecteur BI
+* Cubes AtScale
+* BI Connector Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
 * Exasol
@@ -162,7 +162,6 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Adobe Analytics
 * appFigures (bêta)
 * Data.World – Obtenir le jeu de données (bêta)
-* Facebook
 * GitHub (bêta)
 * LinkedIn Sales Navigator (bêta)
 * MailChimp (bêta)
@@ -182,6 +181,7 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Dynamics 365 Customer Insights (bêta)
 * Emigo Data Source
 * Entersoft Business Suite (bêta)
+* FactSet Analytics (Beta)
 * Industrial App Store
 * Intune Data Warehouse (bêta)
 * Microsoft Graph Security (Bêta)
@@ -210,7 +210,10 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * ODBC
 * OLE DB
 * BI360 - Budgets & Rapports financiers (bêta)
+* FHIR
 * Information Grid (bêta)
+* Jamf Pro (Beta)
+* MicroStrategy pour Power BI
 * Paxata
 * QubolePresto (bêta)
 * Roamler (bêta)
@@ -219,6 +222,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Tenforce (Smart) (bêta)
 * Vena (bêta)
 * Workforce Dimensions (bêta)
+* Zucchetti HR Infinity (Beta)
 * Requête vide
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
