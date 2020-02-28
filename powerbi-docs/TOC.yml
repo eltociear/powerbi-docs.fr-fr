@@ -757,8 +757,8 @@
               href: admin/service-security-data-protection-overview.md
             - name: Appliquer des étiquette de sensibilité
               href: designer/service-security-apply-data-sensitivity-labels.md
-        - name: Traçabilité des données
-          href: service-data-lineage.md
+        - name: Afficher le lignage des données
+          href: designer/service-data-lineage.md
         - name: Applications modèles
           items:
             - name: Vue d’ensemble des applications modèles
