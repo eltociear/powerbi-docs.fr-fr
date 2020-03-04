@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9b21b733dd673c1b672a4590032808a174ecda1f
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161590"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609833"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Créer des visuels Power BI avec Python
 
@@ -170,7 +170,7 @@ Ce tutoriel est conçu pour vous aider à créer des visuels avec Python dans Po
 
 Les visuels Python dans Power BI Desktop présentent quelques limitations :
 
-- Taille des données : les données utilisées par le visuel Python pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image.
+- Taille des données : les données utilisées par le visuel Python pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image. En outre, les données d’entrée ont une limite de 250 Mo. 
 - Résolution : tous les visuels Python sont affichés dans une résolution de 72 ppp.
 - Temps de calcul : si le calcul d’un visuel Python prend plus de cinq minutes, le délai d’exécution est dépassé, ce qui provoque une erreur.
 - Relations : Comme avec d’autres visuels Power BI Desktop, si des champs de données provenant de différentes tables sans aucune relation définie entre elles sont sélectionnés, une erreur se produit.

@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a0f4808aaf267e3cdb822e8778005c2eca247cb5
+ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73864054"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78199001"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
 Cet article fournit des recommandations pour un rendu plus rapide des rapports, des tableaux de bord et des vignettes dans votre application.
 
 > [!Note]
-> N’oubliez pas que le temps de chargement dépend principalement des éléments pertinents pour le rapport et des données elles-mêmes, y compris des visuels, la taille des données et la complexité des requêtes et des mesures calculées. Pour plus d’informations, consultez [Bonnes pratiques relatives aux performances de Power BI](../power-bi-reports-performance.md).
+> N’oubliez pas que le temps de chargement dépend principalement des éléments pertinents pour le rapport et des données elles-mêmes, y compris des visuels, la taille des données et la complexité des requêtes et des mesures calculées. Pour plus d’informations, consultez le [guide d’optimisation de Power BI](../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Mettre à jour les outils et les packages du SDK
 
@@ -106,6 +106,6 @@ L’analyseur de performances vous permet de voir et d’enregistrer les journau
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Bonnes pratiques relatives aux performances des rapports Power BI](../power-bi-reports-performance.md)
+* [Guide d’optimisation de Power BI](../guidance/power-bi-optimization.md)
 * [Comment résoudre les problèmes de Power BI Embedded](embedded-troubleshoot.md)
 * [FAQ sur Power BI Embedded](embedded-faq.md)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/06/2020
+ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 34754f413cd6bb8e520ff8d7f2c9d4a28da73ef5
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076702"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609928"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -118,7 +118,7 @@ Une fois que vous avez créé un code incorporé **Publier sur le web**, vous po
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Mises à jour des rapports et actualisation des données
 
-Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Toutefois, après cette première action, environ une heure peut être nécessaire pour que les utilisateurs puissent voir les mises à jour des rapports ou des visuels. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
+Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Toutefois, après cette première action, il peut se passer entre deux et trois heures avant que vos utilisateurs puissent voir les mises à jour des rapports ou des éléments visuels. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
 
 ## <a name="data-refresh"></a>Actualisation des données
 

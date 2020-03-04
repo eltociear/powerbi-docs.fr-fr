@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.date: 02/13/2020
+ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74999893"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576801"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -39,7 +39,7 @@ Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il r�
 | Captures d’écran |Oui |Fournissez au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être exactement 1 366 px (largeur) par 768 px (hauteur). La taille du fichier ne doit pas dépasser 1024 ko.<br>Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran. |
 | Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
 | Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
-| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez fournir un fichier CLUF pour votre élément visuel Power BI. |
 | Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, fournissez un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou https://. |
 | Dépôt GitHub |Non |Partagez un lien public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel Power BI et des échantillons de données. Cela permet à d'autres développeurs de vous transmettre leurs commentaires et des suggestions pour améliorer votre code. |
 

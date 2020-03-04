@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: e18579d654cb2ab17ed0dbff73fba95f5f9a64ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875059"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609942"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bonnes pratiques pour optimiser Questions et réponses dans Power BI
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI.
@@ -197,4 +197,4 @@ Cette étape peut être importante. Même avec des noms de table et de colonne s
 
 ![Synonymes dans le volet Propriétés de Questions et réponses](media/qna-modelling-pane-synonyms.png)
 
- Soyez prudent lorsque vous ajoutez des synonymes. L’ajout d’un même synonyme à plusieurs colonnes ou tables introduit une ambiguïté. Questions et réponses utilise un contexte dès que possible pour choisir entre des synonymes ambigus, mais toutes les questions ne fournissent pas suffisamment de contexte. Par exemple, lorsque l’utilisateur demande « compter les clients », si trois éléments contiennent le synonyme « client » dans votre modèle, l’utilisateur risque de ne pas obtenir la réponse attendue. Dans ce cas, assurez-vous que le synonyme primaire est unique, car c’est lui qui est utilisé dans la reformulation. L’application peut signaler l’ambiguïté à l’utilisateur (par exemple, la reformulation de « montrer le nombre d’enregistrements clients archivés ») et lui suggérer de reformuler sa question.
+ Soyez prudent lorsque vous ajoutez des synonymes. L’ajout d’un même synonyme à plusieurs colonnes ou tables introduit une ambiguïté. Questions et réponses utilise un contexte dès que possible pour choisir entre des synonymes ambigus, mais toutes les questions ne fournissent pas suffisamment de contexte. Par exemple, lorsque votre utilisateur demande de « dénombrer les clients », si vous disposez de trois choses avec le synonyme « client » dans votre modèle, les utilisateurs peuvent ne pas obtenir la réponse qu’ils attendent. Dans ce cas, assurez-vous que le synonyme primaire est unique, car c’est lui qui est utilisé dans la reformulation. L’application peut signaler l’ambiguïté à l’utilisateur (par exemple, la reformulation de « montrer le nombre d’enregistrements clients archivés ») et lui suggérer de reformuler sa question.

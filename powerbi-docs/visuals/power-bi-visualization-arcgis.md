@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c9e0658eb277ae25b3a418dd80fb9323be6f6ab0
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: e97d2301a77bb3fe4a7a8f4e50f6da73a68842d0
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758396"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652539"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>Créer des cartes ArcGIS dans Power BI Desktop
 
@@ -26,6 +26,9 @@ Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcG
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Faites votre choix parmi des cartes de base, des types d’emplacement, des thèmes, des styles de symboles et des couches de référence pour créer des visualisations de cartes informatives exceptionnelles. L’association des couches de données faisant autorité sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans votre visualisation.
 
  Vous ne pouvez pas créer de cartes ArcGIS Maps for Power BI sur un appareil mobile, mais vous pouvez les afficher et interagir avec elles. Consultez [Interaction avec des cartes ArcGIS](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> Les cartes ArcGIS pour Power BI ne sont pas disponibles actuellement pour Power BI Report Server.
 
 > [!TIP]
 > SIG (ou GIS pour Geographic Information System en anglais) signifie système d’informations géographiques.

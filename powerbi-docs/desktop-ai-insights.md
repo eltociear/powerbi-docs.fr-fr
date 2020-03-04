@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2985f0281274adcdbde737c0f3b00688a401df7
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ecb377ccabf3b94f37c3fcc69b24c4437c42281b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221272"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609813"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Utiliser Insights IA dans Power BI Desktop (préversion)
 
@@ -153,7 +153,7 @@ De nombreuses organisations utilisent des modèles **Machine Learning** pour bé
 
 Pour utiliser cette fonctionnalité, un scientifique des données peut simplement autoriser l’analyste décisionnel à accéder au modèle Azure ML avec le portail Azure. Ensuite, au début de chaque session, Power Query permet de découvrir tous les modèles Azure ML auxquels l’utilisateur a accès et les expose en tant que fonctions dynamiques de Power Query. L’utilisateur peut alors appeler ces fonctions en y accédant à partir du ruban dans l’éditeur de Power Query, ou en appelant directement la fonction M. Power BI regroupe automatiquement les demandes d’accès lorsque vous appelez le modèle Azure ML pour un ensemble de lignes afin d’obtenir de meilleures performances.
 
-Cette fonctionnalité est actuellement uniquement prise en charge pour les flux de données Power BI et pour Power Query en ligne dans le service Power BI.
+Cette fonctionnalité est prise en charge pour les dataflows Power BI Desktop et Power BI et pour Power Query Online dans le service Power BI.
 
 Pour en savoir plus sur les flux de données, consultez [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
 
@@ -179,9 +179,9 @@ Cette section décrit pas à pas comment autoriser un utilisateur de Power BI à
 6. Sélectionnez **Enregistrer**.
 7. Répétez les étapes 3 à 6 pour accorder l’accès **Lecteur** à l’utilisateur pour le service web Machine Learning Studio (classique) spécifique *ou* pour l’espace de travail Machine Learning hébergeant le modèle.
 
-### <a name="schema-discovery-for-machine-learning-models"></a>Détection de schéma pour les modèles Machine Learning
+### <a name="schema-discovery-for-machine-learning-models"></a>Découverte de schéma pour les modèles Machine Learning
 
-Les scientifiques des données utilisent principalement Python pour développer et même pour déployer leurs modèles Machine Learning pour le Machine Learning. Contrairement à Machine Learning Studio (classique), qui permet d’automatiser la tâche de création d’un fichier de schéma pour le modèle, dans le cas de Machine Learning, le scientifique des données doit explicitement générer le fichier de schéma à l’aide de Python.
+Les scientifiques des données utilisent principalement Python pour développer et même pour déployer leurs modèles Machine Learning pour le Machine Learning. Contrairement à Machine Learning Studio (classique), qui permet d’automatiser la tâche de création d’un fichier de schéma pour le modèle, dans le cas de Machine Learning, le scientifique des données doit générer explicitement le fichier de schéma avec Python.
 
 Ce fichier de schéma doit être inclus dans le service web déployé pour les modèles Machine Learning. Pour générer automatiquement le schéma pour le service web, vous devez fournir un exemple d’entrée/de sortie dans le script d’entrée pour le modèle déployé. Consultez la sous-section de la documentation du service [Azure Machine Learning relative à la génération automatique (facultative) d’un schéma Swagger dans les modèles de déploiement](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation). Le lien inclut l’exemple de script d’entrée avec les instructions pour la génération du schéma.
 

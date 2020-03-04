@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
-ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/27/2020
+ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026712"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782448"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -165,6 +165,10 @@ Définit des valeurs d’en-tête pour toutes les URL correspondant au modèle r
 #### <a name="transparent-database-encryption"></a>Chiffrement transparent de base de données
 
 Power BI Report Server prend désormais en charge le chiffrement transparent de la base de données du catalogue Power BI Report Server pour les éditions Enterprise et Standard.
+
+#### <a name="power-bi-visuals-api"></a>API des éléments visuels Power BI
+
+La version API expédiée avec cette mise en production est 2.6.
 
 #### <a name="microsoft-report-builder-update"></a>Mise à jour du générateur de rapports Microsoft
 
@@ -446,34 +450,34 @@ De nombreuses fonctionnalités nouvelles ont été ajoutées à la version de Po
 
 Parmi la longue liste des nouvelles fonctionnalités, celles-ci sont particulièrement intéressantes.
 
-#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Mise en forme conditionnelle basée sur des règles pour les tables et les matrices](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+#### <a name="rule-based-conditional-formatting-for-table-and-matrix"></a>[Mise en forme conditionnelle basée sur des règles pour les tables et les matrices](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
 Créer des règles pour appliquer de façon conditionnelle une couleur à l’arrière-plan ou à la police d’une colonne, en fonction d’une logique métier spécifique dans votre table ou votre matrice.
 
-#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Afficher et masquer des pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+#### <a name="show-and-hide-pages"></a>[Afficher et masquer des pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 Vous voulez que les lecteurs aient accès à votre rapport, mais certaines des pages ne sont pas encore terminées. Vous pouvez désormais les masquer jusqu’à ce qu’elles soient prêtes. Vous pouvez aussi masquer des pages pour la navigation normale ; les lecteurs peuvent obtenir la page par extraction ou via des signets.
 
-#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Signets](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### <a name="bookmarking"></a>[Signets](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Vous pouvez créer des signets pour raconter une histoire avec les données de votre rapport.
 
 - [Sélection croisée pour les signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) : les signets gèrent et affichent l’état de sélection croisée de la page d’un rapport au moment de la création du signet.
 - [Amélioration de la flexibilité des signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) : les signets reflètent les propriétés définies dans le rapport et affectent seulement les visuels choisis.
 
-#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Points de données à sélection multiple entre plusieurs graphiques](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+#### <a name="multi-select-data-points-across-multiple-charts"></a>[Points de données à sélection multiple entre plusieurs graphiques](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
 Sélectionnez plusieurs points de données dans plusieurs graphiques et appliquez le filtrage croisé à toute la page.
 
-#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synchronisation des segments sur plusieurs pages de votre rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+#### <a name="sync-slicers-across-multiple-pages-of-your-report"></a>[Synchronisation des segments sur plusieurs pages de votre rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
 Un segment peut s’appliquer à une ou plusieurs pages d’un rapport.
 
-#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Mesures rapides](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+#### <a name="quick-measures"></a>[Mesures rapides](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 Créez des mesures basées sur des mesures existantes et des colonnes numériques dans une table.
 
-#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[L’exploration filtre d’autres visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+#### <a name="drilling-down-filters-other-visuals"></a>[L’exploration filtre d’autres visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 Quand vous descendez dans la hiérarchie d’une catégorie dans un visuel, vous pouvez faire en sorte qu’il filtre tous les visuels de la page selon la même catégorie.
 

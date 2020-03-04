@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 78ac4f3280125fb522661a63f679981b3cda34e3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 51d03582ec91b926526a075a356323eb4f95a84b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699456"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609887"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Utiliser des connecteurs de données personnalisés avec la passerelle de données locale
 
@@ -46,6 +46,7 @@ Quand cette option est activée, vous voyez vos connecteurs personnalisés en ta
 
 * Vérifiez que le dossier que vous créez est accessible par le service de passerelle d’arrière-plan. En règle générale, les dossiers sous le dossier Windows ou sous les dossiers système de l’utilisateur ne sont pas accessibles. L’application de passerelle de données locale affiche un message si le dossier n’est pas accessible. Cette instruction ne concerne pas la passerelle de données locale (mode personnel).
 * Pour que les connecteurs personnalisés fonctionnent avec la passerelle de données locale, ils doivent implémenter une section « TestConnection » dans leur code. Cette section n’est pas obligatoire quand vous utilisez des connecteurs personnalisés avec Power BI Desktop. Pour cette raison, vous pouvez avoir un connecteur qui fonctionne avec Power BI Desktop, mais pas avec la passerelle. Pour plus d’informations sur l’implémentation d’une section TestConnection, consultez [cette documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
+* OAuth pour les connecteurs personnalisés via les passerelles n’est actuellement pris en charge que pour les administrateurs de passerelle, mais pas pour les autres utilisateurs de source de données.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

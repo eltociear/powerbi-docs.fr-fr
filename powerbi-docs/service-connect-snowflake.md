@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 03e6e8efae5cd4a5f61e3d07bc0b3c524b3b0a46
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77429346"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576871"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Se connecter à Snowflake dans le service Power BI
 
@@ -49,7 +49,7 @@ De par le mode de fonctionnement de Power BI, l’authentification unique foncti
 
 * Si vous utilisez uniquement une source Snowflake dans votre modèle de données, vous pouvez utiliser l’authentification unique si vous choisissez de ne pas utiliser la passerelle de données locale.
 * Si vous utilisez une source Snowflake et une autre source, vous pouvez utiliser l’authentification unique si aucune des sources n’utilise la passerelle de données locale.
-* Si vous utilisez une source Snowflake par le biais de la passerelle de données locale, vous pouvez utiliser des informations d’identification AAD, mais pas l’authentification unique. Ceci peut être utile si vous essayez d’accéder à un réseau virtuel à partir d’une seule adresse IP sur laquelle la passerelle est installée, plutôt qu’à partir de l’intégralité de la plage d’adresses IP de Power BI.
+* Si vous utilisez une source Snowflake par le biais de la passerelle de données locale, les informations d’identification AAD ne sont pas actuellement prises en charge. Ceci peut être utile si vous essayez d’accéder à un réseau virtuel à partir d’une seule adresse IP sur laquelle la passerelle est installée, plutôt qu’à partir de l’intégralité de la plage d’adresses IP de Power BI.
 * Si vous utilisez une source Snowflake et une autre source qui nécessite une passerelle, vous devez également utiliser Snowflake par le biais de la passerelle de données locale et vous ne pouvez pas utiliser l’authentification unique.
 
 Pour plus d’informations sur l’utilisation de la passerelle de données locale, consultez l’article [Qu’est-ce qu’une passerelle de données locale ?](https://docs.microsoft.com/power-bi/service-gateway-onprem)

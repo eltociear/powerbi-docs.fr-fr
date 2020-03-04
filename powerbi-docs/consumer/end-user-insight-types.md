@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537903"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576768"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
 
@@ -55,7 +55,7 @@ Détecte les cas où plusieurs mesures montrent un modèle ou une tendance simil
 ![Exemple de corrélation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### <a name="low-variance"></a>Écart faible
-Détecte les cas où des points de données ne sont pas éloignés de la moyenne.
+Détecte les cas où les points de données d’une dimension ne sont pas éloignés de la moyenne, donc la « variance » est faible. Supposons que vous avez la mesure « ventes » et une dimension « région ». Et dans la région, vous constatez qu’il y a très peu de différences entre les points de données et la moyenne (des points de données). L’aperçu se déclenche lorsque la variance des ventes dans toutes les régions est inférieure à un seuil. En d’autres termes, lorsque les ventes sont assez similaires dans toutes les régions.
 
 ![Exemple d’écart faible](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -75,7 +75,9 @@ Recherche des modèles récurrents dans les données d’une série chronologiqu
 ![Exemple de caractère saisonnier](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Partage stable
-Met en évidence les cas où il existe une corrélation parent-enfant entre le partage d’une valeur enfant par rapport à la valeur globale du parent dans une variable continue.
+Met en évidence les cas où il existe une corrélation parent-enfant entre le partage d’une valeur enfant par rapport à la valeur globale du parent dans une variable continue. L’aperçu de partage stable s’applique au contexte d’une mesure, d’une dimension et d’une autre dimension date/heure. Cet aperçu se déclenche lorsqu’une valeur de dimension particulière, par exemple « la région du nord-est », a un pourcentage constant de ventes globales sur cette dimension date/heure.
+
+L’aperçu de partage stable est similaire à l’aperçu de faible écart, car ils sont tous deux liés au manque de variance d’une valeur dans le temps. Toutefois, l’aperçu de partage stable mesure le manque de variance du **pourcentage global** dans le temps, tandis que l’aperçu de faible variance mesure le manque de variance des valeurs de mesure absolues sur une dimension.
 
 ![Exemple de partage stable](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 

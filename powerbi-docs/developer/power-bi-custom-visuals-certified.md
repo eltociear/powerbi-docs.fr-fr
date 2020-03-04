@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
-ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/17/2020
+ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026666"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782428"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -43,11 +43,13 @@ Lorsque vous envoyez votre visuel Power BI, vérifiez que le package compilé co
 
 Bien qu’il ne soit pas nécessaire de partager publiquement le code dans GitHub, l’équipe Power BI doit avoir accès au référentiel de code pour pouvoir l’examiner. La meilleure solution consiste à fournir le code source (JavaScript ou TypeScript) dans GitHub.
 
-Le référentiel doit contenir le code d’un seul visuel Power BI. Il ne peut pas contenir le code de plusieurs visuels Power BI ou du code sans rapport.
-
-Le dépôt doit contenir une branche nommée **certification** (obligatoirement en minuscules). Le code source de cette branche doit correspondre au package soumis. Ce code ne peut être mis à jour que lors du processus d’envoi suivant, si vous envoyez à nouveau votre visuel Power BI.
+Le référentiel doit contenir les éléments suivants :
+* Code pour un seul élément visuel Power BI. Il ne peut pas contenir le code de plusieurs visuels Power BI ou du code sans rapport.
+* Une branche nommée **certification** (obligatoirement en minuscules). Le code source de cette branche doit correspondre au package soumis. Ce code ne peut être mis à jour que lors du processus d’envoi suivant, si vous envoyez à nouveau votre visuel Power BI.
 
 Si votre visuel Power BI utilise des packages npm privés ou des sous-modules GIT, vous devez fournir l’accès aux référentiels supplémentaires contenant ce code.
+
+Pour comprendre l’aspect d’un référentiel visuel Power BI, examinez le référentiel GitHub sur le [Graphique à barres exemple des éléments visuels Power BI](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi).
 
 ### <a name="file-requirements"></a>Exigences relatives aux fichiers
 
@@ -113,6 +115,18 @@ Pour demander la certification Power BI :
 
 >[!NOTE]
 > Si un processus de soumission d’un visuel Power BI est en cours et que vous devez utiliser le [tableau de bord du vendeur](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (l’ancien outil de gestion), passez en revue les instructions du [processus de soumission d’une certification du tableau de bord vendeur](seller-dashboard.md#seller-dashboard-certification-submission-process).
+
+### <a name="private-repository-submission-process"></a>Processus d’envoi du référentiel privé
+
+Si vous utilisez un référentiel privé tel que GitHub pour envoyer votre élément visuel Power BI pour certification, suivez les instructions de cette section.
+1. Créez un nouveau compte pour l’équipe de validation.
+2. Configurez [l’authentification à deux facteurs](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) pour votre compte.
+3. [Générez un nouvel ensemble de codes de récupération](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. Lorsque vous envoyez votre élément visuel Power BI, fournissez les éléments suivants :
+    * un lien web vers le référentiel
+    * des informations d'identification pour la connexion (y compris le mot de passe)
+    * des codes de récupération
+    * des autorisations en lecture seule sur notre compte ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## <a name="certified-power-bi-visuals"></a>Visuels Power BI certifiés
 

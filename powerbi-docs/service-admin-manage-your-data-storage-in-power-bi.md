@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: f5bf1b55c2e092dc755da9f391c83ce3c42661b2
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709891"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652516"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Gérer le stockage de données dans les espaces de travail Power BI
 
@@ -28,8 +28,8 @@ Les limites de stockage des espaces de travail, que ce soit Mon espace de travai
 ### <a name="shared-capacity-limits"></a>Limites de la capacité partagée
 Pour les espaces de travail en capacité partagée : 
 
-- La limite de stockage par espace de travail est de 10 Go.
-- Pour les espaces de travail d’application, l’utilisation totale ne peut pas dépasser 10 Go, multiplié par le nombre de licences Pro du locataire.
+- La limite de stockage par espace de travail est de 100 Go.
+- Pour les espaces de travail d’application, l’utilisation totale ne peut pas dépasser la limite de stockage des abonnés de 10 Go, multipliée par le nombre de licences Pro de l’abonné.
 
 ### <a name="premium-capacity-limits"></a>Limites de la capacité Premium
 Pour les espaces de travail en capacité Premium :

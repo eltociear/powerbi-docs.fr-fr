@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154383"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576848"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -218,6 +218,10 @@ Pour appliquer la mise en forme conditionnelle, sélectionnez le visuel de matri
 Sélectionnez *Contrôles avancés* pour afficher une boîte de dialogue, ce qui vous permet d’effectuer des ajustements. Cet exemple montre la boîte de dialogue pour **Barres de données**.
 
 ![Volet Barres de données](media/desktop-matrix-visual/power-bi-data-bars.png)
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
+* Si les données texte des en-têtes ou des cellules de votre matrice contiennent des caractères de nouvelle ligne, ces caractères sont ignorés, sauf si vous activez l’option « retour automatique à la ligne » dans la carte de volet de mise en forme associée à l’élément. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
