@@ -30,8 +30,16 @@
               href: import-modeling-data-reduction.md
             - name: Conseils sur la date/heure automatique
               href: auto-date-time.md
-            - name: Conseils sur les relations plusieurs-à-plusieurs
+            - name: Relations un à un
+              href: relationships-one-to-one.md
+            - name: Relations Plusieurs-à-plusieurs
               href: relationships-many-to-many.md
+            - name: Relations actives et inactives
+              href: relationships-active-inactive.md
+            - name: Relations bidirectionnelles
+              href: relationships-bidirectional-filtering.md
+            - name: Résoudre les problèmes de relations
+              href: relationships-troubleshoot.md
             - name: Conseils sur le modèle DirectQuery
               href: directquery-model-guidance.md
             - name: Conseils sur le modèle composite

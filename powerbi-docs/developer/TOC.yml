@@ -73,6 +73,8 @@
               href: visuals/high-contrast-support.md
             - name: Activer les segments de synchronisation
               href: visuals/enable-sync-slicers.md
+            - name: Déboguer les visuels
+              href: visuals/visuals-how-to-debug.md
             - name: Résoudre les problèmes de visuels Power BI
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Référence
@@ -101,6 +103,8 @@
                   href: visuals/utils-svg.md
                 - name: Utilitaires pour les types
                   href: visuals/utils-type.md
+                - name: Utilitaires pour les info-bulles
+                  href: visuals/utils-tooltip.md
                 - name: Utilitaires pour la vue Données
                   href: visuals/utils-dataview.md
         - name: Ressources
@@ -156,6 +160,8 @@
           items:
             - name: Incorporer à partir d’une application
               href: embed-from-apps.md
+            - name: Exporter le rapport vers un fichier
+              href: export-to.md
             - name: Installation automatique des applications
               href: embed-auto-install-app.md
             - name: Créer un client Azure Active Directory
@@ -257,8 +263,6 @@
           items:
             - name: Configurer les informations d’identification
               href: configure-credentials.md
-            - name: Chiffrer les informations d’identification
-              href: encrypt-credentials.md
         - name: Référence
           items:
             - name: API REST
