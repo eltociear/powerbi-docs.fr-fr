@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e65dd42e8ec787d0c6edba534f79cdb06e5ba14c
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527289"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290633"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Effectuer la migration des rapports SQL Server Reporting Services vers Power BI
 
@@ -119,7 +119,7 @@ L’objectif de la phase de _préparation_ consiste à s’assurer que tout est 
 1. Vous pouvez utiliser des [jeux de données Power BI partagés](../service-datasets-build-permissions.md) à la place de vos sources de données partagées SSRS.
 1. Utilisez [Power BI Desktop](../desktop-what-is-desktop.md) pour développer des rapports optimisés pour les appareils mobiles (par exemple à l’aide du [visuel personnalisé Power KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview)) au lieu de vos rapports mobiles et de vos indicateurs de performance clés SSRS.
 1. Réévaluez l’utilisation du champ prédéfini **UserID** dans vos rapports. Si vous vous fiez à **UserID** pour sécuriser les données des rapports, sachez que, pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), il retourne le nom d’utilisateur principal (UPN). Ainsi, au lieu de renvoyer le nom du compte NT, par exemple _AW\mblythe_, le champ intégré renvoie un résultat du type _m.blythe&commat;adventureworks.com_. Vous devrez réviser vos définitions de jeu de données, et éventuellement les données sources. Après révision et publication, nous vous recommandons de bien vérifier que les autorisations de données fonctionnent comme prévu dans vos rapports.
-1. Réévaluez l’utilisation du champ prédéfini **ExecutionTime** dans vos rapports. Pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), le champ prédéfini retourne la date/heure _au format UTC (temps universel coordonné)_. Cela peut avoir un impact sur les valeurs par défaut des paramètres et les étiquettes de durée d’exécution des rapports (généralement ajoutées aux pieds de page des rapports).
+1. Réévaluez l’utilisation du champ prédéfini **ExecutionTime** dans vos rapports. Pour les rapports paginés (lorsqu’ils sont hébergés dans le service Power BI), le champ prédéfini retourne la date/heure _au format UTC (temps universel coordonné)_ . Cela peut avoir un impact sur les valeurs par défaut des paramètres et les étiquettes de durée d’exécution des rapports (généralement ajoutées aux pieds de page des rapports).
 1. Si votre source de données est SQL Server (au niveau local), vérifiez que les rapports n’utilisent pas de visualisations de carte. La visualisation de carte repose sur des types de données spatiales SQL Server qui ne sont pas pris en charge par la passerelle. Pour plus d’informations, consultez l’[aide sur l’extraction de données pour les rapports paginés (types de données SQL Server complexes)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
 1. Vérifiez que vos auteurs de rapports ont installé [Power BI Report Builder](../report-builder-power-bi.md) et que les versions ultérieures peuvent être facilement distribuées dans l’ensemble de votre organisation.
 
@@ -192,7 +192,6 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 
 - [Présentation des rapports paginés dans Power BI Premium](../paginated-reports-report-builder-power-bi.md)
 - [Aide sur l’extraction de données pour les rapports paginés](report-paginated-data-retrieval.md)
-- Vidéo Guy in a Cube : [Présentation des rapports paginés dans Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
 - [Quand utiliser des rapports paginés dans Power BI](report-paginated-or-power-bi.md)
 - [Rapports paginés dans Power BI : Questions fréquentes (FAQ)](../paginated-reports-faq.md)
 - [Questions fréquentes Power BI Premium](../service-premium-faq.md)
