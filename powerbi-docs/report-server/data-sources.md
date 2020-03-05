@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
-ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540587"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237520"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -41,7 +41,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Stockage Blob Azure |Oui |Oui |Non |
 | Azure Data Lake Store |Oui |Non |Non |
 | Azure HDInsight (HDFS) |Oui |Non |Non |
-| Azure HDInsight (Spark) |Oui |Oui |Non |
+| Azure HDInsight (Spark) |Oui |Non |Non |
 | Stockage Table Azure |Oui |Oui |Non |
 | Dynamics 365 (Online) |Oui |Non |Non |
 | Facebook |Oui |Non |Non |
@@ -128,7 +128,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Stockage Blob Azure |Oui |Oui |Non |Non |
 | Azure Data Lake Store |Non |Non |Non |Non |
 | Azure HDInsight (HDFS) |Non |Non |Non |Non |
-| Azure HDInsight (Spark) |Oui |Oui |Non |Non |
+| Azure HDInsight (Spark) |Non |Non |Non |Non |
 | Stockage Table Azure |Non |Oui |Non |Non |
 | Dynamics 365 (Online) |Non |Non |Non |Non |
 | Facebook |Non |Non |Non |Non |

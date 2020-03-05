@@ -128,7 +128,7 @@ Les actions et les mises à jour suivantes dans les visuels Power BI surviennen
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ?  Reportez-vous aux articles suivants :
+Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ? Reportez-vous aux articles suivants :
 
 * [Développer un visuel Power BI](./custom-visual-develop-tutorial.md)
 * [Publier des visuels Power BI sur l’Espace partenaires](../office-store.md)

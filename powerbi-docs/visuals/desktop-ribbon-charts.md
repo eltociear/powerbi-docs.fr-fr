@@ -24,7 +24,7 @@ Vous pouvez utiliser des graphiques de ruban pour visualiser des données et rap
 
 ![graphique de ruban](media/desktop-ribbon-charts/ribbon-charts-01.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 

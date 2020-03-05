@@ -41,16 +41,16 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |          |         |
 |**Contractions**     |  Questions et réponses reconnaît presque toutes les contractions, faites le test.  Voici quelques exemples : didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
-|**Dates**     |       Power BI reconnaît la plupart des expressions de date ($$$jour, $$$semaine, $$$mois, $$$année, $$$trimestre, $$$dix dernières années, etc.) et les dates écrites dans différents formats (voir ci-dessous). Power BI reconnaît également les mots clés suivants : MonthName, Days 1-31, decade. Exemples : January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
+|**Dates**     |       Power BI reconnaît la plupart des expressions de date ($$$jour, $$$semaine, $$$mois, $$$année, $$$trimestre, $$$dix dernières années, etc.) et les dates écrites dans différents formats (voir ci-dessous). Power BI reconnaît également les mots clés suivants : MonthName, Days 1-31, decade. Exemples : January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |        |         |
 |**Dates relatives**     |   today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.|
 |    |  Exemple : count of orders in the past 6 days.  |            |
 |        |         |
 |**Égalité (plage)**     |   in, equal to, =, after, is more than, in, between, before  |
-|  |Exemples : Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?              |
+|  |Exemples : Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?              |
 |        |         |
 |**Égalité (valeur)**     |   is, equal, equal to, in, of, for, within, is in, is on |
-|   | Exemples : Quels produits sont verts ? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?              |
+|   | Exemples : Quels produits sont verts ? Order date equals 2012. Is the age of John 40? Total sales that aren't equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?              |
 |        |         |
 |**Noms**     |       Si une colonne du jeu de données contient la phrase « name » (par exemple EmployeeName), Q&R comprend que les valeurs de cette colonne sont des noms. Vous pouvez donc poser des questions du type « which employees are named robert » (quels employés s’appellent Robert ?).          |
 |        |         |
@@ -60,7 +60,7 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |**Plage**     |      greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with           |
 |        |         |
 **Heure**  |am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss  |
-|  |  Exemples : 10 pm, 10:35 pm, 10:35:15 pm, 10 o'clock, noon, midnight, hour, minute, second.  |
+|  |  Exemples : 10 pm, 10:35 pm, 10:35:15 pm, 10 o'clock, noon, midnight, hour, minute, second.  |
 |  |  |
 |**N premiers**     |     (ordre, classement) : top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |

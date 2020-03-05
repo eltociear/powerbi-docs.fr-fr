@@ -95,6 +95,6 @@ Maintenant que vous avez un locataire Azure AD, vous pouvez l’utiliser pour t
 
 [Qu’est-ce qu’un annuaire Azure Active ?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  
-[Démarrage rapide : Configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Démarrage rapide : Configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

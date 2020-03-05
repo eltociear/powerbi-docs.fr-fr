@@ -46,7 +46,7 @@ Les graphiques en jauge radiale sont conseillés pour :
 
 * montrer des informations faciles à analyser et à comprendre.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Ce tutoriel utilise le [fichier Excel d’exemple financier](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
@@ -102,7 +102,7 @@ Ce tutoriel utilise le [fichier Excel d’exemple financier](https://download.mi
    > [!NOTE]
    > Vous pouvez également entrer manuellement une valeur cible. Consultez la section [Utiliser les options de mise en forme pour définir manuellement les valeurs Minimum, Maximum et Cible](#use-manual-format-options-to-set-minimum-maximum-and-target-values).
 
-### <a name="step-4-set-a-maximum-value"></a>Étape 4 : Définir une valeur maximale
+### <a name="step-4-set-a-maximum-value"></a>Étape 4 : Définir une valeur maximale
 
 Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir automatiquement une valeur minimale et une valeur maximale. Comment définir votre propre valeur maximale ? Supposons qu’au lieu de définir la valeur maximale possible au double de la valeur actuelle, vous souhaitez la définir au chiffre d’affaires brut le plus élevé dans votre jeu de données.
 
@@ -116,7 +116,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
    ![Capture d’écran du graphique en jauge terminé.](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
-### <a name="step-5-save-your-report"></a>Étape 5 : Enregistrer votre rapport
+### <a name="step-5-save-your-report"></a>Étape 5 : Enregistrer votre rapport
 
 1. [Enregistrez le rapport](../service-report-save.md).
 

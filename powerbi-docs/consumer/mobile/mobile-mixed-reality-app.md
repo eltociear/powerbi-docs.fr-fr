@@ -43,11 +43,11 @@ Découvrez plus d’informations sur les [mouvements de main Microsoft en réali
 
 **Épingler un élément** 
 
-Appuyez en l’air sur l’icône **Épingle** ![Icône Épingle](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) pour épingler un tableau de bord ou un rapport de la vue classique Windows dans la vue holographique. Vous pouvez épingler plusieurs éléments dans la vue holographique. 
+Appuyez en l’air sur l’icône **Épingle**![Icône Épingle](./media/mobile-mixed-reality-app/power-bi-hololens-pin.png) pour épingler un tableau de bord ou un rapport de la vue classique Windows dans la vue holographique. Vous pouvez épingler plusieurs éléments dans la vue holographique. 
 
 **Passer à la vue holographique**
 
-Une fois que vous avez épinglé des éléments dans la vue classique Windows, vous appuyez sur l’icône **Plein écran** ![Icône Plein écran](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) pour passer à la vue holographique. 
+Une fois que vous avez épinglé des éléments dans la vue classique Windows, vous appuyez sur l’icône **Plein écran**![Icône Plein écran](./media/mobile-mixed-reality-app/power-bi-hololens-fullscreen.png) pour passer à la vue holographique. 
 
 
 ## <a name="holographic-view-basics"></a>Concepts de base de la vue holographique
