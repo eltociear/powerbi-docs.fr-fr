@@ -92,7 +92,7 @@ Il existe plusieurs types d’exploration :
 ### <a name="drill-to-next-level"></a>Exploration du niveau suivant
 1. Dans un rapport pour téléphone, cliquez sur les points de suspension ( **...** ) situés dans le coin supérieur droit, puis sur **Développer en mode focus**.
    
-    ![Développer en mode focus](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Développer en mode Focus](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Dans cet exemple, les barres indiquent des états.
 2. Appuyez sur l’icône Explorer ![Icône Explorer](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) en bas à gauche.
@@ -100,7 +100,7 @@ Il existe plusieurs types d’exploration :
     ![Mode Exploration](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Appuyez sur **Afficher le niveau suivant** ou **Développer au prochain niveau**.
    
-    ![Développer au prochain niveau](./media/mobile-apps-view-phone-report/power-bi-phone-report-expand-levels.png)
+    ![Développer au niveau suivant](./media/mobile-apps-view-phone-report/power-bi-phone-report-expand-levels.png)
    
     Maintenant, les barres affichent les valeurs des villes.
    

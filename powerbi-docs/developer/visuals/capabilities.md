@@ -57,7 +57,7 @@ Pour définir les champs qui peuvent être liés à des données, utilisez `data
 * **text** : valeur de texte
 * **geography** : donnée géographique
 
-### <a name="example"></a>Example
+### <a name="example"></a>Exemple
 
 ```json
 "dataRoles": [

@@ -43,7 +43,7 @@ Power BI Desktop est une application gratuite que vous pouvez installer directem
 
 Uniquement d’un navigateur web et d’une adresse de messagerie professionnelle. Vous pouvez aussi vous inscrire avec une adresse e-mail *.gov* et *.mil*. Consultez [Inscrire votre organisation État fédéral américain au service Power BI](../service-govus-signup.md) pour plus d’informations.
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je me connecter avec mon adresse de messagerie professionnelle ?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je m’inscrire avec mon adresse de messagerie professionnelle ?
 
 Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur le [processus d’inscription en libre-service de Power BI](../service-self-service-signup-for-power-bi.md).
 

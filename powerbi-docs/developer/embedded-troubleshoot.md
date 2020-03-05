@@ -21,7 +21,7 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer lors
 
 ## <a name="tools-to-troubleshoot"></a>Outils pour résoudre les problèmes
 
-### <a name="fiddler-trace"></a>Trace Fiddler
+### <a name="fiddler-trace"></a>Suivi Fiddler
 
 [Fiddler](https://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP.  Vous pouvez voir le trafic au niveau des API Power BI depuis l’ordinateur client. Cet outil peut indiquer des erreurs et d’autres informations connexes.
 
@@ -251,7 +251,7 @@ Ouvrez le fichier à partir de Power BI Desktop ou dans powerbi.com, puis vérif
 
 Vous pouvez passer par l’[outil de configuration de l’incorporation](https://aka.ms/embedsetup) pour télécharger rapidement un exemple d’application. Vous pouvez ensuite comparer votre application à l’exemple.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 
 Vérifiez que vous disposez de tous les prérequis appropriés avant d’utiliser l’outil de configuration de l’incorporation. Vous avez besoin d’un compte **Power BI Pro** et d’un abonnement **Microsoft Azure**.
 

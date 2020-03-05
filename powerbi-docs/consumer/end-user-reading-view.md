@@ -152,7 +152,7 @@ Easily navigate between the visualizations on the report page.
     ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### <a name="zoom-in-on-individual-visuals"></a>Zoom avant sur des éléments visuels individuels
-Pointez sur l’élément visuel, puis sélectionnez l’icône du **Mode Focus** ![](media/end-user-reading-view/pbi_popouticon.jpg). Lorsque vous ouvrez une visualisation en mode Focus, celle-ci se développe de manière à occuper entièrement la zone de dessin du rapport, comme illustré ci-dessous.
+Pointez sur l’élément visuel, puis sélectionnez l’icône du **Mode Focus**![](media/end-user-reading-view/pbi_popouticon.jpg). Lorsque vous ouvrez une visualisation en mode Focus, celle-ci se développe de manière à occuper entièrement la zone de dessin du rapport, comme illustré ci-dessous.
 
 ![mode Focus](media/end-user-reading-view/power-bi-full-screen-before.png)
 

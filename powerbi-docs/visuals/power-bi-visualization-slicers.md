@@ -51,9 +51,9 @@ Les segments Power BI ne prennent pas en charge ce qui suit :
    
 1. Accédez au fichier **Retail Analysis sample PBIX.pbix**, puis sélectionnez **Ouvrir**.
 
-1. Dans le volet gauche, sélectionnez l’icône **Rapport** ![Icône Rapport](media/power-bi-visualization-kpi/power-bi-report-view.png) pour ouvrir le fichier en mode rapport.
+1. Dans le volet gauche, sélectionnez l’icône **Rapport**![Icône Rapport](media/power-bi-visualization-kpi/power-bi-report-view.png) pour ouvrir le fichier en mode rapport.
 
-1. Dans la page **Overview**, rien n’étant sélectionné sur le canevas du rapport, sélectionnez l’icône **Segment** ![Icône Segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un segment. 
+1. Dans la page **Overview**, rien n’étant sélectionné sur le canevas du rapport, sélectionnez l’icône **Segment**![Icône Segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un segment. 
 
 1. Une fois le nouveau segment sélectionné, dans le volet **Champs**, sélectionnez **District** > **DM** pour remplir le segment. 
 
@@ -163,7 +163,7 @@ Dans le rapport actuel, la page **District Monthly Sales** affiche également un
 ## <a name="format-slicers"></a>Mettre en forme des segments
 Différentes options de mise en forme sont disponibles selon le type de segment. À l’aide de l’orientation **Horizontal**, de la disposition **Dynamique** et de la coloration des **Éléments**, vous pouvez produire des boutons ou mosaïques, plutôt que des éléments de liste standard et redimensionner les éléments de segment pour s’adapter aux différentes tailles et dispositions d’écran.  
 
-1. Une fois le segment **District Manager** sélectionné dans une page, dans le volet **Visualisations**, sélectionnez l’icône **Format** ![Icône Format](media/power-bi-visualization-slicers/power-bi-paintroller.png) pour afficher les contrôles de mise en forme. 
+1. Une fois le segment **District Manager** sélectionné dans une page, dans le volet **Visualisations**, sélectionnez l’icône **Format**![Icône Format](media/power-bi-visualization-slicers/power-bi-paintroller.png) pour afficher les contrôles de mise en forme. 
     
     ![Sélection du format](media/power-bi-visualization-slicers/3-format.png)
     
@@ -241,7 +241,7 @@ Les autres options de mise en forme sont **désactivées** par défaut. **Active
 - **Bordure** : ajoutez une bordure autour du segment et définissez sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous **Général**.) 
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations, consultez les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
 - [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 

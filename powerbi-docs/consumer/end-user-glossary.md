@@ -184,7 +184,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 ## <a name="n"></a>N
 
-**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)*. Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
+**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)* . Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
 
 **volet de navigation** ou **volet nav** les contrôles le long du bord gauche du service Power BI.
 
@@ -220,7 +220,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 **épingler, désépingler** l’action exécuter par un *concepteur de rapports* consistant à placer un visuel, généralement à partir d’un rapport, sur un tableau de bord.
 
-**Power BI**, **Power BI service (service Power BI)**, **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *Power BI service (service Power BI)* et *Power BI Mobile*, après la première mention du nom complet du produit.
+**Power BI**, **Power BI service (service Power BI)** , **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *Power BI service (service Power BI)* et *Power BI Mobile*, après la première mention du nom complet du produit.
 
 **Power BI Desktop** Également appelé *Desktop*. L’application Windows gratuite de Power BI est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Utilisée par les administrateurs et les concepteurs de rapports. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md).
 
@@ -301,7 +301,7 @@ Sur les appareils mobiles, « partager » peut faire référence à la fonctionn
 
 **streaming data (streaming de données)** Voir *streaming en temps réel*.
 
-**subscriptions (abonnements)**, **Subscribe (s’abonner)**  
+**subscriptions (abonnements)** , **Subscribe (s’abonner)**  
 Vous pouvez vous abonner à des pages de rapport, des applications et des tableaux de bord, et recevoir des e-mails contenant une capture instantanée. Nécessite une licence Power BI Pro.
 
 **summarization (totalisation)** [Power BI Desktop] Opération qui est appliquée aux valeurs d’une même colonne.

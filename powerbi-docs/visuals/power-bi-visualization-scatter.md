@@ -75,7 +75,7 @@ Un graphique à points est similaire à un graphique en bulles et à un graphiqu
 
 Ces graphiques sont très utiles si vous voulez inclure des données de catégorie sur l’axe X.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 

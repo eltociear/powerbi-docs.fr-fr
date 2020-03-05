@@ -50,7 +50,7 @@ Si vous souhaitez afficher les données qui sont utilisées pour créer un élé
 ## <a name="from-a-visual-in-a-report"></a>À partir d’un élément visuel dans un rapport
 Vous pouvez exporter des données à partir d’un élément visuel dans un rapport au format. csv ou. xlsx (Excel). 
 
-1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même élément visuel que ci-dessus, *Total Units YTD Var %*. 
+1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même élément visuel que ci-dessus, *Total Units YTD Var %* . 
 
     ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-reports.png)
 

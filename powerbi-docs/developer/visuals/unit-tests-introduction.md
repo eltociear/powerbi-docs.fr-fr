@@ -15,7 +15,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/09/2019
 ms.locfileid: "73879954"
 ---
-# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
+# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
 Cet article décrit les principes fondamentaux de l’écriture de tests unitaires pour vos visuels Power BI, notamment comment :
 
@@ -23,7 +23,7 @@ Cet article décrit les principes fondamentaux de l’écriture de tests unitair
 * Utiliser le package powerbi-visuals-utils-testutils.
 * Utiliser des simulacres et des substituts pour aider à simplifier les tests unitaires des visuels Power BI.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 * Un projet de visuels Power BI installé
 * Un environnement Node.js configuré

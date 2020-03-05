@@ -241,7 +241,7 @@ selector: {
 }
 ```
 
-##### <a name="example"></a>Example
+##### <a name="example"></a>Exemple
 
 L’exemple suivant montre à quoi ressemblerait un objectEnumeration pour un objet customColor avec une propriété *fill*. Nous souhaitons que cet objet soit lié de manière statique à `dataViews[index].metadata.objects`, comme illustré :
 
