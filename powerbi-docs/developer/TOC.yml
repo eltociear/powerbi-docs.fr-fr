@@ -140,6 +140,8 @@
           items:
             - name: Capacité et références SKU dans l’analytique incorporée de Power BI
               href: embedded-capacity.md
+            - name: Planification de la capacité
+              href: embedded-capacity-planning.md
             - name: Bonnes pratiques relatives aux performances
               href: embedded-performance-best-practices.md
             - name: Principal du service
