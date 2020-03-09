@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Documentation sur les rapports paginés Power BI
+summary: La documentation sur les rapports paginés Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+metadata:
+  title: Documentation sur les rapports paginés Power BI
+  description: La documentation sur les rapports paginés Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 47a77e156c6b59440e0de500a3f2ab9dede01c85
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924595"
+landingContent:
+- title: À propos des rapports paginés Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Présentation des rapports paginés Power BI
+      url: paginated-reports-report-builder-power-bi.md
+    - text: Générateur de rapports dans Power BI
+      url: report-builder-power-bi.md
+- title: Commencer
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Créer un rapport paginé et le télécharger
+      url: paginated-reports-quickstart-aw.md
+  - linkListType: concept
+    links:
+    - text: Découverte du mode Création de rapport
+      url: paginated-reports-report-design-view.md
+    - text: Planification d’un rapport paginé
+      url: report-builder-planning-report.md
+- title: Se connecter aux données
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Données dans Report Builder
+      url: report-builder-data.md
+    - text: Sources de données prises en charge
+      url: paginated-reports-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Créer une source de données incorporée
+      url: paginated-reports-embedded-data-source.md
+    - text: Créer un jeu de données incorporé
+      url: paginated-reports-create-embedded-dataset.md
+- title: Créer des rapports
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tables, matrices et listes
+      url: report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Créer un rapport sur un jeu de données partagé
+      url: report-builder-shared-datasets.md
+    - text: Créer des paramètres
+      url: paginated-reports-parameters.md
+- title: Affiner et publier des rapports
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Exemples d’expressions
+      url: report-builder-expression-examples.md
+    - text: Pagination du rapport
+      url: paginated-reports-pagination.md
+  - linkListType: how-to-guide
+    links:
+    - text: Passer un paramètre de rapport dans une URL
+      url: report-builder-url-pass-parameters.md
+    - text: Publier un rapport paginé
+      url: paginated-reports-save-to-power-bi-service.md

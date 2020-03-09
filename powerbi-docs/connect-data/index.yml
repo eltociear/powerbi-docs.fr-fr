@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Se connecter à des données dans Power BI - Documentation
+summary: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+metadata:
+  title: Se connecter à des données dans Power BI - Documentation
+  description: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924135"
+landingContent:
+- title: Se connecter à des données dans Power BI
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Sources de données
+      url: ../desktop-data-sources.md
+    - text: Vue Données dans Power BI Desktop
+      url: ../desktop-data-view.md
+  - linkListType: tutorial
+    links:
+    - text: Importer des données d’une page web
+      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+- title: Passerelles
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Passerelles de données locales
+      url: ../service-gateway-onprem.md
+  - linkListType: tutorial
+    links:
+    - text: Se connecter à des données SQL Server locales
+      url: ../service-gateway-sql-tutorial.md
+  - linkListType: how-to-guide
+    links:
+    - text: Utiliser des passerelles personnelles
+      url: ../service-gateway-personal-mode.md
+- title: Applications modèles
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Présentation des applications modèles
+      url: ../service-template-apps-overview.md
+  - linkListType: concept
+    links:
+    - text: Créer des applications modèles
+      url: ../service-template-apps-create.md
+    - text: Distribuer des applications modèles dans votre organisation
+      url: ../service-template-apps-install-distribute.md
+- title: Actualiser les données
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Actualisation des données
+      url: ../refresh-data.md
+    - text: Actualisation incrémentielle dans Power BI Premium
+      url: ../service-premium-incremental-refresh.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurer une actualisation planifiée
+      url: ../refresh-scheduled-refresh.md

@@ -1,0 +1,121 @@
+### YamlMime:Landing
+title: Créer des rapports et des tableaux de bord dans Power BI - Documentation
+summary: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+metadata:
+  title: Créer des rapports et des tableaux de bord dans Power BI - Documentation
+  description: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 592a7bff1f511158de929ce0a225f26558a1997b
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924181"
+landingContent:
+- title: Commencer
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Utiliser le ruban mis à jour
+      url: ../desktop-ribbon.md
+    - text: Vue d’ensemble de l’accessibilité
+      url: ../desktop-accessibility-overview.md
+    - text: Obtenir des exemples de données
+      url: ../sample-datasets.md
+  - linkListType: tutorial
+    links:
+    - text: Importer et ouvrir des packs d’exemples
+      url: ../sample-tutorial-connect-to-the-samples.md
+  - linkListType: concept
+    links:
+    - text: Vue Rapport
+      url: ../desktop-report-view.md
+- title: Visualisations
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble des visualisations
+      url: ../visuals/power-bi-report-visualizations.md
+    - text: Types de visualisation
+      url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+  - linkListType: how-to-guide
+    links:
+    - text: Conseils et astuces concernant les cartes
+      url: ../visuals/power-bi-map-tips-and-tricks.md
+    - text: Exporter des données à partir d’un élément visuel
+      url: ../visuals/power-bi-visualization-export-data.md
+    - text: Segments
+      url: ../visuals/power-bi-visualization-slicers.md
+- title: Concevoir des rapports
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Report themes
+      url: ../desktop-report-themes.md
+    - text: Zones de texte et formes
+      url: ../power-bi-reports-add-text-and-shapes.md
+  - linkListType: how-to-guide
+    links:
+    - text: Mise en forme conditionnelle des tables
+      url: ../desktop-conditional-table-formatting.md
+    - text: Utiliser le regroupement et le binning
+      url: ../desktop-grouping-and-binning.md
+    - text: Ajouter des signets à un rapport
+      url: ../desktop-bookmarks.md
+- title: Concevoir des interactions de rapport
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Vue Rapport dans Power BI Desktop
+      url: ../desktop-report-view.md
+  - linkListType: how-to-guide
+    links:
+    - text: Explorer les données avec Questions et réponses
+      url: ../power-bi-tutorial-q-and-a.md
+    - text: Utiliser l’extraction dans un rapport
+      url: ../desktop-drillthrough.md
+    - text: Ajouter des signets à un rapport
+      url: ../desktop-bookmarks.md
+    - text: Ajouter des filtres à un rapport
+      url: ../power-bi-report-filter.md
+- title: Rapports paginés Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Présentation des rapports paginés Power BI
+      url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - text: Générateur de rapports dans Power BI
+      url: ../paginated-reports/report-builder-power-bi.md
+  - linkListType: concept
+    links:
+    - text: Exemples d’expressions
+      url: ../paginated-reports/report-builder-expression-examples.md
+    - text: Tables, matrices et listes
+      url: ../paginated-reports/report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Créer un rapport sur un jeu de données partagé
+      url: ../paginated-reports/report-builder-shared-datasets.md
+    - text: Créer des paramètres
+      url: ../paginated-reports/paginated-reports-parameters.md
+- title: Tableaux de bord
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Présentation des tableaux de bord
+      url: ../service-dashboards.md
+  - linkListType: how-to-guide
+    links:
+    - text: Créer un tableau de bord
+      url: ../service-dashboard-create.md
+    - text: Épingler une vignette à un tableau de bord
+      url: ../service-share-dashboards.md
+    - text: Ajouter des images ou une vidéo à un tableau de bord
+      url: ../service-dashboard-add-widget.md

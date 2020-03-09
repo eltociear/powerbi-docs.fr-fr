@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Documentation Power BI pour les consommateurs
+title: Documentation Power BI pour les consommateurs
 summary: En tant que consommateur, vous recevez des rapports et des tableaux de bord de vos collègues. Vous travaillez dans Power BI pour consulter et interagir avec ce contenu afin de prendre des décisions métier.
 metadata:
   title: Power BI pour les consommateurs
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: mihart
   ms.author: mihart
-  ms.date: 01/10/2020
-  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
-  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 3f6431f2011b4b6a75ea766d6051b02ce2abe947
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/20/2020
-  ms.locfileid: "77497790"
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78919346"
 landingContent:
 - title: À propos de Power BI pour les consommateurs
   linkLists:
@@ -85,15 +85,15 @@ landingContent:
       url: end-user-bookmarks.md
     - text: Consulter des insights automatiques
       url: end-user-insights.md
-    - text: Consulter un rapport paginé
-      url: paginated-reports-view-power-bi-service.md
+    - text: Conseils d’utilisation de Q&R
+      url: end-user-q-and-a-tips.md
 - title: Ressources
   linkLists:
   - linkListType: reference
     links:
     - text: Glossaire
       url: end-user-glossary.md
-    - text: Questions fréquentes (FAQ)
+    - text: FORUM AUX QUESTIONS
       url: end-user-faq.md
     - text: Types d’insights
       url: end-user-insight-types.md

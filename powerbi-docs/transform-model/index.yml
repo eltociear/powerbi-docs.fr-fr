@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Transformer, mettre en forme et modéliser des données dans Power BI - Documentation
+summary: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+metadata:
+  title: Transformer, mettre en forme et modéliser des données dans Power BI - Documentation
+  description: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: 738bc26097120b0075f3ca1ffb0787f241aec982
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924526"
+landingContent:
+- title: Transformez et mettez en forme des données
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble de l’éditeur de requête
+      url: ../desktop-query-overview.md
+  - linkListType: tutorial
+    links:
+    - text: Mettre en forme et combiner des données
+      url: ../desktop-shape-and-combine-data.md
+  - linkListType: concept
+    links:
+    - text: Tâches de requête courantes
+      url: ../desktop-common-query-tasks.md
+  - linkListType: how-to-guide
+    links:
+    - text: Combiner des fichiers (binaires)
+      url: ../desktop-combine-binaries.md
+- title: Modéliser des données
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Vue de modélisation
+      url: ../desktop-modeling-view.md
+    - text: Relations Plusieurs-à-plusieurs
+      url: ../desktop-many-to-many-relationships.md
+  - linkListType: how-to-guide
+    links:
+    - text: Créer et gérer des relations
+      url: ../desktop-create-and-manage-relationships.md
+    - text: Appliquer la catégorisation des données
+      url: ../desktop-data-categorization.md
+- title: Calculs
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Appliquer les principes de base de DAX
+      url: ../desktop-quickstart-learn-dax-basics.md
+    - text: Créer des colonnes calculées
+      url: ../desktop-tutorial-create-calculated-columns.md
+  - linkListType: concept
+    links:
+    - text: Tables calculées
+      url: ../desktop-calculated-tables.md
+  - linkListType: how-to-guide
+    links:
+    - text: Utiliser les mesures rapides
+      url: ../desktop-quick-measures.md
+- title: Préparation des données en libre-service
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Préparation des données en libre-service dans Power BI
+      url: ../desktop-quickstart-connect-to-data.md
+  - linkListType: concept
+    links:
+    - text: 'Dataflows : Préparation des données en libre-service'
+      url: ../service-dataflows-overview.md
+    - text: Créer et utiliser des dataflows
+      url: ../service-dataflows-create-use.md
