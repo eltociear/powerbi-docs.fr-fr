@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: f4da9179ef140fd254939a4121e91dd032269c98
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: 019a3af81cd3661307fd9de6d0577ac58a11ae6a
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913607"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78919790"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -119,7 +119,7 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-* Les rapports paginés sont pris en charge avec les scénarios d’incorporation sécurisée, et les rapports paginés avec des paramètres d’URL sont également pris en charge. Découvrez-en plus sur la [transmission de paramètres de rapport dans une URL pour un rapport paginé](report-builder-url-pass-parameters.md).
+* Les rapports paginés sont pris en charge avec les scénarios d’incorporation sécurisée, et les rapports paginés avec des paramètres d’URL sont également pris en charge. Découvrez-en plus sur la [transmission de paramètres de rapport dans une URL pour un rapport paginé](paginated-reports/report-builder-url-pass-parameters.md).
 
 * Ne prend pas en charge les utilisateurs invités externes avec Azure B2B.
 

@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2a8dca43077fe12e4903585e3926cc67fe864136
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76162408"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920781"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Utiliser des paramètres en cascade dans les rapports paginés
 
-Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des scénarios pour la conception de paramètres en cascade. Les paramètres en cascade sont des paramètres de rapport comportant des dépendances. Lorsqu’un utilisateur de rapport sélectionne une ou plusieurs valeurs de paramètres, cette option permet de définir les valeurs disponibles pour un autre paramètre.
+Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des scénarios pour la conception de paramètres en cascade. Les paramètres en cascade sont des paramètres de rapport comportant des dépendances. Lorsqu’un utilisateur de rapport sélectionne une ou plusieurs valeurs de paramètres, cette option permet de définir les valeurs disponibles pour un autre paramètre.
 
 > [!NOTE]
 > Cet article n’aborde pas la présentation des paramètres en cascade et leur configuration. Si vous ne connaissez pas bien les paramètres en cascade, nous vous recommandons de lire d’abord l’article [Ajouter des paramètres en cascade à un rapport (Générateur de rapports et SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
@@ -281,7 +281,7 @@ Veillez à optimiser vos sources de données en procédant comme suit :
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Paramètres de rapport dans le Générateur de rapports Power BI](../report-builder-parameters.md)
+- [Paramètres de rapport dans le Générateur de rapports Power BI](../paginated-reports/report-builder-parameters.md)
 - [Ajouter des paramètres en cascade à un rapport (Générateur de rapports et SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

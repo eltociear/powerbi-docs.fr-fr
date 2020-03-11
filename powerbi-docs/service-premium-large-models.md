@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 007ff786fcee5d2a7b7237ad578a202cfcf25b69
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260873"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401940"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Grands modèles dans Power BI Premium (préversion)
 
@@ -123,7 +123,7 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grand
 
 ## <a name="availability-in-regions"></a>Disponibilité dans les régions
 
-Les modèles volumineux dans Power BI sont disponibles uniquement dans certaines régions Azure qui prennent en charge [le stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Les modèles volumineux dans Power BI sont disponibles uniquement dans certaines régions Azure qui prennent en charge [le stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
 
 La liste suivante répertorie les régions où les grands modèles dans Power BI sont disponibles. Les régions qui ne sont pas dans la liste suivante ne sont pas prises en charge pour les modèles volumineux :
 
@@ -156,7 +156,7 @@ La liste suivante répertorie les régions où les grands modèles dans Power BI
 
 Les liens suivants fournissent des informations qui peuvent être utiles pour travailler avec des modèles volumineux :
 
-* [Stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Configurer le support multigéographique pour Power BI Premium](service-admin-premium-multi-geo.md)
 * [Apporter vos propres clés de chiffrement pour Power BI](service-encryption-byok.md)
 * [Fonctionnement des capacités](service-premium-what-is.md#how-capacities-function)

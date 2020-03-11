@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265332"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920964"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -41,11 +41,11 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Nouveaux paramètres de capacité pour Power BI Premium
 * [Marque personnalisée](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) pour votre organisation
 * Exportation du récapitulatif des données avec autorisation de création
-* Prise en charge des paramètres d’URL pour les [rapports paginés](paginated-reports-report-builder-power-bi.md)
+* Prise en charge des paramètres d’URL pour les [rapports paginés](paginated-reports/paginated-reports-report-builder-power-bi.md)
 * Prise en charge des abonnements mensuels par e-mail 
 
 ### <a name="july-2019"></a>Juillet 2019
-* Prise en charge des jeux de données non Premium pour les [rapports paginés](paginated-reports-report-builder-power-bi.md)
+* Prise en charge des jeux de données non Premium pour les [rapports paginés](paginated-reports/paginated-reports-report-builder-power-bi.md)
 * Disponibilité générale des [agrégations](desktop-aggregations.md) Power BI
 * Envoi de notifications d’actualisation à d’autres utilisateurs
 * [Outil de test](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) pour les capacités Power BI Premium
@@ -57,7 +57,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Préversion publique des [jeux de données partagés et certifiés](service-datasets-across-workspaces.md)
 * Métriques d’intelligence artificielle disponibles dans l’[application Métriques de capacité Premium](service-admin-premium-monitor-capacity.md).
 * Disponibilité générale des [applications modèles](service-template-apps-overview.md) Power BI
-* Disponibilité générale des [rapports paginés](paginated-reports-report-builder-power-bi.md) dans Power BI.
+* Disponibilité générale des [rapports paginés](paginated-reports/paginated-reports-report-builder-power-bi.md) dans Power BI.
 * Préversion publique de la fonctionnalité [BYOK](service-encryption-byok.md) pour Power BI Premium
 * Rôle de lecteur pour l’[expérience des nouveaux espaces de travail](service-new-workspaces.md)
 
@@ -71,7 +71,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Disponibilité générale de la nouvelle expérience des espaces de travail.
 * Nouvelles régions Power BI en France et en Corée.
 * Expérience Questions et réponses mise à jour pour les tableaux de bord.
-* Prise en charge d’Azure Analysis Services dans les [rapports paginés](paginated-reports-report-builder-power-bi.md).
+* Prise en charge d’Azure Analysis Services dans les [rapports paginés](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Rapports paginés pris en charge dans les applications Power BI.
 * [Abonnements par e-mail](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) avec des pièces jointes PDF pour les rapports paginés.
 * Métriques de charge de travail et récapitulatif Power BI Premium pris en charge dans le portail d’administration
@@ -108,7 +108,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 
 ### <a name="november-2018"></a>Novembre 2018
 * Préparation des données Power BI disponible dans la préversion publique des [dataflows](service-dataflows-overview.md).
-* Préversion publique des [rapports paginés](paginated-reports-report-builder-power-bi.md) dans Power BI Premium.
+* Préversion publique des [rapports paginés](paginated-reports/paginated-reports-report-builder-power-bi.md) dans Power BI Premium.
 * Taille des données et nombre de jeux de données en mémoire dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="october-2018"></a>Octobre 2018

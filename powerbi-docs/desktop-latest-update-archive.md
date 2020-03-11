@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f22b235ddb1918bda5284f72759485d01c4ceab9
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: a15b309cd2e50eb47242895c808eaa4386c53a4b
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496729"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401265"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -425,12 +425,6 @@ Vous pouvez également télécharger des versions précédentes de Power BI Desk
 * Si vous recevez un avertissement lors du chargement d’un rapport enregistré dans une version plus récente de Power BI Desktop et que vous enregistrez ce rapport dans la version précédente, vous perdrez toutes les informations relatives aux nouvelles fonctionnalités.
 * Nous archivons uniquement les versions anglaises de Power BI Desktop.
 
-Sélectionnez les liens suivants pour télécharger cette version antérieure : 
-
-* [Version d’août 2019 de Power BI Desktop – 32 bits](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
-* [Version d’août 2019 de Power BI Desktop – 64 bits](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
-
-
 ## <a name="july-2019-update-2715523641"></a>Mise à jour de juillet 2019 (2.71.5523.641)
 
 Nos mises à jour de juillet proposaient de nouvelles fonctionnalités colorées pour votre Power BI Desktop. 
@@ -495,12 +489,6 @@ Vous pouvez également télécharger des versions précédentes de Power BI Desk
 * Il ne sera peut-être pas possible d’ouvrir des fichiers créés ou enregistrés dans de nouvelles versions de Power BI Desktop avec des versions précédentes de Power BI Desktop. 
 * Si vous recevez un avertissement lors du chargement d’un rapport enregistré dans une version plus récente de Power BI Desktop et que vous enregistrez ce rapport dans la version précédente, vous perdrez toutes les informations relatives aux nouvelles fonctionnalités.
 * Nous archivons uniquement les versions anglaises de Power BI Desktop.
-
-Sélectionnez les liens suivants pour télécharger cette version antérieure : 
-
-* [Version de Power BI Desktop de juillet 2019 – 32 bits](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
-* [Version de Power BI Desktop de juillet 2019 – 64 bits](https://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
-
 
 ## <a name="june-2019-update-2705494561"></a>Mise à jour de juin 2019 (2.70.5494.561)
 

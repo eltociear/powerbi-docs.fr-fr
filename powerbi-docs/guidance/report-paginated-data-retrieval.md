@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1da75b14f628c8c765ea89a34dd2a2665cdf9a4b
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1e69c7eefe25da771ecc4d9602d6a21081f2c052
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530438"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920749"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Aide sur l’extraction de données pour les rapports paginés
 
-Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des recommandations pour vous aider à concevoir un processus d’extraction de données efficace.
+Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des recommandations pour vous aider à concevoir un processus d’extraction de données efficace.
 
 ## <a name="data-source-types"></a>Types de sources de données
 
@@ -101,13 +101,13 @@ Nous vous recommandons d’utiliser le _paramétrage de jeu de données_ s’il 
 
 ## <a name="non-native-data-sources"></a>Sources de données non natives
 
-Si vous avez besoin de développer des rapports paginés basés sur des sources de données qui ne sont pas [prises en charge en mode natif par les rapports paginés](../paginated-reports-data-sources.md), vous pouvez tout d’abord développer un modèle de données Power BI Desktop. De cette façon, vous pouvez vous connecter à plus de 100 [sources de données Power BI](../power-bi-data-sources.md). Au terme de la publication sur le service Power BI, vous pouvez développer un rapport paginé qui se connecte au jeu de données Power BI.
+Si vous avez besoin de développer des rapports paginés basés sur des sources de données qui ne sont pas [prises en charge en mode natif par les rapports paginés](../paginated-reports/paginated-reports-data-sources.md), vous pouvez tout d’abord développer un modèle de données Power BI Desktop. De cette façon, vous pouvez vous connecter à plus de 100 [sources de données Power BI](../power-bi-data-sources.md). Au terme de la publication sur le service Power BI, vous pouvez développer un rapport paginé qui se connecte au jeu de données Power BI.
 
 ## <a name="data-integration"></a>Intégration des données
 
 Pour combiner des données provenant de plusieurs sources de données, vous avez le choix entre deux options :
 
-- **Combiner des jeux de données de rapport** : si les sources de données sont [prises en charge en mode natif par les rapports paginés](../paginated-reports-data-sources.md), vous pouvez envisager de créer des champs calculés qui utilisent la fonction [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) ou [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) de Report Builder.
+- **Combiner des jeux de données de rapport** : si les sources de données sont [prises en charge en mode natif par les rapports paginés](../paginated-reports/paginated-reports-data-sources.md), vous pouvez envisager de créer des champs calculés qui utilisent la fonction [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) ou [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) de Report Builder.
 - **Développer un modèle Power BI Desktop** : il est probablement plus efficace de développer un modèle de données dans Power BI Desktop. Vous pouvez utiliser Power Query pour combiner des requêtes basées sur n’importe quelle [source de données prise en charge](../power-bi-data-sources.md). Au terme de la publication sur le service Power BI, vous pouvez développer un rapport paginé qui se connecte au jeu de données Power BI.
 
 ## <a name="sql-server-complex-data-types"></a>Types de données SQL Server complexes
@@ -143,6 +143,6 @@ Quand un rapport est exécuté, tous les jeux de données sont évalués, même 
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Sources de données prises en charge pour les rapports paginés Power BI](../paginated-reports-data-sources.md)
+- [Sources de données prises en charge pour les rapports paginés Power BI](../paginated-reports/paginated-reports-data-sources.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

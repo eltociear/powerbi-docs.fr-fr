@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 0203c191965bd2a496c1a5062b85af64d22b3b76
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000086"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78400429"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel Power BI sur Microsoft AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs.
@@ -28,7 +28,7 @@ Vous pouvez envoyer des visuels Power BI gratuits à la Place de marché (Micros
 
 Un visuel Power BI IAP est un visuel *gratuit* qui offre des *fonctionnalités gratuites*. Il a également des fonctionnalités avancées pour lesquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel Power BI, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
 
-Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](https://docs.microsoft.com/legal/marketplace/certification-policies#11002-displaying-ads).
 
 
 >[!IMPORTANT]  

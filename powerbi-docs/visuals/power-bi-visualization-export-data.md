@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4e42a00c516cf9cd24c307c8f953a6cc7f840314
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539746"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946858"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -166,7 +166,7 @@ Il existe plusieurs stratégies que les administrateurs et les concepteurs Power
 
 - Les propriétaires de jeux de données peuvent définir la sécurité au niveau des lignes (RLS, Row level security). La sécurité RLS limite l’accès aux utilisateurs en lecture seule. Toutefois, si vous avez configuré un espace de travail d’applications et accordé aux membres les autorisations de modification, les rôles RLS ne s’appliquent pas à eux. Pour plus d’informations, consultez [Sécurité au niveau des lignes](../service-admin-rls.md).
 
-- Les concepteurs de rapports peuvent masquer les colonnes afin de ne pas les faire apparaître dans la liste **Champs**. Pour plus d’informations, consultez [Propriétés de jeu de données](../developer/api-dataset-properties.md)
+- Les concepteurs de rapports peuvent masquer les colonnes afin de ne pas les faire apparaître dans la liste **Champs**. Pour plus d’informations, consultez [Propriétés de jeu de données](../developer/automation/api-dataset-properties.md)
 
 - Les administrateurs Power BI peuvent ajouter des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md) aux tableaux de bord, rapports, jeux de données et dataflows. Ils peuvent ensuite appliquer des paramètres de protection, tels que le chiffrement ou les filigranes, lors de l’exportation des données. 
 

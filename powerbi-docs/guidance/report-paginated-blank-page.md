@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 76d1631b95c30d5ae56ced5d64e5174f6f9db759
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76041862"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920836"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Éviter les pages blanches lors de l’impression de rapports paginés
 
-Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des recommandations pour vous aider à éviter les pages vierges lorsque votre rapport est exporté vers un format de page physique (par exemple, PDF ou Microsoft Word) ou imprimé.
+Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../paginated-reports/paginated-reports-report-builder-power-bi.md) Power BI. Il fournit des recommandations pour vous aider à éviter les pages vierges lorsque votre rapport est exporté vers un format de page physique (par exemple, PDF ou Microsoft Word) ou imprimé.
 
 ## <a name="page-setup"></a>Mise en page
 
 Les propriétés de taille de page de rapport déterminent l’orientation, les dimensions et les marges de la page. Accédez à ces propriétés de rapport en procédant comme suit :
 
 - À l’aide de la **page de propriétés** du rapport : Cliquez avec le bouton droit sur la zone gris foncé à l’extérieur du canevas du rapport, puis sélectionnez _Propriétés du rapport_.
-- À l’aide du volet [**Propriétés** ](../paginated-reports-report-design-view.md#4-properties-pane): Cliquez sur la zone gris foncé à l’extérieur du canevas du rapport pour sélectionner l’objet de rapport. Assurez-vous que le volet **Propriétés** est affiché.
+- À l’aide du volet [**Propriétés** ](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Cliquez sur la zone gris foncé à l’extérieur du canevas du rapport pour sélectionner l’objet de rapport. Assurez-vous que le volet **Propriétés** est affiché.
 
 La page **Mise en page** de la **page des propriétés** du rapport fournit une interface conviviale pour afficher et mettre à jour les propriétés de mise en page.
 
@@ -91,7 +91,7 @@ Enfin, si vous imprimez le rapport sur papier, assurez-vous que le papier est co
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Présentation des rapports paginés dans Power BI Premium](../paginated-reports-report-builder-power-bi.md)
-- [Pagination des rapports Power BI](../paginated-reports-pagination.md)
+- [Présentation des rapports paginés dans Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Pagination des rapports Power BI](../paginated-reports/paginated-reports-pagination.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

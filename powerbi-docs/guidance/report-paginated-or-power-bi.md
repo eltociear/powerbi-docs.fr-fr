@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3838c0b487be7faace2e58dd706aa7d172841215
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290495"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920734"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Quand utiliser des rapports paginés dans Power BI
 
-Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il a pour but de vous aider à choisir quand développer des [rapports paginés Power BI](../paginated-reports-report-builder-power-bi.md).
+Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il a pour but de vous aider à choisir quand développer des [rapports paginés Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
 > La publication des rapports paginés Power BI nécessite un abonnement Power BI Premium. Les rapports s’affichent uniquement lorsqu’ils se trouvent dans un espace de travail situé dans une capacité dédiée où la [charge de travail Rapports paginés est activée](../service-admin-premium-workloads.md#paginated-reports).
@@ -49,7 +49,7 @@ Les rapports paginés Power BI offrent de nombreuses possibilités. Celles-ci c
 - **Disposition précise** : vous pouvez concevoir des dispositions impeccables et très sophistiquées, à la même taille et au même emplacement que ceux qui ont été configurés en fractions de pouce ou en centimètres.
 - **Disposition dynamique** : vous pouvez produire des dispositions hautement réactives en définissant de nombreuses propriétés de rapport qui utilisent des expressions VB.NET. Les expressions ont accès à un grand nombre de bibliothèques .NET Framework principales.
 - **Disposition en fonction du rendu** : vous pouvez utiliser des expressions pour modifier la mise en page du rapport en fonction du format de rendu appliqué. Par exemple, vous pouvez concevoir le rapport de manière à désactiver le basculement de la visibilité (pour monter ou descendre dans la hiérarchie) lorsqu’il est affiché dans un format non interactif, tel que le format PDF.
-- **Requêtes natives** : il n’est pas nécessaire de développer d’abord un jeu de données Power BI. Il est possible de créer des requêtes natives (ou d’utiliser des procédures stockées) pour toutes les [sources de données prises en charge](../paginated-reports-data-sources.md). Les requêtes peuvent inclure un paramétrage.
+- **Requêtes natives** : il n’est pas nécessaire de développer d’abord un jeu de données Power BI. Il est possible de créer des requêtes natives (ou d’utiliser des procédures stockées) pour toutes les [sources de données prises en charge](../paginated-reports/paginated-reports-data-sources.md). Les requêtes peuvent inclure un paramétrage.
 - **Concepteurs de requêtes graphiques** : Power BI Report Builder proposent des concepteurs de requêtes graphiques qui peuvent vous aider à écrire et à tester vos requêtes de jeux de données.
 - **Jeux de données statiques** : vous pouvez définir un jeu de données et entrer les données directement dans la définition de votre rapport. Cette fonctionnalité est particulièrement utile pour une démonstration ou la fourniture d’une preuve de concept (POC).
 - **Intégration des données** : Vous pouvez combiner des données provenant de différentes sources de données, ou les combiner avec des jeux de données statiques. Pour cela, vous devez créer des champs personnalisés à l’aide d’expressions VB.NET.
@@ -70,7 +70,7 @@ Les rapports paginés Power BI offrent de nombreuses possibilités. Celles-ci c
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Présentation des rapports paginés dans Power BI Premium](../paginated-reports-report-builder-power-bi.md)
+- [Présentation des rapports paginés dans Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Effectuer la migration des rapports SQL Server Reporting Services vers Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871489"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041720"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Créer une application modèle dans Power BI
 
@@ -23,7 +23,7 @@ Si vous créez déjà des rapports et tableaux de bord Power BI, vous pouvez dev
 
 Les administrateurs de locataires Power BI régissent et contrôlent les utilisateurs dans leur organisation qui sont autorisés à créer des applications modèles et/ou à les installer. Ces utilisateurs autorisés peuvent installer votre application modèle, puis la modifier et la distribuer aux consommateurs Power BI dans leur organisation.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Les prérequis pour créer une application modèle sont les suivants :  
 
@@ -58,7 +58,7 @@ Pour créer une application modèle que vous pouvez ensuite distribuer à d’au
 
 Comme avec tout espace de travail Power BI standard, l’étape suivante consiste à créer le contenu dans l’espace de travail.  
 
-- [Créez votre contenu Power BI](power-bi-creator-landing.md) dans votre espace de travail.
+- [Créez votre contenu Power BI](index.yml) dans votre espace de travail.
 
 Si vous définissez des paramètres dans Power Query, assurez-vous d’utiliser des types de paramètre pris en charge (par exemple, Text). Les types Any et Binary ne sont pas pris en charge.
 
