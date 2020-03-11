@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
-ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
+ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76309105"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290679"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Créer des relations de modèle dans Power BI Desktop
 
@@ -36,11 +36,11 @@ Voyons comment les relations propagent les filtres à travers un exemple animé.
 
 Dans cet exemple, le modèle se compose de quatre tables : **Category**, **Product**, **Year** et **Sales**. La table **Category** est associée à la table **Product**, et la table **Product** est associée à la table **Sales**. La table **Year** est également associée à la table **Sales**. Toutes les relations sont de type un-à-plusieurs (vous trouverez des détails à ce sujet plus loin dans cet article).
 
-Une requête, peut-être générée par un visuel de carte Power BI, demande les quantités totales vendues pour les commandes passées dans une catégorie unique, **Cat-A**, et pour une même année, **2018**. C’est ce qui explique que des filtres sont appliqués au niveau des tables **Category** et **Year**. Le filtre au niveau de la table **Category** se propage à la table **Product** pour isoler deux produits relevant de la catégorie **Cat-A**. Les filtres de la table **Product** sont ensuite propagés à la table **Sales** pour isoler seulement deux lignes de ventes de ces produits. Ces deux lignes de ventes représentent les ventes de produits relevant de la catégorie **Cat-A**. Leur quantité totale est de 14 unités. Dans le même temps, le filtre de la table **Year** est propagé pour filtrer un peu plus la table **Sales**, ce qui donne une seule ligne de vente pour les produits relevant de la catégorie **Cat-A** et qui ont été commandés au cours de l’année **CY2018**. La quantité retournée par la requête est de 11 unités. Il est à noter que lorsque plusieurs filtres sont appliqués à une table (comme la table **Sales** de cet exemple), il s’agit toujours d’une opération AND, qui exige que toutes les conditions soient remplies.
+Une requête, peut-être générée par un visuel de carte Power BI, demande les quantités totales vendues pour les commandes passées dans une catégorie unique, **Cat-A**, et pour une même année, **2018**. C’est pourquoi des filtres sont appliqués au niveau des tables **Catégorie** et **Année**. Le filtre au niveau de la table **Category** se propage à la table **Product** pour isoler deux produits relevant de la catégorie **Cat-A**. Les filtres de la table **Product** sont ensuite propagés à la table **Sales** pour isoler seulement deux lignes de ventes de ces produits. Ces deux lignes de ventes représentent les ventes de produits relevant de la catégorie **Cat-A**. Leur quantité totale est de 14 unités. Dans le même temps, le filtre de la table **Year** est propagé pour filtrer un peu plus la table **Sales**, ce qui donne une seule ligne de vente pour les produits relevant de la catégorie **Cat-A** et qui ont été commandés au cours de l’année **CY2018**. La quantité retournée par la requête est de 11 unités. Il est à noter que lorsque plusieurs filtres sont appliqués à une table (comme la table **Sales** de cet exemple), il s’agit toujours d’une opération AND, qui exige que toutes les conditions soient remplies.
 
 ### <a name="disconnected-tables"></a>Tables déconnectées
 
-Il est rare qu’une table de modèle ne soit pas associée à une autre table de modèle. Dans une conception de modèle valide, une telle table peut être décrite comme étant une _table déconnectée_. Une table déconnectée n’est pas destinée à propager des filtres à d’autres tables de modèle. Elle sert à recueillir des « entrées utilisateur » (peut-être avec un visuel de segment), ce qui permet aux calculs de modèle d’utiliser les valeurs d’entrée de façon utile. Prenons l’exemple d’une table déconnectée qui est chargée avec une plage de valeurs de taux de change monétaires. Pour autant qu’un filtre est appliqué pour filtrer en fonction d’une valeur de taux unique, la valeur peut être utilisée par une expression de mesure de façon à convertir les valeurs de ventes.
+Il est rare qu’une table de modèle ne soit pas associée à une autre table de modèle. Dans une conception de modèle valide, une telle table peut être décrite comme étant une _table déconnectée_. Une table déconnectée n’est pas destinée à propager des filtres à d’autres tables de modèle. Elle sert à recueillir des « entrées utilisateur » (peut-être avec un visuel de segment), ce qui permet aux calculs de modèle d’utiliser les valeurs d’entrée de façon utile. Prenons l’exemple d’une table déconnectée qui est chargée avec une plage de valeurs de taux de change monétaires. Tant qu’un filtre est appliqué pour filtrer en fonction d’une valeur de taux unique, la valeur peut être utilisée par une expression de mesure de façon à convertir les valeurs de ventes.
 
 Le paramètre de scénario (« what-if ») Power BI Desktop est la fonctionnalité qui crée une table déconnectée. Pour plus d’informations, consultez l’article [Créer et utiliser un paramètre de scénario pour visualiser des variables dans Power BI Desktop](desktop-what-if.md).
 
@@ -65,13 +65,13 @@ Les quatre types (et leurs notations raccourcies) sont décrits dans la liste à
 - Un-à-un (1:1)
 - Plusieurs-à-plusieurs (\*:\*)
 
-Quand vous créez une relation dans Power BI Desktop, le concepteur détecte et définit automatiquement le type de cardinalité. Pour cela, il interroge le modèle de façon à identifier les colonnes qui contiennent des valeurs uniques. Pour les modèles Importer, il utilise des statistiques de stockage internes ; pour les modèles DirectQuery, il envoie des requêtes de profilage à la source de données. Or, il arrive parfois qu’il commette des erreurs. Cela peut être le cas si les données n’ont pas encore été chargées dans les tables ou si les colonnes censées contenir des valeurs en double contiennent en fait des valeurs uniques. Dans les deux cas, vous pouvez mettre à jour le type de cardinalité à condition que des colonnes du côté « un » contiennent des valeurs uniques (ou que des lignes de données doivent encore être chargées dans la table).
+Quand vous créez une relation dans Power BI Desktop, le concepteur détecte et définit automatiquement le type de cardinalité. Il interroge le modèle de façon à identifier les colonnes qui contiennent des valeurs uniques. Pour les modèles Importer, il utilise des statistiques de stockage internes ; pour les modèles DirectQuery, il envoie des requêtes de profilage à la source de données. Or, il arrive parfois qu’il commette des erreurs. C’est dû au fait que les données n’ont pas encore été chargées dans les tables, ou que les colonnes censées contenir des valeurs en double contiennent en fait des valeurs uniques. Dans les deux cas, vous pouvez mettre à jour le type de cardinalité tant que des colonnes du côté « un » contiennent des valeurs uniques (ou que des lignes de données doivent encore être chargées dans la table).
 
 Les types de cardinalité **Un-à-plusieurs** et **Plusieurs-à-un** sont pour ainsi dire identiques, et ce sont aussi les plus courants.
 
 Au moment de configurer une relation Un-à-plusieurs ou Plusieurs-à-un, vous devez choisir celui qui correspond à l’ordre dans lequel vous avez associé les colonnes. Réfléchissez à la façon dont vous configureriez la relation entre la table **Product** et la table **Sales** à partir de la colonne **ProductID** commune à chaque table. Le type de cardinalité serait _Un-à-plusieurs_, car la colonne **ProductID** de la table **Product** contient des valeurs uniques. Si les tables étaient associées dans le sens inverse, de **Sales** à **Product**, la cardinalité serait _Plusieurs-à-un_.
 
-Une relation **Un-à-un** indique que les deux colonnes contiennent des valeurs uniques. Ce type de cardinalité n’est pas courant et ne correspond sûrement pas à une conception de modèle optimale du fait du stockage de données redondantes.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
+Une relation **Un-à-un** indique que les deux colonnes contiennent des valeurs uniques. Ce type de cardinalité n’est pas courant et ne correspond sûrement pas à une conception de modèle optimale du fait du stockage de données redondantes. Pour plus d’informations sur l’utilisation de ce type de cardinalité, consultez [Aide sur les relations un-à-un](guidance/relationships-one-to-one.md).
 
 Une relation **Plusieurs-à-plusieurs** signifie que les deux colonnes peuvent contenir des valeurs en double. Ce type de cardinalité n’est pas souvent employé. Il est généralement utile pour concevoir des modèles complexes. Pour obtenir des conseils sur l’utilisation de ce type de cardinalité, lisez les [conseils au sujet des relations Plusieurs-à-plusieurs](guidance/relationships-many-to-many.md).
 
@@ -95,13 +95,13 @@ La direction de filtrage croisé _Unique_ indique « une seule direction », t
 
 Pour les relations Un-à-plusieurs, la direction du filtrage croisé est toujours du côté « un » et éventuellement du côté « plusieurs » (bidirectionnelle). Pour les relations Un-à-un, la direction du filtrage croisé part toujours des deux tables. Enfin, pour les relations Plusieurs-à-plusieurs, la direction du filtrage croisé peut démarrer de l’une ou l’autre des tables ou des deux. Notez que lorsque le type de cardinalité comporte un côté « un », les filtres se propagent toujours de ce côté-là.
 
-Quand la direction du filtrage croisé définie est **Les deux**, une propriété supplémentaire permet d’appliquer le filtrage bidirectionnel quand des règles de sécurité au niveau des lignes (SNL) sont appliquées. Pour plus d’informations sur SNL, consultez l’article [Sécurité au niveau des lignes avec Power BI Desktop](desktop-rls.md).
+Lorsque la direction du filtrage croisé est définie sur **Les deux**, une propriété supplémentaire est disponible. Elle peut appliquer le filtrage bidirectionnel lorsque les règles de sécurité au niveau des lignes (RLS) sont appliquées. Pour plus d’informations sur RLS, consultez l’article [Sécurité au niveau des lignes (RLS) avec Power BI Desktop](desktop-rls.md).
 
 La modification de la direction du filtrage croisé des relations, notamment la désactivation de la propagation de filtre, peut être aussi être effectuée par un calcul de modèle. Pour ce faire, il convient d’utiliser la fonction DAX [CROSSFILTER](/dax/crossfilter-function).
 
 Les relations bidirectionnelles peuvent avoir un impact négatif sur les performances. De plus, toute tentative de configuration d’une relation bidirectionnelle peut engendrer des chemins de propagation de filtre ambigus. Dans ce cas, il se peut que Power BI Desktop ne puisse pas valider la modification de la relation et vous alerte avec un message d’erreur. Pourtant, il peut parfois arriver que Power BI Desktop vous autorise à définir des chemins de relation ambigus entre des tables. Les règles de précédence qui affectent la détection des ambiguïtés et la résolution des chemins sont décrites plus loin dans cet article dans la rubrique [Règles de précédence](#precedence-rules).
 
-L’utilisation du filtrage bidirectionnel n’est recommandée qu’en cas de nécessité.<!-- For guidance on bi-directional filtering, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
+L’utilisation du filtrage bidirectionnel n’est recommandée qu’en cas de nécessité. Pour plus d’informations, consultez [Guide des relations bidirectionnelles](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
 > Dans la vue de modèle Power BI Desktop, vous pouvez interpréter la direction du filtrage croisé d’une relation à partir des flèches située le long de la ligne de la relation. La présence d’une flèche simple indique un filtre à direction unique dans le sens de la flèche ; une flèche double indique une relation bidirectionnelle.
@@ -110,7 +110,7 @@ L’utilisation du filtrage bidirectionnel n’est recommandée qu’en cas de n
 
 Seul un chemin de propagation de filtre peut être actif entre deux tables de modèle. Il est toutefois possible d’introduire des chemins de relation supplémentaires, mais ces relations doivent toutes être configurées comme étant _inactives_. Les relations inactives ne peuvent être rendues actives qu’à l’occasion de l’évaluation du calcul d’un modèle. Pour ce faire, il convient d’utiliser la fonction DAX [USERELATIONSHIP](/dax/userelationship-function-dax).
 
-<!--For guidance on defining inactive relationships, see the [Active vs inactive relationship guidance](guidance/relationships-active-inactive) article.-->
+Pour plus d’informations, consultez [Guide des relations actives et inactives](guidance/relationships-active-inactive.md).
 
 > [!TIP]
 > Dans la vue de modèle Power BI Desktop, vous pouvez interpréter l’état actif ou inactif d’une relation. Une relation active est représentée par une ligne pleine ; une relation inactive est représentée par une ligne en pointillés.
@@ -119,7 +119,7 @@ Seul un chemin de propagation de filtre peut être actif entre deux tables de mo
 
 La propriété _Intégrité référentielle supposée_ est disponible uniquement pour les relations Un-à-plusieurs et Un-à-un entre deux tables en mode de stockage DirectQuery basées sur la même source de données. Quand elle est activée, les requêtes natives envoyées à la source de données joignent les deux tables en utilisant une jointure interne et non une jointure externe. En règle générale, l’activation de cette propriété a pour effet d’améliorer les performances des requêtes, même si celles-ci dépendent des spécificités de la source de données.
 
-Cette propriété doit toujours être activée quand il existe une contrainte de clé étrangère de base de données entre les deux tables. S’il n’existe pas de contrainte de clé étrangère, vous pouvez quand même activer la propriété si tant est que vous êtes certain que l’intégrité des données existe.
+Activez toujours cette propriété quand il y a une contrainte de clé étrangère de base de données entre les deux tables. S’il n’y a pas de contrainte de clé étrangère, vous pouvez quand même activer la propriété tant que vous êtes certain de l’intégrité des données.
 
 > [!IMPORTANT]
 > Si l’intégrité des données vient à être compromise, la jointure interne éliminera les lignes sans correspondance entre les tables. Par exemple, si une table de modèle **Sales** dont la colonne **ProductID** contient une valeur qui n’existe pas dans la table **Product** associée, la propagation de filtre de la table **Product** vers la table **Sales** élimine les lignes de ventes de produits inconnus et les résultats de ventes s’en trouvent sous-estimés.
@@ -146,7 +146,7 @@ Tout d’abord, une théorie de modélisation est nécessaire pour comprendre pa
 
 Un modèle Importer ou DirectQuery obtient toutes ses données du cache Vertipaq ou de la base de données source. Dans les deux cas, Power BI peut déterminer qu’il existe un côté « un » dans une relation.
 
-En revanche, un modèle Composite peut être constitué de tables qui utilisent différents modes de stockage (Importer, DirectQuery ou Double) ou plusieurs sources DirectQuery. Chaque source, dont le cache Vertipaq de données d’importation, est considérée comme un _îlot de données_. Les relations de modèle peuvent ensuite être classifiées comme étant _intra-îlot_ ou _inter-îlots_. Une relation intra-îlot établit un lien entre deux tables au sein d’un même îlot de données, alors qu’une relation inter-îlots établit un lien entre des tables issues de différents îlots de données. Notez que les relations dans les modèles Importer ou DirectQuery sont toujours de type intra-îlots.
+En revanche, un modèle Composite peut comprendre des tables qui utilisent différents modes de stockage (Importer, DirectQuery ou Double) ou plusieurs sources DirectQuery. Chaque source, dont le cache Vertipaq de données d’importation, est considérée comme un _îlot de données_. Les relations de modèle peuvent ensuite être classifiées comme étant _intra-îlot_ ou _inter-îlots_. Une relation intra-îlot établit un lien entre deux tables au sein d’un même îlot de données, alors qu’une relation inter-îlots établit un lien entre des tables issues de différents îlots de données. Notez que les relations dans les modèles Importer ou DirectQuery sont toujours de type intra-îlots.
 
 Penchons-nous sur un exemple de modèle Composite.
 
@@ -164,7 +164,7 @@ Dans l’exemple suivant, il existe deux relations fortes, toutes deux représen
 
 Pour les modèles Importer, où toutes les données sont stockées dans le cache Vertipaq, une structure de données est créée pour chaque relation forte au moment où les données sont actualisées. Les structures de données sont constituées de mappages indexés de toutes les valeurs de colonne à colonne, et leur objectif est d’accélérer la jointure des tables au moment de la requête.
 
-Au moment de la requête, les relations fortes autorisent une _extension de table_. L’extension de table entraîne la création d’une table virtuelle en incluant les colonnes natives de la table de base, puis en les développant dans les tables associées. Pour les tables d’importation, cette opération s’effectue dans le moteur de requête ; dans le cas des tables DirectQuery, cette opération s’effectue dans la requête native envoyée à la base de données source (à condition que la propriété « Intégrité référentielle supposée » n’est pas activée). Le moteur de requête agit ensuite sur la table étendue, en appliquant les filtres et en effectuant un regroupement en fonction des valeurs contenues dans les colonnes de la table étendue.
+Au moment de la requête, les relations fortes autorisent une _extension de table_. L’extension de table entraîne la création d’une table virtuelle en incluant les colonnes natives de la table de base, puis en les développant dans les tables associées. Pour les tables d’importation, cette opération s’effectue dans le moteur de requête ; dans le cas des tables DirectQuery, cette opération s’effectue dans la requête native envoyée à la base de données source (tant que la propriété **Intégrité référentielle supposée** n’est pas activée). Le moteur de requête agit ensuite sur la table étendue, en appliquant les filtres et en effectuant un regroupement en fonction des valeurs contenues dans les colonnes de la table étendue.
 
 > [!NOTE]
 > Les relations inactives sont aussi étendues, même quand la relation n’est pas utilisée par un calcul. Les relations bidirectionnelles n’ont aucun impact sur l’extension de table.
@@ -209,7 +209,7 @@ Les relations faibles s’accompagnent d’autres restrictions :
 Les relations bidirectionnelles peuvent introduire plusieurs chemins de propagation de filtre entre les tables de modèle (et donc des ambiguïtés). La liste suivante présente les règles de précédence que Power BI utilise pour la détection des ambiguïtés et la résolution des chemins :
 
 1. Relations Plusieurs-à-un et Un-à-un, ce qui inclut les relations faibles
-2. Relations Plusieurs-à-plusieurs
+2. Relations plusieurs-à-plusieurs
 3. Relations bidirectionnelles, dans le sens inverse (c’est-à-dire, à partir du côté « Plusieurs »)
 
 ### <a name="performance-preference"></a>Préférences en matière de performances
@@ -221,12 +221,16 @@ La liste suivante classe les performances de propagation de filtre, des plus rap
 3. Relations de modèle Plusieurs-à-plusieurs avec une table intermédiaire et impliquant au moins une relation bidirectionnelle
 4. Relations inter-ilôts
 
-<!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
-
 ## <a name="next-steps"></a>Étapes suivantes
 
+Pour plus d’informations sur cet article, consultez les ressources suivantes :
+
 - [Comprendre le schéma en étoile et son importance pour Power BI](guidance/star-schema.md)
+- [Aide pour la relation un-à-un](guidance/relationships-one-to-one.md)
 - [Conseils sur les relations Plusieurs-à-plusieurs](guidance/relationships-many-to-many.md)
-- Vidéo : [Les comportements appropriés et déconseillés concernant les relations Power BI](https://youtu.be/78d6mwR8GtA)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
+- [Aide pour les relations actives et inactives](guidance/relationships-active-inactive.md)
+- [Aide pour les relations bidirectionnelles](guidance/relationships-bidirectional-filtering.md)
+- [Aide à la résolution des problèmes de relations](guidance/relationships-troubleshoot.md)
+- Vidéo : [Les comportements appropriés et déconseillés concernant les relations Power BI](https://www.youtube.com/watch?v=78d6mwR8GtA)
+- Des questions ? [Essayer d’interroger la Communauté Power BI](https://community.powerbi.com/).
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

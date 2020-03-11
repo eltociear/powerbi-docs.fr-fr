@@ -40,9 +40,9 @@ Si vous avez plus de cinq éléments récemment visités, sélectionnez **Affich
 
 ## <a name="actions-available-from-the-recent-content-list"></a>Actions disponibles dans la liste des contenus **Récents**
 Les actions disponibles dépendent des paramètres affectés par le *concepteur* du contenu. Certaines de vos options peuvent inclure :
-* Sélectionnez l’icône représentant une étoile pour [ajouter un tableau de bord, un rapport ou une application dans les Favoris](end-user-favorite.md) ![icône d’étoile](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Sélectionnez l’étoile pour [ajouter un tableau de bord, un rapport ou une application aux favoris](end-user-favorite.md) ![étoile](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Certains tableaux de bord et rapports peuvent être repartagés  ![Icône de partage](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Ouvrir l’icône rapport dans Excel](end-user-export.md) ![icône Exporter vers Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Ouvrir le rapport dans Excel](end-user-export.md) ![icône Exporter vers Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Voir les insights](end-user-insights.md) que Power BI trouve dans les données ![icône Insights](./media/end-user-shared-with-me/power-bi-insights.png).
 * De plus, si vos listes s’allongent, [utilisez le champ de recherche et le tri pour trouver ce que vous cherchez](end-user-search-sort.md). Pour déterminer si une colonne peut être triée, pointez sur celle-ci pour voir si une flèche apparaît. Dans cet exemple, pointer sur **Dernier accès** fait apparaître une flèche : vos contenus récents peuvent être triés par date d’accès. 
 

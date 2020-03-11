@@ -27,7 +27,7 @@ Il existe de nombreux types de visuels accessibles directement dans le volet Vis
 
 ![volet avec des icônes pour chaque type de visualisation](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Pour avoir encore plus de choix, visitez le [site de la communauté Microsoft AppSource](https://appsource.microsoft.com) afin de rechercher et de [télécharger](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) des [visuels personnalisés](../developer/visuals/custom-visual-develop-tutorial.md) fournis par Microsoft et la communauté.
+Et pour encore plus de choix, visitez le [site de la communauté Microsoft AppSource](https://appsource.microsoft.com) pour rechercher et [télécharger](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [des visuels personnalisés](../developer/visuals/custom-visual-develop-tutorial.md) fournis par Microsoft et par la communauté.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 

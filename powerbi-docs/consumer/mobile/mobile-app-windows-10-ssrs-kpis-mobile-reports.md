@@ -35,7 +35,7 @@ Même si vous n’avez pas accès à un portail web Reporting Services, vous pou
 
 1. Sur votre appareil Windows 10, ouvrez l’application Power BI.
 2. Appuyez sur le bouton de navigation globale ![Bouton de navigation globale](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) en haut à gauche.
-3. Appuyez sur l’icône **Paramètres** ![Icône Paramètres](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), cliquez avec le bouton droit ou appuyez longuement sur **Se connecter au serveur**, puis appuyez sur **Afficher des exemples**.
+3. Appuyez sur l’icône **Paramètres**![Icône Paramètres](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png), cliquez avec le bouton droit ou appuyez longuement sur **Se connecter au serveur**, puis appuyez sur **Afficher des exemples**.
    
    ![Afficher les exemples SSRS](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-win10-connect-ssrs-samples.png)
 4. Ouvrez le dossier Retail Reports ou Sales Reports pour explorer les indicateurs de performance clés et les rapports mobiles.
@@ -45,7 +45,7 @@ Même si vous n’avez pas accès à un portail web Reporting Services, vous pou
 Parcourez les exemples pour interagir avec les indicateurs de performance clés et les rapports mobiles.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Se connecter à un serveur de rapports Reporting Services
-1. En bas du volet de navigation, appuyez sur **Paramètres** ![Icône Paramètres](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. En bas du volet de navigation, appuyez sur **Paramètres** ![Icône Paramètres](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Appuyez sur **Se connecter au serveur**.
 3. Renseignez l’adresse du serveur, ainsi que votre nom d’utilisateur et votre mot de passe. Utilisez ce format pour l’adresse du serveur :
    

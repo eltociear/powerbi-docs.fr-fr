@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527519"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260413"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
@@ -25,7 +25,7 @@ Cet article n’a pas pour but d’aborder par le menu la conception de schémas
 
 Le **schéma en étoile** est une approche de modélisation mature largement adoptée par les entrepôts de données relationnels. Les modélisateurs doivent classer leurs tables de modèle en tant que _table de dimension_ ou _table de faits_.
 
-**Les tables de dimension** décrivent les entités d’entreprise : les « choses » que vous modélisez. Les entités peuvent inclure des produits, des personnes, des lieux et des concepts, y compris le temps lui-même. La table la plus cohérente que vous trouverez dans un schéma en étoile est une table de dimension de date. Une table de dimension contient une ou plusieurs colonnes clés qui jouent le rôle d’identificateur unique et de colonnes descriptives.
+**Les tables de dimension** décrivent les entités d’entreprise : les _choses_ que vous modélisez. Les entités peuvent inclure des produits, des personnes, des lieux et des concepts, y compris le temps lui-même. La table la plus cohérente que vous trouverez dans un schéma en étoile est une table de dimension de date. Une table de dimension contient une ou plusieurs colonnes clés qui jouent le rôle d’identificateur unique et de colonnes descriptives.
 
 Les **tables de faits** stockent des observations ou des événements et peuvent être des commandes client, des soldes de stock, des taux de change, des températures, etc. Une table de faits contient des colonnes clés de dimension qui se rapportent aux tables de dimension et des colonnes de mesures numériques. Les colonnes clés de dimension déterminent la _dimensionnalité_ d’une table de faits, tandis que les valeurs clés de dimension déterminent sa _granularité_. Par exemple, imaginez une table de faits conçue pour stocker des cibles de ventes qui a deux colonnes clés de dimension : **Date** et **ProductKey**. Il est facile de comprendre que la table a deux dimensions. Toutefois, vous ne pouvez pas déterminer la granularité sans tenir compte des valeurs clés de dimension. Dans cet exemple, supposez que les valeurs stockées dans la colonne **Date** sont le premier jour de chaque mois. Dans ce cas, la granularité se situe au niveau produit/mois.
 
@@ -42,11 +42,11 @@ Tenez compte du fait que chaque visuel de rapport Power BI génère une requête
 - Les tables de dimension prennent en charge le _filtrage_ et le _regroupement_.
 - Les tables de faits prennent en charge la _totalisation_.
 
-Bien que les modélisateurs ne définissent aucune propriété de table pour configurer le type de table (dimension ou fait), ce dernier est déterminé par les relations de modèle. Une relation de modèle établit un chemin de propagation de filtre entre deux tables, et c’est la propriété de **cardinalité** de la relation qui détermine le type de table. Une cardinalité de relation courante est « un-à-plusieurs » ou son opposé « plusieurs-à-un ». Le côté « un » est toujours une table de type dimension, tandis que le côté « plusieurs » est toujours une table de type fait.
+Aucune propriété de table n’est définie par les modeleurs pour configurer le type de table en tant que dimension ou que fait. En fait, c’est déterminé par les relations de modèle. Une relation de modèle établit un chemin de propagation de filtre entre deux tables, et c’est la propriété de **cardinalité** de la relation qui détermine le type de table. Une cardinalité de relation courante est _un-à-plusieurs_ ou son opposé, _plusieurs-à-un_. Le côté « un » est toujours une table de type dimension, tandis que le côté « plusieurs » est toujours une table de type fait. Pour plus d’informations sur les relations, consultez [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md).
 
 ![Schéma en étoile conceptuel](media/star-schema/star-schema-example2.png)
 
-Une conception de modèle bien structurée doit inclure des tables de type dimension ou de type fait. Vous devez éviter de combiner les deux types pour une même table. Nous vous recommandons également de faire votre possible pour fournir le bon nombre de tables avec les bonnes relations en place. Il est également important que les tables de type fait chargent toujours les données avec une granularité cohérente.
+Une conception de modèle bien structurée doit inclure des tables de type dimension ou de type fait. Évitez de combiner les deux types pour une même table. Nous vous recommandons également de faire votre possible pour fournir le bon nombre de tables avec les bonnes relations en place. Il est également important que les tables de type fait chargent toujours les données avec une granularité cohérente.
 
 Enfin, il est important de comprendre que la conception optimale du modèle relève pour partie de la science et pour partie de l’art. N’hésitez pas à vous écarter des recommandations habituelles si cela est judicieux.
 
@@ -73,17 +73,17 @@ Il est important de comprendre que les modèles Power BI prennent en charge une 
 
 Toutefois, il existe trois raisons impérieuses de créer des mesures, même pour des totalisations simples au niveau des colonnes :
 
-- Quand vous savez que vos auteurs de rapports sont susceptibles d’interroger le modèle en utilisant [MDX (expressions multidimensionnelles)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), le modèle doit inclure des _mesures explicites_. Les mesures explicites sont définies en utilisant DAX. Cette approche de conception est très appropriée quand un jeu de données Power BI est interrogé avec MDX, car MDX ne peut pas totaliser les valeurs de colonne. MDX est notamment utilisé avec [Analyser dans Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (les tableaux croisés dynamiques émettent des requêtes MDX).
+- Quand vous savez que vos auteurs de rapports sont susceptibles d’interroger le modèle en utilisant [MDX (expressions multidimensionnelles)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), le modèle doit inclure des _mesures explicites_. Les mesures explicites sont définies en utilisant DAX. Cette approche de conception est très appropriée quand un jeu de données Power BI est interrogé avec MDX, car MDX ne peut pas totaliser les valeurs de colonne. MDX est notamment utilisé avec [Analyser dans Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), car PivotTables émet des requêtes MDX.
 - Quand vous savez que vos auteurs de rapports sont susceptibles de créer des rapports paginés Power BI à l’aide du concepteur de requêtes MDX, le modèle doit inclure des mesures explicites. Seul le concepteur de requêtes MDX prend en charge les [agrégats de serveur](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Par conséquent, si les auteurs de rapports doivent faire évaluer les mesures par Power BI (et non par le moteur de rapport paginé), ils doivent utiliser le concepteur de requêtes MDX.
 - Si vous devez vous assurer que vos auteurs de rapports peuvent uniquement totaliser des colonnes de manière spécifique. Par exemple, la colonne **Unit Price** de la table Reseller Sales (qui représente un tarif par unité) peut être totalisée, mais uniquement à l’aide de fonctions d’agrégation spécifiques. Elle ne doit jamais être cumulée, mais il est approprié de la totaliser à l’aide d’autres fonctions d’agrégation (valeur minimale, valeur minimale, moyenne, etc.). Dans ce cas, le modélisateur peut masquer la colonne **Unit Price** et créer des mesures pour toutes les fonctions d’agrégation appropriées.
 
-Notez que cette approche de conception fonctionne bien pour les rapports créés dans le service Power BI et pour Questions et réponses. Toutefois, les connexions actives Power BI Desktop permettent aux auteurs de rapports d’afficher les champs masqués dans le volet **Champs**, ce qui peut entraîner le contournement de cette approche de conception.
+Cette approche de conception fonctionne bien pour les rapports créés dans le service Power BI et pour Questions et réponses. Toutefois, les connexions actives Power BI Desktop permettent aux auteurs de rapports d’afficher les champs masqués dans le volet **Champs**, ce qui peut entraîner le contournement de cette approche de conception.
 
 ## <a name="surrogate-keys"></a>Clés de substitution
 
 Une **clé de substitution** est un identificateur unique que vous ajoutez à une table pour prendre en charge la modélisation de schémas en étoile. Par définition, elle n’est ni définie ni stockée dans les données sources. En règle générale, les clés de substitution sont ajoutées aux tables de dimension des entrepôts de données relationnels afin de fournir un identificateur unique pour chaque ligne de la table de dimension.
 
-Les relations des modèles Power BI sont basées sur une seule colonne unique dans une table, qui propage les filtres à une colonne unique dans une autre table. Quand une table de type dimension dans votre modèle n’inclut pas de colonne unique, vous devez ajouter un identificateur unique en guise de côté « un » d’une relation. Dans Power BI Desktop, vous pouvez facilement y parvenir en créant une [colonne d’index Power Query](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Les relations des modèles Power BI sont basées sur une seule colonne unique dans une table, qui propage les filtres à une colonne unique dans une autre table. Quand une table de type dimension dans votre modèle n’inclut pas de colonne unique, vous devez ajouter un identificateur unique en guise de côté « un » d’une relation. Dans Power BI Desktop, vous pouvez facilement remplir cette exigence en créant une [colonne d’index Power Query](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
 
 ![Créer une colonne d’index dans la barre d’outils Power Query](media/star-schema/toolbar-index.png)
 
@@ -118,7 +118,7 @@ La théorie de la conception de schémas en étoile fait référence à deux typ
 
 ### <a name="type-1-scd"></a>SCD de type 1
 
-Une **SCD** de **Type 1** reflète toujours les valeurs les plus récentes ; ainsi, quand des modifications sont détectées dans les données sources, les données de la table de dimension sont simplement remplacées. Cette approche de conception est courante pour les colonnes qui stockent des valeurs complémentaires, telles que l’adresse e-mail ou le numéro de téléphone d’un client. Quand l’adresse e-mail ou le numéro de téléphone d’un client change, la table de dimension met à jour la ligne du client avec les nouvelles valeurs. C’est comme si le client avait toujours eu ces informations de contact.
+Une **SCD** de **Type 1** reflète toujours les valeurs les plus récentes ; ainsi, quand des modifications sont détectées dans les données sources, les données de la table de dimension sont remplacées. Cette approche de conception est courante pour les colonnes qui stockent des valeurs complémentaires, telles que l’adresse e-mail ou le numéro de téléphone d’un client. Quand l’adresse e-mail ou le numéro de téléphone d’un client change, la table de dimension met à jour la ligne du client avec les nouvelles valeurs. C’est comme si le client avait toujours eu ces informations de contact.
 
 Une actualisation non incrémentielle d’une table de type dimension du modèle Power BI atteint le résultat d’une SCD de type 1. Elle actualise les données de la table afin que les valeurs les plus récentes soient chargées.
 
@@ -166,6 +166,8 @@ Observez les bonnes pratiques de conception suivantes quand vous créez des tabl
 - Assurez-vous que les noms de colonne sont explicites. Bien qu’il soit possible d’avoir une colonne **Year** dans toutes les tables de dates (les noms de colonnes sont uniques dans la table concernée), ce n’est pas explicite à l’échelle des titres de visuels par défaut. Envisagez de renommer les colonnes dans chaque table de rôle de dimension, afin que la table **Ship Date** ait une colonne d’années nommée **Ship Year**, et ainsi de suite.
 - Le cas échéant, vérifiez que les descriptions de table fournissent des commentaires aux auteurs de rapports (par le biais des info-bulles du volet **Champs**) sur la façon dont la propagation de filtre est configurée. Cette clarté est importante quand le modèle contient une table nommée de façon générique, comme **Date**, qui est utilisée pour filtrer de nombreuses tables de type fait. Dans le cas où cette table a, par exemple, une relation active avec la colonne des dates de commandes client des revendeurs, envisagez de fournir une description de table telle que « Filtre les ventes des revendeurs par date de commande ».
 
+Pour plus d’informations, consultez [Guide des relations actives et inactives](relationships-active-inactive.md).
+
 ## <a name="junk-dimensions"></a>Dimensions fourre-tout
 
 Une **dimension fourre-tout** est utile quand il existe de nombreuses dimensions, en particulier composées de quelques attributs (peut-être un seul) ayant peu de valeurs. Les colonnes d’état des commandes ou les colonnes de données démographiques sur les clients (sexe, tranche d’âge, etc.) sont de bons candidats.
@@ -186,6 +188,8 @@ Dans le modèle Power BI, il peut être approprié d’ajouter la colonne des nu
 
 ![Exemple de dimension de fait](media/star-schema/degenerate-dimension.png)
 
+Pour plus d’informations, consultez l’[Aide sur les relations un-à-un (dégénérer les dimensions)](relationships-one-to-one.md#degenerate-dimensions).
+
 ## <a name="factless-fact-tables"></a>Tables de faits sans faits
 
 Une **table de faits sans faits** n’inclut aucune colonne de mesure. Elle contient uniquement des clés de dimension.
@@ -198,7 +202,7 @@ Par exemple, considérez que les vendeurs peuvent être attribués à une _ou pl
 
 ![Exemple de table de faits sans faits](media/star-schema/factless-fact.png)
 
-Cette approche de conception plusieurs-à-plusieurs est bien documentée et peut être obtenue sans table de pontage. Toutefois, l’approche de table de pontage est considérée comme la meilleure pratique lors de la liaison de deux dimensions. Pour plus d’informations, consultez [Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
+Cette approche de conception plusieurs-à-plusieurs est bien documentée et peut être obtenue sans table de pontage. Toutefois, l’approche de table de pontage est considérée comme la meilleure pratique lors de la liaison de deux dimensions. Pour plus d’informations, consultez l’[aide sur les relations plusieurs-à-plusieurs (associer deux tables de type dimension)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -206,6 +210,9 @@ Pour plus d’informations sur la conception du schéma en étoile ou sur la con
 
 - [Article Wikipedia sur la modélisation dimensionnelle](https://go.microsoft.com/fwlink/p/?linkid=246459)
 - [Créer et gérer des relations dans Power BI Desktop](../desktop-create-and-manage-relationships.md)
-- [Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop](../desktop-many-to-many-relationships.md)
-- [Expérience d’apprentissage guidé - Modélisation](/learn/modules/model-data-power-bi/)
+- [Aide pour la relation un-à-un](relationships-one-to-one.md)
+- [Conseils sur les relations Plusieurs-à-plusieurs](relationships-many-to-many.md)
+- [Aide pour les relations bidirectionnelles](relationships-bidirectional-filtering.md)
+- [Aide pour les relations actives et inactives](relationships-active-inactive.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

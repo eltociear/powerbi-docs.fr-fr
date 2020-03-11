@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
-ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.date: 03/02/2020
+ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819534"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237957"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -24,6 +24,14 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 
 ## <a name="january-2020"></a>Janvier 2020
 - **Power BI Report Server**
+    - *Version : 1.6.7364.4075 (build 15.0.1102.777), date de publication : 2 mars 2020*
+         - Résolutions de bogues
+           -  Correctif pour les rapports de Power BI qui ne sont pas téléchargés pour certaines sources de données
+           -  Correctif pour l’emplacement de téléchargement du lien de Power BI Report Server à partir du portail
+           -  Correctif pour le rendu Excel de DynamicImageDPI
+           -  Correctif des connexions Oracle utilisant une culture de thread incorrecte dans certains scénarios multi-utilisateurs
+           -  Correctif pour la valeur par défaut CustomHeaders provoquant des échecs d’incorporation de rapports
+           -  Correctif pour les noms de paramètres SQL générés de manière incorrecte dans certains cas
     - *Version : 1.6.7327.3007 (build 15.0.1102.759), date de publication : 23 janvier 2020*
          - Fonctionnalités
             -  Exportation vers Excel à partir de rapports Power BI.

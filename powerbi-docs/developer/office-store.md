@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 02/13/2020
-ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: 3f27c32442ecf3c70c3dc3e7d070fcc8bf14d7b1
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576801"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237865"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -37,8 +37,8 @@ Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il r�
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez aider les utilisateurs à se familiariser avec ce visuel. Insistez sur la valeur que le visuel apporte à l’utilisateur et donnez des exemples d’utilisation et d’options de mise en forme. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, et expliquez ce qu’il faut éviter de faire.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe. |
 | Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 300 px (largeur) x 300 px (hauteur).<BR>**Important :** Lisez attentivement le [guide des images du magasin AppSource](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Fournissez au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être exactement 1 366 px (largeur) par 768 px (hauteur). La taille du fichier ne doit pas dépasser 1024 ko.<br>Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran. |
-| Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
-| Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
+| Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans votre liste dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
+| Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans votre liste dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
 | Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez fournir un fichier CLUF pour votre élément visuel Power BI. |
 | Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, fournissez un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou https://. |
 | Dépôt GitHub |Non |Partagez un lien public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel Power BI et des échantillons de données. Cela permet à d'autres développeurs de vous transmettre leurs commentaires et des suggestions pour améliorer votre code. |
@@ -74,9 +74,6 @@ L'équipe Power BI doit vérifier les fichiers de chaque soumission d’un nouv
 Pour soumettre votre visuel Power BI à l’Espace partenaires, vous devez y être inscrit. Si vous n'êtes pas encore inscrit, [ouvrez un compte développeur dans l’Espace partenaires](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espace partenaires. Pour plus d'informations sur le processus de soumission, voir [Soumettre votre solution Office à AppSource via l’Espace partenaires](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
-
->[!NOTE]
-> Si un processus de soumission d’un visuel Power BI est en cours et que vous devez utiliser le [tableau de bord du vendeur](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (l’ancien outil de gestion), passez en revue les instructions de la section [Soumettre un visuel Power BI à AppSource à l'aide du tableau de bord vendeur](seller-dashboard.md).
 
 1. Connectez-vous à l’**Espace partenaires**.
 

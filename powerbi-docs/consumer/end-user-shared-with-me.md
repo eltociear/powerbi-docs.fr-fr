@@ -42,10 +42,10 @@ Des options vous permettent d’interagir avec les tableaux de bord et les rappo
 
 ### <a name="actions-available-from-the-shared-with-me-container"></a>Actions disponibles à partir du conteneur **Partagés avec moi**
 Les actions disponibles dépendent des paramètres affectés par le *concepteur* du contenu. Certaines de vos options peuvent inclure :
-* Sélectionnez l’icône représentant une étoile pour [ajouter un rapport ou un tableau de bord dans les Favoris](end-user-favorite.md) ![icône d’étoile](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Sélectionnez l’icône représentant une étoile pour [ajouter un rapport ou un tableau de bord aux favoris](end-user-favorite.md) ![Icône Étoile](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Supprimer un tableau de bord ou un rapport  ![icône de Corbeille](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Certains tableaux de bord et rapports peuvent être repartagés  ![Icône de partage](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Ouvrir l’icône rapport dans Excel](end-user-export.md) ![icône Exporter vers Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Ouvrir le rapport dans Excel](end-user-export.md) ![icône Exporter vers Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Voir les insights](end-user-insights.md) que Power BI trouve dans les données ![icône Insights](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]

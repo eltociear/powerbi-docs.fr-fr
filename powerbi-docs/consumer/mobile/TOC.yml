@@ -7,6 +7,8 @@
       items:
         - name: Présentation des applications mobiles
           href: mobile-apps-for-mobile-devices.md
+        - name: Nouveautés des applications mobiles
+          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Présentation de la page d’accueil
           href: mobile-apps-home-page.md
     - name: Guides de démarrage rapide
@@ -22,8 +24,6 @@
     - name: Concepts
       expanded: true
       items:
-        - name: Nouveautés des applications mobiles
-          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Obtenir des données réelles avec les applications mobiles
           href: mobile-apps-data-in-real-world-context.md
         - name: Voir vos données hors connexion dans les applications mobiles
@@ -44,8 +44,6 @@
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Favoris dans les applications mobiles
               href: mobile-apps-favorites.md
-            - name: Configurer les paramètres d’interaction (téléphone uniquement)
-              href: mobile-app-interaction-settings.md
             - name: "Définir des alertes de données dans les applications mobiles Power\_BI"
               href: mobile-set-data-alerts-in-the-mobile-apps.md
             - name: "Obtenir des notifications dans les applications mobiles Power\_BI"
@@ -70,6 +68,8 @@
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: "Scanner un code-barres à partir de l’application mobile Power\_BI"
               href: mobile-apps-scan-barcode-iphone.md
+            - name: Configurer les paramètres d’interaction
+              href: mobile-app-interaction-settings.md
             - name: Configurer avec la gestion des appareils mobiles
               href: mobile-app-configuration.md
         - name: iOS
@@ -100,7 +100,7 @@
               href: mobile-windows-10-phone-app-get-started.md
             - name: Épingler un tableau de bord à l’écran d’accueil
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services
+            - name: Afficher les rapports locaux et les indicateurs de performance clés
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Afficher Power BI sur Surface Hub
               href: mobile-windows-10-app-presentation-mode.md

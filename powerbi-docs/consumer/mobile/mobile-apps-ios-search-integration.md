@@ -44,7 +44,7 @@ La fonction de recherche (une technologie Siri) inclut également des suggestion
 
 >[!NOTE]
 >
->Pour désactiver la fonction de recherche et les suggestions de Siri, accédez à **Réglages** > **Paramètres Power BI** > **Siri et recherche**, puis désactivez le paramètre **Siri et suggestions**.
+>Pour désactiver la fonction de recherche et les suggestions de Siri, accédez à **Paramètres de l’appareil** > **Paramètres Power BI** > **Siri et recherche**, puis désactivez le paramètre **Siri et suggestions**.
 >
 
 ## <a name="next-steps"></a>Étapes suivantes

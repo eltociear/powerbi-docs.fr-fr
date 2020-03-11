@@ -66,6 +66,8 @@
               href: end-user-powerpoint.md
             - name: Ajouter un signet à un rapport
               href: end-user-bookmarks.md
+            - name: Ajouter un titre à la une à un visuel
+              href: end-user-spotlight.md
             - name: Rapports paginés dans Power BI
               items:
                 - name: Rapports paginés
@@ -116,6 +118,8 @@
               href: end-user-notification-center.md
         - name: Obtenir des données
           items:
+            - name: Espaces de travail dans Power BI
+              href: end-user-workspaces.md
             - name: "Applications dans Power\_BI"
               href: end-user-apps.md
             - name: Installer et utiliser des applications

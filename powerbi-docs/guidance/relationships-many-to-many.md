@@ -6,23 +6,20 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161291"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260444"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 
 Cet article s’adresse principalement aux modélisateurs de données qui utilisent Power BI Desktop. Il décrit trois scénarios de modélisation plusieurs à plusieurs différents. Il vous fournit également des conseils sur la façon de les concevoir correctement dans vos modèles.
 
-> [!NOTE]
-> La présentation des relations de modèle n’est pas abordée dans cet article. Si vous ne connaissez pas bien les relations, leurs propriétés ni la façon de les configurer, nous vous recommandons de lire d’abord l’article [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md).
->
-> Il est également important de comprendre la conception de schémas en étoile. Pour plus d’informations, consultez [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md).
+[!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
 Il existe, en fait, trois scénarios plusieurs à plusieurs. Ils peuvent se dérouler quand vous devez :
 
@@ -164,7 +161,7 @@ Le visuel présente un résultat précis. Toutefois, l’utilité du modèle est
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Conseils sur l’association des faits plusieurs à plusieurs
 
-En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation faible_. Pour plus d’informations, consultez [Évaluation des relations](../desktop-relationships-understand.md#relationship-evaluation).
+En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation faible_. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 Au lieu d’associer directement les tables de type fait, nous vous recommandons d’adopter les principes de conception de [schémas en étoile](star-schema.md). Pour ce faire, vous devez ajouter des tables de type dimension. Les tables de type dimension sont ensuite associées aux tables de type fait à l’aide de relations de type un à plusieurs. Cette approche de conception est fiable, car elle offre des options de création de rapports flexibles. Elle vous permet de filtrer ou de regrouper en utilisant n’importe quelle colonne de type dimension et de récapituler toute table de type fait associée.
 
@@ -187,7 +184,7 @@ Si vous prenez le temps d’appliquer les principes de conception de schémas en
 - Vos visuels de rapport peuvent _filtrer ou regrouper_ selon n’importe quelle colonne visible à partir des tables de type dimension
 - Vos visuels de rapport peuvent _récapituler_ toute colonne visible à partir des tables de type fait
 - Les filtres appliqués aux tables **OrderLine**, **OrderDate** ou **Product** sont propagés aux deux tables de type fait
-- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation solide_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Évaluation des relations](../desktop-relationships-understand.md#relationship-evaluation).
+- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation solide_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Associer des faits de niveau plus général
 
@@ -300,4 +297,6 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 
 - [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md)
 - [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md)
+- [Aide à la résolution des problèmes de relations](relationships-troubleshoot.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
