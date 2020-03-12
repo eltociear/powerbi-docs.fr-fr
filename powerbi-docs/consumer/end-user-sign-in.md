@@ -7,17 +7,19 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f48ae801944e3f27045a038c13d394c21225468
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 753458b4db621fff5a4bba4aebb96543284013ff
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77153979"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114101"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Se connecter au service Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 ## <a name="power-bi-accounts"></a>Comptes Power BI
 Pour pouvoir vous connecter à Power BI, vous avez besoin d’un compte. Deux façons vous permettent d’obtenir un compte Power BI. La première est quand votre entreprise achète des licences Power BI pour ses employés. La seconde est quand des particuliers s’inscrivent à des essais gratuits ou achètent des licences personnelles. Cet article aborde le premier scénario.

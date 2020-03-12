@@ -1,19 +1,19 @@
 ---
 title: Épingler un tableau de bord à l’écran de démarrage Windows 10 - Application mobile Power BI
 description: Découvrez comment épingler un tableau de bord Power BI à l’écran d’accueil Windows 10 à partir de l’application mobile Power BI de façon à voir toutes vos mesures critiques en un coup d’œil.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 556ca293458c6874097a4733aaed453130778848
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 6abeb9244b4ced7cf0b56d4f01686f570c474989
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869865"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114936"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Épingler un tableau de bord à l’écran d’accueil Windows 10 à partir de l’application mobile Power BI
 Vous pouvez épingler des tableaux de bord Power BI à l’écran d’accueil de Windows à partir de l’application mobile Power BI pour Windows 10. Ils deviennent des *vignettes dynamiques*. Lorsque vous appuyez sur la vignette sur l’écran d’accueil, le tableau de bord s’ouvre dans l’application mobile Power BI pour Windows 10.
