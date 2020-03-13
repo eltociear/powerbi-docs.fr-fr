@@ -129,6 +129,8 @@
               href: ../desktop-insights-find-where-different.md
             - name: Créer des boutons
               href: ../desktop-buttons.md
+            - name: Créer des boutons d’extraction
+              href: ../desktop-drill-through-buttons.md
             - name: Créer des signets pour enregistrer et partager des insights
               href: ../desktop-bookmarks.md
             - name: Utiliser des thèmes de rapport

@@ -10,11 +10,11 @@ ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
 ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870888"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79213600"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 
@@ -38,7 +38,7 @@ Ce livre blanc couvre tous les détails dont vous avez besoin pour comprendre l�
 > [!NOTE]
 > Tout au long de ce livre blanc, nous faisons référence à Azure Active Directory en tant que Azure AD et Azure Active Directory entreprise en tant que Azure AD B2B.
 
-## <a name="scenarios"></a>Scénario
+## <a name="scenarios"></a>Scénarios
 
 Contoso est un constructeur automobile et travaille avec de nombreux fournisseurs divers qui lui fournissent tous les composants, documents et services nécessaires pour exécuter ses opérations de fabrication. Contoso souhaite simplifier sa logistique de chaîne logistique et envisage d’utiliser Power BI pour surveiller les principales mesures de performance de sa chaîne logistique. Contoso souhaite partager des analyses avec les partenaires de la chaîne logistique externe de manière sécurisée et gérable.
 
@@ -218,7 +218,7 @@ L’intégration de Power BI à Azure AD B2B offre à contoso un moyen simple et
 
 - L’équipe BI de contoso crée un espace de travail dans Power BI
 
-    ![Travail](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
+    ![workspace](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
 
 - D’autres auteurs sont ajoutés à l’espace de travail
@@ -306,7 +306,7 @@ L’intégration de Power BI à Azure AD B2B offre à contoso un moyen simple et
 
     Les utilisateurs invités peuvent ensuite accéder à l’application de contoso en cliquant sur le lien dans le message électronique ou en signet le lien. Contoso peut également faciliter l’utilisation des utilisateurs invités en ajoutant ce lien à n’importe quel portail extranet existant déjà utilisé par les utilisateurs invités.
 
-4. Étapes suivantes
+4. Étapes suivantes :
 
     À l’aide d’une application Power BI et Azure AD B2B, Contoso a pu créer rapidement un portail BI pour ses fournisseurs sans code. Cela simplifie considérablement la distribution d’analyses standardisées à tous les fournisseurs qui en ont besoin.
 
@@ -331,12 +331,12 @@ L’intégration de Power BI avec Azure AD B2B fonctionne avec toutes les adress
 
 Il est important de reconnaître que le compte de Azure AD est utilisé ou créé dans le Azure AD du tiers externe, ce qui permet à Lucy d’utiliser leurs propres nom d’utilisateur et mot de passe et leurs informations d’identification cessent de fonctionner dans d’autres locataires quand Lucy quitte l’entreprise quand son organisation utilise également Azure AD.
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Gestion des licences
 
 Contoso peut choisir l’une des trois approches suivantes : les utilisateurs invités titulaires d’une licence de leurs fournisseurs et organisations partenaires ont accès au contenu Power BI.
 
 > [!NOTE]
-> _Le niveau gratuit Azure ad B2B’s est suffisant pour utiliser Power bi avec Azure ad B2B. Certaines fonctionnalités avancées Azure AD B2B comme les groupes dynamiques requièrent des licences supplémentaires. Pour plus d’informations, reportez-vous à la documentation Azure ad B2B :_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Le niveau gratuit Azure ad B2B’s est suffisant pour utiliser Power bi avec Azure ad B2B. Certaines fonctionnalités avancées Azure AD B2B comme les groupes dynamiques requièrent des licences supplémentaires. Pour plus d’informations, reportez-vous à la documentation Azure ad B2B :_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Approche 1 : Contoso utilise Power BI Premium
 
@@ -517,7 +517,7 @@ Certaines expériences ne sont pas disponibles pour les utilisateurs invités au
 
 
 
-## <a name="governance"></a>Governance
+## <a name="governance"></a>Gouvernance
 
 ### <a name="additional-azure-ad-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b"></a>Paramètres de Azure AD supplémentaires qui affectent les expériences de Power BI relatives à Azure AD B2B
 
@@ -586,7 +586,7 @@ Dans l’exemple ci-dessus, les utilisateurs de chaque fournisseur se connectent
 
 Dans l’application Web, Power BI rapports sont incorporés à partir d’un déploiement Power BI Embedded. L’application Web permet de rationaliser l’accès aux rapports et aux services associés dans une expérience cohérente visant à faciliter l’interaction des fournisseurs avec contoso. Cet environnement de portail est isolé des environnements Azure Internal AAD et de l’environnement de Power BI interne de contoso pour s’assurer que les fournisseurs n’ont pas pu accéder à ces ressources. En règle générale, les données sont stockées dans un entrepôt de données partenaire distinct pour assurer également l’isolation des données. Cette isolation présente des avantages, car elle limite le nombre d’utilisateurs externes avec un accès direct aux données de votre organisation, en limitant les données susceptibles d’être disponibles pour l’utilisateur externe et en limitant le partage accidentel avec les utilisateurs externes.
 
-À l’aide de Power BI Embedded, le portail peut tirer parti d’une licence avantageuse, à l’aide d’un jeton d’application ou de l’utilisateur principal, ainsi que de la capacité Premium achetée dans le modèle Azure, ce qui simplifie l’attribution de licences aux utilisateurs finaux et peut être mis à l’échelle en fonction des attentes syntaxe. Le portail peut offrir une meilleure qualité et une expérience cohérente dans la mesure où les partenaires accèdent à un portail unique, conçu pour répondre à tous les besoins d’un partenaire. Enfin, étant donné que les solutions Power BI Embedded sont généralement conçues pour être multi-locataires, il est plus facile de garantir l’isolation entre les organisations partenaires.
+À l’aide de Power BI Embedded, le portail peut tirer parti d’une licence avantageuse, à l’aide d’un jeton d’application ou de l’utilisateur principal, ainsi que de la capacité Premium achetée dans le modèle Azure, ce qui simplifie l’attribution de licences aux utilisateurs finaux et peut être mis à l’échelle en fonction de l’utilisation prévue. Le portail peut offrir une meilleure qualité et une expérience cohérente dans la mesure où les partenaires accèdent à un portail unique, conçu pour répondre à tous les besoins d’un partenaire. Enfin, étant donné que les solutions Power BI Embedded sont généralement conçues pour être multi-locataires, il est plus facile de garantir l’isolation entre les organisations partenaires.
 
 Pourquoi choisir cette alternative :
 
@@ -606,7 +606,7 @@ Pourquoi ne pas choisir cette alternative :
 
 
 
-## <a name="faq"></a>FORUM AUX QUESTIONS
+## <a name="faq"></a>FAQ
 
 **Est-ce que contoso peut envoyer une invitation qui est automatiquement échangée, de sorte que l’utilisateur soit simplement « prêt à l’emploi » ? Ou l’utilisateur doit-il toujours cliquer sur l’URL d’échange ?**
 
