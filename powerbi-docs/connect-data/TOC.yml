@@ -46,6 +46,8 @@
           href: ../power-bi-data-sources.md
         - name: Conditions préalables de source de données Power BI
           href: ../desktop-data-source-prerequisites.md
+        - name: Utilisation de métadonnées de jeu de données avancées dans Power BI Desktop (préversion)
+          href: ../desktop-enhanced-dataset-metadata.md
         - name: Utiliser des modèles multidimensionnels dans Power BI
           href: ../desktop-default-member-multidimensional-models.md
         - name: À propos de l’utilisation de DirectQuery dans Power BI
