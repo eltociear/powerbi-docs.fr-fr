@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537804"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040095"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -22,7 +22,9 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 ## <a name="a"></a>A
 
-**account (compte)** Il existe différents types de comptes Power BI.  Un compte Power BI Pro est un abonnement mensuel payant.  Un compte Power BI gratuit permet de voir le contenu qui est hébergé sur une capacité Power BI Premium.  
+**account (compte)** Il existe différents types de comptes Power BI, également appelés *licences*.  Les comptes sont : par utilisateur ou par organisation. Les comptes par utilisateur sont disponibles sous forme *gratuit* ou *Pro*.  Un utilisateur *gratuit* Power BI utilise Power BI Desktop autonome ou utilise le service Power BI au sein d’un compte d’organisation Premium. Le compte *Pro* par utilisateur Power BI est un abonnement mensuel payant qui permet la collaboration et le partage de contenu avec d’autres utilisateurs *Pro*. 
+
+Le compte *Premium* d’organisation (également connu sous le nom de *capacité Premium*) ajoute une couche de fonctionnalités en plus des licences par utilisateur. Par exemple, des détenteurs de compte par utilisateur *gratuit* au sein d’une organisation disposant d’une licence *Premium*, sont en mesure d’en faire plus avec Power BI que les utilisateurs *gratuit* sans *Premium*. Par exemple, les utilisateurs *gratuit* dans des comptes d’organisation *Premium*, peuvent collaborer avec des collègues et afficher du contenu hébergé sur la capacité Power BI Premium.  
 
 **admin portal (portail d’administration)** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Office 365, Azure et PowerApps utilisent le centre d’administration.)
 
@@ -170,6 +172,8 @@ Contrôles le long du bord gauche du service Power BI.
 
 Première occurrence : volet de navigation. Occurrences suivantes ou espaces étroits : volet de navigation
 
+**licence** Voir *account (compte)* .
+
 **list page (page de liste)** ou **content list (liste de contenu)** Une des pages de section pour les éléments dans le volet de navigation. Par exemple, Favoris, Récents, Mon espace de travail, etc.
 
 ## <a name="m"></a>M
@@ -226,15 +230,17 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 **Power BI Embedded** Produit utilisé par les développeurs pour incorporer des tableaux de bord et des rapports Power BI dans leurs propres applications, sites et outils.
 
-**Power BI Premium** Module complémentaire à la licence Power BI Pro, qui permet aux organisations de mettre à l’échelle des solutions décisionnelles de façon prévisible via l’achat de matériel dédié.
+**Power BI Premium** Module complémentaire à la licence Power BI Pro, qui permet aux organisations de mettre à l’échelle des solutions décisionnelles de façon prévisible via l’achat de matériel dédié. Voir *account (compte)* .
 
-**Power BI Pro license (licence Power BI Pro)** Licence utilisateur mensuelle qui offre la possibilité de créer des tableaux de bord, de collaborer sur des données partagées, de conserver automatiquement les données à jour, d’auditer et de gouverner la façon dont les données sont accessibles et utilisées, ainsi que la possibilité de créer des packages avec le contenu à distribuer (des applications Power BI).
+**Power BI Pro** Licence par utilisateur mensuelle qui offre la possibilité de créer des rapports et des tableaux de bord, de collaborer sur des données partagées, de conserver automatiquement les données à jour, d’auditer et de gouverner la façon dont les données sont accessibles et utilisées, ainsi que la possibilité de créer des packages avec le contenu à distribuer (applications Power BI). Voir *account (compte)* .
 
 **Power BI Report Server** Nouvelle offre personnalisée de SSRS lancée avec Power BI Premium, pour permettre aux organisations de créer des systèmes décisionnels hybrides et distribués (une combinaison de déploiements locaux et cloud). Embedded offre un moyen localisé pour stocker et gérer des rapports Power BI.
 
 **Power BI service (Service Power BI)** Service SaaS (logiciel en tant que service) en ligne. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md).
 
 **Premium workspace (espace de travail Premium)** Espace de travail s’exécutant dans une capacité dédiée, signalé aux clients par une icône en forme de losange.  
+
+Licence **Pro** ou compte **Pro** Voir *account (compte)* .
 
 **publier** les *concepteurs* de rapports de service Power BI groupent le contenu d’un espace de travail Power BI pour le rendre accessible aux autres utilisateurs en tant qu’application Power BI. Les *concepteurs* de rapports Power BI Desktop utilisent la fonction publier pour faire référence à l’envoi d’un rapport Power BI Desktop au format. pbix au service Power BI afin qu’il puisse créer des tableaux de bord à partir de celui-ci et le partager facilement avec d’autres utilisateurs. 
 

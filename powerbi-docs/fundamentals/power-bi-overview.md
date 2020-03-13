@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875656"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114967"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Vos données peuvent être sous forme de feuille de calcul Excel ou de collection d’entrepôts de données hybrides locaux ou sur le cloud. Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser et de découvrir ce qui est important, et de partager ces informations avec qui vous voulez.
@@ -51,9 +51,9 @@ Pour explorer les documents relatifs à votre rôle :
 Un flux de travail standard dans Power BI commence par la connexion à des sources de données et la création d’un rapport Power BI Desktop. Vous publiez ensuite ce rapport depuis Power BI Desktop sur le service Power BI, et vous le partagez afin que les utilisateurs finaux du service Power BI et ceux travaillant sur des appareils mobiles puissent le consulter et interagir avec ce rapport.
 Ce workflow est courant et montre la complémentarité entre les trois éléments principaux de Power BI.
 
-Voici une [comparaison détaillée de Power BI Desktop et du service Power BI](../designer/service-service-vs-desktop.md).
+Voici une [comparaison détaillée de Power BI Desktop et du service Power BI](../fundamentals/service-service-vs-desktop.md).
 
-## <a name="on-premises-reporting-with-power-bi-report-server"></a>Rapports locaux avec Power BI Report Server
+## <a name="on-premises-reporting-with-power-bi-report-server"></a>Création locale de rapports avec Power BI Report Server
 
 Que se passe-t-il si vous n’êtes pas prêt à migrer vers le cloud et souhaitez conserver vos rapports derrière un pare-feu d’entreprise ?  Lisez la suite.
 
@@ -61,11 +61,11 @@ Vous pouvez créer, déployer et gérer localement des rapports Power BI mobiles
 
 ![diagramme d’un déploiement local](media/power-bi-overview/power-bi-report-server2.png)
 
-Power BI Report Server est une solution que vous déployez derrière votre pare-feu. Vous distribuez ensuite vos rapports aux utilisateurs appropriés de différentes façons afin de les afficher dans un navigateur web, sur un appareil mobile, ou sous forme d’e-mail. Et comme Power BI Report Server est compatible avec Power BI dans le cloud, vous pouvez migrer vers le cloud quand vous êtes prêt. 
+Power BI Report Server est une solution que vous déployez derrière votre pare-feu. Vous distribuez ensuite vos rapports aux utilisateurs appropriés de différentes façons afin de les afficher dans un navigateur web, sur un appareil mobile ou sous forme d’e-mail. Et comme Power BI Report Server est compatible avec Power BI dans le cloud, vous pouvez migrer vers le cloud quand vous êtes prêt. 
 
 En savoir plus sur [Power BI Report Server](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-- [Démarrage rapide : Découvrir le fonctionnement du service Power BI](../service-the-new-power-bi-experience.md)   
-- [Tutoriel : Bien démarrer avec le service Power BI](../service-get-started.md)
-- [Démarrage rapide : Se connecter aux données dans Power BI Desktop](../desktop-quickstart-connect-to-data.md)
+- [Démarrage rapide : Découvrir le fonctionnement du service Power BI](../service-the-new-power-bi-experience.md)   
+- [Tutoriel : Bien démarrer avec le service Power BI](../service-get-started.md)
+- [Démarrage rapide : Se connecter aux données dans Power BI Desktop](../desktop-quickstart-connect-to-data.md)

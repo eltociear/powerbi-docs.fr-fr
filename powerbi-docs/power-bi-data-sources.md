@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: 261d800dac9b65747e648bc76944a0b8a5077b73
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427090"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041674"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -43,7 +43,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Azure HDInsight (HDFS) | Oui | Oui | Non | Non | Non |
 | Azure HDInsight Spark | Oui | Oui | Oui | Non | Non |
 | Azure SQL Database | Oui | Oui | Oui | Oui <sup>2</sup> | Non |
-| Azure SQL Data Warehouse | Oui | Oui | Oui | Non | Non |
+| Azure SQL Data Warehouse | Oui | Oui | Oui | Oui <sup>2</sup> | Non |
 | Stockage Table Azure | Oui | Oui | Non | Oui | Non |
 | Connecteur BI | Oui | Oui | Oui | Oui | Oui |
 | BI360 - Budgets & Rapports financiers | Oui | Oui | Non | Non | Non |
@@ -134,7 +134,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Twilio | Oui | Oui | Non | Non | Non |
 | tyGraph | Oui | Oui | Non | Non | Non |
 | Vertica | Oui | Oui | Oui | Oui | Oui |
-| Web | Oui | Oui | Non | Oui | Oui |
+| Web | Oui | Oui | Non | Oui | Oui <sup>6</sup> |
 | Webtrends | Oui | Oui | Non | Non | Non |
 | Workforce Dimensions | Oui | Oui | Non | Oui | Non |
 | XML | Oui | Oui | Non | Oui | Non <sup>4</sup> |
@@ -143,13 +143,15 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 
 <sup>1</sup> Pris en charge par le [fournisseur OLEDB ACE](https://www.microsoft.com/download/details.aspx?id=54920) installé sur le même ordinateur que la passerelle.
 
-<sup>2</sup> Pris en charge avec la même fonction M que la version locale.
+<sup>2</sup> Pris en charge avec la même fonction M que la version locale, ce qui entraîne des options d’authentification restreinte (la passerelle ne prend pas en charge OAuth).
 
 <sup>3</sup> Les fichiers Excel 1997-2003 (.xls) exigent le [fournisseur OLEDB ACE](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup> Obligatoire pour la version locale de l’outil.
 
 <sup>5</sup> Pris en charge uniquement avec la [passerelle personnelle](service-gateway-personal-mode.md).
+
+<sup>6</sup> Requis pour les bases de données Access, .html et .xls
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Authentification unique (SSO) pour les sources DirectQuery
 

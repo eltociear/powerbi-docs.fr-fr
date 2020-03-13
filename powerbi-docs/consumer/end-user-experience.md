@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76975145"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040143"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -72,7 +72,7 @@ Sélectionnez **Espaces de travail** dans le volet de navigation gauche pour le 
 
 ![Mes espaces de travail ](./media/end-user-experience/power-bi-workspaces.png)
 
-**Mon espace de travail** stocke tout le contenu qui vous appartient et que vous créez. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. Pour de nombreux *consommateurs* Power BI, **Mon espace de travail** reste vide car votre travail n’implique pas la création de contenu.  Les *consommateurs*, par définition, consomment les données créées par d’autres personnes et utilisent ces données pour prendre des décisions commerciales. Si vous êtes amené à créer du contenu, lisez les [articles Power BI destinés aux *concepteurs*](../power-bi-creator-landing.md).
+**Mon espace de travail** stocke tout le contenu qui vous appartient et que vous créez. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. Pour de nombreux *consommateurs* Power BI, **Mon espace de travail** reste vide car votre travail n’implique pas la création de contenu.  Les *consommateurs*, par définition, consomment les données créées par d’autres personnes et utilisent ces données pour prendre des décisions commerciales. Si vous êtes amené à créer du contenu, lisez les [articles Power BI destinés aux *créateurs de rapports*](../index.yml).
 
 Un **espace de travail d’application** regroupe tout le contenu d’une application spécifique.  Quand un *concepteur* crée une application, il rassemble tout le contenu nécessaire à l’utilisation de cette application.  Sélectionnez l’espace de travail Ventes et marketing pour voir ce que le *concepteur* a inclus dans l’application. 
 

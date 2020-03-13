@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 1c6c4faa9f5cff46695ddd9d30869103d7bf482b
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de47022d00583dae99ad259a531e955b6396b96f
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427204"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78400548"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Capacité et références SKU dans l’analytique incorporée de Power BI
 
@@ -46,15 +46,15 @@ Power BI Premium est un produit SaaS qui permet aux utilisateurs de consommer 
 
 Chaque capacité propose plusieurs références SKU qui offrent chacune différents niveaux de ressources pour la mémoire et la puissance de calcul. Le type de référence SKU dont vous avez besoin dépend du type de solution que vous souhaitez déployer.
 
-Avant de choisir la référence SKU à acheter, prenez connaissance des informations contenues dans cette section.
-* Pour comprendre les charges de travail qui sont prises en charge pour chaque niveau, consultez l’article [Configurer des charges de travail dans une capacité Premium](../service-admin-premium-workloads.md)
-* Utilisez ce lien pour [planifier et tester votre capacité](../service-premium-capacity-optimize.md#testing-approaches)
+Pour comprendre les charges de travail qui sont prises en charge pour chaque niveau, consultez l’article [Configurer des charges de travail dans une capacité Premium](../service-admin-premium-workloads.md)
+
+Utilisez ces liens pour planifier et tester votre capacité :
+* [Planification de la capacité](embedded-capacity-planning.md)
+* [Approches de test](../service-premium-capacity-optimize.md#testing-approaches)
 
 ### <a name="power-bi-embedded-skus"></a>Références SKU Power BI Embedded
 
-Power BI Embedded est fourni avec une référence SKU *A*.
-* [Savoir ce que votre capacité Power BI Embedded peut gérer](https://powerbi.microsoft.com/blog/power-bi-developer-community-june-july-update/#Capacity-Plan)
-* [Acheter une référence SKU *A*](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
+Power BI Embedded est fourni avec une référence SKU [*A*](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### <a name="power-bi-premium-skus"></a>Références SKU Power BI Premium
 

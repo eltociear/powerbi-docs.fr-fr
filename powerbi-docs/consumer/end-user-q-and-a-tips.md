@@ -6,21 +6,24 @@ ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099027"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114293"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
 La liste de mots clés affichée sur cette page n’est pas exhaustive.  La meilleure façon de voir si Power BI reconnaît un mot clé consiste à essayer de le taper dans la zone de question.  Si le mot ou le terme est grisé, Power BI ne le reconnaît pas.
 
-La liste ci-dessous utilise le présent, mais tous les temps sont identifiés dans la plupart des cas. Par exemple, « is » comprend **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  « sort » comprend **sorted** et **sorting**.  Power BI reconnaît aussi la version au singulier et au pluriel d’un mot et en tient compte. 
+La liste ci-dessous utilise le présent, mais tous les temps sont identifiés dans la plupart des cas. Par exemple, « is » comprend **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Et « sort » comprend **sorted** et **sorting**.  Power BI reconnaît aussi la version au singulier et au pluriel d’un mot et en tient compte. 
 
 > [!NOTE]
 > La fonctionnalité Questions et réponses est également disponible dans l’[application Microsoft Power BI pour iOS sur les appareils iPad, iPhone et iPod Touch](mobile/mobile-apps-ios-qna.md).
@@ -33,13 +36,13 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |     |         |         
 **Articles**     |  a, an, the              |
 |     |         |         
-|**Vides et booléens**     |   blank, empty, null, prefixed with “non” or “non-“, empty string, empty text, true, t, false, f          |
+|**Vides et booléens**     |   blank, empty, null, prefixed with "non" or "non-", empty string, empty text, true, t, false, f          |
 |     |         |         |
 |**Comparaisons**     |   vs, versus, compared to, compared with            |
 |     |         |         |
 |**Conjonctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |         
 |          |         |
-|**Contractions**     |  Questions et réponses reconnaît presque toutes les contractions, faites le test.  Voici quelques exemples : didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
+|**Contractions**     |  Questions et réponses reconnaît presque toutes les contractions, faites le test.  Voici quelques exemples : didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, who's, won't, wouldn't          |
 |        |         |
 |**Dates**     |       Power BI reconnaît la plupart des expressions de date ($$$jour, $$$semaine, $$$mois, $$$année, $$$trimestre, $$$dix dernières années, etc.) et les dates écrites dans différents formats (voir ci-dessous). Power BI reconnaît également les mots clés suivants : MonthName, Days 1-31, decade. Exemples : January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |        |         |

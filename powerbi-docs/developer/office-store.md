@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/13/2020
-ms.openlocfilehash: 3f27c32442ecf3c70c3dc3e7d070fcc8bf14d7b1
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.date: 03/08/2020
+ms.openlocfilehash: e55f71735711bac123dbcf3c073595370c767969
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237865"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041375"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -37,9 +37,9 @@ Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il r�
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez aider les utilisateurs à se familiariser avec ce visuel. Insistez sur la valeur que le visuel apporte à l’utilisateur et donnez des exemples d’utilisation et d’options de mise en forme. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, et expliquez ce qu’il faut éviter de faire.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe. |
 | Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 300 px (largeur) x 300 px (hauteur).<BR>**Important :** Lisez attentivement le [guide des images du magasin AppSource](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Fournissez au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être exactement 1 366 px (largeur) par 768 px (hauteur). La taille du fichier ne doit pas dépasser 1024 ko.<br>Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran. |
-| Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans votre liste dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
-| Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans votre liste dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
-| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez fournir un fichier CLUF pour votre élément visuel Power BI. |
+| Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans le cadre de votre annonce dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à l’annonce de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
+| Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans le cadre de votre annonce dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à l’annonce de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
+| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez fournir un fichier CLUF pour votre élément visuel Power BI. Vous pouvez utiliser votre propre CLUF ou un [CLUF standard](https://docs.microsoft.com/azure/marketplace/standard-contract).|
 | Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, fournissez un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou https://. |
 | Dépôt GitHub |Non |Partagez un lien public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel Power BI et des échantillons de données. Cela permet à d'autres développeurs de vous transmettre leurs commentaires et des suggestions pour améliorer votre code. |
 

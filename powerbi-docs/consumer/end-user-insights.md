@@ -7,24 +7,27 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/22/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e86e8c87ca7942e74ff2f16e299304f56f4a2aa3
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863404"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113092"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Chaque [vignette](end-user-tiles.md) de visuel sur votre tableau de bord est une voie d’accès à l’exploration des données. Quand vous sélectionnez une vignette, elle ouvre un rapport ou [Questions et réponses](end-user-q-and-a.md), où vous pouvez filtrer, trier et explorer le jeu de données sous-jacent du rapport. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.
 
 ![Mode de menu Points de suspension](./media/end-user-insights/power-bi-insight.png)
 
 Exécutez une recherche d’insights pour générer des visuels interactifs intéressants basés sur vos données. La recherche d’insights peut être effectuée sur une vignette de tableau de bord spécifique, et vous pouvez même rechercher des insights sur un insight !
 
-La fonctionnalité d’aperçu repose sur un [ensemble croissant d’algorithmes analytiques avancés](end-user-insight-types.md) développés conjointement avec Microsoft Research, que nous continuerons d’utiliser pour permettre à davantage de personnes de tirer des informations de leurs données de façon innovante et intuitive.
+La fonctionnalité d’insights repose sur un [ensemble croissant d’algorithmes analytiques avancés](end-user-insight-types.md) développés conjointement avec Microsoft Research, que nous continuerons d’utiliser pour permettre à davantage de personnes de tirer des insights de leurs données de façon innovante et intuitive.
 
 ## <a name="run-insights-on-a-dashboard-tile"></a>Exécuter un aperçu sur une vignette de tableau de bord
 Lorsque vous exécutez un aperçu sur une mosaïque de tableau de bord, Power BI recherche simplement les données utilisées pour créer cette mosaïque de tableau de bord unique. 

@@ -1,19 +1,19 @@
 ---
 title: Explorer des données Power BI dans l’application mobile sur votre Apple Watch
 description: Application Power BI pour Apple Watch
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: 31db6725c027ed09e900dac7036778004e9e3ff3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: e2014f359d4085ab0dcb85135f7436c9e403eaab
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73870735"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114517"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Explorer vos données dans l’application mobile Power BI sur votre Apple Watch
 L’application Power BI pour Apple Watch vous permet d’afficher sur votre montre des indicateurs de performance clés (KPI) et des vignettes de cartes extraits de vos tableaux de bord Power BI. Les indicateurs de performance clés et les vignettes de cartes sont parfaitement adaptés à la fourniture d’une mesure du rythme cardiaque sur le petit écran. Vous pouvez actualiser un tableau de bord à partir de votre iPhone ou de l’Apple Watch elle-même.

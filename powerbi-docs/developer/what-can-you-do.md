@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 9f9383e5cdb4b4690ef75294f7ff8c17fb643d9a
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265024"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041352"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Que peuvent faire les développeurs avec Power BI ?
 
@@ -37,7 +37,7 @@ Pour en savoir plus sur l’incorporation avec Power BI, consultez [Incorporatio
 
 ## <a name="developing-custom-visuals"></a>Développement de visuels personnalisés
 
-Vous pouvez utiliser des visuels personnalisés avec Power BI pour créer un type de visuel unique spécialement adapté à vous ou à votre entreprise. Souvent, ces visuels personnalisés sont créés par les développeurs. Ils sont créés quand la multitude de visuels inclus dans Power BI ne répondent pas exactement à vos besoins.
+Vous pouvez utiliser des visuels personnalisés avec Power BI pour créer un type de visuel unique spécialement adapté à vous ou à votre entreprise. Souvent, ces visuels personnalisés sont créés par les développeurs. Ils sont créés quand la multitude de visuels inclus dans Power BI ne répond pas exactement à vos besoins.
 
 Les visuels personnalisés vous permettent de créer vos visuels à utiliser dans les rapports Power BI. Les visuels personnalisés sont écrits en TypeScript, un surensemble de JavaScript. TypeScript prend en charge certaines fonctionnalités avancées ainsi qu’un accès anticipé aux fonctionnalités ES6/ES7. Les styles de visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Par souci pratique, nous utilisons le précompilateur LESS, qui prend en charge certaines fonctionnalités avancées, notamment l’imbrication, les variables, les conditions, les boucles et autres fonctionnalités. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez écrire une feuille de style CSS brute dans le fichier LESS.
 
@@ -53,7 +53,7 @@ Les développeurs peuvent également générer leurs propres visualisations de d
 
 ![Exemple de données push](media/what-can-you-do/powerbi-push-data.png)
 
-Pour savoir ce que vous pouvez faire avec les API Power BI, consultez [Comment les développeurs peuvent-ils se servir de l’API Power BI](overview-of-power-bi-rest-api.md) ?
+Pour savoir ce que vous pouvez faire avec les API Power BI, consultez [Comment les développeurs peuvent-ils se servir de l’API Power BI](automation/overview-of-power-bi-rest-api.md) ?
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -61,6 +61,6 @@ Pour savoir ce que vous pouvez faire avec les API Power BI, consultez [Comment l
 
 [Développement d’un visuel personnalisé Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
-[Comment les développeurs peuvent-ils se servir de l’API Power BI ?](overview-of-power-bi-rest-api.md)
+[Comment les développeurs peuvent-ils se servir de l’API Power BI ?](automation/overview-of-power-bi-rest-api.md)
 
 [Centre développeurs Power BI](https://powerbi.microsoft.com/developers/)

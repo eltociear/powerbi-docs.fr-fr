@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/01/2020
-ms.openlocfilehash: 3245f8ed4c4d10213d3fab8d533572d3dfd3c345
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 2459982cdce9d2ee2af731ab479a94aefa2a8576
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264194"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79115016"
 ---
 # <a name="export-report-to-file-preview"></a>Exporter le rapport vers un fichier (préversion)
 
@@ -96,8 +96,9 @@ Un travail dépassant le nombre de demandes simultanées ne se termine pas. Par 
 
 ## <a name="limitations"></a>Limites
 
-* Le rapport que vous exportez doit résider sur une capacité.
-* Le jeu de données que vous exportez doit résider sur une capacité.
+* Le rapport que vous exportez doit résider sur une capacité Premium ou Embedded.
+* Le jeu de données du rapport que vous exportez doit résider sur une capacité Premium ou Embedded.
+* Pour la préversion privée, le nombre de pages de rapport Power BI exportées par heure est limité à 50.
 * Les rapports exportés ne peuvent pas dépasser une taille de fichier de 250 Mo.
 * Lors de l’exportation au format PNG, les étiquettes de sensibilité ne sont pas prises en charge.
 * Le [principal de service](embed-service-principal.md) n’est pas pris en charge.

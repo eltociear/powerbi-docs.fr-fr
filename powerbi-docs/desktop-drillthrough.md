@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7b00b0cb611dd3e0921885ddaca6547fdb43fd3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74310863"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401244"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction dans Power BI Desktop
 Dans Power BI Desktop, une *extraction* vous permet de créer une page de rapport qui se concentre sur une entité spécifique, par exemple, un fournisseur, un client ou un fabricant. Pour utiliser l’extraction, sélectionnez-la en cliquant avec le bouton droit sur un point de données d’une autre page de rapport, puis en accédant à la page ayant le focus pour obtenir des détails filtrés pour ce contexte.
@@ -33,6 +33,11 @@ Dans Power BI Desktop, une *extraction* vous permet de créer une page de rappo
     Lorsque vous ajoutez un champ à la zone **Filtres d’extraction**, Power BI Desktop crée automatiquement un visuel de bouton *Précédent*. Ce visuel devient un bouton dans les rapports publiés. Les utilisateurs qui consomment votre rapport dans le service Power BI peuvent utiliser ce bouton pour revenir à la page du rapport où ils étaient précédemment.
 
     ![Image d’extraction](media/desktop-drillthrough/drillthrough_03.png)
+
+> [!IMPORTANT]
+> Vous pouvez configurer et effectuer une extraction vers une page dans le même rapport. Toutefois, vous ne pouvez pas procéder à une extraction vers une page d’un autre rapport.  
+
+
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Utiliser votre propre image pour un bouton Précédent    
  Étant donné que le bouton Précédent est une image, vous pouvez remplacer l’image de ce visuel par n’importe quelle image de votre choix. Il continuera à fonctionner comme un bouton Précédent afin que les consommateurs de rapports puissent revenir à la page d’origine. 
@@ -54,13 +59,12 @@ Si vous souhaitez utiliser votre propre image pour le bouton précédent, effect
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Passer tous les filtres dans l’extraction
 
-À partir de la version de mai 2018 de Power BI Desktop, vous pouvez passer tous les filtres appliqués dans la fenêtre d’extraction. Par exemple, vous ne pouvez sélectionner qu’une seule catégorie de produits et de visuels filtrés pour cette catégorie avant de sélectionner l’extraction. Vous aimeriez peut-être savoir à quoi ressemble l’extraction avec tous ces filtres appliqués.
+Vous pouvez passer tous les filtres appliqués dans la fenêtre d’extraction. Par exemple, vous ne pouvez sélectionner qu’une seule catégorie de produits et de visuels filtrés pour cette catégorie avant de sélectionner l’extraction. Vous aimeriez peut-être savoir à quoi ressemble l’extraction avec tous ces filtres appliqués.
 
 Pour conserver tous les filtres appliqués, dans la section **Extraction** du volet **Visualisations**, définissez **Garder tous les filtres** sur **Activé**. 
 
 ![Conserver tous les filtres](media/desktop-drillthrough/drillthrough_06.png)
 
-Dans les versions de Power BI Desktop publiées avant mai 2018, le comportement est le même que si ce bouton bascule était défini sur **Désactivé**.
 
 Lorsque vous extrayez un visuel, vous pouvez voir les filtres qui ont été appliqués comme résultat du visuel source avec les filtres temporaires appliqués. Dans la section **Extraction** du volet **Visualisation**, ces filtres temporaires apparaissent en italique. 
 

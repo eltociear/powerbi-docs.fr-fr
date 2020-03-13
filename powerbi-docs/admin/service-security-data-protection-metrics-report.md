@@ -3,19 +3,18 @@ title: Rapport des métriques de protection des données
 description: Découvrir le rapport des métriques de protection des données
 author: paulinbar
 manager: rkarlin
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 952f47f60e14932ce4b22dbd01bf60d9d7243c62
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542148"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79112505"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Rapport des métriques de protection des données (préversion)
 
@@ -34,7 +33,7 @@ Le rapport est actualisé toutes les 24 heures.
 ## <a name="viewing-the-data-protection-metrics-report"></a>Affichage du rapport des métriques de protection des données
 
 Vous devez disposer d’un [rôle d’administrateur Power BI](../service-admin-role.md) pour ouvrir et voir le rapport.
-Pour voir le rapport, accédez à **Paramètres > Portail d’administration**, puis choisissez **Métriques de protection (préversion)**.
+Pour voir le rapport, accédez à **Paramètres > Portail d’administration**, puis choisissez **Métriques de protection (préversion)** .
 
 ![Portail d’administration des mesures de protection](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
  
@@ -52,6 +51,7 @@ Des versions améliorées du rapport des métriques de protection des données s
 * Pour accéder aux informations de Cloud App Security, votre organisation doit disposer de la [licence Cloud App Security](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing) appropriée.
 * Si vous décidez de partager des informations du rapport des métriques de protection des données avec un utilisateur qui n’est pas administrateur Power BI, n’oubliez pas que ce rapport contient des informations sensibles sur votre organisation.
 * Le rapport des métriques de protection des données est un type spécial de rapport et n’apparaît pas dans les listes « Partagé avec moi », « Récents » et « Favoris ».
+* Le rapport sur les métriques de protection des données n’est pas disponible pour les [utilisateurs externes (utilisateurs invités Azure Active Directory B2B)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Étapes suivantes
 * [Protection des données dans Power BI (préversion)](./service-security-data-protection-overview.md)
 * [Utilisation de contrôles Microsoft Cloud App Security dans Power BI (préversion)](./service-security-using-microsoft-cloud-app-security-controls.md)

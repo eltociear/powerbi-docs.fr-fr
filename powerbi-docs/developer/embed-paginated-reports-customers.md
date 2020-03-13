@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: d32030db9c3cff04dfff6c5545626b4b70dcae07
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731240"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920688"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
 
@@ -57,7 +57,7 @@ Avant d’importer ou de charger un rapport paginé à incorporer, l’espace de
 * **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** : vous pouvez acheter une capacité dédiée à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
-Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario)
+Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
 
 | Nœuds de capacité | Total des v-cores | Cœurs virtuels backend | RAM (Go) | Cœurs virtuels frontend | 
 | --- | --- | --- | --- | --- |
@@ -74,7 +74,7 @@ Pour affecter une capacité dédiée à un espace de travail à l’aide d’un 
 
 ### <a name="create-and-upload-your-paginated-reports"></a>Créer et charger vos rapports paginés
 
-Vous pouvez créer votre rapport paginé à l’aide du [Générateur de rapports Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), puis [charger ce rapport dans le service](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+Vous pouvez créer votre rapport paginé à l’aide du [Générateur de rapports Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), puis [charger ce rapport dans le service](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 Vous pouvez importer des rapports paginés dans les nouveaux espaces de travail à l’aide des [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
@@ -127,7 +127,7 @@ Pour récupérer la valeur **applicationId**, suivez ces étapes :
 
 ### <a name="workspace-id"></a>ID de l’espace de travail
 
-Dans **workspaceId**, indiquez le GUID d’espace de travail d’application (groupe) provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
+Dans **workspaceId**, indiquez le GUID d’espace de travail d’application (groupe) provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de PowerShell.
 
 URL <br>
 
@@ -143,7 +143,7 @@ Get-PowerBIworkspace -name "Paginated Report Embed"
 
 ### <a name="report-id"></a>ID du rapport
 
-Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
+Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de PowerShell.
 
 URL<br>
 
@@ -183,7 +183,7 @@ Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
 ### <a name="tenant"></a>Locataire
 
-Dans **tenant**, indiquez votre ID de locataire Azure. Vous pouvez obtenir ces informations à partir du [centre d’administration d’Azure AD](/onedrive/find-your-office-365-tenant-id) quand vous êtes connecté au service Power BI ou en utilisant Powershell.
+Dans **tenant**, indiquez votre ID de locataire Azure. Vous pouvez obtenir ces informations à partir du [centre d’administration d’Azure AD](/onedrive/find-your-office-365-tenant-id) quand vous êtes connecté au service Power BI ou en utilisant PowerShell.
 
 ### <a name="run-the-application"></a>Exécuter l’application
 

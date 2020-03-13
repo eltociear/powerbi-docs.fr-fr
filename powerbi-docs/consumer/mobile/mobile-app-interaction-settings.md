@@ -6,30 +6,34 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: fee89c65328b70e1f312b39fbad75d7148bd92f2
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: c7280b2b6bb34b070e7ced3785959d61c74cd165
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542286"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041252"
 ---
 # <a name="configure-report-interaction-settings"></a>Configurer les paramètres d’interaction de rapport
 
 ## <a name="overview"></a>Vue d’ensemble
 
-L’application mobile Power BI a un certain nombre de paramètres « d’interaction » configurables qui vous permettent de contrôler la façon dont vous interagissez avec vos données et de définir la façon dont certains éléments de l’application mobile Power BI se comportent. Il existe actuellement des paramètres pour
-* [Interaction de type appui simple ou double sur les visuels de rapport](#single-tap)
-* [Pied de page de rapport ancré ou dynamique](#docked-report-footer-android-phones) (Android)
-* [Actualisation de rapport lancée via un bouton ou via Balayer pour actualiser](#report-refresh-android-phones) (Android)
+L’application mobile Power BI a un certain nombre de paramètres « d’interaction » configurables qui vous permettent de contrôler la façon dont vous interagissez avec vos données et de définir la façon dont certains éléments de l’application mobile Power BI se comportent. Le tableau ci-dessous répertorie les paramètres d’interaction actuellement disponibles et les appareils qui en disposent.
+
+|| Téléphone Android | iPhone | Tablette Android  | iPad |
+|-|:-:|:-:|:-:|:-:|
+| [Interaction de type appui simple ou double sur les visuels de rapport](#single-tap) |✔|✔|||
+| [Sélection multiple ou sélection unique de points de données sur les visuels de rapport](#multi-select) |✔|✔|✔|✔|
+| [Pied de page de rapport ancré ou dynamique](#docked-report-footer) |✔|✔|||
+| [Actualisation de rapport lancée via un bouton ou via Balayer pour actualiser](#report-refresh) |✔||||
+|
 
 Pour accéder aux paramètres d’interaction, appuyez sur l’image de votre profil pour ouvrir le [panneau latéral](./mobile-apps-home-page.md#header), choisissez **Paramètres** et recherchez la section **Interaction**.
 
 ![Paramètres d’interaction](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
->[!NOTE]
->Les paramètres d’interaction pour le bouton d’actualisation et pour l’ancrage du pied de page du rapport n’ont actuellement pas d’effet sur les rapports Report Server. Ceci changera avec la version de Report Server de janvier 2020.
+Les paramètres d’interaction sont décrits dans les sections ci-dessous.
 
 ## <a name="interaction-settings"></a>Paramètres d’interaction
 
@@ -38,13 +42,24 @@ Quand vous téléchargez l’application mobile Power BI, elle est définie pour
 
 Si vous préférez, vous pouvez désactiver l’interaction avec appui simple. L’interaction se fait alors via un appui double. Avec l’interaction d’appui double, vous appuyez d’abord sur un visuel pour le sélectionner, puis vous rappuyez dans le visuel pour effectuer l’action souhaitée.
 
-### <a name="docked-report-footer-android-phones"></a>Pied de page de rapport ancré (téléphones Android)
+### <a name="multi-select"></a>Sélection multiple
+
+L’option de sélection multiple permet de sélectionner plusieurs points de données sur une page de rapport. Lorsque la sélection multiple est activée, chaque point de données sur lequel vous appuyez est ajouté aux autres points de données sélectionnés, et les résultats combinés sont automatiquement mis en surbrillance dans tous les visuels de la page. Lorsque la sélection multiple est désactivée, lorsque vous appuyez pour sélectionner un point de données, la nouvelle sélection remplace la sélection actuelle.
+
+Pour désélectionner un point de données, appuyez à nouveau dessus.
+
+>[!NOTE]
+>La sélection multiple n’est pas prise en charge dans les visuels personnalisés.
+>
+>Le mode de sélection multiple sera pris en charge sur Power BI Report Server dans la prochaine version du serveur de rapports.
+
+### <a name="docked-report-footer"></a>Pied de page de rapport ancré
 
 Le paramètre de pied de page de rapport ancré détermine si le pied de page du rapport reste ancré (c’est-à-dire fixe et toujours visible) au bas du rapport, ou s’il est masqué et réapparaît en fonction de vos actions dans le rapport, comme le défilement.
 
 Sur les téléphones Android, le paramètre de pied de page de rapport ancré est **activé** par défaut, ce qui signifie que le pied de page du rapport est ancré et toujours visible au bas du rapport. Passez le paramètre sur **Désactivé** si vous préférez un pied de page de rapport dynamique qui apparaît et disparaît, en fonction de vos actions sur le rapport.
 
-### <a name="report-refresh-android-phones"></a>Actualisation des rapports (téléphones Android)
+### <a name="report-refresh"></a>Actualisation de rapport
 
 Le paramètre d’actualisation des rapports définit la façon dont vous lancez les actualisations des rapports. Vous pouvez choisir d’avoir un bouton d’actualisation sur les en-têtes de tous les rapports ou bien d’utiliser l’action Balayer pour actualiser (en effectuant un léger balayage de haut en bas) sur la page du rapport pour l’actualiser. La figure ci-dessous illustre les deux alternatives. 
 

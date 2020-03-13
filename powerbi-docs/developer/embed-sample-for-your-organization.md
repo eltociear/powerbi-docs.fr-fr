@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 7a10df09bd6b0f4ce81ee32ae72700080a8020d9
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: f22320eb275888225babf50d0369a492ed09d7ed
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691353"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920054"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -34,7 +34,7 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Un [compte Power BI Pro](../service-self-service-signup-for-power-bi.md).
 * Un abonnement [Microsoft Azure](https://azure.microsoft.com/).
 * Vous avez besoin de votre propre installation d’un [locataire Azure Active Directory](create-an-azure-active-directory-tenant.md).
-* Pour incorporer des rapports paginés, vous devez disposer au minimum d’une capacité P1. Voir [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* Pour incorporer des rapports paginés, vous devez disposer au minimum d’une capacité P1. Voir [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 
@@ -84,7 +84,7 @@ Vous pouvez créer vos rapports et vos jeux de données à l’aide de Power BI 
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Créer et publier vos rapports paginés
 
-Vous pouvez créer vos rapports paginés avec le [Générateur de rapports Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Ensuite, vous pouvez [charger le rapport](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) dans un espace de travail auquel est affecté au minimum une capacité P1. L’utilisateur final qui charge le rapport doit avoir une licence Power BI Pro pour publier dans un espace de travail.
+Vous pouvez créer vos rapports paginés avec le [Générateur de rapports Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Ensuite, vous pouvez [charger le rapport](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) dans un espace de travail auquel est affecté au minimum une capacité P1. L’utilisateur final qui charge le rapport doit avoir une licence Power BI Pro pour publier dans un espace de travail.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Incorporer votre contenu en utilisant l’exemple d’application
 
@@ -131,7 +131,7 @@ Pour récupérer la valeur **applicationId**, suivez ces étapes :
 
 ### <a name="workspace-id"></a>ID de l’espace de travail
 
-Dans **workspaceId**, indiquez le GUID d’espace de travail (groupe) provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
+Dans **workspaceId**, indiquez le GUID d’espace de travail (groupe) provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de PowerShell.
 
 URL <br>
 
@@ -147,7 +147,7 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 ### <a name="report-id"></a>ID du rapport
 
-Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
+Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de PowerShell.
 
 URL de rapport Power BI <br>
 

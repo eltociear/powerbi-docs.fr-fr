@@ -7,24 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bb69d1ecc4e91912b947a2120607e1a0502d8162
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852651"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040501"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Quand vous ajoutez du contenu à vos *Favoris*, vous pouvez y accéder rapidement à partir de la liste de contenus des **Favoris** ainsi qu’en accédant à **Accueil Power BI** > **Favoris + fréquents**. Les favoris sont généralement le contenu que vous consultez le plus souvent et qui est signalé par une étoile.
 
    ![Icône Favoris](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Icône Favoris + fréquents](./media/end-user-favorite/power-bi-home.png)
-
-Dans le service Power BI, vous pouvez également sélectionner un tableau de bord comme [Tableau de bord par défaut](end-user-featured.md).
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Ajouter un tableau de bord ou un rapport aux favoris
 
@@ -67,7 +68,7 @@ Si vous n’utilisez plus un rapport aussi souvent qu’avant, vous pouvez le re
 2. Sélectionnez l’étoile jaune en regard du contenu que vous voulez retirer des favoris.
 
 > [!NOTE]
-> Vous pouvez également retirer des favoris un tableau de bord, un rapport ou une application. Ouvrir simplement l’élément et désélectionnez l’icône jaune. 
+> Vous pouvez également retirer des favoris un tableau de bord, un rapport ou une application. Il vous suffit d’ouvrir et de sélectionner l’étoile jaune pour revenir à une étoile blanche. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations

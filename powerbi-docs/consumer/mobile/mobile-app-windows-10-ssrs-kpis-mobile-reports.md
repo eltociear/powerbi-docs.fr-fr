@@ -1,29 +1,28 @@
 ---
-title: Afficher les rapports mobiles et les indicateurs de performance clés SSRS dans l’application mobile Windows 10 - Power BI
+title: Afficher des rapports et des indicateurs de performance clés locaux dans l’application Power BI Windows
 description: L’application mobile Power BI pour Windows 10 offre un accès mobile direct aux informations importantes locales de votre entreprise, via une interface tactile.
-author: mshenhav
-ms.reviewer: ''
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/09/2020
+ms.author: painbar
+ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879354"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040880"
 ---
-# <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services (SSRS) dans l’application Power BI pour Windows 10
-L’application mobile Power BI pour Windows 10 offre un accès mobile direct aux informations importantes locales de votre entreprise, via une interface tactile dans SQL Server 2016 Reporting Services. 
+# <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Afficher des rapports et des indicateurs de performance clés locaux dans l’application Power BI Windows
+L’application Power BI pour Windows 10 offre un accès mobile direct aux informations importantes locales de votre entreprise, via une interface tactile dans SQL Server 2016 Reporting Services. 
 
 ![Rapports mobiles Reporting Services](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="first-things-first"></a>Avant tout
 [Créez des rapports mobiles Reporting Services](https://msdn.microsoft.com/library/mt652547.aspx) avec l’éditeur de rapports mobiles SQL Server 2016 Enterprise Edition et publiez-les sur le [portail web Reporting Services](https://msdn.microsoft.com/library/mt637133.aspx). Créez des indicateurs de performance clés directement dans le portail web. Organisez-les dans des dossiers et marquez vos favoris, afin de les trouver facilement. 
 
-Ensuite, dans l’application mobile Power BI pour Windows 10, vous pouvez afficher les rapports mobiles et les indicateurs de performance clés, organisés dans des dossiers ou regroupés en favoris. 
+Ensuite, dans l’application Power BI pour Windows 10, vous pouvez afficher les indicateurs de performance clés et les rapports Power BI, organisés dans des dossiers ou regroupés en favoris. 
 
 > [!NOTE]
 > Votre appareil doit exécuter Windows 10. L’application fonctionne mieux sur les appareils avec au moins 1 Go de RAM et 8 Go de stockage interne.
@@ -68,7 +67,7 @@ Parcourez les exemples pour interagir avec les indicateurs de performance clés 
    > 
 
 ## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services dans l’application Power BI
-Les indicateurs de performance clés et les rapports mobiles Reporting Services sont affichés dans les mêmes dossiers que sur le portail web Reporting Services.
+Les indicateurs de performance clés, les rapports mobiles Reporting Services et les rapports Power BI (préversion) sont affichés dans les mêmes dossiers que sur le portail web Reporting Services.
 
 ![Dossiers de rapports](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
@@ -80,7 +79,7 @@ Les indicateurs de performance clés et les rapports mobiles Reporting Services 
     ![Rapport mobile Reporting Services](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Afficher vos rapports et indicateurs de performance clés favoris
-Vous pouvez marquer des indicateurs de performance clés et des rapports mobiles en tant que favoris sur votre portail web Reporting Services, puis les afficher dans un dossier approprié sur votre appareil Windows 10, ainsi que vos tableaux de bord et rapports Power BI favoris.
+Vous pouvez marquer des indicateurs de performance clés, des rapports mobiles et des rapports Power BI en tant que favoris sur votre portail web Reporting Services, puis les afficher dans un dossier approprié sur votre appareil Windows 10, ainsi que vos tableaux de bord et rapports Power BI favoris.
 
 * Appuyez sur **Favoris**.
   
@@ -88,8 +87,6 @@ Vous pouvez marquer des indicateurs de performance clés et des rapports mobiles
   
    Vos favoris du portail web se trouvent tous sur cette page.
   
-   ![Page Favoris](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
-
 Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Supprimez une connexion à un serveur de rapports

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259811"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041552"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -21,6 +21,29 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="february-2020"></a>Février 2020
+
+### <a name="multi-select-mode-android-and-ios"></a>Mode de sélection multiple (Android et iOS)
+
+Nous avons ajouté la possibilité de sélectionner plusieurs points de données sur une page de rapport. Lorsque la sélection multiple est activée, chaque point de données sur lequel vous appuyez est ajouté aux autres points de données sélectionnés, et les résultats combinés sont automatiquement mis en surbrillance dans tous les visuels de la page. Pour activer le mode de sélection multiple, accédez à la page [Paramètres de l’application mobile](./mobile-app-interaction-settings.md).
+
+>[!NOTE]
+>Le mode de sélection multiple sera pris en charge sur Power BI Report Server dans la prochaine version du serveur de rapports.
+
+### <a name="report-footer-can-now-always-be-visible-in-the-mobile-app-for-iphones"></a>Le pied de page du rapport peut maintenant être toujours visible dans l’application mobile sur iPhone
+
+Sur votre iPhone, comme sur votre téléphone Android, vous pouvez maintenant décider d’ancrer le pied de page du rapport en bas de la page du rapport, où il est toujours visible et disponible, quelles que soient vos actions sur la page. Ceci facilite l’utilisation de toutes les options qu’il fournit. Pour ancrer le pied de page, basculez le commutateur **Pied de page du rapport ancré** dans la page [Paramètres de l’application mobile](./mobile-app-interaction-settings.md).
+
+### <a name="support-for-pbirs-reports-preview-windows"></a>Prise en charge des rapports PBIRS (préversion) (Windows)
+
+Vous pouvez désormais ouvrir vos rapports Power BI Report Server (PBIRS) dans l’application Power BI.
+
+### <a name="quickly-access-your-recent-items-windows"></a>Accès rapide à vos éléments récents (Windows)
+
+Cliquez avec le bouton droit sur l’icône de l’application Power BI dans la barre des tâches Windows pour obtenir la liste de tous les éléments que vous avez consultés récemment. Cliquez sur un élément de la liste pour effectuer une visite rapide.
+
+![Menu d’accès rapide à la barre des tâches](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## <a name="january-2020"></a>Janvier 2020
 
@@ -38,7 +61,7 @@ Nous avons appris de nos utilisateurs Android que leur expérience d’utilisati
 
 Les utilisateurs qui préfèrent le comportement précédent peuvent restaurer ces comportements avec les nouveaux [paramètres d’interaction](./mobile-app-interaction-settings.md) étendus de l’application mobile.
 
-De plus, les administrateurs informatiques peuvent [remplacer à distance les nouveaux paramètres par défaut](./mobile-app-configuration.md#interaction-settings-android) pour le compte de leurs utilisateurs, en utilisant l’outil MDM de leur choix avec un fichier de configuration d’application. De cette façon, le même comportement peut être configuré pour tous les utilisateurs d’une organisation.
+De plus, les administrateurs informatiques peuvent [remplacer à distance les nouveaux paramètres par défaut](./mobile-app-configuration.md#interaction-settings-ios-and-android) pour le compte de leurs utilisateurs, en utilisant l’outil MDM de leur choix avec un fichier de configuration d’application. De cette façon, le même comportement peut être configuré pour tous les utilisateurs d’une organisation.
 
 > [!NOTE]
 > Les paramètres d’interaction pour le bouton d’actualisation et pour l’ancrage du pied de page du rapport n’ont actuellement pas d’effet sur les rapports Report Server. Cela changera avec la version de Report Server de janvier.
@@ -96,7 +119,7 @@ Découvrez plus d’informations sur la [navigation personnalisée](https://powe
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Présentation de la nouvelle apparence de Power BI Mobile (version préliminaire) (iOS et Android)
 
-Nous avons actualisé notre application et introduit de nouvelles expériences, en ajoutant une page d’accueil qui fournit un accès rapide à votre contenu fréquemment utilisé ainsi que de nouveaux volets de navigation qui vous permettent de naviguer facilement dans l’application. Avec les expériences nouvelles et actualisées, vous pouvez maintenant trouver plus rapidement et plus facilement ce dont vous avez besoin, quand vous en avez besoin.
+Nous avons actualisé notre application et introduit de nouvelles expériences, en ajoutant une page d’accueil qui fournit un accès rapide à votre contenu fréquemment utilisé, ainsi que de nouveaux volets de navigation qui vous permettent de naviguer facilement dans l’application. Avec les expériences nouvelles et actualisées, vous pouvez maintenant trouver plus rapidement et facilement ce dont vous avez besoin, quand vous en avez besoin.
 Étant donné que la nouvelle apparence est en préversion, vous devez l’activer pour l’utiliser.
 En savoir plus sur la [Nouvelle apparence de Power BI Mobile](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -104,7 +127,7 @@ En savoir plus sur la [Nouvelle apparence de Power BI Mobile](https://powerbi.mi
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Accès sécurisé avec le proxy d’application Azure Active Directory (AD) (iOS et Android)
 
-Nous avons travaillé en partenariat avec l’équipe Azure Active Directory pour intégrer les applications Power BI Mobile au proxy d’application Azure Active Directory (AAD). Avec cette configuration, vous pouvez vous connecter au serveur de rapports hébergé dans les limites de l’entreprise à partir de l’application Power BI Mobile, sans devoir effectuer une configuration locale complexe. Pour plus d’informations, consultez [Intégration de Power BI Mobile et du proxy d’application Azure AD](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Découvrez [comment configurer le proxy d’application Azure AD et Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Nous avons travaillé en partenariat avec l’équipe Azure Active Directory pour intégrer les applications mobiles Power BI au proxy d’application Azure Active Directory (AAD). Avec cette configuration, vous pouvez vous connecter au serveur de rapports hébergé dans les limites de l’entreprise à partir de l’application Power BI Mobile, sans devoir effectuer une configuration locale complexe. Pour plus d’informations, consultez [Intégration de Power BI Mobile et du proxy d’application Azure AD](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Découvrez [comment configurer le proxy d’application Azure AD et Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juillet 2019
 
@@ -210,7 +233,7 @@ Le volet de filtre de rapport est désormais disponible pour les rapports en pay
 
 ### <a name="modern-visual-header"></a>En-tête de visuel moderne 
 
-Les rapports qui utilisent le nouvel « en-tête de visuel moderne » n'allouent plus d'espace aux en-têtes, ce qui a pour effet d'avoir moins d'espace vide et plus de place pour vos visualisations.
+Les rapports qui utilisent le nouvel « en-tête de visuel moderne » n’allouent plus d’espace aux en-têtes, ce qui a pour effet d’avoir moins d’espace vide et plus de place pour vos visualisations.
 
 ### <a name="enhance-presentation-mode-windows"></a>Mode de présentation amélioré (Windows)
 
@@ -264,7 +287,7 @@ Maintenant, vous pouvez créer un mode téléphone pour un rapport qui est déj�
 
 ### <a name="dashboard-commenting-ios-and-android"></a>Commentaires dans les tableaux de bord (iOS et Android) 
 
-Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec @mentioned votre message sur leur téléphone mobile.
+Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec @mentioned avec votre message sur leur téléphone mobile.
 
 Actuellement disponible sur les appareils iOS et Android. Prise en charge de Windows prochainement.
 
@@ -812,7 +835,7 @@ Améliorations apportées dans les applications mobiles Power BI : Android, iOS
 
 #### <a name="android"></a>Téléphone
 * Prise en charge des espaces de travail de groupe : collaborez avec des collègues dans des espaces de travail de groupe. 
-* Prise en charge des utilisateurs non authentifiés :  pour les quelques scénarios où les utilisateurs ne parviennent pas à se connecter à l’application, nous avons ajouté un moyen rapide et pratique de contacter le support technique et d’envoyer des commentaires.
+* Prise en charge des utilisateurs non authentifiés :  pour les quelques scénarios où les utilisateurs ne parviennent pas à se connecter à l’application, nous avons ajouté un moyen rapide et pratique de contacter le support et d’envoyer des commentaires.
 * Amélioration de l’expérience utilisateur lors de l’accès aux tableaux de bord à l’aide de la sécurité basée sur les rôles.          
 * Amélioration de la mise en forme des données des graphiques et de l’alignement de toutes les vignettes de tableau de bord. 
 
@@ -832,4 +855,3 @@ Améliorations apportées dans les applications mobiles Power BI : Android, iOS
 * Amélioration de l’expérience utilisateur lors de l’accès aux tableaux de bord à l’aide de la sécurité basée sur les rôles. 
 * Une nouvelle fonctionnalité vous permet de parcourir les vignettes de tableau de bord et de les explorer directement en mode focus sans avoir besoin de revenir au tableau de bord pour sélectionner la vignette suivante.
 * Autres améliorations de stabilité et de performances. 
-

@@ -7,13 +7,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: pashah
-ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.author: parshah
+ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565735"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78402010"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Conseils sur la planification de la capacité de Power BI Report Server
 Power BI Report Server est une solution d’informatique décisionnelle et de création de rapports en entreprise libre-service que les clients peuvent déployer localement, derrière le pare-feu d’entreprise. Cette solution combine la fonctionnalité de rapport interactif de Power BI Desktop avec la plateforme de serveur locale de SQL Server Reporting Services. En raison de l’utilisation croissante et intensive des analytiques et des rapports au sein des entreprises, la budgétisation de l’infrastructure matérielle et des licences logicielles nécessaires pour s’adapter à une base d’utilisateurs en entreprise peut représenter un défi. Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. Alors que les rapports, les requêtes et les modèles d’utilisation des organisations peuvent varier, les résultats présentés dans ce document, ainsi que les tests réels utilisés et la description détaillée de leur exécution, servent de point de référence pour tous les utilisateurs qui envisagent de planifier en amont le déploiement de Power BI Report Server.
@@ -66,10 +66,10 @@ Il existe 2 profils de charge de travail utilisés lors du test : Power BI Repo
 
 | Activité | Power BI Report Heavy, fréquence d’occurrence | Paginated Report Heavy, fréquence d’occurrence |
 | --- | --- | --- |
-| **Restitution de rapports Power BI** |60 % |10 % |
-| **Restitution de rapports paginés** |30% |60 % |
+| **Restitution de rapports Power BI** |60 % |10 % |
+| **Restitution de rapports paginés** |30 % |60 % |
 | **Restitution de rapports mobiles** |5 % |20 % |
-| **Opérations de portail web** |5 % |10 % |
+| **Opérations de portail web** |5 % |10 % |
 
 ### <a name="user-load"></a>Charge utilisateur
 Pour chaque série de tests, des tests ont été exécutés selon la fréquence spécifiée dans une des deux charges de travail. Les tests ont démarré avec 20 demandes utilisateur simultanées envoyées au serveur de rapports. La charge utilisateur a ensuite été augmentée progressivement jusqu’à ce que la fiabilité descende en dessous de la cible de 99 %.
@@ -143,4 +143,3 @@ Si vous souhaitez exécuter l’outil LoadTest de Reporting Services sur votre d
 5. Une fois que vous avez terminé le déploiement de l’environnement, suivez les instructions figurant sur le site https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution pour exécuter les tests.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

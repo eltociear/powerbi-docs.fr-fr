@@ -8,16 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/30/2020
-rLocalizationGroup: Common tasks
-ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.date: 03/09/2020
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888589"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114044"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -63,7 +65,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 3. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevrez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
    
-   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-subscribe-email.png)
+   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-email.png)
    
     L’actualisation de la page de rapport n’actualise pas le jeu de données. Seul le propriétaire du jeu de données peut actualiser manuellement un jeu de données. Pour rechercher le nom de propriétaire du ou des jeux de données sous-jacents, sélectionnez la liste déroulante dans la barre de menus ou recherchez l’e-mail d’abonnement d’origine.
    
@@ -73,11 +75,12 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 ## <a name="manage-your-subscriptions"></a>Gérer vos abonnements
 Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouveau **S’abonner** et choisissez **Gérer tous les abonnements** en bas à gauche (voir les captures d’écran ci-dessus). 
 
-![afficher tous les abonnements dans Mon espace de travail](./media/end-user-subscribe/power-bi-manage.png)
+![afficher tous les abonnements dans Mon espace de travail](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
 Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le rapport est supprimé par le propriétaire ou si le compte d’utilisateur qui a servi à créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+* Pour éviter que les e-mails relatifs à l’abonnement ne soient dirigés vers votre dossier de courrier indésirable, ajoutez l’alias d’e-mail Power Platform (PowerPlat-noreply@microsoft.com) à vos contacts. Si vous utilisez Microsoft Outlook, cliquez avec le bouton droit sur l’alias et sélectionnez **Ajouter aux contacts Outlook**. 
 * Les tableaux de bord comportant plus de 25 vignettes épinglées, ou quatre pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs. Nous vous conseillons de contacter le concepteur du tableau de bord pour lui demander de limiter le nombre de vignettes épinglées à moins de 25 et le nombre de pages de rapport dynamique épinglées à moins de quatre pour garantir un affichage correct dans les e-mails.  
 * Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
