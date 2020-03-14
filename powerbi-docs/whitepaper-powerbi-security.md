@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 656f7e532702cef8c38af96e8c9df49ffc36734a
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75304360"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381396"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -45,7 +45,7 @@ Chaque déploiement de Power BI est constitué de deux clusters : un cluster w
 
 ![Le WFE et le back-end](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le fichier WFE le plus proche de géographiquement pour distribuer efficacement les fichiers et le contenu statiques nécessaires aux utilisateurs, à l’exception des visuels personnalisés qui sont fournis à l’aide d' **Azure Content Delivery Network (CDN)**.
+Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le fichier WFE le plus proche de géographiquement pour distribuer efficacement les fichiers et le contenu statiques nécessaires aux utilisateurs, à l’exception des éléments visuels Power BI qui sont fournis à l’aide du **réseau de distribution de contenu (CDN) Azure**.
 
 ### <a name="the-wfe-cluster"></a>Le cluster WFE
 
@@ -127,7 +127,7 @@ Microsoft fournit également des centres de données pour des souverainetés. Po
 
 Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
-## <a name="user-authentication"></a>Authentification utilisateur
+## <a name="user-authentication"></a>Authentification des utilisateurs
 
 L’authentification utilisateur auprès du service Power BI se compose d’une série de requêtes, réponses et redirections entre le navigateur de l’utilisateur et le service Power BI ou les services Azure utilisés par Power BI. Cette séquence décrit le processus d’authentification utilisateur dans Power BI. Pour plus d’informations sur les options pour les modèles d’authentification utilisateur d’une organisation (modèles de connexion), consultez [Choosing a sign-in model for Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/) (Choix d’un modèle de connexion pour Office 365).
 
@@ -147,7 +147,7 @@ La séquence d’authentification utilisateur pour le service Power BI se dérou
 
 2. Le navigateur envoie à Microsoft Online Services un cookie qui a été obtenu à partir de la connexion, et ce cookie est inspecté par le **service ASP.NET** dans le **cluster WFE**.
 
-3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI******, qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
+3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI****** , qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
 
       - Le **jeton de sécurité AAD**
       - Les **informations de session**
@@ -172,9 +172,9 @@ Une requête d’importation de jeu de données se compose d’une collection de
 Le tableau suivant décrit les données Power BI en fonction du type de requête utilisé. Un **X** indique la présence de données Power BI quand vous utilisez le type de requête associé.
 
 
-|  |Importer  |DirectQuery  |Live Connect  |
+|  |Import  |DirectQuery  |Live Connect  |
 |---------|---------|---------|---------|
-|Schéma     |     X    |    X     |         |
+|Schema     |     X    |    X     |         |
 |Données de ligne     |    X     |         |         |
 |Mise en cache de données de visuels     |    X     |     X    |    X     |
 
@@ -200,7 +200,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>jeux de données ;
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -223,7 +223,7 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
         - Si le jeu de données est configuré pour l’actualisation, les informations d’identification sont stockées chiffrées dans la base de données Azure SQL Database du rôle Déplacement de données. La clé de chiffrement est stockée sur l’ordinateur exécutant la passerelle sur l’infrastructure du client.
         - Si le jeu de données n’est pas configuré pour l’actualisation, aucune information d’identification n’est stockée pour les sources de données.
 
-1. Data
+1. Données
 
     a. Analysis Services local et DirectQuery : rien n’est stocké dans le service Power BI.
 
@@ -241,7 +241,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 * Pour les données au repos dans Stockage Blob Azure, Power BI utilise le chiffrement côté client et HTTPS pour transférer les données vers le stockage, avec des vérifications d’intégrité pendant la récupération des données. Apprenez-en davantage sur la [sécurité de Stockage Blob Azure](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
 
-#### <a name="reports"></a>Reports
+#### <a name="reports"></a>Rapports
 
 1. Métadonnées (définition de rapport)
 
@@ -253,7 +253,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 2. Données statiques
 
-   Les données statiques comprennent des artefacts tels que des images d’arrière-plan et des visuels personnalisés.
+   Les données statiques incluent des artefacts tels que les images d’arrière-plan et les visuels de Power BI.
 
     &ensp; &ensp; un. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
 
@@ -274,7 +274,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 1. Caches : les données nécessaires aux visuels sur le tableau de bord sont généralement mises en cache et stockées chiffrées dans Azure SQL Database. Les autres vignettes telles que les visuels épinglés à partir d’Excel ou de SQL Server Reporting Services (SSRS) sont stockées dans Stockage Blob Azure en tant qu’images, et sont également chiffrées.
 
-2. Données statiques : cela comprend des artefacts tels que les images d’arrière-plan et les visuels personnalisés qui sont stockés et chiffrés dans Stockage Blob Azure.
+2. Données statiques, qui incluent des artefacts tels que des images d’arrière-plan et des éléments visuels de Power BI stockés, chiffrés, dans le stockage d’objets BLOB Azure.
 
 Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffrement de clé pour le compte du client, soit dans un magasin de secrets, soit dans Azure Key Vault.
 
@@ -282,7 +282,7 @@ Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffre
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>jeux de données ;
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -300,7 +300,7 @@ Les appareils non volatiles sont des appareils dont la mémoire persiste sans pu
     c. Envoi de données (push) : aucune (non applicable)
 
     d. ETL : aucune (rien n’est stocké sur le nœud de calcul et rien ne diffère de ce qui est mentionné dans la section **Données au repos** ci-dessus)
-4. Data
+4. Données
 
     Certains artefacts de données peuvent être stockés sur le disque des nœuds de calcul pour une durée limitée.
 
@@ -318,7 +318,7 @@ Avec chaque source de données, un utilisateur établit une connexion en fonctio
 
 Quand un utilisateur partage des requêtes, des tableaux de bord, des rapports ou des visualisations, l’accès à ces données et à ces visualisations dépend de la prise en charge de la sécurité au niveau du rôle par les sources de données sous-jacentes.
 
-Si une source de données sous-jacente prend en charge la **sécurité au niveau du rôle de Power BI******, le service Power BI appliquera cette sécurité au niveau du rôle et les utilisateurs ne disposant pas d’informations d’identification suffisantes pour accéder aux données sous-jacentes (qui peut être une requête utilisée dans un tableau de bord, un rapport ou autre artefact de données) ne verront pas les données pour lesquelles ils ne disposent pas de privilèges suffisants. Si l’accès aux données sous-jacentes d’un utilisateur est différent de celui de l’utilisateur qui a créé le tableau de bord ou le rapport, les visualisations et autres artefacts afficheront uniquement les données correspondant au niveau d’accès dont dispose l’utilisateur sur ces données.
+Si une source de données sous-jacente prend en charge la **sécurité au niveau du rôle de Power BI****** , le service Power BI appliquera cette sécurité au niveau du rôle et les utilisateurs ne disposant pas d’informations d’identification suffisantes pour accéder aux données sous-jacentes (qui peut être une requête utilisée dans un tableau de bord, un rapport ou autre artefact de données) ne verront pas les données pour lesquelles ils ne disposent pas de privilèges suffisants. Si l’accès aux données sous-jacentes d’un utilisateur est différent de celui de l’utilisateur qui a créé le tableau de bord ou le rapport, les visualisations et autres artefacts afficheront uniquement les données correspondant au niveau d’accès dont dispose l’utilisateur sur ces données.
 
 Si une source de données n’applique **pas** la sécurité au niveau du rôle, les informations d’identification de connexion de Power BI sont appliquées à la source de données sous-jacente ou, si d’autres informations d’identification sont fournies lors de la connexion, ces informations d’identification fournies sont appliquées. Quand un utilisateur charge des données dans le service Power BI à partir de sources de données n’appliquant pas la sécurité au niveau du rôle, les données sont stockées dans Power BI comme décrit dans la section **Stockage et déplacement de données** de ce document. Pour les sources de données n’appliquant pas la sécurité au niveau du rôle, quand les données sont partagées avec d’autres utilisateurs (par exemple dans un tableau de bord ou un rapport) ou qu’une actualisation des données a lieu, les informations d’identification d’origine sont utilisées pour accéder aux données ou les afficher.
 
@@ -347,8 +347,8 @@ Le tableau suivant indique la prise en charge de l’authentification basée sur
 
 | **Prise en charge de l’authentification basée sur les certificats** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
-| **Power BI** (connexion au service) | Pris en charge | Pris en charge | Non pris en charge |
-| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Pris en charge | Non pris en charge |
+| **Power BI** (connexion au service) | pris en charge | pris en charge | Non pris en charge |
+| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Prise en charge | Non pris en charge |
 
 Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune donnée personnelle n’est envoyée avec les données de télémétrie.
 
@@ -372,7 +372,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Comment les utilisateurs se connectent et accèdent aux sources de données quand ils utilisent Power BI ?**
 
-* **Power bi les informations d’identification et les informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse de messagerie ; Lorsqu’un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse de messagerie de connexion Power BIen tant qu’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
+* **Power bi les informations d’identification et les informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse de messagerie ; Lorsqu’un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse de messagerie de connexion Power BIen tant qu’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_ ), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_ ), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
 
 * **SQL Server Analysis Services et Power bi :** Pour les organisations qui utilisent des SQL Server Analysis Services locaux, Power BI offre la Power BI passerelle de données locale (qui est une **passerelle**, comme mentionné dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Pour plus d’informations sur les passerelles, consultez [passerelle de données locale](service-gateway-onprem.md).
 
@@ -438,16 +438,16 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
   En fonction des informations fournies lors d’une connexion initiale au service Power BI, le navigateur d’un utilisateur contacte le **CDN** Azure spécifié (ou, pour certains fichiers, le **WFE**) afin de télécharger la collection des fichiers communs spécifiés nécessaires pour permettre l’interaction du navigateur avec le service Power BI. La page du navigateur inclut alors le jeton AAD, les informations de session, l’emplacement du cluster **back-end** associé et la collection de fichiers téléchargés à partir du cluster **WFE** et du **CDN** Azure, pour toute la durée de la session de navigateur du service Power BI.
 
-**Pour les visuels personnalisés, est-ce que Microsoft effectue une évaluation de sécurité ou de confidentialité du code des visuels personnalisés avant de publier des éléments dans la galerie ?**
+**Pour Power BI visuels, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité du code visuel personnalisé avant de publier des éléments dans la Galerie ?**
 
-* No. Il incombe au client d’examiner le code de visuel personnalisé et de déterminer s’il est fiable. Tout le code des visuels personnalisés est exploité dans un environnement de bac à sable, afin que tout code errant dans un visuel personnalisé n’affecte pas le reste du service Power BI.
+* Non. Il incombe au client d’examiner le code de visuel personnalisé et de déterminer s’il est fiable. Tout le code des visuels personnalisés est exploité dans un environnement de bac à sable, afin que tout code errant dans un visuel personnalisé n’affecte pas le reste du service Power BI.
 
 **Y a-t-il d’autres visuels Power BI qui envoient des informations à l’extérieur du réseau client ?**
 
 * Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services.
 
 **Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie ?**
-* No. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
+* Non. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
 
 **Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau client ?**
 * Oui. Il incombe au client de passer en revue la politique de confidentialité de l’éditeur et de déterminer s’il faut installer l’application de modèle sur le locataire. En outre, le serveur de publication est chargé de notifier le comportement et les fonctionnalités de l’application.
@@ -477,10 +477,10 @@ Vos commentaires sont les bienvenus. Nous serions heureux de recevoir vos sugges
 Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 
 - [Groupes dans Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
-- [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
+- [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [API REST Power BI - Vue d’ensemble](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
+- [Passerelle de données locale](service-gateway-onprem.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-overview.md)
