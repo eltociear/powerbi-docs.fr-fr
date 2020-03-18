@@ -145,7 +145,7 @@
               href: ../desktop-grouping-and-binning.md
             - name: "Créer des visuels Power\_BI avec\_R"
               href: ../desktop-r-visuals.md
-            - name: Télécharger et utiliser des visuels personnalisés optimisés pour R
+            - name: "Télécharger et utiliser des visuels Power\_BI basés sur R dans Power\_BI"
               href: ../desktop-r-powered-custom-visuals.md
             - name: Appliquer le quadrillage et l’alignement sur la grille
               href: ../desktop-gridlines-snap-to-grid.md
