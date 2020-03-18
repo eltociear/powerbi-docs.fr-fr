@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79213600"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488588"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 
@@ -336,7 +336,7 @@ Il est important de reconnaître que le compte de Azure AD est utilisé ou cré�
 Contoso peut choisir l’une des trois approches suivantes : les utilisateurs invités titulaires d’une licence de leurs fournisseurs et organisations partenaires ont accès au contenu Power BI.
 
 > [!NOTE]
-> _Le niveau gratuit Azure ad B2B’s est suffisant pour utiliser Power bi avec Azure ad B2B. Certaines fonctionnalités avancées Azure AD B2B comme les groupes dynamiques requièrent des licences supplémentaires. Pour plus d’informations, reportez-vous à la documentation Azure ad B2B :_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Le niveau gratuit Azure ad B2B’s est suffisant pour utiliser Power bi avec Azure ad B2B. Certaines fonctionnalités avancées Azure AD B2B comme les groupes dynamiques requièrent des licences supplémentaires. Pour plus d’informations, reportez-vous à la documentation Azure ad B2B :_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Approche 1 : Contoso utilise Power BI Premium
 
@@ -517,7 +517,7 @@ Certaines expériences ne sont pas disponibles pour les utilisateurs invités au
 
 
 
-## <a name="governance"></a>Gouvernance
+## <a name="governance"></a>Governance
 
 ### <a name="additional-azure-ad-settings-that-affect-experiences-in-power-bi-related-to-azure-ad-b2b"></a>Paramètres de Azure AD supplémentaires qui affectent les expériences de Power BI relatives à Azure AD B2B
 
@@ -576,7 +576,7 @@ Pourquoi ne pas choisir cette alternative :
 
 ### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Autre option 2 : créer une application de Power BI Embedded personnalisée à l’aide de l’authentification personnalisée
 
-Une autre option pour Contoso consiste à créer sa propre application Power BI incorporée personnalisée avec l’authentification personnalisée ([« l’application possède les données »](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Si de nombreuses organisations n’ont pas le temps ou les ressources nécessaires pour créer une application personnalisée pour distribuer le contenu Power BI à leurs partenaires externes, il s’agit de la meilleure approche pour certaines organisations.
+Une autre option pour Contoso consiste à créer sa propre application Power BI incorporée personnalisée avec l’authentification personnalisée ([« l’application possède les données »](https://docs.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers)). Si de nombreuses organisations n’ont pas le temps ou les ressources nécessaires pour créer une application personnalisée pour distribuer le contenu Power BI à leurs partenaires externes, il s’agit de la meilleure approche pour certaines organisations.
 
 Souvent, les organisations ont des portails partenaires existants qui centralisent l’accès à toutes les ressources de l’Organisation pour les partenaires, permettent d’isoler des ressources organisationnelles internes et offrent aux partenaires des expériences rationalisées pour prendre en charge de nombreux partenaires et leurs utilisateurs individuels.
 
