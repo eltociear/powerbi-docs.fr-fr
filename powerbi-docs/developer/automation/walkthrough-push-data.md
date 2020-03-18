@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: c39c7234ec4bc1b632355f92bdfdec9dc2b21ae4
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079275"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488197"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
 L’API Power BI vous permet de transmettre des données à un jeu de données Power BI. Dans cet article, nous vous montrons comment transmettre un jeu de données Sales Marketing contenant une table Product dans un jeu de données existant.
 
-Avant de commencer, vous devez disposer d’un annuaire Azure Active Directory (Azure AD) et d’un [compte Power BI](../create-an-azure-active-directory-tenant.md).
+Avant de commencer, vous devez disposer d’un annuaire Azure Active Directory (Azure AD) et d’un [compte Power BI](../embedded/create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Étapes de transmission de données à un jeu de données
 
-* Étape 1 : [Inscrire une application auprès d’Azure AD](../register-app.md)
+* Étape 1 : [Inscrire une application auprès d’Azure AD](../embedded/register-app.md)
 * Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
 * Étape 3 : [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
 * Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
@@ -111,11 +111,11 @@ Pour un schéma de table Power BI, vous pouvez utiliser les types de données su
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>En savoir plus sur la transmission de données à Power BI
 
-Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application avec Azure AD](../register-app.md) dans le volet de navigation.
+Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application avec Azure AD](../embedded/register-app.md) dans le volet de navigation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [S’inscrire à Power BI](../create-an-azure-active-directory-tenant.md)  
+* [S’inscrire à Power BI](../embedded/create-an-azure-active-directory-tenant.md)  
 * [Présentation de JSON](https://json.org/)  
 * [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75757850"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436062"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
 
@@ -63,7 +63,7 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
    > 
    > 
 
-[VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
 
 ### <a name="create-a-filled-map"></a>Créer une carte choroplèthe
 1. Dans le volet Champs, sélectionnez le champ **Geo** \> **State** (Géo > État).    
@@ -130,7 +130,7 @@ Les données cartographiques peuvent être ambiguës.  Par exemple, il existe un
 
 Si vous disposez des autorisations nécessaires pour modifier le jeu de données dans Power BI Desktop, regardez cette vidéo en cas de doute sur les cartes.
 
-[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
+> [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM ]
 
 Si vous n’avez pas accès aux données de latitude et de longitude, mais que vous avez accès en modification au jeu de données, [suivez ces instructions pour mettre à jour votre jeu de données](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 

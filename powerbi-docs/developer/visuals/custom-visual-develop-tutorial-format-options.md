@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
-ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
+ms.openlocfilehash: 3d0dc39fbf6d1daf978292d0e5e43129e66376c7
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75498482"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381005"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel Power BI
 
@@ -287,4 +287,4 @@ Pour obtenir des conseils sur le débogage de votre élément visuel personnalis
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez lister le visuel que vous venez de développer pour que d’autres puissent s’en servir en l’envoyant à **AppSource**. Pour plus d’informations sur ce processus, reportez-vous à [Publier des visuels personnalisés dans AppSource](../office-store.md).
+Vous pouvez lister le visuel que vous venez de développer pour que d’autres puissent s’en servir en l’envoyant à **AppSource**. Pour plus d’informations sur ce processus, reportez-vous à [Publier des visuels Power BI dans AppSource](office-store.md).

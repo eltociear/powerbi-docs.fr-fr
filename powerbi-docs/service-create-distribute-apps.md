@@ -9,11 +9,11 @@ ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853644"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207870"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -50,7 +50,7 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
 
 2. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de création et de publication d’une application à partir de cet espace de travail.
    
-     ![Publier l'application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+     ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Dans **Configurer**, remplissez le nom et la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur de thème pour personnaliser cette dernière. Vous pouvez également ajouter un lien vers un site de support.
    

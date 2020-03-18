@@ -10,11 +10,11 @@ ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877513"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207824"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -39,7 +39,7 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
 
 2. Vous créez automatiquement un espace de travail mis à niveau, sauf si vous choisissez **Revenir au type classique**.
    
-     ![Nouvelle expérience d'espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Nouvelle expérience d’espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
      Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail basé sur un groupe Office 365](service-create-workspaces.md). 
 

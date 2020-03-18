@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427711"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207962"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
-Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](service-cognitive-services.md)**, **[Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** et **[Rapports paginés](paginated-reports-save-to-power-bi-service.md)**.
+Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](service-cognitive-services.md)** , **[Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** et **[Rapports paginés](paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -67,7 +67,7 @@ La charge de travail des jeux de données est activée par défaut et ne peut pa
 | **Nombre maximal de lignes intermédiaires** | Nombre maximal de lignes intermédiaires retournées par DirectQuery. La valeur par défaut est 1000000 et la plage autorisée est comprise entre 100000 et 2147483647. |
 | **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est définie par la référence SKU et la plage autorisée est comprise entre 0,1 et 10 Go. |
 | **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. |
-| **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible dans la charge de travail qui peut être utilisé pour exécuter une requête MDX ou DAX. |
+| **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible dans la charge de travail qui peut être utilisé pour exécuter une requête MDX ou DAX. La valeur par défaut est 0, ce qui entraîne l’application de la limite de mémoire de requête automatique propre à la référence SKU. |
 | **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. |
 | **Actualisation automatique des pages (préversion)** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages. |
 | **Intervalle minimal d'actualisation** | Si l’actualisation automatique de la page est activée, il s’agit de l’intervalle minimal autorisé pour l’intervalle d’actualisation de la page. La valeur par défaut est de cinq minutes, et la valeur minimale autorisée est d’une seconde. |
@@ -102,6 +102,14 @@ Utilisez ce paramètre pour contrôler l’impact des rapports qui consomment be
 Ce paramètre s’applique à toutes les requêtes DAX et MDX exécutées par les rapports Power BI, les rapports Analyser dans Excel, ainsi que d’autres outils susceptibles de se connecter via le point de terminaison XMLA.
 
 Notez que les opérations d’actualisation des données peuvent également exécuter des requêtes DAX dans le cadre de l’actualisation des vignettes de tableaux de bord et des caches de visuels une fois les données du jeu de données actualisées. De telles requêtes peuvent également échouer en raison de ce paramètre, ce qui peut faire apparaître l’opération d’actualisation des données en état d’échec, même si les données du jeu de données ont bien été mises à jour.
+
+Le paramètre par défaut est 0, ce qui entraîne l’application de la limite de mémoire de requête automatique propre à la référence SKU suivante.
+
+|                              | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Limite de mémoire de requête automatique | 1 Go     | 2 Go     | 2 Go     | 6 Go    | 6 Go    | 10 Go   |
+|                              |          |          |          |         |         |         |
+
 
 #### <a name="query-timeout"></a>Délai d’expiration de la requête
 
@@ -200,7 +208,7 @@ L’[application Métriques de capacité Power BI Premium](service-admin-premium
 
 [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)     
 [Préparation des données en libre-service dans Power BI avec des dataflows](service-dataflows-overview.md)   
-[Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)   
+[Présentation des rapports paginés dans Power BI Premium](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Actualisation automatique des pages dans Power BI Desktop (préversion)](desktop-automatic-page-refresh.md)
 
 D’autres questions ? [Poser des questions à la communauté Power BI](https://community.powerbi.com/)

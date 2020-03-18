@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f9832948fdd25d1bd807e0ff5d916b08b55aea95
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155016"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487806"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
 
@@ -128,7 +128,7 @@ Si vous avez besoin d’autoriser des utilisateurs externes à modifier et gére
 
 ### <a name="developer-settings"></a>Paramètres de développement
 
-Il existe deux paramètres de locataire associés à l’[incorporation de contenu Power BI](../developer/embedding.md). Il s'agit de :
+Il existe deux paramètres de locataire associés à l’[incorporation de contenu Power BI](../developer/embedded/embedding.md). Il s'agit de :
 
 - Incorporer du contenu dans des applications (activé par défaut)
 - Autoriser les principaux de service à utiliser les API Power BI (désactivé par défaut)

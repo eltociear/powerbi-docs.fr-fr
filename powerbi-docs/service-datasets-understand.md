@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: eaa4354ed7355c0e01d9f75675cb7fed4bdc9d96
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 6170217119e443a2eb24aac056623dce5070303e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74133724"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79208008"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Jeux de données dans le service Power BI
 
@@ -26,7 +26,7 @@ Les jeux de données Power BI représentent une source de données prêtes pour
 - Connexion à un modèle de données existant non hébergé dans une capacité Power BI
 - Chargement d'un fichier Power BI Desktop contenant un modèle
 - Chargement d'un classeur Excel (contenant un ou plusieurs tableaux Excel et/ou un modèle de données de classeur), ou chargement d'un fichier CSV (valeurs séparées par des virgules)
-- Utilisation du service Power BI pour créer un [jeu de données push](developer/walkthrough-push-data.md)
+- Utilisation du service Power BI pour créer un [jeu de données push](developer/automation/walkthrough-push-data.md)
 - Utilisation du service Power BI pour créer un [jeu de données de streaming ou de streaming hybride](service-real-time-streaming.md)
 
 À l'exception des jeux de données de streaming, le jeu de données représente un modèle de données qui tire parti des technologies de modélisation éprouvées d’[Analysis Services](/analysis-services/analysis-services-overview).

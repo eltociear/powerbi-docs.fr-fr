@@ -1,19 +1,19 @@
 ---
 title: Application Power BI pour la réalité mixte (Preview)
 description: Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou dans le contexte de votre environnement.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mshenhav
-ms.openlocfilehash: 04a77aa9a5a464baf0ce1c9a88604d84ad0feb53
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879120"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205915"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou placez-les dans des emplacements spécifiques du contexte de votre environnement. 
@@ -70,7 +70,7 @@ Cette commande place un tableau de bord ou un rapport sur un mur ou un objet, ou
 
 **« Go home »** (Aller à l’accueil)
 
-Dites « go home » pour revenir à la vue Windows classique de Power BI. 
+Dites « go home » pour revenir à l’affichage Windows classique de Power BI. 
 
 **« Remove »** (Supprimer)
 

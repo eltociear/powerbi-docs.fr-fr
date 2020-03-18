@@ -11,11 +11,11 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558686"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207456"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -43,7 +43,7 @@ La plupart des opérations de gestion des sources de données peuvent également
 
     ![Paramètres de la source de données](media/service-gateway-data-sources/data-source-settings.png)
 
-5. Pour SQL Server, vous choisissez la **Méthode d’authentification****Windows** ou **De base** (Authentification SQL). Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
+5. Pour SQL Server, vous choisissez la **Méthode d’authentification** **Windows** ou **De base** (Authentification SQL). Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
 
 6. Sous **Paramètres avancés**, vous pouvez configurer [Authentification unique (SSO)](service-gateway-sso-overview.md) pour votre source de données. 
 

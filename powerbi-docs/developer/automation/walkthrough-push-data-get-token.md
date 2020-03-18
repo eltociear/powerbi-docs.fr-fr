@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: 4b1c890a69863f3e05dee052efe9529b174f0874
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488266"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 
 Cet article constitue la deuxième étape de la série [Envoyer (push) des données vers un jeu de données Power BI](walkthrough-push-data.md).
 
-Dans l’étape 1, vous avez [inscrit une application cliente dans Azure AD](../register-app.md). Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à Azure Active Directory dans le but de fournir un système de connexion et d’autorisation sécurisé à votre application. Votre application utilise un jeton pour s’authentifier auprès d’Azure AD et accéder aux ressources Power BI.
+Dans l’étape 1, vous avez [inscrit une application cliente dans Azure AD](../embedded/register-app.md). Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à Azure Active Directory dans le but de fournir un système de connexion et d’autorisation sécurisé à votre application. Votre application utilise un jeton pour s’authentifier auprès d’Azure AD et accéder aux ressources Power BI.
 
 ## <a name="get-an-authentication-access-token"></a>Obtenir un jeton d’accès d’authentification
 
-Avant de commencer, vérifiez que vous avez effectué l’[étape précédente](../register-app.md) de la série [Envoyer (push) des données vers un jeu de données Power BI](walkthrough-push-data.md). 
+Avant de commencer, vérifiez que vous avez effectué l’[étape précédente](../embedded/register-app.md) de la série [Envoyer (push) des données vers un jeu de données Power BI](walkthrough-push-data.md). 
 
 Cette procédure nécessite Visual Studio 2015 ou version ultérieure.
 
@@ -39,7 +39,7 @@ Cette procédure nécessite Visual Studio 2015 ou version ultérieure.
 
 3. Dans le fichier Program.cs, ajoutez l’exemple de code figurant après ces étapes.
 
-4. Remplacez « {ClientID} » par l’**ID Client** que vous avez obtenu dans l’[article précédent de la série](../register-app.md), lorsque vous avez inscrit votre application.
+4. Remplacez « {ClientID} » par l’**ID Client** que vous avez obtenu dans l’[article précédent de la série](../embedded/register-app.md), lorsque vous avez inscrit votre application.
 
 5. Exécutez l’application console, puis connectez-vous à votre compte Power BI. 
 

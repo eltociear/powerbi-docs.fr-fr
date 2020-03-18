@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: ee4ac2db9d27129172797db9743790b5175dcd89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 097dea720db6314bdb1fc9f51259196e4db44032
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880075"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380208"
 ---
 # <a name="the-visual-filters-api-in-power-bi-visuals"></a>API Filtres de visuels dans les visuels Power BI
 
@@ -281,7 +281,7 @@ Quand vous changez de signet, Power BI appelle la méthode `update` du visuel, e
 
 L’image suivante montre un exemple de code de filtre JSON :
 
-![Code de filtre JSON](./media/json-filter.png)
+![Code de filtre JSON](media/filter-api/json-filter.png)
 
 ### <a name="clear-the-json-filter"></a>Effacer le filtre JSON
 

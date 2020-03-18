@@ -9,11 +9,11 @@ ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
 ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548529"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205662"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>Présentation rapide de la page d’accueil de l’application Mobile
 Cette présentation va vous permettre de vous familiariser avec la page d’accueil de l’application Power BI Mobile, ainsi qu’avec les aides à la navigation qu’elle fournit pour accéder rapidement à tout ce dont vous avez besoin.

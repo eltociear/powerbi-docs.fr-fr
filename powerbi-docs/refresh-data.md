@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039038"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488795"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -76,7 +76,7 @@ Bien que le mode DirectQuery et le mode LiveConnect soient similaires en ce sens
 Les jeux de données Push ne contiennent pas de définition formelle d’une source de données. Vous n’êtes donc pas obligé de procéder à une actualisation des données dans Power BI. Vous les actualisez en envoyant (push) vos données dans le jeu de données par le biais d’un service ou d’un processus externe, tel que Azure Stream Analytics. Il s’agit d’une approche courante pour l’analyse en temps réel avec Power BI. Power BI continue d’actualiser le cache pour toutes les vignettes utilisées sur un jeu de données Push. Pour obtenir une procédure pas à pas, consultez [Tutoriel : Stream Analytics et Power BI : tableau de bord d’analyse en temps réel pour le streaming des données](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Le mode Push présente plusieurs limitations qui sont décrites dans [Limites de l’API REST de Power BI](developer/api-rest-api-limitations.md).
+> Le mode Push présente plusieurs limitations qui sont décrites dans [Limites de l’API REST de Power BI](developer/automation/api-rest-api-limitations.md).
 
 ### <a name="power-bi-refresh-types"></a>Types d’actualisation Power BI
 
@@ -187,7 +187,7 @@ La connexion d’un jeu de données à une passerelle d’entreprise est relativ
 
 ![Ajouter à la passerelle](media/refresh-data/add-to-gateway.png)
 
-Veillez à mapper la bonne définition de source de données à votre source de données. Comme l’illustre la capture d’écran ci-dessus, les administrateurs de passerelle peuvent créer plusieurs définitions sur une seule passerelle connectée à la même source de données, chacune avec différentes informations d’identification. Dans l’exemple montré, le propriétaire d’un jeu de données du service des ventes choisirait la définition de source de données AdventureWorksProducts-Sales, tandis que le propriétaire d’un jeu de données du service de support mapperait le jeu de données à la définition de source de données AdventureWorksProducts-Support. Si les noms de la définition de source de données ne sont pas intuitifs, contactez votre administrateur de passerelle pour savoir quelle définition choisir.
+Veillez à mapper la bonne définition de source de données à votre source de données. Comme l’illustre la capture d’écran ci-dessus, les administrateurs de passerelle peuvent créer plusieurs définitions sur une seule passerelle connectée à la même source de données, chacune avec différentes informations d’identification. Dans l’exemple montré, le propriétaire d’un jeu de données du service des ventes choisirait la définition de source de données AdventureWorksProducts-Sales, tandis que le propriétaire d’un jeu de données du service de support mapperait le jeu de données à la définition de source de données AdventureWorksProducts-Support. Si le nom des définitions de source de données n’est pas intuitif, contactez votre administrateur de passerelle pour savoir quelle définition choisir.
 
 > [!NOTE]
 > Un jeu de données ne peut utiliser qu’une seule connexion de passerelle. En d’autres termes, il n’est pas possible d’accéder à des sources de données locales avec plusieurs connexions de passerelle. Vous devez donc ajouter toutes les définitions de source de données nécessaires à la même passerelle.
@@ -317,7 +317,7 @@ L’icône d’avertissement permet d’indiquer les problèmes actuels liés au
 
 ## <a name="automatic-page-refresh"></a>Actualisation automatique de la page
 
-L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet aux créateurs de rapports de définir un intervalle d’actualisation pour les visuels dans une page qui est uniquement active lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié et des paramètres d’administration de la capacité pour les espaces de travail Premium et les [espaces de travail incorporés](developer/embedding.md).
+L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet aux créateurs de rapports de définir un intervalle d’actualisation pour les visuels dans une page qui est uniquement active lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié et des paramètres d’administration de la capacité pour les espaces de travail Premium et les [espaces de travail incorporés](developer/embedded/embedding.md).
 
 Pour plus d’informations sur l’actualisation automatique de la, consultez l’article [Actualisation automatique de la page](desktop-automatic-page-refresh.md).
 

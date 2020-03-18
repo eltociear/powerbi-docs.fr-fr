@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879954"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379534"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
@@ -381,7 +381,7 @@ npm run test
 
 `karma.js` exécute le cas de test dans le navigateur Chrome.
 
-![Karma JavaScript ouvert dans Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript ouvert dans Chrome](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > Vous devez installer Google Chrome localement.
@@ -453,7 +453,7 @@ La classe `SampleBarChartDataBuilder` étend `TestDataViewBuilder` et implément
 
 Quand vous placez des données dans des compartiments de champs de données, Power BI produit un objet `dataview` catégorique basé sur vos données.
 
-![Compartiments de champs de données](./media/fields-buckets.png)
+![Compartiments de champs de données](media/unit-tests-introduction/fields-buckets.png)
 
 Dans les tests unitaires, vous n’avez pas de fonctions principales Power BI pour reproduire les données. Toutefois, vous devez mapper vos données statiques au `dataview` catégorique. La classe `TestDataViewBuilder` peut vous aider à les mapper.
 
@@ -596,23 +596,23 @@ Lines        : 52.83% ( 112/212 )
 
 Votre visuel s’ouvre dans le navigateur Chrome, comme indiqué ci-dessous :
 
-![Lancements d’UT dans Chrome](./media/karmajs-chrome-ut-runned.png)
+![Lancements d’UT dans Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 Le résumé indique que la couverture a augmenté. Pour en savoir plus sur la couverture du code actuelle, ouvrez `coverage\index.html`.
 
-![Index de couverture d’UT](./media/code-coverage-index.png)
+![Index de couverture d’UT](media/unit-tests-introduction/code-coverage-index.png)
 
 Ou examinez l’étendue du dossier `src` :
 
-![Couverture du dossier src](./media/code-coverage-src-folder.png)
+![Couverture du dossier src](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 Dans l’étendue du fichier, vous pouvez voir le code source. Les utilitaires `Coverage` mettent en surbrillance la ligne en rouge si du code n’a pas été exécuté pendant les tests unitaires.
 
-![Couverture du code du fichier visual.ts](./media/code-coverage-visual-src.png)
+![Couverture du code du fichier visual.ts](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > La couverture du code ne signifie pas que vous avez une bonne couverture des fonctionnalités du visuel. Un simple test unitaire fourni plus de 96 pour cent de couverture dans `src\visual.ts`.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Quand votre visuel est prêt, vous pouvez le soumettre pour publication. Pour plus d’informations, consultez [Publier des visuels Power BI dans AppSource](../office-store.md).
+Quand votre visuel est prêt, vous pouvez le soumettre pour publication. Pour plus d’informations, consultez [Publier des visuels Power BI dans AppSource](office-store.md).

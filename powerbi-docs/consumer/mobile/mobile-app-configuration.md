@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496751"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205547"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurer à distance l’application Power BI à l’aide d’un outil MDM
 
@@ -22,8 +22,8 @@ L’application Power BI Mobile pour iOS et Android prend en charge des paramè
 L’application Power BI Mobile pour prend en charge les scénarios de configuration suivants :
 
 * Configuration du serveur de rapports (iOS et Android)
-* Paramètres de protection des données (iOS et Android)
-* Paramètres d’interaction (Android)
+* Paramètres de protection des données (iOS)
+* Paramètres d’interaction (iOS et Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Configuration du serveur de rapports (iOS et Android)
 
@@ -38,20 +38,24 @@ L’application Power BI pour iOS et Android permet aux administrateurs d’env
 
 ## <a name="data-protection-settings-ios"></a>Paramètres de protection des données (iOS)
 
-L’application Power BI pour iOS et Android permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code pour accéder à l’application Power BI.
+L’application Power BI pour iOS permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code pour accéder à l’application Power BI.
 
 | Key | Type | Description |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booléen | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID, peut être nécessaire pour accéder à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
 
-## <a name="interaction-settings-android"></a>Paramètres d’interaction (Android)
+## <a name="interaction-settings-ios-and-android"></a>Paramètres d’interaction (iOS et Android)
 
-L’application Power BI pour Android offre aux administrateurs la possibilité de configurer des paramètres d’interaction s’il est décidé que les paramètres d’interaction par défaut doivent être changés pour les groupes d’utilisateurs d’une organisation. 
+L’application Power BI pour iOS et Android offre aux administrateurs la possibilité de configurer des paramètres d’interaction s’il est décidé que les paramètres d’interaction par défaut doivent être changés pour les groupes d’utilisateurs d’une organisation.
+
+>[!NOTE]
+>À l’heure actuelle, toutes les interactions ne sont pas prises en charge sur tous les appareils. Pour accéder au graphe indiquant la disponibilité actuelle selon les appareils, consultez [Configuration des paramètres d’interaction des rapports](mobile-app-interaction-settings.md).
 
 | Key | Type | Valeurs | Description |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | Chaîne |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configurer si l ’appui sur un visuel sélectionne également un point de données. |
-| com.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur a un bouton pour actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Chaîne |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configurer si le fait d’appuyer sur un visuel a également pour effet de sélectionner un point de données. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Booléen |  <nobr>True</nobr><br><nobr>False</nobr> | Configurer si le fait d’appuyer sur un point de données a pour effet de remplacer ou de s’ajouter à la sélection actuelle. |
+| com.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur dispose d’un bouton permettant d’actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Chaîne |  docked<br>dynamique | Configurer si le pied de page des rapports est ancré en bas du rapport ou s’il est masqué automatiquement. |
 
 ## <a name="deploying-app-configuration-settings"></a>Déploiement des paramètres de configuration d’application

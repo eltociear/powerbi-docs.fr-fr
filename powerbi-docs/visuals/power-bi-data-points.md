@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885249"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381442"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
 
@@ -74,7 +74,7 @@ Consultez [Fonctionnement de l’échantillonnage de ligne](../desktop-high-dens
 ### <a name="combo-chart"></a>Graphique combiné
  Utilise les mêmes stratégies que l’histogramme. Notez que la ligne dans le **graphique combiné** n’utilise pas l’algorithme haute densité utilisé par le **graphique en courbes**.
 
-### <a name="custom-visuals"></a>Visuels personnalisés
+### <a name="power-bi-visuals"></a>Visuels Power BI
 Leur nombre peut atteindre 30 000 mais c’est aux auteurs des visuels d’indiquer les stratégies à utiliser. La limite par défaut est de 1 000, mais le créateur du visuel peut la changer, jusqu’à un maximum de 30 000.
 
 ### <a name="doughnut"></a>Anneau

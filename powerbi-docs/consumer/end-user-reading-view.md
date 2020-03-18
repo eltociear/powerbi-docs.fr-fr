@@ -10,29 +10,32 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2019
+ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eeffb4c0fb7db57eacf18818275716db42679f6e
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862688"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206030"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Démarrage rapide : Découvrir les fonctionnalités de Power BI pour les *consommateurs*
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 Dans ce démarrage rapide, vous allez apprendre à interagir avec Power BI pour découvrir des insights d’entreprise pilotés par les données. Cet article n’est pas destiné à aller au fond des choses. Il brosse en revanche un tableau rapide de la plupart des actions accessibles aux **consommateurs** de Power BI.
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ## <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ? 
-Power BI est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en insights cohérents, visuellement immersifs et interactifs. Quelle que soit la nature de vos données, une simple feuille de calcul Excel ou une collection de données de différentes sources de données, Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser (ou découvrir) les informations importantes et de les partager avec les personnes de votre choix. 
+Power BI est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en insights cohérents, visuellement immersifs et interactifs. Quelle que soit la nature de vos données, une simple feuille de calcul Excel ou une collection de données provenant de différentes sources, Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser (ou de découvrir) les informations importantes et de les partager avec les personnes de votre choix. 
 
 ![Icône Obtenir des applications](./media/end-user-reading-view/power-bi-conceptual.png)
 
 ## <a name="reading-view"></a>Mode Lecture
 Le mode Lecture est accessible dans le service Power BI aux *utilisateurs* de rapports. Quand un collègue partage un rapport, un tableau de bord ou une application avec vous, le mode Lecture vous permet d’explorer et d’interagir avec ce rapport. 
 
-Il vous suffit d’ouvrir le service Power BI dans un navigateur ou sur un appareil mobile. Vos collègues et vous-même travaillez à partir des mêmes applications, tableaux de bord et rapports approuvés, qui sont mis à jour et actualisés automatiquement : vous travaillez donc toujours avec le contenu le plus récent.   
+Il vous suffit d’ouvrir le service Power BI dans un navigateur ou sur un appareil mobile. Vos collègues et vous-même travaillez à partir des mêmes applications, tableaux de bord et rapports approuvés, qui sont mis à jour et actualisés automatiquement : vous partez donc toujours du contenu le plus récent.   
 
 Comme le contenu n’est pas statique, vous pouvez l’explorer, à la recherche de tendances, d’insights et d’autres données décisionnelles. Segmentez le contenu et posez même des questions avec vos propres mots. Vous pouvez aussi ne rien faire et laisser vos données découvrir des insights qui vous intéressent, et vous envoyer des alertes quand des données sont modifiées et des rapports par e-mail selon une planification que vous définissez. Toutes vos données, à tout moment, dans le cloud ou localement, depuis n’importe quel appareil. 
 
@@ -182,11 +185,11 @@ Avec un visuel actif, sélectionnez **Plus d’options** (...) et choisissez **A
 
 
 ### <a name="export-data-to-excel"></a>Exporter des données vers Excel
-En plus d’afficher les données utilisées pour créer un visuel, vous pouvez également exporter ces données et les consulter dans Microsoft Excel. Lorsque vous exportez vers Excel, vous créez un document séparé, une feuille de calcul qui ne fait pas partie de Power BI. Les changements que vous apportez dans le fichier Excel n’ont pas d’impact sur les données de Power BI. Que vous souhaitiez examiner de plus près les données ou utiliser les données dans une autre application ou à d’autres fins, Power BI vous offre cette flexibilité.
+En plus d’afficher les données utilisées pour créer un visuel, vous pouvez également exporter ces données et les consulter dans Microsoft Excel. Lorsque vous exportez vers Excel, vous créez un document distinct, une feuille de calcul qui ne fait pas partie de Power BI. Les changements que vous effectuez dans le fichier Excel n’ont pas d’impact sur les données de Power BI. Que vous souhaitiez examiner de plus près les données ou utiliser les données dans une autre application ou à d’autres fins, Power BI vous offre cette flexibilité.
 
 ![données exportées vers Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
 
-<!-- Exporting isn’t limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
+<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
 
 ![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 

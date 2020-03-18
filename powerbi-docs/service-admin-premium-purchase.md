@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427734"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488611"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Acheter Power BI Premium
 
@@ -112,7 +112,7 @@ Lorsque vous annulez votre abonnement Premium ou que votre licence de capacité 
 
 Vous pouvez acheter des références SKU A par le biais du service Azure Power BI Embedded. Utilisez ensuite vos références SKU A pour :
 
-- Permettre l’incorporation de Power BI dans des applications tierces. Pour plus d’informations, consultez [Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+- Permettre l’incorporation de Power BI dans des applications tierces. Pour plus d’informations, consultez [Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 - Tester les fonctionnalités Premium avant d’acheter une référence SKU P.
 

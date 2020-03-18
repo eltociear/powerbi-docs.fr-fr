@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74696625"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380817"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
@@ -185,7 +185,7 @@ export class Visual implements IVisual {
 
 Par conséquent, le visuel affiche une seule valeur de Power BI :
 
-![Exemple de visuel de mappage de vues de données unique](./media/visual-simple-dataview-mapping.png)
+![Exemple de visuel de mappage de vues de données unique](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Mappage de données par catégorie
 
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 Résultat du visuel :
 
-![Visuel avec mappage de vues de données catégoriques](./media/categorical-data-view-mapping-visual.png)
+![Visuel avec mappage de vues de données catégoriques](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Mappage de données de table
 
@@ -508,7 +508,7 @@ Avec les fonctionnalités données :
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
@@ -557,7 +557,7 @@ Exemple de données :
 
 Liaison de données :
 
-![Liaisons de données de mappage de vues de données de tables](./media/table-dataview-mapping-data.png)
+![Liaisons de données de mappage de vues de données de tables](media/dataview-mappings/table-dataview-mapping-data.png)
 
 Power BI affiche vos données en tant que vue de données de table. Vous ne devez pas assumer que les données sont triées.
 
@@ -603,7 +603,7 @@ Power BI affiche vos données en tant que vue de données de table. Vous ne deve
 
 Vous pouvez agréger les données en sélectionnant le champ souhaité, puis en sélectionnant Sum.  
 
-![Agrégation des données](./media/data-aggregation.png)
+![Agrégation des données](media/dataview-mappings/data-aggregation.png)
 
 Exemple de code pour traiter un mappage de vues de données de tables.
 
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![Visuel avec mappage de vues de données de tables](./media/table-dataview-mapping-visual.png)
+![Visuel avec mappage de vues de données de tables](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Mappage de données de matrice
 
@@ -767,7 +767,7 @@ Jeu de données :
 
 Le visuel de matrice principale de Power BI affiche les données sous forme de table.
 
-![Visuel de tableau](./media/matrix-visual-smaple.png)
+![Visuel de tableau](media/dataview-mappings/matrix-visual-smaple.png)
 
 Le visuel obtient sa structure de données comme décrit dans le code suivant (seules les deux premières lignes de la table sont présentées ici) :
 

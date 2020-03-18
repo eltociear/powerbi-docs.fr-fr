@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 3ff7eb4a771ed8c65d18262f61170f312049a898
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079413"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488429"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
 
@@ -25,10 +25,10 @@ Voici quelques opérations possibles avec les API Power BI.
 
 | **Pour en savoir plus** | **Référencer ces informations** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Incorporer des rapports, des tableaux de bord et des vignettes pour les utilisateurs de Power BI et ceux qui n’utilisent pas Power BI. | [Guide pratique pour incorporer vos tableaux de bord, rapports et vignettes Power BI](../embed-sample-for-customers.md) |
+| Incorporer des rapports, des tableaux de bord et des vignettes pour les utilisateurs de Power BI et ceux qui n’utilisent pas Power BI. | [Guide pratique pour incorporer vos tableaux de bord, rapports et vignettes Power BI](../embedded/embed-sample-for-customers.md) |
 | Effectuez des tâches de gestion sur des objets Power BI. | [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/) |
 | Étendre un workflow d’entreprise existant pour transmettre des données clés à un tableau de bord Power BI. | [Transmettre des données à un tableau de bord ](walkthrough-push-data.md) |
-| Authentifiez-vous sur Power BI. | [S’authentifier sur Power BI ](../get-azuread-access-token.md) |
+| Authentifiez-vous sur Power BI. | [S’authentifier sur Power BI ](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
 > Les API Power BI font encore référence aux espaces de travail en tant que groupes. Toutes les références à des groupes indiquent que vous utilisez des espaces de travail.

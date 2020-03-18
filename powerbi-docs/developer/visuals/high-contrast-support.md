@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 021040706ff34f43c6a7772849f2e27181041bc9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 56ebfeb8c1c52b83f5be0ca9e9db6f312986dd57
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880046"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380129"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Prise en charge du mode Contraste élevé dans les visuels Power BI
 
@@ -82,9 +82,9 @@ Les visuels Power BI natifs suivent ces instructions :
 
 Dans l’exemple de graphique à barres suivant, toutes les barres sont dessinées avec un remplissage d’arrière-plan et un contour de premier plan épais de deux pixels. Comparez son apparence avec les couleurs par défaut et quelques thèmes à contraste élevé :
 
-![Exemple de graphique à barres avec des couleurs standard](./media/hc-samplebarchart-standard.png)
-![Exemple de graphique à barres utilisant le thème de couleur *Sombre 2*](./media/hc-samplebarchart-dark2.png)
-![Exemple de graphique à barres utilisant le thème de couleur *Blanc*](./media/hc-samplebarchart-white.png)
+![Exemple de graphique à barres avec des couleurs standard](media/high-contrast-support/hc-samplebarchart-standard.png)
+![Exemple de graphique à barres utilisant le thème de couleur *Sombre 2*](media/high-contrast-support/hc-samplebarchart-dark2.png)
+![Exemple de graphique à barres utilisant le thème de couleur *Blanc*](media/high-contrast-support/hc-samplebarchart-white.png)
 
 La section suivante affiche un emplacement dans la fonction `visualTransform` qui a été changé pour prendre en charge le contraste élevé. Elle est appelée dans le cadre du rendu pendant la mise à jour.
 

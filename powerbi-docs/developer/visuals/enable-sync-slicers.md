@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 055878988a197b80a8e4842a6567966f75af2ce5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 88e7e4b83f303f2b366f276b5020194f55f21f25
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880141"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380713"
 ---
 # <a name="sync-slicers-in-power-bi-visuals"></a>Synchroniser les segments dans les visuels Power BI
 
@@ -38,6 +38,6 @@ Une fois que vous avez mis à jour le fichier *capabilities.json*, vous voyez le
 > [!NOTE]
 > La fonctionnalité Synchroniser les segments peut s’utiliser pour un seul champ. Si votre segment comporte plusieurs champs (**Catégorie** ou **Mesure**), la fonctionnalité est désactivée.
 
-![Le volet « Synchroniser les segments »](./media/sync-slicers-panel.png)
+![Le volet « Synchroniser les segments »](media/enable-sync-slicers/sync-slicers-panel.png)
 
 Dans le panneau **Synchroniser les segments**, vous pouvez voir que les options de visibilité et de filtrage de votre segment sont applicables à plusieurs pages de rapport.

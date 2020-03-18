@@ -1,19 +1,19 @@
 ---
 title: Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 description: Le service Power BI vous permet de créer des tableaux de bord et des rapports ou de vous y connecter. Affichez-les ensuite dans les applications mobiles Power BI.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/05/2019
-ms.author: mshenhav
-ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218340"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205524"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -70,11 +70,11 @@ Voici un tableau de bord Power BI dans le service Power BI :
    ![Navigation](./media/mobile-apps-view-dashboard/power-bi-iphone-breadcrumb.png)
 
 ### <a name="view-dashboards-in-landscape-mode-in-your-iphone"></a>Afficher les tableaux de bord en mode paysage sur votre iPhone
-Faites simplement pivoter votre téléphone pour afficher les tableaux de bord en mode paysage. La disposition du tableau de bord passe d’une série de vignettes à une vue du tableau de bord dans son ensemble. Vous voyez toutes les vignettes du tableau de bord disposées comme elles le sont dans le service Power BI.
+Faites simplement pivoter votre téléphone pour afficher les tableaux de bord en mode paysage. La disposition du tableau de bord passe d’une série de vignettes à l’affichage du tableau de bord dans son ensemble. Toutes les vignettes du tableau de bord sont disposées comme dans le service Power BI.
 
-![Mode Paysage du tableau de bord](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
+![Mode paysage du tableau de bord](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
-Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
+Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou faire un panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 
 ## <a name="view-dashboards-on-your-ipad"></a>Afficher des tableaux de bord sur votre iPad
 1. Ouvrez l’application Power BI.
@@ -138,12 +138,12 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
    
-   Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
+   Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou faire un panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 5. Pour revenir à la page d’accueil des tableaux de bord, appuyez sur le nom du tableau de bord pour ouvrir le cheminement de navigation, puis appuyez sur **Mon espace de travail** :
    
     ![Navigation](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
-    Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
+    Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou faire un panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Créer une vue téléphone d’un tableau de bord dans le service Power BI
 Si vous êtes le propriétaire du tableau de bord, *dans le service Power BI*, vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 

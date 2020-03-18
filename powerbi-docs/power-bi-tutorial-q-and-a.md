@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 183ce11457069612f84bb834d7060a047cae1866
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 71a727d1d7e39661ed86a4fdf574e3f1fa8fb595
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73875092"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488864"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Utiliser la fonctionnalité Questions et réponses Power BI pour explorer vos données et créer des visuels
 
 Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. La fonctionnalité Questions et réponses de Power BI vous permet d’explorer vos données avec vos propres mots.  La première partie de cet article explique comment utiliser la fonctionnalité Questions et réponses avec des tableaux de bord dans le service Power BI. La deuxième partie montre ce que Questions et réponses vous permet de faire lorsque vous créez des rapports dans le service Power BI ou dans Power BI Desktop. Pour plus d’informations, consultez l’article [Questions et réponses pour les consommateurs](consumer/end-user-q-and-a.md). 
 
-[Questions et réponses dans les apps mobiles Power BI](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles. 
+[Questions et réponses dans les apps mobiles Power BI](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/embedded/qanda.md) sont traités dans différents articles. 
 
 La fonctionnalité Questions et réponses est interactive, voire divertissante. Souvent, une question mène à d’autres questions, car les visualisations révèlent des chemins intéressants à suivre. Regardez Amanda illustrer l’utilisation de Questions et réponses pour créer des visualisations, les explorer et les épingler à des tableaux de bord.
 

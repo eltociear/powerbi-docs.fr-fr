@@ -10,11 +10,11 @@ ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876890"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207732"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -82,7 +82,7 @@ Quelques fonctionnalités sont actuellement disponibles en anglais uniquement :
 Tenez-vous informé, car nous ajouterons régulièrement des fonctionnalités à d’autres langues. 
 
 ### <a name="choose-your-language-in-the-power-bi-service"></a>Choisir votre langue dans le service Power BI
-1. Dans le service Power BI, sélectionnez l’icône **Paramètres** ![](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Paramètres**.
+1. Dans le service Power BI, sélectionnez l’icône **Paramètres**![](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Paramètres**.
 2. Sous l’onglet **Général** > **Langue**.
 3. Sélectionnez votre langue > **Appliquer**.
 

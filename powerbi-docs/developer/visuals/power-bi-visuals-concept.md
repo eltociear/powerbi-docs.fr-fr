@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bb0834527ba23c6cfcc155cc65cd0318b296ba84
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 96f1fd217a59ee95aed05b790800024dc9f72be9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75925587"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378137"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
@@ -22,7 +22,7 @@ Cet article explique comment les visuels s’intègrent à Power BI et comment 
 
 La figure suivante montre comment sont traitées dans Power BI les actions basées sur des visuels courantes effectuées par un utilisateur, notamment la sélection d’un signet.
 
-![Diagramme des actions basées sur des visuels Power BI](./media/visual-concept.svg)
+![Diagramme des actions basées sur des visuels Power BI](media/power-bi-visuals-concept/visual-concept.svg)
 
 ## <a name="visuals-get-updates-from-power-bi"></a>Les visuels obtiennent des mises à jour à partir de Power BI
 
@@ -131,4 +131,4 @@ Les actions et les mises à jour suivantes dans les visuels Power BI surviennen
 Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ? Reportez-vous aux articles suivants :
 
 * [Développer un visuel Power BI](./custom-visual-develop-tutorial.md)
-* [Publier des visuels Power BI sur l’Espace partenaires](../office-store.md)
+* [Publier des visuels Power BI sur l’Espace partenaires](office-store.md)

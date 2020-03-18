@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a631e6f5baf7942b81ce22a238d80f4aea40d022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818890"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379686"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Ajoutez de l'interactivité à vos visuels grâce à des sélections de visuels Power BI
 
@@ -179,11 +179,11 @@ Lorsque l'utilisateur sélectionne `Import Car` par `Type` (sélectionne les don
 | Nissan | **Véhicule d’importation** | 5485 |
 | Toyota | **Véhicule d’importation** | 20799 |
 
-![Le visuel avec des sélections pour des catégories et séries](media/visual-selections-sample.png)
+![Le visuel avec des sélections pour des catégories et séries](media/selection-api/visual-selections-sample.png)
 
 Besoin de remplir les paniers de données visuelles.
 
-![Paniers de données du visuel avec sélections](media/visual-selections-databuckets.png)
+![Paniers de données du visuel avec sélections](media/selection-api/visual-selections-databuckets.png)
 
 Il existe `Manufacturer` comme catégorie (colonnes), `Type` comme séries (lignes) et `Value` comme `Values` pour les séries.
 

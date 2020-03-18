@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b0ed499a272fc3f6fc0590117898c64551fedac1
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75758080"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436085"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Créer et utiliser des graphiques combinés dans Power BI
 
@@ -98,8 +98,7 @@ En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril
    ![Exemple de graphique combiné avec regroupement](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Ajouter des titres aux axes
-1. Sélectionnez l’icône de rouleau de peinture 
-1. ![icône de rouleau de peinture](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) pour ouvrir le volet Mise en forme.
+1. Sélectionnez l’icône de rouleau de peinture ![icône de rouleau de peinture](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) pour ouvrir le volet Mise en forme.
 1. Sélectionnez la flèche déroulante pour développer les options de l’ **axe Y** .
 1. Pour l’**axe Y (colonne)** , définissez les valeurs suivantes : **Position** sur **Gauche**, **Titre** sur **Activé**, **Style** sur **Afficher le titre uniquement** et **Unités d’affichage** sur **Millions**.
 

@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d406396db64b52326bbd8ea2aa485cd3d7451294
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819166"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380021"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Mettre en surbrillance des points de données dans les visuels Power BI
 
 Par défaut, chaque fois qu’un élément est sélectionné, le tableau `values` de l’objet `dataView` est filtré sur les valeurs sélectionnées uniquement. Il s’ensuit que tous les autres visuels de la page affichent uniquement les données sélectionnées.
 
-![Comportement par défaut de la mise en surbrillance de la vue de données](./media/highlight-dataview.png)
+![Comportement par défaut de la mise en surbrillance de la vue de données](media/highlight/highlight-dataview.png)
 
 Si vous définissez la propriété `supportsHighlight` du fichier `capabilities.json` sur `true`, vous recevez le tableau `values` complet non filtré avec un tableau `highlights`. Le tableau `highlights` a la même longueur que le tableau de valeurs, et toutes les valeurs non sélectionnées sont définies sur `null`. Lorsque cette propriété est activée, il est de la responsabilité du visuel de mettre en surbrillance les données appropriées en comparant le tableau `values` au tableau `highlights`.
 
-![`dataview` prend en charge la mise en surbrillance](./media/highlight-dataview-supports.png)
+![`dataview` prend en charge la mise en surbrillance](media/highlight/highlight-dataview-supports.png)
 
 Dans l’exemple, vous pouvez remarquer que la barre 1 est sélectionnée. Il s’agit de la seule valeur du tableau des mises en surbrillance. Il est également important de noter qu’il peut y avoir plusieurs sélections et des mises en surbrillance partielles. Les valeurs en surbrillance sont présentées dans la vue de données.
 
-> [!Note]
+> [!NOTE]
 > Le mappage de vues de données de tables ne prend pas en charge la fonctionnalité de mise en surbrillance.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Mettre en surbrillance des points de données avec un mappage des vues de données par catégorie
@@ -187,7 +187,7 @@ public update(options: VisualUpdateOptions) {
 
 Où `categoryValues` est un tableau de valeurs de catégorie, `measureValues` est un tableau de mesures et `measureHighlights` représente les parties de valeurs mises en surbrillance.
 
-> [!Note]
+> [!NOTE]
 > Les valeurs de la propriété `measureHighlights` peuvent être inférieures aux valeurs de la propriété `categoryValues`.
 > Cela signifie que la valeur a été partiellement mise en surbrillance.
 
@@ -271,7 +271,7 @@ div.value {
 
 Dans le résultat, vous devez disposer de la vue suivante du visuel.
 
-![Visuels avec mise en surbrillance et mappage des vues de données par catégorie](./media/dev-categorical-visual-highlight-demo.gif)
+![Visuels avec mise en surbrillance et mappage des vues de données par catégorie](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Mettre en surbrillance des points de données avec mappage des vues de données de matrice
 
@@ -582,7 +582,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 Où la propriété `value` représente la valeur du nœud sans appliquer de sélection à partir d’un autre visuel, et la propriété highlight indique la partie des données mise en surbrillance.
 
-> [!Note]
+> [!NOTE]
 > La valeur de la propriété `highlight` peut être inférieure à la valeur de la propriété `value`.
 > Cela signifie que la valeur a été partiellement mise en surbrillance.
 
@@ -643,7 +643,7 @@ public update(options: VisualUpdateOptions) {
 
 En conséquence, vous obtenez le visuel avec des boutons et des valeurs `highlighted value/default value`
 
-![Visuel avec mise en surbrillance et mappage des vues de données de matrice](./media/dev-matrix-visual-highlight-demo.gif)
+![Visuel avec mise en surbrillance et mappage des vues de données de matrice](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
