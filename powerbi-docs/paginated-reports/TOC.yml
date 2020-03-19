@@ -12,6 +12,8 @@
     - name: Tutoriels
       expanded: true
       items:
+        - name: Cours en ligne
+          href: paginated-reports-online-course.md
         - name: "Labo pratique\_: Créer un rapport paginé"
           href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: Créer un rapport paginé et télécharger
