@@ -75,6 +75,8 @@
               href: ../desktop-measures.md
             - name: Importation et affichage d’indicateurs de performance clés (KPI)
               href: ../desktop-import-and-display-kpis.md
+            - name: Appliquer la date/heure automatique
+              href: ../desktop-auto-date-time.md
         - name: Préparation des données en libre-service
           items:
             - name: Créer et utiliser des dataflows
