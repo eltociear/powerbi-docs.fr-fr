@@ -54,7 +54,7 @@ ou d’un canevas détaillé indiquant les rues et les transports.
 
 ![carte de base gris foncé](media/power-bi-visualizations-arcgis/power-bi-streets-basemap.png)  
 
-La carte de base est appliquée entièrement au canevas : à mesure que vous effectuez un panoramique et un zoom, la carte se met à jour. Effectuez un zoom avant pour voir des informations plus détaillées sur les rues et les transports. Si vous effectuez un panoramique d’un continent à un autre, le niveau de détail reste constant. Ici, nous avons effectué un panoramique de Porto à Pékin.
+La carte de base est appliquée entièrement au canevas : à mesure que vous effectuez un panoramique et un zoom, la carte se met à jour. Effectuez un zoom avant pour voir des informations plus détaillées sur les rues et les transports. Si vous effectuez un panoramique d’un continent à un autre, le niveau de détail reste constant. Ici, nous avons effectué un panoramique de Porto à Beijing.
 
 ![carte de base avec rues](media/power-bi-visualizations-arcgis/power-bi-basemap-pan.png)  
 
