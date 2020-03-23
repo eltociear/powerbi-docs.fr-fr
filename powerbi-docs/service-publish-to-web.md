@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237980"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488772"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -124,9 +124,9 @@ Après avoir créé et partagé votre code incorporé **Publier sur le web**, le
 
 Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Un délai d’environ une heure peut être nécessaire pour que les données actualisées soient visibles à partir des codes incorporés. Pour désactiver l’actualisation automatique, sélectionnez **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
 
-## <a name="custom-visuals"></a>Visuels personnalisés
+## <a name="power-bi-visuals"></a>Visuels Power BI
 
-Les éléments visuels personnalisés sont pris en charge par la fonctionnalité **Publier sur le web**. Quand vous utilisez la fonctionnalité **Publier sur le web**, les utilisateurs avec lesquels vous partagez votre visuel publié n’ont pas besoin d’activer les visuels personnalisés pour afficher le rapport.
+Les visuels Power BI sont pris en charge par la fonctionnalité **Publier sur le web**. Quand vous utilisez la fonctionnalité **Publier sur le web**, les utilisateurs avec lesquels vous partagez votre visuel publié n’ont pas besoin d’activer les visuels Power BI pour afficher le rapport.
 
 ## <a name="limitations"></a>Limites
 
@@ -144,7 +144,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la majeure pa
 - Modèles de requêtes de données à authentification unique.
 - Informations confidentielles ou propriétaires sécurisées.
 - [Jeux de données partagés et certifiés](service-datasets-share.md)
-- La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md) pour l’incorporation.
+- La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](developer/embedded/embed-sample-for-your-organization.md) pour l’incorporation.
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 

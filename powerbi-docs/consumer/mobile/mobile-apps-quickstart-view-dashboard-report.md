@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 8703bfa60116b7e60f1e6bec931b0f6183f7dd31
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75218566"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435717"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, nous allons explorer rapidement l’application Power BI Mobile, puis nous nous intéresserons à un exemple de tableau de bord et à un exemple de rapport. Nous vous montrons ici l’application Power BI pour iOS. Toutefois, vous pourrez facilement suivre les instructions sur d’autres appareils.
@@ -23,6 +23,9 @@ S’applique à :
 | ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Téléphone](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Appareils Windows 10](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Téléphone | Windows 10 |
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Un tableau de bord est un portail qui donne accès au cycle de vie et aux processus de votre entreprise. Il s’agit d’une vue d’ensemble, d’un seul et même emplacement à partir duquel vous pouvez superviser l’état actuel des activités de l’entreprise. Les rapports sont des vues de données interactives qui comprennent des visuels représentant différentes observations et différents insights. 
 

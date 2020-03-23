@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 79f18faf56fba8afa85afd808f6faa1bd16811d8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699541"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381143"
 ---
 # <a name="troubleshooting-tile-errors"></a>Résolution des erreurs de vignette
 Voici les erreurs courantes que vous pouvez rencontrer avec des vignettes, ainsi qu’une explication à ce sujet.
@@ -31,13 +31,14 @@ ou **Impossible d’extraire le modèle de données. Contactez le propriétaire 
 
 Nous n’avons pas pu accéder à vos données parce que la source de données était inaccessible. Ce problème peut se produire si la source de données a été supprimée, renommée, déplacée ou mise hors connexion, ou si des autorisations ont été changées. Vérifiez que la source est toujours à l’emplacement vers lequel nous pointons et que vous êtes toujours autorisé à y accéder. Si tel n’est pas le problème, il se peut que la source soit lente. Réessayez ultérieurement, quand la charge sur la source sera moindre. S’il s’agit d’une source locale, son propriétaire est peut-être en mesure de fournir des informations supplémentaires.
 
-**Vous n’êtes pas autorisé à afficher cette vignette ou à ouvrir ce classeur.**
+**Vous n’êtes pas autorisé à afficher cette vignette ou à ouvrir le classeur.**
 
 Contactez le propriétaire du tableau de bord pour vous assurer que les sources et le modèle de données existent et sont accessibles par votre compte.
 
-**Les visuels personnalisés ont été désactivés par votre administrateur.**
+**Les visuels Power BI ont été désactivés par votre administrateur.**
 
-Votre administrateur Power BI a désactivé l’utilisation des visuels personnalisés pour votre organisation ou votre groupe de sécurité. Vous ne pouvez donc pas utiliser les visuels personnalisés de la [Place de marché Microsoft](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) ni importer des visuels privés à partir d’un fichier. Vous avez uniquement accès à l’ensemble des visuels initialement fournis dans le pack.
+Votre administrateur Power BI a désactivé l’utilisation des visuels Power BI pour votre organisation ou votre groupe de sécurité.
+Vous ne pouvez pas utiliser les visuels Power BI de la [Place de marché Microsoft](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) ni importer de visuels privés à partir d’un fichier. Vous avez uniquement accès à l’ensemble des visuels initialement fournis dans le pack.
 
 
 **Les formes de données doivent contenir au moins un groupe ou calcul qui génère des données. Contactez le propriétaire du tableau de bord.**

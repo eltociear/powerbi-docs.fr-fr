@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 27e4bbd1437f59b7cf213333d9df27019aaadcd4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ad7c0dab0c4390326eea157351735802d12b3795
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488565"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
@@ -22,18 +22,18 @@ La fonctionnalité de zones géographiques multiples de Power BI Premium permet 
 
 - États-Unis
 - Canada
-- United Kingdom
-- Brazil
+- Royaume-Uni
+- Brésil
 - Europe
 - Japon
-- India
+- Inde
 - Asie-Pacifique
-- Australia
+- Australie
 - Afrique
 
 Les zones géographiques multiples ne sont pas disponibles pour Power BI Germany, Power BI Chine géré par 21Vianet, ou Power BI pour le gouvernement des États-Unis.
 
-Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. Pour en savoir plus, lisez [Prise en charge de plusieurs zones géographiques dans Power BI Embedded](developer/embedded-multi-geo.md).
+Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. Pour en savoir plus, lisez [Prise en charge de plusieurs zones géographiques dans Power BI Embedded](developer/embedded/embedded-multi-geo.md).
 
 ## <a name="enable-and-configure"></a>Activer et configurer
 
@@ -99,6 +99,6 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
-- [Zones géographiques multiples pour des capacités Power BI Embedded](developer/embedded-multi-geo.md)
+- [Zones géographiques multiples pour des capacités Power BI Embedded](developer/embedded/embedded-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

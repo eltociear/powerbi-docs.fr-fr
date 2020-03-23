@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 7d1e355f2c28679f5c2101d250a9fc2d5c99a2bd
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496635"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205639"
 ---
 # <a name="what-are-bookmarks"></a>Qu’est-ce qu’un signet ?
 
@@ -157,7 +157,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Pour cette préversion des **signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
 
-* La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
+* La plupart des visuels Power BI doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel Power BI, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel.
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
 * En règle générale, vos signets ne sont pas affectés lorsque le *concepteur* met à jour ou republie un rapport. Toutefois, si le concepteur apporte des modifications majeures au rapport, par exemple, s’il supprime des champs utilisés par un signet, vous recevrez un message d’erreur la prochaine fois que vous tenterez d’ouvrir ce signet. 
 

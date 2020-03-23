@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040471"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381419"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
 Nous allons ajouter de nouvelles visualisations, tenez-vous informé !
 
-Consultez [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), qui propose une liste croissante de [visuels personnalisés](../developer/power-bi-custom-visuals.md) que vous pouvez télécharger et utiliser dans vos propres tableaux de bord et rapports. Vous vous sentez créatif ? [Découvrez comment créer et ajouter vos propres visuels au site de la communauté](../developer/office-store.md).  
+Consultez [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), qui propose une liste croissante de [visuels Power BI](../developer/visuals/power-bi-custom-visuals.md) que vous pouvez télécharger et utiliser dans vos propres tableaux de bord et rapports. Vous vous sentez créatif ? [Découvrez comment créer et ajouter vos propres visuels au site de la communauté](../developer/visuals/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste des visualisations disponibles dans Power BI
 Toutes ces visualisations peuvent être ajoutées à des rapports Power BI, spécifiées dans Questions et réponses, et épinglées à des tableaux de bord.

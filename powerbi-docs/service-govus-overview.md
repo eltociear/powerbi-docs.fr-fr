@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496943"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376721"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Office 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis diffère de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -28,7 +28,7 @@ Pour obtenir un abonnement Power BI pour le gouvernement des États-Unis et affe
 Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre organisation pour pouvoir vous inscrire à un abonnement Secteur Public.  Commencez par compléter le [formulaire de validation de l’admissibilité Office 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Pour sélectionner un abonnement adapté à votre organisation, consultez la [description des services Office 365 pour le gouvernement des États-Unis](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
-> Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud pour le gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Office 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licence commerciale des comptes d’utilisateur, puis attribuez une licence Power BI Pro Secteur Public aux comptes d’utilisateur.
+> Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud pour le gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Office 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licence commerciale des comptes d’utilisateur, puis attribuez une licence Power BI Pro Secteur Public aux comptes d’utilisateur.
 >
 >
 
@@ -46,7 +46,7 @@ Office 365 propose différents environnements pour les organismes gouvernementau
 Après avoir déployé Office 365, vous pouvez ajouter un abonnement Power BI. Suivez les instructions pas à pas de la section [Inscrire une organisation du gouvernement des États-Unis](service-govus-signup.md#existing-office-government-cloud-customers) pour acheter le service Power BI Pro Secteur Public. Achetez suffisamment de licences pour tous les utilisateurs qui doivent utiliser Power BI, puis attribuez-les aux différents comptes d’utilisateur.
 
 > [!IMPORTANT]
-> Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence gratuite. Chaque utilisateur doit disposer d’une licence Pro pour pouvoir accéder au Cloud de la communauté du secteur public. Un compte d’utilisateur qui dispose d’une licence gratuite n’est autorisé à accéder qu’au cloud commercial et rencontrera des problèmes d’authentification et d’accès. Pour connaître les différences entre les types de licences, consultez [Fonctionnalités du service Power BI par type de licence](service-features-license-type.md).
+> Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence gratuite. Chaque utilisateur doit disposer d’une licence Pro pour pouvoir accéder au Cloud de la communauté du secteur public. Un compte d’utilisateur qui dispose d’une licence gratuite n’est autorisé à accéder qu’au cloud commercial et rencontrera des problèmes d’authentification et d’accès. Si vous avez acheté Power BI Premium, vous n’êtes pas obligé d’attribuer des licences Pro pour permettre l’accès des utilisateurs.  Les utilisateurs de l’organisation peuvent accéder aux rapports partagés avec eux tant que le rapport est publié sur une capacité Premium. Pour connaître les différences entre les types de licences, consultez [Fonctionnalités du service Power BI par type de licence](service-features-license-type.md).
 >
 >
 

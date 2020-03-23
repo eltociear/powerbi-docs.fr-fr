@@ -2,19 +2,19 @@
 title: Utiliser des cartes de formes dans Power BI Desktop (préversion)
 description: Créer des comparaisons relatives de régions à l’aide des cartes de formes dans Power BI Desktop
 author: mihart
-ms.reviewer: amanda, justyna, sujata
+ms.reviewer: justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762321"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525657"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Créer des visualisations de carte de forme dans Power BI Desktop (préversion)
 
@@ -22,7 +22,7 @@ ms.locfileid: "75762321"
 
 Créez un visuel **Carte de formes** pour comparer des régions sur une carte à l’aide de la couleur. À la différence du visuel **Carte**, le visuel **Carte de formes** ne permet pas d’afficher l’emplacement géographique précis de points de données sur une carte. Il a pour principal objectif de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
 
-Les visuels **Carte de formes** reposent sur les cartes ESRI/TopoJSON, qui présentent l’avantage de pouvoir utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de salle, des plans d’étage, etc. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
+Les visuels **Carte de formes** reposent sur les cartes TopoJSON, qui présentent l’avantage de pouvoir utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de salle, des plans d’étage, etc. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
 
 ## <a name="creating-shape-maps"></a>Créer des cartes de formes
 Vous pouvez tester le contrôle **Carte de formes** avec les cartes fournies avec cette version préliminaire. Vous pouvez également utiliser votre propre carte personnalisée tant qu’elle répond aux exigences décrites dans la section suivante intitulée **Utiliser des cartes personnalisées**.
@@ -400,7 +400,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OU |
+| us-or |Oregon |OR |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

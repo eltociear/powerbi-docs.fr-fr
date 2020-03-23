@@ -7,18 +7,18 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 0253455cfba96c3c467f4cf8882550e22edce8ba
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819235"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380393"
 ---
 # <a name="add-drill-down-support"></a>Ajouter la prise en charge de l’exploration
 
-Les visuels personnalisés peuvent utiliser l’exploration de Power BI.
+Les visuels Power BI peuvent utiliser l’exploration de Power BI.
 
 Découvrez plus en détail l’exploration Power BI [ici](./../../consumer/end-user-drill.md)
 
@@ -205,38 +205,38 @@ button {
 
 Préparez des exemples de données pour tester le visuel :
 
-|   H1  |   H2    | H3  |   VALEURS  |
+|   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
-|   A   |   A1  |   A11 |   1   |
-|   A   |   A1  |   A12 |   2   |
-|   A   |   A2  |   A21 |   3   |
-|   A   |   A2  |   A22 |   4   |
-|   A   |   A3  |   A31 |   5   |
-|   A   |   A3  |   A32 |   6   |
-|   B   |   B1  |   B11 |   7   |
-|   B   |   B1  |   B12 |   8   |
-|   B   |   B2  |   B21 |   9   |
-|   B   |   B2  |   B22 |   10  |
-|   B   |   B3  |   B31 |   11  |
-|   B   |   B3  |   B32 |   12  |
+|   A   |    A1  |    A11 |    1   |
+|   A    |    A1    |    A12    |    2    |
+|   A    |    A2    |    A21    |    3    |
+|   A    |    A2    |    A22    |    4    |
+|   A    |    A3    |    A31    |    5    |
+|   A    |    A3    |    A32    |    6    |
+|   B    |    B1    |    B11    |    7    |
+|   B    |    B1    |    B12    |    8    |
+|   B    |    B2    |    B21    |    9    |
+|   B    |    B2    |    B22    |    10    |
+|   B    |    B3    |    B31    |    11    |
+|   B    |    B3    |    B32    |    12    |
 
 Créez ensuite une hiérarchie dans Power BI Desktop :
 
-![Créer une hiérarchie](./media/create-new-hierarchy.png)
+![Créer une hiérarchie](media/drill-down-support/create-new-hierarchy.png)
 
 Ajoutez toutes les colonnes de catégorie (H1, H2, H3) à la nouvelle hiérarchie :
 
-![Créer une hiérarchie](./media/new-hierarchy.png)
+![Créer une hiérarchie](media/drill-down-support/new-hierarchy.png)
 
 Après ces étapes, vous devez obtenir le visuel suivant :
 
-![Visuel de développement avec boutons](./media/dev-visual-drilldown1.png)
+![Visuel de développement avec boutons](media/drill-down-support/dev-visual-drilldown1.png)
 
 ## <a name="add-context-menu-to-visual-elements"></a>Ajouter un menu contextuel aux éléments visuels
 
 Au cours de cette étape, vous allez ajouter un menu contextuel aux boutons sur le visuel :
 
-![Menu contextuel dans le visuel](./media/dev-visual-drilldown-context-menu.png)
+![Menu contextuel dans le visuel](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
 Pour créer un menu contextuel, enregistrez l’objet `host` dans les propriétés du visuel et appelez la méthode `createSelectionManager` sur le gestionnaire de création de sélection pour afficher un menu contextuel à l’aide de l’API des visuels Power BI.
 
@@ -305,11 +305,11 @@ Remplacez le corps du rappel de fonction `forEach` par :
 
 Appliquez des données au visuel :
 
-![Visuel avec des données](./media/dev-visual-drilldown-data.png)
+![Visuel avec des données](media/drill-down-support/dev-visual-drilldown-data.png)
 
 À l’étape finale, vous devez obtenir un visuel avec les sélections et le menu contextuel :
 
-![Visuel avec prise en charge de l’exploration](./media/dev-visual-drilldown-demo.gif)
+![Visuel avec prise en charge de l’exploration](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Ajouter la prise en charge de l’exploration pour le mappage de vues de données de matrices
 
@@ -389,7 +389,7 @@ Appliquez le mappage de vues de données suivant pour le visuel :
 
 Appliquez des données au visuel :
 
-![Visuel avec des données](./media/dev-matrix-visual-drilldown-data.png)
+![Visuel avec des données](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Importez les interfaces nécessaires pour traiter les mappages de vues de données de matrices :
 
@@ -614,7 +614,7 @@ public update(options: VisualUpdateOptions) {
 
 À l’étape finale, vous devez obtenir un visuel avec un menu contextuel :
 
-![Visuel avec prise en charge de l’exploration](./media/dev-matrix-visual-drilldown-demo.gif)
+![Visuel avec prise en charge de l’exploration](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

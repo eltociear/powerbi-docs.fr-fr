@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b7a45309c3bfad27cc3b26990ee148a9e44b8998
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75927111"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488680"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Application Métriques Power BI Premium
 
@@ -48,7 +48,7 @@ La métrique de **mémoire active** est intégrée à la catégorie de *planific
 
 La **mémoire active** représente la mémoire utilisée pour traiter les jeux de données en cours d’utilisation et qui, par conséquent, ne seront pas supprimés lorsque la mémoire est nécessaire. La métrique de mémoire active indique si votre capacité peut gérer une charge supplémentaire, ou si elle approche ou dépasse la capacité maximale, indique la charge actuelle de la capacité. La mémoire active en cours de consommation signifie moins de mémoire disponible pour prendre en charge des actualisations et des requêtes supplémentaires. 
 
-L’indicateur de performance clé de **mémoire active** mesure le nombre de fois que la mémoire active de la capacité a dépassé le seuil de 70 % à 50 reprises (marqueur défini à 30 % sur les sept derniers jours), ce qui indique que la capacité approche un point où les utilisateurs peuvent commencer à rencontrer des problèmes de performances avec les requêtes.
+L’indicateur de performance clé de **mémoire active** mesure le nombre de fois que la mémoire active de la capacité a dépassé le seuil de 70 % à 50 reprises (marqueur défini à 30 % sur les sept derniers jours), ce qui indique que la capacité s’approche d’un point où les utilisateurs peuvent commencer à rencontrer des problèmes de performances avec les requêtes.
 
 Le visuel de jauge présenté dans cette section révèle que, au cours des sept derniers jours depuis la dernière actualisation du rapport, la capacité a dépassé le seuil de 70 % à quatre reprises, avec un fractionnement horaire. La valeur maximale de la jauge, 168, représente les sept derniers jours, en heures.
 
@@ -78,7 +78,7 @@ Dans ce cas, vous devez examiner attentivement les autres graphiques de la page 
 
 Le deuxième visuel de la page, **B : Jeux de données actifs chargés par heure** indique le nombre maximal de jeux de données chargés en mémoire, par intervalles d’une heure. 
 
-Le troisième visuel, **C : Pourquoi les jeux de données sont en mémoire** est un tableau qui répertorie le jeu de données par nom d’espace de travail, nom de jeu de données, taille des jeux de données non compressés en mémoire, et explique la raison pour laquelle le jeu est chargé en mémoire (par exemple, lorsqu’il est actualisé, interrogé, ou les deux).
+Le troisième visuel, **C : La raison pour laquelle les jeux de données sont en mémoire** est un tableau qui liste le jeu de données selon le nom d’espace de travail, le nom de jeu de données, la taille des jeux de données non compressés en mémoire, et explique la raison pour laquelle le jeu de données est chargé en mémoire (par exemple, lorsqu’il est actualisé, interrogé, ou les deux).
 
 #### <a name="diagnosing-scenario-one"></a>Diagnostic du scénario 1
 
@@ -262,7 +262,7 @@ S’il n'y a pas assez de mémoire pour charger un jeu de données pour une requ
 
 Pour diagnostiquer le scénario 1, commencez par déterminer si la limitation est due à une mémoire insuffisante. Les étapes requises sont les suivantes.
 
-1.  Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
+1.    Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -305,7 +305,7 @@ Pour les capacités dédiées, Power BI limite le nombre d’actualisations qui
 
 Pour diagnostiquer le scénario 2, commencez par déterminer si la limitation est due à l’exécution simultanée du nombre maximal d’actualisations. Les étapes requises sont les suivantes.
 
-1.  Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
+1.    Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -341,6 +341,6 @@ Pour diagnostiquer le scénario 2, commencez par déterminer si la limitation e
 * [Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 * [Planification d’un livre blanc sur le déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy)
 * [Activation de la version d’essai Pro prolongée](service-extended-pro-trial.md)
-* [FAQ sur Power BI Embedded](developer/embedded-faq.md)
+* [FAQ sur Power BI Embedded](developer/embedded/embedded-faq.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

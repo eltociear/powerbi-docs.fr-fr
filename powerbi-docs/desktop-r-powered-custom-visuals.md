@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128234"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378682"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Utiliser des visuels Power BI basés sur R dans Power BI
 
@@ -129,7 +129,7 @@ L’équipe Power BI travaille activement pour atténuer ces problèmes en amon
 
    b.  Dans la console R, exécutez la commande suivante :
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    Les emplacements d’installation par défaut sont les suivants :
 
@@ -149,7 +149,7 @@ L’équipe Power BI travaille activement pour atténuer ces problèmes en amon
 
 Consultez les informations supplémentaires suivantes sur R dans Power BI.
 
-* [Galerie de visuels Power BI](https://app.powerbi.com/visuals/)
+* [Galerie de visuels Power BI](https://app.powerbi.com/visuals/)
 * [Exécution de scripts R dans Power BI Desktop](desktop-r-scripts.md)
 * [Créer des visuels Power BI Desktop avec R](desktop-r-visuals.md)
 * [Utiliser un IDE R externe avec Power BI](desktop-r-ide.md)

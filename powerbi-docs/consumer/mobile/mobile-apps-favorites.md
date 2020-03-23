@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 2c7ae8180f51592319c9aaca85272553480cd283
-ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
+ms.openlocfilehash: bad6b507e970319003a8d338ecf29a2afc948e9c
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75498513"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435556"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Définir et afficher des favoris dans les applications mobiles Power BI
 S’applique à :
@@ -21,6 +21,9 @@ S’applique à :
 | ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Tablette Android](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services locaux favoris, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles.
 

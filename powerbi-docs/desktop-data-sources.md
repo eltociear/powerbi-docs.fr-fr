@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427550"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207249"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -90,7 +90,8 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Snowflake
 * Essbase
 * Cubes AtScale
-* BI Connector Data Virtuality LDW (Beta)
+* Connecteur BI 
+* Data Virtuality LDW (bêta)
 * Denodo
 * Dremio
 * Exasol
@@ -124,9 +125,10 @@ L’image suivante représente la fenêtre **Obtenir des données** pour **Power
 
 La catégorie **Azure** fournit les connexions de données suivantes :
 
-* Base de données Azure SQL
+* Azure SQL Database
 * Azure SQL Data Warehouse
 * Base de données Azure Analysis Services
+* Azure Database pour PostgreSQL
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB
@@ -154,8 +156,8 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (local)
 * Microsoft Azure Consumption Insights (bêta)
-* Azure DevOps (bêta)
-* Azure DevOps Server (bêta)
+* Azure DevOps (Boards uniquement)
+* Azure DevOps Server (Boards uniquement)
 * Objets Salesforce
 * Rapports Salesforce
 * Google Analytics
@@ -164,7 +166,6 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Data.World – Obtenir le jeu de données (bêta)
 * GitHub (bêta)
 * LinkedIn Sales Navigator (bêta)
-* MailChimp (bêta)
 * Marketo (bêta)
 * Mixpanel (bêta)
 * Planview Enterprise One - PRM (bêta)
@@ -178,6 +179,7 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * tyGraph (bêta)
 * Webtrends (bêta)
 * Zendesk (bêta)
+* Asana (bêta)
 * Dynamics 365 Customer Insights (bêta)
 * Emigo Data Source
 * Entersoft Business Suite (bêta)
@@ -205,6 +207,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Microsoft Exchange
 * Fichier Hadoop (HDFS)
 * Spark
+* LLAP Hive (bêta)
 * Script R
 * Script Python
 * ODBC
@@ -220,6 +223,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Siteimprove (bêta)
 * SurveyMonkey (bêta)
 * Tenforce (Smart) (bêta)
+* TIBCO(R) Data Virtualization (bêta)
 * Vena (bêta)
 * Workforce Dimensions (bêta)
 * Zucchetti HR Infinity (Beta)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040095"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377233"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -188,7 +188,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 ## <a name="n"></a>N
 
-**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)* . Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
+**native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)* . Vous pouvez cependant aussi importer d’autres types, comme des visuels Power BI.
 
 **volet de navigation** ou **volet nav** les contrôles le long du bord gauche du service Power BI.
 

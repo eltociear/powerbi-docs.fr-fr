@@ -1,6 +1,6 @@
 ---
 title: Que peuvent faire les développeurs avec Power BI ?
-description: Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’incorporation dans des visuels personnalisés aux jeux de données en streaming.
+description: Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’intégration aux visuels Power BI jusqu’au streaming de jeux de données.
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: overview
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: c92eea927368d885a297fd83d39f528f7dae848e
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041352"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79487783"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Que peuvent faire les développeurs avec Power BI ?
 
-Les développeurs ont différentes possibilités pour inclure du contenu Power BI dans des applications, En tant que développeur, vous pouvez **incorporer avec Power BI**, utiliser des **visuels personnalisés** ou **envoyer (push) des données dans Power BI**.
+Les développeurs ont différentes possibilités pour inclure du contenu Power BI dans des applications, notamment, en tant que développeur, l’**intégrer avec Power BI**, utiliser des **visuels Power BI** ou **envoyer (push) des données dans Power BI**.
 
 ## <a name="embedding-power-bi-content"></a>Incorporation de contenu Power BI
 
@@ -27,19 +27,19 @@ Vous pouvez passer par l’[outil de configuration de l’incorporation](https:/
 
 Choisissez la solution qui vous convient :
 
-* [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. Exécutez la solution [Incorporer pour vos clients](https://aka.ms/embedsetup/AppOwnsData).
+* [L’incorporation pour vos clients](embedded/embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. Exécutez la solution [Incorporer pour vos clients](https://aka.ms/embedsetup/AppOwnsData).
 
-* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Exécutez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
+* [L’incorporation pour votre organisation](embedded/embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Exécutez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
 
 ![Exemple PBIE](media/what-can-you-do/what-can-you-do-02.png)
 
-Pour en savoir plus sur l’incorporation avec Power BI, consultez [Incorporation avec Power BI](embedding.md).
+Pour en savoir plus sur l’incorporation avec Power BI, consultez [Incorporation avec Power BI](embedded/embedding.md).
 
-## <a name="developing-custom-visuals"></a>Développement de visuels personnalisés
+## <a name="developing-power-bi-visuals"></a>Développement de visuels Power BI
 
-Vous pouvez utiliser des visuels personnalisés avec Power BI pour créer un type de visuel unique spécialement adapté à vous ou à votre entreprise. Souvent, ces visuels personnalisés sont créés par les développeurs. Ils sont créés quand la multitude de visuels inclus dans Power BI ne répond pas exactement à vos besoins.
+Vous pouvez utiliser des visuels Power BI avec Power BI pour créer un type unique de visuel spécialement adapté à vous ou à votre entreprise. Souvent, ces visuels Power BI sont créés par les développeurs. Ils sont créés quand la multitude de visuels inclus dans Power BI ne répond pas exactement à vos besoins.
 
-Les visuels personnalisés vous permettent de créer vos visuels à utiliser dans les rapports Power BI. Les visuels personnalisés sont écrits en TypeScript, un surensemble de JavaScript. TypeScript prend en charge certaines fonctionnalités avancées ainsi qu’un accès anticipé aux fonctionnalités ES6/ES7. Les styles de visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Par souci pratique, nous utilisons le précompilateur LESS, qui prend en charge certaines fonctionnalités avancées, notamment l’imbrication, les variables, les conditions, les boucles et autres fonctionnalités. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez écrire une feuille de style CSS brute dans le fichier LESS.
+Les visuels Power BI vous permettent de créer vos visuels à utiliser dans les rapports Power BI. Les visuels Power BI sont écrits en TypeScript, un sur-ensemble de JavaScript. TypeScript prend en charge certaines fonctionnalités avancées ainsi qu’un accès anticipé aux fonctionnalités ES6/ES7. Les styles de visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Par souci pratique, nous utilisons le précompilateur LESS, qui prend en charge certaines fonctionnalités avancées, notamment l’imbrication, les variables, les conditions, les boucles et autres fonctionnalités. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez écrire une feuille de style CSS brute dans le fichier LESS.
 
 ![Exemple de visuel personnalisé](media/what-can-you-do/powerbi-custom-visual-store.png)
 
@@ -57,7 +57,7 @@ Pour savoir ce que vous pouvez faire avec les API Power BI, consultez [Comment l
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Incorporation avec Power BI](embedding.md)  
+[Incorporation avec Power BI](embedded/embedding.md)  
 
 [Développement d’un visuel personnalisé Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 

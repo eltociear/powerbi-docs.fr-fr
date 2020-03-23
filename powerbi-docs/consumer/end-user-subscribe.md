@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 11e9bfb2c8dce526ad81395645165c2c7dd70a00
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114044"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525703"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -65,7 +65,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 3. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevrez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
    
-   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-email.png)
+   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-email-old.png)
    
     L’actualisation de la page de rapport n’actualise pas le jeu de données. Seul le propriétaire du jeu de données peut actualiser manuellement un jeu de données. Pour rechercher le nom de propriétaire du ou des jeux de données sous-jacents, sélectionnez la liste déroulante dans la barre de menus ou recherchez l’e-mail d’abonnement d’origine.
    
@@ -80,14 +80,14 @@ Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouvea
 Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le rapport est supprimé par le propriétaire ou si le compte d’utilisateur qui a servi à créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-* Pour éviter que les e-mails relatifs à l’abonnement ne soient dirigés vers votre dossier de courrier indésirable, ajoutez l’alias d’e-mail Power Platform (PowerPlat-noreply@microsoft.com) à vos contacts. Si vous utilisez Microsoft Outlook, cliquez avec le bouton droit sur l’alias et sélectionnez **Ajouter aux contacts Outlook**. 
+* Pour éviter que les e-mails relatifs à l’abonnement ne soient dirigés vers votre dossier de courrier indésirable, ajoutez l’alias d’e-mail Power BI (no-reply-powerbi@microsoft.com) à vos contacts. Si vous utilisez Microsoft Outlook, cliquez avec le bouton droit sur l’alias et sélectionnez **Ajouter aux contacts Outlook**. 
 * Les tableaux de bord comportant plus de 25 vignettes épinglées, ou quatre pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs. Nous vous conseillons de contacter le concepteur du tableau de bord pour lui demander de limiter le nombre de vignettes épinglées à moins de 25 et le nombre de pages de rapport dynamique épinglées à moins de quatre pour garantir un affichage correct dans les e-mails.  
 * Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation a peut-être désactivé cette fonctionnalité.  
-* Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../developer/power-bi-custom-visuals.md).  Sauf s’il s’agit de visuels personnalisés [certifiés](../developer/power-bi-custom-visuals-certified.md).  
-* Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
+* Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels Power BI](../developer/visuals/power-bi-custom-visuals.md).  L’exception est celle des visuels Power BI qui ont été [certifiés](../developer/visuals/power-bi-custom-visuals-certified.md).  
+* À ce stade, les abonnements aux e-mails ne prennent pas en charge les visuels Power BI alimentés par R.  
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge.  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un tableau de bord ou à un rapport, il n’est pas suspendu même si le rapport ou le tableau de bord n’est pas consulté.

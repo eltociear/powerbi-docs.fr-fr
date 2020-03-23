@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698460"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79202019"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Redémarrer une capacité Power BI Premium
 
@@ -30,7 +30,9 @@ Power BI s’améliore constamment dans la manière de protéger les utilisateur
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Le processus de redémarrage est-il sûr ? Vais-je perdre des données ?
 
-Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Quand vous redémarrez une capacité, toutes les planifications en cours et actualisations ad-hoc sont arrêtées. Le service tente une nouvelle actualisation quand la capacité est disponible. Les utilisateurs qui interagissent avec la capacité perdent tout travail non enregistré. Il est donc préférable qu’ils actualisent leurs navigateurs une fois le redémarrage terminé.
+Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Lorsque vous redémarrez une capacité, les actualisations planifiées et ad hoc en cours sont arrêtées temporairement par le moteur d’actualisation, dans la plupart des cas. Ensuite, ils redémarrent en raison de la logique de nouvelle tentative d’actualisation intégrée à Power BI. Le service tente d’effectuer à nouveau les actualisations impactées une fois que la capacité est disponible. L’état des actualisations peut ne pas être modifié dans l’interface utilisateur pendant le processus de redémarrage. 
+
+Les utilisateurs qui interagissent avec la capacité perdent le travail non enregistré pendant un processus de redémarrage. Il est donc préférable que les utilisateurs actualisent leurs navigateurs une fois le redémarrage terminé.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Comment redémarrer une capacité ?
 

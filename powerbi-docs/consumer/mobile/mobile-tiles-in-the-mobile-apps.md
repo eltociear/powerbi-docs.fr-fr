@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 0f3aa67ea3d8a1cdf34503a833fad42b2d258859
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114690"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435901"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -85,6 +85,10 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
 4. Appuyez sur la flèche dans le coin supérieur gauche pour fermer la vignette et revenir au tableau de bord.
 
 ## <a name="tiles-in-the-windows-10-mobile-app"></a>Vignettes dans l’application mobile Windows 10
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 1. Ouvrez un [tableau de bord dans l’application mobile Power BI](mobile-apps-view-dashboard.md) pour Windows 10.
 2. Appuyer sur le bouton de sélection verticale sur la vignette. Vous pouvez ici : 
    

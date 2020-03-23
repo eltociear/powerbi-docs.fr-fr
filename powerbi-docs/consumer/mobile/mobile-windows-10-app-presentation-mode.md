@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
-ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259864"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435993"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. 
@@ -28,8 +28,9 @@ Vous pouvez également [afficher les tableaux de bord et les rapports en mode Pl
 
 > [!NOTE]
 > Le mode de présentation est différent du [mode Focus pour les vignettes](mobile-tiles-in-the-mobile-apps.md).
-> 
-> 
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="use-presentation-mode"></a>Utiliser le mode de présentation
 Dans l’application mobile Power BI, appuyez sur l’icône **Plein écran** pour accéder au mode plein écran.

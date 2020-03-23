@@ -6,30 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: cbaf3244ce8e8aa2755b6b47bf6381c191293306
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527419"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133227"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Utiliser le ruban mis à jour dans Power BI Desktop (préversion)
+# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Utiliser le ruban mis à jour dans Power BI Desktop
 
-À compter de la mise à jour de novembre 2019, Power BI Desktop modifiera son ruban pour mieux aligner son apparence et son expérience avec les autres produits Microsoft, notamment Microsoft Office.
+À compter de la mise à jour de mars 2020, Power BI Desktop modifie son ruban pour mieux aligner son apparence et son expérience avec les autres produits Microsoft, notamment Microsoft Office. La mise à jour du ruban apparaît dans les mises à jour mensuelles depuis novembre 2019 en tant que fonctionnalité en préversion et à partir de la mise à jour de mars 2020, le nouveau ruban constitue l’expérience par défaut.
 
 ![Nouveau ruban dans Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
-Le ruban mis à jour est en préversion pour nous permettre de recueillir les commentaires des utilisateurs et des clients, et nous assurer que l'expérience est exceptionnelle. Cette phase de préversion, de retour d’informations et d’amélioration devrait durer quelques mois, avant que le ruban Power BI Desktop mis à jour ne soit mis à la disposition du public. 
-
 ## <a name="how-to-enable-the-updated-ribbon"></a>Comment activer le ruban mis à jour
 
-Le ruban mis à jour dans Power BI est une fonctionnalité en préversion et doit être activé. Pour l’activer, sélectionnez **Fichier > Options et paramètres > Options**, puis **Fonctionnalité en préversion** dans la colonne gauche. Le volet droit affiche une sélection **Ruban mis à jour**. Cochez la case à côté de **Ruban mis à jour** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+À partir de la mise à jour de mars 2020, le ruban mis à jour est activé par défaut. Pour les versions de Power BI Desktop antérieures (à compter de la mise à jour de novembre 2019), le ruban mis à jour dans Power BI était une fonctionnalité en préversion et doit être activé. Pour l’activer dans ces mises à jour antérieures, sélectionnez **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en préversion** dans la colonne gauche. Le volet droit affiche une sélection **Ruban mis à jour**. Cochez la case à côté de **Ruban mis à jour** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
 
 ![L’option du ruban mis à jour pour Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> Pour les versions de Power BI Desktop à compter de mars 2020, il n’est pas nécessaire d’activer le ruban mis à jour, car à compter de mars 2020, le nouveau ruban constitue l’expérience par défaut.
 
 ## <a name="features-of-the-new-ribbon"></a>Fonctionnalités du nouveau ruban
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761884"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378981"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Créer des signets dans Power BI Desktop pour partager des insights et créer des récits
 L’utilisation de *signets* dans Power BI Desktop vous permet de capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des objets visuels. Vous pouvez revenir ultérieurement à cet état en sélectionnant le signet enregistré. 
@@ -198,7 +198,7 @@ Pour activer la fonctionnalité Signets en préversion :
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Pour cette version de la fonctionnalité Signets, vous devez garder à l’esprit les considérations et limitations suivantes.
 
-* La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Toutefois, si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
+* La plupart des visuels Power BI doivent fonctionner correctement avec l’attribution de signets. Toutefois, si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
 * Si vous ajoutez un visuel dans une page de rapport après la création d’un signet, le visuel s’affichera dans son état par défaut. Autrement dit, si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment sera dans son état par défaut.
 * Le déplacement d’un visuel après la création d’un signet se reflète automatiquement dans ce dernier. 
 

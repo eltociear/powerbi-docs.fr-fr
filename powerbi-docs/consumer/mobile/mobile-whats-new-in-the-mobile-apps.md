@@ -8,19 +8,22 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041552"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435970"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
 
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
-* [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+* [Nouveautés dans le service Power BI](../../service-whats-new.md)
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="february-2020"></a>Février 2020
 
@@ -396,7 +399,7 @@ Désormais, quand quelqu'un partage un rapport avec vous, ce rapport apparaît d
 
 #### <a name="improved-hyperlink-support"></a>Meilleure prise en charge des liens hypertexte
 
-Vous pouvez maintenant appuyer sur les liens de visuels personnalisés pour les ouvrir dans votre navigateur mobile.
+Vous pouvez maintenant appuyer sur les liens dans les visuels Power BI pour les ouvrir dans votre navigateur mobile.
 
 #### <a name="intune-integration-android"></a>Intégration d’Intune (Android)
 
@@ -470,7 +473,7 @@ Consultez le [résumé des fonctionnalités d’applications mobiles d’avril 
 #### <a name="all-devices"></a>Tous les appareils
 **Couleurs d’arrière-plan pour les rapports sur téléphone** Quand vous définissez la couleur d’arrière-plan d’un rapport dans Power BI Desktop, le rapport sur téléphone a la même couleur d’arrière-plan. En savoir plus sur l’[optimisation des pages de rapport pour les téléphones](../../desktop-create-phone-report.md).
 
-**Développer des visuels personnalisés pour les appareils mobiles** Lisez ce [guide du développeur](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) pour obtenir des conseils sur la création de visuels personnalisés qui s’affichent et fonctionnent correctement sur les appareils mobiles.
+**Développer un visuel Power BI pour appareils mobiles** Lisez ce [guide du développeur](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) pour obtenir des conseils sur la création de visuels Power BI qui s’affichent et fonctionnent correctement sur les appareils mobiles.
 
 #### <a name="ios-devices"></a>Appareils iOS
 **Parler à vos données : poser des questions en parlant** Vous pouvez maintenant [poser des questions sur vos données avec Questions et réponses](mobile-apps-ios-qna.md) en parlant au lieu de taper. 

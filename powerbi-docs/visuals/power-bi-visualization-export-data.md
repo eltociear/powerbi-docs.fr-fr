@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 9823e35fb2ddb99cf2932fa83e92598ba40f6690
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78946858"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381373"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -252,7 +252,7 @@ Ces limitations et ces considérations s’appliquent à Power BI Desktop et au 
 
 - Si la visualisation utilise les données de plusieurs tables de données et qu’il n’existe aucune relation pour ces tables dans le modèle de données, Power BI exporte uniquement les données de la première table.
 
-- Les visuels personnalisés et les visuels R ne sont actuellement pas pris en charge.
+- Les visuels Power BI et les visuels R ne sont actuellement pas pris en charge.
 
 - Dans Power BI, vous pouvez renommer un champ (colonne) en double-cliquant sur le champ et en tapant un nouveau nom. Power BI fait référence au nouveau nom comme à un *alias*. Il est possible qu’un rapport Power BI contienne au final des noms de champs en doublon, mais Excel n’autorise pas les doublons. Ainsi, lorsque Power BI exporte les données vers Excel, les alias de champ reprennent leur nom de champ (colonne) d’origine.  
 

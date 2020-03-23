@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488519"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Actualisation automatique des pages dans Power BI Desktop (préversion)
 
-Lors de la surveillance des événements critiques, il est important que les données soient actualisées dès que les données source sont mises à jour. Par exemple, dans le secteur de la fabrication, il est essentiel de savoir quand un ordinateur ne fonctionne pas correctement ou est sur le point de connaître une défaillance.
+Lors de la surveillance des événements critiques, il est important que les données soient actualisées dès que les données sources sont mises à jour. Par exemple, dans le secteur de la fabrication, il est essentiel de savoir quand un ordinateur ne fonctionne pas correctement ou est sur le point de connaître une défaillance.
 
 La fonctionnalité d’actualisation automatique de la page de Power BI permet à votre page de rapport active de rechercher de nouvelles données, à une cadence prédéfinie, pour les sources [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
@@ -35,9 +35,9 @@ L’image suivante montre la carte **Actualisation de la page**. Les explication
 
 ![Carte Actualisation de page](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.  Curseur d’actualisation automatique de la page : active ou désactive l’actualisation de la page
-2.  Valeur de l’intervalle d’actualisation de la page : valeur numérique de l’intervalle d’actualisation
-3.  Unité d’intervalle d’actualisation de la page : l’unité de l’intervalle d’actualisation de la page
+1.    Curseur d’actualisation automatique de la page : active ou désactive l’actualisation de la page
+2.    Valeur de l’intervalle d’actualisation de la page : valeur numérique de l’intervalle d’actualisation
+3.    Unité d’intervalle d’actualisation de la page : l’unité de l’intervalle d’actualisation de la page
 
 Ici, vous pouvez activer l’actualisation de la page et sélectionner la durée d’actualisation. La valeur par défaut est de 30 minutes, et l’intervalle d’actualisation minimal est d’une seconde). Votre rapport commence à s’actualiser à l’intervalle que vous avez défini. 
 
@@ -52,7 +52,7 @@ En guise de meilleure pratique, l’intervalle d’actualisation doit être au m
 * Si de nouvelles données arrivent chaque seconde, l’intervalle doit être défini sur une seconde. 
 
 
-Pour des intervalles d’actualisation inférieurs à une seconde, vous devez également tenir compte du type de la source de données de requête directe, de la charge créée par vos requêtes, de la distance entre les visionneuses de rapports et du centre de données de la capacité, etc. 
+Pour des intervalles d’actualisation inférieurs à une seconde, vous devez également tenir compte du type de la source de données de requête directe, de la charge créée par vos requêtes, de la distance entre les lecteurs de rapports et le centre de données de la capacité, etc. 
 
 Vous pouvez estimer cela à l’aide de l’analyseur de performances dans Power BI Desktop, ce qui vous permet de vérifier si chaque requête visuelle a suffisamment de temps pour retourner le résultat de la source, et où les choses prennent du temps. En fonction des résultats de l’analyseur de performances, vous pouvez ajuster et apporter des modifications à la source de données, ou vous pouvez faire des essais avec d’autres visuels et mesures dans votre rapport.
 
@@ -62,10 +62,10 @@ L’image suivante montre les résultats d’une DirectQuery dans l’analyseur 
 
 Examinons d’autres caractéristiques de cette source de données. 
 
-1.  Les données arrivent avec un rythme de deux secondes. 
-2.  L’analyseur de performances affiche un temps maximal de requête + affichage d’environ 4,9 secondes (4688 millisecondes). 
-3.  La source de données est configurée pour gérer environ 1000 requêtes simultanées par seconde. 
-4.  Environ 10 utilisateurs peuvent afficher le rapport simultanément.
+1.    Les données arrivent avec un rythme de deux secondes. 
+2.    L’analyseur de performances affiche un temps maximal de requête + affichage d’environ 4,9 secondes (4688 millisecondes). 
+3.    La source de données est configurée pour gérer environ 1000 requêtes simultanées par seconde. 
+4.    Environ 10 utilisateurs peuvent afficher le rapport simultanément.
 
 Ainsi, les résultats sont les suivants :
 
@@ -83,13 +83,13 @@ Voyons ensuite comment vous pouvez potentiellement détecter et diagnostiquer le
 
 Vous pouvez également définir des intervalles d’actualisation automatique de la page pour les rapports qui ont été créés dans Power BI Desktop et qui sont publiés dans le service Power BI. 
 
-L’actualisation automatique de la page pour les rapports dans le service Power BI est configurée avec des étapes similaires à la configuration dans Power BI Desktop. Quand elle est configurée dans le service Power BI, l’actualisation automatique des pages prend aussi en charge le contenu [Power BI incorporé](developer/embedding.md). L’illustration suivante montre la configuration **d’actualisation de la page** pour le service Power BI :
+L’actualisation automatique de la page pour les rapports dans le service Power BI est configurée avec des étapes similaires à la configuration dans Power BI Desktop. Quand elle est configurée dans le service Power BI, l’actualisation automatique des pages prend aussi en charge le contenu [Power BI incorporé](developer/embedded/embedding.md). L’illustration suivante montre la configuration **d’actualisation de la page** pour le service Power BI :
 
 ![Actualisation automatique de la page dans le service Power BI](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.  Curseur d’actualisation automatique de la page : active ou désactive l’actualisation de la page
-2.  Valeur de l’intervalle d’actualisation de la page : valeur numérique de l’intervalle d’actualisation, doit être un nombre entier
-3.  Unité d’intervalle d’actualisation de la page : l’unité de l’intervalle d’actualisation de la page
+1.    Curseur d’actualisation automatique de la page : active ou désactive l’actualisation de la page
+2.    Valeur de l’intervalle d’actualisation de la page : valeur numérique de l’intervalle d’actualisation, doit être un nombre entier
+3.    Unité d’intervalle d’actualisation de la page : l’unité de l’intervalle d’actualisation de la page
 
 ### <a name="page-refresh-intervals"></a>Intervalles d’actualisation de la page
 
@@ -117,7 +117,7 @@ Voici quelques détails sur les deux scénarios d’espace de travail :
 
 **Espaces de travail partagés** : pour les espaces de travail standard (les espaces de travail qui ne font pas partie d’une capacité Premium), l’actualisation automatique de la page a un intervalle minimal de 30 minutes (l’intervalle le plus bas autorisé).
 
-**Espaces de travail Premium ** : la disponibilité de l’actualisation automatique de la page dans les espaces de travail Premium dépend des paramètres de charge de travail que votre administrateur Premium a configurés pour la capacité Power BI Premium. Il existe deux variables qui peuvent affecter votre capacité à configurer l’actualisation automatique de la page :
+**Espaces de travail Premium**  : la disponibilité de l’actualisation automatique de la page dans les espaces de travail Premium dépend des paramètres de charge de travail que votre administrateur Premium a configurés pour la capacité Power BI Premium. Il existe deux variables qui peuvent affecter votre capacité à configurer l’actualisation automatique de la page :
 
  1. *Activation/désactivation de la fonctionnalité* : Si votre administrateur de capacité a décidé de désactiver la fonctionnalité, vous ne pourrez pas configurer le type d’actualisation de page dans votre rapport publié.
 
@@ -208,7 +208,7 @@ Cette section fournit des questions et des réponses courantes
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations, consultez les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
 * [Utilisation de DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport](desktop-performance-analyzer.md)

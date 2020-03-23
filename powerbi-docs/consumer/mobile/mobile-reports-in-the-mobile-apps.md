@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538117"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435763"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -21,6 +21,9 @@ S’applique à :
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Téléphone Android](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Tablette Android](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Appareils Windows 10](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Un rapport Power BI est une vue interactive de vos données, avec des visuels qui représentent différents résultats et insights de ces données. L’affichage de rapports dans les applications mobiles Power BI est la troisième étape d’un processus en trois étapes :
 
@@ -59,6 +62,14 @@ Quand vous téléchargez l’application mobile Power BI, elle est définie pour
 Si vous préférez, vous pouvez passer à l’interaction d’appui double. Avec l’interaction d’appui double, vous appuyez d’abord sur un visuel pour le sélectionner, puis vous rappuyez dans le visuel pour effectuer l’action souhaitée.
 
 Pour passer à l’interaction d’appui double ou pour revenir à l’interaction d’appui simple, accédez à [Paramètres d’interaction de l’application](./mobile-app-interaction-settings.md).
+
+### <a name="single-select-versus-multi-select-mode-for-data-point-selection"></a>Comparaison entre le mode sélection unique et le mode sélection multiple pour la sélection de points de données
+
+Dans un rapport, il faut appuyer sur un point de données pour le sélectionner. Vous pouvez choisir d’utiliser le mode sélection unique ou le mode sélection multiple. Dans le mode sélection unique, si l’on appuie sur un point de données pour le sélectionner, cette sélection remplace la précédente. En mode sélection multiple, si l’on appuie sur un point de données pour le sélectionner, la sélection est *ajoutée* à la sélection précédente, et le résultat combiné de toutes les sélections est mis en surbrillance dans tous les visuels du rapport.
+
+Pour désélectionner un point de données sélectionné, il suffit d’appuyer à nouveau dessus.
+
+Pour passer du mode sélection unique au mode sélection multiple et inversement, accédez aux [paramètres d’interaction de l’application](./mobile-app-interaction-settings.md).
 
 ### <a name="using-tap-and-long-tap"></a>Utilisation de l’appui et de l’appui long
 Un appui équivaut à un clic de souris. Par conséquent, si vous souhaitez effectuer la sélection croisée du rapport en fonction d’un point de données, appuyez sur ce point de données.

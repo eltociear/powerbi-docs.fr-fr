@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f6f0db28103b937d2074e6f339c9aaa61bfd688
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2492996c8bbc6ea7a8d359b4b1015de67bb17430
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879641"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378705"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -112,7 +112,7 @@ Quand un visuel fait l’objet d’une mise en évidence croisée dans un rappor
 Gardez à l’esprit les considérations et les limitations suivantes relatives aux **info-bulles**.
 
 * Depuis la version de décembre 2018 de **Power BI Desktop**, les visuels de bouton prennent également en charge les info-bulles.
-* Les info-bulles de rapport ne sont pas prises en charge pour les visuels personnalisés. 
+* Les info-bulles de rapport ne sont pas prises en charge pour les visuels Power BI. 
 * Les info-bulles de rapport ne prennent pas en charge l’affichage des champs clusters. 
 * Quand ils sélectionnent un champ à afficher pour les info-bulles de rapport, entre un champ et une catégorie, les visuels qui contiennent ce champ affichent uniquement l’info-bulle spécifiée si une correspondance est trouvée lors de la totalisation avec le champ sélectionné. 
 

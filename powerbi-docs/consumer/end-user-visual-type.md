@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114179"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377187"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses. Certains types de visuel sont inclus dans Power BI et d’autres sont des *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports et aux tableaux de bord Power BI. 
+Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses. Certains types de visuel sont inclus dans Power BI et d’autres sont des *visuels Power BI*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports et aux tableaux de bord Power BI. 
 
 Cet article est une vue d’ensemble des visuels inclus dans le service Power BI.  Voici les visuels que vous allez rencontrer plus souvent. Pour des informations détaillées sur l’un de ces visuels, consultez la documentation du [concepteur *de rapports Power BI* sur les types de visuel](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Pour en savoir plus sur les visuels personnalisés, recherchez-les dans la section **Visuels Power BI** de [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Pour chaque visuel, vous avez une description, des informations sur le créateur et des captures d’écran ou une vidéo. 
+> Pour en savoir plus sur les visuels Power BI, recherchez-les dans la section **Visuels Power BI** de [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Pour chaque visuel, vous avez une description, des informations sur le créateur et des captures d’écran ou une vidéo. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste de visuels disponibles dans Power BI
 Tous ces visuels sont disponibles dans les tableaux de bord et les rapports Power BI, et sont [spécifiés dans Questions et réponses](end-user-q-and-a.md). Pour savoir comment interagir avec les visuels, consultez [Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md).
@@ -237,7 +237,7 @@ Les graphiques en cascade sont conseillés pour :
 - illustrer l’évolution annuelle de l’effectif global de votre société ;
 - visualiser vos revenus et vos dépenses par mois, et le solde courant de votre compte.
 
-## <a name="qna"></a>Indiquer dans Questions et réponses le visuel à utiliser
+## <a name="tell-qa-which-visual-to-use"></a><a name="qna"></a>Indiquer dans Questions et réponses le visuel à utiliser
 Lorsque vous tapez des requêtes en langage naturel avec le service Questions et réponses de Power BI, vous pouvez spécifier le type de visuel dans votre requête.  Par exemple :
 
 

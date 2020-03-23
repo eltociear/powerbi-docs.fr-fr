@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50cb15e95f051dd6860112243514464dd80a8b1e
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401177"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133196"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Résoudre les problèmes liés à la connexion dans Power BI Desktop
 Il est possible que vous rencontriez des erreurs lorsque vous tentez de vous connecter à **Power BI Desktop**. Il existe deux raisons principales pour les problèmes de connexion : **Erreurs d’authentification proxy** et **Erreurs de redirection d’URL non HTTPS**. 
@@ -75,4 +75,37 @@ Pour recueillir une trace dans **Power BI Desktop**, procédez comme suit :
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 Ce dossier peut contenir de nombreux fichiers de trace. Assurez-vous d’envoyer uniquement les fichiers récents à votre administrateur afin de faciliter l’identification rapide de l’erreur. 
+
+
+## <a name="using-default-system-credentials-for-web-proxy"></a>Utilisation des informations d’identification système par défaut pour le proxy web
+
+Les requêtes web émises par Power BI Desktop n’utilisent pas les informations d’identification du proxy web. Dans les réseaux qui utilisent un serveur proxy, Power BI Desktop peut ne pas être en mesure d’effectuer des requêtes web. 
+
+À partir de la version Power BI Desktop de mars 2020, les administrateurs système ou réseau peuvent autoriser l’utilisation des informations d’identification système par défaut pour l’authentification du proxy web. Les administrateurs peuvent créer une entrée de registre appelée **UseDefaultCredentialsForProxy** et définir la valeur sur un (1) pour activer l’utilisation des informations d’identification système par défaut pour l’authentification du proxy web.
+
+L’entrée de registre peut être placée à l’un des emplacements suivants :
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+Il n’est pas nécessaire de disposer de l’entrée de registre dans les deux emplacements.
+
+![Clé de registre pour l’utilisation des informations d’identification système par défaut](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+Une fois l’entrée de registre créée (un redémarrage peut être nécessaire), les paramètres de proxy définis dans Internet Explorer sont utilisés lorsque Power BI Desktop effectue des requêtes web. 
+
+Comme pour toute modification apportée aux paramètres de proxy ou d’informations d’identification, il existe des implications en matière de sécurité pour la création de cette entrée de registre, de sorte que les administrateurs doivent s’assurer qu’ils ont correctement configuré les proxys Internet Explorer avant d’activer cette fonctionnalité.         
+
+### <a name="limitations-and-considerations-for-using-default-system-credentials"></a>Limitations et considérations relatives à l’utilisation des informations d’identification système par défaut
+
+Il existe une collection d’implications en matière de sécurité que les administrateurs doivent prendre en compte avant d’activer cette fonctionnalité. 
+
+Les recommandations suivantes doivent être suivies lors de l’activation de cette fonctionnalité pour les clients :
+
+* Utilisez uniquement **Négociation** comme schéma d’authentification pour le serveur proxy, afin de garantir que seuls les serveurs proxy qui sont joints au réseau Active Directory sont utilisés par le client. 
+* N’utilisez pas la **méthode de secours NTLM** sur les clients qui utilisent cette fonctionnalité.
+* Si les utilisateurs ne se trouvent pas sur un réseau avec un proxy lorsque cette fonctionnalité est activée et configurée comme cela recommandé dans cette section, le processus visant à contacter le serveur proxy et à utiliser les informations d’identification système par défaut n’est pas utilisé.
+
+
+[Utilisation des informations d’identification système par défaut pour le proxy web](#using-default-system-credentials-for-web-proxy)
 

@@ -11,11 +11,11 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877469"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207594"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -38,7 +38,7 @@ Cet article aborde les points suivants.
   > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](consumer/end-user-tiles.md).
 
   
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour effectuer la procédure, ouvrez le service Power BI (pas Power BI Desktop) et [téléchargez l’exemple Analyse des dépenses informatiques](sample-it-spend.md). Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**.
 
 - - -
@@ -126,7 +126,7 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 <a name="different"></a>
 
 ### <a name="pin-the-tile-to-a-different-dashboard"></a>Épingler la vignette à un autre tableau de bord
-1. Dans le menu déroulant des points de suspension, sélectionnez **Épingler la vignette** ![icône d’épingle](media/service-dashboard-edit-tile/pinnooutline.png).
+1. Dans le menu déroulant du bouton de sélection, sélectionnez **Épingler la vignette** ![icône d’épingle](media/service-dashboard-edit-tile/pinnooutline.png) .
 2. Épinglez un doublon de cette vignette à un tableau de bord existant ou nouveau. 
    
    ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
@@ -135,7 +135,7 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 <a name="delete"></a>
 
 ### <a name="delete-the-tile"></a>Supprimer la vignette
-1. Pour supprimer définitivement une vignette d’un tableau de bord, sélectionnez **Supprimer la vignette** ![icône Supprimer](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) dans le menu déroulant des points de suspension. 
+1. Pour supprimer définitivement une vignette d’un tableau de bord, sélectionnez **Supprimer la vignette** ![icône de suppression](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) dans le menu déroulant du bouton de sélection. 
 
 2. La suppression d’une vignette n’entraîne pas celle de la visualisation sous-jacente. Ouvrez le rapport sous-jacent en sélectionnant la vignette « Quantité ». Ouvrez la dernière page de votre rapport pour voir que la visualisation d’origine n’a pas été supprimée du rapport. 
 

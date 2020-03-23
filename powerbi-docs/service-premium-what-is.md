@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/12/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 07fd9a00034a210dfbcc6cae4aa721e3b09bd37a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889394"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381166"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -88,7 +88,7 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 
 ### <a name="capacity-workloads"></a>Charges de travail de capacité
 
-Les charges de travail de capacité sont des services mis à la disposition des utilisateurs. Par défaut, les capacités Premium et Azure ne prennent en charge que la charge de travail de jeu de données qui est associée aux requêtes Power BI en cours d’exécution. La charge de travail de jeu de données ne peut pas être désactivée. Vous pouvez également activer les charges de travail suivantes : [IA (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et [Rapports paginés](paginated-reports-save-to-power-bi-service.md). Ces charges de travail sont prises en charge uniquement dans les abonnements Premium. 
+Les charges de travail de capacité sont des services mis à la disposition des utilisateurs. Par défaut, les capacités Premium et Azure ne prennent en charge que la charge de travail de jeu de données qui est associée aux requêtes Power BI en cours d’exécution. La charge de travail de jeu de données ne peut pas être désactivée. Vous pouvez également activer les charges de travail suivantes : [IA (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Flux de données](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et [Rapports paginés](paginated-reports/paginated-reports-save-to-power-bi-service.md). Ces charges de travail sont prises en charge uniquement dans les abonnements Premium. 
 
 Chaque charge de travail supplémentaire permet de configurer la mémoire maximale (sous forme d’un pourcentage de la mémoire totale disponible) qui peut être utilisée par la charge de travail. Les valeurs par défaut pour la mémoire maximale sont déterminées par la référence SKU. Vous pouvez optimiser les ressources disponibles de votre capacité en activant uniquement les charges de travail supplémentaires lorsque vous en avez besoin. En outre, vous ne pouvez modifier les paramètres de mémoire que si vous avez constaté que les paramètres par défaut ne répondent pas aux besoins en ressources de votre capacité. Les charges de travail peuvent être activées et configurées pour une capacité par les administrateurs de capacité en accédant aux **paramètres de capacité** sur le [portail d’administration](service-admin-portal.md) ou en utilisant les [API REST Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities).  
 
@@ -209,7 +209,7 @@ Les rapports paginés, qui sont pris en charge par les références SKU P1-P3 e
 
 Dans Power BI Premium, les rapports paginés sont une charge de travail qui doit être activée pour une capacité à l’aide du portail d’administration. Les administrateurs de capacités peuvent l’activer, puis spécifier une quantité de mémoire sous la forme d’un pourcentage de la mémoire globale de la capacité. Contrairement aux autres types de charges de travail, Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La mémoire maximale spécifiée pour cet espace est utilisée, que la charge de travail soit activée ou non. Par défaut, le pourcentage de mémoire est défini sur 20 %. 
 
-Pour plus d’informations, consultez [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md). Pour plus d’informations sur l’activation de la charge de travail Rapports paginés, consultez [Configurer les charges de travail](service-admin-premium-workloads.md).
+Pour plus d’informations, consultez [Présentation des rapports paginés dans Power BI Premium](paginated-reports/paginated-reports-report-builder-power-bi.md). Pour plus d’informations sur l’activation de la charge de travail Rapports paginés, consultez [Configurer les charges de travail](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
  
@@ -227,7 +227,7 @@ Premium permet aux utilisateurs Pro de distribuer du contenu sans exiger que le
 
 Pour plus d’informations, consultez [Gestion des licences Power BI](service-admin-licensing-organization.md).
 
-## <a name="tool-connectivity-preview"></a>Connectivité des outils (préversion)
+## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services dans Power BI Premium (préversion)
 
 Le **moteur Vertipaq Analysis Services** validé par Microsoft alimente en arrière-plan les jeux de données Power BI. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Les jeux de données Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais des **points de terminaison XMLA**. 
 

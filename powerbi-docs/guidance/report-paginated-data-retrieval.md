@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1e69c7eefe25da771ecc4d9602d6a21081f2c052
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 067171f7ec74beccdb5a312c1cac5bbc6c87541f
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920749"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377647"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Aide sur l’extraction de données pour les rapports paginés
 
@@ -26,7 +26,7 @@ Les rapports paginés prennent en charge les sources de données relationnelles 
 Si vous pouvez choisir le type de source de données (par exemple dans un nouveau projet), nous vous recommandons d’utiliser des sources de données cloud. Les rapports paginés peuvent se connecter avec une latence réseau inférieure, en particulier si les sources de données résident dans la même région que votre locataire Power BI. Par ailleurs, il est possible d’utiliser l’authentification unique pour se connecter à ces sources. L’identité de l’utilisateur d’un rapport peut donc circuler jusqu’à la source de données, d’où la possibilité d’appliquer des autorisations par utilisateur au niveau des lignes. À l’heure actuelle, l’authentification unique n’est pas prise en charge pour les sources de données locales (SQL Server Analysis Services ne peut donc pas appliquer des autorisations par utilisateur au niveau des lignes).
 
 > [!NOTE]
-> Bien qu’il soit pour le moment impossible de se connecter à des bases de données locales à l’aide de l’authentification unique, vous pouvez toujours appliquer des autorisations au niveau des lignes. Pour cela, il suffit de passer le champ intégré le **UserID** à un paramètre de requête de jeu de données. La source de données doit stocker les valeurs UPN (nom d’utilisateur principal) de manière à pouvoir filtrer correctement les résultats de la requête.
+> Bien qu’il soit pour le moment impossible de se connecter à des bases de données locales à l’aide de l’authentification unique, vous pouvez toujours appliquer des autorisations au niveau des lignes. Pour cela, il suffit de passer le champ intégré **UserID** à un paramètre de requête de jeu de données. La source de données doit stocker les valeurs UPN (nom d’utilisateur principal) de manière à pouvoir filtrer correctement les résultats de la requête.
 >
 > Par exemple, imaginez que chaque commercial soit stocké dans une ligne de la table **Salesperson**.  La table contient des colonnes pour l’UPN et le territoire de vente du commercial. Au moment de la requête, la table est filtrée par l’UPN de l’utilisateur de rapport et liée aux faits de vente à l’aide d’une jointure interne. De cette façon, la requête filtre les lignes de fait de vente pour ne retenir que celles du territoire de vente de l’utilisateur du rapport.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: d97ff72c385edd4c59c6eb72ce1eb873656923c9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114293"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376819"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 
@@ -67,7 +67,7 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |  |  |
 |**N premiers**     |     (ordre, classement) : top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception à cette règle concerne les [éléments visuels personnalisés](../developer/power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
+|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception à cette règle concerne les [visuels Power BI](../developer/visuals/power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
 |  |  Exemple : show districts by month and sales total as bar chart               |
 |        |         |
 |**Relatifs (relation, qualification)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |

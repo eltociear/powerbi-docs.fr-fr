@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40e11f6423df12355800a2c62876e5de1f8b3f82
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867455"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378590"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de lignes à haute densité dans Power BI
 À compter de la version de juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations échantillonne des données (sélectionnez une représentation explicite de ces données pour illustrer les variations des ventes au fil du temps) à partir des données de chaque magasin, et montre plusieurs séries, représentant ainsi les données sous-jacentes. Il s’agit d’une pratique courante pour la visualisation de données à haute densité. Cet article décrit en détail comment Power BI Desktop a amélioré son échantillonnage des données à haute densité.
@@ -46,7 +46,7 @@ Pour chaque visualisation, les limitations visuelles suivantes s’appliquent :
 Le nombre maximal de limites de données est plus élevé pour les types de visuel suivants, qui sont des *exceptions* à la limite de points de données de 3 500 :
 
 * **150 000** points de données au maximum pour les visuels R.
-* **30 000** points de données pour les visuels personnalisés.
+* **30 000** points de données pour les visuels Power BI.
 * **10 000** points de données pour les graphiques à nuages de points (la valeur par défaut est 3 500)
 * **3 500** pour tous les autres visuels
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/17/2019
 ms.author: painbar
-ms.openlocfilehash: bfc6a32f7b6ef83e6e69351fb4d87d89c8c2806e
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: c9a42949ca517860c8b3f0e6faa07d49bd8054e8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427580"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376681"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
@@ -96,13 +96,13 @@ Consultez [Conseils pour créer des applications modèles dans Power BI](service
 | Caractéristique | Limitation connue |
 |---------|---------|
 |Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
-|Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de la transmission de type push ou de la diffusion en continu de jeux de données) |
+|Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de l’envoi (push) ou du streaming de jeux de données) |
 |Contenu : Dataflows | Non pris en charge : Dataflows |
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
 | Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
 | Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
-| Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](developer/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
+| Visuels Power BI | Seuls les visuels Power BI disponibles publiquement sont pris en charge. Les [visuels Power BI organisationnels](developer/visuals/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 
 ## <a name="support"></a>Support
 Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous supervisons et gérons activement ce site. Les incidents utilisateur sont rapidement transmis à la bonne équipe.

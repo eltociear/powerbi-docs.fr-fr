@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 019a3af81cd3661307fd9de6d0577ac58a11ae6a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78919790"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488818"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -40,7 +40,7 @@ L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.
 
     ![Incorporer un rapport](media/service-embed-secure/secure-embed-report.png)
 
-5. Quand vous utilisez un iFrame, vous pouvez être amené à modifier les **hauteur** et **largeur** afin qu’il contienne dans la page web de votre portail.
+5. Quand vous utilisez un iFrame, vous pouvez être amené à modifier la **hauteur** et la **largeur** afin qu’il tienne dans la page web de votre portail.
 
     ![Définir la hauteur et la largeur](media/service-embed-secure/secure-embed-size.png)
 
@@ -104,7 +104,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -133,9 +133,9 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 
 * La version classique de SharePoint Server n’est pas prise en charge, car elle requiert des versions d’Internet Explorer antérieures à la version 11, ou l’activation du mode d’Affichage de compatibilité.
 
-* Pour obtenir une expérience d’authentification unique, utilisez [l’option Incorporer dans SharePoint Online](service-embed-report-spo.md), ou générez une intégration personnalisée suivant la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
+* Pour obtenir une expérience d’authentification unique, utilisez [l’option Incorporer dans SharePoint Online](service-embed-report-spo.md), ou générez une intégration personnalisée suivant la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embedded/embed-sample-for-your-organization.md). 
 
-* La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
+* La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embedded/embed-sample-for-your-organization.md). 
 
 * La durée de vie du jeton d’authentification est contrôlée en fonction de vos paramètres AAD. Quand le jeton d’authentification expire, l’utilisateur doit actualiser son navigateur pour recevoir un jeton d’authentification mis à jour. La durée de vie par défaut est d’une heure, mais elle peut être plus courte ou plus longue dans votre organisation.
 

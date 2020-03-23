@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488726"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -54,7 +54,7 @@ Les nouveaux espaces de travail mis à niveau et les espaces de travail classiqu
 
 ## <a name="roles-in-the-new-workspaces"></a>Rôles dans les nouveaux espaces de travail
 
-Pour accorder l’accès à un nouvel espace de travail, ajoutez des groupes d’utilisateurs ou des individus à l’un des rôles de l’espace de travail : lecteurs, membres, collaborateurs ou administrateurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne fait partie de plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par les rôles qui lui sont attribués.
+Pour accorder l’accès à un nouvel espace de travail, ajoutez des groupes d’utilisateurs ou des individus à l’un des rôles de l’espace de travail : administrateurs, membres, contributeurs ou lecteurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne fait partie de plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par les rôles qui lui sont attribués.
 
 Les rôles vous permettent de gérer qui peut faire quoi dans un espace de travail, ce qui permet aux équipes de collaborer. Les nouveaux espaces de travail vous permettent d’affecter des rôles à des personnes individuelles et à des groupes d’utilisateurs : groupes de sécurité, groupes Office 365 et listes de distribution. 
 
@@ -70,11 +70,14 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
 | Publier et mettre à jour une application. |  X | X  |   |   |
 | Partager un élément ou une application.<sup>1</sup> |  X | X  |   |   |
 | Permettre à d’autres utilisateurs de repartager des éléments.<sup>1</sup> |  X | X  |   |   |
+| Proposer des applications sur la page d’accueil de collègues |  X | X  |   |   |
+| Proposer des tableaux de bord et des rapports sur la page d’accueil de collègues |  X | X  | X |   |
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
 | Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>1</sup> |  X | X  | X  |   |
 | Copier un rapport.<sup>2</sup> | X | X | X |  |
 | Voir et utiliser un élément.<sup>3</sup> |  X | X  | X  | X  |
+| Lire les données stockées dans les flux de données des espaces de travail | X | X | X | X |
 
 1. Les contributeurs et les lecteurs peuvent partager des éléments dans un espace de travail s’ils ont des autorisations de repartage.
 2. Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, vous devez remplir quelques critères supplémentaires :
@@ -140,7 +143,7 @@ Limitations à connaître :
 
 ## <a name="workspace-features-that-work-differently"></a>Fonctionnalités d’espace de travail fonctionnant différemment
 
-Certaines fonctionnalités agissent différemment dans les nouveaux espaces de travail. Ces différences sont intentionnelles et basées sur le feedback que nous avons reçu des clients. Elles permettent une approche plus souple de la collaboration avec des espaces de travail :
+Certaines fonctionnalités agissent différemment dans les nouveaux espaces de travail. Ces différences sont intentionnelles et basées sur les commentaires que nous avons reçus des clients. Elles permettent une approche plus souple de la collaboration avec des espaces de travail :
 
 - Application de la gestion des licences : La publication de rapports dans la nouvelle expérience de l’espace de travail applique les règles de gestion des licences existantes qui nécessitent une licence Power BI Pro pour les utilisateurs collaborant dans les espaces de travail ou partageant du contenu avec d’autres personnes dans le service Power BI. Les utilisateurs sans licence Pro voient l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail ».
 - Les membres peuvent ou non repartager : remplacé par le rôle Contributeur

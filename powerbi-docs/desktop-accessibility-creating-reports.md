@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae13bc69d7049dc9cf5c9d71ce0961ec566252bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925692"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379096"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Concevoir des rapports Power BI pour l’accessibilité
 Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisant leur accessibilité. Quel que soit le public concerné, vous devez veiller à ce que tous les rapports que vous créez puissent être utilisés par le plus grand nombre de personnes possible sans nécessiter ni adaptation, ni conception spéciale.
@@ -41,7 +41,7 @@ Nous aborderons chacune de ces catégories dans les sections suivantes.
 
 ## <a name="built-in-accessibility-features"></a>Fonctionnalités d’accessibilité intégrées
 
-Power BI possède des fonctionnalités d’accessibilité intégrées qui ne nécessitent aucune configuration par l’auteur du rapport. Ces fonctionnalités sont les suivantes :
+Power BI possède des fonctionnalités d’accessibilité intégrées qui ne nécessitent aucune configuration par l’auteur du rapport. Ces fonctionnalités sont les suivantes :
 
 * Navigation au clavier
 * Compatibilité avec les lecteurs d’écran
@@ -253,8 +253,8 @@ Outre une diversité d’outils et fonctionnalités d’accessibilité, Power BI
 * Assurez-vous que les images décoratives sont marquées comme masquées dans l’ordre de tabulation de sorte qu’elles ne soient pas annoncées par un lecteur d’écran.
 * Évitez d’utiliser des images décoratives trop nombreuses. Ceci pourrait affecter la capacité de concentration du consommateur.
 
-### <a name="custom-visuals"></a>Visuels personnalisés
-* Vérifiez les visuels personnalisés avec la table d’accessibilité **Afficher les données**. Si les informations présentées ne sont pas suffisantes, envisagez un autre visuel.
+### <a name="power-bi-visuals"></a>Visuels Power BI
+* Vérifiez la table d’accessibilité **Afficher les données** pour les visuels Power BI. Si les informations présentées ne sont pas suffisantes, envisagez un autre visuel.
 * Si vous utilisez le visuel personnalisé *Axe de lecture*, assurez-vous qu’il ne s’exécute pas automatiquement. Faites en sorte que l’utilisateur comprenne instantanément qu’il doit appuyer sur le bouton de lecture/pause pour démarrer/arrêter la lecture des valeurs.
 
 ### <a name="across-visuals-on-the-page"></a>Visuels sur la page

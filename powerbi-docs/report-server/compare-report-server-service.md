@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 4c48b9c2695c7feab5897527c9ff2fbf2a2d0455
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920936"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381051"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -52,7 +52,7 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Collaboration Office 365 avancée | Non | Oui | [Collaborer dans un espace de travail](../service-collaborate-power-bi-workspace.md) avec Office 365 |
 | Visuels R | Non | Oui | [Créer des visuels R](../desktop-r-visuals.md) dans Power BI Desktop et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des visuels R dans Power BI Report Server.  |
 | Fonctionnalités en préversion | Non | Oui | [Accéder aux fonctionnalités en préversion du service Power BI](../consumer/end-user-preview-features.md) |
-| Visuels personnalisés | Oui | Oui | [Éléments visuels personnalisés dans Power BI](../developer/power-bi-custom-visuals.md) |
+| Visuels Power BI | Oui | Oui | [Visuels Power BI](../developer/visuals/power-bi-custom-visuals.md) |
 | Modèles composites | Non | Oui |
 | Power BI Desktop | Version optimisée pour Report Server, disponible en téléchargement avec Report Server | Version optimisée pour le service Power BI, disponible sur le Windows Store | [Power BI Desktop pour Report Server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop pour le service Power BI](https://aka.ms/pbidesktopstore) |
 

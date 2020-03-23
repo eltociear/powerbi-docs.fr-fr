@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 4ce61fcd4f322abc0362956453d76ced9b78d887
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: c87d1af9033044a8b79d6fe00d566d9b46c499fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264240"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377891"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Comment déboguer des visuels Power BI
 
 Cette page présente quelques conseils pour le débogage lors de la création de votre visuel. Ceci inclut des étapes de base et présente les différences entre le débogage des applications frontales standard et des visuels Power BI.
-Après avoir lu l’article, vous pourrez déboguer des visuels personnalisés à l’aide de points d’arrêt, enregistrer des exceptions et intercepter des exceptions dans Chrome et dans Edge.
+Après avoir lu l’article, vous pourrez déboguer des visuels Power BI à l’aide de points d’arrêt, enregistrer des exceptions et intercepter des exceptions dans Chrome et dans Edge.
 
 ## <a name="using-breakpoints"></a>Utilisation des points d'arrêt
 
@@ -35,7 +35,7 @@ public update(options: VisualUpdateOptions) {
 
 ## <a name="showing-exceptions"></a>Affichage d’exceptions
 
-Lors du travail sur votre visuel, vous remarquerez que toutes les erreurs sont « consommées » par le service Power BI. Cette fonctionnalité intentionnelle de Power BI est destinée à empêcher les visuels ayant un mauvais comportement de rendre l’ensemble de l’application instable.
+Lorsque vous travaillez sur un visuel, vous remarquerez que toutes les erreurs sont « consommées » par le service Power BI. Cette fonctionnalité intentionnelle de Power BI est destinée à empêcher les visuels ayant un mauvais comportement de rendre l’ensemble de l’application instable.
 
 Pour contourner le problème, ajouter du code pour intercepter et enregistrer vos exceptions, ou définissez votre débogueur de telle manière qu’il arrête les exceptions interceptées.
 
@@ -80,7 +80,7 @@ Vous pouvez également configurer le navigateur pour qu’il s’arrête sur les
 3. Cliquez sur l’icône **Arrêter en cas d’exception** (hexagone avec un symbole de pause).
 4. Sélectionnez **Arrêter sur toutes les exceptions**.
 
-![Champs de rôles de données](./media/how-to-debug-edge.png)
+![Champs de rôles de données](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -89,8 +89,8 @@ Vous pouvez également configurer le navigateur pour qu’il s’arrête sur les
 3. Cliquez sur l’icône **interrompre en cas d’exception** (symbole Stop avec un symbole de pause).
 4. Activez la case à cocher **Suspendre les exceptions interceptées**.
 
-![Champs de rôles de données](./media/how-to-debug-chrome.png)
+![Champs de rôles de données](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Résoudre les problèmes de visuels Power BI](../power-bi-custom-visuals-troubleshoot.md)
-* Pour plus d’informations et des réponses à vos questions, consultez [Forum aux questions sur les visuels Power BI](../power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+* [Résoudre les problèmes de visuels Power BI](power-bi-custom-visuals-troubleshoot.md)
+* Pour plus d’informations et des réponses à vos questions, consultez [Forum aux questions sur les visuels Power BI](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)

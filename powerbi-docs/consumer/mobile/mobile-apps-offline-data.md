@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75219071"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435441"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -21,6 +21,9 @@ S’applique à :
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 L’affichage de Power BI dans une application mobile plutôt qu’un navigateur mobile offre l’avantage de visualiser vos données, même lorsque vous n’êtes connecté à aucun réseau. 
 
@@ -34,7 +37,7 @@ Quand vous êtes en mode hors connexion, vous pouvez accéder à tous les tablea
 Vous avez également accès en lecture seule à tous les rapports Power BI auxquels vous avez précédemment accédés depuis l’application mobile. Vous pouvez voir le rapport complet, mais vous ne pouvez pas filtrer, effectuer un filtrage croisé, trier ou utiliser des segments.
 
 ## <a name="background-data-refresh"></a>Actualisation des données en arrière-plan
-L’actualisation en arrière-plan met à jour vos tableaux de bord favoris, ainsi que les tableaux de bord et les rapports que vous avez sélectionnés au cours des deux dernières semaines, avec les données sur le service Power BI (et pas la source de données). Si vous êtes connecté au Wi-Fi, l’actualisation en arrière-plan effectue une mise à jour toutes les 2 heures. Sinon, si vous êtes sur un réseau 3G, Power BI se met à jour toutes les 24 heures.
+L’actualisation en arrière-plan met à jour vos tableaux de bord favoris, ainsi que les tableaux de bord et les rapports que vous avez sélectionnés au cours des deux dernières semaines, avec les données sur le service Power BI (et pas la source de données). Si vous êtes connecté au Wi-Fi, l’actualisation en arrière-plan effectue une mise à jour toutes les 2 heures. Sinon, si vous êtes sur un réseau 3G, Power BI met à jour le contenu toutes les 24 heures.
 
 Vous pouvez désactiver l’actualisation en arrière-plan, par exemple pour éviter l’utilisation du réseau. Vérifiez les paramètres sur votre appareil.
 

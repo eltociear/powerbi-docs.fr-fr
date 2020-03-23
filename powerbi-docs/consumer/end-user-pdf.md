@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3e23f56da424ae18565b6cbec591c9d855f23139
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e45d3e109d072984d6c01b2cbdfdd9b53e936a3b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113148"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377210"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -53,7 +53,7 @@ C’est tout. Vous pouvez télécharger le fichier et l’ouvrir avec n’import
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter au format PDF**.
 
 * Les éléments visuels R et Pyhton ne sont actuellement pas pris en charge. Dans le fichier PDF, ces visuels sont vides et affichent un message d’erreur. 
-* Les visuels personnalisés qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels personnalisés certifiés, notamment concernant la manière de certifier un visuel personnalisé, consultez [Obtenir un visuel personnalisé certifié](../developer/power-bi-custom-visuals-certified.md). Les visuels personnalisés qui n’ont pas été certifiés ne sont pas pris en charge. Dans le fichier PDF, ils s’affichent avec un message d’erreur.
+* Les visuels Power BI qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels Power BI certifiés, notamment concernant la manière de certifier un visuel Power BI, consultez [Obtenir un visuel Power BI certifié](../developer/visuals/power-bi-custom-visuals-certified.md). Les visuels Power BI qui n’ont pas été certifiés ne sont pas pris en charge. Dans le fichier PDF, ils s’affichent avec un message d’erreur.
 * L’élément visuel ESRI n'est pas pris en charge
 * Les rapports contenant plus de 30 pages ne peuvent actuellement pas être exportés.
 * Le processus d’exportation du rapport au format PDF peut prendre quelques minutes : soyez patient. Les facteurs qui peuvent affecter la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 07ddf82b120e0e4b77b7545863b536282f849de3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114427"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435786"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
 S’applique à :
@@ -21,6 +21,9 @@ S’applique à :
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Avec une [licence Power BI Pro](../../service-features-license-type.md), vous pouvez inviter d’autres utilisateurs à consulter vos tableaux de bord et vos rapports en partageant des liens à partir des applications mobiles Power BI. Vous pouvez partager avec d’autres personnes, au sein ou en dehors de votre organisation, avec ou sans un compte de messagerie d’entreprise. Ces personnes doivent également avoir une licence Power BI Pro ou le contenu doit avoir une [capacité Premium](../../service-premium-what-is.md).
 

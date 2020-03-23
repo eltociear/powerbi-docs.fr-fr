@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76753188"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525634"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 
@@ -28,7 +28,7 @@ Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateur
 Cet article explique comment acheter des licences utilisateur Power BI Pro dans le Centre d’administration Microsoft 365. Une fois que vous avez acheté des licences, vous pouvez les affecter aux utilisateurs dans le Centre d’administration Microsoft 365 ou sur le Portail Azure.
 
 > [!NOTE]
-> À compter du 14 janvier 2020, les fonctionnalités d’achat, d’abonnement et de gestion des licences libre-service pour les produits Power Platform (Power BI, Power Apps et Power Automate) sont disponibles pour les clients du cloud commercial aux États-Unis. Pour plus d’informations, notamment sur les étapes à suivre pour activer ou désactiver l’achat libre-service dans votre organisation, consultez [FAQ sur l’achat libre-service](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> À compter du 14 janvier 2020, les fonctionnalités d’achat, d’abonnement et de gestion des licences libre-service pour les produits Power Platform (Power BI, Power Apps et Power Automate) sont disponibles pour les clients cloud commerciaux. Pour plus d’informations, notamment sur les étapes à suivre pour activer ou désactiver l’achat libre-service dans votre organisation, consultez [FAQ sur l’achat libre-service](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ### <a name="prerequisites"></a>Prérequis
 

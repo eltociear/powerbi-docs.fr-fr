@@ -6,18 +6,18 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4379fbfe051b69a2c9502a033ba462c1dded2022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880354"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380628"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Info-bulles dans les visuels Power BI
 
-Les visuels peuvent maintenant utiliser la prise en charge des info-bulles Power BI. Les info-bulles Power BI gèrent les interactions suivantes :
+Les visuels peuvent maintenant utiliser la prise en charge des info-bulles Power BI. Les info-bulles Power BI gèrent les interactions suivantes :
 
 * Afficher une info-bulle.
 * Masquer une info-bulle.
@@ -27,7 +27,7 @@ Les info-bulles peuvent afficher un élément textuel avec un titre, une valeur 
 
 L’image suivante montre une info-bulle dans un exemple de graphique à barres :
 
-![Info-bulles dans un exemple de graphique à barres](./media/tooltips-in-samplebarchart.png)
+![Info-bulles dans un exemple de graphique à barres](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 L’image d’info-bulle précédente illustre une catégorie et une valeur de barre uniques. Vous pouvez étendre une seule info-bulle pour qu’elle affiche plusieurs valeurs.
 
@@ -209,7 +209,7 @@ Exemple de schéma :
 
 Vous pouvez définir des info-bulles de page de rapport dans le volet **Format**.
 
-![Info-bulle de page de rapport](media/report-page-tooltip.png)
+![Info-bulle de page de rapport](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes` : configuration des info-bulles qui est prise en charge par le visuel et reflétée également dans les champs. 
    * `default` : spécifie si la liaison « automatique » des info-bulles par le biais du champ de données est prise en charge. 

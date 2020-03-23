@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: d4e8ab0effef52071f592902a6c2fdb2649ff52d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114776"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435326"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer un rapport en fonction de l’emplacement géographique dans les applications mobiles Power BI
 S’applique à :
@@ -25,8 +25,9 @@ Quand vous consultez un rapport Power BI sur votre appareil mobile, pouvez-vous
 
 > [!NOTE]
 > Vous pouvez filtrer par emplacement seulement si les noms géographiques qui figurent dans le rapport sont en anglais, par exemple « New York City » ou « Germany ». Les téléphones Windows 10 prennent en charge le filtrage géographique, mais pas les tablettes et PC Windows 10.
-> 
-> 
+
+>[!NOTE]
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="filter-your-report-by-your-geographic-location"></a>Filtrer un rapport en fonction de votre emplacement géographique
 1. Ouvrez un rapport dans l’application mobile Power BI sur votre appareil mobile.

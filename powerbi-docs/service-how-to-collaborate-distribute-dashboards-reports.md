@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881342"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376750"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Moyens de partager votre travail dans Power BI
 
@@ -23,10 +23,12 @@ Vous avez créé des tableaux de bord et des rapports. Vous avez peut-être coll
 * Collaborer avec des collègues pour créer des rapports et tableaux de bord dans des *espaces de travail*
 * Regrouper les tableaux de bord et les rapports dans des *applications*, et les distribuer à un groupe plus important ou à toute l’organisation
 * Créer des *jeux de données partagés* que vos collègues peuvent utiliser comme base pour leurs propres rapports, dans leur propre espace de travail
-* Créer une *application modèle* que vous pouvez distribuer aux utilisateurs Power BI externes, par le biais de Microsoft AppSource
 * Partager des tableaux de bord ou des rapports avec quelques personnes, à partir du service ou des applications mobiles Power BI
+* Annoter et partager à partir des applications mobiles Power BI.
+* Incorporer un rapport dans Microsoft Teams.
 * Imprimer des rapports
 * *Incorporer* des rapports dans des portails sécurisés ou des sites web publics
+* Créer une *application modèle* que vous pouvez distribuer aux utilisateurs Power BI externes, par le biais de Microsoft AppSource
 
 Quelle que soit l’option choisie, pour partager du contenu, vous avez besoin d’une [licence Power BI Pro](service-features-license-type.md). Sinon, le contenu doit se trouver dans une [capacité Premium](service-premium-what-is.md). Les besoins en licence varient pour les collègues qui consultent votre contenu, et dépendent de l’option que vous choisissez. Les sections suivantes offrent des informations détaillées. 
 
@@ -97,6 +99,10 @@ Vous partagez une capture instantanée de la vignette, du rapport et du visuel e
 En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de visuels](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) à partir des applications mobiles iOS et Android.
 
 Vous pouvez également [partager une capture instantanée d’une vignette](consumer/mobile/mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
+
+## <a name="embed-a-report-in-microsoft-teams"></a>Incorporer un rapport dans Microsoft Teams
+
+Augmentez la collaboration pilotée par les données au sein de votre organisation en incorporant vos rapports Power BI et vos rapports paginés Power BI dans Microsoft Teams. Vous pouvez ajouter des onglets Power BI distincts pour chaque rapport individuel et attribuer à chaque onglet le nom du rapport ou un autre nom quelconque. Vos collègues peuvent afficher vos rapports sous les onglets Power BI dans Teams. Ils peuvent également ouvrir la fenêtre de conversation et commenter le rapport directement dans Teams. Apprenez-en davantage sur l’[incorporation d’un rapport dans Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Imprimer ou enregistrer au format PDF ou dans un autre format de fichier statique
 

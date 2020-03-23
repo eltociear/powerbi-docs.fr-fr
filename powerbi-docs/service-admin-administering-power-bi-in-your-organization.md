@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115259"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381281"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -59,7 +59,7 @@ Le tableau suivant décrit les nombreuses tâches effectuées par les administra
 | Gérer la capacité Premium |<ul><li>Acquérir et travailler avec une capacité Premium<br><li>Garantir la qualité de service|
 | Gérer la capacité Embedded |<ul><li>Acquérir une capacité Embedded pour simplifier l’utilisation des fonctionnalités de Power BI par les éditeurs de logiciels indépendants et les développeurs</ul>|
 | Assurer la conformité aux stratégies internes, à la législation et aux réglementations | <ul><li>Gérer la classification de données métiers<br><li>Participer à la publication de contenu et au partage de stratégies</ul>|
-| Gérer les ressources Power BI |<ul><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés<br><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications|
+| Gérer les ressources Power BI |<ul><li>Gérer les espaces de travail<br><li>Publier des visuels Power BI<br><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications|
 | Offrir de l’aide et un support aux utilisateurs du client |<ul><li>Résoudre les problèmes d’accès aux données et autres</ul>|
 | Autres tâches |<ul><li>Déployer Power BI Desktop, par exemple avec Microsoft Endpoint Configuration Manager<br><li>Gérer le déploiement d’applications mobiles Power BI avec Intune<br><li>Gérer la sécurité et la confidentialité des données, notamment des données sources</ul>|
 
@@ -69,7 +69,7 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 
 | **Outil** | **Tâches courantes** |
 | --- | --- |
-| Portail d’administration Power BI |<ul><li>Acquérir et travailler avec une capacité Premium</li><li>Garantir la qualité de service</li><li>Gérer la classification de données métiers</li><li>Participer à la publication de contenu et au partage de stratégies</li><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés</li><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications</li><li>Résoudre les problèmes d’accès aux données et autres</li></ul>|
+| Portail d’administration Power BI |<ul><li>Acquérir et travailler avec une capacité Premium</li><li>Garantir la qualité de service</li><li>Gérer la classification de données métiers</li><li>Participer à la publication de contenu et au partage de stratégies</li><li>Gérer les espaces de travail<br><li>Publier des visuels Power BI</li><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications</li><li>Résoudre les problèmes d’accès aux données et autres</li></ul>|
 | Centre d'administration Microsoft 365 |<ul><li>Gérer l’inscription des utilisateurs</li><li>Acheter et affecter des licences Pro</li><li>Empêcher les utilisateurs d’accéder à Power BI</li></ul>|
 | Centre de sécurité et conformité Office 365 |<ul><li>Examiner et gérer les audits d’événements</li></ul>|
 | Azure Active Directory (AAD) sur le Portail Azure |<ul><li>Configurer l’accès conditionnel aux ressources de Power BI avec AAD</li><li>Approvisionner la capacité de Power BI Embedded</li></ul>|

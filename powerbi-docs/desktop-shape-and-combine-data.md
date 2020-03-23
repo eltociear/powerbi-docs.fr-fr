@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop'
+title: 'Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop'
 description: Ce tutoriel explique comment mettre en forme et combiner des données dans Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
@@ -10,13 +10,13 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877819"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206766"
 ---
-# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
+# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
 
 Avec Power BI Desktop, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins, de façon à créer des rapports visuels à partager avec d’autres. *Mettre en forme* des données consiste à transformer les données, c’est-à-dire à renommer des colonnes ou des tables, à changer du texte en nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les regrouper dans une requête utile.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: adfa99a3e973108d65a06361ed967bef2ce37eb3
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: fa373fca782a582ec2ac2ef60cb36322efaff327
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537206"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205271"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Protection des données dans Power BI (préversion)
 
@@ -44,9 +44,9 @@ Pour accéder aux étiquettes de sensibilité dans l’un de ces centres, accéd
 
 ## <a name="how-sensitivity-labels-work"></a>Fonctionnement des étiquettes de sensibilité
 
-L’application d’une étiquette de sensibilité à un tableau de bord Power BI, un rapport, un jeu de données ou un dataflow est similaire à l’application d’une *étiquette* à cette ressource, ce qui offre les avantages suivants :
+L’application d’une étiquette de sensibilité à un tableau de bord Power BI, un rapport, un jeu de données ou un dataflow est similaire à l’application d’une *balise* à cette ressource, ce qui offre les avantages suivants :
 * **Personnalisable** : vous pouvez créer des catégories pour différents niveaux de contenu sensible dans votre organisation, comme Personnel, Public, Général, Confidentiel et Hautement confidentiel.
-* **Texte clair** : étant donné que l’étiquette est en texte clair, les utilisateurs peuvent facilement comprendre comment traiter le contenu en fonction des indications relatives à l’étiquette de sensibilité.
+* **Texte en clair** : étant donné que l’étiquette est en texte clair, les utilisateurs peuvent facilement comprendre comment traiter le contenu en fonction des indications relatives à l’étiquette de sensibilité.
 * **Persistant** : une fois qu’une étiquette de sensibilité a été appliquée au contenu, elle est associée à ce contenu quand il est exporté vers les types de fichiers pris en charge suivants : Excel, PowerPoint et PDF. 
 
   Cela signifie que l’étiquette de sensibilité suit le contenu, ce qui inclut ses paramètres de protection, et qu’elle devient la base de l’application et du respect des stratégies. 
@@ -105,9 +105,6 @@ La liste suivante présente certaines limitations des étiquettes de sensibilit�
 * La [protection HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) n’est pas prise en charge pour les étiquettes appliquées dans Power BI.
 * L’affichage et l’application d’étiquettes dans les applications Office sont soumis à des [conditions de licences](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Les étiquettes de sensibilité sont uniquement prises en charge pour les locataires dans le cloud global (public). Les étiquettes de sensibilité ne sont pas prises en charge pour les locataires dans les autres clouds.
-* Les étiquettes de sensibilité ne sont pas prises en charge pour les [utilisateurs externes (utilisateurs invités d’Azure Active Directory B2B)](../service-admin-azure-ad-b2b.md). Cela signifie que les utilisateurs externes ne peuvent pas voir les étiquettes et qu’ils seront empêchés d’exporter des données vers des fichiers Excel, PDF et PPTX. [Supprimez l’étiquette](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels) pour permettre aux utilisateurs externes d’exporter des données vers ces types de fichiers.
-
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

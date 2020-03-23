@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 0ab2ececd4ede03a10094be53a2c08617463cc53
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c4c21dc0f02e547cd7319d789a3eb66cce1f4b88
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113121"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377348"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Rapports paginés dans le service Power BI
 
@@ -36,7 +36,7 @@ Une fois que vous avez sélectionné le paramètre **Year** (Année), ce rapport
 
 ![Rapport simple à un paramètre](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels personnalisés.
+Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels Power BI.
 
 ## <a name="identify-a-paginated-report"></a>Identifier un rapport paginé
 

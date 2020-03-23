@@ -7,16 +7,16 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: ad63a1b97c744e8614e584874c4d896a85598e48
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819120"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379849"
 ---
-# <a name="add-the-locale-in-power-bi-for-custom-visuals"></a>Ajouter les paramètres régionaux dans Power BI pour les visuels personnalisés
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Ajouter les paramètres régionaux dans Power BI pour les visuels Power BI
 
 Les visuels peuvent récupérer les paramètres régionaux Power BI pour localiser leur contenu dans la langue appropriée.
 
@@ -24,7 +24,7 @@ Découvrez plus en détail les [langues et pays/régions pris en charge pour Pow
 
 Par exemple, obtention de paramètres régionaux dans l’exemple de visuel de graphique à barres.
 
-![Localisation dans l’exemple de visuel de graphique à barres](media/locale-in-samplebarchart.png)
+![Localisation dans l’exemple de visuel de graphique à barres](media/localization/locale-in-samplebarchart.png)
 
 Chacun de ces graphiques à barres a été créé avec des paramètres régionaux différents (anglais, basque et hindi) et il est affiché dans l’info-bulle.
 
@@ -95,13 +95,13 @@ zh-TW | 中國 (chinois traditionnel)
 > [!NOTE]
 > Dans Power BI Desktop, la propriété de paramètres régionaux contient la langue de l’application Power BI Desktop installée.
 
-## <a name="localizing-the-property-pane-for-custom-visuals"></a>Localisation du volet de propriétés pour les visuels personnalisés
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Localisation du volet de propriétés pour les visuels Power BI
 
 Les champs du volet de propriétés peuvent être localisés pour offrir une expérience plus intégrée et cohérente. Cela permet à votre visuel personnalisé de se comporter comme n’importe quel autre visuel principal Power BI.
 
 Par exemple, un visuel personnalisé non localisé créé à l’aide de la commande `pbiviz new` affiche les champs suivants dans le volet de propriétés :
 
-![Localisation dans le volet de propriétés](media/property-pane.png)
+![Localisation dans le volet de propriétés](media/localization/property-pane.png)
 
 Les données de catégorie et les données de mesure sont définies dans le fichier capabilities.json comme `displayName`.
 
@@ -132,7 +132,7 @@ Ajoutez ensuite un répertoire appelé stringResources. Le répertoire contiendr
 
 Dans notre exemple, supposons que nous voulons prendre en charge l’arabe et l’hébreu. Nous allons devoir ajouter deux fichiers JSON de la façon suivante :
 
-![Chaînes de localisation dans le dossier des ressources de chaînes](media/stringresources-files.png)
+![Chaînes de localisation dans le dossier des ressources de chaînes](media/localization/stringresources-files.png)
 
 Chaque fichier JSON définit un seul paramètre régional (ce fichier doit être l’un des paramètres régionaux de la liste prise en charge ci-dessus), avec les valeurs de chaînes pour les clés de nom complet souhaitées. Dans notre exemple, le fichier de ressources de chaînes en hébreu se présente comme suit :
 
@@ -161,13 +161,13 @@ Pour une utilisation au bureau, téléchargez la version localisée de Power BI
 
 Si vous utilisez le client web (navigateur) dans le service, modifiez votre langue dans Paramètres :
 
-![Localisation dans le service web](media/webservice-settings.png)
+![Localisation dans le service web](media/localization/webservice-settings.png)
 
 ## <a name="resource-file"></a>Fichier de ressources
 
 Ajoutez un fichier resources.resjson à un dossier nommé comme paramètres régionaux que vous allez utiliser dans le dossier stringResources. Il s’agit d’en-US et de ru-RU dans notre exemple.
 
-![Nouveau fichier resjson](media/new-resjson.png)
+![Nouveau fichier resjson](media/localization/new-resjson.png)
 
 Après cela, ajoutez toutes les chaînes de localisation que vous allez utiliser dans le fichier resources.resjson ajouté à l’étape précédente.
 

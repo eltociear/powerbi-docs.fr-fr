@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: f27f03a88a39ce046ae64454b9b092e87c07d0a3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237957"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381097"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -200,7 +200,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Fonctionnalités
             - La prise en charge de DirectQuery avec authentification unique SAP HANA avec Kerberos est désormais disponible pour les rapports Power BI
             - API des visuels personnalisés livrée avec la version - version 1.13.0
-            - Les visuels personnalisés utiliseront comme solution de repli une version antérieure compatible avec la version actuelle de l’API du serveur (si elle est disponible)
+            - Les visuels Power BI utiliseront comme solution de repli une version antérieure compatible avec la version actuelle de l’API du serveur (si elle est disponible)
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
     - *Version : 2.61.5192.641 (August 2018), publiée : 15 août 2018*
@@ -322,7 +322,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - La balise `{{UserId}}` est remplacée par des informations d’identification stockées plutôt que par l’utilisateur qui exécute le rapport dans Rapports Power BI
             - Échec du rendu de certaines images dans des rapports de Power BI Report Server
             - Impossibilité de modifier le nom d’un rapport Power BI dans Power BI Report Server
-            - Impossibilité de charger des éléments visuels personnalisés dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
+            - Impossibilité de charger des visuels Power BI dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
 
     - *Build 14.0.600.271, publiée : 12 juin 2017*
         - Publication initiale de Power BI Report Server

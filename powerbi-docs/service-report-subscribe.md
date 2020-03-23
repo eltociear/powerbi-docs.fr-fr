@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74831104"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381028"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -95,10 +95,10 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 * Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres personnes à un rapport auquel est appliquée la sécurité au niveau des lignes (RLS), à moins que vous utilisiez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité. 
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
-* Les abonnements par e-mail pour les rapports/tableaux de bord utilisant des jeux de données avec connexion active ne sont pas pris en charge lors de l’abonnement d’utilisateurs autres que vous-même, sauf si vous utilisez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité. 
-* Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](developer/power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](developer/power-bi-custom-visuals-certified.md).  
-* Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
-* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.  Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.   
+* Les abonnements par e-mail pour les rapports/tableaux de bord utilisant des jeux de données avec connexion active ne sont pas pris en charge lors de l’abonnement d’utilisateurs autres que vous-même, sauf si vous utilisez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité.
+* Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels Power BI](developer/visuals/power-bi-custom-visuals.md).  La seule exception est celle des visuels Power BI qui ont été [certifiés](developer/visuals/power-bi-custom-visuals-certified.md).  
+* À ce stade, les abonnements aux e-mails ne prennent pas en charge les visuels Power BI alimentés par R.  
+* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.  Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui. Par conséquent, si vous êtes aaron@xyz.com, vous pouvez partager avec anyone@ABC.com, mais vous ne pouvez pas encore abonner anyone@ABC.com et il ne peut pas s’abonner au contenu partagé.      
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.    

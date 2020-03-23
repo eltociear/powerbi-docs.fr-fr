@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260413"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133255"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
 Cet article s’adresse aux modélisateurs de données Power BI Desktop. Il décrit la conception d’un schéma en étoile et sa pertinence pour le développement de modèles de données Power BI qui sont optimisés du point de vue des performances et de la convivialité.
 
-Cet article n’a pas pour but d’aborder par le menu la conception de schémas en étoile. Pour plus d’informations, reportez-vous directement à du contenu publié, tel que **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2e édition, 2002) par Ralph Kimball et al.
+Cet article n’a pas pour but d’aborder par le menu la conception de schémas en étoile. Pour plus d’informations, reportez-vous directement à du contenu publié, tel que **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3e édition, 2013) de Ralph Kimball et al.
 
 ## <a name="star-schema-overview"></a>Vue d’ensemble du schéma en étoile
 

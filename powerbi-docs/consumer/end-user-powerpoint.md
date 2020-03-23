@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113763"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377159"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 
@@ -78,7 +78,7 @@ Quand vous accédez à une diapositive, vous voyez que chaque page du rapport es
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter vers PowerPoint**.
 
 * Les éléments visuels R et Pyhton ne sont actuellement pas pris en charge. Tout visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
-* Les visuels personnalisés qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels personnalisés certifiés, notamment concernant la manière de certifier un visuel personnalisé, consultez [Obtenir un visuel personnalisé certifié](../developer/power-bi-custom-visuals-certified.md). Les visuels personnalisés qui n’ont pas été certifiés ne sont pas pris en charge. Ils sont exportés en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
+* Les visuels Power BI qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels personnalisés certifiés, notamment concernant la manière de certifier un visuel personnalisé, consultez [Obtenir un visuel personnalisé certifié](../developer/power-bi-custom-visuals-certified.md). Les visuels personnalisés qui n’ont pas été certifiés ne sont pas pris en charge. Ils sont exportés en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
 * L’élément visuel ESRI n'est pas pris en charge
 * Les rapports contenant plus de 30 pages ne peuvent pas être exportés actuellement.
 * Les visuels avec des barres de défilement sont exportés dans leur état par défaut. Dans PowerPoint, le visuel affiche uniquement la partie supérieure des données. Le défilement n’y est pas disponible, car chaque diapositive est une image. 

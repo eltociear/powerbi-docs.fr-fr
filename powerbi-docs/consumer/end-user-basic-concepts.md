@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: e303d85083624bb67e73729024875d0f6f44fc42
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496898"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377141"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Concepts de base pour les consommateurs du service Power BI
 
@@ -118,7 +118,7 @@ Voici quelques-unes des visualisations que vous rencontrerez dans Power BI : c
 
 Consultez la [liste complète des visualisations incluses dans Power BI](../power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Des visualisations appelées *visuels personnalisés* sont également fournies par la communauté. Si vous recevez un rapport comprenant un visuel que vous ne reconnaissez pas, il s’agit probablement d’un visuel personnalisé. Si vous avez besoin d’aide pour interpréter le visuel personnalisé, recherchez le nom du *concepteur* du rapport ou du tableau de bord, puis contactez-le.
+Des visualisations appelées *visuels Power BI* sont également fournies par la communauté. Si vous recevez un rapport comprenant un visuel que vous ne reconnaissez pas, il s’agit probablement d’un visuel personnalisé. Si vous avez besoin d’aide pour interpréter le visuel personnalisé, recherchez le nom du *concepteur* du rapport ou du tableau de bord, puis contactez-le.
 
 Une visualisation dans un rapport...
 

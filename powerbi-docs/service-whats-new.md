@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920964"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488841"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -91,7 +91,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Exportation filtrée pour PPT et PDF.
 * [Paramètres d’aide et support](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) dans le portail d’administration.
 * Expérience de lignage des données pour les [dataflows](service-dataflows-overview.md).
-* Paramètre de visuels personnalisés certifiés dans le portail d’administration.
+* Paramètre des visuels Power BI certifiés dans le portail d’administration.
 
 ### <a name="january-2019"></a>Janvier 2019
 * [Incorporation des rapports Power BI sécurisés](service-embed-secure.md) dans les portails internes ou sites web.
@@ -126,7 +126,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Améliorations du [filtre d’URL de rapport](service-url-filters.md) Power BI.
 
 ### <a name="july-2018"></a>Juillet 2018
-* Prise en charge des visuels personnalisés pour les [filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* Prise en charge des visuels Power BI pour les [filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [API et applets de commande PowerShell](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) pour les administrateurs Power BI.
 * [Prise en charge de plusieurs zones géographiques](service-admin-premium-multi-geo.md) pour Power BI Premium.
 
@@ -153,20 +153,20 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 ### <a name="february-2018"></a>Février 2018
 * Installer automatiquement des [applications Power BI](service-create-distribute-apps.md) pour les utilisateurs finaux.
 * Capacités P4 et P5 sur Power BI Premium
-* Préversion des [visuels personnalisés d’une organisation](developer/power-bi-custom-visuals-organization.md).
+* Préversion des [visuels Power BI d’organisation](developer/visuals/power-bi-custom-visuals-organization.md).
 
 ### <a name="january-2018"></a>Janvier 2018
-*   Partager des rapports Power BI et les marquer comme favoris.
-*   Prise en charge de l’authentification unique (SSO) OAuth2 et DirectQuery (SSO) pour Azure SQL Database et Data Warehouse.
-*   Audit dans la région : les journaux d’audit sont à présent stockés dans la même région Office 365 que leur client.
-*   Disponibilité générale de SharePoint Online pour la [partie web d’un rapport Power BI](https://go.microsoft.com/fwlink/p/?LinkId=825698).
-*   Contrôle d’administration afin de désactiver l’affichage des visuels personnalisés pour tous les utilisateurs dans un locataire.
-*   Prise en charge de l’actualisation planifiée pour Azure Analysis Services (AAS).
+*    Partager des rapports Power BI et les marquer comme favoris.
+*    Prise en charge de l’authentification unique (SSO) OAuth2 et DirectQuery (SSO) pour Azure SQL Database et Data Warehouse.
+*    Audit dans la région : les journaux d’audit sont à présent stockés dans la même région Office 365 que leur client.
+*    Disponibilité générale de SharePoint Online pour la [partie web d’un rapport Power BI](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    Contrôle d’administration afin de désactiver l’affichage des visuels Power BI pour tous les utilisateurs dans un locataire.
+*    Prise en charge de l’actualisation planifiée pour Azure Analysis Services (AAS).
 
 ## <a name="previous-months-2017"></a>Mois précédents (2017)
 ### <a name="october-and-november-2017"></a>Octobre et novembre 2017
-*   Publication sélective du contenu avec les [applications Power BI](service-create-distribute-apps.md).
-*   Distribution des utilisateurs externes avec [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+*    Publication sélective du contenu avec les [applications Power BI](service-create-distribute-apps.md).
+*    Distribution des utilisateurs externes avec [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Recommandations d’apps exploitant l’intelligence artificielle.
 * Mises à jour de l’interface utilisateur du tableau de bord.
 * Prise en charge des abonnements par messagerie électronique pour les applications. 
@@ -183,8 +183,8 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Connaissez votre public avec des [métriques d’utilisation par utilisateur](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Prise en main des applications du [service Power BI](service-connect-to-services.md) pour les services en ligne.
 * Connectez-vous à IBM Netezza avec la passerelle de données locale via l’importation et les modes de connectivité de DirectQuery.
-* [SNL dynamique](developer/embedded-row-level-security.md) désormais prise en charge pour Power BI Embedded.
-* [API de filtrage](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) avancé désormais ajoutée pour la version 1.7 des API de visuels personnalisés.
+* [SNL dynamique](developer/embedded/embedded-row-level-security.md) désormais prise en charge pour Power BI Embedded.
+* [API de filtrage](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) avancé désormais ajoutée pour la version 1.7 de l’API des visuels Power BI.
 
 ### <a name="july-2017"></a>Juillet 2017
 * Prise en charge des [abonnements à l’e-mail](consumer/end-user-subscribe.md) sur les tableaux de bord.
@@ -197,7 +197,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Plusieurs améliorations d’API pour [automatiser l’actualisation planifiée](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [cloner et à relier des rapports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [mettre à jour les liaisons de passerelle](https://msdn.microsoft.com/library/mt784650.aspx) et bien plus.
 * Liens relatifs dans les applications Power BI à partir de vignettes de tableau de bord vers d’autres tableaux de bord et rapports.
 * [Connecteur Impala](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) mis à la disposition générale sur Power BI Desktop.
-* Étendez les fonctionnalités visuelles de Power BI avec des [visuels personnalisés R interactifs](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+* Étendez les fonctionnalités visuelles de Power BI avec des [visuels Power BI R interactifs](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### <a name="april-and-may-2017"></a>Avril et mai 2017
 * Mesurez et augmentez votre impact avec les [métriques d’utilisation des tableaux de bord et des rapports pour les créateurs de contenu](service-usage-metrics.md).
@@ -213,7 +213,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Amélioration des messages de [résolution des problèmes pour les requêtes DAX](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Contrôlez plus étroitement vos jeux de données avec les [planifications personnalisées d’actualisation de cache](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Connectez-vous à [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* Parcourez les [visuels personnalisés de Power BI dans Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* Parcourez les [visuels Power BI dans Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Préversion : [S’abonner à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour rester au fait des données.
 * Utilisez le pack de contenu Azure AD pour plus d’informations sur la façon dont vos employés et partenaires utilisent Azure AD.
 
@@ -225,7 +225,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 ### <a name="january-2017"></a>Janvier 2017
 * Administrer Power BI avec le [rôle d’administrateur de Power BI](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 * Les [journaux d’audit Power BI](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) dans le portail d’audit Office 365 sont disponibles mondialement.
-* La version 1.4 des [outils de développement et des API des visuels personnalisés](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) est publiée.
+* La version 1.4 des [outils de développement et des API des visuels Power BI](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) est publiée.
 * [Jeu de fonctionnalités de streaming en temps réel](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) publié.
 * [Envoyez (push) des données à Power BI à l’aide de Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) sans écrire une seule ligne de code.
 * Préversion : [S’abonner à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour rester au fait des données.
@@ -506,7 +506,7 @@ Un grand nombre de mises à jour de cette semaine, la plupart s’appliquant à 
   1. Prise en charge multidimensionnelle de SSAS – prise en charge des hiérarchies (version Preview)
   2. Connecteur Stripe
   3. Connecteur Smartsheet
-  4. « Entrer des données » : coller ou entrer des données pour créer une table
+  4. « Entrer des données » : coller ou entrer des données pour créer une table
   5. Améliorations apportées à DirectQuery :  prise en charge de tous les types de données de T-SQL et de SAP HANA pour accroître les performances
   6. Connecteur ODBC : prise en charge de la sélection des noms de sources de données utilisateur/système
   7. Connecteur CSV : possibilité de spécifier le délimiteur de colonne dans la boîte de dialogue Source
@@ -606,7 +606,7 @@ Pour plus d’informations, consultez notre [blog](https://blogs.msdn.com/b/powe
 
 * Les Q&R relatives à Power BI vous permettent d’explorer vos données à l’aide de questions simples et intuitives, et de recevoir des réponses sous la forme de diagrammes et graphiques interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Q&R Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Q&R](power-bi-tutorial-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
 * Il y a deux semaines, nous avons introduit la prise en charge de l’insertion de formes dans le canevas de rapport dans Power BI Desktop. Cette semaine, nous avons le plaisir d’annoncer que vous pouvez désormais ajouter des formes à votre canevas de rapport lors de la création ou de la modification de rapports dans l’application web Power BI.
-* Vous pouvez aussi désactiver les e-mails de notification quand vous partagez un tableau de bord. Désactivez simplement la case à cocher « Envoyer un e-mail de notification aux destinataires » dans la boîte de dialogue de partage Power BI. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
+* Vous pouvez aussi désactiver les e-mails de notification quand vous partagez un tableau de bord. Décochez simplement la case « Envoyer un e-mail de notification aux destinataires » dans la boîte de dialogue de partage Power BI. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
 * Microsoft Dynamics NAV est une solution de gestion d’entreprise pour les organisations de tailles petite et moyenne. Il s’agit pour les clients d’une solution complète pour leur entreprise, qui leur permet de mieux contrôler leurs finances et processus d’entreprise. Le pack de contenu Power BI fournit des rapports prêts à l’emploi pour les utilisateurs de Dynamics NAV en relation, par exemple, avec les ventes et bénéfices, le pipeline d’opportunités, la rentabilité et bien plus encore. Ces mesures sont organisées dans un tableau de bord entièrement personnalisable qui vous permet de vous connecter aisément et de commencer immédiatement à explorer vos données.
 
 Pour plus d’informations, consultez notre [blog](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) et notre [documentation en ligne](service-get-started.md).
@@ -654,7 +654,7 @@ Pour plus d’informations, consultez notre [blog](https://blogs.msdn.com/b/powe
 
 **18 août 2015**
 
-* Azure Engagement Mobile est un service d’analyse d’application qui permet aux développeurs de suivre les performances de leur application pour mieux gérer la rétention et l’utilisation de l’application. Avec le [pack de contenu Azure Mobile Engagement pour Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx), vous pouvez rapidement vous connecter à un tableau de bord prêt à l’emploi, à un ensemble de rapports et à un jeu de données organisé pour obtenir de précieuses informations sur le fonctionnement de votre application. Pour en savoir plus, consultez notre [rubrique d’aide sur le pack de contenu Azure Mobile Engagement pour Power BI](service-connect-to-azure-mobile.md).
+* Azure Mobile Engagement est un service d’analyse d’application qui permet aux développeurs de suivre les performances de leur application pour mieux gérer la rétention et l’utilisation de l’application. Avec le [pack de contenu Azure Mobile Engagement pour Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx), vous pouvez rapidement vous connecter à un tableau de bord prêt à l’emploi, à un ensemble de rapports et à un jeu de données organisé pour obtenir de précieuses informations sur le fonctionnement de votre application. Pour en savoir plus, consultez notre [rubrique d’aide sur le pack de contenu Azure Mobile Engagement pour Power BI](service-connect-to-azure-mobile.md).
 
 **11 août 2015**
 
@@ -663,7 +663,7 @@ Pour plus d’informations, consultez notre [blog](https://blogs.msdn.com/b/powe
 **4 août 2015**
 
 * Power BI offre maintenant aux utilisateurs du pack de contenu [Circuit ID](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/circuit-id-data-with-power-bi.aspx) la possibilité de suivre et de surveiller leurs services de communication cloud Circuit ID pour les aider à prendre les bonnes décisions. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide](service-connect-to-circuit-id.md) sur le pack de contenu Circuit ID pour Power BI.
-* Nous avons publié aujourd’hui une amélioration de la fonctionnalité Partager le tableau de bord pour rendre son utilisation encore plus simple.  Si votre organisation utilise Office 365 comme système de messagerie, vous pouvez maintenant [partager le tableau de bord avec un groupe de distribution d’e-mail](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx), de la même façon que vous envoyez un e-mail dans Outlook.  Entrez simplement l’adresse du groupe de distribution, puis cliquez sur Partager.  Tous les membres du groupe de distribution recevront une invitation par e-mail pour afficher le tableau de bord partagé.
+* Nous avons publié aujourd’hui une amélioration de la fonctionnalité Partager le tableau de bord pour faciliter encore son utilisation.  Si votre organisation utilise Office 365 comme système de messagerie, vous pouvez maintenant [partager le tableau de bord avec un groupe de distribution d’e-mail](https://blogs.msdn.com/b/powerbi/archive/2015/08/04/easier-dashboard-sharing-with-distribution-groups.aspx), de la même façon que vous envoyez un e-mail dans Outlook.  Entrez simplement l’adresse du groupe de distribution, puis cliquez sur Partager.  Tous les membres du groupe de distribution recevront une invitation par e-mail pour afficher le tableau de bord partagé.
 
 **28 juillet 2015**
 

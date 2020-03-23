@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a4ed3ffc833b2405a3c231b80047c71b40a64cc
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: 2316fcf5d0b5c0a4c63e4786b80b8c7e20c643e3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753694"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378958"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 
@@ -195,7 +195,7 @@ Ou, supposons que vous souhaitez définir manuellement la couleur d’un point d
 
 ![Rétablir les valeurs par défaut](media/desktop-report-themes/report-themes_9.png)
 
-Bon nombre de visuels personnalisés n’appliquent pas les thèmes de rapport.
+Bon nombre de visuels Power BI n’appliquent pas les thèmes de rapport.
 
 ## <a name="custom-report-theme-files-you-can-use-right-now"></a>Fichiers de thèmes de rapport que vous pouvez utiliser dès à présent
 
@@ -265,13 +265,13 @@ Au niveau le plus basique, le fichier JSON du thème n’a qu’une seule ligne 
 }
 ```
 
-En dehors du **nom**, tout le reste est facultatif, ce qui signifie que vous pouvez simplement ajouter les propriétés que vous souhaitez mettre en forme au fichier de thème et continuer à utiliser les valeurs par défaut de Power BI pour le reste.
+En dehors du **nom**, tout le reste est facultatif, ce qui signifie que vous pouvez simplement ajouter les propriétés que vous souhaitez mettre en forme au fichier de thème et continuer à utiliser les valeurs par défaut de Power BI pour le reste.
 
 ### <a name="setting-theme-colors"></a>Définition des couleurs du thème
 
 Sous **nom**, vous pouvez ajouter les propriétés de base relatives aux couleurs des données suivantes :
 
-- **dataColors** : liste des codes hexadécimaux des couleurs à utiliser pour colorer les formes qui représentent les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez. Une fois que toutes les couleurs de cette liste ont été utilisées, si l’élément visuel a encore besoin d’autres couleurs, il revient à l’utilisation de la palette de couleurs par défaut de Power BI.
+- **dataColors** : liste des codes hexadécimaux des couleurs à utiliser pour colorer les formes qui représentent les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez. Une fois que toutes les couleurs de cette liste ont été utilisées, si le visuel a encore besoin d’autres couleurs, il revient à l’utilisation de la palette de couleurs par défaut de Power BI.
 - **bon**, **neutre**, **mauvais** : Ces propriétés définissent les couleurs d’état utilisées par le graphique en cascade et l’élément visuel d’indicateur de performance clé.
 - **maximum**, **centre**, **minimum**, **nul** : Ces couleurs définissent les différentes couleurs de dégradé dans la boîte de dialogue de mise en forme conditionnelle.
 
@@ -312,10 +312,10 @@ Le tableau suivant affiche les six classes de couleurs que vous pouvez mettre en
 |---------|---------|
 | **firstLevelElements** <br> **foreground**    (déconseillé) | Couleur d’arrière-plan des étiquettes (en dehors des points de données) <br> Couleur de la courbe de tendance <br>  Couleur par défaut de la zone de texte <br> Valeurs de tableau et de matrice et couleurs de police des totaux, couleur de l’axe des barres de données <br> Étiquettes de données de carte <br> Couleur de valeur de légende de jauge <br> Couleur d’objectif de l’indicateur de performance clé <br>  Couleur du texte d’indicateur de performance clé <br> Couleur de l’élément de segment (en mode Focus)  <br> Couleur de police de l’élément déroulant du segment <br> Couleur de police d’entrée numérique du segment <br> Couleur de police d’en-tête du segment <br> Couleur de ligne du ratio du graphique à nuages de points <br> Couleur de ligne de prévision de graphique en courbes <br> Couleur de ligne d’en-tête de la carte <br> Couleur du volet de filtre et du texte de la carte|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (déconseillé) | [Classes de texte secondaires](#setting-formatted-text-defaults) « claires » <br> Couleurs d’étiquette  <br> Couleu de l’étiquette de légende <br> Couleur des étiquettes de l’axe <br> Couleur de police d’en-tête de tableau et de matrice <br> Couleur de ligne d’en-tête de jauge cible <br>  Couleur de l’axe de tendance de l’indicateur de performance clé <br> Couleur du curseur du segment <br> Couleur de police d’élément de segment <br> Couleur de contour de segment <br> Couleur de pointage de graphique en courbes <br> Couleur de titre de carte à plusieurs lignes <br> Couleur de trait de graphique de ruban <br> Couleur de bordure de carte de formes <br> Couleur de police de texte de bouton <br> Couleur de ligne d’icône de bouton <br> Couleur de contour de bouton |
-| **thirdLevelElements** <br >**backgroundLight** (déprécié) | Couleur du quadrillage de l’axe <br> Couleur de grille de table et de matrice <br> Couleur d’arrière-plan d’en-tête de segment (en mode Focus)  <br> Couleur de contour de carte à plusieurs lignes  <br> Couleur de remplissage de forme <br> Couleur d’arrière-plan d’arc de jauge <br> Couleur d’arrière-plan de la carte de filtre appliquée <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (déprécié) | Couleur estompée de légende <br> Couleur d’étiquette de catégorie de carte <br> Couleur des étiquettes de catégorie des cartes à plusieurs lignes <br> Couleur de barre de carte à plusieurs lignes <br> Couleur de trait du taux de conversion de graphique en entonnoir
+| **thirdLevelElements** <br >**backgroundLight** (déprécié) | Couleur du quadrillage de l’axe <br> Couleur de grille de table et de matrice <br> Couleur d’arrière-plan d’en-tête de segment (en mode Focus)  <br> Couleur de contour de carte à plusieurs lignes  <br> Couleur de remplissage de forme <br> Couleur d’arrière-plan d’arc de jauge <br> Couleur d’arrière-plan de la carte de filtre appliquée <br> Quand background = FFFFFF : <br> Couleur de remplissage de bouton désactivée <br> Couleur de contour de bouton désactivée <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (déprécié) | Couleur estompée de légende <br> Couleur d’étiquette de catégorie de carte <br> Couleur des étiquettes de catégorie des cartes à plusieurs lignes <br> Couleur de barre de carte à plusieurs lignes <br> Couleur de trait du taux de conversion de graphique en entonnoir <br> Couleur de police de texte de bouton désactivée <br> Couleur de ligne d’icône de bouton désactivée <br> |
 | **background** | Couleur d’arrière-plan des étiquettes (au sein des points de données) <br> Couleur d’arrière-plan des éléments déroulants du segment  <br> Couleur de trait de graphique en anneau <br> Couleur de trait de treemap <br> Couleur d’arrière-plan de graphique combiné <br> Couleur de remplissage de bouton <br> Couleur d’arrière-plan de carte de filtre disponible et de volet de filtre |
-| **secondaryBackground** <br> **backgroundNeutral** (déprécié) | Couleur de contour de la grille de table et de matrice <br> Couleur par défaut de la carte de formes <br> Couleur de remplissage du ruban du graphique de ruban (lorsque l’option Faire correspondre la couleur de la série est désactivée) |
+| **secondaryBackground** <br> **backgroundNeutral** (déprécié) | Couleur de contour de la grille de table et de matrice <br> Couleur par défaut de la carte de formes <br> Couleur de remplissage du ruban du graphique de ruban (lorsque l’option Faire correspondre la couleur de la série est désactivée) <br> Quand background != FFFFFF : <br> Couleur de remplissage de bouton désactivée <br> Couleur de contour de bouton désactivée <br> |
 | **tableAccent** | Remplace la couleur de contour de la grille des tableaux et matrices quand elle est présente |
 
 Voici un exemple de thème qui définit les classes de couleurs :
@@ -344,7 +344,7 @@ Il existe 12 classes de texte, mais vous n’avez besoin de définir que quatre 
 
 Les autres classes de texte, considérées comme des *classes secondaires*, dérivent automatiquement leurs propriétés de leurs classes principales associées. Il arrive souvent qu’une classe secondaire sélectionne une nuance plus claire de couleur de texte ou un pourcentage de taille de texte plus grand ou plus petit par rapport à la classe principale.
 
-Prenez la classe **label** à titre d’exemple. La mise en forme par défaut de la classe **étiquette** est Segoe UI, #252423 (couleur gris foncé) et 12 points. Cette classe est utilisée pour mettre en forme les valeurs de la table et de la matrice. En règle générale, les totaux d’une table ou d’une matrice ont une mise en forme similaire, mais sont mis en gras avec la classe **étiquette en gras** pour qu’ils soient plus visibles. Toutefois, vous n’avez pas besoin de spécifier cette classe dans le thème JSON ; Power BI le fait automatiquement. Par la suite, si vous décidez de spécifier des étiquettes qui ont une police de 14 points dans votre thème, vous n’avez pas besoin de mettre à jour la classe **étiquette en gras**, car elle hérite de la mise en forme du texte de la classe **étiquette**.
+Prenez la classe **label** à titre d’exemple. La mise en forme par défaut de la classe **étiquette** est Segoe UI, #252423 (couleur gris foncé) et 12 points. Cette classe est utilisée pour mettre en forme les valeurs de la table et de la matrice. En règle générale, les totaux d’une table ou d’une matrice ont une mise en forme similaire, mais sont mis en gras avec la classe **étiquette en gras** pour qu’ils soient plus visibles. Toutefois, vous n’avez pas besoin de spécifier cette classe dans le thème JSON ; Power BI le fait automatiquement. Par la suite, si vous décidez de spécifier des étiquettes qui ont une police de 14 points dans votre thème, vous n’avez pas besoin de mettre à jour la classe **bold label** (étiquette en gras), car elle hérite de la mise en forme du texte de la classe **label** (étiquette).
 
 La table ci-dessous affiche les informations suivantes :
 
@@ -401,7 +401,7 @@ Voici un exemple de thème qui définit uniquement les classes de texte principa
 }
 ```
 
-Étant donné que les classes secondaires héritent des classes principales, vous n’avez pas besoin de les définir dans votre fichier de thèmes. Cependant, si vous n’aimez pas les règles d’héritage (par exemple, si vous ne souhaitez pas que vos totaux soient une version en gras des valeurs dans un tableau), vous pouvez formater explicitement les classes secondaires dans le fichier de thème, comme vous mettriez en forme les classes principales.
+Étant donné que les classes secondaires héritent des classes principales, vous n’avez pas besoin de les définir dans votre fichier de thèmes. Cependant, si vous n’aimez pas les règles d’héritage (par exemple, si vous ne souhaitez pas que vos totaux soient une version en gras des valeurs dans un tableau), vous pouvez mettre en forme explicitement les classes secondaires dans le fichier de thème, comme vous mettriez en forme les classes principales.
 
 ### <a name="setting-visual-property-defaults-visualstyles"></a>Définition des valeurs par défaut des propriétés des visuels (`visualStyles`)
 
@@ -419,7 +419,7 @@ Enfin, pour créer un fichier JSON de format étendu, avec un contrôle plus pr�
     }
 ```
 
-Pour les sections **visualName** et **cardName**, utilisez des valeurs de nom spécifiques. Actuellement, le **styleName** est toujours un astérisque (« * »), mais dans une version ultérieure, vous serez en mesure de créer différents styles pour vos éléments visuels et de leur attribuer des noms (comme pour la fonctionnalité de style de tableau et de matrice). **PropertyName** est le nom de l’option de mise en forme spécifique et **PropertyValue** est l’endroit où vous placez l’option de mise en forme souhaitée.
+Pour les sections **visualName** et **cardName**, utilisez des valeurs de nom spécifiques. Actuellement, le **styleName** est toujours un astérisque (*), mais dans une version ultérieure, vous serez en mesure de créer différents styles pour vos visuels et de leur attribuer des noms (comme pour la fonctionnalité de style de tableau et de matrice). **PropertyName** est le nom de l’option de mise en forme spécifique et **PropertyValue** est l’endroit où vous placez l’option de mise en forme souhaitée.
 
 Pour **visualName** et **cardName** utilisez un astérisque entre parenthèses si vous souhaitez appliquer ce paramètre à tous les visuels ou toutes les cartes présentant une propriété. Si vous utilisez l’astérisque pour à la fois le nom de l’élément visuel et de la carte, vous appliquerez un paramètre à l’échelle globale dans votre rapport, par exemple une taille de police ou une famille de polices spécifique pour tout le texte dans tous les éléments visuels.
 
@@ -4491,7 +4491,7 @@ La section suivante définit les énumérations que vous pouvez utiliser dans le
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
-Si vous utilisez l’un de nos thèmes d’origine, le thème « Classique » ou un thème personnalisé que vous avez importé en plus de ceux-ci, la section Texte de la boîte de dialogue du thème n’est pas disponible pour être configurée.
+Si vous utilisez l’un de nos thèmes d’origine, le thème « Classique » ou un thème personnalisé que vous avez importé en plus de ceux-ci, la section Texte de la boîte de dialogue du thème n’est pas disponible pour configuration.
 
 Les thèmes intégrés qui sont affectés par cette limitation incluent les thèmes suivants :
 * Classique
