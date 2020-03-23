@@ -11,8 +11,8 @@
     - name: Tutoriels
       expanded: true
       items:
-        - name: "Labo pratique\_: Créer un rapport paginé"
-          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: "Cours en ligne\_: Rapports paginés"
+          href: ../paginated-reports/paginated-reports-online-course.md
         - name: Créer un rapport paginé et télécharger
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Exemples
@@ -99,18 +99,6 @@
               href: ../paginated-reports/paginated-reports-faq.md
     - name: Guides pratiques
       items:
-        - name: Publier des jeux de données et des rapports
-          href: ../desktop-upload-desktop-files.md
-        - name: Ajouter des visuels à un rapport Power BI (partie 1)
-          href: ../visuals/power-bi-report-add-visualizations-i.md
-        - name: Ajouter des visuels à un rapport Power BI (partie 2)
-          href: ../visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'Personnaliser les titres, les arrière-plans et les légendes des visuels'
-          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-        - name: Afficher les éléments sans données dans Power BI
-          href: ../desktop-show-items-no-data.md
-        - name: Appliquer la date/heure automatique
-          href: ../desktop-auto-date-time.md
         - name: Rapports Power BI
           items:
             - name: Activer l’actualisation automatique des pages (préversion)
@@ -211,12 +199,22 @@
               href: ../service-create-qr-code-for-report.md
             - name: "Exporter un rapport vers Power\_BI\_Desktop (préversion)"
               href: ../service-export-to-pbix.md
+            - name: Publier des jeux de données et des rapports
+              href: ../desktop-upload-desktop-files.md
         - name: Visualisations
           items:
+            - name: Ajouter des visuels à un rapport Power BI (partie 1)
+              href: ../visuals/power-bi-report-add-visualizations-i.md
+            - name: Ajouter des visuels à un rapport Power BI (partie 2)
+              href: ../visuals/power-bi-report-add-visualizations-ii.md
             - name: Ajouter des visuels à des rapports Power BI
               href: ../visuals/power-bi-report-visualizations.md
             - name: Changer les visuels dans les rapports Power BI
               href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: 'Personnaliser les titres, les arrière-plans et les légendes des visuels'
+              href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+            - name: Afficher les éléments sans données dans Power BI
+              href: ../desktop-show-items-no-data.md
             - name: Appliquer les limites et les stratégies par type de visuel du point de données
               href: ../visuals/power-bi-data-points.md
             - name: Afficher les données sous-jacentes d’un visuel
@@ -317,6 +315,8 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Rapports paginés
           items:
+            - name: "Labo pratique\_: Créer un rapport paginé"
+              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Entrer des données directement dans un rapport paginé
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Créer une source de données incorporée
