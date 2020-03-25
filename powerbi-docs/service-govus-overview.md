@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 349b4d51c1649b714c67e61ac42ddcc49b2eeb12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376721"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114885"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Office 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis diffère de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -95,7 +95,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Importer des données à partir de fichiers CSV|Disponible|Disponible|Disponible|
 |  |Importer des données à partir de fichiers Power BI Desktop|Disponible|Disponible|Disponible|
 |  |Connectivité à CDS|Disponible|Non disponible|Non disponible|
-|  |Connecteur Azure Data Lake Storage Gen2|Non disponible|Non disponible|Non disponible|
+|  |Connecteur Azure Data Lake Storage Gen2|Disponible|Non disponible|Non disponible|
 |Gestion des données|Passerelle de gestion des données|Disponible|Disponible|Disponible|
 |  |Chiffrement de données dans Azure SQL|Disponible|Disponible|Disponible|
 |  |Chiffrement de données dans le Stockage Blob pour Power BI|Disponible|Disponible|Disponible|

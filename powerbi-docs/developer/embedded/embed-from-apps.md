@@ -3,17 +3,17 @@ title: Incorporer des rapports ou des tableaux de bord à partir d’application
 description: Découvrez comment intégrer ou incorporer un rapport ou un tableau de bord à partir d’une application Power BI, et non à partir d’un espace de travail.
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 11/27/2018
-ms.openlocfilehash: 34c5e825a589fc3f9ba9ecd7e9fe1d6b137e1cfd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 2298350051db947c037c5e2e73f5dc963aa049bc
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79494627"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114609"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Incorporer des rapports ou des tableaux de bord à partir d’applications
 
