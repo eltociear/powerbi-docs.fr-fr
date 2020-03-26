@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867441"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273360"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points de Power BI
 À compter de la version de septembre 2017 de **Power BI Desktop** et des mises à jour apportées au **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.
@@ -85,7 +85,8 @@ L’algorithme d’échantillonnage à haute densité constitue une amélioratio
 * L’algorithme **Échantillonnage à haute densité** fonctionne uniquement avec des connexions actives à des modèles basés sur le service Power BI, à des modèles importés ou à DirectQuery.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur l’échantillonnage à haute densité dans d’autres graphiques, consultez l’article suivant.
+
+Pour plus d’informations sur l’échantillonnage à haute densité, consultez les articles suivants :
 
 * [Échantillonnage de lignes à haute densité dans Power BI](desktop-high-density-sampling.md)
-
+* [Conseils pour trier et distribuer des tracés de données dans les rapports Power BI](guidance/report-tips-sort-distribute-data-plots.md)

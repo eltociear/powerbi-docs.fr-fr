@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04fa40f5f73199ed5050870b49cd432f62cf362c
-ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
+ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78199070"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114839"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Créer et utiliser des visuels R dans Power BI
 Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../desktop-r-visuals.md).
@@ -88,6 +88,7 @@ Les éléments visuels R du service Power BI ont quelques limitations :
 * La prise en charge des visuels R est limitée aux packages identifiés [dans Découvrez quels packages R sont pris en charge](../service-r-packages-support.md). Il n’existe actuellement aucune prise en charge des packages personnalisés.
 * Limites concernant la taille des données : les données utilisées par les éléments visuels R pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image. En outre, les données d’entrée ont une limite de 250 Mo.
 * Résolution : tous les visuels R sont affichés dans une résolution de 72 ppp.
+* Traçage sur l’appareil : seul le traçage sur l’appareil par défaut est pris en charge. 
 * Limite concernant la durée du calcul : si le calcul d’un élément visuel R prend plus de 60 secondes, le délai d’exécution est dépassé et une erreur est générée.
 * Les éléments visuels R sont actualisés lors de la mise à jour, du filtrage et de la mise en surbrillance des données. Toutefois, l’image elle-même n’est pas interactive et ne prend pas en charge les info-bulles.
 * Les éléments visuels R répondent à la mise en surbrillance d’autres éléments visuels, mais vous ne pouvez pas cliquer sur des éléments dans l’élément visuel R pour appliquer un filtre croisé à d’autres éléments.

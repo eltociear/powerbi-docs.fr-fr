@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 8dfc6e872b67605a262c7390b91703649a2cfb0f
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201836"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114035"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Utiliser des filtres dans les rapports Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Les filtres dans Power BI bénéficient de nouvelles fonctionnalités et d’une nouvelle conception. Lorsque vous optez pour la nouvelle expérience de filtre, vous pouvez mettre en forme le volet Filtres afin qu’il apparaisse comme le reste du rapport. Vous pouvez verrouiller et même masquer les filtres. Lorsque vous concevez votre rapport, l’ancien volet Filtres n’apparaît plus dans volet Visualisations. Toutes les opérations d’édition et de mise en forme sont réalisées dans un même volet Filtres. 
 
@@ -28,7 +30,7 @@ En tant que concepteur de rapports, voici quelques-unes des tâches que vous pou
 - Modifiez l’état du filtre.
 - Mettez en forme et personnalisez le volet Filtres afin qu’il fasse partie de votre rapport.
 - Définissez si le volet Filtres est ouvert ou réduit par défaut lorsqu’un consommateur ouvre le rapport.
-- Masquez la totalité du volet Filtres ou des filtres spécifiques que vous ne souhaitez pas afficher pour les lecteurs du rapport.
+- Masquez la totalité du volet Filtres ou des filtres spécifiques que vous ne souhaitez pas afficher pour les consommateurs du rapport.
 - Contrôlez et créez même un signet de l’état de visibilité, ouvert et réduit du nouveau volet Filtres.
 - Verrouillez les filtres que vous ne souhaitez pas que les consommateurs modifient.
 

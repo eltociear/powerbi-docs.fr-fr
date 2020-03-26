@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.openlocfilehash: d9d97715853ab87ac507ff41117ab176b8620e2e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.date: 03/18/2020
+ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205248"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113604"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -68,13 +68,17 @@ Vous pouvez charger des rapports paginés vers Mon espace de travail sans licenc
 
 Vous recevez un message d’erreur et vous ne pouvez pas afficher votre rapport avant que la charge de travail ne soit à nouveau activée. Vous pouvez toujours supprimer le rapport à partir de l’espace de travail.
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-supported-for-paginated-reports"></a>Quelle est la mémoire par défaut de chacune des références SKU Premium prises en charge pour des rapports paginés ?
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>Quelle est la mémoire par défaut de chacune des références SKU Premium qui prennent en charge des rapports paginés ?
 
 Mémoire par défaut dans chaque référence SKU Premium pour des rapports paginés :
 
 - **P1/A4** : 20 % par défaut ; 10 % minimum
 - **P2/A5** : 20 % par défaut ; 5 % minimum
 - **P3/A6** : 20 % par défaut ; 2,5 % minimum
+
+Les administrateurs de locataires Power BI peuvent modifier le pourcentage de mémoire maximal par défaut dans le portail d’administration. Sous l’onglet **Paramètres de capacité**, consultez la section **Rapports paginés** (dans la partie Charges de travail) sous **Power BI Premium**.
+
+:::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Onglet Paramètres de capacité, Rapports paginés":::
 
 ## <a name="general"></a>Général
 
@@ -86,7 +90,7 @@ Les rapports Power BI sont optimisés pour l’exploration et l’interactivité
 
 ### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Selon la documentation, le Générateur de rapports Power BI est l’outil de création préféré. Puis-je créer des rapports paginés dans SQL Server Data Tools pour Power BI ?
 
-Oui, mais le service Power BI ne vous permet de charger qu’un seul élément à la fois. Par conséquent, de nombreux scénarios que les auteurs utilisent avec SQL Server Data Tools (SSDT) ne sont pas encore pris en charge. Afficher la [liste des fonctionnalités non prises en charge](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) complète disponible plus loin dans cette FAQ.  
+Oui, mais le service Power BI ne vous permet de charger qu’un seul élément à la fois. Ainsi, de nombreux scénarios que les auteurs utilisent avec SQL Server Data Tools (SSDT) ne sont pas encore pris en charge. Afficher la [liste des fonctionnalités non prises en charge](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) complète disponible plus loin dans cette FAQ.  
 
 ### <a name="what-versions-of-report-builder-do-you-support"></a>Quelles versions du Générateur de rapports prenez-vous en charge ?
 

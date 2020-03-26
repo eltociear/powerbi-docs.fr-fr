@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/01/2020
-ms.openlocfilehash: 1e882f5314b599c97356409626f059b022f640f7
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 03/24/2020
+ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114540"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273291"
 ---
-# <a name="export-report-to-file-preview"></a>Exporter le rapport vers un fichier (préversion)
+# <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
 L’API `exportToFile` permet d’exporter un rapport Power BI avec un appel REST. Les formats de fichier suivants sont pris en charge :
 * **PPTX** (PowerPoint)
@@ -52,7 +52,7 @@ Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des
 
 ### <a name="bookmarks"></a>Signets
 
- Vous pouvez utiliser l’API `exportToFile` pour exporter programmatiquement un rapport dans un état spécifique après lui avoir appliqué des filtres. Pour ce faire, utilisez les fonctionnalités [Signets](../../consumer/end-user-bookmarks.md). Pour exporter un rapport à l’aide de signets, utilisez l’[API javaScript de signets](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ Vous pouvez utiliser l’API `exportToFile` pour exporter programmatiquement un rapport dans un état spécifique après lui avoir appliqué des filtres. Pour ce faire, utilisez les fonctionnalités [Signets](../../consumer/end-user-bookmarks.md). Pour exporter un rapport à l’aide de signets, utilisez l’[API JavaScript de signets](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
  Par exemple, vous pouvez utiliser la méthode de signet `capturedBookmark.state` pour capturer les modifications apportées par un utilisateur spécifique à un rapport, puis l’exporter dans son état actuel.
 
@@ -60,7 +60,7 @@ Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des
 
 ### <a name="authentication"></a>Authentification
 
-Vous ne pouvez vous authentifier qu’avec un utilisateur (ou un utilisateur maître). Le [principal de service](embed-service-principal.md) n’est actuellement pas pris en charge.
+Vous pouvez vous authentifier avec un utilisateur (ou un utilisateur maître) ou un [principal de service](embed-service-principal.md).
 
 ### <a name="row-level-security-rls"></a>Sécurité au niveau de la ligne (RLS)
 
@@ -74,6 +74,8 @@ Pour exporter avec RLS, vous devez disposer des autorisations suivantes :
 ### <a name="data-protection"></a>Protection des données
 
 Les formats PDF et PPTX prennent en charge les [étiquettes de sensibilité](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Si vous exportez un rapport doté d’une étiquette de sensibilité au format PDF ou PPTX, le fichier exporté affiche le rapport avec son étiquette de sensibilité.
+
+Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format PDF ou PPTX à l’aide d’un [principal de service](embed-service-principal.md).
 
 ### <a name="localization"></a>Localisation
 
@@ -101,10 +103,9 @@ Un travail dépassant le nombre de demandes simultanées ne se termine pas. Par 
 * Pour la préversion publique, le nombre de pages de rapport Power BI exportées par heure est limité à 50 par capacité.
 * Les rapports exportés ne peuvent pas dépasser une taille de fichier de 250 Mo.
 * Lors de l’exportation au format PNG, les étiquettes de sensibilité ne sont pas prises en charge.
-* Le [principal de service](embed-service-principal.md) n’est pas pris en charge.
+* Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format PDF ou PPTX à l’aide d’un [principal de service](embed-service-principal.md).
 * 30 pages peuvent être incluses dans un rapport exporté. Si le rapport contient plus de pages, l’API retourne une erreur et le travail d’exportation est annulé.
 * [Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
-* Actuellement, les rapports paginés ne sont pas pris en charge.
 * Les visuels Power BI répertoriés ci-dessous ne sont pas pris en charge. Lorsqu’un rapport contenant ces visuels est exporté, les parties du rapport contenant ces visuels ne sont pas rendues et un symbole d’erreur s’affiche.
     * Visuels Power BI non certifiés
     * Visuels R
@@ -133,30 +134,26 @@ private async Task<string> PostExportRequest(
     Guid groupId,
     FileFormat format,
     IList<string> pageNames = null /* Get the page names from the GetPages API */)
+{
+    var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
+    {
+        Settings = new ExportReportSettings
         {
-            var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
-            {
-                Settings = new ExportReportSettings
-                {
-                    Locale = "en-us",
-                },
-
-                // Note that page names differ from the page display names.
-                // To get the page names use the GetPages API.
-                Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
-            };
-
-            var exportRequest = new ExportReportRequest
-            {
-                Format = format,
-                PowerBIReportConfiguration = powerBIReportExportConfiguration,
-            };
-
-            var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
-
-            // Save the export ID, you'll need it for polling and getting the exported file
-            return export.Id;
-        }
+            Locale = "en-us",
+        },
+        // Note that page names differ from the page display names.
+        // To get the page names use the GetPages API.
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+    };
+    var exportRequest = new ExportReportRequest
+    {
+        Format = format,
+        PowerBIReportConfiguration = powerBIReportExportConfiguration,
+    };
+    var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
+    // Save the export ID, you'll need it for polling and getting the exported file
+    return export.Id;
+}
 ```
 
 ### <a name="step-2---polling"></a>Étape 2 : interrogation
@@ -170,38 +167,34 @@ private async Task<Export> PollExportRequest(
     string exportId /* Get from the ExportToAsync response */,
     int timeOutInMinutes,
     CancellationToken token)
+{
+    Export exportStatus = null;
+    DateTime startTime = DateTime.UtcNow;
+    const int c_secToMillisec = 1000;
+    do
     {
-        Export exportStatus = null;
-        DateTime startTime = DateTime.UtcNow;
-        const int c_secToMillisec = 1000;
-        do
+        if (DateTime.UtcNow.Subtract(startTime).TotalMinutes > timeOutInMinutes || token.IsCancellationRequested)
         {
-            if (DateTime.UtcNow.Subtract(startTime).TotalMinutes > timeOutInMinutes || token.IsCancellationRequested)
-            {
-                // Error handling for timeout and cancellations
-                return null;
-            }
-
-            var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
-            exportStatus = httpMessage.Body;
-
-            // You can track the export progress using the PercentComplete that's part of the response
-            SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
-
-            if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
-            {
-                // The recommended waiting time between polling requests can be found in the RetryAfter header
-                // Note that this header is only populated when the status is either Running or NotStarted
-                var retryAfter = httpMessage.Response.Headers.RetryAfter;
-                var retryAfterInSec = retryAfter.Delta.Value.Seconds;
-                await Task.Delay(retryAfterInSec * c_secToMillisec);
-            }
+            // Error handling for timeout and cancellations 
+            return null;
         }
-        // While not in a terminal state, keep polling
-        while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
-
-        return exportStatus;
+        var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
+        exportStatus = httpMessage.Body;
+        // You can track the export progress using the PercentComplete that's part of the response
+        SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
+        if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
+        {
+            // The recommended waiting time between polling requests can be found in the RetryAfter header
+            // Note that this header is only populated when the status is either Running or NotStarted
+            var retryAfter = httpMessage.Response.Headers.RetryAfter;
+            var retryAfterInSec = retryAfter.Delta.Value.Seconds;
+            await Task.Delay(retryAfterInSec * c_secToMillisec);
+        }
     }
+    // While not in a terminal state, keep polling
+    while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
+    return exportStatus;
+}
 ```
 
 ### <a name="step-3---getting-the-file"></a>Étape 3 : obtention du fichier
@@ -209,41 +202,22 @@ private async Task<Export> PollExportRequest(
 Une fois que l’interrogation retourne une URL, utilisez cet exemple pour accéder au fichier reçu.
 
 ```csharp
-private readonly IDictionary<string, string> mediaTypeToSuffix = new Dictionary<string, string>
-    {
-        { "image/png", "png" },
-        { "application/zip", "zip" },
-        { "application/pdf", "pdf" },
-        { "application/vnd.openxmlformats-officedocument.presentationml.presentation", "pptx" },
-    };
-
 private async Task<ExportedFile> GetExportedFile(
     Guid reportId,
     Guid groupId,
     Export export /* Get from the GetExportStatusAsync response */)
+{
+    if (export.Status == ExportState.Succeeded)
     {
-        if (export.Status == ExportState.Succeeded)
+        var fileStream = await Client.Reports.GetFileOfExportToFileAsync(groupId, reportId, export.Id);
+        return new ExportedFile
         {
-            var httpMessage = await Client.Reports.GetFileOfExportToFileInGroupWithHttpMessagesAsync(groupId, reportId, export.Id);
-            var mediaType = httpMessage.Response.Content.Headers.ContentType.ToString().ToLower();
-
-            if (!mediaTypeToSuffix.TryGetValue(mediaType, out string fileSuffix))
-            {
-                // Handle unexpected errors
-            }
-            else
-            {
-                return new ExportedFile
-                {
-                    FileStream = httpMessage.Body,
-                    FileSuffix = fileSuffix,
-                };
-            }
-        }
-
-        return null;
+            FileStream = fileStream,
+            FileSuffix = export.ResourceFileExtension,
+        };
     }
-
+    return null;
+}
 public class ExportedFile
 {
     public Stream FileStream;
@@ -266,26 +240,24 @@ private async Task<ExportedFile> ExportPowerBIReport(
     int pollingtimeOutInMinutes,
     CancellationToken token,
     IList<string> pageNames = null /* Get the page names from the GetPages API */)
+{
+    try
+    {
+        var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+        var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
+        if (export == null || export.Status != ExportState.Succeeded)
         {
-            try
-            {
-                var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
-
-                var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
-                if (export == null || export.Status != ExportState.Succeeded)
-                {
-                    // Error, failure in exporting the report
-                    return null;
-                }
-
-                return await GetExportedFile(reportId, groupId, export);
-            }
-            catch
-            {
-                // Error handling
-                throw;
-            }
+            // Error, failure in exporting the report
+            return null;
         }
+        return await GetExportedFile(reportId, groupId, export);
+    }
+    catch
+    {
+        // Error handling
+        throw;
+    }
+}
 ```
 
 ## <a name="next-steps"></a>Étapes suivantes

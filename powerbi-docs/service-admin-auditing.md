@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75657187"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113781"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -49,13 +49,13 @@ Vous pouvez utiliser une application d’administration basée sur les API REST 
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-Si le nombre d’entrées est élevé, l’API **ActivityEvents** retourne seulement environ 5 000 à 10 000 entrées ainsi qu’un jeton de continuation. Vous devez ensuite rappeler l’API **ActivityEvents** avec le jeton de continuation retourné pour obtenir le lot d’entrées suivant, en répétant cette opération jusqu’à ce que vous ayez récupéré toutes les entrées et que vous ne receviez plus de jeton de continuation. L’exemple suivant montre comment utiliser le jeton de continuation.
+Si le nombre d’entrées est élevé, l’API **ActivityEvents** retourne seulement environ 5 000 à 10 000 entrées ainsi qu’un jeton de continuation. Rappelez l’API **ActivityEvents** avec le jeton de continuation retourné pour obtenir le lot d’entrées suivant, en répétant cette opération jusqu’à ce que vous ayez récupéré toutes les entrées et que vous ne receviez plus de jeton de continuation. L’exemple suivant montre comment utiliser le jeton de continuation.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-Quel que soit le nombre d’entrées retournées, tant qu’un jeton de continuation est retourné dans les résultats, vous devez rappeler l’API avec ce jeton pour récupérer les données restantes. Il peut arriver qu’un appel retourne un jeton de continuation même en l’absence d’entrées d’événement. L’exemple suivant montre comment effectuer une boucle avec un jeton de continuation retourné dans la réponse :
+Quel que soit le nombre d’entrées retournées, tant qu’un jeton de continuation est retourné dans les résultats, vous devez rappeler l’API à l’aide de ce jeton pour récupérer les données restantes. Il peut arriver qu’un appel retourne un jeton de continuation même en l’absence d’entrées d’événement. L’exemple suivant montre comment effectuer une boucle avec un jeton de continuation retourné dans la réponse :
 
 ```
 while(response.ContinuationToken != null)
@@ -68,12 +68,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> L’affichage de tous les événements peut prendre jusqu’à 24 heures, bien que les données complètes soient généralement disponibles plus tôt.
+>
+>
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Applet de commande Get-PowerBIActivityEvent
 
-Vous pouvez aisément télécharger des événements d’activité à l’aide des applets de commande de gestion Power BI pour PowerShell, notamment avec l’applet de commande **Get-PowerBIActivityEvent** qui gère automatiquement le jeton de continuation pour vous. L’applet de commande **Get-PowerBIActivityEvent** utilise les paramètres StartDateTime et EndDateTime avec les mêmes restrictions que l’API REST **ActivityEvents**. Autrement dit, les dates de début et de fin doivent faire référence à la même valeur de date, car vous pouvez récupérer les données d’activité d’un seul jour à la fois.
+Téléchargez les événements d’activité à l’aide des applets de commande de gestion Power BI pour PowerShell. L’applet de commande **Get-PowerBIActivityEvent** gère automatiquement le jeton de continuation. L’applet de commande **Get-PowerBIActivityEvent** utilise les paramètres StartDateTime et EndDateTime avec les mêmes restrictions que l’API REST **ActivityEvents**. Autrement dit, les dates de début et de fin doivent faire référence à la même valeur de date, car vous pouvez récupérer les données d’activité d’un seul jour à la fois.
 
-Le script suivant montre comment télécharger toutes les activités Power BI. La commande convertit les résultats au format JSON en objets .NET pour pouvoir accéder directement aux propriétés de chaque activité.
+Le script suivant montre comment télécharger toutes les activités Power BI. La commande convertit les résultats au format JSON en objets .NET pour pouvoir accéder directement aux propriétés de chaque activité. Ces exemples montrent le plus petit et le plus grand horodatages possibles pour une journée, afin de garantir qu’aucun événement n’est manqué.
 
 ```powershell
 Login-PowerBI
@@ -111,15 +114,15 @@ Vous devez remplir ces conditions requises pour accéder aux journaux d’audit�
 
 - Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange.
 
-    Pour donner accès au journal d’audit à des comptes non administrateurs, vous devez ajouter l’utilisateur à la liste des membres de l’un de ces groupes de rôles. Une autre possibilité, si vous le souhaitez, consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+    Pour donner accès au journal d’audit à des comptes non administrateurs, ajoutez l’utilisateur à la liste des membres de l’un de ces groupes de rôles. Une autre possibilité, si vous le souhaitez, consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Si vous ne pouvez pas accéder au Centre d’administration Exchange à partir du centre d’administration Microsoft 365, accédez à https://outlook.office365.com/ecp et connectez-vous avec vos informations d’identification.
 
-- Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez utiliser un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+- Si vous avez accès au journal d’audit, mais que vous n’êtes ni administrateur général ni administrateur de service Power BI, vous ne pouvez pas accéder au portail d’administration de Power BI. Dans ce cas, utilisez un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
 ### <a name="access-your-audit-logs"></a>Accéder à vos journaux d’audit
 
-Pour accéder aux journaux, vous devez d’abord activer la journalisation dans Power BI. Pour plus d’informations, consultez [Journaux d’audit](service-admin-portal.md#audit-logs) dans la documentation du portail d’administration. Il peut y avoir jusqu’à un délai de 48 heures entre l’activation de l’audit et le moment où vous pouvez afficher les données d’audit. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
+Pour accéder aux journaux, vous devez d’abord activer la journalisation dans Power BI. Pour plus d’informations, consultez [Journaux d’audit](service-admin-portal.md#audit-logs) dans la documentation du portail d’administration. Il peut y avoir jusqu’à un délai de 48 heures entre l’activation de l’audit et le moment où vous pouvez afficher les données d’audit. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
 
 Les journaux d’audit de Power BI sont disponibles directement dans le [Centre Sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog). Vous trouverez également un lien dans le portail d’administration Power BI :
 
@@ -258,7 +261,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Dossier Power BI créé                           | CreateFolder                                |                                          |
 | Passerelle Power BI créée                          | CreateGateway                               |                                          |
 | Groupe Power BI créé                            | CreateGroup                                 |                                          |
-| Rapport Power BI créé                           | CreateReport                                |                                          |
+| Rapport Power BI créé                           | CreateReport <sup>1</sup>                                |                                          |
 | Dataflow migré vers un compte de stockage externe     | DataflowMigratedToExternalStorageAccount    | Non utilisée actuellement                       |
 | Autorisations de dataflow ajoutées                        | DataflowPermissionsAdded                    | Non utilisée actuellement                       |
 | Autorisations de dataflow supprimées                      | DataflowPermissionsRemoved                  | Non utilisée actuellement                       |
@@ -294,7 +297,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Commentaire Power BI publié                           | PostComment                                 |                                          |
 | Tableau de bord Power BI imprimé                        | PrintDashboard                              |                                          |
 | Page de rapport Power BI imprimée                      | PrintReport                                 |                                          |
-| Rapport Power BI publié sur le web                  | PublishToWebReport                          |                                          |
+| Rapport Power BI publié sur le web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Secret de dataflow Power BI reçu du coffre de clés  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Source de données supprimée de la passerelle Power BI         | RemoveDatasourceFromGateway                 |                                          |
 | Membres supprimés du groupe Power BI                    | DeleteGroupMembers                          |                                          |
@@ -333,6 +336,10 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Vignette Power BI affichée                              | ViewTile                                    |                                          |
 | Métriques d’utilisation de Power BI affichées                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
+
+<sup>1</sup> La publication à partir de Power BI Desktop vers le service est un événement CreateReport dans le service.
+
+<sup>2</sup> PublishtoWebReport fait référence à la fonctionnalité [Publier sur le web](service-publish-to-web.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

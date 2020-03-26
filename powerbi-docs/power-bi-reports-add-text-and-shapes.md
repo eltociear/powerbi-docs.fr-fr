@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762459"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273199"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Ajouter des zones de texte et des formes aux rapports Power BI
 Vous pouvez ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous dans le service Power BI, vous n’aurez pas d’autorisations de modification. 
@@ -63,8 +63,10 @@ Regardez comment Will utilise Power BI Desktop pour [ajouter des images statique
    > 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Ajouter un lien hypertexte à une zone de texte](service-add-hyperlink-to-text-box.md)
 
-[Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
+Les articles suivants pourraient également vous intéresser :
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+* [Ajouter un lien hypertexte à une zone de texte](service-add-hyperlink-to-text-box.md)
+* [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
+* [Conseils pour améliorer l’analyse avec des formes, des images et des icônes dans les rapports Power BI](guidance/report-tips-shapes-images-icons.md)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

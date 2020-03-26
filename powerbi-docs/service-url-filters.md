@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076638"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273245"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -193,11 +193,17 @@ Cette divergence est utile quand vous voulez afficher des résultats différents
 Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder certaines choses à l’esprit.
 
 * Quand vous utilisez l’opérateur *in*, les valeurs à droite de *in* doivent être sous forme de liste séparée par des virgules et placée entre des parenthèses.    
-* Power BI Report Server offre également la possibilité de spécifier des filtres supplémentaires à l’aide du paramètre d’URL « filter ».  Par exemple, dans Power BI Report Server, l’URL peut se présenter comme suit : https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md) ou [Exporter au format PDF](consumer/end-user-pdf.md).
-* [Incorporer avec le composant du rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
-* Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
+* Power BI Report Server offre également la possibilité de spécifier des filtres supplémentaires à l’aide du paramètre d’URL « filter ». Voici un exemple de ce à quoi peut ressembler l’URL dans Power BI Report Server : `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).
+* Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
+
+Les filtres d’URL sont pris en charge dans certains scénarios d’incorporation et non dans d’autres.
+
+- L’[incorporation d’un rapport dans un portail sécurisé ou un site web](service-embed-secure.md) est prise en charge.
+- Les filtres d’URL sont pris en charge dans Power BI Embedded. Pour plus d’informations, consultez [Fonctionnalités avancées de filtrage d’URL Power BI Embedded](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities).
+- Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md) ou [Exporter au format PDF](consumer/end-user-pdf.md).
+- [Incorporer avec le composant du rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
+- Les équipes n’autorisent pas la spécification d’une URL.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

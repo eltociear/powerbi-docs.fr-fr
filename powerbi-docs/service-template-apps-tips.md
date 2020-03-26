@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 03/24/2020
 ms.author: tebercov
-ms.openlocfilehash: dcb7ba5dabbbb0387b92908f7e299d61f2145d44
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 92d5a5177b0fa03af583e9e89ce574c0197f3f7a
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376589"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273222"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
@@ -150,7 +150,7 @@ Pour rediriger un utilisateur vers le lien de téléchargement de l’applicatio
 
 | Caractéristique | Limitation connue |
 |---------|---------|
-|Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
+|Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel, métadonnées de jeu de données avancées |
 |Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de l’envoi (push) ou du streaming de jeux de données) |
 |Contenu : Dataflows | Non pris en charge : Dataflows |
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |

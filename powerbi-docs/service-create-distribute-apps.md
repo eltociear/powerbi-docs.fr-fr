@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207870"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147374"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -28,6 +28,7 @@ Les utilisateurs en entreprise obtiennent vos applications de différentes mani�
 - Ils peuvent rechercher et installer votre application à partir de Microsoft AppSource.
 - Vous pouvez leur envoyer un lien direct.
 - Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise.
+- Power BI n’envoie pas d’e-mail aux utilisateurs internes quand vous distribuez ou mettez à jour une application. Si vous la distribuez à des utilisateurs externes, ceux-ci reçoivent un e-mail avec un lien direct. 
 
 Vous pouvez créer l’application avec sa propre navigation intégrée afin de permettre à vos utilisateurs d’explorer facilement votre contenu. Ils ne peuvent pas modifier le contenu de l’application. Ils peuvent interagir avec lui dans le service Power BI ou dans l’une des applications mobiles, en filtrant, en mettant en surbrillance et en triant eux-mêmes les données. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Vous pouvez aussi leur attribuer une autorisation de génération pour se connecter aux jeux de données sous-jacents et créer des copies des rapports dans l’application. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md).
 

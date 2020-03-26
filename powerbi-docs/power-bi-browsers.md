@@ -6,26 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a7112ff766b3b32b374b203d9f2206cabbd7fa2e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: abe556231978d762dab652263aa2c55cf3c8a955
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79115038"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273268"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Navigateurs pris en charge pour Power BI
-Power BI s’exécute dans les navigateurs suivants :
+
+Power BI est conçu pour fonctionner avec n’importe lequel des navigateurs pris en charge ci-après, mais les performances varient d’un navigateur à l’autre. En particulier, si vous utilisez Internet Explorer, vous risquez de connaître de mauvaises performances. Nous vous recommandons vivement d’opter pour un navigateur moderne, notamment Microsoft Edge, pour obtenir de meilleures performances. Nous pensons que les performances de Microsoft Edge continueront à s’améliorer avec Edge Chromium. Si les performances sont toujours inacceptables, testez d’autres navigateurs modernes pris en charge afin de voir s’ils fournissent de meilleurs résultats pour votre solution Power BI.
+
+Power BI prend en charge ces navigateurs sur toutes les plateformes où ils sont disponibles :
 
 - Microsoft Edge
 - Internet Explorer 11. Certaines fonctionnalités avancées, telles que la vue de traçabilité des données, ne sont pas prises en charge dans Internet Explorer. Pour plus d’informations, consultez [Traçabilité des données (préversion)](collaborate-share/service-data-lineage.md).
 - Chrome, version la plus récente
 - Safari Mac, version la plus récente
 - Firefox, version la plus récente. Firefox peut modifier les polices utilisées dans Power BI 
-
-Ces navigateurs sont pris en charge sur toutes les plateformes où ils sont disponibles.
 
 > [!NOTE]
 > Power BI ne s’exécute sur aucun navigateur dans iOS10 ou versions précédentes.
@@ -34,4 +35,3 @@ Ces navigateurs sont pris en charge sur toutes les plateformes où ils sont disp
 * [Qu’est-ce que Power BI ?](power-bi-overview.md)
 * Posez vos questions à la [Communauté Power BI](https://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/)
-

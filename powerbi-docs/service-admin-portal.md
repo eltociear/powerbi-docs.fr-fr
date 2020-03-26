@@ -10,12 +10,12 @@ ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488703"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114441"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -233,7 +233,12 @@ Les options présentées aux utilisateurs dans l’interface utilisateur varient
 
 ### <a name="export-data"></a>Exporter des données
 
-Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](visuals/power-bi-visualization-export-data.md).
+Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Cela contrôle l’analyse dans Excel, l’exportation au format .csv, les téléchargements de jeux de données (.pbix) et les fonctionnalités de connexion directe du service Power BI. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Avant l’introduction du paramètre Exporter vers Excel, ce paramètre contrôlait également l’exportation des données vers des fichiers Excel. Pour plus d’informations, consultez la [remarque sous Exporter vers Excel](#export-to-excel).
+
+![Paramètre Exporter des données](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 L’image suivante présente l’option d’exportation de données à partir d’une vignette.
 
@@ -241,6 +246,15 @@ L’image suivante présente l’option d’exportation de données à partir d�
 
 > [!NOTE]
 > La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité [Analyser dans Excel](service-analyze-in-excel.md) ainsi que la connexion active du service Power BI.
+
+### <a name="export-to-excel"></a>Exporter vers Excel
+
+Les utilisateurs de l’organisation peuvent exporter les données à partir d’une visualisation dans un fichier Excel.
+
+![Paramètre Exporter vers Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Avant l’introduction du paramètre Exporter vers Excel, l’exportation vers un fichier Excel était contrôlée par le paramètre Exportation des données. Ainsi, sur les locataires qui existaient avant l’introduction du paramètre Exporter vers Excel, la première fois que les administrateurs de locataires regardent le paramètre Exporter vers Excel, ils voient la présence de *modifications non appliquées*. Ils doivent appliquer ces modifications pour que le nouveau paramètre prenne effet. Dans le cas contraire, l’exportation vers un fichier Excel continue d’être contrôlée par le paramètre Exporter des données.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exporter les rapports comme présentations PowerPoint ou documents PDF
 

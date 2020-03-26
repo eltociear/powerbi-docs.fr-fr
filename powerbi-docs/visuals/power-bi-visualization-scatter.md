@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: e7160505a720b6629067d7b1486f0dd227efd862
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311563"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273314"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 
@@ -184,8 +184,10 @@ Pour créer un champ, [utilisez l’éditeur de requête Power BI Desktop pour a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Échantillonnage à haute densité dans les nuages de points Power BI](desktop-high-density-scatter-charts.md)
+Les articles suivants pourraient également vous intéresser :
 
+* [Échantillonnage à haute densité dans les nuages de points Power BI](desktop-high-density-scatter-charts.md)
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Conseils pour trier et distribuer des tracés de données dans les rapports Power BI](../guidance/report-tips-sort-distribute-data-plots.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
