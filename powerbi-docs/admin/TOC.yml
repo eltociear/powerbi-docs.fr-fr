@@ -100,7 +100,7 @@
               href: ../service-encryption-byok.md
             - name: Redémarrer une capacité Premium
               href: ../service-admin-premium-restart.md
-            - name: Se connecter à des jeux de données avec des applications et des outils clients
+            - name: Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
               href: ../service-premium-connect-tools.md
     - name: Référence
       items:

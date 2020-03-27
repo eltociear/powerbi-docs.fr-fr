@@ -102,12 +102,12 @@
               href: end-user-favorite.md
             - name: 'Imprimer un tableau de bord, imprimer une vignette de tableau de bord, imprimer une page de rapport'
               href: end-user-print.md
+            - name: Afficher le contenu partagé avec moi
+              href: end-user-shared-with-me.md
             - name: Afficher le contenu associé
               href: end-user-related.md
             - name: Afficher le contenu récent
               href: end-user-recent.md
-            - name: Afficher du contenu dans le conteneur Partagés avec moi
-              href: end-user-shared-with-me.md
             - name: S’abonner à un rapport ou à un tableau de bord
               href: end-user-subscribe.md
             - name: Rechercher et trier du contenu dans Power BI
