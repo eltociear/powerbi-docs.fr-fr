@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 88c32a3d32a8d6c6653fa9badcf728bad0ee2c54
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381396"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404575"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -135,7 +135,7 @@ L’authentification utilisateur auprès du service Power BI se compose d’une 
 
 La séquence d’authentification utilisateur pour le service Power BI se déroule comme décrit dans les étapes suivantes, qui sont illustrées dans les images suivantes.
 
-1. Un utilisateur lance une connexion au service Power BI à partir d’un navigateur, soit en tapant l’adresse de Power BI dans la barre d’adresses (telle que https://app.powerbi.com), soit en sélectionnant _Se connecter_ dans la page d’accueil de Power BI (https://powerbi.microsoft.com). La connexion est établie à l’aide de TLS 1.2 et HTTPS, et toutes les communications ultérieures entre le navigateur et le service Power BI utilisent le protocole HTTPS. La requête est envoyée à **Azure Traffic Manager**.
+1. Un utilisateur établit une connexion à la service Power BI à partir d’un navigateur, soit en tapant son adresse Power BI dans la barre d’adresse (par exemple `https://app.powerbi.com`), soit en sélectionnant _se connecter_ à partir de la page d’accueil de Power BI (https://powerbi.microsoft.com). La connexion est établie à l’aide de TLS 1.2 et HTTPS, et toutes les communications ultérieures entre le navigateur et le service Power BI utilisent le protocole HTTPS. La requête est envoyée à **Azure Traffic Manager**.
 
 2. **Azure Traffic Manager** vérifie l’enregistrement DNS de l’utilisateur afin de déterminer le centre de données le plus proche où Power BI est déployé, et il répond au système DNS avec l’adresse IP du cluster WFE à laquelle la requête de l’utilisateur doit être envoyée.
 
