@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 6dd5b7838a1f59971e11a4674853abead7af0b90
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492787"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403668"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -96,7 +96,7 @@ L’utilisateur peut résoudre ce problème en appelant [l’API refreshUserPerm
 
 La région de votre locataire PBI est accessible sur le portail PBI.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > À propos de Power BI
+[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > À propos de Power BI
 
 ![À propos de Power BI](media/embedded-faq/about-01.png)
 ![Région du locataire](media/embedded-faq/tenant-location-01.png)
@@ -200,7 +200,7 @@ Ce cas de figure a son importance quand vous ajoutez le principal du service com
 
 L’ **[ID d’application](embed-sample-for-customers.md#application-id)** est utilisé pour créer le jeton d’accès lors du passage de l’ID d’application pour l’authentification.
 
-Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’ **[ID d’objet de principal du service](embed-service-principal.md#how-to-get-the-service-principal-object-id)** .
+Pour référencer un principal du service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal du service en tant qu’administrateur à un espace de travail, vous utilisez l’ **[ID d’objet de principal du service](embed-service-principal.md)** .
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Est-il possible de gérer une passerelle de données locale avec un principal du service ?
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 815566f715bb4544fc4b002ea2c31e21e2684792
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 281d5b616b58fce4326e6d719502e443c249372a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760816"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403170"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Se connecter à des données Project Online via Power BI Desktop
 Vous pouvez vous connecter à des données dans Project Online au moyen de Power BI Desktop.
@@ -31,7 +31,7 @@ Vous pouvez vous connecter à des données dans Project Online au moyen de Power
    
    Si l’adresse de votre site Project Web App ressemble à *https://\<nom_client\>.sharepoint.com/sites/pwa*, l’adresse que vous devez entrer pour votre flux OData est *https://\<nom_client\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
    
-   Dans notre exemple, nous utilisons https://contoso.sharepoint.com/sites/pwa/default.aspx
+   Dans notre exemple, nous utilisons `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 5. Power BI Desktop vous invite à vous authentifier avec votre compte Office 365. Sélectionnez Compte professionnel, puis entrez vos informations d’identification.
    
    ![](media/desktop-project-online-connect-to-data/image.png)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 03/24/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207962"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329646"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -28,7 +28,7 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Intelligence artificielle | N/A | N/A | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum |
+| Intelligence artificielle | 40 % par défaut ; 40 % minimum | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum | 20 % par défaut ; 2 % minimum |
 | Dataflows | N/A |20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum  |
 | Rapports paginés | N/A |N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
 | | | | | | |
@@ -37,7 +37,7 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Intelligence artificielle | N/A                      | 20 % par défaut ; 100 % minimum                     | 20 % par défaut ; 50 % minimum                     | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum |
+| Intelligence artificielle | N/A  | 40 % par défaut ; 40 % minimum  | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum | 20 % par défaut ; 2 % minimum |
 | Dataflows         | 40 % par défaut ; 40 % minimum | 24 % par défaut ; 24 % minimum | 20 % par défaut ; 12 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum   |
 | Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
 | | | | | | |

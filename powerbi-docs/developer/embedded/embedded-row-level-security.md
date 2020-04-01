@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 80b97757ab0ab8fefa23f4481abb2d8bc02de78d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 66a1253233ab623ff2332a7b112575a7509c0e3c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492488"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403711"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -217,7 +217,7 @@ Voici les étapes pour commencer à configurer la fonctionnalité CustomData() a
 
 7. Utilisez les API Power BI pour utiliser la fonctionnalité CustomData dans votre application.  Lors de la génération d’un jeton avec la fonctionnalité Custom data, vous devez avoir un nom d’utilisateur. Le nom d’utilisateur doit être identique à l’UPN de l’utilisateur principal. L’utilisateur principal doit être un membre du ou des rôles que vous avez créés. Si aucun rôle n’est spécifié, tous les rôles dont l’utilisateur principal est membre sont utilisés pour l’évaluation de la fonction de sécurité au niveau des lignes.
 
-    Lorsque vous utilisez un [principal de service](embed-service-principal.md), vous devez également effectuer les étapes ci-dessus au lieu d’utiliser un compte principal. Lorsque vous générez un jeton incorporé, utilisez l’[ID d’objet du principal de service](embed-service-principal.md#how-to-get-the-service-principal-object-id) comme nom d’utilisateur.
+    Lorsque vous utilisez un [principal de service](embed-service-principal.md), vous devez également effectuer les étapes ci-dessus au lieu d’utiliser un compte principal. Lorsque vous générez un jeton incorporé, utilisez l’[ID d’objet du principal de service](embed-service-principal.md) comme nom d’utilisateur.
 
     > [!Note]
     > Quand vous êtes prêt à déployer votre application en production, l’option ou le champ de compte d’utilisateur principal ne doit pas être visible par l’utilisateur final.

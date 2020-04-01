@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 20546e0c9251f39ca49f6d713d5db48401937505
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114402"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404044"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 
@@ -126,13 +126,13 @@ Les jeux de données en cache font référence aux fichiers PBIX comportant des 
 
 **Flux**
 
-1. Appelez GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources et enregistrez la chaîne de connexion reçu.
+1. Appelez GET `https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources` et enregistrez la chaîne de connexion reçu.
 2. Appelez l’API Download PBIX pour procéder au téléchargement à partir de l’espace de travail PaaS.
 3. Enregistrez le fichier PBIX.
 4. Appelez l’API Import PBIX pour procéder à l’importation vers l’espace de travail SaaS.
-5. Mettre à jour la chaîne de connexion en appelant - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Obtenir les identificateurs de GW et de la source de données en appelant - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Mettre à jour les informations d’identification de l’utilisateur en appelant - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Mettre à jour la chaîne de connexion en appelant - POST  `https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections`
+6. Obtenir les identificateurs de GW et de la source de données en appelant - GET `https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources`
+7. Mettre à jour les informations d’identification de l’utilisateur en appelant - PATCH `https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}`
 
 #### <a name="old-dataset--reports"></a>Jeux de données et rapports obsolètes
 

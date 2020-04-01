@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a013053e3a7948f340b8c27e154cc7578cdea672
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079137"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403633"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 2** de la procédure de transmission des données à un jeu de données intitulée [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), vous avez obtenu un jeton pour vous authentifier auprès d’**Azure AD**. Pendant cette étape, vous utilisez le jeton pour appeler l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
-Pour appeler une ressource REST, vous utilisez une URL qui localise la ressource et vous envoyez une chaîne JSON (JavaScript Objet Notation), qui décrit le jeu de données, à la ressource du service Power BI. Une ressource REST identifie la partie du service Power BI que vous voulez utiliser. Pour transmettre des données au jeu de données, la ressource cible est un **jeu de données**. L’URL qui identifie un jeu de données est https://api.PowerBI.com/v1.0/myorg/datasets. Si vous transmettez des données au sein d’un groupe, l’URL est https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+Pour appeler une ressource REST, vous utilisez une URL qui localise la ressource et vous envoyez une chaîne JSON (JavaScript Objet Notation), qui décrit le jeu de données, à la ressource du service Power BI. Une ressource REST identifie la partie du service Power BI que vous voulez utiliser. Pour transmettre des données au jeu de données, la ressource cible est un **jeu de données**. L’URL qui identifie un jeu de données est `https://api.PowerBI.com/v1.0/myorg/datasets`. Si vous transmettez des données au sein d’un groupe, l’URL est `https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets`.
 
 Pour authentifier une opération REST Power BI, vous ajoutez le jeton que vous avez obtenu à l’étape [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md) à un en-tête de demande :
 
