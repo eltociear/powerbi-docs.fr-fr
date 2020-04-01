@@ -1,0 +1,65 @@
+### YamlMime:Landing
+title: Documentation sur l’automatisation Power BI
+summary: Avec l’automatisation Power BI, vous pouvez effectuer des tâches de gestion sur des objets Power BI tels que des rapports, des jeux de données et des espaces de travail.
+metadata:
+  title: Documentation sur l’automatisation Power BI
+  description: Avec l’automatisation Power BI, vous pouvez effectuer des tâches de gestion sur des objets Power BI tels que des rapports, des jeux de données et des espaces de travail.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 33f3caa20bc29c41b9d2c43f6727947ce9b7d446
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516396"
+landingContent:
+- title: Commencer
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Découvrir ce que vous pouvez faire avec l’API Power BI
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: tutorial
+    links:
+    - text: 'Tutoriel : Transmission de données à un jeu de données'
+      url: walkthrough-push-data.md
+    - text: 'Tutoriel : Obtenir un jeton d’accès d’authentification'
+      url: walkthrough-push-data-get-token.md
+    - text: 'Tutoriel : Créer un jeu de données'
+      url: walkthrough-push-data-create-dataset.md
+    - text: Obtenir un jeu de données pour ajouter des lignes
+      url: walkthrough-push-data-get-datasets.md
+    - text: Ajouter des lignes à une table Power BI
+      url: walkthrough-push-data-add-rows.md
+- title: Utilisation des données
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Stratégie de rétention automatique des données en temps réel
+      url: api-automatic-retention-policy-for-real-time-data.md
+    - text: Limites de l’API REST de Power BI
+      url: api-rest-api-limitations.md
+    - text: Propriétés du jeu de données
+      url: api-dataset-properties.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurer les informations d’identification
+      url: configure-credentials.md
+- title: Références et ressources
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: API REST Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Informations de référence sur l’API REST de Power BI
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Centre de développement
+      url: https://powerbi.microsoft.com/developers/
+    - text: Bibliothèques Power BI
+      url: https://www.nuget.org/profiles/powerbi
