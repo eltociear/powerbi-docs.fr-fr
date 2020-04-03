@@ -317,8 +317,6 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Rapports paginés
           items:
-            - name: "Labo pratique\_: Créer un rapport paginé"
-              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Entrer des données directement dans un rapport paginé
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Créer une source de données incorporée
