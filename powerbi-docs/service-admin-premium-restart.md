@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79202019"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464689"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Redémarrer une capacité Power BI Premium
 
@@ -30,7 +30,7 @@ Power BI s’améliore constamment dans la manière de protéger les utilisateur
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Le processus de redémarrage est-il sûr ? Vais-je perdre des données ?
 
-Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Lorsque vous redémarrez une capacité, les actualisations planifiées et ad hoc en cours sont arrêtées temporairement par le moteur d’actualisation, dans la plupart des cas. Ensuite, ils redémarrent en raison de la logique de nouvelle tentative d’actualisation intégrée à Power BI. Le service tente d’effectuer à nouveau les actualisations impactées une fois que la capacité est disponible. L’état des actualisations peut ne pas être modifié dans l’interface utilisateur pendant le processus de redémarrage. 
+Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Lorsque vous redémarrez une capacité, les actualisations planifiées et ad hoc en cours sont arrêtées temporairement par le moteur d’actualisation, dans la plupart des cas, puis redémarrent dû à la logique de nouvelle tentative générée dans Power BI. Le service tente d’effectuer à nouveau les actualisations impactées une fois que la capacité est disponible. L’état des actualisations peut ne pas être modifié dans l’interface utilisateur pendant le processus de redémarrage. 
 
 Les utilisateurs qui interagissent avec la capacité perdent le travail non enregistré pendant un processus de redémarrage. Il est donc préférable que les utilisateurs actualisent leurs navigateurs une fois le redémarrage terminé.
 
@@ -40,7 +40,7 @@ Suivez ces étapes pour redémarrer une capacité.
 
 1. Dans le portail d’administration Power BI, sous l’onglet **Paramètres de capacité**, accédez à votre capacité. 
 
-1. Ajoutez l’*indicateur de fonctionnalité* **CapacityRestart** à l’URL de votre capacité : https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. Ajouter **CapacityRestart**, *l’indicateur de caractéristique*, à votre URL de capacité : `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Sous **Paramètres avancés** > **Redémarrage de la capacité**, sélectionnez **Redémarrer la capacité**.
 

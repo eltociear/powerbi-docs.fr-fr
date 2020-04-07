@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Se connecter à un dépôt GitHub à l’aide de Power BI'
+title: 'Tutoriel : Se connecter à un dépôt GitHub à l’aide de Power BI'
 description: Dans ce tutoriel, vous vous connectez à de vraies données disponibles dans le service GitHub à l’aide de Power BI, qui crée automatiquement des rapports et des tableaux de bord.
 author: maggiesMSFT
 ms.reviewer: SarinaJoan
@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a3c87a700df1c35596b6520cc64d9b580ccb74eb
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871254"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403410"
 ---
-# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Tutoriel : Se connecter à un dépôt GitHub à l’aide de Power BI
+# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Tutoriel : Se connecter à un dépôt GitHub à l’aide de Power BI
 Dans ce tutoriel, vous vous connectez à de vraies données disponibles dans le service GitHub à l’aide de Power BI, qui crée automatiquement des rapports et des tableaux de bord. Vous vous connectez au dépôt public de contenu Power BI (également appelé *référentiel*) et, à partir des informations affichées, vous obtenez des réponses à des questions telles que celles-ci : Combien de personnes contribuent au contenu public Power BI ? Qui y contribue le plus ? Quel jour de la semaine enregistre le plus de contributions ? Et d’autres questions. 
 
 ![Rapport GitHub dans Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
@@ -35,7 +35,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un si vous n’en avez pas). 
 
@@ -43,7 +43,7 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
 
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Connectez-vous au service Power BI (https://app.powerbi.com). 
+1. Connectez-vous au service Power BI (`https://app.powerbi.com`). 
 2. Dans le volet de navigation, sélectionnez **Applications**, puis **Obtenir des applications**.
    
    ![Obtenir des applications - Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
@@ -64,7 +64,7 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
 
 5. Entrez les informations d’identification GitHub que vous avez créées. Power BI ignore cette étape si vous êtes déjà connecté à GitHub dans votre navigateur. 
 
-6. Pour la **Méthode d’authentification**, conservez l’option **oAuth2** sélectionnée \> **Se connecter**.
+6. Pour la **Méthode d’authentification**, conservez l’option **oAuth2** sélectionnée \>**Se connecter**.
 
 7. Suivez les écrans d’authentification GitHub. Accordez l’autorisation d’accès Power BI aux données GitHub.
    

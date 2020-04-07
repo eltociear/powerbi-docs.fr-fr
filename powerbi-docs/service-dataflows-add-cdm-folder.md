@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872686"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404765"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
 
@@ -24,9 +24,10 @@ Dans Power BI, vous pouvez ajouter sous forme de flux de données des dossiers C
 
 La création de flux de données à partir de dossiers CDM est soumise aux conditions suivantes :
 
+* Un administrateur doit lier le compte de stockage ADLS Gen2 dans Power BI avant de pouvoir être utilisé. Consultez [Se connecter à Azure Data Lake Storage Gen2 pour le stockage de dataflow](service-dataflows-connect-azure-data-lake-storage-gen2.md) pour découvrir comment lier un compte ADLS Gen2 à Power BI.
 * La création de flux de données à partir de dossiers CDM est *uniquement* disponible dans la [nouvelle expérience d’espace de travail](service-create-the-new-workspaces.md). 
 * Pour pouvoir ajouter un dossier CDM à Power BI, l’utilisateur doit avoir [l’autorisation d’accès au dossier CDM et à ses fichiers](https://go.microsoft.com/fwlink/?linkid=2029121).
-* Des autorisations de lecture et d’exécution sont nécessaires sur tous les fichiers et dossiers du dossier CDM pour pouvoir les ajouter à Power BI.
+* Vous devez recevoir des autorisations de lecture et d’exécution sur tous les fichiers et dossiers dans le dossier CDM pour les ajouter à Power BI.
 
 Les sections suivantes expliquent comment créer un flux de données à partir d’un dossier CDM.
 
@@ -58,11 +59,11 @@ Si vous travaillez avec des autorisations sur un flux de données créé à part
 Les listes suivantes visent à clarifier le fonctionnement des flux de données issus de dossiers CDM avec Power BI.
 
 Espaces de travail Power BI Pro, Premium et Embedded :
-* Les flux de données issus de dossiers CDM ne sont pas modifiables.
+* Les dataflows issus de dossiers CDM ne sont pas modifiables
 * Les autorisations nécessaires pour lire un flux de données créé à partir d’un dossier CDM sont gérées par le propriétaire du dossier CDM et non par Power BI.
 
 Power BI Desktop :
-* Seuls les utilisateurs disposant d’autorisations sur l’espace de travail dans lequel le flux de données a été créé et sur le dossier CDM peuvent accéder à ses données à partir du connecteur de flux de données Power BI.
+* Seuls les utilisateurs autorisés à accéder à l’espace de travail dans lequel le dataflow a été créé et le dossier CDM peuvent accéder à ses données à partir du connecteur Power BI Dataflows
 
 
 Autres considérations à prendre en compte :
@@ -71,13 +72,13 @@ Autres considérations à prendre en compte :
 * Les entités liées ne sont pas disponibles pour les flux de données créés à partir de dossiers CDM.
 
 
-Les clients **Power BI Desktop** n’ont pas accès aux flux de données stockés dans un compte Azure Data Lake Storage Gen2, sauf s’ils sont propriétaires du flux de données ou explicitement autorisés à accéder au dossier CDM du flux de données. Prenons la situation suivante :
+Les clients **Power BI Desktop** peuvent accéder aux dataflows stockés dans le compte Azure Data Lake Storage Gen2, sauf s’ils sont propriétaires du dataflow ou s’ils ont été explicitement autorisé à accéder au dossier CDM du dataflow. Prenons la situation suivante :
 
-1.  Anna crée un espace de travail et le configure de façon à stocker les dataflows issus d’un dossier CDM.
-2.  Ben, qui est également membre de l’espace de travail créé par Anna, veut utiliser Power BI Desktop et le connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
-3.  Ben reçoit une erreur, car il n’a pas été autorisé à accéder au dossier CDM du flux de données dans le Data Lake.
+1.    Anna crée un espace de travail et le configure de façon à stocker les dataflows issus d’un dossier CDM.
+2.    Ben, qui est également membre de l’espace de travail créé par Anna, veut utiliser Power BI Desktop et le connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
+3.    Ben a reçu une erreur car Ben n’était pas ajouté comme utilisateur autorisé à accéder au dossier CDM du dataflow dans le lac de données.
 
-    ![Erreur en tentant d’utiliser le flux de données](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Erreur en tentant d’utiliser le flux de données](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 Pour résoudre ce problème, Ben doit disposer d’autorisations de lecture sur le dossier CDM et ses fichiers. Pour savoir comment accorder l’accès au dossier CDM, voir [cet article](https://go.microsoft.com/fwlink/?linkid=2029121).
 

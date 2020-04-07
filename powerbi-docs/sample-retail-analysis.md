@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: eac1c22ba23f7a1a67b2cc120fe38d4c396d864a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207479"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404710"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Retail Analysis sample pour Power BI : Visite guidée
 
-Le pack de contenu Exemple Analyse de la vente au détail contient un tableau de bord, un rapport et un jeu de données qui analyse les données de ventes au détail d’articles vendus dans plusieurs magasins et régions. Les métriques comparent les performances de l’année à celles de l’année précédente en matière de volume des ventes, d’unités vendues, de marge brute et d’écart, et permettent une analyse des nouveaux magasins. 
+Le pack de contenu Exemple Analyse de la vente au détail contient un tableau de bord, un rapport et un jeu de données qui analyse les données de ventes au détail d’articles vendus dans plusieurs magasins et régions. Les mesures comparent les performances de cette année à celles de l’année précédente en matière de volume des ventes, d’unités, de marge brute et d’écart et permettent une analyse des nouveaux magasins. 
 
 ![Tableau de bord pour l’Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail1.png)
 
@@ -57,7 +57,7 @@ Vous pouvez aussi télécharger l’Exemple Analyse de la vente au détails en t
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529778). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529778). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Démarrer sur le tableau de bord et ouvrir le rapport
 
@@ -131,7 +131,7 @@ Examinons les performances des différentes régions.
 
    ![Sélectionner Allan Guinot](media/sample-retail-analysis/retail13.png)
 
-   Notez que la région d’Allan a obtenu les meilleures performances en mars et en juin en comparaison avec l’année dernière.
+   Notez que la région d’Allan a obtenu les meilleures performances en mars et en juin, en comparaison avec l’année dernière.
 2. Avec **Allan Guinot** toujours sélectionné, sélectionnez la bulle **Womens-10** dans le graphique en bulles.
 
    ![Allan Guinot et Womens-10 sélectionnés](media/sample-retail-analysis/power-bi-allan.png)

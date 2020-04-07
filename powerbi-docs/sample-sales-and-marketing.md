@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: be4b51629eefe46cb1ecc528951fab9128874a6f
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873816"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404620"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : Visite guidée
 
@@ -59,10 +59,10 @@ Vous pouvez également télécharger l’exemple Vente et marketing en tant que 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
-Commençons notre tour d’horizon sur le tableau de bord et examinons les vignettes que le directeur marketing a choisi d’épingler. On y trouve des informations sur la part de marché, les ventes et l’opinion. Les données sont ventilées par région, période et concurrence.
+Commençons notre tour d’horizon sur le tableau de bord et examinons les mosaïques que le directeur marketing a choisi d’épingler. On y trouve des informations sur la part de marché, les ventes et l’opinion. Les données sont ventilées par région, période et concurrence.
 
 * Les vignettes de nombres au bas de la colonne de gauche indiquent le volume des ventes du secteur au cours de l’exercice précédent (50 000), la part de marché (32,86 %), le volume des ventes (16 000), le score d’opinion (68), l’écart d’opinion (4) et le nombre total d’unités vendues (1 million).
 * Le graphique en courbes supérieur **(% Units Market Share vs. % Units Market Share** sur une période glissante de 12 mois) illustre la fluctuation de notre part de marché au fil du temps. Notez la grande chute en juin. Notre part de marché sur une période glissante de 12 mois (« R12M »), qui avait augmenté pendant un certain temps, commence maintenant à fléchir.
@@ -110,7 +110,7 @@ La page 1 du rapport porte sur la part de marché de VanArsdel.
 
 2. Examinez l’histogramme au bas du rapport, intitulé **Total Units by Month and isVanArsdel** (Nombre total d’unités par mois pour VanArsdelen). La colonne noire représente VanArsdel (ses produits) et la verte ses concurrents. La baisse enregistrée par VanArsdel en juin 2014 ne se retrouve pas chez les concurrents.
 
-3. Le graphique à barres **Total Category Volume by Segment** (Volume total de la catégorie par segment), à droite, est filtré pour afficher les 2 principaux segments de VanArsdel. Voyons comment ce filtre a été créé :  
+3. Le graphique à barres **Volume total de la catégorie par segment**, à droite, est filtré pour afficher les 2 principaux segments de VanArsdel. Voyons comment ce filtre a été créé :  
 
    a. Sélectionnez le graphique **Total Category Volume by Segment**.
 
@@ -120,7 +120,7 @@ La page 1 du rapport porte sur la part de marché de VanArsdel.
 
    d. Modifiez le filtre en sélectionnant **Segment** pour développer cette section, puis cochez **Productivity** pour ajouter aussi ce segment.  
 
-4. Dans **Total Units by Month and isVanArsdel** (Nombre total d’unités par mois pour VanArsdel), sélectionnez **Oui** dans la légende pour effectuer un filtrage croisé de la page sur VanArsdel. Dans le graphique **Total Category Volume by Segment**, notez que nous n’avons pas de concurrence dans le segment **Productivité**.
+4. Dans **Total Units by Month and isVanArsdel** (Nombre total d’unités par mois pour VanArsdel), sélectionnez **Oui** dans la légende pour effectuer un filtrage croisé de la page sur VanArsdel. Dans le graphique **Volume des catégories totales par segment**, notez que nous n’avons pas de concurrence dans le segment **Productivité**.
 
 5. Sélectionnez de nouveau **Oui** dans la légende pour effacer le filtre.
 
@@ -147,7 +147,7 @@ La page deux du rapport se concentre sur la tendance de la catégorie de cumul a
 Notez les points suivants :
 * VanArsdel est le leader de sa catégorie et ses principaux concurrents sont Natura, Aliqui et Pirium. Analysons cela de plus près.
 * Aliqui se développe, mais sa production reste modeste par rapport à celle de VanArsdel.
-* VanArsdel apparaît en vert dans le treemap. Dans la région Est, les clients préfèrent notre compétition, mais dans la région centrale, nous nous débrouillons bien. Notre part dans la région Est est la plus basse.
+* VanArsdel apparaît en vert dans le treemap. Dans la région East (Est), les clients préfèrent notre compétition, mais dans la région Central (centrale), nous nous débrouillons bien. Notre part dans la région Est est la plus basse.
 * Les unités vendues varient fortement en fonction du secteur géographique. La région Est est la région dominante pour la plupart des fabricants et VanArsdel a aussi une forte présence dans la région Centre.
 * Dans le graphique **Total Units YTD Var % by Month and Manufacturer** dans le coin inférieur droit, notez que nous avons un écart positif, ce qui est bon signe. Nous sommes plus performants que l’année dernière, mais notre concurrent, Aliqui, aussi.
 
@@ -157,9 +157,9 @@ La page 4 du rapport porte sur l’analyse des produits concurrents.
 ![Page Growth Opportunities](media/sample-sales-and-marketing/sales8.png)
 
 Notez les points suivants :
-* Le graphique **Total Units by Segment** en bas à gauche montre tous les segments de catégorie à l’exception des deux principaux segments de VanArsdel. Sélectionnez chacun des segments l’un après l’autre pour identifier les zones d’expansion potentielles pour VanArsdel. 
+* En bas à gauche du graphique **Unités totales par segment** les segments de toutes les catégories sont affichés, sauf les deux principaux segments de VanArsdel. Sélectionnez chacun des segments l’un après l’autre pour identifier les zones d’expansion potentielles pour VanArsdel. 
 * Notez que les segments **Extreme** (Extrême) et **Productivity** (Productivity) progressent plus vite que les autres. Cependant, nous ne faisons pas concurrence dans ces segments. Pour s’y investir, la société peut s’appuyer sur ces données pour cibler les segments porteurs dans les différentes régions. Nous pouvons aller plus loin dans l’analyse en formulant des questions. Par exemple, quelles sont les régions qui progressent le plus vite et quel serait le principal concurrent dans ce segment ?
-* Vous vous souvenez de cette diminution de la part de marché en juin ? Juin est un mois important pour le segment **Productivity** (Productivité), segment sur lequel la société n’est pas du tout présente. Ce détail pourrait nous aider à comprendre la diminution de notre part de marché en juin.
+* Vous vous souvenez de cette diminution de la part de marché en juin ? Le mois de juin est important pour le segment **Productivité**, segment sur lequel la société n’est pas du tout présente. Ce détail pourrait nous aider à comprendre la diminution de notre part de marché en juin.
 
 En filtrant les visualisations sur VanArsdel, par segment, par mois et par région, nous pouvons découvrir des opportunités de croissance pour VanArsdel.
 

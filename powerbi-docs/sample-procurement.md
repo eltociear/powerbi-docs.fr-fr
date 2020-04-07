@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873858"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404660"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
 
-Le pack de contenu Exemple Analyse de l’approvisionnement contient un tableau de bord, un rapport et un jeu de données qui analyse les dépenses d’une entreprise de fabrication auprès des fournisseurs par catégorie et par emplacement. Dans cet exemple, nous explorons les points suivants :
+Le pack de contenu d’échantillons Analyse de l’approvisionnement contient un tableau de bord, un rapport et un jeu de données qui analyse les dépenses d’une entreprise de fabrication auprès des fournisseurs par catégorie et par emplacement. Dans cet exemple, nous explorons les points suivants :
 
 * Quels sont les meilleurs fournisseurs ?
 * Dans quelles catégories dépensons-nous le plus ?
@@ -61,11 +61,11 @@ Vous pouvez aussi télécharger l’exemple Analyse de l’approvisionnement sou
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529784). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529784). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 
 ## <a name="spending-trends"></a>Tendances en matière de dépenses
-Commençons par rechercher les tendances en matière de dépenses par catégorie et par implantation géographique.  
+Commençons par rechercher les tendances en matière de dépenses par catégorie et par emplacement.  
 
 1. Dans l’espace de travail où vous avez enregistré l’exemple, ouvrez l’onglet **Tableaux de bord**, puis recherchez le tableau de bord **Exemple Analyse de l’approvisionnement** et sélectionnez-le. 
 2. Sélectionnez la vignette du tableau de bord, **Total Invoice by Country/Region**, ce qui ouvre la page **Spend Overview** du rapport **Procurement Analysis Sample**.

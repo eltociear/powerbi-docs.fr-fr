@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 0804650149f98d7f63315025ffe3f8a1771ac2ef
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381028"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302743"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -96,7 +96,7 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
 * Les abonnements par e-mail pour les rapports/tableaux de bord utilisant des jeux de données avec connexion active ne sont pas pris en charge lors de l’abonnement d’utilisateurs autres que vous-même, sauf si vous utilisez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité.
-* Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels Power BI](developer/visuals/power-bi-custom-visuals.md).  La seule exception est celle des visuels Power BI qui ont été [certifiés](developer/visuals/power-bi-custom-visuals-certified.md).  
+* Seuls les [éléments visuels Power BI certifiés](developer/visuals/power-bi-custom-visuals.md) et par défaut sont pris en charge pour les abonnements par e-mail.  
 * À ce stade, les abonnements aux e-mails ne prennent pas en charge les visuels Power BI alimentés par R.  
 * Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.  Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cef0983479a4b63dd97c1f709d69d65172dea334
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205294"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404163"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
@@ -56,7 +56,7 @@ Vous pouvez également télécharger l’exemple Rentabilité des clients en tan
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 
@@ -137,11 +137,11 @@ La plupart des vignettes du tableau de bord de l’exemple Rentabilité des clie
 
 1. Dans le segment **Executive** situé à gauche, sélectionnez le nom d’Andrew pour filtrer la page de rapport afin d’afficher uniquement les données concernant Andrew :
 
-   * Pour un indicateur de performance clé rapide, regardez **l’état du chiffre d’affaires (année complète)** (Revenue Status [Total Year]) d’Andrew : il est vert, ce qui signifie qu’il obtient de bons résultats.
+   * Pour un indicateur de performance clé rapide, regardez **l’état du chiffre d’affaires (année complète)** d’Andrew : il est vert, ce qui signifie qu’il obtient de bons résultats.
    * Le graphique **Revenue % Variance to Budget by Month and Executive** montre que si l’on fait abstraction d’une baisse en février, Andrew obtient de bons résultats. La région prédominante pour Andrew est la région Est, qui comprend 49 clients et cinq des sept produits. Le ratio de marge brute d’Andrew n’est ni le plus élevé ni le plus faible.
    * Le graphique **RevenueTY and Revenue % Var to Budget by Month** (chiffre d’affaires annuel et écart en % du chiffre d’affaires par rapport aux prévisions par mois) fait état d’un bénéficie régulier. Toutefois, si vous filtrez en sélectionnant le carré de la région **Central** (Centre) dans le treemap des régions, vous constatez qu’Andrew n’a généré du chiffre d’affaires qu’en mars et seulement dans l’Indiana. S’agit-il d’une tendance intentionnelle ou y a-t-il une autre raison à découvrir ?
 
-2. Passons maintenant au cas de Valery. Dans le segment **Executive**, sélectionnez le nom de Valery pour filtrer la page de rapport afin d’afficher uniquement les données la concernant. 
+2. Passons maintenant au cas de Valery. Dans le segment **Cadre**, sélectionnez le nom de Valery pour filtrer la page de rapport afin d’afficher uniquement les données la concernant. 
 
    ![Données de Valery](media/sample-customer-profitability/customer3.png)
 
@@ -173,7 +173,7 @@ La page du rapport intitulée « Industry Margin Analysis » propose une autre
 Cette page a un format de taille de page personnalisé.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Explorer les données en posant des questions dans Q&R
-Pour notre analyse, il serait intéressant d’identifier le secteur d’activité qui profite le plus à Valery en termes de chiffre d’affaires. Utilisons Q&R.
+Pour notre analyse, il serait intéressant d’identifier le secteur d’activité qui profite le plus à Valery en termes de chiffre d’affaires. Utilisons les Q&R (questions et réponses).
 
 1. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition. Le mode Édition est uniquement disponible si vous êtes propriétaire du rapport. Ce mode est parfois appelé *créateur*. Si, à l’inverse, ce rapport a été partagé uniquement avec vous, vous ne pouvez pas l’ouvrir en mode Édition.
 

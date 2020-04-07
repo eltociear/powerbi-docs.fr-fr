@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 403537f8cd18948c99cc4dffb911009771a8b806
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040452"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404727"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Création et utilisation de flux de données dans Power BI
 
@@ -32,7 +32,7 @@ L’utilisation d’un flux de données comporte trois étapes principales :
 2. Planifier la fréquence d’actualisation des données que vous souhaitez importer dans votre flux de données
 3. Créer le jeu de données à l’aide de votre flux de données, avec Power BI Desktop 
 
-Dans les sections suivantes, nous examinons chacune de ces étapes et nous familiarisons avec les outils fournis pour effectuer chaque étape. Nous pouvons commencer.
+Dans les sections suivantes, nous examinons chacune de ces étapes et nous familiarisons avec les outils fournis pour effectuer chaque étape. Commençons.
 
 ## <a name="creating-a-dataflow"></a>Création d’un flux de données
 Pour créer un dataflow, lancez le service Power BI dans un navigateur, puis sélectionnez un **espace de travail** (les dataflows ne sont pas disponibles dans la section *Mon espace de travail* du service Power BI) à partir du volet de navigation sur la gauche, comme le montre l’écran suivant. Vous pouvez également créer un espace de travail dans lequel créer votre nouveau flux de données. 
@@ -75,7 +75,7 @@ Si vous voulez voir le code généré par l’Éditeur de requête à chaque ét
 
 ### <a name="dataflows-and-the-common-data-model-cdm"></a>Flux de données et Common Data Model (CDM)
 
-Les entités de flux de données incluent de nouveaux outils qui permettent de mapper facilement vos données métier avec le Common Data Model (schéma standardisé de Microsoft), de les enrichir avec des données Microsoft et des données tierces et d’obtenir un accès simplifié au machine Learning. Ces nouvelles fonctionnalités peuvent être exploitées pour fournir des informations intelligentes et exploitables sur les données de votre entreprise. Une fois que vous avez terminé toutes les transformations à l’étape de modification des requêtes, vous pouvez mapper des colonnes de vos tables de sources de données vers des champs d’entité standard tels qu’ils sont définis par le modèle Common Data Model. Les entités standard ont un schéma connu défini par le modèle Common Data Model.
+Les entités de dataflows incluent de nouveaux outils qui permettent de mapper facilement vos données métier avec le Common Data Model (schéma standardisé de Microsoft), de les enrichir avec des données Microsoft et des données tierces et d’obtenir un accès simplifié au machine Learning. Ces nouvelles fonctionnalités peuvent être exploitées pour fournir des informations intelligentes et exploitables sur les données de votre entreprise. Une fois que vous avez terminé toutes les transformations à l’étape de modification des requêtes, vous pouvez mapper des colonnes de vos tables de sources de données vers des champs d’entité standard tels qu’ils sont définis par le modèle Common Data Model. Les entités standard ont un schéma connu défini par le modèle Common Data Model.
 
 Vous trouverez plus d’informations sur cette approche, ainsi que sur le modèle Common Data Model, dans l’article [Common Data Model, qu’est-ce que c’est](https://docs.microsoft.com/powerapps/common-data-model/overview).
 
@@ -92,7 +92,7 @@ Pour conserver l’entité standard du modèle Common Data Model, tous les champ
 
 Toutes les colonnes sources qui ne sont pas mappés restent comme telles pour garantir que le résultat du mappage est une entité standard avec des champs personnalisés.
 
-Une fois que vous avez terminé vos sélections et que votre entité et ses paramètres de données sont prêts à être enregistrés, vous pouvez sélectionner **Enregistrer** dans le menu. Notez que vous pouvez créer plusieurs entités en sélectionnant le bouton **Ajouter des entités**, et que vous pouvez modifier des entités pour affiner les requêtes et les entités que vous avez créées.
+Une fois que vous avez terminé vos sélections et que votre entité et ses paramètres de données sont prêts à être enregistrés, vous pouvez sélectionner **Enregistrer** dans le menu. Notez que vous pouvez créer plusieurs entités en sélectionnant le bouton **Ajouter des entités** et que vous pouvez modifier des entités pour affiner les requêtes et les entités que vous avez créées.
 
 ![Enregistrer le mappage d’entités](media/service-dataflows-create-use/dataflows-create-use_09.png)
 
@@ -100,7 +100,7 @@ Lorsque vous sélectionnez **Enregistrer**, vous êtes invité à nommer votre f
 
 ![Nom et description pour le nouveau flux de données](media/service-dataflows-create-use/dataflows-create-use_10.png)
 
-Lorsque vous êtes prêt et que vous sélectionnez le bouton **Enregistrer**, une fenêtre qui vous permet de savoir que votre **flux de données** a été créé s’affiche. 
+Lorsque vous êtes prêt et que vous sélectionnez le bouton **Enregistrer**, une fenêtre qui vous permet de savoir que votre **dataflow** a été créé s’affiche. 
 
 ![Le flux de données est enregistré](media/service-dataflows-create-use/dataflows-create-use_11.png)
 
@@ -108,7 +108,7 @@ Génial, vous êtes maintenant prêt pour l’étape suivante, qui planifie la f
 
 ## <a name="schedule-the-refresh-frequency"></a>Planifier la fréquence d’actualisation
 
-Une fois que votre flux de données a été enregistré, vous souhaitez planifier la fréquence d’actualisation pour chacune de vos sources de données connectées.
+Une fois votre dataflow enregistré, vous souhaitez planifier la fréquence d’actualisation pour chacune de vos sources de données connectées.
 
 Le processus d’actualisation des données permet aux flux de données Power BI de maintenir vos données à jour. Dans le **service Power BI**, dans la section **espace de travail**, il y a une collection de zones où vos informations, notamment les dataflows, peuvent être listées, comme le montre l’illustration suivante.
 
@@ -118,7 +118,7 @@ L’entrée *flux de données Dynamics* dans l’image précédente est le flux 
 
 ![Bouton Actualiser la planification dans la section Actions](media/service-dataflows-create-use/dataflows-create-use_13.png)
 
-Lorsque vous sélectionnez l’icône **Planifier l’actualisation**, vous êtes redirigé vers le volet **Planifier l’actualisation**, ce qui vous permet de définir la fréquence et l’heure d’actualisation du flux de données.
+Lorsque vous sélectionnez l’icône **Planifier l’actualisation**, vous êtes redirigé vers le volet **Planifier l’actualisation**, ce qui vous permet de définir la fréquence et l’heure d’actualisation du dataflow.
 
 ![Planifier les paramètres d'actualisation](media/service-dataflows-create-use/dataflows-create-use_14.png)
 
@@ -127,7 +127,7 @@ Pour plus d’informations sur la planification de l’actualisation, consultez 
 
 ## <a name="connect-to-your-dataflow-in-power-bi-desktop"></a>Vous connecter à votre flux de données dans Power BI Desktop
 
-Une fois que vous avez créé votre flux de données et que vous avez planifié la fréquence d’actualisation pour chaque source de données qui remplira le modèle, vous êtes prêt pour la troisième et dernière étape, qui est la connexion à votre flux de données depuis **Power BI Desktop**. 
+Une fois votre dataflow créé et la fréquence d’actualisation planifiée pour chaque source de données qui remplit le modèle, vous êtes prêt pour la troisième et dernière étape, qui consiste en la connexion de votre dataflow depuis l’intérieur de **Power BI Desktop**. 
 
 Pour vous connecter aux flux de données, dans Power BI Desktop, sélectionnez **Obtenir des données > Power BI > Flux de données Power BI (bêta)** comme le montre l’illustration ci-dessous.
 
@@ -150,9 +150,9 @@ La connexion à des sources de données pour des flux de données peut poser des
 
 * **Connecteur Salesforce** : l’utilisation d’un compte d’évaluation pour Salesforce avec des flux de données entraîne un échec de connexion sans qu’aucune information ne soit fournie. Pour résoudre ce problème, utilisez un compte Salesforce de production ou un compte de développeur pour les tests.
 
-* **Connecteur SharePoint** : veillez à fournir l’adresse de la racine du site SharePoint, sans sous-dossiers ni documents. L’URL peut par exemple ressembler à ce qui suit : https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **Connecteur SharePoint** : veillez à fournir l’adresse de la racine du site SharePoint, sans sous-dossiers ni documents. L’URL peut par exemple ressembler à ce qui suit : `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **Connecteur de fichier JSON** : actuellement, vous pouvez vous connecter à un fichier JSON à l’aide de l’authentification de base uniquement.  La connexion à un fichier JSON en fournissant les informations d’identification dans l’URL (par exemple, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) n’est **pas** prise en charge.  
+* **Connecteur de fichier JSON** : actuellement, vous pouvez vous connecter à un fichier JSON à l’aide de l’authentification de base uniquement.  La connexion à un fichier JSON en fournissant les informations d’identification dans l’URL (par exemple, `https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`...) n’est **pas**actuellement prise en charge.  
 
 * **Azure SQL Data Warehouse** : les flux de données ne prennent pas en charge l’authentification Azure Active Directory (AAD) pour Azure SQL Data Warehouse. Utilisez l’authentification de base pour ce scénario.
 

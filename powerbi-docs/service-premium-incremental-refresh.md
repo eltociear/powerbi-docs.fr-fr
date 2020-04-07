@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/27/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527618"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361880"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -136,7 +136,7 @@ L’actualisation incrémentielle de dix jours est plus efficace qu’une actual
 >
 > Diminuez la précision à un niveau acceptable en fonction de vos exigences de fréquence d’actualisation.
 >
-> Nous prévoyons de permettre la définition de requêtes personnalisées pour détecter les changements de données dans une version ultérieure. Cela permettrait d’éviter totalement la persistance de la valeur de colonne.
+> Définissez une requête personnalisée pour la détection des modifications de données à l’aide du point de terminaison XMLA et évitez de conserver entièrement la valeur de la colonne. Pour plus d’informations, consultez les requêtes personnalisées pour détecter les modifications de données ci-dessous.
 
 #### <a name="only-refresh-complete-periods"></a>Actualiser uniquement les périodes complètes
 
@@ -155,7 +155,7 @@ Vous pouvez désormais actualiser le modèle. La première actualisation peut ê
 
 ## <a name="query-timeouts"></a>Délais d’expiration des requêtes
 
-L’article sur la [résolution des problèmes d’actualisation](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) explique que les opérations d’actualisation dans le service Power BI sont soumises à des délais d’expiration. Les requêtes peuvent également être limitées par le délai d’expiration par défaut pour la source de données. La plupart des sources relationnelles permettent d’ignorer les délais d’expiration dans l’expression M. Par exemple, l’expression ci-dessous utilise la [fonction d’accès aux données de SQL Server](https://msdn.microsoft.com/query-bi/m/sql-database) pour définir le délai à deux heures. Chaque période définie par les plages de la stratégie soumet une requête qui respecte le paramètre de délai d’expiration de la commande.
+L’article sur la [résolution des problèmes d’actualisation](refresh-troubleshooting-refresh-scenarios.md) explique que les opérations d’actualisation dans le service Power BI sont soumises à des délais d’expiration. Les requêtes peuvent également être limitées par le délai d’expiration par défaut pour la source de données. La plupart des sources relationnelles permettent d’ignorer les délais d’expiration dans l’expression M. Par exemple, l’expression ci-dessous utilise la [fonction d’accès aux données de SQL Server](https://docs.microsoft.com/powerquery-m/sql-database) pour définir le délai à deux heures. Chaque période définie par les plages de la stratégie soumet une requête qui respecte le paramètre de délai d’expiration de la commande.
 
 ```powerquery-m
 let
@@ -166,7 +166,89 @@ in
     #"Filtered Rows"
 ```
 
-## <a name="limitations"></a>Limites
+## <a name="xmla-endpoint-benefits-for-incremental-refresh"></a>Avantages du point de terminaison XMLA pour l’actualisation incrémentielle
 
-Pour les [modèles composites](desktop-composite-models.md), l’actualisation incrémentielle est actuellement prise en charge pour les sources de données SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle et Teradata uniquement.
+Le [point de terminaison XMLA](service-premium-connect-tools.md) pour les jeux de données dans une capacité Premium peut être activé pour des opérations de lecture/écriture qui peuvent bénéficier considérablement de l’actualisation incrémentielle. Les opérations d’actualisation via le point de terminaison XMLA ne sont pas limitées à [48 actualisations par jour](refresh-data.md#data-refresh) et le [délai d’expiration d’actualisation planifié](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) n’est pas imposé et peut être utile dans des scénarios d’actualisation incrémentielle.
 
+### <a name="refresh-management-with-sql-server-management-studio-ssms"></a>Actualiser la gestion avec SQL Server Management Studio (SSMS)
+
+Avec l’accès en lecture-écriture du point de terminaison XMLA activé, SSMS peut être utilisé pour afficher et gérer les partitions générées par l’application de stratégies d’actualisation incrémentielle.
+
+![Partitions dans SSMS](media/service-premium-incremental-refresh/ssms-partitions.png)
+
+#### <a name="refresh-historical-partitions"></a>Actualiser des partitions historiques
+
+Ceci permet, par exemple, d’actualiser une partition historique spécifique absente d’une plage incrémentielle pour exécuter une mise à jour rétro-active sans devoir actualiser toutes les données historiques.
+
+#### <a name="override-incremental-refresh-behavior"></a>Remplacer le comportement d’actualisation incrémentielle
+
+Avec SSMS, vous avez également plus de contrôle sur la façon d’appeler des actualisations incrémentielles à partir de l’utilisation du [langage TMSL (Tabular Model Scripting Language)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) et du [Modèle d'objet tabulaire (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). Par exemple, dans SSMS, dans l’Explorateur d’objets, cliquez avec le bouton de droite sur une table, puis sélectionnez l’option de menu **Table de processus**. Puis cliquez sur le bouton **Script** pour générer une commande d’actualisation TMSL.
+
+![Bouton Script dans la boîte de dialogue Table de processus](media/service-premium-incremental-refresh/ssms-process-table.png)
+
+Les paramètres suivants peuvent être insérés dans la commande d’actualisation TMSL pour remplacer le comportement d’actualisation incrémentielle par défaut.
+
+- **applyRefreshPolicy** : si une table a une stratégie d’actualisation incrémentielle définie, applyRefreshPolicy détermine si la stratégie est appliquée ou non. Si la stratégie n’est pas appliquée, une opération Traiter entièrement laissera les définitions de partitions inchangées et toutes les partitions de la table seront entièrement actualisées. La valeur par défaut est true.
+
+- **effectiveDate** : si une stratégie d’actualisation incrémentielle est appliquée, elle doit connaitre la date actuelle pour déterminer les plages de fenêtre dynamique pour la plage historique et la plage incrémentielle. Le paramètre effectiveDate vous permet de remplacer la date actuelle. Cela est utile pour les tests, les démonstrations et les scénarios d’entreprise où les données sont actualisées de façon incrémentielle jusqu’à une date dans le passé ou le futur (par exemple, des budgets futurs). La valeur par défaut est la [date actuelle](#current-date).
+
+```json
+{ 
+  "refresh": {
+    "type": "full",
+
+    "applyRefreshPolicy": true,
+    "effectiveDate": "12/31/2013",
+
+    "objects": [
+      {
+        "database": "IR_AdventureWorks", 
+        "table": "FactInternetSales" 
+      }
+    ]
+  }
+}
+```
+
+### <a name="custom-queries-for-detect-data-changes"></a>Requêtes personnalisées pour les modifications de données détectées
+
+Vous pouvez utiliser TMSL ou TOM pour remplacer le comportement des modifications de données détectées. Non seulement, cela peut être utilisé pour éviter la persistance de la colonne de la dernière mise à jour dans le cache en mémoire, mais aussi, cela peut activer des scénarios dans lesquels la table configuration/instruction est préparée par des processus ETL afin de signaler uniquement les partitions qui doivent être actualisées. Cela peut créer un processus d’actualisation incrémentielle où seules les périodes sont actualisées, quelle que soit la date des mises à jour des données.
+
+Le pollingExpression est destiné à être une expression M légère ou le nom d’une autre requête M. Il doit retourner une valeur scalaire et sera exécutée pour chaque partition. Si la valeur retournée est différente de celle lors de la dernière actualisation incrémentielle, la partition est signalée pour un traitement complet.
+
+L’exemple suivant couvre la totalité des 120 mois de la plage historique pour les modifications antidatées. Le fait de spécifier 120 mois au lieu de 10 ans signifie que la compression des données n’est peut-être pas aussi efficace, mais évite d’avoir à actualiser une année historique entière, ce qui serait plus onéreux quand un mois suffit pour une modification antidatée.
+
+```json
+"refreshPolicy": {
+    "policyType": "basic",
+    "rollingWindowGranularity": "month",
+    "rollingWindowPeriods": 120,
+    "incrementalGranularity": "month",
+    "incrementalPeriods": 120,
+    "pollingExpression": "<M expression or name of custom polling query>",
+    "sourceExpression": [
+    "let ..."
+    ]
+}
+```
+
+## <a name="metadata-only-deployment"></a>Déploiement de métadonnées uniquement
+
+Lorsque vous publiez une nouvelle version d’un fichier PBIX à partir de Power BI Desktop vers un espace de travail dans le service Power BI, si un jeu de données portant le même nom existe déjà, vous êtes invité à remplacer le jeu de données existant.
+
+![Remplacer l’invite du jeu de données](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
+
+Dans certains cas, vous pouvez souhaiter remplacer le jeu de données, en particulier avec une actualisation incrémentielle. Le jeu de données dans Power BI Desktop peut être bien plus petit que celui du service. Si le jeu de données dans le service a une stratégie d’actualisation appliquée, plusieurs années de données historiques pourront être perdues si le jeu de données est remplacé. L’actualisation de toutes les données historiques peut prendre des heures et entraîner un temps d’arrêt du système pour les utilisateurs.
+
+Au lieu de cela, il est plus utile d’exécuter un déploiement de métadonnées uniquement. Cela permet le déploiement de nouveaux objets sans perdre les données historiques. Par exemple, si vous avez ajouté de nouvelles mesures, vous pouvez déployer les nouvelles mesures sans devoir actualiser les données, en gagnant beaucoup de temps.
+
+Lorsqu’il est configuré pour l’accès en lecture-écriture, le point de terminaison XMLA fournit la compatibilité avec les outils qui rendent cela possible. Par exemple, ALM Toolkit est un outil diff de schéma pour les jeux de données Power BI et peut être utilisé pour exécuter le déploiement des métadonnées uniquement.
+
+Téléchargez et installez la dernière version de ALM Toolkit à partir du [référentiel Git Analysis Services](https://github.com/microsoft/Analysis-Services/releases). Des liens vers la documentation et des informations sur la prise en charge sont disponibles via le ruban aide. Pour effectuer un déploiement de métadonnées uniquement, effectuez une comparaison et sélectionnez l’instance Power BI Desktop en cours d’exécution comme source, ainsi que le jeu de données existant dans le service comme cible. Considérez les différences affichées et ignorez la mise à jour de la table avec des partitions d’actualisation incrémentielle ou utilisez la boîte de dialogue Option pour conserver des partitions pour des mises à jour de table. Validez la sélection pour garantir l’intégrité du modèle cible, puis mettez-le à jour.
+
+![ALM Toolkit](media/service-premium-incremental-refresh/alm-toolkit.png)
+
+## <a name="see-also"></a>Voir aussi
+
+[Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md)   
+[Scénarios de résolution de problèmes liés à l’actualisation](refresh-troubleshooting-refresh-scenarios.md)   

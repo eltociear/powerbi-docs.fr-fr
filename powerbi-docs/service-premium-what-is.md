@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f53f7a1e51ce1cb17c337569ba770ac2b5643d19
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381166"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329660"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
-Power BI Premium fournit à votre organisation des ressources dédiées et améliorées sur lesquelles exécuter le service Power BI. Par exemple :
+Vous pouvez utiliser Power BI Premium pour obtenir des ressources dédiées et améliorées pour votre organisation, afin que les utilisateurs de votre organisation puissent utiliser le service Power BI avec de meilleures performances et une plus grande réactivité. Par exemple, avec un abonnement Power BI Premium, vous et les utilisateurs de votre organisation accédez à :
 
 > [!div class="checklist"]
 > * Une mise à l’échelle et des performances améliorées
@@ -29,13 +29,16 @@ Power BI Premium fournit à votre organisation des ressources dédiées et amé
 > * La prise en charge de la résidence des données par région (multigéographique)
 > * Le partage des données sans nécessiter de licence pour chaque utilisateur
 
+
+![Portail d’administration](media/service-premium-what-is/premium-admin-portal.png) 
+
 Cet article présente les fonctionnalités clés de Power BI Premium. Toutefois, lorsque cela se révèle pertinent, il fournit des liens vers des articles comprenant des informations plus détaillées. Pour plus d'informations sur Power BI Pro et Power BI Premium, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
 Power BI Premium est disponible via un abonnement Office 365 au niveau du locataire, avec deux familles de références SKU :
 
-- Les références SKU **P** (P1-P3), pour l’incorporation et les fonctionnalités et d’entreprise. Nécessitent un engagement mensuel ou annuel, une facturation mensuelle, et incluent une licence permettant d’installer localement Power BI Report Server.
+- Les références SKU **P** (P1-P5), pour l’incorporation et les fonctionnalités d’entreprise nécessitent un engagement mensuel ou annuel, une facturation mensuelle et incluent une licence permettant d’installer localement Power BI Report Server.
 
 - Les références SKU **EM** (EM1-EM3), pour l’_incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
 
@@ -81,6 +84,8 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
@@ -229,13 +234,14 @@ Pour plus d’informations, consultez [Gestion des licences Power BI](service-a
 
 ## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services dans Power BI Premium (préversion)
 
-Le **moteur Vertipaq Analysis Services** validé par Microsoft alimente en arrière-plan les jeux de données Power BI. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Les jeux de données Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais des **points de terminaison XMLA**. 
+Le **moteur Vertipaq Analysis Services**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
 
-Les outils Microsoft comme SQL Server Management Studio et SQL Server Profiler, ainsi que les applications tierces telles que DAX Studio et les applications de visualisation des données, peuvent se connecter aux jeux de données Premium et les interroger à l’aide d’événements XMLA, DAX, MDX, DMV et Trace. 
+Avec un accès en lecture seule, les outils Microsoft comme SQL Server Management Studio (SSMS) et SQL Server Profiler, ainsi que les applications tierces telles que DAX Studio et les applications de visualisation des données, peuvent se connecter aux jeux de données Premium et les interroger à l’aide d’événements XMLA, DAX, MDX, DMV et Trace. Avec un accès en lecture/écriture, les outils de modélisation des données d’entreprise, tels que Visual Studio avec l’extension de projets Analysis Services ou l’éditeur tabulaire Open source, peuvent déployer des modèles tabulaires en tant que jeu de données dans un espace de travail Premium. Et, avec des outils tels que SSMS, les administrateurs peuvent utiliser TMSL (Tabular Model Scripting Language) pour écrire des modifications de métadonnées et des scénarios d’actualisation des données avancés. 
+
+Pour en savoir plus, consultez [Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-Pour plus d’informations, consultez [Se connecter à des jeux de données avec des applications et des outils clients](service-premium-connect-tools.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 2db9cdcb1238b5f26a34cf652f8f614411c2992b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79379040"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550764"
 ---
 # <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
 
@@ -48,7 +48,7 @@ project
 
 ## <a name="folder-and-file-description"></a>Description des dossiers et fichiers
 
-Cette section fournit des informations pour chaque dossier et fichier du répertoire créés par l’outil Power BI **pbiciz**.  
+Cette section fournit des informations pour chaque dossier et fichier du répertoire créés par l’outil des visuels**pbiciz** Power BI.  
 
 ### <a name="vscode"></a>.vscode
 

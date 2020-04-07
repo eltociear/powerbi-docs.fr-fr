@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 15a4d88ac9de5d50caeb975afa8ad1758246031f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881816"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551082"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Télécharger un rapport du service Power BI dans Power BI Desktop (préversion)
 Dans Power BI Desktop, vous pouvez publier un rapport (un *fichier .pbix*) dans le service Power BI, à partir de votre ordinateur local. Les rapports Power BI peuvent également aller dans l’autre sens : Vous pouvez télécharger un rapport du service Power BI dans Power BI Desktop. Dans les deux cas, l’extension d’un rapport Power BI, est .pbix.
 
-Il existe quelques limites et considérations à prendre en compte (voir plus loin dans cet article).
+Il existe quelques limites à prendre en compte, discutées dans la section [Considérations et résolution des problèmes](#considerations-and-troubleshooting) de cet article.
 
 ![Liste déroulante de fichiers](media/service-export-to-pbix/power-bi-file-export.png)
 
@@ -55,6 +55,7 @@ Voici les points importants et les limitations à prendre en compte pour le tél
 * Vous devez toujours utiliser la dernière version de Power BI Desktop lorsque vous ouvrez des fichiers téléchargés. Il se peut que les fichiers .pbix téléchargés ne s’ouvrent pas dans les anciennes versions de Power BI Desktop.
 * Si votre administrateur a désactivé la possibilité de télécharger des données, cette fonctionnalité ne sera pas visible dans le service Power BI.
 * Les jeux de données avec actualisation incrémentielle ne peuvent pas être téléchargés dans un fichier .pbix.
+* Si vous créez un rapport Power BI basé sur un jeu de données dans un espace de travail et que vous publiez dans un autre espace de travail, vous et vos utilisateurs ne pourrez pas le télécharger. Cette caractéristique téléchargée n’est pas actuellement prise en charge dans ce scénario.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Regardez la vidéo d’une minute **Guy in a Cube** qui présente cette fonctionnalité :

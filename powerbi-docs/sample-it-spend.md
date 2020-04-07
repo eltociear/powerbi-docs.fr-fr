@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 00effa1838327a9463671cf9be2f5764be71deb4
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873902"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404703"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 
@@ -57,10 +57,10 @@ Vous pouvez également télécharger l’exemple Analyse des dépenses informati
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529783). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529783). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Exemple de tableau de bord Analyse des dépenses informatiques
-Les deux vignettes représentant des nombres sur la partie gauche du tableau de bord, **Var Plan %** (% de prévisions d’écart) et **Variance Latest Estimate % Quarter 3**(% des dernières estimations de l’écart du trimestre 3), nous donnent une vue d’ensemble de nos résultats par rapport aux prévisions et par rapport aux estimations du dernier trimestre (LE3 = Latest Estimate Quarter 3, dernières estimations Trimestre 3). Globalement, nous sommes à environ 6 % des prévisions. Examinons la cause de cet écart : quand, où et dans quelle catégorie ?
+Les deux vignettes représentant des nombres sur la partie gauche du tableau de bord, **Var Plan %** (% de prévisions d’écart) et **Variance Latest Estimate % Quarter 3**(% des dernières estimations de l’écart du trimestre 3), nous donnent une vue d’ensemble de nos résultats par rapport aux prévisions et par rapport aux estimations du dernier trimestre (LE3 = Latest Estimate Quarter 3, dernières estimations Trimestre 3). Globalement, nous sommes à environ 6 % des prévisions. Examinons la cause de cet écart : quand, où et dans quelle catégorie.
 
 ## <a name="ytd-it-spend-trend-analysis-page"></a>Page « YTD IT Spend Trend Analysis » (Analyse des tendances des dépenses informatiques de l’année en cours)
 En sélectionnant la vignette de tableau de bord **Var Plan % by Sales Region** (% écart prévisions par région de vente), vous accédez à la page **YTD IT Spend Trend Analysis (Analyse des tendances des dépenses informatiques de l’année en cours)** du rapport de l’exemple Analyse des dépenses informatiques. Nous voyons en un clin d’œil que nous avons un écart positif aux États-Unis et en Europe, et un écart négatif au Canada, en Amérique latine et en Australie. Les États-Unis affichent un écart d’environ 6 % au-dessus des dernières estimations et l’Australie a un écart d’environ 7 % en dessous des dernières estimations.

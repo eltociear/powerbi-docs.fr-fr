@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d871fa15c999e5b6c83b0334d6c978b2ba3c9870
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4863bfe3d99a63fbf4ad49834e66ecb8fcaf5525
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858707"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404151"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : Visite guidée
 
@@ -22,7 +22,7 @@ Le pack de contenu Exemple Analyse des opportunités contient un tableau de bord
 
 Cet exemple s’appuie sur 2 mesures du chiffre d’affaires :
 
-* Chiffre d’affaires : Une estimation par un vendeur du chiffre d’affaires à venir.
+* Chiffre d’affaires : une estimation par un vendeur du chiffre d’affaires à venir.
 * Chiffre d’affaires pondéré : Calculé selon la formule Chiffre d’affaires X Probabilité en %. Il est considéré comme une prévision plus précise du chiffre d’affaires réel. La probabilité est déterminée en fonction de l’*étape de vente* dans laquelle se trouve l’affaire :
   * Lead : 10 %  
   * Qualify : 20 %  
@@ -66,7 +66,7 @@ Vous pouvez aussi télécharger l’exemple Analyse des opportunités sous forme
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 Notre responsable des ventes a créé un tableau de bord pour suivre les métriques qu’elle juge les plus importantes. Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données :
@@ -122,7 +122,7 @@ Notez les points suivants :
 * Les opportunités importantes sont plus courantes dans la région Central, les opportunités de petite taille sont plus courantes dans la région East et les opportunités de taille moyenne sont plus courantes dans la région West.
 
 ### <a name="upcoming-opportunities-by-month-page"></a>Page Upcoming Opportunities by Month
-Pour cette page, nous nous intéressons à des facteurs similaires, mais dans une perspective portant sur les dates et la chronologie. 
+Pour cette page, nous nous intéressons à des facteurs similaires, mais dans une perspective portant sur la date et l’heure. 
  
 ![Page Upcoming Opportunities](media/sample-opportunity-analysis/opportunity6.png)
 

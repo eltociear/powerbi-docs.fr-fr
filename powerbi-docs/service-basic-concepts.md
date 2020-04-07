@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 280e29d90e956ba47de6a0ff80b6f29bc0f00a18
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207916"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404060"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
 L’objectif de cet article est de vous orienter vers le service Power BI : ses différents éléments, comment ils fonctionnent ensemble et comment vous pouvez les utiliser. Vous en tirerez plus profit si vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). En tant que concepteur, votre workflow typique consiste à créer des rapports en premier lieu dans Power BI Desktop. Vous les publiez ensuite sur le service Power BI, où vous pouvez toujours les modifier. Vous créez aussi les tableaux de bord en fonction de vos rapports dans le service Power BI. 
 
-Pour cet article, si vous n’avez pas encore de données, essayez d’installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Pour cet article, si vous ne disposez pas encore de vos propres rapports, essayez d’installer un de vos [échantillons Power BI](sample-datasets.md).
 
 ![Écran d’accueil du service Power BI dans un navigateur](media/service-basic-concepts/power-bi-home-screen.png)
 
@@ -76,7 +76,7 @@ Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous 
 ## <a name="datasets"></a>Jeux de données
 Un *jeu de données* est une collection de données que vous *importez* ou auxquelles vous *vous connectez*. Power BI vous permet de vous connecter à toutes sortes de jeux de données regroupés au même endroit et de les importer dans un même emplacement. Les jeux de données peuvent également fournir des données provenant de dataflows.
 
-Les jeux de données associés aux *espaces de travail* et un même jeu de données peuvent faire partie de nombreux espaces de travail. Lorsque vous ouvrez un espace de travail, les jeux de données associés sont répertoriés sous l’onglet **Jeux de données**. Chaque jeu de données répertorié représente une source de données unique, telle qu’un classeur Excel sur OneDrive, un jeu de données tabulaires SSAS locales ou un jeu de données Salesforce. Il existe de nombreuses sources de données prises en charge différentes, et nous en ajoutons de nouvelles en permanence. Consultez la [liste des types de jeux de données que vous pouvez utiliser avec Power BI](service-get-data.md).
+Les jeux de données associés aux *espaces de travail* et un même jeu de données peuvent faire partie de nombreux espaces de travail. Lorsque vous ouvrez un espace de travail, les jeux de données associés sont répertoriés sous l’onglet **Jeux de données**. Chaque jeu de données répertorié représente une source de données unique, telle qu’un classeur Excel sur OneDrive, un jeu de données tabulaires SSAS locales ou un jeu de données Salesforce. Il existe de nombreuses sources de données différentes prises en charge et nous en ajoutons de nouvelles en permanence. Consultez la [liste des types de jeux de données que vous pouvez utiliser avec Power BI](service-get-data.md).
 
 Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail « Ventes et marketing » et cliqué sur l’onglet pour **Jeux de données**.
 
@@ -165,7 +165,7 @@ Il existe différentes manières de [partager un tableau de bord](service-share-
 ## <a name="workbooks"></a>Classeurs
 Les classeurs sont un type spécial de jeu de données. Si vous avez lu la section **Jeux de données** ci-dessus, vous savez presque tout sur les classeurs. Mais vous vous demandez peut-être pourquoi Power BI considère parfois un classeur Excel comme un **jeu de données** et parfois comme un **classeur**.
 
-Lorsque vous utilisez **Obtenir des données** avec des fichiers Excel, vous avez la possibilité d’*importer* un fichier ou de vous *connecter* au fichier. Lorsque vous choisissez Se connecter, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais contrairement à Excel Online, Power BI offre des fonctionnalités utiles pour épingler des éléments directement de vos classeurs sur vos tableaux de bord.
+Lorsque vous utilisez **Obtenir des données** avec des fichiers Excel, vous avez la possibilité d’*importer* un fichier ou de vous *connecter* au fichier. Lorsque vous choisissez Se connecter, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais, contrairement à Excel Online, vous disposez de caractéristiques utiles pour épingler des éléments directement de vos classeurs sur vos tableaux de bord.
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous devez apporter des modifications, vous pouvez cliquer sur Modifier, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive.
 

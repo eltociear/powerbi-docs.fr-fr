@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3812f16489d304912ec9574352897e1effb29d4a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201398"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464632"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Utilisation de métadonnées de jeu de données avancées (préversion)
 
@@ -24,6 +24,8 @@ Avec la publication de la fonctionnalité de **métadonnées de jeu de données 
 
 
 La fonctionnalité de **métadonnées de jeu de données avancées** est stratégique et fondamentale, car les fonctionnalités Power BI futures seront générées à partir de ces métadonnées. Certaines capacités supplémentaires tirant parti des métadonnées de jeu de données avancées incluent [la lecture/l’écriture XMLA](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) pour la gestion des jeux de données Power BI, et la migration des charges de travail Analysis Services vers Power BI pour tirer parti des fonctionnalités de nouvelle génération.
+
+
 
 ## <a name="enable-enhanced-dataset-metadata"></a>Activer les métadonnées de jeu de données avancées
 
@@ -36,6 +38,9 @@ Vous êtes invité à redémarrer Power BI Desktop.
 ![Invite de redémarrage](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
 Une fois la fonctionnalité en préversion activée, Power BI Desktop tente de mettre à niveau les fichiers PBIX et PBIT qui utilisent le format de métadonnées précédent. 
+
+> [!IMPORTANT]
+> L’activation de la caractéristique **métadonnées de jeu de données améliorées** entraîne une mise à niveau irréversible des rapports. Les rapports Power BI chargés ou créés avec Power BI Desktop, une fois les **métadonnées de jeu de données améliorées** activées, sont converties de manière irréversible au format de métadonnées de jeu de données améliorées.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

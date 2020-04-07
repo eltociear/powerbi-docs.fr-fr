@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab2aa7f1771c09a7ec725f9cc533717e7daf11a0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383502"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464581"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuels organisationnels dans Power BI
 
@@ -35,7 +35,7 @@ Pour savoir comment utiliser des visuels Power BI d’organisation dans les rap
 Pour découvrir comment administrer, déployer et gérer des visuels Power BI d’organisation dans votre entreprise, consultez l’article suivant : [En savoir plus sur le déploiement et la gestion de visuels Power BI d’organisation](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> Un visuel personnalisé peut contenir du code présentant des risques en matière de sécurité ou de confidentialité. Assurez-vous que vous faites confiance à l’auteur et à la source d’un visuel personnalisé avant de le déployer dans le référentiel de l’organisation.
+> Un visuel Power BI installé à partir d’un fichier peut contenir du code présentant des risques en matière de sécurité ou de confidentialité. Assurez-vous que vous faites confiance à l’auteur et à la source d’un fichier visuel Power BI avant de le déployer dans le référentiel de l’organisation.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
@@ -45,7 +45,9 @@ Admin :
 
 * Les visuels Power BI hérités (par exemple ceux qui ne s’appuient pas sur les nouvelles API avec gestion de versions) ne sont pas pris en charge.
 
-* Si un visuel personnalisé est supprimé du référentiel, tous les rapports existants qui utilisent le visuel supprimé ne s’afficheront plus. L’opération de suppression du référentiel n’est pas réversible. Pour désactiver temporairement un élément visuel personnalisé, utilisez la fonctionnalité « Désactiver ».
+* Si un visuel Power BI d’une ApSource ou d’un fichier est supprimé du référentiel, tous les rapports existants qui utilisent le visuel supprimé ne seront plus rendus. La suppression du référentiel n’est pas réversible. Pour désactiver temporairement un visuel Power BI à partir de ApSource ou d’un fichier, utilisez la caractéristique « Désactiver ».
+
+* Les visuels Power BI d’organisation ne sont pas pris en charge dans le serveur de rapports Power BI.
 
 Utilisateur final :
 

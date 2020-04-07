@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51c9b8a570abf2686abe9b26a4d9e111e8ef022a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858397"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404652"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée
 
@@ -62,10 +62,10 @@ Vous pouvez aussi télécharger l’exemple Analyse de la qualité des fournisse
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529779). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529779). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Explorer des échantillons Excel dans Excel](sample-datasets.md#explore-excel-samples-inside-excel).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Temps d’arrêt causés par des articles défectueux
-Analysons les temps d’arrêt causés par des articles défectueux et voyons quels fournisseurs en sont responsable.  
+Analysons les temps d’arrêt provoqués par des articles défectueux et voyons quels fournisseurs en sont responsables.  
 
 1. Dans le tableau de bord, sélectionnez la vignette **Total Defect Quantity** (Quantité totale de défauts) ou **Total Downtime Minutes** (Total des temps d’arrêt en minutes).
 
@@ -73,7 +73,7 @@ Analysons les temps d’arrêt causés par des articles défectueux et voyons qu
 
    Le rapport de l’exemple Analyse de la qualité des fournisseurs s’ouvre à la page **Downtime Analysis** (Analyse des temps d’arrêt).
 
-   Notez que nous avons 33 millions de pièces défectueuses, ce qui entraîne un temps d’arrêt de 77 000 minutes au total. Bien que certains matériaux présentent moins de pièces défectueuses, ils peuvent entraîner des retards, engendrant davantage de temps d’arrêt. Explorons-les dans la page de rapport.  
+   Notez que nous avons 33 millions de pièces défectueuses, ce qui entraîne un temps d’arrêt de 77 000 minutes au total. Bien que certains matériaux présentent moins de pièces défectueuses, ils peuvent entraîner des retards, engendrant davantage de temps d’arrêt. Explorons-les dans la page du rapport.  
 2. Si nous examinons la ligne **Total Downtime Minutes** (Total des temps d’arrêt en minutes) du graphique combiné **Defects and Downtime (min) by Material Type** (Défauts et temps d’arrêt (min) par type d’article), nous pouvons constater que ce sont les cartons ondulés qui causent le plus de temps d’arrêt.  
 3. Sélectionnez la colonne **Corrugate** (Ondulé) pour identifier les usines les plus impactées par ce défaut et le fournisseur qui en est responsable.  
 
@@ -108,7 +108,7 @@ Analysons les temps d’arrêt causés par des articles défectueux et voyons qu
 
     ![Sélectionner Impact](media/sample-supplier-quality/supplier7.png)  
 
-    Notez dans le graphique en bulles que la catégorie **Logistique** est la plus problématique. C’est la plus grande en termes de quantité totale de défauts, de rapports de défauts et de minutes d’inactivité. Intéressons-nous de plus près à cette catégorie.  
+    Notez dans le graphique en bulles que la catégorie **Logistique** est la plus problématique. C’est la plus grande en termes de quantité totale de défauts, de rapports de défauts et de minutes de temps d’arrêt. Intéressons-nous de plus près à cette catégorie.  
 3. Sélectionnez la bulle **Logistics** (Logistique) dans le graphique en bulles et observez les usines de Springfield et Naperville dans l’Illinois. Visiblement, l’usine de Naperville parvient beaucoup mieux à gérer les approvisionnements défectueux. Elle compte un grand nombre de rejets et peu de répercussions par rapport à l’usine de Springfield qui en connaît beaucoup.  
 
    ![Sélectionner Logistics](media/sample-supplier-quality/supplier8.png)  
@@ -147,10 +147,10 @@ Le type d’article le mieux géré est celui qui connaît le moins de temps d�
 
    ![Questions et réponses : Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 
-   Notez que les temps d’arrêt liés aux matières premières ont été à peu près équivalents en 2013 et en 2014, même s’il y a eu beaucoup plus de matières premières défectueuses en 2014. Il semble que l’augmentation des défauts pour les matières premières en 2014 n’a pas entraîné de temps d’arrêt plus grand pour les matières premières dans 2014.
+   Notez que les temps d’arrêt liés aux matières premières ont été à peu près équivalents en 2013 et en 2014, même s’il y a eu beaucoup plus de matières premières défectueuses en 2014. Il semble que l’augmentation des défauts pour les matières premières en 2014 n’a pas entraîné plus de temps d’arrêt pour les matières premières cette même année.
 
 ### <a name="compare-defects-to-downtime-month-to-month"></a>Analyse de la corrélation entre défauts et temps d’arrêt mois par mois
-Examinons une autre vignette de tableau de bord relative au nombre total de défauts.  
+Examinons une autre mosaïque de tableau de bord relative à la quantité défectueuse totale.  
 
 1. Sélectionnez **Quitter le Q & R** dans le coin supérieur gauche pour revenir au tableau de bord.  
 
@@ -163,7 +163,7 @@ Examinons une autre vignette de tableau de bord relative au nombre total de déf
 
    ![Questions et réponses : total downtime minutes by month and year as a line chart](media/sample-supplier-quality/supplier15.png)
 
-   S’il est à constater une forte augmentation des temps d’arrêts en minutes en juin et octobre, hormis cela, l’augmentation du nombre de défauts n’a pas entraîné beaucoup plus de temps d’arrêt. Ce résultat montre que les défauts ont bien été gérés.  
+   S’il est à constater une forte augmentation des temps d’arrêt en minutes pour les mois de juin et octobre, l’augmentation du nombre de défauts n’a pourtant pas entraîné beaucoup plus de temps d’arrêt. Ce résultat montre que les défauts ont bien été gérés.  
 3. Pour épingler ce graphique à votre tableau de bord, sélectionnez l’icône d’épingle ![Icône Épingler](media/sample-supplier-quality/pin.png) au-dessus de la zone de questions.  
 4. Pour explorer les mois aberrants, vérifiez les temps d’arrêt en minutes en octobre par type d’article, lieu d’implantation des usines, catégorie, etc. en posant des questions telles que *total downtime minutes in October by plant* (total des temps d’arrêt en minutes en octobre par usine). 
 5. Sélectionnez **Quitter le Q & R** dans le coin supérieur gauche pour revenir au tableau de bord.

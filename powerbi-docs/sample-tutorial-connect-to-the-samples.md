@@ -1,37 +1,37 @@
 ---
-title: Se connecter aux exemples dans le service Power BI
-description: Apprenez à installer et à explorer les exemples dans le service Power BI.
+title: Parcourir l’échantillon Analyse de la vente au détail
+description: Découvrez comment installer et explorer l’échantillon Analyse de la vente au détail dans le service Power BI et dans Power BI Desktop.
 author: maggiesMSFT
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f18ec650167b7872cb332bc9ccd606f7ea1f7500
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762160"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404608"
 ---
-#  <a name="import-and-open-sample-packs-for-power-bi"></a>Importer et ouvrir des packs d’exemples pour Power BI
+# <a name="explore-the-retail-analysis-sample"></a>Explorer l’échantillon Analyse de la vente au détail
 
 Ce didacticiel montre comment : 
-- Importer un pack de contenu d’exemple, l’ajouter au service Power BI et ouvrir son contenu. Un *pack de contenu* est un type d’exemple où le jeu de données est fourni avec un tableau de bord et un rapport. 
-- Ouvrir un fichier PBIX d’exemple dans Power BI Desktop.
+- Importez le pack de contenu de l’échantillon Analyse de la vente au détail, ajoutez-le au service Power BI et ouvrez le contenu. Un *pack de contenu* est un type d’exemple où le jeu de données est fourni avec un tableau de bord et un rapport. 
+- Ouvrez le fichier .pbix de l’échantillon Analyse de la vente au détail dans Power BI Desktop.
 
 Si vous souhaitez plus d’informations générales, consultez l’article [Exemples de jeux de données pour Power Bi](sample-datasets.md). Celui-ci présente ce qu’il vous faut savoir sur les exemples : comment les obtenir, où les enregistrer, comment les utiliser, ainsi que certains récits que les exemples peuvent illustrer. 
 
 ## <a name="prerequisites"></a>Prérequis
-Les exemples sont disponibles pour le service Power BI et pour Power BI Desktop. Pour la suite, nous allons utiliser l’exemple Analyse de la vente au détail.
+Les exemples sont disponibles pour le service Power BI et pour Power BI Desktop. Nous utilisons l’échantillon Analyse de la vente au détail si vous souhaitez vous y référer.
 
 Le pack de contenu de l’exemple *Analyse de la vente au détail* utilisé dans ce didacticiel comprend un tableau de bord, un rapport et un jeu de données.
 Pour vous familiariser avec ce pack de contenu et son scénario, consultez l’article [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) (Exemple Analyse de la vente au détail : visite guidée) avant de commencer.
 
-## <a name="samples-in-the-power-bi-service"></a>Exemples dans le service Power BI
+## <a name="import-the-sample-in-the-power-bi-service"></a>Importez l’échantillon dans le service Power BI
 
 1. Ouvrez le service Power BI (app.powerbi.com), connectez-vous et ouvrez l’espace de travail où vous souhaitez enregistrer l’exemple. 
 
@@ -94,8 +94,8 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
      
     ![rapport Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-in-power-bi-desktop"></a>Exemples dans Power BI Desktop 
-À la première ouverture du fichier .pbix d’exemple dans Power BI Desktop, la vue Rapport s’affiche. Elle permet d’explorer, de créer et de modifier les pages de rapport souhaitées avec des visualisations. La vue Rapport offre pratiquement la même expérience de conception que le Mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer des visualisations et effectuer des opérations comme copier-coller, fusionner, etc. 
+## <a name="download-the-sample-in-power-bi-desktop"></a>Télécharger l’échantillon dans Power BI Desktop 
+À la première ouverture du fichier .pbix d’exemple dans Power BI Desktop, la vue Rapport s’affiche. Elle permet d’explorer, de créer et de modifier les pages de rapport souhaitées avec des visualisations. La vue Rapport offre pratiquement la même expérience de conception que le mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer des visualisations et effectuer des opérations comme copier-coller, fusionner, etc. 
 
 Contrairement à la modification d’un rapport dans le service Power BI, dans Power BI Desktop, vous pouvez également utiliser vos requêtes et modéliser vos données pour obtenir les meilleures analyses possibles dans les rapports. Vous pouvez ensuite enregistrer votre fichier Power BI Desktop à l’emplacement de votre choix (lecteur local ou cloud).
 
