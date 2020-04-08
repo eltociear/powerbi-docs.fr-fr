@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 1db56c2844d217bf6bff633609893e5a97a6dae5
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 91fc7e9e3664f21d50b475f316a9a6c64875fab4
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114887"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802122"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -39,10 +39,11 @@ Toutes les autres fonctionnalités des rapports Power BI continuent de fonction
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtrer la page de rapport sur un téléphone
 Si des filtres ont été définis dans un rapport optimisé pour les téléphones, lorsque vous affichez le rapport sur un téléphone, vous pouvez utiliser ces filtres. Le rapport s’ouvre sur votre téléphone et montre les valeurs qui sont filtrées dans le rapport sur le web. Un message s’affiche indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
 
-1. Appuyez sur l’icône de filtre ![Icône de filtre de téléphone](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) en bas de la page. 
+1. Appuyez sur l’icône de filtre ![Icône de filtre de téléphone](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) en bas de la page.
+
 2. Pour voir les résultats qui vous intéressent, utilisez le filtrage de base ou avancé.
    
-    ![Filtre avancé de rapport sur téléphone Power BI](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
+    ![Filtre avancé de rapport sur téléphone Power BI](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
 
 ## <a name="cross-highlight-visuals"></a>Sélection croisée de visuels
 La sélection croisée de visuels en mode portrait fonctionne de la même façon que dans le service Power BI, et que sur les téléphones en mode paysage : Lorsque vous sélectionnez des données dans un visuel, cela met en évidence les données associées dans les autres visuels sur cette page.

@@ -9,18 +9,16 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5ef6068135e8adcbfd242ca4a6491396101d214e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78923008"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621523"
 ---
 # <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
 
  Power BI Report Builder est un outil qui permet de créer des rapports paginés.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
-
-Essayez le [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Vous préférez apprendre à partir de vidéos ? Consultez la série de vidéos sur les rapports paginés de Power BI sur YouTube, par le directeur principal du programme Power BI, Chris Finlan.
 
@@ -30,13 +28,13 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
 
 ![Rapport paginé dans le service Power BI](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-##  <a name="JumpStartReptCreation"></a> Commencer rapidement à créer des rapports  
+##  <a name="jump-start-report-creation"></a><a name="JumpStartReptCreation"></a> Commencer rapidement à créer des rapports  
  
 -   **Commencez avec l’Assistant Tableau, Matrice ou Graphique**. Créez une connexion à une source de données, faites un glisser-déposer de champs pour créer une requête de jeu de données, sélectionnez une disposition et un style, et personnalisez votre rapport.  
   
 -   **Commencez avec l’Assistant Carte** pour créer des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. (ESRI). Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
 
-##  <a name="DesignRept"></a> Créer votre rapport  
+##  <a name="design-your-report"></a><a name="DesignRept"></a> Créer votre rapport  
   
 -   **Créez des rapports paginés avec les dispositions de rapport Tableau, Matrice, Graphique et Forme libre.** Créez des rapports Tableau pour les données en colonnes, des rapports Matrice (rapports d’analyse croisée ou tableaux croisés dynamiques) pour les données totalisées, des rapports Graphique pour les données graphiques et des rapports Forme libre pour tout le reste. Les rapports peuvent incorporer d’autres rapports et graphiques, ainsi que des listes, du graphisme et des commandes pour les applications web dynamiques.  
   
@@ -52,7 +50,7 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
   
 -   **Incorporez ou référencez des images** et d’autres ressources, y compris du contenu externe.  
   
-##  <a name="ManageRpt"></a> Gérer votre rapport  
+##  <a name="manage-your-report"></a><a name="ManageRpt"></a> Gérer votre rapport  
   
 -   **Enregistrez la définition du rapport** sur votre ordinateur ou le serveur de rapports, où vous pouvez la gérer et la partager.  
   
@@ -63,5 +61,4 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
-- Essayez le [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Regardez la [série de vidéos sur les rapports paginés de Power BI](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) sur YouTube, par le directeur principal du programme Power BI, Chris Finlan
