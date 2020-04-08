@@ -60,6 +60,8 @@
               href: mobile-apps-view-phone-report.md
             - name: Afficher des rapports locaux dans les applications mobiles
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: 'Protéger avec Face ID, Touch ID, un code secret ou Fingerprint ID'
+              href: mobile-native-secure-access.md
             - name: Accéder au contenu depuis une organisation externe (B2B)
               href: mobile-apps-b2b.md
             - name: "Scanner un code QR Power\_BI à partir de votre téléphone"
@@ -76,8 +78,6 @@
           items:
             - name: Prise en main de l’application iOS
               href: mobile-iphone-app-get-started.md
-            - name: 'Protéger avec Face ID, Touch ID ou un code secret'
-              href: mobile-ios-native-secure-access.md
             - name: Questions et réponses – Analyste virtuel dans des applications mobiles iOS
               href: mobile-apps-ios-qna.md
             - name: Intégration des applications mobiles Power BI aux raccourcis Siri
@@ -90,6 +90,10 @@
           items:
             - name: Prise en main de l’application Android
               href: mobile-android-app-get-started.md
+            - name: Utiliser les raccourcis d’application Android
+              href: mobile-app-quick-access-shortcuts.md
+            - name: Rechercher et accéder à du contenu avec Google Search
+              href: mobile-app-find-access-google-search.md
             - name: Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé »
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: Correction de l’erreur « Mise à jour requise de Android System Webview »
