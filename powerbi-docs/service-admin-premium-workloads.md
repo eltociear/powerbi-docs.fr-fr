@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329646"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979911"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -65,7 +65,7 @@ La charge de travail des jeux de données est activée par défaut et ne peut pa
 | **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les jeux de données peuvent utiliser dans une capacité. |
 | **Point de terminaison XMLA** | Spécifie que les connexions à partir d’applications clientes respectent l’appartenance au groupe de sécurité définie au niveau de l’espace de travail et au niveau de l’application. Pour plus d’informations, consultez [Se connecter à des jeux de données avec des applications et des outils clients](service-premium-connect-tools.md). |
 | **Nombre maximal de lignes intermédiaires** | Nombre maximal de lignes intermédiaires retournées par DirectQuery. La valeur par défaut est 1000000 et la plage autorisée est comprise entre 100000 et 2147483647. |
-| **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est définie par la référence SKU et la plage autorisée est comprise entre 0,1 et 10 Go. |
+| **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est 0 (ce qui correspond à la limite la plus élevée définie par la référence SKU). La plage autorisée est comprise entre 0 et la taille limite de la capacité. |
 | **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. |
 | **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible dans la charge de travail qui peut être utilisé pour exécuter une requête MDX ou DAX. La valeur par défaut est 0, ce qui entraîne l’application de la limite de mémoire de requête automatique propre à la référence SKU. |
 | **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. |
@@ -203,6 +203,9 @@ Les charges de travail peuvent être activées et attribuées à une capacité �
 ## <a name="monitoring-workloads"></a>Surveillance des charges de travail
 
 L’[application Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md) fournit un jeu de données, des flux de données et des métriques de rapports paginés afin de surveiller les charges de travail activées pour vos capacités. 
+
+> [!IMPORTANT]
+> Si votre capacité Power BI Premium subit une utilisation intensive des ressources entraînant des problèmes de performances ou de fiabilité, vous pouvez recevoir des e-mails de notification pour identifier et résoudre le problème. Pour plus d’informations, consultez les [notifications de capacité et de fiabilité](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

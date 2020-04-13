@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114839"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979819"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Créer et utiliser des visuels R dans Power BI
 Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../desktop-r-visuals.md).
@@ -93,7 +93,8 @@ Les éléments visuels R du service Power BI ont quelques limitations :
 * Les éléments visuels R sont actualisés lors de la mise à jour, du filtrage et de la mise en surbrillance des données. Toutefois, l’image elle-même n’est pas interactive et ne prend pas en charge les info-bulles.
 * Les éléments visuels R répondent à la mise en surbrillance d’autres éléments visuels, mais vous ne pouvez pas cliquer sur des éléments dans l’élément visuel R pour appliquer un filtre croisé à d’autres éléments.
 * Les éléments visuels R ne sont pas actuellement pris en charge pour le type de données *Time*. Utilisez plutôt Date/heure.
-* Les éléments visuels R ne s’affichent pas lorsque vous utilisez **Publier sur le web**.
+* Les visuels R ne s’affichent pas lorsque vous utilisez **Publier sur le web**.
+* Les visuels R ne prennent pas en charge le renommage des colonnes d’entrée. Les colonnes sont référencées par leur nom d’origine durant l’exécution du script.
 * Les éléments visuels R ne s’impriment pas pour le moment lors de l’impression de tableaux de bord et rapports.
 * Les éléments visuels R ne sont actuellement pas pris en charge dans le mode DirectQuery d’Analysis Services.
 * Les visuels R ont la possibilité de convertir des étiquettes de texte en éléments graphiques. Cette opération dans le service Power BI demande d’effectuer l’étape supplémentaire suivante :

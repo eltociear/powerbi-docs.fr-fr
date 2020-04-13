@@ -2,18 +2,17 @@
 title: Paramètres de configuration de l’application Power BI
 description: Comment personnaliser le comportement de Power BI à l’aide d’un outil MDM
 author: paulinbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/05/2020
 ms.author: painbar
-ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205547"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802023"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurer à distance l’application Power BI à l’aide d’un outil MDM
 
@@ -22,7 +21,7 @@ L’application Power BI Mobile pour iOS et Android prend en charge des paramè
 L’application Power BI Mobile pour prend en charge les scénarios de configuration suivants :
 
 * Configuration du serveur de rapports (iOS et Android)
-* Paramètres de protection des données (iOS)
+* Paramètres de protection des données (iOS et Android)
 * Paramètres d’interaction (iOS et Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Configuration du serveur de rapports (iOS et Android)
@@ -36,13 +35,16 @@ L’application Power BI pour iOS et Android permet aux administrateurs d’env
 | com.microsoft.powerbi.mobile.ServerDisplayName | Chaîne | [facultatif]<br><br>La valeur par défaut est « Report server »<br><br>Nom convivial utilisé dans l’application pour représenter le serveur. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Booléen | [facultatif]<br><br>La valeur par défaut est True. Quand la valeur est True, cela remplace la définition de serveur de rapports déjà présente sur l’appareil mobile. Les serveurs existants qui sont déjà configurés sont supprimés. Override défini sur True empêche également l’utilisateur de supprimer cette configuration.<br><br>La valeur False ajoute les valeurs envoyées (push), en conservant les paramètres existants. Si la même URL de serveur est déjà configurée dans l’application mobile, l’application laisse la configuration en l’état. L’application ne demande pas à l’utilisateur de se réauthentifier auprès du même serveur. |
 
-## <a name="data-protection-settings-ios"></a>Paramètres de protection des données (iOS)
+## <a name="data-protection-settings-ios-and-android"></a>Paramètres de protection des données (iOS et Android)
 
-L’application Power BI pour iOS permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code pour accéder à l’application Power BI.
+L’application mobile Power BI pour iOS et Android permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Pour iOS, vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code secret pour accéder à l’application mobile Power BI. Pour Android, vous pouvez forcer les utilisateurs à utiliser l’authentification biométrique (Fingerprint ID).
 
 | Key | Type | Description |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booléen | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID, peut être nécessaire pour accéder à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booléen | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID (iOS) ou Fingerprint ID (Android), peut être rendue obligatoire pour que les utilisateurs accèdent à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
+
+>[!NOTE]
+>Les paramètres de protection des données seront appliqués uniquement aux appareils Android qui prennent en charge l’authentification biométrique.
 
 ## <a name="interaction-settings-ios-and-android"></a>Paramètres d’interaction (iOS et Android)
 

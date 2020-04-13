@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75217806"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802046"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scanner un code-barres avec votre appareil à partir de l’application mobile Power BI
 Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
@@ -21,9 +21,9 @@ Scannez des codes-barres dans le monde réel pour accéder directement à des in
 
 S’applique à :
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Téléphone](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (téléphone, tablette) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPad](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Téléphone Android](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Tablette Android](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhone |iPad |Téléphones Android |Tablettes Android |
 
 Supposons qu’un collègue ait [marqué un champ de code-barres dans un rapport Power BI Desktop](../../desktop-mobile-barcodes.md) et partagé le rapport avec vous. 
 
@@ -44,7 +44,7 @@ Quand vous scannez un code-barres de produit avec le scanner de l’application 
 Quand vous consultez un rapport filtré selon un code-barres sur votre appareil, vous pouvez filtrer ce rapport en fonction d’un autre code-barres.
 
 * Si l’icône de code-barres contient un filtre ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), cela signifie que le filtre est actif et que le rapport est déjà filtré selon un code-barres. 
-* Si l’icône de code-barres ne contient pas de filtre ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), cela signifie que le filtre est inactif et que le rapport n’a pas été filtré selon un code-barres. 
+* Si l’icône ne contient pas de filtre ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), cela signifie que le filtre est inactif et que le rapport n’a pas été filtré selon un code-barres. 
 
 Dans ces deux cas, appuyez sur l’icône pour ouvrir un petit menu avec un scanner flottant.
 
@@ -58,8 +58,8 @@ Les messages suivants peuvent s’afficher quand vous scannez le code-barres d�
 ### <a name="couldnt-filter-report"></a>« Impossible de filtrer le rapport... »
 Le rapport à filtrer est basé sur un modèle de données qui ne comprend pas cette valeur de code-barres. Par exemple, le produit « eau minérale » n’est pas inclus dans le rapport.  
 
-### <a name="allsome-of-the-visuals-in-the-report-dont-contain-any-value"></a>Tous/certains éléments visuels du rapport ne contiennent aucune valeur
-La valeur de code-barres que vous avez scannée existe dans votre modèle, mais tous/certains éléments visuels de votre rapport ne contiennent pas cette valeur et, par conséquent, le filtrage va renvoyer un état vide. Essayez de consulter d’autres pages du rapport ou modifiez vos rapports dans Power BI Desktop afin qu’ils contiennent cette valeur. 
+### <a name="allsome-of-the-visuals-in-the-report-dont-contain-any-value"></a>Tous les visuels du rapport ou une partie d’entre eux ne contiennent aucune valeur
+La valeur de code-barres que vous avez scannée existe dans votre modèle, mais tous les visuels de votre rapport ou une partie d’entre eux ne contiennent pas cette valeur et, par conséquent, le filtrage va renvoyer un état vide. Essayez de consulter d’autres pages du rapport ou modifiez vos rapports dans Power BI Desktop afin qu’ils contiennent cette valeur. 
 
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>« Apparemment, vous n’avez aucun rapport pouvant être filtré par code-barres. »
 Cela signifie que vous n’avez aucun rapport prenant en charge les codes-barres. Le scanner de codes-barres peut filtrer uniquement les rapports qui possèdent une colonne marquée **Code-barres**.  

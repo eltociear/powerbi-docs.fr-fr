@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/03/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 72c285fd57af21fcb3d1a4568a5ff2e83016072f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609833"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979865"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Créer des visuels Power BI avec Python
 
@@ -155,9 +155,9 @@ Quand vous sélectionnez le bouton **Exécuter** le script, le tracé à barres 
 > **Sécurité des scripts Python :** Les éléments visuels Python sont créés à partir de scripts Python, qui peuvent contenir du code qui présente des risques pour la sécurité ou la confidentialité. Quand un utilisateur tente de voir ou d’utiliser un visuel Python pour la première fois, un message d’avertissement de sécurité lui est présenté. Activez les visuels Python seulement si vous faites confiance à l’auteur et à la source ou après avoir examiné et compris le script Python.
 >  
 
-## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Informations supplémentaires sur le tracé avec Matprolib, Pandas et Python
+## <a name="more-information-about-plotting-with-matplotlib-pandas-and-python"></a>Informations supplémentaires sur le traçage avec Matplotlib, Pandas et Python
 
-Ce tutoriel est conçu pour vous aider à créer des visuels avec Python dans Power BI Desktop. Il aborde rapidement les nombreuses options et fonctionnalités permettant de créer des rapports visuels à l’aide de Python, Pandas et la bibliothèque Matprolib. De nombreuses informations supplémentaires sont disponibles, ainsi que des liens pour vous aider à bien démarrer.
+Ce tutoriel est conçu pour vous aider à créer des visuels avec Python dans Power BI Desktop. Il aborde rapidement les nombreuses options et fonctionnalités permettant de créer des rapports visuels à l’aide de Python, Pandas et la bibliothèque Matplotlib. De nombreuses informations supplémentaires sont disponibles, ainsi que des liens pour vous aider à bien démarrer.
 
 - Documentation du site web [Matplotlib](https://matplotlib.org/). 
 - [Tutoriel Matplotlib : Guide de base pour utiliser Matplotlib avec Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
@@ -177,6 +177,7 @@ Les visuels Python dans Power BI Desktop présentent quelques limitations :
 - Les visuels Python sont actualisés lors de la mise à jour, du filtrage et de la sélection des données. Toutefois, l’image elle-même n’est pas interactive et ne peut pas être la source du filtrage croisé.
 - Les visuels Python répondent à la sélection d’autres visuels, mais vous ne pouvez pas cliquer sur des éléments dans le visuel Python pour appliquer un filtre croisé à d’autres éléments.
 - Seuls les tracés représentés sur l’écran Python par défaut s’affichent correctement sur le canevas. Évitez d’utiliser explicitement un autre écran Python.
+- Les visuels Python ne prennent pas en charge le renommage des colonnes d’entrée. Les colonnes sont référencées par leur nom d’origine durant l’exécution du script.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

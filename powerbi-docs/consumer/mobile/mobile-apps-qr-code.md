@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: d28596aae776d9a0087895cae38fc2e8848297b6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218933"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802069"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :
 
-| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Téléphone Android](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Tablette Android](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPad](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Téléphone Android](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Tablette Android](././media/mobile-apps-qr-code/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone |Téléphones Android |Tablettes Android |
+|iPhone |iPad |Téléphones Android |Tablettes Android |
 
 Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations connexes en matière de décisionnel. Aucune navigation ni recherche n’est nécessaire.
 

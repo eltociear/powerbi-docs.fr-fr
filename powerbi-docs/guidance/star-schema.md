@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133255"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751608"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
@@ -188,7 +188,7 @@ Dans le modèle Power BI, il peut être approprié d’ajouter la colonne des nu
 
 ![Exemple de dimension de fait](media/star-schema/degenerate-dimension.png)
 
-Pour plus d’informations, consultez l’[Aide sur les relations un-à-un (dégénérer les dimensions)](relationships-one-to-one.md#degenerate-dimensions).
+Toutefois, si la table des ventes des revendeurs Adventure Works contient des colonnes de numéro de commande _et_ de numéro de ligne de commande qui sont requises pour le filtrage, une table de dimension de fait constitue un bon choix. Pour plus d’informations, consultez l’[Aide sur les relations un-à-un (dégénérer les dimensions)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## <a name="factless-fact-tables"></a>Tables de faits sans faits
 
@@ -196,7 +196,7 @@ Une **table de faits sans faits** n’inclut aucune colonne de mesure. Elle cont
 
 Une table de faits sans faits peut stocker les observations définies par les clés de dimension. Par exemple, à une date et une heure particulières, un client particulier s’est connecté à votre site web. Vous pouvez définir une mesure pour compter les lignes de la table de faits sans faits afin d’analyser à quel moment les clients se sont connectés et leur nombre.
 
-Une utilisation plus attrayante d’une table de faits sans faits consiste à stocker les relations entre les dimensions, approche de conception de modèle Power BI que nous vous recommandons pour définir les relations plusieurs-à-plusieurs. Dans une conception de relation de dimension plusieurs-à-plusieurs, la table de faits sans faits est appelée _table de pontage_.
+Une utilisation plus attrayante d’une table de faits sans faits consiste à stocker les relations entre les dimensions, approche de conception de modèle Power BI que nous vous recommandons pour définir les relations plusieurs-à-plusieurs. Dans une [conception de relation de dimension plusieurs-à-plusieurs](relationships-many-to-many.md#relate-many-to-many-dimensions), la table de faits sans faits est appelée _table de pontage_.
 
 Par exemple, considérez que les vendeurs peuvent être attribués à une _ou plusieurs_ régions de vente. La table de pontage est conçue comme une table de faits sans faits composée de deux colonnes : clé de vendeur et clé de région. Les valeurs dupliquées peuvent être stockées dans les deux colonnes.
 

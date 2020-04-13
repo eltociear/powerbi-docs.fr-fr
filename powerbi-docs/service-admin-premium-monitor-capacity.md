@@ -7,20 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698874"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813072"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
 La supervision de vos capacités est essentielle pour prendre des décisions avisées sur la meilleure utilisation de vos ressources de capacité Premium. Vous pouvez superviser les capacités dans le portail d’administration ou avec l’application **Métriques de capacité Power BI Premium**. Cet article décrit l’utilisation de l’application Métriques de capacité Premium. L’application fournit les informations les plus détaillées sur les performances de vos capacités. Pour une vue d’ensemble générale des métriques de l’utilisation moyenne sur les sept derniers jours, vous pouvez utiliser le portail d’administration. Pour plus d’informations sur la supervision dans le portail, consultez [Superviser les capacités Premium dans le portail d’administration](service-admin-premium-monitor-portal.md).
 
 L’application est mise à jour régulièrement avec de nouvelles fonctionnalités. Vérifiez que vous exécutez la version la plus récente. Si vous avez une version antérieure de l’application déjà installée, il est préférable de la supprimer de vos applications, puis d’appuyer sur Ctrl+F5 pour l’actualiser.
+
+> [!IMPORTANT]
+> Si votre capacité Power BI Premium subit une utilisation intensive des ressources entraînant des problèmes de performances ou de fiabilité, vous pouvez recevoir des e-mails de notification pour identifier et résoudre le problème. Il peut s’agir d’un moyen simplifié de dépanner les capacités surchargées. Pour plus d’informations, consultez les [notifications de capacité et de fiabilité](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="install-the-app"></a>Installer l’application
 
@@ -60,7 +63,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="top"></a>Haut
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Version | Version de l’application. | 
 | Capacités | Nombre de capacités dont vous êtes administrateur | 
@@ -69,7 +72,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="system-summary"></a>Résumé du système
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Capacité d’utilisation maximale de l’UC | Capacité avec le nombre maximal de fois où l’UC a dépassé 80 % des seuils dans les sept derniers jours. |
 | Nombre maximal d’utilisations de l’UC | Nombre de fois où la capacité nommée a dépassé 80 % des seuils au cours des sept derniers jours. | 
@@ -79,7 +82,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="dataset-summary"></a>Résumé du jeu de données
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Jeux de données | Nombre total de jeux de données sur tous les espaces de travail dans vos capacités.|
 | Taille moyenne des jeux de données (Mo) | Taille moyenne des jeux de données sur tous les espaces de travail dans vos capacités.|  
@@ -106,7 +109,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="dataflow-summary"></a>Résumé du flux de données
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Dataflows |  Nombre total de flux de données sur tous les espaces de travail de vos capacités.|
 | Total des actualisations | Nombre total d’actualisations au cours des sept derniers jours.|  
@@ -120,7 +123,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="paginated-report-summary"></a>Résumé du rapport paginé
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Rapports paginés |  Nombre total de rapports paginés sur tous les espaces de travail dans vos capacités. |
 | Nombre total de vues | Nombre total de fois où tous les rapports ont été consultés par les utilisateurs. | 
@@ -134,7 +137,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 #### <a name="ai-summary"></a>Résumé de l’intelligence artificielle
 
-| Métrique | Description |
+| Metric | Description |
 | --- | --- |
 | Exécution de la fonction d’intelligence artificielle | Nombre total d’exécutions au cours des sept derniers jours. |
 | Fiabilité de l’exécution de la fonction d’intelligence artificielle (%) | Nombre d’exécutions réussies divisé par le nombre total d’exécutions au cours des sept derniers jours. |

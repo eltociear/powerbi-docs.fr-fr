@@ -7,21 +7,21 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74163754"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621629"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Alertes de données dans le service Power BI
 
 Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez.
 
-Vous pouvez définir des alertes sur les vignettes si vous disposez d’une licence Power BI Pro. Vous pouvez également définir des alertes si quelqu’un partage un tableau de bord qui se trouve dans une [capacité Premium](service-premium-what-is.md). Des alertes ne peuvent être définies que sur des vignettes épinglées à partir de visuels de rapport, et uniquement sur des jauges, des indicateurs de performance clés et des cartes. Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.
+Vous pouvez définir des alertes sur des vignettes dans Mon espace de travail. Vous pouvez également définir des alertes si quelqu’un partage un tableau de bord qui se trouve dans une [capacité Premium](service-premium-what-is.md). Si vous disposez d’une licence Power BI Pro, vous pouvez également définir des alertes sur des vignettes dans un autre espace de travail. Des alertes ne peuvent être définies que sur des vignettes épinglées à partir de visuels de rapport, et uniquement sur des jauges, des indicateurs de performance clés et des cartes. Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.
 
 Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Même le propriétaire du tableau de bord ne peut pas voir les alertes que vous définissez sur votre vue de son tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Vous pouvez même automatiser et intégrer des alertes avec Power Automate. Vous pouvez essayer vous-même dans cet article : [Power Automate et Power BI](service-flow-integration.md).
 

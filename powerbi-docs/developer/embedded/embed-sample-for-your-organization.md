@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 9bbb289c3fc87587d78de40d375ee71e20c16032
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 332b9d500aa45ed25199630422e89f890a81f6a3
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493546"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621647"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -172,7 +172,7 @@ Remplissez les informations **AADAuthorityUrl** avec l’URL qui vous permet d�
 
 Pour l’incorporation avec votre locataire organisationnel, utilisez l’URL *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-Pour l’incorporation avec un invité, utilisez l’URL *https://login.microsoftonline.com/report-owner-tenant-id* , où vous ajoutez l’ID de locataire du propriétaire du rapport à la place de *report-owner-tenant-id*.
+Pour l’incorporation avec un invité, utilisez l’URL `https://login.microsoftonline.com/report-owner-tenant-id`, où vous ajoutez l’ID de locataire du propriétaire du rapport à la place de *report-owner-tenant-id*.
 
 ### <a name="run-the-application"></a>Exécuter l’application
 
