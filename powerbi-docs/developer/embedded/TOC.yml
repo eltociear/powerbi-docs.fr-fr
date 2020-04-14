@@ -48,6 +48,8 @@
           href: embed-from-apps.md
         - name: Exporter le rapport vers un fichier
           href: export-to.md
+        - name: Exporter un rapport paginé dans un fichier
+          href: export-paginated-report.md
         - name: Installation automatique des applications
           href: embed-auto-install-app.md
         - name: Créer un client Azure Active Directory

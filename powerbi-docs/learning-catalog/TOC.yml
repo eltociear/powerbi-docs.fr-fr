@@ -1,0 +1,21 @@
+- name: Catalogue de formations
+  href: index.yml
+  items:
+    - name: Décisionnaires métier
+      href: learning-catalog-bdm.md
+    - name: Consommateurs
+      href: learning-catalog-consumer.md
+    - name: Créateurs de rapports
+      href: learning-catalog-report-creator.md
+    - name: Analystes de données
+      href: learning-catalog-data-analyst.md
+    - name: Administrateurs
+      href: learning-catalog-administrator.md
+    - name: Développeurs
+      href: learning-catalog-developer.md
+    - name: Rôles des partenaires en prévente
+      href: learning-catalog-presales.md
+    - name: Consultants fonctionnels
+      href: learning-catalog-functional-consultant.md
+    - name: Architectes de solutions
+      href: learning-catalog-solution-architect.md
