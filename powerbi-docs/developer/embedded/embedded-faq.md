@@ -96,7 +96,7 @@ L’utilisateur peut résoudre ce problème en appelant [l’API refreshUserPerm
 
 La région de votre locataire PBI est accessible sur le portail PBI.
 
-[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > À propos de Power BI
+`https://app.powerbi.com/` > ? > À propos de Power BI
 
 ![À propos de Power BI](media/embedded-faq/about-01.png)
 ![Région du locataire](media/embedded-faq/tenant-location-01.png)
