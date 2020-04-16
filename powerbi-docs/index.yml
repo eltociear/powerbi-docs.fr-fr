@@ -13,12 +13,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/31/2020
-  ms.openlocfilehash: ac6ecb181cd5b06e54ab611976532638d43359f6
-  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.openlocfilehash: 0ad39302737284ecbde50a8810b740d68706c809
+  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/01/2020
-  ms.locfileid: "80487711"
+  ms.lasthandoff: 04/16/2020
+  ms.locfileid: "81439387"
 highlightedContent:
   items:
   - title: Créer un rapport COVID-19 avec les données des États-Unis
@@ -137,7 +137,7 @@ conceptualContent:
     links:
     - url: desktop-report-themes.md
       itemType: concept
-      text: Thèmes de rapport
+      text: Report themes
     - url: paginated-reports/paginated-reports-report-builder-power-bi.md
       itemType: concept
       text: Que sont les rapports paginés ?
@@ -217,19 +217,19 @@ conceptualContent:
     footerLink:
       url: guidance/index.yml
       text: Afficher plus
-  - title: Learn
+  - title: Catalogue de formations
     links:
-    - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+    - url: learning-catalog/learning-catalog-bdm.md
       itemType: learn
-      text: Découvrir ce que Power BI peut faire pour vous
-    - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+      text: Décisionnaires métier
+    - url: guided-learning/introductiontodax.yml?tutorial-step=1
       itemType: learn
-      text: Analyser des données
-    - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+      text: Bien démarrer avec DAX
+    - url: learning-catalog/learning-catalog-solution-architect.md
       itemType: learn
-      text: Bien démarrer avec la génération
+      text: Architectes de solutions
     footerLink:
-      url: guided-learning/index.yml
+      url: learning-catalog/index.yml
       text: Afficher plus
 additionalContent:
   sections:

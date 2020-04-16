@@ -16,14 +16,24 @@
       items:
         - name: "Rôle d’administration dans Microsoft\_365"
           href: ../service-admin-role.md
+        - name: Licences pour votre organisation
+          href: ../service-admin-licensing-organization.md
+        - name: Power BI pour le gouvernement américain
+          items:
+            - name: Power BI pour le gouvernement américain
+              href: ../service-govus-overview.md
+            - name: Inscrire une organisation du gouvernement américain
+              href: ../service-govus-signup.md
+        - name: Power BI dans des clouds régionaux
+          items:
+            - name: "Migrer vers les régions allemande «\_Go Local\_»"
+              href: service-admin-migrate-data-germany.md
+            - name: Questions fréquentes (FAQ) pour les clients du cloud allemand
+              href: ../service-govde-faq.md
         - name: Foire aux questions (FAQ)
           href: ../service-admin-faq.md
         - name: Questions fréquentes (FAQ) sur la haute disponibilité et le basculement
           href: ../service-admin-failover.md
-        - name: "Migrer vers les régions allemande «\_Go Local\_»"
-          href: service-admin-migrate-data-germany.md
-        - name: Questions fréquentes (FAQ) pour les clients du cloud allemand
-          href: ../service-govde-faq.md
         - name: Power BI Premium
           items:
             - name: Gérer les capacités Premium
@@ -38,14 +48,14 @@
       items:
         - name: Licences et inscription
           items:
-            - name: Licences pour votre organisation
-              href: ../service-admin-licensing-organization.md
+            - name: "Obtenir Power\_BI pour votre organisation"
+              href: service-admin-org-subscription.md
             - name: "Acheter Power\_BI Pro"
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Power BI pour le gouvernement américain
-              href: ../service-govus-overview.md
-            - name: Inscrire une organisation du gouvernement américain
-              href: ../service-govus-signup.md
+            - name: Désactiver l’inscription libre-service
+              href: service-admin-disable-self-service.md
+            - name: Afficher et gérer les licences utilisateur
+              href: service-admin-manage-licenses.md
             - name: "S’inscrire à un essai Microsoft\_365"
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: "Ajouter Power BI avec un partenaire Microsoft\_365"
