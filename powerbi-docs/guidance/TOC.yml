@@ -108,6 +108,8 @@
               href: gateway-onprem-sizing.md
             - name: Superviser les performances du rapport
               href: monitor-report-performance.md
+            - name: Résoudre les problèmes de performances de rapports
+              href: report-performance-troubleshoot.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
