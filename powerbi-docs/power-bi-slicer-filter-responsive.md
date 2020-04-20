@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877580"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006500"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Créer un segment réactif que vous pouvez redimensionner dans Power BI
 
-Les segments réactifs peuvent être redimensionnés de manière à s’ajuster à n’importe quel emplacement de votre rapport. Vous pouvez redimensionner les segments réactifs à la taille et la forme de votre choix (horizontal, carré, vertical). Les valeurs qu’ils contiennent sont réorganisées au fur et à mesure. Dans Power BI Desktop et dans le service Power BI, vous pouvez rendre réactifs des segments horizontaux et des segments date/plage. L’amélioration des zones tactiles des segments de date/plage permet de les modifier rapidement. Vous pouvez choisir la taille des segments réactifs. Ils se redimensionnent également de manière automatique sur les rapports du service Power BI ainsi que dans les applications mobiles Power BI. 
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
+
+Les segments réactifs peuvent être redimensionnés de manière à s’ajuster à n’importe quel emplacement de votre rapport. Vous pouvez redimensionner les segments réactifs à la taille et la forme de votre choix (horizontal, carré, vertical). Les valeurs qu’ils contiennent sont réorganisées au fur et à mesure. Dans Power BI Desktop et dans le service Power BI, vous pouvez rendre réactifs des segments horizontaux et des segments date/plage. L’amélioration des zones tactiles des segments de date/plage permet de les changer plus facilement du bout du doigt. Vous pouvez choisir la taille des segments réactifs. Ils se redimensionnent également de manière automatique sur les rapports du service Power BI ainsi que dans les applications mobiles Power BI. 
 
 ![Les segments réactifs peuvent prendre différentes formes](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer.gif)
 
@@ -26,7 +28,7 @@ Les segments réactifs peuvent être redimensionnés de manière à s’ajuster 
 
 Pour créer un segment dynamique, la première étape consiste à créer un segment de base. 
 
-1. Dans le volet **Visualisations**, sélectionnez l’icône ![Segment](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) **icône Segment**.
+1. Dans le volet **Visualisations**, sélectionnez l’icône ![Segment](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png)**icône Segment**.
 2. Faites glisser le champ sur lequel effectuer le filtrage vers la zone **Champ**.
 
     ![Ajouter un champ au segment](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
@@ -73,7 +75,7 @@ Consultez davantage d’informations sur la création de [rapports optimisés po
 Vous pouvez suivre la même procédure pour rendre un segment d’heure ou de plage réactif. Après avoir défini **Réactif** sur **Activé**, vous allez remarquer les modifications suivantes :
 
 - Les éléments visuels optimisent l’ordre des zones d’entrée en fonction de la taille autorisée sur le canevas. 
-- L’affichage des éléments de données est modifié de manière à optimiser l’utilisation du segment, en fonction de la taille qui lui est réservée sur le canevas. 
+- L’affichage des éléments de données est optimisé afin de faciliter l’utilisation du segment, en fonction de la taille qui lui est réservée sur le canevas. 
 - De nouvelles poignées rondes sur les curseurs permettent d’optimiser les interactions tactiles. 
 - Lorsqu’un élément visuel devient trop petit pour être utile, il se transforme en icône représentant le type d’élément visuel. Il suffit d’un double-clic pour l’ouvrir en mode focus et interagir avec lui. Vous réalisez ainsi un précieux gain de place sur la page de rapport, sans perdre la fonctionnalité.
 

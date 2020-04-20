@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
+ms.sourcegitcommit: a9ebab692c670192b62a31bfe99447908506251b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404177"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81122259"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 
@@ -96,6 +96,10 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 ### <a name="custom-security"></a>Sécurité personnalisée
 
 Power BI Desktop optimisé pour Power BI Report Server ne prend pas en charge la sécurité personnalisée. Si votre Power BI Report Server est configuré avec une extension de sécurité personnalisée, vous ne pouvez pas enregistrer un rapport Power BI à partir de Power BI Desktop (optimisé pour Power BI Report Server) sur l’instance Power BI Report Server. Vous devez enregistrer le fichier de rapport .pbix à partir de Power BI Desktop et le charger sur le site du portail Power BI Report Server.
+
+### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Enregistrement de rapports sur un serveur Power BI Report Server dans un autre domaine
+
+Quand vous enregistrez un rapport Power BI sur Power BI Report Server, vos informations d’identification Windows sont utilisées. L’enregistrement direct sur un serveur de rapports dans un domaine différent de celui de vos informations d’identification Windows n’est pas pris en charge. Vous pouvez utiliser à la place un navigateur web pour visualiser le serveur de rapports et charger manuellement le fichier à partir de votre machine.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop pour les versions antérieures de Power BI Report Server
 

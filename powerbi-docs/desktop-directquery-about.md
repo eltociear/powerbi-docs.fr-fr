@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 0f2d6bae607383eb8934b3f395add540c6754690
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076652"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006707"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -98,7 +98,7 @@ Le tableau suivant décrit les scénarios où une connexion avec DirectQuery peu
 
 | Limitation | Description |
 | --- | --- |
-| Les données changent fréquemment et des rapports en quasi temps réel sont nécessaires |Les modèles avec des données importées peuvent être actualisés au maximum une fois par heure. Si les données évoluent en permanence et qu’il est nécessaire que les rapports présentent les données les plus récentes, l’utilisation de l’importation avec une actualisation à intervalles réguliers peut ne pas répondre à ces besoins. Vous pouvez envoyer les données en streaming directement à Power BI, même s’il existe des limites aux volumes de données pris en charge en pareil cas. <br/> <br/> En revanche, l’utilisation de DirectQuery signifie que l’ouverture ou l’actualisation d’un rapport ou d’un tableau de bord affiche toujours les données les plus récentes dans la source. Par ailleurs, les vignettes de tableau de bord peuvent être mises à jour plus fréquemment (jusqu’à toutes les 15 minutes). |
+| Les données changent fréquemment et des rapports en quasi temps réel sont nécessaires |Les modèles avec des données importées peuvent être actualisés au maximum une fois par heure (plus fréquemment avec des abonnements Power BI Pro ou Power BI Premium). Si les données évoluent en permanence et qu’il est nécessaire que les rapports présentent les données les plus récentes, l’utilisation de l’importation avec une actualisation à intervalles réguliers peut ne pas répondre à ces besoins. Vous pouvez envoyer les données en streaming directement à Power BI, même s’il existe des limites aux volumes de données pris en charge en pareil cas. <br/> <br/> En revanche, l’utilisation de DirectQuery signifie que l’ouverture ou l’actualisation d’un rapport ou d’un tableau de bord affiche toujours les données les plus récentes dans la source. Par ailleurs, les vignettes de tableau de bord peuvent être mises à jour plus fréquemment (jusqu’à toutes les 15 minutes). |
 | Les données sont très volumineuses |Si les données sont très volumineuses, il est impossible de les importer toutes. À l’opposé, DirectQuery ne nécessite aucun transfert important de données, car celles-ci sont interrogées sur place. <br/> <br/> Toutefois, des données volumineuses peuvent également impliquer un ralentissement excessif des performances des requêtes portant sur cette source sous-jacente comme expliqué dans la section [Implications de l’utilisation de DirectQuery](#implications-of-using-directquery). Il n’est pas toujours nécessaire d’importer l’absolue totalité des données. Au lieu de cela, les données peuvent être pré-agrégées lors de l’importation. L’*Éditeur de requête* facilite précisément cette opération. À la limite, il serait possible d’importer exactement les données d’agrégation nécessaires pour chaque visuel. Si DirectQuery constitue l’approche la plus simple pour des données volumineuses, l’importation de données agrégées peut offrir une solution si la source de données sous-jacente est trop lente. |
 | Des règles de sécurité sont définies dans la source sous-jacente |Quand les données sont importées, Power BI se connecte à la source de données en utilisant les informations d’identification de l’utilisateur actif (extraites de Power BI Desktop) ou des informations d’identification définies dans le cadre de la configuration de l’actualisation planifiée (extraites du service Power BI). En cas de publication et de partage d’un tel rapport, veillez à le partager uniquement avec des utilisateurs autorisés à consulter les données concernées ou à définir une sécurité au niveau des lignes associée au jeu de données. <br/> <br/> Dans l’idéal, étant donné que DirectQuery interroge toujours la source sous-jacente, cette configuration permettrait d’appliquer tout type de sécurité à cette source sous-jacente. Toutefois, aujourd’hui, Power BI se connecte toujours à la source sous-jacente à l’aide des mêmes informations d’identification que celles utilisées pour l’importation. <br/> <br/> Tant que Power BI ne permet pas que l’identité du consommateur du rapport soit transmise directement à la source sous-jacente, DirectQuery n’offre aucun avantage concernant la sécurité de la source de données. |
 | Des restrictions de souveraineté des données s’appliquent |Certaines organisations adoptent des stratégies relatives à la souveraineté des données, en vertu desquelles les données ne peuvent pas quitter le site de l’organisation. Une solution basée sur l’importation occasionnerait clairement des problèmes. À l’opposé, avec DirectQuery, ces données restent dans la source sous-jacente. <br/> <br/> Toutefois, même avec DirectQuery, des caches de données au niveau du visuel sont conservés dans le service Power BI en raison de l’actualisation planifiée des vignettes. |

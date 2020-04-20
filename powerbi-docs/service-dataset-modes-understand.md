@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: be8716cebb091dafcc927b4bd1ecd0942ad88b47
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cd2086facbeb581a4418a3358a79cca0e80140ff
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79208054"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267339"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Modes des jeux de données dans le service Power BI
 
@@ -77,19 +77,10 @@ Les modèles DirectQuery présentent plusieurs avantages :
 - Des rapports en temps réel peuvent être développés en utilisant la fonction [Actualisation automatique de la page](desktop-automatic-page-refresh.md)
 - Les vignettes du tableau de bord, lorsqu'elles sont basées sur des modèles DirectQuery, peuvent être mises à jour automatiquement toutes les 15 minutes
 
-Cependant, les modèles DirectQuery présentent de nombreux inconvénients et limitations :
+Cependant, les modèles DirectQuery présentent certaines limitations :
 
-- Le modèle doit être basé sur une seule source de données prise en charge. C'est pourquoi toute intégration de données doit déjà être effectuée dans la source de données. Les sources de données prises en charge sont des systèmes relationnels et analytiques, avec prise en charge de nombreux magasins de données populaires.
-
-    > [!TIP]
-    > Plusieurs sources de données Microsoft sont prises en charge. Les sources de données Microsoft incluent SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database et Azure SQL Data Warehouse. Pour plus d’informations, consultez l'article [Sources de données prises en charge par Direct Query dans Power BI](desktop-directquery-data-sources.md).
-
-- Les performances peuvent être ralenties, ce qui peut avoir un impact négatif sur le service Power BI. Ce problème peut survenir car certaines requêtes sollicitent beaucoup le processeur pour le service Power BI. Cela peut également être dû au fait que la source de données n'est pas optimisée pour les requêtes envoyées par Power BI.
-- Les requêtes Power Query doivent pouvoir être pliées. Cette exigence signifie que la logique Power Query ne doit pas être trop complexe. De plus, la logique doit être limitée à l'utilisation d'expressions et de fonctions M qui peuvent être transposées à des requêtes natives comprises par la source de données.
-- Les formules DAX sont limitées à l'utilisation de fonctions qui peuvent être transposées à des requêtes natives comprises par la source de données. De plus, les tables calculées ou les fonctions DAX Time Intelligence ne sont pas prises en charge.
-- Les requêtes de modèle qui nécessitent la récupération de plus d'un million de lignes échoueront
-- Les rapports et les tableaux de bord comprenant plusieurs visuels peuvent afficher des résultats incohérents, surtout lorsque la source de données est volatile
-- Les fonctionnalités Q&A et Quick Insights ne sont pas prises en charge
+- Les formules DAX sont limitées à l'utilisation de fonctions qui peuvent être transposées à des requêtes natives comprises par la source de données. Les tables calculées ne sont pas prises en charge.
+- Les fonctionnalités « Questions et réponses » et « Quick Insights » ne sont pas prises en charge
 
 Du point de vue des ressources du service Power BI, les modèles DirectQuery nécessitent la configuration suivante :
 

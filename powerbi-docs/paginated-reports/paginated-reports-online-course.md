@@ -9,16 +9,16 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621489"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267592"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Cours en ligne : Rapports paginés Power BI en une journée
 
-Le cours en ligne **Rapports paginés Power BI en une journée** vous aidera en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI. Il comprend près de 4 heures 20 minutes de contenu affichable, disponible à la demande et gratuitement.
+Le cours en ligne **Rapports paginés Power BI en une journée** vous aidera en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI. Il comprend près de 4 heures 20 minutes de contenu affichable, disponible à la demande et gratuitement. Il existe également un [kit d’auto-apprentissage](#self-study-kit), que vous pouvez télécharger et utiliser pour effectuer huit ateliers pratiques.
 
 Plus précisément, le cours cible :
 
@@ -39,7 +39,7 @@ Plus précisément, le cours cible :
 
 Regardez la vidéo de bienvenue et de présentation pour commencer le cours.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## <a name="course-outline"></a>Plan du cours
 
@@ -79,9 +79,32 @@ Le [cours de 24 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Vidéo 23 : [Contenu de bonus : Évolution des rapports paginés](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Vidéo 24 : [Contenu de bonus : Réduction de la barrière à l’entrée](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## <a name="additional-content"></a>Contenu supplémentaire
+## <a name="self-study-kit"></a>Kit d’auto-apprentissage
 
-Nous publierons bientôt la présentation PowerPoint et les laboratoires pratiques sous la forme d’un kit d’apprentissage personnel. Revenez ultérieurement à cet article pour obtenir les liens de téléchargement.
+Vous pouvez télécharger et configurer un kit d’auto-apprentissage, qui est constitué du contenu de la présentation et de huit labos pratiques :
+
+1. Utilisez [ce lien](https://aka.ms/priad-ilt-student) pour télécharger le kit d’auto-apprentissage (.zip) localement sur votre PC.
+1. Ouvrez les propriétés du fichier et cochez « Débloquer » (Windows est susceptible de marquer le fichier comme étant potentiellement non approuvé).
+1. Extrayez le contenu du fichier dans un dossier de votre système de fichiers. Nous vous recommandons de créer un dossier qui sera facile à trouver, par exemple en le nommant **Formation**. Les documents du labo se réfèrent à cet emplacement sous le nom de **&lt;CourseFolder&gt;** .
+
+Une fois l’extraction effectuée, vous avez un dossier **PowerBIPRIAD**, dans lequel vous trouverez les dossiers suivants :
+
+- **Lab01A** (et tous les autres dossiers des labos). Les dossiers des labos contiennent le document du labo et ses ressources, qui peuvent inclure des ressources et des fichiers solution.
+- **MySolution** : Ce dossier stocke vos fichiers solution. Les instructions du labo vous indiquent quand les utiliser.
+- **Presentation** : Ce dossier contient le fichier de présentation du cours, qui est disponible sous forme de document PDF.
+
+### <a name="getting-started"></a>Prise en main
+
+Nous vous recommandons de d’abord suivre le cours en ligne. Vous pouvez vous reporter à la théorie de la présentation en ouvrant le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. La présentation comprend huit diapositives de labo, qui indiquent quand il est temps de mettre la théorie en pratique. Il comprend également de nombreux liens vers des ressources pour vous aider à trouver du contenu associé.
+
+Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Ce document vous explique comment vous connecter au service Power BI, télécharger un jeu de données, puis installer le [Générateur de rapports Power BI](report-builder-power-bi.md).
+
+> [!NOTE]
+> Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../service-self-service-signup-for-power-bi.md).
+>
+> Vous devez vous connecter à Power BI pour publier un fichier Power BI Desktop sur un espace de travail. La publication produit un jeu de données qui est utilisé comme source de données de rapport. Vous n’avez pas besoin d’une licence Power BI Pro ou d’un abonnement Power BI Premium pour utiliser un jeu de données comme source de données de rapport.
+>
+> Certaines tâches des labos impliquent cependant la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il est enregistré dans un espace de travail sur une [capacité dédiée](../service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, un lien vous est fourni à la place pour regarder une vidéo qui montre la publication de rapports.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

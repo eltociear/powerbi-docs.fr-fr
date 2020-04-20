@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979911"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267477"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -24,23 +24,13 @@ Cet article décrit comment activer et configurer des charges de travail pour le
 
 Les charges de travail de requête sont optimisées pour, et limitées par, les ressources déterminées par votre référence SKU de capacité Premium. Les capacités Premium prennent également en charge des charges de travail supplémentaires pouvant utiliser les ressources de votre capacité. Les valeurs de mémoire par défaut pour ces charges de travail dépendent des nœuds de capacité disponibles pour votre référence SKU. Les paramètres de mémoire maximale ne sont pas cumulés. La mémoire, à hauteur de la valeur maximale spécifiée, est allouée de façon dynamique pour l’IA et les dataflows, mais allouée de façon statique pour les rapports paginés.
 
-### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Références (SKU) Microsoft Office pour les scénarios SaaS (Software as a Service)
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Intelligence artificielle | 40 % par défaut ; 40 % minimum | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum | 20 % par défaut ; 2 % minimum |
-| Dataflows | N/A |20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum  |
-| Rapports paginés | N/A |N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| | | | | | |
-
-### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Références (SKU) Microsoft Azure pour les scénarios PaaS (Platform as a Service)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Intelligence artificielle | N/A  | 40 % par défaut ; 40 % minimum  | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum | 20 % par défaut ; 2 % minimum |
-| Dataflows         | 40 % par défaut ; 40 % minimum | 24 % par défaut ; 24 % minimum | 20 % par défaut ; 12 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum   |
-| Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| | | | | | |
+|                   | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| Intelligence artificielle                | Non pris en charge               | 40 % par défaut ; 40 % minimum  | 20 % par défaut ; 20 % minimum  | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum   |
+| Jeux de données          | 100 % par défaut ; 67 % minimum | 100 % par défaut ; 40 % minimum | 100 % par défaut ; 20 % minimum | 100 % par défaut ; 8 % minimum | 100 % par défaut ; 4 % minimum | 100 % par défaut ; 2 % minimum  |
+| Dataflows         | 40 % par défaut ; 40 % minimum  | 24 % par défaut ; 24 % minimum  | 20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum  | 20 % par défaut ; 2 % minimum   |
+| Rapports paginés | Non pris en charge               | Non pris en charge               | Non pris en charge               | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 2,5 % minimum |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## <a name="workload-settings"></a>Paramètres de charge de travail
 
@@ -83,9 +73,16 @@ Notez que ce paramètre s’applique uniquement aux requêtes DirectQuery, alors
 
 #### <a name="max-offline-dataset-size"></a>Taille max. du jeu de données hors connexion
 
-Utilisez ce paramètre pour empêcher les créateurs de rapports de publier un jeu de données volumineux qui peut avoir un impact négatif sur la capacité. Notez que Power BI ne peut pas déterminer la taille réelle de la mémoire tant que le jeu de données n’a pas été chargé en mémoire. Un jeu de données d’une taille hors connexion plus petite peut avoir une empreinte mémoire supérieure à un jeu de données d’une plus grande taille hors connexion.
+Utilisez ce paramètre pour empêcher les créateurs de rapports de publier un jeu de données volumineux qui peut avoir un impact négatif sur la capacité. Notez que Power BI ne peut pas déterminer la taille en mémoire réelle tant que le jeu de données n’a pas été chargé en mémoire. Un jeu de données d’une taille hors connexion plus petite peut avoir une empreinte mémoire plus grande qu’un jeu de données d’une taille hors connexion plus grande.
 
-Si vous avez un jeu de données plus grand que la taille que vous spécifiez pour ce paramètre, le jeu de données échoue à se charger quand un utilisateur tente d’y accéder.
+Si vous avez un jeu de données plus grand que la taille que vous spécifiez pour ce paramètre, le jeu de données échoue à se charger quand un utilisateur tente d’y accéder. Le chargement du jeu de données peut également échouer si la taille de ce dernier est supérieure à la mémoire maximale configurée pour la charge de travail des jeux de données.
+
+Pour préserver les performances du système, une limite stricte spécifique à la référence SKU pour la taille maximale du jeu de données hors connexion est appliquée, quelle que soit la valeur configurée. Cette limite stricte ne s’applique pas aux jeux de données Power BI qui sont optimisés pour les grandes tailles de données. Pour plus d’informations, consultez [Grands modèles dans Power BI Premium](service-premium-large-models.md).
+
+|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Limite stricte pour la taille maximale des jeux de données hors connexion | 3 Go     | 5 Go     | 6 Go     | 10 Go   | 10 Go   | 10 Go   |
+|                                           |          |          |          |         |         |         |
 
 #### <a name="max-result-row-set-count"></a>Nombre maximal de lignes de résultat
 
@@ -110,6 +107,7 @@ Le paramètre par défaut est 0, ce qui entraîne l’application de la limite d
 | Limite de mémoire de requête automatique | 1 Go     | 2 Go     | 2 Go     | 6 Go    | 6 Go    | 10 Go   |
 |                              |          |          |          |         |         |         |
 
+Pour préserver les performances du système, une limite stricte de 10 Go est appliquée pour toutes les requêtes exécutées par les rapports Power BI, quelle que soit la limite de mémoire de requête configurée par l’utilisateur. Cette limite stricte ne s’applique pas aux requêtes envoyées par des outils qui utilisent le protocole Analysis Services (également appelé XMLA). Les utilisateurs doivent essayer de simplifier la requête ou ses calculs si la requête utilise trop de mémoire.
 
 #### <a name="query-timeout"></a>Délai d’expiration de la requête
 
@@ -132,8 +130,8 @@ Notez que les rapports Power BI ignorent cette valeur par défaut et appliquent 
 
 Lorsqu’elle est activée, l’actualisation automatique des pages permet aux utilisateurs de votre capacité Premium d’actualiser les pages de leur rapport à un intervalle défini, pour les sources DirectQuery. En tant qu’administrateur de capacité, vous pouvez effectuer les opérations suivantes :
 
-1.  Activer et désactiver l’actualisation automatique des pages
-2.  Définir un intervalle minimal d'actualisation
+- Activer et désactiver l’actualisation automatique des pages
+- Définir un intervalle minimal d'actualisation
 
 L’illustration suivante montre l’emplacement du paramètre d’intervalle d’actualisation automatique :
 

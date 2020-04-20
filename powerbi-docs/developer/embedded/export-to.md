@@ -7,36 +7,36 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273291"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267500"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
 L’API `exportToFile` permet d’exporter un rapport Power BI avec un appel REST. Les formats de fichier suivants sont pris en charge :
-* **PPTX** (PowerPoint)
-* **PDF**
-* **PNG**
-    * Lors de l’exportation vers un fichier PNG, un rapport de plusieurs pages est comprimé dans un fichier zip.
-    * Chaque fichier PNG zip représente une page du rapport
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.png**
+    * Lors de l’exportation vers un fichier .png, un rapport de plusieurs pages est comprimé dans un fichier .zip.
+    * Chaque fichier contenu dans le fichier .zip représente une page du rapport
     * Les noms des pages sont les mêmes que les valeurs de retour des API [Obtenir des pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) ou [Obtenir des pages dans le groupe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup)
 
 ## <a name="usage-examples"></a>Exemples d'utilisation
 
 Vous pouvez utiliser la fonctionnalité d’exportation de différentes manières. Voici quelques exemples :
 
-* **Bouton Envoyer à l’impression** : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport affiché au format PDF ou PPTX et, lorsque c’est terminé, l’utilisateur peut recevoir le fichier en téléchargement. À l’aide de signets, vous pouvez exporter le rapport dans un état spécifique, y compris des filtres configurés, des segments et des paramètres supplémentaires. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
+* **Bouton Envoyer à l’impression** : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport visualisé dans un fichier .pdf ou .pptx et, une fois qu’il est terminé, l’utilisateur peut recevoir le fichier sous forme de téléchargement. À l’aide de signets, vous pouvez exporter le rapport dans un état spécifique, y compris des filtres configurés, des segments et des paramètres supplémentaires. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
 
-* **Pièce jointe d’e-mail** : envoyer un e-mail automatisé à intervalles définis, avec un rapport PDF attaché. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
+* **Pièce jointe d’e-mail** : envoyer un e-mail automatisé à intervalles définis, avec un rapport .pdf en pièce jointe. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
 
 ## <a name="using-the-api"></a>Utilisation de l’API
 
 Avant d’utiliser l’API, vérifiez que les [paramètres de locataire administrateurs](../../service-admin-portal.md#tenant-settings) suivants sont activés :
 * **Exporter les rapports comme présentations PowerPoint ou documents PDF** : activé par défaut.
-* **Exporter des rapports en tant que fichiers image** : requis uniquement pour les fichiers PNG et désactivé par défaut.
+* **Exporter des rapports en tant que fichiers image** : nécessaire uniquement pour les fichiers *.png*, et désactivé par défaut.
 
 L’API est asynchrone. Lorsque l’API [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
 
@@ -73,9 +73,9 @@ Pour exporter avec RLS, vous devez disposer des autorisations suivantes :
 
 ### <a name="data-protection"></a>Protection des données
 
-Les formats PDF et PPTX prennent en charge les [étiquettes de sensibilité](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Si vous exportez un rapport doté d’une étiquette de sensibilité au format PDF ou PPTX, le fichier exporté affiche le rapport avec son étiquette de sensibilité.
+Les formats .pdf et .pptx prennent en charge les [étiquettes de sensibilité](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Si vous exportez un rapport doté d’une étiquette de sensibilité au format .pdf ou .pptx, le fichier exporté affiche le rapport avec son étiquette de sensibilité.
 
-Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format PDF ou PPTX à l’aide d’un [principal de service](embed-service-principal.md).
+Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format .pdf ou .pptx à l’aide d’un [principal de service](embed-service-principal.md).
 
 ### <a name="localization"></a>Localisation
 
@@ -102,8 +102,8 @@ Un travail dépassant le nombre de demandes simultanées ne se termine pas. Par 
 * Le jeu de données du rapport que vous exportez doit résider sur une capacité Premium ou Embedded.
 * Pour la préversion publique, le nombre de pages de rapport Power BI exportées par heure est limité à 50 par capacité.
 * Les rapports exportés ne peuvent pas dépasser une taille de fichier de 250 Mo.
-* Lors de l’exportation au format PNG, les étiquettes de sensibilité ne sont pas prises en charge.
-* Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format PDF ou PPTX à l’aide d’un [principal de service](embed-service-principal.md).
+* Lors de l’exportation en tant que fichier .png, les étiquettes de sensibilité ne sont pas prises en charge.
+* Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format .pdf ou .pptx à l’aide d’un [principal de service](embed-service-principal.md).
 * 30 pages peuvent être incluses dans un rapport exporté. Si le rapport contient plus de pages, l’API retourne une erreur et le travail d’exportation est annulé.
 * [Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
 * Les visuels Power BI répertoriés ci-dessous ne sont pas pris en charge. Lorsqu’un rapport contenant ces visuels est exporté, les parties du rapport contenant ces visuels ne sont pas rendues et un symbole d’erreur s’affiche.
@@ -263,6 +263,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vérifiez comment incorporer du contenu pour vos clients et votre organisation :
+
+> [!div class="nextstepaction"]
+>[Exporter un rapport paginé dans un fichier](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Incorporer pour vos clients](embed-sample-for-customers.md)

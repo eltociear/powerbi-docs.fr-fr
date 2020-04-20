@@ -1,31 +1,35 @@
 ---
 title: Segments dans Power BI
 description: Un segment Power BI constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265390"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006786"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Supposons que vous souhaitiez permettre aux lecteurs de vos rapports d’examiner les métriques des ventes globales, mais aussi de mettre en évidence les performances pour des responsables de district individuels et différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison. Vous pouvez également utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
-
-Ce tutoriel utilise [Exemple Analyse de la vente au détail](../sample-retail-analysis.md) gratuit pour vous expliquer pas à pas comment créer, mettre en forme et utiliser des segments de plages de dates et de listes. Amusez-vous à découvrir les différentes mises en forme et utilisations possibles des segments. 
+Supposons que vous souhaitiez permettre aux lecteurs de vos rapports d’examiner les métriques des ventes globales, mais aussi de mettre en évidence les performances pour des responsables de district individuels et différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison. Vous pouvez également utiliser des *segments*. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
 
 ![Animation de segment](media/power-bi-visualization-slicers/slicer2.gif)
+
+Cet article décrit la création et le débogage d’un segment simple en utilisant l’[exemple Analyse de la vente au détail](../sample-retail-analysis.md) gratuit. Il montre également comment vous pouvez contrôler les visuels affectés par un segment et comment effectuer une synchronisation avec des segments se trouvant sur d’autres pages. Voici d’autres articles qui expliquent comment créer des types spécifiques de segments :
+
+- [s de plages numériques](../desktop-slicer-numeric-range.md).
+- [Segments de dates relatives](desktop-slicer-filter-date-range.md).
+- [Segments redimensionnables](../power-bi-slicer-filter-responsive.md) réactifs.
+- [Segments de hiérarchie](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) avec plusieurs champs.
 
 ## <a name="when-to-use-a-slicer"></a>Quand utiliser un segment
 Les segments sont très utiles pour :
@@ -40,14 +44,11 @@ Les segments Power BI ne prennent pas en charge ce qui suit :
 - Champs d’entrée
 - Exploration hiérarchique
 
+## <a name="create-a-slicer"></a>Création d’un segment
 
-## <a name="create-slicers"></a>Créer des segments
+Ce segment filtre les données par responsable de district. Si vous voulez suivre cette procédure, téléchargez l’exemple [Fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Créer un segment pour filtrer des données par responsable de district**
-
-1. Téléchargez le [fichier PBIX Exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. Dans la barre de menus Power BI Desktop, sélectionnez **Fichier** > **Ouvrir**.
+1. Ouvrez Power BI Desktop, puis dans la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    
 1. Accédez au fichier **Retail Analysis sample PBIX.pbix**, puis sélectionnez **Ouvrir**.
 
@@ -73,36 +74,6 @@ Les segments Power BI ne prennent pas en charge ce qui suit :
 
    >[!TIP]
    >Par défaut, les éléments de segment de liste sont triés par ordre croissant. Pour inverser l’ordre de tri et utiliser l’ordre décroissant, sélectionnez les points de suspension ( **...** ) en haut à droite du segment et choisissez **Tri décroissant**.
-
-**Créer un segment pour filtrer les données par plage de dates**
-
-1. Sélectionnez la page **Overview** du rapport. Si rien n’est sélectionné dans le canevas du rapport, dans le volet **Champs**, sélectionnez **Store** >  **OpenDate**.
-
-    Cette action renseigne la zone **Valeurs** du volet **Visualisations** pour créer une visualisation.
-
-1. Une fois la nouvelle visualisation sélectionnée dans le rapport, sélectionnez l’icône **Segment** dans le volet **Visualisations** pour convertir la nouvelle visualisation en segment. Ce segment **OpenDate** est un contrôle de segment avec la plage de dates renseignée.
-    
-    ![Créer une visualisation OpenDate](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. Redimensionnez et faites glisser le segment et les autres éléments sur le canevas pour faire de la place au segment. Même si le curseur est redimensionné selon la taille du segment, il disparaît et les dates sont tronquées si vous réduisez trop la taille du segment. 
-
-1. Sélectionnez des plages de dates différentes avec le curseur ou sélectionnez un champ de date pour entrer une date ou afficher un calendrier pour une sélection plus précise. Notez les effets sur les autres visualisations de la page.
-    
-    >[!NOTE]
-    >Les types de données numériques et date/heure produisent des segments de curseur de plage par défaut. À compter de la mise à jour de Power BI de février 2018, les segments des types de données de nombres entiers s’alignent sur des valeurs de nombre entier plutôt que d’afficher des places décimales. 
-
-1. Pour changer le type de segment, une fois le segment sélectionné, placez votre curseur sur la zone supérieure droite du segment, sélectionnez l’icône de caret qui s’affiche et choisissez une des autres options, telles que **Liste** ou **Avant**. Notez les changements d’apparence du segment et des options de sélection. 
- 
-    ![Nouvelle plage pour le segment](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-Pour plus d’informations sur la création des segments de plages numériques et de dates, consultez [Utiliser le segment de plages numériques dans Power BI Desktop](../desktop-slicer-numeric-range.md) et regardez la vidéo suivante.
-   > [!NOTE]
-   > Cette vidéo utilise une version antérieure de Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Contrôler l’impact des segments sur les visuels de la page
 Par défaut, les segments des pages du rapport affectent toutes les autres visualisations sur cette page, y compris les unes par rapport aux autres. Quand vous choisissez des valeurs dans les curseurs de liste et de date que vous venez de créer, notez les effets sur les autres visualisations. Les données filtrées sont une intersection des valeurs sélectionnées dans les deux segments. 
@@ -208,7 +179,7 @@ Pour plus d’informations sur les orientations horizontales et les dispositions
 
 ### <a name="title-options"></a>Options de titre
 L’option **Titre** est **activée** par défaut. Cette sélection affiche le nom du champ de données dans la partie supérieure du segment. 
-- Pour ce tutoriel, mettez en forme le texte du titre comme suit : 
+- Pour cet article, mettez en forme le texte du titre comme suit : 
    - **Couleur de police** : rouge
    - **Taille du texte** : **14 pt**
    - **Alignement** : **Centre**
@@ -216,7 +187,7 @@ L’option **Titre** est **activée** par défaut. Cette sélection affiche le n
 
 
 ### <a name="items-options-list-slicers-only"></a>Options de l’élément (uniquement pour les segments de liste)
-1. Pour ce tutoriel, mettez en forme les options **Éléments** comme suit :
+1. Pour cet article, mettez en forme les options **Éléments** comme suit :
     - **Couleur de police** : noir
     - **Arrière-plan** : rouge clair
     - **Taille du texte** : **10 pt**

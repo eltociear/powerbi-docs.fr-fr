@@ -17,7 +17,7 @@ ms.locfileid: "74834629"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
-Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes à des rapports paginés dans le service Power BI. En règle générale, le processus est le même que pour les [abonnements aux rapports et tableaux de bord dans le service Power BI](end-user-subscribe.md). Cet article énumère les différences et considérations. 
+Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes à des rapports paginés dans le service Power BI. En général, le processus est le même que pour un [abonnement aux rapports et tableaux de bord du service Power BI](end-user-subscribe.md). Cet article énumère les différences et considérations. 
 
 Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous voulez recevoir des e-mails : quotidienne, hebdomadaire, mensuelle ou toutes les heures. Vous pouvez également choisir la ou les heures auxquelles l’abonnement doit être exécuté. Vous pouvez définir en tout jusqu’à 24 abonnements différents pour chaque rapport. 
 

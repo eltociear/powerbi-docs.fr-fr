@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377233"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267224"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -24,7 +24,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **account (compte)** Il existe différents types de comptes Power BI, également appelés *licences*.  Les comptes sont : par utilisateur ou par organisation. Les comptes par utilisateur sont disponibles sous forme *gratuit* ou *Pro*.  Un utilisateur *gratuit* Power BI utilise Power BI Desktop autonome ou utilise le service Power BI au sein d’un compte d’organisation Premium. Le compte *Pro* par utilisateur Power BI est un abonnement mensuel payant qui permet la collaboration et le partage de contenu avec d’autres utilisateurs *Pro*. 
 
-Le compte *Premium* d’organisation (également connu sous le nom de *capacité Premium*) ajoute une couche de fonctionnalités en plus des licences par utilisateur. Par exemple, des détenteurs de compte par utilisateur *gratuit* au sein d’une organisation disposant d’une licence *Premium*, sont en mesure d’en faire plus avec Power BI que les utilisateurs *gratuit* sans *Premium*. Par exemple, les utilisateurs *gratuit* dans des comptes d’organisation *Premium*, peuvent collaborer avec des collègues et afficher du contenu hébergé sur la capacité Power BI Premium.  
+Le compte *Premium* d’organisation (également connu sous le nom de *capacité Premium*) ajoute une couche de fonctionnalités en plus des licences par utilisateur. Par exemple, des détenteurs de compte par utilisateur *gratuit* au sein d’une organisation disposant d’une licence *Premium*, sont en mesure d’en faire plus avec Power BI que les utilisateurs *gratuit* sans *Premium*. Par exemple, les utilisateurs *gratuit* dans des comptes d’organisation *Premium* peuvent collaborer avec des collègues et afficher du contenu hébergé sur la capacité Power BI Premium.  
 
 **admin portal (portail d’administration)** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Office 365, Azure et PowerApps utilisent le centre d’administration.)
 
@@ -36,8 +36,7 @@ Le compte *Premium* d’organisation (également connu sous le nom de *capacité
 
 **annotate (annoter)** Pour écrire des lignes, du texte ou un horodatage sur la capture instantanée d’une vignette, d’un rapport ou d’un visuel, sur l’application mobile Power BI pour les appareils iOS et Android.
 
-**app, apps (application, applications)** 
-
+**application, applications** Un bundle de tableaux de bord, rapports et jeux de données. Fait également référence aux applications mobiles pour la consommation de contenu, comme l’application Power BI pour iOS.
 
 **AppSource** Référentiel en ligne centralisé où vous pouvez parcourir et découvrir des tableaux de bord, rapports, jeux de données et applications à télécharger.
 
@@ -203,7 +202,7 @@ Première occurrence : volet de navigation. Occurrences suivantes ou espaces é
 
 **OneDrive for Business (OneDrive Entreprise)** et **OneDrive** OneDrive est un compte personnel et OneDrive Entreprise est destiné aux comptes professionnels.  
 
-**Localement** le terme utilisé pour distinguer l’informatique locale (dans laquelle les ressources informatiques sont situées sur les propres installations d’un client) à partir du cloud computing.
+**Localement** Terme utilisé pour distinguer l’informatique locale (dans laquelle les ressources informatiques sont situées sur les propres installations d’un client) du cloud computing.
 
 
 ## <a name="p"></a>P
