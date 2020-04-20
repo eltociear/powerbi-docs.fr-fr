@@ -23,6 +23,8 @@
           items:
             - name: Créer de nouveaux espaces de travail
               href: ../service-create-the-new-workspaces.md
+            - name: Adhérer à la nouvelle présentation des espaces de travail
+              href: service-workspaces-new-look.md
             - name: Mettre à niveau les espaces de travail classiques
               href: ../designer/service-upgrade-workspaces.md
             - name: Créer des espaces de travail
@@ -65,8 +67,6 @@
               href: ../service-publish-to-web.md
             - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
               href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: "Power\_BI Publisher pour Excel"
-              href: ../publisher-for-excel.md
         - name: "Étendre Power\_BI"
           items:
             - name: Analyser dans Excel
