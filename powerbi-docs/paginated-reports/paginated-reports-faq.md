@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 04/21/2020
+ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
+ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113604"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81766295"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -88,6 +88,8 @@ Les rapports paginés sont les mieux adaptés à des scénarios qui requièrent 
 
 Les rapports Power BI sont optimisés pour l’exploration et l’interactivité.  Un rapport de ventes où différents vendeurs souhaitent ventiler les données d’un même rapport par région/secteur/client spécifique et voir comment les chiffres évoluent est très bien servi par un rapport Power BI.
 
+Pour plus d’informations, consultez [Quand utiliser des rapports paginés dans Power BI](../guidance/report-paginated-or-power-bi.md).
+
 ### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Selon la documentation, le Générateur de rapports Power BI est l’outil de création préféré. Puis-je créer des rapports paginés dans SQL Server Data Tools pour Power BI ?
 
 Oui, mais le service Power BI ne vous permet de charger qu’un seul élément à la fois. Ainsi, de nombreux scénarios que les auteurs utilisent avec SQL Server Data Tools (SSDT) ne sont pas encore pris en charge. Afficher la [liste des fonctionnalités non prises en charge](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) complète disponible plus loin dans cette FAQ.  
@@ -110,10 +112,8 @@ Actuellement, les rapports paginés ne prennent pas en charge les éléments sui
 
 - Sources de données partagées
 - Jeux de données partagés
-- Sous-rapports
 - Extraction et navigation dans d’autres rapports
 - Rapports liés
-- Couches de carte Bing
 - Polices personnalisées
 
 Vous obtenez un message d’erreur si vous essayez de charger un fichier avec une fonctionnalité non prise en charge autre que basculer/trier dans le service Power BI.

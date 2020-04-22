@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 7f300cca6614f638f88886a913b30a93d0f52cfd
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80813003"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637683"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Superviser les capacités dans le portail d’administration
 
@@ -24,8 +24,9 @@ L’onglet **Intégrité** de la zone **Paramètres de capacité** dans le porta
 
 Si vous avez besoin de métriques plus complètes, utilisez l’application [Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md). L’application fournit des fonctionnalités d’exploration et de filtrage, et les métriques les plus détaillées pour quasiment tous les aspects affectant les performances de capacité. Pour en savoir plus, consultez [Superviser les capacités Premium avec l’application](service-admin-premium-monitor-capacity.md).
 
-> [!IMPORTANT]
-> Si votre capacité Power BI Premium subit une utilisation intensive des ressources entraînant des problèmes de performances ou de fiabilité, vous pouvez recevoir des e-mails de notification pour identifier et résoudre le problème. Pour plus d’informations, consultez les [notifications de capacité et de fiabilité](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+
+
 
 ## <a name="system-metrics"></a>Métriques du système
 

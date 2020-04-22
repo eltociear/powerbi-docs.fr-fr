@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 45f3ff801b2f1bffd2396fe9f59ea32dd4b11ffb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a6dd3040fd765010c5d6baaf76991f7d1be4cfa7
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877071"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637895"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -41,7 +41,7 @@ Si vous utilisez Excel pour vous connecter à une source de données externe, un
 ### <a name="workbooks-with-power-view-sheets-pivottables-and-charts"></a>Classeurs avec des feuilles Power View, des tableaux croisés dynamiques et des graphiques
 La présence, ou l’absence, de vos feuilles PowerView, tableaux croisés dynamiques et graphiques dans Power BI dépend de l’emplacement où est enregistré votre classeur et de la manière dont vous l’intégrez à Power BI. Nous allons approfondir ce sujet ci-dessous.
 
-## <a name="data-types"></a>Type de données
+## <a name="data-types"></a>Types de données
 Power BI prend en charge les types de données suivants : Nombre entier, Nombre décimal, Devise, Date, True/False, Texte. Le marquage des données en tant que types de données spécifiques dans Excel améliore l’expérience de Power BI.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Préparer votre classeur pour Power BI
@@ -63,7 +63,7 @@ Si vous enregistrez vos classeurs dans **OneDrive**, vous pouvez explorer vos do
 
 ![](media/service-excel-workbook-files/excel_import_connect.png)
 
-### <a name="import-excel-data-into-power-bi"></a>Importer les données Excel dans Power BI
+### <a name="import-excel-data-into-power-bi"></a>Importer des données Excel dans Power BI
 Lorsque vous sélectionnez **Importer**, toutes les données prises en charge des tables et/ou modèles de données sont importées dans un nouveau jeu de données dans Power BI. Si vous avez des feuilles Power View, celles-ci sont recréées dans Power BI sous forme de rapports.
 
 Vous pouvez continuer à modifier votre classeur. Lorsque vos modifications sont enregistrées, elles sont synchronisées avec le jeu de données dans Power BI, généralement une heure plus tard environ. Pour un résultat immédiat, vous pouvez simplement cliquer de nouveau sur Publier afin d’exporter aussitôt vos modifications. Les visualisations présentes dans vos rapports et tableaux de bord sont également mises à jour.
@@ -124,8 +124,6 @@ Actuellement, quand vous sélectionnez Importer, Power BI importe uniquement le
 **Planifiez l’actualisation** : si votre classeur Excel se connecte à des sources de données externes, ou si vous avez importé à partir d’un disque local, vous pouvez configurer l’actualisation planifiée pour vérifier que votre jeu de données ou rapport est toujours à jour. Dans la plupart des cas, la configuration de l’actualisation planifiée est relativement simple, mais nous n’en décrivons pas la procédure détaillée dans cet article. Pour en savoir plus, consultez [Actualisation des données dans Power BI](refresh-data.md).
 
 [Publier sur Power BI à partir d’Excel 2016](service-publish-from-excel.md)
-
-[Éditeur Power BI pour Excel](publisher-for-excel.md)
 
 [Actualisation des données dans Power BI](refresh-data.md)
 

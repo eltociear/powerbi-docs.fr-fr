@@ -1,5 +1,5 @@
 ---
-title: Analyse d’impact sur les jeux de données (préversion)
+title: Analyse de l’impact des jeux de données
 description: Visualisez et analysez l’impact en aval des modifications apportées aux jeux de données.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 016c555c6df65a45a9d429c25db93110022d9d8f
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268026"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525327"
 ---
-# <a name="dataset-impact-analysis-preview"></a>Analyse d’impact sur les jeux de données (préversion)
+# <a name="dataset-impact-analysis"></a>Analyse de l’impact des jeux de données
 
 Quand vous apportez (ou envisagez d’apporter) des modifications à un jeu de données, il est important de pouvoir évaluer l’impact de ces modifications sur les rapports et les tableaux de bord en aval qui dépendent de ce jeu de données. L’**analyse d’impact sur les jeux de données** fournit des informations qui peuvent vous aider à effectuer cette évaluation.
 * Elle indique combien d’espaces de travail, rapports et tableaux de bord sont susceptibles d’être affectés par vos modifications, et vous permet de naviguer facilement vers les espaces de travail où se trouvent les rapports et les tableaux de bord affectés afin que vous puissiez approfondir vos recherches.
@@ -83,7 +83,7 @@ Quand vous apportez une modification à un jeu de données dans Power BI Desktop
 >
 >Dans le message, le nombre d’espaces de travail est mentionné uniquement si plusieurs espaces de travail contiennent des rapports et des tableaux de bord affectés.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 * Les métriques d’utilisation ne sont actuellement pas prises en charge pour les espaces de travail classiques et personnels.
 

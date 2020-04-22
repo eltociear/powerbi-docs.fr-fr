@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872784"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637874"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduction aux vignettes de tableau de bord pour les concepteurs Power BI
 
@@ -41,7 +41,6 @@ Vous pouvez ajouter (épingler) une vignette à un tableau de bord de plusieurs 
 * [Un rapport](service-dashboard-pin-tile-from-report.md)
 * [Un autre tableau de bord](service-pin-tile-to-another-dashboard.md)
 * [Un classeur Excel sur OneDrive Entreprise](service-dashboard-pin-tile-from-excel.md)
-* [Power BI Publisher pour Excel](publisher-for-excel.md)
 * [Quick Insights (Informations rapides)](service-insights.md)
 * [Un rapport paginé local dans Power BI Report Server ou SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 

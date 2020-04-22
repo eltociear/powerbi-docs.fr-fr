@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 ms.author: kfollis
-ms.openlocfilehash: 984991d8640df04c19b6461f5f0faaf0a50fe4ed
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 85b26b68c4943e0bc100be7a298730cec34cfc78
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80812964"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637771"
 ---
 # <a name="service-interruption-notifications"></a>Notifications d’interruption de service
 
@@ -32,26 +32,8 @@ Des notifications sont envoyées en cas de _délai prolongé_ lors d’opératio
 > [!NOTE]
 > Cette fonctionnalité est actuellement disponible uniquement pour les capacités dédiées dans Power BI Premium. Elle n’est pas disponible pour la capacité partagée ou embarquée.
 
-## <a name="capacity-and-reliability-notifications"></a>Notifications de capacité et de fiabilité
-
-Quand une capacité Power BI Premium connaît des périodes prolongées d’utilisation intensive des ressources susceptibles d’impacter la fiabilité, un e-mail de notification est envoyé. Parmi ces impacts, citons des retards prolongés dans des opérations telles que l’ouverture d’un rapport, l’actualisation d’un jeu de données et l’exécution de requêtes. 
-
-L’e-mail de notification fournit des informations sur la raison de l’utilisation intensive des ressources, notamment :
-
-* ID du jeu de données responsable
-* Type d'opération
-* Temps processeur associé à l’utilisation intensive des ressources
-
-Power BI envoie également des notifications par e-mail en cas de détection d’une surcharge dans une capacité Power BI Premium. L’e-mail indique la raison probable de la surcharge, les opérations qui ont généré la charge au cours des 10 dernières minutes et la quantité de charge générée par chaque opération. 
-
-Si vous avez plusieurs capacités Premium, l’e-mail contient des informations sur ces capacités pendant la période surchargée. Vous pouvez donc envisager de déplacer les espaces de travail contenant des éléments nécessitant beaucoup de ressources vers les capacités avec les charges les plus faibles.
-
-Les notifications de surcharge par e-mail ne sont envoyées que si un seuil de surcharge est déclenché. Vous ne recevez pas de deuxième e-mail quand la charge sur cette capacité Premium revient à un niveau non surchargé.
-
-L’image suivante représente un exemple de notification par e-mail :
 
 
-![e-mail de notification de capacité surchargée](media/service-interruption-notifications/refresh-notification-email-2.png)
 
 
 ## <a name="enable-notifications"></a>Activer les notifications
