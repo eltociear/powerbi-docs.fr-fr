@@ -147,13 +147,13 @@
               href: ../desktop-add-custom-column.md
             - name: Utiliser des étiquettes de hiérarchie incluses
               href: ../desktop-inline-hierarchy-labels.md
-            - name: Sélecteurs
+            - name: Segments
               href: ../visuals/power-bi-visualization-slicers.md
             - name: Sélecteurs de plages numériques
               href: ../desktop-slicer-numeric-range.md
             - name: Sélecteurs et filtres de dates relatives
               href: ../visuals/desktop-slicer-filter-date-range.md
-            - name: Créer un sélecteur redimensionnable
+            - name: Créer un segment redimensionnable
               href: ../power-bi-slicer-filter-responsive.md
             - name: Ajouter plusieurs champs à un sélecteur
               href: power-bi-slicer-hierarchy-multiple-fields.md
@@ -197,8 +197,6 @@
               href: ../service-interact-with-a-report-in-editing-view.md
             - name: Analyser dans Excel
               href: ../service-analyze-in-excel.md
-            - name: Trucs et astuces pour créer des rapports
-              href: ../power-bi-reports-tips-and-tricks-for-creating.md
             - name: Utilisation d’agrégats dans le service
               href: ../service-aggregates.md
             - name: Créer un code QR pour un rapport
@@ -261,7 +259,7 @@
               href: ../visuals/power-bi-visualization-funnel-charts.md
             - name: Visuels d’influenceurs clés
               href: ../visuals/power-bi-visualization-influencers.md
-            - name: Visuels d’indicateur de performance clé
+            - name: Éléments visuels des indicateurs de performance clés
               href: ../visuals/power-bi-visualization-kpi.md
             - name: Visuels de matrice
               href: ../visuals/desktop-matrix-visual.md
