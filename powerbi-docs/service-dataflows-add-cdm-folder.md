@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: cc47820e5903426d4f3635c78e0dc108049f897e
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404765"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439339"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
 
@@ -30,6 +30,12 @@ La création de flux de données à partir de dossiers CDM est soumise aux condi
 * Vous devez recevoir des autorisations de lecture et d’exécution sur tous les fichiers et dossiers dans le dossier CDM pour les ajouter à Power BI.
 
 Les sections suivantes expliquent comment créer un flux de données à partir d’un dossier CDM.
+
+## <a name="authorizing-users-for-cdm-folders-to-create-a-dataflow"></a>Autorisation de créer un flux de données à partir de dossiers CDM pour les utilisateurs
+
+Pour créer un flux de données à partir d’un dossier CDM, vous devez ajouter les autorisations suivantes :
+* L’utilisateur qui accèdera au dossier CDM par le biais de Power BI doit disposer du rôle **Propriétaire des données Storage Blob** du compte de stockage.
+* L’utilisateur qui accèdera au dossier CDM par le biais de Power BI doit disposer des listes ACL **Accès en lecture** et **Accès en exécution** sur le dossier CDM lui-même et sur tous les fichiers et dossiers qu’il contient. 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Créer un flux de données à partir d’un dossier CDM
 

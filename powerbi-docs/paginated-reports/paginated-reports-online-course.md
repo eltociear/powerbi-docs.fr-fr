@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675644"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Cours en ligne : Rapports paginés Power BI en une journée
 
@@ -83,7 +83,7 @@ Le [cours de 24 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 Vous pouvez télécharger et configurer un kit d’auto-apprentissage, qui est constitué du contenu de la présentation et de huit labos pratiques :
 
-1. Utilisez [ce lien](https://aka.ms/priad-ilt-student) pour télécharger le kit d’auto-apprentissage (.zip) localement sur votre PC.
+1. Utilisez [ce lien](https://aka.ms/priad-student) pour télécharger le kit d’auto-apprentissage (.zip) localement sur votre PC.
 1. Ouvrez les propriétés du fichier et cochez « Débloquer » (Windows est susceptible de marquer le fichier comme étant potentiellement non approuvé).
 1. Extrayez le contenu du fichier dans un dossier de votre système de fichiers. Nous vous recommandons de créer un dossier qui sera facile à trouver, par exemple en le nommant **Formation**. Les documents du labo se réfèrent à cet emplacement sous le nom de **&lt;CourseFolder&gt;** .
 
@@ -105,6 +105,10 @@ Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;Cou
 > Vous devez vous connecter à Power BI pour publier un fichier Power BI Desktop sur un espace de travail. La publication produit un jeu de données qui est utilisé comme source de données de rapport. Vous n’avez pas besoin d’une licence Power BI Pro ou d’un abonnement Power BI Premium pour utiliser un jeu de données comme source de données de rapport.
 >
 > Certaines tâches des labos impliquent cependant la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il est enregistré dans un espace de travail sur une [capacité dédiée](../service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, un lien vous est fourni à la place pour regarder une vidéo qui montre la publication de rapports.
+
+## <a name="instructor-kit"></a>Kit du formateur
+
+Utilisez [ce lien](https://aka.ms/priad-instructor) pour télécharger le kit du formateur (.zip) localement sur votre PC.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

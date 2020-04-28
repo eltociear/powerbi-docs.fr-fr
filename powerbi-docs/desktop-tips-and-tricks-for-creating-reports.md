@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2020
+ms.date: 04/22/2020
 ms.author: davidi
-ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 95492b8561c37b52e77fbd8b16ce5e1e2ec4e4e1
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427251"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066221"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -87,7 +87,7 @@ Vérifiez que le type de données de la colonne d’agrégation résultante est 
 
 Définition d’un histogramme prenant en charge le balayage : si des visuels sont liés entre eux et qu’un utilisateur sélectionne un point de données dans un visuel, les autres visuels de la page de rapport mettent en surbrillance ou filtrent les points de données liés à celui sélectionné. C’est ce que l’on entend par « balayage ». Étant donné que nous manipulons les données au moment de la requête, nous devons créer une relation entre les tables et déterminer l’élément de détail qui est lié au compartiment dans l’histogramme et vice-versa.
 
-Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ». Nommez la nouvelle requête « Buckets ». Dans cet exemple, nous allons appeler la requête d’origine « Details ». Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme. Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne. Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments. Examinez à présent les données affichées dans l’aperçu de la requête. Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation. Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ». Cette approche peut être problématique, car elle nécessite que les données soient triées. Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ». 
+Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ». Nommez la nouvelle requête « Buckets ». Dans cet exemple, nous allons appeler la requête d’origine « Details ». Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme. Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne. Si vous disposez de nombres décimaux, vous pouvez tout d’abord suivre le conseil visant à définir des compartiments pour générer un histogramme afin d’obtenir un ensemble gérable de compartiments. Examinez à présent les données affichées dans l’aperçu de la requête. Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation. Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ». Cette approche peut être problématique, car elle nécessite que les données soient triées. Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ». 
 
 >[!NOTE]
 >Il est utile de réfléchir à l’ordre de tri avant de générer des visuels. 
@@ -148,7 +148,7 @@ Vous disposez à présent d’une table de dimension qui contient toutes les val
 L’Éditeur de requête est un outil de manipulation des données très puissant qui permet de mettre en forme et de nettoyer les données en vue de les visualiser ou de les modéliser. Voici quelques points clés à connaître.
 
 ### <a name="temporary-columns-can-be-deleted-after-computing-a-result"></a>Les colonnes temporaires peuvent être supprimées après le calcul d’un résultat
-Il est souvent nécessaire de générer un calcul dans Power BI Desktop qui transforme les données de plusieurs colonnes en une nouvelle colonne unique. Cette opération peut être complexe. Pour y parvenir, un moyen simple consiste à décomposer l’opération en plusieurs étapes. Commencez par dupliquer les colonnes initiales. Créez ensuite les étapes des colonnes temporaires. Enfin, créez une colonne pour le résultat final. Vous pouvez ensuite supprimer les colonnes temporaires pour ne pas saturer le jeu de données final. Cette approche est possible parce que l’onglet Requête exécute les étapes dans l’ordre. 
+Il est souvent nécessaire de générer un calcul dans Power BI Desktop qui transforme les données de plusieurs colonnes en une nouvelle colonne unique. Cette opération peut être complexe. Pour y parvenir, un moyen simple consiste à décomposer l’opération en plusieurs étapes. Commencez par dupliquer les colonnes initiales. Créez ensuite les colonnes temporaires. Enfin, créez la colonne pour le résultat final. Vous pouvez ensuite supprimer les colonnes temporaires pour ne pas saturer le jeu de données final. Cette approche est possible parce que l’onglet Requête exécute les étapes dans l’ordre. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Dupliquer ou référencer des requêtes, puis fusion avec la requête d’origine
 Il est parfois utile de calculer des statistiques récapitulatives pour un jeu de données. Pour cela, la méthode la plus simple consiste à dupliquer la requête ou à faire référence à celle-ci sous l’onglet Requête. Ensuite, utilisez **Regrouper par** pour calculer les statistiques récapitulatives. Les statistiques récapitulatives vous permettent de normaliser les données dans les données d’origine afin de faciliter les comparaisons. Elles sont particulièrement utiles pour comparer des valeurs individuelles à l’ensemble des valeurs. Pour cela, accédez à la requête d’origine, puis sélectionnez l’option de fusion. Ensuite, fusionnez les données de la requête de statistiques récapitulatives correspondant aux identificateurs appropriés. Vous pouvez à présent normaliser les données en fonction des besoins de votre analyse.
@@ -161,3 +161,64 @@ DAX est le langage des formules de calcul dans Power BI Desktop. Il est optimi
 [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [Centre de ressources DAX](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+
+## <a name="power-bi-service-and-power-bi-desktop"></a>Service Power BI *et* Power BI Desktop
+
+### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lisez et/ou regardez « How to design visually stunning reports (and dashboards) in Power BI » (Comment concevoir des rapports et tableaux de bord attrayants dans Power BI).
+Miguel Myers, membre de la communauté, est spécialiste en données et concepteur graphique.
+
+![Rapport Power BI](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
+
+* [Lire le blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+* [Regarder le webinaire](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+
+### <a name="consider-your-audience"></a>Prenez en compte votre public
+Quelles sont les métriques clés qui les aideront à prendre des décisions ? Comment le rapport sera-t-il utilisé ? Quelles hypothèses culturelles peuvent affecter vos choix en matière de conception ? De quelles informations votre public a-t-il besoin pour réussir ?
+
+Où le rapport sera-t-il affiché ? S’il s’agit d’un grand écran, vous pouvez ajouter davantage de contenu. Si les lecteurs l’affichent sur leurs tablettes, moins de visualisations seront mieux lisibles.
+
+### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Racontez une histoire et contentez-vous d’un seul écran
+Chaque page du rapport doit indiquer un récit en un coup d’œil. Pouvez-vous éviter les barres de défilement sur vos pages ? Le rapport est-il trop encombré ou trop occupé ?  Ne gardez que les informations importantes qui peuvent être facilement lues et interprétées.
+
+### <a name="make-the-most-important-information-biggest"></a>Affichez les informations les plus importantes en grand format
+Si le texte et les visualisations sur votre page du rapport ont la même taille, vos lecteurs auront du mal à se concentrer sur ce qui est le plus important. Par exemple, les visualisations de carte sont un bon moyen de mettre en évidence un nombre important :  
+![Visualisation de carte](media/service-dashboards-design-tips/pbi_card.png)
+
+### <a name="but-be-sure-to-provide-context"></a>Mais, n’oubliez pas de préciser le contexte  
+
+Utilisez des fonctionnalités telles que les zones de texte et les info-bulles pour ajouter le contexte à vos visualisations.
+
+### <a name="put-the-most-important-information-in-the-upper-corner"></a>Placez les informations les plus importantes en haut
+La plupart des gens lisent de haut en bas. Placez donc les informations de haut niveau en haut et les informations détaillées en dessous pour suivre le mouvement de lecture de vos utilisateurs (de gauche à droite, de droite à gauche).
+
+### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Utiliser la visualisation qui convient à vos données et la mettre en forme pour en faciliter la lecture
+Évitez d’utiliser trop de types de visualisations différents.  Les visualisations doivent représenter une image et être faciles à lire et à interpréter.  Pour certaines données et visualisations, une simple visualisation graphique est suffisante. Toutefois, certaines données peuvent nécessiter une visualisation plus complexe : utilisez des titres, des étiquettes et d’autres personnalisations pour aider le lecteur.  
+
+* Soyez prudent quand vous utilisez des graphiques qui déforment la réalité, tels que les graphiques 3D et les graphiques qui ne démarrent pas de zéro. N’oubliez pas qu’il est difficile pour le cerveau humain d’interpréter les formes circulaires. Les graphiques à secteurs, les graphiques en anneau, les jauges et autres types de graphiques circulaires, peuvent paraître élégants, mais il existe peut-être un visuel différent à utiliser à la place ?    
+* Soyez cohérent avec les mises à l’échelle des axes, l’ordre des dimensions des graphiques et les couleurs utilisées pour les valeurs des dimensions dans les graphiques.    
+* Encodez soigneusement les données quantitatives. Ne dépassez pas trois ou quatre chiffres pour les nombres. Affichez les mesures avec un ou deux chiffres à gauche de la décimale et procédez à une mise à l’échelle pour les milliers et les millions (c’est-à-dire 3,4 millions et non 3 400 000).    
+* Essayez d’éviter de mélanger des niveaux de précision et d’heure. Assurez-vous que les périodes sont bien comprises.  Ne mettez pas côte à côte un graphique concernant le mois dernier et des graphiques filtrés concernant un certain mois de l’année.    
+* Essayez également d’éviter de mélanger des grandes et des petites mesures sur une même mise à l’échelle, telle qu’une ligne ou un graphique à barres.  Par exemple, une mesure en millions et une autre en milliers.  Avec une telle échelle, il serait difficile de voir les différences de la mesure en milliers.  Si vous devez les mélanger, choisissez une visualisation, par exemple un graphique combiné, qui permet d’utiliser un deuxième axe.    
+* Évitez d’encombrer vos graphiques avec des étiquettes de données qui ne sont pas nécessaires. Les valeurs exprimées sous la forme de graphiques à barres, ***si elles sont suffisamment grandes***, sont généralement bien comprises et ne nécessitent pas l’affichage du nombre réel.   
+* Faites attention à la manière dont les [graphiques sont organisés](consumer/end-user-change-sort.md). Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure. Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
+* Si vous avez moins de huit catégories, les graphiques en secteurs conviendront le mieux. Étant donné que vous ne pouvez pas comparer des valeurs côte à côte, il est plus difficile de comparer des valeurs dans un graphique à secteurs que dans un graphique à barres ou dans un histogramme. Les graphiques en secteurs conviennent mieux à l’affichage des relations partie-tout qu’à la comparaison de différentes parties. Les graphiques en jauge conviennent parfaitement à l’affichage de l’état actuel dans le contexte d’un objectif.    
+
+Pour plus de conseils spécifiques aux visualisations, consultez [Types de visualisations dans Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+
+### <a name="learn-more-about-best-practice-dashboard-design"></a>En savoir plus sur la Conception des tableaux de bord des meilleures pratiques
+Voici quelques-uns de nos livres préférés :
+
+* *Narration avec les données* par Cole Nussbaumer Knafic
+* *Points de données* par Nathan Yau
+* *L’illustration du sincère* par Alberto Cairo
+* *Now You See It* par Stephen Few  
+* *Envisioning Information* par Edward Tufte  
+* *Conception des présentations avancées* par Andrew Abela   
+
+## <a name="next-steps"></a>Étapes suivantes
+* [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
+* [Rapports dans Power BI](consumer/end-user-reports.md)
+
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+
+

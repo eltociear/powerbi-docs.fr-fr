@@ -1,20 +1,20 @@
 ---
 title: Configurer une actualisation planifiée
 description: Cette rubrique décrit la procédure à suivre pour sélectionner une passerelle et configurer une actualisation planifiée.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: maggies
+ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: cc0527d093118fdb585800d0038f824223098119
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958399"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675692"
 ---
 # <a name="configure-scheduled-refresh"></a>Configurer une actualisation planifiée
 
@@ -34,15 +34,15 @@ Pour accéder à l’écran **Actualisation planifiée** :
 
 Vous voyez ici différentes options, selon que vous disposez d’une passerelle personnelle ou d’entreprise, en ligne et disponible.
 
-Si aucune passerelle n’est disponible, vous verrez que la **Connexion à la passerelle** est désactivée. Vous voyez également un message indiquant comment installer la passerelle personnelle.
+Si aucune passerelle n’est disponible, vous voyez que la **Connexion à la passerelle** est désactivée. Vous voyez également un message indiquant comment installer la passerelle personnelle.
 
 ![Passerelle non configurée](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Si vous avez configuré une passerelle personnelle, celle-ci sera disponible à la sélection si elle est en ligne. Si elle n’est pas disponible, elle apparaît hors connexion.
+Si vous avez configuré une passerelle personnelle et qu’elle est en ligne, elle est disponible à la sélection. Si elle n’est pas disponible, elle est affichée comme étant hors connexion.
 
 ![Connexion à la passerelle](media/refresh-scheduled-refresh/gateway-connection.png)
 
-Vous pouvez également sélectionner la passerelle d’entreprise s’il y en a une disponible pour vous. La passerelle d’entreprise ne sera disponible que si votre compte figure sous l’onglet **Utilisateurs** de la source de données configurée pour une passerelle donnée.
+Vous pouvez également sélectionner la passerelle d’entreprise s’il y en a une disponible pour vous. La passerelle d’entreprise n’est disponible que si votre compte figure sous l’onglet **Utilisateurs** de la source de données configurée pour une passerelle donnée.
 
 ## <a name="data-source-credentials"></a>Informations d’identification de la source de données
 
@@ -82,7 +82,11 @@ Pour configurer les paramètres, vous devrez définir le curseur **Tenir vos don
 > [!NOTE]
 > Après deux mois d’inactivité, l’actualisation planifiée de votre jeu de données est suspendue. Un jeu de données est considéré comme inactif lorsque aucun utilisateur n’a visité un tableau de bord ou un rapport basé sur le jeu de données. À ce stade, le propriétaire du jeu de données reçoit un e-mail indiquant que l’actualisation planifiée est en pause. La planification de l’actualisation du jeu de données s’affiche alors comme étant **désactivée**. Pour reprendre l’actualisation planifiée, il vous suffit de revenir sur un tableau de bord ou un rapport basé sur le jeu de données.
 
-## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
+## <a name="whats-supported"></a>Prise en charge
+
+
+> [!NOTE]
+> L’actualisation planifiée est également désactivée automatiquement après quatre erreurs consécutives.
 
 Certains jeux de données sont pris en charge sur différentes passerelles pour l’actualisation planifiée. Voici une référence pour comprendre ce qui est disponible.
 

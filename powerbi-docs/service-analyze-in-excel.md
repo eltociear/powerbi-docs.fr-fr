@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: a142b950375014c4d1adba917cceb2c6d9af4825
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: df905c4174c366f64b58d257786f002c607f3edb
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427688"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675658"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Vous pouvez utiliser Excel pour afficher un jeu de données Power BI et interagir avec celui-ci. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
@@ -68,9 +68,7 @@ Même si vous êtes déjà connecté à Power BI dans votre navigateur, vous ê
 ### <a name="users-with-multiple-power-bi-accounts"></a>Utilisateurs disposant de plusieurs comptes Power BI
 Certains utilisateurs possèdent plusieurs comptes Power BI. Il peut arriver qu’ils soient connectés dans Power BI avec un compte, alors que le compte utilisé par l’option Analyser dans Excel pour accéder au jeu de données est un compte différent. Dans ce cas, vous risquez d’obtenir une erreur **Interdit** ou un message d’échec de connexion si vous tentez d’accéder à un jeu de données qui est utilisé par l’option Analyser dans Excel.
 
-Vous aurez l’occasion de vous connecter à nouveau. Vous pourrez alors vous connecter à l’aide du compte Power BI qui a accès au jeu de données utilisé par l’option Analyser dans Excel. Vous pouvez également sélectionner **Profil** à partir de l’onglet du ruban **Power BI** dans Excel, qui identifie le compte actuellement connecté et fournit un lien qui vous permet de vous déconnecter (et par la suite, de vous connecter avec un compte différent). Vous pouvez [télécharger Power BI Publisher pour Excel](https://www.microsoft.com/download/details.aspx?id=50729) si vous ne l’avez pas déjà installé, ce qui permet d’installer le ruban Power BI dans Excel.
-
-![Afficher votre profil](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
+Vous aurez l’occasion de vous connecter à nouveau. Vous pourrez alors vous connecter à l’aide du compte Power BI qui a accès au jeu de données utilisé par l’option Analyser dans Excel. Vous pouvez également sélectionner votre nom dans le ruban supérieur d’Excel, ce qui permet d’identifier le compte avec lequel vous êtes actuellement connecté. Se déconnecter et se connecter avec un autre compte.
 
 ### <a name="enable-data-connections"></a>Activez les connexions de données
 Afin d’analyser vos données Power BI dans Excel, vous êtes invité à vérifier le nom et le chemin du fichier .odc, puis à sélectionner **Activer**.

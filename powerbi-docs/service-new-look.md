@@ -6,23 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881383"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637821"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
-Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est plus simple et s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
+Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est plus simple et s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. 
+
+Vous recherchez des informations sur la nouvelle apparence de **Power BI Desktop** ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](desktop-ribbon.md).
+
+Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
 
 ![Vue d’ensemble des modifications de la nouvelle présentation](media/service-new-look/power-bi-new-look-changes.png)
 
-Vous recherchez une action spécifique ? Voir [Nouvelle apparence : où sont passées les actions ?](service-new-look-where-actions.md)
+Vous recherchez une action spécifique ? Voir [Nouvelle apparence : où sont passées les actions ?](service-new-look-where-actions.md).
 
 ## <a name="quick-tour-of-the-changes"></a>Présentation rapide des modifications
 
@@ -87,4 +91,6 @@ Nous avons maintenu l’expérience de création similaire à celle de Desktop. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Power BI pour les consommateurs](consumer/end-user-consumer.md)
+- [Utiliser le ruban mis à jour dans Power BI Desktop](desktop-ribbon.md)
+- [Adhérer à la « nouvelle apparence » de l’espace de travail](collaborate-share/service-workspaces-new-look.md)
+- [Power BI pour les consommateurs](consumer/end-user-consumer.md)

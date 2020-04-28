@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bfec81aaa47f210855c4db4c8c97ab259b685110
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302444"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525442"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -33,7 +33,7 @@ L’e-mail que vous recevez contient un lien « accéder au rapport ou tableau 
 
 
 ## <a name="requirements"></a>Configuration requise
-La **création** d’un abonnement pour vous-même exige un certain type de [licence](end-user-license.md). Si vous ne parvenez pas à créer un abonnement, contactez votre administrateur Power BI. Seul le propriétaire du tableau de bord ou du rapport peut **abonner d’autres utilisateurs**. L’abonnement aux rapports paginés est un peu différent. Consultez  [Vous abonner, vous et d’autres utilisateurs, à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md)  pour plus d’informations. 
+La **création** d’un abonnement pour vous-même exige un certain type de [licence](end-user-license.md). Si vous ne parvenez pas à créer un abonnement, contactez votre administrateur Power BI. Seul le propriétaire du tableau de bord ou du rapport peut **abonner d’autres utilisateurs**. L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md) pour plus d’informations. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>S’abonner à un tableau de bord ou une page de rapport
 Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le même. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
@@ -55,7 +55,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
     c. Vous pouvez également ajouter l’objet et les détails du message. 
 
-    d. Sélectionnez une **Fréquence** pour votre abonnement.  Vous pouvez choisir Quotidien, Hebdomadaire ou Après l’actualisation des données (quotidien).  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez la fréquence **Hebdomadaire** et décochez les cases Sam et Dim. Si vous sélectionnez   **Mensuel**, entrez le ou les jours du mois auxquels vous souhaitez recevoir le courrier de l’abonnement.   
+    d. Sélectionnez une **Fréquence** pour votre abonnement.  Vous pouvez choisir Quotidien, Hebdomadaire ou Après l’actualisation des données (quotidien).  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez la fréquence **Hebdomadaire** et décochez les cases Sam et Dim. Si vous sélectionnez **Mensuel**, entrez le ou les jours du mois auxquels vous souhaitez recevoir le courrier de l’abonnement.   
 
     e. Si vous choisissez Quotidien, Toutes les heures, Mensuel ou Hebdomadaire, vous pouvez également choisir une Heure planifiée pour l’abonnement. Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après. Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire. Si vous choisissez Toutes les heures, sélectionnez l’Heure planifiée à laquelle vous voulez que l’abonnement démarre : il sera alors exécuté toutes les heures après cela.  
 
@@ -73,7 +73,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 
 ## <a name="manage-your-subscriptions"></a>Gérer vos abonnements
-Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouveau **S’abonner** et choisissez **Gérer tous les abonnements** en bas à gauche (voir les captures d’écran ci-dessus). Les abonnements particuliers affichés dépendent de l’espace de travail actuellement actif. Pour afficher tous les abonnements à la fois pour tous les espaces de travail, vérifiez que  **Mon espace de travail** est actif. Pour mieux comprendre le fonctionnement des espaces de travail, consultez  [Espaces de travail dans Power BI](end-user-workspaces.md). 
+Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouveau **S’abonner** et choisissez **Gérer tous les abonnements** en bas à gauche (voir les captures d’écran ci-dessus). Les abonnements particuliers affichés dépendent de l’espace de travail actuellement actif. Pour afficher tous les abonnements à la fois pour tous les espaces de travail, vérifiez que **Mon espace de travail** est actif. Pour comprendre le fonctionnement des espaces de travail, consultez [Espaces de travail dans Power BI](end-user-workspaces.md). 
 
 ![afficher tous les abonnements dans Mon espace de travail](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 

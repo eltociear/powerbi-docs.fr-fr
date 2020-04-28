@@ -7,126 +7,135 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/27/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 4615bae84ddeb3d3e0b3c471a6b9d6bcf7eda406
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 8610f5c0efbc3da394e4de7c263a88aad813eae2
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267293"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066017"
 ---
-# <a name="types-of-power-bi-licenses"></a>Types de licences Power BI
+# <a name="using-the-power-bi-service-as-a-consumer"></a>Utilisation du service Power BI en tant que *consommateur*
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-En tant que *consommateur*, vous utilisez le service Power BI pour explorer des rapports et des tableaux de bord afin de prendre des décisions métier. Si vous utilisez Power BI depuis un certain temps ou qu’il vous arrive de discuter avec les *concepteurs* avec qui vous travaillez, vous savez probablement que certaines caractéristiques ne sont opérationnelles qu’avec une licence ou un abonnement particulier. 
+En tant que [*consommateur*](end-user-consumer.md), vous utilisez le service Power BI pour explorer des rapports et des tableaux de bord afin de prendre des décisions métier basées sur les données. Si vous utilisez Power BI depuis un certain temps ou qu’il vous arrive de discuter avec les *concepteurs* avec qui vous travaillez, vous savez probablement que certaines caractéristiques ne sont opérationnelles qu’avec une licence, un abonnement ou des autorisations particuliers. 
 
-Cet article explique les différences entre les licences utilisateur et les abonnements d’organisation et comment elles fonctionnent ensemble : gratuit, Professionnel, Premium et capacité Premium. Vous verrez également comment identifier la combinaison de licences et d’abonnements que vous utilisez.  
-
-![diagramme montrant comment les licences sont connectées](media/end-user-license/power-bi-venn.png)
-
-Commençons par examiner les deux catégories de licences : les abonnements par utilisateur et organisationnels. Notre point de départ sera les fonctionnalités par défaut disponibles pour chacun. Ensuite, nous allons examiner comment votre administrateur Power BI et les propriétaires de contenu peuvent utiliser des rôles et des autorisations pour modifier les fonctionnalités de licence et d’abonnement par défaut. 
-
-Par exemple, même si votre licence le permet, votre administrateur peut limiter votre capacité à effectuer des opérations telles que l’exportation de données, l’utilisation de requêtes en langage naturel Q&R ou la publication sur le web. Et lorsqu’un *concepteur* de rapports attribue du contenu à un [espace de travail](end-user-workspaces.md), il peut vous attribuer un rôle d’espace de travail. Les rôles déterminent ce que vous pouvez et ne pouvez pas faire au sein de cet espace de travail. Le *concepteur* peut ajuster les limites de votre licence à l’aide des paramètres d’autorisation. En d’autres termes... c’est compliqué. Espérons que cet article mette fin à tout ou partie de la confusion.
-
-## <a name="per-user-licenses"></a>Licences par utilisateur
-Le premier type de licence est une licence **par utilisateur**. Chaque utilisateur du service Power BI a une licence gratuite ou une licence Pro. Certaines fonctionnalités sont réservées aux utilisateurs disposant de licences Pro.  
-
-- **Une licence Power BI Pro (sans abonnement Premium)** permet à un utilisateur de collaborer avec d’autres utilisateurs Pro en créant et en partageant du contenu. Seuls les utilisateurs disposant d’une licence Pro peuvent publier des rapports, s’abonner à des tableaux de bord et à des rapports, et collaborer avec des collègues dans des espaces de travail. 
-
-    ![image d’utilisateurs Pro](media/end-user-license/power-bi-pro.jpg)
-
-    Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec les rapports et les tableaux de bord publiés par d’autres utilisateurs sur le service Power BI. Les utilisateurs disposant de ce type de licence peuvent partager du contenu et collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs. Sauf si ce contenu est hébergé dans une [capacité Power BI Premium](#understanding-premium-and-premium-capacity). (Pour plus d’informations, consultez [capacité Power BI Premium](#understanding-premium-and-premium-capacity) ci-dessous.) Les licences Pro sont généralement utilisées par les *concepteurs* et les développeurs de rapports. 
+Ce que vous pouvez faire dans le service Power BI dépend de trois choses :
+-    le type de licence et d’abonnement que vous utilisez ;
+-    l’emplacement de stockage du contenu ;
+-    les rôles et les autorisations qui vous sont attribués.
 
 
-- **Une licence Power BI gratuite autonome (sans abonnement Premium)** , bien que puissante, est destinée aux utilisateurs qui débutent avec Power BI ou qui créent du contenu pour eux-mêmes. Consultez [S’inscrire au service Power BI en tant qu’individu](../service-self-service-signup-for-power-bi.md).   
+![image d’utilisateurs Pro](media/end-user-license/power-bi-questions-small.png)
 
-    Une licence utilisateur autonome gratuite est parfaite pour une personne utilisant les exemples Microsoft pour apprendre Power BI. Les titulaires de licences autonomes gratuites ne peuvent pas voir le contenu partagé par d’autres personnes ni partager leur contenu avec d’autres utilisateurs de Power BI. 
+Dans cet article, nous décrivons les fonctionnalités de chaque type de licence et la façon dont *l’emplacement de stockage du contenu* peut affecter *ce que vous pouvez faire avec*. Vous apprendrez également à rechercher votre licence et votre abonnement et à déterminer l’emplacement de stockage de votre contenu. Pour plus d'informations sur les autorisations et les rôles, consultez les [rôles d’espace de travail](end-user-workspaces.md).
 
-    ![image d’utilisateurs autonomes](media/end-user-license/power-bi-free-license.jpg)
+## <a name="licenses"></a>Licences
 
-    Tous les clients disposant d’une licence autonome gratuite peuvent effectuer une mise à niveau vers un [essai gratuit de la licence Power BI Pro](../service-self-service-signup-for-power-bi.md). L’essai gratuit vous offre la puissance et toutes les fonctionnalités d’un utilisateur Power BI Pro.
+Chaque utilisateur du service Power BI utilise une licence *gratuite* ou une licence *Pro*. Si vous êtes un *consommateur* Power BI, vous utilisez probablement une licence gratuite qui est gérée par votre administrateur. 
 
-    ![invitation à un essai gratuit Pro](media/end-user-license/power-bi-pro-trial.png)
+Il est possible d’avoir plusieurs licences en même temps.  Le service vous fournit toujours une expérience correspondant à celle offerte par la meilleure licence que vous avez actuellement. 
 
-- **Une licence gratuite Power BI avec un abonnement Premium** lorsqu’une organisation a un abonnement Premium, les administrateurs et les utilisateurs Pro peuvent attribuer des espaces de travail à la *capacité Premium* et accorder aux utilisateurs un accès gratuit à ces espaces de travail. Un espace de travail dans une capacité Premium est un espace où les utilisateurs Pro peuvent partager et collaborer avec des utilisateurs gratuits, sans que ces derniers aient des comptes Pro. Au sein de ces espaces de travail, les utilisateurs gratuits disposent d’autorisations élevées. Ils peuvent collaborer et partager, exporter des données, s’abonner, interagir avec les filtres et bien plus encore. 
+## <a name="power-bi-premium-capacity"></a>Capacité Power BI Premium
 
-Tout est clair jusqu’ici ?  OK. Examinons plus en détail la **capacité Premium**.
+Premium est un abonnement professionnel qui offre un moyen différent de stocker du contenu, à savoir dans une capacité dédiée. Avec la version Premium, tous les utilisateurs, qu’ils appartiennent ou non à votre entreprise, peuvent afficher votre contenu Power BI, sans avoir à acheter de licences Power BI Pro individuelles. 
 
-## <a name="understanding-premium-and-premium-capacity"></a>Comprendre Premium et la capacité Premium
-Premium est un abonnement **organisationnel**. C’est comme si vous ajoutiez une couche de fonctionnalités à toutes les licences **par utilisateur** Power BI d’une organisation. 
+Premium permet aux utilisateurs Pro de distribuer du contenu sans exiger que les destinataires disposent d’une licence Pro. Des licences Pro sont toutefois nécessaires pour les concepteurs de contenu. Les concepteurs se connectent aux sources de données, modélisent les données et créent des rapports et des tableaux de bord qui sont présentés sous la forme d’applications d’espace de travail. L’utilisateur sans licence Pro peut toujours accéder à un espace de travail qui se trouve dans une capacité Power BI Premium, à condition d’avoir le rôle Visionneur.
 
-Quand une organisation achète une licence Premium, l’administrateur attribue généralement des licences Pro aux employés susceptibles de créer et de partager du contenu. Il attribue ensuite des licences gratuites à toute personne souhaitant consommer ce contenu. Les utilisateurs Pro créent des [espaces de travail d’application](end-user-workspaces.md) et ajoutent du contenu (tableaux de bord, rapports, applications) à ces espaces de travail. Pour permettre aux utilisateurs gratuits de collaborer dans ces espaces de travail, l’administrateur ou l’utilisateur Pro enregistre les espaces de travail dans la *capacité Premium*. 
+Au sein de ces espaces de travail, les concepteurs attribuent des rôles, tels que **viewer**, **contributeur**, **membre** et **administrateur**, qui déterminent dans quelle mesure les collègues peuvent interagir avec le contenu. Pour plus d’informations, consultez [les autorisations et les rôles de l’espace de travail.](end-user-workspaces.md) 
 
-Quand une organisation achète une licence Premium, elle reçoit cette capacité dans le service Power BI qui lui est exclusivement alloué. Il n’est pas partagé par d’autres organisations. Cette capacité est prise en charge par un matériel dédié entièrement géré par Microsoft. Les organisations peuvent choisir d’appliquer leur capacité dédiée de manière étendue ou de l’allouer à des espaces de travail spécifiques. Une organisation peut avoir tous les espaces de travail en capacité ou seulement certains. Vous pouvez identifier un espace de travail dans la capacité Premium par son icône en losange ![icône en losange](media/end-user-license/power-bi-diamond.png).  Un espace de travail dans une capacité Premium est un espace où les utilisateurs Pro peuvent partager et collaborer avec des utilisateurs gratuits, sans que ces derniers aient des comptes Pro. 
+Pour plus d’informations sur la capacité Premium, consultez [Présentation de Microsoft Power BI Premium](../service-premium-what-is.md).
 
-Dans une capacité Premium, les licences Pro sont toujours requises pour les concepteurs de contenu. Les concepteurs créent des espaces de travail, se connectent aux sources de données, modélisent les données et créent des rapports et des tableaux de bord partagés directement ou empaquetés et partagés en tant qu’applications. Les utilisateurs ne disposant pas d’une licence Pro peuvent toujours accéder à un espace de travail d’application qui se trouve dans Power BI Premium, à condition que cet espace de travail se trouve dans la *capacité* Premium et que le propriétaire de l’espace de travail leur accorde l’autorisation.
 
-Dans le diagramme ci-dessous, la partie gauche représente les utilisateurs Pro qui créent et partagent un contenu dans les espaces de travail de l’application. 
+## <a name="find-out-which-licenses-you-have"></a>Identifier les licences que vous utilisez
 
-- **L’espace de travail A** a été créé dans une organisation ne disposant pas d’abonnement Premium. 
+Visitez [votre page Microsoft **Mon compte**](https://portal.office.com/account) pour voir quelles licences vous sont attribuées.  Sélectionnez l'onglet **Abonnements**.
 
-- **L’espace de travail B** a été créé dans une organisation qui dispose d’un abonnement Premium, bien que cet espace de travail particulier n’ait pas été enregistré dans une capacité Premium. L’espace de travail n’a pas d’icône en forme de losange.
 
-- **L’espace de travail C** a été créé dans une organisation qui dispose d’un abonnement Premium et a été enregistré dans une capacité Premium. Cet espace de travail a une icône en forme de losange.  
+Ce premier utilisateur, Pradtanna, a Office 365 E5 qui inclut une licence Power BI Pro.
 
-![image d’utilisateurs Pro](media/end-user-license/power-bi-sharing-scenarios.jpg)
+![Onglet Abonnements du portail Office](media/end-user-license/power-bi-license-office.png)
 
-Le *concepteur* Power BI Pro peut partager et collaborer avec d’autres utilisateurs Pro à l’aide de l’un des trois espaces de travail. Tant que le concepteur partage l’espace de travail avec toute l’organisation ou attribue des rôles d’espace de travail aux utilisateurs Pro. 
+Ce deuxième utilisateur, Zalan, a une licence Power BI gratuite. 
 
-L’utilisateur Power BI Pro peut uniquement partager et collaborer avec des utilisateurs gratuits à l’aide de l’espace de travail C. L’espace de travail doit être attribué à la capacité Premium pour que les utilisateurs gratuits puissent accéder à l’espace de travail. Dans l’espace de travail, le concepteur attribue des rôles aux collaborateurs : *Admin*, *Membre*, *Contributeur* ou *Lecteur*. Votre rôle détermine les actions que vous pouvez effectuer dans l’espace de travail. Les *consommateurs* Power BI sont généralement attribués au rôle *Lecteur*. Pour plus d’informations, consultez [Espaces de travail pour les consommateurs Power BI](end-user-workspaces.md).
+![Onglet Abonnements du portail Office](media/end-user-license/power-bi-license-free.png)
 
-## <a name="find-out-which-license-and-subscription-you-have"></a>Déterminer la licence et l’abonnement que vous avez
-Vous pouvez obtenir des informations sur votre licence et votre abonnement Power BI de plusieurs façons. 
+## <a name="find-out-if-you-have-access-to-premium-capacity"></a>Déterminer si vous avez accès à la capacité Premium
 
-Tout d’abord, déterminez la licence **utilisateur** dont vous disposez.
+Vérifiez d’abord si vous faites partie d’une organisation dotée d’une capacité Premium. L’un des utilisateurs ci-dessus, Pro ou gratuit, peut appartenir à une organisation dotée d’une capacité Premium.  Examinons notre deuxième utilisateur, Zalan.  
 
-- Certaines versions de Microsoft Office incluent une licence Power BI Pro.  Pour savoir si votre version d’Office intègre Power BI, visitez le [portail Office](https://portal.office.com/account) et sélectionnez **Abonnements**.
-
-    Ce premier utilisateur, Pradtanna, a Office 365 E5 qui inclut une licence Power BI Pro.
-
-    ![Onglet Abonnements du portail Office](media/end-user-license/power-bi-license-office.png)
-
-    Ce deuxième utilisateur, Zalan, a une licence Power BI gratuite. 
-
-    ![Onglet Abonnements du portail Office](media/end-user-license/power-bi-license-free.png)
-
-Ensuite, vérifiez si votre compte fait également partie d’un abonnement Premium. L’un des utilisateurs ci-dessus, Pro ou gratuit, peut appartenir à une organisation titulaire d’une licence Premium.  Examinons notre deuxième utilisateur, Zalan.  
+Nous pouvons déterminer si l’organisation de Zalan dispose d’une capacité Premium en recherchant la quantité de stockage disponible. 
 
 - Dans la service Power BI, sélectionnez **Mon espace de travail** puis sélectionnez l’icône en forme d’engrenage dans le coin supérieur droit. Choisissez **Gérer le stockage personnel**.
 
     ![Menu de paramètres sous l’engrenage](media/end-user-license/power-bi-license-personal.png)
 
-    Les licences **par utilisateur**, Pro ou gratuites, offrent 10 Go de stockage dans le cloud que vous pouvez utiliser pour héberger des rapports Power BI ou des classeurs Excel. Si le stockage dépasse 10 Go, cela signifie que vous êtes membre d’un compte organisationnel avec une licence Premium.
+    Si le stockage dépasse 10 Go, cela signifie que vous êtes membre d’une organisation titulaire d’un abonnement Premium. L’image ci-dessous montre que l’organisation de Zalan dispose d’un espace de stockage pouvant atteindre 100 Go.  
 
-    ![Gérer le stockage indiquant 100 Go](media/end-user-license/power-bi-free-capacity.png)
+    ![Gérer un stockage de 100 Go](media/end-user-license/power-bi-free-capacity.png)
 
-    Souvenez-vous que la page du portail Office indiquait que Zalan disposait d’une licence utilisateur pour Power BI (gratuite). Toutefois, étant donné que son organisation a acheté un abonnement Premium, dans le service Power BI, Zalan n’est pas limité à 10 Go de stockage. Il dispose de 100 Go. En tant que *consommateur* au sein d’une organisation disposant d’une licence Premium, tant que le *concepteur* place l’espace de travail dans la capacité Premium, Zalan a la possibilité d’afficher du contenu partagé, de collaborer avec des collègues, d’utiliser des applications et bien plus encore. L’étendue de ses autorisations est définie par son administrateur Power BI et par le concepteur de contenu. Notez qu’un utilisateur Pro a déjà partagé un espace de travail avec Zalan. L’icône en forme de losange indique que cet espace de travail est stocké dans une capacité Premium. 
+Notez qu’un utilisateur Pro a déjà partagé un espace de travail avec Zalan. L’icône en forme de losange indique que cet espace de travail est stocké dans une capacité Premium. 
+
+## <a name="identify-content-hosted-in-premium-capacity"></a>Identifier le contenu hébergé dans une capacité Premium
+
+Une autre façon de déterminer si votre organisation dispose d’une capacité Premium consiste à rechercher des applications et des espaces de travail d’applications avec une icône en forme de losange. Le losange indique que le contenu est stocké dans une capacité Premium. 
+
+Dans l’image ci-dessous, trois des applications sont stockées dans une capacité Premium.
+
+![Écran applications](media/end-user-license/power-bi-premium.png)
+
+    
+En tant que *consommateur*, tant que le *concepteur* place l’espace de travail dans la capacité Premium dédiée, vous avez la possibilité, **au sein de cet espace de travail**, d’afficher du contenu partagé, de collaborer avec des collègues, d’utiliser les tableaux de bord et les rapports des applications et bien plus encore. L’étendue de vos autorisations est définie par votre administrateur Power BI et par le concepteur de contenu. 
 
    
-## <a name="understanding-workspace-roles"></a>Comprendre les rôles d’espace de travail
-Jusqu’à présent, nous avons examiné les licences par utilisateur, les abonnements Premium, les espaces de travail d’application et la capacité Premium. À présent, examinons les *rôles* d’espace de travail.
 
-Étant donné qu’il s’agit d’un article pour les *consommateurs* Power BI, nous avons le scénario suivant :
+## <a name="putting-it-all-together"></a>Exemple complet
 
--  Vous êtes un utilisateur *gratuit* au sein d’une organisation disposant d’un abonnement Power BI Premium. 
-- Un utilisateur Power BI Pro a créé une collection de tableaux de bord et de rapports et publié cette collection sous forme *d’application* dans l’ensemble de votre organisation.  
-- Les applications existent dans les *espaces de travail* et cet espace de travail est dans une capacité Premium.    
-- Cet espace de travail d’application contient un tableau de bord et deux rapports.
-- L’utilisateur Pro nous a attribué le rôle de **Lecteur**.
+Quand une organisation achète un abonnement Premium, l’administrateur attribue généralement des licences Pro aux employés susceptibles travailler dans la capacité Premium ainsi que de créer et de partager du contenu. Il attribue ensuite des licences gratuites à toute personne souhaitant consommer ce contenu. Les utilisateurs Pro créent des [espaces de travail d’application](end-user-workspaces.md) et ajoutent du contenu (tableaux de bord, rapports, applications) à ces espaces de travail. Pour permettre aux utilisateurs gratuits de collaborer dans ces espaces de travail, l’administrateur ou l’utilisateur Pro affectent les espaces de travail à une *capacité dédiée*.    
+<br>
 
-### <a name="the-viewer-role"></a>Le rôle Lecteur
-Les rôles permettent aux *concepteurs* Power BI de gérer qui peut faire quoi dans un espace de travail, ce qui permet aux équipes de collaborer. L’un de ces rôles est **Lecteur**. 
+|Type de licence  |capacité partagée  |capacité dédiée  |
+|---------|---------|---------|
+|**Gratuit**     |  Pour une utilisation en tant que bac à sable personnel dans lequel vous créez du contenu pour vous-même et interagissez avec ce contenu. C’est un excellent moyen de tester le service Power BI. Vous ne pouvez ni utiliser le contenu d’une autre personne, ni partager votre contenu avec d’autres utilisateurs <sup>1</sup>     |   Interagissez avec le contenu affecté à la capacité dédiée et partagé avec vous. Les utilisateurs gratuits et Pro peuvent collaborer sans que les utilisateurs gratuits disposent de comptes Pro.      |
+|**Pro**     |  Collaborez avec d’autres utilisateurs Pro en créant et en partageant du contenu.        |  Collaborez avec des utilisateurs gratuits et Pro en créant et en partageant du contenu.       |
 
-Lorsque l’espace de travail se trouve dans une capacité Power BI Premium, les utilisateurs avec le rôle Lecteur peuvent accéder l’espace de travail même s’ils n’ont pas de licence Power BI Pro. Étant donné que le rôle Viewer ne peut pas accéder aux données sous-jacentes ou les exporter, il s’agit d’un moyen sûr d’interagir avec les tableaux de bord, les rapports et les applications.
 
-> [!TIP]
-> Pour en savoir plus sur les autres rôles (Admin, Membre et Collaborateur), consultez [création d’un espace de travail](../service-new-workspaces.md).
+<sup>1</sup> Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting). 
+
+Dans le diagramme ci-dessous, la partie gauche représente les utilisateurs Pro qui créent et partagent un contenu dans les espaces de travail de l’application. 
+
+- **L’espace de travail A** a été créé dans une organisation ne disposant pas de capacité Premium. 
+
+- **L’espace de travail B** a été créé dans une organisation qui dispose d’un abonnement Premium, et l’espace de travail a été enregistré dans une capacité dédiée. Cet espace de travail a une icône en forme de losange.  
+
+    ![image de trois espaces de travail](media/end-user-license/power-bi-dedicated.jpg)
+
+Le *concepteur* Power BI Pro peut partager et collaborer avec d’autres utilisateurs Pro à l’aide de l’un des trois espaces de travail. Mais la seule façon dont l’utilisateur Power BI Pro peut partager et collaborer avec des utilisateurs gratuits est l’utilisation de l’espace de travail B, qui est une capacité dédiée de niveau Premium.  Dans l’espace de travail, le concepteur attribue des rôles aux collaborateurs. Votre rôle détermine les actions que vous pouvez effectuer dans l’espace de travail. Les *consommateurs* Power BI sont généralement attribués au rôle *Lecteur*. Pour plus d’informations sur les rôles, consultez [Espaces de travail pour les consommateurs Power BI](end-user-workspaces.md).
+
+
+
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+- Il est aussi possible d’avoir plusieurs licences Power BI. Le service Power BI fournit toujours l’expérience correspondant à celle offerte par la meilleure licence que vous avez actuellement. Par exemple, si vous avez une licence Pro et une licence gratuite, le service Power BI utilisera la licence Pro.
+
+- Si vous souhaitez partager et créer du contenu (tableaux de bord, rapports, applications), vous n’êtes peut-être pas un *consommateur* Power BI, mais un *concepteur*. Envisagez de passer à une licence utilisateur Pro. Vous pouvez vous inscrire pour une évaluation gratuite de 60 jours de Power BI Pro en sélectionnant la boîte de dialogue de mise à niveau qui s’affiche dans le service Power BI chaque fois que vous tentez d’utiliser une fonctionnalité Pro.
+
+    ![boîte de dialogue avec lien vers la version d’évaluation Pro](media/end-user-license/power-bi-trial.png)
+
+  À la fin des 60 jours d’évaluation, votre licence redevient une licence Power BI gratuite. Après cela, vous n’avez plus accès aux fonctionnalités qui nécessitent une licence Power BI Pro. Si vous souhaitez continuer avec une licence Pro, contactez votre administrateur pour qu’il achète une licence Power BI Pro. Si vous n’avez pas d’administrateur, visitez [la page de tarification Power BI](https://powerbi.microsoft.com/pricing/).     
+
+
+- Si vous vous êtes inscrit à une licence gratuite, elle n’expire jamais. Par conséquent, si vous effectuez une mise à niveau vers une version d’évaluation Pro ou que votre organisation vous fournit une licence Pro, puis que votre période d’évaluation se termine ou que votre organisation supprime votre licence Pro, vous pouvez toujours revenir à la licence gratuite, sauf si vous ou un administrateur annulez la licence. 
+
+- <sup>1</sup> Une licence utilisateur gratuite pour le service Power BI est parfaite pour une personne qui l’explore ou l’utilise pour analyser et visualiser des données personnelles à l’aide de **Mon espace de travail**. Un utilisateur gratuit n’utilise pas Power BI pour collaborer avec des collègues. Les titulaires de licences gratuites ne peuvent pas voir le contenu partagé par d’autres personnes ni partager leur contenu avec d’autres utilisateurs de Power BI. 
+
+    ![image d’utilisateurs autonomes](media/end-user-license/power-bi-free-license.jpg)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Suis-je un *consommateur* Power BI ?](end-user-consumer.md)    
-[En savoir plus sur les espaces de travail](end-user-workspaces.md)    
-<!--[View Power BI features by license type](end-user-features.md) -->
-
+- [Suis-je un *consommateur* Power BI ?](end-user-consumer.md)    
+- [En savoir plus sur les espaces de travail](end-user-workspaces.md)    
+- [Afficher les fonctionnalités des consommateurs de Power BI par type de licence](end-user-features.md)

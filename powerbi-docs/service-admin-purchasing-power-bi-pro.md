@@ -6,33 +6,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 410058cad59fdf134b54b45754ef06c0d382c4ef
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79525634"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439937"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 
 >[!IMPORTANT]
->Êtes-vous prêt à passer à une licence Power BI Pro ? Accédez directement à la [Prise en main de Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) pour configurer votre compte.
+>Cet article est destiné aux administrateurs. Êtes-vous prêt à passer à une licence Power BI Pro ? Accédez directement à la [Prise en main de Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) pour configurer votre compte.
 
-Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec les rapports et les tableaux de bord publiés par d’autres utilisateurs sur le service Power BI. Les utilisateurs disposant de ce type de licence peuvent partager du contenu et collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d'informations, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
+Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec les rapports et les tableaux de bord publiés par d’autres utilisateurs sur le service Power BI. Les utilisateurs disposant de ce type de licence peuvent partager du contenu et collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d’informations sur les types de licences et d’abonnements disponibles, consultez [Gestion des licences Power BI dans l’organisation](service-admin-licensing-organization.md).
 
 ## <a name="purchase-power-bi-pro-user-licenses"></a>Acheter des licences utilisateur Power BI Pro
 
 Cet article explique comment acheter des licences utilisateur Power BI Pro dans le Centre d’administration Microsoft 365. Une fois que vous avez acheté des licences, vous pouvez les affecter aux utilisateurs dans le Centre d’administration Microsoft 365 ou sur le Portail Azure.
 
 > [!NOTE]
-> À compter du 14 janvier 2020, les fonctionnalités d’achat, d’abonnement et de gestion des licences libre-service pour les produits Power Platform (Power BI, Power Apps et Power Automate) sont disponibles pour les clients cloud commerciaux. Pour plus d’informations, notamment sur les étapes à suivre pour activer ou désactiver l’achat libre-service dans votre organisation, consultez [FAQ sur l’achat libre-service](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> À compter du 14 janvier 2020, les fonctionnalités d’achat, d’abonnement et de gestion des licences libre-service pour les produits Power Platform (Power BI, Power Apps et Power Automate) sont disponibles pour les clients cloud commerciaux. Pour plus d’informations, consultez [FAQ sur l’achat en libre-service](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Pour activer ou désactiver les fonctionnalités d’achat en libre-service, consultez [Activation et désactivation de l’inscription et de l’achat en libre-service](admin/service-admin-disable-self-service.md).
 
 ### <a name="prerequisites"></a>Prérequis
 
-Pour acheter et attribuer des licences dans le Centre d’administration Microsoft 365, vous devez être membre du rôle **[Administrateur général ou Administrateur de facturation](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)** dans Microsoft 365.
+Pour pouvoir acheter et affecter des licences dans le Centre d’administration Microsoft 365, vous devez être membre du rôle [Administrateur général ou Administrateur de facturation](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) dans Microsoft 365.
 
 Pour attribuer des licences dans le portail Azure, vous devez être propriétaire de l’abonnement Azure utilisé par Power BI pour les recherches Azure Active Directory.
 
@@ -80,10 +80,10 @@ Suivez ces étapes pour affecter des licences Power BI Pro à des comptes d’ut
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez affecté des licences, découvrez plus en détail Power BI Pro.
+- [Gestion des licences Power BI dans votre organisation](service-admin-licensing-organization.md)
 
-[Gestion des licences Power BI dans votre organisation](service-admin-licensing-organization.md)
+ - [Rechercher les utilisateurs Power BI qui se sont connectés](service-admin-access-usage.md)
 
-[Rechercher les utilisateurs Power BI qui se sont connectés](service-admin-access-usage.md)
+ - [S’inscrire à Power BI en tant qu’individu](service-self-service-signup-for-power-bi.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

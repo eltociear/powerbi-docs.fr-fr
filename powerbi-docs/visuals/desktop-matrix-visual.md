@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: c091295d50bac576af411d967b9902d6804f82be
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576848"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637847"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -57,7 +57,8 @@ L’état de développement de la matrice sera enregistré avec le rapport. Une 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-
+> [!NOTE]
+> Si vous créez un rapport en plus d’un modèle multidimensionnel Analysis Services, des considérations spécifiques doivent être prises en compte pour développer/réduire si le modèle utilise la fonctionnalité de membre par défaut. Pour plus d’informations, consultez [Utiliser des modèles multidimensionnels dans Power BI](../desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Utilisation de la descente dans la hiérarchie avec le visuel de matrice
 Le visuel de la matrice vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.

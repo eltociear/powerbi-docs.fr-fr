@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436016"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066345"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Créer une application modèle dans Power BI
 
@@ -166,7 +166,7 @@ Examinons chacune de ces phases :
 
     Si vous ne voyez pas cette option, demandez à votre administrateur Power BI qu’il vous accorde les [autorisations de développement d’applications modèles](service-admin-portal.md#template-apps-settings) dans le portail d’administration.
 11. Sélectionnez **Promouvoir** pour confirmer votre choix.
-12. Copiez cette nouvelle URL à partager en dehors de votre locataire pour les besoins du test. Ce lien est le même que celui que vous soumettez pour commencer le processus de distribution de votre application sur AppSource en créant une [nouvelle offre du portail Cloud Partner](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Soumettez uniquement des liens de préproduction au portail Cloud Partner. Une fois que l’application est approuvée et que vous avez obtenu une notification disant qu’elle est publiée dans AppSource, vous pouvez promouvoir ce package en production dans Power BI.
+12. Copiez cette nouvelle URL à partager en dehors de votre locataire pour les besoins du test. Ce lien est le même que celui que vous soumettez pour commencer le processus de distribution de votre application sur AppSource en créant une [nouvelle offre d’Espace partenaires](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Soumettez uniquement des liens de préproduction vers l’Espace partenaires. Une fois que l’application est approuvée et que vous avez obtenu une notification disant qu’elle est publiée dans AppSource, vous pouvez promouvoir ce package en production dans Power BI.
 13. Quand votre application est prête à être mise en production ou partagée via AppSource, revenez au volet **Gestion des mises en production** et sélectionnez **Promouvoir l’application** à côté de **Préproduction**.
 14. Sélectionnez **Promouvoir** pour confirmer votre choix.
 
@@ -174,10 +174,10 @@ Examinons chacune de ces phases :
 
     ![Application en production](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Pour mettre votre application à la disposition du plus grand nombre possible d’utilisateurs Power BI à travers le monde, nous vous conseillons de la soumettre sur AppSource. Pour plus d’informations, consultez [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Pour mettre votre application à la disposition du plus grand nombre possible d’utilisateurs Power BI à travers le monde, nous vous conseillons de la soumettre sur AppSource. Pour plus d’informations, consultez [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez de quelle manière vos clients peuvent interagir avec votre application modèle dans l’article [Installer, personnaliser et distribuer des applications modèles dans votre organisation](service-template-apps-install-distribute.md).
 
-Pour plus d’informations sur la distribution de votre application, consultez [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Pour plus d’informations sur la distribution de votre application, consultez [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
