@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 40bbec8a6a28def6cde9128b51c8919fd4f493de
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488726"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120346"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -60,30 +60,7 @@ Les rôles vous permettent de gérer qui peut faire quoi dans un espace de trava
 
 Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes individuelles du groupe ont accès au contenu. Si vous imbriquez des groupes d’utilisateurs, tous les utilisateurs qui en font partie ont les autorisations associées.
 
-Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
-
-|Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
-|---|---|---|---|---|
-| Mettre à jour et supprimer l’espace de travail.  | X  |   |   |   | 
-| Ajouter/supprimer des personnes, y compris d’autres administrateurs.  | X  |   |   |   |
-| Ajouter des membres ou d’autres rôles avec des autorisations inférieures.  |  X | X  |   |   |
-| Publier et mettre à jour une application. |  X | X  |   |   |
-| Partager un élément ou une application.<sup>1</sup> |  X | X  |   |   |
-| Permettre à d’autres utilisateurs de repartager des éléments.<sup>1</sup> |  X | X  |   |   |
-| Proposer des applications sur la page d’accueil de collègues |  X | X  |   |   |
-| Proposer des tableaux de bord et des rapports sur la page d’accueil de collègues |  X | X  | X |   |
-| Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
-| Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
-| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>1</sup> |  X | X  | X  |   |
-| Copier un rapport.<sup>2</sup> | X | X | X |  |
-| Voir et utiliser un élément.<sup>3</sup> |  X | X  | X  | X  |
-| Lire les données stockées dans les flux de données des espaces de travail | X | X | X | X |
-
-1. Les contributeurs et les lecteurs peuvent partager des éléments dans un espace de travail s’ils ont des autorisations de repartage.
-2. Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, vous devez remplir quelques critères supplémentaires :
-    - Vous avez besoin d’une licence Power BI Pro. Voir la section suivante, [Gestion des licences](#licensing), pour plus de détails.
-    - Vous devez avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
-2. Même si vous n’avez pas de licence Power BI Pro, vous pouvez voir et utiliser les éléments du service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.
+[!INCLUDE [power-bi-workspace-roles-table](includes/power-bi-workspace-roles-table.md)]
 
 ## <a name="licensing"></a>Licences
 Toutes les personnes que vous ajoutez à un espace de travail dans la capacité partagée doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. 

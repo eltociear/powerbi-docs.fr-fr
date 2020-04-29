@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: a9a5f3fd5304e64209b6069741dffcc3fa9b07c8
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81436342"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256145"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Office 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -88,7 +88,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
 |  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
 |  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
-|  |Rapports paginés|Disponible|Disponible|Dans la feuille de route|
+|  |Rapports paginés|Disponible|Dans la feuille de route|Dans la feuille de route|
 |  |Applications modèles|Non disponible|Non disponible|Non disponible|
 |Se connecter aux données|Importer des données et des rapports à partir d’Excel|Disponible|Disponible|Disponible|
 |  |Importer des données à partir de fichiers CSV|Disponible|Disponible|Disponible|
