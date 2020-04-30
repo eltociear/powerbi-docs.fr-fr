@@ -2,20 +2,20 @@
 title: Échantillon de suivi COVID-19 pour les gouvernements régionaux et d’État des États-Unis
 description: Téléchargez et modifiez l’échantillon de rapport avec les données d’État et régionales des États-Unis pour la pandémie de COVID-19.
 author: LukaszPawlowski-MS
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979773"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584926"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>Échantillon de suivi COVID-19 pour les gouvernements régionaux et d’État des États-Unis
 
@@ -48,7 +48,7 @@ Pour inclure le graphique interactif sur votre site, copiez et collez le code in
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Le code incorporé est un élément HTML iFrame que vous pouvez insérer dans toute page HTML. Ajustez la largeur et la hauteur de l’iFrame fournies pour qu’il s’ajuste à votre site. L’échantillon de rapport est créé dans des proportions 16:9. Sélectionnez donc une taille qui préserve cette dimension. En cas de mise en œuvre correcte, le graphique s’affiche sans les bordures grises supplémentaires. Il est utile d’[évaluer les conseils et astuces de dimensionnement d’iFrame](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width) lors de l’apport de ces modifications.
+Le code incorporé est un élément HTML iFrame que vous pouvez insérer dans toute page HTML. Ajustez la largeur et la hauteur de l’iFrame fournies pour qu’il s’ajuste à votre site. L’échantillon de rapport est créé dans des proportions 16:9. Sélectionnez donc une taille qui préserve cette dimension. En cas de mise en œuvre correcte, le graphique s’affiche sans les bordures grises supplémentaires. Il est utile d’[évaluer les conseils et astuces de dimensionnement d’iFrame](../service-publish-to-web.md#tips-for-iframe-height-and-width) lors de l’apport de ces modifications.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Option 2 : Personnaliser l’échantillon de fichier de Power BI
 
@@ -112,7 +112,7 @@ Si vous tentez de publier le rapport personnalisé sur votre site web, il est re
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Créer un code incorporé de publication sur le web 
 
-Pour incorporer votre rapport personnalisé dans votre propre site web, suivez les instructions relatives à la [création de votre propre code incorporé de publication sur le web](../service-publish-to-web.md#how-to-use-publish-to-web).
+Pour incorporer votre rapport personnalisé dans votre propre site web, suivez les instructions relatives à la [création de votre propre code incorporé de publication sur le web](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Une fois que vous avez publié votre code incorporé, vous utilisez l’iFrame dans la boîte de dialogue de confirmation pour l’incorporer dans votre site web.
 
