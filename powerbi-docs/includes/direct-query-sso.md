@@ -5,26 +5,24 @@ services: powerbi
 author: davidiseminger
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/31/2019
+ms.date: 04/28/2020
 ms.author: davidi
-ms.openlocfilehash: eec30d11c1bd99271416ab1a3a2dbb581687e315
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: d56988986cfd994bb21c9bc25d024903719472cf
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698306"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255814"
 ---
 ## <a name="single-sign-on"></a>Authentification unique
 
-Une fois que vous avez publié un jeu de données Azure SQL DirectQuery dans le service, vous pouvez activer l’authentification unique (SSO) via OAuth2 d’Azure Active Directory (Azure AD) pour vos utilisateurs finaux.
+Une fois que vous avez publié un jeu de données Azure SQL DirectQuery sur le service, vous pouvez activer l’authentification unique via OAuth2 d’Azure Active Directory (Azure AD) pour vos utilisateurs finaux.
 
 Pour activer l’authentification unique, accédez aux paramètres du jeu de données, ouvrez l’onglet **Sources de données**, puis cochez la case de l’authentification unique.
 
 ![Configurer la boîte de dialogue DQ de SQL Azure](media/direct-query-sso/sso-dialog.png)
 
-Quand l’option d’authentification unique est activée et que vos utilisateurs accèdent aux rapports basés sur la source de données, Power BI envoie leurs informations d’identification Azure AD dans les requêtes à Azure SQL Database ou à l’entrepôt de données. Ainsi, Power BI est en mesure de respecter les paramètres de sécurité qui sont configurés au niveau de la source de données.
+Quand l’option d’authentification unique est activée et que vos utilisateurs accèdent aux rapports basés sur la source de données, Power BI envoie leurs informations d’identification Azure AD dans les requêtes à Azure SQL Database ou à l’entrepôt de données. Cette option permet à Power BI de respecter les paramètres de sécurité qui sont configurés au niveau de la source de données.
 
 L’option d’authentification unique prend effet sur tous les jeux de données qui utilisent cette source de données. Elle n’affecte pas la méthode d’authentification utilisée pour les scénarios d’importation.
 
-> [!Note]
-> L’authentification multifacteur Azure (MFA) n’est pas pris en charge. Les utilisateurs qui souhaitent utiliser l’authentification unique avec Azure SQL DirectQuery doivent être exemptés de la MFA.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 301d6397e4a3ae4498234bae3ad8a49aa7552722
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80464632"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584669"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Utilisation de métadonnées de jeu de données avancées (préversion)
 
@@ -46,6 +46,7 @@ Une fois la fonctionnalité en préversion activée, Power BI Desktop tente de 
 
 Dans la préversion, les limitations suivantes s’appliquent lorsque la fonctionnalité en préversion est activée.
 
+### <a name="unsupported-features-and-connectors"></a>Fonctionnalités et connecteurs non pris en charge
 Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mis à niveau, la mise à niveau échoue si le jeu de données contient l’une des fonctionnalités ou l’un des connecteurs suivants. Si cet échec se produit, il ne doit pas y avoir d’impact immédiat sur l’expérience utilisateur et Power BI Desktop continue d’utiliser le format de métadonnées précédent.
 
 * Scripts Python
@@ -67,6 +68,8 @@ Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mi
 
 En outre, les fichiers PBIX et PBIT qui ont déjà été mis à niveau pour utiliser les **métadonnées de jeu de données avancées** *ne peuvent pas* utiliser les fonctionnalités ni les connecteurs ci-dessus dans la version actuelle.
 
+### <a name="lineage-view"></a>Vue de traçabilité
+Les jeux de données qui utilisent le nouveau format de métadonnées n’affichent actuellement pas de liens vers les flux de données dans la vue de la traçabilité du service Power BI.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,21 +1,22 @@
 ---
 title: Webinaires Power BI
 description: Webinaires Power BI
-author: v-tatero
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2019
+ms.date: 04/23/2020
 ms.author: kfollis
-ms.openlocfilehash: 08e1303d0f1a5ee9e0e3e4e778e3f81e0a183df5
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: cfdb4f380cd8ad9655593798f591a4c915988c43
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267546"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120088"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
+[//]: # "Tatevik Tatero est un fournisseur qui travaille avec Chauncy Freels et aide à gérer cette liste de webinaires"
 
 Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions enregistrées à la demande.
 
@@ -89,7 +90,7 @@ Commencez avec ces webinaires populaires à la demande
 <br>par Olaf Hubel et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
-**Simplement percutant – Conseils pour une meilleure conception de visualisation**
+**Simplement convaincant – Conseils pour une meilleure conception de la visualisation**
 <br>par Miranda Li
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
@@ -156,17 +157,13 @@ Regardez les sessions enregistrées à tout moment
 <br>par Liz McCreesh de Thorogood
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
-**Transformer les données client en ventes au détail réussies avec Power Bi**
+**Transformer les données client en ventes au détail réussies avec Power BI**
 <br>par Angad Soni, Hitachi Solutions
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
 
 **Solutions de soins de santé éprouvées pour améliorer les résultats pour les patients et la rentabilité**
 <br>par Stephen Cracknell et Stuart Macanliss de US Medical IT
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
-
-**Intelligence appliquée pour les ventes et les services**
-<br>par Ed Bobrin d’Avanade
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
 **Fabricants : votre secteur est en phase de transition numérique – maintenez votre leadership en tirant parti des analyses pour optimiser votre rentabilité**
 <br>par Jon Thompson de Blue Margin et Jim Pastor d’Elgin Fastener Group
@@ -186,7 +183,7 @@ Regardez les sessions enregistrées à tout moment
 
 ### <a name="community"></a>Communauté ###
 
-**Conseils, astuces et outils Power BI des propriétaires de PowerBI.Tips**
+**Conseils, astuces et outils Power BI des fondateurs de PowerBI.Tips**
 <br>par Mike Carlo et Seth Bauer
 <br>[Regarder maintenant](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
@@ -210,14 +207,14 @@ Regardez les sessions enregistrées à tout moment
 <br>par Ted Pattison
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### <a name="advanced-topics"></a>Rubriques avancées ###
+### <a name="advanced-topics"></a>Rubriques avancées
 
 **Analytique avancée avec Excel et Power BI**
 <br>par Nagasaikiran Kambhampati et Miguel Martinez
 <br>[Inscrivez-vous pour regarder](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Télécharger le kit de démarrage Analytiques avancées pour suivre la procédure](https://aka.ms/pbiaawebinar)
 
-**[Série de webinaires sur l’infrastructure d’adoption Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+**Série de webinaires sur l’infrastructure d’adoption de Power BI**
 <br>par Manu Kanwarpal et Paul Henwood
 <br>[Inscrivez-vous pour regarder maintenant la partie 1 – Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 <br>[Inscrivez-vous pour regarder maintenant la partie 2 – Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
@@ -225,36 +222,13 @@ Regardez les sessions enregistrées à tout moment
 <br>[Inscrivez-vous pour regarder maintenant la partie 4 – Sécurité : préserver la sécurité des données avec Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Inscrivez-vous pour regarder maintenant la partie 5 – Lancement : réussir le lancement de Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**Série de webinaires Office 365 Finance Pros**
-<br>par Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky et Miguel Martinez
-<br>Conseils, astuces et meilleures pratiques pour travailler plus efficacement au quotidien à l’aide d’Office 365.
-<br>[S’inscrire et regarder maintenant](https://aka.ms/Office365FinanceProsPBI)
-
 **Être un Jedi Power BI de pile complet – une présentation pas à pas des fonctionnalités Power BI les plus avancées via les données Star Wars**
 <br>par Gil Raviv
 <br>[Regarder maintenant](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-**Comment implémenter une stratégie de gouvernance des données efficace qui rend votre organisation plus sécurisée**
-<br>par Ajay Anandan
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
-
-**Accélération de l’adoption de l’aide à la décision moderne avec Power BI Premium**
-<br>par Sirui Sun et Miguel Martinez
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**Nouveautés de Power BI Report Server**
-<br>par Riccardo Muti, Chris Finlan et Chinmay Joshi
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
-
-**Comment Microsoft développe Power BI**
-<br>par Kirkland Barrett
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
-
 ## <a name="see-also"></a>Voir aussi
 
 - [Livres blancs Power BI](whitepapers.md)
-
-- [Sessions à la demande du Sommet Microsoft Data Insights 2017](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
 - [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)
 

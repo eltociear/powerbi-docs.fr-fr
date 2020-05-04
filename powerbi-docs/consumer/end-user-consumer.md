@@ -5,15 +5,15 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/24/2020
+ms.date: 04/22/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: b3f23b85d048a4ca4232152e5d2252c522a036ac
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79039926"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120230"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Service Power BI pour les consommateurs
 
@@ -45,7 +45,7 @@ En tant que consommateur, vous n’avez pas accès à toutes les fonctionnalité
 
 Vous entendrez sans doute le terme « Power BI Desktop » ou simplement « Desktop » : il s’agit d’un outil autonome utilisé par les *concepteurs* qui créent et partagent des tableaux de bord et des rapports avec vous.  Il est important de savoir qu’il existe d’autres outils Power BI, mais si vous êtes consommateur, vous utiliserez seulement le service Power BI. 
 
-Et puisque vous travaillez avec du contenu *partagé*, vous aurez besoin d’une licence **gratuite** standard, au sein d’une organisation qui utilise la capacité **Premium**. [Quelle est ma licence ?](end-user-license.md)
+Et puisque vous travaillez avec du contenu *partagé*, tout ce dont vous avez besoin est une licence **gratuite**, car vous travaillez dans une organisation qui utilise une capacité **Premium**. [Quelle est ma licence ?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée 

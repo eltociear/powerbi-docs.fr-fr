@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42455033a0853cc9a962d3167ed8a69a0f42c4e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496906"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120272"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -28,6 +28,11 @@ Maintenant que vous avez des [connaissances de base sur les applications](end-us
 Il existe plusieurs façons d’obtenir une nouvelle application. Un collègue qui conçoit des rapports peut installer l’application automatiquement dans votre compte Power BI ou vous envoyer un lien direct vers l’application. Vous pouvez également accéder à AppSource et rechercher des applications mises à votre disposition par les concepteurs d’applications, qu’elles soient internes ou externes à votre entreprise. 
 
 Dans Power BI sur votre appareil mobile, vous pouvez uniquement installer une application à partir d’un lien direct, et non à partir d’AppSource. Si le concepteur de l’application installe l’application automatiquement, celle-ci apparaît dans votre liste d’applications.
+
+## <a name="apps-and-licenses"></a>Applications et licences
+Tous les utilisateurs de Power BI ne peuvent pas visualiser et interagir avec les applications. 
+- Si vous disposez d’une licence gratuite, vous pouvez ouvrir des applications qui ont été partagées avec vous et qui sont stockées dans un espace de travail d’une capacité Premium.
+- Si vous disposez d’une licence Pro, vous pouvez ouvrir des applications qui ont été partagées avec vous.
 
 ## <a name="install-an-app-from-a-direct-link"></a>Installer une application à partir d’un lien direct
 Pour installer une nouvelle application, le moyen le plus simple est de recevoir du concepteur de l’application un e-mail contenant un lien direct.  
@@ -45,7 +50,10 @@ Quand vous sélectionnez le lien qui figure dans l’e-mail sur votre appareil m
 ![Liste de contenu d’application sur l’appareil mobile](./media/end-user-app-view/power-bi-ios.png)
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Obtenir l’application à partir de Microsoft AppSource
-Vous pouvez également rechercher et installer des applications à partir de Microsoft AppSource. Seules les applications auxquelles vous avez accès sont présentées (l’auteur des applications vous a donné son autorisation ou l’a donnée à tout le monde).
+Vous pouvez également rechercher et installer des applications à partir de Microsoft AppSource. Seules les applications auxquelles vous avez accès sont présentées (l’auteur des applications vous a donné son autorisation ou l’a donnée à tout le monde). 
+
+> [!NOTE]
+> Si vous utilisez une licence utilisateur gratuite, vous pouvez télécharger des applications, mais vous ne pouvez pas les visualiser, sauf si vous effectuez une mise à niveau vers un compte Power BI Pro ou si l’application est stockée dans une capacité Premium. Pour plus d’informations, consultez [Licences pour les consommateurs](end-user-license.md).
 
 1. Sélectionnez **Applications**  > **Obtenir des applications**. 
    
@@ -79,7 +87,12 @@ Dans cet exemple, nous allons ouvrir un des exemples d’applications Microsoft.
 
 5. Le service Power BI affiche un message de réussite une fois l’application installée. Sélectionnez **Accéder à l’application** pour ouvrir l’application. Selon la façon dont le concepteur a créé l’application, le tableau de bord ou le rapport de l’application s’affiche.
 
+
+
     ![Application correctement installée ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > Si vous utilisez une licence utilisateur gratuite, vous pouvez télécharger des applications, mais vous ne pouvez pas les visualiser, sauf si vous effectuez une mise à niveau vers un compte Power BI Pro. 
 
     Vous pouvez également ouvrir l’application directement à partir de votre liste des contenus d’application en sélectionnant **Applications** et en choisissant **Sales & marketing**.
 
@@ -123,8 +136,6 @@ De temps à autre, les créateurs d’applications sont susceptibles de publier 
     > L’installation d’une nouvelle version remplace toutes les modifications que vous avez apportées aux rapports et aux tableaux de bord. Pour conserver vos rapports et tableaux de bord mis à jour, vous pouvez les enregistrer sous un autre nom ou à un autre emplacement avant d’effectuer l’installation. 
 
     4. Une fois que vous avez installé la version mise à jour, sélectionnez **Mettre à jour l’application** pour effectuer le processus de mise à jour. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Étapes suivantes

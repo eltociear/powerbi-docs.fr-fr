@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729710"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584771"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -35,6 +35,8 @@ Dans Power BI Desktop, vous pouvez déterminer et spécifier le type de données
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 La liste déroulante Type de données dans l’Éditeur de requête comporte deux types de données actuellement absents dans la vue Données ou Rapport : **Date/Heure/Fuseau horaire** et **Durée**. Quand une colonne avec ces types de données est chargée dans le modèle et affichée dans la vue Données ou Rapport, une colonne avec le type de données Date/Heure/Fuseau horaire est convertie au format Date/Heure et une colonne avec le type de données Durée est convertie au format Nombre décimal.
+
+Le type de données **Binaire** n’est pas pris en charge actuellement en dehors de l’éditeur de requête. Dans l’éditeur de requête, vous pouvez l’utiliser lors du chargement de fichiers binaires si vous le convertissez en d’autres types de données avant de le charger dans le modèle Power BI. Il existe dans les menus Vue de données et Vue de rapport pour des raisons de compatibilité, mais si vous essayez de charger des colonnes binaires dans le modèle Power BI, vous pouvez rencontrer des erreurs.  
 
 ### <a name="number-types"></a>Types numériques
 Power BI Desktop prend en charge trois types numériques :
@@ -71,6 +73,16 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 
 ### <a name="blanksnulls-type"></a>Type Vide/Null
 **Vide** : type de données dans DAX qui représente et remplace les valeurs null SQL. Vous pouvez créer une valeur vide à l’aide de la fonction [VIDE](https://msdn.microsoft.com/library/ee634820.aspx) et vérifier la présence de valeurs vides à l’aide de la fonction logique [ESTVIDE](https://msdn.microsoft.com/library/ee634204.aspx).
+
+### <a name="binary-data-type"></a>Type de données Binaire
+
+Le type de données Binaire peut être utilisé pour représenter n’importe quelles autres données au format binaire. Dans l’éditeur de requête, vous pouvez l’utiliser lors du chargement de fichiers binaires si vous le convertissez en d’autres types de données avant de le charger dans le modèle Power BI. Les colonnes binaires ne sont pas prises en charge dans le modèle de données Power BI. Il existe dans les menus Vue de données et Vue de rapport pour des raisons de compatibilité, mais si vous essayez de charger des colonnes binaires dans le modèle Power BI, vous pouvez rencontrer des erreurs.
+
+
+> [!NOTE]
+>  Si une colonne binaire se trouve dans le résultat des étapes d’une requête, une tentative d’actualisation des données via une passerelle peut provoquer des erreurs. Il est recommandé de supprimer explicitement toutes les colonnes binaires comme dernière étape dans vos requêtes.    
+> 
+>
 
 ### <a name="table-data-type"></a>Type de données de table
 DAX utilise un type de données de table dans de nombreuses fonctions, telles que les agrégations et les calculs Time Intelligence. Certaines fonctions nécessitent une référence à une table ; d’autres retournent une table qui peut ensuite servir d’entrée pour d’autres fonctions. Dans certaines fonctions qui nécessitent une table comme entrée, vous pouvez spécifier une expression qui correspond à une table. Pour certaines fonctions, une référence à une table de base est obligatoire. Pour plus d’informations sur les exigences relatives à des fonctions spécifiques, consultez [Référence des fonctions DAX](https://msdn.microsoft.com/library/ee634396.aspx).

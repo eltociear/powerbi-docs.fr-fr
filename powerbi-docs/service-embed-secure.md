@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4be8a1ce88d50461ca51bb65278b823046459e30
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488818"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585037"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -22,11 +22,13 @@ Avec la nouvelle option **Incorporer** pour les rapports Power BI, vous pouvez i
 
 L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.md) et les paramètres d’URL. Elle vous permet d’effectuer une intégration aux portails à l’aide d’une approche avec peu de code qui nécessite uniquement une connaissance élémentaire de HTML et de JavaScript.
 
-## <a name="how-to-embed-power-bi-reports-into-portals"></a>Comment **incorporer** des rapports Power BI dans des portails
+## <a name="how-to-embed-power-bi-reports-into-portals"></a>Comment incorporer des rapports Power BI dans des portails
 
-1. La nouvelle option **Incorporer** est disponible dans le menu **Fichier** pour les rapports dans le service Power BI.
+1. Ouvrez un rapport dans le service Power BI.
 
-    ![Option déroulante Incorporer sécurisée](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. Dans le menu **Plus d’options (...)** , sélectionnez **Incorporer** >  **Site web ou portail**.
+
+    ![Option Site web ou portail](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Sélectionnez l’option **Incorporer** pour ouvrir une boîte de dialogue qui fournit un lien et un iFrame que vous pouvez utiliser pour incorporer le rapport de manière sécurisée.
 

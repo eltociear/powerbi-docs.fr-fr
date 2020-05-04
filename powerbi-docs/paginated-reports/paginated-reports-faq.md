@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
-ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
+ms.date: 04/29/2020
+ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766295"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584991"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -173,6 +173,11 @@ Non, un contrôle de visionneuse de rapports n’est pas disponible actuellement
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Peut-on rechercher des rapports paginés à partir de la nouvelle page d’accueil dans le service Power BI ?
 
 Oui, vous pouvez maintenant rechercher vos rapports paginés depuis la page d’accueil.  Vous les voyez également dans les autres parties de la nouvelle page d’accueil.
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+Voici quelques éléments à prendre en compte lors de l’utilisation de champs DateTime dans des rapports paginés.
+
+- Actuellement, il existe des limitations de globalisation liées aux paramètres DateTime. Tous les paramètres DateTime du service Power BI sont extraits au format US (MM/JJ/AAAA), quelle que soit la façon dont vous concevez les éléments DataTime dans le Générateur de rapports Power BI.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

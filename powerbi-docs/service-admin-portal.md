@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e44a50a6e44006c0b23b0d57917f16260fdbe2f8
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114441"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585420"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -203,32 +203,30 @@ L’image suivante présente le message qui s’affiche quand vous faites un par
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
-Les utilisateurs de l’organisation peuvent publier des rapports sur le web. [En savoir plus](service-publish-to-web.md). Cela rend le rapport et les données qu’il contient accessibles à n’importe qui sur le web.
+En tant qu’administrateur d’un locataire Power BI, le paramètre **Publier sur le web** vous propose des options pour lesquelles les utilisateurs peuvent créer des codes incorporés pour publier des rapports sur le web. Cette fonctionnalité rend le rapport et ses données accessibles à n’importe qui sur le web. Découvrez plus d’informations sur la [publication sur le web](service-publish-to-web.md).
 
 > [!NOTE]
-> Un administrateur Power BI doit autoriser la création de codes incorporés Publier sur le web. Les organisations peuvent diposer déjà de codes incorporés. Pour examiner les rapports actuellement publiés, consultez la page [Codes incorporés](service-admin-portal.md#embed-codes).
+> Seul les administrateurs Power BI peuvent autoriser la création de codes incorporés « Publier sur le web ». Les organisations peuvent avoir des codes incorporés existants. Consultez la section [Codes incorporés](service-admin-portal.md#embed-codes) du portail d’administration pour passer en revue les rapports actuellement publiés.
 
-L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Publier sur le web** est activé.
+L’image suivante montre le menu **Plus d’options (...)** pour un rapport quand le paramètre **Publier sur le web** est activé.
 
-![Publier sur le web dans le menu Fichier](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publier sur le web dans le menu Plus d’options](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-Le paramètre **Publier sur le web** fournit des options pour lesquelles les utilisateurs peuvent créer des codes incorporés.
+Le paramètre **Publier sur le web** du portail d’administration fournit des options pour lesquelles les utilisateurs peuvent créer des codes incorporés.
 
 ![Paramètre Publier sur le web](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-Les utilisateurs sont invités à contacter l’administrateur Power BI pour demander l’autorisation de créer un code incorporé lorsque l’option **Choisir comment fonctionnent les codes incorporés** est définie sur **Autoriser uniquement les codes incorporés existants** et que le paramètre **Publier sur le web** est **Activé**.
+Les administrateurs peuvent définir **Publier sur le web** sur **Activé** et **Choisir le mode de fonctionnement des codes incorporés** sur **Autoriser seulement les codes incorporés existants**. Dans ce cas, les utilisateurs peuvent créer des codes incorporés, mais ils doivent contacter l’administrateur Power BI pour les y autoriser.
 
 ![Invite Publier sur le web](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 Les options présentées aux utilisateurs dans l’interface utilisateur varient en fonction de la nature du paramètre **Publier sur le web**.
 
 |Caractéristique |Activée pour toute l’organisation |Désactivée pour toute l’organisation |Groupes de sécurité spécifiques   |
 |---------|---------|---------|---------|
-|**Publier sur le web** sous le menu **Fichier** du rapport.|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
+|**Publier sur le web** sous le menu **Plus d’options (...)** d’un rapport|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
 |**Gérer les codes d’incorporation** sous **Paramètres**|Activée pour tous|Activée pour tous|Activée pour tous<br><br>Option * **Supprimer** uniquement pour les utilisateurs ou groupes autorisés.<br>* **Obtenir les codes** activé pour tous.|
-|**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état affiche **violation**.|
+|**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état indique **Enfreint**.|
 |Rapports publiés existants|Tout activé|Tout désactivé|Les rapports continuent à être restitués pour tous.|
 
 ### <a name="export-data"></a>Exporter des données

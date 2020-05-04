@@ -1,23 +1,23 @@
 ---
-title: Incorporer avec le composant WebPart Rapport dans SharePoint Online
+title: Incorporer un composant WebPart Rapport dans SharePoint Online
 description: Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
-author: KesemSharabi
-ms.author: kesharab
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/18/2019
-ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 04/27/2020
+ms.openlocfilehash: 5b726137fae0087701833b2d713cf7b5a329f899
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221709"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585200"
 ---
-# <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
+# <a name="embed-a-report-web-part-in-sharepoint-online"></a>Incorporer un composant WebPart Rapport dans SharePoint Online
 
 Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
 
@@ -38,9 +38,9 @@ Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL
 
 1. Dans Power BI, affichez le rapport.
 
-2. Sélectionnez le menu déroulant **Fichier**, puis **Incorporer dans SharePoint Online**.
+2. Dans le menu déroulant **Plus d’options (...)** , sélectionnez **Incorporer** > **SharePoint Online**.
 
-    ![menu Fichier](media/service-embed-report-spo/powerbi-file-menu.png)
+    ![Menu Plus d’options, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
 3. Copiez l’URL de rapport à partir de la boîte de dialogue.
 

@@ -1,38 +1,62 @@
 ---
-title: Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
-description: Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
+title: Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
+description: Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
-ms.author: kfollis
+ms.date: 04/24/2020
+ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: aab3c01abc970261164c5cc225d89db09ce63d12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 667c20c0e904ca9a91aed3c0566f722e54336a9f
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698437"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256208"
 ---
-# <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
+# <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Cet article décrit une méthode alternative pour s’inscrire à Power BI si vous ne disposez pas déjà d’un compte d’e-mail professionnel ou scolaire. 
 
-Cet article décrit une autre méthode pour vous inscrire à Power BI, en utilisant une version d’évaluation d’Office 365. Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse e-mail professionnelle, vérifiez d’abord qu’il s’agit d’une [adresse e-mail qui peut être utilisée avec Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). Si cela ne fonctionne pas, essayez d’abord de vous inscrire à une version d’évaluation d’Office 365, puis de vous inscrire à Power BI. Vous pourrez utiliser Power BI même après l’expiration de la version d’évaluation d’Office 365.
+Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse e-mail, vérifiez d’abord qu’il s’agit d’une [adresse e-mail qui peut être utilisée avec Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). Si ce n’est pas le cas, inscrivez-vous pour une version d’évaluation de Microsoft 365 et créez un compte professionnel. Ensuite, utilisez ce nouveau compte professionnel pour vous inscrire auprès du service Power BI. Vous pourrez utiliser Power BI même après l’expiration de la version d’évaluation de Microsoft 365.
 
-1. Inscrivez-vous pour une version d’évaluation d’Office 365 [sur le site web Office 365](https://go.microsoft.com/fwlink/p/?LinkID=403802).
+> [!NOTE]
+> Office 365 a été récemment renommé en Microsoft 365. Tant que tous nos articles n’ont pas été mis à jour, vous pouvez donc le voir référencé sous le nom « Office 365 ».
 
-1. À l’issue du processus d’inscription, un nouveau nom de connexion semblable à you@yourcompany.onmicrosoft.com vous sera attribué. Il s’agit de la connexion que vous utiliserez avec Power BI.
+1. Inscrivez-vous pour un essai de Microsoft 365 [sur le site web de Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
 
-1. Inscrivez-vous à Power BI [à l’aide de ce lien](https://app.powerbi.com/signupredirect?pbi_source=web). Si vous y êtes invité, connectez-vous à l’aide du nom de connexion et du mot de passe que vous avez sélectionnés pour Office 365 à l’étape précédente.
+    ![Page d’accueil](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
 
-1. C’est tout ! Une fois terminé, vous serez redirigé vers Power BI. Si vous avez des problèmes de connexion avec le nouveau compte, essayez d’utiliser une session de navigation privée.
+    ![Choisir de s’inscrire pour obtenir un nouveau compte](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
+
+    ![Créer un compte professionnel ou scolaire](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-email.png)
+
+    ![Choisir de s’inscrire pour obtenir un nouveau compte](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-no-email.png)
+
+    ![Entre vos informations de contact](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-welcome-you.png)
+
+    
+
+1. Créez votre nom de connexion professionnel sous la forme you@yourcompany.onmicrosoft.com. Il s’agit de la connexion que vous utiliserez avec Power BI.
+
+    ![Créer une adresse professionnelle](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-address.png)
+
+    ![Obtenir un code par SMS](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-robot.png)    
+
+1. Vous devrez peut-être patienter pendant la création de votre locataire. 
+
+Et c’est tout !  Vous disposez maintenant d’une adresse e-mail que vous pouvez utiliser pour vous inscrire à Power BI. Consultez [S’inscrire au service Power BI en tant que personne individuelle](service-self-service-signup-for-power-bi.md)
+
+
+
+
 
 ## <a name="important-considerations"></a>Considérations importantes
+Si vous avez des problèmes de connexion avec le nouveau compte, essayez d’utiliser une session de navigation privée.    
 
-En appliquant cette méthode d’inscription, vous créez un locataire d’organisation et vous devenez l’administrateur du locataire. Pour plus d’informations, consultez [Présentation de l’administration de Power BI](service-admin-administering-power-bi-in-your-organization.md). Vous pouvez ajouter de nouveaux utilisateurs à votre locataire, puis partager avec eux, comme décrit dans la [documentation sur l’administration d’Office 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+En appliquant cette méthode d’inscription, vous créez un locataire d’organisation et vous devenez l’administrateur du locataire. Pour plus d’informations, consultez [Présentation de l’administration de Power BI](service-admin-administering-power-bi-in-your-organization.md). Vous pouvez ajouter de nouveaux utilisateurs à votre locataire, puis partager avec eux, comme décrit dans la [documentation sur l’administration de Microsoft 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

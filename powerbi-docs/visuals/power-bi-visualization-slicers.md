@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006786"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585064"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
@@ -131,6 +131,11 @@ Dans le rapport actuel, la page **District Monthly Sales** affiche également un
     >[!NOTE]
     >Si vous synchronisez un segment sur une page sans le rendre visible sur cette page, les sélections de segment effectuées sur les autres pages filtrent toujours les données sur la page.
  
+## <a name="filtering-slicers"></a>Filtrage des sélecteurs
+Vous pouvez appliquer des filtres de niveau visuel aux sélecteurs pour réduire la liste des valeurs affichées dans les sélecteurs. Par exemple, vous pouvez exclure les valeurs vides d’un sélecteur de liste ou exclure certaines dates d’un sélecteur de plage. Ceci affecte seulement *les valeurs qui sont affichées dans le sélecteur*, et non pas *le filtre que le sélecteur applique à d’autres visuels* quand vous faites une sélection. Par exemple, supposons que vous appliquez un filtre à un sélecteur de plage pour montrer seulement certaines dates. La sélection sur le sélecteur montre seulement la première et la dernière date de cette plage, mais vous pouvez néanmoins encore voir d’autres dates dans vos autres visuels. Une fois que vous avez changé la plage sélectionnée dans le sélecteur, vous voyez que les autres visuels se mettent à jour. Effacer la sélection du sélecteur montre à nouveau toutes les dates.
+
+Pour plus d’informations sur les filtres de niveau visuel, consultez [Types de filtres](../power-bi-report-filter-types.md).
+
 ## <a name="format-slicers"></a>Mettre en forme des segments
 Différentes options de mise en forme sont disponibles selon le type de segment. À l’aide de l’orientation **Horizontal**, de la disposition **Dynamique** et de la coloration des **Éléments**, vous pouvez produire des boutons ou mosaïques, plutôt que des éléments de liste standard et redimensionner les éléments de segment pour s’adapter aux différentes tailles et dispositions d’écran.  
 

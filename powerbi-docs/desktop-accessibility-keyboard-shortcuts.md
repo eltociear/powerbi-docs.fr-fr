@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 986c09e404e0190a3efee8480d413d49cbd49186
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869377"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584804"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Raccourcis clavier dans Power BI Desktop
 
@@ -56,6 +56,7 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | Sélection multiple | **Ctrl+Entrée** ou **Ctrl+barre d’espace** |
 | Cliquer avec le bouton droit | <ul><li>Clavier Windows : **Clé de contexte Windows+F10**. La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : **Maj+F10**</li></ul> |
 | Effacer la sélection | **Ctrl+Maj+C** |
+| Afficher ou masquer l’info-bulle | **Ctrl+H** |
 
 ## <a name="table-and-matrix-navigation"></a>Navigation dans les tables et les matrices
 | Pour effectuer cette action          | Appuyer sur                |
@@ -121,7 +122,7 @@ Voici la liste des articles dédiés à l’accessibilité dans Power BI :
 * [Vue d’ensemble de l’accessibilité dans Power BI](desktop-accessibility-overview.md) 
 * [Création de rapports Power BI accessibles](desktop-accessibility-creating-reports.md) 
 * [Consommation des rapports dans Power BI avec les outils d’accessibilité](desktop-accessibility-consuming-tools.md)
-* [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
+* [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
 * [Liste de vérification de l’accessibilité des rapports](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 L’article suivant peut également vous intéresser :
