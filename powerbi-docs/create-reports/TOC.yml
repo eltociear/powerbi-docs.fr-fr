@@ -327,6 +327,10 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Créer des paramètres
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Sous-rapports
+              href: ../paginated-reports/subreports.md
+            - name: Résoudre les problèmes des sous-rapports
+              href: ../paginated-reports/subreports-troubleshoot.md
             - name: Passer un paramètre de rapport dans une URL
               href: ../paginated-reports/report-builder-url-pass-parameters.md
             - name: Publier un rapport paginé
