@@ -10,10 +10,10 @@ ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 910f52466b4700e4d0cc4168ef80ea5ee0164364
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698391"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Résolution des problèmes de la passerelle Power BI (mode personnel)
@@ -22,7 +22,7 @@ ms.locfileid: "74698391"
 
 Les sections suivantes décrivent certains problèmes courants que vous pouvez rencontrer quand vous utilisez la passerelle de données locale Power BI (mode personnel).
 
-## <a name="update-to-the-latest-version"></a>Procéder à une mise à jour vers la dernière version
+## <a name="update-to-the-latest-version"></a>Mise à jour vers la dernière version
 
 La version actuelle de la passerelle utilisée à des fins personnelles est la passerelle de données locale (mode personnel). Mettez à jour votre installation pour utiliser cette version.
 

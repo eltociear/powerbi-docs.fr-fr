@@ -10,10 +10,10 @@ ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 1f5cedba1c32f152cd6e4a9f9f51d0355ac05ce5
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77497291"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Tutoriel : Analyser les données Facebook à l’aide de Power BI Desktop
@@ -28,7 +28,7 @@ Dans ce tutoriel, vous apprenez à importer des données à partir de Facebook e
 
 Ce tutoriel utilise des données de la [page Facebook de Microsoft Power BI](https://www.facebook.com/microsoftbi). Vous n’avez pas besoin d’informations d’identification spécifiques pour vous connecter à cette page et importer des données, à l’exception d’un compte Facebook personnel.
 
-1. Ouvrez Power BI Desktop, puis sélectionnez **Obtenir des données** dans la boîte de dialogue **Mise en route** ou, dans l’onglet du ruban **Accueil**, sélectionnez **Obtenir des données**, puis sélectionnez **Plus...**.
+1. Ouvrez Power BI Desktop, puis sélectionnez **Obtenir des données** dans la boîte de dialogue **Mise en route** ou, dans l’onglet du ruban **Accueil**, sélectionnez **Obtenir des données**, puis sélectionnez **Plus...** .
    
 2. Dans la boîte de dialogue **Obtenir des données**, sélectionnez **Facebook** à partir du groupe **Services en ligne**, puis sélectionnez **Se connecter**.
    
@@ -150,7 +150,7 @@ Les données étant importées de la page Facebook, vous pouvez rapidement et fa
 
    Notez que les commentaires les plus nombreux étaient associés à un message **(Vide)** (ces publications étaient peut-être des récits, des liens, des vidéos ou tout autre contenu non textuel). 
    
-5. Pour exclure les lignes vides, sélectionnez **message est (Tous)** dans le volet **Filtres**, sélectionnez **Sélectionner tout**, puis sélectionnez **(Vide)**. 
+5. Pour exclure les lignes vides, sélectionnez **message est (Tous)** dans le volet **Filtres**, sélectionnez **Sélectionner tout**, puis sélectionnez **(Vide)** . 
 
    L’entrée du volet **Filtres** est remplacée par **message n’est pas (Vide)** et la ligne **(Vide)** disparaît de la visualisation du graphique.
    
@@ -164,7 +164,7 @@ La visualisation devient plus intéressante, mais vous ne pouvez pas voir une gr
    
 2. Avec le graphique sélectionné, sélectionnez l’icône **Format** (rouleau de peinture) dans le volet **Visualisations**.
    
-3. Sélectionnez la flèche vers le bas en regard de l’**axe Y** et faites glisser le curseur **Taille maximale** complètement vers la droite (**50 %**). 
+3. Sélectionnez la flèche vers le bas en regard de l’**axe Y** et faites glisser le curseur **Taille maximale** complètement vers la droite (**50 %** ). 
 4. Réduisez la **Taille du texte** à **10 pt** pour afficher plus de texte.
    
    ![Modifications de la mise en forme](media/desktop-tutorial-facebook-analytics/barchart4.png)
@@ -236,7 +236,7 @@ Donnez au graphique un titre plus descriptif et plus intéressant :
 
 3. Sélectionnez la flèche déroulante en regard de **Couleur de police**, puis sélectionnez une couleur verte en accord avec les barres vertes de la visualisation.
 
-4. Augmentez la **Taille du texte** à **10 pt** et définissez la **Famille de polices** sur **Segoe (gras)**.
+4. Augmentez la **Taille du texte** à **10 pt** et définissez la **Famille de polices** sur **Segoe (gras)** .
 
 5. Faites des essais avec d’autres options et paramètres de mise en forme pour modifier l’apparence de vos visualisations. 
 

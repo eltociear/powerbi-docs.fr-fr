@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
 ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859174"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sécurité au niveau des lignes (SNL) dans Power BI Report Server
@@ -105,7 +105,7 @@ Oui, à condition que vous ayez importé les données dans Power BI Desktop. Si
 
 ### <a name="can-i-use-rls-to-limit-the-columns-or-measures-accessible-by-my-users"></a>Puis-je utiliser SNL pour limiter les colonnes ou les mesures accessibles par mes utilisateurs ? 
 
-Non. Si un utilisateur a accès à une ligne particulière de données, il peut voir toutes les colonnes de données pour cette ligne. 
+No. Si un utilisateur a accès à une ligne particulière de données, il peut voir toutes les colonnes de données pour cette ligne. 
 
 ### <a name="does-rls-let-me-hide-detailed-data-but-give-access-to-data-summarized-in-visuals"></a>Avec SNL, puis-je masquer les données détaillées tout en donnant accès aux données résumées dans les visuels ? 
 

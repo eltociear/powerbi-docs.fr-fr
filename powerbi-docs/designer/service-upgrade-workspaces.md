@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74410817"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI
@@ -212,4 +212,4 @@ Il existe plusieurs problèmes connus que vous pouvez rencontrer :
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer les nouveaux espaces de travail dans Power BI](../service-create-the-new-workspaces.md)
 * [Créer les espaces de travail classiques](../service-create-workspaces.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

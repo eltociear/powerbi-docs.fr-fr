@@ -10,17 +10,17 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: bf007dfe70b5bfb7be9fa8c00865663b07210367
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698759"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
 Dans PowerBI, les commandes Actualiser maintenant et Planifier l’actualisation sont prises en charge pour les jeux de données créés à partir de classeurs Excel importés depuis un lecteur local où Power Query (Obtenir et Transformer les données dans Excel 2016) ou Power Pivot est utilisé pour se connecter à l’une des sources de données suivantes et pour charger des données dans le modèle de données Excel :  
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Passerelle Power BI - Personal
 * Toutes les sources de données en ligne affichées dans Power Query.
 * Toutes les sources de données locales affichées dans Power Query, excepté pour HDFS (Hadoop Distributed File System) et Microsoft Exchange.
 * Toutes les sources de données en ligne affichées dans Power Pivot.\*

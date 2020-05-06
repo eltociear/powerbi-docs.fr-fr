@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
 ms.openlocfilehash: bc172f3f5c25a0f0c3773befe5bd846f95a9a2e0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698345"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
@@ -101,7 +101,7 @@ Par exemple, ces données :
 | États-Unis |100 |
 | Royaume-Uni |150 |
 | Canada |100 |
-| Allemagne |125 |
+| Germany |125 |
 | France | |
 | Japon |125 |
 | Australie |150 |
@@ -150,9 +150,9 @@ Vous pouvez également agréger un champ non numérique. Par exemple, si vous av
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
-Q :  Pourquoi est-ce que l’option **Ne pas synthétiser** ne s’affiche pas ?
+Q :  Pourquoi est-ce que l’option **Ne pas synthétiser** ne s’affiche pas ?
 
-R :  Le champ que vous avez sélectionné est probablement une mesure calculée ou une mesure avancée créée dans Excel ou [Power BI Desktop](desktop-measures.md). Chaque mesure calculée a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation que Power BI utilise. Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. La liste **Champs** indique les *mesures calculées* avec le symbole de calculatrice.
+R :  Le champ que vous avez sélectionné est probablement une mesure calculée ou une mesure avancée créée dans Excel ou [Power BI Desktop](desktop-measures.md). Chaque mesure calculée a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation que Power BI utilise. Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. La liste **Champs** indique les *mesures calculées* avec le symbole de calculatrice.
 
 Q :  Mon champ **est** numérique. Pourquoi mes seuls choix sont **Nombre** et **Comptage de valeurs** ?
 
@@ -175,13 +175,13 @@ Q :  J’ai un graphique à nuages de points et je ne veux *pas* d’agrégatio
 
 R :  Ajoutez le champ au compartiment **Détails** et pas aux compartiments des axes X ou Y.
 
-Q :  Quand j’ajoute des champs numériques à une visualisation, la plupart de ces champs ont par défaut le type Somme, alors que d’autres sont de type Moyenne ou Nombre ou une autre agrégation.  Pourquoi l’agrégation par défaut est-elle différente à chaque fois ?
+Q :  Quand j’ajoute des champs numériques à une visualisation, la plupart de ces champs ont par défaut le type Somme, alors que d’autres sont de type Moyenne ou Nombre ou une autre agrégation.  Pourquoi l’agrégation par défaut est-elle différente à chaque fois ?
 
 R :  Les propriétaires du jeu de données peuvent définir le résumé par défaut pour chaque champ. Si vous êtes propriétaire d’un jeu de données, changez la totalisation par défaut sous l’onglet **Modélisation** de Power BI Desktop.
 
 Q :  Je suis propriétaire d’un jeu de données et je veux être certain qu’aucun champ n’est jamais agrégé.
 
-R :  Dans Power BI Desktop, dans l’onglet **Modélisation**, définissez **Type de données** sur **Texte**.
+R :  Dans Power BI Desktop, dans l’onglet **Modélisation**, définissez **Type de données** sur **Texte**.
 
 Q :  Je ne vois pas l’option **Ne pas synthétiser** dans ma liste déroulante.
 

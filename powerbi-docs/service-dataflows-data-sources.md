@@ -10,10 +10,10 @@ ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872684"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Se connecter à des sources de données pour les dataflows Power BI
@@ -49,18 +49,18 @@ Vous pouvez afficher les sources de données disponibles en sélectionnant **Obt
 Les sources de données des dataflows sont organisées dans les catégories suivantes, lesquelles apparaissent dans la partie supérieure de la boîte de dialogue **Obtenir des données** :
 
 * Toutes les catégories
-* Fichier
-* Base de données
-* Power BI
+* fichier
+* Database
+* Power BI
 * Azure
-* Services en ligne
+* Online Services
 * Autre
 
 La catégorie **Toutes les catégories** contient toutes les sources de données, de toutes les catégories. 
 
 La catégorie **Fichier** comprend les connexions de données disponibles suivantes pour les dataflows :
 
-* Accès
+* Access
 * Excel
 * JSON
 * Texte/CSV
@@ -92,7 +92,7 @@ La catégorie **Azure** comprend les connexions de données disponibles suivante
 La catégorie **Services en ligne** comprend les connexions de données disponibles suivantes pour les dataflows :
 
 * Amazon Redshift
-* Common Data Service for Apps
+* Common Data Service pour applications
 * Microsoft Exchange Online
 * Objets Salesforce
 * Rapports Salesforce
@@ -156,7 +156,7 @@ Votre script se connecte alors à la source de données que vous avez spécifié
 La liste suivante indique quels connecteurs vous pouvez actuellement utiliser en copiant et en collant la requête M dans une requête vide :
 
 * Azure Analysis Services
-* Adobe Analytics
+* Adobe Analytics
 * ODBC
 * OLE DB
 * Dossier

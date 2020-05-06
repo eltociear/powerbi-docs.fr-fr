@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872842"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Créer une copie d’un tableau de bord dans Power BI
@@ -35,7 +35,7 @@ Pour effectuer une copie d’un tableau de bord, vous devez être le *créateur*
    ![boîte de dialogue Dupliquer le tableau de bord](media/service-dashboard-copy/power-bi-name.png)
 4. Le nouveau tableau de bord est enregistré dans le même espace de travail que l’original. 
    
-   ![Onglet Tableaux de bord](media/service-dashboard-copy/power-bi-copied.png)
+   ![onglet Tableaux de bord](media/service-dashboard-copy/power-bi-copied.png)
 
 5.    Ouvrez le nouveau tableau de bord et modifiez-le, le cas échéant. Voici quelques éléments que vous pouvez faire ensuite :    
     a. [Déplacer, renommer, redimensionner ou supprimer des vignettes](service-dashboard-edit-tile.md).  

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637683"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Superviser les capacités dans le portail d’administration
@@ -52,35 +52,35 @@ Chaque charge de travail présente des métriques supplémentaires. Le type des 
 
 ![Développement de l’intégrité de la charge de travail](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
 
-#### <a name="dataflows"></a>Dataflows
+#### <a name="dataflows"></a>Flux de données
 
 ##### <a name="dataflow-operations"></a>Opérations de dataflow
 
 | **Métrique** | **Description** |
 | --- | --- |
 | Nombre total | total des actualisations pour chaque flux de données. |
-| Nombre de succès | Total des actualisations réussies pour chaque dataflow.|
+| Nombre de réussites | Total des actualisations réussies pour chaque dataflow.|
 | Durée moyenne (min) | durée moyenne d’actualisation du flux de données, en minutes |
 | Durée maximale (min) | durée de l’actualisation la plus longue en cours d’exécution pour le flux de données, en minutes. |
 | Temps d’attente moyen (min) | délai moyen entre l’heure planifiée et le début d’une actualisation du flux de données, en minutes. |
 | Temps d’attente maximal (min) | délai d’attente maximal du flux de données, en minutes.  |
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>Datasets
 
-##### <a name="refresh"></a>Actualiser
+##### <a name="refresh"></a>Actualisation
 
 | **Métrique** | **Description** |
 | --- | --- |
 | Nombre total | nombre total d’actualisations pour chaque jeu de données. |
-| Nombre de succès | Total des actualisations réussies pour chaque jeu de données. |
-| Nombre d’échecs | Total des actualisations ayant échoué pour chaque jeu de données. |
+| Nombre de réussites | Total des actualisations réussies pour chaque jeu de données. |
+| Nombre de défaillances | Total des actualisations ayant échoué pour chaque jeu de données. |
 | Taux de réussite  | Nombre d’actualisations réussies divisé par le total des actualisations pour mesurer la fiabilité. |
 | Durée moyenne (min) | durée moyenne d’actualisation du jeu de données, en minutes.  |
 | Durée maximale (min) | durée de l’actualisation la plus longue en cours d’exécution pour le jeu de données, en minutes. |
 | Temps d’attente moyen (min) | délai moyen entre l’heure planifiée et le début d’une actualisation du jeu de données, en minutes. |
 | Temps d’attente maximal (min) | délai d’attente maximal du jeu de données, en minutes. |
 
-##### <a name="query"></a>Requête
+##### <a name="query"></a>Query
 
 | **Métrique** | **Description** |
 | --- | --- |
@@ -108,8 +108,8 @@ Chaque charge de travail présente des métriques supplémentaires. Le type des 
 
 | **Métrique** | **Description** |
 | --- | --- |
-| Nombre de succès | Nombre de fois où le rapport a été consulté par un utilisateur. |
-| Nombre d’échecs |Nombre de fois où le rapport a été consulté par un utilisateur.|
+| Nombre de réussites | Nombre de fois où le rapport a été consulté par un utilisateur. |
+| Nombre de défaillances |Nombre de fois où le rapport a été consulté par un utilisateur.|
 | Nombre de lignes |nombre de lignes de données dans le rapport. |
 | Durée d’extraction de données (ms) |délai moyen nécessaire pour récupérer des données pour le rapport, en millisecondes. De longs délais peuvent indiquer des requêtes lentes ou d’autres problèmes au niveau de la source de données.  |
 | Durée de traitement (ms) |délai moyen nécessaire pour traiter les données pour un rapport, en millisecondes. |

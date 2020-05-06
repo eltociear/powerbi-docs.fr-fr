@@ -10,10 +10,10 @@ ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76710075"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
@@ -258,7 +258,7 @@ Toutefois, supposons que les données sont censées changer à la prochaine actu
 | Blue |A |80000 |6/1/2013 |
 | Red |B |90000 |6/1/2013 |
 
-Dans cette nouvelle table combinée, la colonne **ProjName** a des valeurs répétées. Les deux tables d’origine n’auront pas de relation un à un une fois la table actualisée. Dans ce cas, comme nous savons que ces mises à jour ultérieures vont introduire des doublons dans la colonne **ProjName**, nous voulons définir la **Cardinalité** sur **Plusieurs à un (\*:1)**, avec le côté *plusieurs* sur **ProjectBudget** et le côté *un* sur **CompanyProjectPriority**.
+Dans cette nouvelle table combinée, la colonne **ProjName** a des valeurs répétées. Les deux tables d’origine n’auront pas de relation un à un une fois la table actualisée. Dans ce cas, comme nous savons que ces mises à jour ultérieures vont introduire des doublons dans la colonne **ProjName**, nous voulons définir la **Cardinalité** sur **Plusieurs à un (\*:1)** , avec le côté *plusieurs* sur **ProjectBudget** et le côté *un* sur **CompanyProjectPriority**.
 
 ## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Ajustement de la direction du filtrage croisé pour un jeu complexe de tables et de relations
 Pour la plupart des relations, la direction du filtrage croisé est définie sur **Les deux**. Cependant, dans certaines circonstances plus rares, vous pouvez être amené à définir cette option différemment, comme dans le cas où vous importez un modèle à partir d’une ancienne version de Power Pivot, où chaque relation est définie sur une direction à sens unique. 
@@ -350,7 +350,7 @@ Maintenant, si nous créons un rapport qui utilise les champs **Role** (Rôle) e
 
  ![Champs Employee (Employé), Role (Rôle) et Hours (Heures) sélectionnés](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
-Nous pouvons changer la relation active, de façon à remplacer **OpenedBy** par **SubmittedBy**. Dans **Gérer les relations**, décochez la relation **ProjectTickets(OpenedBy)** à **EmployeeRole(Employee)** et cochez la relation **EmployeeRole(Employee)** à **Project Tickets(SubmittedBy)**.
+Nous pouvons changer la relation active, de façon à remplacer **OpenedBy** par **SubmittedBy**. Dans **Gérer les relations**, décochez la relation **ProjectTickets(OpenedBy)** à **EmployeeRole(Employee)** et cochez la relation **EmployeeRole(Employee)** à **Project Tickets(SubmittedBy)** .
 
 ![Changer la relation active dans la boîte de dialogue Gérer les relations](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 

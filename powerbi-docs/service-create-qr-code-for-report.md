@@ -10,10 +10,10 @@ ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c98f06afe2af93e32d98ff1c3147cc15b64fbb57
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853369"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Créer un code QR pour un rapport dans Power BI à utiliser dans les applications mobiles
@@ -39,7 +39,7 @@ Les collègues avec lesquels vous avez partagé le rapport peuvent scanner le co
 ## <a name="print-the-qr-code"></a>Imprimer le code QR
 Power BI génère le code QR en tant que fichier JPG prêt pour l’impression. 
 
-1. Sélectionnez **Téléchargez**, puis ouvrez le fichier JPG sur un ordinateur connecté à une imprimante.  
+1. Sélectionnez **Télécharger**, puis ouvrez le fichier JPG sur un ordinateur connecté à une imprimante.  
    
    Le fichier JPG porte le même nom que la vignette. Par exemple, « Exemple Vente et marketing.jpg ».
    
@@ -50,5 +50,5 @@ Power BI génère le code QR en tant que fichier JPG prêt pour l’impression.
 * [Se connecter aux données Power BI réelles](consumer/mobile/mobile-apps-data-in-real-world-context.md) avec les applications mobiles
 * [Scanner un code QR Power BI à partir de votre appareil mobile](consumer/mobile/mobile-apps-qr-code.md)
 * [Créer un code QR pour une vignette](service-create-qr-code-for-tile.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
