@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e9156e539ee9f1a344b89f7814c148829498e5fc
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435924"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Authentification unique dans l’application Power BI Mobile Windows
@@ -37,5 +37,5 @@ Si vous ne souhaitez pas utiliser les informations d’identification de votre s
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Prise en main de l’application mobile Power BI pour Windows 10](mobile-windows-10-phone-app-get-started.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

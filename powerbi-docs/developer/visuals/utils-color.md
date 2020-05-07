@@ -9,16 +9,16 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
 ms.openlocfilehash: 8de530871739a18c1afc72cee3e0da5fc70ebb16
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379349"
 ---
 # <a name="color-utils"></a>Utilitaires pour les couleurs
 Cet article va vous aider à installer, à importer et à utiliser les utilitaires pour les couleurs. Cet article explique comment utiliser les utilitaires pour les couleurs afin de simplifier l’application de thèmes et de palettes sur des points de données des visuels Power BI.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 Pour utiliser le package, vous avez besoin de ce qui suit :
 * [node.js](https://nodejs.org) (nous vous recommandons de télécharger la version la plus récente de LTS)
 * [npm](https://www.npmjs.com/) (la version la plus ancienne prise en charge est 3.0.0)
@@ -26,7 +26,7 @@ Pour utiliser le package, vous avez besoin de ce qui suit :
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-colorutils --save

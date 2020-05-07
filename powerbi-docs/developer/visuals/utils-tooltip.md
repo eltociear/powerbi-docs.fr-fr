@@ -9,16 +9,16 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 02/14/2020
 ms.openlocfilehash: 67470ec405806f44fdb483e857d222ad4ff05a45
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379165"
 ---
 # <a name="tooltip-utils"></a>Utilitaires pour les info-bulles
 Cet article va vous aider à installer, à importer et à utiliser les utilitaires pour les info-bulles. Cet utilitaire est utile pour toute personnalisation des info-bulles dans les visuels Power BI.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 Pour utiliser le package, vous avez besoin de ce qui suit :
 * [node.js](https://nodejs.org) (nous vous recommandons de télécharger la version la plus récente de LTS)
 * [npm](https://www.npmjs.com/) (la version la plus ancienne prise en charge est 3.0.0)
@@ -26,7 +26,7 @@ Pour utiliser le package, vous avez besoin de ce qui suit :
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-colorutils --save

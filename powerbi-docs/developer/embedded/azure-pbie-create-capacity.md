@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.reviewer: zakharb
 ms.date: 02/05/2019
 ms.openlocfilehash: 57204602900e76e7bd5034e96f6385e5e944c04e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114793"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
@@ -28,10 +28,10 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Pour suivre ce guide de démarrage rapide, vous avez besoin des éléments suivants :
 
-* **Abonnement Azure :** Accédez à la page [Azure - Essai gratuit](https://azure.microsoft.com/free/) pour créer un compte.
-* **Azure Active Directory :** Votre abonnement doit être associé à un locataire Azure Active Directory (AAD). De plus, ***vous devez être connecté à Azure avec un compte relevant de ce locataire***. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
-* **Locataire Power BI :** Au moins un compte de votre locataire AAD doit avoir souscrit à Power BI.
-* **Groupe de ressources :** Utilisez un groupe de ressources que vous possédez déjà ou [créez-en un](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+* **Abonnement Azure :** accédez à la page [Azure - Essai gratuit](https://azure.microsoft.com/free/) pour créer un compte.
+* **Azure Active Directory :** votre abonnement doit être associé à un locataire Azure Active Directory (AAD). De plus, ***vous devez être connecté à Azure avec un compte relevant de ce locataire***. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
+* **Locataire Power BI :** au moins un compte de votre locataire AAD doit avoir souscrit à Power BI.
+* **Groupe de ressources :** utilisez un groupe de ressources que vous possédez déjà ou [créez-en un](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## <a name="create-a-capacity"></a>Créer une capacité
 

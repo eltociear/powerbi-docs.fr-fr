@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
 ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79487806"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
@@ -126,7 +126,7 @@ Si vous avez besoin d’autoriser des utilisateurs externes à modifier et gére
 
 ![Le paramètre Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation est affiché.](media/admin-tenant-settings/allow-external-guest-users.png)
 
-### <a name="developer-settings"></a>Paramètres de développement
+### <a name="developer-settings"></a>Paramètres de développeur
 
 Il existe deux paramètres de locataire associés à l’[incorporation de contenu Power BI](../developer/embedded/embedding.md). Il s'agit de :
 
@@ -143,5 +143,5 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 
 - [Présentation de l’administration de Power BI](../service-admin-administering-power-bi-in-your-organization.md)
 - [Administration de Power BI dans le portail d’administration](../service-admin-portal.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435786"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
@@ -102,5 +102,5 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 ## <a name="next-steps"></a>Étapes suivantes
 * [Annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel dans les applications mobiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Partager un tableau de bord ou un rapport dans Power BI](../../service-share-dashboards.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

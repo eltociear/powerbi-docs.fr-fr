@@ -9,17 +9,17 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 26e68f64f9cce2251e98c6a831200b6fbc5d2dd8
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114481"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
 
 Voici quelques extraits de code pour les opérations de base nécessaires à la migration de contenu. Pour découvrir les flux liés à certains types de rapports, consultez [Comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
-Un **outil de migration** est à votre disposition pour vous aider à copier le contenu de Power BI Embedded (PaaS) vers le service Power BI (SaaS). Celui-ci est particulièrement utile si votre contenu est volumineux. Pour plus d’informations, consultez [Outil de migration Power BI Embedded](migrate-tool.md).
+Un **outil de migration** est à votre disposition pour vous aider à copier le contenu de Power BI Embedded (PaaS) vers le service Power BI (SaaS). Celui-ci est particulièrement utile si votre contenu est volumineux. Pour plus d’informations, consultez [Outil de migration Power BI Embedded](migrate-tool.md).
 
 Le code ci-dessous est un exemple utilisant C# et le [Kit de développement logiciel Power BI .NET](https://www.nuget.org/profiles/powerbi).
 
@@ -233,7 +233,7 @@ Dans cet extrait de code, nous supposons que le jeu de données utilisant le ser
 [Incorporation avec Power BI](embedding.md)  
 [Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI](migrate-from-powerbi-embedded.md)  
 [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embed-sample-for-your-organization.md)  
-[Qu’est-ce que Power BI Premium ?](../../service-premium-what-is.md)  
+[Qu’est-ce que Power BI Premium ?](../../service-premium-what-is.md)  
 [Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
