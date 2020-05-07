@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 27d6db6cf8ad8ebd7b2c957954ceec34b83681d0
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464380"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Définir des rôles et des règles dans Power BI Desktop
@@ -25,12 +25,12 @@ Pour définir des rôles de sécurité, effectuez les étapes suivantes.
    ![Sélectionner Créer](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 4. Sous **Rôles**, entrez un nom pour le rôle. 
 5. Sous **Tables**, sélectionnez la table à laquelle vous souhaitez appliquer une règle DAX.
-6. Dans la zone **Expression DAX de filtre de table**, entrez les expressions DAX. Cette expression retourne la valeur true ou false. Par exemple : ```[Entity ID] = “Value”```.
+6. Dans la zone **Expression DAX de filtre de table**, entrez les expressions DAX. Cette expression retourne la valeur true ou false. Par exemple, ```[Entity ID] = “Value”```.
       
    ![Fenêtre Gérer les rôles](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
    > [!NOTE]
-   > Vous pouvez utiliser *username()* dans cette expression. N’oubliez pas que *username()* est au format *DOMAINE\nom_utilisateur* dans Power BI Desktop. Dans le service Power BI et Power BI Report Server, c’est le nom d’utilisateur principal (UPN) de l’utilisateur qui est employé. Vous pouvez également utiliser *userprincipalname()*, qui retourne systématiquement l’utilisateur au format de son nom d’utilisateur principal, *username\@contoso.com*.
+   > Vous pouvez utiliser *username()* dans cette expression. N’oubliez pas que *username()* est au format *DOMAINE\nom_utilisateur* dans Power BI Desktop. Dans le service Power BI et Power BI Report Server, c’est le nom d’utilisateur principal (UPN) de l’utilisateur qui est employé. Vous pouvez également utiliser *userprincipalname()* , qui retourne systématiquement l’utilisateur au format de son nom d’utilisateur principal, *username\@contoso.com*.
    > 
    > 
 
@@ -43,7 +43,7 @@ Pour définir des rôles de sécurité, effectuez les étapes suivantes.
    >
    >
    
-8. Sélectionnez **Enregistrer**.
+8. Sélectionnez **Save (Enregistrer)** .
 
 Vous ne pouvez pas attribuer d’utilisateurs à un rôle dans Power BI Desktop. Vous devez le faire dans le service Power BI. Dans Power BI Desktop, vous pouvez activer la sécurité dynamique en utilisant les fonctions DAX *username()* ou *userprincipalname()* et en configurant les relations appropriées. 
 

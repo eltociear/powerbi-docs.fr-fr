@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874466"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Créer un visuel avec Questions et réponses Power BI
@@ -48,7 +48,7 @@ Comment créer ce graphique en courbes avec Questions et réponses ?
    
    ![Graphique en aires rempli par Questions et réponses](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-filled-chart.png)
 
-4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle. ![Icône Épingler](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) dans le coin supérieur droit.
+4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle. ![icône en forme d’épingle](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) dans le coin supérieur droit.
 
 ## <a name="create-a-visual-in-the-report-editor"></a>Créer un visuel dans l’éditeur de rapport
 

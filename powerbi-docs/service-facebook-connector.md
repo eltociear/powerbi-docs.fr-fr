@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 882cddf7728a27e78056a35c14fde20f00678e33
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77527699"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Utiliser le connecteur Facebook pour Power BI Desktop
@@ -22,7 +22,7 @@ Le connecteur Facebook de **Power BI Desktop** s’appuie sur l’API Graph de F
 Vous pouvez consulter un [didacticiel sur le connecteur Facebook pour Power BI Desktop](desktop-tutorial-facebook-analytics.md).
 
 > [!IMPORTANT]
-> **Dépréciation du connecteur de données Facebook** : L’importation et l’actualisation de données Facebook dans Excel ne fonctionneront plus correctement à partir du mois d’avril 2020. D’ici là, vous pouvez continuer à utiliser le connecteur Facebook *Récupérer et transformer (Power Query)*. Après cette date, vous ne pourrez plus vous connecter à Facebook et vous recevrez un message d’erreur. Nous vous recommandons de revoir ou supprimer dès que possible vos requêtes *Récupérer et transformer (Power Query)* existantes qui utilisent le connecteur Facebook afin d'éviter des résultats inattendus.
+> **Dépréciation du connecteur de données Facebook** : L’importation et l’actualisation de données Facebook dans Excel ne fonctionneront plus correctement à partir du mois d’avril 2020. D’ici là, vous pouvez continuer à utiliser le connecteur Facebook *Récupérer et transformer (Power Query)* . Après cette date, vous ne pourrez plus vous connecter à Facebook et vous recevrez un message d’erreur. Nous vous recommandons de revoir ou supprimer dès que possible vos requêtes *Récupérer et transformer (Power Query)* existantes qui utilisent le connecteur Facebook afin d'éviter des résultats inattendus.
 
 
 La version v1.0 de l’API Graph de Facebook a expiré le 30 avril 2015. Power BI utilise l’API Graph en arrière-plan pour le connecteur Facebook, ce qui vous permet de vous connecter à vos données et de les analyser.

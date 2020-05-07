@@ -11,10 +11,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038549"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données stocké sur OneDrive ou SharePoint Online
@@ -39,7 +39,7 @@ Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Pla
 > [!NOTE]
 > L’actualisation OneDrive pour les jeux de données de connexion active est prise en charge. Toutefois, le fait de modifier le jeu de données de connexion active, d’un jeu de données à un autre dans un rapport déjà publié, n’est pas pris en charge dans le scénario d’actualisation OneDrive.
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Passerelle Power BI - Personal
 * Toutes les sources de données en ligne affichées sous **Obtenir des données** dans l’**éditeur de requête** et dans Power BI Desktop.
 * Toutes les sources de données locales affichées dans l’**éditeur de requête** et la section **Obtenir des données** de Power BI Desktop, excepté pour HDFS et Microsoft Exchange.
 
@@ -52,7 +52,7 @@ Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Pla
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive Entreprise. Quelle est la différence ?
-Si vous avez un compte OneDrive personnel et OneDrive Entreprise, vous devriez conserver dans OneDrive Entreprise tous les fichiers que vous souhaitez importer dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
+Si vous avez un compte OneDrive personnel et OneDrive Entreprise, vous devriez conserver dans OneDrive Entreprise tous les fichiers que vous souhaitez importer dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
 
 Il est facile de vous connecter à OneDrive Entreprise dans Power BI, car votre compte Power BI est souvent le même que votre compte OneDrive Entreprise. Avec un OneDrive personnel, vous vous connectez habituellement avec un autre [compte Microsoft](https://account.microsoft.com).
 

@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/20/2020
 LocalizationGroup: Gateways
 ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77558653"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Configurer l’authentification unique basée sur Kerberos du service Power BI vers des sources de données locales
@@ -185,7 +185,7 @@ Effectuez les étapes de configuration suivantes :
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Accorder au compte du service de passerelle les droits de stratégie locaux sur la machine de passerelle
 
-Enfin, sur la machine exécutant le service de passerelle (dans notre exemple, **MyGatewayMachine**), attribuez au compte de service de passerelle les stratégies locales **Emprunter l’identité d’un client après l’authentification** et **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)**. Effectuez cette configuration avec l’Éditeur de stratégie de groupe locale (**gpedit.mscx**).
+Enfin, sur la machine exécutant le service de passerelle (dans notre exemple, **MyGatewayMachine**), attribuez au compte de service de passerelle les stratégies locales **Emprunter l’identité d’un client après l’authentification** et **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** . Effectuez cette configuration avec l’Éditeur de stratégie de groupe locale (**gpedit.mscx**).
 
 1. Sur la machine de la passerelle, exécutez **gpedit.msc**.
 

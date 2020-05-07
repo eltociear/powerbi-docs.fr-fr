@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: f689ba79f9cce7d6ee815e0712491e7d00647fe8
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82584771"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841661"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -79,10 +79,11 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 Le type de données Binaire peut être utilisé pour représenter n’importe quelles autres données au format binaire. Dans l’éditeur de requête, vous pouvez l’utiliser lors du chargement de fichiers binaires si vous le convertissez en d’autres types de données avant de le charger dans le modèle Power BI. Les colonnes binaires ne sont pas prises en charge dans le modèle de données Power BI. Il existe dans les menus Vue de données et Vue de rapport pour des raisons de compatibilité, mais si vous essayez de charger des colonnes binaires dans le modèle Power BI, vous pouvez rencontrer des erreurs.
 
 
+
+
 > [!NOTE]
 >  Si une colonne binaire se trouve dans le résultat des étapes d’une requête, une tentative d’actualisation des données via une passerelle peut provoquer des erreurs. Il est recommandé de supprimer explicitement toutes les colonnes binaires comme dernière étape dans vos requêtes.    
 > 
->
 
 ### <a name="table-data-type"></a>Type de données de table
 DAX utilise un type de données de table dans de nombreuses fonctions, telles que les agrégations et les calculs Time Intelligence. Certaines fonctions nécessitent une référence à une table ; d’autres retournent une table qui peut ensuite servir d’entrée pour d’autres fonctions. Dans certaines fonctions qui nécessitent une table comme entrée, vous pouvez spécifier une expression qui correspond à une table. Pour certaines fonctions, une référence à une table de base est obligatoire. Pour plus d’informations sur les exigences relatives à des fonctions spécifiques, consultez [Référence des fonctions DAX](https://msdn.microsoft.com/library/ee634396.aspx).

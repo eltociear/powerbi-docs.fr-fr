@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75000132"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Utiliser Kerberos pour l’authentification unique avec gx64krb5
@@ -49,7 +49,7 @@ La bibliothèque gx64krb5 doit être utilisée par le client et par le serveur p
 Effectuez les étapes de cette section si vous n’avez pas encore configuré votre serveur SAP BW pour la communication SNC (par exemple, l’authentification unique) à l’aide de gx64krb5.
 
 > [!NOTE]
-> Cette section part du principe que vous avez déjà créé un utilisateur de service pour BW et lui avez lié un nom de principal du service approprié (par exemple, un nom qui commence par *SAP/*).
+> Cette section part du principe que vous avez déjà créé un utilisateur de service pour BW et lui avez lié un nom de principal du service approprié (par exemple, un nom qui commence par *SAP/* ).
 
 1. Accordez à l’utilisateur du service l’accès à votre serveur d’applications SAP BW :
 
@@ -75,9 +75,9 @@ Effectuez les étapes de cette section si vous n’avez pas encore configuré vo
 
 1. Dans SAP Logon, connectez-vous à votre serveur et définissez les paramètres de profil suivants à l’aide de la transaction RZ10 :
 
-    1. Définissez le paramètre de profil **snc/identity/as** sur *p:&lt;utilisateur du service SAP BW que vous avez créé&gt;*. Par exemple, *p:BWServiceUser\@MYDOMAIN.COM*. Notez que *p:* précède l’UPN de l’utilisateur du service, alors que l’UPN est précédé de *p:CN=* quand vous utilisez CommonCryptoLib comme bibliothèque SNC.
+    1. Définissez le paramètre de profil **snc/identity/as** sur *p:&lt;utilisateur du service SAP BW que vous avez créé&gt;* . Par exemple, *p:BWServiceUser\@MYDOMAIN.COM*. Notez que *p:* précède l’UPN de l’utilisateur du service, alors que l’UPN est précédé de *p:CN=* quand vous utilisez CommonCryptoLib comme bibliothèque SNC.
 
-    1. Définissez le paramètre de profil **snc/gssapi\_lib** sur le *&lt;chemin de gx64krb5.dll sur le serveur BW&gt;*. Placez la bibliothèque à un emplacement accessible par le serveur d’applications SAP BW.
+    1. Définissez le paramètre de profil **snc/gssapi\_lib** sur le *&lt;chemin de gx64krb5.dll sur le serveur BW&gt;* . Placez la bibliothèque à un emplacement accessible par le serveur d’applications SAP BW.
 
     1. Définissez les paramètres de profil supplémentaires suivants en changeant les valeurs en fonction de vos besoins. Les cinq dernières options permettent aux clients de se connecter au serveur SAP BW à l’aide de SAP Logon sans avoir à configurer un SNC.
 
@@ -108,7 +108,7 @@ Si ce n’est déjà fait, mappez un utilisateur Active Directory à un utilisat
 
     ![SAP BW - Écran User maintenance](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Sélectionnez l’onglet **SNC**. Dans la zone de texte « SNC name » (Nom SNC), entrez *p:&lt;utilisateur Active Directory&gt;@&lt;votre domaine&gt;*. Pour le nom SNC, *p:* doit précéder l’UPN de l’utilisateur Active Directory. Notez que l’UPN respecte la casse.
+1. Sélectionnez l’onglet **SNC**. Dans la zone de texte « SNC name » (Nom SNC), entrez *p:&lt;utilisateur Active Directory&gt;@&lt;votre domaine&gt;* . Pour le nom SNC, *p:* doit précéder l’UPN de l’utilisateur Active Directory. Notez que l’UPN respecte la casse.
 
    L’utilisateur Active Directory que vous indiquez doit appartenir à la personne ou à l’organisation pour laquelle vous souhaitez activer l’accès SSO au serveur d’applications SAP BW. Par exemple, si vous voulez activer l’accès SSO pour l’utilisateur testuser\@TESTDOMAIN.COM, entrez *p:testuser\@TESTDOMAIN.COM*.
 
@@ -134,7 +134,7 @@ Vérifiez que vous pouvez vous connecter au serveur à l’aide de SAP Logon ave
 
 1. Cliquez avec le bouton droit sur la nouvelle connexion, sélectionnez **Properties**, puis sélectionnez l’onglet **Network**. 
 
-1. Dans la zone **SNC Name**, entrez *p:&lt;UPN de l’utilisateur du service SAP BW&gt;*. Par exemple, *p:BWServiceUser\@MYDOMAIN.COM*. Sélectionnez **OK**.
+1. Dans la zone **SNC Name**, entrez *p:&lt;UPN de l’utilisateur du service SAP BW&gt;* . Par exemple, *p:BWServiceUser\@MYDOMAIN.COM*. Sélectionnez **OK**.
 
     ![Écran System Entry Properties](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
@@ -154,7 +154,7 @@ Ajoutez les entrées de registre nécessaires au registre de la machine sur laqu
 
 1. Dans la fenêtre de configuration de la source de données, entrez le **Nom d’hôte**, le **Numéro système** et l’**ID client** du serveur d’applications SAP BW que vous utilisez pour vous connecter à votre serveur SAP BW à partir de Power BI Desktop.
 
-1. Dans le champ **Nom du partenaire SNC**, entrez *p:&lt;SPN que vous avez associé à l’utilisateur du service SAP BW&gt;*. Par exemple, si le SPN est SAP/BWServiceUser\@MYDOMAIN.COM, entrez *p:SAP/BWServiceUser\@MYDOMAIN.COM* dans le champ **Nom du partenaire SNC**.
+1. Dans le champ **Nom du partenaire SNC**, entrez *p:&lt;SPN que vous avez associé à l’utilisateur du service SAP BW&gt;* . Par exemple, si le SPN est SAP/BWServiceUser\@MYDOMAIN.COM, entrez *p:SAP/BWServiceUser\@MYDOMAIN.COM* dans le champ **Nom du partenaire SNC**.
 
 1. Comme bibliothèque SNC, sélectionnez **SNC\_LIB** ou **SNC\_LIB\_64**. Assurez-vous que **SNC\_LIB\_64** sur la machine de passerelle pointe vers gx64krb5.dll. Vous pouvez également sélectionner l’option **Personnalisé** et fournir le chemin absolu du fichier gx64krb5.dll sur la machine de passerelle.
 
@@ -174,7 +174,7 @@ Si vous rencontrez l’un des problèmes suivants, suivez ces étapes pour corri
 
 * Si vous obtenez des erreurs indiquant que des informations d’identification de la source de données sous-jacente (par exemple, SQL Server) empêchent le démarrage du serveur, vérifiez que vous avez accordé à l’utilisateur du service l’accès à la base de données SAP BW.
 
-* Vous obtenez le message suivant : *(GSS-API) La cible spécifiée est inconnue ou inaccessible*. Cette erreur indique généralement que vous avez spécifié un nom SNC incorrect. Dans l’application cliente, veillez à faire précéder l’UPN de l’utilisateur du service de *p:* uniquement et non *p:CN=*.
+* Vous obtenez le message suivant : *(GSS-API) La cible spécifiée est inconnue ou inaccessible*. Cette erreur indique généralement que vous avez spécifié un nom SNC incorrect. Dans l’application cliente, veillez à faire précéder l’UPN de l’utilisateur du service de *p:* uniquement et non *p:CN=* .
 
 * Vous obtenez le message suivant : *(GSS-API) Un nom non valide a été fourni*. Vérifiez que *p:* est spécifié comme valeur du paramètre de profil d’identité SNC du serveur.
 

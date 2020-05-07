@@ -9,10 +9,10 @@ ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 180fd8d451be794070d8b0f4d37c40965671d23d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73854878"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail Power BI
@@ -45,7 +45,7 @@ L’ajout de fichiers à votre espace de travail est un processus en deux étape
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Importer des classeurs Excel en que jeux de données ou classeurs Excel Online
-Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espace de travail, vous avez deux possibilités. Vous pouvez : 
+Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espace de travail, vous avez deux possibilités. Vous pouvez soit : 
 
 * [Importer les données du classeur Excel en tant que jeu de données](service-get-data-from-files.md). Puis vous en servir pour générer des rapports et des tableaux de bord, que vous pouvez ensuite afficher dans un navigateur web et sur des appareils mobiles.
 * [Vous connecter à des classeurs Excel complets dans Power BI](service-excel-workbook-files.md) et les afficher exactement tels qu’ils apparaissent dans Excel Online.
@@ -55,7 +55,7 @@ Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espac
 2. Sélectionnez **Obtenir des données** en bas du volet de navigation. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
-3. Dans la zone **Fichiers** , sélectionnez **Obtenir**.
+3. Dans la zone **Fichiers**, sélectionnez **Obtenir**.
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Sélectionnez **OneDrive** - *Nom de l’espace de travail*.
@@ -79,6 +79,6 @@ Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espac
 * [Créer des applications et des espaces de travail dans Power BI](service-create-distribute-apps.md)
 * [Importer des données de classeurs Excel](service-get-data-from-files.md)
 * [Se connecter à des classeurs Excel tout entiers](service-excel-workbook-files.md)
-* D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 * Vous souhaitez formuler des commentaires ? Consultez la page des [suggestions concernant Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
 
