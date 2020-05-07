@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: kfollis
 ms.openlocfilehash: 690f69f584b4b185929ad465cf4ddd75e26c1011
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74696530"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Options de support Power BI Pro et Power BI Premium
@@ -23,9 +23,9 @@ Cet article décrit les options de support disponibles pour les clients Power BI
 | --- | --- | --- | --- | --- | --- |
 | **Support de la communauté** : forums web permettant aux utilisateurs d’obtenir un support pair à pair, des conseils et des bonnes pratiques, avec des réponses fournies par une communauté internationale d’experts Power BI et d’employés Microsoft. | X |   |   | Aucun, l’engagement est fourni dans la mesure du possible. | [Communauté Power BI](https://community.powerbi.com) |
 | **Support des utilisateurs finaux Power BI Pro** : support technique de base pour les utilisateurs finaux créant et consommant du contenu dans Power BI. | X |   |   | Un jour ouvrable. | [Site de support Power BI](https://support.powerbi.com)  |
-| **Support pour les administrateurs Power BI Premium** : support technique pour les administrateurs déployant et exploitant les capacités Power BI Premium. | X |   |   | Un jour ouvrable ou une heure, en fonction de la gravité du cas.\* | [Site de support Power BI](https://support.powerbi.com)<br>OU<br>[Centre d’administration Microsoft 365](https://portal.office.com/adminportal)<br>OU<br> Mode |
-| **Support pour les administrateurs Power BI** : support technique et de facturation pour les administrateurs de déploiements Power BI dans leurs organisations.  Pour utiliser cette option, vous devez être administrateur d’entreprise Azure Active Directory, administrateur général Office 365, administrateur de service Office 365 ou administrateur de service Power BI. | X | X |   | Un jour ouvrable ou une heure, en fonction de la gravité du cas.\* | [Centre d’administration Microsoft 365](https://portal.office.com/adminportal)<br>OU<br> Mode |
-| **Support Premier Microsoft** : approche de support de qualité professionnelle, avec gestion des comptes, possibilité de support sur site et services proactifs tels que formation et optimisation des performances des modèles de données. | X | X | X | Divers, en fonction de l’offre et de la gravité du cas.\* | Responsable de compte technique <br>OU<br> [Centre d’administration Microsoft 365](https://portal.office.com/adminportal) |
+| **Support pour les administrateurs Power BI Premium** : support technique pour les administrateurs déployant et exploitant les capacités Power BI Premium. | X |   |   | Un jour ouvrable ou une heure, en fonction de la gravité du cas.\* | [Site de support Power BI](https://support.powerbi.com)<br>OR<br>[Centre d’administration Microsoft 365](https://portal.office.com/adminportal)<br>OR<br> Mode |
+| **Support pour les administrateurs Power BI** : support technique et de facturation pour les administrateurs de déploiements Power BI dans leurs organisations.  Pour utiliser cette option, vous devez être administrateur d’entreprise Azure Active Directory, administrateur général Office 365, administrateur de service Office 365 ou administrateur de service Power BI. | X | X |   | Un jour ouvrable ou une heure, en fonction de la gravité du cas.\* | [Centre d’administration Microsoft 365](https://portal.office.com/adminportal)<br>OR<br> Mode |
+| **Support Premier Microsoft** : approche de support de qualité professionnelle, avec gestion des comptes, possibilité de support sur site et services proactifs tels que formation et optimisation des performances des modèles de données. | X | X | X | Divers, en fonction de l’offre et de la gravité du cas.\* | Responsable de compte technique <br>OR<br> [Centre d’administration Microsoft 365](https://portal.office.com/adminportal) |
 | | | | | | |
 
 \* Un contrat SLA d’une heure est disponible uniquement par le biais des _cas Sev A_, qui exigent une justification de l’impact immédiat et direct sur l’entreprise provoqué par un arrêt du travail dans les rapports de production existants.

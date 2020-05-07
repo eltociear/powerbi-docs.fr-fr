@@ -10,10 +10,10 @@ ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874989"
 ---
 # <a name="what-is-the-power-bi-service"></a>Qu’est-ce que le service Power BI ?
@@ -38,5 +38,5 @@ Une fois que vous avez créé des rapports et des tableaux de bord, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Démarrage rapide pour les consommateurs : [Découvrir le fonctionnement du service Power BI](consumer/end-user-experience.md)   
-- [Tutoriel : Bien démarrer avec le service Power BI](service-get-started.md)
-- [Démarrage rapide : Se connecter aux données dans Power BI Desktop](desktop-quickstart-connect-to-data.md)
+- [Tutoriel : Bien démarrer avec le service Power BI](service-get-started.md)
+- [Démarrage rapide : Se connecter aux données dans Power BI Desktop](desktop-quickstart-connect-to-data.md)

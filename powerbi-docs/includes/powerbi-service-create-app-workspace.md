@@ -9,10 +9,10 @@ ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
 ms.openlocfilehash: 6d8de145f9158e4aa649fa39670fdf2808fc5af4
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73021112"
 ---
 1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail**. 
@@ -51,9 +51,9 @@ ms.locfileid: "73021112"
    
     Les administrateurs peuvent modifier l’espace de travail, y compris y ajouter des membres. Les membres peuvent modifier le contenu de l’espace de travail, sauf s’ils disposent d’un accès en affichage seul. Les administrateurs et les membres peuvent publier l’application.
 
-7. Sélectionnez **Enregistrer**.
+7. Sélectionnez **Save (Enregistrer)** .
 
 Power BI crée l’espace de travail et l’ouvre. Celui-ci figure dans la liste des espaces de travail dont vous êtes membre. Étant donné que vous êtes administrateur, vous pouvez sélectionner **Plus d’options** (…) pour revenir en arrière afin d’apporter des modifications, d’ajouter des membres ou de modifier leurs autorisations.
 
-![Modifier l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
+![Modifier l'espace de travail](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

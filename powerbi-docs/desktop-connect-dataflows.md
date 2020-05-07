@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f1d782aa7409dce43d960956406e996cc7951a57
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876472"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Se connecter à des données créées par des dataflows Power BI dans Power BI Desktop (version bêta)
@@ -62,13 +62,13 @@ Les flux de données Power BI permettent d’effectuer toutes sortes de choses i
 Pour plus d’informations sur l’intégration avec Azure Data Lake Storage Gen2, voir les articles suivants :
 
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
-* [Configurer les paramètres de flux de données d’espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
+* [Configurer les paramètres de flux de données d’un espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)](service-dataflows-add-cdm-folder.md)
 * [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Il existe également des articles sur **Power BI Desktop** qui peuvent vous être utiles :
 
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 

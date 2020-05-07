@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495800"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
@@ -43,7 +43,7 @@ L’utilisation des Diagnostics peut répondre à certains scénarios, tels que�
     * **Moteur** : sélectionnez cette option pour journaliser l’ensemble des [événements moteur répertoriés](#whats-logged) ci-dessous.
     * **AllMetrics** : sélectionnez cette option pour stocker des données détaillées dans [Métriques](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). Si vous archivez vers un compte de stockage, vous pouvez sélectionner la période de conservation pour les journaux de diagnostic. Les journaux sont automatiquement supprimés après l’expiration de la période de conservation.
 
-3. Sélectionnez **Enregistrer**.
+3. Sélectionnez **Save (Enregistrer)** .
 
     Pour modifier la façon dont vos journaux de diagnostic sont enregistrés, vous pouvez revenir sur cette page pour modifier les paramètres.
 
@@ -123,11 +123,11 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Heure à laquelle l'événement a démarré, si disponible. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Heure à laquelle l'événement a démarré, si disponible. |
 | JobID | 0 | ID de travail pour la progression. |
-| ObjectID | 464 | ID d'objet |
+| ObjectID | 464 | ID objet |
 | ObjectType | 802012 | ObjectType |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Heure à laquelle l'événement s'est terminé. |
-| Durée | 0 | Temps (en millisecondes) pris par l'événement. |
-| SessionType | Utilisateur | Type de session (quelle entité a provoqué l'opération). |
+| Duration | 0 | Temps (en millisecondes) pris par l'événement. |
+| SessionType | User | Type de session (quelle entité a provoqué l'opération). |
 | ProgressTotal | 0 | Total de progression. |
 | IntegerData | 0 | Données de type integer. |
 | Gravité | 0 | Niveau de gravité d'une exception. |
@@ -176,7 +176,7 @@ Sélectionnez **EventClass\_s** ou un des noms d’événements et Log Analytics
 
 N’oubliez pas de consulter [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), qui fournit un site web avec des fonctionnalités améliorées en termes de requête, tableau de bord et alerte sur les données collectées.
 
-### <a name="queries"></a>Requêtes
+### <a name="queries"></a>les requêtes
 
 Il existe des centaines de requêtes que vous pouvez utiliser. En voici quelques-unes pour vous aider à démarrer. Pour en savoir plus sur l’utilisation du nouveau langage de requête Recherche dans les journaux, consultez [Comprendre les recherches dans les journaux dans Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
 

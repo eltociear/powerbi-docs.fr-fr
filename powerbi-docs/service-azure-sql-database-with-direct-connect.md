@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
 ms.openlocfilehash: cb9ae846f1033c6e7bcbecae28c039dd985adec0
-ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "82255817"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database avec DirectQuery
@@ -23,7 +23,7 @@ Découvrez comment vous pouvez vous connecter directement à Azure SQL Database 
 
 Avec DirectQuery, les requêtes sont renvoyées à Azure SQL Database pendant que vous explorez les données dans l’affichage Rapport. Cette fonctionnalité est suggérée aux utilisateurs qui connaissent bien les bases de données et les entités auxquelles ils se connectent.
 
-**Remarques :**
+**Remarques :**
 
 * Spécifiez le nom de serveur complet lors de la connexion (voir ci-dessous pour plus de détails).
 * Vérifiez que les règles de pare-feu de la base de données sont configurées de manière à [autoriser l’accès aux services Azure](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services).

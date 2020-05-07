@@ -10,10 +10,10 @@ ms.date: 06/04/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 63d49a439d10acc5d7cda10b76b04a26fcdb085a
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698805"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un fichier Power BI Desktop sur un lecteur local
@@ -22,7 +22,7 @@ ms.locfileid: "74698805"
 
 Dans Power BI, les fonctionnalités Actualiser maintenant et Planifier l’actualisation sont prises en charge pour des jeux de données créés à partir de fichiers Power BI Desktop importés d’un lecteur local où Obtenir des données/Éditeur de requête est utilisé pour se connecter aux données des sources de données suivantes et pour les charger :
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+### <a name="power-bi-gateway---personal"></a>Passerelle Power BI - Personal
 
 - Toutes les sources de données en ligne affichées dans l’éditeur de requête et Obtenir des données dans Power BI Desktop.
 - Toutes les sources de données locales affichées dans l’éditeur de requête et Obtenir des données dans Power BI Desktop, excepté pour HDFS (Hadoop Distributed File System) et Microsoft Exchange.
@@ -37,7 +37,7 @@ Dans Power BI, les fonctionnalités Actualiser maintenant et Planifier l’actua
 
 Vous pouvez effectuer une actualisation manuelle unique des données dans Power BI Desktop en sélectionnant **Actualiser** dans le ruban Accueil. Lorsque vous sélectionnez **Actualiser** ici, les données du modèle du *fichier* sont actualisées avec les données mises à jour à partir de la source de données d’origine. Ce type d’actualisation, entièrement à partir de l’application Power BI Desktop elle-même, diffère d’une actualisation manuelle ou planifiée dans Power BI et il est important de comprendre cette différence.
 
-![Actualiser](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![Actualisation](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
 Lorsque vous importez votre fichier Power BI Desktop à partir d’un lecteur local, les données, ainsi que d’autres informations sur le modèle, sont chargées dans un jeu de données dans le service Power BI. Dans le service Power BI (pas dans Power BI Desktop), vous actualisez les données du jeu de données parce qu’il s’agit de ce sur quoi vos rapports sont basés dans le service Power BI. Étant donné que les sources de données sont externes, vous pouvez actualiser manuellement le jeu de données à l’aide de la commande **Actualiser maintenant**, ou configurer une planification de l’actualisation à l’aide de la commande **Planifier l’actualisation**.
 

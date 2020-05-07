@@ -10,10 +10,10 @@ ms.date: 12/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: aa05ffa7ba07ea1daf162f8ebb2baa3d18f64b29
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75256353"
 ---
 # <a name="migrate-your-subscription-to-the-new-go-local-german-regions"></a>Migrer votre abonnement vers de nouvelles régions allemandes « Go Local »
@@ -24,6 +24,6 @@ Si votre organisation s’abonne, vous pouvez vous attendre à ce que la migrati
 
 Une fois votre abonnement migré, nous allons réduire son tarif pour qu’il corresponde à celui du cloud public. Les clients directs verront un nouvel abonnement avec une nouvelle date de renouvellement annuel. Les services suivants seront migrés dans le cadre de cette approche :
 
-* Power BI
+* Power BI
 
 Nous continuerons à mettre à jour cet article dans les prochains mois pour ajouter des informations détaillées sur les prérequis, les procédures pas à pas et tous les effets que la migration aura sur votre organisation.

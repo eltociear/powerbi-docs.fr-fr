@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: ea6d4186d2f02665201f2161f50e06ad8f0f45a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699403"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
@@ -29,7 +29,7 @@ Pour plus d’informations sur la configuration d’une connexion active à Anal
 
 ## <a name="add-a-data-source"></a>Ajouter une source de données
 
-Pour plus d’informations sur la façon d’ajouter une source de données, consultez [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Sélectionnez **Analysis Services** comme **Type de source de données** si vous vous connectez à un serveur multidimensionnel ou tabulaire.
+Pour plus d’informations sur l’ajout d’une source de données, consultez [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Sélectionnez **Analysis Services** comme **Type de source de données** si vous vous connectez à un serveur multidimensionnel ou tabulaire.
 
 ![Ajouter la source de données Analysis Services](media/service-gateway-enterprise-manage-ssas/datasourcesettings2-ssas.png)
 

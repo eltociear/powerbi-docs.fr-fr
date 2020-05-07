@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
 ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859477"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gérer le contenu dans le portail web 
@@ -22,8 +22,8 @@ Le portail web Power BI Report Server est un emplacement local destiné à l’a
 
 Vous pouvez afficher le portail web dans tout navigateur moderne. Dans le portail web, rapports et les indicateurs de performance clés sont organisés en dossiers, et vous pouvez les marquer en tant que favoris. Vous pouvez également y stocker des classeurs Excel. À partir du portail web, vous pouvez lancer les outils nécessaires pour créer des rapports :
 
-* **Rapports Power BI** créés avec Power BI Desktop : Affichez-les dans le portail web et les applications mobiles Power BI.
-* **Rapports paginés** créés dans le Générateur de rapports : Documents modernes, à mise en forme fixe optimisés pour l’impression.
+* **Rapports Power BI** créés avec Power BI Desktop : consultez-les dans le portail web et les applications mobiles Power BI.
+* **Rapports paginés** créés dans le Générateur de rapports : documents d’aspect moderne à disposition fixe optimisés pour l’impression.
 * **Indicateurs de performance clés** créés directement dans le portail web.
 
 Dans le portail web, vous pouvez parcourir les dossiers du serveur de rapports ou rechercher des rapports spécifiques. Vous pouvez consulter un rapport, ses propriétés générales et ses anciennes versions capturées dans l’historique de rapport. Selon les autorisations dont vous disposez, vous pouvez également vous abonner à des rapports afin de recevoir ceux-ci dans votre boîte de réception ou de pouvoir y accéder dans un dossier partagé sur le système de fichiers.
@@ -43,13 +43,13 @@ L’application du portail web s’exécute dans un navigateur. Lorsque vous dé
    
     Vous voyez les éléments des groupes du portail web dans les catégories suivantes :
    
-   * indicateurs de performance clés (KPI) ;
+   * Indicateurs de performance clés
    * rapports mobiles ;
-   * rapports paginés ;
+   * Rapports paginés
    * rapports Power BI Desktop ;
-   * classeurs Excel ;
-   * jeux de données ;
-   * sources de données ;
+   * Classeurs Excel
+   * Datasets
+   * Sources de données
    * Ressources
 
 ## <a name="manage-items-in-the-web-portal"></a>Gérer les éléments dans le portail web

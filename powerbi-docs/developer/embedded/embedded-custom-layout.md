@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 12/19/2017
 ms.openlocfilehash: e114c208093c9f3401c43e9ea44502e65d6d84fd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79493201"
 ---
 # <a name="custom-layouts"></a>Dispositions personnalisées
@@ -61,9 +61,9 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize` : Utilisez la taille de page pour contrôler la taille du canevas (par exemple, zone blanche du rapport).
-- `displayOptions` : Les valeurs possibles sont : FitToWidth, FitToPage ou ActualSize. Cette option contrôle la mise à l’échelle du canevas pour l’ajuster au Iframe.
-- `pagesLayout` : Contrôle la disposition de chaque visuel. Pour plus d’informations, contactez la rubrique sur la disposition des pages.
+- `pageSize` : utilisez la taille de page pour contrôler la taille du canevas (par exemple, zone blanche du rapport).
+- `displayOptions` : les valeurs possibles sont FitToWidth, FitToPage ou ActualSize. Cette option contrôle la mise à l’échelle du canevas pour l’ajuster au Iframe.
+- `pagesLayout` : contrôle la disposition de chaque visuel. Pour plus d’informations, contactez la rubrique sur la disposition des pages.
 
 ## <a name="pages-layout"></a>Disposition des pages
 
@@ -108,9 +108,9 @@ enum VisualContainerDisplayMode {
 }
 ```
 
-- `x,y,z` : Définit la nouvelle position du visuel.
-- `width`, hauteur : Définit la nouvelle taille du visuel.
-- `displayState` : Définit la visibilité du visuel.
+- `x,y,z` : définit la nouvelle position du visuel.
+- `width`, hauteur : définit la nouvelle taille du visuel.
+- `displayState` : définit la visibilité du visuel.
 
 ## <a name="update-layout"></a>Mettre à jour la disposition
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874080"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Développer avec les API REST pour Power BI Report Server
@@ -29,10 +29,10 @@ Une paire requête-réponse (ou demande/réponse) d’API REST peut être divis�
 
 * L’**URI de demande**, qui comprend : `{URI-scheme} :// {URI-host} / {resource-path} ? {query-string}`. Bien que l’URI de demande soit incluse dans l’en-tête de message de demande, nous l’appelons séparément ici, car la plupart des langages ou infrastructures requiert que vous le passiez séparément du message de demande.
   
-  * Schéma d’URI : Indique le protocole utilisé pour transmettre la demande. Par exemple, `http` ou `https`.
-  * Hôte d’URI : Spécifie le nom de domaine ou l’adresse IP du serveur sur lequel le point de terminaison de service REST est hébergé, tel que `myserver.contoso.com`.
-  * Chemin de ressource : Spécifie la ressource ou collection de ressources, qui peut inclure plusieurs segments que le service utilise dans la détermination de la sélection de ces ressources. Par exemple : `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` peut être utilisé pour obtenir les propriétés spécifiées pour l’élément CatalogItem.
-  * Chaîne de requête (facultatif) : Fournit des paramètres simples supplémentaires, tels que les critères de sélection de ressource ou de version de l’API.
+  * URI scheme (schéma d’URI) : indique le protocole utilisé pour transmettre la demande. Par exemple, `http` ou `https`.
+  * URI host (hôte d’URI) : spécifie le nom de domaine ou l’adresse IP du serveur sur lequel le point de terminaison de service REST est hébergé, tel que `myserver.contoso.com`.
+  * Resource path (chemin d’accès de la ressource) : spécifie la ressource ou collection de ressources, qui peut inclure plusieurs segments que le service utilise dans la détermination de la sélection de ces ressources. Par exemple : `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` peut être utilisé pour obtenir les propriétés spécifiées pour l’élément CatalogItem.
+  * Query string (chaîne de requête, facultatif) : fournit des paramètres simples supplémentaires, tels que les critères de sélection de ressource ou de version de l’API.
 * Champs de message d’en-tête de requête HTTP :
   
   * [Méthode HTTP](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) obligatoire (également appelée opération ou verbe), indiquant au service le type d’opération que vous demandez. Les API REST de Reporting Services prennent en charge les méthodes DELETE, GET, HEAD, PUT, POST et PATCH.

@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74791982"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
@@ -40,7 +40,7 @@ Si vous ne savez pas quelle source de données a été utilisée, effectuez les 
 ## <a name="next-steps"></a>Étapes suivantes
 [Actualisation des données](refresh-data.md)  
 [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
-[On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)  
+[Passerelle de données locale](service-gateway-onprem.md)  
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
 [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 

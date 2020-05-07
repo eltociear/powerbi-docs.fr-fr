@@ -10,10 +10,10 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74178267"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 conseils pour obtenir de l’aide avec vos questions Power BI
@@ -29,7 +29,7 @@ Les experts qui doivent trouver des réponses relatives à Power BI utilisent so
 L’équipe Power BI met à jour et améliore régulièrement la formation et la documentation Power BI. Vous pouvez trouver des contenus pertinents, y compris des enregistrements de webinaires, des livres blancs, des formations guidées et des liens vers des billets de blog qui traitent de toutes les fonctionnalités les plus récentes.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Lire les dernières actualités sur le blog Power BI
-L’équipe Power BI explique toutes les nouvelles fonctionnalités dans [les billets de blog Power BI](https://powerbi.microsoft.com/blog/). Découvrez les nouveautés concernant les fonctionnalités Power BI Desktop ou les applications mobiles Power BI. Revenez souvent pour prendre connaissances des nouveautés : Prenez quelques minutes par semaine pour consulter les blogs. Vous réutiliserez peut-être les informations que vous aviez notées quelques mois auparavant.
+L’équipe Power BI explique toutes les nouvelles fonctionnalités dans [les billets de blog Power BI](https://powerbi.microsoft.com/blog/). Découvrez les nouveautés concernant les fonctionnalités Power BI Desktop ou les applications mobiles Power BI. Nous vous recommandons de revenir régulièrement sur le blog pour voir les nouveautés, ne serait-ce que quelques minutes par semaine. Vous réutiliserez peut-être les informations que vous aviez notées quelques mois auparavant.
 
 ## <a name="4-try-twitter"></a>4 Essayer Twitter
 Un grand nombre de clients et d’experts Power BI sont sur Twitter. Posez votre question dans un tweet. Ajoutez les hashtags #powerbi et #powerbihelp afin que les personnes qui ont la réponse voient votre tweet.

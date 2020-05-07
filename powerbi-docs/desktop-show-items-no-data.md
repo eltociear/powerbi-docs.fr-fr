@@ -10,10 +10,10 @@ ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a8d99a041edbbe353badbb580940e918b30a0a9d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73879736"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Afficher les éléments sans données dans Power BI
@@ -163,7 +163,7 @@ Par exemple, sur un visuel Matrice ayant quatre champs dans le compartiment **Li
 
 ![L’option Afficher les éléments sans données est automatiquement activée pour les champs contenus dans le même visuel](media/desktop-show-items-no-data/show-items-no-data-05.png)
 
-En revanche, l’option **Afficher les éléments sans données** *n’est pas* activée automatiquement pour le champ *Continent* du compartiment **Colonnes**. 
+En revanche, l’option **Afficher les éléments sans données***n’est pas* activée automatiquement pour le champ *Continent* du compartiment **Colonnes**. 
 
 Ce comportement visuel est souvent observé quand un visuel est converti dans un type différent, par exemple, du type Matrice au type Table. À l’occasion de ces conversions, l’option **Afficher les éléments sans données** est automatiquement activée pour les champs qui sont déplacés dans un compartiment où la fonctionnalité est activée pour un de ses champs. Dans l’exemple précédent, si la fonctionnalité **Afficher les éléments sans données** est activée pour *SupplierID* et que le visuel est converti en table, le champ *Continent* du compartiment **Colonnes** est déplacé (avec les champs du compartiment **Lignes**) dans le seul compartiment utilisé dans un visuel de table – le compartiment **Valeurs**. De ce fait, **Afficher les éléments sans données** est activé pour tous les champs du compartiment **Valeurs**.
 
@@ -191,7 +191,7 @@ Cette section montre l’exemple de modèle de données utilisé dans les exempl
 |ProductCategory[CategoryId]|   ProductCategory[CategoryName]|
 |---------|---------|
 |1  |Mode   |
-|2  |Appareil photo |
+|2  |Caméra |
 |3  |TV |
 
 
