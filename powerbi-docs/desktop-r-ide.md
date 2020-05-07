@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75223471"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Utiliser un IDE R externe avec Power BI
@@ -27,7 +27,7 @@ Auparavant, vous deviez utiliser l’éditeur de script R dans **Power BI Des
 
 À partir de la version de septembre 2016 de **Power BI Desktop** (version 2.39.4526.362), vous pouvez spécifier l’IDE R que vous souhaitez utiliser et le lancer automatiquement à partir de **Power BI Desktop**.
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votre ordinateur local. **Power BI Desktop** n’inclut pas, ne déploie pas et n’installe pas le moteur R. Vous devez donc installer **R** séparément sur votre ordinateur local. Vous pouvez choisir l’IDE R à utiliser avec les options suivantes :
 
 * Vous pouvez installer votre IDE R favori (nombre des IDE R étant disponibles gratuitement), tel que [Revolution Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/).

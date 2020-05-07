@@ -10,13 +10,13 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877314"
 ---
-# <a name="dataflows-and-azure-data-lake-integration-preview"></a>Flux de données et intégration à Azure Data Lake (préversion)
+# <a name="dataflows-and-azure-data-lake-integration-preview"></a>Intégration de dataflows et d’Azure Data Lake (préversion)
 
 Par défaut, les données utilisées avec Power BI sont stockées dans le stockage interne offert par Power BI. Avec l’intégration entre les flux de données et Azure Data Lake Storage Gen2 (ADLS Gen2), vous pouvez stocker vos flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. 
 
@@ -94,6 +94,6 @@ Pour plus d’informations sur le stockage Azure, voir les articles suivants :
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Définition du fichier modèle CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

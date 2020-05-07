@@ -1,5 +1,5 @@
 ---
-title: Désactiver l’actualisation en arrière-plan de Power Query
+title: Désactiver l’actualisation de l’arrière-plan de Power Query
 description: Aide pour savoir quand désactiver l’actualisation en arrière-plan de Power Query.
 author: peter-myers
 manager: asaxton
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75623058"
 ---
-# <a name="disable-power-query-background-refresh"></a>Désactiver l’actualisation en arrière-plan de Power Query
+# <a name="disable-power-query-background-refresh"></a>Désactiver l’actualisation de l’arrière-plan de Power Query
 
 Cet article s’adresse principalement aux modélisateurs de données d’importation qui utilisent Power BI Desktop.
 
@@ -43,4 +43,4 @@ Vous pouvez toujours mettre à jour le cache d’aperçu. Vous pouvez le mettre 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
 - [Documentation Power Query](/power-query/)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

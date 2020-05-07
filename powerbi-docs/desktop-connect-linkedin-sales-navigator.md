@@ -10,10 +10,10 @@ ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565642"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Se connecter à LinkedIn Sales Navigator dans Power BI Desktop
@@ -80,7 +80,7 @@ Vous pouvez obtenir l'application modèle **LinkedIn Sales Navigator** à partir
 L'application modèle fournit quatre onglets pour vous aider à analyser et à partager vos informations :
 
 * Utilisation
-* Rechercher
+* Search
 * InMail
 * SSI
 
@@ -120,8 +120,8 @@ Si vous rencontrez des problèmes lors de la connexion à vos données, vous pou
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 

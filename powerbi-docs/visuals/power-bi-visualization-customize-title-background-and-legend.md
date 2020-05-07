@@ -11,10 +11,10 @@ ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78893420"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Personnaliser les titres, les arrière-plans et les légendes des visualisations
@@ -24,7 +24,7 @@ Ce tutoriel présente quelques façons de personnaliser vos visualisations. Il e
 Vous ne pouvez pas personnaliser toutes les visualisations. Consultez le [la liste complète](#visualization-types-that-you-can-customize) des visualisations pour plus d’informations.
 
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Service Power BI ou Power BI Desktop
 
@@ -49,7 +49,7 @@ Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Ex
 
 1. Déplacez le curseur **Titre** sur **Activé**.
 
-1. Pour modifier le titre, tapez *Store count by month opened **(Nombre d’ouvertures de magasins pas mois) dans le champ**Texte du titre*.
+1. Pour modifier le titre, tapez *Store count by month opened* (Nombre d’ouvertures de magasins pas mois) dans le champ **Texte du titre**.
 
     ![Capture d’écran du volet Format avec le texte du titre entré.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -135,30 +135,30 @@ Voici une liste des visualisations et des options de personnalisation respective
 
 | Visualisation | Titre | Arrière-plan | Légende |
 |:--- |:--- |:--- |:--- |
-| Zone | oui | oui |oui |
-| Barres | oui | oui |oui |
-| Carte | oui | oui |n/a |
-| Carte à plusieurs lignes | oui | oui | n/a |
-| Colonne | oui | oui | oui |
-| Combiné | oui | oui | oui |
-| Graphique en anneau | oui | oui | oui |
-| Carte choroplèthe | oui | oui | oui |
-| Entonnoir | oui | oui | n/a |
-| Jauge | oui | oui | n/a |
-| Influenceur clé | oui | oui | n/a |
-| KPI | oui | oui | n/a |
-| Ligne | oui | oui | oui |
-| Carte | oui | oui | oui |
-| Matrice | oui | oui | n/a |
-| Secteurs | oui | oui | oui |
-| Questions et réponses | oui | oui | n/a |
-| Nuage de points | oui | oui | oui |
-| Forme | oui | oui | oui |
-| Segment | oui | oui | n/a |
-| Table | oui | oui | n/a |
-| Zone de texte | non | oui | n/a |
-| Treemap | oui | oui | oui |
-| Cascade | oui | oui | oui |
+| Zone | Oui | Oui |Oui |
+| Barres | Oui | Oui |Oui |
+| Carte | Oui | Oui |n/a |
+| Carte à plusieurs lignes | Oui | Oui | n/a |
+| personnalisée | Oui | Oui | Oui |
+| Combiné | Oui | Oui | Oui |
+| Graphique en anneau | Oui | Oui | Oui |
+| Carte choroplèthe | Oui | Oui | Oui |
+| Entonnoir | Oui | Oui | n/a |
+| Jauge | Oui | Oui | n/a |
+| Influenceur clé | Oui | Oui | n/a |
+| Indicateur de performance clé | Oui | Oui | n/a |
+| Ligne | Oui | Oui | Oui |
+| Carte | Oui | Oui | Oui |
+| Matrice | Oui | Oui | n/a |
+| Secteurs | Oui | Oui | Oui |
+| Questions/Réponses (Q&R) | Oui | Oui | n/a |
+| Nuage de points | Oui | Oui | Oui |
+| Forme | Oui | Oui | Oui |
+| Segment | Oui | Oui | n/a |
+| Tableau | Oui | Oui | n/a |
+| Zone de texte | non | Oui | n/a |
+| Treemap | Oui | Oui | Oui |
+| Cascade | Oui | Oui | Oui |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

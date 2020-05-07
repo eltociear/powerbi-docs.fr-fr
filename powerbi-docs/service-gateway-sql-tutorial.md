@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958430"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
@@ -30,7 +30,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 > * Passer en revue l’historique des actualisations pour analyser les résultats des cycles d’actualisation précédents
 > * Nettoyer les ressources en supprimant les artefacts créés dans ce tutoriel
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Si ce n’est pas déjà fait, inscrivez-vous à un [essai gratuit de Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 - [Installez Power BI Desktop](https://powerbi.microsoft.com/desktop/) sur un ordinateur local.
@@ -114,15 +114,15 @@ Dans Power BI Desktop, vous vous êtes connecté directement à votre base de do
 
 5. Dans la page de gestion **Passerelles**, sous l’onglet **Paramètres de la source de données**, entrez et vérifiez les informations suivantes, puis sélectionnez **Ajouter**.
 
-    | Option | Valeur |
+    | Option | Value |
     | --- | --- |
     | Nom de la source de données | AdventureWorksProducts |
     | Type de source de données | SQL Server |
     | Serveur | Nom de votre instance SQL Server, par exemple SQLServer01 (doit être identique au nom spécifié dans Power BI Desktop). |
-    | Base de données | Nom de votre base de données SQL Server, par exemple AdventureWorksDW (doit être identique au nom spécifié dans Power BI Desktop). |
+    | Database | Nom de votre base de données SQL Server, par exemple AdventureWorksDW (doit être identique au nom spécifié dans Power BI Desktop). |
     | Méthode d’authentification | Windows ou De base (généralement Windows). |
     | Nom d’utilisateur | Compte d’utilisateur utilisé pour vous connecter à SQL Server. |
-    | Mot de passe | Mot de passe du compte utilisé pour vous connecter à SQL Server |
+    | Password | Mot de passe du compte utilisé pour vous connecter à SQL Server |
 
     ![Paramètres de la source de données](./media/service-gateway-sql-tutorial/data-source-settings.png)
 

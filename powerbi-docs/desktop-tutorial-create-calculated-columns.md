@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
-description: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
+title: 'Didacticiel : création de colonnes calculées dans Power BI Desktop'
+description: 'Didacticiel : création de colonnes calculées dans Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: cdd4f4f5058b57cbf59a3a0b35286243bd8c8f37
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75731716"
 ---
-# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Tutoriel : Créer des colonnes calculées dans Power BI Desktop
+# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Didacticiel : création de colonnes calculées dans Power BI Desktop
 
 Parfois, les données que vous analysez ne contiennent pas de champ particulier vous permettant d’obtenir les résultats que vous recherchez. C’est là qu’interviennent les *colonnes calculées*. Les colonnes calculées utilisent des formules du langage DAX (Data Analysis Expressions) pour définir les valeurs d’une colonne, assembler des valeurs de texte à partir de deux colonnes différentes jusqu’à calculer une valeur numérique à partir d’autres valeurs. Par exemple, supposons que vos données incluent des champs **Ville** et **État**, mais que vous voulez un champ **Emplacement** unique qui possède ces deux informations, par exemple « Miami, FL ». C’est là précisément qu’interviennent les colonnes calculées.
 
@@ -24,7 +24,7 @@ Les colonnes calculées sont semblables aux [mesures](desktop-tutorial-create-me
 
 Ce tutoriel va vous aider à comprendre et à créer les colonnes calculées et à les utiliser dans des visualisations de rapports dans Power BI Desktop.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Ce didacticiel s’adresse aux utilisateurs de Power BI déjà familiarisés avec l’utilisation de Power BI Desktop pour créer des modèles plus avancés. Vous devez déjà savoir comment utiliser Obtenir des données et l’Éditeur Power Query pour importer des données, travailler sur plusieurs tables associées et ajouter des champs au canevas de rapport. Si vous découvrez seulement Power BI Desktop, veillez à consulter [Prise en main de Power BI Desktop](desktop-getting-started.md).
   
@@ -133,4 +133,4 @@ Les colonnes calculées peuvent enrichir vos données en favorisant des insights
 
 Si vous souhaitez approfondir vos connaissances des formules DAX et créer des colonnes calculées avec des formules plus avancées, consultez [Informations de base sur DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Cet article porte sur les concepts fondamentaux propres à DAX, tels que la syntaxe, les fonctions et une compréhension plus approfondie du contexte.
 
-Veillez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.
+Pensez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.

@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871460"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Partager un tableau de bord Power BI avec des liens vers un fichier Excel dans OneDrive
@@ -46,7 +46,7 @@ Quand vous [publiez un pack de contenu](service-organizational-content-pack-crea
     ![Classeur Excel dans un pack de contenu](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Sélectionnez **Accéder à OneDrive Entreprise pour définir les autorisations du classeur**.
 4. Sur OneDrive, [modifiez les autorisations](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) en fonction des besoins.
-5. Sélectionnez **Publier**.
+5. Sélectionnez **Publish** (Publier).
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Partager un tableau de bord à partir d’un espace de travail Power BI
 Le partage d’un tableau de bord à partir d’un espace de travail Power BI est similaire au partage d’un tableau de bord à partir de votre propre espace de travail, sauf que les fichiers se trouvent dans un site d’espace de travail Office 365, et non dans votre espace OneDrive Entreprise privé. Modifiez les autorisations du classeur Excel avant de partager le tableau de bord avec des personnes n’appartenant pas à l’espace de travail.

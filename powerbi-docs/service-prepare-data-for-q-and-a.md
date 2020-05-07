@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 16d58090a9a7c6e64fbf2ace23fdf342d1768a30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881084"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Optimiser vos données Excel avec Questions et réponses dans Power BI
@@ -38,7 +38,7 @@ Voici quelques conseils pour tirer le meilleur parti de Q&R.
   
   Par exemple, si vous disposez d’une table qui contient des données de ventes, nommez-la « Ventes ». Les noms de colonnes tels que « Année », « Produit », « Commercial » et « Montant » vous permettront d’obtenir d’excellents résultats avec Q&R.
 
-* si votre classeur contient un modèle de données Power Pivot, vous pouvez procéder à davantage d’optimisations. Pour plus d’informations, consultez cet article de notre équipe d’experts internes en langage naturel intitulé [Demystifying Power BI Q&A part 2 (Q&R : démystification de Power BI, partie 2)](https://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx).
+* si votre classeur contient un modèle de données Power Pivot, vous pouvez procéder à davantage d’optimisations. Pour plus d’informations, consultez cet article de notre équipe d’experts internes en langage naturel intitulé [Demystifying Power BI Q&A part 2](https://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx).
 
 * Ouvrez le jeu de données dans Power BI Desktop et créez des colonnes, créez des mesures calculées, concaténez des champs pour créer des valeurs uniques, classez les données par type (par exemple, dates, chaînes, données géographiques, images, URL) et bien plus encore.
 

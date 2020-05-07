@@ -10,13 +10,13 @@ ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872324"
 ---
-# <a name="tutorial-get-started-with-the-power-bi-service"></a>Tutoriel : Bien démarrer avec le service Power BI
+# <a name="tutorial-get-started-with-the-power-bi-service"></a>Tutoriel : Bien démarrer avec le service Power BI
 Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](fundamentals/power-bi-overview.md).
 
 ![Accueil du service Power BI](media/service-get-started/power-bi-service-get-started-home.png)
@@ -161,7 +161,7 @@ Pour une exploration rapide de vos données, essayez de poser une question dans 
 
    Même si vous avez remplacé le graphique par un graphique en courbes, la vignette continue à montrer un histogramme, car c’est la visualisation que vous avez épinglée à l’origine. 
 
-## <a name="step-4-reposition-tiles"></a>Étape 4 : Repositionner les vignettes
+## <a name="step-4-reposition-tiles"></a>Étape 4 : Repositionner les vignettes
 
 Le tableau de bord est large. Nous pouvons réorganiser les vignettes pour optimiser l’utilisation de l’espace du tableau de bord.
 
@@ -179,7 +179,7 @@ Le tableau de bord est large. Nous pouvons réorganiser les vignettes pour optim
 
     ![Tableau de bord réorganisé](media/service-get-started/power-bi-service-rearranged-dashboard.png)
 
-## <a name="step-5-interact-with-tiles"></a>Étape 5 : Interagir avec les vignettes
+## <a name="step-5-interact-with-tiles"></a>Étape 5 : Interagir avec les vignettes
 
 Voici une dernière interaction à observer, avant de commencer à créer vos propres tableaux de bord et rapports. La sélection des différentes vignettes donne des résultats différents. 
 

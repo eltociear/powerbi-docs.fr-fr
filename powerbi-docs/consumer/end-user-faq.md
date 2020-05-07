@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79039980"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
@@ -54,13 +54,13 @@ Si votre entreprise a acheté des licences Power BI ou un compte de capacité Pr
 
 Vous pouvez également vous inscrire au service Power BI en tant qu’individu. Consultez le [processus d’inscription en libre-service de Power BI](../service-self-service-signup-for-power-bi.md)
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je m’inscrire avec mon adresse de messagerie professionnelle ?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je me connecter avec mon adresse de messagerie professionnelle ?
 
-Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur le [processus d’inscription en libre-service de Power BI](../service-self-service-signup-for-power-bi.md).
+Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur [le processus de connexion en libre-service de Power BI](../service-self-service-signup-for-power-bi.md).
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Power BI prend-il en charge les appareils mobiles ?
 
-Oui. Power BI a des applications natives pour les téléphones et tablettes Android, les appareils iOS et les appareils Windows 10. Téléchargez l’une des [applications mobiles Power BI](https://powerbi.microsoft.com/mobile) à partir de son Store respectif :  
+Oui. Power BI a des applications natives pour les téléphones et tablettes Android, les appareils iOS et les appareils Windows 10. Téléchargez une des [applications mobiles Power BI](https://powerbi.microsoft.com/mobile) à partir de son Store respectif :  
 
 * [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
 * [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
@@ -72,7 +72,7 @@ Pour utiliser le service Power BI gratuitement, vous avez simplement besoin d�
 
 Vous pouvez télécharger les applications mobiles Power BI à partir de leur Store respectif, et ce gratuitement :
 
-* [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
+* [App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
 * [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 * [Windows Store](https://go.microsoft.com/fwlink/?LinkId=526478)
 
