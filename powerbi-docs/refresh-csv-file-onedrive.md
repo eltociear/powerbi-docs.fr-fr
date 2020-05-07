@@ -11,10 +11,10 @@ ms.date: 09/12/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: d18d3a5b5d85a121f67c5b3109a150a21ab72d1a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699702"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données créé à partir d’un fichier CSV sur OneDrive ou SharePoint Online
@@ -29,7 +29,7 @@ De nombreuses organisations exécutent des processus qui interrogent automatique
 Les fichiers de valeurs séparées par des virgules étant de simples fichiers texte, les connexions à des sources de données et des rapports externes ne sont pas prises en charge. Vous ne pouvez pas planifier l’actualisation d’un jeu de données créé à partir d’un fichier de valeurs séparées par des virgules. Toutefois, quand le fichier est sur OneDrive ou SharePoint Online, Power BI synchronise automatiquement toutes les modifications apportées au fichier avec le jeu de données toutes les heures.
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive Entreprise. Quelle est la différence ?
-Si vous avez un compte OneDrive personnel et OneDrive Entreprise, il est recommandé de conserver sur OneDrive Entreprise tous les fichiers auxquels vous souhaitez vous connecter dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
+Si vous avez un compte OneDrive personnel et OneDrive Entreprise, il est recommandé de conserver sur OneDrive Entreprise tous les fichiers auxquels vous souhaitez vous connecter dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
 
 La connexion à OneDrive Entreprise dans Power BI est généralement transparente, car le compte que vous utilisez pour vous connecter à Power BI est souvent le même que celui que vous utilisez pour vous connecter à OneDrive Entreprise. En revanche, avec un OneDrive personnel, il est probable que vous vous connectiez avec un autre [compte Microsoft](https://account.microsoft.com).
 

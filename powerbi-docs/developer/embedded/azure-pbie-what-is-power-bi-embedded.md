@@ -11,10 +11,10 @@ ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.openlocfilehash: f04621fdfe7e6055d84fa4d2672c874837ff5ea4
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495271"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Qu’est-ce que Power BI Embedded dans Azure ?
@@ -39,7 +39,7 @@ Vous disposez d’une application avec du contenu Power BI incorporé à l’aid
 
 Power BI Embedded vous permet de vous concentrer sur ce que vous faites le mieux : créer des applications remarquables. Vous pouvez gérer et développer avec Power BI Embedded en vous appuyant sur les outils et les compétences dont vous disposez déjà.
 
-* [**Portail Azure**](https://portal.azure.com/) : application web permettant de gérer tous les services Azure
+* [**Le Portail Microsoft Azure**](https://portal.azure.com/) : application web destinée à gérer tous les services Azure
 * [**Visual Studio Code**](https://code.visualstudio.com/docs) : éditeur de code open source gratuit et téléchargeable pour Windows, macOS et Linux qui prend en charge les extensions
 * [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/) : outil gratuit et téléchargeable destiné à créer des rapports élaborés et interactifs avec l’analytique visuelle
 
@@ -47,9 +47,9 @@ En utilisant l’API REST, Power BI Embedded vous permet de développer dans n�
 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Prenez contact avec l’équipe d’ingénierie Power BI
 
-* [Communautés](https://community.powerbi.com/) : posez des questions sur Power BI
-* [Suggestions concernant Power BI](https://ideas.powerbi.com) : votez pour les fonctionnalités demandées et formulez vos propres demandes
-* [Reddit](https://www.reddit.com/r/PowerBI/) : discutez de Power BI
+* [Communautés](https://community.powerbi.com/) : posez des questions sur Power BI
+* [Power BI Ideas](https://ideas.powerbi.com) : votez pour les fonctionnalités demandées et formulez vos propres demandes
+* [Reddit](https://www.reddit.com/r/PowerBI/) : discutez autour de Power BI
 
 ## <a name="next-steps"></a>Étapes suivantes
 

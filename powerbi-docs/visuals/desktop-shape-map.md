@@ -10,10 +10,10 @@ ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79525657"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Créer des visualisations de carte de forme dans Power BI Desktop (préversion)
@@ -115,7 +115,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="australia-states"></a>Australie : États
 
-| ID | abbr | iso | name | postal |
+| ID | abbr | iso | nom | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,9 +126,9 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Austriche : États
+### <a name="austria-states"></a>Autriche : États
 
-| ID | iso | name | name-en | postal |
+| ID | iso | nom | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -176,9 +176,9 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Canada : Provinces
+### <a name="canada-provinces"></a>Canada : provinces
 
-| ID | iso | name | postal |
+| ID | iso | nom | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -186,7 +186,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | ca-sk |CA-SK |Saskatchewan |SK |
 | ca-qc |CA-QC |Quebec |QC |
 | ca-pe |CA-PE |Prince Edward Island |PE |
-| ca-on |CA-ON |Ontario |ON |
+| ca-on |CA-ON |Ontario |ACTIVÉ |
 | ca-ns |CA-NS |Nova Scotia |NS |
 | ca-nl |CA-NL |Newfoundland and Labrador |NL |
 | ca-nb |CA-NB |New Brunswick |NB |
@@ -194,9 +194,9 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>France : Régions
+### <a name="france-regions"></a>France : régions
 
-| ID | name | name-en |
+| ID | nom | name-en |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -218,7 +218,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="germany-states"></a>Allemagne : États
 
-| ID | iso | name | name-en | postal |
+| ID | iso | nom | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -234,10 +234,10 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | de-he |DE-HE |Hessen |Hesse |HE |
 | de-hh |DE-HH |Hamburg |Hamburg |HH |
 | de-hb |DE-HB |Bremen |Bremen |HB |
-| de-by |DE-BY |Bayern |Bavaria |BY |
+| de-by |DE-BY |Bayern |Bavaria |PAR |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irlande : Pays
+### <a name="ireland-counties"></a>Irlande : comtés
 
 | ID |
 | --- |
@@ -268,9 +268,9 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italie : Régions
+### <a name="italy-regions"></a>Italie : régions
 
-| ID | iso | name | name-en | postal |
+| ID | iso | nom | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -295,7 +295,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="mexico-states"></a>Mexique : États
 
-| ID | abreviatura | iso | name | name-en | postal |
+| ID | abreviatura | iso | nom | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -330,9 +330,9 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Pays-Bas : Provinces
+### <a name="netherlands-provinces"></a>Pays-Bas : provinces
 
-| ID | iso | name | name-en |
+| ID | iso | nom | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,7 +349,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="uk-countries"></a>Royaume-Uni : pays
 
-| ID | iso | name |
+| ID | iso | nom |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -358,7 +358,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="usa-states"></a>États-Unis : États
 
-| ID | name | postal |
+| ID | nom | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -367,7 +367,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | us-la |Louisiana |LA |
 | us-ar |Arkansas |AR |
 | us-sc |South Carolina |SC |
-| us-ga |Georgia |GA |
+| us-ga |Géorgie |GA |
 | us-ms |Mississippi |MS |
 | us-al |Alabama |AL |
 | us-nm |New Mexico |NM |
@@ -400,7 +400,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 | us-ma |Massachusetts |MA |
 | us-ia |Iowa |IA |
 | us-nh |New Hampshire |NH |
-| us-or |Oregon |OR |
+| us-or |Oregon |OU |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
 | us-id |Idaho |ID |

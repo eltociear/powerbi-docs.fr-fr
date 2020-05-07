@@ -10,14 +10,14 @@ ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79133196"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Résoudre les problèmes liés à la connexion dans Power BI Desktop
-Il est possible que vous rencontriez des erreurs lorsque vous tentez de vous connecter à **Power BI Desktop**. Il existe deux raisons principales pour les problèmes de connexion : **Erreurs d’authentification proxy** et **Erreurs de redirection d’URL non HTTPS**. 
+Il est possible que vous rencontriez des erreurs lorsque vous tentez de vous connecter à **Power BI Desktop**. Il existe deux raisons principales aux problèmes de connexion : les **erreurs d’authentification de proxy** et les **erreurs de redirection d’URL non HTTPS**. 
 
 Pour déterminer l’origine de votre problème de connexion, la première étape consiste à contacter votre administrateur et à lui fournir des informations de diagnostic afin qu’il puisse identifier la cause du problème. En suivant les problèmes liés à votre souci de connexion, les administrateurs peuvent déterminer quelles erreurs parmi les suivantes s’appliquent à votre cas. 
 
@@ -33,7 +33,7 @@ L’écran suivant montre un exemple de l’erreur *Authentification de proxy re
 Les exceptions suivantes dans les fichier de trace *Power BI Desktop* sont associées à cette erreur :
 
 * *Microsoft.PowerBI.Client.Windows.Services.PowerBIWebException*
-* *HttpStatusCode : ProxyAuthenticationRequired*
+* *HttpStatusCode: ProxyAuthenticationRequired*
 
 Lorsque cette erreur se produit, la raison la plus probable est qu’un serveur d’authentification de proxy sur votre réseau ne bloque pas les requêtes web émises par **Power BI Desktop**. 
 
@@ -55,7 +55,7 @@ Les versions actuelles de **Power BI Desktop** utilisent la version actuelle d�
 
 Les exceptions suivantes dans les fichier de trace *Power BI Desktop* sont associées à cette erreur :
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException : La Redirection d’URL non HTTPS n’est pas prise en charge dans la vue web*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException : la redirection vers une URL non HTTPS n’est pas prise en charge dans webview*
 * *ErrorCode: non_https_redirect_failed*
 
 Si l’erreur *ErrorCode: non_https_redirect_failed* se produit, cela signifie qu’un(e) ou plusieurs fournisseurs ou pages de redirection dans la chaîne de redirection n’est pas un point de terminaison HTTPS protégé, ou qu’un émetteur de certificat d’une ou plusieurs redirections ne fait pas partie des racines de confiance de l’appareil. Tous les fournisseurs d’une chaîne de redirection de la connexion doivent utiliser une URL HTTPS. Pour résoudre ce problème, contactez votre administrateur et demandez-lui d’utiliser des URL sécurisées pour ses sites d’authentification. 

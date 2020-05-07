@@ -10,10 +10,10 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621523"
 ---
 # <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
@@ -32,7 +32,7 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
  
 -   **Commencez avec l’Assistant Tableau, Matrice ou Graphique**. Créez une connexion à une source de données, faites un glisser-déposer de champs pour créer une requête de jeu de données, sélectionnez une disposition et un style, et personnalisez votre rapport.  
   
--   **Commencez avec l’Assistant Carte** pour créer des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. (ESRI). Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
+-   **Commencez avec l’Assistant Carte** pour créer des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
 
 ##  <a name="design-your-report"></a><a name="DesignRept"></a> Créer votre rapport  
   

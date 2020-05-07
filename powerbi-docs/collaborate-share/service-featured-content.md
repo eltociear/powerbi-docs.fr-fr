@@ -10,10 +10,10 @@ ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79496260"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Proposer du contenu dans la page d’accueil Power BI de collègues
@@ -46,7 +46,7 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
     :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Paramètres du contenu proposé":::
 
-4. Sélectionnez **Enregistrer**.
+4. Sélectionnez **Save (Enregistrer)** .
 
     Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’**accueil**.
 
@@ -60,5 +60,5 @@ Désormais, toutes les personnes qui ont accès à cette application la voient �
 
 * [Comment partager des tableaux de bord, rapports et vignettes ?](../service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Gérer le contenu proposé dans le portail d’administration](../service-admin-portal.md#manage-featured-content)
-* Vous avez des questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

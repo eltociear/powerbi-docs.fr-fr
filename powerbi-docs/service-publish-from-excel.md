@@ -10,10 +10,10 @@ ms.date: 03/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80329617"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publier sur Power BI à partir de Microsoft Excel
@@ -61,7 +61,7 @@ Une fois votre classeur enregistré sur OneDrive Entreprise, lorsque vous sélec
 
 ![Options pour Power BI](media/service-publish-from-excel/pbi_uploadexport2.png)
 
-#### <a name="upload-your-workbook-to-power-bi"></a>Charger votre classeur dans Power BI
+#### <a name="upload-your-workbook-to-power-bi"></a>Télécharger votre classeur dans Power BI
 Lorsque vous choisissez l’option **Charger**, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais, contrairement à Excel Online, vous avez la possibilité d’épingler des éléments de vos classeurs sur vos tableaux de bord.
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Si vous devez modifier des données, vous pouvez cliquer sur **Modifier**, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive Entreprise.

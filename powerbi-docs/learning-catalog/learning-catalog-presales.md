@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: 04a6589b4adb769caf2a7901d112db7c054a5764
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268394"
 ---
 # <a name="partner-pre-sales-learning-catalog"></a>Catalogue des formations pour les partenaires en prévente
@@ -20,7 +20,7 @@ ms.locfileid: "81268394"
 Le catalogue suivant est organisé en partant des connaissances de base pour aller vers des domaines spécifiques et du plus simple au plus avancé. Si le contenu de formation existe dans plusieurs formats, nous vous en informerons pour que vous puissiez choisir le plus adapté à vos besoins.
 
 ## <a name="get-started"></a>Prise en main<a name="get-started"></a>
-| Contenu  | Description | Mettre en forme  | Longueur   |
+| Contenu  | Description | Format  | Longueur   |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------|
 | [Principes de base de Microsoft Power Platform](https://docs.microsoft.com/learn/paths/power-plat-fundamentals/)   | Découvrez la valeur métier et les fonctionnalités des produits de la plateforme Power. Créez une application PowerApps simple, connectez les données avec CDS, créez un tableau de bord Power BI et automatisez un processus avec Microsoft Flow.   | Parcours d'apprentissage en ligne gratuit et auto-rythmé | 2 heures 42 minutes   |
 | [Chaîne YouTube de Microsoft Power BI](https://www.youtube.com/user/mspowerbi/videos)                                                 | Chaîne YouTube avec du contenu de l’équipe produit Power BI de Microsoft  | Vidéos |             |
