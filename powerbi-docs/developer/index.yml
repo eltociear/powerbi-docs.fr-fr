@@ -14,17 +14,17 @@ metadata:
   ms.author: kesharab
   ms.date: 31/03/2020
   ms.openlocfilehash: 8d37f5a4cde341dd8788791fecdbd1c7f20249d0
-  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/01/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "80487798"
 highlightedContent:
   items:
-  - title: Analytique intégrée avec Power BI
+  - title: Analytique incorporée avec Power BI
     itemType: overview
     url: embedded/embedding.md
-  - title: Qu’est-ce que Power BI Embedded dans Azure ?
+  - title: Présentation de Power BI Embedded dans Azure
     itemType: overview
     url: embedded/azure-pbie-what-is-power-bi-embedded.md
   - title: Visuels dans Power BI
@@ -39,16 +39,16 @@ conceptualContent:
     links:
     - url: embedded/embedding.md
       itemType: overview
-      text: Analytique intégrée avec Power BI
+      text: Analytique incorporée avec Power BI
     - url: embedded/azure-pbie-what-is-power-bi-embedded.md
       itemType: overview
-      text: Qu’est-ce que Power BI Embedded dans Azure ?
+      text: Présentation de Power BI Embedded dans Azure
     - url: embedded/embedded-capacity.md
       itemType: concept
       text: Capacité et références SKU
     footerLink:
       url: embedded/index.yml
-      text: Afficher plus
+      text: En savoir plus
   - title: Visuels Power BI
     links:
     - url: visuals/power-bi-custom-visuals.md
@@ -62,8 +62,8 @@ conceptualContent:
       text: Publier des visuels Power BI sur l’Espace partenaires
     footerLink:
       url: visuals/index.yml
-      text: Afficher plus
-  - title: Automation
+      text: En savoir plus
+  - title: Automatisation
     links:
     - url: automation/overview-of-power-bi-rest-api.md
       itemType: overview
@@ -76,12 +76,12 @@ conceptualContent:
       text: Configurer les informations d’identification
     footerLink:
       url: automation/index.yml
-      text: Afficher plus
+      text: En savoir plus
 additionalContent:
   sections:
   - title: Outils associés
   - items:
-    - title: API REST Power BI
+    - title: API REST de Power BI
       summary: Les API REST Power BI fournissent des points de terminaison de service pour l’incorporation, l’administration et les ressources utilisateur.
       url: https://docs.microsoft.com/rest/api/power-bi/
     - title: API REST Azure Resource Manager

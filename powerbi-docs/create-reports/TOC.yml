@@ -62,7 +62,7 @@
             - name: Questions et réponses en langage naturel
               items:
                 - name: Introduction à Questions et réponses
-                  href: ../natural-language/q-and-a-tooling-intro.md
+                  href: ../natural-language/q-and-a-intro.md
                 - name: Introduction aux outils de Questions et réponses
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Outils avancés de Questions et réponses
@@ -99,6 +99,14 @@
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: Forum aux questions sur les rapports paginés
               href: ../paginated-reports/paginated-reports-faq.md
+        - name: Pipelines de déploiement
+          items:
+            - name: Présentation des pipelines de déploiement
+              href: deployment-pipelines-overview.md
+            - name: Comprendre le processus de déploiement
+              href: deployment-pipelines-process.md
+            - name: Meilleures pratiques
+              href: deployment-pipelines-best-practices.md
     - name: Guides pratiques
       items:
         - name: Rapports Power BI
@@ -121,22 +129,20 @@
               href: ../desktop-buttons.md
             - name: Créer des boutons d’extraction
               href: ../desktop-drill-through-buttons.md
+            - name: Utiliser la fonctionnalité d’extraction
+              href: ../desktop-drillthrough.md
+            - name: Utiliser la fonctionnalité d’extraction interrapport
+              href: ../desktop-cross-report-drill-through.md
             - name: Créer des signets pour enregistrer et partager des insights
               href: ../desktop-bookmarks.md
             - name: Utiliser des thèmes de rapport
               href: ../desktop-report-themes.md
             - name: Utiliser des filtres dans les rapports
               href: ../power-bi-report-filter.md
-            - name: Utiliser la fonctionnalité d’extraction
-              href: ../desktop-drillthrough.md
-            - name: Utiliser la fonctionnalité d’extraction interrapport
-              href: ../desktop-cross-report-drill-through.md
+            - name: Ajouter un filtre à un rapport
+              href: ../power-bi-report-add-filter.md
             - name: Appliquer le regroupement et le compartimentage
               href: ../desktop-grouping-and-binning.md
-            - name: "Créer des visuels Power\_BI avec\_R"
-              href: ../desktop-r-visuals.md
-            - name: "Télécharger et utiliser des visuels Power\_BI basés sur R dans Power\_BI"
-              href: ../desktop-r-powered-custom-visuals.md
             - name: Appliquer le quadrillage et l’alignement sur la grille
               href: ../desktop-gridlines-snap-to-grid.md
             - name: Appliquer des paramètres d’affichage de page dans les rapports
@@ -153,6 +159,8 @@
               href: ../desktop-slicer-numeric-range.md
             - name: Sélecteurs et filtres de dates relatives
               href: ../visuals/desktop-slicer-filter-date-range.md
+            - name: Sélecteurs et filtres de temps relatif
+              href: slicer-filter-relative-time.md
             - name: Créer un segment redimensionnable
               href: ../power-bi-slicer-filter-responsive.md
             - name: Ajouter plusieurs champs à un sélecteur
@@ -189,8 +197,6 @@
               href: ../desktop-templates.md
             - name: Créer un rapport à partir d’un jeu de données
               href: ../service-report-create-new.md
-            - name: Ajouter un filtre à un rapport
-              href: ../power-bi-report-add-filter.md
             - name: Enregistrer un rapport
               href: ../service-report-save.md
             - name: Interagir avec un rapport en mode Édition
@@ -201,6 +207,8 @@
               href: ../service-aggregates.md
             - name: Créer un code QR pour un rapport
               href: ../service-create-qr-code-for-report.md
+            - name: Autoriser les consommateurs à personnaliser les visuels (préversion)
+              href: power-bi-personalize-visuals.md
             - name: "Exporter un rapport vers Power\_BI\_Desktop (préversion)"
               href: ../service-export-to-pbix.md
             - name: Publier des jeux de données et des rapports
@@ -267,6 +275,10 @@
               href: ../visuals/power-bi-visualization-powerapp.md
             - name: Visuels R
               href: ../visuals/service-r-visuals.md
+            - name: "Créer des visuels Power\_BI avec\_R"
+              href: ../desktop-r-visuals.md
+            - name: "Télécharger et utiliser des visuels Power\_BI basés sur R dans Power\_BI"
+              href: ../desktop-r-powered-custom-visuals.md
             - name: Graphiques en jauge radiale
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Graphiques de ruban
@@ -371,6 +383,12 @@
               href: ../service-data-classification.md
             - name: Thèmes du tableau de bord
               href: ../service-dashboard-themes.md
+        - name: Pipelines de déploiement
+          items:
+            - name: Commencer
+              href: deployment-pipelines-get-started.md
+            - name: Résolution des problèmes
+              href: deployment-pipelines-troubleshooting.md
         - name: Autres tâches
           items:
             - name: Renommer le contenu
