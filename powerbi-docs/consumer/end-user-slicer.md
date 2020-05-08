@@ -10,10 +10,10 @@ ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6ae8efdeb6004d700cd10fee447499a33c88e642
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268233"
 ---
 # <a name="slicers-in-the-power-bi-service"></a>Segments dans le service Power BI
@@ -28,7 +28,7 @@ Un segment est un type de visuel qui filtre les autres visuels sur une page de r
 ## <a name="how-to-use-slicers"></a>Comment utiliser des segments ?
 Lors de la création de rapports, les *concepteurs* ajoutent des segments pour aider à raconter une histoire et vous fournir des outils afin d’explorer vos données.
 
-### <a name="numeric-range-slicer"></a>Segment de plages numériques
+### <a name="numeric-range-slicer"></a>Sélecteur de plages numériques
  Le segment de plages numériques, ci-dessus, vous permet d’explorer le total des ventes par géographie, unités en stock et date de commande. Utilisez les poignées pour sélectionner une plage. 
 
 ![poignées d’un segment de plages](media/end-user-slicer/power-bi-handles.png)
@@ -66,7 +66,7 @@ Pour désactiver un segment, sélectionnez l’icône de gomme.
 ![icône de gomme](media/end-user-slicer/power-bi-eraser.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations, consultez les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
 [Types de visualisation dans Power BI](end-user-visualizations.md)
 
