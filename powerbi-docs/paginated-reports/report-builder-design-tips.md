@@ -9,10 +9,10 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921168"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Conseils pour la conception des rapports dans le Générateur de rapports Power BI
@@ -20,7 +20,7 @@ ms.locfileid: "78921168"
   
    
   
-##  <a name="DesigningReports"></a> Conception de rapports  
+##  <a name="designing-reports"></a><a name="DesigningReports"></a> Conception de rapports  
   
 -   Un rapport bien conçu donne des informations qui conduisent à une action. Identifiez les questions auxquelles le rapport permet de répondre. Gardez ces questions à l’esprit lors de la conception du rapport.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "78921168"
   
  Pour plus d’informations sur les éléments à prendre en compte lors de la conception de votre rapport, consultez [Planification d’un rapport dans le Générateur de rapports](report-builder-planning-report.md)).  
   
-##  <a name="NamingConventions"></a> Conventions de nommage pour les rapports, les sources de données et les jeux de données  
+##  <a name="naming-conventions-for-reports-data-sources-and-datasets"></a><a name="NamingConventions"></a> Conventions de nommage pour les rapports, les sources de données et les jeux de données  
   
 -   Utilisez les conventions de nommage pour les sources de données et les jeux de données qui documentent la source de données.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "78921168"
   
     2.  **Jeux de données.** Utilisez un nom qui indique sur quelle source de données il est basé.  
   
-##  <a name="Data"></a> Utilisation des données  
+##  <a name="working-with-data"></a><a name="Data"></a> Utilisation des données  
   
 -   Dans un premier temps, faites apparaitre toutes les données avec lesquelles vous voulez travailler dans le volet Données du rapport. Quand vous affinez les questions auxquelles le rapport est conçu pour répondre, pensez à la façon de limiter les données dans les jeux de données du rapport à ce qui est strictement nécessaire.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "78921168"
   
 -   En fonction de vos besoins, vous pouvez afficher dans le rapport les noms et les emplacements des sources de données du rapport, le texte des commandes des requêtes sur les jeux de données et les valeurs des paramètres. La première question que posent les nouveaux utilisateurs est relative à la provenance des données. Pour réduire l’encombrement dans le rapport, vous pouvez masquer de façon conditionnelle les zones de texte avec ce type d’informations et permettre aux utilisateurs de choisir de les afficher. Essayez en ajoutant ces informations sur la dernière page du rapport. Définissez la visibilité de la zone de texte en fonction d’un paramètre de l’utilisateur peut changer.  
   
-##  <a name="DesignSurface"></a> Interaction avec l’aire de conception des rapports  
+##  <a name="interacting-with-the-report-design-surface"></a><a name="DesignSurface"></a> Interaction avec l’aire de conception des rapports  
  L’aire de conception des rapports n’est pas WYSIWYG. Quand vous placez des éléments de rapport sur l’aire de conception, leur emplacement relatif affecte la façon dont les éléments apparaissent dans la page de rapport rendue. L’espace vide est conservé.  
   
 -   Utilisez les lignes d’alignement et les boutons de disposition pour aligner et organiser des éléments sur l’aire de conception du rapport. Par exemple, vous pouvez aligner les hauts ou les bords d’éléments sélectionnés, étendre un élément pour faire correspondre sa taille à celle d’un autre élément ou ajuster l’espacement entre des éléments.  
@@ -77,7 +77,7 @@ ms.locfileid: "78921168"
   
 -   Pour faire glisser des champs depuis le volet Données du rapport vers le volet Regroupement, évitez de faire glisser le champ à travers d’autres éléments du rapport sur l’aire de conception, car ceci sélectionne les autres éléments et désélectionne la région de données « tableau matriciel ». Faites glisser le champ vers le bas du volet Données du rapport, puis à travers le volet Regroupement.  
   
-###  <a name="Selecting"></a> Sélection d’éléments  
+###  <a name="selecting-items"></a><a name="Selecting"></a> Sélection d’éléments  
  Pour sélectionner l’objet que vous voulez sur l’aire de conception du rapport, utilisez la touche Échap, le menu contextuel, le volet Propriétés et le volet Regroupement.  
   
 -   -   Appuyez sur Échap pour parcourir la pile des éléments du rapport qui occupent le même espace sur l’aire de conception.  
@@ -89,31 +89,31 @@ ms.locfileid: "78921168"
     -   Pour utiliser des groupes de lignes et des groupes de colonnes dans une région de données « tableau matriciel », sélectionnez le groupe dans le volet Regroupement.  
 
   
-##  <a name="ReportItems"></a> Utilisation de types spécifiques d’éléments de rapport  
+##  <a name="working-with-specific-types-of-report-items"></a><a name="ReportItems"></a> Utilisation de types spécifiques d’éléments de rapport  
   
-###  <a name="Parameters"></a> Utiliser des paramètres  
+###  <a name="working-with-parameters"></a><a name="Parameters"></a> Utiliser des paramètres  
   
 -   L’objectif principal des paramètres de rapport est de filtrer les données de la source de données et de récupérer seulement ce qui est nécessaire pour l’objectif du rapport.  
   
 -   Pour les paramètres de rapport, recherchez un équilibre entre permettre une certaine interactivité et aider un utilisateur à obtenir les résultats souhaités. Par exemple, vous pouvez définir pour un paramètre des valeurs par défaut correspondant à ce qui est fréquemment utilisé.  
   
-###  <a name="Text"></a> Utilisation du texte  
+###  <a name="working-with-text"></a><a name="Text"></a> Utilisation du texte  
   
 -   Quand vous collez plusieurs lignes dans une zone de texte, le texte est ajouté en tant que séquence de texte. Chaque séquence de texte peut être mise en forme seulement comme un tout. Pour mettre en forme chaque ligne indépendamment, insérez une nouvelle ligne en appuyant sur Entrée dans la séquence de texte. Vous pouvez ensuite appliquer des mises en forme et des styles à chaque ligne de texte indépendante dans la zone de texte.  
   
 -   Vous pouvez définir des propriétés de format et des actions sur une zone de texte ou sur le texte d’un espace réservé dans la zone de texte. S’il n’existe qu’une seule ligne de texte, il est plus efficace de définir des propriétés sur la zone de texte que sur le texte.  
   
-###  <a name="Expressions"></a> Utilisation des expressions  
+###  <a name="working-with-expressions"></a><a name="Expressions"></a> Utilisation des expressions  
   
 -   Présentation des formats d’expressions simples et complexes Vous pouvez taper un format d’expression simple directement dans des zones de texte, dans les propriétés du volet Propriétés ou aux emplacements des boîtes de dialogue qui acceptent une expression.
   
 -   Quand vous créez une expression, il est recommandé de créer chaque partie indépendamment et de vérifier sa valeur. Vous pouvez ensuite combiner toutes les parties dans une expression finale. Une technique pratique est d’ajouter une zone de texte dans une cellule de matrice, d’afficher chaque partie de l’expression et de définir une visibilité conditionnelle sur la zone de texte. Pour contrôler le style et la couleur de bordure quand la zone de texte est masquée, placez d’abord la zone de texte dans un rectangle, puis définissez le style et la couleur de bordure du rectangle pour les faire correspondre à la matrice.  
   
-###  <a name="Indicators"></a> Utilisation des indicateurs  
+###  <a name="working-with-indicators"></a><a name="Indicators"></a> Utilisation des indicateurs  
   
 -   Par défaut, un indicateur affiche au moins trois états. Après avoir ajouté un indicateur à un rapport, vous pouvez le configurer en ajoutant ou en supprimant des états. Pour que vos utilisateurs le voient plus facilement, choisissez un indicateur qui varie à la fois par sa couleur et par sa forme.  
   
-##  <a name="Rendering"></a> Contrôle du rendu des éléments de rapport sur la page du rapport  
+##  <a name="controlling-the-rendering-of-report-items-on-the-report-page"></a><a name="Rendering"></a> Contrôle du rendu des éléments de rapport sur la page du rapport  
   
 -   Sur l’aire de conception du rapport, les éléments de rapport s’agrandissent pour s’adapter au contenu provenant du jeu de données, de l’expression, du sous-rapport ou du texte associés.  
   

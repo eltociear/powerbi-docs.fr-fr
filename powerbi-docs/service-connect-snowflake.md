@@ -10,15 +10,15 @@ ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77576871"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Se connecter à Snowflake dans le service Power BI
 
-## <a name="introduction"></a>Introduction
+## <a name="introduction"></a>Présentation
 
 La connexion à Snowflake dans le service Power BI est identique à celle des autres connecteurs, à une différence près : une capacité supplémentaire est offerte pour AAD (avec une option pour l’authentification unique). Les différents aspects de l’intégration nécessitent des rôles d’administration différents sur Snowflake, Power BI et Azure. Vous pouvez également choisir d’activer l’authentification AAD sans utiliser l’authentification unique. L’authentification de base fonctionne de la même façon qu’avec d’autres connecteurs du service.
 

@@ -10,10 +10,10 @@ ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77426607"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Autorisation de génération pour les jeux de données partagés (préversion)
@@ -55,7 +55,7 @@ Vous pouvez supprimer l’autorisation de création dont dispose un utilisateur 
 À un moment donné, vous devrez peut-être supprimer l'autorisation de génération pour certains utilisateurs d'un jeu de données partagé. 
 
 1. Dans un espace de travail, allez à la page de la liste des **jeux de données**. 
-1. Sélectionnez **Plus d’options** (...) en regard du jeu de données > **Gérer les autorisations**.
+1. Sélectionnez **Plus d’options** (...) à côté du jeu de données > **Gérer les autorisations**.
 
     ![Gérer les autorisations](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -108,4 +108,4 @@ Vous pouvez supprimer l’autorisation de génération. Si vous le faites, les p
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

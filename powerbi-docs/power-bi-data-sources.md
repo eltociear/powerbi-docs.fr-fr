@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.author: kfollis
 ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79041674"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
@@ -27,7 +27,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 |---|---|---|---|---|---|---|---|
 | Base de données Access | Oui | Oui | Non | Oui <sup>1</sup> | Oui |
 | ActiveDirectory | Oui | Oui | Non | Oui | Oui |
-| Adobe Analytics | Oui | Oui | Non | Non | Non |
+| Adobe Analytics | Oui | Oui | Non | Non | Non |
 | Amazon Redshift | Oui | Oui | Oui | Oui | Non |
 | appFigures | Oui | Oui | Non | Non | Non |
 | Cubes AtScale | Oui | Oui | Oui | Oui | Non |
@@ -52,7 +52,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Denodo | Oui | Oui | Oui | Oui | Oui |
 | Dremio | Oui | Oui | Oui | Oui | Oui |
 | Dynamics 365 (Online) | Oui | Oui | Non | Non | Non |
-| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non |
+| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non |
 | Dynamics 365 Business Central (local) | Oui | Oui | Non | Non | Non |
 | Dynamics 365 Customer Insights | Oui | Oui | Non | Non | Non |
 | Dynamics NAV | Oui | Oui | Non | Non | Non |
@@ -62,14 +62,14 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Exasol | Oui | Oui | Oui | Oui | Oui |
 | Excel | Oui <sup>3</sup> | Oui <sup>3</sup> | Non | Oui <sup>3</sup> | Non <sup>4</sup> |
 | Facebook | Oui | Oui | Non | Non | Non |
-| Fichier | Oui | Oui | Non | Oui | Oui |
+| fichier | Oui | Oui | Non | Oui | Oui |
 | Dossier | Oui | Oui | Non | Oui | Oui |
 | GitHub | Oui | Oui | Non | Non | Non |
 | Google Analytics | Oui | Oui | Non | Non | Non |
 | Google BigQuery | Oui | Oui | Non | Non | Non |
 | Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non |
 | HDInsight Interactive Query | Oui | Oui | Oui | Non | Non |
-| IBM DB2 | Oui | Oui | Oui | Oui | Non |
+| IBM DB2 | Oui | Oui | Oui | Oui | Non |
 | Base de données Informix IBM | Oui | Oui | Non | Oui | Non |
 | IBM Netezza | Oui | Oui | Oui | Oui | Oui |
 | Impala | Oui | Oui | Oui | Oui | Oui |

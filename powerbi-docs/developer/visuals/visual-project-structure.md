@@ -1,5 +1,5 @@
 ---
-title: Structure de projets de visuels Power BI
+title: Structure de projet de visuel Power BI
 description: Cet article décrit la structure des dossiers et fichiers d’un projet de visuels Power BI
 author: KesemSharabi
 ms.author: kesharab
@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
 ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550764"
 ---
-# <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
+# <a name="power-bi-visual-project-structure"></a>Structure de projet de visuel Power BI
 
 La meilleure façon de commencer à créer un visuel Power BI consiste à utiliser l’outil Power BI [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools).
 

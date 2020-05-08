@@ -11,7 +11,7 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: Présentation de la page d’accueil
           href: mobile-apps-home-page.md
-    - name: Guides de démarrage rapide
+    - name: Démarrages rapides
       expanded: true
       items:
         - name: Explorer des tableaux de bord et des rapports
@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Application Power BI pour la réalité mixte (Preview)
           href: mobile-mixed-reality-app.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Toutes les applications mobiles
           items:

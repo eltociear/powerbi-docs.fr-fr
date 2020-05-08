@@ -10,10 +10,10 @@ ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77427650"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Utiliser des agrégations dans Power BI Desktop
@@ -46,11 +46,11 @@ Après avoir créé la nouvelle table qui contient les champs souhaités, dans l
 La boîte de dialogue **Gérer les agrégations** montre une ligne pour chaque colonne de la table, où vous pouvez spécifier le comportement d’agrégation. Dans l’exemple suivant, les requêtes adressées à la table de détails **Sales** sont redirigées en interne vers la table d’agrégation **Sales Agg**. 
 
 La liste déroulante **Totalisation** dans la boîte de dialogue **Gérer les agrégations** fournit les valeurs suivantes :
-- Nombre
+- Count
 - GroupBy
 - Max
 - Min
-- Somme
+- Sum
 - Compter les lignes de la table
 
 ![Boîte de dialogue Gérer les agrégations](media/desktop-aggregations/aggregations_07.jpg)
@@ -75,7 +75,7 @@ La plupart des validations sont appliquées en désactivant les valeurs de liste
 
 ### <a name="aggregation-tables-are-hidden"></a>Les tables d’agrégation sont masquées
 
-Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)*. Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
+Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite des problèmes de sécurité en cas d’utilisation avec la *sécurité au niveau des lignes (RLS)* . Les consommateurs et les requêtes font référence à la table de détails, et non pas à la table d’agrégation, et n’ont pas besoin de connaître la table d’agrégation.
 
 Pour cette raison, les tables d’agrégation sont masquées dans la vue **Rapport**. Si la table n’est pas déjà masquée, la boîte de dialogue **Gérer les agrégations** la définit comme masquée lorsque vous sélectionnez **Appliquer tout**.
 
@@ -116,11 +116,11 @@ Dans le modèle suivant issu d’une source de données unique, les tables utili
 
 Si les tables de dimension suivantes sont les plus couramment utilisées pour les requêtes à forte valeur métier, elles peuvent filtrer **Sales Agg** à l’aide de relations *un-à-plusieurs* ou *plusieurs-à-un*.
 
-- Géographie
+- Geography
 - Client
 - Date
-- Sous-catégorie de produit
-- Catégorie de produit
+- Product Subcategory
+- Product Category
 
 L’image suivante illustre ce modèle.
 

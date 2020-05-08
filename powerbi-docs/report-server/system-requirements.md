@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 20b41762f7b38bd4ed26add97abb4eec1da0c000
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77558560"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
@@ -25,10 +25,10 @@ Cet article mentionne les configurations matérielle et logicielle requises pour
 | --- | --- |
 | .NET Framework |4,7<br><br>Vous pouvez installer manuellement le .NET Framework à partir de la page [Microsoft .NET Framework 4.7 (programme d’installation web) pour Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> Pour obtenir plus d’informations, des recommandations et des instructions sur .NET Framework 4.7, consultez le [guide de déploiement du .NET Framework pour les développeurs](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Avant l’installation de .NET Framework 4.7, Windows 8.1 et Windows Server 2012 R2 nécessitent la [mise à jour KB2919355](https://support.microsoft.com/kb/2919355). |
 | Disque dur |Power BI Report Server nécessite au minimum 1 Go d’espace disponible sur le disque dur.<br><br>Un espace supplémentaire est requis sur le serveur de base de données hébergeant la base de données du serveur de rapports. |
-| Mémoire |**Configuration minimale :** 1 Go<br/><br/> **Configuration recommandée :** Au moins 4 Go |
-| Vitesse du processeur |**Minimum :** processeur x64 : 1,4 GHz<br/><br/> **Configuration recommandée :** 2,0 GHz ou plus rapide |
+| Mémoire |**Minimum :** 1 GB<br/><br/> **Recommandé :** au moins 4 Go |
+| Vitesse du processeur |**Minimum :** processeur x64 : 1,4 GHz<br/><br/> **Recommandé :** processeur cadencé à 2,0 GHz ou plus |
 | Type de processeur |Processeur x64 : AMD Opteron, AMD Athlon 64, Intel Xeon avec prise en charge d’Intel EM64T, Intel Pentium IV avec prise en charge d’EM64T |
-| Système d’exploitation |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Famille<br><br>Windows 10 Professionnel<br><br>Windows 10 Entreprise<br><br>Windows 8.1<br><br>Windows 8.1 Professionnel<br><br>Windows 8.1 Entreprise<br><br>Windows 8<br><br>Windows 8 Professionnel<br><br>Windows 8 Entreprise |
+| Système d’exploitation |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Famille<br><br>Windows 10 Professionnel<br><br>Windows 10 Entreprise<br><br>Windows 8.1<br><br>Windows 8.1 Professionnel<br><br>Windows 8.1 Entreprise<br><br>Windows 8<br><br>Windows 8 Professionnel<br><br>Windows 8 Entreprise |
 
 > [!NOTE]
 > L’installation de Power BI Report Server est prise en charge uniquement sur des processeurs x64.
@@ -43,7 +43,7 @@ SQL Server est utilisé pour héberger les bases de données des serveurs de rap
 * SQL Server 2017
 * SQL Server 2016
 * SQL Server 2014
-* SQL Server 2012
+* SQL Server 2012
 
 Lorsque vous créez la base de données du serveur de rapports sur un ordinateur distant, vous devez configurer la connexion pour utiliser un compte d’utilisateur de domaine ou un compte de service ayant accès au réseau. Si vous décidez d’utiliser une instance distante de SQL Server, choisissez attentivement quelles informations d’identification le serveur de rapports doit utiliser pour se connecter à l’instance SQL Server. Pour plus d’informations, consultez [Configurer la connexion de base de données d’un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

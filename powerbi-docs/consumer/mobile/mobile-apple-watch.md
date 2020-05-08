@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e2014f359d4085ab0dcb85135f7436c9e403eaab
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114517"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Explorer vos données dans l’application mobile Power BI sur votre Apple Watch
@@ -31,7 +31,7 @@ L’application Power BI pour Apple Watch se compose de deux parties.
 * L’**écran index** permet d’avoir un aperçu rapide de l’ensemble des indicateurs de performance clés et vignettes de cartes du tableau de bord synchronisé.
   
   ![Apple Watch](./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
-* La **vignette active** : Cliquez sur une vignette de l’écran d’index pour en obtenir un affichage détaillé.
+* La **vignette active** : cliquez sur une vignette de l’écran d’index pour en obtenir un affichage détaillé.
   
   ![Apple Watch](./media/mobile-apple-watch/pbi_aplwatch_kpi.png)
 
@@ -87,5 +87,5 @@ Vos commentaires nous aident à choisir ce que nous allons implémenter dans le 
 
 * Télécharger l’[application mobile Power BI pour iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Suivre [@MSPowerBI sur Twitter](https://twitter.com/MSPowerBI)
-* Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
+* Rejoignez la [Communauté Power BI](https://community.powerbi.com/)
 

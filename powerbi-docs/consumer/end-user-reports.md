@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114253"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
@@ -36,7 +36,7 @@ Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant 
 
 ## <a name="advantages-of-reports"></a>Avantages des rapports
 
-Power BI base un rapport sur un seul jeu de données. Les *concepteurs* de rapports créent les visuels dans un rapport représentant un nugget d’informations. Les visuels ne sont pas statiques.  Ils se mettent à jour à mesure que les données sous-jacentes changent. Vous pouvez interagir avec les visuels et les filtres à mesure que vous explorez davantage les données pour découvrir des insights et trouver des réponses. Au même titre qu’un tableau de bord, un rapport est hautement interactif et personnalisable.
+Power BI base un rapport sur un jeu de données unique. Les *concepteurs* de rapports créent les visuels dans un rapport représentant un nugget d’informations. Les visuels ne sont pas statiques.  Ils se mettent à jour à mesure que les données sous-jacentes changent. Vous pouvez interagir avec les visuels et les filtres à mesure que vous explorez davantage les données pour découvrir des insights et trouver des réponses. Au même titre qu’un tableau de bord, un rapport est hautement interactif et personnalisable.
 
 ### <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée
 
@@ -62,7 +62,7 @@ Les [tableaux de bord](end-user-dashboards.md) sont souvent confondus avec les r
 | Filtrage |Impossible de filtrer ou découper |Différentes manières de filtrer, mettre en surbrillance et découper |
 | Définir des alertes |Possibilité de créer des alertes pour envoyer un e-mail quand le tableau de bord répond à certaines conditions |Non |
 | Caractéristique |Possibilité de définir un tableau de bord comme tableau de bord « par défaut » |Impossible de créer un rapport proposé |
-| Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs du jeu de données dans le tableau de bord |Oui. Possibilité de voir les tables et les champs du jeu de données ainsi que les valeurs que vous êtes autorisé à voir |
+| Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |No. Possibilité d’exporter les données, mais pas de voir les tables et les champs du jeu de données dans le tableau de bord |Oui. Possibilité de voir les tables et les champs du jeu de données ainsi que les valeurs que vous êtes autorisé à voir |
 | Personnalisation |Non  |Possibilité de filtrer, d’exporter et de voir le contenu associé, d’ajouter des signets, de générer des codes QR, d’analyser dans Excel, etc. |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |

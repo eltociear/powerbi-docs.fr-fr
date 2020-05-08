@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205524"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
@@ -72,7 +72,7 @@ Voici un tableau de bord Power BI dans le service Power BI :
 ### <a name="view-dashboards-in-landscape-mode-in-your-iphone"></a>Afficher les tableaux de bord en mode paysage sur votre iPhone
 Faites simplement pivoter votre téléphone pour afficher les tableaux de bord en mode paysage. La disposition du tableau de bord passe d’une série de vignettes à l’affichage du tableau de bord dans son ensemble. Toutes les vignettes du tableau de bord sont disposées comme dans le service Power BI.
 
-![Mode paysage du tableau de bord](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
+![Mode Paysage du tableau de bord](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
 Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou faire un panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 
@@ -94,7 +94,7 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
    * [Appuyer sur une vignette pour interagir](mobile-tiles-in-the-mobile-apps.md) avec elle.
    * [Ouvrir les rapports](mobile-reports-in-the-mobile-apps.md) derrière les vignettes.
    * [Inviter d’autres personnes à afficher le tableau de bord](mobile-share-dashboard-from-the-mobile-apps.md).
-   * [Annoter et partager une capture instantanée](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) de vignette.
+   * [Annotez et partagez la capture instantanée](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) d’une vignette.
 5. Pour revenir à Mon espace de travail, appuyez sur le nom du tableau de bord dans le coin supérieur gauche, puis sur **Mon espace de travail**.
    
    ![Navigation](./media/mobile-apps-view-dashboard/power-bi-dashboard-breadcrumb.png)
@@ -120,7 +120,7 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
 1. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
-2. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
+2. Balayez verticalement pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
 3. Pour revenir à la page d’accueil des tableaux de bord, appuyez sur le nom du tableau de bord pour ouvrir le cheminement de navigation, puis appuyez sur **Mon espace de travail**.   
 
 ## <a name="view-dashboards-on-your-android-tablet"></a>Afficher des tableaux de bord sur votre tablette Android
@@ -136,7 +136,7 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
 3. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
-4. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
+4. Balayez verticalement pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
    
    Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou faire un panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 5. Pour revenir à la page d’accueil des tableaux de bord, appuyez sur le nom du tableau de bord pour ouvrir le cheminement de navigation, puis appuyez sur **Mon espace de travail** :
@@ -156,5 +156,5 @@ Pour en savoir plus sur la création d’une vue téléphone d’un tableau de b
 * [Télécharger l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir de Google Play  
 * [Prise en main de l’application Android pour Power BI](mobile-android-app-get-started.md)  
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
