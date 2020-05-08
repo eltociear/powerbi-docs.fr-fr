@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/23/2020
 ms.author: kfollis
-ms.openlocfilehash: cfdb4f380cd8ad9655593798f591a4c915988c43
-ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
+ms.openlocfilehash: 11e6e1b1359841ea85bcb65b384abab926f003e0
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82120088"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841937"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 [//]: # "Tatevik Tatero est un fournisseur qui travaille avec Chauncy Freels et aide à gérer cette liste de webinaires"
@@ -228,7 +228,7 @@ Regardez les sessions enregistrées à tout moment
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Livres blancs Power BI](whitepapers.md)
+- [Livres blancs Power BI](guidance/whitepapers.md)
 
 - [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)
 

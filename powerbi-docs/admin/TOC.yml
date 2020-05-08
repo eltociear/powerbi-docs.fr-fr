@@ -30,7 +30,7 @@
               href: service-admin-migrate-data-germany.md
             - name: Questions fréquentes (FAQ) pour les clients du cloud allemand
               href: ../service-govde-faq.md
-        - name: Foire aux questions (FAQ)
+        - name: Forum Aux Questions (FAQ)
           href: ../service-admin-faq.md
         - name: Questions fréquentes (FAQ) sur la haute disponibilité et le basculement
           href: ../service-admin-failover.md
@@ -44,7 +44,7 @@
               href: ../service-premium-capacity-scenarios.md
             - name: "FAQ Power\_BI Premium"
               href: ../service-premium-faq.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: Licences et inscription
           items:
@@ -66,7 +66,7 @@
           href: ../service-admin-access-usage.md
         - name: Suivre les activités utilisateur
           href: ../service-admin-auditing.md
-        - name: Suivre l’intégrité du service
+        - name: Suivi de l’intégrité du service
           href: ../service-admin-health.md
         - name: Fermeture de votre compte
           href: ../service-admin-closing-your-account.md
@@ -74,7 +74,7 @@
           href: ../service-admin-azure-ad-b2b.md
         - name: Gérer le formulaire de connexion Power BI Desktop
           href: ../desktop-admin-sign-in-form.md
-        - name: Protection des données
+        - name: Protection de données
           items:
             - name: Vue d’ensemble de la protection des données
               href: service-security-data-protection-overview.md
@@ -114,7 +114,7 @@
               href: ../service-admin-premium-restart.md
             - name: Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
               href: ../service-premium-connect-tools.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: 'PowerShell, API REST et kit SDK .NET'
           href: ../service-admin-reference.md
@@ -131,7 +131,7 @@
           href: ../service-admin-power-bi-security.md
         - name: Niveaux de confidentialité
           href: ../desktop-privacy-levels.md
-    - name: Résoudre des problèmes
+    - name: Dépanner
       items:
         - name: "Vous n’arrivez pas à vous connecter\_?"
           href: ../power-bi-cannot-sign-in.md
@@ -147,5 +147,3 @@
           href: ../service-admin-alternate-email-address-for-power-bi.md
         - name: Comment utiliser la même connexion de compte pour Power BI et Azure
           href: ../service-admin-how-to-use-the-same-account-as-azure.md
-        - name: "Office\_365 dédié - problèmes connus"
-          href: ../service-admin-office-365-dedicated-known-issues.md

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: maggies
 ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979842"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
@@ -28,7 +28,7 @@ Ces sources de données sont spécifiques des rapports Power BI utilisés dans P
 
 D’autres sources de données non répertoriées sur la liste peuvent également fonctionner.
 
-| **Source de données** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
+| **Paramètres de la** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
 | --- | --- | --- | --- |
 | Base de données SQL Server |Oui |Oui |Oui |
 | SQL Server Analysis Services |Oui |Oui |Oui |
@@ -59,7 +59,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | OLE DB |Oui |Oui |Non |
 | Base de données Oracle |Oui |Oui |Oui |
 | Base de données PostgreSQL |Oui |Oui |Non |
-| Service Power BI |Non |Non |Non |
+| service Power BI |Non |Non |Non |
 | Script R |Oui |Non |Non |
 | Objets Salesforce |Oui |Non |Non |
 | Rapports Salesforce |Oui |Non |Non |
@@ -80,11 +80,11 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Azure HDInsight Spark (bêta) |Oui |Non |Non |
 | Common Data Service (bêta) |Oui |Non |Non |
 | comScore Digital Analytix (bêta) |Oui |Non |Non |
-| Dynamics 365 pour Customer Insights (bêta) |Oui |Non |Non |
+| Dynamics 365 pour Insights client (bêta) |Oui |Non |Non |
 | Dynamics 365 for Financials (bêta) |Oui |Non |Non |
 | GitHub (bêta) |Oui |Non |Non |
 | Google BigQuery (bêta) |Oui |Non |Non |
-| Base de données IBM Informix (bêta) |Oui |Non |Non |
+| Base de données Informix IBM (bêta) |Oui |Non |Non |
 | IBM Netezza (bêta) |Oui |Non |Non |
 | Kusto (bêta) |Oui |Non |Non |
 | MailChimp (bêta) |Oui |Non |Non |
@@ -116,7 +116,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 
 Power BI Report Server ne prend pas en charge l’authentification OAuth pour l’actualisation de modèle. Certaines sources de données comme les bases de données Excel ou Access utilisent une étape distincte (p.ex., Fichier ou Web) pour se connecter aux données.
 
-| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
+| **Paramètres de la** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
 | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |
 | SQL Server Analysis Services |Non |Non |Oui |Oui |
@@ -145,7 +145,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | OLE DB |Oui |Non |Oui |Oui |
 | Base de données Oracle |Non |Non |Oui |Oui |
 | Base de données PostgreSQL |Non |Non |Oui |Non |
-| Service Power BI |Non |Non |Non |Non |
+| service Power BI |Non |Non |Non |Non |
 | Script R |Non |Non |Non |Non |
 | Objets Salesforce |Non |Non |Non |Non |
 | Rapports Salesforce |Non |Non |Non |Non |
@@ -163,11 +163,11 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Azure HDInsight Spark (bêta) |Non |Non |Non |Non |
 | Common Data Service (bêta) |Non |Non |Non |Non |
 | comScore Digital Analytix (bêta) |Non |Non |Non |Non |
-| Dynamics 365 pour Customer Insights (bêta) |Non |Non |Non |Non |
+| Dynamics 365 pour Insights client (bêta) |Non |Non |Non |Non |
 | Dynamics 365 for Financials (bêta) |Non |Non |Non |Non |
 | GitHub (bêta) |Non |Non |Non |Non |
 | Google BigQuery (bêta) |Non |Non |Non |Non |
-| Base de données IBM Informix (bêta) |Non |Non |Non |Non |
+| Base de données Informix IBM (bêta) |Non |Non |Non |Non |
 | IBM Netezza (bêta) |Non |Non |Non |Non |
 | Kusto (bêta) |Non |Non |Non |Non |
 | MailChimp (bêta) |Non |Non |Non |Non |
@@ -196,7 +196,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 
 Power BI Report Server ne prend pas en charge l’authentification OAuth pour DirectQuery.
 
-| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
+| **Paramètres de la** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
 | --- | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |Oui |
 | SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
