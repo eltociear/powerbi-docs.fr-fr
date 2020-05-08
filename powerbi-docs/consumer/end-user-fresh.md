@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 81581b861f731ac287cc18f4ab1fdf77ab7a4e7c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040110"
 ---
 # <a name="your-content-is-up-to-date"></a>Votre contenu est à jour
@@ -64,7 +64,7 @@ L’écran **Partagé avec moi** affiche le nom du propriétaire du contenu ains
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Comment trouver la date de la dernière actualisation ?
 Si vous avez besoin de cette information, vous pouvez rechercher la date de la dernière actualisation pour la plupart du contenu. 
 
-### <a name="dashboard-tiles"></a>Mise à jour des vignettes de tableau de bord
+### <a name="dashboard-tiles"></a>Vignettes d’un tableau de bord
 Pour les vignettes de tableau de bord, affichez la vignette en mode Focus pour connaître la date et l’heure de sa dernière actualisation.
 
 1. Sur une vignette de tableau de bord, sélectionnez **Plus d’options** (...) et choisissez **Ouvrir en mode Focus**.

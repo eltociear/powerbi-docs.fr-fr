@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
 ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435372"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Afficher des rapports et des indicateurs de performance clés locaux dans l’application Power BI Windows
@@ -56,7 +56,7 @@ Parcourez les exemples pour interagir avec les indicateurs de performance clés 
    > 
    > 
    
-    Appuyez sur **Option avancée** pour affecter un nom au serveur, si vous le souhaitez.
+    Appuyez sur **Option avancée** pour nommer le serveur, si vous le souhaitez.
 4. Appuyez sur la coche pour vous connecter. 
    
    À présent, le serveur est visible dans le volet de navigation.
@@ -108,5 +108,5 @@ Vous ne créez pas de rapports mobiles ni d’indicateurs de performance clés R
 ## <a name="next-steps"></a>Étapes suivantes
 * [Prise en main de l’application mobile Power BI pour Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)  
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

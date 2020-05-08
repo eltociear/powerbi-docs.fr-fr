@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
 ms.openlocfilehash: dc2d036ab1e3e3dab551269163ced2f066a71626
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378021"
 ---
 # <a name="formatting-utils"></a>Utilitaires de mise en forme
@@ -48,7 +48,7 @@ Cette fonction mesure la largeur du texte avec les propriétés de texte SVG don
 function measureSvgTextWidth(textProperties: TextProperties, text?: string): number;
 ```
 
-Exemple d’utilisation de `measureSvgTextWidth` :
+Exemple d’utilisation d’`measureSvgTextWidth` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -74,7 +74,7 @@ Cette fonction retourne un rectangle avec les propriétés de texte SVG données
 function measureSvgTextRect(textProperties: TextProperties, text?: string): SVGRect;
 ```
 
-Exemple d’utilisation de `measureSvgTextRect` :
+Exemple d’utilisation d’`measureSvgTextRect` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -100,7 +100,7 @@ Cette fonction mesure la hauteur du texte avec les propriétés de texte SVG don
 function measureSvgTextHeight(textProperties: TextProperties, text?: string): number;
 ```
 
-Exemple d’utilisation de `measureSvgTextHeight` :
+Exemple d’utilisation d’`measureSvgTextHeight` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -153,7 +153,7 @@ Cette fonction estime la hauteur du texte avec les propriétés de texte SVG don
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-Exemple d’utilisation de `estimateSvgTextHeight` :
+Exemple d’utilisation d’`estimateSvgTextHeight` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -215,7 +215,7 @@ Cette fonction extrait les propriétés de mesure du texte de l’élément DOM 
 function getMeasurementProperties(element: Element): TextProperties;
 ```
 
-Exemple d’utilisation de `getMeasurementProperties` :
+Exemple d’utilisation d’`getMeasurementProperties` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -256,7 +256,7 @@ Cette fonction extrait les propriétés de mesure du texte de l’élément de t
 function getSvgMeasurementProperties(svgElement: SVGTextElement): TextProperties;
 ```
 
-Exemple d’utilisation de `getSvgMeasurementProperties` :
+Exemple d’utilisation d’`getSvgMeasurementProperties` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -296,7 +296,7 @@ Cette fonction retourne la largeur d’un élément div.
 function getDivElementWidth(element: JQuery): string;
 ```
 
-Exemple d’utilisation de `getDivElementWidth` :
+Exemple d’utilisation d’`getDivElementWidth` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -323,7 +323,7 @@ Compare la taille de texte des étiquettes à la taille disponible et affiche de
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
 ```
 
-Exemple d’utilisation de `getTailoredTextOrDefault` :
+Exemple d’utilisation d’`getTailoredTextOrDefault` :
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -353,7 +353,7 @@ Cette fonction vérifie si une chaîne se termine par une sous-chaîne.
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-Exemple d’utilisation de `endsWith` :
+Exemple d’utilisation d’`endsWith` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -391,7 +391,7 @@ Cette fonction vérifie si une chaîne commence par une sous-chaîne.
 function startsWith(a: string, b: string): boolean;
 ```
 
-Exemple d’utilisation de `startsWith` :
+Exemple d’utilisation d’`startsWith` :
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";

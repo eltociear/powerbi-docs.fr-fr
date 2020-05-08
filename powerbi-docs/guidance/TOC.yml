@@ -18,11 +18,11 @@
               href: power-query-folding.md
             - name: Référencement des requêtes Power Query
               href: power-query-referenced-queries.md
-            - name: Désactiver l’actualisation en arrière-plan de Power Query
+            - name: Désactiver l’actualisation de l’arrière-plan de Power Query
               href: power-query-background-refresh.md
             - name: Bonnes pratiques pour les dataflows
               href: ../service-dataflows-best-practices.md
-        - name: Modélisation des données
+        - name: Modélisation de données
           items:
             - name: "Qu’est-ce qu’un schéma en étoile\_?"
               href: star-schema.md
@@ -32,7 +32,7 @@
               href: auto-date-time.md
             - name: Relations un à un
               href: relationships-one-to-one.md
-            - name: Relations Plusieurs-à-plusieurs
+            - name: Relations plusieurs-à-plusieurs
               href: relationships-many-to-many.md
             - name: Relations actives et inactives
               href: relationships-active-inactive.md
@@ -113,10 +113,10 @@
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
-          href: ../whitepapers.md
+          href: whitepapers.md
         - name: Livre blanc sur la sécurité dans Power BI
-          href: ../whitepaper-powerbi-security.md
+          href: whitepaper-powerbi-security.md
         - name: "Déploiement de Power\_BI Premium"
-          href: ../whitepaper-powerbi-premium-deployment.md
+          href: whitepaper-powerbi-premium-deployment.md
         - name: "Distribuer Power BI en externe avec Azure Active Directory\_B2B"
-          href: ../whitepaper-azure-b2b-power-bi.md
+          href: whitepaper-azure-b2b-power-bi.md

@@ -1,19 +1,19 @@
 ---
 title: Conseils pour créer des applications modèles dans Power BI
 description: Conseils sur la création de requêtes, de modèles de données, de rapports et de tableaux de bord pour concevoir des applications modèles de qualité
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
-ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 266e44b5e5ecff2f86bcd3d43ce91368cc57b9e1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066279"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781291"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
@@ -142,22 +142,8 @@ Après avoir publié l’application modèle sur AppSource, créez un lien de t�
 * Power BI : consultable par un utilisateur de Power BI.
 
 Pour rediriger un utilisateur vers le lien de téléchargement de l’application dans Power BI, consultez l’exemple de code suivant : [Dépôt GitHub](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+
 [![Lien de téléchargement de l’application](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-
-
-## <a name="known-limitations"></a>Limites connues
-
-| Caractéristique | Limitation connue |
-|---------|---------|
-|Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel, métadonnées de jeu de données avancées |
-|Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de l’envoi (push) ou du streaming de jeux de données) |
-|Contenu : Dataflows | Non pris en charge : Dataflows |
-|Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
-| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
-| Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
-| Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
-| Visuels Power BI | Seuls les visuels Power BI disponibles publiquement sont pris en charge. Les [visuels Power BI organisationnels](developer/visuals/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
