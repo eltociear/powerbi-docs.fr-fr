@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114387"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
@@ -52,7 +52,7 @@ Le volet **Contenu associé** s’ouvre. Pour un tableau de bord, il affiche tou
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Afficher le contenu associé d’un jeu de données
-Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
+Pour pouvoir ouvrir le volet *Contenu associé*, vous devez disposer au minimum de l’autorisation d’**Affichage** sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
 
 À partir du volet de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
 

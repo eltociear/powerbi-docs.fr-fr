@@ -1,6 +1,6 @@
 ---
-title: 'Exemple Analyse de l’approvisionnement : Visite guidée'
-description: 'Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée'
+title: 'Exemple Analyse de l’approvisionnement : visite guidée'
+description: 'Exemple Analyse de l’approvisionnement pour Power BI : visite guidée'
 author: maggiesMSFT
 ms.reviewer: amac
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404660"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : visite guidée
 
 Le pack de contenu d’échantillons Analyse de l’approvisionnement contient un tableau de bord, un rapport et un jeu de données qui analyse les dépenses d’une entreprise de fabrication auprès des fournisseurs par catégorie et par emplacement. Dans cet exemple, nous explorons les points suivants :
 
@@ -138,7 +138,7 @@ Sélectionnez **Modifier le rapport** en haut à gauche et faites une exploratio
 * Changez le type de visualisation pour un graphique : par exemple, changez le graphique de compartimentage en graphique en anneau.
 * Épinglez des graphiques à votre tableau de bord.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
 Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
 Nous espérons que cette visite guidée vous a montré comment les tableaux de bord, Questions et réponses et les rapports Power BI peuvent fournir des insights sur des exemples de données. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez [Prise en main du service Power BI](service-get-started.md).

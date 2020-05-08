@@ -10,10 +10,10 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 00effa1838327a9463671cf9be2f5764be71deb4
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404703"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
@@ -126,7 +126,7 @@ Sélectionnez **Modifier le rapport** en haut à gauche pour faire une explorati
 * Modifiez le type de visualisation pour chaque graphique.
 * Épinglez les graphiques présentant un intérêt sur votre tableau de bord.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
 Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
 Nous espérons que cette visite guidée vous a montré comment les tableaux de bord, Questions et réponses et les rapports Power BI peuvent fournir des insights sur des exemples de données. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez [Prise en main du service Power BI](service-get-started.md).

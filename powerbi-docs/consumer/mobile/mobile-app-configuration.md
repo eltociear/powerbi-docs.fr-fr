@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 ms.openlocfilehash: ce147be4c23b738e1a09296a5d798fb0f94efe13
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802023"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Configurer à distance l’application Power BI à l’aide d’un outil MDM
@@ -28,20 +28,20 @@ L’application Power BI Mobile pour prend en charge les scénarios de configur
 
 L’application Power BI pour iOS et Android permet aux administrateurs d’envoyer à distance (« push ») la configuration du serveur de rapports aux appareils inscrits.
 
-| Key | Type | Description |
+| Clé | Type | Description |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ServerURL | Chaîne | URL du serveur de rapports.<br><br>Doit commencer par http/https.|
 | com.microsoft.powerbi.mobile.ServerUsername | Chaîne | [facultatif]<br><br>Nom d’utilisateur à utiliser pour la connexion du serveur.<br><br>Si ce nom n’est pas renseigné, l’application demande à l’utilisateur de taper le nom d’utilisateur pour la connexion.|
 | com.microsoft.powerbi.mobile.ServerDisplayName | Chaîne | [facultatif]<br><br>La valeur par défaut est « Report server »<br><br>Nom convivial utilisé dans l’application pour représenter le serveur. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Booléen | [facultatif]<br><br>La valeur par défaut est True. Quand la valeur est True, cela remplace la définition de serveur de rapports déjà présente sur l’appareil mobile. Les serveurs existants qui sont déjà configurés sont supprimés. Override défini sur True empêche également l’utilisateur de supprimer cette configuration.<br><br>La valeur False ajoute les valeurs envoyées (push), en conservant les paramètres existants. Si la même URL de serveur est déjà configurée dans l’application mobile, l’application laisse la configuration en l’état. L’application ne demande pas à l’utilisateur de se réauthentifier auprès du même serveur. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [facultatif]<br><br>La valeur par défaut est True. Quand la valeur est True, cela remplace la définition de serveur de rapports déjà présente sur l’appareil mobile. Les serveurs existants qui sont déjà configurés sont supprimés. Override défini sur True empêche également l’utilisateur de supprimer cette configuration.<br><br>La valeur False ajoute les valeurs envoyées (push), en conservant les paramètres existants. Si la même URL de serveur est déjà configurée dans l’application mobile, l’application laisse la configuration en l’état. L’application ne demande pas à l’utilisateur de se réauthentifier auprès du même serveur. |
 
 ## <a name="data-protection-settings-ios-and-android"></a>Paramètres de protection des données (iOS et Android)
 
 L’application mobile Power BI pour iOS et Android permet aux administrateurs de personnaliser la configuration par défaut des paramètres de sécurité et de confidentialité. Pour iOS, vous pouvez forcer les utilisateurs à utiliser Face ID, Touch ID ou un code secret pour accéder à l’application mobile Power BI. Pour Android, vous pouvez forcer les utilisateurs à utiliser l’authentification biométrique (Fingerprint ID).
 
-| Key | Type | Description |
+| Clé | Type | Description |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Booléen | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID (iOS) ou Fingerprint ID (Android), peut être rendue obligatoire pour que les utilisateurs accèdent à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | La valeur par défaut est false. <br><br>L’utilisation de fonctionnalités de biométrie, comme Touch ID ou Face ID (iOS) ou Fingerprint ID (Android), peut être rendue obligatoire pour que les utilisateurs accèdent à l’application sur l’appareil. Lorsque cela se révèle nécessaire, la biométrie est utilisée en plus de l’authentification.<br><br>Si vous utilisez des stratégies de protection des applications, Microsoft recommande de désactiver ce paramètre pour empêcher les invites à double accès. |
 
 >[!NOTE]
 >Les paramètres de protection des données seront appliqués uniquement aux appareils Android qui prennent en charge l’authentification biométrique.
@@ -53,10 +53,10 @@ L’application Power BI pour iOS et Android offre aux administrateurs la possib
 >[!NOTE]
 >À l’heure actuelle, toutes les interactions ne sont pas prises en charge sur tous les appareils. Pour accéder au graphe indiquant la disponibilité actuelle selon les appareils, consultez [Configuration des paramètres d’interaction des rapports](mobile-app-interaction-settings.md).
 
-| Key | Type | Valeurs | Description |
+| Clé | Type | Values | Description |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | Chaîne |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configurer si le fait d’appuyer sur un visuel a également pour effet de sélectionner un point de données. |
-| com.microsoft.powerbi.mobile.EnableMultiSelect | Booléen |  <nobr>True</nobr><br><nobr>False</nobr> | Configurer si le fait d’appuyer sur un point de données a pour effet de remplacer ou de s’ajouter à la sélection actuelle. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>True</nobr><br><nobr>False</nobr> | Configurer si le fait d’appuyer sur un point de données a pour effet de remplacer ou de s’ajouter à la sélection actuelle. |
 | com.microsoft.powerbi.mobile.RefreshAction | Chaîne |  <nobr>pull-to-refresh</nobr><br>... | Configurer si l ’utilisateur dispose d’un bouton permettant d’actualiser le rapport ou s’il doit utiliser l’action Balayer pour actualiser. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Chaîne |  docked<br>dynamique | Configurer si le pied de page des rapports est ancré en bas du rapport ou s’il est masqué automatiquement. |
 
@@ -75,4 +75,4 @@ Le portail Intune permet aux administrateurs de déployer facilement ces paramè
 
 * Obtenir l'application mobile Power BI à partir de l’[App Store](https://apps.apple.com/app/microsoft-power-bi/id929738808)et de [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Suivre [@MSPowerBI sur Twitter](https://twitter.com/MSPowerBI)
-* Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
+* Rejoignez la [Communauté Power BI](https://community.powerbi.com/)
