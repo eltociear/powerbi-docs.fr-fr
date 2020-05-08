@@ -10,10 +10,10 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837342"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Créer des tables calculées dans Power BI Desktop
@@ -55,7 +55,7 @@ Une nouvelle table nommée **Western Region Employees** est créée et s’affic
 
 ## <a name="functions-for-calculated-tables"></a>Fonctions pour les tables calculées
 
-Vous pouvez définir une table calculée par toute expression DAX qui retourne une table, y compris une simple référence à une autre table. Par exemple :
+Vous pouvez définir une table calculée par toute expression DAX qui retourne une table, y compris une simple référence à une autre table. Par exemple :
 
 ```dax
 New Western Region Employees = 'Western Region Employees'
@@ -64,7 +64,7 @@ New Western Region Employees = 'Western Region Employees'
 Cet article fournit une brève introduction aux tables calculées. Vous pouvez utiliser des tables calculées avec DAX pour résoudre de nombreux problèmes analytiques. Voici quelques-unes des fonctions de table DAX les plus couramment utilisées :
 
 * DISTINCT
-* VALEURS
+* VALUES
 * CROSSJOIN
 * UNION
 * NATURALINNERJOIN

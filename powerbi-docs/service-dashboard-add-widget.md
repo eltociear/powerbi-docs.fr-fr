@@ -11,10 +11,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0c9e3db46c66fcd440ebd304370d31539dd5c5c7
-ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76282031"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Ajouter des images, des vidéos et plus encore à votre tableau de bord
@@ -126,7 +126,7 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 4. Renseignez les champs **Nom du jeu de données**, **Clé d’abonnement** et **Nom du canal**. S’il s’agit d’une connexion sécurisée, elle dispose également d’une clé d’autorisation. Vous pouvez utiliser les exemples de valeurs de PubNub pour l’essayer.
 5. Sélectionnez **Suivant**.
     Vous voyez les champs qui sont disponibles dans le jeu de données, avec leurs types de données et leur format JSON.
-6. Sélectionnez **Se connecter**.
+6. Sélectionnez **Connect** (Se connecter).
     Vous avez créé un jeu de données de streaming.
 7. Revenez au tableau de bord et resélectionnez **Ajouter une vignette** > **Données de streaming personnalisées** > **Suivant**.
 8. Sélectionnez le jeu de données de capteur que vous avez créé > **Suivant**.
@@ -150,7 +150,7 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 
    Vous voyez les champs qui sont disponibles dans le jeu de données, avec leurs types de données et leur format JSON.
 
-6. Sélectionnez **Se connecter**.
+6. Sélectionnez **Connect** (Se connecter).
 
    Vous avez créé un jeu de données de streaming.
 

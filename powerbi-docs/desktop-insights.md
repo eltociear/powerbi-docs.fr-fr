@@ -11,10 +11,10 @@ ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 925d63f0abf92bd7a9c0d5fdd2ff6eff5b88b961
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761154"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-explain-fluctuations-in-visuals-preview"></a>Appliquer des insights dans Power BI pour expliquer les fluctuations dans les visuels (préversion)
@@ -131,8 +131,8 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Se connecter aux données dans Power BI Desktop](desktop-connect-to-data.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 

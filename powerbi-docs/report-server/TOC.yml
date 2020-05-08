@@ -23,13 +23,13 @@
           href: admin-handbook-overview.md
         - name: Journal des modifications
           href: changelog.md
-        - name: Chronologie du support technique
+        - name: Chronologie de prise en charge
           href: support-timeline.md
         - name: Prise en charge d’Always Encrypted
           href: always-encrypted-support.md
         - name: Configuration matérielle et logicielle requise
           href: system-requirements.md
-        - name: Navigateurs pris en charge
+        - name: Prise en charge des navigateurs
           href: browser-support.md
         - name: Informations de base sur les serveurs de rapports
           items:
@@ -55,7 +55,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848723'
             - name: Incorporer des rapports
               href: quickstart-embed.md
-    - name: Guides pratiques
+    - name: Procédures
       items:
         - name: "Installer Power\_BI\_Desktop"
           href: install-powerbi-desktop.md
@@ -79,7 +79,7 @@
               href: access-dataset-odata.md
             - name: Changer les chaînes de connexion de source de données avec PowerShell
               href: connect-data-source-apis.md
-            - name: Configurer une actualisation planifiée
+            - name: Configuration d'une actualisation planifiée
               href: configure-scheduled-refresh.md
             - name: Ajouter des commentaires à un rapport
               href: add-comments.md
@@ -105,7 +105,7 @@
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Héberger des classeurs Excel
               href: excel-oos.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: API REST
           href: rest-api.md
@@ -113,7 +113,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848719'
         - name: API SOAP
           href: 'https://go.microsoft.com/fwlink/?linkid=848721'
-        - name: Access par URL
+        - name: Accès URL
           href: 'https://go.microsoft.com/fwlink/?linkid=848722'
         - name: Extensions
           href: 'https://go.microsoft.com/fwlink/?linkid=848723'

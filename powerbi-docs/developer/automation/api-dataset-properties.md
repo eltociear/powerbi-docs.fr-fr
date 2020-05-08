@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079666"
 ---
 # <a name="dataset-properties"></a>Propriétés du jeu de données
@@ -26,39 +26,39 @@ La version v1 actuelle de l’API de jeux de données permet uniquement de cré
 
 Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
-id     |  Guid       | Identificateur unique à l’échelle du système pour le jeu de données.        | Vrai        | False        
-name     | Chaîne        | Nom de jeu de données défini par l’utilisateur.        | False        | Vrai        
+id     |  Guid       | Identificateur unique à l’échelle du système pour le jeu de données.        | True        | False        
+nom     | Chaîne        | Nom de jeu de données défini par l’utilisateur.        | False        | True        
 tables     | Table[]        | Collection de tables.        |  False       | False        
 relationships     | Relationship[]        | Collection de relations entre les tables.        | False        |  False  
 defaultMode     | Chaîne        | Détermine si le jeu de données est envoyé, diffusé en continu ou les deux, avec les valeurs « Push » et « Streaming ».         | False        |  False
 
-## <a name="table"></a>Table
+## <a name="table"></a>Tableau
 
 Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
-name     | Chaîne        |  Nom de table défini par l’utilisateur. Sert également d’identificateur de la table.       | False        |  Vrai       
-columns     |  column[]       |  Collection de colonnes.       | False        |  Vrai       
+nom     | Chaîne        |  Nom de table défini par l’utilisateur. Sert également d’identificateur de la table.       | False        |  True       
+columns     |  column[]       |  Collection de colonnes.       | False        |  True       
 measures     | measure[]        |  Collection de mesures.       | False        |  False       
-isHidden     | Booléen        | Si Vrai, la table est masquée dans les outils clients.        | False        | False        
+isHidden     | Boolean        | Si Vrai, la table est masquée dans les outils clients.        | False        | False        
 
-## <a name="column"></a>Colonne
+## <a name="column"></a>personnalisée
 
 Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
-name     |  Chaîne        | Nom de colonne défini par l’utilisateur.        |  False       | Vrai       
-dataType     |  Chaîne       |  [Types de données EDM](https://msdn.microsoft.com/library/ee382832.aspx) pris en charge et restrictions. Consultez [Restrictions des types de données](#data-type-restrictions).      |  False       | Vrai        
+nom     |  Chaîne        | Nom de colonne défini par l’utilisateur.        |  False       | True       
+dataType     |  Chaîne       |  [Types de données EDM](https://msdn.microsoft.com/library/ee382832.aspx) pris en charge et restrictions. Consultez [Restrictions des types de données](#data-type-restrictions).      |  False       | True        
 formatString     | Chaîne        | Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](https://msdn.microsoft.com/library/ms146084.aspx).      | False        | False        
 sortByColumn    | Chaîne        |   Nom de chaîne d’une colonne dans la même table à utiliser pour trier la colonne en cours.     | False        | False       
-dataCategory     | Chaîne        |  Valeur de chaîne à utiliser pour la catégorie de données qui décrit les données de cette colonne. Exemples de valeurs courantes : Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl.       |  False       | False        
-isHidden    |  Booléen       |  Propriété qui indique si la colonne est masquée. La valeur par défaut est Faux.       | False        | False        
+dataCategory     | Chaîne        |  Valeur de chaîne à utiliser pour la catégorie de données qui décrit les données de cette colonne. Voici certaines valeurs courantes : Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  False       | False        
+isHidden    |  Boolean       |  Propriété qui indique si la colonne est masquée. La valeur par défaut est false.       | False        | False        
 summarizeBy     | Chaîne        |  Méthode d’agrégation par défaut pour la colonne. Voici les valeurs disponibles : default, none, sum, min, max, count, average, distinctCount     |  False       | False
 
 ## <a name="measure"></a>Mesure
 
 Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
-name     | Chaîne        |  Nom de mesure défini par l’utilisateur.       |  False       | Vrai        
-expression     | Chaîne        | Expression DAX valide.        | False        |  Vrai       
+nom     | Chaîne        |  Nom de mesure défini par l’utilisateur.       |  False       | True        
+expression     | Chaîne        | Expression DAX valide.        | False        |  True       
 formatString     | Chaîne        |  Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](https://msdn.microsoft.com/library/ms146084.aspx).       | False        | False        
 isHidden     | Chaîne        |  Si Vrai, la table est masquée dans les outils clients.       |  False       | False       
 
@@ -66,12 +66,12 @@ isHidden     | Chaîne        |  Si Vrai, la table est masquée dans les outils 
 
 Nom  |Type  |Description  |En lecture seule  |Requis 
 ---------|---------|---------|---------|---------
-name     | Chaîne        | Nom de relation défini par l’utilisateur. Sert également d’identificateur de la relation.        | False       | Vrai        
-crossFilteringBehavior     | Chaîne        |    Direction du filtrage de la relation : OneDirection (par défaut), BothDirections, Automatic.       | False        | False        
-fromTable     | Chaîne        | Nom de la table de clé étrangère.        | False        | Vrai         
-fromColumn    | Chaîne        | Nom de la colonne de clé étrangère.        | Faux        | Vrai         
-toTable    | Chaîne        | Nom de la table de clé primaire.        | False        | Vrai         
-toColumn     | Chaîne        | Nom de la colonne de clé primaire.        | False        | Vrai        
+nom     | Chaîne        | Nom de relation défini par l’utilisateur. Sert également d’identificateur de la relation.        | False       | True        
+crossFilteringBehavior     | Chaîne        |    Direction de filtrage de la relation : OneDirection (par défaut), BothDirections, Automatic       | False        | False        
+fromTable     | Chaîne        | Nom de la table de clé étrangère.        | False        | True         
+fromColumn    | Chaîne        | Nom de la colonne de clé étrangère.        | False        | True         
+toTable    | Chaîne        | Nom de la table de clé primaire.        | False        | True         
+toColumn     | Chaîne        | Nom de la colonne de clé primaire.        | False        | True        
 
 ## <a name="data-type-restrictions"></a>Restrictions des types de données
 
@@ -81,7 +81,7 @@ Type de données  |Restrictions
 ---------|---------
 Int64     |   Valeurs Int64.MaxValue et Int64.MinValue non autorisées.      
 Double     |  Les valeurs Double.MaxValue et Double.MinValue ne sont pas autorisées. NAN non pris en charge. + Infinity et - Infinity non pris en charge dans certaines fonctions (par exemple, Min, Max).       
-Booléen     |   Vrai ou Faux.
+Boolean     |   Vrai ou Faux.
 DateTime    |   Lors du chargement des données nous quantifions les valeurs avec des fractions de jour en multiples de 1/300ème de seconde (3.33ms).      
 Chaîne     |  Autorise actuellement jusqu’à 4 000 caractères par valeur de chaîne.
 Décimal|précision=28, échelle=4

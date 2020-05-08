@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205915"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou placez-les dans des emplacements spécifiques du contexte de votre environnement. 
 
-[Téléchargez l’application Power BI pour Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) à partir du Windows Store : Dans le Windows Store, elle porte le nom « Power BI Mobile ». Interagissez avec vos tableaux de bord et rapports dans le monde virtuel, puis sélectionnez ceux que vous voulez placer. 
+[Téléchargez l’application Power BI pour la réalité mixte](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) à partir du Windows Store : recherchez-la sous le nom de « Power BI Mobile ». Interagissez avec vos tableaux de bord et rapports dans le monde virtuel, puis sélectionnez ceux que vous voulez placer. 
 
-## <a name="two-views-windows-classic-and-holographic"></a>Deux vues : Windows classique et holographique
+## <a name="two-views-windows-classic-and-holographic"></a>Deux vues : Windows classique et holographique
 
 Power BI pour la réalité mixte est basé sur l’application mobile Windows Power BI avec des fonctionnalités supplémentaires spécifiques à la réalité mixte. Quand vous démarrez Power BI pour la réalité mixte, vous êtes dans cette vue Windows « classique » de Power BI. Dans cette vue, vous pouvez naviguer entre les tableaux de bord et les rapports auxquels vous avez accès. Quand vous trouvé celui que vous voulez, vous pouvez passer de la vue Windows classique à l’expérience holographique. 
 
