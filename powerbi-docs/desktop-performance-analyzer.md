@@ -10,10 +10,10 @@ ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76709776"
 ---
 # <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport
@@ -87,10 +87,10 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Se connecter aux données dans Power BI Desktop](desktop-connect-to-data.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 
 Pour plus d’informations sur l’exemple de l’Analyseur de performances, consultez les ressources suivantes.
 

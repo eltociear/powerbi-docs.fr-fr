@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114149"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Mettre en surbrillance des points de données dans les visuels Power BI
@@ -32,7 +32,7 @@ Dans l’exemple, vous pouvez remarquer que la barre 1 est sélectionnée. Il s
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Mettre en surbrillance des points de données avec un mappage des vues de données par catégorie
 
-Les visuels avec mappage des vues de données par catégorie ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
+Les visuels avec mappage des vues de données par catégorie ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
 
 ```json
 {
@@ -275,7 +275,7 @@ Dans le résultat, vous devez disposer de la vue suivante du visuel.
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Mettre en surbrillance des points de données avec mappage des vues de données de matrice
 
-Les visuels avec mappage des vues de données de matrice ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
+Les visuels avec mappage des vues de données de matrice ont `capabilities.json` avec le paramètre `"supportsHighlight": true`. Par exemple :
 
 ```json
 {
@@ -323,7 +323,7 @@ Les visuels avec mappage des vues de données de matrice ont `capabilities.json`
 
 Exemple de données pour la création d’une hiérarchie pour le mappage des vues de données de matrice :
 
-|   Ligne1   |   Ligne2   |   Ligne3   |   Colonne1   |   Colonne2   |   Colonne3   |   Valeurs   |
+|   Ligne1   |   Ligne2   |   Ligne3   |   Column1   |   Column2   |   Colonne3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |

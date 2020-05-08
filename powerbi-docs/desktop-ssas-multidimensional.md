@@ -10,10 +10,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: eac1134ff12025d05cd59e86b7538cde58e3a2ee
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76753149"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Découvrez comment vous connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
@@ -32,7 +32,7 @@ Les sections suivantes décrivent les fonctionnalités et capacités des connexi
 
 ### <a name="tabular-metadata-of-multidimensional-models"></a>Métadonnées tabulaires des modèles multidimensionnels
 
-Le tableau suivant illustre la correspondance entre les objets multidimensionnels et les métadonnées tabulaires qui sont retournés à Power BI Desktop. Power BI interroge le modèle pour obtenir les métadonnées tabulaires. En fonction des métadonnées retournées, Power BI Desktop exécute les requêtes DAX appropriées sur SSAS quand vous créez une visualisation (comme une table, une matrice, un graphique ou un segment).
+Le tableau suivant illustre la correspondance entre les objets multidimensionnels et les métadonnées tabulaires qui sont renvoyés à Power BI Desktop. Power BI interroge le modèle pour obtenir les métadonnées tabulaires. En fonction des métadonnées retournées, Power BI Desktop exécute les requêtes DAX appropriées sur SSAS quand vous créez une visualisation (comme une table, une matrice, un graphique ou un segment).
 
 | Objet BISM multidimensionnel | Métadonnées tabulaires |
 | --- | --- |
@@ -68,7 +68,7 @@ Les modèles multidimensionnels prennent en charge les hiérarchies parent-enfan
 Les modèles multidimensionnels prennent en charge la création de différents types de *membres calculés*. Les deux types de membres calculés les plus courants sont :
 
 * Membres calculés sur les hiérarchies d’attributs qui ne sont pas frères de *Tous*
-* Membres calculés sur les hiérarchies d’utilisateur
+* membres calculés sur les hiérarchies d’utilisateur
 
 Les modèles multidimensionnels exposent les *membres calculés sur les hiérarchies d’attributs* sous forme de valeurs d’une colonne. Vous avez quelques options et contraintes supplémentaires si vous exposez ce type de membre calculé :
 

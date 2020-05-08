@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979819"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Créer et utiliser des visuels R dans Power BI
@@ -65,7 +65,7 @@ Voici un autre exemple : l’illustration suivante montre le message d’erreur
 
 ![Capture d’écran montrant une erreur d’exécution](media/service-r-visuals/r-visuals-service-5.png)
 
-## <a name="licensing"></a>Licences
+## <a name="licensing"></a>Licensing
 Les visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-admin-purchasing-power-bi-pro.md)
 
 Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
@@ -75,10 +75,10 @@ Le tableau suivant décrit les fonctionnalités des éléments visuels R en fon
 
 |  |Créer des visuels R dans Power BI Desktop  | Créer des rapports de service PBI avec des visuels R |Afficher des visuels R dans les rapports  | Afficher des vignettes R dans les tableaux de bord |
 |---------|---------|---------|---------|--------|
-|**Invité**(Power BI Embedded)     |  Pris en charge|  Non pris en charge      | Prise en charge dans la capacité Premium/Azure uniquement  | Prise en charge dans la capacité Premium/Azure uniquement |
-|**Locataire non géré** (domaine non vérifié) | Pris en charge | Non pris en charge |  Non pris en charge |Prise en charge (scénario B2B) |
-|**Locataire géré** avec licence gratuite    |  Pris en charge       |  Non pris en charge       |    Prise en charge dans la capacité Premium uniquement    | Pris en charge |
-**Locataire géré** avec licence Pro     |   Pris en charge      | Pris en charge      | Pris en charge    |Pris en charge|
+|**Invité**(Power BI Embedded)     |  Prise en charge|  Non pris en charge      | Prise en charge dans la capacité Premium/Azure uniquement  | Prise en charge dans la capacité Premium/Azure uniquement |
+|**Locataire non géré** (domaine non vérifié) | Prise en charge | Non pris en charge |  Non pris en charge |Prise en charge (scénario B2B) |
+|**Locataire géré** avec licence gratuite    |  Prise en charge       |  Non pris en charge       |    Prise en charge dans la capacité Premium uniquement    | Prise en charge |
+**Locataire géré** avec licence Pro     |   Prise en charge      | Prise en charge      | Prise en charge    |Prise en charge|
 
 
 

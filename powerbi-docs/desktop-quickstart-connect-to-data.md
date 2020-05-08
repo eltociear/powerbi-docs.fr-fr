@@ -10,13 +10,13 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75885236"
 ---
-# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter à des données dans Power BI Desktop
+# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter aux données dans Power BI Desktop
 
 Dans ce guide de démarrage rapide, vous vous connectez aux données à l’aide de Power BI Desktop, ce qui constitue la première étape de la création de modèles de données et de rapports.
 
@@ -24,7 +24,7 @@ Dans ce guide de démarrage rapide, vous vous connectez aux données à l’aide
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour effectuer les étapes de cet article, vous avez besoin des ressources suivantes :
 
@@ -66,7 +66,7 @@ Après avoir effectué vos sélections, choisissez **Charger** pour importer les
 
 Une fois les tables chargées, le volet **Champs** affiche les données. Vous pouvez développer chaque table en sélectionnant la flèche à côté de son nom. Dans l’image suivante, la table *financials* est développée, montrant chacun de ses champs.
 
-![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
+![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
 
 Et voilà ! Vous vous êtes connecté à des données dans Power BI Desktop, vous avez chargé ces données et vous voyez maintenant tous les champs disponibles dans ces tables.
 

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
 ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79491361"
 ---
 # <a name="power-bi-permissions"></a>Autorisations Power BI
@@ -50,7 +50,7 @@ Même si vous pouvez appeler l’API pour vous authentifier à l’aide d’un n
 * **Interface utilisateur de connexion** - Le développeur peut appeler cette interface utilisateur pour demander des autorisations. L’utilisateur doit se connecter si ce n’est pas déjà fait. L’utilisateur doit également approuver les autorisations demandées par l’application. La fenêtre de connexion renvoie un code d’accès ou un message d’erreur à une URL de redirection fournie.
   * Une URL de redirection standard doit être fournie par Power BI à l’usage des applications natives.
 * **Code d’autorisation** - Des codes d’autorisation sont retournés aux applications web à la suite d’une connexion via les paramètres d’URL définis dans l’URL de redirection. Dans la mesure où ils se trouvent dans les paramètres, il existe un risque de sécurité. Les applications web doivent échanger le code d’autorisation contre un jeton d’autorisation.
-* **Jetons d’autorisation** - Ils permettent d’authentifier les appels d’API effectués au nom d’un autre utilisateur. Ils sont limités à une application particulière. Les jetons ont une durée de vie définie et doivent être actualisés au moment de leur expiration.
+* **Jetons d’autorisation** : ils permettent d’authentifier les appels d’API effectués pour le compte d’un autre utilisateur. Ils sont limités à une application particulière. Les jetons ont une durée de vie définie et doivent être actualisés au moment de leur expiration.
 * **Actualiser le jeton** : quand un jeton expire, un processus est lancé pour les actualiser.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

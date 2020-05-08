@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 95ccee8e2c711c272d6114339161cbf1d1c883a9
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488519"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841684"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Actualisation automatique des pages dans Power BI Desktop (préversion)
 
@@ -212,7 +212,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 * [Utilisation de DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport](desktop-performance-analyzer.md)
-* [Déployer et gérer les capacités Power BI Premium](whitepaper-powerbi-premium-deployment.md)
+* [Déployer et gérer les capacités Power BI Premium](guidance/whitepaper-powerbi-premium-deployment.md)
 * [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
