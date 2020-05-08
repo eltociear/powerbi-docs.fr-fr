@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
 ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79380393"
 ---
 # <a name="add-drill-down-support"></a>Ajouter la prise en charge de l’exploration
@@ -315,7 +315,7 @@ Appliquez des données au visuel :
 
 Préparez des exemples de données pour tester le visuel avec des mappages de vues de données de matrices :
 
-|   Ligne 1   |   Ligne2   |   Ligne3   |   Colonne1   |   Colonne2   |   Colonne3   |   Valeurs   |
+|   Ligne1   |   Ligne2   |   Ligne3   |   Column1   |   Column2   |   Colonne3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |

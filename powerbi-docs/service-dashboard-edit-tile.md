@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207594"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
@@ -38,7 +38,7 @@ Cet article aborde les points suivants.
   > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](consumer/end-user-tiles.md).
 
   
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 Pour effectuer la procédure, ouvrez le service Power BI (pas Power BI Desktop) et [téléchargez l’exemple Analyse des dépenses informatiques](sample-it-spend.md). Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**.
 
 - - -
@@ -65,7 +65,7 @@ Pour effectuer la procédure, ouvrez le service Power BI (pas Power BI Desktop) 
 
    ![pointer sur une vignette](media/service-dashboard-edit-tile/power-bi-pin.png)
 
-6. Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**. Vous êtes invité à enregistrer les modifications. Sélectionnez **Enregistrer**.
+6. Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**. Vous êtes invité à enregistrer les modifications. Sélectionnez **Save (Enregistrer)** .
 
 - - -
 <a name="move"></a>

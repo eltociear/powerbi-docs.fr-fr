@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381074"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
@@ -43,7 +43,7 @@ Il existe deux éléments à prendre en compte concernant les vignettes épingl�
 * Une fois qu’un visuel est épinglé à un tableau de bord, vous pouvez utiliser la fonction **Questions et réponses** pour poser des questions au jeu de données de transmission en langage naturel. Une fois que vous avez envoyé une requête à la fonction **Questions et réponses**, vous pouvez le visuel généré au tableau de bord. Ce dernier est alors *également* mis à jour en temps réel.
 
 ### <a name="streaming-dataset"></a>Jeu de données de streaming
-Avec un **jeu de données de streaming**, des données sont également transmises au service Power BI, avec toutefois une différence importante : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes qui possède une fenêtre d’une heure.
+Avec un **jeu de données de streaming**, les données sont également transmises au service Power BI, avec une différence importante toutefois : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes qui possède une fenêtre d’une heure.
 
 Avec un **jeu de données de streaming**, il n’y a *aucune* base de données sous-jacente. Vous ne *pouvez donc pas* créer de visuels de rapport à l’aide des données qui transitent à partir du flux. Par conséquent, vous ne pouvez pas utiliser les fonctionnalités de rapport telles que le filtrage, les visuels Power BI et d’autres fonctions de rapport.
 
@@ -64,7 +64,7 @@ Le tableau suivant (ou la matrice si vous préférez) décrit les trois types de
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Pour plus d’informations sur les limites **d’envoi** et la quantité de données pouvant être envoyées, voir [cet article](developer/automation/api-rest-api-limitations.md).
+> Pour plus d’informations sur les limites [d’envoi](developer/automation/api-rest-api-limitations.md) et la quantité de données pouvant être envoyées, voir **cet article**.
 
 ## <a name="pushing-data-to-datasets"></a>Transmission de données aux jeux de données
 La section précédente a décrit les trois principaux types de jeux de données en temps réel que vous pouvez utiliser dans le streaming en temps réel, ainsi que leurs différences. Cette section montre comment créer et transmettre des données aux jeux de données en question.

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
 ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435993"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
@@ -57,5 +57,5 @@ Vous pouvez détacher la barre d’outils et la faire glisser pour la placer n�
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Afficher les tableaux de bord et les rapports en mode Plein écran à partir du service Power BI](../end-user-focus.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

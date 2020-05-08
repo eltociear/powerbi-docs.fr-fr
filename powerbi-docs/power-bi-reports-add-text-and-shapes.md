@@ -11,10 +11,10 @@ ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273199"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Ajouter des zones de texte et des formes aux rapports Power BI
@@ -44,7 +44,7 @@ Regardez comment Will utilise Power BI Desktop pour [ajouter des images statique
 
 6. Pour fermer la zone de texte, sélectionnez une zone vide du canevas de rapport. 
 
-7. Sélectionnez l’icône en forme d’épingle  ![Icône Épingler](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) pour épingler la zone de texte à un tableau de bord. 
+7. Sélectionnez l’icône en forme d’épingle  ![icône en forme d’épingle](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) pour épingler la zone de texte à un tableau de bord. 
 
 ## <a name="add-a-shape-to-a-report"></a>Ajouter une forme à un rapport
 1. Positionnez le curseur n’importe où dans le canevas de rapport, puis sélectionnez **Formes**.

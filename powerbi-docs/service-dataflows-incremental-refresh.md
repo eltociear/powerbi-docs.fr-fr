@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: de65fed27260f3e93c4e91fcb680d2e5190543b0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698207"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Utilisation d’une actualisation incrémentielle avec des flux de données Power BI
@@ -150,7 +150,7 @@ La prochaine opération d’actualisation, avec la valeur *Run Date 1/16/2017* (
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cet article décrit l’actualisation incrémentielle pour les flux de données. Voici d’autres articles qui peuvent vous être utiles.
+Cet article décrit l’actualisation incrémentielle pour les flux de données. Voici quelques articles plus qui peuvent être utiles.
 
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
