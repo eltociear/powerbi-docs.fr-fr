@@ -11,10 +11,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76539134"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Se connecter à des sources de données dans Power BI Desktop
@@ -27,7 +27,7 @@ De *nombreuses sortes* de sources de données sont disponibles dans Power BI Des
 
 ## <a name="example-of-connecting-to-data"></a>Exemple de connexion à des données
 
-Pour cet exemple, nous allons nous connecter à une source de données **web** .
+Pour cet exemple, nous allons nous connecter à une source de données **web**.
 
 Imaginez que vous partez à la retraite. Vous souhaitez vivre dans un endroit avec du soleil, une fiscalité avantageuse et un bon système de santé. Ou... peut-être que vous êtes analyste de données et que vous souhaitez que ces informations soient utiles à vos clients, pour qu’ils puissent cibler les marchés *particulièrement porteurs*.
 
@@ -47,7 +47,7 @@ Quand vous sélectionnez **OK**, la fonctionnalité *Requête* de Power BI Des
 
 Sélectionnez **Transformer les données** pour charger la table et lancer l’Éditeur Power Query. Le volet **Paramètres d’une requête** s’affiche. S’il ne s’affiche pas, sélectionnez **Afficher** dans le ruban, puis **Paramètres d’une requête** pour afficher le volet **Paramètres d’une requête**. Vous obtenez :
 
-![Éditeur Power Query avec Paramètres d’une requête](media/desktop-connect-to-data/designer_gsg_editquery.png)
+![Éditeur Power Query avec Paramètres de requête](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
 Les données sont plutôt du texte que des nombres, or nous avons besoin de nombres. Aucun problème. Pour changer, il suffit de cliquer avec le bouton droit sur l’en-tête de la colonne et de sélectionner **Modifier le type** > **Nombre entier**. Pour sélectionner plusieurs colonnes, commencez par sélectionner une colonne, maintenez la touche Maj enfoncée pour sélectionner d’autres colonnes adjacentes, puis cliquez avec le bouton droit sur un en-tête de colonne pour changer toutes les colonnes sélectionnées. Utilisez la touche Ctrl pour choisir des colonnes qui ne sont pas adjacentes.
 
@@ -61,7 +61,7 @@ Il est possible d’apporter d’autres modifications à la table même après l
 
 ![Fermer et appliquer](media/desktop-connect-to-data/connecttodata_closenload.png)
 
-Le modèle de données étant chargé, dans la vue **Rapport** dans Power BI Desktop, nous pouvons commencer à créer des visualisations en faisant glisser des champs sur le canevas.
+Le modèle de données étant chargé, dans la vue **Rapport** dans Power BI Desktop, nous pouvons commencer à créer des visualisations en faisant glisser des champs sur la zone de dessin.
 
 ![Faire glisser une valeur vers le canevas](media/desktop-connect-to-data/connecttodata_dragontoreportview.png)
 
@@ -76,7 +76,7 @@ Power BI Desktop vous permet d’effectuer des tâches très diverses. Pour pl
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Effectuer des tâches de requête courantes dans Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vous souhaitez nous faire parvenir vos commentaires ? Super ! Utilisez l’élément de menu **Soumettre une idée** dans Power BI Desktop ou visitez la page [Community Feedback](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Nous attendons avec impatience vos commentaires.
+Vous souhaitez nous faire parvenir vos commentaires ? Excellent ! Utilisez l’élément de menu **Soumettre une idée** dans Power BI Desktop ou visitez la page [Community Feedback](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Nous attendons avec impatience vos commentaires.
 
 ![Soumettre une idée](media/desktop-connect-to-data/sendfeedback.png)
 

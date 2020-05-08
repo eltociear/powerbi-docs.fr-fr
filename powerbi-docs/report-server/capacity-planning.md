@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
 ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80647667"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Conseils sur la planification de la capacité de Power BI Report Server
@@ -62,14 +62,14 @@ Tous les tests ont été écrits pour effectuer une opération de bout en bout (
 > L’outil n’est pas officiellement pris en charge par Microsoft, mais l’équipe produit contribue au projet et répond aux problèmes soulevés par les autres contributeurs.
 
 ### <a name="workloads"></a>Charges de travail
-Il existe 2 profils de charge de travail utilisés lors du test : Power BI Report Heavy et Paginated Report Heavy. Le tableau ci-dessous décrit la distribution des demandes exécutées sur le serveur de rapports.
+2 profils de charge de travail ont été utilisés lors des tests : Power BI Report Heavy et Paginated Report Heavy. Le tableau ci-dessous décrit la distribution des demandes exécutées sur le serveur de rapports.
 
-| Activité | Power BI Report Heavy, fréquence d’occurrence | Paginated Report Heavy, fréquence d’occurrence |
+| Activity | Power BI Report Heavy, fréquence d’occurrence | Paginated Report Heavy, fréquence d’occurrence |
 | --- | --- | --- |
-| **Restitution de rapports Power BI** |60 % |10 % |
-| **Restitution de rapports paginés** |30 % |60 % |
-| **Restitution de rapports mobiles** |5 % |20 % |
-| **Opérations de portail web** |5 % |10 % |
+| **Restitution de rapports Power BI** |60% |10 % |
+| **Restitution de rapports paginés** |30% |60% |
+| **Restitution de rapports mobiles** |5 % |20 % |
+| **Opérations de portail web** |5 % |10 % |
 
 ### <a name="user-load"></a>Charge utilisateur
 Pour chaque série de tests, des tests ont été exécutés selon la fréquence spécifiée dans une des deux charges de travail. Les tests ont démarré avec 20 demandes utilisateur simultanées envoyées au serveur de rapports. La charge utilisateur a ensuite été augmentée progressivement jusqu’à ce que la fiabilité descende en dessous de la cible de 99 %.

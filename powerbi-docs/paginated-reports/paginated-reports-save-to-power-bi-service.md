@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/03/2020
-ms.openlocfilehash: 0207cbdbc3fae8636f8fd73a008d54ee7d10c5f9
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 05/04/2020
+ms.openlocfilehash: 3e7e1590adbf953db4232ddffa5f26778e5670c2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78921605"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781613"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
 
@@ -107,9 +107,6 @@ Comme tout autre rapport Power BI, si la source des données du rapport est loca
 
 1. Consultez l’article du service Power BI [Qu’est-ce qu’une passerelle de données locale ?](../service-gateway-onprem.md) pour plus d’informations et connaître les prochaines étapes.
 
-### <a name="gateway-limitations"></a>Limitations de la passerelle
-
-Actuellement, les passerelles ne prennent pas en charge les paramètres à valeurs multiples.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

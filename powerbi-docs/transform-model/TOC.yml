@@ -79,7 +79,7 @@
               href: ../desktop-auto-date-time.md
         - name: Préparation des données en libre-service
           items:
-            - name: Créer et utiliser des dataflows
+            - name: Créer et utiliser des flux de données
               href: ../service-dataflows-create-use.md
             - name: Promouvoir ou certifier des dataflows
               href: service-dataflows-promote-certify.md
@@ -99,11 +99,11 @@
               href: ../service-dataflows-developer-resources.md
             - name: Se connecter à des flux de données dans Power BI Desktop
               href: ../desktop-connect-dataflows.md
-            - name: Flux de données et intégration à Azure Data Lake (préversion)
+            - name: Intégration de dataflows et d’Azure Data Lake (préversion)
               href: ../service-dataflows-azure-data-lake-integration.md
             - name: Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
               href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Configurer les paramètres de flux de données d’un espace de travail (préversion)
+            - name: Configurer les paramètres de dataflow d’espace de travail (préversion)
               href: ../service-dataflows-configure-workspace-storage-settings.md
             - name: Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
               href: ../service-dataflows-add-cdm-folder.md
@@ -113,7 +113,7 @@
               href: ../service-cognitive-services.md
             - name: Machine Learning automatisé dans Power BI
               href: ../service-machine-learning-automated.md
-    - name: Référence
+    - name: Informations de référence
       items:
         - name: Raccourcis de l’éditeur de formule
           href: ../desktop-formula-editor.md

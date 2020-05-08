@@ -10,10 +10,10 @@ ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 0e3f742e0ad9d3b9bf81c9dd95e9193413a70d6a
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76540018"
 ---
 # <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Analyser des données de vente à partir d’Excel et d’un flux OData
@@ -118,7 +118,7 @@ L’éditeur Power Query vous permet de créer des calculs et des champs personn
 
 1. Dans la boîte de dialogue **Colonne personnalisée**, tapez **LineTotal** dans le champ **nouveau nom de colonne**.
 
-1. Dans le champ **Formule de colonne personnalisée**, après **=**, entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< Insérer** au lieu de les taper.
+1. Dans le champ **Formule de colonne personnalisée**, après **=** , entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< Insérer** au lieu de les taper.
 
 1. Sélectionnez **OK**.
 
@@ -224,7 +224,7 @@ Commencez par créer un histogramme empilé qui utilise des champs des deux requ
 
 1. Pour afficher la quantité de chaque produit commandé, sélectionnez **ProductName** sous **Produits** dans le volet **Champs**, ou faites-le glisser sur l’histogramme.
 
-1. Pour trier les produits du plus commandé au moins commandé, sélectionnez les points de suspension **Plus d’options** (**...**) en haut à droite de la visualisation, puis sélectionnez **Trier par quantité**.
+1. Pour trier les produits du plus commandé au moins commandé, sélectionnez les points de suspension **Plus d’options** ( **...** ) en haut à droite de la visualisation, puis sélectionnez **Trier par quantité**.
 
 1. Utilisez les poignées dans les angles de l’histogramme empilé pour l’agrandir afin d’afficher davantage de noms de produits.
 

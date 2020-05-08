@@ -73,7 +73,7 @@
               href: ../service-analyze-in-excel.md
             - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
               href: ../desktop-troubleshooting-analyze-in-excel.md
-            - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
+            - name: 'Erreur : impossible de trouver des données dans votre classeur Excel'
               href: ../service-admin-troubleshoot-excel-workbook-data.md
             - name: "Power Automate et Power\_BI"
               href: ../service-flow-integration.md

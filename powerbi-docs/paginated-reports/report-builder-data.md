@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
 ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921444"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Données de rapport dans le Générateur de rapports Power BI
@@ -23,7 +23,7 @@ Les données de rapport peuvent provenir de plusieurs sources de données de vot
 Découvrez comment [Créer une source de données incorporée pour rapports paginés dans le Générateur de rapports Power BI](paginated-reports-embedded-data-source.md).
 
 
-##  <a name="BkMk_ReportDataTerms"></a> Terminologie  
+##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> Terminologie  
   
 - **Connexion de données.** Également appelée *source de données*. Une connexion de données comprend un nom et des propriétés de connexion qui dépendent du type de connexion. Par défaut, une connexion de données ne comprend pas d’informations d’identification. Une connexion de données ne spécifie pas les données à récupérer dans la source de données externe. Pour cela, spécifiez une requête lorsque vous créez un jeu de données.  
   
@@ -33,7 +33,7 @@ Découvrez comment [Créer une source de données incorporée pour rapports pagi
   
 - **Informations d’identification.** Les informations d’identification sont des informations d’authentification qui doivent être fournies pour vous permettre d’accéder aux données externes.  
   
-##  <a name="BkMk_ReportDataTips"></a> Conseils pour spécifier les données de rapport
+##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Conseils pour spécifier les données de rapport
 
  Servez-vous des informations suivantes pour concevoir votre stratégie de données de rapport.  
   
