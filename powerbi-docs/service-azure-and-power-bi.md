@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 6b2b457c2df8e37b4fac3108061a325261f5574b
-ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80487775"
 ---
 # <a name="azure-and-power-bi"></a>Azure et Power BI
@@ -34,7 +34,7 @@ Il existe de nombreuses informations qui vous permettront d’en savoir plus sur
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>Transformez, modelez et fusionnez vos données cloud
 
-Avez-vous des données plus complexes et de sources très variées ? Aucun problème. Avec **Power BI Desktop** et les services Azure, il vous suffit d’une pression sur votre écran pour ouvrir la boîte de dialogue **Obtenir des données** . Dans la même requête, vous pouvez vous connecter à votre base de données **Azure SQL Database**, à votre source de données **Azure HDInsight** et à **Stockage Blob Azure** (ou **Stockage Table Azure**), puis sélectionner uniquement les parties dont vous avez besoin dans chacun d’eux et affiner votre sélection.
+Avez-vous des données plus complexes et de sources très variées ? Aucun problème. Avec **Power BI Desktop** et les services Azure, il vous suffit d’une pression sur votre écran pour ouvrir la boîte de dialogue **Obtenir des données**. Dans la même requête, vous pouvez vous connecter à votre base de données **Azure SQL Database**, à votre source de données **Azure HDInsight** et à **Stockage Blob Azure** (ou **Stockage Table Azure**), puis sélectionner uniquement les parties dont vous avez besoin dans chacun d’eux et affiner votre sélection.
 
 Vous pouvez également créer différents rapports pour différents publics, en utilisant les mêmes connexions de données, voire la même requête. Il vous suffit de créer une page de rapport, d’affiner vos visualisations pour chaque public et de la regarder vous donner des informations sur l’activité de l’entreprise.
 
@@ -66,4 +66,4 @@ Incorporez des visualisations de données interactives impressionnantes dans des
 
 ## <a name="what-could-you-do-with-azure-and-power-bi"></a>Que pouvez-vous faire avec Azure et Power BI ?
 
-Il existe toutes sortes de scénarios dans lesquels **Azure** et **Power BI** peuvent être combinés : les possibilités et les opportunités sont aussi uniques que votre entreprise. Pour plus d’informations sur les **services Azure**, consultez cette [page de vue d’ensemble](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment) qui décrit des **scénarios d’analyse de données à l’aide d’Azure**, et découvrez comment transformer vos sources de données en informations qui permettent de faire avancer votre entreprise.
+Il existe toutes sortes de scénarios dans lesquels **Azure** et **Power BI** peuvent être combinés : les possibilités et les opportunités sont aussi uniques que votre entreprise. Pour plus d’informations sur les **services Azure**, consultez cette [page de vue d’ensemble](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), qui décrit des **scénarios d’analyse de données à l’aide d’Azure**, et découvrez comment transformer vos sources de données en informations qui permettent de faire avancer votre entreprise.

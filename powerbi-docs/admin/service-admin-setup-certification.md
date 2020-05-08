@@ -9,10 +9,10 @@ ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Share your work
 ms.openlocfilehash: 1fc33b48613335f4fba97921e3d528175eb2a47f
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81267842"
 ---
 # <a name="set-up-dataset-and-dataflow-certification-preview"></a>Configurer la certification de jeux de données et de dataflows (préversion)
@@ -44,4 +44,4 @@ La certification de jeu de données et de flux de données fait partie de l’*a
 * [Certifier des jeux de données](../service-datasets-certify.md)
 * [Promouvoir des dataflows](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
 * [Certifier des dataflows](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762275"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Présentation des visualisations Questions et réponses de Power BI
@@ -35,7 +35,7 @@ Le visuel Questions et réponses a quatre composants principaux :
 - L’icône pour convertir le visuel Questions et réponses en visuel standard. 
 - L’icône pour ouvrir l’outil Questions et réponses avec lequel les concepteurs configurent le moteur de langage naturel sous-jacent.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 1. Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
 
@@ -45,7 +45,7 @@ Le visuel Questions et réponses a quatre composants principaux :
 
 1. Ouvrez le fichier dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+1. Select ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
 
 
 Si vous rencontrez une erreur quand vous créez un visuel Questions et réponses, consultez l’article sur les [limitations](../natural-language/q-and-a-limitations.md) pour vérifier que la configuration de la source de données est prise en charge.
@@ -87,7 +87,7 @@ Si vous n’êtes pas sûr du type de questions à poser ou de la terminologie �
 
 5. Avec l’aide de Power BI, nous avons pu poser une question contenant tous les termes reconnaissables. Power BI affiche les résultats dans un graphique en courbes. 
 
-    ![Résultats affichés dans le visuel Questions et réponses](media/power-bi-visualization-q-and-a/power-bi-type.png)
+    ![Résultats visuels de Questions et réponses](media/power-bi-visualization-q-and-a/power-bi-type.png)
 
 
 6. Nous allons remplacer ce type de visuel par un histogramme. 
@@ -148,7 +148,7 @@ Intégré à Office et à Bing, le visuel Questions et réponses essaie de mettr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
+Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
 
 * [Outils de Questions et réponses](../natural-language/q-and-a-tooling-intro.md)
-* [Bonnes pratiques relatives à Questions et réponses](../natural-language/q-and-a-best-practices.md)
+* [Bonnes pratiques pour Questions et réponses](../natural-language/q-and-a-best-practices.md)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488289"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Listing du code complet de la transmission de données à un jeu de données
@@ -228,7 +228,7 @@ Après avoir suivi les étapes 2 à 5 de **Transmettre des données à un jeu de
 * [Inscrire une application auprès d’Azure AD](../embedded/register-app.md)  
 * [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)  
 * [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)  
-* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
+* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
 * [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
 * [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 * [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  

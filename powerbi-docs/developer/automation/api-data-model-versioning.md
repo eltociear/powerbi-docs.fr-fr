@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 76947b1e311bbd1a21e09ce39461a70bed61d926
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079597"
 ---
 # <a name="data-model-versioning"></a>Gestion de versions du modèle de données
@@ -36,7 +36,7 @@ Les clients ***DOIVENT*** être préparés au fait que les services apportent de
   
 Les services ***NE DOIVENT PAS*** modifier leur modèle de données en fonction de l’utilisateur authentifié. Si le modèle de données est dépendant de l’utilisateur ou du groupe d’utilisateurs, toutes les modifications DOIVENT être sécurisées selon la définition donnée dans cette section lors de la comparaison entre le modèle complet et le modèle visible par les utilisateurs disposant d’autorisations restreintes.  
   
-Pour plus d’informations sur les standards des modèles de données OData, voir [OData version 4.0 partie 1 : protocole et errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+Pour plus d’informations sur les standards des modèles de données OData, consultez [OData version 4.0 partie 1 : protocole et erratum 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
 ## <a name="see-also"></a>Voir aussi
 [Vue d’ensemble de l’API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)

@@ -10,17 +10,17 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
 ms.openlocfilehash: 823f2ea621d16eb911284cadeced2fb676fa5c75
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78923054"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Paramètres de rapport dans le Générateur de rapports Power BI
 
 Cette rubrique décrit les utilisations courantes des paramètres des rapports Power BI Report Builder, les propriétés que l’on peut définir et plus encore. Les paramètres de rapport vous permettent de contrôler les données du rapport, de relier des rapports connexes et de modifier la présentation du rapport. Vous pouvez utiliser des paramètres de rapport dans les rapports paginés que vous créez dans le Générateur de rapports.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> Utilisations courantes des paramètres
+## <a name="common-uses-for-parameters"></a><a name="bkmk_Common_Uses_for_Parameters"></a> Utilisations courantes des paramètres
 
  Voici quelques-unes des méthodes les plus courantes pour utiliser les paramètres.  
   
@@ -36,7 +36,7 @@ Cette rubrique décrit les utilisations courantes des paramètres des rapports P
   
 - Autorisez les utilisateurs à personnaliser l’apparence et les données d’un rapport en incluant des paramètres dans une expression.  
   
-## <a name="UserInterface"></a> Affichage d’un rapport avec des paramètres
+## <a name="viewing-a-report-with-parameters"></a><a name="UserInterface"></a> Affichage d’un rapport avec des paramètres
 
 Lorsque vous affichez un rapport avec des paramètres, la barre d’outils de la visionneuse de rapports présente chaque paramètre pour vous permettre de spécifier de manière interactive les valeurs. L’illustration suivante montre la zone des paramètres d’un rapport avec les paramètres @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota et @SalesDate.  
 
@@ -54,7 +54,7 @@ Lorsque vous affichez un rapport avec des paramètres, la barre d’outils de la
   
 6. **Afficher le rapport** Après avoir entré des valeurs de paramètre, cliquez sur **Afficher le rapport** pour exécuter le rapport. Si tous les paramètres ont des valeurs par défaut, le rapport s’exécute automatiquement au premier affichage.  
   
-## <a name="bkmk_Create_Parameters"></a> Création de paramètres
+## <a name="creating-parameters"></a><a name="bkmk_Create_Parameters"></a> Création de paramètres
 
 Vous pouvez créer des paramètres de rapport de différentes manières.
   
@@ -97,7 +97,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
   
 - Exécuter le rapport sans devoir d’abord sélectionner une valeur de paramètre, car une valeur par défaut a été créée pour le paramètre.  
   
-## <a name="bkmk_Report_Parameters"></a> Propriétés des paramètres de rapport
+## <a name="report-parameter-properties"></a><a name="bkmk_Report_Parameters"></a> Propriétés des paramètres de rapport
 
  Vous pouvez changer les propriétés des paramètres de rapport à l’aide de la boîte de dialogue Propriétés du rapport. Le tableau suivant récapitule les propriétés que vous pouvez définir pour chaque paramètre :  
   
@@ -116,7 +116,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
 |Valeurs par défaut|Définissez les valeurs par défaut à partir d’une requête ou d’une liste statique.<br /><br /> Quand chaque paramètre a une valeur par défaut, le rapport s’exécute automatiquement au premier affichage.|  
 |Avancé|Définissez l’attribut de définition de rapport **UsedInQuery**, valeur qui indique si ce paramètre affecte directement ou indirectement les données d’un rapport.<br /><br /> **Déterminer automatiquement le moment de l’actualisation**<br /> Choisissez cette option lorsque vous souhaitez que le processeur de rapports détermine un paramètre pour cette valeur. La valeur est **True** si le processeur de rapports détecte une requête de jeu de données avec une référence directe ou indirecte à ce paramètre, ou si le rapport présente des sous-rapports.<br /><br /> **Toujours actualiser**<br /> Choisissez cette option quand le paramètre de rapport est utilisé directement ou indirectement dans une requête de jeu de données ou une expression de paramètre. Cette option définit **UsedInQuery** sur True.<br /><br /> **Ne jamais actualiser**<br /> Choisissez cette option quand le paramètre de rapport n’est pas utilisé directement ou indirectement dans une requête de jeu de données ou une expression de paramètre. Cette option définit **UsedInQuery** sur False.<br /><br /> **Attention** Utilisez **Ne jamais actualiser** avec précaution. Sur le serveur de rapports, **UsedInQuery** est utilisé pour permettre de contrôler les options de cache pour les données de rapport et les rapports rendus, ainsi que les options de paramètre pour les rapports d’instantané. Si vous ne définissez pas **Ne jamais actualiser** correctement, vous pouvez entraîner la mise en cache de rapports ou de données de rapport incorrects, ou la présence de données incohérentes dans les rapports d’instantané. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Requête de jeu de données  
+##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Requête de jeu de données  
  Pour filtrer les données dans la requête de jeu de données, vous pouvez inclure une clause de restriction qui limite les données récupérées en spécifiant des valeurs à inclure ou exclure du jeu de résultats.  
   
  Utilisez le Concepteur de requêtes pour la source de données pour vous aider à créer une requête paramétrable.  
@@ -125,7 +125,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
   
 -   Pour les requêtes qui sont basées sur une source de données multidimensionnelle telle que Microsoft SQL Server Analysis Services, vous pouvez spécifier s’il faut créer un paramètre basé sur un filtre que vous indiquez dans le Concepteur de requêtes. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Gestion des paramètres pour un rapport publié  
+##  <a name="parameter-management-for-a-published-report"></a><a name="bkmk_Manage_Parameters"></a> Gestion des paramètres pour un rapport publié  
  Lorsque vous concevez un rapport, les paramètres de rapport sont enregistrés dans la définition de rapport. Lorsque vous publiez un rapport, les paramètres de rapport sont enregistrés et gérés à part de la définition de rapport.  
   
  Pour un rapport publié, vous pouvez utiliser les éléments suivants :  
@@ -140,7 +140,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
   
  Les options d’exécution de rapport peuvent affecter la façon dont les paramètres sont traités. Un rapport qui s’exécute en tant qu’instantané ne peut pas utiliser les paramètres qui sont dérivés d’une requête, sauf si la requête inclut des valeurs par défaut pour les paramètres.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Paramètres d’un abonnement  
+##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Paramètres d’un abonnement  
  Vous pouvez définir un abonnement sur demande ou pour un instantané et spécifier des valeurs de paramètre à utiliser lors du traitement de l’abonnement.  
   
 -   **Rapport à la demande.**  Pour un rapport à la demande, vous pouvez spécifier une valeur de paramètre différente de la valeur publiée pour chaque paramètre listé pour le rapport. Par exemple, supposons que vous avez un rapport Service d’appel qui utilise un paramètre *Période de temps* pour répondre aux demandes du service clientèle le même jour, la même semaine ou le même mois. Si la valeur du paramètre par défaut pour le rapport est définie sur **aujourd’hui**, votre abonnement peut utiliser une valeur de paramètre différente (comme **semaine** ou **mois**) pour produire un rapport qui contient des chiffres hebdomadaires ou mensuels.  

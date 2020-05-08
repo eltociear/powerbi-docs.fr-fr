@@ -7,10 +7,10 @@ ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
 ms.openlocfilehash: f318aa59f33a9993b31787fcb3e0036286616608
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81268808"
 ---
 # <a name="report-creator-learning-catalog"></a>Catalogue des formations pour les créateurs de rapports
@@ -28,7 +28,7 @@ Le catalogue suivant est organisé en partant des connaissances de base pour all
 | [Prise en main de Power BI](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)  | Vous vous demandez comment démarrer avec Power BI ? Comment se connecter pour la première fois à des données et les visualiser ? Découvrez comment démarrer rapidement avec Power BI et obtenir des insights à partir de vos données métier en un rien de temps.  | Webinaire   |                |
 | [Bien démarrer avec l’application Power BI Mobile](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html) | Regardez ce webinaire pour découvrir comment avoir des données toujours à jour en utilisant votre appareil mobile. Découvrez comment améliorer votre expérience en utilisant des dispositions optimisées pour les appareils mobiles, comment interagir avec vos données en déplacement, comment recevoir des notifications Push quand vos données nécessitent votre attention, et comment partager et collaborer avec vos collègues à partir de votre appareil mobile. | Webinaire    |                |
 | [Conseils, astuces et outils Power, par les dirigeants de PowerBI.Tips](https://www.youtube.com/watch?v=fnj1_e3HXow) | Dans cette réunion de groupe d’utilisateurs très spéciale, les dirigeants de PowerBI.Tips, Seth Bauer et Mike Carlo, MVP Power BI, vont partager avec vous un grand nombre d’astuces, de conseils et d’outils Power qu’ils ont publiés sur http://PowerBI.Tips au cours des 18 derniers mois.  | Vidéo YouTube  | 1 heure 7 minutes 40 secondes |
-| [Blog SQL Server BI de Paul Turley](https://sqlserverbi.blog/) | Partage d’expériences de Paul Turley avec la plateforme de données Microsoft, SQL Server BI, la modélisation des données, la conception SSAS, Power Pivot, Power BI, la conception avancée SSRS, Power BI, les tableaux de bord et la visualisation, depuis 2009   | Blog                                  |                |
+| [Blog SQL Server BI de Paul Turley](https://sqlserverbi.blog/) | Un partage des expériences de Paul Turley avec la plateforme de données Microsoft, SQL Server BI, la modélisation des données, la conception SSAS, Power Pivot, Power BI, la conception avancée SSRS, Power BI, les tableaux de bord et la visualisation, depuis 2009   | Blog                                  |                |
 | [Guy in a Cube](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)  | Blog vidéo sur Power BI, avec des résumés d’informations hebdomadaires et des vidéos techniques, qui se concentrent sur la série de produits Microsoft Business Intelligence (notamment Power BI, Reporting Services et Analysis Services). | Blog  |                |
 ## <a name="dashboards"></a>Tableaux de bord<a name="dashboards"></a>
 | Contenu | Description  | Mettre en forme | Longueur   |
