@@ -9,10 +9,10 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921145"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Exemples d’expressions dans le Générateur de rapports Power BI
@@ -37,7 +37,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
 ## <a name="functions"></a>Fonctions  
  Beaucoup d’expressions d’un rapport contiennent des fonctions. Vous pouvez mettre en forme des données, appliquer une logique et accéder aux métadonnées des rapports en utilisant ces fonctions. Vous pouvez écrire des expressions qui utilisent des fonctions de la bibliothèque de runtime Microsoft Visual Basic et des espaces de noms `xref:System.Convert` et `xref:System.Math`. Vous pouvez ajouter des références à des fonctions dans du code personnalisé. Vous pouvez également utiliser des classes de Microsoft .NET Framework, notamment `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Fonctions Visual Basic  
+##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Fonctions Visual Basic  
  Vous pouvez utiliser des fonctions Visual Basic pour manipuler les données qui sont affichées dans les zones de texte ou qui sont utilisées pour les paramètres, les propriétés ou d’autres zones du rapport. Cette section fournit des exemples montrant certaines de ces fonctions. Pour plus d’informations, consultez [Membres de la bibliothèque runtime Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) sur MSDN.  
   
  Le .NET Framework fournit de nombreuses options de format personnalisé, par exemple pour les formats de date spécifiques. Pour plus d’informations, voir [Types de mises en forme](/dotnet/standard/base-types/formatting-types).  
@@ -56,7 +56,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Fonctions de date  
+###  <a name="date-functions"></a><a name="DateFunctions"></a> Fonctions de date  
   
 -   La fonction **Today** fournit la date actuelle. Cette expression peut être utilisée dans une zone de texte pour afficher la date sur le rapport ou dans un paramètre pour filtrer les données en fonction de la date actuelle.  
   
@@ -161,7 +161,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
 |Il y a un an|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |Il y a deux ans|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> Fonctions de chaîne  
+###  <a name="string-functions"></a><a name="StringFunctions"></a> Fonctions de chaîne  
   
 -   Combiner plusieurs champs avec des opérateurs de concaténation et des constantes Visual Basic. L’expression suivante retourne deux champs, chacun sur une ligne distincte dans la même zone de texte :  
   
@@ -227,7 +227,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Fonctions de conversion  
+###  <a name="conversion-functions"></a><a name="ConversionFunctions"></a> Fonctions de conversion  
  Vous pouvez utiliser des fonctions Visual Basic pour convertir un champ d’un type de données en un autre type de données. Les fonctions de conversion peuvent être utilisées pour convertir le type de données par défaut d’un champ en un type de données nécessaire pour des calculs ou pour combiner du texte.  
   
 -   L’expression suivante convertit la constante 500 en type Decimal pour la comparer à un type de données de devise Transact-SQL dans le champ Value d’une expression de filtre.  
@@ -242,7 +242,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Fonctions de décision  
+###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Fonctions de décision  
   
 -   La fonction **Iif** retourne une valeur parmi deux, selon que l’expression est vraie ou non. L’expression suivante utilise la fonction **Iif** pour retourner une valeur booléenne **True** si la valeur de `LineTotal` est supérieure à 100. Sinon, elle retourne **False** :  
   
@@ -297,10 +297,10 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
   
     ```  
   
-##  <a name="ReportFunctions"></a> Fonctions de rapport  
+##  <a name="report-functions"></a><a name="ReportFunctions"></a> Fonctions de rapport  
  Dans une expression, vous pouvez ajouter une référence à des fonctions de rapport supplémentaires qui manipulent les données dans un rapport. Cette section contient des exemples pour deux de ces fonctions. 
   
-###  <a name="Sum"></a> Sum  
+###  <a name="sum"></a><a name="Sum"></a> Sum  
   
 -   La fonction **Sum** peut totaliser les valeurs dans un groupe ou une région de données. Cette fonction peut être pratique dans l’en-tête ou le pied de page d’un groupe. L’expression suivante affiche la somme des données dans le groupe ou la région de données Order :  
   
@@ -314,7 +314,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =Sum(IIF(Fields!State.Value = "Finished", 1, 0))  
     ```  
   
-###  <a name="RowNumber"></a> RowNumber  
+###  <a name="rownumber"></a><a name="RowNumber"></a> RowNumber  
   
 -   La fonction **RowNumber**, quand elle est utilisée dans une zone de texte au sein d’une région de données, affiche le numéro de ligne pour chaque instance de la zone de texte où l’expression apparaît. Cette fonction peut être pratique pour numéroter les lignes dans un tableau. Elle peut également être utile pour des tâches plus complexes, comme générer des sauts de page basés sur le nombre de lignes. Pour plus d’informations, consultez [Sauts de page](#PageBreaks) dans cette rubrique.  
   
@@ -324,10 +324,10 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> Apparence des données de rapport  
+##  <a name="appearance-of-report-data"></a><a name="AppearanceofReportData"></a> Apparence des données de rapport  
  Vous pouvez utiliser des expressions pour manipuler la façon dont les données apparaissent sur un rapport. Par exemple, vous pouvez afficher les valeurs de deux champs dans une même zone de texte, afficher des informations sur le rapport ou affecter la façon dont les sauts de page sont insérés dans le rapport.  
   
-###  <a name="PageHeadersandFooters"></a> En-têtes et pieds de page  
+###  <a name="page-headers-and-footers"></a><a name="PageHeadersandFooters"></a> En-têtes et pieds de page  
  Quand vous concevez un rapport, vous pouvez afficher le nom du rapport et le numéro de page dans le pied de page. Pour cela, vous pouvez utiliser les expressions suivantes :  
   
 -   L’expression suivante fournit le nom du rapport et l’heure à laquelle il a été exécuté. Elle peut être placée dans une zone de texte dans le pied de page ou le corps du rapport. L’heure est mise en forme avec la chaîne de mise en forme du .NET Framework pour la date courte :  
@@ -367,7 +367,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
 > [!NOTE]  
 >  Vous pouvez référencer un seul élément de rapport par expression dans un en-tête de page ou un pied de page. Dans les expressions d’un en-tête de page ou d’un pied de page, vous pouvez aussi référencer le nom de la zone de texte, mais pas l’expression des données réelles dans la zone de texte.  
   
-###  <a name="PageBreaks"></a> Sauts de page  
+###  <a name="page-breaks"></a><a name="PageBreaks"></a> Sauts de page  
  Dans certains rapports, vous voulez placer un saut de page à la fin d’un nombre spécifié de lignes, à la place ou en plus des sauts de page sur les groupes ou les éléments de rapport. Pour cela, créez un groupe qui contient les groupes ou les enregistrements détaillés de votre choix, ajoutez un saut de page au groupe, puis ajoutez une expression de groupe pour regrouper selon un nombre de lignes spécifié.  
   
 -   L’expression suivante, quand elle est placée dans l’expression de groupe, affecte un numéro à chaque ensemble de 25 lignes. Quand un saut de page est défini pour le groupe, cette expression génère un saut de page toutes les 25 lignes.  
@@ -382,10 +382,10 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-##  <a name="Properties"></a> Propriétés  
+##  <a name="properties"></a><a name="Properties"></a> Propriétés  
  Les expressions ne sont pas seulement utilisées pour afficher des données dans des zones de texte. Elles peuvent également être utilisées pour changer la façon dont les propriétés sont appliquées aux éléments de rapport. Vous pouvez changer les informations de style pour un élément de rapport ou changer sa visibilité.  
   
-###  <a name="Formatting"></a> Mise en forme  
+###  <a name="formatting"></a><a name="Formatting"></a> Mise en forme  
   
 -   L’expression suivante, quand elle est utilisée dans la propriété Couleur d’une zone de texte, change la couleur du texte en fonction de la valeur du champ `Profit` :  
   
@@ -415,7 +415,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
 ### <a name="chart-colors"></a>Couleurs des graphiques  
  Pour spécifier des couleurs pour un graphique Forme, vous pouvez utiliser du code personnalisé pour contrôler l’ordre dans lequel les couleurs sont mappées aux valeurs des points de données. Ceci vous permet d’utiliser des couleurs cohérentes pour plusieurs graphiques ayant les mêmes groupes de catégories. 
   
-###  <a name="Visibility"></a> Visibilité  
+###  <a name="visibility"></a><a name="Visibility"></a> Visibilité  
  Vous pouvez afficher et masquer des éléments dans un rapport en utilisant les propriétés de visibilité des éléments de rapport. Dans une région de données comme un tableau, vous pouvez masquer initialement les lignes de détails en fonction de la valeur dans une expression.  
   
 -   L’expression suivante, quand elle est utilisée pour la visibilité initiale des lignes de détails dans un groupe, affiche les lignes de détails pour toutes les ventes supérieures à 90 pour cent dans le champ `PctQuota` :  
@@ -436,7 +436,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =IIF(Fields!Column_1.IsMissing, true, false)  
     ```  
   
-###  <a name="Hyperlinks"></a> URL  
+###  <a name="urls"></a><a name="Hyperlinks"></a> URL  
  Vous pouvez personnaliser les URL en utilisant les données du rapport, et aussi contrôler de façon conditionnelle si les URL sont ajoutées en tant qu’actions pour une zone de texte.  
   
 -   L’expression suivante, quand elle est utilisée en tant qu’action sur une zone de texte, génère une URL personnalisée qui spécifie le champ `EmployeeID` du jeu de données comme paramètre d’URL.  
@@ -451,10 +451,10 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Données du rapport  
+##  <a name="report-data"></a><a name="ReportData"></a> Données du rapport  
  Les expressions peuvent être utilisées pour manipuler les données utilisées dans le rapport. Vous pouvez référencer des paramètres et d’autres informations du rapport. Vous pouvez même modifier la requête qui est utilisée pour récupérer les données pour le rapport.  
   
-###  <a name="Parameters"></a> Paramètres  
+###  <a name="parameters"></a><a name="Parameters"></a> Paramètres  
  Vous pouvez utiliser des expressions dans un paramètre pour faire varier la valeur par défaut du paramètre. Par exemple, vous pouvez utiliser un paramètre pour filtrer les données pour un utilisateur particulier en fonction de l’ID d’utilisateur qui est utilisé pour exécuter le rapport.  
   
 -   L’expression suivante, quand elle est utilisée comme valeur par défaut pour un paramètre, collecte l’ID d’utilisateur de la personne qui exécute le rapport :  
@@ -475,7 +475,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Code personnalisé  
+##  <a name="custom-code"></a><a name="CustomCode"></a> Code personnalisé  
  Vous pouvez utiliser du code personnalisé intégré dans un rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Utilisation de variables de groupe pour une agrégation personnalisée  

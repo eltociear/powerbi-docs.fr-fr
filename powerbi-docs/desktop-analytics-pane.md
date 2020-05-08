@@ -10,10 +10,10 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 4ad843078e452502a94aa7d60b3304528fd25496
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038782"
 ---
 # <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Utiliser le volet Analytique dans Power BI Desktop
@@ -42,7 +42,7 @@ Avec le volet **Analytique**, vous pouvez créer les types de lignes de référe
 * Ligne moyenne
 * Ligne médiane
 * Ligne Centile
-* Symétrie en grisé
+* Ombrage par symétrie
 
 > [!NOTE]
 > Toutes les lignes ne sont pas disponibles pour tous les types de visuels.
@@ -98,7 +98,7 @@ Vous pouvez utiliser la *ligne constante de l’axe X*, la *ligne constante de l
 
 * Nuage de points
 
-Il est possible d’utiliser la *ligne constante*, la *ligne min*, la *ligne max*, la *ligne moyenne *, la* ligne médiane*et la*ligne de centile* sur ces visuels :
+Il est possible d’utiliser la *ligne constante*, la *ligne min*, la *ligne max*, la *ligne moyenne* , la *ligne médiane* et la *ligne de centile* sur ces visuels :
 
 * Graphique en aires
 * Graphique à barres groupées
@@ -137,9 +137,9 @@ La *ligne des centiles* n’est disponible qu’avec des données importées dan
 Power BI Desktop permet d’effectuer des tâches très diverses. Pour plus d’informations sur ses fonctionnalités, passez en revue les ressources suivantes :
 
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)
-* [Obtenir Power BI Desktop](desktop-get-the-desktop.md)
+* [Obtenir Power BI Desktop](desktop-get-the-desktop.md)
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Vue d’ensemble des requêtes dans Power BI Desktop](desktop-query-overview.md)
-* [Types de données dans Power BI Desktop](desktop-data-types.md)
+* [Types de données dans Power BI Desktop](desktop-data-types.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Effectuer des tâches courantes dans Power BI Desktop](desktop-common-query-tasks.md)

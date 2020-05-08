@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381419"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
@@ -25,7 +25,7 @@ Consultez [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste des visualisations disponibles dans Power BI
 Toutes ces visualisations peuvent être ajoutées à des rapports Power BI, spécifiées dans Questions et réponses, et épinglées à des tableaux de bord.
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : De base (superposées) et empilées
+### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : de base (superposées) et empilées
 ![graphiques en aires](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
@@ -41,10 +41,10 @@ Pour plus d’informations, consultez [Graphique en aires de base](power-bi-visu
 >[!TIP]
 >Les graphiques à barres sont la norme pour la recherche d’une valeur spécifique dans différentes catégories.
 
-### <a name="cards-multi-row"></a>Cartes : Plusieurs lignes
+### <a name="cards-multi-row"></a>Cartes : à plusieurs lignes
 ![carte à plusieurs lignes](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Cartes : Numéro unique
+### <a name="cards-single-number"></a>Cartes : à numéro unique
 ![cartes à numéro](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Pour plus d’informations, consultez [Créer une vignette représentant un grand nombre](power-bi-visualization-card.md).
@@ -102,7 +102,7 @@ Pour plus d’informations, consultez [Indicateurs de performance clés dans Pow
 >[!TIP]
 >Mettez en évidence la forme générale de l’ensemble d’une série de valeurs, normalement au fil du temps.
 
-### <a name="maps-basic-maps"></a>Cartes : Cartes simples
+### <a name="maps-basic-maps"></a>Cartes : de base
 ![Carte simple](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
@@ -110,12 +110,12 @@ Pour plus d’informations, consultez [Indicateurs de performance clés dans Pow
 
 Pour plus d’informations, consultez [Trucs et astuces pour les éléments visuels de la carte](power-bi-map-tips-and-tricks.md).
 
-### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS Maps
+### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS
 ![carte ArcGIS](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Cartes : Cartes choroplèthes (thématiques)
+### <a name="maps-filled-maps-choropleth"></a>Cartes : choroplèthes (thématiques)
 ![Carte choroplèthe](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
@@ -123,7 +123,7 @@ Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](power-bi-vi
 
 Pour plus d’informations, consultez [Cartes choroplèthes dans Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
-### <a name="maps-shape-maps"></a>Cartes : Cartes de formes
+### <a name="maps-shape-maps"></a>Cartes : de formes
 ![mappage de forme du Texas](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
 
 >[!TIP]
@@ -136,7 +136,7 @@ Pour plus d’informations, consultez [Cartes de formes dans Power BI](desktop-
 ![matrice](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
->Une table prend en charge deux dimensions, mais une matrice facilite l’affichage des données de manière claire entre plusieurs dimensions : elle prend en charge une disposition échelonnée. La matrice agrège automatiquement les données automatiquement et permet une exploration au niveau du détail. 
+>Une table prend en charge deux dimensions, mais une matrice facilite l’affichage des données de manière claire entre plusieurs dimensions : elle prend en charge une disposition échelonnée. La matrice agrège automatiquement les données et permet de descendre dans la hiérarchie. 
 
 Pour plus d’informations, consultez [Visuels Matrice dans Power BI](desktop-matrix-visual.md).
 
@@ -203,7 +203,7 @@ Pour plus d’informations, consultez [Segments dans Power BI](power-bi-visuali
 
 Pour plus d’informations, consultez [Ajouter un widget d’image à un tableau de bord](../service-dashboard-add-widget.md).
 
-### <a name="tables"></a>Tables
+### <a name="tables"></a>Tableaux
 ![visuel de table](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
@@ -228,7 +228,7 @@ Pour plus d’informations, consultez [Treemaps dans Power BI](power-bi-visuali
 Pour plus d’informations, consultez [Graphiques en cascade dans Power BI](power-bi-visualization-waterfall-charts.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Indiquer dans Questions et réponses la visualisation à utiliser
-Lorsque vous tapez des requêtes en langage naturel avec le service Questions et réponses de Power BI, vous pouvez spécifier le type de visualisation dans votre requête.  Par exemple :
+Lorsque vous tapez des requêtes en langage naturel avec le service Questions et réponses de Power BI, vous pouvez spécifier le type de visualisation dans votre requête.  Par exemple :
 
 ***sales by state as a treemap*** (ventes par région sous forme de compartimentage
 

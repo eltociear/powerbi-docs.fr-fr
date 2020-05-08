@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761108"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Appliquer des insights dans Power BI Desktop pour rechercher où les distributions sont différentes (préversion)
@@ -66,14 +66,14 @@ Vous vous demandez probablement ce que l’on entend par *différent*. Par exemp
 
 |Pays  |Ventes (en millions de dollars)|
 |---------|----------|
-|USA      |15        |
+|États-Unis      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
 |Pays  |Ventes (en millions de dollars)|
 |---------|----------|
-|USA      |3        |
+|États-Unis      |3        |
 |Canada   |1         |
 
 Même si les chiffres sont différents dans chacun de ces tableaux, les valeurs relatives entre les États-Unis et le Canada sont identiques (75 % et 25 % pour les ventes globales et de vélos de route). De ce fait, elles ne sont pas considérées comme étant différentes. Pour des mesures additives simples comme celles-ci, l’algorithme recherche donc des différences dans les valeurs *relatives*.  
@@ -82,14 +82,14 @@ Maintenant, penchons-nous sur un autre type de mesure : la marge, qui est calcu
 
 |Pays  |Marge (%)|
 |---------|----------|
-|USA      |15        |
+|États-Unis      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
 |Pays  |Marge (%)|
 |---------|----------|
-|USA      |3        |
+|États-Unis      |3        |
 |Canada   |1         |
 
 Compte tenu de la nature de ces mesures, elles *sont* considérés comme étant différentes et donc intéressantes. Par conséquent, pour les mesures non additives telles que cet exemple de marge, l’algorithme recherche des différences dans la valeur absolue.
@@ -98,11 +98,11 @@ Les visuels affichés ont donc pour but de mettre en évidence les différences 
 
 Ainsi, pour les mesures additives, telles que les ventes (*Sales*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un double axe et une mise à l’échelle appropriée pour faciliter la comparaison des valeurs relatives. Les colonnes présentent la valeur avec le filtre appliqué, tandis que la ligne présente la valeur globale (l’axe des colonnes étant situé à gauche et l’axe des lignes étant situé à droite, comme à l’habitude). La ligne s’affiche avec un style *en escalier*, avec une ligne en pointillés, remplie de gris. Pour l’exemple précédent, si la valeur maximale de l’axe des colonnes est 4 et que la valeur maximale de l’axe des lignes est 20, les valeurs relatives entre les États-Unis et le Canada sont faciles à comparer pour les valeurs filtrées et les valeurs globales. 
 
-De la même façon, pour les mesures non additives comme la marge (*Margin*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un axe unique, ce qui signifie que les valeurs absolues peuvent être facilement comparées. Là encore, la ligne (remplie de gris) présente la valeur globale. Qu’il s’agisse de comparer des valeurs réelles ou des valeurs relatives, il ne suffit pas de calculer la différence entre les valeurs pour déterminer le degré de différence entre deux répartitions. Par exemple :
+De la même façon, pour les mesures non additives comme la marge (*Margin*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un axe unique, ce qui signifie que les valeurs absolues peuvent être facilement comparées. Là encore, la ligne (remplie de gris) présente la valeur globale. Qu’il s’agisse de comparer des valeurs réelles ou des valeurs relatives, il ne suffit pas de calculer la différence entre les valeurs pour déterminer le degré de différence entre deux répartitions. Par exemple :
 
 * La taille de la population est prise en compte, car une différence est statistiquement moins significative et moins intéressante quand elle s’applique à une faible proportion de la population globale. De ce fait, si la répartition des ventes entre les pays est très différente pour un produit donné, il ne s’agit pas d’un élément intéressant s’il existait plusieurs milliers de produits, car ce produit ne représente qu’un faible pourcentage des ventes globales.
 
-* Les différences concernant les catégories dont les valeurs d’origine étaient très élevées ou très proches de zéro sont privilégiées par rapport aux autres. Par exemple, si la part globale des ventes dans un pays se limite à 1 %, mais que la part pour un certain type de produit est de 6 %, il s’agit d’un élément statistiquement plus significatif et donc considéré comme plus intéressant qu’un pays dont la part est passée de 50 % à 55 %. 
+* Les différences concernant les catégories dont les valeurs d’origine étaient très élevées ou proches de zéro ont plus de poids que les autres. Par exemple, si la part globale des ventes dans un pays se limite à 1 %, mais que la part pour un certain type de produit est de 6 %, il s’agit d’un élément statistiquement plus significatif et donc considéré comme plus intéressant qu’un pays dont la part est passée de 50 % à 55 %. 
 
 * Plusieurs méthodes heuristiques sont utilisées pour sélectionner les résultats les plus significatifs, par exemple en prenant en considération d’autres relations entre les données.
      
@@ -130,7 +130,7 @@ La liste suivante répertorie les scénarios actuellement non pris en charge pou
 * Filtres de mesures
 * Mesures non numériques
 * Utilisation de « Afficher la valeur comme »
-* Mesures filtrées - les mesures filtrées sont des calculs effectués au niveau du visuel auxquels est appliqué un filtre spécifique (par exemple, *Total des ventes pour la France*) ; elles sont utilisées dans certains visuels créés par la fonctionnalité d’insights.
+* Mesures filtrées (les mesures filtrées sont des calculs effectués au niveau du visuel auxquels est appliqué un filtre spécifique (par exemple, *Total des ventes pour la France*) ; elles sont utilisées dans certains visuels créés par la fonctionnalité d’insights.
 
 De plus, les sources de données et les types de modèles suivants ne sont actuellement pas pris en charge pour la fonctionnalité d’affichage d’informations :
 
@@ -144,8 +144,8 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Se connecter aux données dans Power BI Desktop](desktop-connect-to-data.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 82005eb448164b863811ab78a8f76ed954da60a2
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114546"
 ---
 # <a name="fixing-need-to-update-android-system-webview"></a>Correction de l’erreur « Mise à jour requise de Android System Webview »
@@ -22,7 +22,7 @@ Supposons que vous accédez à Google Play Store et que vous mettez à jour Andr
 
 Si votre appareil Android exécute Android 7 ou une version ultérieure, vous pouvez recevoir à nouveau le message indiquant de mettre à jour Android System Webview. 
 
-## <a name="solution-upgrade-your-version-of-the-chrome-app"></a>Solution : Mettez à niveau votre version de l’application Chrome
+## <a name="solution-upgrade-your-version-of-the-chrome-app"></a>Solution : mettez à niveau votre version de l’application Chrome
 Vous devez en fait mettre à niveau votre application Chrome. 
 
 * Revenez à Google Play Store, recherchez Chrome, puis obtenez la mise à niveau.
@@ -30,5 +30,5 @@ Vous devez en fait mettre à niveau votre application Chrome.
 ## <a name="next-steps"></a>Étapes suivantes
 * [Téléchargez l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

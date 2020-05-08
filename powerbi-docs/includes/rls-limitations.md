@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 01/31/2020
 ms.author: davidi
 ms.openlocfilehash: b67025de5e2a70876a31fd42e22c9572403288fa
-ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77464378"
 ---
 ## <a name="limitations"></a>Limites
@@ -31,4 +31,4 @@ Il existe un problème connu : vous obtenez un message d’erreur quand vous te
 
 1. Anna reçoit une erreur.
 
-**Solution de contournement** : republiez le fichier Power BI Desktop à partir du service Power BI jusqu’à ce que ce problème soit résolu. Pour cela, sélectionnez **Obtenir des données** > **Fichiers**.
+**Solution de contournement :** republiez le fichier Power BI Desktop à partir du service Power BI jusqu’à ce que ce problème soit résolu. Pour cela, sélectionnez **Obtenir des données** > **Fichiers**.

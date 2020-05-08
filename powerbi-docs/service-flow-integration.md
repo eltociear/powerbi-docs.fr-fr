@@ -11,10 +11,10 @@ ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609693"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate et Power BI
@@ -29,7 +29,7 @@ Effectuer le suivi de Sirui crée un flux Power Automate qui envoie un e-mail d�
 
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Créer un flux déclenché par une alerte de données Power BI
 
-### <a name="prerequisites"></a>Prérequis
+### <a name="prerequisites"></a>Conditions préalables
 Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour la suite, [créez une alerte de données dans Power BI](service-set-data-alerts.md), créez un compte Slack gratuit et [inscrivez-vous gratuitement à Power Automate](https://flow.microsoft.com/#home-signup).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Créer un flux qui utilise Power BI - à partir d’un modèle
@@ -47,7 +47,7 @@ Dans cette tâche, nous utilisons un modèle pour créer un flux simple qui déc
     ![résultats de la recherche](media/service-flow-integration/power-bi-flow-alert.png)
 
 
-### <a name="build-the-flow"></a>Générer le flux
+### <a name="build-the-flow"></a>Créer le flux
 Ce modèle a un déclencheur (alerte de données Power BI en cas de nouvelles médailles olympiques pour l’Irlande) et une action (envoyer un e-mail). Lorsque vous sélectionnez un champ, Power Automate affiche un contenu dynamique que vous pouvez inclure.  Dans cet exemple, nous incluons la valeur et l’URL de la mosaïque dans le corps du message.
 
 ![modèle de flux](media/service-flow-integration/power-bi-template1.png)

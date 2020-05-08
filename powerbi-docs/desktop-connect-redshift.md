@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c303bbd3fe229ea48dbad3da9d003851f7441956
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761631"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Se connecter à une base de données Amazon Redshift dans Power BI Desktop
@@ -24,7 +24,7 @@ Pour vous connecter à une base de données **Amazon Redshift**, sélectionnez *
 
 ![](media/desktop-connect-redshift/connect_redshift_3.png)
 
-Dans la fenêtre **Amazon Redshift** qui s’ouvre, tapez ou collez le nom de votre serveur et de votre base de données **Amazon Redshift** dans la zone. Dans le champ *Serveur*, les utilisateurs peuvent spécifier un port au format suivant : *URL_serveur:port*
+Dans la fenêtre **Amazon Redshift** qui s’ouvre, tapez ou collez le nom de votre serveur et de votre base de données **Amazon Redshift** dans la zone. Dans le champ *Serveur*, les utilisateurs peuvent spécifier un port au format suivant : *URL_serveur:port*.
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
@@ -45,8 +45,8 @@ Une fois que vous effectuez des sélections dans la fenêtre **Navigateur**, vou
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 
