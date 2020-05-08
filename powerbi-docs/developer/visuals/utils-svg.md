@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
 ms.openlocfilehash: aa1ac8074e842a51b369c48f57c4b5016a80140c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377969"
 ---
 # <a name="svg-utils"></a>Utilitaires pour les SVG
@@ -22,7 +22,7 @@ Les utilitaires SVG sont un ensemble de fonctions et de classes permettant de si
 
 ## <a name="installation"></a>Installation
 
-Pour installer le package, vous devez exécuter la commande suivante dans le répertoire contenant votre visuel actuel :
+Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel actuel :
 
 ```bash
 npm install powerbi-visuals-utils-svgutils --save

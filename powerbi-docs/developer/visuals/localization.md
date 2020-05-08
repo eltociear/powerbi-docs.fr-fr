@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
 ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379849"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Ajouter les paramètres régionaux dans Power BI pour les visuels Power BI
@@ -45,7 +45,7 @@ this.locale = options.host.locale;
 
 Paramètres régionaux pris en charge :
 
-Chaîne de paramètres régionaux | Langue
+Chaîne de paramètres régionaux | Language
 --------------|----------------------
 ar-SA | العربية (arabe)
 bg-BG | български (bulgare)
@@ -77,7 +77,7 @@ nb-NO | norsk (norvégien)
 nl-NL | Nederlands (néerlandais)
 pl-PL | polski (polonais)
 pt-BR | português (Brésil)
-pt-PT | português (Portugal)
+pt-PT | português (Brésil)
 ro-RO | românesc (roumain)
 ru-RU | русский (russe)
 sk-SK | slovenský (slovaque)

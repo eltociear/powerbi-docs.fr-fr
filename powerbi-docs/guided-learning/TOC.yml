@@ -6,11 +6,11 @@
   href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'
 - name: Obtenir des données
   href: 'https://docs.microsoft.com/learn/modules/get-data-power-bi'
-- name: Modéliser des données
+- name: Données de modèle
   href: 'https://docs.microsoft.com/learn/modules/model-data-power-bi'
 - name: Utiliser des visuels
   href: 'https://docs.microsoft.com/learn/modules/visuals-in-power-bi'
-- name: Explorer les données
+- name: Explorer des données
   href: 'https://docs.microsoft.com/learn/modules/explore-data-power-bi'
 - name: Publier et partager
   href: 'https://docs.microsoft.com/learn/modules/publish-share-power-bi'

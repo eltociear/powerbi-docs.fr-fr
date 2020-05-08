@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609942"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841914"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bonnes pratiques pour optimiser Questions et réponses dans Power BI
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI.
@@ -194,6 +194,8 @@ La règle de toujours préférer la normalisation accepte une seule exception :
 Cette étape s’applique spécifiquement à Q&A (et non aux rapports Power BI en général). Les utilisateurs ont souvent recours à différents termes pour parler de la même chose, par exemple total des ventes, ventes nettes, total net des ventes. Vous pouvez ajouter ces synonymes aux tables et aux colonnes dans le modèle Power BI. 
 
 Cette étape peut être importante. Même avec des noms de table et de colonne simples, les utilisateurs de Questions et réponses posent des questions à l’aide d’un vocabulaire spontané. Ils ne choisissent pas dans une liste prédéfinie de colonnes. Plus vous ajoutez de synonymes justes, meilleure en sera l’expérience de vos utilisateurs avec votre rapport. Pour ajouter des synonymes, dans Power BI Desktop, accédez à la vue Modèle, sélectionnez l’onglet Modélisation et sélectionnez un champ ou une table. Le volet Propriétés affiche la zone **Synonymes**, dans laquelle vous pouvez ajouter des synonymes.
+
+
 
 ![Synonymes dans le volet Propriétés de Questions et réponses](media/qna-modelling-pane-synonyms.png)
 

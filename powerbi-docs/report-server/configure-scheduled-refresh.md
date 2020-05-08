@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: davidi
 ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439960"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Comment configurer une actualisation planifiée de rapport Power BI
@@ -78,7 +78,7 @@ Affichez l’état d’un plan d’actualisation planifiée dans le portail web.
    | Actualisation des données |Actualisation des données dans le modèle. |
    | Suppression des informations d’identification du modèle |Suppression du modèle des informations d’identification utilisées pour se connecter à la source de données. |
    | Enregistrement du modèle dans le catalogue |L’actualisation des données est terminée et le modèle actualisé est réenregistré dans la base de données du catalogue du serveur de rapports. |
-   | Terminé : Actualisation des données |L’actualisation est terminée. |
+   | Terminé : actualisation des données |L’actualisation est terminée. |
    | Erreur : |Une erreur s’est produite lors de l’actualisation et s’affiche. |
 
 La page web doit être actualisée pour afficher l’état actuel. L’état ne changera pas automatiquement.

@@ -11,10 +11,10 @@ ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637874"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduction aux vignettes de tableau de bord pour les concepteurs Power BI
@@ -41,7 +41,7 @@ Vous pouvez ajouter (épingler) une vignette à un tableau de bord de plusieurs 
 * [Un rapport](service-dashboard-pin-tile-from-report.md)
 * [Un autre tableau de bord](service-pin-tile-to-another-dashboard.md)
 * [Un classeur Excel sur OneDrive Entreprise](service-dashboard-pin-tile-from-excel.md)
-* [Quick Insights (Informations rapides)](service-insights.md)
+* [Informations rapides](service-insights.md)
 * [Un rapport paginé local dans Power BI Report Server ou SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Vous pouvez créer des vignettes autonomes pour les images, les zones de texte, les vidéos, les données de streaming et le contenu web directement dans le tableau de bord à l’aide du contrôle [Ajouter une vignette](service-dashboard-add-widget.md).

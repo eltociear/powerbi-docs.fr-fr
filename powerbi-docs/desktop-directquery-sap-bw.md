@@ -10,10 +10,10 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761177"
 ---
 # <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>Se connecter à SAP Business Warehouse à l’aide de DirectQuery dans Power BI
@@ -31,19 +31,19 @@ En outre, il est *extrêmement important* de comprendre que de nombreuses foncti
 ## <a name="additional-modeling-restrictions"></a>Autres restrictions de modélisation
 Les autres principales restrictions de modélisation au moment de se connecter à SAP BW à l’aide de DirectQuery dans Power BI sont les suivantes :
 
-* **Aucune prise en charge des colonnes calculées :** La possibilité de créer des colonnes calculées est désactivée. Cela signifie également que le regroupement et le clustering, qui permettent de créer des colonnes calculées, ne sont pas disponibles.
-* **Autres limitations concernant les mesures :** Des limitations supplémentaires sont imposées aux expressions DAX utilisables dans les mesures, afin de refléter le niveau de prise en charge offert par SAP BW.
-* **Aucune prise en charge de la définition de relations :** Les relations sont inhérentes à la source SAP externe, et il n’est pas possible de définir d’autres relations dans le modèle.
-* **Aucune vue de données :** La **vue de données** affiche normalement les données détaillées dans les tables. Étant donné la nature des sources OLAP telles que SAP BW, cette vue n’est pas disponible via SAP BW.
-* **Les détails des colonnes et des mesures sont fixes :** La liste de colonnes et de mesures de la liste de champs est fixée par la source sous-jacente et ne peut pas être modifiée. Par exemple, il n’est pas possible de supprimer une colonne, ni de modifier son type de données (elle peut toutefois être renommée).
-* **Autres limitations dans DAX :** Il existe des limitations supplémentaires pour les expressions DAX qui peuvent être utilisées dans les définitions de mesures, afin de refléter les limitations de la source. Par exemple, il n’est pas possible d’utiliser une fonction d’agrégation sur une table.
+* **Aucune prise en charge des colonnes calculées :** la possibilité de créer des colonnes calculées est désactivée. Cela signifie également que le regroupement et le clustering, qui permettent de créer des colonnes calculées, ne sont pas disponibles.
+* **Autres limitations concernant les mesures :** des limitations supplémentaires sont imposées sur les expressions DAX pouvant être utilisées dans les mesures, afin de refléter le niveau de prise en charge offert par SAP BW.
+* **Aucune prise en charge de la définition de relations :** les relations sont inhérentes à la source SAP externe, et il n’est pas possible de définir d’autres relations dans le modèle.
+* **Aucune vue de données :** la **vue de données** affiche normalement les données détaillées dans les tables. Étant donné la nature des sources OLAP telles que SAP BW, cette vue n’est pas disponible via SAP BW.
+* **Les détails des colonnes et des mesures sont fixes :** la liste de colonnes et de mesures de la liste de champs est fixée par la source sous-jacente et ne peut pas être modifiée. Par exemple, il n’est pas possible de supprimer une colonne, ni de modifier son type de données (elle peut toutefois être renommée).
+* **Autres limitations dans DAX :** il existe des limitations supplémentaires pour les expressions DAX qui peuvent être utilisées dans les définitions de mesures, afin de refléter les limitations de la source. Par exemple, il n’est pas possible d’utiliser une fonction d’agrégation sur une table.
 
 ## <a name="additional-visualization-restrictions"></a>Autres restrictions de visualisation
 Les principales restrictions supplémentaires applicables aux visualisations lors de la connexion à SAP BW à l’aide de DirectQuery dans Power BI sont les suivantes :
 
-* **Aucune agrégation de colonnes :** Il n’est pas possible de modifier l’agrégation d’une colonne sur un visuel ; elle est toujours définie sur *Ne pas résumer*
-* **Le filtrage des mesures est désactivé :** Le filtrage des mesures est désactivé pour refléter la prise en charge offerte par SAP BW.
-* **Sélection multiple et inclusion/exclusion :** La possibilité de sélectionner plusieurs points de données sur un visuel est désactivée si les points représentent des valeurs de plusieurs colonnes. Par exemple, dans le cas d’un graphique à barres affichant les ventes par pays, avec la catégorie en légende, il est impossible de sélectionner le point pour (États-Unis, bicyclettes) et (France, vêtements). De même, il n’est pas possible de sélectionner le point pour (États-Unis, bicyclettes) et de l’exclure du visuel. Ces deux limitations sont imposées afin de refléter la prise en charge offerte par SAP BW.
+* **Aucune agrégation de colonnes :** il n’est pas possible de modifier l’agrégation d’une colonne sur un visuel ; elle est toujours définie sur *Ne pas résumer*.
+* **Le filtrage des mesures est désactivé :** le filtrage des mesures est désactivé pour refléter la prise en charge offerte par SAP BW.
+* **Sélection multiple et inclusion/exclusion :** la possibilité de sélectionner plusieurs points de données sur un visuel est désactivée si les points représentent des valeurs de plusieurs colonnes. Par exemple, dans le cas d’un graphique à barres affichant les ventes par pays, avec la catégorie en légende, il est impossible de sélectionner le point pour (États-Unis, bicyclettes) et (France, vêtements). De même, il n’est pas possible de sélectionner le point pour (États-Unis, bicyclettes) et de l’exclure du visuel. Ces deux limitations sont imposées afin de refléter la prise en charge offerte par SAP BW.
 
 ## <a name="support-for-sap-bw-features"></a>Prise en charge des fonctionnalités de SAP BW
 Le tableau suivant répertorie toutes les fonctionnalités de SAP BW qui ne sont pas entièrement prises en charge ou se comportent différemment lorsque vous utilisez Power BI.   
@@ -71,7 +71,7 @@ Le tableau suivant répertorie toutes les fonctionnalités de SAP BW qui ne sont
 | Paramètre de langue de l’utilisateur final |Les paramètres régionaux utilisés pour se connecter à SAP BW sont définis dans le cadre des détails de connexion et ne reflètent pas les paramètres régionaux du lecteur du rapport final. |
 | Variables de texte |SAP BW autorise l’utilisation des espaces réservés pour les variables dans les noms de champ (par exemple, « Chiffres réels $YEAR$ »), ceux-ci étant ensuite remplacés par la valeur sélectionnée. Par exemple, le champ apparaît sous la forme « Chiffres réels 2016 » dans les outils BEx si l’année 2016 a été sélectionnée pour la variable. <br/> <br/> Le nom de colonne affiché dans Power BI ne change pas en fonction de la valeur de la variable et, par conséquent, est affiché sous la forme « $YEAR$ Chiffres réels ».  Toutefois, vous pouvez modifier le nom de colonne ensuite dans Power BI. |
 | Variables de sortie client | Les variables de sortie client ne sont pas exposées par l’API publique et ne sont donc pas prises en charge par Power BI. |
-| Structures caractéristiques | Les structures caractéristiques de la source SAP BW sous-jacente entraînent une « explosion » des mesures exposées dans Power BI. Par exemple, avec deux mesures Sales et Costs et une structure caractéristique contenant Budget et Actual, quatre mesures sont exposées : Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
+| Structures caractéristiques | Les structures caractéristiques de la source SAP BW sous-jacente entraînent une « explosion » des mesures exposées dans Power BI. Par exemple, avec deux mesures Sales et Costs et une structure caractéristique contenant Budget et Actual, quatre mesures sont exposées : Sales.Budget, Sales.Actual, Costs.Budget et Costs.Actual. |
 
 
 ## <a name="next-steps"></a>Étapes suivantes

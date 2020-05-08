@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
 ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377372"
 ---
 # <a name="configure-report-interaction-settings"></a>Configurer les paramètres d’interaction de rapport
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 L’application mobile Power BI a un certain nombre de paramètres « d’interaction » configurables qui vous permettent de contrôler la façon dont vous interagissez avec vos données et de définir la façon dont certains éléments de l’application mobile Power BI se comportent. Le tableau ci-dessous répertorie les paramètres d’interaction actuellement disponibles et les appareils qui en disposent.
 

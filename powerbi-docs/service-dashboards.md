@@ -10,17 +10,17 @@ ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160785"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
 Un *tableau de bord* Power BI est une page unique, souvent appelée canevas, qui raconte une histoire au moyen de visualisations. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments clés de cette histoire. Les lecteurs peuvent afficher des rapports connexes pour obtenir plus de détails.
 
-![Tableau de bord](media/service-dashboards/power-bi-dashboard2.png)
+![Dashboard](media/service-dashboards/power-bi-dashboard2.png)
 
 Les tableaux de bord sont une fonctionnalité du service Power BI. Ils ne sont pas disponibles dans Power BI Desktop. Vous ne pouvez pas créer de tableaux de bord sur des appareils mobiles, mais vous pouvez [les afficher et les partager](mobile-apps-view-dashboard.md) sur ceux-ci.
 
@@ -53,12 +53,12 @@ Les [rapports](service-reports.md) et les tableaux de bord semblent similaires, 
 | Sources de données |Un ou plusieurs rapports et un ou plusieurs jeux de données par tableau de bord |Un seul jeu de données par rapport |
 | Disponible dans Power BI Desktop |Non | Oui. Possibilité de créer et d’afficher des rapports dans Power BI Desktop |
 | S’abonner |Oui. Possibilité de s’abonner à un tableau de bord |Oui. Possibilité de s’abonner à une page de rapport |
-| Filtrage |Non. Impossible de filtrer ou découper |Oui. Différentes manières de filtrer, mettre en surbrillance et découper |
+| Filtrage |No. Impossible de filtrer ou découper |Oui. Différentes manières de filtrer, mettre en surbrillance et découper |
 | Sélection |Oui. Possibilité de définir un tableau de bord comme tableau de bord *par défaut* |Non |
 | Favori | Oui. Possibilité de définir plusieurs tableaux de bord comme *Favoris* | Oui. Possibilité de définir plusieurs rapports comme *Favoris*
 | Définir des alertes |Oui. Disponible pour les vignettes de tableau de bord dans certaines circonstances |Non |
 | Requêtes en langage naturel (Questions et réponses) |Oui | Oui, pour autant que vous disposiez d’autorisations de modification sur me rapport et son jeu de données sous-jacent |
-| Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord |Oui |
+| Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |No. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord |Oui |
 
 
 ## <a name="next-steps"></a>Étapes suivantes

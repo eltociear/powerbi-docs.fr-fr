@@ -10,10 +10,10 @@ metadata:
   ms.author: v-lshann
   ms.date: 04/08/2020
   ms.openlocfilehash: 9f03f812eb20454f655a876438312ba50b521a29
-  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/16/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "81439293"
 landingContent:
 - title: Décisionnaires métier
@@ -34,11 +34,11 @@ landingContent:
     links:
     - text: Catalogue de formations des créateurs de rapports
       url: learning-catalog-report-creator.md#
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-report-creator.md#get-started
     - text: Tableaux de bord
       url: learning-catalog-report-creator.md#dashboards
-    - text: Conception de rapports
+    - text: Conception de rapport
       url: learning-catalog-report-creator.md#report-design
     - text: Visualisation
       url: learning-catalog-report-creator.md#visualization
@@ -50,7 +50,7 @@ landingContent:
     links:
     - text: Catalogue de formations des analystes de données
       url: learning-catalog-data-analyst.md#
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-data-analyst.md#get-started
     - text: Meilleures pratiques
       url: learning-catalog-data-analyst.md#best-practices
@@ -72,9 +72,9 @@ landingContent:
     links:
     - text: Catalogue de formations des administrateurs
       url: learning-catalog-administrator.md
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-administrator.md#get-started
-    - text: Deploy
+    - text: Déployer
       url: learning-catalog-administrator.md#deploy
 - title: Développeurs
   linkLists:
@@ -82,13 +82,13 @@ landingContent:
     links:
     - text: Catalogue de formations des développeurs
       url: learning-catalog-developer.md
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-developer.md#get-started
-    - text: Incorporé
+    - text: Embedded
       url: learning-catalog-developer.md#embedded
     - text: DAX
       url: learning-catalog-developer.md#dax
-    - text: Development
+    - text: Développement
       url: learning-catalog-developer.md#development
 - title: Rôles des partenaires en prévente
   linkLists:
@@ -102,7 +102,7 @@ landingContent:
     links:
     - text: Catalogue de formations des consultants en applications fonctionnelles
       url: learning-catalog-functional-consultant.md
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-functional-consultant.md#get-started
     - text: Meilleures pratiques
       url: learning-catalog-functional-consultant.md#best-practices
@@ -124,7 +124,7 @@ landingContent:
     links:
     - text: Catalogue de formations des architectes de solutions
       url: learning-catalog-solution-architect.md
-    - text: Commencer
+    - text: Bien démarrer
       url: learning-catalog-solution-architect.md#get-started
     - text: Études de cas
       url: learning-catalog-solution-architect.md#case-studies
