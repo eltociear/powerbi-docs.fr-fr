@@ -9,10 +9,10 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921122"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Expressions dans le Générateur de rapports Power BI
@@ -30,7 +30,7 @@ ms.locfileid: "78921122"
   
  Pour entrer manuellement des expressions, sélectionnez un élément sur l’aire de conception et utilisez les menus contextuels et les boîtes de dialogue pour définir les propriétés de l’élément. Quand vous voyez le bouton ***(fx)*** ou la valeur `<Expression>` dans une liste déroulante, vous savez que vous pouvez définir la propriété dans une expression. 
   
-##  <a name="Types"></a> Présentation d’expressions simples et complexes  
+##  <a name="understanding-simple-and-complex-expressions"></a><a name="Types"></a> Présentation d’expressions simples et complexes  
  Les expressions commencent par un signe égal (=) et sont écrites en Microsoft Visual Basic. Les expressions peuvent inclure une combinaison de constantes, d’opérateurs et de références à des valeurs prédéfinies (champs, collections et fonctions) et à du code externe ou personnalisé.  
   
  Vous pouvez utiliser des expressions pour spécifier la valeur d’un grand nombre de propriétés d’élément de rapport. Les propriétés les plus courantes sont les valeurs pour les zones de texte et le texte des espaces réservés. En règle générale, si une zone de texte contient une seule expression, l’expression est la valeur de la propriété de zone de texte. Si une zone de texte contient plusieurs expressions, chaque expression est la valeur du texte d’espace réservé dans la zone de texte.  
@@ -50,7 +50,7 @@ ms.locfileid: "78921122"
 ![Exemple de format des expressions du Générateur de rapports](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
 
 
-## <a name="DisplayText"></a> Présentation des symboles de préfixe dans des expressions simples  
+## <a name="understanding-prefix-symbols-in-simple-expressions"></a><a name="DisplayText"></a> Présentation des symboles de préfixe dans des expressions simples  
 
 Les expressions simples utilisent des symboles pour indiquer si la référence est à un champ, un paramètre, une collection prédéfinie ou la collection ReportItems. Le tableau suivant montre des exemples de texte d’affichage et d’expression :  
   
@@ -61,7 +61,7 @@ Les expressions simples utilisent des symboles pour indiquer si la référence e
 |Champs prédéfinis|`[&ReportName]`|`=Globals!ReportName.Value`|  
 |Caractères littéraux utilisés pour le texte d’affichage|`\[Sales\]`|`[Sales]`|  
   
-##  <a name="References"></a> Écriture d’expressions complexes  
+##  <a name="writing-complex-expressions"></a><a name="References"></a> Écriture d’expressions complexes  
  Les expressions peuvent inclure des références à des fonctions, des opérateurs, des constantes, des champs, des paramètres, des éléments de collections prédéfinies, ainsi qu’à du code personnalisé incorporé ou à des assemblys personnalisés.  
   
  Le tableau suivant liste les types de références que vous pouvez inclure dans une expression :  
@@ -69,13 +69,13 @@ Les expressions simples utilisent des symboles pour indiquer si la référence e
 |Références|Description|Exemple|  
 |----------------|-----------------|-------------|  
 |Constantes|Décrit les constantes auxquelles vous pouvez accéder de manière interactive pour les propriétés qui demandent des valeurs de constante comme les couleurs de police.|`="Blue"`|  
-|Opérateurs|Décrit les opérateurs que vous pouvez utiliser pour combiner des références dans une expression. Par exemple, l’opérateur **&** est utilisé pour concaténer des chaînes.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
+|Operators|Décrit les opérateurs que vous pouvez utiliser pour combiner des références dans une expression. Par exemple, l’opérateur **&** est utilisé pour concaténer des chaînes.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
 |Collections prédéfinies|Décrit les collections prédéfinies que vous pouvez inclure dans une expression, comme `Fields`, `Parameters` et `Variables`.|`=Fields!Sales.Value`<br /><br /> `=Parameters!Store.Value`<br /><br /> `=Variables!MyCalculation.Value`|  
 |Fonctions d’agrégation et de rapport prédéfinies|Décrit les fonctions prédéfinies, comme `Sum` ou `Previous`, auxquelles vous pouvez accéder à partir d’une expression.|`=Previous(Sum(Fields!Sales.Value))`|  
 |Références à du code et des assemblys personnalisés dans les expressions dans le Générateur de rapports |Décrit comment vous pouvez accéder aux classes CLR prédéfinies `xref:System.Math` et `xref:System.Convert`, à d’autres classes CLR, aux fonctions de la bibliothèque runtime Visual Basic ou aux méthodes à partir d’un assembly externe.<br /><br /> Décrit comment vous pouvez accéder à du code personnalisé qui est incorporé dans votre rapport, ou que vous compilez et installez en tant qu’un assembly personnalisé sur le client de rapports et le serveur de rapports.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
-##  <a name="Valid"></a> Validation des expressions  
- Lorsque vous créez une expression pour une propriété d’élément de rapport spécifique, les références que vous pouvez inclure dans une expression dépendent des valeurs que la propriété d’élément de rapport peut accepter et de l’étendue dans laquelle la propriété est évaluée. Par exemple :  
+##  <a name="validating-expressions"></a><a name="Valid"></a> Validation des expressions  
+ Lorsque vous créez une expression pour une propriété d’élément de rapport spécifique, les références que vous pouvez inclure dans une expression dépendent des valeurs que la propriété d’élément de rapport peut accepter et de l’étendue dans laquelle la propriété est évaluée. Par exemple :  
   
 -   Par défaut, l’expression [Sum] calcule la somme des données qui sont dans l’étendue au moment où l’expression est évaluée. Pour une cellule de tableau, l’étendue dépend des appartenances aux groupes de lignes et de colonnes. 
   

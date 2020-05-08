@@ -10,10 +10,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 0481a09aaeac4f6c76c49d3a816ac880cdb9d60b
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114059"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
@@ -29,7 +29,7 @@ Une vignette est une capture instantanée de vos données, épinglée au tableau
 
 En plus des vignettes épinglées à partir de rapports, les *concepteurs* peuvent ajouter des vignettes autonomes directement sur le tableau de bord à l’aide de l’option **Ajouter une vignette**. Les vignettes autonomes incluent des zones de texte, des images, des vidéos, des données de streaming et du contenu web.
 
-Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](end-user-basic-concepts.md).
+Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI - Concepts de base](end-user-basic-concepts.md).
 
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interaction avec des vignettes dans un tableau de bord

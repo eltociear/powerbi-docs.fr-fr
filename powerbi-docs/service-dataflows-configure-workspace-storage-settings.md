@@ -10,13 +10,13 @@ ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 516d3a682b669400a015aaec101c7e79c14dbb44
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76889348"
 ---
-# <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de flux de données d’un espace de travail (préversion)
+# <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de dataflow d’espace de travail (préversion)
 
 Avec Power BI et les flux de données, vous pouvez stocker les fichiers de données et de définition de flux de données d’un espace de travail dans votre compte Azure Data Lake Storage Gen2. Les administrateurs d’espaces de travail peuvent pour cela configurer Power BI, suivant les étapes détaillées dans cet article. 
 
@@ -58,7 +58,7 @@ Nous avons vu comment créer un espace de travail. Vous pouvez également mettre
 
 Pour modifier un espace de travail, sélectionnez les points de suspension **(…)** , puis **Modifier l’espace de travail**. 
 
-![Modifier l’espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
+![Modifier l'espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
 Dans la fenêtre **Modifier l’espace de travail** qui s’affiche, développez **Avancé**, puis **activez** le paramètre **Stockage de flux de données (préversion)** . 
 
@@ -135,6 +135,6 @@ Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire so
 
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Définition du fichier modèle CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

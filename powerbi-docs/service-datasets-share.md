@@ -10,10 +10,10 @@ ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: ce8a404a53eebb88bbd72998f10fd94a649b8af8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872483"
 ---
 # <a name="share-a-dataset-preview"></a>Partager un jeu de données (préversion)
@@ -54,4 +54,4 @@ Quand vous avez un jeu de données partagé dans votre espace de travail, vous d
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

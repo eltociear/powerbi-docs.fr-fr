@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
 ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488429"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
@@ -31,7 +31,7 @@ Voici quelques opérations possibles avec les API Power BI.
 | Authentifiez-vous sur Power BI. | [S’authentifier sur Power BI ](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
-> Les API Power BI font encore référence aux espaces de travail en tant que groupes. Toutes les références à des groupes indiquent que vous utilisez des espaces de travail.
+> Les API Power BI font encore référence aux espaces de travail en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail.
 
 ## <a name="api-developer-tools"></a>Outils développeurs d’API
 

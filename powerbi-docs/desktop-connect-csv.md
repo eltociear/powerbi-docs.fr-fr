@@ -11,10 +11,10 @@ ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c5d817af65529506a0ee515be5e287a629d6ad54
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878551"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Se connecter à des fichiers CSV dans Power BI Desktop
@@ -52,8 +52,8 @@ Vous pouvez utiliser ces données dans Power BI Desktop pour créer des élémen
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
 

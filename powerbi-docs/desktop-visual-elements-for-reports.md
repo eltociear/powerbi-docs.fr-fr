@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 86728adbad8a96875fc21bb9fe5c5267a2ce6651
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79206352"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Utiliser des éléments visuels pour améliorer des rapports Power BI
@@ -60,7 +60,7 @@ Lorsque vous définissez la transparence l’arrière-plan de votre page sur plu
 Il est important de noter que la limite en pointillés ne s’affiche *que* lors de la modification de votre rapport et n’est *pas* visible pour les personnes qui consultent votre rapport publié, par exemple dans le **service Power BI**.
 
 > [!NOTE]
-> Si vous utilisez des arrière-plans de couleur foncée pour le papier peint et que vous définissez la couleur de texte en blanc ou dans une couleur très claire, n’oubliez pas que la fonctionnalité **Exporter au format PDF** n’inclut pas le papier peint : ainsi, les exportations avec des polices de couleur blanche seront pratiquement invisibles dans le fichier PDF exporté. Pour plus d’informations sur **l’exportation au format PDF**, consultez [Exporter au format PDF](desktop-export-to-pdf.md).
+> Si vous utilisez des arrière-plans de couleur foncée pour le papier peint et que vous définissez la couleur de texte en blanc ou dans une couleur très claire, n’oubliez pas que la fonctionnalité **Exporter au format PDF** n’inclut pas le papier peint : ainsi, les exportations avec des polices de couleur blanche seront pratiquement invisibles dans le fichier PDF exporté. Pour plus d’informations sur [l’exportation au format PDF](desktop-export-to-pdf.md), consultez **Exporter au format PDF**.
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Utilisation d’en-têtes de visuels améliorés dans les rapports Power BI
@@ -102,8 +102,8 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Se connecter aux données dans Power BI Desktop](desktop-connect-to-data.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 
