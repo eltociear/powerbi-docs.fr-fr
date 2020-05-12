@@ -11,10 +11,10 @@ ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871361"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visite guidée de l’éditeur de rapport de Power BI
@@ -60,11 +60,11 @@ La **partie supérieure du volet Visualisations** identifie le type du visuel ac
 
 Le **bas du volet Visualisations** comprend trois onglets :
 
-![Champs dans une visualisation](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Champs** Affiche les champs du visuel. Vous devrez peut-être faire défiler la page pour afficher tous les détails. Ce graphique utilise StoreNumberName et « This Year Sales ».
+Les ![Champs dans la visualisation](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Champs** affichent les champs du visuel. Vous devrez peut-être faire défiler la page pour afficher tous les détails. Ce graphique utilise StoreNumberName et « This Year Sales ».
 
 ![Icône en forme de rouleau à peinture](media/service-the-report-editor-take-a-tour/power-bi-paint-roller.png) **Format** Pour afficher le volet de mise en forme de la visualisation sélectionnée, sélectionnez l’icône en forme de rouleau à peinture.
 
-![Icône en forme de loupe](media/service-the-report-editor-take-a-tour/power-bi-magnifying-glass.png) **Analytique** Pour afficher le volet Analytique, sélectionnez l’icône Loupe.
+![Icône en forme de loupe](media/service-the-report-editor-take-a-tour/power-bi-magnifying-glass.png) **Analytics** Pour afficher le volet Analytique, sélectionnez l’icône Loupe.
 
 Le **volet Champs** liste toutes les tables disponibles dans le modèle de données. Lorsque vous développez une table, vous voyez les champs qu’elle contient. La coche de couleur jaune indique qu’au moins un champ de cette table se trouve dans la visualisation.
 

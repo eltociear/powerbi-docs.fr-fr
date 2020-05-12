@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2a8372a5c31e41b49746ebbea3ba4801eeac493
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113781"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866653"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -243,7 +243,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Membres ajoutés au groupe Power BI                      | AddGroupMembers                             |                                          |
 | Compte de stockage de dataflow attaché au locataire par l’administrateur | AdminAttachedDataflowStorageAccountToTenant | Non utilisée actuellement                       |
 | Jeu de données Power BI analysé                         | AnalyzedByExternalApplication               |                                          |
-| Rapport Power BI analysé                          | AnalyzeInExcel                              |                                          |
+| Rapport Power BI analysé                          | AnalyzeInExcel                              | Généré lorsque les utilisateurs interagissent avec le service. Le téléchargement du fichier `*.odc` ne crée pas d’événement d’audit.                                         |
 | Compte de stockage de dataflow attaché                 | AttachedDataflowStorageAccount              |                                          |
 | Jeu de données Power BI lié à la passerelle                | BindToGateway                               |                                          |
 | Actualisation de dataflow annulée                        | CancelDataflowRefresh                       |                                          |

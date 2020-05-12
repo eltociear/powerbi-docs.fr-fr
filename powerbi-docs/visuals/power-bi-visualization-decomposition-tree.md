@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885271"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865565"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI (préversion)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Le visuel de l’arborescence hiérarchique dans Power BI vous permet de visualiser les données sur plusieurs dimensions. Il agrège automatiquement les données et permet d'explorer vos dimensions dans n'importe quel ordre. Comme il s’agit également d’une visualisation à intelligence artificielle (IA), vous pouvez lui demander de trouver la prochaine dimension à explorer selon certains critères. Cela en fait un outil précieux pour l'exploration ad hoc et l'analyse de la cause racine.
@@ -29,6 +32,8 @@ Ce didacticiel utilise deux exemples :
 - Un scénario de chaîne d'approvisionnement qui analyse le pourcentage de produits en rupture de stock.  
 - Un scénario de vente qui décompose les ventes de jeux vidéo selon de nombreux facteurs tels que le genre de jeu et l'éditeur.
 
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
 
 ## <a name="get-started"></a>Commencer
 Sélectionnez l'icône de l'arborescence hiérarchique dans le volet Visualisations.

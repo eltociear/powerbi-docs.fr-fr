@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2e68b894c7f3e259fd2236d655d562257383433
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006322"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866561"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -63,8 +63,8 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
 
 5. Sur **Autorisations**, déterminez qui a accès à l’application, et ce que leurs utilisateurs peuvent faire avec elle. 
 
-    - Dans [Espaces de travail classiques](service-create-workspaces.md) : tout le monde dans votre organisation, des personnes spécifiques ou des groupes de sécurité Azure Active Directory (AAD).
-    - Dans les [espaces de travail de nouvelle expérience](service-create-the-new-workspaces.md) : des personnes spécifiques, des listes de distribution et des groupes de sécurité AAD, ainsi que des groupes Office 365. Tous les utilisateurs de l’espace de travail ont automatiquement accès à l’application pour cet espace de travail.
+    - Dans les [espaces de travail classiques](service-create-workspaces.md) : tout le personnel de votre organisation, certaines personnes ou des groupes de sécurité Azure Active Directory (Azure AD).
+    - Dans les [espaces de travail nouvelle expérience](service-create-the-new-workspaces.md) : certaines personnes, des listes de distribution et des groupes de sécurité Azure AD, ainsi que des groupes Office 365. Tous les utilisateurs de l’espace de travail ont automatiquement accès à l’application pour cet espace de travail.
     - Vous pouvez autoriser les utilisateurs de l’application à se connecter aux jeux de données sous-jacents de l’application en leur attribuant l’autorisation de génération. Ils pourront ainsi voir ces jeux de données quand ils rechercheront des jeux de données partagés. Vous trouverez dans cet article des informations supplémentaires sur la façon d’[autoriser les utilisateurs à se connecter aux jeux de données de l’application](#allow-users-to-connect-to-datasets).
     - Les utilisateurs disposant d’une autorisation de génération peuvent aussi être autorisés à copier les rapports de cette application vers un autre espace de travail. Vous trouverez dans cet article des informations supplémentaires sur la façon d’[autoriser les utilisateurs à copier des rapports dans l’application](#allow-users-to-copy-reports).
     

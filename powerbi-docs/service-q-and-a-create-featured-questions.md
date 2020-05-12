@@ -10,10 +10,10 @@ ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 1571589844abb8e9acf0bbb78eccf5664db9bf52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881119"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
@@ -31,7 +31,7 @@ Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets
 1. Sur le tableau de bord, sélectionnez la zone de questions Questions et réponses.   Notez que les Q&R sont déjà utiles en affichant une liste de termes qui figurent dans le jeu de données.
 2. Pour compléter cette liste, sélectionnez l’icône d’engrenage dans le coin supérieur droit de Power BI.  
    ![icône d’engrenage](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
-3. Sélectionnez **Paramètres** &gt; **Jeux de données** &gt; **Exemple Analyse de la vente au détail** &gt; **Questions exemplaires ds Q&R**.  
+3. Sélectionnez **Paramètres** &gt; **Jeux de données** &gt; **Exemple Analyse de la vente au détail** &gt; **Questions proposées par Questions et réponses**.  
 4. Sélectionnez **Ajouter une question**.
    
    ![menu Paramètres](media/service-q-and-a-create-featured-questions/power-bi-settings.png)

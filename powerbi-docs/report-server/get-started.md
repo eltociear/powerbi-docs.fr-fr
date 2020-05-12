@@ -4,17 +4,17 @@ description: Obtenez une vue d’ensemble de Power BI Report Server pour compren
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/22/2019
+ms.date: 04/29/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 26593f4869d6b8d2c1c206a8bedd3c0d214581b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859563"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613584"
 ---
 # <a name="what-is-power-bi-report-server"></a>Présentation de Power BI Report Server
 
@@ -23,7 +23,7 @@ Power BI Report Server est un serveur de rapports local avec un portail web dan
 ![Portail web de Power BI Report Server web](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Comparaison de Power BI Report Server 
-Power BI Report Server ressemble à la fois à SQL Server Reporting Services et au service en ligne Power BI, mais avec quelques différences. Comme le service Power BI, Power BI Report Server héberge des rapports Power BI (.PBIX), des fichiers Excel et des rapports paginés (.RDL). Comme Reporting Services, Power BI Report Server est installé localement. Les fonctionnalités de Power BI Report Server sont un sur-ensemble de Reporting Services : tout ce que vous pouvez faire dans Reporting Services, vous pouvez aussi le faire avec Power BI Report Server, avec en plus la prise en charge des rapports Power BI. Consultez [Comparer Power BI Report Server et le service Power BI](compare-report-server-service.md) pour plus d’informations.
+Power BI Report Server ressemble à la fois à SQL Server Reporting Services et au service en ligne Power BI, mais avec quelques différences. Comme le service Power BI, Power BI Report Server héberge des rapports Power BI (.pbix), des fichiers Excel et des rapports paginés (.rdl). Comme Reporting Services, Power BI Report Server est installé localement. Les fonctionnalités de Power BI Report Server sont un sur-ensemble de Reporting Services : tout ce que vous pouvez faire dans Reporting Services, vous pouvez aussi le faire avec Power BI Report Server, avec en plus la prise en charge des rapports Power BI. Consultez [Comparer Power BI Report Server et le service Power BI](compare-report-server-service.md) pour plus d’informations.
 
 ## <a name="licensing-power-bi-report-server"></a>Gestion des licences Power BI Report Server
 Power BI Report Server est disponible sous deux licences différentes : [Power BI Premium](../service-premium-what-is.md) et [SQL Server Enterprise](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
@@ -41,7 +41,7 @@ Selon vos autorisations, vous pouvez gérer le contenu dans le portail web. Vous
 En savoir plus sur le [portail web Power BI Report Server](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Rapports Power BI
-Vous créez des rapports Power BI (.PBIX) avec la version Power BI Desktop optimisée pour le serveur de rapports. Puis vous publiez et affichez ces rapports dans le portail web de votre propre environnement.
+Vous créez des rapports Power BI (.pbix) avec la version Power BI Desktop optimisée pour le serveur de rapports. Puis vous publiez et affichez ces rapports dans le portail web de votre propre environnement.
 
 ![Rapports Power BI reports dans Power BI Report Server](media/get-started/powerbi-reports.png)
 
@@ -50,7 +50,7 @@ Un rapport Power BI est un affichage sous plusieurs angles d’un modèle de don
 Pour plus d’informations, consultez [Installation de Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Rapports paginés
-Les rapports paginés (.RDL) sont des rapports de style document avec des visualisations, dans lesquels des tables se développent horizontalement et verticalement pour afficher toutes les données et page après page, selon les besoins. Ils conviennent bien pour la génération de documents à disposition fixe, précis au pixel près, optimisés pour l’impression, tels que des fichiers PDF et Word. 
+Les rapports paginés (.rdl) sont des rapports de style document avec des visualisations, dans lesquels des tables se développent horizontalement et verticalement pour afficher toutes les données et page après page, selon les besoins. Ils conviennent bien pour la génération de documents à disposition fixe, précis au pixel près, optimisés pour l’impression, tels que des fichiers PDF et Word. 
 
 ![Rapports paginés dans Power BI Report Server](media/get-started/paginated-reports.png)
 
