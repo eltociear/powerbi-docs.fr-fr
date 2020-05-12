@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802092"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841707"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,14 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="april-2020"></a>Avril 2020
+
+### <a name="sharing-from-workspaces-is-now-available"></a>Le partage à partir d’espaces de travail est maintenant disponible
+Nous avons ajouté la fonctionnalité de partage de rapports et de tableaux de bord à partir d’espaces de travail. Vous pouvez maintenant partager votre contenu à partir de « Mon espace de travail » et d’autres espaces de travail si leur propriétaire le permet, tout comme dans le service Power BI. 
+
+### <a name="dashboards-now-support-full-screen-mode-ios-and-android"></a>Les tableaux de bord prennent maintenant en charge le mode plein écran (iOS et Android)
+Vous pouvez maintenant afficher vos tableaux de bord en mode plein écran, ce qui offre plus d’espace pour visualiser leur contenu. 
 
 ## <a name="march-2020"></a>Mars 2020
 
@@ -871,4 +879,4 @@ Améliorations apportées dans les applications mobiles Power BI : Android, iOS
 * Amélioration du rendu des mosaïques en mode focus pour optimiser l’espace d’écran.
 * Amélioration de l’expérience utilisateur lors de l’accès aux tableaux de bord à l’aide de la sécurité basée sur les rôles. 
 * Une nouvelle fonctionnalité vous permet de parcourir les vignettes de tableau de bord et de les explorer directement en mode focus sans avoir besoin de revenir au tableau de bord pour sélectionner la vignette suivante.
-* Autres améliorations de stabilité et de performances. 
+* Autres améliorations de stabilité et de performances.

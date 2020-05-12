@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: b5865219d84c8fa388f297824550fd715f0c2923
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841914"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866844"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bonnes pratiques pour optimiser Questions et réponses dans Power BI
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI.
@@ -195,8 +195,10 @@ Cette étape s’applique spécifiquement à Q&A (et non aux rapports Power BI e
 
 Cette étape peut être importante. Même avec des noms de table et de colonne simples, les utilisateurs de Questions et réponses posent des questions à l’aide d’un vocabulaire spontané. Ils ne choisissent pas dans une liste prédéfinie de colonnes. Plus vous ajoutez de synonymes justes, meilleure en sera l’expérience de vos utilisateurs avec votre rapport. Pour ajouter des synonymes, dans Power BI Desktop, accédez à la vue Modèle, sélectionnez l’onglet Modélisation et sélectionnez un champ ou une table. Le volet Propriétés affiche la zone **Synonymes**, dans laquelle vous pouvez ajouter des synonymes.
 
-
-
-![Synonymes dans le volet Propriétés de Questions et réponses](media/qna-modelling-pane-synonyms.png)
+![Synonymes dans le volet Propriétés de Questions et réponses](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Soyez prudent lorsque vous ajoutez des synonymes. L’ajout d’un même synonyme à plusieurs colonnes ou tables introduit une ambiguïté. Questions et réponses utilise un contexte dès que possible pour choisir entre des synonymes ambigus, mais toutes les questions ne fournissent pas suffisamment de contexte. Par exemple, lorsque votre utilisateur demande de « dénombrer les clients », si vous disposez de trois choses avec le synonyme « client » dans votre modèle, les utilisateurs peuvent ne pas obtenir la réponse qu’ils attendent. Dans ce cas, assurez-vous que le synonyme primaire est unique, car c’est lui qui est utilisé dans la reformulation. L’application peut signaler l’ambiguïté à l’utilisateur (par exemple, la reformulation de « montrer le nombre d’enregistrements clients archivés ») et lui suggérer de reformuler sa question.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+[Présentation de Questions et réponses dans Power BI](q-and-a-intro.md)

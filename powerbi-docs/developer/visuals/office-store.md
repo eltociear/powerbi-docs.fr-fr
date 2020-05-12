@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621455"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613554"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -101,9 +101,11 @@ Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espac
 
 ## <a name="tracking-submission-status-and-usage"></a>Suivi de l’utilisation et de l’état de la soumission
 
-Vous pouvez passer en revue les [stratégies de validation](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Vous pouvez passer en revue les [stratégies de validation](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-Après l’envoi de la soumission, vous pouvez afficher son état dans le [tableau de bord de l’application](https://sellerdashboard.microsoft.com/Application/Summary/).
+* Après l’envoi de la soumission, vous pouvez afficher son état dans le [tableau de bord de l’application](https://sellerdashboard.microsoft.com/Application/Summary/).
+
+* Pour savoir quand votre visuel sera disponible au téléchargement à partir d’AppSource, consultez la [chronologie de publication](power-bi-custom-visuals-certified.md#publication-timeline) des visuels Power BI.
 
 ## <a name="certify-your-visual"></a>Certifier votre visuel
 

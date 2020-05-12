@@ -10,7 +10,7 @@
     - name: Concepts
       expanded: true
       items:
-        - name: Organiser votre travail
+        - name: Organiser le travail dans des espaces de travail
           href: ../service-new-workspaces.md
         - name: Surveiller l’utilisation dans des espaces de travail classiques
           href: ../service-usage-metrics.md
@@ -73,7 +73,7 @@
               href: ../service-analyze-in-excel.md
             - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
               href: ../desktop-troubleshooting-analyze-in-excel.md
-            - name: 'Erreur : impossible de trouver des données dans votre classeur Excel'
+            - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
               href: ../service-admin-troubleshoot-excel-workbook-data.md
             - name: "Power Automate et Power\_BI"
               href: ../service-flow-integration.md

@@ -10,10 +10,10 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 8c58c85ea46f9884586e1ff73f1ef9f7b1db9cdd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860565"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Réduire la taille d’un classeur Excel pour l’afficher dans Power BI
@@ -50,7 +50,7 @@ Si vous devez importer des données dans Excel, suivez ces conseils :
 * **Dans Power Query** : Effacez la zone **Charger dans la feuille de calcul** .
   
   Les données sont importées uniquement dans le modèle de données, et pas dans des feuilles de calcul Excel.
-* **À partir de l’onglet Données Excel**, si vous avez précédemment coché **Table** dans l’assistant d’importation : Accédez à **Connexions existantes** \> cliquez sur la connexion \> **Créer uniquement la connexion**. Supprimez le ou les tableaux d’origine créés durant l’importation initiale.
+* **À partir de l’onglet Données Excel**, si vous avez précédemment coché **Table** dans l’assistant d’importation : Accédez à **Connexions existantes** \>, cliquez sur la connexion \> **Créer uniquement la connexion**. Supprimez le ou les tableaux d’origine créés durant l’importation initiale.
 * **À partir de l’onglet Données Excel**: ne cochez pas **Table** dans la zone **Importer des données** .
 
 ## <a name="workbook-size-optimizer"></a>Optimiseur de taille de classeur

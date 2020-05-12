@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f7e21f5b9f2ac01fec19a7113cf595464619a0e0
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381281"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841983"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -50,7 +50,7 @@ Le rôle d’administrateur du service Power BI n’accorde pas la possibilité 
 
 ## <a name="administrative-tasks"></a>Tâches d’administration
 
-Le tableau suivant décrit les nombreuses tâches effectuées par les administrateurs pour prendre en charge le client Power BI de leur organisation.
+Le tableau suivant décrit les nombreuses tâches effectuées par les administrateurs pour prendre en charge Power BI dans leur organisation.
 
 | **Zone de tâches** | **Tâches courantes** |
 | --- | --- |
@@ -78,7 +78,7 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Nous espérons que cet article vous aura donné un rapide éclairage sur le travail de l’administrateur de Power BI et les rôles, tâches et outils impliqués. Nous vous recommandons de consulter les deux rubriques suivantes pour approfondir votre compréhension.
+Nous espérons que cet article vous aura donné un rapide éclairage sur le travail de l’administrateur de Power BI et les rôles, tâches et outils impliqués. Pour plus d’informations, nous vous recommandons les articles suivants.
 
 - [Utiliser le portail d’administration de Power BI](service-admin-portal.md)
 - [Indications concernant les paramètres d’administration de locataire](guidance/admin-tenant-settings.md)

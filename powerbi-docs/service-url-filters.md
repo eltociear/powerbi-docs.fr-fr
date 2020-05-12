@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 05/04/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 2c9b7a5d13f2bc0f74d82dd2ad78efdb76ff6a14
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273245"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781430"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -156,7 +156,9 @@ Il existe d'autres différences entre V3 et V4. OData V3 ne prend pas en charge 
 
 ## <a name="special-characters-in-url-filters"></a>Caractères spéciaux dans les filtres d’URL
 
-Les caractères spéciaux et les espaces nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* commençant par un trait de soulignement et X ( **_x**), suivi du code **Unicode** à quatre chiffres, puis par un autre trait de soulignement. Si le code Unicode a moins de quatre caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
+### <a name="special-characters-in-table-and-column-names"></a>Caractères spéciaux dans les noms de tables et de colonnes
+
+Les caractères spéciaux et les espaces dans les noms de tables et de colonnes nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* commençant par un trait de soulignement et X ( **_x**), suivi du code **Unicode** à quatre chiffres, puis par un autre trait de soulignement. Si le code Unicode a moins de quatre caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
 
 |Identificateur  |Unicode  | Codage pour Power BI  |
 |---------|---------|---------|
@@ -169,6 +171,24 @@ Table_x0020_Name/Column_x002B_Plus eq 3 ![visuel de table affichant des caractè
 
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters2.png)
+
+### <a name="special-characters-in-values"></a>Caractères spéciaux dans les valeurs
+
+Les filtres d’URL prennent déjà en charge tous les caractères spéciaux dans les valeurs de champs, à l’exception des guillemets simples ('). C’est le seul caractère que vous devez échapper. Pour rechercher un caractère guillemet simple, utilisez deux guillemets simples (''). 
+
+Par exemple :
+
+- `?filter=Table/Name eq 'O''Brien'` devient : 
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-obrien.png" alt-text="Le nom est O’Brien":::
+
+- `?filter=Table/Name eq 'Lee''s Summit'` devient :
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lee's Summit":::
+
+- L’opérateur `in` prend également en charge cet échappement : `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` devient :
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lee's Summit ou O'Brien":::
 
 ## <a name="use-dax-to-filter-on-multiple-values"></a>Utiliser DAX pour filtrer sur plusieurs valeurs
 

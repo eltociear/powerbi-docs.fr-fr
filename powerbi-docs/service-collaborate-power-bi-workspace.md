@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873172"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Collaborer dans un espace de travail classique
@@ -65,7 +65,7 @@ La collaboration dans Office 365 débute dans l’espace de travail classique d
 2. En savoir plus sur les [conversations de groupe dans Outlook pour Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Planifier un événement dans le calendrier de l’espace de travail de groupe
-1. Sélectionnez **Plus d’options** (...) en regard du nom de votre espace de travail \> **Calendrier**. 
+1. Sélectionnez **Plus d’options** (...) en regard du nom d’espace de travail \> **Calendrier**. 
    
    ![Onglet Calendrier](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
