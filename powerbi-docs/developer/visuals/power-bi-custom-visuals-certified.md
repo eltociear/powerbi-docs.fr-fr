@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 2dee596648c9921cefab6903167e780bfacb122e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b759d19046ddb375646743a50025689ab9a566c0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113897"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613531"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -82,8 +82,6 @@ Utilisez la dernière version de [powerbi-visuals-tools](https://www.npmjs.com/p
 
 Vous devez compiler votre visuel Power BI avec `pbiviz package`. Si vous utilisez vos propres scripts de build, fournissez une commande de build personnalisée `npm run package`.
 
-
-
 ### <a name="source-code-requirements"></a>Exigences relatives au code source
 
 Vérifiez que vous suivez la liste des stratégies de [certification supplémentaires des visuels Power BI](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Si votre envoi ne suit pas ces instructions, l’e-mail de rejet de l’Espace partenaires comportera les numéros de stratégie indiqués dans ce lien.
@@ -150,6 +148,25 @@ Une fois qu’un visuel Power BI est certifié, il obtient un badge désigné qu
     ![Visuel Power BI certifié - Interface Power BI](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * Vous pouvez afficher uniquement les visuels Power BI certifiés, en sélectionnant l’option de filtre *Certifié Power BI*.
+
+## <a name="publication-timeline"></a>Chronologie de la publication
+
+Le processus de déploiement sur AppSource peut prendre un certain temps. Votre visuel Power BI sera disponible au téléchargement à partir d’AppSource une fois ce processus terminé.
+
+### <a name="when-will-users-be-able-to-download-my-visual"></a>Quand les utilisateurs pourront-ils télécharger mon visuel ?
+
+* Si vous avez envoyé un visuel Power BI pour la première fois, les utilisateurs peuvent le télécharger quelques heures après que vous avez reçu un e-mail d’AppSource.
+
+* Si vous avez envoyé une mise à jour à un visuel Power BI existant, les utilisateurs peuvent la télécharger dans un délai d’un mois.
+
+    >[!NOTE]
+    > Le champ *Version* dans AppSource est mis à jour à la date où votre visuel Power BI a été approuvé par AppSource, soit environ une semaine après son envoi. Les utilisateurs peuvent télécharger le visuel mis à jour, mais les fonctionnalités mises à jour ne prendront pas effet. Les nouvelles fonctionnalités de votre visuel affectent les rapports de l’utilisateur au bout d’un mois environ. 
+
+### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>Quand mon visuel Power BI affichera-t-il un badge de certification ?
+
+* Si vous avez envoyé un visuel Power BI pour la première fois, le badge de certification s’affiche dans la journée suivant la réception de l’e-mail d’approbation d’AppSource.
+
+* Si vous demandez la certification d’un visuel Power BI existant, le badge de certification sera visible dans le mois suivant votre envoi.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

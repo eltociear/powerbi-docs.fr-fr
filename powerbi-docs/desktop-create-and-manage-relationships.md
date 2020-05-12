@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76710075"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866331"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses avec les données de toutes ces tables. Les relations entre ces tables sont nécessaires pour calculer des résultats précis et pour afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Vous pouvez cependant parfois être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -271,7 +271,7 @@ Dans le cas du filtrage croisé à sens unique, si vous créez un rapport qui to
 
  ![Direction du filtrage croisé](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-La spécification du filtrage s’étendra de **CompanyProject** à **CompanyEmployee** (comme illustré dans l’image ci-dessous), mais ne remontera pas jusqu’à **CompanyEmployee**. 
+La spécification du filtrage s’étendra de **CompanyProject** à **ProjectHours** (comme l’illustre l’image ci-dessous), mais ne remontera pas jusqu’à **CompanyEmployee**. 
 
  ![Exemple de filtrage croisé](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 

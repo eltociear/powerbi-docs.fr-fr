@@ -7,25 +7,30 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 356d738795f8bf99ba1e2f8dfc705b23f52a6d5e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762436"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865250"
 ---
 # <a name="create-and-use-funnel-charts"></a>Créer et utiliser des graphiques en entonnoir
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, avec l’entonnoir de ventes Lead \> Qualified Lead \> Prospect \> Contract \> Close (Prospect > Prospect qualifié > Client potentiel > Contrat > Clôture), vous effectuez le suivi des clients tout au long des étapes.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
+Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, un entonnoir de ventes qui effectue le suivi des clients à travers des étapes : Lead \> Qualified Lead \> Prospect \> Contract \> Close.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
 
 Chaque étape de l’entonnoir représente un pourcentage du total. C’est pourquoi un graphique en entonnoir a généralement la forme d’un entonnoir, où la première étape est la plus large et chaque étape suivante est plus étroite que l’étape précédente.  Un entonnoir en forme de poire est également utile, car il peut indiquer un problème dans le processus.  Mais le plus souvent, la première étape (l’étape de départ) est la plus large.
 
 ![exemple de graphique en entonnoir bleu](media/power-bi-visualization-funnel-charts/funnelplain.png)
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
 
 ## <a name="when-to-use-a-funnel-chart"></a>Quand faut-il utiliser un graphique en entonnoir ?
 Les graphiques en entonnoir sont conseillés :
@@ -60,7 +65,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse des opportunités](h
 
 1. Ouvrez le **fichier PBIX de l’exemple Analyse des opportunités** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Select ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
 
 
 ## <a name="create-a-basic-funnel-chart"></a>Créer un graphique en entonnoir simple
@@ -99,7 +104,7 @@ La mise en surbrillance d’une barre dans un graphique en entonnoir entraîne l
 1. Dans l’entonnoir, sélectionnez la barre **Proposal** (Proposition). Cela met en surbrillance croisée les autres visualisations sur la page. Utilisez la touche CTRL pour sélectionner simultanément plusieurs éléments.
    
    ![courte vidéo montrant les interactions des visuels](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](../service-reports-visual-interactions.md)
+2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](../service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

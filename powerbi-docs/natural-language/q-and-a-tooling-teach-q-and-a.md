@@ -1,19 +1,19 @@
 ---
 title: Enseigner à Questions et réponses dans Power BI à comprendre les questions et les termes
 description: Guide pratique pour utiliser Questions et réponses dans Power BI pour explorer vos données
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/21/2020
+ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 695ad9143aa7074e079ae8606a9ad0eb6f6c964f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e5b870201943b93bfdaec2881005785c2f3c470b
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874922"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865775"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Enseigner à Questions et réponses dans Power BI à comprendre les questions et les termes
 
@@ -26,7 +26,7 @@ Dans la section **Enseigner à Questions et réponses** de la configuration de Q
 
 1. Dans Power BI Desktop, dans le ruban **Modélisation**, sélectionnez **Configuration de Questions et réponses** > **Enseigner à Questions et réponses**.
 
-    ![Enseigner à Questions et réponses - Synonyme en rouge](media/qna-tooling-teach-synonym-red.png)
+    ![Enseigner à Questions et réponses - Synonyme en rouge](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
 
 2. Tapez une phrase contenant un terme que Questions et réponses ne reconnaît pas et sélectionnez **Soumettre**.
 
@@ -36,7 +36,7 @@ Dans la section **Enseigner à Questions et réponses** de la configuration de Q
     
 3. Sous **Définir les termes que Questions et réponses ne comprend pas**, fournissez une définition.
 
-    ![Enseigner à Questions et réponses - Aperçu des synonymes](media/qna-tooling-teach-fixpreview.png)
+    ![Enseigner à Questions et réponses - Aperçu des synonymes](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
 
 4. Sélectionnez **Enregistrer** pour afficher un aperçu du visuel mis à jour.
 
@@ -61,7 +61,7 @@ Grâce aux connaissances de Microsoft Office, Questions et réponses détecte au
 
 Vous remplissez la zone avec le terme provenant de vos données.
 
-![Enseigner à Questions et réponses - Invite à taper un synonyme](media/qna-tooling-synonym-prompt.png)
+![Enseigner à Questions et réponses - Invite à taper un synonyme](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Si vous fournissez autre chose qu’un champ du modèle de données, vous risquez d’obtenir des résultats indésirables.
 
@@ -73,17 +73,26 @@ Parfois, il se peut que vous souhaitiez définir des termes qui agissent comme u
 
 Vous remplissez la zone avec la condition.
 
-![Enseigner à Questions et réponses - Invite à taper un synonyme](media/qna-tooling-adjectives.png)
+![Enseigner à Questions et réponses - Invite à taper un synonyme](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Voici quelques exemples de conditions que vous pouvez définir :
 
-- « Pays » qui est « É.U. »
-- « Pays » qui n’est pas « É.U. »
-- « Poids » > 2000
-- « Poids » = 2000
-- « Poids » < 2000
+- Pays égal à EUA
+- Pays différent de EUA
+- Produits > 100
+- Produits supérieur à 100
+- Produits = 100
+- Produits égal à 100
+- Produits < 100
+- Produits inférieur à 100
 
-Vous ne pouvez définir qu’une condition unique dans les outils. Pour définir des conditions plus complexes, utilisez DAX pour créer une colonne calculée, puis utilisez la section des outils pour créer une condition unique pour cette colonne calculée. Les mesures ne sont pas prises en charge. Utilisez des colonnes calculées à la place.
+Dans ces exemples, « Produits » peut être soit un nom de colonne, soit une mesure. 
+
+Vous pouvez également spécifier une agrégation dans l’expression Questions et réponses proprement dite. Par exemple, si les « produits populaires » sont des produits dont au moins 100 unités ont été vendues, vous pouvez définir les produits pour lesquels « somme des unités vendues > 100 » comme étant populaires.  
+
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Définition de « produits populaires »":::
+
+Vous ne pouvez définir qu’une condition unique dans les outils. Pour définir des conditions plus complexes, créez une colonne ou une mesure calculée avec DAX, puis une condition unique pour cette colonne ou cette mesure avec la section des outils.
 
 ## <a name="manage-terms"></a>Gérer les termes
 
@@ -93,10 +102,8 @@ Une fois que vous avez fourni des définitions, vous pouvez revenir en arrière 
 
 2. Supprimez tous les termes que vous ne voulez plus. Actuellement, vous ne pouvez pas modifier les termes. Pour redéfinir un terme, supprimez-le et définissez-le.
 
-    ![Questions et réponses - Gérer les termes](media/qna-manage-terms.png)
+    ![Questions et réponses - Gérer les termes](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Il existe diverses bonnes pratiques permettant d’améliorer le moteur de langage naturel. Pour plus d’informations, consultez l’article suivant :
-
-* [Bonnes pratiques pour Questions et réponses](q-and-a-best-practices.md)
+Il existe diverses bonnes pratiques permettant d’améliorer le moteur de langage naturel. Pour plus d’informations, consultez [Meilleures pratiques de Questions et réponses](q-and-a-best-practices.md).

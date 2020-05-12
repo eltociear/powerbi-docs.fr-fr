@@ -3,32 +3,28 @@ title: Visuels d’indicateur de performance clé (KPI)
 description: Créer des visuels d’indicateur de performance clé (KPI) dans Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6EpqaO0
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d21fc3a2e585922e65e1385ed1fc436a6dbcf22
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7f865c53a1a47ad53137f0e7659917689243b914
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76974984"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865166"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Créer des visuels d’indicateur de performance clé (KPI)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performance clé (KPI), consultez [Indicateurs de performance clés (KPI) dans PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-Vous pouvez écouter Will qui vous montre comment créer des éléments visuels de métrique uniques : jauges, cartes et indicateurs de performance clés.
-   > [!NOTE]
-   > Cette vidéo utilise une version antérieure de Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-kpi"></a>Quand utiliser un indicateur de performance clé ?
 
@@ -44,7 +40,7 @@ Un concepteur base le visuel d’un indicateur de performance clé (KPI) sur une
 
 Un jeu de données d’indicateurs de performances clés doit contenir des valeurs cibles pour un indicateur de performance clé. Si votre jeu de données n’en contient pas, vous pouvez créer des objectifs en ajoutant une feuille Excel contenant des objectifs à votre modèle de données ou fichier PBIX.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
@@ -55,6 +51,9 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 1. Ouvrez le **fichier .PBIX de l’exemple Analyse de la vente au détail** dans la vue de rapport. ![Capture d’écran de l’icône de la vue de rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Sélectionnez **+** pour ajouter une nouvelle page. ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
 
 ## <a name="how-to-create-a-kpi"></a>Création d’un indicateur de performance clé
 

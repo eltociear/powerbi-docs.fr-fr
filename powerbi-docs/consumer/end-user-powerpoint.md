@@ -3,18 +3,19 @@ title: Exporter des rapports de Power BI vers PowerPoint
 description: Découvrez comment exporter un rapport Power BI vers PowerPoint.
 author: mihart
 ms.reviewer: ''
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 4a93bbc0d5d8014e11fb59129b22b5493def0ac2
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377159"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841101"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 
@@ -22,7 +23,9 @@ ms.locfileid: "79377159"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Avec Power BI, vous pouvez publier votre rapport dans Microsoft PowerPoint et créer facilement un ensemble de diapositives basées sur votre rapport Power BI. Quand vous exportez vers PowerPoint, voici ce qui se produit :
+![illustration des logos Power BI et PowerPoint](media/end-user-powerpoint/logos.png)
+
+Avec le service Power BI (app.powerbi.com), vous pouvez publier votre rapport dans Microsoft PowerPoint et créer facilement un ensemble de diapositives basées sur votre rapport Power BI. Quand vous exportez vers PowerPoint, voici ce qui se produit :
 
 * Chaque page du rapport Power BI devient une diapositive individuelle dans PowerPoint.
 * Chaque page du rapport Power BI est exportée en tant qu’image haute résolution dans PowerPoint.
@@ -30,6 +33,10 @@ Avec Power BI, vous pouvez publier votre rapport dans Microsoft PowerPoint et c
 * Un lien est créé dans PowerPoint vers le rapport Power BI.
 
 L’exportation d’un **rapport Power BI** dans **PowerPoint** est rapide. Suivez les étapes décrites dans la section suivante.
+
+Vous pouvez également copier des visuels spécifiques dans le service Power BI et les coller dans PowerPoint. Sélectionnez l’icône **Copier en tant qu’image** pour copier le visuel dans votre Presse-papiers. Ensuite, ouvrez PowerPoint et collez le visuel.
+
+![Sélectionner Copier en tant qu’icône d’image](media/end-user-powerpoint/power-bi-copy.png)
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Exporter votre rapport Power BI vers PowerPoint
 Dans le **service Power BI**, sélectionnez un rapport pour l’afficher sur le canevas. Vous pouvez également sélectionner un rapport dans la page d’**Accueil**, de la page **Applications** ou dans tout autre conteneur du volet de navigation.
@@ -77,12 +84,13 @@ Quand vous accédez à une diapositive, vous voyez que chaque page du rapport es
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter vers PowerPoint**.
 
-* Les éléments visuels R et Pyhton ne sont actuellement pas pris en charge. Tout visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
+
+* Le processus d’exportation du rapport vers PowerPoint peut prendre quelques minutes : soyez patient. Les facteurs qui peuvent affecter la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.
 * Les visuels Power BI qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels personnalisés certifiés, notamment concernant la manière de certifier un visuel personnalisé, consultez [Obtenir un visuel personnalisé certifié](../developer/power-bi-custom-visuals-certified.md). Les visuels personnalisés qui n’ont pas été certifiés ne sont pas pris en charge. Ils sont exportés en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
-* L’élément visuel ESRI n'est pas pris en charge
+* Les filtres d’URL ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
+* Le [visuel ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) n'est pas pris en charge
 * Les rapports contenant plus de 30 pages ne peuvent pas être exportés actuellement.
 * Les visuels avec des barres de défilement sont exportés dans leur état par défaut. Dans PowerPoint, le visuel affiche uniquement la partie supérieure des données. Le défilement n’y est pas disponible, car chaque diapositive est une image. 
-* Le processus d’exportation du rapport vers PowerPoint peut prendre quelques minutes : soyez patient. Les facteurs qui peuvent affecter la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.
 * Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, il est probable que l’administrateur de votre locataire ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
 * Les images en arrière-plan sont rognées en fonction du cadre englobant du graphique. Nous vous recommandons de supprimer les images en arrière-plan avant d’exporter vers PowerPoint.
 * Les pages dans PowerPoint sont toujours créées dans la taille standard 9:16, quelles que soient les tailles de page ou dimensions d’origine dans le rapport Power BI.
@@ -93,7 +101,10 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation PowerPoint. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
 * **L’heure de téléchargement** qui apparaît sur la diapositive de couverture du fichier PowerPoint exporté est définie en fonction du fuseau horaire de l’ordinateur au moment de l’exportation.
 * Lors de l’exportation au format PPTX, la police personnalisée des thèmes utilisés dans les rapports est remplacée par une police par défaut.
-* Les filtres d’URL ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
+* Les visuels créés à l’aide de R et de Python ne sont pas pris en charge actuellement. Tout visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que le visuel n’est pas pris en charge.
+
+
 
 ## <a name="next-steps"></a>Étapes suivantes
+[Copier les visuels en tant qu’images statiques](../power-bi-visualization-copy-paste.md)    
 [Imprimer un rapport](end-user-print.md)

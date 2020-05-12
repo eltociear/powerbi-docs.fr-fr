@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 04/30/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
-ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
+ms.openlocfilehash: 386fefeb18e3b365c95819de1956f6739b547137
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80361880"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613623"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -70,7 +70,7 @@ Le filtre sur la colonne de date sert à répartir dynamiquement les données da
 
 #### <a name="query-folding"></a>Pliage de requêtes
 
-Il est important que le filtre de partition soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le pliage de requêtes. La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob, le web et les flux OData. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
+Il est important que le filtre de partition soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le pliage de requêtes. La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob et les flux web. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
 
 Étant donné les différents niveaux de prise en charge du pliage de requêtes pour chaque source de données, il est recommandé de vérifier que la logique de filtre est incluse dans les requêtes sources. Pour faciliter l’opération, Power BI Desktop tente d’effectuer cette vérification pour vous. S’il est impossible de l’effectuer, un avertissement s’affiche dans la boîte de dialogue de l’actualisation incrémentielle lors de la définition de la stratégie d’actualisation incrémentielle. Les sources de données basées sur SQL, comme SQL, Oracle et Teradata, peuvent se fier à cet avertissement. Les autres sources de données peuvent ne pas être en mesure d’effectuer la vérification sans suivi des requêtes. Si Power BI Desktop ne peut pas confirmer, l’avertissement suivant s’affiche. Si vous voyez cet avertissement et que vous souhaitez vérifier que le Query Folding nécessaire se produit, vous pouvez utiliser la fonctionnalité Diagnostics de requête ou suivre les requêtes reçues par la base de données source.
 

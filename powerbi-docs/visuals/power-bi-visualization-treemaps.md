@@ -3,21 +3,22 @@ title: Graphiques de compartimentage dans Power BI
 description: Graphiques de compartimentage dans Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b70e9611b22f1df20d39cdbd338fd5b6bfe1b43d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 189cc784577df277b0b0517253699ae06842b30c
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880743"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866883"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -39,14 +40,6 @@ Dans la branche **Urban** ci-dessus, un grand nombre de vêtements **VanArsdel**
 
 Vous pourriez ainsi comparer le nombre d’articles vendus dans les autres catégories de vêtements d’après la taille et le nuance de chaque nœud feuille : plus le rectangle est grand et sombre, plus les ventes sont élevées.
 
-Vous souhaitez d’abord regarder une personne créer un treemap ? Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.
-
-   > [!NOTE]
-   > Cette vidéo utilise une version antérieure de Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-treemap"></a>Quand faut-il utiliser un treemap ?
 
@@ -75,6 +68,10 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 1. Ouvrez le **fichier PBIX de l’exemple Analyse de la vente au détail** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
+
 
 
 Une fois que vous obtenez le jeu de données **Retail Analysis Sample (Analyse de la vente au détail)** , vous pouvez commencer.

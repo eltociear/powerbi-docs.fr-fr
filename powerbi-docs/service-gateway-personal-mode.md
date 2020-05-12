@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: ee93635abdff63c98eeaaca24640ac229a4dc97c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699265"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Utiliser des passerelles personnelles dans Power BI
@@ -36,7 +36,7 @@ Le tableau suivant décrit les différences entre une passerelle de données loc
 |Installation seulement en tant qu’administrateur de l’ordinateur |Oui |Non |
 |Gestion centralisée de la passerelle et de la source de données |Oui |Non |
 |Importer des données et planifier l’actualisation |Oui |Oui |
-|Prise en charge de DirectQuery |Oui |Non |
+|Support DirectQuery |Oui |Non |
 |Prise en charge de LiveConnect pour Analysis Services |Oui |Non |
 
 ## <a name="install-the-on-premises-data-gateway-personal-mode"></a>Installer la passerelle de données locale (mode personnel)
@@ -73,27 +73,27 @@ La fonctionnalité Combinaison rapide sur une passerelle personnelle vous permet
 
 ## <a name="frequently-asked-questions-faq"></a>Foire aux questions (FAQ)
 
-**Question :** Puis-je exécuter la passerelle de données locale (mode personnel) côte à côte avec la passerelle de données locale (version Enterprise de la passerelle) ?
+**Question :** Puis-je exécuter la passerelle de données locale (mode personnel) côte à côte avec la passerelle de données locale (version Enterprise de la passerelle) ?
   
 **Réponse :** Oui, les deux passerelles peuvent s’exécuter simultanément.
 
-**Question :** Est-il possible d’utiliser la passerelle de données locale (mode personnel) en tant que service ?
+**Question :** Est-il possible d’utiliser la passerelle de données locale (mode personnel) en tant que service ?
   
 **Réponse :** Non. La passerelle de données locale (mode personnel) peut uniquement être exécutée en tant qu’application. Si vous devez utiliser la passerelle en tant que service et/ou en mode administrateur, utilisez la [passerelle de données locale](/data-integration/gateway/service-gateway-onprem) (version Enterprise de la passerelle).
 
-**Question :** Quelle est la fréquence de mise à jour de la passerelle de données locale (mode personnel) ?
+**Question :** Quelle est la fréquence de mise à jour de la passerelle de données locale (mode personnel) ?
   
 **Réponse :** nous prévoyons de mettre à jour la passerelle tous les mois.
 
-**Question :** Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
+**Question :** Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
   
 **Réponse :** plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la passerelle de données locale (mode personnel) sur un ordinateur différent de celui sur lequel vous avez installé votre Passerelle Power BI – Personal. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Pour mettre à jour vos informations d’identification dans le service Power bi, sélectionnez l’icône d’engrenage, puis **Paramètres** > **Jeux de données**. Recherchez le jeu de données en question, puis sélectionnez **Informations d’identification de la source de données**.
 
-**Question :** Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
+**Question :** Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
   
 **Réponse :** La mise à niveau de la passerelle personnelle vers la nouvelle version ne prend que quelques minutes.
 
-**Question :** J’utilise des scripts R et Python. Sont-ils pris en charge ?
+**Question :** J’utilise des scripts R et Python. Sont-ils pris en charge ?
   
 **Réponse :** Les scripts R et Python sont pris en charge pour le mode personnel.
 

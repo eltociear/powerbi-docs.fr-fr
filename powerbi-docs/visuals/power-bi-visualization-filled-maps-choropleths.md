@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79436062"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865457"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -55,15 +57,8 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://
 
 1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
 
-
-## <a name="create-a-basic-filled-map"></a>Créer une carte choroplèthe simple
-Dans cette vidéo, Kim crée une carte de base et la convertit en carte choroplèthe.
-   > [!NOTE]
-   > Cette vidéo utilise une version antérieure de Power BI Desktop.
-   > 
-   > 
-
-> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
 
 ### <a name="create-a-filled-map"></a>Créer une carte choroplèthe
 1. Dans le volet Champs, sélectionnez le champ **Geo** \> **State** (Géo > État).    

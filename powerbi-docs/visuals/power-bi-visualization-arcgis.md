@@ -8,20 +8,25 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/29/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e97d2301a77bb3fe4a7a8f4e50f6da73a68842d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c296e202dccf814fcb9e1a4c6ee0620185723248
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77652539"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865687"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>Créer des cartes ArcGIS dans Power BI Desktop
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS Maps for Power BI. Quand le *concepteur* partage une carte ArcGIS Maps for Power BI avec un collègue, ce dernier peut afficher la carte et interagir avec elle, mais il ne peut pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS Maps for Power BI](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.
 
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Faites votre choix parmi des cartes de base, des types d’emplacement, des thèmes, des styles de symboles et des couches de référence pour créer des visualisations de cartes informatives exceptionnelles. L’association des couches de données faisant autorité sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans votre visualisation.
 

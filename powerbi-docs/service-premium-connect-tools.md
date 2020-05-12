@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: fe349e9eb29f85315e568d5851ce8206186cb61b
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 776ef09de58c2bb3b47a6d55ae5e8cf2be0cf228
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302594"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613661"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
 
@@ -229,9 +229,22 @@ Les opérations d’écriture XMLA sur les jeux de données créés dans Power B
 
 Lors de la connexion à des sources de données et de l’interrogation de données, Power BI Desktop utilise des expressions Power Query M comme déclarations de la source de données en ligne. Bien que prise en charge dans les espaces de travail Power BI Premium, la déclaration de la source de données en ligne Power Query M n’est pas prise en charge par Azure Analysis Services ou SQL Server Analysis Services. Au lieu de cela, les outils de modélisation des données Analysis Services, tels que Visual Studio, créent des métadonnées à l’aide de déclarations de la source de données *structurées* et/ou *fournisseur*. Avec le point de terminaison XMLA, Power BI Premium prend également en charge les sources de données structurées et fournisseur, mais pas dans le cadre des déclarations de la source de données en ligne Power Query M dans les modèles Power BI Desktop. Pour plus d’informations, consultez [Compréhension des fournisseurs](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
-### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop en mode Live Connect
+### <a name="power-bi-desktop-in-live-connect-mode"></a>Power BI Desktop en mode de connexion active
 
-Power BI Desktop peut se connecter à un jeu de données Power BI Premium comme s’il s’agissait d’une base de données de modèle déployée sur Azure Analysis Services ou SQL Server Analysis Services. Dans ce cas, Power BI Desktop utilise le point de terminaison XMLA. Toutefois, il est recommandé que les utilisateurs de Power BI Desktop utilisent plutôt la caractéristique Live Connect créée spécifiquement pour les jeux de données Power BI. L’utilisation de Live Connect offre une expérience de découverte améliorée qui montre le niveau d’approbation des jeux de données. Les utilisateurs n’ont donc pas besoin d’effectuer le suivi des URL de l’espace de travail et peuvent simplement taper le nom du jeu de données. POur en savoir plus, consultez [Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop](desktop-report-lifecycle-datasets.md).
+Power BI Desktop peut se connecter à un jeu de données Power BI Premium à l’aide d’une connexion active. Lorsqu’une connexion active est utilisée, il n’est pas nécessaire de répliquer les données localement, ce qui permet aux utilisateurs de consommer plus facilement des modèles sémantiques. Les utilisateurs peuvent se connecter de deux manières :
+
+En sélectionnant **Jeux de données Power BI**, puis en sélectionnant un jeu de données pour créer un rapport. C’est ce qui est **recommandé** aux utilisateurs pour se connecter en temps réel à des jeux de données. Cette méthode fournit une expérience de découverte améliorée qui montre le niveau d’approbation de jeux de données. Les utilisateurs n’ont besoin ni de trouver les URL de l’espace de travail, ni d’effectuer leur suivi. Pour trouver un jeu de données, les utilisateurs tapent simplement le nom du jeu de données ou font défiler pour trouver le jeu de données qu’ils recherchent.
+
+![Se connecter en temps réel à un jeu de données](media/service-premium-connect-tools/dataset-live-connect.png)
+
+Les utilisateurs peuvent également se connecter en utilisant **Obtenir des données** > **Analysis Services**, spécifier un nom d’espace de travail Power BI Premium en tant qu’URL, sélectionner **Connecter en direct**, puis sélectionner un jeu de données dans le navigateur. Dans ce cas, Power BI Desktop utilise le point de terminaison XMLA pour se connecter en temps réel au jeu de données comme s’il s’agissait d’un modèle de données Analysis Services. 
+
+![Se connecter en temps réel au jeu de données Analysis Services](media/service-premium-connect-tools/as-live-connect.png)
+
+Les organisations qui ont des rapports existants connectés en temps réel à des modèles de données Analysis Services destinés à migrer vers des jeux de données Power BI Premium doivent uniquement modifier l’URL du nom de serveur dans **Transformer des données** > **Paramètres de source de données**.
+
+> [!NOTE]
+> Dans la préversion publique en lecture-écriture XMLA, lorsque Power BI Desktop est utilisé pour se connecter à un jeu de données Power BI Premium avec **Obtenir des données** > **Analysis Services** et en sélectionnant l’option **Connecter en temps réel**, la publication d’un rapport dans le service Power BI n’est pas encore prise en charge.
 
 ## <a name="audit-logs"></a>Journaux d'audit
 

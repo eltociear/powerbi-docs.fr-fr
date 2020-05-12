@@ -2,27 +2,35 @@
 title: Graphiques en courbes dans Power BI
 description: Graphiques en courbes dans Power BI
 author: mihart
-ms.reviewer: amac
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871074"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867021"
 ---
 # <a name="line-charts-in-power-bi"></a>Graphiques en courbes dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 Un graphique en courbes est une série de points de données représentés par des points et connectés par des lignes droites. Un graphique en courbes peut avoir une ou plusieurs lignes. Les graphiques en courbes comportent un axe X et un axe Y. 
 
 ![graphique en courbes simple](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## <a name="create-a-line-chart"></a>Créer un graphique en courbes
 Ces instructions utilisent l’app Exemple Vente et marketing pour créer un graphique en courbes qui affiche les ventes de cette année par catégorie. Pour suivre la procédure, obtenez l’exemple d’application à partir de appsource.com.
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.
 
 1. Démarrez sur une page de rapport vierge. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
 
@@ -45,7 +53,7 @@ Ces instructions utilisent l’app Exemple Vente et marketing pour créer un gra
 
 6. Si vous le souhaitez, [ajustez la taille et la couleur du texte du graphique](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Augmenter la taille de la police et modifier la police de l’axe Y](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Augmentation de la taille de police et modification de la police de l’axe Y](media/power-bi-line-charts/power-bi-line-3years.png)
 
 ## <a name="add-additional-lines-to-the-chart"></a>Ajouter des lignes supplémentaires au graphique
 Les graphiques en courbes peuvent avoir de nombreuses lignes différentes. Et, dans certains cas, les valeurs sur les lignes peuvent être si divergentes qu’elles ne s’affichent pas bien ensemble. Vous allez maintenant ajouter des lignes supplémentaires à notre graphique et découvrir comment mettre en forme notre graphique lorsque les valeurs représentées par les lignes sont très différentes. 

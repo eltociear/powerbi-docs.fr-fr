@@ -3,21 +3,23 @@ title: Graphiques en jauge radiale dans Power BI
 description: Graphiques en jauge radiale dans Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6Epqa
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73880901"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866929"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -27,12 +29,8 @@ Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seu
 
 Dans cet exemple, vous êtes un concessionnaire automobile et effectuez le suivi de la moyenne des ventes mensuelles réalisées par votre équipe de vente. L’aiguille correspond à un objectif de ventes de 140 véhicules. La moyenne minimale de ventes mensuelles possible est 0 et la moyenne maximale a été définie à 200.  L’ombrage bleu indique que l’équipe a atteint une moyenne de 120 ventes ce mois-ci. Heureusement, il reste encore une semaine pour atteindre l’objectif fixé.
 
-Vous pouvez écouter Will qui vous montre comment créer des éléments visuels de métrique uniques : jauges, cartes et indicateurs de performance clés.
-   > [!NOTE]
-   > Cette vidéo utilise une version antérieure de Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.
 
 ## <a name="when-to-use-a-radial-gauge"></a>Quand faut-il utiliser un graphique en jauge radiale ?
 

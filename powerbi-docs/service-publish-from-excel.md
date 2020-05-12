@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80329617"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866791"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publier sur Power BI à partir de Microsoft Excel
 Avec Micorsoft Excel 2016 et version ultérieure, vous pouvez publier vos classeurs Excel directement vers votre espace de travail [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports et des tableaux de bord hautement interactifs, basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.
@@ -42,7 +42,7 @@ Excel prend en charge la publication de fichiers Excel locaux. Ceux-ci ne doiven
 > Vous pouvez publier des fichiers locaux uniquement si vous utilisez Excel 2016 (ou version ultérieure) avec un abonnement Office 365. Les installations autonomes Excel 2016 peuvent Publier sur Power BI, mais uniquement lorsque le classeur est enregistré sur OneDrive Entreprise ou SharePoint Online.
 > 
 
-Lorsque vous sélectionnez **Publier**, vous pouvez sélectionner l’espace de travail sur lequel publier. L’espace de travail peut être votre espace de travail personnel ou un espace de travail d’un groupe auquel vous avez accès, comme indiqué sur l’image suivante.
+Lorsque vous sélectionnez **Publier**, vous pouvez sélectionner l’espace de travail sur lequel publier. Si votre fichier Excel se trouve sur OneDrive Entreprise, vous ne pouvez le publier que sur *Mon espace de travail*. S’il se trouve sur un lecteur local, vous pouvez le publier sur *Mon espace de travail* ou sur un espace de travail partagé auquel vous avez accès.
 
 ![Publier sur Power BI](media/service-publish-from-excel/pbi_choose_workspace.png)
 
@@ -61,7 +61,7 @@ Une fois votre classeur enregistré sur OneDrive Entreprise, lorsque vous sélec
 
 ![Options pour Power BI](media/service-publish-from-excel/pbi_uploadexport2.png)
 
-#### <a name="upload-your-workbook-to-power-bi"></a>Télécharger votre classeur dans Power BI
+#### <a name="upload-your-workbook-to-power-bi"></a>Charger votre classeur dans Power BI
 Lorsque vous choisissez l’option **Charger**, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais, contrairement à Excel Online, vous avez la possibilité d’épingler des éléments de vos classeurs sur vos tableaux de bord.
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Si vous devez modifier des données, vous pouvez cliquer sur **Modifier**, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive Entreprise.
