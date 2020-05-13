@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eee7b67fcfaed987170baa8cb5a0b3c8cba86350
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: a7de3dfbbd378ea96f56c1d6d37d273434f5c2f9
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866407"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349813"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Créer et utiliser des visuels R dans Power BI
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../desktop-r-visuals.md).
+Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Affichage de visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
@@ -34,7 +34,7 @@ L’illustration suivante montre un tableau de bord Power BI avec une collectio
 
 ![Capture d’écran du canevas de rapport du service Power BI](media/service-r-visuals/power-bi-r-visuals.png)
 
-Les éléments visuels R sont créés dans un [rapport Power BI Desktop](../desktop-get-the-desktop.md), comme le rapport affiché dans l’image suivante.
+Les éléments visuels R sont créés dans un [rapport Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), comme le rapport affiché dans l’image suivante.
 
 ![Rapport Desktop avec deux visuels](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
@@ -44,7 +44,7 @@ Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le p
 
 Vous pouvez télécharger cet [exemple de fichier Power BI Desktop](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix) qui contient quelques éléments visuels R pour voir comment cela fonctionne et faire des essais.
 
-Les visuels R créés dans **Power BI Desktop** puis publiés dans le service Power BI se comportent la plupart du temps comme n’importe quel autre visuel dans le service Power BI. Vous pouvez les utiliser, les filtrer, les découper et les épingler à un tableau de bord ou les partager avec d’autres utilisateurs. Pour plus d’informations sur le partage de tableaux de bord et d’éléments visuels, consultez [Partager un tableau de bord avec vos collègues et les autres utilisateurs](../service-share-dashboards.md). Contrairement aux autres éléments visuels, les éléments visuels R ne peuvent pas afficher d’info-bulles ni être utilisés pour filtrer d’autres éléments visuels.
+Les visuels R créés dans **Power BI Desktop** puis publiés dans le service Power BI se comportent la plupart du temps comme n’importe quel autre visuel dans le service Power BI. Vous pouvez les utiliser, les filtrer, les découper et les épingler à un tableau de bord ou les partager avec d’autres utilisateurs. Pour plus d’informations sur le partage de tableaux de bord et d’éléments visuels, consultez [Partager un tableau de bord avec vos collègues et les autres utilisateurs](../collaborate-share/service-share-dashboards.md). Contrairement aux autres éléments visuels, les éléments visuels R ne peuvent pas afficher d’info-bulles ni être utilisés pour filtrer d’autres éléments visuels.
 
 Comme vous pouvez le voir dans l’image suivante, que ce soit dans des tableaux de bord ou des rapports, les éléments visuels R du service Power BI, s’affichent et se comportent en grande partie comme les autres types d’élément visuel. En outre, les utilisateurs n’ont pas besoin de connaître le script R sous-jacent qui a créé l’élément visuel.
 
@@ -69,9 +69,9 @@ Voici un autre exemple : l’illustration suivante montre le message d’erreur
 ![Capture d’écran montrant une erreur d’exécution](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>Licensing
-Les visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-admin-purchasing-power-bi-pro.md)
+Les visuels R nécessitent une licence [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../admin/service-admin-purchasing-power-bi-pro.md)
 
-Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
+Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md).
 
 Le tableau suivant décrit les fonctionnalités des éléments visuels R en fonction de la licence.
 
@@ -88,7 +88,7 @@ Le tableau suivant décrit les fonctionnalités des éléments visuels R en fon
 ## <a name="known-limitations"></a>Limites connues
 Les éléments visuels R du service Power BI ont quelques limitations :
 
-* La prise en charge des visuels R est limitée aux packages identifiés [dans Découvrez quels packages R sont pris en charge](../service-r-packages-support.md). Il n’existe actuellement aucune prise en charge des packages personnalisés.
+* La prise en charge des visuels R est limitée aux packages identifiés [dans Découvrez quels packages R sont pris en charge](../connect-data/service-r-packages-support.md). Il n’existe actuellement aucune prise en charge des packages personnalisés.
 * Limites concernant la taille des données : les données utilisées par les éléments visuels R pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image. En outre, les données d’entrée ont une limite de 250 Mo.
 * Résolution : tous les visuels R sont affichés dans une résolution de 72 ppp.
 * Traçage sur l’appareil : seul le traçage sur l’appareil par défaut est pris en charge. 
@@ -119,7 +119,7 @@ Les packages R sont des ensembles de fonctions, de données et de code compilé 
 
 **Power BI Desktop** peut utiliser n’importe quel type de package R sans limitation. Vous pouvez installer manuellement des packages R pour une utilisation dans **Power BI Desktop** (à l’aide de l’[IDE RStudio](https://www.rstudio.com/) par exemple).
 
-Les visuels R dans le **service Power BI** sont pris en charge par les packages qui se trouvent dans la section **Packages pris en charge** dans [cet article](../service-r-packages-support.md). Si vous ne trouvez pas le package qui vous intéresse dans la liste des packages pris en charge, vous pouvez demander la prise en charge du package. Pour en savoir plus sur la demande de prise en charge, consultez la page [Packages R dans le service Power BI](../service-r-packages-support.md).
+Les visuels R dans le **service Power BI** sont pris en charge par les packages qui se trouvent dans la section **Packages pris en charge** dans [cet article](../connect-data/service-r-packages-support.md). Si vous ne trouvez pas le package qui vous intéresse dans la liste des packages pris en charge, vous pouvez demander la prise en charge du package. Pour en savoir plus sur la demande de prise en charge, consultez la page [Packages R dans le service Power BI](../connect-data/service-r-packages-support.md).
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>Spécifications et limitations des packages R
 Il existe quelques spécifications et limitations concernant les packages R :
@@ -130,11 +130,10 @@ Il existe quelques spécifications et limitations concernant les packages R :
   
   * Pour les visuels R, vous pouvez installer n’importe quel package, y compris les packages R personnalisés.
   * Pour les visuels R personnalisés, seuls les packages CRAN publics sont pris en charge pour l’installation automatique.
-* Pour des raisons de confidentialité et de sécurité, nous ne prenons actuellement pas en charge les packages R qui fournissent des requêtes client-serveur sur le web (par exemple RgoogleMaps) dans le service. La mise en réseau est bloquée lors de ces tentatives. Pour obtenir une liste des packages R pris en charge et non pris en charge, consultez la page [Packages R du service Power BI](../service-r-packages-support.md).
+* Pour des raisons de confidentialité et de sécurité, nous ne prenons actuellement pas en charge les packages R qui fournissent des requêtes client-serveur sur le web (par exemple RgoogleMaps) dans le service. La mise en réseau est bloquée lors de ces tentatives. Pour obtenir une liste des packages R pris en charge et non pris en charge, consultez la page [Packages R du service Power BI](../connect-data/service-r-packages-support.md).
 * Le processus d’approbation visant à inclure un nouveau package R implique un certain nombre de dépendances. Certaines dépendances qui doivent être installées dans le service ne sont pas prises en charge.
 
 ### <a name="supported-packages"></a>Packages pris en charge :
 Pour obtenir une longue liste de packages R pris en charge (et une brève liste de packages non pris en charge), consultez l’article suivant :
 
-* [Packages R du service Power BI](../service-r-packages-support.md)
-
+* [Packages R du service Power BI](../connect-data/service-r-packages-support.md)

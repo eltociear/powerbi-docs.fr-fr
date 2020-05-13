@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: asaxton
-ms.openlocfilehash: e3aeff47e585d9a54edf46f7001f4686e9a76c3a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 441400a5d32ea776288f976aa1d2155a971f3c72
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73875566"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278994"
 ---
 # <a name="guidance-for-power-bi"></a>Conseils relatifs à Power BI
 
@@ -36,6 +36,6 @@ Vous y trouverez des conseils et les pratiques recommandées pour Power BI. Tou
 
 | Instructions | Description |
 | --- | --- |
-| [Bonnes pratiques pour les dataflows](../service-dataflows-best-practices.md) | Décrit les bonnes pratiques en matière de conception de dataflows dans Power BI. |
+| [Bonnes pratiques pour les dataflows](../transform-model/service-dataflows-best-practices.md) | Décrit les bonnes pratiques en matière de conception de dataflows dans Power BI. |
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
