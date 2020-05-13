@@ -12,33 +12,33 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 03/05/2020
-  ms.openlocfilehash: 04ce4ce2ec0038ff6e79a2e65de8279a3a73dcad
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: cbe4b08f84dcd4246bceb83933366d1086d27bd0
+  ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "81439592"
+  ms.lasthandoff: 05/13/2020
+  ms.locfileid: "83348778"
 landingContent:
-- title: Qu’est-ce que Power BI ?
+- title: Qu’est-ce que Power BI ?
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Power BI ?
-      url: ../power-bi-overview.md
+    - text: Qu’est-ce que Power BI ?
+      url: power-bi-overview.md
     - text: Qu’est-ce que Power BI Desktop ?
-      url: ../desktop-what-is-desktop.md
+      url: desktop-what-is-desktop.md
     - text: Qu’est-ce que le service Power BI ?
-      url: ../power-bi-service-overview.md
+      url: power-bi-service-overview.md
     - text: Comparaison de Power BI Desktop et du service
-      url: ../service-service-vs-desktop.md
+      url: service-service-vs-desktop.md
 - title: Nouveautés
   linkLists:
   - linkListType: concept
     links:
     - text: Nouveautés dans Power BI Desktop
-      url: ../desktop-latest-update.md
+      url: desktop-latest-update.md
     - text: Nouveautés du service
-      url: ../service-whats-new.md
+      url: service-whats-new.md
 - title: Bien démarrer avec Learn
   linkLists:
   - linkListType: learn
@@ -47,21 +47,21 @@ landingContent:
       url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
     - text: Obtenir des données avec Power BI Desktop
       url: https://docs.microsoft.com/learn/modules/get-data-power-bi/?tutorial-step=1
-- title: Licence
+- title: Licences
   linkLists:
   - linkListType: concept
     links:
     - text: S’inscrire à Power BI
-      url: ../service-self-service-signup-for-power-bi.md
+      url: service-self-service-signup-for-power-bi.md
     - text: Fonctionnalités par type de licence
-      url: ../service-features-license-type.md
+      url: service-features-license-type.md
 - title: Ressources
   linkLists:
   - linkListType: reference
     links:
     - text: Vidéos Power BI
-      url: ../videos.md
+      url: videos.md
     - text: Vidéos relatives à Power BI Desktop
-      url: ../desktop-videos.md
+      url: desktop-videos.md
     - text: Webinaires
-      url: ../webinars.md
+      url: webinars.md

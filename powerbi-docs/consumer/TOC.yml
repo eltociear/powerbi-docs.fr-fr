@@ -27,9 +27,9 @@
         - name: Découvrir comment poser des questions en langage naturel
           href: end-user-q-and-a.md
         - name: Accéder à la nouvelle apparence
-          href: ../service-new-look.md
+          href: service-new-look.md
         - name: "Nouvelle apparence\_: où vont aller les actions\_?"
-          href: ../service-new-look-where-actions.md
+          href: service-new-look-where-actions.md
     - name: Guides pratiques
       items:
         - name: Tableaux de bord
@@ -93,7 +93,7 @@
             - name: Descendre dans la hiérarchie d’une visualisation
               href: end-user-drill.md
             - name: Interagir avec des cartes ArcGIS
-              href: ../power-bi-visualizations-arcgis.md
+              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Tâches communes
           items:
             - name: Exporter des données vers Excel

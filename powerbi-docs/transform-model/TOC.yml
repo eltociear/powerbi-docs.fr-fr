@@ -6,114 +6,114 @@
       expanded: true
       items:
         - name: Vue d’ensemble de l’éditeur de requête
-          href: ../desktop-query-overview.md
+          href: desktop-query-overview.md
         - name: Préparation des données en libre-service avec des dataflows
-          href: ../service-dataflows-overview.md
+          href: service-dataflows-overview.md
     - name: Tutoriels
       expanded: true
       items:
         - name: Créer vos propres mesures
-          href: ../desktop-tutorial-create-measures.md
+          href: desktop-tutorial-create-measures.md
         - name: Créer des colonnes calculées
-          href: ../desktop-tutorial-create-calculated-columns.md
+          href: desktop-tutorial-create-calculated-columns.md
     - name: Concepts
       expanded: true
       items:
         - name: Comprendre les relations de modèle
-          href: ../desktop-relationships-understand.md
+          href: desktop-relationships-understand.md
         - name: Utiliser la vue Modélisation
-          href: ../desktop-modeling-view.md
+          href: desktop-modeling-view.md
         - name: Gérer les agrégations
-          href: ../desktop-aggregations.md
+          href: desktop-aggregations.md
         - name: Utiliser des modèles composites
-          href: ../desktop-composite-models.md
+          href: desktop-composite-models.md
         - name: Appliquer des relations plusieurs-à-plusieurs
-          href: ../desktop-many-to-many-relationships.md
+          href: desktop-many-to-many-relationships.md
         - name: Gérer le mode de stockage
-          href: ../desktop-storage-mode.md
+          href: desktop-storage-mode.md
         - name: Activer le filtrage croisé bidirectionnel
-          href: ../desktop-bidirectional-filtering.md
+          href: desktop-bidirectional-filtering.md
         - name: Utiliser des modèles multidimensionnels dans Power BI
-          href: ../desktop-default-member-multidimensional-models.md
+          href: ../connect-data/desktop-default-member-multidimensional-models.md
     - name: Guides pratiques
       items:
         - name: Effectuer des tâches de requête courantes
-          href: ../desktop-common-query-tasks.md
+          href: desktop-common-query-tasks.md
         - name: Créer et gérer des relations
-          href: ../desktop-create-and-manage-relationships.md
+          href: desktop-create-and-manage-relationships.md
         - name: Utilisation du volet Analytique
-          href: ../desktop-analytics-pane.md
+          href: desktop-analytics-pane.md
         - name: Utiliser la vue Données
-          href: ../desktop-data-view.md
+          href: ../connect-data/desktop-data-view.md
         - name: Appliquer les principes de base de DAX
-          href: ../desktop-quickstart-learn-dax-basics.md
+          href: desktop-quickstart-learn-dax-basics.md
         - name: Utiliser la vue Relation
-          href: ../desktop-relationship-view.md
+          href: desktop-relationship-view.md
         - name: Transformez et mettez en forme des données
           items:
             - name: Combiner des fichiers (binaires)
-              href: ../desktop-combine-binaries.md
+              href: desktop-combine-binaries.md
             - name: Utiliser Insights IA (préversion)
-              href: ../desktop-ai-insights.md
+              href: desktop-ai-insights.md
         - name: Modéliser vos données
           items:
             - name: Créer des mesures rapides pour effectuer des calculs courants
-              href: ../desktop-quick-measures.md
+              href: desktop-quick-measures.md
             - name: Créer et utiliser des paramètres What if pour visualiser des variables
-              href: ../desktop-what-if.md
+              href: desktop-what-if.md
             - name: "Spécifier des catégories de données dans Power\_BI\_Desktop"
-              href: ../desktop-data-categorization.md
+              href: desktop-data-categorization.md
             - name: Identifier des champs de codes-barres dans Power BI pour l’application mobile
-              href: ../desktop-mobile-barcodes.md
+              href: desktop-mobile-barcodes.md
             - name: Définir des filtres géographiques dans Power BI pour l’application mobile
-              href: ../desktop-mobile-geofiltering.md
+              href: desktop-mobile-geofiltering.md
             - name: Créer des colonnes calculées
-              href: ../desktop-calculated-columns.md
+              href: desktop-calculated-columns.md
             - name: Créer des tables calculées
-              href: ../desktop-calculated-tables.md
+              href: desktop-calculated-tables.md
             - name: Créer des mesures pour l’analyse des données
-              href: ../desktop-measures.md
+              href: desktop-measures.md
             - name: Importation et affichage d’indicateurs de performance clés (KPI)
-              href: ../desktop-import-and-display-kpis.md
+              href: desktop-import-and-display-kpis.md
             - name: Appliquer la date/heure automatique
-              href: ../desktop-auto-date-time.md
+              href: desktop-auto-date-time.md
         - name: Préparation des données en libre-service
           items:
-            - name: Créer et utiliser des flux de données
-              href: ../service-dataflows-create-use.md
+            - name: Créer et utiliser des dataflows
+              href: service-dataflows-create-use.md
             - name: Promouvoir ou certifier des dataflows
               href: service-dataflows-promote-certify.md
             - name: Utiliser le moteur de calcul amélioré avec des dataflows
-              href: ../service-dataflows-enhanced-compute-engine.md
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Entités calculées avec Power BI Premium
-              href: ../service-dataflows-computed-entities-premium.md
+              href: service-dataflows-computed-entities-premium.md
             - name: Se connecter à des sources de données avec des dataflows
-              href: ../service-dataflows-data-sources.md
+              href: service-dataflows-data-sources.md
             - name: Utiliser des dataflows avec des sources de données locales
-              href: ../service-dataflows-on-premises-gateways.md
+              href: service-dataflows-on-premises-gateways.md
             - name: Lier des entités entre dataflows
-              href: ../service-dataflows-linked-entities.md
+              href: service-dataflows-linked-entities.md
             - name: Utiliser une actualisation incrémentielle avec des dataflows
-              href: ../service-dataflows-incremental-refresh.md
+              href: service-dataflows-incremental-refresh.md
             - name: Ressources du développeur pour les flux de données
-              href: ../service-dataflows-developer-resources.md
+              href: service-dataflows-developer-resources.md
             - name: Se connecter à des flux de données dans Power BI Desktop
-              href: ../desktop-connect-dataflows.md
-            - name: Intégration de dataflows et d’Azure Data Lake (préversion)
-              href: ../service-dataflows-azure-data-lake-integration.md
+              href: desktop-connect-dataflows.md
+            - name: Flux de données et intégration à Azure Data Lake (préversion)
+              href: service-dataflows-azure-data-lake-integration.md
             - name: Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
-              href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md
-            - name: Configurer les paramètres de dataflow d’espace de travail (préversion)
-              href: ../service-dataflows-configure-workspace-storage-settings.md
+              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+            - name: Configurer les paramètres de flux de données d’un espace de travail (préversion)
+              href: service-dataflows-configure-workspace-storage-settings.md
             - name: Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
-              href: ../service-dataflows-add-cdm-folder.md
+              href: service-dataflows-add-cdm-folder.md
             - name: Intégrer Machine Learning à Power BI
-              href: ../service-machine-learning-integration.md
+              href: service-machine-learning-integration.md
             - name: Utiliser Cognitive Services dans Power BI
-              href: ../service-cognitive-services.md
+              href: service-cognitive-services.md
             - name: Machine Learning automatisé dans Power BI
-              href: ../service-machine-learning-automated.md
-    - name: Informations de référence
+              href: service-machine-learning-automated.md
+    - name: Référence
       items:
         - name: Raccourcis de l’éditeur de formule
-          href: ../desktop-formula-editor.md
+          href: desktop-formula-editor.md

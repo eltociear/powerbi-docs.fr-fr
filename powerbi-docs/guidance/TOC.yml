@@ -18,11 +18,11 @@
               href: power-query-folding.md
             - name: Référencement des requêtes Power Query
               href: power-query-referenced-queries.md
-            - name: Désactiver l’actualisation de l’arrière-plan de Power Query
+            - name: Désactiver l’actualisation en arrière-plan de Power Query
               href: power-query-background-refresh.md
             - name: Bonnes pratiques pour les dataflows
-              href: ../service-dataflows-best-practices.md
-        - name: Modélisation de données
+              href: ../transform-model/service-dataflows-best-practices.md
+        - name: Modélisation des données
           items:
             - name: "Qu’est-ce qu’un schéma en étoile\_?"
               href: star-schema.md
@@ -32,7 +32,7 @@
               href: auto-date-time.md
             - name: Relations un à un
               href: relationships-one-to-one.md
-            - name: Relations plusieurs-à-plusieurs
+            - name: Relations Plusieurs-à-plusieurs
               href: relationships-many-to-many.md
             - name: Relations actives et inactives
               href: relationships-active-inactive.md
