@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2f70b98ed540a2e5b87e5a949e30b0c1c02069d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74700383"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279638"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX : Éviter de convertir des blancs (BLANK) en valeurs
 
@@ -66,7 +66,7 @@ Le visuel de table présente maintenant uniquement les clients qui ont effectué
 ![Le même visuel de table présente maintenant quatre lignes de données. Chaque ligne concerne un client pour lequel il existe une valeur de vente et pour lequel les valeurs de marge bénéficiaire sont différentes de zéro.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
-> Si nécessaire, vous pouvez configurer un visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option [Afficher les éléments sans données](../desktop-show-items-no-data.md).
+> Si nécessaire, vous pouvez configurer un visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option [Afficher les éléments sans données](../create-reports/desktop-show-items-no-data.md).
 
 ## <a name="recommendation"></a>Recommandation
 
@@ -80,3 +80,4 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 
 - [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+

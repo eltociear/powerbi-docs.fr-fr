@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3ca49008639f7e3e084c8d045bc911aff57b7b21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 42d99c7139586a78565198b59bc74716261537e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75498734"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279615"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX : Références de colonne et de mesure
 
@@ -43,7 +43,7 @@ Nous vous recommandons de toujours utiliser des références de colonne complèt
 
 ## <a name="measures"></a>Mesures
 
-Une mesure est un objet de niveau modèle. Pour cette raison, les noms de mesure doivent être uniques dans le modèle. Toutefois, dans le volet **Champs**, les auteurs de rapports voient chaque mesure associée à une seule table de modèle. Cette association est définie pour des raisons esthétiques, et vous pouvez la configurer en définissant la propriété **Table principale** de la mesure. Pour plus d’informations, consultez [Mesures dans Power BI Desktop (Organisation de vos mesures)](../desktop-measures.md#organizing-your-measures).
+Une mesure est un objet de niveau modèle. Pour cette raison, les noms de mesure doivent être uniques dans le modèle. Toutefois, dans le volet **Champs**, les auteurs de rapports voient chaque mesure associée à une seule table de modèle. Cette association est définie pour des raisons esthétiques, et vous pouvez la configurer en définissant la propriété **Table principale** de la mesure. Pour plus d’informations, consultez [Mesures dans Power BI Desktop (Organisation de vos mesures)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 Vous pouvez utiliser une référence de mesure complète dans vos expressions. La fonctionnalité IntelliSense de DAX vous offre même la suggestion. Toutefois, ce n’est pas nécessaire et ce n’est pas une pratique recommandée. Si vous changez la table principale d’une mesure, toute expression qui utilise une référence de mesure complète s’arrête. Vous devez ensuite modifier chaque formule rompue pour supprimer (ou mettre à jour) la référence de mesure.
 
@@ -68,3 +68,4 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 
 - [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+

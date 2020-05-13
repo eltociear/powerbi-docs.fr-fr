@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 811e0513c1b4a16a731e6d9bd90cbc0689ca76e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496476"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279776"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "77496476"
 
 
 > [!IMPORTANT]
-> **Cet article s’adresse aux utilisateurs de Power BI qui ne disposent pas d’autorisations de modification sur le rapport ou le jeu de données et qui travaillent uniquement avec la version en ligne de Power BI (le service Power BI). Si vous êtes *concepteur*, *administrateur* ou *propriétaire* de rapports, il se peut que cet article ne comporte pas toutes les informations dont vous avez besoin. Lisez plutôt [Trier par colonne dans Power BI Desktop](../desktop-sort-by-column.md)** .
+> **Cet article s’adresse aux utilisateurs de Power BI qui ne disposent pas d’autorisations de modification sur le rapport ou le jeu de données et qui travaillent uniquement avec la version en ligne de Power BI (le service Power BI). Si vous êtes *concepteur*, *administrateur* ou *propriétaire* de rapports, il se peut que cet article ne comporte pas toutes les informations dont vous avez besoin. Lisez plutôt [Trier par colonne dans Power BI Desktop](../create-reports/desktop-sort-by-column.md)** .
 
 Dans le service Power BI, vous pouvez changer l’apparence d’un visuel en le triant par différents champs de données. En changeant la façon dont vous triez un visuel, vous pouvez mettre en évidence les informations que vous voulez transmettre. Que vous utilisiez des données numériques (comme des chiffres de ventes) ou des données de texte (comme des noms d’État), vous pouvez trier vos visualisations comme vous le souhaitez. Power BI offre une grande souplesse sur le plan du tri et des menus rapides que vous pouvez utiliser. 
 
@@ -69,7 +69,7 @@ Seule la personne qui a conçu le rapport peut apporter ces changements pour vou
 
 ![Liste déroulante indiquant les informations de contact](media/end-user-change-sort/power-bi-contact.png)
 
-Si vous êtes *concepteur* et que vous disposez d’autorisations de modification sur le contenu, lisez [Trier par colonne dans Power BI Desktop](../desktop-sort-by-column.md) pour savoir comment mettre à jour le jeu de données et autoriser ce type de tri.
+Si vous êtes *concepteur* et que vous disposez d’autorisations de modification sur le contenu, lisez [Trier par colonne dans Power BI Desktop](../create-reports/desktop-sort-by-column.md) pour savoir comment mettre à jour le jeu de données et autoriser ce type de tri.
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les [visualisations dans les rapports Power BI](end-user-visualizations.md).

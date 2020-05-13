@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79487806"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279753"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
 
@@ -21,7 +21,7 @@ Cet article s’adresse aux administrateurs Power BI chargés d’installer et d
 
 Nous donnons des indications concernant des paramètres de locataire spécifiques qui contribuent à améliorer l’expérience Power BI ou qui peuvent éviter d’exposer votre organisation à des risques. Nous vous recommandons de toujours configurer votre locataire en respectant la logique des stratégies et des processus de votre organisation.
 
-Les [paramètres du locataire](../service-admin-portal.md#tenant-settings) sont gérés sur le [portail d’administration](https://app.powerbi.com/admin-portal/tenantSettings) et peuvent être configurés par un [administrateur de service Power BI](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). De nombreux paramètres de locataire peuvent limiter les capacités et les fonctionnalités à un ensemble limité d’utilisateurs. Nous vous recommandons donc de commencer par vous familiariser avec les paramètres pour planifier les groupes de sécurité dont vous aurez besoin. Vous découvrirez peut-être que vous pouvez appliquer le même groupe de sécurité à plusieurs paramètres.
+Les [paramètres du locataire](../admin/service-admin-portal.md#tenant-settings) sont gérés sur le [portail d’administration](https://app.powerbi.com/admin-portal/tenantSettings) et peuvent être configurés par un [administrateur de service Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). De nombreux paramètres de locataire peuvent limiter les capacités et les fonctionnalités à un ensemble limité d’utilisateurs. Nous vous recommandons donc de commencer par vous familiariser avec les paramètres pour planifier les groupes de sécurité dont vous aurez besoin. Vous découvrirez peut-être que vous pouvez appliquer le même groupe de sécurité à plusieurs paramètres.
 
 ## <a name="improve-power-bi-experience"></a>Améliorer l’expérience Power BI
 
@@ -88,7 +88,7 @@ Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’a
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
-La fonctionnalité [Publier sur le web](../service-publish-to-web.md) permet de publier des rapports publics sur le web. Si elle est utilisée de façon inappropriée, le risque existe que des informations confidentielles soient divulguées sur le web.
+La fonctionnalité [Publier sur le web](../collaborate-share/service-publish-to-web.md) permet de publier des rapports publics sur le web. Si elle est utilisée de façon inappropriée, le risque existe que des informations confidentielles soient divulguées sur le web.
 
 Si le paramètre **Publier sur le web** est activé par défaut pour l’ensemble de l’organisation, les utilisateurs non administrateurs sont limités dans leur aptitude à créer des codes incorporés. Il se trouve dans le groupe **Paramètres d’exportation et de partage**.
 
@@ -109,7 +109,7 @@ Le paramètre **Exporter des données** est activé par défaut pour l’ensembl
 Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’autorisation de publier des rapports peut être accordée _ou refusée_ à ces groupes.
 
 > [!IMPORTANT]
-> La désactivation de ce paramètre limite également l’utilisation des fonctionnalités [Analyser dans Excel](../service-analyze-in-excel.md) et [connexion active](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) du service Power BI.
+> La désactivation de ce paramètre limite également l’utilisation des fonctionnalités [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) et [connexion active](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) du service Power BI.
 
 ![Le paramètre Exporter des données est affiché.](media/admin-tenant-settings/export-data.png)
 
@@ -118,7 +118,7 @@ Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’a
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation
 
-Il est possible d’autoriser des utilisateurs invités externes à modifier et gérer du contenu Power BI. Pour plus d’informations, consultez [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](../service-admin-azure-ad-b2b.md).
+Il est possible d’autoriser des utilisateurs invités externes à modifier et gérer du contenu Power BI. Pour plus d’informations, consultez [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
 Le paramètre **Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation** est désactivé par défaut pour l’ensemble de l’organisation. Il se trouve dans le groupe **Paramètres d’exportation et de partage**.
 
@@ -141,7 +141,8 @@ Si vous n’avez pas l’intention d’utiliser les API de développeur pour inc
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Présentation de l’administration de Power BI](../service-admin-administering-power-bi-in-your-organization.md)
-- [Administration de Power BI dans le portail d’administration](../service-admin-portal.md)
+- [Présentation de l’administration de Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [Administration de Power BI dans le portail d’administration](../admin/service-admin-portal.md)
 - Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
+
