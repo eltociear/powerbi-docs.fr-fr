@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5f4fc253fbb7427de8adb21305f66769abcd428
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435901"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273083"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -52,7 +52,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    Les liens peuvent rediriger vers d’autres tableaux de bord Power BI ou vers une URL externe. Vous pouvez [cliquer sur le lien](../../service-dashboard-edit-tile.md#hyperlink) pour l’ouvrir dans l’application Power BI. Dans le cas d'un site externe, Power BI vous invite à l’autoriser.
+    Les liens peuvent rediriger vers d’autres tableaux de bord Power BI ou vers une URL externe. Vous pouvez [cliquer sur le lien](../../create-reports/service-dashboard-edit-tile.md#hyperlink) pour l’ouvrir dans l’application Power BI. Dans le cas d'un site externe, Power BI vous invite à l’autoriser.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -77,7 +77,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    Les liens peuvent rediriger vers d’autres tableaux de bord Power BI ou vers une URL externe. Vous pouvez [cliquer sur le lien](../../service-dashboard-edit-tile.md#hyperlink) pour l’ouvrir dans l’application Power BI. Dans le cas d'un site externe, Power BI vous invite à l’autoriser.
+    Les liens peuvent rediriger vers d’autres tableaux de bord Power BI ou vers une URL externe. Vous pouvez [cliquer sur le lien](../../create-reports/service-dashboard-edit-tile.md#hyperlink) pour l’ouvrir dans l’application Power BI. Dans le cas d'un site externe, Power BI vous invite à l’autoriser.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -98,7 +98,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     Appuyez sur **Ouvrir le rapport** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) pour [afficher le rapport sous-jacent](mobile-reports-in-the-mobile-apps.md).
    
-    [Ouvrez le lien](../../service-dashboard-edit-tile.md#hyperlink), s’il en a un. Les liens peuvent diriger vers des tableaux de bord Power BI ou vers une URL externe.
+    [Ouvrez le lien](../../create-reports/service-dashboard-edit-tile.md#hyperlink), s’il en a un. Les liens peuvent diriger vers des tableaux de bord Power BI ou vers une URL externe.
 3. Appuyez sur **Agrandir la vignette** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Elle s’ouvre en mode focus, où il est plus facile de consulter et d’explorer ses données. Dans ce mode, vous pouvez :
    
    Faire pivoter un graphique en secteurs pour afficher les valeurs du secteur au-dessus du graphique.  
@@ -130,4 +130,3 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
 ## <a name="next-steps"></a>Étapes suivantes
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

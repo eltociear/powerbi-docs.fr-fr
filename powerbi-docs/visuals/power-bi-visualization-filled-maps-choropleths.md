@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ae73f2e32d34c3e1b37991358545997c4b4bb961
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865457"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272899"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
 
@@ -92,12 +92,12 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://
 7. La carte choroplèthe est en rouge et vert. Le rouge représente les indices de sentiment bas et le vert représente les indices de sentiment élevés (sentiment plus positif).  Pour afficher des détails supplémentaires, faites glisser un champ dans la zone Info-bulles.  Ici, nous avons ajouté **SalesFact** > **Sentiment gap** (Écart de sentiment). La mise en surbrillance de l’État de Idaho (ID) indique que l’écart de sentiment est faible, à 6.
    ![carte choroplèthe affichant des info-bulles Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Enregistrez le rapport](../service-report-save.md).
+10. [Enregistrez le rapport](../create-reports/service-report-save.md).
 
 Power BI vous donne un large contrôle sur l’apparence de votre carte choroplèthe. Familiarisez-vous avec ces contrôles des couleurs des données jusqu’à ce que vous atteigniez l’aspect souhaité. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
-Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
+Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../create-reports/power-bi-report-add-filter.md).
 
 La mise en surbrillance d’un emplacement sur une carte choroplèthe entraîne le filtrage croisé des autres visualisations dans la page du rapport, et vice versa.
 
@@ -136,3 +136,5 @@ Pour plus d’informations sur les visualisations de carte, consultez [Tips and 
 [Carte de formes](desktop-shape-map.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 6eee86423fdfc1e1a9338aa4fecfd5eae0c0d111
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865250"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272853"
 ---
 # <a name="create-and-use-funnel-charts"></a>Créer et utiliser des graphiques en entonnoir
 
@@ -94,20 +94,23 @@ Regardez cette vidéo pour voir comment créer un graphique en entonnoir avec l�
      
      ![détails de la barre Proposal](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Enregistrez le rapport](../service-report-save.md).
+6. [Enregistrez le rapport](../create-reports/service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
-Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
+Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../create-reports/power-bi-report-add-filter.md).
 
 La mise en surbrillance d’une barre dans un graphique en entonnoir entraîne le filtrage croisé des autres visualisations sur la page du rapport, et vice versa. Pour suivre la procédure, ajoutez quelques éléments visuels de plus à la page de rapport qui contient le graphique en entonnoir.
 
 1. Dans l’entonnoir, sélectionnez la barre **Proposal** (Proposition). Cela met en surbrillance croisée les autres visualisations sur la page. Utilisez la touche CTRL pour sélectionner simultanément plusieurs éléments.
    
    ![courte vidéo montrant les interactions des visuels](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](../service-reports-visual-interactions.md).
+2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Jauges dans Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

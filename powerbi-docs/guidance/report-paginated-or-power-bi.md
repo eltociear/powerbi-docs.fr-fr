@@ -8,19 +8,19 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f1608fd2511e38758b5bf05041d625cf524fff34
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920734"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83127807"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Quand utiliser des rapports paginés dans Power BI
 
 Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il a pour but de vous aider à choisir quand développer des [rapports paginés Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
 > [!NOTE]
-> La publication des rapports paginés Power BI nécessite un abonnement Power BI Premium. Les rapports s’affichent uniquement lorsqu’ils se trouvent dans un espace de travail situé dans une capacité dédiée où la [charge de travail Rapports paginés est activée](../service-admin-premium-workloads.md#paginated-reports).
+> La publication des rapports paginés Power BI nécessite un abonnement Power BI Premium. Les rapports s’affichent uniquement lorsqu’ils se trouvent dans un espace de travail situé dans une capacité dédiée où la [charge de travail Rapports paginés est activée](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 Les rapports paginés Power BI sont optimisés pour l’**impression** et la **génération de PDF**. Ils vous permettent également de créer des dispositions impeccables et sophistiquées. Les rapports paginés sont donc parfaits pour les rapports opérationnels, tels que les factures.
 
@@ -36,7 +36,7 @@ Nous vous recommandons d’utiliser un rapport paginé Power BI dans les cas su
 
 Si vous disposez déjà de rapports [RDL](/sql/reporting-services/reports/report-definition-language-ssrs) SQL Server Reporting Services (SSRS), vous pouvez choisir de les redévelopper sous la forme de [rapports Power BI](../consumer/end-user-reports.md) ou d’effectuer leur migration vers Power BI en tant que rapports paginés. Pour plus d’informations, consultez [Effectuer la migration de rapports SQL Server Reporting Services vers Power BI](migrate-ssrs-reports-to-power-bi.md).
 
-Une fois publiés dans un espace de travail Power BI, les rapports paginés s’affichent en regard des rapports Power BI. Ils peuvent ensuite être facilement distribués à l’aide d’[applications Power BI](../service-create-distribute-apps.md).
+Une fois publiés dans un espace de travail Power BI, les rapports paginés s’affichent en regard des rapports Power BI. Ils peuvent ensuite être facilement distribués à l’aide d’[applications Power BI](../collaborate-share/service-create-distribute-apps.md).
 
 Si vous le souhaitez, vous pouvez redévelopper des rapports SSRS, plutôt que d’effectuer leur migration. Ceci est particulièrement vrai pour les rapports à visée analytique. Dans ce cas, les rapports Power BI offriront probablement la meilleure expérience utilisateur.
 

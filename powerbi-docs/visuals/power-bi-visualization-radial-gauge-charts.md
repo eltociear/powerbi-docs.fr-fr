@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 4274136df063258b6879057636f11ec437873ae6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866929"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276349"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 
@@ -116,7 +116,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
 ### <a name="step-5-save-your-report"></a>Étape 5 : Enregistrer votre rapport
 
-1. [Enregistrez le rapport](../service-report-save.md).
+1. [Enregistrez le rapport](../create-reports/service-report-save.md).
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Utiliser les options de mise en forme pour définir manuellement les valeurs Minimum, Maximum et Cible
 
@@ -151,3 +151,4 @@ Une fois que vous avez terminé ces étapes, vous disposez d’un graphique en j
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+

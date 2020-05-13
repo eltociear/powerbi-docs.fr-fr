@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c72863407fea0cf550643e5193a8b514b2bb51bd
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82585064"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276326"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
@@ -24,11 +24,11 @@ Supposons que vous souhaitiez permettre aux lecteurs de vos rapports d’examine
 
 ![Animation de segment](media/power-bi-visualization-slicers/slicer2.gif)
 
-Cet article décrit la création et le débogage d’un segment simple en utilisant l’[exemple Analyse de la vente au détail](../sample-retail-analysis.md) gratuit. Il montre également comment vous pouvez contrôler les visuels affectés par un segment et comment effectuer une synchronisation avec des segments se trouvant sur d’autres pages. Voici d’autres articles qui expliquent comment créer des types spécifiques de segments :
+Cet article décrit la création et le débogage d’un segment simple en utilisant l’[exemple Analyse de la vente au détail](../create-reports/sample-retail-analysis.md) gratuit. Il montre également comment vous pouvez contrôler les visuels affectés par un segment et comment effectuer une synchronisation avec des segments se trouvant sur d’autres pages. Voici d’autres articles qui expliquent comment créer des types spécifiques de segments :
 
-- [s de plages numériques](../desktop-slicer-numeric-range.md).
+- [s de plages numériques](../create-reports/desktop-slicer-numeric-range.md).
 - [Segments de dates relatives](desktop-slicer-filter-date-range.md).
-- [Segments redimensionnables](../power-bi-slicer-filter-responsive.md) réactifs.
+- [Segments redimensionnables](../create-reports/power-bi-slicer-filter-responsive.md) réactifs.
 - [Segments de hiérarchie](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) avec plusieurs champs.
 
 ## <a name="when-to-use-a-slicer"></a>Quand utiliser un segment
@@ -92,7 +92,7 @@ Utilisez les interactions entre les visuels pour empêcher certaines visualisati
 
    Maintenant, quand vous sélectionnez des noms et des plages de dates dans les segments, le graphique **Total Sales Variance by FiscalMonth and District Manager** est inchangé.
 
-Pour plus d’informations sur la modification des interactions, consultez [Modifier l’interaction des visuels dans un rapport Power BI](../service-reports-visual-interactions.md).
+Pour plus d’informations sur la modification des interactions, consultez [Modifier l’interaction des visuels dans un rapport Power BI](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synchroniser et utiliser des segments dans d’autres pages
 À compter de la mise à jour de février 2018 de Power BI, vous pouvez synchroniser un segment et l’utiliser dans toutes les pages d’un rapport ou dans certaines pages uniquement. 
@@ -134,7 +134,7 @@ Dans le rapport actuel, la page **District Monthly Sales** affiche également un
 ## <a name="filtering-slicers"></a>Filtrage des sélecteurs
 Vous pouvez appliquer des filtres de niveau visuel aux sélecteurs pour réduire la liste des valeurs affichées dans les sélecteurs. Par exemple, vous pouvez exclure les valeurs vides d’un sélecteur de liste ou exclure certaines dates d’un sélecteur de plage. Ceci affecte seulement *les valeurs qui sont affichées dans le sélecteur*, et non pas *le filtre que le sélecteur applique à d’autres visuels* quand vous faites une sélection. Par exemple, supposons que vous appliquez un filtre à un sélecteur de plage pour montrer seulement certaines dates. La sélection sur le sélecteur montre seulement la première et la dernière date de cette plage, mais vous pouvez néanmoins encore voir d’autres dates dans vos autres visuels. Une fois que vous avez changé la plage sélectionnée dans le sélecteur, vous voyez que les autres visuels se mettent à jour. Effacer la sélection du sélecteur montre à nouveau toutes les dates.
 
-Pour plus d’informations sur les filtres de niveau visuel, consultez [Types de filtres](../power-bi-report-filter-types.md).
+Pour plus d’informations sur les filtres de niveau visuel, consultez [Types de filtres](../create-reports/power-bi-report-filter-types.md).
 
 ## <a name="format-slicers"></a>Mettre en forme des segments
 Différentes options de mise en forme sont disponibles selon le type de segment. À l’aide de l’orientation **Horizontal**, de la disposition **Dynamique** et de la coloration des **Éléments**, vous pouvez produire des boutons ou mosaïques, plutôt que des éléments de liste standard et redimensionner les éléments de segment pour s’adapter aux différentes tailles et dispositions d’écran.  
@@ -169,7 +169,7 @@ Différentes options de mise en forme sont disponibles selon le type de segment.
 
     ![Options horizontales](media/power-bi-visualization-slicers/6-buttons.png)
 
-Pour plus d’informations sur les orientations horizontales et les dispositions dynamiques, consultez [Créer un segment réactif que vous pouvez redimensionner dans Power BI](../power-bi-slicer-filter-responsive.md).
+Pour plus d’informations sur les orientations horizontales et les dispositions dynamiques, consultez [Créer un segment réactif que vous pouvez redimensionner dans Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Options des contrôles de sélection (uniquement pour les segments de liste)
 1. Sous **Contrôles de sélection**, **activez** l’option **Afficher l’option « Tout sélectionner »** pour ajouter un élément **Tout sélectionner** au segment. 
@@ -222,4 +222,3 @@ Pour plus d’informations, consultez les articles suivants :
 - [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tableaux dans Power BI](power-bi-visualization-tables.md)
-

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866584"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279178"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -62,7 +62,7 @@ L’état de développement de la matrice sera enregistré avec le rapport. Une 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
-> Si vous créez un rapport en plus d’un modèle multidimensionnel Analysis Services, des considérations spécifiques doivent être prises en compte pour développer/réduire si le modèle utilise la fonctionnalité de membre par défaut. Pour plus d’informations, consultez [Utiliser des modèles multidimensionnels dans Power BI](../desktop-default-member-multidimensional-models.md)
+> Si vous créez un rapport en plus d’un modèle multidimensionnel Analysis Services, des considérations spécifiques doivent être prises en compte pour développer/réduire si le modèle utilise la fonctionnalité de membre par défaut. Pour plus d’informations, consultez [Utiliser des modèles multidimensionnels dans Power BI](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Utilisation de la descente dans la hiérarchie avec le visuel de matrice
 Le visuel de la matrice vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
@@ -211,7 +211,7 @@ Si vous avez une colonne ou une mesure qui contient des URL de site web, vous po
 
 Activez **URL Web**, puis sélectionnez un champ à utiliser comme URL de la colonne. Une fois appliquées, les valeurs de ce champ (colonne) deviennent des liens actifs. Placez le curseur dessus pour voir le lien, puis sélectionnez-le pour accéder à cette page. 
 
-Pour plus d’informations, consultez [Mise en forme conditionnelle des tableaux](../desktop-conditional-table-formatting.md).
+Pour plus d’informations, consultez [Mise en forme conditionnelle des tableaux](../create-reports/desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Couleurs d’ombrage et de police avec les visuels Matrice
 Avec le visuel de matrice, vous pouvez appliquer la mise en forme conditionnelle (couleurs et ombrage ainsi que barres de données) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.
@@ -233,3 +233,5 @@ Sélectionnez *Contrôles avancés* pour afficher une boîte de dialogue, ce qui
 [Visuel Power Apps pour Power BI](power-bi-visualization-powerapp.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

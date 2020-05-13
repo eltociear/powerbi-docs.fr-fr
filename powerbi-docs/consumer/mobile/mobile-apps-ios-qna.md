@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 78bfc17e81a3de3ce9f6f32c694de902ae0a1ef9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 015c227fd600827e306c8b31b68992e33e6a3206
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114836"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276188"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -102,7 +102,7 @@ Vous pouvez améliorer les résultats que vous et vos clients obtenez lorsque vo
 * Suivez ces [conseils pour poser des questions dans Questions et réponses](../end-user-q-and-a-tips.md) dans le service Power BI ou l’analyste virtuel des questions et réponses dans votre application mobile iOS.
 
 ### <a name="how-to-enhance-the-dataset"></a>Comment améliorer le jeu de données
-* Améliorez le jeu de données dans le service Power BI ou Power BI Desktop pour [que vos données fonctionnent bien avec Questions et réponses et l’analyste virtuel des questions et réponses](../../service-prepare-data-for-q-and-a.md).
+* Améliorez le jeu de données dans le service Power BI ou Power BI Desktop pour [que vos données fonctionnent bien avec Questions et réponses et l’analyste virtuel des questions et réponses](../../create-reports/service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Questions et réponses dans le service Power BI](../end-user-q-and-a.md)

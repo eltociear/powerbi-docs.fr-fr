@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c4d1ce3a4a15c2d79951865e03131e001260e2c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802069"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276073"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :
@@ -24,7 +24,7 @@ S’applique à :
 
 Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations connexes en matière de décisionnel. Aucune navigation ni recherche n’est nécessaire.
 
-Imaginons qu’un collègue ait [créé un code QR dans le service Power BI](../../service-create-qr-code-for-tile.md) pour un rapport ou une vignette dans un tableau de bord, qu’il ait partagé le tableau de bord ou le rapport avec vous et qu’il ait placé le code QR dans un emplacement clé, tel qu’un e-mail ou un élément spécifique. 
+Imaginons qu’un collègue ait [créé un code QR dans le service Power BI](../../create-reports/service-create-qr-code-for-tile.md) pour un rapport ou une vignette dans un tableau de bord, qu’il ait partagé le tableau de bord ou le rapport avec vous et qu’il ait placé le code QR dans un emplacement clé, tel qu’un e-mail ou un élément spécifique. 
 
 Vous pouvez scanner le code QR pour accéder directement à la vignette ou au rapport approprié depuis votre téléphone, à l’aide du scanner de l’application Power BI ou de tout autre scanner installé sur votre téléphone. 
 
@@ -75,8 +75,7 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Se connecter aux données Power BI réelles](mobile-apps-data-in-real-world-context.md) avec les applications mobiles
-* [Créer un code QR pour une vignette dans le service Power BI](../../service-create-qr-code-for-tile.md)
-* [Créer un code QR pour un rapport dans le service Power BI](../../service-create-qr-code-for-report.md)
+* [Créer un code QR pour une vignette dans le service Power BI](../../create-reports/service-create-qr-code-for-tile.md)
+* [Créer un code QR pour un rapport dans le service Power BI](../../create-reports/service-create-qr-code-for-report.md)
 * Vous pouvez aussi [scanner un code QR avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md).
 * Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378866"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278604"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Guide d’optimisation pour Power BI
 
@@ -26,7 +26,7 @@ Cet article fournit des conseils qui permettent aux développeurs et aux adminis
 
 ## <a name="optimizing-the-data-model"></a>Optimisation du modèle de données
 
-Le modèle de données prend en charge l’intégralité de l’expérience de visualisation. Les modèles de données sont hébergés de manière externe ou internes et dans Power BI ils sont appelés _jeux de données_. Il est important de comprendre vos options et de choisir le type de jeu de données approprié pour votre solution. Les trois modes de jeux de données sont les suivants : Import, DirectQuery et Composite. Pour plus d’informations, consultez [Jeux de données dans le service Power BI](../service-datasets-understand.md) et [Modes de jeux de données dans le service Power BI](../service-dataset-modes-understand.md).
+Le modèle de données prend en charge l’intégralité de l’expérience de visualisation. Les modèles de données sont hébergés de manière externe ou internes et dans Power BI ils sont appelés _jeux de données_. Il est important de comprendre vos options et de choisir le type de jeu de données approprié pour votre solution. Les trois modes de jeux de données sont les suivants : Import, DirectQuery et Composite. Pour plus d’informations, consultez [Jeux de données dans le service Power BI](../connect-data/service-datasets-understand.md) et [Modes de jeux de données dans le service Power BI](../connect-data/service-dataset-modes-understand.md).
 
 Pour obtenir des instructions spécifiques sur les modes de jeux de données, consultez :
 
@@ -40,7 +40,7 @@ Les visualisations Power BI peuvent être des tableaux de bord, des rapports Po
 
 ### <a name="dashboards"></a>Tableaux de bord
 
-Il est important de comprendre que Power BI conserve un cache pour vos mosaïques de tableaux de bord, à l’exception des mosaïques de rapport actif et des mosaïques de diffusion en continu. Pour plus d’informations, consultez [Actualisation des données dans Power BI (actualisation de la mosaïque)](../refresh-data.md#tile-refresh). Si votre jeu de données applique la [sécurité au niveau des lignes](../service-admin-rls.md) dynamique, veillez à comprendre les implications en matière de performances, car les mosaïques seront mises en cache par utilisateur.
+Il est important de comprendre que Power BI conserve un cache pour vos mosaïques de tableaux de bord, à l’exception des mosaïques de rapport actif et des mosaïques de diffusion en continu. Pour plus d’informations, consultez [Actualisation des données dans Power BI (actualisation de la mosaïque)](../connect-data/refresh-data.md#tile-refresh). Si votre jeu de données applique la [sécurité au niveau des lignes](../admin/service-admin-rls.md) dynamique, veillez à comprendre les implications en matière de performances, car les mosaïques seront mises en cache par utilisateur.
 
 Lorsque vous épinglez des mosaïques de rapports actifs à un tableau de bord, elles ne sont pas traitées à partir du cache de requête. Au lieu de cela, elles se comportent comme des rapports et effectuent des requêtes sur des cœurs dorsaux à la volée.
 
@@ -75,7 +75,7 @@ Pour garantir des performances élevées, veillez à mettre à l’épreuve chaq
 
 Les conceptions des rapports paginés Power BI peuvent être optimisées en appliquant la conception des meilleures pratiques à l’extraction des données du rapport. Pour plus d’informations, consultez les [conseils sur l’extraction de données pour les rapports paginés](report-paginated-data-retrieval.md).
 
-En outre, assurez-vous que votre capacité dispose de suffisamment de mémoire allouée à la [charge de travail des rapports paginés](../service-admin-premium-workloads.md#paginated-reports).
+En outre, assurez-vous que votre capacité dispose de suffisamment de mémoire allouée à la [charge de travail des rapports paginés](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## <a name="optimizing-the-environment"></a>Optimisation de l’environnement
 
@@ -83,11 +83,11 @@ Vous pouvez optimiser l’environnement Power BI en configurant les paramètres 
 
 ### <a name="capacity-settings"></a>Paramètres de capacité
 
-Lorsque vous utilisez des capacités dédiées, disponibles avec Power BI Premium (niveaux tarifaires P) ou Power BI Embedded (niveaux tarifaires A, A4-A6), vous pouvez gérer les paramètres de capacité. Pour plus d’informations, consultez [Gestion des capacités Premium](../service-premium-capacity-manage.md). Pour obtenir des conseils sur la façon d’optimiser votre capacité, consultez [Optimisation des capacités Premium](../service-premium-capacity-optimize.md).
+Lorsque vous utilisez des capacités dédiées, disponibles avec Power BI Premium (niveaux tarifaires P) ou Power BI Embedded (niveaux tarifaires A, A4-A6), vous pouvez gérer les paramètres de capacité. Pour plus d’informations, consultez [Gestion des capacités Premium](../admin/service-premium-capacity-manage.md). Pour obtenir des conseils sur la façon d’optimiser votre capacité, consultez [Optimisation des capacités Premium](../admin/service-premium-capacity-optimize.md).
 
 ### <a name="gateway-sizing"></a>Dimensionnement de la passerelle
 
-La passerelle est obligatoire chaque fois que Power BI doit accéder à des données qui ne sont pas directement accessibles sur Internet. Vous pouvez installer la [passerelle de données locale](../service-gateway-onprem.md) sur un serveur local ou sur une infrastructure IaaS (infrastructure as a service) hébergée sur une machine virtuelle.
+La passerelle est obligatoire chaque fois que Power BI doit accéder à des données qui ne sont pas directement accessibles sur Internet. Vous pouvez installer la [passerelle de données locale](../connect-data/service-gateway-onprem.md) sur un serveur local ou sur une infrastructure IaaS (infrastructure as a service) hébergée sur une machine virtuelle.
 
 Pour comprendre les charges de travail et les suggestions de dimensionnement de la passerelle, consultez [Dimensionnement des passerelles de données locales](gateway-onprem-sizing.md).
 
@@ -96,7 +96,7 @@ Pour comprendre les charges de travail et les suggestions de dimensionnement de 
 La latence du réseau peut affecter les performances du rapport en augmentant le temps nécessaire aux demandes pour atteindre le service Power BI et aux réponses pour être envoyées. Les abonnés de Power BI sont affectés à une région spécifique.
 
 > [!TIP]
-> Pour déterminer où se trouve votre abonné, consultez [Où est situé mon abonné Power BI ?](../service-admin-where-is-my-tenant-located.md)
+> Pour déterminer où se trouve votre abonné, consultez [Où est situé mon abonné Power BI ?](../admin/service-admin-where-is-my-tenant-located.md)
 
 Lorsque les utilisateurs d’un client accèdent au service Power BI, leurs requêtes sont acheminées vers cette région. Lorsque les requêtes atteignent le service Power BI, celui-ci peut ensuite envoyer des requêtes supplémentaires (par exemple, à la source de données sous-jacente ou à la passerelle) qui sont également soumises à la latence du réseau.
 
@@ -115,3 +115,7 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 - Livre blanc : [Planification d’un déploiement de Power BI en entreprise](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
+
+
+
+

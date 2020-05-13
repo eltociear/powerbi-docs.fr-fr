@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 65d1401a66f8e670df1af3097f0e99fb6b647022
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82615700"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272807"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Sous-rapports dans les rapports paginés Power BI
 
@@ -74,7 +74,7 @@ Maintenant que vous avez enregistré les deux rapports dans le même espace de t
   
  Vous pouvez placer un sous-rapport dans le corps principal du rapport ou dans une région de données. Si vous le placez dans une région de données, il se répète avec chaque instance du groupe ou chaque ligne de la région de données. Vous pouvez passer une valeur du groupe ou de la ligne au sous-rapport. Dans la propriété de la valeur du sous-rapport, utilisez une expression de champ pour le champ qui contient la valeur à passer au paramètre du sous-rapport.  
   
- Pour plus d’informations sur l’utilisation des paramètres et des sous-rapports, consultez [Ajouter un sous-rapport et des paramètres](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs.md) dans la documentation de SQL Server Reporting Services.  
+ Pour plus d’informations sur l’utilisation des paramètres et des sous-rapports, consultez [Ajouter un sous-rapport et des paramètres](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) dans la documentation de SQL Server Reporting Services.  
 
 ## <a name="preview-paginated-reports-in-report-builder"></a>Aperçu de rapports paginés dans Report Builder
 

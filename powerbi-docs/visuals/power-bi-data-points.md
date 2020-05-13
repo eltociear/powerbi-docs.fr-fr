@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a874875c470cd85720570e57b7c6d7cf50dabca1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381442"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274164"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 Lors du rendu d’un visuel dans Power BI, la visualisation doit être rapide et précise. Cela nécessite des algorithmes sous-jacents configurés pour chaque type de visuel. Les visuels dans Power BI doivent être suffisamment flexibles pour gérer différentes tailles de jeux de données. Certains jeux de données n’ont que peu de points de données, tandis que d’autres jeux de données ont plusieurs pétaoctets de points de données. Cet article explique les stratégies utilisées par Power BI pour afficher des visualisations.
 
@@ -57,7 +59,7 @@ Les limites dynamiques sont appliquées automatiquement lorsque le serveur en es
 ## <a name="strategies-and-data-point-limits-by-visual-type"></a>Stratégies et limites par type de visuel du point de données
 
 ### <a name="area-chart"></a>Graphique en aires
-Consultez [Fonctionnement de l’échantillonnage de ligne](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Consultez [Fonctionnement de l’échantillonnage de ligne](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="barcolumn-chart"></a>Graphique à barres/histogramme
 - En mode par catégorie
@@ -97,10 +99,10 @@ La carte choroplèthe peut utiliser les statistiques ou les limites dynamiques. 
 - 3 500 derniers
 
 ### <a name="line-chart"></a>Graphique en courbes
-Consultez [Fonctionnement de l’échantillonnage de ligne](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Consultez [Fonctionnement de l’échantillonnage de ligne](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="line-chart-high-density"></a>Graphique en courbes, haute densité
-Consultez [Échantillonnage à haute densité](../desktop-high-density-sampling.md)
+Consultez [Échantillonnage à haute densité](../create-reports/desktop-high-density-sampling.md)
 
 ### <a name="map"></a>Carte 
 - Points max. : 3,500
@@ -109,9 +111,9 @@ Selon la configuration, une carte peut avoir :
 - Emplacement : 3 500 premiers
 - Emplacement, taille : 3 500 premiers
 - Agrégats d’emplacement, de latitude et de longitude (+/- taille) : 3 500 premiers
-- Latitude, longitude : consultez [Nuages de points à haute densité](desktop-high-density-scatter-charts.md)
+- Latitude, longitude : consultez [Nuages de points à haute densité](../create-reports/desktop-high-density-scatter-charts.md)
 - Latitude, longitude, taille : 3 500 premiers
-- Légende, latitude, longitude : consultez [Nuages de points à haute densité](desktop-high-density-scatter-charts.md)
+- Légende, latitude, longitude : consultez [Nuages de points à haute densité](../create-reports/desktop-high-density-scatter-charts.md)
 - Légende, latitude, longitude, taille : 233 premières légendes, 15 premières latitudes et longitudes (possibilité d’utiliser les statistiques ou les limites dynamiques)
 - Emplacement, légende, latitude et longitude en tant qu’agrégats (+/- taille) : 233 premiers emplacements, 15 premières légendes (possibilité d’utiliser les statistiques ou les limites dynamiques)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751637"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275958"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Incorporation de contenu Power BI avec le principal de service et le secret de l’application
 
@@ -183,14 +183,14 @@ Une fois votre contenu incorporé, vous êtes prêt à [passer à la production]
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-* Un principal de service ne fonctionne qu’avec les [nouveaux espaces de travail](../../service-create-the-new-workspaces.md).
+* Un principal de service ne fonctionne qu’avec les [nouveaux espaces de travail](../../collaborate-share/service-create-the-new-workspaces.md).
 * **Mon espace de travail** n’est pas pris en charge lors de l’utilisation d’un principal de service.
 * Une capacité dédiée est nécessaire pour passer en production.
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.
 * Vous devez disposer de droits d’administrateur Power BI pour activer un principal de service dans les paramètres du développeur du portail d’administration Power BI.
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporées pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
-* La gestion de [flux de données](../../service-dataflows-overview.md) n’est pas prise en charge.
+* La gestion de [flux de données](../../transform-model/service-dataflows-overview.md) n’est pas prise en charge.
 * Le principal de service ne prend actuellement pas en charge aucune API administrateur.
 * Quand vous utilisez un principal de service avec une source de données [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview), le principal de service doit lui-même disposer d’autorisations d’instance Azure Analysis Services. L’utilisation d’un groupe de sécurité qui contient le principal du service à cet effet ne fonctionne pas.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290565"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278672"
 ---
 # <a name="referencing-power-query-queries"></a>Référencement des requêtes Power Query
 
@@ -42,7 +42,7 @@ L'utilisation de la fonction [Table.Buffer](/powerquery-m/table-buffer) dans **R
 
 En général, nous vous recommandons de référencer les requêtes pour éviter la duplication de la logique dans vos autres requêtes. Toutefois, comme le décrit le présent article, cette approche de conception risque de ralentir l’actualisation des données et surcharger les sources de données.
 
-Nous vous recommandons plutôt de créer un [dataflow](../service-dataflows-overview.md). L'utilisation d'un dataflow peut accélérer l’actualisation des données et réduire l'impact sur vos sources de données.
+Nous vous recommandons plutôt de créer un [dataflow](../transform-model/service-dataflows-overview.md). L'utilisation d'un dataflow peut accélérer l’actualisation des données et réduire l'impact sur vos sources de données.
 
 Vous pouvez concevoir le dataflow pour encapsuler les données source et les transformations. Comme le dataflow est un stockage de données persistant dans le service Power BI, l’extraction de ses données est rapide. Ainsi, même lorsque les requêtes de référencement se traduisent par de multiples demandes de dataflow, les délais d’actualisation des données peuvent être améliorés.
 
@@ -52,7 +52,7 @@ Dans l'exemple, si **Requête1** est modifiée en tant qu'entité de dataflow, *
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Préparation des données en libre-service dans Power BI](../service-dataflows-overview.md)
-- [Création et utilisation de flux de données dans Power BI](../service-dataflows-create-use.md)
+- [Préparation des données en libre-service dans Power BI](../transform-model/service-dataflows-overview.md)
+- [Création et utilisation de flux de données dans Power BI](../transform-model/service-dataflows-create-use.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

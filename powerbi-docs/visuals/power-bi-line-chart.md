@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867021"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274187"
 ---
 # <a name="line-charts-in-power-bi"></a>Graphiques en courbes dans Power BI
 
@@ -32,7 +32,7 @@ Ces instructions utilisent l’app Exemple Vente et marketing pour créer un gra
 > [!NOTE]
 > Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.
 
-1. Démarrez sur une page de rapport vierge. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
+1. Démarrez sur une page de rapport vierge. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 2. Dans le volet Champs, sélectionnez **SalesFact** \> **Unités totales**, puis **Date** > **Mois**.  Power BI crée un histogramme sur votre canevas de rapport.
 
@@ -74,7 +74,7 @@ Pour afficher les valeurs très divergentes sur un même graphique, utilisez un 
    ![valeurs très divergentes](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
-Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
+Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../create-reports/power-bi-report-add-filter.md).
 
 La sélection d’un point de données sur un graphique en courbes entraîne la mise en surbrillance et le filtrage croisé des autres visualisations sur la page du rapport, et vice versa. Pour suivre la procédure, ouvrez l’onglet **Parts de marché**.  
 
@@ -86,7 +86,7 @@ Dans cet exemple, nous avons sélectionné un point de données qui comprend : 
 
 Notez comment l’histogramme est mis en surbrillance croisée et comment le filtrage croisé est appliqué à la jauge.
 
-Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../service-reports-visual-interactions.md).
+Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Un graphique en courbes ne peut pas avoir deux axes Y.  Vous aurez besoin pour cela d’un graphique combiné.
@@ -95,5 +95,8 @@ Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+
 
 

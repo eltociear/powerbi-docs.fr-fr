@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a8c8c50369911e76376ccbda3a95743813fde6bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263665"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273221"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Aide pour les relations actives et inactives
 
@@ -114,7 +114,7 @@ Cette conception de modèle prend en charge la conception de rapport suivante.
 
 Les filtres de page de rapport par trimestre 2019 Q4. Les visuels de table sont regroupés par mois et affichent différentes statistiques de ventes. Les mesures **Commandes** et **Commandes expédiées** donnent des résultats différents. Elles utilisent chacune la même logique de résumé (nombre de lignes de la table **Ventes**), mais une propagation différente du filtre de table **Date**.
 
-Notez que le segment trimestre comprend un élément VIDE. Cet élément de segment s’affiche à la suite de l'[expansion de table](../desktop-relationships-understand.md#strong-relationships). Alors que chaque ligne de table **Ventes** a une date de commande, certaines lignes ont une date d’expédition VIDE. Ces commandes ne sont pas encore expédiées. L’expansion de table prend également en compte les relations inactives. Des VIDES peuvent donc apparaître en raison des VIDES du côté « plusieurs » de la relation, ou en raison de problèmes d’intégrité des données.
+Notez que le segment trimestre comprend un élément VIDE. Cet élément de segment s’affiche à la suite de l'[expansion de table](../transform-model/desktop-relationships-understand.md#strong-relationships). Alors que chaque ligne de table **Ventes** a une date de commande, certaines lignes ont une date d’expédition VIDE. Ces commandes ne sont pas encore expédiées. L’expansion de table prend également en compte les relations inactives. Des VIDES peuvent donc apparaître en raison des VIDES du côté « plusieurs » de la relation, ou en raison de problèmes d’intégrité des données.
 
 ## <a name="recommendations"></a>Recommandations
 
@@ -129,7 +129,7 @@ Dans certains cas, toutefois, vous pouvez définir une ou plusieurs relations in
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md)
+- [Relations de modèle dans Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md)
 - [Aide à la résolution des problèmes de relations](relationships-troubleshoot.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

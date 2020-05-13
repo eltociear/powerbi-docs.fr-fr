@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: dfe5e6350d0209f836900a921aadc5347b181766
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802046"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276165"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scanner un code-barres avec votre appareil à partir de l’application mobile Power BI
 Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
@@ -25,7 +25,7 @@ S’applique à :
 |:--- |:--- |:--- |:--- |
 |iPhone |iPad |Téléphones Android |Tablettes Android |
 
-Supposons qu’un collègue ait [marqué un champ de code-barres dans un rapport Power BI Desktop](../../desktop-mobile-barcodes.md) et partagé le rapport avec vous. 
+Supposons qu’un collègue ait [marqué un champ de code-barres dans un rapport Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md) et partagé le rapport avec vous. 
 
 ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
 
@@ -64,13 +64,12 @@ La valeur de code-barres que vous avez scannée existe dans votre modèle, mais 
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>« Apparemment, vous n’avez aucun rapport pouvant être filtré par code-barres. »
 Cela signifie que vous n’avez aucun rapport prenant en charge les codes-barres. Le scanner de codes-barres peut filtrer uniquement les rapports qui possèdent une colonne marquée **Code-barres**.  
 
-Vérifiez que vous ou le propriétaire du rapport avez marqué une colonne **Code-barres** dans Power BI Desktop. En savoir plus sur [le marquage d’un champ de code-barres dans Power BI Desktop](../../desktop-mobile-barcodes.md)
+Vérifiez que vous ou le propriétaire du rapport avez marqué une colonne **Code-barres** dans Power BI Desktop. En savoir plus sur [le marquage d’un champ de code-barres dans Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 
 ### <a name="couldnt-filter-report---looks-like-this-barcode-doesnt-exist-in-the-report-data"></a>« Impossible de filtrer le rapport - Il semble que ce code-barres n’existe pas dans les données du rapport. »
 Le rapport que vous avez choisi de filtrer est basé sur un modèle de données qui ne comprend pas cette valeur de code-barres. Par exemple, le produit « eau minérale » n’est pas inclus dans le rapport. Vous pouvez scanner un autre produit, choisir un autre rapport (si plusieurs rapports sont disponibles) ou afficher le rapport sans filtrage. 
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Marquer un champ de code-barres dans Power BI Desktop](../../desktop-mobile-barcodes.md)
+* [Marquer un champ de code-barres dans Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md)
 * [Vignettes d’un tableau de bord dans Power BI](../end-user-tiles.md)
 * [Tableaux de bord dans Power BI](../end-user-dashboards.md)
-

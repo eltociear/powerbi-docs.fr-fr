@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525534"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279017"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Surveiller les performances du rapport dans Power BI
 
-Surveillez les performances des rapports dans Power BI Desktop à l’aide de l’[application Power BI Premium Metrics](../service-premium-metrics-app.md), découvrez où se trouvent les goulots d’étranglement et apprenez à améliorer les performances des rapports.
+Surveillez les performances des rapports dans Power BI Desktop à l’aide de l’[application Power BI Premium Metrics](../admin/service-premium-metrics-app.md), découvrez où se trouvent les goulots d’étranglement et apprenez à améliorer les performances des rapports.
 
 La surveillance des performances est utile dans les cas suivants :
 
@@ -39,7 +39,7 @@ Utilisez [Diagnostic de requête](/power-query/QueryDiagnostics) dans Power BI D
 
 ## <a name="use-performance-analyzer"></a>Utiliser l’Analyseur de performances
 
-Utilisez [Analyseur de performances](../desktop-performance-analyzer.md) dans Power BI Desktop pour découvrir comment se comportent chacun de vos éléments de rapport, tels que les éléments visuels et les formules DAX. Il est particulièrement utile de déterminer si les problèmes de performances sont dus à la requête ou au rendu visuel.
+Utilisez [Analyseur de performances](../create-reports/desktop-performance-analyzer.md) dans Power BI Desktop pour découvrir comment se comportent chacun de vos éléments de rapport, tels que les éléments visuels et les formules DAX. Il est particulièrement utile de déterminer si les problèmes de performances sont dus à la requête ou au rendu visuel.
 
 ## <a name="use-sql-server-profiler"></a>Utiliser SQL Server Profiler
 
@@ -77,15 +77,15 @@ L’un des avantages de l’utilisation de SQL Server Profiler est qu’il est p
 
 ## <a name="monitor-premium-metrics"></a>Surveiller les mesures Premium
 
-Pour les capacités Power BI Premium, utilisez l’**application Power BI Premium Metrics** pour gérer l’intégrité et la capacité de votre abonnement Power BI Premium. Pour plus d’informations, consultez l’[application Power BI Premium Metrics](../service-premium-metrics-app.md).
+Pour les capacités Power BI Premium, utilisez l’**application Power BI Premium Metrics** pour gérer l’intégrité et la capacité de votre abonnement Power BI Premium. Pour plus d’informations, consultez l’[application Power BI Premium Metrics](../admin/service-premium-metrics-app.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur cet article, consultez les ressources suivantes :
 
 - [Diagnostic de requête](/power-query/QueryDiagnostics)
-- [Analyseur de performances](../desktop-performance-analyzer.md)
+- [Analyseur de performances](../create-reports/desktop-performance-analyzer.md)
 - [Résoudre les problèmes de performances de rapports dans Power BI](report-performance-troubleshoot.md)
-- [Application Power BI Premium Metrics](../service-premium-metrics-app.md)
+- [Application Power BI Premium Metrics](../admin/service-premium-metrics-app.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

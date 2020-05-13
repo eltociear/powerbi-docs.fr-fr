@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a38b3aa72c37d10ce19344ebe6f3c3f286661d62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120272"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275521"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -65,7 +65,7 @@ Vous pouvez également rechercher et installer des applications à partir de Mic
 
 ## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Obtenir une application à partir du site web Microsoft AppSource 
 
-Dans cet exemple, nous allons ouvrir un des exemples d’applications Microsoft. Sur AppSource, vous trouverez des applications pour de nombreux services que vous utilisez pour votre activité.  Des services comme Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, etc. Pour plus d’informations, consultez [Applications pour les services que vous utilisez avec Power BI](../service-connect-to-services.md). 
+Dans cet exemple, nous allons ouvrir un des exemples d’applications Microsoft. Sur AppSource, vous trouverez des applications pour de nombreux services que vous utilisez pour votre activité.  Des services comme Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, etc. Pour plus d’informations, consultez [Applications pour les services que vous utilisez avec Power BI](../connect-data/service-connect-to-services.md). 
 
 1. Dans un navigateur, ouvrez [https://appsource.microsoft.com](https://appsource.microsoft.com), puis sélectionnez **Applications Power BI**.
 
@@ -142,3 +142,4 @@ De temps à autre, les créateurs d’applications sont susceptibles de publier 
 * [Revenir à la vue d’ensemble des applications](end-user-apps.md)
 * [Voir un rapport Power BI](end-user-report-open.md)
 * [Autres moyens de partager du contenu avec vous](end-user-shared-with-me.md)
+

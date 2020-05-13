@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 717627e171df6a0843453a72b54ec591a7fd5a19
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78923192"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276625"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Créer un rapport paginé sur la base d’un jeu de données partagé Power BI
 
@@ -20,14 +20,14 @@ Vous pouvez utiliser un jeu de données créé dans Power BI Desktop comme sourc
 
 ![Rapport paginé Power BI Desktop vers un générateur de rapports](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Le jeu de données ne doit pas nécessairement se trouver dans un espace de travail d’une capacité Premium, et vous n’avez pas besoin d’être membre de cet espace de travail. Vous devez simplement disposer de [l’autorisation Build](../service-datasets-build-permissions.md) pour le jeu de données. Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium.
+Le jeu de données ne doit pas nécessairement se trouver dans un espace de travail d’une capacité Premium, et vous n’avez pas besoin d’être membre de cet espace de travail. Vous devez simplement disposer de [l’autorisation Build](../connect-data/service-datasets-build-permissions.md) pour le jeu de données. Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium.
 
 ## <a name="what-you-need"></a>Ce dont vous avez besoin
 
 Voici une liste de ce dont vous avez besoin et ce dont vous n’avez pas besoin pour utiliser un jeu de données partagé dans un générateur de rapports Power BI.
 
 - Générateur de rapports Power BI. [Télécharger et installer le générateur de rapports Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Pour accéder à un jeu de données Power BI, vous devez disposer de l’autorisation Build pour le jeu de données. En savoir plus sur [l’autorisation de génération](../service-datasets-build-permissions.md).
+- Pour accéder à un jeu de données Power BI, vous devez disposer de l’autorisation Build pour le jeu de données. En savoir plus sur [l’autorisation de génération](../connect-data/service-datasets-build-permissions.md).
 - Vous n’avez pas besoin d’une licence Power BI Pro pour créer un rapport paginé dans le générateur de rapports. 
 - Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium. 
 - Facultatif : Si vous souhaitez suivre cet article, téléchargez le fichier exemple [Retail Analysis sample.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) de Power BI Desktop, ouvrez-le dans Power BI Desktop et ajoutez une table avec un grand nombre de colonnes. Dans le volet **Format**, désactivez **Totals**. Publiez-le ensuite dans un espace de travail du service Power BI.
@@ -74,7 +74,7 @@ Voici à présent les étapes à suivre pour obtenir la requête.
 1. Ouvrez le rapport Power BI (.pbix) dans Power BI Desktop.
 1. Vérifiez que vous disposez d’une table dans votre rapport contenant toutes les données que vous souhaitez dans votre rapport paginé. La table doit répondre à ces deux exigences :
     - Il doit s’agir d’une table plate, et non d’une matrice ou d’un autre visuel. S’il ne s’agit pas d’une table, effectuez une conversion en table, suivez les étapes de l’Analyseur de performances ci-après, puis reconvertissez-la en visuel de votre choix.
-    - Pour vos champs numériques, vous devez utiliser des *mesures prédéfinies*. Ils ont un symbole de calculatrice affiché en regard de chacun d’eux. Apprenez-en plus sur la [création de mesures](../desktop-measures.md). 
+    - Pour vos champs numériques, vous devez utiliser des *mesures prédéfinies*. Ils ont un symbole de calculatrice affiché en regard de chacun d’eux. Apprenez-en plus sur la [création de mesures](../transform-model/desktop-measures.md). 
 
         ![Icône de mesure](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 

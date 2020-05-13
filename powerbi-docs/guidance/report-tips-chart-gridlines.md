@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: c40d93cc06204ee7a935727c3b38494fdeb71256
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1a8dba63b0832886ce550cb2ed02249317e7240e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065522"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272761"
 ---
 # <a name="tips-to-control-chart-gridlines-in-power-bi-reports"></a>Conseils pour contrôler le quadrillage des graphes dans les rapports Power BI
 
@@ -36,7 +36,8 @@ En résumé, les trois meilleurs conseils pour contrôler le quadrillage des gra
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Conseils pour créer des rapports sensationnels](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Conseils pour créer des rapports sensationnels](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - Vidéo biDezine : [Trois meilleurs conseils pour contrôler le quadrillage des graphes dans Power BI](https://www.youtube.com/watch?v=Y-igshes2LI)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
+

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79494949"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276004"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -40,7 +40,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 **Locataire Power BI** : ensemble de ressources Power BI associées à un locataire AAD.
 
-**[Espace de travail Power BI](../../service-create-workspaces.md)** : conteneur du contenu dans Power BI.
+**[Espace de travail Power BI](../../collaborate-share/service-create-workspaces.md)** : conteneur du contenu dans Power BI.
 
 **Artefacts Power BI** : il existe plusieurs artefacts Power BI dans les espaces de travail Power BI tels que les tableaux de bord, rapports, jeux de données et flux de données.
 
@@ -52,11 +52,11 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 **Utilisateur d’application AAD (principal du service)** : identité qui représente l’application SaaS dans Power BI et qui est utilisée par l’application SaaS lors de l’appel d’API Power BI. Il doit s’agir d’une application web AAD. Il peut remplacer l’utilisateur *maître* pour s’authentifier auprès de Power BI.
 
-**Capacité** : ensemble de ressources dédiées à l’exécution du service Power BI. Les [capacités Power BI Premium](../../service-premium-what-is.md) sont destinées aux entreprises utilisant Power BI en interne, tandis que les [capacités Power BI Embedded](azure-pbie-create-capacity.md) sont conçues pour les développeurs d’applications développant des applications SaaS pour des tiers.
+**Capacité** : ensemble de ressources dédiées à l’exécution du service Power BI. Les [capacités Power BI Premium](../../admin/service-premium-what-is.md) sont destinées aux entreprises utilisant Power BI en interne, tandis que les [capacités Power BI Embedded](azure-pbie-create-capacity.md) sont conçues pour les développeurs d’applications développant des applications SaaS pour des tiers.
 
-**[Licence Power BI Pro](../../service-admin-purchasing-power-bi-pro.md)**  : licence basée sur l’utilisateur qui octroie des droits de publication de contenu sur les espaces de travail, de consommation des applications sans la capacité Premium, de partage des tableaux de bord et d’abonnement aux rapports et tableaux de bord.
+**[Licence Power BI Pro](../../admin/service-admin-purchasing-power-bi-pro.md)**  : licence basée sur l’utilisateur qui octroie des droits de publication de contenu sur les espaces de travail, de consommation des applications sans la capacité Premium, de partage des tableaux de bord et d’abonnement aux rapports et tableaux de bord.
 
-**[Modes de connectivité de données](../../desktop-directquery-about.md)** : connexion de sources de données à Power BI qui peut être effectuée dans différents modes :
+**[Modes de connectivité de données](../../connect-data/desktop-directquery-about.md)** : connexion de sources de données à Power BI qui peut être effectuée dans différents modes :
 
    * Importer : l’approche la plus courante pour obtenir des données.
    * DirectQuery : connexion directe aux données contenues dans son référentiel source.
@@ -104,9 +104,9 @@ Power BI Embedded prend en charge le déploiement multigéographique (fonctionna
 
 ### <a name="cost"></a>Cost
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) inclut un modèle d’achat basé sur les ressources, tel que **Power BI Premium**. Vous achetez une ou plusieurs capacités avec une puissance de calcul et une mémoire fixes. Cette capacité est le facteur de coût principal lorsque vous utilisez **Power BI Embedded**. Le nombre d’utilisateurs utilisant la capacité est illimité. La seule limite concerne la performance de la capacité. Une [licence Power BI Pro](../../service-admin-licensing-organization.md) est nécessaire pour chaque utilisateur *maître* ou des utilisateurs spécifiques devant accéder au portail Power BI.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) inclut un modèle d’achat basé sur les ressources, tel que **Power BI Premium**. Vous achetez une ou plusieurs capacités avec une puissance de calcul et une mémoire fixes. Cette capacité est le facteur de coût principal lorsque vous utilisez **Power BI Embedded**. Le nombre d’utilisateurs utilisant la capacité est illimité. La seule limite concerne la performance de la capacité. Une [licence Power BI Pro](../../admin/service-admin-licensing-organization.md) est nécessaire pour chaque utilisateur *maître* ou des utilisateurs spécifiques devant accéder au portail Power BI.
 
-Nous vous recommandons de tester et de mesurer la charge prévue sur votre capacité en simulant l’environnement et l’utilisation, puis d’effectuer un test de charge sur la capacité. Vous pouvez mesurer la charge et la performance avec les diverses mesures disponibles dans la capacité Azure ou l’[application de mesures de capacité Premium](../../service-admin-premium-monitor-capacity.md).
+Nous vous recommandons de tester et de mesurer la charge prévue sur votre capacité en simulant l’environnement et l’utilisation, puis d’effectuer un test de charge sur la capacité. Vous pouvez mesurer la charge et la performance avec les diverses mesures disponibles dans la capacité Azure ou l’[application de mesures de capacité Premium](../../admin/service-admin-premium-monitor-capacity.md).
 
 ### <a name="content-customization-and-authoring"></a>Personnalisation et création de contenu
 
@@ -131,7 +131,7 @@ Deux approches principales de gestion des données du locataire sont possibles.
 
 Si le stockage de l’application SaaS conserve une base de données distincte par locataire, la solution naturelle consiste à utiliser des jeux de données à locataire unique dans Power BI avec la chaîne de connexion de chaque jeu de données pointant vers la base de données correspondante.
 
-Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../../desktop-query-overview.md) ou à l’aide de l’[API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
+Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../../transform-model/desktop-query-overview.md) ou à l’aide de l’[API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
 
 ### <a name="data-isolation"></a>Isolation des données
 
@@ -193,7 +193,7 @@ Avec l’isolation basée sur la sécurité au niveau des lignes, la séparation
 
 ### <a name="scalability"></a>Extensibilité
 
-Avec l’isolation basée sur la sécurité au niveau des lignes, les données doivent tenir dans la limite de taille du jeu de données, qui est actuellement de 10 Go. Avec l’introduction de l’[actualisation incrémentielle](../../service-premium-incremental-refresh.md) et la publication à venir d’un point de terminaison XMLA pour les jeux de données Power BI, la limite de taille du jeu de données devrait augmenter de manière significative. Les données doivent toutefois toujours tenir dans la mémoire de la capacité, avec suffisamment de mémoire restante pour l’exécution des actualisations de données. Les déploiements à grande échelle ont besoin d’une capacité importante pour éviter que les utilisateurs ne rencontrent des problèmes liés à une mémoire dépassant les limites de la capacité actuelle. D’autres méthodes de gestion de l’échelle incluent l’utilisation d’[agrégations](../../desktop-aggregations.md) ou la connexion directe à la source de données à l’aide d’une connexion DirectQuery ou active, plutôt que la mise en cache de toutes les données dans la capacité Power BI.
+Avec l’isolation basée sur la sécurité au niveau des lignes, les données doivent tenir dans la limite de taille du jeu de données, qui est actuellement de 10 Go. Avec l’introduction de l’[actualisation incrémentielle](../../admin/service-premium-incremental-refresh.md) et la publication à venir d’un point de terminaison XMLA pour les jeux de données Power BI, la limite de taille du jeu de données devrait augmenter de manière significative. Les données doivent toutefois toujours tenir dans la mémoire de la capacité, avec suffisamment de mémoire restante pour l’exécution des actualisations de données. Les déploiements à grande échelle ont besoin d’une capacité importante pour éviter que les utilisateurs ne rencontrent des problèmes liés à une mémoire dépassant les limites de la capacité actuelle. D’autres méthodes de gestion de l’échelle incluent l’utilisation d’[agrégations](../../transform-model/desktop-aggregations.md) ou la connexion directe à la source de données à l’aide d’une connexion DirectQuery ou active, plutôt que la mise en cache de toutes les données dans la capacité Power BI.
 
 ### <a name="automation--operational-complexity"></a>Automatisation et complexité opérationnelle
 
@@ -244,17 +244,17 @@ Lorsque les utilisateurs finaux modifient ou créent des rapports, ils peuvent u
 
 **Considérations et limitations relatives à la capacité Power BI :**
 
-* Chaque capacité ne peut utiliser que sa mémoire et ses V-cores alloués, selon la [référence SKU achetée](../../service-premium-what-is.md).
-* Pour connaître la taille de jeu de données recommandée pour chaque référence SKU, consultez [Jeux de données volumineux Premium](../../service-premium-what-is.md#large-datasets).
+* Chaque capacité ne peut utiliser que sa mémoire et ses V-cores alloués, selon la [référence SKU achetée](../../admin/service-premium-what-is.md).
+* Pour connaître la taille de jeu de données recommandée pour chaque référence SKU, consultez [Jeux de données volumineux Premium](../../admin/service-premium-what-is.md#large-datasets).
 * La taille maximale de jeu de données dans une capacité dédiée est de 10 Go.
 * Le nombre d’actualisations planifiées pour un jeu de données en *mode d’importation* par jour est de 48.
 * L’intervalle entre les actualisations planifiées pour un jeu de données en *mode d’importation* est de 30 minutes.
-* Pour le nombre d’actualisations pouvant être exécutées simultanément sur une capacité, consultez la [gestion et l’optimisation des ressources](../../service-premium-what-is.md#capacity-nodes).
+* Pour le nombre d’actualisations pouvant être exécutées simultanément sur une capacité, consultez la [gestion et l’optimisation des ressources](../../admin/service-premium-what-is.md#capacity-nodes).
 * La durée moyenne de mise à l’échelle d’une capacité est comprise entre 1 et 2 minutes. Pendant ce temps, la capacité n’est pas disponible. Nous vous recommandons d’utiliser une approche de montée en puissance parallèle pour [éviter les temps d’arrêt](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Analytique incorporée avec Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../../service-premium-what-is.md)
+* [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Sécurité au niveau des lignes](embedded-row-level-security.md)

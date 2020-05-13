@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/5/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d4e31d8c3d2bcbbfdf0d2d932be70cc2cd5f2625
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 20b597507a3619b60ef1db058d0ff3c8fd63b867
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866492"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276671"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 
@@ -114,6 +114,7 @@ Approfondissez un peu plus pour voir ce qui contribue le plus aux changements mo
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Modifier l’interaction des visuels dans un rapport Power BI](../service-reports-visual-interactions.md)
+* [Modifier l’interaction des visuels dans un rapport Power BI](../create-reports/service-reports-visual-interactions.md)
 
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

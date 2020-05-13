@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b2c587be792e0ad6318dd066cb239949b30cc9e5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758620"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276556"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Afficher les données sous-jacentes d’une visualisation
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Afficher les données
 Une visualisation Power BI est construite à l’aide des données de vos jeux de données. Si vous voulez voir les calculs sous-jacents, Power BI vous permet d’*afficher* les données utilisées pour créer le visuel. Lorsque vous sélectionnez **Afficher les données**, Power BI affiche les données sous (ou à côté de) la visualisation.
@@ -24,7 +26,7 @@ Une visualisation Power BI est construite à l’aide des données de vos jeux 
 Vous pouvez également exporter les données utilisées pour créer la visualisation au format .xlsx ou .csv et les afficher dans Excel. Pour plus d’informations, consultez [Exporter des données à partir des visualisations Power BI](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> Les options *Afficher les données* et *Exporter les données* sont disponibles dans le service Power BI et dans Power BI Desktop. Toutefois, Power BI Desktop offre un niveau de détails supplémentaire. [*Afficher les enregistrements* affiche les lignes réelles du jeu de données](../desktop-see-data-see-records.md).
+> Les options *Afficher les données* et *Exporter les données* sont disponibles dans le service Power BI et dans Power BI Desktop. Toutefois, Power BI Desktop offre un niveau de détails supplémentaire. [*Afficher les enregistrements* affiche les lignes réelles du jeu de données](../create-reports/desktop-see-data-see-records.md).
 > 
 > 
 
@@ -75,4 +77,5 @@ Vous pouvez également vous concentrer sur un enregistrement de données et expl
 [Exporter des données à partir des visualisations Power BI](power-bi-visualization-export-data.md)    
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+
 

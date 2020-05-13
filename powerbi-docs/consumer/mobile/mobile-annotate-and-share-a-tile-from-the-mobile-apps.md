@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31a899001b5a821a38a3de01db0357c26f2e58dc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205501"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149205"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles Power BI
 S’applique à :
@@ -28,7 +28,7 @@ Vous pouvez annoter et partager la capture instantanée d’une vignette, d’un
 
 *Un rapport avec des annotations*
 
-Le message contenant la capture instantanée de la vignette, du rapport ou du visuel contient également un lien vers l’objet en question sur le service Power BI ([https://powerbi.com](https://powerbi.com)). Vos destinataires peuvent cliquer sur le lien et accéder directement à cette vignette, à ce rapport ou à ce visuel si vous et eux possédez une licence Power BI Pro, ou si le contenu est dans une [capacité Premium](../../service-premium-what-is.md), et que vous avez déjà partagé l’élément avec eux. 
+Le message contenant la capture instantanée de la vignette, du rapport ou du visuel contient également un lien vers l’objet en question sur le service Power BI ([https://powerbi.com](https://powerbi.com)). Vos destinataires peuvent cliquer sur le lien et accéder directement à cette vignette, à ce rapport ou à ce visuel si vous et eux possédez une licence Power BI Pro, ou si le contenu est dans une [capacité Premium](../../admin/service-premium-what-is.md), et que vous avez déjà partagé l’élément avec eux. 
 
 Vous pouvez [partager une vignette à partir de l’application Power BI pour les appareils Windows 10](mobile-windows-10-phone-app-get-started.md), mais pas l’annoter.
 
@@ -74,4 +74,3 @@ Vous pouvez [partager une vignette à partir de l’application Power BI pour l
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager un tableau de bord à partir des applications mobiles Power BI](mobile-share-dashboard-from-the-mobile-apps.md)
 * Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

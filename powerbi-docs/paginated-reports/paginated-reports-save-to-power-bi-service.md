@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/04/2020
-ms.openlocfilehash: 3e7e1590adbf953db4232ddffa5f26778e5670c2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a634844093f103c942b70cd81d93822ca240cf0a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781613"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272025"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
 
@@ -105,7 +105,7 @@ Comme tout autre rapport Power BI, si la source des données du rapport est loca
 
    ![Gérer le rapport paginé](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. Consultez l’article du service Power BI [Qu’est-ce qu’une passerelle de données locale ?](../service-gateway-onprem.md) pour plus d’informations et connaître les prochaines étapes.
+1. Consultez l’article du service Power BI [Qu’est-ce qu’une passerelle de données locale ?](../connect-data/service-gateway-onprem.md) pour plus d’informations et connaître les prochaines étapes.
 
 
 
@@ -114,4 +114,5 @@ Comme tout autre rapport Power BI, si la source des données du rapport est loca
 - [Afficher un rapport paginé dans le service Power BI](../consumer/paginated-reports-view-power-bi-service.md)
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
 - [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](../developer/embed-paginated-reports-customers.md)
+
 

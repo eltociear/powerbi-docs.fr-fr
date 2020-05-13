@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 387f0cd4ecea59fd55af0a9eceff2272ddd8097b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75220047"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278856"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
 
@@ -107,7 +107,7 @@ Les rapports Power BI, les rapports mobiles Reporting Services et les indicateur
   > Monter et descendre dans une hiérarchie n’est actuellement pas autorisé dans les rapports Power BI sur un serveur Power BI Report Server.
   
     ![Rapport Power BI](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* Dans Power BI Desktop, les propriétaires de rapports peuvent [optimiser un rapport](../../desktop-create-phone-report.md) pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de rapport Power BI optimisé](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
+* Dans Power BI Desktop, les propriétaires de rapports peuvent [optimiser un rapport](../../create-reports/desktop-create-phone-report.md) pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de rapport Power BI optimisé](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
   
     ![Rapport Power BI optimisé pour les mobiles](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Appuyez sur un indicateur de performance clé pour l’afficher en mode Focus.
@@ -133,4 +133,3 @@ Vous pouvez marquer des indicateurs de performance clés et des rapports en tant
 ## <a name="next-steps"></a>Étapes suivantes
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)  
 * Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 83fadfe5f690a87563d20b9c6385b9a37193b9c9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b70db42732143d5db938ad793be8aa3997ecdd8c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921766"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276901"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
 
@@ -27,11 +27,11 @@ Dans cet article, vous apprendrez à créer et à modifier une source de donnée
 - Oracle 
 - Teradata 
 
-Pour les sources de données suivantes, utilisez l’option [Connexion SQL Server Analysis Services](../service-premium-connect-tools.md) :
+Pour les sources de données suivantes, utilisez l’option [Connexion SQL Server Analysis Services](../admin/service-premium-connect-tools.md) :
 
 - Jeux de données Power BI Premium
 
-Les rapports paginés se connectent aux sources de données locales par le biais d’une [passerelle Power BI](../service-gateway-onprem.md). Vous configurez la passerelle après avoir publié le rapport sur le service Power BI.
+Les rapports paginés se connectent aux sources de données locales par le biais d’une [passerelle Power BI](../connect-data/service-gateway-onprem.md). Vous configurez la passerelle après avoir publié le rapport sur le service Power BI.
 
 Pour obtenir des informations plus détaillées, consultez [Données de rapport dans le Générateur de rapports Power BI](report-builder-data.md).
 
@@ -93,3 +93,4 @@ Les rapports paginés qui se connectent aux jeux de données Power BI suivent le
 
 - [Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI](paginated-reports-create-embedded-dataset.md)
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
+

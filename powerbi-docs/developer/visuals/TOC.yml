@@ -12,6 +12,10 @@
       items:
         - name: Développer un visuel Power BI
           href: custom-visual-develop-tutorial.md
+        - name: Créer des visuels basés sur les réactions
+          href: create-react-visual.md
+        - name: Générer un graphique à barres
+          href: create-bar-chart.md
         - name: Ajouter des options de mise en forme
           href: custom-visual-develop-tutorial-format-options.md
         - name: Ajouter des tests unitaires pour un projet de visuel
@@ -38,14 +42,20 @@
           href: objects-properties.md
         - name: Mode d’édition avancé
           href: advanced-edit-mode.md
+        - name: supportsKeyboardFocus feature
+          href: supportskeyboardfocus-feature.md
+        - name: supportsMultiVisualSelection-feature.md
+          href: supportsmultivisualselection-feature.md
     - name: Guides pratiques
       items:
         - name: "Obtenir un visuel Power\_BI certifié"
           href: power-bi-custom-visuals-certified.md
         - name: "Publier des visuels Power\_BI dans AppSource"
           href: office-store.md
+        - name: "Tester votre visuel Power\_BI"
+          href: submission-testing.md
         - name: "Utiliser des visuels Power\_BI basés sur R dans Power\_BI"
-          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+          href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
         - name: Interactions entre les visuels
           href: visuals-interactions.md
         - name: Ajouter des sélections
@@ -64,6 +74,8 @@
           href: context-menu.md
         - name: Ajouter la prise en charge de l’exploration
           href: drill-down-support.md
+        - name: Ajouter des couleurs à votre visuel
+          href: add-colors-power-bi-visual.md
         - name: Mettre en évidence des données dans les visuels
           href: highlight.md
         - name: Ajouter la prise en charge du mode Contraste élevé
@@ -78,10 +90,14 @@
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Référence
       items:
+        - name: Journal des modifications
+          href: changelog.md
         - name: Page d’accueil
           href: landing-page.md
         - name: URL de lancement
           href: launch-url.md
+        - name: API de visuel
+          href: visual-api.md
         - name: API de stockage local
           href: local-storage.md
         - name: Événements de rendu
@@ -119,8 +135,8 @@
         - name: Centre de développement
           href: 'https://powerbi.microsoft.com/developers/'
         - name: "Exemples de visuels Power\_BI"
-          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-        - name: "Référentiel Git de visuels Power\_BI"
+          href: samples.md
+        - name: Dépôt Git de visuels personnalisés
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
         - name: Création du certificat SSL
           href: create-ssl-certificate.md

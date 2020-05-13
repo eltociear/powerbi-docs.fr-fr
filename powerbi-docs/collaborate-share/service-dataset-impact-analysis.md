@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525327"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274854"
 ---
 # <a name="dataset-impact-analysis"></a>Analyse de l’impact des jeux de données
 
@@ -54,7 +54,7 @@ Les métriques d’utilisation concernent les 30 derniers jours, à l’exclusio
 
 ## <a name="notify-contacts"></a>Notifier les contacts
 
-Si vous avez apporté (ou envisagez d’apporter) une modification à un jeu de données, vous souhaiterez peut-être contacter les utilisateurs concernés pour les informer. Quand vous notifiez des contacts, un e-mail est envoyé aux [listes de contacts](../service-create-the-new-workspaces.md#workspace-contact-list) de tous les espaces de travail concernés. Votre nom s’affiche dans l’e-mail afin que les contacts puissent vous trouver et vous répondre sur un nouveau thread. 
+Si vous avez apporté (ou envisagez d’apporter) une modification à un jeu de données, vous souhaiterez peut-être contacter les utilisateurs concernés pour les informer. Quand vous notifiez des contacts, un e-mail est envoyé aux [listes de contacts](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) de tous les espaces de travail concernés. Votre nom s’affiche dans l’e-mail afin que les contacts puissent vous trouver et vous répondre sur un nouveau thread. 
 
 1. Cliquez sur **Notifier les contacts** dans le volet latéral Analyse d’impact. La boîte de dialogue Notifier les contacts s’affiche.
 
@@ -89,5 +89,6 @@ Quand vous apportez une modification à un jeu de données dans Power BI Desktop
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)](../service-datasets-across-workspaces.md)
+* [Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Lignage des données](service-data-lineage.md)
+

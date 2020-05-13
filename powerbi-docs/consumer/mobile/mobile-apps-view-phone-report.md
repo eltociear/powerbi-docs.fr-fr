@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841776"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273520"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -48,7 +48,7 @@ Si des filtres ont été définis dans un rapport optimisé pour les téléphone
 ## <a name="cross-highlight-visuals"></a>Sélection croisée de visuels
 La sélection croisée de visuels en mode portrait fonctionne de la même façon que dans le service Power BI, et que sur les téléphones en mode paysage : Lorsque vous sélectionnez des données dans un visuel, cela met en évidence les données associées dans les autres visuels sur cette page.
 
-En savoir plus sur le [filtrage et la mise en évidence dans Power BI](../../power-bi-reports-filters-and-highlighting.md).
+En savoir plus sur le [filtrage et la mise en évidence dans Power BI](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="select-visuals"></a>Sélectionner des visuels
 Quand vous sélectionnez un visuel dans des rapports sur téléphone, ces derniers le mettent en évidence et se concentrent dessus en neutralisant les mouvements sur le canevas.
@@ -131,8 +131,7 @@ Les auteurs de rapports peuvent [définir l’extraction](https://docs.microsoft
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Créer des rapports optimisés pour les applications mobiles Power BI](../../desktop-create-phone-report.md)
-* [Créer une vue téléphone d’un tableau de bord dans Power BI](../../service-create-dashboard-mobile-phone-view.md)
+* [Créer des rapports optimisés pour les applications mobiles Power BI](../../create-reports/desktop-create-phone-report.md)
+* [Créer une vue téléphone d’un tableau de bord dans Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Créer des visuels réactifs optimisés pour toute taille](../../visuals/desktop-create-responsive-visuals.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

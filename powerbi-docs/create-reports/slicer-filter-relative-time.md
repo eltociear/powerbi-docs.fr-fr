@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4f0bfdbf3eb3856f872c872fbe0880ad39839e07
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 31563e5bb5b91468b8913c3204e9d27607716c77
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867596"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279201"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Utilisation d’un segment et d’un filtre d’heure relative dans Power BI
 
@@ -24,7 +24,7 @@ Avec les nouveaux scénarios d’actualisation rapide, la possibilité de filtre
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Exemple d’heure relative":::
 
-Il n’est pas obligatoire d’utiliser la fonctionnalité conjointement avec celle [d’actualisation automatique de la page](../desktop-automatic-page-refresh.md). Toutefois, de nombreux scénarios d’heure relative se marient bien avec cette dernière.  
+Il n’est pas obligatoire d’utiliser la fonctionnalité conjointement avec celle [d’actualisation automatique de la page](../create-reports/desktop-automatic-page-refresh.md). Toutefois, de nombreux scénarios d’heure relative se marient bien avec cette dernière.  
 
 > [!NOTE]
 > Lorsque vous appliquez un filtre ou un segment d’heure relative au niveau de la page ou du rapport, tous les visuels de cette page ou de ce rapport sont filtrés sur exactement le même intervalle de temps, grâce à une heure *d’ancrage* partagée. Dans la mesure où les visuels peuvent présenter des durées d’exécution légèrement différentes, cette heure d’ancrage partagée permet de les synchroniser sur l’ensemble de la page ou du rapport. Pour plus d’informations sur [l’heure d’ancrage](#understanding-anchor-time), lisez la suite de l’article.
@@ -107,4 +107,3 @@ Voici les limitations et considérations qui s’appliquent actuellement au segm
 
 - [Utilisation d’un segment et d’un filtre de date relative dans Power BI](../visuals/desktop-slicer-filter-date-range.md)
 - [Segments dans Power BI](../visuals/power-bi-visualization-slicers.md)
-

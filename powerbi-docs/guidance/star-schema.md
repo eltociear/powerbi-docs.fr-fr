@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751608"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273451"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
@@ -42,7 +42,7 @@ Tenez compte du fait que chaque visuel de rapport Power BI génère une requête
 - Les tables de dimension prennent en charge le _filtrage_ et le _regroupement_.
 - Les tables de faits prennent en charge la _totalisation_.
 
-Aucune propriété de table n’est définie par les modeleurs pour configurer le type de table en tant que dimension ou que fait. En fait, c’est déterminé par les relations de modèle. Une relation de modèle établit un chemin de propagation de filtre entre deux tables, et c’est la propriété de **cardinalité** de la relation qui détermine le type de table. Une cardinalité de relation courante est _un-à-plusieurs_ ou son opposé, _plusieurs-à-un_. Le côté « un » est toujours une table de type dimension, tandis que le côté « plusieurs » est toujours une table de type fait. Pour plus d’informations sur les relations, consultez [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md).
+Aucune propriété de table n’est définie par les modeleurs pour configurer le type de table en tant que dimension ou que fait. En fait, c’est déterminé par les relations de modèle. Une relation de modèle établit un chemin de propagation de filtre entre deux tables, et c’est la propriété de **cardinalité** de la relation qui détermine le type de table. Une cardinalité de relation courante est _un-à-plusieurs_ ou son opposé, _plusieurs-à-un_. Le côté « un » est toujours une table de type dimension, tandis que le côté « plusieurs » est toujours une table de type fait. Pour plus d’informations sur les relations, consultez [Relations de modèle dans Power BI Desktop](../transform-model/desktop-relationships-understand.md).
 
 ![Schéma en étoile conceptuel](media/star-schema/star-schema-example2.png)
 
@@ -209,10 +209,12 @@ Cette approche de conception plusieurs-à-plusieurs est bien documentée et peut
 Pour plus d’informations sur la conception du schéma en étoile ou sur la conception de modèles Power BI, consultez les articles suivants :
 
 - [Article Wikipedia sur la modélisation dimensionnelle](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Créer et gérer des relations dans Power BI Desktop](../desktop-create-and-manage-relationships.md)
+- [Créer et gérer des relations dans Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md)
 - [Aide pour la relation un-à-un](relationships-one-to-one.md)
 - [Conseils sur les relations Plusieurs-à-plusieurs](relationships-many-to-many.md)
 - [Aide pour les relations bidirectionnelles](relationships-bidirectional-filtering.md)
 - [Aide pour les relations actives et inactives](relationships-active-inactive.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
+
+

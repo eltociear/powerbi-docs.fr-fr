@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114655"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149258"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 
 La **prise en charge de plusieurs zones géographiques pour Power BI Embedded** signifie que les éditeurs de logiciels indépendants et les organisations qui génèrent des applications à l’aide de Power BI Embedded pour incorporer des analytiques dans leurs applications peuvent désormais déployer leurs données dans différentes régions du monde.
 
-Maintenant, les clients utilisant **Power BI Embedded** peuvent configurer une **capacité A** à l’aide d’options de **zones géographiques multiples**, sur la base des mêmes fonctionnalités et limitations que celles [prises en charge par Power BI Premium à l’aide des zones géographiques multiples](../../service-admin-premium-Multi-Geo.md).
+Maintenant, les clients utilisant **Power BI Embedded** peuvent configurer une **capacité A** à l’aide d’options de **zones géographiques multiples**, sur la base des mêmes fonctionnalités et limitations que celles [prises en charge par Power BI Premium à l’aide des zones géographiques multiples](../../admin/service-admin-premium-Multi-Geo.md).
 
 ## <a name="creating-new-power-bi-embedded-capacity-resource-with-multi-geo"></a>Création d’une nouvelle ressource de capacité Power BI Embedded avec des zones géographiques multiples
 
@@ -89,6 +89,6 @@ En savoir plus sur les capacités de Power BI Embedded et sur les options de zon
 
 * [Créer une capacité Power BI Embedded](azure-pbie-create-capacity.md)
 
-* [Les zones géographiques multiples dans les capacités Power BI Premium](../../service-admin-premium-multi-geo.md)
+* [Les zones géographiques multiples dans les capacités Power BI Premium](../../admin/service-admin-premium-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

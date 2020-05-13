@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33c07df0cd8c0e00489f344e721164ed9252fcaf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866906"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276832"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 
@@ -177,13 +177,13 @@ Si vous n’en avez pas dans vos données, créez un champ qui concatène les va
 
 ![Capture d’écran d’un graphique à nuages de points avec TempTime ajouté au puits Détails.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-Pour créer un champ, [utilisez l’éditeur de requête Power BI Desktop pour ajouter une colonne d’index](../desktop-add-custom-column.md) à votre jeu de données. Ajoutez ensuite cette colonne au puits **Détails** de la visualisation.
+Pour créer un champ, [utilisez l’éditeur de requête Power BI Desktop pour ajouter une colonne d’index](../create-reports/desktop-add-custom-column.md) à votre jeu de données. Ajoutez ensuite cette colonne au puits **Détails** de la visualisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Les articles suivants pourraient également vous intéresser :
 
-* [Échantillonnage à haute densité dans les nuages de points Power BI](desktop-high-density-scatter-charts.md)
+* [Échantillonnage à haute densité dans les nuages de points Power BI](../create-reports/desktop-high-density-scatter-charts.md)
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Conseils pour trier et distribuer des tracés de données dans les rapports Power BI](../guidance/report-tips-sort-distribute-data-plots.md)
 
