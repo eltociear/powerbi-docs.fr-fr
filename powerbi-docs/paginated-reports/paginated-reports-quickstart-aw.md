@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404880"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145225"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
@@ -43,7 +43,7 @@ Voici les conditions préalables pour la création du rapport paginé :
 Voici les conditions préalables pour le chargement de votre rapport paginé dans le service Power BI :
 
 - Vous avez besoin d’une [licence Power BI Pro](../service-admin-power-bi-pro-in-your-organization.md).
-- Vous avez besoin d’un espace de travail sur le service dans une [capacité Power BI Premium](../service-premium-what-is.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
+- Vous avez besoin d’un espace de travail sur le service dans une [capacité Power BI Premium](../admin/service-premium-what-is.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Créer la matrice avec un assistant
   
@@ -329,4 +329,3 @@ Maintenant que vous avez créé ce rapport paginé, il est temps de le charger d
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
-

@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290579"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278074"
 ---
 # <a name="use-report-page-drillthrough"></a>Utiliser l’extraction de page de rapport
 
-Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il fournit des suggestions et des recommandations pour créer une [extraction de page de rapport](../desktop-drillthrough.md).
+Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il fournit des suggestions et des recommandations pour créer une [extraction de page de rapport](../create-reports/desktop-drillthrough.md).
 
 Il est recommandé de concevoir votre rapport de sorte à permettre aux utilisateurs d’obtenir le flux suivant :
 
@@ -58,8 +58,8 @@ Au moment de la conception du rapport, nous vous recommandons d’adopter les pr
 - **Filtres d’extraction :** Définissez des filtres d’extraction afin de pouvoir voir un aperçu réaliste du résultat pendant la conception même de la page d’extraction. Veillez à supprimer ces filtres avant de publier le rapport.
 - **Fonctionnalités supplémentaires :** Une page d’extraction ressemble à n’importe quelle page de rapport. Vous pouvez même l’améliorer avec des fonctionnalités interactives supplémentaires, notamment des segments ou des filtres.
 - **Blancs :** Évitez d’ajouter des visuels susceptibles d’afficher BLANK ou de produire des erreurs quand des filtres d’extraction sont appliqués.
-- **Visibilité de la page :** Envisagez de masquer les pages d’extraction. Si vous décidez de conserver une page d’extraction visible, veillez à ajouter un bouton qui permet aux utilisateurs de supprimer tous les filtres d’extraction précédemment définis. Affectez un [signet](../desktop-bookmarks.md) au bouton. Le signet doit être configuré pour supprimer tous les filtres.
-- **Bouton Précédent :** Un [bouton](../desktop-buttons.md) Précédent est ajouté automatiquement lorsque vous affectez un filtre d’extraction. Il est judicieux de le conserver. Ainsi, les utilisateurs de votre rapport peuvent facilement revenir à la page source.
+- **Visibilité de la page :** Envisagez de masquer les pages d’extraction. Si vous décidez de conserver une page d’extraction visible, veillez à ajouter un bouton qui permet aux utilisateurs de supprimer tous les filtres d’extraction précédemment définis. Affectez un [signet](../create-reports/desktop-bookmarks.md) au bouton. Le signet doit être configuré pour supprimer tous les filtres.
+- **Bouton Précédent :** Un [bouton](../create-reports/desktop-buttons.md) Précédent est ajouté automatiquement lorsque vous affectez un filtre d’extraction. Il est judicieux de le conserver. Ainsi, les utilisateurs de votre rapport peuvent facilement revenir à la page source.
 - **Découverte :** Facilitez l’accès à une page d’extraction en utilisant du texte dans une icône d’en-tête de visuel ou en ajoutant des instructions à une zone de texte. Vous pouvez également concevoir une superposition, comme décrit dans [ce billet de blog](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
@@ -69,6 +69,6 @@ Au moment de la conception du rapport, nous vous recommandons d’adopter les pr
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Utiliser une extraction dans Power BI Desktop](../desktop-drillthrough.md)
+- [Utiliser une extraction dans Power BI Desktop](../create-reports/desktop-drillthrough.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

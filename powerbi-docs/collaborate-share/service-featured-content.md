@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4d8b3d48828840920b6bbd792c9fe9da40308b39
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79496260"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83142306"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Proposer du contenu dans la page d’accueil Power BI de collègues
 
@@ -24,9 +24,9 @@ Vous pouvez proposer des tableaux de bord, des rapports et des applications pour
 
 ## <a name="who-can-feature-content"></a>Personnes pouvant proposer du contenu
 
-C’est à votre administrateur de locataire Power BI d’accorder la capacité de proposer du contenu sur votre locataire. L’administrateur choisit également qui peut proposer du contenu. Consultez l’article sur le [portail d’administration](../service-admin-portal.md#featured-content) pour plus d’informations.
+C’est à votre administrateur de locataire Power BI d’accorder la capacité de proposer du contenu sur votre locataire. L’administrateur choisit également qui peut proposer du contenu. Consultez l’article sur le [portail d’administration](../admin/service-admin-portal.md#featured-content) pour plus d’informations.
 
-Si vous êtes l’un des groupes sélectionnés dans votre organisation avec cette responsabilité, vous devez disposer d’une licence Power BI Pro. Pour proposer des tableaux de bord et des rapports, vous avez besoin du rôle Administrateur, Membre ou Contributeur dans l’espace de travail. Pour proposer l’application elle-même, vous devez avoir le rôle Administrateur ou Membre dans l’espace de travail. Consultez [Rôles dans les nouveaux espaces de travail](../service-new-workspaces.md#roles-in-the-new-workspaces) pour plus d’informations.
+Si vous êtes l’un des groupes sélectionnés dans votre organisation avec cette responsabilité, vous devez disposer d’une licence Power BI Pro. Pour proposer des tableaux de bord et des rapports, vous avez besoin du rôle Administrateur, Membre ou Contributeur dans l’espace de travail. Pour proposer l’application elle-même, vous devez avoir le rôle Administrateur ou Membre dans l’espace de travail. Consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces) pour plus d’informations.
 
 ## <a name="who-sees-featured-content"></a>Qui voit le contenu proposé ?
 
@@ -58,7 +58,6 @@ Désormais, toutes les personnes qui ont accès à cette application la voient �
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Comment partager des tableaux de bord, rapports et vignettes ?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Gérer le contenu proposé dans le portail d’administration](../service-admin-portal.md#manage-featured-content)
+* [Comment partager des tableaux de bord, rapports et vignettes ?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Gérer le contenu proposé dans le portail d’administration](../admin/service-admin-portal.md#manage-featured-content)
 * Des questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-

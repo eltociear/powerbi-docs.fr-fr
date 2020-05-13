@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1aa682a71fe7469f8a9c7d5415fb843400e5d312
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613554"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148323"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -27,7 +27,7 @@ Une fois que vous avez créé votre visuel Power BI, vous pouvez le publier sur
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Préparation de la soumission de votre visuel Power BI
 
-Avant de soumettre un visuel Power BI à AppSource, assurez-vous d'avoir lu les [instructions relatives aux visuels Power BI](guidelines-powerbi-visuals.md) et [testé votre visuel personnalisé](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Avant de soumettre un visuel Power BI à AppSource, assurez-vous d'avoir lu les [instructions relatives aux visuels Power BI](guidelines-powerbi-visuals.md) et [testé votre visuel personnalisé](./submission-testing.md).
 
 Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il répond à toutes les exigences énumérées ci-dessous.
 
@@ -99,9 +99,10 @@ Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espac
 
 10. Sélectionnez **Programme d’installation du produit** et cliquez sur **Vérifier et publier**.
 
+
 ## <a name="tracking-submission-status-and-usage"></a>Suivi de l’utilisation et de l’état de la soumission
 
-* Vous pouvez passer en revue les [stratégies de validation](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Vous pouvez passer en revue les [stratégies de validation](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Après l’envoi de la soumission, vous pouvez afficher son état dans le [tableau de bord de l’application](https://sellerdashboard.microsoft.com/Application/Summary/).
 

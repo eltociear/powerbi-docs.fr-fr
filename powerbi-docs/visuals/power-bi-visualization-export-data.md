@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82585375"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273014"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -54,7 +54,7 @@ Regardez Will pendant qu’il exporte les données à partir d’une des visuali
 
 ## <a name="export-data-from-a-report"></a>Exporter des données à partir d’un rapport
 
-Pour effectuer cette procédure, ouvrez l’[exemple de rapport Analyse de l’approvisionnement](../sample-procurement.md) dans le service Power BI en mode Édition. Ajoutez une nouvelle page de rapport vierge. Ensuite, suivez les étapes ci-dessous pour ajouter une agrégation, une hiérarchie et un filtre au niveau des visualisations.
+Pour effectuer cette procédure, ouvrez l’[exemple de rapport Analyse de l’approvisionnement](../create-reports/sample-procurement.md) dans le service Power BI en mode Édition. Ajoutez une nouvelle page de rapport vierge. Ensuite, suivez les étapes ci-dessous pour ajouter une agrégation, une hiérarchie et un filtre au niveau des visualisations.
 
 ### <a name="create-a-stacked-column-chart"></a>Créer un histogramme empilé
 
@@ -94,7 +94,7 @@ Sélectionnez l’option pour **Données résumées** si vous voulez exporter le
 
     - **Données sous-jacentes**
 
-    Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
+    Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -133,7 +133,7 @@ Lorsque vous sélectionnez **Exporter**, Power BI exporte les données sont dans
 
     - **Données sous-jacentes**
 
-    Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
+    Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -164,7 +164,7 @@ Il existe plusieurs stratégies que les administrateurs et les concepteurs Power
 
 - Les administrateurs Power BI peuvent désactiver l’exportation de données pour leur organisation. 
 
-- Les propriétaires de jeux de données peuvent définir la sécurité au niveau des lignes (RLS, Row level security). La sécurité RLS limite l’accès aux utilisateurs en lecture seule. Toutefois, si vous avez configuré un espace de travail d’applications et accordé aux membres les autorisations de modification, les rôles RLS ne s’appliquent pas à eux. Pour plus d’informations, consultez [Sécurité au niveau des lignes](../service-admin-rls.md).
+- Les propriétaires de jeux de données peuvent définir la sécurité au niveau des lignes (RLS, Row level security). La sécurité RLS limite l’accès aux utilisateurs en lecture seule. Toutefois, si vous avez configuré un espace de travail d’applications et accordé aux membres les autorisations de modification, les rôles RLS ne s’appliquent pas à eux. Pour plus d’informations, consultez [Sécurité au niveau des lignes](../admin/service-admin-rls.md).
 
 - Les concepteurs de rapports peuvent masquer les colonnes afin de ne pas les faire apparaître dans la liste **Champs**. Pour plus d’informations, consultez [Propriétés de jeu de données](../developer/automation/api-dataset-properties.md)
 
@@ -265,6 +265,8 @@ Ces limitations et ces considérations s’appliquent à Power BI Desktop et au 
   1. Sélectionnez **Obtenir des données externes** > **À partir du texte**.
   
   1. Accédez au dossier local où le fichier est stocké et sélectionnez le fichier *.csv*.
+
+- Lors de l’exportation au format *.csv*, certains caractères sont échappés avec un **'** au début.
 
 - Les administrateurs Power BI peuvent désactiver l’exportation des données.
 

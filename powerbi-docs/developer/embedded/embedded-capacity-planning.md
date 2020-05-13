@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: f437b1d1fbfc1e905878fbb99875f1fc455e7b14
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79493247"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145121"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Planification d’une capacité dans l’analytique incorporée de Power BI
 
@@ -51,7 +51,7 @@ Voici quelques exemples de la façon dont vous pouvez utiliser l’outil de plan
 
 Pour voir les effets du test de charge dans l’application des métriques après l’exécution du test, procédez comme suit. Attendez-vous à un délai pouvant aller jusqu’à 15 minutes entre le moment où le test commence à générer la charge et le moment où la charge est visible dans les métriques.
 
-1. Développez l’onglet **Jeux de données** de la page d’accueil de votre [application des métriques](../../service-admin-premium-monitor-capacity.md).
+1. Développez l’onglet **Jeux de données** de la page d’accueil de votre [application des métriques](../../admin/service-admin-premium-monitor-capacity.md).
 2. Lancez une actualisation à la demande en cliquant sur **actualiser maintenant**. Les administrateurs doivent.
 
     ![Métriques de capacité Power BI Premium](media/embedded-capacity-planning/embedded-capacity-planning.png)

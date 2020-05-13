@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5a6b7bda8bf5e8d80ae8b22a71035f8bc362fb89
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377739"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277844"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Étendre des visuels avec des info-bulles de page de rapport
 
-Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il fournit des suggestions et des recommandations pour créer des [info-bulles de page de rapport](../desktop-tooltips.md).
+Cet article s’adresse à vous en tant qu’auteur de rapports Power BI. Il fournit des suggestions et des recommandations pour créer des [info-bulles de page de rapport](../create-reports/desktop-tooltips.md).
 
 ## <a name="suggestions"></a>Suggestions
 
@@ -29,7 +29,7 @@ Les info-bulles de page de rapport peuvent améliorer l’expérience des utilis
 > [!NOTE]
 > Un visuel de rapport peut uniquement révéler une info-bulle de page quand des filtres sont compatibles avec la conception du visuel. Par exemple, un visuel qui regroupe par _produit_ est compatible avec une page d’info-bulle qui filtre par _produit_.
 >
-> Les info-bulles de page ne prennent pas en charge l’interactivité. Si vous souhaitez que les utilisateurs de vos rapports puissent interagir, créez plutôt une [page d’extraction](../desktop-drillthrough.md).
+> Les info-bulles de page ne prennent pas en charge l’interactivité. Si vous souhaitez que les utilisateurs de vos rapports puissent interagir, créez plutôt une [page d’extraction](../create-reports/desktop-drillthrough.md).
 >
 > Les visuels Power BI ne prennent pas en charge les info-bulles de page.
 
@@ -65,7 +65,7 @@ Les en-têtes de visuel peuvent être configurés pour révéler des info-bulles
 
 Il est intéressant de noter que les boutons, les images, les zones de texte et les formes peuvent également révéler une info-bulle de page d’en-tête de visuel.
 
-L’exemple suivant montre ce qui se produit quand l’utilisateur du rapport passe son curseur au-dessus de l’[icône d’en-tête de visuel](../desktop-visual-elements-for-reports.md).
+L’exemple suivant montre ce qui se produit quand l’utilisateur du rapport passe son curseur au-dessus de l’[icône d’en-tête de visuel](../create-reports/desktop-visual-elements-for-reports.md).
 
 ![L’utilisateur d’un rapport a pointé son curseur sur l’icône d’en-tête de visuel (point d’interrogation). Une info-bulle richement mise en forme est apparue.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -85,8 +85,8 @@ Au moment de la conception du rapport, nous vous recommandons d’adopter les pr
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop](../desktop-tooltips.md)
-- [Personnalisation des info-bulles dans Power BI Desktop](../desktop-custom-tooltips.md)
-- [Utiliser des visuels pour améliorer des rapports Power BI](../desktop-visual-elements-for-reports.md)
+- [Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop](../create-reports/desktop-tooltips.md)
+- [Personnalisation des info-bulles dans Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Utiliser des visuels pour améliorer des rapports Power BI](../create-reports/desktop-visual-elements-for-reports.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

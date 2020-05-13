@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9a1d0abc065380a30b1868710bea31d0bf1fa89f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 110aadce6bafd61b3c8b60a7370cedecf0d27ae0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066147"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278097"
 ---
 # <a name="tips-to-manage-axes-in-power-bi-reports"></a>Conseils pour gérer les axes dans les rapports Power BI
 
@@ -41,7 +41,8 @@ En résumé, les huit meilleurs conseils pour gérer efficacement les axes dans 
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Conseils pour créer des rapports sensationnels](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Conseils pour créer des rapports sensationnels](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - Vidéo biDezine : [Huit meilleurs conseils pour gérer efficacement les axes dans Power BI](https://www.youtube.com/watch?v=3t9W7Xvpzo0)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
+

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/24/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6af8568dc39544ce064643c8dfb80fa2932cf13a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 52522c03a285290fbc01da49328516f62ddfc60a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82149667"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279224"
 ---
 # <a name="connect-to-the-regional-emergency-response-dashboard"></a>Se connecter au tableau de bord des réponses aux urgences régionales
 Le tableau de bord des réponses aux urgences régionales est le composant de production de rapports de la [solution de réponse aux urgences régionales de Microsoft Power Platform](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Les administrateurs de l’organisation régionale peuvent visualiser le tableau de bord dans leur locataire Power BI, ce qui leur permet de voir rapidement les données et les métriques importantes qui les aideront à prendre des décisions efficaces.
@@ -82,21 +82,21 @@ Lors de l’installation de la solution Réponse aux urgences régionales, prene
 
 ## <a name="schedule-report-refresh"></a>Planifier l’actualisation du rapport
 
-Une fois l’actualisation des données terminée, [configurez une planification de l’actualisation](../refresh-scheduled-refresh.md) pour tenir les données du rapport à jour.
+Une fois l’actualisation des données terminée, [configurez une planification de l’actualisation](../connect-data/refresh-scheduled-refresh.md) pour tenir les données du rapport à jour.
 
 1. Dans la barre d’en-tête supérieure, sélectionnez **Power BI**.
 
    ![Navigation Power BI](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-powerbi-breadcrumb.png)
 
-1. Dans le volet de navigation de gauche, recherchez l’espace de travail Tableau de bord des réponses aux urgences régionales sous **Espaces de travail**, puis suivez les instructions décrites dans l’article [Configurer l’actualisation planifiée](../refresh-scheduled-refresh.md).
+1. Dans le volet de navigation de gauche, recherchez l’espace de travail Tableau de bord des réponses aux urgences régionales sous **Espaces de travail**, puis suivez les instructions décrites dans l’article [Configurer l’actualisation planifiée](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Personnaliser et partager
 
-Pour plus d’informations, consultez [Personnaliser et partager l’application](../service-template-apps-install-distribute.md#customize-and-share-the-app). Veillez à passer en revue les [exclusions de responsabilité du rapport](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) avant de publier ou de distribuer l’application.
+Pour plus d’informations, consultez [Personnaliser et partager l’application](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Veillez à passer en revue les [exclusions de responsabilité du rapport](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) avant de publier ou de distribuer l’application.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Comprendre le tableau de bord des réponses aux urgences régionales](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
 * [Configurer et découvrir l’exemple de modèle de communication de crise dans Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-* [Que sont les applications modèles Power BI ?](../service-template-apps-overview.md)
-* [Installer et distribuer des applications modèles dans votre organisation](../service-template-apps-install-distribute.md)
+* [Que sont les applications modèles Power BI ?](../connect-data/service-template-apps-overview.md)
+* [Installer et distribuer des applications modèles dans votre organisation](../connect-data/service-template-apps-install-distribute.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584926"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277890"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>Échantillon de suivi COVID-19 pour les gouvernements régionaux et d’État des États-Unis
 
@@ -48,7 +48,7 @@ Pour inclure le graphique interactif sur votre site, copiez et collez le code in
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Le code incorporé est un élément HTML iFrame que vous pouvez insérer dans toute page HTML. Ajustez la largeur et la hauteur de l’iFrame fournies pour qu’il s’ajuste à votre site. L’échantillon de rapport est créé dans des proportions 16:9. Sélectionnez donc une taille qui préserve cette dimension. En cas de mise en œuvre correcte, le graphique s’affiche sans les bordures grises supplémentaires. Il est utile d’[évaluer les conseils et astuces de dimensionnement d’iFrame](../service-publish-to-web.md#tips-for-iframe-height-and-width) lors de l’apport de ces modifications.
+Le code incorporé est un élément HTML iFrame que vous pouvez insérer dans toute page HTML. Ajustez la largeur et la hauteur de l’iFrame fournies pour qu’il s’ajuste à votre site. L’échantillon de rapport est créé dans des proportions 16:9. Sélectionnez donc une taille qui préserve cette dimension. En cas de mise en œuvre correcte, le graphique s’affiche sans les bordures grises supplémentaires. Il est utile d’[évaluer les conseils et astuces de dimensionnement d’iFrame](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width) lors de l’apport de ces modifications.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Option 2 : Personnaliser l’échantillon de fichier de Power BI
 
@@ -93,18 +93,18 @@ Pour démarrer, [télécharger le fichier .pbix (ici)](https://go.microsoft.com/
 
 ### <a name="publish-your-report-to-the-power-bi-service"></a>Publier votre rapport dans le service Power BI
 
-Une fois que vous avez personnalisé votre rapport à votre convenance, [suivez les étapes décrites ici pour publier votre rapport](../desktop-upload-desktop-files.md) dans le service Power BI.
+Une fois que vous avez personnalisé votre rapport à votre convenance, [suivez les étapes décrites ici pour publier votre rapport](../create-reports/desktop-upload-desktop-files.md) dans le service Power BI.
 
 ### <a name="configure-scheduled-refresh"></a>Configurer une actualisation planifiée
 
-Pour tenir à jour les données du rapport, vous pouvez [configurer l’actualisation planifiée](../refresh-scheduled-refresh.md) après la publication du rapport.
+Pour tenir à jour les données du rapport, vous pouvez [configurer l’actualisation planifiée](../connect-data/refresh-scheduled-refresh.md) après la publication du rapport.
 
 Lorsque vous suivez les étapes, choisissez les options suivantes :
 
 1. Méthode d’authentification des informations d’identification de la source de données : Anonyme
 2. Paramètre du niveau de confidentialité pour cette source de données : Public
 
-Pour tester votre paramètre d’actualisation, sélectionnez l’option [Actualiser maintenant](../refresh-data.md#data-refresh) disponible à partir de l’élément de jeu de données.
+Pour tester votre paramètre d’actualisation, sélectionnez l’option [Actualiser maintenant](../connect-data/refresh-data.md#data-refresh) disponible à partir de l’élément de jeu de données.
 
 Les données actualisées sont chargées à chaque exécution de la planification. Les données sous-jacentes sont fournies par USAFacts et peuvent ne pas être mises à jour aussi fréquemment que votre planification d’actualisation. Consultez le [site web USAFacts](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) pour savoir quand les données sous-jacentes ont été mises à jour pour la dernière fois. 
 
@@ -112,7 +112,7 @@ Si vous tentez de publier le rapport personnalisé sur votre site web, il est re
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Créer un code incorporé de publication sur le web 
 
-Pour incorporer votre rapport personnalisé dans votre propre site web, suivez les instructions relatives à la [création de votre propre code incorporé de publication sur le web](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
+Pour incorporer votre rapport personnalisé dans votre propre site web, suivez les instructions relatives à la [création de votre propre code incorporé de publication sur le web](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Une fois que vous avez publié votre code incorporé, vous utilisez l’iFrame dans la boîte de dialogue de confirmation pour l’incorporer dans votre site web.
 
@@ -143,7 +143,7 @@ Vous pouvez également modifier les données de ce rapport avec les données d�
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Charger des données du web":::
 
-    Cet article, [Se connecter à des pages web à partir de Power BI Desktop](../desktop-connect-to-web.md), fournit plus d’informations sur le chargement de données à partir du web.
+    Cet article, [Se connecter à des pages web à partir de Power BI Desktop](../connect-data/desktop-connect-to-web.md), fournit plus d’informations sur le chargement de données à partir du web.
     
 Vous pouvez ensuite utiliser Power BI Desktop pour visualiser les données. Finalement, utilisez les étapes dans **Option 2 :** [Publiez votre rapport dans le service Power BI](#publish-your-report-to-the-power-bi-service) pour publier le rapport et créer un code incorporé personnalisé. 
 
@@ -168,4 +168,8 @@ Les données de l’Université Johns Hopkins sont un copyright de l’Universit
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Obtenir des échantillons pour Power BI](../sample-datasets.md)
+[Obtenir des échantillons pour Power BI](../create-reports/sample-datasets.md)
+
+
+
+

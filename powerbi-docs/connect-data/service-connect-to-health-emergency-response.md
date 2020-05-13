@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b951e96a5d81603dc91e4fc47a2b412d4140f85d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 65f1246185584b5887d97bb9188b43e016e78e8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752047"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279247"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Se connecter au Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux
 L’application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux est la partie dédiée aux rapports de la [solution Microsoft Power Platform pour la réponse aux urgences sanitaires](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Le tableau de bord montre aux responsables des services d’urgence des données agrégées à l’échelle de leur système de santé pour les aider à prendre des décisions opportunes et éclairées.
@@ -86,21 +86,21 @@ Lors de l’installation de la solution Power Platform Réponse aux urgences des
 
 ## <a name="schedule-report-refresh"></a>Planifier l’actualisation du rapport
 
-Une fois l’actualisation des données terminée, [configurez une planification de l’actualisation](../refresh-scheduled-refresh.md) pour tenir les données du rapport à jour.
+Une fois l’actualisation des données terminée, [configurez une planification de l’actualisation](../connect-data/refresh-scheduled-refresh.md) pour tenir les données du rapport à jour.
 
 1. Dans la barre d’en-tête supérieure, sélectionnez **Power BI**.
 
    ![Navigation Power BI](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
 
-1. Dans le volet de navigation de gauche, recherchez l’espace de travail Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux sous **Espaces de travail**, puis suivez les instructions décrites dans l’article [Configurer l’actualisation planifiée](../refresh-scheduled-refresh.md).
+1. Dans le volet de navigation de gauche, recherchez l’espace de travail Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux sous **Espaces de travail**, puis suivez les instructions décrites dans l’article [Configurer l’actualisation planifiée](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Personnaliser et partager
 
-Pour plus d’informations, consultez [Personnaliser et partager l’application](../service-template-apps-install-distribute.md#customize-and-share-the-app). Veillez à passer en revue les [exclusions de responsabilité du rapport](../create-reports/sample-covid-19-us.md#disclaimers) avant de publier ou de distribuer l’application.
+Pour plus d’informations, consultez [Personnaliser et partager l’application](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Veillez à passer en revue les [exclusions de responsabilité du rapport](../create-reports/sample-covid-19-us.md#disclaimers) avant de publier ou de distribuer l’application.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Comprendre le rapport Réponse aux urgences des hôpitaux](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Configurer et découvrir l’exemple de modèle de communication de crise dans Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-* [Que sont les applications modèles Power BI ?](../service-template-apps-overview.md)
-* [Installer et distribuer des applications modèles dans votre organisation](../service-template-apps-install-distribute.md)
+* [Que sont les applications modèles Power BI ?](../connect-data/service-template-apps-overview.md)
+* [Installer et distribuer des applications modèles dans votre organisation](../connect-data/service-template-apps-install-distribute.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8f71eab47aba9621805891b10874ea9e501ed0bf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496289"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277913"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 
@@ -49,10 +49,10 @@ Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de na
 - **Récente** : Si vous avez récemment visité un tableau de bord
 - **Applications** : la plupart des applications contiennent des tableaux de bord et des rapports
 - **Partagé avec moi** : si un collègue a [partagé un tableau de bord avec vous](end-user-shared-with-me.md)
-- **Mon espace de travail** : si vous avez téléchargé un [exemple Power BI](../sample-datasets.md)
+- **Mon espace de travail** : si vous avez téléchargé un [exemple Power BI](../create-reports/sample-datasets.md)
 
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-* Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../sample-tutorial-connect-to-the-samples.md).    
+* Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../create-reports/sample-tutorial-connect-to-the-samples.md).    
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18d16440e8894e69101357af700c9b295eaa30c6
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866957"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277154"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Créer et utiliser des graphiques en aires simples
 
@@ -68,7 +68,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
    d.  Pour afficher le graphique par mois, sélectionnez les points de suspension (dans le coin supérieur droit de l’élément visuel) et choisissez **Trier par mois**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et sélectionnez **Tri croissant** ou **Tri décroissant**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
-Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
+Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../create-reports/power-bi-report-add-filter.md).
 
 Pour mettre en surbrillance une zone particulière de votre graphique, sélectionnez cette zone ou sa bordure supérieure.  Contrairement à d’autres types de visualisation, s’il existe d’autres visualisations sur la même page, la mise en surbrillance d’un graphiques en aires de base n’effectue pas de filtrage croisé des autres visualisations de la page de rapport. Toutefois, les graphiques en aires sont une cible pour le filtrage croisé déclenché par d’autres visualisations sur la page du rapport. 
 
@@ -78,7 +78,7 @@ Pour mettre en surbrillance une zone particulière de votre graphique, sélectio
 
     ![Exemples de filtres](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-Pour plus d’informations, consultez [Interactions avec un élément visuel dans les rapports](../service-reports-visual-interactions.md).
+Pour plus d’informations, consultez [Interactions avec un élément visuel dans les rapports](../create-reports/service-reports-visual-interactions.md).
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes   
@@ -87,4 +87,6 @@ Pour plus d’informations, consultez [Interactions avec un élément visuel dan
 
 ## <a name="next-step"></a>Étape suivante
 [Rapports dans Power BI](power-bi-visualization-card.md)  
+
+
 

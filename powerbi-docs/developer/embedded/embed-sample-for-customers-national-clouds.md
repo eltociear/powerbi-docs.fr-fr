@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 3277bba0a4351f17d671adf9a70aae4adb7ddbac
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d30dfaa36bc55e8da769d4eaf0f7c2d1b9be0724
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525373"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145193"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 
@@ -38,7 +38,7 @@ Les différents clouds nationaux sont :
 
 ![Tableau de bord incorporé](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas configuré de compte, alors selon le type de gouvernement ou de pays, vous pouvez choisir le cloud national adapté à vos besoins. Vous pouvez vous inscrire pour obtenir un [compte Power BI pour l’État fédéral américain](../../service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](https://www.21vbluecloud.com/powerbi/).
+Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas configuré de compte, alors selon le type de gouvernement ou de pays, vous pouvez choisir le cloud national adapté à vos besoins. Vous pouvez vous inscrire pour obtenir un [compte Power BI pour l’État fédéral américain](../../admin/service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vous voulez plutôt incorporer un tableau de bord s’adressant à votre organisation ? Consultez [Intégrer un tableau de bord dans une application pour votre organisation](embed-sample-for-your-organization.md).

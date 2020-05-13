@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 6ffdc73e5e9ef9ccd416378c19da587986c80b55
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 661277337c00f160c010351ba5f827b6e0fc2f8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114330"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277614"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
 
@@ -99,14 +99,14 @@ Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart 
     ![rapport ouvert en mode Lecture](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
-> Toutes les vignettes ne conduisent pas à un rapport. Si vous sélectionnez une vignette [créée avec Questions et réponses](end-user-q-and-a.md), l’écran Questions et réponses s’ouvre. Si vous sélectionnez une vignette [créée à l’aide du widget **Ajouter une vignette** du tableau de bord](../service-dashboard-add-widget.md), plusieurs événements différents peuvent se produire : une vidéo peut être lue, un site web s’ouvrir, etc.  
+> Toutes les vignettes ne conduisent pas à un rapport. Si vous sélectionnez une vignette [créée avec Questions et réponses](end-user-q-and-a.md), l’écran Questions et réponses s’ouvre. Si vous sélectionnez une vignette [créée à l’aide du widget **Ajouter une vignette** du tableau de bord](../create-reports/service-dashboard-add-widget.md), plusieurs événements différents peuvent se produire : une vidéo peut être lue, un site web s’ouvrir, etc.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Autres moyens pour ouvrir un rapport
 Une fois que vous serez familiarisé avec la navigation dans le service Power BI, vous pourrez déterminer le workflow qui vous convient le mieux. Voici d’autres façons d’accéder aux rapports :
 - À partir du volet de navigation, en utilisant [Favoris](end-user-favorite.md) et [Récent](end-user-recent.md)    
 - À l’aide de [Afficher les éléments associés](end-user-related.md)    
-- Dans un e-mail quand un utilisateur [partage avec vous](../service-share-reports.md) ou que vous [définissez une alerte](end-user-alerts.md)    
+- Dans un e-mail quand un utilisateur [partage avec vous](../collaborate-share/service-share-reports.md) ou que vous [définissez une alerte](end-user-alerts.md)    
 - À partir du [Centre de notifications](end-user-notification-center.md)    
 - À partir d’un espace de travail
 - Et plus encore

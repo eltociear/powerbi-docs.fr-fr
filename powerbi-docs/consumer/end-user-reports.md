@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 28af5cd89e918fad7fc7064479ac95c67ca3cee3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114253"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277453"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
@@ -76,7 +76,7 @@ Ou bien, vous pouvez être *consommateur*, c’est-à-dire quelqu’un qui reço
 
 * Commencez par une [présentation du service Power BI](end-user-basic-concepts.md) pour savoir où trouver les rapports et les outils de rapport.
 * Découvrez comment [ouvrir un rapport](end-user-report-open.md) et toutes les [interactions disponibles pour les consommateurs](end-user-reading-view.md).
-* Familiarisez-vous avec les rapports en suivant la présentation de l’un de nos [exemples](../sample-tutorial-connect-to-the-samples.md).  
+* Familiarisez-vous avec les rapports en suivant la présentation de l’un de nos [exemples](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Pour voir le jeu de données que le rapport utilise et les tableaux de bord affichant des visuels (*épingles*) à partir du rapport, consultez [Afficher le contenu associé dans le service Power BI](end-user-related.md).
 
 > [!TIP]
@@ -86,3 +86,4 @@ Ou bien, vous pouvez être *consommateur*, c’est-à-dire quelqu’un qui reço
 
 [Ouvrir et voir un rapport](end-user-report-open.md)    
 [Tableaux de bord dans le service Power BI](end-user-dashboards.md)
+

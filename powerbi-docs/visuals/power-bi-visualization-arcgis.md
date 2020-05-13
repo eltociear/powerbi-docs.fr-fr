@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c296e202dccf814fcb9e1a4c6ee0620185723248
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 34c0287c8a4df296e41826f32de95b0c050c8d08
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865687"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277292"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>Créer des cartes ArcGIS dans Power BI Desktop
 
@@ -73,7 +73,7 @@ Ce tutoriel utilise Power BI Desktop et le fichier PBIX de l’[exemple Analyse 
    
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>Créer une visualisation de carte ArcGIS Maps for Power BI
 
-Regardez Will créer différentes visualisations, puis suivez les étapes ci-dessous pour essayer par vous-même avec le [fichier .PBIX de l’exemple Analyse de la vente au détail](../sample-datasets.md).
+Regardez Will créer différentes visualisations, puis suivez les étapes ci-dessous pour essayer par vous-même avec le [fichier .PBIX de l’exemple Analyse de la vente au détail](../create-reports/sample-datasets.md).
     
 
    > [!NOTE]
@@ -368,4 +368,5 @@ Pas encore. [Votez pour cette idée](https://ideas.powerbi.com/forums/265200-pow
 [Billet de blog annonçant la disponibilité de ArcGIS Maps pour Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+
 

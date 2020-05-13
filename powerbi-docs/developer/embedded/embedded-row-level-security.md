@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 19abcd84809f0bf8d3560fd8734d30fcf31b9ecb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550968"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277016"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -21,7 +21,7 @@ La **sécurité au niveau des lignes** peut être utilisée pour restreindre l�
 
 Si vous incorporez un rapport pour les utilisateurs non-Power BI (l’application possède les données), en général un scénario ISV, cet article est fait pour vous. Configurez le jeton d’incorporation pour prendre en compte l’utilisateur et le rôle.
 
-Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur possède les données) au sein de votre organisation, la sécurité au niveau des lignes fonctionne de la même façon que dans le service Power BI directement. Il n’y a rien de plus à faire dans votre application. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](../../service-admin-rls.md).
+Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur possède les données) au sein de votre organisation, la sécurité au niveau des lignes fonctionne de la même façon que dans le service Power BI directement. Il n’y a rien de plus à faire dans votre application. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](../../admin/service-admin-rls.md).
 
 ![Éléments impliqués dans la sécurité au niveau des lignes.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -29,7 +29,7 @@ Pour tirer parti de la sécurité au niveau des lignes, il est important de comp
 
 **Utilisateurs** : utilisateurs finaux qui voient l’artefact (tableau de bord, vignette, rapport ou jeu de données). Dans Power BI Embedded, les utilisateurs sont identifiés par la propriété de nom d’utilisateur dans un jeton d’incorporation.
 
-**Rôles** : les utilisateurs appartiennent à des rôles. Un rôle est un conteneur de règles et peut être nommé en *Directeur des ventes* ou *Commercial*. Vous créez des rôles dans Power BI Desktop. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI Desktop](../../desktop-rls.md).
+**Rôles** : les utilisateurs appartiennent à des rôles. Un rôle est un conteneur de règles et peut être nommé en *Directeur des ventes* ou *Commercial*. Vous créez des rôles dans Power BI Desktop. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI Desktop](../../create-reports/desktop-rls.md).
 
 **Règles** : les rôles ont des règles et ces dernières sont les filtres réels qui vont être appliqués aux données. Les règles peuvent être aussi simples que « Pays = États-Unis » ou quelque chose de beaucoup plus dynamique.
 Dans le reste de cet article, vous verrez un exemple de création de sécurité au niveau des lignes et de consommation au sein d’une application incorporée. Cet exemple utilise le fichier PBIX [Exemple Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkID=780547).
@@ -135,7 +135,7 @@ L’identité effective fournie pour la propriété de nom d’utilisateur doit 
 
 ### <a name="on-premises-data-gateway-configuration"></a>Configuration d’une passerelle de données locale
 
-Une [passerelle de données locale](../../service-gateway-onprem.md) est utilisée lors de l’utilisation des connexions actives d’Analysis Services. Lorsque vous générez un jeton incorporé, avec une identité répertoriée, le compte principal doit être répertorié en tant qu’administrateur de la passerelle. Si le compte principal n’est pas listé, la sécurité au niveau des lignes n’est pas appliquée à la propriété des données. Une personne qui n’est pas administrateur de la passerelle peut fournir des rôles, mais doit spécifier son propre nom d’utilisateur en tant qu’identité effective.
+Une [passerelle de données locale](../../connect-data/service-gateway-onprem.md) est utilisée lors de l’utilisation des connexions actives d’Analysis Services. Lorsque vous générez un jeton incorporé, avec une identité répertoriée, le compte principal doit être répertorié en tant qu’administrateur de la passerelle. Si le compte principal n’est pas listé, la sécurité au niveau des lignes n’est pas appliquée à la propriété des données. Une personne qui n’est pas administrateur de la passerelle peut fournir des rôles, mais doit spécifier son propre nom d’utilisateur en tant qu’identité effective.
 
 ### <a name="use-of-roles"></a>Utilisation des rôles
 
@@ -235,9 +235,9 @@ Voici les étapes pour commencer à configurer la fonctionnalité CustomData() a
 
 Quand vous décidez de filtrer vos données dans un rapport, vous pouvez utiliser la **sécurité au niveau des lignes** ou des **filtres JavaScript**.
 
-La [sécurité au niveau des lignes](../../service-admin-rls.md) est une fonctionnalité qui filtre les données au niveau du modèle de données. Votre source de données back-end contrôle vos paramètres de sécurité au niveau des lignes. En fonction de votre modèle de données, la génération de jeton d’incorporation définit le nom d’utilisateur et les rôles pour la session. Ces informations ne peuvent pas être substituées, supprimées ni contrôlées par le code côté client, c’est pourquoi elles sont considérées comme sécurisées. Nous vous recommandons d’utiliser la sécurité au niveau des lignes pour filtrer les données en toute sécurité. Vous pouvez filtrer les données avec la sécurité au niveau des lignes en utilisant l’une des options ci-dessous.
+La [sécurité au niveau des lignes](../../admin/service-admin-rls.md) est une fonctionnalité qui filtre les données au niveau du modèle de données. Votre source de données back-end contrôle vos paramètres de sécurité au niveau des lignes. En fonction de votre modèle de données, la génération de jeton d’incorporation définit le nom d’utilisateur et les rôles pour la session. Ces informations ne peuvent pas être substituées, supprimées ni contrôlées par le code côté client, c’est pourquoi elles sont considérées comme sécurisées. Nous vous recommandons d’utiliser la sécurité au niveau des lignes pour filtrer les données en toute sécurité. Vous pouvez filtrer les données avec la sécurité au niveau des lignes en utilisant l’une des options ci-dessous.
 
-* [Configuration des rôles dans un rapport Power BI](../../desktop-rls.md).
+* [Configuration des rôles dans un rapport Power BI](../../create-reports/desktop-rls.md).
 * Configuration des rôles au niveau de la source de données (connexion active Analysis Services uniquement).
 * Par programmation avec un [jeton d’incorporation](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) à l’aide de `EffectiveIdentity`. Quand vous utilisez un jeton d’incorporation, le filtre réel traverse le jeton d’incorporation pour une session spécifique.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377187"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279431"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 
@@ -152,7 +152,7 @@ Les Concepteurs de rapports peuvent créer une application Power Apps et l’inc
 ![Visuels Questions et réponses](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->À l’instar de [Questions et réponses dans les tableaux de bord](../power-bi-tutorial-q-and-a.md), le visuel Questions et réponses vous permet de poser des questions sur vos données en langage naturel. 
+>À l’instar de [Questions et réponses dans les tableaux de bord](../create-reports/power-bi-tutorial-q-and-a.md), le visuel Questions et réponses vous permet de poser des questions sur vos données en langage naturel. 
 
 Pour plus d’informations, consultez [Visuels Questions et réponses dans Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -248,3 +248,4 @@ Lorsque vous tapez des requêtes en langage naturel avec le service Questions et
 ## <a name="next-steps"></a>Étapes suivantes
 [Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md)    
 [La bonne référence visuelle dans sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

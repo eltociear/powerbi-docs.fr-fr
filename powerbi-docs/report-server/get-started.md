@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 39ccb9120b7dd61d7f160c296d2de799b7f3fe23
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613584"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141103"
 ---
 # <a name="what-is-power-bi-report-server"></a>Présentation de Power BI Report Server
 
@@ -26,7 +26,7 @@ Power BI Report Server est un serveur de rapports local avec un portail web dan
 Power BI Report Server ressemble à la fois à SQL Server Reporting Services et au service en ligne Power BI, mais avec quelques différences. Comme le service Power BI, Power BI Report Server héberge des rapports Power BI (.pbix), des fichiers Excel et des rapports paginés (.rdl). Comme Reporting Services, Power BI Report Server est installé localement. Les fonctionnalités de Power BI Report Server sont un sur-ensemble de Reporting Services : tout ce que vous pouvez faire dans Reporting Services, vous pouvez aussi le faire avec Power BI Report Server, avec en plus la prise en charge des rapports Power BI. Consultez [Comparer Power BI Report Server et le service Power BI](compare-report-server-service.md) pour plus d’informations.
 
 ## <a name="licensing-power-bi-report-server"></a>Gestion des licences Power BI Report Server
-Power BI Report Server est disponible sous deux licences différentes : [Power BI Premium](../service-premium-what-is.md) et [SQL Server Enterprise](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
+Power BI Report Server est disponible sous deux licences différentes : [Power BI Premium](../admin/service-premium-what-is.md) et [SQL Server Enterprise](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
 
 > [!NOTE]
 > Pour Power BI Premium, Power BI Report Server est uniquement inclus dans les références (SKU) P. Il n’est pas inclus dans les références (SKU) EM.
@@ -71,5 +71,3 @@ Plus de [Documentation pour les développeurs de Reporting Services](https://doc
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-

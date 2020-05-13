@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621553"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144751"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -23,7 +23,7 @@ Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport
 
 ![Paginé](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, `https://app.powerbi.com`. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](../service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
+Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, `https://app.powerbi.com`. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](../admin/service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Créer des rapports dans le Générateur de rapports Power BI
 

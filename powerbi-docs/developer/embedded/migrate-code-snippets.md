@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 26e68f64f9cce2251e98c6a831200b6fbc5d2dd8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b2976511577dc6e83aa17c83c6c6c560f0755d15
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114481"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141196"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
 
@@ -233,7 +233,7 @@ Dans cet extrait de code, nous supposons que le jeu de données utilisant le ser
 [Incorporation avec Power BI](embedding.md)  
 [Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI](migrate-from-powerbi-embedded.md)  
 [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embed-sample-for-your-organization.md)  
-[Qu’est-ce que Power BI Premium ?](../../service-premium-what-is.md)  
+[Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)  
 [Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e54fbf7c521d057b6cc9fe1dde6c66358a9c349d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80302500"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277522"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
 
@@ -26,7 +26,7 @@ Quand un collègue partage du contenu avec vous, à l’aide du bouton **Partage
 
 ![Icône de partage](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Regardez Amanda expliquer la liste de contenu **Partagé avec moi** et montrer comment naviguer dans celle-ci ainsi que la filtrer. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même. Pour afficher les tableaux de bord partagés avec vous, vous devez posséder une licence Power BI Pro. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](../service-premium-what-is.md).
+Regardez Amanda expliquer la liste de contenu **Partagé avec moi** et montrer comment naviguer dans celle-ci ainsi que la filtrer. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même. Pour afficher les tableaux de bord partagés avec vous, vous devez posséder une licence Power BI Pro. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](../admin/service-premium-what-is.md).
     
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Les actions disponibles dépendent des paramètres affectés par le *concepteur*
 * [Voir les insights](end-user-insights.md) que Power BI trouve dans les données ![icône Insights](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > Pour plus d’informations sur les classifications EGRC, sélectionnez le bouton **Classification** ou [consultez Classification des données des tableaux de bord](../service-data-classification.md).
+  > Pour plus d’informations sur les classifications EGRC, sélectionnez le bouton **Classification** ou [consultez Classification des données des tableaux de bord](../create-reports/service-data-classification.md).
   > 
 
 

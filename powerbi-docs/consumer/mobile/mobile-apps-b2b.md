@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 711c920f5b0b7feeeeb2297e0f93714e1e89f1a2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75219860"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148181"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Afficher le contenu Power BI qu’une organisation externe a partagé avec vous
 
@@ -28,7 +28,7 @@ S’applique à :
 
 ## <a name="accessing-shared-content"></a>Accès au contenu partagé
 
-**Tout d’abord, il est nécessaire qu’une personne d’une organisation externe partage une ressource avec vous.** Lorsque quelqu’un [partage une ressource avec vous](../../service-share-dashboards.md), que ce soit au sein de votre organisation ou d’une organisation externe, vous recevez un e-mail contenant un lien vers cette ressource partagée. Lorsque vous sélectionnez ce lien dans votre appareil mobile, l’application mobile Power BI s’ouvre. Si l’application reconnaît que la ressource a été partagée par une organisation externe, l’application se reconnecte à cette organisation avec votre identité. L’application charge ensuite toutes les ressources que cette organisation a partagées avec vous.
+**Tout d’abord, il est nécessaire qu’une personne d’une organisation externe partage une ressource avec vous.** Lorsque quelqu’un [partage une ressource avec vous](../../collaborate-share/service-share-dashboards.md), que ce soit au sein de votre organisation ou d’une organisation externe, vous recevez un e-mail contenant un lien vers cette ressource partagée. Lorsque vous sélectionnez ce lien dans votre appareil mobile, l’application mobile Power BI s’ouvre. Si l’application reconnaît que la ressource a été partagée par une organisation externe, l’application se reconnecte à cette organisation avec votre identité. L’application charge ensuite toutes les ressources que cette organisation a partagées avec vous.
 
 ![Power BI ouvre la ressource partagée à partir d’un e-mail ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 

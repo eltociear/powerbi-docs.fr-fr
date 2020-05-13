@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260444"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278327"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 
@@ -161,7 +161,7 @@ Le visuel présente un résultat précis. Toutefois, l’utilité du modèle est
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Conseils sur l’association des faits plusieurs à plusieurs
 
-En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation faible_. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../desktop-relationships-understand.md#relationship-evaluation).
+En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation faible_. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Au lieu d’associer directement les tables de type fait, nous vous recommandons d’adopter les principes de conception de [schémas en étoile](star-schema.md). Pour ce faire, vous devez ajouter des tables de type dimension. Les tables de type dimension sont ensuite associées aux tables de type fait à l’aide de relations de type un à plusieurs. Cette approche de conception est fiable, car elle offre des options de création de rapports flexibles. Elle vous permet de filtrer ou de regrouper en utilisant n’importe quelle colonne de type dimension et de récapituler toute table de type fait associée.
 
@@ -184,7 +184,7 @@ Si vous prenez le temps d’appliquer les principes de conception de schémas en
 - Vos visuels de rapport peuvent _filtrer ou regrouper_ selon n’importe quelle colonne visible à partir des tables de type dimension
 - Vos visuels de rapport peuvent _récapituler_ toute colonne visible à partir des tables de type fait
 - Les filtres appliqués aux tables **OrderLine**, **OrderDate** ou **Product** sont propagés aux deux tables de type fait
-- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation solide_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../desktop-relationships-understand.md#relationship-evaluation).
+- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation solide_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Associer des faits de niveau plus général
 
@@ -209,7 +209,7 @@ Une relation entre les tables **Date** et **Target** doit être une relation de 
 
 Toutefois, il convient de veiller à ce que les filtres de niveau mois ou date produisent un résultat significatif. Sans logique de calcul spéciale, les visuels de rapport peuvent signaler que les dates cibles sont littéralement le premier jour de chaque année. Tous les autres jours, et tous les mois sauf janvier, récapitulent la quantité cible comme VIDE.
 
-Le visuel de matrice suivant montre ce qui se produit quand l’utilisateur du rapport passe d’une année à ses mois. Le visuel récapitule la colonne **TargetQuantity**. (L’option [Afficher les éléments sans données](../desktop-show-items-no-data.md) a été activée pour les lignes de la matrice.)
+Le visuel de matrice suivant montre ce qui se produit quand l’utilisateur du rapport passe d’une année à ses mois. Le visuel récapitule la colonne **TargetQuantity**. (L’option [Afficher les éléments sans données](../create-reports/desktop-show-items-no-data.md) a été activée pour les lignes de la matrice.)
 
 ![Un visuel de matrice affiche la quantité cible 270 pour l’année 2020. Quand il est développé pour afficher les mois de 2020, janvier correspond à 270, et la quantité cible au niveau d’un mois sur deux est VIDE.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -295,7 +295,7 @@ Lorsque vous devez associer une table de type dimension à une table de type fai
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md)
+- [Relations de modèle dans Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md)
 - [Aide à la résolution des problèmes de relations](relationships-troubleshoot.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

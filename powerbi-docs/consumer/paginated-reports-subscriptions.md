@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: d3813636010dcbf5c866248111755beb0dca99b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c7f377c1295d4cd8f0d226331fcb6db697786e5a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74834629"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141267"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
@@ -39,7 +39,6 @@ Lors de la configuration des abonnements, vous choisissez la fréquence à laque
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI](../service-report-subscribe.md)
+[Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI](../collaborate-share/service-report-subscribe.md)
 
 [Rapports paginés dans le service Power BI](end-user-paginated-report.md)
-

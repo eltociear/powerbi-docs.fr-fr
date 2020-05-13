@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d70d1357af3309ddd9584b11ccf79115cde095c8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0a66b0fc1a984e0905fba209ca59afb3a02696b2
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79383295"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131306"
 ---
 # <a name="power-bi-visuals-faq"></a>Questions fréquentes (FAQ) sur les visuels Power BI
 
@@ -24,7 +24,7 @@ Le portail d’administration vous permet de gérer des visuels Power BI pour v
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Comment l’administrateur peut-il gérer les visuels Power BI d’organisation ?
 
-Dans le portail d’administration, sous l’onglet *Visuels d’organisation*, l’administrateur peut voir et [gérer tous les visuels Power BI d’organisation dans l’entreprise](../../service-admin-portal.md#organizational-visuals). Cela inclut l'ajout, la désactivation, l'activation et la suppression de visuels Power BI.
+Dans le portail d’administration, sous l’onglet *Visuels d’organisation*, l’administrateur peut voir et [gérer tous les visuels Power BI d’organisation dans l’entreprise](../../admin/service-admin-portal.md#organizational-visuals). Cela inclut l'ajout, la désactivation, l'activation et la suppression de visuels Power BI.
 
 Les utilisateurs dans l’organisation peuvent facilement trouver des visuels Power BI et les importer dans leurs rapports directement depuis Power BI Desktop ou Service.
 

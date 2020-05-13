@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 92aa2c5d8da91590f5d491090761a6a6b1501061
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263803"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278258"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Aide pour la relation un-à-un
 
@@ -99,7 +99,7 @@ Si cela est possible, nous vous recommandons d’éviter de créer des relations
 - Limiter la capacité à créer des hiérarchies, étant donné que leurs niveaux doivent être basés sur des colonnes de la _même table_
 - Donner des résultats inattendus lorsqu’il y a une correspondance complète de lignes entre les tables
 
-Des recommandations spécifiques diffèrent selon que la relation un-à-un est _intra-îlots_ ou _inter-îlots_. Pour plus d’informations sur l’évaluation des relations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../desktop-relationships-understand.md#relationship-evaluation).
+Des recommandations spécifiques diffèrent selon que la relation un-à-un est _intra-îlots_ ou _inter-îlots_. Pour plus d’informations sur l’évaluation des relations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ### <a name="intra-island-one-to-one-relationship"></a>Relation un-à-un intra-îlot
 
@@ -107,7 +107,7 @@ Lorsqu’il y a une relation un-à-un _intra-îlot_ entre des tables, nous recom
 
 Les étapes suivantes présentent une méthodologie pour consolider et modéliser les données relationnelles un-à-un :
 
-1. **Fusionner des requêtes** : Lorsque les [deux requêtes sont combinées](../desktop-shape-and-combine-data.md#combine-queries), veillez à ce que les données de chaque requête soient complètes. Si une requête contient un ensemble complet de lignes (comme une liste maître), fusionnez l’autre requête avec elle. Configurez la transformation de fusion pour utiliser une _jointure externe gauche_, qui est le type de jointure par défaut. Ce type de jointure garantit que vous conservez toutes les lignes de la première requête et les complétez avec toutes les lignes correspondantes de la deuxième requête. Développez toutes les colonnes requises de la deuxième requête dans la première requête.
+1. **Fusionner des requêtes** : Lorsque les [deux requêtes sont combinées](../connect-data/desktop-shape-and-combine-data.md#combine-queries), veillez à ce que les données de chaque requête soient complètes. Si une requête contient un ensemble complet de lignes (comme une liste maître), fusionnez l’autre requête avec elle. Configurez la transformation de fusion pour utiliser une _jointure externe gauche_, qui est le type de jointure par défaut. Ce type de jointure garantit que vous conservez toutes les lignes de la première requête et les complétez avec toutes les lignes correspondantes de la deuxième requête. Développez toutes les colonnes requises de la deuxième requête dans la première requête.
 2. **Désactiver le chargement des requêtes** : Veillez à [désactiver le chargement](import-modeling-data-reduction.md#disable-power-query-query-load) de la deuxième requête. Ainsi, elle ne chargera pas son résultat comme table de modèle. Cette configuration réduit la taille de stockage du modèle de données et aide à désencombrer le volet **Champs**.
 
     Dans notre exemple, les auteurs de rapports trouvent maintenant une seule table nommée **Produit** dans le volet **Champs**. Elle contient tous les champs liés aux produits.
@@ -131,11 +131,11 @@ Dans notre exemple, les auteurs des rapports peuvent trouver le champ **Catégor
 
 ![Le volet Champs montre le champ Catégorie dans un dossier d’affichage nommé Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Si vous souhaitez toujours définir les relations un-à-un intra-îlots dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation intra-îlot un-à-un étant évaluée comme une [relation forte](../desktop-relationships-understand.md#strong-relationships), des problèmes d’intégrité des données peuvent apparaître comme VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
+Si vous souhaitez toujours définir les relations un-à-un intra-îlots dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation intra-îlot un-à-un étant évaluée comme une [relation forte](../transform-model/desktop-relationships-understand.md#strong-relationships), des problèmes d’intégrité des données peuvent apparaître comme VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
 
 ### <a name="inter-island-one-to-one-relationship"></a>Relation un-à-un inter-îlot
 
-Lorsqu’il existe une relation un-à-un _inter-îlot_ entre des tables, il n’existe pas d’alternative de conception de modèle, sauf si vous consolidez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme [relation faible](../desktop-relationships-understand.md#weak-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
+Lorsqu’il existe une relation un-à-un _inter-îlot_ entre des tables, il n’existe pas d’alternative de conception de modèle, sauf si vous consolidez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme [relation faible](../transform-model/desktop-relationships-understand.md#weak-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
 
 Voyons ce qui se passe lorsque des champs des deux tables sont ajoutés à un visuel de table et qu’il y a une relation faible entre les tables.
 
@@ -147,7 +147,7 @@ La table n’affiche que deux lignes. La référence SKU de produit CL-02 est ma
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Relations de modèle dans Power BI Desktop](../desktop-relationships-understand.md)
+- [Relations de modèle dans Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md)
 - [Aide à la résolution des problèmes de relations](relationships-troubleshoot.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
