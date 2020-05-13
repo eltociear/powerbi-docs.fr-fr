@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80464581"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278810"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuels organisationnels dans Power BI
 
@@ -42,8 +42,6 @@ Pour découvrir comment administrer, déployer et gérer des visuels Power BI d
 Il existe plusieurs considérations et limitations que vous devez connaître.
 
 Admin :
-
-* Les visuels Power BI hérités (par exemple ceux qui ne s’appuient pas sur les nouvelles API avec gestion de versions) ne sont pas pris en charge.
 
 * Si un visuel Power BI d’une ApSource ou d’un fichier est supprimé du référentiel, tous les rapports existants qui utilisent le visuel supprimé ne seront plus rendus. La suppression du référentiel n’est pas réversible. Pour désactiver temporairement un visuel Power BI à partir de ApSource ou d’un fichier, utilisez la caractéristique « Désactiver ».
 

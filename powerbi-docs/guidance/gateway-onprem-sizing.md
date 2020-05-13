@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4f289bf319bf29de8f8765d55bf3400048420af5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76829049"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279523"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionnement de la passerelle de données locale
 
-Cet article est destiné aux administrateurs Power BI qui souhaitent installer et gérer la [passerelle de données locale](../service-gateway-onprem.md).
+Cet article est destiné aux administrateurs Power BI qui souhaitent installer et gérer la [passerelle de données locale](../connect-data/service-gateway-onprem.md).
 
 La passerelle est requise chaque fois que Power BI doit accéder à des données qui ne sont pas directement accessibles sur Internet. Elle peut être installée sur un serveur local ou sur une infrastructure IaaS (infrastructure as a service) hébergée sur une machine virtuelle.
 
@@ -39,8 +39,8 @@ La charge de travail _Données en cache_ récupère et transforme les données s
 
 La charge de travail _Connexion active et DirectQuery_ fonctionne principalement en mode Intermédiaire (pass-through). Le service Power BI envoie des requêtes, ce à quoi la passerelle répond en donnant les résultats des requêtes. En règle générale, ces derniers sont peu volumineux.
 
-- Pour plus d’informations sur la Connexion active, consultez [Jeux de données dans le service Power BI (modèles hébergés en externe)](../service-datasets-understand.md#external-hosted-models).
-- Pour plus d’informations sur DirectQuery, consultez [Modes des jeux de données dans le service Power BI (mode DirectQuery)](../service-dataset-modes-understand.md#directquery-mode).
+- Pour plus d’informations sur la Connexion active, consultez [Jeux de données dans le service Power BI (modèles hébergés en externe)](../connect-data/service-datasets-understand.md#external-hosted-models).
+- Pour plus d’informations sur DirectQuery, consultez [Modes des jeux de données dans le service Power BI (mode DirectQuery)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 Cette charge de travail demande des ressources processeur pour le routage des requêtes et des résultats des requêtes. En général, la demande en processeur est bien moins importante que celle de la charge de travail Données du cache, en particulier s’il est nécessaire de transformer les données pour la mise en cache.
 
@@ -62,13 +62,13 @@ Le bon dimensionnement d’un ordinateur de passerelle peut dépendre des variab
   - nombre d’utilisateurs de rapports simultanés ;
   - nombre de visuels sur les pages de rapport (chaque visuel envoie au moins une requête) ;
   - fréquence des mises à jour du cache des requêtes du tableau de bord Power BI ;
-  - nombre de rapports en temps réel avec la fonctionnalité [Actualisation automatique de la page](../desktop-automatic-page-refresh.md) ;
-  - application (ou non) de la [Sécurité au niveau des lignes (SNL)](../desktop-rls.md).
+  - nombre de rapports en temps réel avec la fonctionnalité [Actualisation automatique de la page](../create-reports/desktop-automatic-page-refresh.md) ;
+  - application (ou non) de la [Sécurité au niveau des lignes (SNL)](../create-reports/desktop-rls.md).
 
 En règle générale, les charges de travail Connexion active et DirectQuery demandent suffisamment de processeur, tandis que les charges de travail Données en cache nécessitent davantage de processeur et de mémoire. Les deux charges de travail dépendent d’une bonne connectivité avec le service Power BI et les sources de données.
 
 > [!NOTE]
-> Les capacités de Power BI imposent des limites sur le parallélisme de l’actualisation du modèle, ainsi que sur le débit Connexion active et DirectQuery. Il n’y a pas d’intérêt à dimensionner les passerelles au-delà de ce que prend en charge le service Power BI. Les limites varient selon la référence SKU Premium (et la référence SKU A de taille équivalente). Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ? (nœuds de capacité)](../service-premium-what-is.md#capacity-nodes).
+> Les capacités de Power BI imposent des limites sur le parallélisme de l’actualisation du modèle, ainsi que sur le débit Connexion active et DirectQuery. Il n’y a pas d’intérêt à dimensionner les passerelles au-delà de ce que prend en charge le service Power BI. Les limites varient selon la référence SKU Premium (et la référence SKU A de taille équivalente). Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ? (nœuds de capacité)](../admin/service-premium-what-is.md#capacity-nodes).
 
 ## <a name="recommendations"></a>Recommandations
 
@@ -84,9 +84,9 @@ Prévoyez la meilleure connectivité possible entre le service Power BI et votre
 
 - Visez la fiabilité, la rapidité et des latences faibles et cohérentes.
 - Éliminez (ou réduisez) les sauts d’ordinateur entre la passerelle et vos sources de données.
-- Supprimez toute limitation de bande passante imposée par la couche de proxy de votre pare-feu. Pour plus d’informations sur les points de terminaison Power BI, consultez [URL Power BI pour la liste verte](../power-bi-whitelist-urls.md).
+- Supprimez toute limitation de bande passante imposée par la couche de proxy de votre pare-feu. Pour plus d’informations sur les points de terminaison Power BI, consultez [URL Power BI pour la liste verte](../admin/power-bi-whitelist-urls.md).
 - Configurez [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) pour établir des connexions gérées privées avec Power BI.
-- En ce qui concerne les sources de données dans les machines virtuelles Azure, vérifiez que ces machines virtuelles sont [colocalisées avec le service Power BI](../service-admin-where-is-my-tenant-located.md).
+- En ce qui concerne les sources de données dans les machines virtuelles Azure, vérifiez que ces machines virtuelles sont [colocalisées avec le service Power BI](../admin/service-admin-where-is-my-tenant-located.md).
 - Pour les charges de travail Connexion en direct à SQL Server Analysis Services (SSAS) impliquant une SNL dynamique, assurez une bonne connectivité entre l’ordinateur de passerelle et Active Directory en local.
 
 ### <a name="clustering"></a>Clustering
@@ -105,17 +105,17 @@ La conception du jeu de données et ses paramètres peuvent avoir un impact sur 
 Pour les jeux de données d’importation :
 
 - Configurez une actualisation des données moins fréquente.
-- Configurez une [actualisation incrémentielle](../service-premium-incremental-refresh.md) pour réduire la quantité de données à transférer.
+- Configurez une [actualisation incrémentielle](../admin/service-premium-incremental-refresh.md) pour réduire la quantité de données à transférer.
 - Dans la mesure du possible, faites en sorte qu’un [Query Folding](power-query-folding.md) s’applique.
-- En particulier pour les gros volumes de données ou les exigences de résultats à faible latence, convertissez la conception en modèle [DirectQuery](../service-dataset-modes-understand.md#composite-mode) ou Composite.
+- En particulier pour les gros volumes de données ou les exigences de résultats à faible latence, convertissez la conception en modèle [DirectQuery](../connect-data/service-dataset-modes-understand.md#composite-mode) ou Composite.
 
 Pour les jeux de données DirectQuery :
 
 - Optimisez la conception des sources de données, des modèles et des rapports. Pour plus d’informations, consultez [Aide du modèle DirectQuery dans Power BI Desktop](directquery-model-guidance.md).
-- Créez des [agrégations](../desktop-aggregations.md) pour mettre en cache les résultats de niveau supérieur afin de réduire le nombre de demandes DirectQuery.
-- Limitez les intervalles [d’Actualisation automatique de la page](../desktop-automatic-page-refresh.md), dans les conceptions de rapports et les paramètres de capacité.
+- Créez des [agrégations](../transform-model/desktop-aggregations.md) pour mettre en cache les résultats de niveau supérieur afin de réduire le nombre de demandes DirectQuery.
+- Limitez les intervalles [d’Actualisation automatique de la page](../create-reports/desktop-automatic-page-refresh.md), dans les conceptions de rapports et les paramètres de capacité.
 - En particulier lorsque la SNL est appliquée, restreignez la fréquence de mise à jour du cache du tableau de bord.
-- En particulier pour les petits volumes de données ou pour les données non volatiles, convertissez la conception en modèle Importation ou [Composite](../service-dataset-modes-understand.md#composite-mode).
+- En particulier pour les petits volumes de données ou pour les données non volatiles, convertissez la conception en modèle Importation ou [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode).
 
 Pour les jeux de données Connexion active :
 
@@ -125,10 +125,10 @@ Pour les jeux de données Connexion active :
 
 Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-- [Conseils sur le déploiement d’une passerelle de données pour Power BI](../service-gateway-deployment-guidance.md)
+- [Conseils sur le déploiement d’une passerelle de données pour Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Configurer les paramètres de proxy de la passerelle de données locale](/data-integration/gateway/service-gateway-proxy)
 - [Surveiller et optimiser les performances de la passerelle de données locale](/data-integration/gateway/service-gateway-performance)
-- [Résoudre les problèmes liés aux passerelles - Power BI](../service-gateway-onprem-tshoot.md)
+- [Résoudre les problèmes liés aux passerelles - Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Résoudre les problèmes de passerelle de données locale](/data-integration/gateway/service-gateway-tshoot)
 - [L’importance du Query Folding](power-query-folding.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

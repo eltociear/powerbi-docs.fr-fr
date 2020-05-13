@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 48b13b73455d39eb7dc8cbf9df3e95408592f7f5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841730"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279500"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -27,7 +27,7 @@ S’applique à :
 
 Un rapport Power BI est une vue interactive de vos données, avec des visuels qui représentent différents résultats et insights de ces données. L’affichage de rapports dans les applications mobiles Power BI est la troisième étape d’un processus en trois étapes :
 
-1. [Créez des rapports dans Power BI Desktop](../../desktop-report-view.md). Vous pouvez même [optimiser un rapport pour les téléphones](mobile-apps-view-phone-report.md) dans Power BI Desktop.
+1. [Créez des rapports dans Power BI Desktop](../../create-reports/desktop-report-view.md). Vous pouvez même [optimiser un rapport pour les téléphones](mobile-apps-view-phone-report.md) dans Power BI Desktop.
 2. Publiez ces rapports dans le service Power BI [ (https://powerbi.com)](https://powerbi.com) ou [Power BI Report Server](../../report-server/get-started.md)).  
 3. Exploitez les rapports dans les applications mobiles Power BI.
 
@@ -100,7 +100,7 @@ Les auteurs de rapports peuvent définir des hiérarchies dans les données et d
 Quand vous appuyez sur une partie spécifique d’un visuel, puis sur l’option d’*extraction*, Power BI vous redirige vers une autre page du rapport, filtrée sur la valeur que vous avez choisie. L’auteur d’un rapport peut définir une ou plusieurs options d’extraction, chacune vous redirigeant vers une page différente. Dans ce cas, vous pouvez choisir l’option que vous voulez extraire. Le bouton Précédent vous ramène à la page précédente.
 
 
-Pour plus d’informations, découvrez comment [ajouter l’extraction à Power BI Desktop](../../desktop-drillthrough.md).
+Pour plus d’informations, découvrez comment [ajouter l’extraction à Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > Dans les applications mobiles Power BI, les actions d’exploration des visuels de matrice et de table sont activées par le biais des valeurs de cellules uniquement, et non par en-têtes de ligne ou de colonne.
@@ -164,6 +164,5 @@ Pour plus d’informations sur le changement de ces paramètres, consultez [Para
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)
-* [Créer une version de rapport optimisée pour les téléphones](../../desktop-create-phone-report.md)
+* [Créer une version de rapport optimisée pour les téléphones](../../create-reports/desktop-create-phone-report.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

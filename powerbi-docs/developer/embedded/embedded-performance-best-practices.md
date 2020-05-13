@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 7284532d95cce780f4022477faab9033adcd764a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492603"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279385"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
@@ -59,7 +59,7 @@ Lorsque vous incorporez plusieurs rapports au même iframe, ne générez pas de 
 
 Les organisations avec une capacité Power BI Premium ou Power BI Embedded peuvent tirer parti de la mise en cache des requêtes pour accélérer l’exécution de rapports associés à un jeu de données.
 
-[En savoir plus sur la mise en cache des requêtes dans Power BI](../../power-bi-query-caching.md).
+[En savoir plus sur la mise en cache des requêtes dans Power BI](../../connect-data/power-bi-query-caching.md).
 
 ## <a name="preload"></a>Préchargement
 
@@ -99,7 +99,7 @@ Les données mises en cache sont rendues quand elles sont disponibles, mais aucu
 Pour examiner les performances des éléments de rapport, vous pouvez utiliser l’analyseur de performances dans Power BI Desktop.
 L’analyseur de performances vous permet de voir et d’enregistrer les journaux qui mesurent la façon dont chacun de vos éléments de rapport s’exécute.
 
-[En savoir plus sur l’Analyseur de performances](../../desktop-performance-analyzer.md).
+[En savoir plus sur l’Analyseur de performances](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > N’oubliez pas de comparer les performances du rapport incorporé aux performances sur powerbi.com. Cela peut vous aider à comprendre l’origine de vos problèmes de performances
