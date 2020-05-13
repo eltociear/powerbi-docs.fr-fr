@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 56b3a4f67f5bc6dda777ea7c94b92c65abb4f3b0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77426630"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349399"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Bien démarrer avec l’application mobile Power BI sur les appareils iOS
 L’application Microsoft Power BI pour iOS sur les iPhone et iPad fournit une expérience mobile pour Power BI, Power BI Report Server et Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
@@ -22,7 +22,7 @@ L’application Microsoft Power BI pour iOS sur les iPhone et iPad fournit une 
 
 Vous créez des rapports Power BI dans Power BI Desktop, puis les publiez :
 
-* [Publiez-les sur le service Power BI](../../service-get-started.md) puis créez des tableaux de bord.
+* [Publiez-les sur le service Power BI](../../fundamentals/service-get-started.md) puis créez des tableaux de bord.
 * [Publiez-les localement sur Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md).
 
 Ensuite, dans l’application mobile Power BI pour iOS, vous pouvez manipuler vos tableaux de bord et rapports, tant en local que dans le cloud.
@@ -79,11 +79,9 @@ Microsoft Intune permet aux organisations de contrôler divers éléments, comme
 > Si vous utilisez l’application mobile Power BI sur votre appareil iOS et que votre organisation a configuré Microsoft Intune MAM, l’actualisation des données en arrière-plan est désactivée. La prochaine fois que vous ouvrez l’application, Power BI actualise les données à partir du service Power BI sur le web.
 > 
 
-En savoir plus sur la [configuration des applications mobiles Power BI avec Microsoft Intune](../../service-admin-mobile-intune.md). 
+En savoir plus sur la [configuration des applications mobiles Power BI avec Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-

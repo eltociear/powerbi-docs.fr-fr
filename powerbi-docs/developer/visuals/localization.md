@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fece594fa6236f01c707f0b84ddca977fb32dede
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379849"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349284"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Ajouter les paramètres régionaux dans Power BI pour les visuels Power BI
 
 Les visuels peuvent récupérer les paramètres régionaux Power BI pour localiser leur contenu dans la langue appropriée.
 
-Découvrez plus en détail les [langues et pays/régions pris en charge pour Power BI](./../../supported-languages-countries-regions.md)
+Découvrez plus en détail les [langues et pays/régions pris en charge pour Power BI](./../../fundamentals/supported-languages-countries-regions.md)
 
 Par exemple, obtention de paramètres régionaux dans l’exemple de visuel de graphique à barres.
 

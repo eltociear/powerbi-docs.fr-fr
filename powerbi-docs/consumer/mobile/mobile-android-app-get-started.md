@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77259809"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347214"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -46,7 +46,7 @@ Découvrez les [nouveautés sur les applications mobiles Power BI](../../mobile
 Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](https://powerbi.com/) pour le faire. Vous disposez alors d’un compte à l’aide duquel vous pouvez créer et stocker des tableaux de bord et des rapports, et regrouper vos données. Ensuite, connectez-vous à Power BI sur votre appareil Android pour consulter vos tableaux de bord où que vous soyez.
 
 1. Dans le service Power BI, appuyez sur [S’inscrire](https://go.microsoft.com/fwlink/?LinkID=513879) pour créer un compte Power BI.
-2. Commencez à [créer vos propres tableaux de bord et rapports](../../service-get-started.md).
+2. Commencez à [créer vos propres tableaux de bord et rapports](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Bien démarrer avec l’application Power BI sur l’appareil
 1. Sur l’écran d’accueil de votre appareil Android, ouvrez l’application Power BI pour Android.
@@ -94,17 +94,17 @@ Microsoft Intune permet aux organisations de contrôler divers éléments, comme
 > 
 > 
 
-En savoir plus sur la [configuration des applications mobiles Power BI avec Microsoft Intune](../../service-admin-mobile-intune.md). 
+En savoir plus sur la [configuration des applications mobiles Power BI avec Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pour appareils Android avec les tableaux de bord et les rapports de Power BI, ainsi que les rapports et indicateurs de performance clés du portail web Power BI Report Server ou Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Tableaux de bord et rapports Power BI
-* Affichez [vos applications](../../service-create-distribute-apps.md).
+* Affichez [vos applications](../../collaborate-share/service-create-distribute-apps.md).
 * Affichez vos [tableaux de bord](../../mobile-apps-view-dashboard.md).
 * Explorez les [vignettes de vos tableaux de bord](../../mobile-tiles-in-the-mobile-apps.md).
 * Ouvrez des [rapports Power BI](../../mobile-reports-in-the-mobile-apps.md).
-* Affichez [vos applications](../../service-create-distribute-apps.md).
+* Affichez [vos applications](../../collaborate-share/service-create-distribute-apps.md).
 * [Annotez et partagez des vignettes](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Partagez des [tableaux de bord](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Numérisez un code QR Power BI](../../mobile-apps-qr-code.md) avec votre téléphone Android pour ouvrir une vignette de tableau de bord ou un rapport associé. 
@@ -119,5 +119,3 @@ Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pou
 * [Téléchargez l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3dcd968d00d98106a8b717e635b8a7fdf958dc70
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114387"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347329"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
 
@@ -47,12 +47,12 @@ Le volet **Contenu associé** s’ouvre. Pour un tableau de bord, il affiche tou
 
 ![Volet Contenu associé](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-À ce stade, vous pouvez agir directement sur le contenu associé.  Par exemple, sélectionnez un nom de rapport ou tableau de bord pour ouvrir celui-ci.  Pour un rapport répertorié, sélectionnez une icône pour [analyser dans Excel](../service-analyze-in-excel.md) ou [obtenir des insights](end-user-insights.md). Pour un jeu de données, vous pouvez voir la date et l’heure de la dernière actualisation, [analyser dans Excel](../service-analyze-in-excel.md) et [obtenir des insights](end-user-insights.md).  
+À ce stade, vous pouvez agir directement sur le contenu associé.  Par exemple, sélectionnez un nom de rapport ou tableau de bord pour ouvrir celui-ci.  Pour un rapport répertorié, sélectionnez une icône pour [analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) ou [obtenir des insights](end-user-insights.md). Pour un jeu de données, vous pouvez voir la date et l’heure de la dernière actualisation, [analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) et [obtenir des insights](end-user-insights.md).  
 
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Afficher le contenu associé d’un jeu de données
-Pour pouvoir ouvrir le volet *Contenu associé*, vous devez disposer au minimum de l’autorisation d’**Affichage** sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
+Pour pouvoir ouvrir le volet *Contenu associé*, vous devez disposer au minimum de l’autorisation d’**Affichage** sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../create-reports/sample-procurement.md).
 
 À partir du volet de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
 
@@ -67,7 +67,7 @@ Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
 
 ![Le volet Contenu associé s’ouvre au-dessus de la vue du contenu Power BI](media/end-user-related/power-bi-dataset.png)
 
-À ce stade, vous pouvez agir directement sur le contenu associé. Par exemple, sélectionnez un nom de tableau de bord ou de rapport à ouvrir.  Pour un tableau de bord quelconque répertorié dans la liste, sélectionnez une icône pour [partager le tableau de bord](../service-share-dashboards.md) ou ouvrir la fenêtre **Paramètres** du tableau de bord. Pour un rapport, sélectionnez une icône pour [analyser dans Excel](../service-analyze-in-excel.md), [renommer](../service-rename.md) ou [obtenir des informations](end-user-insights.md).  
+À ce stade, vous pouvez agir directement sur le contenu associé. Par exemple, sélectionnez un nom de tableau de bord ou de rapport à ouvrir.  Pour un tableau de bord quelconque répertorié dans la liste, sélectionnez une icône pour [partager le tableau de bord](../collaborate-share/service-share-dashboards.md) ou ouvrir la fenêtre **Paramètres** du tableau de bord. Pour un rapport, sélectionnez une icône pour [analyser dans Excel](../collaborate-share/service-analyze-in-excel.md), [renommer](../create-reports/service-rename.md) ou [obtenir des informations](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Limitations et résolution des problèmes
 * Si vous ne voyez pas « Afficher les éléments associés », recherchez cette icône au lieu de l’![icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-icon-new.png). Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
@@ -75,6 +75,5 @@ Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
 * La fonctionnalité Contenu associé ne fonctionne pas pour les jeux de données de streaming.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Prise en main du service Power BI](../service-get-started.md)
+* [Prise en main du service Power BI](../fundamentals/service-get-started.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-

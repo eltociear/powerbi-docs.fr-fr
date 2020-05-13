@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841707"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349261"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
 
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
-* [Nouveautés dans le service Power BI](../../service-whats-new.md)
+* [Nouveautés dans Power BI Desktop](../../fundamentals/desktop-latest-update.md)  
+* [Nouveautés dans le service Power BI](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
@@ -476,7 +476,7 @@ Lisez le [résumé des fonctionnalités d’applications mobiles de juillet 201
 
 ### <a name="june-2107"></a>Juin 2017
 #### <a name="all-devices"></a>Tous les appareils
-**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../../service-create-distribute-apps.md) en tant que favorites. 
+**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../../collaborate-share/service-create-distribute-apps.md) en tant que favorites. 
 
 ### <a name="may-2017"></a>Mai 2017
 #### <a name="all-devices"></a>Tous les appareils
@@ -493,7 +493,7 @@ En savoir plus sur l’[organisation de votre contenu Power BI](mobile-apps-quic
 Consultez le [résumé des fonctionnalités d’applications mobiles d’avril 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/).
 
 #### <a name="all-devices"></a>Tous les appareils
-**Couleurs d’arrière-plan pour les rapports sur téléphone** Quand vous définissez la couleur d’arrière-plan d’un rapport dans Power BI Desktop, le rapport sur téléphone a la même couleur d’arrière-plan. En savoir plus sur l’[optimisation des pages de rapport pour les téléphones](../../desktop-create-phone-report.md).
+**Couleurs d’arrière-plan pour les rapports sur téléphone** Quand vous définissez la couleur d’arrière-plan d’un rapport dans Power BI Desktop, le rapport sur téléphone a la même couleur d’arrière-plan. En savoir plus sur l’[optimisation des pages de rapport pour les téléphones](../../create-reports/desktop-create-phone-report.md).
 
 **Développer un visuel Power BI pour appareils mobiles** Lisez ce [guide du développeur](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) pour obtenir des conseils sur la création de visuels Power BI qui s’affichent et fonctionnent correctement sur les appareils mobiles.
 
@@ -553,7 +553,7 @@ Lisez le [résumé des fonctionnalités de janvier 2017 sur le blog dédié aux 
 #### <a name="all-devices"></a>Tous les appareils
 **Charger plus de 100 lignes dans les tables et matrices** À présent, si votre tableau de bord ou rapport contient une grande table ou matrice, nous montrons autant de données que possible dans la vignette. Puis dans le mode focus, vous pouvez faire défiler vers le bas pour charger les lignes supplémentaires.
 
-**Disponibilité générale des rapports sur téléphone** Les rapports sur téléphone Power BI sont à présent disponibles. Dans Power BI Desktop, vous pouvez personnaliser l’affichage portrait d’un rapport existant pour les utilisateurs mobiles. En savoir plus sur la [création de rapports sur téléphone dans Power BI Desktop](../../desktop-create-phone-report.md) et l’[expérience d’utilisation des rapports sur les téléphones](mobile-apps-view-phone-report.md).
+**Disponibilité générale des rapports sur téléphone** Les rapports sur téléphone Power BI sont à présent disponibles. Dans Power BI Desktop, vous pouvez personnaliser l’affichage portrait d’un rapport existant pour les utilisateurs mobiles. En savoir plus sur la [création de rapports sur téléphone dans Power BI Desktop](../../create-reports/desktop-create-phone-report.md) et l’[expérience d’utilisation des rapports sur les téléphones](mobile-apps-view-phone-report.md).
 
 #### <a name="ios"></a>iOS
 **Authentification SSRS utilisant la préversion d’Active Directory Federation Services (ADFS)** Vous pouvez maintenant vous connecter à des serveurs SQL Server Reporting Services locaux à partir de votre appareil mobile avec votre compte professionnel. En savoir plus sur l’[utilisation de OAuth pour la connexion aux serveurs SSRS](mobile-oauth-ssrs.md).
@@ -644,7 +644,7 @@ Lisez le [résumé d’octobre 2016 des fonctionnalités d’application mobile
 #### <a name="all-phones"></a>Tous les téléphones
 **Favoris** Affichez vos tableaux de bord favoris à partir de toutes les applications mobiles Power BI et gérez la liste des favoris à partir des applications mobiles Power BI pour les appareils iOS et Windows 10. Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
 
-**Classification des données de tableau de bord** Consultez les classifications de données auxquelles les propriétaires ont affecté leurs tableaux de bord. En savoir plus sur la [classification des tableaux de bord](../../service-data-classification.md).
+**Classification des données de tableau de bord** Consultez les classifications de données auxquelles les propriétaires ont affecté leurs tableaux de bord. En savoir plus sur la [classification des tableaux de bord](../../create-reports/service-data-classification.md).
 
 **Alertes pilotées par les données** Soyez averti par une alerte lorsque vos données changent de manière prédéfinie pour un indicateur de performance clé, une jauge et des vignettes de carte. En savoir plus sur les alertes suivantes :
 
@@ -659,14 +659,14 @@ Lisez le [résumé d’octobre 2016 des fonctionnalités d’application mobile
 
 **Prise en charge de Intune MAM** Ajout de la prise en charge des fonctionnalités de gestion des applications mobiles (MAM) Microsoft Intune.
 
-En savoir plus sur [Microsoft Intune sur les applications mobiles Power BI](../../service-admin-mobile-intune.md).
+En savoir plus sur [Microsoft Intune sur les applications mobiles Power BI](../../admin/service-admin-mobile-intune.md).
 
 #### <a name="windows-10-devices"></a>Appareils Windows 10
 **Modes plein écran et de présentation** Affichez des rapports en mode de présentation dans Surface Hub, ainsi que des vignettes, des rapports et des tableaux de bord en mode plein écran sur les appareils Windows 10.
 
 ### <a name="july-2016"></a>Juillet 2016
 #### <a name="all-phones"></a>Tous les téléphones
-Dans le service Power BI, vous pouvez désormais [créer une vue d’un tableau de bord spécifiquement pour les téléphones](../../service-create-dashboard-mobile-phone-view.md) en mode portrait. 
+Dans le service Power BI, vous pouvez désormais [créer une vue d’un tableau de bord spécifiquement pour les téléphones](../../create-reports/service-create-dashboard-mobile-phone-view.md) en mode portrait. 
 
 #### <a name="android-phones"></a>Téléphones Android
 **Onglet Favoris** Accédez à tous vos tableaux de bord favoris depuis un emplacement unique.
@@ -795,7 +795,7 @@ Toutes les améliorations apportées en janvier sont déjà dans la nouvelle [ap
 
 **Vignettes et widgets web R** : affichez ces nouveaux types de vignettes de tableau de bord sur votre appareil mobile.
 
-**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../../service-connect-to-services.md), et les afficher sur votre appareil mobile.
+**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../../connect-data/service-connect-to-services.md), et les afficher sur votre appareil mobile.
 
 **Pages de rapport épinglées en tant que vignettes aux tableaux de bord** : comme vous pouvez maintenant épingler la totalité d’une page de rapport à un tableau de bord dans le service Power BI, vous pouvez afficher des pages de rapport dans l’application Power BI sur votre iPhone ou votre téléphone Android.
 
@@ -805,41 +805,42 @@ L’équipe Power BI a terminé l’année 2015 en force, avec plusieurs ajouts 
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>Rapports SQL Server 2016 Reporting Services pour appareils mobiles dans iOS
 Vous pouvez maintenant afficher vos rapports SQL Server pour appareils mobiles dans l’application Power BI sur votre appareil iOS, qu’il s’agisse d’un iPad ou d’un iPhone. Pour en savoir plus :
 
-* Billet de blog [SQL 16 SSRS on Power BI app for iOS](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx) (en anglais)
+* Billet de blog [SQL 16 SSRS on Power BI app for iOS](https://powerbi.microsoft.com/blog/sql-16-ssrs-on-power-bi-app-for-ios/
+) (en anglais)
 * Consultez la documentation [Rapports et indicateurs de performance clés SQL Server pour appareils mobiles dans les applications iPhone et iPad](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Application Power BI pour les téléphones Windows 10
 La nouvelle application Power BI pour les téléphones Windows 10 est optimisée pour améliorer la productivité sur écran tactile et appareil mobile. Explorez des tableaux de bord et des rapports, invitez des collègues à visualiser les données et partagez des informations par e-mail pour collaborer avec votre équipe. Vous pouvez également [épingler des tableaux de bord Power BI sur l’écran d’accueil de votre téléphone Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Lisez le [billet de blog sur l’application Power BI pour les téléphones Windows 10](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Lisez le [billet de blog sur l’application Power BI pour les téléphones Windows 10](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-for-windows-10-mobile/).
 * [Prise en main de l’application Power BI pour les téléphones Windows 10](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Autres ajouts
-Pour plus d’informations, lisez le [billet de blog de décembre sur les applications mobiles Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
+Pour plus d’informations, lisez le [billet de blog de décembre sur les applications mobiles Power BI](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-december-2015/).
 
 * Recevez des notifications quand un collègue partage un tableau de bord avec vous. (iOS)
 * Affichez des pages de rapport entières épinglées dans vos tableaux de bord. (iOS et Android)
-* [Scannez un code QR](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) et accédez directement à une vignette appropriée sur votre téléphone Android.
+* [Scannez un code QR](https://powerbi.microsoft.com/blog/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes/) et accédez directement à une vignette appropriée sur votre téléphone Android.
 
 ### <a name="november-2015"></a>Novembre 2015
-Lisez le [billet de blog de novembre 2015 sur Power BI Mobile](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Lisez le [billet de blog de novembre 2015 sur Power BI Mobile](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-november-2015/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Toutes les applications mobiles Power BI
 * Nouvelle expérience de bienvenue.
 * Capacité de données de graphique améliorée.
 
 #### <a name="ios-and-android-mobile-apps"></a>Applications mobiles Android et iOS
-* Les entreprises peuvent désormais [Configurer des applications mobiles Power BI pour iOS et Android avec Microsoft Intune](../../service-admin-mobile-intune.md) pour gérer leurs appareils et applications.
+* Les entreprises peuvent désormais [Configurer des applications mobiles Power BI pour iOS et Android avec Microsoft Intune](../../admin/service-admin-mobile-intune.md) pour gérer leurs appareils et applications.
 
 #### <a name="iphone-mobile-app"></a>Application mobile iPhone
 * [Ajoutez une vignette d’image à un tableau de bord](mobile-iphone-app-get-started.md) directement à partir de votre iPhone.
-* [Créez des codes QR dans le service Power BI](../../service-create-qr-code-for-tile.md), puis scannez-les à partir de votre iPhone pour ouvrir l’application Power BI sur une vignette spécifique.
+* [Créez des codes QR dans le service Power BI](../../create-reports/service-create-qr-code-for-tile.md), puis scannez-les à partir de votre iPhone pour ouvrir l’application Power BI sur une vignette spécifique.
 
 #### <a name="the-power-bi-app-for-windows-devices"></a>Application Power BI pour les appareils Windows
-* [Établissez directement un lien entre une vignette et une URL spécifique](../../service-dashboard-edit-tile.md#hyperlink).
+* [Établissez directement un lien entre une vignette et une URL spécifique](../../create-reports/service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Octobre 2015
-Lisez le [billet de blog de la mi-octobre sur Power BI Mobile](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Lisez le [billet de blog de la mi-octobre sur Power BI Mobile](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-october-updates-are-here/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Toutes les applications mobiles Power BI
 * Les graphiques en courbes avec un axe d’ordonnées indiquant un pourcentage calculent désormais la plage de l’élément visuel en fonction de vos données réelles. Le graphique commence maintenant à partir du point de données le plus bas, au lieu d’une valeur par défaut.
@@ -851,12 +852,12 @@ Lisez le [billet de blog de la mi-octobre sur Power BI Mobile](https://blogs.ms
 * Restez à jour avec les tableaux de bord les plus récents de vos groupes : recevez des notifications sur votre iPhone chaque fois qu’un membre de l’équipe ajoute un tableau de bord à l’un de vos groupes.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Vous pouvez désormais afficher les tableaux de bord horizontalement en faisant simplement pivoter votre téléphone. En savoir plus sur le [mode paysage dans l’application iPhone](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Vous pouvez désormais afficher les tableaux de bord horizontalement en faisant simplement pivoter votre téléphone. En savoir plus sur le [mode paysage dans l’application iPhone](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>Septembre 2015
-Améliorations apportées dans les applications mobiles Power BI : Android, iOS (iPhone et iPad) et Windows. Lisez le [billet de blog de la mi-septembre sur Power BI Mobile](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Améliorations apportées dans les applications mobiles Power BI : Android, iOS (iPhone et iPad) et Windows. Lisez le [billet de blog de la mi-septembre sur Power BI Mobile](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).
 
 #### <a name="android"></a>Téléphone
 * Prise en charge des espaces de travail de groupe : collaborez avec des collègues dans des espaces de travail de groupe. 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8a3a80ea7bb318944961a57ac6fdac695aa46253
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205524"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349445"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -29,8 +29,8 @@ Un tableau de bord est un portail qui donne accès au cycle de vie et aux proces
 
 Pour afficher des tableaux de bord et des rapports sur votre appareil mobile, vous devez les créer ou vous y connecter à partir d’un navigateur web. 
 
-1. Accédez au service Power BI ([https://www.powerbi.com](https://www.powerbi.com)) et [créez un compte](../../service-self-service-signup-for-power-bi.md).
-2. [Créez vos propres tableaux de bord et vos propres rapports Power BI](../../service-get-started.md) ou connectez-vous à des [applications Power BI](../../service-connect-to-services.md) existantes pour divers services, tels que [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md).
+1. Accédez au service Power BI ([https://www.powerbi.com](https://www.powerbi.com)) et [créez un compte](../../fundamentals/service-self-service-signup-for-power-bi.md).
+2. [Créez vos propres tableaux de bord et vos propres rapports Power BI](../../fundamentals/service-get-started.md) ou connectez-vous à des [applications Power BI](../../connect-data/service-connect-to-services.md) existantes pour divers services, tels que [Microsoft Dynamics CRM](../../connect-data/service-connect-to-services.md).
 
 Voici un tableau de bord Power BI dans le service Power BI :
 
@@ -45,14 +45,14 @@ Voici un tableau de bord Power BI dans le service Power BI :
     ![Appuyez sur le tableau de bord](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
    
    * Les étoiles jaunes ![Étoiles Favoris](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
-   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
+   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../create-reports/service-data-classification.md).
    
    Par défaut, les tableaux de bord Power BI ont une apparence un peu différente sur votre iPhone. Toutes les vignettes ont la même taille et elles sont disposées verticalement.
    
     ![Mode portrait du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-portrait.png)
    
    > [!TIP]
-   > Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
+   > Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
    > 
    > 
    
@@ -85,7 +85,7 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
    
    * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
-   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
+   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../create-reports/service-data-classification.md).
 3. Vous pouvez partager un tableau de bord à partir de votre espace de travail. Appuyez sur les points de suspension ( **...** ) dans le coin inférieur droit de la vignette du tableau de bord, puis sur **Inviter d’autres personnes**.
    
    ![Icône Inviter](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -109,13 +109,13 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
 
     Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
 
-    Une notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
+    Une notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../create-reports/service-data-classification.md).
 
     Les tableaux de bord Power BI ont une apparence un peu différente sur votre téléphone Android. Toutes les vignettes ont la même largeur et elles sont disposées verticalement.
 
     ![Mode portrait du tableau de bord](./media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-    Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
+    Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
 
 1. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
@@ -132,7 +132,7 @@ Vous pouvez utiliser le geste du « pincement » pour effectuer un zoom avant 
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord qui ont été mis en favoris. 
-   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
+   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../create-reports/service-data-classification.md).
 3. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
@@ -150,11 +150,10 @@ Si vous êtes le propriétaire du tableau de bord, *dans le service Power BI*, 
 
 ![Vue téléphone du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Pour en savoir plus sur la création d’une vue téléphone d’un tableau de bord, [cliquez ici](../../service-create-dashboard-mobile-phone-view.md).
+Pour en savoir plus sur la création d’une vue téléphone d’un tableau de bord, [cliquez ici](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Télécharger l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir de Google Play  
 * [Prise en main de l’application Android pour Power BI](mobile-android-app-get-started.md)  
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 * Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

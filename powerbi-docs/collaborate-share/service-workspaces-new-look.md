@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e74a59d3ff4a5568352c647ec9f384ad8c3a09b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 53a4ae78fa996c1e48ed0c16e0caf15e4f687697
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81638522"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347927"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>Adhérer à la « nouvelle apparence » de l’espace de travail (préversion)
 
-Les espaces de travail ont une nouvelle apparence semblable à la [nouvelle apparence](../service-new-look.md) du service Power BI. Toute personne utilisant le service Power BI (app.powerbi.com) peut adhérer. Quand vous activez la **nouvelle apparence** dans la barre d’en-tête noire, vous adhérez à la nouvelle apparence pour les rapports et les espaces de travail. Tous les espaces de travail, qu’ils soient classiques ou nouveaux, peuvent bénéficier de la nouvelle apparence.
+Les espaces de travail ont une nouvelle apparence semblable à la [nouvelle apparence](../consumer/service-new-look.md) du service Power BI. Toute personne utilisant le service Power BI (app.powerbi.com) peut adhérer. Quand vous activez la **nouvelle apparence** dans la barre d’en-tête noire, vous adhérez à la nouvelle apparence pour les rapports et les espaces de travail. Tous les espaces de travail, qu’ils soient classiques ou nouveaux, peuvent bénéficier de la nouvelle apparence.
 
-Vous recherchez des informations sur la nouvelle apparence de **Power BI Desktop** ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../desktop-ribbon.md).
+Vous recherchez des informations sur la nouvelle apparence de **Power BI Desktop** ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 ## <a name="features-of-the-new-look"></a>Fonctionnalités de la nouvelle apparence
 
@@ -50,7 +50,6 @@ Si vous devez revenir à l’ancienne apparence, il vous suffit de le refaire gl
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Utiliser le ruban mis à jour dans Power BI Desktop](../desktop-ribbon.md)
-- [Nouvelle apparence du service Power BI](../service-new-look.md)
+- [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md)
+- [Nouvelle apparence du service Power BI](../consumer/service-new-look.md)
 - Vous avez des questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
-

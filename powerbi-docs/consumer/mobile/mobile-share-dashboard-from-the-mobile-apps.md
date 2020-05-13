@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31d3ee405f77acaa47bb158ddde97778a8af9ff0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435786"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349330"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
 S’applique à :
@@ -25,7 +25,7 @@ S’applique à :
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
 
-Avec une [licence Power BI Pro](../../service-features-license-type.md), vous pouvez inviter d’autres utilisateurs à consulter vos tableaux de bord et vos rapports en partageant des liens à partir des applications mobiles Power BI. Vous pouvez partager avec d’autres personnes, au sein ou en dehors de votre organisation, avec ou sans un compte de messagerie d’entreprise. Ces personnes doivent également avoir une licence Power BI Pro ou le contenu doit avoir une [capacité Premium](../../service-premium-what-is.md).
+Avec une [licence Power BI Pro](../../fundamentals/service-features-license-type.md), vous pouvez inviter d’autres utilisateurs à consulter vos tableaux de bord et vos rapports en partageant des liens à partir des applications mobiles Power BI. Vous pouvez partager avec d’autres personnes, au sein ou en dehors de votre organisation, avec ou sans un compte de messagerie d’entreprise. Ces personnes doivent également avoir une licence Power BI Pro ou le contenu doit avoir une [capacité Premium](../../admin/service-premium-what-is.md).
 
 À partir de l’application mobile Power BI pour iOS et Android, vous pouvez également [annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
@@ -42,7 +42,7 @@ Avec une [licence Power BI Pro](../../service-features-license-type.md), vous po
    * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
    * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
    
-   Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
+   Découvrez d’autres [remarques sur le partage avec des collègues](../../collaborate-share/service-share-dashboards.md).
 
 ### <a name="unshare-from-your-iphone-or-ipad"></a>Annuler un partage à partir de votre iPhone ou de votre iPad
 Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
@@ -67,7 +67,7 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
    * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
    * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
    
-   Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
+   Découvrez d’autres [remarques sur le partage avec des collègues](../../collaborate-share/service-share-dashboards.md).
 
 
 ### <a name="unshare-from-your-android-device"></a>Annuler le partage à partir de votre appareil Android
@@ -97,10 +97,9 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
    * Sur l’application mobile Power BI, appuyez sur **Plus d’options** (...) dans la barre de navigation, puis choisissez ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi**.
    * Dans le service Power BI, cliquez sur ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Partagé avec moi** dans le volet de navigation de gauche.
    
-   Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
+   Découvrez d’autres [remarques sur le partage avec des collègues](../../collaborate-share/service-share-dashboards.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel dans les applications mobiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Partager un tableau de bord ou un rapport dans Power BI](../../service-share-dashboards.md)
+* [Partager un tableau de bord ou un rapport dans Power BI](../../collaborate-share/service-share-dashboards.md)
 * Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

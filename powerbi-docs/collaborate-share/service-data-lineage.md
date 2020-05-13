@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525396"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348203"
 ---
 # <a name="data-lineage"></a>Traçabilité des données
 Dans les projets Business Intelligence (BI) modernes, il peut être difficile d’avoir une bonne compréhension du flux de données entre la source de données et la destination. C’est encore plus compliqué si vous avez créé des projets d’analytique avancée qui impliquent de multiples sources de données, artefacts et dépendances. Il peut alors être difficile de répondre à des questions telles que « Que se passe-t-il si je modifie ces données ? » ou « Pourquoi ce rapport n’est-il pas à jour ? ». Pour trouver les réponses, il faut parfois demander l’aide d’experts ou faire des recherches approfondies. Nous avons conçu une vue de traçabilité des données qui pourra vous aider à répondre à ce genre de questions.
@@ -88,9 +88,9 @@ La vue de traçabilité est un canevas interactif. Vous pouvez utiliser la souri
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-- La vue de traçabilité n’est pas disponible sur Internet Explorer. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](../power-bi-browsers.md).
+- La vue de traçabilité n’est pas disponible sur Internet Explorer. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](../fundamentals/power-bi-browsers.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)](../service-datasets-across-workspaces.md)
+* [Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)](../connect-data/service-datasets-across-workspaces.md)
 * [Analyse d’impact sur les jeux de données](service-dataset-impact-analysis.md)

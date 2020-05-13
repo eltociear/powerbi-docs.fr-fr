@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ada695b2a568358f96010feb320226437beeb075
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81675644"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349169"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Cours en ligne : Rapports paginés Power BI en une journée
 
@@ -100,11 +100,11 @@ Nous vous recommandons de d’abord suivre le cours en ligne. Vous pouvez vous r
 Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Ce document vous explique comment vous connecter au service Power BI, télécharger un jeu de données, puis installer le [Générateur de rapports Power BI](report-builder-power-bi.md).
 
 > [!NOTE]
-> Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../service-self-service-signup-for-power-bi.md).
+> Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Vous devez vous connecter à Power BI pour publier un fichier Power BI Desktop sur un espace de travail. La publication produit un jeu de données qui est utilisé comme source de données de rapport. Vous n’avez pas besoin d’une licence Power BI Pro ou d’un abonnement Power BI Premium pour utiliser un jeu de données comme source de données de rapport.
 >
-> Certaines tâches des labos impliquent cependant la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il est enregistré dans un espace de travail sur une [capacité dédiée](../service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, un lien vous est fourni à la place pour regarder une vidéo qui montre la publication de rapports.
+> Certaines tâches des labos impliquent cependant la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il est enregistré dans un espace de travail sur une [capacité dédiée](../admin/service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, un lien vous est fourni à la place pour regarder une vidéo qui montre la publication de rapports.
 
 ## <a name="instructor-kit"></a>Kit du formateur
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381304"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348157"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -23,8 +23,8 @@ Téléchargez [Power BI Report Server et Power BI Desktop optimisé pour Power B
 
 Pour des informations connexes sur les nouveautés de Power BI, voir :
 
-* [Nouveautés dans le service Power BI](../service-whats-new.md)
-* [Nouveautés dans Power BI Desktop](../desktop-latest-update.md)
+* [Nouveautés dans le service Power BI](../fundamentals/service-whats-new.md)
+* [Nouveautés dans Power BI Desktop](../fundamentals/desktop-latest-update.md)
 * [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="january-2020"></a>Janvier 2020
@@ -128,7 +128,7 @@ Ce mois-ci, nous lançons un nouveau format de fichier : .pbids, afin de simplif
 
 Lorsqu’un créateur de rapport ouvre un fichier .pbids, Power BI Desktop invite à s’authentifier pour se connecter à la source de données spécifiée dans le fichier. L’utilisateur sélectionne ensuite les tables à charger dans le modèle, ainsi que la base de données si le fichier n’en spécifie aucune. Le créateur du rapport peut alors commencer à créer des visualisations.
 
-Pour obtenir plus d’informations et des exemples, consultez la section [Utiliser des fichiers .pbids pour obtenir des données](../desktop-data-sources.md#using-pbids-files-to-get-data) de l’article « Sources de données dans Power BI Desktop ».
+Pour obtenir plus d’informations et des exemples, consultez la section [Utiliser des fichiers .pbids pour obtenir des données](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data) de l’article « Sources de données dans Power BI Desktop ».
 
 *Amélioration des performances des opérations de modélisation*
 
@@ -239,11 +239,11 @@ Voici les principales nouveautés de la version :
 
 #### <a name="performance-analyzer"></a>Analyseur de performances 
 
-Si votre rapport s’exécute plus lentement que prévu, essayez l’Analyseur de performances dans Power BI Desktop. Quand vous le démarrez, il crée un fichier journal avec des informations sur chaque action que vous effectuez dans le rapport. Découvrez plus d’informations sur l’[Analyseur de performances](../desktop-performance-analyzer.md).
+Si votre rapport s’exécute plus lentement que prévu, essayez l’Analyseur de performances dans Power BI Desktop. Quand vous le démarrez, il crée un fichier journal avec des informations sur chaque action que vous effectuez dans le rapport. Découvrez plus d’informations sur l’[Analyseur de performances](../create-reports/desktop-performance-analyzer.md).
 
 #### <a name="new-modeling-view"></a>Nouvelle vue Modélisation
 
-Dans la nouvelle vue Modélisation de Power BI Desktop, vous pouvez afficher et utiliser des jeux de données complexes qui contiennent de nombreuses tables. Les principales nouveautés sont plusieurs dispositions de diagramme et la modification en bloc de colonnes, de mesures et de tables. Découvrez plus d’informations sur la [vue Modélisation](../desktop-modeling-view.md).
+Dans la nouvelle vue Modélisation de Power BI Desktop, vous pouvez afficher et utiliser des jeux de données complexes qui contiennent de nombreuses tables. Les principales nouveautés sont plusieurs dispositions de diagramme et la modification en bloc de colonnes, de mesures et de tables. Découvrez plus d’informations sur la [vue Modélisation](../transform-model/desktop-modeling-view.md).
 
 #### <a name="accessible-visual-interaction"></a>Interaction visuelle accessible
 
@@ -251,11 +251,11 @@ Vous pouvez maintenant accéder aux points de données sur de nombreux visuels i
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Mise en forme conditionnelle des titres et des actions d’URL web
 
-Les rapports Power BI sont interactifs. Il est logique que les titres d’un rapport soient dynamiques, de façon à refléter l’état actuel du rapport. Vous pouvez utiliser la même mise en forme liée à une expression pour rendre dynamiques les URL de vos boutons, de vos formes et de vos images. Découvrez plus d’informations sur les [titres basés sur une expression](../desktop-conditional-format-visual-titles.md).
+Les rapports Power BI sont interactifs. Il est logique que les titres d’un rapport soient dynamiques, de façon à refléter l’état actuel du rapport. Vous pouvez utiliser la même mise en forme liée à une expression pour rendre dynamiques les URL de vos boutons, de vos formes et de vos images. Découvrez plus d’informations sur les [titres basés sur une expression](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### <a name="cross-highlight-by-axis-labels"></a>Sélection par étiquettes d’axe
 
-Sélectionnez les étiquettes de catégorie d’axe dans un visuel pour sélectionner les autres éléments d’une page, tout comme vous sélectionnez les points de données dans un visuel. Découvrez plus d’informations sur la [sélection](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Sélectionnez les étiquettes de catégorie d’axe dans un visuel pour sélectionner les autres éléments d’une page, tout comme vous sélectionnez les points de données dans un visuel. Découvrez plus d’informations sur la [sélection](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### <a name="all-the-new-features"></a>Toutes les nouvelles fonctionnalités
 

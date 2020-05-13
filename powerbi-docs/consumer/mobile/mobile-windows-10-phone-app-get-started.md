@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 0bbdc13e1adf52ba90435f22920e4351e8f34404
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435947"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349353"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Prise en main de l’application mobile Power BI pour Windows 10
 L’application mobile Power BI pour Windows 10 vous permet d’utiliser Power BI sur votre tablette ou votre smartphone. Vous bénéficiez d’un accès mobile, tactile et toujours à jour aux informations de votre entreprise. Affichez et utilisez vos tableaux de bord d’entreprise où que vous soyez, directement sur l’[écran d’accueil de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Vignette dynamique Windows](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
-Vous [créez des tableaux de bord et des rapports dans le service Power BI](../../service-get-started.md) avec vos données. 
+Vous [créez des tableaux de bord et des rapports dans le service Power BI](../../fundamentals/service-get-started.md) avec vos données. 
 
 Interagissez ensuite avec vos tableaux de bord et rapports, explorez les données, et partagez-les via l’application mobile Power BI pour Windows 10.
 
@@ -38,7 +38,7 @@ Interagissez ensuite avec vos tableaux de bord et rapports, explorez les donnée
 Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](https://powerbi.com/). Inscrivez-vous pour obtenir votre propre compte en vue de créer et de stocker des tableaux de bord et des rapports, et de rassembler l’ensemble de vos données. Ensuite, connectez-vous à Power BI sur votre appareil Windows 10 pour consulter vos tableaux de bord où que vous soyez.
 
 1. Dans le service Power BI, appuyez sur [S’inscrire](https://go.microsoft.com/fwlink/?LinkID=513879) pour créer un compte Power BI.
-2. Commencez à [créer vos propres tableaux de bord et rapports](../../service-get-started.md).
+2. Commencez à [créer vos propres tableaux de bord et rapports](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app"></a>Prise en main de l’application Power BI
 1. Sur l’écran d’accueil de votre appareil Windows 10, ouvrez l’application Power BI.
@@ -110,7 +110,7 @@ Accédez à des informations supplémentaires sur les [favoris dans les applicat
 Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pour appareils Windows 10 avec les tableaux de bord et les rapports Power BI, ainsi que les rapports mobiles et les indicateurs de performance clés Reporting Services dans le portail web Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Tableaux de bord et rapports Power BI
-* Affichez [vos applications](../../service-create-distribute-apps.md).
+* Affichez [vos applications](../../collaborate-share/service-create-distribute-apps.md).
 * Affichez vos [tableaux de bord](mobile-apps-view-dashboard.md).
 * [Épinglez des vignettes et tableaux de bord Power BI](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) sur l’écran d’accueil de votre appareil sous forme de vignettes dynamiques.
 * [Partagez des vignettes](mobile-windows-10-phone-app-get-started.md).
@@ -125,4 +125,3 @@ Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pou
 * [Téléchargez l’application Power BI](https://go.microsoft.com/fwlink/?LinkID=526478) à partir du Windows Store.  
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

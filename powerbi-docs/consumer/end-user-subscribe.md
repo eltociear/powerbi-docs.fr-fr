@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5d87e3b41d6048b214fca45fc99df35f997d3c1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525442"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347291"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -25,7 +25,7 @@ ms.locfileid: "81525442"
 
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  Vous pouvez définir jusqu’à 24 abonnements différents par rapport ou par tableau de bord.
 
-L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
+L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../fundamentals/supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
 
 ![liste déroulante Langue](./media/end-user-subscribe/power-bi-language.png)
 

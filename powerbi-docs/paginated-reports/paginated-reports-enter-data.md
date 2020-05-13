@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: maggies
-ms.openlocfilehash: 5ef019c1c8d488735509ac3c2767fbc9d395786a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 074bc95a9e259df84211d3f922831db323d506cc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922088"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348663"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports - Power BI
 
@@ -22,7 +22,7 @@ Cet article traite de la nouvelle version du Générateur de rapports SQL Server
 ## <a name="prerequisites"></a>Conditions préalables
 
 - Pour entrer des données directement dans un rapport paginé, installez la nouvelle version du [Générateur de rapports à partir du Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53613). 
-- Pour enregistrer votre rapport paginé dans le service Power BI, vous devez disposer d’un [compte Power BI Pro](../service-self-service-signup-for-power-bi.md) et avoir accès en écriture à un espace de travail accessible dans une [capacité Power BI Premium](../service-premium-what-is.md).
+- Pour enregistrer votre rapport paginé dans le service Power BI, vous devez disposer d’un [compte Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) et avoir accès en écriture à un espace de travail accessible dans une [capacité Power BI Premium](../admin/service-premium-what-is.md).
 - Pour enregistrer votre rapport paginé sur un serveur de rapports, vous devez être autorisé à [modifier le fichier RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Mise en route
