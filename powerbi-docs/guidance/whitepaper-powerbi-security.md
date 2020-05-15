@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: ff8b6a139d0088b2ff2acc8f73b75431e500ba51
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4454269803c45948c21c4448ab76b5397d3388b2
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279086"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407531"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -200,7 +200,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -263,7 +263,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
     &ensp;&ensp;. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
 
-    &ensp;&ensp;b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
+    &ensp;&ensp;b. Pour les rapports Power BI, les données des éléments visuels des rapports affichées sont mises en cache et stockées dans le cache de données visuel décrit dans la section suivante.
  
 
 4. Fichiers Power BI Desktop (.pbix) ou Excel (.xlsx) d’origine publiés sur Power BI
@@ -272,17 +272,26 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Tableaux de bord et vignettes de tableaux de bord
 
-1. Caches : les données nécessaires aux visuels sur le tableau de bord sont généralement mises en cache et stockées chiffrées dans Azure SQL Database. Les autres vignettes telles que les visuels épinglés à partir d’Excel ou de SQL Server Reporting Services (SSRS) sont stockées dans Stockage Blob Azure en tant qu’images, et sont également chiffrées.
+1. Caches : les données nécessaires aux visuels sur le tableau de bord sont généralement mises en cache et stockées dans le cache de données visuel décrit dans la section suivante. Les autres vignettes telles que les visuels épinglés à partir d’Excel ou de SQL Server Reporting Services (SSRS) sont stockées dans Stockage Blob Azure en tant qu’images, et sont également chiffrées.
 
 2. Données statiques, qui incluent des artefacts tels que des images d’arrière-plan et des éléments visuels de Power BI stockés, chiffrés, dans le stockage d’objets BLOB Azure.
 
-Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffrement de clé pour le compte du client, soit dans un magasin de secrets, soit dans Azure Key Vault.
+Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffrement à clé pour le compte des clients.
+
+#### <a name="visual-data-cache"></a>Cache de données visuelles
+
+Les données visuelles sont mises en cache dans différents emplacements selon que le jeu de données est hébergé sur une capacité de Power BI Premium. Pour les jeux de données qui ne sont pas hébergés sur une capacité, les données visuelles sont mises en cache et stockées de façon chiffrée dans une Azure SQL Database. Pour les jeux de données qui sont hébergés sur une capacité, les données visuelles peuvent être mises en cache dans l’un des emplacements suivants :
+
+* Stockage Blob Azure
+* Fichiers Azure Premium
+* Nœud de capacité Power BI Premium
+
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Données stockées de manière transitoire sur des appareils non volatiles
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
