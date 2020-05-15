@@ -72,6 +72,8 @@
               href: end-user-bookmarks.md
             - name: Ajouter un titre à la une à un visuel
               href: end-user-spotlight.md
+            - name: Personnaliser un visuel
+              href: end-user-personalize-visuals.md
             - name: Rapports paginés dans Power BI
               items:
                 - name: Rapports paginés
