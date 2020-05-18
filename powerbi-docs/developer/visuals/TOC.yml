@@ -42,9 +42,9 @@
           href: objects-properties.md
         - name: Mode d’édition avancé
           href: advanced-edit-mode.md
-        - name: supportsKeyboardFocus feature
+        - name: 'supportsKeyboardFocus, fonctionnalité'
           href: supportskeyboardfocus-feature.md
-        - name: supportsMultiVisualSelection-feature.md
+        - name: 'supportsMultiVisualSelection, fonctionnalité'
           href: supportsmultivisualselection-feature.md
     - name: Guides pratiques
       items:

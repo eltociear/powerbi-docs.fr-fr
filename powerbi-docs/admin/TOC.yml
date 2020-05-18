@@ -112,8 +112,10 @@
               href: service-encryption-byok.md
             - name: Redémarrer une capacité Premium
               href: service-admin-premium-restart.md
-            - name: Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
+            - name: Connectivité des jeux de données avec le point de terminaison XMLA
               href: service-premium-connect-tools.md
+            - name: Automatisation à l’aide de principaux de service
+              href: service-premium-service-principal.md
     - name: Référence
       items:
         - name: 'PowerShell, API REST et kit SDK .NET'
