@@ -10,32 +10,38 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5a55fca07e4a0e5f9c027bcd17c3fba66a09958e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78893420"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277131"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Personnaliser les titres, les arrière-plans et les légendes des visualisations
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 Ce tutoriel présente quelques façons de personnaliser vos visualisations. Il existe autant d’options permettant de personnaliser vos visualisations. La meilleure façon de les découvrir toutes consiste à Explorer le volet **Mise en forme** (sélectionnez l’icône rouleau de peinture). Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation, et comment ajouter un thème.
 
 Vous ne pouvez pas personnaliser toutes les visualisations. Consultez le [la liste complète](#visualization-types-that-you-can-customize) des visualisations pour plus d’informations.
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Service Power BI ou Power BI Desktop
 
 - Exemple de rapport Analyse de la vente au détail
 
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-reports.md).
+
 ## <a name="customize-visualization-titles-in-reports"></a>Personnaliser les titres des visualisations dans les rapports
 
-Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Exemple Analyse de la vente au détail](../sample-datasets.md).
+Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Exemple Analyse de la vente au détail](../create-reports/sample-datasets.md).
 
 > [!NOTE]
-> Quand vous épinglez une visualisation à un tableau de bord, elle prend la forme d’une vignette de tableau de bord. Vous pouvez également personnaliser les vignettes proprement dites [en modifiant leurs titres et sous-titres, en leur ajoutant des liens hypertexte et en les redimensionnant](../service-dashboard-edit-tile.md).
+> Quand vous épinglez une visualisation à un tableau de bord, elle prend la forme d’une vignette de tableau de bord. Vous pouvez également personnaliser les vignettes proprement dites [en modifiant leurs titres et sous-titres, en leur ajoutant des liens hypertexte et en les redimensionnant](../create-reports/service-dashboard-edit-tile.md).
 
 1. Accédez à la page **New Stores** du rapport **Exemple Analyse de la vente**.
 
@@ -49,7 +55,7 @@ Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Ex
 
 1. Déplacez le curseur **Titre** sur **Activé**.
 
-1. Pour modifier le titre, tapez *Store count by month opened* (Nombre d’ouvertures de magasins pas mois) dans le champ **Texte du titre**.
+1. Pour modifier le titre, tapez *Store count by month opened **(Nombre d’ouvertures de magasins pas mois) dans le champ**Texte du titre*.
 
     ![Capture d’écran du volet Format avec le texte du titre entré.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -135,30 +141,30 @@ Voici une liste des visualisations et des options de personnalisation respective
 
 | Visualisation | Titre | Arrière-plan | Légende |
 |:--- |:--- |:--- |:--- |
-| Zone | Oui | Oui |Oui |
-| Barres | Oui | Oui |Oui |
-| Carte | Oui | Oui |n/a |
-| Carte à plusieurs lignes | Oui | Oui | n/a |
-| personnalisée | Oui | Oui | Oui |
-| Combiné | Oui | Oui | Oui |
-| Graphique en anneau | Oui | Oui | Oui |
-| Carte choroplèthe | Oui | Oui | Oui |
-| Entonnoir | Oui | Oui | n/a |
-| Jauge | Oui | Oui | n/a |
-| Influenceur clé | Oui | Oui | n/a |
-| Indicateur de performance clé | Oui | Oui | n/a |
-| Ligne | Oui | Oui | Oui |
-| Carte | Oui | Oui | Oui |
-| Matrice | Oui | Oui | n/a |
-| Secteurs | Oui | Oui | Oui |
-| Questions/Réponses (Q&R) | Oui | Oui | n/a |
-| Nuage de points | Oui | Oui | Oui |
-| Forme | Oui | Oui | Oui |
-| Segment | Oui | Oui | n/a |
-| Tableau | Oui | Oui | n/a |
-| Zone de texte | non | Oui | n/a |
-| Treemap | Oui | Oui | Oui |
-| Cascade | Oui | Oui | Oui |
+| Zone | oui | oui |oui |
+| Barres | oui | oui |oui |
+| Carte | oui | oui |n/a |
+| Carte à plusieurs lignes | oui | oui | n/a |
+| Colonne | oui | oui | oui |
+| Combiné | oui | oui | oui |
+| Graphique en anneau | oui | oui | oui |
+| Carte choroplèthe | oui | oui | oui |
+| Entonnoir | oui | oui | n/a |
+| Jauge | oui | oui | n/a |
+| Influenceur clé | oui | oui | n/a |
+| KPI | oui | oui | n/a |
+| Ligne | oui | oui | oui |
+| Carte | oui | oui | oui |
+| Matrice | oui | oui | n/a |
+| Secteurs | oui | oui | oui |
+| Questions et réponses | oui | oui | n/a |
+| Nuage de points | oui | oui | oui |
+| Forme | oui | oui | oui |
+| Segment | oui | oui | n/a |
+| Table | oui | oui | n/a |
+| Zone de texte | non | oui | n/a |
+| Treemap | oui | oui | oui |
+| Cascade | oui | oui | oui |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -167,3 +173,5 @@ Voici une liste des visualisations et des options de personnalisation respective
 - [Prise en main de la mise en forme des couleurs et des propriétés d’axe](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+
+

@@ -7,23 +7,26 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4cad37b9d4a7bf9e74a29312786a02b26fce5463
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496512"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83382758"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Tutoriel : Définir des alertes sur des tableaux de bord Power BI
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà ou en deçà de limites que vous définissez. Les alertes fonctionnent sur les jauges, les indicateurs de performance clés et les cartes. Cette fonctionnalité étant toujours en cours d’évolution, reportez-vous à la [section Conseils et résolution des problèmes ci-dessous](#tips-and-troubleshooting).
+Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà ou en deçà de limites que vous définissez. Des alertes ne peuvent être définies que sur des vignettes épinglées à partir de visuels de rapport, et uniquement sur des jauges, des indicateurs de performance clés et des cartes. 
+
+Les *consommateurs* peuvent ajouter des alertes à des vignettes dans les tableaux de bord qu’ils ont créés dans **Mon espace de travail**. Les *consommateurs* peuvent également ajouter des alertes à des vignettes sur les tableaux de bord qui ont été partagés avec eux dans une [capacité Premium](end-user-license.md). Si vous disposez d’une licence Power BI Pro, vous pouvez également définir des alertes sur des vignettes dans un autre espace de travail.
+Cette fonctionnalité étant toujours en cours d’évolution, reportez-vous à la [section Conseils et résolution des problèmes ci-dessous](#tips-and-troubleshooting).
 
 ![vignette, carte, indicateur de performance clé](media/end-user-alerts/card-gauge-kpi.png)
 
@@ -44,12 +47,12 @@ Ce tutoriel couvre les points suivants.
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
-Cet exemple utilise une vignette de carte de tableau de bord provenant de l’exemple d’application Sales & Marketing. Cette application est disponible sur [Microsoft AppSource](https://appsource.microsoft.com). Pour obtenir de l’aide sur l’obtention de l’application, consultez [Installer et utiliser des applications avec Power BI](end-user-app-view.md).
+Cet exemple utilise une vignette de carte de tableau de bord provenant de l’exemple d’application Sales & Marketing. Cette application est disponible sur [Microsoft AppSource](https://appsource.microsoft.com). Pour obtenir de l’aide sur l’obtention de l’application, consultez [Installer et utiliser l’application Ventes et marketing](end-user-app-marketing.md).
 
 1. Dans une jauge, un indicateur de performance clé ou une vignette de carte du tableau de bord, sélectionnez les points de suspension.
    
    ![vignette de carte](media/end-user-alerts/power-bi-cards.png)
-2. Sélectionnez l’icône en forme de cloche ![icône d’alerte](media/end-user-alerts/power-bi-bell-icon.png) ou **Gérer les alertes** pour ajouter une ou plusieurs alertes pour **Total stores** (Nombre total de magasins).
+2. Sélectionnez l’icône en forme de cloche ![icône d’alerte](media/end-user-alerts/power-bi-bell-icon.png) ou **Gérer les alertes** pour ajouter une ou plusieurs alertes pour **% Units market share**.
 
    ![vignette de carte avec les points de suspension sélectionnés](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -111,10 +114,10 @@ Il existe de nombreuses façons de gérer vos alertes : à partir de la vignett
 
 ## <a name="tips-and-troubleshooting"></a>Conseils et résolution des problèmes 
 
-* Les alertes peuvent être définies seulement sur les jauges, les indicateurs de performance clés et les cartes.
-* Si vous ne parvenez pas à définir une alerte pour une jauge, un indicateur de performance clé ou une carte, contactez votre administrateur système pour obtenir de l’aide. Des alertes sont parfois désactivées ou indisponibles pour votre tableau de bord ou pour des types spécifiques de vignettes de tableau de bord.
+* Si vous ne parvenez pas à définir une alerte pour une jauge, un indicateur de performance clé ou une carte, contactez votre administrateur de locataire pour obtenir de l’aide. Des alertes sont parfois désactivées ou indisponibles pour votre tableau de bord ou pour des types spécifiques de vignettes de tableau de bord.
 * Les alertes fonctionnent uniquement sur les données actualisées (pas sur les données statiques). La plupart des exemples fournis par Microsoft sont statiques. 
-* Les *consommateurs* ne créent pas leurs propres tableaux de bord ; ce sont les *concepteurs* qui créent des tableaux de bord et qui les partagent avec les consommateurs. Une licence Power BI Pro ou Premium est nécessaire pour recevoir et afficher du contenu partagé. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md) 
+* Une licence Power BI Pro ou Premium est nécessaire pour recevoir et afficher du contenu partagé. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md).
+* Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.
 
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources

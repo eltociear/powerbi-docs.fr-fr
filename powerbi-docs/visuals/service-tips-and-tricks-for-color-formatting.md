@@ -6,20 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0b633f2482c5b9f1624f39e4f2c0e07afc55353f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76894979"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276602"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Power BI vous propose de nombreuses façons de personnaliser vos tableaux de bord et vos rapports. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
 
-Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer ? Excellent ! Envoyez-la nous et nous verrons si nous pouvons l’ajouter à notre liste.
+Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer ? Great! Envoyez-la nous et nous verrons si nous pouvons l’ajouter à notre liste.
 
 * Appliquer un thème à l’ensemble du rapport
 * Modifier la couleur d’un seul point de données
@@ -40,7 +43,7 @@ Quand les volets **Filtres** et **Visualisations** s’affichent sur le côté d
 ![canevas de rapport en mode Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="apply-a-theme"></a>Appliquer un thème
-Avec les thèmes de rapport, vous pouvez appliquer des changements de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en changeant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Quand vous appliquez un thème de rapport, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Pour en savoir plus, consultez [Utiliser les thèmes de rapport](../desktop-report-themes.md).
+Avec les thèmes de rapport, vous pouvez appliquer des changements de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en changeant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Quand vous appliquez un thème de rapport, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Pour en savoir plus, consultez [Utiliser les thèmes de rapport](../create-reports/desktop-report-themes.md).
 
 ![Changer l’icône de thème dans la barre de menus](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
 
@@ -151,4 +154,6 @@ Vous avez une astuce que vous aimeriez partager ? Envoyez-la nous et nous verro
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Prise en main de la mise en forme des couleurs et des propriétés d’axe](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+[Partage des rapports](../collaborate-share/service-share-reports.md).
 

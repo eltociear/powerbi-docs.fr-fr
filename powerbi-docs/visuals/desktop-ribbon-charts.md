@@ -6,23 +6,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
-ms.author: mihart
+ms.date: 05/05/2019
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1cee814b5013ece3a847aeb3660f1257c69be125
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6da3dd980b180398cf75c8e01f81501ec5d62ed6
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871134"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83127463"
 ---
-# <a name="use-ribbon-charts-in-power-bi"></a>Utiliser des graphiques de ruban dans Power BI
+# <a name="create-ribbon-charts-in-power-bi"></a>Création de graphes en ruban dans Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Vous pouvez utiliser des graphiques de ruban pour visualiser des données et rapidement découvrir la catégorie de données qui a le rang le plus élevé (valeur la plus grande). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps. 
+Vous pouvez créer des graphes en ruban pour visualiser les données et détecter rapidement la catégorie de données qui occupe le rang le plus élevé (la plus grande valeur). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps. 
 
 ![graphique de ruban](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-reports.md).
 
 ## <a name="prerequisites"></a>Prérequis
 

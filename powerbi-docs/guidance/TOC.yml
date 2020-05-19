@@ -110,6 +110,8 @@
               href: monitor-report-performance.md
             - name: Résoudre les problèmes de performances de rapports
               href: report-performance-troubleshoot.md
+            - name: Meilleures pratiques pour les pipelines de déploiement
+              href: ../create-reports/deployment-pipelines-best-practices.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs

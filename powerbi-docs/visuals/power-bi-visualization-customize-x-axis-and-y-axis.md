@@ -7,17 +7,19 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/3/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 830fbe945405f8ad7aadd7ceac9fb1967daad22b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6504e49c67d3c2344033f0cad53394ec5ae87e21
+ms.sourcegitcommit: 52177142c3e1f49147dff08fe48600a85a814a2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758103"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82944817"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -216,13 +218,12 @@ Dans une visualisation complexe, il est utile d’ajouter des titres aux axes.  
 
 1. Mettez en forme les titres. Dans cet exemple, nous avons raccourci l’un des titres et réduit la taille de police des deux titres. 
     - Taille de police : **9**
-    - **Titre de l’axe** raccourci pour le premier axe Y (l’histogramme) : Sales last year & this year (Ventes l’année dernière/cette année)
+    - **Titre de l’axe** raccourci pour le premier axe Y (l’histogramme) : Ventes l’année dernière/cette année. 
+    
+     ![Capture d’écran du graphique combiné avec des titres complets affichés.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-    ![Capture d’écran du graphique combiné avec des titres complets affichés.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
-
-
-
-Pour plus d’informations, consultez [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md) et [Personnaliser le titre, la légende et l’arrière-plan d’une visualisation](power-bi-visualization-customize-title-background-and-legend.md). Par ailleurs, tenez-vous informé des prochaines mises à jour relatives à la mise en forme des titres. 
+    Pour plus d’informations, consultez [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md) et [Personnaliser le titre, la légende et l’arrière-plan d’une visualisation](power-bi-visualization-customize-title-background-and-legend.md). 
+    
 
 ## <a name="next-steps"></a>Étapes suivantes
 

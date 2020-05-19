@@ -12,7 +12,7 @@
       expanded: true
       items:
         - name: "Cours en ligne\_: Rapports paginés"
-          href: ../paginated-reports/paginated-reports-online-course.md
+          href: ../learning-catalog/paginated-reports-online-course.md
         - name: Créer un rapport paginé et télécharger
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Exemples

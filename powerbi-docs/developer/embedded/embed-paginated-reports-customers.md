@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: d9ebab8c52be8872865b0c308e8629c92603bbaa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403772"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276050"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
 
@@ -34,14 +34,14 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Un [principal de service (jeton d’application uniquement)](embed-service-principal.md)
 * Un abonnement [Microsoft Azure](https://azure.microsoft.com/)
 * Votre propre configuration d’un [locataire Azure Active Directory](create-an-azure-active-directory-tenant.md)
-* Au moins une [capacité](#create-a-dedicated-capacity) A4 ou P1, avec la charge de travail des [rapports paginés](../../service-admin-premium-workloads.md#paginated-reports) activée
+* Au moins une [capacité](#create-a-dedicated-capacity) A4 ou P1, avec la charge de travail des [rapports paginés](../../admin/service-admin-premium-workloads.md#paginated-reports) activée
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 
 > [!IMPORTANT]
 > * Vous devez utiliser un **principal de service**. L’utilisateur maître n’est pas pris en charge.
 > * Les sources de données qui nécessitent l’authentification unique ne sont pas prises en charge.
-> * Un jeu de données Power BI n’est pas pris en charge comme [source de données](../../service-get-data.md).
+> * Un jeu de données Power BI n’est pas pris en charge comme [source de données](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 
@@ -49,12 +49,12 @@ L’incorporation d’un rapport paginé nécessite d’associer un espace de tr
 
 ### <a name="create-an-app-workspace"></a>Créer un espace de travail d’application
 
-Quand vous utilisez un [principal de service](embed-service-principal.md) pour vous connecter à votre application, vous êtes obligé de recourir aux [nouveaux espaces de travail](../../service-create-the-new-workspaces.md). En tant que *principal du service*, vous devez également être administrateur ou membre des espaces de travail d’application impliqués dans votre application.
+Quand vous utilisez un [principal de service](embed-service-principal.md) pour vous connecter à votre application, vous êtes obligé de recourir aux [nouveaux espaces de travail](../../collaborate-share/service-create-the-new-workspaces.md). En tant que *principal du service*, vous devez également être administrateur ou membre des espaces de travail d’application impliqués dans votre application.
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
 
 Avant d’importer ou de charger un rapport paginé à incorporer, l’espace de travail contenant le rapport doit être affecté à au moins une capacité A4 ou P1. Vous avez le choix entre deux types de capacité dans Power BI :
-* **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../service-premium-what-is.md)
+* **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** : vous pouvez acheter une capacité dédiée à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
 Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
 
-Générez un jeton d’incorporation qui peut être utilisé à partir de l’API JavaScript. Pour créer un jeton incorporé pour l’incorporation de rapports paginés Power BI, utilisez l’API [GenerateTokenForCreateInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup).
+Générez un jeton d’incorporation qui peut être utilisé à partir de l’API JavaScript. Pour créer un jeton incorporé pour l’incorporation de rapports paginés Power BI, utilisez l’API [GenerateTokenInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Un exemple de création d’un jeton d’incorporation est disponible dans le fichier  *Services\EmbedService.cs* de l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

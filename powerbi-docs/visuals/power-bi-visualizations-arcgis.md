@@ -7,18 +7,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 59685b4c3ceab4b60cba92ec1d3924b902c1426a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5783df071830cdb19ef124ebb908f53955823c69
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77115305"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83130953"
 ---
 # <a name="interact-with-arcgis-maps-in-power-bi"></a>Interagir avec des cartes ArcGIS dans Power BI
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
+
 Cette rubrique est écrite du point de vue d’une personne qui utilise une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Quand un concepteur partage un visuel ArcGIS Maps for Power BI avec vous, il existe de nombreuses façons d’interagir avec celui-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par Esri](../visuals/power-bi-visualization-arcgis.md).
+
+> [!NOTE]
+> Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-reports.md).
 
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Les concepteurs de rapports commencent par sélectionner une carte à laquelle ils attachent des couches de données démographiques. L’association des couches de données basées sur la localisation (comme des données de recensement) sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans vos visualisations.
 

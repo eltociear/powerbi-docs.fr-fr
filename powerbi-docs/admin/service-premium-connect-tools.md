@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7bb3dc401fedbb55f5ed81fa5e859cbfee5a1a26
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274440"
+ms.locfileid: "83382735"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
 
@@ -29,6 +29,9 @@ Les espaces de travail et les jeux de données Power BI Premium au niveau de com
 Power BI Premium utilise le protocole [XML for Analysis](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current) (XMLA) pour les communications entre des applications clientes et le moteur qui gère vos espaces de travail et jeux de données Power BI. Ces communications s’effectuent via ce qui est communément appelé « points de terminaison XMLA ». XMLA est le même protocole de communication que celui utilisé par le moteur Microsoft Analysis Services, qui, sous le capot, exécute la modélisation sémantique, la gouvernance, le cycle de vie et la gestion des données de Power BI.
 
 Par défaut, la connexion en *lecture seule* à l’aide du point de terminaison est activée pour la **charge de travail des jeux de données** dans une capacité. Avec l’accès en lecture seule, les applications et les outils de visualisation des données peuvent interroger les données, les métadonnées, les événements et le schéma du modèle de jeux de données. Les opérations en *lecture/écriture* utilisant le point de terminaison peuvent être activées pour fournir une gestion, une gouvernance, une modélisation sémantique avancée, un débogage et une surveillance des jeux de données supplémentaires. Avec l’option lecture-écriture activée, les jeux de données Power BI Premium ont plus de parité avec les outils et les processus de modélisation tabulaire de niveau entreprise Azure Analysis Services et SQL Server Analysis Services.
+
+> [!NOTE]
+> Il est recommandé d’utiliser l’expérience d’espace de travail moderne, en particulier lors de la connexion à vos jeux de données à l’aide du point de terminaison XMLA. Les opérations telles que la création ou la suppression de jeux de données ne sont pas prises en charge avec les espaces de travail classiques. Pour mettre à niveau les espaces de travail classiques vers l’expérience moderne, consultez [Mettre à niveau les espaces de travail classiques dans Power BI](../collaborate-share/service-upgrade-workspaces.md).
 
 ## <a name="data-modeling-and-management-tools"></a>Outils de gestion et de modélisation des données
 

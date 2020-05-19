@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895224"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276579"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Bien démarrer avec le volet de mise en forme
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Si vous avez des autorisations de modification sur un rapport, vous avez de nombreuses options de mise en forme à disposition. Dans les rapports Power BI, vous pouvez changer la couleur des séries de données et des points de données, et même l’arrière-plan des visualisations. Vous pouvez changer la présentation de l’axe x et de l’axe y. Vous pouvez même mettre en forme les propriétés de police des visualisations, des formes et des titres. Power BI vous donne un contrôle total sur l’apparence de vos rapports.
 
 Pour commencer, ouvrez un rapport dans Power BI Desktop ou dans le service Power BI. Les deux offrent des options de mise en forme quasiment identiques. Quand vous ouvrez un rapport dans le service Power BI, veillez à sélectionner **Modifier** dans la barre de menus. 
@@ -154,8 +157,10 @@ Nous avons sélectionné la visualisation pour l’activer et ouvert l’onglet 
 Il ne s’agit que de quelques-unes des tâches de mise en forme possibles. Ouvrez un rapport en mode Édition et amusez-vous à explorer le volet Mise en forme pour créer des visualisations attrayantes et instructives.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations, consultez l’article suivant :  
+Pour plus d’informations, consultez l’article suivant : 
+
+* [Partage des rapports](../collaborate-share/service-share-reports.md)
 
 * [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Mise en forme conditionnelle dans les tables](../desktop-conditional-table-formatting.md)
+* [Mise en forme conditionnelle dans les tables](../create-reports/desktop-conditional-table-formatting.md)
 
