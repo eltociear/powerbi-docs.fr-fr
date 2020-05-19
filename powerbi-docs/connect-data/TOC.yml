@@ -208,6 +208,8 @@
               href: refresh-data.md
             - name: Configurer une actualisation planifiée
               href: refresh-scheduled-refresh.md
+            - name: Actualiser le centre
+              href: refresh-center.md
             - name: Configurer une actualisation incrémentielle
               href: ../admin/service-premium-incremental-refresh.md
             - name: "Actualiser un jeu de données à partir d’un fichier Power\_BI\_Desktop local"
@@ -266,6 +268,8 @@
               href: service-connect-to-microsoft-sustainability-calculator.md
             - name: Office365Mon
               href: service-connect-to-office365mon.md
+            - name: "Métriques de capacité Power\_BI Premium"
+              href: service-connect-to-pbi-premium-capacity-metrics.md
             - name: Project Online
               href: service-connect-to-project-online.md
             - name: QuickBooks Online
