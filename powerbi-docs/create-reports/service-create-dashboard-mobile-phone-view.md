@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 93d94aadb8e7606fd6d55c463a2be88f87e48047
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2aa75d1cbe04f33197bf8941fd101c66384142dd
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83314854"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565807"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
 Quand vous affichez les tableaux de bord en mode portrait sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour l’affichage en mode portrait sur les téléphones. Même si vous créez une vue téléphone, lorsque vous tournez le téléphone sur le côté, vous voyez le tableau de bord tel qu’il est disposé dans le service.
@@ -57,5 +57,5 @@ Vous recherchez des informations sur l’affichage des tableaux de bord sur un a
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer des rapports optimisés pour les applications Power BI pour téléphone](desktop-create-phone-report.md)
-* [Créer des visuels réactifs optimisés pour toute taille](../visuals/desktop-create-responsive-visuals.md)
+* [Créer des visuels réactifs optimisés pour toute taille](../visuals/power-bi-report-visualizations.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

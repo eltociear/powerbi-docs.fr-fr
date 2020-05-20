@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349606"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564446"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Vos données peuvent être sous forme de feuille de calcul Excel ou de collection d’entrepôts de données hybrides locaux ou sur le cloud. Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser et de découvrir ce qui est important, et de partager ces informations avec qui vous voulez.
@@ -70,6 +70,6 @@ Power BI Report Server est une solution que vous déployez derrière votre pare-
 En savoir plus sur [Power BI Report Server](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-- [Démarrage rapide : Découvrir le fonctionnement du service Power BI](../service-the-new-power-bi-experience.md)   
+- [Démarrage rapide : Découvrir le fonctionnement du service Power BI](../consumer/end-user-experience.md)   
 - [Tutoriel : Bien démarrer avec le service Power BI](service-get-started.md)
 - [Démarrage rapide : Se connecter aux données dans Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

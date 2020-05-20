@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8a7b5785712aeac318b3d8a2bbd14ab7170a435f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277821"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565899"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 
@@ -55,7 +55,7 @@ Dans Power BI Desktop, vous pouvez vous assurer que les champs de données son
 **2. Utiliser plusieurs colonnes d’emplacement**    
  Parfois, le fait de définir des catégories de données pour le mappage ne suffit pas à Bing pour deviner votre intention. Certaines désignations sont ambiguës, car l’emplacement existe dans plusieurs pays ou régions. Par exemple, il existe une ville appelée ***Southampton*** en Angleterre, et dans les États de Pennsylvanie et de New York.
 
-Power BI utilise le [service de modèle d’URL non structurée](https://msdn.microsoft.com/library/ff701714.aspx) de Bing pour obtenir les coordonnées de latitude et de longitude en fonction d’un jeu de valeurs d’adresse pour n’importe quel pays. Si vos données ne contiennent pas suffisamment de données d’emplacement, ajoutez ces colonnes et classez-les de façon appropriée.
+Power BI utilise le [service de modèle d’URL non structurée](/bingmaps/rest-services/locations/find-a-location-by-address) de Bing pour obtenir les coordonnées de latitude et de longitude en fonction d’un jeu de valeurs d’adresse pour n’importe quel pays. Si vos données ne contiennent pas suffisamment de données d’emplacement, ajoutez ces colonnes et classez-les de façon appropriée.
 
  Par exemple, si vous n’avez qu’une seule colonne Ville, Bing peut éprouver des difficultés à effectuer le géocodage. Ajoutez des colonnes géographiques supplémentaires pour lever toute ambiguïté concernant l’emplacement.  Il suffit parfois d’ajouter plusieurs colonnes d’emplacement au jeu de données, dans le cas présent, l’état/la province. Et n’oubliez pas de les classer correctement (voir le point 1 ci-dessus).
 
@@ -97,5 +97,3 @@ Lors d’une exploration à l’aide de hiérarchies géographiques, il est impo
 [Visualisations Power BI](power-bi-report-visualizations.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-
-

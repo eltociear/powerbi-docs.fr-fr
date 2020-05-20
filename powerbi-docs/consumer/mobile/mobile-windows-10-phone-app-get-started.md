@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 04b5bfbc08295974efcb7d583036d96274754bad
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349353"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565692"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Prise en main de l’application mobile Power BI pour Windows 10
 L’application mobile Power BI pour Windows 10 vous permet d’utiliser Power BI sur votre tablette ou votre smartphone. Vous bénéficiez d’un accès mobile, tactile et toujours à jour aux informations de votre entreprise. Affichez et utilisez vos tableaux de bord d’entreprise où que vous soyez, directement sur l’[écran d’accueil de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -118,8 +118,8 @@ Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pou
 
 ### <a name="reporting-services-mobile-reports-and-kpis"></a>Rapports mobiles Reporting Services et indicateurs de performance clés
 * [Affichez les rapports mobiles Reporting Services et les indicateurs de performance clés](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) dans l’application Power BI pour appareils Windows 10.
-* Créez des [indicateurs de performance clés sur le portail web Reporting Services](https://msdn.microsoft.com/library/mt683632.aspx).
-* [Créez vos propres rapports pour appareils mobiles avec l’Éditeur de rapports mobiles Microsoft SQL Server](https://msdn.microsoft.com/library/mt652547.aspx), et publiez-les sur le portail web Reporting Services.
+* Créez des [indicateurs de performance clés sur le portail web Reporting Services](/sql/reporting-services/working-with-kpis-in-reporting-services).
+* [Créez vos propres rapports pour appareils mobiles avec l’Éditeur de rapports mobiles Microsoft SQL Server](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher), et publiez-les sur le portail web Reporting Services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Téléchargez l’application Power BI](https://go.microsoft.com/fwlink/?LinkID=526478) à partir du Windows Store.  

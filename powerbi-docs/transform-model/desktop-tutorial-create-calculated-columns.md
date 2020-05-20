@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 858ecc07deabf5b91295220c2b92791b998ecf3a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349238"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565830"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Didacticiel : création de colonnes calculées dans Power BI Desktop
 
@@ -46,7 +46,7 @@ Dans votre rapport de ventes, vous souhaitez afficher des catégories et des sou
 
 2. Par défaut, une nouvelle colonne calculée est nommée **Colonne**. Si vous ne la renommez pas, les nouvelles colonnes supplémentaires seront nommées **Colonne 2**, **Colonne 3** et ainsi de suite. Si vous voulez que votre colonne soit plus identifiable, dans la barre de formule où le nom **Colonne** est déjà en surbrillance, renommez-la en tapant **ProductFullCategory**, puis tapez un signe égal ( **=** ).
 
-3. Les valeurs de votre nouvelle colonne doivent commencer par le nom figurant dans le champ **ProductCategory**. Comme cette colonne figure dans une table différente, bien qu’associée, vous pouvez utiliser la fonction [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) pour l’obtenir.
+3. Les valeurs de votre nouvelle colonne doivent commencer par le nom figurant dans le champ **ProductCategory**. Comme cette colonne figure dans une table différente, bien qu’associée, vous pouvez utiliser la fonction [RELATED](/dax/related-function-dax) pour l’obtenir.
 
    Après le signe égal, saisissez **r**. Une liste déroulante de suggestions affiche toutes les fonctions DAX commençant par la lettre R. La sélection de chaque fonction permet d’afficher une description de ses effets. La saisie permet de mettre à l’échelle la liste de suggestions au plus proche de la fonction dont vous avez besoin. Sélectionnez **RELATED**, puis appuyez sur **Entrée**.
 
@@ -97,7 +97,7 @@ Maintenant, vous pouvez utiliser votre nouvelle colonne **ProductFullCategory** 
 
 L’exemple de vente Contoso contient les données de ventes des magasins actifs et inactifs. Vous pouvez séparer clairement les ventes des magasins actifs des ventes des magasins inactifs dans votre rapport en créant un champ **Active StoreName**. Dans la nouvelle colonne calculée **Active StoreName**, chaque magasin actif apparaîtra avec le nom complet du magasin, tandis que les ventes des magasins inactifs seront regroupées dans une ligne appelée **Inactive**.
 
-Heureusement, la table **Stores** contient une colonne nommée **Status**, avec les valeurs « On » pour les magasins actifs et « Off » pour les magasins inactifs, que nous pouvons utiliser pour créer les valeurs de la nouvelle colonne **Active StoreName**. Votre formule DAX utilise la fonction logique [IF](https://msdn.microsoft.com/library/ee634824.aspx) pour tester l’état (**Status**) de chaque magasin et retourner une valeur particulière selon le résultat. Si la valeur **Status** d’un magasin est « On », la formule retourne le nom du magasin. Si la valeur est « Off », la formule attribue à **Active StoreName** la valeur « Inactive ».
+Heureusement, la table **Stores** contient une colonne nommée **Status**, avec les valeurs « On » pour les magasins actifs et « Off » pour les magasins inactifs, que nous pouvons utiliser pour créer les valeurs de la nouvelle colonne **Active StoreName**. Votre formule DAX utilise la fonction logique [IF](/dax/if-function-dax) pour tester l’état (**Status**) de chaque magasin et retourner une valeur particulière selon le résultat. Si la valeur **Status** d’un magasin est « On », la formule retourne le nom du magasin. Si la valeur est « Off », la formule attribue à **Active StoreName** la valeur « Inactive ».
 
 1. Créez une nouvelle colonne calculée dans la table **Magasins** et nommez-la **Active StoreName** dans la barre de formules.
 
@@ -133,4 +133,4 @@ Les colonnes calculées peuvent enrichir vos données en favorisant des insights
 
 Si vous souhaitez approfondir vos connaissances des formules DAX et créer des colonnes calculées avec des formules plus avancées, consultez [Informations de base sur DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Cet article porte sur les concepts fondamentaux propres à DAX, tels que la syntaxe, les fonctions et une compréhension plus approfondie du contexte.
 
-Pensez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.
+Pensez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](/dax/) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.

@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 583d33a1d28fa926bdea41988d651f12de5a8e92
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a490951808271cb845c1ec558344bcf5fdc6c145
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83309127"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564943"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Scénarios de résolution de problèmes liés à l’actualisation
 
@@ -33,7 +33,7 @@ Si vous avez accédé à cet article à partir d’une notification par e-mail e
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>L’actualisation à l’aide du connecteur web ne fonctionne pas correctement
 
-Si vous disposez d’un script de connecteur web qui utilise la fonction [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) et que vous avez mis à jour votre jeu de données ou rapport après le 18 novembre 2016, vous devez utiliser une passerelle pour que l’actualisation fonctionne correctement.
+Si vous disposez d’un script de connecteur web qui utilise la fonction [**Web.Page**](/powerquery-m/web-page) et que vous avez mis à jour votre jeu de données ou rapport après le 18 novembre 2016, vous devez utiliser une passerelle pour que l’actualisation fonctionne correctement.
 
 ## <a name="unsupported-data-source-for-refresh"></a>Actualisation d’une source de données non prise en charge
 

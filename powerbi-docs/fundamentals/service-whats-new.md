@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b89c64caa7a4f8fe846cca488164758550a4869a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 78031bb4f8326b50917b5c299948518717cc18a9
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361195"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566060"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -224,7 +224,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 
 ### <a name="june-2017"></a>Juin 2017
 * [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) mis à la disposition générale.
-* Plusieurs améliorations d’API pour [automatiser l’actualisation planifiée](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [cloner et à relier des rapports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [mettre à jour les liaisons de passerelle](https://msdn.microsoft.com/library/mt784650.aspx) et bien plus.
+* Plusieurs améliorations d’API pour [automatiser l’actualisation planifiée](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [cloner et à relier des rapports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [mettre à jour les liaisons de passerelle](/rest/api/power-bi/) et bien plus.
 * Liens relatifs dans les applications Power BI à partir de vignettes de tableau de bord vers d’autres tableaux de bord et rapports.
 * [Connecteur Impala](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) mis à la disposition générale sur Power BI Desktop.
 * Étendez les fonctionnalités visuelles de Power BI avec des [visuels Power BI R interactifs](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).

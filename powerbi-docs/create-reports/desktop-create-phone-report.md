@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 593847d229dcd4e2081843523a0a988415a9ef81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297972"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564743"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimiser les rapports Power BI pour l’application mobile
 Vous pouvez améliorer l’expérience d’affichage des rapports dans les applications mobiles en créant une disposition en mode portrait. Dans Power BI Desktop et le service Power BI, vous réorganisez et redimensionnez les visuels de rapport pour une expérience optimale en mode portrait.  
@@ -58,7 +58,7 @@ Quand un visuel change de taille, Power BI hiérarchise la vue de données, par 
 
 ![Redimensionnement de visuel réactif](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Vous choisissez d’activer ou non la réactivité pour chaque visuel. En savoir plus sur l’[optimisation des visuels](../visuals/desktop-create-responsive-visuals.md).
+Vous choisissez d’activer ou non la réactivité pour chaque visuel. En savoir plus sur l’[optimisation des visuels](../visuals/power-bi-report-visualizations.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Considérations relatives à la création de dispositions de rapport sur téléphone
 * Pour les rapports contenant plusieurs pages, vous pouvez optimiser toutes les pages ou seulement quelques unes. 
@@ -108,5 +108,5 @@ Les lecteurs du rapport peuvent tourner leur téléphone ou leur tablette sur le
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer une vue téléphone d’un tableau de bord dans Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Afficher les rapports Power BI optimisés pour votre téléphone](../consumer/mobile/mobile-apps-view-phone-report.md)
-* [Créer des visuels réactifs optimisés pour toute taille](../visuals/desktop-create-responsive-visuals.md)
+* [Créer des visuels réactifs optimisés pour toute taille](../visuals/power-bi-report-visualizations.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

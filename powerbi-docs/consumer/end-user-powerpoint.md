@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1dbb35ab45a1172044cedb7fbe484ed4da6c43db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348364"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565738"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
@@ -31,7 +31,7 @@ Avec le service Power BI (app.powerbi.com), vous pouvez publier votre rapport d
 
 L’exportation d’un **rapport Power BI** dans **PowerPoint** est rapide. Suivez les étapes décrites dans la section suivante.
 
-Vous pouvez également copier un visuel à la fois à partir du service Power BI et le coller dans PowerPoint (ou dans tout autre programme qui prend en charge le collage). Sélectionnez l’icône **Copier en tant qu’image** pour copier le visuel dans votre Presse-papiers. Ensuite, ouvrez PowerPoint et collez le visuel. Pour plus d’informations, consultez [Copier des visuels sous forme d’images statiques](../power-bi-visualization-copy-paste.md).
+Vous pouvez également copier un visuel à la fois à partir du service Power BI et le coller dans PowerPoint (ou dans tout autre programme qui prend en charge le collage). Sélectionnez l’icône **Copier en tant qu’image** pour copier le visuel dans votre Presse-papiers. Ensuite, ouvrez PowerPoint et collez le visuel. Pour plus d’informations, consultez [Copier des visuels sous forme d’images statiques](../visuals/power-bi-visualization-copy-paste.md).
 
 ![Sélectionner Copier en tant qu’icône d’image](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -87,12 +87,12 @@ Quand vous voyez à une diapositive, vous voyez que chaque page du rapport est u
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter vers PowerPoint**.
  
 
-* Les [filtres d’URL](../service-url-filters.md) ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
+* Les [filtres d’URL](../collaborate-share/service-url-filters.md) ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
 
 * Lors de l’exportation vers PowerPoint, si le rapport utilise une police personnalisée, cette police est remplacée par une police par défaut.
 
 * Les types de visuels suivants ne sont pas pris en charge et ne seront pas exportés vers PowerPoint :
-   - [Les visuels personnalisés qui n’ont pas été certifiés](../developer/power-bi-custom-visuals-certified.md) ne sont pas pris en charge. 
+   - [Les visuels personnalisés qui n’ont pas été certifiés](../developer/visuals/power-bi-custom-visuals-certified.md) ne sont pas pris en charge. 
    - Le [visuel ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) n'est pas pris en charge
    - Les visuels R et Python ne sont pas pris en charge.
    - Les images en arrière-plan sont rognées en fonction du cadre englobant du graphique. Nous vous recommandons de supprimer les images en arrière-plan avant d’exporter vers PowerPoint.
@@ -109,5 +109,5 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Copier les visuels en tant qu’images statiques](../power-bi-visualization-copy-paste.md)    
+[Copier les visuels en tant qu’images statiques](../visuals/power-bi-visualization-copy-paste.md)    
 [Imprimer un rapport](end-user-print.md)
