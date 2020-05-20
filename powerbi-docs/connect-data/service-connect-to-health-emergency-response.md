@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 65f1246185584b5887d97bb9188b43e016e78e8f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 40a585c78de4a95981ff157413e857b48fd35c14
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279247"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407560"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Se connecter au Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux
 L’application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux est la partie dédiée aux rapports de la [solution Microsoft Power Platform pour la réponse aux urgences sanitaires](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Le tableau de bord montre aux responsables des services d’urgence des données agrégées à l’échelle de leur système de santé pour les aider à prendre des décisions opportunes et éclairées.
@@ -32,11 +32,11 @@ Lors de l’installation de la solution Power Platform Réponse aux urgences des
 
 ## <a name="install-the-app"></a>Installer l’application
 
-1. Cliquez sur le lien suivant pour accéder à l’application : [Application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Cliquez sur le lien suivant pour accéder à l’application : [Application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux](https://aka.ms/AppSource_Hospital_offer)
 
-1. Dans la page AppSource de l’application, sélectionnez [**OBTENIR MAINTENANT**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. Dans la page AppSource de l’application, sélectionnez [**OBTENIR MAINTENANT**](https://aka.ms/AppSource_Hospital_offer).
 
-    [![Application Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux dans AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+    [![Application Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux dans AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://aka.ms/AppSource_Hospital_offer)
 
 1. Lisez les informations contenues dans **Encore une chose**, puis sélectionnez **Continuer**.
 

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 27509d42b09b9524b204da5ab0ce76f3d180a057
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293165"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561567"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -72,7 +72,7 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 **Vrai/Faux** : valeur booléenne Vrai ou Faux.
 
 ### <a name="blanksnulls-type"></a>Type Vide/Null
-**Vide** : type de données dans DAX qui représente et remplace les valeurs null SQL. Vous pouvez créer une valeur vide à l’aide de la fonction [VIDE](https://msdn.microsoft.com/library/ee634820.aspx) et vérifier la présence de valeurs vides à l’aide de la fonction logique [ESTVIDE](https://msdn.microsoft.com/library/ee634204.aspx).
+**Vide** : type de données dans DAX qui représente et remplace les valeurs null SQL. Vous pouvez créer une valeur vide à l’aide de la fonction [VIDE](/dax/blank-function-dax) et vérifier la présence de valeurs vides à l’aide de la fonction logique [ESTVIDE](/dax/isblank-function-dax).
 
 ### <a name="binary-data-type"></a>Type de données Binaire
 
@@ -86,7 +86,7 @@ Le type de données Binaire peut être utilisé pour représenter n’importe qu
 > 
 
 ### <a name="table-data-type"></a>Type de données de table
-DAX utilise un type de données de table dans de nombreuses fonctions, telles que les agrégations et les calculs Time Intelligence. Certaines fonctions nécessitent une référence à une table ; d’autres retournent une table qui peut ensuite servir d’entrée pour d’autres fonctions. Dans certaines fonctions qui nécessitent une table comme entrée, vous pouvez spécifier une expression qui correspond à une table. Pour certaines fonctions, une référence à une table de base est obligatoire. Pour plus d’informations sur les exigences relatives à des fonctions spécifiques, consultez [Référence des fonctions DAX](https://msdn.microsoft.com/library/ee634396.aspx).
+DAX utilise un type de données de table dans de nombreuses fonctions, telles que les agrégations et les calculs Time Intelligence. Certaines fonctions nécessitent une référence à une table ; d’autres retournent une table qui peut ensuite servir d’entrée pour d’autres fonctions. Dans certaines fonctions qui nécessitent une table comme entrée, vous pouvez spécifier une expression qui correspond à une table. Pour certaines fonctions, une référence à une table de base est obligatoire. Pour plus d’informations sur les exigences relatives à des fonctions spécifiques, consultez [Référence des fonctions DAX](/dax/dax-function-reference).
 
 ## <a name="implicit-and-explicit-data-type-conversion-in-dax-formulas"></a>Conversion de types de données implicites et explicites dans les formules DAX
 Chaque fonction DAX a des exigences spécifiques quant aux types de données utilisés comme entrées et sorties. Par exemple, certaines fonctions nécessitent des entiers pour certains arguments et des dates pour d’autres. D’autres fonctions nécessitent du texte ou des tables.
@@ -197,4 +197,3 @@ Le traitement des vides dans des opérations telles que l’addition ou la conca
 | VRAI ET VIDE |FAUX |VRAI |
 | VIDE OU VIDE |VIDE |Erreur |
 | VIDE ET VIDE |VIDE |Erreur |
-

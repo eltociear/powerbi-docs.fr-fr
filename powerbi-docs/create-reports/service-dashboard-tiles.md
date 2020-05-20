@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b0bf61672d383900dad50e5fe7404f7f4a7f0bc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 96a780d7d7b100acb283623107d4ec841666bb8f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348916"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561659"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduction aux vignettes de tableau de bord pour les concepteurs Power BI
 
@@ -23,7 +23,7 @@ Une vignette est une capture instantanée de vos données, épinglée au tableau
 
 ![tableau de bord Power BI](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Les tableaux de bord et vignettes de tableau de bord caractérisent le service Power BI et non Power BI Desktop. Vous ne pouvez pas créer de tableaux de bord sur des appareils mobiles, mais vous pouvez [les afficher et les partager]../consumer/mobile/mobile-apps-view-dashboard.md) sur ceux-ci.
+Les tableaux de bord et vignettes de tableau de bord caractérisent le service Power BI et non Power BI Desktop. Vous ne pouvez pas créer de tableaux de bord sur des appareils mobiles, mais vous pouvez [les afficher et les partager](../consumer/mobile/mobile-apps-view-dashboard.md) sur ceux-ci.
 
 Outre la possibilité d’épingler des vignettes, vous pouvez créer des vignettes autonomes directement dans le tableau de bord à l’aide du contrôle [Ajouter une vignette](service-dashboard-add-widget.md). Les vignettes autonomes incluent des zones de texte, des images, des vidéos, des données de streaming et du contenu web.
 
@@ -98,6 +98,6 @@ Quand vous sélectionnez une vignette, ce qui se passe ensuite dépend de la fa�
 - [Actualisation des données dans Power BI](../connect-data/refresh-data.md)
 - [Fondamentaux pour les concepteurs dans le service Power BI](../fundamentals/service-basic-concepts.md)
 - [Intégration de vignettes Power BI dans les documents Office](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Épingler des éléments Reporting Services à des tableaux de bord Power BI](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Épingler des éléments Reporting Services à des tableaux de bord Power BI](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).

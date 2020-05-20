@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079666"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561498"
 ---
 # <a name="dataset-properties"></a>Propriétés du jeu de données
 
@@ -46,8 +46,8 @@ isHidden     | Boolean        | Si Vrai, la table est masquée dans les outils c
 Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
 nom     |  Chaîne        | Nom de colonne défini par l’utilisateur.        |  False       | True       
-dataType     |  Chaîne       |  [Types de données EDM](https://msdn.microsoft.com/library/ee382832.aspx) pris en charge et restrictions. Consultez [Restrictions des types de données](#data-type-restrictions).      |  False       | True        
-formatString     | Chaîne        | Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](https://msdn.microsoft.com/library/ms146084.aspx).      | False        | False        
+dataType     |  Chaîne       |  [Types de données EDM](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) pris en charge et restrictions. Consultez [Restrictions des types de données](#data-type-restrictions).      |  False       | True        
+formatString     | Chaîne        | Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).      | False        | False        
 sortByColumn    | Chaîne        |   Nom de chaîne d’une colonne dans la même table à utiliser pour trier la colonne en cours.     | False        | False       
 dataCategory     | Chaîne        |  Valeur de chaîne à utiliser pour la catégorie de données qui décrit les données de cette colonne. Voici certaines valeurs courantes : Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  False       | False        
 isHidden    |  Boolean       |  Propriété qui indique si la colonne est masquée. La valeur par défaut est false.       | False        | False        
@@ -59,7 +59,7 @@ Nom  |Type  |Description  |En lecture seule  |Requis
 ---------|---------|---------|---------|---------
 nom     | Chaîne        |  Nom de mesure défini par l’utilisateur.       |  False       | True        
 expression     | Chaîne        | Expression DAX valide.        | False        |  True       
-formatString     | Chaîne        |  Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](https://msdn.microsoft.com/library/ms146084.aspx).       | False        | False        
+formatString     | Chaîne        |  Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).       | False        | False        
 isHidden     | Chaîne        |  Si Vrai, la table est masquée dans les outils clients.       |  False       | False       
 
 ## <a name="relationship"></a>Relation

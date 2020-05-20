@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d9fd23a0cf5c3ed26c78e4c53ae600bf74daca91
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 06bff0a199db9955f11487a05ba78268bb8a942d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348180"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561590"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>Effectuer la migration des rapports SQL Server Reporting Services vers Power BI
 
@@ -194,7 +194,7 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 - [Aide sur l’extraction de données pour les rapports paginés](report-paginated-data-retrieval.md)
 - [Quand utiliser des rapports paginés dans Power BI](report-paginated-or-power-bi.md)
 - [Rapports paginés dans Power BI : Questions fréquentes (FAQ)](../paginated-reports/paginated-reports-faq.md)
-- [Cours en ligne : Rapports paginés en une journée](../paginated-reports/paginated-reports-online-course.md)
+- [Cours en ligne : Rapports paginés en une journée](../learning-catalog/paginated-reports-online-course.md)
 - [Questions fréquentes Power BI Premium](../admin/service-premium-faq.md)
 - [Outil de migration RDL](https://github.com/microsoft/RdlMigration)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cf937ea36727ec036e3799cb0ac48dfbb5740325
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292912"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563284"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -371,7 +371,7 @@ En accédant au dossier parent de ce dossier, vous pouvez voir le dossier conten
 
 Ce dossier comprend un sous-dossier *\\Data*, qui contient le fichier de trace *FlightRecorderCurrent.trc* pour la session Power BI active. Le dossier d’espace de travail correspondant est supprimé à l’issue de la session Power BI Desktop associée.
 
-Vous pouvez lire les fichiers de trace à l’aide de l’outil *SQL Server Profiler*, disponible en téléchargement gratuit avec [SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx).
+Vous pouvez lire les fichiers de trace à l’aide de l’outil *SQL Server Profiler*, disponible en téléchargement gratuit avec [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
 Une fois que vous avez téléchargé et installé SQL Server Management Studio, exécutez SQL Server Profiler.
 
