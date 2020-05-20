@@ -83,6 +83,8 @@
               href: service-dataflows-create-use.md
             - name: Promouvoir ou certifier des dataflows
               href: service-dataflows-promote-certify.md
+            - name: Utiliser DirectQuery avec des dataflows dans Power BI (préversion)
+              href: service-dataflows-directquery.md
             - name: Utiliser le moteur de calcul amélioré avec des dataflows
               href: service-dataflows-enhanced-compute-engine.md
             - name: Entités calculées avec Power BI Premium

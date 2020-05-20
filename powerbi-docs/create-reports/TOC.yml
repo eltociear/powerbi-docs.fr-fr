@@ -257,7 +257,7 @@
               href: ../visuals/power-bi-visualization-card.md
             - name: Graphiques combinés
               href: ../visuals/power-bi-visualization-combo-chart.md
-            - name: Visuels d’arborescence hiérarchique (préversion)
+            - name: Visuels de l’arborescence hiérarchique
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: Graphiques en anneau
               href: ../visuals/power-bi-visualization-doughnut-charts.md

@@ -208,8 +208,8 @@
               href: refresh-data.md
             - name: Configurer une actualisation planifiée
               href: refresh-scheduled-refresh.md
-            - name: Actualiser le centre
-              href: refresh-center.md
+            - name: Actualiser les résumés
+              href: refresh-summaries.md
             - name: Configurer une actualisation incrémentielle
               href: ../admin/service-premium-incremental-refresh.md
             - name: "Actualiser un jeu de données à partir d’un fichier Power\_BI\_Desktop local"
