@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 35e5d3b93305f8f2271db6343164cad8b57a4bfd
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c687486af1293660af5496e27ea707bb1afeec80
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348847"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564549"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
@@ -22,7 +22,7 @@ Un *tableau de bord* Power BI est une page unique, souvent appelée canevas, qu
 
 ![Tableau de bord](media/service-dashboards/power-bi-dashboard2.png)
 
-Les tableaux de bord sont une fonctionnalité du service Power BI. Ils ne sont pas disponibles dans Power BI Desktop. Même si vous ne pouvez pas créer de tableaux de bord sur des appareils mobiles, vous pouvez [les afficher et les partager]../consumer/mobile/mobile-apps-view-dashboard.md) sur ceux-ci.
+Les tableaux de bord sont une fonctionnalité du service Power BI. Ils ne sont pas disponibles dans Power BI Desktop. Vous ne pouvez pas créer de tableaux de bord sur des appareils mobiles, mais vous pouvez [les afficher et les partager](../consumer/mobile/mobile-apps-view-dashboard.md) sur ceux-ci.
 
 ## <a name="dashboard-basics"></a>Principes de base des tableaux de bord 
 
