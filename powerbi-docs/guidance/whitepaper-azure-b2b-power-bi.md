@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82843638"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565434"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -415,7 +415,7 @@ Désormais, lorsque cet utilisateur ouvre l’application qui a été partagée 
 
 Une autre rubrique intéressante consiste à voir comment la sécurité au niveau des lignes (RLS) dynamique fonctionne avec Azure AD B2B.
 
-En résumé, la sécurité dynamique au niveau des lignes fonctionne en filtrant les données du modèle en fonction du nom d’utilisateur de la personne qui se connecte à Power BI. Au lieu d’ajouter plusieurs rôles pour des groupes d’utilisateurs, vous définissez les utilisateurs dans le modèle. Nous ne décrirons pas le modèle en détail ici. Kasper de Jong offre une écriture détaillée sur toutes les versions de la sécurité au niveau des lignes dans Power BI Desktop aide-mémoire sur la [sécurité dynamique](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/), et dans [ce livre blanc](https://msdn.microsoft.com/library/jj127437.aspx) .
+En résumé, la sécurité dynamique au niveau des lignes fonctionne en filtrant les données du modèle en fonction du nom d’utilisateur de la personne qui se connecte à Power BI. Au lieu d’ajouter plusieurs rôles pour des groupes d’utilisateurs, vous définissez les utilisateurs dans le modèle. Nous ne décrirons pas le modèle en détail ici. Kasper de Jong offre une écriture détaillée sur toutes les versions de la sécurité au niveau des lignes dans Power BI Desktop aide-mémoire sur la [sécurité dynamique](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/), et dans [ce livre blanc](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) .
 
 Examinons un petit exemple : contoso dispose d’un rapport simple sur les ventes par groupes :
 
@@ -504,7 +504,7 @@ Certaines expériences ne sont pas disponibles pour les utilisateurs invités au
 
 - Diriger la publication de Power BI Desktop vers le service Power BI
 - Les utilisateurs invités ne peuvent pas utiliser Power BI Desktop pour se connecter à des jeux de données du service dans le service Power BI
-- Espaces de travail classiques liés aux groupes Office 365 : l’utilisateur invité ne peut pas créer ou être administrateur de ces espaces de travail. Ils peuvent être membres.
+- Espaces de travail classiques liés aux groupes de Microsoft 365 : l’utilisateur invité ne peut pas créer ou être administrateur de ces espaces de travail. Ils peuvent être membres.
 - L’envoi d’invitations ad hoc n’est pas pris en charge pour les listes d’accès aux espaces de travail
 - Power BI Publisher pour Excel n’est pas pris en charge pour les utilisateurs invités
 - Les utilisateurs invités ne peuvent pas installer une passerelle Power BI Gateway et la connecter à votre organisation
