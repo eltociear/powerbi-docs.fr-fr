@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565274"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792907"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -91,11 +91,11 @@ Les métadonnées relatives à l’abonnement Power BI d’un utilisateur, telle
 
 ## <a name="tenant-creation"></a>Création de locataire
 
-Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et détient quand elle s’inscrit à un service cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Office 365. Chaque client Azure AD est distinct et indépendant des autres clients Azure AD.
+Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et possède lorsqu’elle s’inscrit à un service Cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Microsoft 365. Chaque client Azure AD est distinct et indépendant des autres clients Azure AD.
 
 Un client héberge les utilisateurs d'une entreprise et leurs informations, c’est-à-dire les mots de passe, les données de profil utilisateur, les autorisations, etc. Il contient également des groupes, des applications et d’autres informations relatives à une organisation et à sa sécurité. Pour plus d’informations, consultez [qu’est-ce qu’un locataire Azure ad](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-Un locataire Power BI est créé dans le centre de données jugé le plus proche du pays (ou de la région) fourni pour le locataire dans Azure Active Directory (ces informations ayant été fournies lors de la configuration initiale du service Office 365 ou Power BI). Le locataire Power BI ne bouge pas de cet emplacement de centre de données aujourd’hui.
+Un locataire Power BI est créé dans le centre de données jugé le plus proche du pays (ou de la région) et des informations d’État fournies pour le locataire dans Azure Active Directory, qui a été fourni lors de la configuration initiale du Microsoft 365 ou service Power BI. Le locataire Power BI ne bouge pas de cet emplacement de centre de données aujourd’hui.
 
 ### <a name="multiple-geographies-multi-geo"></a>Zones géographiques multiples (Multi-Geo)
 
@@ -129,7 +129,7 @@ Pour plus d’informations sur l’emplacement où sont stockées vos données e
 
 ## <a name="user-authentication"></a>Authentification utilisateur
 
-L’authentification utilisateur auprès du service Power BI se compose d’une série de requêtes, réponses et redirections entre le navigateur de l’utilisateur et le service Power BI ou les services Azure utilisés par Power BI. Cette séquence décrit le processus d’authentification utilisateur dans Power BI. Pour plus d’informations sur les options pour les modèles d’authentification utilisateur d’une organisation (modèles de connexion), consultez [Choosing a sign-in model for Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/) (Choix d’un modèle de connexion pour Office 365).
+L’authentification utilisateur auprès du service Power BI se compose d’une série de requêtes, réponses et redirections entre le navigateur de l’utilisateur et le service Power BI ou les services Azure utilisés par Power BI. Cette séquence décrit le processus d’authentification utilisateur dans Power BI. Pour plus d’informations sur les options des modèles d’authentification utilisateur d’une organisation (modèles de connexion), consultez [choix d’un modèle de connexion pour Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### <a name="authentication-sequence"></a>Séquence d’authentification
 
@@ -245,9 +245,9 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 1. Métadonnées (définition de rapport)
 
-   a. Les rapports peuvent être au format Excel pour Office 365 ou au format Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
+   a. Les rapports peuvent être des rapports Excel pour Microsoft 365 ou des rapports Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
         
-    &ensp;&ensp;. Les métadonnées de rapport Excel sont stockées sous forme chiffrée dans SQL Azure. Les métadonnées sont également stockées dans Office 365.
+    &ensp;&ensp;. Les métadonnées de rapport Excel sont stockées sous forme chiffrée dans SQL Azure. Les métadonnées sont également stockées dans Microsoft 365.
 
     &ensp;&ensp;b. Les rapports de Power BI sont stockés sous forme chiffrée dans la base de données SQL Azure.
 
@@ -255,13 +255,13 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
    Les données statiques incluent des artefacts tels que les images d’arrière-plan et les visuels de Power BI.
 
-    &ensp;&ensp;. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
+    &ensp;&ensp;. Pour les rapports créés avec Excel pour Microsoft 365, rien n’est stocké.
 
     &ensp;&ensp;b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
 
 3. Caches
 
-    &ensp;&ensp;. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
+    &ensp;&ensp;. Pour les rapports créés avec Excel pour Microsoft 365, rien n’est mis en cache.
 
     &ensp;&ensp;b. Pour les rapports Power BI, les données des éléments visuels des rapports affichées sont mises en cache et stockées dans le cache de données visuel décrit dans la section suivante.
  
