@@ -43,7 +43,7 @@
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Collaborer dans un espace de travail classique
               href: service-collaborate-power-bi-workspace.md
-            - name: "Gérer votre groupe dans Power\_BI et Office\_365"
+            - name: Gérer votre groupe dans Power BI et Microsoft 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Publier et partager votre travail
           items:
@@ -71,6 +71,8 @@
           items:
             - name: Analyser dans Excel
               href: service-analyze-in-excel.md
+            - name: Tables Power BI recommandées dans Excel
+              href: service-excel-featured-tables.md
             - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"

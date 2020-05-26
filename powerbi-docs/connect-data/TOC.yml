@@ -174,7 +174,7 @@
           items:
             - name: Utiliser des jeux de données entre des espaces de travail
               href: service-datasets-across-workspaces.md
-            - name: Partager des jeux de données (préversion)
+            - name: Partager des jeux de données
               href: service-datasets-share.md
             - name: Autorisation de génération pour les jeux de données partagés
               href: service-datasets-build-permissions.md
