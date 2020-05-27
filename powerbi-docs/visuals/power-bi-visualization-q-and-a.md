@@ -4,16 +4,16 @@ description: Comment configurer le visuel Questions et réponses de Power BI
 author: rien
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: e94b27945f277c352773e7f9eaa3979fa8bc7451
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f5010362ef16d8433e2e4004bca5d7af74b3f762
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148342"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813689"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Présentation des visualisations Questions et réponses de Power BI
 
