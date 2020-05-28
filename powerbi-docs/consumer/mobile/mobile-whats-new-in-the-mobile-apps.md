@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349261"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565297"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -274,7 +274,7 @@ L’ouverture d’un lien de rapport incluant une chaîne de requête se fera d�
 
 ### <a name="shared-credentials-now-in-android"></a>Informations d’identification partagées (maintenant sur Android)
 
-II n’a jamais été aussi facile de se connecter à Power BI à partir de votre application mobile. Avec les informations d’identification partagées, nous avons simplifié le processus de connexion avec d’autres informations d'identification d’applications Office 365 sur l’appareil pour vous authentifier dans le service Power BI.
+II n’a jamais été aussi facile de se connecter à Power BI à partir de votre application mobile. Avec les informations d’identification partagées, nous avons simplifié le processus de connexion avec d’autres informations d’identification d’applications Microsoft 365 sur l’appareil pour vous authentifier dans le service Power BI.
 
 ### <a name="in-app-urls-now-in-android"></a>URL dans l’application (maintenant sur Android) 
 
@@ -294,7 +294,7 @@ Lire le [billet de blog sur les rapports paginés dans l’application mobile](h
 
 ### <a name="shared-credentials-ios"></a>Informations d’identification partagées (iOS)
 
-II n’a jamais été aussi facile de se connecter à Power BI à partir de votre application mobile. Avec les informations d’identification partagées, nous avons simplifié le processus de connexion avec d’autres informations d'identification d’applications Office 365 sur l’appareil pour vous authentifier dans le service Power BI.
+II n’a jamais été aussi facile de se connecter à Power BI à partir de votre application mobile. Avec les informations d’identification partagées, nous avons simplifié le processus de connexion avec d’autres informations d’identification d’applications Microsoft 365 sur l’appareil pour vous authentifier dans le service Power BI.
 
 ### <a name="in-app-urls-ios"></a>URL dans l’application (iOS) 
 

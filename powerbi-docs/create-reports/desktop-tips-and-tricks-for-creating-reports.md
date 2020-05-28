@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: f66e564091c30e11604d0ab3fe58ba1f93addb28
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349100"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564572"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -92,7 +92,7 @@ Pour démarrer le processus, identifiez la requête contenant le champ à utilis
 >[!NOTE]
 >Il est utile de réfléchir à l’ordre de tri avant de générer des visuels. 
 
-L’étape suivante du processus consiste à définir une relation entre les requêtes « Buckets » et « Details » dans la colonne des compartiments. Dans le ruban de Power BI Desktop, cliquez sur **Gérer les relations**. Créez une relation dans laquelle « Buckets » est dans la table de gauche et « Details » dans la table de droite, puis sélectionnez le champ que vous utilisez pour l’histogramme. 
+L’étape suivante du processus consiste à définir une relation entre les requêtes « Buckets » et « Details » dans la colonne des compartiments. Dans le ruban de Power BI Desktop, cliquez sur **Gérer les relations**. Créez une relation dans laquelle Compartiments est dans la table de gauche et Détails dans la table de droite, puis sélectionnez le champ que vous utilisez pour l’histogramme. 
 
 La dernière étape consiste à créer l’histogramme. Faites glisser le champ Bucket à partir de la table « Buckets ». Supprimez le champ par défaut de l’histogramme résultant. Maintenant, à partir de la table « Details », faites glisser le champ de l’histogramme dans le même élément visuel. Dans la zone des champs, spécifiez l’agrégation par défaut Nombre. L’histogramme est généré. Si vous créez un autre élément visuel comme un Treemap à partir de la table Details, sélectionnez un point de données dans Treemap pour mettre en surbrillance l’histogramme et afficher l’histogramme pour le point de données sélectionné par rapport à la tendance de l’ensemble du jeu de données.
 
@@ -158,7 +158,7 @@ DAX est le langage des formules de calcul dans Power BI Desktop. Il est optimi
 
 [Découvrir les principes fondamentaux de DAX dans Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
+[Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
 
 [Centre de ressources DAX](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 

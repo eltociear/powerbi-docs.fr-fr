@@ -10,22 +10,22 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8fc1f2a668a0dfff4418749e7f3de7e0379b603f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129093"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564612"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
-Il est important de savoir qui effectue une action sur un élément donné de votre abonné Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements. Power BI propose deux options pour suivre l’activité utilisateur : le [journal d’activité de Power BI](#use-the-activity-log) et le [journal d’audit unifié d’Office 365](#use-the-audit-log). Ces journaux contiennent tous les deux une copie complète des [données d’audit de Power BI](#operations-available-in-the-audit-and-activity-logs), mais il existe plusieurs différences importantes qui sont résumées dans le tableau ci-après.
+Il est important de savoir qui effectue une action sur un élément donné de votre abonné Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements. Power BI propose deux options pour suivre l’activité utilisateur : le [journal d’activité de Power BI](#use-the-activity-log) et le [journal d’audit unifié](#use-the-audit-log). Ces journaux contiennent tous les deux une copie complète des [données d’audit de Power BI](#operations-available-in-the-audit-and-activity-logs), mais il existe plusieurs différences importantes qui sont résumées dans le tableau ci-après.
 
-| **Journal d’audit unifié d’Office 365** | **Journal d’activité de Power BI** |
+| **Journal d’audit unifié** | **Journal d’activité de Power BI** |
 | --- | --- |
 | Inclut les événements de SharePoint Online, Exchange Online, Dynamics 365 et d’autres services en plus des événements d’audit de Power BI. | Inclut uniquement les événements d’audit de Power BI. |
 | Seuls les utilisateurs ayant des autorisations Journaux d’audit ou Journaux d’audit en affichage seul, comme les administrateurs généraux et les auditeurs, ont accès à ce journal. | Les administrateurs généraux et les administrateurs de service Power BI ont accès à ce journal. |
-| Les administrateurs généraux et les auditeurs peuvent faire des recherches dans le journal d’audit unifié à partir du Centre de sécurité et conformité Office 365, du Centre de sécurité Microsoft 365 et du Centre de conformité Microsoft 365. | Il n’existe pas encore d’interface utilisateur permettant d’effectuer des recherches dans le journal d’activité. |
+| Les administrateurs généraux et les auditeurs peuvent faire des recherches dans le journal d’audit unifié à l’aide du Centre de sécurité Microsoft 365 et du Centre de conformité Microsoft 365. | Il n’existe pas encore d’interface utilisateur permettant d’effectuer des recherches dans le journal d’activité. |
 | Les administrateurs généraux et les auditeurs peuvent télécharger des entrées du journal d’audit à l’aide d’API et d’applets de commande de gestion Office 365. | Les administrateurs généraux et les administrateurs de service Power BI peuvent télécharger des entrées du journal d’activité à l’aide d’une API REST Power BI et d’une applet de commande de gestion. |
 | Conserve les données d’audit pendant 90 jours. | Conserve les données d’activité pendant 30 jours (préversion publique). |
 | Conserve les données d’audit, même si le locataire est déplacé vers une autre région Azure. | Ne conserve pas les données d’activité lorsque le client est déplacé vers une autre région Azure. |
@@ -105,7 +105,7 @@ $activities[0]
 
 ## <a name="use-the-audit-log"></a>Utiliser le journal d’audit
 
-Si vous devez effectuer le suivi des activités des utilisateurs dans Power BI et Office 365, utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou utilisez PowerShell. L’audit s’appuie sur des fonctionnalités d’Exchange Online, qui est automatiquement configuré de façon à prendre en charge Power BI.
+Si vous devez effectuer le suivi des activités des utilisateurs dans Power BI et Microsoft 365, utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou utilisez PowerShell. L’audit s’appuie sur des fonctionnalités d’Exchange Online, qui est automatiquement configuré de façon à prendre en charge Power BI.
 
 Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de bord, rapport, jeu de données et type d’activité. Vous pouvez également télécharger les activités dans un fichier .csv (valeurs séparées par des virgules) pour les analyser hors connexion.
 
@@ -184,7 +184,7 @@ La zone **Résultats** contient les informations suivantes sur chaque événemen
 
 #### <a name="view-the-details-for-an-event"></a>Afficher les détails d’un événement
 
-Pour afficher plus de détails sur un événement, sélectionnez l’enregistrement de l’événement dans la liste des résultats de recherche. Une page **Détails** s’affiche avec les propriétés détaillées de l’enregistrement de l’événement. La page **Détails** affiche les propriétés en fonction du service Office 365 dans lequel l’événement se produit.
+Pour afficher plus de détails sur un événement, sélectionnez l’enregistrement de l’événement dans la liste des résultats de recherche. Une page **Détails** s’affiche avec les propriétés détaillées de l’enregistrement de l’événement. La page **Détails** affiche les propriétés en fonction du service Microsoft 365 dans lequel l’événement se produit.
 
 Pour afficher ces détails, sélectionnez **Plus d’informations**. Toutes les entrées Power BI ont une valeur de 20 pour la propriété RecordType. Pour plus d’informations sur les autres propriétés, consultez [Propriétés détaillées dans le journal d’audit](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 

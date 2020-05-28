@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 101cdbc7ad7ea5d07edf182765d305ad2f1fa8c7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ebdd84dd4de054df08ac79dc2d28f7862cbb284b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120111"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564892"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -26,7 +26,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 L’abonnement *Premium* d’organisation (également appelé *capacité Premium*) ajoute une couche de fonctionnalités aux licences par utilisateur. Par exemple, des détenteurs de compte par utilisateur *gratuit* au sein d’une organisation disposant d’un abonnement *Premium* peuvent en faire beaucoup plus avec Power BI que les utilisateurs avec une licence *gratuite* sans *Premium*. Par exemple, les utilisateurs *gratuit* dans des comptes d’organisation *Premium* peuvent collaborer avec des collègues et afficher du contenu hébergé sur la capacité Power BI Premium. 
 
-**admin portal (portail d’administration)** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Office 365, Azure et PowerApps utilisent le centre d’administration.)
+**admin portal (portail d’administration)** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Microsoft 365, Azure et PowerApps utilisent le centre d’administration.)
 
 **aggregates (agrégats)** Quand les valeurs de plusieurs lignes sont regroupées comme entrée sur des critères, pour former une seule valeur d’une indication ou d’une mesure plus significative.
 

@@ -1,5 +1,5 @@
 ---
-title: Structure de projet de visuel Power BI
+title: Structure de projets de visuels Power BI
 description: Cet article décrit la structure des dossiers et fichiers d’un projet de visuels Power BI
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 18267f06bd43166cb1958d3aff73913a31189953
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550764"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407436"
 ---
-# <a name="power-bi-visual-project-structure"></a>Structure de projet de visuel Power BI
+# <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
 
 La meilleure façon de commencer à créer un visuel Power BI consiste à utiliser l’outil Power BI [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools).
 
@@ -113,7 +113,7 @@ Ce fichier contient la [configuration TSLint](https://palantir.github.io/tslint/
 Les commentaires figurant dans la légende de code suivante du fichier `pbiviz.json` décrivent les entrées de métadonnées.
 
 > [!NOTE]
-> * À partir de la version 3.x.x de l’outil **pbiviz**, `externalJS` n’est pas pris en charge.
+> * À compter de la version 3.x.x de l’outil **pbiviz**, `externalJS` n’est pas pris en charge.
 > * Pour la prise en charge de la localisation, [ajoutez les paramètres régionaux Power BI à votre visuel](./localization.md).
 
 ```json

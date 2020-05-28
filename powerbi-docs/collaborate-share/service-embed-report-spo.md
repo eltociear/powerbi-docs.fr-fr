@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 04/27/2020
-ms.openlocfilehash: 60232b81633542d28b4cd52baf171557e95074c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 046ebacc69642c1e7f399f0a44d7c5a32e411cb1
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83143730"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693877"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Incorporer un composant WebPart Rapport dans SharePoint Online
 
@@ -79,7 +79,7 @@ L’incorporation d’un rapport dans SharePoint Online n’accorde pas automati
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, consiste à lister l’utilisateur comme membre de l’**espace de travail dans le service Power BI** et la **page SharePoint**. Pour plus d’informations, consultez [Gérer un espace de travail](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Microsoft 365 pour créer votre site d’équipe SharePoint Online, consiste à lister l’utilisateur comme membre de l’**espace de travail dans le service Power BI** et la **page SharePoint**. Pour plus d’informations, consultez [Gérer un espace de travail](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Le deuxième consiste à incorporer un rapport dans une application et à le partager directement avec les utilisateurs :  
 
@@ -157,7 +157,7 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
 
 * Power BI ne prend pas en charge les mêmes langues localisées que SharePoint Online. Par conséquent, vous risquez de ne pas voir la localisation appropriée dans le rapport incorporé.
 
-* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * Le composant WebPart Power BI n’est pas disponible pour les [clouds nationaux](https://powerbi.microsoft.com/clouds/).
 

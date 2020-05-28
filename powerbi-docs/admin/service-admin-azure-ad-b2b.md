@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 09b2f8afd78eda244a6862459a85558efa0fa1c2
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129337"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564492"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -130,7 +130,7 @@ Pour aider les invités autorisés à se connecter à Power BI, fournissez-leur
 * Certaines expériences ne sont pas disponibles pour les [utilisateurs invités qui peuvent modifier et gérer le contenu de l’organisation](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). Pour mettre à jour ou publier des rapports, ils doivent utiliser l’interface utilisateur web du service Power BI, notamment l’option Obtenir les données pour charger des fichiers Power BI Desktop.  Les expériences suivantes ne sont pas prises en charge :
     * Diriger la publication de Power BI Desktop vers le service Power BI
     * Les utilisateurs invités ne peuvent pas utiliser Power BI Desktop pour se connecter à des jeux de données du service dans le service Power BI
-    * Espaces de travail classiques liés à des groupes Office 365 :
+    * Espaces de travail classiques liés à des groupes Microsoft 365 :
         * Un utilisateur invité ne peut pas créer ou être un administrateur de ces espaces de travail
         * Les utilisateurs invités peuvent être membres
     * L’envoi d’invitations ad hoc n’est pas pris en charge pour les listes d’accès aux espaces de travail

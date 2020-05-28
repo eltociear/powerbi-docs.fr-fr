@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 459eaf6ba8b4f6e09b2df5f55956dc77adee9667
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344385"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563746"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -81,7 +81,7 @@ Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Comment empêcher les utilisateurs de se joindre à mon client (tenant) Microsoft 365 existant ?
 
-En tant qu’administrateur général de Microsoft 365, vous disposez de plusieurs moyens pour empêcher les utilisateurs de se joindre à votre client (tenant) Microsoft 365 existant. Si vous bloquez l’accès, les tentatives d’inscription des utilisateurs échouent, et un message s’affiche les invitant à contacter l’administrateur de leur organisation. Il est inutile de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, via Office 365 Éducation pour les étudiants, les enseignants et le personnel).
+En tant qu’administrateur général, vous disposez de plusieurs moyens pour empêcher les utilisateurs de se joindre à votre locataire Microsoft 365 existant. Si vous bloquez l’accès, les tentatives d’inscription des utilisateurs échouent, et un message s’affiche les invitant à contacter l’administrateur de leur organisation. Il est inutile de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, via Office 365 Éducation pour les étudiants, les enseignants et le personnel).
 
 Utilisez le script PowerShell suivant pour empêcher les nouveaux utilisateurs de s’associer à un client géré. ([En savoir plus sur PowerShell][1].)
 
@@ -184,7 +184,7 @@ Lorsqu’un utilisateur libre-service s’inscrit à un service cloud qui utilis
 Si vous ne faites rien, le service crée un locataire pour chaque domaine et sous-domaine de courrier d’utilisateur. Si vous voulez regrouper tous les utilisateurs dans un seul client quelle que soit leur extension d’adresse de messagerie : Créez un locataire cible à l’avance ou utilisez un locataire existant. Ajoutez tous les domaines et sous-domaines existants que vous souhaitez consolider au sein de ce locataire. Tous les utilisateurs dont les adresses e-mail se terminent par ces domaines et sous-domaines sont automatiquement associés au locataire cible lorsqu’ils s’inscrivent.
 
 > [!IMPORTANT]
-> Une fois que vous avez créé des utilisateurs, aucun mécanisme automatique pris en charge ne permet d’en déplacer d’un locataire à l’autre. Pour découvrir plus d’informations sur l’ajout de domaines à un même client (tenant) Microsoft 365, consultez [Ajouter vos utilisateurs et votre domaine à Office 365](/office365/admin/setup/add-domain/).
+> Une fois que vous avez créé des utilisateurs, aucun mécanisme automatique pris en charge ne permet d’en déplacer d’un locataire à l’autre. Pour plus d’informations sur l’ajout de domaines à un même locataire Microsoft 365, consultez [Ajouter vos utilisateurs et votre domaine à Microsoft 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Comment supprimer Power BI pour les utilisateurs déjà inscrits ?
 
@@ -259,9 +259,9 @@ Microsoft a créé Power BI sur les bases de Microsoft 365, qui lui-même repose
 [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)  
 [Comment acheter Power BI Premium ?](service-admin-premium-purchase.md)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
-[Gérer votre groupe dans Power BI et Office 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Gestion des comptes utilisateur (Office 365)](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
-[Gestion des groupes Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
+[Gérer votre groupe dans Power BI et Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Gestion des comptes professionnels ou scolaires](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Gestion des groupes Microsoft 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
