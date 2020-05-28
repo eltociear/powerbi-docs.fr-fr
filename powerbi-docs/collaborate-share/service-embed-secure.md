@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2b7c442ef39bba58b7ac7f8224928d29ea56d9c6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348134"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693829"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -50,7 +50,7 @@ L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.
 
 L’option **Incorporer** ne permet pas automatiquement aux utilisateurs de voir le rapport. Les autorisations de consultation sont définies dans le service Power BI.
 
-Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Office 365, vous pouvez lister l’utilisateur comme membre de l’espace de travail. Pour plus d’informations, consultez [Gérer l’espace de travail dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Microsoft 365, vous pouvez lister l’utilisateur comme membre de l’espace de travail. Pour plus d’informations, consultez [Gérer l’espace de travail dans Power BI et Microsoft 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licences
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0a362861aecda7fc9f7cac4820d4826d640a9dd6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144024"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693767"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -22,8 +22,8 @@ Power BI introduit une nouvelle expérience d’espace de travail. Les espaces d
 
 Voici ce qui est différent. Dans les nouveaux espaces de travail, vous pouvez :
 
-- Affecter des rôles d’espace de travail à des groupes d’utilisateurs : groupes de sécurité, listes de distribution, groupes Office 365 et personnes individuelles.
-- Créer un espace de travail dans Power BI sans créer un groupe Office 365.
+- Affecter des rôles d’espace de travail à des groupes d’utilisateurs : groupes de sécurité, listes de distribution, groupes Microsoft 365 et personnes individuelles.
+- Créer un espace de travail dans Power BI sans créer de groupe Microsoft 365.
 - Utiliser des rôles d’espace de travail plus granulaires, pour une gestion plus flexible des autorisations dans un espace de travail.
 
 Prêt à migrer votre espace de travail classique ? Consultez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI](service-upgrade-workspaces.md) pour plus d’informations.
@@ -43,7 +43,7 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
    
      ![Nouvelle expérience d’espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail basé sur un groupe Office 365](service-create-workspaces.md). 
+     Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail basé sur un groupe Microsoft 365](service-create-workspaces.md). 
 
 2. Nommez l’espace de travail. Si le nom n’est pas disponible, modifiez-le de façon à obtenir un nom unique.
    
@@ -55,7 +55,7 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
     
     [Ajoutez une **Liste de contacts**](#workspace-contact-list). Par défaut, les administrateurs de l’espace de travail sont les contacts. 
     
-    [Spécifiez **OneDrive de l'espace de travail**](#workspace-onedrive) en tapant simplement le nom d’un groupe Office 365 existant, et non pas l’URL. Cet espace de travail peut désormais utiliser l’emplacement de stockage de fichiers de ce groupe Office 365. 
+    [Spécifiez un emplacement **OneDrive de l’espace de travail**](#workspace-onedrive) en tapant simplement le nom d’un groupe Microsoft 365 existant, et non l’URL. Cet espace de travail peut désormais utiliser l’emplacement de stockage de fichiers de ce groupe Microsoft 365.
 
     ![Spécifier un emplacement OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -87,9 +87,9 @@ Vous pouvez spécifier les utilisateurs qui reçoivent une notification concerna
 
 ## <a name="workspace-onedrive"></a>OneDrive de l’espace de travail
 
-La fonctionnalité OneDrive de l’espace de travail vous permet de configurer un groupe Office 365 dont le stockage fichier de la bibliothèque de documents SharePoint est disponible pour les utilisateurs de l’espace de travail. Vous devez d’abord créer le groupe en dehors de Power BI. 
+La fonctionnalité OneDrive de l’espace de travail vous permet de configurer un groupe Microsoft 365 dont le stockage de fichiers de la bibliothèque de documents SharePoint est accessible aux utilisateurs de l’espace de travail. Vous devez d’abord créer le groupe en dehors de Power BI.
 
-Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qui sont configurés pour avoir accès à l’espace de travail avec l’appartenance au groupe Office 365. La meilleure pratique consiste à attribuer au même groupe Office 365, dont vous configurez le stockage de fichiers dans ce groupe Office 365, [l’accès à l’espace de travail](#give-access-to-your-workspace). Gérez ensuite l’accès à l’espace de travail en gérant l’appartenance du groupe Office 365. 
+Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qui sont configurés pour avoir accès à l’espace de travail avec l’appartenance au groupe Microsoft 365. La bonne pratique consiste à attribuer au même groupe Microsoft 365, dont vous configurez le stockage de fichiers dans ce groupe Microsoft 365, l’[accès à l’espace de travail](#give-access-to-your-workspace). Gérez ensuite l’accès à l’espace de travail en gérant l’appartenance au groupe Microsoft 365.
 
 1. Accédez au nouveau paramètre **OneDrive de l’espace de travail** de l’une des deux manières suivantes :
 
@@ -99,7 +99,7 @@ Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qu
 
     ![Paramètres de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Sous **Avancé** > **OneDrive de l’espace de travail**, saisissez le nom du groupe Office 365 que vous avez créé plus tôt. Power BI récupère automatiquement le OneDrive du groupe.
+2. Sous **Avancé** > **OneDrive de l’espace de travail**, tapez le nom du groupe Microsoft 365 que vous avez créé. Power BI récupère automatiquement le OneDrive du groupe.
 
     ![Spécifier un emplacement OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -129,7 +129,7 @@ Dans la nouvelle expérience d’espace de travail, vous ne pouvez pas créer ni
 
     ![Liste de contenu des espaces de travail](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Ajoutez des groupes de sécurité, des listes de distribution, des groupes Office 365 ou des personnes individuelles à ces espaces de travail en tant que viewers, membres, contributeurs ou administrateurs. Consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces) pour une explication des différents rôles.
+1. Ajoutez des groupes de sécurité, des listes de distribution, des groupes Microsoft 365 ou des personnes individuelles à ces espaces de travail en tant que lecteurs, membres, contributeurs ou administrateurs. Consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces) pour une explication des différents rôles.
 
     ![Ajout de membres, d’administrateurs et de contributeurs aux espaces de travail](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
