@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e621deb2cc2db74d8836900aa65105a075d4cd3c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c7d1c9a29c95cb039c90fd339f6e6a38de111916
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139620"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563690"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurer des applications mobiles avec Microsoft Intune
 
@@ -24,12 +24,12 @@ Microsoft Intune permet aux organisations de gérer des appareils et des applica
 
 Cet article part du principe qu’Intune est correctement configuré et que vous avez inscrit des appareils dans Intune. L’article n’a pas pour objet de vous expliquer la configuration complète de Microsoft Intune. Pour plus d’informations sur Intune, consultez [What ' s Intune?](/intune/introduction-intune/) (Intune, qu’est-ce que c’est ?).
 
-Microsoft Intune et la gestion des appareils mobiles peuvent coexister dans Office 365. Si vous utilisez la gestion des appareils mobiles (GPM), l’appareil apparaît comme étant inscrit pour la gestion des appareils mobiles, mais vous pouvez tout de même le gérer dans Intune.
+Microsoft Intune et la gestion des appareils mobiles peuvent coexister dans Microsoft 365. Si vous utilisez la gestion des appareils mobiles (GPM), l’appareil apparaît comme étant inscrit pour la gestion des appareils mobiles, mais vous pouvez tout de même le gérer dans Intune.
 
 > [!NOTE]
 > Après avoir configuré Intune, l’actualisation des données d’arrière-plan est désactivée pour l’application mobile Power BI sur votre appareil iOS ou Android. Power BI actualise les données à partir du service Power BI sur le web lorsque vous entrez dans l’application.
 
-## <a name="step-1-get-the-url-for-the-application"></a>Étape 1 : obtenir l’URL de l’application
+## <a name="step-1-get-the-url-for-the-application"></a>Étape 1 : obtenir l’URL de l’application
 
 Avant de créer l’application dans Intune, vous devez obtenir les URL des applications. Pour iOS, vous pouvez obtenir cette information dans iTunes. Pour Android, cette information est disponible dans la page mobile Power BI.
 
@@ -53,9 +53,9 @@ L’URL doit ressembler à ce qui suit : *https://itunes.apple.com/us/app/micro
 
 ### <a name="get-android-url"></a>Obtenir l’URL d’Android
 
-Vous pouvez obtenir l’URL de Google Play à partir de la [page Power BI mobile](https://powerbi.microsoft.com/mobile/). Sélectionnez **Télécharger à partir de Google Play** pour accéder à la page de l’application. Vous pouvez copier l’URL à partir de la barre d’adresses du navigateur. L’URL doit ressembler à ce qui suit : *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
+Vous pouvez obtenir l’URL de Google Play à partir de la [page Power BI mobile](https://powerbi.microsoft.com/mobile/). Sélectionnez **Télécharger à partir de Google Play** pour accéder à la page de l’application. Vous pouvez copier l’URL à partir de la barre d’adresses du navigateur. Elle doit ressembler à ce qui suit : *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
-## <a name="step-2-create-a-mobile-application-management-policy"></a>Étape 2 : créer une stratégie de gestion des applications mobiles
+## <a name="step-2-create-a-mobile-application-management-policy"></a>Étape 2 : créer une stratégie de gestion des applications mobiles
 
 La stratégie de gestion des applications mobiles vous permet de forcer certains éléments, comme un code confidentiel d’accès. Vous pouvez en créer un dans le portail Intune.
 
@@ -67,11 +67,11 @@ Vous pouvez commencer par créer l’application ou la stratégie. L’ordre dan
 
 1. Sélectionnez **Ajouter**.
 
-1. Sous **Logiciels**, vous pouvez sélectionner la gestion des applications mobiles pour Android ou iOS. Pour démarrer rapidement, vous pouvez soit sélectionner **Créer une stratégie avec les paramètres recommandés**, soit créer une stratégie personnalisée.
+1. Sous **Logiciels** , vous pouvez sélectionner la gestion des applications mobiles pour Android ou iOS. Pour démarrer rapidement, vous pouvez soit sélectionner **Créer une stratégie avec les paramètres recommandés**, soit créer une stratégie personnalisée.
 
 1. Modifiez la stratégie pour configurer les restrictions désirées sur l’application.
 
-## <a name="step-3-create-the-application"></a>Étape 3 : créer l’application
+## <a name="step-3-create-the-application"></a>Étape 3 : créer l’application
 
 L’application est une référence ou un package qui est enregistré dans Intune en vue de son déploiement. Nous allons créer une application et référencer l’URL de l’application que nous avons obtenue dans Google Play ou iTunes.
 
@@ -105,7 +105,7 @@ Vous pouvez commencer par créer l’application ou la stratégie. L’ordre dan
 
 1. Entrez l’URL de l’application obtenue à l’[étape 1](#step-1-get-the-url-for-the-application), puis sélectionnez **Suivant**.
 
-    ![Installation du logiciel : iOS](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Installation du logiciel : Téléphone](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Indiquez un **Éditeur**, un **Nom** et une **Description**. Vous pouvez éventuellement fournir une **Icône**. La **Catégorie** s’applique à l’application Portail d’entreprise. Une fois que vous avez terminé, sélectionnez **Suivant**.
 
@@ -121,13 +121,13 @@ Après avoir ajouté l’application, vous devez la déployer pour qu’elle soi
 
 ### <a name="deploy-for-ios"></a>Déployer pour iOS
 
-1. Dans l’écran des applications, sélectionnez l’application que vous avez créée. Sélectionnez ensuite le lien **Gérer le déploiement**.
+1. Dans l’écran des applications, sélectionnez l’application que vous avez créée. Sélectionnez ensuite le lien **Gérer le déploiement** .
 
     ![Gérer le déploiement](media/service-admin-mobile-intune/intune-deploy-ios1.png)
 
 1. Dans l’écran **Sélectionner des groupes** , vous pouvez choisir les groupes vers lesquels vous souhaitez déployer cette application. Sélectionnez **Suivant**.
 
-1. Dans l’écran **Action de déploiement** , vous pouvez choisir la façon dont vous souhaitez déployer cette application. Sélectionnez **Installation disponible** ou **Installation requise** pour rendre l’application disponible dans le Portail d’entreprise et permettre aux utilisateurs de l’installer à la demande. Après avoir effectué votre sélection, sélectionnez **Suivant**.
+1. Dans l’écran **Action de déploiement** , vous pouvez choisir la façon dont vous souhaitez déployer cette application. Sélectionnez **Installation disponible**ou **Installation requise**pour rendre l’application disponible dans le Portail d’entreprise et permettre aux utilisateurs de l’installer à la demande. Après avoir effectué votre sélection, sélectionnez **Suivant**.
 
     ![Action de déploiement](media/service-admin-mobile-intune/intune-deploy-ios2.png)
 
@@ -135,20 +135,20 @@ Après avoir ajouté l’application, vous devez la déployer pour qu’elle soi
 
     ![Gestion des applications mobiles](media/service-admin-mobile-intune/intune-deploy-ios3.png)
 
-1. Dans l’écran **Profil VPN**, vous pouvez sélectionner une stratégie s’il en existe une pour votre organisation. L’option **Aucun** est sélectionnée par défaut. Sélectionnez **Suivant**.
+1. Dans l’écran **Profil VPN** , vous pouvez sélectionner une stratégie s’il en existe une pour votre organisation. L’option **Aucun**est sélectionnée par défaut. Sélectionnez **Suivant**.
 
-1. Dans l’écran **Configuration des applications mobiles**, vous pouvez sélectionner une **Stratégie de configuration des applications** si vous en avez créé une. L’option **Aucun** est sélectionnée par défaut. Cette opération est facultative. Sélectionnez **Terminer**.
+1. Dans l’écran **Configuration des applications mobiles** , vous pouvez sélectionner une **Stratégie de configuration des applications** si vous en avez créé une. L’option **Aucun**est sélectionnée par défaut. Cette opération est facultative. Sélectionnez **Terminer**.
 
 Une fois l’application déployée, la mention **Oui** doit apparaître en regard de Déployé dans la page des applications.
 
 ### <a name="deploy-for-android"></a>Déployer pour Android
 
-1. Dans l’écran des applications, sélectionnez l’application que vous avez créée. Sélectionnez ensuite le lien **Gérer le déploiement**.
+1. Dans l’écran des applications, sélectionnez l’application que vous avez créée. Sélectionnez ensuite le lien **Gérer le déploiement** .
 
     ![Gérer le déploiement](media/service-admin-mobile-intune/intune-deploy-android1.png)
 1. Dans l’écran **Sélectionner des groupes** , vous pouvez choisir les groupes vers lesquels vous souhaitez déployer cette application. Sélectionnez **Suivant**.
 
-1. Dans l’écran **Action de déploiement** , vous pouvez choisir la façon dont vous souhaitez déployer cette application. Sélectionnez **Installation disponible** ou **Installation requise** pour rendre l’application disponible dans le Portail d’entreprise et permettre aux utilisateurs de l’installer à la demande. Après avoir effectué votre sélection, sélectionnez **Suivant**.
+1. Dans l’écran **Action de déploiement** , vous pouvez choisir la façon dont vous souhaitez déployer cette application. Sélectionnez **Installation disponible**ou **Installation requise**pour rendre l’application disponible dans le Portail d’entreprise et permettre aux utilisateurs de l’installer à la demande. Après avoir effectué votre sélection, sélectionnez **Suivant**.
 
     ![Action de déploiement](media/service-admin-mobile-intune/intune-deploy-android2.png)
 

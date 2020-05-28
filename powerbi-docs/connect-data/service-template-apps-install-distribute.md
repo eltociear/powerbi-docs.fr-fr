@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/19/2020
 ms.author: painbar
-ms.openlocfilehash: 762d88789bb68777886a126589802b9e8d854879
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a68c8a452752981b2526c450820e8d277f5c0b10
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347444"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693071"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installer et distribuer des applications modèles dans votre organisation
 
@@ -59,11 +59,19 @@ Pour installer, personnaliser et distribuer une application modèle, vous avez b
 
 ## <a name="connect-to-data"></a>Se connecter aux données
 
-1. Sélectionnez **Accéder à l’application**. La fenêtre **Démarrer avec votre nouvelle application** apparaît.
+1. Sélectionnez **Accéder à l’application**.
 
-   ![Bien démarrer avec votre nouvelle application](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+1. Dans la fenêtre **Démarrer avec votre nouvelle application**, sélectionnez **Explorer**.
 
-1. Cliquez sur **Se connecter**.
+   ![Écran de démarrage de l’application modèle](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+
+   L’application s’ouvre et présente des exemples de données.
+
+1. Sélectionnez le lien **Connecter vos données** dans la bannière en haut de la page.
+
+   ![Lien Connecter vos données de l’application GitHub](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+
+
     
     Cette opération ouvre une boîte de dialogue ou une série de boîtes de dialogue vous permettant de modifier la source de données de l’exemple de données en spécifiant votre propre source de données. Cela revient généralement à redéfinir les paramètres du jeu de données et les informations d’identification de la source de données. Consultez [Limitations connues](service-template-apps-overview.md#known-limitations).
     
@@ -71,19 +79,20 @@ Pour installer, personnaliser et distribuer une application modèle, vous avez b
 
    ![Boîtes de dialogue de connexion aux données](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Une fois que vous avez fini de renseigner les boîtes de dialogue de connexion, le processus de connexion démarre. Une bannière vous informe que vous affichez un exemple de données.
+    Une fois que vous avez fini de renseigner les boîtes de dialogue de connexion, le processus de connexion démarre. Une bannière vous informe que les données sont en cours d’actualisation et qu’en attendant, vous voyez des exemples de données.
 
     ![Affichage d’un exemple de données](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Attendez la fin de la connexion et de la mise à jour des données. Pour savoir quand ce processus s’est terminé, regardez l’indicateur de progression sur la ligne du jeu de données (nouvelle apparence) ou sur le curseur (ancienne apparence).
-
-   Lorsque l’actualisation des données et de la connexion est terminée, actualisez votre navigateur. La bannière vous informe à présent que vous devez mettre à jour l’application pour appliquer les modifications que vous apportez à l’application et les partager.
-
-    ![Personnaliser et partager l’application](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
+   Les données de votre rapport sont actualisées automatiquement une fois par jour, sauf si vous avez désactivé cela lors du processus de connexion. Vous pouvez également [configurer votre propre planification de l’actualisation](./refresh-scheduled-refresh.md) pour mettre à jour les données du rapport comme vous le souhaitez.
 
 ## <a name="customize-and-share-the-app"></a>Personnaliser et partager l’application
 
-Une fois que vous avez actualisé le navigateur après l’actualisation des données et la connexion aux données, vous voyez maintenant l’espace de travail associé à l’application. À ce stade, vous pouvez modifier tous les artefacts ici, comme vous le feriez dans n’importe quel espace de travail. Toutefois, sachez que toutes les modifications que vous apportez seront remplacées lorsque vous mettrez à jour l’application avec une nouvelle version, sauf si vous enregistrez les éléments modifiés sous des noms différents. [Consultez des détails sur le remplacement](#overwrite-behavior).
+Une fois que vous êtes connecté à vos données et que l’actualisation des données est terminée, vous pouvez personnaliser les rapports et les tableaux de bord inclus dans les applications ainsi que partager l’application avec vos collègues. Rappelez-vous cependant que toutes les modifications que vous apportez seront remplacées quand vous mettrez à jour l’application avec une nouvelle version, sauf si vous enregistrez les éléments modifiés sous des noms différents. [Consultez des détails sur le remplacement](#overwrite-behavior).
+
+Pour personnaliser et partager votre application, sélectionnez l’icône de crayon dans le coin supérieur droit de la page.
+
+![Modifier une application](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 Pour obtenir des informations sur la modification des artefacts dans l’espace de travail, consultez
 * [Visite guidée de l’éditeur de rapport dans Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
@@ -132,4 +141,4 @@ Si vous avez initialement téléchargé l’application à partir d’AppSource,
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Créer des espaces de travail avec vos collègues dans Power BI](../collaborate-share/service-create-workspaces.md)
+[Créer des espaces de travail avec vos collègues dans Power BI](../collaborate-share/service-create-the-new-workspaces.md)

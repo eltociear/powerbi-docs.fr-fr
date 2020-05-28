@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d70b291b4ff2b157c15967d602cfbee8e12965a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1d37225e1de1ffdf0617a84c3b0514d32494c563
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144333"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693949"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Créer des espaces de travail classiques dans Power BI
 
@@ -22,30 +22,30 @@ Dans Power BI, vous pouvez créer des *espaces de travail*, qui sont des endroit
 
 **Le saviez-vous ?** Power BI offre une nouvelle expérience de l’espace de travail, qui est désormais l’expérience par défaut. Consultez [Organiser le travail dans les nouveaux espaces de travail ](service-new-workspaces.md) pour plus d’informations sur les nouveaux espaces de travail. Prêt à migrer votre espace de travail classique ? Consultez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI](service-upgrade-workspaces.md) pour plus d’informations.
 
-Quand vous créez un espace de travail classique, vous créez un groupe Office 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Office 365. Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres ou administrateurs. Dans l’espace de travail, vous pouvez tous collaborer sur des tableaux de bord, des rapports et d’autres articles que vous prévoyez de publier pour un public plus large. Toutes les personnes que vous ajoutez à un espace de travail doivent avoir une licence Power BI Pro. 
+Quand vous créez un espace de travail classique, vous créez un groupe Microsoft 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Microsoft 365. Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres ou administrateurs. Dans l’espace de travail, vous pouvez tous collaborer sur des tableaux de bord, des rapports et d’autres articles que vous prévoyez de publier pour un public plus large. Toutes les personnes que vous ajoutez à un espace de travail doivent avoir une licence Power BI Pro.
 
 ## <a name="video-apps-and-workspaces"></a>Vidéo : Applications et espaces de travail
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Créer un espace de travail classique basé sur un groupe Office 365
+## <a name="create-a-classic-workspace-based-on-a-microsoft-365-group"></a>Créer un espace de travail classique basé sur un groupe Microsoft 365
 
-Quand vous créez un espace de travail, il est basé sur un groupe Office 365.
+Quand vous créez un espace de travail, il est basé sur un groupe Microsoft 365.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-Quand vous le créez, vous devez attendre environ une heure pour qu’il se propage à Office 365. 
+Quand vous le créez, vous devez attendre environ une heure pour qu’il se propage à Microsoft 365.
 
-### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Ajouter une image à votre espace de travail Office 365 (facultatif)
+### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Ajouter une image à votre espace de travail Microsoft 365 (facultatif)
 Par défaut, Power BI crée un petit cercle de couleur pour votre application, contenant les initiales de celle-ci. Vous pouvez le personnaliser avec une image. Pour ajouter une image, vous avez besoin d’une licence Exchange Online.
 
 1. Sélectionnez **Espaces de travail**, sélectionnez **Plus d’options** (...) en regard du nom de l’espace de travail, puis choisissez **Membres**. 
    
      ![Sélectionner les membres de l’espace de travail](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
-    Le compte Office 365 Outlook pour l’espace de travail s’ouvre dans une nouvelle fenêtre de navigateur.
+    Le compte Microsoft 365 Outlook pour l’espace de travail s’ouvre dans une nouvelle fenêtre de navigateur.
 2. Sélectionnez le crayon **Modifier**.
    
-     ![Icône du crayon d’Office 365](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![Icône de crayon Microsoft 365](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Sélectionnez l’image d’appareil photo et recherchez l’image que vous souhaitez utiliser.
    
      ![Sélectionner l’image d’appareil photo](media/service-create-workspaces/power-bi-workspace-old-camera.png)
@@ -54,7 +54,7 @@ Par défaut, Power BI crée un petit cercle de couleur pour votre application, c
 
 4. Sélectionnez **OK**, puis **Enregistrer**.
    
-    L’image remplace le cercle de couleur dans la fenêtre Office 365 Outlook. 
+    L’image remplace le cercle de couleur dans la fenêtre Microsoft 365 Outlook.
    
      ![Image personnalisée](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    

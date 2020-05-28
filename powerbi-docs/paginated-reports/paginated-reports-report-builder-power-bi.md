@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 11/27/2019
-ms.openlocfilehash: 55e74809b47b2906edac9a06f701aa30b3498f80
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 05/14/2020
+ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144751"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565503"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -76,7 +76,7 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 
 - Épinglage des pages de rapport ou des visuels sur des tableaux de bord Power BI. Vous pouvez toujours épingler des visualisations à un tableau de bord Power BI à partir d’un rapport paginé local sur un serveur Power BI Report Server ou un serveur de rapports Reporting Services. Pour plus d’informations, consultez [Épingler les éléments Reporting Services aux tableaux de bord Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Explorateurs de documents.
-- Sous-rapports et rapports d’extraction.  Vous pouvez cependant envisager d’utiliser des paramètres d’URL avec des rapports paginés pour réaliser des scénarios d’extraction.
+- Rapports d’extraction.  Vous pouvez envisager d’utiliser des paramètres d’URL avec des rapports paginés pour les scénarios d’extraction.
 - Sources de données et jeux de données partagés.
 
  
@@ -85,4 +85,4 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 - [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
-- [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](../developer/embed-paginated-reports-customers.md)
+- [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](../developer/embedded/embed-paginated-reports-customers.md)

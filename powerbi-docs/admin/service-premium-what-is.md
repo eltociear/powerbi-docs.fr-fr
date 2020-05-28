@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c206e35651ef28c03151c6c5af8e5bae453d5d2b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274371"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438243"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -59,6 +59,7 @@ Avec Power BI Premium, vous bénéficiez de *capacités dédiées*. Contraireme
 * Classeurs Excel (sauf si les données sont d’abord importées dans Power BI Desktop)
 * [Transmettre des jeux de données](/rest/api/power-bi/pushdatasets)
 * [Jeux de données en streaming](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Q&R](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail appelés **espaces de travail** pour permettre la collaboration. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail classiques.
 
@@ -68,7 +69,7 @@ Comme nous l’avons vu dans la section [Abonnements et gestion des licences](#s
 
 Le traitement est effectué par un nombre défini de v-cores, répartis équitablement entre le back-end et le front-end.
 
-Les **v-cores back-end** gèrent l’essentiel des fonctionnalités Power BI : traitement des requêtes, gestion du cache, exécution des services R, actualisation des modèles, traitement en langage naturel (questions-réponses), et rendu côté serveur des rapports et des images. Les v-cores back-end reçoivent une quantité fixe de mémoire, qui est principalement utilisée pour héberger les modèles, également appelés « jeux de données actifs ».
+Les **v-cores back-end** gèrent l’essentiel des fonctionnalités Power BI : traitement des requêtes, gestion du cache, exécution des services R, actualisation des modèles et rendu côté serveur des rapports et des images. Les v-cores back-end reçoivent une quantité fixe de mémoire, qui est principalement utilisée pour héberger les modèles, également appelés « jeux de données actifs ».
 
 Les **v-cores front-end** assurent la gestion des documents du service web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3fdb969888d023ca9683c2460086f2fb8157c3c3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a48d83223ab02d2f9f043dde2facebd6ad73c27a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83304550"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565669"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -82,7 +82,7 @@ Si un jeu de données fait partie d’un ou plusieurs [packs de contenu d’orga
 
 ## <a name="delete-a-workspace"></a>Supprimer un espace de travail
 > [!WARNING]
-> Quand vous créez un espace de travail, vous créez un groupe Office 365. Quand vous supprimez un espace de travail, vous supprimez ce groupe Office 365. Cela signifie que le groupe est également supprimé des autres produits Office 365 comme SharePoint et Microsoft Teams.
+> Quand vous créez un espace de travail, vous créez un groupe Microsoft 365. Quand vous supprimez un espace de travail, vous supprimez ce groupe Microsoft 365. Cela signifie que le groupe est également supprimé des autres produits Microsoft 365, comme SharePoint et Microsoft Teams.
 >
 >
 
