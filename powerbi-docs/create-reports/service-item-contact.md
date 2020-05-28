@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3f0d60bb780b980d3840072568e30d6b4e09da34
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5330b4c42794f0fa3110cef57f6d62ead0381e52
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349004"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561785"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Définir les informations de contact pour les rapports et les tableaux de bord dans le service Power BI
 Cet article vous explique comment définir les informations de contact d'un tableau de bord ou d'un rapport dans le service Power BI.
@@ -24,11 +24,11 @@ Cet article vous explique comment définir les informations de contact d'un tabl
 
 Vous pouvez ajouter plusieurs utilisateurs ou groupes au contact d'un élément. Ce peut être :
 * Une personne
-* Un groupe Office 365
+* Un groupe Microsoft 365
 * Un groupe de sécurité à extension messagerie
 * Une liste de distribution
 
-Par défaut, la personne qui crée un rapport ou tableau de bord est la personne à contacter. Si vous définissez une valeur, elle remplace la valeur par défaut. Vous pouvez bien sûr supprimer toutes les personnes ou tous les groupes de la liste de contacts. Dans ce cas, pour les espaces de travail classiques, le groupe Office 365 s’affiche pour l'espace de travail. Pour les espaces de travail de la nouvelle apparence, la liste de [contacts de l'espace de travail](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) sera utilisée. Si la liste des contacts de l'espace de travail n'est pas définie, les administrateurs de l'espace de travail sont affichés.
+Par défaut, la personne qui crée un rapport ou tableau de bord est la personne à contacter. Si vous définissez une valeur, elle remplace la valeur par défaut. Vous pouvez bien sûr supprimer toutes les personnes ou tous les groupes de la liste de contacts. Dans ce cas, pour les espaces de travail classiques, le groupe Microsoft 365 pour l’espace de travail apparaît. Pour les espaces de travail de la nouvelle apparence, la liste de [contacts de l'espace de travail](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) sera utilisée. Si la liste des contacts de l'espace de travail n'est pas définie, les administrateurs de l'espace de travail sont affichés.
 
 Les informations de contact sont affichées aux personnes qui consultent l'élément. 
 

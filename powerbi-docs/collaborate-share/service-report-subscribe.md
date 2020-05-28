@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9ee04211c44fb342e4baf904bcfa73bab489a1ba
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273635"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438220"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -105,12 +105,13 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 
 ### <a name="general"></a>Général
 
-- Dans de rares occasions, la remise des abonnements par e-mail à leurs destinataires peut prendre plus de quinze minutes. Si cela se produit, nous vous recommandons d’exécuter l’actualisation de vos données et votre abonnement par e-mail à des moments différents pour garantir une remise en temps voulu. Si le problème persiste, contactez le support Power BI.
-- Pour éviter que les e-mails d’abonnement soient dirigés vers votre dossier de courrier indésirable, ajoutez l’alias d’e-mail Power BI [no-reply-powerbi@microsoft.com](mailto:no-reply-powerbi@microsoft.com)) à vos contacts. Si vous utilisez Microsoft Outlook, cliquez avec le bouton droit sur l’alias et sélectionnez **Ajouter aux contacts Outlook**.
+- Comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Nous mettons tout en œuvre pour traiter et fournir tous les abonnements le plus rapidement possible. Toutefois, il peut arriver que lors des pics de demande vous constatiez un délai plus long dû au nombre d’abonnements que Power BI peut envoyer simultanément. La plupart des clients ne devraient pas observer un délai de plus de 15 minutes pour le traitement et l’envoi des rapports. Cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si vous observez un délai aussi long, vérifiez d’abord que l’adresse `no-reply-powerbi@microsoft.com` figure dans la liste verte de votre fournisseur de messagerie.  Si c’est le cas, contactez le support technique Power BI pour obtenir de l’aide.
 - Actuellement, les abonnements par e-mail pour les rapports et les tableaux de bord utilisant des jeux de données de connexion active ne sont pas pris en charge en cas d’abonnement d’utilisateurs autres que vous-même, excepté pour les rapports paginés. Vous pouvez abonner d’autres utilisateurs à un rapport paginé à l’aide de votre contexte de sécurité. Découvrez-en plus sur l’[abonnement à des rapports paginés](../consumer/paginated-reports-subscriptions.md).
 - Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois. Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.
 - Si vous ne recevez pas les e-mails d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir.
 - Si votre tableau de bord ou rapport est dans une capacité Premium, vous pouvez utiliser des alias de messagerie de groupe pour les abonnements, au lieu d’abonner vos collègues à une seule adresse e-mail à la fois. Les alias sont basés sur l’annuaire Active Directory actuel.
+- Si votre contenu n’est pas dans une capacité Premium, seuls les utilisateurs Power BI Pro peuvent recevoir des abonnements par e-mail. 
+- Les abonnements ne prennent pas en charge les signets pour l’instant.
 
 ### <a name="dashboards"></a>Tableaux de bord
 
@@ -118,7 +119,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - Dans de rares occasions, la remise des abonnements par e-mail à leurs destinataires peut prendre plus de quinze minutes. Si cela se produit, nous vous recommandons d’exécuter l’actualisation de vos données et votre abonnement par e-mail à des moments différents pour garantir une remise en temps voulu. Si le problème persiste, contactez le support Power BI.
 - Pour les abonnements par e-mail aux tableaux de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, elles ne s’affichent pas.
 - Pour les abonnements aux tableaux de bord, certains types de mosaïques ne sont pas encore pris en charge, notamment les vignettes de streaming, de vidéo et de contenu web personnalisé.
-- Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui, *sauf si* le tableau de bord se trouve dans un espace de travail ou une application Premium. Par conséquent, si vous êtes aaron@contoso.com, vous pouvez partager avec anyone@fabrikam.com, mais vous ne pouvez pas encore abonner anyone@fabrikam.com et il ne peut pas s’abonner au contenu partagé.
+- Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui, *sauf si* le tableau de bord se trouve dans un espace de travail ou une application Premium. Par conséquent, si vous êtes `aaron@contoso.com`, vous pouvez partager avec `anyone@fabrikam.com`, mais vous ne pouvez pas encore abonner `anyone@fabrikam.com` et il ne peut pas s’abonner au contenu partagé.
 
 ### <a name="reports"></a>Rapports
 

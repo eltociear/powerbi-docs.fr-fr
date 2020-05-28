@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4995671fe5a3a4af0e74ce97d3227f73f005dc3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 62d0282af47b0d57a0b9ac307b422191b440b45c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348525"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564088"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail Power BI
 Après avoir [créé un espace de travail dans Power BI](../collaborate-share/service-create-distribute-apps.md), vous pouvez stocker vos fichiers Excel, CSV et Power BI Desktop dans OneDrive Entreprise pour votre espace de travail Power BI. Vous pouvez continuer à mettre à jour les fichiers que vous stockez dans OneDrive. Ces mises à jour sont alors répercutées automatiquement dans les rapports et tableaux de bord Power BI basés sur les fichiers. 
 
 > [!NOTE]
-> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](../collaborate-share/service-create-the-new-workspaces.md)
+> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Microsoft 365. Vous ne créez plus automatiquement un groupe Microsoft 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](../collaborate-share/service-create-the-new-workspaces.md)
 
 L’ajout de fichiers à votre espace de travail est un processus en deux étapes : 
 
@@ -34,10 +34,10 @@ L’ajout de fichiers à votre espace de travail est un processus en deux étape
 1. Dans le service Power BI, sélectionnez la flèche située en regard de Espaces de travail, puis sélectionnez les points de suspension ( **…** ) en regard du nom de votre espace de travail. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
-2. Sélectionnez **Fichiers** pour ouvrir OneDrive Entreprise pour votre espace de travail sur Office 365.
+2. Sélectionnez **Fichiers** pour ouvrir OneDrive Entreprise pour votre espace de travail sur Microsoft 365.
    
    > [!NOTE]
-   > Si vous ne voyez pas **Fichiers** dans le menu de l’espace de travail, sélectionnez **Membres** pour ouvrir OneDrive Entreprise pour votre espace de travail. Sélectionnez ici **Fichiers**. Office 365 définit un emplacement de stockage OneDrive pour les fichiers de l’espace de travail de groupe de votre application. Ce processus peut prendre un certain temps. 
+   > Si vous ne voyez pas **Fichiers** dans le menu de l’espace de travail, sélectionnez **Membres** pour ouvrir OneDrive Entreprise pour votre espace de travail. Sélectionnez ici **Fichiers**. Microsoft 365 définit un emplacement de stockage OneDrive pour les fichiers de l’espace de travail de groupe de votre application. Ce processus peut prendre un certain temps.
    > 
    > 
 3. Ici, vous pouvez charger des fichiers sur OneDrive Entreprise pour votre espace de travail. Sélectionnez **Charger**et accédez à vos fichiers.
@@ -45,7 +45,7 @@ L’ajout de fichiers à votre espace de travail est un processus en deux étape
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Importer des classeurs Excel en que jeux de données ou classeurs Excel Online
-Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espace de travail, vous avez deux possibilités. Vous pouvez soit : 
+Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espace de travail, vous avez deux possibilités. Vous pouvez : 
 
 * [Importer les données du classeur Excel en tant que jeu de données](service-get-data-from-files.md). Puis vous en servir pour générer des rapports et des tableaux de bord, que vous pouvez ensuite afficher dans un navigateur web et sur des appareils mobiles.
 * [Vous connecter à des classeurs Excel complets dans Power BI](service-excel-workbook-files.md) et les afficher exactement tels qu’ils apparaissent dans Excel Online.
@@ -55,7 +55,7 @@ Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espac
 2. Sélectionnez **Obtenir des données** en bas du volet de navigation. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
-3. Dans la zone **Fichiers**, sélectionnez **Obtenir**.
+3. Dans la zone **Fichiers** , sélectionnez **Obtenir**.
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Sélectionnez **OneDrive** - *Nom de l’espace de travail*.
@@ -79,5 +79,5 @@ Maintenant que vos fichiers se trouvent sur OneDrive Entreprise pour votre espac
 * [Créer des applications et des espaces de travail dans Power BI](../collaborate-share/service-create-distribute-apps.md)
 * [Importer des données de classeurs Excel](service-get-data-from-files.md)
 * [Se connecter à des classeurs Excel tout entiers](service-excel-workbook-files.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+* D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
 * Vous souhaitez formuler des commentaires ? Consultez la page des [suggestions concernant Power BI](https://ideas.powerbi.com/forums/265200-power-bi).

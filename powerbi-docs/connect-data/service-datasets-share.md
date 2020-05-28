@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ba0e04ff4cd56566f7d33445fafa7c8cfcc6b7ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4114287099300c371a6b02961a968702acb98f92
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284793"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565457"
 ---
 # <a name="share-a-dataset-preview"></a>Partager un jeu de données (préversion)
 
@@ -24,7 +24,7 @@ En tant que créateur de *modèles de données* dans Power BI Desktop, vous cr�
 
 1. Vous commencez par créer un fichier .pbix avec un modèle de données dans Power BI Desktop. Si vous planifiez de proposer ce jeu de données pour que d’autres personnes génèrent des rapports, vous ne concevez même pas un rapport dans le fichier .pbix.
 
-    Enregistrer le fichier .pbix dans un groupe Office 365 constitue une bonne pratique.
+    Une bonne pratique est d’enregistrer le fichier .pbix dans un groupe Microsoft 365.
 
 1. Publiez le fichier .pbix dans un [espace de travail de nouvelle expérience](../collaborate-share/service-create-the-new-workspaces.md) dans le service Power BI.
     
@@ -54,4 +54,4 @@ Quand vous avez un jeu de données partagé dans votre espace de travail, vous d
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

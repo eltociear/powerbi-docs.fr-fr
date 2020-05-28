@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/19/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb1b96f46761bf0c724abb8e36de8bb93634fdc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f84fcc4b32468ab8ffddbb593ae97ea8fb20442a
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347650"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693633"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -99,6 +99,7 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * InterSystems IRIS (bêta)
 * Jethro (bêta)
 * Kyligence
+* Bases de données Linkar de style choix / multivaleurs (bêta)
 * MarkLogic
 
 > [!NOTE]
@@ -139,6 +140,7 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
+* Azure Time Series Insights (bêta)
 
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
@@ -187,12 +189,13 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Industrial App Store
 * Intune Data Warehouse (bêta)
 * Microsoft Graph Security (Bêta)
+* Projectplace pour Power BI (bêta)
 * Product Insights (bêta)
 * Quick Base
 * TeamDesk (bêta)
-* Analyse du temps de travail (bêta)
-* Projectplace pour Power BI (bêta)
 * Webtrends Analytics (bêta)
+* Witivio (bêta)
+* Analyse du temps de travail (bêta)
 * Zoho Creator (bêta)
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
@@ -215,7 +218,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
-* BI360 - Budgets & Rapports financiers (bêta)
+* Solver
 * Cognite Data Fusion (bêta)
 * FHIR
 * Information Grid (bêta)
@@ -224,15 +227,14 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Paxata
 * QubolePresto (bêta)
 * Roamler (bêta)
+* Shortcuts Business Insights (bêta)
 * Siteimprove
 * SurveyMonkey (bêta)
+* Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (bêta)
 * Vena (bêta)
 * Workforce Dimensions (bêta)
 * Zucchetti HR Infinity (Beta)
-* Tenforce (Smart)List
-* Shortcuts Business Insights (bêta)
-* Vessel Insight (bêta)
 * Requête vide
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.

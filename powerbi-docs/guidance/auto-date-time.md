@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a143a9b158d8a00fc129953a601f9e4c8f19875f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 69084048b46c77452bf94f04fd79a97c4f09af5b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279707"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565991"
 ---
 # <a name="auto-datetime-guidance-in-power-bi-desktop"></a>Conseils sur les dates/heures automatiques dans Power BI Desktop
 
@@ -34,7 +34,10 @@ La liste à puces suivante décrit les considérations, et les éventuelles limi
     C'est pourquoi il est important d’appliquer les filtres ou le regroupement à la colonne **Année**. En cas de descente dans la hiérarchie, les données seront filtrées par année, sauf si le niveau **Année** a été intentionnellement supprimé. S'il n'y a aucun filtre ou regroupement par année, un regroupement par mois, par exemple, peut résumer les valeurs de toutes les années pour ce mois.
 - **Filtrage de la date dans une seule table :** Comme chaque colonne de date produit sa propre table de date/heure automatique (masquée), il n'est pas possible d'appliquer un filtre horaire à une table et de le propager à plusieurs tables de modèles. Le filtrage de cette façon est une exigence commune de modélisation lorsqu'il s'agit d'établir des rapports sur plusieurs sujets (tableaux de type fait) comme des ventes et un budget des ventes. Lors de l'utilisation de la fonctionnalité de date/heure automatique, l'auteur du rapport devra appliquer des filtres à chacune des différentes colonnes de date.
 - **Taille du modèle :** Chaque colonne de date qui génère une table de date/heure automatique masquée entraîne une augmentation de la taille du modèle et un allongement du délai d’actualisation des données.
-- **Autres outils de création de rapports :** Il n’est pas possible d’utiliser des tables de date/heure automatique quand [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) est utilisé ou que vous vous connectez au modèle avec des concepteurs de rapports non Power BI.
+- **Autres outils de création de rapports :** Il n’est pas possible d’utiliser des tables de date/heure automatiques dans les cas suivants :
+  - Utilisation de [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md).
+  - Utilisation des concepteurs de requêtes Analysis Services pour des rapports paginés Power BI.
+  - Connexion au modèle avec des concepteurs de rapports non-Power BI.
 
 ## <a name="recommendations"></a>Recommandations
 
