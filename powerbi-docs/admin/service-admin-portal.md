@@ -10,22 +10,22 @@ ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8ff022c09fc58f5ebeadbb869039c00c6dd28533
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b08184e92730bd3a42a91424883d07cecec82549
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275590"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564469"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
 Le portail d’administration vous permet de gérer un *client* Power BI pour votre organisation. Le portail comprend notamment des métriques d’utilisation, un accès au Centre d’administration Microsoft 365 et des paramètres.
 
-Le portail d’administration est accessible dans son intégralité à tous les utilisateurs qui sont administrateurs généraux dans Office 365 ou qui se sont vus attribuer le rôle d’administrateur de service Power BI. Si vous n’appartenez pas à l’un de ces rôles, seuls les **Paramètres de capacité** s’affichent sur le portail. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md).
+Le portail d’administration est accessible dans son intégralité à tous les utilisateurs qui sont administrateurs généraux ou qui se sont vus attribuer le rôle d’administrateur de service Power BI. Si vous n’appartenez pas à l’un de ces rôles, seuls les **Paramètres de capacité** s’affichent sur le portail. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Accès au portail d’administration
 
-Pour obtenir l’accès au portail d’administration Power BI, votre compte doit être un compte **d’Administrateur global** dans Office 365 ou Azure Active Directory (Azure AD), ou doit avoir été assigné au rôle d’Administrateur de Service Power BI. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md). Pour accéder au portail d’administration Power BI, procédez comme suit.
+Pour obtenir l’accès au portail d’administration Power BI, votre compte doit être un compte **d’Administrateur général** dans Microsoft 365 ou Azure Active Directory (Azure AD), ou le rôle d’Administrateur de service Power BI doit lui avoir été assigné. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md). Pour accéder au portail d’administration Power BI, procédez comme suit.
 
 1. Sélectionnez l’icône des paramètres représentant une roue dentée, située en haut à droite de l’écran Power BI.
 
@@ -85,7 +85,7 @@ Ces informations vous procurent des insights tangibles sur la façon dont les em
 
 ## <a name="control-usage-metrics"></a>Contrôler les métriques d’utilisation
 
-Les rapports de métriques d’utilisation sont une fonctionnalité qu’un administrateur Power BI ou Office 365 peut activer ou désactiver. Les administrateurs ont un contrôle granulaire sur l’accès des utilisateurs aux métriques d’utilisation. Ils sont **Activés** par défaut pour tous les utilisateurs de l’organisation.
+Les rapports de métriques d’utilisation sont une fonctionnalité qu’un administrateur Power BI ou Microsoft 365 peut activer ou désactiver. Les administrateurs ont un contrôle granulaire sur l’accès des utilisateurs aux métriques d’utilisation. Ils sont **Activés** par défaut pour tous les utilisateurs de l’organisation.
 
 Les administrateurs peuvent aussi déterminer si les créateurs de contenu peuvent voir les données par utilisateur dans les métriques d’utilisation. 
 
@@ -189,10 +189,10 @@ Les espaces de travail sont des emplacements où les utilisateurs peuvent collab
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
 
-Pour les espaces de travail classiques basés sur les groupes Office 365, l’administration continue à se produire dans le portail d’administration Office 365 et Azure Active Directory.
+Pour les espaces de travail classiques basés sur les groupes Microsoft 365, l’administration continue à s’effectuer dans le portail d’administration Microsoft 365 et Azure Active Directory.
 
 > [!NOTE]
-> Par défaut, le paramètre **Créer des espaces de travail (nouvelle expérience d’espace de travail)** est défini pour autoriser uniquement les utilisateurs pouvant créer des groupes Office 365 à créer les nouveaux espaces de travail Power BI. Veillez à définir une valeur dans le portail d’administration Power BI pour garantir que les utilisateurs appropriés peuvent les créer.
+> Par défaut, le paramètre **Créer des espaces de travail (nouvelle expérience d’espace de travail)** est défini pour autoriser uniquement les utilisateurs pouvant créer des groupes Microsoft 365 à créer les nouveaux espaces de travail Power BI. Veillez à définir une valeur dans le portail d’administration Power BI pour garantir que les utilisateurs appropriés peuvent les créer.
 
 **Liste des espaces de travail**
 
@@ -334,7 +334,7 @@ L’image suivante montre l’option **Toute mon organisation** lors de la créa
 
 ### <a name="create-template-apps-and-organizational-content-packs"></a>Créer des modèles d’applications et des packs de contenu d’organisation
 
-Les utilisateurs peuvent créer des modèles d’applications et des packs de contenu d’organisation qui utilisent des jeux de données basés sur une même source de données dans Power BI Desktop. En savoir plus sur les [applications modèles](../template-content-pack-authoring.md).
+Les utilisateurs peuvent créer des modèles d’applications et des packs de contenu d’organisation qui utilisent des jeux de données basés sur une même source de données dans Power BI Desktop. En savoir plus sur les [applications modèles](../connect-data/service-template-apps-create.md).
 
 ### <a name="push-apps-to-end-users"></a>Effectuer une transmission de type push des applications pour les utilisateurs finaux
 
@@ -625,7 +625,3 @@ Consultez [Contenu proposé](#featured-content) dans cet article pour obtenir de
 [Audit de Power BI dans votre organisation](service-admin-auditing.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-
-
-

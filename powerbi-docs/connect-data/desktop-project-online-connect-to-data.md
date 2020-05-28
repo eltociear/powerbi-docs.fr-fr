@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4244253faa3160b515a02b598988072117d982ed
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291923"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563049"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Se connecter à des données Project Online via Power BI Desktop
 Vous pouvez vous connecter à des données dans Project Online au moyen de Power BI Desktop.
 
-## <a name="step-1-download-power-bi-desktop"></a>Étape 1 : télécharger Power BI Desktop
+## <a name="step-1-download-power-bi-desktop"></a>Étape 1 : Télécharger Power BI Desktop
 1. [Téléchargez Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662), puis exécutez le programme d’installation pour installer **Power BI Desktop** sur votre ordinateur.
 
-## <a name="step-2-connect-to-project-online-with-odata"></a>Étape 2 : se connecter à Project Online avec OData
+## <a name="step-2-connect-to-project-online-with-odata"></a>Étape 2 : Se connecter à Project Online avec OData
 1. Ouvrez **Power BI Desktop**.
 2. Dans l’écran de *bienvenue*, sélectionnez **Obtenir des données**.
 3. Choisissez **Flux OData**, puis sélectionnez **Se connecter**.
@@ -35,7 +35,7 @@ Vous pouvez vous connecter à des données dans Project Online au moyen de Power
 
     `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 
-5. Power BI Desktop vous invite à vous authentifier avec votre compte Office 365. Sélectionnez Compte professionnel, puis entrez vos informations d’identification.
+5. Power BI Desktop vous invite à vous authentifier avec votre compte professionnel ou scolaire. Sélectionnez Compte professionnel, puis entrez vos informations d’identification.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 

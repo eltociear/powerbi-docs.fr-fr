@@ -1,5 +1,5 @@
 ---
-title: Effectuer le suivi de l’intégrité du service Power BI dans Office 365
+title: Effectuer le suivi de l’intégrité du service Power BI dans Microsoft 365
 description: Découvrez comment voir l’intégrité historique et actuelle du service dans le Centre d’administration Microsoft 365.
 author: kfollis
 ms.reviewer: ''
@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9d0ed841da3f398b8e0a8dc0a35ed040ccf3cab6
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3498b893d7916c37d21e66908cbea4e6a919f978
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83139734"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563709"
 ---
-# <a name="track-power-bi-service-health-in-office-365"></a>Effectuer le suivi de l’intégrité du service Power BI dans Office 365
+# <a name="track-power-bi-service-health-in-microsoft-365"></a>Effectuer le suivi de l’intégrité du service Power BI dans Microsoft 365
 
 Le centre d’administration Microsoft 365 fournit des outils importants pour les administrateurs Power BI. Les outils incluent des informations actuelles et historiques sur l’intégrité du service. Pour accéder aux informations sur l’intégrité du service, vous devez avoir un des rôles suivants :
 
 * Administrateur de services fédérés Power BI
 
-* Administrateur général d’Office 365
+* Administrateur général
 
 Pour plus d’informations sur les rôles, voir [Rôles d’administrateur liés à Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 

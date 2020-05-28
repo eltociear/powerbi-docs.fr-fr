@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 9e9ed930cc557250a9e1702d6010536ed069cd7b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: afa8513267be4ec2de18a9adda7995c88f4f2aa8
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129510"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438036"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -36,17 +36,17 @@ Le tableau suivant décrit les différents rôles liés à l’administration de
 
 | **Type d’administrateur** | **Étendue d’administration** | **Étendue Power BI** |
 | --- | --- | --- |
-| Administrateur général d’Office 365 | Office 365 | Peut gérer tous les aspects d’un client Power BI et d’autres services. |
-| Administrateur de facturation Office 365 | Office 365 | Peut acquérir des licences Power BI par le biais d’abonnements Office 365. |
+| Administrateur général | Microsoft 365 | Peut gérer tous les aspects d’un client Power BI et d’autres services. |
+| Administrateur de facturation | Microsoft 365 | Peut acquérir des licences Power BI par le biais d’abonnements Office 365. |
 | Administrateur de services fédérés Power BI | Client Power BI | A un contrôle total sur un client Power BI et ses fonctionnalités d’administration (à l’exception des licences). |
 | Administrateur de capacité Power BI Premium | Une seule capacité Premium | A un contrôle total sur une capacité Premium et ses fonctionnalités d’administration. |
 | Administrateur de capacité Power BI Embedded | Une seule capacité Embedded | A un contrôle total sur une capacité Embedded et ses fonctionnalités d’administration. |
 
-Les administrateurs généraux d’Office 365 et d’Azure Active Directory disposent de droits d’administrateur dans Power BI. Un administrateur général d’Office 365 peut affecter d’autres utilisateurs au rôle d’administrateur du service Power BI, qui n’accorde des droits d’administration que sur les fonctionnalités de Power BI.
+Les administrateurs généraux dans Microsoft 365 et Azure Active Directory disposent de droits d’administrateur dans Power BI. Un administrateur général peut affecter d’autres utilisateurs au rôle d’administrateur du service Power BI, ce qui n’accorde des droits d’administration que sur les fonctionnalités de Power BI.
 
 Les administrateurs du service Power BI ont accès au portail d’administration de Power BI, qui comporte divers paramètres au niveau du client concernant les fonctionnalités, la sécurité et le monitoring. Ils peuvent accéder à toutes les ressources d’un client Power BI. Dans la plupart des cas, ils identifient les problèmes, puis assurent le suivi avec les propriétaires des ressources pour effectuer des actions correctives.
 
-Le rôle d’administrateur du service Power BI n’accorde pas la possibilité d’affecter des licences aux utilisateurs ou de consulter les journaux d’audit dans Office 365. Par conséquent, les utilisateurs qui sont seulement membres du rôle d’administrateur du service Power BI ne peuvent pas à l’heure actuelle assurer la tâche d’administration de Power BI.
+Le rôle d’administrateur du service Power BI n’accorde pas la possibilité d’attribuer des licences aux utilisateurs ou de consulter les journaux d’audit dans Microsoft 365. Par conséquent, les utilisateurs qui sont seulement membres du rôle d’administrateur du service Power BI ne peuvent pas à l’heure actuelle assurer la tâche d’administration de Power BI.
 
 ## <a name="administrative-tasks"></a>Tâches d’administration
 

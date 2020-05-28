@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 4524e7c6cb8297f3c9bf71284140ddc31b38e33f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275406"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564383"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -45,9 +45,9 @@ La ligne en pointillés dans l’image de cluster **principal**, ci-dessus, clar
 
 ## <a name="user-authentication"></a>Authentification utilisateur
 
-Power BI utilise Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) pour authentifier les utilisateurs qui se connectent au service Power BI et, à son tour, utilise les informations d’identification de connexion Power BI chaque fois qu’un utilisateur essaie d’accéder à des ressources qui nécessitent une authentification. Les utilisateurs se connectent au service Power BI à l’aide de l’adresse e-mail utilisée pour créer leur compte Power BI. Power BI utilise cette adresse e-mail de connexion comme *nom d’utilisateur effectif*, qui est transmis aux ressources chaque fois qu’un utilisateur essaie de se connecter aux données. Le *nom d’utilisateur effectif* est ensuite mappé à un *nom d’utilisateur principal* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) et mis en correspondance avec le compte de domaine Windows associé, auquel l’authentification est appliquée.
+Power BI utilise Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) pour authentifier les utilisateurs qui se connectent au service Power BI et, à son tour, utilise les informations d’identification de connexion Power BI chaque fois qu’un utilisateur essaie d’accéder à des ressources qui nécessitent une authentification. Les utilisateurs se connectent au service Power BI à l’aide de l’adresse e-mail utilisée pour créer leur compte Power BI. Power BI utilise cette adresse e-mail de connexion comme *nom d’utilisateur effectif*, qui est transmis aux ressources chaque fois qu’un utilisateur essaie de se connecter aux données. Le *nom d’utilisateur effectif* est ensuite mappé à un [*nom d’utilisateur principal* (UPN)](/windows/win32/secauthn/user-name-formats) et mis en correspondance avec le compte de domaine Windows associé, auquel l’authentification est appliquée.
 
-Pour les organisations qui utilisaient des adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.com</em>), le mappage entre le *nom d’utilisateur effectif* et le nom UPN est simple. Pour les organisations qui n’utilisaient pas d’adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.onmicrosoft.com</em>), le mappage entre les informations d’identification AAD et locales nécessite une [synchronisation d’annuaire](https://technet.microsoft.com/library/jj573653.aspx) pour fonctionner correctement.
+Pour les organisations qui utilisaient des adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.com</em>), le mappage entre le *nom d’utilisateur effectif* et le nom UPN est simple. Pour les organisations qui n’utilisaient pas d’adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.onmicrosoft.com</em>), le mappage entre les informations d’identification AAD et locales nécessite une [synchronisation d’annuaire](/azure/active-directory-domain-services/synchronization) pour fonctionner correctement.
 
 La sécurité de plateforme pour Power BI inclut également la sécurité d’environnement d’architecture mutualisée, la sécurité réseau et la possibilité d’ajouter des mesures de sécurité supplémentaires basées sur AAD.
 
@@ -68,4 +68,3 @@ Cette mise en œuvre est possible en définissant des clés de Registre au nivea
 **Power BI Desktop** respecte les paramètres de clé de Registre décrits dans ces articles et créé uniquement des connexions à l’aide de la version TLS autorisée dans ces paramètres du Registre, le cas échéant.
 
 Pour plus d’informations sur la définition de ces clés de Registre, consultez l’article [Paramètres de Registre TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-
