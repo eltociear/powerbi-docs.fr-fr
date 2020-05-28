@@ -1,6 +1,6 @@
 ---
-title: Gérer votre espace de travail dans Power BI et Office 365
-description: Les espaces de travail dans Power BI offrent une expérience collaborative basée sur les groupes Office 365. Gérez vos espaces de travail dans Power BI ainsi que dans Office 365.
+title: Gérer votre espace de travail dans Power BI et Microsoft 365
+description: Les espaces de travail dans Power BI offrent une expérience collaborative basée sur les groupes Microsoft 365. Gérez vos espaces de travail dans Power BI ainsi que dans Microsoft 365.
 author: maggiesMSFT
 ms.reviewer: lukasz
 ms.service: powerbi
@@ -9,27 +9,27 @@ ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 27f3c88607f57be8b5abffdbec71ecfe80beea23
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1365eba697538255ea8c23b03f0b5db71a7ba1cd
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348065"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693816"
 ---
-# <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Gérer votre espace de travail dans Power BI et Office 365
+# <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Gérer votre espace de travail dans Power BI et Microsoft 365
 
-En tant que créateur ou administrateur d’un [espace de travail dans Power BI](service-create-distribute-apps.md) ou dans Office 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Office 365.
+En tant que créateur ou administrateur d’un [espace de travail dans Power BI](service-create-distribute-apps.md) ou dans Microsoft 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Microsoft 365.
 
 > [!NOTE]
-> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Microsoft 365. Vous ne créez plus automatiquement de groupe Microsoft 365 chaque fois que vous créez un espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 
 Dans **Power BI**, vous pouvez :
 
-* ajouter ou supprimer des membres d’un espace de travail, ainsi que faire d’un membre d’un espace de travail un administrateur ;
-* modifier le nom de l’espace de travail ;
-* Supprimez l’espace de travail, ce qui supprime également le groupe Office 365.
+* Ajouter ou supprimer des membres d’un espace de travail, ainsi que faire d’un membre d’un espace de travail un administrateur.
+* Modifier le nom de l’espace de travail.
+* Supprimer l’espace de travail, ce qui supprime également le groupe Microsoft 365.
 
-Dans **Office 365**, vous pouvez :
+Dans **Microsoft 365** vous pouvez :
 
 * ajouter ou supprimer des membres de groupe de votre espace de travail, notamment faire d’un membre un propriétaire ;
 * modifiez le nom, l’image, la description et d’autres paramètres du groupe ;
@@ -53,9 +53,9 @@ Pour être administrateur ou membre d’un espace de travail, vous devez dispose
 
 1. Sélectionnez **Enregistrer** ou **Annuler**.
 
-## <a name="edit-power-bi-workspace-properties-in-office-365"></a>Modifier les propriétés d’un espace de travail Power BI dans Office 365
+## <a name="edit-power-bi-workspace-properties-in-microsoft-365"></a>Modifier les propriétés d’un espace de travail Power BI dans Microsoft 365
 
-Vous pouvez également modifier les aspects d’un espace de travail directement dans Outlook pour Office 365.
+Vous pouvez également modifier les aspects d’un espace de travail directement dans Outlook pour Microsoft 365.
 
 ### <a name="edit-the-members-of-the-workspace-group"></a>Modifier les membres du groupe d’espaces de travail
 
@@ -63,17 +63,17 @@ Vous pouvez également modifier les aspects d’un espace de travail directement
 
    ![Modifier les espaces de travail dans Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
-   Cela a pour effet d’ouvrir la vue des groupes Outlook pour Office 365 de votre espace de travail. Vous devrez peut-être vous connecter à votre compte d’entreprise.
+   Cela a pour effet d’ouvrir la vue des groupes Outlook pour Microsoft 365 de votre espace de travail. Vous devrez peut-être vous connecter à votre compte d’entreprise.
 
 1. Sélectionnez le rôle en regard du nom d’un collègue pour faire de la personne un **Membre** ou un **Propriétaire**. Sélectionnez la croix **X** pour supprimer la personne du groupe.
 
-   ![Modifier un groupe dans Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
+   ![Modifier un groupe dans Microsoft 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Ajouter une image et définir d’autres propriétés de l’espace de travail
 
-Quand vous distribuez votre application à partir de l’espace de travail, l’image que vous ajoutez ici est l’image de votre application. Consultez [Ajouter une image à votre espace de travail Office 365](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) dans l’article **Créer les nouveaux espaces de travail**.
+Quand vous distribuez votre application à partir de l’espace de travail, l’image que vous ajoutez ici est l’image de votre application. Consultez [Ajouter une image à votre espace de travail Microsoft 365](service-create-workspaces.md#add-an-image-to-your-microsoft-365-workspace-optional) dans l’article **Créer les nouveaux espaces de travail**.
 
-1. Dans la vue Outlook pour Office 365 de votre espace de travail, accédez à l’onglet **À propos de** et sélectionnez **Modifier**.
+1. Dans la vue Outlook pour Microsoft 365 de votre espace de travail, accédez à l’onglet **À propos de** et sélectionnez **Modifier**.
 
     ![Modifier l’icône du groupe](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_editgroupo365.png)
 1. Vous pouvez modifier le nom, la description et la langue des notifications liées au groupe. Vous pouvez aussi ajouter une image et définir d’autres propriétés ici.
