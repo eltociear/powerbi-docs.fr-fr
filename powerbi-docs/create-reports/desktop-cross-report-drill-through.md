@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c9f9c0f24ad40fadb7d0bd61cd6a6ce7d318e74
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 178ad340a9a3ccd9d6427dc6bad03b6d8d08ce90
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297834"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83694053"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Utiliser une extraction interrapport dans Power BI
 
@@ -31,7 +31,7 @@ L’action d’extraction ouvre la *page cible* dans le *rapport cible*.
 Cet article explique comment configurer et utiliser l’extraction interrapport pour les rapports Power BI.
 
 > [!NOTE]
-> Vous ne pouvez pas utiliser l’extraction interrapport avec des [Rapports partagés avec moi](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) individuellement dans **Mon espace de travail**. Pour utiliser l’extraction interrapport, vous devez accéder aux rapports dans l’espace de travail à partir duquel ils ont été partagés.
+> Vous ne pouvez pas utiliser l’extraction interrapport avec des [Rapports partagés avec moi](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) individuellement. Pour utiliser l’extraction interrapport, vous devez accéder aux rapports dans les espaces de travail dont vous êtes membre.
 
 ## <a name="enable-cross-report-drillthrough"></a>Activer l’extraction interrapport
 
