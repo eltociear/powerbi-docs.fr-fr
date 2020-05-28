@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dd7387bcb008d10ec8887ac777431b5423d43f4c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274854"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120320"
 ---
 # <a name="dataset-impact-analysis"></a>Analyse de l’impact des jeux de données
 
@@ -54,7 +54,7 @@ Les métriques d’utilisation concernent les 30 derniers jours, à l’exclusio
 
 ## <a name="notify-contacts"></a>Notifier les contacts
 
-Si vous avez apporté (ou envisagez d’apporter) une modification à un jeu de données, vous souhaiterez peut-être contacter les utilisateurs concernés pour les informer. Quand vous notifiez des contacts, un e-mail est envoyé aux [listes de contacts](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) de tous les espaces de travail concernés. Votre nom s’affiche dans l’e-mail afin que les contacts puissent vous trouver et vous répondre sur un nouveau thread. 
+Si vous avez apporté (ou envisagez d’apporter) une modification à un jeu de données, vous souhaiterez peut-être contacter les utilisateurs concernés pour les informer. Quand vous notifiez des contacts, un e-mail est envoyé aux [listes de contacts](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) de tous les espaces de travail concernés. Votre nom s’affiche dans l’e-mail afin que les contacts puissent vous trouver et vous répondre sur un nouveau thread. 
 
 1. Cliquez sur **Notifier les contacts** dans le volet latéral Analyse d’impact. La boîte de dialogue Notifier les contacts s’affiche.
 
