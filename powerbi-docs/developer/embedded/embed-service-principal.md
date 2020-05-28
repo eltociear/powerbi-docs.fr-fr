@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 5e9b14fb0eccc0418ca7d5b4a7859f26c1781d50
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275958"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121206"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Incorporation de contenu Power BI avec le principal de service et le secret de l’application
 
@@ -188,7 +188,6 @@ Une fois votre contenu incorporé, vous êtes prêt à [passer à la production]
 * Une capacité dédiée est nécessaire pour passer en production.
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.
 * Vous devez disposer de droits d’administrateur Power BI pour activer un principal de service dans les paramètres du développeur du portail d’administration Power BI.
-* Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporées pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
 * La gestion de [flux de données](../../transform-model/service-dataflows-overview.md) n’est pas prise en charge.
 * Le principal de service ne prend actuellement pas en charge aucune API administrateur.
