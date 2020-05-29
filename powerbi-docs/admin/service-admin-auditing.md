@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 42203c65f6351422bbb65b5a0dc2245ac6a7b190
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: c0f8e6f0282e4a862c8fc92e922a412ba0f56098
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564612"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812424"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -26,7 +26,7 @@ Il est important de savoir qui effectue une action sur un élément donné de vo
 | Inclut les événements de SharePoint Online, Exchange Online, Dynamics 365 et d’autres services en plus des événements d’audit de Power BI. | Inclut uniquement les événements d’audit de Power BI. |
 | Seuls les utilisateurs ayant des autorisations Journaux d’audit ou Journaux d’audit en affichage seul, comme les administrateurs généraux et les auditeurs, ont accès à ce journal. | Les administrateurs généraux et les administrateurs de service Power BI ont accès à ce journal. |
 | Les administrateurs généraux et les auditeurs peuvent faire des recherches dans le journal d’audit unifié à l’aide du Centre de sécurité Microsoft 365 et du Centre de conformité Microsoft 365. | Il n’existe pas encore d’interface utilisateur permettant d’effectuer des recherches dans le journal d’activité. |
-| Les administrateurs généraux et les auditeurs peuvent télécharger des entrées du journal d’audit à l’aide d’API et d’applets de commande de gestion Office 365. | Les administrateurs généraux et les administrateurs de service Power BI peuvent télécharger des entrées du journal d’activité à l’aide d’une API REST Power BI et d’une applet de commande de gestion. |
+| Les administrateurs généraux et les auditeurs peuvent télécharger des entrées du journal d’audit à l’aide d’API et d’applets de commande de gestion Microsoft 365. | Les administrateurs généraux et les administrateurs de service Power BI peuvent télécharger des entrées du journal d’activité à l’aide d’une API REST Power BI et d’une applet de commande de gestion. |
 | Conserve les données d’audit pendant 90 jours. | Conserve les données d’activité pendant 30 jours (préversion publique). |
 | Conserve les données d’audit, même si le locataire est déplacé vers une autre région Azure. | Ne conserve pas les données d’activité lorsque le client est déplacé vers une autre région Azure. |
 
@@ -176,11 +176,11 @@ La zone **Résultats** contient les informations suivantes sur chaque événemen
 | **Colonne** | **Définition** |
 | --- | --- |
 | Date |Date et heure (au format UTC) auxquelles l’événement s’est produit. |
-| Adresse IP |L’adresse IP de l’appareil utilisé pour l’activité journalisée. L’application affiche l’adresse IP au format d’adresse IPv4 ou IPv6. |
+| Adresse IP |L’adresse IP de l’appareil utilisé pour l’activité journalisée. L’application affiche l’adresse IP au format d’adresse IPv4 ou IPv6. |
 | Utilisateur |L’utilisateur (ou compte de service) qui a effectué l’action qui a déclenché l’événement. |
 | Activité |Activité exécutée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement du journal d’audit d’administrateur Exchange, la valeur de cette colonne est une cmdlet Exchange. |
-| Article |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne. |
-| Détails |Détails supplémentaires sur une activité. Là encore, seule une partie des activités a une valeur. |
+| Élément |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne. |
+| Detail |Détails supplémentaires sur une activité. Là encore, seule une partie des activités a une valeur. |
 
 #### <a name="view-the-details-for-an-event"></a>Afficher les détails d’un événement
 
@@ -237,12 +237,13 @@ Pour plus d’informations sur la connexion à Exchange Online, consultez [Se co
 
 Les opérations suivantes sont disponibles à la fois dans les journaux d’audit et les journaux d’activité.
 
-| Nom convivial                                     | Nom de l’opération                              | Notes                                  |
+| Nom convivial                                     | Nom d’opération                              | Notes                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Accéder aux tables recommandées Power BI dans Excel | AnalyzedByExternalApplication |    |
 | Source de données ajoutée à la passerelle Power BI             | AddDatasourceToGateway                      |                                          |
-| Accès au dossier Power BI ajouté                      | AddFolderAccess                             | Non utilisée actuellement                       |
+| Accès au dossier Power BI ajouté                      | AddFolderAccess                             | Élément non utilisé actuellement                       |
 | Membres ajoutés au groupe Power BI                      | AddGroupMembers                             |                                          |
-| Compte de stockage de dataflow attaché au locataire par l’administrateur | AdminAttachedDataflowStorageAccountToTenant | Non utilisée actuellement                       |
+| Compte de stockage de dataflow attaché au locataire par l’administrateur | AdminAttachedDataflowStorageAccountToTenant | Élément non utilisé actuellement                       |
 | Jeu de données Power BI analysé                         | AnalyzedByExternalApplication               |                                          |
 | Rapport Power BI analysé                          | AnalyzeInExcel                              | Généré lorsque les utilisateurs interagissent avec le service. Le téléchargement du fichier `*.odc` ne crée pas d’événement d’audit.                                         |
 | Compte de stockage de dataflow attaché                 | AttachedDataflowStorageAccount              |                                          |
@@ -263,33 +264,33 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Passerelle Power BI créée                          | CreateGateway                               |                                          |
 | Groupe Power BI créé                            | CreateGroup                                 |                                          |
 | Rapport Power BI créé                           | CreateReport <sup>1</sup>                                |                                          |
-| Dataflow migré vers un compte de stockage externe     | DataflowMigratedToExternalStorageAccount    | Non utilisée actuellement                       |
-| Autorisations de dataflow ajoutées                        | DataflowPermissionsAdded                    | Non utilisée actuellement                       |
-| Autorisations de dataflow supprimées                      | DataflowPermissionsRemoved                  | Non utilisée actuellement                       |
+| Dataflow migré vers un compte de stockage externe     | DataflowMigratedToExternalStorageAccount    | Élément non utilisé actuellement                       |
+| Autorisations de dataflow ajoutées                        | DataflowPermissionsAdded                    | Élément non utilisé actuellement                       |
+| Autorisations de dataflow supprimées                      | DataflowPermissionsRemoved                  | Élément non utilisé actuellement                       |
 | Pack de contenu d’organisation Power BI supprimé      | DeleteOrgApp                                |                                          |
 | Commentaire Power BI supprimé                          | DeleteComment                               |                                          |
-| Tableau de bord Power BI supprimé                        | DeleteDashboard                             | Non utilisée actuellement                       |
-| Dataflow Power BI supprimé                         | DeleteDataflow                              | Non utilisée actuellement                       |
+| Tableau de bord Power BI supprimé                        | DeleteDashboard                             | Élément non utilisé actuellement                       |
+| Dataflow Power BI supprimé                         | DeleteDataflow                              | Élément non utilisé actuellement                       |
 | Jeu de données Power BI supprimé                          | DeleteDataset                               |                                          |
 | Abonnement à l’e-mail Power BI supprimé               | DeleteEmailSubscription                     |                                          |
 | Dossier Power BI supprimé                           | DeleteFolder                                |                                          |
-| Accès au dossier Power BI supprimé                    | DeleteFolderAccess                          | Non utilisée actuellement                       |
+| Accès au dossier Power BI supprimé                    | DeleteFolderAccess                          | Élément non utilisé actuellement                       |
 | Passerelle Power BI supprimée                          | DeleteGateway                               |                                          |
 | Groupe Power BI supprimé                            | DeleteGroup                                 |                                          |
 | Rapport Power BI supprimé                           | DeleteReport                                |                                          |
 | Sources de données de jeu de données Power BI détectées          | GetDatasources                              |                                          |
 | Rapport Power BI téléchargé                        | DownloadReport                              |                                          |
 | Propriétés de dataflow modifiées                        | EditDataflowProperties                      |                                          |
-| Autorisation de certification Power BI modifiée          | EditCertificationPermission                 | Non utilisée actuellement                       |
-| Tableau de bord Power BI modifié                         | EditDashboard                               | Non utilisée actuellement                       |
+| Autorisation de certification Power BI modifiée          | EditCertificationPermission                 | Élément non utilisé actuellement                       |
+| Tableau de bord Power BI modifié                         | EditDashboard                               | Élément non utilisé actuellement                       |
 | Jeu de données Power BI modifié                           | EditDataset                                 |                                          |
-| Propriétés du jeu de données Power BI modifiées                | EditDatasetProperties                       | Non utilisée actuellement                       |
+| Propriétés du jeu de données Power BI modifiées                | EditDatasetProperties                       | Élément non utilisé actuellement                       |
 | Rapport Power BI modifié                            | EditReport                                  |                                          |
 | Dataflow Power BI exporté                        | ExportDataflow                              |                                          |
 | Données des visuels de rapport Power BI exportées              | ExportReport                                |                                          |
 | Données de vignette Power BI exportées                       | ExportTile                                  |                                          |
-| Échec de l’ajout d’autorisations de dataflow                | FailedToAddDataflowPermissions              | Non utilisée actuellement                       |
-| Échec de la suppression d’autorisations de dataflow             | FailedToRemoveDataflowPermissions           | Non utilisée actuellement                       |
+| Échec de l’ajout d’autorisations de dataflow                | FailedToAddDataflowPermissions              | Élément non utilisé actuellement                       |
+| Échec de la suppression d’autorisations de dataflow             | FailedToRemoveDataflowPermissions           | Élément non utilisé actuellement                       |
 | Jeton SAS de dataflow Power BI généré             | GenerateDataflowSasToken                    |                                          |
 | Jeton d’incorporation Power BI généré                    | GenerateEmbedToken                          |                                          |
 | Fichier importé dans Power BI                         | Importer                                      |                                          |
@@ -299,12 +300,13 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Tableau de bord Power BI imprimé                        | PrintDashboard                              |                                          |
 | Page de rapport Power BI imprimée                      | PrintReport                                 |                                          |
 | Rapport Power BI publié sur le web                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Tables recommandées publiées ou mises à jour | UpdateFeaturedTables <sup>3</sup>   | |
 | Secret de dataflow Power BI reçu du coffre de clés  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Source de données supprimée de la passerelle Power BI         | RemoveDatasourceFromGateway                 |                                          |
 | Membres supprimés du groupe Power BI                    | DeleteGroupMembers                          |                                          |
 | Espace de travail supprimé d’une capacité                 | RemoveWorkspacesFromCapacity                |                                          |
 | Tableau de bord Power BI renommé                        | RenameDashboard                             |                                          |
-| Actualisation demandée du dataflow Power BI               | RequestDataflowRefresh                      | Non utilisée actuellement                       |
+| Actualisation demandée du dataflow Power BI               | RequestDataflowRefresh                      | Élément non utilisé actuellement                       |
 | Actualisation demandée du jeu de données Power BI                | RefreshDataset                              |                                          |
 | Espaces de travail Power BI récupérés                     | GetWorkspaces                               |                                          |
 | Emplacement de stockage de dataflow défini pour un espace de travail     | SetDataflowStorageLocationForWorkspace      |                                          |
@@ -312,7 +314,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Actualisation planifiée sur le jeu de données Power BI définie         | SetScheduledRefresh                         |                                          |
 | Tableau de bord Power BI partagé                         | ShareDashboard                              |                                          |
 | Rapport Power BI partagé                            | ShareReport                                 |                                          |
-| Essai gratuit étendu de Power BI démarré                   | OptInForExtendedProTrial                    | Non utilisée actuellement                       |
+| Essai gratuit étendu de Power BI démarré                   | OptInForExtendedProTrial                    | Élément non utilisé actuellement                       |
 | Essai Power BI démarré                            | OptInForProTrial                            |                                          |
 | Prise de contrôle d’une source de données Power BI                   | TakeOverDatasource                          |                                          |
 | Prise de contrôle d’un jeu de données Power BI                        | TakeOverDataset                             |                                          |
@@ -341,6 +343,8 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 <sup>1</sup> La publication à partir de Power BI Desktop vers le service est un événement CreateReport dans le service.
 
 <sup>2</sup> PublishtoWebReport fait référence à la fonctionnalité [Publier sur le web](../collaborate-share/service-publish-to-web.md).
+
+<sup>3</sup> UpdateFeaturedTables fait référence à [Tables Power BI recommandées dans Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

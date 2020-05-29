@@ -4,26 +4,39 @@ description: Les rapports paginés, depuis longtemps le format standard pour les
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/14/2020
-ms.openlocfilehash: 0cf3fcdbcfb49d501ccbb7fa191b566e298c84b7
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 05/19/2020
+ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565503"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733413"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
-Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont parfois appelés « pixel parfait », car vous pouvez contrôler exactement leur mise en page. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. Le Générateur de rapports est l’outil autonome pour la création de rapports paginés. 
+Les *rapports paginés* sont conçus pour être imprimés ou partagés. Ils sont appelés *paginés*, car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont appelés *pixel parfait*, car vous pouvez contrôler exactement leur mise en page. Power BI Report Builder est l’outil autonome pour la création de rapports paginés. Les rapports paginés sont basés sur la technologie de rapport RDL, ainsi que le format de rapport standard dans SQL Server Reporting Services. 
 
-Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
+Les rapports paginés ont souvent de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
 
 ![Paginé](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, `https://app.powerbi.com`. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](../admin/service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
+
+## <a name="compare-power-bi-reports-and-paginated-reports"></a>Comparer les rapports Power BI et les rapports paginés
+
+L’un des principaux avantages des rapports paginés est leur capacité à imprimer toutes les données d’une table, quelle que soit la taille. Imaginez que vous placez une table dans un rapport Power BI. Certaines de ses lignes s’affichent dans la table sur la page et une barre de défilement vous permet de voir le reste. Si vous imprimez cette page ou que vous l’exportez au format PDF, les seules lignes imprimées sont celles que vous voyez sur la page. 
+
+À présent, imaginons que vous placez la même table dans un rapport paginé. Lorsque vous l’imprimez ou l’exportez au format PDF, le rapport paginé comporte autant de pages que nécessaire pour imprimer chaque ligne de cette table. 
+
+Dans la vidéo suivante, Peter Myers (Most Valued Professional - Data Platform) et Chris Finlan (Principal Program Manager) montrent comment imprimer une table similaire dans les deux formats de rapport. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT" frameborder="0" allowfullscreen></iframe>
+
+Cette vidéo fait partie d’un cours basé sur une vidéo de huit modules, [Rapports paginés Power BI en une journée](../learning-catalog/paginated-reports-online-course.md). Le cours a pour but de vous aider en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI.
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Créer des rapports dans le Générateur de rapports Power BI
 

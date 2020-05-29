@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2020
+ms.date: 05/21/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: ab232d4e5b6d17e7f20ed8a41875ca47693eb285
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: 27f71da8a8396de30254c1a02307aa48281db5a8
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407592"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793595"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Permettre aux utilisateurs de personnaliser les visuels dans un rapport
 
@@ -91,7 +91,7 @@ La fonctionnalité présente actuellement quelques limitations à connaître.
 
 - Cette fonctionnalité n’est pas prise en charge dans les scénarios d’incorporation, notamment la publication sur le web.
 - Les explorations des utilisateurs ne sont pas automatiquement conservées. Vous devez enregistrer votre affichage dans les signets personnels pour capturer vos modifications.
-- Il n’est pas possible de modifier les visuels dans les applications mobiles Power BI. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles.
+- Cette fonctionnalité est prise en charge dans les applications mobiles Power BI pour les tablettes iOS et Android, ainsi que dans l’application Windows Power BI. Elle n’est pas prise en charge dans les applications mobiles Power BI pour les téléphones. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles Power BI.
 
 Il existe également quelques problèmes connus que nous sommes en train de traiter :
 
