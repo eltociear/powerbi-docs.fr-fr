@@ -1,4 +1,4 @@
-- name: Documentation sur les visuels Power BI
+- name: "Documentation sur les visuels Power\_BI"
   href: index.yml
   expanded: true
   items:
@@ -10,7 +10,7 @@
     - name: Tutoriels
       expanded: true
       items:
-        - name: Développer un visuel Power BI
+        - name: "Développer un visuel Power\_BI"
           href: custom-visual-develop-tutorial.md
         - name: Créer des visuels basés sur les réactions
           href: create-react-visual.md
@@ -26,9 +26,9 @@
           href: visual-project-structure.md
         - name: Concepts visuels
           href: power-bi-visuals-concept.md
-        - name: Visuels pour les organisations dans Power BI
+        - name: "Visuels pour les organisations dans Power\_BI"
           href: power-bi-custom-visuals-organization.md
-        - name: Marche à suivre pour les visuels Power BI
+        - name: "Marche à suivre pour les visuels Power\_BI"
           href: guidelines-powerbi-visuals.md
         - name: Conseils sur les performances
           href: performance-tips.md
@@ -42,9 +42,9 @@
           href: objects-properties.md
         - name: Mode d’édition avancé
           href: advanced-edit-mode.md
-        - name: 'supportsKeyboardFocus, fonctionnalité'
+        - name: fonctionnalité supportsKeyboardFocus
           href: supportskeyboardfocus-feature.md
-        - name: 'supportsMultiVisualSelection, fonctionnalité'
+        - name: fonctionnalité supportsMultiVisualSelection
           href: supportsmultivisualselection-feature.md
     - name: Guides pratiques
       items:
@@ -52,6 +52,8 @@
           href: power-bi-custom-visuals-certified.md
         - name: "Publier des visuels Power\_BI dans AppSource"
           href: office-store.md
+        - name: Créer des visuels optimisés pour R
+          href: create-r-based-power-bi-desktop.md
         - name: "Tester votre visuel Power\_BI"
           href: submission-testing.md
         - name: "Utiliser des visuels Power\_BI basés sur R dans Power\_BI"
@@ -78,7 +80,7 @@
           href: add-colors-power-bi-visual.md
         - name: Mettre en évidence des données dans les visuels
           href: highlight.md
-        - name: Ajouter la prise en charge du mode Contraste élevé
+        - name: Ajouter la prise en charge du mode contraste élevé
           href: high-contrast-support.md
         - name: Activer les segments de synchronisation
           href: enable-sync-slicers.md
@@ -86,7 +88,7 @@
           href: visuals-how-to-debug.md
         - name: Développement mobile
           href: mobile-development.md
-        - name: Résoudre les problèmes de visuels Power BI
+        - name: "Résoudre les problèmes de visuels Power\_BI"
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Référence
       items:
@@ -106,15 +108,15 @@
           href: sort-options.md
         - name: Localisation
           href: localization.md
-        - name: Utilitaires de visuel Power BI
+        - name: "Utilitaires de visuel Power\_BI"
           items:
-            - name: Utiliser des bibliothèques externes
+            - name: Ajout de bibliothèques externes
               href: adding-external-libraries.md
             - name: Utilitaires d’interactivité
               href: utils-interactivity-selections.md
             - name: Utilitaires de mise en forme
               href: utils-formatting.md
-            - name: Utilitaires pour la vue Données
+            - name: Utilitaires pour la vue de données
               href: utils-dataview.md
             - name: Utilitaires pour les graphiques
               href: utils-chart.md
@@ -128,7 +130,7 @@
               href: utils-test.md
             - name: Utilitaires pour les info-bulles
               href: utils-tooltip.md
-            - name: Utilitaires pour la vue Données
+            - name: Utilitaires pour la vue de données
               href: utils-dataview.md
     - name: Ressources
       items:
