@@ -28,8 +28,6 @@
           href: embedded-capacity-planning.md
         - name: Bonnes pratiques relatives aux performances
           href: embedded-performance-best-practices.md
-        - name: Principal du service
-          href: embed-service-principal.md
         - name: Sécurité au niveau des lignes
           href: embedded-row-level-security.md
         - name: Sécurité au niveau des lignes des rapports paginés
@@ -44,6 +42,10 @@
           href: power-bi-permissions.md
     - name: Guides pratiques
       items:
+        - name: Incorporer en utilisant un principal du service avec un certificat
+          href: embed-service-principal-certificate.md
+        - name: Incorporer en utilisant un principal du service avec un secret d’application
+          href: embed-service-principal.md
         - name: Incorporer à partir d’une application
           href: embed-from-apps.md
         - name: Exporter le rapport vers un fichier

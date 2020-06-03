@@ -6,32 +6,35 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/26/2020
 ms.author: maggies
+ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 700b9a5dffc3abff00fb2ea738d0517a676a689b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: edc06d7a46589c999e4bf18613c0c75f6d5bf983
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693767"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120590"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
-Power BI introduit une nouvelle expérience d’espace de travail. Les espaces de travail restent des espaces de collaboration qui vous permettent de créer des collections de tableaux de bord, de rapports et de rapports paginés avec vos collègues. Vous pouvez ensuite regrouper cette collection dans une *application* et la distribuer dans toute votre organisation ou à des personnes ou groupes spécifiques.
+Cet article explique comment créer un des *nouveaux espaces de travail* à la place d’un espace de travail *classique*. Les deux types d’espaces de travail sont des emplacements où collaborer avec des collègues. Dans ceux-ci, vous créez des regroupements de tableaux de bord, de rapports et de rapports paginés. Si vous le souhaitez, vous pouvez également regrouper cette collection dans une *application* et la distribuer à un public plus large.
 
-Voici ce qui est différent. Dans les nouveaux espaces de travail, vous pouvez :
+Voici comment les nouveaux espaces de travail diffèrent des anciens. Dans les nouveaux espaces de travail, vous pouvez :
 
-- Affecter des rôles d’espace de travail à des groupes d’utilisateurs : groupes de sécurité, listes de distribution, groupes Microsoft 365 et personnes individuelles.
+- Affecter des rôles d’espace de travail à des groupes d’utilisateurs et à des individus.
 - Créer un espace de travail dans Power BI sans créer de groupe Microsoft 365.
-- Utiliser des rôles d’espace de travail plus granulaires, pour une gestion plus flexible des autorisations dans un espace de travail.
+- Utiliser des rôles d’espace de travail plus granulaires, pour une gestion plus flexible des autorisations.
+
+:::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-sales-marketing.png" alt-text="Échantillon d’espace de travail Ventes et marketing":::
+
+Pour plus d’informations, consultez l’article sur les [nouveaux espaces de travail](service-new-workspaces.md).
 
 Prêt à migrer votre espace de travail classique ? Consultez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI](service-upgrade-workspaces.md) pour plus d’informations.
 
 > [!NOTE]
 > Pour appliquer la sécurité au niveau des lignes (RLS) aux utilisateurs de Power BI Pro qui parcourent du contenu dans un espace de travail, attribuez le rôle Lecteur à ces utilisateurs.
-
-Pour plus d’informations, consultez l’article sur les [nouveaux espaces de travail](service-new-workspaces.md).
 
 ## <a name="create-one-of-the-new-workspaces"></a>Créer un nouvel espace de travail
 
@@ -43,21 +46,19 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
    
      ![Nouvelle expérience d’espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail basé sur un groupe Microsoft 365](service-create-workspaces.md). 
+     Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail classique](service-create-workspaces.md) basé sur un groupe Microsoft 365.
 
-2. Nommez l’espace de travail. Si le nom n’est pas disponible, modifiez-le de façon à obtenir un nom unique.
+2. Donnez un nom unique à l’espace de travail. Si le nom n’est pas disponible, modifiez-le de façon à obtenir un nom unique.
    
-     L’application de l’espace de travail aura le même nom et la même icône que l’espace de travail.
+     L’application que vous créez à partir de l’espace de travail aura le même nom et la même icône que l’espace de travail.
    
 1. Voici quelques éléments facultatifs que vous pouvez définir pour votre espace de travail :
 
     Téléchargez une **image d’espace de travail**. Les fichiers peuvent être au format .png ou .jpg. La taille du fichier doit être inférieure à 45 ko.
     
-    [Ajoutez une **Liste de contacts**](#workspace-contact-list). Par défaut, les administrateurs de l’espace de travail sont les contacts. 
+    [Ajoutez une **Liste de contacts**](#create-a-contact-list). Par défaut, les administrateurs de l’espace de travail sont les contacts. 
     
-    [Spécifiez un emplacement **OneDrive de l’espace de travail**](#workspace-onedrive) en tapant simplement le nom d’un groupe Microsoft 365 existant, et non l’URL. Cet espace de travail peut désormais utiliser l’emplacement de stockage de fichiers de ce groupe Microsoft 365.
-
-    ![Spécifier un emplacement OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    [Spécifiez **un espace de travail OneDrive**](#set-a-workspace-onedrive) pour utiliser un emplacement de stockage de fichiers de groupe Microsoft 365. 
 
     Pour affecter l’espace de travail à une **Capacité dédiée**, sous l’onglet **Premium**, sélectionnez **Capacité dédiée**.
      
@@ -67,9 +68,9 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
 
     Power BI crée l’espace de travail et l’ouvre. Vous le voyez dans la liste des espaces de travail dont vous êtes membre. 
 
-## <a name="workspace-contact-list"></a>Liste de contacts de l’espace de travail
+## <a name="create-a-contact-list"></a>Créer une liste de contacts
 
-Vous pouvez spécifier les utilisateurs qui reçoivent une notification concernant les problèmes qui se produisent dans l’espace de travail. Par défaut, tout utilisateur ou groupe spécifié comme administrateur de l’espace de travail est averti, mais vous pouvez personnaliser la liste en ajouter ces personnes à la *liste des contacts*. Les utilisateurs ou groupes de la liste des contacts apparaissent dans l’interface utilisateur (IU) pour aider les utilisateurs à obtenir de l’aide concernant l’espace de travail.
+Vous pouvez spécifier les utilisateurs qui reçoivent une notification concernant les problèmes qui se produisent dans l’espace de travail. Par défaut, tout utilisateur ou groupe spécifié comme administrateur de l’espace de travail est averti, mais vous pouvez personnaliser la *liste de contacts*. Les utilisateurs ou groupes de la liste des contacts apparaissent dans l’interface utilisateur (IU) pour aider les utilisateurs à obtenir de l’aide concernant l’espace de travail.
 
 1. Accédez au nouveau paramètre **Liste de contacts** de l’une des deux manières suivantes :
 
@@ -85,11 +86,11 @@ Vous pouvez spécifier les utilisateurs qui reçoivent une notification concerna
 
 3. Sélectionnez **Enregistrer**.
 
-## <a name="workspace-onedrive"></a>OneDrive de l’espace de travail
+## <a name="set-a-workspace-onedrive"></a>Définir un espace de travail OneDrive
 
-La fonctionnalité OneDrive de l’espace de travail vous permet de configurer un groupe Microsoft 365 dont le stockage de fichiers de la bibliothèque de documents SharePoint est accessible aux utilisateurs de l’espace de travail. Vous devez d’abord créer le groupe en dehors de Power BI.
+La fonctionnalité OneDrive de l’espace de travail vous permet de configurer un groupe Microsoft 365 dont le stockage de fichiers de la bibliothèque de documents SharePoint est accessible aux utilisateurs de l’espace de travail. Vous devez d’abord créer le groupe en dehors de Power BI. 
 
-Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qui sont configurés pour avoir accès à l’espace de travail avec l’appartenance au groupe Microsoft 365. La bonne pratique consiste à attribuer au même groupe Microsoft 365, dont vous configurez le stockage de fichiers dans ce groupe Microsoft 365, l’[accès à l’espace de travail](#give-access-to-your-workspace). Gérez ensuite l’accès à l’espace de travail en gérant l’appartenance au groupe Microsoft 365.
+Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qui sont configurés pour avoir accès à l’espace de travail avec l’appartenance au groupe Microsoft 365. La meilleure pratique consiste à attribuer au même groupe Microsoft 365, dont vous configurez le stockage de fichiers dans ce groupe Microsoft 365, l’[accès à l’espace de travail](#give-access-to-your-workspace). Gérez ensuite l’accès à l’espace de travail en gérant l’appartenance au groupe Microsoft 365. 
 
 1. Accédez au nouveau paramètre **OneDrive de l’espace de travail** de l’une des deux manières suivantes :
 
@@ -99,7 +100,7 @@ Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qu
 
     ![Paramètres de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Sous **Avancé** > **OneDrive de l’espace de travail**, tapez le nom du groupe Microsoft 365 que vous avez créé. Power BI récupère automatiquement le OneDrive du groupe.
+2. Sous **Avancé** > **OneDrive de l’espace de travail**, tapez le nom du groupe Microsoft 365 que vous avez créé. Tapez simplement le nom, et non l’URL. Power BI récupère automatiquement le OneDrive du groupe.
 
     ![Spécifier un emplacement OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -117,15 +118,17 @@ Après avoir configuré l'emplacement OneDrive, vous y accédez de la même mani
 
     ![Emplacement des fichiers de l’espace de travail - Récupérer des données](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Connexion à des services tiers dans les nouveaux espaces de travail
+### <a name="connect-to-apps-in-new-workspaces"></a>Se connecter à des applications dans de nouveaux espaces de travail
 
-Dans la nouvelle expérience des espaces de travail, nous avons apporté une modification qui met l’accent sur les *applications*. Les applications de services tiers permettent aux utilisateurs d’obtenir des données plus facilement auprès des services qu’ils utilisent comme Microsoft Dynamics CRM, Salesforce ou Google Analytics.
+Le nouvel espace de travail crée et consomme des *applications* au lieu de packs de contenu. Les applications sont des collections de tableaux de bord, de rapports et de jeux de données qui se connectent à des services tiers et à des données organisationnelles. Les applications facilitent l’extraction de données à partir des services tels que Microsoft Dynamics CRM, Salesforce et Google Analytics.
 
-Dans la nouvelle expérience d’espace de travail, vous ne pouvez pas créer ni consommer des packs de contenu d’organisation. Au lieu de cela, vous pouvez utiliser les applications fournies pour vous connecter à des services tiers ou demander à vos équipes internes de fournir des applications pour les packs de contenu que vous utilisez actuellement. 
+Dans la nouvelle expérience d’espace de travail, vous ne pouvez pas créer ni consommer des packs de contenu d’organisation. Demandez à vos équipes internes de fournir des applications pour tous les packs de contenu que vous utilisez actuellement. 
 
 ## <a name="give-access-to-your-workspace"></a>Accorder l’accès à votre espace de travail
 
-1. Dans la liste de contenu de l’espace de travail, dans la mesure où vous êtes un administrateur, vous voyez une nouvelle action, **Accéder**.
+Toute personne disposant d’un rôle d’administrateur dans un espace de travail peut accorder à d’autres utilisateurs l’accès à l’espace de travail.
+
+1. Dans la liste de contenu de l’espace de travail, dans la mesure où vous êtes administrateur, vous voyez **Accéder**.
 
     ![Liste de contenu des espaces de travail](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
@@ -138,9 +141,9 @@ Dans la nouvelle expérience d’espace de travail, vous ne pouvez pas créer ni
 
 ## <a name="distribute-an-app"></a>Distribuer une application
 
-Si vous voulez distribuer du contenu officiel à un large public au sein de votre organisation, vous pouvez publier une application à partir de votre espace de travail.  Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’*application*. Vous pouvez créer une application à partir de chaque espace de travail.
+Si vous voulez distribuer du contenu officiel à un large public au sein de votre organisation, vous pouvez publier une *application* à partir de votre espace de travail.  Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’application. Vous pouvez créer une application à partir de chaque espace de travail.
 
-Découvrir comment [Publier une application à partir des nouveaux espaces de travail](service-create-distribute-apps.md)
+Découvrez comment [publier une application à partir des nouveaux espaces de travail](service-create-distribute-apps.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * Découvrir l’[organisation du travail dans la nouvelle expérience d’espace de travail dans Power BI](service-new-workspaces.md)

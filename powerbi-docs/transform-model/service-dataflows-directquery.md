@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9de8c9611b24eaa627b3ddf044f13d36d7b9a3d4
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 469b8b13f77c56f9371ae8c1c81dcb94278c62e0
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83694570"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794026"
 ---
 # <a name="use-directquery-with-dataflows-in-power-bi-preview"></a>Utiliser DirectQuery avec des dataflows dans Power BI (préversion)
 
@@ -38,7 +38,7 @@ Il existe également des prérequis pour l’utilisation de DirectQuery avec des
 
 ## <a name="enable-directquery-for-dataflows"></a>Activer DirectQuery pour les dataflows
 
-Pour garantir que votre flux de données est disponible pour un accès par DirectQuery, le moteur de calcul amélioré doit être dans son état optimisé. Pour activer DirectQuery pour les dataflows, définissez l’option **Paramètres du moteur de calcul amélioré** sur **Optimisé**. L’image suivante montre le paramètre correctement sélectionné.
+Pour garantir que votre flux de données est disponible pour un accès par DirectQuery, le moteur de calcul amélioré doit être dans son état optimisé. Pour activer DirectQuery pour les dataflows, définissez l’option **Paramètres du moteur de calcul amélioré** sur **On**. L’image suivante montre le paramètre correctement sélectionné.
 
 ![Activer le moteur de calcul amélioré pour les dataflows](media/service-dataflows-directquery/dataflows-directquery-01.png)
 
@@ -50,7 +50,15 @@ Une fois que vous avez appliqué ce paramètre, actualisez le dataflow pour que 
 Il existe quelques limitations connues avec DirectQuery et les dataflows, qui sont décrites dans la liste suivante.
 
 * DirectQuery pour les dataflows ne fonctionne pas avec **la préversion de la fonctionnalité des métadonnées améliorées**. Cette exclusion est censée être supprimée dans une prochaine version mensuelle de Power BI Desktop.
+
 * Pendant la période de préversion de cette fonctionnalité, certains clients peuvent rencontrer des dépassements de délai d’expiration ou des problèmes de performances lors de l’utilisation de DirectQuery avec des dataflows. Des solutions à ces problèmes sont activement recherchées pendant cette période de préversion.
+
+* Les modèles composites/mixtes qui ont des sources de données importées et DirectQuery ne sont pas pris en charge pour le moment.
+
+* Les grands dataflows peuvent rencontrer des problèmes de délai d’expiration lors de l’affichage des visualisations. Cette limitation est censée être supprimée dans le cadre de la disponibilité générale de cette fonctionnalité. Pendant ce temps, les dataflows qui rencontrent des problèmes de délai d’attente doivent utiliser le mode d’importation.
+
+* Sous paramètres de source de données, le connecteur de dataflow affiche des informations d’identification non valides si vous utilisez DirectQuery. Cela n’affecte pas le comportement, et le jeu de données fonctionnera correctement. Ce problème sera supprimé au fur et à mesure que nous approcherons de la disponibilité générale.
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1a6cf5cad4fe4b76d44dcfaecd81324003687b10
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: aa8b457dfd33cff40dbd651f0e07811e361e52d9
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407883"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120950"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser des tâches d’espace de travail et de jeu de données avec des principaux de service
 
@@ -25,11 +25,11 @@ Power BI Premium utilise la même fonctionnalité de principal de service que Po
 Dans **Power BI Premium**, les principaux de service peuvent également être utilisés avec le [point de terminaison XMLA](service-premium-connect-tools.md) pour automatiser des tâches de gestion de jeu de données telles que le provisionnement d’espaces de travail, le déploiement de modèles et l’actualisation de jeux de données avec :
 
 - PowerShell
-- Azure Automation
+- Automatisation d'Azure
 - Azure Logic Apps
 - Des applications clientes personnalisées
 
-Les principaux de service ne peuvent être utilisés avec le point de terminaison XMLA que sur les [nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md). Les espaces de travail classiques ne sont pas pris en charge. Un principal de service dispose uniquement des autorisations nécessaires pour effectuer des tâches pour les espaces de travail qui lui sont attribués. Les autorisations sont affectées par le biais de l’Accès à l’espace de travail, comme les comptes UPN ordinaires.
+Seuls les [nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md) prennent en charge les connexions de point de terminaison XMLA à l’aide de principaux de service. Les espaces de travail classiques ne sont pas pris en charge. Un principal de service dispose uniquement des autorisations nécessaires pour effectuer des tâches pour les espaces de travail qui lui sont attribués. Les autorisations sont affectées par le biais de l’Accès à l’espace de travail, comme les comptes UPN ordinaires.
 
 Pour effectuer des opérations d’écriture, la **charge de travail des jeux de données** de la capacité doit avoir le [point de terminaison XMLA activé pour la lecture-écriture](service-premium-connect-tools.md#enable-xmla-read-write). Les jeux de données publiés à partir de Power BI Desktop doivent avoir la fonctionnalité [Format de métadonnées amélioré](../connect-data/desktop-enhanced-dataset-metadata.md) activée.
 
@@ -91,7 +91,7 @@ $PWord = ConvertTo-SecureString -String $AppSecret -AsPlainText -Force
 
 $Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $AppId, $PWord
 
-Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -TableName "mytable" -Database "mydataset" -RefreshType "Full" -ServicePrincipal -ApplicationId $AppId -TenantId $TenantId -Credential $Credential
+Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -TableName "mytable" -DatabaseName "mydataset" -RefreshType "Full" -ServicePrincipal -ApplicationId $AppId -TenantId $TenantId -Credential $Credential
 ```
 
 ### <a name="amo-and-adomd"></a>AMO et ADOMD

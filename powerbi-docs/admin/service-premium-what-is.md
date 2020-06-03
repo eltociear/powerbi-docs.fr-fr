@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 290174f7848e4518a4b1489d0a90136e86d245da
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: 7c9f198ac15311948e1789173851a6c85debc856
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438243"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812447"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -50,7 +50,7 @@ Azure Power BI Embedded ne rentre pas dans le cadre de cet article. Toutefois, 
 
 ### <a name="purchasing"></a>Achat
 
-Les abonnements Power BI Premium peuvent être achetés par les administrateurs dans le centre d’administration Microsoft 365. Seuls les administrateurs généraux Office 365 et les administrateurs de facturation peuvent acheter des références SKU. Une fois l’abonnement acheté, le locataire reçoit le nombre de v-cores à affecter aux capacités. C’est ce qu’on appelle le *regroupement de v-cores*. Par exemple, l’achat d’une référence SKU P3 fournit au locataire 32 v-cores. Pour plus d’informations, consultez la page [Comment acheter Power BI Premium](service-admin-premium-purchase.md).
+Les abonnements Power BI Premium peuvent être achetés par les administrateurs dans le centre d’administration Microsoft 365. Seuls les Administrateurs généraux Office 365 et les administrateurs de facturation peuvent acheter des références SKU. Une fois l’abonnement acheté, le locataire reçoit le nombre de v-cores à affecter aux capacités. C’est ce qu’on appelle le *regroupement de v-cores*. Par exemple, l’achat d’une référence SKU P3 fournit au locataire 32 v-cores. Pour plus d’informations, consultez la page [Comment acheter Power BI Premium](service-admin-premium-purchase.md).
 
 ## <a name="dedicated-capacities"></a>Capacités dédiées
 
@@ -127,13 +127,13 @@ Notes de la section :
 
 ### <a name="regional-support"></a>Support régional
 
-Lors de la création d’une capacité, les administrateurs généraux Office 365 et les administrateurs du service Power BI peuvent spécifier la région où doivent résider les espaces de travail affectés à la capacité. Il s’agit de la fonctionnalité **Multi-Geo**. Avec la fonctionnalité Multi-Geo, les organisations peuvent répondre aux exigences de résidence des données, en déployant le contenu dans les centres de données d’une région, même si cette région est différente de celle où réside l’abonnement Office 365. Pour plus d’informations, consultez [Prise en charge Multi-Geo pour Power BI Premium](service-admin-premium-multi-geo.md).
+Lors de la création d’une capacité, les Administrateurs généraux Office 365 et les Administrateurs du service Power BI peuvent spécifier la région où doivent résider les espaces de travail affectés à la capacité. Il s’agit de la fonctionnalité **Multi-Geo**. Avec la fonctionnalité Multi-Geo, les organisations peuvent répondre aux exigences de résidence des données, en déployant le contenu dans les centres de données d’une région, même si cette région est différente de celle où réside l’abonnement Office 365. Pour plus d’informations, consultez [Prise en charge Multi-Geo pour Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### <a name="capacity-management"></a>Gestion des capacités
 
 La gestion des capacités Premium implique la création ou la suppression de capacités, l’affectation d’administrateurs, l’affectation d’espaces de travail, la configuration de charges de travail, la supervision et la réalisation de certains ajustements pour optimiser les performances des capacités. 
 
-Les administrateurs généraux Office 365 et les administrateurs du service Power BI peuvent créer des capacités Premium à partir des v-cores disponibles ou modifier les capacités Premium existantes. Lorsque vous créez une capacité, vous devez indiquer la taille de la capacité et sa région géographique, et vous devez lui affecter au moins un administrateur. 
+Les Administrateurs généraux Office 365 et les Administrateurs de service Power BI peuvent créer des capacités Premium à partir des v-cores disponibles ou modifier les capacités Premium existantes. Lorsque vous créez une capacité, vous devez indiquer la taille de la capacité et sa région géographique, et vous devez lui affecter au moins un administrateur. 
 
 Lors de la création de capacités, la plupart des tâches d’administration peuvent être effectuées dans le [portail d’administration](service-admin-portal.md).
 

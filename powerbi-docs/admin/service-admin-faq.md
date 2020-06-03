@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ce18b3cb077e0fee2eea4d0d31327329f405a51a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 25b5665aa531c347d43a197b53938aec569b9d2d
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563746"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812171"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -27,8 +27,8 @@ Cet article répond aux questions fréquemment posées concernant l’administra
 * [Avec PowerShell](#using-powershell)
 * [Comment les utilisateurs peuvent-ils s’inscrire à Power BI ?](#how-do-users-sign-up-for-power-bi)
 * [Comment les utilisateurs individuels de mon organisation peuvent-ils s’inscrire ?](#how-do-individual-users-in-my-organization-sign-up)
-* [Comment empêcher les utilisateurs de rejoindre mon locataire Office 365 existant ?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
-* [Comment puis-je permettre aux utilisateurs de s’associer à mon locataire Office 365 existant ?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
+* [Comment empêcher les utilisateurs de rejoindre mon organisation existante ?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [Comment puis-je permettre aux utilisateurs de rejoindre mon organisation existante ?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Comment vérifier que le blocage est activé dans le locataire ?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Comment empêcher les utilisateurs existants d’utiliser Power BI ?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Comment puis-je autoriser mes utilisateurs existants à s’inscrire à Power BI ?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)

@@ -20,6 +20,8 @@
           href: custom-visual-develop-tutorial-format-options.md
         - name: Ajouter des tests unitaires pour un projet de visuel
           href: unit-tests-introduction.md
+        - name: Créer un tracé en entonnoir du script R au visuel R
+          href: funnel-plot-from-r.md
     - name: Concepts
       items:
         - name: "Structure de projets de visuels Power\_BI"

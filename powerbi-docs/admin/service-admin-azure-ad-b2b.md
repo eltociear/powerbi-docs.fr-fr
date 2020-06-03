@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 25b136bfa15b00333400b80781d968d0b40d9779
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2bb54bf7340e89b86bfbfd56390b79a7051dd709
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564492"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812275"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -153,7 +153,7 @@ Pour aider les invités autorisés à se connecter à Power BI, fournissez-leur
 * Des paramètres Active Directory peuvent limiter ce que les utilisateurs invités externes peuvent faire dans l’ensemble de votre organisation. Ceci s’applique également à votre environnement Power BI. La documentation suivante décrit les paramètres :
     * [Gérer les paramètres de collaboration externes](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Autoriser ou bloquer les invitations aux utilisateurs B2B provenant d’organisations spécifiques ](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
-    * [Autoriser les utilisateurs invités à accéder au service Power BI ou les en empêcher](/azure/active-directory/conditional-access/overview)
+    * [Utiliser l’accès conditionnel pour autoriser ou bloquer l’accès](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
     
 * Le partage en dehors de l’organisation n’est pas pris en charge par les clouds nationaux. Créez des comptes d’utilisateur dans votre organisation qui permettront aux utilisateurs externes d’accéder au contenu. 
 
