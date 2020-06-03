@@ -6,15 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/07/2020
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 9f94d6a1b99bce40d3f901dd71877da3f6b236af
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792902"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159694"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Microsoft 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -97,7 +98,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |Gestion des données|Passerelle de gestion des données|Disponible|Disponible|Disponible|
 |  |Chiffrement de données dans une base de données Azure SQL|Disponible|Disponible|Disponible|
 |  |Chiffrement de données dans le Stockage Blob pour Power BI|Disponible|Disponible|Disponible|
-|Intégration entre produits|Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI|Non disponible|Non disponible|Non disponible|
+|Intégration entre produits|Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI|Disponible|Non disponible|Non disponible|
 |  |Incorporation dans SharePoint Online à l’aide du composant WebPart Incorporer|Disponible|Disponible|Disponible|
 |  |Flux de données et fonctions d’IA|Non disponible|Non disponible|Non disponible|
 |  |Connectivité Power Automate pour les alertes de données|Non disponible|Non disponible|Non disponible|

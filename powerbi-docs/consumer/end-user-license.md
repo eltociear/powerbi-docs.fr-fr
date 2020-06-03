@@ -3,19 +3,19 @@ title: Types de licences pour les consommateurs de Power BI
 description: Découvrez les différents types de licences et déterminez la licence dont vous disposez.
 author: mihart
 ms.reviewer: lukasz
-ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 05/20/2020
 ms.author: mihart
+ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: f39460c823b79748d0a181646a9645d86467ef02
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f88040120bc21225d6637d12e992f774ba71761d
+ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794145"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84160292"
 ---
 # <a name="licenses-and-subscriptions-for-consumers"></a>Licences et abonnements pour les *consommateurs*
 
