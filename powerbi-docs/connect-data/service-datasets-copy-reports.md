@@ -1,22 +1,22 @@
 ---
-title: Copier des rapports à partir d’autres applications ou espaces de travail (préversion) – Power BI
+title: Copier des rapports à partir d’autres applications ou espaces de travail – Power BI
 description: Découvrez comment créer une copie d’un rapport et l’enregistrer dans votre propre espace de travail.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: d70f029568dca578bb76350a42b5146ecc335759
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83312623"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793106"
 ---
-# <a name="copy-reports-from-other-workspaces-preview"></a>Copier des rapports à partir d’autres espaces de travail (préversion)
+# <a name="copy-reports-from-other-workspaces"></a>Copier des rapports à partir d’autres espaces de travail
 
 Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou une application, vous pouvez en faire une copie et l’enregistrer dans un autre espace de travail. Vous pouvez ensuite modifier votre copie du rapport, en ajoutant ou supprimant des visuels et d’autres éléments. Vous n’avez pas à vous soucier de la création du modèle de données. Il est déjà créé pour vous. En outre, il est beaucoup plus facile de modifier un rapport existant que de démarrer à partir de zéro. Cependant, quand vous créez une application à partir de votre espace de travail, vous ne pouvez pas toujours publier la copie du rapport dans l’application. Pour plus d’informations, consultez [Considérations et limitations dans l’article « Utiliser des jeux de données dans des espaces de travail »](service-datasets-across-workspaces.md#considerations-and-limitations).
 
@@ -41,7 +41,7 @@ Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou u
 
     Vous pouvez enregistrer le rapport dans l’espace de travail actuel ou un autre dans le service Power BI. Vous voyez uniquement les espaces de travail de nouvelle expérience, desquels vous êtes membre. 
   
-4. Sélectionnez **Save (Enregistrer)** .
+4. Sélectionnez **Enregistrer**.
 
     Power BI crée automatiquement une copie du rapport et une entrée dans la liste des jeux de données si le rapport est basé sur un jeu de données se trouvant hors de l’espace de travail. L’icône de ce jeu de données est différente de l’icône des jeux de données dans l’espace de travail : ![Icône de jeu de données partagé](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
     
@@ -106,5 +106,5 @@ Vous pouvez décider que vous ne voulez plus du rapport et de son jeu de donnée
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- [Utiliser des jeux de données entre des espaces de travail](service-datasets-across-workspaces.md)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3a7d7b0afa4a1eb3d6af81d3e6ba1315e291c4b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 25a0f5abe07b82c2397ab2800802eba6f624a27c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324721"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119936"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Regrouper des visuels dans les rapports Power BI Desktop
 Avec le **regroupement** dans **Power BI Desktop**, vous pouvez regrouper des visuels dans votre rapport, comme des boutons, des zones de texte, des images de formes et tout visuel que vous créez, tout comme vous regroupez des éléments dans PowerPoint. Le fait de regrouper des visuels dans un rapport vous permet de traiter le groupe comme un objet unique, ce qui rend le déplacement, le redimensionnement et l’utilisation de couches dans votre rapport plus faciles, plus rapides et plus intuitifs.
@@ -33,6 +33,8 @@ Les groupes sont affichés dans le volet **Sélection**. Vous pouvez avoir autan
 ![imbrication de groupes](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
 Dans le volet **Sélection**, vous pouvez également faire glisser et déposer des visuels individuels pour les inclure dans un groupe, les supprimer d’un groupe, imbriquer un groupe ou supprimer un groupe ou un visuel individuel d’une imbrication. Faites simplement glisser le visuel que vous voulez ajuster, puis placez-le à l’emplacement de votre choix. En cas de chevauchement, la superposition de visuels est déterminée par leur ordre dans la liste *Ordre des couches*.
+
+Il est facile de renommer un groupe : double-cliquez simplement sur le nom du groupe dans le volet **Sélection**, puis saisissez le nouveau nom de votre groupe.
 
 ![faire glisser et déplacer des groupes](media/desktop-grouping-visuals/grouping-visuals-04.png)
 

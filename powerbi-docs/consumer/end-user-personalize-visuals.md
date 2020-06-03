@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/09/2020
+ms.date: 05/21/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 83f040fd021a3d3e1cd6ce344c84051c7ff58bb0
-ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
+ms.openlocfilehash: 9599d9b96b98feed4a8751c6bd028ca8b3f77ed3
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83383154"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793582"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Personnaliser les visuels dans un rapport
 
@@ -117,7 +117,7 @@ La fonctionnalité présente actuellement quelques limitations à connaître.
 
 - **Personnaliser ce visuel** peut être désactivé pour un rapport entier ou pour un visuel particulier. Si vous n’avez pas la possibilité de personnaliser un visuel, contactez l’administrateur de votre locataire ou le propriétaire du rapport. Pour afficher les informations de contact du propriétaire du rapport, sélectionnez le nom du rapport dans la barre de menus Power BI.
 - Les explorations des utilisateurs ne sont pas automatiquement conservées. Vous devez enregistrer votre affichage dans les signets personnels pour capturer vos modifications.
-- Il n’est pas possible de modifier les visuels dans les applications mobiles Power BI. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles.
+- Cette fonctionnalité est prise en charge dans les applications mobiles Power BI pour les tablettes iOS et Android, ainsi que dans l’application Windows Power BI. Elle n’est pas prise en charge dans les applications mobiles Power BI pour les téléphones. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles Power BI.
 
 Il existe également quelques problèmes connus que nous sommes en train de traiter :
 

@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 67a9725e55f82e325466789064f5738222919ac8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114724"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794113"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 
 Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour une application personnalisée qui appelle des [API REST Power BI](../automation/rest-api-reference.md).
 
-Dans Azure Active Directory, un locataire représente une organisation. Il s’agit d’une instance dédiée du service Azure AD qu’une organisation reçoit et détient lorsqu’elle s’inscrit à un service cloud Microsoft comme Azure, Microsoft Intune ou Office 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
+Dans Azure Active Directory, un locataire représente une organisation. Il s’agit d’une instance dédiée du service Azure AD qu’une organisation reçoit et détient lorsqu’elle s’inscrit à un service cloud Microsoft comme Azure, Microsoft Intune ou Microsoft 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
 
 Lorsque vous disposez d’un locataire Azure AD, vous pouvez définir une application et lui attribuer des autorisations pour lui permettre d’appeler des [API REST Power BI](../automation/rest-api-reference.md).
 
@@ -27,7 +27,7 @@ Si votre organisation possède déjà un locataire Azure AD, vous pouvez l’uti
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Créer un client Azure Active Directory
 
-Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD, ce qui vous demande d’avoir un annuaire Azure AD. Cet annuaire est votre *locataire*. Si votre organisation n’a pas encore de locataire, car elle n’utilise pas Power BI ou Office 365, [vous devez configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Si nécessaire, vous pouvez également créer un locataire à des fins de test.
+Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD, ce qui vous demande d’avoir un annuaire Azure AD. Cet annuaire est votre *locataire*. Si votre organisation n’a pas encore de locataire, car elle n’utilise pas Power BI ou Microsoft 365, [vous devez configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Si nécessaire, vous pouvez également créer un locataire à des fins de test.
 
 Pour créer un locataire Azure AD :
 

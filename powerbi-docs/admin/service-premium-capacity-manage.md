@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 2e32a61891cee2fb5e2a80167d5283962dc164bb
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fdb3db1db1fe82743658f6a6073386701e7fe961
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83134799"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120992"
 ---
 # <a name="managing-premium-capacities"></a>Gérer les capacités Premium
 
@@ -23,7 +23,7 @@ La gestion de Power BI Premium implique la création, la gestion et la surveilla
 
 ## <a name="creating-and-managing-capacities"></a>Création et gestion des capacités
 
-La page **Paramètres de capacité** du portail d’administration Power BI affiche le nombre de v-cores achetés et de capacités Premium disponibles. La page permet aux administrateurs généraux Office 365 et administrateurs du service Power BI de créer des capacités Premium à partir des v-cores disponibles ou modifier les capacités Premium existantes.
+La page **Paramètres de capacité** du portail d’administration Power BI affiche le nombre de v-cores achetés et de capacités Premium disponibles. La page permet aux administrateurs généraux et administrateurs du service Power BI de créer des capacités Premium à partir des v-cores disponibles ou modifier les capacités Premium existantes.
 
 Lors de la création d’une capacité Premium, les administrateurs doivent définir les éléments suivants :
 
@@ -47,7 +47,7 @@ La taille de la capacité est sélectionnée à partir d’une liste de référe
 
 Une capacité Premium peut être attribuée à une région autre que la région d’hébergement du locataire Power BI. C’est ce qu’on appelle la fonctionnalité Multi-Geo. Le Multi-Geo fournit un contrôle administratif des centres de données dans lesquels votre contenu Power BI réside au sein de régions géographiques définies. L’objectif de l’utilisation d’un déploiement Multi-Geo est généralement la conformité de l’entreprise ou du gouvernement, plutôt que les performances et la mise à l’échelle. Le chargement de rapports et de tableaux de bord implique toujours des requêtes à la région d’origine pour les métadonnées. Pour plus d’informations, consultez [Prise en charge Multi-Geo pour Power BI Premium](service-admin-premium-multi-geo.md).
 
-Les administrateurs de service Power BI et les administrateurs généraux Office 365 peuvent modifier les capacités Premium. Plus précisément, ils peuvent :
+Les administrateurs de service Power BI et les administrateurs généraux peuvent modifier les capacités Premium. Plus précisément, ils peuvent :
 
 - Modifier la taille de la capacité pour mettre à l’échelle les ressources.
 - Ajouter ou supprimer des administrateurs de capacité.
@@ -67,7 +67,7 @@ La suppression d’une capacité Premium est possible et n’entraîne pas la su
 
 Les espaces de travail peuvent être affectés à une capacité Premium dans le portail d’administration Power BI ou, pour un espace de travail, dans le volet **Espace de travail**.
 
-Les administrateurs de capacité, ainsi que les administrateurs généraux d’Office 365 ou administrateurs de service Power BI peuvent attribuer en bloc des espaces de travail dans le portail d’administration de Power BI. L’attribution en bloc peut s’appliquer à :
+Les administrateurs de capacité, ainsi que les administrateurs généraux ou administrateurs de service Power BI peuvent attribuer en bloc des espaces de travail dans le portail d’administration de Power BI. L’attribution en bloc peut s’appliquer à :
 
 - **Espaces de travail par utilisateurs** : tous les espaces de travail détenus par ces utilisateurs, y compris les espaces de travail personnels, sont affectés à la capacité Premium. Cela inclut la réaffectation des espaces de travail lorsqu’ils sont déjà affectés à une capacité Premium différente. En outre, les utilisateurs reçoivent également des autorisations d’affectation d’espace de travail.
 

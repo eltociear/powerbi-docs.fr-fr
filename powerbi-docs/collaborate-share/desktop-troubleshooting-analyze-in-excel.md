@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 01/29/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 555d203cfa8bd00e745c0dcff5de7f7e8d48f06c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e6e18677d3ad9f9f0cf29db03b6e489416354411
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563181"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120659"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Résolution des problèmes de la fonctionnalité Analyser dans Excel
 
@@ -84,7 +84,7 @@ Si vous recevez une erreur **Jeton expiré**, cela signifie que vous n’avez pa
 Si vous essayez d’accéder à un jeu de données qui a des connexions à des données Analysis Services locales, vous risquez de recevoir un message d’erreur. **Analyser dans Excel** prend en charge la connexion à des jeux de données et rapports dans **Analysis Services** en local avec une chaîne de connexion, à condition que votre ordinateur soit sur le même domaine que le serveur **Analysis Services** et que votre compte ait accès à ce serveur **Analysis Services**.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Impossible de faire glisser quelque chose dans la zone des valeurs de tableau croisé dynamique (aucune mesure)
-Lorsque **Analyser dans Excel** se connecte à un modèle OLAP externe (c’est la façon dont Excel se connecte à Power BI), le *tableau croisé dynamique* [exige que les **mesures** soient définies dans le modèle externe](https://support.microsoft.com/kb/234700), car tous les calculs sont effectués sur le serveur. Ce comportement est différent lorsque vous utilisez une source de données locale (comme des tableaux dans Excel ou quand vous utilisez des jeux de données dans **Power BI Desktop** ou le **service Power BI**) : dans ce cas, le modèle tabulaire est disponible localement et [vous pouvez utiliser des mesures implicites](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4), c’est-à-dire des mesures générées dynamiquement et qui ne sont pas stockées dans le modèle de données. Dans ces cas-là, le comportement dans Excel est différent du comportement dans **Power BI Desktop** ou le **service Power BI** : il peut y avoir des colonnes de données qui peuvent être traitées en tant que mesures dans Power BI, mais qui ne peuvent pas être utilisées en tant que valeurs (mesures) dans Excel.
+Lorsque **Analyser dans Excel** se connecte à un modèle OLAP externe (c’est la façon dont Excel se connecte à Power BI), le *tableau croisé dynamique* exige que les **mesures** soient définies dans le modèle externe, car tous les calculs sont effectués sur le serveur. Ce comportement est différent lorsque vous utilisez une source de données locale (comme des tableaux dans Excel ou quand vous utilisez des jeux de données dans **Power BI Desktop** ou le **service Power BI**) : dans ce cas, le modèle tabulaire est disponible localement et [vous pouvez utiliser des mesures implicites](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4), c’est-à-dire des mesures générées dynamiquement et qui ne sont pas stockées dans le modèle de données. Dans ces cas-là, le comportement dans Excel est différent du comportement dans **Power BI Desktop** ou le **service Power BI** : il peut y avoir des colonnes de données qui peuvent être traitées en tant que mesures dans Power BI, mais qui ne peuvent pas être utilisées en tant que valeurs (mesures) dans Excel.
 
 Pour résoudre ce problème, plusieurs options s’offrent à vous :
 
@@ -97,7 +97,7 @@ Une fois que vos mesures sont définies dans le modèle au sein du service Power
 ## <a name="next-steps"></a>Étapes suivantes
 [Analyser dans Excel](service-analyze-in-excel.md)
 
-[Didacticiel : Créer vos propres mesures dans Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
+[Tutoriel : Créer ses propres mesures dans Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
 
 [Mesures dans PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
 

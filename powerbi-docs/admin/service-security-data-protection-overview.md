@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d70262908df5568066533d1b638c7a1495a3f30b
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83132039"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733229"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Protection des données dans Power BI (préversion)
 
@@ -23,7 +23,7 @@ Les entreprises modernes ont des réglementations commerciales strictes et des e
 
 Avec la protection des données pour Power BI, vous pouvez effectuer les opérations suivantes :
 
-* Utilisez les étiquettes de sensibilité de Microsoft pour classifier et étiqueter du contenu dans le service Power BI (tableaux de bord, rapports, jeux de données et dataflows), avec la même taxonomie que celle utilisée pour classifier et protéger les fichiers dans Office 365. 
+* Utilisez les étiquettes de sensibilité de Microsoft pour classifier et étiqueter du contenu dans le service Power BI (tableaux de bord, rapports, jeux de données et dataflows), avec la même taxonomie que celle utilisée pour classifier et protéger les fichiers dans Microsoft 365.
 
 * Appliquez des paramètres de protection, comme le chiffrement ou les filigranes lors de l’exportation de données à partir du service Power BI vers des fichiers en appliquant la protection et l’étiquette de sensibilité du contenu (Excel, PowerPoint et PDF). 
 
@@ -35,7 +35,7 @@ Avec la protection des données pour Power BI, vous pouvez effectuer les opéra
 
 Les étiquettes de sensibilité sont créées et gérées dans le [Centre de sécurité Microsoft 365](https://security.microsoft.com/) ou dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
 
-Pour accéder aux étiquettes de sensibilité dans l’un de ces centres, accédez à **Classification > Étiquettes de sensibilité**. Ces étiquettes de sensibilité peuvent être utilisées par plusieurs services Microsoft, comme Azure Information Protection, les applications Office et les services Office 365.
+Pour accéder aux étiquettes de sensibilité dans l’un de ces centres, accédez à **Classification** > **Étiquettes de sensibilité**. Ces étiquettes de sensibilité peuvent être utilisées par plusieurs services Microsoft, comme Azure Information Protection, les applications Microsoft et les services Microsoft 365.
 
 > [!IMPORTANT]
 > Les clients Azure Information Protection doivent migrer les étiquettes vers l’un des services précédemment listés afin que des étiquettes de sensibilité soient utilisées dans Power BI. De plus, les étiquettes de sensibilité sont uniquement prises en charge dans les clouds publics. Elles ne sont pas prises en charge pour les locataires dans des clouds, comme les clouds souverains.

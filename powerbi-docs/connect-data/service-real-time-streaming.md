@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b0ee72fdfdf504537073b0de22e5c386ca2572ad
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8e991a8696ac35ed0a7d4b448bb4dd83d9a19c42
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83327941"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793437"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
@@ -215,7 +215,7 @@ Les jeux de données de streaming sont conçus pour afficher les données les pl
 Pour les jeux de données de transmission, en supposant que vous avez un horodatage dans le schéma, vous pouvez essayer de créer un visuel de rapport avec le dernier filtre N.
 
 #### <a name="can-i-connect-to-push-or-streaming-datasets-in-power-bi-desktop"></a>Puis-je me connecter à des jeux de données de transmission ou de streaming dans Power BI Desktop ?
-Non, cette option n’est pas disponible pour l’instant.
+Les jeux de données hybrides et de transmission peuvent être connectés en direct dans Power BI Desktop, mais d’autres jeux de données de streaming ne peuvent pas être connectés dans Power BI Desktop.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Étant donné la question précédente, comment puis-je modéliser les jeux de données en temps réel ?
 La modélisation n’est pas possible sur un jeu de données de streaming, car les données ne sont pas stockées définitivement. Pour un jeu de données de transmission, vous pouvez utiliser les API REST de mise à jour de table/jeu de données pour ajouter des mesures et des relations. 

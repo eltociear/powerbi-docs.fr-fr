@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 50d0cb1d31a6ec20db69c1b06aaf64f3eed727a2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9bc8f7c100acc3805fbe6ab949e3584cb5fd26e1
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83310001"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121040"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -107,10 +107,12 @@ Si les jeux de données et les rapports que vous avez créés sont basés sur un
 
 Contrairement à l’actualisation d’un jeu de données au cours de laquelle Power BI importe les données d’une source de données dans un jeu de données, l’actualisation OneDrive synchronise les jeux de données et les rapports avec leurs fichiers sources. Par défaut, Power BI vérifie à peu près toutes les heures si un jeu de données connecté à un fichier sur OneDrive ou SharePoint Online nécessite une synchronisation.
 
-> [!IMPORTANT]
-> Soyez prudent quand vous utilisez la gestion des fichiers sur OneDrive. Quand vous définissez un fichier OneDrive comme source de données, Power BI référence l’ID d’élément du fichier quand il effectue l’actualisation, ce qui peut provoquer des problèmes dans certains scénarios. Considérez le scénario dans lequel vous avez un fichier maître _A_ et une copie de production de ce fichier _B_, et où vous configurez l’actualisation de OneDrive pour le fichier B. Si vous _copiez_ ensuite le fichier A sur le fichier B, l’opération de copie supprime l’ancien fichier B et crée un nouveau fichier B avec un ID d’élément différent, ce qui empêche l’actualisation de OneDrive. Au lieu de cela, vous devez charger et remplacer le fichier B, qui conserve le même ID d’élément.
+Power BI effectue l’actualisation en fonction d’un ID d’élément dans OneDrive, aussi faites attention lorsque vous choisissez entre mise à jour et remplacement. Quand vous définissez un fichier OneDrive comme source de données, Power BI référence l’ID d’élément du fichier quand il effectue l’actualisation. Considérez le scénario suivant : vous avez un fichier maître _A_ et une copie de production de ce fichier _B_, et où vous configurez l’actualisation de OneDrive pour le fichier B. Si vous _copiez_ ensuite le fichier A sur le fichier B, l’opération de copie supprime l’ancien fichier B et crée un nouveau fichier B avec un ID d’élément différent, ce qui empêche l’actualisation de OneDrive. Pour éviter cette situation, vous pouvez télécharger et remplacer le fichier B, qui conserve son ID d’élément.
 
 Vous pouvez déplacer le fichier à un autre emplacement (par exemple avec la fonction de glisser-déposer) : l’actualisation continuera de fonctionner, car Power BI connaît encore l’ID de fichier. Cependant, si vous copiez ce fichier à un autre emplacement, une nouvelle instance du fichier et un nouvel ID de fichier sont créés. Par conséquent, votre référence de fichier Power BI n’est plus valide et l’actualisation échoue.
+
+> [!NOTE]
+> L’actualisation d’un jeu de données peut demander à Power BI jusqu’à 10 minutes, même une fois que la synchronisation est terminée sur votre machine locale et que vous avez utilisé *Actualiser maintenant* dans le service Power BI.
 
 Pour passer en revue les cycles de synchronisation antérieurs, consultez l’onglet OneDrive dans l’historique des actualisations. La capture d’écran suivante montre un cycle de synchronisation terminé pour un exemple de jeu de données.
 

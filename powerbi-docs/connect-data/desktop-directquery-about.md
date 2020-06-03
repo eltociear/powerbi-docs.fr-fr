@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 05df39b58334b33046fde0f95b9f1ca596c1eec1
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563284"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120555"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -184,7 +184,7 @@ Chaque interaction utilisateur sur le rapport peut entraîner une actualisation 
 
 De même, la modification d’un nouveau rapport exige l’envoi de requêtes à chaque étape de la production du visuel final.
 
-Des résultats sont mis en cache. L’actualisation d’un visuel est instantanée si des résultats rigoureusement identiques ont été récemment obtenus. Si la sécurité au niveau des lignes n’est pas définie, ces caches ne sont pas partagés entre les utilisateurs.
+Des résultats sont mis en cache. L’actualisation d’un visuel est instantanée si des résultats rigoureusement identiques ont été récemment obtenus. Si la sécurité au niveau des lignes est définie, ces caches ne sont pas partagés entre les utilisateurs.
 
 #### <a name="dashboard-refresh"></a>Actualisation du tableau de bord
 
@@ -359,13 +359,13 @@ Pour certaines sources DirectQuery, ce journal comprend toutes les requêtes env
 
 Le fichier de trace figure dans le dossier *AppData* de l’utilisateur actuel :
 
-*\<Utilisateur>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*
+*\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces*
 
 Pour accéder à ce dossier, dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**, puis **Diagnostics**. La boîte de dialogue suivante s’affiche :
 
 ![Lien pour ouvrir le dossier des traces](media/desktop-directquery-about/directquery-about_06.png)
 
-Quand vous sélectionnez **Ouvrir le dossier des traces/vidages sur incident** sous **Options de diagnostic**, le dossier suivant s’ouvre : *\<Utilisateur>\AppData\Local\Microsoft\Power BI Desktop\Traces*.
+Quand vous sélectionnez **Ouvrir le dossier des traces/vidages sur incident** sous **Options de diagnostic**, le dossier suivant s’ouvre : *\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces*.
 
 En accédant au dossier parent de ce dossier, vous pouvez voir le dossier contenant *AnalysisServicesWorkspaces*, qui inclut un dossier d’espace de travail pour chaque instance ouverte de Power BI Desktop. Les noms de ces dossiers ont un nombre entier en suffixe, par exemple *AnalysisServicesWorkspace2058279583*.
 
@@ -381,7 +381,7 @@ Pour ouvrir le fichier de trace, procédez comme suit :
 
 1. Dans SQL Server Profiler, sélectionnez **Fichier** > **Ouvrir** > **Fichier de trace**.
 
-1. Entrez le chemin d’accès du fichier de trace pour la session Power BI actuellement ouverte, par exemple : *C:\Utilisateurs\<utilisateur>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*.
+1. Entrez le chemin d’accès du fichier de trace pour la session Power BI actuellement ouverte, par exemple : *C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data*.
 
 1. Ouvrez *FlightRecorderCurrent.trc*.
 

@@ -9,25 +9,25 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ad60e65406ee69bed4e544486c955765203ddc5c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a2c4925e03a0e356ca44556fa7e545459c487dac
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347996"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733390"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
 > Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
-Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez cette opération à la place : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu d’organisation*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.
+Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez plutôt de procéder ainsi : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu professionnel*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
 La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un espace de travail. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md). 
 
-Dans AppSource, vous pouvez parcourir ou rechercher les packs de contenu publiés à l’ensemble de l’organisation, à des groupes de distribution ou de sécurité, ainsi qu’à des [groupes Office 365 auxquels vous appartenez](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Si vous n’êtes pas membre d’un groupe spécifique, vous ne voyez pas les packs de contenu partagés avec ce groupe. Tous les membres du groupe ont le même accès en lecture seule aux données des packs de contenu, rapports, classeurs et tableaux de bord (sauf s’il s’agit d’une source de données SQL Server Analysis Services (SSAS), auquel cas vos privilèges sont hérités avec la source de données).
+Dans AppSource, vous pouvez parcourir ou rechercher les packs de contenu publiés à l’ensemble de l’organisation, à des groupes de distribution ou de sécurité, ainsi qu’à des [groupes Microsoft 365 auxquels vous appartenez](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Si vous n’êtes pas membre d’un groupe spécifique, vous ne voyez pas les packs de contenu partagés avec ce groupe. Tous les membres du groupe ont le même accès en lecture seule aux données des packs de contenu, rapports, classeurs et tableaux de bord (sauf s’il s’agit d’une source de données SQL Server Analysis Services (SSAS), auquel cas vos privilèges sont hérités avec la source de données).
 
 Les tableaux de bord, rapports et classeurs Excel sont en lecture seule. Toutefois, vous pouvez copier les tableaux de bord et les rapports pour vous en servir comme point de départ afin de créer votre propre version personnalisée du pack de contenu.
 
@@ -36,7 +36,7 @@ Les tableaux de bord, rapports et classeurs Excel sont en lecture seule. Toutef
 > 
 > 
 
-## <a name="what-is-appsource"></a>Qu’est-ce qu’*AppSource* ?
+## <a name="what-is-appsource"></a>Qu’est-ce qu’*AppSource* ?
 La publication d’un pack de contenu d’organisation l’ajoute à AppSource.  Ce dépôt centralisé permet à des membres de parcourir et de découvrir facilement des tableaux de bord, des rapports et des jeux de données publiés pour eux.  
 
 * Pour afficher AppSource, sélectionnez **Obtenir les données** > **Mon organisation** > **Obtenir**.

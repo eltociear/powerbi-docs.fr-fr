@@ -9,36 +9,36 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: aeaaf0e1e8baa70b5159d908ce1e27bb937de372
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9f94d6a1b99bce40d3f901dd71877da3f6b236af
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344707"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792902"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
-Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Office 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
+Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Microsoft 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
 
-## <a name="add-power-bi-to-your-office-365-government-plan"></a>Ajouter Power BI à une offre Office 365 Secteur Public
+## <a name="add-power-bi-to-your-microsoft-365-government-plan"></a>Ajouter Power BI à votre offre Microsoft 365 Secteur Public
 
-Pour obtenir un abonnement Power BI pour le gouvernement des États-Unis et affecter des licences aux utilisateurs, vous devez vous inscrire à une offre Office 365 Secteur Public. Si votre organisation dispose déjà d’une offre Office 365 Secteur Public, passez directement à [Achat d’un abonnement Power BI Pro pour les clients du gouvernement](#buy-a-power-bi-pro-subscription-for-government-customers).
+Pour obtenir un abonnement Power BI pour le gouvernement des États-Unis et affecter des licences aux utilisateurs, vous devez vous inscrire à une offre Microsoft 365 Secteur Public. Si votre organisation dispose déjà d’une offre Microsoft 365 Secteur Public, passez directement à [Achat d’un abonnement Power BI Pro pour les clients du gouvernement](#buy-a-power-bi-pro-subscription-for-government-customers).
 
-### <a name="enroll-in-an-office-365-government-plan"></a>Souscrire une offre Office 365 Secteur Public
+### <a name="enroll-in-a-microsoft-365-government-plan"></a>S’inscrire à un plan Microsoft 365 Secteur Public
 
-Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre organisation pour pouvoir vous inscrire à un abonnement Office 365 Secteur Public.  Commencez par compléter le [formulaire de validation de l’admissibilité Office 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Pour sélectionner un abonnement adapté à votre organisation, consultez la [description des services Office 365 pour le gouvernement des États-Unis](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
+Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre organisation pour pouvoir vous inscrire à un abonnement Microsoft 365 Secteur Public.  Commencez par compléter le [formulaire de validation de l’admissibilité Microsoft 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Pour sélectionner un abonnement adapté à votre organisation, consultez la [description des services Microsoft 365 pour le gouvernement des États-Unis](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
-> Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud du gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Office 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licences commerciales des comptes d’utilisateurs, puis affectez une licence Power BI Pro Secteur Public aux comptes d’utilisateurs.
+> Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud du gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Microsoft 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licences commerciales des comptes d’utilisateurs, puis affectez une licence Power BI Pro Secteur Public aux comptes d’utilisateurs.
 >
 >
 ## <a name="government-cloud-instances"></a>Instances du cloud pour le secteur public
-Office 365 propose différents environnements pour les organismes gouvernementaux qui répondent à différentes exigences de conformité. Pour plus d’informations sur chaque environnement, consultez :
+Microsoft 365 propose différents environnements pour les organismes gouvernementaux qui répondent à différentes exigences de conformité. Pour plus d’informations sur chaque environnement, consultez :
 
-* Le [Cloud de la communauté du secteur public (GCC) Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
+* Le [Cloud de la communauté du secteur public (GCC) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
 
-* Le [Cloud de la communauté du secteur public High (GCC High) Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
+* Le [Cloud de la communauté du secteur public High (GCC High) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
 
-* [L’environnement Office 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis. 
+* [L’environnement Microsoft 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis. 
 
 ## <a name="connect-to-power-bi-for-us-government"></a>Connexion à Power BI pour le gouvernement des États-Unis
 
@@ -52,7 +52,7 @@ Votre compte peut être configuré dans plusieurs clouds. Si votre compte est co
 
 ## <a name="buy-a-power-bi-pro-subscription-for-government-customers"></a>Acheter un abonnement Power BI Pro pour les clients du secteur public
 
-Après avoir déployé Office 365, vous pouvez ajouter un abonnement Power BI Pro. Suivez l’aide pas à pas [Inscription d’une organisation du gouvernement des États-Unis](service-govus-signup.md) pour acheter le service Power BI Pro Secteur Public. Achetez suffisamment de licences pour tous les utilisateurs qui doivent utiliser Power BI, puis attribuez-les aux différents comptes d’utilisateur.
+Après avoir déployé Microsoft 365, vous pouvez ajouter un abonnement Power BI Pro. Suivez l’aide pas à pas [Inscription d’une organisation du gouvernement des États-Unis](service-govus-signup.md) pour acheter le service Power BI Pro Secteur Public. Achetez suffisamment de licences pour tous les utilisateurs qui doivent utiliser Power BI, puis attribuez-les aux différents comptes d’utilisateur.
 
 > [!IMPORTANT]
 > Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence *gratuite*. Chaque utilisateur doit disposer d’une licence *Pro* pour pouvoir accéder au cloud de la communauté du secteur public. Un compte d’utilisateur qui dispose d’une licence gratuite n’est autorisé à accéder qu’au cloud commercial et rencontrera des problèmes d’authentification et d’accès. Si vous avez acheté Power BI Premium, vous n’êtes pas obligé d’attribuer des licences Pro pour permettre l’accès des utilisateurs.  Les utilisateurs de l’organisation peuvent accéder aux rapports partagés avec eux tant que le rapport est publié sur une capacité Premium. Pour connaître les différences entre les types de licences, consultez [Fonctionnalités du service Power BI par type de licence](../fundamentals/service-features-license-type.md).

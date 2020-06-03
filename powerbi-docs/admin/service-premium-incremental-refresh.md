@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 73aade0ee10fe47ff669ccd6bd8c8ab0482f1f78
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: eb9a10c715a03adc9149ca8793ff248a23b9914d
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274486"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121023"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -172,13 +172,9 @@ Le [point de terminaison XMLA](service-premium-connect-tools.md) pour les jeux d
 
 ### <a name="refresh-management-with-sql-server-management-studio-ssms"></a>Actualiser la gestion avec SQL Server Management Studio (SSMS)
 
-Avec l’accès en lecture-écriture du point de terminaison XMLA activé, SSMS peut être utilisé pour afficher et gérer les partitions générées par l’application de stratégies d’actualisation incrémentielle.
+Avec l’accès en lecture-écriture du point de terminaison XMLA activé, SSMS peut être utilisé pour afficher et gérer les partitions générées par l’application de stratégies d’actualisation incrémentielle. Ceci permet, par exemple, d’actualiser une partition historique spécifique absente d’une plage incrémentielle pour exécuter une mise à jour rétro-active sans devoir actualiser toutes les données historiques. Vous pouvez également utiliser SSMS pour charger des données historiques pour des jeux de données très volumineux en ajoutant ou en actualisant des partitions historiques par lots.
 
 ![Partitions dans SSMS](media/service-premium-incremental-refresh/ssms-partitions.png)
-
-#### <a name="refresh-historical-partitions"></a>Actualiser des partitions historiques
-
-Ceci permet, par exemple, d’actualiser une partition historique spécifique absente d’une plage incrémentielle pour exécuter une mise à jour rétro-active sans devoir actualiser toutes les données historiques.
 
 #### <a name="override-incremental-refresh-behavior"></a>Remplacer le comportement d’actualisation incrémentielle
 

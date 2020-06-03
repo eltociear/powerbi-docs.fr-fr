@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 119571e49b69ad6e3c6cfa0a7d3758912ebec0dc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d094e3411bd5b8bef9b4a8f488412d903723a703
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348111"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733551"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -127,7 +127,7 @@ Voici quelques éléments à prendre en compte avant de partager des tableaux de
 * Tous les utilisateurs avec qui vous partagez le tableau de bord peuvent le voir et interagir avec les rapports associés en [mode Lecture](../consumer/end-user-reading-view.md#reading-view). En général, ils ne peuvent pas créer de rapports ni enregistrer les modifications apportées aux rapports existants. Toutefois, si vous sélectionnez **Autoriser les utilisateurs à générer du nouveau contenu à partir des jeux de données sous-jacents**, ils peuvent créer leurs propres rapports dans d’autres espaces de travail en fonction du jeu de données de ce tableau de bord ou rapport.
 * Même si les utilisateurs ne peuvent pas voir ni télécharger le jeu de données, ils peuvent y accéder directement à l’aide de la fonctionnalité Analyser dans Excel. Un administrateur peut limiter la capacité à utiliser Analyser dans Excel pour tous les membres d’un groupe. Cependant, la restriction s’applique à tous les membres de ce groupe et à chaque espace de travail auquel le groupe appartient.
 * Tout le monde peut [actualiser manuellement les données](../connect-data/refresh-data.md).
-* Si vous utilisez Office 365 pour la messagerie électronique, vous pouvez partager avec les membres d’un groupe de distribution en entrant l’adresse de messagerie associée au groupe de distribution.
+* Si vous utilisez Microsoft 365 pour la messagerie électronique, vous pouvez partager avec les membres d’un groupe de distribution en entrant l’adresse de messagerie associée au groupe de distribution.
 * Les collègues qui partagent votre domaine de courrier, ainsi que les collègues dont le domaine est différent, mais inscrit auprès du même locataire, peuvent partager le tableau de bord avec d’autres utilisateurs. Par exemple, supposons que les domaines contoso.com et contoso2.com sont enregistrés dans le même locataire et que votre adresse e-mail est konrads@contoso.com. ravali@contoso.com et gustav@contoso2.com peuvent partager votre tableau de bord, à condition que vous leur accordiez l’autorisation de partager.
 * Si vos collègues ont déjà accès à un tableau de bord ou à un rapport spécifique, vous pouvez envoyer un lien direct en copiant l’URL qui s’affiche quand vous vous trouvez dessus. Par exemple : `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * De même, si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez [envoyer un lien direct vers le rapport sous-jacent](service-share-reports.md). 

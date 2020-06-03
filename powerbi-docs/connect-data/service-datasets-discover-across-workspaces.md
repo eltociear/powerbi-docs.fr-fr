@@ -1,22 +1,22 @@
 ---
-title: Créer des rapports basés sur des jeux de données à partir de différents espaces de travail (préversion) - Power BI
+title: Créer des rapports basés sur des jeux de données à partir de différents espaces de travail - Power BI
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af8cab7403a0ee34505ff395248aec188fd54666
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0e7574f9f1d3b4d6c818115af1f2cb4dcd7b8374
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284724"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793025"
 ---
-# <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Créer des rapports basés sur des jeux de données à partir de différents espaces de travail (préversion)
+# <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Créer des rapports basés sur des jeux de données à partir de différents espaces de travail
 
 Découvrez comment vous pouvez créer des rapports dans vos propres espaces de travail basés sur des jeux de données se trouvant dans d’autres espaces de travail. Pour générer un rapport basé sur un jeu de données existant, vous pouvez commencer à partir de Power BI Desktop ou du service Power BI, dans votre espace Mon espace de travail ou dans une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -61,5 +61,5 @@ Il existe deux types de jeux de données approuvés différents. Les propriétai
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
+- [Utiliser des jeux de données entre des espaces de travail](service-datasets-across-workspaces.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

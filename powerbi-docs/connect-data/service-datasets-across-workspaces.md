@@ -1,22 +1,22 @@
 ---
-title: Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
+title: Introduction aux jeux de données entre plusieurs espaces de travail
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fe0478a7fa570b4d88f4493c4b27fec083041ae
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 0458498b5677f20bac3a2e50f884d820ef1c3648
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285460"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793626"
 ---
-# <a name="intro-to-datasets-across-workspaces-preview"></a>Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
+# <a name="intro-to-datasets-across-workspaces"></a>Introduction aux jeux de données entre plusieurs espaces de travail
 
 Le décisionnel est une activité de collaboration. Il est important de définir des jeux de données normalisés qui peuvent constituer la « source de vérité ». La découverte et la réutilisation de ces jeux de données normalisés sont donc primordiales. Quand les modélisateurs de données expérimentés de votre organisation créent et partagent des jeux de données optimisés, les créateurs de rapports peuvent démarrer avec ces jeux de données pour générer des rapports précis. Votre organisation dispose alors de données cohérentes pour prendre des décisions ainsi que d’une culture de données saine.
 
@@ -33,9 +33,9 @@ La génération de rapports basés sur des jeux de données dans divers espaces 
 - Dans Power BI Desktop, vous pouvez publier des rapports Live Connect sur différents espaces de travail, tant que leurs jeux de données se trouvent dans les espaces de travail nouvelle version.
 - Lors de la copie de rapports dans des espaces de travail, l’espace de travail cible doit être un espace de travail de nouvelle expérience.
 
-## <a name="discover-datasets-preview"></a>Découvrir des jeux de données (préversion)
+## <a name="discover-datasets"></a>Découvrir des jeux de données
 
-Lorsque vous générez un rapport à partir d’un jeu de données existant, la première étape consiste à se connecter au jeu de données dans le service Power BI ou Power BI Desktop. En savoir plus sur la [découverte de jeux de données à partir de différents espaces de travail (préversion)](service-datasets-discover-across-workspaces.md)
+Lorsque vous générez un rapport à partir d’un jeu de données existant, la première étape consiste à se connecter au jeu de données dans le service Power BI ou Power BI Desktop. En savoir plus sur la [découverte de jeux de données à partir de différents espaces de travail](service-datasets-discover-across-workspaces.md)
 
 ## <a name="copy-a-report"></a>Copier un rapport
 

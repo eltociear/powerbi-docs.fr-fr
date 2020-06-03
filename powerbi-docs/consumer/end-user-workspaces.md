@@ -4,21 +4,21 @@ description: Découvrir plus d’informations sur les espaces de travail et les 
 author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 801b5cf5400bbe1cc0487eef596ea3d1cdc5fb1e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a255ae90bd9ba429937582b0d11ccfb8944aecc4
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82120157"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121153"
 ---
 # <a name="collaborate-in-workspaces"></a>Collaborer dans des espaces de travail
 
- Les *espaces de travail* sont des emplacements où collaborer avec des collègues sur du contenu spécifique. Les espaces de travail sont créés par des *concepteurs* Power BI pour contenir des collections de tableaux de bord et de rapports. Le concepteur peut ensuite regrouper cette collection dans une *application* et la distribuer dans toute l’organisation, ou à des personnes ou des groupes spécifiques. 
+ Les *espaces de travail* sont des emplacements où collaborer avec des collègues sur du contenu spécifique. Les espaces de travail sont créés par des *concepteurs* Power BI pour contenir des collections de tableaux de bord et de rapports. Le concepteur peut ensuite partager l’espace de travail avec ses collègues et regrouper cette collection dans une *application* et la distribuer dans toute l’organisation, ou à des personnes ou des groupes spécifiques. 
 
  Toute personne utilisant le service Power BI a également un espace **Mon espace de travail**.  Mon espace de travail est votre bac à sable personnel, où vous pouvez créer du contenu pour vous-même.
 
@@ -31,7 +31,7 @@ ms.locfileid: "82120157"
 
 Les **espaces de travail d’application** regroupent tout le contenu d’une application spécifique. Quand un *concepteur* crée une application, il rassemble tout le contenu nécessaire à l’utilisation de cette application. Le contenu peut inclure des tableaux de bord, des rapports et des jeux de données. Chaque application n’est pas forcément configurée de la sorte. Une application peut contenir un seul tableau de bord, trois éléments de chaque type ou même vingt rapports. Tout dépend de ce que le *concepteur* décide d’inclure dans l’application. En général, les espaces de travail d’application pour les *consommateurs* n’incluent pas les jeux de données.
 
-L’espace de travail de l’application Fig Sales ci-dessous contient trois rapports et un tableau de bord. 
+L’espace de travail de Fig Sales ci-dessous contient trois rapports et un tableau de bord. 
 
 ![Volet de navigation montrant deux types d’espaces de travail](media/end-user-workspaces/power-bi-app-workspace.png)
 
@@ -47,28 +47,10 @@ Pour obtenir une liste détaillée de ce que vous pouvez faire en tant que *cons
 
 
 ### <a name="workspace-roles"></a>Rôles d’espace de travail
-Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
 
-|Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
-|---|---|---|---|---|
-| Mettre à jour et supprimer l’espace de travail.  | X  |   |   |   | 
-| Ajouter/supprimer des personnes, y compris d’autres administrateurs.  | X  |   |   |   |
-| Ajouter des membres ou d’autres rôles avec des autorisations inférieures.  |  X | X  |   |   |
-| Publier et mettre à jour une application. |  X | X  |   |   |
-| Partager un élément ou une application.<sup>1</sup> |  X | X  |   |   |
-| Permettre à d’autres utilisateurs de repartager des éléments.<sup>1</sup> |  X | X  |   |   |
-| Proposer des applications sur la page d’accueil de collègues |  X | X  |   |   |
-| Proposer des tableaux de bord et des rapports sur la page d’accueil de collègues |  X | X  | X |   |
-| Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
-| Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
-| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>1</sup> |  X | X  | X  |   |
-| Copier un rapport. | X | X | X |  |
-| Voir et utiliser un élément.<sup>2</sup> |  X | X  | X  | X  |
-| Lire les données stockées dans les flux de données des espaces de travail | X | X | X | X |
+Voici les fonctionnalités des quatre rôles : Administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
 
-1. Les contributeurs et les membres peuvent partager des éléments dans un espace de travail s’ils ont les autorisations Repartager.
-
-2. Même si vous n’avez pas de licence Power BI Pro, vous pouvez visualiser et interagir avec des éléments dans service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.
+[!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## <a name="licensing-workspaces-and-capacity"></a>Licences, espaces de travail et capacité
 La gestion des licences joue également un rôle concernant ce que vous pouvez et ne pouvez pas faire dans un espace de travail. De nombreuses fonctionnalités nécessitent que l’utilisateur dispose d’une licence Power BI *Pro*. La plupart des *consommateurs* travaillent avec une licence *gratuite*. 

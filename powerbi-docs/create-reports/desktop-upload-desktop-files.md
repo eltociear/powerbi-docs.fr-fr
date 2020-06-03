@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/20/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a67c36b2594696e1c576693cc5808eb0227c1c7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a363ce72002003981f1bcbe46e0f5367f89860f
+ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83333484"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83733466"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publier des jeux de données et des rapports à partir de Power BI Desktop
 Quand vous publiez un fichier Power BI Desktop dans le service Power BI, vous publiez les données du modèle dans votre espace de travail Power BI. Il en va de même pour tous les rapports que vous avez créés dans la vue**Rapport**. Un nouveau jeu de données du même nom et tous les rapports seront visibles dans le navigateur de votre espace de travail.
@@ -49,5 +49,9 @@ Ce processus est assez simple, mais vous devez savoir un certain nombre de chose
 * Si vous renommez ou supprimez une colonne ou une mesure, les visualisations que vous avez déjà dans Power BI avec ce champ peuvent être rompues. 
 * Power BI ignore certaines modifications de format des colonnes existantes, par exemple, si vous faites passer le format d’une colonne de 0,25 % à 25 %.
 * Supposons que vous avez une planification d’actualisation configurée pour votre jeu de données existant dans Power BI. Quand vous ajoutez de nouvelles sources de données à votre fichier et que vous effectuez une republication, vous devez vous connecter à ces sources avant la prochaine actualisation planifiée.
-* Quand vous republiez un jeu de données publié à partir de Power BI Desktop et que vous avez défini une planification d’actualisation, une actualisation du jeu de données est démarrée dès que vous effectuez la republication. 
+* Quand vous republiez un jeu de données publié à partir de Power BI Desktop et que vous avez défini une planification d’actualisation, une actualisation du jeu de données est démarrée dès que vous effectuez la republication.
+* Quand vous apportez une modification à un jeu de données et que vous le republiez ensuite, un message indique le nombre d’espaces de travail, rapports et tableaux de bord susceptibles d’être impactés par la modification, et vous invite à confirmer que vous souhaitez remplacer le jeu de données actuellement publié par celui que vous avez modifié. Ce message contient également un lien vers l’analyse d’impact complète du jeu de données dans le service Power BI, où vous pouvez voir plus d’informations et prendre des mesures pour atténuer les risques liés à vos modifications.
 
+   ![Avertissement concernant l’impact de la republication d’un jeu de données](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+
+   [En savoir plus sur l’analyse d’impact des jeux de données](../collaborate-share/service-dataset-impact-analysis.md).

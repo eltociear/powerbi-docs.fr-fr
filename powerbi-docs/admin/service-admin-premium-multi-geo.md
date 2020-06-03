@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 05/26/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 45229edbc6ed2c9e9c4618d44b4b74e42d0037b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9df00079488b248f2e5bab52395a637e37045a24
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274601"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84119993"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
-- United States
+- États-Unis
 - Canada
-- United Kingdom
+- Royaume-Uni
 - Brésil
 - Europe
 - Japon
@@ -43,7 +43,7 @@ Pour de nouvelles capacités, activez les zones géographiques multiples en sél
 
 Une fois que vous avez créé la capacité, elle reste dans cette région, et le contenu des espaces de travail créés sera stocké dans cette région. Vous pouvez migrer des espaces de travail d’une région à une autre via la liste déroulante dans l’écran des paramètres d’espace de travail.
 
-![Modifier l’espace de travail : choisir une capacité disponible. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Modifier l’espace de travail : Choisir une capacité disponible. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 Vous voyez ce message pour confirmer la modification.
 
@@ -62,11 +62,13 @@ Les éléments suivants sont stockés dans la région Premium lorsque des zones 
 Ces éléments restent dans la région d’origine pour le locataire :
 
 - Transmettre des jeux de données
-- Classeurs Excel
+- classeurs Excel ;
 - Métadonnées de tableau de bord/de rapport : par exemple, noms de mosaïques, mosaïques de requêtes
 - Bus de service pour requêtes de passerelle ou travaux d’actualisation planifiés
 - Autorisations
 - Informations d'identification de jeux de données
+
+
 
 ## <a name="view-capacity-regions"></a>Voir les régions de la capacité
 
@@ -93,6 +95,7 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 - Confirmez que tout mouvement que vous lancez entre des régions est conforme à toutes les exigences de conformité des entreprises et du gouvernement avant d’amorcer le transfert de données.
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
+- Le texte de la requête et le trafic de résultat de la requête pour les modèles de données importés ne transitent pas par la région d’origine. Les métadonnées de rapport proviennent toujours de la région distante et certains états de routage DNS peuvent envoyer le trafic hors de la région. 
 
 - La fonctionnalité des [dataflows](../transform-model/service-dataflows-overview.md) n’est pas prise en charge en mode multigéographique pour l’instant.
 

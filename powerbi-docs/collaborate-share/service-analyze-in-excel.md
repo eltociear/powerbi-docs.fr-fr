@@ -1,27 +1,146 @@
 ---
 title: Analyser dans Excel pour Power BI
-description: Découvrez comment analyser des jeux de données Power BI dans Excel
+description: Analyser les jeux de données Power BI dans Microsoft Excel
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/06/2020
+ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 48e1df6f8d47b996145d8734f89b2e15d17abf9c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 020416836fadf29b55ea2e1b1044d68f097fa93e
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275061"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120745"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
-Vous pouvez utiliser Excel pour afficher un jeu de données Power BI et interagir avec celui-ci. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
+Avec **Analyser dans Excel**, vous pouvez placer les jeux de données Power BI dans Excel, puis les afficher et interagir avec eux à l’aide de tableaux croisés dynamiques, de graphiques, de segments et d’autres fonctionnalités Excel. Pour utiliser **Analyser dans Excel** vous devez d’abord télécharger la fonctionnalité à partir de Power BI, l’installer, puis sélectionner un ou plusieurs jeux de données à utiliser dans Excel. 
 
-## <a name="two-ways-to-get-started"></a>Deux méthodes pour commencer
-Il existe deux façons différentes d’explorer des jeux de données Power BI dans Excel : si vous partez de Power BI, vous suivrez la procédure décrite dans ce document.  Les utilisateurs disposant de certaines références SKU Office ont maintenant la possibilité d’accéder à leurs jeux de données en partant directement de l’expérience Obtenir des données dans un classeur Excel.  Ils peuvent parcourir les jeux de données auxquels ils ont accès pour voir s’ils sont certifiés ou promus et si des étiquettes de protection des données ont été appliquées.  Pour plus d’informations sur cette expérience, consultez [Création d’un tableau croisé dynamique à partir de jeux de données Power BI](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) dans la documentation Excel.
+![Analyser dans Excel](media/service-analyze-in-excel/analyze-excel-00a.png)
+
+Cet article explique comment installer et utiliser Analyser dans Excel, décrit ses limitations, puis présente les étapes suivantes. Vous apprendrez les compétences suivantes :
+
+* [Installer Analyser dans Excel](#install-analyze-in-excel)
+* [Connexion aux données Power BI](#connect-to-power-bi-data)
+* [Utiliser Excel pour analyser les données](#use-excel-to-analyze-the-data)
+* [Enregistrement et partage de votre classeur](#saving-and-sharing-your-new-workbook)
+* [Configuration requise](#requirements)
+
+Mettons-nous au travail et commençons le processus d’installation.
+
+## <a name="install-analyze-in-excel"></a>Installer Analyser dans Excel
+
+Vous devez installer **Analyser dans Excel** à partir des liens fournis dans le service Power BI. Power BI détecte la version d’Excel que vous avez sur votre ordinateur et télécharge automatiquement la version appropriée (32 ou 64 bits). Le service Power BI s’exécute dans un navigateur. Vous pouvez vous connecter au Power BI à l’aide du lien suivant :
+
+* [Se connecter à Power BI](https://app.powerbi.com)
+
+Une fois que vous êtes connecté et que le service Power BI s’exécute dans votre navigateur, sélectionnez l’élément **Plus d’options** (le « ... ») dans le coin supérieur droit, puis sélectionnez **Télécharger > Mises à jour d'Analyser dans Excel**. Cet élément de menu s’applique aux nouvelles installations des mises à jour d’Analyser dans Excel.
+
+![Télécharger Analyser dans Excel à partir de la page d’accueil Power BI](media/service-analyze-in-excel/analyze-excel-02.png)
+
+Vous pouvez également naviguer dans le service Power BI vers un jeu de données que vous souhaitez analyser, puis sélectionner l’élément **Plus d’options** pour un jeu de données, un rapport ou un autre élément Power BI. Dans le menu qui s’affiche, sélectionnez l’option **Analyser dans Excel**, comme illustré dans l’image suivante.
+
+![Analyser dans Excel](media/service-analyze-in-excel/analyze-excel-01.png)
+
+Dans les deux cas, Power BI détecte si vous avez installé Analyser dans Excel et vous invite à le télécharger si nécessaire. 
+
+![Mises à jour nécessaires](media/service-analyze-in-excel/analyze-excel-03.png)
+
+Lorsque vous sélectionnez Télécharger, Power BI détecte la version d’Excel que vous avez installée et télécharge la version appropriée du programme d’installation d’Analyser dans Excel. Vous voyez un état de téléchargement dans la partie inférieure de votre navigateur, ou à l’endroit où votre navigateur affiche la progression du téléchargement. 
+
+![Téléchargement des mises à jour](media/service-analyze-in-excel/analyze-excel-04.png)
+
+Une fois le téléchargement terminé, exécutez le programme d’installation (.msi) pour installer Analyser dans Excel. Le nom du processus d’installation est différent d’Analyser dans Excel : le nom sera **Microsoft Analysis Services OLE DB Provider**, comme indiqué dans l’image suivante, ou un nom similaire.
+
+![Installation des mises à jour](media/service-analyze-in-excel/analyze-excel-05.png)
+
+Une fois l’opération terminée, vous êtes prêt à sélectionner un rapport dans le service Power BI (ou un autre élément de données Power BI, comme un jeu de données), puis à l’analyser dans Excel.
+
+## <a name="connect-to-power-bi-data"></a>Connexion aux données Power BI
+
+Dans le service Power BI, accédez au jeu de données ou au rapport que vous souhaitez analyser dans Excel, puis sélectionnez le menu **Plus d’options** (le « ... ») pour trouver l’option de menu **Analyser dans Excel**. L’illustration suivante montre la sélection d’un rapport.
+
+![Installation des mises à jour](media/service-analyze-in-excel/analyze-excel-06.png)
+
+Voici quelques étapes à suivre pour obtenir un jeu de données du service Power BI dans Excel :
+
+1. Sélectionnez le menu **Plus d’options**.
+2. Sélectionnez **Analyser dans Excel** à partir des éléments de menu qui s’affichent.
+
+    Le service Power BI crée ensuite un fichier du jeu de données conçu (et structuré) pour une utilisation avec **Analyser dans Excel** avec l’extension de fichier .ODC. Le fichier est créé, puis lance automatiquement un processus de téléchargement dans votre navigateur.
+    
+    ![Téléchargement du fichier ODC](media/service-analyze-in-excel/analyze-excel-07.png)
+    
+    Le nom de fichier correspond au jeu de données (ou au rapport ou toute autre source de données) à partir duquel il a été dérivé. Par conséquent, si le rapport s’appelait *Latest-Sales*, le fichier téléchargé se nommera **Latest-Sales.ODC**.
+
+3. Lancez le fichier .ODC
+
+Le fichier est déjà associé à **Analyser dans Excel**, donc lorsque vous sélectionnez ou lancez le fichier .ODC, Excel est lancé et commence automatiquement à le charger. Toutefois, vous verrez probablement un avertissement s’afficher au sujet d’une menace de source de données externe :
+
+![Avertissement de sécurité](media/service-analyze-in-excel/analyze-excel-08.png)
+
+Sélectionnez **Activer** pour charger le fichier .ODC pour **Analyser dans Excel**, et Excel charge le fichier. 
+
+## <a name="use-excel-to-analyze-the-data"></a>Utiliser Excel pour analyser les données
+
+Une fois que vous avez autorisé le fichier .ODC à se charger en sélectionnant **Activer** dans la notification de sécurité, Excel vous présente un **tableau croisé dynamique** vide et une liste de **champs** prêts à être analysés provenant du jeu de données Power BI.
+
+![Excel avec des données connectées](media/service-analyze-in-excel/analyze-excel-09.png)
+
+Le fichier .ODC comporte une chaîne de connexion MSOLAP, connectée à votre jeu de données dans Power BI. Quand vous analysez ou manipulez les données, Excel interroge le jeu de données de Power BI et renvoie les résultats à Excel. Si le jeu de données est connecté à une source de données active via DirectQuery, Power BI interroge la source de données et renvoie les résultats vers Excel.
+
+Une fois cette connexion aux données dans Power BI établie, vous pouvez créer des tableaux croisés dynamiques et des graphiques, et analyser le jeu de données comme vous le feriez pour un jeu de données local dans Excel.
+
+**Analyser dans Excel** est particulièrement utile pour les jeux de données et les rapports qui se connectent aux sources de données suivantes :
+
+* Bases de données *tabulaire* ou *multidimensionnelle* Analysis Services
+* Les fichiers Power BI Desktop ou classeurs Excel avec des modèles de données qui ont des mesures de modèle créées à l’aide de DAX (Data Analysis Expressions).
+
+> [!IMPORTANT]
+> Utiliser **Analyser dans Excel** expose toutes les données de niveau de détail à tous les utilisateurs autorisés à accéder au jeu de données.
+
+Il y a quelques éléments à prendre en compte lorsque vous commencez à utiliser Analyser dans Excel, pouvant nécessiter une étape supplémentaire ou deux. Ces éventualités sont décrites dans les sections suivantes. 
+
+
+### <a name="sign-in-to-power-bi"></a>Connectez-vous à Power BI
+Même si vous êtes déjà connecté à Power BI dans votre navigateur, vous êtes invité à vous connecter à Power BI avec votre compte Power BI la première fois que vous ouvrez un nouveau fichier .ODC dans Excel. Cela permet d’authentifier la connexion entre Excel et Power BI.
+
+### <a name="users-with-multiple-power-bi-accounts"></a>Utilisateurs disposant de plusieurs comptes Power BI
+Certains utilisateurs disposent de plusieurs comptes Power BI. Si c’est le cas, vous êtes peut-être connecté à Power BI avec un compte, mais votre autre compte a accès au jeu de données utilisé dans Analyser dans Excel. Dans ce cas, vous risquez d’obtenir une erreur **Interdit** ou un message d’échec de connexion si vous tentez d’accéder à un jeu de données qui est utilisé par l’option Analyser dans Excel.
+
+Si cela se produit, vous aurez l’occasion de vous connecter à nouveau. Vous pourrez alors vous connecter à l’aide du compte Power BI qui a accès au jeu de données utilisé par l’option Analyser dans Excel. Vous pouvez également sélectionner votre nom dans le ruban supérieur d’Excel, ce qui permet d’identifier le compte actuellement connecté. Déconnectez-vous et reconnectez-vous avec l’autre compte.
+
+
+## <a name="saving-and-sharing-your-new-workbook"></a>Enregistrement et partage de votre nouveau classeur
+
+Vous pouvez **Enregistrer** le classeur Excel que vous créez avec le jeu de données Power BI, tout comme n’importe quel autre classeur. Toutefois, vous ne pouvez pas publier ni importer le classeur dans Power BI, car vous pouvez uniquement publier ou importer dans Power BI les classeurs qui comprennent des tables de données ou des modèles de données. Étant donné que le nouveau classeur est connecté au jeu de données dans Power BI, la publication ou l’importation dans Power BI seraient redondantes.
+
+Une fois que le classeur est enregistré, vous pouvez le partager avec d’autres utilisateurs Power BI dans votre organisation. 
+
+Quand un utilisateur avec lequel vous avez partagé votre classeur ouvre celui-ci pour la première fois, vos tableaux croisés dynamiques et vos données s’affichent tels qu’ils étaient quand vous avez enregistré le classeur pour la dernière fois. Il peut donc ne pas s’agir de la dernière version de vos données. Pour obtenir la dernière version des données, l’utilisateur doit cliquer sur le bouton **Actualiser** du ruban **Données**. Étant donné que le classeur se connecte à un jeu de données dans Power BI, les utilisateurs qui tentent d’actualiser le classeur doivent se connecter à Power BI et installer les mises à jour Excel la première fois qu’ils tentent une mise à jour à l’aide de cette méthode.
+
+Étant donné que les utilisateurs doivent actualiser le jeu de donnée et que l’actualisation n’est pas prise en charge dans Excel Online pour les connexions externes, il est recommandé d’ouvrir le classeur dans une version de bureau d’Excel.
+
+> [!NOTE]
+> Les administrateurs de locataires Power BI peuvent utiliser le *portail d’administration Power BI* pour désactiver l’utilisation de la fonction **Analyser dans Excel** avec les jeux de données locaux hébergés dans des bases de données Analysis Services (AS). Lorsque cette option est désactivée, la fonction **Analyser dans Excel** est désactivée pour les bases de données, mais reste disponible pour une utilisation avec d’autres jeux de données.
+
+
+## <a name="other-ways-to-access-power-bi-datasets-from-excel"></a>Autres façons d’accéder à des jeux de données Power BI à partir d’Excel
+Les utilisateurs disposant de SKU Office spécifiques peuvent également se connecter à des jeux de données Power BI à partir d’Excel à l’aide de la fonctionnalité **Obtenir des données** dans Excel. Si votre référence SKU ne prend pas en charge cette fonctionnalité, l’option de menu **Obtenir des données** ne s’affiche pas.
+
+Dans le menu du ruban **Données**, sélectionnez **Obtenir des données > À partir d’un jeu de données Power BI** comme indiqué dans l’image suivante.
+
+![Utilisation du menu Obtenir des données](media/service-analyze-in-excel/analyze-excel-10.png)
+
+Un volet s’affiche, dans lequel vous pouvez parcourir les jeux de données auxquels vous avez accès, voir si des jeux de données sont certifiés ou promus, et déterminer si des étiquettes de protection des données ont été appliquées à ces jeux de données. 
+
+Pour plus d’informations sur l’obtention de données dans Excel, consultez [Créer un tableau croisé dynamique à partir de jeux de données Power BI](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) dans la documentation Excel.
+
+Vous pouvez également accéder aux **tables recommandées** dans Excel, dans la galerie **Types de données**. Pour en savoir plus sur les tables par défaut et savoir comment y accéder, consultez [Accéder aux tables recommandées Power BI dans Excel (préversion)](service-excel-featured-tables.md).
 
 ## <a name="requirements"></a>Configuration requise
 Il existe certaines conditions à l’utilisation de l’option **Analyser dans Excel** :
@@ -32,80 +151,15 @@ Il existe certaines conditions à l’utilisation de l’option **Analyser dans 
 * Certaines organisations appliquent des règles de stratégie de groupe qui empêchent l’installation des mises à jour requises relatives à l’option **Analyser dans Excel**. Si vous ne parvenez pas à installer les mises à jour, contactez votre administrateur.
 * **Analyser dans Excel** nécessite que le jeu de données soit dans Power BI Premium ou que l’utilisateur dispose d’une licence Power BI Pro. Pour plus d’informations sur les différences de fonctionnalités entre les différents types de licences, consultez la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
 * Les utilisateurs peuvent se connecter aux jeux de données par le biais de la fonctionnalité Analyser dans Excel s’ils disposent d’une autorisation d’accès au jeu de données sous-jacent.  Un utilisateur peut obtenir cette autorisation de plusieurs façons, par exemple en ayant le rôle de membre de l’espace de travail contenant le jeu de données, en bénéficiant du partage d’un rapport ou tableau de bord qui utilise le jeu de données ou en ayant l’autorisation de génération pour le jeu de données dans un espace de travail ou une application qui contient le jeu de données. Découvrez plus en détail l’[autorisation de génération](../connect-data/service-datasets-build-permissions.md) pour les jeux de données.
-* Les utilisateurs invités ne peuvent pas utiliser **Analyser dans Excel** pour les jeux de données envoyés à partir d’un autre locataire. 
+* Les utilisateurs invités ne peuvent pas utiliser **Analyser dans Excel** pour les jeux de données envoyés à partir (provenant) d’un autre locataire. 
 * La fonctionnalité **Analyser dans Excel** est une fonctionnalité du service Power BI et n’est pas disponible dans Power BI Report Server et Power BI Embedded. 
 * **Analyser dans Excel** est pris en charge uniquement sur les ordinateurs exécutant Microsoft Windows.
 
-## <a name="how-does-it-work"></a>Comment ça marche ?
-Quand vous sélectionnez **Analyser dans Excel** à partir du menu **Autres options** (...) associé à un jeu de données ou à un rapport dans **Power BI**, Power BI crée un fichier .ODC et le télécharge sur votre ordinateur à partir du navigateur.
 
-![Analyser dans Excel](media/service-analyze-in-excel/power-bi-analyze-in-excel.png)
-
-Quand vous ouvrez le fichier dans Excel, une liste de **champs** et de **tableaux croisés dynamiques** vides s’affiche avec tous les tableaux, les champs et les mesures de votre jeu de données Power BI. Vous pouvez créer des tableaux croisés dynamiques et des graphiques, et analyser le jeu de données comme vous le feriez pour un jeu de données local dans Excel.
-
-Le fichier .ODC comporte une chaîne de connexion MSOLAP, connectée à votre jeu de données dans Power BI. Quand vous analysez ou manipulez les données, Excel interroge le jeu de données de Power BI et renvoie les résultats à Excel. Si le jeu de données est connecté à une source de données active via DirectQuery, Power BI interroge la source de données et renvoie les résultats vers Excel.
-
-L’option **Analyser dans Excel** est très utile pour les jeux de données et les rapports qui se connectent aux bases de données *multidimensionnelles* ou *tabulaires Analysis Services* ou à partir de fichiers Power BI Desktop ou de classeurs Excel avec des modèles de données qui possèdent des mesures modèles créés à l’aide de Data Analysis Expressions (DAX).
-
-## <a name="get-started-with-analyze-in-excel-in-power-bi"></a>Prise en main de la fonctionnalité Analyser dans Excel dans Power BI
-Dans Power BI, sélectionnez le menu **Autres options** (...) en regard du nom d’un rapport ou d’un jeu de données, puis, dans le menu qui s’affiche, sélectionnez **Analyser dans Excel**.
-
-![Analyser dans Excel](media/service-analyze-in-excel/power-bi-analyze-menu.png)
-
-### <a name="install-excel-updates"></a>Installer les mises à jour d’Excel
-Quand vous utilisez **Analyser dans Excel**, vous devez installer les mises à jour des bibliothèques Excel. Vous serez invité à télécharger et à exécuter les mises à jour Excel. Cela démarrera l’installation du package Windows Installer *SQL_AS_OLEDDB.msi*. Ce package installe **Microsoft AS OLE DB Provider pour SQL Server 2016 RC0 (version préliminaire)** .
-
-> [!NOTE]
-> Veillez à activer l’option **Ne plus afficher ce message** dans la boîte de dialogue **Installer les mises à jour Excel**. La mise à jour ne doit être installée qu’une seule fois.
-> 
-> 
-
-![Case à cocher Ne plus afficher](media/service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
-
-Si vous avez besoin d’installer de nouveau les mises à jour Excel pour l’option **Analyser dans Excel**, vous pouvez les télécharger à partir de l’icône de **téléchargement** de Power BI, comme illustré dans l’image suivante.
-
-![Installer les mises à jour](media/service-analyze-in-excel/pbi_anlz_excel_download_again.png)
-
-### <a name="sign-in-to-power-bi"></a>Connectez-vous à Power BI
-Même si vous êtes déjà connecté à Power BI dans votre navigateur, vous êtes invité à vous connecter à Power BI avec votre compte Power BI la première fois que vous ouvrez un nouveau fichier .ODC dans Excel. Cela permet d’authentifier la connexion entre Excel et Power BI.
-
-### <a name="users-with-multiple-power-bi-accounts"></a>Utilisateurs disposant de plusieurs comptes Power BI
-Certains utilisateurs possèdent plusieurs comptes Power BI. Il peut arriver qu’ils soient connectés dans Power BI avec un compte, alors que le compte utilisé par l’option Analyser dans Excel pour accéder au jeu de données est un compte différent. Dans ce cas, vous risquez d’obtenir une erreur **Interdit** ou un message d’échec de connexion si vous tentez d’accéder à un jeu de données qui est utilisé par l’option Analyser dans Excel.
-
-Vous aurez l’occasion de vous connecter à nouveau. Vous pourrez alors vous connecter à l’aide du compte Power BI qui a accès au jeu de données utilisé par l’option Analyser dans Excel. Vous pouvez également sélectionner votre nom dans le ruban supérieur d’Excel, ce qui permet d’identifier le compte avec lequel vous êtes actuellement connecté. Se déconnecter et se connecter avec un autre compte.
-
-### <a name="enable-data-connections"></a>Activez les connexions de données
-Afin d’analyser vos données Power BI dans Excel, vous êtes invité à vérifier le nom et le chemin du fichier .odc, puis à sélectionner **Activer**.
-
-![Activez les connexions de données](media/service-analyze-in-excel/pbi_anlz_excel_enable.png)
-
-> [!NOTE]
-> Les administrateurs de locataires Power BI peuvent utiliser le *portail d’administration Power BI* pour désactiver l’utilisation de la fonction **Analyser dans Excel** avec les jeux de données locaux hébergés dans des bases de données Analysis Services (AS). Lorsque cette option est désactivée, la fonction **Analyser dans Excel** est désactivée pour les bases de données, mais reste disponible pour une utilisation avec d’autres jeux de données.
-> 
-> 
-
-## <a name="analyze-away"></a>Analyser
-Maintenant qu’Excel est ouvert et que vous disposez d’un tableau croisé dynamique vide, vous êtes prêt à effectuer toutes sortes d’analyses avec votre jeu de données Power BI. Comme avec les autres classeurs locaux, la fonctionnalité Analyser dans Excel vous permet de créer des tableaux croisés dynamiques et des graphiques, d’ajouter des données à partir d’autres sources, etc. Bien sûr, vous pouvez également créer des feuilles de calcul variées avec différents types d’affichages de données.
-
-![Tableaux et graphiques croisés dynamiques dans Excel](media/service-analyze-in-excel/pbi_anlz_excel_chart.png)
-
-> [!NOTE]
-> L’utilisation de l’**analyse dans Excel** expose toutes les données de niveau de détail à tous les utilisateurs autorisés à accéder au jeu de données.
-> 
-> 
-
-## <a name="save"></a>Enregistrer
-Vous pouvez enregistrer ce classeur connecté au jeu de données Power BI comme n’importe quel autre classeur. Toutefois, vous ne pouvez pas publier ni importer le classeur dans Power BI, car vous pouvez uniquement publier ou importer dans Power BI les classeurs qui comprennent des tables de données ou des modèles de données. Étant donné que le nouveau classeur est connecté au jeu de données dans Power BI, la publication ou l’importation dans Power BI seraient redondantes.
-
-## <a name="share"></a>Partager
-Une fois que le classeur est enregistré, vous pouvez le partager avec d’autres utilisateurs Power BI dans votre organisation.
-
-Quand un utilisateur avec lequel vous avez partagé votre classeur ouvre celui-ci pour la première fois, vos tableaux croisés dynamiques et vos données s’affichent tels qu’ils étaient quand vous avez enregistré le classeur pour la dernière fois. Il peut donc ne pas s’agir de la dernière version de vos données. Pour obtenir la dernière version des données, l’utilisateur doit cliquer sur le bouton **Actualiser** du ruban **Données**. Étant donné que le classeur se connecte à un jeu de données dans Power BI, les utilisateurs qui tentent d’actualiser le classeur doivent se connecter à Power BI et installer les mises à jour Excel la première fois qu’ils tentent une mise à jour à l’aide de cette méthode.
-
-Étant donné que les utilisateurs doivent actualiser le jeu de donnée et que l’actualisation n’est pas prise en charge dans Excel Online pour les connexions externes, il est recommandé d’ouvrir le classeur dans une version de bureau d’Excel.
+Pour les utilisateurs qui doivent désinstaller la fonctionnalité **Analyser dans Excel**, vous pouvez le faire à l’aide des paramètres système **Ajouter ou supprimer des programmes** sur votre ordinateur Windows.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. [Cette page offre des résolutions communes des problèmes associés à l’utilisation de Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)
+Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. [Cette page fournit des solutions pour les problèmes courants lors de l’utilisation de la fonctionnalité Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -113,6 +167,6 @@ Les articles suivants pourraient également vous intéresser :
 
 * [Use cross-report drillthrough in Power BI Desktop](../create-reports/desktop-cross-report-drill-through.md) (Utiliser une extraction interrapport dans Power BI Desktop)
 * [Utilisation de segments Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-
-
+* [Résolution des problèmes d’Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)
+* [Accéder aux tables recommandées Power BI dans Excel (préversion)](service-excel-featured-tables.md).
 

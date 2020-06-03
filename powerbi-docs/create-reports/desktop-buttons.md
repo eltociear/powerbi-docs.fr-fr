@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/21/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f92ce45cd739072dcb7056eb0be6696b4cab32e4
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83298547"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813435"
 ---
 # <a name="use-buttons-in-power-bi"></a>Utiliser des boutons dans Power BI
 En utilisant des **boutons** dans Power BI, vous pouvez créer des rapports qui se comportent comme des applications et donc créer un environnement plus interactif dans lequel les utilisateurs peuvent se déplacer, cliquer et interagir davantage avec le contenu Power BI. Vous pouvez ajouter des boutons aux rapports dans **Power BI Desktop** et dans le **service Power BI**. Lorsque vous partagez vos rapports dans le service Power BI, ils offrent une expérience de type application à vos utilisateurs.
@@ -56,7 +56,6 @@ Pour sélectionner la manière dont le bouton doit apparaître pour chaque état
 
 ![Les trois états d’un bouton dans un rapport Power BI](media/desktop-buttons/power-bi-button-format.png)
 
-
 ## <a name="select-the-action-for-a-button"></a>Sélectionner l’action d’un bouton
 
 Vous pouvez sélectionner l’action à effectuer quand un utilisateur sélectionne un bouton dans Power BI. Vous pouvez accéder aux options des actions de bouton dans la carte **Action** du volet **Visualisations**.
@@ -67,7 +66,7 @@ Options des actions de bouton :
 
 - **Précédent** renvoie l’utilisateur à la page précédente du rapport. Cela est utile pour les pages d’extraction.
 - **Signet** présente la page de rapport qui est associée à un signet défini pour le rapport en cours. Apprenez-en davantage sur les [signets dans Power BI](desktop-bookmarks.md). 
-- **Extraire (préversion)** permet à l’utilisateur d’accéder à une page d’extraction filtrée en fonction de sa sélection, sans utiliser les signets. Apprenez-en davantage sur les [boutons d’extraction dans les rapports](desktop-drill-through-buttons.md).
+- **Extraire** permet à l’utilisateur d’accéder à une page d’extraction filtrée en fonction de sa sélection, sans utiliser les signets. Apprenez-en davantage sur les [boutons d’extraction dans les rapports](desktop-drill-through-buttons.md).
 - **Navigation entre les pages** permet à l’utilisateur d’accéder à une page différente dans le rapport, sans utiliser de signets. Consultez [Créer une navigation entre les pages](#create-page-navigation) dans cet article pour plus d’informations.
 - **Q&R** ouvre une fenêtre **Explorateur Q&R**. 
 
@@ -75,23 +74,73 @@ Certains boutons ont une action par défaut sélectionnée automatiquement. Par 
 
 Vous pouvez essayer ou tester les boutons que vous créez pour votre rapport en utilisant *Ctrl + clic* sur le bouton que vous souhaitez utiliser. 
 
-### <a name="create-page-navigation"></a>Créer une navigation entre les pages
+## <a name="create-page-navigation"></a>Créer une navigation entre les pages
 
-Avec le type d’**action** **Navigation entre les pages**, vous pouvez rapidement créer une expérience de navigation complète sans avoir à enregistrer ni gérer aucun signet.
+Avec le type d’**action** **Navigation entre les pages**, vous pouvez créer une expérience de navigation complète sans avoir à enregistrer ni gérer aucun signet.
 
 Pour configurer un bouton de navigation entre les pages, créez un bouton avec **Navigation entre les pages** comme type d’action, puis sélectionnez la page **Destination**.
 
 ![Action Navigation entre les pages](media/desktop-buttons/power-bi-page-navigation.png)
 
-Vous pouvez rapidement créer un volet de navigation personnalisé. Vous évitez d’avoir à modifier et gérer les signets si vous souhaitez changer les pages à afficher dans votre volet de navigation.
+Vous pouvez créer un volet de navigation personnalisé et y ajouter des boutons de navigation. Vous évitez d’avoir à modifier et gérer les signets si vous souhaitez changer les pages à afficher dans votre volet de navigation.
 
 ![Créer une page de navigation](media/desktop-buttons/power-bi-build-navigation-pane.png)
 
 En outre, vous pouvez mettre en forme de manière conditionnelle l’info-bulle, comme vous pouvez le faire avec d’autres types de bouton.
+
+## <a name="set-the-navigation-destination-conditionally"></a>Définir la destination de navigation de manière conditionnelle
+
+Vous pouvez utiliser la mise en forme conditionnelle pour définir la destination de navigation, en fonction de la sortie d’une mesure. Par exemple, vous pourriez vouloir économiser de l’espace sur le canevas de rapport en faisant en sorte qu’un seul bouton permette d’accéder à différentes pages en fonction de la sélection de l’utilisateur.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Naviguer à l’aide d’un bouton Aller à":::
+ 
+Pour créer l’exemple ci-dessus, commencez par créer une table à une seule colonne avec les noms des destinations de navigation :
+
+:::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Création d'une table":::
+
+Power BI utilise une correspondance exacte de chaînes pour définir la destination d’extraction. Par conséquent, vérifiez que les valeurs entrées sont alignées exactement avec les noms de vos pages d’extraction.
+
+Une fois que vous avez créé la table, ajoutez-la à la page en tant que segment à sélection unique :
+
+:::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Segment de navigation":::
+
+Ensuite, créez un bouton de navigation entre les pages et sélectionnez l’option de mise en forme conditionnelle pour la destination :
+
+:::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Bouton de navigation de la page":::
+ 
+Sélectionnez le nom de la colonne que vous avez créée. Dans ce cas, il s’agit de **Sélectionner une destination** :
+
+:::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Sélectionner une destination":::
+
+Désormais, le bouton peut donner accès à différentes pages, en fonction de la sélection de l’utilisateur.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Naviguer à l’aide d’un bouton Aller à":::
+ 
+### <a name="shapes-and-images-for-navigation"></a>Formes et images pour la navigation
+
+L’action de navigation entre les pages est prise en charge pour les formes et les images, pas seulement pour les boutons. Voici un exemple d’utilisation de l’une des formes intégrées :
+
+:::image type="content" source="media/desktop-buttons/button-navigation-arrow.png" alt-text="Utiliser une flèche pour la navigation":::
+ 
+Voici un exemple utilisant une image :
+
+:::image type="content" source="media/desktop-buttons/button-navigation-image.png" alt-text="Utiliser une image pour la navigation":::
+ 
+## <a name="buttons-support-fill-images"></a>Les boutons prennent en charge les images de remplissage
+
+Les boutons prennent en charge les images de remplissage. Vous pouvez personnaliser l’apparence de votre bouton à l’aide d’images de remplissage associées aux états de bouton prédéfinis : par défaut, au survol, à l’appui et désactivé (pour l’extraction).
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Images de remplissage du bouton d’extraction":::
+
+Définissez **Remplissage** sur **Activé**, puis créez des images pour les différents états.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-state-settings.png" alt-text="Paramètres de l’image de remplissage":::
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des boutons, consultez les articles suivants :
 
 * [Utiliser l’extraction dans les rapports Power BI](desktop-drillthrough.md)
 * [Utiliser des signets pour partager des insights et créer des récits dans Power BI](desktop-bookmarks.md)
+* [Créer un bouton d’extraction](desktop-drill-through-buttons.md)
 

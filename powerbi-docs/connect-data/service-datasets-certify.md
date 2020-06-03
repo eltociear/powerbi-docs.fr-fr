@@ -1,22 +1,22 @@
 ---
-title: Certifier des jeux de données (préversion) - Power BI
+title: Certifier des jeux de données - Power BI
 description: Découvrez comment guider les utilisateurs en entreprise vers des jeux de données fiables et de qualité.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdce9ec797d00b34f657ed66df6b7a5ce373334d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a6d03521cd3962dcf9549d99076d8606b1142976
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285000"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792938"
 ---
-# <a name="certify-datasets-preview"></a>Certifier des jeux de données (préversion)
+# <a name="certify-datasets---power-bi"></a>Certifier des jeux de données - Power BI
 
 Votre organisation peut certifier des jeux de données qui sont la source d’autorité d’informations importantes. Ces jeux de données occupent une place importante quand les concepteurs de rapports commencent à créer un rapport et à rechercher des données fiables. La certification peut être un processus hautement sélectif, où seuls les jeux de données les plus importants sont certifiés. Les administrateurs de locataires Power BI disposent d’un nouveau paramètre leur permettant de contrôler de façon minutieuse qui peut certifier des jeux de données. Les administrateurs peuvent ainsi garantir que la certification des jeux de données aboutit à des jeux de données véritablement fiables et faisant autorité conçus pour être utilisés dans toute l’organisation.
 

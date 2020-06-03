@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0620ca7373f247cf5475f43ddaceb69ded60bc59
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: bcd5713b2ee7f053448718bc5dd93c24b0d53de6
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83358435"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83813873"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
@@ -29,7 +29,7 @@ Pour cet article, si vous ne disposez pas encore de vos propres rapports, essaye
 Lorsque vous ouvrez le service Power BI dans un navigateur, vous êtes amené à l’écran Accueil. Voici les éléments que vous pouvez voir :
 
 1. Volet de navigation
-2. Lanceur d’applications Office 365
+2. Lanceur d’applications Microsoft 365
 3. bouton Accueil de Power BI
 4. Boutons d’icône, notamment paramètres, aide et commentaires
 5. Zone de recherche
@@ -106,7 +106,7 @@ Intéressons-nous à présent à la rubrique suivante : les rapports.
 * [Exemples de jeux de données pour Power BI](../create-reports/sample-datasets.md)
 
 ## <a name="reports"></a>Rapports
-Un rapport Power BI correspond à une ou plusieurs pages de visualisations comme des graphiques en courbes, des cartes et des treemaps. Les visualisations sont également appelées **_visuels_** . Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Vous pouvez créer des rapports de toute pièce dans Power BI, les importer avec les tableaux de bord que des collègues partagent avec vous, ou Power BI peut les créer automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données et d’applications SaaS.  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
+Un rapport Power BI correspond à une ou plusieurs pages de visualisations comme des graphiques en courbes, des cartes et des treemaps. Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Vous pouvez créer des rapports de toute pièce dans Power BI, les importer avec les tableaux de bord que des collègues partagent avec vous, ou Power BI peut les créer automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données et d’applications SaaS.  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
 
 Il existe deux modes d’affichage et d’interaction pour les rapports : *Mode Lecture* et *mode Édition*. Lorsque vous ouvrez un rapport, celui-ci s’ouvre en mode Lecture. Si vous disposez des autorisations de modification, vous voyez **Modifier le rapport** dans le coin supérieur gauche, et vous pouvez afficher le rapport en mode Édition.  Si un rapport se trouve dans un espace de travail, toute personne disposant d'un rôle *administrateur*, *membre* ou *contributeur* peut le modifier. Ces personnes ont accès à toutes les fonctionnalités d’exploration, de conception, de création et de partage du mode Édition pour ce rapport. Les personnes avec qui ils partagent le rapport peuvent l’explorer et interagir avec lui en mode Lecture.   
 
@@ -228,8 +228,8 @@ Notez l’icône « C » après le titre du tableau de bord. Ce tableau de bor
 
 ![Icône de classification des données](media/service-basic-concepts/power-bi-title.png)
 
-### <a name="6-office-365-app-launcher"></a>6. **Lanceur d’applications Office 365**
-Avec le Lanceur d’applications, toutes vos applications Office 365 sont facilement disponibles en un clic. En effet, il vous permet de démarrer rapidement votre e-mail, vos documents, votre calendrier et bien plus encore.
+### <a name="6-microsoft-365-app-launcher"></a>6. **Lanceur d’applications Microsoft 365**
+Avec le Lanceur d’applications, toutes vos applications Microsoft 365 sont facilement disponibles en un clic. En effet, il vous permet de démarrer rapidement votre e-mail, vos documents, votre calendrier et bien plus encore.
 
 ![Lanceur d’applications Office](media/service-basic-concepts/power-bi-waffle.png)
 

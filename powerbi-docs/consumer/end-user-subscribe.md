@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 05/11/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e5d87e3b41d6048b214fca45fc99df35f997d3c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dfb307a53ac4fd75188965618a08bb4bdee5689b
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347291"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83794172"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -93,7 +93,7 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge.  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un tableau de bord ou à un rapport, il n’est pas suspendu même si le rapport ou le tableau de bord n’est pas consulté.
-* Dans de rares occasions, la remise par e-mail des abonnements à leurs destinataires peut prendre plus de quinze minutes.  Si cela se produit, nous vous recommandons d’exécuter l’actualisation de vos données et votre abonnement par e-mail à des moments différents pour garantir une remise en temps voulu.  Si le problème persiste, contactez le support Power BI.
+* Gardez à l’esprit que comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Bien que nous cherchions à traiter et à fournir tous les abonnements aussi rapidement que possible, vous pourriez constater un délai plus long en période de pointe, en raison du nombre d’abonnements qui peuvent être envoyés simultanément.  Pour la majorité des clients, le délai ne devrait pas dépasser 15 minutes pour traiter et envoyer les rapports, mais cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si un client note un délai de cette longueur, il doit d’abord s’assurer que l’adresse no-reply-powerbi@microsoft.com est autorisée dans son fournisseur de messagerie.  Si c’est le cas, il doit contacter le support technique Power BI pour obtenir de l’aide.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 87b4be55b1b811f63dbb7fe271bc3c3fa4af2755
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 42e3f36689e62b196f5d8cb82bd4dd5ee118bf8b
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347421"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793408"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Utilisation de métadonnées de jeu de données avancées (préversion)
 
@@ -42,6 +42,23 @@ Une fois la fonctionnalité en préversion activée, Power BI Desktop tente de 
 > [!IMPORTANT]
 > L’activation de la caractéristique **métadonnées de jeu de données améliorées** entraîne une mise à niveau irréversible des rapports. Les rapports Power BI chargés ou créés avec Power BI Desktop, une fois les **métadonnées de jeu de données améliorées** activées, sont converties de manière irréversible au format de métadonnées de jeu de données améliorées.
 
+## <a name="report-backup-files"></a>Fichiers de sauvegarde de rapport
+
+La mise à jour d’un rapport pour utiliser la fonctionnalité de **métadonnées de jeu de données améliorées** est irréversible. Toutefois, pendant la mise à jour, un fichier de sauvegarde de rapport est créé pour enregistrer une version du rapport dans son format d’origine (d’avant la mise à jour). Le fichier de sauvegarde est supprimé au bout de 30 jours. 
+
+Pour localiser le fichier de rapport de sauvegarde, procédez comme suit :
+
+1. Accédez à l'emplacement suivant : ```C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backup```. Si vous utilisez la version Microsoft Store de Power BI Desktop, utilisez l’emplacement suivant : ```C:\Users\<user>\Microsoft\Power BI Desktop Store App\TempSaves\Backups``` 
+
+2. Recherchez une copie du rapport à l’aide du nom et de l’horodatage du fichier d’origine.
+
+3. Copiez le fichier à un emplacement de votre choix, afin de le conserver.
+
+4. Assurez-vous que la fonctionnalité en préversion **Format de métadonnées amélioré** est désactivée dans Power BI Desktop si vous choisissez d’ouvrir ou d’utiliser le fichier d’origine. 
+
+Le fichier de sauvegarde est créé lors de la mise à niveau du rapport ; ainsi, les modifications apportées après la mise à niveau ne sont pas incluses. Les nouveaux rapports créés lorsque la fonctionnalité **Format de métadonnées amélioré** est activée n’ont pas de fichier de sauvegarde.
+
+
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 Dans la préversion, les limitations suivantes s’appliquent lorsque la fonctionnalité en préversion est activée.
@@ -49,6 +66,7 @@ Dans la préversion, les limitations suivantes s’appliquent lorsque la fonctio
 ### <a name="unsupported-features-and-connectors"></a>Fonctionnalités et connecteurs non pris en charge
 Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mis à niveau, la mise à niveau échoue si le jeu de données contient l’une des fonctionnalités ou l’un des connecteurs suivants. Si cet échec se produit, il ne doit pas y avoir d’impact immédiat sur l’expérience utilisateur et Power BI Desktop continue d’utiliser le format de métadonnées précédent.
 
+* Tous les connecteurs personnalisés
 * Scripts Python
 * Connecteurs personnalisés
 * Azure DevOps Server
@@ -66,7 +84,16 @@ Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mi
 * Expressions M contenant certaines combinaisons de caractères telles que «\\n » dans les noms de colonnes
 * Lors de l’utilisation de jeux de données avec la fonctionnalité de **métadonnées de jeu de données avancées**, les sources de données d’authentification unique (SSO) ne peuvent pas être configurées dans le service Power BI
 
+Les rapports qui utilisent ces connecteurs répertoriés ne seront pas mis à niveau vers le nouveau format. Les rapports qui ont déjà été mis à niveau ou qui ont été créés après l’activation de cette nouvelle fonctionnalité ne prennent pas en charge l’ajout des fonctionnalités ou connecteurs non pris en charge répertoriés. 
+
+Les requêtes avec des sources de données dynamiques ne sont pas prises en charge. Les rapports qui ont des sources de données dynamiques ne sont pas mis à niveau vers le nouveau format, et les rapports qui ont déjà été mis à niveau ou qui ont été créés avec la fonctionnalité activée ne prennent pas en charge l’ajout de sources de données dynamiques. Une requête possède une source de données dynamique si la source change en fonction d’un paramètre, d’une entrée de fonction ou d’une fonction volatile. 
+
+Les requêtes avec des erreurs dans les étapes en amont ou les branches ne sont pas prises en charge. 
+
 En outre, les fichiers PBIX et PBIT qui ont déjà été mis à niveau pour utiliser les **métadonnées de jeu de données avancées** *ne peuvent pas* utiliser les fonctionnalités ni les connecteurs ci-dessus dans la version actuelle.
+
+
+
 
 ### <a name="lineage-view"></a>Vue de traçabilité
 Les jeux de données qui utilisent le nouveau format de métadonnées n’affichent actuellement pas de liens vers les flux de données dans la vue de la traçabilité du service Power BI.

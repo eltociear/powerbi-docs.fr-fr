@@ -1,37 +1,32 @@
 ---
-title: Utiliser le ruban mis à jour dans Power BI Desktop (préversion)
+title: Utiliser le ruban mis à jour dans Power BI Desktop
 description: Naviguez facilement dans les menus et les commandes avec le nouveau ruban de Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c406782d8e27cf57a60504c2cf05a5079e3580ce
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6df5c0310fca47dfd590671766c47349ebb47f7f
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349192"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793971"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Utiliser le ruban mis à jour dans Power BI Desktop
 
-À compter de la mise à jour de mars 2020, Power BI Desktop modifie son ruban pour mieux aligner son apparence et son expérience avec les autres produits Microsoft, notamment Microsoft Office. La mise à jour du ruban apparaît dans les mises à jour mensuelles depuis novembre 2019 en tant que fonctionnalité en préversion et à partir de la mise à jour de mars 2020, le nouveau ruban constitue l’expérience par défaut.
+Power BI Desktop a modifié son ruban pour mieux aligner son apparence et son expérience avec les autres produits Microsoft, notamment Microsoft Office.
 
 ![Nouveau ruban dans Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
 ## <a name="how-to-enable-the-updated-ribbon"></a>Comment activer le ruban mis à jour
 
-À partir de la mise à jour de mars 2020, le ruban mis à jour est activé par défaut. Pour les versions de Power BI Desktop antérieures (à compter de la mise à jour de novembre 2019), le ruban mis à jour dans Power BI était une fonctionnalité en préversion et doit être activé. Pour l’activer dans ces mises à jour antérieures, sélectionnez **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en préversion** dans la colonne gauche. Le volet droit affiche une sélection **Ruban mis à jour**. Cochez la case à côté de **Ruban mis à jour** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+Le ruban mis à jour est généralement disponible à partir de la version de mai 2020 de Power BI Desktop. À partir de la mise à jour de mars 2020, le ruban mis à jour est activé par défaut. 
 
-![L’option du ruban mis à jour pour Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
-
-> [!NOTE]
-> Pour les versions de Power BI Desktop à compter de mars 2020, il n’est pas nécessaire d’activer le ruban mis à jour, car à compter de mars 2020, le nouveau ruban constitue l’expérience par défaut.
-
-## <a name="features-of-the-new-ribbon"></a>Fonctionnalités du nouveau ruban
+## <a name="features-of-the-updated-ribbon"></a>Fonctionnalités du ruban mis à jour
 
 Les avantages de la mise à jour de notre ruban sont destinés à faciliter et à améliorer l'expérience dans Power BI Desktop et dans d'autres produits Microsoft. 
 
@@ -75,7 +70,7 @@ En plus de ces changements visibles, un ruban mis à jour nous permet également
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](../connect-data/desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   

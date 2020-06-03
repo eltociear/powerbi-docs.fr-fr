@@ -1,22 +1,22 @@
 ---
-title: Contrôler l’utilisation de jeux de données dans des espaces de travail (préversion) - Power BI
+title: Contrôler l’utilisation de jeux de données dans des espaces de travail - Créer des rapports basés sur des jeux de données à partir de différents espaces de travail - Power BI
 description: Découvrez comment limiter le flux d’informations dans le locataire Power BI.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d1ad29bebc148d9f30e8d22240dd149787251a0a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4599b5aa8961c5a6526f5de6a07815355e6e41db
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285437"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793558"
 ---
-# <a name="control-the-use-of-datasets-across-workspaces-preview"></a>Contrôler l’utilisation de jeux de données dans des espaces de travail (préversion)
+# <a name="control-the-use-of-datasets-across-workspaces"></a>Contrôler l’utilisation de jeux de données dans des espaces de travail
 
 L’utilisation de jeux de données dans les espaces de travail constitue un moyen puissant de favoriser la culture et la vulgarisation des données au sein d’une organisation. Cependant, si vous êtes un administrateur Power BI, vous souhaitez parfois limiter le flux d’informations dans votre locataire Power BI. Avec le paramètre de locataire **Utiliser des jeux de données dans des espaces de travail**, vous pouvez limiter la réutilisation de jeu de données complètement ou partiellement par groupes de sécurité.
 
@@ -38,5 +38,5 @@ En tant qu’administrateur de locataire, vous pouvez fournir une URL pour le li
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- [Utiliser des jeux de données entre des espaces de travail](service-datasets-across-workspaces.md)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

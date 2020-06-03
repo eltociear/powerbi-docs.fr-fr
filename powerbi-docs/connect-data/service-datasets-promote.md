@@ -1,27 +1,27 @@
 ---
-title: Promouvoir votre jeu de données (préversion) - Power BI
+title: Promouvoir votre jeu de données - Power BI
 description: Découvrez comment promouvoir votre jeu de données afin de guider les utilisateurs en entreprise vers des jeux de données fiables et de qualité.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3e17b31aa75e1778e92408787a248db810d4d08d
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284747"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792973"
 ---
-# <a name="promote-your-dataset-preview"></a>Promouvoir votre jeu de données (préversion)
+# <a name="promote-your-dataset---power-bi"></a>Promouvoir votre jeu de données - Power BI
 
 Les créateurs de rapports Power BI pouvant désormais avoir accès à de nombreux jeux de données différents, les entreprises doivent les guider vers les jeux de données fiables et de qualité. Power BI offre deux moyens de *recommander* des jeux de données :
 
 - **Promotion** : En tant que propriétaire de jeux de données, vous pouvez promouvoir vos propres jeux de données quand ils sont prêts pour une utilisation étendue. Tout membre de l’espace de travail avec des autorisations d’écriture peut promouvoir un jeu de données. Il n’existe aucune restriction quant aux utilisateurs qui peuvent promouvoir un jeu de données. La promotion prend en charge la répartition de collaboration de jeux de données au sein des organisations. Cet article concerne la promotion de votre jeu de données.
-- **Certification** : Vous pouvez demander la certification pour un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre d’administrateur de locataire **Certification de jeux de données** détermine quels jeux de données certifier. Consultez [Certifier des jeux de données (préversion)](service-datasets-certify.md) pour plus d’informations.
+- **Certification** : Vous pouvez demander la certification pour un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre d’administrateur de locataire **Certification de jeux de données** détermine quels jeux de données certifier. Consultez [Certifier des jeux de données](service-datasets-certify.md) pour plus d’informations.
 
 ## <a name="promote-a-dataset"></a>Promouvoir un jeu de données
 

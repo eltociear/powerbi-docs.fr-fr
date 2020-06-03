@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 05/26/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4b80d329c89299cbe87fb29aa340733f0031192a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 6e3d44c9871332842ed0e3f3d9b9fb5fc64a5a65
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348985"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84121119"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
 Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires. Q&R Power BI montre ces questions aux collègues qui utilisent des rapports basés sur ce jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
@@ -40,7 +40,7 @@ Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets
 6. Revenez au tableau de bord de Power BI pour l’exemple « Retail Analysis Sample », puis placez le curseur dans la zone Q&R.   
    ![Zone de questions Q&R avec une question proposée](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 7. La nouvelle question proposée **Sales by territory as a map** (Ventes par territoire sous forme de carte) figure en tête de la liste. Sélectionnez-la.  
-8. La réponse s’affiche sous la forme d’une visualisation de carte remplie.  
+8. Power BI crée la réponse et l’affiche sous la forme de visualisation de carte remplie.  
    ![Question proposée par Q&R ayant obtenu une réponse : visualisation de carte](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 
 ## <a name="next-steps"></a>Étapes suivantes

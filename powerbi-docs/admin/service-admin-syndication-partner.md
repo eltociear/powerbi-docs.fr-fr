@@ -1,6 +1,6 @@
 ---
 title: Impossible d’ajouter Power BI au partenaire O365
-description: Impossible d’ajouter Power BI à un partenaire de syndication Office 365. Le modèle syndiqué est un modèle d’achat utilisé par Office 365.
+description: Impossible d’ajouter Power BI à un partenaire de syndication Microsoft 365. Le modèle syndiqué est un modèle d’achat utilisé par Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 5907f23bb5bf1bcdc5a4ca3412e5331a09d145c9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2c590875b4dee81f7ca54434d6e5895be885be97
+ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344937"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83812332"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Impossible d’ajouter Power BI à l’abonnement du partenaire Office 365
 
-Office 365 permet aux sociétés de revendre Office 365 dans une offre groupée et intégrée à leurs propres solutions, pour fournir aux utilisateurs finaux un seul point de contact pour l’achat, la facturation et le support technique.
+Microsoft 365 permet aux sociétés de revendre Microsoft 365 dans une offre groupée et intégrée à leurs propres solutions, pour fournir aux utilisateurs finaux un seul point de contact pour l’achat, la facturation et le support technique.
 
 Si vous avez envie d’acquérir Power BI conjointement à votre abonnement Office 365, nous vous recommandons de contacter votre partenaire. Si votre partenaire ne propose actuellement pas Power BI, différentes options sont envisageables pour poursuivre.
 
@@ -52,13 +52,13 @@ Vous pouvez vous inscrire à un essai gratuit de Power BI. Si vous n’achetez 
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Activer des abonnements ad-hoc
 
-Par défaut, les inscriptions individuelle (également appelées abonnements ad hoc) sont désactivées. Dans ce cas, vous voyez le message suivant lorsque vous tentez de vous inscrire : *Votre service informatique a désactivé l’inscription à Microsoft Power BI*.
+Par défaut, les inscriptions individuelle (également appelées abonnements ad hoc) sont désactivées. Dans ce cas, vous voyez le message suivant lorsque vous tentez de vous inscrire : *Votre service informatique a désactivé l’inscription à Microsoft Power BI*.
 
 ![Image Désolé](media/service-admin-syndication-partner/sorry.png)
 
 Pour activer les abonnements ad hoc, vous pouvez contacter votre partenaire pour le lui demander. Si vous êtes administrateur de votre client et savez comment utiliser les commandes PowerShell Azure Active Directory, vous pouvez activer les abonnements ad hoc vous-même. [ Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2/)
 
-1. Connectez-vous à Azure Active Directory avec vos informations d’identification Office 365. La première ligne du script ci-dessous vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
+1. Connectez-vous à Azure Active Directory avec vos informations d’identification Microsoft 365. La première ligne du script ci-dessous vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
 
     ```powershell
     $msolcred = get-credential

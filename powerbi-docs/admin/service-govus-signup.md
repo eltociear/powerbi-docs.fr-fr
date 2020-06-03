@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 3f001c91c89b18b43c953669272b4d5be37dd154
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2701765ce9d9a059016265049ddecf444a0640ea
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135512"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792960"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire une organisation du gouvernement des États-Unis au service Power BI
 
-Il existe une version du service Power BI intégrée aux [offres Office 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Cet article s’adresse aux clients du gouvernement des États-Unis. Le processus d’inscription décrit ici est différent celui de la version commerciale du service Power BI.
+Il existe une version du service Power BI intégrée aux [offres Microsoft 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Cet article s’adresse aux clients du gouvernement des États-Unis. Le processus d’inscription décrit ici est différent celui de la version commerciale du service Power BI.
 
 Pour plus d’informations sur le service Power BI pour le gouvernement des États-Unis, consultez [Power BI pour les clients du gouvernement des États-Unis – Vue d’ensemble](service-govus-overview.md).
 
@@ -29,19 +29,19 @@ Pour plus d’informations sur le service Power BI pour le gouvernement des Ét
 
 ## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Sélection du processus d’inscription adapté à l’organisation du gouvernement des États-Unis
 
-Votre organisation du gouvernement des États-Unis n’utilise peut-être pas encore la communauté cloud du secteur public ou dispose peut-être déjà d’un abonnement. Les sections suivantes détaillent la procédure d’inscription selon les stades d’inscription aux offres Office 365 Secteur Public et à Power BI. La procédure est différente en fonction de votre inscription actuelle.
+Votre organisation du gouvernement des États-Unis n’utilise peut-être pas encore la communauté cloud du secteur public ou dispose peut-être déjà d’un abonnement. Les sections suivantes détaillent la procédure d’inscription selon les stades d’inscription aux offres Microsoft 365 Secteur Public et à Power BI. La procédure est différente en fonction de votre inscription actuelle.
 
 Après inscription à Power BI pour le gouvernement des États-Unis, commencez le [processus de *liste verte*](#additional-signup-information) décrit dans cet article en collaboration avec votre équipe de compte. Cette étape est nécessaire pour permettre à votre organisation d’utiliser pleinement le Cloud de la communauté du secteur public.
 
-## <a name="sign-up-for-a-new-office-365-government-plan"></a>Inscription à une nouvelle offre Office 365 Secteur Public
+## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>Inscription à une nouvelle offre Microsoft 365 Secteur Public
 
-Si votre organisation est nouvelle dans la communauté cloud du secteur public, suivez la procédure ci-dessous pour obtenir une offre Office 365 Secteur Public :
+Si votre organisation est nouvelle dans la communauté cloud du secteur public, suivez la procédure ci-dessous pour obtenir une offre Microsoft 365 Secteur Public :
 
 > [!NOTE]
 > Cette procédure doit être suivie par l’administrateur général.
 >
 
-1. Accédez à [Offres Office 365 Secteur Public](https://products.office.com/government/office-365-web-services-for-government).
+1. Accédez aux [plans Microsoft 365 Service Public](https://products.office.com/government/office-365-web-services-for-government).
 2. Sélectionnez **Commencer avec un essai gratuit**.
 3. Remplissez le formulaire pour nous communiquer des renseignements sur votre organisation. Utilisez la liste déroulante pour sélectionner le type de votre organisation.
 
@@ -49,11 +49,11 @@ Si votre organisation est nouvelle dans la communauté cloud du secteur public, 
 
 4. Envoyez le formulaire pour commencer le processus d’intégration. Votre représentant ou votre partenaire Microsoft pourra répondre à vos questions si nécessaire.
 
-Une fois ce processus terminé, suivez la procédure destinée aux clients Office 365 Secteur public existants pour ajouter un abonnement Power BI.
+Une fois ce processus terminé, suivez la procédure destinée aux clients Microsoft 365 Secteur public existants pour ajouter un abonnement Power BI.
 
-## <a name="add-power-bi-to-an-office-365-government-plan"></a>Ajout de Power BI à une offre Office 365 Secteur Public
+## <a name="add-power-bi-to-a-microsoft-365-government-plan"></a>Ajouter Power BI à une offre Microsoft 365 Secteur Public
 
-Si votre organisation dispose déjà d’une offre Office 365 Secteur Public, suivez cette procédure pour ajouter un abonnement Power BI :
+Si votre organisation dispose déjà d’une offre Microsoft 365 Secteur Public, suivez cette procédure pour ajouter un abonnement Power BI :
 
 > [!NOTE]
 > Cette procédure doit être suivie par l’administrateur général.
