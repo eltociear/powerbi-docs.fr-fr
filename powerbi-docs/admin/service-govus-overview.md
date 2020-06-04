@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f4f0bc5de0480748344fa029c774c4d262facc08
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159694"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336541"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Microsoft 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
@@ -83,12 +83,12 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Utilisation de groupes Active Directory pour le partage et le contrôle d’accès|Disponible|Disponible|Disponible|
 |  |Audit par le biais du Centre d’administration de sécurité et conformité Office 365|Disponible|Disponible|Disponible|
 |  |Partage avec des utilisateurs externes|Disponible|Disponible|Disponible|
-|  |Mesures d’utilisation pour les rapports et les tableaux de bord|Non disponible|Non disponible|Non disponible|
+|  |Mesures d’utilisation pour les rapports et les tableaux de bord|Disponible|Disponible|Disponible|
 |  |Azure B2B entre GCC et le cloud commercial|Non disponible|Non disponible|Non disponible|
 |Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
 |  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
 |  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
-|  |Rapports paginés|Disponible|Dans la feuille de route|Dans la feuille de route|
+|  |Rapports paginés|Disponible|Disponible|Disponible|
 |  |Applications modèles|Non disponible|Non disponible|Non disponible|
 |Se connecter aux données|Importer des données et des rapports à partir d’Excel|Disponible|Disponible|Disponible|
 |  |Importer des données à partir de fichiers CSV|Disponible|Disponible|Disponible|

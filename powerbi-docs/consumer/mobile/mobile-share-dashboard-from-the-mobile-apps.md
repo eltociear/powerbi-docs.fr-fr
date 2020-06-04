@@ -102,4 +102,4 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 ## <a name="next-steps"></a>Étapes suivantes
 * [Annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel dans les applications mobiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Partager un tableau de bord ou un rapport dans Power BI](../../collaborate-share/service-share-dashboards.md)
-* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

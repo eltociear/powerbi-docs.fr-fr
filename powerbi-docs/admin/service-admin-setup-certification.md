@@ -44,4 +44,4 @@ La certification de jeu de données et de flux de données fait partie de l’*a
 * [Certifier des jeux de données](../connect-data/service-datasets-certify.md)
 * [Promouvoir des dataflows](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
 * [Certifier des dataflows](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
-* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

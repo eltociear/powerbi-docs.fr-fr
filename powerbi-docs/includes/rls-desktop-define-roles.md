@@ -25,7 +25,7 @@ Pour définir des rôles de sécurité, effectuez les étapes suivantes.
    ![Sélectionner Créer](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 4. Sous **Rôles**, entrez un nom pour le rôle. 
 5. Sous **Tables**, sélectionnez la table à laquelle vous souhaitez appliquer une règle DAX.
-6. Dans la zone **Expression DAX de filtre de table**, entrez les expressions DAX. Cette expression retourne la valeur true ou false. Par exemple, ```[Entity ID] = “Value”```.
+6. Dans la zone **Expression DAX de filtre de table**, entrez les expressions DAX. Cette expression retourne la valeur true ou false. Par exemple : ```[Entity ID] = “Value”```.
       
    ![Fenêtre Gérer les rôles](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 
@@ -43,7 +43,7 @@ Pour définir des rôles de sécurité, effectuez les étapes suivantes.
    >
    >
    
-8. Sélectionnez **Save (Enregistrer)** .
+8. Sélectionnez **Enregistrer**.
 
 Vous ne pouvez pas attribuer d’utilisateurs à un rôle dans Power BI Desktop. Vous devez le faire dans le service Power BI. Dans Power BI Desktop, vous pouvez activer la sécurité dynamique en utilisant les fonctions DAX *username()* ou *userprincipalname()* et en configurant les relations appropriées. 
 

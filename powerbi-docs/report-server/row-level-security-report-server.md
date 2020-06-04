@@ -105,7 +105,7 @@ Oui, à condition que vous ayez importé les données dans Power BI Desktop. Si
 
 ### <a name="can-i-use-rls-to-limit-the-columns-or-measures-accessible-by-my-users"></a>Puis-je utiliser SNL pour limiter les colonnes ou les mesures accessibles par mes utilisateurs ? 
 
-No. Si un utilisateur a accès à une ligne particulière de données, il peut voir toutes les colonnes de données pour cette ligne. 
+Non. Si un utilisateur a accès à une ligne particulière de données, il peut voir toutes les colonnes de données pour cette ligne. 
 
 ### <a name="does-rls-let-me-hide-detailed-data-but-give-access-to-data-summarized-in-visuals"></a>Avec SNL, puis-je masquer les données détaillées tout en donnant accès aux données résumées dans les visuels ? 
 

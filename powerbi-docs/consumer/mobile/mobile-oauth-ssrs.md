@@ -7,28 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/11/2020
-ms.openlocfilehash: 40bbf09e684b4fd3f86564c9b469c6ff248954a6
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 06/01/2020
+ms.openlocfilehash: 3ca896512103aa285170eadc8435003257e57ac3
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565715"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84316083"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Utilisation d’OAuth pour se connecter à Power BI Report Server et SSRS
 
 Vous pouvez utiliser OAuth pour vous connecter à Power BI Report Server et Reporting Services afin d’afficher des rapports mobiles ou des indicateurs de performance clés. Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Power BI Report Server et SQL Server Reporting Services 2016 ou ultérieur.
 
-Regardez Adam se connecter de Power BI Mobile à SSRS avec OAuth :
-
-
-<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
-
-
 > [!NOTE]
 > L’affichage des rapports Power BI hébergés dans Power BI Report Server à l’aide de WAP pour l’authentification est maintenant pris en charge pour les applications iOS et Android.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Windows Server 2016 est requis pour les serveurs Proxy d’application web (WAP) et Active Directory Federation Services (ADFS). Il est inutile d’avoir un domaine de niveau fonctionnel Windows 2016.
 
@@ -195,7 +189,7 @@ Bien que vous puissiez publier des applications au sein de la console de gestion
 Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
-| paramètre | Commentaires |
+| Paramètre | Commentaires |
 | --- | --- |
 | **ADFSRelyingPartyName** |Il s’agit du nom de l’API web que vous avez créée dans le groupe d’applications au sein d’ADFS. |
 | **ExternalCertificateThumbprint** |Il s’agit du certificat à utiliser pour les utilisateurs externes. Il est important que le certificat soit valide sur les appareils mobiles et provienne d’une autorité de certification approuvée. |

@@ -46,7 +46,7 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
     :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Paramètres du contenu proposé":::
 
-4. Sélectionnez **Save (Enregistrer)** .
+4. Sélectionnez **Enregistrer**.
 
     Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’**accueil**.
 
@@ -60,4 +60,4 @@ Désormais, toutes les personnes qui ont accès à cette application la voient �
 
 * [Comment partager des tableaux de bord, rapports et vignettes ?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Gérer le contenu proposé dans le portail d’administration](../admin/service-admin-portal.md#manage-featured-content)
-* Des questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+* Vous avez des questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 1d51c16502d3217e0158add2126d0b5726d87ff1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 5d0ca90bc352e88f08e18d2bd2a9e4fd9860cbc5
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83144706"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272997"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -106,7 +106,6 @@ Un travail dépassant le nombre de demandes simultanées ne se termine pas. Par 
 * Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format .pdf ou .pptx à l’aide d’un [principal de service](embed-service-principal.md).
 * 30 pages peuvent être incluses dans un rapport exporté. Si le rapport contient plus de pages, l’API retourne une erreur et le travail d’exportation est annulé.
 * [Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
-* Les clouds souverains ne sont pas pris en charge.
 * Les visuels Power BI répertoriés ci-dessous ne sont pas pris en charge. Lorsqu’un rapport contenant ces visuels est exporté, les parties du rapport contenant ces visuels ne sont pas rendues et un symbole d’erreur s’affiche.
     * Visuels Power BI non certifiés
     * Visuels R
@@ -144,14 +143,17 @@ private async Task<string> PostExportRequest(
         },
         // Note that page names differ from the page display names.
         // To get the page names use the GetPages API.
-        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+        Pages = pageNames?.Select(pn => new ExportReportPage(pageName = pn)).ToList(),
     };
     var exportRequest = new ExportReportRequest
     {
         Format = format,
         PowerBIReportConfiguration = powerBIReportExportConfiguration,
     };
+
+    // The 'Client' object is an instance of the Power BI .NET SDK
     var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
+
     // Save the export ID, you'll need it for polling and getting the exported file
     return export.Id;
 }
@@ -179,8 +181,11 @@ private async Task<Export> PollExportRequest(
             // Error handling for timeout and cancellations 
             return null;
         }
+
+        // The 'Client' object is an instance of the Power BI .NET SDK
         var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
         exportStatus = httpMessage.Body;
+
         // You can track the export progress using the PercentComplete that's part of the response
         SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
         if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
@@ -210,6 +215,7 @@ private async Task<ExportedFile> GetExportedFile(
 {
     if (export.Status == ExportState.Succeeded)
     {
+        // The 'Client' object is an instance of the Power BI .NET SDK
         var fileStream = await Client.Reports.GetFileOfExportToFileAsync(groupId, reportId, export.Id);
         return new ExportedFile
         {

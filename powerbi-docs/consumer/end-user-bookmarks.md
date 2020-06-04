@@ -50,7 +50,7 @@ Sélectionnez un signet pour changer de vue de rapport.
 Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
 * Page actuelle
-* Filters
+* Filtres
 * Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segment
 * État de sélection des visuels (par exemple, filtres de mise en surbrillance croisée)
 * Ordre de tri

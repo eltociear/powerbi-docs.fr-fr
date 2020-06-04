@@ -52,7 +52,7 @@ Le volet **Contenu associé** s’ouvre. Pour un tableau de bord, il affiche tou
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Afficher le contenu associé d’un jeu de données
-Pour pouvoir ouvrir le volet *Contenu associé*, vous devez disposer au minimum de l’autorisation d’**Affichage** sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../create-reports/sample-procurement.md).
+Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../create-reports/sample-procurement.md).
 
 À partir du volet de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
 
