@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 7e93e8a08b6dd662f3ada089c5ee8745bb24b3e2
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865565"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337047"
 ---
-# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI (préversion)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
@@ -32,6 +32,9 @@ Ce didacticiel utilise deux exemples :
 - Un scénario de chaîne d'approvisionnement qui analyse le pourcentage de produits en rupture de stock.  
 - Un scénario de vente qui décompose les ventes de jeux vidéo selon de nombreux facteurs tels que le genre de jeu et l'éditeur.
 
+Vous pouvez trouver le pbix utilisé dans le scénario de chaîne d’approvisionnement ici : [Supply Chain Sample.pbix](
+https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+
 > [!NOTE]
 > Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.    
 
@@ -39,17 +42,21 @@ Ce didacticiel utilise deux exemples :
 Sélectionnez l'icône de l'arborescence hiérarchique dans le volet Visualisations.
 ![Filigrane de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
-La visualisation nécessite deux types de saisie.
+La visualisation nécessite deux types d’entrée :
 
-**Analyser** : la métrique que vous souhaitez analyser. Il doit s'agir d'une mesure ou d'un agrégat.  
-**Expliquez par** : une ou plusieurs dimensions que vous souhaitez explorer.
+ - **Analyser** : la métrique que vous souhaitez analyser. Il doit s'agir d'une mesure ou d'un agrégat.  
+ - **Expliquez par** : une ou plusieurs dimensions que vous souhaitez explorer.
 
-Une fois que vous avez déposé votre métrique dans le champ, les mises à jour des visuels présentent la métrique agrégée. Dans l'exemple ci-dessous, nous visualisons le % moyen de produits en rupture de stock (5,07 %) ![Nœud racine de l'arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-root.png)
+Une fois que vous avez déposé votre métrique dans le champ, les mises à jour des visuels présentent la métrique agrégée. Dans l’exemple ci-dessous, nous visualisons le pourcentage moyen de produits en rupture de stock (5,07 %).
+
+![Nœud racine de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-root.png)
 
 L'étape suivante consiste à introduire une ou plusieurs dimensions à explorer. Ajoutez ces champs au compartiment **Expliquer par**. Notez qu'un signe plus apparaît en regard de votre nœud racine. Ce signe plus vous permet de choisir la zone à explorer (vous pouvez explorer les champs dans l'ordre de votre choix).
+
 ![Menu de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Si vous sélectionnez **Forecast bias** (Biais de prévision), l'arborescence se développe et décompose la métrique selon les valeurs de la colonne. Ce processus peut être répété en choisissant un autre nœud à explorer.
+
 ![Expansion de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
 
 La sélection d'un nœud dans le dernier niveau entraîne un filtrage croisé des données. La sélection d'un nœud dans un niveau précédent modifie le chemin d'accès.
@@ -72,10 +79,12 @@ Vous pouvez utiliser des « découpages IA » pour spécifier les prochaines d
 
 L'analyse peut fonctionner de deux façons, selon vos préférences. Le comportement par défaut est le suivant :
 
-**Valeur élevée** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus haute de la métrique analysée.  
-**Valeur basse** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus basse de la métrique analysée.  
+ - **Valeur élevée** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus haute de la métrique analysée.  
+ - **Valeur basse** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus basse de la métrique analysée.  
 
-Si vous sélectionnez **Valeur élevée** dans l'exemple des produits en rupture de stock, vous obtenez les résultats suivants : ![Découpage IA dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
+Si vous sélectionnez **Valeur élevée** dans l'exemple des produits en rupture de stock, vous obtenez les résultats suivants :
+
+![Découpage IA dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
 
 Une ampoule apparaît à côté de **Type de produit** pour indiquer qu'il s'agit d'un « découpage IA ». L'arborescence affiche également une ligne pointillée recommandant le nœud **Patient Monitoring** (Suivi des patients), car elle génère la valeur la plus élevée des produits en rupture de stock (9,2 %). 
 
@@ -83,7 +92,9 @@ Pointez sur l'ampoule pour afficher une info-bulle. Dans cet exemple, l'info-bul
 
 Vous pouvez configurer le visuel pour qu'il identifie les découpages IA **Relative** (relatifs) plutôt que les découpages **Absolute** (absolus). 
 
-Le mode Relative recherche les valeurs hautes qui se démarquent (par rapport au reste des données de la colonne). Pour illustrer cela, prenons un exemple : ![Découpage dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
+Le mode Relative recherche les valeurs hautes qui se démarquent (par rapport au reste des données de la colonne). Pour illustrer cela, prenons un exemple :
+
+![Découpage absolu dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
 Dans la capture d'écran ci-dessus, nous examinons les ventes de jeux vidéo en Amérique du Nord. Nous divisons d'abord l'arborescence par **Nom de l'éditeur**, puis nous explorons le critère Nintendo. La sélection de l’option **Valeur élevée** entraîne l'expansion du champ **Platform is Nintendo** (Plate-forme Nintento). Étant donné que Nintendo (l'éditeur) développe uniquement des jeux pour les consoles Nintendo, il n'y a qu'une seule valeur présente, et c'est donc, sans surprise, la valeur la plus élevée.
 
@@ -111,9 +122,13 @@ Si vous préférez ne pas utiliser de découpages IA dans l'arborescence, vous p
 
 ## <a name="tree-interactions-with-ai-splits"></a>Interactions dans l’arborescence avec des découpages IA
 
-Vous pouvez avoir plusieurs niveaux d'IA subséquents. Vous pouvez également combiner différents types de niveaux d'IA (passer de Valeur élevée à Valeur basse, puis de nouveau à Valeur élevée) : ![Arborescence hiérarchique avec chemins IA multiples](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+Vous pouvez avoir plusieurs niveaux d'IA subséquents. Vous pouvez également combiner différents types de niveaux d'IA (passer de Valeur élevée à Valeur basse, puis de nouveau à Valeur élevée) :
 
-Si vous sélectionnez un autre nœud dans l'arborescence, les découpages IA effectuent un nouveau calcul à partir de zéro. Dans l'exemple ci-dessous, nous avons modifié le nœud sélectionné au niveau **Forecast Bias** (Biais de prévision). Les niveaux suivants changent pour afficher les valeurs élevées et basses correctes pour le champ ![Decomposition tree AI interactions](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png) (Interactions IA dans l’arborescence hiérarchique)
+![Arborescence hiérarchique avec chemins IA multiples](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
+
+Si vous sélectionnez un autre nœud dans l'arborescence, les découpages IA effectuent un nouveau calcul à partir de zéro. Dans l'exemple ci-dessous, nous avons modifié le nœud sélectionné au niveau **Forecast Bias** (Biais de prévision). Les niveaux suivants changent pour afficher les valeurs élevées et basses correctes pour le champ.
+
+![Interactions IA dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
 
 Les niveaux d'IA sont également recalculés lorsque vous filtrez l'arborescence hiérarchique selon un autre visuel. Dans l'exemple ci-dessous, nous pouvons constater que notre pourcentage de produits en rupture de stock est le plus élevé pour l'usine 0477.
 
@@ -144,15 +159,11 @@ L'arborescence hiérarchique n'est pas prise en charge dans les scénarios suiva
 
 Les découpages IA ne sont pas pris en charge dans les scénarios suivants :  
 -   Azure Analysis Services
--   Requête directe
 -   Power BI Report Server
 -   Publication sur le web
 -   Mesures complexes et mesures provenant de schémas d'extensions dans 'Analyzer'
 
-Autres limitations de la préversion :
-- Power BI Mobile  
-- Épinglage au tableau de bord
-- Fonctionnalité Afficher les données
+Autres limitations :
 - Support dans les Questions et réponses
 
 ## <a name="next-steps"></a>Étapes suivantes

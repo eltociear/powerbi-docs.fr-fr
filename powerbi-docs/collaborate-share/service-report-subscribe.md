@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f057395361840b7b16fa8a7cde5a6d2513196845
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438220"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315945"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -71,6 +71,10 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 1. (Facultatif) Spécifiez s’il faut inclure un lien pour revenir au contenu dans Power BI et s’il faut autoriser les utilisateurs à accéder au contenu auquel vous les abonnez.  Si vous choisissez d’inclure un lien, pour une expérience optimale, vérifiez que tous les utilisateurs ont accès au rapport.
 2. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement. Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou votre rapport envoient un e-mail seulement après la première actualisation planifiée.
 
+    > [!NOTE]
+    > Si vous modifiez l’abonnement après avoir enregistré et fermé, le choix de donner aux utilisateurs l’accès au contenu auquel vous vous abonnez prend effet, quelles que soient vos sélections précédentes.
+    >
+
     > [!TIP]
     > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements associés au tableau de bord ou au rapport que vous voulez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement. Cette action n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent.
     >
@@ -112,6 +116,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - Si votre tableau de bord ou rapport est dans une capacité Premium, vous pouvez utiliser des alias de messagerie de groupe pour les abonnements, au lieu d’abonner vos collègues à une seule adresse e-mail à la fois. Les alias sont basés sur l’annuaire Active Directory actuel.
 - Si votre contenu n’est pas dans une capacité Premium, seuls les utilisateurs Power BI Pro peuvent recevoir des abonnements par e-mail. 
 - Les abonnements ne prennent pas en charge les signets pour l’instant.
+- L’option permettant de fournir l’accès au rapport/tableau de bord s’affiche toujours comme étant activée quand vous modifiez un abonnement existant.  Si vous désactivez cette option et que vous enregistrez l’abonnement, il enregistre cet état. Cependant, quand vous modifiez à nouveau le rapport, elle est activée par défaut.
 
 ### <a name="dashboards"></a>Tableaux de bord
 

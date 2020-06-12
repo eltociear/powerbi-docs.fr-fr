@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 09/13/2019
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 38f3b9e40001b5cc3d90d35ed56e768237345e5d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: f28182b8ecfcadae92f64a725622493ebd7a6c61
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84119797"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160246"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Scénarios de résolution de problèmes liés à l’actualisation
 
@@ -23,7 +23,14 @@ Vous trouverez ici des informations concernant les différents scénarios auxque
 > [!NOTE]
 > Si vous rencontrez un scénario ne figurant pas dans la liste ci-dessous alors qu’il vous pose problème, vous pouvez demander de l’aide sur le [site de la communauté](https://community.powerbi.com/) ou créer un [ticket de support](https://powerbi.microsoft.com/support/).
 >
->
+
+Vous devez vous assurer que les conditions de base pour l’actualisation sont remplies et vérifiées. Ces conditions de base sont :
+
+* Vérifier que la version de la passerelle est à jour
+* Vérifier qu’une passerelle est sélectionnée pour le rapport ; si ce n’est pas le cas, la source de données peut avoir changé ou être manquante
+
+Une fois que vous avez vérifié que ces conditions sont remplies, consultez les sections suivantes pour plus d’informations sur la résolution des problèmes. 
+
 
 ## <a name="email-notifications"></a>Notifications par e-mail
 

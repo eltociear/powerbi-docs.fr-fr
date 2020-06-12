@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/27/2020
-ms.openlocfilehash: f4585e4c1eb629b4676b74157c0520d70540da7b
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 05/27/2020
+ms.openlocfilehash: ee725457475f1bccd593e2331d9e62c85ef08762
+ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565143"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84126293"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -23,9 +23,56 @@ Téléchargez [Power BI Report Server et Power BI Desktop optimisé pour Power B
 
 Pour des informations connexes sur les nouveautés de Power BI, voir :
 
-* [Nouveautés dans le service Power BI](../fundamentals/service-whats-new.md)
-* [Nouveautés dans Power BI Desktop](../fundamentals/desktop-latest-update.md)
-* [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+- [Nouveautés dans le service Power BI](../fundamentals/service-whats-new.md)
+- [Nouveautés dans Power BI Desktop](../fundamentals/desktop-latest-update.md)
+
+## <a name="may-2020"></a>Mai 2020
+
+Voici quelques-unes des principales caractéristiques de cette mise à jour : les visuels Sélecteur hiérarchique et Arborescence de décomposition, et les diagnostics des requêtes. Voici la liste complète des fonctionnalités nouvelles et mises à jour. Pour plus d’informations, consultez le [billet de blog Power BI Report Server de mai 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
+
+### <a name="reporting"></a>Création de rapports
+
+- Sélecteur hiérarchique
+- Nouveaux types d’action pour les boutons :
+
+    - Navigation de page
+    - Extraire
+
+- Les boutons prennent désormais en charge les images de remplissage
+- Tri multicolonne pour les tables
+- Axe double pour les graphiques en courbes
+- Sélection de rectangle pour les visuels
+- Mise en forme conditionnelle des totaux et des sous-totaux dans les tables et les matrices
+- Boîte de dialogue Personnaliser le thème
+- Découvrabilité de la mise en forme conditionnelle
+- Arborescence hiérarchique
+- Mises à jour du volet de filtre :
+
+    - Nouvelle expérience du volet de filtre
+    - Recherche dans le volet de filtre
+    
+### <a name="modeling"></a>Modélisation
+
+- Nouvelles fonctions DAX :
+
+    - FirstNonBlankValue
+    - LastNonBlankValue
+    - Coalesce
+
+- Séparateurs DAX standard
+
+### <a name="visualizations"></a>Visualisations
+
+- Nouvelles icônes de visualisation
+- Ombres portées pour les visuels
+
+### <a name="data-preparation"></a>Préparation des données
+
+- Diagnostics des requêtes
+
+### <a name="other"></a>Autre
+
+- Utilisation des informations d’identification système par défaut pour le proxy web
 
 ## <a name="january-2020"></a>Janvier 2020
 
@@ -561,13 +608,13 @@ Cette version prend en charge la montée en puissance parallèle. Pour une expé
 
 Les administrateurs peuvent définir les propriétés suivantes dans les propriétés avancées de SSMS pour la batterie de serveurs :
 
-* EnableCustomVisuals : Vrai/Faux
-* EnablePowerBIReportEmbeddedModels : Vrai/Faux
-* EnablePowerBIReportExportData : Vrai/Faux
-* MaxFileSizeMb : la valeur par défaut est maintenant 1000
-* ModelCleanupCycleMinutes : fréquence de vérification pour la suppression de modèles de la mémoire
-* ModelExpirationMinutes : délai avant que le modèle expire et soit supprimé, en fonction de l’heure de la dernière utilisation
-* ScheduleRefreshTimeoutMinutes : durée maximale de l’actualisation des données d’un modèle La valeur par défaut est deux heures.  Il n’existe aucune limite supérieure.
+- EnableCustomVisuals : Vrai/Faux
+- EnablePowerBIReportEmbeddedModels : Vrai/Faux
+- EnablePowerBIReportExportData : Vrai/Faux
+- MaxFileSizeMb : la valeur par défaut est maintenant 1000
+- ModelCleanupCycleMinutes : fréquence de vérification pour la suppression de modèles de la mémoire
+- ModelExpirationMinutes : délai avant que le modèle expire et soit supprimé, en fonction de l’heure de la dernière utilisation
+- ScheduleRefreshTimeoutMinutes : durée maximale de l’actualisation des données d’un modèle La valeur par défaut est deux heures.  Il n’existe aucune limite supérieure.
 
 **Fichier de configuration rsreportserver.config**
 
@@ -597,9 +644,9 @@ Excel et Power BI contiennent une panoplie d’outils unique dans ce secteur d�
 
 Nous avons publié une [procédure pas à pas montrant comment ajouter Office Online Server (OOS) à votre environnement en préversion Power BI Report Server](excel-oos.md). Les clients titulaires d’un compte de licence en volume peuvent télécharger OOS gratuitement à partir du Centre MVLS et accéder aux fonctionnalités en lecture seule. Une fois configurés, les utilisateurs peuvent interagir avec des classeurs Excel qui :
 
-* n’ont aucune dépendance de source de données externe ;
-* disposent d’une connexion active à une source de données SQL Server Analysis Services externe ;
-* disposent d’un modèle de données PowerPivot.
+- n’ont aucune dépendance de source de données externe ;
+- disposent d’une connexion active à une source de données SQL Server Analysis Services externe ;
+- disposent d’un modèle de données PowerPivot.
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>Prendre en charge des nouveaux visuels de table et de matrice
 
@@ -607,22 +654,21 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 
 ## <a name="june-2017"></a>Juin 2017
 
-* Disponibilité générale (GA) de Power BI Report Server.
+- Disponibilité générale (GA) de Power BI Report Server.
 
 ## <a name="may-2017"></a>Mai 2017
 
-* Disponibilité de Power BI Report Server en version préliminaire
-* Possibilité de publier des rapports Power BI localement
-  * Prise en charge des visuels Power BI
-  * Prise en charge prochaine des **connexions directes Analysis Services** uniquement, avec plus de sources de données.
-  * Application mobile Power BI mise à jour pour afficher des rapports Power BI hébergés dans Power BI Report Server
-* Collaboration améliorée dans les rapports avec des commentaires
+- Disponibilité de Power BI Report Server en version préliminaire
+- Possibilité de publier des rapports Power BI localement
+  - Prise en charge des visuels Power BI
+  - Prise en charge prochaine des **connexions directes Analysis Services* uniquement, avec plus de sources de données.
+  - Application mobile Power BI mise à jour pour afficher des rapports Power BI hébergés dans Power BI Report Server
+- Collaboration améliorée dans les rapports avec des commentaires
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Consultez les sources suivantes pour vous tenir au courant des nouvelles fonctionnalités de Power BI Report Server.
 
-* [Blog Microsoft Power BI](https://powerbi.microsoft.com/blog/)
-* [Chaîne YouTube Guy in a Cube](https://aka.ms/guyinacube)
+- [Blog Microsoft Power BI](https://powerbi.microsoft.com/blog/)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

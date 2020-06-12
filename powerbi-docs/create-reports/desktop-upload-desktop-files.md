@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4a363ce72002003981f1bcbe46e0f5367f89860f
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 417d5a03ed45897896db15f2fd31d3badae837c5
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733466"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273457"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publier des jeux de données et des rapports à partir de Power BI Desktop
 Quand vous publiez un fichier Power BI Desktop dans le service Power BI, vous publiez les données du modèle dans votre espace de travail Power BI. Il en va de même pour tous les rapports que vous avez créés dans la vue**Rapport**. Un nouveau jeu de données du même nom et tous les rapports seront visibles dans le navigateur de votre espace de travail.
@@ -23,13 +23,12 @@ La publication à partir de Power BI Desktop a le même effet que l’utilisatio
 
 > [!NOTE]
 > Tous les changements que vous apportez au rapport dans Power BI ne seront pas enregistrés dans le fichier Power BI Desktop d’origine. Cela inclut l’ajout, la suppression ou le changement des visualisations dans les rapports.
-> 
-> 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Pour publier un jeu de données et des rapports Power BI Desktop
 1. Dans Power BI Desktop, choisissez **Fichier** \> **Publier** \> **Publier sur Power BI** ou sélectionnez **Publier** dans le ruban.  
 
    ![Bouton Publier](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
 
 2. Connectez-vous à Power BI.
 3. Sélectionnez la destination.
@@ -55,3 +54,7 @@ Ce processus est assez simple, mais vous devez savoir un certain nombre de chose
    ![Avertissement concernant l’impact de la republication d’un jeu de données](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
 
    [En savoir plus sur l’analyse d’impact des jeux de données](../collaborate-share/service-dataset-impact-analysis.md).
+
+> [!NOTE]
+> Une connexion de données dans des rapports Power BI peut inclure des liens vers des données, au lieu d’inclure les données du jeu de données importé dans le service Power BI. Par exemple, les connexions DirectQuery établissent un lien aux données quand des mises à jour ou des interactions se produisent, au lieu d’importer les données elles-mêmes. Si les sources de données liées dans votre rapport sont locales, vous pouvez avoir besoin d’une passerelle pour y accéder depuis Power BI. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](../connect-data/service-gateway-onprem.md).
+> 

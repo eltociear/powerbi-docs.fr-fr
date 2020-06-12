@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a0000d2e0da3613bb74e8d3d0aed2dd7fa3e3dcc
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83326032"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160269"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses avec les données de toutes ces tables. Les relations entre ces tables sont nécessaires pour calculer des résultats précis et pour afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Vous pouvez cependant parfois être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -59,7 +59,7 @@ Quand vous créez ou modifiez une relation, vous pouvez configurer des options s
 ### <a name="cardinality"></a>Cardinalité
 L’option **Cardinalité** peut avoir une des valeurs suivantes :
 
-**Plusieurs à un (\*:1)**  : Une relation plusieurs-à-un est le type de relation par défaut le plus courant. Elle signifie que la colonne d’une table peut avoir plusieurs instances d’une valeur, tandis que la table liée, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur donnée.
+**Plusieurs à un (\*:1)**  : Une relation plusieurs-à-un est le type de relation par défaut le plus courant. Elle signifie que la colonne d’une table donnée peut avoir plusieurs instances d’une valeur, tandis que la table liée, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur.
 
 **Un à un (1:1)**  : Dans une relation un-à-un, la colonne d’une table n’a qu’une seule instance d’une valeur particulière et la table liée n’a qu’une seule instance d’une valeur donnée.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 01f2d8add417b1d1d37ef043ccb3c48c2609162d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: b0fc91eab8c377f5571e66eb7baaf55234fafa97
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813597"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337024"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -154,24 +154,26 @@ Lorsque vous sélectionnez **Exporter**, Power BI exporte les données sont dans
 
     - Comme nous avons appliqué des filtres à la visualisation, les données sont exportées en étant filtrées. Notez que la première ligne affiche **Filtres appliqués : Ville n’est pas Atlanta, GA**. 
 
-## <a name="protecting-proprietary-data"></a>Protection des données propriétaires
+## <a name="customize-the-export-data-user-experience"></a>Personnaliser l’expérience utilisateur de l’exportation de données
 
-Votre jeu de données peut avoir du contenu qui ne doit pas être vu par tous les utilisateurs. Si vous ne faites pas attention, l’exportation de données sous-jacentes peut permettre aux utilisateurs de voir toutes les données détaillées de ce visuel, c’est-à-dire chaque colonne et chaque ligne des données. 
+Les utilisateurs qui sont autorisés à accéder à un rapport sont **autorisés à accéder à l’ensemble du jeu de données sous-jacent**, sauf si la [sécurité au niveau des lignes (RLS)(../admin/service-admin-rls.md) limite leur accès. Les créateurs de rapports et les administrateurs Power BI peuvent utiliser les fonctionnalités décrites ci-dessous pour personnaliser l’expérience utilisateur.
 
-Il existe plusieurs stratégies que les administrateurs et les concepteurs Power BI devraient utiliser pour protéger les données propriétaires. 
+- Les créateurs de rapports [déterminent quelles *options d’exportation*](#set-the-export-options) sont à la disposition des utilisateurs.  
 
-- Les concepteurs [déterminent quelles *options d’exportation*](#set-the-export-options) sont à la disposition des utilisateurs.  
-
-- Les administrateurs Power BI peuvent désactiver l’exportation de données pour leur organisation. 
+- Les administrateurs Power BI peuvent désactiver tout ou partie des options d’exportation de données pour leur organisation.  
 
 - Les propriétaires de jeux de données peuvent définir la sécurité au niveau des lignes (RLS, Row level security). La sécurité RLS limite l’accès aux utilisateurs en lecture seule. Toutefois, si vous avez configuré un espace de travail d’applications et accordé aux membres les autorisations de modification, les rôles RLS ne s’appliquent pas à eux. Pour plus d’informations, consultez [Sécurité au niveau des lignes](../admin/service-admin-rls.md).
 
-- Les concepteurs de rapports peuvent masquer les colonnes afin de ne pas les faire apparaître dans la liste **Champs**. Pour plus d’informations, consultez [Propriétés de jeu de données](../developer/automation/api-dataset-properties.md)
+- Les créateurs de rapports peuvent masquer des colonnes afin de ne pas les faire apparaître dans la liste **Champs**. Pour plus d’informations, consultez [Propriétés de jeu de données](../developer/automation/api-dataset-properties.md)
 
-- Les administrateurs Power BI peuvent ajouter des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md) aux tableaux de bord, rapports, jeux de données et dataflows. Ils peuvent ensuite appliquer des paramètres de protection, tels que le chiffrement ou les filigranes, lors de l’exportation des données. 
 
-- Les administrateurs Power BI peuvent utiliser [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) pour superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes. Par exemple, les organisations peuvent utiliser Microsoft Cloud App Security pour configurer une stratégie qui empêche les utilisateurs de télécharger des données sensibles de Power BI vers des appareils non gérés. 
+**Ces expériences utilisateur personnalisées ne limitent pas les données auxquelles les utilisateurs peuvent accéder dans le jeu de données. Utilisez la [sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) dans le jeu de données pour que les informations d’identification de chaque personne déterminent les données auxquelles elle peut accéder.**
 
+## <a name="protect-data-when-it-is-exported-out-of-power-bi"></a>Protéger les données quand elles sont exportées en dehors de Power BI
+
+- Les créateurs de rapports peuvent appliquer des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md) aux rapports.  Ces étiquettes déterminent qui peut accéder aux données du rapport et comment elles sont exportées vers Excel, PowerPoint et PDF. Certains niveaux de sensibilité incluent des paramètres de protection (par exemple les autorisations, le chiffrement) qui s’appliquent quand les données sont exportées. Si le niveau de sensibilité inclut des paramètres de protection, ces paramètres sont appliqués quand vous exportez des données vers Excel, PowerPoint et PDF. Seules les personnes disposant des autorisations appropriées pourront exporter, visualiser, enregistrer et partager les données du rapport. 
+
+- Les administrateurs de la sécurité et les administrateurs Power BI peuvent utiliser [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) pour superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes. Par exemple, les organisations peuvent utiliser Microsoft Cloud App Security pour configurer une stratégie qui empêche les utilisateurs de télécharger des données sensibles de Power BI vers des appareils non gérés.
 
 ## <a name="export-underlying-data-details"></a>Exporter les détails concernant les données sous-jacentes
 

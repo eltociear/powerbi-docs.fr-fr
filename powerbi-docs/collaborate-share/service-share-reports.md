@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 636aaf59a3a949b5b3571012d12cecc234e9763b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e91698413df11a2f593128a616948935b65c0c4e
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347950"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272905"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Filtrer et partager un rapport Power BI
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Est-il possible de partager une version filtrée d’un rapport ? Vous voulez peut-être que le rapport affiche uniquement les données relatives à une ville, un commercial ou une année spécifique. Cet article explique comment filtrer un rapport et partager la version filtrée du rapport. Une autre façon de partager un rapport filtré consiste à [ajouter des paramètres de requête à l’URL du rapport](service-url-filters.md). Dans les deux cas, le rapport est filtré quand les destinataires l’ouvrent pour la première fois. Ils peuvent effacer les sélections de filtre du rapport.
@@ -77,6 +77,10 @@ Enregistrez le rapport.
 
 7. Si vous partagez ce lien, les destinataires verront votre rapport filtré. 
 
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+Voici quelques éléments à prendre en compte lors du partage de rapports :
+
+* Quand vous partagez un jeu de données en gérant des autorisations, en partageant des rapports ou des tableaux de bord, ou en publiant une application, vous accordez l’accès à l’ensemble du jeu de données, sauf si [la sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) limite leur accès. Les auteurs de rapports peuvent utiliser des fonctionnalités qui personnalisent les expériences utilisateur lors de l’affichage ou de l’interaction avec les rapports, par exemple le masquage de colonnes ou la limitation des actions sur les visuels. Ces expériences utilisateur personnalisées ne limitent pas les données auxquelles les utilisateurs peuvent accéder dans le jeu de données. Utilisez la [sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) dans le jeu de données pour que les informations d’identification de chaque personne déterminent les données auxquelles elle peut accéder.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Moyens de partager votre travail dans Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)

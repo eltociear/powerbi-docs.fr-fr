@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 2f98071000715c65f50f39eb4d121a4af6e72f99
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: b43d52445c9a5232ba1747a9dae9333da8697f84
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813344"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273066"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -646,7 +646,7 @@ Pour plus d’informations, consultez notre [blog](https://powerbi.microsoft.com
 * Suite à la mise à jour du service de cette semaine, lors de la création de rapports, vous avez désormais le choix entre plusieurs tailles de page et pouvez définir votre propre taille de page. Vous pouvez ainsi contrôler la taille et les proportions de chaque page du rapport.
 * Nous avons ajouté la prise en charge d’une mise en forme visuelle supplémentaire des images et graphiques en bulles. Vous pouvez verrouiller l’aspect lors du redimensionnement d’images pour éviter la distorsion de celles-ci, et configurer les bulles de graphique en nuages de points de façon à ce qu’elles soient remplies ou non.
 * Désormais, Power BI envoie les invitations de partage à l’adresse de messagerie de secours. Quand un tableau de bord est partagé avec vous, nous envoyons le lien d’invitation de partage tant à votre adresse de messagerie d’origine qu’à votre adresse de messagerie de secours (si vous l’avez configurée).
-* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture O365 mutualisée dédiée (DonMT) . Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur client, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](https://go.microsoft.com/fwlink/?LinkId=627174).
+* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture Microsoft 365 multilocataire dédiée (DonMT, Dedicated on Multitenant). Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur client, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](https://go.microsoft.com/fwlink/?LinkId=627174).
 * Les journaux d’audit Azure vous permettent de consulter les journaux des opérations du panneau de configuration dans votre abonnement Azure. Le pack de contenu des journaux d’audit Azure de Power BI peut vous aider à analyser et visualiser facilement la mine d’informations que ces journaux contiennent. Le pack de contenu vous permet de vous connecter à vos données et de commencer à découvrir diverses informations à l’aide du tableau de bord et des rapports prêts à l’emploi. Pour plus d’informations, lisez notre [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) et notre [documentation en ligne](../connect-data/service-connect-to-services.md).
 
 [Pour en savoir plus, consultez notre blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

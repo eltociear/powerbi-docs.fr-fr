@@ -1,26 +1,27 @@
 ---
-title: Impossible d’ajouter Power BI au partenaire O365
-description: Impossible d’ajouter Power BI à un partenaire de syndication Microsoft 365. Le modèle syndiqué est un modèle d’achat utilisé par Microsoft 365.
+title: Acheter Power BI par le biais de votre partenaire Microsoft 365
+description: Découvrez comment ajouter Power BI à un abonnement Microsoft 365 acheté auprès d’un partenaire. Le modèle syndiqué est un modèle d’achat utilisé par Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 05/27/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 2c590875b4dee81f7ca54434d6e5895be885be97
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bc00c69869ea58aee8b4d0a79fce6b24489bde18
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812332"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159732"
 ---
-# <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Impossible d’ajouter Power BI à l’abonnement du partenaire Office 365
+# <a name="add-power-bi-to-a-microsoft-365-partner-subscription"></a>Ajouter Power BI à un abonnement de partenaire Microsoft 365
 
-Microsoft 365 permet aux sociétés de revendre Microsoft 365 dans une offre groupée et intégrée à leurs propres solutions, pour fournir aux utilisateurs finaux un seul point de contact pour l’achat, la facturation et le support technique.
+Microsoft 365 permet aux entreprises de revendre Microsoft 365 dans une offre groupée et intégrée à leurs propres solutions, pour fournir aux clients un seul point de contact pour l’achat, la facturation et le support.
 
-Si vous avez envie d’acquérir Power BI conjointement à votre abonnement Office 365, nous vous recommandons de contacter votre partenaire. Si votre partenaire ne propose actuellement pas Power BI, différentes options sont envisageables pour poursuivre.
+Si ajouter Power BI à votre abonnement Microsoft 365 vous intéresse, nous vous recommandons de contacter votre partenaire. Si votre partenaire ne propose pas Power BI, vous pouvez utiliser les options décrites ci-dessous.
 
 ## <a name="work-with-your-partner-to-purchase-power-bi"></a>Travailler avec votre partenaire pour acheter Power BI
 
@@ -28,23 +29,25 @@ Si vous voulez souscrire un abonnement à Power BI Pro ou Power BI Premium, d�
 
 * Votre partenaire accepte d’ajouter Power BI à son portefeuille pour que vous puissiez réaliser des achats auprès de lui.
 
-* Votre partenaire est en mesure de vous faire passer vers un modèle qui vous permet d’acheter Power BI directement auprès de Microsoft ou d’un autre partenaire qui propose Power BI.
+* Votre partenaire peut vous faire passer à un modèle qui vous permet d’acheter Power BI directement auprès de Microsoft ou d’un autre partenaire qui propose Power BI.
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Acheter auprès de Microsoft ou par un autre canal
 
-En fonction de la relation que vous entretenez avec votre partenaire, vous pouvez acheter Power BI directement auprès de Microsoft ou d’un autre partenaire. Vous pouvez vérifier si vous pouvez ajouter des abonnements de Power BI dans le centre d’administration Microsoft 365 (nécessite l’appartenance au rôle Administrateur général ou Administrateur de facturation).
+En fonction de la relation que vous entretenez avec votre partenaire, vous pouvez acheter Power BI directement auprès de Microsoft ou d’un autre partenaire. Vous pouvez vérifier si vous pouvez ajouter des abonnements Power BI dans le centre d’administration Microsoft 365 (nécessite l’appartenance au rôle Administrateur général ou Administrateur de facturation).
 
 1. Accédez au [Centre d’administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. Dans le menu de gauche, ouvrez **Facturation** :
+1. Dans le menu de gauche, ouvrez **Facturation**, puis sélectionnez **Vos produits** :
 
-    * si vous voyez **Abonnements**, vous pouvez acquérir le service directement auprès de Microsoft, ou également contacter un partenaire qui propose Power BI.
+   ![Menu Facturation dans le Centre d’administration Microsoft 365](media/service-admin-syndication-partner/365-my-products.png)
 
-        ![Facturation avec des abonnements](media/service-admin-syndication-partner/billingsub.png)
+ 1. Recherchez **Abonnements** comme indiqué dans l’image ci-dessous. si vous voyez **Abonnements**, vous pouvez acquérir le service directement auprès de Microsoft, ou également contacter un partenaire qui propose Power BI.
 
-    * Si vous ne voyez pas **Abonnements**, vous ne pouvez pas acheter directement auprès de Microsoft ou d’un autre partenaire.
+    ![Vos produits avec les abonnements](media\service-admin-syndication-partner\365-subscriptions.png)
 
-Si votre partenaire ne propose pas Power BI et que vous ne pouvez pas acheter directement auprès de Microsoft ou d’un autre partenaire, envisagez de vous inscrire à un essai gratuit.
+    Si vous ne voyez pas **Abonnements**, vous ne pouvez pas acheter directement auprès de Microsoft ou d’un autre partenaire.
+
+Si votre partenaire ne propose pas Power BI et que vous ne pouvez pas acheter directement auprès de Microsoft ou d’un autre partenaire, vous pouvez vous inscrire à un essai gratuit.
 
 ## <a name="sign-up-for-a-free-trial"></a>S’inscrire à un essai gratuit
 
@@ -56,31 +59,11 @@ Par défaut, les inscriptions individuelle (également appelées abonnements ad 
 
 ![Image Désolé](media/service-admin-syndication-partner/sorry.png)
 
-Pour activer les abonnements ad hoc, vous pouvez contacter votre partenaire pour le lui demander. Si vous êtes administrateur de votre client et savez comment utiliser les commandes PowerShell Azure Active Directory, vous pouvez activer les abonnements ad hoc vous-même. [ Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2/)
-
-1. Connectez-vous à Azure Active Directory avec vos informations d’identification Microsoft 365. La première ligne du script ci-dessous vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
-
-    ```powershell
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
-    ```
-
-    ![Entrez vos informations d’identification](media/service-admin-syndication-partner/aad-signin.png)
-
-1. Une fois que vous êtes connecté, exécutez la commande suivante pour vérifier le paramètre actuel de `AllowAdHocSubscriptions`.
-
-    ```powershell
-    Get-MsolCompanyInformation
-    ```
-
-1. Exécutez la commande suivante pour activer les inscriptions gratuites.
-
-    ```powershell
-    Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
+Pour activer les abonnements ad hoc, vous pouvez contacter votre partenaire pour le lui demander. Si vous êtes administrateur de votre locataire et que vous savez comment utiliser les commandes PowerShell Azure Active Directory, vous pouvez activer vous-même des abonnements ad hoc. Pour plus d’informations, suivez les étapes décrites dans [Activer ou désactiver l’achat en libre-service](service-admin-disable-self-service.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Gestion des licences Power BI dans votre organisation](service-admin-licensing-organization.md)
+* [Gestion des licences Power BI dans votre organisation](service-admin-licensing-organization.md)
+* [Acheter et attribuer des licences Power BI Pro](service-admin-purchasing-power-bi-pro.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

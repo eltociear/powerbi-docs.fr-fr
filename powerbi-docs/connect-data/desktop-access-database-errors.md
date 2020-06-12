@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1816fb7926ed378cdb70ce2e0ade08893828ce4c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1d0dcc80c358fa4c6f0768d515c399a3f381bfe7
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83301330"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273365"
 ---
 # <a name="troubleshoot-importing-access-and-excel-xls-files-in-power-bi-desktop"></a>Résoudre les problèmes liés à l’importation de fichiers Access et .xls Excel dans Power BI Desktop
 
@@ -30,7 +30,7 @@ Si le message d’erreur de Power BI Desktop indique que le moteur de base de 
 
 ## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2 : la version (32 bits ou 64 bits) du moteur de base de données Access diffère de celle de Power BI Desktop.
 
-Cette situation se produit souvent quand la version installée de Microsoft Office est 32 bits alors que la version installée de Power BI Desktop est 64 bits. L’inverse peut également se produire, entraînant une incompatibilité des versions dans les deux cas. Si vous utilisez un abonnement Office 365, reportez-vous à la [situation 3](#situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription) (problème et résolution différents). Toutes les solutions suivantes permettent de remédier à cette erreur d’incompatibilité de version de bits :
+Cette situation se produit souvent quand la version installée de Microsoft Office est 32 bits alors que la version installée de Power BI Desktop est 64 bits. L’inverse peut également se produire, entraînant une incompatibilité des versions dans les deux cas. Si vous utilisez un abonnement Microsoft 365, consultez [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription) pour un autre problème et sa résolution. Toutes les solutions suivantes permettent de remédier à cette erreur d’incompatibilité de version de bits :
 
 ### <a name="solution-1"></a>Solution 1
 
@@ -79,9 +79,9 @@ Pour installer les deux versions (32 et 64 bits) du moteur de base de données 
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-## <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situation 3 : problèmes d’utilisation de fichiers Access ou XLS avec un abonnement Office 365
+## <a name="situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription"></a>Situation 3 : Problèmes d’utilisation de fichiers Access ou .XLS avec un abonnement Microsoft 365
 
-Si vous utilisez un abonnement Office 365 (**Office 2013** ou **Office 2016**), le fournisseur de moteur de base de données Access est enregistré dans un emplacement de registre virtuel *uniquement* accessible par les processus Microsoft Office. Le moteur Mashup (qui est chargé d’exécuter les versions d’Excel et Power BI Desktop non associées à Office 365), qui n’est pas un processus Office, ne peut donc pas utiliser le fournisseur de moteur de base de données Access.
+Si vous utilisez un abonnement Microsoft 365 (**Office 2013** ou **Office 2016**), le fournisseur du moteur de base de données Access est enregistré à un emplacement de registre virtuel accessible *seulement* par les processus Microsoft Office. Le moteur Mashup (qui est chargé d’exécuter les versions d’Excel et Power BI Desktop non associées à Office 365), qui n’est pas un processus Office, ne peut donc pas utiliser le fournisseur de moteur de base de données Access.
 
 Pour remédier à cette situation, vous pouvez [télécharger et installer le package redistribuable de moteur de base de données Access](https://www.microsoft.com/download/details.aspx?id=13255) qui correspond à la version (32 ou 64 bits) de votre installation de Power BI Desktop. Consultez les sections précédentes de cet article pour plus d’informations sur les versions (32 ou 64 bits).
 

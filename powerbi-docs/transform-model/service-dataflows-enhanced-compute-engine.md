@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 06/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e126451bf016bf4e9dcce7b7a4df51db9ed20386
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ec0d12ddf91b04654b90c5a3e7cdfda24bc04604
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320512"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315899"
 ---
 # <a name="the-enhanced-compute-engine"></a>Le moteur de calcul amélioré
 
@@ -31,6 +31,9 @@ Les sections suivantes décrivent comment activer le moteur de calcul amélioré
 Le moteur de calcul amélioré s’active à partir de la page **Paramètres de capacité** du service Power BI, dans la section **Dataflows**. Par défaut, le moteur de calcul amélioré est **Désactivé**. Pour l’activer, faites passer le bouton bascule sur **Activé**, comme le montre l’illustration suivante, puis enregistrez vos paramètres. 
 
 ![Activer le moteur de calcul amélioré](media/service-dataflows-enhanced-compute-engine/enhanced-compute-engine-01.png)
+
+> [!IMPORTANT]
+> Le moteur de calcul amélioré fonctionne seulement pour les capacités Power BI de niveau A3 et supérieur.
 
 Une fois que vous avez activé le moteur de calcul amélioré, revenez aux dataflows. Vous devriez constater une amélioration des performances dans toutes les entités calculées qui effectuent des opérations complexes, comme des opérations de *jointure* ou de *regroupement* pour les dataflows créés à partir d’entités liées existantes sur la même capacité. 
 

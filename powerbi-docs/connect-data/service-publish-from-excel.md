@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9bbd5cbafa7f6c17fd9b9a02b93a27cc5859ee4a
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83305608"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272767"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publier sur Power BI à partir de Microsoft Excel
 Avec Micorsoft Excel 2016 et version ultérieure, vous pouvez publier vos classeurs Excel directement vers votre espace de travail [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports et des tableaux de bord hautement interactifs, basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.
@@ -39,7 +39,7 @@ Si vous sélectionnez **Exporter**, vous pouvez exporter les données de la tabl
 Excel prend en charge la publication de fichiers Excel locaux. Ceux-ci ne doivent pas nécessairement être enregistrés sur OneDrive Entreprise ou SharePoint Online.
 
 > [!IMPORTANT]
-> Vous pouvez publier des fichiers locaux uniquement si vous utilisez Excel 2016 (ou version ultérieure) avec un abonnement Office 365. Les installations autonomes Excel 2016 peuvent Publier sur Power BI, mais uniquement lorsque le classeur est enregistré sur OneDrive Entreprise ou SharePoint Online.
+> Vous pouvez publier des fichiers locaux seulement si vous utilisez Excel 2016 (ou ultérieur) avec un abonnement Microsoft 365. Les installations autonomes Excel 2016 peuvent Publier sur Power BI, mais uniquement lorsque le classeur est enregistré sur OneDrive Entreprise ou SharePoint Online.
 > 
 
 Lorsque vous sélectionnez **Publier**, vous pouvez sélectionner l’espace de travail sur lequel publier. Si votre fichier Excel se trouve sur OneDrive Entreprise, vous ne pouvez le publier que sur *Mon espace de travail*. S’il se trouve sur un lecteur local, vous pouvez le publier sur *Mon espace de travail* ou sur un espace de travail partagé auquel vous avez accès.

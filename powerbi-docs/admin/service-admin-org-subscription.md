@@ -1,5 +1,5 @@
 ---
-title: Obtenir un abonnement Power BI pour votre organisation
+title: Obtenir un abonnement au service Power BI pour votre organisation
 description: Comment s’abonner à un service Power BI en tant qu’administrateur et acheter des licences en bloc.
 author: kfollis
 ms.reviewer: ''
@@ -8,17 +8,18 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/13/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bb8abab7d3f8430037b31e2797d62ce8d7b03e1
-ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
+ms.openlocfilehash: 39ecda08527e0805b1ce26ebd9a1c83ceb57187b
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83438126"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84160039"
 ---
-# <a name="get-a-power-bi-subscription-for-your-organization"></a>Obtenir un abonnement Power BI pour votre organisation
+# <a name="get-a-power-bi-service-subscription-for-your-organization"></a>Obtenir un abonnement au service Power BI pour votre organisation
 
-Les administrateurs peuvent s’inscrire à Power BI par le biais de la page **Acheter des services** du Centre d’administration Microsoft 365. Quand un administrateur s’inscrit à Power BI, il peut attribuer des licences aux utilisateurs autorisés.
+Les administrateurs peuvent s’inscrire au service Power BI via la page **Acheter des services** du Centre d’administration Microsoft 365. Quand un administrateur s’inscrit à Power BI, il peut attribuer des licences aux utilisateurs autorisés.
 
 Les utilisateurs de votre organisation peuvent s’inscrire à Power BI par le biais du site web Power BI. Quand un utilisateur de votre organisation s’inscrit à Power BI, il reçoit automatiquement une licence Power BI. Si vous souhaitez désactiver les fonctionnalités libre-service, effectuez les étapes décrites dans [Activer ou désactiver l’inscription et l’achat en libre-service](service-admin-disable-self-service.md).
 

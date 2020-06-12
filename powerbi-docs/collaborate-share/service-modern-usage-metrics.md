@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 183fceb6877109960ea1fb7e6f36bd74588f8f10
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 894aa17e0a6a2be52446be0a67452d96d45c9a5b
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693850"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84316060"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
 
@@ -132,7 +132,7 @@ Suivez la procédure ci-dessous pour devenir propriétaire d’un jeu de donnée
 
 ## <a name="disable-usage-metrics-reports"></a>Désactiver les rapports de métriques d’utilisation
 
-Les rapports de métriques d’utilisation sont une fonctionnalité qu’un administrateur Power BI ou Microsoft 365 peut activer ou désactiver. Les administrateurs disposent d’un contrôle granulaire sur les utilisateurs ayant accès aux métriques d’utilisation. Par défaut, celles-ci sont activées pour tous les utilisateurs au sein de l’organisation. Pour plus d’informations sur ces paramètres, consultez [Contrôler les métriques d’utilisation](../admin/service-admin-portal.md#control-usage-metrics) dans l’article sur le portail d’administration.
+Les rapports de métriques d’utilisation sont une fonctionnalité que l’administrateur Power BI ou l’administrateur général peut activer ou désactiver. Les administrateurs disposent d’un contrôle granulaire sur les utilisateurs ayant accès aux métriques d’utilisation. Par défaut, celles-ci sont activées pour tous les utilisateurs au sein de l’organisation. Pour plus d’informations sur ces paramètres, consultez [Contrôler les métriques d’utilisation](../admin/service-admin-portal.md#control-usage-metrics) dans l’article sur le portail d’administration.
 
 > [!NOTE]
 > Seuls les administrateurs du locataire Power BI peuvent voir le portail d’administration et modifier les paramètres.

@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 06/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7c9ba490a2cc30d42fee4f2317dbf5d4026ab59a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1ff21d0508889fecda5022edb0e48714c8be3ed6
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83299697"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337093"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Actualisation automatique des pages dans Power BI Desktop (préversion)
 
@@ -25,7 +25,7 @@ La fonctionnalité d’actualisation automatique de la page de Power BI permet �
 
 ## <a name="using-automatic-page-refresh"></a>Utilisation de l’actualisation automatique de la page
 
-Pour cette version préliminaire, vous devez activer la fonctionnalité d’actualisation automatique de la page dans Power BI Desktop. Accédez à **Fichier > Options et paramètres**, puis sélectionnez **Options** et sélectionnez **Fonctionnalités en version préliminaire** dans le volet de gauche. Activez la fonctionnalité en cochant la case à côté de *Actualisation automatique de la page*. L’actualisation automatique de la page est disponible uniquement pour les sources de données DirectQuery.
+Pour cette version préliminaire, vous devez activer la fonctionnalité d’actualisation automatique de la page dans Power BI Desktop. Accédez à **Fichier > Options et paramètres**, puis sélectionnez **Options** et sélectionnez **Fonctionnalités en version préliminaire** dans le volet de gauche. Activez la fonctionnalité en cochant la case à côté de *Actualisation automatique de la page*. L’actualisation automatique de la page est disponible *seulement* pour les sources de données DirectQuery.
 
 Pour utiliser l’actualisation automatique de la page, sélectionnez la page de rapport pour laquelle vous souhaitez activer l’actualisation. Dans le volet **Visualisations**, sélectionnez l’icône de **Mise en forme** (un rouleau de peinture) et recherchez **Actualisation de la page** en bas du volet. 
 
@@ -121,15 +121,15 @@ Voici quelques détails sur les deux scénarios d’espace de travail :
 
  1. *Activation/désactivation de la fonctionnalité* : Si votre administrateur de capacité a décidé de désactiver la fonctionnalité, vous ne pourrez pas configurer le type d’actualisation de page dans votre rapport publié.
 
- 2. *Intervalle d’actualisation minimal* : Lors de l’activation de la fonctionnalité, votre administrateur de capacité doit configurer un intervalle d’actualisation minimal. Si votre intervalle est inférieur au minimum, le service Power BI remplace votre intervalle pour respecter l’intervalle minimal défini par votre administrateur de capacité.
+ 2. *Intervalle d’actualisation minimal* : Lors de l’activation de la fonctionnalité, votre administrateur de capacité doit configurer un intervalle d’actualisation minimal. Si votre intervalle est inférieur au minimum, le service Power BI *remplace* votre intervalle de façon à respecter l’intervalle minimal défini par votre administrateur de capacité. Ce remplacement est appelé *Remplacement par l’administrateur de capacité* dans le tableau suivant. 
 
-Le tableau ci-dessous décrit en détail l’emplacement de cette fonctionnalité et les limites de chaque type de capacité et de [mode de stockage](../connect-data/service-dataset-modes-understand.md)
+Le tableau ci-dessous décrit de façon plus détaillé où cette fonctionnalité est disponible, et les limites de chaque type de capacité et du [mode de stockage](../connect-data/service-dataset-modes-understand.md) :
 
 | Mode de stockage | Capacité dédiée | Capacité partagée |
 | --- | --- | --- |
 | Requête directe | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 1 seconde <br>**Remplacement par l’administrateur de capacité** : Oui. | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 30 minutes <br>**Remplacement par l’administrateur de capacité** : Non. |
 | Importer | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. |
-| Mode mixte (DQ + autres) | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 1 seconde <br>**Remplacement par l’administrateur de capacité** : Oui. | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 30 minutes <br>**Remplacement par l’administrateur de capacité** : Non. |
+| Mode mixte (DirectQuery + autres sources de données) | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 1 seconde <br>**Remplacement par l’administrateur de capacité** : Oui. | **Pris en charge** – Oui. <br>**Intervalle minimal d'actualisation** : 30 minutes <br>**Remplacement par l’administrateur de capacité** : Non. |
 | Live Connect AS | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. |
 | Live Connect PBI | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. | **Pris en charge** : Non. <br>**Intervalle minimal d'actualisation** : N/A. <br>**Remplacement par l’administrateur de capacité** : N/A. |
 
@@ -186,7 +186,7 @@ Cette section fournit des questions et des réponses courantes
     * Les modifications apportées aux paramètres d’actualisation automatique de la page prennent jusqu’à 5 minutes pour se propager aux rapports.
     * Outre l’activation de l’actualisation automatique de la page pour la capacité, vous devez également l’activer pour les pages des rapports de votre choix.
 
-3. Mon rapport fonctionne en mode mixte (DQ + Importation). Tous les visuels ne sont pas actualisés.
+3. Mon rapport fonctionne en mode mixte (le mode mixte signifie que le rapport a une connexion DirectQuery et une source de données d’importation). Tous les visuels ne sont pas actualisés.
 
     * Si vos éléments visuels référencent des tables d’importation, ce comportement est attendu. L’actualisation automatique des pages n’est pas prise en charge pour l’importation.
     * Consultez la question 1 de cette section.
@@ -211,6 +211,7 @@ Cette section fournit des questions et des réponses courantes
 Pour plus d’informations, consultez les articles suivants :
 
 * [Utilisation de DirectQuery dans Power BI](../connect-data/desktop-directquery-about.md)
+* [Utiliser des modèles composites dans Power BI Desktop](../transform-model/desktop-composite-models.md)
 * [Utiliser l’analyseur de performances pour examiner les performances des éléments de rapport](desktop-performance-analyzer.md)
 * [Déployer et gérer les capacités Power BI Premium](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)

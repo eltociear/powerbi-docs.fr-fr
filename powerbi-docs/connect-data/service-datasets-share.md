@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4082647338adcca8518cc4d9c3a3b88cc3e04f4f
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: b6e45113662117d5c6c793211644c4895f666a40
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794084"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273342"
 ---
 # <a name="share-a-dataset"></a>Partager un jeu de données
 
@@ -28,7 +28,7 @@ En tant que créateur de *modèles de données* dans Power BI Desktop, vous cr�
 
 1. Publiez le fichier .pbix dans un [espace de travail de nouvelle expérience](../collaborate-share/service-create-the-new-workspaces.md) dans le service Power BI.
     
-    Les autres membres de cet espace de travail peuvent déjà créer des rapports dans d’autres espaces de travail basés sur ce jeu de données.
+    Les autres membres de cet espace de travail peuvent déjà créer des rapports dans d’autres espaces de travail basés sur ce jeu de données. Utilisez l’option Gérer les autorisations sur le jeu de données dans la liste du contenu de l’espace de travail pour accorder à d’autres utilisateurs l’accès au jeu de données. 
 
 1. Vous pouvez également [publier une application](../collaborate-share/service-create-distribute-apps.md) à partir de cet espace de travail. Dans ce cas, dans la page **Autorisations**, vous spécifiez qui dispose d’autorisations et ce qu’ils peuvent faire.
 
@@ -50,6 +50,11 @@ Quand vous avez un jeu de données partagé dans votre espace de travail, vous d
 1. La boîte de dialogue **Contenu associé** affiche tous les éléments associés. Dans cette liste, vous voyez les éléments associés dans cet espace de travail et dans d’**autres espaces de travail**.
  
     ![Boîte de dialogue Contenu associé](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
+
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+Voici quelques éléments à prendre en compte lors du partage de jeux de données :
+
+* Quand vous partagez un jeu de données en gérant des autorisations, en partageant des rapports ou des tableaux de bord, ou en publiant une application, vous accordez l’accès à l’ensemble du jeu de données, sauf si [la sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) limite leur accès. Les auteurs de rapports peuvent utiliser des fonctionnalités qui personnalisent les expériences utilisateur lors de l’affichage ou de l’interaction avec les rapports, par exemple le masquage de colonnes ou la limitation des actions sur les visuels. Ces expériences utilisateur personnalisées ne limitent pas les données auxquelles les utilisateurs peuvent accéder dans le jeu de données. Utilisez la [sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) dans le jeu de données pour que les informations d’identification de chaque personne déterminent les données auxquelles elle peut accéder.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

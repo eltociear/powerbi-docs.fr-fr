@@ -6,19 +6,22 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/29/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3544a5330a21036e0ddecb351fd67b424ca6ebc7
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: cceeb3c874bf3320b7c826790c46b4cafd6d45a2
+ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348870"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84219490"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Activer la fonctionnalité Questions et réponses pour les connexions actives dans Power BI
-## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est-ce que la passerelle de données locale ?  Qu’est-ce qu’une connexion active ?
-Les jeux de données dans Power BI peuvent être importés dans Power BI ou vous pouvez établir une connexion active entre eux. Les jeux de données d’une connexion active sont souvent désignés comme « locaux ». Les connexions actives sont gérées à l’aide d’une [passerelle](../connect-data/service-gateway-onprem.md), et les données et les requêtes sont envoyées dans les deux sens à l’aide de requêtes actives.
+
+Vous pouvez importer des jeux de données dans Power BI ou vous pouvez créer une *connexion active* à ceux-ci. Les jeux de données d’une connexion active sont souvent locaux. Si c’est le cas, vous gérez les connexions actives en utilisant une [passerelle](../connect-data/service-gateway-onprem.md). Les données et les recherches sont envoyées et retournent leurs résultats via des requêtes actives.
+
+> [!NOTE]
+> Les connexions actives prennent également en charge les jeux de données Azure Analysis Services, qui ne nécessitent pas de passerelle.
 
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Questions et réponses pour les jeux de données de la passerelle de données locale
 Si vous souhaitez utiliser les Q&R avec des jeux de données auxquels vous accédez par le biais d’une passerelle, vous devez d’abord les activer.
@@ -60,7 +63,7 @@ La fonctionnalité présente certaines limitations :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passerelle de données locale](../connect-data/service-gateway-onprem.md)  
+- [On-premises data gateway (Passerelle de données locale)](../connect-data/service-gateway-onprem.md)  
 - [Gérer votre source de données - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)  
 - [Fondamentaux pour les concepteurs dans le service Power BI](../fundamentals/service-basic-concepts.md)  
 - [Présentation de Questions et réponses dans Power BI](../consumer/end-user-q-and-a.md)  

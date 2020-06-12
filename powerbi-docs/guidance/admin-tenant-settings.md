@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
+ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279753"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273896"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
 
@@ -44,7 +44,7 @@ Ces URL deviennent alors disponibles dans le menu d’aide de Power BI et se pr�
 ![Le paramètre Publier des informations « Obtenir de l’aide » est affiché.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Gérer le risque.
-
+Les paramètres de gestion des risques peuvent vous aider à établir des stratégies de gouvernance dans votre locataire Power BI. Gardez cependant à l’esprit que les paramètres de gouvernance ne sont pas une mesure de sécurité. Par exemple, la désactivation du paramètre **Exporter des données** supprime la fonctionnalité de l’interface utilisateur Power BI et aide de cette façon les utilisateurs Power BI à travailler en conformité avec les stratégies de gouvernance de votre organisation sans toutefois les empêcher d’exporter les données en utilisant d’autres options. Du point de vue de la sécurité, un utilisateur Power BI disposant d’un accès en lecture à un jeu de données a l’autorisation d’interroger ce jeu de données et peut conserver les résultats, quelles que soient les fonctionnalités disponibles dans l’interface utilisateur de Power BI.
 ### <a name="receive-email-notification-service-outages-or-incidents"></a>Recevoir des notifications par e-mail pour les pannes de service ou des incidents
 
 Vous pouvez être notifié par e-mail si votre locataire subit une panne de service ou un incident. De cette façon, vous pouvez répondre de manière proactive aux incidents.
@@ -126,7 +126,7 @@ Si vous avez besoin d’autoriser des utilisateurs externes à modifier et gére
 
 ![Le paramètre Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation est affiché.](media/admin-tenant-settings/allow-external-guest-users.png)
 
-### <a name="developer-settings"></a>Paramètres de développeur
+### <a name="developer-settings"></a>Paramètres de développement
 
 Il existe deux paramètres de locataire associés à l’[incorporation de contenu Power BI](../developer/embedded/embedding.md). Il s'agit de :
 
@@ -143,6 +143,6 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 
 - [Présentation de l’administration de Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - [Administration de Power BI dans le portail d’administration](../admin/service-admin-portal.md)
-- Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
 

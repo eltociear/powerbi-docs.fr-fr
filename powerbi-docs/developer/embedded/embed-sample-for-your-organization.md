@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 49465556d7b11b911e24df06ab6598bb2dbe9707
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 38db00f51a333b754267d52aaf3e3eabccc3e6b6
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794134"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273020"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -387,8 +387,8 @@ Le tableau suivant liste les références SKU Power BI Premium disponibles dans 
 
 | Nœud de capacité | Nb total de vCores<br/>(backend + frontend) | vCores backend | vCores frontend | Limites de connexions actives/DirectQuery |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0,5 vCore, 10 Go de RAM |0,5 vCore |3,75 par seconde |
-| EM2 |2 vCores |1 vCore, 10 Go de RAM |1 vCore |7,5 par seconde |
+| EM1 |1 vCore |0,5 vCore, 3 Go de RAM |0,5 vCore |3,75 par seconde |
+| EM2 |2 vCores |1 vCore, 5 Go de RAM |1 vCore |7,5 par seconde |
 | EM3 |4 vCores |2 vCores, 10 Go de RAM |2 vCores |15 par seconde |
 | P1 |8 vCores |4 vCores, 25 Go de RAM |4 vCores |30 par seconde |
 | P2 |16 vCores |8 vCores, 50 Go de RAM |8 vCores |60 par seconde |

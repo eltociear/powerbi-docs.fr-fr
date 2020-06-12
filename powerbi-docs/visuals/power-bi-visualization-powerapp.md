@@ -7,15 +7,15 @@ ms.reviewer: tapan maniar
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 03/29/2020
+ms.date: 06/01/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e2092b3651fd3339706582001f37fc855ddbad
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: aead027780ad1e7887b172cba328c0c4e97675b5
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841960"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84273434"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Tutoriel : Incorporer un nouveau visuel Power Apps dans un rapport Power BI
 
@@ -104,6 +104,8 @@ Notez que le nombre d’opportunités dans l’application correspond au nombre 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 Si vous ne souhaitez plus utiliser l’exemple Analyse des opportunités, vous pouvez supprimer le tableau de bord, le rapport et le jeu de données.
 
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+Pour plus d’informations sur la résolution des problèmes, consultez [Visuel Power Apps pour Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visualbranch=pr-en-us-2943#limitations-of-the-power-apps-visual)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Visuel de Questions et réponses](power-bi-visualization-types-for-reports-and-q-and-a.md)    

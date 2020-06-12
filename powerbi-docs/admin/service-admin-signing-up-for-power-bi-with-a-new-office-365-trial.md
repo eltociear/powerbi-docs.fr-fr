@@ -8,21 +8,23 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 9c13f29b29742e62cb08c973e5444a7879e6222a
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: bab0eba6e2ae3d0ec8ede57f9875385dbb26a60a
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83812217"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159855"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 
-Cet article décrit une méthode alternative pour s’inscrire à Power BI si vous ne disposez pas déjà d’un compte d’e-mail professionnel ou scolaire.
+Cet article décrit une méthode alternative pour s’inscrire au service Power BI si vous ne disposez pas déjà d’un compte d’e-mail professionnel ou scolaire.
 
 Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse e-mail, vérifiez d’abord qu’il s’agit d’une [adresse e-mail qui peut être utilisée avec Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). Si ce n’est pas le cas, inscrivez-vous pour une version d’évaluation de Microsoft 365 et créez un compte professionnel. Ensuite, utilisez ce nouveau compte professionnel pour vous inscrire auprès du service Power BI. Vous pourrez utiliser Power BI même après l’expiration de la version d’évaluation de Microsoft 365.
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>S’inscrire à un essai Microsoft 365 d’Office
+
 Inscrivez-vous pour un essai de Microsoft 365 [sur le site web de Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Si vous n’avez pas encore de compte, Microsoft vous guide tout au long des étapes à suivre pour en créer un. Étant donné que les comptes e-mail commerciaux (tels que Hotmail et Gmail) ne fonctionnent pas avec Microsoft 365, vous allez créer un nouveau compte.  Ce compte e-mail aura le format *zalan@onmicrosoft.com* .
 
 ![Sélectionnez Essai gratuit](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)

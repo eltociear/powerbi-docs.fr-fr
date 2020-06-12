@@ -1,48 +1,47 @@
 ---
 title: Utilisation de contrôles Microsoft Cloud App Security dans Power BI
-description: Découvrir comment appliquer des étiquettes de sensibilité des données dans Power BI
+description: Découvrez comment utiliser Microsoft Cloud App Security avec Power BI
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 05/31/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 004c62c6f99460a9f54a7b055dffe2c8b1adb340
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 1c65258ffa863916853fa05b2e566e1bb4052724
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120977"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315715"
 ---
-# <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Utilisation de contrôles Microsoft Cloud App Security dans Power BI (préversion)
+# <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Utilisation de contrôles Microsoft Cloud App Security dans Power BI
 
-En utilisant Microsoft Cloud App Security avec Power BI, vous pouvez protéger vos rapports, données et services Power BI contre les fuites ou violations inattendues. Cloud App Security vous permet de créer des stratégies d’accès conditionnel pour les données de votre organisation, à l’aide de contrôles de session en temps réel dans Azure Active Directory (Azure AD) qui contribuent de garantir la sécurité de vos analytiques Power BI. Une ces stratégies définies, les administrateurs peuvent superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes. 
+En utilisant Cloud App Security avec Power BI, vous pouvez protéger vos rapports, données et services Power BI contre les fuites non intentionnelles ou les violations. Cloud App Security vous permet de créer des stratégies d’accès conditionnel pour les données de votre organisation, à l’aide de contrôles de session en temps réel dans Azure Active Directory (Azure AD) qui contribuent de garantir la sécurité de vos analytiques Power BI. Une ces stratégies définies, les administrateurs peuvent superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes. 
 
-![Utilisation du volet des contrôles Microsoft Cloud App Security](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
+![Utilisation du volet des contrôles Cloud App Security](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
-Vous pouvez configurer Microsoft Cloud App Security pour tous les types d’applications et de services, et pas seulement Power BI. Cloud App Security est un service Microsoft qui protège les applications et les appareils, et qui est géré par le biais de son propre tableau de bord. Vous devez configurer Cloud App Security pour qu’il fonctionne avec Power BI afin de tirer parti des protections Cloud App Security pour vos données et analytiques Power BI. Pour plus d’informations sur Cloud App Security, et obtenir notamment une vue d’ensemble de son fonctionnement, du tableau de bord et des scores de risque d’application, consultez la documentation [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
+Vous pouvez configurer Cloud App Security pour tous les types d’applications et de services, et pas seulement Power BI. Vous devez configurer Cloud App Security pour qu’il fonctionne avec Power BI afin de tirer parti des protections Cloud App Security pour vos données et analytiques Power BI. Pour plus d’informations sur Cloud App Security, et obtenir notamment une vue d’ensemble de son fonctionnement, du tableau de bord et des scores de risque des applications, consultez la documentation [Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
 
 
-## <a name="using-microsoft-cloud-app-security-with-power-bi"></a>Utilisation de Microsoft Cloud App Security avec Power BI
+## <a name="using-cloud-app-security-with-power-bi"></a>Utilisation de Cloud App Security avec Power BI
 
-Pour utiliser Microsoft Cloud App Security avec Power BI, vous devez utiliser et configurer les services de sécurité Microsoft appropriés, dont certains sont définis en dehors de Power BI.
+Pour utiliser Cloud App Security avec Power BI, vous devez utiliser et configurer les services de sécurité Microsoft appropriés, dont certains sont définis en dehors de Power BI.
 
-### <a name="microsoft-cloud-app-security-licensing"></a>Gestion des licences Microsoft Cloud App Security
+### <a name="cloud-app-security-licensing"></a>Gestion des licences Cloud App Security
 
-Pour avoir Microsoft Cloud App Security dans votre locataire, vous devez disposer de l’une des licences suivantes :
-* MCAS : fournit des fonctionnalités OCAS pour toutes les applications prises en charge ; fait partie des suites EMS E5 et M365 E5.
-* CAS-D : fournit uniquement la découverte MCAS.
-* OCAS : fournit des fonctionnalités MCAS uniquement pour Office 365 ; fait partie de la suite Office 365 E5.
-* Facultatif : AAD P1 et AIP P1 pour tirer parti des principales fonctionnalités Microsoft Cloud App Security.
+Pour avoir Cloud App Security dans votre locataire, vous devez disposer de l’une des [licences](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO) suivantes :
+* Microsoft Cloud App Security : Fournit les fonctionnalités de Cloud App Security pour toutes les applications prises en charge, qui font partie des suites EMS E5 et Microsoft 365 E5.
+* Office 365 Cloud App Security : Fournit des fonctionnalités Cloud App Security uniquement pour Office 365, qui fait partie de la suite Office 365 E5.
+* Azure Active Directory Premium P1, pour tirer parti des principales fonctionnalités de Cloud App Security.
 
-Les sections ci-dessous décrivent les étapes d’utilisation de Microsoft Cloud App Security dans Power BI.
+Les sections ci-dessous décrivent les étapes nécessaires pour utiliser Cloud App Security dans Power BI.
 
-### <a name="set-session-policies-in-azure-active-directory-required"></a>Définir des stratégies de session dans Azure Active Directory (obligatoire)
-Les étapes nécessaires pour définir des contrôles de session sont effectuées dans les portails Azure AD et Microsoft Cloud App Security. Dans le portail Azure AD, vous créez une stratégie d’accès conditionnel pour Power BI et les sessions de route utilisées dans Power BI par le biais du service Microsoft Cloud App Security. 
+### <a name="set-session-policies-in-azure-ad-required"></a>Définir des stratégies de session dans Azure AD (obligatoire)
+Les étapes nécessaires pour définir des contrôles de session sont effectuées dans les portails Azure AD et Cloud App Security. Dans le portail Azure AD, vous créez une stratégie d’accès conditionnel pour Power BI et vous routez les sessions utilisées dans Power BI via le service Cloud App Security. 
 
-Microsoft Cloud App Security fonctionne à l’aide d’une architecture de proxy inverse et est intégré à l’accès conditionnel Azure AD pour superviser l’activité des utilisateurs Power BI en temps réel. Les étapes suivantes sont fournies ici pour vous aider à comprendre le processus et des instructions pas à pas détaillées sont fournies dans le contenu lié de chacune de ces étapes suivantes. Vous pouvez également lire cet [article Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) qui décrit le processus dans son ensemble.
+Cloud App Security fonctionne avec une architecture de proxy inverse et est intégré à l’accès conditionnel Azure AD pour superviser l’activité des utilisateurs Power BI en temps réel. Les étapes suivantes sont fournies ici pour vous aider à comprendre le processus et des instructions pas à pas détaillées sont fournies dans le contenu lié de chacune de ces étapes suivantes. Vous pouvez également lire cet [article Cloud App Security](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) qui décrit le processus dans son ensemble.
 
 1.  [Créer une stratégie de test d’accès conditionnel Azure AD](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#add-azure-ad)
 2.  [Se connecter à chaque application à l’aide d’un utilisateur limité à la stratégie](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
@@ -51,10 +50,10 @@ Microsoft Cloud App Security fonctionne à l’aide d’une architecture de prox
 
 Le processus de définition de stratégies de session est décrit en détail dans l’article [Stratégies de session](https://docs.microsoft.com/cloud-app-security/session-policy-aad). 
 
-### <a name="set-anomaly-detection-policies-to-monitor-pbi-activities-recommended"></a>Définir des stratégies de détection des anomalies pour superviser les activités PBI (recommandé)
+### <a name="set-anomaly-detection-policies-to-monitor-power-bi-activities-recommended"></a>Définir des stratégies de détection des anomalies pour superviser les activités de Power BI (recommandé)
 Vous pouvez définir des stratégies de détection des anomalies Power BI qui peuvent être étendues indépendamment, afin qu’elles s’appliquent uniquement aux utilisateurs et groupes que vous voulez inclure et exclure dans la stratégie. [En savoir plus](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
-Cloud App Security dispose également de deux détections dédiées et intégrées pour Power BI. [Pour plus d’informations, consultez la section correspondante, plus loin dans ce document](#built-in-microsoft-cloud-app-security-detections-for-power-bi).
+Cloud App Security dispose également de deux détections dédiées et intégrées pour Power BI. [Pour plus d’informations, consultez la section correspondante, plus loin dans ce document](#built-in-cloud-app-security-detections-for-power-bi).
 
 ### <a name="use-microsoft-information-protection-sensitivity-labels-recommended"></a>Utiliser des étiquettes de sensibilité Microsoft Information Protection (recommandé)
 
@@ -62,40 +61,40 @@ Les étiquettes de sensibilité vous permettent de classifier et de protéger du
 
 Vous pouvez lire l’article sur les [étiquettes de sensibilité dans Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md), qui décrit en détail le processus d’utilisation d’étiquettes de sensibilité pour Power BI. Un [exemple de stratégie Power BI basée sur des étiquettes de sensibilité](#example) est donné ci-dessous.
 
-## <a name="built-in-microsoft-cloud-app-security-detections-for-power-bi"></a>Détections Microsoft Cloud App Security intégrées pour Power BI
+## <a name="built-in-cloud-app-security-detections-for-power-bi"></a>Détections Cloud App Security intégrées pour Power BI
 
-Les détections Microsoft Cloud App Security permettent aux administrateurs de superviser des activités spécifiques d’une application supervisée. Pour Power BI, il existe actuellement deux détections Cloud App Security dédiées et intégrées : 
+Les détections Cloud App Security permettent aux administrateurs de superviser des activités spécifiques d’une application supervisée. Pour Power BI, il existe actuellement deux détections Cloud App Security dédiées et intégrées : 
 
 * **Partage suspect** : détecte quand un utilisateur partage un rapport sensible avec une adresse e-mail inconnue (externe à l’organisation). Un rapport sensible est un rapport dont l’étiquette de sensibilité est définie sur **INTERNE UNIQUEMENT** ou un niveau supérieur. 
 
-* **Partage en masse de rapports** : détecte quand un utilisateur partage de nombreux rapports différents dans une seule session.
+* **Partage en masse de rapports** : détecte quand un utilisateur partage un très grand nombre de rapports dans une même session.
 
 Les paramètres de ces détections sont configurés dans le portail Cloud App Security. [En savoir plus](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
-## <a name="power-bi-admin-role-in-microsoft-cloud-app-security"></a>Rôle d’administrateur Power BI dans Microsoft Cloud App Security
+## <a name="power-bi-admin-role-in-cloud-app-security"></a>Rôle d’administrateur Power BI dans Cloud App Security
 
-Un nouveau rôle est créé pour les administrateurs Power BI lors de l’utilisation de Microsoft Cloud App Security avec Power BI. Quand vous vous connectez en tant qu’administrateur Power BI au [portail Cloud App Security](https://portal.cloudappsecurity.com/), vous disposez d’un accès limité aux données pertinentes, alertes, utilisateurs à risque, journaux d’activité et autres informations Power BI.
+Un nouveau rôle est créé pour les administrateurs Power BI lors de l’utilisation de Cloud App Security avec Power BI. Quand vous vous connectez en tant qu’administrateur Power BI au [portail Cloud App Security](https://portal.cloudappsecurity.com/), vous disposez d’un accès limité aux données pertinentes, alertes, utilisateurs à risque, journaux d’activité et autres informations Power BI.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations 
 L’utilisation de Cloud App Security avec Power BI est conçue pour garantir la sécurité du contenu et des données de votre organisation, avec des détections qui supervisent les sessions utilisateur et leurs activités. Quand vous utilisez Cloud App Security avec Power BI, vous devez garder à l’esprit quelques points et limitations :
 
-* Microsoft Cloud App Security peut uniquement fonctionner sur des fichiers Excel, PowerPoint et PDF.
+* Cloud App Security peut fonctionner seulement sur des fichiers Excel, PowerPoint et PDF.
 * Si vous voulez utiliser des fonctionnalités d’étiquettes de sensibilité dans vos stratégies de session pour Power BI, vous devez disposer d’une licence Azure Information Protection Premium P1 ou Premium P2. Vous pouvez acheter Microsoft Azure Information Protection en autonome ou par le biais de l’une des suites de licences Microsoft. Pour plus d’informations, consultez les [tarifs Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). De plus, les étiquettes de sensibilité doivent avoir été appliquées sur vos ressources Power BI.
-* Le contrôle de session est disponible pour n’importe quel navigateur sur toute plateforme principale d’un système d’exploitation. Il est recommandé d’utiliser Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). Les appels d’API publiques Power BI et les autres sessions hors navigateur ne sont pas pris en charge dans le cadre du contrôle de session Microsoft Cloud App Security. [Consultez plus de détails](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+* Le contrôle de session est disponible pour n’importe quel navigateur sur toute plateforme principale d’un système d’exploitation. Il est recommandé d’utiliser Internet Explorer 11, Microsoft Edge (dernière version), Google Chrome (dernière version), Mozilla Firefox (dernière version) ou Apple Safari (dernière version). Les appels d’API publiques Power BI et les autres sessions hors navigateur ne sont pas pris en charge dans le cadre du contrôle de session Cloud App Security. [Consultez plus de détails](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
-> * La stratégie d’*inspection du contenu* sur Microsoft Cloud App Security n’est actuellement pas disponible dans Power BI quand vous appliquez une stratégie de fichier Excel. Ne définissez donc pas cette stratégie pour Power BI.
+> * La stratégie d’*inspection du contenu* sur Cloud App Security n’est actuellement pas disponible dans Power BI quand vous appliquez une stratégie de fichier Excel : ne définissez donc pas cette stratégie pour Power BI.
 > * Dans la partie « Action » de la stratégie de session, la fonctionnalité « Protéger » ne fonctionne que s’il n’existe aucune étiquette sur l’élément. S’il existe déjà une étiquette, l’action « Protéger » ne s’applique pas ; vous ne pouvez pas remplacer une étiquette existante qui a déjà été appliquée à un élément dans Power BI.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant vous montre comment créer une stratégie de session à l’aide de Microsoft Cloud App Security avec Power BI.
+L’exemple suivant vous montre comment créer une stratégie de session en utilisant Cloud App Security avec Power BI.
 
 Tout d’abord, créez une stratégie de session. Sélectionnez **Stratégies** dans le menu de gauche du portail **Cloud App Security**.
 
 ![Créer une stratégie de session](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-02.png)
 
-Dans la fenêtre qui s’affiche, sélectionnez la liste déroulante **Créer une stratégie**.
+Dans la fenêtre qui apparaît, sélectionnez la liste déroulante **Créer une stratégie**.
 
 ![Sélectionner Créer une stratégie](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-03.png)
 
@@ -129,10 +128,10 @@ Dans la fenêtre qui s’affiche, créez la stratégie de session. Les étapes n
         ![Créer la stratégie de session](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 > [!CAUTION]
-> Veillez à ne pas créer de stratégie **Inspection du contenu** sur les fichiers Excel dans Power BI. Il s’agit d’une limitation connue de cette *préversion*.
+> Veillez à ne pas créer de stratégie **Inspection du contenu** sur les fichiers Excel dans Power BI. Il s’agit d’une limitation connue de cette fonctionnalité.
 
 ## <a name="next-steps"></a>Étapes suivantes
-L’objectif de cet article était d’expliquer comment Microsoft Cloud App Security peut fournir des protections de données et de contenu pour Power BI. Les articles suivants pourraient également vous intéresser, car ils décrivent la protection des données pour Power BI et la prise en charge de contenu pour les services Azure qui l’activent.
+Cet article a expliqué comment Cloud App Security peut fournir des protections des données et des contenus pour Power BI. Les articles suivants pourraient également vous intéresser, car ils décrivent la protection des données pour Power BI et la prise en charge de contenu pour les services Azure qui l’activent.
 
 * [Vue d’ensemble de la protection des données dans Power BI](service-security-data-protection-overview.md)
 * [Activer les étiquettes de sensibilité des données dans Power BI](service-security-enable-data-sensitivity-labels.md)

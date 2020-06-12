@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 05/27/2020
 ms.author: maggies
-ms.openlocfilehash: 548e66685c7b460829e171d097d18640cd5b0f57
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3bd792c585f42add6652205a6e4a99fe116ad20f
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78922594"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159786"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Configurer Power BI Report Server avec le proxy d’application Azure
 
@@ -166,7 +166,10 @@ Nous avons configuré l’URL externe sur `https://pbirsazureapp-umacontoso2410.
 
 ![Groupe de connecteurs par défaut](media/azure-application-proxy/report-server-application-proxy-1.png)
 
-Nous n’avons apporté aucune modification dans la section **Paramètres supplémentaires**. Elle est configurés pour fonctionner avec les options par défaut :
+Nous n’avons apporté aucune modification dans la section **Paramètres supplémentaires**. Il est configuré pour fonctionner avec les options par défaut.
+
+> [!IMPORTANT]
+> Lors de la configuration du proxy d’application, notez que la propriété **Expiration de l’application principale** est définie sur **Par défaut** (85 secondes). Si vous avez des rapports dont l’exécution prend plus de 85 secondes, définissez cette propriété sur **Long** (180 secondes), qui est la valeur de délai d’expiration la plus élevée possible. Quand cette propriété est configurée sur **Long**, tous les rapports doivent être exécutés dans les 180 secondes, sinon ils dépassent le délai d’expiration et génèrent une erreur.
 
 ![Paramètres supplémentaires](media/azure-application-proxy/report-server-application-proxy-1.png)
 

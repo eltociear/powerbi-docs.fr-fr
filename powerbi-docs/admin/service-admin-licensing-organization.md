@@ -1,6 +1,6 @@
 ---
-title: Gestion des licences Power BI dans votre organisation
-description: Vue d’ensemble des différents types de licences disponibles dans Power BI ainsi que des modalités d’achat et de gestion des licences proposées aux administrateurs pour leur organisation.
+title: Gestion des licences Power BI pour les utilisateurs de votre organisation
+description: Vue d’ensemble des différents types de licences utilisateur disponibles dans Power BI, et de la façon dont les administrateurs peuvent acheter et gérer les licences pour les utilisateurs de leur organisation.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,15 +8,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/14/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a0ce3eab2992c59c5b887db1f0838f88db7ad2da
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 5bac52e98830c97262945e1434880f9c178a0932
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563485"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159993"
 ---
-# <a name="power-bi-licensing-in-your-organization"></a>Gestion des licences Power BI dans votre organisation
+# <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
 Ce qu’un utilisateur peut faire dans le service Power BI dépend du type de licence par utilisateur dont il dispose. Le niveau d’accès fourni par sa licence varie selon que l’espace de travail auquel vous accédez est attribué à la capacité Power BI Premium. Tous les utilisateurs du service Power BI doivent disposer d’une licence.
 

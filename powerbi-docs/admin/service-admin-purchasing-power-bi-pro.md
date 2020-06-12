@@ -8,13 +8,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: cce546b489e0f49ff87af22f4955af1922f628e5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: fc0bfea05449b3169e7a5f73a4c096d28579b35c
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83344960"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159671"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 
@@ -38,6 +39,9 @@ Pour attribuer des licences dans le portail Azure, vous devez être propriétair
 
 ### <a name="purchase-licenses-in-microsoft-365"></a>Acheter des licences dans Microsoft 365
 
+> [!NOTE]
+> Si vous achetez habituellement des licences via un contrat de licence en volume, comme un Accord Entreprise, et que vous souhaitez recevoir une facture au lieu d’acheter avec une carte de crédit ou un compte bancaire, vous devez soumettre la commande différemment. Collaborez avec votre revendeur Microsoft ou consultez le centre de gestion des licences en volume pour ajouter ou supprimer des licences. Pour plus d’informations, consultez [Gérer les licences d’abonnement](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+
 Suivez ces étapes pour acheter des licences Power BI Pro dans le Centre d’administration Microsoft 365 :
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
@@ -57,6 +61,7 @@ Suivez ces étapes pour acheter des licences Power BI Pro dans le Centre d’adm
 8. Pour vérifier votre achat, accédez à **Facturation** > **Produits et services** et recherchez **Power BI Pro**.
 
 9. Pour ajouter d’autres licences ultérieurement, recherchez **Power BI Pro** sur la page **Produits et services**, puis sélectionnez **Ajouter/supprimer des licences**.
+
 
 ## <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Attribuer des licences dans le Centre d’administration Microsoft 365
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: c71467a279ed3a2304d6af82f7493dac97425c4f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 68ead14063c290c8ec9db5cb24814b93e493ea6b
+ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348088"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84272951"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Moyens de partager votre travail dans Power BI
 
@@ -82,7 +82,7 @@ Supposons que vous avez finalisé un tableau de bord et un rapport dans votre es
 
 ![Partager un rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-Vous-même et les personnes avec qui vous partagez votre contenu avez besoin d’une licence Power BI Pro, ou bien le contenu doit être dans un espace de travail qui se trouve dans une [capacité Premium](../admin/service-premium-what-is.md). Quand vous partagez un tableau de bord ou un rapport, les destinataires peuvent le consulter et interagir avec celui-ci, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le tableau de bord et les rapports, sauf si la sécurité au niveau des lignes est appliquée au jeu de données sous-jacent. Les collègues avec qui vous partagez le tableau de bord ou rapport peuvent le partager avec leurs collègues si vous les y autorisez. 
+Vous-même et les personnes avec qui vous partagez votre contenu avez besoin d’une licence Power BI Pro, ou bien le contenu doit être dans un espace de travail qui se trouve dans une [capacité Premium](../admin/service-premium-what-is.md). Quand vous partagez un tableau de bord ou un rapport, les destinataires peuvent le consulter et interagir avec celui-ci, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le tableau de bord ou le rapport, et ont accès à la totalité du jeu de données sous-jacent, sauf si la [sécurité au niveau des lignes](../admin/service-admin-rls.md) est appliquée. Les collègues avec qui vous partagez le tableau de bord ou rapport peuvent le partager avec leurs collègues si vous les y autorisez. 
 
 Vous pouvez également partager le tableau de bord avec des personnes extérieures à votre organisation. Celles-ci peuvent également consulter le tableau de bord ou le rapport, et interagir avec celui-ci, mais elles ne peuvent pas le partager. 
 

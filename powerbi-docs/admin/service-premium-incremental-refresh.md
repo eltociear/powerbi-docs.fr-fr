@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: eb9a10c715a03adc9149ca8793ff248a23b9914d
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
+ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121023"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84159878"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -230,7 +230,7 @@ L’exemple suivant couvre la totalité des 120 mois de la plage historique pour
 
 ## <a name="metadata-only-deployment"></a>Déploiement de métadonnées uniquement
 
-Lorsque vous publiez une nouvelle version d’un fichier PBIX à partir de Power BI Desktop vers un espace de travail dans le service Power BI, si un jeu de données portant le même nom existe déjà, vous êtes invité à remplacer le jeu de données existant.
+Quand vous publiez une nouvelle version d’un fichier PBIX depuis Power BI Desktop vers un espace de travail dans Power BI Premium, si un jeu de données portant le même nom existe déjà, vous êtes invité à remplacer le jeu de données existant.
 
 ![Remplacer l’invite du jeu de données](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
 

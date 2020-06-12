@@ -2,69 +2,77 @@
 title: Activer les étiquettes de sensibilité des données dans Power BI
 description: Découvrir comment activer les étiquettes de sensibilité des données dans Power BI
 author: paulinbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 05/23/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 60b7c858a98a105454efe0233484120ad4319f62
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ba1cacfa930bcc0ed51234dea13639420ac8fab7
+ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131910"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84315646"
 ---
-# <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Activer les étiquettes de sensibilité des données dans Power BI (préversion)
+# <a name="enable-data-sensitivity-labels-in-power-bi"></a>Activer les étiquettes de sensibilité des données dans Power BI
 
-Quand les [étiquettes de sensibilité des données Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) sont activées dans Power BI, les conditions suivantes s’appliquent :
+Pour que [les étiquettes de sensibilité des données de Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) puissent être utilisées dans Power BI, elles doivent être activées sur le locataire. Cet article explique comment les administrateurs de locataire Power BI procèdent pour cela. Pour une vue d’ensemble des étiquettes de sensibilité des données dans Power BI, consultez [Protection des données dans Power BI](service-security-data-protection-overview.md). Pour plus d’informations sur l’application des étiquettes de sensibilité dans Power BI, consultez [Application d’étiquettes de sensibilité](../collaborate-share/service-security-apply-data-sensitivity-labels.md) 
 
-* Certains utilisateurs et groupes de sécurité d’une organisation peuvent classifier et [appliquer des étiquettes de sensibilité](../collaborate-share/service-security-apply-data-sensitivity-labels.md) à leurs tableaux de bord, rapports, jeux de données et dataflows Power BI (ci-après dénommés *ressources*).
+Quand les étiquettes de sensibilité sont activées :
+
+* Des utilisateurs et des groupes de sécurité spécifiés d’une organisation peuvent classifier et [appliquer des étiquettes de sensibilité](../collaborate-share/service-security-apply-data-sensitivity-labels.md) à leurs tableaux de bord, rapports, jeux de données et dataflows Power BI.
 * Tous les membres de l’organisation peuvent voir ces étiquettes.
 
-Les étiquettes de sensibilité des données favorisent la protection des données en faisant en sorte que les auteurs et consommateurs Power BI prennent conscience de la sensibilité des données, tout en leur fournissant des informations sur ce que signifie la classification et sur la façon dont les données correspondantes doivent être gérées.
-
-Quand des données Power BI qui ont une étiquette de sensibilité des données sont exportées vers un fichier Excel, PowerPoint ou PDF, leur étiquette de sensibilité des données leur est associée. Cela signifie qu’un utilisateur qui ne dispose pas de l’autorisation d’accéder à des données étiquetées, en raison de stratégies d’étiquettes de sensibilité, ne peut pas ouvrir les fichiers *en dehors* de Power BI (dans les applications Excel, PowerPoint ou PDF).
-
-L’activation des étiquettes de sensibilité des données nécessite une licence Azure Information Protection. Pour plus d’informations, consultez [Gestion des licences](#licensing).
+L’activation des étiquettes de sensibilité des données nécessite une licence Azure Information Protection. Pour plus d’informations, consultez [Gestion des licences](service-security-data-protection-overview.md#licensing).
 
 ## <a name="enable-data-sensitivity-labels"></a>Activer les étiquettes de sensibilité des données
 
-Pour activer l’utilisation des étiquettes de sensibilité des données Microsoft Information Protection dans Power BI, accédez au portail d’administration Power BI, ouvrez le volet Paramètres du locataire et recherchez la section Information Protection.
+Accédez au **Portail d’administration** de Power BI, ouvrez le volet **Paramètres du client** et recherchez la section **Information Protection**.
 
 ![Rechercher la section Information Protection](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 
 Dans la section **Information Protection**, effectuez les étapes suivantes :
-1.  Activez le bouton bascule **Activer les étiquettes de confidentialité Microsoft Information Protection**, puis appuyez sur **Appliquer**. Cette étape rend *uniquement* les étiquettes de sensibilité visibles pour l’ensemble de votre organisation ; elle n’applique aucune étiquette. Pour définir qui peut appliquer ces étiquettes dans Power BI, vous devez effectuer l’étape 2.
-2.  Définissez qui peut appliquer et changer les étiquettes de sensibilité dans les ressources Power BI. Cette étape implique trois actions :
-    1.  Activez le bouton bascule **Définir des étiquettes de confidentialité pour le contenu et les données Power BI**.
-    2.  Sélectionnez le ou les groupes de sécurité appropriés. Par défaut, toutes les personnes de votre organisation peuvent appliquer des étiquettes de sensibilité. Toutefois, vous pouvez choisir d’activer le paramétrage des étiquettes de sensibilité uniquement pour des utilisateurs ou des groupes de sécurité spécifiques. Si vous avez sélectionné l’ensemble de l’organisation ou des groupes de sécurité particuliers, vous pouvez exclure des sous-ensembles spécifiques d’utilisateurs ou de groupes de sécurité.
-    * Quand les étiquettes de sensibilité sont activées pour l’ensemble de l’organisation, les exceptions sont généralement des groupes de sécurité.
-    * Quand les étiquettes de sensibilité sont activées uniquement pour des utilisateurs ou des groupes de sécurité spécifiques, les exceptions sont généralement des utilisateurs spécifiques.  
+1. Ouvrez **Autoriser les utilisateurs à appliquer des étiquettes de confidentialité pour le contenu Power BI**.
+1. Activez le bouton bascule.
+1. Définissez qui peut appliquer et changer les étiquettes de sensibilité dans les ressources Power BI. Par défaut, toutes les personnes de votre organisation peuvent appliquer des étiquettes de sensibilité. Toutefois, vous pouvez choisir d’activer le paramétrage des étiquettes de sensibilité uniquement pour des utilisateurs ou des groupes de sécurité spécifiques. Si vous avez sélectionné l’ensemble de l’organisation ou des groupes de sécurité particuliers, vous pouvez exclure des sous-ensembles spécifiques d’utilisateurs ou de groupes de sécurité.
+   
+   * Quand les étiquettes de sensibilité sont activées pour l’ensemble de l’organisation, les exceptions sont généralement des groupes de sécurité.
+   * Quand les étiquettes de sensibilité sont activées uniquement pour des utilisateurs ou des groupes de sécurité spécifiques, les exceptions sont généralement des utilisateurs spécifiques.  
     Cette approche permet d’empêcher certains utilisateurs d’appliquer des étiquettes de sensibilité dans Power BI, même s’ils appartiennent à un groupe disposant des autorisations nécessaires.
-    
-    3. Appuyez sur **Appliquer**.
+
+1. Appuyez sur **Appliquer**.
 
 ![Activer les étiquettes de sensibilité](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-02.png)
 
 > [!IMPORTANT]
-> Seuls les utilisateurs Power BI Pro qui disposent d’autorisations *créer* et *modifier* sur la ressource et qui font partie du groupe de sécurité approprié défini dans cette section peuvent définir et modifier les étiquettes de sensibilité. Les utilisateurs qui ne font pas partie de ce groupe ne peuvent pas définir ou modifier l’étiquette. 
+> Seuls les utilisateurs Power BI Pro qui disposent d’autorisations *créer* et *modifier* sur la ressource et qui font partie du groupe de sécurité approprié défini dans cette section peuvent définir et modifier les étiquettes de sensibilité. Les utilisateurs qui ne font pas partie de ce groupe ne peuvent pas définir ou modifier l’étiquette.  
 
-
-## <a name="considerations-and-limitations"></a>Considérations et limitations
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Power BI utilise les étiquettes de sensibilité Microsoft Information Protection. Par conséquent, si un message d’erreur s’affiche lors d’une tentative d’activation des étiquettes de sensibilité, cela peut être dû à l’une des raisons suivantes :
 
-* Vous ne disposez pas de [licence](#licensing) Azure Information Protection.
+* Vous ne disposez pas de [licence](service-security-data-protection-overview.md#licensing) Azure Information Protection.
 * Les étiquettes de sensibilité n’ont pas été migrées vers la version de Microsoft Information Protection prise en charge par Power BI. Découvrez des informations supplémentaires sur la [migration des étiquettes de sensibilité](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
-* Aucune étiquette de sensibilité Microsoft Information Protection n’a été définie dans l’organisation. De plus, pour pouvoir être utilisée, une étiquette doit faire partie d’une stratégie publiée. [Apprenez-en davantage sur les étiquettes de sensibilité](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). Vous pouvez également visiter le [Centre de sécurité et de conformité Microsoft](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) pour savoir comment définir des étiquettes et publier des stratégies pour votre organisation.
+* Aucune étiquette de sensibilité Microsoft Information Protection n’a été définie dans l’organisation. Notez que pour être utilisable, une étiquette doit faire partie d’une stratégie publiée. [Apprenez-en davantage sur les étiquettes de sensibilité](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). Vous pouvez également visiter le [Centre de sécurité et de conformité Microsoft](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) pour savoir comment définir des étiquettes et publier des stratégies pour votre organisation.
 
-## <a name="licensing"></a>Licensing
+## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-* Pour voir ou appliquer des étiquettes Microsoft Information Protection dans Power BI, les utilisateurs doivent disposer d’une licence Azure Information Protection Premium P1 ou Premium P2. Vous pouvez acheter Microsoft Azure Information Protection en autonome ou par le biais de l’une des suites de licences Microsoft. Pour plus d’informations, consultez les [tarifs Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
-* Les utilisateurs qui doivent appliquer des étiquettes sur des ressources Power BI doivent disposer d’une licence Power BI Pro.
+La liste suivante présente certaines limitations des étiquettes de sensibilité dans Power BI :
 
+**Général**
+* Les étiquettes de sensibilité ne peuvent être appliquées que sur les tableaux de bord, les rapports, les jeux de données et les dataflows. Les étiquettes de sensibilité ne sont pas disponibles pour les [rapports paginés](../paginated-reports/report-builder-power-bi.md) et les classeurs.
+* Les étiquettes de sensibilité sur les ressources Power BI sont visibles dans les vues Liste d’espaces de travail, Traçabilité, Favoris et Applications ; elles ne sont actuellement pas visibles dans la vue Partagé avec moi. Notez, toutefois, qu’une étiquette appliquée à une ressource Power BI, même si elle n’est pas visible, est toujours conservée sur les données exportées vers des fichiers Excel, PowerPoint et PDF.
+* Les étiquettes de sensibilité sont uniquement prises en charge pour les locataires dans le cloud global (public). Les étiquettes de sensibilité ne sont pas prises en charge pour les locataires dans les autres clouds.
+* Les étiquettes de sensibilité de données ne sont pas prises en charge pour les applications de modèle. Les étiquettes de sensibilité définies par le créateur de l’application de modèle sont supprimées lors de l’extraction et de l’installation de l’application, et les étiquettes de sensibilité ajoutées aux artefacts dans un modèle d’application installé par le consommateur de l’application sont perdues (réinitialisées sur Nothing (pas de sélection)) lorsque l’application est mise à jour.
+* Power BI ne prend pas en charge les étiquettes de sensibilité des types de protection [Ne pas transférer](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions), [Défini par l’utilisateur](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions) et [HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). Les types de protection Ne pas transférer et Défini par l’utilisateur font référence aux étiquettes définies dans le [Centre de sécurité Microsoft 365](https://security.microsoft.com/) ou dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
+* Il n’est pas recommandé d’autoriser les utilisateurs à appliquer des étiquettes parentes dans Power BI. Si une étiquette parente est appliquée au contenu, l’exportation de données à partir de ce contenu vers un fichier (Excel, PowerPoint et PDF) échouera. Consultez [Sous-étiquettes (étiquettes de regroupement)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
+
+**Export**
+* Les contrôles d’étiquette et de protection sont appliqués seulement quand les données sont exportées vers des fichiers Excel, PowerPoint et PDF. L’étiquette et la protection ne sont pas appliquées quand les données sont exportées vers des fichiers .csv ou .pbix, Analyser dans Excel ou tout autre chemin d’exportation.
+* L’application d’une étiquette de sensibilité et d’une protection à un fichier exporté n’ajoute de marquage de contenu au fichier. Cependant, si l’étiquette est configurée pour appliquer des marquages de contenu, ceux-ci sont automatiquement appliqués par le client d’étiquetage unifié Azure Information Protection quand le fichier est ouvert dans des applications de poste de travail Office. Les marquages de contenu ne sont pas appliqués automatiquement quand vous utilisez l’étiquetage intégré pour les applications de bureau, mobiles ou web. Pour plus d’informations, consultez [Lorsque les applications Office appliquent le marquage de contenu et le chiffrement](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
+* Un utilisateur qui exporte un fichier à partir de Power BI dispose d’autorisations pour accéder à ce fichier et le modifier en fonction des paramètres d’étiquette de sensibilité. L’utilisateur qui exporte les données n’obtient pas d’autorisations de propriétaire sur le fichier.
+* L’exportation échoue si une étiquette ne peut pas être appliquée quand les données sont exportées vers un fichier. Pour vérifier si l’exportation a échoué parce que l’étiquette n’a pas pu être appliquée, cliquez sur le nom du rapport ou du tableau de bord au centre de la barre de titre et vérifiez si le message « Impossible de charger l’étiquette de confidentialité » apparaît dans la liste déroulante des informations qui s’ouvre. Ceci peut se produire si l’étiquette appliquée a été supprimée ou si sa publication a été annulée par l’administrateur de la sécurité, ou à la suite d’un problème système temporaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 06/02/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2792c5b35d68dd38554209fe8fe065710c339381
+ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83291417"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84336840"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Exécuter des scripts Python dans Power BI Desktop
 
@@ -96,7 +96,7 @@ Pour exécuter votre script Python dans Power BI Desktop :
 
    ![Obtenir des données – Sélectionner un script Python](media/desktop-python-scripts/python-scripts-1.png)
 
-1. Sélectionnez **Connect** (Se connecter). La dernière version de Python installée en local est sélectionnée comme moteur Python. Copiez votre script dans la boîte de dialogue **Script Python** qui s’affiche. Ici, nous entrons le script Python simple montré précédemment.
+1. Sélectionnez **Se connecter**. La dernière version de Python installée en local est sélectionnée comme moteur Python. Copiez votre script dans la boîte de dialogue **Script Python** qui s’affiche. Ici, nous entrons le script Python simple montré précédemment.
 
    ![Exemple de script Python](media/desktop-python-scripts/python-scripts-6.png)
 
@@ -118,9 +118,13 @@ Nous vous recommandons d’utiliser la distribution officielle de Python depuis 
 
 En guise de solution possible, vous pouvez démarrer Power BI Desktop à partir de l’invite de votre environnement Python personnalisé.
 
-### <a name="refresh"></a>Actualisation
+### <a name="refresh"></a>Actualiser
 
 Vous pouvez actualiser un script Python dans Power BI Desktop. Pour actualiser, accédez au ruban **Accueil**, puis sélectionnez **Actualiser**. Quand vous actualisez un script Python, Power BI Desktop le réexécute.
+
+## <a name="known-limitations"></a>Limites connues
+
+Actuellement, vous ne pouvez pas utiliser des scripts Python dans les rapports créés avec la fonctionnalité **Métadonnées améliorées (préversion)** activée. Les rapports existants continueront à fonctionner. Pour plus d’informations, consultez [Utilisation de métadonnées de jeu de données améliorées (préversion)](desktop-enhanced-dataset-metadata.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
