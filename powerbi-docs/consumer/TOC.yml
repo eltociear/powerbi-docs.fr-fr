@@ -74,6 +74,8 @@
               href: end-user-spotlight.md
             - name: Personnaliser un visuel
               href: end-user-personalize-visuals.md
+            - name: Analyser les fluctuations dans les visuels
+              href: end-user-analyze-visuals.md
             - name: Rapports paginés dans Power BI
               items:
                 - name: Rapports paginés
@@ -92,6 +94,8 @@
               href: end-user-visual-type.md
             - name: Afficher les données utilisées pour créer la visualisation
               href: end-user-show-data.md
+            - name: Copier un visuel et le coller ailleurs
+              href: end-user-copy-paste.md
             - name: Descendre dans la hiérarchie d’une visualisation
               href: end-user-drill.md
             - name: Interagir avec des cartes ArcGIS

@@ -28,6 +28,8 @@
               href: star-schema.md
             - name: Réduire la taille du modèle de données
               href: import-modeling-data-reduction.md
+            - name: Créer des tables de date
+              href: model-date-tables.md
             - name: Conseils sur la date/heure automatique
               href: auto-date-time.md
             - name: Relations un à un
@@ -44,6 +46,8 @@
               href: directquery-model-guidance.md
             - name: Conseils sur le modèle composite
               href: composite-model-guidance.md
+            - name: Guide de sécurité au niveau des lignes (RLS)
+              href: rls-guidance.md
         - name: DAX
           items:
             - name: Fonction DIVIDE ou opérateur de division (/)

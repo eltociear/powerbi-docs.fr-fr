@@ -47,6 +47,8 @@
       items:
         - name: Rapports Power BI
           items:
+            - name: Ruban moderne Power BI
+              href: desktop-ribbon.md
             - name: Utiliser la vue Rapport
               href: desktop-report-view.md
             - name: Types de filtres dans les rapports

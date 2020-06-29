@@ -11,7 +11,7 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: Présentation de la page d’accueil
           href: mobile-apps-home-page.md
-    - name: Démarrages rapides
+    - name: Guides de démarrage rapide
       expanded: true
       items:
         - name: Explorer des tableaux de bord et des rapports
@@ -30,7 +30,7 @@
           href: mobile-apps-offline-data.md
         - name: Application Power BI pour la réalité mixte (Preview)
           href: mobile-mixed-reality-app.md
-    - name: Procédures
+    - name: Guides pratiques
       items:
         - name: Toutes les applications mobiles
           items:
@@ -84,6 +84,8 @@
               href: mobile-apps-iOS-siri-Shortcuts.md
             - name: Intégration de la recherche d’appareils iOS
               href: mobile-apps-iOS-search-integration.md
+            - name: Mode sombre
+              href: mobile-apps-dark-mode.md
             - name: "Application Power\_BI pour Apple Watch"
               href: mobile-apple-watch.md
         - name: Appareils Android
@@ -106,7 +108,7 @@
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
             - name: Afficher les rapports locaux et les indicateurs de performance clés
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: Afficher Power BI sur Surface Hub
+            - name: "Mode de présentation sur les appareils Surface Hub et Windows\_10"
               href: mobile-windows-10-app-presentation-mode.md
             - name: Authentification unique dans l’application Windows
               href: mobile-windows-10-app-single-sign-on-sso.md

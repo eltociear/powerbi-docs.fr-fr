@@ -49,8 +49,12 @@
           items:
             - name: Partager des tableaux de bord et rapports
               href: service-share-dashboards.md
+            - name: Demander l’accès à un rapport ou à un tableau de bord
+              href: service-request-access.md
             - name: Filtrer et partager un rapport
               href: service-share-reports.md
+            - name: Résoudre les problèmes de partage de rapports ou de tableaux de bord
+              href: service-troubleshoot-sharing.md
             - name: Filtrer un rapport à l’aide de paramètres dans l’URL
               href: service-url-filters.md
             - name: Inscrire les autres et vous-même
