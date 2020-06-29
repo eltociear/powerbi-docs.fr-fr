@@ -13,18 +13,18 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 8d37f5a4cde341dd8788791fecdbd1c7f20249d0
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 57dbd3c64265ba532167db806d714054767bc506
+  ms.sourcegitcommit: 52f365af6ea5359e39d4d4547f1d61e5e0d08c5f
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "80487798"
+  ms.lasthandoff: 06/16/2020
+  ms.locfileid: "84795044"
 highlightedContent:
   items:
-  - title: Analytique incorporée avec Power BI
+  - title: Analytique intégrée avec Power BI
     itemType: overview
     url: embedded/embedding.md
-  - title: Présentation de Power BI Embedded dans Azure
+  - title: Qu’est-ce que Power BI Embedded dans Azure ?
     itemType: overview
     url: embedded/azure-pbie-what-is-power-bi-embedded.md
   - title: Visuels dans Power BI
@@ -39,16 +39,16 @@ conceptualContent:
     links:
     - url: embedded/embedding.md
       itemType: overview
-      text: Analytique incorporée avec Power BI
+      text: Analytique intégrée avec Power BI
     - url: embedded/azure-pbie-what-is-power-bi-embedded.md
       itemType: overview
-      text: Présentation de Power BI Embedded dans Azure
+      text: Qu’est-ce que Power BI Embedded dans Azure ?
     - url: embedded/embedded-capacity.md
       itemType: concept
       text: Capacité et références SKU
     footerLink:
       url: embedded/index.yml
-      text: En savoir plus
+      text: Afficher plus
   - title: Visuels Power BI
     links:
     - url: visuals/power-bi-custom-visuals.md
@@ -56,14 +56,14 @@ conceptualContent:
       text: Visuels dans Power BI
     - url: visuals/custom-visual-develop-tutorial.md
       itemType: tutorial
-      text: Développer un visuel Power BI
+      text: Développer un visuel Power BI
     - url: visuals/office-store.md
       itemType: how-to-guide
       text: Publier des visuels Power BI sur l’Espace partenaires
     footerLink:
       url: visuals/index.yml
-      text: En savoir plus
-  - title: Automatisation
+      text: Afficher plus
+  - title: Automation
     links:
     - url: automation/overview-of-power-bi-rest-api.md
       itemType: overview
@@ -76,12 +76,12 @@ conceptualContent:
       text: Configurer les informations d’identification
     footerLink:
       url: automation/index.yml
-      text: En savoir plus
+      text: Afficher plus
 additionalContent:
   sections:
   - title: Outils associés
   - items:
-    - title: API REST de Power BI
+    - title: API REST Power BI
       summary: Les API REST Power BI fournissent des points de terminaison de service pour l’incorporation, l’administration et les ressources utilisateur.
       url: https://docs.microsoft.com/rest/api/power-bi/
     - title: API REST Azure Resource Manager
@@ -95,7 +95,7 @@ additionalContent:
       url: https://powerbi.microsoft.com/developers/
     - title: Exemples de visuels Power BI
       summary: Collection d’exemples Power BI et leurs bibliothèques de code.
-      url: https://microsoft.github.io/PowerBI-visuals/samples/
+      url: visuals/samples.md
     - title: Bibliothèques Power BI
       summary: Bibliothèques Power BI (NuGets).
       url: https://www.nuget.org/profiles/powerbi
