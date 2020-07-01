@@ -4,16 +4,16 @@ description: Comment obtenir et installer le tableau de bord d’aide à la pris
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 40a585c78de4a95981ff157413e857b48fd35c14
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: e10f2144e987f8fdc7ea9dbfd18d4581889ae8bf
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407560"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85230142"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Se connecter au Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux
 L’application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux est la partie dédiée aux rapports de la [solution Microsoft Power Platform pour la réponse aux urgences sanitaires](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Le tableau de bord montre aux responsables des services d’urgence des données agrégées à l’échelle de leur système de santé pour les aider à prendre des décisions opportunes et éclairées.
