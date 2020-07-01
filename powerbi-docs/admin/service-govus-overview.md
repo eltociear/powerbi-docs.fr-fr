@@ -10,14 +10,15 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 8be103d01b5f46c510a1e3658d5a5e29d566a5ff
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84336541"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427122"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
+
 Cet article est destiné aux clients du gouvernement des États-Unis qui déploient Power BI dans le cadre d’une offre Microsoft 365 Secteur Public. Les abonnements Secteur Public sont prévus pour répondre aux besoins spécifiques des organisations qui doivent respecter les normes de conformité et de sécurité des États-Unis. Le service Power BI conçu pour les clients du gouvernement des États-Unis est différent de la version commerciale du service Power BI. Les différences de fonctionnalités sont décrites dans les sections qui suivent.
 
 ## <a name="add-power-bi-to-your-microsoft-365-government-plan"></a>Ajouter Power BI à votre offre Microsoft 365 Secteur Public
@@ -33,13 +34,14 @@ Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre 
 >
 >
 ## <a name="government-cloud-instances"></a>Instances du cloud pour le secteur public
+
 Microsoft 365 propose différents environnements pour les organismes gouvernementaux qui répondent à différentes exigences de conformité. Pour plus d’informations sur chaque environnement, consultez :
 
 * Le [Cloud de la communauté du secteur public (GCC) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
 
 * Le [Cloud de la communauté du secteur public High (GCC High) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
 
-* [L’environnement Microsoft 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis. 
+* [L’environnement Microsoft 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis.
 
 ## <a name="connect-to-power-bi-for-us-government"></a>Connexion à Power BI pour le gouvernement des États-Unis
 
@@ -68,7 +70,7 @@ Azure est réparti sur plusieurs clouds. Par défaut, vous pouvez activer des r�
 * USGov Texas
 * USGov Arizona
 
-Dans le cloud public, les plages d’adresses IP sont disponibles. Pour obtenir celles du cloud du gouvernement des États-Unis, téléchargez le fichier [Plages d’adresses IP et balises de service Azure – Cloud du gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063). 
+Dans le cloud public, les plages d’adresses IP sont disponibles. Pour obtenir celles du cloud du gouvernement des États-Unis, téléchargez le fichier [Plages d’adresses IP et balises de service Azure – Cloud du gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063).
 
 Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer et gérer des règles de pare-feu IP](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -84,7 +86,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Audit par le biais du Centre d’administration de sécurité et conformité Office 365|Disponible|Disponible|Disponible|
 |  |Partage avec des utilisateurs externes|Disponible|Disponible|Disponible|
 |  |Mesures d’utilisation pour les rapports et les tableaux de bord|Disponible|Disponible|Disponible|
-|  |Azure B2B entre GCC et le cloud commercial|Non disponible|Non disponible|Non disponible|
+|  |Azure B2B entre GCC et le cloud commercial|Disponible|Disponible|Disponible|
 |Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
 |  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
 |  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
@@ -112,4 +114,4 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 * [Inscription à Power BI pour le gouvernement des États-Unis](service-govus-signup.md)
 * [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
 * [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
-* <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Démonstration de Power BI US Government</a>
+* [Démonstration de Power BI US Government](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)

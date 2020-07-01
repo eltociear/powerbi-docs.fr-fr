@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2020
+ms.date: 06/16/2020
 ms.author: kfollis
-ms.openlocfilehash: 1a90a9826d794f84933a75213043c31a9a67a4b5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 872c847f25c15b46338127dd4a5a15cc536e5ee2
+ms.sourcegitcommit: 3e7e3cb2c2e398cffe8733d99e3ac832ee056dc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83566037"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84973404"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 [//]: # "Tatevik Tatero est un fournisseur qui travaille avec Chauncy Freels et aide à gérer cette liste de webinaires"
@@ -22,12 +22,7 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
-**Quelle est la différence entre l’analytique et le décisionnel ?**
-<br>par Nate Findley and Charles Feddersen, Microsoft
-<br>[Inscrivez-vous pour regarder ce webinaire le 3 juin 2020, de 10h à 11h (heure d’été du Pacifique)]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
-
-
->[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
+[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Webinaires proposés
 

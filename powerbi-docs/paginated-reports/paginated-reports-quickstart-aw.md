@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 81e293f4dbf15a21c2546a54f140b163ebc93c05
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 5243f80fea732e01fee600d738ae6e6cde56e261
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83565646"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427732"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
@@ -36,7 +36,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Voici les conditions préalables pour la création du rapport paginé :
 
-- Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder). 
 
 - Suivre le Guide de démarrage rapide [Créer un exemple de base de données SQL Azure dans le portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copier et enregistrer la valeur dans la zone **Nom du serveur** de l’onglet **Vue d’ensemble**. Mémorisez le nom d’utilisateur et le mot de passe créés dans Azure.
 

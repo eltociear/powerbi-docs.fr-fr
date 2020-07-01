@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 0089a38c852d82acaebc8cab0f0fb653c6a304cb
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: f18f8b56db8635d407417949bc35adb61fb4a2c5
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565623"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427573"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -96,7 +96,7 @@ Oui, mais le service Power BI ne vous permet de charger qu’un seul élément �
 
 ### <a name="what-versions-of-report-builder-do-you-support"></a>Quelles versions du Générateur de rapports prenez-vous en charge ?
 
-Nous avons lancé Power BI Report Builder comme principal outil de création de rapports paginés dans le service Power BI. Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513).
+Nous avons lancé Power BI Report Builder comme principal outil de création de rapports paginés dans le service Power BI. Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder).
 
 ### <a name="how-do-i-move-existing-reports-i-have-saved-in-sql-server-reporting-services-to-power-bi"></a>Comment déplacer les rapports existants que j’ai enregistrés dans SQL Server Reporting Services vers Power BI ?
 
@@ -181,5 +181,5 @@ Voici quelques éléments à prendre en compte lors de l’utilisation de champs
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)

@@ -1,17 +1,17 @@
 ---
 title: Catalogue des formations d’analyste de données
 description: Retrouver toutes les options de formation Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: 97ecff0abf13ff72d7794b06085be077efbe9027
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.author: margoc
+ms.openlocfilehash: 4664966098089d564e82207eb7aac923bc626b77
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565761"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532186"
 ---
 # <a name="data-analyst-learning-catalog"></a>Catalogue des formations d’analyste de données
 
@@ -55,6 +55,11 @@ Le catalogue suivant est organisé en partant des connaissances de base pour all
 | [Rendre vos données Power BI visuelles : principaux types de graphiques et usage](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-OnDemandRegistration.html)  | Le type de graphique est un des aspects les plus importants de l’analytique visuelle. Via une utilisation appropriée des graphiques, nous pouvons créer les bons modèles et la clarté nécessaire, et nous apportons les bonnes réponses à nos utilisateurs.  | Webinaire |             |
 | [Visualiser des jeux de données publics ou privés avec le nouveau connecteur Power BI et data.world](https://info.microsoft.com/data-world-connector-powerbi-ondemand.html)  | En collaboration avec data.world, Microsoft a publié un nouveau connecteur de données qui permet d’importer des jeux de données data.world dans Power BI Desktop. Avec data.world, nous sommes heureux d’aider les personnes pour qui les données sont importantes à collecter, gérer, explorer, visualiser et partager des insights avec d’autres personnes.  | Webinaire |             |
 | [Obtenez des insights actionnables en utilisant des visualisations du monde réel dans votre tableau de bord Power BI](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/8-10-18-Webinar-Get-actionable-insights-using-real-world/td-p/480242) | Rejoignez Charles sterling et Shakun Grover qui vous montrent comment utiliser des visualisations du monde réel dans votre tableau de bord Power BI.  Microsoft Visio offre le canevas parfait permettant de contextualiser visuellement les données et de décrire les flux de processus. Avec le nouveau visuel Visio pour Power BI, vous pouvez facilement mettre en œuvre les capacités de visualisation puissantes de Visio directement dans vos tableaux de bord Power BI pour obtenir des insights et mener des actions.                              | Webinaire | 34 minutes 19 secondes |
+## <a name="dax"></a>DAX<a name="dax"></a>
+| Contenu | Description | Mettre en forme  | Longueur      |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
+| [DAX en pratique pour Power BI par Phil Seamark](https://www.youtube.com/watch?v=1fGfqzS37qs)  | Pour accompagner son nouveau livre, Phil Seamark montre quelques bonnes pratiques d’utilisation de DAX dans Power BI   | Vidéo YouTube | 59 minutes 41 secondes |
+| [Solutions DAX créatives par Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/10-2-18-Webinar-Creative-DAX-solutions-by-Philip-Seamark/td-p/516250) | Saviez-vous que le langage DAX peut en faire beaucoup plus que simplement calculer la SOMME d’une colonne ou compter les lignes d’une table ? DAX s’appuie sur une des bases de données les plus rapides. Rejoignez Charles Sterling et Philip Seamark pour explorer quelques scénarios inhabituels et créatifs que vous pensiez peut-être infaisables. | Webinaire       | 58 minutes 12 secondes |
 ## <a name="governance-and-deployment"></a>Gouvernance et déploiement<a name="governance-deployment"></a>
 | Contenu  | Description   | Mettre en forme  | Longueur |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------|

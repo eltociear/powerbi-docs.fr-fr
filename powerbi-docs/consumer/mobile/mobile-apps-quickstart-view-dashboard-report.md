@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: 0313dc2014130ded9b9ed4ad112aa26803d92d28
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3b0fba18250853eec7eef85b5cfc9161290bacb
+ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435717"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84685295"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, nous allons explorer rapidement l’application Power BI Mobile, puis nous nous intéresserons à un exemple de tableau de bord et à un exemple de rapport. Nous vous montrons ici l’application Power BI pour iOS. Toutefois, vous pourrez facilement suivre les instructions sur d’autres appareils.
@@ -47,8 +47,6 @@ Une fois que vous avez effectué les prérequis et que vous avez téléchargé l
     ![Tableaux de bord dans Mon espace de travail](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
     L’apparence des tableaux de bord Power BI diffère légèrement selon que vous les consultez sur votre appareil mobile ou dans le service Power BI. Toutes les vignettes ont la même largeur et elles sont disposées verticalement.
-
-5. Appuyez sur l’icône en étoile ![Icône étoile Favori](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) située dans la barre d’outils inférieure pour ajouter ce tableau de bord aux favoris. Un favori dans l’application mobile est aussi un favori dans le service Power BI, et inversement.
 
 6. Faites défiler la page et appuyez sur le graphique en courbes pleines « This Year’s Sales, Last Year’s Sales » (« Ventes de cette année, ventes de l’année dernière »).
 
