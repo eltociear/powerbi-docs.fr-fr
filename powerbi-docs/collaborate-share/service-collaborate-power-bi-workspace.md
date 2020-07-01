@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7c95bf46998b18534994ebf083d3a118a061f555
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: 3fdfe212825cc522aa7965f46d112ece4a1db35c
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693544"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226807"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Collaborer dans un espace de travail classique
 Les espaces de travail Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Cet article concerne les espaces de travail *classiques* originaux.  
