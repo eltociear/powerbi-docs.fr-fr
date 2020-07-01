@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 25777c9062f6828bd9375d103684930e91e670de
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 806fb9fffccaffee62d8cafb00dc94b5ad7b0def
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83307126"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85220882"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
