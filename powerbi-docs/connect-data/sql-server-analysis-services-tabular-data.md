@@ -3,19 +3,19 @@ title: Données actives SQL Server Analysis Services dans Power BI
 description: Données actives SQL Server Analysis Services dans Power BI. Cela s’effectue grâce à une source de données configurée pour une passerelle d’entreprise.
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 author: Minewiskan
 ms.author: owend
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 3bbe3763ecf17fe80d1b3859f18e105e566e14ee
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c88c0d56d24f12edf30c2c79ddebb13fa941695a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281527"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238216"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Données actives SQL Server Analysis Services dans Power BI
 

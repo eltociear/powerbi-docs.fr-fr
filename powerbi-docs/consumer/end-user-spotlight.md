@@ -5,16 +5,16 @@ author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/04/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: cc43d0df094befa231e696b6725c973cdb954f44
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: a1770974915b046d11e89a08f4bc5a618d309a88
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813781"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236973"
 ---
 # <a name="add-spotlights-to-power-bi-reports"></a>Ajouter le mode À la une à des rapports Power BI
 

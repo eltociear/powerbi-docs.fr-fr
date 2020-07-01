@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/12/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9f017a4e93e76d91949b3cc3e12ef0c652664a91
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7ba75bf5bce05f7a2614dc27d5ff8245ec1a31ef
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281435"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239164"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Configurer l’extraction dans les rapports Power BI
 Dans les rapports Power BI, une *extraction* vous permet de créer une page dans votre rapport, qui se concentre sur une entité spécifique, telle qu’un fournisseur, un client ou un fabricant. Lorsque les lecteurs de votre rapport utilisent l’extraction, ils cliquent avec le bouton droit sur un point de données dans d’autre pages de rapport, puis accèdent à la page prioritaire pour obtenir des détails filtrés par rapport à ce contexte. Vous pouvez également [créer un bouton qui permet de réaliser une extraction](desktop-drill-through-buttons.md) jusqu’aux détails lorsqu’ils cliquent dessus.
