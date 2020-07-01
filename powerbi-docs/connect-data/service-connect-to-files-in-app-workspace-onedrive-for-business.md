@@ -4,16 +4,16 @@ description: Découvrez comment stocker vos fichiers Excel, CSV et Power BI Des
 author: maggiesMSFT
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62d0282af47b0d57a0b9ac307b422191b440b45c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: fdbb571a30f530ddeba37a7eaf490718b6c8116d
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564088"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85230359"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail Power BI
 Après avoir [créé un espace de travail dans Power BI](../collaborate-share/service-create-distribute-apps.md), vous pouvez stocker vos fichiers Excel, CSV et Power BI Desktop dans OneDrive Entreprise pour votre espace de travail Power BI. Vous pouvez continuer à mettre à jour les fichiers que vous stockez dans OneDrive. Ces mises à jour sont alors répercutées automatiquement dans les rapports et tableaux de bord Power BI basés sur les fichiers. 
