@@ -6,14 +6,14 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9ced88289b2170d503a8394d5b83175659178e85
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272807"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239580"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Sous-rapports dans les rapports paginés Power BI
 
@@ -23,7 +23,7 @@ Un *sous-rapport* est un élément de rapport paginé qui affiche un autre rappo
   
  Dans cette illustration, les informations de contact affichées dans le rapport Sales Order principal proviennent en fait d'un sous-rapport Contacts.  
   
-Vous créez et modifiez des fichiers de définition de rapport (.rdl) paginé dans Power BI Report Builder. Vous pouvez télécharger des sous-rapports stockés dans SQL Server Reporting Services vers un espace de travail Premium du service Power BI. Les rapports principaux et les sous-rapports doivent être publiés dans le même espace de travail. Installez [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+Vous créez et modifiez des fichiers de définition de rapport (.rdl) paginé dans Power BI Report Builder. Vous pouvez télécharger des sous-rapports stockés dans SQL Server Reporting Services vers un espace de travail Premium du service Power BI. Les rapports principaux et les sous-rapports doivent être publiés dans le même espace de travail. Installez [Power BI Report Builder](https://aka.ms/pbireportbuilder).
   
 ## <a name="work-with-report-builder-and-the-power-bi-service"></a>Utiliser Report Builder et le service Power BI
 

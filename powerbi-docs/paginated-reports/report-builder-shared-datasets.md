@@ -4,15 +4,15 @@ description: Créez un rapport paginé dans Power BI Report Builder sur la base 
 ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6f77b2c4ffa7b42cf99a75b4ae88ae0aeb631499
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a13f346feeddc8196cb35e06acf027baeaa7a151
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276625"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85239791"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Créer un rapport paginé sur la base d’un jeu de données partagé Power BI
 
@@ -26,7 +26,7 @@ Le jeu de données ne doit pas nécessairement se trouver dans un espace de trav
 
 Voici une liste de ce dont vous avez besoin et ce dont vous n’avez pas besoin pour utiliser un jeu de données partagé dans un générateur de rapports Power BI.
 
-- Générateur de rapports Power BI. [Télécharger et installer le générateur de rapports Power BI](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Générateur de rapports Power BI. [Télécharger et installer le générateur de rapports Power BI](https://aka.ms/pbireportbuilder).
 - Pour accéder à un jeu de données Power BI, vous devez disposer de l’autorisation Build pour le jeu de données. En savoir plus sur [l’autorisation de génération](../connect-data/service-datasets-build-permissions.md).
 - Vous n’avez pas besoin d’une licence Power BI Pro pour créer un rapport paginé dans le générateur de rapports. 
 - Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium. 

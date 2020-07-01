@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 06/19/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b0e52ebf4f529c7da75e79becf30c74d6e2c0248
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 64fa13f3e95f43813c657eb9be195fb03e57a06b
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496316"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354912"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Tableau de bord pour les consommateurs du service Power BI
 
@@ -32,7 +32,6 @@ Les visualisations que vous voyez dans le tableau de bord sont appelées *vignet
 > Les tableaux de bord peuvent être [affichés et partagés sur des appareils mobiles](mobile/mobile-apps-view-dashboard.md).
 >
 > Power BI Pro est requis pour afficher un tableau de bord qui a été partagé avec vous.
-> 
 
 Les visualisations sur un tableau de bord proviennent de rapports, et chaque rapport est basé sur un jeu de données. En fait, on peut considérer un tableau de bord comme une porte d’entrée dans les rapports et les jeux de données sous-jacents. La sélection d’une visualisation vous amène au rapport (et au jeu de données) utilisé(s) pour la créer.
 
