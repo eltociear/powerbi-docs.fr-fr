@@ -6,15 +6,15 @@ ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 698765cd71873de3badfce45ef546ed61220b323
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 0fd6e2d9a05c07ae5ed74a4f3f35af5267a68a87
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565320"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236194"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
@@ -54,7 +54,7 @@ Le code d’erreur **DM_GWPipeline_UnknownError**apparaît dans **Afficher les d
 
 Pour plus d’informations, vous pouvez également accéder à **Journaux des événements** > **Journaux des applications et des services** > **Service Passerelle de données locale**.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion au \<serveur\>. Détails : « Nous avons pu accéder à la passerelle de données, mais elle ne peut pas accéder à la source de données locale. »
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion à \<server\>. Détails : « Nous avons pu accéder à la passerelle de données, mais elle ne peut pas accéder à la source de données locale. »
 
 Vous n’avez pas pu vous connecter à la source de données spécifiée. Veillez à valider les informations fournies pour cette source de données.
 
