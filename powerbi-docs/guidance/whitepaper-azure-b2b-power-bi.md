@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 2783f434e2bb1d6d45ed1a9442c60da7b09e7ae4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565434"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782783"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -71,7 +71,7 @@ Certaines organisations ont besoin de davantage de contrôle sur l’ajout d’u
 
 
 
-1. Le processus étoiles à un administrateur informatique invite l’utilisateur invité manuellement ou via l’API fournie par Azure Active Directory
+1. Le processus commence par un administrateur informatique qui invite l’utilisateur invité soit manuellement, soit par le biais de l’API fournie par Azure Active Directory
 2. L’utilisateur accepte l’invitation à l’organisation.
 3. Une fois que l’utilisateur a accepté l’invitation, un utilisateur Power BI peut partager un rapport ou un tableau de bord avec l’utilisateur externe, ou un groupe de sécurité dans lequel il se trouve. Tout comme avec le partage normal dans Power BI l’utilisateur externe reçoit un message électronique contenant le lien vers l’élément.
 4. Lorsque l’utilisateur externe accède au lien, son authentification dans son répertoire est transmise à la Azure AD de contoso et utilisée pour accéder au contenu Power BI.
@@ -331,7 +331,7 @@ L’intégration de Power BI avec Azure AD B2B fonctionne avec toutes les adress
 
 Il est important de reconnaître que le compte de Azure AD est utilisé ou créé dans le Azure AD du tiers externe, ce qui permet à Lucy d’utiliser leurs propres nom d’utilisateur et mot de passe, et leurs informations d’identification cessent de fonctionner dans d’autres locataires à chaque fois que Lucy quitte l’entreprise lorsque son organisation utilise également Azure AD.
 
-## <a name="licensing"></a>Licences
+## <a name="licensing"></a>Licence
 
 Contoso peut choisir l’une des trois approches suivantes : les utilisateurs invités titulaires d’une licence de leurs fournisseurs et organisations partenaires ont accès au contenu Power BI.
 
