@@ -13,6 +13,10 @@
           href: power-bi-service-overview.md
         - name: Comparaison de Power BI Desktop et du service
           href: service-service-vs-desktop.md
+    - name: Tutoriels
+      items:
+        - name: "Bien démarrer avec le service Power\_BI"
+          href: service-get-started.md
     - name: Concepts
       items:
         - name: "Nouveautés de la dernière mise à jour de Power\_BI\_Desktop"
