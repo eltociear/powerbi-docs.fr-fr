@@ -118,6 +118,14 @@
               href: report-performance-troubleshoot.md
             - name: Meilleures pratiques pour les pipelines de déploiement
               href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: Centre d’excellence
+      items:
+        - name: Transformation BI de Microsoft
+          href: center-of-excellence-microsoft-business-intelligence-transformation.md
+        - name: Établir un centre d’excellence
+          href: center-of-excellence-establish.md
+        - name: Architecture de solution BI dans le centre d’excellence
+          href: center-of-excellence-business-intelligence-solution-architecture.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
