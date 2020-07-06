@@ -1,17 +1,17 @@
 ---
 title: Catalogue de formations des développeurs
 description: Retrouver toutes les options de formation Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: 6262b7ba0f3d01db6f9f5ff24f411de6ec4f35cb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: edc2e40c219a8bbe1d57a5cfda774e7f9f87856d
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268601"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532623"
 ---
 # <a name="developer-learning-catalog"></a>Catalogue de formations des développeurs
 
@@ -27,17 +27,13 @@ Le catalogue suivant est organisé en partant des connaissances de base pour all
 ## <a name="embedded"></a>Incorporé<a name="embedded"></a>
 | Contenu | Description | Mettre en forme  | Longueur      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
+|[Cours en ligne : Développeur Power BI en un jour](developer-online-course.md)|Un cours vidéo qui fera de vous un développeur d’applications avec les connaissances techniques requises pour incorporer du contenu Power BI. Nous vous recommandons de regarder les vidéos dans l’ordre de leur enregistrement, en commençant par la vidéo 1 et en finissant par la vidéo 20.|Liste de lecture YouTube et kit d’auto-apprentissage|3 heures 20 minutes|
 | [Bonnes pratiques pour la gestion de l’analytique Power BI Embedded pour les déploiements multilocataires](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html) | Power BI Embedded est un service puissant qui vous permet de déclarer Power BI en liste verte dans vos propres applications. Regardez ce webinaire pour découvrir comment gérer les déploiements de Power BI Embedded.   | Webinaire       |                |
 | [En savoir plus sur Power BI Embedded en 20 minutes](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | Ce webinaire donne une présentation de Power BI Embedded. À la fin de ce webinaire, les utilisateurs devraient être en mesure de comprendre en quoi consiste Power BI Embedded, les étapes suivantes pour bien démarrer avec le produit et comment accéder à l’aide/aux ressources. | Webinaire       |                |
 | [Développement avec incorporation de Power BI par Ted Pattison – Mise à jour d’avril 2018](https://www.youtube.com/watch?v=swnGlrRy588)  | Dans ce webinaire orienté développeur, Ted Pattison explique les améliorations récentes apportées à la plateforme d’incorporation Power BI, et comment les éditeurs de logiciels indépendants et les développeurs en entreprise peuvent en tirer parti. | Vidéo YouTube | 59 minutes 49 secondes  |
 | [Incorporation de Power BI Version 2 – Historique complet](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Embedding-Version-2-The-Full-Story/td-p/229527)    | Le webinaire a été présenté le 10 août 2017 par Ted Pattison, MVP Power BI, de Critical Path Training. Le webinaire explique comment développer en utilisant les nouvelles fonctionnalités d’incorporation de Power BI disponibles via Power BI Premium.  | Webinaire       | 1 heure 7 minutes 23 secondes |
 | [Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers#step-1-setup-your-embedded-analytics-development-environment) | Avec Power BI Embedded dans Azure ou l’incorporation de Power BI dans Office, vous pouvez incorporer des rapports, des tableaux de bord ou des vignettes dans une application en utilisant le modèle App Owns Data (L’application possède les données).  | Documentation |                |
 | [En savoir plus sur Power BI Embedded en 20 minutes](https://info.microsoft.com/ww-ondemand-power-bi-embedded-in-20-min.html)  | Ce webinaire donne une présentation de Power BI Embedded. À la fin de ce webinaire, les utilisateurs devraient être en mesure de comprendre en quoi consiste Power BI Embedded, les étapes suivantes pour bien démarrer avec le produit et comment accéder à l’aide/aux ressources. | Webinaire       |                |
-## <a name="dax"></a>DAX<a name="dax"></a>
-| Contenu | Description | Mettre en forme  | Longueur      |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|
-| [DAX en pratique pour Power BI par Phil Seamark](https://www.youtube.com/watch?v=1fGfqzS37qs)  | Pour accompagner son nouveau livre, Phil Seamark montre quelques bonnes pratiques d’utilisation de DAX dans Power BI   | Vidéo YouTube | 59 minutes 41 secondes |
-| [Solutions DAX créatives par Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/10-2-18-Webinar-Creative-DAX-solutions-by-Philip-Seamark/td-p/516250) | Saviez-vous que le langage DAX peut en faire beaucoup plus que simplement calculer la SOMME d’une colonne ou compter les lignes d’une table ? DAX s’appuie sur une des bases de données les plus rapides. Rejoignez Charles Sterling et Philip Seamark pour explorer quelques scénarios inhabituels et créatifs que vous pensiez peut-être infaisables. | Webinaire       | 58 minutes 12 secondes |
 ## <a name="development"></a>Développement<a name="development"></a>
 | Contenu | Description | Mettre en forme  | Longueur      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------|

@@ -1,22 +1,22 @@
 ---
-title: Se connecter à Insights IA dans Power BI Desktop (préversion)
+title: Se connecter à Insights IA dans Power BI Desktop
 description: Se connecter et utiliser facilement les données d’Insights IA dans Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/12/2019
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fec1a1a632244ef0c1923e2d68f76a7364d3c7b8
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7f067e87bf155b45be1d4c34f27d41649b6247df
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83311726"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85237980"
 ---
-# <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Utiliser Insights IA dans Power BI Desktop (préversion)
+# <a name="use-ai-insights-in-power-bi-desktop"></a>Utiliser Insights IA dans Power BI Desktop
 
 Dans Power BI, vous pouvez utiliser Insights IA pour accéder à une collection de modèles d'apprentissage machine préformés qui améliorent la préparation de vos données. Insights IA est accessible dans l'éditeur **Power Query**, et ses fonctionnalités et fonctions associées sont accessibles via les onglets **Accueil** et **Ajouter une colonne** dans l’**éditeur Power Query**. 
 
@@ -26,7 +26,10 @@ Cet article décrit les fonctions Analyse de texte et Vision, toutes deux dispon
 
 ## <a name="how-to-enable-ai-insights"></a>Comment activer Insights IA
 
-Insights IA dans Power BI est une fonction en préversion et doit être activée. Pour l’activer, sélectionnez **Fichier > Options et paramètres > Options**, puis **Fonctionnalité en préversion** dans la colonne gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+Les Insights IA ont été mises à la disposition générale dans la version de juin 2020 de Power BI Desktop. Pour les versions antérieures de Power BI Desktop, les Insights IA dans Power BI doivent être activées en sélectionnant **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en préversion** dans la colonne de gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+
+> [!NOTE]
+> Les Insights IA sont généralement disponibles pour toutes les versions de Power BI Desktop à partir de la version de juin 2020, et pour ces versions, il n’est pas nécessaire d’activer cette fonctionnalité en tant que fonctionnalité en préversion.
 
 ![Option Insights IA pour Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
 

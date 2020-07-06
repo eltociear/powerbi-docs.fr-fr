@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/26/2020
+ms.topic: how-to
+ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 2257e38183d87ef7fd4fdd12546c2a191a7acf74
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159878"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227434"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -114,7 +114,7 @@ La première actualisation effectuée dans le service Power BI peut être plus l
 
 #### <a name="current-date"></a>Date actuelle
 
-La *date actuelle* est basée sur la date système au moment de l’actualisation. Si l’actualisation planifiée est activée pour le jeu de données dans le service Power BI, le fuseau horaire spécifié est pris en compte pour la détermination de la date actuelle. Les actualisations planifiées et appelées manuellement tiennent compte du fuseau horaire s’il est disponible. Par exemple, une actualisation qui se produit à 20 h heure du Pacifique (États-Unis et Canada) avec un fuseau horaire spécifié détermine la date actuelle en fonction de l’heure du Pacifique et non de l’heure GMT (qui correspondrait au jour suivant).
+La *date actuelle* est basée sur la date système au moment de l’actualisation. Si l’actualisation planifiée est activée pour le jeu de données dans le service Power BI, le fuseau horaire spécifié est pris en compte pour la détermination de la date actuelle. Les actualisations planifiées et appelées manuellement via le service Power BI tiennent compte du fuseau horaire s’il est disponible. Par exemple, une actualisation qui se produit à 20 h heure du Pacifique (États-Unis et Canada) avec un fuseau horaire spécifié détermine la date actuelle en fonction de l’heure du Pacifique et non de l’heure GMT (qui correspondrait au jour suivant). Les opérations d’actualisation qui ne sont pas appelées par le service Power BI, comme la [commande d’actualisation TMSL](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), ne prennent pas en compte le fuseau horaire de l’actualisation planifiée
 
 ![Fuseau horaire](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -186,7 +186,7 @@ Les paramètres suivants peuvent être insérés dans la commande d’actualisat
 
 - **applyRefreshPolicy** : si une table a une stratégie d’actualisation incrémentielle définie, applyRefreshPolicy détermine si la stratégie est appliquée ou non. Si la stratégie n’est pas appliquée, une opération Traiter entièrement laissera les définitions de partitions inchangées et toutes les partitions de la table seront entièrement actualisées. La valeur par défaut est true.
 
-- **effectiveDate** : si une stratégie d’actualisation incrémentielle est appliquée, elle doit connaitre la date actuelle pour déterminer les plages de fenêtre dynamique pour la plage historique et la plage incrémentielle. Le paramètre effectiveDate vous permet de remplacer la date actuelle. Cela est utile pour les tests, les démonstrations et les scénarios d’entreprise où les données sont actualisées de façon incrémentielle jusqu’à une date dans le passé ou le futur (par exemple, des budgets futurs). La valeur par défaut est la [date actuelle](#current-date).
+- **effectiveDate** : si une stratégie d’actualisation incrémentielle est appliquée, elle doit connaitre la date actuelle pour déterminer les plages de fenêtre dynamique pour la plage historique et la plage incrémentielle. Le paramètre effectiveDate vous permet de remplacer la date actuelle. Cela est utile pour les tests, les démonstrations et les scénarios d’entreprise où les données sont actualisées de façon incrémentielle jusqu’à une date dans le passé ou le futur (par exemple, des budgets futurs). La valeur par défaut est la date actuelle.
 
 ```json
 { 
@@ -205,6 +205,8 @@ Les paramètres suivants peuvent être insérés dans la commande d’actualisat
   }
 }
 ```
+
+Pour en savoir plus sur le remplacement du comportement d’actualisation incrémentielle par défaut avec TMSL, consultez la [Commande d’actualisation](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Requêtes personnalisées pour les modifications de données détectées
 

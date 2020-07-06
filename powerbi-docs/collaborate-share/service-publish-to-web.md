@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 136376da9d00e5f40397f0d4152e83d17a171168
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 5e7fe8a7c71927a1e89bd4e86209c580ae1f3b29
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272974"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85225674"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -118,11 +118,11 @@ Une fois que vous avez créé un code incorporé **Publier sur le web**, vous po
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Mises à jour des rapports et actualisation des données
 
-Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Toutefois, après cette première action, il peut se passer entre deux et trois heures avant que vos utilisateurs puissent voir les mises à jour des rapports ou des éléments visuels. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
+Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Après la création initiale, les mises à jour des rapports ou des objets visuels peuvent prendre jusqu’à deux heures avant que vos utilisateurs ne les voient. Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
 
 ### <a name="data-refresh"></a>Actualisation des données
 
-Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Un délai d’environ une heure peut être nécessaire pour que les données actualisées soient visibles à partir des codes incorporés. Pour désactiver l’actualisation automatique, sélectionnez **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
+Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Un délai de jusqu’à deux heures peut être nécessaire pour que les données actualisées soient visibles à partir des codes incorporés. Pour désactiver l’actualisation automatique, sélectionnez **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
 
 ## <a name="power-bi-visuals"></a>Visuels Power BI
 
@@ -159,7 +159,7 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 
 Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette mise en cache garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
-Le cache a une durée de vie longue. Si vous mettez à jour la définition du rapport (par exemple si vous changez son mode d’affichage) ou si vous actualisez les données du rapport, les modifications se reflèteront dans la version du rapport consultée par vos utilisateurs au bout d’une heure environ. Étant donné que chaque élément et chaque valeur de données sont mis en cache indépendamment, lorsqu’une mise à jour de données se produit, une combinaison de valeurs actuelles et précédentes peut être affichée auprès d’un utilisateur. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** seulement quand vous êtes satisfait des paramètres. Si vos données sont actualisées, réduisez le nombre d’actualisations et effectuez les actualisations pendant les heures creuses.
+Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Si vous mettez à jour la définition du rapport (par exemple si vous changez son mode d’affichage) ou si vous actualisez les données du rapport, les modifications se refléteront dans la version du rapport consultée par vos utilisateurs au bout de jusqu’à deux heures. Étant donné que chaque élément et chaque valeur de données sont mis en cache indépendamment, lorsqu’une mise à jour de données se produit, une combinaison de valeurs actuelles et précédentes peut être affichée auprès d’un utilisateur. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** seulement quand vous êtes satisfait des paramètres. Si vos données sont actualisées, réduisez le nombre d’actualisations et effectuez les actualisations pendant les heures creuses. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment.
 
 ## <a name="find-your-power-bi-administrator"></a>Recherche de votre administrateur Power BI
 

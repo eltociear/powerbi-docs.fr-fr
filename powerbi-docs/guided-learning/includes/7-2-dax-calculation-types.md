@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0296512b59baf828dd284088e0109af819aee261
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73799832"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84562150"
 ---
 Vous pouvez créer deux calculs principaux à l’aide de DAX :
 
 * **Colonnes calculées**
-* **Mesures calculées**
+* **mesures**
 
-Avant d’entrer dans les détails avec ces deux calculs, il est judicieux de bien comprendre la syntaxe DAX des tables et des colonnes que vous utiliserez lors de la création de **colonnes calculées** ou de **mesures calculées**.
+Avant d’entrer dans les détails avec ces deux calculs, il est judicieux de bien comprendre la syntaxe DAX des tables et des colonnes que vous utiliserez lors de la création de **colonnes calculées** ou de **mesures**.
 
 ## <a name="dax-table-and-column-name-syntax"></a>Syntaxe des noms de colonne et de table DAX
 Lors de la création d’une colonne ou mesure, il est important de connaître le format général des noms de table DAX :
@@ -51,8 +51,8 @@ Les éléments requis pour une colonne calculée sont les suivants :
 
 Si vous référencez une table ou une colonne dans votre formule de colonne calculée, vous n’avez pas besoin de spécifier de ligne de la table : Power BI calcule la colonne pour la ligne actuelle et pour chaque calcul.
 
-## <a name="creating-calculated-measures"></a>Créer des mesures calculées
-Utilisez une **mesure calculée** quand vous calculez des pourcentages ou des taux ou quand vous avez besoin d’agrégations complexes. Pour créer une mesure à l’aide d’une formule DAX, sélectionnez le bouton **Nouvelle mesure** dans l’onglet **Modélisation**. Là encore, il est préférable d’être dans la vue **Données** de Power BI Desktop car elle comprend la **barre de formule** et facilite l’écriture de votre formule DAX.
+## <a name="creating-measures"></a>Création de mesures
+Utilisez une **mesure** quand vous calculez des pourcentages ou des proportions, ou quand vous avez besoin d’agrégations complexes. Pour créer une mesure à l’aide d’une formule DAX, sélectionnez le bouton **Nouvelle mesure** dans l’onglet **Modélisation**. Là encore, il est préférable d’être dans la vue **Données** de Power BI Desktop car elle comprend la **barre de formule** et facilite l’écriture de votre formule DAX.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
@@ -60,7 +60,7 @@ Avec les **mesures**, une nouvelle icône de mesure portant le nom de la mesure 
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 
-Les éléments requis pour une mesure calculée sont identiques à ceux d’une colonne calculée :
+Les éléments requis pour une mesure sont identiques à ceux d’une colonne calculée :
 
 * un nouveau nom de mesure ;
 * au moins une fonction ou une expression.

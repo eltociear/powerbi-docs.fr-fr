@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 57f443ec11d918966c25b9d59a1656bb02983fbb
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80113689"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238051"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Ajoutez de l'interactivité à vos visuels grâce à des sélections de visuels Power BI
 
@@ -81,7 +81,7 @@ Cet objet propose des méthodes correspondantes afin de créer `selections` pour
 
 Examinons comment les sélections sont représentées sur le mappage de vues de données catégoriques pour un exemple de jeu de données :
 
-| Fabricant | Type | Value |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | Chrysler | Voiture nationale | 28883 |
 | Chrysler | Camion national | 117131 |
@@ -161,7 +161,7 @@ Et le visuel devrait être également capable de découper les données par `Man
 
 Par exemple, lorsque l'utilisateur sélectionne `Chrysler` par `Manufacturer`, les autres visuels doivent afficher les données suivantes :
 
-| Fabricant | Type | Value |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | **Chrysler** | Voiture nationale | 28883 |
 | **Chrysler** | Camion national | 117131 |
@@ -170,7 +170,7 @@ Par exemple, lorsque l'utilisateur sélectionne `Chrysler` par `Manufacturer`, l
 
 Lorsque l'utilisateur sélectionne `Import Car` par `Type` (sélectionne les données par série), les autres visuels doivent afficher les données suivantes :
 
-| Fabricant | Type | Value |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | Chrysler | **Véhicule d’importation** | 0 |
 | Ford | **Véhicule d’importation** | 0 |

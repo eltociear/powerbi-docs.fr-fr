@@ -1,17 +1,17 @@
 ---
 title: Catalogue des formations pour les créateurs de rapports
 description: Retrouver toutes les options de formation Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
-ms.openlocfilehash: f318aa59f33a9993b31787fcb3e0036286616608
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.author: margoc
+ms.openlocfilehash: ed36d045047215babb092eb074156c950af9d16f
+ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81268808"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84532278"
 ---
 # <a name="report-creator-learning-catalog"></a>Catalogue des formations pour les créateurs de rapports
 
@@ -39,6 +39,7 @@ Le catalogue suivant est organisé en partant des connaissances de base pour all
 ## <a name="report-design"></a>Conception des rapports<a name="report-design"></a>
 | Contenu | Description  | Mettre en forme | Longueur   |
 |-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------|
+|[Cours en ligne : Rapports paginés Power BI en une journée](paginated-reports-online-course.md)|Un cours vidéo qui a pour but de vous aider en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI. Nous vous recommandons de regarder les vidéos dans l’ordre de leur enregistrement, en commençant par la vidéo 1 et en finissant par la vidéo 24.|Liste de lecture YouTube et kit d’auto-apprentissage|4 heures 20 minutes|
 | [Récits de données avec Power BI par Tristan Malherbe](https://www.youtube.com/watch?v=egk0suekwHo)  | Récits de données avec Power BI par Tristan Malherbe  | Vidéo YouTube | 59 minutes 54 secondes    |
 | [Conseils, astuces et outils Power, par les dirigeants de PowerBI.Tips](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-Tricks-Tips-and-Tools-from-the-owners-of-PowerBI-Tips/td-p/382848) | Conseils, astuces et outils Power, par les dirigeants de PowerBI.Tips. Dans cette réunion de groupe d’utilisateurs très spéciale, les dirigeants de PowerBI.Tips, Seth Bauer et Mike Carlo, MVP Power BI, partagent avec vous un grand nombre d’astuces, de conseils et d’outils Power qu’ils ont publiés sur http://PowerBI.Tips au cours des 18 derniers mois. Les démonstrations incluent leur générateur de thèmes, l’ajout de types de données dans l’éditeur de requête et leur dernière offre de dispositions Power BI (et une présentation de leur dernière disposition « Cool Blue »).  | Webinaire       | 1 heure 7 minutes 4 secondes |
 | [Webinaire du 11/09/18 : Nouveaux outils et nouveaux modèles, notamment une exploration de ce qui a changé au niveau des couleurs](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/9-11-18-Webinar-New-tools-and-new-templates-including-a/td-p/480220) | Rejoignez Charles Sterling et les créateurs de PowerBI.Tips, Seth Bauer et Mike Carlo, MVP Power BI, qui partagent avec vous un nombre toujours croissant d’astuces, de conseils et d’outils Power qu’ils ont publiés sur https://PowerBI.Tips au cours des 6 derniers mois. Les démonstrations incluent leur générateur de thèmes, des conseils et des astuces, et les dispositions de Power BI les plus récentes.  | Webinaire       | 53 minutes 34 secondes    |

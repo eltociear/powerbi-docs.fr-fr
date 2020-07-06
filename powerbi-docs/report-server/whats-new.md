@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/27/2020
-ms.openlocfilehash: ee725457475f1bccd593e2331d9e62c85ef08762
-ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
+ms.openlocfilehash: 9cb9939f665dabc910c0605f4c1864f7d80988c3
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84126293"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739227"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -215,7 +215,7 @@ Power BI Report Server prend désormais en charge le chiffrement transparent de 
 
 #### <a name="power-bi-visuals-api"></a>API des éléments visuels Power BI
 
-La version API expédiée avec cette mise en production est 2.6.
+La version API expédiée avec cette mise en production est 2.6.0.
 
 #### <a name="microsoft-report-builder-update"></a>Mise à jour du générateur de rapports Microsoft
 
@@ -366,7 +366,7 @@ Prise en charge de ces fonctionnalités dans les rapports Power BI :
 
 #### <a name="power-bi-visuals"></a>Visuels Power BI
 
-- La version de l’API livrée avec cette mise en production est 2.3.
+- La version API expédiée avec cette mise en production est 2.3.0.
 
 ### <a name="administrator-settings"></a>Paramètres administrateur
 

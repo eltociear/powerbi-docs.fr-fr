@@ -5,17 +5,17 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/03/2019
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 469f217426f4c66c6d1d0d72192efbda8391689c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4addd87085eb4321253bcf34842ca135f536f981
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83315291"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238116"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 
@@ -152,13 +152,13 @@ Vous pouvez également agréger un champ non numérique. Par exemple, si vous av
 
 Q :  Pourquoi est-ce que l’option **Ne pas synthétiser** ne s’affiche pas ?
 
-R :  Le champ que vous avez sélectionné est probablement une mesure calculée ou une mesure avancée créée dans Excel ou [Power BI Desktop](../transform-model/desktop-measures.md). Chaque mesure calculée a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation que Power BI utilise. Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. La liste **Champs** indique les *mesures calculées* avec le symbole de calculatrice.
+R :  Le champ que vous avez sélectionné est probablement une mesure calculée dans un modèle multidimensionnel ou une mesure créée dans Excel ou [Power BI Desktop](../transform-model/desktop-measures.md). Chaque mesure a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation que Power BI utilise. Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. La liste **Champs** indique les *mesures* avec le symbole de calculatrice.
 
 Q :  Mon champ **est** numérique. Pourquoi mes seuls choix sont **Nombre** et **Comptage de valeurs** ?
 
 R1 :  L’explication la plus probable est que le propriétaire du jeu de données n’a *pas* classé le champ en tant que nombre. Par exemple, si un jeu de données comporte un champ **Année**, le propriétaire du jeu de données peut classer cette valeur en tant que texte. Dans Power BI, il est plus probable que le champ **Année** soit compté (par exemple, le nombre de personnes nées en 1974). Il y a moins de chances pour que Power BI en calcule la somme ou la moyenne. Si vous êtes le propriétaire, vous pouvez ouvrir le jeu de données dans Power BI Desktop et utiliser l’onglet **Modélisation** pour changer le type de données.
 
-R2 : Si le champ a une icône de calculatrice, cela signifie qu’il s’agit d’une *mesure calculée*. Chaque mesure calculée a sa propre formule codée en dur que seul le propriétaire du jeu de données peut changer. Le calcul que Power BI utilise peut être une agrégation simple comme une moyenne ou une somme. Il peut également s’agir d’une opération plus compliquée comme un « pourcentage de contribution à la catégorie parente » ou un « total cumulé depuis le début de l’année ». Power BI ne va pas calculer la somme ou la moyenne des résultats. C’est un simple recalcul qui est plutôt effectué (à l’aide de la formule codée en dur) pour chaque point de données.
+R2 : Si le champ a une icône de calculatrice, cela signifie qu’il s’agit d’une *mesure*. Chaque mesure a sa propre formule que seul le propriétaire du jeu de données peut changer. Le calcul que Power BI utilise peut être une agrégation simple comme une moyenne ou une somme. Il peut également s’agir d’une opération plus compliquée comme un « pourcentage de contribution à la catégorie parente » ou un « total cumulé depuis le début de l’année ». Power BI ne va pas calculer la somme ou la moyenne des résultats. C’est un simple recalcul qui est plutôt effectué (à l’aide de la formule codée en dur) pour chaque point de données.
 
 R3 :  Il se peut également que vous ayez supprimé le champ dans un *compartiment* qui autorise uniquement les valeurs de catégorie.  Dans ce cas, les seules options proposées sont Nombre et Comptage de valeurs.
 

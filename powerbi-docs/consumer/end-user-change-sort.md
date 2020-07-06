@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a84ebd1374cab596023f55024eb9368a69daab0d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 10db78c01ea074e2b3fab71715a3df92ae207f8e
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236025"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782478"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "85236025"
 
 Dans le service Power BI, vous pouvez changer l’apparence d’un visuel en le triant par différents champs de données. En changeant la façon dont vous triez un visuel, vous pouvez mettre en évidence les informations que vous voulez transmettre. Que vous utilisiez des données numériques (comme des chiffres de ventes) ou des données de texte (comme des noms d’État), vous pouvez trier vos visualisations comme vous le souhaitez. Power BI offre une grande souplesse sur le plan du tri et des menus rapides que vous pouvez utiliser. 
 
-Les visuels affichés sur un tableau de bord ne peuvent pas être triés, mais dans un rapport Power BI, vous pouvez trier la plupart des visualisations 
+Les visuels d’un tableau de bord ne peuvent pas être triés. Toutefois, dans un rapport Power BI, vous pouvez trier la plupart des visualisations à raison d’un champ, parfois deux, à la fois. Pour certains types de visuels, le tri n’est pas disponible du tout : arborescences, jauges, cartes, etc. 
 
 ## <a name="get-started"></a>Commencer
 
@@ -51,6 +51,19 @@ Si nécessaire, changez l’ordre de tri de croissant à décroissant.  Resélec
 
 > [!NOTE]
 > Certains visuels ne peuvent pas être triés. C’est le cas, par exemple, des visuels suivants : treemap, carte géographique, carte choroplèthe, nuage de points, jauge, carte, cascade.
+
+## <a name="sorting-by-multiple-columns"></a>Trier sur plusieurs colonnes
+Les données de ce tableau sont triées par **Number of customers** (Nombre de clients).  Nous le savons en raison de la petite flèche sous le mot *Number* (Nombre). La flèche pointe vers le bas, ce qui signifie que la colonne est triée dans *l’ordre décroissant*.
+
+![capture d’écran montrant la première colonne utilisée pour le tri](media/end-user-change-sort/power-bi-sort-first.png)
+
+
+Pour ajouter d’autres colonnes à l’ordre de tri, appuyez sur Maj et cliquez sur l’en-tête de colonne que vous souhaitez ajouter ensuite dans l’ordre de tri. Par exemple, si vous cliquez sur **Number of customers** (Nombre de clients) puis que vous utilisez la touche Maj tout en cliquant sur **Total revenue** (Chiffre d’affaires total), le tableau est d’abord trié par clients, puis par chiffre d’affaires. Le contour rouge indique les zones où l’ordre de tri a changé.
+
+![capture d’écran montrant la deuxième colonne utilisée pour le tri](media/end-user-change-sort/power-bi-sort-second.png)
+
+Si vous utilisez la touche Maj tout en cliquant une deuxième fois sur la même colonne, cela modifie le sens de tri de cette colonne. En outre, si vous utilisez la touche Maj tout en cliquant sur une colonne que vous avez précédemment ajoutée à l’ordre de tri, cette colonne est déplacée vers la fin de l’ordre de tri.
+
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Enregistrement de vos modifications de l’ordre de tri
 Les rapports Power BI conservent les filtres, les segments, le tri et les autres changements que vous apportez aux vues de données, même si vous travaillez en [Mode Lecture](end-user-reading-view.md). Ainsi, si vous quittez un rapport et que vous y revenez plus tard, vos changements de tri sont enregistrés.  Si vous voulez annuler vos changements et revenir aux paramètres du *concepteur* du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus supérieure. 

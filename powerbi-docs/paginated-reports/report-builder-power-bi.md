@@ -1,7 +1,7 @@
 ---
 title: Générateur de rapports Power BI
 description: Power BI Report Builder est un outil qui permet de créer des rapports paginés.
-ms.date: 11/27/2019
+ms.date: 06/29/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0118bc427ce58f48d50b3e8ed4e918bf66c6e8fc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a0c22be90b609e25a6403e33cb646b35e9467c07
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621523"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782749"
 ---
 # <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
 
- Power BI Report Builder est un outil qui permet de créer des rapports paginés.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
+ Le Générateur de rapports Power BI est un outil de création de rapports paginés que vous pouvez publier sur le service Power BI.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
+ 
+Vous êtes prêt à commencer la création ? [Installez le Générateur de rapports Power BI](https://aka.ms/pbireportbuilder) à partir du centre de téléchargement Microsoft.
 
 Vous préférez apprendre à partir de vidéos ? Consultez la série de vidéos sur les rapports paginés de Power BI sur YouTube, par le directeur principal du programme Power BI, Chris Finlan.
 
@@ -32,7 +34,7 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
  
 -   **Commencez avec l’Assistant Tableau, Matrice ou Graphique**. Créez une connexion à une source de données, faites un glisser-déposer de champs pour créer une requête de jeu de données, sélectionnez une disposition et un style, et personnalisez votre rapport.  
   
--   **Commencez avec l’Assistant Carte** pour créer des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
+-   **Commencez avec l’Assistant Carte** pour créer des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. (ESRI). Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
 
 ##  <a name="design-your-report"></a><a name="DesignRept"></a> Créer votre rapport  
   

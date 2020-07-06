@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 06/13/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c72507759a69dc03f3d8b1510aef0e3ad369dd2
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 83383b93d9f61c30c22afa30a5d092aa62ce3a10
+ms.sourcegitcommit: 94fc44928bff09d874793964b5d7443db40934cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272744"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84754185"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -85,12 +85,10 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-> [!NOTE]
-> L'utilisation d'une référence SKU unique plus grande (p. ex. une référence SKU P2) peut être préférable à la combinaison de plusieurs petites références SKU (p. ex. deux références SKU P1). Par exemple, vous pouvez utiliser des modèles plus grands et obtenir un meilleur parallélisme avec la référence SKU P2.
+>[!NOTE]
+>L'utilisation d'une référence SKU unique plus grande (p. ex. une référence SKU P2) peut être préférable à la combinaison de plusieurs petites références SKU (p. ex. deux références SKU P1). Par exemple, vous pouvez utiliser des modèles plus grands et obtenir un meilleur parallélisme avec la référence SKU P2.
 
 ### <a name="capacity-workloads"></a>Charges de travail de capacité
 
@@ -179,17 +177,17 @@ Selon la référence SKU, vous pouvez charger jusqu’à **10 Go** de fichiers
 
 ### <a name="size-considerations"></a>Considérations relatives à la taille
 
-Les jeux de données volumineux peuvent consommer beaucoup de ressources. Pour les jeux de données supérieurs à 1 Go, vous devez disposer au moins d’une référence SKU P1. Même si vous pouvez publier des jeux de données volumineux dans des espaces de travail comprenant des références SKU allant de A à A3, vous ne pourrez pas les actualiser.
+Les jeux de données volumineux peuvent consommer beaucoup de ressources. Pour les jeux de données supérieurs à 1 Go, vous devez disposer au moins d’une référence SKU P1 ou A4. Même si vous pouvez publier des jeux de données volumineux dans des espaces de travail comprenant des références SKU allant de A à A3, vous ne pourrez pas les actualiser.
 
 Le tableau suivant présente les références SKU recommandées pour le chargement ou la publication de fichiers .pbix sur le service Power BI :
 
    |Référence  |Taille de fichier .pbix   |
    |---------|---------|
-   |P1    | < 3 Go        |
-   |P2    | < 6 Go        |
-   |P3, P4, P5    | jusqu’à 10 Go   |
+   |P1/A4    | < 3 Go        |
+   |P2/A5    | < 6 Go        |
+   |P3/A6, P4, P5    | jusqu’à 10 Go   |
 
-La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. La publication de jeux de données pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille du modèle dans la capacité partagée. Les erreurs d’actualisation pour les jeux de données dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai.
+La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3.
 
 Si vous autorisez les [modèles volumineux](service-premium-large-models.md) sur un jeu de données, les limitations de taille des fichiers .pbix s’appliquent toujours au chargement ou à la publication des fichiers. Toutefois, quand une actualisation incrémentielle est associée à des modèles volumineux, la taille des jeux de données peut largement dépasser ces limites. Avec des modèles volumineux, la limitation de taille des jeux de données dépend uniquement de la taille de la capacité Power BI Premium.
 
@@ -211,7 +209,7 @@ Pour plus d’informations, consultez [Actualisation incrémentielle dans Power�
 
 ## <a name="paginated-reports"></a>Rapports paginés
 
-Les rapports paginés, qui sont pris en charge par les références SKU P1-P3 et A4-A6, sont basés sur la technologie RDL (Report Definition Language) de SQL Server Reporting Services. Même s’ils sont basés sur la technologie RDL, ce ne sont pas les mêmes que ceux de Power BI Report Server, qui est une plateforme de création de rapports téléchargeable que vous pouvez installer localement, et qui est fournie avec Power BI Premium. Les rapports paginés sont mis en forme de manière à tenir sur une page qui peut être imprimée ou partagée. Les données sont fournies dans un tableau, même si celui-ci s’étend sur plusieurs pages. Avec l’application de bureau Windows gratuite [**Générateur de rapports Power BI**](https://go.microsoft.com/fwlink/?linkid=2086513), les utilisateurs peuvent créer des rapports paginés et les publier dans le service.
+Les rapports paginés, qui sont pris en charge par les références SKU P1-P3 et A4-A6, sont basés sur la technologie RDL (Report Definition Language) de SQL Server Reporting Services. Même s’ils sont basés sur la technologie RDL, ce ne sont pas les mêmes que ceux de Power BI Report Server, qui est une plateforme de création de rapports téléchargeable que vous pouvez installer localement, et qui est fournie avec Power BI Premium. Les rapports paginés sont mis en forme de manière à tenir sur une page qui peut être imprimée ou partagée. Les données sont fournies dans un tableau, même si celui-ci s’étend sur plusieurs pages. Avec l’application de bureau Windows gratuite [**Générateur de rapports Power BI**](https://aka.ms/pbireportbuilder), les utilisateurs peuvent créer des rapports paginés et les publier dans le service.
 
 Dans Power BI Premium, les rapports paginés sont une charge de travail qui doit être activée pour une capacité à l’aide du portail d’administration. Les administrateurs de capacités peuvent l’activer, puis spécifier une quantité de mémoire sous la forme d’un pourcentage de la mémoire globale de la capacité. Contrairement aux autres types de charges de travail, Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La mémoire maximale spécifiée pour cet espace est utilisée, que la charge de travail soit activée ou non. Par défaut, le pourcentage de mémoire est défini sur 20 %. 
 

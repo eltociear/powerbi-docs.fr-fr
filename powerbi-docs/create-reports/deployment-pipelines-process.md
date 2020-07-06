@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: c4a823b0b41def6c10cd8f932bb97e91eb977ecb
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.date: 06/25/2020
+ms.openlocfilehash: fc7e6aa751bab6562e097b8ce14ff8416e6231e7
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148593"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782562"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Comprendre le processus de déploiement (préversion)
 
@@ -60,7 +60,7 @@ Dans l’étape cible, les [propriétés d’élément qui ne sont pas copiées]
 
 Les données du jeu de données cible sont conservées dans la mesure du possible. Si aucune modification n’est apportée à un jeu de données, les données sont conservées telles qu’elles étaient avant le déploiement.
 
-Avec des modifications mineures, comme l’ajout d’une table ou de mesures calculées, Power BI conserve les données d’origine, et l’actualisation est optimisée pour actualiser uniquement ce qui est nécessaire. Pour les modifications de schéma cassantes ou les modifications apportées à la connexion à la source de données, une actualisation complète est nécessaire.
+Avec des modifications mineures, comme l’ajout d’une table ou de mesures, Power BI conserve les données d’origine, et l’actualisation est optimisée pour actualiser uniquement ce qui est nécessaire. Pour les modifications de schéma cassantes ou les modifications apportées à la connexion à la source de données, une actualisation complète est nécessaire.
 
 ### <a name="requirements-for-deploying-to-a-stage-with-an-existing-workspace"></a>Conditions requises pour le déploiement sur une étape avec un espace de travail existant
 
@@ -152,11 +152,11 @@ Les propriétés de jeu de données suivantes ne sont pas copiées non plus lors
 
 Créez une application pour chaque étape du pipeline de déploiement, afin de pouvoir tester chaque mise à jour d’application du point de vue d’un utilisateur final. Un pipeline de déploiement vous permet de gérer facilement ce processus. Utilisez le bouton Publier ou Afficher de la carte de l’espace de travail pour publier ou afficher l’application dans une étape de pipeline spécifique.
 
-[![](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![publier l’application](media/deployment-pipelines-process/publish.png "Publier l’application")](media/deployment-pipelines-process/publish.png#lightbox)
 
 Au cours de l’étape de production, le bouton d’action principal situé dans le coin inférieur gauche ouvre la page Mettre à jour l’application dans Power BI, afin que toutes les mises à jour de contenu soient disponibles pour les utilisateurs de l’application.
 
-[![](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![mettre à jour l’application](media/deployment-pipelines-process/update-app.png "Mettre à jour l’application")](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Le processus de déploiement n’inclut pas la mise à jour du contenu ou des paramètres de l’application. Pour appliquer les modifications apportées au contenu ou aux paramètres, vous devez mettre à jour manuellement l’application dans l’étape de pipeline requise.
@@ -236,13 +236,23 @@ Cette section répertorie la plupart des limitations dans les pipelines de dépl
 
 * Les éléments Power BI, tels que les rapports et les tableaux de bord qui ont des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) Power BI ne peuvent pas être déployés.
 
-* Les jeux de données configurés avec [l’actualisation incrémentielle](../admin/service-premium-incremental-refresh.md) ne peuvent pas être déployés.
+* Le nombre maximal d’éléments Power BI pouvant être déployés dans un seul et même déploiement est 300.
 
 * Pour obtenir la liste des limitations des espaces de travail, consultez [Limitations de l’affectation d’espaces de travail](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
-* Pour obtenir la liste des limitations des règles de jeu de données, consultez [Limitations des règles de jeu de données](deployment-pipelines-get-started.md#dataset-rule-limitations)
-
 * Pour obtenir la liste des éléments non pris en charge, consultez [Éléments non pris en charge](#unsupported-items).
+
+### <a name="dataset-limitations"></a>Limitations du jeu de données
+
+* Les jeux de données configurés avec [l’actualisation incrémentielle](../admin/service-premium-incremental-refresh.md) ne peuvent pas être déployés.
+
+* Les jeux de données qui utilisent la connectivité des données en temps réel ne peuvent pas être déployés.
+
+* Pendant le déploiement, si le jeu de données cible utilise une [connexion en direct](../connect-data/desktop-report-lifecycle-datasets.md), le jeu de données source doit également utiliser ce mode de connexion.
+
+* Après le déploiement, le téléchargement d’un jeu de données (à partir de la phase où il a été déployé) n’est pas pris en charge.
+
+* Pour obtenir la liste des limitations des règles de jeu de données, consultez [Limitations des règles de jeu de données](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,19 +1,19 @@
 ---
 title: Sources de données Power BI
 description: Cet article liste les sources de données qui sont prises en charge par Power BI, y compris des informations sur DirectQuery et sur la passerelle de données locale.
-author: kfollis
+author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2020
-ms.author: kfollis
-ms.openlocfilehash: 7fcd5b5f7a6365aac597186618ce2b18fcc44d7f
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/10/2020
+ms.author: davidi
+ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
+ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273388"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84681856"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -27,7 +27,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 |---|---|---|---|---|---|---|---|
 | Base de données Access | Oui | Oui | Non | Oui <sup>1</sup> | Oui |
 | ActiveDirectory | Oui | Oui | Non | Oui | Oui |
-| Adobe Analytics | Oui | Oui | Non | Non | Non |
+| Adobe Analytics | Oui | Oui | Non | Non | Non |
 | Amazon Redshift | Oui | Oui | Oui | Oui | Non |
 | appFigures | Oui | Oui | Non | Non | Non |
 | Cubes AtScale | Oui | Oui | Oui | Oui | Non |
@@ -52,7 +52,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Denodo | Oui | Oui | Oui | Oui | Oui |
 | Dremio | Oui | Oui | Oui | Oui | Oui |
 | Dynamics 365 (Online) | Oui | Oui | Non | Non | Non |
-| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non |
+| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non |
 | Dynamics 365 Business Central (local) | Oui | Oui | Non | Non | Non |
 | Dynamics 365 Customer Insights | Oui | Oui | Non | Non | Non |
 | Dynamics NAV | Oui | Oui | Non | Non | Non |
@@ -62,14 +62,14 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Exasol | Oui | Oui | Oui | Oui | Oui |
 | Excel | Oui <sup>3</sup> | Oui <sup>3</sup> | Non | Oui <sup>3</sup> | Non <sup>4</sup> |
 | Facebook | Oui | Oui | Non | Non | Non |
-| fichier | Oui | Oui | Non | Oui | Oui |
+| Fichier | Oui | Oui | Non | Oui | Oui |
 | Dossier | Oui | Oui | Non | Oui | Oui |
 | GitHub | Oui | Oui | Non | Non | Non |
 | Google Analytics | Oui | Oui | Non | Non | Non |
 | Google BigQuery | Oui | Oui | Oui | Non | Non |
 | Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non |
 | HDInsight Interactive Query | Oui | Oui | Oui | Non | Non |
-| IBM DB2 | Oui | Oui | Oui | Oui | Non |
+| IBM DB2 | Oui | Oui | Oui | Oui | Non |
 | Base de données Informix IBM | Oui | Oui | Non | Oui | Non |
 | IBM Netezza | Oui | Oui | Oui | Oui | Oui |
 | Impala | Oui | Oui | Oui | Oui | Oui |
@@ -90,7 +90,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Microsoft Graph Security | Oui | Oui | Non | Oui | Non |
 | Mixpanel | Oui | Oui | Non | Non | Non |
 | MySQL | Oui | Oui | Non | Oui | Oui |
-| OData | Oui | Oui | Non | Oui | Non |
+| OData | Oui | Oui <sup>7</sup> | Non | Oui | Non |
 | ODBC | Oui | Oui | Non | Oui | Oui |
 | OleDb | Oui | Oui | Non | Oui | Oui |
 | Oracle | Oui | Oui | Oui | Oui | Oui |
@@ -152,6 +152,8 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 <sup>5</sup> Pris en charge uniquement avec la [passerelle personnelle](service-gateway-personal-mode.md).
 
 <sup>6</sup> Requis pour les bases de données Access, .html et .xls
+
+<sup>7</sup> Le service Power BI ne prend pas en charge les flux OData qui requièrent une authentification.
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Authentification unique (SSO) pour les sources DirectQuery
 

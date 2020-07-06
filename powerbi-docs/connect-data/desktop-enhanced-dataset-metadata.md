@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 42e3f36689e62b196f5d8cb82bd4dd5ee118bf8b
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 0a09311c5fdb1a8b2e008996d993015f33ee9b5f
+ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793408"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "84739250"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Utilisation de métadonnées de jeu de données avancées (préversion)
 
@@ -64,11 +64,13 @@ Le fichier de sauvegarde est créé lors de la mise à niveau du rapport ; ainsi
 Dans la préversion, les limitations suivantes s’appliquent lorsque la fonctionnalité en préversion est activée.
 
 ### <a name="unsupported-features-and-connectors"></a>Fonctionnalités et connecteurs non pris en charge
+
+Les limitations suivantes s’appliquent :
+
 Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mis à niveau, la mise à niveau échoue si le jeu de données contient l’une des fonctionnalités ou l’un des connecteurs suivants. Si cet échec se produit, il ne doit pas y avoir d’impact immédiat sur l’expérience utilisateur et Power BI Desktop continue d’utiliser le format de métadonnées précédent.
 
-* Tous les connecteurs personnalisés
+* Tous les connecteurs personnalisés (limitation de la version de mai 2020)
 * Scripts Python
-* Connecteurs personnalisés
 * Azure DevOps Server
 * Connecteur BI
 * Denodo
@@ -84,16 +86,15 @@ Après l’ouverture d’un fichier PBIX ou PBIT existant qui n’a pas été mi
 * Expressions M contenant certaines combinaisons de caractères telles que «\\n » dans les noms de colonnes
 * Lors de l’utilisation de jeux de données avec la fonctionnalité de **métadonnées de jeu de données avancées**, les sources de données d’authentification unique (SSO) ne peuvent pas être configurées dans le service Power BI
 
-Les rapports qui utilisent ces connecteurs répertoriés ne seront pas mis à niveau vers le nouveau format. Les rapports qui ont déjà été mis à niveau ou qui ont été créés après l’activation de cette nouvelle fonctionnalité ne prennent pas en charge l’ajout des fonctionnalités ou connecteurs non pris en charge répertoriés. 
+Si vous utilisez la version de **juin 2020** de Power BI Desktop (ou une version ultérieure), tous les connecteurs personnalisés et tous les connecteurs intégrés *sont* pris en charge pour Power BI Desktop et le service Power BI. Pendant le processus de publication avec la version de juin 2020 ou une version ultérieure, si la passerelle rencontre des problèmes, le jeu de données est publié avec succès, mais les utilisateurs doivent republier le rapport afin d’actualiser les données. La boîte de dialogue **Paramètres de la source de données** est le seul indicateur pour lequel des problèmes se sont produits lors du processus de publication.
+
+Les rapports qui utilisent des connecteurs ou des fonctionnalités non pris en charge ne seront pas mis à niveau vers le nouveau format. Les rapports qui ont déjà été mis à niveau ou qui ont été créés après l’activation de cette nouvelle fonctionnalité ne prennent pas en charge l’ajout des fonctionnalités ou connecteurs non pris en charge répertoriés. 
 
 Les requêtes avec des sources de données dynamiques ne sont pas prises en charge. Les rapports qui ont des sources de données dynamiques ne sont pas mis à niveau vers le nouveau format, et les rapports qui ont déjà été mis à niveau ou qui ont été créés avec la fonctionnalité activée ne prennent pas en charge l’ajout de sources de données dynamiques. Une requête possède une source de données dynamique si la source change en fonction d’un paramètre, d’une entrée de fonction ou d’une fonction volatile. 
 
 Les requêtes avec des erreurs dans les étapes en amont ou les branches ne sont pas prises en charge. 
 
-En outre, les fichiers PBIX et PBIT qui ont déjà été mis à niveau pour utiliser les **métadonnées de jeu de données avancées** *ne peuvent pas* utiliser les fonctionnalités ni les connecteurs ci-dessus dans la version actuelle.
-
-
-
+En outre, les fichiers PBIX et PBIT qui ont déjà été mis à niveau pour utiliser les **métadonnées de jeu de données avancées** *ne peuvent pas* utiliser les fonctionnalités (ni les éventuels connecteurs non pris en charge).
 
 ### <a name="lineage-view"></a>Vue de traçabilité
 Les jeux de données qui utilisent le nouveau format de métadonnées n’affichent actuellement pas de liens vers les flux de données dans la vue de la traçabilité du service Power BI.

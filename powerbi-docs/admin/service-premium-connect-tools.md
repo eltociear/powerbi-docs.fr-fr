@@ -6,16 +6,16 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 03/26/2020
+ms.topic: how-to
+ms.date: 06/04/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 74ea78bf9f5e845eb86a38bad54ebde5e99ffbb0
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: b327730db126ad3f83e0a680d8dc29f384e606fe
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219560"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85227412"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
 
@@ -169,7 +169,7 @@ Les métadonnées spécifiées via le point de terminaison XMLA peuvent créer d
 
 ### <a name="service-principals"></a>Principaux de service
 
-Pendant la préversion publique, la connexion au point de terminaison XMLA à l’aide d’un [principal de service](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) pour les scénarios d’automatisation n’est pas encore prise en charge.
+Les principaux de service Azure peuvent être utilisés pour effectuer des opérations de niveau de service et de ressource sans assistance. Pour en savoir plus, consultez [Automatiser des tâches d’espace de travail et de jeu de données avec des principaux de service](service-premium-service-principal.md).
 
 ## <a name="deploy-model-projects-from-visual-studio-ssdt"></a>Déployez des projets de modèle à partir de Visual Studio (SSDT)
 

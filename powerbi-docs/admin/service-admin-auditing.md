@@ -5,17 +5,17 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: f479bb865a11de57587a0302738411327327ed33
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272675"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782398"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -244,8 +244,9 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Accès au dossier Power BI ajouté                      | AddFolderAccess                             | Non utilisée actuellement                       |
 | Membres ajoutés au groupe Power BI                      | AddGroupMembers                             |                                          |
 | Compte de stockage de dataflow attaché au locataire par l’administrateur | AdminAttachedDataflowStorageAccountToTenant | Non utilisée actuellement                       |
-| Jeu de données Power BI analysé                         | AnalyzedByExternalApplication               |                                          |
-| Rapport Power BI analysé                          | AnalyzeInExcel                              | Généré lorsque les utilisateurs interagissent avec le service. Le téléchargement du fichier `*.odc` ne crée pas d’événement d’audit.                                         |
+| Jeu de données Power BI analysé                         | AnalyzedByExternalApplication               | Généré lorsque les utilisateurs interagissent avec le service                                         |
+| Rapport Power BI analysé                          | AnalyzeInExcel                              |                                          |
+| Espace de travail attribué à un pipeline de déploiement                          | AssignWorkspaceToPipeline                              |                                          |
 | Compte de stockage de dataflow attaché                 | AttachedDataflowStorageAccount              |                                          |
 | Jeu de données Power BI lié à la passerelle                | BindToGateway                               |                                          |
 | Actualisation de dataflow annulée                        | CancelDataflowRefresh                       |                                          |
@@ -254,7 +255,9 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Connexions de jeu de données Power BI modifiées              | SetAllConnections                           |                                          |
 | Administrateurs de passerelle Power BI modifiés                   | ChangeGatewayAdministrators                 |                                          |
 | Modification des utilisateurs de la source de données de la passerelle Power BI        | ChangeGatewayDatasourceUsers                |                                          |
+| Visuel personnalisé d’une organisation créé                          | InsertOrganizationalGalleryItem                                |                                          |
 | Pack de contenu d’organisation Power BI créé      | CreateOrgApp                                |                                          |
+| Pipeline de déploiement créé      | CreateAlmPipeline                                |                                          |
 | Application Power BI créée                              | CreateApp                                   |                                          |
 | Tableau de bord Power BI créé                        | CreateDashboard                             |                                          |
 | Dataflow Power BI créé                         | CreateDataflow                              |                                          |
@@ -264,9 +267,13 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Passerelle Power BI créée                          | CreateGateway                               |                                          |
 | Groupe Power BI créé                            | CreateGroup                                 |                                          |
 | Rapport Power BI créé                           | CreateReport <sup>1</sup>                                |                                          |
+| Visuel personnalisé ayant demandé le jeton d’accès Azure AD                           | GenerateCustomVisualAADAccessToken                                |                                          |
+| Visuel personnalisé ayant demandé le jeton d’accès Office Web Apps                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflow migré vers un compte de stockage externe     | DataflowMigratedToExternalStorageAccount    | Non utilisée actuellement                       |
 | Autorisations de dataflow ajoutées                        | DataflowPermissionsAdded                    | Non utilisée actuellement                       |
 | Autorisations de dataflow supprimées                      | DataflowPermissionsRemoved                  | Non utilisée actuellement                       |
+| Visuel personnalisé d’une organisation supprimé     | DeleteOrganizationalGalleryItem                                |                                          |
+| Pipeline de déploiement supprimé      | DeleteAlmPipeline                                |                                          |
 | Pack de contenu d’organisation Power BI supprimé      | DeleteOrgApp                                |                                          |
 | Commentaire Power BI supprimé                          | DeleteComment                               |                                          |
 | Tableau de bord Power BI supprimé                        | DeleteDashboard                             | Non utilisée actuellement                       |
@@ -278,6 +285,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Passerelle Power BI supprimée                          | DeleteGateway                               |                                          |
 | Groupe Power BI supprimé                            | DeleteGroup                                 |                                          |
 | Rapport Power BI supprimé                           | DeleteReport                                |                                          |
+| Phase Déployé dans un pipeline                           | DeployAlmPipeline                                |                                          |
 | Sources de données de jeu de données Power BI détectées          | GetDatasources                              |                                          |
 | Rapport Power BI téléchargé                        | DownloadReport                              |                                          |
 | Propriétés de dataflow modifiées                        | EditDataflowProperties                      |                                          |
@@ -302,6 +310,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Rapport Power BI publié sur le web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Tables recommandées publiées ou mises à jour | UpdateFeaturedTables <sup>3</sup>   | |
 | Secret de dataflow Power BI reçu du coffre de clés  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Espace de travail supprimé d’un pipeline de déploiement         | UnassignWorkspaceFromPipeline                 |                                          |
 | Source de données supprimée de la passerelle Power BI         | RemoveDatasourceFromGateway                 |                                          |
 | Membres supprimés du groupe Power BI                    | DeleteGroupMembers                          |                                          |
 | Espace de travail supprimé d’une capacité                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -321,9 +330,12 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Prise de contrôle d’un dataflow Power BI                     | TookOverDataflow                             |                                          |
 | Application Power BI dépubliée                          | UnpublishApp                                |                                          |
 | Mettre à jour les paramètres de gouvernance des ressources de capacité      | UpdateCapacityResourceGovernanceSettings    | Absente du Centre d’administration Microsoft 365 |
+| Visuel personnalisé d’une organisation mis à jour                     | UpdateOrganizationalGalleryItem                   |                                          |
 | Administrateur de capacité mis à jour                            | UpdateCapacityAdmins                        |                                          |
 | Nom d’affichage de capacité mis à jour                     | UpdateCapacityDisplayName                   |                                          |
 | Autorisations d’affectation de stockage de dataflow mises à jour   | UpdatedDataflowStorageAssignmentPermissions |                                          |
+| Accès au pipeline de déploiement mis à jour   | UpdateAlmPipelineAccess |                                          |
+| Configuration du pipeline de déploiement mise à jour   | SetConfigurationAlmPipeline |                                          |
 | Paramètres Power BI de l’organisation mis à jour          | UpdatedAdminFeatureSwitch                   |                                          |
 | Application Power BI mise à jour                              | UpdateApp                                   |                                          |
 | Dataflow Power BI mis à jour                         | UpdateDataflow                              |                                          |

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/24/2020
 ms.author: painbar
-ms.openlocfilehash: 7d0933b20c942df724a4d21fbba438cdc8748969
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565297"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782587"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,20 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="june-2020"></a>Juin 2020
+### <a name="show-your-bookmarks-in-slideshows-windows"></a>Afficher vos signets dans les diaporamas (Windows)
+Vous pouvez à présent ajouter des signets de rapport et personnels dans vos diaporamas, automatiquement dans le cadre de la présentation, pour mettre en évidence des insights spécifiques dans vos données.
+[Voyez par vous-même !](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
+
+## <a name="may-2020"></a>Mai 2020
+### <a name="weve-added-dark-mode-to-power-bi-mobile-ios"></a>Nous avons ajouté le mode Sombre à Power BI mobile (iOS)
+Essayez le nouveau mode Sombre dans l’application mobile Power BI pour iOS13. Avec le mode Sombre, le texte clair s’affiche sur un arrière-plan sombre, réduisant ainsi la luminosité de l’écran et facilitant la visualisation de votre contenu. Vous pouvez basculer entre les thèmes dans les paramètres de l’apparence de l’application. [En savoir plus](mobile-apps-dark-mode.md)
+
+![Mode Sombre dans les applications mobiles Power BI](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode.png)
+
+### <a name="apply-bookmarks-in-presentation-mode-windows"></a>Appliquer des signets en mode Présentation (Windows)
+À présent, lors de la présentation d’un rapport en mode Présentation, vous pouvez appliquer des signets personnels et de rapport aux pages de rapport, et ainsi créer un récit de vos données. [Voyez par vous-même !](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## <a name="april-2020"></a>Avril 2020
 

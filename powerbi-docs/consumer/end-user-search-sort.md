@@ -6,16 +6,16 @@ ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/25/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 63c18ae6452b36a72ab72eb6fdf0ce14a73011e9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114127"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782546"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation pour les consommateurs Power BI : recherche globale
 
@@ -39,11 +39,11 @@ Si vous utilisez le service Power BI depuis peu, vous n’avez pas beaucoup de c
 
 ## <a name="sorting-content-lists"></a>Tri de listes de contenu
 
-Si vous n’avez pas beaucoup de contenus, le tri ne vous sera pas forcément nécessaire.  Si, en revanche, vous disposez de longues listes de tableaux de bord et de rapports, il vous aidera à trouver ce dont vous avez besoin. Par exemple, cette liste de contenus **Partagés avec moi** contient 63 éléments. 
+Si vous n’avez pas beaucoup de contenus, le tri ne vous sera pas forcément nécessaire.  Si, en revanche, vous disposez de longues listes de tableaux de bord et de rapports, il vous aidera à trouver ce dont vous avez besoin. Par exemple, cette liste de contenus **Partagés avec moi** contient 257 éléments. 
 
-![Liste de contenus Partagés avec moi](./media/end-user-search-sort/power-bi-long-lists.png)
+![Liste de contenus Partagés avec moi](./media/end-user-search-sort/power-bi-all-shared.png)
 
-Pour le moment, cette liste de contenus est triée par date, du plus récent au plus ancien. Pour modifier les critères de tri, sélectionnez la flèche à droite de **Date (le plus récent)** .
+Pour le moment, cette liste de contenus est triée par ordre alphabétique du nom, de A à Z. Pour modifier les critères de tri, sélectionnez la flèche à droite de **Nom (A-Z)** .
 
 ![Menu déroulant de tri](./media/end-user-search-sort/power-bi-sort-date.png)
 
@@ -60,5 +60,7 @@ Toutes les colonnes ne peuvent pas être triées. Placez le curseur sur les en-t
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Trier les visuels dans les rapports](end-user-change-sort.md)
+
+[Trier des données dans les visuels](end-user-change-sort.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

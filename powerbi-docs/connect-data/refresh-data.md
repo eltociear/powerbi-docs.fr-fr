@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/27/2020
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 9bc8f7c100acc3805fbe6ab949e3584cb5fd26e1
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: ddb5e4d1476025965e6227e9ae443441f2060fcd
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84121040"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85219732"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -112,7 +112,7 @@ Power BI effectue l’actualisation en fonction d’un ID d’élément dans One
 Vous pouvez déplacer le fichier à un autre emplacement (par exemple avec la fonction de glisser-déposer) : l’actualisation continuera de fonctionner, car Power BI connaît encore l’ID de fichier. Cependant, si vous copiez ce fichier à un autre emplacement, une nouvelle instance du fichier et un nouvel ID de fichier sont créés. Par conséquent, votre référence de fichier Power BI n’est plus valide et l’actualisation échoue.
 
 > [!NOTE]
-> L’actualisation d’un jeu de données peut demander à Power BI jusqu’à 10 minutes, même une fois que la synchronisation est terminée sur votre machine locale et que vous avez utilisé *Actualiser maintenant* dans le service Power BI.
+> L’actualisation d’un jeu de données peut demander à Power BI jusqu’à 60 minutes, même une fois que la synchronisation est terminée sur votre machine locale et que vous avez utilisé *Actualiser maintenant* dans le service Power BI.
 
 Pour passer en revue les cycles de synchronisation antérieurs, consultez l’onglet OneDrive dans l’historique des actualisations. La capture d’écran suivante montre un cycle de synchronisation terminé pour un exemple de jeu de données.
 
@@ -202,14 +202,15 @@ Contrairement à une passerelle de données d’entreprise, il n’est pas néce
 
 ![Configurer les informations d’identification de la source de données pour la passerelle](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> La passerelle de données personnelle ne prend pas en charge les jeux de données en mode DirectQuery/LiveConnect. La page des paramètres du jeu de données peut vous demander de l’installer, mais si vous ne disposez que d’une passerelle personnelle, vous ne pouvez pas configurer une connexion de passerelle. Veillez à disposer d’une passerelle de données d’entreprise pour prendre en charge ces types de jeux de données.
 
 ### <a name="accessing-cloud-data-sources"></a>Accès aux sources de données cloud
 
 Les jeux de données qui utilisent des sources de données cloud, comme Azure SQL DB, ne nécessitent pas de passerelle de données si Power BI peut établir une connexion réseau directe à la source. Vous pouvez donc gérer la configuration de ces sources de données à l’aide de la section **Informations d’identification de la source de données** dans les paramètres du jeu de données. Comme le montre la capture d’écran suivante, vous n’avez pas besoin de configurer une connexion de passerelle.
 
 ![Configurer les informations d’identification de la source de données sans passerelle](media/refresh-data/configure-data-source-credentials.png)
+
+> [!NOTE]
+> Chaque utilisateur ne peut avoir qu’un seul ensemble d’informations d’identification par source de données, parmi tous les jeux de données dont il est propriétaire, quels que soient les espaces de travail où résident les jeux de données. 
 
 ### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Accès aux sources locales et cloud dans la même requête source
 

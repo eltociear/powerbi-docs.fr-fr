@@ -6,15 +6,15 @@ ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 311473aea5748c94bfa6a757482659176930544b
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693829"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85226194"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -139,7 +139,7 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 
 * La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez la méthode d’incorporation [les données appartiennent à l’utilisateur](../developer/embedded/embed-sample-for-your-organization.md). 
 
-* La durée de vie du jeton d’authentification est contrôlée en fonction de vos paramètres AAD. Quand le jeton d’authentification expire, l’utilisateur doit actualiser son navigateur pour recevoir un jeton d’authentification mis à jour. La durée de vie par défaut est d’une heure, mais elle peut être plus courte ou plus longue dans votre organisation.
+* La durée de vie du jeton d’authentification est contrôlée en fonction de vos paramètres AAD. Quand le jeton d’authentification expire, l’utilisateur doit actualiser son navigateur pour recevoir un jeton d’authentification mis à jour. La durée de vie par défaut est d’une heure, mais elle peut être plus courte ou plus longue dans votre organisation.  Il n’est pas possible d’actualiser automatiquement le jeton dans ce scénario.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -5,16 +5,16 @@ author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: da21acf2c37136b70bdb7ab70060422655ac879c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 108a50017a55a2ac87bb8db2adf4f92bd5dca58f
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323870"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85231067"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Résolution des problèmes de la passerelle Power BI (mode personnel)
 
@@ -47,7 +47,7 @@ De nombreux problèmes peuvent faire surface quand la version de la passerelle e
 ## <a name="schedule-refresh"></a>Planifier l’actualisation
 **Erreur : les informations d’identification stockées dans le cloud sont manquantes.**
 
-Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> si vous avez planifié une actualisation, puis désinstallé et réinstallé la passerelle (mode personnel). Quand vous désinstallez la passerelle (mode personnel), les informations d’identification de la source de données pour un jeu de données qui a été configuré pour l’actualisation sont supprimées du service Power BI.
+Vous pouvez obtenir cette erreur dans les paramètres pour \<dataset\> si vous avez planifié une actualisation, puis désinstallé et réinstallé la passerelle (mode personnel). Quand vous désinstallez la passerelle (mode personnel), les informations d’identification de la source de données pour un jeu de données qui a été configuré pour l’actualisation sont supprimées du service Power BI.
 
 **Solution :** dans Power BI, accédez aux paramètres d’actualisation pour un jeu de données. Dans **Gérer les sources de données**, pour toute source de données avec une erreur, sélectionnez **Modifier les informations d’identification**. Reconnectez-vous ensuite à la source de données.
 

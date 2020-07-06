@@ -4,15 +4,15 @@ description: Découvrez comment accéder rapidement au contenu consulté fréque
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: painbar
-ms.openlocfilehash: 1aa2e80e7624fb50878c70e464aac7edd943e0a8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ec4763118360ea02362e3f49fe9776224e9c087a
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802775"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85229390"
 ---
 # <a name="use-android-app-shortcuts-in-the-power-bi-android-app"></a>Utiliser des raccourcis d’application Android dans l’application Power BI pour Android
 
@@ -33,7 +33,7 @@ L’application mobile Power BI pour Android vous offre deux méthodes simples 
 
 Vous pouvez créer des raccourcis vers un rapport ou un tableau de bord.
 
-1. Dans le menu d’actions, cliquez sur **Plus d’options...** et sélectionnez **Ajouter un raccourci**.
+1. À partir d’un rapport, dans le menu Actions, appuyez sur **Plus d’options...** et sélectionnez **Ajouter un raccourci**. Dans un tableau de bord, appuyez sur **Ajouter un raccourci** dans le menu Actions.
 
    ![Ajouter un raccourci dans le menu d’actions](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-action-menu.png)
 
@@ -44,7 +44,6 @@ Vous pouvez créer des raccourcis vers un rapport ou un tableau de bord.
    Ces deux expériences sont illustrées ci-dessous.
 
    ![Bannière Ajouter un raccourci](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-banner.png)
-
 
  1. Une boîte de dialogue **Ajouter un raccourci** s’ouvre avec le nom de votre élément. Vous pouvez modifier le nom si vous le souhaitez. Quand vous avez terminé, appuyez sur **AJOUTER**.
 
@@ -60,7 +59,7 @@ Vous pouvez créer des raccourcis vers un rapport ou un tableau de bord.
 
 ## <a name="edit-the-shortcut-name"></a>Modifier le nom du raccourci
 
-Pour modifier le nom d’un raccourci, dans le menu d’actions, sélectionnez **Plus d’options...** , puis **Modifier le nom du raccourci**
+Pour modifier le nom d’un raccourci, dans un rapport, dans le menu d’actions, appuyez sur **Plus d’options...** , puis sur **Modifier le nom du raccourci**. Dans un tableau de bord, appuyez sur **Ajouter un raccourci**. La boîte de dialogue **Modifier le nom du raccourci** s’affiche.
 
  ![Modifier le nom du raccourci](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 

@@ -1,20 +1,20 @@
 ---
 title: Installer et utiliser l’application Vente et marketing dans le service Power BI
-description: Dans Power BI, les applications rassemblent les rapports et tableaux de bord associés dans un même emplacement. Installez l’application Vente et marketing à partir d’AppSource.
+description: Dans Power BI, les applications rassemblent les rapports et tableaux de bord associés dans un même emplacement. Installez l’application Vente et marketing à partir de la Place de marché des applications Power BI.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 02/19/2020
+ms.topic: how-to
+ms.date: 06/09/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 65584772a60be1a784828226fbac48458ded7be8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: df22baeae8acb09ac9b7f071c16ec8697203f8fa
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496867"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85236567"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>Installer et utiliser l’exemple d’application Vente et marketing dans le service Power BI
 
@@ -23,43 +23,42 @@ ms.locfileid: "77496867"
 Maintenant que vous avez des [connaissances de base sur l’obtention de contenu Power BI](end-user-app-view.md), découvrons l’application Vente et marketing disponible sur Microsoft AppSource (appsource.com). 
 
 
-## <a name="microsoft-appsource-appsourcecom"></a>Microsoft AppSource (appsource.com)
-Voici le lien vers l’application : [Vente et marketing](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview). Sélectionnez ce lien pour ouvrir la page de téléchargement de cette application sur Microsoft AppSource. 
+## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Télécharger l’application à partir de la Place de marché des applications Power BI
 
-1. Vous pouvez être invité à vous connecter pour pouvoir accéder à l’application. Connectez-vous avec la même adresse e-mail que celle utilisée pour Power BI. 
+1. [Connectez-vous au service Power BI](./end-user-sign-in.md) si vous n’êtes pas déjà connecté. 
 
-    ![Écran de connexion à AppSource  ](./media/end-user-app-marketing/power-bi-sign-in.png)
+1. Une fois que vous êtes dans Power BI, sélectionnez **Applications > Obtenir des applications**. 
 
-2. Sélectionnez **Obtenir maintenant**. 
+    ![Obtenir des applications  ](./media/end-user-app-marketing/power-bi-get-apps.png)
 
-    ![Site web AppSource avec les applications Power BI sélectionnées  ](./media/end-user-app-marketing/power-bi-get-now.png)
+1. La Place de marché des applications Power BI s’ouvre. Trouvez l’application Vente et marketing. Si vous ne le voyez pas, essayez de taper « marketing » dans la zone de recherche.
 
+    ![Place de marché des applications Power BI  ](./media/end-user-app-marketing/power-bi-apps-marketplace.png)
 
-3. Si vous vous connectez à AppSource pour la première fois, vous devez accepter les conditions d’utilisation. 
+1. Cliquez sur la vignette de l’application. L’offre d’application sur AppSource s’ouvre. Cliquez sur **OBTENIR MAINTENANT**.
 
-    ![Écran des conditions d’utilisation d’AppSource  ](./media/end-user-app-marketing/power-bi-term.png)
+   ![Offre d’application dans AppSource](./media/end-user-app-marketing/power-bi-apps-app-offering.png)
 
+1. Confirmez que vous voulez installer cette application.
 
-4. Le service Power BI s’ouvre. Confirmez que vous voulez installer cette application.
-
-    ![Installer cette application ?  ](./media/end-user-apps/power-bi-app-install.png)
+   ![Installer cette application ?](./media/end-user-app-marketing/power-bi-app-install.png)
 
 5. Le service Power BI affiche un message de réussite une fois l’application installée. Sélectionnez **Accéder à l’application** pour ouvrir l’application. Selon la façon dont le concepteur a créé l’application, le tableau de bord ou le rapport de l’application s’affiche.
 
-    ![Application correctement installée ](./media/end-user-apps/power-bi-app-ready.png)
+    ![Application correctement installée ](./media/end-user-app-marketing/power-bi-app-ready.png)
 
     Vous pouvez également ouvrir l’application directement à partir de votre liste des contenus d’application en sélectionnant **Applications** et en choisissant **Sales & marketing**.
 
-    ![Applications dans Power BI](./media/end-user-apps/power-bi-apps.png)
+    ![Applications dans Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
 
 
 6. Choisissez d’explorer ou de personnaliser et de partager votre nouvelle application. Comme nous avons sélectionné un exemple d’application Microsoft, commençons par l’explorer. 
 
-    ![Explorer avec des exemples de données](./media/end-user-apps/power-bi-explore.png)
+    ![Explorer avec des exemples de données](./media/end-user-app-marketing/power-bi-explore.png)
 
 7.  Votre nouvelle application s’ouvre avec un tableau de bord. Le *concepteur* de l’application pourrait l’avoir configurée pour qu’elle s’ouvre à la place sur un rapport.  
 
-    ![Explorer avec des exemples de données](./media/end-user-apps/power-bi-new-app.png)
+    ![Explorer avec des exemples de données](./media/end-user-app-marketing/power-bi-new-app.png)
 
 
 

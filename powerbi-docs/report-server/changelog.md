@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/31/2020
-ms.openlocfilehash: 0391f0f2e4340b01c1f1ad7a3bce860487daabc9
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.date: 06/30/2020
+ms.openlocfilehash: 0339dd4a8fa7b429db01715060bfd146db115e46
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272652"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782735"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -21,9 +21,15 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
 
-
 ## <a name="may-2020"></a>Mai 2020
 - **Power BI Report Server**
+    - *Version : 1.8.7485.35104 (Build 15.0.1103.234), Date de publication : 30 juin 2020*
+        - Corrections de bogues
+            - Correction d’un problème dans les scénarios de scale-out où les rapports ne reflétaient pas immédiatement les modifications sur le serveur après le chargement.
+    - *Version : 1.8.7468.41510 (Build 15.0.1103.232), Date de publication : 15 juin 2020*
+        - Corrections de bogues
+            - Correction d’un problème où les rapports ne reflétaient pas immédiatement les modifications sur le serveur après le chargement.
+            - Correction d’un problème où l’actualisation échouait lorsque la correspondance approximative était utilisée pour fusionner les requêtes.
     - *Version : 1.8.7450.37410 (Build 15.0.1103.227), Date de publication : 27 mai 2020*
          - Fonctionnalités
             -  Ajout de la prise en charge de la personnalisation de la taille du pool de connexions du catalogue (pour plus d’informations, consultez [paramètre MaxCatalogConnectionPoolSizePerProcess](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service)).

@@ -1,6 +1,6 @@
 ---
 title: Rapports paginés Power BI en une journée
-description: Ce cours en ligne a pour but de vous aider en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI.
+description: Ce cours vidéo a pour but de vous aider en tant qu’auteur de rapports en vous fournissant les connaissances techniques requises pour créer, publier et distribuer des rapports paginés Power BI.
 author: peter-myers
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3b6c3f79b6695c670b942253ddd2c2b158dc3acc
-ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
+ms.openlocfilehash: d4d5386a7e56618a761e541ba7942778a09a7008
+ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83693243"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84427504"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Rapports paginés Power BI en une journée
 
@@ -93,11 +93,11 @@ Une fois l’extraction effectuée, vous avez un dossier **PowerBIPRIAD**, dans 
 - **MySolution** : Ce dossier stocke vos fichiers solution. Les instructions du labo vous indiquent quand les utiliser.
 - **Presentation** : Ce dossier contient le fichier de présentation du cours, qui est disponible sous forme de document PDF.
 
-### <a name="getting-started-with-the-kit"></a>Bien démarrer avec le kit
+### <a name="get-started-with-the-kit"></a>Prise en main du kit
 
 Nous vous recommandons de d’abord suivre le cours en ligne. Vous pouvez vous reporter à la théorie de la présentation en ouvrant le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. La présentation comprend huit diapositives de labo, qui indiquent quand il est temps de mettre la théorie en pratique. Il comprend également de nombreux liens vers des ressources pour vous aider à trouver du contenu associé.
 
-Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Ce document vous explique comment vous connecter au service Power BI, télécharger un jeu de données, puis installer le [Générateur de rapports Power BI](../paginated-reports/report-builder-power-bi.md).
+Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Ce document vous explique comment vous connecter au service Power BI, télécharger un jeu de données, puis installer le [Générateur de rapports Power BI](https://aka.ms/pbireportbuilder).
 
 > [!NOTE]
 > Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md).

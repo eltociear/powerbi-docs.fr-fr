@@ -5,16 +5,16 @@ author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 102145e8c5b2fd3ad19b6703710405d06da5a93a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f7760021966673b93313809a806473b94c7750d3
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83323226"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85218697"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Optimiser vos données Excel avec Questions et réponses dans Power BI
 Si vous êtes chargé de créer des modèles de données ou des classeurs Excel qui seront utilisés avec Power BI, continuez votre lecture…
@@ -38,9 +38,9 @@ Voici quelques conseils pour tirer le meilleur parti de Q&R.
   
   Par exemple, si vous disposez d’une table qui contient des données de ventes, nommez-la « Ventes ». Les noms de colonnes tels que « Année », « Produit », « Commercial » et « Montant » vous permettront d’obtenir d’excellents résultats avec Q&R.
 
-* si votre classeur contient un modèle de données Power Pivot, vous pouvez procéder à davantage d’optimisations. Pour plus d’informations, consultez cet article de notre équipe d’experts internes en langage naturel intitulé [Demystifying Power BI Q&A part 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/).
+* si votre classeur contient un modèle de données Power Pivot, vous pouvez procéder à davantage d’optimisations. Pour plus d’informations, consultez cet article de notre équipe d’experts internes en langage naturel intitulé [Demystifying Power BI Q&A part 2 (Q&R : démystification de Power BI, partie 2)](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/).
 
-* Ouvrez le jeu de données dans Power BI Desktop et créez des colonnes, créez des mesures calculées, concaténez des champs pour créer des valeurs uniques, classez les données par type (par exemple, dates, chaînes, données géographiques, images, URL) et bien plus encore.
+* Ouvrez le jeu de données dans Power BI Desktop et créez des colonnes, créez des mesures, concaténez des champs pour créer des valeurs uniques, classez les données par type (par exemple, dates, chaînes, données géographiques, images, URL) et bien plus encore.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
