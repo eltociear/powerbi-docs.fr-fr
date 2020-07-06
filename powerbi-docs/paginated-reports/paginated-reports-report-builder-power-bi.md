@@ -1,6 +1,6 @@
 ---
 title: Présentation des rapports paginés dans Power BI Premium
-description: Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
+description: Des rapports paginés sont maintenant disponibles dans le service Power BI. Ils ont longtemps constitué le format de rapport standard dans SQL Server Reporting Services. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 05/19/2020
-ms.openlocfilehash: 69d6f3c828066a66c59ab8becf4fd4f43e54c547
-ms.sourcegitcommit: c1f05254eaf5adb563f8d4f33c299119134c7d1f
+ms.openlocfilehash: 7483b6878a7f7c2e01be7869827f8de66499cc5f
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83733413"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393775"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -95,7 +95,8 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
  
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
+- [Cours en ligne : Rapports paginés Power BI en une journée](../learning-catalog/paginated-reports-online-course.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
 - [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](../developer/embedded/embed-paginated-reports-customers.md)

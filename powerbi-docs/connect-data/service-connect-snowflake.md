@@ -1,72 +1,88 @@
 ---
 title: Se connecter à Snowflake avec Power BI
-description: Snowflake avec l’authentification unique pour Power BI
+description: Découvrez comment vous connecter à Snowflake pour Power BI à l’aide de l’authentification SSO.
 author: cpopell
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 11/20/2019
+ms.topic: how-to
+ms.date: 06/26/2020
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3ff8a504a9043c28d9064ad186005200165c232e
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83300318"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485762"
 ---
-#  <a name="connecting-to-snowflake-in-power-bi-service"></a>Se connecter à Snowflake dans le service Power BI
+# <a name="connect-to-snowflake-in-power-bi-service"></a>Connexion à Snowflake dans le service Power BI
 
-## <a name="introduction"></a>Présentation
+## <a name="introduction"></a>Introduction
 
-La connexion à Snowflake dans le service Power BI est identique à celle des autres connecteurs, à une différence près : une capacité supplémentaire est offerte pour AAD (avec une option pour l’authentification unique). Les différents aspects de l’intégration nécessitent des rôles d’administration différents sur Snowflake, Power BI et Azure. Vous pouvez également choisir d’activer l’authentification AAD sans utiliser l’authentification unique. L’authentification de base fonctionne de la même façon qu’avec d’autres connecteurs du service.
+La connexion à Snowflake dans le service Power BI présente une seule différence avec les autres connecteurs. Snowflake offre une capacité supplémentaire pour Azure Active Directory (AAD), avec une option pour l’authentification unique. Les différents aspects de l’intégration exigent des rôles d’administration différents sur Snowflake, Power BI et Azure. Vous pouvez également choisir d’activer l’authentification AAD sans utiliser l’authentification unique. L’authentification de base fonctionne de la même façon qu’avec d’autres connecteurs du service.
 
-Si vous souhaitez configurer l’intégration AAD et éventuellement activer l’authentification unique :
-* Si vous êtes administrateur Snowflake, consultez l’article [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html) (Utilisation de Power BI pour accéder à Snowflake avec l’authentification unique - Prise en main) de la documentation Snowflake.
-* (SSO) Si vous êtes administrateur Power BI, consultez la section « Configuration du service Power BI - portail d’administration ».
-* (SSO) Si vous êtes créateur de jeux de données Power BI, consultez la section « Configuration du service Power BI - Activation d’un jeu de données ».
+Pour configurer l’intégration avec AAD et activer l’authentification unique (facultatif), suivez la procédure décrite dans cet article :
+
+* Si vous êtes administrateur Snowflake : [Authentification unique Power BI à Snowflake – Prise en main](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) dans la documentation Snowflake.
+* Si vous êtes administrateur Power BI : [Configuration du service Power BI – Portail d’administration](service-connect-snowflake.md#admin-portal) pour savoir comment activer l’authentification unique.
+* Si vous êtes créateur de jeux de données Power BI : [Configuration du service Power BI – Configuration d’un jeu de données avec AAD](service-connect-snowflake.md#configuring-a-dataset-with-aad) pour savoir comment activer l’authentification unique.
 
 ## <a name="power-bi-service-configuration"></a>Configuration du service Power BI
 
 ### <a name="admin-portal"></a>Portail d’administration
 
-Si vous souhaitez activer l’authentification unique, l’administrateur du locataire doit accéder au portail d’administration et approuver l’envoi d’informations d’identification AAD Power BI à Snowflake.
+Le paramètre d’authentification unique doit être activé par un administrateur sur le portail d’administration Power BI. Il permet d’approuver l’envoi d’informations d’identification AAD à Snowflake pour l’authentification de l’ensemble de l’organisation. Suivez la procédure ci-dessous pour activer l’authentification unique :
 
-![Paramètres d’administration de locataire pour l’authentification unique Snowflake](media/service-connect-snowflake/snowflakessotenant.png)
+1. [Connectez-vous à Power BI](https://app.powerbi.com) avec des informations d’identification d’administrateur général.
+1. Sélectionnez **Paramètres** dans le menu d’en-tête de la page, puis **Portail d’administration**.
+1. Sélectionnez **Paramètres du locataire**, puis faites défiler la liste pour rechercher **Paramètres d’intégration**.
 
-Accédez au « portail d’administration », sélectionnez l’élément « Paramètres du client » de la barre latérale et faites défiler la page jusqu’à « Paramètres d’intégration ». Vous voyez l’option « SSO Snowflake ».
+   ![Paramètres d’administration de locataire pour l’authentification unique Snowflake](media/service-connect-snowflake/snowflake-sso-tenant.png)
 
-Comme nous l’avons déjà expliqué, vous devez l’activer manuellement pour autoriser l’envoi de votre jeton AAD aux serveurs Snowflake. Pour l’activer, cliquez sur le bouton bascule « Désactivé », puis sur Appliquer. Attendez que la modification des paramètres soit prise en compte. La propagation de la configuration par le service peut prendre jusqu’à une heure.
+4. Développez **Authentification unique Snowflake**, basculez le paramètre sur **Activé**, puis sélectionnez **Appliquer**.
 
-Une fois cette opération effectuée, vous pouvez utiliser des rapports avec l’authentification unique.
+Cette étape est requise pour accepter l’envoi de votre jeton AAD aux serveurs Snowflake. Une fois activé, le paramètre peut mettre une heure à s’appliquer.
+
+Une fois l’authentification unique activée, vous pouvez utiliser des rapports avec l’authentification unique.
 
 ### <a name="configuring-a-dataset-with-aad"></a>Configuration d’un jeu de données avec AAD
 
-Dès lors qu’un rapport basé sur le connecteur Snowflake a été publié sur le web, dans le service web Power BI, le créateur de jeu de données doit accéder à l’espace de travail approprié, sélectionner « Jeux de données », puis « Paramètres » (dans le menu « ... » donnant accès à des actions supplémentaires, en regard du jeu de données approprié).
+Après la publication d’un rapport basé sur le connecteur Snowflake dans le service Power BI, le créateur du jeu de données doit mettre à jour les paramètres de l’espace de travail correspondant pour qu’il utilise l’authentification unique.
 
-De par le mode de fonctionnement de Power BI, l’authentification unique fonctionne seulement si aucune source de données n’est exécutée par le biais de la passerelle de données locale.
+En raison du mode de fonctionnement de Power BI, l’authentification unique ne marche que si aucune source de données n’est exécutée par le biais de la passerelle de données locale. Voici les limitations qui s’appliquent :
 
-* Si vous utilisez uniquement une source Snowflake dans votre modèle de données, vous pouvez utiliser l’authentification unique si vous choisissez de ne pas utiliser la passerelle de données locale.
-* Si vous utilisez une source Snowflake et une autre source, vous pouvez utiliser l’authentification unique si aucune des sources n’utilise la passerelle de données locale.
-* Si vous utilisez une source Snowflake par le biais de la passerelle de données locale, les informations d’identification AAD ne sont pas actuellement prises en charge. Ceci peut être utile si vous essayez d’accéder à un réseau virtuel à partir d’une seule adresse IP sur laquelle la passerelle est installée, plutôt qu’à partir de l’intégralité de la plage d’adresses IP de Power BI.
-* Si vous utilisez une source Snowflake et une autre source qui nécessite une passerelle, vous devez également utiliser Snowflake par le biais de la passerelle de données locale et vous ne pouvez pas utiliser l’authentification unique.
+* Si vous utilisez uniquement une source Snowflake dans votre modèle de données, vous pouvez utiliser l’authentification unique à condition de ne pas utiliser la passerelle de données locale.
+* Si vous utilisez une source Snowflake et une autre source, vous pouvez utiliser l’authentification unique à condition qu’aucune des sources n’utilise la passerelle de données locale.
+* Si vous utilisez une source Snowflake par le biais de la passerelle de données locale, les informations d’identification AAD ne sont pas prises en charge à l’heure actuelle. Cette considération peut se révéler pertinente si vous essayez d’accéder à un réseau virtuel à partir d’une seule adresse IP sur laquelle la passerelle est installée, plutôt qu’à partir de l’ensemble de la plage d’adresses IP de Power BI.
+* Si vous utilisez une source Snowflake et une autre source qui exige une passerelle, vous devez passer par la passerelle de données locale pour interagir avec Snowflake. Dans ce cas, vous ne pourrez pas utiliser l’authentification unique.
 
-Pour plus d’informations sur l’utilisation de la passerelle de données locale, consultez l’article [Qu’est-ce qu’une passerelle de données locale ?](https://docs.microsoft.com/power-bi/service-gateway-onprem)
+Pour plus d’informations sur l’utilisation de la passerelle de données locale, consultez [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md).
 
-Si vous n’utilisez pas la passerelle, vous êtes prêt. Si vous avez des informations d’identification Snowflake qui sont configurées sur votre passerelle de données locale, mais que vous utilisez uniquement cette source de données dans votre modèle, vous pouvez cliquer sur le bouton bascule sur la page Paramètres du jeu de données pour désactiver la passerelle pour ce modèle de données.
+Si vous n’utilisez pas la passerelle, tout est prêt. Si vous avez des informations d’identification Snowflake configurées sur votre passerelle de données locale, mais que vous utilisez uniquement cette source de données dans votre modèle, vous pouvez cliquer sur le bouton bascule sur la page Paramètres du jeu de données afin de désactiver la passerelle pour ce modèle de données.
 
-![Paramètres du jeu de données - Utilisation de la passerelle désactivée](media/service-connect-snowflake/snowflake_gateway_toggle_off.png)
+![Paramètres du jeu de données - Utilisation de la passerelle désactivée](media/service-connect-snowflake/snowflake-gateway-toggle-off.png)
 
-Le créateur de jeu de données doit sélectionner « informations d’identification de la source de données » et se connecter. Vous pouvez connecter le jeu de données à Snowflake avec des informations d’identification de base ou OAuth2 (AAD). Si vous choisissez d’utiliser AAD, vous pouvez activer l’utilisation de l’authentification unique pour le jeu de données. Quand ce premier utilisateur se connecte à Snowflake pour le jeu de données, il doit sélectionner l’option spécifiant que les autres utilisateurs utiliseront leurs informations d’identification Oauth2 pour récupérer les données. Cette option active l’authentification unique AAD. Que l’utilisateur initial se connecte ou non avec l’authentification de base ou OAuth2 (AAD), ce sont les informations d’identification AAD qui seront envoyées pour l’authentification unique. 
+Pour activer l’authentification unique pour un jeu de données, suivez la procédure ci-dessous :
 
-![Paramètres du jeu de données pour l’authentification unique Snowflake](media/service-connect-snowflake/snowflakessocredui.png)
+1. [Connectez-vous à Power BI](https://app.powerbi.com) avec des informations d’identification de créateur de jeu de données.
+1. Sélectionnez l’espace de travail approprié, puis choisissez **Paramètres** dans le menu Plus d’options situé à côté du nom du jeu de données.
+  ![Le menu Plus d’options lorsque l’on passe dessus](media/service-connect-snowflake/dataset-settings-2.png)
+1. Sélectionnez **Informations d’identification de la source de données** et connectez-vous. Vous pouvez connecter le jeu de données à Snowflake avec des informations d’identification de base ou OAuth2 (AAD). Si vous utilisez AAD, vous pouvez activer l’authentification unique à l’étape suivante.
+1. Sélectionnez l’option **Les utilisateurs finaux utilisent leurs propres informations d’identification OAuth2 pour accéder à cette source de données via DirectQuery**. Ce paramètre permet d’activer l’authentification unique AAD. Que le premier utilisateur se connecte avec l’authentification de base ou OAuth2 (AAD), ce sont les informations d’identification AAD qui seront envoyées pour l’authentification unique.
 
-Par la suite, les utilisateurs supplémentaires devront systématiquement utiliser l’authentification AAD pour se connecter aux données à partir de ce jeu de données Snowflake.
+    ![Paramètres du jeu de données pour l’authentification unique Snowflake](media/service-connect-snowflake/snowflake-sso-cred-ui.png)
+
+Après avoir suivi toutes ces étapes, les utilisateurs devront systématiquement utiliser l’authentification AAD pour se connecter aux données à partir de ce jeu de données Snowflake.
 
 Si vous choisissez de ne pas activer l’authentification unique, les utilisateurs qui actualisent le rapport utiliseront les informations d’identification de l’utilisateur qui s’est connecté, comme avec la plupart des autres rapports de Power BI.
 
 ### <a name="troubleshooting"></a>Résolution des problèmes
 
-Si vous rencontrez des problèmes d’intégration, reportez-vous au [guide de résolution des problèmes](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html#troubleshooting) Snowflake.
+Si vous rencontrez des problèmes d’intégration, consultez le [guide de résolution des problèmes](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html#troubleshooting) Snowflake.
 
+## <a name="next-steps"></a>Étapes suivantes
+
+* [Sources de données pour le service Power BI](service-get-data.md)
+* [Connexion à des jeux de données dans le service Power BI à partir de Power BI Desktop](desktop-report-lifecycle-datasets.md)
+* [Connexion à un entrepôt de calcul Snowflake](desktop-connect-snowflake.md)

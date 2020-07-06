@@ -6,15 +6,15 @@ ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: e7e7c0f8df0f41d673920cf4af596ca33d46519c
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564572"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238481"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -99,11 +99,11 @@ La dernière étape consiste à créer l’histogramme. Faites glisser le champ 
 ## <a name="histograms"></a>Histogrammes
 Dans Power BI Desktop, vous pouvez utiliser un champ calculé pour définir un histogramme. Identifiez la table et la colonne à utiliser pour créer un histogramme. Dans la zone de calcul, tapez la formule suivante :
 
-> Frequency:=COUNTROWS(\<Nom de la colonne\>)
+> Frequency:=COUNTROWS(\<Column Name\>)
 > 
 > 
 
-Enregistrez vos modifications et revenez au rapport. Ajoutez \<Column Name\> et Frequency à une table, puis procédez à la conversion en graphique à barres. Vérifiez que \<Column Name\> se trouve sur l’axe des abscisses et que le champ calculé Frequency se trouve sur l’axe des ordonnées.
+Enregistrez vos modifications et revenez au rapport. Ajoutez \<Column Name\> et Frequency à un tableau, puis convertissez-le en graphique à barres. Vérifiez que \<Column Name\> se trouve sur l’axe X et le champ calculé Frequency sur l’axe Y.
 
 ## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Conseils et astuces pour créer des relations dans Power BI Desktop
 Lors du chargement de jeux de données détaillés en provenance de plusieurs sources, vous pouvez être dans l’impossibilité de créer des relations en raison de valeurs null, vides ou en double. 

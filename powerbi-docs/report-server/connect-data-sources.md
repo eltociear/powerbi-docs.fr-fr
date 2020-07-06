@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 06/26/2020
 ms.author: maggies
-ms.openlocfilehash: 7cb5772e6ccdc1e4036d70f65a3a28210a4f6df1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 531c0ab2bb797e1ad5aaa4d974e51963f7c3e2ad
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260712"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485389"
 ---
 # <a name="paginated-report-data-sources--in-power-bi-report-server"></a>Sources de données de rapport paginé dans Power BI Report Server
 Les rapports paginés Reporting Services dans Power BI Report Server prennent en charge les mêmes sources de données que celles prises en charge dans SQL Server Reporting Services. Consultez la liste [Sources de données prises en charge par Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
@@ -25,7 +25,7 @@ Pour se connecter à des sources de données Oracle, Power BI Report Server util
 Par défaut, le serveur de rapports utilise la culture d’interface utilisateur du premier client pour charger ODP.NET.  Par conséquent, toutes les connexions suivantes à Oracle à partir du serveur de rapports seront dans cette culture d’interface utilisateur initiale jusqu’au redémarrage du service.  Cette approche peut causer des problèmes de rendu d’un rapport en raison d’incompatibilités dans la mise en forme de la culture d’interface utilisateur.
 
 Pour offrir une meilleure expérience dans Power BI Report Server, nous avons introduit un paramètre de configuration nommé UseInstalledUICulture. Quand UseInstalledUICulture est défini sur true, le serveur de rapports charge toujours ODP.NET dans la culture d’interface utilisateur du serveur au lieu de la culture du premier client.
-Ce paramètre est disponible dans Power BI Report Server à partir de la version du service publiée en février.
+Ce paramètre est disponible dans Power BI Report Server à partir de la version du service publiée en mars 2020.
 
 Pour activer la fonctionnalité, modifiez le fichier rsreportserver.config d’une entrée d’extension ORACLE comme indiqué ci-dessous.
 ```xml

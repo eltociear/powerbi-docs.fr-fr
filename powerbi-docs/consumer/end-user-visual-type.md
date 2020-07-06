@@ -5,27 +5,29 @@ author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 06/24/2020
 ms.author: mihart
+ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 605b3fbc49d9a9dbf60b6963a89487ca15284b29
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279431"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393838"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses. Certains types de visuel sont inclus dans Power BI et d’autres sont des *visuels Power BI*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports et aux tableaux de bord Power BI. 
+Les visuels (également appelés *graphiques* et *visualisations*) sont des représentations visuelles des données. Les histogrammes, les cartes, les nuages de points et les jauges radiales en sont des exemples courants. Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses.
 
-Cet article est une vue d’ensemble des visuels inclus dans le service Power BI.  Voici les visuels que vous allez rencontrer plus souvent. Pour des informations détaillées sur l’un de ces visuels, consultez la documentation du [concepteur *de rapports Power BI* sur les types de visuel](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+Les visuels décrits sur cette page sont ceux qui font partie du package Power BI. Il s’agit des types de visuels que l’on rencontre le plus souvent. Cette page donne une vue d’ensemble rapide de ces visuels prépackagés. Pour des informations plus détaillées, consultez la [documentation du *concepteur* de rapports Power BI sur les types de visuels](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-> [!NOTE]
-> Pour en savoir plus sur les visuels Power BI, recherchez-les dans la section **Visuels Power BI** de [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Pour chaque visuel, vous avez une description, des informations sur le créateur et des captures d’écran ou une vidéo. 
+Les visuels qui ne sont pas fournis automatiquement avec Power BI sont appelés *visuels personnalisés*. Les visuels personnalisés peuvent être importés dans Power BI à partir de sites web externes, par exemple Microsoft AppSource, ou de sources internes comme votre magasin d’organisation. Des autorisations de modification du rapport sont nécessaires pour importer des visuels personnalisés. Pour plus d’informations sur ces visuels complémentaires, consultez [Visuels dans Power BI](../developer/visuals/power-bi-custom-visuals.md).
+
+
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste de visuels disponibles dans Power BI
 Tous ces visuels sont disponibles dans les tableaux de bord et les rapports Power BI, et sont [spécifiés dans Questions et réponses](end-user-q-and-a.md). Pour savoir comment interagir avec les visuels, consultez [Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md).
@@ -64,6 +66,12 @@ Les graphiques combinés sont conseillés :
 - pour illustrer la corrélation entre deux mesures dans le même visuel
 - pour vérifier si une mesure correspond à la cible définie par une autre mesure ;
 - pour utiliser moins d’espace sur le canevas
+
+
+### <a name="decomposition-tree"></a>Arborescence hiérarchique
+![Arborescence hiérarchique](media/end-user-visual-type/power-bi-decomposition.png)
+
+Le visuel en arborescence hiérarchique permet de visualiser les données sur plusieurs dimensions. Il agrège automatiquement les données et permet d'explorer vos dimensions dans n'importe quel ordre. Comme il s’agit également d’une visualisation à intelligence artificielle (IA), vous pouvez lui demander de trouver la prochaine dimension à explorer selon certains critères. Cela en fait un outil précieux pour l'exploration ad hoc et l'analyse de la cause racine.
 
 ### <a name="doughnut-charts"></a>Graphiques en anneau
 ![Graphiques en anneau](media/end-user-visual-type/donut-small.png)
@@ -210,12 +218,12 @@ Les tableaux sont recommandés :
 - pour afficher des données dans un format tabulaire ;
 - pour afficher des données numériques par catégories.
 
-### <a name="treemaps"></a>Treemaps
-![treemap](media/end-user-visual-type/pbi-nancy-viz-tree.png)
+### <a name="tree-maps"></a>Graphiques de compartimentage
+![Graphique de compartimentage](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
-Les treemaps sont des graphiques de rectangles de couleur, dont la taille représente une valeur.  Ils peuvent être hiérarchiques, avec les rectangles imbriqués dans les rectangles principaux. L’espace à l’intérieur de chaque rectangle est alloué en fonction de la valeur mesurée. Les rectangles sont disposés par taille du haut à gauche (le plus grand) au bas à droite (le plus petit).
+Les graphiques de compartimentage sont des graphiques de rectangles de couleur, dont la taille représente une valeur.  Ils peuvent être hiérarchiques, avec les rectangles imbriqués dans les rectangles principaux. L’espace à l’intérieur de chaque rectangle est alloué en fonction de la valeur mesurée. Les rectangles sont disposés par taille du haut à gauche (le plus grand) au bas à droite (le plus petit).
 
-Les treemaps sont conseillés :
+Les graphiques de compartimentage sont conseillés :
 - pour afficher de grandes quantités de données hiérarchiques
 - quand un graphique à barres ne peut pas afficher correctement toutes les valeurs
 - pour montrer la proportion de chaque partie par rapport à l’ensemble
@@ -241,7 +249,7 @@ Les graphiques en cascade sont conseillés pour :
 Lorsque vous tapez des requêtes en langage naturel avec le service Questions et réponses de Power BI, vous pouvez spécifier le type de visuel dans votre requête.  Par exemple :
 
 
-***sales by state as a treemap*** (ventes par région sous forme de compartimentage
+« ***sales by state as a treemap*** » (Ventes par État sous forme de graphique de compartimentage)
 
 ![Session Questions et réponses](media/end-user-visual-type/qa-treemap.png)
 

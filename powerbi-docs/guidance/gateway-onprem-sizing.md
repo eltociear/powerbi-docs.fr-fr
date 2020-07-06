@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: de84dd7e9021abf1198f2dc4f910afb8bd078ac6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279523"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485941"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionnement de la passerelle de données locale
 
@@ -84,7 +84,7 @@ Prévoyez la meilleure connectivité possible entre le service Power BI et votre
 
 - Visez la fiabilité, la rapidité et des latences faibles et cohérentes.
 - Éliminez (ou réduisez) les sauts d’ordinateur entre la passerelle et vos sources de données.
-- Supprimez toute limitation de bande passante imposée par la couche de proxy de votre pare-feu. Pour plus d’informations sur les points de terminaison Power BI, consultez [URL Power BI pour la liste verte](../admin/power-bi-whitelist-urls.md).
+- Supprimez toute limitation de bande passante imposée par la couche de proxy de votre pare-feu. Pour plus d’informations sur les points de terminaison Power BI, consultez [Ajout d’URL Power BI à la liste verte](../admin/power-bi-whitelist-urls.md).
 - Configurez [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) pour établir des connexions gérées privées avec Power BI.
 - En ce qui concerne les sources de données dans les machines virtuelles Azure, vérifiez que ces machines virtuelles sont [colocalisées avec le service Power BI](../admin/service-admin-where-is-my-tenant-located.md).
 - Pour les charges de travail Connexion en direct à SQL Server Analysis Services (SSAS) impliquant une SNL dynamique, assurez une bonne connectivité entre l’ordinateur de passerelle et Active Directory en local.

@@ -4,17 +4,17 @@ description: Découvrir le fonctionnement de la protection des données dans Pow
 author: paulinbar
 manager: rkarlin
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/21/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: fa969f8f738cf09e9e01e284de8f60e2fd8ce9ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 4575c80106329a00c959db73c2851c99959f41ec
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315669"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393654"
 ---
 # <a name="data-protection-in-power-bi"></a>Protection des données dans Power BI
 
@@ -37,7 +37,7 @@ Pour accéder aux étiquettes de sensibilité dans un de ces centres, accédez �
 > Si votre organisation utilise des étiquettes de sensibilité Azure Information Protection, vous devez [les migrer](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) vers un des services listés précédemment pour que les étiquettes soient utilisées dans Power BI.
 
 > [!NOTE]
-> Les étiquettes de sensibilité sont prises en charge seulement pour les locataires dans les clouds publics. Elles ne sont pas prises en charge pour les locataires dans des clouds comme des clouds souverains.
+> Les étiquettes de confidentialité ne sont prises en charge que pour les locataires dans les clouds publics, et non dans des clouds comme les clouds nationaux.
 
 ## <a name="how-sensitivity-labels-work-in-power-bi"></a>Fonctionnement des étiquettes de sensibilité dans Power BI
 

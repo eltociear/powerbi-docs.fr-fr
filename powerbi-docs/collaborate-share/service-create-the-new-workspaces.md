@@ -5,17 +5,17 @@ author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: edc06d7a46589c999e4bf18613c0c75f6d5bf983
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: c3a625dcdd58f881c9314e821753f66098e073f5
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120590"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354429"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -144,6 +144,20 @@ Toute personne disposant d’un rôle d’administrateur dans un espace de trava
 Si vous voulez distribuer du contenu officiel à un large public au sein de votre organisation, vous pouvez publier une *application* à partir de votre espace de travail.  Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’application. Vous pouvez créer une application à partir de chaque espace de travail.
 
 Découvrez comment [publier une application à partir des nouveaux espaces de travail](service-create-distribute-apps.md).
+
+## <a name="security-settings"></a>Paramètres de sécurité
+
+Le paramètre **Autoriser les contributeurs à mettre à jour l’application pour cet espace de travail** permet aux administrateurs de l’espace de travail de déléguer aux utilisateurs du rôle Collaborateur la possibilité de mettre à jour l’application pour l’espace de travail. Par défaut, seuls les administrateurs et les membres de l’espace de travail peuvent publier et mettre à jour l’application pour l’espace de travail. 
+
+Lorsque ce paramètre est activé, les collaborateurs ont la possibilité d’effectuer les actions suivantes :
+* Mettre à jour des métadonnées de l’application (par exemple, le nom, l’icône, la description, le site de support et la couleur)
+* Ajouter ou supprimer des éléments inclus dans l’application (par exemple, des rapports ou des jeux de données)
+* Modifier la navigation dans l’application ou l’élément sur lequel l’application s’ouvre par défaut
+
+Toutefois, les collaborateurs ne sont pas en mesure d’effectuer les opérations suivantes :
+* Publier l’application pour la première fois
+* Modifier les titulaires d’autorisations d’accès à l’application
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * Découvrir l’[organisation du travail dans la nouvelle expérience d’espace de travail dans Power BI](service-new-workspaces.md)

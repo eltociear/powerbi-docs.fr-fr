@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 06/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e4f5007d60f7634b671f1178a7279fe5cc35be89
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276579"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354590"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Bien démarrer avec le volet de mise en forme
 
@@ -28,11 +28,11 @@ Pour commencer, ouvrez un rapport dans Power BI Desktop ou dans le service Power
 
 Si vous modifiez un rapport alors qu’une visualisation est sélectionnée, le volet **Visualisations** s’affiche. Utilisez-le pour modifier les visualisations. Sous le volet **Visualisations** se trouvent trois icônes : l’icône **Champs** (barres empilées), l’icône **Mettre en forme** (pinceau) et l’icône **Analytique** (loupe). Dans l’image ci-dessous, l’icône **Champs** est sélectionnée, ce qu’indique une barre jaune située sous l’icône.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
+![Volet Visualisation avec l’icône Champs sélectionnée](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
 Si vous sélectionnez **Mettre en forme**, la zone située sous l’icône affiche les personnalisations applicables à la visualisation sélectionnée.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
+![Volet Visualisation avec l’icône Mise en forme sélectionnée](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
 Il est possible de personnaliser de nombreux éléments de chaque visualisation. Les options disponibles varient selon le visuel sélectionné. En voici quelques exemples :
 
@@ -119,7 +119,7 @@ Même après avoir appliqué un style, vous pouvez continuer à mettre en forme 
 ## <a name="changing-axis-properties"></a>Modification des propriétés d’axe
 
 Il est souvent utile de modifier l’axe X ou l’axe Y. Comme pour l’utilisation des couleurs, vous pouvez modifier un axe en sélectionnant l’icône de flèche vers le bas située à gauche de l’axe que vous voulez modifier, comme illustré dans l’image suivante.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
+![Volet Mise en forme avec une flèche vers la carte Axe Y](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
 Dans l’exemple ci-dessous, nous avons mis en forme l’axe Y de différentes manières :
 - déplacement des étiquettes du côté droit de la visualisation ;

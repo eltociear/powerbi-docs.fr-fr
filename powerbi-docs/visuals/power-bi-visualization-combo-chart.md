@@ -7,15 +7,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 34d539af94f2bcbe03a2c9d6b870887e371a1a6e
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 90c721f6c2f555bd632d6c8fff56d05994b1444b
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83563923"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354774"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Créer et utiliser des graphiques combinés dans Power BI
 
@@ -78,7 +78,7 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
     ![Exemple de conversion d’un graphique combiné](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. À partir du volet **Champs**, faites glisser **Sales** \> **Last Year Sales** (Ventes > Ventes de l’année dernière) vers **Valeurs de ligne**.
 
-   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
+   ![Zone de valeurs de ligne indiquant Ventes de l’année dernière](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
    Votre graphique combiné doit ressembler à ceci :
 

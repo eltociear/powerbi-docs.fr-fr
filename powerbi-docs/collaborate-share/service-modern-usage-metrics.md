@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 894aa17e0a6a2be52446be0a67452d96d45c9a5b
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84316060"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299615"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
 
@@ -257,6 +257,7 @@ Outre les différences ci-dessus entre la version précédente et la version am�
 - Le masquage des utilisateurs ne fonctionne pas comme prévu avec des groupes imbriqués. Si votre organisation a désactivé Données par utilisateur dans les métriques d’utilisation pour les créateurs de contenu dans les paramètres de tenant du portail d’administration Power BI, seuls les membres du niveau supérieur sont masqués. Les membres des sous-groupes sont toujours visibles.
 - L’initialisation du jeu de données du rapport de métriques d’utilisation peut prendre quelques minutes, ce qui entraîne l’affichage d’un rapport de métriques d’utilisation vide, car l’interface utilisateur de Power BI n’attend pas la fin de l’actualisation. Vérifiez que l’opération d’actualisation a réussi dans l’historique d’actualisation, dans les paramètres du jeu de données du rapport de métriques d’utilisation.
 - L’initialisation du jeu de données du rapport de métriques d’utilisation est susceptible d’échouer en raison d’un délai d’expiration au cours de l’actualisation. Pour résoudre ce problème, consultez la section Dépannage.
+- Le partage est désactivé pour le rapport de métriques d’utilisation. Pour pouvoir accorder aux utilisateurs un accès en lecture au rapport, vous devez d’abord leur donner accès à l’espace de travail.
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 

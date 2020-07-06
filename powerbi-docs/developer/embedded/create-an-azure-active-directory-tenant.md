@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/28/2019
-ms.openlocfilehash: c8c62709775bb269eb57b2f88c174f1dc4fd13ad
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f592b7927d713e343f1d3ad11453cbbacc17fffd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83794113"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354935"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 
@@ -60,29 +60,29 @@ Maintenant que vous disposez d’un annuaire, vous devez créer au moins deux ut
 
 1. Dans le portail Azure, veillez à vous trouver sur la sortie Azure Active Directory.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
+    ![Menu volant Azure AD](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
     Si ce n’est pas le cas, sélectionnez l’icône Azure Active Directory sur la barre de navigation des services située sur la gauche.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-service.png)
+    ![Icône Azure AD](media/create-an-azure-active-directory-tenant/aad-service.png)
 
 2. Sous **Gérer**, sélectionnez **Utilisateurs**.
 
-    ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+    ![Utilisateurs et groupes Azure AD](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 
 3. Sélectionnez **Tous les utilisateurs**, puis **+ Nouvel utilisateur**.
 
 4. Fournissez un **nom** et un **nom d’utilisateur** pour l’administrateur général de votre locataire. Définissez le **Rôle d’annuaire** sur **Administrateur général**. En outre, vous pouvez afficher le mot de passe temporaire. Lorsque vous avez terminé, sélectionnez **Créer**.
 
-    ![](media/create-an-azure-active-directory-tenant/global-admin.png)
+    ![Administrateur général Azure AD](media/create-an-azure-active-directory-tenant/global-admin.png)
 
 5. Faites la même chose pour les utilisateurs standard du locataire. Vous pouvez utiliser ce compte pour votre compte d’incorporation principal. Cette fois-ci, le paramètre **Rôle d’annuaire** doit conserver la valeur **Utilisateur**. Notez le mot de passe, puis sélectionnez **Créer**.
 
-    ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
+    ![Utilisateur Azure AD](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
 6. Inscrivez-vous à Power BI à l’aide du compte d’utilisateur que vous avez créé à l’étape 5. Accédez à [powerbi.com](https://powerbi.microsoft.com/get-started/) et sélectionnez **Essai gratuit** sous **Power BI - Partage et collaboration dans le cloud**.
 
-    ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
+    ![Création de locataire](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
     Au moment de l’inscription, vous êtes invité à essayer Power BI Pro gratuitement pendant 60 jours. Vous pouvez accepter et devenir un utilisateur Pro, ce qui vous permettra de [commencer à développer une solution incorporée](embed-sample-for-customers.md).
 

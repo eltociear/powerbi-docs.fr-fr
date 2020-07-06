@@ -10,12 +10,12 @@ ms.date: 04/07/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: f494533c8b79dce250f3f25c706896d542f01f26
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 885490554acfec10503ba8ce7bc1db6937ec8fce
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159556"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485458"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire une organisation du gouvernement des États-Unis au service Power BI
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur le service Power BI pour le gouvernement des Ét
 
 Votre organisation du gouvernement des États-Unis n’utilise peut-être pas encore la communauté cloud du secteur public ou dispose peut-être déjà d’un abonnement. Les sections suivantes détaillent la procédure d’inscription selon les stades d’inscription aux offres Microsoft 365 Secteur Public et à Power BI. La procédure est différente en fonction de votre inscription actuelle.
 
-Après inscription à Power BI pour le gouvernement des États-Unis, commencez le [processus de *liste verte*](#additional-signup-information) décrit dans cet article en collaboration avec votre équipe de compte. Cette étape est nécessaire pour permettre à votre organisation d’utiliser pleinement le Cloud de la communauté du secteur public.
+Après inscription à Power BI US Government, commencez le [processus de liste verte](#additional-signup-information) décrit dans cet article en collaboration avec votre équipe de compte. Cette étape est nécessaire pour permettre à votre organisation d’utiliser pleinement le Cloud de la communauté du secteur public.
 
 ## <a name="sign-up-for-a-new-microsoft-365-government-plan"></a>Inscription à une nouvelle offre Microsoft 365 Secteur Public
 
@@ -69,9 +69,9 @@ Si votre organisation dispose déjà d’une offre Microsoft 365 Secteur Public,
 
 ## <a name="additional-signup-information"></a>Informations complémentaires sur l’inscription
 
-Pour pouvoir utiliser les services Power BI du gouvernement des États-Unis, vous devez lancer le processus de *liste verte* de votre organisation en collaboration avec votre équipe de compte Microsoft. Ce processus est utilisé par l’équipe d’ingénierie de Power BI pour migrer des clients de l’environnement cloud commercial vers le Cloud de la communauté du secteur public sécurisé. Cette procédure permet de garantir le bon fonctionnement des fonctionnalités disponibles dans le cloud du gouvernement des États-Unis. 
+Pour pouvoir utiliser les services Power BI US Government, vous devez demander à votre équipe de compte Microsoft d’ajouter votre organisation à la liste verte Microsoft. Le processus de liste verte est utilisé par l’équipe d’ingénierie de Power BI pour migrer des clients de l’environnement cloud commercial vers le Cloud de la communauté du secteur public sécurisé. Cette procédure permet de garantir le bon fonctionnement des fonctionnalités disponibles dans le cloud du gouvernement des États-Unis. 
 
-Pour obtenir une assistance afin de commencer le processus de liste verte, contactez votre équipe de compte Microsoft. Seuls les administrateurs peuvent demander la mise sur liste verte. Le processus prend environ trois semaines. Au cours de cette période, l’équipe d’ingénierie de Power BI apporte les modifications nécessaires au fonctionnement de votre locataire dans le cloud du gouvernement des États-Unis.
+Pour obtenir une assistance afin de commencer le processus de liste verte, contactez votre équipe de compte Microsoft. Seuls les administrateurs peuvent demander l’ajout à la liste verte. Le processus prend environ trois semaines. Au cours de cette période, l’équipe d’ingénierie de Power BI apporte les modifications nécessaires au fonctionnement de votre locataire dans le cloud du gouvernement des États-Unis.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

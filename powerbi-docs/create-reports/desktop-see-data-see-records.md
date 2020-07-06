@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d1aca2499ecf2be3e38fe36bd00f5ff5b2c17cc7
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793915"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238609"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Utiliser un tableau visuel et un tableau de points de données dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez explorer les détails d’une visualisation et consulter des représentations textuelles des données sous-jacentes ou enregistrements de données individuelles du visuel sélectionné. Ces fonctionnalités sont parfois appelées *interactif*, *extraction* ou *extraction jusqu’aux détails*.
@@ -82,7 +82,7 @@ Pour revenir au rapport, sélectionnez **< Retour au rapport** dans l’angle su
 > [!NOTE]
 >Le **Tableau de points de données** présente les limites suivantes :
 > - Vous ne pouvez pas modifier les données dans la vue **Tableau de points de données** et les enregistrer dans le rapport.
-> - Vous ne pouvez pas utiliser l’option **Tableau de points de données** si votre visuel utilise une mesure calculée.
+> - Vous ne pouvez pas utiliser l’option **Tableau de points de données** si votre visuel utilise une mesure calculée dans un groupe de mesures (multidimensionnel).
 > - Vous ne pouvez pas utiliser l’option **Tableau de points de données** quand vous êtes connecté à un modèle multidimensionnel (MD) actif.
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 3b51fbfda8f63834a0b2445bd2b2b23734b8e234
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9c99d48a0b9d50312d2ae5ce152826fcf1ab9319
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83149258"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238774"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 
@@ -80,6 +80,8 @@ Pour prendre en charge la gestion des capacités avec des zones géographiques m
 * Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
 
 * Les zones géographiques multiples ne sont généralement pas à l’origine de performances meilleures. Le chargement de rapports et de tableaux de bord implique toujours des requêtes à la région d’origine pour les métadonnées.
+
+* Dans un scénario d’incorporation pour votre client, le texte et le résultat de la requête continuent de transiter par le locataire de départ.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

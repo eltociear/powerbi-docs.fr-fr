@@ -7,15 +7,15 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 06/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 891a9b1a5afee26bdb2d6b363ccd2cee5f2461cb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 111b2b5fe0ae4b341816becdb4baf0b96e057cdd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377280"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354498"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
 
@@ -61,9 +61,11 @@ Une fois que vous avez un insight ouvert, continuez l’exploration.
 Pour revenir à votre rapport, dans le coin supérieur gauche, sélectionnez **Quitter le mode focus**.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-- **Afficher les informations** ne fonctionne pas avec tous les types de mosaïque de tableau de bord. Par exemple, il n’est pas disponible pour les visuels Power BI.<!--[Power BI visuals](end-user-custom-visuals.md)-->
+- **Afficher les informations** ne fonctionne pas avec tous les types de mosaïque de tableau de bord. Par exemple, ce n’est pas disponible pour les visuels personnalisés Power BI.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Étapes suivantes
+
+Exécutez des insights sur les visuels de rapport [à l’aide de la fonctionnalité Analyser](end-user-analyze-visuals.md)    
 Découvrez les [types d’Informations rapides disponibles](end-user-insight-types.md).
 

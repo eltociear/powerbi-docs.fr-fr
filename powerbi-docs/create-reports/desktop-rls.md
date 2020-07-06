@@ -6,16 +6,16 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ''
 ms.date: 01/31/2020
 LocalizationGroup: Create reports
-ms.openlocfilehash: 89c33de2ef7319c6dcbeace0df79786128e16cd9
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9036967c826dee83847c3bc3d4a903bbe749b2ce
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83334312"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238642"
 ---
 # <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Restreindre l’accès aux données avec la sécurité au niveau des lignes (SNL) pour Power BI Desktop
 
@@ -36,6 +36,9 @@ Vous pouvez maintenant configurer la sécurité au niveau des lignes pour les mo
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Sécurité au niveau des lignes avec Power BI Desktop](../admin/service-admin-rls.md)  
+Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- [Sécurité au niveau des lignes (RLS) avec Power BI](../admin/service-admin-rls.md)
+- [Aide sur la sécurité au niveau des lignes (SNL) dans Power BI Desktop](../guidance/rls-guidance.md)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

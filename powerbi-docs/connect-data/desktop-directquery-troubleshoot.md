@@ -5,15 +5,15 @@ author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 002df4e6c3eec7095258647a0015042efb98257f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 54091175b49a0465a56a689190965429715a4754
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292498"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485550"
 ---
 # <a name="troubleshoot-developing-directquery-models-in-power-bi-desktop"></a>Résoudre les problèmes liés au développement de modèles DirectQuery dans Power BI Desktop
 
@@ -42,13 +42,13 @@ Pour certaines sources DirectQuery, ce fichier journal contient toutes les requ�
 - Teradata
 - SAP HANA
 
-Le fichier de trace figure dans le dossier **AppData** de l’utilisateur actuel : _\\\<Utilisateur>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces_
+Le fichier de trace se trouve dans le dossier **AppData** de l’utilisateur actuel : _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces_.
 
 Voici comment accéder facilement à ce dossier : Dans Power BI Desktop, sélectionnez _Fichier > Options et paramètres > Options_, puis sélectionnez la page **Diagnostics**. La boîte de dialogue suivante s’affiche :
 
 ![La fenêtre Power BI Desktop est ouverte et la page Diagnostics généraux est sélectionnée. La section Options de diagnostic a deux propriétés : Activer le suivi et Ignorer le cache de géocodage. L’option Activer le suivi est activée. La section Collecte des vidages sur incident comporte un bouton Activer maintenant et un lien pour ouvrir le dossier des traces/vidages sur incident.](media/desktop-directquery-troubleshoot/desktop-directquery-troubleshoot-desktop-file-options-diagnostics.png)
 
-Quand vous sélectionnez le lien **Ouvrir le dossier des traces/vidages sur incident** sous Collecte des vidages sur incident, le dossier suivant s’ouvre : _\\\<Utilisateur>\AppData\Local\Microsoft\Power BI Desktop\Traces_
+Quand vous sélectionnez le lien **Ouvrir le dossier des traces/vidages sur incident** sous Collecte des vidages sur incident, le dossier suivant s’ouvre : _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\Traces_.
 
 En accédant au dossier parent de ce dossier, vous pouvez voir le dossier contenant _AnalysisServicesWorkspaces_, qui contient un sous-dossier d’espace de travail pour chaque instance ouverte de Power BI Desktop. Les noms de ces sous-dossiers ont un nombre entier en suffixe, par exemple _AnalysisServicesWorkspace2058279583_.
 
@@ -63,7 +63,7 @@ Une fois que vous avez téléchargé et installé SQL Server Management Studio, 
 Pour ouvrir le fichier de trace, procédez comme suit :
 
 1. Dans SQL Server Profiler, sélectionnez _Fichier > Ouvrir > Fichier de trace_.
-2. Entrez le chemin d’accès du fichier de trace pour la session Power BI actuellement ouverte, par exemple : _\\\<Utilisateur>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_
+2. Entrez le chemin du fichier de trace de la session Power BI actuellement ouverte, par exemple : _\\\<User>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data_.
 3. Ouvrir _FlightRecorderCurrent.trc_
 
 Tous les événements de la session en cours sont affichés. Un exemple annoté est présenté ci-dessous, qui met en évidence les groupes d’événements. Chaque groupe comporte les éléments suivants :

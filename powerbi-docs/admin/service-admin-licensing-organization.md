@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 5bac52e98830c97262945e1434880f9c178a0932
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84159993"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85484929"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
@@ -39,6 +39,8 @@ Ces rôles gèrent l’organisation. Pour plus d’informations sur les rôles d
 
 ## <a name="get-power-bi-for-your-organization"></a>Obtenir Power BI pour votre organisation
 
+Pour plus d’informations sur la tarification, consultez [Comparaison des tarifs et des produits](https://powerbi.microsoft.com/pricing/).
+
 Un administrateur général ou un administrateur de facturation peut s’inscrire au service Power BI et acheter des licences pour les utilisateurs de son organisation. Si vous ne souhaitez pas passer à l’achat tout de suite, sélectionnez l’essai de Power BI Pro. Vous bénéficierez de 25 licences à utiliser pendant un mois. Pour des instructions pas à pas sur l’inscription, consultez [Souscription d’un abonnement Power BI pour une organisation](service-admin-org-subscription.md).
 
 ## <a name="about-self-service-sign-up"></a>À propos de l’inscription en libre-service
@@ -46,6 +48,16 @@ Un administrateur général ou un administrateur de facturation peut s’inscrir
 Un utilisateur individuel peuvent obtenir sa propre licence Power BI en s’inscrivant avec son compte professionnel ou scolaire. Dans le cadre d’une licence gratuite, il peut explorer Power BI pour la visualisation et l’analyse des données personnelles avec Mon espace de travail, mais pas partager avec d’autres utilisateurs. Une licence Power BI Pro est nécessaire pour partager du contenu. Les utilisateurs peuvent passer au type de licence Pro par le biais d’une mise à niveau ou s’inscrire directement à Pro, si l’organisation utilise le cloud commercial. Ni l’achat direct de Pro ni la mise à niveau vers Pro ne sont disponibles pour les établissements d’enseignement et les organisations déployées dans des clouds Azure Government, Azure Allemagne ou Azure China 21Vianet.
 
 Si vous ne souhaitez pas que les utilisateurs de votre organisation utilisent l’inscription en libre-service, consultez [Activation et désactivation de l’inscription en libre-service](service-admin-disable-self-service.md) pour savoir comment la désactiver.
+
+La désactivation de l’inscription en libre-service empêche les utilisateurs d’explorer Power BI à des fins de visualisation et d’analyse des données. Si vous bloquez l’inscription individuelle, il peut être intéressant d’obtenir des licences Power BI (gratuit) pour votre organisation et de les affecter à tous les utilisateurs. Suivez la procédure ci-dessous pour affecter automatiquement une licence Power BI (gratuit) à tous les utilisateurs existants :
+
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification d’administrateur général ou d’administrateur de facturation.
+1. Dans le menu encadré de gauche, sélectionnez **Facturation** > **Acheter des services**.
+1. Recherchez l’offre Power BI (gratuit) ou faites défiler la liste pour le trouver. Sélectionnez-la, puis **Obtenir maintenant**.
+1. Entrez le nombre de licences nécessaires pour couvrir tous vos utilisateurs.
+1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence**, puis validez.
+
+  ![Abonnement Power BI (gratuit) avec attribution automatique](media/service-admin-licensing-organization/m365-auto-assign.png) 
 
 Si vous souhaitez voir quels utilisateurs de votre organisation disposent déjà d’une licence, consultez [Affichage et gestion des licences utilisateur](service-admin-manage-licenses.md) pour savoir comment procéder.
 

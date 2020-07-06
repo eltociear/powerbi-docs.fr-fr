@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e3a9d6db1b7f51f02f3dbc94da1d6b35eac3222
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 1e0fdf11eab5ea264e78363984ff49bbc95660d8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348893"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354314"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Épingler une vignette à un tableau de bord Power BI à partir d’un rapport
 
@@ -57,6 +57,11 @@ Regardez Amanda créer un tableau de bord en épinglant des éléments visuels e
 Une autre option consiste à épingler une page de rapport entière à un tableau de bord, ce qui constitue un moyen simple d’épingler plusieurs visualisations à la fois. Lorsque vous épinglez une page entière, les vignettes sont *dynamiques*. Cela signifie que vous pouvez interagir avec elles directement sur le tableau de bord. Les modifications apportées aux visualisations dans l’éditeur de rapports, comme ajouter un filtre ou changer les champs utilisés dans le graphique, sont également répercutées dans la vignette du tableau de bord.  
 
 Pour plus d’informations, voir [Épingler une page de rapport entière](service-dashboard-pin-live-tile-from-report.md).
+
+> [!NOTE]
+> Certaines options de mise en forme ne sont pas appliquées aux visuels épinglés à un tableau de bord. Les paramètres de bordure, d’ombre et d’arrière-plan sont ignorés dans la vignette épinglée. En ce qui concerne les visuels de type carte, le texte utilisé pour la valeur apparaît toujours dans les tableaux de bord avec la famille de polices « DIN ». 
+> 
+>
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Tableau de bord pour les consommateurs du service Power BI](../consumer/end-user-dashboards.md)

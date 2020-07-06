@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 06/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c2800ab9d57732448db9e4fe647a0601a20a816c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b273b5ea265815f26e58010356790186163c4aa8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276602"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354613"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
 
@@ -62,11 +62,11 @@ Maintenant imaginez que vous souhaitez appeler le segment **Convenience** pour a
 
 Développez la carte **Couleurs des données**, puis positionnez le curseur **Tout afficher** sur Activé. Cela affiche les couleurs de chaque élément de données de la visualisation. Vous pouvez maintenant modifier les points de données de votre choix.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Volet Mise en forme avec Tout afficher activé](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Définissez **Convenience** sur la couleur orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![Histogramme avec une colonne orange](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 Une fois sélectionné, le point de données **Convenience** se distingue facilement par sa couleur orange.
 
@@ -96,7 +96,7 @@ Dans le volet **Couleur par défaut**, utilisez les listes déroulantes pour ide
 
 Vous pouvez également mettre en forme la couleur du visuel à l’aide d’un champ qui ne fait pas partie du visuel. Dans l’image suivante, **%Market Share SPLY YTD** est utilisé. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
+![Histogramme avec plusieurs nuances de bleu](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
 Comme vous pouvez le voir, bien que nous ayons vendu plus d’unités des deux catégories **Productivity** (Productivité) et **Extreme** (Extrême) (leurs colonnes sont plus hautes), la catégorie **Moderation** (Modération) a une valeur **%Market Share SPLY YTD** (% de parts de marché à la même période l’an dernier/à ce jour) plus élevée (la couleur de sa colonne est plus foncée).
@@ -106,7 +106,7 @@ Vous pouvez également modifier la façon dont les valeurs sont mappées aux cou
 
 Dans cette première image, notez comment les barres du graphique reflètent le dégradé. La valeur la plus élevée est verte, la plus basse est orange, et chacune des barres situées entre ces deux extrêmes possède une nuance du spectre allant du vert à l’orange.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
+![Histogramme présentant un dégradé de couleurs du vert à l’orange](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
 Maintenant, nous allons voir ce qui se passe si nous indiquons des valeurs numériques dans les zones **Minimum** et **Maximum**. Sélectionnez **Personnalisé** dans les zones déroulantes **Minimum** et **Maximum**, puis définissez **Minimum** sur 3 500 et **Maximum** sur 6 000.
 

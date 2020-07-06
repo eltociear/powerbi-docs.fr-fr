@@ -7,16 +7,16 @@ ms.reviewer: tessa
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b0fc91eab8c377f5571e66eb7baaf55234fafa97
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: f4d1bb58093ed3c78330370d5a44a3f98ee4aae7
+ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337024"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85238957"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -156,7 +156,7 @@ Lorsque vous sélectionnez **Exporter**, Power BI exporte les données sont dans
 
 ## <a name="customize-the-export-data-user-experience"></a>Personnaliser l’expérience utilisateur de l’exportation de données
 
-Les utilisateurs qui sont autorisés à accéder à un rapport sont **autorisés à accéder à l’ensemble du jeu de données sous-jacent**, sauf si la [sécurité au niveau des lignes (RLS)(../admin/service-admin-rls.md) limite leur accès. Les créateurs de rapports et les administrateurs Power BI peuvent utiliser les fonctionnalités décrites ci-dessous pour personnaliser l’expérience utilisateur.
+Les utilisateurs qui disposent d’une autorisation d’accès à un rapport sont **autorisés à accéder à l’ensemble du jeu de données sous-jacent**, sauf si la [sécurité au niveau des lignes (SNL)](../admin/service-admin-rls.md) limite leur accès. Les créateurs de rapports et les administrateurs Power BI peuvent utiliser les fonctionnalités décrites ci-dessous pour personnaliser l’expérience utilisateur.
 
 - Les créateurs de rapports [déterminent quelles *options d’exportation*](#set-the-export-options) sont à la disposition des utilisateurs.  
 
@@ -171,7 +171,7 @@ Les utilisateurs qui sont autorisés à accéder à un rapport sont **autorisés
 
 ## <a name="protect-data-when-it-is-exported-out-of-power-bi"></a>Protéger les données quand elles sont exportées en dehors de Power BI
 
-- Les créateurs de rapports peuvent appliquer des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md) aux rapports.  Ces étiquettes déterminent qui peut accéder aux données du rapport et comment elles sont exportées vers Excel, PowerPoint et PDF. Certains niveaux de sensibilité incluent des paramètres de protection (par exemple les autorisations, le chiffrement) qui s’appliquent quand les données sont exportées. Si le niveau de sensibilité inclut des paramètres de protection, ces paramètres sont appliqués quand vous exportez des données vers Excel, PowerPoint et PDF. Seules les personnes disposant des autorisations appropriées pourront exporter, visualiser, enregistrer et partager les données du rapport. 
+- Les auteurs de rapports peuvent classer et étiqueter les rapports à l’aide des [étiquettes de confidentialité](../admin/service-security-data-protection-overview.md) de la protection des données Microsoft. Si l’étiquette de sensibilité possède des paramètres de protection, Power BI les applique lors de l’exportation des données de rapport dans des fichiers Excel, PowerPoint ou PDF. Seuls les utilisateurs autorisés peuvent ouvrir des fichiers protégés.
 
 - Les administrateurs de la sécurité et les administrateurs Power BI peuvent utiliser [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) pour superviser l’accès et l’activité des utilisateurs, effectuer une analyse des risques en temps réel et définir des contrôles spécifiques aux étiquettes. Par exemple, les organisations peuvent utiliser Microsoft Cloud App Security pour configurer une stratégie qui empêche les utilisateurs de télécharger des données sensibles de Power BI vers des appareils non gérés.
 

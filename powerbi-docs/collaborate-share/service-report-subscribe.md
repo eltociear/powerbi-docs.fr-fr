@@ -6,16 +6,16 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c43b0710c15fcc77a08aa789a92d840d2425f5ab
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315945"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485665"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -109,7 +109,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 
 ### <a name="general"></a>Général
 
-- Comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Nous mettons tout en œuvre pour traiter et fournir tous les abonnements le plus rapidement possible. Toutefois, il peut arriver que lors des pics de demande vous constatiez un délai plus long dû au nombre d’abonnements que Power BI peut envoyer simultanément. La plupart des clients ne devraient pas observer un délai de plus de 15 minutes pour le traitement et l’envoi des rapports. Cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si vous observez un délai aussi long, vérifiez d’abord que l’adresse `no-reply-powerbi@microsoft.com` figure dans la liste verte de votre fournisseur de messagerie.  Si c’est le cas, contactez le support technique Power BI pour obtenir de l’aide.
+- Comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Nous mettons tout en œuvre pour traiter et fournir tous les abonnements le plus rapidement possible. Toutefois, il peut arriver que lors des pics de demande vous constatiez un délai plus long dû au nombre d’abonnements que Power BI peut envoyer simultanément. La plupart des clients ne devraient pas observer un délai de plus de 15 minutes pour le traitement et l’envoi des rapports. Cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si vous observez un délai aussi long, vérifiez d’abord que l’adresse `no-reply-powerbi@microsoft.com` figure dans votre liste des expéditeurs approuvés et n’est pas bloquée par votre fournisseur de messagerie.  Si elle n’est pas bloquée, contactez le support Power BI pour obtenir de l’aide.
 - Actuellement, les abonnements par e-mail pour les rapports et les tableaux de bord utilisant des jeux de données de connexion active ne sont pas pris en charge en cas d’abonnement d’utilisateurs autres que vous-même, excepté pour les rapports paginés. Vous pouvez abonner d’autres utilisateurs à un rapport paginé à l’aide de votre contexte de sécurité. Découvrez-en plus sur l’[abonnement à des rapports paginés](../consumer/paginated-reports-subscriptions.md).
 - Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois. Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.
 - Si vous ne recevez pas les e-mails d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir.
@@ -134,6 +134,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](../developer/power-bi-custom-visuals.md). La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](../developer/power-bi-custom-visuals-certified.md).
 - Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.
 - Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail. Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.
+- Supposons que vous disposiez d’un rapport avec connexion active à Analysis Services, et que l’abonnement soit défini pour s’exécuter après l’actualisation des données. Il s’exécute la première fois que le service Power BI détecte une modification dans votre modèle local lorsqu’il interroge l’instance Analysis Services.  Power BI vérifie toutes les heures si des modifications ont été apportées au modèle de données Analysis Services, afin de déterminer quand envoyer l’abonnement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

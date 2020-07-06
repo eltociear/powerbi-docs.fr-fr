@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 01/14/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 67c83f2cc0eb81e90f447961ed178a04e97e050e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba59a08ee1b50e44af71312a25d77fb67c8fca2d
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292084"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485435"
 ---
 # <a name="troubleshoot-opening-power-bi-desktop"></a>Résoudre les problèmes liés à l’ouverture de Power BI Desktop
 
@@ -36,7 +36,7 @@ Vous pouvez désinstaller la passerelle de données locale Power BI si vous n’
 
 Vous pouvez aussi démarrer Power BI Desktop en tant qu’administrateur, ce qui permet également à Power BI Desktop de s’ouvrir correctement. Il est toutefois recommandé d’installer la dernière version de la passerelle de données locale Power BI, comme décrit précédemment.
 
-Power BI Desktop est conçu comme une architecture multitraitement et que plusieurs de ces processus communiquent à l’aide de canaux nommés de Windows. D’autres processus peuvent interférer avec ces canaux nommés. La raison la plus courante de telles interférences est la sécurité, notamment les situations où un logiciel antivirus ou des pare-feu peuvent bloquer les canaux ou rediriger le trafic vers un port spécifique. L’ouverture de Power BI Desktop avec des privilèges d’administrateur peut résoudre ce problème. Si vous ne pouvez pas ouvrir avec des privilèges d’administrateur, demandez à votre administrateur de déterminer les règles de sécurité qui empêchent les canaux nommés de communiquer correctement. Ensuite, placez Power BI Desktop et ses sous-processus respectifs sur la liste verte.
+Power BI Desktop est conçu comme une architecture multitraitement et que plusieurs de ces processus communiquent à l’aide de canaux nommés de Windows. D’autres processus peuvent interférer avec ces canaux nommés. La raison la plus courante de telles interférences est la sécurité, notamment les situations où un logiciel antivirus ou des pare-feu peuvent bloquer les canaux ou rediriger le trafic vers un port spécifique. L’ouverture de Power BI Desktop avec des privilèges d’administrateur peut résoudre ce problème. Si vous ne pouvez pas ouvrir avec des privilèges d’administrateur, demandez à votre administrateur de déterminer les règles de sécurité qui empêchent les canaux nommés de communiquer correctement. Ensuite, ajoutez Power BI Desktop et ses sous-processus respectifs aux listes vertes.
 
 ## <a name="resolve-issues-when-connecting-to-sql-server"></a>Résoudre les problèmes lors de la connexion à SQL Server
 

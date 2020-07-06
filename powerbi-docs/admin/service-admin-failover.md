@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
+ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83128555"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85782349"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -38,7 +38,7 @@ Tous les composants de service Power BI synchronisent régulièrement leurs inst
 
 Les instances de sauvegarde résident dans la même zone géographique que celle sélectionnée quand votre organisation s’est inscrite à Power BI, sauf indication contraire dans [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Une zone géographique peut contenir plusieurs régions et Microsoft peut répliquer des données sur n’importe quelle région d’une zone géographique donnée pour assurer la résilience des données. Microsoft ne réplique ni ne déplace les données d’un client en dehors de la zone géographique. Pour avoir un mappage des zones géographiques proposées par Power BI et des régions qu’elles contiennent, consultez [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
 
-## <a name="how-does-microsoft-decide-to-failover"></a>Comment Microsoft détermine s’il faut effectuer un basculement ?
+## <a name="how-does-microsoft-decide-to-fail-over"></a>Comment Microsoft détermine s’il faut effectuer un basculement ?
 
 Deux systèmes différents permettent de déterminer si un basculement est nécessaire :
 
@@ -57,6 +57,9 @@ Quand la nécessité d’un basculement a été déterminée, Power BI est de no
 
 Dès lors qu’un basculement est effectué, Power BI utilise la géoréplication du stockage Azure pour effectuer le basculement. En règle générale, ces réplications ont un point de retour de 15 minutes. Cependant, le [stockage Azure ne garantit pas ce délai](https://docs.microsoft.com/azure/storage/common/storage-redundancy) dans le cadre d’un SLA. Power BI n’est donc pas en mesure de garantir un délai non plus. 
 
+## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>Qu’advient-il des espaces de travail et des rapports si ma capacité Premium n’est plus disponible ? 
+
+Si une capacité Premium n’est plus disponible, les espaces de travail et les rapports restent accessibles et visibles pour tous les utilisateurs titulaires d’une licence Power BI Pro qui y avaient déjà accès.
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Quand mon instance Power BI retourne-t-elle dans la région d’origine ?
 

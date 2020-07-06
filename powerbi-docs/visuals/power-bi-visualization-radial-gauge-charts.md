@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4274136df063258b6879057636f11ec437873ae6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 24f69255ae12400c23cd9ca506e5b103e14e7ffb
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276349"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354889"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 
@@ -70,7 +70,7 @@ Ce tutoriel utilise le [fichier Excel d’exemple financier](https://download.mi
 
 1. Dans le volet **Champs** , sélectionnez **Gross Sales** (Chiffre d’affaires brut).
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
+   ![Tableau Données financières développé et Ventes brutes sélectionné](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Changez l’agrégation en **Moyenne**.
 

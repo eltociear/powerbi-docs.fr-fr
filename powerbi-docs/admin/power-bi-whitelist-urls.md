@@ -1,36 +1,36 @@
 ---
-title: URL Power BI pour mise sur liste verte
-description: Cet article présente les points de terminaison d’URL et les ports à mettre sur liste fiable pour la connectivité à Power BI.
+title: Ajout des URL Power BI à la liste verte
+description: Cet article présente les points de terminaison d’URL et les ports à ajouter sur liste verte pour bénéficier d’une connectivité à Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: c3a3bd98dc65e3b73ffe04b95fa9001c90af1d53
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 38e6668c0fb15d1279923b77042cdedebe6dd139
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315922"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485067"
 ---
-# <a name="power-bi-urls-for-whitelisting"></a>URL Power BI pour mise sur liste verte
-[//]: # "suparnap, miwehnia sont les contacts pour la gestion de cette liste"
+# <a name="add-power-bi-urls-to-your-allow-list"></a>Ajout des URL Power BI à la liste verte
+[//]: # "suparnap, miwehnia et natham sont les contacts pour la gestion de cette liste"
 
-**Le service en ligne Power BI**, également appelé « application SaaS Power BI », nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant le service en ligne Power BI.
+Le service Power BI exige une connectivité à Internet. Les points de terminaison qui figurent dans les tableaux de cet article doivent être accessibles aux clients qui utilisent le service Power BI.
 
-Pour utiliser le service en ligne Power BI, vous devez être en mesure de vous connecter aux points de terminaison marqués **obligatoires** dans les tableaux ci-dessous et aux points de terminaison marqués **obligatoires** sur les sites liés. Si le lien vers un site externe fait référence à une section spécifique, vous devez seulement passer en revue les points de terminaison de cette section.
+Pour utiliser le service Power BI, vous devez être en mesure de vous connecter aux points de terminaison marqués **obligatoires** dans les tableaux ci-dessous et aux points de terminaison marqués **obligatoires** sur les sites liés. Si le lien vers un site externe fait référence à une section spécifique, vous devez seulement passer en revue les points de terminaison de cette section.
 
-Les points de terminaison marqués **facultatifs** peuvent également être **placés dans la liste verte** pour que des fonctionnalités spécifiques puissent fonctionner.
+Les points de terminaison marqués **facultatifs** peuvent également être ajoutés aux listes vertes pour que des fonctionnalités spécifiques puissent fonctionner.
 
-Avec le service en ligne Power BI, seul le port TCP 443 doit être ouvert pour les points de terminaison listés.
+Avec le service Power BI, seul le port TCP 443 doit être ouvert pour les points de terminaison listés.
 
-Les caractères génériques (*) représentent tous les niveaux sous le domaine racine, et nous utilisons N/A quand les informations ne sont pas disponibles. La colonne **Destination(s)** est une liste avec le nom de domaine complet/les domaines et des liens vers des sites externes, qui contiennent plus d’informations sur les points de terminaison.
+Les caractères génériques (*) représentent tous les niveaux sous le domaine racine, et nous utilisons N/A quand les informations ne sont pas disponibles. La colonne **Destination(s)** comporte les noms de domaine et des liens vers des sites externes, qui contiennent des informations complémentaires sur les points de terminaison.
 
 >[!Important]
->Les informations contenues dans les tableaux ci-dessous ne représentent pas le **cloud U.S. Government**, le **cloud Germany** ou le **cloud China**.
+>Les informations figurant dans les tableaux ci-dessous ne s’appliquent pas à Power BI Allemagne, à Power BI Chine géré par 21Vianet ni à Power BI US Government. Pour plus d’informations sur la communication entre les services cloud, consultez [Connexion entre les services cloud Azure du secteur public et les services cloud Azure globaux](service-govus-overview.md#connect-government-and-global-azure-cloud-services).
 
 ## <a name="authentication"></a>Authentification
 
@@ -51,7 +51,7 @@ Pour l’utilisation générale de Power BI, vous devez être en mesure de vous 
 | 3 | **Obligatoire :** API de back-end | *.pbidedicated.windows.net | TCP 443 |
 | 4 | **Obligatoire :** Réseau de distribution de contenu (CDN) | content.powerapps.com | TCP 443 |
 | 5 | **Obligatoire :** Intégration de Microsoft 365 | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
-| 6 | **Obligatoire :** Portail | app.powerbi.com | TCP 443 |
+| 6 | **Obligatoire :** Portail | *.powerbi.com | TCP 443 |
 | 7 | **Obligatoire :** Données de télémétrie du service | dc.services.visualstudio.com | TCP 443 |
 | 8 | **Facultatif :** Messages d’information | dynmsg.modpim.com | TCP 443 |
 | 9 | **Facultatif :** Sondages NPS | nps.onyx.azure.net | TCP 443 |
@@ -102,7 +102,7 @@ Power BI dépend de certains points de terminaison pour voir et accéder aux vis
 
 ## <a name="related-external-sites"></a>Sites externes connexes
 
-Power BI établit des liaisons vers d’autres sites connexes. Ces sites hébergent la documentation, le support, les demandes de nouvelles fonctionnalités, etc. L’accès à ces sites n’affecte pas les fonctionnalités de Power BI. La liste verte est donc facultative.
+Power BI établit des liaisons vers d’autres sites connexes. Ces sites hébergent la documentation, le support, les demandes de nouvelles fonctionnalités, etc. L’accès à ces sites n’a pas d’incidence sur les fonctionnalités de Power BI. Il est donc facultatif de les ajouter aux listes vertes.
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |

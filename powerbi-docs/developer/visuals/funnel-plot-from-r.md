@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 42304e60740c215b1300e66f074807aea10ec6f9
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84317049"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354475"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.
@@ -89,13 +89,13 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
    Vous devez mettre à jour les sections `dataRoles` et `dataViewMappings`, qui définissent les noms, les types, les info-bulles et le nombre maximal de colonnes pour chaque champ d’entrée.
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
+   ![Avant et après](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
    
    Pour plus d’informations, consultez [fonctionnalités](./capabilities.md).
 
 1. Modifiez *script.r* de façon à prendre en charge `Population`, `Number` et `Tooltips` en tant que dataframes en entrée au lieu de `dataset`, ou téléchargez [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
+   ![script](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
    > [!TIP]
    > Pour suivre les modifications apportées au script R, recherchez des blocs de commentaires : 
@@ -125,7 +125,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
    Téléchargez [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json) et consultez [Propriétés des objets](./objects-properties.md) pour plus d’informations
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
+   ![capabilities](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
 1. Modifiez *src/settings.ts* de façon à ce qu’il corresponde à ce [fichier settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). Ce fichier est écrit en TypeScript.  
 
@@ -133,7 +133,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    - Déclarer une nouvelle interface pour contenir la valeur de la propriété
    - Définir une propriété de membre et des valeurs par défaut
 
-   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
+   ![de la source de données](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
 1. Modifiez *script.r* de façon à ce qu’il corresponde à ce fichier [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). Ceci ajoute la prise en charge des paramètres dans l’interface utilisateur en ajoutant des appels `if.exists` pour chaque paramètre utilisateur.
 
@@ -150,7 +150,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
    > #RVIZ_IN_PBI_GUIDE:END:Removed to enable user parameters
    > ```
 
-   ![](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
+   ![Script avant et après](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script_r_before_after_1.png)
 
    Vous pouvez décider de ne pas exposer les paramètres à l’interface utilisateur, comme nous l’avons fait.  
 

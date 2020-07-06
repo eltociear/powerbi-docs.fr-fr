@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8860a06355f201c463e97d81021a8e5476ac98c8
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403633"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354981"
 ---
-# <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
+# <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 2** de la procédure de transmission des données à un jeu de données intitulée [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), vous avez obtenu un jeton pour vous authentifier auprès d’**Azure AD**. Pendant cette étape, vous utilisez le jeton pour appeler l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
@@ -26,7 +26,7 @@ Pour authentifier une opération REST Power BI, vous ajoutez le jeton que vous a
 
 Quand vous appelez l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets), un jeu de données est créé. 
 
-![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
+![Création de jeu de données](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
 Voici comment créer un jeu de données dans Power BI.
 
@@ -227,7 +227,7 @@ namespace walkthrough_push_data
 [Étape suivante >](walkthrough-push-data-get-datasets.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
+* [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
 * [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)  
 * [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
 [PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdatasetingroup)  

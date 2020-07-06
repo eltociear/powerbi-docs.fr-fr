@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: beb744e1293db077111df8212c0861154aa86242
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279178"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85354705"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -49,17 +49,17 @@ Lorsque vous examinez des totaux et des sous-totaux, n’oubliez pas que ces val
 ## <a name="expanding-and-collapsing-row-headers"></a>Développer et réduire des en-têtes de lignes
 Il existe deux manières de développer des en-têtes de lignes. La première se fait par le biais du menu contextuel, qui comporte des options pour développer l’en-tête de ligne sélectionné, le niveau tout entier ou absolument tout jusqu’au dernier niveau de la hiérarchie. Il existe des options similaires pour réduire les en-têtes de lignes.
 
-![](media/desktop-matrix-visual/power-bi-expand1.png)
+![Menu indiquant Développer et Sélection](media/desktop-matrix-visual/power-bi-expand1.png)
 
 Vous pouvez également ajouter des boutons +/-aux en-têtes de lignes grâce au volet Mise en forme sous la carte **En-têtes de lignes**. Par défaut, les icônes correspondent à la mise en forme de l’en-tête de ligne, mais vous pouvez personnaliser la couleur et la taille des icônes séparément si vous le souhaitez.
 
 Une fois activées, elles fonctionnent comme les icônes de tableau croisé dynamique dans Excel.
 
-![](media/desktop-matrix-visual/power-bi-expand2.png)
+![Matrice avec icônes activées](media/desktop-matrix-visual/power-bi-expand2.png)
 
 L’état de développement de la matrice sera enregistré avec le rapport. Une matrice peut être épinglée à un tableau de bord développé ou réduit. Lorsque cette vignette de tableau de bord est sélectionnée et que le rapport s’ouvre, l’état de développement peut encore être modifié dans le rapport. 
 
-![](media/desktop-matrix-visual/power-bi-expand3.png)
+![Matrice présentant l’état d’expansion](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
 > Si vous créez un rapport en plus d’un modèle multidimensionnel Analysis Services, des considérations spécifiques doivent être prises en compte pour développer/réduire si le modèle utilise la fonctionnalité de membre par défaut. Pour plus d’informations, consultez [Utiliser des modèles multidimensionnels dans Power BI](../connect-data/desktop-default-member-multidimensional-models.md)

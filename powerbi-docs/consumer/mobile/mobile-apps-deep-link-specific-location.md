@@ -5,15 +5,15 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: f0a72cf315c8ad911414274daae11b712971b305
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 2590e5fad227027f7cc2fddf2f93a18b92f39ae3
+ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114490"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85393778"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez utiliser des liens pour accéder directement à certains éléments dans Power BI : Rapport, Tableau de bord et Vignette.
@@ -33,7 +33,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> Si votre contenu est hébergé dans un centre de données spécial (Goverment, Chine, etc.), le lien doit commencer par l’adresse Power BI correspondante, par exemple `app.powerbigov.us` ou `app.powerbi.cn`.   
+> Si votre contenu est hébergé dans un centre de données spécial (secteur public, Chine, etc.), le lien doit commencer par l’adresse Power BI correspondante, par exemple `app.powerbigov.us` ou `app.powerbi.cn`.   
 >
 
 

@@ -3,37 +3,34 @@ title: Partager des rapports et des tableaux de bord Power BI avec des collègue
 description: Comment partager des tableaux de bord et rapports Power BI avec vos collègues au sein et à l’extérieur de votre organisation et ce que vous devez savoir sur le partage.
 author: maggiesMSFT
 ms.reviewer: lukaszp
-featuredvideoid: 0tUwn8DHo3s
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 11/26/2019
+ms.topic: how-to
+ms.date: 06/26/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cf971de1a60636def852080a523c227f08b4f888
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: d09ebee0cc22c7037db437e1c7a46a3d19ff36fd
+ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84272928"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85485580"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
-Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
-
-![Icône Partager dans une liste des tableaux de bord](media/service-share-dashboards/power-bi-share-new-look.png)
-
-Que vous partagiez du contenu à l’intérieur ou à l’extérieur de votre organisation, vous devez disposer d’une [licence Power BI Pro](../fundamentals/service-features-license-type.md). Vos destinataires ont également besoin d’une licence Power BI Pro à moins que le contenu ne soit au niveau de [capacité Premium](../admin/service-premium-what-is.md). 
-
-Vous pouvez partager des tableaux de bord et des rapports à partir de la plupart des emplacements du service Power BI : Favoris, Récents, Mon espace de travail et Partagés avec moi, si le propriétaire le permet. Vous pouvez également partager à partir d’autres espaces de travail, si vous avez le [rôle Administrateur, Membre ou Contributeur](service-new-workspaces.md#roles-in-the-new-workspaces) dans l’espace de travail. 
+Le *partage* est le moyen le plus simple de donner accès à vos tableaux de bord et rapports dans le service Power BI. Vous pouvez les partager avec des membres de votre organisation ou des personnes extérieures.
 
 Quand vous partagez un tableau de bord ou un rapport avec des utilisateurs, ces derniers peuvent l’afficher et interagir avec, mais pas le modifier. Ils voient les mêmes données que vous dans le tableaux de bord et les rapports, et ont accès à la totalité du jeu de données sous-jacent, sauf si la sécurité au niveau des lignes est appliquée au jeu de données sous-jacent.  Ils peuvent également le partager avec leurs collègues, si vous les y autorisez. Les personnes qui ne font pas partie de votre organisation peuvent consulter le tableau de bord ou le rapport, et interagir avec lui, mais pas le partager. 
 
+![Icône Partager dans une liste des tableaux de bord](media/service-share-dashboards/power-bi-share-new-look.png)
+
+Il est possible de partager des tableaux de bord et des rapports en de nombreux endroits du service Power BI : Favoris, Récemment utilisés, Mon espace de travail. Vous pouvez également partager à partir d’autres espaces de travail, si vous avez le [rôle Administrateur, Membre ou Contributeur](service-new-workspaces.md#roles-in-the-new-workspaces) dans l’espace de travail. De même, vous pouvez partager des tableaux de bord et des rapports dans Partagés avec moi, si le propriétaire l’autorise. 
+
+Le service Power BI propose également d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports. Pour connaître la méthode la plus adaptée à votre situation, consultez [Techniques de collaboration et de partage dans Power BI](service-how-to-collaborate-distribute-dashboards-reports.md) . 
+
+Que vous partagiez du contenu à l’intérieur ou à l’extérieur de votre organisation, vous devez disposer d’une [licence Power BI Pro](../fundamentals/service-features-license-type.md). Vos destinataires ont également besoin d’une licence Power BI Pro à moins que le contenu ne soit au niveau de [capacité Premium](../admin/service-premium-what-is.md). 
+
 Vous ne pouvez pas *partager* directement à partir de Power BI Desktop. Vous [publiez des rapports à partir de Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) dans le service Power BI. Toutefois, vous pouvez [partager un tableau de bord à partir des applications mobiles Power BI](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
-
-## <a name="video-share-a-dashboard"></a>Vidéo : Partager un tableau de bord
-Regardez Amanda partager le tableau de bord avec des collègues à l’intérieur et à l’extérieur de son entreprise. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="share-a-dashboard-or-report"></a>Partager un tableau de bord ou un rapport
 
@@ -98,6 +95,14 @@ Si vous envoyez un lien à partir d’une application mobile Power BI à des per
 
 Votre administrateur Power BI peut autoriser les utilisateurs invités externes à modifier et à gérer le contenu de votre organisation. Dans ce cas, vos utilisateurs externes ne peuvent pas bénéficier de l’expérience limitée à la consommation. Ils peuvent modifier et gérer le contenu au sein de votre organisation. Découvrez-en plus sur la [distribution du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
+## <a name="share-with-more-than-100-separate-users"></a>Partager avec plus de 100 utilisateurs distincts
+
+Au maximum, vous pouvez partager du contenu avec 100 utilisateurs ou groupes lors d’une seule action de partage. Toutefois, vous pouvez permettre à plus de 500 utilisateurs d’accéder à un élément. Voici quelques suggestions :
+
+- Partagez plusieurs fois en spécifiant les utilisateurs individuellement.
+- Partagez avec un groupe d’utilisateurs qui contient tous les utilisateurs. 
+- Créez le rapport ou le tableau de bord dans un espace de travail, puis créez une application à partir de ce dernier. Vous pouvez partager l’application avec beaucoup plus de personnes. Découvrez-en plus sur la [publication d’applications dans Power BI](service-create-distribute-apps.md).
+
 ## <a name="stop-or-change-sharing"></a>Arrêter ou changer le partage
 Seul le propriétaire du tableau de bord ou du rapport peut activer et désactiver la possibilité de le partager de nouveau.
 
@@ -132,50 +137,10 @@ Voici quelques éléments à prendre en compte avant de partager des tableaux de
 * Si vos collègues ont déjà accès à un tableau de bord ou à un rapport spécifique, vous pouvez envoyer un lien direct en copiant l’URL qui s’affiche quand vous vous trouvez dessus. Par exemple : `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * De même, si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez [envoyer un lien direct vers le rapport sous-jacent](service-share-reports.md). 
 
-### <a name="share-with-more-than-100-separate-users"></a>Partager avec plus de 100 utilisateurs distincts
-
-Au maximum, vous pouvez partager du contenu avec 100 utilisateurs ou groupes lors d’une seule action de partage. Toutefois, vous pouvez permettre à plus de 500 utilisateurs d’accéder à un élément. Voici quelques suggestions :
-
-- Partagez plusieurs fois en spécifiant les utilisateurs individuellement.
-- Partagez avec un groupe d’utilisateurs qui contient tous les utilisateurs. 
-- Créez le rapport ou le tableau de bord dans un espace de travail, puis créez une application à partir de ce dernier. Vous pouvez partager l’application avec beaucoup plus de personnes. Découvrez-en plus sur la [publication d’applications dans Power BI](service-create-distribute-apps.md).
-
-## <a name="troubleshoot-sharing"></a>Résoudre les problèmes de partage
-
-### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Les destinataires de mon tableau de bord voient une icône de verrou dans une vignette ou un message « Autorisation requise »
-
-Les destinataires du partage peuvent voir une vignette verrouillée dans un tableau de bord ou un message « Autorisation requise » lorsqu’ils tentent de consulter un rapport.
-
-![Vignette verrouillée Power BI](media/service-share-dashboards/power-bi-locked_tile_small.png)
-
-Dans ce cas, vous devez leur accorder l’autorisation d’accès au jeu de données sous-jacent.
-
-1. Accédez à l’onglet **Jeux de données** dans votre liste de contenu.
-
-1. Sélectionnez les points de suspension ( **...** ) en regard du jeu de données, puis **Gérer les autorisations**.
-
-    ![Gérer les autorisations](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
-
-1. Sélectionnez **Ajouter un utilisateur**.
-
-    ![Sélectionnez Ajouter un utilisateur](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
-
-1. Entrez les adresses e-mail complètes des personnes, des groupes de distribution ou des groupes de sécurité. Vous ne pouvez pas effectuer de partage avec des listes de distribution dynamique.
-
-    ![Ajoutez les adresses e-mail](media/service-share-dashboards/power-bi-add-user-dataset.png)
-
-
-1. Sélectionnez **Ajouter**.
-
-### <a name="i-cant-share-a-dashboard-or-report"></a>Je n’arrive pas à partager un tableau de bord ou un rapport
-
-Pour pouvoir partager un tableau de bord ou un rapport, vous devez être autorisé à en partager le contenu sous-jacent, c’est-à-dire tous les rapports et jeux de données associés. Si un message vous indique que vous ne pouvez pas effectuer le partage, demandez à l’auteur du rapport de vous autoriser à repartager ces rapports et jeux de données.
-
-![Message « Impossible de partager »](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
-
-
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Partager un rapport Power BI filtré](service-share-reports.md)
-* Vous avez des questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
+- [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md)
+- [Résolution des problèmes de partage de tableaux de bord et de rapports](service-troubleshoot-sharing.md)
+- [Demande ou autorisation d’accès à des tableaux de bord ou des rapports partagés](service-request-access.md)
+- [Partager un rapport Power BI filtré](service-share-reports.md)
+- Vous avez des questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)

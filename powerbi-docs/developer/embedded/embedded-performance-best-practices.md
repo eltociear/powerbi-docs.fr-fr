@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: ba0a85958fad500bd27f4697a7f46961ca430f49
+ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279385"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85299569"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
 Cet article fournit des recommandations pour un rendu plus rapide des rapports, des tableaux de bord et des vignettes dans votre application.
 
 > [!Note]
-> N’oubliez pas que le temps de chargement dépend principalement des éléments pertinents pour le rapport et des données elles-mêmes, y compris des visuels, la taille des données et la complexité des requêtes et des mesures calculées. Pour plus d’informations, consultez le [guide d’optimisation de Power BI](../../guidance/power-bi-optimization.md).
+> N’oubliez pas que le temps de chargement dépend principalement des éléments pertinents pour le rapport et des données elles-mêmes, notamment les visuels, la taille des données et la complexité des requêtes et des mesures. Pour plus d’informations, consultez le [guide d’optimisation de Power BI](../../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Mettre à jour les outils et les packages du SDK
 
@@ -36,7 +36,7 @@ La méthode `powerbi.embed(element, config)` reçoit un élément et une configu
 
 ### <a name="embed-url"></a>URL incorporé
 
-Évitez de générer l’URL incorporé. Au lieu de cela, assurez-vous d’obtenir l’URL incorporée en appelant l’API [Obtenir des rapports](/rest/api/power-bi/reports/getreportsingroup), [Obtenir des tableaux de bord](/rest/api/power-bi/dashboards/getdashboardsingroup), ou [Obtenir des vignettes](/rest/api/power-bi/dashboards/gettilesingroup). Nous avons ajouté un nouveau paramètre à l’URL nommé **_config_** , qui sert pour l’amélioration des performances.
+Évitez de générer l’URL incorporé. Au lieu de cela, assurez-vous d’obtenir l’URL incorporée en appelant l’API [Obtenir des rapports](/rest/api/power-bi/reports/getreportsingroup), [Obtenir des tableaux de bord](/rest/api/power-bi/dashboards/getdashboardsingroup), ou [Obtenir des vignettes](/rest/api/power-bi/dashboards/gettilesingroup). Nous avons ajouté un nouveau paramètre à l’URL nommé **_config_**, qui sert pour l’amélioration des performances.
 
 ### <a name="permissions"></a>Autorisations
 
@@ -53,7 +53,7 @@ Si vous incorporez des rapports avec les mêmes filtres, signets et segments pou
 Lorsque vous incorporez plusieurs rapports au même iframe, ne générez pas de nouvel iframe pour chaque rapport. Utilisez plutôt `powerbi.embed(element, config)` avec une autre configuration pour incorporer le nouveau rapport.
 
 > [!NOTE]
-> Le basculement entre rapports pour un scénario de type « l’application possède les données » peut ne pas être très efficace en raison de la nécessité de générer un nouveau jeton incorporé.
+> Un jeton incorporé présentant des autorisations sur tous les rapports et jeux de données est nécessaire pour basculer entre les rapports lors de l’incorporation pour vos clients (scénario également appelé « l’application possède les données »). Pour plus d’informations, consultez [API Génération de jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
 
 ## <a name="query-caching"></a>Mise en cache des requêtes
 
@@ -63,7 +63,7 @@ Les organisations avec une capacité Power BI Premium ou Power BI Embedded peuv
 
 ## <a name="preload"></a>Préchargement
 
-Utilisez `powerbi.preload()` afin d’améliorer les performances pour l’utilisateur final. La méthode `powerbi.preload()` télécharge des fichiers JavaScript, CSS et d’autres artefacts, qui seront utilisés ultérieurement pour être incorporés dans un rapport.
+Utilisez `powerbi.preload()` afin d’améliorer les performances pour l’utilisateur final. La méthode `powerbi.preload()` télécharge des fichiers JavaScript, CSS et d’autres artefacts, qui seront utilisés ultérieurement pour incorporer un rapport.
 
 Appelez `powerbi.preload()` si vous n’incorporez pas immédiatement le rapport. Par exemple, si le contenu Power BI intégré n'apparaît pas sur la page d'accueil, utilisez `powerbi.preload()` pour télécharger et mettre en cache les artefacts utilisés pour intégrer le contenu.
 

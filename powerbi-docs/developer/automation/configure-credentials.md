@@ -6,18 +6,22 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 02/23/2020
-ms.openlocfilehash: bd7758be32d18fd3be06a7847edc7795c2b5f9e1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.topic: how-to
+ms.date: 06/23/2020
+ms.openlocfilehash: ed35775ac077be7c45807b950530e4e1277d5ac3
+ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114770"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85355004"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Configurer les informations d’identification par programmation pour Power BI
 
-Suivez ces étapes pour configurer par programmation les informations d’identification pour Power BI.
+Suivez les étapes de cet article afin de configurer programmatiquement les informations d’identification pour Power BI.
+
+>[!NOTE]
+>* L’utilisateur appelant doit être propriétaire de jeu de données ou administrateur de passerelle. Vous pouvez également utiliser un [principal de service](../embedded/embed-service-principal-certificate.md). Par exemple, le principal de service peut être le propriétaire du jeu de données.
+>* Les sources de données cloud et les informations d’identification correspondantes sont gérées au niveau utilisateur.
 
 ## <a name="update-credentials-flow-for-data-sources"></a>Mettre à jour un flux d’informations d’identification pour les sources de données
 
@@ -84,7 +88,7 @@ Suivez ces étapes pour configurer par programmation les informations d’identi
     ```
 
 
-    # <a name="net-sdk-v2"></a>[Kit de développement logiciel (SDK) .NET v2](#tab/sdk2)
+    # <a name="net-sdk-v2"></a>[.NET SDK v2](#tab/sdk2)
 
     ```csharp
     var credentialDetails = new CredentialDetails(
