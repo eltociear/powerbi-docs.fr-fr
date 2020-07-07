@@ -38,7 +38,7 @@
             - name: Analyse de l’impact des jeux de données
               href: service-dataset-impact-analysis.md
             - name: Appliquer des étiquettes de sensibilité des données
-              href: ../collaborate-share/service-security-apply-data-sensitivity-labels.md
+              href: ../admin/service-security-apply-data-sensitivity-labels.md
             - name: Se connecter à des fichiers sur le compte OneDrive de votre groupe
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Collaborer dans un espace de travail classique
