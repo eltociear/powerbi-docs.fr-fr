@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 546f712c87e67240fd15ee2563252d8f322212c7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5763c3fc72632e6e734e0dc0a32854e719709d01
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220997"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034494"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -73,7 +73,7 @@ Pour exporter avec RLS, vous devez disposer des autorisations suivantes :
 
 ### <a name="data-protection"></a>Protection des données
 
-Les formats .pdf et .pptx prennent en charge les [étiquettes de sensibilité](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Si vous exportez un rapport doté d’une étiquette de sensibilité au format .pdf ou .pptx, le fichier exporté affiche le rapport avec son étiquette de sensibilité.
+Les formats .pdf et .pptx prennent en charge les [étiquettes de sensibilité](../../admin/service-security-sensitivity-label-overview.md). Si vous exportez un rapport doté d’une étiquette de sensibilité au format .pdf ou .pptx, le fichier exporté affiche le rapport avec son étiquette de sensibilité.
 
 Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format .pdf ou .pptx à l’aide d’un [principal de service](embed-service-principal.md).
 

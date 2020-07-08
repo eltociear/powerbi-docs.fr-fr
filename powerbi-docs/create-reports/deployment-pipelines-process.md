@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: fc7e6aa751bab6562e097b8ce14ff8416e6231e7
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782562"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034287"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Comprendre le processus de déploiement (préversion)
 
@@ -234,7 +234,7 @@ Cette section répertorie la plupart des limitations dans les pipelines de dépl
 
 * L’espace de travail doit résider sur une  [capacité Premium](../admin/service-premium-what-is.md).
 
-* Les éléments Power BI, tels que les rapports et les tableaux de bord qui ont des [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi) Power BI ne peuvent pas être déployés.
+* Les éléments Power BI, tels que les rapports et les tableaux de bord qui ont des [étiquettes de sensibilité](../admin/service-security-sensitivity-label-overview.md) Power BI ne peuvent pas être déployés.
 
 * Le nombre maximal d’éléments Power BI pouvant être déployés dans un seul et même déploiement est 300.
 
