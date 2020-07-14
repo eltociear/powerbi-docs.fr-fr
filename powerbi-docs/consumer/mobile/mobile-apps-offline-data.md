@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: cfb5e4f1f75437db6235ece0d8661bab3f008649
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: b719dc72d9137ac1c3ffc3eee4669ad6bd61fc9f
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83148409"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034241"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -35,6 +35,9 @@ Par défaut, Power BI actualise fréquemment les données afin de toujours vous 
 Quand vous êtes en mode hors connexion, vous pouvez accéder à tous les tableaux de bord auxquels vous avez accédé précédemment à partir de l’application mobile.
 
 Vous avez également accès en lecture seule à tous les rapports Power BI auxquels vous avez précédemment accédés depuis l’application mobile. Vous pouvez voir le rapport complet, mais vous ne pouvez pas filtrer, effectuer un filtrage croisé, trier ou utiliser des segments.
+
+>[!NOTE]
+> Les rapports basés sur DirectQuery ne sont pas mis en cache et ne sont pas disponibles hors connexion.
 
 ## <a name="background-data-refresh"></a>Actualisation des données en arrière-plan
 L’actualisation en arrière-plan met à jour vos tableaux de bord favoris, ainsi que les tableaux de bord et les rapports que vous avez sélectionnés au cours des deux dernières semaines, avec les données sur le service Power BI (et pas la source de données). Si vous êtes connecté au Wi-Fi, l’actualisation en arrière-plan effectue une mise à jour toutes les 2 heures. Sinon, si vous êtes sur un réseau 3G, Power BI met à jour le contenu toutes les 24 heures.
@@ -66,5 +69,5 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 
 * [Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)
 * Suivez @MSPowerBI sur Twitter
-* Rejoignez la [Communauté Power BI](https://community.powerbi.com/)
+* Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)

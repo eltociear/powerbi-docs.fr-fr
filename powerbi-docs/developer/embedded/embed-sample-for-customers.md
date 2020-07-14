@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 75b880876a08a78d822fc1203de40a7bb8311afe
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: bb693b1b46e193a87365537492c83aa2eb8a479a
+ms.sourcegitcommit: b2c60781da6f756102f91346b35a7651fb5dcda3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337070"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092236"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients
 
@@ -428,9 +428,12 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 
 ### <a name="development-testing"></a>Tests de développement
 
-L’utilisation de jetons d’incorporation avec des licences Pro étant destinée aux tests de développement, le nombre de jetons d’incorporation qu’un principal de service ou compte principal Power BI peut générer est limité. Une capacité dédiée nécessite l’incorporation dans un environnement de production. Avec une capacité dédiée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité. Accédez à [Fonctionnalités disponibles](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier la valeur qui indique l’utilisation actuelle de jetons incorporés en pourcentage. Le volume d’utilisation varie en fonction du compte principal.
+Pour les tests de développement, vous pouvez utiliser des jetons d’essai d’incorporation avec une licence Pro. Pour incorporer dans un environnement de production, utilisez une capacité dédiée.
 
-Pour plus d’informations, consultez le [livre blanc Planification d’une capacité d’analytique incorporée](https://aka.ms/pbiewhitepaper).
+Le nombre de jetons d’essai d’incorporation qu’un principal de service ou qu’un compte principal Power BI peut générer est limité. Utilisez l’API [Fonctionnalités disponibles](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier le pourcentage de votre utilisation incorporée actuelle. La quantité d’utilisation est affichée par principal de service ou compte principal.
+
+Si vous n’avez plus de jetons d’incorporation pendant les tests, vous devez acheter une [capacité](embedded-capacity.md) Power BI Embedded ou Premium. Avec une capacité dédiée, le nombre de jetons d’incorporation que vous pouvez générer n’est pas limité.
+
 
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail à une capacité dédiée
 

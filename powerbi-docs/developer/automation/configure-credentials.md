@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: ed35775ac077be7c45807b950530e4e1277d5ac3
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: dd85f44057c0e4069a903293ec162028b1cbd66e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355004"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034057"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Configurer les informations d’identification par programmation pour Power BI
 
@@ -49,13 +49,16 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
     ---
 
-2. Appelez [Obtenir la passerelle](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique de la passerelle.
+    >[!NOTE]
+    >Si vous utilisez des sources de données cloud, n’effectuez pas les étapes suivantes de cette section. Définissez les informations d’identification à l’aide des ID de passerelle et de source de données obtenus à l’étape 1, en appelant [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+
+3. Appelez [Obtenir la passerelle](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique de la passerelle.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Chiffrez les informations d’identification.
+4. Chiffrez les informations d’identification.
 
     # <a name="net-sdk-v3"></a>[Kit de développement logiciel (SDK) .NET v3](#tab/sdk3)
 
@@ -73,7 +76,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
     ---  
 
-4. Générez les détails des informations d’identification avec des informations d’identification chiffrées.
+5. Générez les détails des informations d’identification avec des informations d’identification chiffrées.
 
     # <a name="net-sdk-v3"></a>[Kit de développement logiciel (SDK) .NET v3](#tab/sdk3)
 
@@ -101,7 +104,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
     ---
 
-5. Appelez [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) pour définir les informations d’identification.
+6. Appelez [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) pour définir les informations d’identification.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);

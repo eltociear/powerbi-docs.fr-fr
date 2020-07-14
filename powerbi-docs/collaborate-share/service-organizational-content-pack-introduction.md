@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace3b89051ee5f7b082979f2739cef71ceb05440
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 84ecbb51663629b663373b884af86329f49e974f
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225736"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034471"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
@@ -23,7 +23,7 @@ ms.locfileid: "85225736"
 
 Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez plutôt de procéder ainsi : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu professionnel*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.
 
-![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
+![Capture d’écran d’un tableau de bord qui montre les packs de contenu d’organisation.](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
 La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un espace de travail. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md). 
 

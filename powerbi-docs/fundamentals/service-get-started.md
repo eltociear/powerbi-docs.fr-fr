@@ -1,25 +1,27 @@
 ---
-title: Bien démarrer avec le service Power BI
+title: 'Tutoriel : Bien démarrer avec la création dans le service Power BI'
 description: Bien démarrer avec le service en ligne Power BI (app.powerbi.com)
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 09/05/2019
+ms.date: 07/02/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 67bb913f582b372d2c9ffcbe72a59aeade143fac
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ee3919be08cfb2af2ad0e82e9f0f35b5d13147c6
+ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83358757"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85943324"
 ---
-# <a name="tutorial-get-started-with-the-power-bi-service"></a>Tutoriel : Bien démarrer avec le service Power BI
+# <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Tutoriel : Bien démarrer avec la création dans le service Power BI
 Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](power-bi-overview.md).
 
-![Accueil du service Power BI](media/service-get-started/power-bi-service-get-started-home.png)
+Êtes-vous davantage un *lecteur* de rapport qu’un créateur ? L’article [Découverte du service Power BI](../consumer/end-user-experience.md) est un bon point de départ pour vous.
+
+:::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Capture d’écran du tableau de bord Financial Sample":::
 
 Ce tutoriel vous montre comment effectuer les étapes suivantes :
 
@@ -30,180 +32,193 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 > * Utiliser ces données pour créer des visualisations et les enregistrer sous forme de rapport
 > * Créer un tableau de bord en épinglant des vignettes du rapport
 > * Ajouter d’autres visualisations à votre tableau de bord à l’aide de l’outil Questions et réponses en langage naturel.
-> * Redimensionner, réorganiser et utiliser les vignettes sur le tableau de bord.
+> * Redimensionner, réorganiser et modifier les détails des vignettes sur le tableau de bord.
 > * Nettoyer les ressources en supprimant le jeu de données, le rapport et le tableau de bord
 
-> [!TIP]
-> Vous préférez un cours gratuit à votre rythme à la place ? [Inscrivez-vous à notre cours sur l’analyse et la visualisation des données sur EdX](https://aka.ms/edxpbi).
-
 ## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
-Si vous n’avez pas de compte Power BI, [inscrivez-vous pour un essai gratuit de Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
-
-Une fois que vous avez un compte, entrez *app.powerbi.com* dans votre navigateur pour ouvrir le service Power BI. 
+Vous devez être titulaire d’une licence Power BI Pro pour créer du contenu dans Power BI. Si vous n’avez pas de compte Power BI, [inscrivez-vous pour un essai gratuit de Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ## <a name="step-1-get-data"></a>Étape 1 : Obtenir des données
 
-Souvent, quand vous voulez créer un rapport Power BI, vous utilisez Power BI Desktop. Cette fois, nous allons utiliser le service Power BI pour créer un rapport.
+Souvent, quand vous voulez créer un rapport Power BI, vous utilisez Power BI Desktop. Power BI Desktop offre plus de possibilités. Vous pouvez transformer, mettre en forme et modéliser des données avant de commencer à concevoir un rapport. Cette fois-ci, nous allons utiliser le service Power BI pour créer un rapport de A à Z.
 
-Dans ce tutoriel, nous obtenons des données à partir d’un fichier CSV. Comment procéder ? [Téléchargez le fichier CSV Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962).
+Dans ce tutoriel, les données proviennent d’un simple fichier Microsoft Excel. Comment procéder ? [Téléchargez le fichier Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Connectez-vous à Power BI](https://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire pour un essai gratuit.
-2. Power BI s’ouvre dans votre navigateur. Sélectionnez **Obtenir des données** en bas du volet de navigation.
+1. Pour commencer, ouvrez le service Power BI (app.powerbi.com) dans votre navigateur. 
+
+    Vous n’avez pas de compte ? Ne vous inquiétez pas, vous pouvez vous [inscrire ici pour bénéficier d’un essai gratuit de Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web).
+
+1. Dans le volet de navigation, sélectionnez **Mon espace de travail**.
+
+1. Dans **Mon espace de travail**, sélectionnez **Nouveau** > **Charger un fichier**.
 
     La page **Obtenir des données** s’ouvre.   
 
-3. Sous la section **Créer du contenu**, sélectionnez **Fichiers**. 
+3. Sous la section **Créer du contenu**, vérifiez que **Fichiers** est sélectionné, puis sélectionnez l’emplacement où vous avez enregistré le fichier Excel.
    
-   ![Obtenir les fichiers](media/service-get-started/gs1.png)
-4.  Sélectionnez **Fichier local**.
-   
-    ![écran Obtenir les données > Fichiers](media/service-get-started/power-bi-service-get-data-local-file.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Capture d’écran de Créer du contenu > Fichiers.":::
 
 5. Recherchez le fichier sur votre ordinateur, puis choisissez **Ouvrir**.
 
-5. Dans ce tutoriel, nous sélectionnons **Importer** pour ajouter le fichier Excel comme jeu de données, que nous utilisons ensuite pour créer des rapports et des tableaux de bord. Si vous sélectionnez **Charger**, le classeur Excel entier est chargé dans Power BI, où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
+5. Dans ce tutoriel, nous sélectionnons **Importer** pour ajouter le fichier Excel comme jeu de données, que nous utilisons ensuite pour créer des rapports et des tableaux de bord. Si vous sélectionnez **Charger**, le classeur Excel entier est chargé dans Power BI, où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
    
-   ![Choisir Importer](media/service-get-started/power-bi-import.png)
-6. Quand votre jeu de données est prêt, sélectionnez **Jeux de données**, puis **Créer un rapport** à côté du jeu de données **Financial sample** pour ouvrir l’éditeur de rapport. 
+   :::image type="content" source="media/service-get-started/power-bi-import.png" alt-text="Capture d’écran montrant l’option Importer sélectionnée.":::
+6. Quand votre jeu de données est prêt, sélectionnez **Plus d’options (...)** en regard de votre jeu de données Financial Sample, puis **Créer un rapport**.
+1. Ouvrez l’éditeur de rapport. 
 
-    ![Liste de jeux de données](media/service-get-started/power-bi-service-datasets.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-datasets.png" alt-text="Capture d’écran de Tout le contenu > Créer un rapport.":::
 
     Le canevas de rapport est vide. Nous voyons les volets **Filtres**, **Visualisations** et **Champs** à droite.
 
-    ![Canevas de rapport vide](media/service-get-started/power-bi-service-blank-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Capture d’écran d’un canevas de rapport vide.":::
 
-7. Notez qu’il existe une option **Mode Lecture** dans le volet de navigation supérieur. Si vous avez cette option, cela signifie que vous êtes actuellement en mode Edition. Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](../create-reports/service-the-report-editor-take-a-tour.md).
+    > [!TIP]
+    > Sélectionnez le bouton de navigation globale en haut à gauche pour réduire le volet de navigation. Votre canevas peut ainsi occuper plus de place.
+    >
+    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Bouton de navigation globale.":::
+    >
 
-    ![option Mode Lecture](media/service-get-started/power-bi-service-reading-view.png)
+7. Vous êtes actuellement en mode Edition. Notez l’option **Mode Lecture** dans la barre de menus. 
 
-    En mode Edition, vous pouvez créer et modifier vos rapports, car vous êtes le *propriétaire* du rapport. Autrement dit, vous en êtes le *créateur*. Lorsque vous partagez votre rapport avec vos collègues, ceux-ci peuvent uniquement interagir avec ce rapport en mode Lecture. Vos collègues sont donc des *consommateurs*. En savoir plus sur les [Mode Lecture et mode Édition](../consumer/end-user-reading-view.md).
+    :::image type="content" source="media/service-get-started/power-bi-service-reading-view.png" alt-text="Capture d’écran de l’option Mode Lecture.":::
 
+    En mode Edition, vous pouvez modifier des rapports puisque vous êtes à la fois le *propriétaire* et le *créateur* du rapport. Quand vous partagez votre rapport avec vos collègues, ces derniers ne peuvent souvent interagir avec ce rapport qu’en mode Lecture. Ils sont donc des *consommateurs* de rapports dans **Mon espace de travail**. 
 
 ## <a name="step-2-create-a-chart-in-a-report"></a>Étape 2 : Créer un graphique dans un rapport
-Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une fois que vous avez trouvé des informations intéressantes, vous pouvez créer un tableau de bord pour les suivre et voir leur évolution. Voyons comment cela fonctionne.
+Maintenant que vous êtes connecté aux données, vous pouvez les explorer. Si vous trouvez quelque chose d’intéressant, vous pouvez l’enregistrer dans le canevas du rapport. Vous pouvez ensuite l’épingler à un tableau de bord pour le superviser et voir comment il évolue dans le temps. Mais commençons par le commencement.
     
-1. Dans l’éditeur de rapport, nous utilisons le volet **Champs** à droite de la page pour créer une visualisation. Cochez les cases en regard de **Gross Sales** (Chiffre d’affaires brut) et de **Date**.
+1. Dans l’éditeur de rapport, accédez tout d’abord au volet **Champs** à droite de la page pour créer une visualisation. Sélectionnez le champ **Gross Sales**, puis le champ **Date**.
    
-   ![liste Champs](media/service-get-started/power-bi-service-fields-pane-selected.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-fields-pane-selected.png" alt-text="Capture d’écran de la liste de champs.":::
 
-    Power BI analyse les données et crée une visualisation. Si vous avez sélectionné **Date** en premier, vous verrez un tableau. Si vous avez sélectionné **Gross Sales** (Chiffre d’affaires brut) en premier, vous voyez un histogramme. 
+    Power BI analyse les données et crée une visualisation sous forme d’histogramme. 
 
-2. Modifier le mode d’affichage de vos données. Examinons ces données sous forme de graphique en courbes. Dans le volet **Visualisations**, sélectionnez l’icône de graphique en courbes.
-   
-   ![Éditeur de rapport avec le graphique en courbes sélectionné](media/service-get-started/power-bi-service-select-line-chart.png)
+    > [!NOTE]
+    > Si vous avez sélectionné le champ **Date** en premier à la place du champ **Gross Sales**, vous voyez une table. Pas de souci. Nous allons changer la visualisation à l’étape suivante.
 
-3. Comme ce graphique semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône en forme d’épingle. Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord et mise à jour. Vous pouvez ainsi connaître la valeur la plus récente d’un seul coup d’œil.
-   
-   ![Icône Épingler](media/service-get-started/power-bi-service-pin-visual.png)
+    Des symboles Sigma apparaissent en regard de certains champs, car Power BI a détecté qu’ils contiennent des valeurs numériques.
 
-4. Comme ce rapport est nouveau, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Donnez un nom à votre rapport (par exemple, *Sales over time* (évolution des ventes)), puis sélectionnez **Enregistrer**. 
+    :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Champs avec des symboles Sigma.":::
 
-5. Sélectionnez **Nouveau tableau de bord** et nommez-le *Financial sample for tutorial* (Exemple financier pour le tutoriel). 
+2. Examinons à présent les données d’une autre façon. Les graphiques en courbes sont de bons visuels pour afficher des valeurs dans le temps. Dans le volet **Visualisations**, sélectionnez l’icône **Graphique en courbes**.
    
-   ![Nommer le rapport](media/service-get-started/power-bi-pin.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="Capture d’écran de l’éditeur de rapport avec le graphique en courbes sélectionné.":::
+
+3. Comme ce graphique semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône en forme d’épingle.
    
-6. Sélectionnez **Épingler**.
+   :::image type="content" source="media/service-get-started/power-bi-service-pin-visual.png" alt-text="Capture d’écran de l’icône Épingler.":::
+
+4. Comme ce rapport est nouveau, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Donnez un nom à votre rapport (par exemple, *Financial Sample report*), puis sélectionnez **Enregistrer**. 
+
+    Vous examinez à présent le rapport en mode Lecture. 
+
+6. Sélectionnez une nouvelle fois l’icône **Épingler**.
+ 
+5. Sélectionnez **Nouveau tableau de bord** et nommez-le par exemple *Financial Sample dashboard*. 
    
+   :::image type="content" source="media/service-get-started/power-bi-pin.png" alt-text="Capture d’écran du nom du tableau de bord.":::
+  
     Un message de réussite (en haut à droite) vous indique que la visualisation a été ajoutée sous forme de vignette à votre tableau de bord.
    
-    ![Boîte de dialogue Épinglé au tableau de bord](media/service-get-started/power-bi-pin-success.png)
+    :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Boîte de dialogue Épinglé au tableau de bord.":::
+
+    Une fois cette visualisation épinglée, elle est stockée dans votre tableau de bord. Les données restent à jour pour que vous puissiez suivre les dernières valeurs en un coup d’œil. Toutefois, si vous changez de type de visualisation dans le rapport, la visualisation dans le tableau de bord ne change pas.
 
 7. Sélectionnez **Accéder au tableau de bord** pour voir votre nouveau tableau de bord avec le graphique en courbes que vous avez épinglé sous forme de vignette. 
    
-   ![Tableau de bord avec la visualisation épinglée](media/service-get-started/power-bi-service-dashboard-tile.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Capture d’écran du tableau de bord avec la visualisation épinglée.":::
    
-8. Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport. Power BI vous renvoie sur le rapport en mode Lecture. 
+8. Notez la nouvelle vignette dans votre tableau de bord. Power BI vous renvoie sur le rapport en mode Lecture.
 
-1. Pour revenir en mode Edition, sélectionnez **Plus d’options** (...) dans le volet de navigation supérieur > **Modifier**. Une fois en mode Edition, vous pouvez continuer à explorer et à épingler des vignettes.
+1. Pour revenir en mode Edition, sélectionnez **Plus d’options** (...) dans la barre de menus > **Modifier**.
 
-    ![Sélectionner Modifier pour modifier le rapport](media/service-get-started/power-bi-service-edit-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-edit-report.png" alt-text="Capture d’écran de l’option Modifier sélectionnée pour modifier le rapport.":::
+
+    Une fois en mode Edition, vous pouvez continuer à explorer et à épingler des vignettes.
 
 ## <a name="step-3-explore-with-qa"></a>Étape 3 : Explorer avec Questions et réponses
 
-Pour une exploration rapide de vos données, essayez de poser une question dans la zone de Questions et réponses. Questions et réponses crée des requêtes en langage naturel sur vos données. Dans un tableau de bord, la zone Questions et réponses est en haut (**Poser une question sur vos données**). Dans un rapport, elle se trouve dans le volet de navigation supérieur (**Poser une question**).
+Pour une exploration rapide de vos données, essayez de poser une question dans la zone de Questions et réponses. Questions et réponses vous permet d’exécuter des requêtes en langage naturel sur vos données. Dans un tableau de bord, la zone Questions et réponses est en haut (**Poser une question sur vos données**), sous la barre de menus. Dans un rapport, elle se trouve dans la barre de menus supérieure (**Poser une question**).
 
-1. Pour revenir au tableau de bord, sélectionnez **Mon espace de travail** dans la barre noire de **Power BI**.
+1. Pour revenir au tableau de bord, sélectionnez **Mon espace de travail** dans la barre d’en-tête noire de **Power BI**.
 
-    ![Revenir à Mon espace de travail](media/service-get-started/power-bi-service-go-my-workspace.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-go-my-workspace.png" alt-text="Capture d’écran de Revenir à Mon espace de travail.":::
 
-1. Sous l’onglet **Tableaux de bord**, sélectionnez votre tableau de bord.
+1. Dans **Mon espace de travail**, sélectionnez votre tableau de bord.
 
-    ![Sélectionner votre tableau de bord](media/service-get-started/power-bi-service-dashboard-tab.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tab.png" alt-text="Capture d’écran de Sélectionner votre tableau de bord.":::
 
-1. Sélectionnez **Poser une question sur vos données**. Questions et réponses propose automatiquement un certain nombre de suggestions.
+1. Sélectionnez **Poser une question sur vos données**. Questions et réponses propose automatiquement un certain nombre de suggestions. 
 
-    ![canevas Questions et réponses](media/service-get-started/power-bi-service-new-qanda.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Capture du canevas Questions et réponses.":::
 
     > [!NOTE]
     > Si vous ne voyez pas les suggestions, activez **Nouvelle expérience de Questions et réponses**.
 
-2. Certaines des suggestions renvoient une valeur unique. Par exemple, sélectionnez **maximum sale**.
+    :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="Capture d’écran de l’activation de Nouvelle expérience Questions et réponses.":::
+
+1. Certaines suggestions retournent une valeur unique. Par exemple, sélectionnez **what is the average cog**.
 
     Questions et réponses recherche une réponse et la présente sous forme de *carte*.
 
-    ![Carte Maximal sale](media/service-get-started/power-bi-service-qanda-maximum-sale.png)
+3. Sélectionnez **Épingler un visuel** et épinglez cette visualisation au tableau de bord Financial Sample.
 
-3. Sélectionnez l’icône en forme d’épingle ![Icône Épingler](media/service-get-started/pbi_pinicon.png) pour afficher cette visualisation sur le tableau de bord Financial Sample for tutorial.
+    :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Capture d’écran de l’épinglage du visuel.":::
 
-1. Faites défiler vers le bas la liste **Questions pour vous aider à démarrer** et sélectionnez **average cog for each month**. 
+1. Revenez à Questions et réponses et sélectionnez **Montrer toutes les suggestions**.
+1. Sélectionnez **total profit by country**. 
 
-    ![Average COG for each month](media/service-get-started/power-bi-service-qanda-average-cog.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Capture d’écran du total des bénéfices par pays.":::
 
-1. Épinglez aussi l’histogramme au tableau de bord **Financial Sample for tutorial**.
+1. Épinglez aussi la carte au tableau de bord Financial Sample.
 
-1. Placez le curseur après *by month* dans la zone Questions et réponses et tapez *en courbes*. Sélectionnez **en courbes (Type de visualisation)** . 
+1. Dans le tableau de bord, sélectionnez la carte que vous venez d’épingler. Questions et réponses s’ouvre à nouveau. 
+1. Placez le curseur après *by country* dans la zone Questions et réponses, puis tapez *as bar*. Power BI crée un graphique à barres avec les résultats.
 
-    ![Visualisation de graphique en courbes](media/service-get-started/power-bi-service-qanda-as-line.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-bar.png" alt-text="Capture d’écran d’une visualisation sous forme de graphique à barres.":::
+
+1. Épinglez aussi le graphique à barres à votre tableau de bord Financial Sample.
 
 4. Sélectionnez **Quitter Questions et réponses** pour revenir sur votre tableau de bord, où vous voyez les nouvelles vignettes que vous avez créées. 
 
-   ![Tableau de bord avec le graphique épinglé](media/service-get-started/power-bi-service-dashboard-qna.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Capture d’écran du tableau de bord avec les visuels Questions et réponses épinglés.":::
 
-   Même si vous avez remplacé le graphique par un graphique en courbes, la vignette continue à montrer un histogramme, car c’est la visualisation que vous avez épinglée à l’origine. 
+   Même si vous remplacez la carte par un graphique à barres dans Questions et réponses, cette vignette continue à montrer une carte puisque c’est bien une carte que vous avez épinglée. 
 
 ## <a name="step-4-reposition-tiles"></a>Étape 4 : Repositionner les vignettes
 
-Le tableau de bord est large. Nous pouvons réorganiser les vignettes pour optimiser l’utilisation de l’espace du tableau de bord.
+Nous pouvons réorganiser les vignettes pour optimiser l’utilisation de l’espace du tableau de bord.
 
 1. Faites glisser vers le haut le coin en bas à droite de la vignette du graphique en courbes *Gross Sales*, jusqu’à ce qu’il soit à la même hauteur que la vignette Sales, puis relâchez-le.
 
-    ![Redimensionner la vignette](media/service-get-started/power-bi-service-resize-tile.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Capture d’écran du redimensionnement de la vignette.":::
 
     À présent, les deux vignettes ont la même hauteur.
 
-    ![Vignette redimensionnée](media/service-get-started/power-bi-service-resized-tile.png)
+1. Sélectionnez **Plus d’options (...)** pour la vignette Average of COGS > **Modifier les détails**. 
 
-1. Faites glisser la vignette du graphique en courbes *Average of COGS* jusqu’à ce qu’elle tienne sous le graphique en courbes *Gross Sales*.
+    :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Capture d’écran du menu Plus d’options pour une vignette.":::
+
+1. Dans la zone **Titre**, tapez *Average Cost of Goods Sold* > **Appliquer**.
+
+    :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Capture d’écran de la boîte de dialogue Modifier les détails.":::
+
+1. Réorganisez les autres visuels pour qu’ils tiennent tous à l’écran.
 
     C’est mieux.
 
-    ![Tableau de bord réorganisé](media/service-get-started/power-bi-service-rearranged-dashboard.png)
-
-## <a name="step-5-interact-with-tiles"></a>Étape 5 : Interagir avec les vignettes
-
-Voici une dernière interaction à observer, avant de commencer à créer vos propres tableaux de bord et rapports. La sélection des différentes vignettes donne des résultats différents. 
-
-1. Commencez par sélectionner la vignette du graphique en courbes *Gross Sales* que vous avez épinglée à partir du rapport. 
-
-    Power BI ouvre le rapport en mode Lecture. 
-
-2. Sélectionnez le bouton précédent du navigateur. 
-
-1. Maintenant, sélectionnez la vignette de l’histogramme *Average of COGS* que vous avez créée dans Questions et réponses. 
-
-    Power BI n’ouvre pas le rapport. Questions et réponses s’ouvre à la place, car c’est là que vous avez créé le graphique.
+    :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Capture d’écran du tableau de bord réorganisé.":::
 
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de données, le rapport et le tableau de bord. 
 
-1. Dans le volet de navigation, vérifiez que vous êtes dans **Mon espace de travail**.
-2. Sélectionnez l’onglet **Jeux de données** et recherchez le jeu de données que vous avez importé pour ce tutoriel.  
-3. Sélectionnez **Plus d’options** (...) > **Supprimer**.
+1. Sélectionnez **Mon espace de travail** dans la barre d’en-tête noire de **Power BI**.
+2. Sélectionnez **Plus d’options (...)** en regard du jeu de données Financial Sample > **Supprimer**.
 
-    ![Supprimer le jeu de données](media/service-get-started/power-bi-service-delete-dataset.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-delete-dataset.png" alt-text="Capture d’écran de la suppression du jeu de données.":::
 
-    Quand vous supprimez le jeu de données, vous voyez un avertissement indiquant que **Toutes les vignettes de rapport et de tableau de bord contenant des données de ce jeu de données sont également supprimées**.
+    Vous voyez un avertissement indiquant que **toutes les vignettes de rapport et de tableau de bord contenant des données de ce jeu de données seront également supprimées**.
 
 4. Sélectionnez **Supprimer**.
 

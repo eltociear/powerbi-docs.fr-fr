@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e499f6894890c379b76bfe0a11428715add30dfb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5e76cdfc2fd8ad4a90290ecaa559d502d5f847e6
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224887"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034425"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 
@@ -42,25 +42,25 @@ Pour utiliser le connecteur **Azure Consumption Insights** dans **Power BI Deskt
 
 1. Sélectionnez **Se connecter**.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+   ![Capture d’écran de la boîte de dialogue Microsoft Azure Consumption Insights. Sélectionnez Se connecter.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
    Dans la boîte de dialogue qui s’affiche, entrez votre **Numéro d’inscription Azure**.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+   ![Capture d’écran de la boîte de dialogue permettant d’entrer le numéro d’inscription Azure.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
    * Vous pouvez trouver celui-ci sur le portail [Azure Enterprise Portal](https://ea.azure.com), à l’emplacement montré dans l’image suivante :
 
-  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
+  ![Capture d’écran du portail Azure Enterprise Portal pour obtenir le numéro d’inscription.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
    Cette version du connecteur prend en charge seulement les inscriptions d’entreprise depuis https://ea.azure.com. Les inscriptions en Chine ne sont pas prises en charge actuellement.
 
    Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+   ![Capture d’écran de la boîte de dialogue permettant d’entrer la clé d’accès pour se connecter à Microsoft Azure Consumption Insights.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
    * Votre clé d’accès pour l’inscription est disponible sur le portail [Microsoft Azure Enterprise Portal](https://ea.azure.com).
 
-  ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
+  ![Capture d’écran du portail Azure Enterprise Portal montrant les clés d’accès à l’inscription.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre **Navigateur** apparaît et montre neuf tables disponibles :
 
@@ -78,7 +78,7 @@ Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se conn
 
 Vous pouvez activer une case à cocher en regard d’une table pour afficher un aperçu. Vous pouvez sélectionner une ou plusieurs tables en cochant la case en regard de leur nom, puis sélectionner **Charger**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
+![Capture d’écran de la boîte de dialogue Navigateur montrant toutes les tables disponibles.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > Les tableaux *Résumé* et *Grille tarifaire* sont disponibles seulement pour la clé d’API au niveau inscription. De plus, les données de ces tables sont, par défaut, celles du mois en cours pour l’*Utilisation* et la *Grille tarifaire*. Les tables *Résumé* et *Place de marché* ne sont pas limitées au mois en cours.
@@ -87,11 +87,11 @@ Vous pouvez activer une case à cocher en regard d’une table pour afficher un 
 
 Quand vous sélectionnez **Charger**, les données sont chargées dans **Power BI Desktop**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+![Capture d’écran de la boîte de dialogue qui s’affiche quand les données sont chargées.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
 Une fois les données sélectionnées chargées, les tables et les champs que vous avez sélectionnés sont visibles dans le volet **Champs**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
+![Capture d’écran du volet Champs après le chargement d’une table à partir de la fenêtre de navigateur.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## <a name="using-azure-consumption-insights"></a>Utilisation d’Azure Consumption Insights
 Pour utiliser le connecteur **Azure Consumption Insights**, vous accédez aux fonctionnalités Entreprise du portail Azure.
@@ -116,7 +116,7 @@ Dans la **Barre de formule**, tapez :
 
 L’illustration suivante montre une collection d’exemples qui apparaît.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
+![Capture d’écran d’un exemple de collection.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 Quand vous utilisez des rapports et que vous créez des requêtes, vous pouvez :
 
@@ -148,7 +148,7 @@ Dans l’**Éditeur de requête**, sélectionnez **Éditeur avancé** dans la se
     in     
         data
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
+![Capture d’écran d’une boîte de dialogue permettant de créer une requête dans l’Éditeur avancé.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
 Vous devez remplacer la valeur *enrollmentNumber* par votre numéro d’inscription. Vous pouvez obtenir votre numéro auprès d’[Azure Enterprise Portal](https://ea.azure.com). Le paramètre *numberOfMonth* spécifie le nombre de mois de données sur lesquels vous voulez revenir à partir de la date actuelle. Utilisez zéro (0) pour le mois en cours.
 
@@ -160,7 +160,7 @@ Vous devez ensuite déplacer les colonnes ou mesures personnalisées que vous av
 1. Ouvrez l’application Bloc-notes (ou un autre éditeur de texte).
 2. Sélectionnez la mesure à déplacer, puis copiez le texte du champ *Formule* et collez-le dans l’application Bloc-notes.
 
-   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
+   ![Capture d’écran montrant le champ Formule des colonnes et des mesures.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Remplacez *Query1* par le nom de la table des détails d’origine.
 4. Pour créer des mesures de table et des colonnes personnalisées, cliquez avec le bouton droit sur votre table, puis choisissez **Nouvelle mesure**. Ensuite, coupez et collez chacune de vos mesures et colonnes stockées.
 
@@ -169,7 +169,7 @@ De nombreux tableaux de bord comportent des tables supplémentaires qui sont uti
 
 - Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez à nouveau vos tables en fonction des besoins.
 
-    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
+    ![Capture d’écran de la boîte de dialogue Créer une relation. Sélectionnez Gérer les relations.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : Vérifier vos visuels et ajuster la mise en forme des champs au besoin
 À ce stade, la plupart de vos visuels, tables et vues détaillées d’origine devraient fonctionner comme prévu. Toutefois, certaines modifications mineures peuvent être nécessaires pour en mettre en forme avec précision l’apparence. Prenez un peu de temps pour jeter un coup d’œil à chacun de vos tableaux de bord et visuels pour vérifier qu’ils s’affichent comme vous le souhaitez.

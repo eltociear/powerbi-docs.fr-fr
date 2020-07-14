@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 59400f05544efa9f4ffcca6ef3ebdf1b12423d33
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83564383"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034157"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -28,11 +28,11 @@ Chaque déploiement de Power BI est constitué de deux clusters : un cluster w
 
 Le cluster **WFE** gère le processus d’authentification et de connexion initial pour Power BI. Il utilise AAD pour authentifier les clients et fournir des jetons pour les connexions clientes ultérieures au service Power BI. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et pour télécharger des fichiers et du contenu statique. Power BI utilise **Azure Content Delivery Network** (CDN) pour distribuer efficacement les fichiers et le contenu statiques nécessaires aux utilisateurs en fonction des paramètres régionaux.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
+![Diagramme montrant l’architecture de Power BI pour le cluster front-end web.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
 C’est par le biais du cluster **principal** que les clients authentifiés interagissent avec le service Power BI. Le cluster **principal** gère les visualisations, les tableaux de bord utilisateur, les jeux de données, les rapports, le stockage de données, les connexions de données, l’actualisation des données et d’autres aspects de l’interaction avec le service Power BI. Le **rôle Passerelle** sert de passerelle entre les demandes des utilisateurs et le service Power BI. Les utilisateurs n’interagissent directement avec aucun rôle autre que le **rôle Passerelle**. Le rôle **Gestion des API Azure** finira par gérer le **rôle Passerelle**.
 
-![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
+![Diagramme montrant l’architecture de Power BI pour le cluster back-end web.](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
 > [!IMPORTANT]
 > Il est important de noter que seuls les rôles **Gestion des API Azure** (APIM) et **Passerelle** (GW) sont accessibles par le biais de l’Internet public. Ils fournissent entre autres des fonctionnalités d’authentification, d’autorisation, de protection DDoS, de limitation, d’équilibrage de charge et de routage.

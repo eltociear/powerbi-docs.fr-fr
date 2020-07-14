@@ -7,19 +7,19 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d1120b15974d0e747dc60cf2c56dff1135c9d29c
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 85dc7e9807e11114c4fb6abb988d10c583b9e56c
+ms.sourcegitcommit: 7d7bb755d5a5af30d2b0eab89fb56e4498514890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782518"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85837036"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 Avec le service Power BI (app.powerbi.com), vous pouvez publier votre rapport dans Microsoft PowerPoint et créer facilement un ensemble de diapositives basées sur votre rapport Power BI. Quand vous exportez vers PowerPoint, voici ce qui se produit :
@@ -40,7 +40,7 @@ Dans le **service Power BI**, sélectionnez un rapport pour l’afficher sur le
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Quand le rapport que vous voulez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Exporter** > **PowerPoint** dans la barre de menus.
+Quand le rapport que vous souhaitez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Fichier** > **Exporter vers PowerPoint** dans la barre de menus.
 
 ![Sélectionner Exporter dans la barre de menus](media/end-user-powerpoint/power-bi-export.png)
 
@@ -86,6 +86,10 @@ Quand vous voyez à une diapositive, vous voyez que chaque page du rapport est u
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter vers PowerPoint**.
  
+
+* Si vous ne voyez pas l’option **Exporter**, vérifiez que vous avez bien activé « Nouvelle apparence » et que vous avez devant vous un rapport (pas un tableau de bord).
+
+    ![Capture d’écran du bouton bascule Nouvelle apparence](media/end-user-powerpoint/power-bi-new-look.png)
 
 * Les [filtres d’URL](../collaborate-share/service-url-filters.md) ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
 

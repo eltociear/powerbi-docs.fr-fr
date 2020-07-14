@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8f5e39d320ca0135665977e740fd1dedecb988b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c0a7ef3ef7ce62ca1939791c3dcf198428f1353c
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224845"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034356"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Appliquer le paramètre Intégrité référentielle supposée dans Power BI Desktop
 Lorsque vous vous connectez à une source de données à l’aide de **DirectQuery**, vous pouvez utiliser l’option **Intégrité référentielle supposée** pour exécuter des requêtes plus efficaces sur votre source de données. Cette fonctionnalité impose quelques exigences de données sous-jacentes, et n’est disponible qu’en utilisant **DirectQuery**.
 
 Le paramètre **Intégrité référentielle supposée** permet aux requêtes sur la source de données d’utiliser des instructions de **JOINTURE INTERNE** plutôt que de **JOINTURE EXTERNE**, ce qui améliore l’efficacité des requêtes.
 
-![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Capture d’écran d’une boîte de dialogue Modifier la relation vous permettant de sélectionner Intégrité référentielle supposée.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 ## <a name="requirements-for-using-assume-referential-integrity"></a>Conditions d’utilisation du paramètre Intégrité référentielle supposée
 Il s’agit d’un paramètre avancé qui est activé uniquement en cas d’utilisation de **DirectQuery**pour la connexion aux données. Pour que le paramètre **Intégrité référentielle supposée** fonctionne correctement, les conditions suivantes sont requises :
@@ -36,18 +36,18 @@ L’exemple suivant montre comment le paramètre **Intégrité référentielle s
 
 1. Dans l’illustration suivante qui présente les tables **Orders** et **Products**, notez qu’il existe une intégrité référentielle entre **Orders[ProductID]** et **Products[ProductID]** . La colonne **[ProductID]** de la table **Orders** n’a jamais la valeur *Null*, et chaque valeur apparaît également dans la table **Products**. Ainsi, le paramètre **Intégrité référentielle supposée** devrait être défini pour obtenir des requêtes plus efficaces (l’utilisation de ce paramètre ne modifie pas les valeurs affichées dans les éléments visuels).
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
+   ![Capture d’écran de la table Orders et de la table Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
 2. Dans l’image suivante, vous pouvez remarquer qu’il n’existe pas d’intégrité référentielle entre **Orders[DepotID]** et **Depots[DepotID]** , car la valeur de **DepotID** est *Null* pour certaines entrées de la table *Orders*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+   ![Capture d’écran de la table Orders et de la table Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Enfin, il n’existe aucune intégrité référentielle entre **Orders[CustomerID]** et **Customers[CustID]** dans les tables suivantes. La colonne **CustomerID** contient des valeurs (en l’occurrence, *CustX*) qui n’existent pas dans la table *Customers*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
-   ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
+   ![Capture d’écran de la table Orders et de la table Customers.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
 ## <a name="setting-assume-referential-integrity"></a>Définition du paramètre Intégrité référentielle supposée
 Pour activer cette fonctionnalité, activez la case à cocher en regard du paramètre **Intégrité référentielle supposée**, comme illustré dans l’image suivante.
 
-![](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Capture d’écran d’une boîte de dialogue Modifier la relation vous permettant de sélectionner Intégrité référentielle supposée.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 Une fois sélectionné, le paramètre est validé par rapport aux données pour s’assurer qu’il n’y a pas de valeur *Null* ou de lignes incohérentes. *Toutefois*, lorsque le nombre de valeurs est très important, la validation ne garantit pas l’absence de problème d’intégrité référentielle.
 

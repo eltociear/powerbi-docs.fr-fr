@@ -9,19 +9,19 @@ ms.topic: reference
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c6c3ccdc547a8e9fb4e2d471365c9da67f7cf58a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 19189529637fe5511ebd6f736c17b8a10a1d2ef9
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130291"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033781"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveaux de confidentialité Power BI Desktop
 Dans **Power BI Desktop**, les niveaux de confidentialité spécifient un niveau d’isolement qui définit le degré d’isolement d’une source de données par rapport aux autres sources de données. Bien qu'un niveau d'isolement restrictif empêche l’échange d’informations entre les sources de données, cela peut réduire les fonctionnalités et affecter les performances.
 
 Le paramètre **Niveaux de confidentialité**, accessible via **Fichier > Options et paramètres > Options** puis **Fichier actuel > Confidentialité**, détermine si Power BI Desktop utilise vos paramètres de niveau de confidentialité pendant le regroupement de données. Cette boîte de dialogue inclut un lien vers la documentation de Power BI Desktop sur les niveaux de confidentialité (cet article).
 
-![](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Capture d’écran de la boîte de dialogue Options.](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
 ## <a name="configure-a-privacy-level"></a>Configurer le niveau de confidentialité
 Les niveaux de confidentialité vous permettent de spécifier un niveau d'isolement qui définit le degré d'isolement d'une source de données par rapport aux autres sources de données.
@@ -37,7 +37,7 @@ La boîte de dialogue des paramètres **Confidentialité** se trouve, pour chaqu
 
 Pour configurer le niveau de confidentialité d’une source de données, sélectionnez la source de données, puis sélectionnez **Modifier**. À partir de la boîte de dialogue **Paramètres de Source de données** qui s'affiche, vous pouvez sélectionner le niveau de confidentialité approprié dans le menu déroulant en bas de la boîte de dialogue, comme illustré dans l'image suivante.
 
-![](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Capture d’écran de la boîte de dialogue Paramètres de la source de données.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > Vous devez configurer une source de données contenant des données très sensibles ou confidentielles en tant que source **privée**.

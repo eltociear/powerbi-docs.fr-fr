@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 07/02/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcf774af00fe65c5f9708f85f6270cda8405896f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4083304a13b75df900e25204b54f62368be43e70
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222574"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939491"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec *Power BI Desktop*, quand vous vous connectez à une source de données, vous pouvez toujours importer une copie des données dans Power BI Desktop. Pour certaines sources de données, une autre approche est possible : vous connecter directement à la source de données à l’aide de DirectQuery.
@@ -53,7 +53,7 @@ Il existe actuellement quelques limitations à l’utilisation de DirectQuery :
 
 - Des limitations sont imposées aux expressions DAX autorisées dans les mesures pour garantir des performances acceptables aux requêtes envoyées à la source de données sous-jacente.
 
-- Les données retournées sont limitées à un million de lignes avec DirectQuery, sauf avec une capacité Premium. Cette limite ne s’applique pas aux agrégations ou calculs utilisés pour créer le jeu de données retourné à l’aide de DirectQuery. Elle s’applique uniquement aux lignes retournées. Les capacités Premium peuvent définir des limites de lignes maximales, comme le décrit [ce billet](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
+- Il existe une limite d’un million de lignes pour les sources cloud. Les sources locales sont quant à elles limitées à une charge utile définie : environ 4 Mo par ligne (selon l’algorithme de compression propriétaire) ou 16 Mo de données pour l’intégralité du visuel. Certaines limites peuvent être levées si vous utilisez la capacité Premium. Cette limite ne s’applique pas aux agrégations ou calculs utilisés pour créer le jeu de données retourné à l’aide de DirectQuery. Elle s’applique uniquement aux lignes retournées. Les capacités Premium peuvent définir des limites de lignes maximales, comme le décrit [ce billet](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
     Par exemple, vous pouvez agréger 10 millions de lignes avec une requête exécutée sur la source de données. La requête retourne avec précision les résultats de cette agrégation à Power BI à l’aide de DirectQuery si les données Power BI retournées représentent moins de un million de lignes. Si DirectQuery retourne plus d’un million de lignes, Power BI retourne une erreur (sauf avec la capacité Premium, si le nombre de lignes est inférieur à la limite définie par l’administrateur).
 

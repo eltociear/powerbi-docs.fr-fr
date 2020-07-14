@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3857478e972caef0a53c1de82f6dcc96650a7386
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d741a489c5655e5a08f49f7197389a67c5d016ed
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225693"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034402"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]
@@ -40,12 +40,12 @@ Quand vous apportez une modification au tableau de bord que vous avez inclus dan
 
 1. Sélectionnez **Afficher les packs de contenu** dans le message.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
-2. Vous pouvez aussi sélectionner l’icône représentant une roue dentée dans le coin supérieur droit ![](media/service-organizational-content-pack-manage-update-delete/cog.png) et sélectionner **Afficher le pack de contenu**.
+   ![Capture d’écran d’une boîte de dialogue de message pour sélectionner Afficher les packs de contenu.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+2. Vous pouvez aussi sélectionner l’icône d’engrenage dans le coin supérieur droit ![Capture d’écran d’une icône d’engrenage](media/service-organizational-content-pack-manage-update-delete/cog.png) et sélectionner **Afficher le pack de contenu**.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
+   ![Capture d’écran de l’icône d’engrenage dans le coin supérieur droit.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
-   Remarquez l’icône d’avertissement ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Ceci vous indique que vous avez modifié le pack de contenu et qu’il ne correspond plus à ce qui vous avez publié.
+   Remarquez l’icône d’avertissement ![Capture d’écran de l’icône d’avertissement.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Ceci vous indique que vous avez modifié le pack de contenu et qu’il ne correspond plus à ce qui vous avez publié.
 3. Sélectionnez **Modifier**.  
 4. Apportez les modifications nécessaires dans la fenêtre **Mettre à jour le pack de contenu** , puis sélectionnez **Mettre à jour**. Un message **Réussite** s’affiche.
    
@@ -55,7 +55,7 @@ Quand vous apportez une modification au tableau de bord que vous avez inclus dan
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Modifier le public : développer ou restreindre l’accès
 Les créateurs de packs de contenu peuvent désormais développer ou restreindre l’accès aux packs de contenu.  Par exemple, vous avez publié un pack de contenu pour un public large et vous venez de décider d’en restreindre l’accès à un groupe moins large.  
 
-1. Sélectionnez l’icône représentant une roue dentée ![](media/service-organizational-content-pack-manage-update-delete/cog.png), puis choisissez **Afficher les packs de contenu**.
+1. Sélectionnez l’icône d’engrenage ![Capture d’écran de l’icône d’engrenage.](media/service-organizational-content-pack-manage-update-delete/cog.png) et choisissez **Afficher les packs de contenu**.
 2. Sélectionnez **Modifier**. 
 3. Apportez les modifications nécessaires dans la fenêtre **Mettre à jour le pack de contenu** , puis sélectionnez **Mettre à jour**. Par exemple, supprimez le groupe de distribution d’origine dans le champ **Groupes spécifiques** et remplacez-le par un autre groupe de distribution (qui contient moins de membres).
    
@@ -77,7 +77,7 @@ Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si v
 > 
 > 
 
-1. Pour supprimer un pack de contenu d’AppSource, accédez à l’espace de travail où vous avez créé le pack de contenu, sélectionnez l’icône représentant une roue dentée ![](media/service-organizational-content-pack-manage-update-delete/cog.png), puis choisissez **Afficher les packs de contenu**.
+1. Pour supprimer un pack de contenu dans AppSource, accédez à l’espace de travail où vous avez créé le pack de contenu, sélectionnez l’icône d’engrenage![Capture d’écran de l’icône d’engrenage](media/service-organizational-content-pack-manage-update-delete/cog.png) et choisissez **Afficher les packs de contenu**.
 2. Sélectionnez **Supprimer \> Supprimer**. 
    
    * Pour les membres du groupe qui n’ont pas personnalisé le pack de contenu, le tableau de bord et les rapports associés à ce pack de contenu sont automatiquement supprimés. Ils ne sont plus disponibles et le pack de contenu n’apparaît pas dans le volet de navigation.

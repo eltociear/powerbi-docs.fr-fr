@@ -5,16 +5,16 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 05/27/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: e1162ecfb9eee7d1a0bfaf5a7ef25244ec8935c0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3c36a2725748e2c701c65f1737c39f4d56128962
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226813"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034379"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Résolution des problèmes de la fonctionnalité Analyser dans Excel
 
@@ -45,22 +45,22 @@ Le niveau de bits des bibliothèques Excel doit correspondre à celui de la vers
 
 Pour télécharger les dernières bibliothèques Excel, visitez Power BI et sélectionnez la **flèche vers le bas** dans l’angle supérieur droit du service Power BI, puis sélectionnez **Analyser dans les mises à jour Excel**.
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
+![Capture d’écran de l’option de menu de flèche vers le bas du coin supérieur droit pour sélectionner les mises à jour d’Analyser dans Excel.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
 Dans la boîte de dialogue qui s’affiche, sélectionnez **Télécharger (version préliminaire)** .
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
+![Capture d’écran de la boîte de dialogue des mises à jour d’Analyser dans Excel pour sélectionner le bouton Télécharger ou Aperçu.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
 ## <a name="determining-whether-you-need-to-update-your-excel-libraries"></a>Déterminer si vous devez mettre à jour vos bibliothèques Excel
 Vous pouvez télécharger la version la plus récente des bibliothèques de fournisseur OLE DB Excel en suivant les liens de la section précédente. Lorsque vous avez téléchargé la bonne bibliothèque de fournisseur OLD DB et avez commencé l’installation, les vérifications sont effectuées par rapport à la version actuellement installée.
 
 Si vos bibliothèques clientes de fournisseur OLE DB Excel sont à jour, vous verrez une boîte de dialogue qui ressemble à ceci :
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+![Capture d’écran de la boîte de dialogue demandant la mise à jour si une version plus récente de la bibliothèque cliente du fournisseur OLE DB Excel est disponible.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 Autrement, si la nouvelle version que vous installez est plus récente que la version sur votre ordinateur, la boîte de dialogue suivante s’affiche :
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
+![Capture d’écran de la boîte de dialogue pour confirmer une mise à niveau lors de l’installation des bibliothèques clientes du fournisseur OLE DB Excel.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
 Si vous voyez la boîte de dialogue vous invitant à mettre à niveau, vous devez continuer l’installation pour obtenir la version la plus récente du fournisseur OLE DB sur votre ordinateur.
 

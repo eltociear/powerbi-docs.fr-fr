@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/02/2020
+ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 2782d639109b4901012e40ddb3d7c748bf063524
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 17c19fbdf1c5057d287f50531f2b679a19e3a30e
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393539"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939458"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -98,7 +98,7 @@ L’affectation de l’espace de travail à la [capacité Power BI Premium](serv
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Affecter une licence Power BI Pro à un utilisateur invité
 
-Si vous affectez une licence Power BI Pro de votre organisation à un utilisateur invité, celui-ci pourra voir le contenu partagé avec lui. Pour plus d’informations sur l’attribution de licences, consultez [Attribution de licences à des utilisateurs via la page Licences](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Avant d’attribuer des licences Pro à des utilisateurs invités, vérifiez auprès de votre responsable de compte Microsoft que vous remplissez les conditions de votre contrat avec Microsoft.
+Si vous affectez une licence Power BI Pro de votre organisation à un utilisateur invité, celui-ci pourra voir le contenu partagé avec lui. Pour plus d’informations sur l’attribution de licences, consultez [Attribution de licences à des utilisateurs via la page Licences](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Avant d’attribuer des licences Pro à des utilisateurs invités, consultez le site des [Conditions d’utilisation des produits](https://www.microsoft.com/licensing/terms) pour vérifier que vous êtes en conformité avec les conditions de votre contrat avec Microsoft.
 
 ![Diagramme de l’expérience d’un utilisateur invité avec une licence Pro provenant de votre locataire.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 

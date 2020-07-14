@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: b41d15329b7ce617803056d2d2b912a0afb7850c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cecb78ec986ddf672a9560598ccf68c95fa5d659
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227087"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034218"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi"></a>Utilisation de contrôles Microsoft Cloud App Security dans Power BI
 
@@ -59,7 +59,7 @@ Cloud App Security dispose également de deux détections dédiées et intégré
 
 Les étiquettes de sensibilité vous permettent de classifier et de protéger du contenu sensible, afin que les membres de votre organisation puissent collaborer avec des partenaires en dehors de votre organisation, tout en restant vigilant et conscient du contenu et des données sensibles. 
 
-Vous pouvez lire l’article sur les [étiquettes de sensibilité dans Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md), qui décrit en détail le processus d’utilisation d’étiquettes de sensibilité pour Power BI. Un [exemple de stratégie Power BI basée sur des étiquettes de sensibilité](#example) est donné ci-dessous.
+Vous pouvez lire l’article sur les [étiquettes de sensibilité dans Power BI](service-security-sensitivity-label-overview.md), qui décrit en détail le processus d’utilisation d’étiquettes de sensibilité pour Power BI. Un [exemple de stratégie Power BI basée sur des étiquettes de sensibilité](#example) est donné ci-dessous.
 
 ## <a name="built-in-cloud-app-security-detections-for-power-bi"></a>Détections Cloud App Security intégrées pour Power BI
 
@@ -133,9 +133,9 @@ Dans la fenêtre qui s’affiche, créez la stratégie de session. Les étapes n
 ## <a name="next-steps"></a>Étapes suivantes
 Cet article a expliqué comment Cloud App Security peut fournir des protections des données et des contenus pour Power BI. Les articles suivants pourraient également vous intéresser, car ils décrivent la protection des données pour Power BI et la prise en charge de contenu pour les services Azure qui l’activent.
 
-* [Vue d’ensemble de la protection des données dans Power BI](service-security-data-protection-overview.md)
-* [Activer les étiquettes de sensibilité des données dans Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Appliquer des étiquettes de sensibilité des données dans Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Vue d’ensemble des étiquettes de sensibilité dans Power BI](service-security-sensitivity-label-overview.md)
+* [Activer les étiquettes de sensibilité dans Power BI](service-security-enable-data-sensitivity-labels.md)
+* [Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 
 Les articles suivants sur Azure et la sécurité pourraient également vous intéresser :
 

@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 759957b6412f4835aaf170fcebb7fd2beac4e234
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0452dabef54cc899abf7a6cbbd6ab718bf22524e
+ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227175"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86034310"
 ---
 # <a name="data-protection-metrics-report"></a>Rapport des métriques de protection des données
 
 ## <a name="what-is-the-data-protection-metrics-report"></a>Qu’est-ce que le rapport des métriques de protection des données ?
-Le rapport de métriques  de protection des données est un rapport dédié que les [administrateurs Power BI](../service-admin-role.md) peuvent utiliser pour superviser et suivre l’utilisation et l’adoption des étiquettes de sensibilité des données dans leur locataire.
+Le rapport des métriques  de protection des données est un rapport dédié que les [administrateurs Power BI](../service-admin-role.md) peuvent utiliser pour superviser et suivre l’utilisation et l’adoption des étiquettes de sensibilité dans leur locataire.
 
 ![Rapport des métriques de protection des données](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
@@ -47,13 +47,13 @@ La première fois que vous ouvrez le rapport des métriques de protection des do
 
 Des versions améliorées du rapport des métriques de protection des données sont publiées régulièrement. Quand vous ouvrez le rapport, si une nouvelle version est disponible, vous êtes invité à indiquer si vous voulez ouvrir la nouvelle version. Si vous répondez « Oui », la nouvelle version du rapport se charge et remplace l’ancienne version. Toutes les modifications éventuellement apportées à l’ancien rapport et/ou à l’ancien jeu de données seront perdues. Vous pouvez choisir de ne pas ouvrir la nouvelle version, mais dans ce cas, vous ne bénéficiez pas des améliorations de la nouvelle version. 
 ## <a name="notes-and-considerations"></a>Remarques et considérations
-* Pour que le rapport des métriques de protection des données soit généré correctement, la [protection des informations](./service-security-enable-data-sensitivity-labels.md) doit être activée sur votre locataire et [des étiquettes de sensibilité doivent avoir été appliquées](../collaborate-share/service-security-apply-data-sensitivity-labels.md). 
+* Pour que le rapport des métriques de protection des données soit généré correctement, la [protection des informations](./service-security-enable-data-sensitivity-labels.md) doit être activée sur votre locataire et [des étiquettes de sensibilité doivent avoir été appliquées](./service-security-apply-data-sensitivity-labels.md). 
 * Pour accéder aux informations de Cloud App Security, votre organisation doit disposer de la [licence Cloud App Security](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing) appropriée.
 * Si vous décidez de partager des informations du rapport des métriques de protection des données avec un utilisateur qui n’est pas administrateur Power BI, n’oubliez pas que ce rapport contient des informations sensibles sur votre organisation.
 * Le rapport des métriques de protection des données est un type spécial de rapport et n’apparaît pas dans les listes « Partagé avec moi », « Récents » et « Favoris ».
 * Le rapport sur les métriques de protection des données n’est pas disponible pour les [utilisateurs externes (utilisateurs invités Azure Active Directory B2B)](../service-admin-azure-ad-b2b.md).
 ## <a name="next-steps"></a>Étapes suivantes
-* [Protection des données dans Power BI](./service-security-data-protection-overview.md)
+* [Étiquettes de sensibilité dans Power BI](./service-security-sensitivity-label-overview.md)
 * [Utilisation des contrôles Microsoft Cloud App Security dans Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Présentation du rôle d’administrateur du service Power BI](service-admin-role.md)
-* [Activer les étiquettes de sensibilité des données dans Power BI](service-security-enable-data-sensitivity-labels.md)
+* [Activer les étiquettes de sensibilité dans Power BI](service-security-enable-data-sensitivity-labels.md)

@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/27/2020
-ms.openlocfilehash: 6448fd85f281024aaaf03973496eaa0c4350c13b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 06/28/2020
+ms.openlocfilehash: 94419bb25aa00645b22a1dad1f97fcc792c3d63d
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226272"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939555"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Incorporer un composant WebPart Rapport dans SharePoint Online
 
 Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
 
-Quand vous utilisez la nouvelle option **Incorporer dans SharePoint Online**, les rapports incorporés sont entièrement sécurisés. Vous pouvez ainsi créer facilement des portails internes sécurisés.
+Quand vous utilisez l’option **Incorporer dans SharePoint Online**, les rapports incorporés respectent toutes les autorisations des éléments et la sécurité des données via la [sécurité au niveau des lignes (RLS)](../admin/service-admin-rls.md) : vous pouvez ainsi créer facilement des portails internes sécurisés.
 
 ## <a name="requirements"></a>Configuration requise
 

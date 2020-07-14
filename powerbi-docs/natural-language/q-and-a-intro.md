@@ -1,24 +1,24 @@
 ---
 title: Utiliser le langage naturel pour explorer vos données à l’aide de Questions et réponses dans Power BI
-description: Guide pratique pour utiliser Questions et réponses dans Power BI pour explorer vos données
+description: Guide pratique pour utiliser Questions et réponses dans Power BI afin d’explorer vos données
 author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 139c9cb31ecbb6853228c0d362b61d5a74debac5
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
+ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867780"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939668"
 ---
 # <a name="intro-to-power-bi-qa"></a>Présentation de Questions et réponses dans Power BI
 
-Parfois, le moyen le plus rapide d’obtenir une réponse à partir de vos données consiste à effectuer une recherche en langage naturel dans vos données. La fonctionnalité Questions et réponses de Power BI vous permet d’explorer vos données dans vos propres termes en langage naturel. La fonctionnalité Questions et réponses est interactive, voire même divertissante. Souvent, une question mène à d’autres questions, car les visualisations révèlent des chemins intéressants à suivre. Les questions ne sont qu’un début. Explorez vos données, affinez ou développez vos questions, découvrez de nouvelles informations, ciblez des détails ou effectuez un zoom arrière pour élargir la vue. L’expérience, qui s’appuie sur un stockage en mémoire, est interactive et rapide. 
+Parfois, le moyen le plus rapide d’obtenir une réponse à partir de vos données consiste à effectuer une recherche en langage naturel dans vos données. La fonctionnalité Questions et réponses de Power BI vous permet d’explorer vos données dans vos propres termes en langage naturel. La fonctionnalité Questions et réponses est interactive, voire même divertissante. Souvent, une question mène à d’autres questions, car les visualisations révèlent des pistes intéressantes à suivre. Les questions ne sont qu’un début. Explorez vos données, affinez ou développez vos questions, découvrez de nouvelles informations, ciblez des détails ou effectuez un zoom arrière pour élargir la vue. L’expérience, qui s’appuie sur un stockage en mémoire, est interactive et rapide. 
 
-La fonctionnalité Questions et réponses de Power BI est gratuite et à la disposition de tous les utilisateurs. Dans Power BI Desktop, les concepteurs de rapports peuvent utiliser Questions et réponses pour explorer les données et créer des visualisations. Dans le service Power BI, tout le monde peut explorer ses données avec Questions et réponses. Si vous êtes autorisé à modifier un tableau de bord ou un rapport, vous pouvez également épingler vos résultats de Questions et réponses.
+La fonctionnalité Questions et réponses de Power BI est gratuite et à la disposition de tous les utilisateurs. Dans Power BI Desktop, les concepteurs de rapports peuvent utiliser Questions et réponses pour explorer les données et créer des visualisations. Dans le service Power BI, tout le monde peut explorer ses données avec Questions et réponses. Nos applications mobiles prennent aussi en charge Questions et réponses, avec l’assistant virtuel Questions et réponses dans iOS et le visuel Questions et réponses sur les appareils Android. Si vous êtes autorisé à modifier un tableau de bord ou un rapport, vous pouvez également épingler vos résultats de Questions et réponses.
 
 ## <a name="how-to-use-qa"></a>Utilisation de Questions et réponses
 
@@ -66,11 +66,11 @@ Au fur et à mesure que vous tapez votre question, Questions et réponses tente 
 
 - Graphique en courbes
 - Graphique à barres
-- Matrix
-- Table de charge de travail
-- Card
-- Domaine
-- Graphique à secteurs
+- Matrice
+- Table
+- Carte
+- Zone
+- Graphique en secteurs
 - Graphique à nuages de points/à bulles
  
 ![Résultats visuels de Questions et réponses](media/qna-visual-results-date.png)
@@ -99,7 +99,7 @@ Par défaut, Questions et réponses est disponible en haut des tableaux de bord.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez intégrer le langage naturel dans vos rapports de plusieurs façons. Pour plus d’informations, voir les articles suivants :
+Vous pouvez intégrer le langage naturel dans vos rapports de plusieurs façons. Pour plus d’informations, consultez les articles suivants :
 
 * [Visuel de Questions et réponses](../visuals/power-bi-visualization-q-and-a.md)
 * [Bonnes pratiques pour Questions et réponses](q-and-a-best-practices.md)
