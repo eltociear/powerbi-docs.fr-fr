@@ -2,7 +2,7 @@
 title: Voir le contenu associé des tableaux de bord, rapports et jeux de données
 description: Navigation facilitée, affichage de contenu associé dans les tableaux de bord, rapports et jeux de données
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0930b9b38694ddbb054449951ccb41e9148a8b2c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d8a024fe64accd873398437105bdcee701361b26
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234967"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264314"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
 

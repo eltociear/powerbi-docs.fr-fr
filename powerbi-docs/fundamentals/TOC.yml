@@ -33,6 +33,10 @@
               href: service-self-service-signup-for-power-bi.md
             - name: Fonctionnalités par type de licence
               href: service-features-license-type.md
+            - name: "Obtenir de l’aide pour acheter Power BI\_Pro"
+              href: service-self-service-purchase-help.md
+            - name: Obtenir de l’aide pour s’inscrire à Power BI
+              href: service-self-service-sign-up-help.md
     - name: Guides pratiques
       items:
         - name: "Obtenir Power\_BI\_Desktop"

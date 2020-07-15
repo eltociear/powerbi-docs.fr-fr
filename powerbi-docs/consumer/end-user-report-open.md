@@ -2,18 +2,18 @@
 title: Afficher un rapport
 description: Cette rubrique montre comment les utilisateurs finaux et consommateurs de Power BI peuvent ouvrir et afficher un rapport Power BI.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 0750ac3546242cffa9858168bb8ff376d3aad8e9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a706864ef5bd0e4858cfe593a68e7d1f399e06df
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235971"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264339"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2e7445db843788293a20fbbebdffd2952dfeb6a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e1925c57869a58f111b77c6a50a1289224440ecb
+ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226194"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300996"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -122,8 +122,6 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 * Les rapports paginés sont pris en charge avec les scénarios d’incorporation sécurisée, et les rapports paginés avec des paramètres d’URL sont également pris en charge. Découvrez-en plus sur la [transmission de paramètres de rapport dans une URL pour un rapport paginé](../paginated-reports/report-builder-url-pass-parameters.md).
-
-* Ne prend pas en charge les utilisateurs invités externes avec Azure B2B.
 
 * L’incorporation sécurisée fonctionne pour les rapports publiés sur le service Power BI.
 
