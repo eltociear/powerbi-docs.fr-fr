@@ -2,18 +2,19 @@
 title: Présentation des signets dans les rapports du service Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les signets dans le service Power BI.
 author: mihart
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08b3c1287d8435c06735c5756e5f95275b2757a6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f8bd09bd55694bbd7c6a991d502dde45dad5f2e4
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235592"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162063"
 ---
 # <a name="what-are-bookmarks"></a>Qu’est-ce qu’un signet ?
 
