@@ -2,7 +2,7 @@
 title: Questions fréquentes des utilisateurs finaux dans Power BI
 description: Parcourez la liste des questions fréquemment posées et des réponses concernant le service Power BI et les applications mobiles Power BI.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.date: 05/20/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: b1dd04c84487b1da50c261043e7ccece397998b7
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 12d31c19e3f32068778eb6f3eb7b3b5b18e93847
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84160177"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215975"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 

@@ -2,19 +2,19 @@
 title: Utilisation de segments dans le service Power BI
 description: Un segment Power BI constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport.
 author: v-thepet
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d38d58e2087778be40b0200d0cf6dc181996b4e3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5c25f19a17ab24398b5a4992104b5487036e2171
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238688"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264173"
 ---
 # <a name="slicers-in-the-power-bi-service"></a>Segments dans le service Power BI
 
