@@ -47,6 +47,8 @@
       items:
         - name: Rapports Power BI
           items:
+            - name: Power BI Desktop et outils externes
+              href: desktop-external-tools.md
             - name: Ruban moderne Power BI
               href: desktop-ribbon.md
             - name: Utiliser la vue Rapport
