@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 178a2f2037a52b1b08e1006123c30eff1af18af6
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: cdb992ba337118c9f7fcfef8335dbc31e6e48032
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393746"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215301"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Définir et utiliser des tables de dates dans Power BI Desktop
 
@@ -22,19 +22,19 @@ ms.locfileid: "85393746"
 
 Pour plus d’informations sur ce comportement automatique, lisez l’article [Date/heure automatique dans Power BI Desktop](desktop-auto-date-time.md).
 
-De nombreux analystes de données préfèrent créer leurs propres tables de dates, ce qui ne pose aucun problème. Dans **Power BI Desktop**, vous pouvez spécifier la table que vous souhaitez que votre modèle utilise comme **table de dates**, puis créer des visuels, des tables, des mesures rapides, etc., liés à la date à l’aide des données de cette table de table. Lorsque vous spécifiez votre propre table de dates, vous contrôlez les hiérarchies de dates créées dans votre modèle de contrôle, puis vous les utilisez dans de **rapides mesures** et d’autres opérations exploitant la table de dates de votre modèle. 
+De nombreux analystes de données préfèrent créer leurs propres tables de dates, ce qui ne pose aucun problème. Dans **Power BI Desktop**, vous pouvez spécifier la table que vous souhaitez que votre modèle utilise comme **table de dates**, puis créer des visuels, des tables, des mesures rapides, etc., liés à la date à l’aide des données de cette table de table. Lorsque vous spécifiez votre propre table de dates, vous contrôlez les hiérarchies de dates créées dans votre modèle de contrôle, puis vous les utilisez dans de **rapides mesures** et d’autres opérations exploitant la table de dates de votre modèle.
 
-![](media/desktop-date-tables/date-tables_01.png)
+![Capture d’écran de Power BI Desktop montrant la boîte de dialogue « Marquer en tant que table de dates ».](media/desktop-date-tables/date-tables_01.png)
 
 ## <a name="setting-your-own-date-table"></a>Définition de votre propre table de dates
 
 Pour définir une **table de dates**, sélectionnez la table que vous souhaitez utiliser comme table de dates dans le volet **Champs**, cliquez sur la table puis sélectionnez **Marquer comme table de dates** dans le menu qui s’affiche, comme illustré dans l’image suivante.
 
-![](media/desktop-date-tables/date-tables_02.png)
+![Capture d’écran de Power BI Desktop montrant les options de filtre « Marquer en tant que table de dates » dans le volet Champs.](media/desktop-date-tables/date-tables_02.png)
 
 Vous pouvez également choisir la table puis sélectionner **Marquer comme table de dates** dans le ruban **Modélisation** présenté ici.
 
-![](media/desktop-date-tables/date-tables_02b.png)
+![Capture d’écran de Power BI Desktop montrant le bouton et les options de filtre « Marquer en tant que table de dates ».](media/desktop-date-tables/date-tables_02b.png)
 
 Lorsque vous spécifiez votre propre **table de dates**, Power BI Desktop effectue les validations suivantes de cette colonne et de ses données, pour vous assurer que les données :
 
@@ -51,7 +51,7 @@ Deux scénarios permettent de votre propre table de dates, chacun suivant un pro
 
 Une fois que vous spécifiez une table de dates, vous pouvez désigner la colonne qui servira de colonne de dates dans cette table. Pour cela, sélectionnez la table dans le volet **Champs**, puis cliquez avec le bouton droit sur la table et choisissez **Marquer comme table de dates > Paramètres de la table de dates**. La fenêtre suivante s’affiche, dans laquelle vous pouvez sélectionner la colonne à utiliser comme table de date dans le menu déroulant.
 
-![](media/desktop-date-tables/date-tables_03.png)
+![Capture d’écran de Power BI Desktop montrant la boîte de dialogue « Marquer en tant que table de dates » avec note importante.](media/desktop-date-tables/date-tables_03.png)
 
 Il est important de noter que lorsque vous spécifiez votre propre table de dates, **Power BI Desktop** ne crée pas automatiquement les hiérarchies qui seraient intégrées dans votre modèle à votre place. Si vous désélectionnez ultérieurement votre table de dates (et que n’avez plus de table de dates définie manuellement), Power BI Desktop recrée automatiquement pour vous les tables de dates intégrées, pour les colonnes de dates de la table.
 
@@ -63,11 +63,11 @@ Lorsque vous spécifiez votre propre **table de dates**, vous devez vous assurer
 
 1. Sélectionnez votre **table de dates** dans le volet **Champs** (en développant ce volet si nécessaire), puis choisissez la colonne à utiliser comme date.
    
-    ![](media/desktop-date-tables/date-tables_04.png) 
+    ![Capture d’écran de Power BI Desktop montrant le filtre Date dans le volet Champs.](media/desktop-date-tables/date-tables_04.png) 
 
 2. Dans l’onglet **Modélisation**, sélectionnez **Type de données :** puis cliquez sur la flèche déroulante pour afficher les types de données disponibles.
 
-    ![](media/desktop-date-tables/date-tables_05.png)
+    ![Capture d’écran de Power BI Desktop montrant l’onglet Modélisation avec le filtre Type de données sélectionné.](media/desktop-date-tables/date-tables_05.png)
 
 3. Spécifiez le type de données de votre colonne. 
 

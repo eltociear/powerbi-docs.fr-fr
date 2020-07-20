@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b195e0bc11068b819a2f3133ed9ae135e3c30ffb
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: e1a24d8d15881bf8a1948d91758c7592f75ea7ac
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485941"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214200"
 ---
 # <a name="on-premises-data-gateway-sizing"></a>Dimensionnement de la passerelle de données locale
 
@@ -33,7 +33,7 @@ La charge de travail _Données en cache_ récupère et transforme les données s
 1. **Extraction et transformation de données** : les données sont récupérées et, si nécessaire, transformées. Dans la mesure du possible, le Moteur Mashup Power Query transmet les étapes de transformation à la source de données, selon un processus appelé _[Query Folding](power-query-folding.md)_ . Si ce n’est pas possible, les transformations doivent être effectuées par la passerelle. Dans ce cas, elle consomme plus de ressources de processeur et de mémoire.
 1. **Transfert** : les données sont transférées au service Power BI. Une connexion Internet fiable et rapide est importante, en particulier pour les gros volumes de données.
 
-![Diagramme illustrant la passerelle de données locale qui se connecte aux sources locales : base de données relationnelle, classeur Excel et fichiers CSV. La passerelle récupère et transforme les données.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+![Diagramme des données du cache montrant la passerelle de données locale se connectant aux sources locales.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
 
 ### <a name="live-connection-and-directquery-workloads"></a>Charges de travail Connexion active et DirectQuery
 
@@ -46,7 +46,7 @@ Cette charge de travail demande des ressources processeur pour le routage des re
 
 Une connectivité fiable, rapide et cohérente est importante pour que les utilisateurs des rapports bénéficient d’une expérience réactive.
 
-![Diagramme illustrant la passerelle de données locale qui se connecte aux sources locales : base de données tabulaire Analysis Services et base de données relationnelle. La passerelle fonctionne principalement en mode Intermédiaire (passe-through).](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagramme de Connexion active et DirectQuery montrant la passerelle de données locale se connectant aux sources locales.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## <a name="sizing-considerations"></a>Considération sur le dimensionnement
 

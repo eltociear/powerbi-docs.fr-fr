@@ -8,18 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 18dc88404b84e786bfee0a15ac169a6e0c1496e4
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940009"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162364"
 ---
 # <a name="microsofts-bi-transformation"></a>Transformation BI de Microsoft
 
 Cet article s’adresse aux professionnels de l’informatique et aux responsables informatiques. Vous allez découvrir notre stratégie et notre vision en matière de décisionnel grâce auxquelles nous pouvons traiter nos données comme des ressources et les exploiter en permanence. Vous verrez également comment nous avons réussi à instaurer une culture de prise de décision métier basée sur les données avec Power BI.
 
-Voici tout d’abord quelques informations générales : aujourd’hui, l’explosion des données affecte les clients et les entreprises à une vitesse vertigineuse. Pour réussir dans cet environnement gourmand en données, il est nécessaire d’avoir dans son équipe des analystes et des dirigeants capables de convertir d’énormes quantités de données en insights succincts. Les outils de décisionnel développés par Microsoft ont révolutionné la façon dont nous explorons en interne nos données et obtenons les insights nécessaires pour stimuler les changements dans l’entreprise.
+Voici tout d’abord quelques informations générales : aujourd’hui, l’explosion des données affecte les clients et les entreprises à une vitesse vertigineuse. Pour réussir dans cet environnement gourmand en données, il est nécessaire d’avoir dans son équipe des analystes et des dirigeants capables de convertir d’énormes quantités de données en insights succincts. Les outils de décisionnel développés par Microsoft ont changé la façon dont nous explorons en interne nos données et obtenons les insights nécessaires pour stimuler les changements dans l’entreprise.
 
 Dans cette optique, comment votre organisation peut-elle également révolutionner la façon dont elle utilise les données ? Pour vous aider à comprendre, nous allons vous présenter le parcours suivi par Microsoft pour transformer son approche décisionnelle.
 

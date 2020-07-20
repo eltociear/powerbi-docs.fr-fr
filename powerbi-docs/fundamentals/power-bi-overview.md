@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 6a21288a8f2946bd1e1a874d0810dd9241b1ffe2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83564446"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216767"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Vos données peuvent être sous forme de feuille de calcul Excel ou de collection d’entrepôts de données hybrides locaux ou sur le cloud. Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser et de découvrir ce qui est important, et de partager ces informations avec qui vous voulez.
@@ -24,7 +24,7 @@ Power BI se compose des éléments suivants :
 - Un service SaaS (*Software as a Service*) en ligne appelé **service Power BI**. 
 - Des **applications mobiles** Power BI pour des appareils Windows, iOS et Android.
 
-![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-overview-blocks.png)
+![Diagramme de Power BI Desktop, Service et Mobile montrant leur intégration.](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Ces trois éléments &mdash;Power BI Desktop, le service et les applications mobiles&mdash; sont conçus pour vous permettre de créer, partager et consommer de façon optimale des insights métier, en fonction de vos besoins ou de votre rôle.
 
@@ -63,7 +63,7 @@ Que se passe-t-il si vous n’êtes pas prêt à migrer vers le cloud et souhait
 
 Vous pouvez créer, déployer et gérer localement des rapports Power BI mobiles et paginés avec la gamme d’outils et de services prêts à l’emploi de Power BI Report Server.
 
-![diagramme d’un déploiement local](media/power-bi-overview/power-bi-report-server2.png)
+![Diagramme de Power BI Desktop, Service et Mobile montrant leur intégration.](media/power-bi-overview/power-bi-report-server2.png)
 
 Power BI Report Server est une solution que vous déployez derrière votre pare-feu. Vous distribuez ensuite vos rapports aux utilisateurs appropriés de différentes façons afin de les afficher dans un navigateur web, sur un appareil mobile ou sous forme d’e-mail. Et comme Power BI Report Server est compatible avec Power BI dans le cloud, vous pouvez migrer vers le cloud quand vous êtes prêt. 
 

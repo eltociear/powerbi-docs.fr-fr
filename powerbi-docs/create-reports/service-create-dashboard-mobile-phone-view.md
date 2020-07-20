@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4d01c7c8b57dda6667ffcd744a7d914ff936b09
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bc1c9987205e86ee9a123bf8ba9afd567c59ff52
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231042"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264711"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
 Quand vous affichez les tableaux de bord en mode portrait sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour l’affichage en mode portrait sur les téléphones. Même si vous créez une vue téléphone, lorsque vous tournez le téléphone sur le côté, vous voyez le tableau de bord tel qu’il est disposé dans le service.
@@ -30,25 +30,25 @@ Vous recherchez des informations sur l’affichage des tableaux de bord sur un a
 1. Dans le service Power BI, ouvrez un tableau de bord.
 2. Sélectionnez la flèche en regard de **Affichage web** dans le coin supérieur droit, puis sélectionnez **Vue téléphone**.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
+    ![Capture d’écran du menu déroulant Vue web, présentant une flèche vers la vue téléphone.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
 
     Si vous n’êtes pas propriétaire du tableau de bord, cette option n’apparaît pas.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
+    ![Capture d’écran d’un tableau de bord de téléphone, montrant l’option permettant de modifier la vue pour désépingler, redimensionner et réorganiser les vignettes afin de les adapter à la vue téléphone.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
 
     La vue de modification du tableau de bord du téléphone s’ouvre. Ici, vous pouvez détacher, redimensionner et réorganiser les vignettes pour les ajuster à la vue téléphone. La version web du tableau de bord ne change pas.
 
 
 1. Sélectionnez une vignette pour la faire glisser, la redimensionner ou la détacher. Les autres vignettes se déplacent à mesure que vous faites glisser une vignette.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
+    ![Capture d’écran des vignettes de téléphone, montrant la sélection d’une vignette à faire glisser, redimensionner ou désépingler.](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
    
     Les vignettes désépinglées passent dans le volet Vignettes désépinglées, où elles restent, sauf si vous les replacez.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
+    ![Capture d’écran d’un tableau de bord de téléphone, montrant des vignettes dans le volet Vignettes désépinglées.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
 2. Si vous changez d’avis, sélectionnez **Réinitialiser les vignettes** pour qu’elles retrouvent leur taille et leur ordre de départ.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
+    ![Capture d’écran du volet Vignettes désépinglées, présentant une flèche vers Réinitialiser les vignettes.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
    
     L’ouverture de la vue téléphone dans le service Power BI modifie légèrement la taille et la forme des vignettes sur un téléphone. Par conséquent, pour que le tableau de bord retrouve l’apparence qu’il avait avant l’ouverture dans la vue de modification du téléphone, sélectionnez **Réinitialiser les vignettes**.
 3. Quand la disposition du tableau de bord sur le téléphone vous convient, sélectionnez la flèche en regard de **Vue téléphone** dans le coin supérieur droit, puis sélectionnez **Affichage web**.

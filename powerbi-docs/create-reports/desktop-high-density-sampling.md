@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a41af59873aa8e0504e7ee808a2e87dba1af1121
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83324629"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262875"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de lignes à haute densité dans Power BI
 À compter de la version de juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations échantillonne des données (sélectionnez une représentation explicite de ces données pour illustrer les variations des ventes au fil du temps) à partir des données de chaque magasin, et montre plusieurs séries, représentant ainsi les données sous-jacentes. Il s’agit d’une pratique courante pour la visualisation de données à haute densité. Cet article décrit en détail comment Power BI Desktop a amélioré son échantillonnage des données à haute densité.
 
-![](media/desktop-high-density-sampling/high-density-sampling_01.png)
+![Capture d’écran de graphiques en courbes, montrant des données d’échantillonnage à haute densité.](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > [!NOTE]
 > L’algorithme **Échantillonnage à haute densité** décrit dans cet article est disponible dans **Power BI Desktop** et dans le **service Power BI**.
@@ -39,7 +39,7 @@ Pour un visuel à haute densité, **Power BI** découpe vos données de façon a
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Valeurs minimales et maximales pour les visuels de ligne à haute densité
 Pour chaque visualisation, les limitations visuelles suivantes s’appliquent :
 
-* Le nombre maximal de points de données **affichés** sur la plupart des visuels est *3 500*, quel que soit le nombre de séries ou de points de données sous-jacents (voir les *exceptions* dans la liste à puces suivante). Par conséquent, si vous avez 10 séries avec 350 points de données chacune, le visuel a atteint sa limite globale maximale de points de données. Si vous avez une seule série, celle-ci peut comprendre jusqu’à 3 500 points de données si le nouvel algorithme estime qu’il s’agit de l’échantillonnage optimal pour les données sous-jacentes.
+* Le nombre maximal de points de données *affichés* sur la plupart des visuels est **3 500**, quel que soit le nombre de séries ou de points de données sous-jacents (voir les *exceptions* dans la liste à puces suivante). Par conséquent, si vous avez 10 séries avec 350 points de données chacune, le visuel a atteint sa limite globale maximale de points de données. Si vous avez une seule série, celle-ci peut comprendre jusqu’à 3 500 points de données si le nouvel algorithme estime qu’il s’agit de l’échantillonnage optimal pour les données sous-jacentes.
 
 * Le nombre maximal de séries pour un visuel est fixé à **60**. Si vous avez plus de 60 séries, divisez les données et créez plusieurs visuels représentant chacun au maximum 60 séries. Il est recommandé d’utiliser un **slicer** (segment) afin d’afficher uniquement des segments des données (seulement certaines séries). Par exemple, si vous affichez toutes les sous-catégories dans la légende, vous pouvez utiliser un slicer afin de filtrer par catégorie générale sur la même page de rapport.
 
@@ -77,7 +77,7 @@ Cette situation se produit souvent avec les info-bulles. Les valeurs haute et ba
 ## <a name="how-to-turn-on-high-density-line-sampling"></a>Comment activer un échantillonnage de ligne à haute densité
 Par défaut, le nouvel algorithme est **activé**. Pour modifier ce paramètre, accédez au volet **Mise en forme**, dans la carte **Général**. Dans la partie inférieure, vous pouvez voir un curseur bascule nommé **Échantillonnage à haute densité**. Pour désactiver celui-ci, faites-le glisser en position **Désactivé**.
 
-![](media/desktop-high-density-sampling/high-density-sampling_02.png)
+![Capture d’écran d’un échantillonnage à haute densité, présentant des flèches vers le volet Mise en forme, Général et Échantillonnage à haute densité.](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Le nouvel algorithme d’échantillonnage de ligne à haute densité constitue une amélioration importante apportée à Power BI. Vous devez cependant considérer certains points quand vous travaillez avec des valeurs et des données à haute densité.

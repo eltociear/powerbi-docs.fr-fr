@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a043e230ba74432254248ee70db495bc75a3d28b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3038463a9e3447ee9b38ae3cb178f3486d21bc80
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232508"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215105"
 ---
 # <a name="get-power-bi-desktop"></a>Obtenir Power BI Desktop
 Power BI Desktop vous permet de créer des requêtes, des modèles et des rapports avancés qui visualisent des données. Avec Power BI Desktop, vous pouvez construire des modèles de données, créer des rapports et partager votre travail en le publiant sur le service Power BI. Le téléchargement de Power BI Desktop est gratuit.
@@ -35,13 +35,13 @@ Il existe plusieurs façons d’accéder à la version la plus récente de Power
 
     - Dans le [service Power BI](https://docs.microsoft.com/power-bi/service-get-started), sélectionnez l’icône **Télécharger** en haut à droite, puis sélectionnez **Power BI Desktop**.
 
-      ![Télécharger Power BI Desktop à partir du service Power BI](media/desktop-get-the-desktop/getpbid_downloads.png)
+      ![Capture d’écran de Microsoft Store montrant l’option de téléchargement de Power BI Desktop.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
    - Accédez à la [page du produit Power BI Desktop](https://powerbi.microsoft.com/desktop/), puis sélectionnez **Télécharger gratuitement**.
   
 2. Une fois arrivé dans la page **Power BI Desktop** du Microsoft Store, sélectionnez **Installer**.
 
-     ![Obtenir Power BI Desktop sur le Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
+     ![Capture d’écran de Microsoft Store montrant l’option d’installation de Power BI Desktop.](media/desktop-get-the-desktop/getpbid_04.png)
 
 Obtenir Power BI Desktop à partir du Microsoft Store offre quelques avantages :
 
@@ -66,7 +66,7 @@ Les considérations et limitations suivantes s’appliquent quand vous installez
   
   Pour télécharger le fichier exécutable de Power BI Desktop à partir du Centre de téléchargement, sélectionnez **Télécharger** dans la [page du Centre de téléchargement](https://www.microsoft.com/download/details.aspx?id=58494). Ensuite, spécifiez si vous voulez télécharger un fichier d’installation 32 bits ou 64 bits.
 
-  ![Spécifier le fichier d’installation de Power BI Desktop](media/desktop-get-the-desktop/download-desktop-exe.png)
+  ![Capture d’écran du Centre de téléchargement montrant la case de téléchargement de Power BI Desktop 64 bits.](media/desktop-get-the-desktop/download-desktop-exe.png)
 
 ### <a name="install-power-bi-desktop-after-downloading-it"></a>Installer Power BI Desktop après l’avoir téléchargé
 Vous êtes invité à exécuter le fichier d’installation une fois son téléchargement terminé.
@@ -75,7 +75,7 @@ Vous êtes invité à exécuter le fichier d’installation une fois son téléc
 
 Quand vous lancez le package d’installation, Power BI Desktop s’installe en tant qu’application et s’exécute sur votre ordinateur.
 
-![Exécuter l’installation de Power BI Desktop](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Capture d’écran de l’installation de Power BI Desktop avec l’Assistant Installation.](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > L’installation de la version (MSI) téléchargée (dépréciée) et de la version Microsoft Store de Power BI Desktop sur le même ordinateur (parfois appelée installation *côte à côte*) n’est pas prise en charge. Désinstallez manuellement Power BI Desktop avant de le télécharger depuis le Microsoft Store.
@@ -84,7 +84,7 @@ Quand vous lancez le package d’installation, Power BI Desktop s’installe e
 ## <a name="using-power-bi-desktop"></a>Utilisation de Power BI Desktop
 Quand vous lancez Power BI Desktop, un écran de bienvenue s’affiche.
 
-![Écran d’accueil Power BI Desktop](media/desktop-get-the-desktop/getpbid_05.png)
+![Capture d’écran de l’installation de Power BI Desktop avec l’écran de bienvenue.](media/desktop-get-the-desktop/getpbid_05.png)
 
 Si vous utilisez Power BI Desktop pour la première fois (c’est-à-dire si l’installation n’est pas une mise à niveau), vous êtes invité à remplir un formulaire ou à vous connecter au service Power BI avant de pouvoir continuer.
 

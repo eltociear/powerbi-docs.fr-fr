@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e8ba3203728a72b26d188e96eb1fa66f62f89a55
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273221"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215122"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Aide pour les relations actives et inactives
 
@@ -29,7 +29,7 @@ Prenons l’exemple d’un modèle d’importation conçu pour analyser les perf
 
 Voici un diagramme de modèle partiel des deux tables.
 
-![Un diagramme de modèle contient deux tables : Vol et aéroport. La relation est décrite dans le paragraphe suivant.](media/relationships-active-inactive/flight-model-1.png)
+![Diagramme illustrant un modèle contenant deux tables : Vol et aéroport. La relation est décrite dans le paragraphe suivant.](media/relationships-active-inactive/flight-model-1.png)
 
 Il existe deux relations de modèle entre les tables **Flight** et **Airport**. Dans la table **Flight**, les colonnes **DepartureAirport** et **ArrivalAirport** sont liées à la colonne **Airport** de la table **Airport**. Dans la conception de schéma en étoile, la table **Aéroport** est décrite comme une [dimension de rôle actif](star-schema.md#role-playing-dimensions). Dans ce modèle, les deux rôles sont _aéroport de départ_ et _aéroport d’arrivée_.
 
@@ -39,13 +39,13 @@ Cette conception de modèle impose des restrictions sévères concernant la faç
 
 Voici la conception de modèle améliorée.
 
-![Le diagramme de modèle contient maintenant quatre tables : Date, vol, aéroport de départ et aéroport d’arrivée. La relation est décrite dans le paragraphe suivant.](media/relationships-active-inactive/flight-model-2.png)
+![Diagramme illustrant un modèle contenant quatre tables : Date, vol, aéroport de départ et aéroport d’arrivée.](media/relationships-active-inactive/flight-model-2.png)
 
 Le modèle a maintenant deux tables d’aéroports : **Aéroport de départ** et **Aéroport d’arrivée**. Les relations de modèle entre ces tables et la table **Vol** sont actives. Notez également que les noms des colonnes dans les tables **Aéroport de départ** et **Aéroport d’arrivée** sont précédés du mot _Départ_ ou _Arrivée_.
 
 La conception de modèle améliorée prend en charge la conception de rapport suivante.
 
-![Une page de rapport a deux segments et un visuel de table. Les segments sont le mois et l’aéroport de départ. Le visuel de table répertorie les aéroports d’arrivée et diverses statistiques.](media/relationships-active-inactive/flight-report-design.png)
+![Diagramme montrant une page de rapport a deux segments et un visuel de table. Les segments sont le mois et l’aéroport de départ.](media/relationships-active-inactive/flight-report-design.png)
 
 La page de rapport filtre par Melbourne comme aéroport de départ, et les groupes de visuels de table filtrent par aéroports d’arrivée.
 
@@ -86,7 +86,7 @@ Examinons à présent les différentes exigences en matière de modèles et de r
 
 Voici un diagramme de modèle partiel des deux tables.
 
-![Un diagramme de modèle contient deux tables : Ventes et Date. La table Ventes comprend six mesures. La relation est décrite dans le paragraphe suivant.](media/relationships-active-inactive/sales-model.png)
+![Diagramme illustrant un modèle contenant deux tables : Ventes et Date. La table Ventes comprend six mesures.](media/relationships-active-inactive/sales-model.png)
 
 Il existe deux relations de modèle entre les tables **Ventes** et **Date**. Dans la table **Ventes**, les colonnes **OrderDate** et **ShipDate** sont liées à la colonne **Date** de la table **Date**. Dans ce modèle, les deux rôles de la table **Date** sont _Date de commande_ et _Date d’expédition_. C’est la relation avec la colonne **OrderDate** qui est active.
 
@@ -110,7 +110,7 @@ CALCULATE(
 
 Cette conception de modèle prend en charge la conception de rapport suivante.
 
-![Une page de rapport a un segment et un visuel de table. Le segment est Trimestre et le visuel de table répertorie les statistiques de ventes mensuelles.](media/relationships-active-inactive/sales-report-design.png)
+![Diagramme montrant une page de rapport avec un segment et un visuel de table. Le segment est Trimestre et le visuel de table répertorie les statistiques de ventes mensuelles.](media/relationships-active-inactive/sales-report-design.png)
 
 Les filtres de page de rapport par trimestre 2019 Q4. Les visuels de table sont regroupés par mois et affichent différentes statistiques de ventes. Les mesures **Commandes** et **Commandes expédiées** donnent des résultats différents. Elles utilisent chacune la même logique de résumé (nombre de lignes de la table **Ventes**), mais une propagation différente du filtre de table **Date**.
 

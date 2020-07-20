@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 021b5f0856ef4ff3730102efda88fd089a36dfcf
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bd3ab4a1c6f702ad866211339a3d3a386c4981fa
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83320075"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264406"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Supposons que vous explorez des données. Vous pouvez le faire en créant des graphiques et des tableaux de bord ou en posant des questions avec **Questions et réponses**. Les visualisations et les réponses que vous voyez tirent leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? Il vient d’une source de données.
@@ -23,14 +23,14 @@ Dans cet article, nous allons aborder les types de sources de données auxquels 
 
 Vous pouvez obtenir des données à partir des sources de données dans Power BI en sélectionnant **Obtenir des données** en bas à gauche de la page.
 
-![](media/service-get-data/pbi-getdata-navigation-link.png) 
+![Capture d’écran d’Obtenir des données, représenté dans l’angle inférieur gauche de l’écran du service Power BI.](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 Une fois que vous avez sélectionné **Obtenir des données**, vous pouvez choisir les données auxquelles vous souhaitez accéder.
 
-![](media/service-get-data/pbi-getdata-startscreen.png)
+![Capture d’écran des options Obtenir des données permettant de choisir les données auxquelles vous voulez accéder.](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## <a name="discover-content"></a>Découvrir du contenu
-![](media/service-get-data/pbi-getdata-discovercontent.png)
+![Capture d’écran de la section Découvrir le contenu, montrant les logos des partenaires.](media/service-get-data/pbi-getdata-discovercontent.png)
 
 La section **Découvrir le contenu** contient toutes les données et tous les rapports dont vous avez besoin, déjà prêts. Dans Power BI, il existe deux types de packs de contenu : Organisation et Services. 
 
@@ -43,7 +43,7 @@ La section **Découvrir le contenu** contient toutes les données et tous les ra
 La section **Créer du contenu** contient des options qui vous permettent de créer et d’importer vous-même du contenu. Dans Power BI, il existe deux moyens de créer ou d’importer votre propre contenu : les fichiers et les bases de données. 
 
 ### <a name="files"></a>Fichiers
-![](media/service-get-data/pbi_getdata_files.png)
+![Icône Excel, Power BI et CSV](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** ( *.xlsx*, *.xlsm*) : Dans Excel, un classeur peut contenir différents types de données. Par exemple, il peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul. Il peut également contenir des données que vous avez interrogées et chargées à partir de sources de données externes à l’aide de Power Query. Power Query est disponible via **Obtenir et transformer** dans Excel 2016 ou Power Pivot. Vous pouvez importer des données à partir de tableaux dans des feuilles de calcul ou importer des données à partir d’un modèle de données. Pour en savoir plus, consultez [Obtenir des données à partir de fichiers pour Power BI](service-get-data-from-files.md).
 
@@ -56,7 +56,7 @@ Pour les autres types de fichiers comme les tableaux XML ( *.xml*) ou les fichie
 De plus, l’endroit où vous stockez vos fichiers peut faire une grosse différence. OneDrive Entreprise offre davantage de souplesse et une meilleure intégration avec Power BI. Vous pouvez tout à fait conserver vos fichiers sur votre lecteur local. Cela dit, si vous devez actualiser vos données, vous devrez effectuer quelques étapes supplémentaires. Pour plus d’informations, consultez les liens d’article ci-dessous.
 
 ### <a name="databases"></a>Bases de données
-![](media/service-get-data/pbi_getdata_databases.png)
+![Capture d’écran des bases de données, les montrant dans les logos cloud.](media/service-get-data/pbi_getdata_databases.png)
 
 **Bases de données dans le cloud** - Depuis le service Power BI, vous pouvez vous connecter en direct à :
 

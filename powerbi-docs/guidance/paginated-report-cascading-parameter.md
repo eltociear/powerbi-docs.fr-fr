@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920781"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214102"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Utiliser des paramètres en cascade dans les rapports paginés
 
@@ -60,7 +60,7 @@ Examinons trois exemples pour vous aider à limiter les jeux volumineux d’él�
 
 Dans cet exemple, l’utilisateur du rapport interagit avec cinq paramètres de rapport. Il doit sélectionner pays-région, état-province, ville, puis code postal. Un dernier paramètre répertorie ensuite les revendeurs qui résident dans cet emplacement géographique.
 
-![Image affichant cinq paramètres de rapport : Pays-région, état-province, ville, code postal et revendeur. Les quatre premières valeurs sont définies, et la liste des revendeurs est filtrée selon quatre éléments seulement.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Capture d’écran des paramètres de rapport paginé Power BI montrant le filtre par colonnes associées.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Voici comment vous pouvez développer les paramètres en cascade :
 
@@ -134,7 +134,7 @@ Voici comment vous pouvez développer les paramètres en cascade :
 
 Dans cet exemple, l’utilisateur du rapport interagit avec un paramètre de rapport pour sélectionner la première lettre du revendeur. Un deuxième paramètre répertorie ensuite les revendeurs dont le nom commence par la lettre sélectionnée.
 
-![Image affichant deux paramètres de rapport : Group et Reseller. La première valeur de paramètre est définie sur la lettre A, et la liste des revendeurs est filtrée selon de nombreux éléments commençant par cette lettre.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Capture d’écran des paramètres de rapport paginé Power BI montrant un filtre par colonne de regroupement.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Voici comment vous pouvez développer les paramètres en cascade :
 
@@ -196,7 +196,7 @@ GO
 
 Dans cet exemple, l’utilisateur du rapport interagit avec un paramètre de rapport pour entrer un modèle de recherche. Un deuxième paramètre répertorie ensuite les revendeurs dont le nom contient le modèle.
 
-![Image affichant deux paramètres de rapport : Search et Reseller. La première valeur de paramètre est définie sur le texte « red », et la liste des revendeurs est filtrée selon plusieurs éléments contenant ce texte.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Capture d’écran des paramètres de rapport paginé Power BI montrant le filtre par modèle de recherche.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Voici comment vous pouvez développer les paramètres en cascade :
 
@@ -242,7 +242,7 @@ Dans ce scénario, vous pouvez utiliser des données de faits pour limiter les v
 
 Dans cet exemple, l’utilisateur du rapport interagit avec trois paramètres de rapport. Les deux premiers définissent une plage de dates de commandes des clients. Le troisième paramètre répertorie ensuite les revendeurs pour lesquels des commandes ont été créées au cours de cette période.
 
-![Image affichant trois paramètres de rapport : Start Order Date, End Order Date et Reseller. Les deux paramètres de date sont définis sur le mois de janvier 2020, et la liste des revendeurs est filtrée selon de nombreux éléments représentant les revendeurs ayant passé des commandes au cours de ce mois.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Capture d’écran des paramètres de rapport paginé Power BI montrant trois paramètres de rapport : Start Order Date, End Order Date et Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Voici comment vous pouvez développer les paramètres en cascade :
 

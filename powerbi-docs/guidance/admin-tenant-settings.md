@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b024ff52585a4b9b46b60e3230a059b3d07d7b24
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273896"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216711"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
 
@@ -41,7 +41,7 @@ Ces URL deviennent alors disponibles dans le menu d’aide de Power BI et se pr�
 > [!NOTE]
 > Le fait de fournir l’URL **Demandes de licences** empêche les utilisateurs individuels de souscrire à l’essai gratuit de 60 jours de Power BI Pro. Au lieu de cela, ils sont dirigés vers votre site interne qui les renseigne sur la façon d’acquérir une licence (gratuite ou Pro).
 
-![Le paramètre Publier des informations « Obtenir de l’aide » est affiché.](media/admin-tenant-settings/publish-get-help-information.png)
+![Capture d’écran de Power BI Desktop montrant les paramètres d’aide et de support.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## <a name="manage-risk"></a>Gérer le risque.
 Les paramètres de gestion des risques peuvent vous aider à établir des stratégies de gouvernance dans votre locataire Power BI. Gardez cependant à l’esprit que les paramètres de gouvernance ne sont pas une mesure de sécurité. Par exemple, la désactivation du paramètre **Exporter des données** supprime la fonctionnalité de l’interface utilisateur Power BI et aide de cette façon les utilisateurs Power BI à travailler en conformité avec les stratégies de gouvernance de votre organisation sans toutefois les empêcher d’exporter les données en utilisant d’autres options. Du point de vue de la sécurité, un utilisateur Power BI disposant d’un accès en lecture à un jeu de données a l’autorisation d’interroger ce jeu de données et peut conserver les résultats, quelles que soient les fonctionnalités disponibles dans l’interface utilisateur de Power BI.
@@ -51,7 +51,7 @@ Vous pouvez être notifié par e-mail si votre locataire subit une panne de serv
 
 Nous vous recommandons d’activer le paramètre **Recevoir des notifications par e-mail pour les pannes de service ou des incidents**. Il se trouve dans le groupe **Paramètres d’aide et de support**. Affectez un ou plusieurs groupes de sécurité à _extension messagerie_.
 
-![Le paramètre Recevoir des notifications par e-mail pour les pannes ou incidents du service est affiché.](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
+![Capture d’écran de Power BI Desktop montrant le paramètre « Recevoir des notifications par e-mail pour les pannes de service ou des incidents ».](media/admin-tenant-settings/receive-email-notifications-for-service-outages-or-incidents.png)
 
 ### <a name="information-protection"></a>Information Protection
 
@@ -74,17 +74,17 @@ Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’a
 
 Veillez à inclure des instructions dans votre documentation pour indiquer aux utilisateurs (qui n’ont pas de droits de création d’espaces de travail) comment ils peuvent demander un nouvel espace de travail.
 
-![Le paramètre Créer des espaces de travail est affiché.](media/admin-tenant-settings/create-workspaces.png)
+![Capture d’écran de Power BI Desktop montrant le paramètre « Créer des espaces de travail ».](media/admin-tenant-settings/create-workspaces.png)
 
 ### <a name="share-content-with-external-users"></a>Partager le contenu avec des utilisateurs externes
 
 Les utilisateurs peuvent partager des rapports et des tableaux de bord avec des personnes extérieures à votre organisation.
 
-Le paramètre **Partager le contenu avec des utilisateurs externes** est activé par défaut pour l’ensemble de l’organisation. Il se trouve dans le groupe **Paramètres d’exportation et de partage**.
+Le paramètre **Partager du contenu avec des utilisateurs externes** est activé par défaut pour l’ensemble de l’organisation. Il se trouve dans le groupe **Paramètres d’exportation et de partage**.
 
 Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’autorisation de partager du contenu avec des utilisateurs externes peut être accordée _ou refusée_ à ces groupes.
 
-![Paramètre Partager le contenu avec des utilisateurs externes est affiché.](media/admin-tenant-settings/share-content-with-external-users.png)
+![Capture d’écran de Power BI Desktop montrant le paramètre « Partager du contenu avec des utilisateurs externes ».](media/admin-tenant-settings/share-content-with-external-users.png)
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
@@ -96,7 +96,7 @@ S’il est activé, nous vous recommandons d’affecter un ou plusieurs groupes 
 
 Par ailleurs, il existe une option permettant de choisir le mode de fonctionnement de vos codes incorporés. Par défaut, elle est définie sur **Autoriser uniquement les codes existants**. Cela signifie que les utilisateurs seront invités à contacter un administrateur Power BI pour créer un code incorporé.
 
-![Le paramètre Publier sur le web est affiché.](media/admin-tenant-settings/publish-to-web.png)
+![Capture d’écran de Power BI Desktop montrant l’option « Publier sur le web ».](media/admin-tenant-settings/publish-to-web.png)
 
 Nous vous recommandons aussi de consulter régulièrement [publier des codes incorporés sur le web](https://app.powerbi.com/admin-portal/embedCodes). Supprimez les codes s’ils entraînent la publication d’informations privées ou confidentielles.
 
@@ -111,7 +111,7 @@ Nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’a
 > [!IMPORTANT]
 > La désactivation de ce paramètre limite également l’utilisation des fonctionnalités [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) et [connexion active](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) du service Power BI.
 
-![Le paramètre Exporter des données est affiché.](media/admin-tenant-settings/export-data.png)
+![Capture d’écran de Power BI Desktop montrant le paramètre « Exporter des données ».](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
 > Si des utilisateurs autorisent d’autres utilisateurs à exporter des données, vous pouvez ajouter une couche de protection en appliquant la [protection des données](../admin/service-security-data-protection-overview.md). Quand elle est configurée, les utilisateurs non autorisés ne peuvent pas exporter de contenu assorti d’étiquettes de sensibilité.
@@ -124,7 +124,7 @@ Le paramètre **Autoriser les utilisateurs invités externes à modifier et à g
 
 Si vous avez besoin d’autoriser des utilisateurs externes à modifier et gérer du contenu, nous vous recommandons d’affecter un ou plusieurs groupes de sécurité. L’autorisation de publier des rapports peut être accordée _ou refusée_ à ces groupes.
 
-![Le paramètre Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation est affiché.](media/admin-tenant-settings/allow-external-guest-users.png)
+![Capture d’écran de Power B I Desktop montrant le paramètre « Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation ».](media/admin-tenant-settings/allow-external-guest-users.png)
 
 ### <a name="developer-settings"></a>Paramètres de développement
 
@@ -135,7 +135,7 @@ Il existe deux paramètres de locataire associés à l’[incorporation de conte
 
 Si vous n’avez pas l’intention d’utiliser les API de développeur pour incorporer du contenu, nous vous recommandons de les désactiver. Ou bien, configurez au moins des groupes de sécurité spécifiques qui seront chargés d’effectuer ce travail.
 
-![Les paramètres développeur sont affichés.](media/admin-tenant-settings/developer-settings.png)
+![Capture d’écran de Power BI Desktop montrant les paramètres pour développeur.](media/admin-tenant-settings/developer-settings.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -145,4 +145,3 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 - [Administration de Power BI dans le portail d’administration](../admin/service-admin-portal.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)
-

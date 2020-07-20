@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6a0170d40413cd2833f7e31bb3bc7c5704a1f5cc
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 106b2e4f9b829190cff8269342c3239429b41f24
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224030"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214729"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Se connecter à des données avec les interfaces génériques de Power BI Desktop 
 
 Vous pouvez vous connecter à un large éventail de sources de données différentes dans **Power BI Desktop**, à l’aide de connecteurs de données intégrés (des **bases de données Access** aux ressources **Zendesk**), comme indiqué dans la fenêtre **Obtenir des données**. Vous pouvez également vous connecter à toutes sortes d’*autres* sources de données, pour avoir encore davantage d’options de connectivité, en utilisant les interfaces génériques (telles que **ODBC** ou l’**API REST**) intégrées dans **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
+![Capture d’écran de la boîte de dialogue Obtenir des données, montrant la sélection de l’option ODBC.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Interfaces de données Power BI Desktop
 **Power BI Desktop** inclut une collection croissante de connecteurs de données qui sont conçus pour se connecter à une source de données spécifique. Par exemple, le connecteur de données **Liste SharePoint** fournit des champs spécifiques et des informations de support lors de la séquence de connexion qui sont conçus pour les **listes SharePoint**, ce qui est le cas avec d’autres sources de données disponibles dans la fenêtre qui s’affiche lorsque vous sélectionnez **Obtenir des données > Plus...** (voir l’image précédente).
@@ -42,7 +42,7 @@ Vous ne trouvez pas la source de données que vous souhaitez utiliser avec **Pow
 ## <a name="data-sources-accessible-through-odbc"></a>Sources de données accessibles via ODBC
 Le connecteur **ODBC** dans **Power BI Desktop** vous permet d’importer des données à partir de n’importe quel pilote ODBC en spécifiant simplement un **nom de source de données** ou une *chaîne de connexion*. En option, vous pouvez également spécifier une instruction SQL à exécuter sur le pilote ODBC.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
+![Capture d’écran de la boîte de dialogue du connecteur ODBC, montrant les options DNS et Avancé.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_2.png)
 
 La liste suivante décrit quelques exemples de sources de données auxquelles **Power BI Desktop** peut se connecter à l’aide de l’interface générique **ODBC**.
 
@@ -62,7 +62,7 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 ## <a name="data-sources-accessible-through-ole-db"></a>Sources de données accessibles via OLE DB
 Le connecteur **OLE DB** dans **Power BI Desktop** vous permet d’importer des données à partir de n’importe quel pilote OLE DB en spécifiant simplement une *chaîne de connexion*. En option, vous pouvez également spécifier une instruction SQL à exécuter sur le pilote OLE DB.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
+![Capture d’écran de la boîte de dialogue du connecteur OLE DB, montrant les options Chaîne de connexion et Avancé.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_3.png)
 
 La liste suivante décrit quelques exemples de sources de données auxquelles **Power BI Desktop** peut se connecter à l’aide de l’interface générique **OLE DB**.
 
@@ -74,7 +74,7 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 ## <a name="data-sources-accessible-through-odata"></a>Sources de données accessibles via OData
 Le connecteur **OData** dans **Power BI Desktop** vous permet d’importer des données de n’importe quelle URL **OData** en tapant ou collant l’URL **OData**. Vous pouvez ajouter plusieurs parties de l’URL en tapant ou en collant ces liens dans les zones de texte fournies dans la fenêtre **Flux OData**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
+![Capture d’écran de la boîte de dialogue Flux OData, montrant les parties de l’URL et les champs d’aperçu.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_4.png)
 
 La liste suivante décrit quelques exemples de sources de données auxquelles **Power BI Desktop** peut se connecter à l’aide de l’interface générique **OData**.
 
@@ -85,7 +85,7 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 ## <a name="data-sources-accessible-through-rest-apis"></a>Sources de données accessibles via des API REST
 Vous pouvez vous connecter aux sources de données à l’aide des **API REST** et ainsi utiliser les données de toutes sortes de sources de données qui prennent en charge **REST**.
 
-![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
+![Capture d’écran de la boîte de dialogue Requête, montrant les sources de données.](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_5.png)
 
 La liste suivante décrit quelques exemples de sources de données auxquelles **Power BI Desktop** peut se connecter à l’aide de l’interface générique **API REST**.
 
@@ -96,7 +96,7 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 ## <a name="data-sources-accessible-through-r-script"></a>Sources de données accessibles via un script R
 Vous pouvez utiliser des **scripts R** pour accéder aux sources de données et les utiliser dans **Power BI Desktop**.
 
-![](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
+![Capture d’écran de la boîte de dialogue Script R, montrant le script d’exécution.](media/desktop-connect-using-generic-interfaces/r-scripts-2.png)
 
 La liste suivante décrit quelques exemples de sources de données auxquelles **Power BI Desktop** peut se connecter à l’aide de l’interface générique **Scripts R**.
 
@@ -110,7 +110,7 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 Vous pouvez vous connecter à toutes sortes de sources de données dans **Power BI Desktop**. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   

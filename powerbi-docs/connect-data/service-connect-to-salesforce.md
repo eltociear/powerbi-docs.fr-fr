@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41d5350bf2986f9b8f0f01acf97e96eafc3b4db8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9fcf67a52bde69e62816af09a8fed69c8383927d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229519"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216175"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Avec cette connexion, vous pouvez récupérer vos données Salesforce et bénéficier automatiquement d’un tableau de bord et d’un rapport.
@@ -24,37 +24,37 @@ En savoir plus sur l’[intégration Salesforce](https://powerbi.microsoft.com/i
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Dans Power BI, sélectionnez **Obtenir des données** en bas du volet de navigation.
    
-   ![](media/service-connect-to-salesforce/pbi_getdata.png) 
+   ![Capture d’écran du bouton Obtenir des données, le montrant dans le volet de navigation.](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Dans la zone **Services**, sélectionnez **Obtenir**.
    
-   ![](media/service-connect-to-salesforce/pbi_getservices.png) 
+   ![Capture d’écran de la boîte de dialogue Services, montrant le bouton Obtenir.](media/service-connect-to-salesforce/pbi_getservices.png) 
 3. Sélectionnez **Analytique pour Salesforce**, puis sélectionnez **Obtenir**.  
    
-   ![](media/service-connect-to-salesforce/salesforce.png)
+   ![Capture d’écran de la boîte de dialogue Analytique pour Salesforce, montrant le lien Obtenir maintenant.](media/service-connect-to-salesforce/salesforce.png)
 4. Sélectionnez **Se connecter** pour démarrer le processus de connexion.
    
-    ![](media/service-connect-to-salesforce/dialog.png)
+    ![Capture d’écran de la boîte de dialogue de connexion à Salesforce, montrant le bouton Se connecter.](media/service-connect-to-salesforce/dialog.png)
 5. Quand vous y êtes invité, entrez vos informations d’identification Salesforce. Sélectionnez **Autoriser** pour que Power BI ait accès à vos informations et données Salesforce de base.
    
-   ![](media/service-connect-to-salesforce/sf_authorize.png)
+   ![Capture d’écran des informations d’identification Salesforce, montrant que Power BI demande l’autorisation d’accéder à vos informations.](media/service-connect-to-salesforce/sf_authorize.png)
 6. Configurez ce que vous souhaitez importer dans Power BI à l’aide de l’option de liste déroulante :
    
    * **Tableau de bord**
      
      Sélectionnez un tableau de bord prédéfini basé sur un rôle (tel que **Responsable des ventes**). Ces tableaux de bord récupèrent un ensemble spécifique de données standard Salesforce (les champs personnalisés ne sont pas compris).
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
+     ![Capture d’écran du tableau de bord Salesforce, montrant l’option permettant de sélectionner un tableau de bord prédéfini basé sur un rôle.](media/service-connect-to-salesforce/pbi_salesforcechooserole.png)
    * **Rapports**
      
      Sélectionnez un ou plusieurs rapports personnalisés à partir de votre compte Salesforce. Ces rapports correspondent à vos vues dans Salesforce et peuvent inclure des données de champs ou d’objets personnalisés.
      
-     ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
+     ![Capture d’écran des rapports Salesforce, montrant la liste des rapports personnalisés.](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Si vous ne voyez aucun rapport, ajoutez-en ou créez-en dans votre compte Salesforce, puis reconnectez-vous.
 
 7. Sélectionnez **Se connecter** pour commencer le processus d’importation. Pendant l’importation, une notification vous indique que l’importation est en cours. Une fois l’importation terminée, un tableau de bord, un rapport et un jeu de données pour vos données Salesforce sont listés dans le volet de navigation.
    
-   ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
+   ![Capture d’écran du tableau de bord du responsable des ventes, présentant le tableau de bord, le rapport et les jeux de données.](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
 Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le souhaitez. Vous pouvez poser des questions dans la zone Questions et réponses, ou bien [sélectionner une vignette](../consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent et [modifier ou supprimer les vignettes du tableau de bord](../create-reports/service-dashboard-edit-tile.md).
 

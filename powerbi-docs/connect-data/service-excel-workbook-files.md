@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e86aeaf8f7254e2b28b266135ccc4a0005e927b6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 870e3dbdc4b18422b0565834764b996d3f096ebf
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236658"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264439"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
-![](media/service-excel-workbook-files/excel_icon.png)
+![Icône Excel](media/service-excel-workbook-files/excel_icon.png)
 
 Microsoft Excel est l’une des applications métier les plus utilisées dans le monde. C’est également l’une des méthodes les plus courantes pour importer vos données dans Power BI.
 
@@ -61,7 +61,7 @@ Regardez cette vidéo pratique pour savoir comment vérifier que vos classeurs E
 ## <a name="one-excel-workbook--two-ways-to-use-it"></a>Un classeur Excel, deux manières de l’utiliser
 Si vous enregistrez vos classeurs dans **OneDrive**, vous pouvez explorer vos données dans Power BI de plusieurs manières.
 
-![](media/service-excel-workbook-files/excel_import_connect.png)
+![Capture d’écran de OneDrive Entreprise, montrant l’option d’importation ou de connexion à des données Excel.](media/service-excel-workbook-files/excel_import_connect.png)
 
 ### <a name="import-excel-data-into-power-bi"></a>Importer des données Excel dans Power BI
 Lorsque vous sélectionnez **Importer**, toutes les données prises en charge des tables et/ou modèles de données sont importées dans un nouveau jeu de données dans Power BI. Si vous avez des feuilles Power View, celles-ci sont recréées dans Power BI sous forme de rapports.
@@ -84,31 +84,31 @@ Dans Excel 2016, vous pouvez également utiliser Publier > Télécharger. Cela 
 ## <a name="import-or-connect-to-an-excel-workbook-from-power-bi"></a>Importer ou se connecter à un classeur Excel à partir de Power BI
 1. Dans Power BI, dans le volet de navigation, cliquez sur **Obtenir des données**.
    
-   ![](media/service-excel-workbook-files/excel_get_data_button.png)
+   ![Capture d’écran de la boîte de dialogue Obtenir des données, montrant le bouton correspondant dans le volet de navigation.](media/service-excel-workbook-files/excel_get_data_button.png)
 2. Dans Fichiers, cliquez sur **Obtenir**.
    
-   ![](media/service-excel-workbook-files/excel_files_get.png)
+   ![Capture d’écran de la boîte de dialogue Fichiers, montrant le bouton Obtenir.](media/service-excel-workbook-files/excel_files_get.png)
 3. Recherchez votre fichier.
    
-   ![](media/service-excel-workbook-files/excel_find_your_file.png)
+   ![Capture d’écran de quatre vignettes dans le cadre de la recherche de votre fichier, montrant les vignettes Fichier local, OneDrive Entreprise, OneDrive Personnel et SharePoint.](media/service-excel-workbook-files/excel_find_your_file.png)
 4. Si votre classeur se trouve sur OneDrive ou sur un site d’équipe SharePoint, sélectionnez **Importer** ou **Connecter**.
 
 ## <a name="local-excel-workbooks"></a>Classeurs Excel locaux
 Vous pouvez également utiliser un fichier Excel local et le charger dans Power BI. Sélectionnez simplement **Fichier local** dans le menu précédent, puis accédez à l’endroit où vos classeurs Excel sont enregistrés.
 
-![](media/service-excel-workbook-files/excel_import_6.png)
+![Capture d’écran de la vignette Fichier local, montrant comment naviguer pour sélectionner les classeurs Excel.](media/service-excel-workbook-files/excel_import_6.png)
 
 Une fois l’option sélectionnée, choisissez de Charger votre fichier dans Power BI.
 
-![](media/service-excel-workbook-files/excel_import_7.png)
+![Capture d’écran de la boîte de dialogue Fichier local, montrant la sélection de l’option Charger un fichier Excel dans Power BI.](media/service-excel-workbook-files/excel_import_7.png)
 
 Une fois votre classeur téléchargé, vous recevez une notification vous indiquant que le classeur est prêt.
 
-![](media/service-excel-workbook-files/excel_import_8.png)
+![Capture d’écran de la notification, indiquant que votre classeur est prêt.](media/service-excel-workbook-files/excel_import_8.png)
 
 Une fois le classeur prêt, vous pouvez le trouver dans la section **Rapports** de Power BI.
 
-![](media/service-excel-workbook-files/excel_import_9.png)
+![Capture d’écran de la section Rapports, montrant le rapport sélectionné avec les données Excel.](media/service-excel-workbook-files/excel_import_9.png)
 
 ## <a name="publish-from-excel-2016-to-your-power-bi-site"></a>Publier à partir d’Excel 2016 sur votre site Power BI
 L’utilisation de la fonctionnalité **Publier sur Power BI** dans Excel 2016 revient à utiliser **Obtenir des données** dans Power BI pour importer votre fichier ou vous y connecter. Nous n’entrerons pas dans les détails ici, mais vous pouvez consulter l’article [Publier sur Power BI à partir d’Excel 2016](service-publish-from-excel.md) pour en savoir plus.

@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4827049ee8eff86b2ce71ee9befd3d01760c0840
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 20c289648dc6e9b9784335c0d92f6725328dfffc
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230477"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216323"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
-![](media/service-comma-separated-value-files/csv_icon.png)
+![Icône CSV](media/service-comma-separated-value-files/csv_icon.png)
 
 Les fichiers de valeurs séparées par des virgules, communément appelés fichiers .csv, sont des fichiers texte simples contenant des lignes de données où les valeurs sont séparées les unes des autres par une virgule. Ces types de fichier peuvent contenir de grandes quantités de données dans un fichier de taille relativement petite, ce qui en fait une source de données idéale pour Power BI. Vous pouvez télécharger un exemple de fichier CSV [ici](https://go.microsoft.com/fwlink/?LinkID=619356).
 
@@ -41,13 +41,13 @@ Si vous disposez d’un fichier CSV, associez-le à votre site Power BI en tan
 
 1. Dans Power BI, dans le volet de navigation, cliquez sur **Obtenir des données**.
    
-   ![](media/service-comma-separated-value-files/csv_get_data_button.png)
+   ![Capture d’écran d’Obtenir des données dans Power BI Desktop, montrant le bouton dans le volet du navigateur.](media/service-comma-separated-value-files/csv_get_data_button.png)
 2. Dans **Fichiers**, cliquez sur **Obtenir**.
    
-   ![](media/service-comma-separated-value-files/csv_files_get.png)
+   ![Capture d’écran de la boîte de dialogue Fichiers, montrant le bouton Obtenir.](media/service-comma-separated-value-files/csv_files_get.png)
 3. Recherchez votre fichier.
    
-   ![](media/service-comma-separated-value-files/csv_find_your_file.png)
+   ![Capture d’écran de quatre vignettes dans le cadre de la recherche de votre fichier, montrant la sélection de Fichier local, OneDrive Entreprise, OneDrive Personnel et SharePoint.](media/service-comma-separated-value-files/csv_find_your_file.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 **Explorez vos données** : après avoir obtenu des données de votre fichier dans Power BI, il est temps de les explorer. Cliquez simplement avec le bouton droit sur le nouveau jeu de données, puis cliquez sur **Explorer**.

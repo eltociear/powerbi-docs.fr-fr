@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: aee58d27eb75bbe14629235591065e236502588a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a9dd66d726a2417c936204898eb2cdfb749fcc94
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236122"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216511"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurer Kerberos pour utiliser les rapports Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -31,14 +31,14 @@ Si votre serveur de rapports n’est pas correctement configuré, vous pouvez re
 
     Something went wrong.
 
-    We couldn’t run the report because we couldn’t connect to its data source. The report or data source might not be configured correctly. 
+    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
 
 Le message suivant apparaîtra dans les Détails techniques.
 
-    We couldn’t connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
-
+![Capture d’écran de Power BI Report montrant un message d’erreur relatif aux problèmes de connexion au serveur Analysis Services.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
+ 
 ## <a name="configuring-kerberos-constrained-delegation"></a>Configuration d’une délégation contrainte Kerberos
 Pour qu’une délégation contrainte Kerberos fonctionne, plusieurs éléments doivent être configurés. Ceux-ci incluent les noms de principal du service (SPN) et les paramètres de délégation des comptes de service.
 
@@ -134,7 +134,7 @@ Pour Analysis Services, nous utilisons un service de MSOLAPSvc.3. Nous allons sp
 
 Un exemple de nom de principal du service Analysis Services se présenterait comme suit.
 
-| Type | Format |
+| Type | Mettre en forme |
 | --- | --- |
 | Instance par défaut |MSOLAPSvc.3/ContosoAS.contoso.com<br>MSOLAPSvc.3/ContosoAS |
 | Instance nommée |MSOLAPSvc.3/ContosoAS.contoso.com:NOMINSTANCE<br>MSOLAPSvc.3/ContosoAS:NOMINSTANCE |
@@ -202,14 +202,14 @@ Nous devons configurer une délégation contrainte avec transit de protocole. Av
 14. Sélectionnez le nom de principal du service que vous avez créé. Il commence par `MSOLAPDisco.3`. Si vous avez ajouté le nom de domaine complet (FQDN) et le nom de principal du service NetBIOS, les deux sont sélectionnés. Vous ne pouvez en voir qu’un.
 15. Sélectionnez **OK**. Si vous avez activé **Développé**, la boîte de dialogue devrait ressembler à ceci.
     
-    ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
+    ![Capture d’écran de Power BI Report Server montrant l’onglet Délégation de la fenêtre Propriétés.](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
 16. Sélectionnez **OK**.
 17. Redémarrez Power BI Report Server.
 
 ## <a name="running-a-power-bi-report"></a>Exécution d’un rapport Power BI
 Une fois toute la configuration ci-dessus en place, votre rapport devrait s’afficher correctement. 
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report.png)
+![Capture d’écran de Power BI Report Server montrant un exemple d’affichage de tableau de bord.](media/configure-kerberos-powerbi-reports/powerbi-report.png)
 
 Si cette configuration devrait fonctionner dans la plupart des cas, avec Kerberos, il peut y avoir des configurations différentes en fonction de votre environnement. Si le rapport ne se charge toujours pas, vous pouvez demander à votre administrateur de domaine d’étudier la question, ou contacter le support technique.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ce5c57173cb5676a78bb3b77b1baaf2409062cc1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a551df2fb8ec668a9d8d29bdb8cdb37f9bb1652c
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220422"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264857"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :
@@ -37,16 +37,16 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 
 1. Dans la barre de navigation, appuyez sur **Autres options** (...), puis sur **Scanneur**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Capture d’écran des autres options dans le volet de navigation, avec la sélection du scanneur.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. Si votre appareil photo n’est pas activé, vous devez autoriser l’application Power BI à l’utiliser. Il s’agit d’une autorisation à usage unique. 
  
 3. Pointez le scanner vers le code QR Power BI. 
    
-    ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
+    ![Capture d’écran d’une impression d’actualités, montrant le scanneur pointant vers un code QR de Power BI.](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
 4. La vignette ou le rapport semble flotter sur l’arrière-plan en réalité augmentée.
    
-    ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
+    ![Capture d’écran d’un rapport, le montrant au-dessus de l’impression d’actualités.](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
 
 5. Appuyez sur le rapport ou la vignette pour l’ouvrir en mode focus ou revenez au scanneur.
 
@@ -58,16 +58,16 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 
 1. Dans la barre de navigation, appuyez sur **Autres options** (...), puis sur **Scanneur**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Capture d’écran des autres options dans le volet de navigation, avec la sélection du scanneur.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. Si votre appareil photo n’est pas activé, vous devez autoriser l’application Power BI à l’utiliser. Il s’agit d’une autorisation à usage unique. 
 
 3. Pointez le scanner vers le code QR Power BI. 
    
-    ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
+    ![Capture d’écran du scanneur de codes QR, le montrant en train de pointer sur un code QR de Power BI.](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
 4. La vignette ou le rapport s’ouvre automatiquement dans Power BI.
    
-    ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
+    ![Capture d’écran du rapport Nombre d’opportunités, présentant un histogramme par mois et par étape de vente.](media/mobile-apps-qr-code/power-bi-android-tile.png)
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-android-device"></a>Scanner un code QR avec un scanner externe sur votre appareil Android
 1. Avec le scanner installé sur votre appareil Android, pointez vers le code QR Power BI approprié pour un accès immédiat à la vignette ou au rapport. 
@@ -78,4 +78,4 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 * [Créer un code QR pour une vignette dans le service Power BI](../../create-reports/service-create-qr-code-for-tile.md)
 * [Créer un code QR pour un rapport dans le service Power BI](../../create-reports/service-create-qr-code-for-report.md)
 * Vous pouvez aussi [scanner un code QR avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md).
-* Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

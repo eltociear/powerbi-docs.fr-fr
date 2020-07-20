@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/02/2020
+ms.date: 07/08/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee3919be08cfb2af2ad0e82e9f0f35b5d13147c6
-ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
+ms.openlocfilehash: 7b9f69607d2fef823ba67d5af035e1e2064a9a72
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85943324"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162387"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Tutoriel : Bien démarrer avec la création dans le service Power BI
 Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](power-bi-overview.md).
@@ -224,4 +224,7 @@ Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de d
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Améliorez vos tableaux de bord en ajoutant des vignettes de visualisation et en les [renommant, redimensionnant, associant et repositionnant](../create-reports/service-dashboard-edit-tile.md).
+Explorez ces collections de contenus Microsoft Learn pour Power BI :
+
+- [Formez-vous à Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/r52to235xrjxk)
+- [Devenez analyste de données Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

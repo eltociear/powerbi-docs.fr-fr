@@ -9,15 +9,15 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b649b3694eab5a573f814efd707155154d54b18
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c34244669b538a5c3138536adbfd022eb00e646d
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236687"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263040"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Obtenir des données de fichiers Power BI Desktop
-![](media/service-desktop-files/pbid_file_icon.png)
+![Icône de fichier Power BI Desktop](media/service-desktop-files/pbid_file_icon.png)
 
 **Power BI Desktop** facilite la création de rapports et la prise de décisions. **Power BI Desktop** simplifie la connexion à différentes sources de données, l’interrogation et la transformation de données, la modélisation des données et la création de rapports puissants et dynamiques, ce qui rend les tâches décisionnelles plus rapides et intuitives. Si vous ne maîtrisez pas très bien **Power BI Desktop**, nous vous recommandons de consulter [Prise en main de Power BI Desktop](../fundamentals/desktop-getting-started.md).
 
@@ -38,13 +38,13 @@ Une fois que vous avez mis des données dans **Power BI Desktop** et créé que
 
 1. Dans Power BI, dans le volet de navigation, cliquez sur **Obtenir des données**.
    
-   ![](media/service-desktop-files/pbid_get_data_button.png)
+   ![Capture d’écran de la boîte de dialogue Obtenir des données, montrant le bouton correspondant dans le volet de navigation.](media/service-desktop-files/pbid_get_data_button.png)
 2. Dans **Fichiers**, cliquez sur **Obtenir**.
    
-   ![](media/service-desktop-files/pbid_files_get.png)
+   ![Capture d’écran de la boîte de dialogue Fichiers, montrant le bouton Obtenir.](media/service-desktop-files/pbid_files_get.png)
 3. Recherchez votre fichier. Les fichiers Power BI Desktop portent l’extension .pbix.
    
-   ![](media/service-desktop-files/pbid_find_your_file.png)
+   ![Capture d’écran de quatre vignettes dans le cadre de la recherche de votre fichier, montrant les vignettes Fichier local, OneDrive Entreprise, OneDrive Personnel et SharePoint.](media/service-desktop-files/pbid_find_your_file.png)
 
 ## <a name="publish-a-file-from-power-bi-desktop-to-your-power-bi-site"></a>Publier un fichier à partir de Power BI Desktop sur votre site Power BI
 L’utilisation de l’opération Publier dans Power BI Desktop est similaire à l’utilisation de l’opération Obtenir des données dans Power BI, en matière d’importation initiale de vos données de fichier à partir d’un lecteur local ou de connexion à ces données sur OneDrive. Toutefois, il existe des différences : si vous effectuez un téléchargement à partir d’un lecteur local, vous souhaiterez actualiser ces données fréquemment pour vous assurer que les copies en ligne et locales des données sont synchronisées. 
@@ -53,12 +53,12 @@ Nous vous présentons ici la procédure rapide, mais vous pouvez consulter [Publ
 
 1. Dans Power BI Desktop, cliquez sur **Fichier** > **Publier** > **Publier sur Power BI** ou cliquez sur **Publier** dans le ruban.
    
-   ![](media/service-desktop-files/pbid_publish.png)
+   ![Capture d’écran de l’option Publier sur le ruban, montrant comment publier depuis Power BI Desktop.](media/service-desktop-files/pbid_publish.png)
 2. Connectez-vous à Power BI. Cette étape est requise uniquement lors de la première utilisation.
    
    Une fois terminé, vous obtiendrez un lien pour ouvrir votre rapport dans votre site Power BI.
    
-   ![](media/service-desktop-files/pbid_publishing.png)
+   ![Capture d’écran de la boîte de dialogue de confirmation de connexion, indiquant que vous vous êtes correctement connecté avec un lien pour ouvrir votre rapport.](media/service-desktop-files/pbid_publishing.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 **Explorez vos données** : une fois vos données et rapports importés dans Power BI à partir de votre fichier, il est temps de les explorer. Si votre fichier comprenait déjà des rapports, ceux-ci s’affichent dans le volet de navigation sous **Rapports**. Si votre fichier contenait uniquement des données, vous pouvez créer de nouveaux rapports. Cliquez simplement avec le bouton droit sur le nouveau jeu de données, puis sélectionnez **Explorer**.

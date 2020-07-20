@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 03/04/2020
-ms.openlocfilehash: a6cb8575ef5265264cf0c15c4cfcfc4207726a07
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.date: 07/08/2020
+ms.openlocfilehash: 34f4265444d030902474c740dda91f8431d36625
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565577"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216528"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -50,7 +50,8 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Sécurité au niveau des lignes (RLS) | Oui | Oui | Disponible dans DirectQuery (source de données) et en mode d’importation <br><br>Sécurité au niveau des lignes dans le [service Power BI](../admin/service-admin-rls.md) <br><br>Sécurité au niveau des lignes dans [Power BI Report Server](row-level-security-report-server.md) |
 | Mode plein écran | Non | Oui | [Mode plein écran](../consumer/end-user-focus.md) dans le service Power BI |
 | Collaboration Microsoft 365 avancée | Non | Oui | [Collaborer dans un espace de travail](../collaborate-share/service-collaborate-power-bi-workspace.md) avec Microsoft 365 |
-| Visuels R | Non | Oui | [Créer des visuels R](../create-reports/desktop-r-visuals.md) dans Power BI Desktop et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des visuels R dans Power BI Report Server.  |
+| Scripts et visuels R | Non | Oui | [Créez des visuels R](../create-reports/desktop-r-visuals.md) et exécutez des scripts R dans Power BI Desktop, et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des scripts ou des visuels R dans Power BI Report Server.  |
+| Scripts et visuels Python | Non | Oui | [Créer des visuels et des scripts Python](../connect-data/desktop-python-scripts.md) dans Power BI Desktop, et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des scripts ou des visuels Python dans Power BI Report Server. |
 | Fonctionnalités en préversion | Non | Oui | [Accéder aux fonctionnalités en préversion du service Power BI](../consumer/end-user-preview-features.md) |
 | Visuels Power BI | Oui | Oui | [Visuels Power BI](../developer/visuals/power-bi-custom-visuals.md) |
 | Modèles composites | Non | Oui |

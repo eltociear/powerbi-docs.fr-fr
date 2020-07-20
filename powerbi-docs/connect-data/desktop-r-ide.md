@@ -10,24 +10,24 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3b7afbe1a94520238899bc984596c9c4cfddd847
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 58e23ecca37b9019ed007c60fe7aaa7e6b4d4515
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223089"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216416"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Utiliser un IDE R externe avec Power BI
 Avec **Power BI Desktop**, vous pouvez utiliser un IDE (environnement de développement intégré) R externe pour créer et affiner les scripts R, puis utiliser ces scripts dans Power BI.
 
-![](media/desktop-r-ide/r-ide_1a.png)
+![Capture d’écran de la boîte de dialogue Options, montrant que R Studio est entré dans le champ IDE R détecté.](media/desktop-r-ide/r-ide_1a.png)
 
 ## <a name="enable-an-external-r-ide"></a>Activer un IDE R externe
 Auparavant, vous deviez utiliser l’éditeur de script R dans **Power BI Desktop** pour créer et exécuter des scripts R. Avec cette version, vous pouvez lancer votre IDE R externe à partir de **Power BI Desktop** et importer et afficher vos données automatiquement dans l’IDE R. À partir de là, vous pouvez modifier le script dans cet IDE R externe, puis le coller dans **Power BI Desktop** pour créer des rapports et des éléments visuels Power BI.
 
 À partir de la version de septembre 2016 de **Power BI Desktop** (version 2.39.4526.362), vous pouvez spécifier l’IDE R que vous souhaitez utiliser et le lancer automatiquement à partir de **Power BI Desktop**.
 
-### <a name="requirements"></a>Conditions requises
+### <a name="requirements"></a>Configuration requise
 Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votre ordinateur local. **Power BI Desktop** n’inclut pas, ne déploie pas et n’installe pas le moteur R. Vous devez donc installer **R** séparément sur votre ordinateur local. Vous pouvez choisir l’IDE R à utiliser avec les options suivantes :
 
 * Vous pouvez installer votre IDE R favori (nombre des IDE R étant disponibles gratuitement), tel que [Revolution Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
@@ -37,7 +37,7 @@ Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votr
   * Vous pouvez associer des fichiers **.R** à l’IDE externe que vous souhaitez lancer à l’aide de **Power BI Desktop**.
   * Vous pouvez spécifier l’exécutable que **Power BI Desktop** doit lancer en sélectionnant *Autres* à partir de la section **Options de script R** de la boîte de dialogue **Options**. Pour ouvrir la boîte de dialogue **Options**, accédez à **Fichier > Options et paramètres > Options**.
     
-    ![](media/desktop-r-ide/r-ide_1b.png)
+    ![Capture d’écran de la boîte de dialogue Options, montrant que l’option Autre est entrée dans le champ IDE R détecté pour entrer un autre IDE R.](media/desktop-r-ide/r-ide_1b.png)
 
 Si vous avez plusieurs IDE R installés, vous pouvez spécifier lequel lancer en le sélectionnant à partir de la liste déroulante *IDE R détectés* dans la boîte de dialogue **Options**.
 
@@ -51,13 +51,13 @@ Pour lancer un IDE R à partir de **Power BI Desktop**, effectuez les étapes
 1. Chargez des données dans **Power BI Desktop**.
 2. Sélectionnez quelques champs que vous souhaitez utiliser dans le volet **Champs**. Si vous n’avez pas encore activé les éléments visuels de script, vous êtes invité à le faire.
    
-   ![](media/desktop-r-ide/r-ide_3.png)
+   ![Capture d’écran de la boîte de dialogue Activer les visuels de script, invitant à activer les visuels de script.](media/desktop-r-ide/r-ide_3.png)
 3. Lorsque les éléments visuels de script sont activés, vous pouvez sélectionner un élément visuel R à partir du volet **Visualisations**, qui crée un élément visuel R vide qui est prêt à afficher les résultats de votre script. Le volet **Éditeur de script R** s’affiche également.
    
-   ![](media/desktop-r-ide/r-ide_4.png)
+   ![Capture d’écran du volet Visualisation, montrant un visuel R vide.](media/desktop-r-ide/r-ide_4.png)
 4. Vous pouvez maintenant sélectionner les champs que vous souhaitez utiliser dans votre script R. Lorsque vous sélectionnez un champ, le champ **Éditeur de script R** crée automatiquement un code de script basé sur le ou les champs que vous sélectionnez. Vous pouvez créer (ou coller) votre script R directement dans le volet **Éditeur de script R**, ou le laisser vide.
    
-   ![](media/desktop-r-ide/r-ide_5.png)
+   ![Capture d’écran du volet Visualisation, montrant un visuel R vide avec un script dans l’éditeur de script R.](media/desktop-r-ide/r-ide_5.png)
    
    > [!NOTE]
    > Le type d’agrégation par défaut pour les éléments visuels R est *Ne pas résumer*.
@@ -65,10 +65,10 @@ Pour lancer un IDE R à partir de **Power BI Desktop**, effectuez les étapes
    > 
 5. Vous pouvez maintenant lancer votre IDE R directement à partir de **Power BI Desktop**. Sélectionnez le bouton **Lancer l’IDE R** qui se trouve à droite de la barre de titre **Éditeur de script R**, comme indiqué ci-dessous.
    
-   ![](media/desktop-r-ide/r-ide_6.png)
+   ![Capture d’écran du volet IDE R, montrant comment le lancer à partir du bouton IDE R.](media/desktop-r-ide/r-ide_6.png)
 6. L’IDE R spécifié est lancé par Power BI Desktop, comme illustré dans l’image suivante où **RStudio** est l’IDE R par défaut.
    
-   ![](media/desktop-r-ide/r-ide_7.png)
+   ![Capture d’écran de l’IDE R lancé dans Power BI Desktop, le montrant dans R Studio.](media/desktop-r-ide/r-ide_7.png)
    
    > [!NOTE]
    > **Power BI Desktop** ajoute les trois premières lignes du script afin qu’il puisse importer vos données à partir de **Power BI Desktop** une fois que vous exécutez le script.

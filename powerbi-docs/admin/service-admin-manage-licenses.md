@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b110dceb7427e3aeefe8e7ef48e579943a7e6f3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228443"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161350"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Afficher et gérer les licences utilisateur Power BI
 
@@ -35,7 +35,7 @@ Pour connaître les abonnements Power BI dont dispose votre organisation, proc�
 
 Vos abonnements Power BI actifs sont répertoriés avec les autres abonnements dont vous disposez. Un abonnement inattendu pour Power BI (gratuit) peut apparaître, comme illustré ici.
 
-  ![Abonnement gratuit power BI activé par l’utilisateur](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
+  ![Capture d’écran de l’abonnement Power BI, montrant un abonnement gratuit.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
 Ce type d’abonnement est créé pour vous lorsque les utilisateurs tirent parti de l’inscription en libre-service. Pour en savoir plus, consultez [Power BI dans votre organisation](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 

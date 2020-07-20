@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 5a84d46743522a9070c4cd9b16f7a540e3c103df
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d5028e4aaa1bbb864f14c3f3cdb58d136275e5fc
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228631"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161235"
 ---
 # <a name="close-your-power-bi-account"></a>Fermeture de votre compte Power BI
 
@@ -34,7 +34,7 @@ Si vous vous êtes inscrit à Power BI en tant que particulier, vous pouvez ferm
 
 1. Sélectionnez un motif pour la fermeture du compte (1). Vous pouvez éventuellement fournir des informations supplémentaires (2). Sélectionnez ensuite **Fermer le compte**.
 
-    ![Capture d’écran de la boîte de dialogue Fermer le compte avec l’option Fermer le compte en évidence.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Capture d’écran de la boîte de dialogue Fermer le compte, montrant les champs permettant de fournir des informations supplémentaires sur la fermeture du compte.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Confirmez que vous voulez fermer votre compte.
 
@@ -42,12 +42,12 @@ Si vous vous êtes inscrit à Power BI en tant que particulier, vous pouvez ferm
 
     Une confirmation de la fermeture de Power BI devrait s’afficher. Vous pouvez rouvrir votre compte à partir d’ici si nécessaire.
 
-    ![Capture d’écran de la boîte de dialogue Votre compte est fermé.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Capture d’écran de la boîte de dialogue qui confirme que votre compte est fermé.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Utilisateurs de client gérés
 
 Si votre organisation vous a inscrit à Power BI, contactez votre administrateur client. Demandez-lui de supprimer la licence de votre compte.
 
-![Compte fermé](media/service-admin-closing-your-account/close-account-managed.png)
+![Capture d’écran de la gestion de la fermeture du compte.](media/service-admin-closing-your-account/close-account-managed.png)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 726c265198c7489ac1de055d0fc00b1988109d11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 807ba59066508d063dba2e2f921eff19cf018bc5
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223327"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214609"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Se connecter à des données Project Online via Power BI Desktop
 Vous pouvez vous connecter à des données dans Project Online au moyen de Power BI Desktop.
@@ -37,7 +37,7 @@ Vous pouvez vous connecter à des données dans Project Online au moyen de Power
 
 5. Power BI Desktop vous invite à vous authentifier avec votre compte professionnel ou scolaire. Sélectionnez Compte professionnel, puis entrez vos informations d’identification.
    
-   ![](media/desktop-project-online-connect-to-data/image.png)
+   ![Capture d’écran de Power BI Desktop, montrant l’invite à entrer des informations d’identification pour se connecter.](media/desktop-project-online-connect-to-data/image.png)
 
 Le compte que vous utilisez pour vous connecter au flux OData doit disposer d’au moins un accès Visionneuse de portefeuilles au site Project Web App. 
 

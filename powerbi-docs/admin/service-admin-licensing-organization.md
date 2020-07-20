@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e050fd4ec3e533c07ecfd0f0604092bec7fc00b5
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 276770b677d85e0e125e7dd87bb0a800248d71c2
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85484929"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161470"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
@@ -57,7 +57,7 @@ La désactivation de l’inscription en libre-service empêche les utilisateurs 
 1. Entrez le nombre de licences nécessaires pour couvrir tous vos utilisateurs.
 1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence**, puis validez.
 
-  ![Abonnement Power BI (gratuit) avec attribution automatique](media/service-admin-licensing-organization/m365-auto-assign.png) 
+  ![Capture d’écran de l’abonnement gratuit auto-attribué, montrant l’inscription en libre-service.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
 Si vous souhaitez voir quels utilisateurs de votre organisation disposent déjà d’une licence, consultez [Affichage et gestion des licences utilisateur](service-admin-manage-licenses.md) pour savoir comment procéder.
 

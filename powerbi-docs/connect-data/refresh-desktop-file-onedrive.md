@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 62beab136dce53c7a3412eb5e2a4ec6470d14ec2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e2144cc7460ea2eff84bbcc1e93f02c99d650b35
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220905"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216370"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données stocké sur OneDrive ou SharePoint Online
 L’importation de fichiers à partir de OneDrive ou de SharePoint Online dans le service Power BI est un excellent moyen de s’assurer que le travail effectué dans Power BI Desktop reste synchronisé avec le service Power BI.
@@ -25,11 +25,11 @@ Quand vous stockez un fichier Power BI Desktop sur OneDrive ou SharePoint Online
 
 Vous pouvez effectuer une actualisation manuelle unique des données directement dans Power BI Desktop en sélectionnant **Actualiser** dans le ruban **Accueil**. Lorsque vous sélectionnez **Actualiser** ici, vous actualisez le modèle du fichier avec les données mises à jour provenant de la source de données d’origine. Ce type d’actualisation a entièrement lieu à partir de l’application Power BI Desktop elle-même. Il est différent d’une actualisation manuelle ou planifiée dans Power BI, et il est important de comprendre la différence.
 
-![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
+![Capture d’écran du ruban Accueil dans Power BI Desktop, montrant la sélection de l’option Actualiser.](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
 Lorsque vous importez votre fichier Power BI Desktop à partir de OneDrive ou SharePoint Online, vous chargez des données et des informations sur le modèle dans un jeu de données dans Power BI. Vous souhaiterez actualiser le jeu de données dans le service Power BI parce que c’est sur cela que vos rapports sont basés. Étant donné que les sources de données sont externes, vous pouvez actualiser manuellement le jeu de données à l’aide de la commande **Actualiser maintenant**, ou configurer une planification de l’actualisation à l’aide de la commande **Planifier l’actualisation**. 
 
-![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
+![Capture d’écran du jeu de données dans Power BI Desktop, montrant la sélection de l’option Planifier l’actualisation.](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
 Lorsque vous actualisez le jeu de données, Power BI ne se connecte pas au fichier sur OneDrive ou SharePoint Online pour interroger les données mises à jour. Il utilise les informations du jeu de données pour se connecter directement aux sources de données et interroger des données mises à jour. Il charge ensuite ces données dans le jeu de données. Ces données actualisées dans le jeu de données ne sont pas re-synchronisées dans le fichier sur OneDrive ou SharePoint Online.
 
@@ -39,7 +39,7 @@ Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Pla
 > [!NOTE]
 > L’actualisation OneDrive pour les jeux de données de connexion active est prise en charge. Toutefois, le fait de modifier le jeu de données de connexion active, d’un jeu de données à un autre dans un rapport déjà publié, n’est pas pris en charge dans le scénario d’actualisation OneDrive.
 
-### <a name="power-bi-gateway---personal"></a>Passerelle Power BI - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Toutes les sources de données en ligne affichées sous **Obtenir des données** dans l’**éditeur de requête** et dans Power BI Desktop.
 * Toutes les sources de données locales affichées dans l’**éditeur de requête** et la section **Obtenir des données** de Power BI Desktop, excepté pour HDFS et Microsoft Exchange.
 
@@ -52,13 +52,13 @@ Power BI prend en charge les fonctionnalités **Actualiser maintenant** et **Pla
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive Entreprise. Quelle est la différence ?
-Si vous avez un compte OneDrive personnel et OneDrive Entreprise, vous devriez conserver dans OneDrive Entreprise tous les fichiers que vous souhaitez importer dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
+Si vous avez un compte OneDrive personnel et OneDrive Entreprise, vous devriez conserver dans OneDrive Entreprise tous les fichiers que vous souhaitez importer dans Power BI. Voici pourquoi : vous utilisez probablement deux comptes différents pour vous connecter à ces OneDrive.
 
 Il est facile de vous connecter à OneDrive Entreprise dans Power BI, car votre compte Power BI est souvent le même que votre compte OneDrive Entreprise. Avec un OneDrive personnel, vous vous connectez habituellement avec un autre [compte Microsoft](https://account.microsoft.com).
 
 Lorsque vous vous connectez avec votre compte Microsoft, veillez à activer l’option **Maintenir la connexion**. Power BI peut alors synchroniser les modifications que vous apportez au fichier dans Power BI Desktop avec des jeux de données dans Power BI.
 
-![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+![Capture d’écran de la boîte de dialogue de connexion, avec la case à Maintenir la connexion cochée.](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
 Si vous avez modifié vos informations d’identification Microsoft, vous ne pouvez pas synchroniser les modifications entre votre fichier sur OneDrive et le jeu de données dans Power BI. Vous devez vous connecter à OneDrive pour importer à nouveau votre fichier.
 

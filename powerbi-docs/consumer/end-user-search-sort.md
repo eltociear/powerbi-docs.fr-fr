@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 07/09/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 62acc84c7459cadd758a036f1db04685b5e9c2b5
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 1ff7332bc71935cd6b679fa546dc2f1d37551436
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782546"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215753"
 ---
 # <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation pour les consommateurs Power BI : recherche globale
 
@@ -29,7 +29,7 @@ Si vous utilisez le service Power BI depuis peu, vous n’avez pas beaucoup de c
 ## <a name="searching-for-content"></a>Recherche de contenu
  La recherche est disponible presque partout dans le service Power BI. Repérez simplement la zone ou l’icône de recherche ![icône de loupe](./media/end-user-search-sort/power-bi-search-icon.png).
 
- Dans le champ Rechercher, tapez tout ou partie du nom d’un tableau de bord, d’un rapport, d’un classeur, d’une application ou d’un propriétaire. Power BI effectue une recherche sur l’ensemble de votre contenu. 
+ Dans le champ Rechercher, tapez tout ou partie du nom d’un tableau de bord, d’un rapport, d’un classeur, d’un espace de travail, d’une application ou d’un propriétaire. Power BI effectue une recherche sur l’ensemble de votre contenu. 
 
  ![rechercher un rapport](./media/end-user-search-sort/power-bi-search-field.png) 
 

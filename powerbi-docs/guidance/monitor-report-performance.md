@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3c76fed8f5533ad339904c4f8251a7404270a0ae
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279017"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216609"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Surveiller les performances du rapport dans Power BI
 
@@ -35,7 +35,7 @@ Utilisez [Diagnostic de requête](/power-query/QueryDiagnostics) dans Power BI D
 > [!NOTE]
 > Le diagnostic des requêtes étant actuellement une fonctionnalité d’évaluation, vous devez l’activer dans _Options et paramètres_. Une fois activée, ses commandes sont disponibles dans la fenêtre de l’Éditeur Power Query, sous l’onglet du ruban **Outils**.
 
-![L’image affiche l’onglet du ruban Outils de l’Éditeur Power Query. Le ruban affiche la commande Diagnostiquer l’étape, la commande Démarrer le diagnostic et la commande Arrêter le Diagnostic.](media/monitor-report-performance/power-query-diagnotics.png)
+![Capture d’écran de l’onglet du ruban Outils de l’Éditeur Power Query montrant la commande Diagnostiquer l’étape, la commande Démarrer le diagnostic et la commande Arrêter le Diagnostic.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## <a name="use-performance-analyzer"></a>Utiliser l’Analyseur de performances
 

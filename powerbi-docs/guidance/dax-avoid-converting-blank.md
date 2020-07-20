@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: aea24e96acadbf9fee9e6dbf3aa395e09ef8e541
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6b130016bf4514b817edbf8c91cfb24d2063e6f1
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279638"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215455"
 ---
 # <a name="dax-avoid-converting-blanks-to-values"></a>DAX : Éviter de convertir des blancs (BLANK) en valeurs
 
@@ -47,7 +47,7 @@ De plus, un trop grand nombre de regroupements accable souvent les utilisateurs 
 
 Voyons ce qui se passe lorsque la mesure **Profit Margin** est ajoutée à un visuel de table, avec un regroupement par client.
 
-![Un visuel de table comporte trois colonnes : Customer, Sales et Profit Margin. La table présente environ 10 lignes de données, pourtant la barre de défilement verticale indique qu’il y a beaucoup plus de lignes affichables. La colonne Sales n’affiche aucune valeur. La colonne Profit Margin affiche uniquement zéro.](media/dax-avoid-converting-blank/table-visual-poor.png)
+![Capture d’écran de Power BI Desktop montrant un visuel de table de données avec une ligne par client. Les valeurs de ventes sont vides et les valeurs de marge de bénéfice sont égales à zéro pour cent. ](media/dax-avoid-converting-blank/table-visual-poor.png)
 
 Le visuel de table affiche un nombre décourageant de lignes. (Il existe en fait 18 484 clients dans le modèle et la table essaie donc de tous les afficher.) Remarquez que les clients en vue n’ont réalisé aucune vente. Toutefois, puisque la mesure **Profit Margin** retourne toujours une valeur, ils sont affichés.
 
@@ -63,7 +63,7 @@ DIVIDE([Profit], [Sales])
 
 Le visuel de table présente maintenant uniquement les clients qui ont effectué des ventes dans le contexte de filtre actuel. La mesure ainsi améliorée engendre une expérience plus efficace et plus pratique pour les utilisateurs de vos rapports.
 
-![Le même visuel de table présente maintenant quatre lignes de données. Chaque ligne concerne un client pour lequel il existe une valeur de vente et pour lequel les valeurs de marge bénéficiaire sont différentes de zéro.](media/dax-avoid-converting-blank/table-visual-good.png)
+![Capture d’écran de Power BI Desktop montrant un visuel de table de données ayant un contenu filtré.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
 > Si nécessaire, vous pouvez configurer un visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option [Afficher les éléments sans données](../create-reports/desktop-show-items-no-data.md).
@@ -80,4 +80,3 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 
 - [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

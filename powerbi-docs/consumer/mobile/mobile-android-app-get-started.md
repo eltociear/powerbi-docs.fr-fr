@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: a12f4d81e2cae913ddddd26ca3bd9c820ad716ca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233031"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263001"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -80,7 +80,7 @@ Un certain nombre d’exemples Power BI sont suivis de plusieurs exemples de se
 Appuyez sur la loupe dans l’en-tête pour commencer à rechercher votre contenu Power BI.
 
 ## <a name="view-your-favorite-dashboards-and-reports"></a>Afficher vos tableaux de bord et rapports favoris
-Appuyez sur **Favoris** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) dans la barre de navigation pour voir votre page Favoris. 
+Appuyez sur **Favoris** (![icône Favoris](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) dans la barre de navigation pour voir votre page Favoris. 
 
 Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
 

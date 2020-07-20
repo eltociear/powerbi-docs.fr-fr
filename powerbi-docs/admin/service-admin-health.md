@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 610fe7ea2188d40d42ab91a355df68bc07bb0d84
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3b3faab2a01a00e09560d39e850f40d0672a5863
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228515"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161166"
 ---
 # <a name="track-power-bi-service-health-in-microsoft-365"></a>Effectuer le suivi de l’intégrité du service Power BI dans Microsoft 365
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les rôles, voir [Rôles d’administrateur liés
 
 1. Pour afficher plus d’informations, sélectionnez **Afficher les détails** pour un élément. La capture d’écran ci-dessous présente des informations supplémentaires, y compris les dernières mises à jour d’état.
 
-    ![Capture d’écran des détails du conseil.](media/service-admin-health/advisory-details.png)
+    ![Capture d’écran des détails de l’avis, montrant des informations supplémentaires.](media/service-admin-health/advisory-details.png)
 
     Faites défiler pour voir plus d’informations, puis fermez le volet lorsque vous avez terminé.
 

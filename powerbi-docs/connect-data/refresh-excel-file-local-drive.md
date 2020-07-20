@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 806fb9fffccaffee62d8cafb00dc94b5ad7b0def
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ef9c39f6c00738718d88dd485430b150ad95ec50
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220882"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216349"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
 Dans PowerBI, les commandes Actualiser maintenant et Planifier l’actualisation sont prises en charge pour les jeux de données créés à partir de classeurs Excel importés depuis un lecteur local où Power Query (Obtenir et Transformer les données dans Excel 2016) ou Power Pivot est utilisé pour se connecter à l’une des sources de données suivantes et pour charger des données dans le modèle de données Excel :  
 
-### <a name="power-bi-gateway---personal"></a>Passerelle Power BI - Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Toutes les sources de données en ligne affichées dans Power Query.
 * Toutes les sources de données locales affichées dans Power Query, excepté pour HDFS (Hadoop Distributed File System) et Microsoft Exchange.
 * Toutes les sources de données en ligne affichées dans Power Pivot.\*
@@ -29,7 +29,7 @@ Dans PowerBI, les commandes Actualiser maintenant et Planifier l’actualisation
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> **Remarques :**  
+> **Remarques :**  
 > 
 > * Une passerelle doit être installée et en cours d’exécution pour que Power BI puisse se connecter aux sources de données locales et actualiser le jeu de données.
 > * Si vous utilisez Excel 2013, veillez à mettre à jour Power Query afin de disposer de la dernière version.
@@ -47,13 +47,13 @@ Lorsque vous utilisez Power Query (Obtenir et Transformer les données dans Exc
 > 
 
 Dans le **navigateur**, cliquez sur **Charger dans...**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
+    ![Capture d’écran de l’option Charger dans, dans le navigateur, montrant la sélection de ladite option.](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
 Vous pouvez aussi cliquer sur **Modifier** dans le navigateur pour ouvrir l’éditeur de requête. Dans celui-ci, vous pouvez cliquer sur **Fermer et charger dans...**  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
+    ![Capture d’écran de l’onglet Accueil dans le navigateur, montrant la sélection de l’option Fermer et charger dans.](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 Ensuite, dans la fenêtre **Charger dans**, veillez à sélectionner **Ajouter ces données au modèle de données**.  
-    ![](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
+    ![Capture d’écran de la boîte de dialogue Charger dans, montrant que la case Ajouter ces données au modèle de données est cochée.](media/refresh-excel-file-local-drive/refresh_loadtodm_3.png)
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>Que se passe-t-il si j’utilise l’option Données externes dans Power Pivot ?
 Aucun problème. Lorsque vous utilisez Power Pivot pour vous connecter à des données et les interroger à partir d’une source de données locale ou en ligne, les données sont automatiquement chargées dans le modèle de données.

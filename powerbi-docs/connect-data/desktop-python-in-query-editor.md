@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5fb76d5f4e32c1ff7f9d68757e071f1bc69a7ddf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 6e1c18f61cc822cd9656a49a65c98b225709c540
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223301"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86215499"
 ---
 # <a name="use-python-in-query-editor"></a>Utiliser Python dans l’Éditeur de requête
 Vous pouvez utiliser **Python**, langage de programmation largement utilisé par les analystes de données, les scientifiques des données et les statisticiens, dans l’**Éditeur de requête** Power BI Desktop. Cette intégration de Python dans l’**Éditeur de requête** vous permet de procéder au nettoyage des données à l’aide de Python et d’effectuer une mise en forme et une analytique avancées des données des jeux de données, notamment la saisie de données manquantes, les prédictions et le clustering pour ne citer que quelques exemples. **Python** est un langage puissant qui peut être utilisé dans l’**Éditeur de requête** pour préparer votre modèle de données et créer des rapports.
@@ -27,19 +27,19 @@ Pour comprendre comment utiliser **Python** dans l’**Éditeur de requête**, p
 
 1. Tout d’abord, entrez des données dans **Power BI Desktop**. Dans cet exemple, chargez le fichier *EuStockMarkets_NA.csv* et sélectionnez **Obtenir des données > CSV** dans le ruban **Accueil** de **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
+   ![Capture d’écran du ruban Obtenir des données dans Power BI Desktop, montrant la sélection de l’option CSV.](media/desktop-python-in-query-editor/python-in-query-editor-1.png)
 2. Sélectionnez le fichier et choisissez **Ouvrir**. Le fichier CSV s’affiche dans la boîte de dialogue **Fichier CSV**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
+   ![Capture d’écran de la boîte de dialogue Fichier CSV, montrant le fichier CSV sélectionné.](media/desktop-python-in-query-editor/python-in-query-editor-2.png)
 3. Une fois que les données sont chargées, elles s’affichent dans le volet **Champs** de Power BI Desktop.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
+   ![Capture d’écran du volet Champs, montrant les données chargées.](media/desktop-python-in-query-editor/python-in-query-editor-3.png)
 4. Ouvrez l’**Éditeur de requête** en sélectionnant **Modifier les requêtes** dans le ruban **Accueil** de **Power BI Desktop**.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
+   ![Capture d’écran de l’Éditeur de requête dans Power BI Desktop, montrant la sélection de l’option Modifier les requêtes.](media/desktop-python-in-query-editor/python-in-query-editor-4.png)
 5. Sous l’onglet **Transformation**, sélectionnez **Exécuter un script Python**. L’éditeur **Exécuter un script Python** apparaît (voir l’étape suivante). Notez que les lignes 15 et 20 ont des données manquantes, comme les autres lignes qui ne figurent pas dans l’image suivante. Les étapes ci-dessous montrent comment Python peut compléter ces lignes pour vous.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
+   ![Capture d’écran de l’onglet Transformer, montrant des lignes de données.](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. Pour cet exemple, entrez le code de script suivant :
    
     ```python
@@ -55,13 +55,13 @@ Pour comprendre comment utiliser **Python** dans l’**Éditeur de requête**, p
    
    Lorsqu’il est placé dans la boîte de dialogue **Exécuter un script Python**, le code ressemble à ce qui suit :
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
+   ![Capture d’écran de la boîte de dialogue Exécuter le script Python, montrant le code du script.](media/desktop-python-in-query-editor/python-in-query-editor-5b.png)
 7. Une fois que vous avez sélectionné **OK**, l’**Éditeur de requête** affiche un avertissement concernant la confidentialité des données.
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
+   ![Capture d’écran du volet Éditeur de requête, montrant l’avertissement sur la confidentialité des données.](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
 8. Pour que les scripts Python fonctionnent correctement dans le service Power BI, toutes les sources de données doivent être définies comme étant *publiques*. Pour plus d’informations sur les paramètres de confidentialité et leurs implications, consultez [Niveaux de confidentialité](../admin/desktop-privacy-levels.md).
    
-   ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
+   ![Capture d’écran de la boîte de dialogue Niveaux de confidentialité, montrant l’option Public définie.](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
    Le volet **Champs** comporte une nouvelle colonne appelée *completedValues*. Il existe quelques éléments de données manquants, par exemple sur les lignes 15 et 18. La section suivante explique de quelle façon Python gère ce problème.
    
@@ -71,7 +71,7 @@ Avec seulement cinq lignes de script Python, l’**Éditeur de requête** a rens
 ## <a name="creating-visuals-from-python-script-data"></a>Création de visuels à partir des données de script Python
 Maintenant, nous pouvons créer un visuel pour voir comment le script Python a complété les valeurs manquantes à l’aide de la bibliothèque *pandas*, comme illustré dans l’image suivante :
 
-![](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
+![Capture d’écran du visuel, montrant les données d’origine et les valeurs manquantes complétées de la bibliothèque pandas.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
 
 Quand vous avez terminé ce visuel et tout autre visuel que vous souhaitiez créer à l’aide de **Power BI Desktop**, vous pouvez enregistrer le fichier **Power BI Desktop** (au format .pbix), puis utiliser le modèle de données, notamment les scripts Python associés, dans le service Power BI.
 
@@ -88,11 +88,11 @@ Il existe certaines limitations pour les requêtes qui contiennent des scripts P
 
 * Tous les paramètres de source de données Python doivent être définis comme étant *publics* et toutes les autres étapes d’une requête créée dans l’**Éditeur de requête** doivent également être publiques. Pour accéder aux paramètres de la source de données, dans **Power BI Desktop**, sélectionnez **Fichier > Options et paramètres > Paramètres de la source de données**.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
+  ![Capture d’écran du menu Fichier dans Power BI Desktop, montrant la sélection des paramètres de la source de données.](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
   Dans la boîte de dialogue **Paramètres de la source de données**, sélectionnez la ou les sources de données, puis sélectionnez **Modifier les autorisations...** et vérifiez que le **niveau de confidentialité** est défini sur *Public*.
   
-  ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
+  ![Capture d’écran de la boîte de dialogue Paramètres de la source de données, montrant que le niveau de confidentialité Public est défini.](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * Pour activer l’actualisation planifiée de votre jeu de données ou de vos visuels Python, vous devez activer l’**actualisation planifiée** et installer **Personal Gateway** sur l’ordinateur qui héberge le classeur et l’installation de Python. Pour plus d’informations à ce sujet, consultez les liens indiqués dans la section précédente de cet article.
 * Actuellement, les tables imbriquées (table de tables) ne sont pas prises en charge. 
 

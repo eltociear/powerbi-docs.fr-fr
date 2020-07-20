@@ -9,18 +9,18 @@ ms.topic: overview
 ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bd95dfcc5d621b5ae4988e187d7cc6d9478feb58
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 2a67bd6c2a3d757475580d218547be689dbb99d2
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361517"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216922"
 ---
 # <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
 *Power BI Desktop* est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Avec Power BI Desktop, vous pouvez vous connecter à plusieurs sources de données différentes et les combiner dans un modèle de données (ce qui s’appelle la *modélisation*). Ce modèle de données vous permet de créer des visuels et des collections de visuels que vous pouvez partager sous forme de rapports avec d’autres personnes au sein de votre organisation. La plupart des utilisateurs qui travaillent sur des projets d’informatique décisionnelle utilisent Power BI Desktop pour créer des rapports, puis le *service Power BI* pour les partager avec d’autres personnes.
 
-![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Capture d’écran de Power BI Desktop montrant un exemple de données.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 Voici les utilisations les plus courantes de Power BI Desktop :
 
@@ -39,7 +39,7 @@ Trois vues sont disponibles dans Power BI Desktop, que vous sélectionnez sur le
 
 L’illustration suivante montre les trois vues, telles qu’elles apparaissent sur le côté gauche du canevas :
 
-![Vues Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop-07.png)
+![Capture d’écran de Power BI Desktop montrant le panneau des trois vues.](media/desktop-what-is-desktop/what-is-desktop-07.png)
  
 
 ## <a name="connect-to-data"></a>Se connecter aux données
@@ -51,11 +51,11 @@ Pour se connecter à des données :
 
    La fenêtre **Obtenir des données** s’affiche, indiquant le vaste éventail de catégories auxquelles Power BI Desktop peut se connecter.
 
-   ![Obtenir des données dans Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_02.png)
+   ![Capture d’écran de Power BI Desktop montrant la boîte de dialogue Obtenir des données.](media/desktop-what-is-desktop/what-is-desktop_02.png)
 
 2. Lorsque vous sélectionnez un type de données, une fenêtre vous invite à entrer les informations, par exemple, l’URL et les informations d’identification, nécessaires pour que Power BI Desktop puisse se connecter à la source de données en votre nom.
 
-   ![Se connecter à une base de données SQL Server dans Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_03.png)
+   ![Capture d’écran de Power BI Desktop montrant la boîte de dialogue Base de données SQL Server.](media/desktop-what-is-desktop/what-is-desktop_03.png)
 
 3. Une fois la connexion à une ou plusieurs sources de données établie, l’objectif est de transformer les données d’une façon pertinente.
 
@@ -69,13 +69,13 @@ Pour démarrer l’éditeur Power Query :
 
    La fenêtre **Éditeur Power Query** s’affiche.
 
-   ![Éditeur Power Query dans Power BI Desktop](media/desktop-getting-started/designer_gsg_editquery.png)
+   ![Capture d’écran de Power BI Desktop montrant la fenêtre de l’Éditeur Power Query.](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Chaque étape que vous effectuez pour transformer des données (par exemple, renommer une table, transformer un type de données ou supprimer une colonne) est enregistrée par l’éditeur Power Query. Ces étapes sont effectuées chaque fois que la requête se connecte à la source de données, si bien que les données sont toujours mises en forme comme vous le spécifiez.
 
 L’illustration suivante montre la fenêtre **Éditeur Power Query** d’une requête mise en forme et transformée en modèle.
 
- ![Fenêtre Éditeur Power Query](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+ ![Capture d’écran de Power BI Desktop montrant la fenêtre de l’Éditeur Power Query pour une requête mise en forme.](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
 
 Dès que vos données auront été mises en forme, vous pourrez créer des visuels. 
 
@@ -83,13 +83,13 @@ Dès que vos données auront été mises en forme, vous pourrez créer des visue
 
 Une fois le modèle de données élaboré, vous pouvez faire glisser des *champs* vers le canevas de rapport pour créer des *visuels*. Un visuel est une représentation graphique des données du modèle. Power BI Desktop propose de nombreux types de visuels. Le suivant représente un histogramme simple. 
 
-![Un visuel dans Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_04.png)
+![Capture d’écran de Power BI Desktop montrant un exemple d’histogramme.](media/desktop-what-is-desktop/what-is-desktop_04.png)
 
 Pour créer ou modifier un visuel : 
 
 - Dans le volet **Visualisations**, sélectionnez l’icône de visuel. 
 
-   ![Volet Visualisations dans Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_05.png)
+   ![Capture d’écran de Power BI Desktop montrant le volet Visualisations.](media/desktop-what-is-desktop/what-is-desktop_05.png)
 
    Si un visuel est déjà sélectionné sur le canevas de rapport, il devient du type sélectionné. 
 
@@ -98,13 +98,13 @@ Pour créer ou modifier un visuel :
 
 ## <a name="create-reports"></a>Créer des rapports
 
-La plupart du temps, l’objectif est de créer une collection de visuels qui indiquent différents aspects des données utilisées pour créer le modèle dans Power BI Desktop. Une collection de visuels au sein d’un fichier Power BI Desktop est appelée *rapport*. Un rapport peut comporter une ou plusieurs pages, de même qu’un fichier Excel peut être composé d’une ou plusieurs feuilles de calcul. 
+La plupart du temps, l’objectif est de créer une collection de visuels qui indiquent différents aspects des données utilisées pour créer le modèle dans Power BI Desktop. Une collection de visuels au sein d’un fichier Power BI Desktop est appelée *rapport*. Un rapport peut comporter une ou plusieurs pages, de même qu’un fichier Excel peut être composé d’une ou plusieurs feuilles de calcul.
 
 Avec Power BI Desktop, vous pouvez créer des rapports complexes et riches visuellement à partir de données provenant de plusieurs sources, pour ensuite les partager avec d’autres personnes de votre organisation.
 
 L’illustration suivante montre la première page d’un rapport Power BI Desktop, nommée **Vue d’ensemble**, comme l’indique l’onglet en bas. 
 
-![Exemple de rapport Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
+![Capture d’écran de Power BI Desktop montrant l’onglet Vue d’ensemble.](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
 ## <a name="share-reports"></a>Partager des rapports
 
@@ -114,7 +114,7 @@ Pour publier un rapport Power BI Desktop :
 
 1. Dans le ruban **Accueil**, sélectionnez **Publier**.
 
-   ![Publier un rapport sur Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_06.png)
+   ![Capture d’écran de Power BI Desktop montrant le bouton Publier.](media/desktop-what-is-desktop/what-is-desktop_06.png)
 
    Power BI Desktop vous connecte au service Power BI avec votre compte Power BI. 
 

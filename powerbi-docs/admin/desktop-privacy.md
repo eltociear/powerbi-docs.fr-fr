@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/14/2018
 ms.author: willthom
 LocalizationGroup: Learn more
-ms.openlocfilehash: 538464477a65600efd7b8486ff2fee281d1d4500
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: af67eca7b1a4d1cb82f3b58ea4abdbb8b2ad4671
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83130199"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86160844"
 ---
 # <a name="power-bi-desktop-privacy"></a>Confidentialité de Power BI Desktop
 
@@ -24,12 +24,12 @@ Les informations collectées auprès des utilisateurs de **Power BI Desktop** pe
  
 Si vous voulez refuser cette collecte de données, vous pouvez accéder à **Fichier > Options et paramètres > Options** et, sous l’onglet **Données d’utilisation**, décocher **Envoyer les données d’utilisation**, comme indiqué dans l’image suivante.
 
-![Paramètres des options pour Envoyer les données d’utilisation](media/desktop-privacy/privacy_01.png)
+![Capture d’écran des paramètres Options pour la case Envoyer les données d’utilisation.](media/desktop-privacy/privacy_01.png)
 
 ## <a name="sending-additional-information"></a>Envoi d’informations supplémentaires
 
 Si vous rencontrez des blocages ou d’autres problèmes, vous pouvez choisir d’envoyer des rapports d’erreurs et des informations supplémentaires, qui peuvent nous aider à résoudre le problème dans une version ultérieure. Nous collectons aussi des informations sur l’état du fichier **Power BI Desktop** que vous utilisez, comme les paramètres régionaux du document, les fonctionnalités en préversion qui sont activées et le mode de stockage. Cela peut inclure des captures d’écran, les messages d’erreur et les formules de votre modèle. Ces éléments peuvent comprendre le contenu des fichiers que vous utilisez quand une erreur s’est produite : vous devez donc les examiner avant de les envoyer. Nous vous rappelons avant l’envoi que vous pouvez choisir les informations qui sont envoyées à Microsoft.  
  
-Si vous ne voulez pas envoyer ces informations, vous pouvez cliquer sur **Fermer** quand une erreur se produit, ou choisir ne pas envoyer les données d’utilisation, comme expliqué ci-dessus. 
+Si vous ne voulez pas envoyer ces informations, vous pouvez cliquer sur **Fermer** quand une erreur se produit, ou choisir ne pas envoyer les données d’utilisation, comme expliqué ci-dessus.
 
-![Boîte de dialogue Blocage](media/desktop-privacy/privacy_02.png)
+![Capture d’écran de la boîte de dialogue d’incident, qui propose de signaler le problème ou de fermer la fenêtre.](media/desktop-privacy/privacy_02.png)

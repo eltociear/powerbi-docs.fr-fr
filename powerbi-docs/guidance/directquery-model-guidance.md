@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279592"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214537"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Guide du modèle DirectQuery dans Power BI Desktop
 
@@ -54,9 +54,9 @@ Un modèle DirectQuery peut être optimisé de nombreuses façons, comme décrit
 
 - **Éviter les requêtes Power Query complexes :** pour obtenir une conception de modèle efficace, vous pouvez faire en sorte que les requêtes Power Query n’aient pas besoin d’appliquer de transformations. Dans cette approche, chaque requête est mappée à une seule vue ou table source de la base de données relationnelle. Vous pouvez afficher un aperçu d’une représentation de l’instruction de requête SQL réelle pour une étape Power Query appliquée en sélectionnant l’option **Afficher la requête native**.
 
-    ![La section des étapes appliquées dans l’Éditeur de requête affiche cinq étapes. Le fait de cliquer avec le bouton droit sur la dernière étape nommée « Colonnes renommées » permet d’ouvrir le menu contextuel. L’option « Afficher la requête native » est activée et mise en évidence.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
+    ![Capture d’écran de Power BI Desktop montrant l’option « Afficher la requête native » sous Étapes appliquées.](media/directquery-model-guidance/directquery-model-guidance-query-editor-view-native-query.png)
     
-    ![La fenêtre Requête native affiche une requête T-SQL qui joint deux tables sources.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
+    ![Capture d’écran de Power BI Desktop montrant la fenêtre Requête native. Une instruction de requête joint deux tables sources.](media/directquery-model-guidance/directquery-model-guidance-native-query-window.png)
 
 - **Examiner l’utilisation de colonnes calculées et les modifications de type de données :** les modèles DirectQuery prennent en charge l’ajout de calculs et d’étapes Power Query pour convertir les types de données. Toutefois, vous pouvez souvent obtenir de meilleures performances en matérialisant les résultats de la transformation dans la source de base de données relationnelle, quand cela est possible.
 - **Ne pas utiliser le filtrage de date relative Power Query :** il est possible de définir un filtrage de date relative dans une requête Power Query. Supposons que vous souhaitiez récupérer les commandes qui ont été créées au cours de l’année précédente (par rapport à la date du jour). Ce type de filtre aboutit à une requête native inefficace, comme suit :
@@ -81,7 +81,7 @@ Un modèle DirectQuery peut être optimisé de nombreuses façons, comme décrit
 - **Éviter d’utiliser le filtrage des relations bidirectionnel :** l’utilisation du filtrage des relations bidirectionnel peut aboutir à des instructions de requête qui ne fonctionnent pas correctement. Utilisez cette fonctionnalité de relation seulement si c’est nécessaire, ce qui est généralement le cas lors de l’implémentation d’une relation plusieurs-à-plusieurs par le biais d’une table de pontage. Pour plus d’informations, consultez [Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 - **Limiter les requêtes parallèles :** vous pouvez définir le nombre maximal de connexions que DirectQuery ouvre pour chaque source de données sous-jacente. Vous pouvez ainsi contrôler le nombre de requêtes simultanément envoyées à la source de données.
 
-    ![La fenêtre Power BI Desktop est ouverte et la page DirectQuery Fichier actif est sélectionnée. La propriété Nombre maximal de connexions par source de données est mise en évidence.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
+    ![Capture d’écran de Power BI Desktop montrant la fenêtre Options DirectQuery.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
     
     Le paramètre est uniquement activé quand il existe au moins une source DirectQuery dans le modèle. La valeur s’applique à toutes les sources DirectQuery et à toutes les nouvelles sources DirectQuery ajoutées au modèle.
 
@@ -95,7 +95,7 @@ Les rapports basés sur un jeu de données DirectQuery peuvent être optimisés 
 
 - **Activer les techniques de réduction des requêtes :** _Options et paramètres_ de Power BI Desktop incluent une page Réduction de requête. Cette page propose trois options utiles. Il est possible de désactiver la sélection croisée et le filtrage croisé par défaut, que vous pouvez toutefois retrouver en modifiant les interactions. Il est également possible d’afficher un bouton Appliquer sur les segments et les filtres. Les options de segment ou de filtre ne sont pas appliquées tant que l’utilisateur du rapport ne clique pas sur le bouton. Si vous activez ces options, nous vous recommandons de le faire lors de la création initiale du rapport.
 
-    ![La fenêtre Power BI Desktop est ouverte et la page Réduction de requête est sélectionnée. Trois options sont disponibles pour réduire le nombre de requêtes envoyées et pour afficher un bouton Appliquer pour les segments et les filtres.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
+    ![Capture d’écran de Power BI Desktop montrant le filtre Réduction de requête dans la fenêtre Options.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-query-reduction.png)
     
 - **Appliquer d’abord des filtres :** Lors de la conception initiale des rapports, nous vous recommandons d’appliquer les filtres applicables (au niveau du rapport, de la page ou du visuel) avant de mapper les champs aux champs de visuel. Par exemple, plutôt que de faire glisser les mesures **Country** et **Sales**, puis de filtrer par une année particulière, appliquez d’abord le filtre sur le champ **Year**. En effet, chaque étape de création d’un visuel entraîne l’envoi d’une requête, et même s’il est possible d’apporter une autre modification avant la première requête, cela fait toujours peser une charge inutile sur la source de données sous-jacente. L’application précoce de filtres rend généralement ces requêtes intermédiaires moins coûteuses et plus rapides. De plus, l’impossibilité d’appliquer des filtres tôt peut entraîner un dépassement de la limite de 1 million de lignes, comme décrit ci-dessus.
 - **Limitez le nombre de visuels sur une page :** Lors de l’ouverture d’une page de rapport (et de l’application des filtres de page), tous les visuels d’une page sont actualisés. Toutefois, il existe une limite quant au nombre de requêtes qui peuvent être envoyées en parallèle, imposée par l’environnement Power BI et le paramètre de modèle **Nombre maximal de connexions par source de données**, comme décrit ci-dessus. Ainsi, plus le nombre de visuels de page augmente, plus il est probable qu’ils soient actualisés en série. Cela augmente le temps nécessaire pour actualiser la page entière, et augmente également le risque que des visuels affichent des résultats incohérents (pour les sources de données volatiles). Il est donc recommandé de limiter le nombre de visuels sur une page donnée, et d’avoir plutôt un nombre plus important de pages plus simples. Le remplacement de plusieurs visuels de carte par un seul visuel de carte multiligne peut aboutir à une mise en page similaire.
@@ -105,7 +105,7 @@ En plus de la liste de techniques d’optimisation ci-dessus, chacune des foncti
 
 - **Filtres de mesures :** les visuels comprenant des mesures (ou des agrégats de colonnes) peuvent avoir des filtres appliqués à ces mesures. Par exemple, le visuel ci-dessous affiche **Sales** par **Category**, mais uniquement pour les catégories dont les ventes dépassent 15 millions de dollars.
 
-    ![Un visuel de table comporte deux colonnes : Category et Sales. Le volet Filtres révèle un filtre sur la mesure Sales pour les valeurs supérieures à 15 millions de dollars. La table comporte trois lignes, dont chacune a une valeur Sales supérieure à 15 millions de dollars.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
+    ![Capture d’écran de Power BI Desktop montrant des données tabulaires avec des filtres appliqués.](media/directquery-model-guidance/directquery-model-guidance-example-measure-filter.png)
     
     
     Il peut en résulter l’envoi de deux requêtes à la source sous-jacente :

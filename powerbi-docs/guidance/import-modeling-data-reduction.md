@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 2c92fb47f576b750aa4815b56fabece2b5bc1de5
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 396c760a97911a35d7fdc0c608fc35de1cf6586d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565968"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216809"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Techniques de réduction des données pour la modélisation des importations
 
@@ -84,7 +84,7 @@ Toutefois, dans certains cas, les colonnes calculées de modèle peuvent être l
 
 Les requêtes Power Query conçues pour prendre en charge l’intégration de données à d’autres requêtes ne doivent pas être chargées dans le modèle. Pour éviter de charger la requête dans le modèle, veillez à désactiver le chargement des requêtes dans ces cas.
 
-![Désactivation du chargement pour une requête Power Query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Capture d’écran de Power Query montrant l’option « Activer le chargement ».](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## <a name="disable-auto-datetime"></a>Désactiver la date/heure automatique
 

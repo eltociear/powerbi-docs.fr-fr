@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
-ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f82a3a9e1cf207a006319e6ac7e662baaf5d9d1f
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80647667"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216566"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Conseils sur la planification de la capacité de Power BI Report Server
 Power BI Report Server est une solution d’informatique décisionnelle et de création de rapports en entreprise libre-service que les clients peuvent déployer localement, derrière le pare-feu d’entreprise. Cette solution combine la fonctionnalité de rapport interactif de Power BI Desktop avec la plateforme de serveur locale de SQL Server Reporting Services. En raison de l’utilisation croissante et intensive des analytiques et des rapports au sein des entreprises, la budgétisation de l’infrastructure matérielle et des licences logicielles nécessaires pour s’adapter à une base d’utilisateurs en entreprise peut représenter un défi. Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. Alors que les rapports, les requêtes et les modèles d’utilisation des organisations peuvent varier, les résultats présentés dans ce document, ainsi que les tests réels utilisés et la description détaillée de leur exécution, servent de point de référence pour tous les utilisateurs qui envisagent de planifier en amont le déploiement de Power BI Report Server.
@@ -44,7 +44,7 @@ Le déploiement de Power BI Report Server était constitué des machines virtuel
 * Power BI Report Server
 * Base de données Power BI Report Server La base de données du serveur de rapports est hébergée sur une autre machine que Power BI Report Server. Ainsi, elle ne doit pas être en concurrence avec le moteur de base de données SQL Server pour la mémoire, le processeur, le réseau et les ressources de disque.
 
-![](media/capacity-planning/report-server-topology.png)
+![Diagramme montrant les relations entre Power BI Report Server, Active Directory et les bases de données associées.](media/capacity-planning/report-server-topology.png)
 
 Consultez l’annexe 1.1 Topologie Power BI Report Server et l’annexe 1.2 Configuration des machines virtuelles Power BI Report Server pour voir la configuration complète de chaque machine virtuelle utilisée dans la topologie.
 
@@ -62,14 +62,14 @@ Tous les tests ont été écrits pour effectuer une opération de bout en bout (
 > L’outil n’est pas officiellement pris en charge par Microsoft, mais l’équipe produit contribue au projet et répond aux problèmes soulevés par les autres contributeurs.
 
 ### <a name="workloads"></a>Charges de travail
-2 profils de charge de travail ont été utilisés lors des tests : Power BI Report Heavy et Paginated Report Heavy. Le tableau ci-dessous décrit la distribution des demandes exécutées sur le serveur de rapports.
+Il existe 2 profils de charge de travail utilisés lors du test : Power BI Report Heavy et Paginated Report Heavy. Le tableau ci-dessous décrit la distribution des demandes exécutées sur le serveur de rapports.
 
-| Activity | Power BI Report Heavy, fréquence d’occurrence | Paginated Report Heavy, fréquence d’occurrence |
+| Activité | Power BI Report Heavy, fréquence d’occurrence | Paginated Report Heavy, fréquence d’occurrence |
 | --- | --- | --- |
-| **Restitution de rapports Power BI** |60% |10 % |
-| **Restitution de rapports paginés** |30% |60% |
-| **Restitution de rapports mobiles** |5 % |20 % |
-| **Opérations de portail web** |5 % |10 % |
+| **Restitution de rapports Power BI** |60 % |10 % |
+| **Restitution de rapports paginés** |30 % |60 % |
+| **Restitution de rapports mobiles** |5 % |20 % |
+| **Opérations de portail web** |5 % |10 % |
 
 ### <a name="user-load"></a>Charge utilisateur
 Pour chaque série de tests, des tests ont été exécutés selon la fréquence spécifiée dans une des deux charges de travail. Les tests ont démarré avec 20 demandes utilisateur simultanées envoyées au serveur de rapports. La charge utilisateur a ensuite été augmentée progressivement jusqu’à ce que la fiabilité descende en dessous de la cible de 99 %.

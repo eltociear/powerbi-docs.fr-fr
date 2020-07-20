@@ -6,72 +6,122 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/03/2020
+ms.date: 07/10/2020
 ms.author: maggies
-ms.openlocfilehash: 4a5abadbe89a19df0b66438c1ffb0013e1bb8d8d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f362303a79acb3468d6523eb24383ca0f3d49609
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239621"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264558"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports - Power BI
 
-Cet article traite de la nouvelle version du Générateur de rapports SQL Server 2016, et plus particulièrement d’une fonctionnalité qui vous permet d’entrer des données directement dans un rapport RDL sous forme d’un jeu de données incorporé.  Cette fonctionnalité est similaire à Power BI Desktop. Vous pouvez taper des données directement dans un jeu de données dans votre rapport ou les coller dans un autre programme tel que Microsoft Excel. Si vous créez un jeu de données en entrant des données, vous pouvez l’utiliser comme n’importe quel autre jeu de données incorporé dont vous êtes l’auteur. Vous pouvez également ajouter plusieurs tables et en utiliser une comme filtre pour l’autre. Cette fonctionnalité est particulièrement utile pour les petits jeux de données statiques dont vous pouvez avoir besoin dans votre rapport, comme des paramètres de rapport.
+Cet article traite de la nouvelle version de Microsoft Power BI Report Builder, et plus particulièrement d’une fonctionnalité qui vous permet d’entrer des données directement dans un rapport RDL sous forme de jeu de données incorporé.  Cette fonctionnalité est similaire à Power BI Desktop. Vous pouvez taper des données directement dans un jeu de données dans votre rapport ou les coller dans un autre programme tel que Microsoft Excel. Si vous créez un jeu de données en entrant des données, vous pouvez l’utiliser comme n’importe quel autre jeu de données incorporé dont vous êtes l’auteur. Vous pouvez également ajouter plusieurs tables et en utiliser une comme filtre pour l’autre. Cette fonctionnalité est particulièrement utile pour les petits jeux de données statiques dont vous pouvez avoir besoin dans votre rapport, comme des paramètres de rapport.
  
 ## <a name="prerequisites"></a>Prérequis
 
-- Pour entrer des données directement dans un rapport paginé, installez la nouvelle version du [Générateur de rapports à partir du Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53613). 
+- Pour entrer des données directement dans un rapport paginé, [téléchargez et installez Power BI Report Builder](https://aka.ms/pbireportbuilder). 
 - Pour enregistrer votre rapport paginé dans le service Power BI, vous devez disposer d’un [compte Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) et avoir accès en écriture à un espace de travail accessible dans une [capacité Power BI Premium](../admin/service-premium-what-is.md).
 - Pour enregistrer votre rapport paginé sur un serveur de rapports, vous devez être autorisé à [modifier le fichier RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
-## <a name="get-started"></a>Commencer
+## <a name="create-a-data-source-and-dataset"></a>Créer une source de données et un jeu de données
 
 Après avoir téléchargé et installé le Générateur de rapports, procédez de la même façon que pour ajouter une source de données et un jeu de données incorporés à votre rapport. Dans la procédure suivante, sous **Sources de données** vous voyez une nouvelle option : **Entrer des données**.  Cette source de données ne doit être configurée qu’une seule fois dans un rapport. Après cela, vous pouvez créer plusieurs tables de données entrées sous forme de jeux de données distincts utilisant tous la même source de données.
 
 1. Dans le volet **Données du rapport**, sélectionnez **Nouveau** > **Jeu de données**.
 
-    ![Nouveau jeu de données dans le Générateur de rapports](media/paginated-reports-enter-data/paginated-new-dataset.png)
+    ![Capture d’écran du nouveau jeu de données dans Report Builder.](media/paginated-reports-enter-data/paginated-new-dataset.png)
 
 1. Dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **Utiliser un dataset incorporé dans mon rapport**.
 
 1. En regard de **Source de données**, sélectionnez **Nouveau**.
 
-    ![Nouvelle source de données incorporée](media/paginated-reports-enter-data/paginated-new-data-source.png)
+    ![Capture d’écran de la nouvelle source de données incorporée.](media/paginated-reports-enter-data/paginated-new-data-source.png)
 
 1. Dans la boîte de dialogue **Propriétés de la source de données**, sélectionnez **Utiliser une connexion incorporée dans mon rapport**.
 2. Dans la zone **Sélectionner un type de connexion**, sélectionnez **ENTRER DES DONNÉES** > **OK**.
 
-    ![Source de données ENTRER DES DONNÉES](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
+    ![Capture d’écran de l’entrée des données pour la source de données.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
 1. De retour dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **Concepteur de requêtes**.
 2. Dans le volet **Concepteur de requêtes**, cliquez avec le bouton droit et collez vos données dans la table.
 
-    ![Entrer des données dans le Concepteur de requêtes](media/paginated-reports-enter-data/paginated-enter-data.png)
+    ![Capture d’écran de l’entrée des données dans le Concepteur de requêtes.](media/paginated-reports-enter-data/paginated-enter-data.png)
 
 1. Pour définir les noms des colonnes, double-cliquez sur chaque **NewColumn** et tapez le nom de la colonne.
 
-    ![Définir les noms des colonnes](media/paginated-reports-enter-data/paginated-column-name.png)
+    ![Capture d’écran de la définition des noms de colonnes.](media/paginated-reports-enter-data/paginated-column-name.png)
 
 1. Si la première ligne contient des en-têtes de colonne issus des données d’origine, cliquez avec le bouton droit et supprimez-les.
     
 9. Par défaut, le type de données de chaque colonne est Chaîne. Pour changer le type de données, cliquez avec le bouton droit sur l’en-tête de colonne > **Modifier le type**, puis choisissez un autre type de données (comme Date ou Flottant).
 
-    ![Modifier le type de données](media/paginated-reports-enter-data/paginated-data-type.png)
+    ![Capture d’écran du changement de type de données.](media/paginated-reports-enter-data/paginated-data-type.png)
 
 1. Quand vous avez terminé de créer la table, sélectionnez **OK**.  
 
     La requête générée est la même que celle obtenue avec une source de données XML. En coulisses, nous utilisons XML comme fournisseur de données.  Nous l’avons transformé pour prendre également en charge ce scénario.
 
-    ![Structure de données XML](media/paginated-reports-enter-data/paginated-xml-data.png)
+    ![Capture d’écran de la structure de données XML.](media/paginated-reports-enter-data/paginated-xml-data.png)
 
 12. Dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **OK**.
 
 13. Votre source de données et votre jeu de données apparaissent dans le volet **Données du rapport**.
 
-    ![Jeu de données dans le volet Données du rapport](media/paginated-reports-enter-data/paginated-report-data-pane.png)
+    ![Capture d’écran du jeu de données dans le volet Données du rapport.](media/paginated-reports-enter-data/paginated-report-data-pane.png)
 
 Vous pouvez utiliser votre jeu de données comme base pour les visualisations de données dans votre rapport. Vous pouvez également ajouter un autre jeu de données et utiliser la même source de données pour celui-ci.
+
+## <a name="design-the-report"></a>Concevoir le rapport
+
+Maintenant que vous disposez d’une source de données et d’un jeu de données, vous êtes prêt à créer votre rapport. La procédure suivante crée un rapport simple basé sur les données de la section précédente.
+
+1. Dans le menu **Insertion**, sélectionnez **Table** > **Assistant Table**.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-table-wizard.png" alt-text="Capture d’écran de la sélection de l’option Assistant Table.":::
+
+1. Sélectionnez le jeu de données que vous venez de créer > **Suivant**.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-choose-dataset.png" alt-text="Capture d’écran de la boîte de dialogue Choisir un dataset.":::
+
+2.  Dans la page Organiser les champs, faites glisser les champs de regroupement de la zone **Champs disponibles** vers la zone **Groupes de lignes**. Dans cet exemple :
+
+    - CountryRegion
+    - SalesYear
+
+3.  Faites glisser les champs que vous souhaitez agréger de la zone **Champs disponibles** vers la zone **Valeurs**. Dans cet exemple :
+
+    - SalesAmount
+
+    Par défaut, Report Builder additionne les champs de la zone **Valeurs**, mais vous pouvez choisir une autre agrégation.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-select-aggregation.png" alt-text="Capture d’écran des différentes agrégations disponibles.":::
+ 
+1. Sélectionnez **Suivant**.
+4.  Dans la page **Choisir la disposition**, conservez tous les paramètres par défaut, mais désactivez **Développer/Réduire les groupes**. Le développement et la réduction des groupes sont souvent très utiles, mais cette fois nous souhaitons voir toutes les données.
+
+5.  Sélectionnez **Suivant** > **Terminer**. La table apparaît sur le canevas de conception.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-design-view-matrix.png" alt-text="Capture d’écran du rapport dans la Vue design.":::
+
+### <a name="run-the-report"></a>Exécuter le rapport
+
+Pour voir les valeurs réelles et un aperçu du rapport, vous devez l’exécuter.
+
+1. Sélectionnez **Exécuter** dans le ruban **Accueil**.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-run-report.png" alt-text="Capture d’écran de la sélection de l’option Exécuter dans le ruban Accueil.":::
+
+    Vous voyez maintenant les valeurs. La matrice comporte plus de lignes que dans la Vue design !  Vous pouvez mettre en forme la page ou décider d’utiliser les paramètres par défaut avant d’enregistrer sur votre ordinateur local ou de publier sur le service.
+
+1. Pour voir à quoi ressemblera votre rapport quand vous l’imprimerez, sélectionnez **Mode Impression**.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-select-print.png" alt-text="Capture d’écran de la sélection du mode Impression.":::
+
+    À présent, vous le voyez tel qu’il apparaîtra sur une page imprimée.
+
+    :::image type="content" source="media/paginated-reports-enter-data/paginated-print-layout.png" alt-text="Capture d’écran du rapport en mode Impression.":::
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Charger le rapport paginé sur le service Power BI
 
@@ -91,7 +141,7 @@ Vous pouvez également charger votre rapport paginé sur un serveur de rapports 
 
 Une fois le changement apporté, voici à quoi doit ressembler la liste des fournisseurs de données dans le fichier de configuration :
 
-![Fichier de configuration RsReportServer](media/paginated-reports-enter-data/paginated-rsreportserver-config-file.png)
+![Capture d’écran du fichier de configuration RsReportServer.](media/paginated-reports-enter-data/paginated-rsreportserver-config-file.png)
 
 Voilà, vous pouvez désormais publier des rapports qui utilisent cette nouvelle fonctionnalité sur votre serveur de rapports.
 

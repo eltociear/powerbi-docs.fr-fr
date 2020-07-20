@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b343136acb22d213c0e2ad2dfcf83fbda805e88a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d6de937f4be3c503c146c31a32c56b67ee97a8c4
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224127"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214813"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake Computing** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop. 
@@ -22,15 +22,15 @@ Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake C
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Se connecter à un entrepôt Snowflake Computing
 Pour vous connecter à un entrepôt **Snowflake Computing**, sélectionnez **Obtenir des données** à partir du ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
+![Capture d’écran de la boîte de dialogue Obtenir des données, montrant la sélection de la base de données Snowflake.](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
 Dans la fenêtre **Snowflake** qui s’affiche, tapez ou collez le nom de votre entrepôt Snowflake Computing dans la zone, puis sélectionnez **OK**. Notez que vous pouvez choisir d’**importer** des données directement dans Power BI, ou utiliser **DirectQuery**. En savoir plus sur [l’utilisation de DirectQuery](desktop-use-directquery.md). Notez que l’authentification unique AAD prend en charge DirectQuery uniquement.
 
-![](media/desktop-connect-snowflake/connect-snowflake-3.png)
+![Capture d’écran de la boîte de dialogue Snowflake, montrant la case d’option Importer activée.](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 Lorsque vous y êtes invité, indiquez votre nom d’utilisateur et votre mot de passe.
 
-![](media/desktop-connect-snowflake/connect-snowflake-4.png)
+![Capture d’écran de l’invite à entrer des informations d’identification Snowflake, montrant les champs Nom d’utilisateur et Mot de passe.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Une fois que vous indiquez le nom d’utilisateur et le mot de passe d’un serveur **Snowflake** donné, Power BI Desktop les utilise dans les tentatives de connexion ultérieures. Pour modifier ces informations d’identification, accédez à **Fichier > Options et paramètres > Paramètres de la source de données**.

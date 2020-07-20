@@ -6,17 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/01/2020
+ms.date: 07/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b8fddd6b88effac3375840dd6034ca93cec52f12
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5cd0dd3b91109e63e5481e2f5e5516fd9ecd245c
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238317"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385972"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Télécharger un rapport du service Power BI dans Power BI Desktop (préversion)
+      
 Dans Power BI Desktop, vous pouvez publier un rapport (un *fichier .pbix*) dans le service Power BI, à partir de votre ordinateur local. Les rapports Power BI peuvent également aller dans l’autre sens : Vous pouvez télécharger un rapport du service Power BI dans Power BI Desktop. Dans les deux cas, l’extension d’un rapport Power BI, est .pbix.
 
 Il existe quelques limites à prendre en compte, discutées dans la section [Considérations et résolution des problèmes](#considerations-and-troubleshooting) de cet article.
@@ -46,6 +47,7 @@ Pour télécharger le fichier .pbix, procédez comme suit :
     ![Éditeur de rapport Power BI Desktop](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
 Voici les points importants et les limitations à prendre en compte pour le téléchargement d’un fichier .pbix à partir du service Power BI.
 
 * Pour télécharger le fichier, vous devez disposer des droits de modification sur le rapport.
@@ -55,9 +57,12 @@ Voici les points importants et les limitations à prendre en compte pour le tél
 * Vous devez toujours utiliser la dernière version de Power BI Desktop lorsque vous ouvrez des fichiers téléchargés. Il se peut que les fichiers .pbix téléchargés ne s’ouvrent pas dans les anciennes versions de Power BI Desktop.
 * Si votre administrateur a désactivé la possibilité de télécharger des données, cette fonctionnalité ne sera pas visible dans le service Power BI.
 * Les jeux de données avec actualisation incrémentielle ne peuvent pas être téléchargés dans un fichier .pbix.
-* Si vous créez un rapport Power BI basé sur un jeu de données dans un espace de travail et que vous publiez dans un autre espace de travail, vous et vos utilisateurs ne pourrez pas le télécharger. Cette caractéristique téléchargée n’est pas actuellement prise en charge dans ce scénario.
+* Les jeux de données activés pour les [grands modèles](../admin/service-premium-large-models.md) ne sont pas téléchargeables dans un fichier .pbix.
+* Les jeux de données modifiés à l’aide du [point de terminaison XMLA](../admin/service-premium-connect-tools.md) ne sont pas téléchargeables dans un fichier .pbix.
+* Si vous créez un rapport Power BI basé sur un jeu de données dans un espace de travail et que vous publiez dans un autre espace de travail, vos utilisateurs et vous-même ne pourrez pas le télécharger. Cette caractéristique téléchargée n’est pas actuellement prise en charge dans ce scénario.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Regardez la vidéo d’une minute **Guy in a Cube** qui présente cette fonctionnalité :
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>

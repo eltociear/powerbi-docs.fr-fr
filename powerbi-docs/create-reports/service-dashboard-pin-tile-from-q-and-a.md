@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d74c6583197441d63cb6c7c40ba44a5b21885b28
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76c76cf5ae41c369e3810f3a52ee43816184d8e1
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219180"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263048"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Épingler une vignette à un tableau de bord à partir de Questions et réponses
 ## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
@@ -32,7 +32,7 @@ Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vent
    ![tapez une question](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    la zone des questions vous propose des suggestions.
-4. Pour ajouter le graphique à votre tableau de bord sous forme de vignette, sélectionnez l’icône représentant une épingle ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) en haut à droite du canevas. Si le tableau de bord a été partagé avec vous, vous ne pouvez pas l’épingler à une visualisation.
+4. Pour ajouter le graphique à votre tableau de bord sous forme de vignette, sélectionnez l’épingle ![Icône Épingler](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) en haut à droite du canevas. Si le tableau de bord a été partagé avec vous, vous ne pouvez pas l’épingler à une visualisation.
 
 5. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord.
 

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 87a30acce38966d0e044f4ed0b6691ccbc7acd3f
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349215"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214022"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparaison de Power BI Desktop et du service Power BI
 
 Dans un diagramme de Venn qui compare Power BI Desktop et le service Power BI, la zone centrale montre la façon dont les deux produits se recoupent. Vous pouvez effectuer certaines tâches à la fois dans Power BI Desktop ou le service. Les deux côtés du diagramme de Venn montrent les fonctionnalités qui sont propres à l’application et au service.  
 
-![Diagramme de Venn sur Power BI Desktop et le service](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
+![Diagramme de Venn montrant la relation entre Power BI Desktop et le service Power BI.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 **Power BI Desktop** est un outil d’analyse des données et de création de rapports complet que vous installez pour une application gratuite sur votre ordinateur local. Il inclut l’Éditeur de requête, dans lequel vous pouvez vous connecter à de nombreuses sources de données différentes et les combiner dans un modèle de données (opération souvent appelée modélisation). Vous concevez ensuite un rapport basé sur ce modèle de données. Le [guide de prise en main de Power BI Desktop](desktop-getting-started.md) vous présente pas à pas l’application.
 
@@ -33,7 +33,7 @@ La plupart des concepteurs de rapports qui travaillent sur des projets d’infor
 
 À la fois dans l’application et le service, vous générez et vous modifiez des *rapports*. Un rapport peut se composer d’une ou plusieurs pages, avec des visuels et des collections de visuels. Ajoutez des signets, des boutons, des filtres et une fonctionnalité d’extraction pour améliorer la navigation dans vos rapports.
 
-![Modification d’un rapport dans Power BI Desktop ou dans le service](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
+![Captures d’écran de Power BI Desktop et du service Power BI, avec des sections numérotées.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
 Les éditeurs de rapports dans Power BI Desktop et dans le service sont similaires. Ils sont constitués de trois sections :  
 

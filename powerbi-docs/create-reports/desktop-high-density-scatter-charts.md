@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4166c734dd89acdc50967aee90b6a268546a383a
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: c744b7b9b0ec15258214c9c7e27332eb4a49ead4
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83338544"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86262923"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points de Power BI
 À compter de la version de septembre 2017 de **Power BI Desktop** et des mises à jour apportées au **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.
 
 Par exemple, vous pouvez créer un nuage de points à partir de l’activité de ventes de votre organisation, chaque magasin ayant des dizaines de milliers de points de données chaque année. Un nuage de points formé à partir de ces informations échantillonne les données (sélectionnez une représentation explicite de ces données pour illustrer la manière dont les ventes ont évolué au fil du temps) à partir des données disponibles ; un nuage de points représentant les données sous-jacentes est alors créé. Il s’agit d’une pratique courante pour les nuages de points à haute densité. Cet article décrit en détail comment Power BI a amélioré son échantillonnage des données à haute densité.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
+![Capture d’écran d’un nuage de points, montrant les données d’échantillonnage à haute densité.](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
 
 > [!NOTE]
 > L’algorithme **Échantillonnage à haute densité** décrit dans cet article est disponible dans les nuages de points pour **Power BI Desktop** et pour le **service Power BI**.
@@ -59,17 +59,17 @@ Dans certaines circonstances, l’algorithme **Échantillonnage à haute densit�
 
 * Si vous cliquez sur une valeur sous **Détails** et que vous la définissez sur **Afficher les éléments sans données** dans le menu, le nuage de points revient à l’algorithme d’origine.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_02.png)
+  ![Capture d’écran du menu Visualisation, montrant le volet Détails avec l’option Afficher les éléments sans données sélectionnée.](media/desktop-high-density-scatter-charts/high-density-scatter-charts_02.png)
 * Toute valeur sur l’axe de **lecture** a pour effet que le nuage de points revient à l’algorithme d’origine.
 * Si les deux axes, X et Y, sont manquants sur un nuage de points, le graphique revient à l’algorithme d’origine.
 * L’utilisation de l’option **Ligne du ratio** dans le volet **Analytique** a pour effet que le graphique revient à l’algorithme d’origine.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
+  ![Capture d’écran du menu Visualisation, présentant une flèche vers le volet Analytique et la ligne Ratio.](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Activer l’échantillonnage à haute densité pour un nuage de points
 Pour activer **Échantillonnage à haute densité**, sélectionnez un nuage de points, accédez au volet **Mise en forme**, développez la carte **Général** et, près du bas de cette carte, faites glisser le curseur **Échantillonnage à haute densité** sur **Activé**.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
+![Capture d’écran du menu Visualisation, présentant une flèche vers le volet Mise en forme, la carte Général et le curseur Échantillonnage à haute densité.](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
 > [!NOTE]
 > Une fois le curseur activé, Power BI essaie d’utiliser l’algorithme d’**Échantillonnage à haute densité** chaque fois que c’est possible. Quand l’algorithme est inutilisable (par exemple, vous si placez une valeur sur l’axe de *Lecture*), le curseur reste en position **Activé**, même si le graphique a été rétabli sur l’algorithme standard. Si vous supprimez ensuite une valeur de l’axe de *Lecture* (ou si les conditions changent pour permettre l’utilisation de l’algorithme d’échantillonnage à haute densité), le graphique utilise automatiquement l’échantillonnage à haute densité pour ce graphique, car la fonctionnalité est activée.

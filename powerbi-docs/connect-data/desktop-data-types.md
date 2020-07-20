@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: 40f85c40abd543e4f90a1f571ce648bfc4af7d9e
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561567"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216462"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -28,11 +28,11 @@ Dans Power BI Desktop, vous pouvez déterminer et spécifier le type de données
 
 **Types de données dans l’Éditeur de requête**
 
-![](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
+![Capture d’écran du ruban Type de données dans l’éditeur de requête.](media/desktop-data-types/pbiddatatypesinqueryeditort.png)
 
 **Types de données dans la vue Données ou Rapport**
 
-![](media/desktop-data-types/pbiddatatypesindatareportview.png)
+![Capture d’écran du ruban Type de données dans la vue Données.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 La liste déroulante Type de données dans l’Éditeur de requête comporte deux types de données actuellement absents dans la vue Données ou Rapport : **Date/Heure/Fuseau horaire** et **Durée**. Quand une colonne avec ces types de données est chargée dans le modèle et affichée dans la vue Données ou Rapport, une colonne avec le type de données Date/Heure/Fuseau horaire est convertie au format Date/Heure et une colonne avec le type de données Durée est convertie au format Nombre décimal.
 

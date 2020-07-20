@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/08/2020
 ms.author: painbar
-ms.openlocfilehash: 9655783decee99bc90071cdfbd66a8b58d8272f4
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 2a8186f24e7a82604ab941e25c2a5aa471efe614
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782587"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86385995"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,13 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="july-2020"></a>Juillet 2020
+### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>L’application mobile Power BI pour Windows prend désormais en charge la personnalisation de l’organisation
+À présent, toutes les modifications apportées par l’administrateur à l’aspect de Power BI pour qu’il corresponde à l’image de votre organisation sont également répercutées dans l’application mobile Power BI. Ces modifications peuvent inclure un nouveau modèle de couleurs pour la barre de navigation supérieure, le logo de votre organisation et une image de bannière.  
+
+### <a name="disable-single-sign-on-via-remote-configuration-ios-and-android"></a>Désactiver l’authentification unique par le biais d’une configuration à distance (iOS et Android)
+Les administrateurs informatiques peuvent désormais désactiver à distance l’authentification unique auprès de l’application mobile Power BI, ce qui améliore la sécurité et la conformité des autorisations sur les appareils multi-utilisateurs. [En savoir plus](mobile-app-configuration.md#disable-single-sign-on-ios-and-android)
 
 ## <a name="june-2020"></a>Juin 2020
 ### <a name="show-your-bookmarks-in-slideshows-windows"></a>Afficher vos signets dans les diaporamas (Windows)
@@ -860,15 +867,15 @@ Lisez le [billet de blog de la mi-octobre sur Power BI Mobile](https://powerbi.
 * Les graphiques en courbes avec un axe d’ordonnées indiquant un pourcentage calculent désormais la plage de l’élément visuel en fonction de vos données réelles. Le graphique commence maintenant à partir du point de données le plus bas, au lieu d’une valeur par défaut.
 * Les graphiques en courbes, à colonnes et à barres peuvent désormais avoir des étiquettes de données. 
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
+    ![Capture d’écran d’un graphique en courbes, montrant le pourcentage V T B par mois avec des étiquettes de données. ](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 
 #### <a name="iphone"></a>iPhone
 * Restez à jour avec les tableaux de bord les plus récents de vos groupes : recevez des notifications sur votre iPhone chaque fois qu’un membre de l’équipe ajoute un tableau de bord à l’un de vos groupes.
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
+    ![Capture d’écran d’un tableau de bord, montrant une notification sur un iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * Vous pouvez désormais afficher les tableaux de bord horizontalement en faisant simplement pivoter votre téléphone. En savoir plus sur le [mode paysage dans l’application iPhone](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
-    ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
+    ![Capture d’écran d’un tableau de bord, montrant le mode paysage sur un iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>Septembre 2015
 Améliorations apportées dans les applications mobiles Power BI : Android, iOS (iPhone et iPad) et Windows. Lisez le [billet de blog de la mi-septembre sur Power BI Mobile](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 21105513bf77a4ede8d788860a99fedaf3a6c48c
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278672"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86214864"
 ---
 # <a name="referencing-power-query-queries"></a>Référencement des requêtes Power Query
 
@@ -23,13 +23,13 @@ Qu’est-ce que cela signifie ? _Lorsqu'une requête référence une seconde re
 
 Considérons plusieurs requêtes : **Requête1** extrait les données d'un service web, et sa charge est désactivée. **Requête2**, **Requête3** et **Requête4** référencent toutes **Requête1**, et leurs sorties sont chargées dans le modèle de données.
 
-![Vue Dépendances de la requête, affichant les requêtes décrites dans le paragraphe précédent.](media/power-query-referenced-queries/query-dependencies-web-service.png)
+![Diagramme montrant la vue Dépendances de la requête, affichant les requêtes décrites dans le paragraphe précédent.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
 Lorsque le modèle de données est actualisé, on suppose souvent que Power Query récupère le résultat **Requête1** et qu'il est réutilisé par des requêtes référencées. Ce raisonnement est incorrect. En fait, Power Query exécute **Requête2**, **Requête3** et **Requête4** séparément.
 
 Vous pouvez penser que **Requête2** intègre les étapes de **Requête1**. C'est aussi le cas pour **Requête3**et **Requête4**. Le diagramme suivant présente une image plus claire de la façon dont les requêtes sont exécutées.
 
-![Version modifiée de la vue Dépendances de la requête, affichant Requête2, Requête3 et Requête4. Chacune des trois requêtes intègre la requête1.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
+![Diagramme montrant une version modifiée de la vue Dépendances de la requête, affichant Requête2, Requête3 et Requête4.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
 
 **Requête1** est exécutée trois fois. Les multiples exécutions peuvent ralentir l’actualisation des données et avoir un impact négatif sur la source de données.
 

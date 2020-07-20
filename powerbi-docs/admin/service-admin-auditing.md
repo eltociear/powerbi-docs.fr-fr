@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: ff61cdf25c83b1062fd7c4a471a49269d20c57a8
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782398"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161718"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -163,7 +163,7 @@ Vous recevez une erreur si la période sélectionnée est supérieure à 90 jou
 
 Vous pouvez rechercher des entrées du journal d’audit pour les activités effectuées par des utilisateurs spécifiques. Entrez un ou plusieurs noms d’utilisateur dans le champ **Utilisateurs**. Le nom d’utilisateur ressemble à une adresse e-mail. Il s’agit du compte auquel les utilisateurs se connectent à Power BI. Laissez cette zone vide afin de renvoyer les entrées pour tous les utilisateurs (et les comptes de service) de votre organisation.
 
-![Rechercher par utilisateurs](media/service-admin-auditing/search-audit-log-by-user.png)
+![Capture d’écran de la recherche dans les journaux d’audit avec l’option Utilisateurs mise en évidence.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### <a name="view-search-results"></a>Afficher les résultats de recherche
 
@@ -198,7 +198,7 @@ Pour exporter le journal d’audit Power BI dans un fichier CSV, suivez ces ét
 
 1. Sélectionnez **Enregistrer les résultats chargés** ou **Télécharger tous les résultats**.
 
-    ![Capture d’écran de l’option Exporter les résultats.](media/service-admin-auditing/export-auditing-results.png)
+    ![Capture d’écran de l’option Exporter les résultats avec l’option Télécharger tous les résultats mise en évidence.](media/service-admin-auditing/export-auditing-results.png)
 
 ### <a name="use-powershell-to-search-audit-logs"></a>Utiliser PowerShell pour rechercher dans les journaux d’audit
 

@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2679e9fa21b193fa4c19384c2bd7d22660cf657a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235797"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264381"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
 
-![Capture d’écran montrant les résultats des capteurs d’environnement en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
+![Capture d’écran du tableau de bord Capteurs d’environnement, qui présente les résultats des données en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Cet article vous montre comment configurer un jeu de données de streaming en temps réel dans Power BI. Avant de voir comment cela fonctionne, il est important de comprendre les types de jeux de données en temps réel qui sont conçus pour s’afficher dans les vignettes (et les tableaux de bord), ainsi que leurs différences.
 
@@ -61,7 +61,7 @@ Les vignettes basées sur le **jeu de données de streaming PubNub** sont optimi
 ### <a name="streaming-dataset-matrix"></a>Matrice de jeu de données de streaming
 Le tableau suivant (ou la matrice si vous préférez) décrit les trois types de jeux de données de streaming en temps réel et répertorie leurs fonctionnalités et limitations.
 
-![](media/service-real-time-streaming/real-time-streaming_11.png)
+![Capture d’écran d’une table, montrant la matrice de jeu de données de streaming.](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
 > Pour plus d’informations sur les limites **d’envoi** et la quantité de données pouvant être envoyées, voir [cet article](../developer/automation/api-rest-api-limitations.md).
@@ -92,11 +92,11 @@ Toutes les demandes aux API REST sont sécurisées à l’aide d’**Azure AD OA
 ### <a name="using-the-streaming-dataset-ui-to-push-data"></a>Utilisation de l’interface utilisateur du jeu de données de streaming pour transmettre des données
 Dans le service Power BI, vous pouvez créer un jeu de données en sélectionnant une **API** comme indiqué dans l’image suivante.
 
-![](media/service-real-time-streaming/real-time-streaming_0b.png)
+![Capture d’écran des choix de nouveaux jeux de données de streaming, montrant la sélection de l’API.](media/service-real-time-streaming/real-time-streaming_0b.png)
 
 Lorsque vous créez le jeu de données de streaming, vous pouvez choisir d’activer **Analyse des données d’historique** comme indiqué ci-dessous, ce qui a un impact significatif.
 
-![](media/service-real-time-streaming/real-time-streaming_0c.png)
+![Capture d’écran du nouveau jeu de données de streaming, montrant l’analyse des données d’historique activée.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
 Quand l’option **Analyse des données d’historique** est désactivée (c’est le cas par défaut), créez un **jeu de données de streaming** comme décrit précédemment dans cet article. Lorsque l’option **Analyse des données d’historique** est *activée*, le jeu de données créé est à la fois un **jeu de données de streaming** et un **jeu de données de transmission**. Cela équivaut à utiliser les API REST Power BI pour créer un jeu de données dont l’indicateur *defaultMode* est défini sur *pushStreaming*, comme décrit précédemment dans cet article.
 
@@ -125,19 +125,19 @@ Pour commencer un streaming en temps réel, vous devez choisir entre deux maniè
 
 Dans les deux cas, vous devrez configurer les **données de streaming** dans Power BI. Pour ce faire, dans votre tableau de bord (existant ou nouveau), sélectionnez **Ajouter une vignette**, puis sélectionnez **Données de streaming personnalisées**.
 
-![](media/service-real-time-streaming/real-time-streaming_1.png)
+![Capture d’écran du tableau de bord, montrant la sélection de données de streaming personnalisées dans la section Ajouter une vignette.](media/service-real-time-streaming/real-time-streaming_1.png)
 
 Si vous n’avez pas encore configuré de données de streaming, ne vous inquiétez pas. Vous pouvez sélectionner **Gérer les données** pour commencer.
 
-![](media/service-real-time-streaming/real-time-streaming_2.png)
+![Capture d’écran du tableau de bord, montrant le lien Gérer les données dans la page Ajouter une vignette de données de streaming personnalisées.](media/service-real-time-streaming/real-time-streaming_2.png)
 
 Dans cette page, vous pouvez entrer le point de terminaison de votre jeu de données de streaming si vous en avez déjà créé un (dans la zone de texte). Si vous n’avez pas encore de jeu de données de streaming, sélectionnez l’icône plus ( **+** ) dans l’angle supérieur droit afin d’afficher les options disponibles pour créer un jeu de données de streaming.
 
-![](media/service-real-time-streaming/real-time-streaming_3.png)
+![Capture d’écran du tableau de bord montrant comment entrer le point de terminaison de votre jeu de données de streaming avec une flèche vers l’icône plus.](media/service-real-time-streaming/real-time-streaming_3.png)
 
 Lorsque vous cliquez sur l’icône **+** , vous voyez deux options :
 
-![](media/service-real-time-streaming/real-time-streaming_4a.png)
+![Capture d’écran des choix de nouveaux jeux de données de streaming, montrant les options API et PubNub.](media/service-real-time-streaming/real-time-streaming_4a.png)
 
 La section suivante décrit ces options et approfondit le mode de création, à partir de la source de données de streaming, d’une **vignette** ou d’un **jeu de données** de streaming que vous pouvez ensuite utiliser pour générer des rapports.
 
@@ -152,7 +152,7 @@ Les sections suivantes examinent successivement chaque option.
 ### <a name="using-the-power-bi-rest-api"></a>Utilisation de l’API REST Power BI
 **API REST Power BI**les récentes améliorations de l’API REST Power BI visent à faciliter le streaming en temps réel pour les développeurs. Lorsque vous sélectionnez **API** dans la fenêtre **Nouveau jeu de données de streaming**, vous devez fournir des entrées permettant à Power BI se connecter à votre point de terminaison et de l’utiliser :
 
-![](media/service-real-time-streaming/real-time-streaming_5.png)
+![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant les entrées de l’API REST Power BI pour la connexion.](media/service-real-time-streaming/real-time-streaming_5.png)
 
 Si vous souhaitez que Power BI stocke les données envoyées via ce flux de données, activez *Analyse des données d’historique* afin de pouvoir générer des rapports et effectuer des analyses à partir du flux des données collectées. Vous pouvez également [en savoir plus sur l’API](https://docs.microsoft.com/rest/api/power-bi/).
 
@@ -163,7 +163,7 @@ Lors de l’établissement d’une demande *POST*, vous devez vous assurer que l
 ### <a name="using-pubnub"></a>Utilisation de PubNub
 Avec l’intégration d’un streaming de **PubNub** avec Power BI, vous pouvez utiliser vos flux de données de **PubNub** à faible latence (ou en créer de nouveaux), puis les utiliser dans Power BI. Lorsque vous sélectionnez **PubNub**, puis **Suivant**, vous voyez la fenêtre suivante :
 
-![](media/service-real-time-streaming/real-time-streaming_7.png)
+![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant les entrées PubNub pour la connexion.](media/service-real-time-streaming/real-time-streaming_7.png)
 
 > [!WARNING]
 > Les canaux PubNub peuvent être sécurisés à l’aide d’une clé d’authentification PAM (PubNub Access Manager). Cette clé est partagée entre tous les utilisateurs qui ont accès au tableau de bord. Si vous le souhaitez, des [informations supplémentaires sur le contrôle d’accès PubNub ](https://www.pubnub.com/docs/web-javascript/pam-security) sont disponibles.
@@ -179,7 +179,7 @@ Dans cet exemple, nous utilisons un flux de données accessible au public de **P
 
 1. Dans le **service Power BI**, sélectionnez un tableau de bord (ou créez-en un), puis sélectionnez **Ajouter une vignette** > **Données de streaming personnalisées**, puis appuyez sur le bouton **Suivant**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_1.png)
+   ![Capture d’écran du tableau de bord, montrant la sélection de données de streaming personnalisées dans la section Ajouter une vignette.](media/service-real-time-streaming/real-time-streaming_1.png)
 2. Si vous n’avez pas encore de sources de données de streaming, sélectionnez le lien **Gérer les données** (juste au-dessus du bouton **Suivant**), puis sélectionnez **+ Ajouter des données de streaming** à partir du lien dans l’angle supérieur droit de la fenêtre. Sélectionnez **PubNub**, puis sélectionnez **Suivant**.
 3. Créez un nom pour votre jeu de données, collez les valeurs suivantes dans la fenêtre qui s’affiche, puis sélectionnez **Next** :
    
@@ -190,13 +190,13 @@ Dans cet exemple, nous utilisons un flux de données accessible au public de **P
    
        pubnub-sensor-network
    
-   ![](media/service-real-time-streaming/real-time-streaming_8.png)
+   ![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant comment créer un nom et des entrées de jeu de données dans les champs Sous-clé et Canal.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. Dans la fenêtre suivante, sélectionnez simplement les valeurs par défaut (qui sont automatiquement renseignées), puis sélectionnez **Create**.
    
-   ![](media/service-real-time-streaming/real-time-streaming_9.png)
+   ![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant les valeurs par défaut du nom du jeu de données et les valeurs des champs de flux.](media/service-real-time-streaming/real-time-streaming_9.png)
 5. De retour dans votre espace de travail Power BI, créez un tableau de bord, puis ajoutez une vignette (voir ci-dessus pour savoir comment procéder si nécessaire). À présent, lorsque vous créez une vignette, puis sélectionnez **Données de streaming personnalisées**, vous disposez d’un jeu de données de streaming pour travailler. Continuons et manipulons-les. En ajoutant les champs *nombre* à des graphiques en courbes, puis en ajoutant d’autres vignettes, vous pouvez obtenir un tableau de bord en temps réel qui ressemble à ceci :
    
-   ![Capture d’écran montrant les résultats des capteurs d’environnement en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
+   ![Capture d’écran du tableau de bord Capteurs d’environnement, montrant les résultats en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Faites un essai et manipulez l’exemple de jeu de données. Passez ensuite à la création de vos propres jeux de données, et envoyez le flux de données en direct à Power BI.
 

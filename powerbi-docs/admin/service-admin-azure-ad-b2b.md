@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 17c19fbdf1c5057d287f50531f2b679a19e3a30e
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: ca0a33f42c1b2fd466df9af59bb649ae73d7d594
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939458"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161373"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -62,7 +62,7 @@ Procédez comme suit pour envoyer une invitation dans le portail Azure.
 
 1. Entrez une **adresse e-mail** et un **message personnel**.
 
-    ![Capture d’écran de la boîte de dialogue Nouvel utilisateur invité du portail Azure AD.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
+    ![Capture d’écran de la boîte de dialogue Nouvel utilisateur invité avec les champs d’adresse e-mail et de message mis en évidence.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Sélectionnez **Inviter**.
 
@@ -70,7 +70,7 @@ Pour inviter plusieurs utilisateurs, utilisez PowerShell ou créez une invitatio
 
 L’utilisateur invité doit sélectionner **Mise en route** dans l’e-mail d’invitation reçu. Il est alors ajouté à l’organisation.
 
-![Capture d’écran de l’invitation par e-mail d’un utilisateur invité.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
+![Capture d’écran de l’e-mail d’invitation d’un utilisateur avec l’option Mise en route mise en évidence.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
 ### <a name="ad-hoc-invites"></a>Invitations ad hoc
 
@@ -80,7 +80,7 @@ Pour inviter à tout moment un utilisateur externe, ajoutez-le à votre tableau 
 
 L’utilisateur invité reçoit un e-mail indiquant que vous avez partagé l’application avec lui.
 
-![Capture d’écran de l’e-mail indiquant qu’une application est partagée avec un utilisateur invité](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
+![Capture d’écran de l’e-mail que l’utilisateur invité reçoit quand l’application a été partagée.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 L’utilisateur invité doit se connecter en utilisant l’adresse e-mail de son organisation. Il recevra une demande d’acceptation de l’invitation une fois connecté. Après la connexion, l’application s’ouvre pour l’utilisateur invité. Pour revenir à l’application, il doit marquer le lien à l’aide d’un signet ou enregistrer l’e-mail.
 
@@ -94,19 +94,19 @@ Les [utilisateurs invités qui peuvent modifier et gérer le contenu de l’orga
 
 L’affectation de l’espace de travail à la [capacité Power BI Premium](service-premium-what-is.md) permet à l’utilisateur invité d’utiliser l’application sans disposer d’une licence Power BI Pro. Power BI Premium permet également à des applications de tirer parti d’autres capacités, comme des fréquences de rafraîchissement accrues, une capacité dédiée et des modèles de grande taille.
 
-![Diagramme de l’expérience d’un utilisateur invité avec Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
+![Diagramme de l’expérience de l’utilisateur invité avec Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Affecter une licence Power BI Pro à un utilisateur invité
 
 Si vous affectez une licence Power BI Pro de votre organisation à un utilisateur invité, celui-ci pourra voir le contenu partagé avec lui. Pour plus d’informations sur l’attribution de licences, consultez [Attribution de licences à des utilisateurs via la page Licences](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Avant d’attribuer des licences Pro à des utilisateurs invités, consultez le site des [Conditions d’utilisation des produits](https://www.microsoft.com/licensing/terms) pour vérifier que vous êtes en conformité avec les conditions de votre contrat avec Microsoft.
 
-![Diagramme de l’expérience d’un utilisateur invité avec une licence Pro provenant de votre locataire.](media/service-admin-azure-ad-b2b/license-approach-2.png)
+![Diagramme de l’expérience de l’utilisateur invité avec une licence Pro provenant de votre locataire.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
 ### <a name="guest-user-brings-their-own-power-bi-pro-license"></a>Utilisateur invité apportant sa propre licence Power BI Pro
 
 Il peut arriver que l’utilisateur invité dispose déjà d’une licence Power BI Pro, attribuée par le biais de sa propre organisation.
 
-![Diagramme de l’expérience d’un utilisateur invité quand ils apportent leur propre licence.](media/service-admin-azure-ad-b2b/license-approach-3.png)
+![Diagramme de l’expérience de l’utilisateur invité quand il apporte sa propre licence.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Utilisateurs invités pouvant modifier et gérer du contenu
 
@@ -118,7 +118,7 @@ Pour aider les invités autorisés à se connecter à Power BI, fournissez-leur
 
 2. Recherchez la valeur en regard de **URL de locataire**. Partagez l’URL du locataire avec les utilisateurs invités autorisés.
 
-    ![Capture d’écran de la boîte de dialogue À propos de Power BI avec l’URL du locataire affichée pour l’utilisateur invité.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Capture d’écran de la boîte de dialogue À propos de Power BI avec l’URL du locataire de l’utilisateur invité mise en évidence.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

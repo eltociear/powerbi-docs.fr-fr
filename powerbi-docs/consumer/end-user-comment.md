@@ -2,20 +2,20 @@
 title: Ajouter des commentaires à des tableaux de bord et des rapports
 description: Ce document montre comment ajouter des commentaires à un tableau de bord, un rapport ou un visuel et comment les utiliser pour converser avec des collaborateurs.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 07/07/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 4d9581a617241afbe668d8e1810c0c3f60a0835c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 76a3bd087899126d1c3aa9eed6eb7d20b1441bff
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236036"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161852"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
 
@@ -33,7 +33,7 @@ Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un 
 ## <a name="how-to-use-the-comments-feature"></a>Comment utiliser la fonctionnalité Commentaires
 Les commentaires peuvent être ajoutés à l’ensemble d’un tableau de bord, à chacun des visuels d’un tableau de bord, à une page de rapport, à un rapport paginé et à chacun des visuels d’une page de rapport. Le commentaire que vous ajoutez peut être général ou cibler certains collègues.  
 
-Lorsque vous ajoutez un commentaire à un rapport, Power BI capture le filtre et les valeurs de segment actuels. Cela signifie que lorsque vous sélectionnez un commentaire ou y répondez, la page de rapport ou le visuel du rapport peut changer pour vous montrer les sélections de filtre et de segment qui étaient actives lorsque le commentaire a été ajouté pour la première fois.  
+Lorsque vous ajoutez un commentaire à un rapport, Power BI capture le filtre et les valeurs de segment actuels, puis crée un [signet](end-user-bookmarks.md). Cela signifie que lorsque vous sélectionnez un commentaire ou y répondez, la page de rapport ou le visuel du rapport peut changer pour vous montrer les sélections de filtre et de segment qui étaient actives lorsque le commentaire a été ajouté pour la première fois.  
 
 ![Vidéo présentant un rapport avec des filtres](media/end-user-comment/power-bi-comment.gif)
 
@@ -46,15 +46,15 @@ Les processus d’ajout de commentaires à un tableau de bord ou à un rapport s
 
 1. Ouvrez un tableau de bord ou un rapport Power BI et sélectionnez l’icône **Commentaires**. La boîte de dialogue Commentaires s’ouvre.
 
-    ![icône de commentaires](media/end-user-comment/power-bi-comment-menu.png)
+    ![icône de commentaires](media/end-user-comment/power-bi-comments-icon.png)
 
     Vous pouvez constater ici que le créateur du tableau de bord a déjà ajouté un commentaire général.  Toute personne ayant accès à ce tableau de bord peut voir ce commentaire.
 
-    ![icône de commentaires](media/end-user-comment/power-bi-first-comments.png)
+    ![icône de commentaires](media/end-user-comment/power-bi-first-comment.png)
 
 2. Pour répondre, sélectionnez **Répondre**, tapez votre réponse, puis sélectionnez **Poster**.  
 
-    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-comment-reply.png)
+    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-comments-reply.png)
 
     Par défaut, Power BI envoie votre réponse au collègue à l’origine du thread de commentaires, dans ce cas, Aaron. 
 
@@ -62,7 +62,7 @@ Les processus d’ajout de commentaires à un tableau de bord ou à un rapport s
 
  3. Si vous souhaitez ajouter un commentaire qui ne fait pas partie d’un thread existant, entrez votre commentaire dans le champ de texte situé dans la partie supérieure.
 
-    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-new-comments.png)
+    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-new-commenting.png)
 
     Les commentaires pour ce tableau de bord ressemblent maintenant à ceci.
 
@@ -74,11 +74,11 @@ Vous pouvez également ajouter des commentaires à des vignettes de tableau de b
 1. Pointez sur le visuel, puis sélectionnez **Plus d’options** (...).    
 2. Dans la liste déroulante, sélectionnez **Ouvrir les commentaires**.
 
-    ![Ajouter un commentaire est le premier choix](media/end-user-comment/power-bi-report-comment.png)  
+    ![Ajouter un commentaire est le premier choix](media/end-user-comment/power-bi-comment-reports.png)  
 
 3.  La boîte de dialogue **Commentaires** s’ouvre, et les autres visuels de la page sont grisés. Ce visuel n’a pas encore de commentaires. 
 
-    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comment-column.png)  
+    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comments-column.png)  
 
 4. Tapez votre commentaire, puis sélectionnez **Poster**.
 
@@ -94,13 +94,15 @@ Vous pouvez également ajouter des commentaires à des vignettes de tableau de b
 5. Sélectionnez **Fermer** pour revenir au tableau de bord ou au rapport.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Attirer l’attention de vos collègues à l’aide du symbole @
-Que vous ajoutiez des commentaires à un tableau de bord, un rapport, une vignette ou un visuel, vous pouvez utiliser le symbole « \@ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « \@ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher des personnes de votre organisation et les sélectionner. Tout nom vérifié commençant par le symbole « \@ » s’affiche en bleu. 
+Que vous ajoutiez des commentaires à un tableau de bord, un rapport, une vignette ou un visuel, vous pouvez utiliser le symbole « \@ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « \@ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher des personnes de votre organisation et les sélectionner. Tout nom vérifié commençant par le symbole « \@ » s’affiche en bleu. Les personnes @mentioned reçoivent immédiatement un e-mail dans leur boîte de réception et, si elles utilisent une application Power BI Mobile, elles reçoivent une notification Push sur leur appareil. Elles peuvent ouvrir le commentaire directement à partir de la notification, afficher les données et répondre en conséquence.
 
-Voici une conversation avec le *concepteur* d’une visualisation. Il utilise le symbole @ pour que je voie le commentaire. Je sais que ce commentaire m’est destiné. Quand j’ouvre le tableau de bord de cette application dans Power BI, je sélectionne **Commentaires** dans l’en-tête. Le volet **Commentaires** affiche notre conversation.
+Voici une conversation avec le *concepteur* d’une visualisation. Il utilise le symbole @ pour que je voie le commentaire. Je reçois une notification et je sélectionne le lien pour ouvrir ce tableau de bord et la conversation correspondante.  
 
 ![Mention Ajouter un commentaire](media/end-user-comment/power-bi-comment-convo.png)  
 
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
+- Les signets ne sont pas capturés lorsque vous répondez à une conversation. Seul le premier commentaire d’une conversation crée un signet.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Revenir aux [visualisations pour les consommateurs](end-user-visualizations.md)    

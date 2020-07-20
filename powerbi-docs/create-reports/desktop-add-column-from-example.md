@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9632bfaecc524aac95ec524cccb59ba08a7bc21f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 68f2dc14b713345796ba0472fc3d55f6baedf819
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229067"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86263198"
 ---
 # <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Ajouter une colonne à partir d’exemples dans Power BI Desktop
 En utilisant la fonctionnalité *Ajouter une colonne à partir d’exemples* dans l’éditeur Power Query, vous pouvez ajouter de nouvelles colonnes à votre modèle de données simplement en fournissant un ou plusieurs exemples de valeurs pour les nouvelles colonnes. Vous pouvez créer les exemples de la nouvelle colonne à partir d’une sélection ou fournir des entrées basées sur toutes les colonnes existantes dans la table.
 
-![](media/desktop-add-column-from-example/add-column-from-example_01.png)
+![Capture d’écran de l’éditeur Power Query, montrant comment ajouter une colonne à partir d’exemples dans Power BI Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 La fonctionnalité *Ajouter une colonne à partir d’exemples* vous permet de créer rapidement et facilement des colonnes, ce qui s’avère particulièrement utile dans les situations suivantes :
 
@@ -165,4 +165,3 @@ La plupart des transformations, mais pas toutes, sont disponibles avec la foncti
 - Somme
 - Tangente
 - Création de compartiments/plages
-

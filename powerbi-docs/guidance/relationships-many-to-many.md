@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 971c2351fe5032ba91fa6c0f964bd844ef479b05
-ms.sourcegitcommit: 66b1a0c74b8a7dcb33a2f8570fb67bce2401a895
+ms.openlocfilehash: 7c9b5c753b262900d61a1a71b4c9a8167c943121
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84532416"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216687"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 
@@ -35,20 +35,20 @@ La modélisation de ces entités est simple. Une table de type dimension stocke 
 
 Voici un diagramme de modèle simpliste des trois tables.
 
-![Un diagramme de modèle contient trois tables. La conception est décrite dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-example.png)
+![Diagramme illustrant un modèle contenant trois tables. La conception est décrite dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-example.png)
 
 La première table est nommée **Account** et contient deux colonnes : **AccountID** et **Account**. La deuxième table est nommée **AccountCustomer** et contient deux colonnes : **AccountID** et **CustomerID**. La troisième table est nommée **Customer** et contient deux colonnes : **CustomerID** et **Customer**. Il n’existe aucune relation entre les tables.
 
 Deux relations de type un à plusieurs sont ajoutées pour associer les tables. Voici un diagramme de modèle des tables associées mis à jour. Une table de type fait nommée **Transaction** a été ajoutée. Elle enregistre les transactions de compte. La table de pontage et toutes les colonnes ID ont été masquées.
 
-![Le diagramme de modèle contient maintenant quatre tables. Des relations de type un à plusieurs ont été ajoutées pour associer toutes les tables.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
+![Diagramme montrant que le modèle contient maintenant quatre tables. Des relations de type un à plusieurs ont été ajoutées pour associer toutes les tables.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
 
 Pour mieux décrire le fonctionnement de la propagation de filtres de relation, le diagramme de modèle a été modifié afin d’afficher les lignes de la table.
 
 > [!NOTE]
 > Il n’est pas possible d’afficher les lignes de la table dans le diagramme de modèle Power BI Desktop. Cette opération est effectuée dans cet article pour étayer la discussion avec des exemples clairs.
 
-![Le diagramme de modèle affiche désormais les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 Les détails des lignes pour les quatre tables sont décrits dans la liste à puces suivante :
 
@@ -71,7 +71,7 @@ Voyons ce qui se passe lorsque le modèle est interrogé.
 
 Vous trouverez ci-dessous deux visuels qui récapitulent la colonne **Amount** à partir de la table **Transaction**. Le premier visuel effectuant un regroupement par compte, la somme des colonnes **Amount** représente le _solde du compte_. Le second visuel effectuant un regroupement par client, la somme des colonnes **Amount** représente le _solde du client_.
 
-![Deux visuels de rapport sont placés côte à côte. Les visuels sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
+![Diagramme montrant deux visuels de rapport côte à côte. Les visuels sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
 
 Le premier visuel est intitulé **Solde du compte** et il comporte deux colonnes : **Account** et **Amount**. Il affiche le résultat suivant :
 
@@ -91,9 +91,9 @@ Toutefois, un problème semble se poser avec le visuel **Solde du client**. Chaq
 
 Suivez les directions du filtre de relation de la table **Customer** jusqu’à la table **Transaction**. Il doit être évident que la relation entre les tables **Account** et **AccountCustomer** est propagée dans la mauvaise direction. La direction du filtre pour cette relation doit être définie sur **À double sens**.
 
-![Le diagramme de modèle a été mis à jour. Une seule modification a été apportée à la relation entre les tables Account et AccountCustomer. Elle filtre maintenant dans les deux directions.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
+![Diagramme montrant que le modèle a été mis à jour. Elle filtre maintenant dans les deux directions.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
 
-![Les deux mêmes visuels de rapport sont placés côte à côte. Le premier visuel n’a pas changé. Le second visuel affiche un résultat différent et il est décrit dans les paragraphes suivants.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
+![Diagramme montrant les deux mêmes visuels de rapport côte à côte. Le premier visuel n’a pas changé, mais le deuxième a changé.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
 
 Comme prévu, aucune modification n’a été apportée au visuel **Solde du compte**.
 
@@ -131,13 +131,13 @@ Le deuxième type de scénario plusieurs à plusieurs implique l’association d
 
 Prenons un exemple qui implique deux tables de type fait : **Order** et **Fulfillment**. La table **Order** contient une ligne par ligne de commande et la table **Fulfillment** peut contenir zéro ou plusieurs lignes par ligne de commande. Les lignes de la table **Order** représentent les commandes client. Les lignes de la table **Fulfillment** représentent les articles commandés qui ont été expédiés. Une relation plusieurs à plusieurs associe les deux colonnes **OrderID**, avec la propagation de filtres uniquement à partir de la table **Order** (**Order** filtre **Fulfillment**).
 
-![Un diagramme de modèle contient deux tables : Order et Fulfillment. Une relation plusieurs à plusieurs associe les deux colonnes OrderID, Order filtrant Fulfillment.](media/relationships-many-to-many/order-fulfillment-model-example.png)
+![Diagramme illustrant un modèle contenant deux tables : Order et Fulfillment.](media/relationships-many-to-many/order-fulfillment-model-example.png)
 
 La cardinalité de relation est définie sur plusieurs à plusieurs pour prendre en charge le stockage des valeurs **OrderID** en double dans les deux tables. Dans la table **Order**, il peut exister des valeurs **OrderID** en double, car une commande peut avoir plusieurs lignes. Dans la table **Fulfillment**, il peut exister des valeurs **OrderID** en double, car les commandes peuvent avoir plusieurs lignes et les lignes de commande peuvent être remplies par de nombreuses expéditions.
 
 Examinons maintenant les lignes de la table. Dans la table **Fulfillment**, notez que les lignes de commande peuvent être remplies par plusieurs expéditions. (L’absence d’une ligne de commande signifie que la commande doit encore être remplie.)
 
-![Le diagramme de modèle affiche désormais les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 Les détails des lignes pour les deux tables sont décrits dans la liste à puces suivante :
 
@@ -155,7 +155,7 @@ Les détails des lignes pour les deux tables sont décrits dans la liste à puce
 
 Voyons ce qui se passe lorsque le modèle est interrogé. Voici un visuel de table qui compare les quantités commandées et traitées selon la colonne **OrderID** de la table **Order**.
 
-![Un visuel de table comporte trois colonnes : OrderID, OrderQuantity et FulfillmentQuantity. Il y a trois lignes, une pour chaque commande. Les lignes OrderID 2 et 3 ne sont pas complètement traitées.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
+![Diagramme illustrant un visuel de table à trois colonnes : OrderID, OrderQuantity et FulfillmentQuantity.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
 
 Le visuel présente un résultat précis. Toutefois, l’utilité du modèle est limitée : vous pouvez uniquement filtrer ou regrouper selon la colonne **OrderID** de la table **Order**.
 
@@ -167,7 +167,7 @@ Au lieu d’associer directement les tables de type fait, nous vous recommandons
 
 Envisageons une meilleure solution.
 
-![Un diagramme de modèle comprend six tables : OrderLine, OrderDate, Order, Fulfillment, Product et FulfillmentDate. Toutes les tables sont liées. La conception est décrite dans le paragraphe suivant.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
+![Diagramme illustrant un modèle à six tables : OrderLine, OrderDate, Order, Fulfillment, Product et FulfillmentDate.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
 
 Notez les modifications de conception suivantes :
 
@@ -192,11 +192,11 @@ Ce scénario de type plusieurs à plusieurs est très différent des deux autres
 
 Prenons un exemple impliquant quatre tables : **Date**, **Sales**, **Product** et **Target**. **Date** et **Product** sont des tables de type dimension, et les relations de type un à plusieurs associent chacune à la table de type fait **Sales**. Jusqu’à présent, il s’agit d’une bonne conception de schéma en étoile. Toutefois, la table **Target** n’est pas encore liée aux autres tables.
 
-![Un diagramme de modèle comprend quatre tables : Date, Sales, Product et Target. La table Target n’est associée à aucune autre table. La conception est décrite dans le paragraphe suivant.](media/relationships-many-to-many/sales-targets-model-example.png)
+![Diagramme illustrant un modèle à quatre tables : Date, Sales, Product et Target.](media/relationships-many-to-many/sales-targets-model-example.png)
 
 La table **Target** contient trois colonnes : **Category**, **TargetQuantity** et **TargetYear**. Les lignes de la table affichent une précision au niveau de l’année et de la catégorie de produit. En d’autres termes, les cibles, utilisées pour mesurer les performances des ventes, sont définies chaque année pour chaque catégorie de produit.
 
-![La table Target comporte trois colonnes : TargetYear, Category et TargetQuantity. Six lignes enregistrent des cibles pour 2019 et 2020, chacune pour trois catégories.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
+![Diagramme montrant que la table cible comporte trois colonnes : TargetYear, Category et TargetQuantity.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
 
 Étant donné que la table **Target** stocke les données à un niveau supérieur à celui des tables de type dimension, il n’est pas possible de créer une relation de type un à plusieurs. Eh bien, cela est vrai pour une seule des relations. Étudions comment la table **Target** peut être associée aux tables de type dimension.
 
@@ -211,7 +211,7 @@ Toutefois, il convient de veiller à ce que les filtres de niveau mois ou date p
 
 Le visuel de matrice suivant montre ce qui se produit quand l’utilisateur du rapport passe d’une année à ses mois. Le visuel récapitule la colonne **TargetQuantity**. (L’option [Afficher les éléments sans données](../create-reports/desktop-show-items-no-data.md) a été activée pour les lignes de la matrice.)
 
-![Un visuel de matrice affiche la quantité cible 270 pour l’année 2020. Quand il est développé pour afficher les mois de 2020, janvier correspond à 270, et la quantité cible au niveau d’un mois sur deux est VIDE.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
+![Diagramme illustrant un visuel de matrice révélant que la quantité cible pour l’année 2020 est 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
 Pour éviter ce comportement, nous vous recommandons de contrôler la totalisation de vos données de faits à l’aide de mesures. Une façon de contrôler la totalisation consiste à retourner la valeur VIDE lorsque des périodes de niveau inférieur sont interrogées. Une autre méthode, définie avec une bibliothèque DAX sophistiquée, consiste à répartir les valeurs sur des périodes de niveau inférieur.
 
@@ -228,7 +228,7 @@ IF(
 
 Le visuel de matrice suivant utilise désormais la mesure **TargetQuantity**. Elle indique que toutes les quantités cibles mensuelles sont VIDES.
 
-![Un visuel de matrice affiche la quantité cible 270 pour l’année 2020. Quand il est développé pour afficher les mois de 2020, la quantité cible au niveau de chaque mois est VIDE.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagramme illustrant un visuel de matrice révélant que la quantité cible pour l’année 2020 est 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### <a name="relate-higher-grain-non-date"></a>Associer à un niveau plus général (non-date)
 
@@ -236,21 +236,21 @@ Une autre approche de conception est nécessaire lors de l’association d’une
 
 Les colonnes **Category** (des tables **Product** et **Target**) contiennent des valeurs en double. Il n’y a donc pas de « un » pour une relation de type un à plusieurs. Dans ce cas, vous devez créer une relation plusieurs à plusieurs. La relation doit propager les filtres dans une seule direction, de la table de type dimension à la table de type fait.
 
-![Un fragment du diagramme de modèle montre les tables Target et Product. Une relation plusieurs à plusieurs associe les deux tables. La direction du filtre va de Product à Target.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
+![Diagramme montrant un modèle des tables Target et Product. Une relation plusieurs à plusieurs associe les deux tables.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
 
 Examinons maintenant les lignes de la table.
 
-![Un diagramme de modèle contient deux tables : Target et Product. Une relation plusieurs à plusieurs associe les deux colonnes Category. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
+![Diagramme illustrant un modèle contenant deux tables : Target et Product. Une relation plusieurs à plusieurs associe les deux colonnes Category.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
 
 Dans la table **Target**, il y a quatre lignes : deux lignes pour chaque année cible (2019 et 2020) et deux catégories (Vêtements et Accessoires). Dans la table **Product**, il existe trois produits. Deux appartiennent à la catégorie Vêtements et l’autre à la catégorie Accessoires. L’une des couleurs de la catégorie Vêtements est Vert et les deux autres sont Bleu.
 
 Un regroupement visuel de table selon la colonne **Category** de la table **Product** génère le résultat suivant.
 
-![Un visuel de table comporte deux colonnes : Category et TargetQuantity. Accessoires correspond à 60, Vêtements à 40 et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
+![Diagramme illustrant un visuel de table à deux colonnes : Category et TargetQuantity. Accessoires correspond à 60, Vêtements à 40 et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-category-targets.png)
 
 Ce visuel produit le résultat correct. Voyons maintenant ce qui se passe lorsque la colonne **Color** de la table **Product** est utilisée pour regrouper la quantité cible.
 
-![Un visuel de table comporte deux colonnes : Color et TargetQuantity. Bleu correspond à 100, Vert à 40 et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
+![Diagramme illustrant un visuel de table à deux colonnes : Color et TargetQuantity. Bleu correspond à 100, Vert à 40 et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-bad.png)
 
 Le visuel produit une représentation incorrecte des données. Que se passe-t-il ici ?
 
@@ -272,11 +272,11 @@ IF(
 
 Le visuel de table suivant utilise désormais la mesure **TargetQuantity**. Elle indique que toutes les quantités cibles de couleur sont VIDES.
 
-![Un visuel de table comporte deux colonnes : Color et TargetQuantity. Bleu correspond à VIDE, Vert à VIDE et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
+![Diagramme illustrant un visuel de table à deux colonnes : Color et TargetQuantity. Bleu correspond à VIDE, Vert à VIDE et le total est égal à 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
 
 La conception du modèle final se présente comme suit.
 
-![Le diagramme de modèle indique que les tables Date et Target sont liées par une relation de type un à plusieurs. Les tables Product et Target sont liées par une relation plusieurs à plusieurs, en filtrant depuis Product vers Target.](media/relationships-many-to-many/sales-targets-model-example-final.png)
+![Diagramme montrant un modèle avec des tables Date et Target liées par une relation de type un à plusieurs.](media/relationships-many-to-many/sales-targets-model-example-final.png)
 
 ### <a name="relate-higher-grain-facts-guidance"></a>Conseils sur l’association des faits de niveau plus général
 

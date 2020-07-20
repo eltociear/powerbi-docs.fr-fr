@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f70876b3b8c1815576ed019f88b67296f7aec052
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9fa3ee1c1e0f757eb3b464785c8cb3fe3ab6e78
+ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238609"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "86264725"
 ---
 # <a name="use-visual-table-and-data-point-table-in-power-bi-desktop"></a>Utiliser un tableau visuel et un tableau de points de données dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez explorer les détails d’une visualisation et consulter des représentations textuelles des données sous-jacentes ou enregistrements de données individuelles du visuel sélectionné. Ces fonctionnalités sont parfois appelées *interactif*, *extraction* ou *extraction jusqu’aux détails*.
@@ -74,7 +74,7 @@ Vous pouvez également cliquer avec le bouton droit sur un élément de données
 
 Lorsque vous sélectionnez **Tableau de points de données** pour un élément de données, le canevas de Power BI Desktop affiche toutes les données associées à l’élément sélectionné. 
 
-![](media/desktop-see-data-see-records/visual-table-09.png)
+![Capture d’écran d’un canevas, montrant toutes les données associées à l’élément sélectionné quand vous sélectionnez Table de points de données.](media/desktop-see-data-see-records/visual-table-09.png)
 
 Pour revenir au rapport, sélectionnez **< Retour au rapport** dans l’angle supérieur gauche du canevas.
 

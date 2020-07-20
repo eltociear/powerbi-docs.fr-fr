@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ee5536f2c4026ceb019c5f89b6045afd44b35529
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299615"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86162040"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
 
@@ -82,7 +82,7 @@ Le rapport de métriques d’utilisation amélioré comporte les pages suivantes
 | Utilisation des rapports | Visiteurs uniques | Un visiteur est une personne qui a ouvert le rapport au moins une fois au cours de la période (en fonction du compte d’utilisateur AAD). |
 | Utilisation des rapports | Tendance des vues | La tendance des vues reflète les modifications du nombre de vues au fil du temps. Elle compare la première moitié de la période sélectionnée à la seconde moitié. |
 | Utilisation des rapports | Segment de date | Vous pouvez modifier la période sur la page Utilisation du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires. Dans le coin inférieur gauche de la page Utilisation du rapport, vous pouvez déterminer la date la plus ancienne et la plus récente à laquelle les données d’utilisation sont disponibles pour le rapport sélectionné. |
-| Utilisation des rapports | Rank | Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation.   |
+| Utilisation des rapports | Rank | Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation. Un classement de 1 signifie que le rapport a le plus grand nombre de vues de tous les rapports de l’organisation.   |
 | Utilisation des rapports | Vues du rapport par jour | Nombre total de vues par jour. |
 | Utilisation des rapports | Visiteurs du rapport par jour | Nombre total d’utilisateurs différents qui ont consulté le rapport (en fonction du compte d’utilisateur AAD). |
 | Utilisation des rapports | Méthode de distribution | Manière dont les utilisateurs ont obtenu l’accès au rapport, par exemple en tant que membres d’un espace de travail, suite au partage du rapport ou en installant une application. |
@@ -258,6 +258,8 @@ Outre les différences ci-dessus entre la version précédente et la version am�
 - L’initialisation du jeu de données du rapport de métriques d’utilisation peut prendre quelques minutes, ce qui entraîne l’affichage d’un rapport de métriques d’utilisation vide, car l’interface utilisateur de Power BI n’attend pas la fin de l’actualisation. Vérifiez que l’opération d’actualisation a réussi dans l’historique d’actualisation, dans les paramètres du jeu de données du rapport de métriques d’utilisation.
 - L’initialisation du jeu de données du rapport de métriques d’utilisation est susceptible d’échouer en raison d’un délai d’expiration au cours de l’actualisation. Pour résoudre ce problème, consultez la section Dépannage.
 - Le partage est désactivé pour le rapport de métriques d’utilisation. Pour pouvoir accorder aux utilisateurs un accès en lecture au rapport, vous devez d’abord leur donner accès à l’espace de travail.
+- Dans certains scénarios, vous pouvez remarquer que les données de performances sont manquantes. Cela peut se produire si un utilisateur ouvre un rapport et interagit avec lui avant la fin de son chargement ou si une erreur s’est produite lors du chargement du rapport.
+- Les données de performances s’appuient sur le client/l’appareil qui envoie les données à Power BI. Selon la latence du réseau, les bloqueurs de publicités, les pare-feu et les règles de réseau définies par votre organisation, les données de performances peuvent ne jamais parvenir à Power BI. Par conséquent, elles ne peuvent que présenter un exemple et ne peuvent pas inclure ni montrer tous les utilisateurs. 
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
@@ -309,7 +311,7 @@ La plateforme indique la technologie utilisée par le visiteur pour ouvrir le ra
 
 **Q :** Comment le classement des rapports fonctionne-t-il ?
 
-**R :** Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation.
+**R :** Selon le nombre de vues, le classement indique la popularité d’un rapport par rapport à tous les autres rapports de l’organisation. Un classement de 1 signifie que le rapport a le plus grand nombre de vues de tous les rapports de l’organisation.
 
 **Q :** À quoi correspondent les « utilisateurs sans nom » ?
 

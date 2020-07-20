@@ -1,7 +1,7 @@
 ---
 title: Générateur de rapports Power BI
 description: Power BI Report Builder est un outil qui permet de créer des rapports paginés.
-ms.date: 06/29/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a0c22be90b609e25a6403e33cb646b35e9467c07
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: f74fb596fb2a080922d0e62a4492ef6c8ccd4e0d
+ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782749"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86216744"
 ---
 # <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
 
@@ -22,9 +22,7 @@ ms.locfileid: "85782749"
  
 Vous êtes prêt à commencer la création ? [Installez le Générateur de rapports Power BI](https://aka.ms/pbireportbuilder) à partir du centre de téléchargement Microsoft.
 
-Vous préférez apprendre à partir de vidéos ? Consultez la série de vidéos sur les rapports paginés de Power BI sur YouTube, par le directeur principal du programme Power BI, Chris Finlan.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+Vous préférez apprendre à partir de vidéos ? Consultez le [Cours vidéo : Rapports paginés Power BI en une journée](../learning-catalog/paginated-reports-online-course.md).
 
 Le rapport paginé suivant présente une matrice avec des groupes de lignes et de colonnes, des graphiques sparkline, des indicateurs et un graphique à secteurs de synthèse dans la cellule d’angle, accompagné d’une carte avec deux ensembles de données géographiques représentées par couleur et par taille de cercle.  
 
@@ -63,4 +61,4 @@ Le rapport paginé suivant présente une matrice avec des groupes de lignes et d
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
-- Regardez la [série de vidéos sur les rapports paginés de Power BI](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) sur YouTube, par le directeur principal du programme Power BI, Chris Finlan
+- [Cours vidéo : Rapports paginés Power BI en une journée](../learning-catalog/paginated-reports-online-course.md)

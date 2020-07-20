@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4f9b69e863b71fda0cece06df7065740bd55463e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 620e71ffa08a02dc0d0080b310fb0252388e1b10
+ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228890"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86161189"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 
@@ -23,13 +23,13 @@ Si vous êtes administrateur de locataire et que vous voulez voir quels utilisat
 > [!NOTE]
 > Le rapport **Connexions** fournit des informations utiles, mais n’indique pas le type de licence dont dispose chaque utilisateur. Utilisez le Centre d’administration Microsoft 365 pour voir les licences.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Tous les utilisateurs (y compris ceux qui ne sont pas administrateurs) peuvent voir un rapport de leurs propres connexions, mais pour voir un rapport concernant tous les utilisateurs, vous devez remplir les conditions suivantes.
 
 * Votre locataire doit avoir une licence Azure Active Directory Premium associée.
 
-* Vous devez être dans un des rôles suivants : administrateur général, administrateur de la sécurité ou lecteur sécurité.
+* Vous devez avoir l’un des rôles suivants : Administrateur général, Administrateur de sécurité ou Lecteur sécurité.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Utiliser le portail Azure pour afficher les connexions
 
@@ -51,7 +51,7 @@ Pour afficher l’activité de connexion, procédez comme suit.
 
 Vous pouvez [télécharger un rapport de connexion](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) dans deux formats : CSV et JSON.
 
-![Capture d’écran du bouton de téléchargement.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Capture d’écran de l’exportation de données avec l’option Télécharger mise en surbrillance.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 En haut du rapport **Connexions**, sélectionnez **Télécharger**, puis sélectionnez l’une des options suivantes :
 
