@@ -11,6 +11,10 @@
     - name: Tutoriels
       expanded: true
       items:
+        - name: "Power\_BI\_Desktop : D’Excel au rapport"
+          href: desktop-excel-stunning-report.md
+        - name: "Service Power BI\_: D’Excel au rapport"
+          href: service-from-excel-to-stunning-report.md
         - name: "Cours en ligne\_: Rapports paginés"
           href: ../learning-catalog/paginated-reports-online-course.md
         - name: Créer un rapport paginé et télécharger

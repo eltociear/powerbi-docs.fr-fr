@@ -58,7 +58,7 @@
               href: service-gateway-power-bi-faq.md
     - name: Guides pratiques
       items:
-        - name: Se connecter à la source de données
+        - name: Se connecter aux sources de données
           href: desktop-connect-to-data.md
         - name: Se connecter aux données
           items:
@@ -156,8 +156,6 @@
           items:
             - name: Obtention de données à partir de fichiers
               href: service-get-data-from-files.md
-            - name: Passer d’Excel à des rapports impressionnants
-              href: service-from-excel-to-stunning-report.md
             - name: Obtenir des données de classeurs Excel
               href: service-excel-workbook-files.md
             - name: "Obtenir des données de fichiers Power\_BI Desktop"
@@ -240,7 +238,7 @@
               href: service-template-update-delete-extract.md
             - name: Exemples d’applications modèles
               href: service-template-apps-samples.md
-        - name: Résoudre des problèmes
+        - name: Dépanner
           items:
             - name: Résoudre les problèmes des scénarios d’actualisation
               href: refresh-troubleshooting-refresh-scenarios.md
