@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 06/16/2020
+ms.date: 07/16/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: be55180f57fec683b8da426e6c73bb95d6365d2f
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 5d6e3af615a73f8e4a3db42406bf94e33f16a2a3
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485527"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459666"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -89,7 +89,7 @@ Dans Visual Studio, il n’est pas possible de créer un projet tabulaire en imp
 
 Il est recommandé de spécifier le niveau de compatibilité 1500 (au minimum) pour les modèles tabulaires. Ce niveau de compatibilité permet de gérer la plupart des fonctionnalités et des types de sources de données. Les niveaux de compatibilité ultérieurs présentent une compatibilité descendante avec les niveaux antérieurs.
 
-### <a name="unsupported-data-providers"></a>Fournisseurs de données non pris en charge
+### <a name="supported-data-providers"></a>Fournisseurs de données pris en charge
 
 Au niveau de compatibilité 1500, Power BI prend en charge les types de sources de données suivants :
 

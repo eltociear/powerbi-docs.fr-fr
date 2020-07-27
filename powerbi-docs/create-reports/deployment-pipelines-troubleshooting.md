@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e41a13fac3e0ffea5171d2927cc0f3b9debbeef1
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: b911af4c7137aac9352c16985aac3a79a7eec87e
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485872"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557161"
 ---
 # <a name="deployment-pipelines-troubleshooting-preview"></a>Résolution des problèmes liés aux pipelines de déploiement (préversion)
 
@@ -110,7 +110,7 @@ Si votre déploiement a précédemment réussi et subit soudainement un échec �
 
 Il manque des valeurs dans les règles de votre jeu de données. Cela peut être dû à la modification de votre jeu de données.
 
-![Règle non respectée](media/deployment-pipelines-troubleshooting/broken-rule.png)
+![Capture d’écran de l’erreur relative aux règles non valides, qui s’affiche lorsqu’un déploiement échoue en raison de liens rompus.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
 En cas d’échec d’un déploiement précédemment réussi en raison de liens rompus, un avertissement s’affiche. Vous pouvez cliquer sur **Configurer les règles** pour accéder au volet Paramètres de déploiement, où le jeu de données ayant échoué est marqué. Lorsque vous cliquez sur le jeu de données, les règles non respectées sont marquées.
 

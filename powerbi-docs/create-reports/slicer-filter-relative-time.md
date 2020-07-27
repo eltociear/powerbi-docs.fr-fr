@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 04/22/2020
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 056d69a866b0b56e83557e77462e03e3e00a2c8d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f1a792c7ad25600f04ca9834b1e5019d4e27efb4
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218521"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409510"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Utilisation d’un segment et d’un filtre d’heure relative dans Power BI
 
@@ -22,18 +22,12 @@ ms.locfileid: "85218521"
 
 Avec les nouveaux scénarios d’actualisation rapide, la possibilité de filtrer sur une plus petite fenêtre de temps peut se révéler utile. À l’aide du segment ou du filtre d’heure relative, vous pouvez appliquer des filtres temporels à n’importe quelle colonne de date ou d’heure de votre modèle de données. Vous pouvez par exemple utiliser le segment d’heure relative pour n’afficher que les vues vidéo de la dernière minute ou de la dernière heure. 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Exemple d’heure relative":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Capture d’écran d’un exemple d’heure relative":::
 
 Il n’est pas obligatoire d’utiliser la fonctionnalité conjointement avec celle [d’actualisation automatique de la page](../create-reports/desktop-automatic-page-refresh.md). Toutefois, de nombreux scénarios d’heure relative se marient bien avec cette dernière.  
 
 > [!NOTE]
 > Lorsque vous appliquez un filtre ou un segment d’heure relative au niveau de la page ou du rapport, tous les visuels de cette page ou de ce rapport sont filtrés sur exactement le même intervalle de temps, grâce à une heure *d’ancrage* partagée. Dans la mesure où les visuels peuvent présenter des durées d’exécution légèrement différentes, cette heure d’ancrage partagée permet de les synchroniser sur l’ensemble de la page ou du rapport. Pour plus d’informations sur [l’heure d’ancrage](#understanding-anchor-time), lisez la suite de l’article.
-
-## <a name="turn-on-relative-time-preview"></a>Activation de la préversion de l’heure relative
-
-Comme le filtre d’heure relative est en préversion, vous devez d’abord activer le commutateur de la fonctionnalité. Sélectionnez **Fichier** > **Options et paramètres** > **Options**. Sous **Paramètres globaux** > **Fonctionnalités d’évaluation**, sélectionnez **Filtre d’heure relative**.
-
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-preview.png" alt-text="Définition de l’option d’évaluation d’heure relative":::
 
 ## <a name="create-a-relative-time-slicer-or-filter"></a>Création d’un segment ou d’un filtre d’heure relative
 
@@ -45,7 +39,7 @@ Une fois que vous avez activé la fonctionnalité, vous pouvez glisser-déplacer
 
 2. Sélectionnez le type de visualisation **Segment**.
 
-    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Création d’un segment d’heure":::
+    :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-create-slicer.png" alt-text="Capture d’écran de la création d’un segment de temps.":::
 
 ### <a name="create-a-filter"></a>Créer un filtre
  
@@ -55,27 +49,27 @@ Une fois que vous avez activé la fonctionnalité, vous pouvez glisser-déplacer
 
 Ensuite, remplacez le type de filtre par **Heure relative**.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Remplacement par heure relative":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set.png" alt-text="Capture d’écran de la modification de l’heure relative.":::
  
 Voici le résultat dans un segment :
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Heure relative dans un segment":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-slicer.png" alt-text="Capture d’écran de l’heure relative dans un segment.":::
 
 Voici le résultat dans une carte de filtre : 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Heure relative dans un filtre":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Capture d’écran de l’heure relative dans un filtre.":::
  
-Avec ce nouveau type de filtre, vous avez la possibilité de filtrer sur la période **Dernière**, **Prochaine** ou **Actuelle** : 
+Avec ce nouveau type de filtre, vous avez la possibilité de filtrer sur la période **Dernières**, **Prochaines** ou **Actuelles** : 
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Choix de la période dernière, prochaine ou actuelle":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Capture d’écran de la sélection des filtres Dernières, Prochaines ou Actuelles.":::
  
 Spécifiez la fenêtre de temps en entrant un nombre entier et une unité de temps : **Minutes** ou **Heures**.
  
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Choix entre minutes et heures":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-minutes-hours.png" alt-text="Capture d’écran de la sélection des minutes ou des heures.":::
 
 Si vous devez économiser l’espace sur le canevas, vous pouvez également créer le filtre d’heure relative sous la forme d’une carte de filtre dans le volet Filtres.
 
-:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Définition de l’heure relative dans un filtre":::
+:::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-set-filter.png" alt-text="Capture d’écran de la définition de l’heure relative dans un filtre.":::
  
 ## <a name="understanding-anchor-time"></a>Fonctionnement de l’heure d’ancrage
 
@@ -101,7 +95,7 @@ Voici les limitations et considérations qui s’appliquent actuellement au segm
     - Il n’est pas pris en charge par le biais de l’API Incorporer.
     - Il n’est pas pris en charge pour la publication sur le web.
 
-- **Mise en cache des requêtes** : nous exploitons le cache du client. Supposons que vous spécifiiez « dernière minute », puis « 5 dernières minutes », puis que vous reveniez à « dernière minute ». Dans la situation actuelle, vous verrez alors les mêmes résultats qu’à la première exécution, sauf si vous actualisez la page ou qu’elle s’actualise automatiquement.
+- **Mise en cache des requêtes** : Nous utilisons le cache du client. Supposons que vous spécifiiez « dernière minute », puis « 5 dernières minutes », puis que vous reveniez à « dernière minute ». Dans la situation actuelle, vous verrez alors les mêmes résultats qu’à la première exécution, sauf si vous actualisez la page ou qu’elle s’actualise automatiquement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

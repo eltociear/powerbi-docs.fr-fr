@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 8b777cba35f32dcf2d6561b73c350d047d473223
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162272"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459597"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -52,11 +52,12 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
-    - *Version : 2.81.5831.941 (mai 2020). Date de publication : 27 mai 2020* (nouvelle build et nouvelle version)
+   - *Version : 2.81.5831.1181 (mai 2020). Date de publication : 9 juin 2020*
+        - Correctif de bogue
+           -  Correctif pour les visuels de la Place de marché
+   - *Version : 2.81.5831.941 (mai 2020). Date de publication : 27 mai 2020* (nouvelle build et nouvelle version)
         - Contient les modifications nécessaires pour la connexion à Power BI Report Server (mai 2020)        
-
-
-
+   
 ## <a name="january-2020"></a>Janvier 2020
 - **Power BI Report Server**
     - *Version : 1.6.7364.4075 (build 15.0.1102.777), date de publication : 2 mars 2020*

@@ -6,25 +6,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0472baffa765f1a1e7d39e365e40a1f596472a16
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: cfe184b1f2bd34796dea8982117e3ba90561fa31
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264381"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459689"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
-Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
+Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout visuel ou tableau de bord créé dans Power BI peut afficher et mettre à jour des données et des visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des métriques d’utilisation de service, ou d’autres dispositifs permettant de collecter ou transmettre des données.
 
 ![Capture d’écran du tableau de bord Capteurs d’environnement, qui présente les résultats des données en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
 
-Cet article vous montre comment configurer un jeu de données de streaming en temps réel dans Power BI. Avant de voir comment cela fonctionne, il est important de comprendre les types de jeux de données en temps réel qui sont conçus pour s’afficher dans les vignettes (et les tableaux de bord), ainsi que leurs différences.
+Cet article vous montre comment configurer un jeu de données de streaming en temps réel dans Power BI. Avant toute chose, il est important de connaître les types de jeux de données en temps réel qui sont conçus pour s’afficher dans les vignettes (et les tableaux de bord), ainsi que ce qui les différencie.
 
 ## <a name="types-of-real-time-datasets"></a>Types de jeux de données en temps réel
-Il existe trois types de jeux de données en temps réel qui sont conçus pour un affichage sur les tableaux de bord en temps réel :
+Il existe trois types de jeux de données en temps réel qui sont conçus pour un affichage dans les tableaux de bord en temps réel :
 
 * Jeu de données de transmission
 * Jeu de données de streaming
@@ -43,20 +43,20 @@ Il existe deux éléments à prendre en compte concernant les vignettes épingl�
 * Une fois qu’un visuel est épinglé à un tableau de bord, vous pouvez utiliser la fonction **Questions et réponses** pour poser des questions au jeu de données de transmission en langage naturel. Une fois que vous avez envoyé une requête à la fonction **Questions et réponses**, vous pouvez le visuel généré au tableau de bord. Ce dernier est alors *également* mis à jour en temps réel.
 
 ### <a name="streaming-dataset"></a>Jeu de données de streaming
-Avec un **jeu de données de streaming**, des données sont également transmises au service Power BI, avec toutefois une différence importante : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes qui possède une fenêtre d’une heure.
+Avec un **jeu de données de streaming**, des données sont également transmises au service Power BI, avec toutefois une différence importante : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes ayant une fenêtre d’une heure.
 
 Avec un **jeu de données de streaming**, il n’y a *aucune* base de données sous-jacente. Vous ne *pouvez donc pas* créer de visuels de rapport à l’aide des données qui transitent à partir du flux. Par conséquent, vous ne pouvez pas utiliser les fonctionnalités de rapport telles que le filtrage, les visuels Power BI et d’autres fonctions de rapport.
 
-La seule façon de visualiser un jeu de données de streaming consiste à ajouter une vignette et à utiliser le jeu de données de streaming en tant que source de **données de streaming personnalisées**. Les vignettes de streaming personnalisées basées sur un **jeu de données de streaming** sont optimisées pour afficher rapidement les données en temps réel. Il y a une très faible latence entre le moment où les données sont transmises au service Power BI et celui où le visuel est mis à jour, car il n’est pas nécessaire d’entrer ou de lire des données dans une base de données.
+La seule façon de visualiser un jeu de données de streaming consiste à ajouter une vignette et à utiliser le jeu de données de streaming en tant que source de **données de streaming personnalisées**. Les vignettes de streaming personnalisées basées sur un **jeu de données de streaming** sont optimisées pour afficher rapidement les données en temps réel. Il existe une faible latence entre le moment où les données sont envoyées (push) au service Power BI et celui où le visuel est mis à jour, car il n’est pas nécessaire d’entrer ni de lire des données dans une base de données.
 
 Dans la pratique, l’utilisation des jeux de données de streaming et des visuels de streaming associés est plus appropriée dans les situations où il est essentiel de minimiser la latence entre le moment où les données sont transmises et celui où elles sont visualisées. En outre, il est recommandé d’utiliser les données transmises dans un format qui peut être affiché tel quel, sans agrégations supplémentaires, par exemple des températures et des moyennes précalculées.
 
 ### <a name="pubnub-streaming-dataset"></a>Jeu de données de streaming PubNub
-Avec un jeu de données de streaming **PubNub**, le client web Power BI utilise le SDK PubNub pour lire un flux de données PubNub existant et aucune donnée n’est stockée par le service Power BI. Dans la mesure où cet appel est effectué directement à partir du client web, vous devez autoriser le trafic vers PubNub si vous autorisez uniquement le trafic sortant en provenance de votre réseau. Reportez-vous aux instructions de l’article de support relatif à [l’autorisation du trafic sortant pour PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Avec un jeu de données de streaming **PubNub**, le client web Power BI utilise le SDK PubNub pour lire un flux de données PubNub existant. Aucune donnée n’est stockée par le service Power BI. Dans la mesure où cet appel est effectué directement à partir du client web, vous devez autoriser le trafic vers PubNub si vous autorisez uniquement le trafic sortant en provenance de votre réseau. Reportez-vous aux instructions de l’article de support relatif à l’[autorisation du trafic sortant pour PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Comme avec le **jeu de données de streaming**, avec le **jeu de données de streaming PubNub**, il n’existe aucune base de données sous-jacente dans Power BI. Vous ne pouvez donc pas créer de visuels de rapport sur les données qui transitent, ni utiliser les fonctionnalités de rapport telles que le filtrage, les visuels Power BI, etc. Par conséquent, le **jeu de données de streaming PubNub** peut uniquement être visualisé en ajoutant une vignette au tableau de bord et en configurant le flux de données PubNub en tant que source.
 
-Les vignettes basées sur le **jeu de données de streaming PubNub** sont optimisées pour afficher rapidement les données en temps réel. Comme Power BI est connecté directement au flux de données PubNub, il y a une très faible latence entre le moment où les données sont transmises au service Power BI et le moment où le visuel est mis à jour.
+Les vignettes basées sur le **jeu de données de streaming PubNub** sont optimisées pour afficher rapidement les données en temps réel. Comme Power BI est connecté directement au flux de données PubNub, il existe une faible latence entre le moment où les données sont envoyées (push) au service Power BI et le moment où le visuel est mis à jour.
 
 ### <a name="streaming-dataset-matrix"></a>Matrice de jeu de données de streaming
 Le tableau suivant (ou la matrice si vous préférez) décrit les trois types de jeux de données de streaming en temps réel et répertorie leurs fonctionnalités et limitations.
@@ -98,7 +98,7 @@ Lorsque vous créez le jeu de données de streaming, vous pouvez choisir d’act
 
 ![Capture d’écran du nouveau jeu de données de streaming, montrant l’analyse des données d’historique activée.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
-Quand l’option **Analyse des données d’historique** est désactivée (c’est le cas par défaut), créez un **jeu de données de streaming** comme décrit précédemment dans cet article. Lorsque l’option **Analyse des données d’historique** est *activée*, le jeu de données créé est à la fois un **jeu de données de streaming** et un **jeu de données de transmission**. Cela équivaut à utiliser les API REST Power BI pour créer un jeu de données dont l’indicateur *defaultMode* est défini sur *pushStreaming*, comme décrit précédemment dans cet article.
+Quand l’option **Analyse des données d’historique** est désactivée (c’est le cas par défaut), créez un **jeu de données de streaming**, comme décrit précédemment dans cet article. Lorsque l’option **Analyse des données d’historique** est *activée*, le jeu de données créé est à la fois un **jeu de données de streaming** et un **jeu de données de transmission**. Cela équivaut à utiliser les API REST Power BI pour créer un jeu de données dont l’indicateur *defaultMode* est défini sur *pushStreaming*, comme décrit précédemment dans cet article.
 
 > [!NOTE]
 > Pour les jeux de données en streaming créés à l’aide de l’interface utilisateur du service Power BI, comme décrit dans le paragraphe précédent, l’authentification Azure Active Directory n’est pas requise. Le propriétaire de ces jeux de données reçoit une URL avec une clé de ligne, qui autorise le demandeur à transmettre des données au jeu de données sans utiliser de jeton de porteur Azure AD OAuth. Notez toutefois que l’approche avec Azure AD (AAD) fonctionne également pour transmettre des données au jeu de données.
@@ -108,7 +108,7 @@ Quand l’option **Analyse des données d’historique** est désactivée (c’e
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Utilisation d’Azure Stream Analytics pour transmettre des données
 Vous pouvez ajouter Power BI en tant que sortie dans **Azure Stream Analytics** (ASA), puis visualiser ces flux de données dans le service Power BI en temps réel. Cette section présente des détails techniques sur ce processus.
 
-Azure Stream Analytics utilise les API REST Power BI pour créer son flux de données de sortie vers Power BI, avec l’indicateur *defaultMode* défini sur *pushStreaming* (voir les sections précédentes de cet article pour plus d’informations sur *defaultMode*), ce qui génère un jeu de données qui peut exploiter aussi bien la **transmission** que le **streaming**. Lors de la création du jeu de données, Azure Stream Analytics définit également l’indicateur **retentionPolicy** sur *basicFIFO*. Avec ce paramètre, la base de données qui prend en charge son jeu de données de transmission stocke 200 000 lignes, et une fois que cette limite est atteinte, les lignes sont supprimées selon la méthode « premier entré, premier sorti (FIFO) ».
+Azure Stream Analytics utilise les API REST Power BI pour créer son flux de données de sortie vers Power BI, avec *defaultMode* défini sur *pushStreaming*, ce qui génère un jeu de données qui peut exploiter aussi bien l’**envoi (push)** que le **streaming**. Lorsque le jeu de données est créé, Azure Stream Analytics définit l’indicateur **retentionPolicy** sur *basicFIFO*. Avec ce paramètre, la base de données qui prend en charge son jeu de données push stocke 200 000 lignes. Ces lignes sont supprimées selon la méthode FIFO (premier entré, premier sorti).
 
 > [!CAUTION]
 > Si votre requête Azure Stream Analytics entraîne une sortie très rapide vers Power BI (par exemple, une ou deux fois par seconde), Azure Stream Analytics traite ces sorties en une seule requête. La taille de la requête risque donc de dépasser la limite de vignette de streaming. Dans ce cas, comme indiqué dans les sections précédentes, le rendu des vignettes de streaming échoue. Dans ce cas de figure, il est conseillé de ralentir la vitesse de sortie des données dans Power BI. Par exemple, au lieu d’une valeur maximale par seconde, affectez-lui une valeur maximale de plus de 10 secondes.
@@ -212,13 +212,14 @@ Lorsque de l’application de filtres pour envoyer des jeux de données comporta
 
 #### <a name="how-do-i-see-the-latest-value-on-a-push-dataset-how-about-streaming-dataset"></a>Comment afficher la valeur la plus récente sur un jeu de données de transmission ? Qu’en est-il du jeu de données de streaming ?
 Les jeux de données de streaming sont conçus pour afficher les données les plus récentes. Vous pouvez utiliser le visuel de streaming **Carte** pour voir facilement les dernières valeurs numériques. Malheureusement, la carte ne prend pas en charge les données de type *DateTime* ou *Text*.
-Pour les jeux de données de transmission, en supposant que vous avez un horodatage dans le schéma, vous pouvez essayer de créer un visuel de rapport avec le dernier filtre N.
+
+Pour les jeux de données de type push, en supposant qu’un horodatage se trouve dans le schéma, vous pouvez essayer de créer un visuel de rapport avec le dernier filtre N.
 
 #### <a name="can-i-connect-to-push-or-streaming-datasets-in-power-bi-desktop"></a>Puis-je me connecter à des jeux de données de transmission ou de streaming dans Power BI Desktop ?
-Les jeux de données hybrides et de transmission peuvent être connectés en direct dans Power BI Desktop, mais d’autres jeux de données de streaming ne peuvent pas être connectés dans Power BI Desktop.
+Les jeux de données hybrides et de type push peuvent être connectés en temps réel dans Power BI Desktop. D’autres jeux de données de streaming ne peuvent pas être connectés dans Power BI Desktop.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Étant donné la question précédente, comment puis-je modéliser les jeux de données en temps réel ?
-La modélisation n’est pas possible sur un jeu de données de streaming, car les données ne sont pas stockées définitivement. Pour un jeu de données de transmission, vous pouvez utiliser les API REST de mise à jour de table/jeu de données pour ajouter des mesures et des relations. 
+La modélisation n’est pas possible sur un jeu de données de streaming, car les données ne sont pas stockées définitivement. Pour un jeu de données de type push, vous pouvez utiliser l’API REST afin de créer un jeu de données avec des relations et des mesures, et/ou afin d’utiliser les API REST de mise à jour de table pour ajouter des mesures à une table existante. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Comment effacer toutes les valeurs d’un jeu de données de transmission ? Qu’en est-il du jeu de données de streaming ?
 Sur un jeu de données de transmission, vous pouvez utiliser l’appel de l’API REST de suppression de lignes. Il n’existe actuellement aucun moyen d’effacer les données d’un jeu de données de streaming, bien que les données s’effacent d’elles-mêmes au bout d’une heure.
@@ -230,12 +231,12 @@ Voici une liste de contrôle pour résoudre le problème :
 2. Essayez de nouveau d’autoriser votre connexion Power BI dans Azure Stream Analytics.
 3. Quel espace de travail avez-vous spécifié dans la sortie Azure Stream Analytics ? Dans le service Power BI, êtes-vous connecté à ce même espace de travail ?
 4. Est-ce que la requête Azure Stream Analytics effectue une sortie explicite vers la sortie Power BI ? (en utilisant le mot clé INTO)
-5. Le travail Azure Stream Analytics a-t-il des données transitant par son intermédiaire ? Le jeu de données est créé uniquement lorsqu’il existe des données transmises.
+5. Le travail Azure Stream Analytics a-t-il des données transitant par son intermédiaire ? Le jeu de données est créé uniquement lorsque des données sont transmises.
 6. Pouvez-vous consulter les journaux Azure Stream Analytics pour voir s’il y a des avertissements ou erreurs ?
 
 ## <a name="automatic-page-refresh"></a>Actualisation automatique de la page
 
-L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet aux créateurs de rapports de définir un intervalle d’actualisation pour les visuels dans une page qui est uniquement active lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié et des paramètres d’administration de capacité pour les espaces de travail Premium.
+L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet de définir un intervalle d’actualisation pour les visuels qui soit uniquement actif lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié, ainsi que des paramètres d’administration de capacité pour les espaces de travail Premium.
 
 Pour plus d’informations sur l’actualisation automatique de la, consultez l’article [Actualisation automatique de la page](../create-reports/desktop-automatic-page-refresh.md).
 

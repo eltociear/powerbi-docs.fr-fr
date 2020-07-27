@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 01/08/2020
+ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b4146cef6ae34c7c6e5eb9713242c3a2cb0257ee
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9a3e393fa02d0bccc3e966c467b41883e72ae05e
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237763"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459643"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Utilisation de flux de données avec des sources de données locales
 
@@ -69,6 +69,7 @@ Il existe quelques limitations connues concernant l’utilisation de passerelles
 * La modification de la passerelle impacte l’intégralité du flux de données.
 * Si plusieurs passerelles sont nécessaires, la meilleure solution consiste à créer plusieurs flux de données (un pour chaque passerelle) et à utiliser les fonctionnalités de calcul ou de référence d’entité pour unifier les données.
 * Les flux de données sont uniquement pris en charge avec des passerelles d’entreprise. Les passerelles personnelles ne pourront pas être sélectionnées dans les listes déroulantes et les écrans de paramètres.
+* Les sources de données locales configurées avec l’option [Utiliser SSO via Kerberos pour les requêtes DirectQuery et d’importation](../connect-data/service-gateway-sso-kerberos.md#run-a-power-bi-report) ne sont pas prises en charge dans les flux de données.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

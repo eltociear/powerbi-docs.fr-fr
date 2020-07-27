@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: e76d820e804a19db148e0db4c2702e002ee2c017
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83275912"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557183"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Pratiques recommandées pour les pipelines de déploiement (préversion)
 
@@ -140,7 +140,7 @@ Assurez-vous que ces trois facteurs sont traités dans votre environnement de te
 
 Lors du test, vous pouvez utiliser la même capacité que l’étape de production. Toutefois, cela peut rendre la production instable pendant le test de charge. Pour éviter une production instable, utilisez une autre capacité similaire aux ressources de la capacité de production, à des fins de test. Pour éviter les coûts supplémentaires, vous pouvez utiliser des [capacités Azure A](../developer/embedded/azure-pbie-create-capacity.md) pour payer uniquement pour la durée du test.
 
-![Diagramme de pratiques recommandées pour les pipelines de déploiement](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![Diagramme montrant un pipeline de déploiement avec un environnement de test simulant l’environnement de production.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### <a name="use-dataset-rules-with-a-real-life-data-source"></a>Utiliser des règles de jeu de données avec une source de données réelle
 

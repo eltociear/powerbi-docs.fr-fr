@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: eee8d67caab4a3d7b888396fa62debaf0aab2490
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 002a50fd2e8e55d5ec06d7f15420ae8299861b37
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034287"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557207"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Comprendre le processus de déploiement (préversion)
 
@@ -152,11 +152,11 @@ Les propriétés de jeu de données suivantes ne sont pas copiées non plus lors
 
 Créez une application pour chaque étape du pipeline de déploiement, afin de pouvoir tester chaque mise à jour d’application du point de vue d’un utilisateur final. Un pipeline de déploiement vous permet de gérer facilement ce processus. Utilisez le bouton Publier ou Afficher de la carte de l’espace de travail pour publier ou afficher l’application dans une étape de pipeline spécifique.
 
-[![publier l’application](media/deployment-pipelines-process/publish.png "Publier l’application")](media/deployment-pipelines-process/publish.png#lightbox)
+[![Capture d’écran mettant en évidence le bouton de publication de l’application, situé en bas à droite de l’étape de production.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
 Au cours de l’étape de production, le bouton d’action principal situé dans le coin inférieur gauche ouvre la page Mettre à jour l’application dans Power BI, afin que toutes les mises à jour de contenu soient disponibles pour les utilisateurs de l’application.
 
-[![mettre à jour l’application](media/deployment-pipelines-process/update-app.png "Mettre à jour l’application")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![Capture d’écran mettant en évidence le bouton de mise à jour de l’application, situé en bas à droite de l’étape de production.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >Le processus de déploiement n’inclut pas la mise à jour du contenu ou des paramètres de l’application. Pour appliquer les modifications apportées au contenu ou aux paramètres, vous devez mettre à jour manuellement l’application dans l’étape de pipeline requise.

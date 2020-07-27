@@ -8,20 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 07/16/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: dc71bff7cd27ec369899a02cc9da0f916a043af1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 59e99bc44b9b438c76b72addf49beee2b69b8623
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225246"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437249"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
 Lorsque vous ouvrez un rapport dans le service Power BI, chaque page du rapport possède sa propre URL unique. Pour filtrer cette page de rapport, vous pouvez utiliser le volet Filtres sur le canevas de rapport.  Vous pouvez aussi ajouter des paramètres de chaîne de requête à l’URL pour préfiltrer le rapport. Imaginons que vous avez un rapport que vous envisagez de présenter à des collègues après l’avoir filtré pour eux au préalable. Une façon de le filtrer est de commencer par l'URL par défaut du rapport, d'ajouter les paramètres du filtre à l'URL, puis de leur envoyer par e-mail la nouvelle URL complète.
 
-![Rapport Power BI dans le service](media/service-url-filters/power-bi-report2.png)
+Cet article utilise le rapport Retail Analysis Sample. Pour suivre cette procédure pas à pas, vous pouvez [télécharger l’exemple de rapport](../create-reports/sample-retail-analysis.md#get-the-sample).
+
+![Capture d’écran du rapport Power BI dans le service.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Utilisations des paramètres de chaîne de requête
 
@@ -35,18 +37,10 @@ Avec des paramètres, vous pouvez filtrer le rapport pour une ou plusieurs valeu
 
 *URL*?filter=*Tableau*/*Champ* eq '*valeur*'
 
-![URL avec filtre](media/service-url-filters/power-bi-filter-urls7b.png)
+![Capture d’écran de l’URL avec le filtre.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * Les noms de **Table** et de **Champ** sont sensibles à la casse, mais pas la **valeur**.
 * Les champs masqués dans l’affichage Rapport peuvent également être filtrés.
-
-### <a name="reports-in-apps"></a>Rapports dans les applications
-
-Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Séparez les paramètres de requête par une esperluette (&). Conservez « ?filter= » et déplacez le paramètre de requête à la fin de l’URL, précédé d’une esperluette (&). 
-
-Comme dans cet exemple :
-
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Types de champ
 
@@ -62,27 +56,19 @@ Si cela ne vous semble pas clair, poursuivez votre lecture. Nous allons décompo
 
 Supposons que l’URL du rapport soit la suivante.
 
-![URL de départ](media/service-url-filters/power-bi-filter-urls6.png)
+![Capture d’écran du lancement de l’URL.](media/service-url-filters/power-bi-filter-urls6.png)
 
-Nous pouvons constater dans la visualisation de la carte (ci-dessus) que nous avons des magasins en Caroline du Nord (North Carolina).
+Nous pouvons constater dans la visualisation de la carte ci-dessus que nous avons des magasins en Caroline du Nord (North Carolina). *NC* est la valeur pour North Carolina (Caroline du Nord) qui est située dans le champ **Territoire** du tableau **Magasin**. Ainsi, pour filtrer le rapport afin d’afficher uniquement les magasins situés en Caroline du Nord (« NC »), ajoutez cette chaîne à l’URL :
 
->[!NOTE]
->Cet exemple est basé sur l’[Exemple Analyse de la vente au détail](../create-reports/sample-datasets.md).
-> 
-
-Pour filtrer le rapport afin d’afficher uniquement les données des magasins situés en « NC » (Caroline du Nord), ajoutez à l’URL le code suivant :
-
+```
 ?filter=Store/Territory eq 'NC'
+```
 
-![URL avec filtre](media/service-url-filters/power-bi-filter-urls7.png)
+![Capture d’écran de l’URL avec le filtre.](media/service-url-filters/power-bi-filter-urls7.png)
 
->[!NOTE]
->*NC* est une valeur stockée dans le champ **Territory** (territoire) du tableau **Store** (magasin).
-> 
+Notre rapport étant désormais filtré sur la Caroline du Nord, les visualisations du rapport présentent uniquement les données relatives à la Caroline du Nord.
 
-Notre rapport étant filtré sur la Caroline du Nord, les visualisations affichées sur la page du rapport présentent uniquement les données relatives à la Caroline du Nord.
-
-![Rapport filtré pour Caroline du Nord](media/service-url-filters/power-bi-report4.png)
+![Capture d’écran du rapport filtré sur la Caroline du Nord.](media/service-url-filters/power-bi-url-filter-nc.png)
 
 ## <a name="filter-on-more-than-one-value-in-a-field"></a>Filtrer sur plusieurs valeurs d’un champ
 
@@ -92,7 +78,9 @@ Pour filtrer sur plusieurs valeurs dans un champ unique, on utilise l’opérate
 
 Reprenons le même exemple : pour filtrer le rapport afin d’afficher uniquement les données des magasins situés en « NC » (Caroline du Nord) ou au « TN » (Tennessee), ajoutez ceci à l’URL :
 
+```
 ?filter=Store/Territory in ('NC', 'TN')
+```
 
 Pour obtenir une liste d’autres opérateurs utiles, consultez le tableau [Opérateurs](#operators) plus loin dans cet article.
 
@@ -116,14 +104,14 @@ Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tablea
 
 |Opérateur  | Définition | chaîne  | nombre | Date |  Exemple|
 |---------|---------|---------|---------|---------|---------|
-|**and**     | et |  oui      | oui |  oui|  product/price le 200 and price gt 3,5 |
-|**eq**     | est égal à |  oui      | oui   |  oui       | Address/City eq 'Redmond' |
-|**ne**     | différent de |   oui      | oui  | oui        |  Address/City ne 'London' |
-|**ge**     |  supérieur ou égal à       | non | oui |oui |  product/price ge 10
-|**gt**     | supérieur à        |non | oui | oui  | product/price gt 20
-|**le**     |   inférieur ou égal à      | non | oui | oui  | product/price le 100
-|**lt**     |  inférieur à       | non | oui | oui |  product/price lt 20
-|**in\*\***     |  incluant       | oui | oui |  oui | Student/Age in (27, 29)
+|**and**     | et |  Oui      | Oui |  oui|  product/price le 200 and price gt 3,5 |
+|**eq**     | est égal à |  Oui      | Oui   |  oui       | Address/City eq 'Redmond' |
+|**ne**     | différent de |   Oui      | Oui  | oui        |  Address/City ne 'London' |
+|**ge**     |  supérieur ou égal à       | non | Oui |oui |  product/price ge 10
+|**gt**     | supérieur à        |non | Oui | oui  | product/price gt 20
+|**le**     |   inférieur ou égal à      | non | Oui | oui  | product/price le 100
+|**lt**     |  inférieur à       | non | Oui | oui |  product/price lt 20
+|**in\*\***     |  incluant       | Oui | Oui |  oui | Student/Age in (27, 29)
 
 
 \*\* Quand vous utilisez **in**, les valeurs à droite de **in** peuvent être une liste séparée par des virgules et entourée de parenthèses, ou une expression qui retourne une collection.
@@ -167,10 +155,10 @@ Les caractères spéciaux et les espaces dans les noms de tables et de colonnes 
 |**[Column]**     |  [ is 0x005B ] is 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | Le code Unicode pour + est 0x2B        |  Column_x002B_Plus       |
 
-Table_x0020_Name/Column_x002B_Plus eq 3 ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters1.png)
+Table_x0020_Name/Column_x002B_Plus eq 3 ![Capture d’écran du visuel de table affichant des caractères spéciaux.](media/service-url-filters/power-bi-special-characters1.png)
 
 
-Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters2.png)
+Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![Capture d’écran du visuel de table affichant des caractères spéciaux.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### <a name="special-characters-in-values"></a>Caractères spéciaux dans les valeurs
 
@@ -200,7 +188,9 @@ TerritoryChain = [Territoire] & " - " & [Chaîne]
 
 Publiez le rapport sur le service Power BI, puis utilisez la chaîne de requête d’URL pour filtrer les données affichées uniquement pour les magasins Lindseys en Caroline du Nord (NC).
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Épingler une vignette d’un rapport filtré
 
@@ -216,6 +206,7 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 * Power BI Report Server offre également la possibilité de spécifier des filtres supplémentaires à l’aide du paramètre d’URL « filter ». Voici un exemple de ce à quoi peut ressembler l’URL dans Power BI Report Server : `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
+* Power BI ne limite pas le nombre de caractères pouvant être utilisés dans les chaînes de requête d’URL. Cependant, chaque navigateur a ses propres restrictions de longueur.
 
 Les filtres d’URL sont pris en charge dans certains scénarios d’incorporation et non dans d’autres.
 

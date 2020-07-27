@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/11/2020
+ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b9c4a8f4695f8d701eba535180194d29dd8bdec
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5fbaeaafb14fc935e26b4a2d13acf9dc09ea188f
+ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238183"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86409554"
 ---
 # <a name="add-multiple-fields-to-a-hierarchy-slicer"></a>Ajout de plusieurs champs à un segment de hiérarchie
 
@@ -22,22 +22,41 @@ ms.locfileid: "85238183"
 
 Pour filtrer plusieurs champs associés dans un même segment, créez ce que l’on appelle un segment de *hiérarchie*, soit dans Power BI Desktop, soit dans le service Power BI.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Segment de hiérarchie dans Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Capture d’écran du segment de hiérarchie dans Power BI":::
 
 Lorsque plusieurs champs sont ajoutés au segment, il présente par défaut une flèche ou un *chevron* à côté des éléments dont les éléments du niveau suivant peuvent être développés.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Liste déroulante de segment de hiérarchie dans Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-arrow.png" alt-text="Capture d’écran de la liste déroulante du segment de hiérarchie dans Power BI":::
  
  
 Lorsqu’un ou plusieurs enfants d’un élément sont sélectionnés, un cercle semi-sélectionné apparaît pour l’élément de niveau supérieur.
  
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Segment de hiérarchie à sélection unique dans Power BI":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-semi-selected.png" alt-text="Capture d’écran du segment de hiérarchie à sélection unique dans Power BI":::
 
 ## <a name="format-the-slicer"></a>Mettre en forme le segment
 
 Le comportement du segment n’a pas changé. Vous pouvez également appliquer le style de votre choix à votre segment, par exemple, le définir en mode de sélection unique ou basculer entre une liste et une liste déroulante. 
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Segment de hiérarchie mis en forme en tant que segment déroulant":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Capture d’écran du segment de hiérarchie sous forme de segment déroulant":::
+
+Vous pouvez également apporter les modifications suivantes à la mise en forme.
+
+### <a name="change-the-title"></a>Changer le titre
+
+Vous pouvez modifier le titre de n’importe quel segment, ce qui est particulièrement utile pour les segments de hiérarchie. Par défaut, le nom d’un segment de hiérarchie correspond à la liste des noms de champs de la hiérarchie.
+
+Dans cet exemple, le titre du segment liste les trois champs de la hiérarchie : Type, Platform et Name.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-title.png" alt-text="Capture d’écran du segment de hiérarchie avec les champs Type, Platform et Name.":::
+
+Pour modifier le nom, sélectionnez le segment, puis sélectionnez le volet **Format**. Sous **En-tête de segment**, vous voyez le nom actuel du segment dans la zone **Texte du titre**.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-edit-title.png" alt-text="Capture d’écran du volet Format avec le titre actuel.":::
+
+Sélectionnez le texte et ajoutez un nom.
+
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-new-title.png" alt-text="Capture d’écran du nouveau titre du segment de hiérarchie.":::
+
 
 ### <a name="change-the-expandcollapse-icon"></a>Modification de l’icône Développer/Réduire
 
@@ -47,7 +66,7 @@ Les segments de hiérarchie proposent d’autres options de mise en forme. Vous 
 1. Développez **Éléments** et sélectionnez **Icône Développer/Réduire**.
 1. Choisissez entre **Chevron**, **Signe plus/moins** et **Caret**.
  
-    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-caret.png" alt-text="Sélection d’une icône Développer/Réduire pour le segment de hiérarchie":::
+    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-caret.png" alt-text="Capture d’écran de la sélection d’une icône Développer/Réduire pour le segment de hiérarchie.":::
  
 ### <a name="change-the-indentation"></a>Modification de la mise en retrait
 
@@ -56,7 +75,7 @@ Si l’espace est limité sur votre rapport, vous pouvez réduire le retrait des
 1. Sélectionnez le segment, puis **Format**.
 1. Développez **Éléments**, puis faites glisser **Mise en retrait de la disposition échelonnée** vers la gauche (plus petite) ou vers la droite (plus grande). Vous pouvez également taper simplement un nombre dans la zone.
 
-    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Définition de la mise en retrait du segment de hiérarchie":::
+    :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-indentation.png" alt-text="Capture d’écran de la définition de la mise en retrait du segment de hiérarchie.":::
 
 ## <a name="next-steps"></a>Étapes suivantes
 

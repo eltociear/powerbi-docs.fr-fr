@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1febf93d35500d56f5b3b104487725f33d7b17ad
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9a1e42b4901e8659bb5d999294f29a80a0389280
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234180"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557230"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop"></a>Actualisation automatique des pages dans Power BI Desktop 
 
@@ -147,6 +147,7 @@ Il y a quelques éléments à prendre en compte lors de l’utilisation de l’a
 * Les modes de stockage Importer, Connexion active et Push ne sont pas pris en charge pour l’actualisation automatique de la page.  
 * Les modèles composites qui ont au moins une source de données DirectQuery sont pris en charge.
 * Power BI Desktop n’a aucune restriction pour les intervalles d’actualisation. L’intervalle d’actualisation peut être aussi fréquent que chaque seconde. Lorsque les rapports sont publiés sur le service Power BI, certaines restrictions s’appliquent, comme décrit [précédemment](#restrictions-on-refresh-intervals) dans cet article.
+* L’incorporation de SharePoint Online ne prend pas en charge l’actualisation automatique des pages.
 
 ### <a name="performance-diagnostics"></a>Diagnostics des performances
 

@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 07/16/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1b127bae83338264ac450438956e03a5ec24cb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236645"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459551"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -101,6 +101,9 @@ OAuth est un schéma d’authentification pris en charge seulement pour les conn
 Après avoir ajouté une source de données à une passerelle, vous donnez aux utilisateurs et aux groupes de sécurité activés par e-mail l’accès à la source de données spécifique (et non à l’ensemble de la passerelle). La liste des utilisateurs de la source de données contrôle uniquement les personnes autorisées à publier des rapports incluant des données provenant de la source de données. Les propriétaires des rapports peuvent créer des tableaux de bord, des packs de contenu et des apps, puis partager ces éléments avec d’autres utilisateurs.
 
 Vous pouvez également donner aux utilisateurs et groupes de sécurité un accès administratif à la passerelle.
+
+> [!NOTE]
+> Les utilisateurs ayant accès à la source de données peuvent associer des jeux de données à la source de données et s’y connecter, en fonction des options de sécurité qui ont été sélectionnées lors de la création de la source de données (informations d’identification stockées ou authentification unique).
 
 ### <a name="add-users-to-a-data-source"></a>Ajouter des utilisateurs à une source de données
 

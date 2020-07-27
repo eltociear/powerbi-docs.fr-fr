@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/08/2019
+ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e68d860800f2265923189e470bc633589e612c11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 785ad7b7d10a164f8257f8aacab177116c0b553b
+ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224151"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459620"
 ---
 # <a name="connect-to-pdf-files-in-power-bi-desktop"></a>Se connecter à des fichiers PDF dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un **fichier PDF** et utiliser les données qui s’y trouvent, comme toute autre source de données dans Power BI Desktop.
@@ -40,12 +40,16 @@ Quand vous cochez une case en regard des éléments découverts dans le fichier 
 
 `Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+
+Lorsque vous utilisez le connecteur PDF sur des jeux de données dans une capacité Premium, le connecteur n’effectue pas correctement la connexion. Pour permettre au connecteur PDF de se connecter correctement au jeu de données dans une capacité Premium, configurez ce jeu de données pour qu’il utilise une passerelle, puis vérifiez que la connexion au jeu de données passe bien par la passerelle.  
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   

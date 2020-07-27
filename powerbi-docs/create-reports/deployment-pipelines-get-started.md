@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 6e9ed3217a7ee589eaf1469ba179ef8c8bc474e9
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8ce11c0ac6a5098c49f4d8aba0b0a09f28be975b
+ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354728"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86557253"
 ---
 # <a name="get-started-with-deployment-pipelines-preview"></a>Bien démarrer avec les pipelines de déploiement (préversion)
 
@@ -31,7 +31,7 @@ Vous pouvez accéder à la fonctionnalité de pipelines de déploiement si les c
 >[!NOTE]
 > Vous pouvez également voir le bouton de pipelines de déploiement si vous avez déjà créé un pipeline ou si un pipeline a été partagé avec vous.
 
-![Page d’accueil des pipelines de déploiement](media/deployment-pipelines-get-started/creating-pipeline.png)
+![Capture d’écran de la page d’accueil des pipelines de déploiement](media/deployment-pipelines-get-started/creating-pipeline.png)
 
 ## <a name="step-1---create-a-deployment-pipeline"></a>Étape 1 : Créer un pipeline de déploiement
 
@@ -84,7 +84,7 @@ Une fois le déploiement terminé, actualisez le jeu de données. Pour plus d’
 
 Sélectionnez l’étape à partir de laquelle effectuer le déploiement, puis cliquez sur le bouton de déploiement. Le processus de déploiement crée un espace de travail dupliqué sur l’étape cible. Cet espace de travail comprend tout le contenu existant à l’étape actuelle.
 
-[![Déploiement](media/deployment-pipelines-get-started/deploy.png "Déployer tout le contenu")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![Capture d’écran montrant le bouton de déploiement pour les étapes de développement et de test dans un pipeline de déploiement.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### <a name="selective-deployment"></a>Déploiement sélectif
 
@@ -92,7 +92,7 @@ Pour déployer uniquement des éléments spécifiques, cliquez sur le lien **Aff
 
 Étant donné que les tableaux de bord, rapports et jeux de données sont liés et présentent des dépendances, vous pouvez utiliser le bouton Sélectionner les éléments associés pour vérifier tous les éléments dont dépendent ces éléments. Par exemple, si vous souhaitez déployer un rapport à l’étape suivante, le fait de cliquer sur le bouton Sélectionner les éléments associés marque le jeu de données auquel le rapport est connecté, afin que les deux soient déployés à la fois et que le rapport ne s’arrête pas.
 
-[![Déploiement sélectif](media/deployment-pipelines-get-started/selective-deploy.png "Déploiement sélectif")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![Capture d’écran montrant l’option de déploiement sélectif dans les pipelines de déploiement, qui s’affiche après la sélection de l’option Afficher plus.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * Vous ne pouvez pas déployer un rapport ou un tableau de bord à l’étape suivante si les éléments dont il dépend n’existent pas dans la phase de déploiement.
@@ -104,7 +104,7 @@ Vous pouvez choisir de déployer à une étape précédente, par exemple dans un
 
 Le déploiement sur une étape précédente ne fonctionne que si l’étape précédente est vide de contenu. Lors du déploiement à l’étape précédente, vous ne pouvez pas sélectionner d’éléments spécifiques. Tout le contenu de la phase sera déployé.
 
-[![Déploiement vers l’arrière](media/deployment-pipelines-get-started/deploy-back.png "Déploiement vers l’arrière")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![Capture d’écran montrant le bouton Déployer sur une phase précédente, disponible dans les menus de la phase de test ou de production.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## <a name="step-4---create-dataset-rules"></a>Étape 4 : Créer des règles de jeu de données
 
@@ -121,15 +121,15 @@ Les règles de jeu de données sont définies sur les sources de données et les
 
 1. Dans l’étape de pipeline pour laquelle vous souhaitez créer une règle de jeu de données, cliquez sur **Paramètres de déploiement**.
 
-    ![paramètres de déploiement](media/deployment-pipelines-get-started/deployment-settings.png)
+    ![Capture d’écran du bouton Paramètres de déploiement, situé en haut à droite de chaque étape du pipeline de déploiement.](media/deployment-pipelines-get-started/deployment-settings.png)
 
 2. Dans le volet Paramètres de déploiement, sélectionnez le jeu de données pour lequel vous souhaitez créer une règle.
 
-    [![Règles de jeu de données](media/deployment-pipelines-get-started/dataset-rules.png "Sélectionner un jeu de données")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![Capture d’écran montrant la sélection d’un jeu de données pour la création d’une règle de jeu de données.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Sélectionnez le type de règle que vous souhaitez créer, développez la liste, puis cliquez sur **Ajouter une règle**.
 
-     [![Ajout d’une règle](media/deployment-pipelines-get-started/add-rule.png "Ajouter une règle")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![Capture d’écran montrant la sélection d’une règle de source de données, puis de l’option Ajouter une règle.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### <a name="dataset-rule-types"></a>Types de règles de jeu de données
 
@@ -152,6 +152,8 @@ Il existe deux types de règles que vous pouvez créer :
 * Lorsqu’un élément est retiré ou supprimé, ses règles sont également supprimées. Ces règles ne peuvent pas être restaurées.
 
 * Si le ou les paramètres définis dans une règle sont modifiés ou supprimés du jeu de données source, la règle n’est pas valide et le déploiement échoue.
+
+* Les règles de paramètres ne peuvent pas être définies pour les paramètres de type *Tout* ou *Binaire*. Pour plus d’informations, consultez les [restrictions relatives aux paramètres de mise à jour des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * Les règles de source de données ne peuvent être définies que pour les sources de données suivantes :
     * Azure Analysis Services
@@ -180,7 +182,7 @@ La date de déploiement est utile pour établir le moment de la dernière mise �
 
 Lorsque deux étapes séquentielles ont du contenu, le contenu est comparé en fonction des métadonnées des éléments de contenu. Cette comparaison n’inclut pas la comparaison des données ou le temps d’actualisation entre les étapes.
 
- [![Flux de déploiement](media/deployment-pipelines-get-started/deployment-flow.png "Étapes de comparaison")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![Capture d’écran montrant un pipeline de déploiement avec ses indicateurs de comparaison.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 Pour permettre un aperçu visuel rapide des différences entre deux étapes séquentielles, un indicateur d’icône de comparaison apparaît entre eux. L’indicateur de comparaison a deux états :
 
@@ -201,13 +203,13 @@ Lorsque deux étapes séquentielles ne sont pas les mêmes, un lien **Comparer**
     >[!NOTE]
     >Le déploiement n’a pas d’impact sur les éléments étiquetés *Manquant dans*.
 
- [![Comparaison](media/deployment-pipelines-get-started/compare.png "Vue de comparaison")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![Capture d’écran montrant l’option de comparaison qui développe la vue de comparaison et permet de comparer les éléments des différentes étapes du pipeline de déploiement.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## <a name="overriding-content"></a>Remplacement du contenu
 
 Lorsque vous effectuez un déploiement après avoir apporté des modifications au contenu de l’étape source, le contenu que vous avez modifié à l’étape cible est remplacé. Après avoir cliqué sur *Déployer*, vous obtenez un avertissement indiquant le nombre d’éléments qui seront remplacés.
 
-![Avertissement de contenu remplacé](media/deployment-pipelines-get-started/replaced-content.png)
+![Capture d’écran de l’avertissement relatif au remplacement de contenu, qui s’affiche lorsqu’un déploiement est sur le point de modifier des éléments dans l’étape vers laquelle vous effectuez le déploiement.](media/deployment-pipelines-get-started/replaced-content.png)
 
 Vous pouvez en savoir plus sur [les éléments copiés à l’étape suivante](deployment-pipelines-process.md#deployed-items)et [les éléments qui ne sont pas copiés](deployment-pipelines-process.md#unsupported-items) en consultant [Comprendre le processus de déploiement](deployment-pipelines-process.md).
 

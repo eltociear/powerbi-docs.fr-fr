@@ -7,12 +7,12 @@ ms.author: kesharab
 ms.topic: include
 ms.date: 06/06/2020
 ms.custom: include file
-ms.openlocfilehash: 8e50a529bfd398a4075ebf049ee4aec1bcf48b4d
-ms.sourcegitcommit: cd64ddd3a6888253dca3b2e3fe24ed8bb9b66bc6
+ms.openlocfilehash: 569d7dfe251183962a14de1c42d85ee2e58950af
+ms.sourcegitcommit: d8acf2fb0318708a3e8e1e259cb3747b0312b312
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84315782"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86401663"
 ---
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
@@ -25,3 +25,4 @@ ms.locfileid: "84315782"
 * La gestion de [flux de données](../transform-model/service-dataflows-overview.md) n’est pas prise en charge.
 * Le principal de service ne prend actuellement pas en charge aucune API administrateur.
 * Quand vous utilisez un principal de service avec une source de données [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview), le principal de service doit lui-même disposer d’autorisations d’instance Azure Analysis Services. L’utilisation d’un groupe de sécurité qui contient le principal du service à cet effet ne fonctionne pas.
+* Le principal de service ne peut pas accéder aux sources de données dans la passerelle. Vous ne pouvez donc pas ajouter le principal de service en tant qu’utilisateur de la source de données dans la passerelle.

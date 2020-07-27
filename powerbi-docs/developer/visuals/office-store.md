@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
-ms.openlocfilehash: 037fbdf3c1e4c01bac91e6089f9fa1c7dd1635d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.date: 07/14/2020
+ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
+ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238991"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86437212"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -23,7 +23,7 @@ Une fois que vous avez créé votre visuel Power BI, vous pouvez le publier sur
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) est l’endroit où vous pouvez rechercher des applications SaaS et des compléments pour vos produits et services Microsoft.
 
-![Office Store](media/office-store/appsource-01.png)
+![Capture d’écran des visuels Power BI dans AppSource.](media/office-store/appsource-01.png)
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Préparation de la soumission de votre visuel Power BI
 
@@ -61,7 +61,7 @@ Joignez le **fichier pbiviz** et **l’exemple de fichier de rapport pbix** à v
 
 ## <a name="submitting-to-appsource"></a>Soumission à AppSource
 
-Pour soumettre votre visuel Power BI à AppSource, vous devez obtenir un package d'application de la part de l'équipe Power BI, puis le soumettre à l’Espace partenaires. 
+Pour soumettre votre visuel Power BI à AppSource, vous devez obtenir un package d'application de la part de l'équipe Power BI, puis le soumettre à l’Espace partenaires.
 
 ### <a name="getting-the-app-package"></a>Obtenir le package d'application
 
@@ -73,6 +73,11 @@ L'équipe Power BI doit vérifier les fichiers de chaque soumission d’un nouv
 
 Pour soumettre votre visuel Power BI à l’Espace partenaires, vous devez y être inscrit. Si vous n'êtes pas encore inscrit, [ouvrez un compte développeur dans l’Espace partenaires](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
+>[!NOTE]
+>Les **éditeurs** peuvent utiliser l’une des méthodes suivantes pour soumettre un visuel Power BI :
+>* Si vous avez un ancien compte Mon tableau de bord vendeur, vous pouvez continuer à utiliser les informations d’identification de ce compte pour vous connecter à l’Espace partenaires.
+>* Si vous ne disposez pas d’un tel compte et si vous n’êtes pas inscrit à l’Espace partenaires, vous devez [ouvrir un compte de développeur dans l’Espace partenaires](https://docs.microsoft.com/office/dev/store/open-a-developer-account) à l’aide de votre adresse e-mail professionnelle.
+
 Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espace partenaires. Pour plus d'informations sur le processus de soumission, voir [Soumettre votre solution Office à AppSource via l’Espace partenaires](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Connectez-vous à l’**Espace partenaires**.
@@ -83,7 +88,7 @@ Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espac
 
 4. Sélectionnez **Créer un nouveau**, puis dans le menu déroulant, sélectionnez **Visuel Power BI**.
 
-    ![Office Store](media/office-store/power-bi-visual.png)
+    ![Capture d’écran de la création d’un visuel Power BI sous l’onglet Office Store de l’Espace partenaires.](media/office-store/power-bi-visual.png)
 
 5. Dans la fenêtre **Créer un nouveau visuel Power BI**, nommez votre visuel Power BI et sélectionnez **Créer**.
 
