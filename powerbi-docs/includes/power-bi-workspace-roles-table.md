@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 06/23/2020
+ms.date: 07/24/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 9ddf9df0feaed2a2a0177d11e9b36f34135801c6
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 6a2fa7aca043c553c9174db81ff575853e526e06
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85365279"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87260252"
 ---
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
-| Mettre à jour et supprimer l’espace de travail.  |  |   |   |   | 
+| Mettre à jour et supprimer l’espace de travail.  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   | 
 | Ajouter/supprimer des personnes, y compris d’autres administrateurs.  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Autoriser les Contributeurs à mettre à jour l’application pour l’espace de travail  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Ajouter des membres ou d’autres rôles avec des autorisations inférieures.  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |

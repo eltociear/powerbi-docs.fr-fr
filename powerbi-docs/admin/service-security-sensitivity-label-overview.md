@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/05/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: def07ed0ea061c02489d6e92b9648ad1a8d0edad
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ea161af0156aa0bee2fe92ab2f87fb82630f5589
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86035060"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252127"
 ---
 # <a name="sensitivity-labels-in-power-bi"></a>Étiquettes de sensibilité dans Power BI
 
@@ -83,7 +83,7 @@ Vous pouvez incorporer des rapports, des tableaux de bord et des visuels Power B
 
 Les scénarios d’incorporation suivants sont pris en charge :
 * [Incorporer pour votre organisation](../developer/embedded/embed-sample-for-your-organization.md)
-* Applications Microsoft 365 (par exemple [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) et [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Applications Microsoft 365 (par exemple [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) et [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Sécuriser l’incorporation d’URL](../collaborate-share/service-embed-secure.md) (incorporation à partir du service Power BI) 
 
 ## <a name="sensitivity-labels-in-the-power-bi-mobile-apps"></a>Étiquettes de sensibilité dans les applications mobiles Power BI

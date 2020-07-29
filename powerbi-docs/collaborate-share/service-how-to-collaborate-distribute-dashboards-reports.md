@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3cf9d59926c1a38d83f386c7ae01fbdcf1a7fc95
-ms.sourcegitcommit: a58d10ca62bc55e83b58cf8e8495ac01a4bd6532
+ms.openlocfilehash: 4af8f9edd3d51214aaa766219e4903eb4b26b813
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "85120419"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252541"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Fa√ßons de collaborer et partager dans Power BI
 
@@ -73,7 +73,7 @@ Quand vous ajoutez un onglet de rapport Power BI dans Microsoft Teams, Teams cr√
 
 :::image type="content" source="media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-teams-conversation-tab.png" alt-text="Onglet de conversation Microsoft Teams":::
 
-En savoir plus sur la [collaboration dans Microsoft Teams avec Power BI](service-embed-report-microsoft-teams.md).
+En savoir plus sur la [collaboration dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md).
 
 ## <a name="share-dashboards-and-reports"></a>Partager des tableaux de bord et rapports
 
