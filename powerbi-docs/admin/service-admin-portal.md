@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f2fb659188a5c413ec7a203c6f1a55bb24826c15
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85228732"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252488"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -185,6 +185,7 @@ Dans **Paramètres du locataire**, le portail d’administration comporte deux s
 
 - Créez les nouvelles expériences d'espace de travail.
 - Utilisez des jeux de données entre des espaces de travail.
+- Bloquez la création de l’espace de travail classique.
 
 ### <a name="create-the-new-workspaces"></a>Créer de nouveaux espaces de travail
 
@@ -213,6 +214,13 @@ Les administrateurs peuvent contrôler les utilisateurs de l’organisation qui 
 
 Pour en savoir plus, consultez [Introduction aux jeux de données entre plusieurs espaces de travail](../connect-data/service-datasets-across-workspaces.md).
 
+### <a name="block-classic-workspace-creation"></a>Bloquer la création de l’espace de travail classique
+
+Les administrateurs peuvent contrôler si l’organisation peut créer des espaces de travail classiques. Quand ce paramètre est activé, les utilisateurs qui créent un espace de travail peuvent uniquement créer des espaces de travail d’expérience d’espace de travail. 
+
+![Bloquer la création de l’espace de travail classique](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
+
+Quand ils sont activés, les nouveaux groupes Office 365 ne s’affichent pas dans la liste des espaces de travail Power BI. Les espaces de travail classiques existants continuent à être affichés dans la liste. Quand le paramètre est désactivé, tous les groupes Office 365 dont l’utilisateur est membre s’affichent dans la liste des espaces de travail. Découvrez plus d’informations sur les [nouveaux espaces de travail d’expérience d’espace de travail](../collaborate-share/service-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Paramètres d'exportation et de partage
 
@@ -369,6 +377,15 @@ Sous **Tenant settings**, le paramètre **Allow connections to featured tables**
 Les connexions aux tables proposées sont également désactivées si le paramètre locataire **Exporter des données** est défini sur **Désactivé**.
 
 En savoir plus sur [les tables Power BI dans Excel](../collaborate-share/service-excel-featured-tables.md).
+
+## <a name="share-to-teams-tenant-setting"></a>Paramètre client Partager dans Teams
+
+Le paramètre **Partager dans Teams** se trouve dans la section **Paramètres du client** du portail d’administration Power BI. Le paramètre permet aux organisations de masquer les boutons **Partager dans Teams** dans le service Power BI. Quand l’option est désactivée, les utilisateurs ne voient pas les boutons **Partager dans Teams** dans la barre d’action ou les menus contextuels quand ils affichent des rapports et tableaux de bord dans le service Power BI.
+
+![Capture d’écran du paramètre de locataire Partager dans Teams dans le portail d’administration Power BI](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Découvrez plus d’informations sur le [partage de contenu Power BI dans Teams](../collaborate-share/service-share-report-teams.md).
+
 
 ## <a name="power-bi-visuals-settings"></a>Paramètres des visuels Power BI
 

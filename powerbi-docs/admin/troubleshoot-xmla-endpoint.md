@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/16/2020
+ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d6e3af615a73f8e4a3db42406bf94e33f16a2a3
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 8a815f69d4f74ec925c3ac0cc8a84c2a13d80346
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459666"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363959"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -135,6 +135,10 @@ Les paramètres d’emprunt d’identité que vous pouvez définir pour les sour
 Lorsqu’une actualisation planifiée ou à la demande est déclenchée dans Power BI, Power BI actualise généralement l’ensemble du jeu de données. Il existe de nombreux cas où il est plus efficace d’effectuer des actualisations plus sélectives. Vous pouvez effectuer des tâches de traitement affinées dans SQL Server Management Studio (SSMS) comme indiqué ci-dessous, ou à l’aide d’outils ou de scripts tiers.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Traitement des tables dans SSMS":::
+
+### <a name="overrides-in-refresh-tmsl-command"></a>Remplacements dans la commande Refresh TMSL
+
+Les remplacements dans la [commande Refresh (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) permettent aux utilisateurs de choisir une définition de requête de partition ou une définition de source de données différente pour l’opération d’actualisation. Les remplacements **ne sont pas pris en charge** dans Power BI Premium. Une erreur, « La liaison hors ligne n’est pas autorisée dans Power BI Premium. Pour plus d’informations, consultez « Prise en charge de la lecture/écriture XMLA » dans la documentation du produit. » est renvoyé.
 
 ## <a name="see-also"></a>Voir aussi
 

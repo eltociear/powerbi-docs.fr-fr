@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/28/2020
-ms.openlocfilehash: 865b60800b68aed410f10964148afdf2791b1ae1
-ms.sourcegitcommit: 9c72ec6b2d6d4574c86e976a65c076764473482d
+ms.date: 07/27/2020
+ms.openlocfilehash: 4f4650d47e420313075509301e940bf7092d4d5a
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "83279155"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252840"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -29,7 +29,7 @@ Les rapports paginés prennent en charge en mode natif la liste suivante de sour
 | Azure SQL Managed Instance | De base | via un point de terminaison public ou privé (le point de terminaison privé doit être routé via Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP.|
 | Jeu de données Power BI | SSO | Jeux de données Power BI Premium et non Premium. Nécessite une autorisation de lecture |
-| Jeu de données Premium Power BI (XMLA) | SSO |   |
+| Jeu de données Premium Power BI (XMLA) | SSO | Les jeux de données Power BI ne sont pas pris en charge comme source de données pour les rapports paginés incorporés.  |
 | Entrer des données | N/A | Les données sont incorporées dans le rapport. |
 
 À l’exception d’Azure SQL Database, toutes les sources de données sont prêtes à être utilisées après le chargement du rapport dans le service Power BI. Par défaut, les sources de données utilisent l’authentification unique, le cas échéant. Pour Azure Analysis Services, vous pouvez changer le type d’authentification et choisir OAuth2. Toutefois, une fois que le type d’authentification pour une source de données donnée est changé en OAuth2, il ne peut pas revenir en arrière pour utiliser l’authentification unique.  En outre, cette modification s’applique à tous les rapports qui utilisent cette source de données dans tous les espaces de travail d’un abonné donné.  La sécurité au niveau des lignes dans les rapports paginés ne fonctionne pas, sauf si les utilisateurs choisissent l’authentification unique pour le type d’authentification.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9b3e06172d29f218f9234cf1f3d7e1f623495001
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83135158"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952659"
 ---
 # <a name="premium-capacity-scenarios"></a>Scénarios de capacité Premium
 
@@ -67,7 +67,7 @@ L’administrateur Power BI peut tenter de résoudre le problème en prenant des
 
 ## <a name="identifying-slow-responding-datasets"></a>Identification des jeux de données avec réponse lente
 
-Dans ce scénario, une investigation a débuté quand des utilisateurs se sont plaints de ce que certains rapports prenaient trop de temps pour s’ouvrir et que parfois ils se bloquaient.
+Dans ce scénario, une investigation a débuté quand des utilisateurs se sont plaints que certains rapports prenaient trop de temps pour s’ouvrir et qu’ils cessaient parfois de répondre.
 
 Dans l’application, l’administrateur Power BI peut utiliser le visuel **Durées des requêtes** pour déterminer les jeux de données les moins performants en les triant par **Durée moyenne** en ordre décroissant. Ce visuel montre également le nombre de requêtes sur les jeux de données, ce qui vous permet de voir la fréquence à laquelle les jeux de données sont interrogés.
 
@@ -141,7 +141,7 @@ Cet effet peut être particulièrement apparent quand un jeu de données est con
 
 Dans certains cas, les administrateurs Power BI peuvent demander aux propriétaires des jeux de données de créer une charge de travail de requêtes moins volatile en créant un tableau de bord (qui effectue périodiquement des requêtes avec une actualisation des jeux de données pour les vignettes mises en cache) au lieu d’un rapport. Ceci peut aider à éviter les pics quand un tableau de bord est chargé. Il se peut que cette solution ne soit pas toujours possible pour les besoins de l’entreprise, mais ce peut être un moyen efficace d’éviter la saturation du processeur sans qu’il soit nécessaire de modifier le jeu de données.
 
-## <a name="acknowledgements"></a>Accusés de réception
+## <a name="acknowledgments"></a>Remerciements
 
 Cet article a été écrit par Peter Myers, expert Data Plateform MVP et BI indépendant avec des solutions [Bitwise](https://www.bitwisesolutions.com.au/).
 

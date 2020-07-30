@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d4bfb6de39f0a8dee678e8224cca1cb03646abca
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1e1e9afcbcae300e12580fb5f54bdb53e7822c03
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226989"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952734"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Avec **Analyser dans Excel**, vous pouvez placer les jeux de données Power BI dans Excel, puis les afficher et interagir avec eux à l’aide de tableaux croisés dynamiques, de graphiques, de segments et d’autres fonctionnalités Excel. Pour utiliser **Analyser dans Excel** vous devez d’abord télécharger la fonctionnalité à partir de Power BI, l’installer, puis sélectionner un ou plusieurs jeux de données à utiliser dans Excel. 
@@ -62,36 +62,41 @@ Une fois l’opération terminée, vous êtes prêt à sélectionner un rapport 
 
 ## <a name="connect-to-power-bi-data"></a>Connexion aux données Power BI
 
-Dans le service Power BI, accédez au jeu de données ou au rapport que vous souhaitez analyser dans Excel, puis sélectionnez le menu **Plus d’options** (le « ... ») pour trouver l’option de menu **Analyser dans Excel**. L’illustration suivante montre la sélection d’un rapport.
-
-![Installation des mises à jour](media/service-analyze-in-excel/analyze-excel-06.png)
-
-Voici quelques étapes à suivre pour obtenir un jeu de données du service Power BI dans Excel :
+Dans le service Power BI, accédez au jeu de données ou au rapport que vous souhaitez analyser dans Excel, puis :
 
 1. Sélectionnez le menu **Plus d’options**.
-2. Sélectionnez **Analyser dans Excel** à partir des éléments de menu qui s’affichent.
 
-    Le service Power BI crée ensuite un fichier du jeu de données conçu (et structuré) pour une utilisation avec **Analyser dans Excel** avec l’extension de fichier .ODC. Le fichier est créé, puis lance automatiquement un processus de téléchargement dans votre navigateur.
+1. Sélectionnez **Analyser dans Excel** à partir des éléments de menu qui s’affichent.
+
+    L’illustration suivante montre la sélection d’un rapport.
+
+    ![Installation des mises à jour](media/service-analyze-in-excel/analyze-excel-06.png)
     
-    ![Téléchargement du fichier ODC](media/service-analyze-in-excel/analyze-excel-07.png)
+    >[!NOTE]
+    >N’oubliez pas que si vous sélectionnez Analyser dans Excel à partir d’un menu Rapport, c’est le jeu de données sous-jacent du rapport qui est intégré à Excel.
+
+    Le service Power BI crée ensuite un fichier Excel du jeu de données conçu (et structuré) pour une utilisation avec **Analyser dans Excel** et commence un processus de téléchargement dans votre navigateur.
     
-    Le nom de fichier correspond au jeu de données (ou au rapport ou toute autre source de données) à partir duquel il a été dérivé. Par conséquent, si le rapport s’appelait *Latest-Sales*, le fichier téléchargé se nommera **Latest-Sales.ODC**.
+    ![Téléchargement du fichier Excel](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
 
-3. Lancez le fichier .ODC
+    Le nom de fichier correspond au jeu de données (ou au rapport ou toute autre source de données) à partir duquel il a été dérivé. Ainsi, si le rapport a été nommé *Rapport trimestriel*, le fichier téléchargé est **Rapport trimestriel.xlsx**.
 
-Le fichier est déjà associé à **Analyser dans Excel**, donc lorsque vous sélectionnez ou lancez le fichier .ODC, Excel est lancé et commence automatiquement à le charger. Toutefois, vous verrez probablement un avertissement s’afficher au sujet d’une menace de source de données externe :
+3. Lancez le fichier Excel.
 
-![Avertissement de sécurité](media/service-analyze-in-excel/analyze-excel-08.png)
-
-Sélectionnez **Activer** pour charger le fichier .ODC pour **Analyser dans Excel**, et Excel charge le fichier. 
+    >[!NOTE]
+    >La première fois que vous ouvrez le fichier, vous devrez peut-être **activer la modification** puis **activer le contenu**, en fonction de vos paramètres [Mode protégé](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) et [Documents approuvés](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53).
+    >
+    >![Capture d’écran de la bannière d’activation de la modification en mode Protégé](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+    >
+    >![Capture d’écran de la bannière d’activation du contenu pour les documents protégés](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
 ## <a name="use-excel-to-analyze-the-data"></a>Utiliser Excel pour analyser les données
 
-Une fois que vous avez autorisé le fichier .ODC à se charger en sélectionnant **Activer** dans la notification de sécurité, Excel vous présente un **tableau croisé dynamique** vide et une liste de **champs** prêts à être analysés provenant du jeu de données Power BI.
+Une fois que vous avez activé la modification et le contenu, Excel vous présente un **tableau croisé dynamique** vide et une liste de **champs** prêts à être analysés provenant du jeu de données Power BI.
 
-![Excel avec des données connectées](media/service-analyze-in-excel/analyze-excel-09.png)
+![Excel avec des données connectées](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
-Le fichier .ODC comporte une chaîne de connexion MSOLAP, connectée à votre jeu de données dans Power BI. Quand vous analysez ou manipulez les données, Excel interroge le jeu de données de Power BI et renvoie les résultats à Excel. Si le jeu de données est connecté à une source de données active via DirectQuery, Power BI interroge la source de données et renvoie les résultats vers Excel.
+Le fichier Excel comporte une chaîne de connexion MSOLAP, connectée à votre jeu de données dans Power BI. Quand vous analysez ou manipulez les données, Excel interroge le jeu de données de Power BI et renvoie les résultats à Excel. Si le jeu de données est connecté à une source de données active via DirectQuery, Power BI interroge la source de données et renvoie les résultats vers Excel.
 
 Une fois cette connexion aux données dans Power BI établie, vous pouvez créer des tableaux croisés dynamiques et des graphiques, et analyser le jeu de données comme vous le feriez pour un jeu de données local dans Excel.
 
@@ -107,7 +112,7 @@ Il y a quelques éléments à prendre en compte lorsque vous commencez à utilis
 
 
 ### <a name="sign-in-to-power-bi"></a>Connectez-vous à Power BI
-Même si vous êtes déjà connecté à Power BI dans votre navigateur, vous êtes invité à vous connecter à Power BI avec votre compte Power BI la première fois que vous ouvrez un nouveau fichier .ODC dans Excel. Cela permet d’authentifier la connexion entre Excel et Power BI.
+Même si vous êtes déjà connecté à Power BI dans votre navigateur, vous êtes invité à vous connecter à Power BI avec votre compte Power BI la première fois que vous ouvrez un nouveau fichier Excel dans Excel. Cela permet d’authentifier la connexion entre Excel et Power BI.
 
 ### <a name="users-with-multiple-power-bi-accounts"></a>Utilisateurs disposant de plusieurs comptes Power BI
 Certains utilisateurs disposent de plusieurs comptes Power BI. Si c’est le cas, vous êtes peut-être connecté à Power BI avec un compte, mais votre autre compte a accès au jeu de données utilisé dans Analyser dans Excel. Dans ce cas, vous risquez d’obtenir une erreur **Interdit** ou un message d’échec de connexion si vous tentez d’accéder à un jeu de données qui est utilisé par l’option Analyser dans Excel.

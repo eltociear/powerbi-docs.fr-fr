@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: ae9a3695c8db084d9c65871314edfef34cde1cb6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e2615915503b0eb6d9d1ee08bd2a1fa8599bcf8c
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238481"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953004"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -54,7 +54,7 @@ Quand vous utilisez une valeur catégorique (chaîne) dans Power BI pour les a
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Création simplifiée de cartes grâce aux indications fournies à Bing
 De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes. Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, vous pouvez utiliser les conseils suivants :
 
-Quand vous créez une carte, vous cherchez souvent à tracer des pays, des États et des villes. Dans Power BI Desktop, si vous nommez des colonnes après la désignation géographique, Bing sera plus à même de deviner ce que vous souhaitez afficher. Par exemple, si vous avez un champ contenant des états américains comme « Californie » et « Washington », Bing peut retourner l’emplacement de la ville de Washington, DC et non celui de l’État de Washington pour le mot « Washington ». Vous pouvez nommer la colonne « État » pour améliorer le géocodage. Il en va de même pour les colonnes nommées « Pays » et « Ville ». 
+Quand vous créez une carte, vous cherchez souvent à tracer des pays/régions, des états et des villes. Dans Power BI Desktop, si vous nommez des colonnes après la désignation géographique, Bing sera plus à même de deviner ce que vous souhaitez afficher. Par exemple, si vous avez un champ contenant des états américains comme « Californie » et « Washington », Bing peut retourner l’emplacement de la ville de Washington, DC et non celui de l’État de Washington pour le mot « Washington ». Vous pouvez nommer la colonne « État » pour améliorer le géocodage. Il en va de même pour les colonnes nommées « Pays » et « Ville ». 
 
 Certaines désignations sont ambiguës lorsqu’elles sont envisagées dans le contexte de plusieurs pays ou régions. Dans certains cas, ce qu’un pays ou une région considère comme un « état » peut être traité comme une « province », un « département » ou une autre désignation. Pour augmenter la précision du géocodage, créez des colonnes qui regroupent plusieurs champs et utilisez-les pour tracer les emplacements de vos données. Par exemple, au lieu de passer uniquement « Wiltshire », vous pouvez passer « Wiltshire, Grande-Bretagne » pour obtenir un résultat de géocodage plus précis. 
 

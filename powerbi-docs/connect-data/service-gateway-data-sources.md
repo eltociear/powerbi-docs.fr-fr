@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 07/22/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7fecec5ed41f0de9227cf30ed3ba4f39b23f21e9
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 92c3a65b11435403b61a06324f534e6d82e4b7cb
+ms.sourcegitcommit: efe11c819be75887c4242afa64d32bb0698da569
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459551"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87123485"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -44,6 +44,9 @@ La plupart des opérations de gestion des sources de données peuvent également
     ![Paramètres de la source de données](media/service-gateway-data-sources/data-source-settings.png)
 
 5. Pour SQL Server, vous choisissez la **Méthode d’authentification** **Windows** ou **De base** (Authentification SQL). Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
+
+    > [!NOTE]
+    > Si la méthode d’authentification sélectionnée est OAuth, toute requête qui s’exécute plus longtemps que la durée définie dans la stratégie d’expiration du jeton OAuth peut échouer.
 
 6. Sous **Paramètres avancés**, vous pouvez configurer [Authentification unique (SSO)](service-gateway-sso-overview.md) pour votre source de données. 
 

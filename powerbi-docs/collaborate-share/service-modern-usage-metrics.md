@@ -1,5 +1,5 @@
 ---
-title: Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
+title: Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail (préversion)
 description: Guide pratique pour voir, enregistrer et utiliser les métriques d’utilisation dans l’espace de travail nouvelle expérience pour les rapports et les tableaux de bord Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 380fe94a123c26d7502ce68bc21372f791a3508f
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162040"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953027"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
 
@@ -65,6 +65,9 @@ Quand vous affichez le rapport de métriques d’utilisation amélioré en suiva
 ### <a name="usage-metrics-report-dataset"></a>Jeu de données du rapport de métriques d’utilisation
 
 Le rapport de métriques d’utilisation amélioré s’appuie sur un jeu de données de rapport de métriques d’utilisation que Power BI crée automatiquement lors du premier lancement du rapport. Power BI actualise ensuite ce jeu de données tous les jours. S’il n’est pas possible de modifier la planification de l’actualisation, vous pouvez en revanche mettre à jour les informations d’identification utilisées par Power BI pour actualiser les données de métriques d’utilisation. Cela peut être nécessaire pour reprendre l’actualisation planifiée si les informations d’identification ont expiré ou si vous avez supprimé l’utilisateur qui a lancé à l’origine le rapport de métriques d’utilisation à partir de l’espace de travail dans lequel se trouve le jeu de données.
+
+> [!NOTE]
+> Bien qu’en préversion, le jeu de données de métriques d’utilisation peut présenter des changements mineurs qui affectent les rapports personnalisés.  
 
 ### <a name="usage-metrics-report-pages"></a>Pages du rapport de métriques d’utilisation
 

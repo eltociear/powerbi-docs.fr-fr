@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: a3df69e52614fba3152f6539b2c4cbcf4f5c87d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8f79037c4117baaba1a50b6fe4e728b57fad362f
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227668"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252081"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 
@@ -25,7 +25,7 @@ Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse
 
 ## <a name="sign-up-for-a-microsoft-365-trial-of-office"></a>S’inscrire à un essai Microsoft 365 d’Office
 
-Inscrivez-vous pour un essai de Microsoft 365 [sur le site web de Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Si vous n’avez pas encore de compte, Microsoft vous guide tout au long des étapes à suivre pour en créer un. Étant donné que les comptes e-mail commerciaux (tels que Hotmail et Gmail) ne fonctionnent pas avec Microsoft 365, vous allez créer un nouveau compte.  Ce compte e-mail aura le format *zalan@onmicrosoft.com* .
+Inscrivez-vous pour un essai de Microsoft 365 [sur le site web de Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). Si vous n’avez pas encore de compte, Microsoft vous guide tout au long des étapes à suivre pour en créer un. Étant donné que les comptes e-mail commerciaux (tels que Hotmail et Gmail) ne fonctionnent pas avec Microsoft 365, vous allez créer un nouveau compte.  Ce compte e-mail aura le format *zalan\@onmicrosoft.com*.
 
 ![Sélectionnez Essai gratuit](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)
 

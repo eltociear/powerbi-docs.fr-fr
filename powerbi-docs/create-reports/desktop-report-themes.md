@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 48ff2852f2c7df3a1b005d730a3f91dc9e434f62
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232258"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364097"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 
@@ -43,6 +43,9 @@ Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez 
 * [Importer un fichier JSON de thème personnalisé](#import-custom-report-theme-files).
 
 Nous allons examiner chacune de ces options.
+
+> [!NOTE]
+> Les thèmes peuvent être seulement appliqués lors de l’utilisation de Power BI Desktop. Vous ne pouvez pas appliquer de thèmes à des rapports existants dans le service Power BI. 
 
 ### <a name="built-in-report-themes"></a>Thèmes de rapport intégrés
 
@@ -198,6 +201,15 @@ Pour afficher les couleurs disponibles dans un thème de rapport :
 Par exemple, une fois que vous appliquez la palette de couleur verte et marron du thème des rapport St. Patrick's Day, affichez les couleurs du thème. Vous voyez tout ce vert ? C’est parce que ces couleurs faisaient partie du thème de rapport que nous avons importé et appliqué.
 
 Les couleurs de la palette de couleurs sont également relatives au thème actuel. Par exemple, supposons que vous sélectionnez la troisième couleur de la ligne supérieure pour un point de données. Par la suite, si vous passez à un autre thème, la couleur de ce point de données est automatiquement mise à jour sur la troisième couleur de la ligne supérieure dans le nouveau thème, comme vous le feriez lors de la modification des thèmes dans Microsoft Office.
+
+La définition d’un thème de rapport change les couleurs par défaut utilisées dans les visuels dans tout le rapport. Power BI gère une liste de plusieurs centaines de couleurs pour s’assurer que les visuels disposent de nombreuses couleurs uniques pour l’affichage dans un rapport. Lorsque Power BI affecte des couleurs à une série de visuels, les couleurs sont sélectionnées sur la base du premier arrivé, premier servi, à mesure que les couleurs des séries sont affectées. Lorsque vous importez un thème, le mappage des couleurs pour les séries de données est réinitialisé. 
+
+Power BI effectue le suivi de la couleur pour une série dynamique et utilise la même couleur pour la valeur dans d’autres visuels. Dans une *série dynamique*, le nombre de séries présentées dans les visuels peut varier en fonction des mesures, des valeurs ou d’autres aspects. Par exemple, si vous montrez les *bénéfices par région* dans un rapport, vous pourriez avoir cinq régions de ventes, mais vous pourriez également en avoir neuf. Le nombre de régions étant dynamique, il s’agit alors d’une série dynamique. 
+
+À l’inverse, pour les *séries statiques*, le nombre de séries est connu. Par exemple, les *bénéfices* et le *chiffre d’affaires* sont des séries statiques. Dans les séries statiques, Power BI affecte des couleurs par index dans les palettes de thèmes. Vous pouvez substituer l’affectation de couleur par défaut en sélectionnant une couleur dans le volet de mise en forme sous **Couleurs des données**. Vous devrez peut-être changer vos sélections de segment pour voir toutes les valeurs de séries potentielles et définir leurs couleurs. Si vous définissez explicitement la couleur d’un seul visuel à l’aide du volet **Propriétés**, le thème importé ne s’applique à aucune de ces couleurs définies explicitement. 
+
+Pour que le thème s’applique à ces couleurs sélectionnées explicitement, utilisez **Rétablir les valeurs par défaut** dans la section **Couleurs des données** du visuel pour lequel la couleur a été explicitement définie, afin d’annuler l’application de couleur explicite et autoriser l’application du thème.
+
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Les situations où les couleurs de thème de rapport ne restent pas associées à vos rapports
 

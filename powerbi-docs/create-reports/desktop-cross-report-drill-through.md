@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 01/16/2019
+ms.date: 07/27/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7589858749585cb506d4f313557abcb889b506c9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a22610ea8ca3b7a26763a435b98bf7c114e1bfa0
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221742"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252817"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi"></a>Utiliser une extraction interrapport dans Power BI
+# <a name="use-cross-report-drill-through-in-power-bi"></a>Utiliser une extraction interrapport dans Power BI
 
-Avec la fonctionnalité d’*extraction interrapport* de Power BI, vous pouvez passer en contexte d’un rapport à un autre dans le même espace de travail ou la même application du service Power BI. Vous pouvez utiliser l’extraction interrapport pour connecter deux rapports ou plus qui ont un contenu associé et transmettre le contexte de filtre avec la connexion interrapport. 
+Avec la fonctionnalité d’*extraction interrapport* de Power BI, vous pouvez passer en contexte d’un rapport à un autre dans le même espace de travail ou la même application du service Power BI. Vous pouvez utiliser l’extraction interrapport pour connecter plusieurs rapports qui ont un contenu associé, et transmettre le contexte de filtre avec la connexion interrapport. 
 
 Pour lancer une extraction interrapport, sélectionnez un point de données dans un *visuel source* d’un *rapport source*, puis sélectionnez la cible d’**extraction** interrapport dans le menu contextuel. 
 
@@ -33,7 +33,7 @@ Cet article explique comment configurer et utiliser l’extraction interrapport 
 > [!NOTE]
 > Vous ne pouvez pas utiliser l’extraction interrapport avec des [Rapports partagés avec moi](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) individuellement. Pour utiliser l’extraction interrapport, vous devez accéder aux rapports dans les espaces de travail dont vous êtes membre.
 
-## <a name="enable-cross-report-drillthrough"></a>Activer l’extraction interrapport
+## <a name="enable-cross-report-drill-through"></a>Activer l’extraction interrapport
 
 La première étape de l’activation de l’extraction interrapport consiste à valider les modèles de données pour les rapports sources et cibles. Même si les schémas de chaque rapport n’ont pas besoin d’être identiques, les champs que vous voulez passer doivent exister dans les deux modèles de données. Les noms des champs et les noms des tables auxquelles ils appartiennent doivent être identiques. Les chaînes doivent correspondre et sont sensibles à la casse.
 
@@ -53,9 +53,9 @@ Vous pouvez également activer l’extraction interrapport à partir du service 
 1. En regard du nom du rapport source dans la liste de l’espace de travail, sélectionnez le symbole **Plus d’options**, puis **Paramètres**. 
 1. En bas du volet **Paramètres**, sous **Extraction interrapport**, sélectionnez **Autoriser les visuels de ce rapport à utiliser des cibles d’extraction d’autres rapports**, puis **Enregistrer**.
    
-   ![Activer l’extraction interrapport dans le service Power BI](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
+   ![Activer l’extraction interrapport dans le service Power BI](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
-## <a name="set-up-a-cross-report-drillthrough-target"></a>Configurer une cible d’extraction interrapport
+## <a name="set-up-a-cross-report-drill-through-target"></a>Configurer une cible d’extraction interrapport
 
 La configuration d’une page cible pour l’extraction interrapport est similaire à la configuration de l’extraction dans un rapport. L’activation de l’extraction dans la page cible permet à d’autres visuels de cibler la page pour l’extraction. Pour créer une extraction dans un rapport unique, consultez [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md).
 
@@ -72,7 +72,7 @@ Vous pouvez configurer une cible pour l’extraction interrapport dans Power BI
 
 Voilà. Vos rapports sont prêts pour l’extraction interrapport. 
 
-## <a name="use-cross-report-drillthrough"></a>Utiliser l’extraction interrapport
+## <a name="use-cross-report-drill-through"></a>Utiliser l’extraction interrapport
 
 Pour utiliser l’extraction interrapport, sélectionnez le rapport source dans le service Power BI, puis sélectionnez un visuel qui utilise le champ d’extraction de la façon que vous avez spécifiée lors de la configuration de la page cible. Cliquez avec le bouton droit sur un point de données pour ouvrir le menu contextuel du visuel, sélectionnez **Extraction**, puis la cible d’extraction. Les cibles d’extraction interrapport sont au format **Nom de la page [Nom du rapport]** .
 
@@ -92,7 +92,7 @@ Si vous définissez **Garder tous les filtres** sur **Activé** quand vous confi
 - Segments et segments synchronisés sur la page
 - Paramètres d’URL
 
-Quand vous accédez au rapport cible pour l’extraction, Power BI applique uniquement les filtres pour les champs ayant des correspondances de chaîne exactes concernant le nom de champ et le nom de table. 
+Quand vous accédez au rapport cible pour l’extraction, Power BI applique uniquement les filtres pour les champs ayant des correspondances de chaîne exactes pour le nom de champ et le nom de table. 
 
 Power BI n’applique pas les filtres permanents du rapport cible, mais il applique votre signet personnel par défaut si vous en avez un. Par exemple, si votre signet personnel par défaut comprend un filtre au niveau du rapport pour *Country = US*, Power BI applique ce filtre avant d’appliquer le contexte de filtre à partir du visuel source. 
 
@@ -100,9 +100,13 @@ Pour l’extraction interrapport, Power BI passe le contexte de filtre aux page
 
 Si vous souhaitez revenir au rapport source après l’action d’extraction interrapport, utilisez le bouton **Retour** du navigateur. 
 
+## <a name="considerations-and-limitations"></a>Considérations et limitations
+
+L’extraction interrapport ne fonctionne pas dans les rapports Power BI dans Power BI Report Server.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 Les articles suivants pourraient également vous intéresser :
 
 - [Segments dans Power BI](../visuals/power-bi-visualization-slicers.md)
-- [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md)
+- [Utiliser l’extraction dans Power BI Desktop](desktop-drillthrough.md)

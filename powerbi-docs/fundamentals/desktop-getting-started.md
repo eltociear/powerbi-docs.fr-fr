@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 03/13/2020
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec716f0824ce083b034dc8fd459f00fdb7768ac4
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 62f0f6d9bac3b8451f3c5efc70612c2ef067aed4
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215584"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252794"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Bien démarrer avec Power BI Desktop
 Bienvenue dans le guide de démarrage de Power BI Desktop ! Dans cette visite guidée, vous allez voir comment fonctionne Power BI Desktop, ce qu’il peut faire et comment créer des modèles de données fiables et des rapports incroyables pour améliorer votre prise de décision.
@@ -24,6 +24,11 @@ Pour obtenir un bref aperçu du fonctionnement de Power BI Desktop et de son uti
 ![Capture d’écran de Power BI Desktop montrant un exemple d’élément de travail.](media/desktop-getting-started/hero-02.png)
 
 Vous pouvez également regarder la vidéo [Bien démarrer avec Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) et télécharger le classeur Excel [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) pour suivre la vidéo.
+
+
+> [!IMPORTANT]
+> Power BI Desktop est mis à jour et publié tous les mois, en incorporant les commentaires client et de nouvelles fonctionnalités. Seule la version la plus récente de Power BI Desktop est prise en charge ; les clients qui contactent le support technique de Power BI Desktop sont invités à effectuer la mise à niveau vers la version la plus récente. Vous pouvez obtenir la version la plus récente de Power BI Desktop à partir du [Windows Store](https://aka.ms/pbidesktopstore), ou en tant qu’exécutable contenant toutes les langues prises en charge que vous [téléchargez](https://www.microsoft.com/download/details.aspx?id=58494) et installez sur votre ordinateur.
+
 
 ## <a name="how-power-bi-desktop-works"></a>Fonctionnement de Power BI Desktop
 Avec Power BI Desktop, vous pouvez :

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/27/2020
+ms.date: 07/28/2020
 ms.author: maggies
-ms.openlocfilehash: f4237379ffefeeb7ba9d105f5fbd61ff84959807
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1a9fbfc5d764a9dbda75bd60e0efb6da55efd202
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239506"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87364074"
 ---
 # <a name="configure-power-bi-report-server-with-azure-application-proxy"></a>Configurer Power BI Report Server avec le proxy d’application Azure
 
@@ -110,7 +110,7 @@ Nous devons configurer les paramètres de délégation sur le compte de service 
 3. Nous devons configurer une délégation contrainte avec transit de protocole. Avec une délégation contrainte, nous devons être explicite concernant les services auxquels nous souhaitons déléguer.
 4. Cliquez avec le bouton droit sur le **compte de service du serveur de rapports**, puis sélectionnez **Propriétés**.
 5. Sélectionnez l’onglet **Délégation**.
-6. Sélectionnez **N’approuver cet ordinateur que pour la délégation aux services spécifiés**.
+6. Sélectionnez **N’approuver cet utilisateur que pour la délégation aux services spécifiés**.
 7. Sélectionnez **Utiliser tout protocole d’authentification**.
 8. Sous **Ce compte peut présenter des informations d’identification déléguées à ces services**, sélectionnez **Ajouter**.
 9. Dans la boîte de dialogue Nouveau, sélectionnez **Utilisateurs ou ordinateurs**.

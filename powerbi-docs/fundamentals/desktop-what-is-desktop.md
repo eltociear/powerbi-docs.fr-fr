@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 12/16/2019
+ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a67bd6c2a3d757475580d218547be689dbb99d2
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c8d4671d55e09ca6e60599bbc0ac9802258f63ba
+ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216922"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87252725"
 ---
 # <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
@@ -31,6 +31,11 @@ Voici les utilisations les plus courantes de Power BI Desktop :
 * Partager des rapports avec d’autres utilisateurs à l’aide du service Power BI
 
 Les personnes responsables de ces tâches sont souvent considérées comme des *analystes de données* (parfois nommés simplement *analystes*) ou des professionnels de l’informatique décisionnelle (souvent appelés *créateurs de rapports*). Toutefois, nombreux sont ceux qui ne se considèrent pas comme des analystes ou des créateurs de rapports et qui utilisent Power BI Desktop pour créer des rapports attrayants, ou pour extraire des données provenant de différentes sources, générer des modèles de données et les partager avec leurs collègues et leur organisation.
+
+
+> [!IMPORTANT]
+> Power BI Desktop est mis à jour et publié tous les mois, en incorporant les commentaires client et de nouvelles fonctionnalités. Seule la version la plus récente de Power BI Desktop est prise en charge ; les clients qui contactent le support technique de Power BI Desktop sont invités à effectuer la mise à niveau vers la version la plus récente. Vous pouvez obtenir la version la plus récente de Power BI Desktop à partir du [Windows Store](https://aka.ms/pbidesktopstore), ou en tant qu’exécutable contenant toutes les langues prises en charge que vous [téléchargez](https://www.microsoft.com/download/details.aspx?id=58494) et installez sur votre ordinateur.
+
 
 Trois vues sont disponibles dans Power BI Desktop, que vous sélectionnez sur le côté gauche du canevas. Les vues, montrées dans leur ordre d’apparition, sont les suivantes :
 * **Rapport** : Dans cette vue, vous créez des rapports et des visuels ; c’est là que vous passerez la majeure partie de votre temps de création.
@@ -128,5 +133,5 @@ Pour publier un rapport Power BI Desktop :
 Pour bien démarrer avec Power BI Desktop, la première chose à faire est de télécharger et d’installer l’application. Il existe deux façons d’obtenir Power BI Desktop :
 
 * [télécharger Power BI Desktop](https://aka.ms/pbidesktopstore) sur le Windows Store.
-* [télécharger Power BI Desktop sur le Web](https://docs.microsoft.com/power-bi/desktop-get-the-desktop#download-power-bi-desktop-directly) ;
+* [télécharger Power BI Desktop sur le Web](https://www.microsoft.com/download/details.aspx?id=58494) ;
 

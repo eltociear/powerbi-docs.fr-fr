@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0d388127ab42c4f60d1e08efea6b3fdbbbf7045b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ca04a5404f0868f85a9c7ed840109efe6d213760
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238818"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952636"
 ---
 # <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Consommer des rapports Power BI à l’aide des fonctionnalités d’accessibilité
 Power BI intègre de nombreuses fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser plus facilement les rapports Power BI. Ces outils permettent aux utilisateurs d’obtenir les mêmes informations d’un rapport que ceux qui n’utilisent pas de technologie d’assistance.
@@ -114,5 +114,3 @@ Voici la liste des articles dédiés à l’accessibilité dans Power BI :
 * [Création de rapports Power BI avec les outils d’accessibilité](desktop-accessibility-creating-tools.md)
 * [Raccourcis clavier d’accessibilité pour les rapports Power BI](desktop-accessibility-keyboard-shortcuts.md)
 * [Liste de vérification de l’accessibilité des rapports](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
-
-

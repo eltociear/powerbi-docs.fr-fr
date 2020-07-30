@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c34244669b538a5c3138536adbfd022eb00e646d
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 3022c43f4c1af3098b24148ccb0bdadf6e0da521
+ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263040"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87363982"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Obtenir des données de fichiers Power BI Desktop
 ![Icône de fichier Power BI Desktop](media/service-desktop-files/pbid_file_icon.png)
@@ -30,7 +30,7 @@ Une fois que vous avez mis des données dans **Power BI Desktop** et créé que
 
 **OneDrive personnel** : si vous enregistrez vos fichiers sur votre compte OneDrive personnel, vous bénéficiez de la plupart des avantages obtenus avec OneDrive Entreprise. La différence principale réside dans le fait que, la première fois que vous vous connectez à votre fichier (via Obtenir des données > Fichiers > OneDrive personnel), vous devez vous connecter à votre compte OneDrive avec votre compte Microsoft, qui est généralement différent de celui utilisé pour vous connecter à Power BI. Lorsque vous vous connectez à OneDrive avec votre compte Microsoft, veillez à sélectionner l’option Maintenir la connexion. Power BI peut ainsi se connecter à votre fichier toutes les heures environ et s’assurer que votre jeu de données dans Power BI est synchronisé.
 
-**Sites d’équipe SharePoint** : l’enregistrement de vos fichiers Power BI Desktop sur des sites d’équipe SharePoint revient plus ou moins à enregistrer dans OneDrive Entreprise. La différence majeure réside dans la manière dont vous vous connectez au fichier à partir de Power BI. Vous pouvez spécifier une URL ou vous connecter au dossier racine.
+**Sites d’équipe SharePoint** : l’enregistrement de vos fichiers Power BI Desktop sur des sites d’équipe SharePoint revient plus ou moins à enregistrer dans OneDrive Entreprise. La différence majeure réside dans la manière dont vous vous connectez au fichier à partir de Power BI. Vous pouvez spécifier une URL ou vous connecter au dossier racine. Vous pouvez également <a href="https://support.microsoft.com/office/sync-sharepoint-and-teams-files-with-the-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88">configurer un dossier de synchronisation</a> qui pointe vers le dossier SharePoint ; les fichiers y sont synchronisés avec la copie principale sur SharePoint.
 
 ## <a name="import-or-connect-to-a-power-bi-desktop-file-from-power-bi"></a>Importer un fichier Power BI Desktop ou s’y connecter à partir de Power BI
 >[!IMPORTANT]

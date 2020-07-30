@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a797547562a8968591ca6551f85a56e0da98d680
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: ee123bed8940b52a66f3b0f860671a87210c261f
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793286"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952682"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Où est situé mon client Power BI ?
 
@@ -34,7 +34,7 @@ Pour rechercher la région où se trouve votre client, procédez comme suit.
 
 ## <a name="how-the-data-region-is-selected"></a>Méthode de sélection de la région de données
 
-La région de données est basée sur le pays que vous sélectionnez lors de la création du client. La sélection s’applique à l’inscription à la fois à Microsoft 365 et à Power BI, car ces informations sont partagées. S’il s’agit d’un nouveau client, sélectionnez le pays approprié dans la liste lorsque vous vous inscrivez.
+La région de données est basée sur le pays/la région que vous sélectionnez lors de la création du locataire. La sélection s’applique à l’inscription à la fois à Microsoft 365 et à Power BI, car ces informations sont partagées. S’il s’agit d’un nouveau locataire, sélectionnez le pays/la région approprié(e) dans la liste quand vous vous inscrivez.
 
 ![Sélection du pays](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 
@@ -44,4 +44,3 @@ Power BI sélectionne la région de données la plus proche de votre sélection,
 > Vous ne pouvez pas modifier la sélection après avoir créé le client.
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-

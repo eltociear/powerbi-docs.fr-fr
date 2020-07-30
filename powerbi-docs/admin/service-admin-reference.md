@@ -1,5 +1,5 @@
 ---
-title: Applets de commande PowerShell, API REST et kit de développement logiciel (SDK) .NET pour les administrateurs
+title: Applets de commande PowerShell, API REST et bibliothèques clientes .NET pour les administrateurs
 description: Découvrez les différentes façons d’administrer Power BI via des scripts et des API de programmation.
 author: kfollis
 ms.reviewer: ''
@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: b4f4227a53a87cd831962bc5c944a569531b8232
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e1c95c330687131a29753359f5223e096bddab1d
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83136292"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86952613"
 ---
-# <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>Applets de commande PowerShell, API REST et kit SDK .NET pour l’administration de Power BI
-Power BI permet aux administrateurs d’écrire les tâches courantes sous forme de scripts à l’aide des applets de commande PowerShell. Il expose aussi les API REST et propose un kit SDK .NET pour développer des solutions d’administration. Cette rubrique présente une liste d’applets de commande, ainsi que la méthode SDK et le point de terminaison d’API REST correspondants. Pour plus d’informations, consultez :
+# <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>Applets de commande PowerShell, API REST et bibliothèque cliente .NET pour l’administration de Power BI
+Power BI permet aux administrateurs d’écrire les tâches courantes sous forme de scripts à l’aide des applets de commande PowerShell. Il expose aussi les API REST et propose une bibliothèque cliente .NET pour développer des solutions d’administration. Cette rubrique présente une liste d’applets de commande, ainsi que les API et le point de terminaison d’API REST correspondants. Pour plus d’informations, consultez :
 
 - [Téléchargement](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) et [documentation](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps) de PowerShell
 - [Documentation](https://docs.microsoft.com/rest/api/power-bi/admin) des API REST
-- [Téléchargement ](https://www.nuget.org/packages/Microsoft.PowerBI.Api/)du kit SDK .NET
+- [Téléchargement](https://www.nuget.org/packages/Microsoft.PowerBI.Api/) de la bibliothèque cliente .NET
 
 > Les applets de commande ci-dessous doivent être appelées avec `-Scope Organization` pour fonctionner sur le locataire pour l’administration.
 
-| **Nom de l’applet de commande** | **Alias** | **Méthode SDK** | **Point de terminaison d’API REST** | **Description** |
+| **Nom de l’applet de commande** | **Alias** | **API** | **Point de terminaison d’API REST** | **Description** |
 | --- | --- | --- | --- | --- |
 | `Get-PowerBIDatasource` | Non applicable | `Datasets_GetDataSourcesAsAdmin` | /v1.0/myorg/admin/datasets/{datasetkey}/datasources | Obtient les sources de données d’un jeu de données déterminé. |
 | `Get-PowerBIDataset` | Non applicable | `Datasets_GetDatasetsAsAdmin` | /v1.0/myorg/admin/datasets | Obtient la liste complète des jeux de données d’un locataire Power BI. |

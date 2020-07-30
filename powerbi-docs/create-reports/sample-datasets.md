@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 305da7339159500a8e6de410bb4bf7f0b06d10e0
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: a268247d13fdfe71e17e5c0a6fafeeb635b96984
+ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349629"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86953050"
 ---
 # <a name="get-samples-for-power-bi"></a>Obtenir des exemples pour Power BI
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Ou peut-être souhaitez-vous consulter des rapports qui illustrent certaines des fonctionnalités de Power BI. Nous nous occupons de tout.
@@ -25,7 +25,7 @@ Power BI offre différents genres d’échantillons, à des fins différentes :
 - Un **[échantillon d’application](#sample-app-from-appsource)** que vous téléchargez à partir de AppSource, également directement dans le service Power BI. Les applications incluent des tableaux de bord, des rapports et des jeux de données. Vous pouvez les modifier, puis les distribuer à vos collègues.
 - **[Huit échantillons intégrés d’origine](#eight-original-samples)** dans le service Power BI en tant que *packs de contenu*, avec des tableaux de bord, des rapports et des jeux de données. Vous les installez directement dans le service Power BI. Les échantillons intégrés sont également disponibles sous forme de rapports Power BI (. pbix) et classeurs Excel (. xlsx).
 - Les versions **[Classeur Excel](#download-sample-excel-files)** des échantillons intégrés, contenant le modèle de données et les feuilles Power View. Vous pouvez explorer ou modifier le modèle de données dans Excel, utiliser le classeur Excel comme source de données pour un rapport de Power BI. Vous pouvez également charger le classeur en tant que fichier Excel et afficher les éléments visuels et les tableaux croisés dynamiques Excel dans des rapports Power BI. 
-- En outre, un **[classeur d’échantillons de données financières](sample-financial-download.md)** , tableau plat simple dans un fichier Excel disponible pour le téléchargement. Il contient des données anonymes avec des produits fictifs, avec des ventes divisées par segments et pays. Il constitue une source de données de base utile pour un rapport Power BI.
+- En outre, un **[classeur d’échantillons de données financières](sample-financial-download.md)** , tableau plat simple dans un fichier Excel disponible pour le téléchargement. Il contient des données anonymes avec des produits fictifs, avec des ventes divisées par segments et pays/régions. Il constitue une source de données de base utile pour un rapport Power BI.
 
 Notre documentation en ligne utilise les mêmes échantillons dans les tutoriels et les exemples, ce qui vous permettra de suivre.
 
