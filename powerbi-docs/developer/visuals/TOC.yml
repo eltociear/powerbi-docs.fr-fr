@@ -24,9 +24,9 @@
           href: funnel-plot-from-r.md
     - name: Concepts
       items:
-        - name: "Structure de projets de visuels Power\_BI"
+        - name: "Structure de projet des visuels Power\_BI"
           href: visual-project-structure.md
-        - name: Concepts visuels
+        - name: " Intégration du système de visuels Power\_BI"
           href: power-bi-visuals-concept.md
         - name: "Visuels pour les organisations dans Power\_BI"
           href: power-bi-custom-visuals-organization.md
