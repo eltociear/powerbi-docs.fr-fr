@@ -10,12 +10,12 @@ ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 90cd12bc7d8d7261e25edd32c5afa7cf144e8202
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ec521c256209c258604e13483a9f3159b24626ae
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252488"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87537501"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -43,8 +43,8 @@ Le portail compte neuf onglets. Le reste de cet article fournit des informations
 * [Paramètres du locataire](#tenant-settings)
 * [Paramètres de capacité](#capacity-settings)
 * [Codes incorporés](#embed-codes)
-* [Visuels de l’organisation](#organizational-visuals)
-* [Stockage de dataflows (préversion)](#dataflowStorage)
+* [Visuels de l’organisation](organizational-visuals.md#organizational-visuals)
+* [Stockage de dataflows (préversion)](#dataflow-storage-preview)
 * [Espaces de travail](#workspaces)
 * [Marque personnalisée](#custom-branding)
 
@@ -386,55 +386,6 @@ Le paramètre **Partager dans Teams** se trouve dans la section **Paramètres du
 
 Découvrez plus d’informations sur le [partage de contenu Power BI dans Teams](../collaborate-share/service-share-report-teams.md).
 
-
-## <a name="power-bi-visuals-settings"></a>Paramètres des visuels Power BI
-
-### <a name="add-and-use-power-bi-visuals"></a>Ajouter et utiliser des visuels Power BI
-
-Les utilisateurs de l’organisation peuvent manipuler et partager des visuels Power BI. [En savoir plus](../developer/visuals/power-bi-custom-visuals.md)
-
-> [!NOTE]
-> Ce paramètre peut s’appliquer à toute l’organisation ou se limiter à des groupes particuliers.
-
-Power BI Desktop (à compter de la version de mars 2019) prend en charge l’utilisation d’une **stratégie de groupe** pour désactiver l’utilisation des visuels Power BI sur les ordinateurs déployés d’une organisation.
-
-<table>
-<tr><th>Attribut</th><th>Valeur</th>
-</tr>
-<td>key</td>
-    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableCustomVisuals</td>
-</tr>
-</table>
-
-La valeur 1 (décimale) active l’utilisation des visuels Power BI dans Power BI (valeur par défaut).
-
-La valeur 0 (décimale) désactive l’utilisation des visuels Power BI dans Power BI.
-
-### <a name="allow-only-certified-visuals"></a>Autoriser uniquement les visuels certifiés
-
-Les utilisateurs de l’organisation qui disposent d’autorisations pour ajouter et utiliser des visuels Power BI, définis par le paramètre « Ajouter et utiliser des visuels Power BI », peuvent uniquement utiliser des [visuels Power BI certifiés](https://go.microsoft.com/fwlink/?linkid=2002010) (les visuels non certifiés sont bloqués et affichent un message d’erreur lorsqu’ils sont utilisés). 
-
-
-Power BI Desktop (à compter de la version de mars 2019) prend en charge l’utilisation d’une **stratégie de groupe** pour désactiver l’utilisation de visuels Power BI non certifiés sur les ordinateurs déployés d’une organisation.
-
-<table>
-<tr><th>Attribut</th><th>Valeur</th>
-</tr>
-<td>key</td>
-    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
-<tr>
-<td>valueName</td>
-<td>EnableUncertifiedVisuals</td>
-</tr>
-</table>
-
-La valeur 1 (décimale) active l’utilisation de visuels Power BI non certifiés dans Power BI (valeur par défaut).
-
-La valeur 0 (décimale) désactive l’utilisation de visuels Power BI non certifiés dans Power BI (cette option active uniquement l’utilisation de [visuels Power BI certifiés](https://go.microsoft.com/fwlink/?linkid=2002010)).
-
 ## <a name="r-visuals-settings"></a>Paramètres des visuels R
 
 ### <a name="interact-with-and-share-r-visuals"></a>Utiliser et partager des éléments visuels R
@@ -540,67 +491,7 @@ En tant qu’administrateur, vous pouvez afficher les codes incorporés génér�
 
 ![Codes incorporés au sein du portail d’administration Power BI](media/service-admin-portal/embed-codes.png)
 
- ## <a name=""></a><a name="organizational-visuals">Visuels de l’organisation</a> 
-
-L’onglet **Visuels de l’organisation** vous permet de déployer et de gérer des visuels Power BI au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](../developer/visuals/power-bi-custom-visuals-organization.md)
-
-> [!WARNING]
-> Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel de l’organisation.
-
-L’image suivante affiche tous les visuels Power BI actuellement déployés dans le référentiel d’une organisation.
-
-![Visuel de l’administrateur de l’organisation](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
-
-### <a name="add-a-new-custom-visual"></a>Ajouter un visuel personnalisé
-
-Pour ajouter un nouveau visuel personnalisé à la liste, procédez comme suit. 
-
-1. Dans le volet droit, sélectionnez **Ajouter un visuel personnalisé**.
-
-    ![Formulaire des visuels Power BI](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
-
-1. Renseignez le formulaire **Ajouter un visuel personnalisé** :
-
-    * **Choisir un fichier .pbiviz** (obligatoire) : sélectionnez un fichier visuel personnalisé à charger. Seuls les visuels Power BI d’API avec version sont pris en charge (lisez ici ce que cela signifie).
-
-    Avant de charger un visuel personnalisé, examinez-le afin de déterminer s’il présente un risque en matière de sécurité et de confidentialité et s’il répond aux standards de votre organisation.
-
-    * **Nommer vos visuels personnalisés** (obligatoire) : donnez un titre court au visuel pour que les utilisateurs de Power BI Desktop comprennent facilement ce qu’il fait
-
-    * **Icône** : Il s’agit du fichier d’icône qui s’affiche dans l’interface utilisateur de Power BI Desktop.
-
-    * **Description** : rédigez une brève description du visuel pour donner plus de contexte et d’informations à l’utilisateur
-
-1. Sélectionnez **Ajouter** pour lancer la requête de chargement. Si elle aboutit, le nouvel élément s’affiche dans la liste. En cas d’échec, vous recevez le message d’erreur correspondant.
-
-### <a name="delete-a-custom-visual-from-the-list"></a>Supprimer un visuel personnalisé de la liste
-
-Sélectionnez l’icône de la corbeille pour supprimer définitivement le visuel du référentiel.
-
-> [!IMPORTANT]
-> La suppression est irréversible. Le rendu du visuel supprimé disparaît immédiatement des rapports existants. Même si vous chargez le même visuel à nouveau, il ne remplace celui qui a été supprimé. Toutefois, les utilisateurs peuvent réimporter le nouveau visuel et remplacer l’instance présente dans leurs rapports.
-
-### <a name="disable-a-custom-visual-in-the-list"></a>Désactiver un visuel personnalisé dans la liste
-
-Pour désactiver le visuel à partir du magasin de l’organisation, sélectionnez l’icône d’engrenage. Dans la section **Accès**, désactivez le visuel personnalisé.
-
-Après la désactivation du visuel, son rendu ne s’affiche plus dans les rapports existants et le message d’erreur suivant s’affiche.
-
-*Ce visuel personnalisé n’est plus disponible. Pour plus d’informations, contactez votre administrateur.*
-
-Toutefois, les visuels marqués d’un signet continuent à fonctionner.
-
-Après une mise à jour ou un changement d’administrateur, les utilisateurs de Power BI Desktop doivent redémarrer l’application ou actualiser le navigateur dans le service Power BI pour voir les mises à jour.
-
-### <a name="update-a-visual"></a>Mettre à jour un visuel
-
-Pour mettre à jour le visuel à partir du magasin de l’organisation, sélectionnez l’icône d’engrenage. Parcourez et chargez une nouvelle version du visuel.
-
-Assurez-vous que l’ID du visuel reste inchangé. Le nouveau fichier remplace le fichier précédent pour tous les rapports au sein de l’organisation. Toutefois, si la nouvelle version du visuel est susceptible de rompre l’utilisation ou la structure de données de la version précédente du visuel, alors ne remplacez pas la version précédente. Au lieu de cela, vous devez créer une nouvelle liste pour la nouvelle version du visuel. Par exemple, ajoutez un nouveau numéro de version (version X.X) au titre du nouveau visuel répertorié. Ainsi, il est clair qu’il s’agit du même visuel, avec un numéro de version mis à jour, ce qui permet de ne pas rompre les fonctionnalités des rapports existants. Encore une fois, assurez-vous que l’ID du visuel reste inchangé. Puis, la prochaine fois que les utilisateurs entrent dans le référentiel de l’organisation à partir de Power BI Desktop, ils peuvent importer la nouvelle version et sont alors invités à remplacer la version déjà présente dans leur rapport.
-
-Pour plus d’informations, consultez [Questions fréquentes sur les visuels Power BI d’une organisation](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
-
-## <a name=""></a><a name="dataflowStorage">Stockage de dataflows (préversion)</a>
+## <a name="dataflow-storage-preview"></a>Stockage de dataflows (préversion)
 
 Par défaut, les données utilisées avec Power BI sont stockées dans le stockage interne offert par Power BI. Avec l’intégration entre les flux de données et Azure Data Lake Storage Gen2 (ADLS Gen2), vous pouvez stocker vos flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Pour plus d’informations, consultez [Flux de données et intégration à Azure Data Lake (préversion)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 

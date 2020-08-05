@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2020
+ms.date: 07/29/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c1d483b6a29d2463af05cd224ac6b03dd149eb33
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 69929ff48428ebf73044c296eabc419f8e442b3b
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252886"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411954"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Utilisation d’outils externes dans Power BI Desktop (préversion)
 
@@ -42,8 +42,6 @@ Les outils externes peuvent se connecter au jeu de données Power BI Desktop (
 * Les [perspectives](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular) permettant de définir des vues des métadonnées du jeu de données qui soient ciblées et propres à un domaine d’entreprise
 
 La gestion des traductions de métadonnées à l’aide d’outils externes est possible, mais elle n’est pas prise en charge dans cette préversion. Si les paramètres régionaux de l’utilisateur actuel sont des paramètres régionaux traduits, la modification d’objets dans la liste de champs ne fonctionnera pas correctement avec la version actuelle de Power BI Desktop. 
-
-Il existe un problème connu qui se produit lorsque vous générez des rapports à partir de modèles pour lesquels des groupes de calculs sont définis. Si le groupe de calcul définit la mise en forme dynamique selon le calcul ou la mesure sélectionnés, cette mise en forme sera disponible uniquement dans les visuels de table, de matrice et de carte.
 
 Toutes les métadonnées du jeu de données [Modèle d’objet tabulaire](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) sont accessibles en lecture seule. En outre, les objets qui ne figurent pas dans la liste de l’article [Modèle d’objet tabulaire](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) ne peuvent pas encore faire l’objet de modifications dans l’instance Power BI Desktop Analysis Services.
 
@@ -134,9 +132,9 @@ Les fichiers de cet emplacement spécifié avec l’extension **.pbitool.json** 
 
 Vous pouvez désactiver les outils externes à l’aide de **stratégies de groupe** ou en modifiant le Registre, ce qui est similaire au processus de désactivation des **visuels personnalisés**.
 
-    Registry key: ```Software\Policies\Microsoft\Power BI Desktop\```
+    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
 
-    Registry value: ```EnableExternalTools```
+    Registry value: *EnableExternalTools*
 
 La valeur 1 (décimale) active l’utilisation des outils externes dans Power BI (il s’agit de la valeur par défaut).
 
