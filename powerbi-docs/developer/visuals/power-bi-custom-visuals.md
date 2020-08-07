@@ -1,6 +1,6 @@
 ---
 title: Visuels dans Power BI
-description: Visualisations personnalisées dans Power BI
+description: Cet article décrit les visuels Power BI personnalisés
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 01/03/2019
+ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e9dc53eb3f49a1ef62e4e3539ac7eb6d92b317af
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
+ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561636"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87538007"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
 Power BI est fourni avec de nombreux visuels Power BI prêts à l’emploi. Ces visuels sont disponibles dans le volet de visualisation de [Power BI Desktop](https://powerbi.microsoft.com/desktop/) et du [service Power BI](https://app.powerbi.com), et peuvent être utilisés pour la création et la modification de contenu Power BI.
 
-![visualisations](media/power-bi-custom-visuals/power-bi-visualizations.png)
+![Capture d’écran du volet de visualisation Power BI tel qu’il apparaît dans Power BI Desktop et le service Power BI.](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
 De nombreux autres visuels Power BI sont disponibles à partir de Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) ou par le biais de Power BI. Ces visuels sont créés par Microsoft et les partenaires Microsoft, et sont testés et validés par l’équipe de validation AppSource.
 
@@ -38,6 +38,11 @@ Pour restaurer les visuels Power BI par défaut dans le volet de visualisation,
 ## <a name="appsource-power-bi-visuals"></a>Visuels Power BI AppSource
 
 Les membres de la communauté et Microsoft mettent à disposition du public leurs visuels Power BI et les publient sur [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous pouvez télécharger ces visuels et les ajouter à vos rapports Power BI. Microsoft a testé et approuvé ces visuels Power BI en termes de fonctionnalité et de qualité.
+
+>[!NOTE]
+>* En utilisant des visuels Power BI créés avec notre kit SDK, vous pouvez être amené à importer ou envoyer des données depuis/vers des services tiers ou autres situés en dehors de la zone géographique, de la limite de conformité ou de l’instance de cloud national de votre locataire Power BI.
+>* Les visuels certifiés Power BI sont des visuels d’AppSource qui ont fait l’objet de tests supplémentaires pour vérifier qu’ils n’accèdent pas à des services ou ressources externes.
+>* Une fois importés à partir d’AppSource, les visuels Power BI peuvent être mis à jour automatiquement sans aucun autre préavis.
 
 ### <a name="what-is-appsource"></a>Présentation d’AppSource
 
@@ -74,10 +79,17 @@ Si vous êtes un développeur web et que vous souhaitez créer votre propre visu
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Si vous êtes développeur, commencez par le tutoriel [Développement d’un visuel Power BI](custom-visual-develop-tutorial.md).
+>[!div class="nextstepaction"]
+>[Développer un visuel Power BI](custom-visual-develop-tutorial.md)
 
-* Découvrez la [structure d’un projet de visuels Power BI](visual-project-structure.md).
+>[!div class="nextstepaction"]
+>[Structure de projet des visuels Power BI](visual-project-structure.md)
 
-* Découvrez la [marche à suivre pour les visuels Power BI](guidelines-powerbi-visuals.md).
+>[!div class="nextstepaction"]
+>[Marche à suivre pour les visuels Power BI](guidelines-powerbi-visuals.md)
 
-D’autres questions ? Consultez la page [Questions fréquentes sur les visuels Power BI](power-bi-custom-visuals-faq.md) ou contactez la [communauté Power BI](https://community.powerbi.com/).
+>[!div class="nextstepaction"]
+>[Forum aux questions](power-bi-custom-visuals-faq.md)
+
+>[!div class="nextstepaction"]
+>[Communauté Power BI](https://community.powerbi.com/)

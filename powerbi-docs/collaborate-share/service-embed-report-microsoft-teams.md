@@ -9,19 +9,28 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
-ms.openlocfilehash: 68459deb29c59af3b9e2b185d54cf4e523d555d8
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 07/31/2020
+ms.openlocfilehash: 53126fe044f65740b9dac072422f749312b960da
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252564"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478012"
 ---
 # <a name="embed-power-bi-content-in-microsoft-teams"></a>Incorporer du contenu Power BI dans Microsoft Teams
 
 Vous pouvez facilement incorporer des rapports Power BI interactifs dans les canaux et conversations Microsoft Teams. 
 
-Pour plus d’informations sur la façon dont Power BI et Teams collaborent et notamment pour connaître les conditions que vous devez remplir, consultez [Collaborer dans Microsoft Teams avec Power BI](service-embed-report-microsoft-teams.md).
+## <a name="requirements"></a>Configuration requise
+
+Pour utiliser l’onglet **Power BI** dans Microsoft Teams, vérifiez les éléments suivants :
+
+- Microsoft Teams a l’onglet **Power BI**.
+- Pour ajouter un rapport dans Microsoft Teams avec l’onglet **Power BI**, vous disposez au moins du rôle Lecteur dans l’espace de travail qui héberge le rapport. Pour plus d’informations sur les différents rôles, consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces).
+- Pour afficher le rapport sous l’onglet **Power BI** dans Microsoft Teams, les utilisateurs doivent être autorisés à visualiser le rapport.
+- Les utilisateurs doivent être des utilisateurs de Microsoft Teams ayant accès aux canaux et aux conversations.
+
+Consultez [Collaborer dans Microsoft Teams avec Power BI](service-embed-report-microsoft-teams.md) pour obtenir des informations générales sur la façon dont Power BI et Teams fonctionnent ensemble et sur d’autres exigences.
 
 ## <a name="embed-a-report-in-teams"></a>Incorporer un rapport dans Teams
 

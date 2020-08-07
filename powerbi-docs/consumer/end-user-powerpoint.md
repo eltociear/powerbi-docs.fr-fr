@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: d49d92261b141a66021bb0809c214e712bd687c8
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 3707399d21d15b16236e0e33da6c264fb6e364b4
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263733"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768968"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
@@ -104,7 +104,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Certains rapports ne peuvent pas être exportés. Il s’agit des tables suivantes :
     - Les rapports qui appartiennent à un utilisateur externe à votre domaine de locataire Power BI, par exemple un rapport appartenant à une personne extérieure à votre organisation et partagé avec vous.
     - Si vous partagez un tableau de bord avec une personne externe à votre organisation, et donc un utilisateur qui n’est pas dans votre locataire Power BI, cet utilisateur ne peut pas exporter les rapports associés du tableau de bord partagé vers PowerPoint. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec david@cohowinery.com. david@cohowinery.com ne peut cependant pas exporter les rapports associés vers PowerPoint.
-    - Les rapports contenant plus de 30 pages de rapport. Seules les 30 premières pages seront exportées.
+    - Rapports contenant plus de 50 pages de rapport. Seules les 50 premières pages sont exportées.
     - Les rapports exportés vers des versions antérieures de PowerPoint.
     - Rapports dont le traitement prend plus d’une heure. 
     - Pages de rapport dont le chargement prend plus de 6 minutes. 

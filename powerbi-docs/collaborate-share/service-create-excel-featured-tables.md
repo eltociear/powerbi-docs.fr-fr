@@ -6,24 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e39d2fe11a58691b259784c292fec6e5ee6cb322
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253998"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478081"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Définir des tables recommandées dans Power BI Desktop (préversion)
 
 Dans la galerie Types de données d’Excel, vous pouvez rechercher des données à partir des *tables recommandées* dans vos jeux de données Power BI. Dans cet article, vous allez apprendre à définir des tables comme étant *recommandées* dans vos jeux de données. Ces étiquettes permettent aux utilisateurs d’ajouter plus facilement des données d’entreprise à leurs feuilles Excel. Voici les étapes de base de la définition et du partage de tables recommandées.
 
-1. Vous [promouvez ou certifiez des jeux de données dans Power BI](../connect-data/service-datasets-promote.md). 
 1. Vous identifiez les tables recommandées dans vos jeux de données dans Power BI Desktop (cet article)
 1. Vous enregistrez ces jeux de données avec les tables recommandées dans l’un des nouveaux espaces de travail. Les créateurs de rapports peuvent créer des rapports avec ces tables recommandées. 
 1. Le reste de l’organisation peut se connecter à ces tables recommandées, appelées *types de données* dans Excel, pour disposer de données pertinentes et actualisables. L’article [Accéder aux tables recommandées Power BI dans Excel (préversion)](service-excel-featured-tables.md) décrit la consommation de ces tables recommandées dans Excel.
+
+> [!NOTE]
+> Vous pouvez [promouvoir ou certifier des jeux de données dans Power BI](../connect-data/service-datasets-promote.md). Cela s’appelle l’*approbation*. Excel hiérarchise les tables des jeux de données approuvés dans la galerie Types de données. Excel liste d’abord les tableaux recommandés dans les jeux de données certifiés, puis les tables des jeux de données promus. Viennent ensuite les tables recommandées des jeux de données approuvés. 
 
 ## <a name="turn-on-the-featured-table-preview"></a>Activer l’aperçu de la table recommandée
 
@@ -31,6 +33,8 @@ Dans la galerie Types de données d’Excel, vous pouvez rechercher des données
 2. Activez la case à cocher **Tables recommandées**.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Option Aperçu des tables recommandées":::
+
+3. Redémarrez Power BI Desktop.
 
 ## <a name="select-a-table"></a>Sélectionner une table
 

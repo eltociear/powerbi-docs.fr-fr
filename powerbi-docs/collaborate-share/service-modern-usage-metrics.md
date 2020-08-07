@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/22/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7c8c1744c8ecbbf170ae073d2e302fe55faea55b
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 9aad77f162a49697466899afce44284c7f063746
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953027"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478150"
 ---
-# <a name="monitor-usage-metrics-in-the-new-workspace-experience"></a>Monitoring des métriques d’utilisation dans l’espace de travail nouvelle expérience
+# <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail (préversion)
 
 De cette manière, vous pouvez démontrer votre impact et hiérarchiser vos efforts. Vos mesures d’utilisation peuvent indiquer qu’un de vos rapports est utilisé quotidiennement par un segment important de l’organisation ou que vous avez créé un tableau de bord qui n’est pas du tout consulté. Ce type de retour est essentiel car il guide vos efforts de travail.
 
@@ -81,7 +81,7 @@ Le rapport de métriques d’utilisation amélioré comporte les pages suivantes
 
 | **Page** | **Métrique** | **Description** |
 | --- | --- | --- |
-| Utilisation des rapports | Vues de rapport | Une vue de rapport est enregistrée chaque fois qu’un utilisateur ouvre un rapport. Notez que la définition d’une vue diffère de celle des rapports de métriques d’utilisation précédents. Le fait de changer de page n’est plus considéré comme une vue supplémentaire. |
+| Utilisation des rapports | Vues de rapport | Une vue de rapport est enregistrée chaque fois qu’un utilisateur ouvre un rapport. Notez que la définition d’une vue diffère de celle des rapports de métriques d’utilisation précédents. Le fait de changer de page n’est plus considéré comme une vue supplémentaire. Certaines activités comme le partage et l’épinglage ne sont plus prises en compte dans les métriques d’utilisation.|
 | Utilisation des rapports | Visiteurs uniques | Un visiteur est une personne qui a ouvert le rapport au moins une fois au cours de la période (en fonction du compte d’utilisateur AAD). |
 | Utilisation des rapports | Tendance des vues | La tendance des vues reflète les modifications du nombre de vues au fil du temps. Elle compare la première moitié de la période sélectionnée à la seconde moitié. |
 | Utilisation des rapports | Segment de date | Vous pouvez modifier la période sur la page Utilisation du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires. Dans le coin inférieur gauche de la page Utilisation du rapport, vous pouvez déterminer la date la plus ancienne et la plus récente à laquelle les données d’utilisation sont disponibles pour le rapport sélectionné. |

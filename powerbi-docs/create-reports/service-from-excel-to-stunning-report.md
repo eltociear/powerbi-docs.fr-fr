@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/23/2020
+ms.date: 07/30/2020
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: f901dcad1743383b85db3935ede8fddf8a4ed492
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: ccf8b5fa8f1c4d18a25767ff11f035304b339de0
+ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87251782"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87478127"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Tutoriel : Générer un rapport à partir d’un classeur Excel dans le service Power BI vers Microsoft Teams
 Votre responsable souhaite voir un rapport sur vos derniers chiffres de ventes et bénéfices d’ici la fin de la journée. Toutefois, vos données les plus récentes sont stockées dans différents fichiers et systèmes tiers sur votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des visuels et mettre en forme un rapport. Vous êtes donc inquiet.
@@ -204,8 +204,6 @@ Vous pouvez également partager des rapports et des tableaux de bord directement
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Prise en main du service Power BI](../fundamentals/service-get-started.md)
-* [Prise en main de Power BI Desktop](../fundamentals/desktop-getting-started.md)
-* [Fondamentaux pour les concepteurs dans le service Power BI](../fundamentals/service-basic-concepts.md)
+* Maintenant que vous avez créé un rapport de base dans le service Power BI, que diriez-vous de créer un rapport dans Power BI Desktop ? Essayez le tutoriel [Générer un rapport exceptionnel à partir d’un classeur Excel dans Power BI Desktop](desktop-excel-stunning-report.md).
 
 D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).

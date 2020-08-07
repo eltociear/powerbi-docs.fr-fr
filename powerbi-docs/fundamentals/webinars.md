@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 08/03/2020
 ms.author: kfollis
-ms.openlocfilehash: 34c46f97128d1229f46eeed254bdecee58a32aaf
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: d7b36d7ecbbf9d046c02f275ca83d7f8c8a196d5
+ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409464"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87768398"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) est un fournisseur qui travaille avec Chauncy Freels et aide à gérer cette liste de webinaires"
@@ -27,6 +27,10 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 ## <a name="featured-webinars"></a>Webinaires proposés
 
 Commencez avec ces webinaires populaires à la demande
+
+**Boost User Satisfaction with Best Practices for Managing BI Content**  
+par Nimrod Shalit  
+[Regarder maintenant](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
 
 **From Insight to Action: Driving a Data Culture with Power BI**  
 par Arun Ulagaratchagan et Amir Netz  

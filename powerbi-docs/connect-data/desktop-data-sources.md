@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d20f9aa5311d8ee96246ab8b3ed832330742973
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223933"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87411977"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -116,7 +116,7 @@ La catégorie **Power Platform** fournit les connexions de données suivantes :
 * Jeux de données Power BI
 * Dataflows Power BI
 * Common Data Service
-* Dataflows Power Platform
+* Dataflows Power Platform (Bêta)
 
 L’image suivante représente la fenêtre **Obtenir des données** pour **Power Platform**.
 
@@ -133,6 +133,7 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -171,21 +172,19 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Marketo (bêta)
 * Mixpanel (bêta)
 * Planview Enterprise One - PRM (bêta)
-* Planview Projectplace (bêta)
 * QuickBooks Online (bêta)
 * Smartsheet
 * SparkPost (bêta)
 * SweetIQ (bêta)
 * Planview Enterprise One – CTM (bêta)
 * Twilio (bêta)
-* tyGraph (bêta)
-* Webtrends (bêta)
 * Zendesk (bêta)
 * Asana (bêta)
 * Dynamics 365 Customer Insights (bêta)
 * Emigo Data Source
 * Entersoft Business Suite (bêta)
-* FactSet Analytics (Beta)
+* FactSet Analytics
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (bêta)
 * Microsoft Graph Security (Bêta)
@@ -218,7 +217,10 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (bêta)
+* Automation Anywhere (bêta)
 * Solver
+* Cherwell (bêta)
 * Cognite Data Fusion (bêta)
 * FHIR
 * Information Grid (bêta)
@@ -233,6 +235,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (bêta)
 * Vena (bêta)
+* Vessel Insight (bêta)
 * Workforce Dimensions (bêta)
 * Zucchetti HR Infinity (Beta)
 * Requête vide

@@ -3,17 +3,17 @@ title: Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dan
 description: Cet article montre comment incorporer un rapport Power BI Report Server dans un iFrame sur SharePoint Server.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 08/12/2019
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 4e7616ec3ce6552130848bc0508bf8b9ac8ac965
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4f6382b78a02750c76987de4fa911eb8c7d33b50
+ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762597"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87412000"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 
@@ -24,7 +24,7 @@ Dans cet article, vous allez apprendre à incorporer un rapport Power BI Report
 ## <a name="prerequisites"></a>Prérequis
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installé et configuré
 * [Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md) installé
-* Un environnement [SharePoint](https://docs.microsoft.com/sharepoint/install/install) installé et configuré
+* Un environnement [SharePoint 2013, 2016 ou 2019 ](https://docs.microsoft.com/sharepoint/install/install) installé et configuré.
 * Internet Explorer 11 est pris en charge uniquement si le mode de document est défini sur le mode IE11 (Edge) ou si vous utilisez SharePoint Online. Vous pouvez utiliser d’autres navigateurs pris en charge avec SharePoint localement et SharePoint Online.
 
 ## <a name="create-the-power-bi-report-url"></a>Créer l’URL d’un rapport Power BI
