@@ -10,12 +10,12 @@ ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7362eb683dae6318dc0e64de68afb8a8b57d62c6
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: bfda795e02ef53188c5125bc2f0674e859ebd450
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162122"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878810"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -76,7 +76,7 @@ Vous pouvez également installer une application d’organisation en suivant un 
 
 **Sur votre ordinateur** 
 
-Quand vous suivez le lien de l’e-mail, le service Power BI ([https://powerbi.com](https://app/powerbi.com)) ouvre l’application dans votre navigateur. 
+Quand vous suivez le lien de l’e-mail, le service Power BI ([https://app.powerbi.com](https://app.powerbi.com)) ouvre l’application dans votre navigateur. 
 
 **Sur votre appareil mobile Android ou iOS** 
 

@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: aed8317c36cdd118b03bff2db93788f493ac9ad2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 96e42eb8a4d958eb4ee090cedf12d2ebfe79f941
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380522"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878606"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Ajouter la prise en charge des signets pour les visuels Power BI
 
@@ -49,9 +49,9 @@ Le visuel doit restaurer les valeurs de filtre afin d’afficher l’état corre
 
 Si votre visuel interagit avec d’autres visuels à l’aide de [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), vous pouvez ajouter des signets de deux manières :
 
-* Si le visuel n’a pas encore utilisé [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), vous pouvez employer la méthode `FilterManager.restoreSelectionIds`.
+* Si le visuel n’a pas encore utilisé [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts), vous pouvez employer la méthode `FilterManager.restoreSelectionIds`.
 
-* Si le visuel utilise déjà [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) pour gérer les sélections, vous devez employer la méthode `applySelectionFromFilter` dans l’instance de `InteractivityService`.
+* Si le visuel utilise déjà [InteractivityService](https://github.com/microsoft/powerbi-visuals-utils-interactivityutils/blob/master/src/interactivityService.ts) pour gérer les sélections, vous devez employer la méthode `applySelectionFromFilter` dans l’instance de `InteractivityService`.
 
 #### <a name="use-iselectionmanagerregisteronselectcallback"></a>Utiliser ISelectionManager.registerOnSelectCallback
 

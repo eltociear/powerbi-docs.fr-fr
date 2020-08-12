@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 03/13/2019
-ms.openlocfilehash: 3cf415cbd14da28d523a042fdf4099fe464a4a8b
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: 95d2cec8cf731c403e204beeb6c013c2cfe0ce1d
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739181"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878582"
 ---
 # <a name="power-bi-visuals-api-changelog"></a>Journal des modifications de l’API de visuels Power BI
 Cette page contient un récapitulatif rapide des versions de l’API. Les versions répertoriées ici sont considérées comme stables et ne changeront pas.
@@ -91,7 +91,7 @@ Cette page contient un récapitulatif rapide des versions de l’API. Les versio
 
 ## <a name="api-v162"></a>API v1.6.2
 * Prend en charge le **[mode d’édition](./advanced-edit-mode.md)** pour l’entrée en mode d’édition dans le visuel
-* Prend en charge les **[visuels Power BI R interactifs (HTML)](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** , sur la base du code HTML
+* Prend en charge les **[visuels Power BI R interactifs (HTML)](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** , sur la base du code HTML
 
 ## <a name="api-v150"></a>API v1.5.0
 * Prend en charge **[Autoriser les interactions](./visuals-interactions.md)** pour l’interactivité visuelle
@@ -105,7 +105,7 @@ Cette page contient un récapitulatif rapide des versions de l’API. Les versio
 ## <a name="api-v120"></a>API v1.2.0
 * Ajoute **colorPalette** pour gérer les couleurs utilisées sur votre visuel.
 * Prend en charge la **sélection multiple** : selectionManager peut accepter un tableau de `SelectionId`.
-* Prend en charge les **[visuels R](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** à l’aide de scripts R
+* Prend en charge les **[visuels R](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** à l’aide de scripts R
 
 ## <a name="api-v110"></a>API v1.1.0
 * Prend en charge le visuel de débogage dans un iFrame

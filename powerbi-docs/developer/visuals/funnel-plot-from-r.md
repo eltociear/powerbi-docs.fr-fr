@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: cbc8f6366e23aa7fbfb447bbfe56909c09f3e3fd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 2cc37d1296d7f170bf8c6280465e7a3f1aa52e33
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354475"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878697"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.
@@ -75,7 +75,7 @@ Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](h
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
 > [!NOTE]
-> Pour télécharger, consultez [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3-RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/).
+> Pour télécharger, consultez [PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) et [code source](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/).
 
 ## <a name="make-r-based-visual-improvements"></a>Améliorer les visuels basés sur R
 
@@ -274,7 +274,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 * Chaque visuel R applique l’opérateur `unique` à sa table d’entrée. Pour éviter la suppression des lignes identiques, vous pouvez ajouter un champ d’entrée supplémentaire avec un ID unique et l’ignorer dans le code R.   
 
-* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](/PowerBI-visuals/docs/step-by-step-lab/creating-a-custom-visual/#testing-the-custom-visual) au lieu de le réempaqueter avec la commande `pbiviz package`.
+* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](/power-bi/developer/visuals/custom-visual-develop-tutorial/) au lieu de le réempaqueter avec la commande `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galerie de widgets HTML
 Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidgets.org/) que vous pouvez utiliser pour votre prochain visuel. Pour faciliter les choses, nous avons créé un [dépôt de projets de visuels](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) avec plus de 20 visuels HTML interactifs !
