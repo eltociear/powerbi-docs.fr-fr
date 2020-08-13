@@ -114,6 +114,8 @@
               href: service-admin-premium-multi-geo.md
             - name: Apporter vos propres clés de chiffrement
               href: service-encryption-byok.md
+            - name: Utiliser des clés gérées par le client
+              href: service-encryption-customer-managed-keys.md
             - name: Redémarrer une capacité Premium
               href: service-admin-premium-restart.md
             - name: Connectivité des jeux de données avec le point de terminaison XMLA
