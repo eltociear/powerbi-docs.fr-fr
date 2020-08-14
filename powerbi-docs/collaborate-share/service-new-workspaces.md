@@ -6,20 +6,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 08/07/2020
 ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 77de9608978379cee83236b0c362bd2d7d57d5c6
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 56dd9e07e7c0647e7f92cc5d701b260483e2fbdf
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120392"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049273"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
-Les *espaces de travail* sont des espaces de collaboration qui vous permettent de créer des collections de tableaux de bord, de rapports, de jeux de données et de rapports paginés avec vos collègues. La nouvelle expérience de l’espace de travail vous permet de mieux gérer l’accès au contenu. Cet article décrit les nouveaux espaces de travail, et en quoi ils diffèrent des espaces de travail classiques.  Comme avec les espaces de travail classiques, vous les utilisez pour créer et distribuer des applications. Prêt à créer un espace de travail ? Lisez [Créer une nouvelle expérience d’espace de travail](service-create-the-new-workspaces.md).
+Les *espaces de travail* sont des espaces de collaboration qui vous permettent de créer des collections de tableaux de bord, de rapports, de jeux de données et de rapports paginés avec vos collègues. La nouvelle expérience de l’espace de travail vous permet de mieux gérer l’accès au contenu. Cet article décrit les nouveaux espaces de travail, et en quoi ils diffèrent des espaces de travail classiques.  Comme avec les espaces de travail classiques, vous les utilisez pour créer et distribuer des applications. 
+
+Prêt à créer un espace de travail ? Lisez [Créer une nouvelle expérience d’espace de travail](service-create-the-new-workspaces.md).
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Nouvelle expérience d’espace de travail Power BI":::
 
@@ -86,8 +88,10 @@ Si l’un des nouveaux espaces de travail se trouve dans une capacité partagée
 
 Lorsque l’espace de travail se trouve dans une capacité Power BI Premium, les utilisateurs avec le rôle Lecteur peuvent accéder à l’espace de travail même s’ils n’ont pas de licence Power BI Pro. Toutefois, si vous attribuez à ces utilisateurs un rôle supérieur comme Administrateur, Membre ou Contributeur, ils seront invités à lancer la version d’essai de Power BI Pro pour accéder à l’espace de travail. Si vous souhaitez que les utilisateurs sans licence Pro utilisent le rôle Lecteur, assurez-vous qu’ils n’ont pas d’autres rôles dans l’espace de travail, en tant qu’individus ou en tant que partie d’un groupe d’utilisateurs.
 
+La publication de rapports dans la nouvelle expérience d’espace de travail est soumise à une application plus stricte des règles de gestion des licences existantes. Si vous tentez de publier à partir de Power BI Desktop ou d’autres outils clients sans licence Pro, vous voyez l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail ».
+
 > [!NOTE]
-> La publication de rapports dans la nouvelle expérience d’espace de travail est soumise à une application plus stricte des règles de gestion des licences existantes. Si vous tentez de publier à partir de Power BI Desktop ou d’autres outils clients sans licence Pro, vous voyez l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail ».
+> Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence gratuite. Pour plus d’informations sur les licences, consultez [Power BI pour les clients du gouvernement des États-Unis](../admin/service-govus-overview.md).
 
 ### <a name="guest-users"></a>Utilisateurs invités
 
@@ -95,7 +99,9 @@ Par défaut, les [utilisateurs invités B2B Azure AD](../admin/service-admin-azu
 
 ### <a name="administering-new-workspace-experience-workspaces"></a>Gérer des espaces de travail (nouvelle expérience d’espace de travail)
 
-L’administration des espaces de travail avec la nouvelle expérience d’espace de travail se trouve désormais dans le portail d’administration Power BI. Les administrateurs Power BI décident de qui, dans une organisation, peut créer des espaces de travail et distribuer des applications. Les administrateurs peuvent voir l’état de tous les espaces de travail de leur organisation. Ils peuvent également gérer et restaurer les espaces de travail. Pour en savoir plus sur l’[administration du nouvel espace de travail](../admin/service-admin-portal.md#create-the-new-workspaces), consultez l’article du portail d’administration.
+L’administration des espaces de travail avec la nouvelle expérience d’espace de travail se trouve désormais dans le portail d’administration Power BI. Les administrateurs Power BI décident de qui, dans une organisation, peut créer des espaces de travail et distribuer des applications. En savoir plus sur la [gestion de la capacité des utilisateurs à créer des espaces de travail](../admin/service-admin-portal.md#create-the-new-workspaces) dans l’article « Portail Administrateur ». 
+
+Les administrateurs peuvent afficher l’état de tous les espaces de travail de leur organisation. Ils peuvent gérer, récupérer et même supprimer des espaces de travail. En savoir plus sur la [gestion des espaces de travail eux-mêmes](../admin/service-admin-portal.md#workspaces) dans l’article « Portail Administrateur ».
 
 ### <a name="auditing"></a>Audit
 

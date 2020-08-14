@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 08/04/2020
 ms.author: maggies
-ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 00c00ca7bbd7ad3f901c98f44a2900f332e3616a
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80979842"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837609"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
-Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
+Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services. Certaines sources de données sont prises en charge dans Power BI Desktop, optimisées pour Power BI Report Server, mais ne sont pas optimisées pour les rapports Power BI publiés dans Power BI Report Server. Consultez la liste suivante pour vérifier les sources de données prises en charge dans les deux emplacements.
 
 Ces sources de données sont spécifiques des rapports Power BI utilisés dans Power BI Report Server. Pour plus d’informations sur les sources de données prises en charge avec des rapports paginés (.rdl), consultez [Sources de données prises en charge par Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
@@ -26,9 +26,7 @@ Ces sources de données sont spécifiques des rapports Power BI utilisés dans P
 
 ## <a name="list-of-supported-data-sources"></a>Liste des sources de données prises en charge
 
-D’autres sources de données non répertoriées sur la liste peuvent également fonctionner.
-
-| **Paramètres de la** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
+| **Source de données** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
 | --- | --- | --- | --- |
 | Base de données SQL Server |Oui |Oui |Oui |
 | SQL Server Analysis Services |Oui |Oui |Oui |
@@ -36,7 +34,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Azure SQL Data Warehouse |Oui |Oui |Oui |
 | Excel |Oui |Oui |Non |
 | Base de données Access |Oui |Oui |Non |
-| Active Directory |Oui |Oui |Non |
+| Active Directory |Oui |Oui |Non |
 | Amazon Redshift |Oui |Non |Non |
 | Stockage Blob Azure |Oui |Oui |Non |
 | Azure Data Lake Store |Oui |Non |Non |
@@ -57,9 +55,9 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Flux OData |Oui |Oui |Non |
 | ODBC |Oui |Oui |Non |
 | OLE DB |Oui |Oui |Non |
-| Base de données Oracle |Oui |Oui |Oui |
+| Oracle Database |Oui |Oui |Oui |
 | Base de données PostgreSQL |Oui |Oui |Non |
-| service Power BI |Non |Non |Non |
+| Service Power BI |Non |Non |Non |
 | Script R |Oui |Non |Non |
 | Objets Salesforce |Oui |Non |Non |
 | Rapports Salesforce |Oui |Non |Non |
@@ -80,11 +78,11 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Azure HDInsight Spark (bêta) |Oui |Non |Non |
 | Common Data Service (bêta) |Oui |Non |Non |
 | comScore Digital Analytix (bêta) |Oui |Non |Non |
-| Dynamics 365 pour Insights client (bêta) |Oui |Non |Non |
+| Dynamics 365 pour Customer Insights (bêta) |Oui |Non |Non |
 | Dynamics 365 for Financials (bêta) |Oui |Non |Non |
 | GitHub (bêta) |Oui |Non |Non |
 | Google BigQuery (bêta) |Oui |Non |Non |
-| Base de données Informix IBM (bêta) |Oui |Non |Non |
+| Base de données IBM Informix (bêta) |Oui |Non |Non |
 | IBM Netezza (bêta) |Oui |Non |Non |
 | Kusto (bêta) |Oui |Non |Non |
 | MailChimp (bêta) |Oui |Non |Non |
@@ -116,14 +114,14 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 
 Power BI Report Server ne prend pas en charge l’authentification OAuth pour l’actualisation de modèle. Certaines sources de données comme les bases de données Excel ou Access utilisent une étape distincte (p.ex., Fichier ou Web) pour se connecter aux données.
 
-| **Paramètres de la** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
+| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
 | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |
 | SQL Server Analysis Services |Non |Non |Oui |Oui |
 | Web |Oui |Non |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |
-| Active Directory |Non |Non |Oui |Oui |
+| Active Directory |Non |Non |Oui |Oui |
 | Amazon Redshift |Non |Non |Non |Non |
 | Stockage Blob Azure |Oui |Oui |Non |Non |
 | Azure Data Lake Store |Non |Non |Non |Non |
@@ -143,9 +141,9 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Flux OData |Oui |Oui |Oui |Oui |
 | ODBC |Oui |Non |Oui |Oui |
 | OLE DB |Oui |Non |Oui |Oui |
-| Base de données Oracle |Non |Non |Oui |Oui |
+| Oracle Database |Non |Non |Oui |Oui |
 | Base de données PostgreSQL |Non |Non |Oui |Non |
-| service Power BI |Non |Non |Non |Non |
+| Service Power BI |Non |Non |Non |Non |
 | Script R |Non |Non |Non |Non |
 | Objets Salesforce |Non |Non |Non |Non |
 | Rapports Salesforce |Non |Non |Non |Non |
@@ -163,11 +161,11 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Azure HDInsight Spark (bêta) |Non |Non |Non |Non |
 | Common Data Service (bêta) |Non |Non |Non |Non |
 | comScore Digital Analytix (bêta) |Non |Non |Non |Non |
-| Dynamics 365 pour Insights client (bêta) |Non |Non |Non |Non |
+| Dynamics 365 pour Customer Insights (bêta) |Non |Non |Non |Non |
 | Dynamics 365 for Financials (bêta) |Non |Non |Non |Non |
 | GitHub (bêta) |Non |Non |Non |Non |
 | Google BigQuery (bêta) |Non |Non |Non |Non |
-| Base de données Informix IBM (bêta) |Non |Non |Non |Non |
+| Base de données IBM Informix (bêta) |Non |Non |Non |Non |
 | IBM Netezza (bêta) |Non |Non |Non |Non |
 | Kusto (bêta) |Non |Non |Non |Non |
 | MailChimp (bêta) |Non |Non |Non |Non |
@@ -196,13 +194,13 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 
 Power BI Report Server ne prend pas en charge l’authentification OAuth pour DirectQuery.
 
-| **Paramètres de la** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
+| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
 | --- | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |Oui |
 | SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |Non |
-| Base de données Oracle |Non |Non |Oui |Oui |Oui |
+| Oracle Database |Non |Non |Oui |Oui |Oui |
 | Serveur SAP Business Warehouse |Non |Non |Oui |Non |Non |
 | Base de données SAP HANA |Non |Non |Oui |Oui |Oui** |
 | Teradata |Non |Non |Oui |Oui |Oui |
@@ -210,6 +208,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 ** SAP HANA prend en charge DirectQuery avec l’authentification Windows intégrée uniquement quand vous l’utilisez en tant que base de données relationnelle dans le fichier Power BI Desktop publié (.pbix).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Maintenant que vous êtes connecté à votre source de données, [créez un rapport Power BI](quickstart-create-powerbi-report.md) à l’aide des données de cette source de données.
+
+[Sources de données pour les rapports de Power BI[(../connect-data/power-bi-data-sources.md) dans le service Power BI Maintenant que vous vous êtes connecté à votre source de données, [créez un rapport Power BI](quickstart-create-powerbi-report.md) à l’aide des données de cette source de données.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

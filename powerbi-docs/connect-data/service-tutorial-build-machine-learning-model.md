@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/29/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2d65b63238009c5a743d83a13d596f36aad4b2a3
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9f25c9ffc294a1733a3dba5818dc00bd23124837
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281688"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878889"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Tutoriel : Créer un modèle Machine Learning dans Power BI
 
@@ -154,6 +154,26 @@ L’application d’un modèle de prédiction binaire ajoute quatre colonnes ave
 Une fois l’actualisation du dataflow terminée, vous pouvez sélectionner l’entité **Online Visitors enriched Purchase Intent Prediction** pour visualiser les résultats.
 
 ![Afficher les résultats](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
+
+Vous pouvez également appeler n’importe quel modèle AutoML dans l’espace de travail, directement à partir de l’Éditeur Power Query dans votre flux de données. Pour accéder aux modèles Azure ML, sélectionnez le bouton Modifier pour l’entité que vous souhaitez enrichir avec des insights de votre modèle Azure ML, comme le montre l’image suivante.
+
+![Modifier l’entité](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-22.png)
+
+La sélection du bouton Modifier ouvre l’éditeur Power Query pour les entités de votre flux de données. Sélectionnez le bouton Insights IA dans le ruban.
+
+![Insights IA](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-23.png)
+
+ Sélectionnez le dossier Modèles Machine Learning Power BI dans le menu du volet de navigation. Tous les modèles AutoML auxquels vous avez accès sont répertoriés ici en tant que fonctions de Power Query. De plus, les paramètres d’entrée pour le modèle AutoML sont automatiquement mappés en tant que paramètres de la fonction Power Query correspondante. Notez que le mappage automatique des paramètres se produit uniquement si le nom et le type de données du paramètre sont identiques.
+ 
+Pour appeler un modèle AutoML, vous pouvez définir une des colonnes de l’entité sélectionnée en tant qu’entrée dans la liste déroulante. Vous pouvez également spécifier une valeur constante à utiliser comme entrée en basculant l’icône de la colonne à gauche de la boîte de dialogue d’entrée.
+
+![Explorateur de fonctions PQO](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-24.png)
+
+Sélectionnez Appliquer pour afficher la préversion de la sortie du modèle AutoML en tant que nouvelle colonne dans la table de l’entité. Vous voyez également l’appel de modèle comme étape appliquée pour la requête.
+
+![Afficher les résultats](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-25.png)
+
+Une fois que vous enregistrez votre flux de données, le modèle est appelé automatiquement lorsque ce flux de données est actualisé, pour toutes les lignes nouvelles ou mises à jour de la table de l’entité.
 
 ## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Utilisation de la sortie notée du modèle dans un rapport Power BI
 

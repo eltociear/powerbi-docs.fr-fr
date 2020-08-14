@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 08/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2c59cb593a236785346721cb5c3ac90c702c93ed
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: f778b4f0c6572084598eb07df0e89b7a30aed7b1
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252058"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091592"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Se connecter à une base de données Oracle avec Power BI Desktop
 Pour se connecter à une base de données Oracle avec Power BI Desktop, le logiciel client Oracle approprié doit être installé sur l’ordinateur exécutant Power BI Desktop. Le logiciel client Oracle que vous utilisez dépend de la version de Power BI Desktop que vous avez installée : 32 bits ou 64 bits. Il dépend également de votre version du serveur Oracle.
@@ -50,16 +50,20 @@ Une fois que vous avez installé le pilote du client Oracle correspondant, vous 
 2. Dans la fenêtre **Obtenir les de données** qui s’affiche, sélectionnez **Plus** (si nécessaire), sélectionnez **Base de données** > **Base de données Oracle**, puis sélectionnez **Se connecter**.
    
    ![Connexion à une base de données Oracle](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. Dans la boîte de dialogue **Base de données Oracle** qui s’affiche, indiquez le nom du **serveur**, puis sélectionnez **OK**. Si un identificateur de sécurité (SID) est nécessaire, vous pouvez le spécifier dans le format suivant : *Nom_serveur/SID*, où *SID* est le nom unique de la base de données. Si le format *Nom_serveur/SID* ne fonctionne pas, utilisez *Nom_serveur/Nom_service*, où *Nom_service* est l’alias que vous utilisez pour vous connecter.
+3. Dans la boîte de dialogue **Base de données Oracle** qui s’affiche, indiquez le nom du **serveur**, puis sélectionnez **OK**. Si un identificateur de sécurité (SID) est nécessaire, vous pouvez le spécifier dans le format suivant : *Nom_serveur/SID*, où *SID* est le nom unique de la base de données. Si le format *Nom_serveur/SID* ne fonctionne pas, utilisez *Nom_serveur/Nom_service*, où *Nom_service* est l’alias que vous utilisez pour vous connecter.
 
 
    ![Entrer le nom du serveur Oracle](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 
+   > [!NOTE]
+   > Si vous utilisez une base de données locale ou des connexions de base de données autonomes, vous devrez peut-être placer le nom du serveur entre guillemets pour éviter les erreurs de connexion. 
       
-3. Si vous voulez importer des données en utilisant une requête de base de données native, placez votre requête dans la zone **Instruction SQL**, qui apparaît quand vous développez la section **Options avancées** de la boîte de dialogue **Base de données Oracle**.
+4. Si vous voulez importer des données en utilisant une requête de base de données native, placez votre requête dans la zone **Instruction SQL**, qui apparaît quand vous développez la section **Options avancées** de la boîte de dialogue **Base de données Oracle**.
    
    ![Développer Options avancées](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
-4. Après avoir entré les informations de votre base de données Oracle dans la boîte de dialogue **Base de données Oracle** (et éventuellement des informations facultatives comme un SID ou une requête de base de données native), sélectionnez **OK** pour vous connecter.
+
+
+5. Après avoir entré les informations de votre base de données Oracle dans la boîte de dialogue **Base de données Oracle** (et éventuellement des informations facultatives comme un SID ou une requête de base de données native), sélectionnez **OK** pour vous connecter.
 5. Si la base de données Oracle exige des informations d’identification d’utilisateur de base de données, entrez-les dans la boîte de dialogue quand vous y êtes invité.
 
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3b4d7eb41e04a173f763dd09caf5fa94bfc444d4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: caccfdede32e91aa6265db0d38e26e96f8a7852c
+ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232649"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87878650"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Machine Learning automatisé dans Power BI
 
@@ -141,6 +141,10 @@ Pour appliquer le modèle Machine Learning, vous devez spécifier le nom de l’
 L’application du modèle ML crée deux nouvelles entités de dataflow qui contiennent les prédictions et des explications individualisées pour chaque ligne à laquelle elle attribue un score dans l’entité de sortie. Par exemple, si vous appliquez le modèle _PurchaseIntent_ à l’entité _OnlineShoppers_, la sortie génère les entités **PurchaseIntent enriched OnlineShoppers** et **OnlineShoppers enriched PurchaseIntent explanations**. Pour chaque ligne de l’entité enrichie, les **explications** sont réparties sur plusieurs lignes, en fonction de la caractéristique d’entrée. Une **ExplanationIndex** permet de mapper les lignes de l’entité d’explications enrichie avec celles de l’entité enrichie.
 
 ![Éditeur de requête](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+
+Vous pouvez également appliquer tout modèle Power BI AutoML à des entités dans n’importe quel flux de données dans le même espace de travail à l’aide des Insights IA dans l’explorateur de fonctions PQO. De cette façon, vous pouvez utiliser des modèles créés par d’autres dans le même espace de travail sans nécessairement être un propriétaire du flux de données qui a le modèle. Power Query Découvre tous les modèles de Power BI ML dans l’espace de travail et les expose en tant que fonctions Power Query dynamiques. Vous pouvez appeler ces fonctions en y accédant à partir du ruban dans l’Éditeur Power Query ou en appelant directement la fonction M.Cette fonctionnalité est actuellement uniquement prise en charge pour les flux de données Power BI et pour Power Query en ligne dans le service Power BI. Notez que cela est très différent de l’application des modèles ML dans un flux de données à l’aide de l’Assistant AutoML. Il n’existe aucune entité d’explications créée à l’aide de cette méthode et, sauf si vous êtes le propriétaire du flux de données, vous ne pouvez pas accéder aux rapports de formation du modèle ni reformer le modèle. Si le modèle source est modifié (en ajoutant ou en supprimant des champs d’entrée) ou si le modèle ou le flux de données source est supprimé, ce flux de données dépendant s’arrête.
+
+![Appliquer un modèle à l’aide de l’explorateur de fonctions PQO](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
 
 Une fois le modèle appliqué, AutoML garde vos prédictions à jour après chaque actualisation du dataflow.
 

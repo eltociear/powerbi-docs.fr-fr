@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/05/2020
 ms.author: davidi
-ms.openlocfilehash: 0bc6b844457f625d0287f2ec85f582a6ea874624
-ms.sourcegitcommit: 6d3a37eb636e1b71c7dcb9d1c3a9e495b78dec97
+ms.openlocfilehash: 6afc5dd36127390dd359d76fc8970d5ef6f7b590
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681856"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837563"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -94,7 +94,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | ODBC | Oui | Oui | Non | Oui | Oui |
 | OleDb | Oui | Oui | Non | Oui | Oui |
 | Oracle | Oui | Oui | Oui | Oui | Oui |
-| Paxata | Oui | Oui | Non | Oui | Non |
+| Paxata <sup>8</sup> | Oui | Oui | Non | Oui | Non |
 | PDF | Oui | Oui | Non | Oui | Non <sup>4</sup> |
 | Planview Enterprise One - CTM | Oui | Oui | Non | Non | Non |
 | Planview Enterprise One - PRM | Oui | Oui | Non | Non | Non |
@@ -155,6 +155,8 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 
 <sup>7</sup> Le service Power BI ne prend pas en charge les flux OData qui requièrent une authentification.
 
+<sup>8</sup> Paxata est pris en charge dans la version de Power BI Desktop optimisée pour Power BI Report Server. Il n’est pas pris en charge dans les rapports Power Bi publiés sur le Power Bi Report Server. Pour obtenir une liste des sources de données prises en charge, consultez [Sources de données de rapports Power BI dans Power BI Report Server](../report-server/data-sources.md).
+
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Authentification unique (SSO) pour les sources DirectQuery
 
 Quand l’option d’authentification unique est activée et que vos utilisateurs accèdent aux rapports basés sur la source de données, Power BI envoie leurs informations d’identification Azure AD dans les requêtes à la source de données sous-jacente. Ainsi, Power BI est en mesure de respecter les paramètres de sécurité qui sont configurés au niveau de la source de données.
@@ -180,3 +182,4 @@ L’option d’authentification unique prend effet sur tous les jeux de données
 [Utilisation de DirectQuery dans Power BI](desktop-directquery-about.md)  
 [Données actives SQL Server Analysis Services dans Power BI](sql-server-analysis-services-tabular-data.md)  
 [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md)  
+[Sources de données de rapport Power BI dans Power BI Report Server](../report-server/data-sources.md)

@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 08/10/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7dd6c812116d9ba196b157bd12d6362c19ac64ec
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: eeb879fc70effa166d08c9a342f77ad614779751
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216711"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049296"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
 
@@ -39,9 +39,13 @@ Dans ce cas, nous vous recommandons d’activer le paramètre **Publier des info
 Ces URL deviennent alors disponibles dans le menu d’aide de Power BI et se présentent sous forme de liens.
 
 > [!NOTE]
-> Le fait de fournir l’URL **Demandes de licences** empêche les utilisateurs individuels de souscrire à l’essai gratuit de 60 jours de Power BI Pro. Au lieu de cela, ils sont dirigés vers votre site interne qui les renseigne sur la façon d’acquérir une licence (gratuite ou Pro).
+> Le fait de fournir l’URL **Requêtes de licences** empêche les utilisateurs individuels d’acheter une licence Power BI Pro. Au lieu de cela, ils sont dirigés vers votre site interne qui les renseigne sur la façon d’acquérir une licence. Le paramètre **Autoriser les utilisateurs à essayer Power BI Pro** est activé par défaut et sépare les expériences d’achat et d’évaluation gratuite. Pour en savoir plus sur la façon dont ces paramètres fonctionnent ensemble, consultez [Autoriser les utilisateurs à essayer Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+>
+>
 
 ![Capture d’écran de Power BI Desktop montrant les paramètres d’aide et de support.](media/admin-tenant-settings/publish-get-help-information.png)
+
+Pour plus d'informations, consultez [Paramètres d'aide et de support](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## <a name="manage-risk"></a>Gérer le risque.
 Les paramètres de gestion des risques peuvent vous aider à établir des stratégies de gouvernance dans votre locataire Power BI. Gardez cependant à l’esprit que les paramètres de gouvernance ne sont pas une mesure de sécurité. Par exemple, la désactivation du paramètre **Exporter des données** supprime la fonctionnalité de l’interface utilisateur Power BI et aide de cette façon les utilisateurs Power BI à travailler en conformité avec les stratégies de gouvernance de votre organisation sans toutefois les empêcher d’exporter les données en utilisant d’autres options. Du point de vue de la sécurité, un utilisateur Power BI disposant d’un accès en lecture à un jeu de données a l’autorisation d’interroger ce jeu de données et peut conserver les résultats, quelles que soient les fonctionnalités disponibles dans l’interface utilisateur de Power BI.

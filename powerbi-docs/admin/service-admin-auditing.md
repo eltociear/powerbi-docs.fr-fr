@@ -10,12 +10,12 @@ ms.date: 05/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 195d1284fedc9f9c51c6fed2ff03cc0883b16405
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
+ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161718"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88091615"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -318,6 +318,9 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Actualisation demandée du dataflow Power BI               | RequestDataflowRefresh                      | Non utilisée actuellement                       |
 | Actualisation demandée du jeu de données Power BI                | RefreshDataset                              |                                          |
 | Espaces de travail Power BI récupérés                     | GetWorkspaces                               |                                          |
+| Étiquette de sensibilité appliquée                         | SensitivityLabelApplied                     |                                          |
+| Étiquette de sensibilité modifiée                         | SensitivityLabelChanged                     |                                          |
+| Étiquette de sensibilité supprimée                         | SensitivityLabelRemoved                     |                                          |
 | Emplacement de stockage de dataflow défini pour un espace de travail     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Actualisation planifiée sur le dataflow Power BI définie        | SetScheduledRefreshOnDataflow               |                                          |
 | Actualisation planifiée sur le jeu de données Power BI définie         | SetScheduledRefresh                         |                                          |

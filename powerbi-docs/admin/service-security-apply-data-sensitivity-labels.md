@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: f92d10fdff880049460d24c714201d9a433745d8
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: be2f98341abd581cd2df717d19b3a9110548a2ec
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86035071"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049204"
 ---
 # <a name="how-to-apply-sensitivity-labels-in-power-bi"></a>Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI
 
@@ -21,8 +21,8 @@ Les étiquettes de sensibilité de Microsoft Information Protection sur vos rapp
 
 Pour pouvoir appliquer des étiquettes de sensibilité dans Power BI :
 * Vous devez disposer d’une licence Power BI Pro et d’autorisations de modification sur le contenu que vous souhaitez étiqueter.
-* Vous devez appartenir à un groupe de sécurité qui dispose des autorisations nécessaires pour appliquer des étiquettes de sensibilité, comme décrit dans l’article intitulé [Activer les étiquettes de sensibilité dans Power BI](./service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels).
-* L’ensemble des [prérequis](./service-security-sensitivity-label-overview.md#requirements-for-using-sensitivity-labels-in-power-bi) et des [conditions de licence](./service-security-data-protection-overview.md#licensing) doivent être remplis.
+* Vous devez appartenir à un groupe de sécurité qui dispose des autorisations nécessaires pour appliquer des étiquettes de sensibilité, comme décrit dans l’article intitulé [Activer les étiquettes de sensibilité dans Power BI](./service-security-enable-data-sensitivity-labels.md).
+* Toutes les [Licences et autres configurations requises](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) doivent être respectées.
 
 Pour plus d’informations sur les étiquettes de sensibilité dans Power BI, consultez [Étiquettes de sensibilité dans Power BI](service-security-sensitivity-label-overview.md).
 

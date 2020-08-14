@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0fe1b7b1b8175511838005b7b63ca7543bbf939a
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ebc4601f3575e84c248aef9204537a7d93c428ac
+ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034333"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88049181"
 ---
 # <a name="enable-sensitivity-labels-in-power-bi"></a>Activer les étiquettes de sensibilité dans Power BI
 
@@ -24,7 +24,20 @@ Quand les étiquettes de sensibilité sont activées :
 * Des utilisateurs et des groupes de sécurité spécifiés d’une organisation peuvent classifier et [appliquer des étiquettes de sensibilité](./service-security-apply-data-sensitivity-labels.md) à leurs tableaux de bord, rapports, jeux de données et dataflows Power BI.
 * Tous les membres de l’organisation peuvent voir ces étiquettes.
 
-L’activation des étiquettes de sensibilité nécessite une licence Azure Information Protection. Pour plus d’informations, consultez [Gestion des licences](service-security-sensitivity-label-overview.md#licensing).
+L’activation des étiquettes de sensibilité nécessite une licence Azure Information Protection. Pour plus d’informations, consultez [Licences et configuration requise](#licensing-and-requirements).
+
+## <a name="licensing-and-requirements"></a>Licences et configuration requise
+
+* Une licence Azure Information Protection Premium P1 ou Premium P2 est requise pour appliquer ou afficher des étiquettes de confidentialité Microsoft Information Protection dans Power BI. Vous pouvez acheter Azure Information Protection en autonome ou par le biais de l’une des suites de licences Microsoft. Pour plus d’informations, consultez les [tarifs Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
+
+* Pour pouvoir appliquer des étiquettes à du contenu Power BI, un utilisateur doit disposer d’une licence Power BI Pro en plus d’une des licences Azure Information Protection mentionnées ci-dessus.
+
+* Les applications Office disposent de leurs propres [conditions de licence requises pour afficher et appliquer des étiquettes de sensibilité]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
+
+* Avant d’activer des étiquettes de confidentialité sur votre abonné, assurez-vous qu’elles sont bien définies et publiées pour les utilisateurs et les groupes appropriés. Consultez [Créer et configurer des étiquettes de sensibilité et leurs stratégies](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) pour plus d’informations.
+
+>[!NOTE]
+> Si votre organisation utilise des étiquettes de sensibilité Azure Information Protection, vous devez les migrer vers la plateforme d’étiquetage unifiée de Microsoft Information Protection afin qu’elles soient utilisées dans Power BI. [En savoir plus sur la migration des étiquettes de sensibilité](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="enable-sensitivity-labels"></a>Activer les étiquettes de sensibilité
 
@@ -52,9 +65,9 @@ Dans la section **Information Protection**, effectuez les étapes suivantes :
 
 Power BI utilise les étiquettes de sensibilité Microsoft Information Protection. Par conséquent, si un message d’erreur s’affiche lors d’une tentative d’activation des étiquettes de sensibilité, cela peut être dû à l’une des raisons suivantes :
 
-* Vous ne disposez pas de [licence](service-security-sensitivity-label-overview.md#licensing) Azure Information Protection.
-* Les étiquettes de sensibilité n’ont pas été migrées vers la version de Microsoft Information Protection prise en charge par Power BI. Découvrez des informations supplémentaires sur la [migration des étiquettes de sensibilité](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
-* Aucune étiquette de sensibilité Microsoft Information Protection n’a été définie dans l’organisation. Notez que pour être utilisable, une étiquette doit faire partie d’une stratégie publiée. [Apprenez-en davantage sur les étiquettes de sensibilité](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). Vous pouvez également visiter le [Centre de sécurité et de conformité Microsoft](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) pour savoir comment définir des étiquettes et publier des stratégies pour votre organisation.
+* Vous ne disposez pas de [licence](#licensing-and-requirements) Azure Information Protection.
+* Les étiquettes de sensibilité n’ont pas été [migrées](#enable-sensitivity-labels) vers la version de Microsoft Information Protection prise en charge par Power BI.
+* Aucune étiquette de sensibilité Microsoft Information Protection n’a été [définie dans votre organisation](#enable-sensitivity-labels).
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

@@ -7,15 +7,15 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/07/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0be1f3aeb48e4596566c36c1ee8cfadeb3c33d10
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 4118e5c009a8d7372d5cb58d1e1b9d033a70494e
+ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214022"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87988731"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparaison de Power BI Desktop et du service Power BI
 
@@ -23,15 +23,17 @@ Dans un diagramme de Venn qui compare Power BI Desktop et le service Power BI,
 
 ![Diagramme de Venn montrant la relation entre Power BI Desktop et le service Power BI.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** est un outil d’analyse des données et de création de rapports complet que vous installez pour une application gratuite sur votre ordinateur local. Il inclut l’Éditeur de requête, dans lequel vous pouvez vous connecter à de nombreuses sources de données différentes et les combiner dans un modèle de données (opération souvent appelée modélisation). Vous concevez ensuite un rapport basé sur ce modèle de données. Le [guide de prise en main de Power BI Desktop](desktop-getting-started.md) vous présente pas à pas l’application.
+**Power BI Desktop** est un outil d’analyse des données et de création de rapports complet que vous installez gratuitement sur votre ordinateur local. Il inclut l’Éditeur de requête, dans lequel vous pouvez vous connecter à de nombreuses sources de données différentes et les combiner dans un modèle de données (opération souvent appelée modélisation). Vous concevez ensuite un rapport basé sur ce modèle de données. Le [guide de prise en main de Power BI Desktop](desktop-getting-started.md) vous présente pas à pas l’application.
 
-Le **service Power BI** est un service cloud. Il prend en charge la modification simple de rapports et la collaboration pour des équipes et des organisations. Vous pouvez vous connecter également à des sources de données dans le service Power BI, mais la modélisation est limitée. 
+Le **service Power BI** est un service cloud. Il prend en charge la modification simple de rapports et la collaboration pour des équipes et des organisations. Vous pouvez vous connecter également à des sources de données dans le service Power BI, mais la modélisation est limitée.
 
-La plupart des concepteurs de rapports qui travaillent sur des projets d’informatique décisionnelle utilisent **Power BI Desktop** pour créer des rapports, puis le **service Power BI** pour les distribuer à d’autres personnes.
+La plupart des concepteurs de rapports Power BI qui travaillent sur des projets décisionnels utilisent **Power BI Desktop** pour créer des rapports Power BI, puis utilisent le **service Power BI** pour collaborer et distribuer leurs rapports.
 
-## <a name="report-editing"></a>Édition de rapports
+Le service Power BI héberge également des *rapports paginés* dans des espaces de travail sauvegardés par une capacité de Power BI Premium. Vous pouvez également créer des rapports paginés avec le Générateur de rapports Power BI. Consultez [Comparer des rapports Power BI et des rapports paginés](../paginated-reports/paginated-reports-report-builder-power-bi.md#compare-power-bi-reports-and-paginated-reports) dans l’article « Qu’est-ce que sont des rapports paginés dans Power BI Premium ? » pour plus d’informations.
 
-À la fois dans l’application et le service, vous générez et vous modifiez des *rapports*. Un rapport peut se composer d’une ou plusieurs pages, avec des visuels et des collections de visuels. Ajoutez des signets, des boutons, des filtres et une fonctionnalité d’extraction pour améliorer la navigation dans vos rapports.
+## <a name="editing-power-bi-reports"></a>Modification de rapports Power BI
+
+À la fois dans l’application et dans le service, vous générez et vous modifiez des *rapports* Power BI. Un rapport peut se composer d’une ou plusieurs pages, avec des visuels et des collections de visuels. Ajoutez des signets, des boutons, des filtres et une fonctionnalité d’extraction pour améliorer la navigation dans vos rapports.
 
 ![Captures d’écran de Power BI Desktop et du service Power BI, avec des sections numérotées.](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -49,7 +51,6 @@ Cette vidéo montre l’éditeur de rapports dans Power BI Desktop.
 
 ### <a name="collaborating"></a>Collaboration
 
-
 Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI**, là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Vous partagez ensuite ces tableaux de bord et ces rapports avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en *mode Lecture*, et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports.  Vous pouvez également partager vos jeux de données et permettre à d’autres utilisateurs de générer leurs propres rapports à partir de ceux-ci. Découvrez plus en détail comment [collaborer dans le service Power BI](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Préparation des données en libre-service avec des dataflows
@@ -64,4 +65,4 @@ Les dataflows aident les organisations à unifier des données provenant de sour
 
 [Fondamentaux pour les concepteurs de rapports](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)

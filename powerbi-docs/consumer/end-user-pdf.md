@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: ec45d971855aefe35161f2b10fecd483f0345a46
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 4f02a98ca13bd5808bde987889c3f4404c9100f0
+ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768800"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87837494"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -52,6 +52,7 @@ C’est tout. Vous pouvez télécharger le fichier et l’ouvrir avec n’import
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter au format PDF**.
 
+* Le fichier PDF inclut les données et visualisations visibles sur votre canevas Power BI. Si le visuel inclut des barres de défilement, le fichier PDF inclura le visuel dans son état par défaut sans défilement.  
 * Les éléments visuels R et Pyhton ne sont actuellement pas pris en charge. Dans le fichier PDF, ces visuels sont vides et affichent un message d’erreur. 
 * Les visuels Power BI qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels Power BI certifiés, notamment concernant la manière de certifier un visuel Power BI, consultez [Obtenir un visuel Power BI certifié](../developer/visuals/power-bi-custom-visuals-certified.md). Les visuels Power BI qui n’ont pas été certifiés ne sont pas pris en charge. Dans le fichier PDF, ils s’affichent avec un message d’erreur.
 * L’élément visuel ESRI n'est pas pris en charge
