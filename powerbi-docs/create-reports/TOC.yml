@@ -119,7 +119,7 @@
       items:
         - name: Rapports Power BI
           items:
-            - name: Activer l’actualisation automatique des pages (préversion)
+            - name: Activer l’actualisation automatique des pages
               href: desktop-automatic-page-refresh.md
             - name: Examiner les éléments d’un rapport avec l’Analyseur de performances
               href: desktop-performance-analyzer.md
