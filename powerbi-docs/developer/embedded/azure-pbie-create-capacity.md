@@ -9,12 +9,12 @@ ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
 ms.date: 08/02/2020
-ms.openlocfilehash: 5a84c67a2efd57376afc289f965da9dc5dafd3c6
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 2f330b42e674f11f27d695fb65bc8d5de928eaae
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768656"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204826"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -56,7 +56,7 @@ Avant de créer une capacité Power BI Embedded, vous devez vous être connecté
 
     * **Emplacement** : emplacement où est hébergé Power BI pour votre locataire. Votre emplacement par défaut est votre région d’origine, mais vous pouvez modifier l’emplacement avec les [options Zone géographique multiple](embedded-multi-geo.md).
 
-    * **Taille** : [référence SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) dont vous avez besoin. Pour plus d’informations, consultez [Mémoire et puissance de calcul des références SKU](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Taille** : [référence SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) dont vous avez besoin. Pour plus d’informations, consultez [Mémoire et puissance de calcul des références SKU](/power-bi/developer/embedded/embedded-capacity).
 
     * **Administrateur de capacité Power BI** : administrateur de la capacité.
         >[!NOTE]
@@ -229,9 +229,10 @@ Une seule ressource Azure est définie dans le modèle, [Microsoft.PowerBIDedica
 
     * **Nom** : nom de la capacité.
 
-    * **Emplacement** : endroit où est hébergé Power BI pour votre locataire. Votre emplacement par défaut est votre région d’origine, mais vous pouvez modifier l’emplacement avec les [options Zone géographique multiple](/embedded/embedded-multi-geo.md).
+    * **Emplacement** : endroit où est hébergé Power BI pour votre locataire. Votre emplacement par défaut est votre région d’origine, mais vous pouvez modifier l’emplacement avec les [options Zone géographique multiple](https://docs.microsoft.com/power-bi/developer/embedded/embedded-multi-geo
+).
 
-    * **SKU** : [référence SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) dont vous avez besoin. Pour plus d’informations, consultez [Mémoire et puissance de calcul des références SKU](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** : [référence SKU A](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) dont vous avez besoin. Pour plus d’informations, consultez [Mémoire et puissance de calcul des références SKU](/power-bi/developer/embedded/embedded-capacity).
 
     * **Admin** : administrateur de la capacité.
         >[!NOTE]

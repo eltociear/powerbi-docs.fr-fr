@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 5815ba5036da543fb51319e8a2af287cf6ce4ce7
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 4087f3d09d509022cb4dd91caebae0f8038e203b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878656"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204293"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Utilisez l’objet client Power BI pour récupérer une référence vers l’élément que vous souhaitez incorporer. Vous pouvez incorporer des tableaux de bord, des vignettes ou des rapports. Voici un exemple montrant comment récupérer le premier tableau de bord, rapport ou vignette à partir d’un espace de travail donné.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) (L’application possède les données).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData) (L’application possède les données).
 
 #### <a name="reports"></a>Rapports
 
@@ -243,7 +243,7 @@ En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporatio
 > [!IMPORTANT]
 > Étant donné que les jetons d’incorporation sont uniquement destinés aux tests de développeur, le nombre de jetons d’incorporation qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) (Incorporation pour votre organisation).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData) (Incorporation pour votre organisation).
 
 Une classe est créée pour **EmbedConfig** et **TileEmbedConfig**. Des exemples sont disponibles dans les fichiers **Models\EmbedConfig.cs** et **Models\TileEmbedConfig.cs**.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0169eba3e27b4014f9dbf20f88a10575caf903fe
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227262"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204319"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Grands modèles dans Power BI Premium (préversion)
 
@@ -114,7 +114,6 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
 
 Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grands modèles :
 
-- **Chiffrement BYOK (Bring Your Own Key)**  : les jeux de données activés pour les fichiers Premium ne sont pas chiffrés par [BYOK](service-encryption-byok.md).
 - **Support multigéographique** : les jeux de données activés pour les fichiers Premium échouent sur les capacités où [plusieurs zones géographiques](service-admin-premium-multi-geo.md) sont également activées.
 
 - **Télécharger sur Power BI Desktop** : si un jeu de données est stocké dans des fichiers Premium, le [téléchargement en tant que fichier. pbix](../create-reports/service-export-to-pbix.md) échoue.
@@ -131,21 +130,21 @@ La liste suivante répertorie les régions où les grands modèles dans Power BI
 |Région Azure  |Abréviation des régions Azure  |
 |---------|---------|
 |Australie Est     | australiaeast        |
-|Sud-Australie Est     | australiasoutheast        |
+|Australie Sud-Est     | australiasoutheast        |
 |USA Centre     | centralus        |
 |Asie Est     | eastasia        |
 |USA Est     | eastus        |
 |USA Est 2     | eastus2        |
 |Japon Est     | japaneast        |
-|Japon Ouest     | japanwest        |
-|Corée Centre     | KoreaCentral        |
-|Corée Sud     | KoreaSouth        |
-|USA Centre Nord     | northcentralus        |
+|OuJapon Est     | japanwest        |
+|Centre de la Corée     | KoreaCentral        |
+|Corée du Sud     | KoreaSouth        |
+|Centre-Nord des États-Unis     | northcentralus        |
 |Europe Nord     | northeurope        |
-|Centre-Sud des États-Unis     | southcentralus        |
+|États-Unis - partie centrale méridionale     | southcentralus        |
 |Asie Sud-Est     | southeastasia        |
-|Royaume-Uni Sud     | uksouth        |
-|Royaume-Uni Ouest     | ukwest        |
+|Sud du Royaume-Uni     | uksouth        |
+|Ouest du Royaume-Uni     | ukwest        |
 |Europe Ouest     | westeurope        |
 |USA Ouest     | westus        |
 |USA Ouest 2     | westus2        |
@@ -157,7 +156,7 @@ La liste suivante répertorie les régions où les grands modèles dans Power BI
 Les liens suivants fournissent des informations qui peuvent être utiles pour travailler avec des modèles volumineux :
 
 * [Stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
-* [Configurer le support multigéographique pour Power BI Premium](service-admin-premium-multi-geo.md)
+* [Configurer la prise en charge multigéographique pour Power BI Premium](service-admin-premium-multi-geo.md)
 * [Apporter vos propres clés de chiffrement pour Power BI](service-encryption-byok.md)
 * [Fonctionnement des capacités](service-premium-what-is.md#how-capacities-function)
 * [Actualisation incrémentielle](service-premium-incremental-refresh.md).

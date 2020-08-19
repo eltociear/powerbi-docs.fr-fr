@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/28/2020
+ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dcdd663ec9899f7623789915754087c4643c9806
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 1e64ca5c94b180cf98cf8d8992681861281ca2ae
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411977"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160392"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -217,28 +217,31 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
-* Acterys : Model Automation & Planning (bêta)
-* Automation Anywhere (bêta)
 * Solver
-* Cherwell (bêta)
-* Cognite Data Fusion (bêta)
 * FHIR
 * Information Grid (bêta)
 * Jamf Pro (Beta)
-* MicroStrategy pour Power BI
 * Paxata
 * QubolePresto (bêta)
 * Roamler (bêta)
 * Shortcuts Business Insights (bêta)
 * Siteimprove
-* SurveyMonkey (bêta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (bêta)
-* Vena (bêta)
 * Vessel Insight (bêta)
 * Workforce Dimensions (bêta)
 * Zucchetti HR Infinity (Beta)
+* Cognite Data Fusion (bêta)
+* MicroStrategy pour Power BI
+* SurveyMonkey (bêta)
+* Vena (bêta)
+* Acterys : Model Automation & Planning (bêta)
+* Automation Anywhere (bêta)
+* Cherwell (bêta)
 * Requête vide
+
+
+
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
 

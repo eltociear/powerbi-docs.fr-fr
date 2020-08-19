@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 944d115b0592954d92460ca26ae5b59311abc42e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227482"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204573"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Apporter vos propres clés de chiffrement pour Power BI
 
@@ -32,7 +32,7 @@ Pour utiliser BYOK, vous devez charger les données sur le service Power BI à p
 - Classeurs Excel (sauf si les données sont d’abord importées dans Power BI Desktop)
 - [Transmettre des jeux de données](/rest/api/power-bi/pushdatasets)
 - [Jeux de données en streaming](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Grands modèles](service-premium-large-models.md)
+
 
 BYOK s’applique uniquement aux jeux de données. Les jeux de données d’envoi (push), les fichiers Excel et les fichiers CSV que les utilisateurs peuvent charger vers le service ne sont pas chiffrés à l’aide de votre propre clé. Pour identifier les artefacts stockés dans vos espaces de travail, utilisez la commande PowerShell suivante :
 
@@ -45,7 +45,7 @@ BYOK s’applique uniquement aux jeux de données. Les jeux de données d’envo
 
 Dans cette section, vous apprenez à configurer Azure Key Vault, un outil autorisant le stockage et l’accès sécurisés aux secrets tels que des clés de chiffrement. Vous pouvez utiliser un coffre de clés existant pour stocker des clés de chiffrement, ou vous pouvez en créer un spécifiquement pour une utilisation avec Power BI.
 
-Les instructions dans cette section supposent une connaissance élémentaire d’Azure Key Vault. Pour plus d’informations, consultez [Qu’est-ce qu’Azure Key Vault ?](/azure/key-vault/key-vault-whatis). Configurez votre coffre de clés de la façon suivante :
+Les instructions dans cette section supposent une connaissance élémentaire d’Azure Key Vault. Pour plus d’informations, consultez la page [Qu’est-ce qu’Azure Key Vault ?](/azure/key-vault/key-vault-whatis) Configurez votre coffre de clés de la façon suivante :
 
 1. Ajoutez le service Power BI en tant que service principal pour le coffre de clés, avec des autorisations de chiffrement et de déchiffrement.
 
@@ -82,7 +82,7 @@ Les instructions dans cette section supposent une connaissance élémentaire d�
 
     ![Composants de fichier PBIX](media/service-encryption-byok/create-rsa-key.png)
 
-1. Sélectionnez **Créer**.
+1. Sélectionnez **Create** (Créer).
 
 1. Sous **Clés**, sélectionnez la clé que vous avez créée.
 
