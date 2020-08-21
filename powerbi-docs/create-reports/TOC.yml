@@ -71,6 +71,8 @@
               items:
                 - name: Introduction à Questions et réponses
                   href: ../natural-language/q-and-a-intro.md
+                - name: Sources de données de Questions et réponses
+                  href: ../natural-language/q-and-a-data-sources.md
                 - name: Introduction aux outils de Questions et réponses
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Outils avancés de Questions et réponses
