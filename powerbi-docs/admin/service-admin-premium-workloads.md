@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1213d02926db3b1d356e7fefffb44bcc41b8ab96
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 829de249b71076ccd1ed2a60348170e93b68e507
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227684"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204426"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -59,8 +59,10 @@ La charge de travail des jeux de données est activée par défaut et ne peut pa
 | **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. |
 | **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible dans la charge de travail qui peut être utilisé pour exécuter une requête MDX ou DAX. La valeur par défaut est 0, ce qui entraîne l’application de la limite de mémoire de requête automatique propre à la référence SKU. |
 | **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. |
-| **Actualisation automatique des pages (préversion)** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages. |
+| **Actualisation automatique de la page** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages sur la base d’intervalles fixes. |
 | **Intervalle minimal d'actualisation** | Si l’actualisation automatique de la page est activée, il s’agit de l’intervalle minimal autorisé pour l’intervalle d’actualisation de la page. La valeur par défaut est de cinq minutes, et la valeur minimale autorisée est d’une seconde. |
+| **Mesure de détection des changements** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages sur la base de la détection des changements. |
+| **Intervalle d'exécution minimal** | Si la mesure de détection des changements est activée, il s’agit de l’intervalle d’exécution minimal autorisé à interroger les modifications de données. La valeur par défaut est de cinq secondes, et la valeur minimale autorisée est d’une seconde. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Nombre maximal de lignes intermédiaires
@@ -107,7 +109,7 @@ Le paramètre par défaut est 0, ce qui entraîne l’application de la limite d
 | Limite de mémoire de requête automatique | 1 Go     | 2 Go     | 2 Go     | 6 Go    | 6 Go    | 10 Go   |
 |                              |          |          |          |         |         |         |
 
-Pour préserver les performances du système, une limite stricte de 10 Go est appliquée pour toutes les requêtes exécutées par les rapports Power BI, quelle que soit la limite de mémoire de requête configurée par l’utilisateur. Cette limite stricte ne s’applique pas aux requêtes envoyées par des outils qui utilisent le protocole Analysis Services (également appelé XMLA). Les utilisateurs doivent essayer de simplifier la requête ou ses calculs si la requête utilise trop de mémoire.
+Pour préserver les performances du système, une limite stricte de 10 Go est appliquée pour toutes les requêtes exécutées par les rapports Power BI, quelle que soit la limite de mémoire de requête configurée par l’utilisateur. Cette limite stricte ne s’applique pas aux requêtes envoyées par des outils qui utilisent le protocole Analysis Services (aussi appelé XMLA). Les utilisateurs doivent essayer de simplifier la requête ou ses calculs si la requête utilise trop de mémoire.
 
 #### <a name="query-timeout"></a>Délai d’expiration de la requête
 

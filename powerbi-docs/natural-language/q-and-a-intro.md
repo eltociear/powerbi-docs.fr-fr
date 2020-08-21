@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/01/2020
 ms.author: mohaali
-ms.openlocfilehash: 295fc7732729fc464676257ab63dcadfa967771b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: de16ddbbaca69aea5283c7ab61c462493a6da1d0
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939668"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578102"
 ---
 # <a name="intro-to-power-bi-qa"></a>Présentation de Questions et réponses dans Power BI
 
@@ -43,22 +43,20 @@ Avant même que vous commenciez à taper votre question, Q&R affiche dans un nou
 
 ![Complétion des phrases de Questions et réponses](media/qna-suggestion-phrase-completion.png)
 
-### <a name="redblue-underlines"></a>Traits de soulignement rouges/bleus
+### <a name="redblueorange-underlines"></a>Traits de soulignement rouges/bleus/orange
 
 La fonctionnalité Questions et réponses affiche des mots soulignés pour vous aider à identifier les mots que le système comprend ou ne reconnaît pas. Un trait de soulignement continu bleu indique que le système a correctement mis en correspondance le mot avec un champ ou une valeur dans le modèle de données. L’exemple ci-dessous montre que la fonctionnalité Questions et réponses a reconnu le mot *EU Sales*.
 
 ![Trait de soulignement bleu de Questions et réponses](media/qna-blue-underline.png)
 
-Souvent, lorsque vous tapez un mot dans Questions et réponses, il est marqué d’un trait de soulignement rouge. Un trait de soulignement rouge peut indiquer deux problèmes potentiels. Le premier type de problème appartient à la catégorie *confiance faible*. Si vous tapez un mot vague ou ambigu, le champ est souligné en rouge. Le mot « Sales » (Ventes) en est un exemple. Plusieurs champs peuvent contenir le mot « Sales », si bien que le système utilise un trait de soulignement rouge pour vous inviter à choisir le champ que vous souhaitiez. La saisie du mot « area » est un autre exemple à confiance faible, mais la colonne correspondante est « region ». La fonctionnalité Questions et réponses Power BI reconnaît les mots de même signification, grâce à son intégration à Bing et Office. Questions et réponses souligne le mot en rouge pour que vous sachiez qu’il ne s’agit pas d’une correspondance directe.
+ Un soulignement orange indique que le ou les mots sont catégorisés comme étant de *faible confiance*. Si vous tapez un mot vague ou ambigu, le champ est souligné en orange. Le mot « Sales » (Ventes) en est un exemple. Plusieurs champs peuvent contenir le mot « Sales », si bien que le système utilise un trait de soulignement orange pour vous inviter à choisir le champ que vous souhaitiez. La saisie du mot « area » est un autre exemple à confiance faible, mais la colonne correspondante est « region ». Power BI Questions et réponses reconnaît les mots qui signifient la même chose, grâce à l’intégration à Bing et à Office, et à l’interprétation des renommages dans un rapport en tant que suggestions potentielles. Questions et réponses souligne le mot en orange pour vous indiquer qu’il ne s’agit pas d’une correspondance directe.
 
-![« Sales » souligné en rouge dans Questions et réponses](media/qna-red-underline-sales.png)
-
-Le deuxième type de problème se pose quand Questions et réponses ne reconnaît pas du tout le mot. Vous pouvez rencontrer ce problème en utilisant un terme spécifique à un domaine qui n’est mentionné nulle part dans les données, ou si les champs de données sont incorrectement nommés. L’utilisation du mot « Costs » alors qu’il ne figure pas dans les données en est un exemple. Le mot figure dans le dictionnaire anglais, mais Questions et réponses marque ce terme d’un trait de soulignement rouge.
+Un trait de soulignement rouge signifie que Questions et réponses n’a pas reconnu le mot du tout. Vous pouvez rencontrer ce problème en utilisant un terme spécifique à un domaine qui n’est mentionné nulle part dans les données, ou si les champs de données sont incorrectement nommés. L’utilisation du mot « Costs » alors que le mot ne figure pas dans les données en est un exemple. Le mot est dans le dictionnaire anglais, mais Questions et réponses marque ce terme avec un trait de soulignement rouge pour indiquer qu’il n’a pas trouvé ce terme en ce qui concerne les données.
 
 ![« Sales » souligné en rouge dans Questions et réponses](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> Vous pouvez personnaliser les couleurs de soulignement bleue/rouge dans le volet **Visual formatting** (Mise en forme visuelle) de Questions et réponses. En outre, l’article [Enseigner à Questions et réponses](q-and-a-tooling-teach-q-and-a.md) décrit les *outils Questions et réponses* qui vous permettent de définir les termes que Questions et réponses n’a pas reconnus.
+> Vous pouvez personnaliser les couleurs de soulignement bleue/rouge/orange dans le volet **Visual formatting** (Mise en forme visuelle) de Questions et réponses. En outre, l’article [Enseigner à Questions et réponses](q-and-a-tooling-teach-q-and-a.md) décrit les *outils Questions et réponses* qui vous permettent de définir les termes que Questions et réponses n’a pas reconnus.
 
 ### <a name="visualization-results"></a>Résultats de visualisation
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: f580891be69e0c5478474496be6a6414867e662d
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 84ceb5cd856986f2ff068395bac8bcac10baad96
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091661"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204904"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,23 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="august-2020"></a>Août 2020
+### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>Nous avons amélioré la façon dont vous accédez à votre contenu (iOS et Android)
+Vous pouvez désormais parcourir votre contenu rapidement et facilement à l’aide d’une **nouvelle arborescence de navigation**, disponible dans la liste déroulante d’en-tête des rapports, des tableaux de bord et des applications. Vous voyez en un coup d’œil la hiérarchie de localisation de votre contenu, et vous pouvez facilement naviguer dans la hiérarchie de contenu, accéder au contenu frère ou même revenir rapidement à votre page d’accueil. Si l’élément que vous affichez fait partie d’une application, l’arborescence affiche tout son contenu : sections, liens et tous les rapports et tableaux de bord. Si l’élément que vous affichez est un rapport, vous trouverez également une liste de toutes les pages de rapport visibles. Il n’a jamais été si facile de passer d’une page à une autre ! À tester dès maintenant ! 
+
+![Capture d’écran de l’arborescence de navigation de l’application mobile Power BI.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
+
+### <a name="share-from-power-bi-using-your-favorite-apps-ios-and-android"></a>Partager à partir de Power BI à l’aide de vos applications favorites (iOS et Android)
+Vous pouvez désormais partager des liens vers du contenu Power BI avec vos contacts. Utilisez la nouvelle action Partager dans l’en-tête pour envoyer le lien à l’aide de n’importe quelle application de collaboration sur votre appareil, comme Microsoft Teams, une application de messagerie, etc. Le lien capture la vue actuelle, ce qui vous permet de partager même des vues de rapport filtrées.
+
+![Capture d’écran de l’icône de partage de l’application mobile Power BI.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-share.png)
+
+### <a name="pinch-and-zoom-is-now-available-in-all-report-views---on-both-phones-and-tablets-ios-and-android"></a>Le pincement pour zoomer est désormais disponible dans toutes les vues de rapport, à la fois sur les téléphones et sur les tablettes (iOS et Android)   
+Nous avons activé le pincement pour zoomer dans toutes les vues de rapport, ce qui vous permet d’effectuer un zoom avant et arrière sur le contenu de votre rapport, que vous soyez sur votre téléphone ou sur votre tablette.
+
+### <a name="auto-play-a-slideshow-on-startup-windows"></a>Lire automatiquement un diaporama au démarrage (Windows)
+Vous pouvez choisir un rapport à lire automatiquement dans un diaporama quand l’application Power BI Windows est lancée. Cela est utile pour créer une expérience de type kiosque qui exécute un rapport dans des affichages publics sans aucune intervention manuelle. [En savoir plus](mobile-windows-10-app-presentation-mode.md#auto-play-a-slideshow-on-startup)
 
 ## <a name="july-2020"></a>Juillet 2020
 ### <a name="the-power-bi-mobile-app-for-windows-now-supports-organizational-branding"></a>L’application mobile Power BI pour Windows prend désormais en charge la personnalisation de l’organisation
@@ -173,7 +190,7 @@ En savoir plus sur la [Nouvelle apparence de Power BI Mobile](https://powerbi.mi
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Accès sécurisé avec le proxy d’application Azure Active Directory (AD) (iOS et Android)
 
-Nous avons travaillé en partenariat avec l’équipe Azure Active Directory pour intégrer les applications mobiles Power BI au proxy d’application Azure Active Directory (AAD). Avec cette configuration, vous pouvez vous connecter au serveur de rapports hébergé dans les limites de l’entreprise à partir de l’application Power BI Mobile, sans devoir effectuer une configuration locale complexe. Pour plus d’informations, consultez [Intégration de Power BI Mobile et du proxy d’application Azure AD](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Découvrez [comment configurer le proxy d’application Azure AD et Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Nous avons travaillé en partenariat avec l’équipe Azure Active Directory pour intégrer les applications mobiles Power BI au proxy d’application Azure Active Directory (Azure AD). Avec cette configuration, vous pouvez vous connecter au serveur de rapports hébergé dans les limites de l’entreprise à partir de l’application Power BI Mobile, sans devoir effectuer une configuration locale complexe. Pour plus d’informations, consultez [Intégration de Power BI Mobile et du proxy d’application Azure AD](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Découvrez [comment configurer le proxy d’application Azure AD et Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juillet 2019
 
@@ -211,7 +228,7 @@ L’appui simple est désormais en disponibilité générale et va devenir l’i
 
 ### <a name="enhanced-conditional-access-protection-ios-android"></a>Amélioration de la protection par accès conditionnel (iOS, Android)
 
-Nous avons intégré à AAD une [nouvelle fonctionnalité d’accès conditionnel basée sur la protection des applications](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) afin d’augmenter la sécurité en limitant l’accès à Power BI avant que la stratégie d’application ne soit appliquée.
+Nous avons intégré à Azure AD une [nouvelle fonctionnalité d’accès conditionnel basée sur la protection des applications](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) afin d’augmenter la sécurité en limitant l’accès à Power BI avant que la stratégie d’application ne soit appliquée.
 
 ### <a name="device-protection-ios"></a>Protection des appareils (iOS)
 

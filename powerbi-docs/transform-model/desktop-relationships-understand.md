@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4928d194367c1bb2f38fb520722dd040e8ee1a3f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83296707"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512859"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Relations de modèle dans Power BI Desktop
 
@@ -42,7 +42,7 @@ Une requête, peut-être générée par un visuel de carte Power BI, demande les
 
 Il est rare qu’une table de modèle ne soit pas associée à une autre table de modèle. Dans une conception de modèle valide, une telle table peut être décrite comme étant une _table déconnectée_. Une table déconnectée n’est pas destinée à propager des filtres à d’autres tables de modèle. Elle sert à recueillir des « entrées utilisateur » (peut-être avec un visuel de segment), ce qui permet aux calculs de modèle d’utiliser les valeurs d’entrée de façon utile. Prenons l’exemple d’une table déconnectée qui est chargée avec une plage de valeurs de taux de change monétaires. Tant qu’un filtre est appliqué pour filtrer en fonction d’une valeur de taux unique, la valeur peut être utilisée par une expression de mesure de façon à convertir les valeurs de ventes.
 
-Le paramètre de scénario (« what-if ») Power BI Desktop est la fonctionnalité qui crée une table déconnectée. Pour plus d’informations, consultez l’article [Créer et utiliser un paramètre de scénario pour visualiser des variables dans Power BI Desktop](desktop-what-if.md).
+Le paramètre de scénario (« what-if ») Power BI Desktop est une fonctionnalité qui crée une table déconnectée. Pour plus d’informations, consultez l’article [Créer et utiliser un paramètre de scénario pour visualiser des variables dans Power BI Desktop](desktop-what-if.md).
 
 ## <a name="relationship-properties"></a>Propriétés de relation
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 08/12/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0fdee37f682774e1dac2b1ac6a4fc7a6e8dabe91
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8dd6e64943ea05f2219efa471cd3fcfa4152650b
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238084"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160484"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Permettre aux utilisateurs de personnaliser les visuels dans un rapport
 
@@ -41,6 +41,59 @@ Cette fonctionnalité offre non seulement de nouvelles fonctionnalités d’expl
 - Réinitialiser toutes leurs modifications dans un rapport
 - Réinitialiser toutes leurs modifications dans un visuel
 - Effacer leurs modifications récentes
+
+## <a name="use-perspectives-for-a-more-focused-view"></a>Utiliser les Perspectives pour une vue plus ciblée
+
+Pour personnaliser les visuels, vous pouvez utiliser des **perspectives** pour choisir un sous-ensemble d’un modèle qui fournit une vue plus ciblée. Le choix d’un sous-ensemble peut être utile lors de l’utilisation d’un modèle de données volumineux, ce qui vous permet de vous concentrer sur un sous-ensemble gérable de champs et de ne pas saturer les lecteurs de rapports avec la collection complète des champs de ce modèle volumineux. 
+
+![Personnaliser les visuels](media/power-bi-personalize-visuals/power-bi-personalize-perspective-01.png)
+
+Tenez compte des points suivants lorsque vous travaillez avec les perspectives :
+
+* Les perspectives ne sont pas censées servir de mécanisme de sécurité ; elles constituent plutôt un outil qui optimise l'expérience de l'utilisateur final. Toute la sécurité d'une perspective est héritée du modèle sous-jacent.
+
+* Les perspectives sont prises en charge à la fois dans les modèles tabulaires et multidimensionnels. Toutefois, pour les perspectives dans les modèles multidimensionnels, vous pouvez uniquement définir la perspective pour qu’elle soit identique au cube de base pour le rapport.
+
+* Avant de supprimer une perspective d’un modèle, vérifiez que la perspective n’est pas utilisée dans l’expérience Personnaliser les visuels. 
+
+Pour utiliser les perspectives, vous devez activer Personnaliser les visuels pour le rapport. Vous devez également créer au moins une perspective qui comprend les dimensions et les mesures auxquelles les utilisateurs finaux peuvent interagir pour l’expérience Personnaliser les visuels.
+
+Pour créer la perspective, utilisez l’[éditeur tabulaire](https://tabulareditor.com/), que vous pouvez télécharger à partir de l’emplacement suivant : Téléchargement de l’éditeur tabulaire
+
+Une fois que vous avez installé l’**éditeur tabulaire**, ouvrez votre rapport dans **Power BI Desktop** et lancez l’**éditeur tabulaire** à partir de l’onglet **Outils externes** du ruban, comme illustré dans l’image suivante.
+
+![Éditeur tabulaire dans le ruban Outils externes](media/power-bi-personalize-visuals/power-bi-personalize-perspective-02.png)
+
+Dans l’éditeur tabulaire, cliquez avec le bouton droit sur le dossier **Perspectives** pour créer une perspective.
+
+![Créer un nouveau dossier Perspectives dans l’éditeur tabulaire](media/power-bi-personalize-visuals/power-bi-personalize-perspective-03.png)
+
+Vous pouvez double-cliquer sur le texte pour renommer la perspective.
+
+![Renommer la perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-04.png)
+
+Ensuite, ajoutez des champs à la perspective en ouvrant le dossier **Tables** dans l’éditeur tabulaire ; cliquez alors avec le bouton droit sur les champs que vous souhaitez afficher dans la perspective.
+
+![Ajouter des champs à une perspective](media/power-bi-personalize-visuals/power-bi-personalize-perspective-05.png)
+
+Répétez ce processus pour chaque champ que vous souhaitez ajouter à la perspective. Vous ne pouvez pas ajouter de champs dupliqués dans une perspective, donc tous les champs que vous avez déjà ajoutés à une perspective auront l’option d’ajout désactivée.
+
+Une fois que vous avez ajouté tous les champs souhaités, veillez à enregistrer vos paramètres, à la fois dans l’éditeur tabulaire et dans Power BI Desktop.
+
+![Enregistrer les paramètres des perspectives dans l’éditeur tabulaire et Power BI Desktop](media/power-bi-personalize-visuals/power-bi-personalize-perspective-06.png)
+
+Une fois que vous avez enregistré la nouvelle perspective dans le modèle et enregistré le rapport Power BI Desktop, accédez au volet **Mise en forme** de la page, où vous voyez une nouvelle section pour **Personnaliser le visuel**.
+
+![Section Personnaliser le visuel dans le volet Mise en forme](media/power-bi-personalize-visuals/power-bi-personalize-perspective-07.png)
+
+La sélection pour *Perspective du lecteur du rapport* est définie sur *Champs par défaut* initialement. Une fois que vous avez sélectionné la flèche déroulante, vous voyez les autres perspectives que vous avez créées.
+
+![Sélectionnez la flèche déroulante pour afficher les autres perspectives](media/power-bi-personalize-visuals/power-bi-personalize-perspective-08.png)
+
+Une fois que vous avez défini la perspective pour la page de rapport, l’expérience Personnaliser les visuels de cette page est filtrée sur la perspective sélectionnée. Si vous sélectionnez **Appliquer à toutes les pages**, vous pouvez appliquer votre paramètre de perspective à toutes les pages existantes de votre rapport.
+
+![Sélectionnez Appliquer à toutes les pages pour que la perspective s’applique à l’ensemble du rapport](media/power-bi-personalize-visuals/power-bi-personalize-perspective-09.png)
+
 
 ## <a name="turn-on-the-preview-feature"></a>Activation de la fonctionnalité d’évaluation
 
@@ -105,4 +158,4 @@ Il existe également quelques problèmes connus que nous sommes en train de trai
 
 Essayez la nouvelle expérience de personnalisation de visuels. Faites-nous part de vos commentaires pour cette fonctionnalité et de la façon dont nous pouvons continuer à améliorer cette expérience, sur le [site Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi). 
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)

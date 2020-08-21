@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 5ca205bf2e82269140926ac69ccdead43b0cddd8
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091638"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204958"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -53,6 +53,9 @@ Pour accéder à un rapport à partir d’un tableau de bord, appuyez sur **Plus
   
   Les vignettes ne peuvent pas toutes être ouvertes en tant que rapports. Par exemple, les vignettes créées quand vous posez une question dans la zone Questions et réponses n’ouvrent pas de rapports quand vous appuyez dessus.
   
+## <a name="zoom-in-on-your-data"></a>Faire un zoom avant sur vos données   
+Utilisez le geste de pincement pour zoomer sur vos rapports et les examiner plus en détail. Faites un pincement inverse pour dézoomer à nouveau. Le pincement pour zoomer est pris en charge sur les tablettes et téléphones Android et iOS.
+
 ## <a name="interact-with-reports"></a>Interagir avec les rapports
 Une fois que vous avez ouvert un rapport dans l’application, vous pouvez commencer à l’utiliser. Vous pouvez faire beaucoup de choses avec votre rapport et les données qu’il contient. Dans le pied de page du rapport, vous trouverez les actions que vous pouvez effectuer sur le rapport. En appuyant brièvement ou longuement sur les données du rapport, vous pouvez aussi segmenter les données.
 

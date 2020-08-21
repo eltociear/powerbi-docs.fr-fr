@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: fd30b9df6fce484bffab430888260145bb374ce9
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
+ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091569"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88160369"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -103,8 +103,7 @@ Un travail dépassant le nombre de demandes simultanées ne se termine pas. Par 
 * Pour la préversion publique, le nombre de pages de rapport Power BI exportées par heure est limité à 50 par capacité.
 * Les rapports exportés ne peuvent pas dépasser une taille de fichier de 250 Mo.
 * Lors de l’exportation en tant que fichier .png, les étiquettes de sensibilité ne sont pas prises en charge.
-* Un rapport avec une étiquette de sensibilité ne peut pas être exporté au format .pdf ou .pptx à l’aide d’un [principal de service](embed-service-principal.md).
-* 30 pages peuvent être incluses dans un rapport exporté. Si le rapport contient plus de pages, l’API retourne une erreur et le travail d’exportation est annulé.
+* 50 pages peuvent être incluses dans un rapport exporté. Si le rapport contient plus de pages, l’API retourne une erreur et le travail d’exportation est annulé.
 * [Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
 * Les visuels Power BI répertoriés ci-dessous ne sont pas pris en charge. Lorsqu’un rapport contenant ces visuels est exporté, les parties du rapport contenant ces visuels ne sont pas rendues et un symbole d’erreur s’affiche.
     * Visuels Power BI non certifiés

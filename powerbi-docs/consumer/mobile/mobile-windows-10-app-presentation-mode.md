@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 85ba8b893dfa6da7934aff6b7890530e0acb2961
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
+ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091687"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88204497"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. Le mode Présentation est utile pour afficher Power BI lors de réunions ou de conférences ou sur un projecteur dédié au bureau ou pour optimiser l’espace sur un petit écran.
@@ -64,9 +64,24 @@ Lorsque vous sélectionnez le bouton **Lecture** dans la barre d’outils action
 
  Le contrôleur affiche le nom de la vue actuellement affichée (page ou signet et page). Dans l’image ci-dessus, nous voyons que dans le rapport appelé **Sales** (Ventes), nous voyons actuellement le signet **Asia Pacific** (Asie-Pacifique) sur la page **Sales Performance** (Performances des ventes).
 
+Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous définissez le comportement par défaut est dans les [Paramètres du diaporama](#slideshow-settings).
+
+
+### <a name="auto-play-a-slideshow-on-startup"></a>Lire automatiquement un diaporama au démarrage
+
+Vous pouvez configurer l’application mobile Power BI pour démarrer automatiquement la lecture d’un diaporama chaque fois que l’application est lancée. Cette option est utile pour créer une expérience de type kiosque qui exécute un rapport dans des affichages publics sans aucune intervention manuelle. Pour plus d’informations sur la configuration d’un rapport pour l’exécution automatique, consultez [Paramètres de diaporama](#slideshow-settings) .
+
 ### <a name="slideshow-settings"></a>Paramètres du diaporama
 
-Par défaut, un diaporama parcourt les pages, à raison d’une toutes les 30 secondes. Vous pouvez modifier ces paramètres par défaut en accédant à **Paramètres > Options**, comme illustré ci-dessous.
+Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous pouvez modifier ce comportement par défaut en accédant à **Paramètres > Options**, comme illustré ci-dessous. Vous pouvez également activer l’exécution automatique et choisir un rapport à lire.
+
+1. Sélectionnez l’icône Paramètres.
+
+1. Ouvrez l’onglet Options.
+
+1. Si vous le souhaitez, modifiez les paramètres par défaut pour le mode de basculement du diaporama (pages, signets ou les deux) et la fréquence de transition des diapositives.
+
+1. Si vous souhaitez que votre rapport démarre automatiquement lorsque l’application est lancée, activez le bouton bascule et choisissez **Sélectionner un rapport**. Vous pouvez rechercher les rapports auxquels vous avez accès.
 
 ![Capture d’écran des paramètres de diaporama](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 

@@ -1,24 +1,24 @@
 ---
 title: Utilisation de la fonctionnalité Analyser pour expliquer les fluctuations dans les visuels de rapport
-description: Obtenir facilement des informations sur des augmentations ou des diminutions dans Power BI Desktop
+description: Obtenir facilement des informations sur des augmentations ou des diminutions dans le service Power BI
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/23/2019
+ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 36f370adc68c6b6f8fc15261bfa107411043c65d
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: fe44b183b77cb1e58c89cfd229f3f76d3b06ce39
+ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162295"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168468"
 ---
-# <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals-preview"></a>Utilisation de la fonctionnalité Analyser pour expliquer les fluctuations dans les visuels de rapport (préversion)
+# <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals"></a>Utilisation de la fonctionnalité Analyser pour expliquer les fluctuations dans les visuels de rapport
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 Les visuels de rapport font souvent apparaître une hausse des valeurs importante suivie d’une baisse marquée, et vous vous interrogez sur la cause de telles fluctuations. Avec **Analyser** du **service Power BI**, vous pouvez identifier la cause en quelques clics.
 
@@ -26,7 +26,7 @@ Prenons par exemple le visuel suivant, qui indique *Unités totales* par *Mois* 
 
 ![Visuel avec des hausses et des baisses](media/end-user-analyze-visuals/power-bi-line-chart.png)
 
-Vous pouvez demander au service Power BI d’expliquer les hausses, les baisses ou les distributions inhabituelles observées dans des visuels afin d’obtenir une analyse rapide, automatique et révélatrice de vos données. Cliquez simplement avec le bouton droit sur un point de données, puis sélectionnez **Analyser > Expliquer la baisse** (ou la hausse si la barre précédente était plus basse), ou **Analyser > Trouver où cette distribution est différente**. Des insights vous sont proposés dans une fenêtre facile à utiliser.
+Vous pouvez demander au service Power BI d’expliquer les hausses, les baisses ou les distributions inhabituelles observées dans des visuels afin d’obtenir une analyse rapide, automatique et révélatrice de vos données. Cliquez avec le bouton droit sur un point de données, puis sélectionnez **Analyser > Expliquer la baisse** (ou la hausse si la barre précédente était plus basse), ou **Analyser > Trouver où cette distribution est différente**. Des insights vous sont proposés dans une fenêtre facile à utiliser.
 
 ![Insights dans un visuel](media/end-user-analyze-visuals/power-bi-decrease.png)
 
@@ -37,7 +37,7 @@ La fonctionnalité Analyser, contextuelle, se base sur le point de données qui 
 
 ### <a name="which-factors-and-categories-are-chosen"></a>Facteurs et catégories choisis
 
-Après examen des différentes colonnes, Power BI sélectionne et affiche celles dont la contribution relative a le plus fortement évolué. Pour chacune, les valeurs qui correspondent à la plus forte évolution sur le plan de la contribution sont représentées dans la description. Il en va de même des valeurs qui ont le plus augmenté ou baissé.
+Après examen des différentes colonnes, Power BI sélectionne et affiche les facteurs dont la contribution relative a le plus fortement évolué. Pour chacune, les valeurs qui correspondent à la plus forte évolution sur le plan de la contribution sont représentées dans la description. Il en va de même des valeurs qui ont le plus augmenté ou baissé.
 
 Pour afficher tous les insights générés par Power BI, utilisez la barre de défilement. Le contributeur le plus significatif est affiché en premier. 
 
@@ -71,15 +71,19 @@ Pour chaque insight retourné, quatre visuels peuvent être affichés. Trois de 
 
 ### <a name="the-scatter-plot"></a>Nuage de points
 
+![Petite capture d’écran montrant l’icône de nuage de points sélectionnée](media/end-user-analyze-visuals/power-bi-scatter-icon.png)
+
 Le visuel en nuage de points affiche la valeur de la mesure de la première période (sur l’axe X) par rapport à la celle de la deuxième période (sur l’axe Y), pour chaque valeur de la colonne (*State* dans ce cas). Les points de données se situent dans la zone verte s’ils ont augmenté et dans la zone rouge s’ils ont baissé. 
 
 Le trait en pointillé représente la droite d’ajustement. Ainsi, les points de données qui se trouvent au-dessus sont ceux qui ont augmenté davantage que la tendance globale et ceux qui se trouvent au-dessous sont ceux qui ont moins augmenté.  
 
 ![Nuage de points avec ligne en pointillés](media/end-user-analyze-visuals/power-bi-scatter.png)
 
-Notez que les éléments de données qui ne présentent pas de valeur dans l’une des périodes n’apparaissent pas dans le nuage de points.
+Les éléments de données qui ne présentent pas de valeur dans l’une des périodes n’apparaissent pas dans le nuage de points.
 
 ### <a name="the-100-stacked-column-chart"></a>Histogramme empilé 100 %
+
+![Petite capture d’écran montrant l’icône d’histogramme sélectionnée](media/end-user-analyze-visuals/power-bi-column-icon.png)
 
 Le visuel en histogramme empilé 100 % indique la valeur de la contribution au total (100 %) pour le point de données sélectionné et le précédent. Il permet une comparaison côte à côte de la contribution de chacun des points de données. Dans cet exemple, les info-bulles indiquent la contribution réelle de la valeur sélectionnée (Texas). Comme la liste des États est longue, elles aident à voir les détails. Elles permettent ainsi de constater que le Texas présente à peu près la même contribution en pourcentage aux unités totales (31 % et 32 %), mais que le nombre réel d’unités totales a baissé de 89 à 71. N’oubliez pas que l’axe Y est un pourcentage, et non un total, et que chaque bande de colonne représente un pourcentage, et non une valeur. 
 
@@ -87,11 +91,15 @@ Le visuel en histogramme empilé 100 % indique la valeur de la contribution au t
 
 ### <a name="the-ribbon-chart"></a>Graphique de ruban
 
+![Petite capture d’écran montrant l’icône de graphique de ruban sélectionnée](media/end-user-analyze-visuals/power-bi-ribbon-icon.png)
+
 Le graphique en ruban est un visuel qui indique la mesure avant et après. Il s’avère particulièrement utile pour montrer l’évolution des contributions quand le *classement* des contributeurs a évolué (par exemple, *LA* est passé de numéro deux à numéro onze).  Par ailleurs, bien que *TX* soit représenté par un ruban large tout en haut (ce qui signifie qu’il s’agit du contributeur le plus significatif avant et après), la chute montre que la valeur de la contribution a chuté au cours de la période sélectionnée et après.
 
 ![graphique de ruban](media/end-user-analyze-visuals/power-bi-ribbon-tooltip.png)
 
 ### <a name="the-waterfall-chart"></a>Graphique en cascade
+
+![Petite capture d’écran montrant l’icône de graphique en cascade sélectionnée](media/end-user-analyze-visuals/power-bi-waterfall-icon.png)
 
 Le quatrième visuel est un graphique en cascade qui souligne les hausses ou baisses réelles entre les périodes. Il montre clairement un contributeur significatif à la baisse de juin 2014, en l’occurrence **State** (État). En particulier, l’influence qu’a eue **State** (État) sur le nombre total d’unités se décline ainsi : les baisses enregistrées en Louisiane, au Texas et dans le Colorado sont celles qui ont joué le rôle le plus significatif.      
 
@@ -120,6 +128,6 @@ La liste suivante rassemble les scénarios non pris en charge à l’heure actue
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Graphiques en cascade](../visuals/power-bi-visualization-waterfall-charts.md)    
-[Nuages de points](../visuals/power-bi-visualization-scatter.md)
-[Histogrammes](../visuals/power-bi-report-visualizations.md)
-[Graphiques en ruban](../visuals/desktop-ribbon-charts.md)
+[Nuages de points](../visuals/power-bi-visualization-scatter.md)    
+[Histogrammes](../visuals/power-bi-report-visualizations.md)    
+[Graphiques de ruban](../visuals/desktop-ribbon-charts.md)

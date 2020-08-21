@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 6178c9f157578110a09abf3fcbebccba54339f13
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
+ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866042"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88578139"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Présentation des outils Questions et réponses pour entraîner Questions et réponses Power BI (préversion)
 
@@ -42,6 +42,24 @@ Les outils Questions et réponses sont disponibles uniquement dans Power BI Des
 
     ![Questions et réponses - Mise en route](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
+### <a name="field-synonyms"></a>Synonymes de champ
+
+Sélectionnez **Synonymes de champ** pour afficher toutes les tables et colonnes qui appartiennent au modèle. Cette vue vous permet d’ajouter d’autres noms pour les faire correspondre aux colonnes pour aider les utilisateurs. Vous pouvez également choisir si une colonne ou une table doit être masquée de Questions et réponses.
+
+![Accueil synonymes de champ Questions et réponses](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-home.png)
+
+Cliquez sur une des tables à développer pour afficher une boîte de dialogue semblable à celle ci-dessous.
+
+![Synonymes de champ Questions et réponses développés](media/q-and-a-tooling-intro/qna-tooling-field-synonyms-expanded.png)
+
+La boîte de dialogue affiche toutes les colonnes et tables, ainsi que leurs termes/synonymes respectifs que les utilisateurs peuvent utiliser pour poser des questions sur le jeu de données. Vous pouvez rapidement voir tous les termes dans un même emplacement et ajouter ou supprimer des termes pour plusieurs colonnes. 
+
+- Ajouter des termes : Si vous avez un champ appelé ventes, vous pouvez décider d’ajouter un terme « chiffre d’affaires » pour qu’un utilisateur puisse utiliser ce terme sans avoir à utiliser le mot ventes. Cliquez sur le signe Ajouter pour ajouter rapidement un nouveau terme
+
+- Inclure dans Questions et réponses : cette option permet d’omettre une colonne ou une table de Questions et réponses, ce qui signifie qu’elle ne sera pas affichée et qu’aucun résultat ne pourra être affiché avec cette colonne. Une situation dans laquelle vous pouvez décider de ne pas inclure une colonne est lorsque vous traitez des dates. S’il existe de nombreux champs de date, ou de clés étrangères, vous pouvez décider de supprimer tous les champs de date sauf un, afin que la colonne de date correcte soit choisie lorsqu’un utilisateur pose une question relative à la date.
+
+- Termes suggérés : Questions et réponses vous recommande également les termes suggérés récupérés à partir de notre moteur de suggestions pour vous aider à ajouter rapidement des termes/synonymes. Si les suggestions ne sont pas ajoutées, elles continuent de fonctionner, mais donnent à l’utilisateur une ligne en pointillés orange indiquant que Questions et réponses pense avoir une réponse, sans en avoir la certitude. Si le synonyme suggéré est correct, cliquez sur l’icône + pour qu’il puisse être utilisé comme synonyme. Si la suggestion est incorrecte, cliquez sur le x, ce qui supprime le terme et vous assurez qu’il ne sera pas utilisé comme terme/synonyme et ne fonctionnera pas au sein de Questions et réponses. Les suggestions sont alimentées par le dictionnaire Office et proviennent également de renommages dans un rapport
+
 ### <a name="review-questions"></a>Passer en revue les questions
 
 Sélectionnez **Passer en revue les questions** pour voir la liste des jeux de données utilisés dans le service Power BI pour votre locataire. La page **Passer en revue les questions** affiche également le propriétaire, l’espace de travail et la date de dernière actualisation du jeu de données. À partir de là, vous pouvez sélectionner un jeu de données et voir les questions posées par les utilisateurs. Les données affichent également les mots qui n’ont pas été reconnus. Toutes les données affichées ici correspondent aux 28 derniers jours.
@@ -62,7 +80,7 @@ Tout ce que vous avez enregistré dans la section Enseigner à Questions et rép
 
 ### <a name="suggest-questions"></a>Suggérer des questions
 
-Si vous n’avez pas effectué de configuration, le visuel Questions et réponses suggère plusieurs questions pour commencer. Ces questions sont générées automatiquement en fonction de votre modèle de données. Dans **Suggérer des questions**, vous pouvez remplacer ces questions générées automatiquement par vos propres questions. 
+Si vous n’avez pas effectué de configuration, le visuel Questions et réponses suggère plusieurs questions pour commencer. Ces questions sont générées automatiquement en fonction de votre modèle de données. Dans **Suggérer des questions**, vous pouvez remplacer ces questions générées automatiquement par vos propres questions.
 
 Pour commencer, tapez la question que vous souhaitez ajouter dans la zone de texte. La section Aperçu montre le résultat obtenu dans le visuel Questions et réponses. 
 
@@ -74,30 +92,12 @@ Sélectionnez le bouton **Ajouter** pour ajouter cette question à **Vos suggest
  
 Pensez à sélectionner **Enregistrer** pour afficher votre liste de suggestions de questions dans le visuel Questions et réponses. 
 
+> [!NOTE]
+> Les questions suggérées s’affichent pour toutes les instances du visuel Questions et réponses. Il n’est pas possible de créer un ensemble distinct de suggestions pour chaque visuel Questions et réponses.
+> 
+> 
 
 ## <a name="other-qa-settings"></a>Autres paramètres de Questions et réponses
-
-### <a name="bulk-synonyms"></a>Synonymes en vrac
-
-L’onglet **Modélisation** de Power BI Desktop offre d’autres options pour améliorer l’expérience Questions et réponses. 
-
-1. Dans Power BI Desktop, sélectionnez la vue Modélisation.
-
-2. Sélectionnez un champ ou une table pour afficher le volet **Propriétés**.  Ce volet s’affiche sur le côté droit de la zone de dessin et liste plusieurs actions Questions et réponses. L’une de ces options est **Synonymes**. Dans la zone **Synonymes**, vous pouvez définir rapidement des alternatives pour la table ou le champ que vous sélectionnez. Vous pouvez également définir des synonymes dans la section **Enseigner à Questions et réponses** de la boîte de dialogue Outils, mais il est souvent plus rapide de définir des synonymes ici pour un grand nombre de champs dans une table.
-
-    ![Questions et réponses - Synonymes dans le volet Modélisation](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
-
-3. Pour définir plusieurs synonymes pour un même champ, utilisez des virgules pour délimiter le synonyme suivant.
-
-### <a name="hide-from-qa"></a>Masquer dans Questions et réponses
-
-Vous pouvez également masquer des champs et des tables pour qu’ils n’apparaissent pas dans les résultats de Questions et réponses. 
-
-1. Dans Power BI Desktop, sélectionnez la vue Modélisation.
-
-2. Sélectionnez un champ ou une table pour afficher le volet **Propriétés** et définissez **Est masqué** sur **Activé**.
-
-    Questions et réponses respecte ce paramètre et garantit que ce champ ne sera pas reconnu. Par exemple, vous souhaitez peut-être masquer les champs d’ID et les clés étrangères pour éviter des champs en double inutiles portant le même nom. Même si vous masquez ce champ, vous pouvez encore l’utiliser dans Power BI Desktop dans des visuels en dehors de Questions et réponses.
 
 ### <a name="set-a-row-label"></a>Définir une étiquette de ligne
 

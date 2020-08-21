@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: d82f09fa4c545129bbd1032041dcfab6f4f67901
-ms.sourcegitcommit: a07fa723bb459494c60cf6d749b4554af723482a
+ms.openlocfilehash: ebb0107b158e505a8095b4c8f6b6b32731e7e98d
+ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84739342"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88512928"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Tutoriel : Développement d’un visuel Power BI
 
@@ -130,7 +130,7 @@ Vous devez maintenant installer le package **pbiviz**.
 4. Fermez les navigateurs que vous avez ouverts.
 
 > [!NOTE]
-> Si le certificat n’est pas reconnu, il se peut que vous deviez redémarrer votre ordinateur.
+> Si le certificat n’est pas reconnu, il se peut que vous deviez redémarrer votre ordinateur. Certains navigateurs tels que Firefox exigent que vous approuviez le certificat auto-signé. Pour ce faire, accédez à la page du serveur WebPack (https://localhost:8080/webpack-dev-server), et acceptez le risque.
 
 ## <a name="creating-a-custom-visual"></a>Création d’un visuel personnalisé
 
@@ -295,7 +295,7 @@ Vous pouvez maintenant développer le visuel personnalisé pour afficher un cerc
     PS C:\circlecard>
     ```
 
-2. Pour installer les définitions de type pour la  **bibliothèque D3**, entrez la commande ci-dessous.
+2. Pour installer les définitions de type pour la ** bibliothèque D3**, entrez la commande ci-dessous.
 
     ```powershell
     npm i @types/d3@^5.0.0 --save
@@ -601,7 +601,7 @@ Modifiez le fichier **capabilities.json** pour définir le rôle des données et
 
 ### <a name="consume-data-in-the-visual-code"></a>Utiliser des données dans le code visuel
 
-1. Dans **Visual Studio Code** , dans le fichier **visual.ts**,
+1. Dans **Visual Studio Code **, dans le fichier **visual.ts**,
 
     importez l’interface `DataView` à partir du module `powerbi`
 
