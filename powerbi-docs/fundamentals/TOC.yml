@@ -15,6 +15,8 @@
           href: service-service-vs-desktop.md
     - name: Tutoriels
       items:
+        - name: "Bien démarrer avec Power\_BI Desktop"
+          href: desktop-getting-started.md
         - name: "Bien démarrer avec le service Power\_BI"
           href: service-get-started.md
     - name: Concepts
@@ -41,8 +43,6 @@
       items:
         - name: "Obtenir Power\_BI\_Desktop"
           href: desktop-get-the-desktop.md
-        - name: "Bien démarrer avec Power\_BI Desktop"
-          href: desktop-getting-started.md
     - name: Référence
       items:
         - name: Langues et pays/régions pris en charge
