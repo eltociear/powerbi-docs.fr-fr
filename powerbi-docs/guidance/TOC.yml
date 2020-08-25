@@ -118,6 +118,24 @@
               href: report-performance-troubleshoot.md
             - name: Meilleures pratiques pour les pipelines de déploiement
               href: ../create-reports/deployment-pipelines-best-practices.md
+    - name: Migrer vers Power BI
+      items:
+        - name: Vue d’ensemble de la migration
+          href: powerbi-migration-overview.md
+        - name: Préparer la migration
+          href: powerbi-migration-pre-migration-steps.md
+        - name: Collecter vos exigences
+          href: powerbi-migration-requirements.md
+        - name: Planifier un déploiement
+          href: powerbi-migration-planning.md
+        - name: Exécuter une preuve de concept
+          href: powerbi-migration-proof-of-concept.md
+        - name: Créer du contenu
+          href: powerbi-migration-create-validate-content.md
+        - name: "Déployer sur Power\_BI"
+          href: powerbi-migration-deploy-support-monitor.md
+        - name: En savoir plus sur les migrations Power BI du client
+          href: powerbi-migration-learn-from-customers.md
     - name: Centre d’excellence
       items:
         - name: Transformation BI de Microsoft
