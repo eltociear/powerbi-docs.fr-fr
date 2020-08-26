@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 ms.author: davidi
-ms.openlocfilehash: 6afc5dd36127390dd359d76fc8970d5ef6f7b590
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: ae4d51d9a40044ae939f5cb2b0b15442697df5fd
+ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837563"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88764948"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -35,7 +35,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Stockage Blob Azure | Oui | Oui | Non | Oui | Non |
 | Azure Cosmos DB | Oui | Oui | Non | Non | Non |
 | Azure Cost Management | Oui | Oui | Non | Non | Non |
-| Azure Data Explorer (Kusto) | Oui | Oui | Oui | Non | Non |
+| Azure Data Explorer (Kusto) | Oui | Oui | Oui | Oui | Non |
 | Azure Data Lake Storage Gen1 | Oui | Oui | Non | Non | Non |
 | Azure Data Lake Storage Gen2 | Oui | Oui | Non | Oui | Non |
 | Azure DevOps | Oui | Oui | Non | Non | Non |

@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/20/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f42ee7a0b3b1aaf562e3ab087ad9c07501707afc
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: f7130b1565c85d8e18188c89c22dda3eda193018
+ms.sourcegitcommit: 0f807d3c74e5202b6e6a95fad49f2787928b9613
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878376"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88702625"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand
 Une version du **service Power BI**, souvent appelée Microsoft Cloud Deutschland (MCD), est disponible pour les clients de l’UE et de l’AELE. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients de l’UE/AELE. Elle est distincte et différente de la version commerciale du **service Power BI** ou des services Power BI destinés aux administrations.
@@ -53,6 +53,8 @@ Les questions et réponses suivantes fournissent des informations importantes su
    * Publication sur le web
    * Cartes ArcGIS par Esri
    * Power BI Embedded (des licences ISV distinctes seront bientôt proposées via [Microsoft Azure Allemagne](https://azure.microsoft.com/overview/clouds/germany/))
+   * Journalisation de l’activité
+
 7. **Où puis-je trouver des informations sur la configuration propres au service Power BI pour le cloud allemand à des fins d’utilisation et d’intégration dans mes applications ?**
    
    Nous avons mis à jour nos [exemples pour développeurs SaaS Embedded](https://github.com/Microsoft/PowerBI-Developer-Samples) avec des informations propres au cloud allemand et à d’autres cloud Power BI spécifiques. Consultez le dossier **Configurations cloud** disponible dans les exemples pour connaître les points de terminaison de configuration propres au cloud. Le tableau suivant répertorie les différents points de terminaison de configuration du service Power BI pour le cloud allemand (et le cloud public pour référence).
