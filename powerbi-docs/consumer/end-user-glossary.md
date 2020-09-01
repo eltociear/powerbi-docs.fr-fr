@@ -1,22 +1,23 @@
 ---
-title: Glossaire pour les consommateurs de Power BI
-description: Power BI introduit de nombreux termes nouveaux, ainsi que de nouvelles utilisations de termes familiers. Utilisez notre glossaire pour bien comprendre la terminologie de Power BI.
+title: Glossaire pour les utilisateurs professionnels de Power BI
+description: Power BI introduit de nombreux termes nouveaux, ainsi que de nouvelles utilisations de termes familiers. Utilisez notre glossaire pour bien comprendre la terminologie du service Power BI.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 07/08/2020
+ms.topic: reference
+ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
-ms.openlocfilehash: f5ed2252836ecda364ca53904c2cccbae9f9b7e6
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: cd562d8fe689c2ae82ee1cacfc9e02393a5992f9
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215609"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803040"
 ---
-# <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI    
+# <a name="glossary-for-business-users-of-the-power-bi-service"></a>Glossaire pour les utilisateurs professionnels du service Power BI    
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
 
 Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot que vous recherchez ? Demandez-nous de l’ajouter (vous pouvez utiliser le bouton de feedback sur la documentation en bas de cet article).
