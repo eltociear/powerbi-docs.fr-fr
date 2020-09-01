@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8e81c297841e32d1f4d966de23b5d752b654c20
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091615"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88802971"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -32,6 +32,10 @@ Il est important de savoir qui effectue une action sur un élément donné de vo
 
 
 ## <a name="use-the-activity-log"></a>Utiliser le journal d’activité
+
+> [!NOTE]
+> La journalisation des activités n’est pas prise en charge pour Microsoft Cloud Deutschland. Renseignez-vous sur les limitations de service pour le cloud allemand dans [Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand](service-govde-faq.md).
+
 
 En tant qu’administrateur de service Power BI, vous pouvez analyser l’utilisation de toutes les ressources Power BI au niveau du locataire à l’aide de rapports personnalisés basés sur le journal d’activité de Power BI. Vous pouvez télécharger les activités à l’aide d’une API REST ou d’une applet de commande PowerShell. Vous pouvez aussi filtrer les données d’activité par plage de dates, par utilisateur et par type d’activité.
 
@@ -73,6 +77,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > L’affichage de tous les événements peut prendre jusqu’à 24 heures, bien que les données complètes soient généralement disponibles plus tôt.
 >
 >
+Pour en savoir plus sur l’utilisation de l’API REST Power BI, notamment des exemples pour obtenir des événements d’activité d’audit, consultez [Admin - Obtenir des événements d’activité](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) dans la documentation de référence de l’API REST Power BI.
+
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Applet de commande Get-PowerBIActivityEvent
 
 Téléchargez les événements d’activité à l’aide des applets de commande de gestion Power BI pour PowerShell. L’applet de commande **Get-PowerBIActivityEvent** gère automatiquement le jeton de continuation. L’applet de commande **Get-PowerBIActivityEvent** utilise les paramètres StartDateTime et EndDateTime avec les mêmes restrictions que l’API REST **ActivityEvents**. Autrement dit, les dates de début et de fin doivent faire référence à la même valeur de date, car vous pouvez récupérer les données d’activité d’un seul jour à la fois.
@@ -113,7 +119,7 @@ Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de
 
 Vous devez remplir ces conditions requises pour accéder aux journaux d’audit :
 
-- Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange.
+- Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange. Pour plus d’informations sur les rôles autorisés à consulter les journaux d’audit, consultez [Configuration requise pour effectuer une recherche dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     Pour donner accès au journal d’audit à des comptes non administrateurs, ajoutez l’utilisateur à la liste des membres de l’un de ces groupes de rôles. Une autre possibilité, si vous le souhaitez, consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -176,11 +182,11 @@ La zone **Résultats** contient les informations suivantes sur chaque événemen
 | **Colonne** | **Définition** |
 | --- | --- |
 | Date |Date et heure (au format UTC) auxquelles l’événement s’est produit. |
-| Adresse IP |L’adresse IP de l’appareil utilisé pour l’activité journalisée. L’application affiche l’adresse IP au format d’adresse IPv4 ou IPv6. |
+| Adresse IP |L’adresse IP de l’appareil utilisé pour l’activité journalisée. L’application affiche l’adresse IP au format d’adresse IPv4 ou IPv6. |
 | Utilisateur |L’utilisateur (ou compte de service) qui a effectué l’action qui a déclenché l’événement. |
 | Activité |Activité exécutée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement du journal d’audit d’administrateur Exchange, la valeur de cette colonne est une cmdlet Exchange. |
-| Article |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne. |
-| Détails |Détails supplémentaires sur une activité. Là encore, seule une partie des activités a une valeur. |
+| Élément |Objet créé ou modifié en raison de l’activité correspondante. Par exemple, le fichier affiché ou modifié, ou le compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne. |
+| Detail |Détails supplémentaires sur une activité. Là encore, seule une partie des activités a une valeur. |
 
 #### <a name="view-the-details-for-an-event"></a>Afficher les détails d’un événement
 

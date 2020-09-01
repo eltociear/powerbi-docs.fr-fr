@@ -10,12 +10,12 @@ ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: d7ad3722b609d76383a7a404ef94655ec9ef8711
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: e737d8747f7d6d9b69eda2035df06abdddd9569f
+ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578047"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88803086"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -27,7 +27,7 @@ Maintenant que vous avez des [connaissances de base sur les applications](end-us
 
 ## <a name="ways-to-get-a-new-app"></a>Méthodes d’obtention d’une nouvelle application
 Il existe plusieurs façons d’obtenir une nouvelle application :
-* Vous pouvez la trouver sur la Place de marché des applications Power BI dans Power BI.
+* Vous pouvez la trouver sur la Place de marché des applications Power BI dans le service Power BI.
 * Vous pouvez suivre le lien direct vers une application qui vous a été envoyé par le concepteur de l’application. 
 * L’un des concepteurs d’application de votre organisation peut installer automatiquement l’application dans votre compte Power BI.
 
@@ -37,6 +37,8 @@ Avec Power BI Mobile, vous pouvez uniquement installer une application en suivan
 Tous les utilisateurs de Power BI ne peuvent pas visualiser et interagir avec les applications. 
 - Si vous disposez d’une licence gratuite, vous pouvez ouvrir des applications qui ont été partagées avec vous et qui sont stockées dans un espace de travail d’une capacité Premium.  
 - Si vous disposez d’une licence Pro, vous pouvez ouvrir des applications qui ont été partagées avec vous.
+
+Si vous ne parvenez pas à ouvrir certaines applications, contactez votre administrateur ou le support technique. Pour plus d’informations sur les licences, consultez [Gestion des licences Power BI](end-user-license.md).
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Téléchargement de l’application sur la Place de marché des applications Power BI
 

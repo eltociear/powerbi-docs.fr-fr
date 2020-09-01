@@ -5,14 +5,14 @@ services: ''
 author: mihart
 ms.service: powerbi
 ms.topic: include
-ms.date: 02/11/2020
+ms.date: 08/17/2020
 ms.author: mihart
 ms.custom: include file
-ms.openlocfilehash: 1266c7d2a38766e0cb33abcd878908bf43ecdf9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e9401c6ea5ee9cc9f1e1bb6a5e23c2b28434f93c
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81440313"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639072"
 ---
-<Token>**S’APPLIQUE À :** ![oui](media/yes.png)Service Power BI pour les ***consommateurs*** ![oui](media/yes.png)Service Power BI pour les concepteurs et les développeurs ![yes](media/yes.png)Power BI Desktop ![non](media/no.png)Nécessite une licence Pro ou Premium </Token>
+<Token>**S’APPLIQUE À :** ![oui](media/yes.png)Service Power BI pour les ***utilisateurs métier*** ![oui](media/yes.png)Service Power BI pour les concepteurs et les développeurs ![oui](media/yes.png)Power BI Desktop ![non](media/no.png)Nécessite une licence Pro ou Premium </Token>

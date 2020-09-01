@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 8e1e590f871e1840209e72eb611bde7b21610c6e
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1b4f86a0e3316cc774b0f1562112f0d6e5b19a4f
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86162364"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638701"
 ---
 # <a name="microsofts-bi-transformation"></a>Transformation BI de Microsoft
 
@@ -53,7 +53,7 @@ En périphérie, nos analystes financiers, commerciaux et marketing sont plus fl
 
 **Starlight** est le nom que nous avons donné à notre plateforme interne d’analytique et d’unification des données. Celle-ci prend en charge les services des finances, des ventes, du marketing et de l’ingénierie. Sa mission est de fournir une plateforme de données fiable, partagée et scalable. Entièrement créée par le service des finances, la plateforme est toujours en opération et fonctionne avec les produits Microsoft les plus récents.
 
-L’**indicateur de performance clés Lake** n’est pas un lac de données Azure. Il s’agit en fait d’un modèle tabulaire qui repose sur la technologie Starlight et qui est hébergé dans Azure IaaS à l’aide de Microsoft SQL Server Analysis Services. Le modèle tabulaire fournit des données provenant de plus de 100 sources internes et définit de nombreuses hiérarchies et indicateurs de performance clés. Son objectif est de permettre la création de rapports et l’analyse des performances métier sur plusieurs équipes (finance, marketing et ventes). Pour y parvenir, il obtient des insights opportuns, précis et performants grâce à des modèles unifiés provenant de sources pertinentes.
+L’**indicateur de performance clés Lake** n’est pas un lac de données Azure. Il s’agit en fait d’un modèle sémantique BI tabulaire qui repose sur la technologie Starlight et qui est hébergé dans Azure IaaS à l’aide de Microsoft SQL Server Analysis Services. Le modèle sémantique BI tabulaire fournit des données provenant de plus de 100 sources internes et définit de nombreuses hiérarchies et indicateurs de performance clés. Son objectif est de permettre la création de rapports et l’analyse des performances métier sur plusieurs équipes (finance, marketing et ventes). Pour y parvenir, il obtient des insights opportuns, précis et performants grâce à des modèles sémantiques BI unifiés provenant de sources pertinentes.
 
 Son premier déploiement s’est avéré passionnant, car il a produit des avantages immédiats et mesurables. La première version a permis de centraliser les plateformes décisionnelles C+E des finances et du marketing. Puis, au cours des six dernières années, il a été élargi pour consolider d’autres solutions d’insights métier. Aujourd’hui, il continue à évoluer et à alimenter nos revues d’activité au niveau global et commercial, ainsi que nos rapports standard et notre décisionnel libre-service. Son adoption a été multipliée par 5 depuis sa sortie, bien au-delà de nos attentes initiales.
 
@@ -71,8 +71,8 @@ L’**indicateur de performance clés Lake** est une grande réussite. Il est so
 La plateforme Starlight gère le flux des données, de l’acquisition au traitement jusqu’à la publication :
 
 1. L’intégration fiable et agile des données se déroule de manière planifiée et consolide les données de plus de 100 sources brutes disparates. Parmi les systèmes de données sources, citons les bases de données relationnelles, Azure Data Lake Storage et les bases de données Azure Synapse. Les domaines couvrent la finance, le marketing, les ventes et l’ingénierie.
-2. Une fois en préproduction, les données sont harmonisées et enrichies à l’aide des données de référence et de la logique métier. Elles sont ensuite chargées dans les tables de l’entrepôt de données. Le modèle tabulaire est ensuite actualisé.
-3. Les analystes de l’entreprise utilisent Excel et Power BI pour dégager des insights et des informations analytiques à partir du modèle tabulaire. Il permet également aux propriétaires de mettre en œuvre des définitions de métrique pour leur propre entreprise. Si nécessaire, la mise à l’échelle est réalisée à l’aide d’Azure IaaS avec équilibrage de charge.
+2. Une fois en préproduction, les données sont harmonisées et enrichies à l’aide des données de référence et de la logique métier. Elles sont ensuite chargées dans les tables de l’entrepôt de données. Le modèle sémantique BI tabulaire est ensuite actualisé.
+3. Les analystes de l’entreprise utilisent Excel et Power BI pour dégager des insights et des informations analytiques à partir du modèle sémantique BI tabulaire. Il permet également aux propriétaires de mettre en œuvre des définitions de métrique pour leur propre entreprise. Si nécessaire, la mise à l’échelle est réalisée à l’aide d’Azure IaaS avec équilibrage de charge.
 
 ## <a name="deliver-success"></a>Réussir
 
@@ -86,10 +86,16 @@ Nous vous invitons à lire les articles de cette série consacrée au centre d�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans l’[article suivant de cette série](center-of-excellence-establish.md), découvrez comment la mise en place d’un centre d’excellence a permis à Microsoft de créer une plateforme d’analytique et de données normalisée pour dégager des insights à partir de ses données.
-
 Pour plus d’informations sur cet article, consultez les ressources suivantes :
 
 - [Établir un centre d’excellence](center-of-excellence-establish.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
+
+Dans l’[article suivant de cette série](center-of-excellence-establish.md), découvrez comment la mise en place d’un centre d’excellence a permis à Microsoft de créer une plateforme d’analytique et de données normalisée pour dégager des insights à partir de ses données.
+
+### <a name="professional-services"></a>Services professionnels
+
+Les partenaires Power BI certifiés sont là pour aider votre organisation à mener à bien la mise en place d’un centre d’excellence. Ils peuvent vous fournir une formation peu onéreuse ou encore un audit de vos données. Pour contacter un partenaire Power BI, accédez au [portail des partenaires Power BI](https://powerbi.microsoft.com/partners/).
+
+Vous pouvez également prendre contact avec des conseillers partenaires expérimentés. Ces derniers vous aideront à [évaluer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [mesurer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) ou [implémenter](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

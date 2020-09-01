@@ -10,12 +10,12 @@ ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 3d50b8678abd54d2a4543b5a2d187f32b491b063
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 75b05449de47f39fc95fd7cf42f9325b7a5d0ee9
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427122"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638770"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 
@@ -86,7 +86,7 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Audit par le biais du Centre d’administration de sécurité et conformité Office 365|Disponible|Disponible|Disponible|
 |  |Partage avec des utilisateurs externes|Disponible|Disponible|Disponible|
 |  |Mesures d’utilisation pour les rapports et les tableaux de bord|Disponible|Disponible|Disponible|
-|  |Azure B2B entre GCC et le cloud commercial|Disponible|Disponible|Disponible|
+|  |Azure B2B Collaboration entre GCC et le cloud commercial<sup>1</sup>|Disponible|Non disponible|Non disponible|
 |Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
 |  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
 |  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
@@ -108,6 +108,8 @@ Pour répondre aux besoins des clients du cloud pour le secteur public, il exist
 |  |Machine Learning automatisé|Non disponible|Non disponible|Non disponible|
 |  |Azure Cognitive Services|Non disponible|Non disponible|Non disponible|
 |  |Azure Machine Learning|Non disponible|Non disponible|Non disponible|
+
+<sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour US Government, lisez la [comparaison entre Azure Government et Azure international](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

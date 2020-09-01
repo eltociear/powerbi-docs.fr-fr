@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9aab2afd9e3b4b86844c045ceb0346d57baa3e18
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 477b6a1e29fc05da3004a2dcf8466ef969df4531
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940032"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638609"
 ---
 # <a name="establish-a-center-of-excellence"></a>Établir un centre d’excellence
 
@@ -45,10 +45,10 @@ Chez Microsoft, notre centre d’excellence a pour nom « BI Platform » (plat
 
 Des capacités partagées sont nécessaires pour établir et exploiter la plateforme décisionnelle. Elles prennent en charge tous les groupes de parties prenantes qui financent la plateforme. Elles comprennent les équipes suivantes :
 
-- **Ingénierie de la plateforme de base :** Notre plateforme décisionnelle a été conçue sous l’angle de l’ingénierie. Il s’agit en fait d’un ensemble de frameworks qui prennent en charge l’ingestion de données, le traitement visant à enrichir les données ainsi que la remise de ces données dans des modèles de données pouvant être consommés par les analystes. Les ingénieurs sont responsables de la conception et de l’implémentation techniques des fonctionnalités de la plateforme décisionnelle de base. Par exemple, ils conçoivent et implémentent les pipelines de données.
+- **Ingénierie de la plateforme de base :** Notre plateforme décisionnelle a été conçue sous l’angle de l’ingénierie. Il s’agit en fait d’un ensemble de frameworks qui prennent en charge l’ingestion de données, le traitement visant à enrichir les données ainsi que la livraison de ces données dans des modèles sémantiques BI pouvant être consommés par les analystes. Les ingénieurs sont responsables de la conception et de l’implémentation techniques des fonctionnalités de la plateforme décisionnelle de base. Par exemple, ils conçoivent et implémentent les pipelines de données.
 - **Infrastructure et hébergement :** Les ingénieurs informatiques sont chargés du provisionnement et de la gestion de tous les services Azure.
 - **Support et opérations :** Cette équipe assure le bon fonctionnement de la plateforme. Le support s’occupe des besoins des utilisateurs, comme les autorisations d’accès aux données. Les opérations sont chargées de la bonne marche de la plateforme, veillent au respect des contrats de niveau de service (SLA) et communiquent les retards ou les échecs.
-- **Gestion des versions :** Les gestionnaires de programmes techniques publient les changements. Ceux-ci vont des mises à jour apportées au framework de la plateforme aux demandes de changement visant les modèles de données. Cette équipe est la dernière ligne de défense pour vérifier que les changements n’entraînent aucun dysfonctionnement.
+- **Gestion des versions :** Les gestionnaires de programmes techniques publient les changements. Ceux-ci vont des mises à jour apportées au framework de la plateforme aux demandes de changement visant les modèles sémantiques BI. Cette équipe est la dernière ligne de défense pour vérifier que les changements n’entraînent aucun dysfonctionnement.
 
 ### <a name="dedicated-deliveries"></a>Remises dédiées
 
@@ -60,13 +60,22 @@ Chez Microsoft, notre plateforme décisionnelle est gérée par des équipes sca
 
 - **Gestionnaires de programmes :** Les gestionnaires de programmes sont des ressources dédiées. Ils servent de contact principal entre l’équipe décisionnelle et les parties prenantes. Leur travail est convertir les exigences métier des parties prenantes en spécifications techniques. Ils gèrent également les priorités des livrables aux parties prenantes.
 - **Responsables de base de données :** Cette ressource dédiée est responsable de l’intégration des nouveaux jeux de données dans l’entrepôt de données centralisé. L’intégration d’un jeu de données peut nécessiter la configuration de dimensions conformes, l’ajout d’une logique métier et d’attributs personnalisés, ainsi que l’application de noms et d’une mise en forme standard.
-- **Responsables de l’analytique :** Les membres de cette ressource dédiée sont responsables de la conception et du développement de modèles de données. Ils s’efforcent d’appliquer une architecture cohérente en utilisant des noms et des mises en forme standard. L’optimisation des performances est un volet important de leur travail.
+- **Responsables de l’analytique :** Les membres de cette ressource dédiée sont responsables de la conception et du développement de modèles sémantiques BI. Ils s’efforcent d’appliquer une architecture cohérente en utilisant des noms et des mises en forme standard. L’optimisation des performances est un volet important de leur travail.
 - **Opérations et infrastructure :** Les membres de cette ressource partagée sont chargés de gérer les travaux et les pipelines de données. Ils sont également responsables de la gestion des abonnements Azure, des capacités de Power BI, des machines virtuelles et des passerelles de données.
-- **Support :** Les membres de cette ressource partagée sont chargés d’écrire la documentation, d’organiser la formation, de communiquer les changements relatifs au modèle de données et de répondre aux questions des utilisateurs.
+- **Support :** Les membres de cette ressource partagée sont chargés d’écrire la documentation, d’organiser la formation, de communiquer les changements relatifs aux modèles sémantiques BI et de répondre aux questions des utilisateurs.
 
 ## <a name="governance-and-compliance"></a>Gouvernance et conformité
 
 Pour chaque groupe de parties prenantes, les chefs de projet fournissent une gouvernance et une supervision interprogrammes. Leur objectif principal est de garantir que les investissements en informatique génèrent de la valeur métier et atténuent les risques. Le comité directeur se réunit régulièrement pour passer en revue la progression et approuver les initiatives majeures.
+
+## <a name="grow-your-own-community"></a>Développer votre propre communauté
+
+Établissez et développez une communauté au sein de votre organisation :
+
+- Organisez régulièrement des événements « Office Hours » lors desquels l’équipe décisionnelle aura le temps de poser des questions, faire des suggestions, partager des idées et même se plaindre.
+- Créez un canal Teams pour fournir un support, et encourager les utilisateurs à poser des questions et à répondre aux questions postées.
+- Mettez en place des groupes d’utilisateurs informels et faites-les connaître auprès des employés pour les inciter à les animer ou à y participer.
+- Organisez des événements de formation plus formels sur des produits spécifiques et sur la plateforme décisionnelle proprement dite. Prévoyez un atelier [Dashboard in a Day sur Power BI](https://powerbi.microsoft.com/diad/). Disponible gratuitement sous la forme d’un ensemble de cours, c’est un excellent moyen de faire connaître Power BI aux employés.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -75,3 +84,11 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 - [Architecture de la solution décisionnelle dans le centre d’excellence](center-of-excellence-business-intelligence-solution-architecture.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
+
+Dans l’[article suivant de cette série](center-of-excellence-business-intelligence-solution-architecture.md), découvrez l’architecture des solutions BI dans le centre d’excellence et les différentes technologies employées.
+
+### <a name="professional-services"></a>Services professionnels
+
+Les partenaires Power BI certifiés sont là pour aider votre organisation à mener à bien la mise en place d’un centre d’excellence. Ils peuvent vous fournir une formation peu onéreuse ou encore un audit de vos données. Pour contacter un partenaire Power BI, accédez au [portail des partenaires Power BI](https://powerbi.microsoft.com/partners/).
+
+Vous pouvez également prendre contact avec des conseillers partenaires expérimentés. Ces derniers vous aideront à [évaluer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [mesurer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) ou [implémenter](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

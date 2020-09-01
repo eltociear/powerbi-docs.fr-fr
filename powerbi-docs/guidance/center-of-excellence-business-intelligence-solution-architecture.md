@@ -6,24 +6,31 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 81dda3c2bc3558ba68a16ee3f3070e748f76f15b
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: fe55c789f5af644a802bc5c5f648315744a074be
+ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85940101"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88638648"
 ---
 # <a name="bi-solution-architecture-in-the-center-of-excellence"></a>Architecture de la solution décisionnelle dans le centre d’excellence
 
 Cet article s’adresse aux professionnels de l’informatique et aux responsables informatiques. Il aborde l’architecture de la solution décisionnelle dans le centre d’excellence et les différentes technologies utilisées, notamment Azure, Power BI et Excel. Ensemble, ces technologies permettent de mettre en place une plateforme décisionnelle scalable et pilotée par les données dans le cloud.
 
-La conception d’une plateforme décisionnelle fiable s’apparente à la construction d’un pont, celui-ci reliant des données source transformées et enrichies à des consommateurs de données. La conception d’une structure de cette complexité exige des compétences d’ingénieur, mais l’aspect créatif de cette architecture informatique peut se révéler des plus gratifiant.
+La conception d’une plateforme décisionnelle fiable s’apparente à la construction d’un pont, celui-ci reliant des données source transformées et enrichies à des consommateurs de données. La conception d’une structure de cette complexité exige des compétences d’ingénieur, mais l’aspect créatif de cette architecture informatique peut se révéler des plus gratifiant. Dans une grande organisation, une architecture de solution décisionnelle peut être constituée des éléments suivants :
+
+- Sources de données
+- Ingestion de données
+- Préparation des données/Big Data
+- Entrepôt de données
+- Modèles sémantiques BI
+- Rapports
+
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Diagramme de l’architecture d’une plateforme décisionnelle : des sources de données au Machine Learning en passant par l’ingestion des données, le Big Data, le stockage, l’entrepôt de données, les modèles sémantiques BI et la création de rapports.":::
 
 La plateforme doit prendre en charge des demandes spécifiques. Plus précisément, elle doit pouvoir être mise à l’échelle et exécutée pour répondre aux attentes des services métier et des consommateurs de données. Elle doit également être entièrement sécurisée. Enfin, elle doit être suffisamment résiliente pour s’adapter aux changements puisqu’il est certain que nouvelles données et de nouveaux domaines seront mis en ligne à l’avenir.
-
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-business-intelligence-platform.png" alt-text="Image montrant le diagramme de l’architecture d’une plateforme décisionnelle : des sources de données au Machine Learning en passant par l’ingestion des données, le Big Data, le stockage, l’entrepôt de données et la création de rapports.":::
 
 ## <a name="frameworks"></a>Frameworks
 
@@ -40,7 +47,7 @@ Les modèles de données vous permettent de contrôler la structure et l’acces
 Une plateforme décisionnelle peut fournir trois types différents de modèles :
 
 - Modèles d’entreprise
-- Modèles décisionnels
+- Modèles sémantiques BI
 - Modèles Machine Learning (ML)
 
 ### <a name="enterprise-models"></a>Modèles d’entreprise
@@ -51,17 +58,15 @@ Les modèles d’entreprise offrent une source de données cohérente et unique 
 
 Dans une plateforme décisionnelle cloud, les modèles d’entreprise peuvent être déployés sur un [pool SQL Synapse dans Azure Synapse](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is#synapse-sql-pool-in-azure-synapse). Le pool SQL Synapse devient alors la source unique de vérité sur laquelle l’organisation peut compter pour obtenir des insights rapides et fiables.
 
-### <a name="bi-models"></a>Modèles décisionnels
+### <a name="bi-semantic-models"></a>Modèles sémantiques BI
 
-Les **modèles décisionnels** sont une couche sémantique résidant sur les modèles d’entreprise. Ils sont créés et gérés par les développeurs en décisionnel et les utilisateurs métier. Les développeurs en décisionnel créent des modèles décisionnels de base qui récupèrent les données des modèles d’entreprise. Les utilisateurs métier peuvent créer des modèles indépendants à plus petite échelle ou étendre les modèles décisionnels de base avec des sources externes ou propres à un service. Les modèles décisionnels couvrent généralement un seul domaine et sont souvent largement partagés.
+Les **modèles sémantiques BI** sont une couche sémantique résidant sur les modèles métier. Ils sont créés et gérés par les développeurs en décisionnel et les utilisateurs métier. Les développeurs en décisionnel créent des modèles sémantiques BI de base qui utilisent les données des modèles métier. Les utilisateurs professionnels peuvent créer des modèles indépendants à plus petite échelle ou étendre les modèles sémantiques BI de base avec des sources externes ou propres à un service. Les modèles sémantiques BI portent généralement sur un seul domaine et sont souvent largement partagés.
 
-Les fonctionnalités métier ne sont pas activées uniquement par les données, mais par les modèles décisionnels qui décrivent les concepts, les relations, les règles et les normes. De cette façon, ils représentent des structures intuitives et faciles à comprendre qui définissent les relations entre les données et encapsulent les règles métier sous forme de calculs. Ils peuvent également appliquer des autorisations précises pour l’accès aux données, garantissant ainsi que les bonnes personnes ont accès aux bonnes données. Plus important encore, ils améliorent les performances des requêtes en fournissant une analytique interactive extrêmement réactive, même sur plusieurs téraoctets de données. Au même titre que les modèles d’entreprise, les modèles décisionnels adoptent des conventions de nommage qui garantissent la cohérence.
+Les fonctionnalités métier ne sont pas activées uniquement par les données, mais par les modèles sémantiques BI qui décrivent les concepts, les relations, les règles et les standards. De cette façon, ils représentent des structures intuitives et faciles à comprendre qui définissent les relations entre les données et encapsulent les règles métier sous forme de calculs. Ils peuvent également appliquer des autorisations précises pour l’accès aux données, garantissant ainsi que les bonnes personnes ont accès aux bonnes données. Plus important encore, ils améliorent les performances des requêtes en fournissant une analytique interactive extrêmement réactive, même sur plusieurs téraoctets de données. Au même titre que les modèles métier, les modèles sémantiques BI adoptent des conventions de nommage qui garantissent la cohérence.
 
-Dans une plateforme décisionnelle cloud, les développeurs en décisionnel peuvent déployer des modèles décisionnels sur [Azure Analysis Services](/azure/analysis-services/) ou [Power BI Premium](../admin/service-premium-what-is.md#dedicated-capacities). Nous vous recommandons de déployer sur Power BI si vous vous en servez comme couche de création de rapports et d’analytique. Ces produits prennent en charge différents modes de stockage, ce qui permet aux tables de modèle de données de mettre en cache leurs données ou d’utiliser [DirectQuery](directquery-model-guidance.md), une technologie qui transmet les requêtes à la source de données sous-jacente. DirectQuery est le mode de stockage idéal quand les tables de modèle contiennent des volumes de données importants ou quand vous devez fournir des résultats en quasi-temps réel. Vous pouvez par ailleurs combiner ces deux modes de stockage : les [modèles composites](composite-model-guidance.md) combinent des tables qui utilisent différents modes de stockage en un seul modèle.
+Dans une plateforme décisionnelle cloud, les développeurs en décisionnel peuvent déployer des modèles sémantiques BI sur [Azure Analysis Services](/azure/analysis-services/) ou [Power BI Premium](../admin/service-premium-what-is.md#dedicated-capacities). Nous vous recommandons de déployer sur Power BI si vous vous en servez comme couche de création de rapports et d’analytique. Ces produits prennent en charge différents modes de stockage, ce qui permet aux tables de modèle de données de mettre en cache leurs données ou d’utiliser [DirectQuery](directquery-model-guidance.md), une technologie qui transmet les requêtes à la source de données sous-jacente. DirectQuery est le mode de stockage idéal quand les tables de modèle contiennent des volumes de données importants ou quand vous devez fournir des résultats en quasi-temps réel. Vous pouvez par ailleurs combiner ces deux modes de stockage : les [modèles composites](composite-model-guidance.md) combinent des tables qui utilisent différents modes de stockage en un seul modèle.
 
-Pour les modèles faisant l’objet d’un grand nombre de requêtes, vous pouvez utiliser [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) pour répartir uniformément la charge des requêtes entre les réplicas de modèle. Il vous permet également de mettre à l’échelle vos applications et de créer des modèles décisionnels hautement disponibles.
-
-<!-- For more information on BI models, see [BI modeling and processing in the COE](https://TODO/).-->
+Pour les modèles faisant l’objet d’un grand nombre de requêtes, vous pouvez utiliser [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) pour répartir uniformément la charge des requêtes entre les réplicas de modèle. Il vous permet également de mettre à l’échelle vos applications et de créer des modèles sémantiques BI hautement disponibles.
 
 ### <a name="machine-learning-models"></a>Modèles Machine Learning
 
@@ -134,7 +139,7 @@ Les données affinées sont ensuite stockées dans une base de données relation
 
 Au niveau de la couche de rapports, les services métier consomment des données d’entreprise provenant de l’entrepôt de données. Ils accèdent également aux données directement dans le lac de données pour les tâches d’analyse ad hoc ou de science des données.
 
-Des autorisations précises sont appliquées à toutes les couches : dans le lac de données, les modèles d’entreprise et les modèles décisionnels. Les autorisations garantissent que les consommateurs de données ne peuvent voir que les données auxquelles ils ont le droit d’accéder.
+Des autorisations précises sont appliquées à toutes les couches : dans le lac de données, les modèles métier et les modèles sémantiques BI. Les autorisations garantissent que les consommateurs de données ne peuvent voir que les données auxquelles ils ont le droit d’accéder.
 
 Chez Microsoft, nous utilisons des rapports et des tableaux de bord Power BI et des [rapports paginés Power BI](../paginated-reports/paginated-reports-report-builder-power-bi.md). Certaines tâches de création de rapports et d’analyse ad hoc sont effectuées dans Excel, en particulier pour les rapports financiers.
 
@@ -142,11 +147,11 @@ Nous publions des dictionnaires de données qui fournissent des informations de 
 
 En général, les modèles de consommation des données varient en fonction du rôle :
 
-- Les **analystes de données** se connectent directement aux modèles décisionnels de base. Quand ces modèles contiennent toutes les données et la logique dont ils ont besoin, ils utilisent des connexions actives pour créer des rapports et des tableaux de bord Power BI. Pour étendre ces modèles avec les données de services, ils créent des [modèles composites](composite-model-guidance.md) Power BI. S’ils ont besoin de rapports de type feuille de calcul, ils utilisent Excel pour produire des rapports basés sur des modèles décisionnels de base ou des modèles décisionnels de service.
-- Les **développeurs en décisionnel** et les auteurs de rapports opérationnels se connectent directement aux modèles d’entreprise. Ils utilisent Power BI Desktop pour créer des rapports d’analytique associés à une connexion active. Ils peuvent également créer des rapports décisionnels axés sur les opérations sous la forme de rapports paginés Power BI, en écrivant des requêtes SQL natives pour accéder aux données des modèles d’entreprise Azure Synapse Analytics avec T-SQL ou des modèles Power BI avec DAX ou MDX.
+- Les **analystes de données** se connectent directement aux modèles sémantiques BI de base. Quand ils disposent de tels modèles contenant toutes les données et la logique dont ils ont besoin, ils utilisent des connexions actives pour créer des rapports et des tableaux de bord Power BI. Pour étendre ces modèles avec les données de services, ils créent des [modèles composites](composite-model-guidance.md) Power BI. S’ils ont besoin de rapports de type feuille de calcul, ils utilisent Excel pour produire des rapports basés sur des modèles sémantiques BI de base ou des modèles sémantiques BI de service.
+- Les **développeurs en décisionnel** et les auteurs de rapports opérationnels se connectent directement aux modèles d’entreprise. Ils utilisent Power BI Desktop pour créer des rapports d’analytique associés à une connexion active. Ils peuvent également créer des rapports décisionnels axés sur les opérations sous la forme de rapports paginés Power BI, en écrivant des requêtes SQL natives pour accéder aux données des modèles d’entreprise Azure Synapse Analytics avec T-SQL ou des modèles sémantiques Power BI avec DAX ou MDX.
 - Les **scientifiques des données** se connectent directement aux données dans le lac de données. Ils utilisent Azure Databricks et des notebooks Python pour développer des modèles ML, qui sont souvent expérimentaux et qui nécessitent des compétences spéciales pour une utilisation en production.
 
-:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="Image montrant la consommation d’Azure Synapse Analytics avec Power BI et Azure Machine Learning.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="Image montrant la consommation d’Azure Synapse Analytics avec Power BI, Excel et Azure Machine Learning.":::
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -155,3 +160,9 @@ Pour plus d’informations sur cet article, consultez les ressources suivantes 
 - [Décisionnel d’entreprise dans Azure avec Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
+
+### <a name="professional-services"></a>Services professionnels
+
+Les partenaires Power BI certifiés sont là pour aider votre organisation à mener à bien la mise en place d’un centre d’excellence. Ils peuvent vous fournir une formation peu onéreuse ou encore un audit de vos données. Pour contacter un partenaire Power BI, accédez au [portail des partenaires Power BI](https://powerbi.microsoft.com/partners/).
+
+Vous pouvez également prendre contact avec des conseillers partenaires expérimentés. Ces derniers vous aideront à [évaluer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [mesurer](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL) ou [implémenter](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.
