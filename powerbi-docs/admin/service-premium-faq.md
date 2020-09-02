@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 189710c613c7d48f76ee0bb23a430ac4d9908c74
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 4188a5570dfe15658e13d3358f3e192ac842cbfb
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792864"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937329"
 ---
 # <a name="power-bi-premium-faq"></a>FAQ Power BI Premium
 
@@ -83,11 +83,11 @@ Pour plus d’informations, voir [Prise en main de Power BI Report Server](..
 
 **Étapes suivantes**
 
-[Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
-[Notes de publication Power BI Premium](../service-premium-release-notes.md)
-[Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Livre blanc Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy)
-[Activation de l’essai Pro prolongé](../service-extended-pro-trial.md)
-[Questions fréquentes sur Power BI Embedded](../developer/embedded/embedded-faq.md)
+* [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
+* [Notes de publication Power BI Premium](../service-premium-release-notes.md)
+* [Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
+* [Planification d’un livre blanc sur le déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy)
+* [Activation de la version d’essai Pro prolongée](../service-extended-pro-trial.md)
+* [FAQ sur Power BI Embedded](../developer/embedded/embedded-faq.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

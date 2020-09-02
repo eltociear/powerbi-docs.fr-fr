@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 669f05c03bd7a42d5b44f6ca2fa1b4d58680f71b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3e7bb33eae8be4a0eaa7eb4d92ca165c74b14ed5
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237744"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937375"
 ---
 # <a name="use-directquery-with-dataflows-in-power-bi-preview"></a>Utiliser DirectQuery avec des dataflows dans Power BI (préversion)
 
@@ -48,8 +48,6 @@ Une fois que vous avez appliqué ce paramètre, actualisez le dataflow pour que 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 Il existe quelques limitations connues avec DirectQuery et les dataflows, qui sont décrites dans la liste suivante.
-
-* DirectQuery pour les dataflows ne fonctionne pas avec **la préversion de la fonctionnalité des métadonnées améliorées**. Cette exclusion est censée être supprimée dans une prochaine version mensuelle de Power BI Desktop.
 
 * Pendant la période de préversion de cette fonctionnalité, certains clients peuvent rencontrer des dépassements de délai d’expiration ou des problèmes de performances lors de l’utilisation de DirectQuery avec des dataflows. Des solutions à ces problèmes sont activement recherchées pendant cette période de préversion.
 

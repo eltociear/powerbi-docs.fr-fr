@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/21/2020
 ms.author: maggies
-ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866768"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937582"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Limitations de Questions et réponses dans Power BI
 
@@ -75,7 +75,6 @@ Actuellement, nous ne prenons pas en charge la redéfinition d’un terme reconn
 
 ### <a name="statements-not-supported"></a>Instructions non prises en charge
 
-- L’utilisation de mesures dans des conditions n’est pas prise en charge pour le moment. Au lieu de cela, convertissez les mesures en colonnes calculées pour les utiliser.
 - Les conditions multiples ne sont pas prises en charge. Pour contourner ce problème, créez une colonne calculée DAX qui équivaut au booléen d’une instruction multicondition et utilisez ce champ à la place.
 - Si vous ne spécifiez pas de condition de filtre quand Questions et réponses vous invite à fournir un sous-ensemble de données, vous ne pouvez pas enregistrer la définition, même si la totalité de l’instruction n’a aucun trait de soulignement rouge.
 
