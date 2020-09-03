@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d4d5386a7e56618a761e541ba7942778a09a7008
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427504"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092288"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Rapports paginés Power BI en une journée
 
@@ -83,28 +83,29 @@ Le [cours de 24 vidéos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 Vous pouvez télécharger et configurer un kit d’auto-apprentissage, qui est constitué du contenu de la présentation et de huit labos pratiques :
 
-1. Utilisez [ce lien](https://aka.ms/priad-student) pour télécharger le kit d’auto-apprentissage (.zip) localement sur votre PC.
-1. Ouvrez les propriétés du fichier et cochez « Débloquer » (Windows est susceptible de marquer le fichier comme étant potentiellement non approuvé).
-1. Extrayez le contenu du fichier dans un dossier de votre système de fichiers. Nous vous recommandons de créer un dossier qui sera facile à trouver, par exemple en le nommant **Formation**. Les documents du labo se réfèrent à cet emplacement sous le nom de **&lt;CourseFolder&gt;** .
+1. Utilisez [ce lien](https://aka.ms/priad-student) pour télécharger le kit d’auto-apprentissage (.zip) localement sur votre PC (Windows 7 ou version ultérieure).
+1. Ouvrez les propriétés du fichier du fichier zip et cochez « Débloquer » (Windows est susceptible de marquer le fichier comme étant potentiellement non approuvé).
+1. Créez un dossier de cours racine. Nous vous recommandons de lui donner un nom comme « C:\Training ». N’oubliez pas cet emplacement, car vous devrez accéder aux fichiers de cours pendant les labos. Les documents du labo font référence à cet emplacement sous le nom de **&lt;CourseFolder&gt;** .
+1. Extrayez le contenu du fichier **PowerBIPRIAD-Student. zip** dans le dossier de cours racine.
+1. Dans le dossier **&lt;CourseFolder&gt;\PowerBIPRIAD**, ouvrez le fichier **ReadMe.txt** et suivez toutes les instructions d’installation.
 
-Une fois l’extraction effectuée, vous avez un dossier **PowerBIPRIAD**, dans lequel vous trouverez les dossiers suivants :
-
-- **Lab01A** (et tous les autres dossiers des labos). Les dossiers des labos contiennent le document du labo et ses ressources, qui peuvent inclure des ressources et des fichiers solution.
-- **MySolution** : Ce dossier stocke vos fichiers solution. Les instructions du labo vous indiquent quand les utiliser.
-- **Presentation** : Ce dossier contient le fichier de présentation du cours, qui est disponible sous forme de document PDF.
-
-### <a name="get-started-with-the-kit"></a>Prise en main du kit
-
-Nous vous recommandons de d’abord suivre le cours en ligne. Vous pouvez vous reporter à la théorie de la présentation en ouvrant le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. La présentation comprend huit diapositives de labo, qui indiquent quand il est temps de mettre la théorie en pratique. Il comprend également de nombreux liens vers des ressources pour vous aider à trouver du contenu associé.
-
-Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Ce document vous explique comment vous connecter au service Power BI, télécharger un jeu de données, puis installer le [Générateur de rapports Power BI](https://aka.ms/pbireportbuilder).
+> [!TIP]
+> Le fichier **ReadMe.txt**, les documents de laboratoire et le fichier de présentation (PDF) sont disponibles en anglais ainsi que dans les huit langues suivantes :
+> - Allemand (de-DE)
+> - Espagnol (es-ES)
+> - Français (fr-FR)
+> - Italien (it-IT)
+> - Japonais (ja-JP)
+> - Coréen (ko-KR)
+> - Portugais, Brésil (pt-BR)
+> - Chinois, caractères simplifiés (zh-CN)
 
 > [!NOTE]
 > Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Vous devez vous connecter à Power BI pour publier un fichier Power BI Desktop sur un espace de travail. La publication produit un jeu de données qui est utilisé comme source de données de rapport. Vous n’avez pas besoin d’une licence Power BI Pro ou d’un abonnement Power BI Premium pour utiliser un jeu de données comme source de données de rapport.
 >
-> Certaines tâches des labos impliquent la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il a été enregistré dans un espace de travail sur une [capacité dédiée](../admin/service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, un lien vous est fourni à la place pour regarder une vidéo qui montre la publication de rapports.
+> Certaines tâches des labos impliquent la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il a été enregistré dans un espace de travail sur une [capacité dédiée](../admin/service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, le laboratoire vous fournira un lien pour regarder une vidéo qui montre la publication de rapports.
 
 ## <a name="instructor-kit"></a>Kit du formateur
 

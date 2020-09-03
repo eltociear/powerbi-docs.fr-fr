@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 08/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7a1fabd1c61219d7f195253a4384accfd2521d24
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 44aeb5030008d17a9998e8357f23d47524f11512
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235996"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040221"
 ---
 # <a name="refresh-summaries-for-power-bi"></a>Récapitulatifs des actualisations pour Power BI
 
@@ -60,6 +60,8 @@ La vue Planification est très pratique pour déterminer si les événements d�
 ![Vue Planification](media/refresh-summaries/refresh-summaries-02.jpg)
 
 La colonne *Durée d’actualisation réservée (minutes)* est un calcul de la moyenne de 60 enregistrements maximum pour chaque jeu de données associé. La valeur numérique pour chaque plage horaire de 30 minutes est la somme des minutes calculées pour toutes les actualisations planifiées pour démarrer sur la plage horaire **et** les actualisations planifiées définies pour démarrer sur la plage horaire *précédente*, mais dont la durée moyenne déborde sur la plage horaire sélectionnée.
+
+La colonne *Heure d’actualisation disponible (minutes)* est un calcul des minutes disponibles pour chaque créneau horaire, moins l’actualisation déjà planifiée pour ce créneau. Par exemple, si votre abonnement P2 fournit 12 actualisations exécutées simultanément, vous avez 12 créneaux de 30 minutes, soit 12 actualisations de 30 minutes chacune = 360 minutes disponibles pour l’actualisation dans ce créneau. Si vous avez un créneau réservé pour une actualisation qui prend 20 minutes, votre *temps d’actualisation disponible (en minutes)* dans ce créneau est de 340 minutes (360 minutes au total disponibles, moins 20 minutes déjà réservées = 340 minutes encore disponibles). 
 
 Vous pouvez sélectionner une plage horaire, puis sélectionner le bouton **Détails** associé pour voir quels événements d’actualisation planifiés contribuent à la durée d’actualisation réservée, ses propriétaires et à la durée nécessaire à leur exécution.
 

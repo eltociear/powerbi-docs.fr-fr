@@ -6,15 +6,15 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/25/2020
+ms.date: 08/25/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc5cba8953a527e87768815759a14dd8f2cf7ee1
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 6e1850e281c58bd89597af2bbd9ade0a769071ae
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537846"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040244"
 ---
 # <a name="copy-a-visual-as-an-image-to-your-clipboard"></a>Copier un visuel en tant qu’image dans le Presse-papiers
 
@@ -35,15 +35,15 @@ Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du 
 
 2. En haut à droite du visuel, sélectionnez **Plus d’actions (…)** , puis choisissez **Copier le visuel comme une image**. 
 
-    ![Icône de copie d’un visuel sous forme d’image affichée](media/end-user-copy-paste/power-bi-copy-dashboard.png)
+    ![Copier le visuel en tant qu’option d’image affichée dans le menu déroulant](media/end-user-copy-paste/power-bi-copy-dashboard.png)
 
 3. Quand la boîte de dialogue **Votre visuel est prêt à être copié** s’affiche, sélectionnez **Copier dans le Presse-papiers**.
 
     ![boîte de dialogue avec l’option Copier dans le Presse-papiers](media//end-user-copy-paste/power-bi-copied.png)
 
-4. Une fois le visuel copié, collez-le dans une autre application en appuyant sur **Ctrl+V** ou en cliquant avec le bouton droit > Coller. Dans la capture d’écran ci-dessous, nous avons collé le visuel dans Microsoft Word. 
+4. Une fois le visuel copié, collez-le dans une autre application en appuyant sur **Ctrl+V** ou **en cliquant avec le bouton droit sur** > **Coller**. Dans la capture d’écran ci-dessous, nous avons collé le visuel dans Microsoft Word. 
 
-    ![visuel collé dans Outlook](media//end-user-copy-paste/power-bi-paste-word.png)
+    ![visuel collé dans Microsoft Word](media//end-user-copy-paste/power-bi-paste-word.png)
 
 ### <a name="copy-from-a-report-visual"></a>Copie à partir d’un visuel de rapport 
 
@@ -58,7 +58,7 @@ Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du 
     ![boîte de dialogue avec l’option Copier dans le Presse-papiers](media//end-user-copy-paste/power-bi-copied.png)
 
 
-4. Une fois le visuel copié, collez-le dans une autre application en appuyant sur **Ctrl+V** ou en cliquant avec le bouton droit > Coller. Dans la capture d’écran ci-dessous, nous avons collé le visuel dans un message électronique.
+4. Une fois le visuel copié, collez-le dans une autre application en appuyant sur **Ctrl+V** ou **en cliquant avec le bouton droit sur** > **Coller**. Dans la capture d’écran ci-dessous, nous avons collé le visuel dans un message électronique.
 
     ![visuel collé dans Outlook](media//end-user-copy-paste/power-bi-copy-email.png)
 
@@ -82,7 +82,7 @@ R : Nous prenons actuellement en charge les visuels Power BI natifs et les vis
 - ESRI et autres visuels de carte 
 - Visuels Python 
 - Visuels R 
-- PowerApps    
+- Visuels PowerApps   
 
 R : La possibilité de copier un visuel peut être désactivée par votre service informatique ou par votre administrateur Power BI.
 
@@ -94,6 +94,8 @@ R : Il existe des limitations pour les visuels personnalisés et les visuels an
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les [visualisations dans les rapports Power BI](end-user-visual-type.md)
+
+Si vous disposez d’autorisations de modification pour un rapport, vous pouvez [copier et coller des visuels dans ce même rapport](../visuals/power-bi-visualization-copy-paste.md). 
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

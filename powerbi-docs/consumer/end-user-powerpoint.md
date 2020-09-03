@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2cffd2b9913773e7f29d1afa960209ddeddd3583
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 1153b20e77958bbecce9284add3ae7eab21cd47d
+ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160415"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89040294"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
@@ -49,6 +49,8 @@ Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l
 ![Sélectionner les éléments à exporter](media/end-user-powerpoint/power-bi-current-values.png)
  
 En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés. Cochez cette case si vous voulez exporter seulement les onglets du rapport qui sont visibles dans votre navigateur. Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation. Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués. Un onglet d’info-bulle est un exemple d’onglet masqué. Les [info-bulles personnalisées](../create-reports/desktop-tooltips.md) sont créées par les *concepteurs* de rapports et ne s’affichent pas sous la forme d’onglets de rapport dans le service Power BI pour les *consommateurs*. 
+
+Vous pouvez également choisir d’exporter uniquement la page active que vous affichez dans un rapport en activant la case à cocher « Exporter uniquement la page active ».  Par défaut, cette option est désactivée et toutes les pages sont exportées à partir de votre rapport.
 
 Une fois que vous avez effectué vos sélections, sélectionnez **Exporter** pour continuer. Dans le coin supérieur droit de la fenêtre du navigateur du service Power BI, une bannière de notification indique que le rapport est en cours d’exportation vers PowerPoint. 
 

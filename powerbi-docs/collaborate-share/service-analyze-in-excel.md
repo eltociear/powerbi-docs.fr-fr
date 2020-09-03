@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 1e1e9afcbcae300e12580fb5f54bdb53e7822c03
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 1605e6108b990c95a995eadd9a6b3d03260001f5
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952734"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937490"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Avec **Analyser dans Excel**, vous pouvez placer les jeux de données Power BI dans Excel, puis les afficher et interagir avec eux à l’aide de tableaux croisés dynamiques, de graphiques, de segments et d’autres fonctionnalités Excel. Pour utiliser **Analyser dans Excel** vous devez d’abord télécharger la fonctionnalité à partir de Power BI, l’installer, puis sélectionner un ou plusieurs jeux de données à utiliser dans Excel. 
@@ -44,7 +44,7 @@ Une fois que vous êtes connecté et que le service Power BI s’exécute dans v
 
 Vous pouvez également naviguer dans le service Power BI vers un jeu de données que vous souhaitez analyser, puis sélectionner l’élément **Plus d’options** pour un jeu de données, un rapport ou un autre élément Power BI. Dans le menu qui s’affiche, sélectionnez l’option **Analyser dans Excel**, comme illustré dans l’image suivante.
 
-![Analyser dans Excel](media/service-analyze-in-excel/analyze-excel-01.png)
+![Analyser dans Excel à partir du jeu de données](media/service-analyze-in-excel/analyze-excel-01.png)
 
 Dans les deux cas, Power BI détecte si vous avez installé Analyser dans Excel et vous invite à le télécharger si nécessaire. 
 
@@ -56,7 +56,7 @@ Lorsque vous sélectionnez Télécharger, Power BI détecte la version d’Excel
 
 Une fois le téléchargement terminé, exécutez le programme d’installation (.msi) pour installer Analyser dans Excel. Le nom du processus d’installation est différent d’Analyser dans Excel : le nom sera **Microsoft Analysis Services OLE DB Provider**, comme indiqué dans l’image suivante, ou un nom similaire.
 
-![Installation des mises à jour](media/service-analyze-in-excel/analyze-excel-05.png)
+![Mises à jour d’installation du fournisseur OLE DB Analysis Services](media/service-analyze-in-excel/analyze-excel-05.png)
 
 Une fois l’opération terminée, vous êtes prêt à sélectionner un rapport dans le service Power BI (ou un autre élément de données Power BI, comme un jeu de données), puis à l’analyser dans Excel.
 
@@ -80,6 +80,9 @@ Dans le service Power BI, accédez au jeu de données ou au rapport que vous sou
     ![Téléchargement du fichier Excel](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
 
     Le nom de fichier correspond au jeu de données (ou au rapport ou toute autre source de données) à partir duquel il a été dérivé. Ainsi, si le rapport a été nommé *Rapport trimestriel*, le fichier téléchargé est **Rapport trimestriel.xlsx**.
+
+    >[!Note]
+    >Analyser dans Excel télécharge maintenant un fichier Excel au lieu d’un fichier ODC. Ceci permet de protéger des données sur les données exportées à partir de Power BI. Le fichier Excel téléchargé hérite de l’étiquette de sensibilité du jeu de données choisi pour l’analyse dans Excel.
 
 3. Lancez le fichier Excel.
 

@@ -7,12 +7,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
-ms.openlocfilehash: 47ab35113bbf6564cbc824b48891cd9f58370c8a
-ms.sourcegitcommit: 7d505cb7cc9360211d67f1056cb488f7f15ffab4
+ms.openlocfilehash: aaa31851f338832a8c4f4fffb38f12414c859610
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88578139"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937467"
 ---
 # <a name="intro-to-qa-tooling-to-train-power-bi-qa-preview"></a>Présentation des outils Questions et réponses pour entraîner Questions et réponses Power BI (préversion)
 
@@ -80,6 +80,11 @@ Tout ce que vous avez enregistré dans la section Enseigner à Questions et rép
 
 ### <a name="suggest-questions"></a>Suggérer des questions
 
+> [!NOTE]
+> Les questions suggérées s’affichent pour toutes les instances du visuel Questions et réponses. Il n’est pas possible de créer un ensemble distinct de suggestions pour chaque visuel Questions et réponses.
+> 
+> 
+
 Si vous n’avez pas effectué de configuration, le visuel Questions et réponses suggère plusieurs questions pour commencer. Ces questions sont générées automatiquement en fonction de votre modèle de données. Dans **Suggérer des questions**, vous pouvez remplacer ces questions générées automatiquement par vos propres questions.
 
 Pour commencer, tapez la question que vous souhaitez ajouter dans la zone de texte. La section Aperçu montre le résultat obtenu dans le visuel Questions et réponses. 
@@ -91,11 +96,6 @@ Sélectionnez le bouton **Ajouter** pour ajouter cette question à **Vos suggest
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Enregistrer les suggestions de questions":::
  
 Pensez à sélectionner **Enregistrer** pour afficher votre liste de suggestions de questions dans le visuel Questions et réponses. 
-
-> [!NOTE]
-> Les questions suggérées s’affichent pour toutes les instances du visuel Questions et réponses. Il n’est pas possible de créer un ensemble distinct de suggestions pour chaque visuel Questions et réponses.
-> 
-> 
 
 ## <a name="other-qa-settings"></a>Autres paramètres de Questions et réponses
 

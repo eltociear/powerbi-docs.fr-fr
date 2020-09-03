@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 08/27/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fbbda6edde0028a6d7ca21081f582ace7cb0cc94
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: e9b950d85d50727ed1e9ca5ec2f94498a37d1665
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216208"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286801"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 
@@ -22,9 +22,9 @@ ms.locfileid: "86216208"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Les *utilisateurs* de Power BI consacrent beaucoup de temps à la consultation des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les consommateurs de Power BI utilisent ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.
+Les *utilisateurs professionnels* de Power BI consacrent beaucoup de temps à la consultation des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les utilisateurs professionnels de Power BI se basent sur ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.
 
-![tableau de bord](media/end-user-dashboard-open/power-bi-new-dash-new.png)
+![tableau de bord](media/end-user-dashboard-open/power-bi-new-dashboard.png)
 
 
 Une licence Power BI Pro ou Premium est nécessaire pour partager un tableau de bord et consulter un tableau de bord partagé. [Quelle est ma licence ?](end-user-license.md) 
@@ -35,14 +35,14 @@ Une licence Power BI Pro ou Premium est nécessaire pour partager un tableau de 
 
 |              |         |
 |------------|--------------------------------|
-|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, son ouverture est simple : il suffit de le sélectionner pour que le tableau de bord remplisse votre canevas Power BI. |
+|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, ouvrez-le en le sélectionnant. Le tableau de bord remplira alors votre canevas Power BI. |
 |                    |          |
 
 
 
 Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de navigation. 
 
-![icône de tableau de bord](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
+![Vidéo présentant tous les emplacements où des tableaux de bord peuvent être trouvés](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Accueil** 
 - **Favoris** : Si vous avez [défini un tableau de bord comme favori](end-user-favorite.md)
@@ -54,5 +54,7 @@ Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de na
 
 
 ## <a name="next-steps"></a>Étapes suivantes
+* Retour à la [vue d’ensemble des tableaux de bord](end-user-dashboards.md)
+
 * Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../create-reports/sample-tutorial-connect-to-the-samples.md).    
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.

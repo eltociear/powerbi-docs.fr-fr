@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c4453f1475ac2ab227294b0b3bd8ba5dba10de67
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c01169a514b1231f93df21a23dc8992e92353070
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204497"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937605"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. Le mode Présentation est utile pour afficher Power BI lors de réunions ou de conférences ou sur un projecteur dédié au bureau ou pour optimiser l’espace sur un petit écran.
@@ -64,7 +64,7 @@ Lorsque vous sélectionnez le bouton **Lecture** dans la barre d’outils action
 
  Le contrôleur affiche le nom de la vue actuellement affichée (page ou signet et page). Dans l’image ci-dessus, nous voyons que dans le rapport appelé **Sales** (Ventes), nous voyons actuellement le signet **Asia Pacific** (Asie-Pacifique) sur la page **Sales Performance** (Performances des ventes).
 
-Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous définissez le comportement par défaut est dans les [Paramètres du diaporama](#slideshow-settings).
+Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous pouvez modifier le comportement par défaut est dans les [Paramètres du diaporama](#slideshow-settings).
 
 
 ### <a name="auto-play-a-slideshow-on-startup"></a>Lire automatiquement un diaporama au démarrage

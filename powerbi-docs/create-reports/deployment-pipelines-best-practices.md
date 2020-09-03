@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
-ms.openlocfilehash: 4dd5698f91177733e150577490775eefb7e2f2ef
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
+ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557183"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89220857"
 ---
 # <a name="deployment-pipelines-best-practices-preview"></a>Pratiques recommandées pour les pipelines de déploiement (préversion)
 
@@ -106,7 +106,7 @@ Considérez Power BI Desktop comme votre environnement de développement local. 
 Si vous souhaitez gérer l’historique des versions de vos rapports et jeux de données, utilisez [la synchronisation automatique Power BI avec OneDrive](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md). Vos fichiers seront mis à jour avec la version la plus récente. Cela vous permet également de récupérer des versions plus anciennes, si nécessaire.
 
 >[!NOTE]
->Utilisez la synchronisation automatique avec OneDrive (ou tout autre référentiel) uniquement avec les fichiers .pbix dans l’étape de développement des pipelines de déploiement. Ne synchronisez pas les fichiers .pbix dans les étapes de test et de production des pipelines de déploiement. Cela entraînerait des problèmes lors du déploiement de contenu dans le pipeline.
+>Utilisez la synchronisation automatique avec OneDrive (ou tout autre référentiel) uniquement avec les fichiers .pbix dans l’étape de développement du pipeline de déploiement. Ne synchronisez pas les fichiers .pbix dans les étapes de test et de production du pipeline de déploiement. Cela entraînerait des problèmes lors du déploiement de contenu dans le pipeline.
 
 ### <a name="separate-modeling-development-from-report-and-dashboard-development"></a>Développement de modélisation distinct du développement de rapports et tableaux de bord
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: d82026ddb3ae12d95aed94fc6f96f45b4861ec48
-ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
+ms.openlocfilehash: fda04d3241db68f1ca8da66d999bfca6cef9e8cf
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168417"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937444"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -27,7 +27,7 @@ Les rapports paginés prennent en charge en mode natif la liste suivante de sour
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | De base, authentification unique (SSO), OAuth2 | Vous pouvez utiliser une passerelle Entreprise avec Azure SQL DB. Toutefois, vous ne pouvez pas utiliser l’authentification unique ou oAuth2 pour vous authentifier dans ces scénarios.   |
 | Azure SQL Managed Instance | De base | via un point de terminaison public ou privé (le point de terminaison privé doit être routé via Enterprise Gateway)  |
-| Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP dans la région BlackForest. Cela s’applique uniquement dans la région BlackForest. |
+| Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP dans la région BlackForest. Cela s’applique uniquement dans la région BlackForest.  L’authentification unique à partir du locataire externe n’est pas prise en charge. |
 | Jeu de données Power BI | SSO | Jeux de données Power BI Premium et non Premium. Nécessite une autorisation de lecture |
 | Jeu de données Premium Power BI (XMLA) | SSO | Les jeux de données Power BI ne sont pas pris en charge comme source de données pour les rapports paginés incorporés.  |
 | Entrer des données | N/A | Les données sont incorporées dans le rapport. |
@@ -73,5 +73,5 @@ Pour que l’authentification unique et OAuth2 fonctionnent correctement, [la pr
 
 [Afficher un rapport paginé dans le service Power BI](../consumer/paginated-reports-view-power-bi-service.md)
 
-D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

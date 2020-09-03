@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 08/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4083304a13b75df900e25204b54f62368be43e70
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: b31ddb3e3881f9002affcae9106b9e14bf85a964
+ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939491"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89092311"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec *Power BI Desktop*, quand vous vous connectez à une source de données, vous pouvez toujours importer une copie des données dans Power BI Desktop. Pour certaines sources de données, une autre approche est possible : vous connecter directement à la source de données à l’aide de DirectQuery.
@@ -50,6 +50,8 @@ Il existe actuellement quelques limitations à l’utilisation de DirectQuery :
 - Si la requête de l’**Éditeur de requête** est trop complexe, une erreur se produit. Pour corriger cette erreur, supprimez l’étape problématique dans l’**Éditeur de requête** ou *importez* les données au lieu d’utiliser DirectQuery. Pour des sources multidimensionnelles comme SAP Business Warehouse, aucun **Éditeur de requête** n’est disponible.
 
 - DirectQuery ne fournit pas de fonctionnalités Time Intelligence. Par exemple, le mode DirectQuery ne prend pas en charge le traitement spécial des colonnes de date (année, trimestre, mois ou jour, par exemple).
+
+- Les tables calculées et les colonnes calculées qui font référence à une table DirectQuery à partir d’une source de données avec authentification unique (SSO) ne sont pas prises en charge dans le service Power BI.
 
 - Des limitations sont imposées aux expressions DAX autorisées dans les mesures pour garantir des performances acceptables aux requêtes envoyées à la source de données sous-jacente.
 

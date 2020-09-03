@@ -7,15 +7,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/28/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: eebe5bcf2a4e75d9ff6ed526fbd8f9d362ff26ee
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: a4b7b866d56852cb4e49cbe09150dcdb694b64c3
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537823"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286911"
 ---
 # <a name="export-data-from-a-visual"></a>Exporter des données à partir d’un élément visuel
 
@@ -23,7 +23,9 @@ ms.locfileid: "87537823"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Si vous souhaitez afficher les données qui sont utilisées pour créer un élément visuel, vous pouvez [le faire dans Power BI](end-user-show-data.md) ou exporter ces données vers Excel. L’option permettant d’exporter les données requiert un certain type de licence et les autorisations de modification sur le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI. L’exportation de données nécessite une licence Power BI Pro, soit une licence Pro par utilisateur, soit une licence Pro par utilisateur au sein d’une organisation disposant d’une licence de capacité Premium. En règle générale, ce type de licence est utilisé par les *concepteurs* de rapport, pas les *consommateurs*. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md).
+Si vous souhaitez afficher les données qui sont utilisées pour créer un élément visuel, vous pouvez [le faire dans Power BI](end-user-show-data.md) ou exporter ces données vers Excel. L’option permettant d’exporter les données requiert un certain type de licence et les autorisations de modification sur le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI ou votre support technique. 
+
+L’exportation de données requiert une licence Power BI Pro, ou que le tableau de bord ou le rapport soit partagé avec vous à l’aide de la capacité Premium. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md).
 
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>À partir d’un élément visuel dans un tableau de bord Power BI
@@ -35,13 +37,13 @@ Si vous souhaitez afficher les données qui sont utilisées pour créer un élé
 
 2. Placez le curseur sur un élément visuel pour afficher **Plus d’options** (...), et cliquez pour afficher le menu Action.
 
-    ![Le menu qui s’affiche lorsque vous sélectionnez les points de suspension](media/end-user-export/power-bi-options-menu.png)
+    ![Le menu qui s’affiche lorsque vous sélectionnez les points de suspension](media/end-user-export/power-bi-option-menu.png)
 
 3. Sélectionnez **Exporter au format .csv**.
 
 4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
 
-    ![Navigateur Chrome avec lien du fichier exporté](media/end-user-export/power-bi-dashboard-exports.png)
+    ![Navigateur Chrome avec lien du fichier exporté](media/end-user-export/power-bi-dashboards-export.png)
 
 5. Ouvrez le fichier dans Excel. 
 
@@ -54,20 +56,20 @@ Si vous souhaitez afficher les données qui sont utilisées pour créer un élé
 ## <a name="from-a-visual-in-a-report"></a>À partir d’un élément visuel dans un rapport
 Vous pouvez exporter des données à partir d’un élément visuel dans un rapport au format. csv ou. xlsx (Excel). 
 
-1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même élément visuel que ci-dessus, *Total Units YTD Var %* . 
+1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même élément visuel que ci-dessus, *Total Units YTD Var %*. 
 
-    ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-reports.png)
+    ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-tile.png)
 
     Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes*, c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
 
 2. Sélectionnez le visuel dans le rapport. Remarquez le volet **Filtres** à droite. Des filtres sont appliqués à cet élément visuel. Pour en savoir plus sur les filtres, consultez [Utiliser les filtres dans un rapport](end-user-report-filter.md).
 
-    ![Volet de filtre sélectionné](media/end-user-export/power-bi-export-filter.png)
+    ![Volet de filtre sélectionné](media/end-user-export/power-bi-export-filter-pane.png)
 
 
 3. Sélectionnez **Plus d’options (...)** dans le coin supérieur droit de la visualisation. Choisissez **Exporter des données**.
 
-    ![Exporter les données sélectionnées à partir de la liste déroulante](media/end-user-export/power-bi-export-report.png)
+    ![Exporter les données sélectionnées à partir de la liste déroulante](media/end-user-export/power-bi-export-reports.png)
 
 4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes*, les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
 
@@ -80,7 +82,7 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
 5. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
 
-    ![Affichage des fichiers exportés dans le navigateur Microsoft Edge](media/end-user-export/power-bi-export-edge-browser.png)
+    ![Affichage des fichiers exportés dans le navigateur Microsoft Edge](media/end-user-export/power-bi-export-edge-screen.png)
 
     > [!NOTE]
     > Si vous n’avez pas d’autorisations sur les données, vous ne pouvez pas les exporter ou les ouvrir dans Excel.  

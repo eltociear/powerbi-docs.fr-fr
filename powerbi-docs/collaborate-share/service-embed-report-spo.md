@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 06/28/2020
-ms.openlocfilehash: 94419bb25aa00645b22a1dad1f97fcc792c3d63d
-ms.sourcegitcommit: 561f6de3e4621d9d439dd54fab458ddca78ace2c
+ms.openlocfilehash: 29aff96cc93de305ce78cb0cfa015954928309ff
+ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939555"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88937513"
 ---
 # <a name="embed-a-report-web-part-in-sharepoint-online"></a>Incorporer un composant WebPart Rapport dans SharePoint Online
 
@@ -30,6 +30,9 @@ Pour que les rapports **Incorporer dans SharePoint Online** fonctionnent, vous d
 * Une licence Power BI Pro ou une [capacité Power BI Premium (référence SKU EM ou P)](../admin/service-premium-what-is.md) avec une licence Power BI.
 * Le composant WebPart Power BI pour SharePoint Online nécessite des [pages modernes](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * Pour consommer un rapport incorporé, les utilisateurs doivent se connecter au service Power BI pour activer leur licence Power BI.
+
+> [!Note]
+> Pour les organisations dans des clouds Power BI nationaux, aucune licence gratuite n’est disponible. Dans cet environnement, tous les utilisateurs qui souhaitent accéder au rapport incorporé dans SharePoint doivent disposer d’une licence Power BI Pro.
 
 ## <a name="embed-your-report"></a>Incorporer votre rapport
 Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL de rapport et l’utiliser avec le composant WebPart Power BI de SharePoint Online.

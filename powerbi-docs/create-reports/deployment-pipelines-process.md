@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 06/25/2020
-ms.openlocfilehash: 002a50fd2e8e55d5ec06d7f15420ae8299861b37
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 69ad9fc76250e09c2cea5a8d5dc0d3b2c13f72bf
+ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557207"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89220880"
 ---
 # <a name="understand-the-deployment-process-preview"></a>Comprendre le processus de déploiement (préversion)
 
@@ -154,7 +154,7 @@ Créez une application pour chaque étape du pipeline de déploiement, afin de p
 
 [![Capture d’écran mettant en évidence le bouton de publication de l’application, situé en bas à droite de l’étape de production.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
-Au cours de l’étape de production, le bouton d’action principal situé dans le coin inférieur gauche ouvre la page Mettre à jour l’application dans Power BI, afin que toutes les mises à jour de contenu soient disponibles pour les utilisateurs de l’application.
+Au cours de l’étape de production, le bouton d’action principal situé dans le coin inférieur droit ouvre la page Mettre à jour l’application dans Power BI, afin que toutes les mises à jour de contenu soient disponibles pour les utilisateurs de l’application.
 
 [![Capture d’écran mettant en évidence le bouton de mise à jour de l’application, situé en bas à droite de l’étape de production.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 

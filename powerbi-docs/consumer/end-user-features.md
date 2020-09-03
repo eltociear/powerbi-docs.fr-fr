@@ -5,17 +5,17 @@ author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 04/17/2020
+ms.topic: reference
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: b6beb2115f664de12382933c8200b07b510bd083
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 75ee1ad31bc2f99964a8f79ea29efb499c2cc81e
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215886"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286771"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste des fonctionnalités de Power BI pour les *consommateurs* et autres personnes bénéficiant de licences gratuites
 
@@ -49,7 +49,7 @@ Chaque utilisateur du service Power BI a une licence gratuite ou une licence Pro
 
 - **Licence gratuite** : généralement attribuées aux *consommateurs* au sein d’une organisation (voir la première image ci-dessous). Également attribuée à toute personne qui s’inscrit au service Power BI en tant qu’individu et qui veut essayer le [service Power BI en mode autonome](../fundamentals/service-self-service-signup-for-power-bi.md) (voir deuxième image ci-dessous). 
 
-    ![écran montrant un utilisateur libre](media/end-user-features/power-bi-free-organization.png)
+    ![écran représentant un utilisateur Premium](media/end-user-features/power-bi-free-organization.png)
 
     En tant qu’utilisateur gratuit, être membre d’une organisation disposant d’une capacité Premium est ce qui vous donne de super pouvoirs. Tant que leurs collègues Pro utilisent des espaces de travail de capacité Premium pour partager du contenu, les utilisateurs gratuits peuvent voir et collaborer avec ces collègues Pro.  **Ainsi, l’utilisateur gratuit devient un *consommateur* Power BI, avec la capacité à recevoir et à partager du contenu pour prendre des décisions commerciales.** 
  
@@ -129,7 +129,7 @@ La deuxième colonne représente un *consommateur*.  Un consommateur :
 | Afficher les signets créés par d’autres utilisateurs et ajouter vos propres signets  | ![x orange](media/end-user-features/orange-x.png)|![point vert](media/end-user-license/power-bi-green-dot.png)  |
 | Afficher et répondre aux commentaires des autres utilisateurs : ajouter de nouveaux commentaires  | ![x orange](media/end-user-features/orange-x.png)|![point vert](media/end-user-license/power-bi-green-dot.png)  |
 |Modifier les dimensions d’affichage   | ![myw vert](media/end-user-features/green-mwo.png) | ![point vert](media/end-user-license/power-bi-green-dot.png)  | 
-| Enregistrer une copie |![x orange](media/end-user-features/orange-x.png) |![point vert](media/end-user-license/power-bi-green-dot.png)*  
+| Enregistrer une copie |![x orange](media/end-user-features/orange-x.png) |![x orange](media/end-user-features/orange-x.png)  
 |Copier un visuel en tant qu’image* |
 | Effectuer des sélections croisées et des filtres croisés sur des visuels de rapport   |![myw vert](media/end-user-features/green-mwo.png) |![point vert](media/end-user-license/power-bi-green-dot.png)  |
 |  Explorer   |![myw vert](media/end-user-features/green-mwo.png)  |![point vert](media/end-user-license/power-bi-green-dot.png)  |

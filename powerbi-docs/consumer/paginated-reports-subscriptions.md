@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/03/2019
-ms.openlocfilehash: 0e4a62cf6216af49ef61651dc310c93de41664b7
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.date: 09/01/2020
+ms.openlocfilehash: 43b63da5a8107a2e30d729142e2d36f2a4f30c08
+ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538122"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89286748"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
@@ -27,7 +27,7 @@ Lors de la configuration des abonnements, vous choisissez la fréquence à laque
 
 - Vous pouvez inclure une image d’aperçu du rapport dans le corps de l’e-mail.  Ceci est facultatif et l’image peut différer légèrement de la première page de votre document de rapport attaché, selon le format sélectionné pour la pièce jointe. 
 
-- La taille maximale d’une pièce jointe de rapport est de 25 Mo. 
+- La taille maximale d’une pièce jointe de rapport est de 24 Mo. 
 
 - Vous pouvez abonner d’autres utilisateurs à des rapports paginés qui se connectent à n’importe quelle source de données actuellement prise en charge, notamment les jeux de données Power BI ou Azure Analysis Services. N’oubliez pas que la pièce jointe du rapport reflète les données conformément à vos autorisations, comme c’est le cas aujourd’hui avec SQL Server Reporting Services. 
 
