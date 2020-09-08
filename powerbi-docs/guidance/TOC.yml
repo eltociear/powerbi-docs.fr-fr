@@ -118,6 +118,8 @@
               href: report-performance-troubleshoot.md
             - name: Meilleures pratiques pour les pipelines de déploiement
               href: ../create-reports/deployment-pipelines-best-practices.md
+            - name: Accéder au journal d’activité de Power BI
+              href: admin-activity-log.md
     - name: Migrer vers Power BI
       items:
         - name: Vue d’ensemble de la migration
