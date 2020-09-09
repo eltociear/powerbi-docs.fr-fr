@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 29b821dc44f7eacb07f0df31100df2ff837c2189
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 60a22946ccde642987e748904d0dc7fe636ec700
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803246"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401976"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Collecter les exigences pour la migration vers Power BI
 
@@ -67,7 +67,7 @@ Rassemblez des informations détaillées sur les données, comme celles-ci :
 - **Exigences en matière de structure et de nettoyage des données :** déterminez la structure de données pour chaque source de données requise et dans quelle mesure les activités de [nettoyage des données](../transform-model/desktop-query-overview.md) sont nécessaires.
 - **Intégration des données** : déterminez comment gérer l’intégration des données en présence de sources de données multiples, et comment établir des [relations](../transform-model/desktop-create-and-manage-relationships.md) entre chaque table de modèle. Identifiez les éléments de données particuliers nécessaires pour simplifier le modèle et [réduire sa taille](import-modeling-data-reduction.md).
 - **Latence de données acceptable :** déterminez la latence de données requise pour chaque source de données. Cela conditionne les décisions concernant le [mode de stockage des données](../transform-model/desktop-storage-mode.md) à utiliser. La fréquence d’actualisation des données dans les tables du modèle Import est importante à connaître aussi.
-- **Volume de données et scalabilité :** évaluez le volume de données attendu, car cela impacte les décisions relatives à la [prise en charge de modèle de grande taille](/admin/service-premium-large-models.md) et à la conception de [modèles Composite](../transform-model/desktop-composite-models.md) ou DirectQuery. Les besoins en données historiques sont tout autant essentiels à connaître. Pour les jeux de données plus volumineux, il est également nécessaire de déterminer les règles d’[actualisation incrémentielle des données](../admin/service-premium-incremental-refresh.md).
+- **Volume de données et scalabilité :** évaluez le volume de données attendu, car cela impacte les décisions relatives à la [prise en charge de modèle de grande taille](../admin/service-premium-large-models.md) et à la conception de [modèles Composite](../transform-model/desktop-composite-models.md) ou DirectQuery. Les besoins en données historiques sont tout autant essentiels à connaître. Pour les jeux de données plus volumineux, il est également nécessaire de déterminer les règles d’[actualisation incrémentielle des données](../admin/service-premium-incremental-refresh.md).
 - **Mesures, indicateurs de performance clés et règles métier :** évaluez les besoins en ce qui concerne les mesures, les indicateurs de performance clés et les règles métier. Ils auront un impact sur les décisions concernant l’emplacement d’application de la logique : dans le jeu de données ou dans le processus d’intégration des données.
 - **Données de référence et catalogue de données :** prenez en compte les problèmes potentiels avec les données de référence qui nécessitent une attention particulière. Déterminez si l’intégration à un catalogue de données métier est pertinente pour améliorer la détectabilité, accéder aux définitions ou produire une terminologie cohérente acceptée par l’organisation.
 - **Sécurité et confidentialité des données :** déterminez s’il existe des considérations spécifiques en matière de sécurité ou de confidentialité des données pour les jeux de données, y compris des exigences de [sécurité au niveau des lignes](../admin/service-admin-rls.md).

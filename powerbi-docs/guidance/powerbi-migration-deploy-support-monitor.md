@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 58eb9af4975c0afeb12a71a880711ddd73e64d50
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803303"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401999"
 ---
 # <a name="deploy-to-power-bi"></a>Déployer sur Power BI
 
@@ -87,7 +87,7 @@ Un déploiement dans l’espace de travail de production inclut généralement l
 
 - **Gestion des changements :** si nécessaire, faites approuver le déploiement et informez l’ensemble des utilisateurs en suivant vos pratiques de gestion des changements habituelles. Il peut y avoir une période de gestion des changements approuvée pendant laquelle les déploiements de production sont autorisés. En règle générale, cela s’applique davantage au contenu géré par le service informatique qu’au contenu libre-service.
 - **Plan de restauration :** dans une migration, il est considéré qu’il s’agit de migrer une nouvelle solution pour la première fois. Si du contenu existe déjà, il vaut mieux établir un plan permettant de revenir à la version précédente au besoin. Conserver les versions antérieures des fichiers Power BI Desktop (à l’aide de la gestion de versions dans SharePoint ou OneDrive) est une bonne pratique.
-- **Chaînes de connexion et paramètres :** adaptez les chaînes de connexion au jeu de données quand la source de données diffère entre le test et la production. Le [paramétrage](/connect-data/service-parameters.md) peut être utilisé efficacement à cet effet.
+- **Chaînes de connexion et paramètres :** adaptez les chaînes de connexion au jeu de données quand la source de données diffère entre le test et la production. Le [paramétrage](../connect-data/service-parameters.md) peut être utilisé efficacement à cet effet.
 - **Actualisation des données :** [planifiez l’actualisation de chaque jeu de données](../connect-data/refresh-scheduled-refresh.md) importé.
 - **Contenu de l’espace de travail :** publiez les jeux de données et les rapports dans l’espace de travail de production, et créez des tableaux de bord. Les [pipelines de déploiement](../create-reports/deployment-pipelines-overview.md) peuvent simplifier le processus de déploiement dans les espaces de travail de développement, de test et de production si votre contenu a été publié dans des espaces de travail sur une capacité Premium.
 - **Application :** si les applications font partie de votre stratégie de distribution de contenu, publiez une [application](../consumer/end-user-apps.md) avec le contenu de l’espace de travail de production.
