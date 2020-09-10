@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 19b4d64039333a18405ac57d98773e9e23857a18
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: e819902328f49ab06a65869066ab2b2dabce6610
+ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049778"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490425"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -141,7 +141,7 @@ Pour utiliser les journaux d’audit, vérifiez que le paramètre [**Créer des 
 
 L’image suivante présente plusieurs paramètres de l’onglet **Paramètres du client**.
 
-![Paramètres du locataire](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Paramètres du locataire](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
 
 > [!NOTE]
 > Jusqu’à 15 minutes peuvent être nécessaires à la prise en compte de la modification d’un paramètre pour tous les utilisateurs de votre organisation.
@@ -251,18 +251,36 @@ Quand ils sont activés, les nouveaux groupes Office 365 ne s’affichent pas d
 
 ## <a name="export-and-sharing-settings"></a>Paramètres d'exportation et de partage
 
-### <a name="share-content-with-external-users"></a>Partager le contenu avec des utilisateurs externes
+### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Autoriser les utilisateurs invités Azure Active Directory à accéder à Power BI
 
-Les utilisateurs de l’organisation peuvent partager des tableaux de bord, des rapports et des applications avec des utilisateurs extérieurs à l’organisation. Découvrez plus en détail le [partage externe](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+L’activation de ce paramètre permet aux utilisateurs invités à Azure Active Directory Business-to-Business (Azure AD B2B) d’accéder à Power BI. Quand vous désactivez ce paramètre, les utilisateurs invités reçoivent une erreur lors de la tentative d’accès à Power BI. Quand vous désactivez ce paramètre pour l’ensemble de l’organisation, cela empêche également les utilisateurs de convier des invités à votre organisation et d’attribuer des autorisations à des utilisateurs invités individuels. Utilisez l’option Groupes de sécurité spécifiques pour contrôler les utilisateurs invités qui peuvent accéder à Power BI.
 
-![Paramètre Utilisateurs externes](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Autoriser les utilisateurs invités Azure Active Directory à accéder à Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-L’image suivante présente le message qui s’affiche quand vous faites un partage avec un utilisateur externe.
+### <a name="allow-giving-permissions-to-existing-azure-active-directory-guest-users"></a>Autoriser l’octroi d’autorisations à des utilisateurs invités Azure Active Directory existants
 
-![Partager avec un utilisateur externe](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+Quand cette option est activée, les utilisateurs de votre organisation peuvent accorder des autorisations à des utilisateurs invités individuels par le biais des expériences de partage et d’autorisations dans Power BI. Quand elle est désactivée pour un utilisateur, celui-ci ne peut pas attribuer d’autorisations ou convier des utilisateurs invités dans Power BI.
+
+![Autoriser l’octroi d’autorisations à des utilisateurs invités Azure Active Directory existants](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
+
 
 > [!IMPORTANT]
-> Cette option détermine si les utilisateurs de Power BI peuvent inviter des utilisateurs externes à devenir des utilisateurs invités d’Azure Active Directory B2B (Azure AD B2B) dans votre organisation par le biais de Power BI. Lorsque cette option est activée, les utilisateurs qui ont le rôle d’Inviteur d’invités dans Azure AD peuvent ajouter des adresses e-mail externes lors du partage de rapports, de tableaux de bord et d’applications Power BI. Le destinataire externe est invité à rejoindre votre organisation en tant qu’utilisateur invité d’Azure AD B2B. Important : lorsque vous désactivez ce paramètre, les utilisateurs externes qui sont déjà des utilisateurs invités d’Azure AD B2B dans votre organisation continuent à apparaître dans les interfaces utilisateur de sélection de personnes dans Power BI et peuvent avoir accès à des éléments, des espaces de travail et des applications.
+>  Ce paramètre n’empêche pas les utilisateurs invités de se voir attribuer des autorisations dans tous les cas. Le paramètre empêche uniquement d’accorder l’accès à des utilisateurs invités individuels. Les utilisateurs invités peuvent toujours bénéficier d’un accès par le biais d’un groupe d’utilisateurs, comme le groupe de sécurité, les groupes Office 365 ou les listes de distribution. 
+
+Quand un utilisateur qui n’est pas autorisé à accorder des autorisations à des utilisateurs invités tente de le faire, un message d’erreur s’affiche dans l’interface utilisateur. De plus, lors du changement d’autorisations sur un élément, les utilisateurs non autorisés à accorder des autorisations à des invités doivent supprimer tous les utilisateurs invités de la liste d’accès avant de pouvoir accorder ou changer des autorisations sur l’élément. 
+
+### <a name="invite-external-users-to-your-organization"></a>Inviter des utilisateurs externes dans votre organisation 
+
+Le paramètre **Inviter des utilisateurs externes dans votre organisation** permet aux organisations de déterminer si de nouveaux utilisateurs externes peuvent être invités dans l’organisation par le biais des expériences d’autorisations et de partage Power BI. Quand il est désactivé, si un utilisateur externe n’est pas déjà un utilisateur invité de l’organisation, il ne peut pas être ajouté à l’organisation par le biais de Power BI. 
+
+![Inviter des utilisateurs externes dans votre organisation](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
+
+> [!IMPORTANT]
+> Ce paramètre était précédemment appelé « Partager du contenu avec des utilisateurs externes ». Le nom modifié reflète de manière plus précise l’action du paramètre.
+
+Pour inviter des utilisateurs externes dans votre organisation, un utilisateur a également besoin du rôle Inviteur d’invités Azure Active Directory. Ce paramètre contrôle uniquement la possibilité d’inviter par le biais de Power BI. 
+
+Quand le paramètre **Autoriser l’octroi d’autorisations à des utilisateurs invités Azure Active Directory existants** est désactivé pour un utilisateur, ce dernier ne peut pas non plus inviter des utilisateurs externes dans votre organisation par le biais de Power BI.
 
 ### <a name="publish-to-web"></a>Publier sur le web
 

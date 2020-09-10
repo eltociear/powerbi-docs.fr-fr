@@ -1,6 +1,6 @@
 ---
-title: Utiliser SAP HANA dans Power BI Desktop
-description: Utiliser SAP HANA dans Power BI Desktop
+title: Utiliser SAP HANA dans Power BI
+description: Utiliser SAP HANA dans Power BI
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3d78ded05d199676708c0000cab043226a47b166
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 69019abf60f2633bcb764b11c0ac3310911fab62
+ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222794"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89401930"
 ---
-# <a name="connect-to-sap-hana-databases-in-power-bi-desktop"></a>Découvrez comment vous connecter à des bases de données SAP HANA dans Power BI Desktop
+# <a name="connect-to-sap-hana-databases-in-power-bi"></a>Se connecter à des bases de données SAP HANA dans Power BI
 
 Avec Power BI Desktop, vous pouvez désormais accéder aux bases de données *SAP HANA* . Pour utiliser SAP HANA, le pilote ODBC HANA SAP doit être installé sur l’ordinateur client local pour que la connexion de données SAP HANA de Power BI Desktop fonctionne correctement. Vous pouvez télécharger les outils clients SAP HANA depuis [Outils de développement SAP](https://tools.hana.ondemand.com/#hanatools), qui contient le pilote ODBC nécessaire. Vous pouvez aussi l’obtenir auprès du [Centre de téléchargement de logiciels SAP](https://support.sap.com/en/my-support/software-downloads.html). Dans le portail des logiciels, recherchez *SAP HANA CLIENT* pour les ordinateurs Windows. Étant donné que le Centre de téléchargement de logiciels SAP modifie sa structure fréquemment, des informations plus spécifiques sur la navigation dans ce site ne sont pas disponibles.
 
@@ -61,6 +61,7 @@ Il existe également quelques limitations à l’utilisation de SAP HANA, indiqu
 * SMALLDECIMAL n’est pas pris en charge.
 * VARBINARY n’est pas pris en charge.
 * Les dates valides sont comprises entre le 30/12/1899 et le 31/12/9999.
+* L’actualisation de SAP HANA avec l’authentification unique (SSO) n’est actuellement pas prise en charge pour les actualisations de classeurs Excel. Pour actualiser les données dans Power BI, vous pouvez utiliser un rapport Power BI avec l’authentification unique SAP HANA.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

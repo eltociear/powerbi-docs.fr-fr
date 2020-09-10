@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 7b5a96f4b592789c04ebaca5418e470d546ff788
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: 27d74a4333add1feebc3522ce34d0a2bacaa69f7
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88802971"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512053"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -108,6 +108,9 @@ $activities.Count
 $activities[0]
 
 ```
+
+> [!NOTE]
+> Un exemple PowerShell est disponible pour vous permettre d’apprendre à filtrer et à récupérer des événements du journal d’activité Power BI. Pour plus d’informations, consultez [Accéder au journal d’activité de Power BI](../guidance/admin-activity-log.md).
 
 ## <a name="use-the-audit-log"></a>Utiliser le journal d’audit
 
@@ -369,8 +372,8 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation de l’administration de Power BI](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Portail d’administration Power BI](service-admin-portal.md)  
-
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- [Présentation de l’administration de Power BI](service-admin-administering-power-bi-in-your-organization.md)
+- [Portail d’administration Power BI](service-admin-portal.md)
+- [Accéder au journal d’activité de Power BI](../guidance/admin-activity-log.md)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+- Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)

@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 09/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 75b05449de47f39fc95fd7cf42f9325b7a5d0ee9
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: 2b5481e3d0b84f81a9cdee827df27c90e32a7e84
+ms.sourcegitcommit: ae9e698b082598f37242080a3ad3dd0b3be08478
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638770"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89474801"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 
@@ -33,6 +33,14 @@ Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre 
 > Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud du gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Microsoft 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licences commerciales des comptes d’utilisateurs, puis affectez une licence Power BI Pro Secteur Public aux comptes d’utilisateurs.
 >
 >
+### <a name="buy-a-power-bi-pro-subscription-for-government-customers"></a>Acheter un abonnement Power BI Pro pour les clients du secteur public
+
+Après avoir déployé Microsoft 365, vous pouvez ajouter un abonnement Power BI Pro. Suivez l’aide pas à pas [Inscription d’une organisation du gouvernement des États-Unis](service-govus-signup.md) pour acheter le service Power BI Pro Secteur Public. Achetez suffisamment de licences pour tous les utilisateurs qui doivent utiliser Power BI, puis attribuez-les aux différents comptes d’utilisateur.
+
+> [!IMPORTANT]
+> Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence *gratuite*. Chaque utilisateur doit disposer d’une licence *Pro* pour pouvoir accéder au cloud de la communauté du secteur public. Un compte d’utilisateur qui dispose d’une licence gratuite n’est autorisé à accéder qu’au cloud commercial et rencontrera des problèmes d’authentification et d’accès. Si vous avez acheté Power BI Premium, vous n’êtes pas obligé d’attribuer des licences Pro pour permettre l’accès des utilisateurs.  Les utilisateurs de l’organisation peuvent accéder aux rapports partagés avec eux tant que le rapport est publié sur une capacité Premium. Pour connaître les différences entre les types de licences, consultez [Fonctionnalités du service Power BI par type de licence](../fundamentals/service-features-license-type.md).
+>
+
 ## <a name="government-cloud-instances"></a>Instances du cloud pour le secteur public
 
 Microsoft 365 propose différents environnements pour les organismes gouvernementaux qui répondent à différentes exigences de conformité. Pour plus d’informations sur chaque environnement, consultez :
@@ -53,14 +61,6 @@ L’URL de connexion à Power BI diffère pour les utilisateurs du secteur publi
 
 Votre compte peut être configuré dans plusieurs clouds. Si votre compte est configuré ainsi, lorsque vous utilisez Power BI Desktop, vous pouvez choisir à quel cloud vous connecter.
 
-## <a name="buy-a-power-bi-pro-subscription-for-government-customers"></a>Acheter un abonnement Power BI Pro pour les clients du secteur public
-
-Après avoir déployé Microsoft 365, vous pouvez ajouter un abonnement Power BI Pro. Suivez l’aide pas à pas [Inscription d’une organisation du gouvernement des États-Unis](service-govus-signup.md) pour acheter le service Power BI Pro Secteur Public. Achetez suffisamment de licences pour tous les utilisateurs qui doivent utiliser Power BI, puis attribuez-les aux différents comptes d’utilisateur.
-
-> [!IMPORTANT]
-> Power BI pour le gouvernement des États-Unis n’est pas disponible sous licence *gratuite*. Chaque utilisateur doit disposer d’une licence *Pro* pour pouvoir accéder au cloud de la communauté du secteur public. Un compte d’utilisateur qui dispose d’une licence gratuite n’est autorisé à accéder qu’au cloud commercial et rencontrera des problèmes d’authentification et d’accès. Si vous avez acheté Power BI Premium, vous n’êtes pas obligé d’attribuer des licences Pro pour permettre l’accès des utilisateurs.  Les utilisateurs de l’organisation peuvent accéder aux rapports partagés avec eux tant que le rapport est publié sur une capacité Premium. Pour connaître les différences entre les types de licences, consultez [Fonctionnalités du service Power BI par type de licence](../fundamentals/service-features-license-type.md).
->
-
 ## <a name="connect-government-and-global-azure-cloud-services"></a>Connexion entre le service Azure Cloud pour le secteur public et le service Azure Cloud mondial
 
 Azure est réparti sur plusieurs clouds. Par défaut, vous pouvez activer des règles de pare-feu pour ouvrir une connexion à une instance propre au cloud, mais la mise en réseau entre clouds est différente.  Pour communiquer entre les services du cloud public et ceux du Cloud de la communauté du secteur public, vous devez configurer des règles de pare-feu spécifiques. Par exemple, si vous souhaitez accéder à des instances de cloud public d’une base de données SQL à partir de votre déploiement cloud pour le secteur public de Power BI, il vous faut une règle de pare-feu dans la base de données SQL. Configurez des règles de pare-feu spécifiques dans les bases de données SQL afin d’autoriser les connexions au cloud Azure Government pour les centres de données suivants :
@@ -76,40 +76,31 @@ Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer e
 
 ## <a name="power-bi-feature-availability"></a>Disponibilité des fonctionnalités de Power BI
 
-Pour répondre aux besoins des clients du cloud pour le secteur public, il existe quelques différences entre les offres pour le gouvernement et les offres commerciales. Consultez le tableau suivant pour connaître les fonctionnalités disponibles dans chaque environnement gouvernemental :
+Pour répondre aux besoins des clients du cloud pour le secteur public, il existe quelques différences entre les offres pour le gouvernement et les offres commerciales. Notre objectif est de rendre toutes les fonctionnalités disponibles dans les clouds du secteur public dans un délai de 30 jours de disponibilité générale. Dans certains cas, les dépendances sous-jacentes nous empêchent de rendre une fonctionnalité disponible.
 
-|Caractéristique |   |GCC |GCC High |DoD|
-|------|------|------|------|------|
-|Administration|Licences gratuites|Non disponible|Non disponible|Non disponible|
-|  |Définition de limites de stockage|Disponible|Disponible|Disponible|
-|  |Utilisation de groupes Active Directory pour le partage et le contrôle d’accès|Disponible|Disponible|Disponible|
-|  |Audit par le biais du Centre d’administration de sécurité et conformité Office 365|Disponible|Disponible|Disponible|
-|  |Partage avec des utilisateurs externes|Disponible|Disponible|Disponible|
-|  |Mesures d’utilisation pour les rapports et les tableaux de bord|Disponible|Disponible|Disponible|
-|  |Azure B2B Collaboration entre GCC et le cloud commercial<sup>1</sup>|Disponible|Non disponible|Non disponible|
-|Création de rapports|Créer et afficher des tableaux de bord et rapports|Disponible|Disponible|Disponible|
-|  |Actualisation planifiée des données|Disponible|Disponible|Disponible|
-|  |Tableaux de bord d’équipe actualisables|Disponible|Disponible|Disponible|
-|  |Rapports paginés|Disponible|Disponible|Disponible|
-|  |Applications modèles|Non disponible|Non disponible|Non disponible|
-|Se connecter aux données|Importer des données et des rapports à partir d’Excel|Disponible|Disponible|Disponible|
-|  |Importer des données à partir de fichiers CSV|Disponible|Disponible|Disponible|
-|  |Importer des données à partir de fichiers Power BI Desktop|Disponible|Disponible|Disponible|
-|  |Connectivité à CDS|Disponible|Non disponible|Non disponible|
-|  |Connecteur Azure Data Lake Storage Gen2|Disponible|Non disponible|Non disponible|
-|Gestion des données|Passerelle de gestion des données|Disponible|Disponible|Disponible|
-|  |Chiffrement de données dans une base de données Azure SQL|Disponible|Disponible|Disponible|
-|  |Chiffrement de données dans le Stockage Blob pour Power BI|Disponible|Disponible|Disponible|
-|Intégration entre produits|Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI|Disponible|Non disponible|Non disponible|
-|  |Incorporation dans SharePoint Online à l’aide du composant WebPart Incorporer|Disponible|Disponible|Disponible|
-|  |Flux de données et fonctions d’IA|Non disponible|Non disponible|Non disponible|
-|  |Connectivité Power Automate pour les alertes de données|Non disponible|Non disponible|Non disponible|
-|  |Onglet Power BI dans Teams|Disponible|Non disponible|Non disponible|
-|  |Machine Learning automatisé|Non disponible|Non disponible|Non disponible|
-|  |Azure Cognitive Services|Non disponible|Non disponible|Non disponible|
-|  |Azure Machine Learning|Non disponible|Non disponible|Non disponible|
+Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans un environnement du secteur public particulier et la disponibilité estimée si la mise en production est planifiée :
 
-<sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour US Government, lisez la [comparaison entre Azure Government et Azure international](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
+|Caractéristique |GCC |GCC High |DoD|
+|------|------|------|------|
+|[Azure B2B Collaboration entre le cloud public et le cloud commercial](service-admin-azure-ad-b2b.md)<sup>1</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
+|[Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![disponible](../media/yes.png)|![Disponible](../media/yes.png)|![non disponible](../media/no.png)|
+|[Connectivité Power Automate pour les alertes de données](../connect-data/power-bi-data-sources.md)|![disponible](../media/yes.png)|![disponible](../media/yes.png)|![non disponible](../media/no.png)|
+|[Onglet Power BI dans Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
+|[Métriques de capacité](../admin/service-admin-premium-monitor-portal.md)|T3 2020 |T3 2020|T3 2020|
+|[Grands modèles](service-premium-large-models.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
+|[Dataflows - Optimisation du moteur de calcul SQL](../transform-model/service-dataflows-enhanced-compute-engine.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
+|[Dataflows - Requête directe](../transform-model/service-dataflows-directquery.md) | T4 2020 |T4 2020|![non disponible](../media/no.png)|
+|[Notifications d’interruption de service](service-premium-large-models.md)|T4 2020 |T4 2020|T4 2020|
+|[Protection des données (étiquettes MIP)](service-security-sensitivity-label-overview.md)|T4 2020|T4 2020 |T4 2020|
+|[Applications modèles](../connect-data/service-template-apps-overview.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
+|[Visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
+|[Génération d’un code QR](../create-reports/service-create-qr-code-for-tile.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
+
+<sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour le gouvernement américain, lisez la [comparaison entre Azure Government et Azure international](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
+
+<sup>2</sup> L’expérience Power BI dans Teams pour GCC est limitée : elle fonctionne uniquement pour les espaces de travail classiques et n’inclut pas les fonctionnalités améliorées décrites dans [Incorporer du contenu Power BI dans Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+
+<sup>3</sup> Lors de la publication, la fonctionnalité pour les applications modèles et les visuels personnalisés sera limitée aux clouds du secteur public. Des informations supplémentaires sur des limitations spécifiques seront publiées au moment de la publication.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c62ee84c919e5910d1c1c9e111f19c7b74889b04
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
+ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227219"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490350"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser des tâches d’espace de travail et de jeu de données avec des principaux de service
 
@@ -63,11 +63,11 @@ Pour que votre principal de service dispose des autorisations nécessaires pour 
 
 1. Dans le service Power BI, pour un espace de travail, sélectionnez **Plus** > **Accès à l’espace de travail**.
 
-    ![Paramètres de l’espace de travail](media/service-premium-service-principal/workspace-access.png)
+    ![Paramètres d’accès à l’espace de travail](media/service-premium-service-principal/workspace-access.png)
 
 2. Recherchez par nom d’application. Ajoutez le principal de service en tant qu’**Administrateur** ou **Membre** à l’espace de travail.
 
-    ![Administrateur de l’espace de service](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Boîte de dialogue Accéder](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## <a name="connection-strings-for-the-xmla-endpoint"></a>Chaînes de connexion pour le point de terminaison XMLA
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO et ADOMD
 
-Lorsque vous vous connectez à une application cliente ou à une application web, les packages installables des [bibliothèques clientes AMO et ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.0.2 (et ultérieures) issus de NuGet prennent en charge l’utilisation des principaux de service dans les chaînes de connexion à l’aide de la syntaxe suivante : `app:AppID`, puis le mot de passe ou `cert:thumbprint`.
+Quand vous vous connectez à des applications clientes ou à des applications web, les packages installables des [bibliothèques de client AMO et ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juin 2020) issus de NuGet prennent en charge les principaux de service dans les chaînes de connexion à l’aide de la syntaxe `app:AppID`, et du mot de passe ou de `cert:thumbprint`.
 
 Dans l’exemple suivant, `appID` et `password` sont utilisés pour effectuer une opération d’actualisation d’une base de données model :
 

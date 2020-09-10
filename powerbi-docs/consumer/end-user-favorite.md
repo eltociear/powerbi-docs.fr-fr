@@ -7,25 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/09/2020
+ms.date: 09/02/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: cf63f7e00c134abb6feed38f1b1000e35932a5c6
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 17dcf31a1e0f4dadc5c4718dfbf73d98950b297a
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216064"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443420"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Quand vous ajoutez du contenu à vos *Favoris*, vous pouvez y accéder rapidement à partir de la liste de contenus des **Favoris** ainsi qu’en accédant à **Accueil Power BI** > **Favoris + fréquents**. Les favoris sont généralement le contenu que vous consultez le plus souvent et qui est signalé par une étoile.
+Quand vous ajoutez du contenu à vos *Favoris*, vous pouvez y accéder rapidement à partir de la liste de contenus des **Favoris** ainsi qu’en accédant à **Accueil Power BI** > **Favoris + fréquents**. Les favoris sont généralement le contenu que vous consultez le plus souvent et qui est signalé par une étoile pleine.
 
-   ![Icône Favoris](./media/end-user-favorite/power-bi-favorite-nav.png)
+   ![Icône Favoris](./media/end-user-favorite/power-bi-nav-favorite.png)
 
-   ![Icône Favoris + fréquents](./media/end-user-favorite/power-bi-home.png)
+   ![Icône Favoris + fréquents](./media/end-user-favorite/power-bi-home-full.png)
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Ajouter un tableau de bord ou un rapport aux favoris
 
@@ -33,29 +33,29 @@ Quand vous ajoutez du contenu à vos *Favoris*, vous pouvez y accéder rapidemen
 
 2. Dans la barre de menus du haut du service Power BI, sélectionnez **Favori** ou l’icône en forme d’étoile ![Icône d’étoile](./media/end-user-favorite/power-bi-favorite-icon.png).
    
-   ![Icône Favori](./media/end-user-favorite/power-bi-favorite.png)
+   ![Icône Favori](./media/end-user-favorite/power-bi-fav.png)
    
    Vous pouvez également afficher un tableau de bord ou un rapport à partir de n’importe quel emplacement signalé par une étoile (Accueil, Récents, Applications et Partagé avec moi). 
    
-   ![onglet Tableau de bord avec une étoile jaune](./media/end-user-favorite/power-bi-recent.png)
+   ![onglet Tableau de bord avec une étoile jaune](./media/end-user-favorite/power-bi-recent-favorite.png)
 
 ## <a name="add-an-app-as-a-favorite"></a>Ajouter une application aux favoris
 
 1. Dans le volet de navigation, sélectionnez **Applications**.
 
-   ![Tableau de bord](./media/end-user-favorite/power-bi-app.png)
+   ![Tableau de bord](./media/end-user-favorite/power-bi-apps.png)
 
-2. Pointez sur une application pour afficher plus de détails. Sélectionnez l’icône en forme d’étoile ![Icône d’étoile](./media/end-user-favorite/power-bi-favorite-icon.png) pour l’ajouter aux favoris.
+2. Pointez sur une application pour afficher plus de détails. Sélectionnez l’icône en forme d’étoile ![Capture d’écran montrant le passage de la souris sur un rapport et l’icône des favoris.](./media/end-user-favorite/power-bi-favorite-icon.png) pour l’ajouter aux favoris.
    
    ![Pointer sur une application](./media/end-user-favorite/power-bi-hover-app.png)
 
 ## <a name="work-with-favorites"></a>Utiliser les Favoris
 1. Pour accéder aux favoris, sélectionnez la flèche de menu volant située à droite de **Favoris**. Vous pouvez sélectionner ici un favori pour l’ouvrir. Jusqu’à cinq favoris sont listés par ordre alphabétique. Si vous en avez plus de cinq, sélectionnez **Afficher tout** pour ouvrir la liste de contenus de Favoris. 
    
-   ![menu volant Favoris](./media/end-user-favorite/power-bi-favorite-flyout.png)
-2. Pour voir tous les contenus que vous avez ajoutés aux favoris, dans le volet de navigation, sélectionnez **Favoris** ou l’icône Favoris ![Icône d’étoile](./media/end-user-favorite/power-bi-favorites-icon.png). 
+   ![menu volant Favoris](./media/end-user-favorite/power-bi-favorite-expand.png)
+2. Pour voir tous les contenus que vous avez ajoutés aux favoris, dans le volet de navigation, sélectionnez **Favoris** ou l’icône Favoris. ![Capture d’écran montrant tous les favoris actuels.](./media/end-user-favorite/power-bi-favorites-icon.png) . 
    
-    ![Fenêtre Favoris](./media/end-user-favorite/power-bi-fav-screen.png)
+    ![Fenêtre Favoris](./media/end-user-favorite/power-bi-favorites-screen.png)
    
    À partir d’ici, vous pouvez effectuer différentes actions. Vous pouvez ouvrir un favori, identifier les propriétaires et même partager des favoris avec vos collègues.
 
@@ -64,11 +64,11 @@ Si vous n’utilisez plus un rapport aussi souvent qu’avant, vous pouvez le re
 
 1. Dans le volet de navigation, sélectionnez **Favoris** pour ouvrir l’écran **Favoris**.
    
-   ![écran Favoris](./media/end-user-favorite/power-bi-un-favorite.png)
-2. Sélectionnez l’étoile jaune en regard du contenu que vous voulez retirer des favoris.
+   ![écran Favoris](./media/end-user-favorite/power-bi-unfavorite.png)
+2. Sélectionnez l’étoile noire en regard du contenu que vous voulez retirer des favoris.
 
 > [!NOTE]
-> Vous pouvez également retirer des favoris un tableau de bord, un rapport ou une application. Il vous suffit d’ouvrir et de sélectionner l’étoile jaune pour revenir à une étoile blanche. 
+> Vous pouvez également retirer des favoris un tableau de bord, un rapport ou une application. Il vous suffit d’ouvrir et de sélectionner l’étoile noire pour revenir à une étoile blanche. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations

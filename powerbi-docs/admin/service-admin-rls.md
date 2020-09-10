@@ -10,12 +10,12 @@ ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 94a65a826cce3cdb0821e8127e45a1f983ad7d89
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1478c077cda1097d3903bd0379dc79b27d034ffc
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227868"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443556"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sécurité au niveau des lignes avec Power BI
 
@@ -25,7 +25,7 @@ Vous pouvez configurer la sécurité au niveau des lignes (SNL) pour les modèle
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
-Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, même si les relations sont définies à sens unique ou bidirectionnel. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec une sécurité au niveau des lignes en sélectionnant la relation et en cochant la case **Appliquer le filtre de sécurité dans les deux directions**. Il est préférable de cocher cette case quand vous avez également implémenté une sécurité dynamique au niveau des lignes au niveau du serveur, laquelle se base sur un nom d’utilisateur ou un ID de connexion.
+Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, même si les relations sont définies à sens unique ou bidirectionnel. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec une sécurité au niveau des lignes en sélectionnant la relation et en cochant la case **Appliquer le filtre de sécurité dans les deux directions**. Vous devez cocher cette case quand vous avez également implémenté, au niveau du serveur, une sécurité dynamique au niveau des lignes, laquelle se base sur un nom d’utilisateur ou un ID de connexion.
 
 Pour plus d’informations, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) et [Sécurisation du modèle sémantique BI tabulaire](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 

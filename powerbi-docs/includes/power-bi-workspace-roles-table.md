@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 07/24/2020
+ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 6a2fa7aca043c553c9174db81ff575853e526e06
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: b4b73b71a944fbb34d53be05cacc39c18e4226de
+ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87260252"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89512809"
 ---
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ ms.locfileid: "87260252"
 | Voir et utiliser un élément<sup>5</sup> |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |
 | Lire les données stockées dans les flux de données des espaces de travail | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |
 
-<sup>1</sup> Les Contributeurs peuvent mettre à jour les métadonnées de l’application, mais non publier une nouvelle application, ni modifier les autorisations relatives à l’application, si [l’administrateur de l’espace de travail délègue cette autorisation aux Contributeurs](../collaborate-share/service-create-the-new-workspaces.md#security-settings).
+<sup>1</sup> Les contributeurs peuvent [mettre à jour l’application associée à l’espace de travail](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), si l’Administrateur de l’espace de travail leur délègue cette autorisation. Toutefois, ils ne peuvent pas publier une nouvelle application, ni changer les titulaires des autorisations la concernant.
 
 <sup>2</sup> Les Contributeurs et les Lecteurs peuvent aussi partager des éléments dans un espace de travail s’ils ont des autorisations de repartage.
 

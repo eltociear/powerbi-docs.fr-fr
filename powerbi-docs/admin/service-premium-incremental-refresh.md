@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: a9045c5c088926b24bb9f71e2adf558da6ffa597
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 02716f895d84a7aa49ab7f1d48d60372b3546409
+ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227434"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89443326"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -26,12 +26,11 @@ L’actualisation incrémentielle permet d’utiliser de très grands jeux de do
 > * **Consommation réduite des ressources** : Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
 
 > [!NOTE]
-> L’actualisation incrémentielle est maintenant disponible pour les abonnements et jeux de données Power BI Pro, Premium et partagés. 
+> L’actualisation incrémentielle est maintenant disponible pour les abonnements et jeux de données Power BI Pro, Premium et partagés.
 
 ## <a name="configure-incremental-refresh"></a>Configurer une actualisation incrémentielle
 
 Les stratégies d’actualisation incrémentielle sont définies dans Power BI Desktop et sont appliquées une fois publiées sur le service Power BI.
-
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer des jeux de données volumineux dans Power BI Desktop
 
@@ -99,18 +98,17 @@ Le texte d’en-tête décrit ce qui suit :
 
 #### <a name="refresh-ranges"></a>Plages d’actualisation
 
-L’exemple suivant définit une stratégie d’actualisation pour stocker les données de cinq années calendaires complètes, ainsi que les données de l’année en cours jusqu’à la date actuelle et actualiser dix jours de données de manière incrémentielle. La première opération d’actualisation charge les données d’historique. Les actualisations suivantes sont incrémentielles et effectuent les opérations suivantes (si elles sont planifiées pour s’exécuter tous les jours) :
+L’exemple suivant définit une stratégie d’actualisation pour stocker les données de cinq années calendaires complètes, ainsi que les données de l’année en cours jusqu’à la date actuelle, et actualiser de manière incrémentielle dix jours complets de données. La première opération d’actualisation charge les données d’historique. Les actualisations suivantes sont incrémentielles et effectuent les opérations suivantes (si elles sont planifiées pour s’exécuter tous les jours) :
 
 - Ajout d’un nouveau jour de données.
 
-- Actualisation de dix jours jusqu’à la date actuelle.
+- Actualisation de dix jours complets jusqu’à la date actuelle.
 
 - Suppression des années calendaires qui sont antérieures aux cinq années précédant la date actuelle. Par exemple, si la date actuelle est le 1er janvier 2019, l’année 2013 est supprimée.
 
 La première actualisation effectuée dans le service Power BI peut être plus longue, car toutes les données des cinq années calendaires complètes doivent être importées. Les actualisations suivantes sont généralement très rapides.
 
 ![Plages d’actualisation](media/service-premium-incremental-refresh/refresh-ranges.png)
-
 
 #### <a name="current-date"></a>Date actuelle
 
