@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: f0f2d57b1a60307cef2d848854355715dd74a412
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: b1f9dd6540707993696bddb4494fc73aa782d363
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537984"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008902"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Rapports paginés dans le service Power BI
 
@@ -97,5 +97,5 @@ Quand vous vous abonnez à un rapport paginé, Power BI vous envoie un e-mail c
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Rapports Power BI](end-user-reports.md)
+- [Rapports paginés dans Power BI : FORUM AUX QUESTIONS](../paginated-reports/paginated-reports-faq.md)
 - D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).
-

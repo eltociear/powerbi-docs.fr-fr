@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 04/28/2020
 ms.author: davidi
-ms.openlocfilehash: d56988986cfd994bb21c9bc25d024903719472cf
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ed87101fe7f5fadd24594d53bbd0ffb6f029faa4
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82255814"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90012922"
 ---
 ## <a name="single-sign-on"></a>Authentification unique
 
@@ -26,3 +26,5 @@ Quand l’option d’authentification unique est activée et que vos utilisateur
 
 L’option d’authentification unique prend effet sur tous les jeux de données qui utilisent cette source de données. Elle n’affecte pas la méthode d’authentification utilisée pour les scénarios d’importation.
 
+> [!Note]
+> L’authentification multifacteur Azure (MFA) n’est pas pris en charge. Les utilisateurs qui souhaitent utiliser l’authentification unique avec DirectQuery doivent être exemptés de l’authentification multifacteur (MFA).
