@@ -56,7 +56,7 @@
               href: service-gateway-power-bi-faq.md
     - name: Guides pratiques
       items:
-        - name: Se connecter aux sources de données
+        - name: Se connecter à la source de données
           href: desktop-connect-to-data.md
         - name: Se connecter aux données
           items:
@@ -270,8 +270,6 @@
               href: service-connect-to-pbi-premium-capacity-metrics.md
             - name: Project Online
               href: service-connect-to-project-online.md
-            - name: QuickBooks Online
-              href: service-connect-to-quickbooks-online.md
             - name: Tableau de bord des réponses aux urgences régionales
               href: service-connect-to-regional-emergency-response.md
             - name: Salesforce
