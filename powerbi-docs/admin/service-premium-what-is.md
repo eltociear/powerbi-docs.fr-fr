@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: de5ab7b75967e752615bf7415c81ba7bb18c1a80
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: 492ff2c21d285cba37f1bbf631869c84eafe4dc3
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87364051"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008557"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -205,7 +205,7 @@ Les contraintes de mémoire par requête et les contraintes de temps étant plus
 
 ## <a name="incremental-refresh"></a>Actualisation incrémentielle
 
-L’actualisation incrémentielle joue un rôle important dans la maintenance des jeux de données volumineux dans Power BI Premium. Ce type d’actualisation présente de nombreux avantages, notamment une plus grande rapidité, car seules les données qui ont été modifiées doivent être actualisées. Les actualisations sont plus fiables, car il n’est plus nécessaire de maintenir des connexions à long terme avec des sources de données volatiles. La consommation des ressources est réduite, car moins il y a de données à actualiser, plus la consommation globale de mémoire et des autres ressources diminue. Les stratégies d’actualisation incrémentielle sont définies dans **Power BI Desktop** et sont appliquées une fois publiées dans l’espace de travail d’une capacité Premium. 
+L’actualisation incrémentielle joue un rôle important dans l’usage et la maintenance des jeux de données volumineux dans Power BI Premium et Power BI Pro. Ce type d’actualisation présente de nombreux avantages, notamment une plus grande rapidité, car seules les données qui ont été modifiées doivent être actualisées. Les actualisations sont plus fiables, car il n’est plus nécessaire de maintenir des connexions à long terme avec des sources de données volatiles. La consommation des ressources est réduite, car moins il y a de données à actualiser, plus la consommation globale de mémoire et des autres ressources diminue. Les stratégies d’actualisation incrémentielle sont définies dans **Power BI Desktop** et sont appliquées une fois publiées dans l’espace de travail d’une capacité Premium. 
 
 ![Détails de l’actualisation](media/service-premium-incremental-refresh/refresh-details.png)
 

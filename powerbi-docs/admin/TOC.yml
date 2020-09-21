@@ -80,7 +80,9 @@
           href: desktop-admin-sign-in-form.md
         - name: Protection des données
           items:
-            - name: "Étiquettes de sensibilité dans Power\_BI"
+            - name: "Protection des données dans Power\_BI"
+              href: service-security-data-protection-overview.md
+            - name: Vue d’ensemble des étiquettes de confidentialité
               href: service-security-sensitivity-label-overview.md
             - name: Activer l’étiquetage de confidentialité
               href: service-security-enable-data-sensitivity-labels.md

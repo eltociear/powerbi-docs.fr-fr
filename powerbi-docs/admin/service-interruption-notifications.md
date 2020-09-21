@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 09/09/2020
 ms.author: kfollis
-ms.openlocfilehash: 43d78710e4b60ed57ac46f713ce7bc787e852f26
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 89619a20f2fcf8510825b0234b90be5b2ff92e11
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485481"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642278"
 ---
 # <a name="service-interruption-notifications"></a>Notifications d’interruption de service
 
@@ -40,7 +40,7 @@ L’e-mail de notification fournit des informations sur la raison de l’utilisa
 
 * ID du jeu de données responsable
 * Type d'opération
-* Temps processeur associé à l’utilisation intensive des ressources
+* Temps processeur associé à l’usage intensif des ressources. Lisez la [définition du temps processeur](https://wikipedia.org/wiki/CPU_time) dans Wikipédia.
 
 Power BI envoie également des notifications par e-mail en cas de détection d’une surcharge dans une capacité Power BI Premium. L’e-mail indique la raison probable de la surcharge, les opérations qui ont généré la charge au cours des 10 dernières minutes et la quantité de charge générée par chaque opération. 
 

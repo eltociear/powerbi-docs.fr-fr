@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 42c21a99422e7a3c67cdb65b62d6c323f8c8aa0d
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 4282b4fc5d59e2ff5e0def353ad444546dcf5f43
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092242"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008511"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nouveautés dans Power BI Desktop
 
@@ -91,7 +91,7 @@ La vidéo suivante décrit chacune de ces mises à jour. Vous pouvez également 
 Vous voulez en apprendre davantage sur Power BI par le biais de vidéos et de contenus attrayants ? Découvrez la collection suivante de contenu et de sources vidéo :
 
 -   [Chaîne Power BI](https://www.youtube.com/user/mspowerbi) : collection de vidéos traitant de Power BI sur YouTube.
--   [Formation guidée sur Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) : visite guidée de Power BI en courtes sessions.
+-   [Microsoft Learn pour Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link) : formation guidée de Power BI en courtes séquences.
 
 ## <a name="updates-for-previous-months"></a>Mises à jour des mois précédents
 

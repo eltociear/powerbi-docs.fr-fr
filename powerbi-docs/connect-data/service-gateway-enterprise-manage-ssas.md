@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2921ea9ff0e5e1fa6bc12c0ecd5dd047b703a937
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c97a303a5b3241f49e82aac41d9ed7984c3a5af1
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237619"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642306"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 
@@ -36,7 +36,7 @@ Pour plus d’informations sur l’ajout d’une source de données, consultez [
 Renseignez les informations relatives à la source de données, notamment le **Serveur** et la **Base de données**. La passerelle utilise les informations que vous entrez dans **Nom d’utilisateur** et **Mot de passe** pour se connecter à l’instance Analysis Services.
 
 > [!NOTE]
-> Le compte Windows que vous utilisez doit disposer des autorisations d’administrateur de serveur pour l’instance à laquelle vous vous connectez. Si le mot de passe de ce compte s’accompagne d’une date d’expiration, une erreur de connexion peut survenir si le mot de passe n’a pas été mis à jour pour la source des données. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+> Le compte Windows que vous entrez doit être membre du rôle Administrateur de serveur sur l’instance Analysis Services à laquelle vous vous connectez. Si le mot de passe de ce compte s’accompagne d’une date d’expiration, une erreur de connexion peut survenir si le mot de passe n’a pas été mis à jour pour la source des données. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Spécification des paramètres de la source de données](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 264d3f4a0c611ca01de627b7656584ceb60e7b18
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 89d911680d46e159e446dbcf6bd06e2caf4b6b65
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214537"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642612"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Guide du modèle DirectQuery dans Power BI Desktop
 
@@ -127,7 +127,7 @@ Vous pouvez obtenir de nombreuses améliorations fonctionnelles et de performanc
 
 ## <a name="educate-users"></a>Former les utilisateurs
 
-Il est important de former vos utilisateurs à l’utilisation efficace des rapports basés sur des jeux de données DirectQuery. Les auteurs de vos rapports doivent assimiler le contenu décrit dans [Optimiser les conceptions de rapport](#optimize-report-designs section).
+Il est important de former vos utilisateurs à l’utilisation efficace des rapports basés sur des jeux de données DirectQuery. Les auteurs des rapports doivent assimiler le contenu décrit dans la section [Optimiser les conceptions de rapport](#optimize-report-designs).
 
 Nous vous recommandons de former les consommateurs aux rapports qui sont basés sur des jeux de données DirectQuery. Il peut être utile pour eux de comprendre l’architecture générale des données, y compris les limitations pertinentes décrites dans cet article. Informez-les que les réponses d’actualisation et le filtrage interactif peuvent parfois s’avérer lents. Quand les utilisateurs des rapports comprennent la raison pour laquelle une dégradation des performances se produit, ils sont moins susceptibles de se méfier des rapports et des données.
 

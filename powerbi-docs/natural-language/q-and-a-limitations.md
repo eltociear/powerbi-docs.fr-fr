@@ -5,14 +5,14 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/21/2020
+ms.date: 09/09/2020
 ms.author: maggies
-ms.openlocfilehash: eebb40d81e9b59b545b30ce55dbf4a362b826455
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 7b02e1b1fb49eb1c43b12d204250eabec8eafe91
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937582"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642347"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Limitations de Questions et réponses dans Power BI
 
@@ -31,12 +31,17 @@ Questions et réponses prend en charge les configurations suivantes de sources d
 
 Dans chacune de ces configurations, la sécurité au niveau des lignes est également prise en charge.
 
+**Prise en charge de DirectQuery dans Questions et réponses** (préversion)
+
+Questions et réponses prend désormais en charge les sources DirectQuery SQL, notamment SQL Server 2019, Azure SQL Database et Azure Synapse Analytics. Vous pouvez utiliser Questions et réponses pour poser des questions en langage naturel sur ces sources de données. Il y a un léger changement de comportement de Questions et réponses en mode DirectQuery : Une fois que vous avez tapé votre question, vous devez sélectionner le bouton **Envoyer**. Ce changement empêche la surcharge de la source DirectQuery avec des requêtes inutiles au fur et à mesure de votre saisie.
+
+Les autres sources DirectQuery ne sont pas prises en charge dans Questions et réponses. Nous ne bloquons pas Questions et réponses si vous avez d’autres sources DirectQuery dans votre jeu de données, mais il se peut que certaines questions ne soient pas correctement traitées ou qu’elles retournent des erreurs.
+
 ### <a name="data-sources-not-supported"></a>Sources de données non prises en charge
 
 Questions et réponses dans Power BI ne prend actuellement pas en charge les configurations suivantes :
 
 - Sécurité au niveau objet avec n’importe quel type de source de données
-- DirectQuery sur n’importe quelle source. Il existe une solution de contournement consistant à recourir à la connexion directe à Azure Analysis Services, qui utilise DirectQuery.
 - Modèles composites
 - Reporting Services 
 

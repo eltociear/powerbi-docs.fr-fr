@@ -347,6 +347,8 @@
               href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
             - name: Créer un rapport avec un datas et Power BI partagé
               href: ../paginated-reports/report-builder-shared-datasets.md
+            - name: Télécharger le .rdl pour un rapport paginé
+              href: ../paginated-reports/paginated-reports-download-rdl.md
             - name: Créer des paramètres
               href: ../paginated-reports/paginated-reports-parameters.md
             - name: Définir les vues de rapport

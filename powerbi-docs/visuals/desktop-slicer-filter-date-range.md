@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 09/09/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: ef6fef8535e0fb6013e363a23f4736368a66720c
-ms.sourcegitcommit: d91c060913fcb526f9a01dc48e218485daf55b4e
+ms.openlocfilehash: 26e638e106f7bd11544d1d80dae543f06783bda7
+ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89562441"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "90008793"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Création d’un segment et d’un filtre de date relative dans Power BI
 
@@ -45,9 +45,7 @@ Pour le premier paramètre du *segment de date relative*, vos choix sont les sui
 ![Capture d’écran des options de configuration Relatif avec le premier paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 * Dernier
-
 * Suivant
-
 * This
 
 Le deuxième paramètre (milieu) du *segment de date relative* vous permet d’entrer un nombre pour définir la plage de dates relatives.
@@ -59,26 +57,19 @@ Le troisième paramètre vous permet de choisir la mesure de la date. Vos choix 
 ![Capture d’écran des options de configuration Relatif avec le troisième paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
 
 * Jours
-
 * Semaines
-
 * Semaines (calendaires)
-
 * Mois
-
 * Mois (calendaires)
-
 * Années
-
 * Années (civiles)
 
 Si vous sélectionnez **Mois** dans cette liste et entrez *2* dans le paramètre du milieu, voici ce qui se produit :
 
-* Si nous sommes le 20 juillet,
+* Si la date du jour est le 20 juillet :
 
-* les données incluses dans les visuels limités par le segment affichent les données des deux mois précédents,
-
-* à partir du 21 mai jusqu’au 20 juillet (date d’aujourd’hui).
+    - Les données incluses dans les visuels limités par le segment affichent les données des deux mois précédents,
+    - À partir du 21 mai jusqu’au 20 juillet (date d’aujourd’hui).
 
 En comparaison, si vous sélectionnez *Mois (calendaires)* , les visuels limités affichent les données du 1er mai jusqu’au 30 juin (les deux derniers mois calendaires complets).
 
@@ -100,10 +91,9 @@ Une fois **Filtrage de date relative** sélectionné, trois sections à modifier
 
 Les considérations et limitations suivantes s’appliquent actuellement à l’utilisation du **segment et du filtre de plage de dates relatives**.
 
+* Le type de données pour le champ dans le segment doit être une date et non le texte par défaut. Si ce n’est pas le cas, les options associées ne s’affichent pas dans le segment.
 * Les modèles de données dans **Power BI** n’incluent pas les informations de fuseau horaire. Ces modèles peuvent stocker des heures, mais sans indication de leur fuseau horaire.
-
 * Le segment et le filtre sont toujours basés sur l’heure UTC (temps universel coordonné). Si vous définissez un filtre dans un rapport et que vous l’envoyez à un collègue qui se trouve dans un autre fuseau horaire, vous voyez tous les deux les mêmes données. Sauf si vous vous situez dans le fuseau horaire UTC, votre collègue et vous devez tenir compte du décalage temporel que vous rencontrez.
-
 * Vous pouvez convertir à l’heure UTC les données capturées dans un fuseau horaire local en utilisant l’**Éditeur de requête**.
 
 ## <a name="next-steps"></a>Étapes suivantes

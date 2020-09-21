@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 07/08/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 26c27c8cd33929c7bb83a8ef5b1faed0fb12e502
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f652d09d5d954123a47b45b30ab1076763018225
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216557"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642649"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -180,7 +180,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la grande maj
 - [Jeux de données partagés et certifiés](../connect-data/service-datasets-share.md)
 - Rapports partagés directement ou via un pack de contenu d’organisation
 - Rapports dans un espace de travail où vous n’êtes pas membre avec l’autorisation de modification.
-- Les visuels « R » ne sont actuellement pas pris en charge dans les rapports **Publier sur le web**.
+- Les visuels « R » et Python ne sont actuellement pas pris en charge dans les rapports **Publier sur le web**.
 - Exportation de données à partir de visuels dans un rapport qui a été publié sur le web.
 - Visuels ArcGIS Maps for Power BI.
 - Rapports contenant des mesures DAX au niveau du rapport.

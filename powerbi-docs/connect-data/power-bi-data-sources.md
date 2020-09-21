@@ -6,22 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2020
+ms.date: 09/11/2020
 ms.author: davidi
-ms.openlocfilehash: ae4d51d9a40044ae939f5cb2b0b15442697df5fd
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 926569e783dad7a97b91e2e5c1752401d21d6612
+ms.sourcegitcommit: 376ea86f69545444f975378cbf63e54c2f75faa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764948"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90084050"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
 Le tableau suivant montre les sources de données qui sont prises en charge par Power BI pour les jeux de données, y compris des informations sur DirectQuery et sur la passerelle de données locale. Pour plus d'informations sur les dataflows, voir [Se connecter à des sources de données pour les dataflows Power BI](../transform-model/service-dataflows-data-sources.md).
-
-> [!NOTE]
-> Bon nombre de connecteurs de données pour Power BI Desktop ont besoin d’Internet Explorer 10 (ou une version plus récente) pour l’authentification. 
-
 
 | Paramètres | Connexion à partir de Desktop | Connexion et actualisation à partir du service | DirectQuery/Connexions actives | Passerelle (prise en charge) | Passerelle (obligatoire) |
 |---|---|---|---|---|---|---|---|
@@ -156,6 +152,11 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 <sup>7</sup> Le service Power BI ne prend pas en charge les flux OData qui requièrent une authentification.
 
 <sup>8</sup> Paxata est pris en charge dans la version de Power BI Desktop optimisée pour Power BI Report Server. Il n’est pas pris en charge dans les rapports Power Bi publiés sur le Power Bi Report Server. Pour obtenir une liste des sources de données prises en charge, consultez [Sources de données de rapports Power BI dans Power BI Report Server](../report-server/data-sources.md).
+
+## <a name="considerations-and-limitations"></a>Considérations et limitations
+
+- Beaucoup de connecteurs de données pour Power BI Desktop nécessitent Internet Explorer 10 (ou une version plus récente) pour l’authentification. 
+- Certaines sources de données sont disponibles dans Power BI Desktop, optimisées pour Power BI Report Server, mais ne sont pas prises en charge lors de la publication dans Power BI Report Server. Pour obtenir une liste des sources de données prises en charge, consultez [Sources de données de rapports Power BI dans Power BI Report Server](../report-server/data-sources.md).
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Authentification unique (SSO) pour les sources DirectQuery
 

@@ -8,13 +8,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
-ms.date: 05/01/2020
-ms.openlocfilehash: 36c14ec0da3c7818a6c938e0fd47f4a6476470f6
-ms.sourcegitcommit: d91c060913fcb526f9a01dc48e218485daf55b4e
+ms.date: 09/09/2020
+ms.openlocfilehash: f81cf6625f02f71b1ccf8bcd2c442ded3329083d
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89562418"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642387"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>Paramètres d’URL dans les rapports paginés de Power BI
 
@@ -91,9 +91,9 @@ Les valeurs disponibles sont :
     - « interactive » (par défaut) : permet de charger le rapport en mode Interactif.
     - « pageView » : permet de charger le rapport en mode Consultation de page.
 
-**Parameter panel state** Spécifie si le panneau des paramètres est fermé ou ouvert lors du chargement du rapport, ou s’il est entièrement masqué.
+**Parameter panel** Spécifie si le panneau des paramètres est fermé ou ouvert lors du chargement du rapport, ou s’il est entièrement masqué.
 
--   rdl:parameterPanelState
+-   rdl:parameterPanel
 
     - 'collapsed' : charger le rapport avec le panneau de paramètres fermé. Le bouton de paramètre est activé pour que les utilisateurs puissent cliquer sur le bouton pour développer.
     - 'hidden' : charger le rapport avec le panneau de paramètres fermé et le bouton de paramètre désactivé.

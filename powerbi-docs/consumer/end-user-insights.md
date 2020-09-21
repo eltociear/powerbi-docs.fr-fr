@@ -7,15 +7,15 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/22/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5fa66f2ff3650e4b4578207c2c70b70041c2c3d5
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 21bccbd11f8d2060b648e22c8ed8aa9471c820f0
+ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537731"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89642522"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "87537731"
 
 Chaque [vignette](end-user-tiles.md) de visuel sur votre tableau de bord est une voie d’accès à l’exploration des données. Quand vous sélectionnez une vignette, elle ouvre un rapport ou [Questions et réponses](end-user-q-and-a.md), où vous pouvez filtrer, trier et explorer le jeu de données sous-jacent du rapport. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.
 
-![Mode de menu Points de suspension](./media/end-user-insights/power-bi-insight.png)
+![mode de menu Points de suspension montrant l’option Afficher des informations](./media/end-user-insights/power-bi-insight.png)
 
 Exécutez une recherche d’insights pour générer des visuels interactifs intéressants basés sur vos données. La recherche d’insights peut être effectuée sur une vignette de tableau de bord spécifique, et vous pouvez même rechercher des insights sur un insight !
 
@@ -35,12 +35,12 @@ Lorsque vous exécutez un aperçu sur une mosaïque de tableau de bord, Power BI
 1. [Ouvrir un tableau de bord](end-user-dashboards.md).
 2. Pointez sur une vignette, Sélectionnez **Plus d’options** (...) et choisissez **Afficher des informations**. 
 
-    ![Mode de menu Points de suspension](./media/end-user-insights/power-bi-hovers.png)
+    ![Capture d’écran montrant la sélection des points de suspension pour afficher la liste déroulante](./media/end-user-insights/power-bi-hover.png)
 
 
 3. La vignette s’ouvre en [mode Focus](end-user-focus.md), qui présente les cartes d’informations à droite.    
    
-    ![Mode focus](./media/end-user-insights/power-bi-insights-tile.png)    
+    ![Mode focus](./media/end-user-insights/power-bi-insights-tiles.png)    
 4. Une information suscite votre intérêt ? Sélectionnez la carte d’informations pour en savoir plus. L’information sélectionnée s’affiche à gauche et les nouvelles cartes d’informations, basées uniquement sur les données de cette information, s’affichent à droite.    
 
  ## <a name="interact-with-the-insight-cards"></a>Interagir avec les cartes d’informations
@@ -48,15 +48,12 @@ Une fois que vous avez un insight ouvert, continuez l’exploration.
 
    * Filtrez le visuel sur le canevas.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
 
-      ![aperçu et menu Filtres développé](./media/end-user-insights/power-bi-filters.png)
+      ![insight avec le menu Filtres développé](./media/end-user-insights/power-bi-filter.png)
    
-   * Exécuter un aperçu sur la carte proprement dite. C’est ce que l’on appelle un **aperçu connexe**. Sélectionnez une carte d’insight pour l’activer. Elle apparaît sur le canevas de votre rapport.
+   * Exécuter un aperçu sur la carte proprement dite. C’est ce que l’on appelle un **aperçu connexe**. Sélectionnez une carte d’insight pour l’activer. Il se déplace vers le côté gauche du canevas du rapport, et de nouvelles cartes, basées uniquement sur les données de cet insight, s’affichent à droite.
    
-      ![aperçu et menu Filtres développé](./media/end-user-insights/power-bi-insight-card.png)
+      ![Insight associé et menu Filtres développé](./media/end-user-insights/power-bi-insights-card.png)
    
-   * En haut à droite, sélectionnez l’icône en forme d’ampoule ![icône Obtenir des informations](./media/end-user-insights/power-bi-bulb-icon.png) ou **Obtenir des informations**. L’aperçu s’affiche à gauche et de nouvelles cartes, basées uniquement sur les données de cet aperçu, s’affichent à droite.
-     
-     ![barre de menus affichant l’icône Obtenir des informations](./media/end-user-insights/power-bi-related.png)
      
 Pour revenir à votre rapport, dans le coin supérieur gauche, sélectionnez **Quitter le mode focus**.
 
@@ -67,5 +64,5 @@ Pour revenir à votre rapport, dans le coin supérieur gauche, sélectionnez **Q
 ## <a name="next-steps"></a>Étapes suivantes
 
 Exécutez des insights sur les visuels de rapport [à l’aide de la fonctionnalité Analyser](end-user-analyze-visuals.md)    
-Découvrez les [types d’Informations rapides disponibles](end-user-insight-types.md).
+Pour en savoir plus, voir les [types d’informations disponibles](end-user-insight-types.md).
 
