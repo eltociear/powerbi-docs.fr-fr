@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 19548729f4ae85334fea14584e78ad4ee05a5c24
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83792907"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965323"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -49,11 +49,11 @@ Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et l
 
 ### <a name="the-wfe-cluster"></a>Le cluster WFE
 
-Le cluster **WFE** gère le processus d’authentification et de connexion initial pour Power BI. Il utilise AAD pour authentifier les clients et fournir des jetons pour les connexions clientes ultérieures au service Power BI.
+Le cluster **WFE** gère le processus d’authentification et de connexion initial pour Power BI. Il utilise AAD pour authentifier les clients et fournir des jetons pour les connexions clientes ultérieures au service Power BI.
 
 ![Le cluster WFE](media/whitepaper-powerbi-security/powerbi-security-whitepaper_02.png)
 
-Quand des utilisateurs tentent de se connecter au service Power BI, le service DNS du client peut communiquer avec **Azure Traffic Manager** pour trouver le centre de données le plus proche avec un déploiement de Power BI. Pour plus d’informations sur ce processus, consultez [Méthode de routage du trafic basé sur les performances pour Azure Traffic Manager](https://azure.microsoft.com/documentation/articles/traffic-manager-routing-methods/#performance-traffic-routing-method).
+Quand des utilisateurs tentent de se connecter au service Power BI, le service DNS du client peut communiquer avec **Azure Traffic Manager** pour trouver le centre de données le plus proche avec un déploiement de Power BI. Pour plus d’informations sur ce processus, consultez [Méthode de routage du trafic basé sur les performances pour Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 Le cluster WFE le plus proche de l’utilisateur gère la séquence de connexion et d’authentification (décrite plus loin dans cet article) et fournit un jeton AAD à l’utilisateur une fois que l’authentification a réussi. Le composant ASP.NET au sein du cluster WFE analyse la requête pour déterminer l’organisation à laquelle appartient l’utilisateur, puis consulte le **service mondial** Power BI. Le service mondial est une table Azure unique partagée par tous les clusters WFE et back-end du monde entier qui mappe les utilisateurs et les organisations clientes au centre de données hébergeant leur locataire Power BI. Le serveur WFE indique au navigateur quel cluster back-end héberge le locataire de l’organisation. Une fois qu’un utilisateur est authentifié, les interactions clientes suivantes se produisent directement avec le cluster back-end, sans que le serveur WFE serve d’intermédiaire pour ces requêtes.
 
@@ -127,7 +127,7 @@ Microsoft fournit également des centres de données pour des souverainetés. Po
 
 Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
-## <a name="user-authentication"></a>Authentification utilisateur
+## <a name="user-authentication"></a>Authentification des utilisateurs
 
 L’authentification utilisateur auprès du service Power BI se compose d’une série de requêtes, réponses et redirections entre le navigateur de l’utilisateur et le service Power BI ou les services Azure utilisés par Power BI. Cette séquence décrit le processus d’authentification utilisateur dans Power BI. Pour plus d’informations sur les options des modèles d’authentification utilisateur d’une organisation (modèles de connexion), consultez [choix d’un modèle de connexion pour Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
@@ -174,7 +174,7 @@ Le tableau suivant décrit les données Power BI en fonction du type de requêt
 
 |  |Importer  |DirectQuery  |Live Connect  |
 |---------|---------|---------|---------|
-|schéma     |     X    |    X     |         |
+|Schéma     |     X    |    X     |         |
 |Données de ligne     |    X     |         |         |
 |Mise en cache de données de visuels     |    X     |     X    |    X     |
 
@@ -227,19 +227,19 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
 
     a. Analysis Services local et DirectQuery : rien n’est stocké dans le service Power BI.
 
-    b. ETL : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure pour le service Power BI utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE.
+    b. ETL : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure pour le service Power BI utilisent [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE.
 
-    c. Envoi de données (push) v1 : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure dans le service Power BI utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE. Les données push v1 ont été supprimées à partir du 2016. 
+    c. Envoi de données (push) v1 : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure dans le service Power BI utilisent [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE. Les données push v1 ont été supprimées à partir du 2016. 
 
     d. Envoi de données (push) v2 : les données sont stockées chiffrées dans Azure SQL.
 
-Power BI utilise l’approche de chiffrement côté client, à l’aide du mode CBC (chaînage des blocs de chiffrement) avec AES (Advanced Encryption Standard) pour chiffrer son stockage d’objets blob Azure. Apprenez-en davantage sur le [chiffrement côté client](https://azure.microsoft.com/documentation/articles/storage-client-side-encryption/).
+Power BI utilise l’approche de chiffrement côté client, à l’aide du mode CBC (chaînage des blocs de chiffrement) avec AES (Advanced Encryption Standard) pour chiffrer son stockage d’objets blob Azure. Apprenez-en davantage sur le [chiffrement côté client](/azure/storage/common/storage-client-side-encryption).
 
 Power BI fournit une supervision de l’intégrité des données de plusieurs manières :
 
 * Pour les données au repos dans Azure SQL, Power BI utilise dbcc, TDE et une somme de contrôle de page constante dans le cadre des offres natives de SQL.
 
-* Pour les données au repos dans Stockage Blob Azure, Power BI utilise le chiffrement côté client et HTTPS pour transférer les données vers le stockage, avec des vérifications d’intégrité pendant la récupération des données. Apprenez-en davantage sur la [sécurité de Stockage Blob Azure](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
+* Pour les données au repos dans Stockage Blob Azure, Power BI utilise le chiffrement côté client et HTTPS pour transférer les données vers le stockage, avec des vérifications d’intégrité pendant la récupération des données. Apprenez-en davantage sur la [sécurité de Stockage Blob Azure](/azure/storage/blobs/security-recommendations).
 
 #### <a name="reports"></a>Rapports
 
@@ -268,7 +268,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 4. Fichiers Power BI Desktop (.pbix) ou Excel (.xlsx) d’origine publiés sur Power BI
 
-    Parfois, une copie ou un cliché instantané des fichiers .xlsx ou .pbix est stocké dans le stockage Blob Azure de Power BI, et quand cela se produit les données sont chiffrées. Tous ces rapports stockés dans le service Power BI, dans Stockage Blob Azure, utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE.
+    Parfois, une copie ou un cliché instantané des fichiers .xlsx ou .pbix est stocké dans le stockage Blob Azure de Power BI, et quand cela se produit les données sont chiffrées. Tous ces rapports stockés dans le service Power BI, dans Stockage Blob Azure, utilisent [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE.
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Tableaux de bord et vignettes de tableaux de bord
 
@@ -356,8 +356,8 @@ Le tableau suivant indique la prise en charge de l’authentification basée sur
 
 | **Prise en charge de l’authentification basée sur les certificats** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
-| **Power BI** (connexion au service) | pris en charge | pris en charge | Non prise en charge |
-| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Prise en charge | Non prise en charge |
+| **Power BI** (connexion au service) | supported | supported | Non pris en charge |
+| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Prise en charge | Non pris en charge |
 
 Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune donnée personnelle n’est envoyée avec les données de télémétrie.
 
@@ -385,7 +385,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * **SQL Server Analysis Services et Power bi :** Pour les organisations qui utilisent des SQL Server Analysis Services locaux, Power BI offre la Power BI passerelle de données locale (qui est une **passerelle**, comme mentionné dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Pour plus d’informations sur les passerelles, consultez [passerelle de données locale](../connect-data/service-gateway-onprem.md).
 
-  De plus, les organisations peuvent utiliser Kerberos pour l’**authentification unique** et se connecter de façon fluide de Power BI à des sources de données locales telles que SQL Server, SAP HANA et Teradata. Pour plus d’informations et pour connaître la configuration spécifique requise, consultez [**Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
+  De plus, les organisations peuvent utiliser Kerberos pour l’**authentification unique** et se connecter de façon fluide de Power BI à des sources de données locales telles que SQL Server, SAP HANA et Teradata. Pour plus d’informations et pour connaître la configuration spécifique requise, consultez [**Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales**](../connect-data/service-gateway-sso-overview.md).
 
 * **Connexions sans domaine**: pour les connexions de données qui ne sont pas jointes à un domaine et qui ne sont pas associées à la sécurité au niveau du rôle, l’utilisateur doit fournir des informations d’identification lors de la séquence de connexion, qui Power bi ensuite transmises à la source de données pour établir la connexion. Si les autorisations sont suffisantes, les données sont chargées à partir de la source de données dans le service Power BI.
 
@@ -469,7 +469,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Comment Microsoft traite-t-il les connexions pour les clients qui ont des abonnements Power BI Premium ? Les connexions sont-elles différentes de celles établies pour la service Power BI non-Premium ?**
 
-* Les connexions établies pour les clients ayant un abonnement Power BI Premium implémentent un processus d’autorisation [Azure Business-to-Business (B2B)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), en utilisant Azure Active Directory (AD) pour activer le contrôle d’accès et l’autorisation. Power BI gère les connexions à partir des abonnés Power BI Premium aux ressources Power BI Premium exactement comme il le ferait pour tout autre utilisateur Azure AD.
+* Les connexions établies pour les clients ayant un abonnement Power BI Premium implémentent un processus d’autorisation [Azure Business-to-Business (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), en utilisant Azure Active Directory (AD) pour activer le contrôle d’accès et l’autorisation. Power BI gère les connexions à partir des abonnés Power BI Premium aux ressources Power BI Premium exactement comme il le ferait pour tout autre utilisateur Azure AD.
 
 ## <a name="conclusion"></a>Conclusion
 
@@ -486,10 +486,10 @@ Nous apprécions vos commentaires. Nous serions heureux de recevoir vos suggesti
 Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 
 - [Groupes dans Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
-- [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
+- [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [API REST Power BI - Vue d’ensemble](/rest/api/power-bi/)
 - [Informations de référence sur l’API de Power BI](/rest/api/power-bi/)
 - [On-premises data gateway (Passerelle de données locale)](../connect-data/service-gateway-onprem.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
-- [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
+- [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](../connect-data/service-gateway-sso-overview.md)
