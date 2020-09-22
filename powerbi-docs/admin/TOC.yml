@@ -133,7 +133,7 @@
         - name: 'PowerShell, API REST et kit SDK .NET'
           href: service-admin-reference.md
         - name: Applets de commande Power BI pour PowerShell
-          href: 'https://docs.microsoft.com/powershell/power-bi/'
+          href: /powershell/power-bi/
           maintainContext: true
         - name: Informations de référence sur les URL du service
           href: power-bi-whitelist-urls.md

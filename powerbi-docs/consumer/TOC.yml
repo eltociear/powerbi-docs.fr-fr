@@ -137,7 +137,7 @@
             - name: Installer et utiliser des applications
               href: end-user-app-view.md
             - name: Se connecter aux services
-              href: end-user-connect-to-services.md
+              href: ../connect-data/service-connect-to-services.md
             - name: Obtenir un exemple d’application de la Place de marché d’applications
               href: end-user-app-marketing.md
         - name: Posez des questions sur vos données
@@ -153,6 +153,6 @@
         - name: Forum Aux Questions
           href: end-user-faq.md
         - name: Navigateurs pris en charge
-          href: end-user-browsers.md
+          href: ../fundamentals/power-bi-browsers.md
         - name: Types d’insights rapides
           href: end-user-insight-types.md

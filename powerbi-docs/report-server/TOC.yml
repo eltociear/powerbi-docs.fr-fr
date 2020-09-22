@@ -9,7 +9,7 @@
           href: get-started.md
         - name: Comparer Power BI Report Server et le service
           href: compare-report-server-service.md
-    - name: Tutoriels
+    - name: Didacticiels
       expanded: true
       items:
         - name: Explorer Power BI Report Server dans une machine virtuelle
@@ -27,7 +27,7 @@
           href: support-timeline.md
         - name: Prise en charge d’Always Encrypted
           href: always-encrypted-support.md
-        - name: Configuration matérielle et logicielle requise
+        - name: Spécifications matérielles et logicielles
           href: system-requirements.md
         - name: Prise en charge des navigateurs
           href: browser-support.md
@@ -40,9 +40,9 @@
             - name: Sources de données de rapport paginé
               href: connect-data-sources.md
             - name: Abonnements
-              href: 'https://go.microsoft.com/fwlink/?linkid=851310'
+              href: /sql/reporting-services/working-with-subscriptions-web-portal
             - name: Utilisation de l’application mobile
-              href: 'https://go.microsoft.com/fwlink/?linkid=848711'
+              href: ../consumer/mobile/mobile-apps-for-mobile-devices.md
             - name: Résoudre les problèmes d’actualisation planifiée
               href: scheduled-refresh-troubleshoot.md
         - name: Serveur de rapports pour les développeurs
@@ -50,14 +50,14 @@
             - name: Serveur de rapports pour les développeurs
               href: developer-handbook-overview.md
             - name: Contrôle Visionneuse de rapports
-              href: 'https://go.microsoft.com/fwlink/?linkid=848724'
+              href: /sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started
             - name: Extensions de développement
-              href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+              href: /sql/reporting-services/extensions/reporting-services-extension-library
             - name: Incorporer des rapports
               href: quickstart-embed.md
-    - name: Procédures
+    - name: Guides pratiques
       items:
-        - name: "Installer Power\_BI\_Desktop"
+        - name: "Installer Power\_BI Desktop"
           href: install-powerbi-desktop.md
         - name: Installer le Générateur de rapports
           href: install-report-builder.md
@@ -74,12 +74,12 @@
             - name: Entrer des données directement dans un rapport paginé
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Travailler avec des indicateurs de performance clés
-              href: 'https://go.microsoft.com/fwlink/?linkid=849021'
+              href: /sql/reporting-services/working-with-kpis-in-reporting-services
             - name: Accès à des Jeux de données partagés en tant que flux OData
               href: access-dataset-odata.md
             - name: Changer les chaînes de connexion de source de données avec PowerShell
               href: connect-data-source-apis.md
-            - name: Configuration d'une actualisation planifiée
+            - name: Configurer une actualisation planifiée
               href: configure-scheduled-refresh.md
             - name: Ajouter des commentaires à un rapport
               href: add-comments.md
@@ -102,7 +102,7 @@
             - name: Configurer un serveur de rapports avec le proxy d’application Azure
               href: azure-application-proxy.md
             - name: Accès mobile à distance avec Azure AD
-              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
+              href: /azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
             - name: Héberger des classeurs Excel
               href: excel-oos.md
     - name: Informations de référence
@@ -110,13 +110,13 @@
         - name: API REST
           href: rest-api.md
         - name: WMI
-          href: 'https://go.microsoft.com/fwlink/?linkid=848719'
+          href: /sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs
         - name: API SOAP
-          href: 'https://go.microsoft.com/fwlink/?linkid=848721'
+          href: /sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework
         - name: Accès URL
-          href: 'https://go.microsoft.com/fwlink/?linkid=848722'
+          href: /sql/reporting-services/url-access-ssrs
         - name: Extensions
-          href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+          href: /sql/reporting-services/extensions/reporting-services-extension-library
     - name: Ressources
       items:
         - name: Livre blanc sur la planification de capacité
