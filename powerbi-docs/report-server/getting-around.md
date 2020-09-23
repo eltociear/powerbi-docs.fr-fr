@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 35cbfd905db3d6d8464add0fe0e67060c41c9d0a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: a42ffc2610021ec1f9b77fb5e950253ff8196e61
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858781"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gérer le contenu dans le portail web 
 Le portail web Power BI Report Server est un emplacement local destiné à l’affichage, au stockage et à la gestion de vos rapports mobiles et paginés, ainsi que de vos indicateurs de performance clés Power BI.
@@ -63,10 +63,9 @@ Power BI Report Server vous permet de contrôler avec précision sur les éléme
     ![Sélectionner une propriété](media/getting-around/report-server-web-portal-manage-properties.png)
 3. Sélectionnez **Appliquer**.
 
-Pour en savoir plus, voir [Gestion des abonnements via le portail web](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
+Pour en savoir plus, voir [Gestion des abonnements via le portail web](/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Présentation de Power BI Report Server](get-started.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

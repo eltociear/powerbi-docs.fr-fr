@@ -10,12 +10,12 @@ ms.date: 04/08/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: af58a79c5c81e8f04e5d0ba714703c202f9c8000
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 6eb123ec9a9549c54e311682fdccce451d8552a9
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857263"
 ---
 # <a name="view-and-manage-power-bi-user-licenses"></a>Afficher et gérer les licences utilisateur Power BI
 
@@ -37,11 +37,11 @@ Vos abonnements Power BI actifs sont répertoriés avec les autres abonnements 
 
   ![Capture d’écran de l’abonnement Power BI, montrant un abonnement gratuit.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 
-Ce type d’abonnement est créé pour vous lorsque les utilisateurs tirent parti de l’inscription en libre-service. Pour en savoir plus, consultez [Power BI dans votre organisation](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+Ce type d’abonnement est créé pour vous lorsque les utilisateurs tirent parti de l’inscription en libre-service. Pour en savoir plus, consultez [Power BI dans votre organisation](/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 
 ## <a name="manage-user-licenses-in-microsoft-365"></a>Gérer des licences utilisateur dans Microsoft 365
 
-Pour utiliser le Centre d’administration Microsoft 365 afin de gérer des licences utilisateur, consultez la [documentation sur les abonnements et la facturation d’entreprise](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide).
+Pour utiliser le Centre d’administration Microsoft 365 afin de gérer des licences utilisateur, consultez la [documentation sur les abonnements et la facturation d’entreprise](/microsoft-365/commerce/?view=o365-worldwide).
 
 ## <a name="manage-user-licenses-in-azure-portal"></a>Gérer des licences utilisateur dans le portail Azure
 

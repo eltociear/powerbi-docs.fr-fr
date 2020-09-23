@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 276770b677d85e0e125e7dd87bb0a800248d71c2
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 825b336a96b998c04b019195ad3f3beea96d0a19
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857286"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
@@ -27,7 +27,7 @@ Cet article porte sur l’achat de services et de licences par utilisateur du po
 
 ## <a name="who-can-purchase-and-assign-licenses"></a>Achat et affectation de licences Pro
 
-Vous devez disposer d’un rôle d’administrateur pour acheter ou affecter des licences au sein de votre organisation. Ces rôles sont attribués à l’aide du Centre d’administration Azure Active Directory ou du Centre d’administration Microsoft 365. Le tableau suivant indique le rôle requis pour effectuer des tâches liées à l’achat et à la gestion des licences. Pour plus d’informations sur les rôles d’administrateur dans Azure Active Directory, consultez [Affichage et attribution des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Pour plus d’informations sur les rôles d’administrateur dans Microsoft 365, et notamment les meilleures pratiques, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Vous devez disposer d’un rôle d’administrateur pour acheter ou affecter des licences au sein de votre organisation. Ces rôles sont attribués à l’aide du Centre d’administration Azure Active Directory ou du Centre d’administration Microsoft 365. Le tableau suivant indique le rôle requis pour effectuer des tâches liées à l’achat et à la gestion des licences. Pour plus d’informations sur les rôles d’administrateur dans Azure Active Directory, consultez [Affichage et attribution des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Pour plus d’informations sur les rôles d’administrateur dans Microsoft 365, et notamment les meilleures pratiques, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 | Qui peut acheter des services et des licences ? | Qui peut gérer les licences utilisateur ? |
 | --------------- | --------------- |

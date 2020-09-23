@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/01/2020
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: b24663acf2a3a3fd76953413c298580041afc4ab
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 3af8779f87c511e0d3e12a062278c20de1852b0b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286840"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853391"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Intégration d’Azure Machine Learning dans Power BI
 
@@ -28,8 +28,8 @@ Pour en savoir plus sur les flux de données, consultez [Préparation des donné
 
 Pour en savoir plus sur Azure Machine Learning, consultez :
 
-- Vue d’ensemble :  [Qu'est-ce que Microsoft Azure Machine Learning ?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
-- Démarrages rapides et tutoriels pour Azure Machine Learning :  [Documentation Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/)
+- Vue d’ensemble :  [Qu'est-ce que Microsoft Azure Machine Learning ?](/azure/machine-learning/service/overview-what-is-azure-ml)
+- Démarrages rapides et tutoriels pour Azure Machine Learning :  [Documentation Azure Machine Learning](/azure/machine-learning/)
 
 > [!NOTE]
 > Un abonnement Power BI Premium est nécessaire pour utiliser l’intégration Azure Machine Learning.
@@ -41,7 +41,7 @@ Pour accéder à un modèle Azure ML à partir de Power BI, l’utilisateur doit
 - Pour les modèles Machine Learning Studio (classique), un accès **En lecture** au service web Machine Learning Studio (classique)
 - Pour les modèles Machine Learning, un accès **En lecture** à l’espace de travail Machine Learning
 
-Cet article décrit pas à pas comment autoriser un utilisateur de Power BI à accéder à un modèle hébergé sur le service Azure ML de telle manière que ce modèle soit accessible en tant que fonction de Power Query.  Pour plus d’informations, consultez [Gérer l’accès avec RBAC et le portail Azure](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+Cet article décrit pas à pas comment autoriser un utilisateur de Power BI à accéder à un modèle hébergé sur le service Azure ML de telle manière que ce modèle soit accessible en tant que fonction de Power Query.  Pour plus d’informations, consultez [Gérer l’accès avec RBAC et le portail Azure](/azure/role-based-access-control/role-assignments-portal).
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
@@ -70,7 +70,7 @@ Cet article décrit pas à pas comment autoriser un utilisateur de Power BI à a
 
 Les scientifiques des données utilisent principalement Python pour développer et même pour déployer leurs modèles Machine Learning pour le Machine Learning.  Contrairement à Machine Learning Studio (classique), qui permet d’automatiser la tâche de création d’un fichier de schéma pour le modèle, dans le cas de Machine Learning, le scientifique des données doit générer explicitement le fichier de schéma avec Python.
 
-Ce fichier de schéma doit être inclus dans le service web déployé pour les modèles Machine Learning. Pour générer automatiquement le schéma pour le service web, vous devez fournir un exemple d’entrée/de sortie dans le script d’entrée pour le modèle déployé. Consultez la sous-section de la documentation du service [Azure Machine Learning relative à la génération automatique (facultative) d’un schéma Swagger dans les modèles de déploiement](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-advanced-entry-script#power-bi-compatible-endpoint). Le lien inclut l’exemple de script d’entrée avec les instructions pour la génération du schéma. 
+Ce fichier de schéma doit être inclus dans le service web déployé pour les modèles Machine Learning. Pour générer automatiquement le schéma pour le service web, vous devez fournir un exemple d’entrée/de sortie dans le script d’entrée pour le modèle déployé. Consultez la sous-section de la documentation du service [Azure Machine Learning relative à la génération automatique (facultative) d’un schéma Swagger dans les modèles de déploiement](/azure/machine-learning/how-to-deploy-advanced-entry-script#power-bi-compatible-endpoint). Le lien inclut l’exemple de script d’entrée avec les instructions pour la génération du schéma. 
 
 Plus précisément, les fonctions *\@input_schema* et *\@output_schema* dans le script d’entrée font référence aux formats des échantillons d’entrée et de sortie dans les variables *input_sample* et *output_sample*. Par ailleurs, elles utilisent ces échantillons pour générer une spécification OpenAPI (Swagger) pour le service web pendant le déploiement.
 

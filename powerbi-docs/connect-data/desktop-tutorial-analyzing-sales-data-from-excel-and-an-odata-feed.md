@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: c0fb194c3585af9ce3011f5cb2a4e6b57b5092ed
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 0401fecc91aef03c0b9e0767bfb241cd701ff50b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092403"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853744"
 ---
 # <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Analyser des données de vente à partir d’Excel et d’un flux OData
 
@@ -172,7 +172,7 @@ Sélectionnez chacune de vos requêtes dans la liste **Requêtes** sur le côté
 ![Étapes appliquées de la requête Produits](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/products-query-applied-steps.png) &nbsp;&nbsp; ![Étapes appliquées de la requête Commandes](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orders-query-applied-steps.png)
 
 >[!TIP]
->À la base des Étapes appliquées se trouvent des formules écrites à l’aide du *langage Power Query*, également appelé [langage M](https://docs.microsoft.com/powerquery-m/power-query-m-reference). Pour voir et modifier les formules, sélectionnez **Éditeur avancé** dans le groupe **Requête** de l’onglet **Accueil** du ruban.
+>À la base des Étapes appliquées se trouvent des formules écrites à l’aide du *langage Power Query*, également appelé [langage M](/powerquery-m/power-query-m-reference). Pour voir et modifier les formules, sélectionnez **Éditeur avancé** dans le groupe **Requête** de l’onglet **Accueil** du ruban.
 
 ## <a name="import-the-transformed-queries"></a>Importer les requêtes transformées
 
@@ -272,7 +272,7 @@ Votre rapport terminé combine les données du fichier Excel *Products.xlsx* et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Microsoft Learn pour Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-* [Vidéos relatives à Power BI Desktop](/power-bi/fundamentals/desktop-videos)
+* [Microsoft Learn pour Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [Vidéos relatives à Power BI Desktop](../fundamentals/desktop-videos.md)
 * [Forum Power BI](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Blog Power BI](https://go.microsoft.com/fwlink/?LinkID=519327)

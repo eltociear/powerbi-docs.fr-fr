@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6e2fe331fa274305447266321893204dddcc3148
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 0efa26a6ef3e47272d1434fab453a17ad9823c8c
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537455"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965454"
 ---
 # <a name="dax-sample-model"></a>Exemple de modèle DAX
 
@@ -50,6 +50,6 @@ Vous pouvez télécharger le fichier de l’exemple de modèle Power BI Deskto
 Pour plus d’informations sur cet article, consultez les ressources suivantes :
 
 - [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
-- Parcours d’apprentissage : [Utiliser DAX dans Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Parcours d’apprentissage : [Utiliser DAX dans Power BI Desktop](/learn/paths/dax-power-bi/)
 - Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

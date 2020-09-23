@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9161813c291a3feb8c01e4201972337f8e96fcb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23873d53aa0d472247f2e8d850dc3b1e9b3bf065
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221750"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853790"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Optimiser les rapports Power BI pour l’application mobile
 Les utilisateurs mobiles peuvent afficher une page de rapport Power BI en orientation paysage. Toutefois, les auteurs de rapports peuvent créer une vue supplémentaire qui est optimisée pour les appareils mobiles et qui s’affiche en orientation portrait. Cette option de conception, disponible à la fois dans Power BI Desktop et dans le service Power BI, permet aux auteurs de sélectionner et de réorganiser uniquement les objets visuels qui ont un sens pour les utilisateurs mobiles en déplacement.
@@ -120,5 +120,5 @@ Si vous optimisez uniquement certaines pages, lorsque les lecteurs arrivent sur 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer une vue téléphone d’un tableau de bord dans Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Afficher les rapports Power BI optimisés pour votre téléphone](../consumer/mobile/mobile-apps-view-phone-report.md)
-* [Documentation Power BI sur la création de rapports et tableaux de bord](https://docs.microsoft.com/power-bi/create-reports/).
+* [Documentation Power BI sur la création de rapports et tableaux de bord](./index.yml).
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

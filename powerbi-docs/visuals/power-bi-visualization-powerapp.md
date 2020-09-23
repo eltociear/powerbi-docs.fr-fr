@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 06/01/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 079689fe9c068f433eb39d5363e253fecfc39968
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 78d9d59455a86c5499bc8b01deeacb331bbe7a8b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858919"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Tutoriel : Incorporer un nouveau visuel Power Apps dans un rapport Power BI
 
@@ -32,8 +32,8 @@ Dans ce tutoriel, vous allez découvrir comment :
 ## <a name="prerequisites"></a>Prérequis
 
 * Navigateur[Google Chrome](https://www.google.com/chrome/browser/) ou [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)
-* [Abonnement Power BI](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), avec [l’exemple Analyse des opportunités](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installé
-* Savoir [créer des applications dans Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) et [modifier des rapports Power BI](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* [Abonnement Power BI](../fundamentals/service-self-service-signup-for-power-bi.md), avec [l’exemple Analyse des opportunités](../create-reports/sample-opportunity-analysis.md#get-the-content-pack-for-this-sample) installé
+* Savoir [créer des applications dans Power Apps](/powerapps/maker/canvas-apps/data-platform-create-app-scratch) et [modifier des rapports Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 
 
 
@@ -105,8 +105,8 @@ Notez que le nombre d’opportunités dans l’application correspond au nombre 
 Si vous ne souhaitez plus utiliser l’exemple Analyse des opportunités, vous pouvez supprimer le tableau de bord, le rapport et le jeu de données.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
-Pour plus d’informations sur la résolution des problèmes, consultez [Visuel Power Apps pour Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
+Pour plus d’informations sur la résolution des problèmes, consultez [Visuel Power Apps pour Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Visuel de Questions et réponses](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutoriel : Incorporer un visuel Power Apps dans un rapport Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    
+[Tutoriel : Incorporer un visuel Power Apps dans un rapport Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual)

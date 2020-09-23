@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: f752544b48a8ba2fdce703475749e1a731089e7d
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: bfbdbeb08f67a979a5f14c8b45ef7ca269c2d03d
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878445"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857356"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -265,4 +265,4 @@ Microsoft a créé Power BI sur les bases de Microsoft 365, qui lui-même repose
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
-[1]: https://docs.microsoft.com/powershell/scripting/overview
+[1]: /powershell/scripting/overview

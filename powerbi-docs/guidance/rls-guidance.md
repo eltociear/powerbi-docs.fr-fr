@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 308e34e5bf70a9999939c99667075b2e468b4df4
-ms.sourcegitcommit: eff98b49e794c7c07670dcfb871f43cb06ed9d3a
+ms.openlocfilehash: 60bb1ef7421d4ebcedd49d2e973cf245edec0381
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85095621"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965040"
 ---
 # <a name="row-level-security-rls-guidance-in-power-bi-desktop"></a>Aide sur la sécurité au niveau des lignes (RLS) dans Power BI Desktop
 
@@ -54,9 +54,9 @@ Attention : Si un utilisateur de rapport est associé aux deux rôles, il voit t
 La sécurité au niveau des lignes fonctionne en appliquant automatiquement des filtres à chaque requête DAX, et ces filtres peuvent avoir un impact négatif sur les performances des requêtes. Par conséquent, l’efficacité de la sécurité au niveau des lignes repose sur une bonne conception de modèle. Il est important de suivre les recommandations relatives à la conception du modèle, comme indiqué dans les articles suivants :
 
 - [Comprendre le schéma en étoile et son importance pour Power BI](star-schema.md)
-- Tous les articles sur les relations figurant dans la [Documentation d’assistance sur Power BI](https://docs.microsoft.com/power-bi/guidance/)
+- Tous les articles sur les relations figurant dans la [Documentation d’assistance sur Power BI](./index.yml)
 
-En général, il est souvent plus efficace d’appliquer des filtres RLS sur des tables de type de dimension que sur des tables de type fait. Il convient aussi de se reposer sur des relations bien conçues pour garantir la propagation des filtres RLS aux autres tables de modèle. Par conséquent, évitez d’utiliser la fonction DAX [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) lorsque les relations de modèle peuvent atteindre le même résultat.
+En général, il est souvent plus efficace d’appliquer des filtres RLS sur des tables de type de dimension que sur des tables de type fait. Il convient aussi de se reposer sur des relations bien conçues pour garantir la propagation des filtres RLS aux autres tables de modèle. Par conséquent, évitez d’utiliser la fonction DAX [LOOKUPVALUE](/dax/lookupvalue-function-dax) lorsque les relations de modèle peuvent atteindre le même résultat.
 
 Chaque fois que des filtres RLS sont appliqués sur les tables DirectQuery et qu’il y a des relations avec d’autres tables DirectQuery, veillez à optimiser la base de données source. Cela peut impliquer la conception d’index appropriés ou l’utilisation de colonnes calculées persistantes. Pour plus d’informations, consultez l’[Aide sur le modèle DirectQuery dans Power BI Desktop](directquery-model-guidance.md).
 
@@ -74,7 +74,7 @@ Les membres peuvent être des comptes d’utilisateur ou des groupes de sécurit
 
 Testez chaque rôle pour vérifier que le modèle est correctement filtré. Pour ce faire, il suffit d’utiliser la commande **Afficher en tant que** sous l’onglet de ruban **Modélisation**.
 
-Lorsque le modèle a des règles dynamiques utilisant la fonction DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax), veillez à tester les valeurs attendues _et inattendues_. Lors de l’incorporation de contenu Power BI, en particulier dans le scénario [L’application possède les données](../developer/embedded/embedding.md#embedding-for-your-customers), la logique de l’application peut passer n’importe quelle valeur comme nom d’utilisateur d’identité effectif. Dans la mesure du possible, vérifiez que des valeurs accidentelles ou malveillantes engendrent des filtres qui ne retournent aucune ligne.
+Lorsque le modèle a des règles dynamiques utilisant la fonction DAX [USERNAME](/dax/username-function-dax), veillez à tester les valeurs attendues _et inattendues_. Lors de l’incorporation de contenu Power BI, en particulier dans le scénario [L’application possède les données](../developer/embedded/embedding.md#embedding-for-your-customers), la logique de l’application peut passer n’importe quelle valeur comme nom d’utilisateur d’identité effectif. Dans la mesure du possible, vérifiez que des valeurs accidentelles ou malveillantes engendrent des filtres qui ne retournent aucune ligne.
 
 Prenons un exemple de Power BI incorporé, où l’application transmet le rôle de travail de l’utilisateur en tant que nom d’utilisateur effectif : Il s’agit soit de « Manager » soit de « Worker ». Les Managers peuvent voir toutes les lignes, mais les Workers peuvent uniquement voir les lignes pour lesquelles la valeur de la colonne **Type** est « Internal ».
 
@@ -142,7 +142,7 @@ Chacune des trois relations de modèle est décrite dans le tableau suivant :
 
 |Relation|Description|
 |---------|---------|
-|![Indicateur de fin de l’organigramme 1.](media/common/icon-01-red-30x30.png)|Il existe une relation plusieurs-à-plusieurs entre les tables **Salesperson** et **Sales**. La règle RLS filtre la colonne **EmailAddress** de la table masquée **Salesperson** à l’aide de la fonction DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax). La valeur de la colonne **Region** (pour l’utilisateur du rapport) est propagée vers la table **Sales**.|
+|![Indicateur de fin de l’organigramme 1.](media/common/icon-01-red-30x30.png)|Il existe une relation plusieurs-à-plusieurs entre les tables **Salesperson** et **Sales**. La règle RLS filtre la colonne **EmailAddress** de la table masquée **Salesperson** à l’aide de la fonction DAX [USERNAME](/dax/username-function-dax). La valeur de la colonne **Region** (pour l’utilisateur du rapport) est propagée vers la table **Sales**.|
 |![Indicateur de fin de l’organigramme 2.](media/common/icon-02-red-30x30.png)|Il existe une relation un-à-plusieurs entre les tables **Date** et **Sales**.|
 |![Indicateur de fin de l’organigramme 3.](media/common/icon-03-red-30x30.png)|Il existe une relation un-à-plusieurs entre les tables **Date** et **SalesRevenueSummary**.|
 
@@ -163,7 +163,7 @@ DIVIDE(
 
 Évitez d’utiliser la sécurité au niveau des lignes aussi souvent qu’il est logique de le faire. Si vous n’avez qu’un petit nombre de règles RLS simples qui appliquent des filtres statiques, envisagez de publier plusieurs jeux de données à la place. Aucun des jeux de données ne définit de rôles, car chaque jeu de données contient des données pour une audience d’utilisateur de rapport spécifique, avec des autorisations de données communes. Créez ensuite un espace de travail par audience et attribuez des autorisations d’accès à l’espace de travail ou à l’application.
 
-Par exemple, une société qui a seulement deux régions de vente décide de publier un jeu de données _pour chaque région de vente_ dans différents espaces de travail. Les jeux de données n’appliquent pas la sécurité au niveau des lignes. Toutefois, ils utilisent des [paramètres de requête](https://docs.microsoft.com/power-query/power-query-query-parameters) pour filtrer les données sources. De cette façon, le même modèle est publié dans chaque espace de travail, mais avec des valeurs de paramètre de jeu de données différentes. Les commerciaux se voient attribuer l’accès à un seul des espaces de travail (ou une seule des applications publiées).
+Par exemple, une société qui a seulement deux régions de vente décide de publier un jeu de données _pour chaque région de vente_ dans différents espaces de travail. Les jeux de données n’appliquent pas la sécurité au niveau des lignes. Toutefois, ils utilisent des [paramètres de requête](/power-query/power-query-query-parameters) pour filtrer les données sources. De cette façon, le même modèle est publié dans chaque espace de travail, mais avec des valeurs de paramètre de jeu de données différentes. Les commerciaux se voient attribuer l’accès à un seul des espaces de travail (ou une seule des applications publiées).
 
 Éviter RLS présente plusieurs avantages :
 
@@ -191,7 +191,7 @@ Si la sécurité au niveau des lignes produit des résultats inattendus, vérifi
 Lorsqu’un utilisateur spécifique ne peut pas voir de données, cela peut être dû au fait que son UPN n’est pas stocké ou qu’il n’est pas entré correctement. Cela peut se produire brusquement si leur compte d’utilisateur a changé suite à un changement de nom.
 
 > [!TIP]
-> À des fins de test, ajoutez une mesure qui retourne la fonction DAX [USERNAME](https://docs.microsoft.com/dax/username-function-dax). Vous pouvez la nommer « Qui suis-je », par exemple. Ajoutez ensuite la mesure à un objet visuel de carte dans un rapport et publiez ce dernier sur Power BI.
+> À des fins de test, ajoutez une mesure qui retourne la fonction DAX [USERNAME](/dax/username-function-dax). Vous pouvez la nommer « Qui suis-je », par exemple. Ajoutez ensuite la mesure à un objet visuel de carte dans un rapport et publiez ce dernier sur Power BI.
 
 Lorsqu’un utilisateur spécifique peut voir toutes les données, il est possible qu’il accède à des rapports directement dans l’espace de travail et qu’il s’agisse du propriétaire du jeu de données. La sécurité au niveau des lignes est appliquée uniquement lorsque :
 

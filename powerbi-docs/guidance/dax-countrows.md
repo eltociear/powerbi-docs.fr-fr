@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 21a4075861bfa37407ef8ffc73e2beabe50ff095
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 1a49531c9c7e525371c3c92b7bf116bfa7e99fd3
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537547"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965535"
 ---
 # <a name="dax-use-countrows-instead-of-count"></a>DAX : Utiliser COUNTROWS à la place de COUNT
 
@@ -52,6 +52,6 @@ Lorsque vous avez l’intention de compter les lignes de la table, nous vous rec
 Pour plus d’informations sur cet article, consultez les ressources suivantes :
 
 - [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
-- Parcours d’apprentissage : [Utiliser DAX dans Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/)
+- Parcours d’apprentissage : [Utiliser DAX dans Power BI Desktop](/learn/paths/dax-power-bi/)
 - Des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com)

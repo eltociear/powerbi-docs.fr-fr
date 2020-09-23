@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5e76cdfc2fd8ad4a90290ecaa559d502d5f847e6
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: a8d2284a24bb04b175a00a69339ba9e6ac260c10
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034425"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858622"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 
@@ -178,7 +178,7 @@ De nombreux tableaux de bord comportent des tables supplémentaires qui sont uti
 Azure fournit également l’[**API ACI (Azure Consumption Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). L’API ACI vous permet de créer vos propres solutions personnalisées pour la collecte et la visualisation d’informations, ainsi que la création de rapports.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Mappage des noms et des détails d’utilisation entre le portail, le connecteur et l’API
-Les colonnes et les noms des détails sur le portail Azure sont similaires dans l’API et dans le connecteur, mais pas toujours identiques. Pour aider à la clarification, le tableau suivant en fournit un mappage. Il spécifie également si des colonnes sont obsolètes. Pour plus d’informations et des définitions de ces termes, consultez le [dictionnaire des données de facturation d’Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+Les colonnes et les noms des détails sur le portail Azure sont similaires dans l’API et dans le connecteur, mais pas toujours identiques. Pour aider à la clarification, le tableau suivant en fournit un mappage. Il spécifie également si des colonnes sont obsolètes. Pour plus d’informations et des définitions de ces termes, consultez le [dictionnaire des données de facturation d’Azure](/azure/billing/billing-enterprise-api-usage-detail).
 
 | Connecteur ACI / ContentPack ColumnName | Nom de colonne dans l’API ACI | Nom de colonne dans EA | Obsolète / présent pour la compatibilité descendante |
 | --- | --- | --- | --- |
@@ -238,4 +238,4 @@ Vous pouvez vous connecter à de nombreuses sources de données différentes à 
 * [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
-* [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)
