@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 02716f895d84a7aa49ab7f1d48d60372b3546409
-ms.sourcegitcommit: b943ce58c2c079cb18fc5cf23cc609ead1dc9906
+ms.openlocfilehash: 51aa05d49f0691c7ebb916ff84e3a8cbb0416096
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89443326"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855009"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -112,7 +112,7 @@ La première actualisation effectuée dans le service Power BI peut être plus l
 
 #### <a name="current-date"></a>Date actuelle
 
-La *date actuelle* est basée sur la date système au moment de l’actualisation. Si l’actualisation planifiée est activée pour le jeu de données dans le service Power BI, le fuseau horaire spécifié est pris en compte pour la détermination de la date actuelle. Les actualisations planifiées et appelées manuellement via le service Power BI tiennent compte du fuseau horaire s’il est disponible. Par exemple, une actualisation qui se produit à 20 h heure du Pacifique (États-Unis et Canada) avec un fuseau horaire spécifié détermine la date actuelle en fonction de l’heure du Pacifique et non de l’heure GMT (qui correspondrait au jour suivant). Les opérations d’actualisation qui ne sont pas appelées par le service Power BI, comme la [commande d’actualisation TMSL](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), ne prennent pas en compte le fuseau horaire de l’actualisation planifiée
+La *date actuelle* est basée sur la date système au moment de l’actualisation. Si l’actualisation planifiée est activée pour le jeu de données dans le service Power BI, le fuseau horaire spécifié est pris en compte pour la détermination de la date actuelle. Les actualisations planifiées et appelées manuellement via le service Power BI tiennent compte du fuseau horaire s’il est disponible. Par exemple, une actualisation qui se produit à 20 h heure du Pacifique (États-Unis et Canada) avec un fuseau horaire spécifié détermine la date actuelle en fonction de l’heure du Pacifique et non de l’heure GMT (qui correspondrait au jour suivant). Les opérations d’actualisation qui ne sont pas appelées par le service Power BI, comme la [commande d’actualisation TMSL](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), ne prennent pas en compte le fuseau horaire de l’actualisation planifiée
 
 ![Fuseau horaire](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -153,7 +153,7 @@ Vous pouvez désormais actualiser le modèle. La première actualisation peut ê
 
 ## <a name="query-timeouts"></a>Délais d’expiration des requêtes
 
-L’article sur la [résolution des problèmes d’actualisation](../connect-data/refresh-troubleshooting-refresh-scenarios.md) explique que les opérations d’actualisation dans le service Power BI sont soumises à des délais d’expiration. Les requêtes peuvent également être limitées par le délai d’expiration par défaut pour la source de données. La plupart des sources relationnelles permettent d’ignorer les délais d’expiration dans l’expression M. Par exemple, l’expression ci-dessous utilise la [fonction d’accès aux données de SQL Server](https://docs.microsoft.com/powerquery-m/sql-database) pour définir le délai à deux heures. Chaque période définie par les plages de la stratégie soumet une requête qui respecte le paramètre de délai d’expiration de la commande.
+L’article sur la [résolution des problèmes d’actualisation](../connect-data/refresh-troubleshooting-refresh-scenarios.md) explique que les opérations d’actualisation dans le service Power BI sont soumises à des délais d’expiration. Les requêtes peuvent également être limitées par le délai d’expiration par défaut pour la source de données. La plupart des sources relationnelles permettent d’ignorer les délais d’expiration dans l’expression M. Par exemple, l’expression ci-dessous utilise la [fonction d’accès aux données de SQL Server](/powerquery-m/sql-database) pour définir le délai à deux heures. Chaque période définie par les plages de la stratégie soumet une requête qui respecte le paramètre de délai d’expiration de la commande.
 
 ```powerquery-m
 let
@@ -176,7 +176,7 @@ Avec l’accès en lecture-écriture du point de terminaison XMLA activé, SSMS 
 
 #### <a name="override-incremental-refresh-behavior"></a>Remplacer le comportement d’actualisation incrémentielle
 
-Avec SSMS, vous avez également plus de contrôle sur la façon d’appeler des actualisations incrémentielles à partir de l’utilisation du [langage TMSL (Tabular Model Scripting Language)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) et du [Modèle d'objet tabulaire (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). Par exemple, dans SSMS, dans l’Explorateur d’objets, cliquez avec le bouton de droite sur une table, puis sélectionnez l’option de menu **Table de processus**. Puis cliquez sur le bouton **Script** pour générer une commande d’actualisation TMSL.
+Avec SSMS, vous avez également plus de contrôle sur la façon d’appeler des actualisations incrémentielles à partir de l’utilisation du [langage TMSL (Tabular Model Scripting Language)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) et du [Modèle d'objet tabulaire (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). Par exemple, dans SSMS, dans l’Explorateur d’objets, cliquez avec le bouton de droite sur une table, puis sélectionnez l’option de menu **Table de processus**. Puis cliquez sur le bouton **Script** pour générer une commande d’actualisation TMSL.
 
 ![Bouton Script dans la boîte de dialogue Table de processus](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -204,7 +204,7 @@ Les paramètres suivants peuvent être insérés dans la commande d’actualisat
 }
 ```
 
-Pour en savoir plus sur le remplacement du comportement d’actualisation incrémentielle par défaut avec TMSL, consultez la [Commande d’actualisation](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+Pour en savoir plus sur le remplacement du comportement d’actualisation incrémentielle par défaut avec TMSL, consultez la [Commande d’actualisation](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### <a name="custom-queries-for-detect-data-changes"></a>Requêtes personnalisées pour les modifications de données détectées
 
@@ -247,4 +247,4 @@ Téléchargez et installez la dernière version de ALM Toolkit à partir du [ré
 ## <a name="see-also"></a>Voir aussi
 
 [Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md)   
-[Scénarios de résolution de problèmes liés à l’actualisation](../connect-data/refresh-troubleshooting-refresh-scenarios.md)   
+[Scénarios de résolution de problèmes liés à l’actualisation](../connect-data/refresh-troubleshooting-refresh-scenarios.md)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: b877ec917953bb6ec456a0042035e498c591e1ed
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 86d3bf34a8b222e72d76a5471fe6bfca93390afc
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214000"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861127"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Trouver la clé de produit de votre serveur de rapports
 Découvrez comment vous pouvez trouver votre clé de produit Power BI Report Server pour installer votre serveur dans un environnement de production.
@@ -47,7 +47,6 @@ Si vous disposez d’un contrat SQL Server Entreprise SA, vous pouvez vous procu
 [Installer Power BI Report Server](install-report-server.md)  
 [Installer Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

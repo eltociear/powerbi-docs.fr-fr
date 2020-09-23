@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.openlocfilehash: 1e45e3292499d0eb827b6b03c63ab839a520da97
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f9d54df0369b28eafc08a0e4f84599aac66c299e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856090"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Utilisation d’OAuth pour se connecter à Power BI Report Server et SSRS
 
@@ -72,7 +72,7 @@ Pour plus d’informations, consultez [Modifier un fichier de configuration Repo
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Configuration d’Active Directory Federation Services (ADFS)
 
-Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Vous pouvez effectuer cette configuration dans le Gestionnaire de serveur en sélectionnant Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Vous pouvez effectuer cette configuration dans le Gestionnaire de serveur en sélectionnant Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Créer un groupe d’applications
 
@@ -136,7 +136,7 @@ Lorsque vous avez terminé, les propriétés de votre groupe d’applications do
 
 ## <a name="web-application-proxy-wap-configuration"></a>Configuration du proxy d’application web (WAP)
 
-Vous devez activer le rôle Windows Proxy d’application web sur un serveur dans votre environnement. Il doit s’agir d’un serveur Windows 2016. Pour plus d’informations, consultez [Proxy d’application web dans Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) et [Publication d’applications à l’aide de la pré-authentification AD FS](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+Vous devez activer le rôle Windows Proxy d’application web sur un serveur dans votre environnement. Il doit s’agir d’un serveur Windows 2016. Pour plus d’informations, consultez [Proxy d’application web dans Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) et [Publication d’applications à l’aide de la pré-authentification AD FS](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### <a name="constrained-delegation-configuration"></a>Configuration de la délégation contrainte
 
@@ -228,7 +228,7 @@ Une fois que vous avez sélectionné **Se connecter**, vous voyez les éléments
 
 ## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
 
-Vous pouvez activer l’authentification multifacteur pour activer une sécurité supplémentaire pour votre environnement. Pour plus d’informations, consultez [Configurer AD FS 2016 et Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
+Vous pouvez activer l’authentification multifacteur pour activer une sécurité supplémentaire pour votre environnement. Pour plus d’informations, consultez [Configurer AD FS 2016 et Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
@@ -245,8 +245,8 @@ Si la connexion fonctionne correctement lorsque vous utilisez Fiddler, vous pouv
 [Inscrire un nom de principal du service pour un serveur de rapports](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
 [Modifier un fichier de configuration Reporting Services](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
 [Configurer l’authentification Windows sur un serveur de rapports](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
-[Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services)  
-[Proxy d’application web dans Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
-[Publication d’applications à l’aide de la pré-authentification AD FS](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
-[Configurer AD FS 2016 et Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
+[Active Directory Federation Services](/windows-server/identity/active-directory-federation-services)  
+[Proxy d’application web dans Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)  
+[Publication d’applications à l’aide de la pré-authentification AD FS](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
+[Configurer AD FS 2016 et Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

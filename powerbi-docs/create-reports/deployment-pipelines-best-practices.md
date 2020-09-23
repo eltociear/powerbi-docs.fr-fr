@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: a1a30dc09e61e29053a5a1d95cde3d5a339c5a3d
-ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
+ms.date: 09/15/2020
+ms.openlocfilehash: ea2fa0625ece88d8da2848dbe6a108d98a55a0d0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89220857"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855556"
 ---
-# <a name="deployment-pipelines-best-practices-preview"></a>Pratiques recommandées pour les pipelines de déploiement (préversion)
+# <a name="deployment-pipelines-best-practices"></a>Meilleures pratiques pour les pipelines de déploiement
 
 Cet article fournit des conseils pour les créateurs BI qui gèrent leur contenu tout au long du cycle de vie. Il se concentre sur l’utilisation des pipelines de déploiement en tant qu’outil de gestion du cycle de vie du contenu BI.
 
@@ -79,7 +79,7 @@ Une base de données de production doit toujours être stable et disponible. Il 
 
 ### <a name="use-parameters-in-your-model"></a>Utiliser des paramètres dans votre modèle
 
-Comme vous ne pouvez pas modifier les sources de données des jeux de données dans service Power BI, nous vous recommandons d’utiliser des [paramètres](https://docs.microsoft.com/power-query/power-query-query-parameters) pour stocker les détails de la connexion, comme les noms d’instance et les noms de base de données, au lieu d’utiliser une chaîne de connexion statique. Cela vous permet de gérer les connexions via le portail web du service Power BI ou [via des API](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) à un moment ultérieur.
+Comme vous ne pouvez pas modifier les sources de données des jeux de données dans service Power BI, nous vous recommandons d’utiliser des [paramètres](/power-query/power-query-query-parameters) pour stocker les détails de la connexion, comme les noms d’instance et les noms de base de données, au lieu d’utiliser une chaîne de connexion statique. Cela vous permet de gérer les connexions via le portail web du service Power BI ou [via des API](/rest/api/power-bi/datasets/updateparametersingroup) à un moment ultérieur.
 
 Dans les pipelines de déploiement, vous pouvez configurer des règles de paramètres pour définir des valeurs spécifiques pour les phases de développement, de test et de production.
 

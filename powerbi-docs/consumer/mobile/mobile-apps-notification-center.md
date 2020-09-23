@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 2c12a2eb919dcef3b9decde9a15f799d78dc18e6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 492b41192f3ab423ff8dacf73aac9ff49b9d15d9
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220468"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856228"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Obtenir des notifications dans les applications mobiles Power BI
 S’applique à :
@@ -23,7 +23,7 @@ S’applique à :
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
 
 >[!NOTE]
->La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Les notifications vous donnent directement des informations relatives à votre expérience Power BI, dans le service Power BI ou sur votre appareil mobile. Quand vous ouvrez les notifications, vous pouvez voir un flux séquentiel de messages sur les [alertes que vous avez définies](mobile-set-data-alerts-in-the-mobile-apps.md), les nouveaux tableaux de bord partagés avec vous, les modifications apportées à votre espace de travail de groupe, les informations sur les événements et réunions Power BI et bien plus encore.
 

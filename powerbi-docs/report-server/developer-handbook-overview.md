@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: 773533fee8fc4fada0cc33d9a6d2188118135797
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1f7a04ca8920ef56e0e7de4efad47afa894e76d7
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73859771"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861173"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Présentation du Manuel du développeur, Power BI Report Server
 
@@ -29,15 +29,15 @@ Dans Power BI Report Server, vous pouvez incorporer tout rapport dans un iFrame 
 
 ### <a name="report-viewer-control"></a>Contrôle Visionneuse de rapports
 
-Pour les rapports paginés, vous pouvez tirer parti du contrôle Visionneuse de rapports. Avec celui-ci, vous pouvez placer le contrôle dans une fenêtre ou une application web .NET. Pour plus d’informations, voir [Prise en main du contrôle Visionneuse de rapports](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+Pour les rapports paginés, vous pouvez tirer parti du contrôle Visionneuse de rapports. Avec celui-ci, vous pouvez placer le contrôle dans une fenêtre ou une application web .NET. Pour plus d’informations, voir [Prise en main du contrôle Visionneuse de rapports](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 ## <a name="apis"></a>API
 
 Vous disposez de plusieurs options d’API permettant d’interagir avec Power BI Report Server. Cette technique inclut les éléments suivants.
 
 * [API REST](rest-api.md)
-* [Accès URL](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
-* [Fournisseur WMI](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+* [Accès URL](/sql/reporting-services/url-access-ssrs)
+* [Fournisseur WMI](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 Vous pouvez aussi utiliser des [utilitaires PowerShell](https://github.com/Microsoft/ReportingServicesTools) open source pour gérer votre serveur de rapports.
 
@@ -55,14 +55,14 @@ Vous pouvez créer plusieurs types d’extensions.
 * Extensions de rendu pour les rapports paginés
 * Extensions de sécurité
 
-Pour plus d’informations, voir [Bibliothèque d’extensions](https://docs.microsoft.com/sql/reporting-services/extensions/reporting-services-extension-library).
+Pour plus d’informations, voir [Bibliothèque d’extensions](/sql/reporting-services/extensions/reporting-services-extension-library).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Prise en main du contrôle Visionneuse de rapports](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
-[Création d’Applications à l’aide du service web et de .NET Framework](https://docs.microsoft.com/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
-[Accès URL](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)  
-[Bibliothèque d’extensions](https://docs.microsoft.com/sql/reporting-services/extensions/reporting-services-extension-library)  
-[Fournisseur WMI](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+[Prise en main du contrôle Visionneuse de rapports](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
+[Création d’Applications à l’aide du service web et de .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
+[Accès URL](/sql/reporting-services/url-access-ssrs)  
+[Bibliothèque d’extensions](/sql/reporting-services/extensions/reporting-services-extension-library)  
+[Fournisseur WMI](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

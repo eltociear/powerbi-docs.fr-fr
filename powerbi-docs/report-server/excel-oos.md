@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/14/2020
-ms.openlocfilehash: 03197d7d6b976615f13d9f482c1ba4d4c1ae2abd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 90061cec87bae4b65d347617dacc2863052a07ce
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239448"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861150"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)
 
-Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide de [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Votre serveur de rapports devient un emplacement unique pour publier et afficher le contenu de Microsoft BI en libre-service.
+Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide de [Office Online Server](/officeonlineserver/office-online-server-overview) (OOS). Votre serveur de rapports devient un emplacement unique pour publier et afficher le contenu de Microsoft BI en libre-service.
 
 ![Rapports Excel affichés via le portail web du serveur de rapports](media/excel-oos/excel-in-pbirs.png)
 
@@ -187,6 +187,6 @@ Après que vous avez entré l’URL de découverte, puis sélectionné **Appliqu
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

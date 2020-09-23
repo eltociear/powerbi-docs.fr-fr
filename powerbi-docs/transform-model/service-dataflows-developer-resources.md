@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2987d17510d8bbe5681c78df7d86d839c45b5ef9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3fea12fcc9d87c796f3da7bb0df040211db90f70
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240044"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861541"
 ---
 # <a name="developer-resources-for-power-bi-dataflows"></a>Ressources du développeur pour les dataflows Power BI
 
@@ -28,7 +28,7 @@ Les ressources de développeur suivantes sont disponibles pour l’utilisation a
 
 | Ressource de flux de données | Description |
 | --- | --- |
-| [Référence de l’API REST du flux de données POWER BI](https://go.microsoft.com/fwlink/?linkid=2047629)    | Un guide de référence complet sur l’API REST de flux de données.|
+| [Référence de l’API REST du flux de données POWER BI](/rest/api/power-bi/dataflows)    | Un guide de référence complet sur l’API REST de flux de données.|
 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -41,9 +41,9 @@ Cet article fournit des informations sur les ressources de développeur pour les
 * [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
 
 Pour plus d’informations sur le développement CDM et le tutoriel, consultez les rubriques suivantes :
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier modèle CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)
+* [Dossiers CDM](/common-data-model/data-lake)
+* [Définition du fichier modèle CDM](/common-data-model/model-json)
 
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :

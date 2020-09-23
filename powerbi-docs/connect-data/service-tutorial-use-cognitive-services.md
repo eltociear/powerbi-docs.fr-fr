@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4c19965def178d4260527032820c4109c4fe235f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 6511afb499b12d379957ac37ebfe19890c111282
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281573"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861035"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
 
-Power BI permet d’accéder à un ensemble de fonctions d’Azure Cognitive Services pour enrichir vos données dans la préparation des données de libre-service pour les flux de données. Les services actuellement pris en charge sont l’[analyse des sentiments](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), l’[extraction de phrases clés](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), la [détection de langue](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) et le [balisage des images](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). Les transformations sont exécutées sur le service Power BI et ne nécessitent pas d’abonnement Azure Cognitive Services. Cette fonctionnalité requiert Power BI Premium.
+Power BI permet d’accéder à un ensemble de fonctions d’Azure Cognitive Services pour enrichir vos données dans la préparation des données de libre-service pour les flux de données. Les services actuellement pris en charge sont l’[analyse des sentiments](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), l’[extraction de phrases clés](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), la [détection de langue](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection) et le [balisage des images](/azure/cognitive-services/computer-vision/concept-tagging-images). Les transformations sont exécutées sur le service Power BI et ne nécessitent pas d’abonnement Azure Cognitive Services. Cette fonctionnalité requiert Power BI Premium.
 
 Les transformations de Cognitive Services sont prises en charge dans la [préparation des données de libre-service pour les flux de données](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). Utilisez les exemples pas à pas pour l’analyse de texte et le balisage des images balisage ci-dessous pour commencer.
 
@@ -174,7 +174,7 @@ Lorsque vous n’en avez plus besoin, supprimez la requête en cliquant avec le 
 
 Dans ce tutoriel, vous avez appliqué des fonctions de scoring des sentiments et de balisage d’images à un flux de données Power BI. Pour en savoir plus sur Cognitive Services dans Power BI, lisez les articles suivants.
 
-* [Cognitive Services dans Azure](https://docs.microsoft.com/azure/cognitive-services/)
+* [Cognitive Services dans Azure](/azure/cognitive-services/)
 * Prise en main [de la préparation des données en libre-service sur le flux de données](../transform-model/service-dataflows-overview.md)
 * En savoir plus sur [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 

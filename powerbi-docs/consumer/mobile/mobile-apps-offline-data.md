@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: b719dc72d9137ac1c3ffc3eee4669ad6bd61fc9f
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 3b7f578040a49438ccca89fd9112a3ca5079a20a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034241"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856021"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -23,7 +23,7 @@ S’applique à :
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
 
 >[!NOTE]
->La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 L’affichage de Power BI dans une application mobile plutôt qu’un navigateur mobile offre l’avantage de visualiser vos données, même lorsque vous n’êtes connecté à aucun réseau. 
 

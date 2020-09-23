@@ -5,16 +5,16 @@ author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: arthii
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 108a50017a55a2ac87bb8db2adf4f92bd5dca58f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9c5e241cee86b9f7ea21607128f5c32099dd0415
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85231067"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861495"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Résolution des problèmes de la passerelle Power BI (mode personnel)
 
@@ -31,7 +31,7 @@ De nombreux problèmes peuvent faire surface quand la version de la passerelle e
 ## <a name="installation"></a>Installation
 **La passerelle (mode personnel) fonctionne sur les versions 64 bits :** si votre ordinateur est une version 32 bits, vous ne pouvez pas installer la passerelle (mode personnel). La version de votre système d’exploitation doit être 64 bits. Installez une version 64 bits de Windows ou installez la passerelle (mode personnel) sur un ordinateur 64 bits.
 
-**La passerelle (mode personnel) ne parvient pas à s’installer en tant que service, même si vous êtes administrateur local de l’ordinateur :** l’installation peut échouer si l’utilisateur appartient au groupe Administrateur local de l’ordinateur, mais que la stratégie de groupe ne permet pas à ce nom d’utilisateur de se connecter en tant que service. Vérifiez que la stratégie de groupe permet à un utilisateur de se connecter en tant que service. Nous travaillons sur la résolution de ce problème. Pour plus d’informations, consultez [Ajouter le droit Ouvrir une session en tant que service à un compte](https://technet.microsoft.com/library/cc739424.aspx).
+**La passerelle (mode personnel) ne parvient pas à s’installer en tant que service, même si vous êtes administrateur local de l’ordinateur :** l’installation peut échouer si l’utilisateur appartient au groupe Administrateur local de l’ordinateur, mais que la stratégie de groupe ne permet pas à ce nom d’utilisateur de se connecter en tant que service. Vérifiez que la stratégie de groupe permet à un utilisateur de se connecter en tant que service. Nous travaillons sur la résolution de ce problème. Pour plus d’informations, consultez [Ajouter le droit Ouvrir une session en tant que service à un compte](/previous-versions/windows/it-pro/windows-server-2003/cc739424(v=ws.10)).
 
 **Délai dépassé pour l’opération :** ce message est courant si l’ordinateur (machine physique ou virtuelle) sur lequel vous installez la passerelle (mode personnel) dispose d’un processeur monocœur. Fermez toutes les applications désactivez tous les processus non essentiels, puis retentez l’installation.
 

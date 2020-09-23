@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/25/2020
 ms.author: painbar
-ms.openlocfilehash: f72117dfab77893dd48be7e939c07a1a8c2bea90
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f8f9ed1a9f2ba0e1f3c41eded45f32b8ef220f00
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219847"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855814"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Épingler un tableau de bord à l’écran d’accueil Windows 10 à partir de l’application mobile Power BI
 Vous pouvez épingler des tableaux de bord Power BI à l’écran d’accueil de Windows à partir de l’application mobile Power BI pour Windows 10. Lorsque vous appuyez sur la vignette sur l’écran d’accueil, le tableau de bord s’ouvre dans l’application mobile Power BI pour Windows 10.
@@ -20,7 +20,7 @@ Vous pouvez épingler des tableaux de bord Power BI à l’écran d’accueil de
 ![Vignette Windows](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-screen.png)
 
 >[!NOTE]
->La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## <a name="pin-a-dashboard-to-your-start-screen-as-a-tile"></a>Épingler un tableau de bord sur votre écran d’accueil sous forme de vignette
 1. Ouvrez un tableau de bord.

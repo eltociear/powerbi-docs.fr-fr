@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/29/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69929ff48428ebf73044c296eabc419f8e442b3b
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 7a7988ba9bb9efd4b2dec20fd2dc88478af439a2
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411954"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855285"
 ---
 # <a name="using-external-tools-in-power-bi-desktop-preview"></a>Utilisation d’outils externes dans Power BI Desktop (préversion)
 
@@ -37,13 +37,13 @@ Les sections suivantes indiquent les opérations qui sont prises en charge par l
 
 Les outils externes peuvent se connecter au jeu de données Power BI Desktop (modèle Analysis Services) pour modifier les objets suivants. La modification d’un fichier de modèle Power BI Desktop (PBIT) n’est pas prise en charge.
 
-* Les [mesures](https://docs.microsoft.com/analysis-services/tabular-models/measures-ssas-tabular) utilisées pour les calculs
-* Les [groupes de calcul](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups) pour la réutilisation des calculs dans les modèles complexes
-* Les [perspectives](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular) permettant de définir des vues des métadonnées du jeu de données qui soient ciblées et propres à un domaine d’entreprise
+* Les [mesures](/analysis-services/tabular-models/measures-ssas-tabular) utilisées pour les calculs
+* Les [groupes de calcul](/analysis-services/tabular-models/calculation-groups) pour la réutilisation des calculs dans les modèles complexes
+* Les [perspectives](/analysis-services/tabular-models/perspectives-ssas-tabular) permettant de définir des vues des métadonnées du jeu de données qui soient ciblées et propres à un domaine d’entreprise
 
 La gestion des traductions de métadonnées à l’aide d’outils externes est possible, mais elle n’est pas prise en charge dans cette préversion. Si les paramètres régionaux de l’utilisateur actuel sont des paramètres régionaux traduits, la modification d’objets dans la liste de champs ne fonctionnera pas correctement avec la version actuelle de Power BI Desktop. 
 
-Toutes les métadonnées du jeu de données [Modèle d’objet tabulaire](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) sont accessibles en lecture seule. En outre, les objets qui ne figurent pas dans la liste de l’article [Modèle d’objet tabulaire](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) ne peuvent pas encore faire l’objet de modifications dans l’instance Power BI Desktop Analysis Services.
+Toutes les métadonnées du jeu de données [Modèle d’objet tabulaire](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) sont accessibles en lecture seule. En outre, les objets qui ne figurent pas dans la liste de l’article [Modèle d’objet tabulaire](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) ne peuvent pas encore faire l’objet de modifications dans l’instance Power BI Desktop Analysis Services.
 
 
 ## <a name="featured-external-tools"></a>Outils externes proposés
@@ -147,5 +147,3 @@ Les articles suivants pourraient également vous intéresser :
 
 * [Utiliser une extraction interrapport dans les rapports Power BI](desktop-cross-report-drill-through.md)
 * [Utilisation de segments Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-
-

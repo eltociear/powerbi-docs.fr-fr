@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d53721b6a759410b873cc04deb919dd37ebc5b07
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 45069a4a575659d44e41f1010d9941f21caa1ad1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240284"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861633"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
 
@@ -129,12 +129,10 @@ Si vous disposez des autorisations nécessaires pour modifier le jeu de données
 
 Si vous n’avez pas accès aux données de latitude et de longitude, mais que vous avez accès en modification au jeu de données, [suivez ces instructions pour mettre à jour votre jeu de données](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
-Pour plus d’informations sur les visualisations de carte, consultez [Tips and tricks for map visualizations](../power-bi-map-tips-and-tricks.md) (Trucs et astuces pour les visualisations de carte).
+Pour plus d’informations sur les visualisations de carte, consultez [Tips and tricks for map visualizations](./power-bi-map-tips-and-tricks.md) (Trucs et astuces pour les visualisations de carte).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Carte de formes](desktop-shape-map.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-

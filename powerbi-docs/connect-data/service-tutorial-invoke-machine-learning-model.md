@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cb41d7d9d1e85957ebf02ce2742d3e32670d0cc
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 35c20a11c4b446bd3a2636deaeb4c5ee9c2d797b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83281711"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861012"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)
 
@@ -31,11 +31,11 @@ Le tutoriel vous guide tout au long des étapes suivantes :
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Créer et publier un modèle Azure ML
 
-Suivez les instructions de [l’étape de parcours 1 : Créez un espace de travail Machine Learning Studio (classique)](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) pour créer un espace de travail **Machine Learning**.
+Suivez les instructions de [l’étape de parcours 1 : Créez un espace de travail Machine Learning Studio (classique)](/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) pour créer un espace de travail **Machine Learning**.
 
-Vous pouvez utiliser ces étapes avec n’importe quel modèle Azure ML ou jeu de données que vous avez déjà. Si vous n’avez pas de modèle publié, vous pouvez créer un modèle en quelques minutes en vous reportant à [Créer votre première expérience de science des données dans Azure Machine Learning Studio (classique)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), qui configure un modèle Azure ML pour la prédiction du prix des automobiles.
+Vous pouvez utiliser ces étapes avec n’importe quel modèle Azure ML ou jeu de données que vous avez déjà. Si vous n’avez pas de modèle publié, vous pouvez créer un modèle en quelques minutes en vous reportant à [Créer votre première expérience de science des données dans Azure Machine Learning Studio (classique)](/azure/machine-learning/studio/create-experiment), qui configure un modèle Azure ML pour la prédiction du prix des automobiles.
 
-Suivez les étapes de [Déployer un service web Azure Machine Learning Studio (classique)](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) pour publier le modèle Azure ML en tant que service web.
+Suivez les étapes de [Déployer un service web Azure Machine Learning Studio (classique)](/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) pour publier le modèle Azure ML en tant que service web.
 
 ## <a name="grant-a-power-bi-user-access"></a>Accorder un accès à un utilisateur de Power BI
 

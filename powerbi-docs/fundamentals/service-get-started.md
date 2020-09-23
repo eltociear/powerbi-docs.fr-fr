@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/08/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d40bda8ef6469e5dc826d36db3cc21cfe72f0da6
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: eeda30e5a075166af3718084c2c9f7737f876cbe
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092380"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861104"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Tutoriel : Bien démarrer avec la création dans le service Power BI
 Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](power-bi-overview.md).
@@ -226,5 +226,5 @@ Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de d
 
 Explorez ces collections de contenus Microsoft Learn pour Power BI :
 
-- [Formez-vous à Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
-- [Devenez analyste de données Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+- [Formez-vous à Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+- [Devenez analyste de données Power BI](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

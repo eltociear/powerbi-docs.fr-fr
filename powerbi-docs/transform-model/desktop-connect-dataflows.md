@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 193463978e3c4d80980a15e154dbeef05aa1a2a0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 66e94ed2af0b9dc9cf3600594fc6679bd7261b12
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238910"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861081"
 ---
 # <a name="connect-to-data-created-by-power-platform-dataflows-in-power-bi-desktop"></a>Se connecter à des données créées par des dataflows Power Platform dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez vous connecter à des données créées par des **dataflows Power Platform** comme toute autre source de données dans Power BI Desktop.
@@ -47,7 +47,7 @@ La plupart des flux de données se trouvent dans le locataire du service Power B
 
     ![Erreur en tentant d’utiliser le flux de données](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-Pour résoudre ce problème, Ben doit disposer d’autorisations de lecture sur le dossier CDM et ses fichiers. Pour savoir comment accorder l’accès au dossier CDM, voir [cet article](https://go.microsoft.com/fwlink/?linkid=2029121).
+Pour résoudre ce problème, Ben doit disposer d’autorisations de lecture sur le dossier CDM et ses fichiers. Pour savoir comment accorder l’accès au dossier CDM, voir [cet article](./service-dataflows-azure-data-lake-integration.md).
 
 
 
@@ -72,4 +72,4 @@ Il existe également des articles sur **Power BI Desktop** qui peuvent vous êtr
 
 * [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Entrer des données directement dans Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Entrer des données directement dans Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

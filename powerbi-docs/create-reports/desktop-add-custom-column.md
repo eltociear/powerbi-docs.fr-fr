@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 18d94702cad6f770aaf078f1d692c96d48ce50ac
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b898b205ef9d85f8c0a4951f147339f8d315db1e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229018"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855400"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Ajouter une colonne personnalisée dans Power BI Desktop
 
-Dans Power BI Desktop, vous pouvez facilement ajouter une nouvelle colonne personnalisée de données à votre modèle avec l’Éditeur de requête. Avec l’Éditeur de requête, vous créez et renommez votre colonne personnalisée pour créer des [requêtes de formule Power Query M](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) de façon à définir votre colonne personnalisée. Les requêtes de formule Power Query M ont un [ensemble de contenus de référence de fonctions complet](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
+Dans Power BI Desktop, vous pouvez facilement ajouter une nouvelle colonne personnalisée de données à votre modèle avec l’Éditeur de requête. Avec l’Éditeur de requête, vous créez et renommez votre colonne personnalisée pour créer des [requêtes de formule Power Query M](/powerquery-m/quick-tour-of-the-power-query-m-formula-language) de façon à définir votre colonne personnalisée. Les requêtes de formule Power Query M ont un [ensemble de contenus de référence de fonctions complet](/powerquery-m/power-query-m-function-reference). 
 
 Quand vous créez une colonne personnalisée dans l’Éditeur de requête, Power BI Desktop l’ajoute en tant qu’**Étape appliquée** dans les **Paramètres de requête** de la requête. Elle peut être changée, déplacée ou modifiée à tout moment.
 
@@ -49,7 +49,7 @@ La fenêtre **Ajouter une colonne personnalisée** comporte a les fonctionnalit�
 
 - Le nom initial de votre colonne personnalisée, dans la zone **Nouveau nom de colonne**. Vous pouvez renommer cette colonne.
 
-- Des [requêtes de formule Power Query M](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference), dans la zone **Formule de colonne personnalisée**. Vous créez ces requêtes en produisant la formule sur laquelle votre nouvelle colonne personnalisée est définie. 
+- Des [requêtes de formule Power Query M](/powerquery-m/power-query-m-function-reference), dans la zone **Formule de colonne personnalisée**. Vous créez ces requêtes en produisant la formule sur laquelle votre nouvelle colonne personnalisée est définie. 
 
    ![Page Ajouter une colonne personnalisée](media/desktop-add-custom-column/add-custom-column_03.png)
 
@@ -95,4 +95,3 @@ Une fois que vous avez créé votre requête, vous pouvez aussi utiliser l’**�
 - Vous pouvez créer une colonne personnalisée de plusieurs autres façons, comme en créant une colonne basée sur des exemples que vous fournissez à l’Éditeur de requête. Pour plus d’informations, consultez [Ajouter une colonne à partir d’un exemple dans Power BI Desktop](desktop-add-column-from-example.md).
 
 - Pour obtenir des informations de référence sur Power Query M, consultez [Informations de référence sur les fonctions Power Query M](/powerquery-m/power-query-m-function-reference).
-

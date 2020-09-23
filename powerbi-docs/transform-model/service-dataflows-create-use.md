@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fd0f9db041fb4862831630249e847c63572263b0
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2ac06bb288077a15a7227e2eb439762bc182e1a8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240250"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861656"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Création et utilisation de flux de données dans Power BI
 
@@ -77,7 +77,7 @@ Si vous voulez voir le code généré par l’Éditeur de requête à chaque ét
 
 Les entités de dataflows incluent de nouveaux outils qui permettent de mapper facilement vos données métier avec le Common Data Model (schéma standardisé de Microsoft), de les enrichir avec des données Microsoft et des données tierces et d’obtenir un accès simplifié au machine Learning. Ces nouvelles fonctionnalités peuvent être exploitées pour fournir des informations intelligentes et exploitables sur les données de votre entreprise. Une fois que vous avez terminé toutes les transformations à l’étape de modification des requêtes, vous pouvez mapper des colonnes de vos tables de sources de données vers des champs d’entité standard tels qu’ils sont définis par le modèle Common Data Model. Les entités standard ont un schéma connu défini par le modèle Common Data Model.
 
-Vous trouverez plus d’informations sur cette approche, ainsi que sur le modèle Common Data Model, dans l’article [Common Data Model, qu’est-ce que c’est](https://docs.microsoft.com/powerapps/common-data-model/overview).
+Vous trouverez plus d’informations sur cette approche, ainsi que sur le modèle Common Data Model, dans l’article [Common Data Model, qu’est-ce que c’est](/powerapps/common-data-model/overview).
 
 Pour tirer parti du modèle Common Data Model avec votre flux de données, cliquez sur la transformation **Mapper vers standard** dans la boîte de dialogue **Modifier les requêtes**. Dans l’écran **Mapper des entités** qui s’affiche, vous pouvez sélectionner l’entité standard vers laquelle vous souhaitez mapper.
 
@@ -175,7 +175,7 @@ Cet article décrit comment vous pouvez créer votre propre **flux de données**
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)
 * [En savoir plus sur le schéma du modèle Common Data Model et sur les entités sur GitHub](https://github.com/Microsoft/CDM)
 
 Articles de Power BI Desktop connexes :

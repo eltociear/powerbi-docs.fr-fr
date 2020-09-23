@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 48f094def0576d6e90a71117cc37ac975304e07f
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: 58d595ff5e7d3947117aa9663e761a6f98f10c7f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557276"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861311"
 ---
 # <a name="create-key-influencers-visualizations"></a>Créer des visualisations des influenceurs clés
 
@@ -241,7 +241,7 @@ Le top des segments pour les cibles numériques montre les groupes pour lesquels
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analyser une métrique qui est une mesure ou une colonne synthétisée
 
-Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est définie par défaut sur le **Type d’analyse continue** décrit [ci-dessus](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Ceci ne peut pas être modifié. La plus grande différence entre l’analyse d’une mesure/colonne synthétisée et une colonne numérique non synthétisée est le niveau auquel l’analyse est effectuée.
+Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est définie par défaut sur le **Type d’analyse continue** décrit [ci-dessus](#analyze-a-metric-that-is-numeric). Ceci ne peut pas être modifié. La plus grande différence entre l’analyse d’une mesure/colonne synthétisée et une colonne numérique non synthétisée est le niveau auquel l’analyse est effectuée.
 
 Dans le cas de colonnes non synthétisées, l’analyse est toujours effectuée au niveau de la table. Dans l’exemple du prix des maisons ci-dessus, nous avons analysé la métrique **House Price** (Prix de la maison) pour voir ce qui influence l’augmentation/diminution du prix d’une maison. L’analyse s’effectue automatiquement au niveau de la table. Notre table a un ID unique pour chaque maison, de sorte que l’analyse s’effectue au niveau de la maison.
 
@@ -255,7 +255,7 @@ Les mesures et les colonnes synthétisées sont automatiquement analysées au ni
 
 Cette analyse est une synthèse très globale et il est donc difficile pour le modèle de régression de trouver des modèles dans les données à partir desquels il peut apprendre. Nous devons exécuter l’analyse à un niveau plus détaillé pour obtenir de meilleurs résultats. Si nous voulions analyser le prix des maisons au niveau des maisons, nous devrions ajouter explicitement le champ **ID** à l’analyse. Néanmoins, nous ne voulons pas que l’ID des maisons soit considéré comme un influenceur. Il n’est pas très utile d’apprendre que quand l’ID de la maison augmente, le prix d’une maison augmente. C’est là où l’option du champ **Développer par** se révèle pratique. Vous pouvez utiliser **Développer par** pour ajouter des champs que vous voulez utiliser pour définir le niveau de l’analyse sans rechercher de nouveaux influenceurs.
 
-Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](#analyze-a-metric-that-is-numeric).
 
 ![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

@@ -10,12 +10,12 @@ ms.date: 09/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 2b5481e3d0b84f81a9cdee827df27c90e32a7e84
-ms.sourcegitcommit: ae9e698b082598f37242080a3ad3dd0b3be08478
+ms.openlocfilehash: 948e0260f13aa243a45ba5bdf6fe59c9699d47a0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89474801"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855101"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 
@@ -27,7 +27,7 @@ Pour obtenir un abonnement Power BI pour le gouvernement des États-Unis et affe
 
 ### <a name="enroll-in-a-microsoft-365-government-plan"></a>S’inscrire à un plan Microsoft 365 Secteur Public
 
-Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre organisation pour pouvoir vous inscrire à un abonnement Microsoft 365 Secteur Public.  Commencez par compléter le [formulaire de validation de l’admissibilité Microsoft 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Pour sélectionner un abonnement adapté à votre organisation, consultez la [description des services Microsoft 365 pour le gouvernement des États-Unis](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
+Si vous êtes un nouveau client, vous devez valider l’admissibilité de votre organisation pour pouvoir vous inscrire à un abonnement Microsoft 365 Secteur Public.  Commencez par compléter le [formulaire de validation de l’admissibilité Microsoft 365 Secteur Public](https://www.microsoft.com/microsoft-365/government/eligibility-validation). Pour sélectionner un abonnement adapté à votre organisation, consultez la [description des services Microsoft 365 pour le gouvernement des États-Unis](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
 > Si vous avez déjà déployé Power BI dans un environnement commercial et que vous souhaitez migrer vers le cloud du gouvernement des États-Unis, vous devez ajouter un nouvel abonnement Power BI Pro à votre offre Microsoft 365 Secteur Public. Ensuite, répliquez les données commerciales sur le service Power BI pour le gouvernement des États-Unis, supprimez les attributions de licences commerciales des comptes d’utilisateurs, puis affectez une licence Power BI Pro Secteur Public aux comptes d’utilisateurs.
@@ -45,11 +45,11 @@ Après avoir déployé Microsoft 365, vous pouvez ajouter un abonnement Power BI
 
 Microsoft 365 propose différents environnements pour les organismes gouvernementaux qui répondent à différentes exigences de conformité. Pour plus d’informations sur chaque environnement, consultez :
 
-* Le [Cloud de la communauté du secteur public (GCC) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
+* Le [Cloud de la communauté du secteur public (GCC) Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) est conçu pour les administrations fédérales, nationales et locales.
 
-* Le [Cloud de la communauté du secteur public High (GCC High) Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
+* Le [Cloud de la communauté du secteur public High (GCC High) Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu pour les agences fédérales, le secteur de la défense, l’industrie aéronautique et d’autres organisations détenant des informations protégées non classées. Cet environnement est adapté aux organisations de sécurité nationale et aux entreprises disposant de données ITAR (International Traffic in Arms Regulations) ou soumises à des exigences DFARS (Defense Federal Acquisition Regulation Supplement).
 
-* [L’environnement Microsoft 365 DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis.
+* [L’environnement Microsoft 365 DoD](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) est conçu exclusivement pour le département de la Défense des États-Unis.
 
 ## <a name="connect-to-power-bi-for-us-government"></a>Connexion à Power BI pour le gouvernement des États-Unis
 
@@ -72,7 +72,7 @@ Azure est réparti sur plusieurs clouds. Par défaut, vous pouvez activer des r�
 
 Dans le cloud public, les plages d’adresses IP sont disponibles. Pour obtenir celles du cloud du gouvernement des États-Unis, téléchargez le fichier [Plages d’adresses IP et balises de service Azure – Cloud du gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063).
 
-Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer et gérer des règles de pare-feu IP](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer et gérer des règles de pare-feu IP](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## <a name="power-bi-feature-availability"></a>Disponibilité des fonctionnalités de Power BI
 
@@ -83,7 +83,7 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 |Caractéristique |GCC |GCC High |DoD|
 |------|------|------|------|
 |[Azure B2B Collaboration entre le cloud public et le cloud commercial](service-admin-azure-ad-b2b.md)<sup>1</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
-|[Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![disponible](../media/yes.png)|![Disponible](../media/yes.png)|![non disponible](../media/no.png)|
+|[Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI](/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![disponible](../media/yes.png)|![Disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Connectivité Power Automate pour les alertes de données](../connect-data/power-bi-data-sources.md)|![disponible](../media/yes.png)|![disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Onglet Power BI dans Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 |[Métriques de capacité](../admin/service-admin-premium-monitor-portal.md)|T3 2020 |T3 2020|T3 2020|
@@ -96,7 +96,7 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 |[Visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
 |[Génération d’un code QR](../create-reports/service-create-qr-code-for-tile.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 
-<sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour le gouvernement américain, lisez la [comparaison entre Azure Government et Azure international](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
+<sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour le gouvernement américain, lisez la [comparaison entre Azure Government et Azure international](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 <sup>2</sup> L’expérience Power BI dans Teams pour GCC est limitée : elle fonctionne uniquement pour les espaces de travail classiques et n’inclut pas les fonctionnalités améliorées décrites dans [Incorporer du contenu Power BI dans Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
@@ -105,6 +105,6 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Inscription à Power BI pour le gouvernement des États-Unis](service-govus-signup.md)
-* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
-* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
+* [Microsoft Power Apps US Government](/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](/power-automate/us-govt)
 * [Démonstration de Power BI US Government](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)

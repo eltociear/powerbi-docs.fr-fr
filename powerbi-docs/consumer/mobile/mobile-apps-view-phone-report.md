@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eb46c35c4040ead37b132cf2c34a22663ee72b6d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9030d7ebacad92780a7dcafe33ae5bdded842b01
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85220284"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856138"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -115,7 +115,7 @@ Il existe plusieurs types d’exploration :
 
 ## <a name="drill-through-from-a-value"></a>Extraction à partir d’une valeur
 L’extraction permet de connecter les valeurs d’une page de rapport à d’autres pages de rapport. Lorsque vous effectuez une extraction à partir d’un point de données vers une autre page de rapport, les valeurs du point de données sont utilisées pour filtrer la page extraite, et vous vous retrouvez dans le contexte des données sélectionnées.
-Les auteurs de rapports peuvent [définir l’extraction](https://docs.microsoft.com/power-bi/desktop-drillthrough) lorsqu’ils créent un rapport.
+Les auteurs de rapports peuvent [définir l’extraction](../../create-reports/desktop-drillthrough.md) lorsqu’ils créent un rapport.
 
 1. Appuyez de façon prolongée sur un point de données d’un visuel.
 2. Une info-bulle s’affiche et, si l’extraction est définie, le pied de page de l’info-bulle montre la flèche permettant d’effectuer une extraction.

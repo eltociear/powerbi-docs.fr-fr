@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/25/2019
 ms.author: painbar
-ms.openlocfilehash: e3b0fba18250853eec7eef85b5cfc9161290bacb
-ms.sourcegitcommit: c006d7aabf90c7b29fb05641d1f94f1ee7132943
+ms.openlocfilehash: 003543579e26262194668f94bdf78b8b002cb114
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84685295"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856151"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, nous allons explorer rapidement l’application Power BI Mobile, puis nous nous intéresserons à un exemple de tableau de bord et à un exemple de rapport. Nous vous montrons ici l’application Power BI pour iOS. Toutefois, vous pourrez facilement suivre les instructions sur d’autres appareils.
@@ -25,7 +25,7 @@ S’applique à :
 | iPhone | iPad | Téléphone | Windows 10 |
 
 >[!NOTE]
->La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Un tableau de bord est un portail qui donne accès au cycle de vie et aux processus de votre entreprise. Il s’agit d’une vue d’ensemble, d’un seul et même emplacement à partir duquel vous pouvez superviser l’état actuel des activités de l’entreprise. Les rapports sont des vues de données interactives qui comprennent des visuels représentant différentes observations et différents insights. 
 
@@ -112,4 +112,3 @@ Dans ce guide de démarrage rapide, vous avez exploré un exemple de tableau de 
 
 > [!div class="nextstepaction"]
 > [Démarrage rapide : Découverte du service Power BI](../end-user-experience.md)
-

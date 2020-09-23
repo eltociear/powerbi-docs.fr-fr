@@ -8,15 +8,15 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 06/26/2020
 ms.author: maggies
-ms.openlocfilehash: 531c0ab2bb797e1ad5aaa4d974e51963f7c3e2ad
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: fcf0a286487922fcfc217b4d293aa731ad1564a6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485389"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861219"
 ---
 # <a name="paginated-report-data-sources--in-power-bi-report-server"></a>Sources de données de rapport paginé dans Power BI Report Server
-Les rapports paginés Reporting Services dans Power BI Report Server prennent en charge les mêmes sources de données que celles prises en charge dans SQL Server Reporting Services. Consultez la liste [Sources de données prises en charge par Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+Les rapports paginés Reporting Services dans Power BI Report Server prennent en charge les mêmes sources de données que celles prises en charge dans SQL Server Reporting Services. Consultez la liste [Sources de données prises en charge par Reporting Services](/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 ## <a name="connect-to-oracle-data-sources-with-useinstalleduiculture"></a>Se connecter à des sources de données Oracle data avec UseInstalledUICulture
 

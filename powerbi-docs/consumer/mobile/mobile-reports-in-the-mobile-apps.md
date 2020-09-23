@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: f53fb518df3c82f4570c81b7caa14c20eea8022c
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: bdea7bbadc9e974e6b71122775408f50cfe33de3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204958"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855952"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -23,7 +23,7 @@ S’applique à :
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
 
 >[!NOTE]
->La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=2121400)
+>La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Un rapport Power BI est une vue interactive de vos données, avec des visuels qui représentent différents résultats et insights de ces données. L’affichage de rapports dans les applications mobiles Power BI est la troisième étape d’un processus en trois étapes :
 
@@ -134,13 +134,13 @@ Par exemple :
 
 L’option **Signets** est présente uniquement si les [signets](mobile-reports-in-the-mobile-apps.md#bookmarks) ont été définis dans le rapport. Les signets personnels que vous pouvez définir dans le service Power BI ainsi que les signets définis par le créateur du rapport sont affichés. Si l’un des signets a été défini comme signet par défaut, le rapport s’ouvre dans cette vue lors de son chargement.
 
-L’option **Annoter et partager** peut être désactivée si une [stratégie de protection Intune](https://docs.microsoft.com/intune/app-protection-policies) de votre organisation interdit le partage à partir d’une application mobile Power BI.
+L’option **Annoter et partager** peut être désactivée si une [stratégie de protection Intune](/intune/app-protection-policies) de votre organisation interdit le partage à partir d’une application mobile Power BI.
 
 **Inviter** est activée uniquement si vous avez l’autorisation de partager le rapport avec d’autres utilisateurs. Vous disposez de cette autorisation uniquement si vous êtes le propriétaire du rapport ou si celui-ci vous a accordé l’autorisation de repartage.
 
-**Filtrer par emplacement actuel** est activée si l’auteur du rapport l’a classé avec des données géographiques. Pour plus d’informations, découvrez comment [identifier des données géographiques dans un rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+**Filtrer par emplacement actuel** est activée si l’auteur du rapport l’a classé avec des données géographiques. Pour plus d’informations, découvrez comment [identifier des données géographiques dans un rapport](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Analyser pour filtrer le rapport par code-barres** est activée uniquement si le jeu de données dans votre rapport est balisé comme **code-barres**. Pour plus d’informations, découvrez comment [baliser des codes-barres dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
+**Analyser pour filtrer le rapport par code-barres** est activée uniquement si le jeu de données dans votre rapport est balisé comme **code-barres**. Pour plus d’informations, découvrez comment [baliser des codes-barres dans Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### <a name="bookmarks"></a>Signets
 
@@ -154,7 +154,7 @@ Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît e
 
 ![vue de signet](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Découvrez-en plus sur les signets dans le service Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+[Découvrez-en plus sur les signets dans le service Power BI](../end-user-bookmarks.md).
 
 ## <a name="configure-your-experience-with-reports"></a>Configurer votre expérience avec les rapports
 L’application mobile Power BI a un certain nombre de paramètres qui vous permettent de contrôler votre expérience avec les rapports. Actuellement, vous pouvez configurer
