@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 91b0bba3b8e3fc221a05e6ccb2de1ec9b888d1ef
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 61eb4fc54966545858a7ebc85044696064027acd
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858390"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
 En utilisant des mesures, vous pouvez créer des solutions d’analyse de données parmi les plus puissantes dans Power BI Desktop. Les mesures vous aident en effectuant des calculs sur vos données quand vous interagissez avec vos rapports. Ce didacticiel vous aidera à comprendre les mesures et à créer vos propres mesures élémentaires dans Power BI Desktop.
@@ -245,4 +245,4 @@ Les mesures vous permettent d’obtenir les insights souhaités à partir de vos
   
 - Si vous souhaitez approfondir vos connaissances des formules DAX et créer des mesures plus avancées, consultez [Principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Cet article porte sur les concepts fondamentaux propres à DAX, tels que la syntaxe, les fonctions et une compréhension plus approfondie du contexte.
   
-- Veillez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/index) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.
+- Veillez à ajouter la page [Informations de référence sur DAX (Data Analysis Expressions)](/dax/index) à vos favoris. Vous y trouverez des informations détaillées sur la syntaxe DAX, les opérateurs et plus de 200 fonctions DAX.

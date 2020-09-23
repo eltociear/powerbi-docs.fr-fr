@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/29/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c3e56df49caac8b5250a4e382cab253a0a9c5210
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 791b5efce0489e837cb75ed1ae6632dcc240fc1c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161327"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857585"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -25,7 +25,7 @@ L’administration de Power BI est la gestion des paramètres à l’échelle de
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Rôles d’administrateur liés à Power BI
 
-Il existe plusieurs rôles qui travaillent ensemble de façon à administrer Power BI pour votre organisation. La plupart des rôles d’administrateur sont affectés dans le Centre d’administration Microsoft 365 ou via PowerShell. Les rôles d’administrateur de la capacité Power BI Premium et de la capacité Power BI Embedded sont affectés quand la capacité est créée. Pour plus d’informations sur chacun des rôles d’administrateur, consultez [À propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Pour savoir comment affecter des rôles d’administrateur, consultez [Affecter des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+Il existe plusieurs rôles qui travaillent ensemble de façon à administrer Power BI pour votre organisation. La plupart des rôles d’administrateur sont affectés dans le Centre d’administration Microsoft 365 ou via PowerShell. Les rôles d’administrateur de la capacité Power BI Premium et de la capacité Power BI Embedded sont affectés quand la capacité est créée. Pour plus d’informations sur chacun des rôles d’administrateur, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Pour savoir comment affecter des rôles d’administrateur, consultez [Affecter des rôles d’administrateur](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
 
 | **Type d’administrateur** | **Étendue d’administration** | **Tâches Power BI** |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Les administrateurs de Power BI travaillent principalement dans le portail d’a
 | | Gouvernance des informations |
 | [Azure Active Directory (AAD) dans le portail Azure](https://aad.portal.azure.com) | Configurer l’accès conditionnel aux ressources Power BI |
 | | Approvisionner la capacité de Power BI Embedded |
-| [Applets de commande PowerShell](https://docs.microsoft.com/powershell/power-bi/overview) | Gérer les espaces de travail et d’autres aspects de Power BI avec des scripts |
+| [Applets de commande PowerShell](/powershell/power-bi/overview) | Gérer les espaces de travail et d’autres aspects de Power BI avec des scripts |
 | [API et SDK d’administration](service-admin-reference.md) | Créez des outils d’administration personnalisés. Par exemple, Power BI Desktop peut utiliser ces API pour générer des rapports à partir de données liées à l’administration. |
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -79,7 +79,7 @@ Maintenant que vous connaissez les principes fondamentaux de l’administration 
 
 - [Utiliser le portail d’administration de Power BI](service-admin-portal.md)
 - [Indications concernant les paramètres d’administration de locataire](../guidance/admin-tenant-settings.md)
-- [Utiliser les applets de commande PowerShell](https://docs.microsoft.com/powershell/power-bi/overview)
+- [Utiliser les applets de commande PowerShell](/powershell/power-bi/overview)
 - [FAQ sur l’administration de Power BI](service-admin-faq.md)
 - [Gestion des licences du service Power BI pour les utilisateurs de votre organisation](service-admin-licensing-organization.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

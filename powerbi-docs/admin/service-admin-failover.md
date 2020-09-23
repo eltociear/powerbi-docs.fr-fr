@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 56ace35adf6a005c4370bf692d8851dc015688c0
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: a9fca9f27baf51c4e4bafbf93244f0d745ba714b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857424"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -55,7 +55,7 @@ Une notification est publiée sur la page de support de Power BI ([https://power
 
 Quand la nécessité d’un basculement a été déterminée, Power BI est de nouveau opérationnel au bout de 15 minutes environ. Le temps nécessaire pour déterminer qu’un basculement est nécessaire varie en fonction du scénario d’interruption. 
 
-Dès lors qu’un basculement est effectué, Power BI utilise la géoréplication du stockage Azure pour effectuer le basculement. En règle générale, ces réplications ont un point de retour de 15 minutes. Cependant, le [stockage Azure ne garantit pas ce délai](https://docs.microsoft.com/azure/storage/common/storage-redundancy) dans le cadre d’un SLA. Power BI n’est donc pas en mesure de garantir un délai non plus. 
+Dès lors qu’un basculement est effectué, Power BI utilise la géoréplication du stockage Azure pour effectuer le basculement. En règle générale, ces réplications ont un point de retour de 15 minutes. Cependant, le [stockage Azure ne garantit pas ce délai](/azure/storage/common/storage-redundancy) dans le cadre d’un SLA. Power BI n’est donc pas en mesure de garantir un délai non plus. 
 
 ## <a name="what-happens-to-workspaces-and-reports-if-my-premium-capacity-becomes-unavailable"></a>Qu’advient-il des espaces de travail et des rapports si ma capacité Premium n’est plus disponible ? 
 

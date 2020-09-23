@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.openlocfilehash: 4b112c3522a35f86f74481a79f3fff919a0e9e33
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: ef981c63aaa1cdececbe03f187d25ee09073f61f
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87544766"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857746"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Gérer les paramètres d’administration des visuels Power BI
 
@@ -64,7 +64,7 @@ Suivez les instructions ci-dessous pour permettre aux utilisateurs de votre orga
 
 ![visuels issus d’un fichier ou d’AppSource](media/organizational-visuals/tenant-settings.png)
 
-Les modifications apportées aux paramètres de locataire à partir de l’interface utilisateur s’appliquent uniquement au service Power BI. Pour autoriser les utilisateurs de votre organisation à charger les fichiers .pbiviz et à ajouter des visuels issus d’AppSource à leur volet de visualisation dans Power BI Desktop, utilisez une [stratégie de groupe Azure AD](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+Les modifications apportées aux paramètres de locataire à partir de l’interface utilisateur s’appliquent uniquement au service Power BI. Pour autoriser les utilisateurs de votre organisation à charger les fichiers .pbiviz et à ajouter des visuels issus d’AppSource à leur volet de visualisation dans Power BI Desktop, utilisez une [stratégie de groupe Azure AD](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Nom de la valeur  |Valeur  |
 |---------|---------|---------|
@@ -83,7 +83,7 @@ Quand ce paramètre est activé, seuls les [visuels Power BI certifiés](../deve
 
 ![visuels certifiés](media/organizational-visuals/certified-visuals.png)
 
-Les modifications apportées aux paramètres de locataire à partir de l’interface utilisateur s’appliquent uniquement au service Power BI. Pour gérer le paramètre de locataire de visuels certifiés dans Power BI Desktop, utilisez une [stratégie de groupe Azure AD](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+Les modifications apportées aux paramètres de locataire à partir de l’interface utilisateur s’appliquent uniquement au service Power BI. Pour gérer le paramètre de locataire de visuels certifiés dans Power BI Desktop, utilisez une [stratégie de groupe Azure AD](/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Nom de la valeur  |Valeur  |
 |---------|---------|---------|

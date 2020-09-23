@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f778b4f0c6572084598eb07df0e89b7a30aed7b1
-ms.sourcegitcommit: d7145123133255d004b85ef8b20ca4977f0b843e
+ms.openlocfilehash: b77543a7601cf4f8522c333137802e71ce41a41c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88091592"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858367"
 ---
 # <a name="connect-to-an-oracle-database-with-power-bi-desktop"></a>Se connecter à une base de données Oracle avec Power BI Desktop
 Pour se connecter à une base de données Oracle avec Power BI Desktop, le logiciel client Oracle approprié doit être installé sur l’ordinateur exécutant Power BI Desktop. Le logiciel client Oracle que vous utilisez dépend de la version de Power BI Desktop que vous avez installée : 32 bits ou 64 bits. Il dépend également de votre version du serveur Oracle.
@@ -24,7 +24,7 @@ Versions d’Oracle prises en charge :
 - Logiciel ODAC (Oracle Data Access Client) 11.2 et versions ultérieures
 
 > [!NOTE]
-> Si vous configurez une base de données Oracle pour Power BI Desktop, une passerelle de données locale ou Power BI Report Server, consultez les informations de l’article [Type de connexion Oracle](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
+> Si vous configurez une base de données Oracle pour Power BI Desktop, une passerelle de données locale ou Power BI Report Server, consultez les informations de l’article [Type de connexion Oracle](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15). 
 
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Identification de la version installée de Power BI Desktop
@@ -89,4 +89,4 @@ Si vous avez téléchargé Power BI Desktop à partir du Microsoft Store, vous r
 
 Si vous voyez le message d’erreur *Référence d’objet non définie* dans Power BI Gateway quand vous vous connectez à une base de données Oracle, suivez les instructions fournies dans [Gérer votre source de données - Oracle](service-gateway-onprem-manage-oracle.md).
 
-Si vous utilisez Power BI Report Server, consultez les instructions de l’article [Type de connexion Oracle](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15).
+Si vous utilisez Power BI Report Server, consultez les instructions de l’article [Type de connexion Oracle](/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15).

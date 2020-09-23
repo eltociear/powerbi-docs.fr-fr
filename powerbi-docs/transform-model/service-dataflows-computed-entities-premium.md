@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 0b43864078e52381aa92e6e16366ba4fdf5fea29
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79ab3a38a6f1df97b445c06adf13a4b53af30d87
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858022"
 ---
 # <a name="using-computed-entities-on-power-bi-premium"></a>Utilisation d’entités calculées sur Power BI Premium
 
@@ -95,4 +95,4 @@ Pour plus d’informations sur Power Query et l’actualisation planifiée, vous
 * [Configuration d’une actualisation planifiée](../connect-data/refresh-scheduled-refresh.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)

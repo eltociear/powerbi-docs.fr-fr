@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e43edb3241140024241ab78af1236d9551a35f1a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ad3684bbf285ff85fa3dec6b0cdc807dc05eca05
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239763"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857907"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de dataflow d’espace de travail (préversion)
 
@@ -128,13 +128,13 @@ Pour plus d’informations sur les flux de données en général, voir les artic
 
 Pour plus d’informations sur le stockage Azure, voir les articles suivants :
 
-* [Guide de sécurité sur le Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Guide de sécurité sur le Stockage Azure](/azure/storage/common/storage-security-guide)
 * [Bien démarrer avec les exemples GitHub d’Azure Data Services](https://aka.ms/cdmadstutorial)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
 
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier modèle CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)
+* [Dossiers CDM](/common-data-model/data-lake)
+* [Définition du fichier modèle CDM](/common-data-model/model-json)
 
 Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

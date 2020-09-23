@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 75c1d76d5fbdfc0d844e69ef0f76ced7cd2e302d
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 75753886930a4b9c2e109f36b5cc01ccbaec49e6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292935"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858321"
 ---
 # <a name="work-with-multidimensional-models-in-power-bi"></a>Utiliser des modèles multidimensionnels dans Power BI
 
 Vous pouvez vous connecter à des modèles multidimensionnels dans Power BI et créer des rapports permettant de visualiser toutes sortes de données dans le modèle. Lorsque des modèles multidimensionnels sont utilisés, Power BI applique des règles au traitement des données, en fonction de la colonne définie comme *membre par défaut*. 
 
-Avec les modèles multidimensionnels, Power BI traite les données du modèle en fonction de l’endroit où est utilisée la colonne contenant l’attribut **DefaultMember**. L’attribut *DefaultMember* est défini dans le langage CSDL (Conceptual Schema Definition Language) pour une colonne en particulier dans un modèle multidimensionnel. Plus d’informations sur le membre par défaut, voir [l’article sur les propriétés de cet attribut](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member?view=sql-server-2017). À l’exécution d’une requête DAX, le membre par défaut spécifié dans le modèle est appliqué automatiquement.
+Avec les modèles multidimensionnels, Power BI traite les données du modèle en fonction de l’endroit où est utilisée la colonne contenant l’attribut **DefaultMember**. L’attribut *DefaultMember* est défini dans le langage CSDL (Conceptual Schema Definition Language) pour une colonne en particulier dans un modèle multidimensionnel. Plus d’informations sur le membre par défaut, voir [l’article sur les propriétés de cet attribut](/sql/analysis-services/multidimensional-models/attribute-properties-define-a-default-member?view=sql-server-2017). À l’exécution d’une requête DAX, le membre par défaut spécifié dans le modèle est appliqué automatiquement.
 
 Cet article explique comment Power BI se comporte avec des modèles multidimensionnels dans différentes circonstances, en fonction de l’emplacement du *membre par défaut*. 
 

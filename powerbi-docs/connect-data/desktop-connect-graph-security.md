@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9f434d27a11d171509645594a6f7f67e62c16faa
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: 5d7fbe9e302c7b1460bc285af140a50304c468da
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409303"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858528"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Se connecter à l’API Microsoft Graph Security dans Power BI Desktop
 
-Utilisez le connecteur Microsoft Graph Security de Power BI Desktop pour vous connecter à l’[API Microsoft Graph Security](https://aka.ms/graphsecuritydocs). Vous pouvez ensuite créer des tableaux de bord et des rapports qui fournissent des insights utiles sur vos [alertes](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) de sécurité et les [degrés de sécurisation](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Utilisez le connecteur Microsoft Graph Security de Power BI Desktop pour vous connecter à l’[API Microsoft Graph Security](/graph/security-concept-overview). Vous pouvez ensuite créer des tableaux de bord et des rapports qui fournissent des insights utiles sur vos [alertes](/graph/api/resources/alert?view=graph-rest-1.0) de sécurité et les [degrés de sécurisation](/graph/api/resources/securescores?view=graph-rest-beta).
 
-L’API Microsoft Graph Security connecte [plusieurs solutions de sécurité](https://aka.ms/graphsecurityalerts) à partir de Microsoft et les partenaires de son écosystème pour faciliter la corrélation des alertes. Cette combinaison permet d’accéder à des informations contextuelles riches et simplifie l’automation. Elle permet aux organisations de rapidement obtenir des insights et d’agir sur plusieurs produits de sécurité, tout en réduisant les coûts et la complexité.
+L’API Microsoft Graph Security connecte [plusieurs solutions de sécurité](/graph/api/resources/security-api-overview#alerts) à partir de Microsoft et les partenaires de son écosystème pour faciliter la corrélation des alertes. Cette combinaison permet d’accéder à des informations contextuelles riches et simplifie l’automation. Elle permet aux organisations de rapidement obtenir des insights et d’agir sur plusieurs produits de sécurité, tout en réduisant les coûts et la complexité.
 
 ## <a name="prerequisites-to-use-the-microsoft-graph-security-connector"></a>Prérequis à l’utilisation du connecteur Microsoft Graph Security
 
-Pour utiliser le connecteur Microsoft Graph Security, vous devez *explicitement* obtenir le consentement de la part de l’administrateur de locataire Azure Active Directory (Azure AD). Consultez [Exigences d’authentification pour Microsoft Graph Security](https://aka.ms/graphsecurityauth).
+Pour utiliser le connecteur Microsoft Graph Security, vous devez *explicitement* obtenir le consentement de la part de l’administrateur de locataire Azure Active Directory (Azure AD). Consultez [Exigences d’authentification pour Microsoft Graph Security](/graph/security-authorization).
 Le consentement nécessite le nom et l’ID d’application du connecteur, qui est cité ici et qui est disponible dans le [portail Azure](https://portal.azure.com) :
 
 | Propriété | Valeur |
@@ -37,11 +37,11 @@ Le consentement nécessite le nom et l’ID d’application du connecteur, qui e
 
 Pour donner son consentement à l’utilisation du connecteur, votre administrateur de locataire Azure AD peut utiliser une des méthodes suivantes :
 
-* [Donner son consentement pour les applications Azure AD](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+* [Donner son consentement pour les applications Azure AD](/azure/active-directory/develop/v2-permissions-and-consent)
 
-* Répondre à une demande que votre application logique envoie au cours de sa première exécution via l’[expérience de consentement d’application](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
+* Répondre à une demande que votre application logique envoie au cours de sa première exécution via l’[expérience de consentement d’application](/azure/active-directory/develop/application-consent-experience)
    
-Le compte d’utilisateur qui se connecte au connecteur Microsoft Graph Security doit avoir le rôle Lecteur de sécurité Azure AD, **si** l’utilisateur n’est pas membre du rôle *Administrateur de la sécurité*. Consultez [Attribuer des rôles d’Azure AD aux utilisateurs](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Le compte d’utilisateur qui se connecte au connecteur Microsoft Graph Security doit avoir le rôle Lecteur de sécurité Azure AD, **si** l’utilisateur n’est pas membre du rôle *Administrateur de la sécurité*. Consultez [Attribuer des rôles d’Azure AD aux utilisateurs](/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Utilisation du connecteur Microsoft Graph Security
 
@@ -69,13 +69,13 @@ Suivez ces étapes pour utiliser le connecteur :
 
     ![Boîte de dialogue « Vous êtes connecté »](media/desktop-connect-graph-security/SignedIn.PNG)
     
-8. Une fois que vous êtes connecté, la fenêtre **Navigateur** affiche les alertes, les degrés de sécurisation et les autres entités qui sont disponibles dans l’[API Microsoft Graph Security](https://aka.ms/graphsecuritydocs) pour la version que vous avez sélectionnée à l’étape 4. Sélectionnez une ou plusieurs entités à importer et utiliser dans Power BI Desktop. Ensuite, sélectionnez **Charger** pour obtenir l’affichage des résultats qui est indiqué à la fin de l’étape 9.
+8. Une fois que vous êtes connecté, la fenêtre **Navigateur** affiche les alertes, les degrés de sécurisation et les autres entités qui sont disponibles dans l’[API Microsoft Graph Security](/graph/security-concept-overview) pour la version que vous avez sélectionnée à l’étape 4. Sélectionnez une ou plusieurs entités à importer et utiliser dans Power BI Desktop. Ensuite, sélectionnez **Charger** pour obtenir l’affichage des résultats qui est indiqué à la fin de l’étape 9.
 
     ![Boîte de dialogue Navigateur](media/desktop-connect-graph-security/NavTable.PNG)
     
-9. Si vous souhaitez utiliser une requête complexe avec l’API Microsoft Graph Security, sélectionnez **Specify custom Microsoft Graph Security URL to filter results** (Spécifier une URL Microsoft Graph Security personnalisée pour filtrer les résultats). Utilisez cette fonction pour envoyer une requête [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata) à l’API Microsoft Graph Security avec les autorisations requises.
+9. Si vous souhaitez utiliser une requête complexe avec l’API Microsoft Graph Security, sélectionnez **Specify custom Microsoft Graph Security URL to filter results** (Spécifier une URL Microsoft Graph Security personnalisée pour filtrer les résultats). Utilisez cette fonction pour envoyer une requête [OData.Feed](./desktop-connect-odata.md) à l’API Microsoft Graph Security avec les autorisations requises.
 
-   L’exemple suivant utilise le *serviceUri* `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. Pour savoir comment générer des requêtes afin de filtrer, ordonner ou récupérer les résultats les plus récents, reportez-vous à [Options de requête de système OData](https://docs.microsoft.com/graph/query-parameters).
+   L’exemple suivant utilise le *serviceUri* `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. Pour savoir comment générer des requêtes afin de filtrer, ordonner ou récupérer les résultats les plus récents, reportez-vous à [Options de requête de système OData](/graph/query-parameters).
 
    ![Exemple de requête OdataFeed](media/desktop-connect-graph-security/ODataFeed.PNG)
     

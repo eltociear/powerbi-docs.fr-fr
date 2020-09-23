@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97bccec3ec0e92ebfcc6b9251cf5c17f176fbed1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5efe83cfa43c6fcb156501774bbaeae79381ab85
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240140"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857723"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
 
@@ -41,7 +41,7 @@ Pour chaque stratégie, il existe des valeurs par défaut en fonction de la form
 ## <a name="statistics"></a>Statistiques
 Certains modèles peuvent fournir des statistiques sur le nombre de valeurs pour certaines colonnes. Lorsque ces informations sont présentes, nous en tirons parti pour fournir un meilleur équilibrage sur plusieurs hiérarchies, si un visuel ne remplace pas explicitement le nombre de valeurs pour une stratégie.
 
-Pour plus d’informations, consultez [Nouveautés dans Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+Pour plus d’informations, consultez [Nouveautés dans Analysis Services](/sql/analysis-services/what-s-new-in-analysis-services)
 
 ## <a name="dynamic-limits"></a>Limites dynamiques
 Outre les stratégies ci-dessus, les visuels avec deux hiérarchies de colonnes de regroupement (axe et légende ou catégorie et série) utilisent une stratégie supplémentaire appelée *Limites dynamiques*.  Les limites dynamiques sont conçues pour mieux équilibrer les points de données. 
@@ -50,7 +50,7 @@ Les limites dynamiques fournissent une meilleure sélection de points pour les d
 
 Les limites dynamiques sont appliquées automatiquement lorsque le serveur en est capable, comme indiqué ci-dessous :
 
-* Dans Power BI Desktop avec SSAS local version 2016 ou ultérieure [exploitant les capacités SuperDax du serveur](https://blogs.msdn.microsoft.com/analysisservices/2015/09/02/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3/)
+* Dans Power BI Desktop avec SSAS local version 2016 ou ultérieure [exploitant les capacités SuperDax du serveur](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
 
 * Dans Desktop et le service Power BI lors de l’utilisation d’un modèle importé, de Direct Query, avec une connexion en temps réel au service ou une connexion en temps réel à AS PaaS. 
 
@@ -132,7 +132,7 @@ Aucune stratégie de réduction
 - Valeurs : Virtualisation à l’aide d’une fenêtre de 200 lignes à la fois
 
 ### <a name="scatter-chart-high-density"></a>Graphique en nuage de points (haute densité)
-Consultez [Nuages de points à haute densité](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
+Consultez [Nuages de points à haute densité](./desktop-high-density-scatter-charts.md)
 
 ### <a name="pie"></a>Secteurs
 - Points max. : 3,500

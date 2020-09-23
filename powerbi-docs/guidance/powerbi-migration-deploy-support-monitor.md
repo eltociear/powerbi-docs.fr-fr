@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 59f340e6325cf846d1b0453a94a1015b50a987c4
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89401999"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965012"
 ---
 # <a name="deploy-to-power-bi"></a>Déployer sur Power BI
 
@@ -100,7 +100,7 @@ Un déploiement dans l’espace de travail de production inclut généralement l
 - **Paramètres des rapports et tableaux de bord :** mettez à jour et vérifiez les paramètres de chaque rapport et tableau de bord. Voici les paramètres les plus importants :
   - Description
   - Personne ou groupe à contacter
-  - [Étiquette de sensibilité](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+  - [Étiquette de sensibilité](../admin/service-security-apply-data-sensitivity-labels.md)
   - [Contenu proposé](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Abonnements :** configurez des abonnements aux rapports, si nécessaire.
 
@@ -136,7 +136,7 @@ Dans de nombreux cas, la nouvelle solution s’exécutera en parallèle de la so
 
 ## <a name="monitor-the-solution"></a>Surveiller la solution
 
-Les événements du [journal d’activité de Power BI](../admin/service-admin-auditing.md) peuvent servir à comprendre les modèles d’usage de la nouvelle solution (ou ceux du [journal d’exécution](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view?view=sql-server-ver15) pour le contenu déployé sur Power BI Report Server). L’analyse du journal d’activité peut aider à déterminer si l’usage réel diffère des attentes. Elle peut également attester la bonne prise en charge de la solution.
+Les événements du [journal d’activité de Power BI](../admin/service-admin-auditing.md) peuvent servir à comprendre les modèles d’usage de la nouvelle solution (ou ceux du [journal d’exécution](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) pour le contenu déployé sur Power BI Report Server). L’analyse du journal d’activité peut aider à déterminer si l’usage réel diffère des attentes. Elle peut également attester la bonne prise en charge de la solution.
 
 Voici des questions auxquelles l’examen du journal d’activité permet de répondre :
 
