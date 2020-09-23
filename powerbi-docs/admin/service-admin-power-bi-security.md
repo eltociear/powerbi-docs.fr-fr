@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: 6e006bc858ad9d82073ced7929c87920da6559ab
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: ee7954cff7863ff58370bbe1e58f26c64644c8e8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034157"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857056"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -61,10 +61,10 @@ Les connexions à **SQL Server Analysis Services** à l’aide de la **passerell
 
 ## <a name="enforcing-tls-version-usage"></a>Mise en œuvre de l’utilisation de la version TLS
 
-Les administrateurs informatiques et réseau peuvent appliquer l’impératif d’utiliser la version TLS (Transport Layer Security) actuelle pour toutes les communications sécurisées sur leur réseau. Windows prend en charge des versions TLS sur Microsoft Schannel Provider, comme [décrit dans l’article TLS Schannel SSP](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Les administrateurs informatiques et réseau peuvent appliquer l’impératif d’utiliser la version TLS (Transport Layer Security) actuelle pour toutes les communications sécurisées sur leur réseau. Windows prend en charge des versions TLS sur Microsoft Schannel Provider, comme [décrit dans l’article TLS Schannel SSP](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-Cette mise en œuvre est possible en définissant des clés de Registre au niveau administratif. La mise en œuvre est décrite dans [l’article Gestion des protocoles SSL dans AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+Cette mise en œuvre est possible en définissant des clés de Registre au niveau administratif. La mise en œuvre est décrite dans [l’article Gestion des protocoles SSL dans AD FS](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 **Power BI Desktop** respecte les paramètres de clé de Registre décrits dans ces articles et créé uniquement des connexions à l’aide de la version TLS autorisée dans ces paramètres du Registre, le cas échéant.
 
-Pour plus d’informations sur la définition de ces clés de Registre, consultez l’article [Paramètres de Registre TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+Pour plus d’informations sur la définition de ces clés de Registre, consultez l’article [Paramètres de Registre TLS](/windows-server/security/tls/tls-registry-settings).

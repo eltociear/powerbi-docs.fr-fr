@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: ffdb18927d5b92ecd10eb4b9e3a3b8fcd921dea2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 038d18639639fa13250e44da141314e9a94fe412
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230562"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861909"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database avec DirectQuery
 
@@ -29,7 +29,7 @@ Avec DirectQuery, les requêtes sont renvoyées à Azure SQL Database pendant qu
 **Remarques :**
 
 * Spécifiez le nom de serveur complet lors de la connexion (voir ci-dessous pour plus de détails).
-* Vérifiez que les règles de pare-feu de la base de données sont configurées de manière à [autoriser l’accès aux services Azure](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services).
+* Vérifiez que les règles de pare-feu de la base de données sont configurées de manière à [autoriser l’accès aux services Azure](/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services).
 * Chaque action, telle que la sélection d’une colonne ou l’ajout d’un filtre, retourne une requête à la base de données.
 * Les vignettes sont actualisées chaque heure (il n’est pas nécessaire de planifier l’actualisation). Vous pouvez ajuster la fréquence d’actualisation dans les paramètres avancés quand vous vous connectez.
 * Il n’y a pas de Q&R disponible pour les jeux de données DirectQuery.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a6513bdf7451db7068fe2540d32546df4d42ae8e
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 737a8df2f8f7e5d4da50259112ad1afd6ec2ecff
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204573"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856826"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Apporter vos propres clés de chiffrement pour Power BI
 
@@ -39,7 +39,7 @@ BYOK s’applique uniquement aux jeux de données. Les jeux de données d’envo
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> Cette cmdlet nécessite le module de gestion Power BI v1.0.840. Pour savoir quelle version vous utilisez, exécutez Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installez la version la plus récente en exécutant Install-Module -Name MicrosoftPowerBIMgmt. Pour plus d’informations sur les cmdlets Power BI et leurs paramètres, consultez [Modules PowerShell pour cmdlets Power BI](https://docs.microsoft.com/powershell/power-bi/overview).
+> Cette cmdlet nécessite le module de gestion Power BI v1.0.840. Pour savoir quelle version vous utilisez, exécutez Get-InstalledModule -Name MicrosoftPowerBIMgmt. Installez la version la plus récente en exécutant Install-Module -Name MicrosoftPowerBIMgmt. Pour plus d’informations sur les cmdlets Power BI et leurs paramètres, consultez [Modules PowerShell pour cmdlets Power BI](/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Configurer Azure Key Vault
 
@@ -193,7 +193,7 @@ Power BI fournit des applets de commande supplémentaires pour vous aider à gé
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Modules PowerShell pour applets de commande Power BI](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Modules PowerShell pour applets de commande Power BI](/powershell/power-bi/overview) 
 
 * [Moyens de partager votre travail dans Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -202,4 +202,3 @@ Power BI fournit des applets de commande supplémentaires pour vous aider à gé
 * [Incorporer avec le composant WebPart Rapport dans SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publier sur le web à partir de Power BI](../collaborate-share/service-publish-to-web.md)
-

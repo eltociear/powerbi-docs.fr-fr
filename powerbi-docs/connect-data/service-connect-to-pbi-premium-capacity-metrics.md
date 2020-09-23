@@ -8,19 +8,19 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: eb8d7d59e52414620aa888230af59ef98da9e5af
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 2db7cce57408fa988c9a32057d6f1f880bc55126
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861955"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Se connecter à Métriques de capacité Power BI Premium
 La supervision de vos capacités est essentielle pour prendre des décisions avisées sur la meilleure utilisation de vos ressources de capacité Premium. L’application Métriques de capacité Power BI Premium fournit des informations très détaillées sur le fonctionnement de vos capacités.
 
 ![Rapport de l’application Métriques de capacité Power BI Premium](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
 
-Cet article vous explique comment installer l’application et comment se connecter aux sources de données. Pour plus d’informations sur le contenu du rapport et sur son utilisation, consultez [Superviser les capacités Premium avec l’application](../service-admin-premium-monitor-capacity.md) et le [billet de blog sur l’application Métriques de capacité Premium](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
+Cet article vous explique comment installer l’application et comment se connecter aux sources de données. Pour plus d’informations sur le contenu du rapport et sur son utilisation, consultez [Superviser les capacités Premium avec l’application](../admin/service-admin-premium-monitor-capacity.md) et le [billet de blog sur l’application Métriques de capacité Premium](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/).
 
 Après avoir installé l’application et établi la connexion aux sources de données, vous pouvez personnaliser le rapport selon vos besoins. Vous pouvez ensuite le distribuer à des collègues au sein de votre organisation.
 

@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 09/09/2020
-ms.openlocfilehash: f81cf6625f02f71b1ccf8bcd2c442ded3329083d
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: fc54d60be34cd9d40cf1ea715aa84f2f1ef6f9de
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642387"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859402"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>Paramètres d’URL dans les rapports paginés de Power BI
 
@@ -170,7 +170,7 @@ XML :
 - rdl:Encoding=string
 - rdl:Schema=true/false
 
-**Ouvrir le lien hypertexte dans la même fenêtre de navigateur** Vous pouvez ajouter 'rdl:targetSameWindow=true' à l’URL du lien hypertexte de votre rapport pour que Power BI ouvre ce lien hypertexte dans la même fenêtre de navigateur. Pour plus d’informations sur l’ajout de liens hypertexte à un rapport, consultez [Ajouter un lien hypertexte à une URL](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) dans la documentation de SQL Server Reporting Services.
+**Ouvrir le lien hypertexte dans la même fenêtre de navigateur** Vous pouvez ajouter 'rdl:targetSameWindow=true' à l’URL du lien hypertexte de votre rapport pour que Power BI ouvre ce lien hypertexte dans la même fenêtre de navigateur. Pour plus d’informations sur l’ajout de liens hypertexte à un rapport, consultez [Ajouter un lien hypertexte à une URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) dans la documentation de SQL Server Reporting Services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

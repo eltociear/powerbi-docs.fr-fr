@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 05dcae0a2277ee84e6c8bfbdb51532252c50c896
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23c15b49bfd6b069181b5d860637e00315376059
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238889"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861702"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
 
@@ -26,7 +26,7 @@ La création de flux de données à partir de dossiers CDM est soumise aux condi
 
 * Un administrateur doit lier le compte de stockage ADLS Gen2 dans Power BI avant de pouvoir être utilisé. Consultez [Se connecter à Azure Data Lake Storage Gen2 pour le stockage de dataflow](service-dataflows-connect-azure-data-lake-storage-gen2.md) pour découvrir comment lier un compte ADLS Gen2 à Power BI.
 * La création de flux de données à partir de dossiers CDM est *uniquement* disponible dans la [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md). 
-* Pour pouvoir ajouter un dossier CDM à Power BI, l’utilisateur doit avoir [l’autorisation d’accès au dossier CDM et à ses fichiers](https://go.microsoft.com/fwlink/?linkid=2029121).
+* Pour pouvoir ajouter un dossier CDM à Power BI, l’utilisateur doit avoir [l’autorisation d’accès au dossier CDM et à ses fichiers](./service-dataflows-azure-data-lake-integration.md).
 * Vous devez recevoir des autorisations de lecture et d’exécution sur tous les fichiers et dossiers dans le dossier CDM pour les ajouter à Power BI.
 
 Les sections suivantes expliquent comment créer un flux de données à partir d’un dossier CDM.
@@ -86,7 +86,7 @@ Les clients **Power BI Desktop** peuvent accéder aux dataflows stockés dans le
 
   ![Erreur en tentant d’utiliser le flux de données](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-Pour résoudre ce problème, Ben doit disposer d’autorisations de lecture sur le dossier CDM et ses fichiers. Pour savoir comment accorder l’accès au dossier CDM, voir [cet article](https://go.microsoft.com/fwlink/?linkid=2029121).
+Pour résoudre ce problème, Ben doit disposer d’autorisations de lecture sur le dossier CDM et ses fichiers. Pour savoir comment accorder l’accès au dossier CDM, voir [cet article](./service-dataflows-azure-data-lake-integration.md).
 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -107,13 +107,13 @@ Pour plus d’informations sur les flux de données en général, voir les artic
 * [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur le stockage Azure, voir les articles suivants :
-* [Guide de sécurité sur le Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Guide de sécurité sur le Stockage Azure](/azure/storage/common/storage-security-guide)
 * [Configuration d’une actualisation planifiée](../connect-data/refresh-scheduled-refresh.md)
 * [Bien démarrer avec les exemples GitHub d’Azure Data Services](https://aka.ms/cdmadstutorial)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)
+* [Dossiers CDM](/common-data-model/data-lake)
+* [Définition du fichier model CDM](/common-data-model/model-json)
 
 Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

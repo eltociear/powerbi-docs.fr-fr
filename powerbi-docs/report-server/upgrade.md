@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 5696807957d6facc62a92923dcfc888bcab2154b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: cb2a5ede49acb218450174bbf77388be5c504617
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237992"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861725"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Mettre à niveau Power BI Report Server
 
@@ -30,7 +30,7 @@ Avant de mettre à niveau un serveur de rapports, nous vous recommandons de suiv
 
 ### <a name="backing-up-the-encryption-keys"></a>Sauvegarder les clés de chiffrement
 
-Lorsque vous configurez une installation de serveur de rapports pour la première fois, vous devez sauvegarder les clés de chiffrement. Vous devez également sauvegarder les clés chaque fois que vous changez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Lorsque vous configurez une installation de serveur de rapports pour la première fois, vous devez sauvegarder les clés de chiffrement. Vous devez également sauvegarder les clés chaque fois que vous changez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sauvegarder les bases de données de serveur de rapports
 
@@ -40,7 +40,7 @@ Lorsque vous configurez une installation de serveur de rapports pour la premièr
 * Utilisez le mode de récupération simple pour sauvegarder la base de données **reportservertempdb**.
 * Vous pouvez utiliser des planifications de sauvegarde différentes pour chaque base de données. La sauvegarde de la base de données **reportservertempdb** a pour seul but d’éviter d’avoir à la recréer en cas de défaillance matérielle. En cas de défaillance matérielle, il n’est pas nécessaire de récupérer les données de **reportservertempdb**, mais vous avez besoin de la structure de la table. Si vous perdez la base de données **reportservertempdb**, le seul moyen de la récupérer est de recréer la base de données du serveur de rapports. Si vous recréez la base de données **reportservertempdb**, il est important de lui donner le même nom que la base de données de serveur de rapports primaire.
 
-Pour plus d’informations sur la sauvegarde et la restauration des bases de données relationnelles SQL Server, consultez [Sauvegarde et restauration des bases de données SQL Server](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+Pour plus d’informations sur la sauvegarde et la restauration des bases de données relationnelles SQL Server, consultez [Sauvegarde et restauration des bases de données SQL Server](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Sauvegarder des fichiers de configuration
 
@@ -80,13 +80,13 @@ Une fois le serveur de rapports mis à niveau, vous devez vous assurer que les a
 
 * [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 * [Installer Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md)  
-* [Vérifier une installation de Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-* [Configurer le compte de service du serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-* [Configurer les URL du serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-* [Configurer la connexion de base de données d’un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-* [Initialiser un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-* [Configurer des connexions SSL sur un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-* [Configurer des autorisations et des comptes de service Windows](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+* [Vérifier une installation de Reporting Services](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+* [Configurer le compte de service du serveur de rapports](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+* [Configurer les URL du serveur de rapports](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+* [Configurer la connexion de base de données d’un serveur de rapports](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+* [Initialiser un serveur de rapports](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+* [Configurer des connexions SSL sur un serveur de rapports](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+* [Configurer des autorisations et des comptes de service Windows](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Prise en charge du navigateur pour Power BI Report Server](browser-support.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

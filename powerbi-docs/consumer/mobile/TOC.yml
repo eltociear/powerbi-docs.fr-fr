@@ -28,7 +28,9 @@
           href: mobile-apps-data-in-real-world-context.md
         - name: Voir vos données hors connexion dans les applications mobiles
           href: mobile-apps-offline-data.md
-        - name: Application Power BI pour la réalité mixte (Preview)
+        - name: "Power BI pour HoloLens\_2"
+          href: mobile-hololens2-app.md
+        - name: Power BI pour HoloLens (1ère génération)
           href: mobile-mixed-reality-app.md
     - name: Guides pratiques
       items:

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 498636d61f61764cfaef29db32454f55f1328243
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 373249061f39c40ec3a78ba9541575721bd60022
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293602"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859632"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Conditions préalables pour les sources de données Power BI
 Pour chaque fournisseur de données, Power BI prend en charge une version de fournisseur spécifique sur les objets. Pour plus d’informations sur les sources de données accessibles à Power BI, consultez [Sources de données](desktop-data-sources.md). Le tableau suivant décrit ces conditions.
@@ -22,9 +22,9 @@ Pour chaque fournisseur de données, Power BI prend en charge une version de fo
 | Paramètres | Fournisseur | Version minimale du fournisseur | Version minimale de la source de données | Objets de source de données pris en charge | Lien de téléchargement |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (intégré à .Net Framework) |.NET Framework 3.5 (uniquement) |SQL Server 2005+ |Tables/vues, fonctions scalaires, fonctions de table |Inclus dans .NET Framework 3.5 ou version ultérieure |
-| Access |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables/vues |[Lien de téléchargement](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
-| Excel (fichiers .xls uniquement) (voir remarque 1) |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables, feuilles |[Lien de téléchargement](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
-| Oracle (voir remarque 2) |ODP.NET |ODAC 11.2 Release 5 (11.2.0.3.20) |9.x + |Tables/vues |[Lien de téléchargement](https://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
+| Access |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables/vues |[Lien de téléchargement](./desktop-access-database-errors.md) |
+| Excel (fichiers .xls uniquement) (voir remarque 1) |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables, feuilles |[Lien de téléchargement](./desktop-access-database-errors.md) |
+| Oracle (voir remarque 2) |ODP.NET |ODAC 11.2 Release 5 (11.2.0.3.20) |9.x + |Tables/vues |[Lien de téléchargement](./desktop-connect-oracle-database.md) |
 | | System.Data.OracleClient (intégré dans .NET Framework) |.NET Framework 3.5 |9.x + |Tables/vues |Inclus dans .NET Framework 3.5 ou version ultérieure |
 | IBM DB2 |Client ADO.Net d’IBM (partie intégrante du package de pilotes de serveur de données IBM) |10.1 |9.1+ |Tables/vues |[Lien de téléchargement](https://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Connector/Net |6.6.5 |5.1 |Tables/vues, fonctions scalaires |[Lien de téléchargement](https://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
@@ -38,5 +38,4 @@ Pour chaque fournisseur de données, Power BI prend en charge une version de fo
 >[!NOTE]
 >Les fournisseurs Oracle nécessitent aussi le logiciel client Oracle (version 8.1.7+).
 > 
-> 
-
+>

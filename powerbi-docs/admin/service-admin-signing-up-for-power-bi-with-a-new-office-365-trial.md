@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 8f79037c4117baaba1a50b6fe4e728b57fad362f
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: e8a5d3b4bf8200e6e990c1bced2920383398b6cf
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252081"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857079"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 
@@ -45,7 +45,7 @@ Si vous sélectionnez **Office 365 E5**, votre essai gratuit inclura Power BI P
 
     ![Choisir de s’inscrire pour obtenir un nouveau compte](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
-4. Et c’est tout !  Vous disposez maintenant d’une adresse e-mail que vous pouvez utiliser pour vous inscrire à Power BI. Consultez [S’inscrire au service Power BI en tant que personne individuelle](../service-self-service-signup-for-power-bi.md)
+4. Et c’est tout !  Vous disposez maintenant d’une adresse e-mail que vous pouvez utiliser pour vous inscrire à Power BI. Consultez [S’inscrire au service Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md)
 
      ![Entre vos informations de contact](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank.png)
 

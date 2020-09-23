@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/22/2019
-ms.openlocfilehash: ba0cf6b450720e0564b5d476f57d91a4f070391c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eb06bc41aaaeea9790c34bb808548506963b8cb8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238061"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861840"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sécurité au niveau des lignes (SNL) dans Power BI Report Server
 
@@ -31,7 +31,7 @@ Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtr
 
     ![Appliquer un filtre de sécurité](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Cochez cette case en cas d’implémentation d’une [sécurité dynamique au niveau des lignes](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) basée sur le nom d’utilisateur ou l’ID de connexion. 
+Cochez cette case en cas d’implémentation d’une [sécurité dynamique au niveau des lignes](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) basée sur le nom d’utilisateur ou l’ID de connexion. 
 
 Pour en savoir plus, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) et le livre blanc technique[Sécurisation du modèle sémantique BI tabulaire](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -122,4 +122,3 @@ Oui. Si vous avez déjà défini des rôles et que vous leur avez attribué des 
 [Manuel de l’administrateur](admin-handbook-overview.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

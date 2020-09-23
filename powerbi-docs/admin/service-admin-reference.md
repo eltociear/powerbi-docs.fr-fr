@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: e1c95c330687131a29753359f5223e096bddab1d
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: c26d169a4c8ef876d1fe92e4967b07c982f510db
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856872"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-client-library-for-power-bi-administration"></a>Applets de commande PowerShell, API REST et bibliothèque cliente .NET pour l’administration de Power BI
 Power BI permet aux administrateurs d’écrire les tâches courantes sous forme de scripts à l’aide des applets de commande PowerShell. Il expose aussi les API REST et propose une bibliothèque cliente .NET pour développer des solutions d’administration. Cette rubrique présente une liste d’applets de commande, ainsi que les API et le point de terminaison d’API REST correspondants. Pour plus d’informations, consultez :
 
-- [Téléchargement](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) et [documentation](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps) de PowerShell
-- [Documentation](https://docs.microsoft.com/rest/api/power-bi/admin) des API REST
+- [Téléchargement](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) et [documentation](/powershell/power-bi/overview?view=powerbi-ps) de PowerShell
+- [Documentation](/rest/api/power-bi/admin) des API REST
 - [Téléchargement](https://www.nuget.org/packages/Microsoft.PowerBI.Api/) de la bibliothèque cliente .NET
 
 > Les applets de commande ci-dessous doivent être appelées avec `-Scope Organization` pour fonctionner sur le locataire pour l’administration.

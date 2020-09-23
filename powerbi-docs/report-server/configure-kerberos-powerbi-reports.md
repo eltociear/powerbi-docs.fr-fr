@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: a9dd66d726a2417c936204898eb2cdfb749fcc94
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: b60c56e7b8dfde9c46a784c5f57ca07ca9ca3fa0
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859172"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurer Kerberos pour utiliser les rapports Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -71,7 +71,7 @@ Nous devons nous assurer que RSWindowsNegotiate est répertorié et figure en pr
 
 Si vous devez modifier le fichier de configuration, vous devez arrêter et redémarrer le serveur de rapports pour vous assurer que les modifications prennent effet.
 
-Pour plus d’informations, voir [Configurer l’authentification Windows sur le serveur de rapports](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+Pour plus d’informations, voir [Configurer l’authentification Windows sur le serveur de rapports](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## <a name="spns-for-the-report-server-service-account"></a>Noms de principal du service pour le compte de service du serveur de rapports
 Nous devons ensuite nous assurer que le serveur de rapports dispose de noms de principal du service valides. Cela dépend du compte de service configuré pour le serveur de rapports.
@@ -218,4 +218,3 @@ Si cette configuration devrait fonctionner dans la plupart des cas, avec Kerbero
 [Installer Power BI Report Server](install-report-server.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

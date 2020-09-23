@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/14/2020
-ms.openlocfilehash: 2bc2e026acf0f895796158408afa6449c93ce254
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e9e2c44bdcbeabc28a95bd62bf6ba6763ae61442
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236181"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859057"
 ---
 # <a name="use-web-application-proxy-and-active-directory-federated-services---power-bi-report-server"></a>Utiliser Web Application Proxy (WAP) et Active Directory Federated Services (AD FS) - Power BI Report Server
 
@@ -40,7 +40,7 @@ Nous devons nous assurer que le nom de principal du service (SPN) est valide. Le
 
 Le nom de principal du service est un identificateur unique pour un service qui utilise l’authentification Kerberos. Assurez-vous de disposer d’un nom de principal du service HTTP approprié pour votre serveur de rapports.
 
-Pour plus d’informations sur la configuration du nom de principal du service adéquat pour votre serveur de rapports, consultez [Inscrire un nom de principal du service (SPN) pour un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
+Pour plus d’informations sur la configuration du nom de principal du service adéquat pour votre serveur de rapports, consultez [Inscrire un nom de principal du service (SPN) pour un serveur de rapports](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### <a name="enabling-negotiate-authentication"></a>Activation de l’authentification négociée
 
@@ -56,11 +56,11 @@ Pour autoriser un serveur de rapports à utiliser l’authentification Kerberos,
 </AuthenticationTypes>
 ```
 
-Pour plus d’informations, consultez [Modifier un fichier de configuration Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) et [Configurer l’authentification Windows sur un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+Pour plus d’informations, consultez [Modifier un fichier de configuration Reporting Services](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) et [Configurer l’authentification Windows sur un serveur de rapports](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## <a name="2-configure-active-directory-federation-services-ad-fs"></a>2. Configurer Active Directory Federation Services (AD FS)
 
-Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Vous pouvez effectuer cette configuration dans le Gestionnaire de serveur en sélectionnant Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
+Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Vous pouvez effectuer cette configuration dans le Gestionnaire de serveur en sélectionnant Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 Sur le serveur AD FS, à l’aide de l’application Gestion AD FS, effectuez les étapes suivantes.
 
@@ -93,7 +93,7 @@ Sur le serveur AD FS, à l’aide de l’application Gestion AD FS, effectuez 
 
 ## <a name="3-configure-web-application-proxy-wap"></a>3. Configurer le proxy d'application web (WAP)
 
-Vous devez activer le rôle Windows Proxy d’application web sur un serveur dans votre environnement. Il doit s’agir d’un serveur Windows 2016. Pour plus d’informations, consultez [Proxy d’application web dans Windows Server 2016](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) et [Publication d’applications à l’aide de la pré-authentification AD FS](https://docs.microsoft.com/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication).
+Vous devez activer le rôle Windows Proxy d’application web sur un serveur dans votre environnement. Il doit s’agir d’un serveur Windows 2016. Pour plus d’informations, consultez [Proxy d’application web dans Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) et [Publication d’applications à l’aide de la pré-authentification AD FS](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication).
 
 ### <a name="configure-constrained-delegation"></a>Configurer la délégation contrainte
 
@@ -174,4 +174,3 @@ Vous pouvez ensuite accéder à l’URL WAP publique, par exemple, `https://repo
 *[Présentation de Power BI Report Server](get-started.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

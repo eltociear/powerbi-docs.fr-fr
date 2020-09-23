@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2b1570176138a38e9856691af7d81f201b055db1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 955e32e99c4f208bbf3582c32b9e5efee95a8f3a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238520"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861932"
 ---
 # <a name="create-report-templates-for-power-bi-desktop"></a>Créer des modèles de rapport pour Power BI Desktop
 
@@ -70,7 +70,7 @@ Voilà. Il est simple de créer et d’utiliser des modèles de rapport dans Pow
 
 ## <a name="next-steps"></a>Étapes suivantes
 La découverte des **paramètres de requête** pourrait également vous intéresser :
-* [Utilisation des paramètres de requête dans Power BI Desktop](https://docs.microsoft.com/power-query/power-query-query-parameters)
+* [Utilisation des paramètres de requête dans Power BI Desktop](/power-query/power-query-query-parameters)
 
 En outre, Power BI Desktop vous permet d’effectuer des tâches très diverses. Pour plus d’informations sur ses fonctionnalités, passez en revue les ressources suivantes :
 
@@ -78,4 +78,4 @@ En outre, Power BI Desktop vous permet d’effectuer des tâches très diverse
 * [Présentation des requêtes dans Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Types de données dans Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](../transform-model/desktop-common-query-tasks.md)    
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

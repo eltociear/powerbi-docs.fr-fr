@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/28/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f241315eecdbb600a798630167913aa1be0079a3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5b2e9cc5cb07eebf3befebd1be1686fdbb0f653b
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239055"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861817"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses avec les données de toutes ces tables. Les relations entre ces tables sont nécessaires pour calculer des résultats précis et pour afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Vous pouvez cependant parfois être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -45,7 +45,7 @@ Si vous rencontrez cette erreur, vous pouvez la résoudre de différentes maniè
 * Utilisez **Supprimer les doublons** pour créer une colonne avec des valeurs uniques. L’inconvénient de cette approche est que vous pouvez perdre des informations lors de la suppression des lignes en doublon : une clé (ligne) est en effet souvent dupliquée pour une bonne raison.
 * Ajoutez une table intermédiaire composée de la liste des valeurs de clés distinctes dans le modèle, qui sera ensuite liée aux deux colonnes d’origine de la relation.
 
-Pour plus d’informations, voir [ce billet de blog](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
+Pour plus d’informations, voir [ce billet de blog](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
 
 ## <a name="edit-a-relationship"></a>Modifier une relation
@@ -65,7 +65,7 @@ L’option **Cardinalité** peut avoir une des valeurs suivantes :
 
 **Un à plusieurs (1:*)**  : Dans une relation un-à-plusieurs, la colonne d’une table n’a qu’une seule instance d’une valeur particulière, tandis que la table liée peut avoir plusieurs instances d’une valeur.
 
-**Plusieurs à plusieurs (\*:\*)**  : Avec les modèles composites, vous pouvez établir des relations plusieurs-à-plusieurs entre des tables, ce qui élimine la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations avec une cardinalité plusieurs-à-plusieurs](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Plusieurs à plusieurs (\*:\*)**  : Avec les modèles composites, vous pouvez établir des relations plusieurs-à-plusieurs entre des tables, ce qui élimine la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations avec une cardinalité plusieurs-à-plusieurs](./desktop-many-to-many-relationships.md). 
 
 Pour plus d’informations sur le changement de cardinalité, consultez [Présentation des options supplémentaires](#understanding-additional-options).
 
@@ -358,4 +358,3 @@ Nous pouvons changer la relation active, de façon à remplacer **OpenedBy** par
 Parfois, votre modèle comporte plusieurs tables avec des relations complexes. La vue **Relation** de Power BI Desktop montre toutes les relations de votre modèle, leur direction et leur cardinalité, dans un diagramme personnalisable et facile à comprendre. 
 
 Pour plus d’informations, consultez [Utiliser la vue Relation dans Power BI Desktop](desktop-relationship-view.md).
-

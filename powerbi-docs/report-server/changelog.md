@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: 1263de975319b7b0e2ef5123d985fa50a126d680
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459597"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859241"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Correction d’un problème où l’actualisation échouait lorsque la correspondance approximative était utilisée pour fusionner les requêtes.
     - *Version : 1.8.7450.37410 (Build 15.0.1103.227), Date de publication : 27 mai 2020*
          - Fonctionnalités
-            -  Ajout de la prise en charge de la personnalisation de la taille du pool de connexions du catalogue (pour plus d’informations, consultez [paramètre MaxCatalogConnectionPoolSizePerProcess](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service)).
+            -  Ajout de la prise en charge de la personnalisation de la taille du pool de connexions du catalogue (pour plus d’informations, consultez [paramètre MaxCatalogConnectionPoolSizePerProcess](/sql/reporting-services/report-server/rsreportserver-config-configuration-file#bkmk_service)).
             -  Comportement amélioré lors de l’affichage d’un rapport pendant une opération d’actualisation.
         - Mises à jour de sécurité
         - Corrections de bogues
@@ -65,7 +65,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
            -  Correctif pour les rapports de Power BI qui ne sont pas téléchargés pour certaines sources de données
            -  Correctif pour l’emplacement de téléchargement du lien de Power BI Report Server à partir du portail
            -  Correctif pour le rendu Excel de DynamicImageDPI
-           -  Correctif des connexions Oracle utilisant une culture de thread incorrecte dans certains scénarios multiutilisateurs (pour plus d’informations, consultez [Documentation de UseInstalledUICulture](https://docs.microsoft.com/power-bi/report-server/connect-data-sources))
+           -  Correctif des connexions Oracle utilisant une culture de thread incorrecte dans certains scénarios multiutilisateurs (pour plus d’informations, consultez [Documentation de UseInstalledUICulture](./connect-data-sources.md))
            -  Correctif pour la valeur par défaut CustomHeaders provoquant des échecs d’incorporation de rapports
            -  Correctif pour les noms de paramètres SQL générés de manière incorrecte dans certains cas
     - *Version : 1.6.7327.3007 (build 15.0.1102.759), date de publication : 23 janvier 2020*
@@ -351,7 +351,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 
     - *Build 14.0.600.305, publiée : 19 septembre 2017*  
         - Résolutions de bogues
-            - Mise à jour vers la dernière version [du contrôle web Bing Cartes](https://msdn.microsoft.com/library/mt712542.aspx)
+            - Mise à jour vers la dernière version [du contrôle web Bing Cartes](/bingmaps/v8-web-control/)
 
     - *Build 14.0.600.301, publiée : 11 juillet 2017*
         - Résolutions de bogues
@@ -373,6 +373,6 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

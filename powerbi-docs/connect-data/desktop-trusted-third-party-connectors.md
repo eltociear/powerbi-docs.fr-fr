@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05db20b2f83f10409339fad949874fc1076a6b98
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06b117a271671092a94aa8e7994269344b444178
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285966"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859609"
 ---
 # <a name="trusted-third-party-connectors"></a>Connecteurs tiers de confiance
 
@@ -24,7 +24,7 @@ Dans Power BI, nous recommandons généralement de conserver le paramètre « S
 
 Le développeur d’un connecteur donné peut le signer à l’aide d’un certificat et vous fournir les informations dont vous avez besoin pour le charger de façon sécurisée sans alléger vos paramètres de sécurité.
 
-Si vous souhaitez en savoir plus sur les paramètres de sécurité, cliquez [ici](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Si vous souhaitez en savoir plus sur les paramètres de sécurité, cliquez [ici](./desktop-connector-extensibility.md).
 
 ## <a name="using-the-registry-to-trust-third-party-connectors"></a>Utilisation du Registre pour approuver des connecteurs tiers
 
@@ -46,4 +46,4 @@ Si vous avez correctement suivi les instructions et que le développeur vous a f
 
 ## <a name="how-to-sign-connectors"></a>Comment signer des connecteurs
 
-Si vous avez un connecteur que vous ou un développeur devez signer, vous pouvez consulter la documentation Power Query [ici](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Si vous avez un connecteur que vous ou un développeur devez signer, vous pouvez consulter la documentation Power Query [ici](/power-query/handlingconnectorsigning).

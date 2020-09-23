@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 264eb0c9079e1f54d53aeb41a1ef73016c2bf1b4
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73874307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859271"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Prise en charge du navigateur pour Power BI Report Server
 Découvrez les versions de navigateur prises en charge pour la gestion et l’affichage de Power BI Report Server et les commandes de la visionneuse de rapports.
@@ -91,12 +91,12 @@ Your browser does not support scripts or has been configured to not allow script
  Si vous décidez de visionner le rapport sans prise en charge des scripts, le rapport est rendu en HTML sans les fonctionnalités de visionneuse de rapports telles que la barre d’outils Rapports et l’Explorateur de documents.
 
 > [!NOTE]
-> La barre d’outils Rapports fait partie du composant Visionneuse HTML. Par défaut, la barre d’outils apparaît en haut de chaque rapport rendu dans une fenêtre de navigateur. La visionneuse de rapports offre des fonctionnalités telles que la recherche d’informations dans le rapport, le défilement d’une page spécifique et l’ajustement de la taille de page à des fins d’affichage. Pour plus d’informations sur la barre d’outils Rapports ou la Visionneuse HTML, voir [Visionneuse HTML et barre d’outils Rapports](https://docs.microsoft.com/sql/reporting-services/html-viewer-and-the-report-toolbar).
+> La barre d’outils Rapports fait partie du composant Visionneuse HTML. Par défaut, la barre d’outils apparaît en haut de chaque rapport rendu dans une fenêtre de navigateur. La visionneuse de rapports offre des fonctionnalités telles que la recherche d’informations dans le rapport, le défilement d’une page spécifique et l’ajustement de la taille de page à des fins d’affichage. Pour plus d’informations sur la barre d’outils Rapports ou la Visionneuse HTML, voir [Visionneuse HTML et barre d’outils Rapports](/sql/reporting-services/html-viewer-and-the-report-toolbar).
 > 
 > 
 
 ## <a name="browser-support-for-report-viewer-web-server-controls-in-visual-studio"></a>Prise en charge du navigateur pour les contrôles de serveur web de visionneuse de rapports dans Visual Studio
-Le contrôle de serveur web de visionneuse de rapports est utilisé pour incorporer des fonctionnalités de rapport dans une application web ASP.NET. Pour plus d’informations sur la façon d’obtenir le contrôle Visionneuse de rapports, voir [Intégration de Reporting Services à l’aide de contrôles de visionneuse de rapports - Prise en main](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+Le contrôle de serveur web de visionneuse de rapports est utilisé pour incorporer des fonctionnalités de rapport dans une application web ASP.NET. Pour plus d’informations sur la façon d’obtenir le contrôle Visionneuse de rapports, voir [Intégration de Reporting Services à l’aide de contrôles de visionneuse de rapports - Prise en main](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 Utilisez un navigateur dans lequel la prise en charge des scripts est activée. Si le navigateur ne peut pas exécuter de scripts, vous ne pouvez pas afficher le rapport.
 
@@ -114,7 +114,6 @@ Utilisez un navigateur dans lequel la prise en charge des scripts est activée. 
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

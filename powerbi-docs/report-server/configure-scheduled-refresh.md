@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
-ms.openlocfilehash: 3814c0532d94af3265bd608fc7837df982f9b6c4
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 7bc3b77a8badafe1c9660af347a74214176690ac
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236079"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859034"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Comment configurer une actualisation planifiée de rapport Power BI
 Pour actualiser les données de votre rapport Power BI dans Power BI Report Server, vous devez créer un plan d’actualisation planifiée. Vous créez ce plan dans la zone *Gérer* d’un rapport Power BI sur le serveur de rapports.
@@ -21,7 +21,7 @@ Pour actualiser les données de votre rapport Power BI dans Power BI Report Serv
 ![Actualisation planifiée réussie d’un rapport Power BI](media/configure-scheduled-refresh/scheduled-refresh-success.png)
 
 ## <a name="configure-data-source-credentials"></a>Configurer les informations d’identification de la source de données
-Vous devez disposer des autorisations nécessaires pour créer un plan d’actualisation planifiée. Les autorisations sont définies dans les définitions de rôles du serveur de rapports. Pour plus d’informations, consultez [Définitions de rôles - Rôles prédéfinis](https://docs.microsoft.com/sql/reporting-services/security/role-definitions-predefined-roles) dans la documentation de SQL Server Reporting Services.
+Vous devez disposer des autorisations nécessaires pour créer un plan d’actualisation planifiée. Les autorisations sont définies dans les définitions de rôles du serveur de rapports. Pour plus d’informations, consultez [Définitions de rôles - Rôles prédéfinis](/sql/reporting-services/security/role-definitions-predefined-roles) dans la documentation de SQL Server Reporting Services.
 
 Avant de créer un plan d’actualisation des données planifiée, vous devez définir les informations d’identification pour **chaque source de données** utilisée dans votre rapport Power BI.
 
@@ -86,9 +86,8 @@ Affichez l’état d’un plan d’actualisation planifiée dans le portail web.
 La page web doit être actualisée pour afficher l’état actuel. L’état ne changera pas automatiquement.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour en savoir plus sur la création et la modification de planifications, voir [Créer, modifier et supprimer des planifications](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
+Pour en savoir plus sur la création et la modification de planifications, voir [Créer, modifier et supprimer des planifications](/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
 Pour plus d’informations sur la façon de résoudre les problèmes d’actualisation planifiée, voir [Résoudre les problèmes d’actualisation planifiée dans Power BI Report Server](scheduled-refresh-troubleshoot.md).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

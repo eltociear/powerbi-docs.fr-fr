@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
-ms.openlocfilehash: 725890e3650ff05e0b90e7678bb83e0bc5d01050
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 941bd2adc63a06089ddf4fb79752557b8c688f71
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86263001"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856803"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -112,7 +112,7 @@ Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pou
 
 ### <a name="reports-and-kpis-on-the-power-bi-report-server-and-reporting-services-web-portals"></a>Rapports et indicateurs de performance clés sur les portails web Power BI Report Server et Reporting Services
 * [Consultez les rapports et indicateurs de performance clés sur le portail web](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) dans l’application mobile Power BI pour appareils Android.
-* Créez des [indicateurs de performance clés sur le portail web](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
+* Créez des [indicateurs de performance clés sur le portail web](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Créez des [rapports dans Power BI Desktop et publiez-les sur le portail web Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md).
 
 ### <a name="see-also"></a>Voir aussi

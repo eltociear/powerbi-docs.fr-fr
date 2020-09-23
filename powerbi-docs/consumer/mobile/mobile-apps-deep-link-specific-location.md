@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 2590e5fad227027f7cc2fddf2f93a18b92f39ae3
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: b414457c15155053ff6d316d1147536ec9ca5a8e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85393778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90856642"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez utiliser des liens pour accéder directement à certains éléments dans Power BI : Rapport, Tableau de bord et Vignette.
@@ -100,7 +100,7 @@ https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes h
 
 À l’intérieur de Power BI, les liens des applications mobiles fonctionnent exactement comme dans le service Power BI.
 
-Si vous souhaitez ajouter à votre rapport un lien qui pointe vers un autre élément Power BI, vous pouvez copier l’URL de cet élément à partir de la barre d’adresse du navigateur. Découvrez comment [ajouter un lien hypertexte à une zone de texte](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+Si vous souhaitez ajouter à votre rapport un lien qui pointe vers un autre élément Power BI, vous pouvez copier l’URL de cet élément à partir de la barre d’adresse du navigateur. Découvrez comment [ajouter un lien hypertexte à une zone de texte](../../create-reports/service-add-hyperlink-to-text-box.md).
 
 ## <a name="use-report-url-with-filter"></a>Utiliser une URL de rapport comprenant un filtre
 Tout comme le service Power BI, les applications Power BI Mobile prennent en charge les URL de rapport qui contiennent un paramètre de requête de type Filtre. Vous pouvez ouvrir un rapport dans l’application Power BI Mobile et le filtrer pour obtenir un état spécifique. Par exemple, cette URL ouvre le rapport des ventes et le filtre par secteur.
@@ -109,7 +109,7 @@ Tout comme le service Power BI, les applications Power BI Mobile prennent en c
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-Découvrez comment [créer des paramètres de requête pour filtrer les rapports](https://docs.microsoft.com/power-bi/service-url-filters).
+Découvrez comment [créer des paramètres de requête pour filtrer les rapports](../../collaborate-share/service-url-filters.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vos commentaires nous aident à développer les futurs processus d’implémentation. N’oubliez pas de voter pour les fonctionnalités que vous aimeriez voir dans les applications mobiles Power BI. 
@@ -118,4 +118,3 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 * Suivez @MSPowerBI sur Twitter
 * Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
-
