@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2ae57fb5a3d2ff38a29e0c1e3c24af23582af43a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222257"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860023"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Utiliser la mise en forme conditionnelle dans les tables 
 
@@ -181,9 +181,9 @@ Voici quelques éléments à prendre en considération quand vous utilisez la mi
 
 - La mise en forme conditionnelle s’applique seulement aux valeurs des visuels Table ou Matrice et ne s’applique à aucune ligne de sous-total, de total général ou **Total**. 
 - Les tableaux qui ne présentent aucun regroupement s’affichent sous forme de ligne unique qui ne prend pas en charge la mise en forme conditionnelle.
-- Si vos données contiennent des valeurs *NAN*, vous ne pouvez pas appliquer une mise en forme de dégradé avec des valeurs maximales/minimales ni une mise en forme basée sur des règles de pourcentage. NAN signifie « n’est pas un nombre » ; cette erreur est le plus souvent causée par une division par zéro. Vous pouvez utiliser la [fonction DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) pour éviter ces erreurs.
+- Si vos données contiennent des valeurs *NAN*, vous ne pouvez pas appliquer une mise en forme de dégradé avec des valeurs maximales/minimales ni une mise en forme basée sur des règles de pourcentage. NAN signifie « n’est pas un nombre » ; cette erreur est le plus souvent causée par une division par zéro. Vous pouvez utiliser la [fonction DIVIDE() DAX](/dax/divide-function-dax) pour éviter ces erreurs.
 - La mise en forme conditionnelle nécessite l’application d’une agrégation ou d’une mesure à la valeur. C’est la raison pour laquelle vous voyez « Premier » ou « Dernier » dans l’exemple **Couleur par valeur**. Si vous générez votre rapport à partir d’un cube multidimensionnel Analysis Services, vous ne pourrez pas utiliser d’attribut pour la mise en forme conditionnelle, sauf si le propriétaire du cube a créé une mesure qui fournit la valeur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur la mise en forme des couleurs, consultez [Trucs et astuces pour la mise en forme des couleurs dans Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)  
+Pour plus d’informations sur la mise en forme des couleurs, consultez [Trucs et astuces pour la mise en forme des couleurs dans Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)

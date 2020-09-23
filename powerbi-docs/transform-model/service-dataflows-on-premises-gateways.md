@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9a3e393fa02d0bccc3e966c467b41883e72ae05e
-ms.sourcegitcommit: cfcde5ff2421be35dc1efc9e71ce2013f55ec78f
+ms.openlocfilehash: 019a881b384fafa51a8b1886b450f18f72bf640e
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459643"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859954"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Utilisation de flux de données avec des sources de données locales
 
@@ -86,4 +86,4 @@ Pour plus d’informations sur Power Query et l’actualisation planifiée, vous
 * [Configuration d’une actualisation planifiée](../connect-data/refresh-scheduled-refresh.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
-* [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Vue d’ensemble du modèle CMD (Common Data Model) ](/powerapps/common-data-model/overview)

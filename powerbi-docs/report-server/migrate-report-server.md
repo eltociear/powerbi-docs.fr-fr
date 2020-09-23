@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/17/2019
-ms.openlocfilehash: 898e2bc688e9d3e819511288484f07511c809fb8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 650984e7bd7effca8fff222f828eaa9c7e42dce1
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238022"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860136"
 ---
 # <a name="migrate-a-report-server-installation"></a>Migrer une installation de serveur de rapports
 
@@ -97,6 +97,6 @@ Le processus de migration d’un serveur Power BI Report Server est le même qu
 
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
-[Script avec l’utilitaire rs.exe et le service web](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
+[Script avec l’utilitaire rs.exe et le service web](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

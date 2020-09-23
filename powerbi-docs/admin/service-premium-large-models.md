@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 7ea6601514d77f9f7e2e416b358194e871f6445b
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 4f0a34f990613ab57a95d1f299392d77c7c1f625
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854664"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Grands modèles dans Power BI Premium (préversion)
 
@@ -94,7 +94,7 @@ Vous devez prendre en compte l’impact de l’éviction sur les grands modèles
 
 ## <a name="checking-dataset-size"></a>Vérification de la taille du jeu de données
 
-Après avoir chargé les données d’historique, vous pouvez utiliser [SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) par le biais du [point de terminaison XMLA](service-premium-connect-tools.md) pour vérifier la taille estimée du jeu de données dans la fenêtre des propriétés du modèle.
+Après avoir chargé les données d’historique, vous pouvez utiliser [SSMS](/sql/ssms/download-sql-server-management-studio-ssms) par le biais du [point de terminaison XMLA](service-premium-connect-tools.md) pour vérifier la taille estimée du jeu de données dans la fenêtre des propriétés du modèle.
 
 ![Taille estimée du jeu de données](media/service-premium-large-models/estimated-dataset-size.png)
 
@@ -122,7 +122,7 @@ Gardez à l’esprit les restrictions suivantes lors de l’utilisation de grand
 
 ## <a name="availability-in-regions"></a>Disponibilité dans les régions
 
-Les modèles volumineux dans Power BI sont disponibles uniquement dans certaines régions Azure qui prennent en charge [le stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
+Les modèles volumineux dans Power BI sont disponibles uniquement dans certaines régions Azure qui prennent en charge [le stockage Azure Premium Files](/azure/storage/files/storage-files-planning#storage-tiers).
 
 La liste suivante répertorie les régions où les grands modèles dans Power BI sont disponibles. Les régions qui ne sont pas dans la liste suivante ne sont pas prises en charge pour les modèles volumineux :
 
@@ -155,7 +155,7 @@ La liste suivante répertorie les régions où les grands modèles dans Power BI
 
 Les liens suivants fournissent des informations qui peuvent être utiles pour travailler avec des modèles volumineux :
 
-* [Stockage Azure Premium Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
+* [Stockage Azure Premium Files](/azure/storage/files/storage-files-planning#storage-tiers)
 * [Configurer la prise en charge multigéographique pour Power BI Premium](service-admin-premium-multi-geo.md)
 * [Apporter vos propres clés de chiffrement pour Power BI](service-encryption-byok.md)
 * [Fonctionnement des capacités](service-premium-what-is.md#how-capacities-function)

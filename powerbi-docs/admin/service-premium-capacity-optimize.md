@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4d03419105244b7fddafea3b26b69e4f4f5f874c
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ae52e9eb2d018e68f7b84bc412797c25825a8871
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83134040"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854848"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimiser les capacités Premium
 
@@ -186,7 +186,7 @@ Au niveau de la couche du modèle :
 
 - Les conceptions de requêtes Power Query peuvent réduire ou supprimer des transformations complexes, et en particulier celles fusionnant des sources de données différentes (les entrepôts de données y parviennent pendant leur étape d’extraction-transformation-chargement). En outre, en veillant à ce que les niveaux de confidentialité appropriés soient définis, il est possible d’éviter de demander à Power BI de charger des résultats complets pour produire un résultat combiné entre des requêtes.
 - La structure du modèle détermine les données à charger et a un impact direct sur la taille du modèle. Il peut être conçu pour éviter le chargement de données inutiles en supprimant des colonnes ou des lignes (notamment des données historiques) ou en chargeant des données résumées (au détriment du chargement de données détaillées). Une réduction considérable de la taille peut être obtenue en supprimant les colonnes de cardinalité élevée (en particulier les colonnes de texte) qui ne sont pas stockées ou compressées très efficacement.
-- Les performances des requêtes de modèle peuvent être améliorées en configurant des relations à sens unique, à moins qu’il y ait une raison impérieuse d’autoriser le filtrage bidirectionnel. Envisagez également d’utiliser la fonction [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function) au lieu du filtrage bidirectionnel.
+- Les performances des requêtes de modèle peuvent être améliorées en configurant des relations à sens unique, à moins qu’il y ait une raison impérieuse d’autoriser le filtrage bidirectionnel. Envisagez également d’utiliser la fonction [CROSSFILTER](/dax/crossfilter-function) au lieu du filtrage bidirectionnel.
 - Les tables d’agrégation peuvent obtenir des réponses rapides aux requêtes en chargeant des données prérésumées, mais cela augmente la taille du modèle et engendre des temps d’actualisation plus longs. En règle générale, les tables d’agrégation doivent être réservées pour les modèles très volumineux ou les conceptions de modèles composites.
 - Les tables et les colonnes calculées augmentent la taille du modèle et entraînent des temps d’actualisation plus longs. En règle générale, une plus petite taille de stockage et un temps d’actualisation plus rapide peuvent être obtenus lorsque les données sont matérialisées ou calculées dans la source de données. Si ce n’est pas possible, l’utilisation des colonnes personnalisées Power Query peut offrir une meilleure compression du stockage.
 - Il peut être possible de paramétrer des expressions DAX pour les mesures et les règles RLS, possiblement en réécrivant la logique afin d’éviter des formules coûteuses

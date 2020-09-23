@@ -9,12 +9,12 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: a1d62ad9cd8475e217a0ae051919792970dbb34d
-ms.sourcegitcommit: b66c913a50a5100082e1c8ff7cd1c4f76f514fe7
+ms.openlocfilehash: 4b2b29effb1d9b4b2d8e743990dd3dd0d27470f8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84219593"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859839"
 ---
 # <a name="what-is-power-bi-report-server"></a>Présentation de Power BI Report Server
 
@@ -38,9 +38,9 @@ Le point d’entrée de Power BI Report Server est un portail web sécurisé aff
 
 ![Portail web de Power BI Report Server web](media/get-started/web-portal.png)
 
-Selon vos autorisations, vous pouvez gérer le contenu dans le portail web. Vous pouvez planifier le traitement des rapports, accéder à des rapports à la demande et vous abonner à des rapports publiés. Vous pouvez également [personnaliser](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) votre portail web. 
+Selon vos autorisations, vous pouvez gérer le contenu dans le portail web. Vous pouvez planifier le traitement des rapports, accéder à des rapports à la demande et vous abonner à des rapports publiés. Vous pouvez également [personnaliser](/sql/reporting-services/branding-the-web-portal) votre portail web. 
 
-En savoir plus sur le [portail web Power BI Report Server](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
+En savoir plus sur le [portail web Power BI Report Server](/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Rapports Power BI
 Vous créez des rapports Power BI (.pbix) avec la version Power BI Desktop optimisée pour le serveur de rapports. Puis vous publiez et affichez ces rapports dans le portail web de votre propre environnement.
@@ -56,17 +56,17 @@ Les rapports paginés (.rdl) sont des rapports de style document avec des visual
 
 ![Rapports paginés dans Power BI Report Server](media/get-started/paginated-reports.png)
 
-Vous pouvez créer des rapports paginés à l’aide du [Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) ou du Concepteur de rapports dans [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+Vous pouvez créer des rapports paginés à l’aide du [Générateur de rapports](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) ou du Concepteur de rapports dans [SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## <a name="reporting-services-mobile-reports"></a>Rapports mobiles Reporting Services
 Les rapports mobiles se connectent aux données locales, avec une disposition réactive qui s’adapte aux différents appareils et aux différentes façons dont vous les conservez. Vous les créez dans l’Éditeur de rapports mobiles Microsoft SQL Server.
 
-En savoir plus sur les [Rapports mobiles Reporting Services](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
+En savoir plus sur les [Rapports mobiles Reporting Services](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
 
 ## <a name="report-server-programming-features"></a>Fonctionnalités de programmation de Report Server
 Tirez parti des fonctionnalités de programmation de Power BI Report Server pour étendre et personnaliser vos rapports avec des API pour intégrer ou étendre le traitement des données et des rapports dans des applications personnalisées.
 
-Plus de [Documentation pour les développeurs de Reporting Services](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
+Plus de [Documentation pour les développeurs de Reporting Services](/sql/reporting-services/reporting-services-developer-documentation).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Installer Power BI Report Server](install-report-server.md)  

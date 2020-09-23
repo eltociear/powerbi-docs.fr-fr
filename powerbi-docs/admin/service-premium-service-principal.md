@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b0f63d200a94cb7e6524602203864281efe51c0
-ms.sourcegitcommit: 1f56cdfc05801ffaf41e3b68dc1eb02142acdab3
+ms.openlocfilehash: e4f2db2c5b0220215c9c71cc62349c2255cf046d
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854618"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser des tâches d’espace de travail et de jeu de données avec des principaux de service
 
@@ -40,14 +40,14 @@ Pour effectuer des opérations d’écriture, la **charge de travail des jeux de
 
 Les principaux de service sont créés en tant qu’inscription d’application dans le portail Azure ou à l’aide de PowerShell. Lors de la création de votre principal de service, veillez à copier et à enregistrer séparément le nom de l’application, l’ID d’application (client), l’ID d’annuaire (locataire) et le secret client. Pour découvrir les étapes de création d’un principal de service, consultez :
 
-[Créer un principal de service - Portail Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
-[Créer un principal de service - PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+[Créer un principal de service - Portail Azure](/azure/active-directory/develop/howto-create-service-principal-portal)   
+[Créer un principal de service - PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ## <a name="create-an-azure-ad-security-group"></a>Créer un groupe de sécurité Azure AD
 
 Par défaut, les principaux de service ont accès à tous les paramètres de locataire pour lesquels ils sont activés. En fonction de vos paramètres d’administrateur, l’accès peut comprendre des groupes de sécurité spécifiques ou toute l’organisation.
 
-Pour restreindre l’accès du principal de service à des paramètres de locataire spécifiques, vous pouvez autoriser l’accès à des groupes de sécurité spécifiques. Vous pouvez également créer un groupe de sécurité dédié pour les principaux de service et l’exclure des paramètres d’abonné souhaités. Pour découvrir les étapes de création d’un groupe de sécurité et d’ajout d’un principal de service, consultez [Créer un groupe de base et ajouter des membres avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+Pour restreindre l’accès du principal de service à des paramètres de locataire spécifiques, vous pouvez autoriser l’accès à des groupes de sécurité spécifiques. Vous pouvez également créer un groupe de sécurité dédié pour les principaux de service et l’exclure des paramètres d’abonné souhaités. Pour découvrir les étapes de création d’un groupe de sécurité et d’ajout d’un principal de service, consultez [Créer un groupe de base et ajouter des membres avec Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## <a name="enable-service-principals"></a>Activer des principaux de service
 
@@ -59,7 +59,7 @@ Dans le **portail d’administration** de Power BI > **Paramètres du locataire*
 
 ## <a name="workspace-access"></a>Accès à l’espace de travail
 
-Pour que votre principal de service dispose des autorisations nécessaires pour effectuer des opérations de jeu de données et d’espace de travail Premium, vous devez l’ajouter en tant que membre ou administrateur de l’espace de travail. L’utilisation de l’accès à l’espace de travail dans le service Power BI est décrite ici, mais vous pouvez également utiliser l’[API REST Ajouter un groupe d’utilisateurs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+Pour que votre principal de service dispose des autorisations nécessaires pour effectuer des opérations de jeu de données et d’espace de travail Premium, vous devez l’ajouter en tant que membre ou administrateur de l’espace de travail. L’utilisation de l’accès à l’espace de travail dans le service Power BI est décrite ici, mais vous pouvez également utiliser l’[API REST Ajouter un groupe d’utilisateurs](/rest/api/power-bi/groups/addgroupuser).
 
 1. Dans le service Power BI, pour un espace de travail, sélectionnez **Plus** > **Accès à l’espace de travail**.
 
@@ -96,7 +96,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### <a name="amo-and-adomd"></a>AMO et ADOMD
 
-Quand vous vous connectez à des applications clientes ou à des applications web, les packages installables des [bibliothèques de client AMO et ADOMD](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juin 2020) issus de NuGet prennent en charge les principaux de service dans les chaînes de connexion à l’aide de la syntaxe `app:AppID`, et du mot de passe ou de `cert:thumbprint`.
+Quand vous vous connectez à des applications clientes ou à des applications web, les packages installables des [bibliothèques de client AMO et ADOMD](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (juin 2020) issus de NuGet prennent en charge les principaux de service dans les chaînes de connexion à l’aide de la syntaxe `app:AppID`, et du mot de passe ou de `cert:thumbprint`.
 
 Dans l’exemple suivant, `appID` et `password` sont utilisés pour effectuer une opération d’actualisation d’une base de données model :
 
@@ -115,6 +115,6 @@ db.Model.SaveChanges();
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md)  
-[Azure Automation](https://docs.microsoft.com/azure/automation)  
-[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
-[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)
+[Azure Automation](/azure/automation)  
+[Azure Logic Apps](/azure/logic-apps/)  
+[API REST Power BI](/rest/api/power-bi/)

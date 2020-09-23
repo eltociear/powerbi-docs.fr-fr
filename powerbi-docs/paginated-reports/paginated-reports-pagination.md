@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 03b361c56bd545036a8d706ae01e2bfa2ec30222
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: bce23ecdc99f6428ecefc28580e3ae0ec05fac6a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921237"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90859701"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Pagination des rapports Power BI
 
@@ -34,7 +34,7 @@ ms.locfileid: "78921237"
   
  Par défaut, la taille de page est de 8,5 x 11 pouces, mais vous pouvez la modifier dans le volet **Propriétés du rapport** ou la boîte de dialogue **Mise en page**, ou en changeant les valeurs des propriétés HauteurPage et LargeurPage dans le volet **Propriétés**. La taille de la page ne s’ajuste pas en fonction du contenu du corps du rapport. Si vous souhaitez que le rapport s’affiche sur une seule page, tout le contenu du corps du rapport doit tenir sur la page physique. Si ce n’est pas le cas et si vous utilisez le format avec sauts de page manuels, le rapport nécessite des pages supplémentaires. Si le corps du rapport dépasse le bord droit de la page physique, un saut de page horizontal est inséré. Si le corps du rapport dépasse le bord inférieur de la page physique, un saut de page vertical est inséré.  
   
- Si vous souhaitez modifier la taille de page physique définie dans le rapport, vous pouvez la spécifier à l’aide des paramètres d’informations sur l’appareil correspondant au convertisseur que vous utilisez pour exporter le rapport. Pour une liste complète, voir [Paramètres d’informations sur l’appareil pour les extensions de rendu](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) dans la documentation de SQL Server Reporting Services.  
+ Si vous souhaitez modifier la taille de page physique définie dans le rapport, vous pouvez la spécifier à l’aide des paramètres d’informations sur l’appareil correspondant au convertisseur que vous utilisez pour exporter le rapport. Pour une liste complète, voir [Paramètres d’informations sur l’appareil pour les extensions de rendu](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) dans la documentation de SQL Server Reporting Services.  
   
 ### <a name="margins"></a>Marges
 
@@ -77,13 +77,13 @@ ms.locfileid: "78921237"
   
  Vous pouvez utiliser des constantes et des expressions simples ou complexes pour définir la valeur des propriétés Disabled et ResetPageNumber. En revanche, vous ne pouvez pas utiliser d’expression avec la propriété BreakLocation. Pour plus d’informations sur l’écriture et l’utilisation d’expressions, voir [Expressions dans le Générateur de rapports Power BI](report-builder-expressions.md).  
   
- Dans votre rapport, vous pouvez écrire des expressions qui référencent les noms ou numéros de page actuels à l’aide de la collection **Globals**. Pour plus d’informations, voir [Références à des champs Globals et Users prédéfinis](https://docs.microsoft.com/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder?view=sql-server-2017) dans la documentation de Générateur de rapports et de Reporting Services.
+ Dans votre rapport, vous pouvez écrire des expressions qui référencent les noms ou numéros de page actuels à l’aide de la collection **Globals**. Pour plus d’informations, voir [Références à des champs Globals et Users prédéfinis](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) dans la documentation de Générateur de rapports et de Reporting Services.
   
 ### <a name="naming-excel-worksheet-tabs"></a>Attribution de noms aux onglets de feuille de calcul Excel
 
  Ces propriétés sont utiles lorsque vous exportez des rapports vers des classeurs Excel. Utilisez la propriété InitialPage pour spécifier un nom par défaut pour l’onglet de feuille de calcul lorsque vous exportez le rapport, et utilisez des sauts de page et la propriété PageName pour attribuer des noms différents à chaque feuille de calcul. Chaque nouvelle page de rapport définie par un saut de page est exportée vers une feuille de calcul distincte dont le nom est la valeur de la propriété PageName. Si la valeur de la propriété PageName est vide, mais que le rapport a un nom de page initial, toutes les feuilles de calcul dans le classeur Excel utilisent ce nom.  
   
- Pour plus d’informations sur le fonctionnement de ces propriétés lors de l’exportation de rapports vers Excel, voir [Exportation vers Microsoft Excel](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) dans la documentation de Générateur de rapports et de Reporting Services.  
+ Pour plus d’informations sur le fonctionnement de ces propriétés lors de l’exportation de rapports vers Excel, voir [Exportation vers Microsoft Excel](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) dans la documentation de Générateur de rapports et de Reporting Services.  
   
 ## <a name="next-steps"></a>Étapes suivantes
 

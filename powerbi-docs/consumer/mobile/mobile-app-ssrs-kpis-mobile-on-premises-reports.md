@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 2327349928b481e51217b360587470f7f44b78d1
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2f6d02d6128a2896a19d87f30f46f26f101385f6
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233260"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860989"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
 
@@ -32,8 +32,8 @@ S’applique à :
 **Les applications mobiles sont l’emplacement où vous affichez du contenu Power BI, pas celui où vous le créez.**
 
 * Vous et d’autres créateurs de rapports dans votre organisation [créez des rapports Power BI avec Power BI Desktop, puis les publiez sur le portail web de Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md). 
-* Vous pouvez également créer des [indicateurs de performance clés dans le portail web](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services), les organiser en dossiers et marquer vos favoris afin de pouvoir les retrouver aisément. 
-* [Créez des rapports mobiles Reporting Services](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) avec l’éditeur de rapports mobiles SQL Server 2016 Enterprise Edition et publiez-les sur le [portail web Reporting Services](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).  
+* Vous pouvez également créer des [indicateurs de performance clés dans le portail web](/sql/reporting-services/working-with-kpis-in-reporting-services), les organiser en dossiers et marquer vos favoris afin de pouvoir les retrouver aisément. 
+* [Créez des rapports mobiles Reporting Services](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) avec l’éditeur de rapports mobiles SQL Server 2016 Enterprise Edition et publiez-les sur le [portail web Reporting Services](/sql/reporting-services/web-portal-ssrs-native-mode).  
 
 Ensuite, dans les applications mobiles Power BI, connectez-vous à jusqu’à jusqu’à cinq serveurs de rapports pour afficher les rapports et indicateurs de performance clés Power BI organisés dans des dossiers ou regroupés en favoris. 
 

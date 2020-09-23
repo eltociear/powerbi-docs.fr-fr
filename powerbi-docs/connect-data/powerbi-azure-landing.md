@@ -9,12 +9,12 @@ ms.author: willthom
 author: MI77
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: dca45ed9719dfa8d6f17001407835282049382ab
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 4278b59576466942991fef710f8864b5c0a1391c
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347467"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860759"
 ---
 # <a name="power-bi-for-microsoft-azure-users"></a>Power BI pour les utilisateurs Microsoft Azure 
 
@@ -74,9 +74,9 @@ Vous êtes plus consommateur de Power BI ? Bienvenue à vous aussi. Nous vous s
                                     <div class="cardText"> 
                                           <h3>Analyser des données provenant d’autres services Azure</h3> 
                                           <p></p>
-                                                <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-power-bi-dashboard">Se connecter à Azure Stream Analytics</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/cosmos-db/powerbi-visualize">Visualiser des données provenant de Cosmos DB</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/data-explorer/visualize-power-bi">Visualiser des données provenant d’Azure Data Explorer</a>
+                                                <a href="/azure/stream-analytics/stream-analytics-power-bi-dashboard">Se connecter à Azure Stream Analytics</a><br/> 
+                                                <a href="/azure/cosmos-db/powerbi-visualize">Visualiser des données provenant de Cosmos DB</a><br/> 
+                                                <a href="/azure/data-explorer/visualize-power-bi">Visualiser des données provenant d’Azure Data Explorer</a>
                                     </div> 
                               </div> 
                         </div> 

@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 40f1e0938f54fe55abf8148e12f8842041b42c3d
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: a36c377a7faf82e6aeb544859b72ac973305a3b3
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252771"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860161"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
 
-- [Quelles sont les nouveautés du décisionnel dans les notes de publication du 18 octobre ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) du groupe Microsoft Business Applications : Les dernières mises à jour de nos applications métier.
+- [Quelles sont les nouveautés du décisionnel dans les notes de publication du 18 octobre ](/business-applications-release-notes/October18/intelligence-platform/planned-features) du groupe Microsoft Business Applications : Les dernières mises à jour de nos applications métier.
 - [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 - [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/)
@@ -189,7 +189,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 *    Partager des rapports Power BI et les marquer comme favoris.
 *    Prise en charge de l’authentification unique (SSO) OAuth2 et DirectQuery (SSO) pour Azure SQL Database et Data Warehouse.
 *    Audit dans la région : les journaux d’audit sont à présent stockés dans la même région Microsoft 365 que leur client.
-*    Disponibilité générale de SharePoint Online pour la [partie web d’un rapport Power BI](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*    Disponibilité générale de SharePoint Online pour la [partie web d’un rapport Power BI](../collaborate-share/service-embed-report-spo.md).
 *    Contrôle d’administration afin de désactiver l’affichage des visuels Power BI pour tous les utilisateurs dans un locataire.
 *    Prise en charge de l’actualisation planifiée pour Azure Analysis Services (AAS).
 
@@ -200,7 +200,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Recommandations d’apps exploitant l’intelligence artificielle.
 * Mises à jour de l’interface utilisateur du tableau de bord.
 * Prise en charge des abonnements par messagerie électronique pour les applications. 
-* Contrôle d’administration granulaire pour la [publication sur le web](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
+* Contrôle d’administration granulaire pour la [publication sur le web](../admin/service-admin-portal.md#export-and-sharing-settings).
 
 ### <a name="september-2017"></a>Septembre 2017
 * Dans une capacité Premium, partagez de tableaux de bord avec des utilisateurs qui n’ont pas de licence Power BI Pro.
@@ -646,7 +646,7 @@ Pour plus d’informations, consultez notre [blog](https://powerbi.microsoft.com
 * Suite à la mise à jour du service de cette semaine, lors de la création de rapports, vous avez désormais le choix entre plusieurs tailles de page et pouvez définir votre propre taille de page. Vous pouvez ainsi contrôler la taille et les proportions de chaque page du rapport.
 * Nous avons ajouté la prise en charge d’une mise en forme visuelle supplémentaire des images et graphiques en bulles. Vous pouvez verrouiller l’aspect lors du redimensionnement d’images pour éviter la distorsion de celles-ci, et configurer les bulles de graphique en nuages de points de façon à ce qu’elles soient remplies ou non.
 * Désormais, Power BI envoie les invitations de partage à l’adresse de messagerie de secours. Quand un tableau de bord est partagé avec vous, nous envoyons le lien d’invitation de partage tant à votre adresse de messagerie d’origine qu’à votre adresse de messagerie de secours (si vous l’avez configurée).
-* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture Microsoft 365 multilocataire dédiée (DonMT, Dedicated on Multitenant). Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur client, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](https://go.microsoft.com/fwlink/?LinkId=627174).
+* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture Microsoft 365 multilocataire dédiée (DonMT, Dedicated on Multitenant). Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur client, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 * Les journaux d’audit Azure vous permettent de consulter les journaux des opérations du panneau de configuration dans votre abonnement Azure. Le pack de contenu des journaux d’audit Azure de Power BI peut vous aider à analyser et visualiser facilement la mine d’informations que ces journaux contiennent. Le pack de contenu vous permet de vous connecter à vos données et de commencer à découvrir diverses informations à l’aide du tableau de bord et des rapports prêts à l’emploi. Pour plus d’informations, lisez notre [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) et notre [documentation en ligne](../connect-data/service-connect-to-services.md).
 
 [Pour en savoir plus, consultez notre blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).
@@ -708,7 +708,7 @@ Pour plus d’informations, consultez notre [blog](https://powerbi.microsoft.com
 * [Importer des fichiers Excel entiers](../connect-data/service-excel-workbook-files.md) : il est possible d’importer dans Power BI n’importe quel classeur Excel stocké sur OneDrive Entreprise et d’afficher la totalité du classeur, exactement comme avec Excel Online.
 * [Importer des fichiers CSV](../connect-data/service-get-data-from-files.md) : comme tout fichier Excel ou Power BI Desktop, un fichier texte de valeurs séparées par des virgules (CSV) peut également servir de jeu de données pour des tableaux de bord et des rapports Power BI.
 * Remplacement de fichiers Excel, Power BI Desktop et CSV : vous pouvez charger une version mise à jour d’un fichier dans Power BI pour remplacer le jeu de données existant. Tous les rapports et tableaux de bord connectés à ce jeu de données utiliseront automatiquement la nouvelle version.
-* Grâce à la mise à jour de Power BI que nous avons effectuée cette semaine, les utilisateurs peuvent désormais effectuer le suivi des éléments de travail à l’aide du [pack de contenu Visual Studio Online](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). Cette mise à jour comprend un nouveau tableau de bord, un nouveau rapport ainsi qu’un jeu de données mis à jour permettant d’obtenir des informations détaillées sur vos éléments de travail, en plus des métriques importantes concernant votre référentiel Git, les demandes d’extraction et le contenu de gestion de version incluses dans la version initiale. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide sur le pack de contenu Visual Studio Online pour Power BI](../connect-data/service-connect-to-quickbooks-online.md).
+* Grâce à la mise à jour de Power BI que nous avons effectuée cette semaine, les utilisateurs peuvent désormais effectuer le suivi des éléments de travail à l’aide du [pack de contenu Visual Studio Online](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). Cette mise à jour comprend un nouveau tableau de bord, un nouveau rapport ainsi qu’un jeu de données mis à jour permettant d’obtenir des informations détaillées sur vos éléments de travail, en plus des métriques importantes concernant votre référentiel Git, les demandes d’extraction et le contenu de gestion de version incluses dans la version initiale. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide sur le pack de contenu Visual Studio Online pour Power BI](../connect-data/service-connect-to-services.md).
 
 **14 juillet 2015**
 
@@ -743,7 +743,7 @@ Pour plus d’informations, consultez notre [blog](https://powerbi.microsoft.com
 
 **28 mai 2015**
 
-* Obtenez rapidement des informations importantes sur les données de votre compte QuickBooks Online à l’aide de notre [pack de contenu](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). Pour plus d’informations sur la connexion et la prise en main, consultez notre [documentation](../connect-data/service-connect-to-quickbooks-online.md) sur le pack de contenu QuickBooks Online pour Power BI.
+* Obtenez rapidement des informations importantes sur les données de votre compte QuickBooks Online à l’aide de notre [pack de contenu](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). Pour plus d’informations sur la connexion et la prise en main, consultez notre [documentation](../connect-data/service-connect-to-services.md) sur le pack de contenu QuickBooks Online pour Power BI.
 
 **13 mai 2015**
 

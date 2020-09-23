@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a815f69d4f74ec925c3ac0cc8a84c2a13d80346
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: bd2b8c4af1fc36fabc863aa1c67ed5af40265de2
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854078"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -138,11 +138,11 @@ Lorsqu’une actualisation planifiée ou à la demande est déclenchée dans Pow
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Remplacements dans la commande Refresh TMSL
 
-Les remplacements dans la [commande Refresh (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) permettent aux utilisateurs de choisir une définition de requête de partition ou une définition de source de données différente pour l’opération d’actualisation. Les remplacements **ne sont pas pris en charge** dans Power BI Premium. Une erreur, « La liaison hors ligne n’est pas autorisée dans Power BI Premium. Pour plus d’informations, consultez « Prise en charge de la lecture/écriture XMLA » dans la documentation du produit. » est renvoyé.
+Les remplacements dans la [commande Refresh (TMSL)](/analysis-services/tmsl/refresh-command-tmsl) permettent aux utilisateurs de choisir une définition de requête de partition ou une définition de source de données différente pour l’opération d’actualisation. Les remplacements **ne sont pas pris en charge** dans Power BI Premium. Une erreur, « La liaison hors ligne n’est pas autorisée dans Power BI Premium. Pour plus d’informations, consultez « Prise en charge de la lecture/écriture XMLA » dans la documentation du produit. » est renvoyé.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md)   
 [Automatisation des tâches d’espace de travail et de jeu de données Premium avec des principaux de service](service-premium-service-principal.md)   
 [Résolution des problèmes de la fonctionnalité Analyser dans Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Déploiement de solutions de modèle tabulaire](https://docs.microsoft.com/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Déploiement de solutions de modèle tabulaire](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)

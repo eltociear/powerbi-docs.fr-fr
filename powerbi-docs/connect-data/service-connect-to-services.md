@@ -8,18 +8,18 @@ ms.topic: how-to
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: fa4c8102eeb41fb754604eb646c11f44891413c9
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 037a4c28f7b70cdd6bc546014a0b9218e89a7e3d
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236247"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860713"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Se connecter aux services que vous utilisez avec Power BI
 Avec Power BI, vous pouvez vous connecter à de nombreux services que vous utilisez pour conduire votre activité, comme Salesforce, Microsoft Dynamics et Google Analytics. Power BI commence par utiliser vos informations d’identification pour se connecter au service. Il crée un *espace de travail* Power BI comprenant un tableau de bord et un ensemble de rapports Power BI qui montrent automatiquement vos données et fournissent des insights visuels sur votre activité.
 
 >[!IMPORTANT]
->Les packs de contenu de service sont remplacés par des [Applications de modèle](https://docs.microsoft.com/power-bi/service-template-apps-overview). Depuis le 25 septembre 2019, plusieurs packs de contenu ont déjà été déconseillés. Tous les packs de contenu déconseillés que vous avez installés restent sur votre compte, mais aucune documentation ni support n’est fourni et il est impossible de l’installer à nouveau.
+>Les packs de contenu de service sont remplacés par des [Applications de modèle](./service-template-apps-overview.md). Depuis le 25 septembre 2019, plusieurs packs de contenu ont déjà été déconseillés. Tous les packs de contenu déconseillés que vous avez installés restent sur votre compte, mais aucune documentation ni support n’est fourni et il est impossible de l’installer à nouveau.
 
 Connectez-vous à Power BI pour voir tous les [services auxquels vous pouvez vous connecter](https://app.powerbi.com/getdata/services). 
 

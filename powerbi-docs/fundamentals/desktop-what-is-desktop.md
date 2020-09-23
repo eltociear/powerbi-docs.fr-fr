@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 07/23/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c8d4671d55e09ca6e60599bbc0ac9802258f63ba
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 09e51c46a11c41008f77d3a7597807b35b57d297
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252725"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860782"
 ---
 # <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
@@ -66,7 +66,7 @@ Pour se connecter à des données :
 
 ## <a name="transform-and-clean-data-create-a-model"></a>Transformer et nettoyer les données, créer un modèle de données
 
-Dans Power BI Desktop, vous pouvez nettoyer et transformer les données à l’aide de l’[éditeur Power Query](https://docs.microsoft.com/power-bi/desktop-query-overview) intégré. Ce dernier permet d’apporter des modifications aux données, par exemple, changer un type de données, supprimer des colonnes ou combiner des données provenant de plusieurs sources. C’est comme la sculpture : vous partez d’un gros bloc d’argile (les données), puis vous enlevez certaines parties ou en ajoutez d’autres selon les endroits, jusqu’à atteindre la forme souhaitée. 
+Dans Power BI Desktop, vous pouvez nettoyer et transformer les données à l’aide de l’[éditeur Power Query](../transform-model/desktop-query-overview.md) intégré. Ce dernier permet d’apporter des modifications aux données, par exemple, changer un type de données, supprimer des colonnes ou combiner des données provenant de plusieurs sources. C’est comme la sculpture : vous partez d’un gros bloc d’argile (les données), puis vous enlevez certaines parties ou en ajoutez d’autres selon les endroits, jusqu’à atteindre la forme souhaitée. 
 
 Pour démarrer l’éditeur Power Query :
 
@@ -134,4 +134,3 @@ Pour bien démarrer avec Power BI Desktop, la première chose à faire est de t�
 
 * [télécharger Power BI Desktop](https://aka.ms/pbidesktopstore) sur le Windows Store.
 * [télécharger Power BI Desktop sur le Web](https://www.microsoft.com/download/details.aspx?id=58494) ;
-

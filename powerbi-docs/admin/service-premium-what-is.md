@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 492ff2c21d285cba37f1bbf631869c84eafe4dc3
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 7f90840284c5b17a118b414db606902789657b7a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008557"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854687"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -98,7 +98,7 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 
 Les charges de travail de capacité sont des services mis à la disposition des utilisateurs. Par défaut, les capacités Premium et Azure ne prennent en charge que la charge de travail de jeu de données qui est associée aux requêtes Power BI en cours d’exécution. La charge de travail de jeu de données ne peut pas être désactivée. Vous pouvez également activer les charges de travail suivantes : [IA (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Flux de données](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et [Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Ces charges de travail sont prises en charge uniquement dans les abonnements Premium. 
 
-Chaque charge de travail supplémentaire permet de configurer la mémoire maximale (sous forme d’un pourcentage de la mémoire totale disponible) qui peut être utilisée par la charge de travail. Les valeurs par défaut pour la mémoire maximale sont déterminées par la référence SKU. Vous pouvez optimiser les ressources disponibles de votre capacité en activant uniquement les charges de travail supplémentaires lorsque vous en avez besoin. En outre, vous ne pouvez modifier les paramètres de mémoire que si vous avez constaté que les paramètres par défaut ne répondent pas aux besoins en ressources de votre capacité. Les charges de travail peuvent être activées et configurées pour une capacité par les administrateurs de capacité en accédant aux **paramètres de capacité** sur le [portail d’administration](service-admin-portal.md) ou en utilisant les [API REST Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities).  
+Chaque charge de travail supplémentaire permet de configurer la mémoire maximale (sous forme d’un pourcentage de la mémoire totale disponible) qui peut être utilisée par la charge de travail. Les valeurs par défaut pour la mémoire maximale sont déterminées par la référence SKU. Vous pouvez optimiser les ressources disponibles de votre capacité en activant uniquement les charges de travail supplémentaires lorsque vous en avez besoin. En outre, vous ne pouvez modifier les paramètres de mémoire que si vous avez constaté que les paramètres par défaut ne répondent pas aux besoins en ressources de votre capacité. Les charges de travail peuvent être activées et configurées pour une capacité par les administrateurs de capacité en accédant aux **paramètres de capacité** sur le [portail d’administration](service-admin-portal.md) ou en utilisant les [API REST Capacities](/rest/api/power-bi/capacities).  
 
 ![Activer des charges de travail](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
@@ -173,7 +173,7 @@ Il est essentiel d’utiliser vos capacités de façon optimale afin de fournir 
 
 ### <a name="capacities-rest-apis"></a>API REST Capacities
 
-Les API REST Power BI incluent plusieurs [API Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities). Avec ces API, les administrateurs peuvent gérer par programmation de nombreuses tâches liées aux capacités Premium, y compris l’activation et la désactivation des charges de travail, l’affectation des espaces de travail aux capacités, et bien plus encore.
+Les API REST Power BI incluent plusieurs [API Capacities](/rest/api/power-bi/capacities). Avec ces API, les administrateurs peuvent gérer par programmation de nombreuses tâches liées aux capacités Premium, y compris l’activation et la désactivation des charges de travail, l’affectation des espaces de travail aux capacités, et bien plus encore.
 
 ## <a name="large-datasets"></a>Jeux de données volumineux
 
@@ -252,5 +252,3 @@ Pour en savoir plus, consultez [Connectivité des jeux de données avec le point
 > [Gérer les capacités Premium](service-premium-capacity-manage.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-

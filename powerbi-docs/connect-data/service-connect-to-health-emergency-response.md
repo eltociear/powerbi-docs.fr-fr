@@ -8,27 +8,27 @@ ms.topic: how-to
 ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e10f2144e987f8fdc7ea9dbfd18d4581889ae8bf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4455a8da0af7ff928b81baf83245e66cdee578ea
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90854227"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Se connecter au Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux
 L’application modèle Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux est la partie dédiée aux rapports de la [solution Microsoft Power Platform pour la réponse aux urgences sanitaires](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). Le tableau de bord montre aux responsables des services d’urgence des données agrégées à l’échelle de leur système de santé pour les aider à prendre des décisions opportunes et éclairées.
 
 ![Rapport de l’application Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-report.png)
 
-Cet article vous explique comment installer l’application et comment se connecter aux sources de données. Pour savoir comment utiliser le rapport que vous voyez avec cette application, consultez la [documentation du Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard).
+Cet article vous explique comment installer l’application et comment se connecter aux sources de données. Pour savoir comment utiliser le rapport que vous voyez avec cette application, consultez la [documentation du Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux](/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard).
 
 Après avoir installé l’application modèle et établi la connexion aux sources de données, vous pouvez personnaliser le rapport selon vos besoins. Vous pouvez ensuite le distribuer en tant qu’application aux collègues de votre organisation.
 
 ## <a name="prerequisites"></a>Prérequis
 
-Avant d’installer cette application modèle, vous devez installer et configurer la [solution Power Platform Réponse aux urgences des hôpitaux](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure). L’installation de cette solution crée les références nécessaires aux sources de données pour renseigner l’application avec des données.
+Avant d’installer cette application modèle, vous devez installer et configurer la [solution Power Platform Réponse aux urgences des hôpitaux](/powerapps/sample-apps/emergency-response/deploy-configure). L’installation de cette solution crée les références nécessaires aux sources de données pour renseigner l’application avec des données.
 
-Lors de l’installation de la solution Power Platform Réponse aux urgences des hôpitaux, prenez note de l’[URL de votre instance d’environnement Common Data Service](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Vous en aurez besoin pour connecter l’application modèle aux données.
+Lors de l’installation de la solution Power Platform Réponse aux urgences des hôpitaux, prenez note de l’[URL de votre instance d’environnement Common Data Service](/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Vous en aurez besoin pour connecter l’application modèle aux données.
 
 ## <a name="install-the-app"></a>Installer l’application
 
@@ -66,7 +66,7 @@ Lors de l’installation de la solution Power Platform Réponse aux urgences des
 
 1. Dans la boîte de dialogue :
    1. Dans le champ du nom de l’organisation, entrez le nom de votre organisation. Par exemple : « Contoso Health Systems ». Ce champ est facultatif. Ce nom apparaît en haut à gauche du tableau de bord.
-   1. Dans le champ CDS_base_solution, tapez l’[URL de votre instance d’environnement Common Data Service](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Par exemple : https://[myenv].crm.dynamics.com. Quand vous avez terminé, cliquez sur **Suivant**.
+   1. Dans le champ CDS_base_solution, tapez l’[URL de votre instance d’environnement Common Data Service](/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). Par exemple : https://[myenv].crm.dynamics.com. Quand vous avez terminé, cliquez sur **Suivant**.
 
    ![Application Tableau de bord d’aide à la prise de décision en réponse aux urgences des hôpitaux, boîte de dialogue de l’URL](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
@@ -99,8 +99,8 @@ Une fois l’actualisation des données terminée, [configurez une planification
 Pour plus d’informations, consultez [Personnaliser et partager l’application](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Veillez à passer en revue les [exclusions de responsabilité du rapport](../create-reports/sample-covid-19-us.md#disclaimers) avant de publier ou de distribuer l’application.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Comprendre le rapport Réponse aux urgences des hôpitaux](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
-* [Configurer et découvrir l’exemple de modèle de communication de crise dans Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+* [Comprendre le rapport Réponse aux urgences des hôpitaux](/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
+* [Configurer et découvrir l’exemple de modèle de communication de crise dans Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 * [Que sont les applications modèles Power BI ?](../connect-data/service-template-apps-overview.md)
 * [Installer et distribuer des applications modèles dans votre organisation](../connect-data/service-template-apps-install-distribute.md)

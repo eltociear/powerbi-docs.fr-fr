@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 5243f80fea732e01fee600d738ae6e6cde56e261
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 778ce3c810cb0d59559940f489dfeda34f366fda
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90853974"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
@@ -38,7 +38,7 @@ Voici les conditions préalables pour la création du rapport paginé :
 
 - Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder). 
 
-- Suivre le Guide de démarrage rapide [Créer un exemple de base de données SQL Azure dans le portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copier et enregistrer la valeur dans la zone **Nom du serveur** de l’onglet **Vue d’ensemble**. Mémorisez le nom d’utilisateur et le mot de passe créés dans Azure.
+- Suivre le Guide de démarrage rapide [Créer un exemple de base de données SQL Azure dans le portail Azure](/azure/sql-database/sql-database-get-started-portal). Copier et enregistrer la valeur dans la zone **Nom du serveur** de l’onglet **Vue d’ensemble**. Mémorisez le nom d’utilisateur et le mot de passe créés dans Azure.
 
 Voici les conditions préalables pour le chargement de votre rapport paginé dans le service Power BI :
 
