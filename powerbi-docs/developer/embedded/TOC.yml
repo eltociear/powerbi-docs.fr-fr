@@ -28,6 +28,8 @@
           href: embedded-capacity.md
         - name: Planification de la capacité
           href: embedded-capacity-planning.md
+        - name: Point à prendre en considération pour générer un jeton d’incorporation
+          href: generate-embed-token.md
         - name: Bonnes pratiques relatives aux performances
           href: embedded-performance-best-practices.md
         - name: Sécurité au niveau des lignes
