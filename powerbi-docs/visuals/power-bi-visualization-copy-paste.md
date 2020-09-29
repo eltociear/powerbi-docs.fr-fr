@@ -6,15 +6,15 @@ ms.reviewer: maggie tsang
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 04/13/2020
+ms.date: 09/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5791f2428c13bca9a6e2df02e7739623bb51fc96
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 785f16b84dee1509ab04255587724e5ce39a043c
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763111"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>Copier et coller une visualisation de rapport
 
@@ -23,7 +23,7 @@ ms.locfileid: "85233279"
 Cet article présente deux méthodes différentes pour copier et coller un visuel. 
 * Copier un visuel dans un rapport et le coller dans une autre page de rapport (nécessite des autorisations de modification du rapport)
 
-* Copier une image d’un visuel à partir de Power BI dans le Presse-papiers et la coller dans d’autres applications
+* Copier une image de visuel de Power BI dans le Presse-papiers et la coller dans d’autres applications (disponible dans le service Power BI et dans Power BI Mobile, non disponible dans Power BI Desktop)
 
 ## <a name="copy-and-paste-within-the-same-report"></a>Copier et coller dans le même rapport
 Les visuels dans les rapports Power BI peuvent être copiés d’une page du rapport vers la même page ou une page différente du même rapport. 
@@ -41,7 +41,7 @@ Les visualisations sur des *tableaux de bord* ne peuvent pas être copiées et c
 
 ## <a name="copy-a-visual-as-an-image-to-your-clipboard"></a>Copier un visuel en tant qu’image dans le Presse-papiers
 
-Avez-vous déjà voulu partager une image d’un rapport ou d’un tableau de bord Power BI ? Vous pouvez maintenant copier le visuel et le coller dans toute autre application qui prend en charge le collage. 
+Avez-vous déjà voulu partager une image d’un rapport ou d’un tableau de bord Power BI ? Vous pouvez maintenant copier le visuel à partir du service Power BI ou de Power BI Mobile et le coller dans une autre application qui accepte le collage. 
 
 Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du visuel avec les métadonnées. Cela comprend :
 * un lien pour retourner au rapport Power BI ou au tableau de bord
@@ -52,7 +52,7 @@ Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du 
 
 ### <a name="copy-from-a-dashboard-tile"></a>Copie à partir d’une vignette de tableau de bord
 
-1. Accédez au tableau de bord à partir duquel vous souhaitez effectuer la copie.
+1. Ouvrez le service Power BI et accédez au tableau de bord à partir duquel vous souhaitez effectuer la copie.
 
 2. Dans l’angle supérieur droit du visuel, sélectionnez **Plus d’options (...)** , puis choisissez **Copier le visuel comme une image**. 
 
@@ -64,15 +64,15 @@ Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du 
 
 4. Lorsque votre visuel est prêt, collez-le dans une autre application à l’aide de **Ctrl + V** ou cliquez avec le bouton droit > Coller. Dans la capture d’écran ci-dessous, nous avons collé le visuel dans Microsoft Word. 
 
-    ![visuel collé dans Outlook](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
+    ![Visuel collé dans Word](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
 
 ### <a name="copy-from-a-report-visual"></a>Copie à partir d’un visuel de rapport 
 
-1. Accédez au rapport à partir duquel vous voulez effectuer la copie.
+1. Ouvrez le service Power BI et accédez au rapport à partir duquel vous souhaitez effectuer la copie.
 
 2. Dans l’angle supérieur droit du visuel, sélectionnez l’icône **Copier le visuel comme une image**. 
 
-    ![Icône de copie d’un visuel sous forme d’image affichée](media/power-bi-visualization-copy-paste/power-bi-copy-icon.png)
+    ![Capture d’écran montrant l’icône Copier le visuel en tant qu’image](media/power-bi-visualization-copy-paste/power-bi-copy-icon.png)
 
 3. Quand la boîte de dialogue **Votre visuel est prêt à être copié** s’affiche, sélectionnez **Copier dans le Presse-papiers**.
 
@@ -95,7 +95,7 @@ Lorsque vous copiez une image statique d’un visuel, vous obtenez une copie du 
 Si vous êtes propriétaire du contenu ou si vous êtes un administrateur du locataire, vous pouvez contrôler si un visuel peut être copié en tant qu’image à partir d’un rapport ou d’un tableau de bord.
 
 #### <a name="disable-copy-as-an-image-for-a-specific-visual"></a>Désactiver la copie en tant qu’image pour un visuel spécifique
-Si vous ne souhaitez pas que les utilisateurs puissent copier un visuel spécifique, vous pouvez supprimer l’icône de copie de ce visuel.
+Si vous ne souhaitez pas qu’un visuel puisse être copié par les utilisateurs, vous pouvez supprimer son icône de copie dans le service Power BI.    
 1. Ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. 
 
 1. Ouvrez la carte **Mise en forme du visuel**.
@@ -129,6 +129,8 @@ Si vous êtes le propriétaire du contenu ou un administrateur du locataire, vou
    ![copie non disponible](media/power-bi-visualization-copy-paste/power-bi-copy-grey.png)
 
 
+Q : Je ne vois pas l’option Copier en tant qu’image.    
+R : Si vous utilisez Power BI Desktop, cette fonctionnalité n’est pas encore disponible.    
 Q : Pourquoi l’icône de copie est-elle désactivée sur un visuel ?    
 R : Nous prenons actuellement en charge les visuels Power BI natifs et les visuels certifiés. Certains visuels sont pris en charge de façon limitée, notamment : 
 - ESRI et autres visuels de carte 

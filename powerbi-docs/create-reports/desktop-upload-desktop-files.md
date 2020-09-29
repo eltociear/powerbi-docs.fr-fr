@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 91b19fd5e357f4ab020b72b259ab5053c36af8f7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4405ab8d3e0db949ec825f3eea436183512f862d
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238425"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91019896"
 ---
 # <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Publier des jeux de données et des rapports à partir de Power BI Desktop
 Quand vous publiez un fichier Power BI Desktop dans le service Power BI, vous publiez les données du modèle dans votre espace de travail Power BI. Il en va de même pour tous les rapports que vous avez créés dans la vue**Rapport**. Un nouveau jeu de données du même nom et tous les rapports seront visibles dans le navigateur de votre espace de travail.
@@ -30,8 +30,8 @@ La publication à partir de Power BI Desktop a le même effet que l’utilisatio
    ![Bouton Publier](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
 
-2. Connectez-vous à Power BI.
-3. Sélectionnez la destination.
+2. Connectez-vous à Power BI si ce n’est pas déjà fait.
+3. Sélectionnez la destination. À partir de la version de septembre 2020, vous pouvez effectuer une recherche dans la liste des espaces de travail disponibles pour trouver celui sur lequel vous souhaitez publier. La zone de recherche permet de filtrer les espaces de travail. Sélectionnez l’espace de travail, puis cliquez sur le bouton **Sélectionner** pour publier.
 
    ![Sélectionner la destination de la publication](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
 
@@ -58,3 +58,13 @@ Ce processus est assez simple, mais vous devez savoir un certain nombre de chose
 > [!NOTE]
 > Une connexion de données dans des rapports Power BI peut inclure des liens vers des données, au lieu d’inclure les données du jeu de données importé dans le service Power BI. Par exemple, les connexions DirectQuery établissent un lien aux données quand des mises à jour ou des interactions se produisent, au lieu d’importer les données elles-mêmes. Si les sources de données liées dans votre rapport sont locales, vous pouvez avoir besoin d’une passerelle pour y accéder depuis Power BI. Pour plus d’informations, consultez [Qu’est-ce qu’une passerelle de données locale ?](../connect-data/service-gateway-onprem.md).
 > 
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Power BI Desktop permet d’effectuer des tâches très diverses. Pour plus d’informations sur ses fonctionnalités, passez en revue les ressources suivantes :
+
+* [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
+* [Vue d’ensemble des requêtes dans Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Types de données dans Power BI Desktop](../connect-data/desktop-data-types.md)
+* [Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

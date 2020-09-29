@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 193247aaf610d1712b7986394e08d3c21055d2fa
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965467"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
@@ -65,7 +65,7 @@ De nombreux concepts supplémentaires liés à la conception de schémas en éto
 
 Dans la conception d’un schéma en étoile, une **mesure** est une colonne de table de faits qui stocke les valeurs à totaliser.
 
-Dans un modèle Power BI, une **mesure** a une définition différente (mais similaire). Il s’agit d’une formule écrite en [Dax (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) qui réalise une totalisation. Les expressions de mesure exploitent souvent les fonctions d’agrégation DAX comme SUM, MIN, MAX ou AVERAGE pour produire un résultat de valeur scalaire au moment de la requête (les valeurs ne sont jamais stockées dans le modèle). Une expression de mesure peut aller de simples agrégations de colonnes à des formules plus sophistiquées qui remplacent la propagation de relation et/ou de contexte de filtre. Pour plus d’informations, consultez l’article [Principes fondamentaux de DAX dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
+Dans un modèle Power BI, une **mesure** a une définition différente (mais similaire). Il s’agit d’une formule écrite en [Dax (Data Analysis Expressions)](/dax/data-analysis-expressions-dax-reference) qui réalise une totalisation. Les expressions de mesure exploitent souvent les fonctions d’agrégation DAX comme SUM, MIN, MAX ou AVERAGE pour produire un résultat de valeur scalaire au moment de la requête (les valeurs ne sont jamais stockées dans le modèle). Une expression de mesure peut aller de simples agrégations de colonnes à des formules plus sophistiquées qui remplacent la propagation de relation et/ou de contexte de filtre. Pour plus d’informations, consultez l’article [Principes fondamentaux de DAX dans Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md).
 
 Il est important de comprendre que les modèles Power BI prennent en charge une deuxième méthode pour effectuer une totalisation. Toute colonne (généralement les colonnes numériques) peut être totalisée par un visuel de rapport ou Questions et réponses. Ces colonnes sont appelées _mesures implicites_. En tant que développeur de modèles, elles vous sont pratiques parce que, dans de nombreux cas, vous n’avez pas besoin de créer de mesures. Par exemple, la colonne **Sales Amount** de la table Reseller Sales d’Adventure Works peut être totalisée de nombreuses façons (somme, nombre, moyenne, valeur médiane, valeur minimale, valeur maximale, etc.), sans qu’il soit nécessaire de créer une mesure pour chaque type d’agrégation possible.
 
@@ -73,7 +73,7 @@ Il est important de comprendre que les modèles Power BI prennent en charge une 
 
 Toutefois, il existe trois raisons impérieuses de créer des mesures, même pour des totalisations simples au niveau des colonnes :
 
-- Quand vous savez que vos auteurs de rapports sont susceptibles d’interroger le modèle en utilisant [MDX (expressions multidimensionnelles)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), le modèle doit inclure des _mesures explicites_. Les mesures explicites sont définies en utilisant DAX. Cette approche de conception est très appropriée quand un jeu de données Power BI est interrogé avec MDX, car MDX ne peut pas totaliser les valeurs de colonne. MDX est notamment utilisé avec [Analyser dans Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), car PivotTables émet des requêtes MDX.
+- Quand vous savez que vos auteurs de rapports sont susceptibles d’interroger le modèle en utilisant [MDX (expressions multidimensionnelles)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), le modèle doit inclure des _mesures explicites_. Les mesures explicites sont définies en utilisant DAX. Cette approche de conception est très appropriée quand un jeu de données Power BI est interrogé avec MDX, car MDX ne peut pas totaliser les valeurs de colonne. MDX est notamment utilisé avec [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md), car PivotTables émet des requêtes MDX.
 - Quand vous savez que vos auteurs de rapports sont susceptibles de créer des rapports paginés Power BI à l’aide du concepteur de requêtes MDX, le modèle doit inclure des mesures explicites. Seul le concepteur de requêtes MDX prend en charge les [agrégats de serveur](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Par conséquent, si les auteurs de rapports doivent faire évaluer les mesures par Power BI (et non par le moteur de rapport paginé), ils doivent utiliser le concepteur de requêtes MDX.
 - Si vous devez vous assurer que vos auteurs de rapports peuvent uniquement totaliser des colonnes de manière spécifique. Par exemple, la colonne **Unit Price** de la table Reseller Sales (qui représente un tarif par unité) peut être totalisée, mais uniquement à l’aide de fonctions d’agrégation spécifiques. Elle ne doit jamais être cumulée, mais il est approprié de la totaliser à l’aide d’autres fonctions d’agrégation (valeur minimale, valeur minimale, moyenne, etc.). Dans ce cas, le modélisateur peut masquer la colonne **Unit Price** et créer des mesures pour toutes les fonctions d’agrégation appropriées.
 
@@ -83,7 +83,7 @@ Cette approche de conception fonctionne bien pour les rapports créés dans le s
 
 Une **clé de substitution** est un identificateur unique que vous ajoutez à une table pour prendre en charge la modélisation de schémas en étoile. Par définition, elle n’est ni définie ni stockée dans les données sources. En règle générale, les clés de substitution sont ajoutées aux tables de dimension des entrepôts de données relationnels afin de fournir un identificateur unique pour chaque ligne de la table de dimension.
 
-Les relations des modèles Power BI sont basées sur une seule colonne unique dans une table, qui propage les filtres à une colonne unique dans une autre table. Quand une table de type dimension dans votre modèle n’inclut pas de colonne unique, vous devez ajouter un identificateur unique en guise de côté « un » d’une relation. Dans Power BI Desktop, vous pouvez facilement remplir cette exigence en créant une [colonne d’index Power Query](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Les relations des modèles Power BI sont basées sur une seule colonne unique dans une table, qui propage les filtres à une colonne unique dans une autre table. Quand une table de type dimension dans votre modèle n’inclut pas de colonne unique, vous devez ajouter un identificateur unique en guise de côté « un » d’une relation. Dans Power BI Desktop, vous pouvez facilement remplir cette exigence en créant une [colonne d’index Power Query](/powerquery-m/table-addindexcolumn).
 
 ![Créer une colonne d’index dans la barre d’outils Power Query](media/star-schema/toolbar-index.png)
 
@@ -150,12 +150,12 @@ Dans un modèle Power BI, vous pouvez imiter cette conception en créant plusieu
 
 ![Exemple de relations et d’une dimension de rôle actif unique](media/star-schema/relationships.png)
 
-La seule façon d’utiliser une relation inactive consiste à définir une expression Dax qui utilise la [fonction USERELATIONSHIP](https://docs.microsoft.com/dax/userelationship-function-dax). Dans notre exemple, le développeur de modèle doit créer des mesures pour permettre l’analyse des ventes des revendeurs par date d’expédition et date de livraison. Ce travail peut être fastidieux, en particulier quand la table des revendeurs définit de nombreuses mesures. En outre, elle encombre le volet **Champs** d’une surabondance de mesures. Il existe également d’autres limitations :
+La seule façon d’utiliser une relation inactive consiste à définir une expression Dax qui utilise la [fonction USERELATIONSHIP](/dax/userelationship-function-dax). Dans notre exemple, le développeur de modèle doit créer des mesures pour permettre l’analyse des ventes des revendeurs par date d’expédition et date de livraison. Ce travail peut être fastidieux, en particulier quand la table des revendeurs définit de nombreuses mesures. En outre, elle encombre le volet **Champs** d’une surabondance de mesures. Il existe également d’autres limitations :
 
 - Quand les auteurs de rapports s’appuient sur des colonnes de totalisation, au lieu de définir des mesures, ils ne peuvent pas obtenir de totalisation pour les relations inactives sans écrire de mesure au niveau du rapport. Les mesures au niveau du rapport peuvent être définies uniquement lors de la création de rapports dans Power BI Desktop.
 - Avec un seul chemin de relation actif entre les données des ventes des revendeurs et les données des dates, il n’est pas possible de filtrer simultanément les ventes des revendeurs par différents types de dates. Par exemple, vous ne pouvez pas produire un visuel qui trace les ventes par date de commande par ventes livrées.
 
-Pour surmonter ces limitations, une technique de modélisation Power BI courante consiste à créer une table de type dimension pour chaque instance de rôle actif. En général, vous créez les tables de dimension supplémentaires en tant que [tables calculées](https://docs.microsoft.com/dax/calculatetable-function-dax), à l’aide de Dax. À l’aide de tables calculées, le modèle peut contenir une table **Date**, une table **Ship Date** et une table **Delivery Date**, chacune avec une relation unique et active avec les colonnes respectives de la table Reseller Sales.
+Pour surmonter ces limitations, une technique de modélisation Power BI courante consiste à créer une table de type dimension pour chaque instance de rôle actif. Les tables de dimension supplémentaires sont généralement créées sous forme de [tables calculées](/dax/calculatetable-function-dax) à l’aide de DAX. À l’aide de tables calculées, le modèle peut contenir une table **Date**, une table **Ship Date** et une table **Delivery Date**, chacune avec une relation unique et active avec les colonnes respectives de la table Reseller Sales.
 
 ![Exemple de relations et de dimensions de rôle actif](media/star-schema/relationships2.png)
 
@@ -174,7 +174,7 @@ Une **dimension fourre-tout** est utile quand il existe de nombreuses dimensions
 
 L’objectif de conception d’une dimension fourre-tout consiste à consolider de nombreuses « petites » dimensions en une seule dimension afin de réduire la taille de stockage du modèle et l’encombrement du volet **Champs** en présentant moins de tables de modèle.
 
-Une table de dimension fourre-tout est généralement le produit cartésien de tous les membres d’attribut de dimension, avec une colonne de clé de substitution. La clé de substitution fournit une référence unique à chaque ligne de la table. Vous pouvez générer la dimension dans un entrepôt de données, ou en utilisant Power Query pour créer une requête qui effectue des [jointures de requêtes externes entières](https://docs.microsoft.com/powerquery-m/table-join), puis ajoute une clé de substitution (colonne d’index).
+Une table de dimension fourre-tout est généralement le produit cartésien de tous les membres d’attribut de dimension, avec une colonne de clé de substitution. La clé de substitution fournit une référence unique à chaque ligne de la table. Vous pouvez générer la dimension dans un entrepôt de données, ou en utilisant Power Query pour créer une requête qui effectue des [jointures de requêtes externes entières](/powerquery-m/table-join), puis ajoute une clé de substitution (colonne d’index).
 
 ![Exemple de dimension fourre-tout](media/star-schema/junk-dimension.png)
 
@@ -216,5 +216,3 @@ Pour plus d’informations sur la conception du schéma en étoile ou sur la con
 - [Aide pour les relations actives et inactives](relationships-active-inactive.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 - Vous avez des suggestions ? [Envoyez-nous vos idées pour améliorer Power BI](https://ideas.powerbi.com/)
-
-

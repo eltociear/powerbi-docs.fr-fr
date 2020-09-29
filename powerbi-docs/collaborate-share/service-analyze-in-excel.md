@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 1605e6108b990c95a995eadd9a6b3d03260001f5
-ms.sourcegitcommit: 13c4bec679313f2951f1833033316cb8176da8a1
+ms.openlocfilehash: 845fb523e9045e7a1062d11eebbb5e34bcc29ce3
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88937490"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020064"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Avec **Analyser dans Excel**, vous pouvez placer les jeux de données Power BI dans Excel, puis les afficher et interagir avec eux à l’aide de tableaux croisés dynamiques, de graphiques, de segments et d’autres fonctionnalités Excel. Pour utiliser **Analyser dans Excel** vous devez d’abord télécharger la fonctionnalité à partir de Power BI, l’installer, puis sélectionner un ou plusieurs jeux de données à utiliser dans Excel. 
@@ -92,6 +92,15 @@ Dans le service Power BI, accédez au jeu de données ou au rapport que vous sou
     >![Capture d’écran de la bannière d’activation de la modification en mode Protégé](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
     >
     >![Capture d’écran de la bannière d’activation du contenu pour les documents protégés](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
+
+Quand vous utilisez Excel pour analyser Power BI à l’aide d’un tableau croisé dynamique, Power BI étend l’héritage des étiquettes de confidentialité à Excel. Une étiquette de confidentialité appliquée à un jeu de données Power BI est appliquée automatiquement au fichier Excel lors de la création d’un tableau croisé dynamique dans Excel. 
+
+Si, par la suite, l’étiquette du jeu de données devient plus restrictive, l’étiquette appliquée sur le fichier Excel est automatiquement mise à jour lors de l’actualisation des données dans Excel. Si le jeu de données devient moins restrictif, aucun héritage ni mise à jour d’étiquette ne se produit.
+
+Les étiquettes de confidentialité définies manuellement dans Excel ne sont pas automatiquement remplacées par celles du jeu de données. Si un fichier Excel comporte une étiquette de confidentialité définie manuellement, un conseil de stratégie indique une recommandation de mise à niveau de l’étiquette. 
+
+Pour plus d’informations, consultez [Guide pratique pour appliquer des étiquettes de confidentialité dans Power BI](../admin/service-security-apply-data-sensitivity-labels.md).
+
 
 ## <a name="use-excel-to-analyze-the-data"></a>Utiliser Excel pour analyser les données
 
@@ -177,4 +186,4 @@ Les articles suivants pourraient également vous intéresser :
 * [Utilisation de segments Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
 * [Résolution des problèmes d’Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)
 * [Accéder aux tables recommandées Power BI dans Excel (préversion)](service-excel-featured-tables.md).
-
+* [Guide pratique pour appliquer des étiquettes de sensibilité dans Power BI](../admin/service-security-apply-data-sensitivity-labels.md)

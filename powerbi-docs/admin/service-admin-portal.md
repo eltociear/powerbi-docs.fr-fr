@@ -10,12 +10,12 @@ ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f6527b326c2c779dda5a6d4b1c1276c84d3ec320
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: f52993c3876db5c8f0453fb2e6a25ce0b78af017
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642802"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857953"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -116,7 +116,7 @@ Par défaut, les données par utilisateur sont activées pour les métriques d�
 Lors de la désactivation des métriques d’utilisation pour leur organisation toute entière, les administrateurs peuvent également choisir une ou plusieurs options pour :
 
 - **Supprimer tout le contenu des métriques d’utilisation** pour supprimer toutes les vignettes de rapports et de tableaux de bord existantes générées à l’aide de rapports et de jeux de données des métriques d’utilisation. Cette option supprime tout accès aux données de métriques d’utilisation pour tous les utilisateurs au sein de l’organisation qui peuvent déjà les utiliser.
-- **Supprimer toutes les données existantes par utilisateur dans le contenu des métriques d’utilisation actuelles** : Cette option supprime tout accès aux données par utilisateur pour tous les utilisateurs de l’organisation qui les utilisent peut-être déjà. 
+- **Supprimer toutes les données existantes par utilisateur dans le contenu des métriques d’utilisation actuelles** afin de supprimer tout accès aux données par utilisateur pour tous les utilisateurs de l’organisation qui les utilisent peut-être déjà.
 
 Soyez prudent, car la suppression du contenu de métriques existantes d’utilisation et par utilisateur est irréversible.
 
@@ -156,7 +156,7 @@ Les paramètres peuvent présenter un des trois états suivants :
 
     ![Paramètre Activé pour tous](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Activé pour une partie de l’organisation** : Au lieu d’activer la fonctionnalité de l’ensemble de l’organisation, vous pouvez appliquer le paramètre à des **Groupes de sécurité spécifiques** de votre organisation, autorisés à utiliser cette fonctionnalité.
+* **Activé pour une partie de l’organisation** : certains groupes de sécurité de votre organisation sont autorisés à utiliser cette fonctionnalité.
 
     Vous pouvez activer la fonctionnalité pour toute votre organisation, **Excepter aux groupes de sécurité spécifiques**.
 
@@ -172,9 +172,11 @@ Les sections suivantes fournissent une vue d’ensemble des différents types de
 
 ### <a name="publish-get-help-information"></a>Publier des informations « Obtenir de l’aide »
 
+![Publier des informations « Obtenir de l’aide »](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+
 Les administrateurs peuvent spécifier des URL internes pour remplacer la destination des liens dans le menu aide de Power BI et pour les mises à niveau de licence. Si des URL personnalisées sont définies, les utilisateurs de l’organisation accèdent aux ressources d’aide et de support internes au lieu des destinations par défaut. Les destinations de ressources suivantes peuvent être personnalisées :
 
-* **Learn**. Par défaut, ce lien de menu d’aide cible une [liste de tous nos parcours d’apprentissage et modules Power BI](https://docs.microsoft.com/learn/browse/?products=power-bi). Pour diriger ce lien vers des ressources de formation internes, définissez plutôt une URL personnalisée pour la **Documentation de formation**.
+* **Learn**. Par défaut, ce lien de menu d’aide cible une [liste de tous nos parcours d’apprentissage et modules Power BI](/learn/browse/?products=power-bi). Pour diriger ce lien vers des ressources de formation internes, définissez plutôt une URL personnalisée pour la **Documentation de formation**.
 
 * **Communauté**. Pour transférer les utilisateurs vers un forum interne à partir du menu d’aide, plutôt que vers la [Communauté Power BI](https://community.powerbi.com/), définissez une URL personnalisée pour le **Forum de discussion**.
 
@@ -182,15 +184,15 @@ Les administrateurs peuvent spécifier des URL internes pour remplacer la destin
 
 * **Obtenir de l’aide**. Pour transférer les utilisateurs vers un forum interne à partir du menu d’aide, plutôt que vers le [Support Power BI](https://powerbi.microsoft.com/support/), définissez une URL personnalisée pour le **Support technique**.
 
-![Publier des informations « Obtenir de l’aide »](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
-
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Recevoir des notifications par e-mail pour les pannes ou incidents du service
 
 Les groupes de sécurité à extension messagerie reçoivent des notifications par e-mail si ce locataire est affecté par une panne ou un incident du service. En savoir plus sur les [notifications d’interruption de service](service-interruption-notifications.md).
 
 ### <a name="allow-users-to-try-power-bi-pro"></a>Autoriser les utilisateurs à essayer Power BI Pro
 
-Le paramètre visant à **Autoriser les utilisateurs à essayer Power BI Pro** est activé par défaut et augmente votre contrôle sur la façon dont les utilisateurs acquièrent des licences Power BI Pro. Dans les scénarios où vous avez bloqué l’achat en libre-service, ce paramètre permet aux utilisateurs de démarrer une évaluation gratuite de Power BI Pro. L’expérience de l’utilisateur final dépend de la façon dont vous combinez les paramètres de licence. Le tableau ci-dessous montre comment l’expérience de mise à niveau de Power BI (gratuite) à Power BI Pro est affectée par différentes combinaisons de paramètres :
+![Autoriser les utilisateurs à essayer l’interface utilisateur des paramètres Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
+
+Le paramètre **Autoriser les utilisateurs à essayer Power BI Pro** est activé par défaut. Il augmente votre contrôle sur la façon dont les utilisateurs acquièrent des licences Power BI Pro. Dans les scénarios où vous avez bloqué l’achat en libre-service, ce paramètre permet aux utilisateurs de démarrer une évaluation gratuite de Power BI Pro. L’expérience de l’utilisateur final dépend de la façon dont vous combinez les paramètres de licence. Le tableau ci-dessous montre comment l’expérience de mise à niveau de Power BI (gratuite) à Power BI Pro est affectée par différentes combinaisons de paramètres :
 
 | Paramètre d’achat en libre-service | Autoriser les utilisateurs à essayer le paramètre Power BI Pro | Expérience de l’utilisateur final |
 | ------ | ------ | ----- |
@@ -200,9 +202,7 @@ Le paramètre visant à **Autoriser les utilisateurs à essayer Power BI Pro** e
 | Désactivé | activé | L’utilisateur peut démarrer une évaluation gratuite de Pro, mais il doit contacter l’administrateur informatique pour obtenir une licence payante |
 
 > [!NOTE]
-> Vous pouvez ajouter une URL interne pour les demandes de licences dans [Paramètres d’aide et de support](#help-and-support-settings). Si vous définissez l’URL, elle remplace l’expérience d’achat par défaut. Les utilisateurs qui peuvent acheter une licence dans les scénarios décrits dans le tableau ci-dessus sont redirigés vers votre URL interne.
-
-![Autoriser les utilisateurs à essayer l’interface utilisateur des paramètres Power BI Pro](media/service-admin-portal/allow-pro-trial.png)
+> Vous pouvez ajouter une URL interne pour les demandes de licences dans [Paramètres d’aide et de support](#help-and-support-settings). Si vous définissez l’URL, elle remplace l’expérience d’achat en libre-service par défaut. Elle ne redirige pas l’inscription à un essai de la licence Power BI Pro. Les utilisateurs qui peuvent acheter une licence dans les scénarios décrits dans le tableau ci-dessus sont redirigés vers votre URL interne.
 
 Pour en savoir plus, consultez [Activer ou désactiver l’inscription et l’achat en libre-service](service-admin-disable-self-service.md).
 
@@ -216,7 +216,7 @@ Dans **Paramètres de l’abonné**, le portail Administrateur comporte deux sec
 
 ### <a name="create-the-new-workspaces"></a>Créer de nouveaux espaces de travail
 
-Les espaces de travail sont des emplacements où les utilisateurs peuvent collaborer sur des tableaux de bord, des rapports et d’autres contenus. Les administrateurs utilisent le paramètre **Créer des espaces de travail (nouvelle expérience d’espace de travail)** pour indiquer quels utilisateurs de l’organisation peuvent créer des espaces de travail. Les administrateurs peuvent autoriser tout le monde ou personne dans une organisation à créer des espaces de travail avec la nouvelle expérience d’espace de travail. Il peuvent également limiter la création aux membres de groupes de sécurité spécifiques. En savoir plus sur les [espaces de travail](../collaborate-share/service-new-workspaces.md)
+Les espaces de travail sont des endroits où les utilisateurs collaborent sur des tableaux de bord, des rapports et d’autres contenus. Les administrateurs utilisent le paramètre **Créer des espaces de travail (nouvelle expérience d’espace de travail)** pour indiquer quels utilisateurs de l’organisation peuvent créer des espaces de travail. Les administrateurs peuvent autoriser tout le monde ou personne dans une organisation à créer des espaces de travail avec la nouvelle expérience d’espace de travail. Il peuvent également limiter la création aux membres de groupes de sécurité spécifiques. En savoir plus sur les [espaces de travail](../collaborate-share/service-new-workspaces.md)
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
 
@@ -237,9 +237,9 @@ Dans le portail d’administration, vous contrôlez également les utilisateurs 
 
 Les administrateurs peuvent contrôler les utilisateurs de l’organisation qui peuvent utiliser des jeux de données dans les espaces de travail. Quand ce paramètre est activé, les utilisateurs ont toujours besoin de l’autorisation de build requise pour un jeu de données spécifique.
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Utiliser des jeux de données entre des espaces de travail":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
 
-Pour en savoir plus, consultez [Introduction aux jeux de données entre plusieurs espaces de travail](../connect-data/service-datasets-across-workspaces.md).
+Pour plus d’informations, consultez [Initiation aux jeux de données sur plusieurs espaces de travail](../connect-data/service-datasets-across-workspaces.md).
 
 ### <a name="block-classic-workspace-creation"></a>Bloquer la création de l’espace de travail classique
 
@@ -253,13 +253,13 @@ Quand ils sont activés, les nouveaux groupes Office 365 ne s’affichent pas d
 
 ### <a name="allow-azure-active-directory-guest-users-to-access-power-bi"></a>Autoriser les utilisateurs invités Azure Active Directory à accéder à Power BI
 
-L’activation de ce paramètre permet aux utilisateurs invités à Azure Active Directory Business-to-Business (Azure AD B2B) d’accéder à Power BI. Quand vous désactivez ce paramètre, les utilisateurs invités reçoivent une erreur lors de la tentative d’accès à Power BI. Quand vous désactivez ce paramètre pour l’ensemble de l’organisation, cela empêche également les utilisateurs de convier des invités à votre organisation. Utilisez l’option Groupes de sécurité spécifiques pour contrôler les utilisateurs invités qui peuvent accéder à Power BI.
+L’activation de ce paramètre permet aux utilisateurs invités à Azure Active Directory Business-to-Business (Azure AD B2B) d’accéder à Power BI. Si vous désactivez ce paramètre, les utilisateurs invités reçoivent une erreur lorsqu’ils tentent d’accéder à Power BI. Le désactiver pour l’ensemble de l’organisation permet également d’empêcher les utilisateurs de convier des invités à votre organisation. Utilisez l’option Groupes de sécurité spécifiques pour contrôler les utilisateurs invités qui peuvent accéder à Power BI.
 
 ![Autoriser les utilisateurs invités Azure Active Directory à accéder à Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
 ### <a name="invite-external-users-to-your-organization"></a>Inviter des utilisateurs externes dans votre organisation 
 
-Le paramètre **Inviter des utilisateurs externes dans votre organisation** permet aux organisations de déterminer si de nouveaux utilisateurs externes peuvent être invités dans l’organisation par le biais des expériences d’autorisations et de partage Power BI. Quand il est désactivé, si un utilisateur externe n’est pas déjà un utilisateur invité de l’organisation, il ne peut pas être ajouté à l’organisation par le biais de Power BI. 
+Le paramètre **Inviter des utilisateurs externes dans votre organisation** permet aux organisations de déterminer si de nouveaux utilisateurs externes peuvent être invités dans l’organisation par le biais des expériences d’autorisations et de partage Power BI. S’il est désactivé, il n’est pas possible d’ajouter à l’organisation un utilisateur externe qui n’est pas déjà un utilisateur invité de l’organisation par le biais de Power BI.
 
 ![Inviter des utilisateurs externes dans votre organisation](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
@@ -298,7 +298,7 @@ Les options présentées aux utilisateurs dans l’interface utilisateur varient
 
 ### <a name="export-data"></a>Exporter des données
 
-Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Cela contrôle l’analyse dans Excel, l’exportation au format .csv, les téléchargements de jeux de données (.pbix) et les fonctionnalités de connexion directe du service Power BI. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](../visuals/power-bi-visualization-export-data.md).
+Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Ce paramètre contrôle la fonction Analyser dans Excel, l’exportation au format .csv, le téléchargement de jeux de données (.pbix) et les fonctionnalités Live Connect du service Power BI. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](../visuals/power-bi-visualization-export-data.md).
 
 >[!NOTE]
 > Avant l’introduction du paramètre Exporter vers Excel, ce paramètre contrôlait également l’exportation des données vers des fichiers Excel. Pour plus d’informations, consultez la [remarque sous Exporter vers Excel](#export-to-excel).
@@ -403,7 +403,7 @@ Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de re
 
 Sous **Tenant settings**, le paramètre **Allow connections to featured tables** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie de types de données Excel. 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Toutes les connexions aux tables proposées":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
 
 Les connexions aux tables proposées sont également désactivées si le paramètre locataire **Exporter des données** est défini sur **Désactivé**.
 
@@ -482,25 +482,25 @@ Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. Pou
 
 Trois paramètres contrôlent la capacité des applications modèles à publier ou installer des applications modèles.
 
-![Paramètres des applications modèles dans le portail d’application Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+![Paramètres des applications modèles du portail d’administration Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
 ### <a name="publish-template-apps"></a>Publier des applications modèles
 
 Les utilisateurs de l'organisation peuvent créer des espaces de travail d’applications modèles. Choisissez quels utilisateurs peuvent publier des applications modèles ou les distribuer à des clients extérieurs à votre organisation via [AppSource](https://appsource.microsoft.com) ou d’autres méthodes de distribution.
 
-![Portail d’administration Power BI, paramètre Créer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+![Paramètre Publier des applications modèles activé pour l’ensemble de l’organisation](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
 ### <a name="install-template-apps-listed-on-appsource"></a>Installer des applications modèles répertoriées sur AppSource
 
 Les utilisateurs de l’organisation peuvent télécharger et installer des applications modèles **uniquement** depuis [AppSource](https://appsource.microsoft.com). Choisissez quels utilisateurs spécifiques ou groupes de sécurité peuvent installer des applications modèles depuis AppSource.
 
-![Portail d’administration Power BI, paramètre Installer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+![Paramètre Installer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>Installer des applications modèles non répertoriées sur AppSource
 
 Choisissez quels utilisateurs dans l’organisation peuvent télécharger et installer des applications modèles **non répertoriées sur [AppSource](https://appsource.microsoft.com)** .
 
-![Portail d’administration Power BI, paramètre Installer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
+![Paramètre Installer des applications modèles qui ne figurent pas dans AppSource](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## <a name="capacity-settings"></a>Paramètres de capacité
 

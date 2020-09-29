@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 09/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1e64ca5c94b180cf98cf8d8992681861281ca2ae
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: 56825599a6b566a93f18e6fea16d995dc8bdda8f
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160392"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020041"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -95,12 +95,13 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Denodo
 * Dremio
 * Exasol
-* Indexima (bêta)
+* Indexima
 * InterSystems IRIS (bêta)
 * Jethro (bêta)
 * Kyligence
 * Bases de données Linkar de style choix / multivaleurs (bêta)
 * MarkLogic
+* MariaDB (bêta)
 
 > [!NOTE]
 > Certains connecteurs de base de données doivent être activés. Pour cela, sélectionnez **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en version préliminaire** et activez le connecteur. Si vous ne voyez pas certains des connecteurs mentionnés ci-dessus et que vous souhaitez les utiliser, vérifiez les paramètres **Fonctions en version préliminaire**. Notez également qu’une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
@@ -127,7 +128,7 @@ L’image suivante représente la fenêtre **Obtenir des données** pour **Power
 La catégorie **Azure** fournit les connexions de données suivantes :
 
 * Azure SQL Database
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (SQL DW)
 * Base de données Azure Analysis Services
 * Azure Database pour PostgreSQL
 * Stockage Blob Azure
@@ -139,9 +140,9 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (Kusto)
 * Azure Cost Management
 * Azure Time Series Insights (bêta)
+* Azure Databricks
 
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
@@ -194,8 +195,10 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * TeamDesk (bêta)
 * Webtrends Analytics (bêta)
 * Witivio (bêta)
-* Analyse du temps de travail (bêta)
 * Zoho Creator (bêta)
+* Analyse du temps de travail (bêta)
+* API Hexagon PPM Smart
+
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
 
@@ -217,29 +220,27 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (bêta)
+* Automation Anywhere (bêta)
 * Solver
+* Cherwell (bêta)
+* Cognite Data Fusion (bêta)
 * FHIR
 * Information Grid (bêta)
 * Jamf Pro (Beta)
+* MicroStrategy pour Power BI
 * Paxata
 * QubolePresto (bêta)
 * Roamler (bêta)
 * Shortcuts Business Insights (bêta)
 * Siteimprove
+* SurveyMonkey (bêta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (bêta)
-* Vessel Insight (bêta)
-* Workforce Dimensions (bêta)
-* Zucchetti HR Infinity (Beta)
-* Cognite Data Fusion (bêta)
-* MicroStrategy pour Power BI
-* SurveyMonkey (bêta)
 * Vena (bêta)
-* Acterys : Model Automation & Planning (bêta)
-* Automation Anywhere (bêta)
-* Cherwell (bêta)
+* Zucchetti HR Infinity (Beta)
+* Vessel Insight (bêta)
 * Requête vide
-
 
 
 
@@ -288,7 +289,7 @@ Cette section fournit des exemples de sources de données couramment utilisées.
 
 Le fichier PBIDS ne comporte *pas* les informations d’authentification et les informations sur les tables et les schémas.  
 
-Les extraits de code suivants montrent plusieurs exemples courants de fichiers PBIDS, mais ils ne sont pas complets ni exhaustifs. Pour les autres sources de données, vous pouvez vous reporter au [Format DSR (référence de source de données) pour les informations de protocole et d’adresse](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+Les extraits de code suivants montrent plusieurs exemples courants de fichiers PBIDS, mais ils ne sont pas complets ni exhaustifs. Pour les autres sources de données, vous pouvez vous reporter au [Format DSR (référence de source de données) pour les informations de protocole et d’adresse](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
 Ces exemples sont proposés à titre indicatif, ne sont pas pensés pour être exhaustifs et n’incluent pas tous les connecteurs pris en charge au format DSR. L’administrateur ou l’organisation peut créer ses propres sources de données en utilisant ces exemples comme guides, afin de créer et de prendre en charge ses propres fichiers de source de données.
 

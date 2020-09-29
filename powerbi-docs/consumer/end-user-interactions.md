@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea519b4f120bb643e88d29fba79a5ca464030797
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 9124322dbf7656b05c4cd174207e074cd4f807fe
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763962"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Comment les visuels s’entrefiltrent dans un rapport Power BI
 
@@ -52,7 +52,7 @@ Nous allons définir ces termes en examinant les pages du rapport ci-dessous. Le
     
 - Les filtres appliqués au niveau des visuels sont conservés lors du filtrage croisé et lors de la sélection croisée des autres visuels de la page du rapport. Ainsi, si des filtres ont été appliqués au niveau du visuel A par le concepteur de rapports ou par vous-même, et si vous utilisez le visuel A pour interagir avec le visuel B, les filtres appliqués au niveau du visuel A seront appliqués au visuel B.
 
-    ![Page du rapport après la sélection du segment Moderation dans le graphique en anneau](media/end-user-interactions/power-bi-visual-filters.png)
+    ![Page de rapport dont les filtres sont déjà définis](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Utilisation des filtres de rapport](../consumer/end-user-report-filter.md)

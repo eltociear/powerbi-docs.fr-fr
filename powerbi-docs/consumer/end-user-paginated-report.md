@@ -6,15 +6,15 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1f9dd6540707993696bddb4494fc73aa782d363
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 95b4b423b1dffb51d00760a97d21f2bf52df39d8
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008902"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860322"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Rapports paginés dans le service Power BI
 
@@ -36,7 +36,7 @@ Une fois que vous avez sélectionné le paramètre **Year** (Année), ce rapport
 
 ![Rapport simple à un paramètre](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels Power BI.
+Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels personnalisés.
 
 ## <a name="identify-a-paginated-report"></a>Identifier un rapport paginé
 
@@ -78,7 +78,7 @@ Certains rapports paginés comprennent de nombreuses pages.  Utilisez les contr�
 ### <a name="export-the-paginated-report"></a>Exporter le rapport paginé
 Vous disposez de diverses options pour l’exportation de rapports paginés, notamment PDF, Word, XML, PowerPoint, Excel, entre autres. Lors de l’exportation, la mise en forme est conservée autant que possible. Les rapports paginés exportés vers Excel, Word, PowerPoint, MHTML et PDF, par exemple, préservent la qualité de la mise en forme (« pixel parfait »). 
 
-![une nouvelle commande client](./media/end-user-paginated-report/power-bi-exporting.png)
+![Capture d’écran montrant un rapport paginé exporté](./media/end-user-paginated-report/power-bi-exporting.png)
 
 ![quatre types d’exportation différents](./media/end-user-paginated-report/power-bi-four.png)
 

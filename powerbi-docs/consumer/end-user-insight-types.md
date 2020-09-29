@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b5a935418aacb8de15ea6e7e942f2de440ecec1
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 8e8411ea29436a5ee19802d2a970b760062fe59e
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763985"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
 
@@ -77,7 +77,7 @@ Recherche des modèles récurrents dans les données d’une série chronologiqu
 ![Exemple de caractère saisonnier](./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png)
 
 ### <a name="steady-share"></a>Partage stable
-Met en évidence les cas où il existe une corrélation parent-enfant entre le partage d’une valeur enfant par rapport à la valeur globale du parent dans une variable continue. L’aperçu de partage stable s’applique au contexte d’une mesure, d’une dimension et d’une autre dimension date/heure. Cet aperçu se déclenche lorsqu’une valeur de dimension particulière, par exemple « la région du nord-est », a un pourcentage constant de ventes globales sur cette dimension date/heure.
+Met en évidence les cas où il existe une corrélation parent-enfant entre le partage d’une valeur enfant par rapport à la valeur globale du parent dans une variable continue. L’aperçu de partage stable s’applique au contexte d’une mesure, d’une dimension et d’une autre dimension date/heure. Cet insight se déclenche lorsqu’une certaine valeur de dimension, par exemple, « la région est », affiche un pourcentage constant de ventes globales sur cette dimension date/heure.
 
 L’aperçu de partage stable est similaire à l’aperçu de faible écart, car ils sont tous deux liés au manque de variance d’une valeur dans le temps. Toutefois, l’aperçu de partage stable mesure le manque de variance du **pourcentage global** dans le temps, tandis que l’aperçu de faible variance mesure le manque de variance des valeurs de mesure absolues sur une dimension.
 

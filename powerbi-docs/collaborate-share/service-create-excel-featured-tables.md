@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/30/2020
+ms.date: 09/17/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c74c618eb4c748d94260573c1ddd4266d3cf5c0e
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: efddfbdb70b2c20ad650eda6a16a5d7defb758e8
+ms.sourcegitcommit: fa0a1561aba2a392fb56e7030e1a0537806a9260
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478081"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811848"
 ---
 # <a name="set-featured-tables-in-power-bi-desktop-preview"></a>Définir des tables recommandées dans Power BI Desktop (préversion)
 
@@ -40,11 +40,11 @@ Dans la galerie Types de données d’Excel, vous pouvez rechercher des données
 
 1. Dans Power BI Desktop, accédez à la vue Modèle.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Vue Modèle":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Option Aperçu des tables recommandées":::
  
 2. Sélectionnez une table et définissez **Est une table proposée** sur **Oui**.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Définissez Est une table proposée sur Oui":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Option Aperçu des tables recommandées":::
 
 4. Dans **Configurer cette table recommandée**, renseignez les champs requis :
 
@@ -54,7 +54,7 @@ Dans la galerie Types de données d’Excel, vous pouvez rechercher des données
     - La valeur du champ **Étiquette de ligne** est utilisée dans Excel afin que les utilisateurs puissent facilement identifier la ligne. Elle apparaît en tant que valeur de cellule pour une cellule liée, dans le volet **Sélecteur de données** et dans la carte **Informations**. 
     - La valeur du champ **Colonne clé** fournit l’ID unique de la ligne. Cette valeur permet à Excel de lier une cellule à une ligne spécifique de la table.
 
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Configurer la table recommandée":::
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Option Aperçu des tables recommandées":::
 
 1. Une fois que vous avez publié ou importé le jeu de données dans le service Power BI, la table recommandée s’affiche dans la galerie Types de données d’Excel. Vous et d’autres créateurs de rapports pouvez également créer des rapports basés sur ce jeu de données.
 
@@ -66,19 +66,13 @@ Dans la galerie Types de données d’Excel, vous pouvez rechercher des données
 
 Voici les limitations de la préversion initiale.
 
-- Les tables recommandées dans les jeux de données Power BI qui utilisent les fonctionnalités suivantes ne sont pas affichées dans Excel : 
+- Les tables recommandées dans les jeux de données Power BI qui utilisent les fonctionnalités suivantes ne sont pas affichées dans Excel :
 
-    - Jeux de données de sécurité au niveau des lignes.
-    - Jeux de données Microsoft Information Protection activés.
     - Jeux de données DirectQuery.
     - Jeux de données avec une connexion active.
 
-- Excel affiche uniquement les données dans les colonnes et les colonnes calculées dans la table recommandée. Les éléments suivants ne sont pas fournis dans la préversion initiale :
-
-    - Mesures définies sur la table recommandée.
-    - Mesures définies sur les tables associées, et mesures implicites calculées à partir des relations.
-
-- Excel affiche uniquement les tables recommandées qui sont stockées dans les nouveaux espaces de travail Power BI. Les tables recommandées stockées dans les espaces de travail classiques, ou dans Mon espace de travail, ne sont pas affichées comme types de données dans Excel. Vous pouvez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail](service-upgrade-workspaces.md) dans Power BI.
+- Excel affiche uniquement les données dans les colonnes et les colonnes calculées dans la table recommandée. Ni les mesures définies sur des tables associées, ni les mesures implicites calculées à partir de relations ne sont fournies dans la préversion initiale.
+- Excel affiche uniquement les tables recommandées qui sont stockées dans les nouveaux espaces de travail Power BI. Les tables recommandées stockées dans les espaces de travail classiques n’apparaissent pas comme types de données dans Excel. Vous pouvez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail](service-upgrade-workspaces.md) dans Power BI.
 - Pour plus d’informations sur les autres considérations relatives à Excel, consultez [Considérations et limitations](service-excel-featured-tables.md#considerations-and-limitations) dans l’article « Accéder aux tables recommandées Power BI dans Excel ».
 
 ## <a name="next-steps"></a>Étapes suivantes

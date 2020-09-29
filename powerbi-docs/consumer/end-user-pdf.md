@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/05/2020
+ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 72e7550666960948ff3a3155a328613c95fcf43f
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: add9e4e5c5a68354eb3e2d1b9c9b86a3b8c4e614
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763808"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -30,13 +30,13 @@ Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le can
 
 1. Dans la barre de menus, sélectionnez **Exporter** > **PDF**.
 
-    ![Sélectionner Exporter dans la barre de menus](media/end-user-pdf/power-bi-export.png)
+    ![Sélectionner Exporter dans la barre de menus](media/end-user-pdf/power-bi-export-pdfs.png)
 
-    Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Valeurs actuelles** ou **Valeurs par défaut**. L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre. La plupart des utilisateurs choisissent cette option. Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui exporte le rapport dans son état d’origine, tel que le *concepteur* l’a partagé, sans refléter les modifications que vous avez apportées à cet état d’origine.
+    Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Valeurs actuelles** ou **Valeurs par défaut**. L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre. La plupart des utilisateurs choisissent cette option. Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui permet d’exporter le rapport dans son état d’origine, tel que le *concepteur* l’a partagé, sans refléter les modifications que vous avez apportées à cet état d’origine.
     
     En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés. Cochez cette case si vous voulez exporter seulement les onglets du rapport qui sont visibles dans votre navigateur. Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation. Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués. Une fois que vous avez effectué vos sélections, sélectionnez **Exporter** pour continuer.
     
-    Vous pouvez également choisir d’exporter uniquement la page active que vous affichez dans un rapport en activant la case à cocher « Exporter uniquement la page active ».  Par défaut, cette option est désactivée et toutes les pages sont exportées à partir de votre rapport.
+    Vous pouvez également choisir d’exporter uniquement la page active affichée dans un rapport en cochant l’option **Exporter uniquement la page active**.  Par défaut, cette option est désactivée et toutes les pages sont exportées à partir de votre rapport.
     
     Une barre de progression s’affiche en haut à droite. L’exportation peut prendre quelques minutes. Pendant ce temps, vous pouvez continuer à travailler dans Power BI.
 
@@ -57,13 +57,13 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Le fichier PDF inclut les données et visualisations visibles sur votre canevas Power BI. Si le visuel inclut des barres de défilement, le fichier PDF inclura le visuel dans son état par défaut sans défilement.  
 * Les éléments visuels R et Pyhton ne sont actuellement pas pris en charge. Dans le fichier PDF, ces visuels sont vides et affichent un message d’erreur. 
 * Les visuels Power BI qui ont été certifiés sont pris en charge. Pour plus d’informations sur les visuels Power BI certifiés, notamment concernant la manière de certifier un visuel Power BI, consultez [Obtenir un visuel Power BI certifié](../developer/visuals/power-bi-custom-visuals-certified.md). Les visuels Power BI qui n’ont pas été certifiés ne sont pas pris en charge. Dans le fichier PDF, ils s’affichent avec un message d’erreur.
-* L’élément visuel ESRI n'est pas pris en charge
+* Le visuel ESRI n’est pas pris en charge.
 * Les rapports contenant plus de 50 pages de rapport ne peuvent actuellement pas être exportés.
 * Le processus d’exportation du rapport au format PDF peut prendre quelques minutes : soyez patient. Les facteurs qui peuvent affecter la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.
 * Si l’option de menu **Exporter au format PDF** n’est pas disponible dans le service Power BI, il est probable que l’administrateur de votre locataire ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
 * Les images en arrière-plan sont rognées en fonction du cadre englobant du graphique. Nous vous recommandons de supprimer les images en arrière-plan avant d’exporter au format PDF.
 * Vous ne pouvez pas publier au format PDF un rapport qui appartient à un utilisateur externe à votre domaine de locataire Power BI, par exemple un rapport appartenant à une personne extérieure à votre organisation et partagé avec vous.
-* Si vous partagez un tableau de bord avec une personne externe à votre organisation, et donc un utilisateur qui n’est pas dans votre locataire Power BI, cet utilisateur ne peut pas exporter les rapports associés du tableau de bord partagé au format PDF. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec cassie@cohowinery.com. cassie@cohowinery.com ne peut cependant pas exporter les rapports associés au format PDF.
+* Si vous partagez un tableau de bord avec une personne externe à votre organisation, et donc un utilisateur qui n’est pas dans votre locataire Power BI, cet utilisateur ne peut pas exporter les rapports associés du tableau de bord partagé au format PDF. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec cassie@northwinds.com. cassie@northwinds.com ne peut cependant pas exporter les rapports associés au format PDF.
 * Quand vous exportez au format PDF avec des rapports qui contiennent une image d’arrière-plan, vous pouvez voir une image déformée dans l’exportation si vous utilisez les options **Normal** ou **Remplir** pour l’**arrière-plan de la page**. Pour de meilleurs résultats, il est recommandé d’utiliser l’option **Ajuster** afin d’éviter des problèmes avec votre document exporté.
 * Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation au format PDF. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
 * Les filtres d’URL ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.

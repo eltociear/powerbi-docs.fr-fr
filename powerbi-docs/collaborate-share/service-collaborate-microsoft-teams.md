@@ -1,6 +1,6 @@
 ---
 title: Collaborer dans Microsoft Teams avec Power BI
-description: Vous pouvez facilement partager du contenu Power BI interactif et collaborer sur celui-ci dans les canaux et conversations Microsoft Teams.
+description: À une époque où la dispersion des effectifs se généralise, de plus en plus d’organisations font appel à Microsoft Teams pour permettre à leurs employés de télétravailler tout en se synchronisant les uns avec les autres.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,23 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
-ms.openlocfilehash: 01e5b470e0beb189d64da18785a17e771bcaf59b
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.date: 09/15/2020
+ms.openlocfilehash: d0510a3c8caf2e07034b9410d4338431670833e5
+ms.sourcegitcommit: b3d32b8a4ce26fba7fdb5f1c5954d2b2e426503c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478035"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005488"
 ---
 # <a name="collaborate-in-microsoft-teams-with-power-bi"></a>Collaborer dans Microsoft Teams avec Power BI
 
-À une époque où le travail à distance et la dispersion de l’effectif se généralisent, de plus en plus d’organisations font confiance à Microsoft Teams pour permettre à leurs employés de rester en phase. Power BI offre plusieurs options pour partager du contenu Power BI interactif et collaborer sur celui-ci dans les canaux et conversations Microsoft Teams. 
+À une époque où la dispersion des effectifs se généralise, de plus en plus d’organisations font appel à Microsoft Teams pour permettre à leurs employés de télétravailler tout en se synchronisant les uns avec les autres. Cet article présente les possibilités de partage de contenu Power BI interactif et de collaboration dans les canaux et conversations Microsoft Teams. 
 
-- Avec l’onglet **Power BI** pour Microsoft Teams, vous pouvez [incorporer des rapports interactifs dans les canaux et les conversations Microsoft Teams](service-embed-report-microsoft-teams.md). L’onglet **Power BI** aide vos collègues à trouver les données de votre équipe et à discuter des données dans les canaux de votre équipe. 
+- Avec l’onglet **Power BI** pour Microsoft Teams, vous pouvez [incorporer des rapports interactifs dans les canaux et les conversations Microsoft Teams](service-embed-report-microsoft-teams.md). L’onglet Power BI aide vos collègues à trouver les données de votre équipe et à discuter des données dans les canaux de votre équipe. 
 - Créez un [aperçu de lien](service-teams-link-preview.md) quand vous collez un lien vers vos rapports, tableaux de bord et applications dans la boîte de message Microsoft Teams. L’aperçu de lien montre des informations sur le lien. 
-- Utilisez [Partager dans Teams](service-share-report-teams.md) quand vous consultez des rapports et des tableaux de bord dans le service Power BI pour démarrer rapidement des conversations dans Teams.
+- Utilisez [Partager dans Microsoft Teams](service-share-report-teams.md) quand vous consultez des rapports et des tableaux de bord dans le service Power BI pour lancer rapidement des conversations dans Microsoft Teams.
+- Utilisez l’application [Power BI dans Microsoft Teams](service-microsoft-teams-app.md) pour ajouter à Microsoft Teams toute l’expérience du service Power BI de base.
  
-:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Capture d’écran d’un rapport Power BI incorporé dans un canal Teams":::
+:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Capture d’écran d’un rapport Power BI incorporé dans un canal Microsoft Teams":::
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -56,10 +57,19 @@ Pour garantir que tous les membres d’une équipe ont accès aux rapports, vous
 - L’authentification unique n’est pas prise en charge pour le service d’aperçu de lien.
 - Les aperçus de lien ne fonctionnent pas dans les conversations des réunions ni dans les canaux privés.
 
+## <a name="microsoft-power-platform-in-microsoft-teams"></a>Microsoft Power Platform dans Microsoft Teams
+
+Les autres applications Microsoft Power Platform s’intègrent également à Microsoft Teams.
+
+- [Expérience d’administration de Power Platform](/power-platform/admin/about-teams-environment)
+- [Power Automate](/power-automate/teams/overview)
+- [Power Apps](/powerapps/teams/overview)
+- [Power Virtual Agents](/power-virtual-agents/)
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Incorporer du contenu Power BI dans Microsoft Teams](service-embed-report-microsoft-teams.md)
 - [Obtenir un aperçu de lien Power BI dans Microsoft Teams](service-teams-link-preview.md)
-- [Partager directement dans Teams à partir du service Power BI](service-share-report-teams.md)
+- [Partage direct dans Microsoft Teams à partir du service Power BI](service-share-report-teams.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

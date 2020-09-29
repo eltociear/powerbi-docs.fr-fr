@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
-ms.openlocfilehash: b911af4c7137aac9352c16985aac3a79a7eec87e
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.date: 09/15/2020
+ms.openlocfilehash: f7b37392581ad532093b0a543fe75cdb969d2c86
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86557161"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90855361"
 ---
-# <a name="deployment-pipelines-troubleshooting-preview"></a>Résolution des problèmes liés aux pipelines de déploiement (préversion)
+# <a name="deployment-pipelines-troubleshooting"></a>Résolution des problèmes des pipelines de déploiement
 
 Utilisez cet article pour résoudre les problèmes liés aux pipelines de déploiement.
 
@@ -39,6 +39,13 @@ Si les conditions suivantes ne sont pas remplies, vous ne pourrez pas voir le bo
 * Un espace de travail ne peut être affecté qu’à un seul pipeline
 
 * Vous êtes administrateur d’un nouvel espace de travail
+
+### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Pourquoi la balise de phase de pipeline n’apparaît-elle pas dans mon espace de travail ?
+
+Les pipelines de déploiement présentent une balise de phase de pipeline dans les espaces de travail qui leur sont affectés. Les balises des phases *Développement* et *Test* sont toujours visibles. Toutefois, la balise *Production* n’apparaît que si vous avez [accès au pipeline](deployment-pipelines-process.md#user-with-pipeline-access) ou si vous êtes [administrateur d’espace de travail](deployment-pipelines-process.md#workspace-admin).
+
+> [!div class="mx-imgBorder"]
+> ![Capture d’écran de la balise de production dans un espace de travail de pipeline de production](media/deployment-pipelines-troubleshooting/production-tag.png)
 
 ## <a name="licensing"></a>Licences
 
@@ -72,7 +79,7 @@ Les espaces de travail qui ne respectent pas ces conditions ne sont pas affiché
 
 ### <a name="how-can-i-assign-workspaces-to-all-the-stages-in-a-pipeline"></a>Comment puis-je attribuer des espaces de travail à toutes les étapes d’un pipeline ?
 
-Vous pouvez affecter un espace de travail par pipeline. Une fois qu’un espace de travail est affecté à un pipeline, vous pouvez le déployer sur les étapes suivantes du pipeline. Lors du premier déploiement, un nouvel espace de travail est créé avec des copies des éléments à l’étape source. Les relations des éléments copiés sont conservées. Pour plus d’informations, consultez [Comment affecter un espace de travail à un pipeline de déploiement](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline).
+Vous pouvez affecter un espace de travail par pipeline. Une fois qu’un espace de travail est affecté à un pipeline, vous pouvez le déployer sur les étapes suivantes du pipeline. Lors du premier déploiement, un nouvel espace de travail est créé avec des copies des éléments à la phase source. Les relations des éléments copiés sont conservées. Pour plus d’informations, consultez [Comment affecter un espace de travail à un pipeline de déploiement](deployment-pipelines-get-started.md#step-2---assign-a-workspace-to-a-deployment-pipeline).
 
 ### <a name="why-did-my-first-deployment-fail"></a>Pourquoi mon premier déploiement échoue-t-il ?
 
@@ -81,7 +88,7 @@ Votre premier déploiement peut avoir échoué pour plusieurs raisons. Certaines
 |Erreur  |Action  |
 |---------|---------|
 |Vous n’avez pas [d’autorisations de capacité Premium](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |Pour obtenir des autorisations de capacité Premium, demandez à un administrateur de capacité d’ajouter votre espace de travail à une capacité ou demandez l’attribution d’autorisations pour la capacité. Une fois que l’espace de travail est dans une capacité, redéployez-le.        |
-|Vous n’avez pas les autorisations d’espace de travail.     |Pour déployer, vous devez être membre de l’espace de travail. Demandez à votre administrateur d’espace de travail de vous accorder les autorisations appropriées.         |
+|Vous n’avez pas les autorisations d’espace de travail.     |Vous devez être membre de l’espace de travail pour pouvoir effectuer le déploiement. Demandez à votre administrateur d’espace de travail de vous accorder les autorisations appropriées.         |
 |Votre administrateur Power BI a désactivé la création d’espaces de travail.     |Contactez votre administrateur Power BI pour obtenir de l’aide.         |
 |Votre espace de travail n’est pas une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md).     |Créez votre contenu dans la nouvelle expérience d’espace de travail. Si vous disposez de contenu dans un espace de travail classique, vous pouvez le [mettre à niveau](../collaborate-share/service-upgrade-workspaces.md) vers une nouvelle expérience d’espace de travail.         |
 |Vous utilisez le [déploiement sélectif](deployment-pipelines-get-started.md#selective-deployment) et ne sélectionnez pas le jeu de données de votre contenu.     |Effectuez l’une des opérations suivantes : </br></br>Désélectionnez le contenu lié à votre jeu de données. Le contenu non sélectionné (comme les rapports ou les tableaux de bord) ne sera pas copié à l’étape suivante. </br></br>Sélectionnez le jeu de données lié au contenu sélectionné. Votre jeu de données sera copié à l’étape suivante.         |
@@ -112,7 +119,7 @@ Il manque des valeurs dans les règles de votre jeu de données. Cela peut être
 
 ![Capture d’écran de l’erreur relative aux règles non valides, qui s’affiche lorsqu’un déploiement échoue en raison de liens rompus.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
-En cas d’échec d’un déploiement précédemment réussi en raison de liens rompus, un avertissement s’affiche. Vous pouvez cliquer sur **Configurer les règles** pour accéder au volet Paramètres de déploiement, où le jeu de données ayant échoué est marqué. Lorsque vous cliquez sur le jeu de données, les règles non respectées sont marquées.
+En cas d’échec d’un déploiement précédemment réussi en raison de liens rompus, un avertissement s’affiche. Vous pouvez sélectionner **Configurer les règles** pour accéder au volet Paramètres de déploiement, où est marqué le jeu de données en échec. Lorsque vous sélectionnez le jeu de données, les règles non respectées sont marquées.
 
 Pour déployer avec succès, corrigez ou supprimez les règles non respectées, puis redéployez.
 
@@ -120,9 +127,9 @@ Pour déployer avec succès, corrigez ou supprimez les règles non respectées, 
 
 Vous ne pouvez pas modifier la connexion à la source de données dans le service Power BI.
 
-Si vous souhaitez modifier la source de données au cours des phases de test ou de production, vous pouvez utiliser des [règles de jeu de données](deployment-pipelines-get-started.md#step-4---create-dataset-rules) ou des [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup). Les règles de jeu de données sont prises en compte uniquement après le prochain déploiement.
+Si vous souhaitez modifier la source de données au cours des phases de test ou de production, vous pouvez utiliser des [règles de jeu de données](deployment-pipelines-get-started.md#step-4---create-dataset-rules) ou des [API](/rest/api/power-bi/datasets/updateparametersingroup). Les règles de jeu de données sont prises en compte uniquement après le prochain déploiement.
 
-### <a name="i-fixed-a-bug-in-production-but-now-i-cant-click-the-deploy-to-previous-stage-button-why-is-it-greyed-out"></a>J’ai résolu un bogue en production, mais je ne peux pas cliquer sur le bouton « Déployer sur une phase précédente ». Pourquoi le bouton est-il grisé ?
+### <a name="i-fixed-a-bug-in-production-but-now-i-cant-select-the-deploy-to-previous-stage-button-why-is-it-greyed-out"></a>J’ai résolu un bogue en production. Depuis, je ne peux plus sélectionner le bouton « Déployer sur une phase précédente ». Pourquoi le bouton est-il grisé ?
 
 Vous pouvez uniquement revenir sur une étape vide. Si vous avez du contenu en phase de test, vous ne pourrez pas revenir en arrière à partir de la production.
 

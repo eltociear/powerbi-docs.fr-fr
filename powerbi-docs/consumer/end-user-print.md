@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/12/2020
+ms.date: 09/19/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4c44e7d0ff21f49887a069e0a83686aafecc2f24
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 600b8d1447d50a1647097d94df9077299f00cccf
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537271"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90860421"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Impression à partir du service Power BI
 
@@ -49,9 +49,9 @@ Testez les paramètres de votre navigateur jusqu’à ce que vous obteniez l’a
 
 ## <a name="print-a-dashboard"></a>Imprimez un tableau de bord
 1. Ouvrez le tableau de bord que vous souhaitez imprimer.
-2. Dans l’angle supérieur gauche, sélectionnez Exporter, puis choisissez **Imprimer cette page**.
+2. Dans l’angle supérieur gauche, sélectionnez **Fichier**, puis choisissez **Imprimer cette page**.
    
-    ![Option d’impression du tableau de bord](./media/end-user-print/power-bi-dashboard-print.png)
+    ![Option d’impression du tableau de bord](./media/end-user-print/power-bi-dashboard-print-options.png)
 
 3. La fenêtre d’impression de votre navigateur s’ouvre. Choisissez les paramètres. Par exemple, si votre tableau de bord est plus large que long, vous souhaiterez peut-être passer en mode **Paysage**. Sélectionnez **Imprimer**.
    
@@ -62,11 +62,13 @@ Testez les paramètres de votre navigateur jusqu’à ce que vous obteniez l’a
 
 3. Pour [ouvrir la vignette en mode Focus](end-user-focus.md), passez le pointeur sur le tableau de bord pour afficher **Plus d’options** (...), sélectionnez ce bouton, puis choisissez l’option **Ouvrir en mode Focus** ou l’icône Focus ![icône Focus](./media/end-user-print/power-bi-focus-icon.png).
    
-    ![menu des points de suspension](./media/end-user-print/power-bi-menu-options.png)
+    ![menu des points de suspension](./media/end-user-print/power-bi-focus-tile.png)
 
 4. Pointez sur la vignette pour afficher le menu Options
    
-    ![menu d’options Plein écran](./media/end-user-print/menu-options-new.png)
+    ![menu d’options Plein écran](./media/end-user-print/power-bi-menu-option.png)
+
+    ![mode plein écran](./media/end-user-print/power-bi-focus.png)
 
 4. Sélectionnez l’icône d’impression ![Icône Imprimer](./media/end-user-print/print-icon.png).     
 
@@ -83,9 +85,9 @@ Testez les paramètres de votre navigateur jusqu’à ce que vous obteniez l’a
 ## <a name="print-a-report-page"></a>Imprimez une page de rapport
 Vous pouvez imprimer les rapport une seule page à la fois.
 
-1. Ouvrez le rapport, puis sélectionnez **Exporter** > **Imprimer** pour imprimer la page de rapport active.
+1. Ouvrez le rapport, puis sélectionnez **Fichier** > **Imprimer cette page** pour imprimer la page de rapport active.
    
-    ![menu Fichier Power BI](./media/end-user-print/power-bi-report-print.png)
+    ![menu Fichier Power BI](./media/end-user-print/power-bi-print-report.png)
 2. La fenêtre d’impression de votre navigateur s’ouvre.
 
 3. Suivez les étapes d’impression fournies dans la section **Imprimer un tableau de bord** ci-dessus.
@@ -95,9 +97,12 @@ Vous pouvez imprimer les rapport une seule page à la fois.
 ## <a name="print-a-report-visual"></a>Imprimez un visuel de rapport
 1. [Ouvrez le visuel en mode Focus](end-user-focus.md) en pointant sur la vignette et en sélectionnant l’icône Focus ![icône Focus](./media/end-user-print/power-bi-focus-icon.png) en haut à droite.
 
-2. Dans l’angle supérieur gauche, sélectionnez **Exporter** > **Imprimer** pour imprimer le visuel.
 
-    ![menu Fichier Power BI](./media/end-user-print/power-bi-report-print.png)
+    ![Ouverture du visuel en mode Focus](./media/end-user-print/power-bi-visual-focus.png)
+
+2. Dans l’angle supérieur gauche, sélectionnez **Fichier** > **Imprimer cette page** pour imprimer le visuel.
+
+    ![Capture d’écran du menu Fichier Power BI](./media/end-user-print/power-bi-visual-print.png)
 
 
 3. Suivez les étapes d’impression fournies dans la section **Imprimer un tableau de bord** ci-dessus.
@@ -110,12 +115,12 @@ Vous pouvez imprimer les rapport une seule page à la fois.
 * R : Vous ne voyez cette option que si vous avez déjà configuré le pilote PDF dans votre navigateur.    
 * Q : Ce que je vois lorsque je sélectionne **Imprimer** ne correspond pas à ce qui est affiché ici.    
 * R : Les fenêtres d’impression varient selon la version du navigateur et des logiciels.
-* Q : Mon impression n’est pas dimensionnée correctement.  Mon tableau de bord ne tient pas sur la page. Autres questions sur la mise à l’échelle et l’orientation.    
+* Q : Mon impression n’est pas dimensionnée correctement.  Mon tableau de bord ne tient pas sur la page. Autres questions sur la mise à l’échelle et l’orientation.    
 * R : Nous ne pouvons pas garantir que la copie imprimée aura exactement la même apparence que dans le service Power BI. Les fonctionnalités telles que la mise à l’échelle, les marges, les détails des visuels, l’orientation et la taille ne sont pas contrôlées par Power BI. Essayez d’ajuster les paramètres d’impression de votre navigateur. Nous vous suggérons notamment de modifier l’orientation des pages (Portrait ou Paysage), la taille des marges ou l’échelle. Si cela ne résout pas le problème, reportez-vous à la documentation de votre navigateur.      
 * Q : Lorsque j’imprime en mode Plein écran, je ne vois pas l’option d’impression lorsque je pointe sur le visuel.   
 * R : Revenez au tableau de bord ou au rapport dans la vue par défaut, puis rouvrez le visuel en mode Focus, puis en mode Plein écran. 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Partager des tableaux de bord et des rapports avec des collègues et d’autres utilisateurs](../collaborate-share/service-share-dashboards.md)
+[Partager des tableaux de bord et des rapports avec vos collègues et d’autres utilisateurs](../collaborate-share/service-share-dashboards.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

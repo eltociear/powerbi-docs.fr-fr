@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 07/22/2020
-ms.openlocfilehash: 06bd8271904b9c44de6c71e287f0560c54f6d031
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: fb79358bb9149498a39cca32db618cb6971121de
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253914"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90964775"
 ---
 # <a name="get-a-power-bi-link-preview-in-microsoft-teams"></a>Obtenir un aperçu du lien Power BI dans Microsoft Teams
 
@@ -27,7 +27,7 @@ Quand vous collez un lien vers vos rapports, tableaux de bord et applications da
 
 Le service d’aperçu de lien nécessite que vos utilisateurs se connectent. Pour vous déconnecter, sélectionnez l’icône **Power BI** dans le bas de la boîte de message. Sélectionnez ensuite **Se déconnecter**.
 
-Pour plus d’informations sur la façon dont Power BI et Teams collaborent et notamment pour connaître les conditions que vous devez remplir, consultez [Collaborer dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md).
+Pour plus d’informations sur l’interaction entre Power BI et Microsoft Teams, et notamment pour connaître les conditions à remplir, consultez [Collaboration dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md).
 
 ## <a name="get-a-link-preview"></a>Obtenir un aperçu d’un lien
 

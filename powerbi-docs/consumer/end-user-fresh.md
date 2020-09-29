@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.custom: ''
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 09/15/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 73affb07b137ee60fe00f7d344759ec2de1bcb85
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: c3ae3974b411ccd7f1be175910878cdeb0bc5c40
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215899"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763209"
 ---
 # <a name="your-content-is-up-to-date"></a>Votre contenu est à jour
 
@@ -23,7 +23,7 @@ ms.locfileid: "86215899"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-En tant que *consommateur*, vous interagissez avec du contenu qui a été créé par des *concepteurs* et partagé avec vous. Vous vous demandez peut-être parfois si ce contenu est à jour ou simplement quand il a été actualisé pour la dernière fois. Savoir que vous utilisez le contenu le plus récent vous rassure.  
+En tant *qu’utilisateur professionnel*, vous interagissez avec du contenu qui a été créé par des *concepteurs* et partagé avec vous. Vous vous demandez peut-être parfois si ce contenu est à jour ou simplement quand il a été actualisé pour la dernière fois. Savoir que vous utilisez le contenu le plus récent vous rassure.  
  
 ![tableau de bord Power BI](media/end-user-fresh/power-bi-dashboards.png)
 
@@ -38,7 +38,7 @@ Si vous avez des questions sur l’actualisation des données, contactez le conc
 
 Le nom du propriétaire est disponible à partir de la barre de titre des tableaux de bord et des rapports. Sélectionnez le nom du rapport ou du tableau de bord pour afficher des détails supplémentaires, dont le **Propriétaire**.
 
-![Propriétaire de tableau de bord Power BI](media/end-user-fresh/power-bi-owner.png)
+![Propriétaire de tableau de bord Power BI](media/end-user-fresh/power-bi-designer.png)
 
 
 ### <a name="apps"></a>Applications
@@ -47,19 +47,19 @@ L’écran de l’application affiche le nom du concepteur ainsi que la date de 
 
 1. Dans le volet de navigation, sélectionnez **Applications**.
 
-    ![volet de navigation](media/end-user-fresh/power-bi-nav-app.png)
+    ![volet de navigation](media/end-user-fresh/power-bi-nav-apps.png)
 
 
 
 2. Pointez sur l’application pour afficher le titre, la date d’actualisation et le nom du concepteur. 
 
-    ![2 applications dont une est sélectionnée](media/end-user-fresh/power-bi-app.png)
+    ![2 applications dont une est sélectionnée](media/end-user-fresh/power-bi-apps.png)
 
 
 ### <a name="shared-with-me"></a>Éléments partagés avec moi
 L’écran **Partagé avec moi** affiche le nom du propriétaire du contenu ainsi que la date à laquelle le contenu a été partagé avec vous pour la dernière fois.
 
-![écran Partagé avec moi montrant la date de modification et le propriétaire](media/end-user-fresh/power-bi-share.png) 
+![écran Partagé avec moi montrant la date de modification et le propriétaire](media/end-user-fresh/power-bi-shared.png) 
 
 
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Comment trouver la date de la dernière actualisation ?
@@ -70,20 +70,20 @@ Pour les vignettes de tableau de bord, affichez la vignette en mode Focus pour c
 
 1. Sur une vignette de tableau de bord, sélectionnez **Plus d’options** (...) et choisissez **Ouvrir en mode Focus**.
 
-    ![menu affiché après la sélection des points de suspension](media/end-user-fresh/power-bi-focus-mode.png)
+    ![menu affiché après la sélection des points de suspension](media/end-user-fresh/power-bi-fresh-focus.png)
 
 2. La date de la dernière actualisation est affichée en haut à droite. Si vous ne la voyez pas, développez votre navigateur pour l’agrandir. 
 
-    ![navigateur agrandi montrant la dernière actualisation](media/end-user-fresh/power-bi-last-refresh2.png)
+    ![navigateur agrandi montrant la dernière actualisation](media/end-user-fresh/power-bi-last-refresh.png)
 
 ### <a name="dashboards-and-reports"></a>Tableaux de bord et rapports
-Une autre méthode pour voir la date de la dernière actualisation consiste à utiliser **Afficher les éléments associés**.  L’option **Afficher les éléments associés** est disponible en sélectionnant **Plus d’options** (...) dans la barre de menus supérieure de Power BI.
+Un autre moyen de voir la date de la dernière actualisation consiste à utiliser **Voir le contenu associé**,  disponible en sélectionnant **Plus d’actions** (…) dans la barre de menus supérieure de Power BI.
 
-![Sélectionner Afficher les éléments associés dans le menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
+![Sélection de Voir le contenu associé dans le menu](media/end-user-fresh/power-bi-see-related.png)
 
 Le volet **Contenu associé** affiche les informations sur la dernière actualisation du jeu de données sous-jacent dans le tableau de bord ou le rapport.
 
-![tableau de bord Power BI](media/end-user-fresh/power-bi-refresh.png)
+![Capture d’écran du volet Contenu associé](media/end-user-fresh/power-bi-see-related-screen.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Que se passe-t-il si une application est supprimée par le concepteur ?
 

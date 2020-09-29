@@ -1,5 +1,5 @@
 ---
-title: Partager directement dans Teams à partir du service Power BI
+title: Partage direct dans Microsoft Teams à partir du service Power BI
 description: Vous pouvez partager des tableaux de bord et des rapports Power BI directement dans Microsoft Teams à partir du service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,14 +10,14 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/31/2020
-ms.openlocfilehash: 0152f835f130eaea12addee1cc8daa15975d7aa1
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: 6f4f083f7ec36fff13624b6b0d28ffd810e0d62b
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90964818"
 ---
-# <a name="share-directly-to-teams-from-the-power-bi-service"></a>Partager directement dans Teams à partir du service Power BI
+# <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Partage direct dans Microsoft Teams à partir du service Power BI
 
 Vous pouvez partager des tableaux de bord, des rapports et des visuels Power BI directement dans Microsoft Teams à partir du service Power BI. Utilisez la fonctionnalité **Partager dans Teams** pour démarrer rapidement des conversations quand vous consultez des rapports et des tableaux de bord dans le service Power BI.
 
@@ -27,9 +27,9 @@ Pour utiliser la fonctionnalité **Partager dans Teams** dans Power BI, vérifie
 
 - Les administrateurs Power BI n’ont pas désactivé le paramètre de locataire **Partager dans Teams** dans le portail d’administration Power BI. Ce paramètre permet aux organisations de masquer les boutons **Partager dans Teams**. Consultez l’article sur le [portail d’administration Power BI](../admin/service-admin-portal.md#share-to-teams-tenant-setting) pour plus d’informations.
 
-Consultez [Collaborer dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md) pour obtenir des informations générales sur la façon dont Power BI et Teams fonctionnent ensemble et sur d’autres exigences.
+Pour plus d’informations sur l’interaction entre Power BI et Microsoft Teams, et notamment pour connaître d’autres conditions à remplir, consultez [Collaboration dans Microsoft Teams avec Power BI](service-collaborate-microsoft-teams.md).
 
-## <a name="share-power-bi-content-to-teams"></a>Partager du contenu Power BI dans Teams
+## <a name="share-power-bi-content-to-microsoft-teams"></a>Partage de contenu Power BI dans Microsoft Teams
 
 Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bord et des visuels dans le service Power BI dans les conversations et canaux Microsoft Teams.
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 09/17/2020
 ms.author: painbar
-ms.openlocfilehash: e66d1b8b57af9ee04239e7222db742b64cc25883
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e152743c243e1af02650d919168dee0969e3a89e
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90763762"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Installer et distribuer des applications modèles dans votre organisation
 
@@ -75,13 +75,9 @@ Pour installer, personnaliser et distribuer une application modèle, vous avez b
 
    ![Lien Connecter vos données de l’application GitHub](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
 
+    La boîte de dialogue Paramètres s’ouvre. Vous pouvez y modifier la source de données en remplaçant l’exemple de données par votre propre source de données (cf. [limitations connues](service-template-apps-overview.md#known-limitations)). Ensuite vient la boîte de dialogue Méthode d’authentification. Vous devrez peut-être redéfinir les valeurs indiquées dans ces boîtes de dialogue. Pour plus d’informations, consultez la documentation de l’application modèle que vous installez.
 
-    
-    Cette opération ouvre une boîte de dialogue ou une série de boîtes de dialogue vous permettant de modifier la source de données de l’exemple de données en spécifiant votre propre source de données. Cela revient généralement à redéfinir les paramètres du jeu de données et les informations d’identification de la source de données. Consultez [Limitations connues](service-template-apps-overview.md#known-limitations).
-    
-    Dans l’exemple ci-dessous, la connexion aux données implique deux boîtes de dialogue.
-
-   ![Boîtes de dialogue de connexion aux données](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
+   ![Capture d’écran des boîtes de dialogue de connexion aux données](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
     Une fois que vous avez fini de renseigner les boîtes de dialogue de connexion, le processus de connexion démarre. Une bannière vous informe que les données sont en cours d’actualisation et qu’en attendant, vous voyez des exemples de données.
 
@@ -110,11 +106,11 @@ De temps à autre, les créateurs d’applications modèles publient de nouvelle
 
 Si vous avez initialement téléchargé l’application à partir d’AppSource, quand une nouvelle version de l’application de modèle devient disponible, vous êtes informé de deux façons :
 * Une bannière de mise à jour apparaît dans le service Power BI et vous informe qu’une nouvelle version de l’application est disponible.
-  ![Notification de mise à jour de l’application modèle](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+  ![Bannière de notification de mise à jour de l’application modèle](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
 * Vous recevez une notification dans le volet de notification de Power BI.
 
 
-  ![Notification de mise à jour de l’application modèle](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
+  ![Volet de notification de mise à jour de l’application modèle](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Si vous avez initialement obtenu l’application via un lien direct plutôt que via AppSource, le seul moyen de savoir quand une nouvelle version est disponible est de contacter le créateur de l’application modèle.

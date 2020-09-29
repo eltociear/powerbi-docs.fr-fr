@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/25/2020
 ms.custom: seodec18
-ms.openlocfilehash: 38e6668c0fb15d1279923b77042cdedebe6dd139
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: e4aec179b298c5a8ca52cf73ac5fdceed7e8602a
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485067"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90857677"
 ---
 # <a name="add-power-bi-urls-to-your-allow-list"></a>Ajout des URL Power BI à la liste verte
 [//]: # "suparnap, miwehnia et natham sont les contacts pour la gestion de cette liste"
@@ -38,7 +38,7 @@ Power BI dépend des points de terminaison obligatoires dans les sections relati
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** Authentification et identité | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).  | N/A |
+| 1 | **Obligatoire :** Authentification et identité | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).  | N/A |
 
 ## <a name="general-site-usage"></a>Utilisation générale du site
 
@@ -50,7 +50,7 @@ Pour l’utilisation générale de Power BI, vous devez être en mesure de vous 
 | 2 | **Obligatoire :** API de back-end | *.analysis.windows.net | TCP 443 |
 | 3 | **Obligatoire :** API de back-end | *.pbidedicated.windows.net | TCP 443 |
 | 4 | **Obligatoire :** Réseau de distribution de contenu (CDN) | content.powerapps.com | TCP 443 |
-| 5 | **Obligatoire :** Intégration de Microsoft 365 | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
+| 5 | **Obligatoire :** Intégration de Microsoft 365 | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
 | 6 | **Obligatoire :** Portail | *.powerbi.com | TCP 443 |
 | 7 | **Obligatoire :** Données de télémétrie du service | dc.services.visualstudio.com | TCP 443 |
 | 8 | **Facultatif :** Messages d’information | dynmsg.modpim.com | TCP 443 |
@@ -63,7 +63,7 @@ Pour effectuer des fonctions d’administration dans Power BI, vous devez être 
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** Pour la gestion des utilisateurs et la consultation des journaux d’audit | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
+| 1 | **Obligatoire :** Pour la gestion des utilisateurs et la consultation des journaux d’audit | Consultez la documentation pour connaître les [URL Microsoft 365 et Office Online](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
 | | | |
 
 ## <a name="getting-data"></a>Obtention de données
@@ -74,7 +74,7 @@ Pour obtenir des données auprès de sources de données spécifiques, comme One
 | --- | --- | --- | --- |
 | 1 | **Obligatoire :** AppSource (applications internes ou externes dans Power BI) | appsource.microsoft.com <br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Facultatif :** Se connecter et obtenir des données pour les packs de contenu | Dépend des packs de contenu utilisés | Dépend des packs de contenu utilisés |
-| 3 | **Facultatif :** Importation de fichiers à partir de OneDrive - Personnel | Consultez le site [URL et ports nécessaires pour OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N/A |
+| 3 | **Facultatif :** Importation de fichiers à partir de OneDrive - Personnel | Consultez le site [URL et ports nécessaires pour OneDrive](/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Facultatif :** Vidéo du tutoriel Power BI en 60 secondes | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
 | 5 | **Facultatif :** Sources de données de streaming PubNub | Consultez la [documentation de PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
 | | | |
@@ -85,7 +85,7 @@ Power BI dépend de certains points de terminaison pour prendre en charge vos ta
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** Intégration d’Excel | Consultez la documentation pour connaître les [URL des services communs Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
+| 1 | **Obligatoire :** Intégration d’Excel | Consultez la documentation pour connaître les [URL des services communs Microsoft 365 et Office Online](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
 | | | |
 
 ## <a name="power-bi-visuals"></a>Visuels Power BI
@@ -96,8 +96,8 @@ Power BI dépend de certains points de terminaison pour voir et accéder aux vis
 | --- | --- | --- | --- |
 | 1 | **Obligatoire :** Importer un visuel personnalisé à partir de l’interface de Place de marché ou d’un fichier | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Facultatif :** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
-| 3 | **Facultatif :** PowerApps | Consultez la [section Services requis](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) sur site de la configuration système requise pour PowerApps | N/A |
-| 4 | **Facultatif :** Visio | Consultez la documentation relatives aux [URL des services communs Microsoft 365 et Office Online](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), ainsi qu’à [SharePoint Online et OneDrive Entreprise](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business). | N/A |
+| 3 | **Facultatif :** PowerApps | Consultez la [section Services requis](/powerapps/maker/canvas-apps/limits-and-config#required-services) sur site de la configuration système requise pour PowerApps | N/A |
+| 4 | **Facultatif :** Visio | Consultez la documentation relatives aux [URL des services communs Microsoft 365 et Office Online](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), ainsi qu’à [SharePoint Online et OneDrive Entreprise](/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business). | N/A |
 | | | |
 
 ## <a name="related-external-sites"></a>Sites externes connexes

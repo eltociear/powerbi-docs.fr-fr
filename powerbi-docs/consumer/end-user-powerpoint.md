@@ -7,15 +7,15 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/01/2020
+ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1153b20e77958bbecce9284add3ae7eab21cd47d
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 841b8bb72b7b2a13c833fd313027b38b57511af3
+ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90764284"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
@@ -44,13 +44,13 @@ Quand le rapport que vous souhaitez exporter vers PowerPoint est affiché sur le
 
 ![Sélectionner Exporter dans la barre de menus](media/end-user-powerpoint/power-bi-export.png)
 
-Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Valeurs actuelles** ou **Valeurs par défaut**. L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option. Si vous avez défilé, **Valeurs actuelles** n’inclut pas l’état de défilement de l’objet visuel, mais exporte à la place la partie supérieure des données. Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui exporte le rapport dans l’état initial, tel que le *concepteur* l’a partagé, sans refléter les changements que vous avez apportés à l’état initial.
+Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Valeurs actuelles** ou **Valeurs par défaut**. L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option. Si vous avez défilé, **Valeurs actuelles** n’inclut pas l’état de défilement de l’objet visuel, mais exporte à la place la partie supérieure des données. Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui permet d’exporter le rapport dans son état d’origine, tel que le *concepteur* l’a partagé, sans refléter les modifications que vous avez apportées à cet état d’origine.
 
 ![Sélectionner les éléments à exporter](media/end-user-powerpoint/power-bi-current-values.png)
  
-En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés. Cochez cette case si vous voulez exporter seulement les onglets du rapport qui sont visibles dans votre navigateur. Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation. Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués. Un onglet d’info-bulle est un exemple d’onglet masqué. Les [info-bulles personnalisées](../create-reports/desktop-tooltips.md) sont créées par les *concepteurs* de rapports et ne s’affichent pas sous la forme d’onglets de rapport dans le service Power BI pour les *consommateurs*. 
+En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés. Cochez cette case si vous voulez exporter seulement les onglets du rapport qui sont visibles dans votre navigateur. Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation. Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués. Un onglet d’info-bulle est un exemple d’onglet masqué. Les [info-bulles personnalisées](../create-reports/desktop-tooltips.md), créées par les *concepteurs* de rapports, ne s’affichent pas sous forme d’onglets de rapport dans le service Power BI pour les *utilisateurs professionnels*. 
 
-Vous pouvez également choisir d’exporter uniquement la page active que vous affichez dans un rapport en activant la case à cocher « Exporter uniquement la page active ».  Par défaut, cette option est désactivée et toutes les pages sont exportées à partir de votre rapport.
+Vous pouvez également choisir d’exporter uniquement la page active affichée dans un rapport en cochant l’option **Exporter uniquement la page active**.  Par défaut, cette option est désactivée et toutes les pages sont exportées à partir de votre rapport.
 
 Une fois que vous avez effectué vos sélections, sélectionnez **Exporter** pour continuer. Dans le coin supérieur droit de la fenêtre du navigateur du service Power BI, une bannière de notification indique que le rapport est en cours d’exportation vers PowerPoint. 
 
@@ -76,7 +76,7 @@ Lorsque vous ouvrez le fichier PowerPoint que Power BI a exporté, quelques él
 
 
 3. Chaque page du rapport est une diapositive distincte, comme indiqué dans le volet de navigation. 
-4. Votre rapport publié s’affiche dans la langue définie dans vos paramètres Power BI, ou selon les paramètres régionaux de votre navigateur. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**. Pour obtenir des informations sur les paramètres régionaux, consultez [Langues et pays/régions pris en charge pour Power BI](../fundamentals/supported-languages-countries-regions.md).
+4. Votre rapport publié s’affiche dans la langue définie dans vos paramètres Power BI, ou selon les paramètres régionaux de votre navigateur. Pour afficher ou définir la langue choisie dans votre navigateur, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**. Pour obtenir des informations sur les paramètres régionaux, consultez [Langues et pays/régions pris en charge pour Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 Quand vous voyez à une diapositive, vous voyez que chaque page du rapport est une image indépendante. Le défilement n’y est pas disponible, car chaque diapositive est une image statique.
@@ -110,8 +110,8 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
     - Rapports dont le traitement prend plus d’une heure. 
     - Pages de rapport dont le chargement prend plus de 6 minutes. 
 
-* Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, il est probable que l’administrateur de votre locataire ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
-* Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation PowerPoint. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
+* Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, c’est probablement le signe que l’administrateur client ou le propriétaire du rapport a désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur client ou le propriétaire.
+* Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation PowerPoint. Pour afficher ou définir la langue choisie dans votre navigateur, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
 
 
 

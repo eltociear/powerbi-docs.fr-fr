@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 09/18/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: f652d09d5d954123a47b45b30ab1076763018225
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 7009b4b195c89659c032b578ada130e12389b496
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642649"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90858850"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -183,6 +183,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la grande maj
 - Les visuels « R » et Python ne sont actuellement pas pris en charge dans les rapports **Publier sur le web**.
 - Exportation de données à partir de visuels dans un rapport qui a été publié sur le web.
 - Visuels ArcGIS Maps for Power BI.
+- Questions et réponses pour les visuels Power BI.
 - Rapports contenant des mesures DAX au niveau du rapport.
 - Modèles de requêtes de données à authentification unique.
 - Informations confidentielles ou propriétaires sécurisées.

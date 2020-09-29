@@ -6,15 +6,16 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 06/25/2020
-ms.openlocfilehash: 69ad9fc76250e09c2cea5a8d5dc0d3b2c13f72bf
-ms.sourcegitcommit: 6d7d5e6b19e11d557dfa1b79b745728b4ee02b4e
+ms.custom: contperfq1
+ms.date: 09/22/2020
+ms.openlocfilehash: a364d3dd2d2175e4509d05f4c34eec31a1a371b6
+ms.sourcegitcommit: 37ec0e9e356b6d773d7d56133fb8ed6c06b65fd3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89220880"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91024032"
 ---
-# <a name="understand-the-deployment-process-preview"></a>Comprendre le processus de déploiement (préversion)
+# <a name="understand-the-deployment-process"></a>Comprendre le processus de déploiement
 
 Le processus de déploiement vous permet de cloner le contenu d’une étape de pipeline vers une autre, en général du développement au test et du test à la production.
 
@@ -90,7 +91,7 @@ Les pipelines de déploiement ne prennent pas en charge les éléments suivants�
 
 * Rapports basés sur des jeux de données non pris en charge
 
-* L’espace de travail ne peut pas utiliser une application de modèle
+* [Espaces de travail d’applications modèles](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Rapports paginés
 
@@ -137,14 +138,60 @@ Les propriétés d’élément suivantes ne sont pas copiées lors du déploieme
 Les propriétés de jeu de données suivantes ne sont pas copiées non plus lors du déploiement :
 
 * Attribution de rôle
-    
+
 * Planification de l’actualisation
-    
+
 * Informations d’identification de la source de données
-    
+
 * Paramètres de mise en cache des requêtes (peuvent être hérités de la capacité)
-    
+
 * Paramètres d’approbation
+
+## <a name="incremental-refresh"></a>Actualisation incrémentielle
+
+Les pipelines de déploiement prennent en charge [l’actualisation incrémentielle](../admin/service-premium-incremental-refresh.md), une fonctionnalité qui offre aux jeux de données volumineux des actualisations plus rapides et plus fiables, avec une consommation plus faible.
+
+Avec les pipelines de déploiement, vous pouvez apporter des mises à jour à un jeu de données avec actualisation incrémentielle tout en conservant les données et les partitions. Lorsque vous déployez le jeu de données, la stratégie est copiée également.
+
+### <a name="activating-incremental-refresh-in-a-pipeline"></a>Activation de l’actualisation incrémentielle dans un pipeline
+
+[Activez l’actualisation incrémentielle dans Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), puis publiez votre jeu de données. Après publication, la stratégie d’actualisation incrémentielle est similaire dans tout le pipeline. Elle ne peut être créée que dans Power BI Desktop.
+
+Une fois votre pipeline configuré avec l’actualisation incrémentielle, nous vous recommandons de suivre le flux suivant :
+
+1. Apportez des modifications à votre fichier PBIX dans Power BI Desktop. Pour éviter un long temps d’attente, vous pouvez effectuer des modifications en utilisant un échantillon de vos données.
+
+2. Chargez votre fichier PBIX à la phase de *développement*.
+
+3. Déployez votre contenu à la phase de *test*. Après le déploiement, les modifications que vous avez apportées s’appliqueront à l’ensemble du jeu de données utilisé.
+
+4. Vérifiez les modifications que vous avez apportées à la phase de *test*, puis effectuez le déploiement à la phase de *production*.
+
+### <a name="usage-examples"></a>Exemples d'utilisation
+
+Voici quelques exemples d’intégrations possibles de l’actualisation incrémentielle avec des pipelines de déploiement.
+
+* [Créez un pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) et connectez-le à un espace de travail avec un jeu de données sur lequel l’actualisation incrémentielle est activée.
+
+* Activez l’actualisation incrémentielle dans un jeu de données qui se trouve déjà dans un espace de travail de *développement* .  
+
+* Créez un pipeline à partir d’un espace de travail de production comprenant un jeu de données qui utilise l’actualisation incrémentielle. Pour cela, affectez l’espace de travail à la phase de *production* d’un nouveau pipeline, puis utilisez le [déploiement en arrière](deployment-pipelines-get-started.md#backwards-deployment) pour effectuer un déploiement vers la phase de *test*, puis vers la phase de *développement*.
+
+* Publiez un jeu de données qui utilise l’actualisation incrémentielle dans un espace de travail faisant partie d’un pipeline existant.
+
+### <a name="limitations-and-considerations"></a>Considérations et limitations
+
+Pour l’actualisation incrémentielle, les pipelines de déploiement ne prennent en charge que les jeux de données qui utilisent les [métadonnées de jeu de données avancées](../connect-data/desktop-enhanced-dataset-metadata.md). À partir de la version de septembre 2020 de Power BI Desktop, tous les jeux de données créés ou modifiés avec Power BI Desktop implémentent automatiquement les métadonnées de jeu de données avancées.
+
+En cas de republication d’un jeu de données dans un pipeline actif sur lequel l’actualisation incrémentielle est activée, les modifications suivantes entraînent l’échec du déploiement en raison d’un risque de perte de données :
+
+* Republication d’un jeu de données qui n’utilise pas l’actualisation incrémentielle pour en remplacer un autre sur lequel elle est activée
+
+* Attribution d’un nouveau nom à une table sur laquelle l’actualisation incrémentielle est activée
+
+* Attribution d’un nouveau nom à des colonnes non calculées dans une table sur laquelle l’actualisation incrémentielle est activée
+
+D’autres modifications, comme l’ajout ou la suppression d’une colonne, ou l’attribution d’un nouveau nom à une colonne calculée, sont autorisées. Toutefois, si elles affectent l’affichage, une actualisation est nécessaire pour qu’elles deviennent visibles.
 
 ## <a name="deploying-power-bi-apps"></a>Déploiement d’applications Power BI
 
@@ -170,9 +217,9 @@ Les autorisations de pipeline et d’espace de travail sont accordées et géré
 Les utilisateurs disposant d’un accès au pipeline disposent des autorisations suivantes :
 
 * Afficher le pipeline
-    
+
 * Partager le pipeline avec d’autres utilisateurs
-    
+
 * Modifier et supprimer le pipeline
 
 >[!NOTE]
@@ -202,9 +249,9 @@ Les contributeurs d’espace de travail qui ont *l’accès au pipeline* peuvent
 Les membres d’espace de travail qui ont *l’accès au pipeline* peuvent également effectuer les opérations suivantes :
 
 * Voir le contenu de l'espace de travail
-    
+
 * Comparer les étapes
-    
+
 * Déployer des rapports et des tableaux de bord
 
 * Supprimer des espaces de travail
@@ -222,7 +269,7 @@ Les administrateurs de l’espace de travail qui ont *l’accès au pipeline* pe
 Les propriétaires de jeux de données qui sont des membres de l’espace de travail ou des administrateurs peuvent également effectuer les opérations suivantes :
 
 * Mettre à jour les jeux de données
-    
+
 * Configurer des règles
 
 >[!NOTE]
@@ -243,8 +290,6 @@ Cette section répertorie la plupart des limitations dans les pipelines de dépl
 * Pour obtenir la liste des éléments non pris en charge, consultez [Éléments non pris en charge](#unsupported-items).
 
 ### <a name="dataset-limitations"></a>Limitations du jeu de données
-
-* Les jeux de données configurés avec [l’actualisation incrémentielle](../admin/service-premium-incremental-refresh.md) ne peuvent pas être déployés.
 
 * Les jeux de données qui utilisent la connectivité des données en temps réel ne peuvent pas être déployés.
 

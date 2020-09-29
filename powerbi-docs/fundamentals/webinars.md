@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.author: kfollis
-ms.openlocfilehash: d7b36d7ecbbf9d046c02f275ca83d7f8c8a196d5
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 76f0963da1a7cecec6f97fc7e0ab534f7d4bcb8a
+ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768398"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91020018"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) est un fournisseur qui travaille avec Chauncy Freels et aide à gérer cette liste de webinaires"
@@ -22,11 +22,23 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
+**Devenez rapidement opérationnel avec Power BI**  
+par Miguel Martinez, Microsoft  
+[Inscrivez-vous pour regarder ce webinaire le 5 novembre 2020, de 10 h à 11 h (heure d’été du Pacifique)](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+
 [Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Webinaires proposés
 
 Commencez avec ces webinaires populaires à la demande
+
+**Effectuez un monitoring des données en temps réel avec Microsoft Power BI**  
+par Miguel Martinez et Peter Myers  
+[Regarder maintenant](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+
+**Créez des solutions BI scalables avec Power BI et Snowflake**  
+par Chris Webb, Craig Collier et Chris Holliday  
+[Regarder maintenant](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html?lcid=en-us)
 
 **Boost User Satisfaction with Best Practices for Managing BI Content**  
 par Nimrod Shalit  

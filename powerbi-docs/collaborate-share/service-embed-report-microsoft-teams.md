@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
-ms.openlocfilehash: 53126fe044f65740b9dac072422f749312b960da
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.date: 09/21/2020
+ms.openlocfilehash: 0abaf886806ea783bb478f47d020daeea7829da5
+ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478012"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90965124"
 ---
 # <a name="embed-power-bi-content-in-microsoft-teams"></a>Incorporer du contenu Power BI dans Microsoft Teams
 
@@ -30,9 +30,9 @@ Pour utiliser l’onglet **Power BI** dans Microsoft Teams, vérifiez les élém
 - Pour afficher le rapport sous l’onglet **Power BI** dans Microsoft Teams, les utilisateurs doivent être autorisés à visualiser le rapport.
 - Les utilisateurs doivent être des utilisateurs de Microsoft Teams ayant accès aux canaux et aux conversations.
 
-Consultez [Collaborer dans Microsoft Teams avec Power BI](service-embed-report-microsoft-teams.md) pour obtenir des informations générales sur la façon dont Power BI et Teams fonctionnent ensemble et sur d’autres exigences.
+Pour plus d’informations sur l’interaction entre Power BI et Microsoft Teams, et notamment pour connaître d’autres conditions à remplir, consultez [Collaboration dans Microsoft Teams avec Power BI](service-embed-report-microsoft-teams.md).
 
-## <a name="embed-a-report-in-teams"></a>Incorporer un rapport dans Teams
+## <a name="embed-a-report-in-microsoft-teams"></a>Incorporer un rapport dans Microsoft Teams
 
 Suivez ces étapes pour incorporer votre rapport dans un canal ou une conversation Microsoft Teams.
 
@@ -62,7 +62,7 @@ Vous pouvez incorporer les types de rapports suivants sur l’onglet **Power BI*
 
 ## <a name="start-a-conversation"></a>Démarrer une conversation
 
-Quand vous ajoutez un onglet de rapport Power BI dans Microsoft Teams, Teams crée automatiquement un onglet de conversation pour le rapport.
+Quand vous ajoutez un onglet de rapport Power BI dans Microsoft Teams, Microsoft Teams crée automatiquement une conversation dans un onglet pour le rapport.
 
 - Sélectionnez l’icône **Afficher l’onglet de conversation** dans l’angle supérieur droit.
 
@@ -74,6 +74,7 @@ Quand vous ajoutez un onglet de rapport Power BI dans Microsoft Teams, Teams cr�
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
+- Dans Microsoft Teams, lorsque vous exportez des données d’un visuel dans un rapport Power BI, elles sont automatiquement enregistrées dans votre dossier Téléchargements. Il s’agit d’un fichier Excel nommé « data (*n*).xlsx », où *n* correspond au nombre de fois où vous avez exporté des données dans le même dossier.
 - Vous ne pouvez pas incorporer les tableaux de bord Power BI dans l’onglet **Power BI** pour Microsoft Teams.
 - Les [filtres d’URL](service-url-filters.md) ne sont pas pris en charge avec l’onglet **Power BI** pour Microsoft Teams.
 - Dans les clouds nationaux, le nouvel onglet **Power BI** n’est pas disponible. Une version plus ancienne peut être disponible, qui ne prend pas en charge la nouvelle expérience ni les rapports dans les applications Power BI.

@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1593cecf448b193ce2186be041da771bb8d6a09c
-ms.sourcegitcommit: 92b033ee7a6e36808371b247b7b41536cee6c2f6
+ms.openlocfilehash: 7ab0a093dfd41034aa79d2934ad23cf373fd0474
+ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "90008925"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90861587"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Exporter les données utilisées pour créer une visualisation
 
@@ -228,7 +228,7 @@ Il est important de noter que si les paramètres du portail d’administration P
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Ces limitations et ces considérations s’appliquent à Power BI Desktop et au service Power BI, notamment Power BI Pro et Premium.
 
-- Pour exporter les données à partir d’un visuel, vous devez avoir [Autorisation de création pour le jeu de données sous-jacent](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
+- Pour exporter les données à partir d’un visuel, vous devez avoir [Autorisation de création pour le jeu de données sous-jacent](../connect-data/service-datasets-build-permissions.md).
 
 -  Le nombre maximal de lignes que **Power BI Desktop** et le **service Power BI** peuvent exporter depuis un **rapport de mode d’importation** vers un fichier *.csv* est de 30 000.
 
@@ -268,8 +268,8 @@ Ces limitations et ces considérations s’appliquent à Power BI Desktop et au 
   
   1. Accédez au dossier local où le fichier est stocké et sélectionnez le fichier *.csv*.
 
-- Lors de l’exportation au format *.csv*, certains caractères sont précédés d’un **'** pour empêcher l’exécution de script au moment de l’ouverture dans Excel. Cela se produit dans les situations suivantes :
-  - La colonne est définie avec le type « Text » dans le modèle de données, **_et_**
+- En cas d’exportation au format *.csv*, certains caractères sont précédés du caractère d’échappement **'** pour empêcher l’exécution de scripts au moment de l’ouverture dans Excel. Cela se produit dans les situations suivantes :
+  - La colonne est définie avec le type « texte » dans le modèle de données, **_et_**
   - Le premier caractère du texte est l’un des suivants : **=, @, +, -**
 
 - Les administrateurs Power BI peuvent désactiver l’exportation des données.
