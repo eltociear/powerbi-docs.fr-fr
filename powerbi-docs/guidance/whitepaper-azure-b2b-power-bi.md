@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9125c87f96641852a16410d3f8287c714816fb4b
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: df6b3bd29089f37b11064216568523f442169794
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965380"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528387"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -535,7 +535,7 @@ Des détails sur les paramètres sont disponibles ici :
 
 ### <a name="control-guest-invites"></a>Contrôler les invitations invitées
 
-Power BI administrateurs peuvent contrôler le partage externe uniquement pour les Power BIen visitant le portail d’administration Power BI. Toutefois, les administrateurs clients peuvent également contrôler le partage externe avec différentes stratégies de Azure AD.  Ces stratégies permettent aux administrateurs clients de
+Power BI administrateurs peuvent contrôler le partage externe uniquement pour les Power BIen visitant le portail d’administration Power BI. Toutefois, les administrateurs peuvent également contrôler le partage externe avec différentes stratégies de Azure AD.  Ces stratégies permettent aux administrateurs d’effectuer les opérations suivantes :
 
 - Désactiver les invitations par les utilisateurs finaux
 - Seuls les administrateurs et les utilisateurs membres du rôle Inviteur d’invités peuvent envoyer des invitations
