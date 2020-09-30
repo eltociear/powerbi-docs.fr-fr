@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f2b9ee2093889fc9a60d621ad09b3b52d2e90474
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277430"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525935"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Séparer les rapports des modèles dans Power BI Desktop
 
@@ -37,7 +37,7 @@ Il est logique de séparer le développement du modèle et du rapport dans des f
 - Les modélisateurs des données et les auteurs des rapports sont des personnes différentes.
 - Il est entendu qu’un modèle sera la source de plusieurs rapports, maintenant ou ultérieurement.
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Il existe trois fichiers PBIX. Le premier contient uniquement un modèle. Les deux autres contiennent uniquement des rapports, qui se connectent en direct au modèle hébergé dans le service Power BI. Les rapports sont développés par différentes personnes." border="true":::
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Un fichier unique contient un modèle et un rapport, développés par la même personne." border="true":::
 
 Les modélisateurs de données peuvent toujours utiliser la solution de création de rapports Power BI Desktop pour tester et valider leurs conceptions de modèles. Toutefois, juste après la publication de leur fichier dans le service Power BI, ils doivent supprimer le rapport de l’espace de travail. Ils doivent veiller à supprimer le rapport chaque fois qu’ils republient et remplacent le jeu de données.
 
@@ -56,7 +56,7 @@ L’ajout de tables, de colonnes, de hiérarchies, de niveaux de hiérarchie ou 
 
 Si vous devez apporter des modifications importantes à vos modèles, nous vous recommandons d’effectuer l’une des opérations suivantes :
 
-- [Afficher un contenu associé pour le jeu de données](../consumer/end-user-related.md#view-related-content-for-a-dataset) dans le service Power BI.
+- [Afficher un contenu associé pour le jeu de données](../consumer/end-user-related.md) dans le service Power BI.
 - Explorez la vue [Traçabilité des données](../collaborate-share/service-data-lineage.md) dans le service Power BI.
 
 Ces deux options vous permettent d’identifier rapidement tous les rapports et tableaux de bord associés. La vue Traçabilité des données est probablement la meilleure option car elle permet d’identifier facilement le contact pour chaque artefact associé. En fait, il s’agit d’un lien hypertexte qui ouvre un message électronique adressé au contact.

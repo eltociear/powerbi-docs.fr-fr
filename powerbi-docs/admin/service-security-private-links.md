@@ -7,15 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 3b8eb9c5e4211097cd6f11d233165ccaf197ddbe
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: dee055f53302ef6e7884463b8e0feb113aa9bd5a
+ms.sourcegitcommit: 3655521f7d6e70d25cbe72006aada69ba08e7dec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854365"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91224207"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Liaisons privées pour accéder à Power BI
 
@@ -226,10 +226,7 @@ L’étape suivante, qui est décrite dans cette section, consiste à créer un 
     |Subnet |Sélectionnez *mySubnet* |
     |**INTÉGRATION À DNS PRIVÉ** ||
     |Intégrer à une zone DNS privée|   Sélectionnez **Oui** |
-    |Zone DNS privée   |Sélectionnez <br><br>
-    *(New)privatelink.analysis.windows.net* <br>
-    *(New)privatelink.pbidedicated.windows.net* <br>
-    *(New)privatelink.tip1.powerquery.microsoft.com* |
+    |Zone DNS privée   |Sélectionnez <br> *(New)privatelink.analysis.windows.net* <br> *(New)privatelink.pbidedicated.windows.net* <br> *(New)privatelink.tip1.powerquery.microsoft.com* |
     
     L’image suivante montre la fenêtre **Créer un point de terminaison privé - Configuration**.
     

@@ -6,12 +6,12 @@ ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 11150686d1ff922877081a672290069f85b1afc5
-ms.sourcegitcommit: 00c0b24d5e80009d18cec6da4fee8a9611bcba04
+ms.openlocfilehash: 3ebfa0e13293f65d5399aafb7071d4eaad63cc6f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87411908"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527789"
 ---
 # <a name="functional-application-consultant-learning-catalog"></a>Catalogue de formations des consultants en applications fonctionnelles
 
@@ -34,8 +34,8 @@ Nos recherches d’analyse des tâches du poste de consultant fonctionnel ont mo
 | [Power BI : des analyses dans les règles de l’art](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_02OnDemandRegistration-ForminBody.html)  | Analytique et Excel, appel aux visionnaires : découvrez comment créer des rapports de qualité, partager des insights attrayants faciles à comprendre et casser en toute sécurité les silos de données complexes pour les rendre accessibles. Nous vous présenterons des innovations de produit et notre vision du BI et du BI libre-service pour l’entreprise moderne, permettant à votre organisation de générer une culture pilotée par les données.   | Webinaire       |                   |
 | [Three Ways AI Is Changing BI](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI-OnDemand.html)  | Il est crucial pour les analystes d’examiner et de visualiser les données pour aider les parties prenantes à trouver des insights rapidement et efficacement. Les besoins des entreprises ont évolué, les dirigeants se demandant d’abord ce qui s’est passé et quand, puis pourquoi cela s’est passé, et enfin ce qui va se passer dans le futur. Inscrivez-vous à ce webinaire pour découvrir trois opportunités d’insights sur les données qui combinent l’IA au décisionnel.   | Webinaire       |                   |
 | [Conseils et astuces pour libérer la puissance de Power BI, par Philip Seamark](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/6-22-2017-Unleash-the-Power-of-Power-BI-tips-and-tricks-by/td-p/161490) | Joignez-vous à Philip Seamark, qui va présenter des informations détaillées sur le déploiement le plus important de Power BI dans l’hémisphère sud, comment il est utilisé et comment il répond à leurs besoins en matière de décisionnel. Cette session montre de nombreux trucs et astuces pour vous aider à améliorer vos rapports Power BI.   | Webinaire       | 53 minutes 47 secondes       |
-| [Qu’est-ce que Power BI ?](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview)  | Vue d’ensemble de Power BI   | Site web       | 3 minutes de lecture |
-| [Utiliser DAX dans Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) | Ce parcours d’apprentissage présente DAX (Data Analysis Expressions) et vous dote des compétences de base nécessaires pour améliorer les modèles de données avec calculs.  | Parcours d'apprentissage en ligne gratuit et auto-rythmé | 4 heures 30 minutes |
+| [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md)  | Vue d’ensemble de Power BI   | Site web       | 3 minutes de lecture |
+| [Utiliser DAX dans Power BI Desktop](/learn/paths/dax-power-bi/) | Ce parcours d’apprentissage présente DAX (Data Analysis Expressions) et vous dote des compétences de base nécessaires pour améliorer les modèles de données avec calculs.  | Parcours d'apprentissage en ligne gratuit et auto-rythmé | 4 heures 30 minutes |
 ## <a name="best-practices"></a>Bonnes pratiques<a name="best-practices"></a>
 | Contenu   | Description  | Mettre en forme   | Longueur   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------|
