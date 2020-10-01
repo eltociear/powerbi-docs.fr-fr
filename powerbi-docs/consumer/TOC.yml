@@ -100,8 +100,6 @@
               href: end-user-copy-paste.md
             - name: Descendre dans la hiérarchie d’une visualisation
               href: end-user-drill.md
-            - name: Interagir avec des cartes ArcGIS
-              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Tâches communes
           items:
             - name: Exporter des données vers Excel

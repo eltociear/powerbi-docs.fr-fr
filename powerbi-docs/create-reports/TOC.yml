@@ -259,8 +259,6 @@
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
             - name: Interagir avec les cartes ArcGIS dans des visuels Power BI
               href: ../visuals/power-bi-visualizations-arcgis.md
-            - name: Créer des cartes ArcGIS pour des visuels Power BI
-              href: ../visuals/power-bi-visualization-arcgis.md
             - name: Graphiques en aires simples
               href: ../visuals/power-bi-visualization-basic-area-chart.md
             - name: Créer des visuels de carte (vignettes représentant un grand nombre)
