@@ -1,22 +1,22 @@
 ---
-title: Déployer et gérer les capacités Power BI Premium
+title: Déploiement et gestion des capacités de Power BI Premium
 description: Comprenez le potentiel de Power BI Premium et apprenez à concevoir, déployer, surveiller et dépanner des solutions évolutives.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: db5f123f0ab0eba373aca97fd975645cd38b4cd9
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e24b9949eeaaf488f88677fc1171fae5ece5d383
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349422"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600376"
 ---
-# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Déployer et gérer les capacités Power BI Premium
+# <a name="deploying-and-managing-power-bi-premium-capacities"></a>Déploiement et gestion des capacités de Power BI Premium
 
 Nous avons mis hors service le livre blanc Power BI Premium en faveur de la mise à jour d’informations dans des articles distincts. Utilisez le tableau suivant pour rechercher du contenu à partir du livre blanc. 
 
