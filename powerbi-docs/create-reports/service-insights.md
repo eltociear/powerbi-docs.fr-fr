@@ -1,5 +1,5 @@
 ---
-title: Générer automatiquement des insights sur les données avec Power BI
+title: Génération automatique d’insights sur un jeu de données
 description: Découvrez comment obtenir des informations sur vos jeux de données et vignettes de tableaux de bord.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -8,29 +8,29 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/06/2019
+ms.date: 09/28/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5523c08b81a129bab70f1c087e8895dedf83621f
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79148389a697feb2a3d2e2cba0b919eb59632ff7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221089"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524463"
 ---
-# <a name="generate-data-insights-automatically-with-power-bi"></a>Générer automatiquement des insights sur les données avec Power BI
-Vous disposez d’un nouveau jeu de données et vous ne savez pas trop par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
+# <a name="generate-data-insights-on-your-dataset-automatically-with-power-bi"></a>Génération automatique d’insights sur un jeu de données avec Power BI
+Vous disposez d’un nouveau jeu de données et vous ne savez pas par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
 
-Exécutez un aperçu rapide pour générer des visualisations interactives intéressantes basées sur vos données. L’aperçu rapide peut être exécuté sur un jeu de données entier (aperçu rapide) ou sur une vignette de tableau de bord spécifique (aperçu délimité). Vous pouvez même exécuter un aperçu rapide sur un aperçu !
+Exécutez Quick Insights pour générer des visualisations intéressantes à partir de vos données. Cet article explique comment exécuter Quick Insights sur tout un jeu de données (Quick Insights). Vous pouvez également exécuter [Quick Insights sur une vignette de tableau de bord en particulier](../consumer/end-user-insights.md) (Scoped Insights). Vous pouvez même exécuter un aperçu rapide sur un aperçu !
 
 > [!NOTE]
 > Les insights ne fonctionnent pas avec DirectQuery, seulement avec les données chargées dans Power BI.
 > 
 
-La fonctionnalité d’aperçu repose sur un [ensemble croissant d’algorithmes analytiques avancés](../consumer/end-user-insight-types.md) développés conjointement avec Microsoft Research, que nous continuerons d’utiliser pour permettre à davantage de personnes de tirer des informations de leurs données de façon innovante et intuitive.
+Nous avons créé la fonctionnalité d’insights sur un [ensemble croissant d’algorithmes analytiques avancés](../consumer/end-user-insight-types.md) que nous avons développés avec Microsoft Research. Nous continuons d’utiliser ces algorithmes pour aider toujours plus de gens à trouver des informations sur leurs données par des moyens inédits et intuitifs. Si vous le souhaitez, vous pouvez également apprendre à [optimiser vos données pour Quick Insights](service-insights-optimize.md).
 
 ## <a name="run-quick-insights-on-a-dataset"></a>Exécuter un aperçu rapide sur un jeu de données
-Regardez Amanda exécuter un aperçu rapide sur un jeu de données, ouvrir une information en mode Focus, épingler l’une de ces informations en tant que vignette à son tableau de bord, et obtenir des informations sur une vignette de tableau de bord.
+Regardez Amanda exécuter Quick Insights sur un jeu de données et ouvrir un insight en mode Focus. Amanda épingle un insight sous forme de vignette sur le tableau de bord, puis reçoit des insights sur une vignette de tableau de bord.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
@@ -71,25 +71,15 @@ Maintenant, à vous de jouer. Explorez les insights en vous appuyant sur l’[ex
    * Filtrez les visualisations. Si le volet **Filtres** n’est pas déjà ouvert, développez-le en sélectionnant la flèche sur le côté droit de la fenêtre.
 
        ![Insight – Menu Filtres développé](media/service-insights/power-bi-insights-filter-new.png)
-   * Épinglez la carte d’insight à un tableau de bord en sélectionnant **Épingler un élément visuel**.
+   * Épinglez la carte d’insight à un tableau de bord en sélectionnant **Épingler un visuel**.
    * Exécutez les insights sur la carte proprement dite, ce qui permet d’obtenir des *insights avec étendue*. En haut à droite, sélectionnez l’icône en forme d’ampoule ![icône Obtenir des insights](media/service-insights/power-bi-bulb-icon.png) ou **Obtenir des insights**.
      
        ![Icône Obtenir des insights](media/service-insights/pbi-autoinsights-tile.png)
      
-     L’aperçu s’affiche à gauche et de nouvelles cartes, basées uniquement sur les données de cet aperçu, s’affichent à droite.
+     L’insight s’affiche à gauche. De nouvelles cartes, qui s’appuient uniquement sur les données de cet insight, apparaissent à droite.
      
        ![Insights dans Insights](media/service-insights/power-bi-insights-on-insights-new.png)
 4. Pour revenir au canevas d’aperçu d’origine, dans le coin supérieur gauche, sélectionnez **Quitter le mode Focus**.
-
-## <a name="run-insights-on-a-dashboard-tile"></a>Exécuter un aperçu sur une vignette de tableau de bord
-Au lieu de rechercher des insights dans un jeu de données entier, limitez votre recherche pour obtenir des insights avec étendue sur les données ayant servi à créer une vignette de tableau de bord. 
-
-1. Ouvrez un tableau de bord.
-2. Pointez sur une vignette, Sélectionnez **Autres options** (...), puis choisissez **Voir les insights**. La vignette s’ouvre en [mode Focus](../consumer/end-user-focus.md), qui présente les cartes d’informations à droite.    
-   
-    ![Mode focus](media/service-insights/pbi-insights-tile.png)    
-3. Une information suscite votre intérêt ? Sélectionnez la carte d’informations pour en savoir plus. L’information sélectionnée s’affiche à gauche et les nouvelles cartes d’informations, basées uniquement sur les données de cette information, s’affichent à droite.    
-4. Continuez à explorer vos données et, dès que vous trouvez une information intéressante, épinglez-la à votre tableau de bord en sélectionnant **Épingler un élément visuel** en haut à droite.
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Si vous possédez un jeu de données, [optimisez-le pour Quick Insights](service-insights-optimize.md).

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: c97a303a5b3241f49e82aac41d9ed7984c3a5af1
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: 521c1cbc60c6d616c06bde6b6826bb270d3ddba0
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642306"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375301"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 
@@ -219,7 +219,9 @@ Le nom d’utilisateur effectif ne peut pas être utilisé sur un serveur Analys
 
 Vous ne connaissez peut-être pas votre UPN, et vous n’êtes peut-être pas un administrateur de domaine. Vous pouvez utiliser la commande suivante à partir de votre station de travail pour connaître l’UPN de votre compte.
 
-    whoami /upn
+```dos
+whoami /upn
+```
 
 Le résultat est similaire à une adresse e-mail, mais il s’agit en fait de l’UPN figurant sur votre compte de domaine. Si vous utilisez une source de données Analysis Services pour des connexions actives, et si cet UPN ne correspond pas à l’adresse e-mail que vous utilisez pour vous connectez à Power BI, il peut être utile de regarder comment [mapper des noms d’utilisateur](#map-user-names-for-analysis-services-data-sources).
 
@@ -235,7 +237,7 @@ Les services cloud reconnaissent uniquement les comptes dans Azure AD. Peu impor
 
 - Vous pouvez utiliser l’outil [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) pour synchroniser les comptes locaux avec votre locataire Azure AD.
 
-   L’outil Azure AD Connect fournit des options pour la synchronisation d’annuaires et la configuration de l’authentification. Ces options incluent la synchronisation du hachage de mot de passe, l’authentification directe et la fédération. Si vous n’êtes pas administrateur de locataire ou administrateur de domaine local, contactez votre administrateur informatique pour qu’il vous aide à effectuer la configuration.
+   L’outil Azure AD Connect fournit des options pour la synchronisation d’annuaires et la configuration de l’authentification. Ces options incluent la synchronisation du hachage de mot de passe, l’authentification directe et la fédération. Si vous n’êtes ni administrateur ni administrateur de domaine local, contactez votre administrateur informatique pour qu’il vous aide à effectuer la configuration.
 
    L’utilisation d’Azure AD Connect garantit la correspondance des UPN dans Azure AD et votre instance Active Directory locale.
 

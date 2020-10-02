@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d12e64b98e2282e4446565ebd17a6222ba6276d2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 09ac807b6823c8d9e8c0b44ad941365eb3ffb766
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226670"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526441"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -135,7 +135,7 @@ Voici des informations générales à prendre en compte quand vous utilisez le n
 Quand vous ajoutez des liens à la navigation dans votre application et que vous sélectionnez l’option Zone de contenu :
 * Vérifiez que le lien peut être incorporé. Certains services bloquent l’incorporation de leur contenu dans des sites tiers comme Power BI.
 * L’incorporation du contenu d’un service Power BI comme des rapports ou des tableaux de bord dans d’autres espaces de travail n’est pas prise en charge. 
-* Incorporez du contenu Power BI Report Server par le biais du contenu de son URL incorporée native à partir d’un déploiement local. Utilisez les étapes décrites dans [Création de l’URL Power BI Report Server](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) pour obtenir l’URL. Sachez que les règles d’authentification standard s’appliquent. Par conséquent, l’affichage du contenu nécessite une connexion VPN au serveur local. 
+* Incorporez du contenu Power BI Report Server par le biais du contenu de son URL incorporée native à partir d’un déploiement local. Utilisez les étapes décrites dans [Création de l’URL Power BI Report Server](../report-server/quickstart-embed.md#create-the-power-bi-report-url) pour obtenir l’URL. Sachez que les règles d’authentification standard s’appliquent. Par conséquent, l’affichage du contenu nécessite une connexion VPN au serveur local. 
 * Un avertissement de sécurité s’affiche au-dessus du contenu incorporé pour indiquer que le contenu ne se trouve pas dans Power BI.
 
 ## <a name="automatically-install-apps-for-end-users"></a>Installer automatiquement des applications pour les utilisateurs finaux
@@ -144,12 +144,12 @@ Si un administrateur vous octroie des autorisations, vous pouvez installer des a
 ### <a name="how-to-push-an-app-automatically-to-end-users"></a>Comment envoyer automatiquement (par push) une application à des utilisateurs finaux
 Une fois que l’administrateur vous a affecté des autorisations, vous disposez d’une nouvelle option pour **installer l’application automatiquement**. Quand vous cochez la case et que vous sélectionnez **Publier l’application** (ou **Mettre à jour l’application**), l’application est envoyée (par push) à tous les utilisateurs ou groupes définis dans la section **Autorisations** de l’application sous l’onglet **Accès**.
 
-![Autorisation de pousser les applications](media/service-create-distribute-apps//power-bi-apps-access.png)
+![Capture d’écran montrant l’option Power BI Publier l’application avec Installer l’application sélectionné automatiquement](media/service-create-distribute-apps//power-bi-apps-access.png)
 
 ### <a name="how-users-get-the-apps-that-you-push-to-them"></a>Comment les utilisateurs obtiennent les applications que vous leur envoyez (par push)
 Dès que vous envoyez (par push) une application, elle s’affiche automatiquement dans leur liste Applications. Ainsi, vous pouvez organiser les applications qui doivent être disponibles pour des utilisateurs ou des fonctions principales spécifiques de votre organisation.
 
-![Autorisation de pousser les applications](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Capture d’écran montrant Applications Power BI, application publiée incluse](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### <a name="considerations-for-automatically-installing-apps"></a>Considérations sur l’installation automatique des applications
 Voici quelques points à garder à l’esprit quand vous envoyez (push) des applications à des utilisateurs finaux :
@@ -215,5 +215,5 @@ Voici quelques éléments à garder à l’esprit lors de la publication d’app
 * [Créer un espace de travail](service-create-workspaces.md)
 * [Installer et utiliser des applications dans Power BI](../consumer/end-user-apps.md)
 * [Applications Power BI pour des services externes](../connect-data/service-connect-to-services.md)
-* [Portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal)
+* [Portail d’administration Power BI](../admin/service-admin-portal.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
