@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 19548729f4ae85334fea14584e78ad4ee05a5c24
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: 432f8a7a39e6902c679c83d447039519f90d0dac
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965323"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635697"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -171,12 +171,11 @@ Une requête d’importation de jeu de données se compose d’une collection de
 
 Le tableau suivant décrit les données Power BI en fonction du type de requête utilisé. Un **X** indique la présence de données Power BI quand vous utilisez le type de requête associé.
 
-
-|  |Importer  |DirectQuery  |Live Connect  |
-|---------|---------|---------|---------|
-|Schéma     |     X    |    X     |         |
-|Données de ligne     |    X     |         |         |
-|Mise en cache de données de visuels     |    X     |     X    |    X     |
+|                         | Importer   | DirectQuery | Live Connect  |
+|-------------------------|----------|-------------|---------------|
+|**Schéma**               | X        | X           |               |
+|**Données de ligne**             | X        |             |               |
+|**Mise en cache de données de visuels** | X        | X           | X             |
 
 La distinction entre une DirectQuery et les autres requêtes détermine comment le service Power BI gère les données au repos, et si la requête proprement dite est chiffrée. Les sections suivantes décrivent les données au repos et en mouvement, et expliquent le processus de gestion des données, l’emplacement et le chiffrement.
 
@@ -357,7 +356,7 @@ Le tableau suivant indique la prise en charge de l’authentification basée sur
 | **Prise en charge de l’authentification basée sur les certificats** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
 | **Power BI** (connexion au service) | supported | supported | Non pris en charge |
-| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Prise en charge | Non pris en charge |
+| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Pris en charge | Non pris en charge |
 
 Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune donnée personnelle n’est envoyée avec les données de télémétrie.
 
