@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 09/15/2020
 ms.author: painbar
-ms.openlocfilehash: e3b6ada10138e6964240c5eb5c53399507170b79
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2f663c8e47e9a66ec3f4ee3eb70646239be6126a
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860667"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375002"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Créer une application modèle dans Power BI
 
@@ -21,7 +21,7 @@ Les *applications modèles* Power BI permettent aux partenaires Power BI de cré
 
 Si vous créez déjà des rapports et tableaux de bord Power BI, vous pouvez devenir *concepteur d’applications modèles* et créer vous-même du contenu analytique et l’intégrer dans une *application*. Vous pouvez déployer votre application sur d’autres locataires Power BI par le biais de n’importe quelle plateforme disponible, comme AppSource, ou en l’utilisant dans votre propre service web. En tant que concepteur, vous pouvez créer un package analytique protégé pour la distribution.
 
-Les administrateurs de locataires Power BI régissent et contrôlent les utilisateurs dans leur organisation qui sont autorisés à créer des applications modèles et/ou à les installer. Ces utilisateurs autorisés peuvent installer votre application modèle, puis la modifier et la distribuer aux consommateurs Power BI dans leur organisation.
+Les administrateurs Power BI régissent et contrôlent les utilisateurs de leur organisation qui sont autorisés à créer des applications modèles et/ou à les installer. Ces utilisateurs autorisés peuvent installer votre application modèle, puis la modifier et la distribuer aux consommateurs Power BI dans leur organisation.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -163,7 +163,7 @@ Examinons chacune de ces phases :
 
     ![Icône Gestion des mises en production](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Sélectionnez **Obtenir le lien** si vous avez créé l’application de test dans la section **Créer l’application modèle de test** ci-dessus (en conséquence, vous voyez déjà un rond jaune à côté de la phase **Test**).
+2. Sélectionnez **Obtenir le lien** si vous avez créé l’application de test dans la section **Définir les propriétés de l’application modèle** ci-dessus (en conséquence, vous voyez déjà un rond jaune à côté de la phase **Test**).
 
     Si vous n’avez pas encore créé l’application, sélectionnez **Créer une application**. Cela vous ramène au processus de création de l’application modèle.
 

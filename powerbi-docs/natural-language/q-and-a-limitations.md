@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.author: maggies
-ms.openlocfilehash: 7b02e1b1fb49eb1c43b12d204250eabec8eafe91
-ms.sourcegitcommit: 002c140d0eae3137a137e9a855486af6c55ad957
+ms.openlocfilehash: c989dad575f10a6ed4f6b25ed80368315087c1c2
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89642347"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528295"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Limitations de Questions et réponses dans Power BI
 
@@ -53,7 +53,7 @@ La nouvelle boîte de dialogue d’outils permet aux utilisateurs de personnalis
 
 La fonctionnalité Passer en revue les questions stocke seulement 28 jours les questions posées par rapport à votre modèle de données. Lorsque vous utilisez la nouvelle fonctionnalité Passer en revue les questions, vous pouvez remarquer que certaines questions ne sont pas enregistrées. Le fait qu’elles ne soient pas enregistrées est défini par conception, du fait que le moteur de langage naturel effectue une série d’étapes de nettoyage des données pour garantir que chaque séquence de touches d’un utilisateur n’est pas enregistrée ou affichée.
 
-Les administrateurs de locataires peuvent utiliser les paramètres d’administrateur de locataires pour gérer la capacité à stocker les questions. Ces autorisations sont basées sur les groupes de sécurité. 
+Les administrateurs Power BI peuvent utiliser les paramètres du locataire pour gérer la capacité à stocker les questions. Ces autorisations sont basées sur les groupes de sécurité. 
 
 Les utilisateurs peuvent également empêcher l’enregistrement de leurs questions en sélectionnant **Paramètres** > **Général** et en désélectionnant **Autoriser Questions et réponses à enregistrer mon énoncé**. 
 

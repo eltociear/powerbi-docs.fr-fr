@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.openlocfilehash: ef981c63aaa1cdececbe03f187d25ee09073f61f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 30ab225230784d19bd2aa4eb2f5ea775684b2afb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857746"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524785"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Gérer les paramètres d’administration des visuels Power BI
 
@@ -148,11 +148,11 @@ Vous pouvez choisir des visuels à partir de la page de visuels organisationnels
 
 1. Dans la ligne du visuel que vous voulez ajouter, cliquez sur **paramètres**.
 
-    ![volet-organisationnel](media/organizational-visuals/organizational-pane.png)volet-organisationnel
+    ![Capture d’écran montrant le portail d’administration avec des visuels de l’organisation sélectionnés et l’icône Paramètres.](media/organizational-visuals/organizational-pane.png)volet-organisationnel
 
 2. Activez le paramètre du volet de visualisation, puis cliquez sur **Mettre à jour**.
 
-    ![mettre à jour-volet-organisationnel](media/organizational-visuals/update-organizational-pane.png)
+    ![Capture d’écran montrant la boîte de dialogue Paramètres de l’élément visuel dans laquelle vous pouvez activer le visuel pour qu’il s’affiche dans l’ensemble de votre organisation.](media/organizational-visuals/update-organizational-pane.png)
 
 ### <a name="delete-a-visual-uploaded-from-a-file"></a>Supprimer un visuel chargé à partir d’un fichier
 

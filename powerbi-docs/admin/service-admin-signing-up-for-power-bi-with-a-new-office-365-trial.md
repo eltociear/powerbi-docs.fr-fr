@@ -10,12 +10,12 @@ ms.date: 05/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: e8a5d3b4bf8200e6e990c1bced2920383398b6cf
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 29dad4db6843f0895ea9de791992b3f70ce57e66
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857079"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91524739"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation de Microsoft 365
 
@@ -35,7 +35,7 @@ Si vous sélectionnez **Office 365 E5**, votre essai gratuit inclura Power BI P
 
     Si vous avez besoin d’une nouvelle adresse e-mail, Microsoft vous guide tout au long des étapes. Première étape : création d’un compte. Sélectionnez **Configurer le compte**.
 
-    ![Choisir de s’inscrire pour obtenir un nouveau compte](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
+    ![Choisissez de vous inscrire pour obtenir un nouveau compte.](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
 
 2. Entrez les détails du nouveau compte.
 
@@ -43,7 +43,7 @@ Si vous sélectionnez **Office 365 E5**, votre essai gratuit inclura Power BI P
 
 3. Créez votre adresse e-mail et votre mot de passe. Créez un nom de connexion au format you@yourcompany.onmicrosoft.com. Il s’agit de la connexion que vous utiliserez avec votre nouveau compte professionnel ou scolaire et avec Power BI.
 
-    ![Choisir de s’inscrire pour obtenir un nouveau compte](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
+    ![Capture d’écran montrant comment créer vos options d’identité d’entreprise](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
 4. Et c’est tout !  Vous disposez maintenant d’une adresse e-mail que vous pouvez utiliser pour vous inscrire à Power BI. Consultez [S’inscrire au service Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md)
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7ccff80391ed0625aac063af3bf7a86b83cd7e85
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 9588b608e3d3ab33f87de13cd415e14cd1f5e920
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278120"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136117"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Aide à la résolution des problèmes de relations
 
@@ -47,8 +47,8 @@ Voici une liste des problèmes avec les solutions possibles.
 |Le visuel n’affiche aucun résultat|- Le modèle n’est pas encore chargé avec les données<br />- Aucune donnée n’existe dans le contexte de filtre<br />- La sécurité au niveau des lignes est appliquée<br />- Les relations ne se propagent pas entre les tables : _suivre la liste de contrôle ci-dessus_<br />- La sécurité au niveau des lignes est appliquée, mais une relation bidirectionnelle n’est pas activée pour la propagation : consultez [Sécurité au niveau des lignes (RLS) avec Power BI Desktop](../create-reports/desktop-rls.md)|
 |Le visuel affiche la même valeur pour chaque regroupement |- Les relations n’existent pas<br />- Les relations ne se propagent pas entre les tables : _suivre la liste de contrôle ci-dessus_|
 |Le visuel affiche des résultats, mais ils ne sont pas corrects|- Le visuel n’est pas configuré correctement.<br />- La logique de mesure est incorrecte<br />- Les données du modèle doivent être actualisées<br />- Les données sources sont incorrectes<br />- Les colonnes de relation ne sont pas liées correctement (par exemple, la colonne **ProductID** est mappée à **CustomerID**)<br />- Il s’agit d’une relation entre deux tables DirectQuery, et la colonne côté « un » d’une relation contient des valeurs dupliquées|
-|Des regroupements VIDES ou des éléments de segment/filtre apparaissent, et les colonnes sources ne contiennent pas de valeurs VIDES|- Il s’agit d’une relation forte et la colonne côté « plusieurs » contient des valeurs qui ne sont pas stockées dans la colonne côté « un » : consultez [Relations de modèle dans Power BI Desktop (relations fortes)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />- Il s’agit d’une relation un-à-un forte, et les colonnes associées contiennent des VIDES, consultez [Relations de modèle dans Power BI Desktop (relations fortes)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />- Une colonne de relation inactive côté « plusieurs » stocke des VIDES ou contient des valeurs non stockées du côté « un »|
-|Il manque des données de visuel|- Des filtres incorrects/inattendus sont appliqués<br />- La sécurité au niveau des lignes est appliquée<br />- Il s’agit d’une relation faible et il y a des VIDES dans les colonnes associées ou des problèmes d’intégrité des données : consultez [Relations de modèle dans Power BI Desktop (relations faibles)](../transform-model/desktop-relationships-understand.md#weak-relationships)<br />- Il s’agit d’une relation entre deux tables DirectQuery, la relation est configurée pour [assumer l’intégrité référentielle](../transform-model/desktop-relationships-understand.md#assume-referential-integrity), mais il y a des problèmes d’intégrité des données (valeurs incompatibles dans les colonnes associées)|
+|Des regroupements VIDES ou des éléments de segment/filtre apparaissent, et les colonnes sources ne contiennent pas de valeurs VIDES|- Il s’agit d’une relation régulière et la colonne côté « plusieurs » contient des valeurs qui ne sont pas stockées dans la colonne côté « un » : consultez [Relations de modèle dans Power BI Desktop (relations régulières)](../transform-model/desktop-relationships-understand.md#regular-relationships)<br />- Il s’agit d’une relation un-à-un régulière, et les colonnes associées contiennent des VIDES, consultez [Relations de modèle dans Power BI Desktop (relations régulières)](../transform-model/desktop-relationships-understand.md#regular-relationships)<br />- Une colonne de relation inactive côté « plusieurs » stocke des VIDES ou contient des valeurs non stockées du côté « un »|
+|Il manque des données de visuel|- Des filtres incorrects/inattendus sont appliqués<br />- La sécurité au niveau des lignes est appliquée<br />- Il s’agit d’une relation limitée et il y a des VIDES dans les colonnes associées ou des problèmes d’intégrité des données : consultez [Relations de modèle dans Power BI Desktop (relations limitées)](../transform-model/desktop-relationships-understand.md#limited-relationships)<br />- Il s’agit d’une relation entre deux tables DirectQuery, la relation est configurée pour [assumer l’intégrité référentielle](../transform-model/desktop-relationships-understand.md#assume-referential-integrity), mais il y a des problèmes d’intégrité des données (valeurs incompatibles dans les colonnes associées)|
 |La sécurité au niveau des lignes n’est pas appliquée correctement|- Les relations ne se propagent pas entre les tables : _suivre la liste de contrôle ci-dessus_<br />- La sécurité au niveau des lignes est appliquée, mais une relation bidirectionnelle n’est pas activée pour la propagation : consultez [Sécurité au niveau des lignes (RLS) avec Power BI Desktop](../create-reports/desktop-rls.md)|
 |||
 

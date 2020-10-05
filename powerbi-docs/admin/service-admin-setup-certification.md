@@ -8,18 +8,18 @@ ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41247a6dbee2ba6c4c5181a4646df735e43f8b18
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 11079e2ab1578cfe5db352e7e3286d491bdfca2c
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85227529"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374910"
 ---
 # <a name="set-up-dataset-and-dataflow-certification-preview"></a>Configurer la certification de jeux de données et de dataflows (préversion)
 
 Votre organisation peut certifier des jeux de données et des dataflows qui sont les sources d’autorité d’informations importantes.
 
-En tant qu’administrateur de locataire Power BI, vous êtes responsable de la configuration du processus de certification pour votre organisation. La procédure est la suivante :
+En tant qu’administrateur Power BI, vous êtes responsable de la configuration du processus de certification pour votre organisation. La procédure est la suivante :
 * Activation de la certification sur votre locataire
 * Définition d’une liste de groupes et d’utilisateurs autorisés à certifier des jeux de données et des dataflows
 * Pour les jeux de données, spécification de l’URL de la stratégie de certification de jeu de données de l’organisation, si elle existe

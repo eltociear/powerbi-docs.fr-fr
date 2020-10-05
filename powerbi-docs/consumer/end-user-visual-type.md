@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 86453ff7a192a9c79f1c9eda97529b661c7512d3
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 05aab15b3807429c20b0ff72a7bfce21b3e25b12
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537708"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526878"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 
@@ -142,7 +142,7 @@ Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour repr
 Les carte de formes comparent des régions sur une carte à l’aide de la couleur. Une carte de formes ne peut pas montrer des lieux géographiques précis de points de données sur une carte. Leur principal objectif est de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
 
 ### <a name="matrix"></a>Matrice
-![matrice](media/end-user-visual-type/matrix.png)
+![Capture d’écran montrant une matrice de données avec le chiffre d’affaires et le chiffre d’affaires depuis le début de l’exercice pour chaque année et chaque trimestre.](media/end-user-visual-type/matrix.png)
 
 Le visuel de matrice est un type de visuel de tableau (voir « Tableau » ci-dessous) qui prend en charge une disposition échelonnée. Souvent, les concepteurs de rapports ajoutent des matrices dans les rapports et tableaux de bord pour permettre aux utilisateurs de sélectionner un ou plusieurs éléments (lignes, colonnes, cellules) dans la matrice et de faire des sélections croisées avec d’autres visuels sur une page de rapport.  
 

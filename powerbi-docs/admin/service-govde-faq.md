@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5fcffd39e9a341478657b63770201ad722b8c291
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 97164fe1db72cac28096b1fde5130cfccec29be2
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855124"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374799"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand
 Une version du **service Power BI**, souvent appelée Microsoft Cloud Deutschland (MCD), est disponible pour les clients de l’UE et de l’AELE. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients de l’UE/AELE. Elle est distincte et différente de la version commerciale du **service Power BI** ou des services Power BI destinés aux administrations.
@@ -34,7 +34,7 @@ Les questions et réponses suivantes fournissent des informations importantes su
    Vous trouverez de nombreuses informations, notamment concernant la tarification, sur la [page d’accueil du cloud allemand Power BI](https://powerbi.microsoft.com/power-bi-germany/). Sur cette page, vous trouverez également un lien d’inscription à un essai de 30 jours du **service Power BI Pro**, avec 25 licences utilisateur. Au moment de l’inscription à l’essai, vous pouvez choisir d’acheter ou d’ajouter des licences supplémentaires en fonction de vos besoins. Nous proposons également une tarification pour les Contrats Entreprise, les administrations et les associations. Contactez votre représentant du service clientèle Microsoft pour avoir plus de détails.
 3. **J’ai un locataire du cloud allemand au sein d’abonnements Azure Allemagne et/ou Office 365 Allemagne. Puis-je utiliser le locataire existant pour m’inscrire à Power BI Allemagne ?**
    
-   Oui. Dans le cadre de la procédure d’inscription, vous avez la possibilité de vous connecter avec un compte d’administrateur de locataire de cloud allemand existant et d’ajouter les licences de service Power BI Pro à votre locataire existant dans le cloud allemand. Notez que les locataires du cloud allemand et les comptes d’utilisateur sont différents de ceux du service Power BI pour le cloud allemand.
+   Oui. Dans le cadre de la procédure d’inscription, vous avez la possibilité de vous connecter avec un compte d’administrateur existant du cloud Allemagne et d’ajouter les licences de service Power BI Pro à votre locataire existant dans le cloud Allemagne. Notez que les locataires du cloud allemand et les comptes d’utilisateur sont différents de ceux du service Power BI pour le cloud allemand.
 4. **Une version gratuite du service Power BI pour le cloud allemand existe-t-elle ?**
    
    Non. Nous n’offrons pas de version gratuite du service Power BI pour le cloud allemand. Toutefois, nous vous encourageons à vous inscrire à [l’offre gratuite Power BI dans notre cloud public](https://powerbi.microsoft.com/get-started/) si celle-ci correspond aux besoins de votre entreprise.

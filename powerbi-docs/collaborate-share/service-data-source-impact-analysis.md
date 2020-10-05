@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/20/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 2c9834310179d8936cda8b769e3b7e3f80d328e6
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 71c214e265c84eb7436d384a98f793eefe2f6a23
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87253974"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526218"
 ---
 # <a name="data-source-impact-analysis"></a>Analyse d’impact de la source de données
 
@@ -42,6 +42,17 @@ Le panneau latéral Analyse d’impact s’ouvre.
  
 * **Résumé de l’impact** : affiche le nombre d’espaces de travail, de dataflows et de jeux de données potentiellement impactés. Ce nombre comprend les espaces de travail auxquels vous n’avez pas accès.
 * **Répartition de l’utilisation** : affiche, pour chaque espace de travail, les noms des dataflows et jeux de données impactés. Pour approfondir l’exploration de l’impact sur un espace de travail spécifique, cliquez sur le nom de l’espace de travail afin de l’ouvrir. Une fois dans l’espace de travail affecté, utilisez l’[analyse d’impact des jeux de données](service-dataset-impact-analysis.md) pour consulter les détails sur l’utilisation des rapports et tableaux de bord connectés.
+
+## <a name="notify-contacts"></a>Notifier les contacts
+
+Si vous avez apporté (ou souhaitez apporter) une modification à un jeu de données, il est conseillé de contacter les utilisateurs concernés pour les en informer. Lorsque vous notifiez des contacts, un e-mail est envoyé aux [listes de contacts](service-create-the-new-workspaces.md#create-a-contact-list) de tous les espaces de travail impactés (dans le cas d’espaces de travail classiques, l’e-mail est envoyé aux administrateurs de l’espace de travail). Votre nom s’affiche dans l’e-mail afin que les contacts puissent vous trouver et vous répondre sur un nouveau thread. 
+
+1. Cliquez sur **Notifier les contacts** dans le volet latéral Analyse d’impact. La boîte de dialogue Notifier les contacts s’affiche.
+
+   ![Capture d’écran de la boîte de dialogue de notification des contacts](media/service-data-source-impact-analysis/notify-contacts-dialog.png)
+
+1. Dans la zone de texte, fournissez des détails sur la modification.
+1. Quand le message est prêt, cliquez sur **Envoyer**.
 
 ## <a name="privacy"></a>Confidentialité
 

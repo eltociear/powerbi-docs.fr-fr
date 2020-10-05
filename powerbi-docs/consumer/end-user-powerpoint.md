@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 841b8bb72b7b2a13c833fd313027b38b57511af3
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 61c084dca6d80a5e609f642ed6fc6894bef9e63c
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90764284"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527438"
 ---
 # <a name="export-reports-to-powerpoint"></a>Exporter des rapports vers PowerPoint
 
@@ -110,7 +110,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
     - Rapports dont le traitement prend plus d’une heure. 
     - Pages de rapport dont le chargement prend plus de 6 minutes. 
 
-* Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, c’est probablement le signe que l’administrateur client ou le propriétaire du rapport a désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur client ou le propriétaire.
+* Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, c’est probablement le signe que l’administrateur Power BI ou le propriétaire du rapport a désactivé la fonctionnalité. Pour plus d’informations, contactez votre administrateur ou le propriétaire.
 * Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation PowerPoint. Pour afficher ou définir la langue choisie dans votre navigateur, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
 
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7e10cfa5c99eb1750829150fd0a25347a4da1880
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278258"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136255"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Aide pour la relation un-à-un
 
@@ -131,13 +131,13 @@ Dans notre exemple, les auteurs des rapports peuvent trouver le champ **Catégor
 
 ![Le volet Champs montre le champ Catégorie dans un dossier d’affichage nommé Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Si vous souhaitez toujours définir les relations un-à-un intra-îlots dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation intra-îlot un-à-un étant évaluée comme une [relation forte](../transform-model/desktop-relationships-understand.md#strong-relationships), des problèmes d’intégrité des données peuvent apparaître comme VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
+Si vous souhaitez toujours définir les relations un-à-un intra-îlots dans votre modèle, vérifiez si possible qu’il y a des lignes correspondantes dans les tables liées. Une relation intra-îlot un-à-un étant évaluée comme une [relation régulière](../transform-model/desktop-relationships-understand.md#regular-relationships), les problèmes d’intégrité des données peuvent se traduire par des VIDES dans vos visuels de rapports. (Vous pouvez voir un exemple de regroupement VIDE dans le premier visuel de table présenté dans cet article.)
 
 ### <a name="inter-island-one-to-one-relationship"></a>Relation un-à-un inter-îlot
 
-Lorsqu’il existe une relation un-à-un _inter-îlot_ entre des tables, il n’existe pas d’alternative de conception de modèle, sauf si vous consolidez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme [relation faible](../transform-model/desktop-relationships-understand.md#weak-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
+Lorsqu’il existe une relation un-à-un _inter-îlot_ entre des tables, il n’existe pas d’alternative de conception de modèle, sauf si vous consolidez préalablement les données dans vos sources de données. Power BI évaluera la relation de modèle un-à-un comme une [relation limitée](../transform-model/desktop-relationships-understand.md#limited-relationships). Par conséquent, assurez-vous qu’il y a des lignes correspondantes dans les tables associées, car les lignes sans correspondance seront éliminées des résultats de la requête.
 
-Voyons ce qui se passe lorsque des champs des deux tables sont ajoutés à un visuel de table et qu’il y a une relation faible entre les tables.
+Voyons ce qui se passe lorsque des champs des deux tables sont ajoutés à un visuel de table et qu’il existe une relation limitée entre ces tables.
 
 ![Un visuel de table comprend quatre colonnes : SKU, Produit, Couleur et Catégorie. La table n’a que deux lignes.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
 

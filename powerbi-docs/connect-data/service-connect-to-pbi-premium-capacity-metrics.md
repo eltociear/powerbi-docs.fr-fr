@@ -8,14 +8,15 @@ ms.topic: how-to
 ms.date: 05/18/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2db7cce57408fa988c9a32057d6f1f880bc55126
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 42526dbae857c6488fe129cc7781672691782de1
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861955"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375232"
 ---
 # <a name="connect-to-power-bi-premium-capacity-metrics"></a>Se connecter à Métriques de capacité Power BI Premium
+
 La supervision de vos capacités est essentielle pour prendre des décisions avisées sur la meilleure utilisation de vos ressources de capacité Premium. L’application Métriques de capacité Power BI Premium fournit des informations très détaillées sur le fonctionnement de vos capacités.
 
 ![Rapport de l’application Métriques de capacité Power BI Premium](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
@@ -25,7 +26,7 @@ Cet article vous explique comment installer l’application et comment se connec
 Après avoir installé l’application et établi la connexion aux sources de données, vous pouvez personnaliser le rapport selon vos besoins. Vous pouvez ensuite le distribuer à des collègues au sein de votre organisation.
 
 > [!NOTE]
-> L’installation d’applications modèles nécessite des [autorisations](./service-template-apps-install-distribute.md#prerequisites). Si vous ne disposez pas des autorisations suffisantes, contactez l’administrateur de votre locataire.
+> L’installation d’applications modèles nécessite des [autorisations](./service-template-apps-install-distribute.md#prerequisites). Si vous ne disposez pas des autorisations suffisantes, contactez l’administrateur Power BI.
 
 ## <a name="install-the-app"></a>Installer l’application
 
@@ -83,7 +84,7 @@ Après avoir installé l’application et établi la connexion aux sources de do
 
 Pour commencer à personnaliser l’application, cliquez sur l’icône de crayon dans le coin supérieur droit.
 
- ![Écran de connexion Microsoft](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
+ ![Icône Modifier](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
 
 Pour plus d’informations, consultez [Personnaliser et partager l’application](./service-template-apps-install-distribute.md#customize-and-share-the-app).
 

@@ -9,19 +9,19 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 984ac0bc0e89ff1be5281039f4f4586025d7973e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ac0b032d8f20610dff97fb112d3ac54d5cc43889
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236756"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374289"
 ---
 # <a name="promote-your-dataset---power-bi"></a>Promouvoir votre jeu de données - Power BI
 
 Les créateurs de rapports Power BI pouvant désormais avoir accès à de nombreux jeux de données différents, les entreprises doivent les guider vers les jeux de données fiables et de qualité. Power BI offre deux moyens de *recommander* des jeux de données :
 
 - **Promotion** : En tant que propriétaire de jeux de données, vous pouvez promouvoir vos propres jeux de données quand ils sont prêts pour une utilisation étendue. Tout membre de l’espace de travail avec des autorisations d’écriture peut promouvoir un jeu de données. Il n’existe aucune restriction quant aux utilisateurs qui peuvent promouvoir un jeu de données. La promotion prend en charge la répartition de collaboration de jeux de données au sein des organisations. Cet article concerne la promotion de votre jeu de données.
-- **Certification** : Vous pouvez demander la certification pour un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre d’administrateur de locataire **Certification de jeux de données** détermine quels jeux de données certifier. Consultez [Certifier des jeux de données](service-datasets-certify.md) pour plus d’informations.
+- **Certification** : Vous pouvez demander la certification pour un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre de locataire **Certification de jeux de données** détermine quels jeux de données certifier. Consultez [Certifier des jeux de données](service-datasets-certify.md) pour plus d’informations.
 
 ## <a name="promote-a-dataset"></a>Promouvoir un jeu de données
 
@@ -41,7 +41,7 @@ Votre jeu de données doit se trouver dans un espace de travail de nouvelle exp�
 
 ## <a name="request-dataset-certification"></a>Demander la certification de jeux de données
 
-Votre administrateur de locataire a identifié des personnes de votre organisation qui peuvent certifier des jeux de données. Vous pouvez leur demander de certifier votre jeu de données.
+Votre administrateur Power BI a identifié des personnes de votre organisation qui peuvent certifier des jeux de données. Vous pouvez leur demander de certifier votre jeu de données.
 
 1. Accordez au certificateur des autorisations de membre pour l’espace de travail dans lequel réside le jeu de données.
 
@@ -49,7 +49,7 @@ Votre administrateur de locataire a identifié des personnes de votre organisati
 
 1. Sélectionnez le lien **En savoir plus**.
 
-    Votre administrateur de locataire Power BI peut configurer le lien **En savoir plus** pour accéder à un emplacement spécifié avec des détails sur le processus de certification dans votre locataire.   Si le lien **En savoir plus** n’a pas été personnalisé, il pointe par défaut vers l’article sur la [certification de jeux de données](service-datasets-certify.md).
+    Votre administrateur Power BI peut configurer le lien **En savoir plus** pour accéder à un emplacement spécifié avec des détails sur le processus de certification dans votre locataire.   Si le lien **En savoir plus** n’a pas été personnalisé, il pointe par défaut vers l’article sur la [certification de jeux de données](service-datasets-certify.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

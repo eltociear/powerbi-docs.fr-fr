@@ -1,5 +1,5 @@
 ---
-title: Indications concernant les paramètres d’administration de locataire
+title: Indications concernant les paramètres du locataire
 description: Indications concernant les paramètres de locataire Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -8,14 +8,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2020
 ms.author: v-pemyer
-ms.openlocfilehash: eeb879fc70effa166d08c9a342f77ad614779751
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: fdde090d4fe6e154482e1223b16215fdeca9f56f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049296"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528341"
 ---
-# <a name="tenant-admin-settings-guidance"></a>Indications concernant les paramètres d’administration de locataire
+# <a name="tenant-settings-guidance"></a>Indications concernant les paramètres du locataire
 
 Cet article s’adresse aux administrateurs Power BI chargés d’installer et de configurer l’environnement Power BI dans leur organisation.
 

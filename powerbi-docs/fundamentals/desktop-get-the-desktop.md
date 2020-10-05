@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e95b51d5d50900b8e09de8f5bf62bf31d5578ad1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec4bd8788d3c0421118a8e96287b36497683c4b2
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860207"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136140"
 ---
 # <a name="get-power-bi-desktop"></a>Obtenir Power BI Desktop
 Power BI Desktop vous permet de créer des requêtes, des modèles et des rapports avancés qui visualisent des données. Avec Power BI Desktop, vous pouvez construire des modèles de données, créer des rapports et partager votre travail en le publiant sur le service Power BI. Le téléchargement de Power BI Desktop est gratuit.
@@ -105,9 +105,12 @@ La liste suivante présente la configuration minimale requise pour exécuter Pow
 * .NET 4.5
 * Internet Explorer 10 ou version ultérieure
 * Mémoire (RAM) : Au moins 1 Go de disponible (1,5 Go ou plus recommandés).
-* Affichage : Résolution minimale recommandée de 1440 x 900 ou 1600 x 900 (16:9). Les résolutions inférieures, comme 1024 x 768 ou 1280 x 800, ne sont pas recommandées parce que certaines commandes (comme la fermeture de l’écran de démarrage) s’affichent en dehors de ces résolutions.
+* Affichage : Résolution minimale de 1440 x 900 ou 1600 x 900 (16:9). Les résolutions inférieures, comme 1024 x 768 ou 1280 x 800, ne sont pas prises en charge car certaines commandes (comme la fermeture de l’écran de démarrage) s’affichent en dehors de ces résolutions.
 * Paramètres d’affichage de Windows : Si vous définissez vos paramètres d’affichage de façon à changer la taille du texte, des applications et d’autres éléments à plus de 100 %, vous risquez de ne pas voir certaines boîtes de dialogue avec lesquelles vous devez interagir pour continuer à utiliser Power BI Desktop. Si vous rencontrez ce problème, vérifiez vos paramètres d’affichage dans Windows en accédant à **Paramètres** > **Système** > **Affichage**, puis utilisez le curseur pour rétablir les paramètres d’affichage à 100 %.
-* Processeur : Processeur x86 à 1 gigahertz (GHz) ou plus rapide 32 bits ou 64 bits recommandé
+* Processeur : Un processeur 1 gigahertz (GHz) 64 bits (x64) est recommandé.
+
+> [!NOTE]
+> Nous vous recommandons d’utiliser une version cliente de Windows, telle que Windows 10, plutôt que Windows Server. Par exemple, Power BI Desktop ne prend pas en charge l’utilisation de la configuration de sécurité renforcée d’Internet Explorer, car elle l’empêche de se connecter au service Power BI.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

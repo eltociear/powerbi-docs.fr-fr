@@ -1,20 +1,20 @@
 ---
 title: Rapports dans le service Power BI
-description: Rapports dans le service Power BI pour les consommateurs
+description: Rapports dans le service Power BI, pour les utilisateurs métier
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/28/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: bc0ef9854afdb95a00502ea6755dc36db6c8fbf4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 871f807d18017343b4b23eee4d59833c196cf2f0
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536213"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528065"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "87536213"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, soit *consommer* (utiliser) des rapports. Cet article s’adresse aux *consommateurs*.
+Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, Vous pouvez également être un utilisateur métier qui *consomme* ou utilise des rapports. Cet article est destiné aux *utilisateurs des activités*.
 
 ![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-report.png)
 
@@ -32,7 +32,7 @@ C. Le volet *Filtres* nous montre un filtre appliqué à toutes les pages du rap
 D. La bannière Power BI affiche le nom du rapport et la date de la dernière mise à jour. Sélectionnez la flèche pour ouvrir un menu qui affiche également le nom du propriétaire du rapport.    
 E. La barre d’action contient les actions que vous pouvez effectuer sur ce rapport.  Par exemple, vous pouvez ajouter un commentaire, afficher un signet ou exporter des données à partir du rapport.  Sélectionnez **Plus d’options** (...) pour afficher une liste de fonctionnalités de rapport supplémentaires.    
 
-Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les consommateurs du service Power BI](end-user-basic-concepts.md). Les rapports peuvent être visualisés, partagés et annotés sur des appareils mobiles. Pour plus d’informations, consultez [Explorer des rapports dans les applications mobiles Power BI](mobile/mobile-reports-in-the-mobile-apps.md).
+Si vous débutez avec Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les utilisateurs métier du service Power BI](end-user-basic-concepts.md). Les rapports peuvent être visualisés, partagés et annotés sur des appareils mobiles. Pour plus d’informations, consultez [Explorer des rapports dans les applications mobiles Power BI](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Avantages des rapports
 
@@ -68,14 +68,14 @@ Les [tableaux de bord](end-user-dashboards.md) sont souvent confondus avec les r
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
 | Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
-## <a name="report-designers-and-report-consumers"></a>Concepteurs de rapports et consommateurs de rapports
+## <a name="report-designers-and-report-users"></a>Concepteurs et utilisateurs de rapports
 
 Selon votre rôle, vous pouvez être *concepteur*. Dans ce cas, vous créez des rapports pour votre usage personnel ou pour les partager avec vos collègues. Vous devez donc apprendre à créer et à partager des rapports.
 
-Ou bien, vous pouvez être *consommateur*, c’est-à-dire quelqu’un qui reçoit des rapports d’autres personnes. Vous devez donc apprendre à comprendre les rapports et à interagir avec ceux-ci. Si vous êtes *consommateur* de rapports, ces liens vous concernent :
+Vous pouvez également être un *utilisateur métier*, c’est-à-dire quelqu’un qui reçoit des rapports d’autres personnes. Vous devez donc apprendre à comprendre les rapports et à interagir avec ceux-ci. Si vous êtes un *utilisateur métier* de rapports, ces liens vous concernent :
 
 * Commencez par une [présentation du service Power BI](end-user-basic-concepts.md) pour savoir où trouver les rapports et les outils de rapport.
-* Découvrez comment [ouvrir un rapport](end-user-report-open.md) et toutes les [interactions disponibles pour les consommateurs](end-user-reading-view.md).
+* Découvrez comment [ouvrir un rapport](end-user-report-open.md), ainsi que toutes les [interactions disponibles pour les utilisateurs métier](end-user-reading-view.md).
 * Familiarisez-vous avec les rapports en suivant la présentation de l’un de nos [exemples](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Pour voir le jeu de données que le rapport utilise et les tableaux de bord affichant des visuels (*épingles*) à partir du rapport, consultez [Afficher le contenu associé dans le service Power BI](end-user-related.md).
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: a9fca9f27baf51c4e4bafbf93244f0d745ba714b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c83565582a47c75e4f55e516afe3be0d9fbe7847
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857424"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374220"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -74,4 +74,8 @@ Si la solution Power BI utilisée dans votre organisation implique l’un des é
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Les passerelles fonctionnent-elles en mode de basculement ?
 
-Non. Les données provenant des sources de données locales (tous les rapports et tableaux de bord basés sur Direct Query et Live Connect) ne fonctionnent pas pendant le basculement. Toutefois, la configuration de la passerelle ne change pas : Quand l’instance Power BI retourne à son état d’origine, les passerelles retrouvent leurs fonctions normales.
+Non. Les données provenant des sources de données locales (tous les rapports et tableaux de bord basés sur Direct Query et Live Connect) ne fonctionnent pas pendant le basculement. Toutefois, la configuration de la passerelle ne change pas. Quand l’instance Power BI retourne à son état d’origine, les passerelles retrouvent leurs fonctions normales.
+
+Si un sinistre grave se produit dans une région primaire et empêche le retour en ligne pendant une longue période, la région primaire basculée autorisera à la fois les opérations de lecture et d’écriture, et les clients pourront redéployer et configurer des passerelles dans la nouvelle région.
+
+Les clients peuvent choisir d’installer une nouvelle passerelle sur une autre machine ou de prendre le contrôle de leur passerelle existante. La prise de contrôle de la passerelle existante est normalement plus simple, car toutes les sources de données associées à l’ancienne passerelle seront transférées vers la nouvelle.

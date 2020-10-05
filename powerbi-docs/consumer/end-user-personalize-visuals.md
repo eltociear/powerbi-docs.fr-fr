@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8fc61a1aee263b40afb8ae95f365477b4104ca71
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: dfc682e867b65ba9da2b2eee87f52d7fd5d0961c
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763341"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528119"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Personnaliser les visuels dans un rapport
 
@@ -117,7 +117,7 @@ Sélectionnez l’icône représentant une gomme pour effacer toutes les modific
 
 La fonctionnalité présente actuellement quelques limitations à connaître.
 
-- **Personnaliser ce visuel** peut être désactivé pour un rapport entier ou pour un visuel particulier. Si vous n’avez pas la possibilité de personnaliser un visuel, contactez l’administrateur de votre locataire ou le propriétaire du rapport. Pour afficher les informations de contact du propriétaire du rapport, sélectionnez le nom du rapport dans la barre de menus Power BI.
+- **Personnaliser ce visuel** peut être désactivé pour un rapport entier ou pour un visuel particulier. Si vous n’avez pas la possibilité de personnaliser un visuel, contactez l’administrateur Power BI ou le propriétaire du rapport. Pour afficher les informations de contact du propriétaire du rapport, sélectionnez le nom du rapport dans la barre de menus Power BI.
 - Les explorations des utilisateurs ne sont pas automatiquement conservées. Vous devez enregistrer votre affichage dans les signets personnels pour capturer vos modifications.
 - Cette fonctionnalité est prise en charge dans les applications mobiles Power BI pour les tablettes iOS et Android, ainsi que dans l’application Windows Power BI. Elle n’est pas prise en charge dans les applications mobiles Power BI pour les téléphones. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles Power BI.
 

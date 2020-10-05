@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5bcc2123c5e22cb5b0ff91122a30ce3d7beb51fe
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 17006405a495798618bf7562e6b94864b795a224
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83325572"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528042"
 ---
 # <a name="apply-many-many-relationships-in-power-bi-desktop"></a>Appliquer des relations plusieurs à plusieurs dans Power BI Desktop
 
@@ -93,7 +93,7 @@ Vous pouviez laisser la table de la solution de contournement visible. Ou vous p
 
 Un visuel affichant le champ **State** (État) (à partir de la table **CityData**), ainsi que la **Population** totale et les ventes (**Sales**) totales ressemblerait alors à ce qui suit :
 
-![Tables State, Population et Sales (Power BI Desktop)](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
+![Capture d’écran montrant une table comprenant des données sur les États, la population et les ventes.](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
 > Étant donné que l’État issu de la table **CityData** est utilisé dans cette solution de contournement, seuls les États de cette table sont listés, ce qui explique l’exclusion de TX. De plus, contrairement aux relations *plusieurs à 1*, alors que la ligne totale inclut toutes les **ventes** (y compris celles de TX), les détails n’incluent pas de ligne vide couvrant les lignes qui ne correspondent pas. De même, aucune ligne vide ne couvre les **ventes** pour lesquelles il existe une valeur Null pour l’**État**.

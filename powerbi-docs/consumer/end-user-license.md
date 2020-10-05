@@ -11,12 +11,12 @@ ms.date: 09/17/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: c46da515a4f0f58c0e9fe92f01a3a0eaeb68a1de
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: bfa2faaa95c58541e44dd858f8d544d06d86ba25
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763939"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527935"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>Licences et abonnements pour les *utilisateurs professionnels*
 
@@ -36,7 +36,7 @@ Dans cet article, nous allons décrire les fonctionnalités de chaque type de li
 
 ## <a name="licenses"></a>Licences
 
-Chaque utilisateur du service Power BI dispose soit d’une licence *gratuite*, soit d’une licence *Pro*. Si vous êtes *utilisateur professionnel* de Power BI, vous utilisez probablement une licence gratuite gérée par votre administrateur client Power BI.
+Chaque utilisateur du service Power BI dispose soit d’une licence *gratuite*, soit d’une licence *Pro*. Si vous êtes *utilisateur professionnel* de Power BI, vous utilisez probablement une licence gratuite gérée par votre administrateur Power BI.
 
 Il est possible d’avoir plusieurs licences en même temps.  Le service vous fournit toujours l’expérience correspondant à celle offerte par votre licence la plus permissive.
 

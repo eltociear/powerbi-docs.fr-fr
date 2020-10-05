@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: acde398c1d8954b815c86cce77a6be0cfcf1553f
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 893becbcfc7d58b04bbff2819baed4bbc829fe9d
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216662"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526671"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -76,7 +76,7 @@ Mémoire par défaut dans chaque référence SKU Premium pour des rapports pagin
 - **P2/A5** : 20 % par défaut ; 5 % minimum
 - **P3/A6** : 20 % par défaut ; 2,5 % minimum
 
-Les administrateurs de locataires Power BI peuvent modifier le pourcentage de mémoire maximal par défaut dans le portail d’administration. Sous l’onglet **Paramètres de capacité**, consultez la section **Rapports paginés** (dans la partie Charges de travail) sous **Power BI Premium**.
+Les administrateurs Power BI peuvent modifier le pourcentage de mémoire maximal par défaut dans le portail d’administration. Sous l’onglet **Paramètres de capacité**, consultez la section **Rapports paginés** (dans la partie Charges de travail) sous **Power BI Premium**.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Onglet Paramètres de capacité, Rapports paginés":::
 

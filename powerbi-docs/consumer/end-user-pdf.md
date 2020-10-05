@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 09/17/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: add9e4e5c5a68354eb3e2d1b9c9b86a3b8c4e614
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 7eb55555efa6fe3eb9acad5c67e05288f0e55f21
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763808"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527421"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -60,7 +60,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Le visuel ESRI n’est pas pris en charge.
 * Les rapports contenant plus de 50 pages de rapport ne peuvent actuellement pas être exportés.
 * Le processus d’exportation du rapport au format PDF peut prendre quelques minutes : soyez patient. Les facteurs qui peuvent affecter la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.
-* Si l’option de menu **Exporter au format PDF** n’est pas disponible dans le service Power BI, il est probable que l’administrateur de votre locataire ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
+* Si l’option de menu **Exporter au format PDF** n’est pas disponible dans le service Power BI, il est probable que l’administrateur Power BI ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur.
 * Les images en arrière-plan sont rognées en fonction du cadre englobant du graphique. Nous vous recommandons de supprimer les images en arrière-plan avant d’exporter au format PDF.
 * Vous ne pouvez pas publier au format PDF un rapport qui appartient à un utilisateur externe à votre domaine de locataire Power BI, par exemple un rapport appartenant à une personne extérieure à votre organisation et partagé avec vous.
 * Si vous partagez un tableau de bord avec une personne externe à votre organisation, et donc un utilisateur qui n’est pas dans votre locataire Power BI, cet utilisateur ne peut pas exporter les rapports associés du tableau de bord partagé au format PDF. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec cassie@northwinds.com. cassie@northwinds.com ne peut cependant pas exporter les rapports associés au format PDF.

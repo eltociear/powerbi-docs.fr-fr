@@ -1,6 +1,6 @@
 ---
 title: Introduction aux jeux de données entre plusieurs espaces de travail
-description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
+description: Découvrez comment partager et découvrir des jeux de données pour les espaces de travail. Les utilisateurs de l’organisation peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f79411d7eedc97e99aabc8b44dbf12a22696bba
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e943324106148bdbff1edba36650d494fdd9db8c
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236870"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374266"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>Introduction aux jeux de données entre plusieurs espaces de travail
 
@@ -22,7 +22,7 @@ Le décisionnel est une activité de collaboration. Il est important de définir
 
 ![Sélectionner un jeu de données partagé](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Dans Power BI, les créateurs de jeux de données peuvent décider des utilisateurs qui sont autorisés à accéder à leurs données à l’aide de l’[autorisation de création](service-datasets-build-permissions.md). Les créateurs de jeux de données peuvent également *certifier* ou *promouvoir* des jeux de données afin que d’autres personnes puissent les découvrir. De cette façon, les auteurs de rapports savent quels jeux de données sont officiels et de bonne qualité, et ils peuvent utiliser ces jeux de données partout où ils créent dans Power BI. Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
+Dans Power BI, les créateurs de jeux de données peuvent décider des utilisateurs qui sont autorisés à accéder à leurs données à l’aide de l’[autorisation de création](service-datasets-build-permissions.md). Les créateurs de jeux de données peuvent également *certifier* ou *promouvoir* des jeux de données afin que d’autres personnes puissent les découvrir. De cette façon, les auteurs de rapports savent quels jeux de données sont officiels et de bonne qualité, et ils peuvent utiliser ces jeux de données partout où ils créent dans Power BI. Les administrateurs ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans les espaces de travail](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Partage de jeux de données et nouvelle expérience d’espace de travail
 

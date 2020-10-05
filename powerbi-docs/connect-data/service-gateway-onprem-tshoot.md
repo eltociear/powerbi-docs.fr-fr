@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 07/15/2019
+ms.date: 09/25/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4d106a2bd2c11d049307a2b6f752d9486cd5aa20
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6dc42a5feb13b344a0e5d4d7c8880d1f5388a1ef
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860690"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375186"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
@@ -150,7 +150,7 @@ Si vous le souhaitez, vous pouvez voir ce que Power BI obtient d’Azure Active
         https://graph.windows.net/me?api-version=1.5
 4. Recherchez **userPrincipalName**.
 
-Si votre nom d’utilisateur principal Azure Active Directory ne correspond pas à votre nom d’utilisateur principal Active Directory local, vous pouvez utiliser la fonctionnalité [Mapper les noms d’utilisateur](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) pour la remplacer par une valeur valide. Vous pouvez également contacter l’administrateur de votre locataire ou l’administrateur Active Directory local pour demander la modification de votre nom d’utilisateur principal (UPN).
+Si votre nom d’utilisateur principal Azure Active Directory ne correspond pas à votre nom d’utilisateur principal Active Directory local, vous pouvez utiliser la fonctionnalité [Mapper les noms d’utilisateur](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) pour la remplacer par une valeur valide. Vous pouvez également contacter l’administrateur Power BI ou l’administrateur Active Directory local pour demander la modification de votre nom d’utilisateur principal (UPN).
 
 ## <a name="kerberos"></a>Kerberos
 
@@ -192,11 +192,11 @@ Vous recevez l’erreur 1033 quand votre ID externe qui est configuré dans SAP
 
 * SAP HANA oblige l’utilisateur impersonné à utiliser l’attribut sAMAccountName dans Active Directory (alias de l’utilisateur). Si cet attribut n’est pas correct, vous voyez l’erreur 1033.
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Éditeur d’attributs](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
 * Dans les journaux, vous voyez sAMAccountName (alias) et non pas l’UPN, qui est l’alias suivi du domaine (alias@doimain.com).
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Informations sur le compte dans les journaux](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">

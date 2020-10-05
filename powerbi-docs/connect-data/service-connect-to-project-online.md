@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 25a0ddaaf72e185d795d819e8c2cb990d2823ed2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 99a8cf5081274f922d210a140d333814b80fd01f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229789"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527743"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Se connecter à Project Web App avec Power BI
 Microsoft Project Web App est une solution en ligne flexible pour la gestion de portefeuilles de projets et les tâches quotidiennes. Project Web App permet aux organisations de prendre en main et de hiérarchiser les investissements de portefeuilles de projets ainsi que de produire la valeur commerciale souhaitée. L’application modèle Project Web App pour Power BI vous permet d’exploiter les insights de Project Web App pour mieux gérer les projets, les portefeuilles et les ressources.
@@ -29,7 +29,7 @@ Connectez-vous à l’[application modèle Project Web App](https://appsource.mi
 
 2. Dans la zone **Services** , sélectionnez **Obtenir**.
    
-   ![AppSource](media/service-connect-to-project-online/AppSource.png)
+   ![Capture d’écran montrant la fenêtre AppSource avec cinq applications disponibles.](media/service-connect-to-project-online/AppSource.png)
 3. Dans AppSource, sélectionnez l’onglet **Applications**, puis recherchez/sélectionnez **Microsoft Project Web App**.
    
 4. Vous recevrez un message indiquant **Installer cette application Power BI ?** . Sélectionnez **Installer**. 

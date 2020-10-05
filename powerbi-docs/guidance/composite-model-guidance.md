@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 528fc40427a1cb242d9154028d1a7c6617c8a14e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 840e4dc92164de2ebfd1bdef6bee941124f6e906
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279682"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136209"
 ---
 # <a name="composite-model-guidance-in-power-bi-desktop"></a>Aide sur les modèles composites dans Power BI Desktop
 
@@ -54,8 +54,8 @@ Dans un modèle composite, vous pouvez configurer le mode de stockage pour chaqu
 Plusieurs scénarios sont possibles lorsque Power BI interroge un modèle composite :
 
 - **Interroge uniquement une ou plusieurs tables d’importation ou tables doubles** : toutes les données sont récupérées à partir du cache de modèle. Ce scénario offre les performances les plus rapides possibles. Il est courant pour les tables de type dimension interrogées par des filtres ou des visuels de segment.
-- **Interroge une ou plusieurs tables doubles ou tables DirectQuery à partir de la même source** : toutes les données sont récupérées en envoyant une ou plusieurs requêtes natives à la source DirectQuery. Ce scénario offre les performances les plus rapides possibles, en particulier lorsque les tables sources comportent des index appropriés. Il est courant pour les requêtes qui associent des tables de type dimension et des tables de type fait DirectQuery. Ces requêtes étant _intra-îlots_, toutes les relations un-à-un ou un-à-plusieurs sont évaluées comme des [relations fortes](../transform-model/desktop-relationships-understand.md#strong-relationships).
-- **Toutes les autres requêtes** : ces requêtes impliquent des relations entre îlots, soit parce qu’une table d’importation est associée à une table DirectQuery, soit parce qu’une table double est associée à une table DirectQuery à partir d’une autre source, auquel cas elle se comporte comme une table d’importation. Toutes les relations sont évaluées comme des [relations faibles](../transform-model/desktop-relationships-understand.md#weak-relationships). Cela signifie également que les regroupements appliqués aux tables non DirectQuery doivent être envoyés à la source DirectQuery en tant que table virtuelle. Dans ce cas, la requête native peut être inefficace, en particulier pour les jeux de regroupement volumineux. Elle risque par ailleurs d’exposer des données sensibles.
+- **Interroge une ou plusieurs tables doubles ou tables DirectQuery à partir de la même source** : toutes les données sont récupérées en envoyant une ou plusieurs requêtes natives à la source DirectQuery. Ce scénario offre les performances les plus rapides possibles, en particulier lorsque les tables sources comportent des index appropriés. Il est courant pour les requêtes qui associent des tables de type dimension et des tables de type fait DirectQuery. Ces requêtes étant _intra-îlots_, toutes les relations un-à-un ou un-à-plusieurs sont évaluées comme des [relations régulières](../transform-model/desktop-relationships-understand.md#regular-relationships).
+- **Toutes les autres requêtes** : ces requêtes impliquent des relations entre îlots, soit parce qu’une table d’importation est associée à une table DirectQuery, soit parce qu’une table double est associée à une table DirectQuery à partir d’une autre source, auquel cas elle se comporte comme une table d’importation. Toutes les relations sont évaluées comme des [relations limitées](../transform-model/desktop-relationships-understand.md#limited-relationships). Cela signifie également que les regroupements appliqués aux tables non DirectQuery doivent être envoyés à la source DirectQuery en tant que table virtuelle. Dans ce cas, la requête native peut être inefficace, en particulier pour les jeux de regroupement volumineux. Elle risque par ailleurs d’exposer des données sensibles.
 
 Suivez par conséquent les recommandations suivantes :
 
@@ -63,7 +63,7 @@ Suivez par conséquent les recommandations suivantes :
 - Définissez le mode de stockage sur **DirectQuery** lorsque la table est une table de type fait qui stocke de gros volumes de données, ou qu’elle doit fournir des résultats en quasi temps réel.
 - Définissez le mode de stockage sur **Double** lorsque la table est une table de type dimension, et qu’elle sera interrogée avec des tables de type fait **DirectQuery** basées sur la même source.
 - Configurez des fréquences d’actualisation permettant de maintenir la synchronisation du cache de modèle des tables doubles (et de toutes les tables calculées dépendantes) avec la ou les bases de données sources.
-- Efforcez-vous de garantir l’intégrité des données entre les différentes sources de données (y compris le cache de modèle) : les relations faibles éliminent les lignes quand les valeurs de colonnes associées ne correspondent pas.
+- Efforcez-vous de garantir l’intégrité des données entre les différentes sources de données (y compris le cache de modèle) : les relations limitées éliminent les lignes quand les valeurs de colonnes associées ne correspondent pas.
 - Optimisez les sources de données DirectQuery avec les index appropriés pour obtenir des jointures, filtres et le regroupements efficaces.
 - Ne chargez pas de données sensibles dans des tables d’importation ou des tables doubles s’il y a un risque d’interception d’une requête native. Pour plus d’informations, consultez [Utiliser des modèles composites dans Power BI Desktop (implications sur la sécurité)](../transform-model/desktop-composite-models.md#security-implications).
 
