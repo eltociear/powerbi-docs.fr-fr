@@ -35,6 +35,22 @@
           href: desktop-bidirectional-filtering.md
         - name: Utiliser des modèles multidimensionnels dans Power BI
           href: ../connect-data/desktop-default-member-multidimensional-models.md
+    - name: Dataflows
+      items:
+        - name: Présentation des dataflows
+          href: dataflows/dataflows-introduction-self-service.md
+        - name: Créer un flux de données
+          href: dataflows/dataflows-create.md
+        - name: Configurer et consommer un dataflow
+          href: dataflows/dataflows-configure-consume.md
+        - name: Dataflows et Azure Data Lake Gen2
+          href: dataflows/dataflows-azure-data-lake-storage-integration.md
+        - name: Fonctionnalités Premium des dataflows
+          href: dataflows/dataflows-premium-features.md
+        - name: Utiliser le Machine Learning et Cognitive Services avec les dataflows
+          href: dataflows/dataflows-machine-learning-integration.md
+        - name: Considérations et limitations des dataflows
+          href: dataflows/dataflows-features-limitations.md
     - name: Guides pratiques
       items:
         - name: Effectuer des tâches de requête courantes
