@@ -91,9 +91,9 @@
         - name: API
           items:
             - name: API REST Azure Resource Management
-              href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+              href: /rest/api/power-bi-embedded/
             - name: "API REST Power\_BI"
-              href: 'https://docs.microsoft.com/rest/api/power-bi/'
+              href: /rest/api/power-bi/
         - name: Bibliothèques Power BI
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Incorporer des dispositions personnalisées dans une application
