@@ -5,7 +5,7 @@
     - name: Vue d’ensemble
       expanded: true
       items:
-        - name: "Quelles sont les possibilités offertes par l’API Power\_BI\_?"
+        - name: "Que puis-je faire avec l’API Power BI\_?"
           href: overview-of-power-bi-rest-api.md
     - name: Tutoriels
       expanded: true
@@ -39,7 +39,7 @@
     - name: Informations de référence
       items:
         - name: API REST
-          href: 'https://docs.microsoft.com/rest/api/power-bi'
+          href: /rest/api/power-bi
         - name: "Informations de référence sur l’API REST de Power\_BI"
           href: rest-api-reference.md
         - name: Listing du code complet
@@ -48,7 +48,7 @@
       items:
         - name: Centre de développement
           href: 'https://powerbi.microsoft.com/en-us/developers/'
-        - name: 'Référentiel Git Power BI C#'
+        - name: Référentiel Git Power BI C#
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Téléchargement du SDK .NET
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'

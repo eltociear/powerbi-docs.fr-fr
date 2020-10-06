@@ -12,14 +12,14 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: 3f7bf1ebb51e7f9e5916e16280a2e10d7339df73
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: d66f11bdbb9de10f77b7841958d9ef08c358ef7e
+  ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "80516258"
+  ms.lasthandoff: 10/06/2020
+  ms.locfileid: "91746030"
 landingContent:
-- title: Commencer
+- title: Bien démarrer
   linkLists:
   - linkListType: get-started
     links:
@@ -27,7 +27,7 @@ landingContent:
       url: embedding.md
     - text: Qu’est-ce que Power BI Embedded dans Azure ?
       url: azure-pbie-what-is-power-bi-embedded.md
-    - text: Forum Aux Questions
+    - text: Forum aux questions
       url: embedded-faq.md
 - title: Incorporer des rapports ou des tableaux de bord
   linkLists:
@@ -60,7 +60,7 @@ landingContent:
     - text: Bonnes pratiques relatives aux performances
       url: embedded-performance-best-practices.md
     - text: Autorisations Power BI
-      url: power-bi-permissions.md
+      url: /azure/active-directory/develop/v2-permissions-and-consent
     - text: Questions et réponses
       url: qanda.md
     - text: Résoudre les problèmes de votre application incorporée
@@ -70,9 +70,9 @@ landingContent:
   - linkListType: reference
     links:
     - text: API REST Power BI
-      url: https://docs.microsoft.com/rest/api/power-bi/
+      url: /rest/api/power-bi/
     - text: Informations de référence sur l’API REST de Power BI
-      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+      url: ../automation/rest-api-reference.md
     - text: Centre de développement
       url: https://powerbi.microsoft.com/developers/
     - text: Bibliothèques Power BI
