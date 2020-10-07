@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: 3a755b2b4eeba407178d7afa0a0250b6897e6dac
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: aa4df6db3058ef3d6f8c399e1bf20f0edf17ebc8
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526349"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600490"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
 
@@ -62,11 +62,6 @@ L’illustration suivante montre le mode Design dans le Générateur de rapports
   
 9. Sélectionnez **OK**. 
 
-## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-
-- Si vous utilisez un jeu de données Power BI ou un modèle Analysis Services comme source de données, vous ne pouvez pas passer plus de 1 000 valeurs de paramètre dans une seule requête. DAX limite en effet les paramètres à 1 000 valeurs. 
-
- 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Consultez [Afficher les paramètres des rapports paginés](../consumer/paginated-reports-view-parameters.md) pour voir à quoi ressemblent les paramètres dans le service Power BI.

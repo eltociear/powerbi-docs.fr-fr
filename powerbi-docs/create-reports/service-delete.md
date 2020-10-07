@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: ff31548801f372fa1e20949e5c109cc9214f55e1
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: b2263a1eddfdbc51f0e345443f7bbb75b11da6e7
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264487"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632729"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -28,7 +28,7 @@ Vous pouvez supprimer des tableaux de bord. La suppression du tableau de bord n�
 
 ### <a name="to-delete-a-dashboard"></a>Pour supprimer un tableau de bord
 1. Dans votre espace de travail, sélectionnez l’onglet **Tableaux de bord**.
-2. Recherchez le tableau de bord à supprimer et sélectionnez l’icône Supprimer ![icône supprimer](media/service-delete/power-bi-delete-icon.png).
+2. Recherchez le tableau de bord à supprimer, puis sélectionnez l’icône Supprimer :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.
 
     ![vidéo](media/service-delete/power-bi-delete-dash.gif)
 
@@ -37,7 +37,7 @@ La suppression d’un rapport ne doit pas être une source d’inquiétudes : c
 
 ### <a name="to-delete-a-report"></a>Pour supprimer un rapport :
 1. Dans votre espace de travail, sélectionnez l’onglet **Rapports**.
-2. Recherchez le rapport à supprimer et sélectionnez l’icône Supprimer   ![icône supprimer](media/service-delete/power-bi-delete-icon.png).   
+2. Recherchez le rapport à supprimer, puis sélectionnez l’icône Supprimer :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.   
 
     ![onglet Rapports d’un espace de travail](media/service-delete/power-bi-delete-reportnew.png)
 3. Confirmez la suppression.
@@ -56,7 +56,7 @@ Si le classeur est stocké sur OneDrive Entreprise, sa suppression de Power BI n
 
 ### <a name="to-delete-a-workbook"></a>Pour supprimer un classeur
 1. Dans votre espace de travail, sélectionnez l’onglet **Classeurs**.
-2. Recherchez le classeur à supprimer et sélectionnez l’icône Supprimer ![icône supprimer](media/service-delete/power-bi-delete-report2.png) .
+2. Recherchez le classeur à supprimer, puis sélectionnez l’icône Supprimer :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::.
 
     ![onglet Classeurs](media/service-delete/power-bi-delete-workbooknew.png)
 3. Confirmez la suppression.
@@ -111,7 +111,7 @@ Si vous ne voulez plus être membre d’un espace de travail, vous pouvez le ***
 
 2. Dans le coin supérieur droit, sélectionnez **Plus d’options** (…), puis choisissez **Quitter l’espace de travail** > **Quitter**.
 
-      ![quitter l’espace de travail](media/service-delete/power-bi-leave-workspace.png)
+      :::image type="icon" source="media/service-delete/power-bi-leave-workspace.png" border="false":::
 
    > [!NOTE]
    > Les options qui apparaissent dans la liste déroulante varient selon que vous êtes administrateur ou membre de cet espace de travail.
@@ -125,7 +125,7 @@ Vous pouvez facilement supprimer des applications de la page de votre liste d’
 La suppression d’une application de la page de votre liste d’applications n’a pas pour effet de supprimer l’application pour les autres membres.
 
 1. Dans le volet de navigation, sélectionnez **Applications** pour ouvrir la page de la liste d’applications.
-2. Pointez sur l’application à supprimer, puis sélectionnez l’icône Supprimer ![Icône de la poubelle](media/service-delete/power-bi-delete-report2.png)  .
+2. Pointez sur l’application à supprimer, puis sélectionnez l’icône Supprimer :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::.
 
    ![sélectionner Applications](media/service-delete/power-bi-delete-app.png)
 

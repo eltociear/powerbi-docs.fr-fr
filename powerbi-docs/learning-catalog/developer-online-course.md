@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/01/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 82f9ffaeb98610dd9ae5986031638c5086749937
-ms.sourcegitcommit: 7fba2caf3bd7ed93a7ecb6a6b9ba2da26de27395
+ms.openlocfilehash: bb5e2d0accd2db339666e23c449164103bb26ac8
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84467030"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91527881"
 ---
 # <a name="power-bi-developer-in-a-day-course"></a>Cours Développeur Power BI en un jour
 
@@ -85,7 +85,7 @@ Pour effectuer les labos, vous aurez besoin d’un PC Windows (Windows 7 ou vers
 
 - La dernière version de [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 - Visual Studio 2015 ou ultérieur. Nous vous recommandons d’utiliser [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/). Vous pouvez utiliser l’édition **de la communauté**, qui est gratuite et adaptée aux scénarios d’apprentissage. La charge de travail **Développement ASP.NET et web** doit être installée.
-- Un navigateur web [pris en charge par Power BI](../power-bi-browsers.md). Nous vous recommandons Microsoft Edge.
+- Un navigateur web [pris en charge par Power BI](../fundamentals/power-bi-browsers.md). Nous vous recommandons Microsoft Edge.
 
 Effectuez d’abord ces étapes :
 
@@ -106,7 +106,7 @@ Nous vous recommandons de d’abord suivre le cours en ligne. Vous pouvez vous r
 Quand vous êtes prêt à commencer le premier labo, ouvrez le fichier **&lt;CourseFolder&gt;\PowerBIDevIAD\Lab01A\PowerBIDevIAD_Lab01A.pdf**. Ce document vous guide dans la connexion au service Power BI et pour la préparation d’un rapport Power BI.
 
 > [!NOTE]
-> Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../service-self-service-signup-for-power-bi.md).
+> Vous devez avoir votre propre compte Power BI. Si vous n’en avez pas déjà un, consultez [S’inscrire à Power BI en tant que personne individuelle](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Votre compte doit disposer d’une licence Power BI Pro, ou vous pouvez encore accepter une licence d’évaluation Power BI Pro, une offre qui ne peut être acceptée qu’une seule fois. En outre, votre compte ne doit pas avoir épuisé la réserve de jetons d’incorporation gratuits proposée avec la licence Power BI Pro.
 >

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 05/19/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 706e4221c131f1743ff00bb9a7b6c0812394cbb8
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 2e482c6efd60352721e1788a7929128af1b8cf89
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782439"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633627"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Se connecter à GitHub avec Power BI
 Cet article vous guide tout au long de l’extraction de vos données à partir de votre compte GitHub à l’aide d’une application de modèle Power BI. L’application de modèle génère un espace de travail avec un tableau de bord, un ensemble de rapports et un jeu de données pour vous permettre d’explorer vos données GitHub. L’application GitHub pour Power BI vous montre un aperçu de votre référentiel GitHub (ou repo) avec des données relatives à des contributions, des problèmes, des requêtes d’extraction et des utilisateurs actifs.
@@ -125,7 +125,9 @@ Vous pouvez déterminer le propriétaire et le dépôt en examinant le dépôt G
 
 La première partie « Azure » représente le propriétaire, tandis que la deuxième partie « azure-sdk-for-php » correspond au dépôt proprement dit.  Ces deux mêmes éléments apparaissent dans l’URL du dépôt :
 
-    <https://github.com/Azure/azure-sdk-for-php> .
+```console
+<https://github.com/Azure/azure-sdk-for-php> .
+```
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si nécessaire, vous pouvez vérifier vos informations d’identification GitHub.  
