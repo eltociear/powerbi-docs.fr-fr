@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 09/25/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6dc42a5feb13b344a0e5d4d7c8880d1f5388a1ef
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 045d7df36deefae5c323e88d0ddf3053ea56682e
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375186"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634639"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
@@ -34,7 +34,9 @@ Cet article traite de certains problèmes courants rencontrés lors de l’utili
 
 Le message d’erreur reçu de la source de données apparaît dans **Afficher les détails**. Pour SQL Server, vous voyez un message comme celui-ci :
 
-    Login failed for user 'username'.
+```output
+Login failed for user 'username'.
+```
 
 Vérifiez l’exactitude du nom d’utilisateur et du mot de passe. Vérifiez également que les informations d’identification permettent bien de se connecter à la source de données. Vérifiez que le compte utilisé correspond à la méthode d’authentification.
 
@@ -44,7 +46,9 @@ Vous avez établi la connexion au serveur, mais pas à la base de données fourn
 
 Le message d’erreur reçu de la source de données apparaît dans **Afficher les détails**. Pour SQL Server, vous voyez un message comme celui-ci :
 
-    Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```output
+Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```
 
 ### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Erreur : Connexion impossible. Détails : « Erreur inconnue dans la passerelle de données »
 
@@ -62,11 +66,15 @@ Le code d’erreur **DM_GWPipeline_Gateway_DataSourceAccessError**apparaît dans
 
 Si le message d’erreur sous-jacent est similaire à ce qui suit, cela signifie que le compte que vous utilisez pour la source de données n’est pas un administrateur de serveur pour cette instance Analysis Services. Pour plus d’informations, voir [Accorder des droits d’administrateur de serveur à une instance de Analysis Services](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
-    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```output
+The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```
 
 Si le message d’erreur sous-jacent est similaire à ce qui suit, cela peut signifier qu’un attribut d’annuaire [token-groups-global-and-universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU) est peut-être absent du compte de service Analysis Services.
 
-    The username or password is incorrect.
+```output
+The username or password is incorrect.
+```
 
 Dans les domaines avec un accès de compatibilité antérieurs à Windows 2000, l’attribut TGGAU est activé. Il n’est pas activé par défaut dans la plupart des domaines créés récemment. Pour plus d’informations, voir [Certaines applications et l’API ont besoin d’accéder à des informations d’autorisation sur les objets de compte](https://support.microsoft.com/kb/331951).
 
@@ -75,13 +83,17 @@ Pour vérifier si l’attribut est activé, procédez comme suit.
 1. Connectez-vous à l’ordinateur Analysis Services dans SQL Server Management Studio. Dans les propriétés de connexion avancées, incluez EffectiveUserName pour l’utilisateur en question et voyez si cet ajout reproduit l’erreur.
 2. Vous pouvez utiliser l’outil dsacls d’Active Directory pour vérifier si l’attribut est répertorié. Cet outil se trouve sur un contrôleur de domaine. Vous devez connaître le nom de domaine unique du compte et le passer à l’outil.
 
-        dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```console
+   dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```
 
     Les résultats doivent avoir l’aspect suivant :
 
-            Allow BUILTIN\Windows Authorization Access Group
-                                          SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
-                                          READ PROPERTY
+   ```console
+   Allow BUILTIN\Windows Authorization Access Group
+                                   SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
+                                   READ PROPERTY
+   ```
 
 Pour corriger ce problème, vous devez activer TGGAU sur le compte utilisé pour le service Windows Analysis Services.
 
@@ -139,7 +151,9 @@ Pour confirmer le nom d’utilisateur effectif, procédez comme suit.
 1. Recherchez le nom d’utilisateur en vigueur dans les [journaux de la passerelle](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 2. Une fois la valeur transmise, vérifiez qu’elle est correcte. S’il s’agit de votre utilisateur, vous pouvez utiliser la commande suivante à partir d’une invite de commandes pour voir le nom d’utilisateur principal. Celui-ci se présente comme une adresse e-mail.
 
-        whoami /upn
+   ```console
+   whoami /upn
+   ```
 
 Si vous le souhaitez, vous pouvez voir ce que Power BI obtient d’Azure Active Directory.
 
@@ -147,7 +161,10 @@ Si vous le souhaitez, vous pouvez voir ce que Power BI obtient d’Azure Active
 2. Sélectionnez **Se connecter** dans le coin supérieur droit.
 3. Exécutez la requête suivante. Vous voyez une réponse JSON assez longue.
 
-        https://graph.windows.net/me?api-version=1.5
+   ```http
+   https://graph.windows.net/me?api-version=1.5
+   ```
+
 4. Recherchez **userPrincipalName**.
 
 Si votre nom d’utilisateur principal Azure Active Directory ne correspond pas à votre nom d’utilisateur principal Active Directory local, vous pouvez utiliser la fonctionnalité [Mapper les noms d’utilisateur](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) pour la remplacer par une valeur valide. Vous pouvez également contacter l’administrateur Power BI ou l’administrateur Active Directory local pour demander la modification de votre nom d’utilisateur principal (UPN).

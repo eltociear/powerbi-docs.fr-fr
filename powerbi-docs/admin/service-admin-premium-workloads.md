@@ -5,16 +5,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8e8f1c143f65b1974364a8a1c9c55e132a4131c4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c4cf0c4fbdde52181dbc5307a9d97d17344c7c26
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857033"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632845"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -24,13 +24,12 @@ Cet article décrit comment activer et configurer des charges de travail pour le
 
 Les charges de travail de requête sont optimisées pour, et limitées par, les ressources déterminées par votre référence SKU de capacité Premium. Les capacités Premium prennent également en charge des charges de travail supplémentaires pouvant utiliser les ressources de votre capacité. Les valeurs de mémoire par défaut pour ces charges de travail dépendent des nœuds de capacité disponibles pour votre référence SKU. Les paramètres de mémoire maximale ne sont pas cumulés. La mémoire, à hauteur de la valeur maximale spécifiée, est allouée de façon dynamique pour l’IA et les dataflows, mais allouée de façon statique pour les rapports paginés.
 
-|                   | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
-|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
-| Intelligence artificielle                | Non pris en charge               | 40 % par défaut ; 40 % minimum  | 20 % par défaut ; 20 % minimum  | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum   |
-| Jeux de données          | 100 % par défaut ; 67 % minimum | 100 % par défaut ; 40 % minimum | 100 % par défaut ; 20 % minimum | 100 % par défaut ; 8 % minimum | 100 % par défaut ; 4 % minimum | 100 % par défaut ; 2 % minimum  |
-| Dataflows         | 40 % par défaut ; 40 % minimum  | 24 % par défaut ; 24 % minimum  | 20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum  | 20 % par défaut ; 2 % minimum   |
-| Rapports paginés | Non pris en charge               | Non pris en charge               | Non pris en charge               | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 2,5 % minimum |
-|                   |                           |                           |                           |                          |                          |                           |
+|                       | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|-----------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| **Intelligence artificielle**                | Non pris en charge               | 40 % par défaut ; 40 % minimum  | 20 % par défaut ; 20 % minimum  | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum   |
+| **Groupes de données**          | 100 % par défaut ; 67 % minimum | 100 % par défaut ; 40 % minimum | 100 % par défaut ; 20 % minimum | 100 % par défaut ; 8 % minimum | 100 % par défaut ; 4 % minimum | 100 % par défaut ; 2 % minimum  |
+| **Dataflows**         | 40 % par défaut ; 40 % minimum  | 24 % par défaut ; 24 % minimum  | 20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum  | 20 % par défaut ; 2 % minimum   |
+| **Rapports paginés** | Non pris en charge               | Non pris en charge               | Non pris en charge               | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 2,5 % minimum |
 
 ## <a name="workload-settings"></a>Paramètres de charge de travail
 
@@ -81,10 +80,9 @@ Si vous avez un jeu de données plus grand que la taille que vous spécifiez pou
 
 Pour préserver les performances du système, une limite stricte spécifique à la référence SKU pour la taille maximale du jeu de données hors connexion est appliquée, quelle que soit la valeur configurée. Cette limite stricte ne s’applique pas aux jeux de données Power BI qui sont optimisés pour les grandes tailles de données. Pour plus d’informations, consultez [Grands modèles dans Power BI Premium](service-premium-large-models.md).
 
-|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
-|-------------------------------------------|----------|----------|----------|---------|---------|---------|
-| Limite stricte pour la taille maximale des jeux de données hors connexion | 3 Go     | 5 Go     | 6 Go     | 10 Go   | 10 Go   | 10 Go   |
-|                                           |          |          |          |         |         |         |
+|                                               | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
+|-----------------------------------------------|----------|----------|----------|---------|---------|---------|
+| **Limite stricte pour la taille maximale des jeux de données hors connexion** | 3 Go     | 5 Go     | 6 Go     | 10 Go   | 10 Go   | 10 Go   |
 
 #### <a name="max-result-row-set-count"></a>Nombre maximal de lignes de résultat
 
@@ -104,10 +102,9 @@ Notez que les opérations d’actualisation des données peuvent également exé
 
 Le paramètre par défaut est 0, ce qui entraîne l’application de la limite de mémoire de requête automatique propre à la référence SKU suivante.
 
-|                              | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
-|------------------------------|----------|----------|----------|---------|---------|---------|
-| Limite de mémoire de requête automatique | 1 Go     | 2 Go     | 2 Go     | 6 Go    | 6 Go    | 10 Go   |
-|                              |          |          |          |         |         |         |
+|                                  | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
+|----------------------------------|----------|----------|----------|---------|---------|---------|
+| **Limite de mémoire de requête automatique** | 1 Go     | 2 Go     | 2 Go     | 6 Go    | 6 Go    | 10 Go   |
 
 Pour préserver les performances du système, une limite stricte de 10 Go est appliquée pour toutes les requêtes exécutées par les rapports Power BI, quelle que soit la limite de mémoire de requête configurée par l’utilisateur. Cette limite stricte ne s’applique pas aux requêtes envoyées par des outils qui utilisent le protocole Analysis Services (aussi appelé XMLA). Les utilisateurs doivent essayer de simplifier la requête ou ses calculs si la requête utilise trop de mémoire.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 05/07/2020
 ms.author: davidi
-ms.openlocfilehash: e2615915503b0eb6d9d1ee08bd2a1fa8599bcf8c
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 336dbad3ac77fb333b52cd3f4c4c0b104573314a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86953004"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633535"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -44,7 +44,9 @@ Prenons un exemple simple d’une table contenant des températures et les heure
 ## <a name="reference-lines-in-your-report"></a>Lignes de référence dans votre rapport
 Vous pouvez utiliser une colonne calculée dans Power BI Desktop pour définir une ligne de référence. Identifiez la table et la colonne à utiliser pour créer une ligne de référence. Sélectionnez « Nouvelle colonne » dans le ruban, puis tapez la formule suivante dans la barre de formule :
 
-    Target Value = 100
+```console
+Target Value = 100
+```
 
 Cette colonne calculée retourne la valeur 100, quel que soit l’emplacement où elle est utilisée. Votre nouvelle colonne s’affiche dans la liste des champs. Ajoutez la colonne calculée Valeur cible à un graphique en courbes pour afficher le lien entre une série quelconque et cette ligne de référence spécifique. 
 
@@ -66,7 +68,9 @@ Vous pouvez également vous assurer que les champs sont correctement géocodés 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Amélioration du géocodage grâce à des emplacements plus spécifiques
 Parfois, même la définition des catégories de données pour le mappage ne suffit pas. Générez un emplacement plus spécifique, une rue par exemple, à l’aide de l’Éditeur de requête dans Power BI Desktop. Utilisez la fonctionnalité Ajouter une colonne pour créer une colonne personnalisée. Puis créez l’emplacement souhaité comme suit : 
 
-    = [Field1] & " " & [Field2]
+```console
+= [Field1] & " " & [Field2]
+```
 
 Utilisez ensuite ce champ résultant dans les visualisations de carte. Cette approche est très utile pour générer des rues à partir des champs « Adresse d’expédition » qui sont couramment employés dans les jeux de données. Sachez toutefois que la concaténation ne fonctionne qu’avec des champs de texte. Si nécessaire, convertissez le numéro de rue en type de données Texte avant de vous en servir pour générer une adresse.
 
@@ -77,11 +81,13 @@ Histogrammes simples : identifiez la requête contenant le champ à utiliser po
 
 Définition de compartiments pour créer un histogramme : identifiez la requête contenant le champ à utiliser pour créer un histogramme. Utilisez l’option « Référence » de la requête pour créer une requête et nommez-la « FieldName ». À présent, définissez les compartiments au moyen d’une règle. Utilisez l’option Ajouter une colonne personnalisée du ruban Ajouter une colonne et créez une règle personnalisée. Voici un exemple d’une règle simple de création de compartiments :
 
-    if([FieldName] \< 2) then "\<2 min" else
-    if([FieldName] \< 5) then "\<5 min" else
-    if([FieldName] \< 10) then "\<10 min" else
-    if([FieldName] \< 30) then "\<30 min" else
-    "longer")
+```console
+if([FieldName] \< 2) then "\<2 min" else
+if([FieldName] \< 5) then "\<5 min" else
+if([FieldName] \< 10) then "\<10 min" else
+if([FieldName] \< 30) then "\<30 min" else
+"longer")
+```
 
 Vérifiez que le type de données de la colonne d’agrégation résultante est un nombre. Vous pouvez maintenant utiliser le groupe à l’aide de la technique décrite dans « Histogramme simple » pour générer l’histogramme. Cette option permet de traiter plus de points de données, mais elle ne prend toujours pas en charge le balayage.
 

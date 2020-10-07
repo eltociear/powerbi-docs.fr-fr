@@ -10,17 +10,19 @@ ms.date: 05/08/2020
 ms.author: davidi
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: acce77e3c3e41ec5b711a6a1c79628b2a47cd47f
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 49af2febbecb5061c4acb9ee20c3b707e3b81dff
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485849"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634892"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 Une erreur peut s’afficher lorsque vous tentez de configurer un jeu de données pour une actualisation planifiée.
 
-        You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.
+```output
+You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.
+```
 
 Cela se produit quand la source de données que vous avez utilisée, dans Power BI Desktop, n’est pas prise en charge pour l’actualisation. Vous devez trouver la source de données utilisée et la comparer à la liste des sources de données prises en charge disponible dans la rubrique [Actualiser des données dans Power BI](refresh-data.md). 
 

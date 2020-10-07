@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 6b0b2ae2ca98b7dd3b9940319fc68a7effba4782
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 56a181da60e2a20c08a8c03dd826276d350ec81f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349767"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635191"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visite guidée de l’éditeur de rapport de Power BI
 
@@ -122,9 +122,14 @@ Le volet Analyse du service Power BI vous permet d’ajouter des lignes de réf�
 ## <a name="5-the-fields-pane"></a>5. Le volet Champs
 Le volet Champs affiche les tables, les dossiers et les champs de vos données qui sont disponibles pour la création de visualisations.
 
-|  |  |
-| --- | --- |
-| ![Le volet Champs](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png) |<ul><li>Faites glisser un champ sur la page pour démarrer une nouvelle visualisation.  Vous pouvez également faire glisser un champ sur une visualisation existante pour y ajouter ce champ.<br><br></li> <li>Lorsque vous ajoutez une coche en regard d’un champ, Power BI ajoute ce champ à la visualisation active (ou nouvelle). Il choisit également le compartiment dans lequel placer ce champ.  Par exemple, le champ doit-il être utilisé comme légende, axe ou valeur ? Power BI fait la meilleure hypothèse et vous pouvez déplacer le champ de ce compartiment vers un autre si nécessaire. <br><br></li><li>Dans les deux cas, chaque champ sélectionné est ajouté au volet Visualisations dans l’éditeur de rapport.</li></ul> |
+:::row:::
+    :::column:::
+        ![Le volet Champs](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png)
+    :::column-end:::
+    :::column:::
+        <ul><li>Faites glisser un champ sur la page pour démarrer une nouvelle visualisation.  Vous pouvez également faire glisser un champ sur une visualisation existante pour y ajouter ce champ.<br><br></li> <li>Lorsque vous ajoutez une coche en regard d’un champ, Power BI ajoute ce champ à la visualisation active (ou nouvelle). Il choisit également le compartiment dans lequel placer ce champ.  Par exemple, le champ doit-il être utilisé comme légende, axe ou valeur ? Power BI fait la meilleure hypothèse et vous pouvez déplacer le champ de ce compartiment vers un autre si nécessaire. <br><br></li><li>Dans les deux cas, chaque champ sélectionné est ajouté au volet Visualisations dans l’éditeur de rapport.</li></ul>
+    :::column-end:::
+:::row-end:::
 
 Dans Power BI Desktop, vous pouvez également afficher ou masquer des champs, ajouter des calculs, etc.
 

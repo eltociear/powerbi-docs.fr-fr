@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/01/2017
 ms.author: maggies
-ms.openlocfilehash: b60c56e7b8dfde9c46a784c5f57ca07ca9ca3fa0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d4890cf864334951982a8b6d7acc8fc8338016d6
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859172"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634961"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurer Kerberos pour utiliser les rapports Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -29,13 +29,17 @@ Plus précisément, vous devrez configurer une délégation contrainte. Même si
 ## <a name="error-running-report"></a>Erreur d’exécution de rapport
 Si votre serveur de rapports n’est pas correctement configuré, vous pouvez rencontrer l’erreur suivante.
 
-    Something went wrong.
+```output
+Something went wrong.
 
-    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+```
 
 Le message suivant apparaîtra dans les Détails techniques.
 
-    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```output
+We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```
 
 ![Capture d’écran de Power BI Report montrant un message d’erreur relatif aux problèmes de connexion au serveur Analysis Services.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
  
@@ -91,7 +95,9 @@ Si votre serveur de rapports est configuré pour utiliser un compte d’utilisat
 
 Il est recommandé de créer deux noms de principal du service : l’un avec le nom NetBIOS et l’autre avec le nom de domaine complet (FQDN). Le nom de principal du service doit être au format suivant :
 
-    <Service>/<Host>:<port>
+```console
+<Service>/<Host>:<port>
+```
 
 Power BI Report Server utilise un service de type HTTP. Pour les noms de principal du HTTP, vous n’affichez pas de port. Le service qui nous intéresse ici est HTTP. L’hôte du nom de principal du service sera identique à celui que vous utilisez dans une URL. En règle générale, il s’agit du nom de l’ordinateur. Si vous vous trouvez derrière un équilibreur de charge, il peut s’agir d’un nom virtuel.
 
@@ -119,13 +125,17 @@ Nous pouvons utiliser l’outil SetSPN pour ajouter le nom de principal du servi
 
 Placer le nom de principal du service sur un compte d’ordinateur, tant pour le nom de domaine complet (FQDN) que pour le nom de principal du service NetBIOS, ressemblerait à ce qui suit si nous utilisions une URL virtuelle de contosoreports.
 
-      Setspn -a HTTP/contosoreports.contoso.com ContosoRS
-      Setspn -a HTTP/contosoreports ContosoRS
+```console
+Setspn -a HTTP/contosoreports.contoso.com ContosoRS
+Setspn -a HTTP/contosoreports ContosoRS
+```
 
 Placer le nom de principal du service sur un compte d’utilisateur de domaine, tant pour le nom de domaine complet (FQDN) que pour le nom de principal du service NetBIOS, ressemblerait à ce qui suit si nous utilisions le nom d’ordinateur pour l’hôte du nom de principal du service.
 
-      Setspn -a HTTP/ContosoRS.contoso.com RSService
-      Setspn -a HTTP/ContosoRS RSService
+```console
+Setspn -a HTTP/ContosoRS.contoso.com RSService
+Setspn -a HTTP/ContosoRS RSService
+```
 
 ## <a name="spns-for-the-analysis-services-service"></a>Noms de principal du service pour le service Analysis Services
 Les noms de principal du service pour Analysis Services sont similaires à ce que nous avons fait avec Power BI Report Server. Le format du nom de principal du service est un peu différent si vous avez une instance nommée.
@@ -146,13 +156,17 @@ Nous pouvons utiliser l’outil SetSPN pour ajouter le nom de principal du servi
 
 Placer le nom de principal du service sur un compte d’ordinateur, tant pour le nom de domaine complet (FQDN) que pour le nom de principal du service NetBIOS, ressemblerait à ce qui suit.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```
 
 Placer le nom de principal du service sur un compte d’utilisateur de domaine, tant pour le nom de domaine complet (FQDN) que pour le nom de principal du service NetBIOS, ressemblerait à ce qui suit.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
-    Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
+Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```
 
 ## <a name="spns-for-the-sql-browser-service"></a>Noms de principal du service pour le service SQL Browser
 Si vous avez une instance nommée Analysis Services, vous devez également vous assurer de disposer d’un nom de principal du service pour le service du navigateur. Ceci est propre à Analysis Services.
@@ -164,8 +178,10 @@ Il est inutile de spécifier quoi que ce soit pour le nom d’instance ou le por
 
 Un exemple de nom de principal du service Analysis Services se présenterait comme suit.
 
-    MSOLAPDisco.3/ContosoAS.contoso.com
-    MSOLAPDisco.3/ContosoAS
+```console
+MSOLAPDisco.3/ContosoAS.contoso.com
+MSOLAPDisco.3/ContosoAS
+```
 
 Le placement du nom de principal du service est similaire à ce que nous avons mentionné concernant Power BI Report Server. La différence ici est que SQL Browser s’exécute toujours sous le compte système Local. Cela signifie que les noms de principal du service sont toujours placés sur le compte d’ordinateur. 
 
@@ -174,8 +190,10 @@ Nous pouvons utiliser l’outil SetSPN pour ajouter le nom de principal du servi
 
 Placer le nom de principal du service sur le compte d’ordinateur, tant pour le nom de domaine complet (FQDN) que pour le nom de principal du service NetBIOS, ressemblerait à ce qui suit.
 
-    Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```
 
 Pour plus d’informations, voir [Un nom de principal du service pour le service SQL Server Browser est requis](https://support.microsoft.com/kb/950599).
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 1e2426b12bf6205e5ed2fc6cfb0540c67740df7d
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: 762cc2d3d170f5418616da46806f8a445490ee8d
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83813620"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635214"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Capacité et références SKU dans l’analytique incorporée de Power BI
 
@@ -68,10 +68,9 @@ Le tableau ci-dessous présente un résumé des fonctionnalités, la capacité q
 
 Dans ce tableau, une application personnalisée fait référence à une application web créée à l’aide de l’analytique incorporée. Quand vous incorporez dans une application web personnalisée en tant que développeur (à l’aide des kits de développement logiciel (SDK) JavaScript ou .NET, ou les API REST), vous avez la possibilité de contrôler et personnaliser l’expérience utilisateur. Cette fonctionnalité n’est pas disponible lorsque vous utilisez d’autres options d’incorporation, comme le service Power BI et Power BI Mobile.
 
-
-|         |         |         |
-|---------|---------|---------|
-|**Scénario**</br><p></p>|**Microsoft Azure**</br>(SKU A)|**Office**</br>(SKU P et EM)|
+| Scénario | Azure   | Office          |
+|----------|---------|-----------------|
+|          | (SKU A) | (SKU P et EM) |
 |[Incorporer pour vos clients](embed-sample-for-customers.md)</br>(l’application est propriétaire des données)     |✔        |✔        |
 |[Incorporer pour votre organisation](embed-sample-for-your-organization.md)</br>(l’utilisateur est propriétaire des données)     |✖        |✔         |
 |Applications Microsoft 365</br>(anciennement appelées applications Office 365)<ul><li>[Incorporer dans Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Incorporer dans SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |

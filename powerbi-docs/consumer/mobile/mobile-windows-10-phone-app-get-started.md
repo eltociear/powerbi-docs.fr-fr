@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: ba582003008e1355156b189b5753f4e4c0a8353c
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 5ef68bac75daf25e48cbd4d24279627d4b494764
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861472"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634363"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Prise en main de l’application mobile Power BI pour Windows 10
 L’application mobile Power BI pour Windows 10 vous permet d’utiliser Power BI sur votre tablette ou votre smartphone. Vous bénéficiez d’un accès mobile, tactile et toujours à jour aux informations de votre entreprise. Affichez et utilisez vos tableaux de bord d’entreprise où que vous soyez, directement sur l’[écran d’accueil de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -106,7 +106,7 @@ Affichez l’ensemble de vos tableaux de bord Power BI favoris, ainsi que les r
 
 Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="other-tasks"></a>Autres tâches
 Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pour appareils Windows 10 avec les tableaux de bord et les rapports Power BI, ainsi que les rapports mobiles et les indicateurs de performance clés Reporting Services dans le portail web Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Tableaux de bord et rapports Power BI

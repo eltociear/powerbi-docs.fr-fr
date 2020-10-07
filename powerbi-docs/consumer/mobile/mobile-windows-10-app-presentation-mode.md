@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 978a257ccd5916f14bc3dfa6916f9315b755c12e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2a0c326902063759d10f49f3c5d745c22f477ec2
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860253"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634800"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. Le mode Présentation est utile pour afficher Power BI lors de réunions ou de conférences ou sur un projecteur dédié au bureau ou pour optimiser l’espace sur un petit écran.
@@ -36,8 +36,8 @@ Dans l’application mobile Power BI, appuyez sur l’icône **Plein écran** po
 
 Dans la barre d’outils, vous pouvez appuyer pour effectuer les actions suivantes :
 
-|||
-|-|-|
+| Icône | Action |
+|------|--------|
 |![Icône Précédent](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|**Revenir** à la page précédente. Un appui long sur l’icône fait apparaître les fenêtres Fil d’Ariane, ce qui vous permet d’accéder au dossier contenant votre rapport ou tableau de bord.|
 |![Icône Pagination](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Basculer** vers une autre page du rapport de votre présentation.|
 |![Icône Signets](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Appliquer un signet** pour présenter la vue spécifique de vos données capturées par le signet. Vous pouvez appliquer des signets personnels et de rapport.|

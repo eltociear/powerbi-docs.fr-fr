@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 07/13/2020
-ms.openlocfilehash: 8e3ca6d9615a348fec928f13a561fbb97e719d6a
-ms.sourcegitcommit: b60063c49ac39f8b28c448908ecbb44b54326335
+ms.openlocfilehash: f024959c0d7e8bd0b51893a277161c67b5f4dfc6
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88160369"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746122"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -22,7 +22,7 @@ L’API `exportToFile` permet d’exporter un rapport Power BI avec un appel RES
 * **.png**
     * Lors de l’exportation vers un fichier .png, un rapport de plusieurs pages est comprimé dans un fichier .zip.
     * Chaque fichier contenu dans le fichier .zip représente une page du rapport
-    * Les noms des pages sont les mêmes que les valeurs de retour des API [Obtenir des pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) ou [Obtenir des pages dans le groupe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup)
+    * Les noms des pages sont les mêmes que les valeurs de retour des API [Obtenir des pages](/rest/api/power-bi/reports/getpages) ou [Obtenir des pages dans le groupe](/rest/api/power-bi/reports/getpagesingroup)
 
 ## <a name="usage-examples"></a>Exemples d'utilisation
 
@@ -38,17 +38,17 @@ Avant d’utiliser l’API, vérifiez que les [paramètres de locataire administ
 * **Exporter les rapports comme présentations PowerPoint ou documents PDF** : activé par défaut.
 * **Exporter des rapports en tant que fichiers image** : nécessaire uniquement pour les fichiers *.png*, et désactivé par défaut.
 
-L’API est asynchrone. Lorsque l’API [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
+L’API est asynchrone. Lorsque l’API [exportToFile](/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
 
 Pendant l’interrogation, l’API retourne un nombre qui représente la quantité de travail effectué. Le travail dans chaque travail d’exportation est calculé en fonction du nombre de pages du rapport. Toutes les pages ont le même poids. Si, par exemple, vous exportez un rapport de 10 pages et que l’interrogation retourne 70, cela signifie que l’API a traité sept des 10 pages du travail d’exportation.
 
-Une fois l’exportation terminée, l’appel de l’API d’interrogation retourne une [URL Power BI](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile) pour obtenir le fichier. L’URL sera disponible pendant 24 heures.
+Une fois l’exportation terminée, l’appel de l’API d’interrogation retourne une [URL Power BI](/rest/api/power-bi/reports/getfileofexporttofile) pour obtenir le fichier. L’URL sera disponible pendant 24 heures.
 
 ## <a name="supported-features"></a>Fonctionnalités prises en charge
 
 ### <a name="selecting-which-pages-to-print"></a>Sélection des pages à imprimer
 
-Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) ou [Obtenir des pages dans le groupe](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup). Vous pouvez également spécifier l’ordre des pages que vous exportez.
+Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des pages](/rest/api/power-bi/reports/getpages) ou [Obtenir des pages dans le groupe](/rest/api/power-bi/reports/getpagesingroup). Vous pouvez également spécifier l’ordre des pages que vous exportez.
 
 ### <a name="bookmarks"></a>Signets
 

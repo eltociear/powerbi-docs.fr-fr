@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: e1925c57869a58f111b77c6a50a1289224440ecb
-ms.sourcegitcommit: 01b5fb05f723eab2557e0e420bfde23197987a96
+ms.openlocfilehash: 52593cbcbdc0a67709735a06eca493fefb18e1a0
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86300996"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633696"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -60,10 +60,10 @@ Pour que les utilisateurs puissent voir le rapport incorporé, ils ont besoin d�
 
 Vous pouvez personnaliser l’expérience utilisateur à l’aide des paramètres d’entrée de l’URL d’incorporation. Dans l’iFrame fourni, vous pouvez mettre à jour les paramètres **src** de l’URL.
 
-| Propriété  | Description  |  |  |  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | Vous pouvez utiliser le paramètre de chaîne de requête **pageName** pour définir la page de rapport à ouvrir. Vous pouvez trouver cette valeur à la fin de l’URL du rapport quand vous affichez un rapport dans le service Power BI, comme indiqué ci-dessous. |  |  |  |
-| Filtres d’URL  | Vous pouvez utiliser des [filtres d’URL](service-url-filters.md) dans l’URL d’incorporation que vous avez reçue à partir de l’interface utilisateur de Power BI pour filtrer le contenu d’incorporation. Ainsi, vous pouvez créer des intégrations avec peu de code et des connaissances de base de HTML et de JavaScript.  |  |  |  |
+| Propriété  | Description  |
+|-----------|--------------|
+| pageName  | Vous pouvez utiliser le paramètre de chaîne de requête **pageName** pour définir la page de rapport à ouvrir. Vous pouvez trouver cette valeur à la fin de l’URL du rapport quand vous affichez un rapport dans le service Power BI, comme indiqué ci-dessous. |
+| Filtres d’URL  | Vous pouvez utiliser des [filtres d’URL](service-url-filters.md) dans l’URL d’incorporation que vous avez reçue à partir de l’interface utilisateur de Power BI pour filtrer le contenu d’incorporation. Ainsi, vous pouvez créer des intégrations avec peu de code et des connaissances de base de HTML et de JavaScript.  |
 
 ## <a name="set-which-page-opens-for-an-embedded-report"></a>Définir la page qui s’ouvre pour un rapport incorporé 
 
