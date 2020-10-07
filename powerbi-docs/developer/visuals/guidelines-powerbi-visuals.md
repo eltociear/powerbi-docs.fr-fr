@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 08/12/2020
-ms.openlocfilehash: c9d6b10c05ac3e19c5ebdcb5a0f3a1ab9b989a10
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: 6e9da6e16d32f0093bc0e4be35415f1a23f7fa41
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88204936"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748561"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](office-store.md) votre visuel Power BI sur Microsoft AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs.
@@ -28,7 +28,7 @@ Vous pouvez envoyer des visuels Power BI gratuits à la Place de marché (Micros
 
 Un visuel Power BI IAP est un visuel *gratuit* qui offre des *fonctionnalités gratuites*. Il a également des fonctionnalités avancées pour lesquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel Power BI, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
 
-Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](https://docs.microsoft.com/legal/marketplace/certification-policies#11002-displaying-ads).
+Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 
 >[!IMPORTANT]  

@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 38db00f51a333b754267d52aaf3e3eabccc3e6b6
-ms.sourcegitcommit: 49daa8964c6e30347e29e7bfc015762e2cf494b3
+ms.openlocfilehash: 7a93260aab9d8195478949ea8044378ea5cfae83
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84273020"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746398"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -50,7 +50,7 @@ Si vous choisissez de configurer l’environnement manuellement, vous pouvez con
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Inscrire une application dans Azure Active Directory
 
-[Inscrivez votre application](register-app.md) auprès d’Azure Active Directory pour l’autoriser à accéder aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Cette inscription vous permet ainsi d’établir une identité pour votre application et de spécifier des autorisations sur les ressources REST de Power BI.
+[Inscrivez votre application](register-app.md) auprès d’Azure Active Directory pour l’autoriser à accéder aux [API REST Power BI](/rest/api/power-bi/). Cette inscription vous permet ainsi d’établir une identité pour votre application et de spécifier des autorisations sur les ressources REST de Power BI.
 
 Vous devez procéder à l’inscription d’une **application web côté serveur**. Vous inscrivez une application web côté serveur pour créer un secret d’application.
 
@@ -190,9 +190,9 @@ Pour l’incorporation avec un invité, utilisez l’URL `https://login.microsof
 
 ## <a name="embed-your-content-within-your-application"></a>Incorporer votre contenu dans l’application
 
-Même si les étapes permettant d’incorporer votre contenu peuvent être effectuées avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le kit SDK .NET.
+Même si les étapes permettant d’incorporer votre contenu peuvent être effectuées avec les [API REST Power BI](/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le kit SDK .NET.
 
-Pour intégrer un rapport dans une application web, utilisez l’API REST Power BI ou le kit SDK C# de Power BI. Utilisez aussi un jeton d’accès d’autorisation Azure Active Directory pour obtenir un rapport. Ensuite, chargez le rapport en utilisant le même jeton d’accès. L’API REST Power BI fournit un accès par programmation à des ressources Power BI spécifiques. Pour plus d’informations, consultez les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/) et l’[API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Pour intégrer un rapport dans une application web, utilisez l’API REST Power BI ou le kit SDK C# de Power BI. Utilisez aussi un jeton d’accès d’autorisation Azure Active Directory pour obtenir un rapport. Ensuite, chargez le rapport en utilisant le même jeton d’accès. L’API REST Power BI fournit un accès par programmation à des ressources Power BI spécifiques. Pour plus d’informations, consultez les [API REST Power BI](/rest/api/power-bi/) et l’[API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### <a name="get-an-access-token-from-azure-ad"></a>Obtenir un jeton d’accès à partir d’Azure AD
 
@@ -200,11 +200,11 @@ Dans votre application, vous devez obtenir un jeton d’accès auprès d’Azure
 
 ### <a name="get-a-report"></a>Obtenir un rapport
 
-Pour obtenir un rapport Power BI ou paginé, utilisez l’opération [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) qui obtient une liste des rapports Power BI et paginés. Dans la liste des rapports, vous pouvez obtenir un ID de rapport.
+Pour obtenir un rapport Power BI ou paginé, utilisez l’opération [Obtenir des rapports](/rest/api/power-bi/reports/getreports) qui obtient une liste des rapports Power BI et paginés. Dans la liste des rapports, vous pouvez obtenir un ID de rapport.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Obtenir des rapports à l’aide d’un jeton d’accès
 
-L’opération [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) renvoie une liste de rapports. Vous ne pouvez récupérer qu’un seul rapport dans cette liste.
+L’opération [Obtenir des rapports](/rest/api/power-bi/reports/getreports) renvoie une liste de rapports. Vous ne pouvez récupérer qu’un seul rapport dans cette liste.
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}* .
 

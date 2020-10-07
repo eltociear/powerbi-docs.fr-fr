@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: e32b33a7e913772215fad63ddea7987d199420fd
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 8b20ee4fbac3c4b22bd420e49df0bc1fbfd6e300
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355050"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746605"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton accès Azure AD pour votre application Power BI
 
-Cet article explique comment authentifier les utilisateurs dans votre application Power BI et récupérer un jeton d’accès à utiliser avec l’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+Cet article explique comment authentifier les utilisateurs dans votre application Power BI et récupérer un jeton d’accès à utiliser avec l’[API REST Power BI](/rest/api/power-bi/).
 
-Avant de pouvoir appeler l’API REST, vous devez obtenir un **jeton d’accès d’authentification** Azure Active Directory (Azure AD). Votre application utilise un jeton pour accéder aux tableaux de bord, rapports et vignettes Power BI. Pour plus d’informations, consultez [Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de code OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Avant de pouvoir appeler l’API REST, vous devez obtenir un **jeton d’accès d’authentification** Azure Active Directory (Azure AD). Votre application utilise un jeton pour accéder aux tableaux de bord, rapports et vignettes Power BI. Pour plus d’informations, consultez [Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de code OAuth 2.0](/azure/active-directory/develop/v1-protocols-oauth-code).
 
 La récupération du jeton d’accès varie selon la façon dont vous incorporez du contenu. Cet article montre deux approches différentes.
 
@@ -55,7 +55,7 @@ var @params = new NameValueCollection
 
 Après avoir créé une chaîne de requête, vous redirigez vers **Azure AD** pour obtenir un **code d’autorisation**.  Voici une méthode C# complète pour créer une chaîne de requête de **code d’autorisation** et rediriger vers **Azure AD**. Vous utilisez ensuite le **code d’autorisation** pour obtenir un **jeton d’accès**.
 
-Dans redirect.aspx.cs, des appels de [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) pour générer le jeton.
+Dans redirect.aspx.cs, des appels de [AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) pour générer le jeton.
 
 #### <a name="get-authorization-code"></a>Obtenir un code d’autorisation
 

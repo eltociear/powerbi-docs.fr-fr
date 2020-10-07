@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: ba0a85958fad500bd27f4697a7f46961ca430f49
-ms.sourcegitcommit: 0b1e96de184caf2371adedcc3ee43bcb88048187
+ms.openlocfilehash: 2d33ed5a707a3b4bc3e0a77a38128e7e00154798
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85299569"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746674"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
@@ -53,7 +53,7 @@ Si vous incorporez des rapports avec les mêmes filtres, signets et segments pou
 Lorsque vous incorporez plusieurs rapports au même iframe, ne générez pas de nouvel iframe pour chaque rapport. Utilisez plutôt `powerbi.embed(element, config)` avec une autre configuration pour incorporer le nouveau rapport.
 
 > [!NOTE]
-> Un jeton incorporé présentant des autorisations sur tous les rapports et jeux de données est nécessaire pour basculer entre les rapports lors de l’incorporation pour vos clients (scénario également appelé « l’application possède les données »). Pour plus d’informations, consultez [API Génération de jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken).
+> Un jeton incorporé présentant des autorisations sur tous les rapports et jeux de données est nécessaire pour basculer entre les rapports lors de l’incorporation pour vos clients (scénario également appelé « l’application possède les données »). Pour plus d’informations, consultez [API Génération de jeton](/rest/api/power-bi/embedtoken/generatetoken).
 
 ## <a name="query-caching"></a>Mise en cache des requêtes
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: ee79a2f74714322e6ff7b4ec965060b7c9291060
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 84c33cfc1d9163ff631c11d285b5441dd301578e
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237437"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748123"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -84,7 +84,7 @@ Vous devez compiler votre visuel Power BI avec `pbiviz package`. Si vous utilise
 
 ### <a name="source-code-requirements"></a>Exigences relatives au code source
 
-Vérifiez que vous suivez la liste des stratégies de [certification supplémentaires des visuels Power BI](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Si votre envoi ne suit pas ces instructions, l’e-mail de rejet de l’Espace partenaires comportera les numéros de stratégie indiqués dans ce lien.
+Vérifiez que vous suivez la liste des stratégies de [certification supplémentaires des visuels Power BI](/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification). Si votre envoi ne suit pas ces instructions, l’e-mail de rejet de l’Espace partenaires comportera les numéros de stratégie indiqués dans ce lien.
 
 Suivez les exigences relatives au code ci-dessous pour vérifier que votre code est conforme aux stratégies de certification Power BI.  
 

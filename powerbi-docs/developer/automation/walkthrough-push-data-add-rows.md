@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: ba37d9fc79405518a59ff188fdb5890e6af8043c
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: b43e9c93499f60039a924051c30b0ed631c85e8e
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85355027"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748376"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
 
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-À l’**étape 4** de la transmission de données à un jeu de données, [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md), vous avez utilisé l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) et Newtonsoft.Json pour obtenir un ID de jeu de données. Pendant cette étape, utilisez l’ID de jeu de données avec l’opération [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) pour ajouter des lignes à un jeu de données **Power BI**. 
+À l’**étape 4** de la transmission de données à un jeu de données, [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md), vous avez utilisé l’opération [Obtenir des jeux de données](/rest/api/power-bi/datasets/getdatasets) et Newtonsoft.Json pour obtenir un ID de jeu de données. Pendant cette étape, utilisez l’ID de jeu de données avec l’opération [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) pour ajouter des lignes à un jeu de données **Power BI**. 
 
-Quand vous appelez l’opération [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows), vous ajoutez des lignes à un jeu de données.
+Quand vous appelez l’opération [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows), vous ajoutez des lignes à un jeu de données.
 
 ![Ajout de lignes](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
@@ -105,9 +105,7 @@ Ajoutez ce code dans le fichier Program.cs.
     #endregion
 ```
 
-Ci-après figure le [listing du code complet](#code).
-
-<a name="code"/>
+Ci-après figure le listing du code complet.
 
 ## <a name="complete-code-listing"></a>Listing du code complet
 
@@ -315,5 +313,5 @@ Même si nous spécifions que nous **_//obtenons le premier ID_** dans le code c
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+[Référence de l’API REST de Power BI](/rest/api/power-bi/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

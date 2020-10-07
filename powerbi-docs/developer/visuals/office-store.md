@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
-ms.openlocfilehash: 94cd4fd652fc1b06a73e1ea319a65e1aa5b46c7e
-ms.sourcegitcommit: 8b8d54d46470a311d8654abe92b5a223b696af28
+ms.openlocfilehash: 891f4d57e1c2754f4c98916b2824ef2283d8298a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86437212"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747962"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Publier des visuels Power BI sur l’Espace partenaires
 
@@ -35,7 +35,7 @@ Lorsque vous êtes prêt à soumettre votre visuel Power BI, vérifiez qu'il r�
 | --- | --- | --- |
 | Package Pbiviz |Oui |Empaquetez votre visuel Power BI dans un package Pbiviz contenant toutes les métadonnées requises.<br>Nom du visuel<br>Nom d’affichage<br>GUID<br>Version<br>Description<br>Nom et e-mail de l’auteur |
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez aider les utilisateurs à se familiariser avec ce visuel. Insistez sur la valeur que le visuel apporte à l’utilisateur et donnez des exemples d’utilisation et d’options de mise en forme. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, et expliquez ce qu’il faut éviter de faire.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe. |
-| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 300 px (largeur) x 300 px (hauteur).<BR>**Important :** Lisez attentivement le [guide des images du magasin AppSource](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
+| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 300 px (largeur) x 300 px (hauteur).<BR>**Important :** Lisez attentivement le [guide des images du magasin AppSource](/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Fournissez au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être exactement 1 366 px (largeur) par 768 px (hauteur). La taille du fichier ne doit pas dépasser 1024 ko.<br>Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran. |
 | Lien vers le support |Oui |Fournissez une URL de support à vos clients. Ce lien est entré dans le cadre de votre annonce dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à l’annonce de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
 | Lien vers le document sur la confidentialité |Oui |Fournissez un lien vers la déclaration de confidentialité du visuel. Ce lien est entré dans le cadre de votre annonce dans l’Espace partenaires. Les utilisateurs le voient lorsqu’ils accèdent à l’annonce de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
@@ -71,14 +71,14 @@ L'équipe Power BI doit vérifier les fichiers de chaque soumission d’un nouv
 
 ### <a name="submitting-to-partner-center"></a>Soumission à l’Espace partenaires
 
-Pour soumettre votre visuel Power BI à l’Espace partenaires, vous devez y être inscrit. Si vous n'êtes pas encore inscrit, [ouvrez un compte développeur dans l’Espace partenaires](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
+Pour soumettre votre visuel Power BI à l’Espace partenaires, vous devez y être inscrit. Si vous n'êtes pas encore inscrit, [ouvrez un compte développeur dans l’Espace partenaires](/office/dev/store/open-a-developer-account).
 
 >[!NOTE]
 >Les **éditeurs** peuvent utiliser l’une des méthodes suivantes pour soumettre un visuel Power BI :
 >* Si vous avez un ancien compte Mon tableau de bord vendeur, vous pouvez continuer à utiliser les informations d’identification de ce compte pour vous connecter à l’Espace partenaires.
->* Si vous ne disposez pas d’un tel compte et si vous n’êtes pas inscrit à l’Espace partenaires, vous devez [ouvrir un compte de développeur dans l’Espace partenaires](https://docs.microsoft.com/office/dev/store/open-a-developer-account) à l’aide de votre adresse e-mail professionnelle.
+>* Si vous ne disposez pas d’un tel compte et si vous n’êtes pas inscrit à l’Espace partenaires, vous devez [ouvrir un compte de développeur dans l’Espace partenaires](/office/dev/store/open-a-developer-account) à l’aide de votre adresse e-mail professionnelle.
 
-Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espace partenaires. Pour plus d'informations sur le processus de soumission, voir [Soumettre votre solution Office à AppSource via l’Espace partenaires](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
+Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espace partenaires. Pour plus d'informations sur le processus de soumission, voir [Soumettre votre solution Office à AppSource via l’Espace partenaires](/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Connectez-vous à l’**Espace partenaires**.
 
@@ -107,7 +107,7 @@ Suivez les étapes ci-dessous pour soumettre votre visuel Power BI à l’Espac
 
 ## <a name="tracking-submission-status-and-usage"></a>Suivi de l’utilisation et de l’état de la soumission
 
-Vous pouvez passer en revue les [stratégies de validation](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Vous pouvez passer en revue les [stratégies de validation](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Après l’envoi de la soumission, vous pouvez afficher son état dans le [tableau de bord de l’application](https://sellerdashboard.microsoft.com/Application/Summary/).
 

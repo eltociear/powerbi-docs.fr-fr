@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 5c364713ec7e0328e8278694985950266734c91d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e9989bb7a34a89cb6244a2378d6660a5079fc82
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238396"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748100"
 ---
 # <a name="sync-slicers-in-power-bi-visuals"></a>Synchroniser les segments dans les visuels Power BI
 
-Pour que la fonctionnalité [Synchroniser les segments](https://docs.microsoft.com/power-bi/desktop-slicers) soit prise en charge, il faut que votre visuel de segment personnalisé utilise la version 1.13.0 ou une version ultérieure de l’API.
+Pour que la fonctionnalité [Synchroniser les segments](../../visuals/power-bi-visualization-slicers.md) soit prise en charge, il faut que votre visuel de segment personnalisé utilise la version 1.13.0 ou une version ultérieure de l’API.
 
 De plus, vous devez activer l’option dans le fichier *capabilities.json*, comme illustré dans le code suivant :
 

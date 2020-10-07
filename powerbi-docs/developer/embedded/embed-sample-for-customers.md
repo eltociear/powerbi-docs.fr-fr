@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: bb693b1b46e193a87365537492c83aa2eb8a479a
-ms.sourcegitcommit: b2c60781da6f756102f91346b35a7651fb5dcda3
+ms.openlocfilehash: 6ba5cd95f3e8b788ca7ee8939dff6616c5610573
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092236"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746628"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients
 
@@ -46,7 +46,7 @@ Cependant, si vous choisissez de configurer l’environnement manuellement, vous
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Inscrire une application dans Azure Active Directory (Azure AD)
 
-[Inscrivez votre application](register-app.md) auprès d’Azure Active Directory pour l’autoriser à accéder aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Cette inscription vous permet ainsi d’établir une identité pour votre application et de spécifier des [autorisations sur les ressources REST de Power BI](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). La façon dont vous commencez à inscrire une application varie selon que vous souhaitez utiliser un compte principal ou un [principal de service](embed-service-principal.md).
+[Inscrivez votre application](register-app.md) auprès d’Azure Active Directory pour l’autoriser à accéder aux [API REST Power BI](/rest/api/power-bi/). Cette inscription vous permet ainsi d’établir une identité pour votre application et de spécifier des [autorisations sur les ressources REST de Power BI](/azure/active-directory/develop/v2-permissions-and-consent). La façon dont vous commencez à inscrire une application varie selon que vous souhaitez utiliser un compte principal ou un [principal de service](embed-service-principal.md).
 
 La méthode que vous choisissez affecte le type d’application que vous inscrivez dans Azure.
 
@@ -62,7 +62,7 @@ Si vous incorporez des rapports, des tableaux de bord ou des vignettes pour vos 
 
 ### <a name="create-and-publish-your-reports"></a>Créer et publier des rapports
 
-Vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail. Vous pouvez accomplir cette tâche deux façons : en tant qu’utilisateur final, vous pouvez publier des rapports dans un espace de travail traditionnel avec un compte principal (licence Power BI Pro). Si vous utilisez un principal de service, vous pouvez publier des rapports dans les nouveaux espaces de travail à l’aide des [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail. Vous pouvez accomplir cette tâche deux façons : en tant qu’utilisateur final, vous pouvez publier des rapports dans un espace de travail traditionnel avec un compte principal (licence Power BI Pro). Si vous utilisez un principal de service, vous pouvez publier des rapports dans les nouveaux espaces de travail à l’aide des [API REST Power BI](/rest/api/power-bi/imports/postimportingroup).
 
 Les étapes ci-dessous montrent comment publier votre rapport PBIX dans votre espace de travail Power BI.
 
@@ -224,11 +224,11 @@ Dans **locataire**, spécifiez votre ID de locataire Azure. Vous pouvez obtenir 
 
 ## <a name="embed-content-within-your-application"></a>Incorporer du contenu dans votre application
 
-Même si les étapes permettant d’incorporer votre contenu sont effectuées avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **kit SDK .NET**.
+Même si les étapes permettant d’incorporer votre contenu sont effectuées avec les [API REST Power BI](/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **kit SDK .NET**.
 
-L’incorporation pour vos clients dans votre application exige que vous obteniez un **jeton d’accès** pour votre compte principal ou [principal de service](embed-service-principal.md) à partir d’**Azure AD**. Vous devez obligatoirement [obtenir un jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI avant d’effectuer des appels aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+L’incorporation pour vos clients dans votre application exige que vous obteniez un **jeton d’accès** pour votre compte principal ou [principal de service](embed-service-principal.md) à partir d’**Azure AD**. Vous devez obligatoirement [obtenir un jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI avant d’effectuer des appels aux [API REST Power BI](/rest/api/power-bi/).
 
-Pour créer le client Power BI avec votre **jeton d’accès**, vous devez créer votre objet client Power BI pour interagir avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
+Pour créer le client Power BI avec votre **jeton d’accès**, vous devez créer votre objet client Power BI pour interagir avec les [API REST Power BI](/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -269,11 +269,11 @@ Générez un jeton d’incorporation qui peut être utilisé à partir de l’AP
 **API pour la génération d’un jeton d’incorporation pour un élément spécifique**
 
 Le jeton d’incorporation créé avec ces API est spécifique à l’élément que vous incorporez. Chaque fois que vous incorporez un élément Power BI (par exemple, un rapport, un tableau de bord ou une vignette) avec ces API, vous devez créer un nouveau jeton d’incorporation pour celui-ci.
-* [GenerateTokenInGroup pour les tableaux de bord](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-* [GenerateTokenInGroup pour les jeux de données](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-* [GenerateTokenForCreateInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-* [GenerateTokenInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-* [GenerateTokenInGroup pour les vignettes](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
+* [GenerateTokenInGroup pour les tableaux de bord](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [GenerateTokenInGroup pour les jeux de données](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [GenerateTokenForCreateInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [GenerateTokenInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [GenerateTokenInGroup pour les vignettes](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
 Des exemples de création d’un jeton d’incorporation pour un rapport, un tableau de bord ou une vignette sont disponibles dans les fichiers suivants de l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 * Services\EmbedService.cs
@@ -300,7 +300,7 @@ var embedConfig = new EmbedConfig()
 
 **API permettant de générer un jeton d’incorporation pour plusieurs éléments**<a id="multiEmbedToken"></a>
 
-L’API d’incorporation [Générer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) génère un jeton qui peut être utilisé pour l’incorporation de plusieurs éléments.
+L’API d’incorporation [Générer un jeton](/rest/api/power-bi/embedtoken/generatetoken) génère un jeton qui peut être utilisé pour l’incorporation de plusieurs éléments.
 
 Elle permet également de sélectionner dynamiquement un jeu de données lors de l’incorporation d’un rapport. Pour plus d’informations sur cette utilisation de l’API, consultez [Liaison dynamique](embed-dynamic-binding.md).
 
@@ -414,7 +414,7 @@ En créant une capacité dédiée, vous pouvez profiter du fait que vous dispose
 > [!NOTE]
 > Les références SKU A ne vous permettent pas d’accéder à du contenu Power BI avec une licence Power BI GRATUITE.
 
-Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
+Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Nœuds de capacité | Total des v-cores | Cœurs virtuels backend | RAM (Go) | Cœurs virtuels frontend | DirectQuery/Connexions actives (par seconde) | Parallélisme des actualisations de modèles |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -430,7 +430,7 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 
 Pour les tests de développement, vous pouvez utiliser des jetons d’essai d’incorporation avec une licence Pro. Pour incorporer dans un environnement de production, utilisez une capacité dédiée.
 
-Le nombre de jetons d’essai d’incorporation qu’un principal de service ou qu’un compte principal Power BI peut générer est limité. Utilisez l’API [Fonctionnalités disponibles](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier le pourcentage de votre utilisation incorporée actuelle. La quantité d’utilisation est affichée par principal de service ou compte principal.
+Le nombre de jetons d’essai d’incorporation qu’un principal de service ou qu’un compte principal Power BI peut générer est limité. Utilisez l’API [Fonctionnalités disponibles](/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier le pourcentage de votre utilisation incorporée actuelle. La quantité d’utilisation est affichée par principal de service ou compte principal.
 
 Si vous n’avez plus de jetons d’incorporation pendant les tests, vous devez acheter une [capacité](embedded-capacity.md) Power BI Embedded ou Premium. Avec une capacité dédiée, le nombre de jetons d’incorporation que vous pouvez générer n’est pas limité.
 
@@ -441,7 +441,7 @@ Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter v
 
 Tous les espaces de travail qui contiennent des ressources Power BI associées au contenu incorporé (notamment les jeux de données, les rapports et les tableaux de bord) doivent être affectés à des capacités dédiées. Par exemple, si un rapport incorporé et le jeu de données qui lui est lié se trouvent dans des espaces de travail différents, les deux espaces de travail doivent être affectés à des capacités dédiées.
 
-Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
+Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
 
 Suivez les étapes ci-dessous pour affecter une capacité dédiée à un espace de travail à l’aide d’un **compte principal**.
 

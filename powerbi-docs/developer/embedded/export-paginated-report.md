@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: 2b4715a388250e00cced8a0164a7dcf687887d8a
-ms.sourcegitcommit: 10c5b6cd5e7070f96de8a9f1d9b95f3d242ac7f2
+ms.openlocfilehash: bb06f5b0a170189c3c98b734a09259645a650c55
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86556885"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748169"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>Exporter un rapport paginé dans un fichier (préversion)
 
@@ -38,9 +38,9 @@ Vous pouvez utiliser la fonctionnalité d’exportation de différentes manière
 
 ## <a name="using-the-api"></a>Utilisation de l’API
 
-L’API est asynchrone. Lorsque l’API [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
+L’API est asynchrone. Lorsque l’API [exportToFile](/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
 
-Une fois l’exportation terminée, l’appel de l’API d’interrogation retourne une [URL Power BI](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile) pour obtenir le fichier. L’URL sera disponible pendant 24 heures.
+Une fois l’exportation terminée, l’appel de l’API d’interrogation retourne une [URL Power BI](/rest/api/power-bi/reports/getfileofexporttofile) pour obtenir le fichier. L’URL sera disponible pendant 24 heures.
 
 ## <a name="supported-features"></a>Fonctionnalités prises en charge
 

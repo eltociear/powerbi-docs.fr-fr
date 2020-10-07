@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: e0092003cbf019bcf720eeb7aa32e8a9e800f143
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83561498"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747295"
 ---
 # <a name="dataset-properties"></a>Propriétés du jeu de données
 
 La version v1 actuelle de l’API de jeux de données permet uniquement de créer un jeu de données avec un nom et une collection de tables. Chaque table a un nom et une collection de colonnes. Chaque colonne a un nom et un type de données. Nous étendons ces propriétés, plus particulièrement avec la prise en charge des mesures et des relations entre les tables. Voici la liste complète des propriétés prises en charge pour cette version :
 
 > [!IMPORTANT]
-> Vous pouvez y accéder à la page [Groupes d’opérations de jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets).
+> Vous pouvez y accéder à la page [Groupes d’opérations de jeux de données](/rest/api/power-bi/datasets).
 
 ## <a name="dataset"></a>Jeu de données
 

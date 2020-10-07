@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: b2638c3fdb483f45b6f4b3f9363f42ee36e57f0b
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276004"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747755"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -28,7 +28,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 ## <a name="concepts-and-terminology"></a>Concepts et terminologie
 
-**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** : Azure Active Directory.
+**[AAD](/azure/active-directory/fundamentals/active-directory-whatis)** : Azure Active Directory.
 
 **Application AAD** : identité d’application dans AAD. Une application AAD est nécessaire pour l’authentification.
 
@@ -131,17 +131,17 @@ Deux approches principales de gestion des données du locataire sont possibles.
 
 Si le stockage de l’application SaaS conserve une base de données distincte par locataire, la solution naturelle consiste à utiliser des jeux de données à locataire unique dans Power BI avec la chaîne de connexion de chaque jeu de données pointant vers la base de données correspondante.
 
-Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../../transform-model/desktop-query-overview.md) ou à l’aide de l’[API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
+Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../../transform-model/desktop-query-overview.md) ou à l’aide de l’[API](/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
 
 ### <a name="data-isolation"></a>Isolation des données
 
-Dans ce modèle de location, les données sont séparées au niveau de l’espace de travail. Un mappage simple entre un espace de travail et un locataire empêche les utilisateurs d’un locataire de voir le contenu d’un autre locataire. Le recours à un utilisateur *maître* unique nécessite que vous ayez accès à l’ensemble des différents espaces de travail. La configuration des données affichées par l’utilisateur final est définie lors de la [génération du jeton incorporé](https://docs.microsoft.com/rest/api/power-bi/embedtoken), un processus principal uniquement que les utilisateurs finaux ne peut pas voir ni modifier.
+Dans ce modèle de location, les données sont séparées au niveau de l’espace de travail. Un mappage simple entre un espace de travail et un locataire empêche les utilisateurs d’un locataire de voir le contenu d’un autre locataire. Le recours à un utilisateur *maître* unique nécessite que vous ayez accès à l’ensemble des différents espaces de travail. La configuration des données affichées par l’utilisateur final est définie lors de la [génération du jeton incorporé](/rest/api/power-bi/embedtoken), un processus principal uniquement que les utilisateurs finaux ne peut pas voir ni modifier.
 
 Pour ajouter une isolation supplémentaire, un développeur d’applications peut définir un utilisateur *maître* ou une application par l’espace de travail plutôt qu’un utilisateur *maître* ou une application unique ayant accès à plusieurs espaces de travail. Vous pouvez ainsi vous assurer que toute erreur humaine ou fuite d’informations d’identification n’entraîne pas une exposition des données de plusieurs clients.
 
 ### <a name="scalability"></a>Extensibilité
 
-Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, les jeux de données non utilisés peuvent être supprimés afin de libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
+Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](../../admin/service-premium-what-is.md) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, les jeux de données non utilisés peuvent être supprimés afin de libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
 
 Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La référence SKU de capacité utilisée présente une limite concernant la taille de mémoire à laquelle les jeux de données doivent s’adapter, ainsi qu’une limite concernant le nombre d’actualisations pouvant être exécutées simultanément et la fréquence maximale des actualisations des données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
 
@@ -155,7 +155,7 @@ Avec l’isolation basée sur l’espace de travail Power BI, un développeur d�
    * Personnalisations non planifiées pour des locataires spécifiques
    * Fréquence d’actualisation du jeu de données
 
-Par exemple, la création d’un espace de travail pour un nouveau locataire est une tâche courante qui doit être automatisée. Grâce à l’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), vous pouvez obtenir une [automatisation complète pendant la création d’espaces de travail](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
+Par exemple, la création d’un espace de travail pour un nouveau locataire est une tâche courante qui doit être automatisée. Grâce à l’[API REST Power BI](/rest/api/power-bi/), vous pouvez obtenir une [automatisation complète pendant la création d’espaces de travail](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
 
 ### <a name="multi-geo-needs"></a>Besoins multigéographiques
 
@@ -222,15 +222,15 @@ Lorsque les utilisateurs finaux modifient ou créent des rapports, ils peuvent u
 > [!Important]
 > L’analyse suivante est basée sur l’état actuel du produit. Dans la mesure où nous publions chaque mois de nouvelles fonctionnalités, nous développons sans cesse de nouvelles fonctions et fonctionnalités qui répondent aux limitations et points faibles existants. Veillez à consulter nos billets de blog mensuels pour découvrir les nouveautés et revenez à cet article pour voir comment les fonctionnalités affectent la suggestion de modèle de location.
 
-| Critères d’évaluation | Basé sur l’espace de travail   | Basé sur la sécurité au niveau des lignes  |  |  |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
-| Architecture de données  | La plus simple lorsqu’il existe une base de données distincte par locataire  | La plus simple lorsque toutes les données de tous les locataires se trouvent dans un entrepôt de données unique   |  |  |
-| Isolation des données  | Correct. Chaque locataire possède un jeu de données dédié.  | Modéré. Toutes les données se trouvent dans un jeu de données partagé unique, mais gérées via un contrôle d’accès.  |  |  |
-| Extensibilité  | Moyen. Diviser les données entre plusieurs jeux de données permet une optimisation.  | Minimal. Contrainte par les limites de jeu de données.  |  |  |
-| Besoins multigéographiques  | Adaptée lorsque la plupart des locataires se trouvent dans une seule région.  | Non recommandé. L’ensemble du jeu de données doit être stocké dans plusieurs régions.  |  |  |
-| Automatisation et complexité opérationnelle  | Automatisation correcte pour chaque locataire.   Gestion complexe de nombreux artefacts à l’échelle.  | Gestion simple des artefacts Power BI mais gestion complexe de la SNL à l’échelle.  |  |  |
-| Cost  | Faible à moyen. Permet d’optimiser l’utilisation afin de réduire les coûts par locataire.  Peut augmenter lorsque des actualisations fréquentes sont nécessaires.  | Moyen à élevé si vous utilisez le mode d’importation.  Faible à moyen si vous utilisez le mode Direct Query.  |  |  |
-| Personnalisation et création de contenu  | Adapté. Peut atteindre les limitations à grande échelle.  | Génération de contenu dans l’iFrame incorporé uniquement  |  |  |
+| Critères d’évaluation | Basé sur l’espace de travail   | Basé sur la sécurité au niveau des lignes  |
+|---------------------|-------------------|---------------------------|
+| Architecture de données  | La plus simple lorsqu’il existe une base de données distincte par locataire  | La plus simple lorsque toutes les données de tous les locataires se trouvent dans un entrepôt de données unique   |
+| Isolation des données  | Correct. Chaque locataire possède un jeu de données dédié.  | Modéré. Toutes les données se trouvent dans un jeu de données partagé unique, mais gérées via un contrôle d’accès.  |
+| Extensibilité  | Moyen. Diviser les données entre plusieurs jeux de données permet une optimisation.  | Minimal. Contrainte par les limites de jeu de données.  |
+| Besoins multigéographiques  | Adaptée lorsque la plupart des locataires se trouvent dans une seule région.  | Non recommandé. L’ensemble du jeu de données doit être stocké dans plusieurs régions.  |
+| Automatisation et complexité opérationnelle  | Automatisation correcte pour chaque locataire.   Gestion complexe de nombreux artefacts à l’échelle.  | Gestion simple des artefacts Power BI mais gestion complexe de la SNL à l’échelle.  |
+| Cost  | Faible à moyen. Permet d’optimiser l’utilisation afin de réduire les coûts par locataire.  Peut augmenter lorsque des actualisations fréquentes sont nécessaires.  | Moyen à élevé si vous utilisez le mode d’importation.  Faible à moyen si vous utilisez le mode Direct Query.  |
+| Personnalisation et création de contenu  | Adapté. Peut atteindre les limitations à grande échelle.  | Génération de contenu dans l’iFrame incorporé uniquement  |
 
 ## <a name="deployment-considerations-and-limitations"></a>Considérations et limitations relatives au déploiement
 

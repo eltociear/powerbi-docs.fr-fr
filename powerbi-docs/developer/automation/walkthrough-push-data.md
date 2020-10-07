@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 792afe42cf302ae552b7f8f1c14d5f232ade320f
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79488197"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746697"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
@@ -33,14 +33,14 @@ La section suivante est une présentation générale des opérations de l’API 
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Opérations de l’API Power BI permettant de transmettre des données
 
-Avec l’API REST Power BI, vous pouvez transmettre des sources de données à Power BI. Lorsqu'une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les nouvelles données. Pour transmettre les données, utilisez les opérations [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) et [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Pour trouver un jeu de données, utilisez l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Vous pouvez passer un ID de groupe afin d’utiliser un groupe pour chacune de ces opérations. Pour obtenir la liste des ID de groupe, utilisez l’opération [Obtenir des groupes](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups).
+Avec l’API REST Power BI, vous pouvez transmettre des sources de données à Power BI. Lorsqu'une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les nouvelles données. Pour transmettre les données, utilisez les opérations [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset) et [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows). Pour trouver un jeu de données, utilisez l’opération [Obtenir des jeux de données](/rest/api/power-bi/datasets/getdatasets). Vous pouvez passer un ID de groupe afin d’utiliser un groupe pour chacune de ces opérations. Pour obtenir la liste des ID de groupe, utilisez l’opération [Obtenir des groupes](/rest/api/power-bi/groups/getgroups).
 
 Voici les opérations permettant de transmettre des données à un jeu de données :
 
-* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
-* [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
-* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
-* [Obtenir des groupes](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
+* [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Obtenir des jeux de données](/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Obtenir des groupes](/rest/api/power-bi/groups/getgroups)
 
 Vous créez un jeu de données dans Power BI en passant une chaîne JSON (JavaScript Objet Notation) au service Power BI. Pour en savoir plus sur JSON, consultez [Présentation de JSON](https://json.org/).
 
@@ -48,54 +48,58 @@ La chaîne JSON d’un jeu de données est au format suivant :
 
 **Objet JSON de jeu de données Power BI**
 
-    {"name": "dataset_name", "tables":
-        [{"name": "", "columns":
-            [{ "name": "column_name1", "dataType": "data_type"},
-             { "name": "column_name2", "dataType": "data_type"},
-             { ... }
-            ]
-          }
+```json
+{"name": "dataset_name", "tables":
+    [{"name": "", "columns":
+        [{ "name": "column_name1", "dataType": "data_type"},
+         { "name": "column_name2", "dataType": "data_type"},
+         { ... }
         ]
-    }
+      }
+    ]
+}
+```
 
 Pour notre exemple de jeu de données Sales Marketing, vous transmettriez une chaîne JSON, comme dans l’exemple ci-dessous. Dans cet exemple, **SalesMarketing** est le nom du jeu de données et **Product** le nom de la table. Après avoir défini la table, vous définissez le schéma de table. Pour le jeu de données **SalesMarketing**, le schéma de table comporte ces colonnes : ProductID, Manufacturer, Category, Segment, Product, et IsCompete.
 
 **Exemple d’objet JSON de jeu de données**
 
-    {
-        "name": "SalesMarketing",
-        "tables": [
+```json
+{
+    "name": "SalesMarketing",
+    "tables": [
+        {
+            "name": "Product",
+            "columns": [
+            {
+                "name": "ProductID",
+                "dataType": "int"
+            },
+            {
+                "name": "Manufacturer",
+                "dataType": "string"
+            },
+            {
+                "name": "Category",
+                "dataType": "string"
+            },
+            {
+                "name": "Segment",
+                "dataType": "string"
+            },
             {
                 "name": "Product",
-                "columns": [
-                {
-                    "name": "ProductID",
-                    "dataType": "int"
-                },
-                {
-                    "name": "Manufacturer",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Category",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Segment",
-                    "dataType": "string"
-                },
-                {
-                    "name": "Product",
-                    "dataType": "string"
-                },
-                {
-                    "name": "IsCompete",
-                    "dataType": "bool"
-                }
-                ]
+                "dataType": "string"
+            },
+            {
+                "name": "IsCompete",
+                "dataType": "bool"
             }
-        ]
-    }
+            ]
+        }
+    ]
+}
+```
 
 Pour un schéma de table Power BI, vous pouvez utiliser les types de données suivants.
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.custom: ''
 ms.date: 04/16/2019
-ms.openlocfilehash: 646a09545a06dfa65bd73a666fa2419d82e4da33
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eb9476b3f21d1149492982a8dcae3d8ce89e9629
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236916"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748652"
 ---
 # <a name="auto-install-power-bi-apps-when-embedding-for-your-organization"></a>Installer automatiquement des applications Power BI quand vous incorporez du contenu pour votre organisation
 
@@ -29,7 +29,7 @@ Si vous souhaitez autoriser l’installation automatique des applications pour v
 
 ![Inscription de l’application - Création de contenu](media/embed-auto-install-app/register-app-create-content.png)
 
-Ensuite, vous devez fournir l’ID d’application dans l’URL d’incorporation. Pour fournir l’ID d’application, le créateur de l’application doit tout d’abord installer l’application, puis utiliser l’un des appels d’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/) pris en charge : [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) ou [Obtenir des tableaux de bord](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Ensuite, le créateur de l’application doit copier l’URL d’incorporation dans la réponse de l’API REST. L’ID d’application s’affiche dans l’URL si le contenu provient d’une application.  Une fois que vous disposez de l’URL d’incorporation, vous pouvez régulièrement l’utiliser pour incorporer du contenu.
+Ensuite, vous devez fournir l’ID d’application dans l’URL d’incorporation. Pour fournir l’ID d’application, le créateur de l’application doit tout d’abord installer l’application, puis utiliser l’un des appels d’[API REST Power BI](/rest/api/power-bi/) pris en charge : [Obtenir des rapports](/rest/api/power-bi/reports/getreports) ou [Obtenir des tableaux de bord](/rest/api/power-bi/dashboards/getdashboards). Ensuite, le créateur de l’application doit copier l’URL d’incorporation dans la réponse de l’API REST. L’ID d’application s’affiche dans l’URL si le contenu provient d’une application.  Une fois que vous disposez de l’URL d’incorporation, vous pouvez régulièrement l’utiliser pour incorporer du contenu.
 
 ## <a name="secure-embed"></a>Sécuriser l’incorporation
 

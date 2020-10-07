@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: 38e6ac3be143381304f1fdfc8e1427b91f398a9a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 99df7a301a1025d50c82c5cc7f5966325a6a6a6f
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196626"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747525"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>Guide pratique pour créer des visuels Power BI adaptés aux mobiles
 La consommation sur mobile a un rôle majeur dans Power BI. Une de ses forces est de rester connecté à vos données à tout moment, où que vous soyez.
 
 En tant que développeur créant des visuels Power BI, vous devez tenir compte des contraintes spécifiques de chaque appareil mobile pour atteindre autant d’utilisateurs que possible et pour offrir une expérience mobile optimale.
 
-Utilisez l’[application Power BI pour Windows, iOS et Android](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices) pour permettre aux utilisateurs de votre entreprise d’avoir au bout des doigts une vue complète de leurs données en déplacement.
+Utilisez l’[application Power BI pour Windows, iOS et Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) pour permettre aux utilisateurs de votre entreprise d’avoir au bout des doigts une vue complète de leurs données en déplacement.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -63,7 +63,7 @@ Les éléments suivants sont considérés comme facultatifs et ils sont utilisé
   Les mêmes paramètres peuvent également être appliqués aux visuels dans les navigateurs des postes de travail et, si nécessaire, être remplacés pour adapter le visuel à des écrans plus petits.
 
   > [!NOTE]
-  > Pour optimiser un visuel en mode **Focus**, les orientations des tailles d’écran portrait et paysage doivent être prises en compte ; consultez [Afficher du contenu en mode Focus](/power-bi/consumer/end-user-focus).
+  > Pour optimiser un visuel en mode **Focus**, les orientations des tailles d’écran portrait et paysage doivent être prises en compte ; consultez [Afficher du contenu en mode Focus](../../consumer/end-user-focus.md).
 
 - Interactive
 
@@ -74,9 +74,9 @@ Les éléments suivants sont considérés comme facultatifs et ils sont utilisé
   Un visuel doit afficher une erreur décrivant le problème s’il ne peut pas être rendu sur l’appareil mobile.
 
 ## <a name="supported-browsers-and-devices"></a>Navigateurs et appareils pris en charge
-Le visuel Power BI doit s’afficher sur tous les appareils prenant en charge les applications Power BI. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](/power-bi/power-bi-browsers) et [Applications mobiles Power BI](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices).
+Le visuel Power BI doit s’afficher sur tous les appareils prenant en charge les applications Power BI. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](../../fundamentals/power-bi-browsers.md) et [Applications mobiles Power BI](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 Lors des tests sur les modèles les plus récents des appareils Windows, iOS et Android, le développeur doit prendre en compte la plupart de ces aspects qualitatifs.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour commencer, consultez [Tutoriel : Développement d’un visuel Power BI](/power-bi/developer/visuals/custom-visual-develop-tutorial)
+Pour commencer, consultez [Tutoriel : Développement d’un visuel Power BI](./custom-visual-develop-tutorial.md)

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 23018dce94efad6c63a22b6ee3a2c0919475adb5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9158dfccecd42d13a133a49097b2f85cb3713f00
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145121"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746743"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Planification d’une capacité dans l’analytique incorporée de Power BI
 
@@ -42,7 +42,7 @@ Lors de l’exécution de l’outil, gardez à l’esprit la charge existante su
 Voici quelques exemples de la façon dont vous pouvez utiliser l’outil de planification.
 
 * Les administrateurs de capacité peuvent avoir une meilleure compréhension du nombre d’utilisateurs que leur capacité peut gérer dans un laps de temps donné.
-* Les auteurs de rapports peuvent comprendre l’effet de la charge utilisateur, tel qu’elle est mesurée avec [l’analyseur de performances](https://docs.microsoft.com/power-bi/desktop-performance-analyzer) de Power BI Desktop.
+* Les auteurs de rapports peuvent comprendre l’effet de la charge utilisateur, tel qu’elle est mesurée avec [l’analyseur de performances](../../create-reports/desktop-performance-analyzer.md) de Power BI Desktop.
 * Vous pouvez voir les rendus en temps réel dans votre navigateur.
 * À l’aide de SQL Server Profiler, vous pouvez [vous connecter aux points de terminaison XMLA](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) des capacités mesurées, afin de voir les requêtes en cours d’exécution.
 * Les effets du test de charge sont visibles dans la page Jeux de données de l’application des métriques de la capacité Premium. Les administrateurs de capacité peuvent utiliser cet outil pour générer la charge et voir comment elle s’affiche.
