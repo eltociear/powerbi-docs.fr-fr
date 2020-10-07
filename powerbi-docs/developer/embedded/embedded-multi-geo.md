@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 02/05/2019
-ms.openlocfilehash: 9c99d48a0b9d50312d2ae5ce152826fcf1ab9319
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 23e71d08b344fc27edca26372b7781b9e0d3d6d1
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238774"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749112"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 
@@ -65,11 +65,11 @@ Il est important de noter que si vous décidez de supprimer une capacité sans r
 
 Pour prendre en charge la gestion des capacités avec des zones géographiques multiples via l’API, nous avons apporté des modifications aux API existantes :
 
-1. **[Obtenir des capacités](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)**  : l’API retourne une liste des capacités accessibles à l’utilisateur. La réponse inclut désormais une propriété supplémentaire appelée « région », qui spécifie l’emplacement de la capacité.
+1. **[Obtenir des capacités](/rest/api/power-bi/capacities/getcapacities)**  : l’API retourne une liste des capacités accessibles à l’utilisateur. La réponse inclut désormais une propriété supplémentaire appelée « région », qui spécifie l’emplacement de la capacité.
 
-2. **[Affecter à la capacité](https://docs.microsoft.com/rest/api/power-bi/capacities)**  : l’API permet d’affecter un espace de travail donné à une capacité. Cette opération ne vous autorise pas à affecter des espaces de travail à une capacité en dehors de votre région d’origine, ni à déplacer des espaces de travail entre des capacités dans différentes régions. Pour effectuer cette opération, l’utilisateur ou le [principal du service](embed-service-principal.md) a toujours besoin d’autorisations d’administration sur l’espace de travail, ainsi que d’autorisations d’administration ou d’affectation sur la capacité cible.
+2. **[Affecter à la capacité](/rest/api/power-bi/capacities)**  : l’API permet d’affecter un espace de travail donné à une capacité. Cette opération ne vous autorise pas à affecter des espaces de travail à une capacité en dehors de votre région d’origine, ni à déplacer des espaces de travail entre des capacités dans différentes régions. Pour effectuer cette opération, l’utilisateur ou le [principal du service](embed-service-principal.md) a toujours besoin d’autorisations d’administration sur l’espace de travail, ainsi que d’autorisations d’administration ou d’affectation sur la capacité cible.
 
-3. **[API Azure Resource Manager](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)**  : toutes les opérations d’API Azure Resource Manager, y compris *Créer* et *Supprimer*, prennent en charge des zones géographiques multiples.
+3. **[API Azure Resource Manager](/rest/api/power-bi-embedded/capacities)**  : toutes les opérations d’API Azure Resource Manager, y compris *Créer* et *Supprimer*, prennent en charge des zones géographiques multiples.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/11/2020
-ms.openlocfilehash: 248e641488edb2523a2fa7102bd7a9a4829ee29b
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2046dc389b859ce71c4d26cc31cc686f812e461e
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527766"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749318"
 ---
 # <a name="tutorial-create-an-r-powered-power-bi-visual"></a>Tutoriel : Créer un visuel Power BI optimisé pour R
 
@@ -31,9 +31,9 @@ Dans ce tutoriel, vous allez découvrir comment :
 ## <a name="prerequisites"></a>Prérequis
 
 * Un **compte Power BI Pro**. [Inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
-* Le moteur R. Vous pouvez le télécharger et l’installer gratuitement à partir de nombreux emplacements, dont la [page de téléchargement Revolution Open](https://mran.revolutionanalytics.com/download/) et le [Référentiel CRAN](https://cran.r-project.org/bin/windows/base/). Pour plus d’informations, consultez [Créer des visuels Power BI avec R](../../desktop-r-visuals.md).
+* Le moteur R. Vous pouvez le télécharger et l’installer gratuitement à partir de nombreux emplacements, dont la [page de téléchargement Revolution Open](https://mran.revolutionanalytics.com/download/) et le [Référentiel CRAN](https://cran.r-project.org/bin/windows/base/). Pour plus d’informations, consultez [Créer des visuels Power BI avec R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 ou ultérieure pour les utilisateurs Windows, OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 ou ultérieure pour les utilisateurs Windows, OU [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) pour les utilisateurs OSX.
 
 ## <a name="getting-started"></a>Prise en main
 
@@ -283,6 +283,6 @@ Votre visualisation finale ressemble à l’exemple suivant :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour en savoir plus sur les visuels optimisés pour R, consultez [Utiliser des visuels Power BI basés sur R dans Power BI](../../desktop-r-powered-custom-visuals.md).
+Pour en savoir plus sur les visuels optimisés pour R, consultez [Utiliser des visuels Power BI basés sur R dans Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
-Pour plus d’informations sur les visuels optimisés pour R dans Power BI Desktop, consultez [Créer des visuels Power BI avec R](../../desktop-r-visuals.md).
+Pour plus d’informations sur les visuels optimisés pour R dans Power BI Desktop, consultez [Créer des visuels Power BI avec R](../../create-reports/desktop-r-visuals.md).

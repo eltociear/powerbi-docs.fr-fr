@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b969fa3dd04f25c8921db563a89b11125216c752
-ms.sourcegitcommit: ffc46032d0771227395cc38be9ec9ff1500eac70
+ms.openlocfilehash: b1ae402f8e8712920cc93248828603d1087c8c4a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89401953"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749227"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Visuels organisationnels dans Power BI
 
@@ -49,7 +49,7 @@ Admin :
 
 Utilisateur final :
 
-* Les visuels Power BI d’organisation sont des visuels privés importés à partir du référentiel de l’organisation. Comme tous les visuels privés, ils ne peuvent pas être [exportés vers PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) ou affichées dans des e-mails reçus quand un utilisateur [s’abonne aux pages de rapport](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Seuls les [visuels Power BI certifiés](power-bi-custom-visuals-certified.md) importés directement depuis la Place de marché prennent en charge ces fonctionnalités.
+* Les visuels Power BI d’organisation sont des visuels privés importés à partir du référentiel de l’organisation. Comme tous les visuels privés, ils ne peuvent pas être [exportés vers PowerPoint](../../consumer/end-user-powerpoint.md) ou affichées dans des e-mails reçus quand un utilisateur [s’abonne aux pages de rapport](../../consumer/end-user-subscribe.md). Seuls les [visuels Power BI certifiés](power-bi-custom-visuals-certified.md) importés directement depuis la Place de marché prennent en charge ces fonctionnalités.
 
 * Les visuels Visio, PowerApps, Mapbox et GlobeMap provenant de la place de marché AppSource ne s’affichent pas s’ils sont déployés par le biais du référentiel de l’organisation.
 

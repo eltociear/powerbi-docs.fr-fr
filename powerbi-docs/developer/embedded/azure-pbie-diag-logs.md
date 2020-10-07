@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cc64338ed40fcdc6433fdcf231004b4946335c72
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79495800"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748790"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 
-Avec les [journaux de diagnostic des ressources Azure](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), vous pouvez journaliser un grand nombre d’événements à partir de votre capacité, les introduire dans un outil analytique et obtenir des insights sur le comportement de votre ressource.
+Avec les [journaux de diagnostic des ressources Azure](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), vous pouvez journaliser un grand nombre d’événements à partir de votre capacité, les introduire dans un outil analytique et obtenir des insights sur le comportement de votre ressource.
 
 L’utilisation des Diagnostics peut répondre à certains scénarios, tels que :
 
@@ -36,12 +36,12 @@ L’utilisation des Diagnostics peut répondre à certains scénarios, tels que�
 
     * **Nom** : entrez un nom pour le paramètre de diagnostic à créer.
 
-    * **Archiver dans un compte de stockage** : pour utiliser cette option, vous devez vous connecter à un compte de stockage existant. Consultez [Créer un compte de stockage](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) et suivez les instructions pour créer un compte de stockage. Puis, sélectionnez votre compte de stockage en retournant sur cette page dans le portail. L’affichage des comptes de stockage nouvellement créés dans le menu déroulant peut prendre plusieurs minutes. Le fichier journal est stocké au format JSON.
-    * **Diffuser vers Event Hub** : pour utiliser cette option, vous devez vous connecter à un espace de noms Event Hub et à un Event Hub existants. Pour plus d’informations, consultez [Créer un espace de noms Event Hubs et un Event Hub à l’aide du portail Azure](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Envoyer à Log Analytics** : pour utiliser cette option, utilisez un espace de travail existant ou créez un nouvel espace de travail Log Analytics en suivant les étapes permettant de [créer un espace de travail](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) dans le portail. Cette option tire parti [d’Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), qui fournit des fonctionnalités intégrées d’analyse, de tableaux de bord et de notification. Vous pouvez utiliser Log Analytics pour vous connecter à davantage de données à partir d’autres ressources, et obtenir une vue unique et complète des données dans toutes les ressources de votre application. Il est également possible de connecter Log Analytics à [Power BI en un seul clic](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
-    Pour plus d’informations sur l’affichage de vos journaux dans Log Analytics, consultez [Afficher les journaux dans Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
+    * **Archiver dans un compte de stockage** : pour utiliser cette option, vous devez vous connecter à un compte de stockage existant. Consultez [Créer un compte de stockage](/azure/storage/common/storage-create-storage-account) et suivez les instructions pour créer un compte de stockage. Puis, sélectionnez votre compte de stockage en retournant sur cette page dans le portail. L’affichage des comptes de stockage nouvellement créés dans le menu déroulant peut prendre plusieurs minutes. Le fichier journal est stocké au format JSON.
+    * **Diffuser vers Event Hub** : pour utiliser cette option, vous devez vous connecter à un espace de noms Event Hub et à un Event Hub existants. Pour plus d’informations, consultez [Créer un espace de noms Event Hubs et un Event Hub à l’aide du portail Azure](/azure/event-hubs/event-hubs-create).
+    * **Envoyer à Log Analytics** : pour utiliser cette option, utilisez un espace de travail existant ou créez un nouvel espace de travail Log Analytics en suivant les étapes permettant de [créer un espace de travail](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) dans le portail. Cette option tire parti [d’Azure Log Analytics](/azure/log-analytics/log-analytics-overview), qui fournit des fonctionnalités intégrées d’analyse, de tableaux de bord et de notification. Vous pouvez utiliser Log Analytics pour vous connecter à davantage de données à partir d’autres ressources, et obtenir une vue unique et complète des données dans toutes les ressources de votre application. Il est également possible de connecter Log Analytics à [Power BI en un seul clic](/azure/log-analytics/log-analytics-powerbi).
+    Pour plus d’informations sur l’affichage de vos journaux dans Log Analytics, consultez [Afficher les journaux dans Log Analytics](/azure/log-analytics/log-analytics-activity).
     * **Moteur** : sélectionnez cette option pour journaliser l’ensemble des [événements moteur répertoriés](#whats-logged) ci-dessous.
-    * **AllMetrics** : sélectionnez cette option pour stocker des données détaillées dans [Métriques](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). Si vous archivez vers un compte de stockage, vous pouvez sélectionner la période de conservation pour les journaux de diagnostic. Les journaux sont automatiquement supprimés après l’expiration de la période de conservation.
+    * **AllMetrics** : sélectionnez cette option pour stocker des données détaillées dans [Métriques](/azure/analysis-services/analysis-services-monitor#server-metrics). Si vous archivez vers un compte de stockage, vous pouvez sélectionner la période de conservation pour les journaux de diagnostic. Les journaux sont automatiquement supprimés après l’expiration de la période de conservation.
 
 3. Sélectionnez **Save (Enregistrer)** .
 
@@ -87,11 +87,11 @@ Vous pouvez combiner ces paramètres pour activer plusieurs options de sortie.
 
 ### <a name="rest-api"></a>API REST
 
-Découvrez comment [modifier les paramètres de diagnostic à l’aide de l’API REST Azure Monitor](https://docs.microsoft.com/rest/api/monitor/). 
+Découvrez comment [modifier les paramètres de diagnostic à l’aide de l’API REST Azure Monitor](/rest/api/monitor/). 
 
 ### <a name="resource-manager-template"></a>Modèle Resource Manager
 
-Découvrez comment [activer les paramètres de diagnostic lors de la création de la ressource à l’aide d’un modèle Resource Manager](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
+Découvrez comment [activer les paramètres de diagnostic lors de la création de la ressource à l’aide d’un modèle Resource Manager](/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
 
 ## <a name="whats-logged"></a>Quels sont les éléments journalisés ?
 
@@ -174,11 +174,11 @@ Dans **Type**, sélectionnez **AzureDiagnostics**, puis sélectionnez **Applique
 
 Sélectionnez **EventClass\_s** ou un des noms d’événements et Log Analytics poursuit la création d’une requête. Veillez à enregistrer vos requêtes pour les réutiliser ultérieurement.
 
-N’oubliez pas de consulter [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), qui fournit un site web avec des fonctionnalités améliorées en termes de requête, tableau de bord et alerte sur les données collectées.
+N’oubliez pas de consulter [Log Analytics](/azure/log-analytics/), qui fournit un site web avec des fonctionnalités améliorées en termes de requête, tableau de bord et alerte sur les données collectées.
 
 ### <a name="queries"></a>les requêtes
 
-Il existe des centaines de requêtes que vous pouvez utiliser. En voici quelques-unes pour vous aider à démarrer. Pour en savoir plus sur l’utilisation du nouveau langage de requête Recherche dans les journaux, consultez [Comprendre les recherches dans les journaux dans Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
+Il existe des centaines de requêtes que vous pouvez utiliser. En voici quelques-unes pour vous aider à démarrer. Pour en savoir plus sur l’utilisation du nouveau langage de requête Recherche dans les journaux, consultez [Comprendre les recherches dans les journaux dans Log Analytics](/azure/log-analytics/log-analytics-log-search).
 
 * Retour de requête ayant pris moins de cinq minutes (300 000 millisecondes) pour s’exécuter.
 
@@ -206,7 +206,7 @@ Il existe des centaines de requêtes que vous pouvez utiliser. En voici quelques
 Vous pouvez en savoir plus sur la journalisation de diagnostic des ressources Azure.
 
 > [!div class="nextstepaction"]
-> [Journalisation de diagnostic de ressource Azure](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+> [Journalisation de diagnostic de ressource Azure](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
 > [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+> [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)

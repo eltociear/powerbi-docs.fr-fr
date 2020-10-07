@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: dd85f44057c0e4069a903293ec162028b1cbd66e
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: d2cd9786a635aed79f334706f53c21fe87e723a4
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034057"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748951"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Configurer les informations d’identification par programmation pour Power BI
 
@@ -25,7 +25,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
 ## <a name="update-credentials-flow-for-data-sources"></a>Mettre à jour un flux d’informations d’identification pour les sources de données
 
-1. Appelez [Obtenir des sources de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) pour découvrir les sources de données du jeu de données. Le corps de réponse de chaque source de données, il y a le type, les détails de la connexion, la passerelle et l’ID de source de données.
+1. Appelez [Obtenir des sources de données](/rest/api/power-bi/datasets/getdatasourcesingroup) pour découvrir les sources de données du jeu de données. Le corps de réponse de chaque source de données, il y a le type, les détails de la connexion, la passerelle et l’ID de source de données.
 
     ```csharp
     // Select a datasource
@@ -33,7 +33,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
     var datasource = datasources.First();
     ```
 
-2. Générez la chaîne d’informations d’identification conformément aux [exemples de mise à jour de source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) selon le type d’informations d’identification.
+2. Générez la chaîne d’informations d’identification conformément aux [exemples de mise à jour de source de données](/rest/api/power-bi/gateways/updatedatasource) selon le type d’informations d’identification.
 
     # <a name="net-sdk-v3"></a>[Kit de développement logiciel (SDK) .NET v3](#tab/sdk3)
 
@@ -50,9 +50,9 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
     ---
 
     >[!NOTE]
-    >Si vous utilisez des sources de données cloud, n’effectuez pas les étapes suivantes de cette section. Définissez les informations d’identification à l’aide des ID de passerelle et de source de données obtenus à l’étape 1, en appelant [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+    >Si vous utilisez des sources de données cloud, n’effectuez pas les étapes suivantes de cette section. Définissez les informations d’identification à l’aide des ID de passerelle et de source de données obtenus à l’étape 1, en appelant [Mettre à jour la source de données](/rest/api/power-bi/gateways/updatedatasource). 
 
-3. Appelez [Obtenir la passerelle](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique de la passerelle.
+3. Appelez [Obtenir la passerelle](/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique de la passerelle.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
@@ -104,7 +104,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
     ---
 
-6. Appelez [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) pour définir les informations d’identification.
+6. Appelez [Mettre à jour la source de données](/rest/api/power-bi/gateways/updatedatasource) pour définir les informations d’identification.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
@@ -114,7 +114,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
 1. Installez la [passerelle de données locale](https://powerbi.microsoft.com/gateway/) sur votre ordinateur.
 
-2. Appelez [Obtenir les passerelles](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique et l’ID de la passerelle.
+2. Appelez [Obtenir les passerelles](/rest/api/power-bi/gateways/getgateways) pour récupérer la clé publique et l’ID de la passerelle.
 
     ```csharp
     // Select a gateway
@@ -134,7 +134,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
             dataSourceName: "my sql datasource");
     ```
 
-5. Appelez l’API [Créer une source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource).
+5. Appelez l’API [Créer une source de données](/rest/api/power-bi/gateways/createdatasource).
 
     ```csharp
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
@@ -142,7 +142,7 @@ Suivez les étapes de cet article afin de configurer programmatiquement les info
 
 ## <a name="credential-types"></a>Types d'informations d'identification
 
-Quand vous appelez [Créer une source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) ou [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) sous une **passerelle locale d’entreprise** en utilisant l’[API Rest Power BI](https://docs.microsoft.com/rest/api/power-bi/), le valeur des informations d’identification doit être chiffrée à l’aide de la clé publique de la passerelle.
+Quand vous appelez [Créer une source de données](/rest/api/power-bi/gateways/createdatasource) ou [Mettre à jour la source de données](/rest/api/power-bi/gateways/updatedatasource) sous une **passerelle locale d’entreprise** en utilisant l’[API Rest Power BI](/rest/api/power-bi/), le valeur des informations d’identification doit être chiffrée à l’aide de la clé publique de la passerelle.
 
 >[!NOTE]
 >Le Kit de développement logiciel (SDK) .NET v3 peut également exécuter les exemples du kit de développement logiciel (SDK) .NET v2 répertoriés ci-dessous.
@@ -233,6 +233,6 @@ Ce problème signifie que le jeu de données n’est pas lié à une passerelle.
 
 Une fois le jeu de données créé, une liaison automatique est créée entre le jeu de données et une passerelle appropriée, qui contient les sources de données correspondantes pour toutes les connexions. En l’absence d’une telle passerelle ou de plusieurs passerelles appropriées, la liaison automatique échoue.
 
-Si vous utilisez des jeux de données locaux, créez les sources de données locales manquantes et liez manuellement le jeu de données à une passerelle en utilisant [Lier à la passerelle](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+Si vous utilisez des jeux de données locaux, créez les sources de données locales manquantes et liez manuellement le jeu de données à une passerelle en utilisant [Lier à la passerelle](/rest/api/power-bi/datasets/bindtogateway).
 
-Pour découvrir les passerelles pouvant être liées, utilisez [Découvrir des passerelles](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
+Pour découvrir les passerelles pouvant être liées, utilisez [Découvrir des passerelles](/rest/api/power-bi/datasets/discovergateways).

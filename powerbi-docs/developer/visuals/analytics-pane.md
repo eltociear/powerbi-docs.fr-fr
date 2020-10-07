@@ -9,23 +9,23 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: e9d1479b596f563edc37f0c7a72b29c3343fed1e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5f8b2a54ac7882c02f1ece63ce1362c97ad027af
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239909"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749020"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Volet Analytique des visuels Power BI
 
-Le volet **Analytique** a été introduit pour les [visuels natifs](https://docs.microsoft.com/power-bi/desktop-analytics-pane) en novembre 2018.
+Le volet **Analytique** a été introduit pour les [visuels natifs](../../transform-model/desktop-analytics-pane.md) en novembre 2018.
 Cet article explique comment les visuels Power BI avec l’API v2.5.0 peuvent présenter et gérer leurs propriétés dans le volet **Analytique**.
 
 ![Le volet Analytique](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## <a name="manage-the-analytics-pane"></a>Gérer le volet Analytique
 
-De la même façon que vous gérez les propriétés dans le [volet **Format**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), vous gérez le volet **Analytique** en définissant un objet dans le fichier *capabilities.json* du visuel.
+De la même façon que vous gérez les propriétés dans le [volet **Format**](./custom-visual-develop-tutorial-format-options.md), vous gérez le volet **Analytique** en définissant un objet dans le fichier *capabilities.json* du visuel.
 
 Pour le volet **Analytique**, les différences sont les suivantes :
 
