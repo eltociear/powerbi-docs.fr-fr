@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/27/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 44aeb5030008d17a9998e8357f23d47524f11512
-ms.sourcegitcommit: 1aaa742c239a3119cdaad698be5a7553b68801fa
+ms.openlocfilehash: 469e2de86d18b9adeb4a7c8aeabeaae1db2a28de
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89040221"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600453"
 ---
 # <a name="refresh-summaries-for-power-bi"></a>Récapitulatifs des actualisations pour Power BI
 
@@ -53,11 +53,11 @@ Avec les informations contenues dans le fichier exporté, vous pouvez passer en 
 
 Vous pouvez sélectionner la vue **Planification** en cliquant sur **Planification** dans Récapitulatifs des actualisations. La vue Planification affiche les informations de planification pour la semaine, décomposées en intervalles de 30 minutes. 
 
-![Vue Planification](media/refresh-summaries/refresh-summaries-02a.jpg)
+![La capture d’écran montre l’onglet de planification de la page Planification de l’actualisation en gros plan.](media/refresh-summaries/refresh-summaries-02a.jpg)
 
 La vue Planification est très pratique pour déterminer si les événements d’actualisation planifiés sont correctement espacés, ce qui permet à toutes les actualisations de se terminer sans chevauchement, ou pour voir si vous avez planifié des événements d’actualisation qui prennent trop de temps et créent des conflits de ressources. Si vous trouvez un conflit de ressources, vous devez ajuster vos planifications d’actualisation afin d’éviter les conflits ou un chevauchement, afin que vos actualisations planifiées puissent se terminer correctement. 
 
-![Vue Planification](media/refresh-summaries/refresh-summaries-02.jpg)
+![La capture d’écran montre l’onglet de planification de la page Planification de l’actualisation.](media/refresh-summaries/refresh-summaries-02.jpg)
 
 La colonne *Durée d’actualisation réservée (minutes)* est un calcul de la moyenne de 60 enregistrements maximum pour chaque jeu de données associé. La valeur numérique pour chaque plage horaire de 30 minutes est la somme des minutes calculées pour toutes les actualisations planifiées pour démarrer sur la plage horaire **et** les actualisations planifiées définies pour démarrer sur la plage horaire *précédente*, mais dont la durée moyenne déborde sur la plage horaire sélectionnée.
 
@@ -67,7 +67,7 @@ Vous pouvez sélectionner une plage horaire, puis sélectionner le bouton **Dét
 
 Prenons un exemple pour voir comment cela fonctionne. La boîte de dialogue suivante s’affiche quand nous sélectionnons la plage horaire 20:30 pour dimanche, puis que nous cliquons sur **Détails**.
 
-![Vue Planification](media/refresh-summaries/refresh-summaries-04.jpg)
+![La capture d’écran montre les détails des actualisations pour un temps sélectionné.](media/refresh-summaries/refresh-summaries-04.jpg)
 
 Trois événements d’actualisation planifiée se produisent dans cette plage horaire. 
 

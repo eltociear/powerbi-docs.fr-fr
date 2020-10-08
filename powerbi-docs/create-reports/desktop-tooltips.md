@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 78aac3b12abc0e055094078c59f39911a026e797
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8e794ecc67f7873efb1ee5750f55aefb3d93b40b
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238497"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600311"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -46,7 +46,7 @@ Vous pouvez également nommer la page de rapport pour identifier son contenu plu
 
 Vous pouvez ensuite créer les visuels que vous souhaitez afficher dans votre info-bulle. L’image suivante illustre une page d’info-bulle comportant deux cartes et un graphique à barres groupées. Pour donner à l’ensemble l’aspect souhaité, nous avons utilisé une couleur d’arrière-plan différente pour les visuels et la page proprement dite.
 
-![Info-bulles de rapport dans Power BI Desktop](media/desktop-tooltips/desktop-tooltips_06.png)
+![La capture d’écran montre une info-bulle de rapport personnalisée.](media/desktop-tooltips/desktop-tooltips_06.png)
 
 Vous avez encore d’autres étapes à effectuer avant de pouvoir utiliser votre page de rapport d’info-bulle comme une info-bulle. Vous devez configurer plusieurs paramètres de la page d’info-bulle, comme décrit dans la section suivante. 
 

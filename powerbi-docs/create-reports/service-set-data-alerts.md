@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dab2e4b7bdc3da8278db6765e7233d98d7dba473
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 55d196a9b041f52632300f6e10c00d753ca02a14
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218720"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635076"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Alertes de données dans le service Power BI
 
@@ -46,7 +46,7 @@ Cet exemple utilise une vignette de carte de l’exemple de tableau Retail Analy
 
 1. Pour commencer, sélectionnez **+ Ajouter une règle d’alerte**, vérifiez que le curseur **Actif** est défini sur **Activé**, puis donnez un titre à votre alerte. Les titres vous aident à reconnaître facilement vos alertes.
 
-   ![Fenêtre Gérer les alertes](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![La capture d’écran montre la fenêtre Gérer les alertes avec Ajouter une règle d’alerte, Alerte pour tous les magasins et le titre Alerte affiché.](media/service-set-data-alerts/powerbi-alert-title.png)
 
 1. Faites défiler vers le bas, puis entrez les détails de l’alerte.  Dans cet exemple, vous allez créer une alerte qui vous avertit une fois par jour si le nombre total de magasins est supérieur à 100.
 
@@ -93,7 +93,7 @@ Il existe de nombreuses façons de gérer vos alertes :
 
     Power BI affiche la ou les alertes que vous avez définies pour cette vignette.
 
-    ![Fenêtre Gérer les alertes](media/service-set-data-alerts/powerbi-see-alerts.png)
+    ![La capture d’écran montre la fenêtre Gérer les alertes.](media/service-set-data-alerts/powerbi-see-alerts.png)
 
 1. Pour modifier une alerte, sélectionnez la flèche à gauche du nom de l’alerte.
 
