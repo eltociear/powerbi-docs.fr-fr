@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 86572383e2e88f5a1efcf5126828e3365933cbc2
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79380817"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635950"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
@@ -337,14 +337,13 @@ Voici le mappage des vues de données :
 
 La vue de données par catégorie peut être visualisée ainsi :
 
-| Catégorie |  |  | | | |
-|-----|-----|------|------|------|------|
-| | Année | 2013 | 2014 | 2015 | 2016 |
-| Pays | | |
-| USA | | x | x | 650 | 350 |
-| Canada | | x | 630 | 490 | x |
-| Mexico | | 645 | x | x | x |
-| Royaume-Uni | | x | x | 831 | x |
+| Pays ou région | 2013 | 2014 | 2015 | 2016 |
+|---------|------|------|------|------|
+| USA | x | x | 650 | 350 |
+| Canada | x | 630 | 490 | x |
+| Mexique | 645 | x | x | x |
+| Royaume-Uni | x | x | 831 | x |
+
 
 Power BI la produit comme vue de données par catégorie. Il s’agit de l’ensemble des catégories.
 
@@ -499,7 +498,7 @@ Résultat du visuel :
 
 La vue de données de table est un mappage de données simple. En gros, il s’agit d’une liste de points de données, où les points de données numériques peuvent être agrégés.
 
-### <a name="example-7"></a>Exemple 7
+### <a name="example-7"></a>Exemple 7
 
 Avec les fonctionnalités données :
 
@@ -545,13 +544,13 @@ Vous pouvez visualiser la vue des données de table comme suit :
 
 Exemple de données :
 
-| Pays| Année | Ventes |
+| Pays ou région| Year | Sales |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
 | Canada | 2015 | 200 |
 | Canada | 2015 | 50 |
-| Mexico | 2013 | 300 |
+| Mexique | 2013 | 300 |
 | Royaume-Uni | 2014 | 150 |
 | USA | 2015 | 75 |
 
@@ -603,7 +602,7 @@ Power BI affiche vos données en tant que vue de données de table. Vous ne deve
 
 Vous pouvez agréger les données en sélectionnant le champ souhaité, puis en sélectionnant Sum.  
 
-![Agrégation des données](media/dataview-mappings/data-aggregation.png)
+![Agrégation de données](media/dataview-mappings/data-aggregation.png)
 
 Exemple de code pour traiter un mappage de vues de données de tables.
 
@@ -744,26 +743,26 @@ Le mappage de données de matrice est semblable au mappage de données de table,
 
 Power BI crée une structure de données hiérarchique. La racine de la hiérarchie d’arborescence contient les données de la colonne **Parents** du rôle de données `Category`, avec des enfants de la colonne **Children** de la table de rôles de données.
 
-Jeu de données :
+Jeu de données :
 
-| Parents | Enfants | Petits-enfants | Colonnes | Valeurs |
+| Parents | Children | Petits-enfants | Colonnes | Valeurs |
 |-----|-----|------|-------|-------|
-| Parent 1 | Enfant 1 | Petit-enfant 1 | Col 1 | 5 |
-| Parent 1 | Enfant 1 | Petit-enfant 1 | Col 2 | 6 |
-| Parent 1 | Enfant 1 | Petit-enfant 2 | Col 1 | 7 |
-| Parent 1 | Enfant 1 | Petit-enfant 2 | Col 2 | 8 |
-| Parent 1 | Enfant 2 | Petit-enfant 3 | Col 1 | 5 |
-| Parent 1 | Enfant 2 | Petit-enfant 3 | Col 2 | 3 |
-| Parent 1 | Enfant 2 | Petit-enfant 4 | Col 1 | 4 |
-| Parent 1 | Enfant 2 | Petit-enfant 4 | Col 2 | 9 |
-| Parent 1 | Enfant 2 | Petit-enfant 5 | Col 1 | 3 |
-| Parent 1 | Enfant 2 | Petit-enfant 5 | Col 2 | 5 |
-| Parent 2 | Enfant 3 | Petit-enfant 6 | Col 1 | 1 |
-| Parent 2 | Enfant 3 | Petit-enfant 6 | Col 2 | 2 |
-| Parent 2 | Enfant 3 | Petit-enfant 7 | Col 1 | 7 |
-| Parent 2 | Enfant 3 | Petit-enfant 7 | Col 2 | 1 |
-| Parent 2 | Enfant 3 | Petit-enfant 8 | Col 1 | 10 |
-| Parent 2 | Enfant 3 | Petit-enfant 8 | Col 2 | 13 |
+| Parent 1 | Enfant 1 | Petit-enfant 1 | Col1 | 5 |
+| Parent 1 | Enfant 1 | Petit-enfant 1 | Col2 | 6 |
+| Parent 1 | Enfant 1 | Petit-enfant 2 | Col1 | 7 |
+| Parent 1 | Enfant 1 | Petit-enfant 2 | Col2 | 8 |
+| Parent 1 | Enfant 2 | Petit-enfant 3 | Col1 | 5 |
+| Parent 1 | Enfant 2 | Petit-enfant 3 | Col2 | 3 |
+| Parent 1 | Enfant 2 | Petit-enfant 4 | Col1 | 4 |
+| Parent 1 | Enfant 2 | Petit-enfant 4 | Col2 | 9 |
+| Parent 1 | Enfant 2 | Petit-enfant 5 | Col1 | 3 |
+| Parent 1 | Enfant 2 | Petit-enfant 5 | Col2 | 5 |
+| Parent 2 | Enfant 3 | Petit-enfant 6 | Col1 | 1 |
+| Parent 2 | Enfant 3 | Petit-enfant 6 | Col2 | 2 |
+| Parent 2 | Enfant 3 | Petit-enfant 7 | Col1 | 7 |
+| Parent 2 | Enfant 3 | Petit-enfant 7 | Col2 | 1 |
+| Parent 2 | Enfant 3 | Petit-enfant 8 | Col1 | 10 |
+| Parent 2 | Enfant 3 | Petit-enfant 8 | Col2 | 13 |
 
 Le visuel de matrice principale de Power BI affiche les données sous forme de table.
 

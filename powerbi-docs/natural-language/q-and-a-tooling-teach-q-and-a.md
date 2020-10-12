@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/21/2020
 ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 8f0d4c970de1724f47a016cbe063f1cc3df20178
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b2eff10484a7e05a9e51dfc09d44598de034ee88
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239920"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635237"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Enseigner à Questions et réponses dans Power BI à comprendre les questions et les termes
 
@@ -61,7 +61,7 @@ Grâce aux connaissances de Microsoft Office, Questions et réponses détecte au
 
 Vous remplissez la zone avec le terme provenant de vos données.
 
-![Enseigner à Questions et réponses - Invite à taper un synonyme](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
+![Capture d’écran montrant une partie de la zone Questions et réponses avec le chiffre d’affaires et l’invite référée par le chiffre d’affaires à côté d’une zone de texte.](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Si vous fournissez autre chose qu’un champ du modèle de données, vous risquez d’obtenir des résultats indésirables.
 
@@ -73,7 +73,7 @@ Parfois, il se peut que vous souhaitiez définir des termes qui agissent comme u
 
 Vous remplissez la zone avec la condition.
 
-![Enseigner à Questions et réponses - Invite à taper un synonyme](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
+![Capture d’écran montrant une partie de la zone Questions et réponses avec les mots Éditeurs exceptionnels et l’invite « Les éditeurs qui ont » à côté d’une zone de texte et où les mots sont impressionnants.](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Voici quelques exemples de conditions que vous pouvez définir :
 

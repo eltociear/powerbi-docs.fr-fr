@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2245861e37a67e023efde1e6fc7c68a551f2944
-ms.sourcegitcommit: 2cb249fc855e369eed1518924fbf026d5ee07eb1
+ms.openlocfilehash: e2ad8867117977cb7f53fbd295a2f560d65b0d76
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814011"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600530"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -113,7 +113,7 @@ Pour plus d’informations, consultez [Trucs et astuces pour les éléments visu
 ### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS Maps
 ![carte ArcGIS](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](power-bi-visualization-arcgis.md).
+Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](power-bi-visualizations-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Cartes : Cartes choroplèthes (thématiques)
 ![Carte choroplèthe](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,7 +133,7 @@ Pour plus d’informations, consultez [Cartes de formes dans Power BI](desktop-
 
 
 ### <a name="matrix"></a>Matrice
-![matrice](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![Capture d’écran du visuel de matrice](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
 >[!TIP]
 >Une table prend en charge deux dimensions, mais une matrice facilite l’affichage des données de manière claire entre plusieurs dimensions : elle prend en charge une disposition échelonnée. La matrice agrège automatiquement les données automatiquement et permet une exploration au niveau du détail. 
@@ -232,7 +232,7 @@ Lorsque vous tapez des requêtes en langage naturel avec le service Questions et
 
 ***sales by state as a treemap*** (ventes par région sous forme de compartimentage
 
-Si votre tableau de bord n’a pas de zone Questions et réponses, ce dernier a peut-être été désactivé par l’administrateur de votre locataire. 
+Si votre tableau de bord n’a pas de zone Questions et réponses, ce dernier a peut-être été désactivé par votre administrateur Power BI. 
 
 ![Zone de question Questions et réponses montrant le type de visualisation spécifié](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 

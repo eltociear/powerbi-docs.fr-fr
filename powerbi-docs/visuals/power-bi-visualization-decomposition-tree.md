@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9d74733e6baad4f84d52e8bc8749fe0295eedb2e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b7aebef72952c75ed6ec406c6f3f9e888f047086
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239835"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632822"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI
 
@@ -53,7 +53,7 @@ Une fois que vous avez déposé votre métrique dans le champ, les mises à jour
 
 L'étape suivante consiste à introduire une ou plusieurs dimensions à explorer. Ajoutez ces champs au compartiment **Expliquer par**. Notez qu'un signe plus apparaît en regard de votre nœud racine. Ce signe plus vous permet de choisir la zone à explorer (vous pouvez explorer les champs dans l'ordre de votre choix).
 
-![Menu de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-menu.png)
+![Capture d’écran montrant l’icône plus sélectionnée qui affiche les options de la liste Expliquer par.](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Si vous sélectionnez **Forecast bias** (Biais de prévision), l'arborescence se développe et décompose la métrique selon les valeurs de la colonne. Ce processus peut être répété en choisissant un autre nœud à explorer.
 
@@ -61,7 +61,7 @@ Si vous sélectionnez **Forecast bias** (Biais de prévision), l'arborescence se
 
 La sélection d'un nœud dans le dernier niveau entraîne un filtrage croisé des données. La sélection d'un nœud dans un niveau précédent modifie le chemin d'accès.
 
-![Menu de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
+![L’animation montre comment sélectionner un nœud à partir d’un niveau antérieur et comment il modifie l’affichage pour afficher ses nœuds enfants.](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
 
 L'interaction avec d'autres visuels entraîne un filtrage croisé de l'arborescence hiérarchique. L'ordre des nœuds à l'intérieur des niveaux pourrait changer en conséquence.
 Dans l'exemple ci-dessous, nous avons appliqué un filtrage croisé à l'arborescence par Ubisoft. Les mises à jour du chemin et les ventes de Xbox passent de la première à la deuxième place, devancées par la PlayStation. 
@@ -70,7 +70,7 @@ Si l'on applique ensuite un filtrage croisé à l’arborescence à l’aide du 
 
 Malgré la disparition du chemin, les niveaux existants (en l'occurrence Genre de jeu) sont conservés dans l'arborescence. En sélectionnant le nœud Nintendo, l'arborescence développe automatiquement le niveau Genre de jeu.
 
-![Menu de l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
+![L’animation montre la sélection de filtres croisés qui affectent les nœuds affichés.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
 
 ## <a name="ai-splits"></a>Découpages IA
@@ -132,11 +132,11 @@ Si vous sélectionnez un autre nœud dans l'arborescence, les découpages IA ef
 
 Les niveaux d'IA sont également recalculés lorsque vous filtrez l'arborescence hiérarchique selon un autre visuel. Dans l'exemple ci-dessous, nous pouvons constater que notre pourcentage de produits en rupture de stock est le plus élevé pour l'usine 0477.
 
-![Filtrage croisé de l'arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
+![Capture d’écran montrant l’analyse de la cause principale avec tous les mois sélectionnés.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
 
 Mais si nous sélectionnons **April** (avril) dans l’histogramme, la valeur la plus élevée devient **Product Type is Advanced Surgical** (Type de produit est chirurgie avancée). Dans ce cas, ce ne sont pas seulement les nœuds qui ont été réorganisés, mais une colonne complètement différente a été choisie. 
 
-![Filtrage croisé de l'arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
+![Capture d’écran montrant l’analyse de la cause principale avec uniquement le mois d’avril sélectionné.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
 
 Si nous voulons que les niveaux d'IA se comportent comme des niveaux non-AI, sélectionnez l'ampoule pour rétablir le comportement par défaut. 
 

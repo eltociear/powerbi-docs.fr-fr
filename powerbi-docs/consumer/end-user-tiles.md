@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7d1ecb8f15cc6d10bc2e04d43796874efb161a83
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 6d35d19a1d47adc6a918f01a71c2009d71692fbd
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537915"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633903"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 
@@ -41,15 +41,15 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
 
     - vignette créée à l’aide de Questions et réponses
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-1.png)
+        ![Capture d’écran montrant le menu avec six options.](./media/end-user-tiles/power-bi-options-1.png)
 
     - vignette créée à partir d’un classeur
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-2.png)
+        ![Capture d’écran montrant le menu avec trois options.](./media/end-user-tiles/power-bi-options-2.png)
 
     - vignette créée à partir d’un rapport
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-3.png)
+        ![Capture d’écran montrant le menu avec cinq options.](./media/end-user-tiles/power-bi-options-3.png)
    
     Vous pouvez ici :
    

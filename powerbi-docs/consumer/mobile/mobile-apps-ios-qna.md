@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 60f49775db1f461ff5105ada63920686e5ab5cbf
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 323ea88f3a8843dd663985abac5552be1de71584
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264920"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634409"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -52,7 +52,7 @@ Une fois que vous avez rempli les prérequis, vous êtes prêt à essayer l’an
 4. Appuyez sur **by** (par) dans les mots clés, sur **item** (article) dans la liste de suggestions > **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Ventes par élément](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-sale-by-item.png)
-5. Appuyez sur **as** (en tant que) dans les mots clés, sur l’icône représentant un histogramme ![icône d’histogramme](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png), puis sur **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+5. Appuyez sur **as** (en tant que) dans les mots clés, sur l’icône représentant un histogramme :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-column-chart-icon.png" border="false":::puis sur **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 6. Appuyez de façon prolongée sur le graphique qui s’ouvre, puis cliquez sur **Développer**.
 
     ![Capture d’écran d’un histogramme, présentant une flèche à développer.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-tap-expand-feedback.png)
@@ -68,7 +68,7 @@ Une fois que vous avez rempli les prérequis, vous êtes prêt à essayer l’an
 10. Choisissez **by** (par) dans les mots clés, appuyez sur **time** (période) dans la liste de suggestions en haut > **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![Capture d’écran d’un graphique, présentant les meilleures ventes par montant moyen par unité par période.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
-11. Tapez **as** (en tant que), choisissez l’icône de graphique en courbes ![icône de graphique en courbes](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) dans la liste de suggestions > **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+11. Tapez **as** (en tant que), choisissez l’icône de graphique en courbes :::image type="icon" source="./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png" border="false"::: dans la liste de suggestions > **Envoyer** ![icône Envoyer](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Capture d’écran d’un histogramme et d’un graphique en courbes, présentant une flèche entre l’histogramme et le graphique en courbes.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)
 

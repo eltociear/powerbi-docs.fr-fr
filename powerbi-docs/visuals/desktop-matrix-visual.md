@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: beb744e1293db077111df8212c0861154aa86242
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: e96431aaa17b1ae79d940d768a7e160e402c0af3
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354705"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635858"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -207,7 +207,7 @@ Votre matrice ou votre table peuvent avoir du contenu que vous souhaitez utilise
 
 Si vous avez une colonne ou une mesure qui contient des URL de site web, vous pouvez utiliser la mise en forme conditionnelle pour appliquer ces URL à des champs sous forme de liens actifs. Vous trouverez cette option sous la carte **Mise en forme conditionnelle** dans le volet Mise en forme.
 
-![Carte de filtres montrant les lignes choisies](media/desktop-matrix-visual/power-bi-web-url.png)
+![Capture d’écran montrant l’icône de mise en forme associée à l’URL web.](media/desktop-matrix-visual/power-bi-web-url.png)
 
 Activez **URL Web**, puis sélectionnez un champ à utiliser comme URL de la colonne. Une fois appliquées, les valeurs de ce champ (colonne) deviennent des liens actifs. Placez le curseur dessus pour voir le lien, puis sélectionnez-le pour accéder à cette page. 
 

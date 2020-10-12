@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 332c1c1b6c3e4888f0177bab284e6b4902987be2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0da34397c1b707eeece6fdf127c2c4e96f5ab6a5
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219778"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635674"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
 
@@ -75,7 +75,7 @@ Les étiquettes de l’axe X sont affichées sous les colonnes du graphique. En
 
 3. Déplacez le curseur **Axe X** sur **Activé**.
 
-    ![Capture d’écran du curseur Activé.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
+    ![Capture d’écran du curseur pour l’axe X.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
 
     Vous souhaiterez peut-être définir l’axe X sur **Désactivé** pour différentes raisons, par exemple si la visualisation est suffisamment explicite sans étiquette ou si vous avez besoin de libérer de l’espace dans une page de rapport encombrée afin d’afficher plus de données.
 
@@ -139,7 +139,7 @@ Les étiquettes de l’axe Y sont affichées à gauche par défaut. En l’éta
 
 1. Déplacez le curseur **Axe Y** sur **Activé**.  
 
-    ![Capture d’écran du curseur Activé.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
+    ![Capture d’écran du curseur pour l’axe Y.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
 
     Vous souhaiterez peut-être désactiver l’axe Y afin de libérer de l’espace pour afficher des données supplémentaires.
 

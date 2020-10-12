@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/5/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e0aa8c5845c7f87f15e9b152bcaa20094e83ade
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 148fe66039cb273d4ee20521762d5720252c7492
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237792"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635720"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 
@@ -96,7 +96,7 @@ Approfondissez un peu plus pour voir ce qui contribue le plus aux changements mo
 
 1.  Sélectionnez **Store** (Magasin) > **Territory**  (Territoire), ce qui ajoute **Territory** au compartiment **Breakdown** (Répartition).
 
-    ![Affiche Magasin dans le compartiment Répartition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Capture d’écran montrant l’ajout d’un territoire à la zone de répartition.](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
     Power BI utilise la valeur figurant dans **Répartition** pour ajouter des données supplémentaires à la visualisation. Il ajoute les cinq premiers contributeurs aux augmentations ou diminutions pour chaque mois fiscal. Cela signifie que, par exemple, Février a désormais six points de données au lieu d’un seul.  
 

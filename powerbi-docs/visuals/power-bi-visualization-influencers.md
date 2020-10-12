@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58d595ff5e7d3947117aa9663e761a6f98f10c7f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: a8a38790b606fa5f700f2b9389ebad5338919d28
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861311"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635283"
 ---
 # <a name="create-key-influencers-visualizations"></a>Créer des visualisations des influenceurs clés
 
@@ -231,13 +231,13 @@ Enfin, dans le cas des mesures, nous examinons l’année moyenne de la construc
 -   Le nuage de points dans le volet droit indique le prix moyen d’une maison pour chaque valeur distincte dans la table.
 -   La valeur dans la bulle indique dans quelle mesure le prix moyen d’une maison augmente (ici, de 1 350 $) quand l’année moyenne augmente de son écart type (dans ce cas, 30 ans).
 
-![Influenceurs de mesure d’une cible numérique](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+![Capture d’écran montrant les influenceurs clés pour les prix des maisons avec les influenceurs sur la gauche et le nuage de points à droite.](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
 
 ## <a name="interpret-the-results-top-segments"></a>Interprétez les résultats : Top des segments
 
 Le top des segments pour les cibles numériques montre les groupes pour lesquels le prix de la maison est en moyenne supérieur à celui du jeu de données d’ensemble. Par exemple, nous pouvons voir ci-dessous que le **Segment 1** se compose de maisons où **GarageCars** (capacité du garage en nombre de voitures) est supérieur à 2 et où **RoofStyle** est Hip. Les maisons présentant ces caractéristiques ont un prix moyen de 355 000 $, tandis que la moyenne globale dans les données est de 180 000 $.
 
-![Influenceurs de mesure pour des cibles numériques](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+![Capture d’écran montrant les principaux segments pour les tarifs des maisons.](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analyser une métrique qui est une mesure ou une colonne synthétisée
 
@@ -245,19 +245,19 @@ Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est dé
 
 Dans le cas de colonnes non synthétisées, l’analyse est toujours effectuée au niveau de la table. Dans l’exemple du prix des maisons ci-dessus, nous avons analysé la métrique **House Price** (Prix de la maison) pour voir ce qui influence l’augmentation/diminution du prix d’une maison. L’analyse s’effectue automatiquement au niveau de la table. Notre table a un ID unique pour chaque maison, de sorte que l’analyse s’effectue au niveau de la maison.
 
-![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+![Capture d’écran montrant l’analyse au niveau de la table pour l’exemple de prix des maisons.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
 Pour les mesures et les colonnes synthétisées, nous ne savons pas immédiatement à quel niveau les analyser. Si **House Price** (Prix de la maison) était synthétisé sous forme de **Moyenne**, nous devrions déterminer à quel niveau nous voulons que le prix moyen d’une maison soit calculé. S’agit-il du prix moyen d’une maison au niveau du voisinage ? Ou peut-être au niveau régional ?
 
 Les mesures et les colonnes synthétisées sont automatiquement analysées au niveau des champs **Expliquer par** utilisés. Imaginez que nous avons trois champs dans **Expliquer par** qui nous intéressent : **Kitchen Quality** (Qualité de la cuisine), **Building Type** (Type de construction) et **Air Conditioning** (Air conditionné). **Average House Price** (Prix moyen d’une maison) est calculé pour chaque combinaison unique de ces trois champs. Il est souvent utile de passer à une vue tabulaire pour voir à quoi ressemblent les données évaluées.
 
-![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+![Capture d’écran montrant les trois colonnes et le prix moyen des maisons.](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
 
 Cette analyse est une synthèse très globale et il est donc difficile pour le modèle de régression de trouver des modèles dans les données à partir desquels il peut apprendre. Nous devons exécuter l’analyse à un niveau plus détaillé pour obtenir de meilleurs résultats. Si nous voulions analyser le prix des maisons au niveau des maisons, nous devrions ajouter explicitement le champ **ID** à l’analyse. Néanmoins, nous ne voulons pas que l’ID des maisons soit considéré comme un influenceur. Il n’est pas très utile d’apprendre que quand l’ID de la maison augmente, le prix d’une maison augmente. C’est là où l’option du champ **Développer par** se révèle pratique. Vous pouvez utiliser **Développer par** pour ajouter des champs que vous voulez utiliser pour définir le niveau de l’analyse sans rechercher de nouveaux influenceurs.
 
 Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](#analyze-a-metric-that-is-numeric).
 
-![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+![Capture d’écran montrant la visualisation des prix des maisons sur la base des trois colonnes abordées dans cette section.](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
 Si vous voulez en savoir plus sur la façon dont vous pouvez analyser des mesures avec la visualisation des influenceurs clés, regardez le tutoriel suivant.
 

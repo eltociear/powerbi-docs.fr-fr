@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3154becb2f496c0bbb0f84d1c1e7316868251c36
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3340225ccd4c6457e25013b6c347769d848b104c
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226035"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374933"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Proposer du contenu dans la page d’accueil Power BI de collègues
 
@@ -24,7 +24,7 @@ Vous pouvez proposer des tableaux de bord, des rapports et des applications pour
 
 ## <a name="who-can-feature-content"></a>Personnes pouvant proposer du contenu
 
-C’est à votre administrateur de locataire Power BI d’accorder la capacité de proposer du contenu sur votre locataire. L’administrateur choisit également qui peut proposer du contenu. Consultez l’article sur le [portail d’administration](../admin/service-admin-portal.md#featured-content) pour plus d’informations.
+C’est à votre administrateur Power BI d’accorder la capacité de proposer du contenu sur votre locataire. L’administrateur choisit également qui peut proposer du contenu. Consultez l’article sur le [portail d’administration](../admin/service-admin-portal.md#featured-content) pour plus d’informations.
 
 Si vous êtes l’un des groupes sélectionnés dans votre organisation avec cette responsabilité, vous devez disposer d’une licence Power BI Pro. Pour proposer des tableaux de bord et des rapports, vous avez besoin du rôle Administrateur, Membre ou Contributeur dans l’espace de travail. Pour proposer l’application elle-même, vous devez avoir le rôle Administrateur ou Membre dans l’espace de travail. Consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces) pour plus d’informations.
 
@@ -38,13 +38,13 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
 1. Dans la liste **Tableaux de bord** ou **Rapports** pour un espace de travail, sélectionnez l’icône **Paramètres**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Icône Paramètres du rapport":::
+    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Contenu proposé Power BI dans la page d’accueil":::
 
 2. Dans le volet **Paramètres**, vérifiez ou modifiez le nom. Ajoutez une **description** et chargez un **instantané**, si vous le souhaitez. Ils sont utiles car ils aident vos utilisateurs à trouver votre contenu.
 
 3. Sélectionnez **Proposé**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Paramètres du contenu proposé":::
+    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Contenu proposé Power BI dans la page d’accueil":::
 
 4. Sélectionnez **Enregistrer**.
 

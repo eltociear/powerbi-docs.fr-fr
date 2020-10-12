@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b273b5ea265815f26e58010356790186163c4aa8
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: e896b3aeabc6a22c98563d0836984cd2d8a644de
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354613"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633834"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
 
@@ -130,15 +130,15 @@ Quand le curseur **Divergent** est activé, vous pouvez définir séparément le
 ## <a name="add-color-to-table-rows"></a>Ajouter de la couleur aux lignes des tableaux
 Les tableaux et les matrices offrent de nombreuses options de mise en forme des couleurs. 
 
-![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+![Capture d’écran montrant une table avec des lignes blanches et grises en alternance.](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
 
 L’une des méthodes les plus rapides pour appliquer une couleur à un tableau ou une matrice consiste à ouvrir l’onglet Mise en forme et à sélectionner **Style**.  Dans l’image ci-dessous, nous avons sélectionné **Bold header flashy rows** (Lignes fluo d’en-tête en gras).
 
-![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+![Capture d’écran montrant l’option de style Lignes voyantes avec en-tête en gras qui rend la ligne d’en-tête noire et les autres lignes vert clair et sombre.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
 
 Testez d’autres options de mise en forme des couleurs. Dans cette image, nous avons modifié la couleur d’arrière-plan sous **En-têtes de colonne**, ainsi que la **Couleur d’arrière-plan** et la **Couleur d’arrière-plan alternative** des **Valeurs** (lignes).
 
-![Tableau par défaut](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
+![Capture d’écran montrant les sélecteurs de valeur pour la couleur d’arrière-plan et la couleur d’arrière-plan alternative.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Comment annuler dans Power BI
 Comme de nombreux autres services et logiciels Microsoft, Power BI permet d’annuler facilement la dernière commande. Par exemple, supposons que vous ayez modifié la couleur d’un point de données ou d’une série de points de données, et que vous n’aimiez pas la couleur une fois que vous la voyez dans la visualisation. Vous voulez rétablir la couleur précédente, mais vous ne vous souvenez pas exactement de quelle couleur il s’agissait.
@@ -149,7 +149,7 @@ Pour abandonner toutes les modifications apportées à une carte Mise en forme, 
 
 ![Carte Mise en forme indiquant Rétablir les valeurs par défaut en bas](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
 
-## <a name="feedback"></a>Commentaires
+## <a name="give-us-your-feedback"></a>Faites-nous part de vos commentaires
 Vous avez une astuce que vous aimeriez partager ? Envoyez-la nous et nous verrons si nous pouvons l’inclure dans notre rubrique.
 
 ## <a name="next-steps"></a>Étapes suivantes

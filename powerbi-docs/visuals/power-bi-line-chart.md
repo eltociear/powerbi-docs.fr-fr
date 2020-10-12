@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 59cede1cae716661be8d3796330bde7da44170eb
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274187"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634593"
 ---
 # <a name="line-charts-in-power-bi"></a>Graphiques en courbes dans Power BI
 
@@ -67,11 +67,11 @@ Au lieu d’afficher le nombre total d’unités pour toutes les régions sur un
 ### <a name="use-two-y-axes"></a>Utiliser deux axes Y
 Que se passe-t-il si vous souhaitez afficher le total des ventes et le nombre total d’unités sur le même graphique ? Comme les valeurs des ventes sont beaucoup plus élevées que celle du nombre d’unités, le graphique en courbes est inutilisable. En fait, la ligne rouge du nombre total d’unités semble être égale à zéro.
 
-   ![valeurs très divergentes](media/power-bi-line-charts/power-bi-diverging.png)
+   ![Capture d’écran montrant comment l’utilisation d’un axe y unique affiche le total d’unités comme essentiellement plat et une comparaison inutile avec les chiffres de vente.](media/power-bi-line-charts/power-bi-diverging.png)
 
 Pour afficher les valeurs très divergentes sur un même graphique, utilisez un graphique combiné. Pour en savoir plus sur les graphiques combinés, lisez [Graphiques combinés dans Power BI](power-bi-visualization-combo-chart.md). Dans notre exemple ci-dessous, nous pouvons afficher les ventes totales et le nombre total d’unités sur un même graphique en ajoutant un second axe Y. 
 
-   ![valeurs très divergentes](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![Capture d’écran montrant les valeurs de ventes sous forme de graphique à barres avec l’axe des y à gauche et le nombre total d’unités sous la forme d’une ligne avec l’axe des y à droite.](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
 Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../create-reports/power-bi-report-add-filter.md).

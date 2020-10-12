@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7f36ada69f1ee98c7392d05eb169947c600774e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0e5687f9bb3f27af7bdfee28cd9753fbda4fa44f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221636"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635766"
 ---
 # <a name="create-ribbon-charts-in-power-bi"></a>Création de graphes en ruban dans Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "85221636"
 
 Vous pouvez créer des graphes en ruban pour visualiser les données et détecter rapidement la catégorie de données qui occupe le rang le plus élevé (la plus grande valeur). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps. 
 
-![graphique de ruban](media/desktop-ribbon-charts/ribbon-charts-01.png)
+![Capture d’écran montrant un graphique de ruban contenant les données audio, les téléphones cellulaires et les autres catégories affichées par année et trimestre.](media/desktop-ribbon-charts/ribbon-charts-01.png)
 
 > [!NOTE]
 > Pour que vous puissiez partager votre rapport avec un collègue Power BI, il faut que vous disposiez tous deux de licences individuelles Power BI Pro ou que le rapport soit enregistré dans une capacité Premium. Consultez [partage des rapports](../collaborate-share/service-share-reports.md).
@@ -57,12 +57,12 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
 3. Le graphique de ruban indique le rang pour chaque mois. Notez l’évolution du rang dans le temps. Par exemple, la catégorie Home passe du deuxième au cinquième rang entre février et mars.
 
-    ![graphique de ruban](media/desktop-ribbon-charts/power-bi-ribbon.png)
+    ![Capture d’écran montrant le graphique de ruban que vous avez créé avec certaines données appelées.](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
 ## <a name="format-a-ribbon-chart"></a>Mettre en forme un graphique de ruban
 Lorsque vous créez un graphique de ruban, vous avez accès aux options de mise en forme disponibles dans la section **Format** du volet **visualisations**. Les options de mise en forme des graphiques de ruban sont similaires à celles des histogrammes empilés, mais comprennent des options supplémentaires spécifiques des rubans.
 
-![modèle de ruban dans le volet de visualisation](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
+![Capture d’écran montrant l’icône de format sélectionnée et la zone Rubans développée.](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
 
 Les options suivantes de mise en forme des graphiques de ruban vous permettent d’apporter des ajustements :
 
@@ -77,7 +77,7 @@ Comme le graphique de ruban n’a pas d’étiquettes sur l’axe Y, vous pouvez
 
 Définissez les options de mise en forme de vos étiquettes de données. Dans cet exemple, nous avons défini la couleur du texte sur blanc et les unités d’affichage sur les milliers.
 
-![modèle de ruban dans le volet de visualisation](media/desktop-ribbon-charts/power-bi-data-labels.png)
+![Capture d’écran montrant le graphique de ruban avec sa mise en forme finale.](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

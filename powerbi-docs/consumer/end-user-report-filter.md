@@ -1,21 +1,21 @@
 ---
 title: Découvrir le volet Filtres de rapport
-description: Guide pratique pour ajouter un filtre à un rapport dans le service Power BI pour les consommateurs
+description: Guide pratique pour ajouter un filtre à un rapport dans le service Power BI pour les utilisateurs professionnels
 author: mihart
 ms.reviewer: mihart
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a6b9dc88c63e430d5f5f24136d34f294d9648b4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: fb283858d9e6fe016e382f4c662de6b66bce0258
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536489"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600682"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 
@@ -25,17 +25,21 @@ ms.locfileid: "87536489"
 
 Cet article présente le volet **Filtres** de rapport du service Power BI. Utilisez les filtres pour découvrir de nouveaux insights dans vos données.
 
-Il existe de nombreuses façons de filtrer les données dans Power BI. Pour plus d’informations sur les filtres, consultez [Filtres et mise en évidence dans les rapports Power BI](../create-reports/power-bi-reports-filters-and-highlighting.md).
+Il existe de nombreuses façons de filtrer les données dans Power BI. Cet article explique comment utiliser le volet **Filtres**.  Vous pouvez également filtrer en sélectionnant des points de données sur un visuel de rapport pour filtrer les autres visuels de la page. On appelle cela le **filtrage croisé** et la **sélection croisée**. Pour plus d’informations sur le filtrage croisé et la sélection croisée, consultez [Filtrage croisé et sélection croisée dans les rapports Power BI](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
-![Capture d’écran d’un rapport dans le navigateur avec une flèche pointant vers l’option Filtres.](media/end-user-report-filter/power-bi-report.png)
+![Capture d’écran d’un rapport dans le navigateur avec une flèche pointant vers l’option Filtres.](media/end-user-report-filter/power-bi-reports.png)
 
 ## <a name="working-with-the-report-filters-pane"></a>Utiliser le volet Filtres des rapports
 
 Quand un collègue partage un rapport avec vous, recherchez le volet **Filtres**. Il est parfois réduit le long du bord droit du rapport. Sélectionnez-le pour le développer.
 
-![Capture d’écran du rapport avec le volet Filtres développé.](media/end-user-report-filter/power-bi-expand-filter-pane.png)
+![Capture d’écran du rapport avec le volet Filtres développé.](media/end-user-report-filter/power-bi-expand-filters-pane.png)
 
-Le volet **Filtres** contient les filtres qui ont été ajoutés au rapport par son *concepteur*. Les *consommateurs* comme vous peuvent interagir avec les filtres existants et enregistrer les changements, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport. Par exemple, dans la capture d’écran ci-dessus, le concepteur a ajouté trois filtres au niveau de la page : **Le segment est Tout**, **l’année est 2014** et **la région est Central**. Vous pouvez interagir avec ces filtres et les changer, mais vous ne pouvez pas ajouter de quatrième filtre au niveau de la page.
+Le volet **Filtres** contient les filtres qui ont été ajoutés au rapport par son *concepteur*. Les *utilisateurs professionnels* comme vous peuvent interagir avec les filtres existants et enregistrer les changements, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport. Par exemple, dans la capture d’écran ci-dessus, le concepteur a ajouté trois filtres au niveau de la page : **Le segment est Tout**, **l’année est 2014** et **la région est Central**. Vous pouvez interagir avec ces filtres et les changer, mais vous ne pouvez pas ajouter de quatrième filtre au niveau de la page.
+
+Certains des filtres sont grisés, et d’autres non. Si un filtre est grisé, cela signifie qu’un filtre a été appliqué et que certaines données sont exclues. Par exemple, le filtre **Région** est grisé et, lorsque vous développez la carte, vous constatez que seul **Central** est sélectionné dans la liste déroulante. Étant donné que la région se trouve sous l’en-tête **Filtres dans cette page**, tous les visuels de cette page n’affichent (excluent) pas de données pour les régions **Ouest** et **Est** .
+
+![Capture d’écran du filtre Région développé et montrant Central avec une coche.](media/end-user-report-filter/power-bi-filter-region.png)
 
 Dans le service Power BI, les rapports conservent tous les changements que vous apportez dans le volet **Filtres**. Le service transmet ces changements à la version mobile du rapport. 
 
@@ -54,19 +58,19 @@ Si vous avez des changements à enregistrer, vous pouvez également créer un si
 
 Le volet **Filtres** s’affiche et gère plusieurs types de filtres de rapport : rapport, page de rapport et élément visuel.
 
-Dans cet exemple, nous avons sélectionné un élément visuel comprenant trois filtres. La page de rapport comporte également des filtres listés sous le titre **Filtres dans cette page**. Par ailleurs, l’intégralité du rapport a un filtre **Date**.
+Dans cet exemple, nous avons sélectionné un élément visuel comprenant trois filtres : **Fabricant**, **Mois** et **Nombre total d’unités**. La page de rapport comporte également des filtres listés sous le titre **Filtres dans cette page**. Et le rapport entier a un filtre pour **Date**, indiqué sous **Filtres dans toutes les pages**.
 
-![Capture d’écran d’un rapport avec une visualisation et ses filtres associés mis en évidence.](media/end-user-report-filter/power-bi-filters-pane.png)
+![Capture d’écran d’un rapport avec une visualisation et ses filtres associés mis en évidence.](media/end-user-report-filter/power-bi-filter-pane.png)
 
 **(Tout)** apparaît en regard de certains filtres. **(Tout)** signifie que toutes les valeurs sont incluses dans le filtre. Dans la capture d’écran ci-dessous, **Segment(Tout)** indique que cette page de rapport comporte des données sur tous les segments de produit. 
 
-Toute personne qui consulte ce rapport peut interagir avec ces filtres comme suit :
+Toute personne disposant des autorisations pour afficher ce rapport peut interagir avec ces filtres.
 
 ### <a name="view-only-those-filters-applied-to-a-visual"></a>Afficher uniquement les filtres appliqués à un visuel
 
-Pour examiner plus en détail les filtres appliqués à un visuel spécifique, pointez sur le visuel pour afficher l’icône de filtre ![Capture d’écran de l’icône de filtre](media/end-user-report-filter/power-bi-filter-icon.png). Sélectionnez cette icône de filtre pour afficher une fenêtre contextuelle avec tous les filtres, segments, etc. qui affectent ce visuel. Les filtres de la fenêtre contextuelle incluent les mêmes filtres que ceux affichés dans le volet **Filtres**, plus un filtrage supplémentaire affectant l’élément visuel sélectionné.
+Pour examiner plus en détail les filtres affectant un visuel spécifique, pointez sur le visuel pour afficher l’icône de filtre ![Capture d’écran de l’icône de filtre](media/end-user-report-filter/power-bi-filter-icon.png). Sélectionnez cette icône de filtre pour afficher une fenêtre contextuelle avec tous les filtres, segments, etc. qui affectent ce visuel. Les filtres de la fenêtre contextuelle incluent les mêmes filtres que ceux affichés dans le volet **Filtres**, plus tout filtrage supplémentaire affectant l’élément visuel sélectionné.
 
-![Capture d’écran d’une liste de filtres avec des flèches pointant vers l’emplacement de ces filtres dans le volet Filtres.](media/end-user-report-filter/power-bi-hover-filters.png)
+![Capture d’écran d’une liste de filtres avec des flèches pointant vers l’emplacement de ces filtres dans le volet Filtres.](media/end-user-report-filter/power-bi-filters-hover.png)
 
 Voici les types de filtres que cet affichage peut contenir :
 
@@ -82,11 +86,11 @@ Voici les types de filtres que cet affichage peut contenir :
 - Filtres transmis via une URL
 
 Dans cet exemple :
-1. **Inclus** nous indique que l’élément visuel a été filtré de façon croisée. Cela signifie que les États de l’Utah, du Colorado et du Texas ont été sélectionnés sur l’un des autres éléments visuels de cette page de rapport. Dans ce cas, il s’agit de la carte. La sélection de ces trois États a éliminé les données pour tous les autres États de l’affichage sur le graphique à barres sélectionné.  
+1. **Inclus** nous indique que l’élément visuel a été filtré de façon croisée. Cela signifie que les États de l’Alabama et du Texas ont été sélectionnés sur l’un des autres éléments visuels de cette page de rapport. Dans ce cas, il s’agit du visuel de carte. La sélection de ces deux États a éliminé les données pour tous les autres États de l’affichage sur le graphique à barres sélectionné.  
 
-1. **Date** est un filtre appliqué à toutes les pages de ce rapport, et
+1. **Date** est un filtre appliqué à toutes les pages de ce rapport.
 
-1. les filtres **La région est Centrale** et **l’année est 2014** sont des filtres appliqués à cette page de rapport, et
+1. Les filtres **La région est Centrale** et **l’année est 2014** sont des filtres appliqués à cette page de rapport.
 
 4. **Le fabricant est VanArsdel, Natura, Aliqui ou Pirum** est un filtre appliqué à cet élément visuel.
 
@@ -95,19 +99,19 @@ Dans cet exemple :
 
 Parfois, un filtre peut avoir une longue liste de valeurs. Utilisez la zone de recherche pour rechercher et sélectionner la valeur souhaitée.
 
-![Capture d’écran montrant comment effectuer une recherche dans un filtre.](media/end-user-report-filter/power-bi-search.png)
+![Capture d’écran montrant comment effectuer une recherche dans un filtre.](media/end-user-report-filter/power-bi-search-filter.png)
 
 ### <a name="display-filter-details"></a>Afficher les détails d’un filtre
 
-Pour comprendre un filtre, examinez les valeurs disponibles et les décomptes.  Pour afficher les détails du filtre, pointez sur la flèche en regard du filtre et sélectionnez-la.
+Pour comprendre un filtre, développez-le et examinez les valeurs disponibles et les décomptes.  Pour développer le filtre, sélectionnez la flèche en regard de son nom.
   
-![Capture d’écran d’un filtre qui montre la région West sélectionnée.](media/end-user-report-filter/power-bi-filter-expand.png)
+![Capture d’écran d’un filtre qui montre la région West sélectionnée.](media/end-user-report-filter/power-bi-filters-expand.png)
 
 ### <a name="change-filter-selections"></a>Modifier les sélections d’un filtre
 
 Une façon de rechercher des insights sur les données consiste à interagir avec les filtres. Vous pouvez modifier les sélections de filtre à l’aide de la flèche déroulante en regard du nom d’un champ.  En fonction du filtre et du type de données filtrées par Power BI, vos options vont de la sélection simple dans une liste à l’identification de plages de dates ou de chiffres. Dans le filtre avancé ci-dessous, nous avons modifié le filtre **Total Units YTD** dans le treemap pour qu’il soit compris entre 2 000 et 3 000. Notez que ce changement supprime Pirum du treemap.
   
-![Capture d’écran d’un rapport et de ses filtres avec élément visuel treemap sélectionné.](media/end-user-report-filter/power-bi-treemap-filters.png)
+![Capture d’écran d’un rapport et de ses filtres avec élément visuel treemap sélectionné.](media/end-user-report-filter/power-bi-treemap-filter.png)
 
 > [!TIP]
 > Pour sélectionner plusieurs valeurs de filtre à la fois, maintenez la touche Ctrl enfoncée. La plupart des filtres prennent en charge la sélection multiple.
@@ -118,11 +122,11 @@ Si vous souhaitez annuler toutes les modifications apportées aux filtres, séle
 
 ![Capture d’écran de l’option Rétablir les valeurs par défaut.](media/end-user-report-filter/power-bi-reset-icon.png)
 
-### <a name="clear-a-filter"></a>Supprimer un filtre
+### <a name="clear-a-filter"></a>Effacer un filtre
 
 Pour réinitialiser un filtre sur (Tout), effacez-le en sélectionnant l’icône de gomme en regard du nom du filtre.
 
-![Capture d’écran de l’icône de gomme.](media/end-user-report-filter/power-bi-eraser.png)
+![Capture d’écran de l’icône de gomme.](media/end-user-report-filter/power-bi-erase.png)
   
 <!--  too much detail for consumers
 

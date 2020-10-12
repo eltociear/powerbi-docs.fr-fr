@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 05/22/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: a888d9010a418aa51534b94350cc3f6d82385772
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 74f6d14ed96e7e33929aafe315965c04b2f78863
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860966"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633972"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Service Power BI pour les consommateurs
 
@@ -24,17 +24,17 @@ Vous vivez dans une culture de la donnée, où les décisions métier sont basé
  
 Ils vous envoient tous les types de rapports, de feuilles de calcul, d’e-mails avec des graphiques et même de documents imprimés. À mesure que les données s’accumulent, il devient de plus en plus difficile de trouver rapidement ce dont vous avez besoin, et vous vous inquiétez de ne pas utiliser les informations les plus récentes.  
  
-![tableau de bord Power BI](media/end-user-consumer/power-bi-consumer-pipes.png)
+![Le diagramme montre un consommateur recevant des données dans des formats étiquetés Rapports, Graphiques, E-mails et Tableurs.](media/end-user-consumer/power-bi-consumer-pipes.png)
 
 ## <a name="the-power-bi-service-for-consumers"></a>Le service Power BI pour les *consommateurs*
 
 Power BI rend votre travail plus facile tout en lui donnant plus d’impact. Toutes les données sont représentées sous forme de graphiques, qui vous permettent de visualiser vos données. Au lieu de longues listes ou de tableaux de nombres et de mots, vos insights sur les données sont réellement ***beaux*** : ce sont des visuels colorés et convaincants qui représentent les insights de vos données. 
 
-![tableau de bord Power BI](media/end-user-consumer/power-bi-consumer-examples.png)
+![Capture d’écran montrant un rapport Power BI avec différents genres de graphiques.](media/end-user-consumer/power-bi-consumer-examples.png)
  
 Il vous suffit d’ouvrir le service Power BI dans un navigateur ou sur un appareil mobile. Vos collègues et vous-même travaillez à partir des mêmes tableaux de bord et rapports approuvés, qui sont mis à jour et actualisés automatiquement : vous travaillez donc toujours avec le contenu le plus récent.   
 
-![tableau de bord Power BI](media/end-user-consumer/power-bi-funnel.png)
+![Le diagramme montre les données dans plusieurs formats qui fusionnent dans Power BI et s’affichent sur un écran d’ordinateur et sur un appareil de poche.](media/end-user-consumer/power-bi-funnel.png)
 
 Comme le contenu n’est pas statique, vous pouvez l’explorer, à la recherche de tendances, d’insights et d’autres données décisionnelles. Segmentez le contenu et posez même des questions avec vos propres mots. Vous pouvez aussi ne rien faire et laisser vos données découvrir des insights qui vous intéressent, et vous envoyer des alertes quand des données sont modifiées et des rapports par e-mail selon une planification que vous définissez. Toutes vos données, à tout moment, dans le cloud ou localement, depuis n’importe quel appareil. C’est juste le commencement de tout ce que Power BI peut faire. 
 
@@ -56,7 +56,7 @@ Vous ne pouvez pas endommager vos données.  Power BI est l’endroit idéal pou
  
 Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Mais ces modifications affectent seulement votre vue du contenu. Pour revenir à la vue d’origine par défaut, il vous suffit de cliquer sur un bouton.  
 
-![tableau de bord Power BI](media/end-user-consumer/power-bi-reset.png)
+![Capture d’écran montrant le bouton Rétablir les valeurs par défaut.](media/end-user-consumer/power-bi-reset.png)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

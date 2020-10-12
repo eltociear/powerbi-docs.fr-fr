@@ -10,12 +10,12 @@ ms.date: 05/20/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: ebc402bf317eb99294137260fcd0cd1e9178d9eb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 5e1da5cc99cbc12b9cbcc41544569f8f0ede9590
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237310"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634018"
 ---
 # <a name="collaborate-in-workspaces"></a>Collaborer dans des espaces de travail
 
@@ -25,7 +25,7 @@ ms.locfileid: "85237310"
 
  Vous pouvez voir vos espaces de travail depuis **Accueil** dans Power BI ou en sélectionnant **Espace de travail** ou **Mon espace de travail** dans le volet de navigation de gauche.
 
- ![Volet de navigation montrant deux types d’espaces de travail](media/end-user-workspaces/power-bi-home.png)
+ ![Capture d’écran avec le volet de navigation montrant deux types d’espaces de travail.](media/end-user-workspaces/power-bi-home.png)
 
 ## <a name="types-of-workspaces"></a>Types des espaces de travail
 **Mon espace de travail** stocke tout le contenu qui vous appartient et que vous créez. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. Pour de nombreux *consommateurs* Power BI, **Mon espace de travail** reste vide car votre travail n’implique pas la création de contenu. Les *consommateurs*, par définition, consomment les données créées par d’autres personnes et utilisent ces données pour prendre des décisions commerciales. Si vous recherchez créer un contenu, lisez [les articles Power BI pour les concepteurs](../create-reports/index.yml) à la place.
@@ -34,7 +34,7 @@ Les **espaces de travail d’application** regroupent tout le contenu d’une ap
 
 L’espace de travail de Fig Sales ci-dessous contient trois rapports et un tableau de bord. 
 
-![Volet de navigation montrant deux types d’espaces de travail](media/end-user-workspaces/power-bi-app-workspace.png)
+![Capture d’écran montrant comment un espace de travail s’affiche sous l’élément de menu Espaces de travail et contient des rapports et un tableau de bord.](media/end-user-workspaces/power-bi-app-workspace.png)
 
 ## <a name="roles-in-the-workspaces"></a>Rôles dans les espaces de travail
 

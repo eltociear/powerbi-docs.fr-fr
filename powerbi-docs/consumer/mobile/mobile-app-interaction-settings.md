@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/08/2020
 ms.author: painbar
-ms.openlocfilehash: f7e88a09f2b48bcfe53256f0da976378a5d87e2c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 67f34bfe04599ffa7d9f9f2c2c3d13545b4306ac
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221363"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635260"
 ---
 # <a name="configure-report-interaction-settings"></a>Configurer les paramètres d’interaction de rapport
 
@@ -21,13 +21,12 @@ ms.locfileid: "85221363"
 
 L’application mobile Power BI a un certain nombre de paramètres « d’interaction » configurables qui vous permettent de contrôler la façon dont vous interagissez avec vos données et de définir la façon dont certains éléments de l’application mobile Power BI se comportent. Le tableau ci-dessous répertorie les paramètres d’interaction actuellement disponibles et les appareils qui en disposent.
 
-|| Téléphone Android | iPhone | Tablette Android  | iPad |
-|-|:-:|:-:|:-:|:-:|
+| Paramètre | Téléphone Android | iPhone | Tablette Android  | iPad |
+|---------|:-:|:-:|:-:|:-:|
 | [Interaction de type appui simple ou double sur les visuels de rapport](#single-tap) |✔|✔|||
 | [Sélection multiple ou sélection unique de points de données sur les visuels de rapport](#multi-select) |✔|✔|✔|✔|
 | [Pied de page de rapport ancré ou dynamique](#docked-report-footer) |✔|✔|||
 | [Actualisation de rapport lancée via un bouton ou via Balayer pour actualiser](#report-refresh) |✔||||
-|
 
 Pour accéder aux paramètres d’interaction, appuyez sur l’image de votre profil pour ouvrir le [panneau latéral](./mobile-apps-home-page.md#header), choisissez **Paramètres** et recherchez la section **Interaction**.
 
@@ -42,7 +41,7 @@ Quand vous téléchargez l’application mobile Power BI, elle est définie pour
 
 Si vous préférez, vous pouvez désactiver l’interaction avec appui simple. L’interaction se fait alors via un appui double. Avec l’interaction d’appui double, vous appuyez d’abord sur un visuel pour le sélectionner, puis vous rappuyez dans le visuel pour effectuer l’action souhaitée.
 
-### <a name="multi-select"></a>Sélection multiple
+### <a name="multi-select"></a>Multisélection
 
 L’option de sélection multiple permet de sélectionner plusieurs points de données sur une page de rapport. Lorsque la sélection multiple est activée, chaque point de données sur lequel vous appuyez est ajouté aux autres points de données sélectionnés, et les résultats combinés sont automatiquement mis en surbrillance dans tous les visuels de la page. Lorsque la sélection multiple est désactivée, lorsque vous appuyez pour sélectionner un point de données, la nouvelle sélection remplace la sélection actuelle.
 

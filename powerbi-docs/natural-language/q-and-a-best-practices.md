@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: a94f4bda1f7ebc4a612da65623f539e820c8c333
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 249e3cd56359a54c358341f463d049435f407515
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240430"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635789"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Bonnes pratiques pour optimiser Questions et réponses dans Power BI
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI.
@@ -116,11 +116,11 @@ Si vous avez plusieurs colonnes qui forment une seule unité distincte au sein d
 
 **Modification nécessaire**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-09.png)
+![Capture d’écran montrant une table Fournisseurs qui contient des informations de contact.](media/q-and-a-best-practices/desktop-qna-09.png)
 
 **Prêt pour Q&A**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-10.png)
+![Capture d’écran montrant deux tables, une pour les fournisseurs et une pour les contacts.](media/q-and-a-best-practices/desktop-qna-10.png)
 
 ### <a name="pivot-to-eliminate-property-bags"></a>Utilisez des valeurs croisées dynamiques pour éliminer les conteneurs de propriétés
 
@@ -134,7 +134,7 @@ Par exemple, prenons une table *CustomerDemographics* (DémographieClients) avec
 
 **Prêt pour Q&A**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-12.png)
+![Capture d’écran montrant quatre colonnes ayant les propriétés Age, MartialStatus, City et Gender en tant que colonnes avec des valeurs pour différents clients.](media/q-and-a-best-practices/desktop-qna-12.png)
 
 ### <a name="union-to-eliminate-partitioning"></a>Unir pour éliminer le partitionnement
 
@@ -148,7 +148,7 @@ De même, prenons un colonne de valeur croisée dynamique typique : une table *
 
 **Prêt pour Q&A**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-14.png)
+![Capture d’écran montrant deux tables : une avec les informations sur les livres et les auteurs pour les visites guidées, l’autre avec les villes associées aux visites.](media/q-and-a-best-practices/desktop-qna-14.png)
 
 ### <a name="split-formatted-columns"></a>Fractionner les colonnes mises en forme
 
@@ -160,7 +160,7 @@ Si la source à partir de laquelle vous importez vos données contient des colon
 
 **Prêt pour Q&A**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-16.png)
+![Capture d’écran montrant une table avec des clients, une ligne d’adresse complète et trois lignes qui décomposent l’adresse en rue, ville et pays.](media/q-and-a-best-practices/desktop-qna-16.png)
 
 De même, si vous avez une colonne contenant des noms complets, ajoutez des colonnes **Prénom** et **Nom**, au cas où un utilisateur souhaiterait poser une question contenant seulement une partie du nom. 
 
@@ -175,7 +175,7 @@ Dans une situation similaire, si la source à partir de laquelle vous importez v
 
 **Prêt pour Q&A**
 
-![Utilisez plusieurs tables pour Questions et réponses](media/q-and-a-best-practices/desktop-qna-18.png)
+![Capture d’écran montrant deux tables, l’une avec le nom et le genre, et l’autre avec le compositeur.](media/q-and-a-best-practices/desktop-qna-18.png)
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Dénormaliser pour éliminer les relations inactives
 

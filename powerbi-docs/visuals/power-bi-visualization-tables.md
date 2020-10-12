@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 11ccbdd3a5586aa10c051e6bfed820ed7f0ae48b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 45f5ff81e8ab11c2082af7f570f02bd3671719c6
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237545"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634662"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
@@ -157,7 +157,7 @@ Pour copier la valeur d’une cellule unique :
 
 1. Sélectionnez **Copier** > **Copier la valeur**.
 
-    ![options de copie](media/power-bi-visualization-tables/power-bi-copy-value.png)
+    ![Capture d’écran montrant Copie sélectionnée avec l’option Copier la valeur sélectionnée.](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
     Avec la valeur de cellule non mise en forme dans votre Presse-papiers, vous pouvez la coller dans une autre application.
 
@@ -169,7 +169,7 @@ Pour copier plusieurs cellules :
 
 1. Sélectionnez **Copier** > **Copier la sélection**.
 
-    ![options de copie](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+    ![Capture d’écran montrant Copie sélectionnée avec l’option Copier la sélection sélectionnée.](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Ajustez la largeur de colonne d’un tableau
 

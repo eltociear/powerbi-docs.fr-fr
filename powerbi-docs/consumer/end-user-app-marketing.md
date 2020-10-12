@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8020e68db6b0baaabdde626d1b17674fe995ca2
-ms.sourcegitcommit: 64139587061136a43c5aea3b6db4d1a94e4e7795
+ms.openlocfilehash: c3019abae20aec5e71d6b4cbae94c77426a151bd
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88205039"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635812"
 ---
 # <a name="install-and-use-the-sample-sales-and-marketing-app-in-the-power-bi-service"></a>Installer et utiliser l’exemple d’application Vente et marketing dans le service Power BI
 
@@ -53,11 +53,11 @@ Maintenant que vous avez des [connaissances de base sur l’obtention de contenu
 
 6. Indiquez si vous souhaitez connecter vos propres données, explorer avec des exemples de données ou personnaliser et partager votre nouvelle application. Comme nous avons sélectionné un exemple d’application Microsoft, commençons par l’explorer. 
 
-    ![Explorer avec des exemples de données](./media/end-user-app-marketing/power-bi-explore-app.png)
+    ![Capture d’écran montrant la prise en main de votre nouvelle application avec l’option Explorer avec des exemples de données appelée.](./media/end-user-app-marketing/power-bi-explore-app.png)
 
 7.  Votre nouvelle application s’ouvre avec un tableau de bord. Le *concepteur* de l’application pourrait l’avoir configurée pour qu’elle s’ouvre à la place sur un rapport.  
 
-    ![Explorer avec des exemples de données](./media/end-user-app-marketing/power-bi-app-new.png)
+    ![Capture d’écran montrant un tableau de bord pour votre application.](./media/end-user-app-marketing/power-bi-app-new.png)
 
 
 

@@ -1,20 +1,20 @@
 ---
-title: Afficher les données utilisées pour créer le visuel
-description: Ce document explique comment les consommateurs de Power BI peuvent « voir » les données utilisées pour créer un visuel.
+title: Afficher les données utilisées pour créer le visuel du rapport
+description: Ce document explique comment les utilisateurs professionnels de Power BI peuvent « voir » les données utilisées pour créer un visuel de rapport.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/28/2020
+ms.date: 10/6/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a48f6aa12a1fd3f3a3dcea39524ed3d51251b062
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 737fe43a7a94ef5738676792e1e903564d29e4bb
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536236"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780203"
 ---
 # <a name="show-data-with-power-bi-reports"></a>Montrer des données avec des rapports Power BI
 
@@ -37,7 +37,11 @@ Dans un tableau de bord, pour voir les données sous-jacentes, utilisez [Export 
 
 4. Pour modifier l’orientation, sélectionnez la disposition verticale ![icône de disposition](media/end-user-show-data/power-bi-vertical-icon-new.png) dans l’angle supérieur droit de la visualisation.
    
-   ![affichage horizontal du visuel et des données](./media/end-user-show-data/power-bi-horizontal.png)
+   ![affichage horizontal du visuel et des données](./media/end-user-show-data/power-bi-show-horizontal.png)
+
+Pour revenir au rapport, sélectionnez **Retour au rapport** dans l’angle supérieur gauche. 
+
+   ![Capture d’écran montrant le lien pour revenir au rapport.](./media/end-user-show-data/power-bi-back.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Visuels dans les rapports Power BI](../visuals/power-bi-report-visualizations.md)    

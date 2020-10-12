@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/27/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e9b950d85d50727ed1e9ca5ec2f94498a37d1665
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: f447856ac387bdabdbd29e1d1ebf47caef22677a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286801"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633949"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 
@@ -31,14 +31,11 @@ Une licence Power BI Pro ou Premium est nécessaire pour partager un tableau de 
 
 ## <a name="open-a-dashboard"></a>Ouvrir un tableau de bord
 
+Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI.
 
+![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
-|              |         |
-|------------|--------------------------------|
-|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, ouvrez-le en le sélectionnant. Le tableau de bord remplira alors votre canevas Power BI. |
-|                    |          |
-
-
+Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un tableau de bord, ouvrez-le en le sélectionnant. Le tableau de bord remplira alors votre canevas Power BI.
 
 Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de navigation. 
 

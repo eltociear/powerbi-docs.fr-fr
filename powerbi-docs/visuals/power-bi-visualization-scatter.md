@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b4a5733e0c4b8617dc93edb1e7fe35a0a76a3338
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 963bd77568db4390bca73a4ec4e9ce97ee616a58
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238159"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632891"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 
@@ -143,7 +143,7 @@ Ajoutons à présent une troisième dimension.
 
         a. Remplacez le champ **Total sales variance %** par **Gross margin last year %** .
 
-        ![Capture d’écran du graphique en bulles avec ligne médiane.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+        ![Capture d’écran des détails avec la marge brute de l’année dernière sélectionnée.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
         b. Dans le volet Analytique, ajoutez **Symétrie en grisé** Avec la symétrie en grisé, nous pouvons voir que la catégorie Hosiery (bulle verte dans la zone rose) est la seule qui privilégie la marge brute plutôt que ses ventes par surface de magasin. 
 
@@ -151,7 +151,7 @@ Ajoutons à présent une troisième dimension.
 
     - Poursuivez l’exploration du volet Analytique pour découvrir des insights intéressants dans vos données. 
 
-        ![Capture d’écran du graphique en bulles avec symétrie en grisé.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        ![Capture d’écran du volet Analyse.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Créer un graphique à points
 

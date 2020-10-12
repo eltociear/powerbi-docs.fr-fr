@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: b02d8d61a4580e70a72aa4da66c4409f04b7f6bb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 054d7a4f96c83b97fbd5e96e7a3cf66d58a74823
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240082"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635927"
 ---
 # <a name="add-drill-down-support"></a>Ajouter la prise en charge de l’exploration
 
@@ -26,7 +26,9 @@ Découvrez plus en détail l’exploration Power BI [ici](./../../consumer/end-u
 
 Pour prendre en charge l’exploration dans votre visuel, ajoutez un nouveau champ à `capabilities.json` nommé « exploration », qui a une propriété :
 
-    *roles - the name of the dataRole you want to enable drill-down on.
+```json
+*roles - the name of the dataRole you want to enable drill-down on.
+```
 
 > [!NOTE]
 > Le dataRole d’exploration doit être de type `Grouping`.
@@ -222,11 +224,11 @@ Préparez des exemples de données pour tester le visuel :
 
 Créez ensuite une hiérarchie dans Power BI Desktop :
 
-![Créer une hiérarchie](media/drill-down-support/create-new-hierarchy.png)
+![Capture d’écran montrant le bureau Power BI avec l’option Nouvelle hiérarchie sélectionnée dans un menu contextuel.](media/drill-down-support/create-new-hierarchy.png)
 
 Ajoutez toutes les colonnes de catégorie (H1, H2, H3) à la nouvelle hiérarchie :
 
-![Créer une hiérarchie](media/drill-down-support/new-hierarchy.png)
+![Capture d’écran montrant les colonnes de catégorie que vous pouvez ajouter à la nouvelle hiérarchie.](media/drill-down-support/new-hierarchy.png)
 
 Après ces étapes, vous devez obtenir le visuel suivant :
 
@@ -305,11 +307,11 @@ Remplacez le corps du rappel de fonction `forEach` par :
 
 Appliquez des données au visuel :
 
-![Visuel avec des données](media/drill-down-support/dev-visual-drilldown-data.png)
+![Capture d’écran montrant la hiérarchie avec H2 appelé.](media/drill-down-support/dev-visual-drilldown-data.png)
 
 À l’étape finale, vous devez obtenir un visuel avec les sélections et le menu contextuel :
 
-![Visuel avec prise en charge de l’exploration](media/drill-down-support/dev-visual-drilldown-demo.gif)
+![Animation montrant comment descendre et monter dans le menu contextuel du visuel.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Ajouter la prise en charge de l’exploration pour le mappage de vues de données de matrices
 
@@ -389,7 +391,7 @@ Appliquez le mappage de vues de données suivant pour le visuel :
 
 Appliquez des données au visuel :
 
-![Visuel avec des données](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
+![Capture d’écran montrant la hiérarchie de matrice avec la hiérarchie des colonnes et des lignes et leurs membres sélectionnés.](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Importez les interfaces nécessaires pour traiter les mappages de vues de données de matrices :
 
@@ -614,7 +616,7 @@ public update(options: VisualUpdateOptions) {
 
 À l’étape finale, vous devez obtenir un visuel avec un menu contextuel :
 
-![Visuel avec prise en charge de l’exploration](media\drill-down-support\dev-visual-drilldown-demo.gif)
+![Animation montrant un menu contextuel pour le visuel avec des options pour monter ou descendre dans la vue.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
