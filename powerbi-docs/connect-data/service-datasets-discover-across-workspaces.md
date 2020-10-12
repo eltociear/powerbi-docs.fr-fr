@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0104d88ab926d649b7b2629e0e3427188c771948
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: e9bffc860baa424caef05bad3ac423932868c410
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236778"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91374335"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Créer des rapports basés sur des jeux de données à partir de différents espaces de travail
 
@@ -50,7 +50,7 @@ De cette manière, les membres de l’espace de travail peuvent indiquer les rap
 
 ## <a name="find-an-endorsed-dataset"></a>Rechercher un jeu de données approuvé
 
-Il existe deux types de jeux de données approuvés différents. Les propriétaires de jeux de données peuvent *promouvoir* un jeu de données qu’ils vous recommandent. L’administrateur du locataire Power BI peut désigner dans votre organisation des experts qui peuvent *certifier* des jeux de données que tout le monde peut utiliser. Les jeux de données aussi bien promus que certifiés affichent des *badges* que vous voyez à la fois lors de la recherche d’un jeu de données et dans la liste des jeux de données d’un espace de travail. Le nom de la personne qui a certifié un jeu de données s’affiche dans une info-bulle pendant l’expérience de découverte de jeu de données. Placez le curseur sur l’étiquette **Certifié** pour le voir.
+Il existe deux types de jeux de données approuvés différents. Les propriétaires de jeux de données peuvent *promouvoir* un jeu de données qu’ils vous recommandent. De même, l’administrateur Power BI peut confier à des experts au sein de votre organisation la mission de *certifier* les jeux de données que tout le monde peut utiliser. Les jeux de données aussi bien promus que certifiés affichent des *badges* que vous voyez à la fois lors de la recherche d’un jeu de données et dans la liste des jeux de données d’un espace de travail. Le nom de la personne qui a certifié un jeu de données s’affiche dans une info-bulle pendant l’expérience de découverte de jeu de données. Placez le curseur sur l’étiquette **Certifié** pour le voir.
 
 - Dans le service Power BI : **Obtenir les données** > **Jeux de données publiés**.
 - Dans Power BI Desktop : **Obtenir les données** > **Jeux de données Power BI**.

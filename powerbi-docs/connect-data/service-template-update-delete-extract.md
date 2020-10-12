@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: d32e1223a335fc6bf2fdf52598f1e1bdf3d7a685
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c5bed13799824a0222b2961595108536f66133ee
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860529"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634938"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mettre à jour, supprimer et extraire une application modèle
 
@@ -23,11 +23,11 @@ Une fois que votre application est en production, vous pouvez recommencer la pha
 Si vous avez effectué les modifications dans Power BI Desktop, démarrez à l’étape (1). Si vous n’avez pas effectué les modifications dans Power BI Desktop, démarrez à l’étape (4).
 
 1. Chargez le jeu de données mis à jour et remplacez le jeu de données existant. **Veillez à utiliser exactement le même nom de jeu de données**. Si vous utilisez un nom différent, un nouveau jeu de données est créé pour les utilisateurs qui mettent à jour l’application.
-![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+![Capture d’écran montrant Power BI Mise à jour d’une application modèle avec Jeu de données sélectionné.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
 1. Importez le fichier pbix depuis votre ordinateur.
-![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+![Capture d’écran montrant la page Obtenir des données avec Obtenir en évidence en dessous de Fichiers.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
 1. Confirmez le remplacement.
-![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
+![Capture d’écran montrant le message de confirmation Un jeu de données du même nom existe déjà et l’option permettant de le remplacer.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. Dans le volet **Gestion des mises en production**, sélectionnez **Créer une application**.
 1. Revenez en arrière dans le processus de création de l’application.
@@ -64,7 +64,8 @@ La restauration de la version précédente d’une application modèle est déso
 
 1. Dans le volet de gestion de version, appuyez sur plus **(...)** , puis sur **Extraire**.
 
-    ![extraire la version de l’application modèle](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png) ![extraire la version de l’application modèle](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
+    ![Capture d’écran montrant le volet Release Management avec l’option Extraire sélectionnée dans un menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
+    ![Capture d’écran montrant un message de confirmation pour extraire cette application.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
 2. Dans la boîte de dialogue, entrez le nom de l’espace de travail extrait. un espace de travail est ajouté.
 
 Le contrôle de version de votre nouvel espace de travail est réinitialisé et vous pouvez continuer à développer et à distribuer l’application modèle à partir de l’espace de travail qui vient d’être extrait.
@@ -73,9 +74,9 @@ Le contrôle de version de votre nouvel espace de travail est réinitialisé et 
 Un espace de travail modèle est la source d’une application modèle distribuée active. Pour protéger les utilisateurs d’applications modèles, il n’est pas possible de supprimer un espace de travail sans supprimer au préalable toutes les versions de l’application créées dans l’espace de travail.
 La suppression d’une version de l’application supprime également l’URL de l’application, qui ne fonctionnera plus.
 
-1. Dans le volet de gestion de version, appuyez sur les points de suspension **(...)** , puis sur **Supprimer**.
- ![Supprimer la version de l’application modèle](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
- ![Supprimer la version de l’application modèle](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+1. Dans le volet de gestion de version, appuyez sur les points de suspension **(...) **, puis sur **Supprimer**.
+ ![Capture d’écran montrant le volet Release Management avec l’option Supprimer sélectionnée dans un menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
+ ![Capture d’écran montrant un message de confirmation pour supprimer cette application.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Veillez à ne pas supprimer la version de l’application utilisée par les clients ou par **AppSource** , sinon ils ne fonctionneront plus.

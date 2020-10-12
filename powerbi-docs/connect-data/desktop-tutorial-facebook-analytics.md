@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 02ffd0881344c8f2bef45301c25e363981d64646
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: e8c6ed4476a1bd5236d838610da624f5dde4fb4c
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965356"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600475"
 ---
 # <a name="tutorial-analyze-facebook-data-by-using-power-bi-desktop"></a>Tutoriel : Analyser les données Facebook à l’aide de Power BI Desktop
 
@@ -128,7 +128,7 @@ Quand vous êtes satisfait des données, sélectionnez **Fermer et appliquer** >
    
    Une fois les données chargées, elles s’affichent dans la vue **Rapport** comme nouvelle Requête dans le volet **Champs**.
    
-   ![Nouvelle requête](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+   ![Capture d’écran montrant les champs disponibles pour une requête appelée Query1.](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
 ## <a name="use-the-data-in-report-visualizations"></a>Utiliser les données dans des visualisations de rapport 
 
@@ -138,7 +138,7 @@ Les données étant importées de la page Facebook, vous pouvez rapidement et fa
 
 1. Dans la vue **Rapport** de Power BI Desktop, sélectionnez **message** dans le volet **Champs** ou faites glisser ce champ vers le canevas du rapport. Une table montrant tous les messages publiés s’affiche dans le canevas. 
    
-   ![Nouvelle requête](media/desktop-tutorial-facebook-analytics/table-viz.png)
+   ![Capture d’écran montrant la vue Rapport avec une liste de messages.](media/desktop-tutorial-facebook-analytics/table-viz.png)
    
 2. Une fois cette table sélectionnée, sélectionnez également **Number of comments** dans le volet **Champs** ou faites glisser ce champ vers la table. 
    

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/20/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: bf7fad8195f28303ae0ab73fb957db87861755e6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bf81ec873b822fbb1604378aa508b3ffeb408511
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237385"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635835"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Ajouter un filtre à un rapport dans Power BI
 
@@ -77,7 +77,7 @@ D'ailleurs, cette procédure utilise l'exemple de l'analyse de la vente au déta
    
     L’élément visuel change en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent voient le visuel filtré par lequel commencer et peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
      
-    ![L’élément visuel filtré](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Capture d’écran montrant un graphique à barres qui présente les valeurs filtrées.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
     
     Lorsque vous utilisez le filtre sur un champ utilisé dans le visuel où le champ est agrégé (par exemple, une somme, une moyenne ou un nombre), vous filtrez sur la valeur *agrégée* dans chaque point de données. Par conséquent, demander à filtrer le visuel ci-dessus là où **Ventes de cette année > 500000** signifie que vous verrez uniquement le point de données **13 - Charleston Fashion Direct** dans le résultat. Les filtres sur les [mesures de modèle](../transform-model/desktop-measures.md) s’appliquent toujours à la valeur agrégée du point de données.
 
@@ -95,7 +95,7 @@ Ajoutons à présent un nouveau champ comme un filtre au niveau du visuel à not
 
     Et la visualisation proprement dite est désormais filtrée pour afficher uniquement les ventes de ces responsables cette année pour les magasins spécifiés.
      
-    ![L’élément visuel filtré](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Capture d’écran montrant un graphique à barres qui présente les valeurs filtrées en fonction du nouveau champ.](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Si vous enregistrez votre rapport avec ce filtre, les personnes qui le consultent peuvent interagir avec le filtre **District Manager** (Responsable de district) en mode Lecture en sélectionnant ou en effaçant des valeurs.
     

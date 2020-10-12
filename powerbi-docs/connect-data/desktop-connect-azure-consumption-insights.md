@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a8d2284a24bb04b175a00a69339ba9e6ac260c10
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7d036af591ae9c5fc44370085480c9266e328745
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858622"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632592"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 
@@ -110,9 +110,7 @@ Ou bien, dans l'**Éditeur de requêtes** :
 1. Cliquez avec le bouton droit dans le volet gauche **Requêtes** 
 2. Sélectionnez **Nouvelle requête > Requête vide** dans le menu qui s’affiche
 
-Dans la **Barre de formule**, tapez :
-
-    = MicrosoftAzureConsumptionInsights.Contents
+Dans la **barre de formule**, tapez : *= MicrosoftAzureConsumptionInsights.Contents*.
 
 L’illustration suivante montre une collection d’exemples qui apparaît.
 
@@ -141,12 +139,14 @@ La première étape consiste utiliser le connecteur **Azure Consumption Insights
 ### <a name="step-2-create-a-query-in-advanced-editor"></a>Étape 2 : Créer une requête dans l’Éditeur avancé
 Dans l’**Éditeur de requête**, sélectionnez **Éditeur avancé** dans la section **Requête** du ruban **Accueil**. Dans la fenêtre **Éditeur avancé** qui apparaît, entrez cette requête :
 
-    let    
-        enrollmentNumber = "100",
-        optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
-        data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
-    in     
-        data
+```console
+let    
+    enrollmentNumber = "100",
+    optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
+    data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
+in     
+    data
+```
 
 ![Capture d’écran d’une boîte de dialogue permettant de créer une requête dans l’Éditeur avancé.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 

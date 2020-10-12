@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b898b205ef9d85f8c0a4951f147339f8d315db1e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 2074094f910efa36d449d8f54ada097d253bb2dd
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855400"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598916"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Ajouter une colonne personnalisée dans Power BI Desktop
 
@@ -22,7 +22,7 @@ Dans Power BI Desktop, vous pouvez facilement ajouter une nouvelle colonne perso
 
 Quand vous créez une colonne personnalisée dans l’Éditeur de requête, Power BI Desktop l’ajoute en tant qu’**Étape appliquée** dans les **Paramètres de requête** de la requête. Elle peut être changée, déplacée ou modifiée à tout moment.
 
-![Page Ajouter une colonne personnalisée](media/desktop-add-custom-column/add-custom-column_01.png)
+![Capture d’écran montrant la boîte de dialogue Ajouter une colonne personnalisée.](media/desktop-add-custom-column/add-custom-column_01.png)
 
 ## <a name="use-query-editor-to-add-a-custom-column"></a>Utiliser l’Éditeur de requête pour ajouter une colonne personnalisée
 
@@ -51,7 +51,7 @@ La fenêtre **Ajouter une colonne personnalisée** comporte a les fonctionnalit�
 
 - Des [requêtes de formule Power Query M](/powerquery-m/power-query-m-function-reference), dans la zone **Formule de colonne personnalisée**. Vous créez ces requêtes en produisant la formule sur laquelle votre nouvelle colonne personnalisée est définie. 
 
-   ![Page Ajouter une colonne personnalisée](media/desktop-add-custom-column/add-custom-column_03.png)
+   ![Capture d’écran montrant la boîte de dialogue Ajouter une colonne personnalisée, qui comprend des colonnes disponibles à la sélection.](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Créer des formules pour votre colonne personnalisée
 

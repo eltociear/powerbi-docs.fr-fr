@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fb5807dd0a5bfa5d3223a8c436da475c51d8d8a0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec0c4cf9e719615489cbba5929f329e6f4f58826
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860621"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634524"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout visuel ou tableau de bord créé dans Power BI peut afficher et mettre à jour des données et des visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des métriques d’utilisation de service, ou d’autres dispositifs permettant de collecter ou transmettre des données.
@@ -52,7 +52,7 @@ La seule façon de visualiser un jeu de données de streaming consiste à ajoute
 Dans la pratique, l’utilisation des jeux de données de streaming et des visuels de streaming associés est plus appropriée dans les situations où il est essentiel de minimiser la latence entre le moment où les données sont transmises et celui où elles sont visualisées. En outre, il est recommandé d’utiliser les données transmises dans un format qui peut être affiché tel quel, sans agrégations supplémentaires, par exemple des températures et des moyennes précalculées.
 
 ### <a name="pubnub-streaming-dataset"></a>Jeu de données de streaming PubNub
-Avec un jeu de données de streaming **PubNub**, le client web Power BI utilise le SDK PubNub pour lire un flux de données PubNub existant. Aucune donnée n’est stockée par le service Power BI. Dans la mesure où cet appel est effectué directement à partir du client web, vous devez autoriser le trafic vers PubNub si vous autorisez uniquement le trafic sortant en provenance de votre réseau. Reportez-vous aux instructions de l’article de support relatif à l’[autorisation du trafic sortant pour PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+Avec un jeu de données de streaming **PubNub**, le client web Power BI utilise le SDK PubNub pour lire un flux de données PubNub existant. Aucune donnée n’est stockée par le service Power BI. Dans la mesure où cet appel est effectué directement à partir du client web, vous devez lister le trafic à destination de PubNub comme étant autorisé, si vous autorisez uniquement le trafic sortant approuvé en provenance de votre réseau. Reportez-vous aux instructions de l’article de support relatif à l’[approbation du trafic sortant pour PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 Comme avec le **jeu de données de streaming**, avec le **jeu de données de streaming PubNub**, il n’existe aucune base de données sous-jacente dans Power BI. Vous ne pouvez donc pas créer de visuels de rapport sur les données qui transitent, ni utiliser les fonctionnalités de rapport telles que le filtrage, les visuels Power BI, etc. Par conséquent, le **jeu de données de streaming PubNub** peut uniquement être visualisé en ajoutant une vignette au tableau de bord et en configurant le flux de données PubNub en tant que source.
 
@@ -183,12 +183,9 @@ Dans cet exemple, nous utilisons un flux de données accessible au public de **P
 2. Si vous n’avez pas encore de sources de données de streaming, sélectionnez le lien **Gérer les données** (juste au-dessus du bouton **Suivant**), puis sélectionnez **+ Ajouter des données de streaming** à partir du lien dans l’angle supérieur droit de la fenêtre. Sélectionnez **PubNub**, puis sélectionnez **Suivant**.
 3. Créez un nom pour votre jeu de données, collez les valeurs suivantes dans la fenêtre qui s’affiche, puis sélectionnez **Next** :
    
-   *Clé d’abonnement :*
-   
-       sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe
-   *Canal :*
-   
-       pubnub-sensor-network
+   **Clé d’abonnement :** *sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe*
+
+   **Canal :** *pubnub-sensor-network*
    
    ![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant comment créer un nom et des entrées de jeu de données dans les champs Sous-clé et Canal.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. Dans la fenêtre suivante, sélectionnez simplement les valeurs par défaut (qui sont automatiquement renseignées), puis sélectionnez **Create**.

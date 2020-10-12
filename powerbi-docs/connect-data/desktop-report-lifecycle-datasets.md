@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f56acb7859b04f77ca403725740cb7ce472ccb7d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c056a48c78ae2e46ccd6419ad1b9d1e1a6693847
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223052"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598805"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 
@@ -32,7 +32,7 @@ L’un des problèmes liés à la popularité de Power BI est la prolifération 
 
 Prenons l’exemple d’Anna, une analyste d’entreprise de votre équipe. Elle est douée pour créer de bons modèles de données, souvent appelés jeux de données. Elle sait créer un jeu de données et un rapport, puis partager ce dernier sur le service Power BI.
 
-![Publication sur le service Power BI](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Capture d’écran montrant le bouton Publier pour le service Power BI.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
 Tout le monde trouve le rapport et le jeu de données d’Anna intéressants. C’est là que les difficultés commencent. En effet, tous les membres de son équipe tentent de créer *leur propre version* de ce jeu de données, puis partagent leur rapport avec l’équipe. Soudainement, votre équipe se retrouve avec une multitude de rapports basés sur des jeux de données différents dans son espace de travail dans le service Power BI. Quel est le plus récent ? Les jeux de données utilisés sont-ils identiques, ou seulement presque identiques ? Quelles sont les différences ? La fonctionnalité de connexion active du service Power BI peut améliorer les choses. La section suivante explique comment d’autres personnes peuvent utiliser le jeu de données d’Annette pour créer leurs propres rapports, dans leurs propres espaces de travail, et permettre à chacun d’utiliser le même jeu de données solide, vérifié et publié pour générer leurs rapports uniques.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40de850663f49a26c1d8ae290d88821bbab8c822
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 13223b2ba9d5b50654c952da6b2517717103a724
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229468"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600221"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Concevoir des rapports Power BI pour l’accessibilité
 Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisant leur accessibilité. Quel que soit le public concerné, vous devez veiller à ce que tous les rapports que vous créez puissent être utilisés par le plus grand nombre de personnes possible sans nécessiter ni adaptation, ni conception spéciale.
@@ -72,11 +72,11 @@ En général, chaque objet de Power BI permettant la navigation au clavier est �
 
 Power BI prend en charge le contraste élevé dans les rapports. Si vous utilisez un mode de contraste élevé dans Windows, Power BI Desktop détecte automatiquement le thème à contraste élevé utilisé et applique les paramètres correspondants à vos rapports. Ces couleurs à contraste élevé suivent le rapport quand celui-ci est publié sur le service Power BI ou ailleurs.
 
-![Paramètres Windows de contraste élevé](media/desktop-accessibility/accessibility-05b.png)
+![Capture d’écran montrant un rapport avec des paramètres de contraste élevé Windows.](media/desktop-accessibility/accessibility-05b.png)
 
 Le service Power BI essaie aussi de détecter les paramètres de contraste élevé sélectionnés pour Windows, mais l’efficacité et la précision de cette détection dépendent du navigateur utilisé pour le service Power BI. Si vous souhaitez définir le thème manuellement dans le service Power BI, vous pouvez sélectionner **Affichage > Couleurs à contraste élevé** et choisir le thème que vous souhaitez appliquer au rapport.
 
-![Navigation - Focus favorisant l’accessibilité](media/desktop-accessibility/accessibility-creating-reports-02.png)
+![Capture d’écran montrant comment sélectionner un thème de couleurs à contraste élevé.](media/desktop-accessibility/accessibility-creating-reports-02.png)
 
 ### <a name="focus-mode"></a>Mode focus
 Si un consommateur de rapport regarde un visuel dans un tableau de bord, il peut l’agrandir à l’écran en accédant au menu contextuel du visuel et en sélectionnant **Ouvrir en mode Focus**.

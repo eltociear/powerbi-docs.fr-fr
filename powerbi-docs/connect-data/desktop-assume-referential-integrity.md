@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c0a7ef3ef7ce62ca1939791c3dcf198428f1353c
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 698abf814b9b93635ba425b2c9d1d30a292714ab
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034356"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599892"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Appliquer le paramètre Intégrité référentielle supposée dans Power BI Desktop
 Lorsque vous vous connectez à une source de données à l’aide de **DirectQuery**, vous pouvez utiliser l’option **Intégrité référentielle supposée** pour exécuter des requêtes plus efficaces sur votre source de données. Cette fonctionnalité impose quelques exigences de données sous-jacentes, et n’est disponible qu’en utilisant **DirectQuery**.
@@ -39,7 +39,7 @@ L’exemple suivant montre comment le paramètre **Intégrité référentielle s
    ![Capture d’écran de la table Orders et de la table Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
 2. Dans l’image suivante, vous pouvez remarquer qu’il n’existe pas d’intégrité référentielle entre **Orders[DepotID]** et **Depots[DepotID]** , car la valeur de **DepotID** est *Null* pour certaines entrées de la table *Orders*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
-   ![Capture d’écran de la table Orders et de la table Products.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
+   ![Capture d’écran montrant la table Orders et la table Depots.](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Enfin, il n’existe aucune intégrité référentielle entre **Orders[CustomerID]** et **Customers[CustID]** dans les tables suivantes. La colonne **CustomerID** contient des valeurs (en l’occurrence, *CustX*) qui n’existent pas dans la table *Customers*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
    ![Capture d’écran de la table Orders et de la table Customers.](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)

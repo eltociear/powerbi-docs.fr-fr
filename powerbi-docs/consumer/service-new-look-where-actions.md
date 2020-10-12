@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c184fa19c2d94690f8609871babf5b60b2855b99
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 13792dbefbb459f4a3bb428b5965c6c56eff4b8c
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538053"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600100"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Nouvelle apparence : où sont passées les actions ?
 
@@ -38,17 +38,17 @@ Vous recherchez des informations sur la nouvelle présentation de **Power BI De
 | Ajuster à la largeur | Affichage > Ajuster à la largeur | Barre de menus Affichage (partie droite) > Ajuster à la largeur |
 | Taille réelle | Affichage > Taille réelle | Barre de menus Affichage (partie droite) > Taille actuelle |
 | Couleurs à contraste élevé | Affichage > Couleurs à contraste élevé | Barre de menus Affichage (partie droite) > Couleurs à contraste élevé |
-| Volet Signets | Affichage > Volet Signets |  Barre de menus Signets > Afficher d'autres signets |
-| Actualiser | Actualiser | Barre de menus Plus d’options (...) > Actualiser |
+| Volet Signets | Affichage > Volet Signets |  Barre de menus Signets (à droite) > Afficher d’autres signets |
+| Actualiser | Actualiser | Barre de menus (à droite) Actualiser |
 | Épingler une page dynamique | Épingler une page dynamique | Barre de menus Plus d’options (...) > Épingler une page dynamique |
 | Rétablir les valeurs par défaut | Rétablir les valeurs par défaut | Rétablir les valeurs par défaut |
 | Commentaires | Commentaires | Commentaires |
 | Afficher les éléments associés | Afficher les éléments associés | Barre de menus Plus d’options (...) > Afficher les éléments associés |
 | Favori | Favori | Favori |
 | S’abonner | S’abonner |S’abonner |
-| Partager | Partager | Partager |
-| Générer le code QR | Barre de menus Plus d’options (...) > Générer le code QR | Barre de menus Plus d’options (...) > Générer le code QR |
-| Analyser dans Excel | Barre de menus Plus d’options (...) > Analyser dans Excel | Barre de menus Plus d’options (...) > Analyser dans Excel |
+| Partager | Partager | Partager > Rapport |
+| Générer le code QR | Barre de menus Plus d’options (...) > Générer le code QR | Partager > Générer le code QR |
+| Analyser dans Excel | Barre de menus Plus d’options (...) > Analyser dans Excel | Exporter > Analyser dans Excel |
 | Mode plein écran | Mode plein écran | Barre supérieure Affichage (partie droite) > Plein écran |
 
 ## <a name="dashboard-actions-in-the-new-look"></a>Actions du tableau de bord dans la nouvelle présentation

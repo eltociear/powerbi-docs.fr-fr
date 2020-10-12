@@ -5,17 +5,17 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: dc5f952aa38e2ab36887ec3f2727e2e253389460
-ms.sourcegitcommit: e9cd61eaa66eda01cc159251d7936a455c55bd84
+ms.openlocfilehash: 1bc11d94162ab2c6ed62de0825acd6e94db30291
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86952659"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599386"
 ---
 # <a name="premium-capacity-scenarios"></a>Scénarios de capacité Premium
 
@@ -29,7 +29,7 @@ Cet article décrit des scénarios réels où des capacités Premium de Power B
 
 Les étapes ainsi que les exemples de graphiques et de tableaux sont tirés de l’**application Métriques de capacité Power BI Premium** à laquelle un administrateur de Power BI aura accès.
 
-## <a name="keeping-datasets-up-to-date"></a>Maintien à jour des jeux de données
+## <a name="keeping-datasets-up-to-date"></a>Tenir à jour les jeux de données
 
 Dans ce scénario, une investigation a été lancée quand des utilisateurs ont signalé que les données des rapports étaient parfois anciennes ou « obsolètes ».
 
@@ -52,54 +52,54 @@ Il existe plusieurs explications possibles pour ces résultats :
 Pour étudier le problème, l’administrateur Power BI peut rechercher :
 
 - Une mémoire disponible faible au moment de l’actualisation des données, quand cette mémoire disponible est inférieure à 2 fois la taille du jeu de données à actualiser.
-- Des jeux de données qui ne sont pas actualisés et qui ne sont pas en mémoire avant l’actualisation, mais commençant néanmoins à montrer un trafic interactif lors des périodes d’actualisation intense. Pour voir quels jeux de données sont chargés en mémoire à un moment donné, un administrateur Power BI peut consulter la zone des jeux de données de l’onglet **Jeux de données** de l’application. L’administrateur peut ensuite effectuer un filtrage croisé pour un moment donné en cliquant sur une des barres de **Nombre de jeux de données chargés par heure**. Une crête locale, montrée dans l’image ci-dessous, indique une heure à laquelle plusieurs jeux de données ont été chargés en mémoire, ce qui a pu retarder le début des actualisations planifiées.
-- Augmentation des évictions de jeux de données quand des actualisations de données doivent démarrer. Les évictions peuvent indiquer une forte sollicitation de la mémoire provoquée par le traitement d’un trop grand nombre de rapports interactifs différents avant le moment prévu pour l’actualisation. Le visuel **Évictions de jeux de données par heure et consommation de mémoire** peut indiquer clairement des pics dans les évictions.
+- Des jeux de données qui ne sont pas actualisés et qui ne sont pas en mémoire avant l’actualisation, mais commençant néanmoins à montrer un trafic interactif lors des périodes d’actualisation intense. Pour voir quels jeux de données sont chargés en mémoire à un moment donné, un administrateur Power BI peut examiner la zone des jeux de données sous l’onglet **Jeux de données** de l’application. L’administrateur peut ensuite effectuer un filtrage croisé pour une heure donnée en cliquant sur une des barres dans **Nombre de jeux de données chargés par heure**. Un pic local, montré dans l’image ci-dessous, indique l’heure à laquelle plusieurs jeux de données ont été chargés en mémoire, ce qui a pu retarder le début des actualisations planifiées.
+- Augmentation des évictions de jeux de données quand des actualisations de données doivent démarrer. Les évictions peuvent indiquer une forte sollicitation de la mémoire provoquée par le traitement d’un trop grand nombre de rapports interactifs différents avant l’actualisation. Le visuel **Évictions de jeux de données par heure et consommation de mémoire** peut indiquer clairement des pics dans les évictions.
 
-L’image suivante montre un pic local dans les jeux de données chargés, ce qui suggère que des requêtes interactives ont retardé le démarrage des actualisations. La sélection d’une période dans le visuel **Nombre de jeux de données chargés par heure** va effectuer un filtrage croisé du visuel **Tailles des jeux de données** .
+L’image suivante montre un pic local dans les jeux de données chargés, ce qui suggère que des requêtes interactives ont retardé le démarrage des actualisations. La sélection d’une période dans le visuel **Nombre de jeux de données chargés par heure** va effectuer un filtrage croisé sur le visuel **Tailles des jeux de données**.
 
 ![Un pic local dans les jeux de données chargés suggère que des requêtes interactives ont retardé le démarrage des actualisations](media/service-premium-capacity-scenarios/hourly-loaded-dataset-counts.png)
 
 L’administrateur Power BI peut tenter de résoudre le problème en prenant des mesures pour garantir que de la mémoire est disponible en suffisance pour que les actualisations de données démarrent :
 
 - En contactant les propriétaires des jeux de données et en leur demandant d’échelonner et d’espacer les planifications d’actualisation des données.
-- En réduisant la charge des requêtes sur les jeux de données en supprimant les tableaux de bord ou les vignettes de tableau de bord non nécessaires, en particulier ceux qui appliquent une sécurité au niveau des lignes.
+- En réduisant la charge des requêtes sur les jeux de données en supprimant les tableaux de bord ou les vignettes de tableau de bord non nécessaires, en particulier le contenu qui applique une sécurité au niveau des lignes.
 - En accélérant les actualisations des données en optimisant la logique Power Query. Améliorez la modélisation des colonnes ou des tables calculées. Réduisez les tailles des jeux de données ou configurez des jeux de données plus grands pour effectuer une actualisation incrémentielle des données.
 
 ## <a name="identifying-slow-responding-datasets"></a>Identification des jeux de données avec réponse lente
 
-Dans ce scénario, une investigation a débuté quand des utilisateurs se sont plaints que certains rapports prenaient trop de temps pour s’ouvrir et qu’ils cessaient parfois de répondre.
+Dans ce scénario, une investigation a débuté quand des utilisateurs se sont plaints de ce que l’ouverture de certains rapports prenaient trop de temps. Parfois, les rapports cessaient de répondre.
 
-Dans l’application, l’administrateur Power BI peut utiliser le visuel **Durées des requêtes** pour déterminer les jeux de données les moins performants en les triant par **Durée moyenne** en ordre décroissant. Ce visuel montre également le nombre de requêtes sur les jeux de données, ce qui vous permet de voir la fréquence à laquelle les jeux de données sont interrogés.
+Dans l’application, l’administrateur Power BI peut utiliser le visuel **Durées des requêtes** pour identifier les jeux de données les moins performants en les triant par ordre décroissant de **Durée moyenne**. Ce visuel montre également le nombre de requêtes sur les jeux de données, ce qui vous permet de voir la fréquence à laquelle les jeux de données sont interrogés.
 
 ![Jeux de données les moins performants](media/service-premium-capacity-scenarios/worst-performing-datasets.png)
 
-L’administrateur peut se référer au visuel **Distribution des durées de requêtes**, qui montre une distribution globale des performances des requêtes par compartiments (<= 30 ms, 0-100 ms) pour la période de temps filtrée. En règle générale, les requêtes qui prennent une seconde ou moins sont considérées comme suffisamment réactives par la plupart des utilisateurs ; les requêtes qui prennent plus de temps tendent à engendre la perception de mauvaises performances.
+L’administrateur peut se référer au visuel **Distribution des durées de requêtes**, qui montre une distribution globale des performances des requêtes par compartiments (<= 30 ms, 0-100 ms) pour la période de temps filtrée. En règle générale, la plupart des utilisateurs considèrent que les requêtes qui prennent une seconde ou moins sont réactives. Les requêtes qui prennent plus de temps ont tendance à être perçues comme peu performantes.
 
 Le visuel **Distribution des durées de requêtes par heure** permet à l’administrateur Power BI d’identifier des périodes d’une heure où les performances de la capacité peuvent avoir été perçues comme médiocres. Plus les segments de la barre qui représentent les durées des requêtes sont grands, plus le risque d’une perception de performances médiocres par les utilisateurs est élevé.
 
 Le visuel est interactif et, quand un segment de la barre est sélectionné, le visuel de table **Durées des requêtes** correspondant sur la page du rapport est filtré de façon croisée pour montrer les jeux de données qu’il représente. Ce filtrage croisé permet à l’administrateur Power BI d’identifier facilement les jeux de données qui répondent avec lenteur.
 
-L’image suivante montre un visuel filtré par **Distributions des durées de requêtes par heure**, mettant l’accent sur les jeux de données les moins performants dans les compartiments d’une heure. 
+L’image suivante montre un visuel filtré par **Distributions des durées de requêtes par heure**, mettant l’accent sur les jeux de données les moins performants dans des tranches d’une heure.
 
 ![Le visuel Distributions des durées de requêtes par heure filtré montre les jeux de données les moins performants](media/service-premium-capacity-scenarios/hourly-query-duration-distributions.png)
 
-Une fois que le jeu de données avec des performances médiocres dans un intervalle spécifique d’une heure est identifié, l’administrateur Power BI peut déterminer si les performances médiocres sont provoquées par une capacité surchargée, ou sont dues à un jeu de données ou un rapport mal conçu. Il peut se référer au visuel **Temps d’attente des requêtes** et trier les jeux de données par temps d’attente moyen des requêtes en ordre décroissant. Si un grand pourcentage des requêtes doivent attendre, une demande élevée pour le jeu de données est probablement la cause d’un trop grand nombre d’attentes pour les requêtes. Si le temps d’attente moyen des requêtes est important (> 100 ms), il peut être utile de passer en revue le jeu de données et le rapport pour déterminer si des optimisations peuvent être effectuées. Par exemple, moins de visuels sur les pages d’un rapport donné ou une optimisation des expressions DAX.
+Après avoir identifié le jeu de données dont les performances ont été médiocres au cours d’un intervalle spécifique d’une heure, l’administrateur Power BI peut déterminer si les performances médiocres sont provoquées par une capacité surchargée ou si elles sont dues à un jeu de données ou à un rapport mal conçu. Il peut se référer au visuel **Temps d’attente des requêtes** et trier les jeux de données par temps d’attente moyen des requêtes en ordre décroissant. Si un grand pourcentage de requêtes est en attente, une demande élevée pour le jeu de données est probablement due à un trop grand nombre de retards de requêtes. Si le temps d’attente moyen des requêtes est important (> 100 ms), il peut être utile de passer en revue le jeu de données et le rapport pour déterminer si des optimisations peuvent être effectuées. Par exemple, moins de visuels sur les pages d’un rapport donné ou une optimisation des expressions DAX.
 
 ![Le visuel Temps d’attente des requêtes permet de faire apparaître les jeux de données peu performants](media/service-premium-capacity-scenarios/query-wait-times.png)
 
 Plusieurs raisons peuvent expliquer l’accumulation des temps d’attente des requêtes dans les jeux de données :
 
 - Une conception du modèle non optimale, des expressions de mesures ou même la conception du rapport - toutes circonstances qui peuvent contribuer à l’existence de requêtes dont l’exécution est longue et qui consomment des niveaux de processeur élevés. Ceci oblige les nouvelles requêtes à attendre que les threads du processeur deviennent disponibles et peut créer un effet de convoi (pensez à des embouteillages), généralement observé pendant les heures des pics d’activité. La page **Temps moyen d’attente des requêtes** est la ressource principale pour déterminer si des jeux de données ont des temps d’attente moyens élevés pour les requêtes.
-- Un grand nombre d’utilisateurs simultanés de la capacité (de plusieurs centaines à plusieurs milliers) qui consomment le même rapport ou le même jeu de données. Même les jeux de données bien conçus peuvent avoir des performances médiocres au-delà d’un certain seuil d’accès simultanés. Ceci est généralement indiqué par le fait qu’un jeu de données montre un nombre de requêtes beaucoup plus élevé que les autres jeux de données (par exemple 300 000 requêtes pour un jeu de données, en comparaison de moins de 30 000 requêtes pour tous les autres jeux de données). À un moment donné, les temps d’attente des requêtes pour ce jeu de données vont commencer à s’allonger, ce qui peut se voir dans le visuel **Durées des requêtes**.
-- De nombreux jeux de données ont été interrogés simultanément, ce qui provoque des encombrements dès lors que les jeux de données sont placés et supprimés de la mémoire de façon cyclique. Ainsi, les utilisateurs subissent un ralentissement des performances au moment où le jeu de données est chargé en mémoire. Pour vérifier cette hypothèse, l’administrateur Power BI peut se référer au visuel **Évictions de jeux de données par heure et consommation de mémoire**, qui peut indiquer qu’un grand nombre de jeux de données chargés en mémoire en sont supprimés de façon répétée.
+- Un grand nombre d’utilisateurs simultanés de la capacité (de plusieurs centaines à plusieurs milliers) qui consomment le même rapport ou le même jeu de données. Même les jeux de données bien conçus peuvent avoir des performances médiocres au-delà d’un certain seuil d’accès simultanés. Ce problème de performances est le signe que le nombre de requêtes pour un même jeu de données est nettement supérieur à celui des autres jeux de données. Par exemple, un même jeu de données peut présenter 300 000 requêtes quand tous les autres jeux de données en comptent moins de 30 000. À un moment donné, les temps d’attente des requêtes pour ce jeu de données vont commencer à s’allonger, ce qui peut se voir dans le visuel **Durées des requêtes**.
+- De nombreux jeux de données ont été interrogés simultanément, ce qui provoque des encombrements dès lors que les jeux de données sont placés et supprimés de la mémoire de façon cyclique. Cette situation se traduit pour les utilisateurs par un ralentissement des performances pendant le chargement du jeu de données en mémoire. Pour vérifier cette hypothèse, l’administrateur Power BI peut se référer au visuel **Évictions de jeux de données par heure et consommation de mémoire**, qui peut indiquer qu’un grand nombre de jeux de données chargés en mémoire en sont supprimés de façon répétée.
 
 ## <a name="identifying-causes-for-sporadically-slow-responding-datasets"></a>Identification des causes pour les jeux de données avec réponse sporadiquement lente
 
-Dans ce scénario, une investigation a commencé quand des utilisateurs ont indiqué que les visuels des rapports étaient parfois lents à répondre ou pouvaient cesser de répondre, mais qu’à d’autres moments, leur réactivité était acceptable.
+Dans ce scénario, une investigation a commencé quand des utilisateurs ont indiqué que les visuels des rapports étaient parfois lents à répondre ou pouvaient cesser de répondre. À d’autres moments, leur réactivité était acceptable.
 
 Dans l’application, la section **Durées des requêtes** a été utilisée pour rechercher le jeu de données coupable de la façon suivante :
 
-- Dans le visuel **Durées des requêtes**, l’administrateur a filtré jeu de données par jeu de données (en commençant par les jeux de données les plus interrogés) et a examiné les barres avec filtrage croisé dans le visuel **Distributions des durées de requêtes par heure**.
+- Dans le visuel Durées des requêtes, l’administrateur a filtré jeu de données par jeu de données (en commençant par les jeux de données les plus interrogés) et a examiné les barres avec filtrage croisé dans le visuel **Distributions des durées de requêtes par heure**.
 - Quand une barre correspondant à une heure montrait des changements significatifs dans le rapport entre tous les groupes des durées des requêtes et les autres barres d’une heure pour ce jeu de données (par exemple les rapports entre les couleurs changent radicalement), cela signifie que ce jeu de données a montré un changement sporadique des performances.
 - Les barres d’une heure montrant une proportion irrégulière de requêtes à performances médiocres ont indiqué une période où ce jeu de données a été affecté par un effet de voisinage perturbateur, provoqué par les activités d’autres jeux de données.
 

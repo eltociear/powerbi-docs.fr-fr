@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/03/2020
+ms.date: 09/25/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f52993c3876db5c8f0453fb2e6a25ce0b78af017
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 62c463972d4811bac0c5400da96a88264273a873
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857953"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600261"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -270,7 +270,7 @@ Pour inviter des utilisateurs externes dans votre organisation, un utilisateur a
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
-En tant qu’administrateur d’un locataire Power BI, le paramètre **Publier sur le web** vous propose des options pour lesquelles les utilisateurs peuvent créer des codes incorporés pour publier des rapports sur le web. Cette fonctionnalité rend le rapport et ses données accessibles à n’importe qui sur le web. Découvrez plus d’informations sur la [publication sur le web](../collaborate-share/service-publish-to-web.md).
+En tant qu’administrateur Power BI, le paramètre **Publier sur le web** propose des options qui vous permettent de créer des codes incorporés pour publier des rapports sur le web. Cette fonctionnalité rend le rapport et ses données accessibles à n’importe qui sur le web. Découvrez plus d’informations sur la [publication sur le web](../collaborate-share/service-publish-to-web.md).
 
 > [!NOTE]
 > Seul les administrateurs Power BI peuvent autoriser la création de codes incorporés « Publier sur le web ». Les organisations peuvent avoir des codes incorporés existants. Consultez la section [Codes incorporés](service-admin-portal.md#embed-codes) du portail d’administration pour passer en revue les rapports actuellement publiés.
@@ -319,7 +319,7 @@ Les utilisateurs de l’organisation peuvent exporter les données à partir d�
 ![Paramètre Exporter vers Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
 >[!IMPORTANT]
-> Avant l’introduction du paramètre Exporter vers Excel, l’exportation vers un fichier Excel était contrôlée par le paramètre Exportation des données. Ainsi, sur les locataires qui existaient avant l’introduction du paramètre Exporter vers Excel, la première fois que les administrateurs de locataires regardent le paramètre Exporter vers Excel, ils voient la présence de *modifications non appliquées*. Ils doivent appliquer ces modifications pour que le nouveau paramètre prenne effet. Dans le cas contraire, l’exportation vers un fichier Excel continue d’être contrôlée par le paramètre Exporter des données.
+> Avant l’introduction du paramètre Exporter vers Excel, l’exportation vers un fichier Excel était contrôlée par le paramètre Exportation des données. Par conséquent, sur les locataires qui existaient avant l’introduction du paramètre Exporter vers Excel, les administrateurs Power BI qui découvrent le paramètre Exporter vers Excel pour la première fois trouvent la mention *Modifications non appliquées*. Ils doivent appliquer ces modifications pour que le nouveau paramètre prenne effet. Dans le cas contraire, l’exportation vers un fichier Excel continue d’être contrôlée par le paramètre Exporter des données.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exporter les rapports comme présentations PowerPoint ou documents PDF
 
@@ -393,7 +393,7 @@ Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et int
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps for Power BI
 
-Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps for Power BI fournie par Esri. [En savoir plus](../visuals/power-bi-visualization-arcgis.md)
+Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps for Power BI fournie par Esri. [En savoir plus](../visuals/power-bi-visualizations-arcgis.md)
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Utiliser la recherche générale pour Power BI (préversion)
 
@@ -401,11 +401,11 @@ Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de re
 
 ## <a name="featured-tables-settings"></a>Paramètres de tables recommandés
 
-Sous **Tenant settings**, le paramètre **Allow connections to featured tables** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie de types de données Excel. 
+Sous **Paramètres du client**, le paramètre **Autoriser les connexions aux tables proposées** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie des types de données Excel. 
 
 :::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
 
-Les connexions aux tables proposées sont également désactivées si le paramètre locataire **Exporter des données** est défini sur **Désactivé**.
+Les connexions aux tables proposées sont également désactivées si le paramètre **Exporter des données** est défini sur **Désactivé**.
 
 En savoir plus sur [les tables Power BI dans Excel](../collaborate-share/service-excel-featured-tables.md).
 
@@ -586,7 +586,7 @@ Une fois que vous avez activé la protection des informations pour Power BI, les
 
 ## <a name="manage-featured-content"></a>Gérer le contenu proposé
 
-En tant qu’administrateur de locataire, vous pouvez gérer tous les rapports, les tableaux de bord et les applications qui ont été promus dans la section À la une de la page d’accueil Power BI à l’échelle de votre organisation.
+En tant qu’administrateur Power BI, vous pouvez gérer tous les rapports, tableaux de bord et applications qui ont été promus dans la section Proposé de la page d’accueil Power BI à l’échelle de votre organisation.
 
 - Dans le portail d’administration, sélectionnez **Contenu proposé**.
 

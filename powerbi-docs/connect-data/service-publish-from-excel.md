@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81ba595be7262c81cdb68f2a1ed052c45663d7a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 108c7cea815475c98a7529a53b9a177ff5fbf405
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234369"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600156"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publier sur Power BI à partir de Microsoft Excel
 Avec Micorsoft Excel 2016 et version ultérieure, vous pouvez publier vos classeurs Excel directement vers votre espace de travail [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports et des tableaux de bord hautement interactifs, basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.
@@ -44,11 +44,11 @@ Excel prend en charge la publication de fichiers Excel locaux. Ceux-ci ne doiven
 
 Lorsque vous sélectionnez **Publier**, vous pouvez sélectionner l’espace de travail sur lequel publier. Si votre fichier Excel se trouve sur OneDrive Entreprise, vous ne pouvez le publier que sur *Mon espace de travail*. S’il se trouve sur un lecteur local, vous pouvez le publier sur *Mon espace de travail* ou sur un espace de travail partagé auquel vous avez accès.
 
-![Publier sur Power BI](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Capture d’écran montrant Publier sur Power BI avec Mon espace de travail sélectionné.](media/service-publish-from-excel/pbi_choose_workspace.png)
 
 Deux options indiquant comment obtenir votre classeur dans Power BI.
 
-![Publier sur Power BI](media/service-publish-from-excel/pbi_uploadexport3.png)
+![Capture d’écran montrant Publier avec Mon espace de travail sélectionné.](media/service-publish-from-excel/pbi_uploadexport3.png)
 
 Une fois publié, le contenu du classeur que vous publiez est importé dans Power BI, séparé du fichier local. Si vous souhaitez mettre à jour le fichier dans Power BI, vous devez publier à nouveau la version mise à jour ou actualiser les données en configurant une actualisation planifiée, sur le classeur ou sur le jeu de données dans Power BI.
 

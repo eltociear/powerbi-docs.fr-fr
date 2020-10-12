@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 07/28/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fdd08c32277dfaa9a619b024a7fb0ece0517f1cb
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: ed8d93ef905cca6e934ac2100093475136595c9a
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87364097"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91634731"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 
@@ -53,11 +53,11 @@ Pour effectuer une sélection parmi les thèmes de rapport intégrés disponible
 
 1. Sélectionnez le bouton de la flèche déroulante **Thèmes**, puis **Changer de thème** dans le ruban **Afficher**.
 
-   ![Sélectionner un thème de rapport](media/desktop-report-themes/report-themes-02.png)
+   ![Capture d’écran montrant le ruban Affichage sélectionné, qui propose plusieurs thèmes.](media/desktop-report-themes/report-themes-02.png)
 
 2. Sélectionnez parmi les thèmes inclus dans le menu déroulant qui apparaît.
 
-   ![Sélectionner un thème de rapport](media/desktop-report-themes/report-themes-03.png)
+   ![Capture d’écran montrant les thèmes Power BI développés, que vous pouvez sélectionner.](media/desktop-report-themes/report-themes-03.png)
 
    Votre thème de rapport est désormais appliqué au rapport.
 
@@ -600,7 +600,9 @@ Les valeurs booléennes sont true (vrai) ou false (faux). Les chaînes doivent �
 
 Les couleurs utilisent le format suivant, où votre code hexadécimal personnalisé remplace « FFFFFF » dans l’exemple suivant :
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 Une énumération, généralement utilisée pour les options de mise en forme de liste déroulante, signifie qu’elle peut être définie sur n’importe laquelle des options affichées dans le volet, par exemple « RightCenter » pour la position de la légende ou « Valeur de données, pourcentage du total » pour l’étiquette de données de secteur. Les options d’énumération sont affichées sous la liste des propriétés.
 

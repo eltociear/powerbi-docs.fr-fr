@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 35c20a11c4b446bd3a2636deaeb4c5ee9c2d797b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: a5cfbfe52ec8b4e0d9eec07844a3eaa7f9447ded
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861012"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600417"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)
 
@@ -45,7 +45,7 @@ Les étapes suivantes supposent que vous êtes le coadministrateur de l’abonne
 
 Connectez-vous au [portail Azure](https://portal.azure.com) et accédez à la page **Abonnements**, que vous trouverez dans la liste **Tous les services** du volet de navigation.
 
-![Portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
+![Capture d’écran montrant le portail Azure avec Abonnements sélectionné.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
 Sélectionnez l’abonnement Azure que vous avez utilisé pour publier le modèle, puis **Access Control (IAM)** . Sélectionnez ensuite **Ajouter une attribution de rôle**, puis le rôle **Lecteur** et enfin, l’utilisateur de Power BI. Lorsque vous avez terminé, sélectionnez **Enregistrer**. L’image suivante montre ces sélections.
 
@@ -95,7 +95,7 @@ Dans l’écran suivant, vous êtes invité à vous connecter à une source de d
 
 L’éditeur Power Query affiche un aperçu des données à partir du fichier CSV. Sélectionnez **Transformer une table** dans le ruban des commandes, puis sélectionnez **Utiliser les premières lignes comme en-têtes**.  Cette opération ajoute l’étape de requête _En-têtes promues_ au volet **Étapes appliquées** à droite. Vous pouvez également renommer la requête avec un nom plus convivial, tel que _Tarification automobile_ avec le volet de droite.
 
-![Portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
+![Capture d’écran de l’éditeur Power Query présentant un aperçu des données.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
 Notre jeu de données source a des valeurs inconnues définies sur « ? ».  Pour y remédier, nous pouvons remplacer « ? » par « 0 » pour éviter des erreurs ultérieures et simplifier les choses.  Pour ce faire, sélectionnez les colonnes *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower* , *peak-rpm* et *price* en cliquant sur leur nom dans les en-têtes de colonnes, puis sur « Transformer les colonnes », et sélectionnez « Remplacer les valeurs ».  Remplacer « ? » par « 0 ».
 

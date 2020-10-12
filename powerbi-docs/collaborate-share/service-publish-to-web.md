@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 09/18/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7009b4b195c89659c032b578ada130e12389b496
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: cea4af4a8c265e5195a8239bd592c8734e332255
+ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858850"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "91375163"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -161,14 +161,14 @@ Les données sont mises en cache pendant une heure à partir de l’heure à laq
 
 Le portail d’administration Power BI a des paramètres qui contrôlent qui peut publier sur le web. Collaborez avec l’[l’administrateur Power BI](../admin/service-admin-role.md) de votre organisation pour modifier les [paramètres de locataire de Publier sur le web](../admin/service-admin-portal.md#publish-to-web) dans le portail d’administration.
 
-Pour les organisations de petite taille ou les personnes qui se sont inscrites à Power BI, vous n’avez peut-être pas encore un administrateur Power BI. Suivez notre [procédure de prise de contrôle de l’administrateur du locataire](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Dès que vous disposez d’un administrateur Power BI, il peut activer la création d’un code incorporé.
+Pour les organisations de petite taille ou les personnes qui se sont inscrites à Power BI, vous n’avez peut-être pas encore un administrateur Power BI. Suivez notre [procédure de prise de contrôle de l’administration](/azure/active-directory/users-groups-roles/domains-admin-takeover). Dès que vous disposez d’un administrateur Power BI, il peut activer la création d’un code incorporé.
 
 En général, les organisations établies disposent déjà d’un administrateur Power BI. Les personnes avec l’un des rôles suivants peuvent agir en tant qu’administrateur Power BI :
 
 - Administrateurs généraux
 - Utilisateurs avec le rôle d’administrateur du service Power BI dans Azure Active Directory
 
-Vous devez [trouver une de ces personnes](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) dans votre organisation et lui demander de mettre à jour les [paramètres de locataire de Publier sur le web](../admin/service-admin-portal.md#publish-to-web) dans le portail d’administration.
+Vous devez [trouver une de ces personnes](/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) dans votre organisation et lui demander de mettre à jour les [paramètres de locataire de Publier sur le web](../admin/service-admin-portal.md#publish-to-web) dans le portail d’administration.
 
 ## <a name="limitations"></a>Limites
 
@@ -196,5 +196,3 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la grande maj
 - [Incorporer un rapport dans un site web ou portail sécurisé](service-embed-secure.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-
-

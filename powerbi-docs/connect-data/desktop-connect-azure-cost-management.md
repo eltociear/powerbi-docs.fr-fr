@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/14/2019
+ms.date: 09/30/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3ae0a9605391ca1230fb0080490e1ef0eadf3d72
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: eae8afc9db44b703ade1a9a4fcc28c24c3d72641
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858483"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91599885"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Créer des visuels et des rapports avec le connecteur Azure Cost Management dans Power BI Desktop
 
@@ -25,6 +25,10 @@ Le connecteur Azure Cost Management utilise la norme OAuth 2.0 pour l’authent
 
 > [!NOTE]
 > Ce connecteur remplace les connecteurs précédemment disponibles [Azure Consumption Insights et Azure Cost Management (bêta)](desktop-connect-azure-consumption-insights.md). Tous les rapports créés avec le connecteur précédent doivent être recréés à l’aide de ce connecteur.
+
+> [!NOTE]
+> Le connecteur Azure Cost Management pour Power BI Desktop ne prend pas en charge la connexion aux clouds du secteur public. 
+
 
 ## <a name="connect-using-azure-cost-management"></a>Se connecter avec Azure Cost Management
 
@@ -48,9 +52,9 @@ Pour vous connecter avec un compte de **Contrat client Microsoft**, vous pouvez 
 3.  Sous **Paramètres** dans le menu, sélectionnez **Propriétés** dans la barre latérale.
 4.  Sous **Profil de facturation**, copiez **l’ID**. 
 5.  Pour **Choisir l’étendue**, sélectionnez **ID du profil de facturation** et collez l’ID du profil de facturation de l’étape précédente. 
-6.  Entrez le nombre de mois et sélectionnez **OK** .
+6.  Entrez le nombre de mois et sélectionnez **OK **.
 
-    ![Obtenir l’ID de facturation](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
+    ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue ID du profil de facturation.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
 7.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. 
 
@@ -63,9 +67,9 @@ Pour vous connecter avec un compte Contrat Entreprise, vous pouvez récupérer v
 2.  Sélectionnez votre compte de facturation.
 3.  Dans le menu **Vue d’ensemble**, copiez **l’ID de compte de facturation**.
 4.  Pour **Choisir l’étendue**, sélectionnez **Numéro d’inscription** et collez l’ID du compte de facturation de l’étape précédente. 
-5.  Entrez le nombre de mois, puis sélectionnez **OK** .
+5.  Entrez le nombre de mois, puis sélectionnez **OK **.
 
-    ![Obtenir l’ID de facturation](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
+    ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue Numéro d’inscription.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
 6.  Lorsque vous y êtes invité, connectez-vous avec votre compte d’utilisateur et votre mot de passe Azure. 
 
@@ -77,23 +81,23 @@ Une fois que vous vous êtes correctement authentifié, une fenêtre de **Naviga
 
 | **Table** | **Description** |
 | --- | --- |
-| **Résumé du solde** | Résumé du solde pour les Contrats Entreprise. |
+| **Balance summary (Récapitulatif du solde)** | Résumé du solde pour les Contrats Entreprise. |
 | **Événements de facturation** | Journal des événements liés aux nouvelles factures, achats de crédits, etc. Contrats clients Microsoft uniquement. |
 | **Budgets** | Informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. |
-| **Coûts** | Un récapitulatif mensuel de l’utilisation d’Azure, des coûts de la Place de marché et des coûts facturés séparément. Contrats clients Microsoft uniquement. |
+| **Charges** | Un récapitulatif mensuel de l’utilisation d’Azure, des coûts de la Place de marché et des coûts facturés séparément. Contrats clients Microsoft uniquement. |
 | **Lots de crédits** | Informations sur les achats de lots de crédits Azure pour le profil de facturation spécifié. Contrats clients Microsoft uniquement. |
-| **Grilles tarifaires** | Tarifs applicables par compteur pour le profil de facturation spécifié ou sur l’inscription de Contrat Entreprise. |
-| **Coûts des instances réservées** | Coûts associés à vos instances réservées au cours des 24 derniers mois. |
-| **Recommandations d’instances réservées (partagées)** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur tous vos abonnements au cours des 7, 30 ou 60 derniers jours. |
-| **Recommandations d’instances réservées (uniques)** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur un seul abonnement au cours des 7, 30 ou 60 derniers jours. |
-| **Détails de l’utilisation des instances réservées** | Informations sur la consommation de vos instances réservées existantes au cours du mois dernier. |
-| **Récapitulatif de l’utilisation des instances réservées** | Pourcentage d'utilisation des réservation Azure quotidiennes. |
-| **Détails de l’utilisation** | Une répartition des quantités consommées et des coûts estimés pour le profil de facturation indiqué sur l’inscription de Contrat Entreprise. |
-| **Détails d’utilisation amortis** | Une répartition des quantités consommées et des coûts amortis estimés pour le profil de facturation indiqué sur l’inscription de Contrat Entreprise. |
+| **Pricesheets (Listes de prix)** | Tarifs applicables pour le profil de facturation ou l’inscription Contrat Entreprise spécifié. |
+| **RI charges (Coûts facturés pour les instances réservées)** | Coûts associés à vos instances réservées au cours des 24 derniers mois. |
+| **RI recommendations (shared) - Recommandations (partagées) pour les instances réservées** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur tous vos abonnements au cours des 7, 30 ou 60 derniers jours. |
+| **RI recommendations (single) - Recommandations (abonnement unique) pour les instances réservées** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur un seul abonnement au cours des 7, 30 ou 60 derniers jours. |
+| **RI usage details (Détails d’utilisation des instances réservées)** | Informations sur la consommation de vos instances réservées existantes au cours du mois dernier. |
+| **RI usage summary (Récapitulatif de l’utilisation des instances réservées)** | Pourcentage d’utilisation quotidienne des réservations Azure |
+| **Usage Details (Détails d’utilisation)** | Une répartition des quantités consommées et des coûts estimés pour le profil de facturation indiqué sur l’inscription de Contrat Entreprise. |
+| **Usage details amortized (Détails d’utilisation avec amortissement)** | Une répartition des quantités consommées et des coûts amortis estimés pour le profil de facturation indiqué sur l’inscription de Contrat Entreprise. |
 
 Vous pouvez sélectionner une table pour afficher une boîte de dialogue d’aperçu. Vous pouvez sélectionner une ou plusieurs tables en sélectionnant la case en regard de leur nom, puis en sélectionnant **Charger**.
 
-![Obtenir l’ID de facturation](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
+![Capture d’écran montrant la boîte de dialogue Navigateur.](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
 
 Quand vous sélectionnez **Charger**, les données sont chargées dans Power BI Desktop. 
 

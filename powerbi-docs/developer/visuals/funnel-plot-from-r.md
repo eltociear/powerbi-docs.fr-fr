@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: 2cc37d1296d7f170bf8c6280465e7a3f1aa52e33
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: e0bdb5174c1392e1a2f81a101a62798f82e2b191
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878697"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747709"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.
@@ -66,11 +66,11 @@ Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](h
 
 1. Modifiez *capabilities.json* et remplacez la chaîne `Values` par `dataset`. Cela remplace le nom de « Role » dans le modèle pour qu’il soit comme dans le code R.
 
-   ![Avant et après](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
+   ![Capture d’écran montrant une comparaison des différences de la modification dans le fichier json.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
 
 1. *(facultatif)* Modifiez *dependencies.json* et ajoutez une section pour chaque package R requis par le script R. Ceci indique à Power BI d’importer automatiquement ces packages quand le visuel est chargé pour la première fois.
 
-   ![Avant et après](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
+   ![Capture d’écran montrant une comparaison des différences là où du contenu a été ajouté aux éléments cranPackages.](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
 
 1. Réempaquetez le visuel avec la commande `pbiviz package` et essayez de l’importer dans Power BI.
 
@@ -119,7 +119,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 1. Ajoutez des fonctionnalités permettant à l’utilisateur de contrôler les couleurs et les tailles des visuels, notamment des paramètres internes de l’interface utilisateur.
 
-   ![CV02to03](./media/funnel-plot/diagram-two.PNG)
+   ![Capture d’écran montrant deux versions du volet Outils avec des options ajoutées à la version de droite.](./media/funnel-plot/diagram-two.PNG)
 
 1. Modifiez *capabilities.json* et mettez à jour la section `objects`. Nous définissons ici les noms, les info-bulles et les types de chaque paramètre, et nous décidons également la répartition des paramètres dans des groupes (trois groupes dans le cas présent).
 
@@ -274,7 +274,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 * Chaque visuel R applique l’opérateur `unique` à sa table d’entrée. Pour éviter la suppression des lignes identiques, vous pouvez ajouter un champ d’entrée supplémentaire avec un ID unique et l’ignorer dans le code R.   
 
-* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](/power-bi/developer/visuals/custom-visual-develop-tutorial/) au lieu de le réempaqueter avec la commande `pbiviz package`.
+* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](./custom-visual-develop-tutorial.md) au lieu de le réempaqueter avec la commande `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galerie de widgets HTML
 Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidgets.org/) que vous pouvez utiliser pour votre prochain visuel. Pour faciliter les choses, nous avons créé un [dépôt de projets de visuels](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) avec plus de 20 visuels HTML interactifs !
@@ -291,15 +291,15 @@ Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidget
 1. Changez les métadonnées dans *pbiviz.json*, en particulier le champ `guid`.
 1. Réempaquetez et continuez à personnaliser le visuel comme vous le souhaitez. 
 
-![CV02to03](./media/funnel-plot/diagram-four.PNG)
+![Capture d’écran montrant les six widgets présentés plus haut dans cet article.](./media/funnel-plot/diagram-four.PNG)
 
-![CV02to03](./media/funnel-plot/diagram-five.PNG)
+![Capture d’écran montrant les six widgets présentés plus haut dans cet article.](./media/funnel-plot/diagram-five.PNG)
 
 > [!NOTE]
 > Les widgets de ce projet ne sont pas tous pris en charge par le service.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour découvrir plus d’informations, consultez les tutoriels supplémentaires sur les [Visuels Power BI](./custom-visual-develop-tutorial.md) et les [Visuels R](/power-bi/visuals/service-r-visuals).
+Pour découvrir plus d’informations, consultez les tutoriels supplémentaires sur les [Visuels Power BI](./custom-visual-develop-tutorial.md) et les [Visuels R](../../visuals/service-r-visuals.md).
 
 Découvrez comment [développer et soumettre des visuels](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) au [Store Office (Galerie)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI) ou, pour obtenir d’autres exemples, consultez la [Démonstration de scripts R](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

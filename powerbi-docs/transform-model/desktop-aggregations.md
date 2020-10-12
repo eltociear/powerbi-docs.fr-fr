@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4ee0db7cae34f9592824e4f315255ff4fcff077b
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3ffa26c0999857df1b249d2866eb5f327e600a82
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83339786"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600332"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Utiliser des agrégations dans Power BI Desktop
 
@@ -53,7 +53,7 @@ La liste déroulante **Totalisation** dans la boîte de dialogue **Gérer les ag
 - Sum
 - Compter les lignes de la table
 
-![Boîte de dialogue Gérer les agrégations](media/desktop-aggregations/aggregations_07.jpg)
+![Capture d’écran montrant la boîte de dialogue Gérer les agrégations.](media/desktop-aggregations/aggregations_07.jpg)
 
 Dans cet exemple d’agrégation basée sur les relations, les entrées GroupBy sont facultatives. À l’exception de DISTINCTCOUNT, elles n’affectent pas le comportement d’agrégation et sont principalement utilisées pour une meilleure lisibilité. Sans les entrées GroupBy, les agrégations obtiendraient quand même des correspondances, en fonction des relations. Cela diffère de l’[exemple de Big Data](#aggregation-based-on-groupby-columns) plus loin dans cet article, où les entrées GroupBy sont requises.
 
@@ -144,11 +144,11 @@ La configuration des tables de dimension associées en mode Double leur permet d
 
 Pour plus d’informations sur le mode de stockage Double, consultez [Gérer le mode de stockage dans Power BI Desktop](desktop-storage-mode.md).
 
-### <a name="strong-vs-weak-relationships"></a>Relations fortes et relations faibles
+### <a name="regular-vs-limited-relationships"></a>Relations régulières/relations limitées
 
-Les accès à l’agrégation basés sur des relations exigent des relations fortes.
+Les occurrences d’agrégations basées sur des relations nécessitent des relations régulières.
 
-Les relations fortes incluent les combinaisons suivantes de modes de stockage, où les deux tables proviennent d’une source unique :
+Les relations régulières incluent les combinaisons de modes de stockage suivantes, où les deux tables proviennent d’une source unique :
 
 | Table côté *plusieurs* | Table côté *1* |
 | ------------- |----------------------| 
@@ -156,7 +156,7 @@ Les relations fortes incluent les combinaisons suivantes de modes de stockage, o
 | Importer        | Importer ou Double       | 
 | DirectQuery   | DirectQuery ou Double  | 
 
-Le seul cas où une relation *inter-sources* est considérée comme forte est celui où les deux tables sont en mode Importer. Les relations plusieurs-à-plusieurs sont toujours considérées comme faibles.
+Le seul cas où une relation *inter-sources* est considérée comme régulière est celui où les deux tables sont en mode Importer. Les relations plusieurs-à-plusieurs sont toujours considérées comme limitées.
 
 Pour les accès à l’agrégation *inter-sources* qui ne dépendent pas de relations, consultez [Agrégation en fonction des colonnes GroupBy](#aggregation-based-on-groupby-columns). 
 
@@ -244,11 +244,11 @@ La requête suivante accède à l’agrégation, car la table d’agrégation co
 
 La requête suivante n’accède pas à l’agrégation, car la table d’agrégation ne couvre pas **CalendarDay**.
 
-![Exemple de requête qui n’accède pas à l’agrégation](media/desktop-aggregations/aggregations-code_10.jpg)
+![Capture d’écran montrant le texte d’une requête qui comprend CalendarDay.](media/desktop-aggregations/aggregations-code_10.jpg)
 
 La requête temporelle suivante n’accède pas à l’agrégation, car la fonction DATESYTD génère une table de valeurs **CalendarDay** et la table d’agrégation ne couvre pas **CalendarDay**.
 
-![Exemple de requête qui n’accède pas à l’agrégation](media/desktop-aggregations/aggregations-code_11.jpg)
+![Capture d’écran montrant le texte d’une requête qui comprend la fonction DATESYTD.](media/desktop-aggregations/aggregations-code_11.jpg)
 
 ## <a name="aggregation-precedence"></a>Précédence d’agrégation
 
@@ -271,7 +271,7 @@ La boîte de dialogue **Gérer les agrégations** pour **Driver Activity Agg2** 
 
 La table spécifiée dans la colonne **Table de détails** est **Driver Activity**, et non pas **Driver Activity Agg**, car les agrégations chaînées ne sont pas autorisées.
 
-![Boîte de dialogue Gérer les agrégations](media/desktop-aggregations/aggregations_14.jpg)
+![Capture d’écran montrant la boîte de dialogue Gérer les agrégations avec Précédence en évidence.](media/desktop-aggregations/aggregations_14.jpg)
 
 Le tableau suivant présente les agrégations pour la table **Driver Activity Agg2**.
 

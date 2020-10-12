@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6511afb499b12d379957ac37ebfe19890c111282
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 934ffa649885b270dd7f321f45168723f53bc379
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861035"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600350"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
 
@@ -46,39 +46,39 @@ Suivez les étapes décrites dans cette section pour terminer la partie analyse 
 
 Pour commencer, accédez à un espace de travail Power BI avec une capacité Premium et créez un flux de données à l’aide du bouton **Créer** dans le coin supérieur droit de l’écran.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png)
+![Capture d’écran montrant l’espace de travail Power BI avec Créer, puis Tableau de bord sélectionnés.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_01.png)
 
 La boîte de dialogue de flux de données vous montre les options de création d’un flux de données, sélectionnez **Ajouter de nouvelles entités.** Ensuite, choisissez **Texte/CSV** dans le menu des sources de données.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png)
+![Capture d’écran montrant Choisir une source de données, où figure notamment l’option Texte/CSV.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png)
 
 Collez cette URL dans le champ d’URL : [https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv](https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv) et cliquez sur **Suivant.**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
+![Capture d’écran montant Se connecter à une source de données où vous entrez l’URL.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
 
 Les données sont maintenant prêtes à utiliser pour l’analyse de texte, et nous pouvons utiliser le scoring des sentiments et l’extraction de phrases clés sur la colonne de commentaires client.
 
 Dans l’éditeur Power Query, sélectionnez **Insights d’IA**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_04.png)
+![Capture d’écran montrant Modifier les requêtes avec Insights IA sélectionné.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_04.png)
 
 Développez le dossier **Cognitive Services** et sélectionnez la fonction que vous souhaitez utiliser. Cet exemple montre le scoring du sentiment de la colonne de commentaires, mais vous pouvez suivre les mêmes étapes pour tester la détection de langue et l’extraction de phrases clés.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_05.png)
+![Capture d’écran montrant Appeler la fonction avec une fonction sélectionnée.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_05.png)
 
 Lorsqu’une fonction est sélectionnée, les champs obligatoires et facultatifs s’affichent. Pour noter le sentiment des exemples d’évaluation, sélectionnez la colonne des évaluations comme entrée de texte. Les informations sur la culture sont une entrée facultative et requièrent un format ISO. Par exemple, entrez « en » si vous souhaitez que le texte soit traité en tant que texte anglais. Lorsque le champ est laissé vide, Power BI commence par détecter la langue de la valeur d’entrée avant de noter le sentiment.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_06.png)
+![Capture d’écran montrant la boîte de dialogue Appeler la fonction avec le menu déroulant texte.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_06.png)
 
 Sélectionnez à présent **Appeler** pour exécuter la fonction. Une nouvelle colonne avec le score du sentiment pour chaque ligne est ajoutée à la table. Vous pouvez revenir à **Insights d’IA** pour extraire les phrases clés du texte d’évaluation de la même façon.
 
 Une fois que vous avez terminé les transformations, modifiez le nom de la requête en « Commentaires client » et sélectionnez **Terminé.**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
+![Capture d’écran montrant Modifier les requêtes avec Nom en évidence.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
 
 Ensuite, **Enregistrez** le flux de données et nommez-le Fabrikam. Sélectionnez le bouton **Actualiser maintenant**, qui s’affiche après l’enregistrement du flux de données.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
+![Capture d’écran montrant le bouton Enregistrer.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
 
 Une fois que le flux de données est enregistré et actualisé, vous pouvez l’utiliser dans un rapport Power BI.
 
@@ -88,15 +88,15 @@ Ouvrez Power BI Desktop. Dans le ruban Accueil, sélectionnez **Obtenir des donn
 
 Accédez au **flux de données Power BI (version bêta**) dans la section Power BI et sélectionnez **Se connecter.**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
+![Capture d’écran montrant le volet Obtenir les données avec Dataflows Power BI sélectionné.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
 
 Comme il s’agit d’une fonctionnalité de préversion, le connecteur vous demandera d’accepter les conditions de la préversion. Après les avoir acceptées, connectez-vous avec votre compte professionnel.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png)
+![Capture d’écran montrant un message de connexion pour votre compte professionnel.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_10.png)
 
 Sélectionnez le flux de données que vous venez de créer. Accédez à la table de commentaires client et cliquez sur **Charger.**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_11.png)
+![Capture d’écran montrant le Navigateur avec la table de commentaires client sélectionnée.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_11.png)
 
 Maintenant que les données sont chargées, vous pouvez commencer à générer un rapport.
 
@@ -104,15 +104,15 @@ Maintenant que les données sont chargées, vous pouvez commencer à générer u
 
 Accédez à un espace de travail Power BI avec une capacité Premium. Créez un flux de données à l’aide du bouton **Créer** dans le coin supérieur droit de l’écran.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_12.png)
+![Capture d’écran montrant l’espace de travail Power BI avec Créer, puis Dataflow sélectionnés.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_12.png)
 
 Sélectionnez **Ajouter de nouvelles entités**.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_13.png)
+![Capture d’écran montrant une option permettant d’ajouter des entités pour commencer à créer un dataflow.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_13.png)
 
 Une fois que vous êtes invité à choisir une source de données, sélectionnez **Requête vide.**
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_14.png)
+![Capture d’écran montrant Choisir une source de données, où figure notamment l’option Requête vide.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_14.png)
 
 Copiez la requête ci-dessous dans l’éditeur de requête, puis cliquez sur Suivant. Vous pouvez remplacer les chemins d’accès de l’URL ci-dessous par d’autres images ou ajouter des lignes. La fonction *Web.Contents* importe l’URL d’image sous forme de fichier binaire. Si vous avez une source de données avec des images stockées sous forme de fichier binaire, vous pouvez également l’utiliser directement.
 
@@ -126,43 +126,43 @@ in
   Source
 ```
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_15.png)
+![Capture d’écran montrant Se connecter à une source de données, où figurent votre requête et un bouton Suivant.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_15.png)
 
 Lorsque vous êtes invité à saisir des informations d’identification, sélectionnez *anonyme*.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_16.png)
+![Capture d’écran montrant Modifier les requêtes, où vous pouvez spécifier des informations d’identification.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_16.png)
 
 Vous voyez l’image suivante.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_17.png)
+![Capture d’écran montrant la boîte de dialogue Entrer les informations d’identification dans laquelle vous pouvez spécifier le type d’authentification.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_17.png)
 
 Vous êtes invité à saisir des informations d'identification pour chaque page web.
 
 Sélectionnez **Insights d’IA** dans l’éditeur de requête.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_18.png)
+![Capture d’écran montrant Modifier les requêtes avec Insights IA sélectionné et un avertissement affiché.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_18.png)
 
 Ensuite, connectez-vous avec votre **compte professionnel**.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png)
+![Capture d’écran montrant la boîte de dialogue Entrer les informations d’identification dans laquelle vous pouvez spécifier un compte professionnel.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png)
 
 Sélectionnez la fonction Baliser des images, entrez _[Binaire]_ dans le champ de colonne et _en_ dans le champ d’informations sur la culture. 
 
 > [!NOTE]
 > Vous ne pouvez actuellement pas choisir une colonne à l’aide d’une liste déroulante, ce qui sera résolu dès que possible dans la préversion privée.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png)
+![Capture d’écran montrant Appeler la fonction avec la fonction TagImages sélectionnée.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png)
 
 Dans l’éditeur de la fonction, supprimez les guillemets du nom de la colonne. 
 
 > [!NOTE]
 > La suppression des guillemets est une solution de contournement provisoire. Le problème sera résolu le plus rapidement possible dans la préversion.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png)
+![Capture d’écran montrant l’éditeur de fonctions avec Image en évidence sans guillemets.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png)
 
 La fonction retourne un enregistrement avec les balises dans un format séparé par des virgules et sous forme d’enregistrement json. Sélectionnez le bouton de développement pour ajouter l’un des enregistrements ou les deux en tant que colonnes à la table.
 
-![Créer un flux de données](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png)
+![Capture d’écran montrant le bouton Développer, qui présente deux flèches opposées.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_22.png)
 
 Sélectionnez **Terminé** et enregistrez le flux de données. Une fois que vous avez actualisé le flux de données un, vous pouvez vous y connecter à partir de Power BI Desktop à l’aide des connecteurs de flux de données. (Voir les étapes à la page 5 de ce document).
 

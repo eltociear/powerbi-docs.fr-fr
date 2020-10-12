@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6df5c0310fca47dfd590671766c47349ebb47f7f
-ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
+ms.openlocfilehash: 3cc9277b567a58b60dc86c41b7ae56ad5c678d6b
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83793971"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91600599"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Utiliser le ruban mis à jour dans Power BI Desktop
 
@@ -30,7 +30,7 @@ Le ruban mis à jour est généralement disponible à partir de la version de ma
 
 Les avantages de la mise à jour de notre ruban sont destinés à faciliter et à améliorer l'expérience dans Power BI Desktop et dans d'autres produits Microsoft. 
 
-![Nouveau ruban dans Power BI Desktop](media/desktop-ribbon/desktop-ribbon-03.png)
+![Capture d’écran montrant un plan rapproché du ruban Power BI Desktop.](media/desktop-ribbon/desktop-ribbon-03.png)
 
 Ces avantages peuvent être regroupés dans les catégories suivantes :
 

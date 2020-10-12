@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b3e661e8581f07ea9e19f295c30f29e5331754e7
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: e1b93b244a040fba1213fbb3b15bca3114e7075a
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83331368"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528157"
 ---
 # <a name="manage-storage-mode-in-power-bi-desktop"></a>Gérer le mode de stockage dans Power BI Desktop
 
@@ -78,7 +78,7 @@ Supposons que toutes les tables dans ce modèle ont initialement été définies
 
 ![Fenêtre d’avertissement sur le mode de stockage](media/desktop-storage-mode/storage-mode-05.png)
 
-Vous pouvez définir les tables de dimension (**Customer**, **Geography** et **Date**) sur **Double** afin de réduire le nombre de relations faibles dans le jeu de données et d’améliorer ainsi les performances. Les relations faibles impliquent en général au moins une table DirectQuery où la logique de jonction ne peut pas être envoyée aux systèmes sources. Étant donné que les tables doubles peuvent agir comme des tables DirectQuery ou Importer, cette situation est évitée.
+Vous pouvez définir les tables de dimension (**Customer**, **Geography** et **Date**) sur **Double** pour réduire le nombre de relations limitées dans le jeu de données et améliorer le niveau de performance. Les relations limitées impliquent normalement au moins une table DirectQuery où la logique de jointure ne peut pas être envoyée (push) aux systèmes sources. Étant donné que les tables doubles peuvent agir comme des tables DirectQuery ou Importer, cette situation est évitée.
 
 La logique de propagation est conçue pour apporter une aide dans le cas de modèles qui contiennent de nombreuses tables. Supposons que vous disposez d’un modèle de 50 tables et que seules certaines tables de faits (transactionnelles) doivent être mises en cache. La logique dans Power BI Desktop calcule l’ensemble minimal des tables de dimension qui doivent être définies sur **Double**, de sorte que vous n’êtes pas obligé de le faire.
 
@@ -118,15 +118,15 @@ Les requêtes qui référencent des tables Double retournent des données du cac
 
 Si l’on continue avec l’exemple précédent, la requête suivante fait référence uniquement à une colonne de la table **Date**, qui est en mode **Double**. Par conséquent, la requête devrait accéder au cache :
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-06.png)
+![Capture d’écran montrant le texte de la requête qui fait référence à la table Date.](media/desktop-storage-mode/storage-mode-06.png)
 
 La requête suivante fait référence uniquement à une colonne de la table **Sales**, qui se trouve en mode **DirectQuery**. Par conséquent, elle ne devrait *pas* accéder au cache :
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-07.png)
+![Capture d’écran montrant le texte de la requête qui fait référence à la table Sales.](media/desktop-storage-mode/storage-mode-07.png)
 
 La requête suivante est intéressante, car elle combine les deux colonnes. Cette requête n’atteint pas le cache. Initialement, vous pouvez prévoir de récupérer des valeurs **CalendarYear** dans le cache et des valeurs **SalesAmount** dans la source, puis combiner les résultats, mais cette approche est moins efficace que d’envoyer l’opération SUM/GROUP BY au système source. Si l’opération est envoyée (push down) vers la source, le nombre de lignes retournées sera probablement bien moindre : 
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-08.png)
+![Capture d’écran montrant le texte de la requête qui fait référence à la table Date et à la table Sales.](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Ce comportement est différent des [relations plusieurs à plusieurs](desktop-many-to-many-relationships.md) dans Power BI Desktop quand les tables mises en cache et non mises en cache sont combinées.

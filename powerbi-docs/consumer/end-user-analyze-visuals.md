@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe44b183b77cb1e58c89cfd229f3f76d3b06ce39
-ms.sourcegitcommit: 3268a9b630cf599c50592d83c70a87eeecf7838f
+ms.openlocfilehash: f5b930ade7e0ae4e58977ba33dc725c6f1e34695
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168468"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91635881"
 ---
 # <a name="use-the-analyze-feature-to-explain-fluctuations-in-report-visuals"></a>Utilisation de la fonctionnalité Analyser pour expliquer les fluctuations dans les visuels de rapport
 
@@ -50,7 +50,7 @@ Power BI exécute alors ses algorithmes Machine Learning sur les données, puis 
 
 En sélectionnant les petites icônes au bas du visuel en cascade, vous pouvez choisir d’afficher les informations dans un nuage de points, un histogramme empilé ou un graphique de ruban.
 
-![trio de visuels d’insights](media/end-user-analyze-visuals/power-bi-options.png)
+![Capture d’écran montrant les icônes au bas du visuel.](media/end-user-analyze-visuals/power-bi-options.png)
 
 Utilisez les icônes de *pouce levé* et de *pouce baissé* en haut de la page pour commenter le visuel et la fonctionnalité.  
 
@@ -59,7 +59,7 @@ Utilisez les icônes de *pouce levé* et de *pouce baissé* en haut de la page p
 
 Vous pouvez utiliser les insights lorsque votre rapport est en mode Lecture ou Édition. La fonctionnalité est donc polyvalente pour l’analyse de données et la création de visuels que vous pouvez aisément ajouter à vos rapports. Si le rapport est ouvert en mode Édition, une icône plus s’affiche à côté des icônes de pouce. Sélectionnez l’icône plus pour ajouter l’insight à votre rapport sous la forme d’un nouvel visuel. 
 
-![trio de visuels d’insights](media/end-user-analyze-visuals/power-bi-add-visual.png)
+![Capture d’écran montrant l’icône plus servant à ajouter l’insight.](media/end-user-analyze-visuals/power-bi-add-visual.png)
 
 ## <a name="details-of-the-results-returned"></a>Détail des résultats retournés
 

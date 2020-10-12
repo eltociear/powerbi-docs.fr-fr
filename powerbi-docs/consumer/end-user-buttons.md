@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/01/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 51871e9653a1f3d0d48f25de33d4a72603695cf4
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 1b0b677e67fa15906492fbaa41fcfd456d77bf01
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86161787"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633881"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Boutons dans le service Power BI
 Dans les rapports que vous recevez de vos collègues, vous avez peut-être remarqué des boutons et vous vous demandez comment les utiliser. Certains comportent des mots, d’autres des flèches, des graphiques et même des menus déroulants. Cet article va vous apprendre à reconnaître un bouton et à déterminer comment l’utiliser.
@@ -31,7 +31,7 @@ Un bouton Précédent peut comporter une icône représentant une flèche. Quand
 1. Sélectionnez **Word** dans le graphique à barres.
 1. Sélectionnez **Extraire**, puis choisissez **Analyse du panier d’achat**.
 
-    ![Capture d’écran du bouton Précédent.](media/end-user-buttons/power-bi-drillthrough.png)
+    ![Capture d’écran du bouton Extraire.](media/end-user-buttons/power-bi-drillthrough.png)
 
     Quand vous choisissez **Analyse du panier d’achat**, Power BI ouvre la page de rapport *Analyse du panier d’achat* et utilise les sélections effectuées dans la page source pour filtrer ce qui est affiché dans la page de destination.
 
@@ -60,15 +60,15 @@ Les boutons d’extraction peuvent avoir plusieurs prérequis. Pour qu’un bout
 
 Voici un bouton d’extraction qui nous permet d’accéder à la page *Store details*. Quand nous pointons sur le bouton, une info-bulle nous indique que nous devons sélectionner un magasin et un produit. Vous devez alors sélectionner un magasin et un produit pour que le bouton devienne actif.
 
-![Capture d’écran du bouton d’extraction avec info-bulle activée par pointage.](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Capture d’écran du bouton Extraire avec une info-bulle activée par pointage.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Maintenant que nous avons sélectionné un produit (**Word**) et un magasin (**Leo**), le bouton change de couleur pour nous indiquer qu’il est actif.
 
-![Capture d’écran du bouton d’extraction avec info-bulle activée par pointage.](media/end-user-buttons/power-bi-select-both.png)
+![Capture d’écran du bouton Drill through to Store details (Extraire les détails du magasin).](media/end-user-buttons/power-bi-select-both.png)
 
 Sélectionnez le bouton d’extraction pour accéder à la page du rapport *Store*. La page *Store* est filtrée selon nos sélections (**Word** et **Leo**).
 
-![Capture d’écran du bouton d’extraction avec info-bulle activée par pointage.](media/end-user-buttons/power-bi-store.png)
+![Capture d’écran de la page Store reports (Rapports sur le magasin).](media/end-user-buttons/power-bi-store.png)
 
 Les boutons d’extraction peuvent également avoir des menus déroulants qui vous permettent de choisir parmi plusieurs destinations. Après avoir effectué vos sélections dans page de rapport source, sélectionnez la page de rapport de destination pour l’extraction. Dans l’exemple ci-dessous, nous allons modifier notre sélection pour effectuer l’extraction dans la page de rapport *Market details*. 
 
@@ -84,7 +84,7 @@ Les boutons de navigation entre les pages entre les pages vous permettent d’ac
 ## <a name="qa-buttons"></a>Boutons Questions et réponses 
 Quand vous sélectionnez un bouton Questions et réponses, la fenêtre Explorateur de questions et réponses Power BI s’ouvre. La fenêtre Questions et réponses apparaît en haut de la page de rapport. Pour la fermer, sélectionnez la croix (X). [Découvrez-en plus sur Questions et réponses](end-user-q-and-a.md).
 
-![Capture d’écran du bouton de navigation entre les pages nommé « Team scorecard ».](media/end-user-buttons/power-bi-qna.png)
+![Capture d’écran de la fenêtre Explorateur de questions et réponses Power BI contenant le texte Poser une question sur vos données.](media/end-user-buttons/power-bi-qna.png)
 
 ## <a name="web-url"></a>Web URL
 Les boutons URL web ouvrent une nouvelle fenêtre de navigateur. Les concepteurs de rapports peuvent ajouter ce type de bouton comme source de référence pour proposer un lien vers le site web de l’entreprise ou même vers un autre rapport ou tableau de bord. Dans l’exemple ci-dessous, le bouton URL web vous permet de télécharger le fichier source du rapport. 
