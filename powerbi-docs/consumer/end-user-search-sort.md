@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/09/2020
+ms.date: 10/01/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 799cbe00274e14709e6987df1f9c4abe664f9b55
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 1fbfa8a85ada8512aff54526407799a00fbfa891
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536259"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780340"
 ---
-# <a name="navigation-for-power-bi-consumers-global-search"></a>Navigation pour les consommateurs Power BI : recherche globale
+# <a name="navigation-for-power-bi-business-users-global-search"></a>Navigation pour les utilisateurs professionnels Power BI : recherche globale
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -31,7 +31,7 @@ Si vous utilisez le service Power BI depuis peu, vous n’avez pas beaucoup de c
 
  Dans le champ Rechercher, tapez tout ou partie du nom d’un tableau de bord, d’un rapport, d’un classeur, d’un espace de travail, d’une application ou d’un propriétaire. Power BI effectue une recherche sur l’ensemble de votre contenu. 
 
- ![rechercher un rapport](./media/end-user-search-sort/power-bi-search-field.png) 
+ ![Capture d’écran montrant le champ de recherche avec le mot Approvisionnement entré.](./media/end-user-search-sort/power-bi-search-field.png) 
 
  Dans certaines zones de Power BI, comme les espaces de travail, vous trouverez deux champs de recherche différents. Celui de la barre de menus effectue la recherche sur l’ensemble de votre contenu, tandis que celui du canevas de l’espace de travail porte uniquement sur cet espace de travail.
 
@@ -39,24 +39,27 @@ Si vous utilisez le service Power BI depuis peu, vous n’avez pas beaucoup de c
 
 ## <a name="sorting-content-lists"></a>Tri de listes de contenu
 
-Si vous n’avez pas beaucoup de contenus, le tri ne vous sera pas forcément nécessaire.  Si, en revanche, vous disposez de longues listes de tableaux de bord et de rapports, il vous aidera à trouver ce dont vous avez besoin. Par exemple, cette liste de contenus **Partagés avec moi** contient 257 éléments. 
+Si vous n’avez pas beaucoup de contenus, le tri ne vous sera pas forcément nécessaire.  Si, en revanche, vous disposez de longues listes de tableaux de bord et de rapports, il vous aidera à trouver ce dont vous avez besoin. Par exemple, cette liste de contenus **Partagés avec moi** contient 70 éléments. 
 
-![Liste de contenus Partagés avec moi](./media/end-user-search-sort/power-bi-all-shared.png)
+![Liste de contenus Partagés avec moi](./media/end-user-search-sort/power-bi-a-to-z.png)
 
-Pour le moment, cette liste de contenus est triée par ordre alphabétique du nom, de A à Z. Pour modifier les critères de tri, sélectionnez la flèche à droite de **Nom (A-Z)** .
+Pour le moment, cette liste de contenus est triée par ordre alphabétique du nom, de Z à A. Pour modifier les critères de tri, sélectionnez la flèche à droite de **Nom (A-Z)** .
 
-![Menu déroulant de tri](./media/end-user-search-sort/power-bi-sort-date.png)
+![Menu déroulant de tri](./media/end-user-search-sort/power-bi-sort-z-to-a.png)
 
 
-Le tri est également disponible dans les espaces de travail. Dans cet exemple, le contenu est trié par date **d’Actualisation**. Pour définir des critères de tri pour les espaces de travail, sélectionnez un en-tête de colonne une fois, puis une deuxième afin de changer de sens de tri. 
+Le tri est également disponible dans les espaces de travail. Dans cet exemple, le contenu est trié par date **d’Actualisation**. Pour définir des critères de tri pour les espaces de travail, sélectionnez les en-têtes de colonne une fois puis à nouveau afin de changer de sens de tri. 
 
-![rechercher un rapport](./media/end-user-search-sort/power-bi-workspace-sort.png)
+
+![rechercher un rapport](./media/end-user-search-sort/power-bi-refreshed.png)
 
 Toutes les colonnes ne peuvent pas être triées. Placez le curseur sur les en-têtes de colonne pour savoir lesquelles peuvent être triées.
 
+## <a name="filtering-content-lists"></a>Filtrage des listes de contenu
+Une autre façon de localiser rapidement le contenu consiste à utiliser les **Filtres** de liste de contenu. Affichez les filtres en sélectionnant **Filtres** dans le coin supérieur droit. Les filtres disponibles dépendent de votre emplacement dans le service Power BI.  L’exemple ci-dessous provient d’une liste de contenu **Récent**.  Elle vous permet de filtrer la liste par type de contenu.  Sur la liste de contenu **Partagé avec moi**, les **Filtres** disponibles incluent Propriétaire et Type de contenu.
 
-## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-* Pour les jeux de données, l’option **Trier par** n’est pas à la disposition du propriétaire.
+![Capture d’écran du filtre sur la liste de contenu.](./media/end-user-search-sort/power-bi-sort-filters.png)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Trier les visuels dans les rapports](end-user-change-sort.md)

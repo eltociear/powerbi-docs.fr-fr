@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ''
-ms.date: 09/05/2017
-ms.openlocfilehash: cb2a5ede49acb218450174bbf77388be5c504617
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 09/22/2020
+ms.openlocfilehash: 9267d6318bd951fdff41cb51786a4a519fa75917
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861725"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136048"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Mettre à niveau Power BI Report Server
 
 Découvrez comment mettre à niveau Power BI Report Server.
 
- **Télécharger** ![télécharger](media/upgrade/download.png "télécharger")
+ **Télécharger** ![icône de téléchargement](media/upgrade/download.png "icône de téléchargement")
 
 Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -30,11 +30,11 @@ Avant de mettre à niveau un serveur de rapports, nous vous recommandons de suiv
 
 ### <a name="backing-up-the-encryption-keys"></a>Sauvegarder les clés de chiffrement
 
-Lorsque vous configurez une installation de serveur de rapports pour la première fois, vous devez sauvegarder les clés de chiffrement. Vous devez également sauvegarder les clés chaque fois que vous changez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Lorsque vous configurez une installation de serveur de rapports pour la première fois, sauvegardez les clés de chiffrement. Sauvegardez également les clés chaque fois que vous changez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sauvegarder les bases de données de serveur de rapports
 
-Étant donné qu’un serveur de rapports est un serveur sans état, toutes les données d’application sont stockées dans les bases de données **reportserver** et **reportservertempdb** qui s’exécutent sur une instance du moteur de base de données SQL Server. Vous pouvez sauvegarder les bases de données **reportserver** et **reportservertempdb** en utilisant l’une des méthodes prises en charge pour la sauvegarde des bases de données SQL Server. Les recommandations propres aux bases de données de serveur de rapports sont les suivantes :
+Étant donné qu’un serveur de rapports est un serveur sans état, toutes les données d’application sont stockées dans les bases de données **reportserver** et **reportservertempdb** qui s’exécutent sur une instance du moteur de base de données SQL Server. Vous pouvez sauvegarder les bases de données **reportserver** et **reportservertempdb** en utilisant l’une des méthodes prises en charge pour la sauvegarde des bases de données SQL Server. Ces recommandations sont spécifiques aux bases de données du serveur de rapports :
 
 * Utilisez le mode de récupération complète pour sauvegarder la base de données **reportserver**.
 * Utilisez le mode de récupération simple pour sauvegarder la base de données **reportservertempdb**.
@@ -44,7 +44,7 @@ Pour plus d’informations sur la sauvegarde et la restauration des bases de don
 
 ### <a name="backing-up-the-configuration-files"></a>Sauvegarder des fichiers de configuration
 
-Power BI Report Server utilise des fichiers de configuration pour stocker les paramètres de l’application. Vous devez sauvegarder les fichiers lorsque vous configurez le serveur pour la première fois et après avoir déployé des extensions personnalisées. Les fichiers à sauvegarder comprennent :
+Power BI Report Server utilise des fichiers de configuration pour stocker les paramètres de l’application. Sauvegardez les fichiers lorsque vous configurez le serveur pour la première fois et après avoir déployé des extensions personnalisées. Les fichiers à sauvegarder comprennent :
 
 * config.json
 * RSHostingService.exe.config
@@ -72,9 +72,17 @@ La mise à niveau de Power BI Report Server est très simple. Quelques étape
 
     ![Configuration de la mise à niveau](media/upgrade/reportserver-upgrade-configure.png)
 
+## <a name="enable-microsoft-update-security-fixes-for-power-bi-report-server"></a>Activer les correctifs de sécurité Microsoft Update pour Power BI Report Server
+
+Power BI Report Server reçoit des correctifs de sécurité via Microsoft Update. Pour les obtenir, abonnez-vous manuellement à Microsoft Update.
+
+1.  Ouvrez Windows Update dans **Paramètres de mise à jour et de sécurité** sur l’ordinateur que vous souhaitez inscrire.
+2.  Sélectionnez **Options avancées**.
+3.  Cochez la case **Me communiquer les mises à jour d’autres produits Microsoft lorsque je mets à jour Windows**.
+
 ## <a name="upgrade-power-bi-desktop"></a>Mettre à niveau Power BI Desktop
 
-Une fois le serveur de rapports mis à niveau, vous devez vous assurer que les auteurs de rapports Power BI effectuent une mise à niveau qui corresponde au serveur vers la version de Power BI Desktop optimisée pour Power BI Report Server.
+Une fois le serveur de rapports mis à niveau, assurez-vous que les auteurs de rapports Power BI effectuent une mise à niveau qui corresponde au serveur vers la version de Power BI Desktop optimisée pour Power BI Report Server.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

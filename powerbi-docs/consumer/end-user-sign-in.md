@@ -7,15 +7,15 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 10/06/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 00adcf77d2d53a44e4faf6013c0134b7ffd1af80
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: bea5b36c98ab8a62b444bfc731b5d54df6550f0f
+ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87536144"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780422"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Se connecter au service Power BI
 
@@ -31,21 +31,21 @@ Le service Power BI s’exécute dans un navigateur.
 
 - Si vous avez reçu un e-mail d’un collègue avec un lien vers un tableau de bord ou un rapport, sélectionnez le lien pour **Ouvrir ce rapport** ou **Ouvrir ce tableau de bord**.
 
-    ![champ de navigateur avec une saisie](media/end-user-sign-in/power-bi-share.png)    
+    ![Capture d’écran montrant un e-mail contenant un lien vers un rapport.](media/end-user-sign-in/power-bi-share.png)    
 
 - Sinon, ouvrez votre navigateur préféré et tapez **app.powerbi.com**.
 
-    ![champ de navigateur avec une saisie](media/end-user-sign-in/power-bi-sign-in.png)    
+    ![Capture d’écran montrant un navigateur avec l’adresse app.powerbi.com.](media/end-user-sign-in/power-bi-signin.png)    
 
 
 ### <a name="step-2-type-your-email-address"></a>Étape 2 : Entrez votre adresse e-mail
 La première fois que vous vous connectez, Microsoft vérifie si vous disposez déjà d’un compte Microsoft 365. Dans l’exemple ci-dessous, Pradtanna a déjà une licence pour d’autres services Microsoft. 
 
-![Écran de connexion](media/end-user-sign-in/power-bi-already.png)
+![Capture d’écran montrant un message de connexion.](media/end-user-sign-in/power-bi-already.png)
 
 Saisissez votre mot de passe. Il s’agit de votre mot de passe de compte Microsoft 365. Il s’agit de l’adresse e-mail et du mot de passe que vous utilisez pour d’autres produits Microsoft, comme Outlook ou Office.  Selon la configuration de votre compte, vous pouvez également être invité à entrer un code envoyé à votre adresse e-mail ou à votre appareil mobile.   
 
-![Écran de connexion](media/end-user-sign-in/power-bi-pass.png)
+![Capture d’écran montrant la boîte de dialogue Entrer un mot de passe.](media/end-user-sign-in/power-bi-pass.png)
 
 Parfois, votre administrateur général vous attribue une licence et vous envoie un e-mail contenant ces informations. Recherchez dans votre boîte de réception un e-mail de bienvenue et suivez les instructions pour vous connecter pour la première fois. Utilisez le même compte e-mail pour vous connecter. 
  
@@ -59,29 +59,29 @@ Passez en revue les conditions générales et, si vous les acceptez, activez la 
 ### <a name="step-4-review-your-home-landing-page"></a>Étape 4 : Passez en revue votre page d’accueil
 Lors de votre première visite, Power BI ouvre votre **page d’accueil**. Si la **Page d’accueil** ne s’ouvre pas, sélectionnez-la dans le volet de navigation. 
 
-![capture d’écran montrant la page d’accueil sélectionnée](media/end-user-sign-in/power-bi-home-selected.png)
+![capture d’écran montrant la page d’accueil sélectionnée](media/end-user-sign-in/power-bi-home-blank.png)
 
 Dans la page d’accueil, vous voyez tout le contenu que vous êtes autorisé à utiliser. Au début, votre page peut ne pas avoir beaucoup de contenu, mais ne vous inquiétez pas, ce ne sera plus le cas dès que vous commencerez à utiliser Power BI avec vos collègues. Vous vous souvenez du rapport que votre collègue a partagé avec vous par e-mail ? Il se trouve sur votre page d’accueil, sous le titre **Partagé avec moi**.
 
-![Page d'accueil de l'application](media/end-user-sign-in/power-bi-home.png)
+![Page d'accueil de l'application](media/end-user-sign-in/power-bi-home-new.png)
 
 Si vous ne voulez pas que Power BI ouvre votre page d’accueil, vous pouvez [définir un tableau de bord ou un rapport **Par défaut**](end-user-featured.md) à ouvrir à la place. 
 
 ## <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée
-Parce que vous êtes ***consommateur***, d’autres utilisateurs partagent du contenu avec vous et vous interagissez avec ce contenu pour explorer les données et prendre des décisions.  Vous pouvez filtrer, découper, exporter et redimensionner du contenu, ou bien vous abonner à du contenu sans impacter le jeu de données sous-jacent ni le contenu d’origine partagé (tableaux de bord et rapports). Power BI est un espace sécurisé que vous pouvez explorer et tester. Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Mais ces changements affectent uniquement votre **vue** du contenu. Pour revenir à la vue d’origine par défaut, il vous suffit de cliquer sur un bouton.
+En tant qu’***utilisateur professionnel***, d’autres utilisateurs partagent du contenu avec vous et vous interagissez avec ce contenu pour explorer les données et prendre des décisions.  Vous pouvez filtrer, découper, exporter et redimensionner du contenu, ou bien vous abonner à du contenu sans impacter le jeu de données sous-jacent ni le contenu d’origine partagé (tableaux de bord et rapports). Power BI est un espace sécurisé que vous pouvez explorer et tester. Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Mais ces changements affectent uniquement votre **vue** du contenu. Pour revenir à la vue d’origine par défaut, il vous suffit de cliquer sur un bouton.
 
 ![Bouton Rétablir les valeurs par défaut](media/end-user-sign-in/power-bi-reset.png)
 
 ## <a name="sign-out-of-the-power-bi-service"></a>Se déconnecter du service Power BI
-Quand vous fermez Power BI ou que vous vous déconnectez, vos changements sont enregistrés et vous pouvez reprendre plus tard là où vous en étiez.
+Quand vous fermez le service Power BI ou que vous vous déconnectez, vos changements sont enregistrés et vous pouvez reprendre plus tard là où vous en étiez.
 
 Pour fermer Power BI, fermez l’onglet du navigateur dans lequel vous travaillez. 
 
-![sélectionner le x pour fermer l’onglet](media/end-user-sign-in/power-bi-close.png) 
+![sélectionner le x pour fermer l’onglet](media/end-user-sign-in/power-bi-close-tab.png) 
 
 Si vous partagez un ordinateur, nous vous recommandons de vous déconnecter chaque fois que vous fermez Power BI.  Pour vous déconnecter, en haut à droite, sélectionnez votre image de profil et choisissez **Se déconnecter**.  
 
-![profil sélectionné](media/end-user-sign-in/power-bi-sign-out.png) 
+![profil sélectionné](media/end-user-sign-in/power-bi-signout.png) 
 
 ## <a name="troubleshooting-and-considerations"></a>Résolution des problèmes et considérations
 - Si vous êtes inscrit à Power BI en tant que particulier, connectez-vous avec l’adresse e-mail que vous avez utilisée pour vous inscrire.

@@ -8,17 +8,17 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: a0fdc83db8d24f4733d3eb8402a4ea9ccce15869
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 71fb659ba102e139c7a1679b0c58c07c47a38bf0
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860598"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668663"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Définir des alertes de données dans les applications mobiles Power BI
 S’applique à :
 
-| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Tablette Android](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png) | ![Appareil Windows 10.](./media/mobile-set-data-alerts-in-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
 
@@ -38,7 +38,7 @@ Vous pouvez définir des alertes sur les vignettes si vous avez une licence Powe
 1. Appuyez sur une vignette numérique ou de jauge dans le tableau de bord pour l’ouvrir en mode focus.  
    
    ![Capture d’écran d’un tableau de bord, montrant la vignette de jauge en mode Focus.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png) pour ajouter une alerte.  
+2. Appuyez sur l’icône de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-icon.png" border="false"::: pour ajouter une alerte.  
 3. Appuyez sur **Ajouter une règle d’alerte**.
    
    ![Capture d’écran de la règle d’alerte, indiquant qu’aucune alerte n’est définie.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-alert-rule.png)
@@ -62,9 +62,9 @@ Vous pouvez gérer des alertes spécifiques sur votre appareil mobile ou [gérer
 
 1. Dans un tableau de bord, appuyez sur une vignette numérique ou de jauge associée à une alerte.  
    
-   ![Capture d’écran du tableau de bord, montrant la vignette numérique qui a une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+   ![Capture d’écran du tableau de bord sur un iPhone ou un iPad montrant la vignette de nombre avec une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
 
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
+2. Appuyez sur l’icône en forme de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png" border="false":::.  
 3. Appuyez sur le nom de l’alerte pour la modifier, appuyez sur le curseur pour désactiver les alertes par courrier électronique ou sur la poubelle pour supprimer l’alerte.
    
     ![Capture d’écran d’une alerte, avec des flèches pointant vers le nom de l’alerte, l’icône de la poubelle pour supprimer l’alerte et le curseur de désactivation de l’alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-edit-delete-alert.png)
@@ -72,9 +72,9 @@ Vous pouvez gérer des alertes spécifiques sur votre appareil mobile ou [gérer
 ## <a name="data-alerts-on-an-android-device"></a>Alertes de données sur un appareil Android
 ### <a name="set-an-alert-on-an-android-device"></a>Définir une alerte sur un appareil Android
 1. Dans le tableau de bord Power BI, appuyez sur une vignette numérique ou de jauge pour l’ouvrir.  
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png) pour ajouter une alerte.  
+2. Appuyez sur l’icône de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-alert-icon.png" border="false"::: pour ajouter une alerte.  
    
-   ![Capture d’écran du tableau de bord, montrant la vignette numérique qui a une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
+   ![Capture d’écran du tableau de bord sur un appareil Android montrant la vignette de nombre avec une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-tap-alert.png)
 3. Appuyez sur l’icône plus (+).
    
    ![Capture de l’écran Gérer les alertes, présentant une flèche vers l’icône plus.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-plus-alert.png)
@@ -95,7 +95,7 @@ Vous pouvez gérer des alertes spécifiques sur votre appareil mobile ou [gérer
 Vous pouvez gérer des alertes spécifiques dans l’application mobile Power BI ou [gérer toutes les alertes dans le service Power BI](../../create-reports/service-set-data-alerts.md).
 
 1. Dans un tableau de bord, appuyez sur une vignette de carte ou de jauge associée à une alerte.  
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
+2. Appuyez sur l’icône de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png" border="false":::.  
 3. Appuyez sur l’alerte pour modifier une valeur ou la désactiver.
    
     ![Capture d’écran de la vignette Gérer l’alerte, montrant l’icône plus pour ajouter une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-manage-alerts.png)
@@ -109,9 +109,9 @@ Vous pouvez gérer des alertes spécifiques dans l’application mobile Power B
 
 ### <a name="set-data-alerts-on-a-windows-device"></a>Définir des alertes de données sur un appareil Windows
 1. Appuyez sur une vignette numérique ou de jauge dans le tableau de bord pour l’ouvrir.  
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) pour ajouter une alerte.  
+2. Appuyez sur l’icône de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png" border="false"::: pour ajouter une alerte.  
    
-   ![Capture d’écran du tableau de bord, montrant la vignette numérique qui a une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
+   ![Capture d’écran du tableau de bord sur un appareil Windows montrant la vignette de nombre avec une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-tap-alert.png)
 3. Appuyez sur l’icône plus (+).
    
    ![Capture d’écran de la vignette Gérer les alertes, montrant qu’aucune alerte n’est définie.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-no-alerts-yet.png)
@@ -134,7 +134,7 @@ Vous pouvez gérer des alertes spécifiques dans l’application mobile Power B
 Vous pouvez gérer des alertes spécifiques dans l’application mobile Power BI ou [gérer toutes les alertes dans le service Power BI](../../create-reports/service-set-data-alerts.md).
 
 1. Dans un tableau de bord, appuyez sur une vignette de carte ou de jauge associée à une alerte.  
-2. Appuyez sur l’icône en forme de cloche ![l’icône en forme de cloche](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
+2. Appuyez sur l’icône en forme de cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png" border="false":::.  
    
    ![Capture d’écran du tableau de bord, montrant la vignette numérique qui a une alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-has-alerts.png)
 3. Appuyez sur l’alerte pour modifier une valeur ou la désactiver.
@@ -153,10 +153,10 @@ Les sources de données sont souvent configurées pour être actualisées tous l
 2. Si vous avez défini l’alerte de façon à recevoir un courrier électronique, vous recevez un message semblable à celui-ci dans votre boîte de réception.
    
    ![Capture d’écran d’une notification par e-mail, montrant l’alerte.](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI ajoute un message à votre [Centre de notification](mobile-apps-notification-center.md) et ajoute un point jaune à l’icône représentant une cloche ![icône représentant une cloche](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) sur la barre de titre (iOS et Android) ou au bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (appareils Windows 10).
+3. Power BI ajoute un message à votre [Centre de notification](mobile-apps-notification-center.md) et ajoute un point jaune à l’icône représentant une icône représentant une cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: sur la barre de titre (iOS et Android) ou au bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (appareils Windows 10).
 
 
-4. Appuyez sur l’icône représentant une cloche ![icône représentant une cloche](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) ou sur le bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) pour [ouvrir votre **Centre de notifications**](mobile-apps-notification-center.md) et consulter les détails de l’alerte.
+4. Appuyez sur l’icône représentant une cloche :::image type="icon" source="media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png" border="false"::: ou sur le bouton de navigation globale ![bouton de navigation globale](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) pour [ouvrir votre **Centre de notifications**](mobile-apps-notification-center.md) et consulter les détails de l’alerte.
    
      
 
