@@ -1,6 +1,6 @@
 ---
 title: Sous-rapports dans les rapports paginés Power BI
-description: Dans cet article, vous allez découvrir les sources de données prises en charge pour les rapports paginés dans le service Power BI, et comment vous connecter à des sources de données Azure SQL Database.
+description: Dans cet article, vous allez découvrir les sources de données prises en charge pour les rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: fbe60bab0d1c8d95cec1a3fda1d4b23fe919ea31
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 9da6268e90e3f70797c2cfff19bb1d5c4b633e9a
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861380"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746582"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Sous-rapports dans les rapports paginés Power BI
 
@@ -33,7 +33,7 @@ Power BI Report Builder peut utiliser les rapports paginés présents sur votre 
 
 Une fois connecté, vous voyez s’afficher une option **Service Power BI** dans Power BI Report Builder pour les options **Ouvrir** et **Enregistrer sous** dans le menu **Fichier**. Lorsque vous sélectionnez l’option **Power BI service** pour enregistrer un rapport, vous créez une connexion active entre Power BI Report Builder et le service Power BI. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Ouvrir à partir du service Power BI":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Se connecter à Power BI":::
 
 ## <a name="save-a-local-report-to-the-power-bi-service"></a>Enregistrer un rapport local dans le service Power BI
 
@@ -48,7 +48,7 @@ Avant de pouvoir ajouter un sous-rapport à un rapport principal, créez d’abo
 
 3. Dans la boîte de dialogue **Enregistrer sous**, sélectionnez un espace de travail Power BI Premium dans lequel vous pouvez stocker vos rapports paginés.  Les espaces de travail affichent une icône en forme de losange ![icône losange Premium](media/subreports/report-builder-premium-diamond.png) en regard de leur nom.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Enregistrer sous le service Power BI":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Se connecter à Power BI":::
 
 4. Sélectionnez **Enregistrer**.
 
@@ -58,7 +58,7 @@ Maintenant que vous avez enregistré les deux rapports dans le même espace de t
 
 1. Dans le ruban **Insérer**, sélectionnez le bouton **Sous-rapport**, ou cliquez avec le bouton droit sur le canevas du rapport, puis sélectionnez **Insérer** > **Sous-rapport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Insérer un sous-rapport dans un rapport":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Se connecter à Power BI":::
 
     La boîte de dialogue **Propriétés du sous-rapport** s’affiche.  
 

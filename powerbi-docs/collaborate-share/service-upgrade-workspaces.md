@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 09/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 432c526479465da5d22e17172582c7f1d2cceb0c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8e2b6c8d916cc3c180ab9adb9b6ea6af8eaefea4
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225274"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633052"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI
 
@@ -27,7 +27,7 @@ Cet article explique comment mettre à niveau ou *migrer* un espace de travail c
 
 Mais votre espace de travail peut nécessiter des changements que vous devez planifier. Par exemple, les packs de contenu ne sont pas pris en charge dans la nouvelle expérience d’espace de travail. Consultez la section [Considérations et limitations relatives à la mise à niveau](#upgrade-considerations-and-limitations), plus loin dans cet article.
 
-## <a name="things-to-do-after-upgrading"></a>Procédure à suivre après la mise à niveau
+## <a name="things-to-plan-before-upgrading"></a>Choses à prévoir avant la mise à niveau
 
 Vous devez effectuer plusieurs opérations *après* la mise à niveau. Il est préférable de les planifier *avant* de procéder à la mise à niveau :
 - Passez en revue la liste d'accès et prenez connaissance des [autorisations après la mise à niveau](#permissions-after-upgrade).
@@ -52,7 +52,7 @@ Tout administrateur d'un espace de travail peut mettre à jour cet espace de tra
 
 2. Pendant la mise à niveau, le message **Mise à niveau en cours** s'affiche. La mise à niveau de votre espace de travail prend généralement moins d'une minute.
 
-1. Une fois la mise à niveau terminée, la boîte de dialogue **Réussite** apparaît. Nous vous recommandons de lire la section [Organiser le travail dans les nouveaux espaces de travail dans Power BI](service-new-workspaces.md) pour vous familiariser avec les différences entre les nouveaux espaces de travail et les espaces de travail classiques.
+1. Une fois la mise à niveau terminée, la boîte de dialogue **Réussite** apparaît. Vous voyez votre nouvelle expérience d’espace de travail, avec le même nom et le même contenu. Nous vous recommandons de lire la section [Organiser le travail dans les nouveaux espaces de travail dans Power BI](service-new-workspaces.md) pour vous familiariser avec les différences entre les nouveaux espaces de travail et les espaces de travail classiques.
 
 ### <a name="impact-on-other-workspace-users"></a>Impact sur les autres utilisateurs de l'espace de travail
 
@@ -62,6 +62,7 @@ Les utilisateurs qui utilisent activement l'espace de travail sont invités à a
 
 ## <a name="upgrade-considerations-and-limitations"></a>Considérations et limites relatives la mise à niveau
 
+- Après la mise à niveau, le contenu de l’espace de travail classique s’affiche dans le nouvel espace de travail. Il est également listé dans **Partagé avec moi**.
 - Les URL et ID de votre espace de travail, le contenu de celui-ci et l'application publiée depuis l'espace de travail ne changent pas. Le contenu des packs de contenu installés dans votre espace de travail est traité séparément. Voir la section [Packs de contenu pendant la mise à niveau](#content-packs-during-upgrade) de cet article pour plus de détails.
 - Les packs de contenu ne sont pas pris en charge dans la nouvelle expérience d’espace de travail. Consultez les sections consacrées aux [packs de contenu publiés](#published-content-packs) ou aux [packs de contenu installés](#installed-content-packs) pour plus d’informations sur leur gestion pendant la mise à niveau. Nous vous recommandons de supprimer les packs de contenu installés ou publiés de votre espace de travail avant la mise à niveau.
 - Le groupe Microsoft 365 pour votre espace de travail classique n'est pas affecté par la mise à niveau de l'espace de travail dans Power BI. Les équipes, sites SharePoint, boîtes aux lettres ou autres ressources gérées par Microsoft 365 ne sont pas modifiés. Ces éléments restent intacts après la mise à niveau de votre espace de travail Power BI. Le groupe Microsoft 365 continue d'exister comme avant.
@@ -111,7 +112,7 @@ La nouvelle expérience d’espace de travail propose des fonctionnalités non d
 
 1. Sélectionnez **Paramètres** dans la barre de menus en haut de la liste du contenu de l'espace de travail pour accéder aux paramètres de l'espace de travail.
 
-    ![Paramètres de l’espace de travail](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
+    ![Capture d’écran illustrant la sélection de Paramètres dans la barre de menus.](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Sous **Avancé**, l'espace de travail **Liste de contacts** est configuré pour être le groupe Microsoft 365 à partir duquel l'espace de travail est mis à niveau. Vous pouvez ajouter d'autres utilisateurs ou groupes à la liste de contacts, ou la pointer vers les administrateurs de l'espace de travail.
 
@@ -119,11 +120,11 @@ La nouvelle expérience d’espace de travail propose des fonctionnalités non d
 
 ### <a name="the-workspace-onedrive"></a>L'espace de travail OneDrive 
 
-Après la mise à niveau, l'espace de travail **OneDrive** est connecté à la bibliothèque de documents SharePoint du groupe Microsoft 365. Cette bibliothèque de documents se présente sous la forme de l'option **OneDrive** dans l'expérience **Obtenir les données > Fichiers**. Notez que certains utilisateurs de l'espace de travail peuvent ne pas être autorisés à accéder à cette bibliothèque de documents s'ils ne font pas partie du groupe Microsoft 365.
+Après la mise à niveau, l'espace de travail **OneDrive** est connecté à la bibliothèque de documents SharePoint du groupe Microsoft 365. Cette bibliothèque de documents se présente sous la forme de l'option **OneDrive** dans l'expérience **Obtenir les données > Fichiers**. Certains utilisateurs de l’espace de travail peuvent ne pas être autorisés à accéder à cette bibliothèque de documents s’ils ne font pas partie du groupe Microsoft 365.
 
 ## <a name="content-packs-during-upgrade"></a>Packs de contenu pendant la mise à niveau
 
-La nouvelle expérience d'espace de travail ne prend pas en charge les packs de contenu. Utilisez plutôt des applications et des jeux de données partagés pour distribuer le contenu dans l'espace de travail. Nous vous recommandons de supprimer les packs de contenu publiés ou installés de l'espace de travail avant la mise à niveau. Toutefois, si des packs de contenu sont publiés ou installés lors de la mise à niveau, le processus de mise à niveau tente d’en conserver le contenu, comme décrit ci-dessous.  Il n'existe aucun moyen de restaurer le pack de contenu ou l'association de contenu au pack de contenu après la mise à niveau.
+La nouvelle expérience d'espace de travail ne prend pas en charge les packs de contenu. Utilisez plutôt des applications et des jeux de données partagés pour distribuer le contenu dans l'espace de travail. Nous vous recommandons de supprimer les packs de contenu publiés ou installés de l'espace de travail avant la mise à niveau. Cependant, s’il y a des packs de contenu publiés ou installés au moment d’effectuer la mise à niveau, le processus de mise à niveau tente d’en conserver le contenu, comme décrit plus loin dans cet article.  Il n'existe aucun moyen de restaurer le pack de contenu ou l'association de contenu au pack de contenu après la mise à niveau.
 
 ### <a name="published-content-packs"></a>Packs de contenu publiés
 
@@ -148,7 +149,7 @@ Pour revenir en arrière, vous devez être propriétaire du groupe Microsoft 36
 
 1. Dans la liste de contenu de l'espace de travail, sélectionnez **Plus d'options** ( **...** ) > **Préférences de l’espace de travail**.
 
-    ![Paramètres de l’espace de travail](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
+    ![Capture d’écran illustrant la sélection de Plus d’options (…) > Paramètres d’espace de travail.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
 1. Développez **Avancé** et sélectionnez **Retourner au mode classique**. Si cette option n'est pas disponible, consultez la section [Considérations sur le retour à l’espace de travail classique](#considerations-for-switching-back-to-classic) de cet article.
 
@@ -202,10 +203,10 @@ La capacité de mise à niveau de l'espace de travail ne fournit pas d'outils de
    
 ## <a name="known-issues"></a>Problèmes connus
 
-Il existe plusieurs problèmes connus que vous pouvez rencontrer :
-- Après la mise à niveau, les utilisateurs peuvent voir une boîte de dialogue d’avertissement « Échec de chargement du modèle ». Ce message s’affiche par erreur et peut être ignoré. 
-- Après la mise à niveau, certains noms d’espace de travail ne sont plus les mêmes qu’avant la mise à niveau. Si ce cas se présente, le nom de l’espace de travail est restauré avec un nom précédent ou le nom de l’espace de travail devient vide. Pour résoudre ce problème, renommez l’espace de travail avec le nom souhaité.
-- Après la mise à niveau d’un espace de travail sur lequel était installé un pack de contenu, vous pouvez voir des tableaux de bord supplémentaires dans l’espace de travail qui n’étaient pas visibles avant la mise à niveau. Cela se produit dans certains cas où un pack de contenu n’a pas été mis à jour récemment. Vous pouvez supprimer ces tableaux de bord sans problème.
+Il se peut que vous rencontriez plusieurs problèmes connus à l’issue de la mise à niveau :
+- Une boîte de dialogue d’avertissement « Échec du chargement du modèle » peut s’afficher. Ce message s’affiche par erreur et peut être ignoré. 
+- Certains noms d’espace de travail ne sont plus les mêmes qu’avant la mise à niveau. Dans ce cas, le nom précédent de l’espace de travail est rétabli ou le nom de l’espace de travail devient vide. Pour résoudre ce problème, renommez l’espace de travail avec le nom souhaité.
+- Si un pack de contenu était installé dans l’espace de travail, il se peut que vous trouviez dans ce dernier des tableaux de bord qui n’étaient pas visibles avant la mise à niveau. Dans ce cas, le pack de contenu n’a peut-être pas été mis à jour récemment. Vous pouvez supprimer ces tableaux de bord sans problème.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

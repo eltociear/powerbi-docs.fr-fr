@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0e21c4397708b289d7eccfbdbaa839cbf16c1f0b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 716439417a0e9cc57188c544f984f4936a424a47
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85224055"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632445"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Obtenir des données de page web en fournissant des exemples
 
@@ -36,7 +36,9 @@ Dans **À partir du web**, entrez l’URL de la page web de laquelle vous souhai
 
 Si vous souhaitez suivre la procédure, vous pouvez utiliser l’[URL du Microsoft Store](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) mentionnée dans cet article :
 
-    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```http
+https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```
 
 ![Boîte de dialogue web](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
@@ -48,14 +50,14 @@ Quand vous sélectionnez **OK**, vous êtes dirigé vers la boîte de dialogue *
 
 Dans cet exemple, nous allons extraire le *nom* et le *prix* de chacun des jeux dans la page. Pour cela, nous spécifions quelques exemples provenant de la page pour chaque colonne. Quand vous entrez les exemples, *Power Query* extrait les données qui correspondent au modèle des exemples d’entrées à l’aide d’algorithmes d’extraction de données intelligents.
 
-![données par exemple](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+![Capture d’écran montrant des données Internet.](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
 > [!NOTE]
 > Les suggestions de valeurs incluent uniquement les valeurs inférieures ou égales à 128 caractères en longueur.
 
 Une fois que vous avez extrait toutes les données souhaitées de la page web, sélectionnez **OK** pour accéder à l’éditeur Power Query. Vous pouvez appliquer d’autres transformations ou mettre en forme les données, notamment en combinant ces données avec d’autres données de nos sources.
 
-![données par exemple](media/desktop-connect-to-web-by-example/web-by-example_07.png)
+![Capture d’écran montrant des données extraites d’Internet dans l’éditeur Power Query.](media/desktop-connect-to-web-by-example/web-by-example_07.png)
 
 De là, vous pouvez créer des visuels ou bien utiliser les données de la page web pour créer des rapports dans Power BI Desktop.
 

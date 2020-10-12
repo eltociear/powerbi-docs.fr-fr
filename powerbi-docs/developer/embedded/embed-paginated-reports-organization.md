@@ -1,6 +1,6 @@
 ---
 title: Incorporer des rapports paginés Power BI dans votre application pour votre organisation
-description: Découvrez comment intégrer ou incorporer un rapport paginé Power BI dans une application à l’aide des API Power BI.
+description: Dans ce tutoriel, découvrez comment intégrer ou incorporer un rapport paginé Power BI dans une application à l’aide des API Power BI.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 1c348cbf74e6bc2999383bc5a5c031576a293ac2
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 0d52dd7df774dd834d0356e6de57b9c80beab801
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878749"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747617"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour votre organisation
 
 Dans **Power BI**, vous pouvez incorporer des rapports paginés dans une application pour votre organisation à l’aide du scénario *l’utilisateur possède les données*.
 
 Les rapports paginés sont des rapports conçus pour une impression haute qualité. En général, ces rapports contiennent beaucoup de données, rendues de manière à ce qu’elles tiennent sur les pages imprimées.
-Pour comprendre comment Power BI prend en charge les rapports paginés, consultez [Présentation des rapports paginés dans Power BI Premium](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
+Pour comprendre comment Power BI prend en charge les rapports paginés, consultez [Présentation des rapports paginés dans Power BI Premium](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 **User owns data** permet à votre application d’étendre le service Power BI afin qu’elle puisse utiliser l’analytique incorporée. Ce tutoriel montre comment intégrer un rapport paginé dans une application.
 

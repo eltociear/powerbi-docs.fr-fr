@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 18fae9e7bca385ee10fed90649430a8062054b2e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f1892af9d943df1f4abf39aa55ae99c5e6ee1b34
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219571"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633420"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Présentation des tableaux de bord dans Power BI](service-dashboards.md) et souhaitez maintenant créer les vôtres. Il existe différentes façons de créer un tableau de bord. Par exemple, vous pouvez créer un tableau de bord à partir d’un rapport, à partir de rien, à partir d’un jeu de données, en dupliquant un tableau de bord existant.  
@@ -27,7 +27,7 @@ Après avoir lu cet article, vous aurez une bonne compréhension des aspects sui
 - Comment épingler des vignettes 
 - Comment naviguer entre un tableau de bord et un rapport 
  
-![Tableau de bord](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![Capture d’écran montrant un tableau de bord Power BI avec plusieurs visualisations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
 > Les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Vous ne créez pas de tableaux de bord dans les apps mobiles Power BI, mais vous pouvez [les afficher et les partager](../consumer/mobile/mobile-apps-view-dashboard.md) à cet endroit.
@@ -59,7 +59,7 @@ Dans cette procédure étape par étape, nous allons importer l’un des exemple
     ![fenêtre OneDrive Entreprise](media/service-dashboard-create/power-bi-import.png)
 8. Lorsque le message de réussite s’affiche, sélectionnez **x** pour l’ignorer.
 
-   ![Message de réussite](media/service-dashboard-create/power-bi-view-datasetnew.png)
+   ![Capture d’écran montrant un message de réussite avec X en évidence.](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
 > Le saviez-vous ? Vous pouvez réduire le volet de navigation en sélectionnant l’icône avec trois lignes en haut ![Icône pour afficher ou masquer le volet de navigation](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Vous disposez ainsi de plus d’espace pour le rapport lui-même.
@@ -77,17 +77,17 @@ Dans cette procédure étape par étape, nous allons importer l’un des exemple
     ![Pointer sur une vignette](media/service-dashboard-create/power-bi-hover.png)
 4. Étant donné que nous créons un tableau de bord, sélectionnez l’option **Nouveau tableau de bord** et donnez-lui un nom.
 
-    ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-create/power-bi-pin-tile.png)
+    ![Capture d’écran montrant la fenêtre Épingler au tableau de bord.](media/service-dashboard-create/power-bi-pin-tile.png)
 5. Lorsque vous sélectionnez **Épingler**, Power BI crée un nouveau tableau de bord dans l’espace de travail actuel. Lorsque le message **Épinglé au tableau de bord** s’affiche, sélectionnez **Accéder au tableau de bord**. Si vous êtes invité à enregistrer le rapport, choisissez **Enregistrer**.
 
-    ![Message de réussite](media/service-dashboard-create/power-bi-pin-success.png)
+    ![Capture d’écran montrant un message de réussite avec l’option Accéder au tableau de bord en évidence.](media/service-dashboard-create/power-bi-pin-success.png)
 
     Power BI ouvre le nouveau tableau de bord. Il comporte une vignette, la visualisation que vous venez d’épingler.
 
    ![tableau de bord avec une seule vignette](media/service-dashboard-create/power-bi-pinned.png)
 7. Pour revenir au rapport, sélectionnez la vignette. Épinglez d’autres vignettes au nouveau tableau de bord. Lorsque la fenêtre **Épingler au tableau de bord** s’affiche, sélectionnez **Tableau de bord existant**.  
 
-   ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Capture d’écran montrant la fenêtre Épingler au tableau de bord avec l’option Tableau de bord existant en évidence.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## <a name="pin-an-entire-report-page-to-the-dashboard"></a>Épingler la totalité d’une page de rapport à un tableau de bord
 Au lieu d’épingler un visuel à la fois, vous pouvez [épingler une page de rapport tout entière comme *vignette dynamique*](service-dashboard-pin-live-tile-from-report.md). C’est parti.
@@ -102,11 +102,11 @@ Au lieu d’épingler un visuel à la fois, vous pouvez [épingler une page de r
 
 3. Lorsque la fenêtre **Épingler au tableau de bord** s’affiche, sélectionnez **Tableau de bord existant**.
 
-   ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Capture d’écran montrant la fenêtre Épingler au tableau de bord avec l’option Tableau de bord existant sélectionnée et un bouton Épingler un élément dynamique.](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. Dès que le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**. Les vignettes que vous avez épinglées à partir du rapport apparaîtront. Dans l’exemple ci-dessous, nous avons épinglé deux vignettes provenant de la première page du rapport et une vignette dynamique correspondant à la deuxième page du rapport.
 
-   ![Tableau de bord](media/service-dashboard-create/power-bi-dashboard.png)
+   ![Capture d’écran montrant un tableau de bord Power BI avec les visualisations de cet article.](media/service-dashboard-create/power-bi-dashboard.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Félicitations pour la création de votre premier tableau de bord ! Maintenant que vous avez un tableau de bord, vous pouvez vous en servir pour de multiples usages. Suivez l’un des articles suggérés ci-dessous, ou commencez à explorer par vous-même : 

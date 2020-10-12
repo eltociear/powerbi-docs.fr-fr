@@ -5,16 +5,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: dddc90ee30ff58269c723d247a6c0a9fe3718683
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ddaafaf175e2cb083e8e8eb494c156f0e9de8e0f
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855078"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633147"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Application Métriques Power BI Premium
 
@@ -61,7 +61,7 @@ Pour connaître les détails de l’indicateur de performance clé (KPI) de mém
 
 Deux scénarios sont expliqués, que vous pouvez afficher sur la page de rapport en sélectionnant **Scénario 1** ou **Scénario 2**. 
 
-![Page des détails de la mémoire active](media/service-premium-metrics-app/premium-metrics-app-03.png)
+![Capture d’écran montrant la page de détails de la mémoire active.](media/service-premium-metrics-app/premium-metrics-app-03.png)
 
 Associés à chaque scénario, les guides de dépannage fournissent des explications détaillées sur la signification des métriques et vous aident à mieux comprendre l’état de la capacité et les solutions possibles pour atténuer les éventuels problèmes. 
 
@@ -116,7 +116,7 @@ Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés 
 
 Pour déterminer si la capacité dispose de suffisamment de mémoire pour terminer ses charges de travail, vous pouvez vous référer au visuel **A : Pourcentage de mémoire consommée** affiché en haut de la page, qui indique la mémoire consommée par les jeux de données activement traités et qui, par conséquent, ne peuvent pas être supprimés. La ligne pointillée noire met en évidence les tendances. Dans une capacité subissant une forte sollicitation de la mémoire, le même visuel montrera clairement la ligne de tendance de la mémoire (ligne pointillée noire) vers le haut, ce qui signifie que ce problème peut empêcher le chargement d’autres jeux de données dans la mémoire à cet instant. La ligne de tendance, la ligne pointillée noire, montre la tendance de la croissance sur une base de sept jours de données. 
 
-![Page des détails de la mémoire active](media/service-premium-metrics-app/premium-metrics-app-07.png)
+![Capture d’écran montrant la page de détails de la mémoire active pour le scénario deux.](media/service-premium-metrics-app/premium-metrics-app-07.png)
 
 #### <a name="diagnosing-scenario-two"></a>Diagnostic du scénario 2
 
@@ -267,7 +267,7 @@ S’il n'y a pas assez de mémoire pour charger un jeu de données pour une requ
 
 Pour diagnostiquer le scénario 1, commencez par déterminer si la limitation est due à une mémoire insuffisante. Les étapes requises sont les suivantes.
 
-1.    Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
+1. Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -310,7 +310,7 @@ Pour les capacités dédiées, Power BI limite le nombre d’actualisations qui
 
 Pour diagnostiquer le scénario 2, commencez par déterminer si la limitation est due à l’exécution simultanée du nombre maximal d’actualisations. Les étapes requises sont les suivantes.
 
-1.    Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
+1. Sélectionnez le jeu de données qui vous intéresse dans le **tableau A** en cliquant dessus : 
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 

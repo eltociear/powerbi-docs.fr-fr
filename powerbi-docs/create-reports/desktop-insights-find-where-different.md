@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 975a7304e61042e408d732aa1c85bfed184f75f5
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3db27630da230ee1805386b039916181e993d412
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239153"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91632523"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Appliquer des insights dans Power BI Desktop pour rechercher où les distributions sont différentes (préversion)
 
@@ -110,20 +110,22 @@ Après examen des différentes colonnes et des valeurs de chacune de ces colonne
 
 Toutes les colonnes du modèle n’étant pas nécessairement examinées pendant la période disponible, il n’est pas garanti que les colonnes et les valeurs ayant le plus fort impact soient affichées. Cependant, diverses méthodes heuristiques sont utilisées pour faire en sorte que les meilleurs candidats parmi les colonnes soient examinés en premier. Par exemple, supposons qu’après examen de toutes les colonnes, il est établi que les colonnes/valeurs suivantes ont le plus fort impact sur la répartition (ordre décroissant) :
 
-    Subcategory = Touring Bikes
-    Channel = Direct
-    Subcategory = Mountain Bikes
-    Subcategory = Road Bikes
-    Subcategory = Kids Bikes
-    Channel = Store
+```console
+Subcategory = Touring Bikes
+Channel = Direct
+Subcategory = Mountain Bikes
+Subcategory = Road Bikes
+Subcategory = Kids Bikes
+Channel = Store
+```
 
 La sortie obtenue en fonction de l’ordre des colonnes est la suivante :
 
-    Subcategory: Touring Bikes, Mountain Bikes, Road Bikes (only three listed, with the text including “...amongst others” to indicate that more than three have a significant impact) 
+* Subcategory: Touring Bikes, Mountain Bikes, Road Bikes (seulement trois listées avec la mention «...amongst others » (entre autres) pour indiquer qu’il y en a plus de trois qui ont un impact significatif) 
 
-    Channel = Direct (only Direct listed, if it’s level of impact was much greater than Store)
+* Channel = Direct (seul Direct est listé si son impact était bien plus fort que Store)
 
-## <a name="considerations-and-limitations"></a>Considérations et limitations
+## <a name="considerations-and-limitations"></a>Observations et limitations
 La liste suivante répertorie les scénarios actuellement non pris en charge pour la fonctionnalités d’affichage d’**informations** :
 
 * Filtres TopN
@@ -144,7 +146,7 @@ Pour plus d’informations sur **Power BI Desktop** et la prise en main de cette
 
 * [Qu’est-ce que Power BI Desktop ?](../fundamentals/desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](../transform-model/desktop-query-overview.md)
-* [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Se connecter aux données dans Power BI Desktop](../connect-data/desktop-connect-to-data.md)
-* [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Sources de données dans Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Se connecter à des données dans Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Mettre en forme et combiner des données dans Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Tâches courantes relatives aux requêtes dans Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   

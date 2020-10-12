@@ -1,5 +1,5 @@
 ---
-title: Conseils pour les performances
+title: Conseils relatifs aux performances
 description: Guide pratique pour créer un visuel Power BI hautes performances
 author: KesemSharabi
 ms.author: kesharab
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/20/2020
-ms.openlocfilehash: 7ebc02b2c459517957425e78438e12e89dc2e1bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c22c634ef59a1aae2994dcacaae62dc8ebed7474
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82196557"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746073"
 ---
 # <a name="how-to-build-a-high-performance-power-bi-visual"></a>Guide pratique pour créer un visuel Power BI hautes performances
 Cet article aborde les techniques permettant à un développeur d’obtenir des performances élevées lors du rendu des visuels. 
@@ -76,7 +76,7 @@ Pour être sûr que votre code est rapide et ne ralentit pas le navigateur, acc�
 ### <a name="avoid-dom-manipulation"></a>Éviter la manipulation du modèle DOM 
 Limitez autant que possible la manipulation du modèle DOM.  Les opérations d’insertion comme `prepend()`, `append()` et `after()` prennent du temps et ne doivent pas être utilisées sauf si elles sont vraiment nécessaires.
 
-Par exemple :
+Exemple :
 
   ```javascript
   for (let i=0; i<1000; i++) { 
@@ -104,7 +104,7 @@ Pour plus d’informations, consultez [youmightnotneedjquery.com](http://youmigh
 ### <a name="use-canvas-or-webgl"></a>Utiliser Canvas ou WebGL 
 Pour une utilisation répétée d’animations, envisagez d’utiliser **Canvas** ou **WebGL** au lieu de SVG. Contrairement à SVG, avec ces options, les performances sont déterminées par la taille plutôt que par le contenu. 
 
-Pour plus d’informations sur les différences, consultez [SVG vs Canvas: How to Choose](https://msdn.microsoft.com/library/gg193983(v=vs.85).aspx). 
+Pour plus d’informations sur les différences, consultez [SVG vs Canvas: How to Choose](/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)). 
 
 ### <a name="use-requestanimationframe-instead-of-settimeout"></a>Utiliser requestAnimationFrame au lieu de setTimeout 
 Si vous utilisez [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) pour mettre à jour vos animations à l’écran, vos fonctions d’animation sont appelées **avant** que le navigateur appelle une autre fonction pour actualiser le dessin.
@@ -113,4 +113,4 @@ Pour plus d’informations, consultez cet [exemple](https://testdrive-archive.az
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez plus d’informations sur les techniques d’optimisation dans le [Guide d’optimisation pour Power BI](/power-bi/guidance/power-bi-optimization).
+Découvrez plus d’informations sur les techniques d’optimisation dans le [Guide d’optimisation pour Power BI](../../guidance/power-bi-optimization.md).

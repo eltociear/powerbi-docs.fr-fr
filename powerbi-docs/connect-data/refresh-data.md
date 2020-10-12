@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/16/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ddb5e4d1476025965e6227e9ae443441f2060fcd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c5be2a9fa87b55d0a1b98e284ec4b6b7e1dd9c0c
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219732"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633374"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -284,7 +284,8 @@ Dans la plupart des cas, les jeux de données Power BI qui utilisent des sources
  
 Pour déterminer si votre source de données dynamique peut être actualisée, ouvrez la boîte de dialogue **Paramètres de la source de données** dans **l’éditeur de Power Query**, puis sélectionnez **Sources de données dans le fichier actif**. Dans la fenêtre qui s’affiche, recherchez le message d’avertissement suivant, comme illustré dans l’image suivante :
  
-    Some data sources may not be listed because of hand-authored queries.
+> [!NOTE]
+> Certaines sources de données risquent de ne pas être listées en raison de requêtes créées manuellement.
 
 ![Indicateur de source de données dynamique](media/refresh-data/dynamic-data-source.png)
 

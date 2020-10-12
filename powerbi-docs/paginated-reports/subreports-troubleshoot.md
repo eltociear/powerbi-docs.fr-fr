@@ -1,6 +1,6 @@
 ---
 title: Résoudre les problèmes de sous-rapports dans les rapports paginés Power BI
-description: Dans cet article, vous allez découvrir les sources de données prises en charge pour les rapports paginés dans le service Power BI, et comment vous connecter à des sources de données Azure SQL Database.
+description: Découvrez les solutions aux problèmes courants liés à l’utilisation de sous-rapports, qui sont des éléments de rapport à l’intérieur d’un rapport paginé.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
 ms.date: 04/29/2020
-ms.openlocfilehash: 49a4143fe3dbf55b31b4d30473fe6af3c047dda4
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 6a0e90036b759c409a9f5b3e994571c2a0eb510c
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485918"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747502"
 ---
 # <a name="troubleshoot-subreports-in-power-bi-paginated-reports"></a>Résoudre les problèmes de sous-rapports dans les rapports paginés Power BI
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4269ccb5f86a364d2bf4abf89e3184096a368ff3
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c1dc3da67cf6160360833e8702fdc492fa97b803
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234706"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633489"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Utiliser la fonctionnalité Questions et réponses Power BI pour explorer vos données et créer des visuels
 
@@ -33,7 +33,7 @@ Dans le service Power BI (app.powerbi.com), un tableau de bord contient des vign
 
 La zone de question Questions et réponses située en haut à gauche de votre tableau de bord vous permet de taper votre question dans un langage naturel. Vous ne voyez pas la zone de question ? Consultez [Considérations et résolution des problèmes](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) dans l’article **Questions et réponses pour les consommateurs**.  La fonctionnalité Questions et réponses reconnaît les mots que vous tapez et déduit l’emplacement (le jeu de données) où se trouve la réponse. Q&R vous aide également à formuler votre question grâce à la saisie semi-automatique, à la reformulation, ainsi qu’à d’autres aides textuelles et visuelles.
 
-![Zone de question de Questions et réponses](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
+![Capture d’écran montrant un tableau de bord Power BI avec une option Poser une question sur vos données.](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
 La réponse à votre question s’affiche comme une visualisation interactive et change quand vous modifiez votre question.
 
@@ -87,7 +87,7 @@ Pour utiliser Questions et réponses dans des rapports, vous devez disposer d’
 
 2. Une zone de question Questions et réponses s’affiche sur le canevas de rapport. Dans l’exemple ci-dessous, la zone de question s’affiche sur une autre visualisation. C’est un fonctionnement correct, mais il peut être préférable d’ajouter une page vierge au rapport avant de poser une question.
 
-    ![Zone de question de Questions et réponses](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
+    ![Capture d’écran montrant un canevas avec la zone de question Questions et réponses dans une visualisation.](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 
 3. Placez votre curseur dans la zone de question. À mesure que vous tapez, Questions et réponses affiche des suggestions de formulation de votre question.
 

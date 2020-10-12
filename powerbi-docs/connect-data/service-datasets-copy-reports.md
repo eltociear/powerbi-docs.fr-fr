@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b6f5b1250604f435a49fe6310193eeb80da16763
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 86c663e7b9ba035af6592dc10972d868344df7f7
+ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236803"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91633205"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Copier des rapports à partir d’autres espaces de travail
 
@@ -82,7 +82,7 @@ Si vous avez dans un espace de travail un rapport basé sur un jeu de données d
 
 1. En mode Liste des rapports, sélectionnez **Afficher les éléments associés**.
 
-    ![l’icône Afficher les travaux associés](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
+    ![Capture d’écran montrant l’icône Afficher les éléments associés sous Actions.](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
 
 1. La boîte de dialogue **Contenu associé** affiche tous les éléments associés. Dans cette liste, le jeu de données ressemble à n’importe quel autre. Vous ne pouvez pas savoir qu’il se trouve dans un autre espace de travail. Ce problème est connu.
  
@@ -98,7 +98,7 @@ Vous pouvez décider que vous ne voulez plus du rapport et de son jeu de donnée
 
 2. Dans la liste des jeux de données, vous voyez que les jeux de données partagés n’ont pas d’icône **Supprimer**. Actualisez la page, ou accédez à une autre page et revenez à la liste. Le jeu de données doit avoir disparu. Si ce n’est pas le cas, cochez **Afficher les éléments associés**. Il peut être lié à une autre table de votre espace de travail.
 
-    ![l’icône Afficher les travaux associés](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+    ![Capture d’écran montrant un jeu de données avec l’option Afficher les éléments associés en vue de rechercher les tables associées.](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
 
     > [!NOTE]
     > Supprimer le jeu de données partagé dans cet espace de travail ne supprime pas le jeu de données. Cette opération supprime simplement la référence à celui-ci.
