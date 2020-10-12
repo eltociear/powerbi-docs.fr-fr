@@ -1,17 +1,17 @@
 ---
 title: Catalogue de formations des décisionnaires métier et techniques
-description: Retrouver toutes les options de formation Power BI
+description: Recherchez toutes les options de formation pour Power BI pour les preneurs de décisions commerciales et techniques, des plus simples aux plus avancées.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: af44ca4674d66c8415b9919c9c83e3fbfda391b1
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: d64b83c08f4b7a332d0b4b894ea136921bc57ae6
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528019"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749250"
 ---
 # <a name="business-and-technical-decision-makers-learning-catalog"></a>Catalogue de formations des décisionnaires métier et techniques
 

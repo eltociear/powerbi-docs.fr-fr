@@ -1,17 +1,17 @@
 ---
 title: Catalogue des formations pour les partenaires en prévente
-description: Découvrez toutes les options de formation pour Power Apps
+description: Recherchez toutes les options de formation pour les experts en pré-vente de Power Apps, des plus simples aux plus avancées.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 4225a8a7cc0da8c84b326fc2a2c9c082fd3fb3e6
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: bdc42b263e274983e5bcf85dde4d733c94d5d82d
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526108"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747686"
 ---
 # <a name="partner-pre-sales-learning-catalog"></a>Catalogue des formations pour les partenaires en prévente
 

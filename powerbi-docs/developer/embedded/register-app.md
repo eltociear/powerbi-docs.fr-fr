@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 04/02/2019
-ms.openlocfilehash: 92bccc80c36fdf6de0972dd67b33a4f1f9c85c0c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: eac2f6d1bcb79ccf25f69eb79b73ae884898ec58
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85240150"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748675"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Inscrire une application Azure AD à utiliser avec Power BI
 
 Découvrez comment inscrire une application dans Azure Active Directory (Azure AD) afin de l’utiliser avec l’incorporation de contenu Power BI.
 
-Vous inscrivez votre application auprès d’Azure AD afin de l’autoriser à accéder aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Une fois votre application inscrite, vous pouvez établir une identité pour celle-ci et spécifier des autorisations sur les ressources REST de Power BI.
+Vous inscrivez votre application auprès d’Azure AD afin de l’autoriser à accéder aux [API REST Power BI](/rest/api/power-bi/). Une fois votre application inscrite, vous pouvez établir une identité pour celle-ci et spécifier des autorisations sur les ressources REST de Power BI.
 
 > [!IMPORTANT]
 > Pour pouvoir inscrire une application Power BI, vous devez disposer d’un [locataire Azure Active Directory et d’un utilisateur d’organisation](create-an-azure-active-directory-tenant.md). Si vous n’êtes pas encore inscrit à Power BI avec un utilisateur de votre locataire, l’inscription de l’application échoue.
@@ -54,7 +54,7 @@ Voici comment inscrire votre application avec l’outil d’inscription d’appl
 
 5. Si vous avez sélectionné **Application web côté serveur** pour le type d’application, continuez en entrant une valeur pour **URL de la page d’accueil** et pour **URL de redirection**. L’**URL de redirection** fonctionne avec n’importe quelle URL valide et doit correspondre à l’application que vous avez créée. Si vous avez sélectionné **Native**, passez à l’étape 6.
 
-6. Choisissez les API Power BI dont votre application a besoin. Pour plus d’informations sur les autorisations d’accès de Power BI, consultez [Autorisations et consentement dans le point de terminaison de la plateforme d’identités Microsoft](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Sélectionnez ensuite **Inscrire**.
+6. Choisissez les API Power BI dont votre application a besoin. Pour plus d’informations sur les autorisations d’accès de Power BI, consultez [Autorisations et consentement dans le point de terminaison de la plateforme d’identités Microsoft](/azure/active-directory/develop/v2-permissions-and-consent). Sélectionnez ensuite **Inscrire**.
 
     ![Choisir les API à inscrire](media/register-app/register-app-new-app-registration-apis-register.png)
 
@@ -86,7 +86,7 @@ L’autre option pour l’inscription de votre application consiste à accéder 
 
 5. Suivez les invites pour créer une application.
 
-   Pour plus d’informations sur la façon d’inscrire des applications dans Azure Active Directory, consultez [Inscrire une application avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
+   Pour plus d’informations sur la façon d’inscrire des applications dans Azure Active Directory, consultez [Inscrire une application avec Azure Active Directory](/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Comment obtenir l’ID d’application
 
@@ -94,7 +94,7 @@ Quand vous inscrivez une application, vous recevez un [ID d’application](embed
 
 ## <a name="how-to-get-the-service-principal-object-id"></a>Comment obtenir l’ID d’objet de principal du service
 
-Quand vous utilisez des [API Power BI](https://docs.microsoft.com/rest/api/power-bi/), veillez à définir des opérations en utilisant l’[ID d’objet de principal du service](embed-service-principal.md) pour référencer le principal du service, par exemple en appliquant un principal du service comme administrateur à un espace de travail.
+Quand vous utilisez des [API Power BI](/rest/api/power-bi/), veillez à définir des opérations en utilisant l’[ID d’objet de principal du service](embed-service-principal.md) pour référencer le principal du service, par exemple en appliquant un principal du service comme administrateur à un espace de travail.
 
 ## <a name="apply-permissions-to-your-application-within-azure-ad"></a>Appliquer des autorisations à votre application dans Azure AD
 
@@ -120,7 +120,7 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
 
 ### <a name="applying-permissions-programmatically"></a>Application d’autorisations par programmation
 
-1. Vous devez obtenir les principaux du service (utilisateurs) existants au sein de votre locataire. Pour plus d’informations sur la procédure à suivre, voir [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+1. Vous devez obtenir les principaux du service (utilisateurs) existants au sein de votre locataire. Pour plus d’informations sur la procédure à suivre, voir [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Vous pouvez appeler l’API *Get servicePrincipal* sans {ID} et celle-ci obtient tous les principaux du service du locataire.
 
@@ -141,11 +141,11 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
 
 4. Accorder les autorisations de l’application à l’API Power BI
 
-   Si vous utilisez un locataire existant et que vous ne voulez pas accorder d’autorisations au nom de tous les utilisateurs de ce locataire, vous pouvez accorder des autorisations à un utilisateur spécifique en remplaçant la valeur de **contentType** par **Principal**.
+   Si vous utilisez un locataire existant et que vous ne voulez pas accorder d’autorisations au nom de tous les utilisateurs de ce locataire, vous pouvez accorder des autorisations à un utilisateur spécifique en remplaçant la valeur de **consentType** par **Principal**.
 
    La valeur pour **consentType** peut fournir **AllPrincipals** ou **Principal**.
 
-   * **AllPrincipals** peut être utilisé uniquement par un administrateur de locataires pour accorder des autorisations au nom de tous les utilisateurs du locataire.
+   * **AllPrincipals** peut être utilisé uniquement par un administrateur Power BI pour accorder des autorisations au nom de tous les utilisateurs du locataire.
    * **Principal** est utilisé pour accorder des autorisations au nom d’un utilisateur spécifique. Dans ce cas, une propriété supplémentaire doit être ajoutée au corps de la demande - *principalId={User_ObjectId}* .
 
      Vous devez *Accorder des autorisations* pour éviter qu’Azure AD exige une confirmation du compte principal, ce qui n’est pas possible avec une connexion non interactive.
@@ -164,18 +164,18 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
      }
      ```
 
-    Le **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* n’est pas universel, mais dépendant du locataire. Cette valeur est l’objectId de l’application « Service Power BI » dans le locataire Azure Active Directory (AAD).
+    Le **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* n’est pas universel, mais dépendant du locataire. Cette valeur est l’objectId de l’application « Service Power BI » dans Azure Active Directory.
 
     L’utilisateur peut obtenir rapidement cette valeur dans le portail Azure :
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
 
     2. Rechercher « Service Power BI » dans la zone de recherche
 
-5. Accorder les autorisations de l’application à Azure Active Directory (AAD)
+5. Accorder les autorisations de l’application à Azure Active Directory
 
    La valeur pour **consentType** peut fournir **AllPrincipals** ou **Principal**.
 
-   * **AllPrincipals** peut être utilisé uniquement par un administrateur de locataires pour accorder des autorisations pour tous les utilisateurs du locataire.
+   * **AllPrincipals** peut être utilisé uniquement par un administrateur Power BI pour accorder des autorisations pour tous les utilisateurs du locataire.
    * La valeur **Principal** est utilisée pour accorder une autorisation pour un utilisateur spécifique. Dans ce cas, une propriété supplémentaire doit être ajoutée au corps de la demande - *principalId={User_ObjectId}* .
 
    Vous devez *Accorder des autorisations* pour éviter qu’Azure AD exige une confirmation du compte principal, ce qui n’est pas possible avec une connexion non interactive.

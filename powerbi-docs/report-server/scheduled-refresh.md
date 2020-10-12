@@ -1,6 +1,6 @@
 ---
 title: Actualisation planifiée de rapport Power BI dans Power BI Report Server
-description: Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
+description: L’actualisation planifiée des rapports Power BI permet de tenir à jour les données d’un rapport avec un modèle incorporé.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 89adff51d70be24e4f42c379a729fd1123ca10a5
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 710df5f4159f49884d9eee1044b2c077c7edcb88
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861771"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749089"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Actualisation planifiée de rapport Power BI dans Power BI Report Server
 L’actualisation planifiée des rapports Power BI permet de tenir à jour les données d’un rapport.
@@ -24,24 +24,24 @@ L’actualisation planifiée est spécifique des rapports Power BI avec un modè
 
 L’actualisation planifiée est configurée dans la section gestion d’un rapport. Pour plus d’informations sur la façon de configurer une actualisation planifiée, voir [Comment configurer une actualisation planifiée de rapport Power BI](configure-scheduled-refresh.md).
 
-## <a name="how-this-works"></a>Comment cela fonctionne
+## <a name="how-this-works"></a>Principe de fonctionnement
 Plusieurs composants sont impliqués lors de l’utilisation de l’actualisation planifiée pour vos rapports Power BI.
 
 * SQL Server Agent est utilisé en tant que minuteur pour générer des événements planifiés.
-* Les travaux planifiés sont ajoutés à une file d’attente d’événements et de notifications dans la base de données du serveur de rapports. Dans un déploiement avec montée en puissance parallèle, la file d’attente est partagée entre tous les serveurs de rapports figurant dans le déploiement.
-* Le traitement des rapports qui se produit suite à un événement de planification est effectué en arrière-plan.
+* Les travaux planifiés sont ajoutés à une file d’attente d’événements et de notifications dans la base de données du serveur de rapports. Dans un déploiement avec montée en puissance parallèle, la file d'attente est partagée par tous les serveurs de rapports de la structure.
+* Le traitement des rapports qui se produit à la suite d'un événement de planification est entièrement effectué en arrière-plan.
 * Le modèle de données est chargé dans une instance Analysis Services.
 * Pour certaines sources de données, le moteur mashup Power Query est utilisé pour se connecter aux sources de données et transformer les données. Une connexion à d’autres sources de données est possible directement à partir d’un service Analysis Services utilisé pour héberger les modèles de données pour Power BI Report Server.
 * Les nouvelles données sont chargées dans le modèle de données à l’intérieur d’Analysis Services.
 * Dans une configuration de scale-out, le modèle de données peut être répliqué entre les nœuds.
 * Analysis Services traite les données et exécute tous les calculs nécessaire.
 
-Power BI Report Server maintient une file d’attente des événements pour toutes les opérations planifiées. Il interroge la file d’attente à intervalles réguliers pour vérifier la présence de nouveaux événements. Par défaut, la file d’attente est analysée toutes les 10 secondes. Vous pouvez modifier l’intervalle en changeant les paramètres de configuration **PollingInterval**, **IsNotificationService** et **IsEventService** dans le fichier RSReportServer.config. **IsDataModelRefreshService** peut également être utilisé pour indiquer si un serveur de rapports traite les événements planifiés.
+Power BI Report Server maintient une file d’attente des événements pour toutes les opérations planifiées. Il interroge régulièrement la file d'attente pour vérifier si elle contient de nouveaux événements. Par défaut, la file d'attente fait l'objet d'une analyse toutes les 10 secondes. Si vous souhaitez changer cette fréquence, modifiez les paramètres de configuration **PollingInterval**, **IsNotificationService**et **IsEventService** dans le fichier RSReportServer.config. **IsDataModelRefreshService** peut également être utilisé pour indiquer si un serveur de rapports traite les événements planifiés.
 
 ### <a name="analysis-services"></a>Analysis Services
 Rendre un rapport Power BI ainsi qu’effectuer une actualisation planifiée nécessitent le chargement du modèle de données du rapport Power BI dans Analysis Services. Un processus Analysis Services s’exécute avec Power BI Report Server.
 
-## <a name="considerations-and-limitations"></a>Considérations et limitations
+## <a name="considerations-and-limitations"></a>Observations et limitations
 ### <a name="when-scheduled-refresh-cant-be-used"></a>Quand une actualisation planifiée ne peut pas être utilisée
 Il n’est pas possible de créer un plan d’actualisation planifiée sur certains rapports Power BI. La liste suivante répertorie les rapports Power BI sur lesquels il n’est pas possible de créer un plan d’actualisation planifiée.
 

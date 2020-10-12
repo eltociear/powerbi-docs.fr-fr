@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
-ms.date: 12/17/2018
-ms.openlocfilehash: 8003d7ed6d6b455860ed5ed3bc4ada06c0a35c5f
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.date: 09/30/2020
+ms.openlocfilehash: 10790ef963a11fd78c41a28b54e7d177bd96a157
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537800"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91747916"
 ---
 # <a name="power-bi-visuals-faq"></a>Questions fréquentes (FAQ) sur les visuels Power BI
 
@@ -32,9 +32,9 @@ Une fois que l’administrateur charge une nouvelle version d’un visuel Power�
 
 Les utilisateurs trouveront les visuels Power BI de l’organisation dans le magasin Power BI Desktop et Power BI Service intégré, sous l'onglet *MON ORGANISATION*. 
 
-### <a name="if-an-admin-uploads-a-power-bi-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Si un administrateur charge un visuel Power BI à partir de la Place de marché publique dans le magasin de l’organisation, est-il automatiquement mis à jour une fois qu’un fournisseur met à jour le visuel dans la Place de marché publique ?
+### <a name="if-an-admin-uploads-a-power-bi-visual-from-the-public-marketplace-to-the-organization-store-using-add-visual--from-appsource-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Si un administrateur charge un visuel Power BI à partir de la Place de marché publique dans le magasin de l’organisation avec *Ajouter visuel > À partir d’AppSource*, est-il automatiquement mis à jour une fois qu’un fournisseur met à jour le visuel dans la Place de marché publique ?
 
-Non, il n’y a pas de mise à jour automatique à partir de la Place de marché publique. L’administrateur a la responsabilité de la mise à jour de la version des visuels Power BI de l’organisation.
+Oui, le visuel est automatiquement mis à jour à partir de la Place de marché publique. Si le visuel est certifié, la certification est conservée, y compris les fonctionnalités supplémentaires telles que l’exportation au format PDF ou PowerPoint.
 
 ### <a name="is-there-a-way-to-disable-the-organization-store"></a>Est-il possible de désactiver le magasin de l’organisation ?
 
@@ -135,7 +135,7 @@ Les visuels IAP proposent des achats facultatifs dans l’application pour les f
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Qu’est-ce qui change dans le processus de soumission ?
 
-Le processus de soumission des visuels Power BI IAP à la Place de marché est identique à celui des visuels Power BI gratuits. Vous pouvez soumettre un visuel Power BI afin qu’il soit certifié en utilisant l’[Espace partenaires](https://docs.microsoft.com/partner-center/).
+Le processus de soumission des visuels Power BI IAP à la Place de marché est identique à celui des visuels Power BI gratuits. Vous pouvez soumettre un visuel Power BI afin qu’il soit certifié en utilisant l’[Espace partenaires](/partner-center/).
 
 
 Lors de l'inscription de votre visuel Power BI, accédez à l'onglet *Programme d’installation du produit*, puis cochez la case *Mon produit nécessite l'achat d'un service*.

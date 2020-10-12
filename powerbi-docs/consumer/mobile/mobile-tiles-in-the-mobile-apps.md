@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 68bfe1a97d9db0b12f3942961c4e50e5c535fd84
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 23f1ab7fb7ae5e143084042699db708c0827114f
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856182"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668548"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -57,7 +57,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
     ![Capture d’écran d’une boîte de dialogue montrant l’autorisation de Power BI à ouvrir des liens avec un navigateur interne.](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     Une fois que vous avez ouvert le lien dans l’application Power BI, vous pouvez le copier et l’ouvrir dans une fenêtre de navigateur.
-7. [Ouvrez le rapport](mobile-reports-in-the-mobile-apps.md) ![icône Ouvrir le rapport](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) sur lequel se base la vignette.
+7. [Ouvrez le rapport](mobile-reports-in-the-mobile-apps.md) ![Ouvrir le rapport dans iOS](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) sur lequel se base la vignette.
 8. Pour quitter le mode focus de la vignette, appuyez sur le nom de la vignette, puis sur le nom du tableau de bord ou **Mon espace de travail**.
    
     ![Capture d’écran d’un tableau de bord, présentant des flèches vers Mon espace de travail et l’exemple Analyse des opportunités.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -72,7 +72,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    * Appuyer sur le graphique pour déplacer la barre dans un graphique en courbes, à barres, à colonnes ou en bulles, pour afficher les valeurs d’un point spécifique dans la visualisation.  
    * Appuyez sur l’icône de crayon ![icône de crayon](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) pour [annoter une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), puis sur l’icône Partager un instantané ![icône Partager un instantané](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [la partager avec d’autres utilisateurs](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
-   * Cliquez sur l’icône Ouvrir le rapport ![icône Ouvrir le rapport](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
+   * Appuyez sur l’icône Ouvrir le rapport ![Icône Ouvrir le rapport dans Android.](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
 3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien** ![icône de lien](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
    
     ![Capture d’écran d’un tableau de bord montrant les points de suspension verticaux pointant sur Ouvrir le lien.](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)

@@ -1,17 +1,17 @@
 ---
 title: Catalogue des formations d’analyste de données
-description: Retrouver toutes les options de formation Power BI
+description: Recherchez toutes les options de formation pour Power BI pour les analystes de données, des plus simples aux plus avancées
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: f9b7f7f56065f3a27ee2fde3aeecb95a8f19ebdb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 711cb902eed3eee22eb117f9c2fe1f772291671b
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527835"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746559"
 ---
 # <a name="data-analyst-learning-catalog"></a>Catalogue des formations d’analyste de données
 

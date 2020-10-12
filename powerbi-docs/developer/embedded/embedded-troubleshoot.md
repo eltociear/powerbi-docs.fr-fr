@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 245a23f0477b542ecd402a5028cffebe2d1142ad
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 3016cce1e4dd8fb1be5b5ab95ebcc73bdcb56ac1
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485688"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749066"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -75,27 +75,27 @@ Une capture Fiddler peut être nécessaire pour approfondir vos recherches. L’
 
 Une capture Fiddler peut être nécessaire pour approfondir vos recherches. Plusieurs raisons peuvent expliquer une erreur 403.
 
-* L’utilisateur a dépassé la quantité de jetons incorporés pouvant être générés sur une capacité partagée. Achetez des capacités Azure pour générer des jetons incorporés et attribuer l’espace de travail à cette capacité. Consultez [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* L’utilisateur a dépassé la quantité de jetons incorporés pouvant être générés sur une capacité partagée. Achetez des capacités Azure pour générer des jetons incorporés et attribuer l’espace de travail à cette capacité. Consultez [Créer une capacité Power BI Embedded dans le portail Azure](/azure/power-bi-embedded/create-capacity).
 * Le jeton d’authentification Azure AD a expiré.
 * L’utilisateur authentifié n’est pas membre du groupe (espace de travail).
 * L’utilisateur authentifié n’est pas administrateur du groupe (espace de travail).
-* L’utilisateur authentifié ne dispose pas des autorisations nécessaires. Les autorisations peuvent être mises à jour à l’aide de l’[API refreshUserPermissions](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions).
+* L’utilisateur authentifié ne dispose pas des autorisations nécessaires. Les autorisations peuvent être mises à jour à l’aide de l’[API refreshUserPermissions](/rest/api/power-bi/users/refreshuserpermissions).
 * L’en-tête d’autorisation n’est peut-être pas répertorié correctement. Vérifiez l’absence de fautes de frappe.
 
 Le backend de l’application doit peut-être actualiser le jeton d’authentification avant d’appeler GenerateToken.
 
-    ```
-    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-    Host: wabi-us-north-central-redirect.analysis.windows.net
-    ...
-    Authorization: Bearer eyJ0eXAiOi...
-    ...
+```console
+GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+Host: wabi-us-north-central-redirect.analysis.windows.net
+...
+Authorization: Bearer eyJ0eXAiOi...
+...
 
-    HTTP/1.1 403 Forbidden
-    ...
+HTTP/1.1 403 Forbidden
+...
 
-    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-    ```
+{"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
 
 ## <a name="authentication"></a>Authentification
 
@@ -113,13 +113,13 @@ Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la
 
 Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que ***error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe n’est plus utilisée depuis le 14 juin 2018 par défaut.
 
-Il existe un moyen de la réactiver en utilisant une [stratégie Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) dont la portée peut être limitée à l’organisation ou à un [principal du service](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+Il existe un moyen de la réactiver en utilisant une [stratégie Azure AD](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) dont la portée peut être limitée à l’organisation ou à un [principal du service](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 Nous vous recommandons d’activer cette stratégie uniquement en fonction de chaque application.
 
 Pour créer cette stratégie, vous devez être **administrateur général** de l’annuaire dans lequel vous créez et affectez la stratégie. Voici un exemple de script qui vous montre comment créer la stratégie et l’affecter au principal du service de l’application :
 
-1. Installez le [module PowerShell Azure AD (Préversion)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Installez le [module PowerShell Azure AD (Préversion)](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Exécutez les commandes PowerShell ci-dessous ligne par ligne (en veillant à ce que la variable $sp n’ait pas plus d’une application en résultat).
 
@@ -153,7 +153,7 @@ GenerateToken peut échouer, quand une identité effective est fournie, pour dif
 
 Pour vérifier le motif de l’erreur, essayez les étapes ci-dessous.
 
-* Exécutez [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). La propriété IsEffectiveIdentityRequired est-elle définie sur True ?
+* Exécutez [get dataset](/rest/api/power-bi/datasets). La propriété IsEffectiveIdentityRequired est-elle définie sur True ?
 * Le nom d’utilisateur est obligatoire pour les identités effectives.
 * Si IsEffectiveIdentityRolesRequired est défini sur True, le rôle est requis.
 * L’ID du jeu de données est obligatoire pour les identités effectives.
@@ -270,19 +270,23 @@ Si vous travaillez avec l’expérience **Incorporer pour vos clients**, enregis
 
 Quand vous sélectionnez **Accorder des autorisations** (à l’étape Accorder des autorisations), vous obtenez l’erreur suivante :
 
-    AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```output
+AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```
 
 La solution consiste à fermer la fenêtre contextuelle, à attendre quelques secondes et à recommencer l’opération. Il peut être nécessaire de répéter cette opération quelques fois. Un intervalle de temps provoque ce problème : le processus d’inscription de l’application ne se termine pas quand il est disponible pour des API externes.
 
 Le message d’erreur suivant s’affiche lors de l’exécution de l’exemple d’application :
 
-    Password is empty. Please fill password of Power BI username in web.config.
+```output
+Password is empty. Please fill password of Power BI username in web.config.
+```
 
 Cette erreur se produit, car la seule valeur qui n’est pas injectée dans l’exemple d’application est votre mot de passe utilisateur. Ouvrez le fichier Web.config dans la solution et renseignez le champ pbiPassword avec votre mot de passe utilisateur.
 
 Si vous obtenez l’erreur AADSTS50079 : L’utilisateur doit utiliser l’authentification multifacteur.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Vous devez utiliser un compte AAD pour lequel l’authentification multifacteur n’est pas activée.
 
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Utilisation de l’exemple d’application Embed for your organization (Incorporer pour votre organisation)
 
@@ -290,21 +294,23 @@ Si vous travaillez avec l’expérience **Incorporer pour votre organisation**, 
 
 Quand vous exécutez l’exemple d’application **Embed for your organization**, vous obtenez l’erreur suivante :
 
-    AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```output
+AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```
 
 La raison de cette erreur est que l’URL de redirection spécifiée pour l’application de serveur web est différente de l’URL de l’exemple. Si vous voulez inscrire l’exemple d’application, utilisez `https://localhost:13526/` comme URL de redirection.
 
-Si vous voulez modifier l’application inscrite, découvrez comment [mettre à jour l’application inscrite auprès d’Azure AD](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app) pour qu’elle permettre l’accès aux API web.
+Si vous voulez modifier l’application inscrite, découvrez comment [mettre à jour l’application inscrite auprès d’Azure AD](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app) pour qu’elle permettre l’accès aux API web.
 
-Si vous voulez modifier votre profil ou vos données utilisateur Power BI, découvrez comment modifier vos [données Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts).
+Si vous voulez modifier votre profil ou vos données utilisateur Power BI, découvrez comment modifier vos [données Power BI](../../fundamentals/service-basic-concepts.md).
 
-Si vous obtenez l’erreur AADSTS50079 : L’utilisateur doit utiliser l’authentification multifacteur.
+Si vous obtenez l’erreur - AADSTS50079 : L’utilisateur doit utiliser l’authentification multifacteur.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Vous devez utiliser un compte AAD pour lequel l’authentification multifacteur n’est pas activée.
 
 Pour plus d’informations, consultez le [FAQ sur Power BI Embedded](embedded-faq.md).
 
-D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 
 Si vous avez besoin d’aide, [contactez le support ](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) ou [créez un ticket de support via le portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), et fournissez les messages d’erreur que vous recevez.
 

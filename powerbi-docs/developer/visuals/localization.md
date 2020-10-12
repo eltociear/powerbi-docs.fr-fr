@@ -1,6 +1,6 @@
 ---
-title: Présentation du mappage des vues de données dans les visuels Power BI
-description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels.
+title: Ajouter les paramètres régionaux dans Power BI pour les visuels Power BI
+description: Découvrez comment les visuels peuvent récupérer les paramètres régionaux Power BI pour localiser leur contenu dans la langue appropriée.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: fece594fa6236f01c707f0b84ddca977fb32dede
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 7492b70b9a82fe6c5579c4251000e9af7509e8fb
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349284"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746052"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Ajouter les paramètres régionaux dans Power BI pour les visuels Power BI
 
@@ -45,7 +45,7 @@ this.locale = options.host.locale;
 
 Paramètres régionaux pris en charge :
 
-Chaîne de paramètres régionaux | Language
+Chaîne de paramètres régionaux | Langage
 --------------|----------------------
 ar-SA | العربية (arabe)
 bg-BG | български (bulgare)
@@ -54,9 +54,9 @@ cs-CZ | čeština (tchèque)
 da-DK | dansk (danois)
 de-DE | Deutsche (allemand)
 el-GR | ελληνικά (grec)
-en-US | Anglais (anglais)
+fr-FR | Anglais (anglais)
 es-ES | español (espagnol)
-et-EE | eesti (estonien)
+Et-EE | eesti (estonien)
 eU-ES | Euskal (basque)
 fi-FI | suomi (finnois)
 fr-FR | français (France)
@@ -76,8 +76,8 @@ ms-MY | Bahasa Melayu (malais)
 nb-NO | norsk (norvégien)
 nl-NL | Nederlands (néerlandais)
 pl-PL | polski (polonais)
-pt-BR | português (Brésil)
-pt-PT | português (Brésil)
+pt-br | português (Portugal)
+pt-PT | português (Portugal)
 ro-RO | românesc (roumain)
 ru-RU | русский (russe)
 sk-SK | slovenský (slovaque)
@@ -151,13 +151,13 @@ Toutes les étapes nécessaires pour utiliser le gestionnaire de localisation so
 > [!NOTE]
 > Actuellement, la localisation n’est pas prise en charge pour le débogage du visuel de développement
 
-## <a name="setup-environment"></a>Environnement d’installation
+## <a name="setup-environment"></a>Configurez l’environnement.
 
-### <a name="desktop"></a>Bureau
+### <a name="desktop"></a>Desktop (Expérience utilisateur)
 
 Pour une utilisation au bureau, téléchargez la version localisée de Power BI Desktop à partir de https://powerbi.microsoft.com.
 
-### <a name="web-service"></a>Service web
+### <a name="web-service"></a>Service Web
 
 Si vous utilisez le client web (navigateur) dans le service, modifiez votre langue dans Paramètres :
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: painbar
-ms.openlocfilehash: f946c3b10f9d4922c227dd92a748af91266c040e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3b84cf4969df05d4e9570b12a80436bca3e280be
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75221788"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668318"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutoriel : poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS pour Power BI
 
@@ -92,13 +92,13 @@ Une fois que vous avez terminé le tutoriel, vous pouvez supprimer le tableau de
 
 3. Cliquez sur l’onglet Tableaux de bord, puis, en regard de la ligne Exemple d’analyse des opportunités, cliquez sur la corbeille.
 
-    ![Sélectionnez l’icône Supprimer](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
+    ![Capture d’écran montrant l’espace de travail Power BI avec un tableau de bord sélectionné et l’icône de suppression appelée.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
     Sélectionnez l’onglet Rapports et recommencez la même procédure.
 
 4. Sélectionnez l’onglet Jeux de données, cliquez sur **Autres options** (...), puis choisissez **Supprimer**.
 
-    ![Sélectionnez l’icône Supprimer](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
+    ![Capture d’écran montrant l’espace de travail Power BI avec un jeu de données sélectionné et Supprimer sélectionné dans le menu Autres options.](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

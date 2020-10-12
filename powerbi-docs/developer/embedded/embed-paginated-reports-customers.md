@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 78487f52df9f62e85e80f02d9653c9ac2f5b52c7
-ms.sourcegitcommit: f05f7b0112a8ec2dce60839ea5f922eda3cc776c
+ms.openlocfilehash: 771c41b896a6b886e8c72fa3d88ca8842e8ebffe
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337116"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91748836"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients
 
@@ -57,7 +57,7 @@ Avant d’importer ou de charger un rapport paginé à incorporer, l’espace de
 * **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** : vous pouvez acheter une capacité dédiée à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
-Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)
+Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](./embedded-faq.md#which-solution-should-i-choose)
 
 | Nœuds de capacité | Total des v-cores | Cœurs virtuels backend | RAM (Go) | Cœurs virtuels frontend | 
 | --- | --- | --- | --- | --- |
@@ -70,13 +70,13 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 
 Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter votre espace de travail d’application.
 
-Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
+Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
 
 ### <a name="create-and-upload-your-paginated-reports"></a>Créer et charger vos rapports paginés
 
 Vous pouvez créer votre rapport paginé à l’aide du [Générateur de rapports Power BI](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), puis [charger ce rapport dans le service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
-Vous pouvez importer des rapports paginés dans les nouveaux espaces de travail à l’aide des [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Vous pouvez importer des rapports paginés dans les nouveaux espaces de travail à l’aide des [API REST Power BI](/rest/api/power-bi/imports/postimportingroup).
 
 ## <a name="embed-content-using-the-sample-application"></a>Incorporer du contenu en utilisant l’exemple d’application
 
@@ -119,7 +119,7 @@ Pour récupérer la valeur **applicationId**, suivez ces étapes :
 
 3. Sélectionnez l’application ayant besoin de la valeur **applicationId**.
 
-    ![Choisir l’application](media/embed-paginated-reports-for-customers/display-name.png)
+    ![Capture d’écran montrant les noms d’affichage des applications, avec une sélection qui a besoin de l’ID d’application.](media/embed-paginated-reports-for-customers/display-name.png)
 
 4. Un **ID d’application** est listé au format GUID. Utilisez cet **ID d’application** comme **applicationId** de l’application.
 
@@ -171,7 +171,7 @@ Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
 3. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
 
-    ![Choisir l’application](media/embed-paginated-reports-for-customers/display-name-2.png)
+    ![Capture d’écran montrant les noms d’affichage des applications avec une sélection qui a besoin de la clé secrète de l’application.](media/embed-paginated-reports-for-customers/display-name-2.png)
 
 4. Sélectionnez **Certificats et secrets** sous **Gérer**.
 
@@ -201,11 +201,11 @@ Dans **tenant**, indiquez votre ID de locataire Azure. Vous pouvez obtenir ces i
 
 ## <a name="embed-power-bi-paginated-reports-within-your-application"></a>Incorporer des rapports paginés Power BI dans votre application
 
-Même si les étapes permettant d’incorporer vos rapports paginés Power BI sont effectuées avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **SDK .NET**.
+Même si les étapes permettant d’incorporer vos rapports paginés Power BI sont effectuées avec les [API REST Power BI](/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **SDK .NET**.
 
-L’incorporation de rapports paginés Power BI pour vos clients dans votre application vous demande de disposer d’un [principal de service](embed-service-principal.md) **Azure AD** et d’obtenir un [jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI, avant d’effectuer des appels aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
+L’incorporation de rapports paginés Power BI pour vos clients dans votre application vous demande de disposer d’un [principal de service](embed-service-principal.md) **Azure AD** et d’obtenir un [jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI, avant d’effectuer des appels aux [API REST Power BI](/rest/api/power-bi/).
 
-Pour créer le client Power BI avec votre **jeton d’accès**, créez un objet client Power BI pour interagir avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
+Pour créer le client Power BI avec votre **jeton d’accès**, créez un objet client Power BI pour interagir avec les [API REST Power BI](/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
 
-Générez un jeton d’incorporation qui peut être utilisé à partir de l’API JavaScript. Pour créer un jeton incorporé pour l’incorporation de rapports paginés Power BI, utilisez l’API [GenerateTokenInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
+Générez un jeton d’incorporation qui peut être utilisé à partir de l’API JavaScript. Pour créer un jeton incorporé pour l’incorporation de rapports paginés Power BI, utilisez l’API [GenerateTokenInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Un exemple de création d’un jeton d’incorporation est disponible dans le fichier  *Services\EmbedService.cs* de l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

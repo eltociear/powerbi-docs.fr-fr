@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: c362a8012635becb68200a9d513157c05310edaf
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: e9c25089c5141f16cc3f993039dc69bece9231f1
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86215155"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668617"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Aide pour la relation bidirectionnelle
 
@@ -77,7 +77,7 @@ Dans le segment Australie, les utilisateurs du rapport souhaitent peut-être lim
 
 Le segment **Produit** affiche désormais un seul élément : T-shirt. Cet élément représente le seul produit vendu à des clients australiens.
 
-![Diagramme montrant la page de rapport contenant trois visuels. Les détails sont décrits dans le paragraphe suivant.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
+![Diagramme montrant la page de rapport contenant trois visuels, avec un produit appelé. Les détails sont décrits dans le paragraphe suivant.](media/relationships-bidirectional-filtering/sales-report-bi-directional-filter.png)
 
 Nous suggérons de vérifier avec soin si cette conception fonctionne pour les utilisateurs de votre rapport. Elle peut être à l’origine d’une confusion pour certains d’entre eux. Ils ne comprennent pas pourquoi des éléments de segments apparaissent ou disparaissent de façon dynamique lorsqu’ils interagissent avec d’autres segments.
 

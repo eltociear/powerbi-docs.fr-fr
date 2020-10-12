@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7c9b5c753b262900d61a1a71b4c9a8167c943121
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 3c94c25f5f1ba717f68a0c2a5ec661be10f70135
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216687"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668525"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 
@@ -48,7 +48,7 @@ Pour mieux décrire le fonctionnement de la propagation de filtres de relation, 
 > [!NOTE]
 > Il n’est pas possible d’afficher les lignes de la table dans le diagramme de modèle Power BI Desktop. Cette opération est effectuée dans cet article pour étayer la discussion avec des exemples clairs.
 
-![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes pour les quatre tables sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
 
 Les détails des lignes pour les quatre tables sont décrits dans la liste à puces suivante :
 
@@ -137,7 +137,7 @@ La cardinalité de relation est définie sur plusieurs à plusieurs pour prendre
 
 Examinons maintenant les lignes de la table. Dans la table **Fulfillment**, notez que les lignes de commande peuvent être remplies par plusieurs expéditions. (L’absence d’une ligne de commande signifie que la commande doit encore être remplie.)
 
-![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
+![Diagramme montrant que le modèle révèle à présent les lignes de la table. Les détails des lignes pour les deux tables sont décrits dans le paragraphe suivant.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 Les détails des lignes pour les deux tables sont décrits dans la liste à puces suivante :
 
@@ -161,7 +161,7 @@ Le visuel présente un résultat précis. Toutefois, l’utilité du modèle est
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Conseils sur l’association des faits plusieurs à plusieurs
 
-En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation faible_. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+En règle générale, nous vous déconseillons d’associer deux tables de type fait directement à l’aide de la cardinalité plusieurs à plusieurs. La raison principale est que le modèle n’offre pas de flexibilité dans la façon dont vos visuels de rapport filtrent ou regroupent. Dans l’exemple, il est uniquement possible pour les visuels de filtrer ou regrouper selon la colonne **OrderID** de la table **Order**. Une autre raison est liée à la qualité de vos données. Si vos données présentent des problèmes d’intégrité, il est possible que certaines lignes soient omises lors de l’interrogation en raison de la nature de la _relation limitée_. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Au lieu d’associer directement les tables de type fait, nous vous recommandons d’adopter les principes de conception de [schémas en étoile](star-schema.md). Pour ce faire, vous devez ajouter des tables de type dimension. Les tables de type dimension sont ensuite associées aux tables de type fait à l’aide de relations de type un à plusieurs. Cette approche de conception est fiable, car elle offre des options de création de rapports flexibles. Elle vous permet de filtrer ou de regrouper en utilisant n’importe quelle colonne de type dimension et de récapituler toute table de type fait associée.
 
@@ -184,7 +184,7 @@ Si vous prenez le temps d’appliquer les principes de conception de schémas en
 - Vos visuels de rapport peuvent _filtrer ou regrouper_ selon n’importe quelle colonne visible à partir des tables de type dimension
 - Vos visuels de rapport peuvent _récapituler_ toute colonne visible à partir des tables de type fait
 - Les filtres appliqués aux tables **OrderLine**, **OrderDate** ou **Product** sont propagés aux deux tables de type fait
-- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation solide_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+- Toutes les relations sont de type un à plusieurs, et chaque relation est une _relation normale_. Les problèmes d’intégrité des données ne sont pas masqués. Pour plus d’informations, consultez [Relations de modèle dans Power BI Desktop (évaluation de la relation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Associer des faits de niveau plus général
 
@@ -228,7 +228,7 @@ IF(
 
 Le visuel de matrice suivant utilise désormais la mesure **TargetQuantity**. Elle indique que toutes les quantités cibles mensuelles sont VIDES.
 
-![Diagramme illustrant un visuel de matrice révélant que la quantité cible pour l’année 2020 est 270.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
+![Diagramme illustrant un visuel de matrice révélant que la quantité cible pour l’année 2020 est 270 avec des valeurs de mois vides.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-good.png)
 
 ### <a name="relate-higher-grain-non-date"></a>Associer à un niveau plus général (non-date)
 

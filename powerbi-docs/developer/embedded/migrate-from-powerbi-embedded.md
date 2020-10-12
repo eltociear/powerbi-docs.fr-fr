@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: 6b8d02984fdd6af467b0df5acb6c1455a6e93172
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f3f76bd7c422d07cb2b390c2aebd92a2d7fe4ef3
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221043"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749043"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 
@@ -48,7 +48,7 @@ Pour préparer la migration d’une collection d’espaces de travail Power BI v
    * Utiliser un locataire distinct pour votre application ?
    * Utiliser un locataire distinct pour chaque client ?
 
-     Si vous décidez de créer un locataire pour votre application, ou pour chaque client, consultez [Créer un locataire Azure Active Directory](create-an-azure-active-directory-tenant.md) ou [Obtenir un locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
+     Si vous décidez de créer un locataire pour votre application, ou pour chaque client, consultez [Créer un locataire Azure Active Directory](create-an-azure-active-directory-tenant.md) ou [Obtenir un locataire Azure Active Directory](/azure/active-directory/develop/active-directory-howto-tenant).
 2. Dans ce nouveau locataire, créez un utilisateur correspondant à votre compte d’application « principal ». Ce compte doit s’inscrire à Power BI et disposer d’une licence Power BI Pro.
 
 ## <a name="accounts-within-azure-ad"></a>Comptes dans Azure AD
@@ -58,7 +58,7 @@ Les comptes suivants doivent exister au sein de votre client.
 > [!NOTE]
 > Ces comptes doivent disposer de licences Power BI Pro pour utiliser les espaces de travail.
 
-1. Un utilisateur administrateur du client.
+1. Un administrateur Power BI.
 
     Il est recommandé que cet utilisateur soit membre de tous les espaces de travail créés à des fins d’incorporation.
 
@@ -168,7 +168,7 @@ En plus du contenu que vous avez migré à partir de la collection d’espaces d
 ## <a name="rebuild-your-application"></a>Régénérer votre application
 
 1. Pour utiliser les API REST de Power BI et l’emplacement du rapport dans powerbi.com, vous devez modifier application.
-2. Régénérez votre authentification AuthN/AuthZ à Power BI en utilisant le compte *principal* pour votre application. Vous pouvez tirer parti de l’utilisation d’un [jeton incorporé](https://docs.microsoft.com/rest/api/power-bi/embedtoken) pour autoriser cet utilisateur à agir au nom d’autres utilisateurs.
+2. Régénérez votre authentification AuthN/AuthZ à Power BI en utilisant le compte *principal* pour votre application. Vous pouvez tirer parti de l’utilisation d’un [jeton incorporé](/rest/api/power-bi/embedtoken) pour autoriser cet utilisateur à agir au nom d’autres utilisateurs.
 3. Incorporez vos rapports de powerbi.com dans votre application.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Mapper vos utilisateurs à un utilisateur de Power BI
@@ -180,7 +180,7 @@ Dans votre application, vous devez mapper les utilisateurs que vous gérez au se
 Lorsque vous êtes prêt à passer à la production, vous devez procéder comme suit.
 
 * Si vous utilisez un locataire distinct pour le développement, veillez à ce que vos espaces de travail ainsi que vos tableaux de bord et rapports soient disponibles dans votre environnement de production. Vérifiez également que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
-* Achetez une capacité adaptée à vos besoins. Pour mieux comprendre de quelle quantité et de quel type de capacité vous avez besoin, consultez le [Livre blanc sur la planification de la capacité d’analytique pour Power BI Embedded](https://aka.ms/pbiewhitepaper). Vous pouvez [acheter de la capacité](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) dans Azure.
+* Achetez une capacité adaptée à vos besoins. Pour mieux comprendre de quelle quantité et de quel type de capacité vous avez besoin, consultez le [Livre blanc sur la planification de la capacité d’analytique pour Power BI Embedded](./embedded-capacity-planning.md). Vous pouvez [acheter de la capacité](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) dans Azure.
 * Modifiez l’espace de travail et attribuez-le à une capacité Premium sous Avancé.
 
     ![Capacité Premium](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
@@ -204,7 +204,7 @@ Vous devez effectuer un peu de nettoyage dans Azure.
 [Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Livre blanc sur la planification de la capacité d’analytique des collections d’espaces de travail](https://aka.ms/pbiewhitepaper)  
+[Livre blanc sur la planification de la capacité d’analytique des collections d’espaces de travail](./embedded-capacity-planning.md)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -1,17 +1,17 @@
 ---
 title: Catalogue de formations des développeurs
-description: Retrouver toutes les options de formation Power BI
+description: Recherchez toutes les options de formation pour Power BI pour les développeurs, des plus simples aux plus avancées.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: margoc
-ms.openlocfilehash: 93f77594dfb3d66d7c4b994be5b2d2c9ef49c0b5
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 442ae8cb6c433cbc7501a6f354158c39a48e2d68
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527811"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746536"
 ---
 # <a name="developer-learning-catalog"></a>Catalogue de formations des développeurs
 

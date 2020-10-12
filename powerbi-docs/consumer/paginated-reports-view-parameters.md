@@ -7,19 +7,19 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/03/2019
-ms.openlocfilehash: 97d116e233395368ddf86b86811f1a3ee72a43c4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.date: 09/28/2020
+ms.openlocfilehash: 37ec4b9f38287b893469de2bcf152a6aba9886ad
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538076"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91528226"
 ---
 # <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Afficher les paramètres de rapports paginés dans le service Power BI
 
-Dans cet article, vous allez apprendre à interagir avec les paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de filtrer les données de rapport. Les paramètres offrent une liste de valeurs disponibles, et vous pouvez choisir une ou plusieurs de ces valeurs. Parfois, les paramètres affichent une valeur par défaut, et parfois vous devez choisir une valeur avant de pouvoir voir le rapport.  
+Dans cet article, vous allez apprendre à interagir avec les paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de filtrer les données de rapport. Les paramètres offrent une liste de valeurs disponibles. Vous pouvez choisir une ou plusieurs valeurs, ou saisir dans une zone de texte de paramètre pour rechercher des valeurs. Parfois, les paramètres affichent une valeur par défaut, et parfois vous devez choisir une valeur avant de voir le rapport.  
 
-Lorsque vous affichez un rapport avec des paramètres, la barre d’outils de la visionneuse de rapports présente chaque paramètre pour vous permettre de spécifier de manière interactive les valeurs. L’illustration suivante montre la zone des paramètres d’un rapport avec les paramètres **Groupe d’achat**, **Emplacement**, une **date de début** et une **date de fin**.  
+Quand vous visualisez un rapport qui comporte des paramètres, la barre d’outils de la visionneuse de rapports affiche chaque paramètre pour vous permettre de spécifier des valeurs de manière interactive. L’illustration suivante montre la zone des paramètres d’un rapport avec les paramètres **Groupe d’achat**, **Emplacement**, une **date de début** et une **date de fin**.  
 
 ## <a name="parameters-pane-in-the-power-bi-service"></a>Volet des paramètres dans le service Power BI
 
@@ -27,7 +27,7 @@ Lorsque vous affichez un rapport avec des paramètres, la barre d’outils de la
   
 1.  **Volet des paramètres** : la barre d’outils de la visionneuse de rapports affiche une invite de commandes telles que « Requis » ou une valeur par défaut pour chaque paramètre.    
   
-2.  **Paramètres de date de début et de fin des factures** : les deux paramètres de données ont des valeurs par défaut. Pour modifier la date, entrez une date dans la zone de texte, ou choisissez une date dans le calendrier.  
+2.  **Paramètres de date de début et de fin des factures** : les deux paramètres de date ont des valeurs par défaut. Pour modifier la date, entrez une date dans la zone de texte, ou choisissez une date dans le calendrier.  
   
 3.  **Paramètre d’emplacement** : le paramètre d’emplacement est configuré pour vous permettre de sélectionner une, plusieurs ou toutes les valeurs. 
   

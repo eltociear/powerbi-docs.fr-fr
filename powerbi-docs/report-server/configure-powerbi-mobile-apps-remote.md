@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 11/07/2019
 ms.author: painbar
-ms.openlocfilehash: 996e3835337ce8aa1002abce7682d707daec032e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d5f55c005f34bc1e3aa9ab5351b816616f4f7664
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859126"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668341"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Configurer à distance l’accès d’une application mobile Power BI à un serveur de rapports
 
@@ -63,7 +63,7 @@ Voici un exemple de définition de stratégie de configuration avec Intune.
 
 3. Ils tapent un mot de passe pour s’authentifier, puis appuient sur **Se connecter**. 
 
-    ![Détails du serveur de rapports renseignés](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
+    ![Capture d’écran montrant l’entrée de mot de passe avec un bouton de connexion.](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
 
 Ils peuvent désormais afficher et interagir avec les indicateurs de performance clés et les rapports Power BI stockés sur le serveur de rapports.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: a929374e3d974606d27defed4a7faa99e5450c87
-ms.sourcegitcommit: aece2382b618dc5b730705b4c76e76a657986588
+ms.openlocfilehash: 4066911e90090fe770ca0d33f7e0d9a18d9dde71
+ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84427856"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91746306"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports"></a>Implémentation de la sécurité au niveau des lignes dans des rapports paginés incorporés
 
@@ -28,7 +28,7 @@ Cette fonctionnalité offre un moyen sécurisé d’afficher un sous-ensemble de
 
 Quand vous appliquez la sécurité au niveau des lignes à un rapport paginé Power BI, vous devez affecter un [paramètre](../../paginated-reports/report-builder-parameters.md) à l’attribut **UserID**. Ce paramètre limite les données extraites du jeu de données, avant l’incorporation du rapport.
 
-Après avoir affecté le paramètre à **UserID**, utilisez l’API [GenerateTokenInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) afin d’obtenir le jeton d’incorporation.
+Après avoir affecté le paramètre à **UserID**, utilisez l’API [GenerateTokenInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) afin d’obtenir le jeton d’incorporation.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Utiliser UserID comme filtre au niveau du rapport ou de la requête
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser **UserId** comme *filtre* ou dans une *requête* sur la sou
 
 2. Dans le menu déroulant **Expression**, sélectionnez le paramètre que vous voulez utiliser pour le filtrage des données.
 
-     ![Expression du Générateur de rapports Power BI](media/paginated-reports-row-level-security/expression.png)
+     ![Capture d’écran montrant la Couleur de valeur sélectionnée dans le menu Expression.](media/paginated-reports-row-level-security/expression.png)
 
 3. Cliquez sur le bouton de fonction **Valeur**. 
 
@@ -50,7 +50,7 @@ Vous pouvez utiliser **UserId** comme *filtre* ou dans une *requête* sur la sou
 
 4. Dans la fenêtre **Expression**, dans la liste **Catégorie**, sélectionnez **Champs prédéfinis**.
 
-    ![Expression du Générateur de rapports Power BI](media/paginated-reports-row-level-security/built-in-fields.png)
+    ![Capture d’écran montrant la fenêtre Expression avec les champs prédéfinis sélectionnés en tant que catégorie et ExecutionTime sélectionné en tant qu’élément.](media/paginated-reports-row-level-security/built-in-fields.png)
 
 5. Dans la liste **Élément**, sélectionnez **UserID**, puis cliquez sur **OK**.
 
@@ -78,7 +78,7 @@ Vous pouvez utiliser **UserId** comme *filtre* ou dans une *requête* sur la sou
 
 ## <a name="passing-the-configured-parameter-using-the-embed-token"></a>Passage du paramètre configuré à l’aide du jeton d’incorporation
 
-Lors de l’incorporation d’un rapport paginé pour vos clients, l’API [GenerateTokenInGroup pour les rapports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) est utilisée pour obtenir le jeton d’incorporation. Ce jeton peut également être utilisé pour filtrer certaines des données extraites du rapport paginé.
+Lors de l’incorporation d’un rapport paginé pour vos clients, l’API [GenerateTokenInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) est utilisée pour obtenir le jeton d’incorporation. Ce jeton peut également être utilisé pour filtrer certaines des données extraites du rapport paginé.
 
 Pour exposer uniquement certaines données, affectez au champ `username` les informations que vous voulez afficher. Par exemple, dans un rapport paginé qui a un paramètre Color (Couleur), si vous entrez *green* (vert) dans le champ `username`, le jeton d’incorporation limite les données incorporées afin d’afficher uniquement les données qui ont la valeur *green* (vert) dans la colonne Color.
 

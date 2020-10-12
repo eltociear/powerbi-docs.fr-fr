@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/05/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3e34a736148a5d962c1f2d56782d38f31c15b9b6
-ms.sourcegitcommit: 9e39232cbc28d8b39dfec5496db7ece9837b5e53
+ms.openlocfilehash: 22d9baaf50ce32c4a9d3644cff455b474bdd1549
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88049418"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525310"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Tutoriel : Définir des alertes sur des tableaux de bord Power BI
 
@@ -86,7 +86,7 @@ Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](
    
 1. Dans le volet **Gérer les alertes**, sélectionnez **+ Ajouter une règle d’alerte**.  Vérifiez que le curseur est défini sur **Activé** et donnez un titre à votre alerte. Les titres vous aident à reconnaître facilement vos alertes.
    
-   ![Fenêtre Gérer les alertes](media/end-user-alerts/power-bi-alert-manage.png)
+   ![Fenêtre Ajouter une règle d’alerte](media/end-user-alerts/power-bi-alert-manage.png)
 4. Faites défiler vers le bas, puis entrez les détails de l’alerte.  Dans cet exemple, nous allons créer une alerte qui nous avertit une fois par jour de l’augmentation de notre part de marché à 40 ou plus. Les alertes s’affichent dans notre [Centre de notification](end-user-notification-center.md). Nous allons également demander à Power BI de nous envoyer un courrier électronique.
    
    ![Fenêtre Gérer les alertes, Seuil défini](media/end-user-alerts/power-bi-manage-alert-detail.png)
@@ -142,7 +142,7 @@ Il existe de nombreuses façons de gérer vos alertes : à partir de la mosaïq
 
 ## <a name="tips-and-troubleshooting"></a>Conseils et résolution des problèmes 
 
-* Si vous ne parvenez pas à définir une alerte pour une jauge, un indicateur de performance clé ou une carte, contactez votre administrateur de l’abonné ou le support technique informatique pour obtenir de l’aide. Des alertes sont parfois désactivées ou indisponibles pour votre tableau de bord ou pour des types spécifiques de vignettes de tableau de bord.
+* Si vous ne parvenez pas à définir une alerte pour une jauge, un indicateur de performance clé ou une carte, contactez votre administrateur Power BI ou le support technique informatique pour obtenir de l’aide. Des alertes sont parfois désactivées ou indisponibles pour votre tableau de bord ou pour des types spécifiques de vignettes de tableau de bord.
 * Les alertes fonctionnent uniquement sur les données actualisées (pas sur les données statiques). La plupart des exemples fournis par Microsoft sont statiques. 
 * Une licence Power BI Pro ou Premium est nécessaire pour recevoir et afficher du contenu partagé. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md).
 * Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.

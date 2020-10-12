@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3e213107f84f81aef78a52cdb282b70379c7465
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 8ee29bcfb85c627ed6e9bb4c33c48b941ded7dd7
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237525"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526817"
 ---
 # <a name="create-card-visualizations"></a>Créer des visualisations de carte
 
@@ -102,7 +102,8 @@ Le volet de mise en forme est disponible quand vous interagissez avec la carte d
 5. Continuez à explorer les options de mise en forme jusqu'à ce que votre carte soit exactement comment vous le souhaitez. 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-Si vous ne voyez pas de zone de question, contactez l’administrateur système ou du locataire.    
+
+Si vous ne voyez pas de zone de question, contactez votre administrateur Power BI.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Graphiques en entonnoir dans Power BI](power-bi-visualization-combo-chart.md)

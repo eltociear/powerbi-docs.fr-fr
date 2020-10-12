@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 7e10cfa5c99eb1750829150fd0a25347a4da1880
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: cbcf7fc1890ae1455f1f6ec7c8604e275f60b2d5
+ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136255"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91668410"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Aide pour la relation un-à-un
 
@@ -82,7 +82,7 @@ Notez que la table **Catégorie de produit** n’inclut pas de ligne pour le pro
 
 Dans le volet **Champs**, les auteurs des rapports trouveront des champs liés aux produits dans deux tables : **Produit** et **Catégorie de produit**.
 
-![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
+![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs, avec Produit et Catégorie de produit appelés.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
 
 Voyons ce qui se passe lorsque des champs des deux tables sont ajoutés à un visuel de table. Dans cet exemple, la colonne **SKU** provient de la table **Produit**.
 
@@ -112,7 +112,7 @@ Les étapes suivantes présentent une méthodologie pour consolider et modélise
 
     Dans notre exemple, les auteurs de rapports trouvent maintenant une seule table nommée **Produit** dans le volet **Champs**. Elle contient tous les champs liés aux produits.
 
-    ![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
+    ![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs, avec Produit appelé.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
 3. **Remplacer des valeurs manquantes** : si la deuxième requête a des lignes sans correspondance, des valeurs NULL s’affichent dans les colonnes qu’elle introduit. Le cas échéant, envisagez de remplacer les valeurs NULL par une valeur de jeton. Le remplacement de valeurs manquantes est particulièrement important lorsque les auteurs de rapports filtrent ou regroupent par valeurs de colonnes, étant donné que les VIDES pourraient s’afficher dans les visuels du rapport.
 
     Dans le visuel du tableau suivant, notez que maintenant, la catégorie du produit SKU CL-02 est _[Undefined]_ . Dans la requête, les catégories null ont été remplacées par cette valeur de texte de jeton.
@@ -123,7 +123,7 @@ Les étapes suivantes présentent une méthodologie pour consolider et modélise
 
     Dans notre exemple, les auteurs de rapports peuvent maintenant utiliser une hiérarchie à deux niveaux : **Catégorie** et **Produit**.
 
-    ![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
+    ![Le volet Champs montre les deux tables développées et les colonnes sont répertoriées sous forme de champs, avec Produits appelé.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
 
 Si vous souhaitez savoir comment séparer des tables vous aide à organiser vos champs, nous recommandons également la consolidation dans une seule table. Vous pouvez toujours organiser vos champs, mais en utilisant l’_affichage des dossiers_ à la place.
 
