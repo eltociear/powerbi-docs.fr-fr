@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2500ba94a6ad387e9944fb29f865b391ea4c0711
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f5cb17187770c8c0b37c48a495c6844c462e83ec
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860943"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525618"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 conseils pour obtenir de l’aide avec vos questions Power BI
 Vous sentez-vous parfois frustré en utilisant Power BI ou rencontrez-vous parfois des difficultés à obtenir des réponses à vos questions relatives à Power BI au moment où vous en avez besoin ? 
@@ -49,7 +49,7 @@ Les options de formation disponibles sont quasiment infinies, des formations en 
 
 Vous trouverez des options supplémentaires en ligne, comme celles-ci :
 
-* **edX.org** propose un cours gratuit sur l’[analyse et la visualisation des données avec Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4).
+* **edX.org** propose un cours gratuit sur l’[analyse et la visualisation des données avec Power BI](https://www.edx.org/course/data-analysis-in-power-bi).
 * **Lynda.com** offre des cours comme celui intitulé sur [Power BI Pro Essential Training](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
 * Recherchez des sessions de formation **Dashboard in a Day** en personne.
 

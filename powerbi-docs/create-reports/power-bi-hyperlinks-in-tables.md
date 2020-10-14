@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 02/13/2020
+ms.date: 09/29/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 55b08d608e30b8a1f4b06319f1de835a12f7ca77
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 87bb15829936c452999872f95f49f35c2b60af77
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234827"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525654"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Ajouter des liens hypertextes (URL) à une table ou à une matrice
 Cette rubrique explique comment ajouter des liens hypertextes (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertextes (URL) à un jeu de données. Vous pouvez ajouter des liens hypertextes à vos matrices et tables de rapports dans Power BI Desktop ou le service Power BI. Vous pouvez ensuite afficher l’URL ou une icône de lien, ou mettre en forme une autre colonne comme texte de lien.
@@ -136,13 +136,12 @@ Les URL doivent commencer l’un des préfixes suivants :
 - http
 - https
 - -mailto
-- file
 - ftp
 - news
 - telnet
 
 Q : Peut-on utiliser une URL personnalisée comme lien hypertexte dans un tableau ou dans une matrice ?    
-R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d’un texte personnalisé pour vos liens hypertextes et que votre liste d’URL est courte, vous pouvez utiliser une zone de texte à la place.
+A : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d’un texte personnalisé pour vos liens hypertextes et que votre liste d’URL est courte, vous pouvez utiliser une zone de texte à la place.
 
 
 ## <a name="next-steps"></a>Étapes suivantes
