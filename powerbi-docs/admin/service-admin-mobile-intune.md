@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 09/25/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 214ef5072808decc4c153a28cf231e070c20508d
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: a7a3e0382b80d46ddb41b3f5677763a1a08bf26d
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981547"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurer des applications mobiles avec Microsoft Intune
 
@@ -58,8 +58,8 @@ Pour créer et affecter une stratégie de protection des applications à l’app
 Les applications gérées sont des applications que le support technique de votre entreprise peut configurer pour protéger les données d’entreprise auxquelles vous pouvez accéder dans cette application. Lorsque vous accédez aux données de l’entreprise dans une application managée de votre appareil, vous pouvez remarquer que l’application fonctionne autrement que prévu. Par exemple, vous ne pouvez pas copier et coller des données d’entreprise protégées, ou vous ne pouvez pas enregistrer ces données à certains emplacements.
 
 Pour savoir comment vos utilisateurs finaux peuvent utiliser l’application Power BI sur leur appareil, passez en revue les étapes décrites dans les articles suivants :
-- [Utiliser des applications gérées sur votre appareil iOS](https://docs.microsoft.com/intune-user-help/use-managed-apps-on-your-device-ios#how-do-i-get-managed-apps)
-- [Utiliser des applications gérées sur votre appareil Android](https://docs.microsoft.com/intune-user-help/use-managed-apps-on-your-device-android)
+- [Utiliser des applications gérées sur votre appareil iOS](/intune-user-help/use-managed-apps-on-your-device-ios#how-do-i-get-managed-apps)
+- [Utiliser des applications gérées sur votre appareil Android](/intune-user-help/use-managed-apps-on-your-device-android)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -67,4 +67,4 @@ Pour savoir comment vos utilisateurs finaux peuvent utiliser l’application Pow
 
 [Applications Power BI pour appareils mobiles](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)  
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
