@@ -6,140 +6,138 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: 926569e783dad7a97b91e2e5c1752401d21d6612
-ms.sourcegitcommit: 376ea86f69545444f975378cbf63e54c2f75faa3
+ms.openlocfilehash: 918b9a98d66a1c739421433d35f593dc74d19773
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90084050"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981478"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
 Le tableau suivant montre les sources de données qui sont prises en charge par Power BI pour les jeux de données, y compris des informations sur DirectQuery et sur la passerelle de données locale. Pour plus d'informations sur les dataflows, voir [Se connecter à des sources de données pour les dataflows Power BI](../transform-model/service-dataflows-data-sources.md).
 
-| Paramètres | Connexion à partir de Desktop | Connexion et actualisation à partir du service | DirectQuery/Connexions actives | Passerelle (prise en charge) | Passerelle (obligatoire) |
+| Paramètres | Connexion à partir de Desktop | Connexion et actualisation à partir du service | DirectQuery/Connexions actives | Passerelle (prise en charge) | Passerelle (obligatoire) | Dataflows Power BI |
 |---|---|---|---|---|---|---|---|
-| Base de données Access | Oui | Oui | Non | Oui <sup>1</sup> | Oui |
-| ActiveDirectory | Oui | Oui | Non | Oui | Oui |
-| Adobe Analytics | Oui | Oui | Non | Non | Non |
-| Amazon Redshift | Oui | Oui | Oui | Oui | Non |
-| appFigures | Oui | Oui | Non | Non | Non |
-| Cubes AtScale | Oui | Oui | Oui | Oui | Non |
-| Azure Analysis Services | Oui | Oui | Oui | Non | Non |
-| Stockage Blob Azure | Oui | Oui | Non | Oui | Non |
-| Azure Cosmos DB | Oui | Oui | Non | Non | Non |
-| Azure Cost Management | Oui | Oui | Non | Non | Non |
-| Azure Data Explorer (Kusto) | Oui | Oui | Oui | Oui | Non |
-| Azure Data Lake Storage Gen1 | Oui | Oui | Non | Non | Non |
-| Azure Data Lake Storage Gen2 | Oui | Oui | Non | Oui | Non |
-| Azure DevOps | Oui | Oui | Non | Non | Non |
-| Azure DevOps Server | Oui | Oui | Non | Oui | Oui |
-| Azure HDInsight (HDFS) | Oui | Oui | Non | Non | Non |
-| Azure HDInsight Spark | Oui | Oui | Oui | Non | Non |
-| Azure SQL Database | Oui | Oui | Oui | Oui <sup>2</sup> | Non |
-| Azure SQL Data Warehouse | Oui | Oui | Oui | Oui <sup>2</sup> | Non |
-| Stockage Table Azure | Oui | Oui | Non | Oui | Non |
-| Connecteur BI | Oui | Oui | Oui | Oui | Oui |
-| BI360 - Budgets & Rapports financiers | Oui | Oui | Non | Non | Non |
-| Common Data Service | Oui | Oui | Non | Non | Non |
-| Data.World - Obtenir le jeu de données | Oui | Oui | Non | Non | Non |
-| Denodo | Oui | Oui | Oui | Oui | Oui |
-| Dremio | Oui | Oui | Oui | Oui | Oui |
-| Dynamics 365 (Online) | Oui | Oui | Non | Non | Non |
-| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non |
-| Dynamics 365 Business Central (local) | Oui | Oui | Non | Non | Non |
-| Dynamics 365 Customer Insights | Oui | Oui | Non | Non | Non |
-| Dynamics NAV | Oui | Oui | Non | Non | Non |
-| Emigo Data Source | Oui | Oui | Non | Non | Non |
-| Entersoft Business Suite | Oui | Oui | Non | Non | Non |
-| Essbase | Oui | Oui | Oui | Oui | Oui |
-| Exasol | Oui | Oui | Oui | Oui | Oui |
-| Excel | Oui <sup>3</sup> | Oui <sup>3</sup> | Non | Oui <sup>3</sup> | Non <sup>4</sup> |
-| Facebook | Oui | Oui | Non | Non | Non |
-| Fichier | Oui | Oui | Non | Oui | Oui |
-| Dossier | Oui | Oui | Non | Oui | Oui |
-| GitHub | Oui | Oui | Non | Non | Non |
-| Google Analytics | Oui | Oui | Non | Non | Non |
-| Google BigQuery | Oui | Oui | Oui | Non | Non |
-| Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non |
-| HDInsight Interactive Query | Oui | Oui | Oui | Non | Non |
-| IBM DB2 | Oui | Oui | Oui | Oui | Non |
-| Base de données Informix IBM | Oui | Oui | Non | Oui | Non |
-| IBM Netezza | Oui | Oui | Oui | Oui | Oui |
-| Impala | Oui | Oui | Oui | Oui | Oui |
-| Indexima | Oui | Oui | Oui | Oui | Oui |
-| Industrial App Store | Oui | Oui | Non | Non | Non |
-| Information Grid | Oui | Oui | Non | Non | Non |
-| InterSystems IRIS | Oui | Oui | Oui | Oui | Oui |
-| Entrepôt de données Intune | Oui | Oui | Non | Non | Non |
-| Jethro ODBC | Oui | Oui | Oui | Oui | Oui |
-| JSON | Oui | Oui | Non | Oui** | Non <sup>4</sup> |
-| Kyligence Enterprise | Oui | Oui | Oui | Oui | Oui |
-| MailChimp | Oui | Oui | Non | Non | Non |
-| Marketo | Oui | Oui | Non | Non | Non |
-| MarkLogic ODBC | Oui | Oui | Oui | Oui | Oui |
-| Microsoft Azure Consumption Insights | Oui | Oui | Non | Non | Non |
-| Microsoft Exchange | Oui | Oui | Non | Oui | Non |
-| Microsoft Exchange Online | Oui | Oui | Non | Non | Non |
-| Microsoft Graph Security | Oui | Oui | Non | Oui | Non |
-| Mixpanel | Oui | Oui | Non | Non | Non |
-| MySQL | Oui | Oui | Non | Oui | Oui |
-| OData | Oui | Oui <sup>7</sup> | Non | Oui | Non |
-| ODBC | Oui | Oui | Non | Oui | Oui |
-| OleDb | Oui | Oui | Non | Oui | Oui |
-| Oracle | Oui | Oui | Oui | Oui | Oui |
-| Paxata <sup>8</sup> | Oui | Oui | Non | Oui | Non |
-| PDF | Oui | Oui | Non | Oui | Non <sup>4</sup> |
-| Planview Enterprise One - CTM | Oui | Oui | Non | Non | Non |
-| Planview Enterprise One - PRM | Oui | Oui | Non | Non | Non |
-| Planview Projectplace | Oui | Oui | Non | Non | Non |
-| PostgreSQL | Oui | Oui | Oui | Oui | Non |
-| Dataflows Power BI | Oui | Oui | Non | Non | Non |
-| Jeux de données Power BI | Oui | Oui | Oui | Non | Non |
-| Dataflows Power Platform | Oui | Oui | Non | Non | Non |
-| Script Python | Oui | Oui <sup>5</sup> | Non | Oui <sup>5</sup> | Oui |
-| QubolePresto | Oui | Oui | Oui | Oui | Oui |
-| Quick Base | Oui | Oui | Non | Oui | Oui |
-| QuickBooks Online | Oui | Oui | Non | Non | Non |
-| Script R | Oui | Oui <sup>5</sup> | Non | Oui <sup>5</sup> | Non |
-| Roamler | Oui | Oui | Non | Oui | Non |
-| Objets Salesforce | Oui | Oui | Non | Non | Non |
-| Rapports Salesforce | Oui | Oui | Non | Non | Non |
-| Serveur de messages SAP Business Warehouse | Oui | Oui | Oui | Oui | Oui |
-| Serveur SAP Business Warehouse | Oui | Oui | Oui | Oui | Oui |
-| SAP HANA | Oui | Oui | Oui | Oui | Oui |
-| Dossier SharePoint | Oui | Oui | Non | Oui | Non <sup>4</sup> |
-| Liste SharePoint | Oui | Oui | Non | Oui | Non <sup>4</sup> |
-| Liste SharePoint Online | Oui | Oui | Non | Oui <sup>2</sup> | Non |
-| Smartsheet | Oui | Oui | Non | Non | Non |
-| Snowflake | Oui | Oui | Oui | Oui | Non |
-| Spark | Oui | Oui | Oui | Oui | Non |
-| SparkPost | Oui | Oui | Non | Non | Non |
-| SQL Server | Oui | Oui | Oui | Oui | Oui |
-| SQL Server Analysis Services | Oui | Oui | Oui | Oui | Oui |
-| Stripe | Oui | Oui | Non | Non | Non |
-| SurveyMonkey | Oui | Oui | Non | Oui | Non |
-| SweetIQ | Oui | Oui | Non | Non | Non |
-| Sybase | Oui | Oui | Non | Oui | Oui |
-| TeamDesk | Oui | Oui | Non | Oui | Non |
-| Tenforce | Oui | Oui | Non | Non | Non |
-| Teradata | Oui | Oui | Oui | Oui | Oui |
-| Texte/CSV | Oui | Oui | Non | Oui | Non <sup>4</sup> |
-| Twilio | Oui | Oui | Non | Non | Non |
-| tyGraph | Oui | Oui | Non | Non | Non |
-| Vertica | Oui | Oui | Oui | Oui | Oui |
-| Web | Oui | Oui | Non | Oui | Oui <sup>6</sup> |
-| Webtrends | Oui | Oui | Non | Non | Non |
-| Workforce Dimensions | Oui | Oui | Non | Oui | Non |
-| XML | Oui | Oui | Non | Oui | Non <sup>4</sup> |
-| Zendesk | Oui | Oui | Non | Non | Non |
+| Base de données Access | Oui | Oui | Non | Oui <sup>1</sup> | Oui | Oui |
+| ActiveDirectory | Oui | Oui | Non | Oui | Oui | Oui |
+| Adobe Analytics | Oui | Oui | Non | Non | Non | Non |
+| Amazon Redshift | Oui | Oui | Oui | Oui | Non | Oui |
+| appFigures | Oui | Oui | Non | Non | Non | Non |
+| Cubes AtScale | Oui | Oui | Oui | Oui | Non | Non |
+| Azure Analysis Services | Oui | Oui | Oui | Non | Non | Non |
+| Stockage Blob Azure | Oui | Oui | Non | Oui | Non | Oui |
+| Azure Cosmos DB | Oui | Oui | Non | Non | Non | Non |
+| Azure Cost Management | Oui | Oui | Non | Non | Non | Non |
+| Azure Data Explorer (Kusto) | Oui | Oui | Oui | Oui | Non | Oui |
+| Azure Data Lake Storage Gen1 | Oui | Oui | Non | Non | Non | Non |
+| Azure Data Lake Storage Gen2 | Oui | Oui | Non | Oui | Non | Oui |
+| Azure DevOps | Oui | Oui | Non | Non | Non | Non |
+| Azure DevOps Server | Oui | Oui | Non | Oui | Oui | Non |
+| Azure HDInsight (HDFS) | Oui | Oui | Non | Non | Non | Non |
+| Azure HDInsight Spark | Oui | Oui | Oui | Non | Non | Oui |
+| Azure SQL Database | Oui | Oui | Oui | Oui | Non | Oui |
+| Azure SQL Data Warehouse | Oui | Oui | Oui | Oui | Non | Oui |
+| Stockage de table Azure | Oui | Oui | Non | Oui | Non | Oui |
+| Connecteur BI | Oui | Oui | Oui | Oui | Oui | Non |
+| BI360 - Budgets & Rapports financiers | Oui | Oui | Non | Non | Non | Non |
+| Common Data Service | Oui | Oui | Non | Non | Non | Oui |
+| Data.World - Obtenir le jeu de données | Oui | Oui | Non | Non | Non | Non |
+| Denodo | Oui | Oui | Oui | Oui | Oui | Non |
+| Dremio | Oui | Oui | Oui | Oui | Oui | Non |
+| Dynamics 365 (Online) | Oui | Oui | Non | Non | Non | Non |
+| Dynamics 365 Business Central | Oui | Oui | Non | Non | Non | Non |
+| Dynamics 365 Business Central (local) | Oui | Oui | Non | Non | Non | Non |
+| Dynamics 365 Customer Insights | Oui | Oui | Non | Non | Non | Non |
+| Dynamics NAV | Oui | Oui | Non | Non | Non | Non |
+| Emigo Data Source | Oui | Oui | Non | Non | Non | Non |
+| Entersoft Business Suite | Oui | Oui | Non | Non | Non | Non |
+| Essbase | Oui | Oui | Oui | Oui | Oui | Non |
+| Exasol | Oui | Oui | Oui | Oui | Oui | Non |
+| Excel | Oui <sup>3</sup> | Oui <sup>3</sup> | Non | Oui <sup>3</sup> | Non <sup>4</sup> | Oui |
+| Facebook | Oui | Oui | Non | Non | Non | Non |
+| Fichier | Oui | Oui | Non | Oui | Oui | Oui |
+| Dossier | Oui | Oui | Non | Oui | Oui | Oui |
+| GitHub | Oui | Oui | Non | Non | Non | Non |
+| Google Analytics | Oui | Oui | Non | Non | Non | Non |
+| Google BigQuery | Oui | Oui | Oui | Non | Non | Oui |
+| Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non | Non |
+| HDInsight Interactive Query | Oui | Oui | Oui | Non | Non | Non |
+| IBM DB2 | Oui | Oui | Oui | Oui | Non | Oui |
+| Base de données Informix IBM | Oui | Oui | Non | Oui | Non | Non |
+| IBM Netezza | Oui | Oui | Oui | Oui | Oui | Non |
+| Impala | Oui | Oui | Oui | Oui | Oui | Oui |
+| Indexima | Oui | Oui | Oui | Oui | Oui | Non |
+| Industrial App Store | Oui | Oui | Non | Non | Non | Non |
+| Information Grid | Oui | Oui | Non | Non | Non | Non |
+| InterSystems IRIS | Oui | Oui | Oui | Oui | Oui | Non |
+| Entrepôt de données Intune | Oui | Oui | Non | Non | Non | Non |
+| Jethro ODBC | Oui | Oui | Oui | Oui | Oui | Non |
+| JSON | Oui | Oui | Non | Oui** | Non <sup>4</sup> | Oui |
+| Kyligence Enterprise | Oui | Oui | Oui | Oui | Oui | Non |
+| MailChimp | Oui | Oui | Non | Non | Non | Non |
+| Marketo | Oui | Oui | Non | Non | Non | Non |
+| MarkLogic ODBC | Oui | Oui | Oui | Oui | Oui | Non |
+| Microsoft Azure Consumption Insights | Oui | Oui | Non | Non | Non | Non |
+| Microsoft Exchange | Oui | Oui | Non | Oui | Non | Non |
+| Microsoft Exchange Online | Oui | Oui | Non | Non | Non | Oui |
+| Microsoft Graph Security | Oui | Oui | Non | Oui | Non | Non |
+| Mixpanel | Oui | Oui | Non | Non | Non | Non |
+| MySQL | Oui | Oui | Non | Oui | Oui | Oui |
+| OData | Oui | Oui <sup>7</sup> | Non | Oui | Non | Oui |
+| ODBC | Oui | Oui | Non | Oui | Oui | Oui |
+| OleDb | Oui | Oui | Non | Oui | Oui | Non |
+| Oracle | Oui | Oui | Oui | Oui | Oui | Oui |
+| Paxata <sup>8</sup> | Oui | Oui | Non | Oui | Non | Non |
+| PDF | Oui | Oui | Non | Oui | Non <sup>4</sup> | Oui |
+| Planview Enterprise One - CTM | Oui | Oui | Non | Non | Non | Non |
+| Planview Enterprise One - PRM | Oui | Oui | Non | Non | Non | Non |
+| Planview Projectplace | Oui | Oui | Non | Non | Non | Non |
+| PostgreSQL | Oui | Oui | Oui | Oui | Non | Oui |
+| Dataflows Power BI | Oui | Oui | Non | Non | Non | Oui |
+| Jeux de données Power BI | Oui | Oui | Oui | Non | Non | Non |
+| Dataflows Power Platform | Oui | Oui | Non | Non | Non | Oui |
+| Script Python | Oui | Oui <sup>5</sup> | Non | Oui <sup>5</sup> | Oui | Non |
+| QubolePresto | Oui | Oui | Oui | Oui | Oui | Non |
+| Quick Base | Oui | Oui | Non | Oui | Oui | Non |
+| QuickBooks Online | Oui | Oui | Non | Non | Non | Non |
+| Script R | Oui | Oui <sup>5</sup> | Non | Oui <sup>5</sup> | Non | Non |
+| Roamler | Oui | Oui | Non | Oui | Non | Non |
+| Objets Salesforce | Oui | Oui | Non | Non | Non | Oui |
+| Rapports Salesforce | Oui | Oui | Non | Non | Non | Oui |
+| Serveur de messages SAP Business Warehouse | Oui | Oui | Oui | Oui | Oui | Oui |
+| Serveur SAP Business Warehouse | Oui | Oui | Oui | Oui | Oui | Oui |
+| SAP HANA | Oui | Oui | Oui | Oui | Oui | Oui |
+| Dossier SharePoint | Oui | Oui | Non | Oui | Non <sup>4</sup> | Oui |
+| Liste SharePoint | Oui | Oui | Non | Oui | Non <sup>4</sup> | Oui |
+| Liste SharePoint Online | Oui | Oui | Non | Oui | Non | Oui |
+| Smartsheet | Oui | Oui | Non | Non | Non | Oui |
+| Snowflake | Oui | Oui | Oui | Oui | Non | Oui |
+| Spark | Oui | Oui | Oui | Oui | Non | Oui |
+| SparkPost | Oui | Oui | Non | Non | Non | Non |
+| SQL Server | Oui | Oui | Oui | Oui | Oui | Oui |
+| SQL Server Analysis Services | Oui | Oui | Oui | Oui | Oui | Non |
+| Stripe | Oui | Oui | Non | Non | Non | Non |
+| SurveyMonkey | Oui | Oui | Non | Oui | Non | Non |
+| SweetIQ | Oui | Oui | Non | Non | Non | Non |
+| Sybase | Oui | Oui | Non | Oui | Oui | Oui |
+| TeamDesk | Oui | Oui | Non | Oui | Non | Non |
+| Tenforce | Oui | Oui | Non | Non | Non | Non |
+| Teradata | Oui | Oui | Oui | Oui | Oui | Oui |
+| Texte/CSV | Oui | Oui | Non | Oui | Non <sup>4</sup> | Oui |
+| Twilio | Oui | Oui | Non | Non | Non | Non |
+| tyGraph | Oui | Oui | Non | Non | Non | Non |
+| Vertica | Oui | Oui | Oui | Oui | Oui | Oui |
+| Web | Oui | Oui | Non | Oui | Oui <sup>6</sup> | Oui |
+| Webtrends | Oui | Oui | Non | Non | Non | Non |
+| Workforce Dimensions | Oui | Oui | Non | Oui | Non | Non |
+| XML | Oui | Oui | Non | Oui | Non <sup>4</sup> | Oui |
+| Zendesk | Oui | Oui | Non | Non | Non | Non |
 | | | | | | | | |
 
 <sup>1</sup> Pris en charge par le [fournisseur OLEDB ACE](https://www.microsoft.com/download/details.aspx?id=54920) installé sur le même ordinateur que la passerelle.
-
-<sup>2</sup> Pris en charge avec la même fonction M que la version locale, ce qui entraîne des options d’authentification restreinte (la passerelle ne prend pas en charge OAuth).
 
 <sup>3</sup> Les fichiers Excel 1997-2003 (.xls) exigent le [fournisseur OLEDB ACE](https://www.microsoft.com/download/details.aspx?id=54920).
 
