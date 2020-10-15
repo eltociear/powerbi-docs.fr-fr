@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Documentation sur les visuels Power BI
+title: Documentation sur les visuels Power BI
 summary: Développez vos propres visuels Power BI à utiliser par vous, votre organisation ou l’intégralité de la communauté Power BI. Notre documentation fournit les informations dont vous avez besoin.
 metadata:
-  title: Documentation sur les visuels Power BI
+  title: Documentation sur les visuels Power BI
   description: Développez vos propres visuels Power BI à utiliser par vous, votre organisation ou l’intégralité de la communauté Power BI. Notre documentation fournit les informations dont vous avez besoin.
   services: powerbi
   ms.service: powerbi
@@ -12,14 +12,14 @@ metadata:
   author: KesemSharabi
   ms.author: kesharab
   ms.date: 31/03/2020
-  ms.openlocfilehash: d68b08f941ebe04c41e29f1260332e6f2b0d332c
-  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+  ms.openlocfilehash: 92eb2ebc5eaff00c5c83cd32b0fa90b631906237
+  ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/05/2020
-  ms.locfileid: "80516235"
+  ms.lasthandoff: 10/14/2020
+  ms.locfileid: "92049312"
 landingContent:
-- title: Commencer
+- title: Prise en main
   linkLists:
   - linkListType: get-started
     links:
@@ -27,14 +27,14 @@ landingContent:
       url: power-bi-custom-visuals.md
     - text: Structure de projets de visuels Power BI
       url: visual-project-structure.md
-    - text: Forum Aux Questions
+    - text: Forum aux questions
       url: power-bi-custom-visuals-faq.md
-- title: Développer un visuel Power BI
+- title: Développer un visuel Power BI
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 'Tutoriel : Développer un visuel Power BI'
-      url: custom-visual-develop-tutorial.md
+    - text: 'Tutoriel : Développer un visuel Power BI'
+      url: develop-circle-card.md
     - text: 'Tutoriel : Ajouter des options de mise en forme à un visuel Power BI'
       url: custom-visual-develop-tutorial-format-options.md
   - linkListType: concept
@@ -55,5 +55,5 @@ landingContent:
     links:
     - text: Exemples de visuels Power BI
       url: https://microsoft.github.io/PowerBI-visuals/samples/
-    - text: Dépôt Git
+    - text: Référentiel Git
       url: https://github.com/Microsoft/PowerBI-visuals
