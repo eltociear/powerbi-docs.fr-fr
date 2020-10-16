@@ -10,8 +10,8 @@
     - name: Tutoriels
       expanded: true
       items:
-        - name: "Développer un visuel Power\_BI"
-          href: custom-visual-develop-tutorial.md
+        - name: "Tutoriel\_: Développement d’un visuel de carte ronde Power BI"
+          href: develop-circle-card.md
         - name: Créer des visuels basés sur les réactions
           href: create-react-visual.md
         - name: Générer un graphique à barres
@@ -30,7 +30,7 @@
           href: power-bi-visuals-concept.md
         - name: "Visuels pour les organisations dans Power\_BI"
           href: power-bi-custom-visuals-organization.md
-        - name: "Marche à suivre pour les visuels Power\_BI"
+        - name: Marche à suivre pour les visuels Power BI
           href: guidelines-powerbi-visuals.md
         - name: Conseils sur les performances
           href: performance-tips.md
@@ -54,6 +54,8 @@
           href: power-bi-custom-visuals-certified.md
         - name: "Publier des visuels Power\_BI dans AppSource"
           href: office-store.md
+        - name: "Configurer votre environnement pour développer un visuel Power\_BI"
+          href: environment-setup.md
         - name: Créer des visuels optimisés pour R
           href: create-r-based-power-bi-desktop.md
         - name: "Tester votre visuel Power\_BI"
