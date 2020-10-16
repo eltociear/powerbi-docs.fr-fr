@@ -26,11 +26,13 @@
             - name: Adhérer à la nouvelle présentation des espaces de travail
               href: service-workspaces-new-look.md
             - name: Mettre à niveau les espaces de travail classiques
-              href: ../collaborate-share/service-upgrade-workspaces.md
+              href: service-upgrade-workspaces.md
             - name: Créer des espaces de travail classiques
               href: service-create-workspaces.md
             - name: Publier des applications à partir d’espaces de travail
               href: service-create-distribute-apps.md
+            - name: Stocker des fichiers dans OneDrive pour un espace de travail
+              href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Gérer le stockage de données dans des espaces de travail
               href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
             - name: Traçabilité des données
@@ -41,8 +43,6 @@
               href: service-data-source-impact-analysis.md
             - name: Appliquer des étiquettes de sensibilité des données
               href: ../admin/service-security-apply-data-sensitivity-labels.md
-            - name: Se connecter à des fichiers sur le compte OneDrive de votre groupe
-              href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Collaborer dans un espace de travail classique
               href: service-collaborate-power-bi-workspace.md
             - name: Gérer votre groupe dans Power BI et Microsoft 365
