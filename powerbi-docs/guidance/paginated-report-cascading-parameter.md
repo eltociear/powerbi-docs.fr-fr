@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 35a62923ba69520c1197e7bb80114a22ec1d9a20
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: f239622d8b6012913298212790f7f9aa8c3115a5
+ms.sourcegitcommit: 1428acb6334649fc2d3d8ae4c42cfbc17e8f7476
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86214102"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197653"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Utiliser des paramètres en cascade dans les rapports paginés
 
@@ -128,7 +128,7 @@ Voici comment vous pouvez développer les paramètres en cascade :
 >
 > En règle générale, les procédures stockées constituent une meilleure approche de conception. Cela est dû au fait que leurs plans de requête sont mis en cache afin d’accélérer l’exécution et vous permettent de développer une logique plus sophistiquée, le cas échéant. Toutefois, ces procédures ne sont actuellement pas prises en charge pour les sources de données relationnelles de passerelle, c’est-à-dire SQL Server, Oracle et Teradata.
 >
-> Enfin, vous devez toujours veiller à ce qu’il existe des index appropriés pour prendre en charge une récupération efficace des données. Sinon, le traitement des paramètres de votre rapport risque d’être lent, et la base de données peut devenir surchargée. Pour plus d’informations sur l’indexation de SQL Server, consultez le [Guide de conception et d’architecture d’index SQL Server](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017).
+> Enfin, vous devez toujours veiller à ce qu’il existe des index appropriés pour prendre en charge une récupération efficace des données. Sinon, le traitement des paramètres de votre rapport risque d’être lent, et la base de données peut devenir surchargée. Pour plus d’informations sur l’indexation de SQL Server, consultez le [Guide de conception et d’architecture d’index SQL Server](/sql/relational-databases/sql-server-index-design-guide).
 
 ### <a name="filter-by-a-grouping-column"></a>Filtrer par colonne de regroupement
 
@@ -220,7 +220,7 @@ Voici comment vous pouvez développer les paramètres en cascade :
 > [!TIP]
 > Vous pouvez améliorer cette conception afin de fournir davantage de contrôle à vos utilisateurs de rapports. Ils peuvent ainsi définir leur propre valeur de correspondance de modèle. Par exemple, la valeur de recherche « red% » filtrera les revendeurs dont les noms _commencent_ par les caractères « red ».
 >
-> Pour plus d’informations, consultez [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character).
+> Pour plus d’informations, consultez [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql#using-the--wildcard-character).
 
 Voici comment permettre aux utilisateurs de rapports de définir leur propre modèle.
 

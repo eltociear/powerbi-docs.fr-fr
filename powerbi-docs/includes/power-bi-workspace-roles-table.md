@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: b4b73b71a944fbb34d53be05cacc39c18e4226de
-ms.sourcegitcommit: 2cf8159535c114045e236c076a711638cfd7d2c8
+ms.openlocfilehash: 0bf9f1a6eb918e55ab3811b9c6fde2628bdd91ad
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89512809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983727"
 ---
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
@@ -42,6 +42,6 @@ ms.locfileid: "89512809"
 
 <sup>3</sup> [L’autorisation Créer sur le jeu de données](../connect-data/service-datasets-build-permissions.md) est nécessaire pour copier un rapport et pour en créer un dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle Administrateur, Membre ou Contributeur disposent automatiquement de l’autorisation Créer via leur rôle d’espace de travail.
 
-<sup>4</sup> N’oubliez pas que vous avez également besoin d’autorisations sur la passerelle. Ces autorisations sont gérées ailleurs, indépendamment des rôles et des autorisations de l’espace de travail. Consultez [Gérer une passerelle locale](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) pour plus d’informations.
+<sup>4</sup> N’oubliez pas que vous avez également besoin d’autorisations sur la passerelle. Ces autorisations sont gérées ailleurs, indépendamment des rôles et des autorisations de l’espace de travail. Consultez [Gérer une passerelle locale](/data-integration/gateway/service-gateway-manage) pour plus d’informations.
 
 <sup>5</sup> Même si vous n’avez pas de licence Power BI Pro, vous pouvez voir et utiliser les éléments du service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.

@@ -3,19 +3,19 @@ title: Résolution des problèmes de connectivité de point de terminaison XMLA 
 description: Explique comment résoudre les problèmes de connectivité via le point de terminaison XMLA dans Power BI Premium.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 07/28/2020
+ms.date: 10/14/2020
 ms.custom: seodec18, css_fy20Q4
 LocalizationGroup: Premium
-ms.openlocfilehash: bd2b8c4af1fc36fabc863aa1c67ed5af40265de2
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c8f0683e0789ec29577322424a4187a42ff5679f
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854078"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116566"
 ---
 # <a name="troubleshoot-xmla-endpoint-connectivity"></a>Résoudre les problèmes de connectivité des points de terminaison XMLA
 
@@ -79,7 +79,7 @@ Si Power BI ne parvient pas à lier votre nouveau jeu de données aux informatio
 
 Pour éviter l’échec du traitement, définissez **Options de déploiement** > **Options de traitement** sur **Ne pas traiter**, comme l’illustre l’image suivante. Visual Studio déploie alors uniquement les métadonnées. Vous pouvez ensuite configurer les informations d’identification de la source de données, puis cliquer sur **Actualiser maintenant** pour le jeu de données dans l’interface utilisateur Power BI. Pour plus d’informations sur la résolution des problèmes de traitement, consultez la section [Actualisation d’un jeu de données](#refreshing-a-dataset) plus loin dans cet article.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Option Ne pas traiter":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Erreur de déploiement de modèle":::
 
 ### <a name="new-project-from-an-existing-dataset"></a>Nouveau projet à partir d’un jeu de données existant
 
@@ -128,13 +128,13 @@ Power BI retourne l’erreur suivante si vous effectuez une actualisation via le
 
 Les paramètres d’emprunt d’identité que vous pouvez définir pour les sources de données de fournisseur ne sont pas pertinents pour Power BI. Power BI utilise un autre mécanisme, qui s’appuie sur les paramètres du jeu de données pour gérer les informations d’identification de la source de données. Veillez donc à sélectionner **Compte de service** si vous créez une source de données de fournisseur.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="Emprunt d’identité d’un compte de service":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="Erreur de déploiement de modèle":::
 
 ### <a name="fine-grained-processing"></a>Traitement affiné
 
 Lorsqu’une actualisation planifiée ou à la demande est déclenchée dans Power BI, Power BI actualise généralement l’ensemble du jeu de données. Il existe de nombreux cas où il est plus efficace d’effectuer des actualisations plus sélectives. Vous pouvez effectuer des tâches de traitement affinées dans SQL Server Management Studio (SSMS) comme indiqué ci-dessous, ou à l’aide d’outils ou de scripts tiers.
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Traitement des tables dans SSMS":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Erreur de déploiement de modèle":::
 
 ### <a name="overrides-in-refresh-tmsl-command"></a>Remplacements dans la commande Refresh TMSL
 

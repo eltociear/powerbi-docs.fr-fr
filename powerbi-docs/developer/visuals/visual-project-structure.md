@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: ce0f22c17ed718d3e2ad4e4fa9d9514edd315583
-ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
+ms.openlocfilehash: 74fec4e7fae2fc8630592c435adb42b34c93ef43
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83407436"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049358"
 ---
 # <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
 
@@ -174,4 +174,4 @@ Les commentaires figurant dans la légende de code suivante du fichier `pbiviz.j
 
 * Pour comprendre les interactions entre un visuel, un utilisateur et Power BI, consultez [Concept visuel Power BI](./power-bi-visuals-concept.md).
 
-* Commencez à développer vos propres visuels Power BI à partir de zéro à l’aide du [Guide pas à pas](./custom-visual-develop-tutorial.md).
+* Commencez à développer vos propres visuels Power BI à partir de zéro à l’aide du [Guide pas à pas](./develop-circle-card.md).

@@ -217,7 +217,7 @@
               href: service-aggregates.md
             - name: Créer un code QR pour un rapport
               href: service-create-qr-code-for-report.md
-            - name: Autoriser les consommateurs à personnaliser les visuels (préversion)
+            - name: Laisser les utilisateurs personnaliser les visuels
               href: power-bi-personalize-visuals.md
             - name: "Exporter un rapport vers Power\_BI\_Desktop (préversion)"
               href: service-export-to-pbix.md
