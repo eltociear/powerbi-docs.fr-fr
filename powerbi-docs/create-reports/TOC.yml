@@ -121,6 +121,8 @@
       items:
         - name: Rapports Power BI
           items:
+            - name: Créer un rapport dans le service
+              href: service-report-create-new.md
             - name: Activer l’actualisation automatique des pages
               href: desktop-automatic-page-refresh.md
             - name: Examiner les éléments d’un rapport avec l’Analyseur de performances
@@ -205,8 +207,12 @@
               href: desktop-grouping-visuals.md
             - name: Créer des modèles de rapports
               href: desktop-templates.md
-            - name: Créer un rapport à partir d’un jeu de données
-              href: service-report-create-new.md
+            - name: Modifier les paramètres des rapports
+              href: power-bi-report-settings.md
+            - name: Placer des rapports sur la page d’accueil d’autres personnes
+              href: ../collaborate-share/service-featured-content.md
+            - name: Autoriser les consommateurs à personnaliser les visuels (préversion)
+              href: power-bi-personalize-visuals.md
             - name: Enregistrer un rapport
               href: service-report-save.md
             - name: Interagir avec un rapport en mode Édition
