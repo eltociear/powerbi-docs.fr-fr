@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45f5ff81e8ab11c2082af7f570f02bd3671719c6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8730860a63d8d78dad7cfaafa11fb411ec8422fe
+ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634662"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862964"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
@@ -183,6 +183,8 @@ Parfois, Power BI tronque l’en-tête d’une colonne dans un tableau de bord e
 * Quand vous appliquez une mise en forme de colonne, vous ne pouvez choisir qu’une option d’alignement par colonne : **Automatique**, **Gauche**, **Centre**, **Droite**. Habituellement, une colonne ne contient que du texte ou que des nombres, mais pas une combinaison des deux. Dans les cas où une colonne contient à la fois des nombres et du texte, **Automatique** aligne le texte à gauche et les nombres à droite. Ce comportement prend en charge les langues qui se lisent de gauche à droite.
 
 * Si les données texte des en-têtes ou des cellules de votre table contiennent des caractères de nouvelle ligne, ces caractères sont ignorés, sauf si vous activez l’option « retour automatique à la ligne » dans la carte de volet de mise en forme associée à l’élément. 
+
+* Power BI calcule la taille maximale des cellules en fonction des vingt premières colonnes et des cinquante premières lignes. Les cellules au-delà de ces points peuvent ne pas être dimensionnées de manière appropriée.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

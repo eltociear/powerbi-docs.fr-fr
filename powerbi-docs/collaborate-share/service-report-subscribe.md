@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 05/15/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d7e1365ce1328e529d056a80b46230b97febc446
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: 1fd5f4748ffd7a59095bfe34090d9494ff0a9134
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485665"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526763"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -48,13 +48,13 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 ![sélectionner l’icône S’abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Ouvrez le tableau de bord ou le rapport.
-2. Dans la barre de menus supérieure, sélectionnez **S’abonner** ou l’icône en forme d’enveloppe ![icône S’abonner](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. Dans la barre de menus supérieure, sélectionnez **S’abonner** ou l’icône en forme d’enveloppe :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
    
     ![icône S’abonner](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Utilisez le curseur jaune pour activer ou désactiver l’abonnement. Positionner le curseur sur **Désactivé** ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
 
-2. Votre adresse e-mail se trouve déjà dans la zone **S’abonner**. Vous pouvez également ajouter d’autres adresses e-mail du même domaine à l’abonnement. Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](https://docs.microsoft.com/power-bi/service-premium-what-is), vous pouvez abonner d’autres adresses e-mail individuelles et à des alias de groupe, qu’ils se trouvent, ou non, dans votre domaine. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez abonner d’autres utilisateurs, mais ils doivent eux aussi disposer de licences Power BI Pro. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) ci-dessous pour plus d’informations.
+2. Votre adresse e-mail se trouve déjà dans la zone **S’abonner**. Vous pouvez également ajouter d’autres adresses e-mail du même domaine à l’abonnement. Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](../admin/service-premium-what-is.md), vous pouvez abonner d’autres adresses e-mail individuelles et à des alias de groupe, qu’ils se trouvent, ou non, dans votre domaine. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez abonner d’autres utilisateurs, mais ils doivent eux aussi disposer de licences Power BI Pro. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) ci-dessous pour plus d’informations.
 
 3. Renseignez les informations **Objet** et **Message** de l’e-mail.
 
@@ -131,7 +131,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée, excepté pour les rapports paginés. Vous pouvez abonner d’autres utilisateurs à un rapport paginé à l’aide de votre contexte de sécurité. Découvrez-en plus sur l’[abonnement à des rapports paginés](../consumer/paginated-reports-subscriptions.md).
 - Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 - Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI. Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
-- Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](../developer/power-bi-custom-visuals.md). La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](../developer/power-bi-custom-visuals-certified.md).
+- Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md). La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](../developer/visuals/power-bi-custom-visuals-certified.md).
 - Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.
 - Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail. Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.
 - Supposons que vous disposiez d’un rapport avec connexion active à Analysis Services, et que l’abonnement soit défini pour s’exécuter après l’actualisation des données. Il s’exécute la première fois que le service Power BI détecte une modification dans votre modèle local lorsqu’il interroge l’instance Analysis Services.  Power BI vérifie toutes les heures si des modifications ont été apportées au modèle de données Analysis Services, afin de déterminer quand envoyer l’abonnement.

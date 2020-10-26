@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 0d52dd7df774dd834d0356e6de57b9c80beab801
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747617"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983394"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour votre organisation
 
@@ -58,11 +58,11 @@ Suivez les instructions sous [Inscrire une application Azure AD à utiliser avec
 >* Obtenir le secret de l’application
 >* Appliquez les autorisations **Report.ReadAll** (étendue) à votre application.
 
-### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
+### <a name="create-a-capacity"></a>Créer une capacité
 
-En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Pour les rapports paginés, vous devez sauvegarder votre espace de travail d’application avec au minimum une capacité P1. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../../admin/service-premium-what-is.md).
+En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail. Pour les rapports paginés, vous devez sauvegarder votre espace de travail d’application avec au minimum une capacité P1. Vous pouvez créer une capacité avec [Power BI Premium](../../admin/service-premium-what-is.md).
 
-Le tableau suivant répertorie les références (SKU) Power BI Premium qui peuvent être utilisées pour créer une capacité dédiée pour les rapports paginés dans [Microsoft Office 365](../../admin/service-admin-premium-purchase.md) :
+Le tableau suivant répertorie les références (SKU) Power BI Premium qui peuvent être utilisées pour créer une capacité pour les rapports paginés dans [Microsoft Office 365](../../admin/service-admin-premium-purchase.md) :
 
 | Nœud de capacité | Nb total de vCores<br/>(backend + frontend) | vCores backend | vCores frontend | Limites de connexions actives/DirectQuery |
 | --- | --- | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ Le tableau suivant répertorie les références (SKU) Power BI Premium qui peuve
 
 ### <a name="enable-paginated-reports-workload"></a>Activer la charge de travail des rapports paginés
 
-Vous devez activer la charge de travail des rapports paginés sur votre capacité dédiée.
+Vous devez activer la charge de travail des rapports paginés sur votre capacité.
 
 1. Connectez-vous à [Power BI > Portail d’administration > Paramètres de capacité](https://app.powerbi.com/admin-portal/capacities).
 
@@ -91,17 +91,17 @@ Vous devez activer la charge de travail des rapports paginés sur votre capacit�
 
     ![Charge de travail des rapports paginés](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail d’application à une capacité dédiée
+### <a name="assign-an-app-workspace-to-a-capacity"></a>Affecter un espace de travail d’application à une capacité
 
-Après avoir créé une capacité dédiée, vous pouvez lui affecter l’espace de travail de votre application. Pour ce faire, effectuez les étapes suivantes :
+Après avoir créé une capacité, vous pouvez lui affecter l’espace de travail de votre application. Pour ce faire, effectuez les étapes suivantes :
 
 1. Dans le service Power BI, développez les espaces de travail, puis sélectionnez **Plus** pour l’espace de travail que vous utilisez pour incorporer votre contenu. Sélectionnez ensuite **Paramètres de l’espace de travail**.
 
     ![Modifier un espace de travail](media/embed-paginated-reports-organization/workspace-settings.png)
 
-2. Sélectionnez **Premium** et activez **Capacité dédiée**. Sélectionnez la capacité dédiée que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
+2. Sélectionnez **Premium** et activez **Capacité**. Sélectionnez la capacité que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
 
-    ![Attribuer une capacité dédiée](media/embed-paginated-reports-organization/dedicated-capacity.png)
+    ![Affecter une capacité](media/embed-paginated-reports-organization/capacity.png)
 
 3. Après avoir sélectionné **Enregistrer**, vous devez voir un losange à côté du nom de l’espace de travail de l’application.
 

@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 10/5/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b6ccdf2e5caad141ef0c33ae70b9c2f2b604462
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 0e13a7bd273121429cd186c99ef8110b38e839fb
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780185"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983341"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
 
@@ -22,7 +22,7 @@ ms.locfileid: "91780185"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Lorsqu’un collègue partage un tableau de bord ou un rapport avec vous, il apparaît dans votre conteneur **Partagé avec moi**. Quand un collègue partage une application avec vous, l’application s’affiche dans votre conteneur **Applications**.   
+Lorsqu’un collègue partage un tableau de bord ou un rapport avec vous, il apparaît dans votre conteneur **Partagé avec moi**. Quand un collègue partage une application avec vous, l’application s’affiche dans votre conteneur **Applications**, et les rapports et tableaux de bord de l’application s’affichent dans votre conteneur **Partagé avec moi**.   
 
 ![Icône de partage](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
@@ -41,6 +41,6 @@ Des options vous permettent d’interagir avec les tableaux de bord et les rappo
 
 
 ## <a name="search-and-sort-shared-dashboards-and-reports"></a>Rechercher et trier des tableaux de bord et des rapports partagés
-Si votre liste de contenus **Partagés avec moi** est très longue, vous avez plusieurs options pour rechercher ce dont vous avez besoin. Vous pouvez utiliser le champ de recherche (1), vous pouvez effectuer un tri sur l’une des colonnes (2) ou vous pouvez utiliser le volet Filtres. Pour ouvrir le volet Filtres, sélectionnez **Filtres** dans le coin supérieur droit.    
+Si votre liste de contenus **Partagés avec moi** est très longue, vous avez plusieurs options pour rechercher ce dont vous avez besoin. Utilisez le champ de recherche (1), triez sur l’une des colonnes (2) ou utilisez le volet Filtres. Pour ouvrir le volet Filtres, sélectionnez **Filtres** dans le coin supérieur droit.    
 
 ![Tableau de bord - Propriétaire et recherche](./media/end-user-shared-with-me/power-bi-filter.png)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: 2a0c326902063759d10f49f3c5d745c22f477ec2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: a47af4b96e80508a6ea21de2d8d3e0b40f907d8d
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634800"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025930"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. Le mode Présentation est utile pour afficher Power BI lors de réunions ou de conférences ou sur un projecteur dédié au bureau ou pour optimiser l’espace sur un petit écran.
@@ -56,7 +56,7 @@ Vous pouvez détacher la barre d’outils et la placer n’importe où sur l’�
 
 ## <a name="slideshows"></a>Diaporamas
 
-Vous pouvez lire un diaporama pour parcourir automatiquement votre présentation. Vous pouvez définir le diaporama pour qu’il parcourt les pages, les signets ou les pages et les signets.
+Vous pouvez lire un diaporama pour parcourir automatiquement votre présentation. Vous pouvez définir le diaporama pour qu’il parcourt les pages, les signets ou les pages et les signets. Pendant le diaporama, les pages de rapport avec [actualisation automatique de la page](../../create-reports/desktop-automatic-page-refresh.md) continuent à s’actualiser automatiquement comme configuré, garantissant ainsi que les données les plus récentes sont toujours affichées.
 
 Lorsque vous sélectionnez le bouton **Lecture** dans la barre d’outils action, le diaporama démarre. Un contrôleur s’affiche pour vous permettre de suspendre le diaporama ou de modifier le contenu en cours de lecture : pages, signets ou pages et signets.
 

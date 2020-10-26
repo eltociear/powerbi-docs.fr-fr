@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f282db76417fb99f07d39bb9f684515dd1d312c0
-ms.sourcegitcommit: ae6559f40e1735d53654cbe9425add6e18171295
+ms.openlocfilehash: 3ffc865a4be18b8fa11dda2d94bc2c8892fc3000
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88764971"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116520"
 ---
 # <a name="automatic-page-refresh-in-power-bi"></a>Actualisation automatique des pages dans Power BI
 
@@ -197,6 +197,9 @@ Ce tableau décrit de façon plus détaillée où cette fonctionnalité est disp
 *Légende du tableau :*
 1. *FI : Intervalle fixe*
 2. *CD : Détection des changements*
+
+> [!WARNING]
+> Lorsqu’elle est activée dans votre jeu de données, la mesure de détection des modifications ouvre une connexion à votre source de données DirectQuery pour calculer la mesure et interroger les modifications. Cette connexion est différente des connexions d’actualisation à faible priorité que Power BI effectue déjà.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

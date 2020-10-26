@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 84c33cfc1d9163ff631c11d285b5441dd301578e
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 8dd6a33ab19e692d9dc04138d53b04e8e49da2bf
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748123"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049174"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -170,11 +170,9 @@ Le processus de déploiement sur AppSource peut prendre un certain temps. Votre 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Si vous êtes un développeur web qui souhaite créer ses propres visuels Power BI et les ajouter à  [Microsoft AppSource](https://appsource.microsoft.com), commencez par le tutoriel  [Développement d'un visuel Power BI](custom-visual-develop-tutorial.md).
+* Si vous êtes un développeur web qui souhaite créer ses propres visuels Power BI et les ajouter à  [Microsoft AppSource](https://appsource.microsoft.com), commencez par le tutoriel  [Développement d'un visuel de carte ronde Power BI](develop-circle-card.md).
 
 * Pour plus d’informations sur les visuels, consultez [Questions fréquentes sur les visuels certifiés](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
-
-* [Développement d’un visuel Power BI](custom-visual-develop-tutorial.md)
 
 * [Sélection de visuels Power BI de Microsoft sur YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 

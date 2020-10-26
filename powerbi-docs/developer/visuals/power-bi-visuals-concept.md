@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: d5d075e3627ded01f7e47c1b073b60ff379bb506
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 94926ccf0fa214ca4c65808a7476842c22308359
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87537639"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048852"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Intégration du système de visuels Power BI
 
@@ -130,5 +130,5 @@ Les actions et les mises à jour suivantes dans les visuels Power BI surviennen
 
 Vous souhaitez créer vos propres visualisations et les ajouter à Microsoft AppSource ? Reportez-vous aux articles suivants :
 
-* [Développer un visuel Power BI](./custom-visual-develop-tutorial.md)
+* [Développement d’un visuel de carte ronde Power BI](./develop-circle-card.md)
 * [Publier des visuels Power BI sur l’Espace partenaires](office-store.md)

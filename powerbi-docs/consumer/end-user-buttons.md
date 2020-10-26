@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/01/2020
+ms.date: 10/10/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1b0b677e67fa15906492fbaa41fcfd456d77bf01
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: f0ddbbbce93a14c3468eacca130163758ca85c45
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633881"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982152"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Boutons dans le service Power BI
 Dans les rapports que vous recevez de vos collègues, vous avez peut-être remarqué des boutons et vous vous demandez comment les utiliser. Certains comportent des mots, d’autres des flèches, des graphiques et même des menus déroulants. Cet article va vous apprendre à reconnaître un bouton et à déterminer comment l’utiliser.
@@ -23,24 +23,23 @@ Dans les rapports que vous recevez de vos collègues, vous avez peut-être remar
 Il arrive parfois que des boutons ressemblent beaucoup aux formes, aux images ou aux icônes d’une page de rapport. Toutefois, si une action se produit quand vous le sélectionnez (cliquez dessus), il s’agit probablement d’un bouton.
 
 ## <a name="types-of-buttons"></a>Types de boutons
-Les créateurs de rapports ajoutent des boutons aux rapports pour faciliter la navigation et l’exploration. Il existe plusieurs types de boutons : **Précédent**, **Signet**, **Extraire**, **Navigation entre les pages**, **Questions et réponses** et **URL web**. 
+Les créateurs de rapports ajoutent des boutons aux rapports pour faciliter la navigation et l’exploration. Voici quelques-uns des types de boutons : Précédent, Signet, Flèches, Q&R, Aide et Vide. 
 
 ### <a name="back-buttons"></a>Boutons Précédent 
 Un bouton Précédent peut comporter une icône représentant une flèche. Quand vous sélectionnez ce bouton, Power BI vous ramène à la page précédente.  Les boutons Précédent sont souvent utilisés dans le cadre d’une extraction. Voici un exemple de bouton Précédent utilisé durant une extraction.
 
-1. Sélectionnez **Word** dans le graphique à barres.
-1. Sélectionnez **Extraire**, puis choisissez **Analyse du panier d’achat**.
+1. L’utilisateur a sélectionné **Word** dans le graphique à barres et explore l’**Analyse du panier moyen**.
 
     ![Capture d’écran du bouton Extraire.](media/end-user-buttons/power-bi-drillthrough.png)
 
-    Quand vous choisissez **Analyse du panier d’achat**, Power BI ouvre la page de rapport *Analyse du panier d’achat* et utilise les sélections effectuées dans la page source pour filtrer ce qui est affiché dans la page de destination.
+2. Quand vous choisissez **Analyse du panier d’achat**, Power BI ouvre la page de rapport *Analyse du panier d’achat* et utilise les sélections effectuées dans la page source pour filtrer ce qui est affiché dans la page de destination.
 
-    ![Capture d’écran du bouton Précédent.](media/end-user-buttons/power-bi-go-back.png)
+    ![Capture d’écran du bouton Précédent.](media/end-user-buttons/power-bi-back.png)
 
-    Vous êtes maintenant dans la page du rapport **Analyse du panier d’achat**, qui est filtrée pour Word. Pour revenir à la page précédente, sélectionnez le bouton Précédent. 
+    Vous êtes maintenant dans la page du rapport **Analyse du panier d’achat**, qui est filtrée pour **Word**. Pour revenir à la page précédente, sélectionnez le bouton Précédent intitulé **Revenir**. 
 
 ## <a name="bookmark-buttons"></a>Boutons Signet
-Les concepteurs de rapports incluent souvent des signets dans leurs rapports. Pour afficher la liste des signets d’un rapport, sélectionnez **Afficher** > **Signets** dans l’angle supérieur droit. Quand un concepteur de rapports ajoute un *bouton* Signet, vous disposez d’une autre méthode pour accéder à la page de rapport spécifique associée à ce signet. Les filtres et les paramètres capturés par le signet sont appliqués à la page. [Découvrez-en plus sur les signets dans Power BI](end-user-bookmarks.md). 
+Les *concepteurs* de rapports incluent souvent des signets dans leurs rapports. Pour afficher la liste des signets d’un rapport, sélectionnez **Signets** dans l’angle supérieur droit. Quand un concepteur de rapports ajoute un *bouton* Signet, vous disposez d’une autre méthode pour accéder à la page de rapport spécifique associée à ce signet. Les filtres et les paramètres capturés par le signet sont appliqués à la page. [Découvrez-en plus sur les signets dans Power BI](end-user-bookmarks.md). 
 
 Dans cet exemple, le bouton contient une icône en forme de signet et le nom du signet (*Urban*). 
 
@@ -87,7 +86,7 @@ Quand vous sélectionnez un bouton Questions et réponses, la fenêtre Explorate
 ![Capture d’écran de la fenêtre Explorateur de questions et réponses Power BI contenant le texte Poser une question sur vos données.](media/end-user-buttons/power-bi-qna.png)
 
 ## <a name="web-url"></a>Web URL
-Les boutons URL web ouvrent une nouvelle fenêtre de navigateur. Les concepteurs de rapports peuvent ajouter ce type de bouton comme source de référence pour proposer un lien vers le site web de l’entreprise ou même vers un autre rapport ou tableau de bord. Dans l’exemple ci-dessous, le bouton URL web vous permet de télécharger le fichier source du rapport. 
+Les boutons URL web ouvrent une nouvelle fenêtre de navigateur. Les concepteurs de rapports peuvent ajouter ce type de bouton comme source de référence pour proposer un lien vers le site web ou une page d’aide de l’entreprise ou même vers un autre rapport ou tableau de bord. Dans l’exemple ci-dessous, le bouton URL web vous permet de télécharger le fichier source du rapport. 
 
 Dans la mesure où la page s’ouvre dans une fenêtre distincte, fermez la fenêtre ou sélectionnez votre onglet Power BI pour revenir au rapport Power BI.
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3df3e29d2f6517fec68bf185bf71d9f4f3c5618a
-ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
+ms.openlocfilehash: 472f2ecce2e28fcb7d50356ec1322f67f2395411
+ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512859"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91136002"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Relations de modèle dans Power BI Desktop
 
@@ -140,7 +140,7 @@ Plusieurs fonctions DAX présentent un intérêt pour les relations de modèle. 
 
 ## <a name="relationship-evaluation"></a>Évaluation des relations
 
-Du point de vue de l’évaluation, les relations de modèle peuvent être considérées comme _fortes_ ou _faibles_. Il ne s’agit pas d’une propriété de relation configurable. De fait, elle est déduite du type de cardinalité et de la source de données des deux tables associées. Il est important de comprendre le type d’évaluation, car cela peut avoir des implications en termes de performances ou des conséquences en cas de compromission de l’intégrité des données. Ces implications et les conséquences de l’intégrité sont décrites dans cette rubrique.
+Du point de vue de l’évaluation, les relations de modèle peuvent être considérées comme _régulières_ ou _limitées_. Il ne s’agit pas d’une propriété de relation configurable. De fait, elle est déduite du type de cardinalité et de la source de données des deux tables associées. Il est important de comprendre le type d’évaluation, car cela peut avoir des implications en termes de performances ou des conséquences en cas de compromission de l’intégrité des données. Ces implications et les conséquences de l’intégrité sont décrites dans cette rubrique.
 
 Tout d’abord, une théorie de modélisation est nécessaire pour comprendre parfaitement les évaluations des relations.
 
@@ -154,17 +154,17 @@ Penchons-nous sur un exemple de modèle Composite.
 
 Dans cet exemple, le modèle Composite se compose de deux îlots : un îlot de données Vertipaq et un îlot de données sources DirectQuery. L’îlot de données Vertipaq contient trois tables, tandis que l’îlot de données sources DirectQuery en contient deux. Il existe une relation inter-îlots pour associer une table de l’îlot de données Vertipaq à une table de l’îlot de données sources DirectQuery.
 
-### <a name="strong-relationships"></a>Relations fortes
+### <a name="regular-relationships"></a>Relations régulières
 
-Une relation de modèle est dite _forte_ quand le moteur de requête peut déterminer le côté « un » d’une relation. Il a la confirmation que la colonne du côté « un » contient des valeurs uniques. Toutes les relations intra-îlots Un-à-plusieurs sont des relations fortes.
+Une relation de modèle est dite _régulière_ quand le moteur de requête peut déterminer le côté « un » d’une relation. Il a la confirmation que la colonne du côté « un » contient des valeurs uniques. Toutes les relations intra-îlots Un-à-plusieurs sont des relations régulières.
 
-Dans l’exemple suivant, il existe deux relations fortes, toutes deux représentées par la lettre **S**. Les relations incluent la relation Un-à-plusieurs contenue dans l’îlot Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
+Dans l’exemple suivant, il existe deux relations régulières, toutes deux représentées par la lettre **S**. Les relations incluent la relation Un-à-plusieurs contenue dans l’îlot Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
 
-![Exemple de modèle Composite constitué de deux îlots avec indication de relations fortes](media/desktop-relationships-understand/data-island-example-strong.png)
+![Exemple de modèle Composite constitué de deux îlots avec indication de relations régulières](media/desktop-relationships-understand/data-island-example-strong.png)
 
-Pour les modèles Importer, où toutes les données sont stockées dans le cache Vertipaq, une structure de données est créée pour chaque relation forte au moment où les données sont actualisées. Les structures de données sont constituées de mappages indexés de toutes les valeurs de colonne à colonne, et leur objectif est d’accélérer la jointure des tables au moment de la requête.
+Pour les modèles Importer, où toutes les données sont stockées dans le cache Vertipaq, une structure de données est créée pour chaque relation régulière au moment où les données sont actualisées. Les structures de données sont constituées de mappages indexés de toutes les valeurs de colonne à colonne, et leur objectif est d’accélérer la jointure des tables au moment de la requête.
 
-Au moment de la requête, les relations fortes autorisent une _extension de table_. L’extension de table entraîne la création d’une table virtuelle en incluant les colonnes natives de la table de base, puis en les développant dans les tables associées. Pour les tables d’importation, cette opération s’effectue dans le moteur de requête ; dans le cas des tables DirectQuery, cette opération s’effectue dans la requête native envoyée à la base de données source (tant que la propriété **Intégrité référentielle supposée** n’est pas activée). Le moteur de requête agit ensuite sur la table étendue, en appliquant les filtres et en effectuant un regroupement en fonction des valeurs contenues dans les colonnes de la table étendue.
+Au moment de la requête, les relations régulières autorisent une _extension de table_. L’extension de table entraîne la création d’une table virtuelle en incluant les colonnes natives de la table de base, puis en les développant dans les tables associées. Pour les tables d’importation, cette opération s’effectue dans le moteur de requête ; dans le cas des tables DirectQuery, cette opération s’effectue dans la requête native envoyée à la base de données source (tant que la propriété **Intégrité référentielle supposée** n’est pas activée). Le moteur de requête agit ensuite sur la table étendue, en appliquant les filtres et en effectuant un regroupement en fonction des valeurs contenues dans les colonnes de la table étendue.
 
 > [!NOTE]
 > Les relations inactives sont aussi étendues, même quand la relation n’est pas utilisée par un calcul. Les relations bidirectionnelles n’ont aucun impact sur l’extension de table.
@@ -181,34 +181,34 @@ Voyons comment l’extension de table fonctionne à travers un exemple animé.
 
 Dans cet exemple, le modèle se compose de trois tables : **Category**, **Product** et **Sales**. La table **Category** est liée à la table **Product** par une relation Un-à-plusieurs, et la table **Product** est liée à la table **Sales** par une relation Un-à-plusieurs. La table **Category** contient deux lignes, la table **Product** en contient trois et la table **Sales** en contient cinq. Il existe des correspondances de valeurs des deux côtés des relations, ce qui signifie qu’il n’existe pas de violations d’intégrité référentielle. Une table étendue s’affiche au moment de la requête. La table est constituée des colonnes des trois tables. Il s’agit en fait d’une perspective dénormalisée des données contenues dans les trois tables. Une nouvelle ligne est ajoutée à la table **Sales** et sa valeur d’identificateur de production (9) n’a pas de correspondance dans la table **Product**. Il s’agit d’une violation d’intégrité référentielle. Dans la table étendue, la nouvelle ligne contient des valeurs (vides) pour les colonnes des tables **Category** et **Product**.
 
-### <a name="weak-relationships"></a>Relations faibles
+### <a name="limited-relationships"></a>Relations limitées
 
-Une relation de modèle est dite _faible_ quand le côté « un » n’est pas garanti. Deux raisons peuvent expliquer cela :
+Une relation de modèle est dite _limitée_ quand le côté « un » n’est pas garanti. Deux raisons peuvent expliquer cela :
 
 - La relation utilise un type de cardinalité Plusieurs-à-plusieurs (même si une colonne ou les deux contiennent des valeurs uniques)
 - La relation est de type inter-îlot (ce qui ne peut être le cas que des modèles Composite)
 
-Dans l’exemple suivant, il existe deux relations faibles, toutes deux représentées par la lettre **W**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans l’îlot Vertipaq et la relation inter-ilôts Un-à-plusieurs.
+Dans l’exemple suivant, il existe deux relations limitées, toutes deux représentées par la lettre **W**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans l’îlot Vertipaq et la relation inter-ilôts Un-à-plusieurs.
 
-![Exemple de modèle Composite constitué de deux îlots avec indication de relations faibles](media/desktop-relationships-understand/data-island-example-weak.png)
+![Exemple de modèle Composite constitué de deux îlots avec indication de relations limitées](media/desktop-relationships-understand/data-island-example-weak.png)
 
-Pour les modèles Importer, les relations faibles ne font jamais l’objet d’une création de structure de données. Cela signifie que les jointures de table doivent être résolues au moment de la requête.
+Pour les modèles Importer, les relations limitées ne font jamais l’objet d’une création de structure de données. Cela signifie que les jointures de table doivent être résolues au moment de la requête.
 
-Les relations faibles ne font jamais l’objet d’une extension de table. Les jointures de tables sont effectuées en utilisant la sémantique de jointure interne. C’est pour cette raison qu’il n’y a pas d’ajout de lignes virtuelles vides pour compenser les violations d’intégrité référentielle.
+Les relations limitées ne font jamais l’objet d’une extension de table. Les jointures de tables sont effectuées en utilisant la sémantique de jointure interne. C’est pour cette raison qu’il n’y a pas d’ajout de lignes virtuelles vides pour compenser les violations d’intégrité référentielle.
 
-Les relations faibles s’accompagnent d’autres restrictions :
+Les relations limitées s’accompagnent d’autres restrictions :
 
 - La fonction DAX RELATED ne peut pas être utilisée pour récupérer les valeurs de colonne du côté « un »
 - L’application de la sécurité au niveau des lignes est soumise à des restrictions de topologie
 
 > [!NOTE]
-> Dans la vue de modèle Power BI Desktop, il n’est pas toujours possible de déterminer si une relation de modèle est forte ou faible. Une relation Plusieurs-à-plusieurs est toujours faible, ce qui est aussi le cas d’une relation Un-à-plusieurs de type inter-îlots. Pour déterminer s’il s’agit d’une relation inter-îlots, vous devez inspecter les modes de stockage de table et les sources de données.
+> Dans la vue de modèle Power BI Desktop, il n’est pas toujours possible de déterminer si une relation de modèle est régulière ou limitée. Une relation Plusieurs-à-plusieurs est toujours limitée, ce qui est aussi le cas d’une relation Un-à-plusieurs de type inter-îlots. Pour déterminer s’il s’agit d’une relation inter-îlots, vous devez inspecter les modes de stockage de table et les sources de données.
 
 ### <a name="precedence-rules"></a>Règles de précédence
 
 Les relations bidirectionnelles peuvent introduire plusieurs chemins de propagation de filtre entre les tables de modèle (et donc des ambiguïtés). La liste suivante présente les règles de précédence que Power BI utilise pour la détection des ambiguïtés et la résolution des chemins :
 
-1. Relations Plusieurs-à-un et Un-à-un, ce qui inclut les relations faibles
+1. Relations Plusieurs-à-un et Un-à-un, ce qui inclut les relations limitées
 2. Relations Plusieurs-à-plusieurs
 3. Relations bidirectionnelles, dans le sens inverse (c’est-à-dire, à partir du côté « Plusieurs »)
 

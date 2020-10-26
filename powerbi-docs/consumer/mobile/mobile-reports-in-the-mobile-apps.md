@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: bdea7bbadc9e974e6b71122775408f50cfe33de3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 47f1db75eb3923c1c4195a319323c3a37d17484e
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855952"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026075"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -156,6 +156,25 @@ Quand une vue de signet d’un rapport est ouverte, le nom du signet apparaît e
 
 [Découvrez-en plus sur les signets dans le service Power BI](../end-user-bookmarks.md).
 
+## <a name="refresh-your-data"></a>Actualiser vos données
+
+Si vous n’avez pas la certitude d’afficher les données les plus récentes, vous pouvez extraire de nouvelles données dans votre rapport à partir du service Power BI :
+
+* Sur les appareils iOS et les tablettes Android, tirez légèrement de haut en bas sur la page de rapport.
+* Sur les téléphones Android, vous pouvez utiliser l’action d’extraction ou un bouton Actualiser, selon la façon dont vous avez configuré les [paramètres d’interaction](mobile-app-interaction-settings.md).
+* Sur les appareils Windows, utilisez le bouton Actualiser en haut à droite de l’écran.
+
+    Les pages de rapport qui ont l’[actualisation automatique de la page](../../create-reports/desktop-automatic-page-refresh.md) sont automatiquement actualisées en fonction de la configuration (application Windows uniquement).
+
+>[!NOTE]
+>Les méthodes d’actualisation ci-dessus n’actualisent pas le jeu de données sous-jacent. Au lieu de cela, elles mettent à jour le rapport que vous affichez sur l’application mobile avec toutes les nouvelles données susceptibles d’exister dans Power BI.
+
+### <a name="how-do-i-know-when-my-report-was-last-refreshed"></a>Comment savoir quand mon rapport a été actualisé pour la dernière fois ?
+
+Pour savoir à quel moment votre rapport a été actualisé pour la dernière fois, appuyez sur l’en-tête du rapport. L’arborescence de navigation du rapport s’affiche, avec notamment la date et l’heure de la dernière actualisation. 
+
+![Capture d’écran des informations d’actualisation du rapport sur l’application mobile.](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-refresh-info.png)
+ 
 ## <a name="configure-your-experience-with-reports"></a>Configurer votre expérience avec les rapports
 L’application mobile Power BI a un certain nombre de paramètres qui vous permettent de contrôler votre expérience avec les rapports. Actuellement, vous pouvez configurer
 * **Interaction avec les visuels de rapport** : Vous pouvez choisir d’utiliser une interaction d’appui simple ou d’appui double.

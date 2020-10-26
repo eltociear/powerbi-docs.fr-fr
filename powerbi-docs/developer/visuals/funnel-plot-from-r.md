@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 04/02/2020
-ms.openlocfilehash: e0bdb5174c1392e1a2f81a101a62798f82e2b191
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 5df13baf295745f86c89ce75d2890ca2c13894ee
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747709"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049335"
 ---
 # <a name="tutorial-build-a-funnel-plot-from-r-script-to-r-visual"></a>Tutoriel : Créer un tracé en entonnoir du script R au visuel R
 Cet article explique comment créer étape par étape un tracé en entonnoir en utilisant un script R dans un visuel R.
@@ -49,7 +49,7 @@ Ensuite, modifiez le script de façon à ce qu’il corresponde à [ce script](h
 
 ## <a name="create-an-r-powered-visual-and-package-in-r-code"></a>Créer un visuel R et un package dans du code R
 
-1. Avant de commencer, veillez à [installer les outils PBIVIZ](./custom-visual-develop-tutorial.md#installing-packages).
+1. Avant de commencer, veillez à [installer les outils PBIVIZ](./environment-setup.md#install-pbiviz).
 
 1. Exécutez la commande suivante pour créer un visuel R :
 
@@ -274,7 +274,7 @@ Le visuel n’est pas encore convivial, car l’utilisateur doit connaître l’
 
 * Chaque visuel R applique l’opérateur `unique` à sa table d’entrée. Pour éviter la suppression des lignes identiques, vous pouvez ajouter un champ d’entrée supplémentaire avec un ID unique et l’ignorer dans le code R.   
 
-* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](./custom-visual-develop-tutorial.md) au lieu de le réempaqueter avec la commande `pbiviz package`.
+* Si vous avez un compte Power BI, utilisez le service Power BI pour développer un visuel [à la volée](./develop-circle-card.md) au lieu de le réempaqueter avec la commande `pbiviz package`.
 
 ### <a name="html-widgets-gallery"></a>Galerie de widgets HTML
 Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidgets.org/) que vous pouvez utiliser pour votre prochain visuel. Pour faciliter les choses, nous avons créé un [dépôt de projets de visuels](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) avec plus de 20 visuels HTML interactifs !
@@ -300,6 +300,6 @@ Explorez les visuels dans la [Galerie de widgets HTML](http://gallery.htmlwidget
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour découvrir plus d’informations, consultez les tutoriels supplémentaires sur les [Visuels Power BI](./custom-visual-develop-tutorial.md) et les [Visuels R](../../visuals/service-r-visuals.md).
+Pour plus d’informations, consultez les autres didacticiels Power BI, [Développement d’un visuel de carte ronde Power BI](./develop-circle-card.md) et [Visuels R](../../visuals/service-r-visuals.md).
 
 Découvrez comment [développer et soumettre des visuels](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) au [Store Office (Galerie)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI) ou, pour obtenir d’autres exemples, consultez la [Démonstration de scripts R](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

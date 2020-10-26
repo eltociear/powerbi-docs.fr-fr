@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
-ms.openlocfilehash: 99df7a301a1025d50c82c5cc7f5966325a6a6a6f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: dca16fd29dc89fc2e67ce1e8f5c6abfc0adcb9a6
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747525"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049289"
 ---
 # <a name="how-to-create-mobile-friendly-power-bi-visuals"></a>Guide pratique pour créer des visuels Power BI adaptés aux mobiles
 La consommation sur mobile a un rôle majeur dans Power BI. Une de ses forces est de rester connecté à vos données à tout moment, où que vous soyez.
@@ -79,4 +79,4 @@ Le visuel Power BI doit s’afficher sur tous les appareils prenant en charge le
 Lors des tests sur les modèles les plus récents des appareils Windows, iOS et Android, le développeur doit prendre en compte la plupart de ces aspects qualitatifs.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour commencer, consultez [Tutoriel : Développement d’un visuel Power BI](./custom-visual-develop-tutorial.md)
+Pour commencer, consultez [Développement d’un visuel de carte ronde Power BI](./develop-circle-card.md).

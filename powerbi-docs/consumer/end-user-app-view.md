@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/17/2020
+ms.date: 10/09/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: e737d8747f7d6d9b69eda2035df06abdddd9569f
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: e0089d2492ad7a68aa2043cce4ca8677a0d276bb
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803086"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982281"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -38,7 +38,7 @@ Tous les utilisateurs de Power BI ne peuvent pas visualiser et interagir avec le
 - Si vous disposez d’une licence gratuite, vous pouvez ouvrir des applications qui ont été partagées avec vous et qui sont stockées dans un espace de travail d’une capacité Premium.  
 - Si vous disposez d’une licence Pro, vous pouvez ouvrir des applications qui ont été partagées avec vous.
 
-Si vous ne parvenez pas à ouvrir certaines applications, contactez votre administrateur ou le support technique. Pour plus d’informations sur les licences, consultez [Gestion des licences Power BI](end-user-license.md).
+Si vous ne parvenez pas à ouvrir une application, contactez votre administrateur ou le support technique. Pour plus d’informations sur les licences, consultez [Gestion des licences Power BI](end-user-license.md).
 
 ## <a name="get-the-app-from-the-power-bi-apps-marketplace"></a>Téléchargement de l’application sur la Place de marché des applications Power BI
 
@@ -66,9 +66,9 @@ Vous pouvez rechercher et installer des applications sur la Place de marché des
 
    La zone de recherche dépend de l’onglet ouvert : seules les applications du type sélectionné sont renvoyées. Si l’onglet **Toutes les applications** est ouvert, tant les applications d’organisation que les applications modèles sont retournées. Cet aspect peut se révéler déroutant quand une application d’organisation et une application modèle portent le même nom. Rappelez-vous simplement que les vignettes des applications modèles présentent une icône en forme de panier d’achat en haut à droite.
 
-Lorsque vous avez trouvé l’application souhaitée, sélectionnez **Installer maintenant** pour l’installer.
+4. Lorsque vous avez trouvé l’application souhaitée, sélectionnez **Installer maintenant** pour l’installer.
 
-   ![capture d’écran montrant le bouton Obtenir maintenant](./media/end-user-app-view/power-bi-get-it.png)
+   ![capture d’écran montrant le bouton Obtenir maintenant](./media/end-user-app-view/power-bi-get-now.png)
 
 * S’il s’agit d’une application d’organisation, elle est immédiatement ajoutée à votre liste d’applications.
 * S’il s’agit d’une application modèle, vous accédez automatiquement à l’offre d’applications modèles dans AppSource. Vous trouverez [ici un exemple](end-user-app-marketing.md) de téléchargement et d’installation d’un exemple d’application modèle à partir de la Place de marché des applications Power BI. L’application est installée, ainsi qu’un espace de travail du même nom.
@@ -77,7 +77,7 @@ Lorsque vous avez trouvé l’application souhaitée, sélectionnez **Installer 
    > Si vous utilisez une licence utilisateur gratuite, vous pouvez télécharger des applications, mais vous ne pouvez pas les visualiser, sauf si vous effectuez une mise à niveau vers un compte Power BI Pro ou si l’application est stockée dans une capacité partagée Premium. Pour plus d’informations, consultez [Licences pour les utilisateurs des activités](end-user-license.md).
 
 ## <a name="install-an-app-from-a-direct-link"></a>Installer une application à partir d’un lien direct
-Vous pouvez également installer une application d’organisation en suivant un lien direct dans un e-mail à partir du concepteur d’applications.  
+Vous pouvez également installer une application d’organisation à partir d’un lien direct.    
 
 **Sur votre ordinateur** 
 
@@ -88,13 +88,15 @@ Quand vous suivez le lien de l’e-mail, le service Power BI ([https://app.powe
 Quand vous sélectionnez le lien qui figure dans l’e-mail sur votre appareil mobile, l’application s’installe automatiquement et s’ouvre dans l’application mobile. Il peut être nécessaire de d’abord vous connecter. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagir avec les tableaux de bord et rapports dans l’application
-Prenez le temps d’explorer les données dans les tableaux de bord et les rapports qui composent l’application. Vous avez accès à toutes les interactions Power BI standard, comme le filtrage, la mise en évidence, le tri et l’exploration.  Vous ne voyez pas encore très bien la différence entre les tableaux de bord et les rapports ?  Lisez l’[article sur les tableaux de bord](end-user-dashboards.md) et l’[article sur les rapports](end-user-reports.md).  
+Prenez le temps d’explorer les données dans les tableaux de bord et les rapports qui composent l’application. Vous avez accès à toutes les interactions Power BI standard, comme le filtrage, la mise en évidence, le tri et l’exploration.  L’étendue de ce que vous pouvez faire avec une application est déterminée par les autorisations que le *concepteur* vous a affectées.  La façon dont vous pouvez interagir avec les tableaux de bord et rapports de l’application est contrôlée par l’accès et les rôles que le *concepteur* vous a affectés. 
+
+Vous ne voyez pas encore très bien la différence entre les tableaux de bord et les rapports ?  Lisez l’[article sur les tableaux de bord](end-user-dashboards.md) et l’[article sur les rapports](end-user-reports.md).  
 
 ### <a name="open-an-app"></a>Ouvrir une application
 
 Vous avez installé une application ou reçu une application de la part d’un collègue. Pour voir cette application, ouvrez votre liste de contenu Applications en sélectionnant **Applications** dans le volet de navigation.
 
-![Capture d’écran de la liste de contenu Applications](./media/end-user-app-view/power-bi-apps-list.png)
+![Capture d’écran de la liste de contenu Applications](./media/end-user-app-view/power-bi-apps-card.png)
 
 Pointez et sélectionnez l’application à ouvrir. En fonction de l’application, vous pouvez recevoir une invite similaire à celle-ci :
 
@@ -104,22 +106,22 @@ Pour obtenir des conseils sur l’option à sélectionner, consultez [Installer 
 
 Pointez sur l’application pour en voir les détails, puis sélectionnez la carte d’application pour ouvrir l’application.
 
-![Capture d’écran de l’état de survol d’une application, indiquant son nom, son horodatage, son propriétaire et ses actions. ](./media/end-user-app-view/power-bi-apps-hover.png)
+![Capture d’écran de l’état de survol d’une application, indiquant son nom, son horodatage, son propriétaire et ses actions. ](./media/end-user-app-view/power-bi-app-hover.png)
 
 L’application s’ouvre. Chaque application est différente : disposition, visuels, couleurs et options diffèrent. Mais toutes les applications ont des fonctionnalités communes.
 
-![Capture d’écran de l’application Ventes et marketing avec différentes zones identifiées par des chiffres ](./media/end-user-app-view/power-bi-app-numbered.png)
+![Capture d’écran de l’application Ventes et marketing avec différentes zones identifiées par des chiffres ](./media/end-user-app-view/power-bi-app-number.png)
 
 1. Nom de l’application et heure de la dernière mise à jour. Sélectionnez la flèche déroulante pour rechercher le propriétaire et le contact pour obtenir de l’aide.
 1. Sélectionnez **Power BI** pour revenir à la page d’[accueil](end-user-home.md).
 1. Votre barre d’action. 
 1. Canevas de la page du rapport.
-1. Volet de navigation de l’application.  Sous le nom de l’application se trouve la liste des pages du rapport. Sélectionnez un nom de page du rapport pour l’ouvrir. Actuellement, une page *Taux de retour* est ouverte. 
+1. Volet de navigation de l’application.  Sous le nom de l’application se trouve la liste de contenu. Cette application a un rapport avec six pages. Sélectionnez un nom de page du rapport pour l’ouvrir. Actuellement, une page *Taux de retour* est ouverte. 
 1. Sélectionnez la flèche pour développer le volet **Filtres**.
 
-Vous pouvez également explorer l’espace de travail associé. [En savoir plus sur les espaces de travail](end-user-workspaces.md) Sélectionnez **Power BI** (numéro 2) pour revenir à l’**Accueil** et choisissez **Espaces de travail**. 
+Vous pouvez également explorer l’espace de travail associé si vous en avez reçu l’accès.  Lorsque vous installez ou téléchargez une application de modèle, le service Power BI crée un espace de travail pour vous. Lorsque vous installez une application d’organisation, elle peut ne pas inclure l’accès à l’espace de travail. [En savoir plus sur les espaces de travail](end-user-workspaces.md). Sélectionnez **Power BI** (numéro 2) pour revenir à l’**Accueil** et choisissez **Espaces de travail**. 
 
-![Capture d’écran de l’espace de travail Ventes et marketing montrant un seul rapport et un seul jeu de données. ](./media/end-user-app-view/power-bi-new-workspaces.png)
+![Capture d’écran de l’espace de travail Ventes et marketing montrant un seul rapport et un seul jeu de données. ](./media/end-user-app-view/power-bi-new-workspace.png)
 
 ## <a name="update-an-app"></a>Mettre à jour une application 
 
@@ -127,7 +129,7 @@ De temps à autre, les concepteurs d’applications sont susceptibles de publier
 
 * Si vous avez reçu l’application de votre organisation, la mise à jour de la nouvelle version est entièrement transparente : vous n’avez rien à faire. 
 
-* Si vous avez obtenu l’application auprès d’AppSource, la prochaine fois que vous ouvrez l’application, vous voyez une bannière de notification. La notification vous informe qu’une nouvelle version est disponible. 
+* Si vous avez obtenu le modèle d’application auprès d’AppSource, la prochaine fois que vous ouvrez l’application, vous voyez une bannière de notification. La notification vous informe qu’une nouvelle version est disponible. 
 
     1. Sélectionnez **Obtenir** pour mettre à jour.  
 
@@ -135,21 +137,21 @@ De temps à autre, les concepteurs d’applications sont susceptibles de publier
 
     2. Quand vous êtes invité à installer l’application mise à jour, sélectionnez **Installer**. 
 
-        ![Installer la mise à jour](./media/end-user-app-view/power-bi-install.png) 
+        ![Installer la mise à jour](./media/end-user-app-view/power-bi-installs.png) 
 
     3. Comme vous avez déjà une version de cette application, décidez si vous souhaitez remplacer la version existante ou si vous souhaitez installer l’application mise à jour dans un nouvel espace de travail.   
 
         ![Remplacer l’ancienne version de l’application](./media/end-user-app-view/power-bi-already-installed.png) 
 
      > [!NOTE] 
-     > L’installation d’une nouvelle version remplace toutes les modifications que vous avez apportées aux rapports et aux tableaux de bord. Pour conserver vos rapports et tableaux de bord mis à jour, vous pouvez les enregistrer sous un autre nom ou à un autre emplacement avant d’effectuer l’installation. 
+     > L’installation d’une nouvelle version remplace toutes les modifications que vous avez apportées aux rapports et aux tableaux de bord de l’application. Pour conserver vos rapports et tableaux de bord mis à jour, vous pouvez les enregistrer sous un autre nom ou à un autre emplacement avant d’effectuer l’installation. 
 
     4. Une fois que vous avez installé la version mise à jour, sélectionnez **Mettre à jour l’application** pour effectuer le processus de mise à jour. 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
 - La possibilité d’installer des applications peut être activée et désactivée par votre administrateur Power BI. Si vous avez besoin que cette fonctionnalité soit activée, contactez votre service informatique ou support technique.    
-- L’utilisation d’applications nécessite une licence Pro ou que l’application soit stockée dans une capacité partagée Premium. [En savoir plus sur les licences](end-user-license.md).
+- L’utilisation d’applications nécessite une licence Pro ou que l’application soit stockée dans un espace de travail dans une capacité partagée Premium. [En savoir plus sur les licences](end-user-license.md).
 
 
 ## <a name="next-steps"></a>Étapes suivantes

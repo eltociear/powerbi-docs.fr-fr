@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: a36c377a7faf82e6aeb544859b72ac973305a3b3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 0f4b84067389e93de0e5c5c2b5008b08cd78151f
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860161"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525199"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -80,7 +80,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Envoi de notifications d’actualisation à d’autres utilisateurs
 * [Outil de test](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) pour les capacités Power BI Premium
 * Préversion publique des [notifications de disponibilité du service](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/)
-* Préversion publique de la [nouvelle apparence](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) des rapports de Power BI
+* Préversion publique de la [nouvelle apparence](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/) des rapports de Power BI
 * Nouvelle région Power BI en Afrique du Sud
 
 ### <a name="june-2019"></a>Juin 2019
@@ -312,7 +312,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 ***Sécurité au niveau des lignes***
 
-* Prise en charge des groupes Azure Active Directory (AAD) : les utilisateurs peuvent maintenant affecter un rôle à des groupes AAD (groupes de sécurité et listes de distribution). Cela simplifie l’attribution de rôles à un grand groupe d’utilisateurs.
+* Prise en charge du groupe Azure Active Directory (Azure AD) : Les utilisateurs peuvent maintenant affecter un rôle à des groupes Azure AD (groupes de sécurité). Cela simplifie l’attribution de rôles à un grand groupe d’utilisateurs.
 * [Tester des rôles SNL avec des rapports qui s’appuient sur les données SNL](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop) : nous avons ajouté une fonctionnalité à notre préversion SNL, qui permet de tester un jeu de données dans un rôle spécifique. Cela permet de garantir le fonctionnement du rôle avant que les utilisateurs ne commencent à utiliser votre tableau de bord.
 * Définir et appliquer la sécurité SNL à des modèles cloud basés sur des requêtes directes : il est maintenant possible de créer et d’appliquer des règles SNL avec des sources de données à requête directe.
 
@@ -646,7 +646,7 @@ Pour plus d’informations, consultez notre [blog](https://powerbi.microsoft.com
 * Suite à la mise à jour du service de cette semaine, lors de la création de rapports, vous avez désormais le choix entre plusieurs tailles de page et pouvez définir votre propre taille de page. Vous pouvez ainsi contrôler la taille et les proportions de chaque page du rapport.
 * Nous avons ajouté la prise en charge d’une mise en forme visuelle supplémentaire des images et graphiques en bulles. Vous pouvez verrouiller l’aspect lors du redimensionnement d’images pour éviter la distorsion de celles-ci, et configurer les bulles de graphique en nuages de points de façon à ce qu’elles soient remplies ou non.
 * Désormais, Power BI envoie les invitations de partage à l’adresse de messagerie de secours. Quand un tableau de bord est partagé avec vous, nous envoyons le lien d’invitation de partage tant à votre adresse de messagerie d’origine qu’à votre adresse de messagerie de secours (si vous l’avez configurée).
-* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture Microsoft 365 multilocataire dédiée (DonMT, Dedicated on Multitenant). Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur client, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+* Power BI est disponible pour tous les clients, y compris ceux qui opèrent au sein d’une architecture Microsoft 365 multilocataire dédiée (DonMT, Dedicated on Multitenant). Vous allez utiliser Power BI en tant que service partagé en mode mutualisé. Dans la plupart des cas, vous pouvez vous inscrire à Power BI en suivant le [processus simple d’inscription libre-service](https://powerbi.microsoft.com/). Il vous suffit d’entrer votre adresse de messagerie professionnelle, votre nom et votre mot de passe pour commencer. Si vous êtes administrateur de licences, vous pouvez attribuer des licences à vos utilisateurs en suivant les instructions accessibles [ici](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 * Les journaux d’audit Azure vous permettent de consulter les journaux des opérations du panneau de configuration dans votre abonnement Azure. Le pack de contenu des journaux d’audit Azure de Power BI peut vous aider à analyser et visualiser facilement la mine d’informations que ces journaux contiennent. Le pack de contenu vous permet de vous connecter à vos données et de commencer à découvrir diverses informations à l’aide du tableau de bord et des rapports prêts à l’emploi. Pour plus d’informations, lisez notre [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) et notre [documentation en ligne](../connect-data/service-connect-to-services.md).
 
 [Pour en savoir plus, consultez notre blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

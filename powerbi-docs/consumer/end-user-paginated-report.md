@@ -6,43 +6,54 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 10/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 95b4b423b1dffb51d00760a97d21f2bf52df39d8
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 15482b575d7fc923059964ea47a173fda6c7f600
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983175"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Rapports paginés dans le service Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Vous avez découvert les [rapports Power BI](end-user-reports.md). Il s’agit des types de rapports que vous êtes le plus susceptible de rencontrer. Toutefois, il existe un autre type de rapport appelé *rapport paginé*. Les *concepteurs* de rapports peuvent partager des rapports paginés avec vous dans un espace de travail d’une capacité Premium, ou une application de cet espace de travail. 
+Vous avez découvert les [rapports Power BI](end-user-reports.md). Il s’agit des types de rapports que vous êtes le plus susceptible de rencontrer. Les rapports Power BI sont optimisés pour l’exploration et l’interactivité. Un rapport de ventes où différents vendeurs souhaitent ventiler les données d’un même rapport par région/secteur/client spécifique et voir comment les chiffres évoluent est très bien servi par un rapport Power BI.
 
-## <a name="what-is-a-paginated-report"></a>Qu’est-ce qu’un rapport paginé ?
-
-Ces rapports sont appelés *paginés* car ils sont mis en forme pour tenir sur une page imprimée. Ils présentent, entre autres, l’avantage d’afficher toutes les données d’une table, même si cette dernière s’étend sur plusieurs pages. Les rapports paginés sont parfois appelés « pixel parfait », car les *concepteurs* de rapports peuvent contrôler exactement la mise en page de ces derniers.
-
-Quand les *concepteurs* de rapports créent un rapport paginé, ils créent en réalité une *définition de rapport*. Il ne contient pas les données. Il spécifie où obtenir les données, les données à obtenir et comment les afficher. Quand vous exécutez le rapport, le processeur de rapports prend la définition de rapport, récupère les données et les combine avec la disposition du rapport pour le générer. Parfois, le rapport affiche les données par défaut. Dans d’autres cas, vous devez entrer des paramètres pour que le rapport puisse afficher des données. 
-
-   ![Paramètres du rapport](./media/end-user-paginated-report/power-bi-report-parameters.png)
-
-La définition de paramètres constitue généralement l’importance de l’interaction. Si vous êtes analyste de facturation, vous pouvez utiliser des rapports paginés pour créer ou imprimer des factures. Si vous êtes responsable des ventes, vous pouvez utiliser des rapports paginés pour voir les commandes par magasin ou par vendeur. 
-
-Une fois que vous avez sélectionné le paramètre **Year** (Année), ce rapport paginé simple génère les bénéfices par année. 
-
-![Rapport simple à un paramètre](./media/end-user-paginated-report/power-bi-report-simple.png)
-
-Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels personnalisés.
+Toutefois, il existe un autre type de rapport appelé *rapport paginé*. La réception et l’affichage des rapports paginés nécessitent une licence Power BI Pro ou que le rapport soit enregistré dans une capacité Premium.  [En savoir plus sur les licences](end-user-license.md).  
 
 ## <a name="identify-a-paginated-report"></a>Identifier un rapport paginé
 
 Dans les listes de contenu et dans votre page d’accueil, les rapports paginés peuvent être identifiés par leur icône ![icône de rapport paginé](media/end-user-paginated-report/power-bi-report-icon.png).  Un rapport paginé peut être partagé directement avec vous, ou dans le cadre d’une [application Power BI](end-user-apps.md). Si le *concepteur* de rapports vous y a autorisé, vous pouvez repartager le rapport paginé, et vous abonner vous-même et d’autres personnes.
 
-![liste de rapports présentant différentes icônes](./media/end-user-paginated-report/power-bi-report-list.png)
+
+![Liste de rapports avec un rapport standard et un rapport paginé.](./media/end-user-paginated-report/power-bi-report-lists.png)
+
+## <a name="what-is-a-paginated-report"></a>Qu’est-ce qu’un rapport paginé ?
+
+Ces rapports sont appelés *paginés* car ils sont mis en forme pour tenir sur une page imprimée. Ils présentent, entre autres, l’avantage d’afficher toutes les données d’une table, même si cette dernière s’étend sur plusieurs pages. Les rapports paginés sont parfois appelés « pixel parfait », car les *concepteurs* de rapports contrôlent exactement la mise en page de ces derniers.
+
+Les rapports paginés sont les mieux adaptés à des scénarios qui requièrent une mise en forme et une optimisation pour l'impression ou la génération de fichiers PDF. Un compte de résultat est un bon exemple du type de rapport que vous souhaitez probablement voir sous forme de rapport paginé.
+
+## <a name="how-do-paginated-reports-work"></a>Fonctionnement des rapports paginés
+
+Quand les *concepteurs* de rapports créent un rapport paginé, ils créent en réalité une *définition de rapport*. Il ne contient pas les données. Il spécifie où obtenir les données, les données à obtenir et comment les afficher. Quand vous exécutez le rapport, le processeur de rapports prend la définition de rapport, récupère les données et les combine avec la disposition du rapport pour le générer. Parfois, le rapport affiche les données par défaut. Dans d’autres cas, vous devez entrer des paramètres pour que le rapport puisse afficher des données. 
+
+Sélectionnez un rapport paginé pour l’ouvrir dans le service Power BI. S’il possède des paramètres, vous devez les sélectionner avant de pouvoir afficher le rapport.
+
+   ![Paramètres du rapport](./media/end-user-paginated-report/power-bi-select-parameters.png)
+
+La définition de paramètres constitue généralement l’importance de l’interaction. Si vous êtes analyste de facturation, vous pouvez utiliser des rapports paginés pour créer ou imprimer des factures. Si vous êtes responsable des ventes, vous pouvez utiliser des rapports paginés pour voir les commandes par magasin ou par vendeur. 
+
+Une fois que vous avez sélectionné le paramètre **Year** (Année), ce rapport paginé simple génère les bénéfices par année. 
+
+![Rapport simple à un paramètre](./media/end-user-paginated-report/power-bi-one-parameter.png)
+
+Par rapport aux rapports paginés, les rapports Power BI sont bien plus interactifs. Les rapports Power BI permettent de générer des rapports ad hoc et prennent en charge de nombreux autres types de visuels, notamment des visuels personnalisés.
+
+
 
 ## <a name="interact-with-a-paginated-report"></a>Interagir avec un rapport paginé
 
@@ -61,31 +72,31 @@ Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport
 
 Dans ce rapport des commandes client, il existe trois paramètres : Type d’entreprise, Revendeur et Numéro de commande. 
 
-![rapport avec trois paramètres](./media/end-user-paginated-report/power-bi-parameter.png)
+![rapport avec trois paramètres](./media/end-user-paginated-report/power-bi-parameter-bar.png)
 
 Pour changer les informations affichées, entrez de nouvelles valeurs pour les trois paramètres, puis sélectionnez **Afficher le rapport**. Ici, nous avons sélectionné **Specialty Bike Shop**, **Alpine Ski House** et le numéro de commande **SO46085**. Le fait de sélectionner **Afficher le rapport** actualise notre canevas de rapport avec cette nouvelle commande client.
 
-![changer les paramètres](./media/end-user-paginated-report/power-bi-order.png)
+![changer les paramètres](./media/end-user-paginated-report/power-bi-orders.png)
 
 La nouvelle commande client s’affiche en utilisant les paramètres que vous avez sélectionnés. 
 
-![une nouvelle commande client](./media/end-user-paginated-report/power-bi-new-order.png)
+![une nouvelle commande client](./media/end-user-paginated-report/power-bi-new-orders.png)
 
 Certains rapports paginés comprennent de nombreuses pages.  Utilisez les contrôles de page pour naviguer dans le rapport. 
 
-![contrôles de page](./media/end-user-paginated-report/power-bi-page.png)
+![contrôles de page](./media/end-user-paginated-report/power-bi-page-control.png)
 
 ### <a name="export-the-paginated-report"></a>Exporter le rapport paginé
 Vous disposez de diverses options pour l’exportation de rapports paginés, notamment PDF, Word, XML, PowerPoint, Excel, entre autres. Lors de l’exportation, la mise en forme est conservée autant que possible. Les rapports paginés exportés vers Excel, Word, PowerPoint, MHTML et PDF, par exemple, préservent la qualité de la mise en forme (« pixel parfait »). 
 
-![Capture d’écran montrant un rapport paginé exporté](./media/end-user-paginated-report/power-bi-exporting.png)
+![Capture d’écran montrant un rapport paginé exporté](./media/end-user-paginated-report/power-bi-export-choices.png)
 
 ![quatre types d’exportation différents](./media/end-user-paginated-report/power-bi-four.png)
 
 ### <a name="subscribe-to-the-paginated-report"></a>S’abonner au rapport paginé
 Quand vous vous abonnez à un rapport paginé, Power BI vous envoie un e-mail contenant le rapport en pièce jointe. Lors de la configuration de votre abonnement, vous choisissez la fréquence à laquelle vous voulez recevoir des e-mails : quotidienne, hebdomadaire, horaire ou mensuelle. L’abonnement contient en pièce jointe la sortie de l’intégralité du rapport, d’une taille maximale de 25 Mo. Exportez l’ensemble du rapport ou choisissez à l’avance les paramètres. Choisissez parmi de nombreux types de pièces jointes différents, notamment Excel, PDF, PowerPoint, et plus encore.  
 
-![Formats pour l’abonnement](./media/end-user-paginated-report/power-bi-export-list.png)
+![Formats pour l’abonnement](./media/end-user-paginated-report/power-bi-export-choices.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 

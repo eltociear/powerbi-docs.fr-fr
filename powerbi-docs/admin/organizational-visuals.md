@@ -7,13 +7,13 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/01/2020
-ms.openlocfilehash: 30ab225230784d19bd2aa4eb2f5ea775684b2afb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.date: 08/11/2020
+ms.openlocfilehash: 4725db331269bc9a2f41abf4c432e0bdf427bae6
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524785"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981685"
 ---
 # <a name="manage-power-bi-visuals-admin-settings"></a>Gérer les paramètres d’administration des visuels Power BI
 
@@ -130,7 +130,7 @@ Utilisez cette méthode pour ajouter un nouveau visuel Power BI à partir d’un
 
 3. Pour lancer la demande de chargement, sélectionnez **Ajouter**. Une fois chargé, le visuel s’affiche dans la liste des visuels organisationnels.
 
-### <a name="add-a-visual-from-appsource-preview"></a>Ajouter un visuel à partir d’AppSource (préversion)
+### <a name="add-a-visual-from-appsource"></a>Ajouter un visuel à partir d’AppSource
 
 Utilisez cette méthode pour ajouter un nouveau visuel Power BI à partir d’AppSource.
 

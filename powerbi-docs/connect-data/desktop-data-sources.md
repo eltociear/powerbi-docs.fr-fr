@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56825599a6b566a93f18e6fea16d995dc8bdda8f
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020041"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256548"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -185,19 +185,21 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Emigo Data Source
 * Entersoft Business Suite (bêta)
 * FactSet Analytics
-* Palantir Foundry
-* Industrial App Store
+* API Hexagon PPM Smart
 * Intune Data Warehouse (bêta)
 * Microsoft Graph Security (Bêta)
-* Projectplace pour Power BI (bêta)
 * Product Insights (bêta)
 * Quick Base
 * TeamDesk (bêta)
 * Webtrends Analytics (bêta)
 * Witivio (bêta)
-* Zoho Creator (bêta)
 * Analyse du temps de travail (bêta)
-* API Hexagon PPM Smart
+* Zoho Creator (bêta)
+* Palantir Foundry
+* Industrial App Store
+* Projectplace pour Power BI
+* eWay-CRM (bêta)
+* Spigit (bêta)
 
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
@@ -238,18 +240,26 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (bêta)
 * Vena (bêta)
-* Zucchetti HR Infinity (Beta)
 * Vessel Insight (bêta)
+* Zucchetti HR Infinity (Beta)
 * Requête vide
 
 
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
 
-![Autres sources de données, boîte de dialogue Obtenir des données, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
+![Autres sources de données dans Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > À ce stade, il n’est pas possible de se connecter aux sources de données personnalisées sécurisées à l’aide d’Azure Active Directory.
+
+### <a name="template-apps"></a>Applications modèles
+
+Vous pouvez trouver des applications de modèle pour votre organisation en sélectionnant le lien **Applications de modèle** dans la partie inférieure de la fenêtre **Obtenir des données**. 
+
+![Boîte de dialogue Obtenir des données pour les autres sources de données dans Power BI Desktop](media/desktop-data-sources/data-sources-12.png)
+
+Les applications de modèle disponibles peuvent varier en fonction de votre organisation.
 
 ## <a name="connecting-to-a-data-source"></a>Connexion à une source de données
 
@@ -273,25 +283,43 @@ C’est là tout ce qu’il faut savoir pour se connecter à des sources de donn
 
 Les fichiers PBIDS sont des fichiers Power BI Desktop qui ont une structure spécifique et dont l’extension .PBIDS signifie qu’il s’agit de fichiers de source de données Power BI.
 
-Vous pouvez créer un fichier PBIDS afin de simplifier l’expérience **Obtenir des données** pour les créateurs de rapports de votre organisation. Pour faciliter l’utilisation des fichiers PBIDS par un nouvel auteur de rapports, nous recommandons qu’un administrateur crée ces fichiers pour les connexions courantes.
+Vous pouvez créer un fichier PBIDS afin de simplifier l’expérience **Obtenir des données** pour les créateurs de rapports nouveaux ou débutants de votre organisation. Si vous créez le fichier PBIDS à partir de rapports existants, il est plus facile pour les créateurs de rapports de commencer de générer de nouveaux rapports à partir des mêmes données.
 
-Lorsqu’un auteur ouvre un fichier PBIDS, Power BI Desktop s’ouvre et invite l’utilisateur à fournir des informations d’identification pour s’authentifier et se connecter à la source de données indiquée dans le fichier. La boîte de dialogue **Navigation** s’affiche et l’utilisateur doit sélectionner les tables de cette source de données à charger dans le modèle. Il doit également sélectionner la ou les bases de données si aucune n’a été précisée dans le fichier PBIDS.
+Lorsqu’un auteur ouvre un fichier PBIDS, Power BI Desktop s’ouvre et invite l’utilisateur à fournir des informations d’identification pour s’authentifier et se connecter à la source de données indiquée dans le fichier. La boîte de dialogue **Navigation** s’affiche et l’utilisateur doit sélectionner les tables de cette source de données à charger dans le modèle. Il doit également sélectionner la ou les bases de données et le mode de connexion si ces informations n’ont pas été précisées dans le fichier PBIDS.
 
 Il peut alors commencer à créer des visualisations ou à sélectionner **Sources récentes** pour charger un nouvel ensemble de tables dans le modèle.
 
 Actuellement, les fichiers PBIDS ne gèrent qu’une seule source de données dans un même fichier. La spécification de plusieurs sources de données génère une erreur.
 
-Pour créer le fichier PBIDS, l’administrateur doit indiquer les entrées requises pour une connexion unique. Il peut également préciser le mode de connexion : DirectQuery ou Importation. Si le **mode** est absent ou Null dans le fichier, l’utilisateur qui ouvre le fichier dans Power BI Desktop est invité à sélectionner **DirectQuery** ou **Importation**.
+
+### <a name="how-to-create-a-pbids-connection-file"></a>Comment créer un fichier de connexion PBIDS
+
+Si vous avez un fichier Power BI Desktop (.PBIX) existant qui est déjà connecté aux données qui vous intéressent, vous pouvez simplement exporter ces fichiers de connexion depuis Power BI Desktop. Il s’agit de la méthode recommandée, car le fichier PBIDS peut être généré automatiquement à partir du bureau. En outre, vous pouvez toujours modifier ou créer manuellement le fichier dans un éditeur de texte. 
+
+Pour créer le fichier PBIDS, sélectionnez **Fichier > Options et paramètres > Paramètres de source de données** :
+
+![Option de menu Paramètres de la source de données](media/desktop-data-sources/data-sources-09.png)
+
+Dans la boîte de dialogue qui s’affiche, sélectionnez la source de données que vous souhaitez exporter en tant que PBIDS, puis sélectionnez **Exporter PBIDS**.
+
+![Boîte de dialogue Paramètres de la source de données](media/desktop-data-sources/data-sources-10.png)
+
+Lorsque vous sélectionnez le bouton **Exporter PBIDS**, Power BI Desktop génère le fichier PBIDS, que vous pouvez renommer et enregistrer dans votre répertoire et partager avec d’autres utilisateurs. Vous pouvez également ouvrir le fichier dans un éditeur de texte et le modifier, notamment en spécifiant le mode de connexion dans le fichier lui-même, comme illustré dans l’image suivante. 
+
+![Utilisation d’un éditeur de texte pour modifier le fichier PBIDS](media/desktop-data-sources/data-sources-11.png)
+
+Si vous préférez créer manuellement vos fichiers PBIDS dans un éditeur de texte, vous devez spécifier les entrées requises pour une seule connexion et enregistrer le fichier avec l’extension PBIDS. Vous pouvez éventuellement préciser aussi le mode de connexion : DirectQuery ou Importation. Si le **mode** est absent ou Null dans le fichier, l’utilisateur qui ouvre le fichier dans Power BI Desktop est invité à sélectionner **DirectQuery** ou **Importation**.
+
 
 ### <a name="pbids-file-examples"></a>Exemples de fichiers PBIDS
 
-Cette section fournit des exemples de sources de données couramment utilisées. Le type de fichier PBIDS ne gère que les connexions de données qui sont également prises en charge dans Power BI Desktop, à deux exceptions près : Live Connect et Blank Query.
+Cette section fournit des exemples de sources de données couramment utilisées. Le type de fichier PBIDS ne gère que les connexions de données qui sont également prises en charge dans Power BI Desktop, avec les exceptions suivantes : URL Wiki, Live Connect et Requête vide.
 
 Le fichier PBIDS ne comporte *pas* les informations d’authentification et les informations sur les tables et les schémas.  
 
 Les extraits de code suivants montrent plusieurs exemples courants de fichiers PBIDS, mais ils ne sont pas complets ni exhaustifs. Pour les autres sources de données, vous pouvez vous reporter au [Format DSR (référence de source de données) pour les informations de protocole et d’adresse](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-Ces exemples sont proposés à titre indicatif, ne sont pas pensés pour être exhaustifs et n’incluent pas tous les connecteurs pris en charge au format DSR. L’administrateur ou l’organisation peut créer ses propres sources de données en utilisant ces exemples comme guides, afin de créer et de prendre en charge ses propres fichiers de source de données.
+Si vous modifiez ou créez manuellement les fichiers de connexion, ces exemples sont proposés à titre indicatif, ne sont pas pensés pour être exhaustifs et n’incluent pas tous les connecteurs pris en charge au format DSR.
 
 #### <a name="azure-as"></a>Azure AS
 

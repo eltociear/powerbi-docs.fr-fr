@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a840a549e5dee79406ddfb2a07877895ce7b6c0f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 859fb6156af38fc5333e9c94281255369d9ee413
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83335554"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256965"
 ---
 # <a name="work-with-report-view-in-power-bi-desktop"></a>Utiliser la vue Rapport dans Power BI Desktop
 
@@ -26,9 +26,9 @@ La différence est qu’avec Power BI Desktop, vous pouvez utiliser vos requête
 
 ## <a name="lets-take-a-look"></a>Jetons un œil !
 
-Quand vous chargez pour la première fois des données dans Power BI Desktop, le canevas de la vue Rapport est vide.
+Quand vous chargez pour la première fois des données dans Power BI Desktop, le canevas de la vue Rapport est vide, avec des liens pour vous aider à ajouter des données à votre rapport.
 
-![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/report-view-blank-canvas.png)
 
 Vous pouvez basculer entre les vues **Rapport**, **Données** et **Relations** en sélectionnant les icônes dans le volet de navigation gauche :
 

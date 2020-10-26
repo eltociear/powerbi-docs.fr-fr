@@ -1,27 +1,27 @@
 ---
 title: Afficher un rapport
-description: Cette rubrique montre comment les utilisateurs finaux et consommateurs de Power BI peuvent ouvrir et afficher un rapport Power BI.
+description: Cette rubrique montre comment les utilisateurs finaux et professionnels de Power BI peuvent ouvrir et afficher un rapport Power BI.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/09/2020
 ms.author: mihart
-ms.openlocfilehash: d70bc80f7cea3fcff7a25446dd0f73a3c96ee461
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: dc352a44b5db14dc82fdcc48f0d1ddb350c5b3de
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527517"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983516"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-business-users"></a>Afficher un rapport dans le service Power BI pour les *utilisateurs métier*
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs* Power BI et [partagés avec des *utilisateurs métier directement*](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). Pour ouvrir un rapport, soit vous devrez disposer d’une licence Power BI Pro, soit le rapport en question devra faire partie d’un espace de travail stocké dans une capacité dédiée Premium.
+Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs* Power BI et [partagés avec des *utilisateurs métier directement*](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). Pour ouvrir un rapport, soit vous devrez disposer d’une licence Power BI Pro, soit le rapport en question devra faire partie d’un espace de travail stocké dans une capacité dédiée Premium. [En savoir plus sur les licences et les abonnements](end-user-license.md)
 
 Il existe de nombreuses façons d’ouvrir un rapport et nous vous en montrerons deux : ouvrir à partir de la page d’accueil et ouvrir à partir d’un tableau de bord. 
 
@@ -33,7 +33,7 @@ Nous allons ouvrir un rapport qui a été partagé avec vous directement, puis u
 
    ![Capture d’écran montrant le canevas Accueil du service Power BI avec des flèches pointant vers les rapports](./media/end-user-report-open/power-bi-home.png)
 
-### <a name="open-a-report-that-has-been-shared-with-you"></a>Ouvrir un rapport qui a été partagé avec vous
+### <a name="open-a-report-that-has-been-directly-shared-with-you"></a>Ouvrir un rapport qui a été directement partagé avec vous
 Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien envoyé par e-mail, ou en l’ajoutant à votre page d’accueil Power BI. Les rapports qui sont partagés de cette façon s’affichent dans le conteneur **Partagé avec moi** sur votre volet de navigation, et dans la section **Partagé avec moi** du canevas de votre page d’accueil.
 
 1. Ouvrir dans le service Power BI (app.powerbi.com).
@@ -54,15 +54,15 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous vi
 
    ![Capture d’écran montrant les onglets de la page Rapport](./media/end-user-report-open/power-bi-report-open.png)
 
-6. Développez le volet **Filtres** sur le côté droit. Les filtres qui ont été appliqués à cette page de rapport ou à l’ensemble du rapport s’affichent ici.
+6. Développez le volet **Filtres** sur le côté droit. Les filtres qui ont été appliqués à cette page de rapport ou à l’ensemble du rapport s’affichent ici. Vous pouvez modifier ces filtres pour voir l’impact sur vos visuels et rapports.
 
    ![Service Power BI avec le volet Filtres développé](./media/end-user-report-open/power-bi-filters.png)
 
-7. Le fait de pointer sur un visuel de rapport révèle plusieurs icônes et le bouton **Plus d’options** (...). Pour afficher les filtres appliqués à un visuel spécifique, sélectionnez l’icône de filtre. Ici, nous avons sélectionné l’icône de filtre pour le graphique en courbes *Total units by month and manufacturer*.
+7. Affichez le menu d’actions d’un visuel. Le fait de pointer sur un visuel de rapport révèle les actions que vous pouvez effectuer sur cet visuel. Pour afficher les filtres appliqués à un visuel spécifique, sélectionnez l’icône de filtre. Ici, nous avons sélectionné l’icône de filtre pour le graphique en courbes *Total units by month and manufacturer*.
 
-   ![Capture d’écran montrant des filtres pour le visuel sélectionné](./media/end-user-report-open/power-bi-visual-filter.png)
+   ![Capture d’écran montrant des filtres pour le visuel sélectionné](./media/end-user-report-open/power-bi-visual-filters.png)
 
-6. Pour l’instant, nous voyons toute la page du rapport. Pour changer l’affichage (zoom) de la page, sélectionnez la liste déroulante Afficher en haut à droite et choisissez **Taille réelle**. Ensuite, changez pour **Ajuster à la largeur**.
+6. Vous pouvez également modifier l’affichage de la page de rapport. Pour le moment, nous affichons la page de rapport entière. Pour changer l’affichage (zoom) de la page, sélectionnez la liste déroulante **Afficher** en haut à droite et choisissez **Taille réelle**. Ensuite, changez pour **Ajuster à la largeur**. Notez les différences que chaque option d’affichage apporte à l’affichage de votre rapport.
 
    ![modifier le zoom](./media/end-user-report-open/power-bi-view-actual.png)
 
@@ -71,20 +71,23 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous vi
 Il existe de nombreuses façons d’interagir avec un rapport dans le but de découvrir des insights et de prendre des décisions métier.  Utilisez la table des matières sur la gauche pour consulter d’autres articles sur les rapports Power BI. 
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Ouvrez un rapport qui fait partie d’une application
-Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre volet de navigation. Une [application](end-user-apps.md) est une collection de tableaux de bord et de rapports qui ont été regroupés pour vous par un *concepteur* Power BI.
+Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et des conteneurs **Applications** et **Partagé avec moi** sur votre volet de navigation. Une [application](end-user-apps.md) est une collection de tableaux de bord et de rapports qui ont été regroupés pour vous par un *concepteur* Power BI.
 
 ### <a name="prerequisites"></a>Prérequis
+L’ouverture d’une application nécessite une licence Power BI Pro, ou que l’espace de travail de l’application soit stocké dans une capacité Power BI Premium. [En savoir plus sur les licences et les abonnements](end-user-license.md)    
+    
 Pour suivre la procédure, téléchargez l’application Marketing et ventes.
 1. Dans votre navigateur, accédez à appsource.microsoft.com.
-1. Recherchez « Marketing et ventes » et sélectionnez **Microsoft Sample - Sales & Marketing**.
+1. Cochez la case **Power Platform**.
+1. Recherchez « Sales & Marketing » et sélectionnez **Microsoft Sample - Sales & Marketing**. Faites défiler la page pour afficher les résultats de la recherche.
 1. Sélectionnez **Télécharger maintenant** > **Continuer** > **Installer** pour installer l’application dans votre conteneur d’applications. 
 
-Vous pouvez ouvrir l’application à partir de votre conteneur d’applications ou de votre page d’accueil.
+Vous pouvez maintenant ouvrir l’application à partir de votre conteneur **Applications** ou de votre **Page d’accueil**.
 1. Revenez à l’accueil en sélectionnant **Accueil** à partir du volet de navigation.
 
 7. Faites défiler vers le bas jusqu'à ce que vous voyiez **Mes applications**.
 
-   ![Capture d’écran montrant la section Mes applications dans la page Accueil Power BI.](./media/end-user-report-open/power-bi-apps.png)
+   ![Capture d’écran montrant la section Mes applications dans la page Accueil Power BI.](./media/end-user-report-open/power-bi-apps-new.png)
 
 8. Sélectionnez votre nouvelle application *Vente et marketing* pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Cette application s’ouvre sur un tableau de bord.  
 

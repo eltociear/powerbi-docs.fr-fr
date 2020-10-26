@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 06/02/2020
-ms.openlocfilehash: 6ba5cd95f3e8b788ca7ee8939dff6616c5610573
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9af0edbe63841f6fb0e0de2e628784c89a5e44f1
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746628"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983364"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients
 
@@ -401,16 +401,16 @@ Voici un exemple qui utilise un modèle **EmbedConfig** et un modèle **TileEmbe
 
 ## <a name="move-to-production"></a>Passer à la production
 
-Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail avec une capacité dédiée. 
+Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail avec une capacité.
 
 > [!Important]
-> Une capacité dédiée est nécessaire de passer à la production. Tous les espaces de travail (ceux contenant les rapports ou les tableaux de bord, et ceux contenant les jeux de données) doivent être affectés à une capacité.
+> Une capacité est nécessaire de passer à la production. Tous les espaces de travail (ceux contenant les rapports ou les tableaux de bord, et ceux contenant les jeux de données) doivent être affectés à une capacité.
 
-### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
+### <a name="create-a-capacity"></a>Créer une capacité
 
-En créant une capacité dédiée, vous pouvez profiter du fait que vous disposez d’une ressource dédiée pour votre client. Vous avez le choix entre deux types de capacité dans Power BI :
+En créant une capacité, vous pouvez profiter du fait que vous disposez d’une ressource pour votre client. Vous avez le choix entre deux types de capacité dans Power BI :
 * **Power BI Premium** : abonnement Office 356 au niveau du locataire, disponible avec deux familles de références SKU : *EM* et *P*. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** : vous pouvez acheter une capacité dédiée à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** : vous pouvez acheter une capacité à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 > [!NOTE]
 > Les références SKU A ne vous permettent pas d’accéder à du contenu Power BI avec une licence Power BI GRATUITE.
 
@@ -428,30 +428,30 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 
 ### <a name="development-testing"></a>Tests de développement
 
-Pour les tests de développement, vous pouvez utiliser des jetons d’essai d’incorporation avec une licence Pro. Pour incorporer dans un environnement de production, utilisez une capacité dédiée.
+Pour les tests de développement, vous pouvez utiliser des jetons d’essai d’incorporation avec une licence Pro. Pour incorporer dans un environnement de production, utilisez une capacité.
 
 Le nombre de jetons d’essai d’incorporation qu’un principal de service ou qu’un compte principal Power BI peut générer est limité. Utilisez l’API [Fonctionnalités disponibles](/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier le pourcentage de votre utilisation incorporée actuelle. La quantité d’utilisation est affichée par principal de service ou compte principal.
 
-Si vous n’avez plus de jetons d’incorporation pendant les tests, vous devez acheter une [capacité](embedded-capacity.md) Power BI Embedded ou Premium. Avec une capacité dédiée, le nombre de jetons d’incorporation que vous pouvez générer n’est pas limité.
+Si vous n’avez plus de jetons d’incorporation pendant les tests, vous devez acheter une [capacité](embedded-capacity.md) Power BI Embedded ou Premium. Avec une capacité, le nombre de jetons d’incorporation que vous pouvez générer n’est pas limité.
 
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail à une capacité dédiée
+### <a name="assign-a-workspace-to-a-capacity"></a>Affecter un espace de travail à une capacité
 
-Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter votre espace de travail.
+Après avoir créé une capacité, vous pouvez lui affecter votre espace de travail.
 
-Tous les espaces de travail qui contiennent des ressources Power BI associées au contenu incorporé (notamment les jeux de données, les rapports et les tableaux de bord) doivent être affectés à des capacités dédiées. Par exemple, si un rapport incorporé et le jeu de données qui lui est lié se trouvent dans des espaces de travail différents, les deux espaces de travail doivent être affectés à des capacités dédiées.
+Tous les espaces de travail qui contiennent des ressources Power BI associées au contenu incorporé (notamment les jeux de données, les rapports et les tableaux de bord) doivent être affectés à des capacités. Par exemple, si un rapport incorporé et le jeu de données qui lui est lié se trouvent dans des espaces de travail différents, les deux espaces de travail doivent être affectés à des capacités.
 
-Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
+Pour affecter une capacité à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
 
-Suivez les étapes ci-dessous pour affecter une capacité dédiée à un espace de travail à l’aide d’un **compte principal**.
+Suivez les étapes ci-dessous pour affecter une capacité à un espace de travail à l’aide d’un **compte principal**.
 
 1. Dans le **service Power BI**, développez les espaces de travail, puis sélectionnez les points de suspension en regard de l’espace de travail que vous utilisez pour incorporer votre contenu. Sélectionnez ensuite **Modifier l’espace de travail**.
 
     ![Modifier l’espace de travail](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
-2. Développez **Avancé**, activez **Capacité dédiée**, puis sélectionnez la capacité dédiée que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
+2. Développez **Avancé**, activez **Capacité**, puis sélectionnez la capacité que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
 
-    ![Affecter une capacité dédiée](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+    ![Attribuer une capacité](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
 3. Une fois que vous avez sélectionné **Enregistrer**, un **losange** doit apparaître à côté du nom de l’espace de travail.
 

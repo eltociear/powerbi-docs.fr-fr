@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 7a93260aab9d8195478949ea8044378ea5cfae83
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746398"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983111"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -375,13 +375,13 @@ function updateEmbedReport() {
 }
 ```
 
-## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Utilisation d’une capacité dédiée Power BI Premium
+## <a name="using-a-power-bi-premium-capacity"></a>Utilisation d’une capacité Power BI Premium
 
-Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail avec une capacité dédiée.
+Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail avec une capacité.
 
-### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
+### <a name="create-a-capacity"></a>Créer une capacité
 
-En créant une capacité dédiée, vous bénéficiez d’une ressource dédiée pour le contenu dans votre espace de travail. Pour les rapports paginés, vous devez sauvegarder votre espace de travail avec au minimum une capacité P1. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../../admin/service-premium-what-is.md).
+En créant une capacité, vous bénéficiez d’une ressource pour le contenu dans votre espace de travail. Pour les rapports paginés, vous devez sauvegarder votre espace de travail avec au minimum une capacité P1. Vous pouvez créer une capacité avec [Power BI Premium](../../admin/service-premium-what-is.md).
 
 Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Microsoft 365](../../admin/service-admin-premium-purchase.md) :
 
@@ -400,17 +400,17 @@ Le tableau suivant liste les références SKU Power BI Premium disponibles dans 
 > - Lorsque vous tentez une incorporation avec des applications Microsoft Office, vous pouvez utiliser les références SKU EM pour accéder au contenu avec une licence gratuite de Power BI. Toutefois, vous ne pouvez pas accéder au contenu avec une licence gratuite de Power BI si vous utilisez Powerbi.com ou Power BI Mobile.
 > - Lorsque vous tentez une incorporation avec des applications Microsoft Office en utilisant Powerbi.com ou Power BI Mobile, vous pouvez accéder au contenu avec une licence gratuite de Power BI.
 
-### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail à une capacité dédiée
+### <a name="assign-a-workspace-to-a-capacity"></a>Affecter un espace de travail à une capacité
 
-Après avoir créé une capacité dédiée, vous pouvez lui affecter votre espace de travail. Pour ce faire, effectuez les étapes suivantes :
+Après avoir créé une capacité, vous pouvez lui affecter votre espace de travail. Pour ce faire, effectuez les étapes suivantes :
 
 1. Dans le service Power BI, développez les espaces de travail, puis sélectionnez les points de suspension à côté de l’espace de travail que vous utilisez pour incorporer votre contenu. Sélectionnez ensuite **Modifier l’espace de travail**.
 
     ![Modifier un espace de travail](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 
-2. Développez **Avancé** et activez **Capacité dédiée**. Sélectionnez la capacité dédiée que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
+2. Développez **Avancé** et activez **Capacité**. Sélectionnez la capacité que vous avez créée. Ensuite, sélectionnez **Enregistrer**.
 
-    ![Attribuer une capacité dédiée](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
+    ![Affecter une capacité](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
 3. Une fois que vous avez sélectionné **Enregistrer**, un losange doit apparaître à côté du nom de l’espace de travail.
 

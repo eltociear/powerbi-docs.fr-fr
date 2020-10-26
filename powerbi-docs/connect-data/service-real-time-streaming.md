@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ec0c4cf9e719615489cbba5929f329e6f4f58826
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 8ec7b228f17fc87dcaac6ae5e278dd2c99ab036d
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91634524"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116635"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout visuel ou tableau de bord créé dans Power BI peut afficher et mettre à jour des données et des visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des métriques d’utilisation de service, ou d’autres dispositifs permettant de collecter ou transmettre des données.
@@ -159,6 +159,9 @@ Si vous souhaitez que Power BI stocke les données envoyées via ce flux de donn
 Après avoir correctement créé votre flux de données, vous disposez d’un point de terminaison associé à une URL d’API REST, que votre application peut appeler à l’aide de requêtes *POST* pour envoyer vos données au jeu de **données de streaming** Power BI que vous avez créé.
 
 Lors de l’établissement d’une demande *POST*, vous devez vous assurer que le corps de celle-ci correspond à l’exemple de JSON fourni par l’interface utilisateur de Power BI. Par exemple, encapsulez vos objets JSON dans un tableau.
+
+> [!WARNING]
+> Pour les jeux de données de streaming créés à l’aide de l’interface utilisateur du service Power BI, le propriétaire du jeu de données reçoit une URL qui comprend une **clé de ressource**. Cette clé autorise le demandeur à transmettre des données dans le jeu de données sans utiliser de jeton du porteur OAuth Azure AD. Gardez donc à l’esprit les implications de la présence d’une **clé secrète** dans l’URL lors de l’utilisation de ce type de jeu de données et de cette méthode.
 
 ### <a name="using-pubnub"></a>Utilisation de PubNub
 Avec l’intégration d’un streaming de **PubNub** avec Power BI, vous pouvez utiliser vos flux de données de **PubNub** à faible latence (ou en créer de nouveaux), puis les utiliser dans Power BI. Lorsque vous sélectionnez **PubNub**, puis **Suivant**, vous voyez la fenêtre suivante :

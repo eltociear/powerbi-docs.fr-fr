@@ -1,20 +1,20 @@
 ---
-title: Personnalisation des visuels dans un rapport (préversion)
+title: Personnaliser les visuels dans un rapport
 description: Créez votre propre vue d’un rapport, sans modifier ce dernier.
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/13/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc682e867b65ba9da2b2eee87f52d7fd5d0961c
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 718363da3bd1f66de199db8d854d8d23d6de3eb5
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528119"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256742"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Personnaliser les visuels dans un rapport
 
@@ -45,7 +45,7 @@ Cette fonctionnalité offre non seulement de nouvelles fonctionnalités d’expl
 - Effacer vos modifications récentes
 
 > [!IMPORTANT]
-> La possibilité de personnaliser un visuel est une fonctionnalité d’évaluation qui doit être activée par le Concepteur de *rapports*. Si vous ne voyez pas l’icône **Personnaliser ce visuel** ![icône Personnaliser ce visuel](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png), cela signifie qu’il n’a pas activé cette fonctionnalité pour le rapport actuel. 
+> La possibilité de personnaliser un visuel doit être activée par le Concepteur de *rapports*. Si vous ne voyez pas l’icône **Personnaliser ce visuel** ![icône Personnaliser ce visuel](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png), cela signifie qu’il n’a pas activé cette fonctionnalité pour le rapport actuel. Contactez le propriétaire du rapport ou votre administrateur Power BI pour activer la fonctionnalité. Pour afficher les informations de contact du propriétaire du rapport, sélectionnez le nom du rapport dans la barre de menus Power BI.
 
 ## <a name="personalize-visuals-in-the-power-bi-service"></a>Personnalisation des visuels dans le service Power BI
 
@@ -54,8 +54,6 @@ En personnalisant un visuel, vous pouvez explorer vos données de multiples faç
 1. Ouvrez un rapport en mode lecture dans le service Power BI.
 
 2. Dans la barre de menus du visuel, sélectionnez l’icône **Personnaliser ce visuel** ![icône Personnaliser ce visuel](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png). 
-
-3. Pour effacer un des champs **Personnaliser**, sélectionnez **Plus d’options (...)** et choisissez **Supprimer le champ**.
 
 ### <a name="change-the-visualization-type"></a>Changer de type de visualisation
 
@@ -72,6 +70,16 @@ Remplacez le champ utilisé pour l’axe X en sélectionnant le champ que vous s
 En ajoutant une légende, vous pouvez attribuer un code de couleurs à un visuel selon la catégorie. Dans cet exemple, nous utilisons un code de couleurs basé sur le nom de la société. 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Personnalisation d’un visuel":::
+
+### <a name="change-the-placement-of-fields"></a>Modifier le positionnement des champs
+
+À l’aide de la fonction glisser-déposer, vous pouvez modifier le positionnement des champs dans la même propriété visuelle ou même entre différentes propriétés visuelles. Par exemple, vous pouvez rapidement déplacer un champ de la légende vers l’axe d’un visuel.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Personnalisation d’un visuel":::
+
+Vous pouvez également réorganiser rapidement les colonnes d’une table ou d’une matrice.
+
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Personnalisation d’un visuel":::
 
 ### <a name="compare-two-or-more-different-measures"></a>Comparer deux ou plusieurs mesures différentes
 Comparez et confrontez des valeurs pour différentes mesures à l’aide de l’icône +, qui permet d’ajouter plusieurs mesures pour un visuel. Pour supprimer une mesure, sélectionnez **Plus d’options (...)** et choisissez **Supprimer le champ**.
@@ -113,7 +121,7 @@ Sélectionnez l’icône représentant une gomme pour effacer toutes les modific
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Personnalisation d’un visuel":::
 
-## <a name="limitations-and-known-issues"></a>Limitations et problèmes connus
+## <a name="limitations"></a>Limites
 
 La fonctionnalité présente actuellement quelques limitations à connaître.
 
@@ -121,12 +129,6 @@ La fonctionnalité présente actuellement quelques limitations à connaître.
 - Les explorations des utilisateurs ne sont pas automatiquement conservées. Vous devez enregistrer votre affichage dans les signets personnels pour capturer vos modifications.
 - Cette fonctionnalité est prise en charge dans les applications mobiles Power BI pour les tablettes iOS et Android, ainsi que dans l’application Windows Power BI. Elle n’est pas prise en charge dans les applications mobiles Power BI pour les téléphones. Toutefois, les modifications de visuels enregistrées dans un signet personnel au sein du service Power BI sont respectées dans les applications mobiles Power BI.
 
-Il existe également quelques problèmes connus que nous sommes en train de traiter :
-
-- L’ajout d’une hiérarchie n’est pas pris en charge ; il est nécessaire d’ajouter chacun des différents éléments enfants.
-- Avec les signets personnels, les résultats obtenus risquent d’être légèrement différents selon la séquence sélectionnée. Ces incohérences sont possibles dans la mesure où nous ne capturons pas l’état complet du rapport, mais seulement les modifications apportées. La solution de contournement consiste à sélectionner **Réinitialiser**, puis à sélectionner le signet que vous souhaitez afficher. 
-
 ## <a name="next-steps"></a>Étapes suivantes
 [Copier un visuel de rapport sous forme d’image statique](../visuals/power-bi-visualization-copy-paste.md)    
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
-

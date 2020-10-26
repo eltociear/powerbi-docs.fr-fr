@@ -1,21 +1,21 @@
 ---
-title: Types de visuel dans Power BI pour les consommateurs
+title: Types de visuel dans Power BI pour les utilisateurs professionnels
 description: Types de visuel dans le service Power BI
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/24/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: contperfq4
 LocalizationGroup: Consumer
-ms.openlocfilehash: 05aab15b3807429c20b0ff72a7bfce21b3e25b12
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 6d2ded8060ebe663989fd4f91fc22e4163f60c93
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526878"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830662"
 ---
 # <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
 
@@ -25,18 +25,20 @@ Les visuels (également appelés *graphiques* et *visualisations*) sont des repr
 
 Les visuels décrits sur cette page sont ceux qui font partie du package Power BI. Il s’agit des types de visuels que l’on rencontre le plus souvent. Cette page donne une vue d’ensemble rapide de ces visuels prépackagés. Pour des informations plus détaillées, consultez la [documentation du *concepteur* de rapports Power BI sur les types de visuels](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Les visuels qui ne sont pas fournis automatiquement avec Power BI sont appelés *visuels personnalisés*. Les visuels personnalisés peuvent être importés dans Power BI à partir de sites web externes, par exemple Microsoft AppSource, ou de sources internes comme votre magasin d’organisation. Des autorisations de modification du rapport sont nécessaires pour importer des visuels personnalisés. Pour plus d’informations sur ces visuels complémentaires, consultez [Visuels dans Power BI](../developer/visuals/power-bi-custom-visuals.md).
+Les visuels qui ne sont pas fournis automatiquement avec Power BI sont appelés *visuels personnalisés*. Les visuels personnalisés peuvent être importés dans Power BI à partir de sites web externes, par exemple Microsoft AppSource, ou de sources internes comme votre magasin d’organisation. Des autorisations de modification du rapport sont nécessaires pour importer des visuels personnalisés. Pour plus d’informations sur ces visuels complémentaires, consultez [Visuels personnalisés dans Power BI](../developer/visuals/power-bi-custom-visuals.md).
 
 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste de visuels disponibles dans Power BI
 Tous ces visuels sont disponibles dans les tableaux de bord et les rapports Power BI, et sont [spécifiés dans Questions et réponses](end-user-q-and-a.md). Pour savoir comment interagir avec les visuels, consultez [Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md).
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : De base (superposées) et empilées
+## <a name="a"></a>A
+### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : de base (superposées) et empilées
 ![graphique en aires](media/end-user-visual-type/basic-area-map-small.png)
 
 Le graphique en aires de base est un graphique en courbes dont la zone comprise entre l’axe et la ligne est remplie. Les graphiques en aires mettent en évidence l’ampleur du changement dans le temps et peuvent être utilisés pour attirer l’attention sur la tendance évolutive d’une valeur totale. Par exemple, les données qui représentent des profits dans le temps peuvent être tracées dans un graphique en aires pour mettre l’accent sur le profit total.
 
+## <a name="b"></a>B
 ### <a name="bar-and-column-charts"></a>Graphiques à barres et histogrammes
 ![Histogramme](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
@@ -44,6 +46,7 @@ Le graphique en aires de base est un graphique en courbes dont la zone comprise 
 
 Les graphiques à barres sont la norme pour la recherche d’une valeur spécifique dans différentes catégories.
 
+## <a name="c"></a>C
 ### <a name="cards-single-number"></a>Cartes : Numéro unique
 ![Cartes à un seul numéro](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
@@ -67,7 +70,7 @@ Les graphiques combinés sont conseillés :
 - pour vérifier si une mesure correspond à la cible définie par une autre mesure ;
 - pour utiliser moins d’espace sur le canevas
 
-
+## <a name="d"></a>D    
 ### <a name="decomposition-tree"></a>Arborescence hiérarchique
 ![Arborescence hiérarchique](media/end-user-visual-type/power-bi-decomposition.png)
 
@@ -78,6 +81,7 @@ Le visuel en arborescence hiérarchique permet de visualiser les données sur pl
 
 Les graphiques en anneau sont similaires aux graphiques en secteurs.  Ils affichent la relation de parties par rapport à un tout. La seule différence est que le centre est vide et qu’il y a de la place pour une étiquette ou une icône.
 
+## <a name="f"></a>F
 ### <a name="funnel-charts"></a>Graphiques en entonnoir
 ![Graphique en entonnoir](media/end-user-visual-type/pbi-nancy-viz-funnel.png)
 
@@ -86,7 +90,7 @@ Les entonnoirs permettent de visualiser un processus comprenant des étapes et d
 Par exemple, un entonnoir de ventes qui effectue le suivi des clients à travers des étapes : Client potentiel > Client potentiel qualifié > Prospect > Contrat > Signature. En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
 Chaque étape de l’entonnoir représente un pourcentage du total. C’est pourquoi un graphique en entonnoir a généralement la forme d’un entonnoir, où la première étape est la plus large et chaque étape suivante est plus étroite que l’étape précédente. Un entonnoir en forme de poire est également utile, car il peut indiquer un problème dans le processus. Mais le plus souvent, la première étape (l’étape de départ) est la plus large.
 
-
+## <a name="g"></a>G
 ### <a name="gauge-charts"></a>Graphiques en jauge
 ![graphique de jauge](media/end-user-visual-type/gauge-m.png)
 
@@ -100,6 +104,7 @@ Les graphiques en jauge radiale sont conseillés pour :
 - montrer l’intégrité d’une seule mesure
 - montrer des informations faciles à comprendre et à analyser
 
+## <a name="k"></a>K
  ### <a name="key-influencers-chart"></a>Graphique des influenceurs clés
 ![influenceur clé](media/end-user-visual-type/power-bi-influencer.png)
 
@@ -116,11 +121,13 @@ Les indicateurs de performances clés sont recommandés :
 - pour mesurer la progression (dans quel domaine suis-je en avance ou en retard ?)
 - pour mesurer ce qu’il vous reste à faire pour atteindre un objectif (suis-je en avance ou en retard ?)
 
+## <a name="l"></a>L
 ### <a name="line-charts"></a>Graphiques en courbes
 ![graphique en courbes](media/end-user-visual-type/pbi-nancy-viz-line.png)
 
 Les graphique en courbes mettent en évidence la forme générale de l’ensemble d’une série de valeurs, normalement au fil du temps.
 
+## <a name="m"></a>M
 ### <a name="maps-basic-maps"></a>Cartes : Cartes simples
 ![carte simple](media/end-user-visual-type/pbi-nancy-viz-map.png)
 
@@ -146,6 +153,7 @@ Les carte de formes comparent des régions sur une carte à l’aide de la coule
 
 Le visuel de matrice est un type de visuel de tableau (voir « Tableau » ci-dessous) qui prend en charge une disposition échelonnée. Souvent, les concepteurs de rapports ajoutent des matrices dans les rapports et tableaux de bord pour permettre aux utilisateurs de sélectionner un ou plusieurs éléments (lignes, colonnes, cellules) dans la matrice et de faire des sélections croisées avec d’autres visuels sur une page de rapport.  
 
+## <a name="p"></a>P
 ### <a name="pie-charts"></a>Graphiques en secteurs
 ![graphique en secteurs](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
@@ -154,8 +162,9 @@ Ils montrent la relation des parties par rapport à un tout.
 ### <a name="power-apps-visual"></a>Visuel Power Apps
 ![Visuel Power Apps](media/end-user-visual-type/power-bi-powerapps-visual.png)
 
-Les Concepteurs de rapports peuvent créer une application Power Apps et l’incorporer dans un rapport Power BI. Les consommateurs peuvent interagir avec ce visuel dans le rapport Power BI. 
+Les Concepteurs de rapports peuvent créer une application Power Apps et l’incorporer dans un rapport Power BI. Les *utilisateurs professionnels* peuvent interagir avec ce visuel dans le rapport Power BI. 
 
+## <a name="q"></a>Q
 ### <a name="qa-visual"></a>Visuel de Questions et réponses
 ![Visuels Questions et réponses](media/end-user-visual-type/power-bi-q-and-a.png)
 
@@ -164,13 +173,14 @@ Les Concepteurs de rapports peuvent créer une application Power Apps et l’inc
 
 Pour plus d’informations, consultez [Visuels Questions et réponses dans Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
+## <a name="r"></a>R
 ### <a name="ribbon-chart"></a>Graphique de ruban
 ![graphique de ruban](media/end-user-visual-type/power-bi-ribbon.png)
 
 Ils montrent la catégorie de données qui a le rang le plus élevé (la plus grande valeur). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps.
 
+## <a name="s"></a>S
 ### <a name="scatter-bubble-and-dot-plot-charts"></a>Nuages de points, graphiques en bulles et graphiques à points
-
 
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
 
@@ -202,12 +212,18 @@ Les segments sont recommandés pour :
 - Filtrer les colonnes qui sont inutiles et masquées dans les tables de données
 - Créer des rapports plus ciblés en ajoutant des segments à côté des visuels importants
 
+
+### <a name="smart-narrative"></a>Narration intelligente
+![narration intelligente](media/end-user-visual-type/power-bi-smart-narrative.png)
+
+La narration intelligente ajoute du texte aux rapports pour signaler les tendances, les points clés et ajouter des explications et du contexte. Le texte aide les utilisateurs à comprendre les données et à identifier rapidement les découvertes importantes.
+
 ### <a name="standalone-images"></a>Images autonomes
 ![image autonome](media/end-user-visual-type/pbi-nancy-viz-image.png)
 
 Une image autonome est un graphique qui a été ajouté à un rapport ou un tableau de bord. 
 
-
+## <a name="t"></a>T
 ### <a name="tables"></a>Tables
 ![graphique de tableau](media/end-user-visual-type/table-type.png)
 
@@ -231,6 +247,7 @@ Les graphiques de compartimentage sont conseillés :
 - pour représenter les attributs selon un codage par taille et couleur
 - pour repérer les modèles, les valeurs inhabituelles, les principaux contributeurs et les exceptions
 
+## <a name="w"></a>W
 ### <a name="waterfall-charts"></a>Graphiques en cascade
 ![graphique en cascade](media/end-user-visual-type/waterfall-small.png)
 

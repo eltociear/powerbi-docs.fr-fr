@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 10/06/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: aa8277a8d0ddea43aff356ced32c9edad8710c93
-ms.sourcegitcommit: a4e06e401abc67dffab52f34e268467def42a97e
+ms.openlocfilehash: e6ab41b7a9330ff1c99bb0dcc963608485cc3f94
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86875046"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830619"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -27,13 +27,13 @@ Vous pouvez à présent connaître encore plus facilement l’état de vos rappo
 
 L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../fundamentals/supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI utilise l’anglais comme langue par défaut. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
 
-![liste déroulante Langue](./media/end-user-subscribe/power-bi-language.png)
+![liste déroulante Langue](./media/end-user-subscribe/power-bi-languages.png)
 
 L’e-mail que vous recevez contient un lien « accéder au rapport ou tableau de bord ». Sur les appareils mobiles sur lesquels les applications Power BI sont installées, la sélection de ce lien lance l’application (par opposition à l’action par défaut qui ouvre le rapport ou le tableau de bord sur le site web Power BI).
 
 
 ## <a name="requirements"></a>Configuration requise
-La **création** d’un abonnement pour vous-même exige un certain type de [licence](end-user-license.md). Si vous ne parvenez pas à créer un abonnement, contactez votre administrateur Power BI. Seul le propriétaire du tableau de bord ou du rapport peut **abonner d’autres utilisateurs**. L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md) pour plus d’informations. 
+La **création** d’un abonnement pour vous-même exige un certain type de [licence](end-user-license.md). Si vous ne parvenez pas à créer un abonnement, contactez votre administrateur Power BI ou le service d’assistance informatique. Seul le propriétaire du tableau de bord ou du rapport peut **abonner d’autres utilisateurs**. L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md) pour plus d’informations. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>S’abonner à un tableau de bord ou une page de rapport
 Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le même. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
@@ -41,7 +41,8 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 ![sélectionner l’icône S’abonner](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Ouvrez le tableau de bord ou le rapport.
-2. Dans la barre de menus supérieure, sélectionnez **S’abonner** ou l’icône en forme d’enveloppe ![icône S’abonner](./media/end-user-subscribe/power-bi-icon-envelope.png).
+2. Dans la barre de menus supérieure, sélectionnez **S’abonner** ou l’icône en forme d’enveloppe ![icône S’abonner](./media/end-user-subscribe/power-bi-icon-envelope.png).    
+1. Sélectionnez **Ajouter un nouvel abonnement**.
    
 
 
@@ -65,7 +66,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 3. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevrez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
    
-   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-email-old.png)
+   ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-subscription-email.png)
    
     L’actualisation de la page de rapport n’actualise pas le jeu de données. Seul le propriétaire du jeu de données peut actualiser manuellement un jeu de données. Pour rechercher le nom de propriétaire du ou des jeux de données sous-jacents, sélectionnez la liste déroulante dans la barre de menus ou recherchez l’e-mail d’abonnement d’origine.
    
@@ -73,7 +74,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 
 ## <a name="manage-your-subscriptions"></a>Gérer vos abonnements
-Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouveau **S’abonner** et choisissez **Gérer tous les abonnements** en bas à gauche (voir les captures d’écran ci-dessus). Les abonnements particuliers affichés dépendent de l’espace de travail actuellement actif. Pour afficher tous les abonnements à la fois pour tous les espaces de travail, vérifiez que **Mon espace de travail** est actif. Pour comprendre le fonctionnement des espaces de travail, consultez [Espaces de travail dans Power BI](end-user-workspaces.md). 
+Vous seul pouvez gérer les abonnements que vous créez. Sélectionnez à nouveau **S’abonner** et choisissez **Gérer tous les abonnements** en bas à gauche (voir les captures d’écran ci-dessus). Les abonnements de l’espace de travail actuel s’affichent. Pour comprendre le fonctionnement des espaces de travail, consultez [Espaces de travail dans Power BI](end-user-workspaces.md). 
 
 ![afficher tous les abonnements dans Mon espace de travail](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
@@ -86,14 +87,13 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
 * Pour les abonnements aux tableaux de bord, certains types de mosaïques ne sont pas encore pris en charge, notamment les vignettes de streaming, vidéo, de contenu web personnalisé. 
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
-* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation a peut-être désactivé cette fonctionnalité.  
+* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système ou le service d’assistance informatique. Votre organisation a peut-être désactivé cette fonctionnalité.  
 * Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md).  L’exception est celle des visuels Power BI personnalisés qui ont été [certifiés](../developer/visuals/power-bi-custom-visuals-certified.md).    
 * Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail. Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.  
 * À ce stade, les abonnements aux e-mails ne prennent pas en charge les visuels Power BI alimentés par R.  
-* Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge.  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un tableau de bord ou à un rapport, il n’est pas suspendu même si le rapport ou le tableau de bord n’est pas consulté.
-* Gardez à l’esprit que comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Bien que nous cherchions à traiter et à fournir tous les abonnements aussi rapidement que possible, vous pourriez constater un délai plus long en période de pointe, en raison du nombre d’abonnements qui peuvent être envoyés simultanément.  Pour la majorité des clients, le délai ne devrait pas dépasser 15 minutes pour traiter et envoyer les rapports, mais cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si un client observe un délai aussi long, il doit d’abord vérifier que l’adresse no-reply-powerbi@microsoft.com figure dans votre liste des expéditeurs approuvés et n’est pas bloquée par votre fournisseur de messagerie.  Si elle n’est pas bloquée, il doit contacter le support Power BI pour obtenir de l’aide.
+* Gardez à l’esprit que comme avec les autres produits de décisionnel, le moment pour lequel vous définissez votre abonnement correspond au début du traitement de l’abonnement.  Une fois le traitement du rapport terminé, l’abonnement est mis en file d’attente et envoyé aux destinataires de l’e-mail.  Bien que nous cherchions à traiter et à fournir tous les abonnements aussi rapidement que possible, vous pourriez constater un délai plus long en période de pointe, en raison du nombre d’abonnements qui peuvent être envoyés simultanément.  Pour la majorité des clients, le délai ne devrait pas dépasser 15 minutes pour traiter et envoyer les rapports, mais cela peut prendre jusqu’à 30 minutes à certains moments et pour certains locataires dont l’utilisation est significative.  Nous estimons que le délai de livraison ne sera jamais supérieur à 60 minutes au-delà du moment où l’abonnement est planifié.  Si un client observe un délai aussi long, il doit d’abord vérifier que l’adresse no-reply-powerbi@microsoft.com figure dans votre liste des expéditeurs approuvés et n’est pas bloquée par votre fournisseur de messagerie.  Si l’e-mail n’est pas bloqué, l’utilisateur doit contacter son administrateur Power BI ou le centre d’assistance informatique pour obtenir de l’aide.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: ea7eaf8f7fc36ee1b9dc987ee571dc29dc5b222f
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 09489c3dbb33e1c5fb289cc1cc132eae0083a95f
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748905"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981732"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -195,7 +195,7 @@ Si vous appelez l’API REST, vous pouvez ajouter des données personnalisées d
 
 Voici les étapes pour commencer à configurer la fonctionnalité CustomData() avec votre application Power BI Embedded.
 
-1. Créez votre base de données Azure Analysis Services. Ensuite, connectez-vous à votre serveur Azure Analysis Services par le biais de [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Créez votre base de données Azure Analysis Services. Ensuite, connectez-vous à votre serveur Azure Analysis Services par le biais de [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
     ![Créer une base de données Azure Analysis Services](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -217,7 +217,7 @@ Voici les étapes pour commencer à configurer la fonctionnalité CustomData() a
 
     ![Créer un rôle - Définir des filtres de lignes](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-6. Générez un rapport PBI et publiez-le sur un espace de travail avec une capacité dédiée.
+6. Générez un rapport PBI et publiez-le sur un espace de travail avec une capacité.
 
     ![Exemple de rapport PBI](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
@@ -261,7 +261,7 @@ Il peut être utilisé pour gérer l’affichage de chaque utilisateur dans Azur
 
 Ces problèmes d’identité effective s’appliquent à des règles SNL directement sur le serveur Azure SQL. Power BI Embedded utilise le jeton d’accès fourni lors de l’interrogation des données à partir du serveur Azure SQL. L’UPN de l’utilisateur (pour lequel le jeton d’accès a été fourni) est accessible suite à la fonction SQL USER_NAME().
 
-L’identité basée sur les jetons fonctionne uniquement pour les modèles DirectQuery sur une capacité dédiée, connectée à Azure SQL Database, qui est configuré pour autoriser l’authentification AAD ([en savoir plus sur l’authentification AAD pour Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). La source de données du jeu de données doit être configurée pour utiliser les informations d’identification OAuth2 des utilisateurs finaux, en vue d’utiliser l’identité basée sur les jetons.
+L’identité basée sur les jetons fonctionne uniquement pour les modèles DirectQuery sur une capacité, connectée à Azure SQL Database, qui est configuré pour autoriser l’authentification AAD ([en savoir plus sur l’authentification AAD pour Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). La source de données du jeu de données doit être configurée pour utiliser les informations d’identification OAuth2 des utilisateurs finaux, en vue d’utiliser l’identité basée sur les jetons.
 
    ![Configurer le serveur Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -342,7 +342,7 @@ Vous ne pouvez pas définir cette autorisation à l’aide du portail d’admini
 
 ### <a name="token-based-identity-limitations"></a>Limitations de l’identité basée sur les jetons
 
-* Vous ne pouvez utiliser la sécurité au niveau des lignes que si vous disposez d’une capacité dédiée.
+* Vous ne pouvez utiliser la sécurité au niveau des lignes que si vous disposez d’une capacité.
 * La fonctionnalité SNL ne fonctionne pas localement avec SQL Server.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

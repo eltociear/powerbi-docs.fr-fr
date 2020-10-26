@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6bd70657cecd12ebab7ac54f125e4c358b2cc4aa
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 95f9ebd689f06fcacde9819789e1240f2dd6c3d3
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349054"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92025976"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : Visite guidée
 
@@ -24,17 +24,17 @@ VanArsdel a de nombreux concurrents, mais est leader dans son secteur d’activi
 
 ![Tableau de bord pour l’exemple Vente et marketing](media/sample-sales-and-marketing/sales1.png)
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé par [obviEnce](http://www.obvience.com/) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé par [obviEnce](http://www.obvience.com/) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : échantillon dans le produit, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
 
-Ce tutoriel utilise le pack de contenu Exemple Vente et marketing dans le service Power BI. Les expériences d’utilisation des rapports étant similaires dans Power BI Desktop et dans le service, vous pouvez également poursuivre avec et l’exemple de fichier .pbix dans Power BI Desktop. 
+Ce tutoriel utilise l’exemple Vente et marketing dans le service Power BI. Les expériences d’utilisation des rapports étant similaires dans Power BI Desktop et dans le service, vous pouvez également poursuivre avec et l’exemple de fichier .pbix dans Power BI Desktop. 
 
 Vous n’avez pas besoin d’une licence Power BI pour explorer les exemples dans Power BI Desktop. Si vous n’avez pas de licence Power BI Pro, vous pouvez enregistrer l’exemple dans votre espace Mon espace de travail du service Power BI. 
 
 ## <a name="get-the-sample"></a>Obtenir l’exemple
 
-Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](#get-the-content-pack-for-this-sample), [fichier .pbix](#get-the-pbix-file-for-this-sample) ou [classeur Excel](#get-the-excel-workbook-for-this-sample).
+Avant de pouvoir utiliser l’exemple, vous devez tout d’abord télécharger le [tableau de bord, le rapport et le jeu de données](#get-the-sample-from-the-power-bi-service), le [fichier .pbix](#get-the-pbix-file-for-this-sample) ou le [classeur Excel](#get-the-excel-workbook-for-this-sample).
 
-### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
+### <a name="get-the-sample-from-the-power-bi-service"></a>Obtenir l’exemple à partir du service Power BI
 
 1. Ouvrez le service Power BI (app.powerbi.com), connectez-vous et ouvrez l’espace de travail où vous souhaitez enregistrer l’exemple.
 
@@ -49,7 +49,7 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [
   
    ![Se connecter à un exemple](media/sample-sales-and-marketing/sales9.png)
    
-5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail actuel.
+5. Power BI importe l’exemple, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail actuel.
    
    ![Entrée Vente et marketing](media/sample-sales-and-marketing/sales11.png)
   

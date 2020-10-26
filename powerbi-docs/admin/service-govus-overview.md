@@ -10,12 +10,12 @@ ms.date: 09/23/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: eecc36377ab79e4af4ea7882c24f4eb5a6e376c7
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 45d89fe7a224d56e710765e533a7c075c24b8a66
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91524624"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91981501"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI pour les clients du gouvernement des États-Unis
 
@@ -84,9 +84,9 @@ L’authentification, l’identité et l’administration de Power BI sont dépe
 | Réseau de distribution de contenu (CDN) | **GCC** : gov.content.powerapps.us |
 | | **GCC High** : high.content.powerapps.us |
 | | **DoD** : mil.content.powerapps.us |
-| Intégration de Microsoft 365 | **GCC** : [Points de terminaison internationaux](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) |
-| | **GCC High** : [Points de terminaison US Government GCC High](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
-| | **DoD** : [Points de terminaison US Government DoD](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
+| Intégration de Microsoft 365 | **GCC** : [Points de terminaison internationaux](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
+| | **GCC High** : [Points de terminaison US Government GCC High](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints) |
+| | **DoD** : [Points de terminaison US Government DoD](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portail |**GCC** : *.powerbigov.us |
 | | **GCC-High** : *.high.powerbigov.us |
 | | **DoD** : *.mil.powerbigov.us |
@@ -107,7 +107,7 @@ Azure est réparti sur plusieurs clouds. Par défaut, vous pouvez activer des r�
 
 Pour obtenir celles du cloud du gouvernement des États-Unis, téléchargez le fichier [Plages d’adresses IP et balises de service Azure – Cloud du gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063). Les plages sont listées pour Power BI et Power Query.
 
-Pour plus d’informations sur les services cloud Microsoft Azure Government, consultez [Documentation Azure Government](https://docs.microsoft.com/azure/azure-government/).
+Pour plus d’informations sur les services cloud Microsoft Azure Government, consultez [Documentation Azure Government](/azure/azure-government/).
 
 Pour configurer des pare-feu pour les bases de données SQL, consultez [Créer et gérer des règles de pare-feu IP](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -123,7 +123,6 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 |[Incorporation dans SharePoint Online à l’aide du composant WebPart Power BI](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![disponible](../media/yes.png)|![Disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Connectivité Power Automate pour les alertes de données](../connect-data/power-bi-data-sources.md)|![disponible](../media/yes.png)|![disponible](../media/yes.png)|![non disponible](../media/no.png)|
 |[Onglet Power BI dans Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![disponible](../media/yes.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
-|[Métriques de capacité](../admin/service-admin-premium-monitor-portal.md)|T3 2020 |T3 2020|T3 2020|
 |[Grands modèles](service-premium-large-models.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
 |[Dataflows - Optimisation du moteur de calcul SQL](../transform-model/service-dataflows-enhanced-compute-engine.md) | T4 2020 |T4 2020| ![non disponible](../media/no.png) |
 |[Dataflows - Requête directe](../transform-model/service-dataflows-directquery.md) | T4 2020 |T4 2020|![non disponible](../media/no.png)|
@@ -131,6 +130,7 @@ Le tableau suivant liste les fonctionnalités qui ne sont pas disponibles dans u
 |[Protection des données (étiquettes MIP)](service-security-sensitivity-label-overview.md)|T4 2020|T4 2020 |T4 2020|
 |[Applications modèles](../connect-data/service-template-apps-overview.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
 |[Visuels personnalisés](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|T4 2020 |T4 2020| T4 2020|
+|[Connecteur de données de qualité d’appel](/microsoftteams/cqd-power-bi-connector)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 |[Génération d’un code QR](../create-reports/service-create-qr-code-for-tile.md)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|![non disponible](../media/no.png)|
 
 <sup>1</sup> B2B Collaboration est disponible pour GCC, à condition que l’utilisateur externe dispose d’une licence dans cet environnement. Les licences Cloud commercial ne sont pas valides dans GCC. Pour plus d’informations sur les limitations connues de B2B Collaboration pour le gouvernement américain, lisez la [comparaison entre Azure Government et Azure international](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).

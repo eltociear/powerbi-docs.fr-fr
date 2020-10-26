@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e56b03eeccc3140709fb458d4e42a9065a4da5d4
-ms.sourcegitcommit: 2131f7b075390c12659c76df94a8108226db084c
+ms.openlocfilehash: 62a88a8267ae38b1dbfc0bbb0ee1d9020e7f9408
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87538007"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049243"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
@@ -72,7 +72,7 @@ Les visuels Power BI sont des packages qui incluent du code pour afficher les d
 
 Pour importer un visuel Power BI, dans le volet *Visualisation*, cliquez sur **Importer un élément visuel personnalisé**, puis sélectionnez **Importer à partir du fichier**.
 
-Si vous êtes un développeur web et que vous souhaitez créer votre propre visuel et l’ajouter à AppSource, vous pouvez apprendre à [développer un visuel Power BI](custom-visual-develop-tutorial.md) et [publier un visuel Power BI sur AppSource](office-store.md).
+Si vous êtes un développeur web et que vous souhaitez créer votre propre visuel et l’ajouter à AppSource, vous pouvez apprendre à [développer un visuel de carte ronde Power BI](develop-circle-card.md) et [publier un visuel Power BI sur AppSource](office-store.md).
 
 > [!WARNING]
 > Un visuel Power BI peut contenir du code présentant des risques en matière de sécurité ou de confidentialité. Vérifiez que vous faites confiance à son auteur et à sa source avant de l’importer dans votre rapport.
@@ -80,7 +80,7 @@ Si vous êtes un développeur web et que vous souhaitez créer votre propre visu
 ## <a name="next-steps"></a>Étapes suivantes
 
 >[!div class="nextstepaction"]
->[Développer un visuel Power BI](custom-visual-develop-tutorial.md)
+>[Développement d’un visuel de carte ronde Power BI](develop-circle-card.md)
 
 >[!div class="nextstepaction"]
 >[Structure de projet des visuels Power BI](visual-project-structure.md)

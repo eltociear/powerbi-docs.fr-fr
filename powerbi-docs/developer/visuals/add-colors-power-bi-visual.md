@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
-ms.openlocfilehash: 3f3574545d82ac11c762b7011afdc49cbe855224
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 3a68f3dedbef9e97b6c29d3a0923d43872a5f01a
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141142"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92048806"
 ---
 # <a name="add-colors-to-your-power-bi-visuals"></a>Ajouter des couleurs à vos visuels Power BI
 
@@ -23,7 +23,7 @@ Cet article explique comment ajouter des couleurs à vos visuels et comment gér
 L’exemple de code de cet article modifie le [visuel SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 Pour obtenir le code source, consultez [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
-Pour commencer à créer des éléments visuels, consultez [Développer un visuel Power BI](custom-visual-develop-tutorial.md).
+Pour essayer de créer des visuels, consultez [Développement d’un visuel de carte ronde Power BI](develop-circle-card.md).
 
 ## <a name="add-color-to-data-points"></a>Ajouter de la couleur aux points de données
 

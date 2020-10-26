@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 771c41b896a6b886e8c72fa3d88ca8842e8ebffe
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 2c06464999192e71c2d398f41b7b96e8fa4a169b
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983479"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients
 
@@ -34,7 +34,7 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Un [principal de service (jeton d’application uniquement)](embed-service-principal.md)
 * Un abonnement [Microsoft Azure](https://azure.microsoft.com/)
 * Votre propre configuration d’un [locataire Azure Active Directory](create-an-azure-active-directory-tenant.md)
-* Au moins une [capacité](#create-a-dedicated-capacity) A4 ou P1, avec la charge de travail des [rapports paginés](../../admin/service-admin-premium-workloads.md#paginated-reports) activée
+* Au moins une [capacité](#create-a-capacity) A4 ou P1, avec la charge de travail des [rapports paginés](../../admin/service-admin-premium-workloads.md#paginated-reports) activée
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 
@@ -45,17 +45,17 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 
-L’incorporation d’un rapport paginé nécessite d’associer un espace de travail à une capacité dédiée et de charger le rapport dans l’espace de travail.
+L’incorporation d’un rapport paginé nécessite d’associer un espace de travail à une capacité et de charger le rapport dans l’espace de travail.
 
 ### <a name="create-an-app-workspace"></a>Créer un espace de travail d’application
 
 Quand vous utilisez un [principal de service](embed-service-principal.md) pour vous connecter à votre application, vous êtes obligé de recourir aux [nouveaux espaces de travail](../../collaborate-share/service-create-the-new-workspaces.md). En tant que *principal du service*, vous devez également être administrateur ou membre des espaces de travail d’application impliqués dans votre application.
 
-### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
+### <a name="create-a-capacity"></a>Créer une capacité
 
 Avant d’importer ou de charger un rapport paginé à incorporer, l’espace de travail contenant le rapport doit être affecté à au moins une capacité A4 ou P1. Vous avez le choix entre deux types de capacité dans Power BI :
 * **Power BI Premium** : pour incorporer un rapport paginé, une capacité de référence SKU *P* est nécessaire. Lors de l’incorporation de contenu Power BI, cette solution est appelée *incorporation de Power BI*. Pour plus d’informations sur cet abonnement, consultez [Qu’est-ce que Power BI Premium ?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** : vous pouvez acheter une capacité dédiée à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** : vous pouvez acheter une capacité à partir du [portail Microsoft Azure](https://portal.azure.com). Cet abonnement utilise les références SKU *A*. Pour incorporer des rapports paginés, vous devez disposer au moins d’un abonnement *A4*. Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
 Le tableau ci-dessous décrit les ressources et les limites de chaque référence SKU. Pour déterminer la capacité qui correspond le mieux à vos besoins, consultez le tableau [Quelle référence SKU dois-je acheter pour mon scénario ?](./embedded-faq.md#which-solution-should-i-choose)
 
@@ -66,11 +66,11 @@ Le tableau ci-dessous décrit les ressources et les limites de chaque référenc
 | P3/A6 | 32 | 16 | 100 | 16 |
 | | | | | |
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail d’application à une capacité dédiée
+### <a name="assign-an-app-workspace-to-a-capacity"></a>Affecter un espace de travail d’application à une capacité
 
-Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter votre espace de travail d’application.
+Après avoir créé une capacité, vous pouvez lui affecter l’espace de travail de votre application.
 
-Pour affecter une capacité dédiée à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
+Pour affecter une capacité à un espace de travail à l’aide d’un [principal de service](embed-service-principal.md), utilisez l’[API REST Power BI](/rest/api/power-bi/capacities/groups_assigntocapacity). Quand vous utilisez l’API REST Power BI, veillez à utiliser l’[ID objet du principal de service](embed-service-principal.md).
 
 ### <a name="create-and-upload-your-paginated-reports"></a>Créer et charger vos rapports paginés
 

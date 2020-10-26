@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 38c14aa33504e7a3bb21cf68c6466a829d0653a7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 931c500cd2c2dbbf750eb3699ac5290a2977c21b
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238883"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526257"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Effectuer des tâches courantes relatives aux requêtes dans Power BI Desktop
 
@@ -87,7 +87,7 @@ Dans cet exemple, des lignes sont regroupées dans un jeu de données d’inscri
 
 Examinons le nombre d’organismes de chaque État. (Il peut s’agir de divisions scolaires, d’autres organismes d’éducation comme des circonscriptions de service régionaux, etc.) Sélectionnez la colonne **Agency ID – NCES Assigned \[District\] Latest available year** (ID d’organisme – Centre américain des données statistiques en éducation District Dernière année disponible), puis le bouton **Grouper par** dans l’onglet **Transformer** ou l’onglet **Accueil** du ruban. (**Grouper par** est disponible dans les deux onglets.)
 
-![Boîte de dialogue Grouper par, Éditeur Power Query, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
+![Capture d’écran montre comment regrouper des lignes dans une table.](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
 La boîte de dialogue **Grouper par** s’affiche. Quand l’Éditeur Power Query regroupe des lignes, il crée une colonne dans laquelle il place les résultats de l’opération **Grouper par**. Vous pouvez ajuster l’opération **Regrouper par** comme suit :
 
@@ -98,7 +98,7 @@ La boîte de dialogue **Grouper par** s’affiche. Quand l’Éditeur Power Quer
 
 Sélectionnez **Ajouter un regroupement** ou **Ajouter une agrégation** pour ajouter d’autres regroupements ou d’autres agrégations à une opération **Grouper par**. Pour supprimer un regroupement ou une agrégation, sélectionnez l’icône représentant des points de suspension ( **…** ) à droite de la ligne, puis **Supprimer**. Essayez l’opération **Grouper par** avec les valeurs par défaut pour voir ce qui se produit.
 
-![Boîte de dialogue Grouper par, Éditeur Power Query, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
+![Capture d’écran montrant la boîte de dialogue Regrouper par avec Ajouter un regroupement et Ajouter une agrégation.](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
 Quand vous sélectionnez **OK**, Query effectue l’opération **Grouper par** et retourne les résultats. L’Ohio, l’Illinois, le Texas et la Californie comptent maintenant plus de mille organismes chacun !
 

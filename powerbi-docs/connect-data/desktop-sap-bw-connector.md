@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db5c8b77851ccd35c5f8ccddf5e6587eb1383518
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 1b3250124fa813f3da96e63455d483cf05f01cb6
+ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85223024"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91598839"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>Utilisation du connecteur SAP Business Warehouse dans Power BI Desktop
 
@@ -147,19 +147,19 @@ Le changement des rapports existants pour utiliser Implementation 2.0 est possib
 
     Déterminez si la requête contient déjà un enregistrement d’option, comme dans l’exemple suivant :
 
-    ![extrait de la requête](media/desktop-sap-bw-connector/sap_bw_9.png)
+    ![Capture d’écran montrant une requête en texte clair avec un enregistrement d’option.](media/desktop-sap-bw-connector/sap_bw_9.png)
 
     Si c’est le cas, ajoutez l’option 2.0 `Implementation` et supprimez l’option `ScaleMeasures`, le cas échéant, comme indiqué ci-dessous :
 
-    ![extrait de la requête](media/desktop-sap-bw-connector/sap_bw_10.png)
+    ![Capture d’écran montrant une requête en texte clair avec la valeur ajoutée Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_10.png)
 
     Si la requête n’inclut pas déjà un enregistrement d’options, ajoutez-en un. Pour l’option suivante :
 
-    ![extrait de la requête](media/desktop-sap-bw-connector/sap_bw_11.png)
+    ![Capture d’écran présentant une requête en texte clair avec un enregistrement d’option ajouté.](media/desktop-sap-bw-connector/sap_bw_11.png)
 
     Remplacez simplement par :
 
-    ![extrait de la requête](media/desktop-sap-bw-connector/sap_bw_12.png)
+    ![Capture d’écran montrant une requête en texte clair de la nouvelle option avec la valeur ajoutée Implementation = 2.0.](media/desktop-sap-bw-connector/sap_bw_12.png)
 
 Nous avons fait tout notre possible pour rendre le connecteur SAP BW Implementation 2.0 compatible avec la version 1. Toutefois, il peut y avoir des différences en raison des différents modes d’exécution MDX SAP BW. Pour résoudre les incohérences, essayez de basculer entre les modes d’exécution.
 

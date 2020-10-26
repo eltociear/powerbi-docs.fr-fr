@@ -6,23 +6,25 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 871f807d18017343b4b23eee4d59833c196cf2f0
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 4ee852e18056fc6db0288066f5b2074eba784487
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528065"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983441"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, Vous pouvez également être un utilisateur métier qui *consomme* ou utilise des rapports. Cet article est destiné aux *utilisateurs des activités*.
+Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, Vous pouvez également être un *utilisateur métier* qui *consomme* ou utilise des rapports. Cet article est destiné aux *utilisateurs des activités*.
+
+## <a name="the-parts-of-a-report"></a>Parties d’un rapport
 
 ![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-report.png)
 
@@ -36,14 +38,14 @@ Si vous débutez avec Power BI, vous pouvez acquérir de bonnes bases en lisant
 
 ## <a name="advantages-of-reports"></a>Avantages des rapports
 
-Power BI base un rapport sur un jeu de données unique. Les *concepteurs* de rapports créent les visuels dans un rapport représentant un nugget d’informations. Les visuels ne sont pas statiques.  Ils se mettent à jour à mesure que les données sous-jacentes changent. Vous pouvez interagir avec les visuels et les filtres à mesure que vous explorez davantage les données pour découvrir des insights et trouver des réponses. Au même titre qu’un tableau de bord, un rapport est hautement interactif et personnalisable.
+Power BI base un rapport sur un jeu de données unique. Les *concepteurs* de rapports créent les visuels dans un rapport représentant des nuggets d’informations. Les visuels ne sont pas statiques.  Ils se mettent à jour à mesure que les données sous-jacentes changent. Vous pouvez interagir avec les visuels et les filtres à mesure que vous explorez davantage les données pour découvrir des insights et trouver des réponses. Au même titre qu’un tableau de bord, mais dans une plus grande mesure, un rapport est hautement interactif et personnalisable. L’étendue de ce que vous pouvez faire avec un rapport dépend du rôle et des autorisations attribués par le *concepteur* du rapport.
 
 ### <a name="safely-interact-with-content"></a>Interagir avec le contenu de manière sécurisée
 
 Quand vous explorez votre contenu et interagissez avec celui-ci (filtrage, découpage, abonnement et exportation), vous n’endommagez pas les rapports. Votre travail n’affecte pas le jeu de données sous-jacent ni le contenu partagé d’origine. Cela s’applique aux tableaux de bord, aux rapports et aux applications.
 
 > [!NOTE]
-> Rappelez-vous que vous ne pouvez pas endommager vos données. Power BI est l’endroit idéal pour explorer et expérimenter sans craindre de détériorer quoi que ce soit.
+> Rappelez-vous que vous ne pouvez pas endommager vos données. Le service Power BI est l’endroit idéal pour explorer et expérimenter sans craindre de détériorer quoi que ce soit.
 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Enregistrer vos changements ou rétablir les paramètres par défaut
 

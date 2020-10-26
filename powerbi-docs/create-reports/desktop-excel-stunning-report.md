@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/21/2020
+ms.date: 10/13/2020
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 275a83c8588bb9489361d467c6c6ab458abc86b2
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 40c874e9178ffc3586c2dde83f32260bdb86bfad
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635329"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92256919"
 ---
 # <a name="tutorial-from-excel-workbook-to-stunning-report-in-power-bi-desktop"></a>Tutoriel : Générer un rapport exceptionnel à partir d’un classeur Excel dans Power BI Desktop
 
 Dans ce tutoriel, vous allez créer un rapport de bout en bout en 20 minutes. 
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
 
 Votre responsable souhaite voir un rapport sur vos derniers chiffres de vente. Il vous a demandé un rapport de synthèse de ce qui suit : 
 
@@ -28,12 +30,10 @@ Votre responsable souhaite voir un rapport sur vos derniers chiffres de vente. I
 
 À l’aide de notre exemple de classeur financier, nous pouvons générer ce rapport en un rien de temps. Voici à quoi ressemblera le rapport final : Allons-y ! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI."::: 
-
 Dans ce tutoriel, vous allez découvrir comment :
 
 > [!div class="checklist"]
-> * Télécharger les exemples de données.
+> * Télécharger des exemples de données de deux façons différentes
 > * Préparer vos données avec quelques transformations.
 > * Créer un rapport avec un titre, trois visuels et un segment.
 > * Publier votre rapport sur le service Power BI pour pouvoir le partager avec vos collègues.
@@ -43,9 +43,23 @@ Dans ce tutoriel, vous allez découvrir comment :
 - Avant de commencer, vous devez [télécharger Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - Si vous envisagez de publier votre rapport sur le service Power BI et que vous n’êtes pas encore inscrit, [inscrivez-vous pour obtenir un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-## <a name="download-the-sample"></a>Télécharger l’exemple
+## <a name="get-data"></a>Obtenir des données 
 
-Pour suivre la procédure, vous devez télécharger l’exemple de classeur. 
+Vous pouvez obtenir les données de ce didacticiel à l’aide de l’une des deux méthodes suivantes.
+
+### <a name="get-data-in-power-bi-desktop"></a>Obtenir des données dans Power BI Desktop
+
+Lorsque vous ouvrez Power BI Desktop, sélectionnez **Essayer un exemple de jeu de données** à partir du canevas vide.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
+
+Si vous avez déjà effectué ce didacticiel dans Power BI Desktop, choisissez **Charger des données**.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
+
+### <a name="download-the-sample"></a>Télécharger l’exemple
+
+Vous pouvez également télécharger l’exemple de classeur directement. 
 
 1. Téléchargez l’[exemple de classeur Excel « Financial Sample »](https://go.microsoft.com/fwlink/?LinkID=521962).
 1. Ouvrez Power BI Desktop.
@@ -58,39 +72,39 @@ Dans le **Navigateur**, vous avez la possibilité de *transformer* ou de *charge
 
 1. Sélectionnez la table **Financials**, puis choisissez **Transformer les données**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
 
 1. Sélectionnez la colonne **Units Sold** (Unités vendues). Sous l’onglet **Accueil**, sélectionnez **Type de données**, puis **Nombre entier**. Choisissez **Remplacer l’actuelle** pour changer le type de colonne. 
 
     L’étape de nettoyage des données effectuée le plus souvent par les utilisateurs consiste à changer les types de données. Ici, les unités vendues sont au format décimal. Cela n’a pas vraiment de sens d’avoir 0,2 ou 0,5 unité vendue, n’est-ce pas ? Nous allons donc remplacer cela par des nombres entiers. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
 
 1. Sélectionnez la colonne **Segment**. Sous l’onglet **Transformer**, sélectionnez **Format**, puis **MAJUSCULES**.
 
     Nous souhaitons également rendre les segments plus faciles à voir dans le graphique par la suite. Nous allons mettre en forme la colonne Segment. 
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Remplaçons le nom de la colonne (**Month Name**) par **Month**. Double-cliquez sur la colonne **Month Name**, puis renommez-la **Month**.  
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Dans la colonne **Product**, sélectionnez la liste déroulante et décochez la case en regard de **Montana**. 
 
      Nous savons que le produit Montana a été abandonné le mois dernier. Nous souhaitons donc filtrer et supprimer ces données de notre rapport pour éviter toute confusion. 
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Vous constatez que chaque transformation a été ajoutée à la liste sous **Paramètres de requête** dans **Étapes appliquées**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-query-applied-steps.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-applied-steps.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. De retour sous l’onglet **Accueil**, sélectionnez **Fermer et appliquer**. Nos données sont presque prêtes pour la création d’un rapport. 
 
     Vous voyez le symbole Sigma dans la liste Champs ? Power BI a détecté que ces champs sont numériques. Power BI indique également le champ de date avec un symbole de calendrier.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 ### <a name="extra-credit-write-a-measure-in-dax"></a>Crédit supplémentaire : Écrire une mesure en DAX
 
@@ -98,11 +112,11 @@ L’écriture de *mesures* dans le langage de formule *DAX* est super puissante 
 
 1. Sélectionnez **Vue de données** sur la gauche. 
  
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Dans le ruban **Accueil**, sélectionnez **Nouvelle table**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Tapez cette mesure pour générer une table de calendrier de toutes les dates comprises entre le 1er janvier 2013 et le 31 décembre 2014.  
 
@@ -110,15 +124,15 @@ L’écriture de *mesures* dans le langage de formule *DAX* est super puissante 
 
 2. Cochez la case pour valider.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. À présent, sélectionnez **Vue du modèle** sur la gauche. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Faites glisser le champ **Date** de la table Financials vers le champ **Date** de la table Calendar pour joindre les tables, puis créez une *relation* entre elles.  
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 ## <a name="build-your-report"></a>Créer votre rapport 
 
@@ -126,14 +140,14 @@ Maintenant que vous avez transformé et chargé vos données, vous pouvez créer
 
 Nous allons créer le rapport final, un visuel à la fois. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 ### <a name="visual-1-add-a-title"></a>Visuel 1 : Ajouter un titre 
 
 1. Dans le ruban **Insertion**, sélectionnez **Zone de texte**. Tapez « Rapport de synthèse – Rapport financier ». 
 1. Sélectionnez le texte que vous avez tapé. Affectez la valeur 20 à la taille de police et appliquez la mise en gras. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Dans le volet Visualisations, basculez l’**Arrière-plan** sur **Désactivé**. 
 1. Redimensionnez la zone pour qu’elle tienne sur une seule ligne. 
@@ -145,19 +159,19 @@ Nous allons créer le rapport final, un visuel à la fois.
 1. À partir du volet Champs, faites glisser le champ **Profit** vers une zone vide sur le canevas de rapport. Par défaut, Power BI affiche un histogramme avec une colonne, Profit. 
 1. Faites glisser le champ **Date** vers le même visuel. Power BI met à jour l’histogramme pour afficher le bénéfice des deux années.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Dans la section **Champs** du volet Visualisations, sélectionnez la liste déroulante dans la valeur **Axe**. Modifiez **Date** en remplaçant **Hiérarchie de dates** par **Date**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
     Power BI met à jour l’histogramme pour afficher les bénéfices pour chaque mois.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Dans le volet Visualisations, choisissez le type de visualisation **Graphique en courbes**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
     Maintenant, il est facile de voir que les bénéfices ont été le plus élevé en décembre 2014.
 
@@ -170,7 +184,7 @@ Créez une carte pour voir dans quel pays les bénéfices ont été les plus él
 
     Power BI crée un élément visuel de type Carte dont les bulles représentent les bénéfices relatifs de chaque emplacement. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
     L’Europe semble générer plus de bénéfices que l’Amérique du Nord. 
 
@@ -187,7 +201,7 @@ Créez un graphique à barres pour déterminer dans quels segments et sociétés
 
 1. Faites glisser le graphique pour qu’il soit suffisamment large pour remplir l’espace sous les deux graphiques du haut.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
     Il semble que l’entreprise doive continuer à investir dans le produit Paseo et à cibler les secteurs Small Business et Government.  
 
@@ -199,11 +213,11 @@ Les segments sont un outil précieux pour filtrer les visuels d’une page de ra
 2. Dans le volet Visualisations , choisissez **Segment**. 
 3. Dans la section Champs du volet Visualisations, sélectionnez la liste déroulante dans **Champs**. Supprimez Quarter et Day pour que seules Year et Month soient conservés. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 4. Développez chaque année et redimensionnez le visuel afin que tous les mois soient visibles.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 Maintenant, si votre responsable souhaite voir uniquement les données de 2013, vous pouvez utiliser le segment pour basculer d’une année à une autre ou vers des mois spécifiques de chaque année. 
 
@@ -215,13 +229,13 @@ Si vous souhaitez appliquer une légère mise en forme à ce rapport pour le ren
 
 - Dans le ruban **Affichage**, choisissez le thème **Executive**.  
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-executive.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-executive.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
 
 **Embellir les visuels** 
 
 Apportez les modifications suivantes sous l’onglet **Format** dans le volet Visualisations.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Sélectionnez le visuel 2. Dans la section **Titre**, remplacez **Texte du titre** par « Bénéfices par mois et par année » et choisissez une **Taille du texte** de **16 pt**. Basculez **Ombre** sur **Activé**. 
 
@@ -237,7 +251,7 @@ Apportez les modifications suivantes sous l’onglet **Format** dans le volet Vi
 1. Dans le volet **Format de la forme**, dans la section **Ligne**, affectez la valeur **100%** à la **Transparence**. 
 1. Dans la section **Remplissage**, choisissez **Couleur de thème 5 #6B91C9** (bleu) comme **Couleur de remplissage**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 1. Sous l’onglet **Format**, sélectionnez **Reculer** > **Mettre en arrière-plan**. 
 1. Sélectionnez le texte du visuel 1, le titre, et remplacez la couleur de la police par **Blanc**. 
@@ -252,7 +266,7 @@ Apportez les modifications suivantes sous l’onglet **Format** dans le volet Vi
 
 Voici à quoi ressemblera votre rapport finalisé :  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 En résumé, ce rapport répond aux principales questions de votre responsable : 
 
@@ -283,15 +297,15 @@ Pour partager votre rapport avec votre responsable et vos collègues, publiez-le
 1. Sélectionnez une destination, par exemple **Mon espace de travail** dans le service Power BI > **Sélectionner**.
 1. Sélectionnez **Ouvrir « nom_de_votre_fichier » dans Power BI**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
     Votre rapport s’ouvre dans le navigateur.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Capture d’écran du rapport de Power BI terminé."::: 
 
 1. Sélectionnez **Partager** en haut du rapport pour le partager avec d’autres utilisateurs.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Capture d’écran du rapport Power BI dans le service Power BI.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Capture d’écran du rapport de Power BI terminé.":::
 
 ## <a name="next-steps"></a>Étapes suivantes
 

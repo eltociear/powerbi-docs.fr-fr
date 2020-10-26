@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/13/2020
-ms.openlocfilehash: f024959c0d7e8bd0b51893a277161c67b5f4dfc6
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.date: 10/01/2020
+ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746122"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116451"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -52,11 +52,18 @@ Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des
 
 ### <a name="bookmarks"></a>Signets
 
- Vous pouvez utiliser l’API `exportToFile` pour exporter programmatiquement un rapport dans un état spécifique après lui avoir appliqué des filtres. Pour ce faire, utilisez les fonctionnalités [Signets](../../consumer/end-user-bookmarks.md). Pour exporter un rapport à l’aide de signets, utilisez l’[API JavaScript de signets](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+Des [signets](../../consumer/end-user-bookmarks.md) peuvent être utilisés pour enregistrer un rapport dans une configuration spécifique, y compris avec des filtres appliqués et l’état des visuels du rapport. Vous pouvez utiliser l’API [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) pour exporter par programme le signet d’un rapport, de deux manières :
 
- Par exemple, vous pouvez utiliser la méthode de signet `capturedBookmark.state` pour capturer les modifications apportées par un utilisateur spécifique à un rapport, puis l’exporter dans son état actuel.
+* **Exporter un signet existant**
 
-[Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
+    Pour exporter un [signet de rapport](../../consumer/end-user-bookmarks.md#report-bookmarks) existant, utilisez la propriété `name`, un identificateur unique (sensible à la casse) que vous pouvez obtenir à l’aide de [l’API de signets JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+
+* **Exporter l’état du rapport**
+
+    Pour exporter l’état actuel du rapport, utilisez la propriété `state`. Par exemple, vous pouvez utiliser la méthode de signet `bookmarksManager.capture` pour capturer les modifications apportées par un utilisateur spécifique à un rapport, puis l’exporter dans son état actuel avec `capturedBookmark.state`.
+
+>[!NOTE]
+>[Les signets personnels](../../consumer/end-user-bookmarks.md#personal-bookmarks) et [les filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ne sont pas pris en charge.
 
 ### <a name="authentication"></a>Authentification
 

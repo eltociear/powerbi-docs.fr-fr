@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
-ms.openlocfilehash: 9158dfccecd42d13a133a49097b2f85cb3713f00
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 23f58c047eeb47fce24ad38ae54d8f4d7a1c57e7
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746743"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91983042"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Planification d’une capacité dans l’analytique incorporée de Power BI
 
@@ -27,11 +27,11 @@ Voici quelques éléments à prendre en considération lors de la planification 
 * Les taux d’actualisation des données
 * Les modèles d’utilisation supplémentaires difficiles à prédire.
 
-Cet article est conçu pour faciliter la planification de la capacité pour l’analytique intégrée de Power BI, en introduisant [l’outil d’évaluation de la charge de la capacité dédiée Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), créé pour automatiser les tests de charge pour les capacités d’analytique intégrée de Power BI (références SKU *A*, *EM* ou *P*).
+Cet article est conçu pour faciliter la planification de la capacité pour l’analytique intégrée de Power BI, en introduisant [l’outil d’évaluation de la charge de la capacité Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/), créé pour automatiser les tests de charge pour les capacités d’analytique intégrée de Power BI (références SKU *A*, *EM* ou *P*).
 
 ## <a name="planning-tool"></a>Outil de planification
 
- [L’outil d’évaluation de la charge de la capacité dédiée Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) peut vous aider à comprendre quelle charge utilisateur votre capacité peut gérer. Il utilise PowerShell pour créer des tests de charge automatisés sur vos capacités et vous permet de choisir les rapports à tester et le nombre d’utilisateurs simultanés à simuler.
+ [L’outil d’évaluation de la charge de la capacité Power BI](https://github.com/microsoft/PowerBI-Tools-For-Capacities/tree/master/LoadTestingPowerShellTool/) peut vous aider à comprendre quelle charge utilisateur votre capacité peut gérer. Il utilise PowerShell pour créer des tests de charge automatisés sur vos capacités et vous permet de choisir les rapports à tester et le nombre d’utilisateurs simultanés à simuler.
 
 L’outil génère une charge sur une capacité en effectuant en continu un rendu de chaque rapport avec de nouvelles valeurs de filtre (pour éviter l’obtention de bonnes performances irréalistes dues à la mise en cache des rapports), jusqu’à ce que le jeton requis pour l’authentification de l’outil sur le service expire.
 

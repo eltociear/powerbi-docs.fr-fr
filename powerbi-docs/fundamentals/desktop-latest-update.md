@@ -6,23 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/05/2020
+ms.date: 10/13/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7460967e12ee13f5aff03c8058c318741c26aa86
-ms.sourcegitcommit: 6ba33e5a500928163e02e007f5ccd52dd2227610
+ms.openlocfilehash: 8670659ff44a0f0e14688a8a898704823f272891
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780094"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92255992"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Nouveautés dans Power BI Desktop
 
-## <a name="september-2020-update-2852840"></a>Mise à jour de septembre 2020 (2.85.284.0)
+## <a name="october-2020-update-2863210"></a>Mise à jour d’octobre 2020 (2.86.321.0)
 
-Nos mises à jour de Power BI Desktop de septembre sont aussi fraîches et vives que l’automne, qui pare les feuilles de nouvelles couleurs. 
+Nos mises à jour Power BI Desktop d’octobre sont un grand panier de terrifiantes douceurs, que vous pouvez trier et apprécier pour les semaines à venir. 
 
-Ce mois-ci, les mises à jour mensuelles du blog et des vidéos de Power BI Desktop incluent également les nouveautés de Power BI Mobile et du service Power BI. Cet article traite des mises à jour de Power BI Desktop. Pour plus d’informations sur les nouveautés de Power BI Mobile et du service Power BI, consultez les articles correspondants :
+Les mises à jour mensuelles du blog et des vidéos de Power BI Desktop incluent les nouveautés de Power BI Mobile et du service Power BI. Cet article traite des mises à jour de Power BI Desktop. Pour plus d’informations sur les nouveautés de Power BI Mobile et du service Power BI, consultez les articles correspondants :
 
 * [Nouveautés dans le service Power BI](service-whats-new.md)
 * [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
@@ -46,41 +46,49 @@ Vous pouvez également regarder l’intégralité de la [vidéo des mises à jou
 
 Les nouvelles mises à jour apportées à Power BI Desktop ce mois-ci sont les suivantes :
 
+
+
+### <a name="reporting"></a>Création de rapports
+* Filigranes de canevas [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=17)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
+* La personnalisation des visuels est désormais en disponibilité générale [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=115)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558)   [[Article]](../create-reports/power-bi-personalize-visuals.md)
+* Sélection de rectangle de points de données pour Treemap (préversion) [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=292)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[Article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
+
 ### <a name="analytics"></a>Analytics
-* Narrations intelligentes (préversion) [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=51) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#_Smart_narratives_(preview)) 
-* Ajout de la prise en charge des opérations arithmétiques par Q&A [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=333) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#QA_arithmetic) 
-
-
-### <a name="reporting"></a>Rapports
-* Rectangle de sélection de points de données pour les graphes supplémentaires [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=370) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Data_point_rectangle_select) 
-* Ajout d’une option visuelle générale pour conserver l’ordre des couches [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=405) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Maintain_layer_order) 
-* Recherche d’un espace de travail lors de la publication [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=615) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Search_workspace) 
-* Nombre total d’étiquettes pour les visuels empilés [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=630) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Total_labels_stacked) 
-* Amélioration de la création mobile [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=786) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Mobile_authoring_enhancements) 
+* Exporter des données à partir d’un visuel Q&A [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=308)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
 
 
 ### <a name="modeling"></a>Modélisation
-* Métadonnées de jeu de données avancées en disponibilité générale [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1200) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Enhanced_Dataset_Metadata)
-* Amélioration du niveau de performance des expressions d’agrégation impliquant des colonnes de type de données Devise [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1220) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Performance_improvements_to_agg)
+* Améliorations des performances pour les fonctions IF et SWITCH  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270584)
 
+
+### <a name="data-preparation"></a>Préparation des données
+* Paramètres de requêtes M dynamiques (préversion) [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=329)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665421)  [[Article]](../connect-data/desktop-dynamic-m-query-parameters.md)
+* Détection automatique de tables à partir de fichiers Excel [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=615)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195566)
+* Détection automatique de tables à partir de fichiers JSON [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=650)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665423)
 
 ### <a name="data-connectivity"></a>Connectivité aux données
-* Azure Databricks [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1342) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Azure_Databricks)
-* MariaDB [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1365) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#MariaDB)
-* API Hexagon PPM Smart [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1386) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Hexagon_PPM_Smart)
-* Autres mises à jour de la connectivité des données [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1411) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Other_data_connectivity)
+* Prise en charge géographique plus large pour le connecteur de dataflows Power Platform [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=675)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270590)
+* MariaDB prend désormais en charge DirectQuery [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=694)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195570)
+* Mise à jour du connecteur de liste SharePoint Online [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=707)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270592)
+* Nouveaux connecteurs de données : Spigit et eWay-CRM [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=736)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
 
 
-### <a name="visuals"></a>Objets visuels
-* Nouveaux visuels de différents fournisseurs [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1228) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
+### <a name="visuals"></a>Visuels
+* Disponibilité générale des fonctionnalités administrateur étendues [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=997)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
+* Nouveaux visuels de différents fournisseurs [[vidéo]](https://youtu.be/LveNuQqV5xk?t=1039) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
 
 
 ### <a name="template-apps"></a>Applications modèles
-* Tableau de bord d’attribution multicanal [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1290) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
-* Tableau de bord d’analytique des espaces de travail [[vidéo]](https://youtu.be/gPGy18Yo0Go?t=1290) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
+* Installation simplifiée pour les applications de modèle [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=1127)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270613) 
+* Rechercher des applications de modèle à partir de Power BI Desktop [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=1164)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
+
+### <a name="other"></a>Autre
+* Exporter une source de données vers PBIDS dans Power BI Desktop [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=1255)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[Article]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
+* Mise à jour des icônes pour Power BI [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=1295)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
+* Faire disparaître l’écran de démarrage de Power BI Desktop [[Vidéo]](https://youtu.be/LveNuQqV5xk?t=1313)  [[Blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
 
 
-Pour plus d’informations sur chacune de ces nouvelles fonctionnalités, consultez ce [billet de blog récapitulant les fonctionnalités de Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/).
+Pour plus d’informations sur chacune de ces nouvelles fonctionnalités, consultez ce [billet de blog récapitulant les fonctionnalités de Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
 
 
 > [!NOTE]
@@ -90,7 +98,7 @@ Pour plus d’informations sur chacune de ces nouvelles fonctionnalités, consul
 ### <a name="power-bi-desktop-monthly-update-video"></a>Vidéo des mises à jour mensuelles de Power BI Desktop
 La vidéo suivante décrit chacune de ces mises à jour. Vous pouvez également regarder la vidéo à partir du billet de blog :
 
-> [!VIDEO https://www.youtube.com/embed/gPGy18Yo0Go]
+> [!VIDEO https://www.youtube.com/embed/LveNuQqV5xk]
 
 ## <a name="more-videos"></a>Plus de vidéos
 

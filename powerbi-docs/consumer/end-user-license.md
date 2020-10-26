@@ -7,16 +7,16 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: bfa2faaa95c58541e44dd858f8d544d06d86ba25
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 2b0bde7aa193af831a95fc53d461f874a3c1d1d1
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91527935"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830334"
 ---
 # <a name="licenses-and-subscriptions-for-business-users"></a>Licences et abonnements pour les *utilisateurs professionnels*
 
@@ -51,8 +51,16 @@ Au sein de ces espaces de travail, les concepteurs attribuent des rôles, comme 
 Pour plus d’informations sur la capacité Premium, consultez [Présentation de Microsoft Power BI Premium](../admin/service-premium-what-is.md).
 
 ## <a name="find-out-which-licenses-you-have"></a>Identifier les licences que vous utilisez
+Sélectionnez votre image de profil pour afficher les informations de compte. Zalan utilise une licence gratuite. 
 
-Visitez [votre page Microsoft **Mon compte**](https://portal.office.com/account) pour voir quelles licences vous sont attribuées.  Sélectionnez l'onglet **Abonnements**.
+![Capture d’écran de la liste déroulante qui s’affiche lorsque vous cliquez sur votre image de profil](media/end-user-license/power-bi-profiles.png)
+
+
+Pour afficher des détails supplémentaires sur votre compte, sélectionnez **Afficher le compte**. [Votre page Microsoft **Mon compte**](https://portal.office.com/account) s’ouvre dans un nouvel onglet de navigateur.  Pour voir quelles licences vous sont affectées.  Sélectionnez l'onglet **Abonnements**.
+
+![Capture d’écran de la page Comptes de Microsoft 365.](media/end-user-license/power-bi-subscriptions.png)
+
+
 
 
 Ce premier utilisateur, Pradtanna, a Office 365 E5 qui inclut une licence Power BI Pro.
@@ -95,7 +103,7 @@ Quand une organisation achète un abonnement Premium, l’administrateur attribu
 
 |Type de licence  |Capacité partagée |Capacité Premium dédiée  |
 |---------|---------|---------|
-|**Gratuit**     |  Utilisez-la comme un bac à sable personnel dans lequel vous créez du contenu et interagissez avec celui-ci. Une licence gratuite constitue un excellent moyen de tester le service Power BI. Vous ne pouvez ni utiliser le contenu d’une autre personne, ni partager votre contenu avec d’autres utilisateurs <sup>1</sup>.     |   Interagissez avec le contenu affecté à la capacité dédiée et partagé avec vous. Les utilisateurs gratuits et Pro peuvent collaborer sans que les utilisateurs gratuits disposent de comptes Pro.      |
+|**Gratuit**     |  Utilisez-la comme un bac à sable personnel dans lequel vous créez du contenu et interagissez avec celui-ci. Une licence gratuite constitue un excellent moyen de tester le service Power BI. Vous ne pouvez ni utiliser le contenu d’une autre personne, ni partager votre contenu avec d’autres utilisateurs <sup>1</sup>.     |   Interagissez avec le contenu affecté à la capacité Premium dédiée et partagé avec vous. Les utilisateurs gratuits et Pro peuvent collaborer sans que les utilisateurs gratuits disposent de comptes Pro.      |
 |**Pro**     |  Collaborez avec d’autres utilisateurs Pro en créant et en partageant du contenu.        |  Collaborez avec des utilisateurs gratuits et Pro en créant et en partageant du contenu.       |
 
 
@@ -125,7 +133,7 @@ Le *concepteur* Power BI Pro peut partager et collaborer avec d’autres utilisa
 
 - <sup>1</sup> Une licence utilisateur gratuite pour le service Power BI est parfaite pour une personne qui l’explore ou l’utilise pour analyser et visualiser des données personnelles à l’aide de **Mon espace de travail**. Un utilisateur gratuit autonome n’utilise pas Power BI pour collaborer avec des collègues. Les titulaires de licences autonomes gratuites ne peuvent pas voir le contenu partagé par d’autres personnes ni partager leur contenu avec d’autres utilisateurs de Power BI.
 
-    ![image d’utilisateurs autonomes](media/end-user-license/power-bi-free-license.jpg)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

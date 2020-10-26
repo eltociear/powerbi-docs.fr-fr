@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2ae4223a6e156be3907bcad980df9446dbb64127
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c94990f3126191cf568c2cc20fb5db0c954a6424
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234646"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049450"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
 
@@ -29,7 +29,7 @@ Il existe de nombreux types de visuels accessibles directement dans le volet Vis
 
 ![volet avec des icônes pour chaque type de visualisation](media/power-bi-report-visualizations/power-bi-icons.png)
 
-D’autres visuels Power BI sont disponibles à partir du [site de la communauté Microsoft AppSource](https://appsource.microsoft.com). Dans AppSource, vous pouvez parcourir et [Télécharger](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) les [visuels Power BI](../developer/visuals/custom-visual-develop-tutorial.md) fournis par Microsoft et la communauté.
+D’autres visuels Power BI sont disponibles à partir du [site de la communauté Microsoft AppSource](https://appsource.microsoft.com). Dans AppSource, vous pouvez parcourir et [télécharger](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) les visuels Power BI fournis par Microsoft et la communauté.
 
 Si vous débutez avec Power BI ou que vous avez besoin d’une remise à niveau, utilisez les liens ci-dessous pour découvrir les principes de base des visualisations de Power BI.  Vous pouvez également utiliser la table des matières (à gauche de cet article) pour trouver d’autres informations utiles.
 
@@ -39,7 +39,7 @@ Si vous débutez avec Power BI ou que vous avez besoin d’une remise à niveau
 
 ## <a name="upload-a-visualization-from-a-file-or-from-appsource"></a>Télécharger une visualisation à partir d’un fichier ou d’AppSource
 
-Ajoutez une visualisation que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../developer/visuals/custom-visual-develop-tutorial.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/visuals/office-store.md). Pour en savoir plus sur le développement de visuels Power BI, voir [Développer un visuel Power BI](../developer/visuals/custom-visual-develop-tutorial.md).
+Ajoutez une visualisation que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../developer/visuals/environment-setup.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/visuals/office-store.md). Pour en savoir plus sur le développement de visuels Power BI, voir [Développer un visuel Power BI](../developer/visuals/develop-circle-card.md).
 
 ## <a name="personalize-your-visualization-pane"></a>Personnaliser votre volet de visualisation
 

@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 893becbcfc7d58b04bbff2819baed4bbc829fe9d
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.date: 10/19/2020
+ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
+ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526671"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92257012"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -178,6 +178,12 @@ Oui, vous pouvez maintenant rechercher vos rapports paginés depuis la page d’
 Voici quelques éléments à prendre en compte lors de l’utilisation de champs DateTime dans des rapports paginés.
 
 - Actuellement, il existe des limitations de globalisation liées aux paramètres DateTime. Tous les paramètres DateTime du service Power BI sont extraits au format US (MM/JJ/AAAA), quelle que soit la façon dont vous concevez les éléments DataTime dans le Générateur de rapports Power BI.
+
+Lorsque vous affichez des rapports paginés dans le service Power BI, les sessions peuvent expirer, montrant alors à l’utilisateur la notification suivante :
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Onglet Paramètres de capacité, Rapports paginés":::
+
+- La session expire au bout de 60 minutes d’inactivité, ou plus tôt lorsque l’appareil est verrouillé ou inactif, ou lorsque le rapport n’est pas affiché dans l’onglet actif du navigateur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 2978401c7ec949c8c8df7c813395b3d84db18b72
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f3a3551db1d7d995db0194ff7fa9b7141415c9eb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232668"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525544"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Comment déboguer des visuels Power BI
 
@@ -78,7 +78,7 @@ Vous pouvez également configurer le navigateur pour qu’il s’arrête sur les
 3. Cliquez sur l’icône **Arrêter en cas d’exception** (hexagone avec un symbole de pause).
 4. Sélectionnez **Arrêter sur toutes les exceptions**.
 
-![Champs de rôles de données](media/visuals-how-to-debug/how-to-debug-edge.png)
+![Capture d’écran montrant l’onglet Débogueur avec l’option Arrêt en cas d’exception sélectionnée.](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -87,7 +87,7 @@ Vous pouvez également configurer le navigateur pour qu’il s’arrête sur les
 3. Cliquez sur l’icône **interrompre en cas d’exception** (symbole Stop avec un symbole de pause).
 4. Activez la case à cocher **Suspendre les exceptions interceptées**.
 
-![Champs de rôles de données](media/visuals-how-to-debug/how-to-debug-chrome.png)
+![Capture d’écran montrant l’onglet Sources avec l’option Interruption en cas d’exception interceptée sélectionnée.](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Résoudre les problèmes de visuels Power BI](power-bi-custom-visuals-troubleshoot.md)

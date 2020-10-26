@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 7c90093fefb98c6b385328e8dd207760e3207cbf
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746214"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982191"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 
@@ -82,9 +82,9 @@ Un [principal du service](embed-service-principal.md) peut incorporer du contenu
 Les développeurs utilisant Power BI Embedded peuvent consacrer du temps à la génération des fonctionnalités principales de leur application, au lieu de le passer à développer des visuels et de l’analytique. Ils peuvent rapidement répondre aux demandes de rapport et de tableau de bord des clients et incorporer facilement des SDK et des API entièrement documentés. En facilitant l’exploration de données dans les applications, les éditeurs indépendants de logiciels permettent aux clients de prendre des décisions rapides en fonction des données et du contexte, sur n’importe quel appareil.
 
 > [!IMPORTANT]
-> Même si l’incorporation nécessite le service Power BI, vos clients n’ont pas besoin de disposer d’un compte Power BI pour afficher le contenu incorporé de votre application. 
+> Même si l’incorporation nécessite le service Power BI, vos clients n’ont pas besoin de disposer d’un compte Power BI pour afficher le contenu incorporé de votre application.
 
-Quand vous êtes prêt à passer en mode de production, vous devez affecter une capacité dédiée à votre espace de travail. Power BI Embedded dans Microsoft Azure offre des [capacités dédiées](azure-pbie-create-capacity.md) à utiliser avec vos applications.
+Quand vous êtes prêt à passer en mode de production, vous devez affecter une capacité à votre espace de travail. [Créez une capacité de Power BI Embedded](azure-pbie-create-capacity.md) dans Microsoft Azure, que vous utiliserez avec vos applications.
 
 Pour obtenir des informations sur l’incorporation, consultez le [Guide pratique pour incorporer du contenu Power BI](embed-sample-for-customers.md).
 

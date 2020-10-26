@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/31/2020
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0555f6c46ef864ed89d3d364420a14a2ff18ab84
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: c4f9d83d612d8f8d442fc5267be66a2a5cf288a2
+ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136094"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116612"
 ---
 # <a name="monitor-usage-metrics-in-the-new-workspace-experience-preview"></a>Superviser les métriques d’utilisation dans la nouvelle expérience d’espace de travail (préversion)
 
@@ -92,7 +92,7 @@ Le rapport de métriques d’utilisation amélioré comporte les pages suivantes
 | Utilisation des rapports | Segment de plateforme | Manière dont les utilisateurs ont accédé au rapport, par l’intermédiaire du service Power BI (powerbi.com), de Power BI Embedded ou d’un appareil mobile. |
 | Utilisation des rapports | Utilisateurs avec vues de rapport | Liste des utilisateurs qui ont ouvert le rapport trié par nombre de vues. |
 | Utilisation des rapports | Pages | Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
-| Performance du rapport | Durée d’ouverture type | 50e centile du temps nécessaire à l’ouverture du rapport, soit la durée au-dessous de laquelle 50 % des actions d’ouverture de rapport sont effectuées. La page Performance du rapport décompose également la durée d’ouverture type du rapport par méthode de consommation et type de navigateur.   |
+| Performance du rapport | Durée d’ouverture type | 50e centile du temps nécessaire à l’ouverture du rapport, soit la durée au-dessous de laquelle 50 % des actions d’ouverture de rapport sont effectuées. La page Performance du rapport décompose également la durée d’ouverture type du rapport par méthode de consommation et type de navigateur. À l’heure actuelle, nous mesurons les performances pour la charge de rapport initiale et la première page affichée. La mesure commence lorsque le rapport est demandé et se termine lorsque le dernier visuel termine le rendu. Les interactions de rapport, telles que le découpage, le filtrage ou la modification des pages, ne sont pas incluses dans les mesures de performances.  |
 | Performance du rapport | Tendance de la durée d’ouverture | La tendance de la durée d’ouverture reflète les changements de performance de l’ouverture du rapport dans le temps. Elle compare les durées d’ouverture du rapport sur la première moitié de la période sélectionnée avec celles de la seconde moitié. |
 | Performance du rapport | Segment de date | Vous pouvez modifier la période sur la page Performance du rapport, par exemple pour calculer les tendances hebdomadaires ou bihebdomadaires. En bas à gauche de la page Performance du rapport, vous pouvez déterminer la date la plus ancienne et la plus récente à laquelle les données d’utilisation sont disponibles pour le rapport sélectionné. |
 | Performance du rapport | Performance journalière | Performance pour 10 %, 50 % et 90 % des actions d’ouverture de rapport calculées pour chaque jour. |

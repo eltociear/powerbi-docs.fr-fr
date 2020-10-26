@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63acae99f0abd4fc91f4ae51b33786a3e01093ea
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c05cb79d0996ad1819f0145193760ab16a031ffb
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226020"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91526717"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Gérer votre espace de travail dans Power BI et Microsoft 365
 
@@ -42,7 +42,7 @@ Pour être administrateur ou membre d’un espace de travail, vous devez dispose
 
 1. Dans le service Power BI, sélectionnez la flèche située en regard d’**Espaces de travail**, puis **Plus d’options** (...) en regard du nom de votre espace de travail, puis **Modifier cet espace de travail**.
 
-   ![Modifier les espaces de travail dans Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
+   ![La capture d’écran montrant la page d’accueil de Power BI Espaces de travail sélectionné et Modifier cet espace de travail sélectionné dans le menu Plus d’options.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
    > Vous voyez l’option **Modifier cet espace de travail** seulement si vous êtes administrateur d’un espace de travail.
@@ -61,7 +61,7 @@ Vous pouvez également modifier les aspects d’un espace de travail directement
 
 1. Dans le service Power BI, sélectionnez la flèche en regard d’**Espaces de travail**, puis **Plus d’options**(...) en regard du nom de votre espace de travail, puis **Membres**.
 
-   ![Modifier les espaces de travail dans Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
+   ![La capture d’écran montrant la page d’accueil de Power BI Espaces de travail sélectionné et Membres sélectionné dans le menu Plus d’options.](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
    Cela a pour effet d’ouvrir la vue des groupes Outlook pour Microsoft 365 de votre espace de travail. Vous devrez peut-être vous connecter à votre compte d’entreprise.
 

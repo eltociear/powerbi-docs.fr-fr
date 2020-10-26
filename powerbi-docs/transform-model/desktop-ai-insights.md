@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7439eff964340d3eba20b5d67d2aec992394505f
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 48e8788ca81365e1f46dbe6d3c4804c10f3f308a
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860092"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525498"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Utiliser Insights IA dans Power BI Desktop
 
@@ -199,13 +199,13 @@ Ces instructions relatives à la génération du schéma en mettant à jour le s
 
 Vous pouvez appeler n’importe quel modèle Azure ML auquel vous avez le droit d’accéder directement à partir de l’éditeur Power Query. Pour accéder aux modèles Azure ML, sélectionnez **Azure Machine Learning** dans le ruban **Accueil** ou **Ajouter une colonne** dans l'éditeur Power Query.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Capture d’écran montrant le bouton Azure Machine Learning dans l’éditeur Power Query.](media/desktop-ai-insights/ai-insights-06.png)
 
 Tous les modèles Azure ML auxquels vous avez accès sont répertoriés ici en tant que fonctions de Power Query. De plus, les paramètres d’entrée pour le modèle Azure ML sont automatiquement mappées en tant que paramètres de la fonction Power Query correspondante.
 
 Pour appeler un modèle Azure ML, vous pouvez définir une des colonnes de l’entité sélectionnée en tant qu’entrée dans la liste déroulante. Vous pouvez également spécifier une valeur constante à utiliser comme entrée en basculant l’icône de la colonne à gauche de la boîte de dialogue d’entrée.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![Capture d’écran montrant les modèles Azure Machine Learning que vous pouvez sélectionner.](media/desktop-ai-insights/ai-insights-07.png)
 
 Sélectionnez **OK** pour afficher l’aperçu de la sortie du modèle Azure ML en tant que nouvelle colonne dans la table de l’entité. Vous voyez également l’appel de modèle comme étape appliquée pour la requête.
 

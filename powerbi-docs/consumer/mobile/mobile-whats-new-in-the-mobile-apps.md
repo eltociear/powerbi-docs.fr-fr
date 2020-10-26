@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/12/2020
 ms.author: painbar
-ms.openlocfilehash: c8daa87bca6fb5ed47899f804c0710f58b559ff1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
+ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860230"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92026045"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,20 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="october-2020"></a>Octobre 2020
+### <a name="automatic-page-refresh-is-now-supported-windows"></a>L’actualisation automatique des pages est maintenant prise en charge (Windows)
+
+Désormais, les pages de rapport configurées avec l’[actualisation automatique de la page](../../create-reports/desktop-automatic-page-refresh.md) sont automatiquement actualisées dans l’application Power BI pour les appareils Windows. Et cela ne signifie pas seulement dans la vue de rapport normale. Avec l’actualisation automatique de la page, vos [présentations et diaporamas](mobile-windows-10-app-presentation-mode.md#slideshows) sont également mis à jour en temps réel, ce qui vous permet de vous assurer que vous affichez toujours les données et informations commerciales les plus récentes.
+
+### <a name="support-for-notch-displays-ios"></a>Prise en charge des écrans notch (iOS)
+Nous avons ajouté la prise en charge des écrans notch sur iPhone et iPad, ce qui vous donne davantage d’espace sur l’écran pour vos rapports et tableaux de bord. 
+
+## <a name="september-2020"></a>Septembre 2020
+### <a name="power-bi-app-preview-for-hololens-2-is-out-in-the-stores"></a>L’application Power BI (préversion) pour HoloLens 2 est disponible en magasin !
+
+L’application Power BI pour HoloLens 2 vous offre une expérience entièrement immersive. À l’aide du système de mouvements de main de HoloLens 2, vous pouvez récupérer vos rapports et tableaux de bord favoris à partir de la ceinture à outils, les redimensionner et les placer dans l’espace là où vous en avez besoin, et même parcourir les pages du rapport. Les rapports et tableaux de bord sont mis à jour lorsque vous utilisez l’application. Ainsi, si des données sont modifiées, ces modifications sont immédiatement visibles. Pour en savoir plus, consultez notre [documentation](mobile-hololens2-app.md) et notre [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/) !
+
 
 ## <a name="august-2020"></a>Août 2020
 ### <a name="weve-improved-how-you-navigate-to-your-content-ios-and-android"></a>Nous avons amélioré la façon dont vous accédez à votre contenu (iOS et Android)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 9a5ed3d2a4798332de2394e1ad5be6fdbdb6eeae
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: fba37d9f73ea0f61d8a43dc46cd13a5835d4d2a9
+ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803239"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91525797"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Préparer la migration vers Power BI
 
@@ -73,7 +73,7 @@ Notez que l’[étape 2](powerbi-migration-planning.md) fait référence à la p
 
 Voici des éléments critiques à définir dès le départ dans une implémentation Power BI :
 
-- Les décisions relatives aux [paramètres d’administration du locataire Power BI](admin-tenant-settings.md), qui doivent être documentées.
+- Les décisions relatives aux [paramètres du locataire Power BI](admin-tenant-settings.md), qui doivent être documentées.
 - Les décisions liées à la [gestion des espaces de travail](../collaborate-share/service-new-workspaces.md), qui doivent être documentées.
 - Les considérations et les préférences ayant trait aux données et aux [méthodes de distribution du contenu](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), comme les applications, les espaces de travail, le partage, les abonnements et l’incorporation de contenu.
 - Les préférences relatives aux [modes de jeu de données](../connect-data/service-dataset-modes-understand.md), comme l’utilisation du mode Import, du mode DirectQuery ou d’une combinaison de ces deux modes dans un [modèle Composite](composite-model-guidance.md).
@@ -96,7 +96,7 @@ Votre [architecture de solution décisionnelle](center-of-excellence-business-in
 - Configurer le locataire Power BI et l’intégrer à Azure Active Directory.
 - Définir les [administrateurs Power BI](../admin/service-admin-role.md).
 - Obtenir et attribuer les [licences utilisateur](../admin/service-admin-licensing-organization.md) initiales.
-- Configurer et vérifier les [paramètres d’administration du locataire Power BI](admin-tenant-settings.md).
+- Configurer et vérifier les [paramètres du locataire Power BI](admin-tenant-settings.md).
 - Configurer les [rôles d’espace de travail](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) et attribuer l’accès aux utilisateurs et groupes de sécurité Azure Active Directory.
 - Configurer un cluster de [passerelle de données](../connect-data/service-gateway-deployment-guidance.md) initial, avec un plan à mettre à jour régulièrement.
 - Obtenir une [licence de capacité Premium](../admin/service-admin-premium-purchase.md) (s’il y a lieu).

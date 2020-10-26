@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4202d2c7e4c87f8085a04af9922cf7cc6c55fbfd
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 41ddc6e0c9a4f4f2c9b5687194e043bb1ef80bec
+ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860184"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928260"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Authentification unique dans l’application Power BI Mobile Windows
 
@@ -21,7 +21,7 @@ Découvrez l’authentification unique dans l’application Power BI Mobile Wind
 
 Parce que l’application Power BI Windows est intégrée à Azure Active Directory, vous pouvez utiliser votre compte professionnel principal pour vous connecter non seulement à vos appareils joints à un domaine, mais aussi au service Power BI. Si vous consultez Power BI sur un téléphone Windows, vérifiez que le compte que vous utilisez pour Power BI est configuré comme compte professionnel ou scolaire dans les paramètres de l’appareil.  
 
-L’authentification unique est activée uniquement pour les appareils Windows gérés par Windows Azure Active Directory.
+L’authentification unique est activée uniquement pour les appareils Windows gérés par Azure Active Directory.
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)

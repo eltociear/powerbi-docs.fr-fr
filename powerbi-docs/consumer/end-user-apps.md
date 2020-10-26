@@ -6,16 +6,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/13/2020
+ms.date: 10/09/2020
 ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 LocalizationGroup: Share your work
-ms.openlocfilehash: cbf4c242ef1bc3fe304e162a49d2d971677f463d
-ms.sourcegitcommit: 642b0c04d3ff3aa4d5422ca5054a5a158fb01b22
+ms.openlocfilehash: 15345c8ca7249c3a6bf4018a322a8ce3d78b9de3
+ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512905"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91982088"
 ---
 # <a name="apps-in-power-bi"></a>Applications dans Power BI
 
@@ -35,7 +35,7 @@ L’affichage et l’ouverture d’une application nécessitent certaines autori
 ## <a name="advantages-of-apps"></a>Avantages des applications
 Les applications sont un moyen facile pour les *concepteurs* de partager différents types de contenu en même temps. Les *concepteurs* d’applications créent les tableaux de bord et les rapports, et les regroupent dans une application. Les *concepteurs* partagent ou publient ensuite l’application à un emplacement où vous, en tant qu’*utilisateur des activités*, pouvez y accéder. Étant donné que les rapports et les tableaux de bord associés sont regroupés, il est plus facile de les trouver et de les installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous ne devez plus mémoriser les noms d’un grand nombre de tableaux de bord ou de rapports différents, car ils sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
 
-Chaque fois que l’auteur de l’application publie des mises à jour, vous voyez automatiquement les modifications. L’auteur contrôle également la fréquence à laquelle l’actualisation des données est planifiée. Vous n’avez pas besoin de vous soucier de la mise à jour. 
+Avec les applications, chaque fois que l’auteur de l’application publie des mises à jour, vous recevez une notification ou vous voyez automatiquement les modifications. L’auteur contrôle également la fréquence à laquelle l’actualisation des données est planifiée. Vous n’avez pas besoin de vous soucier de la mise à jour. 
 
 <!-- add conceptual art -->
 ## <a name="get-a-new-app"></a>Obtenir une nouvelle application
@@ -44,7 +44,7 @@ Il existe plusieurs façons d’obtenir une nouvelle application. Vous pouvez re
 ### <a name="find-and-install-apps-from-the-power-bi-apps-marketplace"></a>Trouver et installer des applications sur la Place de marché des applications Power BI
 L’une des façons de trouver des applications consiste à sélectionner **Obtenir l’application** à partir de l’écran **Applications** Power BI. 
 
-![Capture de l’écran Applications montrant l’icône Obtenir l’application](./media/end-user-apps/power-bi-get-apps-icon.png)
+![Capture de l’écran Applications montrant l’icône Obtenir l’application](./media/end-user-apps/power-bi-get-apps-button.png)
 
 Parcourez la liste des applications de la Place de marché des applications Power BI jusqu’à ce que vous en trouviez une à installer. Vous avez le choix entre les **applications d’organisation**, uniquement disponibles pour les personnes de votre entreprise, ou les **applications modèles**, publiées par Microsoft et la communauté et que tout utilisateur Power BI peut installer. 
 
@@ -59,7 +59,7 @@ Il existe plusieurs autres façons d’obtenir des applications. Quelques-unes s
 
 Vos applications sont organisées dans la liste de contenu **Applications**. Sélectionnez simplement **Applications** pour afficher vos applications. Pointez sur une application pour voir la date de la dernière mise à jour et le propriétaire. 
 
-![Applications dans Power BI](./media/end-user-apps/power-bi-apps-red.png)
+![Applications dans Power BI](./media/end-user-apps/power-bi-apps.png)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

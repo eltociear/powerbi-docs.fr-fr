@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 6ad986308fb82f8191829d29654bb96b55d0fbd0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 091bdeb4eeb4c979ccf0e79476eb081895fae2e1
+ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83272692"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92049404"
 ---
 # <a name="use-the-supportsmultivisualselection-feature"></a>Utiliser la fonctionnalité supportsMultiVisualSelection
 
@@ -45,4 +45,4 @@ Pour utiliser la fonctionnalité `supportsMultiVisualSelection`, ajoutez le code
 
 Pour en savoir plus sur les concepts de Power BI, consultez [Visuels dans Power BI](power-bi-visuals-concept.md).
 
-Pour essayer le développement Power BI, consultez [Développement d’un visuel Power BI](custom-visual-develop-tutorial.md).
+Pour essayer le développement Power BI, consultez [Développement d’une carte ronde Power BI](develop-circle-card.md).

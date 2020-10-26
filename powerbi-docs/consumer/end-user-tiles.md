@@ -1,20 +1,20 @@
 ---
-title: Vignettes de tableau de bord dans Power BI pour les consommateurs
-description: Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI pour les consommateurs. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS).
+title: Vignettes de tableau de bord dans Power BI pour les utilisateurs professionnels
+description: Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI pour les utilisateurs professionnels. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS).
 author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 10/06/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6d35d19a1d47adc6a918f01a71c2009d71692fbd
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: ab8cfefab74d3120451b56c3ea30518e538ad543
+ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633903"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830503"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 
@@ -22,7 +22,7 @@ ms.locfileid: "91633903"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Une vignette est une capture instantanée de vos données, épinglée au tableau de bord par un *concepteur*. Les *concepteurs* peuvent créer des vignettes à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Questions et réponses, d’Excel et de SSRS (SQL Server Reporting Services), et plus encore.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
+Une vignette est une capture instantanée de vos données, épinglée à un tableau de bord par un *concepteur*. Les *concepteurs* peuvent créer des vignettes à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Questions et réponses, d’Excel et de SSRS (SQL Server Reporting Services), et plus encore.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
 
 ![tableau de bord Power BI](./media/end-user-tiles/power-bi-dash.png)
 
@@ -36,29 +36,22 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
 
 1. Placez le curseur sur la vignette pour afficher les points de suspension.
    
-    ![points de suspension de la vignette](./media/end-user-tiles/ellipses_new.png)
-2. Sélectionnez les points de suspension pour ouvrir le menu des actions de la vignette. Les options disponibles varient en fonction du type de visuel et de la méthode utilisée pour créer la vignette. Voici quelques exemples de ce que vous pouvez voir.
+    ![points de suspension de la vignette](./media/end-user-tiles/power-bi-ellipsis.png)
+2. Sélectionnez les points de suspension pour ouvrir le menu des actions de la vignette. Les options disponibles varient en fonction de vos autorisations, du type de visuel et de la méthode utilisée pour créer la vignette. Par exemple, les éléments de menu disponibles pour les vignettes épinglées à partir de Q&A un sont différentes de celles épinglées à partir d’un rapport. Voici un menu d’actions pour une vignette créée à l’aide de Q&A.
 
-    - vignette créée à l’aide de Questions et réponses
-   
-        ![Capture d’écran montrant le menu avec six options.](./media/end-user-tiles/power-bi-options-1.png)
 
-    - vignette créée à partir d’un classeur
    
-        ![Capture d’écran montrant le menu avec trois options.](./media/end-user-tiles/power-bi-options-2.png)
+    ![Capture d’écran montrant le menu avec neuf options.](./media/end-user-tiles/power-bi-qna-menu.png)
 
-    - vignette créée à partir d’un rapport
    
-        ![Capture d’écran montrant le menu avec cinq options.](./media/end-user-tiles/power-bi-options-3.png)
+    Voici quelques-unes des actions disponibles à partir de ces menus :
    
-    Vous pouvez ici :
-   
-   * [Ouvrir le rapport utilisé pour créer cette vignette ](end-user-reports.md) ![icône de rapport](./media/end-user-tiles/chart-icon.jpg)  
+   * [Ouvrir le rapport utilisé pour créer la vignette ](end-user-reports.md) ![icône de rapport](./media/end-user-tiles/chart-icon.jpg)  
    
    * [Ouvrir la question de Questions et réponses qui a été utilisée pour créer la vignette ](end-user-reports.md) ![icône Questions et réponses](./media/end-user-tiles/qna-icon.png)  
    
 
-   * [Ouvrir le classeur utilisé pour créer cette vignette ](end-user-reports.md) ![icône de classeur](./media/end-user-tiles/power-bi-open-worksheet.png)  
+   * [Ouvrir le classeur utilisé pour créer la vignette ](end-user-reports.md) ![icône de classeur](./media/end-user-tiles/power-bi-open-worksheet.png)  
    * [Afficher la vignette en mode Focus](end-user-focus.md) ![icône de focus](./media/end-user-tiles/fullscreen-icon.jpg)  
    * [Voir les insights ](end-user-insights.md) ![icône insights](./media/end-user-tiles/power-bi-insights.png)
    * [Ajouter un commentaire et démarrer une discussion](end-user-comment.md) ![icône de commentaire](./media/end-user-tiles/comment-icons.png)
@@ -72,16 +65,16 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
 Lorsque vous sélectionnez une vignette, ce qui se passe ensuite dépend de la façon dont la vignette a été créée et de la présence ou non d’un [lien personnalisé dessus](../create-reports/service-dashboard-edit-tile.md). Si elle comporte un lien personnalisé, la sélection de la vignette vous fait accéder à ce lien. Dans le cas contraire, sélectionner la vignette ouvre le rapport, le classeur Excel en ligne, le rapport SSRS en local, ou la question Q&R qui a été utilisée pour créer la vignette.
 
 > [!NOTE]
-> La seule exception concerne les vignettes de vidéo créées directement sur le tableau de bord avec l’option **Ajouter une vignette**. En sélectionnant une vignette de vidéo (créée de cette façon), la vidéo est lue directement dans le tableau de bord.   
+> La seule exception concerne les vignettes vidéo ajoutées aux tableaux de bord par des *concepteurs*. En sélectionnant une vignette de vidéo (créée de cette façon), la vidéo est lue directement dans le tableau de bord.   
 > 
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-* Si le rapport utilisé pour créer la visualisation n'a pas été enregistré, sélectionner la vignette ne produit alors aucune action.
-* Si la vignette a été créée à partir d'un classeur Excel en ligne et que vous ne disposez pas au moins des autorisations de lecture nécessaires pour ce classeur, vous ne pourrez pas ouvrir le classeur Excel en ligne en sélectionnant la vignette.
+* Si rien ne se produit lorsque vous sélectionnez (cliquez sur) une vignette ou si vous recevez un message d’erreur, voici quelques raisons possibles :
+  - Le rapport qui a été utilisé pour créer la visualisation n’a pas été enregistré ou a été supprimé.
+  - La vignette a été créée à partir d’un classeur dans Excel Online, et vous n’avez pas au moins des autorisations en lecture sur ce classeur.
+  - Si la vignette a été créée à partir de SSRS et que vous n’avez pas l’autorisation d’accéder au rapport SSRS ou si vous n’avez pas accès au réseau sur lequel se trouve le serveur SSRS.
 * Pour les vignettes créées directement sur le tableau de bord avec l’option **Ajouter une vignette**, si un lien hypertexte personnalisé a été défini, vous pouvez ouvrir cette URL en sélectionnant le titre, le sous-titre et/ou la vignette.  Sinon, par défaut, la sélection d’une de ces vignettes créées directement sur le tableau de bord pour une image, du code web ou une zone de texte ne produit aucune action.
-* Si vous n’avez pas l’autorisation d’accéder au rapport dans SSRS, la sélection d’une vignette créée à partir de SSRS générera une page indiquant que vous n’avez pas accès (rsAccessDenied).
-* Si vous n’avez pas accès au réseau où se trouve le serveur SSRS, la sélection d’une vignette créée à partir de SSRS générera une page indiquant que la localisation du serveur est impossible (HTTP 404). Votre appareil doit bénéficier de l’accès réseau au serveur de rapports pour afficher le rapport.
 * Si la visualisation d’origine utilisée pour créer la vignette change, la vignette ne change pas.  Par exemple, si le *concepteur* a épinglé un graphique en courbes à partir d’un rapport, puis transformé ce graphique en graphique à barres, la vignette du tableau de bord continue à afficher un graphique en courbes. Les données s’actualisent, mais pas le type de visualisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
