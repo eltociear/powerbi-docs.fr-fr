@@ -42,7 +42,7 @@
           href: power-bi-data-sources.md
         - name: Conditions préalables de source de données Power BI
           href: desktop-data-source-prerequisites.md
-        - name: Utilisation de métadonnées de jeu de données avancées dans Power BI Desktop (préversion)
+        - name: Utilisation de métadonnées de jeu de données avancées dans Power BI Desktop
           href: desktop-enhanced-dataset-metadata.md
         - name: Utiliser des modèles multidimensionnels dans Power BI
           href: desktop-default-member-multidimensional-models.md
@@ -184,12 +184,6 @@
               href: service-datasets-copy-reports.md
             - name: Contrôler l’utilisation de jeux de données
               href: service-datasets-admin-across-workspaces.md
-        - name: Approuver des jeux de données
-          items:
-            - name: Promouvoir les jeux de données
-              href: service-datasets-promote.md
-            - name: Certifier des jeux de données
-              href: service-datasets-certify.md
         - name: Obtenez des données de bases de données
           items:
             - name: "Azure et Power\_BI"
