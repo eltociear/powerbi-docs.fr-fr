@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fba37d9f73ea0f61d8a43dc46cd13a5835d4d2a9
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525797"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680966"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Préparer la migration vers Power BI
 
@@ -79,7 +79,7 @@ Voici des éléments critiques à définir dès le départ dans une implémentat
 - Les préférences relatives aux [modes de jeu de données](../connect-data/service-dataset-modes-understand.md), comme l’utilisation du mode Import, du mode DirectQuery ou d’une combinaison de ces deux modes dans un [modèle Composite](composite-model-guidance.md).
 - La [sécurisation des données et des accès](../admin/service-admin-power-bi-security.md).
 - Le recours aux [jeux de données partagés](../connect-data/service-datasets-share.md) pour la réutilisation des données.
-- L’application d’une [certification des données](../connect-data/service-datasets-certify.md) pour promouvoir l’utilisation de données faisant autorité et jugées fiables.
+- L’application d’une [certification des données](../collaborate-share/service-endorsement-overview.md) pour promouvoir l’utilisation de données faisant autorité et jugées fiables.
 - L’utilisation de différents [types de rapports](../create-reports/index.yml), parmi lesquels les rapports Power BI, les rapports Excel ou les rapports paginés selon les cas d’usage ou les divisions.
 - Les approches de gestion des changements pour les artefacts BI centralisés et les artefacts BI gérés par l’entreprise.
 - Les plans de formation destinés aux consommateurs, aux modélisateurs de données, aux auteurs de rapports et aux administrateurs.
@@ -123,7 +123,7 @@ La première tâche consiste à savoir ce que l’on entend par « réussir »
 La préparation d’un inventaire des rapports existants dans la plateforme décisionnelle héritée est une étape essentielle pour savoir précisément ce qui existe déjà. La finalité de cette étape est d’obtenir des informations permettant d’évaluer le niveau d’effort associé à la migration. La préparation d’un inventaire peut inclure les activités suivantes :
 
 1. **Inventaire des rapports :** dressez une liste des rapports et des tableaux de bord susceptibles d’être migrés.
-2. **Inventaire des sources de données :** dressez une liste de toutes les sources de données auxquelles les rapports existants accèdent. Cet inventaire doit inclure aussi bien les sources de données générales de l’entreprise que les sources de données spécifiques des services et des utilisateurs. Ce processus peut découvrir des sources de données qui ne sont pas connues du service informatique (ce que l’on désigne souvent sous le terme de _Shadow IT_).
+2. **Inventaire des sources de données :** dressez une liste de toutes les sources de données auxquelles les rapports existants accèdent. Cet inventaire doit inclure aussi bien les sources de données générales de l’entreprise que les sources de données spécifiques des services et des utilisateurs. Ce processus peut découvrir des sources de données qui ne sont pas connues du service informatique (ce que l’on désigne souvent sous le terme de _Shadow IT_ ).
 3. **Journal d’audit :** récupérez les données du journal d’audit de la plateforme décisionnelle héritée pour comprendre les modèles d’usage et établir plus facilement les priorités. Les informations importantes à prendre du journal d’audit sont :
     - Le nombre moyen de fois où chaque rapport a été généré par semaine/mois/trimestre.
     - Le nombre moyen de consommateurs de chaque rapport par semaine/mois/trimestre.

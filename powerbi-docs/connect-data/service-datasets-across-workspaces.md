@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e943324106148bdbff1edba36650d494fdd9db8c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 23d520815c47c9ff9f1ec045ec67921141e8eb7a
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374266"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681152"
 ---
 # <a name="intro-to-datasets-across-workspaces"></a>Introduction aux jeux de données entre plusieurs espaces de travail
 
@@ -47,7 +47,7 @@ Si vous êtes un créateur de jeux de données, l’autorisation de création vo
 
 ## <a name="promotion-and-certification"></a>Promotion et certification
 
-Si vous créez des jeux de données dont les autres peuvent bénéficier, vous pouvez faciliter leur découverte en faisant leur [promotion](service-datasets-promote.md). Vous pouvez également demander aux experts de votre organisation de [certifier votre jeu de données](service-datasets-certify.md).
+Si vous créez des jeux de données dont les autres peuvent bénéficier, vous pouvez faciliter leur découverte en faisant leur [promotion](../collaborate-share/service-endorse-content.md#promote-content). Vous pouvez également demander aux experts de votre organisation de [certifier votre jeu de données](../collaborate-share/service-endorse-content.md#request-content-certification).
 
 ## <a name="licensing"></a>Licences
 
@@ -69,7 +69,8 @@ Les expériences et fonctionnalités spécifiques basées sur les capacités des
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Promouvoir les jeux de données](service-datasets-promote.md)
-- [Certifier des jeux de données](service-datasets-certify.md)
+- [Promouvoir les jeux de données](../collaborate-share/service-endorse-content.md#promote-content)
+- [Certifier des jeux de données](../collaborate-share/service-endorse-content.md#certify-content)
+- [Demander la certification de jeux de données](../collaborate-share/service-endorse-content.md#request-content-certification)
 - [Régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

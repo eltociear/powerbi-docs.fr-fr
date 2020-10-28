@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 23d207bb4f070c3c3a35f1e74dd281f012528c82
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965012"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681029"
 ---
 # <a name="deploy-to-power-bi"></a>Déployer sur Power BI
 
-Cet article décrit l’**étape 5**, qui concerne le déploiement, le support et la surveillance du contenu lors d’une migration vers Power BI.
+Cet article décrit l’ **étape 5** , qui concerne le déploiement, le support et la surveillance du contenu lors d’une migration vers Power BI.
 
 :::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Image illustrant les étapes d’une migration vers Power BI. Cet article se concentre sur l’étape 5.":::
 
@@ -93,7 +93,7 @@ Un déploiement dans l’espace de travail de production inclut généralement l
 - **Application :** si les applications font partie de votre stratégie de distribution de contenu, publiez une [application](../consumer/end-user-apps.md) avec le contenu de l’espace de travail de production.
 - **Sécurité :** mettez à jour et vérifiez les [rôles d’espace de travail](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) en fonction de votre stratégie de collaboration et de distribution de contenu.
 - **Paramètres des jeux de données :** mettez à jour et vérifiez les paramètres de chaque jeu de données, notamment :
-  - [Approbation](../connect-data/service-datasets-certify.md) (par exemple, certifié ou promu)
+  - [Approbation](../collaborate-share/service-endorse-content.md) (par exemple, certifié ou promu)
   - Informations d’identification de la connexion à la passerelle ou de la source de données
   - Actualisation planifiée
   - [Questions proposées dans Questions et réponses](../create-reports/service-q-and-a-create-featured-questions.md)
