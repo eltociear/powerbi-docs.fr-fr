@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: df6b3bd29089f37b11064216568523f442169794
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: cc4387c3c1c0f83347823bbc6b95beb437b235e9
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91528387"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916886"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -25,7 +25,7 @@ ms.locfileid: "91528387"
 **Réviseurs techniques :** Adam Wilson, Sheng Liu, Qian Liang, Sergei Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimrod Shalit, Elisabeth Olson
 
 > [!NOTE]
-> Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis en sélectionnant **enregistrer en tant que PDF**.
+> Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis en sélectionnant **enregistrer en tant que PDF** .
 
 ## <a name="introduction"></a>Introduction
 
@@ -288,7 +288,7 @@ L’intégration de Power BI à Azure AD B2B offre à contoso un moyen simple et
     Maintenant que l’équipe BI de Contoso a créé le portail BI et invité les utilisateurs invités, ils peuvent distribuer leur portail à leurs utilisateurs finaux en donnant aux utilisateurs invités un accès à l’application et en la publiant. Power BI complète automatiquement les noms des utilisateurs invités qui ont été précédemment ajoutés au locataire contoso. Des invitations ad hoc à d’autres utilisateurs invités peuvent également être ajoutées à ce stade.
 
     > [!NOTE]
-    > Si vous utilisez des groupes de sécurité pour gérer l’accès à l’application pour les utilisateurs externes, utilisez l’approche des invitations planifiées et partagez le lien de l’application directement avec chaque utilisateur externe qui doit y accéder. Dans le cas contraire, l’utilisateur externe risque de ne pas pouvoir installer ou afficher le contenu à partir de l’application. _
+    > Si vous utilisez des groupes de sécurité pour gérer l’accès à l’application pour les utilisateurs externes, utilisez l’approche des invitations planifiées et partagez le lien de l’application directement avec chaque utilisateur externe qui doit y accéder. Dans le cas contraire, l’utilisateur externe risque de ne pas pouvoir installer ou afficher le contenu à partir de l’app._
 
     Les utilisateurs invités reçoivent un message électronique contenant un lien vers l’application.
 
@@ -344,7 +344,7 @@ Avec cette approche, contoso achète Power BI Premium capacité et attribue son 
 
 Les utilisateurs externes sont également soumis aux expériences de consommation offertes uniquement par les utilisateurs « libres » dans Power BI lors de la consommation de contenu dans Power BI Premium.
 
-Contoso peut également tirer parti d’autres fonctionnalités Power BI Premium pour ses applications, telles que des taux de rafraîchissement accrus, une capacité dédiée et des tailles de modèle volumineuses.
+Contoso peut également tirer parti d’autres fonctionnalités de Power BI Premium pour ses applications, telles que les taux d’actualisation, la capacité et les tailles de modèle volumineux.
 
 ![Fonctionnalités supplémentaires](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_24.png)
 
@@ -457,7 +457,7 @@ Comme vous pouvez le voir, le RLS dynamique fonctionne avec les utilisateurs int
 Power BI offre à contoso la possibilité de tirer parti des sources de données locales comme [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) ou [SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/) grâce à la [passerelle de données locale](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/). Il est même possible de se connecter à ces sources de données avec les mêmes informations d’identification que celles utilisées avec Power BI.
 
 > [!NOTE]
-> Lors de l’installation d’une passerelle pour se connecter à votre locataire Power BI, vous devez utiliser un utilisateur créé dans votre locataire. Les utilisateurs externes ne peuvent pas installer une passerelle et la connecter à votre locataire. _
+> Lors de l’installation d’une passerelle pour se connecter à votre locataire Power BI, vous devez utiliser un utilisateur créé dans votre locataire. Les utilisateurs externes ne peuvent pas installer une passerelle et la connecter à votre tenant._
 
 Pour les utilisateurs externes, cela peut être plus compliqué, car les utilisateurs externes ne sont généralement pas connus de l’annuaire Active Directory local. Power BI offre une solution de contournement en permettant aux administrateurs contoso de mapper les noms d’utilisateur externes aux noms d’utilisateur internes, comme décrit dans [gérer votre source de données-Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/). Par exemple, [lucy@supplier1.com](mailto:lucy@supplier1.com) peut être mappé à [Lucy \_ supplier1 \_ com # EXT@contoso.com ](mailto:lucy_supplier1_com).
 
@@ -490,8 +490,8 @@ Les utilisateurs invités bénéficient de l’expérience par défaut en lectur
 
 Pour permettre à ces utilisateurs de se connecter à Power BI, fournissez-leur l’URL du locataire. Pour trouver l’URL de locataire, effectuez les étapes suivantes.
 
-1. Dans le service Power BI, dans le menu supérieur, sélectionnez aide ( **?** ), puis  **à propos de Power bi**.
-2. Recherchez la valeur en regard de  **URL de locataire**. Il s’agit de l’URL de locataire que vous pouvez partager avec vos utilisateurs invités.
+1. Dans le service Power BI, dans le menu supérieur, sélectionnez aide ( **?** ), puis  **à propos de Power bi** .
+2. Recherchez la valeur en regard de  **URL de locataire** . Il s’agit de l’URL de locataire que vous pouvez partager avec vos utilisateurs invités.
 
     ![URL de locataire](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
