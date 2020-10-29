@@ -16,6 +16,8 @@
           href: service-usage-metrics.md
         - name: Surveiller l’utilisation dans de nouveaux espaces de travail
           href: service-modern-usage-metrics.md
+        - name: Approbation du contenu
+          href: service-endorsement-overview.md
     - name: Guides pratiques
       expanded: true
       items:
@@ -73,6 +75,8 @@
               href: service-url-filters.md
             - name: Inscrire les autres et vous-même
               href: service-report-subscribe.md
+            - name: Approuver votre contenu
+              href: service-endorse-content.md
             - name: Présenter du contenu dans la page d’accueil
               href: service-featured-content.md
             - name: Incorporer le rapport à SharePoint Online

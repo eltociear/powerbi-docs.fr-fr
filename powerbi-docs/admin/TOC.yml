@@ -94,7 +94,7 @@
               href: service-security-data-protection-metrics-report.md
         - name: Sécurité au niveau des lignes
           href: service-admin-rls.md
-        - name: Configurer la certification de jeux de données et de dataflows
+        - name: Activer la certification du contenu
           href: service-admin-setup-certification.md
         - name: Configurer des applications mobiles avec Intune
           href: service-admin-mobile-intune.md
