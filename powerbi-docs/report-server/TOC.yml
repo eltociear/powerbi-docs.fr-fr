@@ -79,6 +79,8 @@
               href: access-dataset-odata.md
             - name: Changer les chaînes de connexion de source de données avec PowerShell
               href: connect-data-source-apis.md
+            - name: "Changer les chaînes de connexion de source de données avec PowerShell, pré-octobre\_2020"
+              href: connect-data-source-apis-pre-oct-2020.md
             - name: Configurer une actualisation planifiée
               href: configure-scheduled-refresh.md
             - name: Ajouter des commentaires à un rapport
