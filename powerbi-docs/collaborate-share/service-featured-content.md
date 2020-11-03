@@ -6,19 +6,21 @@ ms.reviewer: nikhilga
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 03/16/2020
+ms.date: 10/14/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3340225ccd4c6457e25013b6c347769d848b104c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: eef0ba24347bd46cc86325cac494937e3f95086a
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374933"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462446"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Proposer du contenu dans la page d’accueil Power BI de collègues
 
-Vous pouvez proposer des tableaux de bord, des rapports et des applications pour qu’ils s’affichent dans la section Proposé de la page d’accueil Power BI de vos collègues. La proposition de contenu est particulièrement utile pour l’intégration de nouveaux employés dans Power BI. Vous pouvez choisir le contenu qu’ils verront en premier. Vous pouvez ajouter des descriptions et de petites images miniatures pour aider les utilisateurs à trouver ce dont ils ont besoin. Le contenu doit se trouver dans un nouvel espace de travail.
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
+
+Vous pouvez proposer des tableaux de bord, des rapports et des applications pour qu’ils s’affichent dans la section Proposé de la page d’accueil Power BI de vos collègues. La proposition de contenu est particulièrement utile pour l’intégration de nouveaux employés dans Power BI. Vous choisissez le contenu qu’ils verront en premier. Ajoutez des descriptions et des images miniatures pour aider les utilisateurs à trouver ce dont ils ont besoin. Le contenu doit se trouver dans un nouvel espace de travail.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Contenu proposé Power BI dans la page d’accueil":::
 
@@ -30,7 +32,7 @@ Si vous êtes l’un des groupes sélectionnés dans votre organisation avec cet
 
 ## <a name="who-sees-featured-content"></a>Qui voit le contenu proposé ?
 
-Si vous proposez un tableau de bord ou un rapport à partir d’un espace de travail, les personnes qui disposent au moins d’un rôle de lecteur dans cet espace de travail verront ce contenu proposé. Si vous proposez un tableau de bord ou un rapport à partir d’une application, ou l’application elle-même, les personnes auxquelles vous distribuez l’application verront ce contenu proposé.
+Vous pouvez proposer un tableau de bord ou un rapport issu d’un espace de travail. Dans ce cas, les personnes qui disposent au moins d’un rôle de lecteur dans cet espace de travail le verront. Vous pouvez également proposer un tableau de bord ou rapport issu d’une application, ou de l’application elle-même. Dans ce cas, les personnes auxquelles vous distribuez l’application le verront proposé.
 
 ## <a name="feature-a-dashboard-or-report"></a>Proposer un tableau de bord ou un rapport
 
@@ -38,23 +40,23 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
 1. Dans la liste **Tableaux de bord** ou **Rapports** pour un espace de travail, sélectionnez l’icône **Paramètres**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Contenu proposé Power BI dans la page d’accueil":::
+    :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Icône Paramètres du rapport":::
 
-2. Dans le volet **Paramètres**, vérifiez ou modifiez le nom. Ajoutez une **description** et chargez un **instantané**, si vous le souhaitez. Ils sont utiles car ils aident vos utilisateurs à trouver votre contenu.
+2. Dans le volet **Paramètres** , vérifiez ou modifiez le nom. Ajoutez une **description** et chargez un **instantané** , si vous le souhaitez. Ils sont utiles car ils aident vos utilisateurs à trouver votre contenu.
 
 3. Sélectionnez **Proposé**.
 
-    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Contenu proposé Power BI dans la page d’accueil":::
+    :::image type="content" source="media/service-featured-content/power-bi-featured-content-settings.png" alt-text="Paramètres du contenu proposé":::
 
 4. Sélectionnez **Enregistrer**.
 
-    Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’**accueil**.
+    Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’ **accueil**.
 
 ## <a name="feature-an-app"></a>Proposer une application
 
 - Pour proposer une application, ouvrez l’espace de travail correspondant à l’application, sélectionnez le menu **Options** ( **...** ) > **Proposer cette application sur l’écran d’accueil**.
 
-Désormais, toutes les personnes qui ont accès à cette application la voient également dans la section **Proposé** de l’écran d’**accueil**.
+Désormais, toutes les personnes qui ont accès à cette application la voient également dans la section **Proposé** de l’écran d’ **accueil**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

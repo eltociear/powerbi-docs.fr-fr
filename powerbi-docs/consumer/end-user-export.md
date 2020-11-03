@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 08/28/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: a4b7b866d56852cb4e49cbe09150dcdb694b64c3
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 671bef8f00b79db87b11a059438d873a0641ef91
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286911"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462484"
 ---
 # <a name="export-data-from-a-visual"></a>Exporter des données à partir d’un élément visuel
 
@@ -23,25 +23,25 @@ ms.locfileid: "89286911"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Si vous souhaitez afficher les données qui sont utilisées pour créer un élément visuel, vous pouvez [le faire dans Power BI](end-user-show-data.md) ou exporter ces données vers Excel. L’option permettant d’exporter les données requiert un certain type de licence et les autorisations de modification sur le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI ou votre support technique. 
+Pour voir les données utilisées pour créer un visuel, [vous pouvez afficher ces données dans Power BI](end-user-show-data.md) ou les exporter vers Excel. L’option permettant d’exporter les données requiert un certain type de licence et les autorisations de modification sur le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI ou votre support technique. 
 
-L’exportation de données requiert une licence Power BI Pro, ou que le tableau de bord ou le rapport soit partagé avec vous à l’aide de la capacité Premium. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md).
+L’exportation de données requiert une licence Power BI Pro, ou que le tableau de bord ou le rapport soit partagé avec vous à l’aide de la capacité Premium. Pour plus d’informations, consultez [Quelle est ma licence ?](end-user-license.md). L’auteur du rapport a peut-être désactivé l’exportation de données pour un rapport. Si vous ne pouvez pas exporter de données, contactez l’auteur du rapport.
 
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>À partir d’un élément visuel dans un tableau de bord Power BI
 
-1. Démarrer un tableau de bord Power BI. Ici, nous utilisons le tableau de bord de l’application ***Exemple Marketing et ventes***. Vous pouvez [télécharger cette application sur AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
+1. Démarrer un tableau de bord Power BI. Ici, nous utilisons le tableau de bord de l’application * **Exemple Marketing et ventes** _. Vous pouvez [télécharger cette application sur AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
 ).
 
     ![Tableau de bord de l’application](media/end-user-export/power-bi-dashboards.png)
 
-2. Placez le curseur sur un élément visuel pour afficher **Plus d’options** (...), et cliquez pour afficher le menu Action.
+2. Placez le curseur sur un visuel pour afficher _ *Autres options* * (...) et cliquez pour afficher le menu Action.
 
     ![Le menu qui s’affiche lorsque vous sélectionnez les points de suspension](media/end-user-export/power-bi-option-menu.png)
 
 3. Sélectionnez **Exporter au format .csv**.
 
-4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
+4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou voir un lien vers le fichier exporté en bas du navigateur. 
 
     ![Navigateur Chrome avec lien du fichier exporté](media/end-user-export/power-bi-dashboards-export.png)
 
@@ -60,7 +60,7 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
     ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-tile.png)
 
-    Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes*, c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
+    Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes* , c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
 
 2. Sélectionnez le visuel dans le rapport. Remarquez le volet **Filtres** à droite. Des filtres sont appliqués à cet élément visuel. Pour en savoir plus sur les filtres, consultez [Utiliser les filtres dans un rapport](end-user-report-filter.md).
 
@@ -71,12 +71,12 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
     ![Exporter les données sélectionnées à partir de la liste déroulante](media/end-user-export/power-bi-export-reports.png)
 
-4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes*, les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
+4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes* , les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
 
-    **Données résumées** : sélectionnez cette option si vous voulez exporter les données pour ce que vous voyez actuellement dans le visuel.  Ce type d’exportation contient seulement les données qui ont été utilisées pour créer l’état actuel du visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées. Par exemple, pour cet élément visuel, votre exportation inclura uniquement les données pour 2014 et la région centrale, et uniquement les données pour quatre des fabricants : VanArsdel, Natura, Aliqui et Pirum. Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation est également agrégée. 
+    **Données résumées**  : sélectionnez cette option si vous voulez exporter les données pour ce que vous voyez actuellement dans le visuel.  Ce type d’exportation contient seulement les données qui ont été utilisées pour créer l’état actuel du visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées. Par exemple, pour cet élément visuel, votre exportation inclura uniquement les données pour 2014 et la région centrale, et uniquement les données pour quatre des fabricants : VanArsdel, Natura, Aliqui et Pirum. Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation est également agrégée. 
   
 
-    **Données sous-jacentes** : sélectionnez cette option si vous souhaitez exporter les données de ce que vous voyez dans l’élément visuel **plus** les données supplémentaires du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais qui ne sont pas utilisées dans l’élément visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées.  Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation supprime l’agrégation, essentiellement en mettant à plat les données. 
+    **Données sous-jacentes**  : sélectionnez cette option si vous souhaitez exporter les données de ce que vous voyez dans l’élément visuel **plus** les données supplémentaires du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais qui ne sont pas utilisées dans l’élément visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées.  Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation supprime l’agrégation, essentiellement en mettant à plat les données. 
 
     ![Menu dans lequel vous choisissez sous-jacent ou résumé](media/end-user-export/power-bi-export-underlying.png)
 

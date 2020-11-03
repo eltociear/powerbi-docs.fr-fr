@@ -1,58 +1,64 @@
 ---
-title: Créer un rapport à partir d’un jeu de données
-description: Créez un rapport Power BI à partir d’un jeu de données.
+title: 'Créer un rapport à partir d’un fichier Excel dans le service Power BI '
+description: Créez un rapport Power BI à partir d’un fichier Excel dans le service Power BI.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/25/2019
+ms.date: 10/14/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 74a0238d39d778641d1906271fd478463ee4a95a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d6a52fd72ab96541eee621d6be6cb50005f293e2
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218936"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462703"
 ---
-# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Créer un rapport du service Power BI en important un jeu de données
-Vous avez lu [apports dans Power BI](../consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous allons commencer par créer un rapport de base dans le service Power BI à partir d’un jeu de données Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
+# <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Créer un rapport à partir d’un fichier Excel dans le service Power BI
+Vous avez lu [apports dans Power BI](../consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous commençons par créer un rapport de base dans le service Power BI à partir d’un fichier Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
 
 ## <a name="prerequisites"></a>Conditions préalables
-- [S’inscrire au service Power BI](../fundamentals/service-self-service-signup-for-power-bi.md). Pour créer des rapports avec Power BI Desktop, consultez [Affichage du rapport Desktop](desktop-report-view.md). 
-- [Téléchargez l’exemple de jeu de données Excel Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
+- [S’inscrire au service Power BI](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- [Téléchargez l’exemple de fichier Excel Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
 
-## <a name="import-the-dataset"></a>Importer le jeu de données
-Cette méthode de création d’un rapport démarre avec un jeu de données et un canevas de rapport vide. Vous pouvez suivre l’exemple de jeu de données Excel Analyse de la vente au détail.
+## <a name="import-the-excel-file"></a>Importer le fichier Excel
+Cette méthode de création d’un rapport démarre avec un fichier et un canevas de rapport vide. Vous pouvez suivre l’exemple de fichier Excel Analyse de la vente au détail.
 
-1. Nous allons créer le rapport dans un espace de travail du service Power BI. Par conséquent, sélectionnez un espace de travail existant ou créez-en un.
+1. Dans le volet de navigation, sélectionnez **Mon espace de travail**.
    
-   ![liste des espaces de travail](media/service-report-create-new/power-bi-workspaces2.png)
+   :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Capture d’écran de la sélection de Mon espace de travail.":::
 2. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
-   ![Obtenir les données](media/service-report-create-new/power-bi-get-data3.png)
-3. Sélectionnez **Fichiers**, puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
+   ![Obtenir des données](media/service-report-create-new/power-bi-get-data3.png)
+3. Sélectionnez **Fichiers** , puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
    
     ![sélectionner Fichiers](media/service-report-create-new/power-bi-select-files.png)
 4. Dans cet exercice, sélectionnez **Importer**.
    
    ![sélectionner Importer](media/service-report-create-new/power-bi-import.png)
-5. Une fois le jeu de données importé, sélectionnez **Afficher le jeu de données**.
+5. Sélectionnez **Ouvrir**.
+
+   Une fois le fichier Excel importé, il est listé sous la forme d’un *jeu de données* dans la liste des espaces de travail.
+
+1. Sélectionnez **Autres options (...)** en regard du jeu de données, puis sélectionnez **Créer un rapport**.
    
-   ![sélectionner Afficher le jeu de données](media/service-report-create-new/power-bi-view-dataset.png)
-6. L’affichage d’un jeu de données a pour effet d’ouvrir l’éditeur de rapport.  Vous y voyez un canevas vide et des outils d’édition de rapports.
+   :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Capture d’écran de la sélection de Créer un rapport.":::
+6. L’éditeur de rapport s’ouvre. 
    
-   ![éditeur de rapport](media/service-report-create-new/power-bi-blank-report.png)
+   ![Capture d’écran de l’éditeur de rapport.](media/service-report-create-new/power-bi-blank-report.png)
 
 > [!TIP]
-> Si vous n’êtes pas familiarisé avec le canevas de modification de rapport ou si avez besoin de vous rafraîchir la mémoire, [suivez la visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md) avant de continuer. 
+> Sélectionnez l’icône de menu pour masquer le volet de navigation, afin d’avoir plus de place.
 > 
+> :::image type="content" source="../media/power-bi-hide-navigation-pane.png" alt-text="Capture d’écran de la sélection de l’icône de menu pour masquer le volet de navigation.":::
+
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Ajouter une jauge radiale au rapport
 À présent que notre jeu de données est importé, commençons à répondre à quelques questions.  Notre Directrice marketing veut savoir où nous en sommes par rapport aux objectifs de ventes de cette année. Une jauge est un [bon choix de visualisation](../visuals/power-bi-report-visualizations.md) pour l’affichage de ce type d’information.
 
-1. Dans le volet Champs, sélectionnez **Sales (Ventes)**  > **This Year Sales (Ventes de cette année)**  > **Value (Valeur)** .
+1. Dans le volet Champs, sélectionnez **Sales (Ventes)** > **This Year Sales (Ventes de cette année)** > **Value (Valeur)**.
    
     ![histogramme dans l’éditeur de rapport](media/service-report-create-new/power-bi-report-step1.png)
 2. Convertissez le visuel en jauge en sélectionnant le modèle Jauge ![icône de jauge](media/service-report-create-new/powerbi-gauge-icon.png) dans le volet **Visualisations**.
@@ -63,7 +69,7 @@ Cette méthode de création d’un rapport démarre avec un jeu de données et u
     ![visuel Jauge avec un objectif de Valeur cible](media/service-report-create-new/power-bi-report-step3.png)
 4. Le moment est opportun pour enregistrer votre rapport.
    
-   ![menu Fichier](media/service-report-create-new/powerbi-save.png)
+   ![Menu Fichier](media/service-report-create-new/powerbi-save.png)
 
 ## <a name="add-an-area-chart-and-slicer-to-the-report"></a>Ajouter un graphique en aires et un segment au rapport
 Notre Directrice marketing a des questions supplémentaires à nous poser. Elle souhaite savoir comment se comportent les ventes de cette année par rapport à l’année dernière. Elle souhaite voir les résultats par district.
@@ -91,5 +97,6 @@ Continuer d’explorer vos données et d’ajouter des visualisations. Lorsque v
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Découvrez comment [épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md).   
+* [Épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md)
+* [Modifier les paramètres de rapport dans le service Power BI](power-bi-report-settings.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

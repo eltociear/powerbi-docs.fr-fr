@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 62c463972d4811bac0c5400da96a88264273a873
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 464fdce94b41c3dc413088da6395520fea32c601
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600261"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462629"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -139,14 +139,12 @@ Pour utiliser les journaux d’audit, vérifiez que le paramètre [**Créer des 
 > [!NOTE]
 > Les paramètres de l’abonné qui contrôlent la disponibilité des fonctionnalités dans l’interface utilisateur Power BI peuvent aider à établir des stratégies de gouvernance, mais ils ne constituent pas une mesure de sécurité. Par exemple, le paramètre **Exporter les données** ne limite pas les autorisations d’un utilisateur Power BI sur un jeu de données. Les utilisateurs Power BI disposant d’un accès en lecture à un jeu de données ont l’autorisation d’interroger ce jeu de données et peuvent conserver les résultats sans utiliser la fonctionnalité **Exporter les données** dans l’interface utilisateur de Power BI.
 
-L’image suivante présente plusieurs paramètres de l’onglet **Paramètres du client**.
-
-![Paramètres du locataire](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
+Les sections suivantes décrivent les paramètres de l’onglet **Paramètres du client**.
 
 > [!NOTE]
 > Jusqu’à 15 minutes peuvent être nécessaires à la prise en compte de la modification d’un paramètre pour tous les utilisateurs de votre organisation.
 
-Les paramètres peuvent présenter un des trois états suivants :
+De nombreux paramètres peuvent présenter un des trois états suivants :
 
 * **Désactivé pour toute l’organisation** : Personne dans votre organisation ne peut utiliser cette fonctionnalité.
 
@@ -168,6 +166,12 @@ Les paramètres peuvent présenter un des trois états suivants :
 
 Les sections suivantes fournissent une vue d’ensemble des différents types de paramètres de locataire.
 
+## <a name="tenant-wide-new-look-settings"></a>Paramètres de la nouvelle apparence à l’échelle du locataire
+
+Quand l’option **Nouvelle apparence** est désactivée, les utilisateurs de cette organisation peuvent activer et désactiver la nouvelle apparence de Power BI. Quand vous activez l’option **Nouvelle apparence** , *tous* les utilisateurs de cette organisation voient les contrôles modernes de la nouvelle apparence de Power BI tout le temps. Ils ne peuvent plus désactiver la nouvelle apparence. L’option Nouvelle apparence est activée par défaut.
+
+:::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="Capture d’écran de l’option Désactiver la nouvelle apparence dans le portail d’administration.":::
+
 ## <a name="help-and-support-settings"></a>Paramètres d’aide et de support
 
 ### <a name="publish-get-help-information"></a>Publier des informations « Obtenir de l’aide »
@@ -180,7 +184,7 @@ Les administrateurs peuvent spécifier des URL internes pour remplacer la destin
 
 * **Communauté**. Pour transférer les utilisateurs vers un forum interne à partir du menu d’aide, plutôt que vers la [Communauté Power BI](https://community.powerbi.com/), définissez une URL personnalisée pour le **Forum de discussion**.
 
-* **Mises à niveau des licences**. Les utilisateurs disposant d’une licence Power BI (gratuite) peuvent avoir la possibilité de mettre à niveau leur compte vers Power BI Pro lors de l’utilisation du service. Si vous spécifiez une URL interne pour les **requêtes de licences**, vous redirigez les utilisateurs vers un flux interne de requêtes et d’achats et vous empêchez l’achat en libre-service. Si vous souhaitez empêcher les utilisateurs d’acheter des licences, mais que les utilisateurs peuvent démarrer une évaluation gratuite de Power BI Pro, consultez [Autoriser les utilisateurs à essayer Power BI Pro](#allow-users-to-try-power-bi-pro) pour séparer les expériences d’achat et de test.
+* **Mises à niveau des licences**. Les utilisateurs disposant d’une licence Power BI (gratuite) peuvent avoir la possibilité de mettre à niveau leur compte vers Power BI Pro lors de l’utilisation du service. Si vous spécifiez une URL interne pour les **requêtes de licences** , vous redirigez les utilisateurs vers un flux interne de requêtes et d’achats et vous empêchez l’achat en libre-service. Si vous souhaitez empêcher les utilisateurs d’acheter des licences, mais que les utilisateurs peuvent démarrer une évaluation gratuite de Power BI Pro, consultez [Autoriser les utilisateurs à essayer Power BI Pro](#allow-users-to-try-power-bi-pro) pour séparer les expériences d’achat et de test.
 
 * **Obtenir de l’aide**. Pour transférer les utilisateurs vers un forum interne à partir du menu d’aide, plutôt que vers le [Support Power BI](https://powerbi.microsoft.com/support/), définissez une URL personnalisée pour le **Support technique**.
 
@@ -208,7 +212,7 @@ Pour en savoir plus, consultez [Activer ou désactiver l’inscription et l’ac
 
 ## <a name="workspace-settings"></a>Paramètres de l’espace de travail
 
-Dans **Paramètres de l’abonné**, le portail Administrateur comporte deux sections pour le contrôle des espaces de travail :
+Dans **Paramètres de l’abonné** , le portail Administrateur comporte deux sections pour le contrôle des espaces de travail :
 
 - [Créer les nouvelles expériences d'espace de travail](#create-the-new-workspaces).
 - [Utiliser des jeux de données entre des espaces de travail](#use-datasets-across-workspaces).
@@ -237,7 +241,7 @@ Dans le portail d’administration, vous contrôlez également les utilisateurs 
 
 Les administrateurs peuvent contrôler les utilisateurs de l’organisation qui peuvent utiliser des jeux de données dans les espaces de travail. Quand ce paramètre est activé, les utilisateurs ont toujours besoin de l’autorisation de build requise pour un jeu de données spécifique.
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Utiliser des jeux de données entre des espaces de travail":::
 
 Pour plus d’informations, consultez [Initiation aux jeux de données sur plusieurs espaces de travail](../connect-data/service-datasets-across-workspaces.md).
 
@@ -358,7 +362,7 @@ Les utilisateurs de l'organisation peuvent créer des abonnements par courrier. 
 
 ### <a name="featured-content"></a>Contenu proposé
 
-Autorisez certains ou tous les auteurs de rapports de votre organisation à présenter leur contenu dans la section À la une de la page d’accueil Power BI. Les nouveaux utilisateurs verront le contenu proposé en haut de leur page d’accueil Power BI. Le contenu proposé descend dans la page d’accueil à mesure que les utilisateurs ajoutent des éléments **favoris**, **fréquents** et **récents**. 
+Autorisez certains ou tous les auteurs de rapports de votre organisation à présenter leur contenu dans la section À la une de la page d’accueil Power BI. Les nouveaux utilisateurs verront le contenu proposé en haut de leur page d’accueil Power BI. Le contenu proposé descend dans la page d’accueil à mesure que les utilisateurs ajoutent des éléments **favoris** , **fréquents** et **récents**. 
 
 Nous vous recommandons de commencer avec un ensemble réduit d’approbateurs. Permettre à l’ensemble de l’organisation de présenter du contenu dans la page d’accueil peut compliquer le suivi de tout le contenu promu. 
 
@@ -401,9 +405,9 @@ Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de re
 
 ## <a name="featured-tables-settings"></a>Paramètres de tables recommandés
 
-Sous **Paramètres du client**, le paramètre **Autoriser les connexions aux tables proposées** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie des types de données Excel. 
+Sous **Paramètres du client** , le paramètre **Autoriser les connexions aux tables proposées** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie des types de données Excel. 
 
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Créer les nouvelles expériences d'espace de travail":::
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Toutes les connexions aux tables proposées":::
 
 Les connexions aux tables proposées sont également désactivées si le paramètre **Exporter des données** est défini sur **Désactivé**.
 
@@ -506,7 +510,7 @@ Choisissez quels utilisateurs dans l’organisation peuvent télécharger et ins
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-L’onglet **Power BI Premium** vous permet de gérer les capacités Power BI Premium (EM ou SKU P) achetées pour votre organisation. Tous les utilisateurs dans votre organisation peuvent voir l’onglet **Power BI Premium**, mais ne peuvent en voir le contenu que s’ils disposent d’autorisations *d’administrateur de capacité* ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
+L’onglet **Power BI Premium** vous permet de gérer les capacités Power BI Premium (EM ou SKU P) achetées pour votre organisation. Tous les utilisateurs dans votre organisation peuvent voir l’onglet **Power BI Premium** , mais ne peuvent en voir le contenu que s’ils disposent d’autorisations *d’administrateur de capacité* ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
 
 ![Aucun accès aux paramètres Premium](media/service-admin-portal/premium-settings-no-access.png)
 
@@ -550,9 +554,9 @@ En tant qu’administrateur, vous pouvez afficher les espaces de travail qui exi
 
 Les administrateurs peuvent également contrôler la capacité des utilisateurs à créer de nouveaux espaces de travail, des espaces de travail d’expérience et des espaces de travail classiques. Pour plus d’informations, consultez [Paramètres des espaces de travail](#workspace-settings), dans cet article. 
 
-Les colonnes de la table de l’onglet**Espaces de travail** correspondent aux propriétés retournées par l’[API REST administrateur Power BI](/rest/api/power-bi/admin) pour les espaces de travail. Les espaces de travail personnels sont de type **PersonalGroup**, les espaces de travail classiques sont de type **Group**, et les nouveaux espaces de travail modernes sont de type **Workspace**. Pour plus d’informations, consultez [Organiser le travail dans les nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md).
+Les colonnes de la table de l’onglet **Espaces de travail** correspondent aux propriétés retournées par l’ [API REST administrateur Power BI](/rest/api/power-bi/admin) pour les espaces de travail. Les espaces de travail personnels sont de type **PersonalGroup** , les espaces de travail classiques sont de type **Group** , et les nouveaux espaces de travail modernes sont de type **Workspace**. Pour plus d’informations, consultez [Organiser le travail dans les nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md).
 
-Sous l’onglet **Espaces de travail**, vous voyez l’*état* pour chaque espace de travail. Le tableau suivant fournit plus de détails sur la signification de ces états.
+Sous l’onglet **Espaces de travail** , vous voyez l’ *état* pour chaque espace de travail. Le tableau suivant fournit plus de détails sur la signification de ces états.
 
 |État  |Description  |
 |---------|---------|
@@ -571,11 +575,11 @@ En tant qu’administrateur, vous pouvez personnaliser l’apparence de Power BI
 
 ![Options de marque personnalisée](media/service-admin-portal/power-bi-custom-branding.png)
 
-* **Télécharger le logo** : Pour de meilleurs résultats, téléchargez un logo enregistré au format .png de 10 ko ou moins et d’au moins 200 x 30 pixels.
+* **Télécharger le logo**  : Pour de meilleurs résultats, téléchargez un logo enregistré au format .png de 10 ko ou moins et d’au moins 200 x 30 pixels.
 
-* **Télécharger l’image de couverture** : Pour de meilleurs résultats, téléchargez une image de couverture enregistrée au format .jpg ou .png de 1 Mo ou moins, et d’au moins 1920 x 160 pixels.
+* **Télécharger l’image de couverture**  : Pour de meilleurs résultats, téléchargez une image de couverture enregistrée au format .jpg ou .png de 1 Mo ou moins, et d’au moins 1920 x 160 pixels.
 
-* **Sélectionner la couleur du thème** : Vous pouvez sélectionner votre thème en fonction d’une valeur hexadécimale #, RVB ou de la palette fournie.
+* **Sélectionner la couleur du thème**  : Vous pouvez sélectionner votre thème en fonction d’une valeur hexadécimale #, RVB ou de la palette fournie.
 
 
 Pour plus d’informations, consultez [Marque personnalisée pour votre organisation](https://aka.ms/orgBranding).

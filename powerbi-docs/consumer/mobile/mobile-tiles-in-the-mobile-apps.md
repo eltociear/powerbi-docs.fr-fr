@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 23f1ab7fb7ae5e143084042699db708c0827114f
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
+ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668548"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683359"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -35,7 +35,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![Capture d’écran d’un graphique en courbes, montrant les valeurs sélectionnées pour les ventes de cette année et les ventes de l’année dernière.](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
+   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’ **août**.*  
    
    Dans un graphique en secteurs, appuyez sur un secteur du graphique pour afficher la valeur du segment en haut du graphique.  
    
@@ -73,7 +73,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    * Appuyer sur le graphique pour déplacer la barre dans un graphique en courbes, à barres, à colonnes ou en bulles, pour afficher les valeurs d’un point spécifique dans la visualisation.  
    * Appuyez sur l’icône de crayon ![icône de crayon](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) pour [annoter une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), puis sur l’icône Partager un instantané ![icône Partager un instantané](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [la partager avec d’autres utilisateurs](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
    * Appuyez sur l’icône Ouvrir le rapport ![Icône Ouvrir le rapport dans Android.](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
-3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien** ![icône de lien](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
+3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien**  ![icône de lien](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
    
     ![Capture d’écran d’un tableau de bord montrant les points de suspension verticaux pointant sur Ouvrir le lien.](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
@@ -111,10 +111,10 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    *Dans ce graphique à barres, les valeurs pour la barre **Décoration** sont indiquées en haut du graphique.*
    
-   Cliquez sur l’icône **Plein écran** ![icône Plein écran](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode plein écran, sans les barres de navigation ni les menus.
+   Appuyez sur l’icône **Basculer en mode de présentation** ![Image de l’icône Basculer en mode de présentation](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode de présentation, sans les barres de navigation et de menus.
    
    > [!NOTE]
-   > Vous pouvez également [afficher des tableaux de bord et des rapports en mode Plein écran](mobile-windows-10-app-presentation-mode.md) dans l’application mobile Power BI pour Windows 10.
+   > Vous pouvez également [afficher des tableaux de bord et des rapports en mode de présentation](mobile-windows-10-app-presentation-mode.md) dans l’application mobile Power BI pour Windows 10.
    > 
    > 
    

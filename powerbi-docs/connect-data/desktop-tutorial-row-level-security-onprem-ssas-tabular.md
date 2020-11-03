@@ -1,6 +1,6 @@
 ---
 title: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
-description: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
+description: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services local
 author: davidiseminger
 ms.reviewer: davidi
 editor: davidi
@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4426960cefc23111740d0e930f7a9704e18f8bb6
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: 047c4e7d71cbbae95f4b1f8067548d807421385d
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878310"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349595"
 ---
-# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Implémenter la sécurité au niveau des lignes avec un modèle tabulaire Analysis Services
+# <a name="implement-row-level-security-in-an-on-premises-analysis-services-tabular-model"></a>Implémenter la sécurité au niveau des lignes dans un modèle tabulaire Analysis Services local
 
-Les étapes de ce tutoriel montrent, avec un exemple de jeu de données, comment implémenter la [**sécurité au niveau des lignes**](../admin/service-admin-rls.md) dans un *modèle tabulaire Analysis Services* et comment l’utiliser dans un rapport Power BI.
+Les étapes de ce tutoriel montrent, avec un exemple de jeu de données, comment implémenter la [**sécurité au niveau des lignes**](../admin/service-admin-rls.md) dans un *modèle tabulaire Analysis Services* local et comment l’utiliser dans un rapport Power BI.
 
 * Créer une table de sécurité dans la [base de données AdventureworksDW2012](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Générer le modèle tabulaire avec les tables de faits et de dimension nécessaires
@@ -44,11 +44,11 @@ Les étapes décrites ici nécessitent l’utilisation de la base de données re
 
 1. Après avoir créé et enregistré la table, vous devez établir la relation entre la colonne `SalesTerritoryID` de la table `DimUserSecurity` et la colonne `SalesTerritoryKey` de la table `DimSalesTerritory`, comme indiqué ci-dessous.
 
-   Dans SSMS, cliquez avec le bouton droit sur **DimUserSecurity**, puis sélectionnez **Conception**. Sélectionnez ensuite **Concepteur de tables** > **Relations...** . Une fois terminé, enregistrez la table.
+   Dans SSMS, cliquez avec le bouton droit sur **DimUserSecurity** , puis sélectionnez **Conception**. Sélectionnez ensuite **Concepteur de tables** > **Relations...** . Une fois terminé, enregistrez la table.
 
    ![Relations de clé étrangère](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 
-1. Ajoutez des utilisateurs à la table. Cliquez avec le bouton droit sur **DimUserSecurity**, puis sélectionnez **Modifier les 200 lignes du haut**. Une fois que vous avez ajouté des utilisateurs, la table `DimUserSecurity` doit ressembler à l’exemple suivant :
+1. Ajoutez des utilisateurs à la table. Cliquez avec le bouton droit sur **DimUserSecurity** , puis sélectionnez **Modifier les 200 lignes du haut**. Une fois que vous avez ajouté des utilisateurs, la table `DimUserSecurity` doit ressembler à l’exemple suivant :
 
    ![Table DimUserSecurity contenant des exemples d’utilisateurs](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_users.png)
 
@@ -60,7 +60,7 @@ Les étapes décrites ici nécessitent l’utilisation de la base de données re
     select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
     ```
 
-   La table jointe montre qui est responsable de chaque région de vente, grâce à la relation créée à l’étape 2. Par exemple, vous voyez que *Rita Santos* est responsable de l’*Australie*.
+   La table jointe montre qui est responsable de chaque région de vente, grâce à la relation créée à l’étape 2. Par exemple, vous voyez que *Rita Santos* est responsable de l’ *Australie*.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tâche 2 : Créer le modèle tabulaire avec les tables de faits et de dimension
 
@@ -70,9 +70,9 @@ Une fois que votre entrepôt de données relationnelles est en place, vous devez
 
     ![Tables importées avec SQL Server Data Tools](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
 
-1. Définissez ensuite un rôle appelé *SalesTerritoryUsers* avec l’autorisation Lecture. Sélectionnez le menu **Modèle** dans SQL Server Data Tools, puis sélectionnez **Rôles**. Dans le **Gestionnaire de rôles**, sélectionnez **Nouveau**.
+1. Définissez ensuite un rôle appelé *SalesTerritoryUsers* avec l’autorisation Lecture. Sélectionnez le menu **Modèle** dans SQL Server Data Tools, puis sélectionnez **Rôles**. Dans le **Gestionnaire de rôles** , sélectionnez **Nouveau**.
 
-1. Sous **Membres** dans le **Gestionnaire de rôles**, ajoutez les utilisateurs que vous avez définis dans la table `DimUserSecurity` lors de la [tâche 1](#task-1-create-the-user-security-table-and-define-data-relationship).
+1. Sous **Membres** dans le **Gestionnaire de rôles** , ajoutez les utilisateurs que vous avez définis dans la table `DimUserSecurity` lors de la [tâche 1](#task-1-create-the-user-security-table-and-define-data-relationship).
 
     ![Ajouter des utilisateurs dans le Gestionnaire de rôles](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager.png)
 
@@ -80,7 +80,7 @@ Une fois que votre entrepôt de données relationnelles est en place, vous devez
 
     ![Ajouter des fonctions aux filtres de lignes](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/rolemanager_complete.png)
 
-1. La fonction `LOOKUPVALUE` retourne les valeurs d’une colonne où le nom d’utilisateur Windows correspond à celui retourné par la fonction `USERNAME`. Vous pouvez ensuite limiter les requêtes aux emplacements où les valeurs retournées par `LOOKUPVALUE` correspondent à celles de la même table ou d’une table associée. Dans la colonne **Filtre DAX**, tapez la formule suivante :
+1. La fonction `LOOKUPVALUE` retourne les valeurs d’une colonne où le nom d’utilisateur Windows correspond à celui retourné par la fonction `USERNAME`. Vous pouvez ensuite limiter les requêtes aux emplacements où les valeurs retournées par `LOOKUPVALUE` correspondent à celles de la même table ou d’une table associée. Dans la colonne **Filtre DAX** , tapez la formule suivante :
 
     ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
@@ -93,7 +93,7 @@ Une fois que votre entrepôt de données relationnelles est en place, vous devez
 
    L’ensemble des valeurs `SalesTerritoryKey` retournées par `LOOKUPVALUE` est ensuite utilisé pour limiter les lignes affichées dans `DimSalesTerritory`. Seules les lignes où la valeur `SalesTerritoryKey` figure dans les ID retournés par la fonction `LOOKUPVALUE` sont affichées.
 
-1. Pour la table `DimUserSecurity`, dans la colonne **Filtre DAX**, ajoutez la formule suivante :
+1. Pour la table `DimUserSecurity`, dans la colonne **Filtre DAX** , ajoutez la formule suivante :
 
     ```dax
         =FALSE()
@@ -119,7 +119,7 @@ Au terme de cette procédure, la passerelle est configurée et prête à interag
 
 1. Démarrez Power BI Desktop et sélectionnez **Obtenir les données** > **Base de données**.
 
-1. Dans la liste des sources de données, sélectionnez **Base de données SQL Server Analysis Services**, puis **Connexion**.
+1. Dans la liste des sources de données, sélectionnez **Base de données SQL Server Analysis Services** , puis **Connexion**.
 
    ![Se connecter à la base de données SQL Server Analysis Services](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata.png)
 
@@ -133,7 +133,7 @@ Au terme de cette procédure, la passerelle est configurée et prête à interag
 
    Power BI Desktop affiche maintenant tous les champs disponibles, à droite du canevas dans le volet **Champs**.
 
-1. Dans le volet **Champs**, sélectionnez la mesure **SalesAmount** dans la table **FactInternetSales** et la dimension **SalesTerritoryRegion** dans la table **SalesTerritory**.
+1. Dans le volet **Champs** , sélectionnez la mesure **SalesAmount** dans la table **FactInternetSales** et la dimension **SalesTerritoryRegion** dans la table **SalesTerritory**.
 
 1. Pour que ce rapport reste simple, nous n’ajouterons pas de colonnes pour le moment. Pour avoir une représentation plus significative des données, définissez la visualisation sur **Graphique en anneau**.
 
@@ -145,7 +145,7 @@ Au terme de cette procédure, la passerelle est configurée et prête à interag
 
 Vous avez créé le rapport et vous l’avez publié sur le service **Power BI**. Maintenant, vous pouvez utiliser l’exemple créé lors des étapes précédentes pour illustrer le scénario de sécurité du modèle.
 
-Avec son rôle de *Responsable des ventes*, l’utilisatrice Grace peut voir les données de toutes les différentes régions de vente. Grace crée ce rapport et le publie sur le service Power BI. Ce rapport a été créé lors des tâches précédentes.
+Avec son rôle de *Responsable des ventes* , l’utilisatrice Grace peut voir les données de toutes les différentes régions de vente. Grace crée ce rapport et le publie sur le service Power BI. Ce rapport a été créé lors des tâches précédentes.
 
 Grace crée ensuite un tableau de bord basé sur ce rapport dans le service Power BI, qu’elle nomme *TabularDynamicSec*. Comme le montre l’image suivante, Grace peut voir les données relatives à toutes les régions de vente.
 

@@ -10,12 +10,12 @@ ms.date: 08/20/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 0c1c113f100c3ae1db0902c90833c44788fa7ec6
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 330f844e9c97a3a59ff854ac14612c328b7cb9b6
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857700"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680993"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Suivre les activités utilisateur dans Power BI
 
@@ -48,7 +48,7 @@ Vous devez remplir ces conditions requises pour accéder au journal d’activit�
 
 ### <a name="activityevents-rest-api"></a>API REST ActivityEvents
 
-Vous pouvez utiliser une application d’administration basée sur les API REST de Power BI pour exporter des événements d’activité vers un magasin d’objets blob ou une base de données SQL. Vous pouvez ensuite créer un rapport d’utilisation personnalisé à partir des données exportées. Dans l’appel de l’API REST **ActivityEvents**, vous devez spécifier une date de début et une date de fin, et éventuellement un filtre pour sélectionner des activités par type d’activité ou ID d’utilisateur. Du fait que le journal d’activité est susceptible de contenir une grande quantité de données, l’API **ActivityEvents** limite le téléchargement à un seul jour de données par requête. En d’autres termes, les dates de début et de fin doivent spécifier le même jour, comme dans l’exemple suivant. Vous devez spécifier les valeurs DateTime au format UTC.
+Vous pouvez utiliser une application d’administration basée sur les API REST de Power BI pour exporter des événements d’activité vers un magasin d’objets blob ou une base de données SQL. Vous pouvez ensuite créer un rapport d’utilisation personnalisé à partir des données exportées. Dans l’appel de l’API REST **ActivityEvents** , vous devez spécifier une date de début et une date de fin, et éventuellement un filtre pour sélectionner des activités par type d’activité ou ID d’utilisateur. Du fait que le journal d’activité est susceptible de contenir une grande quantité de données, l’API **ActivityEvents** limite le téléchargement à un seul jour de données par requête. En d’autres termes, les dates de début et de fin doivent spécifier le même jour, comme dans l’exemple suivant. Vous devez spécifier les valeurs DateTime au format UTC.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
@@ -136,7 +136,7 @@ Pour accéder aux journaux, vous devez d’abord activer la journalisation dans 
 
 Les journaux d’audit de Power BI sont disponibles directement dans le [Centre Sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog). Vous trouverez également un lien dans le portail d’administration Power BI :
 
-1. Dans Power BI, sélectionnez l’icône d’**engrenage** dans le coin supérieur droit, puis **Portail d’administration**.
+1. Dans Power BI, sélectionnez l’icône d’ **engrenage** dans le coin supérieur droit, puis **Portail d’administration**.
 
    ![Capture d’écran du menu déroulant de l’engrenage avec l’option du portail d’administration mise en évidence.](media/service-admin-auditing/powerbi-admin.png)
 
@@ -150,7 +150,7 @@ Les journaux d’audit de Power BI sont disponibles directement dans le [Centre 
 
 Limitez les résultats aux seules activités Power BI en suivant ces étapes. Pour la liste des activités, consultez la liste des [activités auditées par Power BI](#operations-available-in-the-audit-and-activity-logs) plus loin dans cet article.
 
-1. Dans la page **Recherche dans le journal d’audit**, sous **Recherche**, sélectionnez la liste déroulante **Activités**.
+1. Dans la page **Recherche dans le journal d’audit** , sous **Recherche** , sélectionnez la liste déroulante **Activités**.
 
 2. Sélectionnez **Activités Power BI**.
 
@@ -176,7 +176,7 @@ Vous pouvez rechercher des entrées du journal d’audit pour les activités eff
 
 ### <a name="view-search-results"></a>Afficher les résultats de recherche
 
-Une fois que vous sélectionnez **Rechercher**, les résultats de la recherche sont chargés. Après quelques instants, ils s’affichent sous **Résultats**. Une fois la recherche terminée, l’affichage indique le nombre de résultats trouvés. **Recherche dans le journal d’audit** affiche un maximum de 1000 événements. Si plus de 1000 événements répondent aux critères de recherche, l’application affiche les 1000 événements les plus récents.
+Une fois que vous sélectionnez **Rechercher** , les résultats de la recherche sont chargés. Après quelques instants, ils s’affichent sous **Résultats**. Une fois la recherche terminée, l’affichage indique le nombre de résultats trouvés. **Recherche dans le journal d’audit** affiche un maximum de 1000 événements. Si plus de 1000 événements répondent aux critères de recherche, l’application affiche les 1000 événements les plus récents.
 
 #### <a name="view-the-main-results"></a>Afficher les principaux résultats
 
@@ -310,6 +310,7 @@ Les opérations suivantes sont disponibles à la fois dans les journaux d’audi
 | Échec de la suppression d’autorisations de dataflow             | FailedToRemoveDataflowPermissions           | Non utilisée actuellement                       |
 | Jeton SAS de dataflow Power BI généré             | GenerateDataflowSasToken                    |                                          |
 | Jeton d’incorporation Power BI généré                    | GenerateEmbedToken                          |                                          |
+| Générer la capture d’écran                       | GenerateScreenshot |                     |
 | Fichier importé dans Power BI                         | Importer                                      |                                          |
 | Application Power BI installée                            | InstallApp                                  |                                          |
 | Espace de travail migré vers une capacité                  | MigrateWorkspaceIntoCapacity                |                                          |

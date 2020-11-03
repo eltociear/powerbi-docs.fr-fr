@@ -6,31 +6,36 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/13/2020
+ms.date: 10/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2fd8375e105769ed0c9a81e7d894cc0f31f08b0
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 104692fff7f94168a505dc6e1f2c513d647554ce
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92258194"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349641"
 ---
 # <a name="dynamic-m-query-parameters-in-power-bi-desktop-preview"></a>Paramètres de requête M dynamiques dans Power BI Desktop (préversion)
 
-Avec les **Paramètres de requête M dynamiques**, les créateurs de modèles peuvent permettre aux **lecteurs de rapports** d’utiliser des filtres ou des segments pour définir la ou les valeurs d’un [paramètre de requête M](/power-query/power-query-query-parameters), ce qui peut s’avérer particulièrement utile pour optimiser les performances des requêtes. Avec les paramètres de requête M dynamiques, les créateurs de modèles disposent d’un contrôle supplémentaire sur la manière dont les sélections de filtres sont incorporées dans les requêtes sources DirectQuery. 
+Avec les **Paramètres de requête M dynamiques** , les créateurs de modèles peuvent permettre aux **lecteurs de rapports** d’utiliser des filtres ou des segments pour définir la ou les valeurs d’un [paramètre de requête M](/power-query/power-query-query-parameters), ce qui peut s’avérer particulièrement utile pour optimiser les performances des requêtes. Avec les paramètres de requête M dynamiques, les créateurs de modèles disposent d’un contrôle supplémentaire sur la manière dont les sélections de filtres sont incorporées dans les requêtes sources DirectQuery. 
 
 Lorsque les auteurs de modèles comprennent la sémantique prévue de leurs filtres, ils savent souvent comment écrire des requêtes efficaces sur leur source de données et peuvent ainsi s’assurer que les sélections de filtre sont incorporées dans les requêtes sources au bon endroit pour atteindre leurs résultats prévus avec des performances améliorées.
 
 ## <a name="enabling-dynamic-m-query-parameters"></a>Activer les paramètres de requête M dynamiques
 
-**Les paramètres de requête M dynamiques** sont actuellement en préversion et doivent être activés pour être utilisés. Sélectionnez **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en version préliminaire** dans le volet de gauche. À partir de là, vérifiez que la case à cocher **Paramètres de requête M dynamiques** est activée. Vous devez redémarrer Power BI Desktop pour que les modifications entrent en vigueur.
+**Les paramètres de requête M dynamiques** sont actuellement en préversion et doivent être activés pour être utilisés. Sélectionnez **Fichier > Options et paramètres > Options** , puis **Fonctionnalités en version préliminaire** dans le volet de gauche. À partir de là, vérifiez que la case à cocher **Paramètres de requête M dynamiques** est activée. Vous devez redémarrer Power BI Desktop pour que les modifications entrent en vigueur.
 
 ![Activer la fonctionnalité de préversion](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
-Comme condition préalable pour cette fonctionnalité, vous devez disposer d’un [paramètre de requête M](/power-query/power-query-query-parameters) valide créé et référencé dans une ou plusieurs tables de requête directe. Examinons un exemple de passage d’une **valeur unique** à un paramètre de manière dynamique :
+Comme condition préalable pour cette fonctionnalité, vous devez disposer d’un [paramètre de requête M](/power-query/power-query-query-parameters) valide créé et référencé dans une ou plusieurs tables de requête directe. 
 
-1. Dans Power BI Desktop, lancez **Power Query** à partir de l’onglet **Données**, puis sélectionnez **Nouveaux paramètres** sous le bouton **Gérer les paramètres** dans le ruban.
+> [!NOTE]
+> Veillez à consulter la section [Considérations et limitations](#considerations-and-limitations) de cet article, car toutes les sources DirectQuery ne sont pas prises en charge avec cette fonctionnalité.
+
+Examinons un exemple de passage d’une **valeur unique** à un paramètre de manière dynamique :
+
+1. Dans Power BI Desktop, lancez **Power Query** à partir de l’onglet **Données** , puis sélectionnez **Nouveaux paramètres** sous le bouton **Gérer les paramètres** dans le ruban.
 
     ![Menu du ruban](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-02.png)
 
@@ -69,7 +74,7 @@ Comme condition préalable pour cette fonctionnalité, vous devez disposer d’u
     > [!NOTE]
     > Nous vous recommandons d’utiliser un nom de colonne qui ne se trouve pas dans une table réelle. S’il s’agit du même nom, la valeur sélectionnée sera appliquée comme filtre sur la requête réelle.
 
-9. Maintenant que les tables avec le champ *Date* ont été créées, nous pouvons lier chaque champ à un paramètre. La liaison du champ à un paramètre signifie essentiellement que lorsque la valeur sélectionnée pour le champ change, la valeur est passée au paramètre et met à jour la requête dans laquelle le paramètre est référencé. Pour lier le champ, accédez à l’onglet **Modélisation**, sélectionnez le champ nouvellement créé, puis accédez aux propriétés **Avancées** :
+9. Maintenant que les tables avec le champ *Date* ont été créées, nous pouvons lier chaque champ à un paramètre. La liaison du champ à un paramètre signifie essentiellement que lorsque la valeur sélectionnée pour le champ change, la valeur est passée au paramètre et met à jour la requête dans laquelle le paramètre est référencé. Pour lier le champ, accédez à l’onglet **Modélisation** , sélectionnez le champ nouvellement créé, puis accédez aux propriétés **Avancées** :
 
     > [!NOTE]
     > Le type de données de la colonne doit correspondre au type de paramètre M.
@@ -80,11 +85,11 @@ Comme condition préalable pour cette fonctionnalité, vous devez disposer d’u
 
     ![Lier le paramètre au champ](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-11.png)
 
-    Dans la mesure où cet exemple concerne une valeur à sélection unique (en définissant le paramètre sur une seule valeur), vous souhaiterez laisser **Sélection multiple** sur **Non**, qui est la valeur par défaut :
+    Dans la mesure où cet exemple concerne une valeur à sélection unique (en définissant le paramètre sur une seule valeur), vous souhaiterez laisser **Sélection multiple** sur **Non** , qui est la valeur par défaut :
 
     ![Sélection multiple désactivée](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-12.png)
 
-    Si vos cas d’usage nécessitent une sélection multiple (passage de plusieurs valeurs à un même paramètre), vous devez basculer le commutateur sur **Oui** et vous assurer que votre requête M est configurée correctement pour accepter plusieurs valeurs dans la requête M. Voici un exemple de *RepoNameParameter*, qui autorise plusieurs valeurs :
+    Si vos cas d’usage nécessitent une sélection multiple (passage de plusieurs valeurs à un même paramètre), vous devez basculer le commutateur sur **Oui** et vous assurer que votre requête M est configurée correctement pour accepter plusieurs valeurs dans la requête M. Voici un exemple de *RepoNameParameter* , qui autorise plusieurs valeurs :
 
     ![Exemple à valeurs multiples](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png)
 
@@ -100,7 +105,7 @@ Si la colonne mappée est définie sur **Non** pour la sélection multiple, vous
 
 ## <a name="potential-security-risk"></a>Risque de sécurité potentiel
 
-Lorsque vous autorisez les lecteurs du rapport à définir dynamiquement les valeurs des paramètres de requête M, ils pourraient être en mesure d’accéder à des données supplémentaires ou déclencher des modifications sur le système source à l’aide d’**attaques par injection**, selon la façon dont les paramètres sont référencés dans la requête M et les valeurs transmises à ce paramètre.
+Lorsque vous autorisez les lecteurs du rapport à définir dynamiquement les valeurs des paramètres de requête M, ils pourraient être en mesure d’accéder à des données supplémentaires ou déclencher des modifications sur le système source à l’aide d’ **attaques par injection** , selon la façon dont les paramètres sont référencés dans la requête M et les valeurs transmises à ce paramètre.
 
 Par exemple, imaginons que vous avez une requête Kusto paramétrable construite comme suit :
 
@@ -147,7 +152,13 @@ Voici quelques exemples :
 Certaines considérations et limitations sont à prendre en compte lors de l’utilisation de paramètres de requête M dynamiques :
 
 * Un seul paramètre ne peut pas être lié à plusieurs champs et inversement.
-* La fonctionnalité est uniquement prise en charge pour une source de données basée sur M et exclut la prise en charge des requêtes SQL natives.
+* La fonctionnalité est uniquement prise en charge pour les sources de données basées sur M. Les sources DirectQuery suivantes ne sont pas prises en charge :
+    * Sources de données T-SQL : SQL Server, Azure SQL Database, pools Synapse SQL (alias Azure SQL Data Warehouse) et pools Synapse SQL OnDemand
+    * Sources de données Live Connect : Jeux de données Azure Analysis Services, SQL Server Analysis Services, Power BI
+    * Autres sources de données non prises en charge : Oracle, Teradata et SAP Hana relationnelle
+    * Prise en charge partielle par programmabilité des points de terminaison XMLA/TOM : SAP BW et SAP Hana 
+
+
 * Les types de paramètres prédéfinis non pris en charge sont les suivants :
   * Quelconque
   * Duration

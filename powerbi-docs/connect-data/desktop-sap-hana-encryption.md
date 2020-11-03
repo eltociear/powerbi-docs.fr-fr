@@ -7,19 +7,22 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/26/2019
+ms.date: 10/22/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 83e1725b7ce7d38a00d0564702977c3a8eef7c1d
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9aaa89db53e22fcefe55a53ec7a5414a8835255b
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222868"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92501900"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Activer le chiffrement pour SAP HANA
 
-Nous vous recommandons de chiffrer les connexions à un serveur SAP HANA à partir de Power BI Desktop et du service Power BI. Vous pouvez activer le chiffrement HANA à l’aide de la bibliothèque OpenSSL et de la bibliothèque propriétaire CommonCryptoLib (anciennement sapcrypto) de SAP. SAP recommande d’utiliser CommonCryptoLib, mais les fonctionnalités de chiffrement de base sont disponibles dans l’une ou l’autre des bibliothèques.
+Nous vous recommandons de chiffrer les connexions à un serveur SAP HANA à partir de Power BI Desktop et du service Power BI. Vous pouvez activer le chiffrement HANA à l’aide de la bibliothèque propriétaire CommonCryptoLib (anciennement sapcrypto) de SAP. SAP recommande l’utilisation de CommonCryptoLib.
+
+> [!IMPORTANT]
+> SAP ne prend plus en charge OpenSSL. Par conséquent, Microsoft a mis fin à son support. Les connexions existantes et nouvelles continueront de fonctionner correctement jusqu’à la fin de l’année 2020, mais elles ne fonctionneront plus à partir du 1er janvier 2021. Utilisez CommonCryptoLib à la place.
 
 Cet article fournit une vue d’ensemble de l’activation du chiffrement à l’aide d’OpenSSL et référence des domaines spécifiques de la documentation SAP. Nous mettons régulièrement à jour le contenu et les liens, mais pour obtenir des instructions et un support complets, reportez-vous toujours à la documentation SAP officielle. Si vous souhaitez configurer le chiffrement à l’aide de CommonCryptoLib et non d’OpenSSL, reportez-vous à [How to Configure TLS/SSL in SAP HANA 2.0](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/) (Configuration de TLS/SSL dans SAP HANA 2.0). Pour connaître la procédure à suivre pour migrer d’OpenSSL vers CommonCryptoLib, consultez [SAP Note 2093286](https://launchpad.support.sap.com/#/notes/2093286) (Note SAP 2093286) (compte super utilisateur requis).
 
@@ -40,7 +43,7 @@ Créez une demande de signature de certificat x509 pour le serveur HANA.
 
 1. À l’aide de SSH, connectez-vous à la machine Linux sur laquelle le serveur HANA s’exécute en tant que \<sid\>adm.
 
-1. Accédez au répertoire de base _/__usr/sap/\<sid\>/home_.
+1. Accédez au répertoire de base _/_ _usr/sap/\<sid\>/home_.
 
 1. Créez un répertoire masqué portant le nom _.__ssl_s’il n’en existe pas déjà un.
 
@@ -98,7 +101,7 @@ Obtenez le certificat signé par une autorité de certification (CA) approuvée 
 
 Testez la connexion dans Power BI Desktop ou le service Power BI.
 
-1. Dans Power BI Desktop ou dans la page **Gérer les passerelles** du service Power BI, assurez-vous que l’option **Valider le certificat du serveur** est activée avant de tenter d’établir une connexion avec votre serveur SAP HANA. Pour le champ **Fournisseur de chiffrement SSL**, sélectionnez mscrypto si vous avez suivi les étapes de configuration d’OpenSSL et commoncrypto si vous avez configuré cette bibliothèque en tant que fournisseur de chiffrement. Ne renseignez pas les champs Magasin de clés SSL et Magasin d’approbations SSL.
+1. Dans Power BI Desktop ou dans la page **Gérer les passerelles** du service Power BI, assurez-vous que l’option **Valider le certificat du serveur** est activée avant de tenter d’établir une connexion avec votre serveur SAP HANA. Pour le champ **Fournisseur de chiffrement SSL** , sélectionnez mscrypto si vous avez suivi les étapes de configuration d’OpenSSL et commoncrypto si vous avez configuré cette bibliothèque en tant que fournisseur de chiffrement. Ne renseignez pas les champs Magasin de clés SSL et Magasin d’approbations SSL.
 
     - Power BI Desktop
 

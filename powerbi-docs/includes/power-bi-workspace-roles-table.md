@@ -5,15 +5,15 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 09/04/2020
+ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 0bf9f1a6eb918e55ab3811b9c6fde2628bdd91ad
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
+ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983727"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92462215"
 ---
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
@@ -31,6 +31,7 @@ ms.locfileid: "91983727"
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>2</sup> |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Copier un rapport<sup>3</sup> | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
+| Gérer les autorisations de jeu de données.<sup>3</sup> | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Planifier l’actualisation des données via la passerelle locale<sup>4</sup> | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Modifier les paramètres de connexion à la passerelle<sup>4</sup> | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Voir et utiliser un élément<sup>5</sup> |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |

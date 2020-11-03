@@ -1,31 +1,34 @@
 ---
-title: Configurer la certification de jeux de données et de dataflows (préversion)
-description: Découvrez comment configurer la certification de jeux de données et de dataflows dans votre organisation.
+title: Activer la certification de contenu
+description: Découvrez comment activer la certification pour des jeux de données, des dataflows, des rapports et des applications.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/26/2020
 ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 11079e2ab1578cfe5db352e7e3286d491bdfca2c
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 4961f5f2b6364e06488baf32478b1f6e9338675e
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374910"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92680847"
 ---
-# <a name="set-up-dataset-and-dataflow-certification-preview"></a>Configurer la certification de jeux de données et de dataflows (préversion)
+# <a name="enable-content-certification"></a>Activer la certification de contenu
 
-Votre organisation peut certifier des jeux de données et des dataflows qui sont les sources d’autorité d’informations importantes.
+Votre organisation peut certifier du contenu sélectionné pour l’identifier en tant que source faisant autorité d’informations critiques. Actuellement, les types de contenu suivants peuvent être certifiés :
+* Groupes de données
+* Dataflows (préversion)
+* Rapports (préversion)
+* Applications (préversion)
 
-En tant qu’administrateur Power BI, vous êtes responsable de la configuration du processus de certification pour votre organisation. La procédure est la suivante :
+En tant qu’administrateur Power BI, vous êtes responsable de l’activation et de la configuration du processus de certification pour votre organisation. La procédure est la suivante :
 * Activation de la certification sur votre locataire
-* Définition d’une liste de groupes et d’utilisateurs autorisés à certifier des jeux de données et des dataflows
-* Pour les jeux de données, spécification de l’URL de la stratégie de certification de jeu de données de l’organisation, si elle existe
+* Définition de la liste des groupes de sécurité dont les membres sont autorisés à certifier du contenu.
+* Indication d’une URL qui pointe vers la documentation du processus de certification de contenu de l’organisation, si une telle documentation existe.
 
-La certification de jeu de données et de flux de données fait partie de l’*approbation* des jeux de données et des dataflows. Pour plus d’informations, consultez [Approbation de jeu de données](../connect-data/service-datasets-promote.md) et [Approbation de dataflow](../transform-model/service-dataflows-promote-certify.md).
-
+La certification fait partie de la fonctionnalité d’ *approbation* de Power BI. Reportez-vous à [Approbation : Promotion et certification de contenu Power BI](../collaborate-share/service-endorsement-overview.md) pour plus d’informations.
 
 ## <a name="set-up-certification"></a>Configurer la certification
 
@@ -35,13 +38,13 @@ La certification de jeu de données et de flux de données fait partie de l’*a
    ![Configurer la certification de jeux de données et de dataflows](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Définissez le bouton bascule sur **Activé**.
-1. Pour la certification de jeu de données, si votre organisation dispose d’une stratégie de certification publiée, vous pouvez spécifier son URL ici. Cela deviendra le lien **En savoir plus** dans la section Certification de la [boîte de dialogue de paramètres d’approbation de dataflow](../connect-data/service-datasets-promote.md#request-dataset-certification). 
-1. Spécifiez les utilisateurs ou les groupes qui sont autorisés à certifier des jeux de données et des dataflows. Ces certificateurs autorisés pourront utiliser le bouton Certification de la section Certification de la boîte de dialogue de paramètres d’approbation de [jeu de données](../connect-data/service-datasets-promote.md#request-dataset-certification) ou de [dataflow](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow).
+1. Si votre organisation dispose d’une stratégie de certification publiée, indiquez son URL ici. Cette URL va devenir le lien **En savoir plus** dans la section Certification de la [boîte de dialogue des paramètres d’approbation](../collaborate-share/service-endorse-content.md#request-content-certification). Si vous n’indiquez pas de lien, les utilisateurs qui veulent demander la certification de leur contenu sont invités à contacter leur administrateur Power BI.
+1. Spécifiez un ou plusieurs groupes de sécurité dont les membres sont autorisés à certifier du contenu. Ces certificateurs autorisés pourront utiliser le bouton Certification de la section Certification de la [boîte de dialogue des paramètres d’approbation](../collaborate-share/service-endorse-content.md#certify-content).
+    
+    Si un groupe de sécurité contient des sous-groupes de sécurité auxquels vous ne voulez pas accorder de droits de certification, vous pouvez cocher la case **À l’exception de groupes de sécurité spécifiques** et entrer le nom de ces groupes dans la zone de texte qui s’affiche.
 1. Cliquez sur **Appliquer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Promouvoir les jeux de données](../connect-data/service-datasets-promote.md)
-* [Certifier des jeux de données](../connect-data/service-datasets-certify.md)
-* [Promouvoir des dataflows](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
-* [Certifier des dataflows](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
+* [Promouvoir ou certifier du contenu](../collaborate-share/service-endorse-content.md)
+* [En savoir plus sur l’approbation dans Power BI](../collaborate-share/service-endorsement-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

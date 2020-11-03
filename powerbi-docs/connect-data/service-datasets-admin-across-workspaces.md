@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0caaf46956656c141992482ae39773d19e8fc550
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 6cc602b96207b1662f0738c0936ca816bbfd0a03
+ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374147"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92681041"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces"></a>Contrôler l’utilisation de jeux de données dans des espaces de travail
 
-L’utilisation de jeux de données dans les espaces de travail constitue un moyen puissant de favoriser la culture et la vulgarisation des données au sein d’une organisation. Cependant, si vous êtes un administrateur Power BI, vous souhaitez parfois limiter le flux d’informations dans votre locataire Power BI. Avec le paramètre de locataire **Utiliser des jeux de données dans des espaces de travail**, vous pouvez limiter la réutilisation de jeu de données complètement ou partiellement par groupes de sécurité.
+L’utilisation de jeux de données dans les espaces de travail constitue un moyen puissant de favoriser la culture et la vulgarisation des données au sein d’une organisation. Cependant, si vous êtes un administrateur Power BI, vous souhaitez parfois limiter le flux d’informations dans votre locataire Power BI. Avec le paramètre de locataire **Utiliser des jeux de données dans des espaces de travail** , vous pouvez limiter la réutilisation de jeu de données complètement ou partiellement par groupes de sécurité.
 
 ![Paramètres d’espace de travail d’administrateur Power BI](media/service-datasets-admin-across-workspaces/power-bi-admin-workspace-settings.png)
 
@@ -32,9 +32,9 @@ Si vous désactivez ce paramètre, voici les effets sur les créateurs de rappor
 
 ## <a name="provide-a-link-for-the-certification-process"></a>Fournir un lien pour le processus de certification
 
-En tant qu’administrateur Power BI, vous pouvez fournir une URL pour le lien **En savoir plus** dans la page des paramètres **Approbation**.  Ce lien permet d’accéder à la documentation relative à votre processus de certification. Si vous n’indiquez aucune destination pour le lien **En savoir plus**, il pointe par défaut vers l’article sur la [certification de jeux de données](service-datasets-certify.md).
+En tant qu’administrateur Power BI, vous pouvez fournir une URL pour le lien **En savoir plus** dans la page des paramètres **Approbation**.  Consultez [Activer la certification de contenu](../admin/service-admin-setup-certification.md) pour plus d’informations. Ce lien permet d’accéder à la documentation relative à votre processus de certification. Si vous n’indiquez aucune destination pour le lien **En savoir plus** , il pointe par défaut vers l’article intitulé [Approuver votre contenu](../collaborate-share/service-endorse-content.md).
 
-![En savoir plus sur la certification de jeux de données](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+![En savoir plus sur la certification de jeux de données](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/23/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 926334f5708914b30277ac0c855937dfb6b79bfb
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 358d0575c2de3297614bfed0656d953945b2ed13
+ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233927"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502153"
 ---
 # <a name="design-filters-in-power-bi-reports"></a>Conception de filtres dans les rapports Power BI
 
@@ -38,38 +38,16 @@ Lors de la lecture d’un rapport, les consommateurs du rapport peuvent pointer 
 
 ![Liste des filtres d’un visuel](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## <a name="turn-on-new-filters-in-existing-reports"></a>Activer de nouveaux filtres dans des rapports existants 
-
-La nouvelle expérience de filtre est activée par défaut pour les nouveaux rapports. Vous pouvez activer la nouvelle expérience pour les rapports existants dans Power BI Desktop ou le service Power BI.
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Activer les nouveaux filtres pour un rapport existant dans Power BI Desktop
-
-1. Dans Power BI Desktop, dans un rapport existant, sélectionnez **Fichier** > **Options et paramètres** > **Options**
-2. Dans le volet de navigation, sous **Fichier actuel**, sélectionnez **Paramètres du rapport**.
-3. Sous **Expérience de filtrage**, sélectionnez **Activer le volet de filtre mis à jour et afficher les filtres dans l’en-tête du visuel de ce rapport**.
-
-### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Activer de nouveaux filtres pour un rapport existant dans le service
-
-Si vous avez activé **Nouvelle apparence** dans le service Power BI ![Nouvelle apparence activée](media/power-bi-report-filter/power-bi-new-look-on.png), la nouvelle expérience de filtre est activée automatiquement. Découvrez plus en détail la [nouvelle apparence dans le service Power BI](../consumer/service-new-look.md).
-
-Si vous n’avez pas activé la nouvelle apparence, vous pouvez toujours voir la nouvelle expérience de filtre en procédant comme suit.
-
-1. Dans le service Power BI, ouvrez la liste de contenu pour un espace de travail.
-2. Recherchez le rapport que vous souhaitez activer, sélectionnez **Plus d’options (...)** , puis sélectionnez **Paramètres** pour ce rapport.
-
-    ![Paramètres de rapport](media/power-bi-report-filter/power-bi-filter-options.png)
-
-3. Sous **Expérience de filtrage**, sélectionnez **Activer le volet de filtre mis à jour et afficher les filtres dans l’en-tête du visuel de ce rapport**.
-
-    ![Activer le volet de filtres mis à jour](media/power-bi-report-filter/power-bi-service-filter-enable.png)
+Découvrez [comment les lecteurs de rapports utilisent les filtres](../consumer/end-user-report-filter.md) dans votre rapport.
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Afficher les filtre pour un visuel en mode Lecture
 
-En mode Lecture, pointez sur l’icône de filtre d’un visuel pour voir une fenêtre contextuelle avec tous les filtres, les segments et ainsi de suite, qui affectent ce visuel. La mise en forme de la liste de filtres est identique à celle du volet Filtres. 
+En mode Lecture, pointez sur l’icône de filtre d’un visuel pour voir une fenêtre contextuelle avec tous les filtres, les segments et ainsi de suite, qui affectent ce visuel. La mise en forme de la liste de filtres est identique à celle du volet Filtres.
 
 ![Filtres affectant un visuel](media/power-bi-report-filter/power-bi-filter-per-visual.png)
 
-Voici les types de filtres affichés par cette vue : 
+Voici les types de filtres affichés par cette vue :
+
 - Filtres de base
 - Segments
 - Mise en surbrillance croisée 
@@ -80,6 +58,8 @@ Voici les types de filtres affichés par cette vue :
 - Segments synchronisés
 - Filtres Inclure/Exclure
 - Filtres transmis via une URL
+
+Découvrez-en plus sur l’[interaction avec les filtres en mode Lecture](../consumer/end-user-report-filter.md).
 
 ## <a name="build-the-filters-pane"></a>Générer le volet Filtres
 
@@ -95,7 +75,7 @@ Quand vous ajoutez un visuel à un canevas de rapport, Power BI ajoute automatiq
 
 ## <a name="hide-the-filters-pane-while-editing"></a>Masquer le volet de filtres lors de la modification
 
-Power BI Desktop a un nouveau ruban en préversion. Sous l’onglet **Affichage**, le bouton bascule **Filtres** vous permet d’afficher ou de masquer le volet Filtres. Cette fonctionnalité est utile lorsque vous n’utilisez pas le volet Filtres et que vous avez besoin d’espace supplémentaire sur l’écran. Cet ajout aligne le volet Filtres avec les autres volets que vous pouvez ouvrir et fermer, tels que les volets Signets et Sélection. 
+Power BI Desktop a un nouveau ruban en préversion. Sous l’onglet **Affichage** , le bouton bascule **Filtres** vous permet d’afficher ou de masquer le volet Filtres. Cette fonctionnalité est utile lorsque vous n’utilisez pas le volet Filtres et que vous avez besoin d’espace supplémentaire sur l’écran. Cet ajout aligne le volet Filtres avec les autres volets que vous pouvez ouvrir et fermer, tels que les volets Signets et Sélection. 
 
 ![Afficher ou masquer le volet Filtres lors de la modification](media/power-bi-report-filter/power-bi-filter-hide.png)
 
@@ -136,7 +116,7 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 
 ### <a name="format-the-filters-pane-and-cards"></a>Mettre en forme le volet Filtres et les cartes
 
-1. Dans le rapport, cliquez sur le rapport lui-même, ou l’arrière-plan (*papier peint*), puis dans le volet **Visualisations**, sélectionnez **Format**. 
+1. Dans le rapport, cliquez sur le rapport lui-même, ou l’arrière-plan ( *papier peint* ), puis dans le volet **Visualisations** , sélectionnez **Format**. 
     Les options de mise en forme de la page du rapport, du papier peint et également du volet Filtres et des cartes de filtre s’affichent.
 
 1. Développez le **volet Filtres** pour définir la couleur de l’arrière-plan, l’icône et la bordure gauche de la page du rapport.
@@ -248,17 +228,25 @@ Vous pouvez aussi mettre en forme la zone de recherche, de la même façon que v
 
 ![Mettre en forme la zone de recherche](media/power-bi-report-filter/power-bi-filter-format-search.png)
 
-La fonctionnalité de recherche dans le volet Filtres est activée par défaut, mais vous pouvez également choisir de l’activer ou de la désactiver en sélectionnant **Activer la recherche pour le volet Filtres** dans les Paramètres de rapport de la boîte de dialogue Options.
+Bien que cette fonctionnalité de recherche dans le volet Filtres soit activée par défaut, vous pouvez aussi choisir de l’activer ou de la désactiver en sélectionnant **Activer la recherche pour le volet Filtres** dans les paramètres **Rapport** de la boîte de dialogue **Options**.
 
 ![Activer ou désactiver la recherche](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 ## <a name="restrict-changes-to-filter-type"></a>Limiter les modifications au type de filtre
 
-Sous la section **Expérience de filtrage** des paramètres du rapport, vous avez la possibilité de contrôler si les utilisateurs peuvent modifier le type de filtre.
+Dans la section **Expérience de filtrage** des paramètres **Rapport** , une option vous permet de déterminer si les utilisateurs peuvent modifier le type de filtre.
 
 ![Limiter les changements de type de filtre](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
-## <a name="apply-filters-button-preview"></a>Bouton Appliquer des filtres (préversion)
+## <a name="allow-saving-filters"></a>Autoriser l’enregistrement des filtres
+
+Par défaut, vos lecteurs de rapports peuvent enregistrer des filtres pour votre rapport. Vous pouvez choisir de ne pas les autoriser à enregistrer des filtres.
+
+- De plus, dans les paramètres **Rapport** de la boîte de dialogue **Options** , sous **Filtres persistants** , sélectionnez **Ne pas autoriser les utilisateurs finaux à enregistrer des filtres sur ce rapport**.
+
+    :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Capture d’écran de l’option Ne pas autoriser les utilisateurs finaux à enregistrer des filtres sur ce rapport.":::
+
+## <a name="apply-filters-apply-button-preview"></a>Bouton Appliquer des filtres (préversion)
 
 Vous pouvez ajouter un bouton **Appliquer** unique au volet Filtre ; il vous permet à vous et à vos utilisateurs finaux d’appliquer toutes les modifications de filtre à la fois. Ce bouton peut être utile si vous souhaitez différer l’application des modifications de filtre. Vous n’avez à attendre qu’une seule fois, une fois que vous êtes prêt à appliquer toutes les modifications de filtre au rapport ou aux visuels.
 
@@ -276,7 +264,7 @@ Vous pouvez définir cette fonctionnalité au niveau du rapport. Toutefois, la f
 
 ### <a name="format-the-apply-button"></a>Mettre en forme le bouton Appliquer
 
-Actuellement, vous pouvez contrôler une partie de la mise en forme pour le texte **Appliquer** du bouton. Dans le volet **Filtre** du volet **Format**, définissez les options suivantes :
+Actuellement, vous pouvez contrôler une partie de la mise en forme pour le texte **Appliquer** du bouton. Dans le volet **Filtre** du volet **Format** , définissez les options suivantes :
 
 - **Couleur de police et d’icône** contrôle la couleur du texte.
 - **Taille du texte de l’en-tête** contrôle la taille du texte.

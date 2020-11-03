@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.date: 04/05/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5487d9f0eb5d8b172cc3e29ea24e88704267cd85
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 01dab6cad6142b455a0d61a0011e43cea6da23e1
+ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230240"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92349508"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>Se connecter au rapport de suivi du COVID-19 aux États-Unis
 Cet article vous explique comment installer l’application modèle pour le rapport de suivi du COVID-19 et comment se connecter aux sources de données.
@@ -26,11 +26,11 @@ Après avoir installé l’application modèle et établi la connexion aux sourc
 
 ## <a name="install-the-app"></a>Installer l’application
 
-1. Cliquez sur le lien suivant pour accéder à l’application : [Application modèle Rapport de suivi du COVID-19 aux États-Unis](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+1. Cliquez sur le lien suivant pour accéder à l’application : [Application modèle Rapport de suivi du COVID-19 aux États-Unis](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Une fois dans la page AppSource de l’application, cliquez sur [**OBTENIR MAINTENANT**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms).
+1. Une fois dans la page AppSource de l’application, cliquez sur [**OBTENIR MAINTENANT**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Rapport de suivi du COVID-19 aux États-Unis dans Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+    [![Rapport de suivi du COVID-19 aux États-Unis dans Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
 1. À l’invite, cliquez sur **Installer**. Une fois installée, l’application apparaît dans votre page Applications.
 
@@ -44,11 +44,21 @@ Après avoir installé l’application modèle et établi la connexion aux sourc
 
    ![Écran de démarrage de l’application modèle](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
 
-1. Deux boîtes de dialogue de connexion s’ouvrent l’une après l’autre. Choisissez le niveau de confidentialité Public dans les deux.
+1. La boîte de dialogue des paramètres s’affiche. Aucun paramètre n’est obligatoire. Cliquez sur **Suivant**.
 
-   ![Boîte de dialogue de connexion au rapport de suivi du COVID-19 aux États-Unis](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+   ![Capture d’écran de la boîte de dialogue Paramètres du rapport de suivi de la COVID-19 aux États-Unis.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
 
-   Une fois le rapport connecté aux sources de données, il est renseigné avec les données les plus récentes. Pendant ce temps, le moniteur d’activité tourne.
+1. La boîte de dialogue de la méthode d’authentification s’affiche. Les valeurs recommandées sont préremplies. Ne les modifiez pas, sauf si vous connaissez précisément des valeurs différentes.
+
+    Cliquez sur **Suivant**.
+
+   ![Capture d’écran de la boîte de dialogue d’authentification du rapport de suivi de la COVID-19 aux États-Unis.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-authentication-dialog.png)
+
+1. Cliquez sur **Se connecter**.
+
+   ![Capture d’écran de la boîte de dialogue de connexion au rapport de suivi de la COVID-19 aux États-Unis.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+ 
+   Une fois le rapport connecté aux sources de données, il est renseigné avec les données les plus récentes. Pendant ce temps, vous verrez des exemples de données et pourrez constater que l’actualisation est en cours.
 
    ![Actualisation en cours du rapport de suivi du COVID-19 aux États-Unis](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-refresh-monitor.png)
 
