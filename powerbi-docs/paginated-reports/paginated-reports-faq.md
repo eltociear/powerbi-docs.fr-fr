@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/19/2020
-ms.openlocfilehash: 2a0490106d5954a57abea1dd5de61f26f2fe2377
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 7cba43ff6339ce890ca2f4f1744282648eaf877b
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257012"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297902"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Cet article répond aux questions fréquemment posées sur les rapports paginés. Ces rapports sont mis en forme, optimisés au pixel près pour la sortie par impression ou la génération de fichiers PDF. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur plusieurs pages. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. 
 
@@ -76,7 +78,7 @@ Mémoire par défaut dans chaque référence SKU Premium pour des rapports pagin
 - **P2/A5** : 20 % par défaut ; 5 % minimum
 - **P3/A6** : 20 % par défaut ; 2,5 % minimum
 
-Les administrateurs Power BI peuvent modifier le pourcentage de mémoire maximal par défaut dans le portail d’administration. Sous l’onglet **Paramètres de capacité**, consultez la section **Rapports paginés** (dans la partie Charges de travail) sous **Power BI Premium**.
+Les administrateurs Power BI peuvent modifier le pourcentage de mémoire maximal par défaut dans le portail d’administration. Sous l’onglet **Paramètres de capacité** , consultez la section **Rapports paginés** (dans la partie Charges de travail) sous **Power BI Premium**.
 
 :::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Onglet Paramètres de capacité, Rapports paginés":::
 
@@ -181,7 +183,7 @@ Voici quelques éléments à prendre en compte lors de l’utilisation de champs
 
 Lorsque vous affichez des rapports paginés dans le service Power BI, les sessions peuvent expirer, montrant alors à l’utilisateur la notification suivante :
 
-:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Onglet Paramètres de capacité, Rapports paginés":::
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Notification d’expiration de session de rapports paginés":::
 
 - La session expire au bout de 60 minutes d’inactivité, ou plus tôt lorsque l’appareil est verrouillé ou inactif, ou lorsque le rapport n’est pas affiché dans l’onglet actif du navigateur.
 

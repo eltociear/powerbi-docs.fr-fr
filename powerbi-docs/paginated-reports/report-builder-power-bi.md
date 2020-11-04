@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f74fb596fb2a080922d0e62a4492ef6c8ccd4e0d
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: 6a0a72015a66abc9425dc467703a5044ea0c8116
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216744"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297860"
 ---
 # <a name="power-bi-report-builder"></a>Générateur de rapports Power BI
 
- Le Générateur de rapports Power BI est un outil de création de rapports paginés que vous pouvez publier sur le service Power BI.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+Le Générateur de rapports Power BI est un outil de création de rapports paginés que vous pouvez publier sur le service Power BI.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour générer celui-ci. Vous prévisualisez votre rapport dans le Générateur de rapports. Publiez ensuite votre rapport dans le service Power BI.
  
 Vous êtes prêt à commencer la création ? [Installez le Générateur de rapports Power BI](https://aka.ms/pbireportbuilder) à partir du centre de téléchargement Microsoft.
 

@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 04/29/2020
-ms.openlocfilehash: 9da6268e90e3f70797c2cfff19bb1d5c4b633e9a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d2cd4e9f5d6cb8872e266fabacb9f8a5a3e318cb
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746582"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298005"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Sous-rapports dans les rapports paginés Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Un *sous-rapport* est un élément de rapport paginé qui affiche un autre rapport paginé à l'intérieur du corps d'un rapport paginé principal. D'un point de vue conceptuel, un sous-rapport d'un rapport ressemble à un cadre d'une page Web. Vous pouvez l’utiliser pour incorporer un rapport dans un autre. Vous pouvez utiliser n’importe quel rapport en tant que sous-rapport. Vous stockez le rapport qui s’affiche en tant que sous-rapport dans le même espace de travail Premium que le rapport parent. Vous pouvez concevoir le rapport parent de sorte qu'il passe des paramètres au sous-rapport. Un sous-rapport peut être répété au sein de régions de données, en utilisant un paramètre pour filtrer les données de chaque instance du sous-rapport.  
   
@@ -33,22 +35,22 @@ Power BI Report Builder peut utiliser les rapports paginés présents sur votre 
 
 Une fois connecté, vous voyez s’afficher une option **Service Power BI** dans Power BI Report Builder pour les options **Ouvrir** et **Enregistrer sous** dans le menu **Fichier**. Lorsque vous sélectionnez l’option **Power BI service** pour enregistrer un rapport, vous créez une connexion active entre Power BI Report Builder et le service Power BI. 
 
-:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Se connecter à Power BI":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Ouvrir à partir du service Power BI":::
 
 ## <a name="save-a-local-report-to-the-power-bi-service"></a>Enregistrer un rapport local dans le service Power BI
 
 Avant de pouvoir ajouter un sous-rapport à un rapport principal, créez d’abord les deux rapports, puis enregistrez-les dans le même espace de travail Power BI Premium. 
 
-1. Pour ouvrir un rapport local existant, dans le menu **Fichier**, sélectionnez **Ouvrir** > **Ce PC**, puis choisissez un fichier .rdl.  
+1. Pour ouvrir un rapport local existant, dans le menu **Fichier** , sélectionnez **Ouvrir** > **Ce PC** , puis choisissez un fichier .rdl.  
 
-2. Dans le menu **Fichier**, sélectionnez **Enregistrer sous** > **Service Power BI**.  Voir [Publier un rapport paginé dans le service Power BI](paginated-reports-save-to-power-bi-service.md) pour plus de détails.
+2. Dans le menu **Fichier** , sélectionnez **Enregistrer sous** > **Service Power BI**.  Voir [Publier un rapport paginé dans le service Power BI](paginated-reports-save-to-power-bi-service.md) pour plus de détails.
 
     > [!NOTE]
     > Vous pouvez également télécharger un rapport en commençant dans le service Power BI. Vous trouverez plus de détails dans ce même article [Publier un rapport paginé dans le service Power BI](paginated-reports-save-to-power-bi-service.md).
 
-3. Dans la boîte de dialogue **Enregistrer sous**, sélectionnez un espace de travail Power BI Premium dans lequel vous pouvez stocker vos rapports paginés.  Les espaces de travail affichent une icône en forme de losange ![icône losange Premium](media/subreports/report-builder-premium-diamond.png) en regard de leur nom.
+3. Dans la boîte de dialogue **Enregistrer sous** , sélectionnez un espace de travail Power BI Premium dans lequel vous pouvez stocker vos rapports paginés.  Les espaces de travail affichent une icône en forme de losange ![icône losange Premium](media/subreports/report-builder-premium-diamond.png) en regard de leur nom.
 
-    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Se connecter à Power BI":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Enregistrer sous le service Power BI":::
 
 4. Sélectionnez **Enregistrer**.
 
@@ -56,9 +58,9 @@ Avant de pouvoir ajouter un sous-rapport à un rapport principal, créez d’abo
 
 Maintenant que vous avez enregistré les deux rapports dans le même espace de travail Premium, vous pouvez en ajouter un à l’autre en tant que sous-rapport. Il existe deux façons d’ajouter un sous-rapport. 
 
-1. Dans le ruban **Insérer**, sélectionnez le bouton **Sous-rapport**, ou cliquez avec le bouton droit sur le canevas du rapport, puis sélectionnez **Insérer** > **Sous-rapport**.
+1. Dans le ruban **Insérer** , sélectionnez le bouton **Sous-rapport** , ou cliquez avec le bouton droit sur le canevas du rapport, puis sélectionnez **Insérer** > **Sous-rapport**.
 
-    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Se connecter à Power BI":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Insérer un sous-rapport dans un rapport":::
 
     La boîte de dialogue **Propriétés du sous-rapport** s’affiche.  
 
@@ -70,7 +72,7 @@ Maintenant que vous avez enregistré les deux rapports dans le même espace de t
  Pour passer les paramètres du rapport parent au sous-rapport, définissez un paramètre dans le rapport que vous souhaitez utiliser à titre de sous-rapport. Lorsque vous placez le sous-rapport dans le rapport parent, vous pouvez sélectionner le paramètre de rapport et une valeur à passer du rapport parent au paramètre de rapport dans le sous-rapport.  
   
 > [!NOTE]  
-> Le paramètre que vous sélectionnez à partir du sous-rapport est un paramètre de *rapport*, et non un paramètre de *requête*.  
+> Le paramètre que vous sélectionnez à partir du sous-rapport est un paramètre de *rapport* , et non un paramètre de *requête*.  
   
  Vous pouvez placer un sous-rapport dans le corps principal du rapport ou dans une région de données. Si vous le placez dans une région de données, il se répète avec chaque instance du groupe ou chaque ligne de la région de données. Vous pouvez passer une valeur du groupe ou de la ligne au sous-rapport. Dans la propriété de la valeur du sous-rapport, utilisez une expression de champ pour le champ qui contient la valeur à passer au paramètre du sous-rapport.  
   
@@ -80,7 +82,7 @@ Maintenant que vous avez enregistré les deux rapports dans le même espace de t
 
 Vous pouvez obtenir un aperçu de vos rapports dans Report Builder.
 
-- Dans le ruban **Accueil**, sélectionnez **Exécuter**. 
+- Dans le ruban **Accueil** , sélectionnez **Exécuter**. 
 
 Report Builder étant un outil de conception, l’aperçu du rapport peut paraître différent du rendu du rapport dans le service Power BI.
 

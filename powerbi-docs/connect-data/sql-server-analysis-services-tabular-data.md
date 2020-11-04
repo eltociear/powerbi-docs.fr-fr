@@ -4,22 +4,22 @@ description: Données actives SQL Server Analysis Services dans Power BI. Cela 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-author: Minewiskan
-ms.author: owend
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
-ms.openlocfilehash: c88c0d56d24f12edf30c2c79ddebb13fa941695a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2c32ceb1db154cd7647402593051e4230c75c07f
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238216"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916748"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Données actives SQL Server Analysis Services dans Power BI
 
-Dans Power BI, vous disposez de deux méthodes pour vous connecter à des données actives provenant d’un serveur SQL Server Analysis Services. Dans **Obtenir des données**, vous pouvez vous connecter à un serveur SQL Server Analysis Services ou vous connecter à un [fichier Power BI Desktop](service-desktop-files.md) ou à un [classeur Excel](service-excel-workbook-files.md) qui est déjà connecté à un serveur Analysis Services. Comme bonne pratique, Microsoft recommande vivement l’utilisation de Power BI Desktop en raison de la richesse de ses outils et de sa capacité à conserver localement une copie de sauvegarde du fichier Power BI Desktop.
+Dans Power BI, vous disposez de deux méthodes pour vous connecter à des données actives provenant d’un serveur SQL Server Analysis Services. Dans **Obtenir des données** , vous pouvez vous connecter à un serveur SQL Server Analysis Services ou vous connecter à un [fichier Power BI Desktop](service-desktop-files.md) ou à un [classeur Excel](service-excel-workbook-files.md) qui est déjà connecté à un serveur Analysis Services. Comme bonne pratique, Microsoft recommande vivement l’utilisation de Power BI Desktop en raison de la richesse de ses outils et de sa capacité à conserver localement une copie de sauvegarde du fichier Power BI Desktop.
 
 >[!IMPORTANT]
 > * Pour que vous puissiez vous connecter à un serveur Analysis Services en ligne, une passerelle de données locale doit être installée et configurée par un administrateur. Pour plus d’informations, consultez [Passerelle de données locale](service-gateway-onprem.md).
@@ -28,7 +28,7 @@ Dans Power BI, vous disposez de deux méthodes pour vous connecter à des donn�
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>Pour se connecter à un modèle via Obtenir des données
 
-1. Dans **Mon espace de travail**, sélectionnez **Obtenir des données**. Vous pouvez également sélectionner un espace de travail de groupe, s’il y en a de disponible.
+1. Dans **Mon espace de travail** , sélectionnez **Obtenir des données**. Vous pouvez également sélectionner un espace de travail de groupe, s’il y en a de disponible.
 
    ![Bouton Se connecter pour obtenir les données](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 

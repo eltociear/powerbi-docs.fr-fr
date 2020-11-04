@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: aa4df6db3058ef3d6f8c399e1bf20f0edf17ebc8
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 217c1b571c01068d64283df0b25b5e56bbc8b956
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600490"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297213"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Dans cet article, vous allez apprendre créer des paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de choisir des données de rapport et de varier la présentation du rapport. Vous pouvez fournir une valeur par défaut et une liste de valeurs disponibles. Vos lecteurs de rapports peuvent modifier la sélection. Ils ont également la possibilité de taper dans les zones de texte des paramètres pour rechercher des valeurs. Consultez [Affichage des paramètres des rapports paginés](../consumer/paginated-reports-view-parameters.md) pour voir comment vos utilisateurs professionnels interagissent avec les paramètres dans le service Power BI.  
 
@@ -38,13 +40,13 @@ L’illustration suivante montre le mode Design dans le Générateur de rapports
   
 1.  Ouvrez votre rapport paginé dans le Générateur de rapports Power BI.
 
-1. Dans le volet **Données de rapport**, cliquez avec le bouton droit le **Paramètres** nœud > **Ajouter un paramètre**. La boîte de dialogue **Propriétés du paramètre de rapport** s'ouvre.  
+1. Dans le volet **Données de rapport** , cliquez avec le bouton droit le **Paramètres** nœud > **Ajouter un paramètre**. La boîte de dialogue **Propriétés du paramètre de rapport** s'ouvre.  
   
-2.  Dans **Nom**, tapez un nom pour le paramètre ou acceptez le nom par défaut.  
+2.  Dans **Nom** , tapez un nom pour le paramètre ou acceptez le nom par défaut.  
   
-3.  Dans **Invite**, tapez le texte devant apparaître en regard de la zone de texte du paramètre lorsque l’utilisateur exécute le rapport.  
+3.  Dans **Invite** , tapez le texte devant apparaître en regard de la zone de texte du paramètre lorsque l’utilisateur exécute le rapport.  
   
-4.  Dans **Type de données**, sélectionnez le type de données pour la valeur du paramètre.  
+4.  Dans **Type de données** , sélectionnez le type de données pour la valeur du paramètre.  
   
 5.  Si le paramètre peut contenir une valeur vide, sélectionnez **Autoriser une valeur vide**.  
   

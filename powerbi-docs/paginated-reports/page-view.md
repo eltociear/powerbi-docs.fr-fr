@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: ''
 ms.topic: how-to
 ms.date: 05/14/2020
-ms.openlocfilehash: 5ed7f3a05be1e600fc67e5162b496309ce315f94
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 41d59f12ad95430e13eb4d856bc1b7d321f7006f
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230968"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297340"
 ---
 # <a name="set-report-views-for-paginated-reports-in-the-power-bi-service"></a>Définir des vues de rapport pour les rapports paginés dans le service Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Quand vous rendez un rapport paginé dans le service Power BI, la vue par défaut est basée sur HTML et elle est interactive. La nouvelle option Mode Page est une autre vue de rapport pour les formats de page fixes comme le format PDF.
 
@@ -43,7 +45,7 @@ Quand vous ouvrez un rapport paginé, il est rendu par défaut dans une vue inte
 
     ![Sélectionner Paramètres de la page](media/page-view/power-bi-paginated-page-settings-dropdown.png)
     
-    La boîte de dialogue **Paramètres de la page** contient des options permettant de définir la **Taille de la page** et l’**Orientation** pour le mode Page. Une fois les paramètres de page appliqués, les mêmes options s’appliquent quand vous imprimez la page ultérieurement.
+    La boîte de dialogue **Paramètres de la page** contient des options permettant de définir la **Taille de la page** et l’ **Orientation** pour le mode Page. Une fois les paramètres de page appliqués, les mêmes options s’appliquent quand vous imprimez la page ultérieurement.
    
     ![Boîte de dialogue Paramètres de la page](media/page-view/power-bi-paginated-page-settings-dialog.png)
 

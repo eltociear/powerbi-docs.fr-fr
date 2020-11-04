@@ -8,14 +8,16 @@ ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 07/10/2020
 ms.author: maggies
-ms.openlocfilehash: f362303a79acb3468d6523eb24383ca0f3d49609
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: 05da5fa050fc92ebae320af9e07fe6505b5790f4
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264558"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297960"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports - Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Cet article traite de la nouvelle version de Microsoft Power BI Report Builder, et plus particulièrement d’une fonctionnalité qui vous permet d’entrer des données directement dans un rapport RDL sous forme de jeu de données incorporé.  Cette fonctionnalité est similaire à Power BI Desktop. Vous pouvez taper des données directement dans un jeu de données dans votre rapport ou les coller dans un autre programme tel que Microsoft Excel. Si vous créez un jeu de données en entrant des données, vous pouvez l’utiliser comme n’importe quel autre jeu de données incorporé dont vous êtes l’auteur. Vous pouvez également ajouter plusieurs tables et en utiliser une comme filtre pour l’autre. Cette fonctionnalité est particulièrement utile pour les petits jeux de données statiques dont vous pouvez avoir besoin dans votre rapport, comme des paramètres de rapport.
  
@@ -29,23 +31,23 @@ Cet article traite de la nouvelle version de Microsoft Power BI Report Builder, 
 
 Après avoir téléchargé et installé le Générateur de rapports, procédez de la même façon que pour ajouter une source de données et un jeu de données incorporés à votre rapport. Dans la procédure suivante, sous **Sources de données** vous voyez une nouvelle option : **Entrer des données**.  Cette source de données ne doit être configurée qu’une seule fois dans un rapport. Après cela, vous pouvez créer plusieurs tables de données entrées sous forme de jeux de données distincts utilisant tous la même source de données.
 
-1. Dans le volet **Données du rapport**, sélectionnez **Nouveau** > **Jeu de données**.
+1. Dans le volet **Données du rapport** , sélectionnez **Nouveau** > **Jeu de données**.
 
     ![Capture d’écran du nouveau jeu de données dans Report Builder.](media/paginated-reports-enter-data/paginated-new-dataset.png)
 
-1. Dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **Utiliser un dataset incorporé dans mon rapport**.
+1. Dans la boîte de dialogue **Propriétés du dataset** , sélectionnez **Utiliser un dataset incorporé dans mon rapport**.
 
-1. En regard de **Source de données**, sélectionnez **Nouveau**.
+1. En regard de **Source de données** , sélectionnez **Nouveau**.
 
     ![Capture d’écran de la nouvelle source de données incorporée.](media/paginated-reports-enter-data/paginated-new-data-source.png)
 
-1. Dans la boîte de dialogue **Propriétés de la source de données**, sélectionnez **Utiliser une connexion incorporée dans mon rapport**.
-2. Dans la zone **Sélectionner un type de connexion**, sélectionnez **ENTRER DES DONNÉES** > **OK**.
+1. Dans la boîte de dialogue **Propriétés de la source de données** , sélectionnez **Utiliser une connexion incorporée dans mon rapport**.
+2. Dans la zone **Sélectionner un type de connexion** , sélectionnez **ENTRER DES DONNÉES** > **OK**.
 
     ![Capture d’écran de l’entrée des données pour la source de données.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
-1. De retour dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **Concepteur de requêtes**.
-2. Dans le volet **Concepteur de requêtes**, cliquez avec le bouton droit et collez vos données dans la table.
+1. De retour dans la boîte de dialogue **Propriétés du dataset** , sélectionnez **Concepteur de requêtes**.
+2. Dans le volet **Concepteur de requêtes** , cliquez avec le bouton droit et collez vos données dans la table.
 
     ![Capture d’écran de l’entrée des données dans le Concepteur de requêtes.](media/paginated-reports-enter-data/paginated-enter-data.png)
 
@@ -55,7 +57,7 @@ Après avoir téléchargé et installé le Générateur de rapports, procédez d
 
 1. Si la première ligne contient des en-têtes de colonne issus des données d’origine, cliquez avec le bouton droit et supprimez-les.
     
-9. Par défaut, le type de données de chaque colonne est Chaîne. Pour changer le type de données, cliquez avec le bouton droit sur l’en-tête de colonne > **Modifier le type**, puis choisissez un autre type de données (comme Date ou Flottant).
+9. Par défaut, le type de données de chaque colonne est Chaîne. Pour changer le type de données, cliquez avec le bouton droit sur l’en-tête de colonne > **Modifier le type** , puis choisissez un autre type de données (comme Date ou Flottant).
 
     ![Capture d’écran du changement de type de données.](media/paginated-reports-enter-data/paginated-data-type.png)
 
@@ -65,7 +67,7 @@ Après avoir téléchargé et installé le Générateur de rapports, procédez d
 
     ![Capture d’écran de la structure de données XML.](media/paginated-reports-enter-data/paginated-xml-data.png)
 
-12. Dans la boîte de dialogue **Propriétés du dataset**, sélectionnez **OK**.
+12. Dans la boîte de dialogue **Propriétés du dataset** , sélectionnez **OK**.
 
 13. Votre source de données et votre jeu de données apparaissent dans le volet **Données du rapport**.
 
@@ -77,7 +79,7 @@ Vous pouvez utiliser votre jeu de données comme base pour les visualisations de
 
 Maintenant que vous disposez d’une source de données et d’un jeu de données, vous êtes prêt à créer votre rapport. La procédure suivante crée un rapport simple basé sur les données de la section précédente.
 
-1. Dans le menu **Insertion**, sélectionnez **Table** > **Assistant Table**.
+1. Dans le menu **Insertion** , sélectionnez **Table** > **Assistant Table**.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-table-wizard.png" alt-text="Capture d’écran de la sélection de l’option Assistant Table.":::
 
@@ -94,12 +96,12 @@ Maintenant que vous disposez d’une source de données et d’un jeu de donnée
 
     - SalesAmount
 
-    Par défaut, Report Builder additionne les champs de la zone **Valeurs**, mais vous pouvez choisir une autre agrégation.
+    Par défaut, Report Builder additionne les champs de la zone **Valeurs** , mais vous pouvez choisir une autre agrégation.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-select-aggregation.png" alt-text="Capture d’écran des différentes agrégations disponibles.":::
  
 1. Sélectionnez **Suivant**.
-4.  Dans la page **Choisir la disposition**, conservez tous les paramètres par défaut, mais désactivez **Développer/Réduire les groupes**. Le développement et la réduction des groupes sont souvent très utiles, mais cette fois nous souhaitons voir toutes les données.
+4.  Dans la page **Choisir la disposition** , conservez tous les paramètres par défaut, mais désactivez **Développer/Réduire les groupes**. Le développement et la réduction des groupes sont souvent très utiles, mais cette fois nous souhaitons voir toutes les données.
 
 5.  Sélectionnez **Suivant** > **Terminer**. La table apparaît sur le canevas de conception.
 

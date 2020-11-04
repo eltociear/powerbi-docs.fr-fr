@@ -9,14 +9,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 08/04/2020
-ms.openlocfilehash: fe6ca733a5498c0e576ec30e6992ffbf26d54319
-ms.sourcegitcommit: 65822b51810a5239fea9d3d0af1fc286436c6cad
+ms.openlocfilehash: 97b93f23c8070af1b514032cea122b257097d664
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87837586"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297934"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Données de rapport dans le Générateur de rapports Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Les données de rapport peuvent provenir de plusieurs sources de données de votre organisation. La première étape de la conception d’un rapport du Générateur de rapports Power BI consiste à créer des sources de données et des jeux de données qui représentent les données sous-jacentes du rapport. Chaque source de données comprend des informations de connexion de données. Chaque jeu de données comprend une commande de requête qui définit l’ensemble des champs à utiliser comme données d’une source de données. Pour visualiser les données de chaque jeu de données, ajoutez une région de données, comme un tableau, une matrice, un graphique ou une carte. Lors du traitement du rapport, les requêtes s’exécutent sur la source de données et chaque région de données se développe au besoin pour afficher les résultats de requête pour le jeu de données.  
 

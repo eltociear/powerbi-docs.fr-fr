@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
 ms.date: 04/29/2020
-ms.openlocfilehash: 6a0e90036b759c409a9f5b3e994571c2a0eb510c
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 06d9b0fc60d9b44f98108cf46bc35c5de15316d6
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747502"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297994"
 ---
 # <a name="troubleshoot-subreports-in-power-bi-paginated-reports"></a>Résoudre les problèmes de sous-rapports dans les rapports paginés Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Vous pouvez parfois obtenir un résultat inattendu lors de l’utilisation de rapports paginés, ou la fonctionnalité ne fonctionne pas comme prévu. Cet article fournit des solutions pour les problèmes courants lors de l’utilisation de sous-rapports. Un *sous-rapport* est un élément de rapport qui affiche un autre rapport à l'intérieur du corps d'un rapport paginé principal. Voir [Sous-rapports dans les rapports paginés Power BI](subreports.md) pour plus d’informations.
 

@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 04/05/2020
-ms.openlocfilehash: bb06f5b0a170189c3c98b734a09259645a650c55
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: d0d9472ef767a67b3b75be4c9eb5d6922d9cdf81
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748169"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045152"
 ---
 # <a name="export-paginated-report-to-file-preview"></a>Exporter un rapport paginé dans un fichier (préversion)
 
@@ -32,9 +32,9 @@ L’API `exportToFile` permet d’exporter un rapport paginé Power BI avec un a
 
 Vous pouvez utiliser la fonctionnalité d’exportation de différentes manières. Voici quelques exemples :
 
-* **Bouton Envoyer à l’impression** : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport visualisé dans un fichier .pdf ou .pptx et, une fois qu’il est terminé, l’utilisateur peut recevoir le fichier sous forme de téléchargement. À l’aide de paramètres de rapport et de paramètres de format, vous pouvez exporter le rapport dans un état spécifique, y compris les données filtrées, les tailles de pages personnalisées et d’autres paramètres propres au format. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
+* **Bouton Envoyer à l’impression**  : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport visualisé dans un fichier .pdf ou .pptx et, une fois qu’il est terminé, l’utilisateur peut recevoir le fichier sous forme de téléchargement. À l’aide de paramètres de rapport et de paramètres de format, vous pouvez exporter le rapport dans un état spécifique, y compris les données filtrées, les tailles de pages personnalisées et d’autres paramètres propres au format. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
 
-* **Pièce jointe d’e-mail** : envoyer un e-mail automatisé à intervalles définis, avec un rapport .pdf en pièce jointe. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
+* **Pièce jointe d’e-mail**  : envoyer un e-mail automatisé à intervalles définis, avec un rapport .pdf en pièce jointe. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
 
 ## <a name="using-the-api"></a>Utilisation de l’API
 
@@ -117,7 +117,7 @@ Voici un exemple de spécification d’un nom d’utilisateur effectif pour la s
       "format": "PDF",
       "paginatedReportConfiguration":{
             "identities": [
-                  {"username": "john@contoso.com"}            
+                  {"username": "john@contoso.com"}
             ]
       }
 }
@@ -153,13 +153,13 @@ private async Task<string> PostExportRequest(
             {"PageHeight", "14in"},
             {"PageWidth", "8.5in" },
             {"StartPage", "1"},
-            {"EndPage", "4"}
+            {"EndPage", "4"},
         },
         ParameterValues = new List<ParameterValue>()
         {
             { new ParameterValue() {Name = "State", Value = "WA"} },
-            { new ParameterValue() {Name = "City", Value = "Redmond"} }
-        }
+            { new ParameterValue() {Name = "City", Value = "Redmond"} },
+        },
     };
 
     var exportRequest = new ExportReportRequest

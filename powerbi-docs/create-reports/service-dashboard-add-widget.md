@@ -7,15 +7,15 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/25/2019
+ms.date: 10/28/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f98fb7a9d5a01c70eb8cef2a8d5befdbe919d796
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 72306a6269df91a75b750628e3534bf5891fe6b0
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219470"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916909"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Ajouter des images, des vidéos et plus encore à votre tableau de bord
 
@@ -50,15 +50,15 @@ Vous pouvez ajouter une image, une zone de texte, une vidéo, des données de st
 ## <a name="add-an-image"></a>Ajouter une image
 Si vous souhaitez ajouter le logo de votre société ou une autre image à votre tableau de bord, enregistrez le fichier image en ligne et définissez un lien vers celui-ci. Vérifiez que des informations d’identification de sécurité ne sont pas nécessaires pour accéder au fichier image. Par exemple, comme OneDrive et SharePoint demandent une authentification, les images qui y sont stockées ne peuvent pas être ajoutées à un tableau de bord de cette façon.  
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Image** > **Suivant**.
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Image** > **Suivant**.
 
-2. Dans la fenêtre **Ajouter une vignette d’image**, ajoutez les informations de l’image :   
+2. Dans la fenêtre **Ajouter une vignette d’image** , ajoutez les informations de l’image :   
    
    a. Pour afficher un titre au-dessus de l’image, sélectionnez **Afficher le titre et le sous-titre** et entrez un **Titre** et un **Sous-titre** facultatif.
 
-   b. Entrez l’**URL** de l’image.
+   b. Entrez l’ **URL** de l’image.
 
-   c. Pour transformer la vignette en lien hypertexte, sélectionnez **Définir un lien personnalisé** et entrez l’**URL**. 
+   c. Pour transformer la vignette en lien hypertexte, sélectionnez **Définir un lien personnalisé** et entrez l’ **URL**. 
 
       Quand vos collègues cliquent sur l’image ou sur le titre, ils sont dirigés vers cette URL.
 
@@ -74,7 +74,7 @@ Si vous souhaitez ajouter le logo de votre société ou une autre image à votre
 
 Pour ajouter un en-tête de tableau de bord, tapez l’en-tête dans la zone de texte et augmentez la taille de la police.
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Zone de texte** > **Suivant**.
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Zone de texte** > **Suivant**.
 
 2. Mettez en forme la zone de texte :
    
@@ -95,14 +95,14 @@ Pour ajouter un en-tête de tableau de bord, tapez l’en-tête dans la zone de 
 ## <a name="add-a-video"></a>Ajouter une vidéo
 Quand vous ajoutez une vignette de vidéo YouTube ou Vimeo à votre tableau de bord, la vidéo est lue directement dans votre tableau de bord.
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Vidéo** > **Suivant**.
-2. Ajoutez des informations sur la vidéo dans la fenêtre **Ajouter une vignette de vidéo** :   
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Vidéo** > **Suivant**.
+2. Ajoutez des informations sur la vidéo dans la fenêtre **Ajouter une vignette de vidéo**  :   
    
-   a. Pour afficher un titre et un sous-titre en haut de la vignette vidéo, sélectionnez **Afficher le titre et le sous-titre** et entrez un **Titre** et un **Sous-titre** facultatif. Dans cet exemple, nous ajoutons un **Sous-titre**, puis nous le convertissons en lien hypertexte dans la playlist sur YouTube.
+   a. Pour afficher un titre et un sous-titre en haut de la vignette vidéo, sélectionnez **Afficher le titre et le sous-titre** et entrez un **Titre** et un **Sous-titre** facultatif. Dans cet exemple, nous ajoutons un **Sous-titre** , puis nous le convertissons en lien hypertexte dans la playlist sur YouTube.
 
-   b. Entrez l’**URL de la vidéo**.
+   b. Entrez l’ **URL de la vidéo**.
 
-   c. Ajoutez un lien hypertexte pour le **Titre** et le **Sous-titre**, afin que vos collègues puissent voir l’intégralité de la playlist sur YouTube après avoir visionné la vidéo incorporée. Pour ce faire, sous **Fonctionnalité**, sélectionnez **Définir un lien personnalisé**, puis entrez l’**URL** de la playlist.
+   c. Ajoutez un lien hypertexte pour le **Titre** et le **Sous-titre** , afin que vos collègues puissent voir l’intégralité de la playlist sur YouTube après avoir visionné la vidéo incorporée. Pour ce faire, sous **Fonctionnalité** , sélectionnez **Définir un lien personnalisé** , puis entrez l’ **URL** de la playlist.
 
    d. Sélectionnez **Appliquer**.  
 
@@ -120,10 +120,10 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Données de streaming personnalisées** > **Suivant**.
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Données de streaming personnalisées** > **Suivant**.
 2. Sélectionnez **Ajouter un jeu de données de streaming**.
 3. Créez un **jeu de données de streaming** à l’aide de l’API Power BI ou de PubNub.
-4. Renseignez les champs **Nom du jeu de données**, **Clé d’abonnement** et **Nom du canal**. S’il s’agit d’une connexion sécurisée, elle dispose également d’une clé d’autorisation. Vous pouvez utiliser les exemples de valeurs de PubNub pour l’essayer.
+4. Renseignez les champs **Nom du jeu de données** , **Clé d’abonnement** et **Nom du canal**. S’il s’agit d’une connexion sécurisée, elle dispose également d’une clé d’autorisation. Vous pouvez utiliser les exemples de valeurs de PubNub pour l’essayer.
 5. Sélectionnez **Suivant**.
     Vous voyez les champs qui sont disponibles dans le jeu de données, avec leurs types de données et leur format JSON.
 6. Sélectionnez **Connect** (Se connecter).
@@ -131,20 +131,20 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 7. Revenez au tableau de bord et resélectionnez **Ajouter une vignette** > **Données de streaming personnalisées** > **Suivant**.
 8. Sélectionnez le jeu de données de capteur que vous avez créé > **Suivant**.
 9. Sélectionnez le type de visuel souhaité. Souvent, un graphique en courbes fonctionne bien pour ces données.
-10. Sélectionnez l’**Axe**, la **Légende** et les **Valeurs**.
+10. Sélectionnez l’ **Axe** , la **Légende** et les **Valeurs**.
 11. Déterminez la durée d’affichage, en secondes, minutes ou heures.
 12. Sélectionnez **Suivant**.
-13. Donnez-lui un **Titre** et un **Sous-titre**, si vous le souhaitez.
+13. Donnez-lui un **Titre** et un **Sous-titre** , si vous le souhaitez.
 14. Épinglez-le à votre tableau de bord.
 
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Données de streaming personnalisées** > **Suivant**.
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Données de streaming personnalisées** > **Suivant**.
 
 2. Sélectionnez **Ajouter un jeu de données de streaming**.
 
 3. Créez un **jeu de données de streaming** à l’aide de l’API Power BI ou de PubNub.
 
-4. Renseignez les champs **Nom du jeu de données**, **Clé d’abonnement** et **Nom du canal**. S’il s’agit d’une connexion sécurisée, elle dispose également d’une clé d’autorisation. Vous pouvez utiliser les exemples de valeurs de PubNub pour l’essayer.
+4. Renseignez les champs **Nom du jeu de données** , **Clé d’abonnement** et **Nom du canal**. S’il s’agit d’une connexion sécurisée, elle dispose également d’une clé d’autorisation. Vous pouvez utiliser les exemples de valeurs de PubNub pour l’essayer.
 
 5. Sélectionnez **Suivant**.
 
@@ -160,7 +160,7 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 
 9. Sélectionnez le type de visuel souhaité. Souvent, un graphique en courbes fonctionne bien pour ces données.
 
-10. Sélectionnez l’**Axe**, la **Légende** et les **Valeurs**.
+10. Sélectionnez l’ **Axe** , la **Légende** et les **Valeurs**.
 
 11. Déterminez la durée d’affichage, en secondes, minutes ou heures.
 
@@ -173,9 +173,9 @@ Vous pouvez utiliser PubNub pour ajouter des données de streaming, telles que d
 ## <a name="add-web-content"></a>Ajouter du contenu web
 Vous pouvez coller ou taper tout contenu HTML, sous forme de vignette, dans votre rapport ou tableau de bord. Entrez le code intégré manuellement ou copiez et collez-le à partir de sites tels que Twitter, YouTube ou embed.ly.
 
-1. Dans la fenêtre **Ajouter une vignette**, sélectionnez **Contenu web** > **Suivant**.
+1. Dans la fenêtre **Ajouter une vignette** , sélectionnez **Contenu web** > **Suivant**.
 
-2. Ajoutez des informations dans la fenêtre **Ajouter une vignette de contenu web** :
+2. Ajoutez des informations dans la fenêtre **Ajouter une vignette de contenu web**  :
    
    a. Pour afficher un titre au-dessus de la vignette, sélectionnez **Afficher le titre et le sous-titre** et entrez un **Titre** et un **Sous-titre** facultatif.
 
@@ -239,6 +239,7 @@ Pour apporter des modifications à une vignette existante :
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Pour faciliter le déplacement de la vignette sur votre tableau de bord, ajoutez un titre et un sous-titre facultatif.
 * Si vous souhaitez incorporer du contenu à partir d’un site web, mais que celui-ci ne dispose pas de code intégré à copier et coller, consultez embed.ly pour découvrir comment générer ce code intégré.
+* Vérifiez que des informations d’identification de sécurité ne sont pas nécessaires pour accéder au fichier image. Par exemple, comme OneDrive et SharePoint demandent une authentification, les images qui y sont stockées ne peuvent pas être ajoutées à un tableau de bord de cette façon.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Introduction aux vignettes de tableau de bord pour les concepteurs Power BI](service-dashboard-tiles.md)
