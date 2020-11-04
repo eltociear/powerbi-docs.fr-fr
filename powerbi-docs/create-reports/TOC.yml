@@ -85,6 +85,8 @@
           items:
             - name: Générateur de rapports dans Power BI
               href: ../paginated-reports/report-builder-power-bi.md
+            - name: "Exemples de rapports paginés Power\_BI"
+              href: ../paginated-reports/paginated-reports-samples.md
             - name: Naviguer dans le Mode Création de rapport
               href: ../paginated-reports/paginated-reports-report-design-view.md
             - name: Planification d’un rapport
