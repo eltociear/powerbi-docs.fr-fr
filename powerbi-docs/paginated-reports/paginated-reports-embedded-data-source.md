@@ -8,20 +8,22 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.openlocfilehash: e44b81120ef5eb1d2a384aae4f2d149525c3b7b4
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 29ed0a764773c2252989aa05bfcabe5976472d11
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632500"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297833"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Dans cet article, vous apprendrez à créer et à modifier une source de données incorporée dans un rapport paginé dans le service Power BI. Vous définissez une source de données incorporée dans un rapport unique et l’utilisez seulement dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées, et peuvent se connecter à ces sources de données :
 
 - Azure Analysis Services
 - dans Azure SQL Database et 
-- Azure SQL Data Warehouse
+- Azure SQL Data Warehouse.
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -39,33 +41,33 @@ Pour obtenir des informations plus détaillées, consultez [Données de rapport 
   
 1. Ouvrez le Générateur de rapports Power BI.
 
-1. Dans la barre d’outils du volet des données du rapport, sélectionnez **Nouveau** > **Source de données**. La boîte de dialogue **Propriétés de la source de données** s’ouvre.
+1. Dans la barre d’outils du volet des données du rapport, sélectionnez **Nouveau** > **Source de données**. La boîte de dialogue **Propriétés de la source de données** s'ouvre.
 
    ![Nouvelle source de données](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
   
-1. Dans la zone de texte **Nom**, entrez le nom de la source de données ou acceptez la valeur par défaut.  
+1. Dans la zone de texte **Nom** , tapez un nom pour la source de données ou acceptez la valeur par défaut.  
   
-1. Sélectionnez **Utiliser une connexion incorporée dans mon rapport**.  
+1. Cliquez sur **Utiliser une connexion incorporée dans mon rapport**.  
   
-1. Dans la liste **Sélectionner un type de connexion**, sélectionnez un type de source de données. 
+1. Dans la liste **Sélectionner un type de connexion** , sélectionnez un type de source de données. 
 
 1. Spécifiez une chaîne de connexion en utilisant l’une des méthodes suivantes :  
   
-   - Entrez la chaîne de connexion directement dans la zone de texte **Chaîne de connexion**. 
+   - Tapez directement la chaîne de connexion dans la zone de texte **Chaîne de connexion** . 
   
    - Sélectionnez **Build** pour ouvrir la boîte de dialogue **Propriétés de connexion** pour la source de données que vous avez choisie à l’étape 2.  
   
-     Renseignez les champs de la boîte de dialogue **Propriétés de connexion** pour le type de source de données. Les propriétés de connexion incluent le type de source de données, le nom de la source de données et les informations d’identification à utiliser. Une fois que vous spécifiez des valeurs dans cette boîte de dialogue, sélectionnez **Tester la connexion** pour vérifier que la source de données est disponible et que les informations d’identification que vous avez spécifiées sont correctes.  
+     Renseignez les champs de la boîte de dialogue **Propriétés de connexion** comme il convient pour le type de source de données. Les propriétés de connexion incluent le type de la source de données, son nom, ainsi que les informations d'identification à utiliser. Une fois que vous spécifiez des valeurs dans cette boîte de dialogue, sélectionnez **Tester la connexion** pour vérifier que la source de données est disponible et que les informations d’identification que vous avez spécifiées sont correctes.  
   
-1. Sélectionnez **Informations d'identification**.  
+1. Sélectionnez **Credentials (Informations d’identification)**.  
   
-   Spécifiez les informations d’identification à utiliser pour cette source de données. Le propriétaire de la source de données choisit le type d’informations d’identification pris en charge. Pour plus d’informations, consultez [Spécifier les informations d’identification et les informations de connexion pour les sources de données du rapport](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+   Spécifiez les informations d'identification à utiliser pour cette source de données. Le propriétaire de la source de données choisit le type d'informations d'identification pris en charge. Pour plus d’informations, consultez [Spécifier des informations d’identification et de connexion pour les sources de données de rapport](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
 1. Sélectionnez **OK**.  
   
    La source de données apparaît dans le volet des données de rapport.
 
-## <a name="limitations-and-considerations"></a>Considérations et limitations
+## <a name="limitations-and-considerations"></a>Limitations et considérations
 
 Les rapports paginés qui se connectent aux jeux de données Power BI suivent les règles pour les jeux de données partagés dans Power BI avec quelques changements mineurs.  Pour que les utilisateurs affichent correctement des rapports paginés à l’aide de jeux de données Power BI et pour garantir que la sécurité au niveau des lignes (RLS) soit activée et appliquée pour vos visionneuses, assurez-vous de suivre ces règles :
 

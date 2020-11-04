@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.openlocfilehash: edda0fa0232430541af1fc1766fd5d8bc23c5e1c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 28058161672de9db0cac5093e652e1d551f6a80a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85221020"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297328"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Dans cet article, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local. Vous pouvez charger des rapports paginés vers Mon espace de travail ou d’autres espaces de travail, tant que l’espace de travail figure dans une capacité Premium. Recherchez l’icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom de l'espace de travail. 
 
@@ -25,11 +27,11 @@ Si la source de données de votre rapport est locale, vous devez créer une pass
 
 Si l’espace de travail n’affiche aucune icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom, vous devez ajouter l’espace de travail à une capacité Premium. 
 
-1. Sélectionnez **Espaces de travail**, choisissez les points de suspension ( **…** ) en regard du nom de l’espace de travail, puis sélectionnez **Membres**.
+1. Sélectionnez **Espaces de travail** , choisissez les points de suspension ( **…** ) en regard du nom de l’espace de travail, puis sélectionnez **Membres**.
 
     ![Sélectionner Modifier l’espace de travail](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 
-1. Dans la boîte de dialogue **Modifier l’espace de travail**, développez **Avancé**, puis basculez le commutateur **Capacité dédiée** sur **On**.
+1. Dans la boîte de dialogue **Modifier l’espace de travail** , développez **Avancé** , puis basculez le commutateur **Capacité dédiée** sur **On**.
 
     ![Sélectionner une capacité dédiée](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace-dialog.png)
 
@@ -49,7 +51,7 @@ Si l’espace de travail n’affiche aucune icône en forme de losange ![Icône 
 
     ![Sélectionner un espace de travail Premium](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
 
-4. Ouvrez le service Power BI dans un navigateur et accédez à l’espace de travail Premium dans lequel vous avez publié le rapport paginé. Sous l’onglet **Rapports**, vous voyez votre rapport.
+4. Ouvrez le service Power BI dans un navigateur et accédez à l’espace de travail Premium dans lequel vous avez publié le rapport paginé. Sous l’onglet **Rapports** , vous voyez votre rapport.
 
     ![Rapport paginé dans la liste des rapports](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 
@@ -69,7 +71,7 @@ Vous pouvez aussi charger un rapport paginé à partir du service Power BI.
 
 1. Sélectionnez **Obtenir les données**.
 
-    ![Obtenir les données Power BI](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
+    ![Obtenir des données avec Power BI](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-get-data.png)
 
 1. Dans la zone **Fichiers** , sélectionnez **Obtenir**.
 
@@ -87,7 +89,7 @@ Vous pouvez aussi charger un rapport paginé à partir du service Power BI.
 
     ![Modifier les informations d’identification](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
 
-   Sous l’onglet **Rapports**, vous voyez votre rapport.
+   Sous l’onglet **Rapports** , vous voyez votre rapport.
 
     ![Rapport paginé dans la liste des rapports](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
 

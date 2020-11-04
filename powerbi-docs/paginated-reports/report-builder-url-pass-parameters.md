@@ -9,28 +9,30 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 05/01/2020
-ms.openlocfilehash: c26f9c8f219517e3039b62cdbc89af24ba1af288
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: f103f29c61d1a4e4a5340d97598d80a86c708701
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239565"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298034"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Passer un paramètre de rapport dans une URL pour un rapport paginé dans Power BI 
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Vous pouvez passer des paramètres de rapport à un rapport en les incluant dans l’URL d’un rapport paginé. Tous les paramètres de requête peuvent avoir des paramètres de rapport correspondants. Ainsi, vous passez un paramètre de requête à un rapport en passant le paramètre de rapport correspondant. Vous devez préfixer le nom du paramètre avec `rp:` pour que Power BI le reconnaisse dans l’URL. 
 
 Les paramètres de rapport sont sensibles à la casse et utilisent les caractères spéciaux suivants : 
 
-- Un espace dans la partie des paramètres de l’URL est remplacé par un signe plus (+).  Par exemple : 
+- Un espace dans la partie des paramètres de l’URL est remplacé par un signe plus (+).  Par exemple : 
 
     ```rp:Holiday=Christmas+Day```
 
 - Un point-virgule dans n’importe quelle partie de la chaîne est remplacé par les caractères `%3A`.
 
-Les navigateurs doivent normalement effectuer automatiquement l’encodage approprié de l’URL. Vous n’avez pas besoin d’encoder les caractères manuellement. 
+Les navigateurs doivent effectuer automatiquement l'encodage d'URL approprié. Vous n’avez pas besoin d’encoder les caractères manuellement. 
 
-Pour définir un paramètre de rapport dans une URL, utilisez la syntaxe suivante : 
+Pour définir un paramètre de rapport au sein d'une URL, utilisez la syntaxe suivante : 
 
 ```
 rp:parameter=value
@@ -48,13 +50,13 @@ Pour spécifier les deux mêmes paramètres définis dans un rapport d’une app
 https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
 ```
 
-Pour passer une valeur null pour un paramètre, utilisez la syntaxe suivante : 
+Pour passer une valeur NULL pour un paramètre, utilisez la syntaxe suivante : 
 
 ```
 parameter:isnull=true
 ```
 
-Par exemple :
+Par exemple :
 
 ```
 rp:SalesOrderNumber:isnull=true

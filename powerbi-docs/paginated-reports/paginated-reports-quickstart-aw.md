@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 778ce3c810cb0d59559940f489dfeda34f366fda
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: baccdcae82fb56b2f7f7a9d6cb4839e941e99bf0
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853974"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297539"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Vous utilisez un assistant dans le Générateur de rapports Power BI pour créer un rapport paginé avec un tableau réparti sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
 
@@ -55,58 +57,58 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
   
 1.  Dans le volet gauche, vérifiez que l’option **Nouveau rapport** est sélectionnée, puis dans le volet droit, sélectionnez **Assistant Tableau ou matrice**.  
   
-4.  Dans la page **Choisir un jeu de données**, sélectionnez **Créer un jeu de données** > **Suivant**.  
+4.  Dans la page **Choisir un jeu de données** , sélectionnez **Créer un jeu de données** > **Suivant**.  
 
     ![Créer un jeu de données](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
-5.  Dans la page **Choisir une connexion à une source de données**, sélectionnez **Nouveau**. 
+5.  Dans la page **Choisir une connexion à une source de données** , sélectionnez **Nouveau**. 
 
     ![Nouvelle source de données](media/paginated-reports-quickstart-aw/power-bi-paginated-new-data-source-connection.png)
   
-     La boîte de dialogue **Propriétés de la source de données** s’ouvre.  
+     La boîte de dialogue **Propriétés de la source de données** s'ouvre.  
   
 6.  Vous pouvez nommer une source de données comme vous le souhaitez, en utilisant des caractères et des traits de soulignement. Pour ce tutoriel, dans la zone **Nom** , tapez **MyAzureDataSource**.  
   
-7.  Dans la zone **Sélectionner un type de connexion**, sélectionnez **Microsoft Azure SQL Database**.  
+7.  Dans la zone **Sélectionner un type de connexion** , sélectionnez **Microsoft Azure SQL Database**.  
   
 8.  Sélectionnez **Build** en regard de la zone **Chaîne de connexion**. 
 
     ![Propriétés de la source de données - Build](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
 
-9. **Dans Azure :** Accédez au portail Azure, puis sélectionnez **Bases de données SQL**.
+9. **Dans Azure :** accédez au portail Azure, puis sélectionnez **Bases de données SQL**.
 
 1. Sélectionnez la base de données SQL Azure que vous avez créée dans le Guide de démarrage rapide « Créer un exemple de base de données SQL Azure dans le portail Azure » dans la section **Conditions préalables** de cet article.
 
-1. Dans l’onglet **Vue d’ensemble**, copiez la valeur dans la zone **Nom du serveur**.
+1. Dans l’onglet **Vue d’ensemble** , copiez la valeur dans la zone **Nom du serveur**.
 
-2. **Dans le Générateur de rapports** : Dans la boîte de dialogue **Propriétés de connexion**, sous **Nom du serveur**, collez le nom du serveur que vous avez copié. 
+2. **Dans le Générateur de rapports**  : dans la boîte de dialogue **Propriétés de connexion** , sous **Nom du serveur** , collez le nom du serveur que vous avez copié. 
 
-1. Pour **Ouvrez une session sur le serveur**, assurez-vous que l’option **Utiliser l'authentification SQL Server** est sélectionnée, puis tapez le nom d’utilisateur et le mot de passe créés dans Azure pour l’exemple de base de données.
+1. Pour **Ouvrez une session sur le serveur** , assurez-vous que l’option **Utiliser l'authentification SQL Server** est sélectionnée, puis tapez le nom d’utilisateur et le mot de passe créés dans Azure pour l’exemple de base de données.
 
-1. Sous **Se connecter à une base de données**, cliquez sur la flèche déroulante, puis sélectionnez le nom de la base de données que vous avez créé dans Azure.
+1. Sous **Se connecter à une base de données** , cliquez sur la flèche déroulante, puis sélectionnez le nom de la base de données que vous avez créé dans Azure.
  
     ![Propriétés de connexion de la source de données](media/paginated-reports-quickstart-aw/power-bi-paginated-connection-properties.png)
 
-1. Sélectionnez **Tester la connexion**. Le message **Résultats du test** affiche **Le test de la connexion a réussi**.
+1. Sélectionnez **Test Connection** (Tester la connexion). Le message **Résultats du test** affiche **Le test de la connexion a réussi**.
 
 1. Sélectionnez **OK** > **OK**. 
 
-   Dans la zone **Chaîne de connexion**, le Générateur de rapports affiche à présent la chaîne de connexion que vous venez de créer. 
+   Dans la zone **Chaîne de connexion** , le Générateur de rapports affiche à présent la chaîne de connexion que vous venez de créer. 
 
     ![Chaîne de connexion de la source de données](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png)
 
 1. Sélectionnez **OK**.
   
-9. Dans la page **Choisir une connexion à une source de données**, vous voyez le message « (dans ce rapport) » sous la connexion de la source de données que vous venez de créer. Sélectionnez cette source de données > **Suivant**.  
+9. Dans la page **Choisir une connexion à une source de données** , vous voyez le message « (dans ce rapport) » sous la connexion de la source de données que vous venez de créer. Sélectionnez cette source de données > **Suivant**.  
 
     ![Ma source de données Azure](media/paginated-reports-quickstart-aw/power-bi-paginated-my-azure-data-source.png)
 
 10. Tapez le même nom d’utilisateur et le même mot de passe dans la zone. 
   
-10. Dans la page **Créer une requête**, développez SalesLT, développez Tables, puis sélectionnez ces tables :
+10. Dans la page **Créer une requête** , développez SalesLT, développez Tables, puis sélectionnez ces tables :
 
     - Adresse
-    - Client
+    - Customer
     - Produit
     - ProductCategory
     - SalesOrderDetail
@@ -116,23 +118,23 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
     
     ![Créer une requête](media/paginated-reports-quickstart-aw/power-bi-paginated-design-query.png)
  
-1.  Sélectionnez **Exécuter la requête**. Le Générateur de rapports affiche les **résultats de la requête**. 
+1.  Sélectionnez **Run Query** (Exécuter la requête). Le Générateur de rapports affiche les **résultats de la requête**. 
  
      ![Résultats de la requête](media/paginated-reports-quickstart-aw/power-bi-paginated-query-results.png)
 
 18. Sélectionnez **Suivant**. 
 
-19. Dans la page **Choisir un jeu de données**, choisissez le jeu de données que vous venez de créer > **Suivant**.
+19. Dans la page **Choisir un jeu de données** , choisissez le jeu de données que vous venez de créer > **Suivant**.
 
     ![Choisir un jeu de données](media/paginated-reports-quickstart-aw/power-bi-paginated-choose-dataset.png)
 
-1. Dans la page **Organiser les champs**, faites glisser ces champs de la zone **Champs disponibles** vers la zone **Groupes de lignes** :
+1. Dans la page **Organiser les champs** , faites glisser ces champs de la zone **Champs disponibles** vers la zone **Groupes de lignes** :
 
     - CompanyName
     - SalesOrderNumber
     - Product_Name
 
-1. Faites glisser ces champs de la zone **Champs disponibles** vers la zone **Valeurs** :
+1. Faites glisser ces champs de la zone **Champs disponibles** vers la zone **Valeurs**  :
 
     - OrderQty
     - UnitPrice
@@ -142,7 +144,7 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
 
     ![Organiser les champs](media/paginated-reports-quickstart-aw/power-bi-paginated-drag-fields.png)
 
-24. Dans la page **Choisir la disposition**, conservez tous les paramètres par défaut, mais désactivez **Développer/Réduire les groupes**. En règle générale, la fonctionnalité Développer/Réduire les groupes est très utile, mais cette fois vous voulez que la table couvre plusieurs pages.
+24. Dans la page **Choisir la disposition** , conservez tous les paramètres par défaut, mais désactivez **Développer/Réduire les groupes**. En règle générale, la fonctionnalité Développer/Réduire les groupes est très utile, mais cette fois vous voulez que la table couvre plusieurs pages.
 
 1. Sélectionnez **Suivant** > **Terminer**. La table apparaît sur le canevas de conception.
  
@@ -176,7 +178,7 @@ Pour afficher les valeurs réelles, vous devez exécuter le rapport.
 
 1. Sélectionnez **Exécuter** dans la barre d’outils **Accueil**.
 
-   Vous voyez maintenant les valeurs. La matrice comporte plus de lignes que ce que vous avez vu en mode Création ! Notez que le Générateur de rapports indique qu’il s’agit de la page **1** de **2 ?** . Le Générateur de rapports charge le rapport aussi rapidement que possible afin de récupérer suffisamment de données pour quelques pages à la fois. Le point d’interrogation indique que le Générateur de rapports n’a pas encore chargé toutes les données.
+   Vous voyez maintenant les valeurs. La matrice comporte plus de lignes que ce que vous avez vu en mode Création ! Notez que le Générateur de rapports indique qu’il s’agit de la page **1** de **2 ?**. Le Générateur de rapports charge le rapport aussi rapidement que possible afin de récupérer suffisamment de données pour quelques pages à la fois. Le point d’interrogation indique que le Générateur de rapports n’a pas encore chargé toutes les données.
 
    ![Exécuter le rapport](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -186,7 +188,7 @@ Pour afficher les valeurs réelles, vous devez exécuter le rapport.
 
 Vous disposez maintenant d’un rapport avec une matrice couvrant 33 pages. Nous allons ajouter d’autres fonctionnalités et améliorer son apparence. Vous pouvez exécuter le rapport après chaque étape pour obtenir un aperçu.
 
-- Dans l’onglet du ruban **Exécuter**, sélectionnez **Conception** pour pouvoir continuer à modifier le rapport.  
+- Dans l’onglet du ruban **Exécuter** , sélectionnez **Conception** pour pouvoir continuer à modifier le rapport.  
 
 ### <a name="set-page-width"></a>Définir la largeur de page
 
@@ -206,7 +208,7 @@ En général, un rapport paginé est mise en forme pour l’impression, avec un 
 
 1. Sélectionnez les mots **Cliquez pour ajouter un titre** en haut de la page, puis tapez **Ventes par entreprise**.  
 
-2. Sélectionnez le texte du titre puis, dans le volet des propriétés sous **Police**, définissez la **couleur** sur **bleu**.
+2. Sélectionnez le texte du titre puis, dans le volet des propriétés sous **Police** , définissez la **couleur** sur **bleu**.
   
 ### <a name="add-a-page-number"></a>Ajouter un numéro de page
 
@@ -214,11 +216,11 @@ Vous avez remarqué que le rapport affiche la date et l’heure dans le pied de 
 
 1. En bas du canevas de conception, vous voyez [&ExecutionTime] à droite du pied de page. 
 
-2. Dans le volet des données du rapport, développez le dossier Champs prédéfinis. Faites glisser **Numéro de Page** vers le côté gauche du pied de page, à la même hauteur que [&ExecutionTime].
+2. Dans le volet Données du rapport, développez le dossier Champs prédéfinis. Faites glisser **Numéro de Page** vers le côté gauche du pied de page, à la même hauteur que [&ExecutionTime].
 
 3. Faites glisser le côté droit de la zone [&PageNumber] pour la rendre carrée.
 
-4. Dans l’onglet **Insertion**, sélectionnez **Zone de texte**.
+4. Dans l’onglet **Insertion** , sélectionnez **Zone de texte**.
 
 5. Cliquez à droite de [&PageNumber], tapez « de », puis modifier la zone de texte pour la rendre carrée.
 
@@ -248,7 +250,7 @@ Vous avez peut-être constaté, lors de l’exécution du rapport, que les monta
 
     ![Sélectionner les cellules avec des valeurs de devise](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. Dans l’onglet **Accueil**, choisissez le symbole de devise dollar ( **$** ), puis sélectionnez la flèche en regard de **Styles des espaces réservés** > **Valeurs d’aperçu**.
+2. Dans l’onglet **Accueil** , choisissez le symbole de devise dollar ( **$** ), puis sélectionnez la flèche en regard de **Styles des espaces réservés** > **Valeurs d’aperçu**.
  
     ![Afficher les valeurs d'aperçu](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 
@@ -268,7 +270,7 @@ Nous pouvons apporter une amélioration supplémentaire à la mise en forme avan
 
    ![Sélectionner un groupe statique](media/paginated-reports-quickstart-aw/power-bi-paginated-static-group.png)
 
-3. Dans le volet **Propriétés**, vous examinez les propriétés du champ**Membre du tableau matriciel**. Définissez **KeepWithGroup** sur **After** et **RepeatOnNewPage** sur **True**.
+3. Dans le volet **Propriétés** , vous examinez les propriétés du champ **Membre du tableau matriciel**. Définissez **KeepWithGroup** sur **After** et **RepeatOnNewPage** sur **True**.
 
     ![Définir RepeatOnNewPage](media/paginated-reports-quickstart-aw/power-bi-paginated-repeat-on-new-page.png)
 
@@ -276,7 +278,7 @@ Nous pouvons apporter une amélioration supplémentaire à la mise en forme avan
 
 5. Sélectionnez **Exécuter** dans l’onglet **Accueil**.
 
-6. Sélectionnez **Mise en page**, le cas échéant. Le rapport comporte maintenant 29 pages. Faites défiler quelques pages. Vous voyez que la devise est mise en forme, que les colonnes comportent des en-têtes sur chaque page, et que le rapport affiche un pied de page avec des numéros de page ainsi que la date et l’heure sur chaque page.
+6. Sélectionnez **Mise en page** , le cas échéant. Le rapport comporte maintenant 29 pages. Faites défiler quelques pages. Vous voyez que la devise est mise en forme, que les colonnes comportent des en-têtes sur chaque page, et que le rapport affiche un pied de page avec des numéros de page ainsi que la date et l’heure sur chaque page.
  
     ![Page terminée](media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png)
 
@@ -288,7 +290,7 @@ Maintenant que vous avez créé ce rapport paginé, il est temps de le charger d
 
 1. Dans le service Power BI (`https://app.powerbi.com`) dans le volet de navigation, sélectionnez **Espaces de travail** > **Créer un espace de travail**.
 
-2. Nommez votre espace de travail **Azure AW**, ou choisissez un autre nom unique. Vous êtes le seul membre pour l’instant. 
+2. Nommez votre espace de travail **Azure AW** , ou choisissez un autre nom unique. Vous êtes le seul membre pour l’instant. 
 
 3. Sélectionnez la flèche en regard de l’option **Avancé** et activez **Capacité dédiée**. 
 
@@ -304,9 +306,9 @@ Maintenant que vous avez créé ce rapport paginé, il est temps de le charger d
 
 1. Dans votre nouvel espace de travail, sélectionnez **Obtenir les données**.
 
-2. Dans la zone **Fichiers**, sélectionnez **Obtenir**.
+2. Dans la zone **Fichiers** , sélectionnez **Obtenir**.
 
-3. Sélectionnez **Fichier local**, accédez au dossier où vous avez enregistré le fichier > **Ouvrir**.
+3. Sélectionnez **Fichier local** , accédez au dossier où vous avez enregistré le fichier > **Ouvrir**.
 
    Power BI importe votre fichier, et vous le voyez sous **Rapports** dans la liste des applications.
 
@@ -318,7 +320,7 @@ Maintenant que vous avez créé ce rapport paginé, il est temps de le charger d
 
     ![Gérer votre rapport](media/paginated-reports-quickstart-aw/power-bi-paginated-manage-report.png)
 
-6. Sélectionnez **informations d'identification**, puis saisissez les informations d’identification que vous avez utilisées dans Azure lorsque vous avez créé la base de données Azure.
+6. Sélectionnez **informations d'identification** , puis saisissez les informations d’identification que vous avez utilisées dans Azure lorsque vous avez créé la base de données Azure.
 
     ![Modifier les informations d’identification du rapport](media/paginated-reports-quickstart-aw/power-bi-paginated-edit-credentials.png)
 
