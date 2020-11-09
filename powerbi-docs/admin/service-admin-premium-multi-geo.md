@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/26/2019
+ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 5d8841c35b2086f9a7e452cdcb4aa9a0fc4c16bd
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599640"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044702"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
@@ -90,14 +90,16 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 - Supprimer la capacité actuelle où se trouve l’espace de travail.  Cela ramène l’espace de travail à une capacité partagée dans la région d’origine.
 - Migrer à nouveau des espaces de travail individuels vers une capacité Premium située dans le locataire d’origine.
 
+Les jeux de données volumineux ne doivent pas être déplacés de la région où ils ont été créés. Les rapports basés sur un jeu de données volumineux ne peuvent pas charger le jeu de données et retournent l’erreur *Impossible de charger le modèle*. Vous devez replacer le jeu de données volumineux dans sa région d’origine pour le rendre à nouveau disponible.
+
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
 - Confirmez que tout mouvement que vous lancez entre des régions est conforme à toutes les exigences de conformité des entreprises et du gouvernement avant d’amorcer le transfert de données.
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
 - Le texte de la requête et le trafic de résultat de la requête pour les modèles de données importés ne transitent pas par la région d’origine. Les métadonnées de rapport proviennent toujours de la région distante et certains états de routage DNS peuvent envoyer le trafic hors de la région. 
-
 - La fonctionnalité des [dataflows](../transform-model/service-dataflows-overview.md) n’est pas prise en charge en mode multigéographique pour l’instant.
+- Le fait de déplacer des jeux de données volumineux de la région où ils ont été créés empêche les rapports de les charger. Vous devez replacer le jeu de données volumineux dans sa région d’origine pour le rendre à nouveau disponible. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

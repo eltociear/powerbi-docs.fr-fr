@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d97c1a4be226d81ca20ef2f31a1f535174cb6c5b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 82237286fa4d6ac3713ca6674a541b7d59c20a49
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599115"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915897"
 ---
 # <a name="power-bi-premium-faq"></a>FAQ Power BI Premium
 
@@ -32,7 +32,7 @@ Power BI Premium est une offre basée sur la capacité qui inclut :
 * Une surface d’API, un ensemble cohérent de fonctionnalités et l’accès aux dernières fonctionnalités d’analytique incorporée.
 
 **Quelles sont les caractéristiques de Power BI Premium ? Comment fonctionne-t-il ?**  
-Power BI Premium est une capacité du service Power BI exclusivement allouée à chaque organisation. Cette capacité est prise en charge par un matériel dédié entièrement géré par Microsoft. Les organisations peuvent choisir d’appliquer leur capacité dédiée globalement ou de l’allouer à des espaces de travail attribués en fonction du nombre d’utilisateurs, des besoins de charge de travail ou d’autres facteurs, puis d’augmenter ou de baisser cette capacité si leurs besoins changent.
+Power BI Premium est une capacité du service Power BI exclusivement allouée à chaque organisation. Cette capacité est prise en charge par un matériel dédié entièrement géré par Microsoft. Les organisations peuvent choisir d’appliquer leur capacité globalement, ou de l’allouer à des espaces de travail attribués en fonction du nombre d’utilisateurs, des besoins de charge de travail ou d’autres facteurs, puis d’augmenter ou de baisser cette capacité si leurs besoins changent.
 
 **En quoi Power BI Pro diffère-t-il de Power BI Premium ?**  
 La licence Power BI Premium est basée sur la capacité et celle de Power BI Pro sur l’utilisateur. Power BI Pro s’adresse aux utilisateurs qui publient des rapports, partagent des tableaux de bord, collaborent avec des collègues dans des espaces de travail et qui sont impliqués dans d’autres activités connexes, par exemple :

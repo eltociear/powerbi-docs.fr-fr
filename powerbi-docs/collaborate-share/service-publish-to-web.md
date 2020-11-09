@@ -7,28 +7,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/18/2020
+ms.date: 11/02/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: cea4af4a8c265e5195a8239bd592c8734e332255
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 7980057ae35637f06aeec3d241b074fcc41564b7
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375163"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297638"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
 Avec l’option **Publier sur le web** de Power BI, vous pouvez facilement incorporer du contenu Power BI interactif dans des billets de blog, des sites web, des e-mails ou des réseaux sociaux. Vous pouvez également modifier, mettre à jour ou actualiser vos visuels publiés, ou bien annuler leur partage.
 
 > [!WARNING]
-> Quand vous utilisez **Publier sur le web**, tout le monde sur Internet peut voir le rapport ou visuel que vous publiez. La visualisation ne nécessite aucune authentification. Elle inclut la visualisation des données à un niveau détaillé qui sont agrégées dans vos rapports. Avant de publier un rapport, vérifiez que vous voulez bien partager publiquement les données et les visualisations. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
+> Quand vous utilisez **Publier sur le web** , tout le monde sur Internet peut voir le rapport ou visuel que vous publiez. La visualisation ne nécessite aucune authentification. Elle inclut la visualisation des données à un niveau détaillé qui sont agrégées dans vos rapports. Avant de publier un rapport, vérifiez que vous voulez bien partager publiquement les données et les visualisations. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
 
 >[!Note]
 >Vous pouvez incorporer votre contenu de façon sécurisée dans un portail ou un site web interne. Utilisez les options [Incorporer](service-embed-secure.md) ou [Incorporer dans SharePoint Online](service-embed-report-spo.md). Ces options garantissent que toutes les autorisations et la sécurité des données sont appliquées quand vos utilisateurs visualisent vos données internes.
 
 ## <a name="create-embed-codes-with-publish-to-web"></a>Créer des codes incorporés avec Publier sur le web
 
-**Publier sur le web** est disponible pour les rapports que vous pouvez modifier dans vos espaces de travail personnel et de groupe.  Cette option n’est pas disponible pour les rapports partagés avec vous ni pour ceux qui s’appuient sur la sécurité au niveau des lignes pour sécuriser les données. Consultez la section [**Limitations**](#limitations) ci-dessous pour obtenir la liste complète des situations où l’option **Publier sur le web** n’est pas prise en charge. Lisez l’**avertissement** plus haut dans cet article avant d’utiliser la fonctionnalité **Publier sur le web**.
+**Publier sur le web** est disponible pour les rapports que vous pouvez modifier dans vos espaces de travail personnel et de groupe.  Cette option n’est pas disponible pour les rapports partagés avec vous ni pour ceux qui s’appuient sur la sécurité au niveau des lignes pour sécuriser les données. Consultez la section [**Limitations**](#limitations) ci-dessous pour obtenir la liste complète des situations où l’option **Publier sur le web** n’est pas prise en charge. Lisez l’ **avertissement** plus haut dans cet article avant d’utiliser la fonctionnalité **Publier sur le web**.
 
 Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 
@@ -54,24 +54,26 @@ Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 
    ![Opération réussie : un lien et du code HTML](media/service-publish-to-web/publish_to_web4.png)
 
-6. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web**, vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, la boîte de dialogue **Code incorporé** s’affiche :
+6. Si vous avez déjà créé un code incorporé pour un rapport et que vous sélectionnez **Publier sur le web** , vous ne verrez pas les boîtes de dialogue des étapes 2 à 4. Au lieu de cela, la boîte de dialogue **Code incorporé** s’affiche :
 
    ![Boîte de dialogue Incorporer le code](media/service-publish-to-web/publish_to_web5.png)
 
    Vous pouvez créer un seul code incorporé pour chaque rapport.
 
+Si vous apportez des changements dans la boîte de dialogue, veillez à copier l’URL ou l’iFrame mis à jour pour utiliser les paramètres mis à jour dans votre page.
+
 
 ### <a name="tips-for-view-modes"></a>Conseils pour les modes d’affichage
 
-Quand vous incorporez du contenu dans un billet de blog, vous avez généralement besoin de l’ajuster à une taille d’écran spécifique.  Vous pouvez ajuster la hauteur et la largeur de la balise iFrame selon vos besoins. Toutefois, vous devez vérifier que votre rapport tient dans la zone donnée de l’iFrame. C’est pourquoi vous devez également définir un mode d’affichage approprié quand vous modifiez le rapport.
+Quand vous incorporez du contenu dans un billet de blog, vous avez généralement besoin de l’ajuster à une taille d’écran spécifique.  Vous pouvez ajuster la hauteur et la largeur de la balise iFrame selon vos besoins. Toutefois, vous devez vérifier que votre rapport tient dans la zone donnée de l’iFrame. Pour cela, définissez un mode d’affichage approprié quand vous modifiez le rapport.
 
 Le tableau suivant fournit des instructions sur le mode d’affichage et les effets de son incorporation.
 
 | Mode d’affichage | Son aspect quand il est incorporé |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur *Dynamique* (par exemple, 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un *cadre*, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de l’iFrame de manière appropriée. |
-| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle**, le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Des barres de défilement peuvent ainsi apparaître dans votre iFrame. Définissez la hauteur et la largeur de l’iFrame afin d’éviter les barres de défilement. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur**, le contenu tient dans la zone horizontale de l’iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur *Dynamique* (par exemple, 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un *cadre* , où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de l’iFrame de manière appropriée. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle** , le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Des barres de défilement peuvent ainsi apparaître dans votre iFrame. Définissez la hauteur et la largeur de l’iFrame afin d’éviter les barres de défilement. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur** , le contenu tient dans la zone horizontale de l’iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
 
 ### <a name="tips-for-iframe-height-and-width"></a>Conseils pour la hauteur et la largeur de l’iFrame
 
@@ -94,7 +96,7 @@ Pour obtenir un ajustement idéal, vous pouvez essayer d’ajouter 56 pixels à
 
 ## <a name="manage-embed-codes"></a>Gérer des codes incorporés
 
-Une fois que vous avez créé un code incorporé **Publier sur le web**, vous pouvez gérer vos codes à partir du menu **Paramètres** du service Power BI. Si vous gérez des codes incorporés, vous pouvez supprimer le visuel ou le rapport de destination d’un code (ce qui rend le code incorporé inutilisable) ou récupérer celui-ci.
+Une fois que vous avez créé un code incorporé **Publier sur le web** , vous pouvez gérer vos codes à partir du menu **Paramètres** du service Power BI. Si vous gérez des codes incorporés, vous pouvez supprimer le visuel ou le rapport de destination d’un code (ce qui rend le code incorporé inutilisable) ou récupérer celui-ci.
 
 1. Pour gérer vos codes incorporés **Publier sur le web** , ouvrez **Paramètres** et sélectionnez **Gérer des codes incorporés**.
 
@@ -108,28 +110,36 @@ Une fois que vous avez créé un code incorporé **Publier sur le web**, vous po
 
    ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
-4. Si vous sélectionnez **Supprimer**, vous êtes invité à confirmer.
+4. Si vous sélectionnez **Supprimer** , vous êtes invité à confirmer.
 
    ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Mises à jour des rapports et actualisation des données
 
-Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Après la création initiale, les mises à jour des rapports ou des objets visuels peuvent prendre jusqu’à deux heures avant que vos utilisateurs ne les voient. Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
+Après avoir créé et partagé votre code incorporé **Publier sur le web** , le rapport est mis à jour avec les modifications que vous apportez. Le lien vers le code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
 
 ### <a name="data-refresh"></a>Actualisation des données
 
-Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Un délai de jusqu’à deux heures peut être nécessaire pour que les données actualisées soient visibles à partir des codes incorporés. Pour désactiver l’actualisation automatique, sélectionnez **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
+Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Lorsque les données sont actualisées pour un modèle de données d’importation dans le service Power BI, le service efface le cache de données, ce qui permet de mettre à jour rapidement les données. Pour désactiver l’actualisation automatique, sélectionnez **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
+
+### <a name="heavy-usage"></a>Utilisation intensive
+
+Une utilisation intensive peut se produire lorsqu’un rapport reçoit trop de requêtes dans un laps de temps réduit. Dans ce cas, les utilisateurs ne peuvent pas afficher ni interagir avec le rapport tant que la période d’utilisation intensive n’est pas terminée. 
+
+Nous vous recommandons de définir un espace réservé d’image pour votre rapport. En cas d’utilisation intensive, les utilisateurs verront l’espace réservé d’image. 
+
+Pour éviter une utilisation intensive, limitez le nombre de requêtes distinctes que votre rapport peut générer, ainsi que la fréquence d’actualisation des données.
 
 ## <a name="power-bi-visuals"></a>Visuels Power BI
 
-Les visuels Power BI sont pris en charge par la fonctionnalité **Publier sur le web**. Quand vous utilisez **Publier sur le web**, les utilisateurs avec lesquels vous partagez votre visuel publié n’ont pas besoin d’activer les visuels Power BI pour visualiser le rapport.
+Les visuels Power BI sont pris en charge par la fonctionnalité **Publier sur le web**. Quand vous utilisez **Publier sur le web** , les utilisateurs avec lesquels vous partagez votre visuel publié n’ont pas besoin d’activer les visuels Power BI pour visualiser le rapport.
 
 ## <a name="understanding-the-embed-code-status-column"></a>Présentation de la colonne d’état du code incorporé
 
 >[!Note]
 >Passez fréquemment en revue les codes incorporés que vous avez publiés. Supprimez ceux qui n’ont plus besoin d’être accessibles publiquement.
 
-La page **Gérer des codes incorporés** comprend une colonne d’état. Par défaut, les codes incorporés sont **actifs**, mais peuvent aussi présenter l’un des états listés ci-dessous.
+La page **Gérer des codes incorporés** comprend une colonne d’état. Par défaut, les codes incorporés sont **actifs** , mais peuvent aussi présenter l’un des états listés ci-dessous.
 
 | État | Description |
 | --- | --- |
@@ -153,9 +163,9 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 <a name="howitworks"></a>
 ## <a name="how-it-works-technical-details"></a>Fonctionnement (détails techniques)
 
-Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette mise en cache garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
+Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web** , vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Les utilisateurs peuvent consulter le rapport soit en ouvrant l’URL publique directe, soit en affichant l’URL incorporée dans une page web ou un blog. Lorsque les utilisateurs accèdent au rapport, Power BI met en cache la définition du rapport, ainsi que les résultats des requêtes nécessaires à l’affichage du rapport. Cette mise en cache garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
-Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Si vous mettez à jour la définition du rapport (par exemple si vous changez son mode d’affichage) ou si vous actualisez les données du rapport, les modifications se refléteront dans la version du rapport consultée par vos utilisateurs au bout de jusqu’à deux heures. Étant donné que chaque élément et chaque valeur de données sont mis en cache indépendamment, lorsqu’une mise à jour de données se produit, une combinaison de valeurs actuelles et précédentes peut être affichée auprès d’un utilisateur. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** seulement quand vous êtes satisfait des paramètres. Si vos données sont actualisées, réduisez le nombre d’actualisations et effectuez les actualisations pendant les heures creuses. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment.
+Les données sont mises en cache pendant une heure à partir de l’heure à laquelle elles sont récupérées. Si vous mettez à jour la définition du rapport (par exemple si vous changez son mode d’affichage) ou si vous actualisez les données qu’il contient, les modifications se refléteront dans la version du rapport consultée par vos utilisateurs au bout d’un certain temps. Lorsqu’une actualisation des données est effectuée pour un modèle de données d’importation, le service efface les données mises en cache et récupère de nouvelles données. Dans la plupart des cas, la mise à jour des données est quasiment simultanée à l’importation des données. Toutefois, pour les rapports qui comportent de nombreuses requêtes distinctes, la mise à jour peut prendre un certain temps. Étant donné que chacun des éléments et chacune des valeurs de données sont mis en cache indépendamment, lorsqu’une mise à jour de données se produit, l’utilisateur peut voir un mélange de valeurs anciennes et actuelles. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** seulement quand vous êtes satisfait des paramètres. Si vos données sont actualisées, réduisez le nombre d’actualisations et effectuez les actualisations pendant les heures creuses. Nous vous déconseillons d’utiliser la publication sur le web pour les données qui doivent être actualisées fréquemment.
 
 ## <a name="find-your-power-bi-administrator"></a>Recherche de votre administrateur Power BI
 
@@ -172,7 +182,7 @@ Vous devez [trouver une de ces personnes](/office365/admin/admin-overview/admin-
 
 ## <a name="limitations"></a>Limites
 
-La fonctionnalité **Publier sur le web** est prise en charge pour la grande majorité des sources de données et des rapports dans le service Power BI. Cependant, les types de rapports suivants ne sont actuellement pas pris en charge ou ne sont pas disponibles avec **Publier sur le web** :
+La fonctionnalité **Publier sur le web** est prise en charge pour la grande majorité des sources de données et des rapports dans le service Power BI. Cependant, les types de rapports suivants ne sont actuellement pas pris en charge ou ne sont pas disponibles avec **Publier sur le web**  :
 
 - Rapports qui utilisent la sécurité au niveau des lignes.
 - Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services et Azure Analysis Services.

@@ -6,22 +6,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86c663e7b9ba035af6592dc10972d868344df7f7
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633205"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132318"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Copier des rapports à partir d’autres espaces de travail
 
 Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou une application, vous pouvez en faire une copie et l’enregistrer dans un autre espace de travail. Vous pouvez ensuite modifier votre copie du rapport, en ajoutant ou supprimant des visuels et d’autres éléments. Vous n’avez pas à vous soucier de la création du modèle de données. Il est déjà créé pour vous. En outre, il est beaucoup plus facile de modifier un rapport existant que de démarrer à partir de zéro. Cependant, quand vous créez une application à partir de votre espace de travail, vous ne pouvez pas toujours publier la copie du rapport dans l’application. Pour plus d’informations, consultez [Considérations et limitations dans l’article « Utiliser des jeux de données dans des espaces de travail »](service-datasets-across-workspaces.md#considerations-and-limitations).
 
-> [!NOTE]
-> Pour effectuer une copie, vous avez besoin d’une licence Pro, même si le rapport d’origine se trouve dans un espace de travail relevant d’une capacité Premium.
+## <a name="prerequisites"></a>Prérequis
+
+- Pour copier un rapport, vous avez besoin d’une licence Pro, même si le rapport d’origine se trouve dans un espace de travail relevant d’une capacité Premium.
+- Pour copier un rapport, ou pour en créer un dans un espace de travail à partir d’un jeu de données situé dans un autre espace de travail, vous devez disposer de l’autorisation Créer pour le jeu de données en question. Pour les jeux de données de l’espace de travail d’origine, les utilisateurs ayant un rôle Administrateur, Membre ou Contributeur disposent automatiquement de l’autorisation Créer via leur rôle d’espace de travail. Consultez [Rôles dans les nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) pour plus d’informations.
 
 ## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Enregistrer la copie d’un rapport dans un espace de travail
 
@@ -29,13 +31,13 @@ Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou u
 
     ![Mode Liste Rapports](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
-1. Sous **Actions**, sélectionnez **Enregistrer une copie**.
+1. Sous **Actions** , sélectionnez **Enregistrer une copie**.
 
     ![Enregistrer une copie d’un rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez de l’[autorisation de génération](service-datasets-build-permissions.md). Même si vous avez accès à l’espace de travail, vous devez disposer de l’autorisation de génération pour le jeu de données.
+    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez de l’ [autorisation de génération](service-datasets-build-permissions.md). Même si vous avez accès à l’espace de travail, vous devez disposer de l’autorisation de génération pour le jeu de données.
 
-3. Dans **Enregistrer une copie de ce rapport**, nommez le rapport, puis sélectionnez l’espace de travail de destination.
+3. Dans **Enregistrer une copie de ce rapport** , nommez le rapport, puis sélectionnez l’espace de travail de destination.
 
     ![Boîte de dialogue Enregistrer une copie](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 

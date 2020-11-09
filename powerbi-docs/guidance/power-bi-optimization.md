@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 3a541c46f78c5e5cd25b47a94394a011fd61954f
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278604"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916541"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Guide d’optimisation pour Power BI
 
@@ -83,7 +83,7 @@ Vous pouvez optimiser l’environnement Power BI en configurant les paramètres 
 
 ### <a name="capacity-settings"></a>Paramètres de capacité
 
-Lorsque vous utilisez des capacités dédiées, disponibles avec Power BI Premium (niveaux tarifaires P) ou Power BI Embedded (niveaux tarifaires A, A4-A6), vous pouvez gérer les paramètres de capacité. Pour plus d’informations, consultez [Gestion des capacités Premium](../admin/service-premium-capacity-manage.md). Pour obtenir des conseils sur la façon d’optimiser votre capacité, consultez [Optimisation des capacités Premium](../admin/service-premium-capacity-optimize.md).
+Lorsque vous utilisez des capacités, disponibles avec Power BI Premium (niveaux tarifaires P) ou Power BI Embedded (niveaux tarifaires A, A4-A6), vous pouvez gérer les paramètres de capacité. Pour plus d’informations, consultez [Gestion des capacités Premium](../admin/service-premium-capacity-manage.md). Pour obtenir des conseils sur la façon d’optimiser votre capacité, consultez [Optimisation des capacités Premium](../admin/service-premium-capacity-optimize.md).
 
 ### <a name="gateway-sizing"></a>Dimensionnement de la passerelle
 

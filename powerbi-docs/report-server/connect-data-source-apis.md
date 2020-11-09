@@ -6,71 +6,110 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 09/01/2020
+ms.date: 10/26/2020
 ms.author: maggies
-ms.openlocfilehash: 69aa11216624416f005dcb2e47d1b818204ae7ec
-ms.sourcegitcommit: 89ce1777a85b9fc476f077cbe22978c6cf923603
+ms.openlocfilehash: 165d38c718377ff7e47442cdf0fe67173b610bd8
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89286725"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044902"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Modifier les chaînes de connexion de la source de données dans les rapports Power BI avec PowerShell - Power BI Report Server
 
 
-Vous pouvez modifier les chaînes de connexion à la source de données des rapports Power BI hébergés dans Power BI Report Server à l’aide de PowerShell pour interagir avec les API nécessaires. 
+Depuis la version d’octobre 2020 de Power BI Report Server, nous fournissons la possibilité de mettre à jour les connexions des rapports Power BI pour DirectQuery et de les actualiser.
 
-> [!NOTE]
-> Actuellement, cette fonctionnalité ne fonctionne que pour DirectQuery. La prise en charge de l’importation et de l’actualisation des données sera bientôt disponible.
+> [!IMPORTANT]
+> Cette fonctionnalité constitue également un changement cassant par rapport aux versions précédentes. Si vous utilisez une version de Power BI Report Server antérieure à celle d’octobre 2020, consultez [Changer les chaînes de connexion de la source de données dans les rapports Power BI avec PowerShell - Version de Power BI Report Server antérieure à octobre 2020](connect-data-source-apis-pre-oct-2020.md).
 
-1. Installez les commandlets PowerShell Power BI Report Server. Recherchez les commandlets et les instructions d’installation sur [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
+## <a name="prerequisites"></a>Prérequis :
+- Télécharger la version d’octobre 2020 de [Power BI Report Server et de Power BI Desktop optimisé pour Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+- Un rapport enregistré avec la version d’octobre 2020 de Power BI Desktop optimisé pour Report Server, avec les **métadonnées de jeu de données avancées** activées.
+- Un rapport qui utilise des connexions paramétrables. Seuls les rapports avec des connexions et des bases de données paramétrables peuvent être mis à jour après la publication.
+- Cet exemple utilise les outils PowerShell Reporting Services. Vous pouvez obtenir le même résultat en utilisant les nouvelles API REST.
 
-    Installez le module `ReportingServicesTools` directement à partir de [PowerShell Gallery](https://www.powershellgallery.com/packages/ReportingServicesTools/) en utilisant la commande ci-dessous.
+## <a name="create-a-report-with-parameterized-connections"></a>Créer un rapport avec des connexions paramétrables
+    
+1. Établissez une connexion SQL Server avec un serveur. Dans l’exemple ci-dessous, nous allons connecter le serveur localhost à une base de données nommée ReportServer, et tirer (pull) les données depuis ExecutionLog.
 
-    ```powershell
-    Install-Module ReportingServicesTools
+    :::image type="content" source="media/connect-data-source-apis/sql-server-connect-database.png" alt-text="Se connecter à une base de données SQL Server":::
+
+    Voici à quoi ressemble la requête M :
+
+    ```
+    let
+        Source = Sql.Database("localhost", "ReportServer"),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
     ```
 
-2. Récupérez les informations de la source de données existante pour le fichier Power BI via les commandlets PowerShell :
+2. Sélectionnez **Gérer les paramètres** dans le ruban de l’éditeur Power Query.
+
+    :::image type="content" source="media/connect-data-source-apis/power-query-manage-parameters.png" alt-text="Sélectionner Gérer les paramètres":::
+
+1.  Créez des paramètres pour le nom du serveur et le nom de la base de données.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-parameters.png" alt-text="Gérer les paramètres - Définition du nom du serveur et du nom de la base de données.":::
+
+
+3. Modifiez la requête pour la première connexion, puis mappez le nom de la base de données et celui du serveur.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-map-database-server.png" alt-text="Mapper le nom du serveur et de la base de données":::
+
+    La requête ressemble à ceci :
+
+    ```
+    let
+        Source = Sql.Database(ServerName, Databasename),
+        dbo_ExecutionLog3 = Source{[Schema="dbo",Item="ExecutionLog3"]}[Data]
+    in
+        dbo_ExecutionLog3
+    ```
+    
+    4. Publiez ce rapport sur le serveur. Dans cet exemple, le rapport se nomme executionlogparameter. L’image suivante est un exemple de page de gestion des sources de données.
+
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-data-source-credentials.png" alt-text="Page de gestion des sources de données.":::
+
+## <a name="update-parameters-using-the-powershell-tools"></a>Mettre à jour les paramètres à l’aide des outils PowerShell
+
+1. Ouvrez PowerShell et installez les derniers outils Reporting Services, en suivant les instructions fournies ici : [https://github.com/microsoft/ReportingServicesTools](https://github.com/microsoft/ReportingServicesTools).
+    
+2.  Pour obtenir le paramètre du rapport, utilisez la nouvelle API REST DataModelParameters à l’aide de l’appel PowerShell suivant :
 
     ```powershell
-    Get-RsRestItemDataSource -RsItem '/MyPbixReport'
+    Get-RsRestItemDataModelParameters '/executionlogparameter'
+
+        Name         Value
+        ----         -----
+        ServerName   localhost
+        Databasename ReportServer
     ```
 
-    Pour afficher les informations de la première source de données contenue dans le rapport Power BI : 
+3. Nous enregistrons le résultat de cet appel dans une variable :
 
     ```powershell
-    $dataSources[0]
+    $parameters = Get-RsRestItemDataModelParameters '/executionlogparameter'
     ```
 
-3. Mettez à jour la connexion et les informations d’identification si nécessaire. Si la mise à jour de la chaîne de connexion et de la source de données utilise des informations d’identification stockées, vous devez fournir le mot de passe du compte. 
-
-    Pour mettre à jour la chaîne de connexion de la source de données :
+4. Cette variable est mise à jour avec les valeurs que vous devez changer.
+5. Nous enregistrons le résultat de cet appel dans une variable :
 
     ```powershell
-    $dataSources[0].ConnectionString = 'data source=myCatalogServer;initial catalog=ReportServer;persist security info=False' 
+    $parameters[0].Value = 'myproductionserver'
+    $parameters[1].Value = 'myproductiondatabase'
     ```
 
-    Pour modifier le type des informations d’identification de la source de données :
+6. Avec les valeurs mises à jour, nous pouvons utiliser l’applet de commande `Set-RsRestItemDataModelParameters` pour mettre à jour les valeurs du serveur :
 
     ```powershell
-    $dataSources[0].DataModelDataSource.AuthType = 'Integrated'
+    Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
-    Pour modifier le nom d’utilisateur/mot de passe de la source de données :
+7. Une fois les paramètres mis à jour, le serveur met à jour toutes les sources de données qui étaient liées aux paramètres. Dans la boîte de dialogue **Modifier la source de données** , vous devriez pouvoir définir les informations d’identification du serveur et de la base de données mis à jour.
 
-    ```powershell
-    $dataSources[0].DataModelDataSource.Username = 'domain\user'
-    ```
-    ```powershell
-    $dataSources[0].DataModelDataSource.Secret = 'password'
-    ```
-
-4. Réenregistrez les informations d’identification mises à jour sur le serveur.
-
-    ```powershell
-    Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
-    ```
+    :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="Définir les informations d’identification du serveur et de la base de données mis à jour.":::
 
 ## <a name="next-steps"></a>Étapes suivantes
 

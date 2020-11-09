@@ -1,32 +1,33 @@
 ---
 title: Exemples d’applications modèles
-description: Exemples pour une utilisation personnelle ou pour la redistribution en tant qu’application AppSource Power BI
+description: Exemples pour une utilisation personnelle ou pour une redistribution en tant qu’applications modèles sur AppSource
 author: paulinbar
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 10/28/2020
 ms.author: painbar
-ms.openlocfilehash: 177d04f370e5aea0525882abe6900d6bee012c5a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: da044d3507e649f8a1af4258506961d26aa4ab37
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235568"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045094"
 ---
 # <a name="template-apps-samples"></a>Exemples d’applications modèles
 
-L’objectif de ce document est de partager des exemples d’applications de modèle avec des utilisateurs Power BI. Utilisez-les pour à des fins personnelles ou pour la redistribution sur AppSource. Les exemples sont au format pbix et peuvent être édités avec Power BI Desktop.
+L’objectif de ce document est de fournir des modèles que vous pouvez personnaliser pour créer vos propres applications.  
+Utilisez ces modèles pour une utilisation personnelle ou publiez-les en tant qu’applications modèles sur Microsoft AppSource. Les exemples sont fournis sous la forme de fichiers Power BI Desktop (.pbix).
 
-## <a name="connection-additional-related-accounts"></a>Connexion, comptes associés supplémentaires
+## <a name="prerequisites"></a>Prérequis
 
 Les exemples peuvent nécessiter des comptes d’utilisateur supplémentaires avec le propriétaire de service approprié.  Les modèles suivants doivent être utilisés dans le cadre des [Termes du contrat de licence](https://templateapps.blob.core.windows.net/sampletemplateapps/Sample-Templates-for-app-on-appsource.pdf) qui suivent.
 
-## <a name="downloadable-template-apps-samples"></a>Exemples d’applications de modèle téléchargeables
+## <a name="downloadable-apps-template-samples"></a>Exemples de modèles d’applications téléchargeables
 
 * [Exemple de modèle pour la création d’une application modèle](https://templateapps.blob.core.windows.net/sampletemplateapps/TemplateforTemplateApps.zip)
-* [Intégration de LinkedIn Sales Navigator Analytics](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
+* [LinkedIn Sales Navigator Analytics Integrations](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
 * [GitHub](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [MailChimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)

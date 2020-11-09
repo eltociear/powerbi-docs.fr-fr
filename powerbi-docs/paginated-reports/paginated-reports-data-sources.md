@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/27/2020
-ms.openlocfilehash: f433a90580034495b4f7b1f6201c4481ffc627c5
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d6f436477a8226dec870d039c8fe10491456a325
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859862"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93298193"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
 Cet article présente les sources de données prises en charge pour les rapports paginés dans le service Power BI, et comment vous connecter à des sources de données Azure SQL Database. Certaines sources de données sont prises en charge en mode natif. Vous pouvez vous connecter à d’autres par le biais de passerelles de données.
 
@@ -57,7 +59,7 @@ Si vous ne fournissez pas d’informations d’identification, une erreur se pro
 
 ![Paramètres pour Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
 
-Sélectionnez le lien **Modifier les informations d’identification** pour une source de données donnée afin d’afficher la boîte de dialogue **Configurer** :
+Sélectionnez le lien **Modifier les informations d’identification** pour une source de données donnée afin d’afficher la boîte de dialogue **Configurer**  :
 
 ![Configurer Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
 
@@ -65,9 +67,9 @@ Pour les sources de données Azure SQL Database, voici les types d’authentific
 
 - De base (nom d’utilisateur et mot de passe)
 - Authentification unique (SSO)
-- OAuth2 (jeton AAD stocké)
+- OAuth2 (jeton Azure Active Directory stocké)
 
-Pour que l’authentification unique et OAuth2 fonctionnent correctement, [la prise en charge de l’authentification AAD doit être activée](/azure/sql-database/sql-database-aad-authentication-configure) sur le serveur Azure SQL Database auquel la source de données se connecte. Pour la méthode d’authentification OAuth2, AAD génère un jeton et le stocke en vue d’un accès ultérieur à la source de données. Pour utiliser la [méthode d’authentification SSO](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) à la place, sélectionnez l’option SSO située juste en dessous, **Les utilisateurs finaux utilisent leurs propres informations d’identification OAuth2 pour accéder à cette source de données via DirectQuery**.
+Pour que l’authentification unique et OAuth2 fonctionnent correctement, la [prise en charge de l’authentification Azure Active Directory doit être activée](/azure/sql-database/sql-database-aad-authentication-configure) sur le serveur Azure SQL Database auquel la source de données se connecte. Pour la méthode d’authentification OAuth2, Azure Active Directory génère un jeton et le stocke en vue d’un accès ultérieur à la source de données. Pour utiliser la [méthode d’authentification SSO](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) à la place, sélectionnez l’option SSO située juste en dessous, **Les utilisateurs finaux utilisent leurs propres informations d’identification OAuth2 pour accéder à cette source de données via DirectQuery**.
   
 ## <a name="next-steps"></a>Étapes suivantes
 

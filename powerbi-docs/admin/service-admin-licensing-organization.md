@@ -10,12 +10,12 @@ ms.date: 06/24/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 825b336a96b998c04b019195ad3f3beea96d0a19
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 86a28c1d89537a59bf96d82fb3df87a4a0ccf391
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857286"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916081"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
@@ -55,7 +55,7 @@ La désactivation de l’inscription en libre-service empêche les utilisateurs 
 1. Dans le menu encadré de gauche, sélectionnez **Facturation** > **Acheter des services**.
 1. Recherchez l’offre Power BI (gratuit) ou faites défiler la liste pour le trouver. Sélectionnez-la, puis **Obtenir maintenant**.
 1. Entrez le nombre de licences nécessaires pour couvrir tous vos utilisateurs.
-1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence**, puis validez.
+1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence** , puis validez.
 
   ![Capture d’écran de l’abonnement gratuit auto-attribué, montrant l’inscription en libre-service.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
@@ -84,7 +84,7 @@ Il existe deux genres d’abonnements Power BI pour les organisations : standar
 
 Avec un abonnement Power BI Pro standard en libre-service, les administrateurs affectent des licences par utilisateur. Des frais mensuels par utilisateur sont facturés pour les licences Power BI Pro. Ce type de licence permet la collaboration, la publication, le partage et l’analyse ad hoc. Le contenu est enregistré dans une capacité de stockage partagée complètement managée par Microsoft.
 
-Un abonnement Power BI Premium alloue une capacité dédiée à une organisation. Adapté au décisionnel, à l’analytique Big Data et au reporting cloud et local des grandes entreprises, il fournit des contrôles avancés d’administration et de déploiement. Les ressources de calcul et de stockage dédiées sont gérées par les administrateurs de capacité de l’organisation. Cet environnement dédié fait l’objet d’un forfait mensuel. Entre autres avantages Premium, le contenu stocké dans une capacité Premium est accessible aux utilisateurs dépourvus de licences Power BI Pro et peut leur être distribué. La condition pour pouvoir utiliser Premium est qu’au moins un utilisateur dispose d’une licence Power BI Pro ; par ailleurs, les créateurs de contenu et les développeurs ont toujours besoin d’une licence Power BI Pro.
+Un abonnement Power BI Premium alloue une capacité à une organisation. Adapté au décisionnel, à l’analytique Big Data et au reporting cloud et local des grandes entreprises, il fournit des contrôles avancés d’administration et de déploiement. Les ressources de calcul et de stockage dédiées sont gérées par les administrateurs de capacité de l’organisation. Cet environnement dédié fait l’objet d’un forfait mensuel. Entre autres avantages Premium, le contenu stocké dans une capacité Premium est accessible aux utilisateurs dépourvus de licences Power BI Pro et peut leur être distribué. La condition pour pouvoir utiliser Premium est qu’au moins un utilisateur dispose d’une licence Power BI Pro ; par ailleurs, les créateurs de contenu et les développeurs ont toujours besoin d’une licence Power BI Pro.
 
 Les deux types d’abonnements ne s’excluent pas mutuellement. Il est possible de disposer à la fois de Power BI Premium et de Power BI Pro. Dans cette configuration, le contenu stocké dans la capacité Premium peut être partagé avec tous les utilisateurs ; la capacité partagée est également disponible. Pour plus d’informations sur les limites des capacités, consultez [Gestion du stockage de données dans les espaces de travail Power BI](service-admin-manage-your-data-storage-in-power-bi.md).
 

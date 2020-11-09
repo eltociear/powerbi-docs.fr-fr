@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2020
+ms.date: 10/30/2020
 ms.author: kfollis
 ms.custom: MC
 ROBOTS: NOINDEX
 LocalizationGroup: Admin
-ms.openlocfilehash: 19933ccbf18003e293e823c2b1f201e953c7bde0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 68cd001995603fec3a64e4b2c79ee2216bfe9ac0
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90854779"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132295"
 ---
 # <a name="power-bi-planned-maintenance"></a>Maintenance planifiée de Power BI
 
@@ -38,8 +38,14 @@ Si votre organisation est affectée, nous vous fournirons une notification préa
 * Les clients qui modifient ou publient activement des rapports qui utilisent des objets visuels organisationnels, que ce soit localement ou à partir d’emplacements OneDrive et SharePoint, doivent soit réimporter leurs objets visuels via le magasin d’objets visuels organisationnels, soit télécharger un fichier PBIX mis à jour avant de republier. Pour plus d’informations sur les objets visuels organisationnels, consultez [visuels de l’organisation](organizational-visuals.md).
 * Si des classeurs Excel qui utilisent la fonctionnalité Analyser dans Excel ne sont pas actualisés, vous devrez peut-être mettre à jour la chaîne de connexion ou retélécharger la connexion ODC pour ce jeu de données. Pour plus d’informations, consultez [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data).
 * Les liens vers Power BI incorporés dans le contenu peuvent ne pas se connecter une fois la maintenance terminée. Par exemple, un lien incorporé dans SharePoint ou Teams peut entraîner une erreur pour l’utilisateur. Pour résoudre ce problème, vous devez régénérer le lien incorporé dans Power BI puis mettre à jour les emplacements où ils sont utilisés. Pour plus d’informations sur les liens incorporés, consultez [Incorporer un composant WebPart Rapport dans SharePoint Online](../collaborate-share/service-embed-report-spo.md) et [Collaborer dans Microsoft Teams avec Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+* Certaines des données d’utilisation collectées avant la maintenance ne seront plus disponibles une fois la maintenance terminée. Ces données d’utilisation incluent :
+
+  * Le [journal d’activité Power BI](service-admin-auditing.md#use-the-activity-log). Les utilisateurs doivent télécharger les journaux d’activité avant la maintenance. Vous pouvez également utiliser les [données du journal d’audit Office 365](service-admin-auditing.md#access-your-audit-logs) pour obtenir des informations équivalentes sur les activités.
+  * Le nombre de vues dans la [vue de traçabilité](../collaborate-share/service-data-lineage.md#explore-lineage-view)
+  * [Rapport des métriques de protection des données](service-security-data-protection-metrics-report.md)
+  * Les [métriques d’utilisation (préversion)](../collaborate-share/service-modern-usage-metrics.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Activer les notifications d’interruption de service](service-interruption-notifications.md)
-* [Suivre les modifications à venir dans le centre de messages](/microsoft-365/admin/manage/message-center?view=o365-worldwide)
+* [Suivre les modifications à venir dans le centre de messages](/microsoft-365/admin/manage/message-center)

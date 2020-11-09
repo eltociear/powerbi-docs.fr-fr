@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: b2638c3fdb483f45b6f4b3f9363f42ee36e57f0b
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: ed8f44e7dd1a7e713a9b2bd75dc33f259cb52f2a
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747755"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916334"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -246,7 +246,7 @@ Lorsque les utilisateurs finaux modifient ou créent des rapports, ils peuvent u
 
 * Chaque capacité ne peut utiliser que sa mémoire et ses V-cores alloués, selon la [référence SKU achetée](../../admin/service-premium-what-is.md).
 * Pour connaître la taille de jeu de données recommandée pour chaque référence SKU, consultez [Jeux de données volumineux Premium](../../admin/service-premium-what-is.md#large-datasets).
-* La taille maximale de jeu de données dans une capacité dédiée est de 10 Go.
+* La taille maximale d’un jeu de données dans une capacité est de 10 Go.
 * Le nombre d’actualisations planifiées pour un jeu de données en *mode d’importation* par jour est de 48.
 * L’intervalle entre les actualisations planifiées pour un jeu de données en *mode d’importation* est de 30 minutes.
 * Pour le nombre d’actualisations pouvant être exécutées simultanément sur une capacité, consultez la [gestion et l’optimisation des ressources](../../admin/service-premium-what-is.md#capacity-nodes).

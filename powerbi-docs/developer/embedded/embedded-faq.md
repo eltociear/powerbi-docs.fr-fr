@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 86ac6bebf6373f14ac343721a8594ee9f45b0e89
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 85622b457d1c2eda0af51e0c7190d2691c259a82
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746191"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916495"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -117,7 +117,7 @@ Oui, les applets de commande PowerShell et les API REST Azure Resource Manager v
 * [API REST](/rest/api/power-bi-embedded/) 
 * [Applets de commande PowerShell](/powershell/module/azurerm.powerbiembedded/)
 
-### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité dédiée PBI Embedded dans une solution PBI Embedded ?
+### <a name="what-is-the-pbi-embedded-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité PBI Embedded dans une solution PBI Embedded ?
 
 Pour [promouvoir votre solution en production](embed-sample-for-customers.md#move-to-production), vous devez affecter le contenu Power BI (espace de travail) que votre application utilise à une capacité Power BI Embedded (référence SKU A).
 
@@ -160,7 +160,7 @@ var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAss
 
 ### <a name="what-object-id-is-the-service-principal-object-id"></a>À quoi correspond l’ID d’objet du principal de service ?
 
-L’*ID d’objet* qui s’affiche sur l’écran principal d’une application inscrite est l’ID d’objet de l’application.
+L’ *ID d’objet* qui s’affiche sur l’écran principal d’une application inscrite est l’ID d’objet de l’application.
 
 L’ID d’objet qui se trouve dans la section *Application managée dans l’annuaire local > Propriétés* correspond à l’ID d’objet du principal de service que vous devez utiliser. Cet ID d’objet permet de référencer un principal de service pour les opérations, ou d’apporter des modifications à l’ID d’objet du principal de service (par exemple, utiliser un principal de service comme l’administrateur d’un espace de travail).
 
@@ -270,7 +270,7 @@ Il n’existe pas de tarifs Azure spéciaux pour les associations à but non luc
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Présentation de la collection d’espaces de travail Power BI
 
-La **collection d’espaces de travail Power BI** (**Power BI Embedded** version 1) est une solution basée sur la ressource Azure **Collection d’espaces de travail Power BI**. Cette solution permet de créer des applications **Power BI Embedded** pour les clients avec du contenu Power BI sous la solution **Collection d’espaces de travail Power BI**, des API dédiées et des clés de collection d’espaces de travail permettant d’authentifier l’application sur Power BI.
+La **collection d’espaces de travail Power BI** ( **Power BI Embedded** version 1) est une solution basée sur la ressource Azure **Collection d’espaces de travail Power BI**. Cette solution permet de créer des applications **Power BI Embedded** pour les clients avec du contenu Power BI sous la solution **Collection d’espaces de travail Power BI** , des API dédiées et des clés de collection d’espaces de travail permettant d’authentifier l’application sur Power BI.
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Peut-on migrer d’une collection d’espaces de travail Power BI vers Power BI Embedded ?
 
@@ -278,7 +278,7 @@ La **collection d’espaces de travail Power BI** (**Power BI Embedded** versio
 
 2. Commencez par la preuve de concept d’application **Power BI Embedded** qui utilise le contenu Power BI.
 
-3. Au moment de passer en production, achetez une capacité dédiée **Power BI Embedded** et affectez-y votre contenu Power BI (espace de travail).
+3. Au moment de passer en production, achetez une capacité **Power BI Embedded** et affectez-y votre contenu Power BI (espace de travail).
 
     > [!Note]
     > Vous pouvez continuer à utiliser la **collection d’espaces de travail Power BI** tout en travaillant en parallèle avec une solution **Power BI Embedded**. Quand vous êtes prêt, vous pouvez déplacer votre client vers la nouvelle solution **Power BI Embedded** et mettre hors service la solution **Collection d’espaces de travail Power BI**.
@@ -321,9 +321,9 @@ En voici quelques exemples :
 
 ### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>J’ai téléchargé l’exemple d’application : quelle solution choisir ?
 
-Si vous travaillez avec l’expérience **Incorporer pour vos clients**, enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\App Owns Data* et exécutez le fichier *PowerBIEmbedded_AppOwnsData.sln*.
+Si vous travaillez avec l’expérience **Incorporer pour vos clients** , enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\App Owns Data* et exécutez le fichier *PowerBIEmbedded_AppOwnsData.sln*.
 
-Si vous travaillez avec l’expérience **Incorporer pour votre organisation**, enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* et exécutez le fichier *pbi-saas-embed-report.sln*.
+Si vous travaillez avec l’expérience **Incorporer pour votre organisation** , enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* et exécutez le fichier *pbi-saas-embed-report.sln*.
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Comment puis-je modifier mon application inscrite ?
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/25/2020
 ms.author: kfollis
-ms.openlocfilehash: 20fb1f117432d5c36bfe0c536bc0803871134c95
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 8b9c10c8b3faa87cfc19c3c1d8f87a36de0307dd
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981524"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916127"
 ---
 # <a name="service-interruption-notifications"></a>Notifications d’interruption de service
 
@@ -30,7 +30,7 @@ Il est important d’avoir un aperçu de la disponibilité de vos applications m
 Des notifications sont envoyées en cas de _délai prolongé_ lors d’opérations telles que l’ouverture de rapports, l’actualisation du jeu de données ou l’exécution de requêtes. Après la résolution d’un incident, vous recevez un e-mail de suivi.
 
 > [!NOTE]
-> Cette fonctionnalité est actuellement disponible uniquement pour les capacités dédiées dans Power BI Premium. Elle n’est pas disponible pour la capacité partagée ou embarquée.
+> Cette fonctionnalité est disponible uniquement pour les capacités dans Power BI Premium. Elle n’est pas disponible pour la capacité partagée ou embarquée.
 
 ## <a name="capacity-and-reliability-notifications"></a>Notifications de capacité et de fiabilité
 
@@ -59,7 +59,7 @@ Un administrateur Power BI active les notifications dans le portail d’adminis
 
 1. Identifiez ou créez un groupe de sécurité prenant en charge les e-mails qui doit recevoir des notifications.
 
-1. Dans le portail d’administration, sélectionnez **Paramètres du locataire**. Sous **Paramètres d’aide et de support**, développez **Recevoir des notifications par e-mail pour les pannes ou incidents du service**.
+1. Dans le portail d’administration, sélectionnez **Paramètres du locataire**. Sous **Paramètres d’aide et de support** , développez **Recevoir des notifications par e-mail pour les pannes ou incidents du service**.
 
 1. Activez les notifications, entrez un groupe de sécurité, puis sélectionnez **Appliquer**.
 

@@ -9,16 +9,16 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ddaafaf175e2cb083e8e8eb494c156f0e9de8e0f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b74c381bfddc638c1371d571492eedfc7cf82a65
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633147"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916403"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Application Métriques Power BI Premium
 
-Vous pouvez utiliser l’**application Métriques Power BI Premium** pour gérer l’intégrité et la capacité de votre abonnement Power BI Premium. Avec l’application, les administrateurs utilisent la page **Capacity Health Center** de l’application pour afficher et interagir avec des indicateurs qui surveillent l’intégrité de leur capacité Premium. L’application Métriques se compose de la page d’accueil, appelée **Capacity Health Center**, et de détails sur trois métriques importantes :
+Vous pouvez utiliser l’ **application Métriques Power BI Premium** pour gérer l’intégrité et la capacité de votre abonnement Power BI Premium. Avec l’application, les administrateurs utilisent la page **Capacity Health Center** de l’application pour afficher et interagir avec des indicateurs qui surveillent l’intégrité de leur capacité Premium. L’application Métriques se compose de la page d’accueil, appelée **Capacity Health Center** , et de détails sur trois métriques importantes :
 
 * Mémoire active
 * Attentes de requête
@@ -35,7 +35,7 @@ Les sections suivantes décrivent en détail la page d’accueil et les trois pa
 
 ## <a name="premium-capacity-health-center"></a>Capacity Health Center Premium
 
-Lorsque vous ouvrez l’**application Métriques Power BI Premium**, **Capacity Health Center** s’affiche et fournit une vue d’ensemble de l’intégrité de votre capacité Power BI Premium.
+Lorsque vous ouvrez l’ **application Métriques Power BI Premium** , **Capacity Health Center** s’affiche et fournit une vue d’ensemble de l’intégrité de votre capacité Power BI Premium.
 
 ![Capacity Health Center dans l’application Métriques Premium](media/service-premium-metrics-app/premium-metrics-app-01.png)
 
@@ -47,7 +47,7 @@ Pour afficher des informations spécifiques sur chaque indicateur de performance
 
 ## <a name="the-active-memory-metric"></a>Métrique de mémoire active
 
-La métrique de **mémoire active** est intégrée à la catégorie de *planification de la capacité*, qui constitue un bon indicateur d’intégrité pour évaluer la consommation des ressources de votre capacité, ce qui vous permet d’ajuster la capacité selon les besoins de planification à l’échelle de la capacité. 
+La métrique de **mémoire active** est intégrée à la catégorie de *planification de la capacité* , qui constitue un bon indicateur d’intégrité pour évaluer la consommation des ressources de votre capacité, ce qui vous permet d’ajuster la capacité selon les besoins de planification à l’échelle de la capacité. 
 
 ![Indicateur de performance clé de mémoire active](media/service-premium-metrics-app/premium-metrics-app-02.png)
 
@@ -69,7 +69,7 @@ Ces deux scénarios sont décrits dans les sections suivantes.
 
 ### <a name="scenario-one---current-load-is-too-high"></a>Scénario 1 : la charge actuelle est trop élevée 
 
-Pour déterminer si la capacité dispose de suffisamment de mémoire pour terminer ses charges de travail, consultez le premier visuel de la page : **A : Pourcentage de mémoire consommée**, qui indique la mémoire consommée par les jeux de données activement traités et qui, par conséquent, ne peuvent pas être supprimés.
+Pour déterminer si la capacité dispose de suffisamment de mémoire pour terminer ses charges de travail, consultez le premier visuel de la page : **A : Pourcentage de mémoire consommée** , qui indique la mémoire consommée par les jeux de données activement traités et qui, par conséquent, ne peuvent pas être supprimés.
 
 Le seuil d’alarme, représentant la ligne pointillée rouge, indique les incidents qui consomment 90 % de la mémoire.
 
@@ -99,7 +99,7 @@ Une utilisation élevée et constante de la mémoire active peut entraîner l'ex
 
     ![Graphique b, mémoire consommée par heure](media/service-premium-metrics-app/premium-metrics-app-05.png)     
 
-    **c.** Consultez le tableau **Pourquoi les jeux de données sont en mémoire** pour afficher la liste des jeux de données chargés en mémoire. Triez par *taille du jeu de données (Mo)* pour mettre en surbrillance les jeux de données qui occupent le plus de mémoire. Les opérations de capacité sont soit *interactives*, soit *d’arrière-plan*. Les opérations interactives incluent l’affichage des requêtes et la réponse aux interactions utilisateur (filtrage, interrogation questions-réponses, etc.). Le nombre total de requêtes et d’actualisations permet de savoir si des opérations interactives (requêtes) lourdes ou d’arrière-plan (actualisations) sont effectuées sur le jeu de données. Il est important de comprendre que les opérations interactives ont toujours la priorité sur les opérations d’arrière-plan, et ce, pour garantir la meilleure expérience utilisateur possible. Si les ressources sont insuffisantes, les opérations d’arrière-plan sont ajoutées à une file d’attente puis traitées lorsque les ressources sont libérées. Les opérations d’arrière-plan, notamment les actualisations de jeu de données et les fonctions IA, peuvent être interrompues à mi-parcours par le service Power BI, puis être ajoutées à une file d’attente.
+    **c.** Consultez le tableau **Pourquoi les jeux de données sont en mémoire** pour afficher la liste des jeux de données chargés en mémoire. Triez par *taille du jeu de données (Mo)* pour mettre en surbrillance les jeux de données qui occupent le plus de mémoire. Les opérations de capacité sont soit *interactives* , soit *d’arrière-plan*. Les opérations interactives incluent l’affichage des requêtes et la réponse aux interactions utilisateur (filtrage, interrogation questions-réponses, etc.). Le nombre total de requêtes et d’actualisations permet de savoir si des opérations interactives (requêtes) lourdes ou d’arrière-plan (actualisations) sont effectuées sur le jeu de données. Il est important de comprendre que les opérations interactives ont toujours la priorité sur les opérations d’arrière-plan, et ce, pour garantir la meilleure expérience utilisateur possible. Si les ressources sont insuffisantes, les opérations d’arrière-plan sont ajoutées à une file d’attente puis traitées lorsque les ressources sont libérées. Les opérations d’arrière-plan, notamment les actualisations de jeu de données et les fonctions IA, peuvent être interrompues à mi-parcours par le service Power BI, puis être ajoutées à une file d’attente.
     
     ![tableau c, liste de jeux de données](media/service-premium-metrics-app/premium-metrics-app-06.png)  
 
@@ -107,9 +107,9 @@ Une utilisation élevée et constante de la mémoire active peut entraîner l'ex
 
 Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés au scénario 1 :
 
-1. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
+1. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
 
-2. **Déplacer des jeux de données vers une autre capacité** : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
+2. **Déplacer des jeux de données vers une autre capacité**  : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
 
 
 ### <a name="scenario-two---future-load-will-exceed-limits"></a>Scénario 2 : la charge future dépassera les limites
@@ -136,9 +136,9 @@ Pour diagnostiquer le scénario 2, déterminez si la courbe de tendance présen
 
 Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés au scénario 2 :
 
-1. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
+1. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
 
-2. **Déplacer des jeux de données vers une autre capacité** : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
+2. **Déplacer des jeux de données vers une autre capacité**  : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
 
 
 ## <a name="the-query-waits-metric"></a>Métrique Attentes de requête
@@ -164,7 +164,7 @@ La page du rapport affiche les visuels suivants :
 * Le tableau supérieur intitulé **A : Temps d’attente élevés** répertorie les jeux de données dont les requêtes sont en attente. 
 * **B : Distributions des temps d’attente élevés par heure** indique la répartition des temps d’attente élevés. 
 * Le graphique intitulé **C : Nombre de requêtes longues par heure** indique le nombre de requêtes longues exécutées, par intervalles d’une heure.
-* Le dernier visuel, le tableau **D : Requêtes longues**, affiche les requêtes longues et leurs statistiques.
+* Le dernier visuel, le tableau **D : Requêtes longues** , affiche les requêtes longues et leurs statistiques.
 
 ![Page de détails des attentes de requête](media/service-premium-metrics-app/premium-metrics-app-10.png)
 
@@ -176,7 +176,7 @@ Tout d'abord, vous pouvez déterminer si des requêtes longues sont en cours pen
 
 ![Tableau des temps d’attente élevés](media/service-premium-metrics-app/premium-metrics-app-11.png)
 
-Examinez le **graphique B**, qui indique le nombre de requêtes en attente de plus de 100 ms. Sélectionnez une colonne qui affiche un nombre élevé d’attentes.
+Examinez le **graphique B** , qui indique le nombre de requêtes en attente de plus de 100 ms. Sélectionnez une colonne qui affiche un nombre élevé d’attentes.
 
 ![Distribution des temps d’attente élevés](media/service-premium-metrics-app/premium-metrics-app-12.png)
 
@@ -192,11 +192,11 @@ Par ailleurs, le **graphique D** est également filtré pour afficher les requê
 
 Voici les mesures que vous pouvez prendre pour résoudre les problèmes du scénario 1 :
 
-1. **Exécuter PerfAnalyzer pour optimiser les rapports et les jeux de données** : l'analyseur de performances des rapports montrera l'effet de chaque interaction sur une page, y compris le temps de rafraîchissement de chaque visuel et la partie qui prend le plus de temps.
+1. **Exécuter PerfAnalyzer pour optimiser les rapports et les jeux de données**  : l'analyseur de performances des rapports montrera l'effet de chaque interaction sur une page, y compris le temps de rafraîchissement de chaque visuel et la partie qui prend le plus de temps.
 
-2. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de ressources d’UC, soulageant ainsi toute pression sur l’UC qui risquerait d’entraîner un ralentissement des requêtes.
+2. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de ressources d’UC, soulageant ainsi toute pression sur l’UC qui risquerait d’entraîner un ralentissement des requêtes.
 
-3. **Déplacer des jeux de données vers une autre capacité** : si vous disposez d'une autre capacité avec davantage de ressources d’UC disponibles, vous pouvez y déplacer les espaces de travail contenant les jeux de données dans lesquels figurent les requêtes en attente.
+3. **Déplacer des jeux de données vers une autre capacité**  : si vous disposez d'une autre capacité avec davantage de ressources d’UC disponibles, vous pouvez y déplacer les espaces de travail contenant les jeux de données dans lesquels figurent les requêtes en attente.
 
 ### <a name="scenario-two---too-many-queries"></a>Scénario 2 - trop de requêtes
 
@@ -209,7 +209,7 @@ Lorsque le nombre de requêtes à exécuter dépasse les limites de la capacité
 
 #### <a name="diagnosing-scenario-two"></a>Diagnostic du scénario 2
 
-Dans le **tableau A**, sélectionnez un jeu de données qui présente un pourcentage élevé de temps d'attente.
+Dans le **tableau A** , sélectionnez un jeu de données qui présente un pourcentage élevé de temps d'attente.
 
 ![Tableau des temps d’attente élevés](media/service-premium-metrics-app/premium-metrics-app-16.png)
 
@@ -229,9 +229,9 @@ Si la longueur de la file d'attente a dépassé le seuil de 20, les requêtes du
 
 Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés au scénario 2 :
 
-1. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
+1. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire affectant actuellement la capacité.
 
-2. **Déplacer des jeux de données vers une autre capacité** : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
+2. **Déplacer des jeux de données vers une autre capacité**  : si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données les plus volumineux.
 
 
 ## <a name="the-refresh-waits-metric"></a>La métrique Attentes d’actualisation
@@ -242,7 +242,7 @@ La métrique **Attentes d’actualisation** fournit des informations sur le mome
 
 Cette jauge montre qu'au cours des sept derniers jours depuis la dernière actualisation du rapport, 3,18 % des actualisations ont attendu plus de 10 minutes. 
 
-Pour plus de détails sur l’indicateur de performance clé **Attentes d’actualisation**, cliquez sur le bouton **Explorer** pour affiche une page de métriques et un guide de dépannage dans la colonne de droite de la page du rapport. Le guide fournit des explications détaillées sur les mesures figurant sur la page, et vous aide à comprendre l'état de la capacité et ce que vous pouvez faire pour atténuer les éventuels problèmes.
+Pour plus de détails sur l’indicateur de performance clé **Attentes d’actualisation** , cliquez sur le bouton **Explorer** pour affiche une page de métriques et un guide de dépannage dans la colonne de droite de la page du rapport. Le guide fournit des explications détaillées sur les mesures figurant sur la page, et vous aide à comprendre l'état de la capacité et ce que vous pouvez faire pour atténuer les éventuels problèmes.
 
 ![Exploration des métriques Attentes d’actualisation](media/service-premium-metrics-app/premium-metrics-app-21.png)
 
@@ -271,7 +271,7 @@ Pour diagnostiquer le scénario 1, commencez par déterminer si la limitation es
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Lorsqu’un jeu de données est sélectionné dans le **tableau A**, **le graphique B** est filtré pour indiquer à quel moment l’attente s’est produite.
+    a. Lorsqu’un jeu de données est sélectionné dans le **tableau A** , **le graphique B** est filtré pour indiquer à quel moment l’attente s’est produite.
 
     ![Graphique B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
@@ -281,7 +281,7 @@ Pour diagnostiquer le scénario 1, commencez par déterminer si la limitation es
 
     ![Graphique C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Pour finir, consultez le **graphique D**, qui indique les types d’actualisations qui ont eu lieu : programmées ou à la demande. Toutes les actualisations à la demande qui se produisent en même temps peuvent être la cause de la limitation.
+3. Pour finir, consultez le **graphique D** , qui indique les types d’actualisations qui ont eu lieu : programmées ou à la demande. Toutes les actualisations à la demande qui se produisent en même temps peuvent être la cause de la limitation.
 
     ![Graphique D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
@@ -290,11 +290,11 @@ Pour diagnostiquer le scénario 1, commencez par déterminer si la limitation es
 
 Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés au scénario 1 :
 
-1. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire ou des ressources d’UC affectant actuellement la capacité.
+1. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire ou des ressources d’UC affectant actuellement la capacité.
 
-2. **Déplacer des jeux de données vers une autre capacité** : si vos délais d’attente sont la conséquence d’une forte sollicitation de la mémoire ou si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données en attente.
+2. **Déplacer des jeux de données vers une autre capacité**  : si vos délais d’attente sont la conséquence d’une forte sollicitation de la mémoire ou si vous disposez d'une autre capacité avec davantage de mémoire disponible, vous pouvez y déplacer les espaces de travail contenant les jeux de données en attente.
 
-3. **Répartir des actualisations planifiées** : la répartition des actualisations permet d’éviter l’exécution simultanée d’un trop grand nombre d’actualisations.
+3. **Répartir des actualisations planifiées**  : la répartition des actualisations permet d’éviter l’exécution simultanée d’un trop grand nombre d’actualisations.
 
 
 
@@ -302,7 +302,7 @@ Vous pouvez effectuer les étapes suivantes pour résoudre les problèmes liés 
 
 Dans le scénario 2, il n’y a pas assez de ressources d’UC disponibles pour effectuer l’actualisation. 
 
-Pour les capacités dédiées, Power BI limite le nombre d’actualisations qui peuvent se produire simultanément. Ce nombre est égal au nombre de cœurs principaux x 1,5. Par exemple, une capacité P1 dédiée avec quatre cœurs principaux peut exécuter 6 actualisations simultanément. Une fois le nombre maximal d’actualisations simultanées atteint, les autres actualisations attendent la fin de l’exécution de l’actualisation.
+Pour les capacités, Power BI limite le nombre d’actualisations qui peuvent se produire simultanément. Ce nombre est égal au nombre de cœurs principaux x 1,5. Par exemple, une capacité P1 avec quatre cœurs back-end peut exécuter 6 actualisations simultanément. Une fois le nombre maximal d’actualisations simultanées atteint, les autres actualisations attendent la fin de l’exécution de l’actualisation.
 
 ![Scénario 2 pour l’actualisation](media/service-premium-metrics-app/premium-metrics-app-26.png)
 
@@ -314,7 +314,7 @@ Pour diagnostiquer le scénario 2, commencez par déterminer si la limitation e
 
     ![Tableau A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
-    a. Lorsqu’un jeu de données est sélectionné dans le **tableau A**, **le graphique B** est filtré pour indiquer à quel moment l’attente s’est produite.
+    a. Lorsqu’un jeu de données est sélectionné dans le **tableau A** , **le graphique B** est filtré pour indiquer à quel moment l’attente s’est produite.
 
     ![Graphique B](media/service-premium-metrics-app/premium-metrics-app-23.png)
 
@@ -324,18 +324,18 @@ Pour diagnostiquer le scénario 2, commencez par déterminer si la limitation e
 
     ![Graphique C](media/service-premium-metrics-app/premium-metrics-app-24.png)
 
-3. Pour finir, consultez le **graphique D**, qui indique les types d’actualisations qui ont eu lieu : programmées ou à la demande. Toutes les actualisations à la demande qui se produisent en même temps peuvent être la cause de la limitation.
+3. Pour finir, consultez le **graphique D** , qui indique les types d’actualisations qui ont eu lieu : programmées ou à la demande. Toutes les actualisations à la demande qui se produisent en même temps peuvent être la cause de la limitation.
 
     ![Graphique D](media/service-premium-metrics-app/premium-metrics-app-25.png)
 
 
 #### <a name="remedies-for-scenario-two"></a>Solutions pour le scénario 2
 
-1. **Augmenter la capacité** : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire et d’obtenir deux fois plus d’actualisations simultanées qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire ou des ressources d’UC affectant actuellement la capacité.
+1. **Augmenter la capacité**  : l’augmentation de la capacité jusqu’à la référence SKU suivante permet de libérer deux fois plus de mémoire et d’obtenir deux fois plus d’actualisations simultanées qu’avec la référence SKU actuelle, soulageant ainsi une éventuelle forte sollicitation de la mémoire ou des ressources d’UC affectant actuellement la capacité.
 
-2. **Déplacer des jeux de données vers une autre capacité** : si vos délais d’attente sont dus au fait que vous avez atteint le nombre maximal d’exécutions simultanées et que vous disposez d'une autre capacité permettant davantage d’exécutions, vous pouvez y déplacer les espaces de travail contenant les jeux de données dans lesquels figurent les requêtes en attente.
+2. **Déplacer des jeux de données vers une autre capacité**  : si vos délais d’attente sont dus au fait que vous avez atteint le nombre maximal d’exécutions simultanées et que vous disposez d'une autre capacité permettant davantage d’exécutions, vous pouvez y déplacer les espaces de travail contenant les jeux de données dans lesquels figurent les requêtes en attente.
 
-3. **Répartir des actualisations planifiées** : la répartition des actualisations permet d’éviter l’exécution simultanée d’un trop grand nombre d’actualisations.
+3. **Répartir des actualisations planifiées**  : la répartition des actualisations permet d’éviter l’exécution simultanée d’un trop grand nombre d’actualisations.
 
 
 

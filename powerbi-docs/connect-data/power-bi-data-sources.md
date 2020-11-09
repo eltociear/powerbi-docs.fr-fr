@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/07/2020
 ms.author: davidi
-ms.openlocfilehash: 918b9a98d66a1c739421433d35f593dc74d19773
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: ae6047950256a783172ef871c2bd58dc15ff033a
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981478"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297597"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -64,6 +64,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Google Analytics | Oui | Oui | Non | Non | Non | Non |
 | Google BigQuery | Oui | Oui | Oui | Non | Non | Oui |
 | Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non | Non |
+| LLAP Hive | Oui | Oui | Oui | Oui | Non | Non |
 | HDInsight Interactive Query | Oui | Oui | Oui | Non | Non | Non |
 | IBM DB2 | Oui | Oui | Oui | Oui | Non | Oui |
 | Base de données Informix IBM | Oui | Oui | Non | Oui | Non | Non |

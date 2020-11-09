@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: f100051f81ec5a58dcc5df48761975ed28a7c6b2
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 8edc24e62524834e74fb8334875cc27a259207d1
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599993"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916380"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Configurer et gérer les capacités dans Power BI Premium
 
@@ -24,7 +24,7 @@ Découvrez comment gérer les capacités Power BI Premium et Power BI Embedded, 
 
 ![Écran Paramètres de capacité Power BI](media/service-admin-premium-manage/premium-capacity-management.png)
 
-Les *capacités* sont au cœur des offres Power BI Premium et Power BI Embedded. Elles représentent l’ensemble des ressources réservées à l’usage exclusif de votre organisation. Le fait de disposer d’une capacité dédiée vous permet de publier des tableaux de bord, rapports et jeux de données pour les utilisateurs de votre organisation sans devoir acheter des licences par utilisateur. De plus, les performances du contenu hébergé dans la capacité sont fiables et cohérentes. Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md).
+Les *capacités* sont au cœur des offres Power BI Premium et Power BI Embedded. Elles représentent l’ensemble des ressources réservées à l’usage exclusif de votre organisation. Le fait de disposer d’une capacité vous permet de publier des tableaux de bord, des rapports et des jeux de données pour les utilisateurs de votre organisation, sans devoir acheter des licences pour chaque utilisateur. De plus, les performances du contenu hébergé dans la capacité sont fiables et cohérentes. Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md).
 
 ## <a name="manage-capacity"></a>Gérer la capacité
 
@@ -64,7 +64,7 @@ Les administrateurs de capacité, ainsi que les administrateurs Power BI et les 
 
 ### <a name="capacity-settings"></a>Paramètres de capacité
 
-1. Dans l’écran de gestion de capacité Premium, sous **Actions**, sélectionnez l’**icône d’engrenage** pour examiner et mettre à jour les paramètres. 
+1. Dans l’écran de gestion de capacité Premium, sous **Actions** , sélectionnez l’ **icône d’engrenage** pour examiner et mettre à jour les paramètres. 
 
     ![Actions de capacité dans la zone de gestion des capacités](media/service-admin-premium-manage/capacity-actions.png)
 
@@ -87,7 +87,7 @@ Les administrateurs Power BI et les administrateurs généraux peuvent changer l
 
     ![Modifier la taille de la capacité Power BI Premium](media/service-admin-premium-manage/change-capacity-size.png)
 
-1. Dans l’écran **Changer la taille de la capacité**, ajustez votre capacité comme il convient.
+1. Dans l’écran **Changer la taille de la capacité** , ajustez votre capacité comme il convient.
 
     ![Liste déroulante Changer la taille de la capacité Power BI Premium](media/service-admin-premium-manage/change-capacity-size2.png)
 
@@ -103,12 +103,12 @@ Les administrateurs Power BI et les administrateurs généraux peuvent changer l
 
 ### <a name="manage-user-permissions"></a>Gérer les autorisations de l’utilisateur
 
-Vous pouvez désigner des administrateurs de capacité supplémentaires et des utilisateurs titulaires d’autorisations d’*affectation de capacité*. Les utilisateurs qui ont des autorisations d’affectation peuvent affecter un espace de travail à une capacité s’ils sont administrateurs de cet espace de travail. Ils peuvent également affecter leur espace de travail personnel (*Mon espace de travail*) à la capacité. Les utilisateurs disposant d’autorisations d’affectation n’ont pas accès au portail d’administration.
+Vous pouvez désigner des administrateurs de capacité supplémentaires et des utilisateurs titulaires d’autorisations d’ *affectation de capacité*. Les utilisateurs qui ont des autorisations d’affectation peuvent affecter un espace de travail à une capacité s’ils sont administrateurs de cet espace de travail. Ils peuvent également affecter leur espace de travail personnel ( *Mon espace de travail* ) à la capacité. Les utilisateurs disposant d’autorisations d’affectation n’ont pas accès au portail d’administration.
 
 > [!NOTE]
 > Pour Power BI Embedded, les administrateurs de la capacité sont définis dans le portail Microsoft Azure.
 
-Sous **Autorisations de l’utilisateur**, développez **Utilisateurs avec autorisations d’affectation**, puis ajoutez des utilisateurs ou des groupes selon les besoins.
+Sous **Autorisations de l’utilisateur** , développez **Utilisateurs avec autorisations d’affectation** , puis ajoutez des utilisateurs ou des groupes selon les besoins.
 
 ![Autorisations de l’utilisateur sur la capacité](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
@@ -145,7 +145,7 @@ Vous pouvez également affecter un espace de travail à une capacité Premium à
 
     ![Modifier l’espace de travail à partir du menu contextuel (points de suspension...)](media/service-admin-premium-manage/edit-app-workspace.png)
 
-1. Sous **Modifier l’espace de travail**, développez **Avancé**.
+1. Sous **Modifier l’espace de travail** , développez **Avancé**.
 
 1. Sélectionnez la capacité à laquelle vous souhaitez affecter cet espace de travail.
 

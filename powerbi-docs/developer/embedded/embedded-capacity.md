@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/17/2020
-ms.openlocfilehash: 762cc2d3d170f5418616da46806f8a445490ee8d
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 4102ed7307c9b7be40fb682befc4056094cbe6ad
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635214"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916932"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Capacité et références SKU dans l’analytique incorporée de Power BI
 
-En basculant en mode production, l’analytique incorporée de Power BI nécessite une capacité dédiée (référence SKU *A*, *EM* ou *P*) pour la publication de contenu Power BI incorporé.
+En basculant en mode production, l’analytique incorporée de Power BI nécessite une capacité (référence SKU *A* , *EM* ou *P* ) pour la publication de contenu Power BI incorporé.
 
 La capacité est un ensemble dédié de ressources réservées à une utilisation exclusive. Elle vous permet de publier des tableaux de bord, des rapports et des jeux de données pour les utilisateurs sans avoir à acheter des licences par utilisateur. De plus, le niveau de performance qu’elle offre pour votre contenu est fiable et homogène.
 

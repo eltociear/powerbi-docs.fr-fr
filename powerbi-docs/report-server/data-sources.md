@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 10/29/2020
 ms.author: maggies
-ms.openlocfilehash: cedabd613e177aa9a3645e80db38b74d799b8799
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 52d38fd0705a6f9335f0ddd965acb0d9f56d38ee
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861196"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045076"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services. Certaines sources de données sont disponibles dans Power BI Desktop, optimisées pour Power BI Report Server, mais ne sont pas prises en charge lors de la publication dans Power BI Report Server.
@@ -189,6 +189,8 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Zendesk (bêta) |Non |Non |Non |Non |
 
 **L’utilisation de l’authentification LDAP avec Teradata (activée dans Power BI Desktop à l’aide de la commande 'setx PBI_EnableTeradataLdap true' à l’invite de commandes) n’est pas prise en charge pour l’actualisation du modèle.
+
+Lorsque vous utilisez des données web dans Power BI Report Server, vous pouvez actualiser uniquement les fichiers de données provenant du web. Les données basées sur une page ou un exemple ne sont pas actualisables. Cette limitation est due au fait que les expressions M créées avec Web.BrowserContents and Web.Page ne peuvent pas être actualisées. Power BI Report Server peut uniquement actualiser les sources de données Web.Contents.
 
 ## <a name="list-of-supported-authentication-methods-for-directquery"></a>Liste des méthodes d’authentification prises en charge pour DirectQuery
 

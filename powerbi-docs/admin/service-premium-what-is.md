@@ -1,6 +1,6 @@
 ---
 title: Présentation de Microsoft Power BI Premium
-description: Power BI Premium fournit à votre organisation une capacité dédiée, ce qui lui permet de bénéficier de performances plus fiables et d’utiliser de plus gros volumes de données, sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur.
+description: Power BI Premium fournit une capacité à votre organisation, ce qui lui permet de bénéficier de performances plus fiables et d’utiliser de plus gros volumes de données, sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 7c81f3b624de0692d597cfb6c79f2159a6133593
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 6ff1f445172c553116148ffb212129b96f34b1da
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91598996"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916012"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -40,7 +40,7 @@ Power BI Premium est un abonnement Microsoft 365 au niveau du locataire, dispo
 
 - Les références SKU **P** (P1-P5), pour l’incorporation et les fonctionnalités d’entreprise nécessitent un engagement mensuel ou annuel, une facturation mensuelle et incluent une licence permettant d’installer localement Power BI Report Server.
 
-- Les références SKU **EM** (EM1-EM3), pour l’_incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
+- Les références SKU **EM** (EM1-EM3), pour l’ _incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
 
 Une autre approche consiste à acheter un abonnement **Power BI Embedded** dans Azure. Seules les références SKU **A** (A1-A6) n’impliquent aucune durée d’engagement et sont facturées à l'heure pour l'utilisation de visuels Power BI avec un étiquetage blanc dans les applications, portails et sites Web ou comme méthode de test des capacités P ou EM. Toutes les références SKU fournissent des v-cores pour créer des capacités. Toutefois, les références SKU EM ne peuvent être utilisées que pour l’incorporation de petite échelle. Les références SKU EM1, EM2, A1 et A2 comprenant moins de quatre v-cores ne s’exécutent pas sur une infrastructure dédiée.
 
@@ -108,7 +108,7 @@ Pour plus d’informations, consultez [Configurer des charges de travail dans un
 
 Le service Power BI utilise toujours de façon optimale les ressources de la capacité, sans jamais dépasser les limites imposées à celle-ci.
 
-Les opérations de capacité sont soit *interactives*, soit *d’arrière-plan*. Les opérations interactives incluent l’affichage des requêtes et la réponse aux interactions utilisateur (filtrage, interrogation questions-réponses, etc.). En règle générale, l’interrogation des modèles d’importation est gourmande en ressources de mémoire, tandis que l’interrogation des modèles DirectQuery et des modèles de connexion active sollicite beaucoup le processeur. Les opérations d’arrière-plan incluent les actualisations des modèles de flux de données et d’importation, ainsi que la mise en cache des requêtes.
+Les opérations de capacité sont soit *interactives* , soit *d’arrière-plan*. Les opérations interactives incluent l’affichage des requêtes et la réponse aux interactions utilisateur (filtrage, interrogation questions-réponses, etc.). En règle générale, l’interrogation des modèles d’importation est gourmande en ressources de mémoire, tandis que l’interrogation des modèles DirectQuery et des modèles de connexion active sollicite beaucoup le processeur. Les opérations d’arrière-plan incluent les actualisations des modèles de flux de données et d’importation, ainsi que la mise en cache des requêtes.
 
 Il est important de comprendre que les opérations interactives ont toujours la priorité sur les opérations d’arrière-plan, et ce, pour garantir la meilleure expérience utilisateur possible. Si les ressources sont insuffisantes, les opérations d’arrière-plan sont ajoutées à une file d’attente en vue d’être traitées lorsque les ressources auront été libérées. Les opérations d’arrière-plan, telles que les actualisations de jeu de données, peuvent être interrompues à mi-parcours par le service Power BI, puis être ajoutées à une file d’attente.
 
@@ -237,7 +237,7 @@ Pour plus d’informations, consultez [Gestion des licences Power BI](service-a
 
 ## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services dans Power BI Premium (préversion)
 
-Le **moteur Vertipaq Analysis Services**, validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
+Le **moteur Vertipaq Analysis Services** , validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
 
 Avec un accès en lecture seule, les outils Microsoft comme SQL Server Management Studio (SSMS) et SQL Server Profiler, ainsi que les applications tierces telles que DAX Studio et les applications de visualisation des données, peuvent se connecter aux jeux de données Premium et les interroger à l’aide d’événements XMLA, DAX, MDX, DMV et Trace. Avec un accès en lecture/écriture, les outils de modélisation des données d’entreprise, tels que Visual Studio avec l’extension de projets Analysis Services ou l’éditeur tabulaire Open source, peuvent déployer des modèles tabulaires en tant que jeu de données dans un espace de travail Premium. Et, avec des outils tels que SSMS, les administrateurs peuvent utiliser TMSL (Tabular Model Scripting Language) pour écrire des modifications de métadonnées et des scénarios d’actualisation des données avancés. 
 

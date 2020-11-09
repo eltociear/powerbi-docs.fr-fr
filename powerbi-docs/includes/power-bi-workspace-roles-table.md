@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 10/21/2020
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 87c35df25a17090f1788abbeb979afab3ad9d6a9
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 3828a11f4b4447f6484e121fec84fb44d702c86a
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462215"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93135606"
 ---
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ ms.locfileid: "92462215"
 | Ajouter/supprimer des personnes, y compris d’autres administrateurs.  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Autoriser les Contributeurs à mettre à jour l’application pour l’espace de travail  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Ajouter des membres ou d’autres rôles avec des autorisations inférieures.  |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
-| Publier et modifier des autorisations pour une application |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| Publier, modifier et annuler la publication des autorisations d’une application |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Mettre à jour une application |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |  Si autorisé<sup>1</sup>  |   |
 | Partager un élément ou une application<sup>2</sup> |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Permettre à d’autres utilisateurs de repartager des éléments<sup>2</sup> |  ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Coche Oui](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |

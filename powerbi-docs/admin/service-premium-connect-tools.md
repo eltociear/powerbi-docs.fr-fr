@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 10/14/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 5e30a59e637b39099cdd0ad2eb99223cff20fbe6
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: f13c6990ae1cc0842cd490f88dfdb8fb382d7900
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116543"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916058"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Connectivité des jeux de données avec le point de terminaison XMLA (préversion)
 
@@ -37,7 +37,7 @@ Par défaut, la connexion en *lecture seule* à l’aide du point de terminaison
 
 Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Services et SQL Server Analysis Services, et désormais pris en charge par les jeux de données Power BI Premium :
 
-**Visual Studio avec Analysis Services projets** , également appelé SQL Server Data Tools ou simplement **SSDT**, est un outil de création de modèles de niveau entreprise pour les modèles tabulaires Analysis Services. Les extensions de projets Analysis Services sont prises en charge sur toutes les éditions de Visual Studio 2017 et versions ultérieures, y compris l’édition Communauté gratuite. La version d’extension 2.9.6 ou ultérieure est requise pour déployer des modèles tabulaires dans un espace de travail Premium. Lors du déploiement vers un espace de travail Premium, le modèle doit être au niveau de compatibilité 1500 ou supérieur. La lecture-écriture XMLA est requise sur la charge de travail des jeux de données. Pour en savoir plus, consultez [Outils pour Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current).
+**Visual Studio avec Analysis Services projets** , également appelé SQL Server Data Tools ou simplement **SSDT** , est un outil de création de modèles de niveau entreprise pour les modèles tabulaires Analysis Services. Les extensions de projets Analysis Services sont prises en charge sur toutes les éditions de Visual Studio 2017 et versions ultérieures, y compris l’édition Communauté gratuite. La version d’extension 2.9.6 ou ultérieure est requise pour déployer des modèles tabulaires dans un espace de travail Premium. Lors du déploiement vers un espace de travail Premium, le modèle doit être au niveau de compatibilité 1500 ou supérieur. La lecture-écriture XMLA est requise sur la charge de travail des jeux de données. Pour en savoir plus, consultez [Outils pour Analysis Services](/analysis-services/tools-and-applications-used-in-analysis-services?view=power-bi-premium-current).
 
 **SQL Server Management Studio (SSMS)**   : prend en charge les requêtes DAX, MDX et XMLA. Effectuez des opérations d’actualisation précises et des scripts de métadonnées du jeu de données à l’aide du [Langage de script de modèle tabulaire](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les métadonnées de script. Requiert SSMS version 18.4 ou ultérieure. Téléchargez [ici](/sql/ssms/download-sql-server-management-studio-ssms).
 
@@ -49,11 +49,11 @@ Voici quelques-uns des outils les plus courants utilisés avec Azure Analysis Se
 
 **Power BI Report Builder**  : outil qui permet de créer des rapports paginés. Créez une définition de rapport qui spécifie les données à récupérer, où les obtenir et comment les afficher. Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis, publier votre rapport dans le service Power BI. L’accès en lecture seule XMLA est requis. Pour en savoir plus, consultez  [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
-**Éditeur tabulaire** : outil Open source permettant de créer, de maintenir et de gérer des modèles tabulaires à l’aide d’un éditeur simplifié et intuitif. Une vue hiérarchique affiche tous les objets de votre modèle tabulaire. Les objets sont organisés par dossiers d’affichage avec support de la modification de propriété à sélection multiple et de la mise en surbrillance de la syntaxe DAX. L’accès en lecture seule XMLA est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour en savoir plus, consultez [tabulareditor.github.io](https://tabulareditor.github.io/).
+**Éditeur tabulaire**  : outil Open source permettant de créer, de maintenir et de gérer des modèles tabulaires à l’aide d’un éditeur simplifié et intuitif. Une vue hiérarchique affiche tous les objets de votre modèle tabulaire. Les objets sont organisés par dossiers d’affichage avec support de la modification de propriété à sélection multiple et de la mise en surbrillance de la syntaxe DAX. L’accès en lecture seule XMLA est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour en savoir plus, consultez [tabulareditor.github.io](https://tabulareditor.github.io/).
 
 **DAX Studio**  : outil Open source pour la création, le diagnostic, le réglage des performances et l’analyse DAX. Les fonctionnalités incluent l’exploration des objets, le traçage intégré, l’analyse de l’exécution de la requête avec des statistiques détaillées, la mise en surbrillance et la mise en forme de la syntaxe DAX. L’accès en lecture seule XMLA est requis pour les opérations de requête. Pour en savoir plus, consultez [daxstudio.org](https://daxstudio.org/).
 
-**ALM Toolkit** : outil de comparaison de schémas Open source pour les jeux de données Power BI, le plus souvent utilisé pour les scénarios de gestion du cycle de vie des applications (ALM). Effectuez le déploiement dans des environnements et conservez les données historiques de l’actualisation incrémentielle. Comparez et fusionnez des fichiers de métadonnées, branches et référentiels. Réutilisez les définitions communes entre les jeux de données. L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour plus d’informations, consultez [alm-toolkit.com](http://alm-toolkit.com/).
+**ALM Toolkit**  : outil de comparaison de schémas Open source pour les jeux de données Power BI, le plus souvent utilisé pour les scénarios de gestion du cycle de vie des applications (ALM). Effectuez le déploiement dans des environnements et conservez les données historiques de l’actualisation incrémentielle. Comparez et fusionnez des fichiers de métadonnées, branches et référentiels. Réutilisez les définitions communes entre les jeux de données. L’accès en lecture seule est requis pour les opérations de requête. L’accès en lecture/écriture est requis pour les opérations de métadonnées. Pour plus d’informations, consultez [alm-toolkit.com](http://alm-toolkit.com/).
 
 **Microsoft Excel**  : les tableaux croisés dynamiques Excel sont l’un des outils les plus courants utilisés pour résumer, analyser, explorer et présenter des données de synthèse à partir de jeux de données Power BI. L’accès en lecture seule est requis pour les opérations de requête. La version « démarrer en un clic » d’Office 16.0.11326.10000 ou une version ultérieure est requise.
 
@@ -86,13 +86,13 @@ Par défaut, une capacité Premium a le paramètre de propriété de point de te
 ### <a name="to-enable-read-write-for-a-capacity"></a>Pour activer l’accès en lecture/écriture pour une capacité
 
 1. Dans le portail d’administrateur, cliquez sur **Paramètres de capacité** > **Power BI Premium** > nom de la capacité.
-2. Développez **Charges de travail**. Dans le paramètre **Point de terminaison XMLA**, sélectionnez **Accès en lecture/écriture**.
+2. Développez **Charges de travail**. Dans le paramètre **Point de terminaison XMLA** , sélectionnez **Accès en lecture/écriture**.
 
     ![Activer le point de terminaison XMLA](media/service-premium-connect-tools/xmla-endpoint-enable.png)
 
 ## <a name="connecting-to-a-premium-workspace"></a>Connexion à un espace de travail Premium
 
-Les espaces de travail attribués à une capacité dédiée ont une chaîne de connexion au format d’URL telle que : `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
+Les espaces de travail attribués à une capacité ont une chaîne de connexion au format d’URL suivant : `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
 Les applications se connectant à l’espace de travail utilisent l’URL, comme un nom de serveur Analysis Services. Par exemple, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
@@ -111,7 +111,7 @@ Dans **Paramètres** > **Premium** > **Connexion à l’espace de travail** de l
 
 ### <a name="initial-catalog"></a>Catalogue initial
 
-Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *Catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur**, cliquez sur **Options** > **Propriétés de la connexion** > **Se connecter à une base de données**, entrez le nom du jeu de données.
+Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *Catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans la boîte de dialogue **Se connecter au serveur** , cliquez sur **Options** > **Propriétés de la connexion** > **Se connecter à une base de données** , entrez le nom du jeu de données.
 
 ### <a name="duplicate-workspace-names"></a>Noms d’espaces de travail dupliqués
 
@@ -178,13 +178,13 @@ Le déploiement d’un projet de modèle tabulaire dans Visual Studio vers un es
 > [!IMPORTANT]
 > Pendant la préversion publique, les appartenances aux rôles ne peuvent pas être spécifiées par des outils utilisant le point de terminaison XMLA. En cas d’échec du déploiement de votre projet de modèle, assurez-vous qu’aucun utilisateur n’est spécifié dans aucun rôle. Une fois que le modèle a été déployé avec succès, spécifiez les utilisateurs pour les rôles de jeu de données dans le service Power BI. Pour en savoir plus, consultez [Rôles de modèle](#model-roles) plus haut dans cet article.
 
-Pour déployer un projet de modèle tabulaire créé dans Visual Studio, vous devez d’abord définir l’URL de connexion de l’espace de travail dans la propriété **Serveur de déploiement** du projet. Dans Visual Studio, **Explorateur de solutions**, cliquez avec le bouton de droite sur le projet > **Propriétés**. Dans la propriété **Serveur**, collez l’URL de connexion à l’espace de travail.
+Pour déployer un projet de modèle tabulaire créé dans Visual Studio, vous devez d’abord définir l’URL de connexion de l’espace de travail dans la propriété **Serveur de déploiement** du projet. Dans Visual Studio, **Explorateur de solutions** , cliquez avec le bouton de droite sur le projet > **Propriétés**. Dans la propriété **Serveur** , collez l’URL de connexion à l’espace de travail.
 
 ![Propriété de déploiement](media/service-premium-connect-tools/xmla-endpoint-ssdt-deploy-property.png)
 
 Une fois la propriété Serveur de déploiement spécifiée, le projet peut alors être déployé.
 
-**Lors du premier déploiement**, un jeu de données est créé dans l’espace de travail à l’aide des métadonnées du modèle.bim. Dans le cadre de l’opération de déploiement, une fois le jeu de données créé dans l’espace de travail à partir des métadonnées du modèle, le traitement pour charger des données dans le jeu de données à partir de sources de données échoue.
+**Lors du premier déploiement** , un jeu de données est créé dans l’espace de travail à l’aide des métadonnées du modèle.bim. Dans le cadre de l’opération de déploiement, une fois le jeu de données créé dans l’espace de travail à partir des métadonnées du modèle, le traitement pour charger des données dans le jeu de données à partir de sources de données échoue.
 
 Le traitement échoue car, contrairement au déploiement sur une instance Azure ou SQL Server Analysis Server, où les informations d’identification de la source de données sont demandées dans le cadre de l’opération de déploiement, lors du déploiement sur un espace de travail Premium, les informations d’identification de la source de données ne peuvent pas être spécifiées dans le cadre de l’opération de déploiement. Au lieu de cela, une fois le déploiement des métadonnées réussi et le jeu de données créé, les informations d’identification de la source de données sont spécifiées dans le service Power BI, dans les paramètres du jeu de données. Dans l’espace de travail, cliquez sur **Jeux de données** > **Paramètres** > **Informations d’identification de la source de données** > **Modifier les informations d’identification**.
 
@@ -192,7 +192,7 @@ Le traitement échoue car, contrairement au déploiement sur une instance Azure 
 
 Une fois les informations d’identification de la source de données spécifiées, vous pouvez actualiser le jeu de données dans le service Power BI, configurer, planifier, actualiser ou traiter (actualiser) à partir de SQL Server Management Studio pour charger des données dans le jeu de données.
 
-La propriété de déploiement **Option de traitement** spécifiée dans le projet, dans Visual Studio, est observée. Toutefois, si une source de données n’a pas encore d’informations d’identification spécifiées dans le service Power BI, même si le déploiement des métadonnées réussit, le traitement échoue. Vous pouvez définir la propriété sur **Ne pas traiter**, en empêchant toute tentative de traitement dans le cadre du déploiement, mais vous pouvez redéfinir la propriété sur **Par défaut**, car une fois les informations d’identification de la source de données spécifiées dans les paramètres de source de données pour le nouveau jeu de données, le traitement dans le cadre des opérations de déploiement ultérieures réussit.
+La propriété de déploiement **Option de traitement** spécifiée dans le projet, dans Visual Studio, est observée. Toutefois, si une source de données n’a pas encore d’informations d’identification spécifiées dans le service Power BI, même si le déploiement des métadonnées réussit, le traitement échoue. Vous pouvez définir la propriété sur **Ne pas traiter** , en empêchant toute tentative de traitement dans le cadre du déploiement, mais vous pouvez redéfinir la propriété sur **Par défaut** , car une fois les informations d’identification de la source de données spécifiées dans les paramètres de source de données pour le nouveau jeu de données, le traitement dans le cadre des opérations de déploiement ultérieures réussit.
 
 ## <a name="connect-with-ssms"></a>Se connecter à SSMS
 
@@ -202,7 +202,7 @@ L’utilisation de SSMS pour se connecter à un espace de travail est similaire 
 
 1. Dans SQL Server Management Studio, cliquez sur **Se connecter** > **Se connecter au serveur**.
 
-2. Dans **Type de serveur**, sélectionnez **Analysis Services**. Dans **Nom du serveur**, entrez l’URL de l’espace de travail. Dans **Authentification**, sélectionnez **Active Directory - Universel avec MFA**, puis dans **Nom d’utilisateur**, entrez votre ID d’utilisateur d’organisation.
+2. Dans **Type de serveur** , sélectionnez **Analysis Services**. Dans **Nom du serveur** , entrez l’URL de l’espace de travail. Dans **Authentification** , sélectionnez **Active Directory - Universel avec MFA** , puis dans **Nom d’utilisateur** , entrez votre ID d’utilisateur d’organisation.
 
     ![Se connecter au serveur dans SSMS](media/service-premium-connect-tools/xmla-endpoint-connect-server.png)
 
@@ -239,18 +239,18 @@ Lors de la connexion à des sources de données et de l’interrogation de donn�
 
 Power BI Desktop peut se connecter à un jeu de données Power BI Premium à l’aide d’une connexion active. Lorsqu’une connexion active est utilisée, il n’est pas nécessaire de répliquer les données localement, ce qui permet aux utilisateurs de consommer plus facilement des modèles sémantiques. Les utilisateurs peuvent se connecter de deux manières :
 
-En sélectionnant **Jeux de données Power BI**, puis en sélectionnant un jeu de données pour créer un rapport. C’est ce qui est **recommandé** aux utilisateurs pour se connecter en temps réel à des jeux de données. Cette méthode fournit une expérience de découverte améliorée qui montre le niveau d’approbation de jeux de données. Les utilisateurs n’ont besoin ni de trouver les URL de l’espace de travail, ni d’effectuer leur suivi. Pour trouver un jeu de données, les utilisateurs tapent simplement le nom du jeu de données ou font défiler pour trouver le jeu de données qu’ils recherchent.
+En sélectionnant **Jeux de données Power BI** , puis en sélectionnant un jeu de données pour créer un rapport. C’est ce qui est **recommandé** aux utilisateurs pour se connecter en temps réel à des jeux de données. Cette méthode fournit une expérience de découverte améliorée qui montre le niveau d’approbation de jeux de données. Les utilisateurs n’ont besoin ni de trouver les URL de l’espace de travail, ni d’effectuer leur suivi. Pour trouver un jeu de données, les utilisateurs tapent simplement le nom du jeu de données ou font défiler pour trouver le jeu de données qu’ils recherchent.
 
 ![Se connecter en temps réel à un jeu de données](media/service-premium-connect-tools/dataset-live-connect.png)
 
-Les utilisateurs peuvent également se connecter en utilisant **Obtenir des données** > **Analysis Services**, spécifier un nom d’espace de travail Power BI Premium en tant qu’URL, sélectionner **Connecter en direct**, puis sélectionner un jeu de données dans le navigateur. Dans ce cas, Power BI Desktop utilise le point de terminaison XMLA pour se connecter en temps réel au jeu de données comme s’il s’agissait d’un modèle de données Analysis Services. 
+Les utilisateurs peuvent également se connecter en utilisant **Obtenir des données** > **Analysis Services** , spécifier un nom d’espace de travail Power BI Premium en tant qu’URL, sélectionner **Connecter en direct** , puis sélectionner un jeu de données dans le navigateur. Dans ce cas, Power BI Desktop utilise le point de terminaison XMLA pour se connecter en temps réel au jeu de données comme s’il s’agissait d’un modèle de données Analysis Services. 
 
 ![Se connecter en temps réel au jeu de données Analysis Services](media/service-premium-connect-tools/as-live-connect.png)
 
 Les organisations qui ont des rapports existants connectés en temps réel à des modèles de données Analysis Services destinés à migrer vers des jeux de données Power BI Premium doivent uniquement modifier l’URL du nom de serveur dans **Transformer des données** > **Paramètres de source de données**.
 
 > [!NOTE]
-> Dans la préversion publique en lecture-écriture XMLA, lorsque Power BI Desktop est utilisé pour se connecter à un jeu de données Power BI Premium avec **Obtenir des données** > **Analysis Services** et en sélectionnant l’option **Connecter en temps réel**, la publication d’un rapport dans le service Power BI n’est pas encore prise en charge.
+> Dans la préversion publique en lecture-écriture XMLA, lorsque Power BI Desktop est utilisé pour se connecter à un jeu de données Power BI Premium avec **Obtenir des données** > **Analysis Services** et en sélectionnant l’option **Connecter en temps réel** , la publication d’un rapport dans le service Power BI n’est pas encore prise en charge.
 
 ## <a name="audit-logs"></a>Journaux d'audit
 

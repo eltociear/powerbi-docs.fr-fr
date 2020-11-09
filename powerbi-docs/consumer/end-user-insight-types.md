@@ -6,15 +6,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 10/12/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8e8411ea29436a5ee19802d2a970b760062fe59e
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: 53074b44457abcf4cae6ffc3cffab2be6e8b95bb
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90763985"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045271"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
 
@@ -66,6 +66,11 @@ Recherche les cas où une majorité d’une valeur totale peut être attribuée 
 
 ![Exemple de facteurs majeurs](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
 
+### <a name="outliers"></a>Valeurs hors norme
+Ce type d’insight utilise un modèle de clustering pour rechercher les valeurs hors norme dans les données n’appartenant pas à une série chronologique. Les valeurs hors norme détectent les catégories dont les valeurs sont sensiblement différentes de celles des autres catégories.
+
+![Exemple de valeurs hors norme](./media/end-user-insight-types/power-bi-outliers.png)
+
 ### <a name="overall-trends-in-time-series"></a>Tendances générales dans une série chronologique
 Détecte les tendances vers le haut ou vers le bas dans les données d’une série chronologique.
 
@@ -87,6 +92,7 @@ L’aperçu de partage stable est similaire à l’aperçu de faible écart, car
 Pour les données d’une série chronologique, détecte les cas où il existe des dates ou heures avec des valeurs fondamentalement différentes des autres valeurs de date et d’heure.
 
 ![Exemple de valeurs hors norme d’une série chronologique](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Informations Power BI](end-user-insights.md)

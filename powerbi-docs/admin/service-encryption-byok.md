@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 08/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 404e613f3e30bda3115ec0a9a3b71907b115bbcc
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 449721a13a126344f3ef8334e63f64579a98ec20
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91374887"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916150"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi"></a>Apporter vos propres clés de chiffrement pour Power BI
 
@@ -58,37 +58,37 @@ Les instructions dans cette section supposent une connaissance élémentaire d�
 
 ### <a name="add-the-service-principal"></a>Ajouter le principal du service
 
-1. Dans le portail Azure, dans votre coffre de clés, sous **Stratégies d’accès**, sélectionnez **Ajouter nouveau**.
+1. Dans le portail Azure, dans votre coffre de clés, sous **Stratégies d’accès** , sélectionnez **Ajouter nouveau**.
 
-1. Sous **Sélectionner le principal**, recherchez et sélectionnez Microsoft.Azure.AnalysisServices.
+1. Sous **Sélectionner le principal** , recherchez et sélectionnez Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > Si vous ne trouvez pas « Microsoft.Azure.AnalysisServices », il est probable que l’abonnement Azure associé à votre solution Azure Key Vault n’ait jamais eu de ressource Power BI associée. Essayez plutôt de rechercher la chaîne suivante : 00000009-0000-0000-c000-000000000000.
 
-1. Sous **Autorisations de clé**, sélectionnez **Ne pas inclure la clé** et **Inclure la clé**.
+1. Sous **Autorisations de clé** , sélectionnez **Ne pas inclure la clé** et **Inclure la clé**.
 
     ![Fichier X PBI Sélectionner le principal et Opérations de chiffrement](media/service-encryption-byok/service-principal.png)
 
-1. Sélectionnez **OK**, puis **Enregistrer**.
+1. Sélectionnez **OK** , puis **Enregistrer**.
 
 > [!NOTE]
 > Pour que Power BI ne puisse plus accéder à vos données à l’avenir, supprimez les droits d’accès à ce principal de service à partir de votre coffre de clés Azure.
 
 ### <a name="create-an-rsa-key"></a>Créer une clé RSA
 
-1. Dans votre coffre de clés, sous **Clés**, sélectionnez **Générer/importer**.
+1. Dans votre coffre de clés, sous **Clés** , sélectionnez **Générer/importer**.
 
-1. Sélectionnez RSA comme **Type de clé**, et une **Taille de clé RSA** de 4 096.
+1. Sélectionnez RSA comme **Type de clé** , et une **Taille de clé RSA** de 4 096.
 
     ![Créer une clé avec le type et la taille clé en évidence](media/service-encryption-byok/create-rsa-key.png)
 
 1. Sélectionnez **Create** (Créer).
 
-1. Sous **Clés**, sélectionnez la clé que vous avez créée.
+1. Sous **Clés** , sélectionnez la clé que vous avez créée.
 
 1. Sélectionnez le GUID de la **Version actuelle** de la clé.
 
-1. Vérifiez que les options **Inclure la clé** et **Ne pas inclure la clé** sont toutes les deux sélectionnées. Copiez l’**Identificateur de clé** à utiliser quand vous activez BYOK dans Power BI.
+1. Vérifiez que les options **Inclure la clé** et **Ne pas inclure la clé** sont toutes les deux sélectionnées. Copiez l’ **Identificateur de clé** à utiliser quand vous activez BYOK dans Power BI.
 
     ![Propriétés avec l’identificateur de clé et les opérations autorisées en évidence](media/service-encryption-byok/key-properties.png)
 
@@ -108,9 +108,9 @@ Avant d’activer BYOK, gardez à l’esprit les points suivants :
 
 - À l’heure actuelle, vous ne pouvez pas désactiver BYOK après l’avoir activé. Selon la façon dont vous spécifiez les paramètres pour `Add-PowerBIEncryptionKey`, vous pouvez contrôler la façon dont vous utilisez BYOK pour une ou plusieurs de vos capacités. Toutefois, vous ne pouvez pas annuler l’introduction des clés dans votre locataire. Pour plus d’informations, consultez [Activer BYOK](#enable-byok).
 
-- Vous ne pouvez pas _directement_ déplacer un espace de travail qui utilise BYOK d’une capacité dédiée dans Power BI Premium vers une capacité partagée. Vous devez d’abord déplacer l’espace de travail vers une capacité dédiée pour laquelle BYOK n’est pas activé.
+- Vous ne pouvez pas déplacer un espace de travail qui utilise le service BYOK d’une capacité dans Power BI Premium _directement_ vers une capacité partagée. Vous devez d’abord déplacer l’espace de travail vers une capacité pour laquelle le service BYOK n’est pas activé.
 
-- Si vous déplacez un espace de travail qui utilise BYOK d’une capacité dédiée dans Power BI Premium vers une capacité partagée, les rapports et les jeux de données deviennent inaccessibles, car ils sont chiffrés avec la clé. Pour éviter cette situation, vous devez d’abord déplacer l’espace de travail vers une capacité dédiée pour laquelle BYOK n’est pas activé.
+- Si vous déplacez un espace de travail qui utilise BYOK à partir d’une capacité Power BI Premium vers une capacité partagée, les rapports et les jeux de données deviendront inaccessibles, car ils sont chiffrés avec la clé. Pour éviter cette situation, vous devez d’abord déplacer l’espace de travail vers une capacité pour laquelle le BYOK n’est pas activé.
 
 ### <a name="enable-byok"></a>Activer BYOK
 
@@ -183,7 +183,7 @@ Power BI fournit des applets de commande supplémentaires pour vous aider à gé
 
     Notez que le chiffrement est activé au niveau de la capacité, mais que vous obtenez l’état du chiffrement au niveau du jeu de données pour l’espace de travail spécifié.
 
-- Utilisez [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) pour basculer (ou _faire pivoter_) la version de la clé utilisée pour le chiffrement. L’applet de commande met simplement à jour la valeur `-KeyVaultKeyUri` pour une clé `-Name` :
+- Utilisez [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) pour basculer (ou _faire pivoter_ ) la version de la clé utilisée pour le chiffrement. L’applet de commande met simplement à jour la valeur `-KeyVaultKeyUri` pour une clé `-Name` :
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9f25c9ffc294a1733a3dba5818dc00bd23124837
-ms.sourcegitcommit: 0d0ab427bb71b37c9e5170c515a8f274e1f20c17
+ms.openlocfilehash: ad4715bbecc94934d0f2ac53551b27d82cb4282c
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87878889"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916955"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Tutoriel : Créer un modèle Machine Learning dans Power BI
 
@@ -44,9 +44,9 @@ Vous pouvez télécharger le jeu de données à partir du site web d’UC Irvine
 
 ### <a name="create-the-entities"></a>Créer les entités
 
-Pour créer les entités dans votre dataflow, connectez-vous au service Power BI et accédez à un espace de travail sur votre capacité dédiée où l’IA est activée.
+Pour créer les entités dans votre dataflow, connectez-vous au service Power BI, puis accédez à un espace de travail sur la capacité où l’IA est activée.
 
-Si vous ne disposez pas déjà d’un espace de travail, vous pouvez en créer un en sélectionnant **Espaces de travail** dans le menu du volet de navigation du service Power BI, puis en sélectionnant **Créer un espace de travail** en bas du panneau qui s’affiche. Cette opération ouvre un panneau sur la droite pour entrer les détails de l’espace de travail. Entrez un nom d’espace de travail et sélectionnez **Avancé**. Confirmez que l’espace de travail utilise une capacité dédiée à l’aide du bouton radio, et qu’il est affecté à une instance de capacité dédiée pour laquelle la préversion de l’intelligence artificielle est activée. Ensuite, sélectionnez **Enregistrer**.
+Si vous ne disposez pas déjà d’un espace de travail, vous pouvez en créer un en sélectionnant **Espaces de travail** dans le menu du volet de navigation du service Power BI, puis en sélectionnant **Créer un espace de travail** en bas du panneau qui s’affiche. Cette opération ouvre un panneau sur la droite pour entrer les détails de l’espace de travail. Entrez un nom d’espace de travail et sélectionnez **Avancé**. Confirmez que l’espace de travail utilise une capacité dédiée à l’aide du bouton radio, et qu’il est affecté à une instance de capacité pour laquelle la préversion de l’intelligence artificielle est activée. Ensuite, sélectionnez **Enregistrer**.
 
 ![Créer un espace de travail](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
@@ -66,7 +66,7 @@ Sélectionnez **Fichier texte/CSV** comme source de données, comme indiqué dan
 
 ![Fichier texte/CSV sélectionné](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)
 
-Dans la page **Connexion à une source de données** qui apparaît ensuite, collez le lien suivant dans le fichier _online_shoppers_intention.csv_ dans la zone **Chemin ou URL du fichier**, puis sélectionnez **Suivant**.
+Dans la page **Connexion à une source de données** qui apparaît ensuite, collez le lien suivant dans le fichier _online_shoppers_intention.csv_ dans la zone **Chemin ou URL du fichier** , puis sélectionnez **Suivant**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
@@ -118,7 +118,7 @@ Vous pouvez vérifier que le modèle est en cours de formation et de validation 
 
 ![Prêt pour l’apprentissage](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)
 
-Une fois l’apprentissage du modèle terminé, le dataflow affiche une date d’actualisation mise à jour. Vous pouvez vérifier que le modèle est formé en accédant à l’onglet **Modèles Machine Learning** dans le dataflow. Le modèle que vous avez créé doit afficher l’état **Entraîné** et l’**Heure du dernier entraînement** doit être mise à jour.
+Une fois l’apprentissage du modèle terminé, le dataflow affiche une date d’actualisation mise à jour. Vous pouvez vérifier que le modèle est formé en accédant à l’onglet **Modèles Machine Learning** dans le dataflow. Le modèle que vous avez créé doit afficher l’état **Entraîné** et l’ **Heure du dernier entraînement** doit être mise à jour.
 
 ![Dernier entraînement le](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png)
 
@@ -139,7 +139,7 @@ Le rapport comprend également une page de détails de formation qui décrit les
 
 ## <a name="apply-the-model-to-a-dataflow-entity"></a>Appliquer le modèle à une entité de dataflow
 
-Sélectionnez le bouton **Appliquer le modèle** en haut du rapport pour appeler ce modèle. Dans la boîte de dialogue **Appliquer**, vous pouvez spécifier l’entité cible qui contient les données source auxquelles le modèle doit être appliqué.
+Sélectionnez le bouton **Appliquer le modèle** en haut du rapport pour appeler ce modèle. Dans la boîte de dialogue **Appliquer** , vous pouvez spécifier l’entité cible qui contient les données source auxquelles le modèle doit être appliqué.
 
 ![Appliquer le modèle](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-19.png)
 

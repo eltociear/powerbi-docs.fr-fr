@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/08/2020
-ms.openlocfilehash: 3be821bfaad91ede2a7348e35c06850c81ddf1b4
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/29/2020
+ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859241"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044779"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -21,6 +21,26 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 
 Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouveautés dans Power BI Report Server](whats-new.md). 
 
+## <a name="october-2020"></a>Octobre 2020
+- **Power BI Report Server**
+    - *Version : 1.9.7604.41261 (build 15.0.1104.239), Date de publication : 27 octobre 2020*
+         - Fonctionnalités
+            - Ajout de la prise en charge des métadonnées de jeu de données avancées dans Power BI Report Server.
+            - Ajout de la possibilité de mettre à jour des connexions de rapports Power BI pour DirectQuery et de les actualiser (pour plus d’informations, consultez [Chaînes de connexion de source de données](./connect-data-source-apis.md)).
+        - Mises à jour de sécurité
+        - Corrections de bogues
+            - Résolution du problème qui empêchait les utilisateurs de modifier les planifications d’actualisation des rapports Power BI.
+            - Correction du message d’erreur équivoque qui s’affichait lorsque les utilisateurs géraient les rapports alors que les informations d’identification avaient expiré.
+            - Correction du problème lié à l’exportation des rapports dont le nom comporte des points.
+            - Résolution des problèmes de lecteur d’écran dans un tableau matriciel.
+            - Correction du problème lors duquel les fichiers journaux étaient vides dans certains cas.
+            - Correction du problème lié à la boîte de dialogue « Se connecter à Power BI »
+            - Mise à jour du convertisseur MHTML pour utiliser un DOCTYPE HTML plus récent
+
+- **Power BI Desktop optimisé pour Power BI Report Server**
+   - *Version : 2.86.961.0 (octobre 2020), Date de publication : 27 octobre 2020* (nouvelle build et nouvelle version)
+        - Contient les changements nécessaires pour la connexion à Power BI Report Server (octobre 2020)        
+   
 ## <a name="may-2020"></a>Mai 2020
 - **Power BI Report Server**
     - *Version : 1.8.7485.35104 (Build 15.0.1103.234), Date de publication : 30 juin 2020*
@@ -46,7 +66,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Correction de problèmes de tabulation dans l’Explorateur de documents.
             - Correction d’un problème lié à l’échec des abonnements pilotés par les données lors de l’utilisation de requêtes DAX.
             - Correction d’un problème dans l’accès aux URL provoquant la non-localisation des correspondances par FindString.
-            - Correction d’un problème qui endommageait des sources de données incorporées quand des rapports étaient déplacés.
+            - Correction d’un problème qui endommageait les sources de données incorporées quand des rapports étaient déplacés.
             - Correction d’un problème provoquant l’échec de l’actualisation planifiée pour certaines sources de données.
             - Ajout d’une vérification à la planification des rapports pour réduire les risques de demandes non valides.
 
@@ -103,7 +123,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
     - *Version : 1.6.7221.30698 (Build 15.0.1102.620), date de publication : 9 octobre 2019*
         - Corrections de bogues
             - Correction pour le visuel personnalisé de filtre de texte.
-            - Correction des performances des segments de liste déroulante.
+            - Correction des problèmes de performances des segments de liste déroulante.
             - Correction de suppression des informations d’identification personnelle de la télémétrie.
           - Correction pour que les URL ne respectent pas la casse.
           
@@ -225,7 +245,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 - **Power BI Report Server**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), publiée : 30 août 2018*
         - Corrections de bogues
-            - Correction d’un problème qui survenait lorsque le serveur était mis à niveau depuis des versions antérieures de PBI Report Server où une redirection de liaison n’était pas mise à jour. Les clients voyaient ceci :      
+            - Correction d’un problème qui survenait lorsque le serveur était mis à niveau à partir des versions antérieures de PBI Report Server et qu’une redirection de liaison n’était pas mise à jour. Les clients voyaient ce message :      
             *`
             Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
              `*
@@ -279,7 +299,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Pour les rapports paginés (RDL), correctif pour la visibilité des paramètres dans un rapport lié qui est rétabli après la modification de ses propriétés
             - Correctif pour le portail web avec l’authentification de formulaires personnalisés qui ignore le cookie d’expiration décalée
             - Correctif pour l’exportation vers Word qui crée une hauteur de ligne inégale si le contenu de la ligne est vide
-            - Pour les rapports paginés (RDL), correctif pour la chaîne de connexion basée sur une expression qui est supprimée quand vous changez les informations d’identification pour la source de données
+            - Pour les rapports paginés (RDL), correctif pour la chaîne de connexion basée sur une expression qui était supprimée quand vous changiez les informations d’identification pour la source de données
             - Correctif pour la possibilité d’utiliser des indicateurs de performance clés avec des valeurs texte
             - Pour les rapports paginés (RDL), correctif pour pouvoir assigner un nouveau jeu de données à un rapport paginé (RDL) existant
             - Autres correctifs de stabilité et de facilité d’utilisation
@@ -311,8 +331,8 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 
     - *Version 1.1.6514.9163 (Build 14.0.600.434), publiée : 1er novembre 2017*
         - Résolutions de bogues
-            - Correctif des problèmes de fiabilité de chargement pour les rapports PBIX de plus de 500 Mo
-            - Résoudre le problème de chargement de données pour les rapports PBIX de plus de 1 Go
+            - Correction des problèmes de fiabilité de chargement pour les rapports PBIX de plus de 500 Mo
+            - Correction du problème de chargement de données pour les rapports PBIX de plus de 1 Go
 
     - *Version 1.1.6513.3500 (Build 14.0.600.433), publiée : 31 octobre 2017*
         - Fonctionnalités
@@ -360,7 +380,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
             - Impossibilité de modifier le nom d’un rapport Power BI dans Power BI Report Server
             - Impossibilité de charger des visuels Power BI dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
 
-    - *Build 14.0.600.271, publiée : 12 juin 2017*
+    - *Build 14.0.600.271, Date de publication : 12 juin 2017*
         - Publication initiale de Power BI Report Server
 
 - **Power BI Desktop optimisé pour Power BI Report Server**

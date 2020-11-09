@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/27/2020
-ms.openlocfilehash: 288e511c38df0326d07fad87f5d239cd5b0cfec0
-ms.sourcegitcommit: 0d8261a3cdef05ed8d4eb2aaffff2c1cc2098624
+ms.openlocfilehash: 07b3004553f62dbdd138d93bf1aba2c08287b9c6
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84126270"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044824"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Chronologie de prise en charge pour Power BI Report Server
 
@@ -30,15 +30,10 @@ Cette stratégie de prise en charge vous permet d’offrir des innovations à vo
 
 | **Version** | **Disponibilité** | **Date de fin du support** |
 | --- | --- | --- |
-| Juin 2017 |12 juin 2017 |Plus pris en charge |
-| Octobre 2017 |31 octobre 2017 | Plus pris en charge |
-| Mars 2018 | 19 mars 2018 | Plus pris en charge |
-| Août 2018 | 15 août 2018 | Plus pris en charge |
-| Janvier 2019 | 23 janvier 2019 | Plus pris en charge |
-| Mai 2019 | 22 mai 2019 | Plus pris en charge |
-| Septembre 2019 | Septembre 2019 | Septembre 2020 
+| Septembre 2019 | Septembre 2019 | La version de septembre 2019 et toutes celles qui la précèdent ne sont plus prises en charge
 | Janvier 2020 | Janvier 2020 | Janvier 2021
 | Mai 2020 | Mai 2020 | Mai 2021
+| Octobre 2020 | Octobre 2020 | Octobre 2021
 
 Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 

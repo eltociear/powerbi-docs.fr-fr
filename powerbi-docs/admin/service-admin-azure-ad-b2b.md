@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/02/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 4a38ca35e6955bc92f52492e657a9e00bad05ea3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c78be4dbd32d243dfaa392a1ac5ebd4d46c23d94
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857608"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916173"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -56,7 +56,7 @@ Procédez comme suit pour envoyer une invitation dans le portail Azure.
 
 1. Dans le [portail Azure](https://portal.azure.com), sélectionnez **Azure Active Directory**.
 
-1. Sous **Gérer**, sélectionnez **Utilisateurs** > **Tous les utilisateurs** > **Nouvel utilisateur invité**.
+1. Sous **Gérer** , sélectionnez **Utilisateurs** > **Tous les utilisateurs** > **Nouvel utilisateur invité**.
 
     ![Capture d’écran du portail Azure avec l’option Nouvel utilisateur invité affichée.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
@@ -92,7 +92,7 @@ Les [utilisateurs invités qui peuvent modifier et gérer le contenu de l’orga
 
 ### <a name="use-power-bi-premium"></a>Utiliser Power BI Premium
 
-L’affectation de l’espace de travail à la [capacité Power BI Premium](service-premium-what-is.md) permet à l’utilisateur invité d’utiliser l’application sans disposer d’une licence Power BI Pro. Power BI Premium permet également à des applications de tirer parti d’autres capacités, comme des fréquences de rafraîchissement accrues, une capacité dédiée et des modèles de grande taille.
+L’affectation de l’espace de travail à la [capacité Power BI Premium](service-premium-what-is.md) permet à l’utilisateur invité d’utiliser l’application sans disposer d’une licence Power BI Pro. Power BI Premium permet également à des applications de tirer parti d’autres fonctionnalités, comme des fréquences de rafraîchissement accrues et des modèles de grande taille.
 
 ![Diagramme de l’expérience de l’utilisateur invité avec Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 

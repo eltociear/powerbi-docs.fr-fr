@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 533dba01bb975d774741643771415aaafa8f155c
-ms.sourcegitcommit: 70a892df1a0c196db58bf9165b3aa31b26bbe149
+ms.openlocfilehash: 94ffbb508fea27e8b80f137539b6120e4c094030
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89092288"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916725"
 ---
 # <a name="power-bi-paginated-reports-in-a-day-course"></a>Rapports paginés Power BI en une journée
 
@@ -87,10 +87,10 @@ Vous pouvez télécharger et configurer un kit d’auto-apprentissage, qui est c
 1. Ouvrez les propriétés du fichier du fichier zip et cochez « Débloquer » (Windows est susceptible de marquer le fichier comme étant potentiellement non approuvé).
 1. Créez un dossier de cours racine. Nous vous recommandons de lui donner un nom comme « C:\Training ». N’oubliez pas cet emplacement, car vous devrez accéder aux fichiers de cours pendant les labos. Les documents du labo font référence à cet emplacement sous le nom de **&lt;CourseFolder&gt;** .
 1. Extrayez le contenu du fichier **PowerBIPRIAD-Student. zip** dans le dossier de cours racine.
-1. Dans le dossier **&lt;CourseFolder&gt;\PowerBIPRIAD**, ouvrez le fichier **ReadMe.txt** et suivez toutes les instructions d’installation.
+1. Dans le dossier **&lt;CourseFolder&gt;\PowerBIPRIAD** , ouvrez le fichier **ReadMe.txt** et suivez toutes les instructions d’installation.
 
 > [!TIP]
-> Le fichier **ReadMe.txt**, les documents de laboratoire et le fichier de présentation (PDF) sont disponibles en anglais ainsi que dans les huit langues suivantes :
+> Le fichier **ReadMe.txt** , les documents de laboratoire et le fichier de présentation (PDF) sont disponibles en anglais ainsi que dans les huit langues suivantes :
 > - Allemand (de-DE)
 > - Espagnol (es-ES)
 > - Français (fr-FR)
@@ -105,7 +105,7 @@ Vous pouvez télécharger et configurer un kit d’auto-apprentissage, qui est c
 >
 > Vous devez vous connecter à Power BI pour publier un fichier Power BI Desktop sur un espace de travail. La publication produit un jeu de données qui est utilisé comme source de données de rapport. Vous n’avez pas besoin d’une licence Power BI Pro ou d’un abonnement Power BI Premium pour utiliser un jeu de données comme source de données de rapport.
 >
-> Certaines tâches des labos impliquent la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé seulement quand il a été enregistré dans un espace de travail sur une [capacité dédiée](../admin/service-premium-what-is.md#dedicated-capacities), pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, le laboratoire vous fournira un lien pour regarder une vidéo qui montre la publication de rapports.
+> Certaines tâches des labos impliquent la publication de votre rapport paginé sur un espace de travail. Vous pouvez ouvrir un rapport paginé uniquement lorsque celui-ci a été enregistré dans un espace de travail d’une [capacité](../admin/service-premium-what-is.md#dedicated-capacities) pour laquelle la charge de travail de rapports paginés est activée. Si vous n’avez pas accès à un espace de travail approprié, le laboratoire vous fournira un lien pour regarder une vidéo qui montre la publication de rapports.
 
 ## <a name="instructor-kit"></a>Kit du formateur
 

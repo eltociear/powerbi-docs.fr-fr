@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/24/2020
-ms.openlocfilehash: d361430387d9c24b8b4ef0b673c50cf4cec5a24b
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.date: 10/16/2020
+ms.openlocfilehash: 62add0b1268b06bb227bdc1b8ec2e4ae59358c57
+ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252594"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044752"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 
@@ -45,9 +45,9 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
     Power BI Desktop démarre et vous pouvez l’utiliser.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Vérifier que vous utilisez la version correcte
-Il est facile de vérifier que vous utilisez la bonne version de Power BI Desktop : Regardez la barre de titre ou l’écran de démarrage dans Power BI Desktop. Vous pouvez voir que vous disposez de la bonne version parce que **Power BI Desktop (mars 2020)** apparaît dans la barre de titre. De plus, les couleurs du logo Power BI sont inversées, jaune sur fond noir au lieu de noir sur fond jaune.
+Il est facile de vérifier que vous utilisez la bonne version de Power BI Desktop : Regardez la barre de titre ou l’écran de démarrage dans Power BI Desktop. Vous pouvez voir que vous disposez de la version adéquate, car **Power BI Desktop (octobre 2020)** s’affiche dans la barre de titre. De plus, les couleurs du logo Power BI sont inversées, jaune sur fond noir au lieu de noir sur fond jaune.
 
-![Power BI Desktop mai 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
+![Power BI Desktop - Octobre 2020](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2020.png)
 
 La barre de titre de la version de Power BI Desktop pour le service Power BI n’indique pas le mois et l’année.
 

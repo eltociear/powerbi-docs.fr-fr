@@ -7,22 +7,24 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 08/07/2019
+ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cf79a5ecf4d98595a033733824a41002a7cd38e0
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 805b7805d932468e973805d9496a5b25d4391fdd
+ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860552"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132617"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Tutoriel : Se connecter à un dépôt GitHub à l’aide de Power BI
-Dans ce tutoriel, vous vous connectez à de vraies données disponibles dans le service GitHub à l’aide de Power BI, qui crée automatiquement des rapports et des tableaux de bord. Vous vous connectez au dépôt public de contenu Power BI (également appelé *référentiel*) et, à partir des informations affichées, vous obtenez des réponses à des questions telles que celles-ci : Combien de personnes contribuent au contenu public Power BI ? Qui y contribue le plus ? Quel jour de la semaine enregistre le plus de contributions ? Et d’autres questions. 
+Dans ce tutoriel, vous allez vous connecter à des données réelles : le référentiel public de contenu Power BI (également appelé *dépôt* ) du service GitHub. Power BI crée automatiquement un tableau de bord et un rapport avec les données. Vous voyez des réponses à des questions comme : Combien de personnes contribuent au dépôt public Power BI ? Qui y contribue le plus ? Quel jour de la semaine enregistre le plus de contributions ? Et d’autres questions. 
+
+Vous pouvez également vous connecter à vos propres dépôts GitHub privés ou publics. L’article [Se connecter à GitHub avec Power BI](service-connect-to-github.md) vous explique comment utiliser une *application modèle* Power BI pour vous connecter à vos dépôts.
 
 ![Rapport GitHub dans Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
-Ce tutoriel vous montre comment effectuer les étapes suivantes :
+Dans ce tutoriel, vous allez effectuer les étapes suivantes :
 
 > [!div class="checklist"]
 > * Demander un compte GitHub, si vous n’en avez pas encore 
@@ -44,17 +46,17 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
 
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Connectez-vous au service Power BI (`https://app.powerbi.com`). 
-2. Dans le volet de navigation, sélectionnez **Applications**, puis **Obtenir des applications**.
+2. Dans le volet de navigation, sélectionnez **Applications** , puis **Obtenir des applications**.
    
    ![Obtenir des applications - Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Sélectionnez **Applications**, tapez **GitHub** dans la zone de recherche > **Get it now** (Obtenir l’application maintenant).
+3. Sélectionnez **Applications** , tapez **GitHub** dans la zone de recherche > **Get it now** (Obtenir l’application maintenant).
    
    ![Obtenir GitHub - Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. Dans **Installer cette application Power BI ?** , sélectionnez**Installer**.
-5. Dans **Votre nouvelle application est prête**, sélectionnez **Accéder à l’application**.
-6. Dans **Démarrer avec votre nouvelle application**, sélectionnez **Se connecter**.
+4. Dans **Installer cette application Power BI ?** , sélectionnez **Installer**.
+5. Dans **Votre nouvelle application est prête** , sélectionnez **Accéder à l’application**.
+6. Dans **Démarrer avec votre nouvelle application** , sélectionnez **Se connecter**.
 
     ![Démarrer avec votre nouvelle application](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
@@ -64,7 +66,7 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
 
 5. Entrez les informations d’identification GitHub que vous avez créées. Power BI ignore cette étape si vous êtes déjà connecté à GitHub dans votre navigateur. 
 
-6. Pour la **Méthode d’authentification**, conservez l’option **oAuth2** sélectionnée \>**Se connecter**.
+6. Pour la **Méthode d’authentification** , conservez l’option **oAuth2** sélectionnée \> **Se connecter**.
 
 7. Suivez les écrans d’authentification GitHub. Accordez l’autorisation d’accès Power BI aux données GitHub.
    
@@ -99,7 +101,7 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
  
     ![Combien y a-t-il d’utilisateurs](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-13. Entre **how many** et **users are there**, tapez **pull requests per** (demandes de tirage par). 
+13. Entre **how many** et **users are there** , tapez **pull requests per** (demandes de tirage par). 
 
      Power BI crée un graphique à barres qui montre le nombre de demandes de tirage par personne.
 
@@ -122,7 +124,7 @@ Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un s
  
     ![Punch Card (Carte perforée) dans un rapport GitHub - Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Comme vous pouvez le remarquer, c’est le mardi à 15 h qu’il y a le plus de *commits*, au moment où les utilisateurs valident leur travail.
+    Comme vous pouvez le remarquer, c’est le mardi à 15 h qu’il y a le plus de *commits* , au moment où les utilisateurs valident leur travail.
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
@@ -138,4 +140,4 @@ Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer l’applica
 Dans ce tutoriel, vous vous êtes connecté à un dépôt public GitHub et vous avez obtenu des données, que Power BI a mises en forme dans un tableau de bord et un rapport. Vous avez répondu à certaines questions en explorant les données du tableau de bord et du rapport. Vous pouvez maintenant découvrir comment vous connecter à d’autres services, tels que Salesforce, Microsoft Dynamics et Google Analytics. 
  
 > [!div class="nextstepaction"]
-> [Se connecter aux services en ligne que vous utilisez](service-connect-to-services.md)
+> [Se connecter à GitHub avec une application modèle Power BI](service-connect-to-github.md)

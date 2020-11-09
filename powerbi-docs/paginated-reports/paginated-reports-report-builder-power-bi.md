@@ -8,17 +8,26 @@ featuredvideoid: jXTiYJKw1Rs
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/19/2020
-ms.openlocfilehash: 16fcc18492b371accaaf3c447d7a88978051f8c3
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/16/2020
+ms.openlocfilehash: 2c136f4d81a9cb1c1904c3a06b58271391c76c23
+ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90859655"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93297759"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
-Les *rapports paginés* sont conçus pour être imprimés ou partagés. Ils sont appelés *paginés*, car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont appelés *pixel parfait*, car vous pouvez contrôler exactement leur mise en page. Power BI Report Builder est l’outil autonome pour la création de rapports paginés. Les rapports paginés sont basés sur la technologie de rapport RDL, ainsi que le format de rapport standard dans SQL Server Reporting Services. 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
+Les *rapports paginés* sont conçus pour être imprimés ou partagés. Ils sont appelés *paginés* , car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont appelés *pixel parfait* , car vous pouvez contrôler exactement leur mise en page. Power BI Report Builder est un outil autonome qui permet de créer des rapports paginés pour le service Power BI. 
+
+Voici quelques liens pour bien commencer :
+
+- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder)
+- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
+- [Exemples de rapports paginés Power BI](paginated-reports-samples.md)
+- Vous recherchez des informations sur Report Builder pour Power BI Report Server ou SQL Server Reporting Services ? Consultez plutôt [Installer Report Builder - Power BI Report Server](../report-server/install-report-builder.md).
 
 Les rapports paginés ont souvent de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
 
@@ -98,5 +107,6 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 - [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://aka.ms/pbireportbuilder)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Cours en ligne : Rapports paginés Power BI en une journée](../learning-catalog/paginated-reports-online-course.md)
+- [Exemples de rapports paginés Power BI](paginated-reports-samples.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
 - [Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients](../developer/embedded/embed-paginated-reports-customers.md)

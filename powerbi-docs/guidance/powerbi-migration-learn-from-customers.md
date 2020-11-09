@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a725d2763d7d044220785c2f9727ee30f14bfd5d
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: d436f01e074c27dc8a0d37f9e62d0ac422c4ab81
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803296"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916679"
 ---
 # <a name="learn-from-customer-power-bi-migrations"></a>En savoir plus sur les migrations Power BI du client
 
@@ -158,7 +158,7 @@ Au cours de l’année passée, l’entreprise a amélioré ses offres de format
 
 Il existe à présent six cours Power BI internes dans son catalogue interne. Le cours [Dashboard in a Day](https://powerbi.microsoft.com/diad/) reste un cours qui plaît beaucoup aux débutants. Pour aider les utilisateurs à approfondir leurs compétences, une série de trois cours Power BI et deux cours DAX sont proposés.
 
-L’une des plus importantes décisions en matière de gouvernance des données est liée à la gestion des capacités Premium. La société a choisi d’aligner sa capacité dédiée sur des domaines d’analytique clés dans les unités commerciales et les services partagés. Ainsi, en cas d’inefficacité, l’impact n’est ressenti que dans un domaine particulier, et les administrateurs décentralisés de la capacité ont la possibilité de gérer cette capacité comme bon leur semble.
+L’une des plus importantes décisions en matière de gouvernance des données est liée à la gestion des capacités Premium. La société a choisi d’aligner sa capacité sur des domaines d’analytique clés dans les unités commerciales et les services partagés. Ainsi, en cas d’inefficacité, l’impact n’est ressenti que dans un domaine particulier, et les administrateurs décentralisés de la capacité ont la possibilité de gérer cette capacité comme bon leur semble.
 
 > [!IMPORTANT]
 > Faites attention à la façon dont les capacités Premium sont utilisées et à la façon dont les espaces de travail leur sont attribués.

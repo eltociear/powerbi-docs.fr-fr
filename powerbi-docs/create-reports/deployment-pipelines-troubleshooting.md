@@ -7,12 +7,12 @@ ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 09/15/2020
-ms.openlocfilehash: 0a90c03c516b64e5a0a81c6a2bbdf0049d48b76f
-ms.sourcegitcommit: be0971576a3f1af7a064371c9cf27dd462dfca82
+ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
+ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92080251"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92916817"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>Résolution des problèmes des pipelines de déploiement
 
@@ -55,7 +55,7 @@ Pour utiliser les pipelines de déploiement, vous devez être un [utilisateur Pr
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>Quel type de capacité puis-je attribuer à un espace de travail dans un pipeline ?
 
-Tous les espaces de travail d’un pipeline de déploiement doivent se trouver dans une capacité dédiée pour que le pipeline soit fonctionnel. Toutefois, vous pouvez utiliser différentes capacités pour différents espaces de travail dans un pipeline. Vous pouvez également utiliser différents types de capacité pour différents espaces de travail dans le même pipeline.
+Tous les espaces de travail d’un pipeline de déploiement doivent se trouver dans une capacité pour que le pipeline soit fonctionnel. Toutefois, vous pouvez utiliser différentes capacités pour différents espaces de travail dans un pipeline. Vous pouvez également utiliser différents types de capacité pour différents espaces de travail dans le même pipeline.
 
 Pour le développement et les tests, vous pouvez utiliser une capacité A ou EM en plus d’un compte Power BI Pro pour chaque utilisateur.
 
@@ -154,7 +154,7 @@ Le contenu peut être déployé sur une étape vide ou une étape qui contient d
 
 * **Déploiement sur une étape vide** : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre ou administrateur dans l’espace de travail source.
 
-* **Déploiement sur une étape avec du contenu** : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre ou administrateur des deux espaces de travail dans les étapes de déploiement source et cible.
+* **Déploiement sur une étape avec du contenu**  : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre ou administrateur des deux espaces de travail dans les étapes de déploiement source et cible.
 
 * **Substitution d’un jeu de données** : le déploiement remplace chaque jeu de données inclus dans l’étape cible, même si le jeu de données n’a pas été modifié. L’utilisateur doit être le propriétaire de tous les jeux de données de la phase cible spécifiés dans le déploiement.
 
