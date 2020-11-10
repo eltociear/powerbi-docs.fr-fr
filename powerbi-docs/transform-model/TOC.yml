@@ -8,7 +8,7 @@
         - name: Vue d’ensemble de l’éditeur de requête
           href: desktop-query-overview.md
         - name: Préparation des données en libre-service avec des dataflows
-          href: service-dataflows-overview.md
+          href: ./dataflows/dataflows-introduction-self-service.md
     - name: Tutoriels
       expanded: true
       items:
@@ -98,39 +98,39 @@
         - name: Préparation des données en libre-service
           items:
             - name: Créer et utiliser des dataflows
-              href: service-dataflows-create-use.md
+              href: ./dataflows/dataflows-create.md
             - name: Utiliser DirectQuery avec des dataflows dans Power BI (préversion)
-              href: service-dataflows-directquery.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Utiliser le moteur de calcul amélioré avec des dataflows
-              href: service-dataflows-enhanced-compute-engine.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Entités calculées avec Power BI Premium
-              href: service-dataflows-computed-entities-premium.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Se connecter à des sources de données avec des dataflows
-              href: service-dataflows-data-sources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Utiliser des dataflows avec des sources de données locales
-              href: service-dataflows-on-premises-gateways.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Lier des entités entre dataflows
-              href: service-dataflows-linked-entities.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Utiliser une actualisation incrémentielle avec des dataflows
-              href: service-dataflows-incremental-refresh.md
+              href: ./dataflows/dataflows-premium-features.md
             - name: Ressources du développeur pour les flux de données
-              href: service-dataflows-developer-resources.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Se connecter à des flux de données dans Power BI Desktop
               href: desktop-connect-dataflows.md
             - name: Flux de données et intégration à Azure Data Lake (préversion)
-              href: service-dataflows-azure-data-lake-integration.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
-              href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+              href: ./dataflows/dataflows-azure-data-lake-storage-integration.md
             - name: Configurer les paramètres de flux de données d’un espace de travail (préversion)
-              href: service-dataflows-configure-workspace-storage-settings.md
+              href: ./dataflows/dataflows-configure-consume.md
             - name: Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
-              href: service-dataflows-add-cdm-folder.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Intégrer Machine Learning à Power BI
-              href: service-machine-learning-integration.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Utiliser Cognitive Services dans Power BI
-              href: service-cognitive-services.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
             - name: Machine Learning automatisé dans Power BI
-              href: service-machine-learning-automated.md
+              href: ./dataflows/dataflows-machine-learning-integration.md
     - name: Référence
       items:
         - name: Raccourcis de l’éditeur de formule

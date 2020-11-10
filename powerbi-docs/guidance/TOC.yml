@@ -21,7 +21,7 @@
             - name: Désactiver l’actualisation en arrière-plan de Power Query
               href: power-query-background-refresh.md
             - name: Bonnes pratiques pour les dataflows
-              href: ../transform-model/service-dataflows-best-practices.md
+              href: ../transform-model/dataflows/dataflows-introduction-self-service.md
         - name: Modélisation des données
           items:
             - name: "Qu’est-ce qu’un schéma en étoile\_?"
