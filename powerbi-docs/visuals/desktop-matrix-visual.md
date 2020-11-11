@@ -1,20 +1,20 @@
 ---
 title: Création d’un visuel de matrice dans Power BI
 description: Découvrez comment le visuel de matrice permet d’effectuer des dispositions échelonnées et une mise en évidence granulaire dans Power BI.
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e96431aaa17b1ae79d940d768a7e160e402c0af3
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: bf3210982380a0a3aa498dea8038366733182d7e
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635858"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412300"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Créer des visualisations de matrice dans Power BI
 
@@ -69,17 +69,17 @@ Le visuel de la matrice vous permet d’effectuer toutes sortes d’opérations 
 
 ### <a name="drill-down-on-row-headers"></a>Descendre dans la hiérarchie sur des en-têtes de ligne
 
-Dans le volet Visualisations, lorsque vous ajoutez plusieurs champs à la section **Lignes** du puits **Champs**, vous permettez la descente dans la hiérarchie sur les lignes du visuel Matrice. Cette opération est similaire à la création d’une hiérarchie, qui vous permet de descendre (et remonter) dans cette hiérarchie et d’analyser les données à chaque niveau.
+Dans le volet Visualisations, lorsque vous ajoutez plusieurs champs à la section **Lignes** du puits **Champs** , vous permettez la descente dans la hiérarchie sur les lignes du visuel Matrice. Cette opération est similaire à la création d’une hiérarchie, qui vous permet de descendre (et remonter) dans cette hiérarchie et d’analyser les données à chaque niveau.
 
-Dans l’image suivante, la section **Lignes** contient les éléments *Étape de vente* et *Taille de l’opportunité*, qui créent un regroupement (ou une hiérarchie) dans les lignes, à partir duquel nous pouvons extraire.
+Dans l’image suivante, la section **Lignes** contient les éléments *Étape de vente* et *Taille de l’opportunité* , qui créent un regroupement (ou une hiérarchie) dans les lignes, à partir duquel nous pouvons extraire.
 
 ![Carte de filtres montrant les lignes choisies](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
-Lorsque le visuel comporte un regroupement créé dans la section **Lignes**, le visuel lui-même affiche les icônes *Explorer* et *Développer* dans l’angle supérieur gauche du visuel.
+Lorsque le visuel comporte un regroupement créé dans la section **Lignes** , le visuel lui-même affiche les icônes *Explorer* et *Développer* dans l’angle supérieur gauche du visuel.
 
 ![matrice avec contrôles d’exploration mis en avant](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-À l’instar du comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie d’*Étape de vente* à *Taille de l’opportunité*, comme l’illustre l’image suivante, où l’icône Descendre d’un niveau dans la hiérarchie (en forme de fourche) a été sélectionnée.
+À l’instar du comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie d’ *Étape de vente* à *Taille de l’opportunité* , comme l’illustre l’image suivante, où l’icône Descendre d’un niveau dans la hiérarchie (en forme de fourche) a été sélectionnée.
 
 ![matrice avec hiérarchie forme de fourche](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
@@ -93,7 +93,7 @@ La sélection de l’option **Descendre dans la hiérarchie** a pour effet de d�
 
 ![la matrice de descente d’un niveau dans la hiérarchie](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Sélectionnez l’icône **Monter dans la hiérarchie** pour revenir à la vue de niveau supérieur précédente. Si vous sélectionnez ensuite **Proposition** > **Afficher le niveau suivant**, vous obtenez une liste alphabétique de tous les éléments du niveau suivant (en l’occurrence, le champ *Taille de l’opportunité*), sans la catégorisation de hiérarchie de niveau supérieur.
+Sélectionnez l’icône **Monter dans la hiérarchie** pour revenir à la vue de niveau supérieur précédente. Si vous sélectionnez ensuite **Proposition** > **Afficher le niveau suivant** , vous obtenez une liste alphabétique de tous les éléments du niveau suivant (en l’occurrence, le champ *Taille de l’opportunité* ), sans la catégorisation de hiérarchie de niveau supérieur.
 
 ![matrice utilisant Afficher le niveau suivant](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
@@ -106,7 +106,7 @@ Vous pouvez également utiliser l’élément de menu **Développer** pour contr
 ![Matrice après avoir appliqué Développer à la proposition](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Descendre dans la hiérarchie sur des en-têtes de colonne
-Tout comme sur des lignes, nous pouvons descendre dans la hiérarchie sur des colonnes. Dans l’image suivante, la zone du champ **Colonnes** comprend deux champs, ce qui crée une hiérarchie similaire à celle que nous avons utilisée pour les lignes plus haut dans cet article. Dans le puits du champ **colonnes**, nous avons *Région* et *Segment*. Dès que le deuxième champ a été ajouté à **Colonnes**, un nouveau menu déroulant affiché sur le visuel, il affiche actuellement **Lignes**.
+Tout comme sur des lignes, nous pouvons descendre dans la hiérarchie sur des colonnes. Dans l’image suivante, la zone du champ **Colonnes** comprend deux champs, ce qui crée une hiérarchie similaire à celle que nous avons utilisée pour les lignes plus haut dans cet article. Dans le puits du champ **colonnes** , nous avons *Région* et *Segment*. Dès que le deuxième champ a été ajouté à **Colonnes** , un nouveau menu déroulant affiché sur le visuel, il affiche actuellement **Lignes**.
 
 ![Matrice après l’ajout de la deuxième valeur de colonne](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -114,11 +114,11 @@ Pour Explorer sur les colonnes, sélectionnez **Colonnes** à partir du menu *Ex
 
 ![menu pour descendre dans la hiérarchie des colonnes](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-Lorsque vous sélectionnez **Descendre dans la hiérarchie**, le niveau suivant de la hiérarchie de colonne pour *Région > Est* s’affiche, en l’occurrence *Nombre d’opportunités*. L'autre région est masquée.
+Lorsque vous sélectionnez **Descendre dans la hiérarchie** , le niveau suivant de la hiérarchie de colonne pour *Région > Est* s’affiche, en l’occurrence *Nombre d’opportunités*. L'autre région est masquée.
 
 ![matrice avec colonne Descendre d’un niveau dans la hiérarchie](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
-Les autres éléments du menu opèrent sur les colonnes de la même manière que sur les lignes (consultez la section précédente, **Descendre dans la hiérarchie sur des en-têtes de ligne**). Nous pouvons **Afficher le niveau suivant** et **Développer au prochain niveau** avec des colonnes comme nous pouvions le faire avec les lignes.
+Les autres éléments du menu opèrent sur les colonnes de la même manière que sur les lignes (consultez la section précédente, **Descendre dans la hiérarchie sur des en-têtes de ligne** ). Nous pouvons **Afficher le niveau suivant** et **Développer au prochain niveau** avec des colonnes comme nous pouvions le faire avec les lignes.
 
 > [!NOTE]
 > Les icônes Descendre dans la hiérarchie et Monter dans la hiérarchie dans l’angle supérieur gauche du visuel de matrice s’appliquent uniquement aux lignes. Pour descendre dans la hiérarchie sur des colonnes, vous devez utiliser le menu contextuel.
@@ -135,7 +135,7 @@ Dans l’image suivante, vous voyez un visuel Matrice avec une disposition éche
 
 ![mode de formatage actuel des données par la matrice](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Vous pouvez aisément ajuster les paramètres de la disposition échelonnée. Le visuel Matrice étant sélectionné, dans la section **Format** (icône de rouleau à peinture) du volet **Visualisations**, développez la section En-têtes de ligne. Vous avez deux options : le commutateur de disposition échelonnée (qui active ou désactive cette option) et le retrait de la disposition échelonnée (qui spécifie l’importance du retrait en pixels).
+Vous pouvez aisément ajuster les paramètres de la disposition échelonnée. Le visuel Matrice étant sélectionné, dans la section **Format** (icône de rouleau à peinture) du volet **Visualisations** , développez la section En-têtes de ligne. Vous avez deux options : le commutateur de disposition échelonnée (qui active ou désactive cette option) et le retrait de la disposition échelonnée (qui spécifie l’importance du retrait en pixels).
 
 ![Carte d’en-têtes de lignes affichant le contrôle de disposition échelonnée](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
@@ -209,14 +209,14 @@ Si vous avez une colonne ou une mesure qui contient des URL de site web, vous po
 
 ![Capture d’écran montrant l’icône de mise en forme associée à l’URL web.](media/desktop-matrix-visual/power-bi-web-url.png)
 
-Activez **URL Web**, puis sélectionnez un champ à utiliser comme URL de la colonne. Une fois appliquées, les valeurs de ce champ (colonne) deviennent des liens actifs. Placez le curseur dessus pour voir le lien, puis sélectionnez-le pour accéder à cette page. 
+Activez **URL Web** , puis sélectionnez un champ à utiliser comme URL de la colonne. Une fois appliquées, les valeurs de ce champ (colonne) deviennent des liens actifs. Placez le curseur dessus pour voir le lien, puis sélectionnez-le pour accéder à cette page. 
 
 Pour plus d’informations, consultez [Mise en forme conditionnelle des tableaux](../create-reports/desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Couleurs d’ombrage et de police avec les visuels Matrice
 Avec le visuel de matrice, vous pouvez appliquer la mise en forme conditionnelle (couleurs et ombrage ainsi que barres de données) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.
 
-Pour appliquer la mise en forme conditionnelle, sélectionnez le visuel de matrice et ouvrez le volet **Mise en forme**. Développez la carte **Mise en forme conditionnelle** et, pour **Couleur d’arrière-plan**, **Couleur de police** ou **Barres de données**, mettez le curseur sur **Activé**. Activer l’une de ces options a pour effet d’afficher un lien pour *Contrôles avancés*, qui vous permet de personnaliser les couleurs et les valeurs de la mise en forme des couleurs.
+Pour appliquer la mise en forme conditionnelle, sélectionnez le visuel de matrice et ouvrez le volet **Mise en forme**. Développez la carte **Mise en forme conditionnelle** et, pour **Couleur d’arrière-plan** , **Couleur de police** ou **Barres de données** , mettez le curseur sur **Activé**. Activer l’une de ces options a pour effet d’afficher un lien pour *Contrôles avancés* , qui vous permet de personnaliser les couleurs et les valeurs de la mise en forme des couleurs.
   
   ![Volet Mise en forme montrant le contrôle des barres de données](media/desktop-matrix-visual/power-bi-matrix-data-bars.png)
 

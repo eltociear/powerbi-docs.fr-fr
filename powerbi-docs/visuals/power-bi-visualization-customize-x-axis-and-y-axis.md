@@ -1,21 +1,21 @@
 ---
 title: Personnaliser les propriétés des axes X et Y
 description: Personnaliser les propriétés des axes X et Y
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0da34397c1b707eeece6fdf127c2c4e96f5ab6a5
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b327ca5f4c19638f4afe72abce763601e68fc943
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635674"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413151"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
 
@@ -49,13 +49,13 @@ Avant de pouvoir personnaliser la visualisation, vous devez la générer.
 
     ![signe plus jaune](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png)
 
-1. Dans le volet **Visualisations**, sélectionnez l’icône d’histogramme empilé. Cette action ajoute un modèle vide au canevas du rapport.
+1. Dans le volet **Visualisations** , sélectionnez l’icône d’histogramme empilé. Cette action ajoute un modèle vide au canevas du rapport.
 
     ![Capture d’écran du volet Visualisations et d’un histogramme empilé vide](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-column-chart.png)
 
-1. Pour définir les valeurs de l’axe X, dans le volet **Champs**, sélectionnez **Temps** > **FiscalMonth** (MoisFiscal).
+1. Pour définir les valeurs de l’axe X, dans le volet **Champs** , sélectionnez **Temps** > **FiscalMonth** (MoisFiscal).
 
-1. Pour définir les valeurs de l’axe Y, dans le volet **Champs**, sélectionnez **Sales** > **Last Year Sales** (Ventes > Ventes de l’année dernière) et **Sales** > **This Year Sales** > **Value** (Ventes > Ventes de cette année > Valeur).
+1. Pour définir les valeurs de l’axe Y, dans le volet **Champs** , sélectionnez **Sales** > **Last Year Sales** (Ventes > Ventes de l’année dernière) et **Sales** > **This Year Sales** > **Value** (Ventes > Ventes de cette année > Valeur).
 
     ![Capture d’écran de l’histogramme empilé rempli.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-build-visual.png)
 
@@ -67,7 +67,7 @@ Beaucoup de fonctionnalités peuvent être personnalisées pour l’axe X. Vous
 ### <a name="customize-the-x-axis-labels"></a>Personnaliser les étiquettes de l’axe X
 Les étiquettes de l’axe X sont affichées sous les colonnes du graphique. En l’état, elles sont difficiles à lire du fait de leur couleur gris clair et de leur petite taille. Nous allons changer leur mise en forme.
 
-1. Dans le volet **Visualisations**, sélectionnez **Mise en forme** (icône représentant un rouleau ![Capture d’écran de l’icône rouleau](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png)) pour afficher les options de personnalisation.
+1. Dans le volet **Visualisations** , sélectionnez **Mise en forme** (icône représentant un rouleau ![Capture d’écran de l’icône rouleau](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png)) pour afficher les options de personnalisation.
 
 2. Développez les options de l’axe X.
 
@@ -81,13 +81,13 @@ Les étiquettes de l’axe X sont affichées sous les colonnes du graphique. En
 
 4. Mettez en forme la police, la taille et la couleur du texte :
 
-    - **Couleur** : Sélectionnez noir
+    - **Couleur**  : Sélectionnez noir
 
-    - **Taille du texte** : Entrez *14*
+    - **Taille du texte**  : Entrez *14*
 
-    - **Famille de polices** : Sélectionnez **Arial noir**
+    - **Famille de polices**  : Sélectionnez **Arial noir**
 
-    - **Remplissage interne** : entrez *40 %*
+    - **Remplissage interne**  : entrez *40 %*
 
         ![Capture d’écran avec des étiquettes en angle](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png)
     
@@ -101,7 +101,7 @@ Les étiquettes de l’axe X sont affichées sous les colonnes du graphique. En
    ![Graphique et volet de mise en forme avec des étiquettes horizontales](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png)
 
 ### <a name="customize-the-x-axis-title"></a>Personnaliser le titre de l’axe X
-Quand le titre de l’axe X est **Activé**, il s’affiche sous les étiquettes de l’axe X. 
+Quand le titre de l’axe X est **Activé** , il s’affiche sous les étiquettes de l’axe X. 
 
 1. Commencez par définir le titre de l’axe X sur **Activé**.  
 
@@ -113,11 +113,11 @@ Quand le titre de l’axe X est **Activé**, il s’affiche sous les étiquette
 
 1. Mettez en forme la police, la taille et la couleur de texte du titre :
 
-    - **Couleur du titre** : Sélectionnez orange
+    - **Couleur du titre**  : Sélectionnez orange
 
-    - **Titre de l’axe** : tapez *Mois fiscal* (avec un espace)
+    - **Titre de l’axe**  : tapez *Mois fiscal* (avec un espace)
 
-    - **Taille du texte du titre** : entrez *18*
+    - **Taille du texte du titre**  : entrez *18*
 
     Une fois les personnalisations effectuées, votre histogramme empilé ressemble à ceci :
 
@@ -145,23 +145,23 @@ Les étiquettes de l’axe Y sont affichées à gauche par défaut. En l’éta
 
 1. Mettez en forme la police, la taille et la couleur du texte :
 
-    - **Couleur** : Sélectionnez noir
+    - **Couleur**  : Sélectionnez noir
 
-    - **Taille du texte** : entrez *10*
+    - **Taille du texte**  : entrez *10*
 
-    - **Unités d’affichage** : sélectionnez **Millions**
+    - **Unités d’affichage**  : sélectionnez **Millions**
 
     ![Graphique après mise en forme de l’axe Y](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
 ### <a name="customize-the-y-axis-title"></a>Personnaliser le titre de l’axe Y
-Quand le titre de l’axe Y est **Activé**, il s’affiche à côté des étiquettes de l’axe Y. Pour cette visualisation, étant donné que la présence d’un titre pour l’axe Y n’améliore pas le visuel, laissez **Titre** désactivé (**Off**). Nous ajouterons des titres d’axe Y à un visuel à deux axes plus tard dans ce tutoriel. 
+Quand le titre de l’axe Y est **Activé** , il s’affiche à côté des étiquettes de l’axe Y. Pour cette visualisation, étant donné que la présence d’un titre pour l’axe Y n’améliore pas le visuel, laissez **Titre** désactivé ( **Off** ). Nous ajouterons des titres d’axe Y à un visuel à deux axes plus tard dans ce tutoriel. 
 
 ### <a name="customize-the-gridlines"></a>Personnaliser le quadrillage
 Faisons ressortir les lignes du quadrillage en changeant la couleur et en augmentant l’épaisseur du trait :
 
-- **Couleur** : Sélectionnez orange
+- **Couleur**  : Sélectionnez orange
 
-- **Épaisseur du trait** : Entrez *2*
+- **Épaisseur du trait**  : Entrez *2*
 
 Après toutes ces personnalisations, votre histogramme doit ressembler à ceci :
 
@@ -192,11 +192,11 @@ Dans certaines visualisations, il peut être utile d’avoir deux axes Y. Les g
 ### <a name="format-the-second-y-axis"></a>Mettre en forme le second axe Y
 Comme nous avons commencé avec une visualisation comportant un seul axe Y mis en forme, Power BI créé le deuxième axe Y en appliquant les mêmes paramètres. Toutefois, nous pouvons modifier cela. 
 
-1. Dans le volet **Visualisations**, sélectionnez l’icône représentant un rouleau pour afficher les options de mise en forme.
+1. Dans le volet **Visualisations** , sélectionnez l’icône représentant un rouleau pour afficher les options de mise en forme.
 
 1. Développez les options de l’axe Y.
 
-1. Faites défiler vers le bas jusqu'à l’option **Afficher les valeurs secondaires**. Vérifiez que cette option est activée (**On**). Notre second axe Y représente le graphique en courbes.
+1. Faites défiler vers le bas jusqu'à l’option **Afficher les valeurs secondaires**. Vérifiez que cette option est activée ( **On** ). Notre second axe Y représente le graphique en courbes.
 
    ![Capture d’écran de l’option Afficher les valeurs secondaires.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png)
 

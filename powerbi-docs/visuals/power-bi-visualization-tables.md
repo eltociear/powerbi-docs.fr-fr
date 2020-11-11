@@ -1,7 +1,7 @@
 ---
 title: Visualisations de tableaux dans les rapports et les tableaux de bord Power BI
 description: Ce didacticiel explique comment utiliser les visualisations de tableaux dans les rapports et les tableaux de bord Power BI, et notamment comment redimensionner la largeur des colonnes.
-author: mihart
+author: msftrien
 ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8730860a63d8d78dad7cfaafa11fb411ec8422fe
-ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
+ms.openlocfilehash: 127e8b7033e60c70a4d541cfc4725e7340a514e6
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862964"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412863"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
@@ -60,7 +60,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 Vous allez créer le tableau illustré au début de cet article pour afficher les valeurs de ventes par catégorie d’article.
 
 
-1. Dans le volet **Champs**, sélectionnez **Élément** > **Catégorie**.
+1. Dans le volet **Champs** , sélectionnez **Élément** > **Catégorie**.
 
     Power BI crée automatiquement un tableau qui répertorie toutes les catégories.
 
@@ -68,9 +68,9 @@ Vous allez créer le tableau illustré au début de cet article pour afficher le
 
 1. Sélectionnez **Ventes > Prix unitaire moyen** et **Ventes > Ventes de l’année dernière**
 
-1. Puis sélectionnez **Ventes > Ventes de l’année** et choisissez les trois options : **Valeur**, **Objectif**, et **Statut**.
+1. Puis sélectionnez **Ventes > Ventes de l’année** et choisissez les trois options : **Valeur** , **Objectif** , et **Statut**.
 
-1. Dans le volet **Visualisations**, localisez la zone **Valeurs**, puis sélectionnez les valeurs jusqu’à ce que l’ordre des colonnes du graphique corresponde à la première image de cette page. Faites glisser les valeurs dans la zone si nécessaire. La zone **Valeurs** doit ressembler à ceci :
+1. Dans le volet **Visualisations** , localisez la zone **Valeurs** , puis sélectionnez les valeurs jusqu’à ce que l’ordre des colonnes du graphique corresponde à la première image de cette page. Faites glisser les valeurs dans la zone si nécessaire. La zone **Valeurs** doit ressembler à ceci :
 
     ![zone Valeurs](media/power-bi-visualization-tables/power-bi-table2.png)
 
@@ -109,17 +109,17 @@ Il existe de nombreuses façons de mettre en forme un tableau. Cet article n’e
 
 Dans le contexte des tables, la mise en forme conditionnelle vous permet de spécifier des icônes, des URL, des couleurs d’arrière-plan de cellule et des couleurs de police en fonction des valeurs de cellule, notamment en utilisant des couleurs de dégradé.
 
-1. Dans le volet **Format**, ouvrez la carte **Mise en forme conditionnelle**.
+1. Dans le volet **Format** , ouvrez la carte **Mise en forme conditionnelle**.
 
     ![Carte Mise en forme conditionnelle](media/power-bi-visualization-tables/power-bi-conditional.png)
 
 1. Sélectionnez le champ à mettre en forme, puis mettez le curseur **Couleur d’arrière-plan** sur la position Activé. Power BI applique un dégradé en fonction des valeurs de la colonne. Pour changer les couleurs par défaut, sélectionnez **Contrôles avancés**.
 
-    Si vous sélectionnez l’option **Divergent**, vous pouvez également configurer une valeur **Centrale** en option.
+    Si vous sélectionnez l’option **Divergent** , vous pouvez également configurer une valeur **Centrale** en option.
 
     ![écran Échelles de couleurs de l’arrière-plan](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
-    Nous allons appliquer une mise en forme personnalisée à nos valeurs de prix unitaire moyen. Sélectionnez **Divergent**, ajoutez des couleurs, puis choisissez **OK**.
+    Nous allons appliquer une mise en forme personnalisée à nos valeurs de prix unitaire moyen. Sélectionnez **Divergent** , ajoutez des couleurs, puis choisissez **OK**.
 
     ![tableau montrant des couleurs divergentes](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-background.png)
 1. Ajoutez au tableau un nouveau champ contenant des valeurs positives et négatives. Sélectionnez **Sales > Total Sales Variance** (Ventes > Écart total sur les ventes).
@@ -130,7 +130,7 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 
     ![Carte Mise en forme conditionnelle avec les barres de données définies sur Activé](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. Pour personnaliser les barres de données, sélectionnez **Contrôles avancés**. Dans la boîte de dialogue qui s’affiche, définissez des couleurs pour la **Barre positive** et la **Barre négative**, sélectionnez l’option **Afficher seulement la barre**, puis apportez d’autres modifications souhaitées.
+1. Pour personnaliser les barres de données, sélectionnez **Contrôles avancés**. Dans la boîte de dialogue qui s’affiche, définissez des couleurs pour la **Barre positive** et la **Barre négative** , sélectionnez l’option **Afficher seulement la barre** , puis apportez d’autres modifications souhaitées.
 
     ![Afficher uniquement la barre coché](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -140,7 +140,7 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 
     ![même tableau mais avec des barres dans la dernière colonne](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-1. Ajoutez des signaux visuels à votre table avec des *icônes conditionnelles*.  Dans la carte **Mise en forme conditionnelle**, sélectionnez **This year sales** (Ventes de cette année) dans le menu déroulant. Mettez le curseur **Icônes** sur la position **Activé**.  Pour personnaliser les icônes, sélectionnez **Contrôles avancés**.
+1. Ajoutez des signaux visuels à votre table avec des *icônes conditionnelles*.  Dans la carte **Mise en forme conditionnelle** , sélectionnez **This year sales** (Ventes de cette année) dans le menu déroulant. Mettez le curseur **Icônes** sur la position **Activé**.  Pour personnaliser les icônes, sélectionnez **Contrôles avancés**.
 
     ![Tableau avec Icônes ajouté](media/power-bi-visualization-tables/power-bi-table-icons.png)
 
@@ -180,7 +180,7 @@ Parfois, Power BI tronque l’en-tête d’une colonne dans un tableau de bord e
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
-* Quand vous appliquez une mise en forme de colonne, vous ne pouvez choisir qu’une option d’alignement par colonne : **Automatique**, **Gauche**, **Centre**, **Droite**. Habituellement, une colonne ne contient que du texte ou que des nombres, mais pas une combinaison des deux. Dans les cas où une colonne contient à la fois des nombres et du texte, **Automatique** aligne le texte à gauche et les nombres à droite. Ce comportement prend en charge les langues qui se lisent de gauche à droite.
+* Quand vous appliquez une mise en forme de colonne, vous ne pouvez choisir qu’une option d’alignement par colonne : **Automatique** , **Gauche** , **Centre** , **Droite**. Habituellement, une colonne ne contient que du texte ou que des nombres, mais pas une combinaison des deux. Dans les cas où une colonne contient à la fois des nombres et du texte, **Automatique** aligne le texte à gauche et les nombres à droite. Ce comportement prend en charge les langues qui se lisent de gauche à droite.
 
 * Si les données texte des en-têtes ou des cellules de votre table contiennent des caractères de nouvelle ligne, ces caractères sont ignorés, sauf si vous activez l’option « retour automatique à la ligne » dans la carte de volet de mise en forme associée à l’élément. 
 

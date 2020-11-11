@@ -1,20 +1,20 @@
 ---
 title: Graphiques de compartimentage dans Power BI
 description: Graphiques de compartimentage dans Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6331209d40defc4f97a2de670be207e86eaabfef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3cc14a9b873d86b3e9d62655d41d152cb3348252
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237401"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411449"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 
@@ -26,13 +26,13 @@ Les treemaps utilisent des rectangles imbriqués pour présenter des données so
 
 ![Capture d’écran du treemap Count of Product by Category et Manufacturer.](media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png)
 
-Imaginons que j’utilise ce graphique pour analyser mes ventes, les branches supérieures correspondent aux catégories de vêtements : **Urban**, **Rural**, **Youth** et **Mix**. Power BI divise les rectangles de votre catégorie en feuilles correspondant aux fabricants de vêtements dans cette catégorie. Ces feuilles auront une taille et une nuance qui dépendent du nombre d’articles vendus.
+Imaginons que j’utilise ce graphique pour analyser mes ventes, les branches supérieures correspondent aux catégories de vêtements : **Urban** , **Rural** , **Youth** et **Mix**. Power BI divise les rectangles de votre catégorie en feuilles correspondant aux fabricants de vêtements dans cette catégorie. Ces feuilles auront une taille et une nuance qui dépendent du nombre d’articles vendus.
 
 Dans la branche **Urban** ci-dessus, un grand nombre de vêtements **VanArsdel** a été vendu. Les ventes de vêtements **Natura** et **Fama** sont moindres. Seuls quelques articles **Leo** ont été vendus. Par conséquent, la branche **Urban** de votre treemap se présentera comme suit :
 
 * le plus grand rectangle pour **VanArsdel** dans le coin supérieur gauche ;
 
-* des rectangles légèrement plus petits pour **Natura** et **Fama** ;
+* des rectangles légèrement plus petits pour **Natura** et **Fama**  ;
 
 * un grand nombre d’autres rectangles pour tous les autres vêtements vendus ;
 
@@ -81,7 +81,7 @@ Une fois que vous obtenez le jeu de données **Retail Analysis Sample (Analyse d
 Vous allez créer un rapport et ajouter un treemap simple.
 
 
-1. Dans le volet **Champs**, sélectionnez la mesure **Ventes** > **Ventes de l’année dernière**.
+1. Dans le volet **Champs** , sélectionnez la mesure **Ventes** > **Ventes de l’année dernière**.
 
    ![Capture d’écran de l’option Ventes > Ventes de l’année dernière et du visuel obtenu.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
 
@@ -104,7 +104,7 @@ Vous allez créer un rapport et ajouter un treemap simple.
 
 1. Pointez sur une zone **Chaîne** pour afficher l’info-bulle correspondant à cette portion de la **Catégorie**.
 
-    Par exemple, si vous pointez sur **Fashions Direct** dans le rectangle **090-Home**, l’info-bulle pour la portion Fashions Direct de la catégorie Home s’affiche.
+    Par exemple, si vous pointez sur **Fashions Direct** dans le rectangle **090-Home** , l’info-bulle pour la portion Fashions Direct de la catégorie Home s’affiche.
 
    ![Capture d’écran de l’info-bulle Accueil qui s’affiche.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
 
@@ -117,7 +117,7 @@ La mise en surbrillance d’une **Category** (Catégorie) ou d’un **Detail** (
 
    ![Capture d’écran du rapport Vue d’ensemble des ventes en magasin montrant la surbrillance croisée.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 
-1. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne**, sélectionnez le secteur **Fashions Direct** pour filtrer le graphique de compartimentage.
+1. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne** , sélectionnez le secteur **Fashions Direct** pour filtrer le graphique de compartimentage.
    ![Démonstration GIF de la fonctionnalité de filtrage croisé.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
 1. Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Modifier l’interaction des visuels dans un rapport Power BI](../create-reports/service-reports-visual-interactions.md).

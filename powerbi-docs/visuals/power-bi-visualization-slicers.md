@@ -2,19 +2,19 @@
 title: Segments dans Power BI
 description: Un segment Power BI constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport que vous concevez.
 author: maggiesMSFT
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 07/07/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1f68ed28a57f5dd52d447d48ea231e468dd5d02a
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 75ecc28c703b083355646e1caa5a457cf60cc341
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91747732"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412760"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
@@ -53,13 +53,13 @@ Ce segment filtre les données par responsable de district. Si vous voulez suivr
 
 1. Ouvrez Power BI Desktop, puis dans la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    
-1. Accédez au fichier **Retail Analysis sample PBIX.pbix**, puis sélectionnez **Ouvrir**.
+1. Accédez au fichier **Retail Analysis sample PBIX.pbix** , puis sélectionnez **Ouvrir**.
 
 1. Dans le volet gauche, sélectionnez l’icône **Rapport** ![Capture d’écran de l’icône Rapport](media/power-bi-visualization-kpi/power-bi-report-view.png) pour ouvrir le fichier dans la vue Rapport.
 
-1. Dans la page **Vue d’ensemble**, sans sélectionner d’options dans le canevas de rapport, sélectionnez l’icône **Segment** ![Capture d’écran de l’icône Segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un segment. 
+1. Dans la page **Vue d’ensemble** , sans sélectionner d’options dans le canevas de rapport, sélectionnez l’icône **Segment** ![Capture d’écran de l’icône Segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un segment. 
 
-1. Une fois le nouveau segment sélectionné, dans le volet **Champs**, sélectionnez **District** > **DM** pour remplir le segment. 
+1. Une fois le nouveau segment sélectionné, dans le volet **Champs** , sélectionnez **District** > **DM** pour remplir le segment. 
 
     Le nouveau segment est maintenant renseigné avec une liste de noms de responsables de district et les cases de sélection correspondantes.
     
@@ -81,17 +81,17 @@ Ce segment filtre les données par responsable de district. Si vous voulez suivr
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Contrôler l’impact des segments sur les visuels de la page
 Par défaut, les segments des pages du rapport affectent toutes les autres visualisations sur cette page, y compris les unes par rapport aux autres. Quand vous choisissez des valeurs dans les curseurs de liste et de date que vous venez de créer, notez les effets sur les autres visualisations. Les données filtrées sont une intersection des valeurs sélectionnées dans les deux segments. 
 
-Utilisez les interactions entre les visuels pour empêcher certaines visualisations de la page d’être affectées par les autres. Dans la page **Overview**, le graphique **Total Sales Variance by FiscalMonth and District Manager** affiche des données comparatives générales pour les responsables de district par mois, que vous souhaitez laisser visibles à tout moment. Utilisez les interactions entre les visuels pour empêcher les sélections de segment de filtrer ce graphique. 
+Utilisez les interactions entre les visuels pour empêcher certaines visualisations de la page d’être affectées par les autres. Dans la page **Overview** , le graphique **Total Sales Variance by FiscalMonth and District Manager** affiche des données comparatives générales pour les responsables de district par mois, que vous souhaitez laisser visibles à tout moment. Utilisez les interactions entre les visuels pour empêcher les sélections de segment de filtrer ce graphique. 
 
 1. Accédez à la page **Overview** du rapport, puis sélectionnez le segment **DM** que vous avez créé précédemment.
 
-1. Dans Power BI Desktop, sélectionnez le menu **Format** sous **Outils pour les visuels**, puis sélectionnez **Modifier les interactions**.
+1. Dans Power BI Desktop, sélectionnez le menu **Format** sous **Outils pour les visuels** , puis sélectionnez **Modifier les interactions**.
    
-   Les contrôles de filtre ![Capture d’écran des contrôles de filtre](media/power-bi-visualization-slicers/filter-controls.png) ont chacun deux options (**Filtre** et **Aucun**), qui s’affichent au-dessus de tous les visuels de la page. Au départ, l’option **Filtre** est présélectionnée sur tous les contrôles.
+   Les contrôles de filtre ![Capture d’écran des contrôles de filtre](media/power-bi-visualization-slicers/filter-controls.png) ont chacun deux options ( **Filtre** et **Aucun** ), qui s’affichent au-dessus de tous les visuels de la page. Au départ, l’option **Filtre** est présélectionnée sur tous les contrôles.
    
 1. Sélectionnez l’option **Aucun** dans le contrôle de filtre au-dessus du graphique **Total Sales Variance by FiscalMonth and District Manager** pour arrêter le filtrage par le segment **DM**. 
 
-1. Sélectionnez le segment **OpenDate**, puis l’option **Aucun** au-dessus du graphique **Total Sales Variance by FiscalMonth and District Manager** pour arrêter le filtrage par ce segment. 
+1. Sélectionnez le segment **OpenDate** , puis l’option **Aucun** au-dessus du graphique **Total Sales Variance by FiscalMonth and District Manager** pour arrêter le filtrage par ce segment. 
 
    Maintenant, quand vous sélectionnez des noms et des plages de dates dans les segments, le graphique **Total Sales Variance by FiscalMonth and District Manager** est inchangé.
 
@@ -100,33 +100,33 @@ Pour plus d’informations sur la modification des interactions, consultez [Modi
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synchroniser et utiliser des segments dans d’autres pages
 Vous pouvez synchroniser un segment et l’utiliser sur n’importe quelle page ou sur toutes les pages d’un rapport. 
 
-Dans le rapport actuel, la page **District Monthly Sales** affiche également un segment **District Manager**, mais comment afficher également ce segment dans la page **New Stores** ? La page **New Stores** a un segment, mais elle ne fournit que les informations sur le nom du magasin (**Store Name**). Avec le volet **Synchroniser les segments**, vous pouvez synchroniser le segment **District Manager** avec ces pages afin que les sélections du segment sur n’importe quelle page affectent les visualisations sur les trois pages.
+Dans le rapport actuel, la page **District Monthly Sales** affiche également un segment **District Manager** , mais comment afficher également ce segment dans la page **New Stores**  ? La page **New Stores** a un segment, mais elle ne fournit que les informations sur le nom du magasin ( **Store Name** ). Avec le volet **Synchroniser les segments** , vous pouvez synchroniser le segment **District Manager** avec ces pages afin que les sélections du segment sur n’importe quelle page affectent les visualisations sur les trois pages.
 
 1. Dans le menu **Affichage** de Power BI Desktop, sélectionnez **Synchroniser les segments**.
 
     ![Capture d’écran de la sélection de l’option Synchroniser les segments.](media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png)
 
-    Le volet **Synchroniser les segments** apparaît entre les volets **Filtres**et **Visualisations**.
+    Le volet **Synchroniser les segments** apparaît entre les volets **Filtres** et **Visualisations**.
 
     ![Capture d’écran du volet Synchroniser les segments.](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
 
-1. Dans la page **District Monthly Sales**, sélectionnez le segment **District Manager**. 
+1. Dans la page **District Monthly Sales** , sélectionnez le segment **District Manager**. 
 
-    Étant donné que vous avez déjà créé un segment **District Manager** (**DM**) dans la page **Overview**, le volet **Synchroniser les segments** apparaît comme ceci :
+    Étant donné que vous avez déjà créé un segment **District Manager** ( **DM** ) dans la page **Overview** , le volet **Synchroniser les segments** apparaît comme ceci :
     
     ![Capture d’écran de Synchroniser le segment District Monthly Sales.](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-1. Dans la colonne **Synchronisation** du volet **Synchroniser les segments**, sélectionnez les pages **Overview**, **District Monthly Sales** et **New Stores**. 
+1. Dans la colonne **Synchronisation** du volet **Synchroniser les segments** , sélectionnez les pages **Overview** , **District Monthly Sales** et **New Stores**. 
 
     Après cette sélection, le segment **District Monthly Sales** est synchronisé sur ces trois pages. 
     
-1. Dans la colonne **Visible** du volet **Synchroniser les segments**, sélectionnez la page **New Stores**. 
+1. Dans la colonne **Visible** du volet **Synchroniser les segments** , sélectionnez la page **New Stores**. 
 
     Après cette sélection, le segment **District Monthly Sales** est visible dans ces trois pages. Le volet **Synchroniser les segments** se présente désormais comme ceci :
 
     ![Capture d’écran de Sélectionner des pages dans Synchroniser les segments](media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png)
 
-1. Observez les effets de la synchronisation du segment et de la visibilisation sur les autres pages. Dans la page **District Monthly Sales**, notez que le segment **District Manager** affiche désormais les mêmes sélections que la page **Overview**. Dans la page **New Stores**, le segment **District Manager** est désormais visible et sa sélection affecte les sélections visibles dans le segment **Store Name**. 
+1. Observez les effets de la synchronisation du segment et de la visibilisation sur les autres pages. Dans la page **District Monthly Sales** , notez que le segment **District Manager** affiche désormais les mêmes sélections que la page **Overview**. Dans la page **New Stores** , le segment **District Manager** est désormais visible et sa sélection affecte les sélections visibles dans le segment **Store Name**. 
     
     >[!TIP]
     >Bien que le segment apparaisse initialement dans les pages synchronisées à la même taille et dans la même position que sur la page d’origine, vous pouvez déplacer, redimensionner et mettre en forme des segments synchronisés sur les différentes pages indépendamment. 
@@ -135,25 +135,25 @@ Dans le rapport actuel, la page **District Monthly Sales** affiche également un
     >Si vous synchronisez un segment sur une page sans le rendre visible sur cette page, les sélections de segment effectuées sur les autres pages filtrent toujours les données sur la page.
  
 ## <a name="filtering-slicers"></a>Filtrage des sélecteurs
-Vous pouvez appliquer des filtres de niveau visuel aux sélecteurs pour réduire la liste des valeurs affichées dans les sélecteurs. Par exemple, vous pouvez exclure les valeurs vides d’un sélecteur de liste ou exclure certaines dates d’un sélecteur de plage. Ceci affecte seulement *les valeurs qui sont affichées dans le sélecteur*, et non pas *le filtre que le sélecteur applique à d’autres visuels* quand vous faites une sélection. Par exemple, supposons que vous appliquez un filtre à un sélecteur de plage pour montrer seulement certaines dates. La sélection du segment montre seulement la première date et la dernière date de cette plage. Toutefois, vous pouvez voir d’autres dates dans vos autres visuels. Une fois que vous avez changé la plage sélectionnée dans le sélecteur, vous voyez que les autres visuels se mettent à jour. Effacer la sélection du sélecteur montre à nouveau toutes les dates.
+Vous pouvez appliquer des filtres de niveau visuel aux sélecteurs pour réduire la liste des valeurs affichées dans les sélecteurs. Par exemple, vous pouvez exclure les valeurs vides d’un sélecteur de liste ou exclure certaines dates d’un sélecteur de plage. Ceci affecte seulement *les valeurs qui sont affichées dans le sélecteur* , et non pas *le filtre que le sélecteur applique à d’autres visuels* quand vous faites une sélection. Par exemple, supposons que vous appliquez un filtre à un sélecteur de plage pour montrer seulement certaines dates. La sélection du segment montre seulement la première date et la dernière date de cette plage. Toutefois, vous pouvez voir d’autres dates dans vos autres visuels. Une fois que vous avez changé la plage sélectionnée dans le sélecteur, vous voyez que les autres visuels se mettent à jour. Effacer la sélection du sélecteur montre à nouveau toutes les dates.
 
 Pour plus d’informations sur les filtres de niveau visuel, consultez [Types de filtres](../create-reports/power-bi-report-filter-types.md).
 
 ## <a name="format-slicers"></a>Mettre en forme des segments
-Différentes options de mise en forme sont disponibles selon le type de segment. À l’aide de l’orientation **Horizontal**, de la disposition **Dynamique** et de la coloration des **Éléments**, vous pouvez produire des boutons ou mosaïques, plutôt que des éléments de liste standard et redimensionner les éléments de segment pour s’adapter aux différentes tailles et dispositions d’écran.  
+Différentes options de mise en forme sont disponibles selon le type de segment. À l’aide de l’orientation **Horizontal** , de la disposition **Dynamique** et de la coloration des **Éléments** , vous pouvez produire des boutons ou mosaïques, plutôt que des éléments de liste standard et redimensionner les éléments de segment pour s’adapter aux différentes tailles et dispositions d’écran.  
 
-1. Une fois que vous avez sélectionné le segment **District Manager** dans une page, dans le volet **Visualisations**, sélectionnez l’icône **Format** ![Capture d’écran de l’icône Format](media/power-bi-visualization-slicers/power-bi-paintroller.png) pour afficher les contrôles de mise en forme. 
+1. Une fois que vous avez sélectionné le segment **District Manager** dans une page, dans le volet **Visualisations** , sélectionnez l’icône **Format** ![Capture d’écran de l’icône Format](media/power-bi-visualization-slicers/power-bi-paintroller.png) pour afficher les contrôles de mise en forme. 
     
     ![Capture d’écran de la sélection de format.](media/power-bi-visualization-slicers/3-format.png)
     
 1. Sélectionnez les flèches de liste déroulante à côté de chaque catégorie pour afficher et modifier les options. 
 
 ### <a name="general-options"></a>Options générales
-1. Sous **Format**, sélectionnez **Général**, sélectionnez la couleur rouge sous **Couleur du contour**, puis définissez **Épaisseur du contour** avec la valeur *2*. 
+1. Sous **Format** , sélectionnez **Général** , sélectionnez la couleur rouge sous **Couleur du contour** , puis définissez **Épaisseur du contour** avec la valeur  *2*. 
 
     Ce paramètre change la couleur et l’épaisseur des traits de contour et de soulignement des en-têtes et des éléments.
 
-1. Pour **Orientation**, **Vertical** est la valeur par défaut. Sélectionnez **Horizontal** pour produire un segment avec des titres ou des boutons organisés horizontalement et des flèches de défilement pour accéder aux éléments qui ne tiennent pas dans le segment.
+1. Pour **Orientation** , **Vertical** est la valeur par défaut. Sélectionnez **Horizontal** pour produire un segment avec des titres ou des boutons organisés horizontalement et des flèches de défilement pour accéder aux éléments qui ne tiennent pas dans le segment.
     
     ![Capture d’écran des sélections générales.](media/power-bi-visualization-slicers/4-horizontal.png)
     
@@ -166,7 +166,7 @@ Différentes options de mise en forme sont disponibles selon le type de segment.
     >[!NOTE]
     >Les changements de disposition dynamique peuvent substituer la mise en forme spécifique du titre et des éléments que vous avez définie. 
     
-1. Sous **Position X**, **Position Y**, **Largeur** et **Hauteur**, définissez la position et la taille du segment avec une précision numérique ou déplacez et redimensionnez le segment directement sur le canevas. 
+1. Sous **Position X** , **Position Y** , **Largeur** et **Hauteur** , définissez la position et la taille du segment avec une précision numérique ou déplacez et redimensionnez le segment directement sur le canevas. 
 
     Faites des essais avec des tailles d’éléments et des dispositions différentes et notez les modifications de la mise en forme dynamique en conséquence. Ces options sont disponibles uniquement quand vous sélectionnez des orientations horizontales. 
 
@@ -175,7 +175,7 @@ Différentes options de mise en forme sont disponibles selon le type de segment.
 Pour plus d’informations sur les orientations horizontales et les dispositions dynamiques, consultez [Créer un segment réactif que vous pouvez redimensionner dans Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Options des contrôles de sélection (uniquement pour les segments de liste)
-1. Sous **Contrôles de sélection**, **activez** l’option **Afficher l’option « Tout sélectionner »** pour ajouter un élément **Tout sélectionner** au segment. 
+1. Sous **Contrôles de sélection** , **activez** l’option **Afficher l’option « Tout sélectionner »** pour ajouter un élément **Tout sélectionner** au segment. 
 
     L’option **Afficher l’option « Tout sélectionner »** est **désactivée** par défaut. Quand cette option est activée, vous pouvez sélectionner ou désélectionner tous les éléments. Si tous les éléments sont sélectionnés, le fait de sélectionner un élément le désélectionne, ce qui vous permet de définir un filtre de type *n’est pas*.
     
@@ -189,10 +189,10 @@ Pour plus d’informations sur les orientations horizontales et les dispositions
 L’option **Titre** est **activée** par défaut. Cette sélection affiche le nom du champ de données dans la partie supérieure du segment. Vous pouvez également modifier le titre, ce qui est particulièrement utile pour les segments de hiérarchie. Pour plus d’informations, consultez [Modifier le titre](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md#change-the-title) dans l’article « Ajout de plusieurs champs à un segment de hiérarchie ».
 
 - Pour cet article, mettez en forme le texte du titre comme suit : 
-   - **Couleur de police** : rouge
-   - **Taille du texte** : **14 pt**
-   - **Alignement** : **Centre**
-   - **Famille de polices** : **Arial Black**
+   - **Couleur de police**  : rouge
+   - **Taille du texte**  : **14 pt**
+   - **Alignement**  : **Centre**
+   - **Famille de polices**  : **Arial Black**
 
 
 ### <a name="items-options"></a>Options des éléments
@@ -200,33 +200,33 @@ L’option **Titre** est **activée** par défaut. Cette sélection affiche le n
 Les options des éléments sont disponibles uniquement pour les segments de liste.
 
 1. Pour cet article, mettez en forme les options **Éléments** comme suit :
-    - **Couleur de police** : noir
-    - **Arrière-plan** : rouge clair
-    - **Taille du texte** : **10 pt**
-    - **Famille de polices** : **Arial**
+    - **Couleur de police**  : noir
+    - **Arrière-plan**  : rouge clair
+    - **Taille du texte**  : **10 pt**
+    - **Famille de polices**  : **Arial**
  
-1. Pour **Contour**, choisissez **Cadre** pour dessiner une bordure autour de chaque élément avec la taille et la couleur que vous avez définies dans les options **Général**. 
+1. Pour **Contour** , choisissez **Cadre** pour dessiner une bordure autour de chaque élément avec la taille et la couleur que vous avez définies dans les options **Général**. 
     
     ![Capture d’écran des options de contour.](media/power-bi-visualization-slicers/8-formatted.png)
     
     >[!TIP]
-    >- Après avoir sélectionné **Général** > **Orientation** > **Horizontale**, les éléments désélectionnés affichent le texte et les couleurs d’arrière-plan choisis. Les éléments sélectionnés utilisent la valeur système par défaut, qui est généralement un arrière-plan noir avec du texte blanc.
-    >- Si vous sélectionnez **Général** > **Orientation > Vertical**, les éléments s’affichent toujours dans les couleurs définies et les cases à cocher s’affichent toujours en noir quand elles sont sélectionnées. 
+    >- Après avoir sélectionné **Général** > **Orientation** > **Horizontale** , les éléments désélectionnés affichent le texte et les couleurs d’arrière-plan choisis. Les éléments sélectionnés utilisent la valeur système par défaut, qui est généralement un arrière-plan noir avec du texte blanc.
+    >- Si vous sélectionnez **Général** > **Orientation > Vertical** , les éléments s’affichent toujours dans les couleurs définies et les cases à cocher s’affichent toujours en noir quand elles sont sélectionnées. 
 
 ### <a name="datenumeric-inputs-and-slider-options"></a>Entrées numériques, entrées de date et options de curseur
 
 Les entrées numériques, les entrées de date et les options de curseur sont disponibles uniquement pour les segments de curseur de plage.
 
-- Pour les segments de liste, les options d’entrées de date/numériques sont les mêmes que les options **Éléments**, sauf s’il n’y a aucune option de contour ou de soulignement.
+- Pour les segments de liste, les options d’entrées de date/numériques sont les mêmes que les options **Éléments** , sauf s’il n’y a aucune option de contour ou de soulignement.
 - Les options **Curseur** vous permettent de définir la couleur du curseur de la plage. Vous pouvez également **désactiver** le curseur pour laisser uniquement les entrées numériques.
 
 ### <a name="other-formatting-options"></a>Autres options de mise en forme
 Les autres options de mise en forme sont **désactivées** par défaut. **Activez** ces options pour les contrôler : 
 
-- **Arrière-plan** : ajoutez une couleur d’arrière-plan au segment et définit sa transparence.
-- **Verrouiller l’aspect** : Conservez la hauteur et la largeur relatives du segment quand celui-ci est redimensionné.
-- **Bordure** : ajoutez une bordure autour du segment et définissez sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous **Général**.)
-- **Ombre** : Ajoutez une ombre portée au curseur.
+- **Arrière-plan**  : ajoutez une couleur d’arrière-plan au segment et définit sa transparence.
+- **Verrouiller l’aspect**  : Conservez la hauteur et la largeur relatives du segment quand celui-ci est redimensionné.
+- **Bordure**  : ajoutez une bordure autour du segment et définissez sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous **Général**.)
+- **Ombre**  : Ajoutez une ombre portée au curseur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les segments, consultez les articles suivants :

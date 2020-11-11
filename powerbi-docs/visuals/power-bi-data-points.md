@@ -1,7 +1,7 @@
 ---
 title: Jeux de données volumineux, limites de point de données et stratégies de données
 description: Limites des données pour les visuels et stratégies de réduction des données
-author: mihart
+author: msftrien
 ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5efe83cfa43c6fcb156501774bbaeae79381ab85
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 89bfba0dc679ddb7a9142c83e863cddaf1400063
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857723"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412047"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
 
@@ -52,7 +52,7 @@ Les limites dynamiques sont appliquées automatiquement lorsque le serveur en es
 
 * Dans Power BI Desktop avec SSAS local version 2016 ou ultérieure [exploitant les capacités SuperDax du serveur](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3)
 
-* Dans Desktop et le service Power BI lors de l’utilisation d’un modèle importé, de Direct Query, avec une connexion en temps réel au service ou une connexion en temps réel à AS PaaS. 
+* Dans Desktop et le service Power BI lors de l’utilisation d’un modèle importé, de Direct Query, avec une connexion en temps réel au service ou une connexion en temps réel à AS PaaS. 
 
 * Dans le service Power BI, lors de la connexion via une passerelle locale à un SAAS local, nous ne pouvons pas utiliser les limites dynamiques. La passerelle locale ne prend pas entièrement en charge la stratégie de limites dynamiques qui retourne une structure différente de jeux de résultats à partir du SSAS local.  
 

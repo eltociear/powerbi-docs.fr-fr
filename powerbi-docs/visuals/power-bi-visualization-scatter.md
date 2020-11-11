@@ -1,8 +1,8 @@
 ---
 title: Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 description: Nuages de points, graphiques à points et graphiques en bulles dans Power BI
-author: mihart
-ms.reviewer: amac
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 963bd77568db4390bca73a4ec4e9ce97ee616a58
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: b3b2dc8892b2b9b875621c6925c6f3c652da44c6
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632891"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412691"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 
@@ -87,7 +87,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
 ## <a name="create-a-scatter-chart"></a>Créer un nuage de points
 
-1. Démarrez sur une page de rapport vide et, dans le volet **Champs**, sélectionnez ces champs :
+1. Démarrez sur une page de rapport vide et, dans le volet **Champs** , sélectionnez ces champs :
 
     * **Ventes** > **Ventes par mètre carré**
 
@@ -97,7 +97,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
     ![Capture d’écran de l’histogramme des colonnes du cluster, du volet Visualisations et du volet Champs avec affichage des champs que vous avez sélectionnés.](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 
-1. Dans le volet **Visualisation**, sélectionnez ![Capture d’écran de l’icône de nuage de points](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png). pour convertir l’histogramme des colonnes du cluster en un nuage de points.
+1. Dans le volet **Visualisation** , sélectionnez ![Capture d’écran de l’icône de nuage de points](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png). pour convertir l’histogramme des colonnes du cluster en un nuage de points.
 
    ![Capture d’écran de l’histogramme des colonnes du cluster converti en un nuage de points.](media/power-bi-visualization-scatter/power-bi-scatter-new.png)
 
@@ -111,7 +111,7 @@ Ajoutons à présent une troisième dimension.
 
 ## <a name="create-a-bubble-chart"></a>Créer un graphique en bulles
 
-1. Dans le volet **Champs**, faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers le puits **Taille**. Les points de données se développent en volumes proportionnels à la valeur des ventes.
+1. Dans le volet **Champs** , faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers le puits **Taille**. Les points de données se développent en volumes proportionnels à la valeur des ventes.
 
    ![Capture d’écran du nuage de points converti en un graphique en bulles par l’ajout de valeur des ventes au puits Taille.](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
@@ -119,7 +119,7 @@ Ajoutons à présent une troisième dimension.
 
     ![affichage d’info-bulles](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
-1. Pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations**, développez **Général** et ajustez le **Volume de données**.
+1. Pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations** , développez **Général** et ajustez le **Volume de données**.
 
     ![Capture d’écran du volet Visualisations avec l’icône Mise en forme, le menu déroulant Général et l’option Volume de données.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
@@ -128,7 +128,7 @@ Ajoutons à présent une troisième dimension.
     > [!NOTE]
     > Des points de données supplémentaires peuvent allonger le temps de chargement. Si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, testez également vos rapports sur le web et les appareils mobiles. Vous devez en effet vérifier que les performances sur le graphique correspondent aux attentes de vos utilisateurs.
 
-1. Continuez la mise en forme des couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation. Pour [améliorer l’accessibilité](../create-reports/desktop-accessibility-overview.md), ajoutez des formes de marqueur à chaque ligne. Pour sélectionner la forme de marqueur, développez **Formes**, sélectionnez **Forme de marqueur**, puis choisissez une forme.
+1. Continuez la mise en forme des couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation. Pour [améliorer l’accessibilité](../create-reports/desktop-accessibility-overview.md), ajoutez des formes de marqueur à chaque ligne. Pour sélectionner la forme de marqueur, développez **Formes** , sélectionnez **Forme de marqueur** , puis choisissez une forme.
 
     ![Capture d’écran du menu déroulant Formes avec les options Forme de marqueur.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
@@ -157,7 +157,7 @@ Ajoutons à présent une troisième dimension.
 
 Pour créer un graphique à points, remplacez le champ **Axe X** numérique par un champ de catégorie.
 
-Dans le volet **Axe X**, supprimez **Sales per sq ft** et remplacez-le par **District** > **District Manager**.
+Dans le volet **Axe X** , supprimez **Sales per sq ft** et remplacez-le par **District** > **District Manager**.
 
 ![Capture d’écran d’un nouveau graphique à points.](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 

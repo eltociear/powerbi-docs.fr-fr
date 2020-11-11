@@ -1,20 +1,20 @@
 ---
 title: Utiliser des graphiques de ruban dans Power BI
 description: Créer et utiliser des graphiques de ruban dans Power BI Desktop
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0e5687f9bb3f27af7bdfee28cd9753fbda4fa44f
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e89712dea5d9f932669141d8fe4129727166a342
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635766"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413112"
 ---
 # <a name="create-ribbon-charts-in-power-bi"></a>Création de graphes en ruban dans Power BI
 
@@ -49,11 +49,11 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
     Les graphiques de ruban connectent une catégorie de données sur toute la période visualisée à l’aide des rubans, ce qui permet de voir comment une catégorie donnée se classe tout le long de l’axe X du graphique (généralement la chronologie).
 
-2. Sélectionner des champs pour l’**axe**, la **légende** et la **valeur**.  Dans cet exemple, nous avons utilisé : **Store** > **OpenDate**, **Item** > **Category**, et **Sales** > **This year sales** > **Value**.  
+2. Sélectionner des champs pour l’ **axe** , la **légende** et la **valeur**.  Dans cet exemple, nous avons utilisé : **Store** > **OpenDate** , **Item** > **Category** , et **Sales** > **This year sales** > **Value**.  
 
     ![champs sélectionnés](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Comme le jeu de données contient des données pour une seule année, nous avons aussi supprimé le champ **Année** et **Trimestre** de l’**axe**.
+    Comme le jeu de données contient des données pour une seule année, nous avons aussi supprimé le champ **Année** et **Trimestre** de l’ **axe**.
 
 3. Le graphique de ruban indique le rang pour chaque mois. Notez l’évolution du rang dans le temps. Par exemple, la catégorie Home passe du deuxième au cinquième rang entre février et mars.
 
@@ -67,7 +67,7 @@ Lorsque vous créez un graphique de ruban, vous avez accès aux options de mise 
 Les options suivantes de mise en forme des graphiques de ruban vous permettent d’apporter des ajustements :
 
 * **Espacement** permet d’ajuster l’espace entre les rubans. Le nombre correspond à un pourcentage de la hauteur maximale de la colonne.
-* **Faire correspondre la couleur de la série** permet d’assortir la couleur des rubans avec celle de la série. Si cette option est **désactivée**, les rubans sont gris.
+* **Faire correspondre la couleur de la série** permet d’assortir la couleur des rubans avec celle de la série. Si cette option est **désactivée** , les rubans sont gris.
 * **Transparence** spécifie le degré de transparence des rubans, la valeur par défaut étant définie sur 30.
 * **Bordure** permet de placer une bordure sombre en haut et en bas des rubans. Par défaut, les bordures sont désactivées.
 

@@ -1,20 +1,20 @@
 ---
 title: Créer des analyses et des visualisations avancées à l’aide de scripts R
 description: Utiliser des scripts R dans Power BI Desktop pour créer des analyses et visualisations avancées
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91ca05a144166abbc903d42ba30a5c70b839987d
-ms.sourcegitcommit: e8b12d97076c1387088841c3404eb7478be9155c
+ms.openlocfilehash: 3b43d644a0bb7ecd2800b99d3ffb5d7c7d26bf96
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85782809"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412093"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>Créer et utiliser des visuels R dans Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "85782809"
 Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Affichage de visuels R dans le service Power BI
-Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
+Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R* , peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
 
 > [!NOTE]
 > Le [langage de programmation R](https://www.r-project.org/) est l’un des langages de programmation les plus largement utilisés par les statisticiens, les scientifiques et les analystes d’entreprise. Le langage R a une communauté open source qui offre plus de 7 000 packages de composants additionnels, ainsi que des groupes d’utilisateurs R utilisés à grande échelle. La version de R déployée dans le service Power BI est *Microsoft R 3.4.4.*
@@ -38,7 +38,7 @@ Les éléments visuels R sont créés dans un [rapport Power BI Desktop](../fu
 
 ![Rapport Desktop avec deux visuels](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
-Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. 
+Une fois que le rapport est créé dans **Power BI Desktop** , vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. 
 
  Dans le service, tous les packages R ne sont pas pris en charge. Pour obtenir la liste des packages actuellement pris en charge dans le service Power BI, consultez les packages pris en charge à la fin de cet article.
 
@@ -78,7 +78,7 @@ Le tableau suivant décrit les fonctionnalités des éléments visuels R en fon
 
 |  |Créer des visuels R dans Power BI Desktop  | Créer des rapports de service PBI avec des visuels R |Afficher des visuels R dans les rapports  | Afficher des vignettes R dans les tableaux de bord |
 |---------|---------|---------|---------|--------|
-|**Invité**(Power BI Embedded)     |  Prise en charge|  Non pris en charge      | Prise en charge dans la capacité Premium/Azure uniquement  | Prise en charge dans la capacité Premium/Azure uniquement |
+|**Invité** (Power BI Embedded)     |  Prise en charge|  Non pris en charge      | Prise en charge dans la capacité Premium/Azure uniquement  | Prise en charge dans la capacité Premium/Azure uniquement |
 |**Locataire non géré** (domaine non vérifié) | Prise en charge | Non pris en charge |  Non pris en charge |Prise en charge (scénario B2B) |
 |**Locataire géré** avec licence gratuite    |  Prise en charge       |  Non pris en charge       |    Prise en charge dans la capacité Premium uniquement    | Prise en charge |
 **Locataire géré** avec licence Pro     |   Prise en charge      | Prise en charge      | Prise en charge    |Prise en charge|
@@ -121,7 +121,7 @@ powerbi_rEnableShowTextForCJKLanguages =  1
 ## <a name="overview-of-r-packages"></a>Vue d’ensemble des packages R
 Les packages R sont des ensembles de fonctions, de données et de code compilé R qui sont combinés dans un format bien défini. Quand R est installé, il est fourni avec un ensemble standard de packages et d’autres packages sont disponibles pour le téléchargement et l’installation. Une fois installé, un package R doit être chargé dans la session à utiliser. La principale source de packages R gratuits est CRAN ([Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html)).
 
-**Power BI Desktop** peut utiliser n’importe quel type de package R sans limitation. Vous pouvez installer manuellement des packages R pour une utilisation dans **Power BI Desktop** (à l’aide de l’[IDE RStudio](https://www.rstudio.com/) par exemple).
+**Power BI Desktop** peut utiliser n’importe quel type de package R sans limitation. Vous pouvez installer manuellement des packages R pour une utilisation dans **Power BI Desktop** (à l’aide de l’ [IDE RStudio](https://www.rstudio.com/) par exemple).
 
 Les visuels R dans le **service Power BI** sont pris en charge par les packages qui se trouvent dans la section **Packages pris en charge** dans [cet article](../connect-data/service-r-packages-support.md). Si vous ne trouvez pas le package qui vous intéresse dans la liste des packages pris en charge, vous pouvez demander la prise en charge du package. Pour en savoir plus sur la demande de prise en charge, consultez la page [Packages R dans le service Power BI](../connect-data/service-r-packages-support.md).
 

@@ -1,8 +1,8 @@
 ---
 title: Cartes choroplèthes dans Power BI
 description: Documentation sur la création de cartes choroplèthes dans Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 45069a4a575659d44e41f1010d9941f21caa1ad1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ce0adb6d5115ece1b228690c496d022f8dfc9e56
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861633"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412990"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Créer et utiliser des cartes choroplèthes dans Power BI
 
@@ -28,7 +28,7 @@ Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour repr
 ![carte des États-Unis](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Ce qui est envoyé à Bing
-De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »). Lorsque vous créez une visualisation de carte dans le service Power BI ou Power BI Desktop, les données contenues dans les compartiments **Emplacement**, **Latitude** et **Longitude** (utilisées pour créer cette visualisation) sont envoyées à Bing.
+De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »). Lorsque vous créez une visualisation de carte dans le service Power BI ou Power BI Desktop, les données contenues dans les compartiments **Emplacement** , **Latitude** et **Longitude** (utilisées pour créer cette visualisation) sont envoyées à Bing.
 
 Vous ou votre administrateur devrez peut-être mettre à jour votre pare-feu pour autoriser l’accès aux URL que Bing utilise pour le géocodage.  Il s’agit des URL suivantes :
 - https://dev.virtualearth.net/REST/V1/Locations    
@@ -85,7 +85,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://
 
     ![Bouton de mise en forme conditionnelle Couleurs des données](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Utilisez l’écran **Couleur par défaut - Couleurs des données** pour déterminer comment votre carte choroplèthe sera ombrée. Les options à votre disposition incluent quel champ choisir pour la base de l’ombrage et comment appliquer l’ombrage. Dans cet exemple, nous utilisons le champ **SalesFact** > **Sentiment**, et nous définissons l’orange pour la valeur la plus basse du sentiment et le bleu pour la valeur la plus élevée. Les valeurs comprises entre la valeur maximale et la valeur minimale seront des nuances d’orange et de bleu. L’illustration en bas de l’écran affiche la plage des couleurs qui seront utilisées. 
+6. Utilisez l’écran **Couleur par défaut - Couleurs des données** pour déterminer comment votre carte choroplèthe sera ombrée. Les options à votre disposition incluent quel champ choisir pour la base de l’ombrage et comment appliquer l’ombrage. Dans cet exemple, nous utilisons le champ **SalesFact** > **Sentiment** , et nous définissons l’orange pour la valeur la plus basse du sentiment et le bleu pour la valeur la plus élevée. Les valeurs comprises entre la valeur maximale et la valeur minimale seront des nuances d’orange et de bleu. L’illustration en bas de l’écran affiche la plage des couleurs qui seront utilisées. 
 
     ![Volet des couleurs par défaut avec Sentiment sélectionné](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
@@ -113,7 +113,7 @@ La mise en surbrillance d’un emplacement sur une carte choroplèthe entraîne 
 
    ![Carte choroplèthe ajoutée à la page Sentiments](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Sur la carte choroplèthe, sélectionnez un État.  Cela met en surbrillance croisée et applique un filtrage croisé aux autres visualisations sur la page. La sélection de **Texas**, par exemple, effectue un filtrage croisé des cartes et une sélection croisée du graphique à barres. À partir de là, je sais que le sentiment est de 75 et que le Texas se trouve dans la région centrale n° 23.   
+5. Sur la carte choroplèthe, sélectionnez un État.  Cela met en surbrillance croisée et applique un filtrage croisé aux autres visualisations sur la page. La sélection de **Texas** , par exemple, effectue un filtrage croisé des cartes et une sélection croisée du graphique à barres. À partir de là, je sais que le sentiment est de 75 et que le Texas se trouve dans la région centrale n° 23.   
    ![Texas sélectionné](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Sélectionnez un point de données sur le graphique en courbes VanArsdel - Sentiment par mois. Cela permet de filtrer la carte choroplèthe pour afficher l’indice de sentiment pour VanArsdel et pas pour la concurrence de VanArsdel.  
    ![nouvelles couleurs](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)

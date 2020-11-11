@@ -1,20 +1,20 @@
 ---
 title: Partie 2, Ajouter des visualisations à un rapport Power BI
 description: Partie 2, Ajouter des visualisations à un rapport Power BI
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0bcfcf9ef84ae8b2d59d1c004e2e00c6cf6b3eef
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 79c613b33ccadacc7ce24d9eb744e66014218b52
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232199"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411702"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Ajouter des visuels à un rapport Power BI (partie 2)
 
@@ -56,7 +56,7 @@ Créez une visualisation en sélectionnant un champ dans le volet **Champs**. Le
 
 3. [Changez la visualisation](power-bi-report-change-visualization-type.md) en graphique en aires.  Vous avez le choix entre de nombreux types de visualisations. Consultez ces [descriptions, bonnes pratiques et tutoriels](power-bi-visualization-types-for-reports-and-q-and-a.md) pour déterminer quel type utiliser. Dans le volet Visualisations, sélectionnez l’icône de graphique en aires ![Icône de graphique en aires dans le volet Visualisations](media/power-bi-report-add-visualizations-ii/power-bi-area-chart.png).
 
-4. Triez le contenu de la visualisation en sélectionnant **Autres actions** (...), puis en choisissant **Trier par** >  **FiscalMonth** (MoisFiscal).
+4. Triez le contenu de la visualisation en sélectionnant **Autres actions**  (...), puis en choisissant **Trier par** >  **FiscalMonth** (MoisFiscal).
 
 5. [Redimensionnez la visualisation](power-bi-visualization-move-and-resize.md) en sélectionnant la visualisation, en saisissant l’un des cercles de contour et en le faisant glisser. Élargissez-la suffisamment de façon à éliminer la barre de défilement, mais pas trop de sorte qu’il reste suffisamment de place pour ajouter une autre visualisation.
    
@@ -65,7 +65,7 @@ Créez une visualisation en sélectionnant un champ dans le volet **Champs**. Le
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Ajouter une visualisation de type carte géographique qui présente les ventes par magasin
 
-1. Dans la table **Store** (Magasin), sélectionnez **Territory**(Territoire). Faites glisser **Total Stores** (Total des magasins) dans la zone Taille. Power BI reconnaît que Territory correspond à un lieu et crée une visualisation Carte.  
+1. Dans la table **Store** (Magasin), sélectionnez **Territory** (Territoire). Faites glisser **Total Stores** (Total des magasins) dans la zone Taille. Power BI reconnaît que Territory correspond à un lieu et crée une visualisation Carte.  
    ![Graphique en aires](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
 
 2. Ajoutez une légende.  Pour afficher les données par nom de magasin, faites glisser **Store** > **Chain** (Magasin > Chaîne) vers la zone Légende.  

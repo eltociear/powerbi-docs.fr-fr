@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: faacbe602a8c80dc036583cca599b24b072df315
-ms.sourcegitcommit: 702ababd71c38846303bf49990b51afc73f9ebb8
+ms.openlocfilehash: c831118a14c1dc453acb81b866013dcb085d9f6d
+ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92795655"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348194"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 
@@ -38,7 +38,7 @@ Les différents clouds nationaux sont :
 
 ![Tableau de bord incorporé](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI** . Si vous n’avez pas configuré de compte, alors selon le type de gouvernement ou de pays, vous pouvez choisir le cloud national adapté à vos besoins. Vous pouvez vous inscrire pour obtenir un [compte Power BI pour l’État fédéral américain](../../admin/service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](https://www.21vbluecloud.com/powerbi/).
+Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas configuré de compte, alors selon le type de gouvernement ou de pays, vous pouvez choisir le cloud national adapté à vos besoins. Vous pouvez vous inscrire pour obtenir un [compte Power BI pour l’État fédéral américain](../../admin/service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vous voulez plutôt incorporer un tableau de bord s’adressant à votre organisation ? Consultez [Intégrer un tableau de bord dans une application pour votre organisation](embed-sample-for-your-organization.md).
@@ -143,7 +143,7 @@ Inscrivez votre application auprès d’Azure AD pour effectuer des appels d’A
 
 * Cloud Power BI pour la Chine - ```https://app.powerbi.cn/apps```
 
-Si vous avez téléchargé [l’exemple Embedding for your customer](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData) (Incorporation pour votre client), utilisez **l’ID d’application** obtenu pour que l’exemple puisse s’authentifier auprès d’Azure AD. Pour configurer l’exemple, modifiez **l’ID d’application** dans le fichier *web.config* .
+Si vous avez téléchargé [l’exemple Embedding for your customer](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (Incorporation pour votre client), utilisez **l’ID d’application** obtenu pour que l’exemple puisse s’authentifier auprès d’Azure AD. Pour configurer l’exemple, modifiez **l’ID d’application** dans le fichier *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Étape 2 : obtenir un jeton d’accès à partir d’Azure AD
 
@@ -159,7 +159,7 @@ Dans votre application, vous devez obtenir un **jeton d’accès** auprès d’A
 
 * Cloud Power BI pour la Chine - ```https://login.chinacloudapi.cn```
 
-Vous pouvez voir des exemples de ces jetons d’accès dans chaque tâche d’élément de contenu du fichier **Controllers\HomeController.cs** .
+Vous pouvez voir des exemples de ces jetons d’accès dans chaque tâche d’élément de contenu du fichier **Controllers\HomeController.cs**.
 
 ## <a name="step-3---get-a-content-item"></a>Étape 3 : obtenir un élément de contenu
 
@@ -167,7 +167,7 @@ Pour incorporer votre contenu Power BI, vous devez effectuer quelques opération
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Créer un client Power BI avec votre jeton d’accès
 
-Avec votre jeton d’accès, vous devez créer votre objet de client Power BI pour interagir avec les API Power BI. Pour cela, wrappez l’élément AccessToken avec un objet *Microsoft.Rest.TokenCredentials* .
+Avec votre jeton d’accès, vous devez créer votre objet de client Power BI pour interagir avec les API Power BI. Pour cela, wrappez l’élément AccessToken avec un objet *Microsoft.Rest.TokenCredentials*.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Utilisez l’objet client Power BI pour récupérer une référence vers l’élément que vous souhaitez incorporer. Vous pouvez incorporer des tableaux de bord, des vignettes ou des rapports. Voici un exemple montrant comment récupérer le premier tableau de bord, rapport ou vignette à partir d’un espace de travail donné.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData) (L’application possède les données).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (L’application possède les données).
 
 #### <a name="reports"></a>Rapports
 
@@ -243,9 +243,9 @@ En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporatio
 > [!IMPORTANT]
 > Étant donné que les jetons d’incorporation sont uniquement destinés aux tests de développeur, le nombre de jetons d’incorporation qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](./embedded-faq.md#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData) (Incorporation pour votre organisation).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (Incorporation pour votre organisation).
 
-Une classe est créée pour **EmbedConfig** et **TileEmbedConfig** . Des exemples sont disponibles dans les fichiers **Models\EmbedConfig.cs** et **Models\TileEmbedConfig.cs** .
+Une classe est créée pour **EmbedConfig** et **TileEmbedConfig**. Des exemples sont disponibles dans les fichiers **Models\EmbedConfig.cs** et **Models\TileEmbedConfig.cs**.
 
 #### <a name="reports"></a>Rapports
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 Vous pouvez utiliser JavaScript pour charger un tableau de bord dans un élément div sur votre page web. L’exemple utilise un modèle EmbedConfig/TileEmbedConfig avec des vues pour un tableau de bord, une vignette ou un rapport. Pour obtenir un exemple complet de l’utilisation de l’API JavaScript, vous pouvez consulter l’[exemple Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Un exemple d’application est disponible dans l’[exemple Incorporation pour votre organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+Un exemple d’application est disponible dans l’[exemple Incorporation pour votre organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Un exemple d’application est disponible dans l’[exemple Incorporation pour v
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Vous pouvez examiner un exemple d’application sur GitHub. Les exemples ci-dessus sont basés sur cet exemple. Pour plus d’informations, consultez l’[exemple Incorporation pour votre organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/Embed%20for%20your%20customers/PowerBIEmbedded_AppOwnsData).
+* Vous pouvez examiner un exemple d’application sur GitHub. Les exemples ci-dessus sont basés sur cet exemple. Pour plus d’informations, consultez l’[exemple Incorporation pour votre organisation](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData).
 
 * Pour plus d’informations sur l’API JavaScript, consultez [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 

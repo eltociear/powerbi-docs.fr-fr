@@ -1,21 +1,21 @@
 ---
 title: Bien démarrer avec la mise en forme des visualisations Power BI
 description: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 03/06/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ef9aec1bf01120c8c7e765fe3c59c23da40ceab
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0d19d7366dce571e2d89ba5cbc6ffbe936ec50e2
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85235856"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93410989"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Personnaliser les titres, les arrière-plans et les légendes des visualisations
 
@@ -47,7 +47,7 @@ Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Ex
 
 1. Sélectionnez l’histogramme groupé **Open Store Count by Open Month and Chain**.
 
-1. Dans le volet **Visualisations**, sélectionnez l’icône représentant un rouleau pour afficher les options de mise en forme.
+1. Dans le volet **Visualisations** , sélectionnez l’icône représentant un rouleau pour afficher les options de mise en forme.
 
 1. Sélectionnez **Titre** pour développer cette section.
 
@@ -55,13 +55,13 @@ Pour poursuivre, connectez-vous à Power BI Desktop, puis ouvrez le rapport [Ex
 
 1. Déplacez le curseur **Titre** sur **Activé**.
 
-1. Pour modifier le titre, tapez *Store count by month opened **(Nombre d’ouvertures de magasins pas mois) dans le champ**Texte du titre*.
+1. Pour modifier le titre, tapez *Store count by month opened **(Nombre d’ouvertures de magasins pas mois) dans le champ** Texte du titre*.
 
     ![Capture d’écran du volet Format avec le texte du titre entré.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
 1. Définissez le blanc comme **Couleur de police** et le bleu comme **Couleur d’arrière-plan**.    
 
-    a. Sélectionnez la flèche déroulante et choisissez une couleur dans **Couleurs du thème**, **Couleurs récentes** ou **Couleur personnalisée**.
+    a. Sélectionnez la flèche déroulante et choisissez une couleur dans **Couleurs du thème** , **Couleurs récentes** ou **Couleur personnalisée**.
     
     ![Capture d’écran des options Couleur de police et Couleur d’arrière-plan.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
@@ -106,9 +106,9 @@ Si vous devez annuler toutes les modifications, sélectionnez **Rétablir les va
 
 1. Ouvrez la page de rapport **Présentation** et sélectionnez le graphique **Total Sales Variance par FiscalMonth et directeur régional** (Variance du nombre de ventes totales par MoisFiscal et directeur régional).
 
-1. Dans l’onglet **Visualisation**, sélectionnez l’icône en forme de rouleau pour ouvrir le volet Mise en forme.
+1. Dans l’onglet **Visualisation** , sélectionnez l’icône en forme de rouleau pour ouvrir le volet Mise en forme.
 
-1. Développez les options de **Légende** :
+1. Développez les options de **Légende**  :
 
     ![Capture d’écran de la carte Légende.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 
