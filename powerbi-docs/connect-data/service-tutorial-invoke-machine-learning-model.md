@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7e2019d3b554bc4e033c7aee36c41216ba910a9f
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916840"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397113"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)
 
@@ -180,4 +180,4 @@ Dans ce tutoriel, vous avez créé une expérience simple en utilisant Azure Mac
 - Créer un flux de données
 - Appliquer des insights au flux de données à partir du modèle Azure ML
 
-Pour plus d’informations sur l’intégration d’Azure Machine Learning dans Power BI, consultez [Intégration d’Azure Machine Learning dans Power BI (préversion)](../transform-model/service-machine-learning-integration.md).
+Pour plus d’informations sur l’intégration d’Azure Machine Learning dans Power BI, consultez [Intégration d’Azure Machine Learning dans Power BI (préversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md).

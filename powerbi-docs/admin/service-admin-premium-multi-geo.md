@@ -9,12 +9,12 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 10/29/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 899dc5092ac86e08d552758e74dfabd8b373f5c0
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044702"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396386"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
@@ -98,7 +98,7 @@ Les jeux de données volumineux ne doivent pas être déplacés de la région o�
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
 - Le texte de la requête et le trafic de résultat de la requête pour les modèles de données importés ne transitent pas par la région d’origine. Les métadonnées de rapport proviennent toujours de la région distante et certains états de routage DNS peuvent envoyer le trafic hors de la région. 
-- La fonctionnalité des [dataflows](../transform-model/service-dataflows-overview.md) n’est pas prise en charge en mode multigéographique pour l’instant.
+- La fonctionnalité des [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) n’est pas prise en charge en mode multigéographique pour l’instant.
 - Le fait de déplacer des jeux de données volumineux de la région où ils ont été créés empêche les rapports de les charger. Vous devez replacer le jeu de données volumineux dans sa région d’origine pour le rendre à nouveau disponible. 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -107,4 +107,3 @@ Les jeux de données volumineux ne doivent pas être déplacés de la région o�
 - [Zones géographiques multiples pour des capacités Power BI Embedded](../developer/embedded/embedded-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

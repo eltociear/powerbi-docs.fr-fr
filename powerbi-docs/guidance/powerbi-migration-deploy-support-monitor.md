@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f9268409977b3aa78e1ebda6f1f6b2e732451455
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 3e0bb00042b869061b7cb7cebf624e324db7e916
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681029"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396124"
 ---
 # <a name="deploy-to-power-bi"></a>Déployer sur Power BI
 
@@ -76,7 +76,7 @@ Durant le processus de déploiement, vous devrez peut-être travailler avec vos 
 - **Maintenance de la passerelle :** l’inscription d’une [nouvelle source de données](../connect-data/service-gateway-data-sources.md) dans la passerelle de données est parfois nécessaire.
 - **Connecteurs et pilotes de passerelle :** une nouvelle source de données propriétaire peut nécessiter l’installation d’un nouveau pilote ou connecteur personnalisé sur chaque serveur dans le cluster de passerelle.
 - **Créer une capacité Premium :** vous pourrez peut-être utiliser une [capacité Premium](../admin/service-premium-capacity-manage.md) existante. Il peut également y avoir des situations où une nouvelle capacité Premium est justifiée, par exemple lorsque vous souhaitez délibérément séparer la charge de travail d’un service.
-- **Configurer un dataflow Power BI :** les activités de préparation des données peuvent être configurées une seule fois dans un [dataflow Power BI](../transform-model/service-dataflows-overview.md) à l’aide de Power Query Online. Cela évite la réplication du travail de préparation des données dans de nombreux fichiers Power BI Desktop différents.
+- **Configurer un dataflow Power BI :** les activités de préparation des données peuvent être configurées une seule fois dans un [dataflow Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md) à l’aide de Power Query Online. Cela évite la réplication du travail de préparation des données dans de nombreux fichiers Power BI Desktop différents.
 - **Inscrire un nouveau visuel organisationnel :** l’inscription d’un [visuel organisationnel](../developer/visuals/power-bi-custom-visuals-organization.md) peut s’effectuer dans le portail administrateur pour les visuels personnalisés qui ne proviennent pas d’AppSource.
 - **Définir le contenu proposé :** il existe un paramètre de locataire qui contrôle qui peut [proposer du contenu](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) dans la page d’accueil du service Power BI.
 - **Définir les étiquettes de sensibilité :** toutes les [étiquettes de sensibilité](../admin/service-security-data-protection-overview.md) sont intégrées dans Microsoft Information Protection.

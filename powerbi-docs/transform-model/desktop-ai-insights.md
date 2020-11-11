@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 48e8788ca81365e1f46dbe6d3c4804c10f3f308a
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: 8de033c673d9d08833fdc5a935b92490db369104
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525498"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396745"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Utiliser Insights IA dans Power BI Desktop
 
-Dans Power BI, vous pouvez utiliser Insights IA pour accéder à une collection de modèles d'apprentissage machine préformés qui améliorent la préparation de vos données. Insights IA est accessible dans l'éditeur **Power Query**, et ses fonctionnalités et fonctions associées sont accessibles via les onglets **Accueil** et **Ajouter une colonne** dans l’**éditeur Power Query**. 
+Dans Power BI, vous pouvez utiliser Insights IA pour accéder à une collection de modèles d'apprentissage machine préformés qui améliorent la préparation de vos données. Insights IA est accessible dans l'éditeur **Power Query** , et ses fonctionnalités et fonctions associées sont accessibles via les onglets **Accueil** et **Ajouter une colonne** dans l’ **éditeur Power Query**. 
 
 ![Emplacement d’Insights IA dans le ruban](media/desktop-ai-insights/ai-insights-00.png)
 
@@ -26,7 +26,7 @@ Cet article décrit les fonctions Analyse de texte et Vision, toutes deux dispon
 
 ## <a name="how-to-enable-ai-insights"></a>Comment activer Insights IA
 
-Les Insights IA ont été mises à la disposition générale dans la version de juin 2020 de Power BI Desktop. Pour les versions antérieures de Power BI Desktop, les Insights IA dans Power BI doivent être activées en sélectionnant **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en préversion** dans la colonne de gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+Les Insights IA ont été mises à la disposition générale dans la version de juin 2020 de Power BI Desktop. Pour les versions antérieures de Power BI Desktop, les Insights IA dans Power BI doivent être activées en sélectionnant **Fichier > Options et paramètres > Options** , puis **Fonctionnalités en préversion** dans la colonne de gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
 
 > [!NOTE]
 > Les Insights IA sont généralement disponibles pour toutes les versions de Power BI Desktop à partir de la version de juin 2020, et pour ces versions, il n’est pas nécessaire d’activer cette fonctionnalité en tant que fonctionnalité en préversion.
@@ -91,7 +91,7 @@ Cette fonction requiert une URL de l’image ou un champ de base de données 64�
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Appel des fonctions Analyse de texte ou Vision dans Power Query
 
-Pour enrichir vos données avec les fonctions Analyse de texte ou Vision, ouvrez l’**éditeur Power Query**. Cet exemple montre comment noter le sentiment d'un texte. Les mêmes étapes peuvent être utilisées pour extraire des phrases clés, détecter la langue et baliser des images.
+Pour enrichir vos données avec les fonctions Analyse de texte ou Vision, ouvrez l’ **éditeur Power Query**. Cet exemple montre comment noter le sentiment d'un texte. Les mêmes étapes peuvent être utilisées pour extraire des phrases clés, détecter la langue et baliser des images.
 
 Sélectionnez le bouton **Analytique de texte** dans le ruban **Accueil** ou **Ajouter une colonne**. Vous serez invité à vous connecter.
 
@@ -158,7 +158,7 @@ Pour utiliser cette fonctionnalité, un scientifique des données peut simplemen
 
 Cette fonctionnalité est prise en charge pour les dataflows Power BI Desktop et Power BI et pour Power Query Online dans le service Power BI.
 
-Pour en savoir plus sur les flux de données, consultez [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
+Pour en savoir plus sur les flux de données, consultez [Préparation des données en libre-service dans Power BI](./dataflows/dataflows-introduction-self-service.md).
 
 Pour en savoir plus sur Azure Machine Learning, consultez les articles suivants :
 
@@ -225,7 +225,7 @@ Cet article donne une vue d’ensemble de l’intégration de Machine Learning d
 
 - [Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 - [Tutoriel : Utilisation de Cognitive Services dans Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
-- [Cognitive Services dans Power BI](service-cognitive-services.md)
-- [Intégration d’Azure Machine Learning dans Power BI](service-machine-learning-integration.md)
+- [Cognitive Services dans Power BI](./dataflows/dataflows-machine-learning-integration.md)
+- [Intégration d’Azure Machine Learning dans Power BI](./dataflows/dataflows-machine-learning-integration.md)
 - [Supervision des capacités Premium avec l’application](../admin/service-admin-premium-monitor-capacity.md)
 - [Métriques d’intelligence artificielle dans l’application Premium Capacity Metrics](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

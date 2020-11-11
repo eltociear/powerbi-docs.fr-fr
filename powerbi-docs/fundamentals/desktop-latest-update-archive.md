@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: bab09647b324e9be8b1de6f27865511b4f2b1a02
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 01d7a433650eb8c74ace37b548ba8d7bf2c570ea
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256331"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396170"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -418,7 +418,7 @@ Les nouvelles mises à jour apportées à Power BI Desktop ce mois-ci sont les 
 
 
 ### <a name="data-preparation"></a>Préparation des données
-* DirectQuery sur les dataflows  [[vidéo]](https://youtu.be/JtuHIslowxk?t=1883)   [[article]](../transform-model/service-dataflows-directquery.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
+* DirectQuery sur les dataflows  [[vidéo]](https://youtu.be/JtuHIslowxk?t=1883)   [[article]](../transform-model/dataflows/dataflows-configure-consume.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_DQ_Dataflows) 
 * Web par l’exemple suggère désormais automatiquement des tables par défaut [[vidéo]](https://youtu.be/JtuHIslowxk?t=1916)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Web_by_example) 
 * Améliorations des diagnostics des requêtes : Partitions des niveaux de confidentialité  [[vidéo]](https://youtu.be/JtuHIslowxk?t=1931)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Query_Diag) 
 
@@ -548,8 +548,8 @@ Vous pouvez également télécharger des versions précédentes de Power BI Desk
 
 Sélectionnez les liens suivants pour télécharger cette version antérieure : 
 
-* [Version d’avril 2020 de Power BI Desktop – 32 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04.exe)
-* [Version d’avril 2020 de Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-04_x64.exe)
+* [Version d’avril 2020 de Power BI Desktop – 32 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe)
+* [Version d’avril 2020 de Power BI Desktop – 64 bits](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe)
 
 
 
@@ -2058,7 +2058,7 @@ La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez �
 
 ## <a name="january-2018-update-2544970761"></a>Mise à jour de janvier 2018 (2.54.4970.761)
 
-Nous avons commencé cette nouvelle année avec une collection de mises à jour de **Power BI Desktop**, et notre bonne résolution est de continuer à en ajouter d’autres.
+Nous avons commencé cette nouvelle année avec une collection de mises à jour de **Power BI Desktop** , et notre bonne résolution est de continuer à en ajouter d’autres.
 
 Les liens en regard de chaque mise à jour signifient ce qui suit :
 
@@ -2108,7 +2108,7 @@ La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez �
 
 ## <a name="december-2017-update-2534954481"></a>Mise à jour de décembre 2017 (2.53.4954.481)
 
-De nombreuses mises à jour ont été ajoutées en décembre pour **Power BI Desktop**, ainsi que de nouvelles fonctionnalités à l’intention de tous les férus de décisionnel.
+De nombreuses mises à jour ont été ajoutées en décembre pour **Power BI Desktop** , ainsi que de nouvelles fonctionnalités à l’intention de tous les férus de décisionnel.
 
 Les liens en regard de chaque mise à jour signifient ce qui suit :
 
@@ -2694,7 +2694,7 @@ Les mises à jour suivantes ont été apportées à Power BI Desktop en novembr
 ### <a name="analytics"></a>Analytique
 
 -   Clustering (préversion) [[vidéo]](https://youtu.be/kERJ_WOLuLk?t=8m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#clustering)
--   Prévisions (maintenant disponibles dans le **service Power BI**) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
+-   Prévisions (maintenant disponibles dans le **service Power BI** ) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
 -   Groupes (maintenant disponibles sur le ruban) [[vidéo]](https://youtu.be/kERJ_WOLuLk?t=13m29s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#groups)
 
 
@@ -2970,7 +2970,7 @@ En juin, nous avons publié des mises à jour intéressantes pour Power BI Des
 
 ### <a name="data-connectors"></a>Connecteurs de données :
 
--   Modèles : option de **chargement** ou d’**édition** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Modèles : option de **chargement** ou d’ **édition** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Améliorations des paramètres de requête : [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
     -   Option pour systématiquement autoriser la spécification des paramètres
     -   Création d’un paramètre directement en contexte
@@ -3134,7 +3134,7 @@ La mise à jour de mars offre toutes sortes de renouvellement et d'actualisation
     -   Conservation des doublons
 -   Prise en charge des espaces et des sauts de ligne dans l’éditeur de requête en version préliminaire
 -   Inclusion de conseils pour les *valeurs d’entrée exemple* dans la boîte de dialogue **Modifier le type avec les paramètres régionaux**
--   Améliorations de la fenêtre **Navigator** :
+-   Améliorations de la fenêtre **Navigator**  :
     -   Ajout d’informations de schéma pour la hiérarchie de navigation des sources ODBC
     -   Possibilité de désactiver la publication à partir de **Navigator**
     -   Prise en charge des noms techniques
@@ -3163,14 +3163,14 @@ Nous prenons de l’avance et vous proposons encore plus de mises à jour de ce 
 
 ### <a name="report-view"></a>Vue Rapport :
 
--   Consultez les données liées au visuel (y compris *Exporter les données au format CSV*)
+-   Consultez les données liées au visuel (y compris *Exporter les données au format CSV* )
 -   Améliorations des cartes : tracer une carte avec la latitude et la longitude uniquement
 -   Prise en charge de la version de consommation des indicateurs de performance clés (y compris la prise en charge de hiérarchie de navigation et de la tendance des indicateurs de performance clés pour SSAS MD)
--   Mode d’exploration SSAS : prise en charge des dossiers d’**affichage** dans le volet **Champs**
+-   Mode d’exploration SSAS : prise en charge des dossiers d’ **affichage** dans le volet **Champs**
 -   Améliorations de la disposition du ruban : onglet ruban contextuel pour les **Outils de rapport**
 -   Nouveau visuel des indicateurs de performance clés
 -   Ouvrez les rapports à la page affichée lors de leur enregistrement
--   Option **Modifier la requête** dans le menu contextuel de table du volet Champs (vues **Rapport** & **Données**)
+-   Option **Modifier la requête** dans le menu contextuel de table du volet Champs (vues **Rapport** & **Données** )
 -   **Dupliquer la page** à partir du ruban
 
 
@@ -3290,7 +3290,7 @@ Décembre est le mois des cadeaux. Dans cet esprit, l’équipe de Power BI vou
 -   [Prise en charge multidimensionnelle de SSAS - prise en charge des hiérarchies](../connect-data/desktop-ssas-multidimensional.md)
 -   Connecteur Stripe
 -   Connecteur Smartsheet
--   **Entrer des données**: coller ou entrer des données pour créer une table
+-   **Entrer des données** : coller ou entrer des données pour créer une table
 -   Améliorations apportées à DirectQuery : prise en charge de tous les types de données de T-SQL et de SAP HANA pour accroître les performances
 -   Connecteur ODBC : prise en charge de la sélection des noms de sources de données utilisateur/système
 -   Connecteur CSV : possibilité de spécifier le délimiteur de colonne dans la boîte de dialogue Source
@@ -3521,7 +3521,7 @@ Pour plus d’informations sur cette mise à jour, visionnez la vidéo suivante�
 
 Cette mise à jour comprend les nouvelles fonctionnalités suivantes :
 
--   **Nouveaux connecteurs de données** : appFigures, Quickbooks Online, Zendesk, GitHub, Twilio et SweetIQ.
+-   **Nouveaux connecteurs de données**  : appFigures, Quickbooks Online, Zendesk, GitHub, Twilio et SweetIQ.
 
 -   **Nouvelles transformations** : extraction de caractères (premier/dernier/plage) d’une colonne de texte, option permettant de spécifier le type de jointure dans la boîte de dialogue Fusionner des requêtes, possibilité de personnaliser le style de citation dans la boîte de dialogue Fractionner la colonne par délimiteur.
 

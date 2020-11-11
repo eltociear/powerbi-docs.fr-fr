@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ffd11a57267ef69aab7b999a29949c33163e52e8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638414"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397297"
 ---
 # <a name="premium-features-of-dataflows"></a>Fonctionnalités Premium des dataflows
 
@@ -34,14 +34,14 @@ Les sections suivantes décrivent chacune de ces fonctionnalités en détail.
 
 Le moteur de calcul amélioré dans Power BI permet aux abonnés Power BI Premium d’utiliser leur capacité pour optimiser l’utilisation des dataflows. L’utilisation du moteur de calcul amélioré offre les avantages suivants :
 
-* Elle réduit considérablement le temps d’actualisation nécessaires aux étapes ETL de longue durée sur les entités calculées, comme l’exécution de *jointures*, le calcul de *distinctions*, les *filtres* et les *regroupements*.
+* Elle réduit considérablement le temps d’actualisation nécessaires aux étapes ETL de longue durée sur les entités calculées, comme l’exécution de *jointures* , le calcul de *distinctions* , les *filtres* et les *regroupements*.
 * Exécuter des requêtes DirectQuery sur les entités
 
 L’activation du moteur de calcul avancé est décrite à la suite, et vous trouverez également des réponses aux questions courantes.
 
 ### <a name="using-the-enhanced-compute-engine"></a>Utilisation du moteur de calcul amélioré
 
-Le moteur de calcul amélioré s’active à partir de la page **Paramètres de capacité** du service Power BI, dans la section **Dataflows**. Par défaut, le moteur de calcul amélioré est **Désactivé**. Pour activer le moteur de calcul avancé, faites passer le bouton bascule sur **Activé**, comme dans l’image suivante, puis enregistrez vos paramètres. 
+Le moteur de calcul amélioré s’active à partir de la page **Paramètres de capacité** du service Power BI, dans la section **Dataflows**. Par défaut, le moteur de calcul amélioré est **Désactivé**. Pour activer le moteur de calcul avancé, faites passer le bouton bascule sur **Activé** , comme dans l’image suivante, puis enregistrez vos paramètres. 
 
 ![Activer le moteur de calcul amélioré](media/dataflows-premium-features/compute-engine-settings.png)
 
@@ -52,8 +52,8 @@ Une fois le moteur de calcul avancé activé, revenez aux **dataflows**. Vous de
 
 Pour tirer le meilleur parti du moteur de calcul, divisez l’étape ETL en deux dataflows distincts de la façon suivante :
 
-* **Dataflow 1** : ce dataflow doit uniquement ingérer tout ce qui est nécessaire d’une source de données et le placer dans le dataflow 2.
-* **Dataflow 2** : effectuez toutes les opérations ETL dans ce second dataflow, mais vérifiez que vous référencez bien le dataflow 1, qui doit se trouver sur la même capacité. Veillez également à effectuer les opérations pliables (filtrer, grouper par, distinct, jointure) avant toutes les autres, pour veiller à ce que le moteur de calcul soit utilisé.
+* **Dataflow 1**  : ce dataflow doit uniquement ingérer tout ce qui est nécessaire d’une source de données et le placer dans le dataflow 2.
+* **Dataflow 2**  : effectuez toutes les opérations ETL dans ce second dataflow, mais vérifiez que vous référencez bien le dataflow 1, qui doit se trouver sur la même capacité. Veillez également à effectuer les opérations pliables (filtrer, grouper par, distinct, jointure) avant toutes les autres, pour veiller à ce que le moteur de calcul soit utilisé.
 
 ### <a name="common-questions-and-answers"></a>Questions et réponses courantes
 
@@ -88,9 +88,9 @@ Vous pouvez utiliser DirectQuery pour vous connecter directement des dataflows, 
 
 L’utilisation de DirectQuery avec des dataflows apporte les améliorations suivantes à Power BI et à vos processus de dataflows :
 
-* **Éviter les planifications d’actualisation distinctes** : DirectQuery se connecte directement à un dataflow, ce qui élimine la nécessité de créer un jeu de données. Ainsi, l’utilisation de DirectQuery avec vos dataflows signifie que vous n’avez plus besoin de planifications d’actualisation distinctes pour le dataflow et pour le jeu de données pour garantir que vos données sont synchronisées.
+* **Éviter les planifications d’actualisation distinctes**  : DirectQuery se connecte directement à un dataflow, ce qui élimine la nécessité de créer un jeu de données. Ainsi, l’utilisation de DirectQuery avec vos dataflows signifie que vous n’avez plus besoin de planifications d’actualisation distinctes pour le dataflow et pour le jeu de données pour garantir que vos données sont synchronisées.
 
-* **Filtrage des données** : DirectQuery est pratique pour travailler sur une vue filtrée des données au sein d’un dataflow. Si vous voulez filtrer les données et ainsi travailler sur un sous-ensemble de données plus petit dans votre dataflow, vous pouvez utiliser DirectQuery (et le moteur de calcul) pour filtrer les données du dataflow et utiliser le sous-ensemble filtré dont vous avez besoin.
+* **Filtrage des données**  : DirectQuery est pratique pour travailler sur une vue filtrée des données au sein d’un dataflow. Si vous voulez filtrer les données et ainsi travailler sur un sous-ensemble de données plus petit dans votre dataflow, vous pouvez utiliser DirectQuery (et le moteur de calcul) pour filtrer les données du dataflow et utiliser le sous-ensemble filtré dont vous avez besoin.
 
 
 ### <a name="using-directquery-for-dataflows"></a>Utilisation de DirectQuery pour les dataflows
@@ -146,7 +146,7 @@ Les dataflows peuvent être configurés en vue d’une actualisation incrémenti
 
 ![Actualisation incrémentielle](media/dataflows-premium-features/incremental-refresh.png)
 
-Le fait de définir l’actualisation incrémentielle a pour effet d’ajouter des paramètres au dataflow pour spécifier la plage de dates. Pour plus d’informations sur la configuration de l’actualisation incrémentielle, consultez l’article traitant de l’[actualisation incrémentielle](https://docs.microsoft.com/power-query/dataflows/incremental-refresh).
+Le fait de définir l’actualisation incrémentielle a pour effet d’ajouter des paramètres au dataflow pour spécifier la plage de dates. Pour plus d’informations sur la configuration de l’actualisation incrémentielle, consultez l’article traitant de l’[actualisation incrémentielle](/power-query/dataflows/incremental-refresh).
 
 ### <a name="considerations-for-when-not-to-set-incremental-refresh"></a>Cas où l’actualisation incrémentielle ne doit pas être définie
 

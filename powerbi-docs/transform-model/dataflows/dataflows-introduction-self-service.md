@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b603c0a2ad300145db6342acac3473a2f4a567c6
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 23ead6afd508cc0e61ae29d65926372561a6375a
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91637995"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396285"
 ---
 # <a name="introduction-to-dataflows-and-self-service-data-prep"></a>Introduction aux dataflows et à la préparation des données en libre-service
 
@@ -52,4 +52,4 @@ Les articles suivants vous permettront d’en savoir plus sur les dataflows et P
 
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
-* [Common Data Model – Vue d’ensemble](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model – Vue d’ensemble](/powerapps/common-data-model/overview)

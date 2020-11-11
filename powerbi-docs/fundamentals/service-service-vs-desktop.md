@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/07/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4118e5c009a8d7372d5cb58d1e1b9d033a70494e
-ms.sourcegitcommit: 154946ece829360cc0ff3be13276cd7a129f3388
+ms.openlocfilehash: 0b4a1275a3b50fbadd37d953b77316d6021c800c
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87988731"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397090"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparaison de Power BI Desktop et du service Power BI
 
@@ -41,7 +41,7 @@ Les éditeurs de rapports dans Power BI Desktop et dans le service sont similair
 
 1. Les volets de navigation supérieurs, qui sont différents dans Power BI Desktop et le service    
 2. Canevas de rapport     
-3. Les volets **Champs**, **Visualisations** et **Filtres**
+3. Les volets **Champs** , **Visualisations** et **Filtres**
 
 Cette vidéo montre l’éditeur de rapports dans Power BI Desktop. 
 
@@ -51,11 +51,11 @@ Cette vidéo montre l’éditeur de rapports dans Power BI Desktop.
 
 ### <a name="collaborating"></a>Collaboration
 
-Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI**, là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Vous partagez ensuite ces tableaux de bord et ces rapports avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en *mode Lecture*, et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports.  Vous pouvez également partager vos jeux de données et permettre à d’autres utilisateurs de générer leurs propres rapports à partir de ceux-ci. Découvrez plus en détail comment [collaborer dans le service Power BI](../collaborate-share/service-new-workspaces.md).
+Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI** , là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Vous partagez ensuite ces tableaux de bord et ces rapports avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en *mode Lecture* , et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports.  Vous pouvez également partager vos jeux de données et permettre à d’autres utilisateurs de générer leurs propres rapports à partir de ceux-ci. Découvrez plus en détail comment [collaborer dans le service Power BI](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Préparation des données en libre-service avec des dataflows
 
-Les dataflows aident les organisations à unifier des données provenant de sources disparates et à les préparer pour la modélisation. Les analystes peuvent facilement créer des flux de données à l’aide des outils familiers en libre-service. Les analystes utilisent des dataflows pour ingérer, transformer, intégrer et enrichir le Big Data en définissant des connexions à la source de données, une logique ETL, des planifications d’actualisation, et bien plus encore. Découvrez plus en détail la [Préparation des données en libre-service avec des dataflows](../transform-model/service-dataflows-overview.md).
+Les dataflows aident les organisations à unifier des données provenant de sources disparates et à les préparer pour la modélisation. Les analystes peuvent facilement créer des flux de données à l’aide des outils familiers en libre-service. Les analystes utilisent des dataflows pour ingérer, transformer, intégrer et enrichir le Big Data en définissant des connexions à la source de données, une logique ETL, des planifications d’actualisation, et bien plus encore. Découvrez plus en détail la [Préparation des données en libre-service avec des dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

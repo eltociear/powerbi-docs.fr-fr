@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b8811d9b869d4aa3592c9ed3531d067701b544a8
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 89de77e65d8eb675d9e80c3b2497f39af7c32d33
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638372"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396584"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>Considérations et limitations des dataflows
 
@@ -24,7 +24,7 @@ Les dataflows sont soumis à des limitations en matière de création, d’actua
 
 Au moment de créer des dataflows, les utilisateurs doivent prendre en considération les points suivants :
 
-* La création de dataflows s’effectue dans l’environnement Power Query Online (PQO) ; prenez connaissance des limitations décrites dans [Limites de Power Query](https://docs.microsoft.com/power-query/power-query-online-limits).
+* La création de dataflows s’effectue dans l’environnement Power Query Online (PQO) ; prenez connaissance des limitations décrites dans [Limites de Power Query](/power-query/power-query-online-limits).
 Les dataflows étant créés dans l’environnement Power Query Online (PQO), les mises à jour dont font l’objet les configurations de charge de travail Dataflows agissent uniquement sur les actualisations et n’ont pas d’impact sur l’expérience de création
 
 * Les dataflows ne peuvent être modifiés que par leurs propriétaires
@@ -37,7 +37,7 @@ Les dataflows étant créés dans l’environnement Power Query Online (PQO), le
 
 ## <a name="api-considerations"></a>Considérations sur les API
 
-Vous trouverez des informations supplémentaires sur les API REST Dataflows prises en charge dans la documentation de [référence sur les API REST](https://docs.microsoft.com/rest/api/power-bi/dataflows). Voici quelques points à prendre en considération et à garder à l’esprit :
+Vous trouverez des informations supplémentaires sur les API REST Dataflows prises en charge dans la documentation de [référence sur les API REST](/rest/api/power-bi/dataflows). Voici quelques points à prendre en considération et à garder à l’esprit :
 
 * L’exportation et l’importation d’un dataflow confèrent à celui-ci un nouvel ID
 
@@ -75,7 +75,7 @@ Les dataflows qui existent en mode Premium présentent les limitations et consid
 
 * Une entité liée ne peut pas être jointe à une entité standard qui obtient ses données à partir d’une source de données locale
 
-* Quand une requête (par exemple, la requête *A*) est utilisée dans le calcul d’une autre requête (requête *B*) dans des dataflows, la requête *B* devient une entité calculée. Les entités calculées ne peuvent pas faire référence à des sources locales.
+* Quand une requête (par exemple, la requête *A* ) est utilisée dans le calcul d’une autre requête (requête *B* ) dans des dataflows, la requête *B* devient une entité calculée. Les entités calculées ne peuvent pas faire référence à des sources locales.
 
 
 **Moteur de calcul :**
@@ -111,4 +111,3 @@ Les articles suivants vous permettront d’en savoir plus sur les dataflows et P
 * [Configuration du stockage de dataflows pour utiliser Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Fonctionnalités Premium des dataflows](dataflows-premium-features.md)
 * [IA et dataflows](dataflows-machine-learning-integration.md)
-

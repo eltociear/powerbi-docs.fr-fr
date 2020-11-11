@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 06/01/2020
-ms.author: rien
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 78d9d59455a86c5499bc8b01deeacb331bbe7a8b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: c46410caff373eb8474a4b687e834b822f2da8ac
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858919"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397527"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Tutoriel : Incorporer un nouveau visuel Power Apps dans un rapport Power BI
 
 Dans ce tutoriel, vous utilisez le visuel Power Apps pour créer une application incorporée dans un exemple de rapport Power BI. Cette application interagit avec d’autres visuels de ce rapport.
 
-Si vous n’avez pas d’abonnement Power Apps, [créez un compte gratuit](https://web.powerapps.com/signup?redirect=marketing&email=) avant de commencer.
+Si vous n’avez pas d’abonnement Power Apps, [créez un compte gratuit](https://make.powerapps.com/signup?redirect=marketing&email=) avant de commencer.
 
 Dans ce tutoriel, vous allez découvrir comment :
 > [!div class="checklist"]
@@ -51,7 +51,7 @@ Quand vous ajoutez le visuel Power Apps à votre rapport, l’application lance 
 
     ![Volet Visualisation avec l’icône Power Apps sélectionnée](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
-3. Dans le volet **Champs**, sélectionnez **Nom**, **Code du produit** et **Étape de vente**. 
+3. Dans le volet **Champs** , sélectionnez **Nom** , **Code du produit** et **Étape de vente**. 
 
     ![sélectionner des champs](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
@@ -65,7 +65,7 @@ Quand vous ajoutez le visuel Power Apps à votre rapport, l’application lance 
 
 5.  Redimensionnez la galerie afin qu’elle n’occupe qu’une moitié de l’écran. 
 
-6. Dans le volet gauche, sélectionnez **Screen1**, puis affectez « LightBlue » à la propriété **Fill** de l’écran (pour optimiser son affichage dans le rapport).
+6. Dans le volet gauche, sélectionnez **Screen1** , puis affectez « LightBlue » à la propriété **Fill** de l’écran (pour optimiser son affichage dans le rapport).
 
     ![palette de couleurs](media/power-bi-visualization-powerapp/power-bi-powerapps-fill.png)
 
@@ -74,7 +74,7 @@ Quand vous ajoutez le visuel Power Apps à votre rapport, l’application lance 
     ![modifier les dimensions de la galerie](media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png)
 
 
-8. Sous **Galerie**, insérez un contrôle Étiquette de texte.
+8. Sous **Galerie** , insérez un contrôle Étiquette de texte.
 
    ![contrôle étiquette](media/power-bi-visualization-powerapp/power-bi-label.png)
 

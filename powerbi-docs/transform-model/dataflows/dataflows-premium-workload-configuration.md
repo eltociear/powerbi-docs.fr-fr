@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: davidi
 ms.custom: references_regions
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4a919c499746711719d679fc5cb9a689731093cc
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: f2efd4410af62425f599b1addd0f792f495120e0
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502246"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397251"
 ---
 # <a name="configure-power-bi-premium-dataflow-workloads"></a>Configurer des charges de travail de dataflow Power BI Premium
 
@@ -106,7 +106,7 @@ Cette section fournit des instructions pour les scénarios courants d’utilisat
 
 Les délais d’actualisation longs relèvent généralement d’un problème de parallélisme. Vous devez passer en revue les options suivantes, dans l’ordre :
 
-1. La nature de la préparation des données est un concept clé pour les délais d’actualisation longs. Dans notre analogie du restaurant décrite plus haut dans cet article, imaginez que vous avez déjà préparé des aliments, qui n’attendent plus que d’être utilisés. Dans ce scénario, les aliments peuvent être cuisinés beaucoup plus rapidement en raison d’un délai de préparation réduit. De même, chaque fois que vous pouvez optimiser votre délai d’actualisation en exploitant votre source de données qui effectue réellement la préparation et en exécutant la logique de requête intiale, vous devez le faire. Plus précisément, quand vous utilisez une base de données relationnelle comme SQL en tant que source, voyez si la requête initiale peut être exécutée sur la source et utilisez cette requête source pour votre dataflow d’extraction initial pour la source de données. Si vous ne pouvez pas utiliser une requête native dans le système source, effectuez des opérations que le [moteur de dataflow peut replier sur la source de données](https://docs.microsoft.com/power-query/power-query-folding).
+1. La nature de la préparation des données est un concept clé pour les délais d’actualisation longs. Dans notre analogie du restaurant décrite plus haut dans cet article, imaginez que vous avez déjà préparé des aliments, qui n’attendent plus que d’être utilisés. Dans ce scénario, les aliments peuvent être cuisinés beaucoup plus rapidement en raison d’un délai de préparation réduit. De même, chaque fois que vous pouvez optimiser votre délai d’actualisation en exploitant votre source de données qui effectue réellement la préparation et en exécutant la logique de requête intiale, vous devez le faire. Plus précisément, quand vous utilisez une base de données relationnelle comme SQL en tant que source, voyez si la requête initiale peut être exécutée sur la source et utilisez cette requête source pour votre dataflow d’extraction initial pour la source de données. Si vous ne pouvez pas utiliser une requête native dans le système source, effectuez des opérations que le [moteur de dataflow peut replier sur la source de données](/power-query/power-query-folding).
 
 2. Évaluez la répartition des délais d’actualisation sur la même capacité. Les opérations d’actualisation sont un processus qui requiert un calcul considérable. Dans notre analogie du restaurant, la répartition des délais d’actualisation revient à limiter le nombre de clients dans votre restaurant. Tout comme les restaurants prévoient le flux des clients et planifient leur capacité, vous devez également envisager d’effectuer les opérations d’actualisation en dehors des heures de pointe. Cela peut vous aider à réduire la pression sur la capacité.
 
@@ -136,7 +136,7 @@ Effectuez les étapes suivantes pour permettre aux charges de travail de déclen
 
 1. Pour l’ *ingestion* , concentrez-vous sur l’obtention aussi rapide que possible des données dans le stockage, en utilisant des filtres uniquement s’ils réduisent la taille globale du jeu de données. Une bonne pratique consiste à séparer votre logique de transformation de cette étape et à permettre au moteur de se concentrer sur la collecte initiale des ingrédients. Ensuite, séparez votre transformation et votre logique métier dans un dataflow distinct dans le même espace de travail, à l’aide d’entités liées ou calculées. Ainsi, le moteur peut activer et accélérer vos calculs. Dans notre analogie, il s’agit de la préparation des aliments dans la cuisine : la préparation des aliments constitue généralement une étape distincte de la sélection des ingrédients bruts et une condition préalable à leur cuisson dans le four. De même, votre logique a besoin d’être préparée séparément avant d’exploiter le moteur de calcul.
 
-2. Veillez à effectuer les opérations de repli, comme les fusions, les jointures, les conversions et [autres](https://docs.microsoft.com/power-query/power-query-folding#transformations-that-can-achieve-folding).
+2. Veillez à effectuer les opérations de repli, comme les fusions, les jointures, les conversions et [autres](/power-query/power-query-folding#transformations-that-can-achieve-folding).
 
 3. Créez les dataflows [conformément aux instructions et limitations publiées](dataflows-features-limitations.md#dataflows-in-premium).
 

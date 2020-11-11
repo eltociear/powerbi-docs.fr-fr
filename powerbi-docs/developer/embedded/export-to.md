@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 10/01/2020
-ms.openlocfilehash: f997547bb61bf203f7806dbe68d45beb29c6538b
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: b1d0a94e3dd0ae68231720bc69d2537568efd19f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116451"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396791"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Exporter un rapport Power BI vers un fichier (préversion)
 
@@ -28,15 +28,15 @@ L’API `exportToFile` permet d’exporter un rapport Power BI avec un appel RES
 
 Vous pouvez utiliser la fonctionnalité d’exportation de différentes manières. Voici quelques exemples :
 
-* **Bouton Envoyer à l’impression** : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport visualisé dans un fichier .pdf ou .pptx et, une fois qu’il est terminé, l’utilisateur peut recevoir le fichier sous forme de téléchargement. À l’aide de signets, vous pouvez exporter le rapport dans un état spécifique, y compris des filtres configurés, des segments et des paramètres supplémentaires. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
+* **Bouton Envoyer à l’impression**  : dans votre application, créez un bouton qui, lorsque vous cliquez dessus, déclenche un travail d’exportation. Le travail peut exporter le rapport visualisé dans un fichier .pdf ou .pptx et, une fois qu’il est terminé, l’utilisateur peut recevoir le fichier sous forme de téléchargement. À l’aide de signets, vous pouvez exporter le rapport dans un état spécifique, y compris des filtres configurés, des segments et des paramètres supplémentaires. Étant donné que l’API est asynchrone, la mise à disposition du fichier peut prendre un certain temps.
 
-* **Pièce jointe d’e-mail** : envoyer un e-mail automatisé à intervalles définis, avec un rapport .pdf en pièce jointe. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
+* **Pièce jointe d’e-mail**  : envoyer un e-mail automatisé à intervalles définis, avec un rapport .pdf en pièce jointe. Ce scénario peut être utile si vous souhaitez automatiser l’envoi d’un rapport hebdomadaire aux dirigeants.
 
 ## <a name="using-the-api"></a>Utilisation de l’API
 
 Avant d’utiliser l’API, vérifiez que les [paramètres de locataire administrateurs](../../admin/service-admin-portal.md#tenant-settings) suivants sont activés :
-* **Exporter les rapports comme présentations PowerPoint ou documents PDF** : activé par défaut.
-* **Exporter des rapports en tant que fichiers image** : nécessaire uniquement pour les fichiers *.png*, et désactivé par défaut.
+* **Exporter les rapports comme présentations PowerPoint ou documents PDF**  : activé par défaut.
+* **Exporter des rapports en tant que fichiers image**  : nécessaire uniquement pour les fichiers *.png* , et désactivé par défaut.
 
 L’API est asynchrone. Lorsque l’API [exportToFile](/rest/api/power-bi/reports/exporttofile) est appelée, elle déclenche un travail d’exportation. Après avoir déclenché un travail d’exportation, utilisez l’[interrogation](/rest/api/power-bi/reports/getexporttofilestatus) pour suivre le travail jusqu’à ce qu’il soit terminé.
 
@@ -52,7 +52,7 @@ Spécifiez les pages à imprimer en fonction de la valeur de retour [Obtenir des
 
 ### <a name="bookmarks"></a>Signets
 
-Des [signets](../../consumer/end-user-bookmarks.md) peuvent être utilisés pour enregistrer un rapport dans une configuration spécifique, y compris avec des filtres appliqués et l’état des visuels du rapport. Vous pouvez utiliser l’API [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) pour exporter par programme le signet d’un rapport, de deux manières :
+Des [signets](../../consumer/end-user-bookmarks.md) peuvent être utilisés pour enregistrer un rapport dans une configuration spécifique, y compris avec des filtres appliqués et l’état des visuels du rapport. Vous pouvez utiliser l’API [exportToFile](/rest/api/power-bi/reports/exporttofile) pour exporter par programme le signet d’un rapport, de deux manières :
 
 * **Exporter un signet existant**
 

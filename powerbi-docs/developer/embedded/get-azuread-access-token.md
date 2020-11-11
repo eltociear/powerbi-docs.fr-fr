@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/04/2019
-ms.openlocfilehash: 8b20ee4fbac3c4b22bd420e49df0bc1fbfd6e300
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 0743a7ac0d12cba8bbde54464a275a78f7c88eff
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91746605"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396699"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton accès Azure AD pour votre application Power BI
 
@@ -55,7 +55,7 @@ var @params = new NameValueCollection
 
 Après avoir créé une chaîne de requête, vous redirigez vers **Azure AD** pour obtenir un **code d’autorisation**.  Voici une méthode C# complète pour créer une chaîne de requête de **code d’autorisation** et rediriger vers **Azure AD**. Vous utilisez ensuite le **code d’autorisation** pour obtenir un **jeton d’accès**.
 
-Dans redirect.aspx.cs, des appels de [AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) pour générer le jeton.
+Dans redirect.aspx.cs, des appels de [AuthenticationContext.AcquireTokenByAuthorizationCode](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) pour générer le jeton.
 
 #### <a name="get-authorization-code"></a>Obtenir un code d’autorisation
 
@@ -97,7 +97,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Obtenir un jeton accès à partir du code d’autorisation
 
-Une fois qu’**Azure AD** vous a redirigé vers votre application web avec un **code d’autorisation**, vous devez utiliser celui-ci pour obtenir un jeton d’accès. Voici un exemple en C# que vous pouvez utiliser dans votre page de redirection et l’événement `Page_Load` de default.aspx.
+Une fois qu’ **Azure AD** vous a redirigé vers votre application web avec un **code d’autorisation** , vous devez utiliser celui-ci pour obtenir un jeton d’accès. Voici un exemple en C# que vous pouvez utiliser dans votre page de redirection et l’événement `Page_Load` de default.aspx.
 
 Vous pouvez récupérer l’espace de noms **Microsoft.IdentityModel.Clients.ActiveDirectory** à partir du package NuGet [ADAL (Active Directory Authentication Library)](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 
@@ -177,7 +177,7 @@ Pour cette approche, vous utilisez un [principal du service](embed-service-princ
 #### <a name="embedservicecs"></a>EmbedService.cs
 
 ```csharp
-var AuthorityURL  = "https://login.microsoftonline.com/common/"
+var AuthorityURL  = "https://login.microsoftonline.com/<TenantId>/"
 var ResourceURL  = "https://analysis.windows.net/powerbi/api"
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
        AuthenticationResult authenticationResult = null;

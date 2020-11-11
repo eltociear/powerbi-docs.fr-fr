@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/28/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: 6ff1f445172c553116148ffb212129b96f34b1da
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: cb8ac0ad558f15219829e9f32111cacf9f27eb25
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916012"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483739"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -96,7 +96,7 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 
 ### <a name="capacity-workloads"></a>Charges de travail de capacité
 
-Les charges de travail de capacité sont des services mis à la disposition des utilisateurs. Par défaut, les capacités Premium et Azure ne prennent en charge que la charge de travail de jeu de données qui est associée aux requêtes Power BI en cours d’exécution. La charge de travail de jeu de données ne peut pas être désactivée. Vous pouvez également activer les charges de travail suivantes : [IA (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Flux de données](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et [Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Ces charges de travail sont prises en charge uniquement dans les abonnements Premium. 
+Les charges de travail de capacité sont des services mis à la disposition des utilisateurs. Par défaut, les capacités Premium et Azure ne prennent en charge que la charge de travail de jeu de données qui est associée aux requêtes Power BI en cours d’exécution. La charge de travail de jeu de données ne peut pas être désactivée. Vous pouvez également activer les charges de travail suivantes : [IA (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Flux de données](../transform-model/dataflows/dataflows-introduction-self-service.md) et [Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md). Ces charges de travail sont prises en charge uniquement dans les abonnements Premium. 
 
 Chaque charge de travail supplémentaire permet de configurer la mémoire maximale (sous forme d’un pourcentage de la mémoire totale disponible) qui peut être utilisée par la charge de travail. Les valeurs par défaut pour la mémoire maximale sont déterminées par la référence SKU. Vous pouvez optimiser les ressources disponibles de votre capacité en activant uniquement les charges de travail supplémentaires lorsque vous en avez besoin. En outre, vous ne pouvez modifier les paramètres de mémoire que si vous avez constaté que les paramètres par défaut ne répondent pas aux besoins en ressources de votre capacité. Les charges de travail peuvent être activées et configurées pour une capacité par les administrateurs de capacité en accédant aux **paramètres de capacité** sur le [portail d’administration](service-admin-portal.md) ou en utilisant les [API REST Capacities](/rest/api/power-bi/capacities).  
 
@@ -235,7 +235,7 @@ Premium permet aux utilisateurs Pro de distribuer du contenu sans exiger que le
 
 Pour plus d’informations, consultez [Gestion des licences Power BI](service-admin-licensing-organization.md).
 
-## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services dans Power BI Premium (préversion)
+## <a name="analysis-services-in-power-bi-premium"></a>Analysis Services dans Power BI Premium
 
 Le **moteur Vertipaq Analysis Services** , validé par Microsoft, alimente en arrière-plan les jeux de données et les espaces de travail Power BI Premium. Analysis Services fournit la programmabilité ainsi que la prise en charge des applications et des outils clients par le biais de bibliothèques clientes et d’API qui prennent en charge le protocole XMLA ouvert. Par défaut, les charges de travail des jeux de données de capacité Power BI Premium prennent en charge les opérations *en lecture seule* provenant des applications et outils clients tiers et Microsoft, par le biais d’un **point de terminaison XMLA**. Les administrateurs de capacité peuvent également choisir de désactiver ou d’autoriser des opérations de *lecture/écriture* via le point de terminaison.
 

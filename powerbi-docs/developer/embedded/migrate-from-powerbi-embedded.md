@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 06/30/2018
-ms.openlocfilehash: f3f76bd7c422d07cb2b390c2aebd92a2d7fe4ef3
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 7d4a548ab24e8493cef340026642021a2f923ee1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749043"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397412"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 
@@ -32,9 +32,9 @@ La collection d’espaces de travail Power BI actuelle reste encore disponible p
 Avant de commencer la migration vers le nouveau Power BI Embedded, vous pouvez suivre une procédure pas à pas rapide pour configurer votre nouvel environnement Power BI Embedded avec [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup).
 
 Choisissez la solution qui vous convient :
-* **Incorporer pour vos clients** : si vous êtes intéressé par une solution où [l’application possède les données](https://aka.ms/embedsetup/AppOwnsData). [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. 
+* **Incorporer pour vos clients** : si vous êtes intéressé par une solution où *l’application possède les données*. [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. 
 
-* **Incorporer pour votre organisation** : si vous êtes intéressé par une solution où [l’utilisateur possède les données](https://aka.ms/embedsetup/UserOwnsData). [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI.
+* **Incorporer pour votre organisation** : si vous êtes intéressé par une solution où *l’utilisateur possède les données*. [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI.
 
 ## <a name="prepare-for-the-migration"></a>Préparer la migration
 

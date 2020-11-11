@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2020
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4af8f9edd3d51214aaa766219e4903eb4b26b813
-ms.sourcegitcommit: 65025ab7ae57e338bdbd94be795886e5affd45b4
+ms.openlocfilehash: 93ccb8c02e71165dfd23bcd82b21ae2758e03d43
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87252541"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396193"
 ---
 # <a name="ways-to-collaborate-and-share-in-power-bi"></a>Façons de collaborer et partager dans Power BI
 
@@ -34,7 +34,7 @@ Vous avez créé des tableaux de bord et des rapports. Vous voudrez peut-être c
 
 - *Partagez des tableaux de bord ou des rapports* à partir de Mon espace de travail ou d’un autre espace de travail.
 - Annoter et partager à partir des *applications mobiles* Power BI.
-- Regrouper les tableaux de bord et rapports des espaces de travail dans des *applications*, et les distribuer à un groupe plus important ou à toute l’organisation.
+- Regrouper les tableaux de bord et rapports des espaces de travail dans des *applications* , et les distribuer à un groupe plus important ou à toute l’organisation.
 - Incorporer des rapports dans des *portails sécurisés* ou des *sites web publics*.
 - Imprimer des rapports
 - Créer une *application modèle* que vous pouvez distribuer aux utilisateurs Power BI externes, par le biais de Microsoft AppSource
@@ -101,7 +101,7 @@ Vous pouvez également [partager une capture instantanée d’une vignette](../c
 
 ## <a name="distribute-insights-in-an-app"></a>Distribuer des insights dans une application
 
-Supposons que vous souhaitiez distribuer votre tableau de bord à un large public au sein de votre organisation. Vos collègues et vous avez créé un *espace de travail*, puis créé et affiné des tableaux de bord, des rapports et des jeux de données dans cet espace. Désormais, vous sélectionnez les tableaux de bord et les rapports et les publiez en tant qu’*application* pour un groupe ou pour toute votre organisation.
+Supposons que vous souhaitiez distribuer votre tableau de bord à un large public au sein de votre organisation. Vos collègues et vous avez créé un *espace de travail* , puis créé et affiné des tableaux de bord, des rapports et des jeux de données dans cet espace. Désormais, vous sélectionnez les tableaux de bord et les rapports et les publiez en tant qu’ *application* pour un groupe ou pour toute votre organisation.
 
 ![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
@@ -125,7 +125,7 @@ Avec les options **Incorporer dans SharePoint Online** et **Incorporer** du serv
 
 ### <a name="publish-to-public-web-sites"></a>Publier sur des sites web publics
 
-Avec **Publier sur le web**, vous pouvez publier des rapports Power BI sur le web en incorporant des visualisations dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. En savoir plus sur la [publication sur le web](service-publish-to-web.md).
+Avec **Publier sur le web** , vous pouvez publier des rapports Power BI sur le web en incorporant des visualisations dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. En savoir plus sur la [publication sur le web](service-publish-to-web.md).
 
 >[!Warning]
 >Utilisez [Publier sur le web](service-publish-to-web.md) seulement pour partager du contenu publiquement, mais pas pour un partage en interne.
@@ -158,7 +158,7 @@ En savoir plus sur la [création et l’utilisation des jeux de données partag�
 
 ## <a name="create-dataflows"></a>Créer des dataflows
 
-Les *dataflows* sont un moyen en libre-service d’unifier les données provenant de sources disparates et de les préparer pour la modélisation. Les analystes créent des dataflows pour la réception, la transformation, l’intégration et l’enrichissement des Big Data. Ils créent et gèrent les flux dans les espaces de travail du service Power BI. Découvrez plus en détail la [Préparation des données en libre-service avec des dataflows](../transform-model/service-dataflows-overview.md).
+Les *dataflows* sont un moyen en libre-service d’unifier les données provenant de sources disparates et de les préparer pour la modélisation. Les analystes créent des dataflows pour la réception, la transformation, l’intégration et l’enrichissement des Big Data. Ils créent et gèrent les flux dans les espaces de travail du service Power BI. Découvrez plus en détail la [Préparation des données en libre-service avec des dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2020
 ms.author: v-pemyer
-ms.openlocfilehash: ad85ad56db907ca19af7dc14681eb34f8c2b9abc
-ms.sourcegitcommit: 46a340937d9f01c6daba86a4ab178743858722ec
+ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85398196"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396630"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Création de tables de dates dans Power BI Desktop
 
@@ -22,7 +22,7 @@ Cet article s’adresse principalement aux modélisateurs de données qui utilis
 Pour utiliser les [fonctions Time Intelligence](/dax/time-intelligence-functions-dax) DAX (Data Analysis Expressions), vous devez respecter un prérequis : votre modèle doit comporter au moins une _table de dates_. Une table de dates est une table qui répond aux exigences suivantes :
 
 > [!div class="checklist"]
-> - Elle doit avoir une colonne dont le type de données est **date** (ou **date/heure**), appelée _colonne de dates_.
+> - Elle doit avoir une colonne dont le type de données est **date** (ou **date/heure** ), appelée _colonne de dates_.
 > - La colonne de dates doit contenir des valeurs uniques.
 > - La colonne de dates ne doit pas contenir de valeurs vides.
 > - Il ne doit pas y avoir de dates manquantes dans la colonne de dates.
@@ -60,7 +60,7 @@ Il est possible de générer une table de dates à l’aide de Power Query. Voic
 - [Generating A Date Dimension Table In Power Query](https://blog.crossjoin.co.uk/2013/11/19/generating-a-date-dimension-table-in-power-query/) de Chris Webb (en anglais)
 
 > [!TIP]
-> Si vous ne disposez pas d’un entrepôt de données ou d’une autre définition cohérente du temps dans votre organisation, envisagez d’utiliser Power Query pour publier un [dataflow](../transform-model/service-dataflows-overview.md). Ensuite, demandez à tous les concepteurs de données de se connecter au dataflow pour ajouter des tables de dates à leurs modèles. Ainsi, votre modèle devient la seule source de vérité pour le temps dans votre organisation.
+> Si vous ne disposez pas d’un entrepôt de données ou d’une autre définition cohérente du temps dans votre organisation, envisagez d’utiliser Power Query pour publier un [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). Ensuite, demandez à tous les concepteurs de données de se connecter au dataflow pour ajouter des tables de dates à leurs modèles. Ainsi, votre modèle devient la seule source de vérité pour le temps dans votre organisation.
 
 Si vous devez générer une table de dates, envisagez de le faire avec DAX. Vous trouverez peut-être cette solution plus facile. Elle se révèlera par ailleurs probablement plus pratique, car DAX comprend des fonctionnalités intelligentes intégrées qui simplifient la création et la gestion des tables de dates.
 
@@ -82,7 +82,7 @@ Pour plus d’informations en rapport avec cet article, consultez les ressources
 - [Date/heure automatique dans Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Conseils sur les dates/heures automatiques dans Power BI Desktop](auto-date-time.md)
 - [Définir et utiliser des tables de dates dans Power BI Desktop](../transform-model/desktop-date-tables.md)
-- [Préparation des données en libre-service dans Power BI](../transform-model/service-dataflows-overview.md)
+- [Préparation des données en libre-service dans Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md)
 - [Fonction CALENDAR (DAX)](/dax/calendar-function-dax)
 - [Fonction CALENDARAUTO (DAX)](/dax/calendarauto-function-dax)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

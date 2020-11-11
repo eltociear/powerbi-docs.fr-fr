@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 934ffa649885b270dd7f321f45168723f53bc379
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 406a2aebbf5d043ce74ca189c18b384f6c70e716
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600350"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397182"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
 
@@ -76,7 +76,7 @@ Une fois que vous avez terminé les transformations, modifiez le nom de la requ�
 
 ![Capture d’écran montrant Modifier les requêtes avec Nom en évidence.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
 
-Ensuite, **Enregistrez** le flux de données et nommez-le Fabrikam. Sélectionnez le bouton **Actualiser maintenant**, qui s’affiche après l’enregistrement du flux de données.
+Ensuite, **Enregistrez** le flux de données et nommez-le Fabrikam. Sélectionnez le bouton **Actualiser maintenant** , qui s’affiche après l’enregistrement du flux de données.
 
 ![Capture d’écran montrant le bouton Enregistrer.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
 
@@ -86,7 +86,7 @@ Une fois que le flux de données est enregistré et actualisé, vous pouvez l’
 
 Ouvrez Power BI Desktop. Dans le ruban Accueil, sélectionnez **Obtenir des données**.
 
-Accédez au **flux de données Power BI (version bêta**) dans la section Power BI et sélectionnez **Se connecter.**
+Accédez au **flux de données Power BI (version bêta** ) dans la section Power BI et sélectionnez **Se connecter.**
 
 ![Capture d’écran montrant le volet Obtenir les données avec Dataflows Power BI sélectionné.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
 
@@ -175,11 +175,11 @@ Lorsque vous n’en avez plus besoin, supprimez la requête en cliquant avec le 
 Dans ce tutoriel, vous avez appliqué des fonctions de scoring des sentiments et de balisage d’images à un flux de données Power BI. Pour en savoir plus sur Cognitive Services dans Power BI, lisez les articles suivants.
 
 * [Cognitive Services dans Azure](/azure/cognitive-services/)
-* Prise en main [de la préparation des données en libre-service sur le flux de données](../transform-model/service-dataflows-overview.md)
+* Prise en main [de la préparation des données en libre-service sur le flux de données](../transform-model/dataflows/dataflows-introduction-self-service.md)
 * En savoir plus sur [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 
 Les articles suivants pourraient également vous intéresser.
 
 * [Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)](service-tutorial-invoke-machine-learning-model.md)
-* [Intégration d’Azure Machine Learning dans Power BI (préversion)](../transform-model/service-machine-learning-integration.md)
-* [Cognitive Services dans Power BI (préversion)](../transform-model/service-cognitive-services.md)
+* [Intégration d’Azure Machine Learning dans Power BI (préversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* [Cognitive Services dans Power BI (préversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md)

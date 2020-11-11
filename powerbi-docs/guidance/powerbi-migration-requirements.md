@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f96fa15981de8d86007c6e1fa768f95a77921280
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 21d619c42648f90746af9961475bb531dc24d5ab
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680947"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396653"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Collecter les exigences pour la migration vers Power BI
 
@@ -51,12 +51,12 @@ Rassemblez des informations complètes et faciles à renseigner sur les rapports
 - **Exigences de sécurité :** clarifiez les exigences de sécurité (par exemple, les liseurs autorisés, les éditeurs autorisés et les besoins de sécurité au niveau des lignes), y compris les exceptions à la sécurité habituelle de l’organisation. Documentez les exigences relatives au niveau de sensibilité des données, à la confidentialité des données ou à la réglementation/conformité.
 - **Calculs, indicateurs de performance clés et règles métier :** identifiez et documentez l’ensemble des calculs, des indicateurs de performance clés et des règles métier actuellement définis dans le rapport existant afin qu’ils soient alignés sur les exigences propres aux données.
 - **Exigences en matière de convivialité, de disposition et d’apparence :** identifiez les exigences de convivialité, de disposition et d’apparence en lien avec les exigences de visualisation, de regroupement et de tri des données, et la visibilité conditionnelle. Incluez les considérations particulières pour la livraison sur les appareils mobiles.
-- **Exigences relatives à l’impression et l’exportation :** déterminez s’il existe des exigences spécifiques pour l’impression, l’exportation ou le rendu parfait des pixels. Ces exigences conditionnent le type de rapport qui sera le plus approprié (par exemple, un rapport Power BI, Excel ou paginé). N’oubliez pas que les consommateurs de rapports ont tendance à attacher beaucoup d’importance à leurs habitudes de travail. N’ayez donc pas peur de remettre en question leurs modes de pensée. Parlez-leur d’ _améliorations_ plutôt que de _changements_ .
+- **Exigences relatives à l’impression et l’exportation :** déterminez s’il existe des exigences spécifiques pour l’impression, l’exportation ou le rendu parfait des pixels. Ces exigences conditionnent le type de rapport qui sera le plus approprié (par exemple, un rapport Power BI, Excel ou paginé). N’oubliez pas que les consommateurs de rapports ont tendance à attacher beaucoup d’importance à leurs habitudes de travail. N’ayez donc pas peur de remettre en question leurs modes de pensée. Parlez-leur d’ _améliorations_ plutôt que de _changements_.
 - **Risques ou préoccupations :** déterminez s’il existe d’autres exigences techniques ou opérationnelles pour les rapports, ou des risques ou des préoccupations quant aux informations présentées dans les rapports.
 - **Problèmes ouverts et éléments du backlog :** identifiez les opérations de maintenance futures, les problèmes connus ou les demandes différées à ajouter au backlog à ce stade.
 
 > [!TIP]
-> Essayez de hiérarchiser les exigences en les classifiant comme _impératives_ ou _souhaitables_ . Souvent, les consommateurs demandent tout ce dont ils pourraient avoir besoin un jour, car ils craignent de ne pas avoir d’autre occasion de le faire par la suite. De plus, quand vous définissez les priorités sur plusieurs itérations, mettez le backlog à la disposition des parties prenantes. Cela facilite la communication, la prise de décision et le suivi des engagements en attente.
+> Essayez de hiérarchiser les exigences en les classifiant comme _impératives_ ou _souhaitables_. Souvent, les consommateurs demandent tout ce dont ils pourraient avoir besoin un jour, car ils craignent de ne pas avoir d’autre occasion de le faire par la suite. De plus, quand vous définissez les priorités sur plusieurs itérations, mettez le backlog à la disposition des parties prenantes. Cela facilite la communication, la prise de décision et le suivi des engagements en attente.
 
 ### <a name="gather-data-requirements"></a>Collecter les exigences relatives aux données
 
@@ -74,7 +74,7 @@ Rassemblez des informations détaillées sur les données, comme celles-ci :
 - **Problèmes ouverts et éléments du backlog :** identifiez les problèmes connus, les défauts de qualité des données, les opérations de maintenance futures ou les demandes différées à ajouter au backlog à ce stade.
 
 > [!IMPORTANT]
-> La réutilisation des données est possible avec des [jeux de données partagés](../connect-data/service-datasets-share.md), qui peuvent éventuellement être [certifiés](../collaborate-share/service-endorse-content.md) pour indiquer la fiabilité et améliorer la détectabilité. Réutiliser les informations de préparation des données peut se faire avec des [dataflows](../transform-model/service-dataflows-overview.md) pour réduire la logique répétitive entre des jeux de données multiples. Les dataflows permettent aussi de diminuer considérablement la charge sur les systèmes sources du fait que les données sont récupérées moins souvent ; plusieurs jeux de données peuvent donc importer des données à partir du même dataflow.
+> La réutilisation des données est possible avec des [jeux de données partagés](../connect-data/service-datasets-share.md), qui peuvent éventuellement être [certifiés](../collaborate-share/service-endorse-content.md) pour indiquer la fiabilité et améliorer la détectabilité. Réutiliser les informations de préparation des données peut se faire avec des [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) pour réduire la logique répétitive entre des jeux de données multiples. Les dataflows permettent aussi de diminuer considérablement la charge sur les systèmes sources du fait que les données sont récupérées moins souvent ; plusieurs jeux de données peuvent donc importer des données à partir du même dataflow.
 
 ## <a name="identify-improvement-opportunities"></a>Identifier les opportunités d’amélioration
 

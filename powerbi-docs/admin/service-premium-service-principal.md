@@ -7,14 +7,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/14/2020
+ms.date: 10/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 5e07cafc5c507d090d56a0d973e2c02aa873c3e2
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 406b526f9e2dd146ee99629ed913c60b95989cb0
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116497"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483716"
 ---
 # <a name="automate-premium-workspace-and-dataset-tasks-with-service-principals"></a>Automatiser des tâches d’espace de travail et de jeu de données avec des principaux de service
 
@@ -22,7 +22,7 @@ Les principaux de service sont une *inscription d’application* Azure Active Di
 
 Power BI Premium utilise la même fonctionnalité de principal de service que Power BI Embedded. Pour plus d’informations, consultez [Incorporation du contenu Power BI avec le principal de service et un certificat](../developer/embedded/embed-service-principal.md).
 
-Dans **Power BI Premium**, les principaux de service peuvent également être utilisés avec le [point de terminaison XMLA](service-premium-connect-tools.md) pour automatiser des tâches de gestion de jeu de données telles que le provisionnement d’espaces de travail, le déploiement de modèles et l’actualisation de jeux de données avec :
+Dans **Power BI Premium** , les principaux de service peuvent également être utilisés avec le [point de terminaison XMLA](service-premium-connect-tools.md) pour automatiser des tâches de gestion de jeu de données telles que le provisionnement d’espaces de travail, le déploiement de modèles et l’actualisation de jeux de données avec :
 
 - PowerShell
 - Automatisation d'Azure
@@ -32,9 +32,6 @@ Dans **Power BI Premium**, les principaux de service peuvent également être ut
 Seuls les [nouveaux espaces de travail](../collaborate-share/service-new-workspaces.md) prennent en charge les connexions de point de terminaison XMLA à l’aide de principaux de service. Les espaces de travail classiques ne sont pas pris en charge. Un principal de service dispose uniquement des autorisations nécessaires pour effectuer des tâches pour les espaces de travail qui lui sont attribués. Les autorisations sont affectées par le biais de l’Accès à l’espace de travail, comme les comptes UPN ordinaires.
 
 Pour effectuer des opérations d’écriture, la **charge de travail des jeux de données** de la capacité doit avoir le [point de terminaison XMLA activé pour la lecture-écriture](service-premium-connect-tools.md#enable-xmla-read-write). Les jeux de données publiés à partir de Power BI Desktop doivent avoir la fonctionnalité [Format de métadonnées amélioré](../connect-data/desktop-enhanced-dataset-metadata.md) activée.
-
-> [!NOTE]
-> La fonctionnalité de point de terminaison XMLA de Power BI Premium est en **préversion**. Les fonctionnalités des préversions ne doivent pas être utilisées dans un environnement de production. Certaines fonctionnalités, le support et la documentation sont limités.  Reportez-vous aux [Conditions OST (Online Services Terms) Microsoft](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) pour plus d’informations.
 
 ## <a name="create-a-service-principal"></a>Créer un principal du service
 
@@ -53,7 +50,7 @@ Pour restreindre l’accès du principal de service à des paramètres de locata
 
 Avant d’utiliser des principaux de service dans Power BI, un administrateur doit activer l’accès des principaux de service dans le portail d’administration Power BI.
 
-Dans le **portail d’administration** de Power BI > **Paramètres du locataire**, développez **Autoriser les principaux de service à utiliser les API Power BI**, puis cliquez sur **Activé**. Pour appliquer des autorisations à un groupe de sécurité, ajoutez le nom du groupe à **Groupes de sécurité spécifiques**.
+Dans le **portail d’administration** de Power BI > **Paramètres du locataire** , développez **Autoriser les principaux de service à utiliser les API Power BI** , puis cliquez sur **Activé**. Pour appliquer des autorisations à un groupe de sécurité, ajoutez le nom du groupe à **Groupes de sécurité spécifiques**.
 
 ![Paramètres de l’espace de travail](media/service-premium-service-principal/admin-portal.png)
 
@@ -65,7 +62,7 @@ Pour que votre principal de service dispose des autorisations nécessaires pour 
 
     ![Paramètres d’accès à l’espace de travail](media/service-premium-service-principal/workspace-access.png)
 
-2. Recherchez par nom d’application. Ajoutez le principal de service en tant qu’**Administrateur** ou **Membre** à l’espace de travail.
+2. Recherchez par nom d’application. Ajoutez le principal de service en tant qu’ **Administrateur** ou **Membre** à l’espace de travail.
 
     ![Boîte de dialogue Accéder](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 

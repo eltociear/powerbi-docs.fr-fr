@@ -9,16 +9,16 @@ ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4cf0c4fbdde52181dbc5307a9d97d17344c7c26
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91632845"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396331"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
-Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](../transform-model/service-cognitive-services.md)** , **[Flux de données](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** et **[Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
+Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour  **[IA (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** , **[Flux de données](../transform-model/dataflows/dataflows-introduction-self-service.md)** et **[Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -41,7 +41,7 @@ La charge de travail d’intelligence artificielle (IA) vous permet d’utiliser
 |---------------------------------|----------------------------------------|
 | **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les processus IA peuvent utiliser dans une capacité. |
 | **Autoriser l’utilisation depuis Power BI Desktop** | Ce paramètre est réservé pour une utilisation ultérieure et n’apparaît pas dans tous les locataires. |
-| **Autoriser la génération de modèles Machine Learning** | Spécifie si les analystes métier peuvent entraîner, valider et appeler des modèles Machine Learning directement dans Power BI. Pour plus d’informations, consultez [Machine Learning automatisé dans Power BI (préversion)](../transform-model/service-machine-learning-automated.md). |
+| **Autoriser la génération de modèles Machine Learning** | Spécifie si les analystes métier peuvent entraîner, valider et appeler des modèles Machine Learning directement dans Power BI. Pour plus d’informations, consultez [Machine Learning automatisé dans Power BI (préversion)](../transform-model/dataflows/dataflows-machine-learning-integration.md). |
 | **Activer le parallélisme pour les demandes IA** | Spécifie si les demandes IA peuvent s’exécuter en parallèle. |
 |  |  |
 
@@ -185,9 +185,9 @@ Optimisez les ressources disponibles de votre capacité en activant uniquement l
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Pour configurer des charges de travail dans le portail d’administration Power BI
 
-1. Dans **Paramètres de capacité** > **CAPACITÉS PREMIUM**, sélectionnez une capacité.
+1. Dans **Paramètres de capacité** > **CAPACITÉS PREMIUM** , sélectionnez une capacité.
 
-1. Sous **PLUS D’OPTIONS**, développez **Charges de travail**.
+1. Sous **PLUS D’OPTIONS** , développez **Charges de travail**.
 
 1. Activez une ou plusieurs charges de travail, puis définissez une valeur pour **Mémoire maximale** et d’autres paramètres.
 
@@ -209,7 +209,7 @@ L’[application Métriques de capacité Power BI Premium](service-admin-premium
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)
-[Préparation des données en libre-service dans Power BI](../transform-model/service-dataflows-overview.md)
+[Préparation des données en libre-service dans Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md)
 [Présentation des rapports paginés dans Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 [Actualisation automatique des pages dans Power BI Desktop (préversion)](../create-reports/desktop-automatic-page-refresh.md)
 

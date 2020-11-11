@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/20/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 590e28c727cab88b008d7a05e7df22244e8dabf0
-ms.sourcegitcommit: 84e75a2cd92f4ba4e0c08ba296b981b79d6d0e82
+ms.openlocfilehash: fd57d893a0c381c345364306e04d4897597b36f1
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88803236"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396975"
 ---
-# <a name="plandeploymenttomigratetopowerbi"></a>Planifier le déploiement pour la migration vers Power BI
+# <a name="plan-deployment-to-migrate-to-power-bi"></a>Planifier le déploiement pour la migration vers Power BI
 
-Cet article décrit l’**étape 2**, qui concerne la planification de la migration d’une solution Power BI unique.
+Cet article décrit l’ **étape 2** , qui concerne la planification de la migration d’une solution Power BI unique.
 
 :::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Image illustrant les étapes d’une migration vers Power BI. Cet article se concentre sur l’étape 2.":::
 
@@ -96,7 +96,7 @@ Les données requises pour un rapport peuvent influencer plusieurs décisions. L
 - Un jeu de données partagé existant doit-il être enrichi avec de nouvelles données ou mesures pour répondre à d’autres besoins ?
 - Quel [mode de stockage des données](../transform-model/desktop-storage-mode.md) sera le plus approprié ? Les options disponibles sont Import, DirectQuery, Composite ou Live Connection.
 - Faut-il utiliser des [agrégations](../transform-model/desktop-aggregations.md) pour améliorer les performances des requêtes ?
-- Créer un [dataflow](../transform-model/service-dataflows-overview.md) est-il utile et peut-il servir de source pour plusieurs jeux de données ?
+- Créer un [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) est-il utile et peut-il servir de source pour plusieurs jeux de données ?
 - L’inscription d’une nouvelle [source de données de passerelle](../connect-data/service-gateway-data-sources.md) est-elle nécessaire ?
 
 ## <a name="decide-where-original-content-will-be-stored"></a>Déterminer l’emplacement de stockage du contenu d’origine
