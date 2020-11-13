@@ -277,6 +277,8 @@
               href: ../visuals/power-bi-visualization-decomposition-tree.md
             - name: Narrations intelligentes
               href: ../visuals/power-bi-visualization-smart-narrative.md
+            - name: Détection des anomalies
+              href: ../visuals/power-bi-visualization-anomaly-detection.md
             - name: Graphiques en anneau
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Cartes thématiques (choroplèthes)
