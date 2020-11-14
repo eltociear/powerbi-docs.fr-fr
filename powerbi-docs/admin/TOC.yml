@@ -44,6 +44,8 @@
               href: service-premium-capacity-scenarios.md
             - name: "FAQ Power\_BI Premium"
               href: service-premium-faq.md
+            - name: "FAQ Power\_BI Premium par utilisateur"
+              href: service-premium-per-user-faq.md
     - name: Guides pratiques
       items:
         - name: Licences et inscription
@@ -106,6 +108,8 @@
               href: service-admin-premium-manage.md
             - name: Configurer des charges de travail
               href: service-admin-premium-workloads.md
+            - name: "Acheter Power\_BI Premium pour les tests"
+              href: service-admin-premium-testing.md
             - name: Superviser les capacités avec l’application
               href: service-admin-premium-monitor-capacity.md
             - name: Superviser les métriques de charge de travail Premium
