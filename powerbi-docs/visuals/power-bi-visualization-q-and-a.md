@@ -1,19 +1,19 @@
 ---
 title: Utiliser le visuel Questions et réponses de Power BI
 description: Comment configurer le visuel Questions et réponses de Power BI
-author: rien
+author: msftrien
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 22ce23b408f87c8c792f75a543fd0c29a9d13281
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 96773bc256ba8563147c7dc7c19e2558125b48fc
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232296"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412346"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Présentation des visualisations Questions et réponses de Power BI
 
@@ -133,7 +133,7 @@ Sélectionnez l’icône ![icône d’engrenage](media/power-bi-visualization-q-
 
 Ce visuel n’est plus un visuel Questions et réponses ; c’est un histogramme standard. Il peut être épinglé à un tableau de bord. Dans le rapport, ce visuel se comporte comme les autres visuels standard. Notez que le volet Visualisations affiche l’icône Histogramme (en surbrillance) à la place de l’icône Visuel Questions et réponses.
 
-Si vous utilisez le ***service Power BI***, vous pouvez maintenant épingler le visuel à un tableau de bord en sélectionnant l’icône Épingler. 
+Si vous utilisez le **_service Power BI_* _, vous pouvez maintenant épingler le visuel à un tableau de bord en sélectionnant l’icône Épingler. 
 
 
 ![service Power BI avec l’icône Épingler en surbrillance](media/power-bi-visualization-q-and-a/power-bi-pin.png)
@@ -155,5 +155,5 @@ Intégré à Office et à Bing, le visuel Questions et réponses essaie de mettr
 
 Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
 
-* [Outils de Questions et réponses](../natural-language/q-and-a-tooling-intro.md)
+_ [Outils Q&R](../natural-language/q-and-a-tooling-intro.md)
 * [Bonnes pratiques relatives à Questions et réponses](../natural-language/q-and-a-best-practices.md)

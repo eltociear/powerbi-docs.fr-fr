@@ -8,20 +8,41 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 04/15/2020
-ms.openlocfilehash: 65e00fa5311ea12c9fe0011c6aa7c3e779f33dc5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 515813aeb98010f838cfff75febbb1ef206bc2cf
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83131117"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397481"
 ---
 # <a name="submission-testing-of-a-power-bi-visual"></a>Test d’envoi d’un visuel Power BI
 
-Avant de publier votre visuel dans [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), il doit réussir ces cas de test. Testez votre visuel avant de l’envoyer. Si votre visuel ne réussit pas les cas de test requis, il sera rejeté.
+Avant de publier votre visuel dans [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), il doit réussir les tests listés dans cet article. Testez votre visuel avant de l’envoyer. Si votre visuel ne réussit pas les cas de test obligatoires, il est rejeté.
 
 Pour plus d’informations sur le processus de publication, consultez [Publier des visuels Power BI sur l’Espace partenaires](./office-store.md).
 
+## <a name="testing-a-new-version-of-a-published-visual"></a>Test d’une nouvelle version d’un visuel publié
+
+Si vous testez ou déboguez une nouvelle version d’un visuel déjà publié, vous pouvez remplacer la version AppSource par une version de fichier local en activant le mode développeur dans Power BI Desktop.
+
+Pour activer le mode développeur, suivez ces étapes :
+
+1. Ouvrez Power BI Desktop.
+
+2.  Sélectionnez **Fichier** > **Options et paramètres**.
+
+3.  Sélectionnez **Options**.
+
+4. Dans la fenêtre Options, dans la liste FICHIER ACTIF, sélectionnez **Paramètres de rapport**.
+
+5. En mode développeur, sélectionnez l’option **Activer le mode développeur pour cette session**.
+
+>[!NOTE]
+>Dans Power BI Desktop, le mode développeur est valide pour une seule session uniquement. Si vous ouvrez une nouvelle instance Power BI Desktop à des fins de test, vous devrez réactiver le mode développeur.
+
 ## <a name="general-test-cases"></a>Cas de test généraux
+
+Vérifiez que votre visuel réussit les cas de test généraux.
 
 | Cas de test | Résultats attendus
 | --------- | ----------------

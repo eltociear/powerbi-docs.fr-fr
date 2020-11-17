@@ -1,26 +1,26 @@
 ---
-title: Conseils et astuces pour la mise en forme des couleurs dans les rapports
-description: Conseils et astuces pour la mise en forme des couleurs dans les rapports Power BI
-author: mihart
-ms.reviewer: ''
+title: Conseils et astuces pour la mise en forme dans les rapports
+description: Conseils et astuces pour la mise en forme dans les rapports Power BI
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2020
-ms.author: mihart
+ms.date: 10/29/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e896b3aeabc6a22c98563d0836984cd2d8a644de
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91633834"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483951"
 ---
-# <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
+# <a name="tips-and-tricks-for-formatting-in-reports"></a>Conseils et astuces pour la mise en forme dans les rapports
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
-Power BI vous propose de nombreuses façons de personnaliser vos tableaux de bord et vos rapports. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
+Power BI vous permet de personnaliser vos rapports de diverses façons. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
 
 Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer ? Great! Envoyez-la nous et nous verrons si nous pouvons l’ajouter à notre liste.
 
@@ -36,7 +36,7 @@ Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer 
 
 Pour apporter des changements, vous devez disposer d’autorisations de modification du rapport. Dans Power BI Desktop, ouvrez le rapport en affichage **Rapport**. Dans le service Power BI, cela signifie ouvrir le rapport et sélectionner **Modifier** dans la barre de menus, comme l’illustre l’image suivante.
 
-![où trouver le menu Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
+![où trouver le menu Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-editing-view.png)
 
 Quand les volets **Filtres** et **Visualisations** s’affichent sur le côté droit du canevas de rapport, vous pouvez commencer la personnalisation. Si les volets ne s’affichent pas, sélectionnez la flèche située en haut à droite pour les ouvrir.
 

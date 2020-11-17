@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4b9573d0a24efdbb4c0b5a4130f973a0dfac0f10
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 4fcfe4038b8fa14b0c1640680aaf7657e92bb9bb
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132318"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397366"
 ---
 # <a name="copy-reports-from-other-workspaces"></a>Copier des rapports à partir d’autres espaces de travail
 
@@ -31,13 +31,13 @@ Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou u
 
     ![Mode Liste Rapports](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
-1. Sous **Actions** , sélectionnez **Enregistrer une copie**.
+1. Sous **Actions**, sélectionnez **Enregistrer une copie**.
 
     ![Enregistrer une copie d’un rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez de l’ [autorisation de génération](service-datasets-build-permissions.md). Même si vous avez accès à l’espace de travail, vous devez disposer de l’autorisation de génération pour le jeu de données.
+    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez de l’[autorisation de génération](service-datasets-build-permissions.md). Même si vous avez accès à l’espace de travail, vous devez disposer de l’autorisation de génération pour le jeu de données.
 
-3. Dans **Enregistrer une copie de ce rapport** , nommez le rapport, puis sélectionnez l’espace de travail de destination.
+3. Dans **Enregistrer une copie de ce rapport**, nommez le rapport, puis sélectionnez l’espace de travail de destination.
 
     ![Boîte de dialogue Enregistrer une copie](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 

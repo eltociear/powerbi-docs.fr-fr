@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 11/01/2020
 ms.author: painbar
-ms.openlocfilehash: d2e229dda05c1761fdaa5c7336c0eca5db538e46
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 83a280b94a6db937133e0d7ab1e6d7ad64af06f4
+ms.sourcegitcommit: 29cafa1602efb56cfa8dbd0010dd04ad3fcdd02c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92026045"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93355931"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -24,6 +24,10 @@ Pour plus d’informations sur les nouveautés, consultez :
 
 >[!NOTE]
 >La prise en charge des applications mobiles Power BI pour les **téléphones utilisant Windows 10 Mobile** ne sera plus disponible après le 16 mars 2021. [En savoir plus](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## <a name="november-2020"></a>Novembre 2020
+### <a name="maximize-the-view-with-full-screen-mode-android-tablets"></a>Optimiser l’affichage avec le mode plein écran (tablettes Android)
+Nous avons ajouté un nouveau bouton à l’application mobile pour tablettes Android qui vous permet de supprimer les en-têtes et les pieds de page de l’application et ainsi de disposer d’une surface de visualisation maximale pour votre contenu. Appuyez simplement sur le bouton bascule de plein écran en haut à droite de l’écran pour basculer entre les modes.
 
 ## <a name="october-2020"></a>Octobre 2020
 ### <a name="automatic-page-refresh-is-now-supported-windows"></a>L’actualisation automatique des pages est maintenant prise en charge (Windows)

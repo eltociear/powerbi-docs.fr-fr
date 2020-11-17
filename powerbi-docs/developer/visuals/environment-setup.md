@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 09/02/2020
-ms.openlocfilehash: ca9c18cbd51737a5e4b05f3504c6ac2760006281
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 447f73601362c9ee205fe64119d0c251e7b4eb9a
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050717"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93412277"
 ---
 # <a name="set-up-your-environment-for-developing-a-power-bi-visual"></a>Configurer votre environnement pour développer un visuel Power BI
 
@@ -62,7 +62,7 @@ Pour qu’un client (votre ordinateur) et un serveur (le service Power BI) inter
 Ce processus décrit l’exécution d’une commande PowerShell qui lance l’**Assistant d’importation de certificat**. Suivez les étapes ci-dessous pour configurer le certificat dans l’assistant.
 
 >[!IMPORTANT]
->Ne fermez pas la fenêtre PowerSell pendant cette procédure.
+>Ne fermez pas la fenêtre PowerShell pendant cette procédure.
 
 1. Ouvrez Windows PowerShell et entrez la commande suivante.
 
@@ -116,7 +116,7 @@ Ce processus décrit l’exécution d’une commande PowerShell qui lance l’**
 
     ![Installer un certificat SSL 1 sur OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
 
-2. Sélectionnez **Toujours faire confiance**fermez la fenêtre.
+2. Sélectionnez **Toujours faire confiance** fermez la fenêtre.
 
     ![Installer un certificat SSL 2 sur OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
 

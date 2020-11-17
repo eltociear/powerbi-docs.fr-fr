@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 32fb26faa42f0ce6128a4a4cc0e491f78f270d36
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 4dba33e2ae800198d4840139d43893a7dca77e4f
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982191"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94396814"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 
@@ -31,8 +31,8 @@ Vous pouvez passer par l’[outil de configuration de l’incorporation](https:/
 
 Choisissez la solution qui vous convient :
 
-* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Pour ce faire, implémentez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
-* L’[incorporation pour vos clients](embedding.md#embedding-for-your-customers) vous permet d’incorporer des tableaux de bord et des rapports pour des utilisateurs qui n’ont pas de compte Power BI. Pour ce faire, implémentez la solution [Incorporer pour vos clients](https://aka.ms/embedsetup/AppOwnsData).
+* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Pour ce faire, dans l’[outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup), implémentez la solution *Incorporer pour votre organisation*.
+* L’[incorporation pour vos clients](embedding.md#embedding-for-your-customers) vous permet d’incorporer des tableaux de bord et des rapports pour des utilisateurs qui n’ont pas de compte Power BI. Pour ce faire, dans l’[outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup), implémentez la solution *Incorporer pour votre organisation*.
 
 ![Exemple PBIE](media/embedding/what-can-you-do-02.png)
 
@@ -59,7 +59,7 @@ Pour effectuer une incorporation pour votre organisation, consultez [Tutoriel :
 
 Les fonctionnalités en libre-service, telles que la modification ou l’enregistrement, sont disponibles par le bais de [l’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript) lors de l’incorporation relative aux utilisateurs Power BI.
 
-Vous pouvez passer par l’[outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer et télécharger un exemple d’application qui vous guide dans l’intégration d’un rapport pour votre organisation.
+Vous pouvez passer par l’[outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup) pour démarrer et télécharger un exemple d’application qui vous guide dans l’intégration d’un rapport pour votre organisation.
 
 ## <a name="embedding-for-your-customers"></a>Incorporation pour vos clients
 

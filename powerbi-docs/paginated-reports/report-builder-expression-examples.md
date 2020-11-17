@@ -1,19 +1,19 @@
 ---
 title: Exemples d’expressions dans le Générateur de rapports Power BI
 description: Les expressions sont fréquemment utilisées dans les rapports paginés Power BI Report Builder pour contrôler le contenu et l’apparence des rapports.
-ms.date: 10/21/2019
+ms.date: 11/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 042221e3836aae72568df7eadaacfeeeac90d215
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 762949dcce178628d387cd8f88c60080f74c5bae
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297782"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397343"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Exemples d’expressions dans le Générateur de rapports Power BI
 
@@ -180,7 +180,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
   
      Si la zone de texte contient uniquement une date ou un nombre, utilisez plutôt la propriété Format de la zone de texte pour appliquer la mise en forme, plutôt que la fonction **Format** dans la zone de texte.  
   
--   Les fonctions **Right** , **Len** et **InStr** sont utiles pour renvoyer une sous-chaîne, par exemple en réduisant *DOMAINE*\\*nom d’utilisateur* au seul nom d’utilisateur. L’expression suivante retourne la partie de la chaîne à droite de la barre oblique inverse (\\) à partir d’un paramètre nommé *User* :  
+-   Les fonctions **Right**, **Len** et **InStr** sont utiles pour renvoyer une sous-chaîne, par exemple en réduisant *DOMAINE*\\*nom d’utilisateur* au seul nom d’utilisateur. L’expression suivante retourne la partie de la chaîne à droite de la barre oblique inverse (\\) à partir d’un paramètre nommé *User*:  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -205,7 +205,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
   
     ```  
   
--   Les fonctions **Regex** de `xref:System.Text.RegularExpressions` du .NET Framework sont utiles pour la modification du format de chaînes existantes, par exemple pour la mise en forme d’un numéro de téléphone. L’expression suivante utilise la fonction **Replace** pour modifier dans un champ le format d’un numéro de téléphone à dix chiffres et le faire passer du format " *nnn*-*nnn*-*nnnn* " au format "( *nnn* ) *nnn*-*nnnn* " :  
+-   Les fonctions **Regex** de `xref:System.Text.RegularExpressions` du .NET Framework sont utiles pour la modification du format de chaînes existantes, par exemple pour la mise en forme d’un numéro de téléphone. L’expression suivante utilise la fonction **Replace** pour modifier dans un champ le format d’un numéro de téléphone à dix chiffres et le faire passer du format "*nnn*-*nnn*-*nnnn*" au format "(*nnn*) *nnn*-*nnnn*" :  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  
@@ -247,7 +247,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
   
 ###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Fonctions de décision  
   
--   La fonction **Iif** retourne une valeur sur les deux possibles, laquelle dépend du fait que l'expression est vraie ou fausse. L’expression ci-dessous utilise la fonction **Iif** pour retourner la valeur booléenne **True** si la valeur de `LineTotal` est supérieure à 100. Sinon, elle retourne **False** :  
+-   La fonction **Iif** retourne une valeur sur les deux possibles, laquelle dépend du fait que l'expression est vraie ou fausse. L’expression ci-dessous utilise la fonction **Iif** pour retourner la valeur booléenne **True** si la valeur de `LineTotal` est supérieure à 100. Sinon, elle retourne **False**:  
   
     ```  
     =IIF(Fields!LineTotal.Value > 100, True, False)  
@@ -275,13 +275,13 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =IIF(DateDiff("d",Fields!ImportantDate.Value, Now())>7,"Red","Blue")  
     ```  
   
--   Tester la valeur du champ `PhoneNumber` et retourner « No Value » si elle est **null** ( **Nothing** en Visual Basic) ; sinon, retourner la valeur du numéro de téléphone. Cette expression peut être utilisée pour contrôler la valeur d'une zone de texte dans un élément de rapport.  
+-   Tester la valeur du champ `PhoneNumber` et retourner « No Value » si elle est **null** (**Nothing** en Visual Basic) ; sinon, retourner la valeur du numéro de téléphone. Cette expression peut être utilisée pour contrôler la valeur d'une zone de texte dans un élément de rapport.  
   
     ```  
     =IIF(Fields!PhoneNumber.Value Is Nothing,"No Value",Fields!PhoneNumber.Value)  
     ```  
   
--   Tester la valeur du champ `Department` et retourner un nom de sous-rapport ou **null** ( **Nothing** en Visual Basic). Cette expression peut être utilisée pour des sous-rapports d'extraction conditionnelle.  
+-   Tester la valeur du champ `Department` et retourner un nom de sous-rapport ou **null** (**Nothing** en Visual Basic). Cette expression peut être utilisée pour des sous-rapports d'extraction conditionnelle.  
   
     ```  
     =IIF(Fields!Department.Value = "Development", "EmployeeReport", Nothing)  
@@ -454,6 +454,9 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
+> [!NOTE]
+>  Les rapports paginés Power BI ne prennent pas en charge l’utilisation de JavaScript dans une expression **Atteindre l’URL**.  
+  
 ##  <a name="report-data"></a><a name="ReportData"></a> Données du rapport  
  Les expressions peuvent être utilisées pour manipuler les données utilisées dans les rapports. Vous pouvez faire référence à des paramètres et à d'autres informations de rapport. Vous pouvez même modifier la requête utilisée pour extraire les données du rapport.  
   
@@ -466,13 +469,13 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =User!UserID  
     ```  
   
--   Pour faire référence à un paramètre dans un paramètre de requête, une expression de filtre, une zone de texte ou une autre zone du rapport, utilisez la collection globale **Parameters** . Cet exemple suppose que le paramètre est appelé *Department* :  
+-   Pour faire référence à un paramètre dans un paramètre de requête, une expression de filtre, une zone de texte ou une autre zone du rapport, utilisez la collection globale **Parameters** . Cet exemple suppose que le paramètre est appelé *Department*:  
   
     ```  
     =Parameters!Department.Value  
     ```  
   
--   Des paramètres peuvent être créés dans un rapport, mais définis comme étant masqués. Quand le rapport s’exécute sur le serveur de rapports, le paramètre n’apparaît pas dans la barre d’outils et le lecteur du rapport ne peut pas changer la valeur par défaut. Vous pouvez utiliser un paramètre masqué auquel est affectée une valeur par défaut en tant que constante personnalisée. Vous pouvez utiliser cette valeur dans n'importe quelle expression, y compris une expression de champ. L'expression suivante identifie le champ spécifié par la valeur de paramètre par défaut pour le paramètre nommé *ParameterField* :  
+-   Des paramètres peuvent être créés dans un rapport, mais définis comme étant masqués. Quand le rapport s’exécute sur le serveur de rapports, le paramètre n’apparaît pas dans la barre d’outils et le lecteur du rapport ne peut pas changer la valeur par défaut. Vous pouvez utiliser un paramètre masqué auquel est affectée une valeur par défaut en tant que constante personnalisée. Vous pouvez utiliser cette valeur dans n'importe quelle expression, y compris une expression de champ. L'expression suivante identifie le champ spécifié par la valeur de paramètre par défaut pour le paramètre nommé *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  
@@ -495,7 +498,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     =IIF(Field!B.Value=0, 0, Field!A.Value / IIF(Field!B.Value =0, 1, Field!B.Value))  
     ```  
   
--   Utilisez une fonction de code personnalisé pour retourner la valeur de l'expression. L'exemple ci-dessous retourne la différence, exprimée en pourcentage, entre une valeur actuelle et une valeur précédente. Ceci peut être utilisé pour calculer la différence entre deux valeurs consécutives quelconques et gère le cas de limite de la première comparaison (quand il n’existe pas valeur précédente), et les cas où la valeur précédente ou la valeur actuelle est **null** ( **Nothing** en Visual Basic).  
+-   Utilisez une fonction de code personnalisé pour retourner la valeur de l'expression. L'exemple ci-dessous retourne la différence, exprimée en pourcentage, entre une valeur actuelle et une valeur précédente. Ceci peut être utilisé pour calculer la différence entre deux valeurs consécutives quelconques et gère le cas de limite de la première comparaison (quand il n’existe pas valeur précédente), et les cas où la valeur précédente ou la valeur actuelle est **null** (**Nothing** en Visual Basic).  
   
     ```  
     Public Function GetDeltaPercentage(ByVal PreviousValue, ByVal CurrentValue) As Object  

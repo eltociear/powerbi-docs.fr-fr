@@ -1,20 +1,20 @@
 ---
 title: Bien démarrer avec la mise en forme des visualisations de rapport
 description: Commencer à utiliser les options de mise en forme des visualisations de rapport
-author: mihart
-ms.reviewer: ''
+author: msftrien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2020
-ms.author: mihart
+ms.date: 11/09/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e4f5007d60f7634b671f1178a7279fe5cc35be89
-ms.sourcegitcommit: caf60154a092f88617eb177bc34fb784f2365962
+ms.openlocfilehash: 3e61521ec7ac518aaa374cec328639a849b21bd5
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85354590"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483821"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Bien démarrer avec le volet de mise en forme
 
@@ -41,6 +41,7 @@ Il est possible de personnaliser de nombreux éléments de chaque visualisation.
 * Axe Y
 * Couleurs des données
 * Étiquettes de données
+* Étiquettes de total
 * Formes
 * Zone de traçage
 * Titre
@@ -66,6 +67,7 @@ La meilleure façon d’apprendre à utiliser les options de mise en forme consi
 2. Appliquer un style    
 3. Modifier les propriétés d’axe    
 4. Ajouter des étiquettes de données    
+1. Ajouter des étiquettes de total
 
 
 
@@ -141,7 +143,7 @@ Vous pouvez supprimer l’ensemble des étiquettes des axes en cochant ou en dé
 
 ## <a name="adding-data-labels"></a>Ajouter des étiquettes de données    
 
-Prenons un dernier exemple de mise en forme avant que vous ne commenciez à explorer par vous-même.  Nous allons ajouter des étiquettes de données à un graphique en aires. 
+Nous allons ajouter des étiquettes de données à un graphique en aires. 
 
 Voici l’image *avant*. 
 
@@ -155,6 +157,27 @@ Voici maintenant l’image *après*.
 Nous avons sélectionné la visualisation pour l’activer et ouvert l’onglet Mise en forme.  Nous avons sélectionné **Étiquettes de données** et les avons activées. Nous avons ensuite choisi la police 12, la famille de polices Arial Black, activé **Afficher l’arrière-plan** et sélectionné la couleur d’arrière-plan blanc avec une transparence de 5 %.
 
 Il ne s’agit que de quelques-unes des tâches de mise en forme possibles. Ouvrez un rapport en mode Édition et amusez-vous à explorer le volet Mise en forme pour créer des visualisations attrayantes et instructives.
+
+## <a name="adding-total-labels"></a>Ajout d’étiquettes de total    
+
+Prenons un dernier exemple de mise en forme avant que vous ne commenciez à explorer par vous-même.  Ajoutons des étiquettes de total à un histogramme empilé. Les étiquettes de total sont disponibles pour les graphiques empilés, les graphiques combinés et les graphiques en aires.
+
+Quand vous activez les étiquettes de total, Power BI affiche l’agrégation, ou total, des données. Examinons un exemple. 
+
+Ici, nous avons un histogramme empilé avec des étiquettes de données qui présentent la valeur de chaque partie de chaque pile complète.  Il s’agit de la vue par défaut. 
+
+![histogramme avec étiquettes de données](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-column-charts.png)
+
+
+En ouvrant le visuel en mode édition, vous pouvez changer l’affichage des étiquettes de données et des étiquettes de total. Sélectionnez le visuel pour l’activer et ouvrez le volet Mise en forme. Faites défiler jusqu’à **Étiquettes de données** et **Étiquettes de total**. **Étiquettes de données** est défini sur Activé et **Étiquettes de total** est défini sur Désactivé. 
+
+![graphique en aires non mis en forme](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-total-label.png)
+
+Définissez **Étiquettes de données** sur Désactivé et **Étiquettes de total** sur Activé. Power BI affiche maintenant l’agrégation pour chaque colonne.    
+![graphique en aires mis en forme](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-totals.png)
+
+Il ne s’agit que de quelques-unes des tâches de mise en forme possibles. Ouvrez un rapport en mode Édition et amusez-vous à explorer le volet Mise en forme pour créer des visualisations attrayantes et instructives.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations, consultez l’article suivant : 

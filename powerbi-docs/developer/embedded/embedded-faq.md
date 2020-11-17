@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 85622b457d1c2eda0af51e0c7190d2691c259a82
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 1166f51c21e765e5710d33ad45a47057ea773bd8
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916495"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397435"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -160,7 +160,7 @@ var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAss
 
 ### <a name="what-object-id-is-the-service-principal-object-id"></a>À quoi correspond l’ID d’objet du principal de service ?
 
-L’ *ID d’objet* qui s’affiche sur l’écran principal d’une application inscrite est l’ID d’objet de l’application.
+L’*ID d’objet* qui s’affiche sur l’écran principal d’une application inscrite est l’ID d’objet de l’application.
 
 L’ID d’objet qui se trouve dans la section *Application managée dans l’annuaire local > Propriétés* correspond à l’ID d’objet du principal de service que vous devez utiliser. Cet ID d’objet permet de référencer un principal de service pour les opérations, ou d’apporter des modifications à l’ID d’objet du principal de service (par exemple, utiliser un principal de service comme l’administrateur d’un espace de travail).
 
@@ -270,7 +270,7 @@ Il n’existe pas de tarifs Azure spéciaux pour les associations à but non luc
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Présentation de la collection d’espaces de travail Power BI
 
-La **collection d’espaces de travail Power BI** ( **Power BI Embedded** version 1) est une solution basée sur la ressource Azure **Collection d’espaces de travail Power BI**. Cette solution permet de créer des applications **Power BI Embedded** pour les clients avec du contenu Power BI sous la solution **Collection d’espaces de travail Power BI** , des API dédiées et des clés de collection d’espaces de travail permettant d’authentifier l’application sur Power BI.
+La **collection d’espaces de travail Power BI** (**Power BI Embedded** version 1) est une solution basée sur la ressource Azure **Collection d’espaces de travail Power BI**. Cette solution permet de créer des applications **Power BI Embedded** pour les clients avec du contenu Power BI sous la solution **Collection d’espaces de travail Power BI**, des API dédiées et des clés de collection d’espaces de travail permettant d’authentifier l’application sur Power BI.
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Peut-on migrer d’une collection d’espaces de travail Power BI vers Power BI Embedded ?
 
@@ -312,18 +312,18 @@ En voici quelques exemples :
 
 ### <a name="what-is-the-embedding-setup-tool"></a>Qu’est-ce que l’outil de configuration de l’incorporation ?
 
-[L’outil de configuration de l’incorporation](https://aka.ms/embedsetup) vous permet de démarrer rapidement et de télécharger un exemple d’application pour commencer l’incorporation avec Power BI.
+[L’outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup) vous permet de démarrer rapidement et de télécharger un exemple d’application pour commencer l’incorporation avec Power BI.
 
 ### <a name="which-solution-should-i-choose"></a>Quelle solution dois-je choisir ?
 
-* [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. Exécutez la solution [Incorporer pour vos clients](https://aka.ms/embedsetup/AppOwnsData).
-* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Exécutez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
+* [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. Dans l’[outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup), exécutez la solution *Incorporer pour vos clients*.
+* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Dans l’[outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup), exécutez la solution *Incorporer pour votre organisation*.
 
 ### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>J’ai téléchargé l’exemple d’application : quelle solution choisir ?
 
-Si vous travaillez avec l’expérience **Incorporer pour vos clients** , enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\App Owns Data* et exécutez le fichier *PowerBIEmbedded_AppOwnsData.sln*.
+Si vous travaillez avec l’expérience **Incorporer pour vos clients**, enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\App Owns Data* et exécutez le fichier *PowerBIEmbedded_AppOwnsData.sln*.
 
-Si vous travaillez avec l’expérience **Incorporer pour votre organisation** , enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* et exécutez le fichier *pbi-saas-embed-report.sln*.
+Si vous travaillez avec l’expérience **Incorporer pour votre organisation**, enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* et exécutez le fichier *pbi-saas-embed-report.sln*.
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Comment puis-je modifier mon application inscrite ?
 

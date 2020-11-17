@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 9a38533e76fec134d667ae4026258a2a3c07f410
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: e4d1c625d86234c97305c705b2feeead8efacb61
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983111"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397274"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -44,7 +44,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement autorise l’incorporation avec Power BI.
 
-Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport. Si vous incorporez un rapport paginé, vous devez affecter au moins une capacité P1 à l’espace de travail créé.
+Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://app.powerbi.com/embedsetup) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport. Si vous incorporez un rapport paginé, vous devez affecter au moins une capacité P1 à l’espace de travail créé.
 
 Si vous choisissez de configurer l’environnement manuellement, vous pouvez continuer à suivre les instructions ci-dessous.
 
@@ -52,9 +52,9 @@ Si vous choisissez de configurer l’environnement manuellement, vous pouvez con
 
 [Inscrivez votre application](register-app.md) auprès d’Azure Active Directory pour l’autoriser à accéder aux [API REST Power BI](/rest/api/power-bi/). Cette inscription vous permet ainsi d’établir une identité pour votre application et de spécifier des autorisations sur les ressources REST de Power BI.
 
-Vous devez procéder à l’inscription d’une **application web côté serveur**. Vous inscrivez une application web côté serveur pour créer un secret d’application.
-
-Après avoir créé votre application dans Azure, ouvrez-la dans Azure, accédez à *Authentification* et dans *URI de redirection*,ajoutez **/Redirect** à l’*URI de redirection*.
+>[!NOTE]
+>Dans votre propre application, vous devrez accéder à *Authentification* et, dans le champ *URI de redirection*, insérer l’adresse de redirection.
+Pour en savoir plus sur la redirection, consultez [Limitations et restrictions des URI de redirection (URL de réponse)](https://docs.microsoft.com/azure/active-directory/develop/reply-url).
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 

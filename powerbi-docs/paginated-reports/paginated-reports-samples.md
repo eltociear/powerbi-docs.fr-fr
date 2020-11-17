@@ -7,13 +7,13 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/01/2020
-ms.openlocfilehash: cf0e6a6e7cd40a5b8bb97560caf94b71c1b48e7a
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/10/2020
+ms.openlocfilehash: cfa4b46e521079802ec87b63d6323e01213625c3
+ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93324020"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94483857"
 ---
 # <a name="sample-power-bi-paginated-reports"></a>Exemples de rapports paginés Power BI
 
@@ -27,8 +27,25 @@ Cet article fournit des informations et des liens vers plusieurs exemples de rap
 - Vous pouvez partager ces rapports en ligne, sans aucune modification. Pour cela, vous avez besoin d’une licence Power BI Pro. Inscrivez-vous pour [essayer gratuitement une licence Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#sign-up-for-an-individual-trial-of-power-bi-pro).
 - Vous devez également accéder à un espace de travail Power BI dans une [capacité Premium](../admin/service-premium-what-is.md).
 - Pour modifier ces rapports, vous devez [installer Power BI Report Builder](https://aka.ms/pbireportbuilder) à partir du centre de téléchargement Microsoft.
-- Vous êtes maintenant prêt à [télécharger ces exemples de rapports paginés](https://github.com/microsoft/Reporting-Services/tree/master/PaginatedReportSamples) sur GitHub. Vous n’avez pas besoin d’un compte GitHub. 
+- Vous êtes maintenant prêt à télécharger ces exemples de rapports paginés sur GitHub. Vous n’avez pas besoin d’un compte GitHub. 
 
+## <a name="download-the-reports"></a>Télécharger les rapports
+
+Pour télécharger les rapports, vous devez télécharger le dépôt sous forme de fichier zip, puis les extraire. Les rapports paginés sont des fichiers .rdl.
+
+1. Ouvrez le dépôt [GitHub Reporting Services](https://github.com/microsoft/Reporting-Services).
+1. Sélectionnez la flèche située sur le bouton **Code** de couleur verte > **Download ZIP**.
+
+    :::image type="content" source="media/paginated-reports-samples/paginated-report-download-zip.png" alt-text="Capture d’écran du dépôt GitHub contenant les exemples de rapports paginés Power BI.":::
+    
+1. Ouvrez le fichier, sélectionnez **Extraire tout**, puis choisissez un emplacement pour les fichiers. Par défaut, le nom du dossier est **Reporting-Services-master**.
+1. Ouvrez le dossier **Reporting-Services-master**, puis le dossier **PaginatedReportSamples**.
+
+    >[!NOTE]
+    >Vous pouvez supprimer tous les autres dossiers situés dans le dossier **Reporting-Services-master**. Ils contiennent d’autres exemples dont vous n’avez pas besoin.
+
+1. Sélectionnez un des fichiers .rdl pour l’ouvrir dans Power BI Report Builder.
+1. À présent, vous pouvez [publier le rapport paginé dans le service Power BI](paginated-reports-save-to-power-bi-service.md).
 
 ## <a name="invoice"></a>Facture
 

@@ -1,21 +1,21 @@
 ---
 title: Conseils et astuces pour les cartes (y compris l’intégration Bing Maps)
 description: 'Conseils et astuces pour les visualisations de carte Power BI, visuels, emplacements, longitude et latitude et explication de leur fonctionnement avec Bing Cartes. '
-author: mihart
-ms.reviewer: rien
+author: msftrien
+ms.reviewer: mihart
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0c28d95c5275f5778b1ae646b8e5fb65489eb072
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ec2e097dd829760c331ff8f045af00176b0c302b
+ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860115"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93411863"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 
@@ -53,13 +53,13 @@ Si vous avez accès au jeu de données qui est utilisé pour créer la visualisa
 Dans Power BI Desktop, vous pouvez vous assurer que les champs de données sont correctement géocodés en définissant l’option *Catégorie de données* . Dans la vue de données, sélectionnez la colonne de votre choix. Dans le ruban, sélectionnez l’onglet **Modélisation**, puis définissez la **Catégorie de données** sur **Adresse**, **Ville**, **Continent**, **Pays**, **Région**, **Code Postal**, **État** ou **Province**. Ces catégories de données aident Bing à encoder correctement la date. Pour plus d’informations, consultez [Catégorisation des données dans Power BI Desktop](../transform-model/desktop-data-categorization.md). Si vous êtes connecté en direct à SQL Server Analysis Services, vous devez définir la catégorisation des données en dehors de Power BI à l’aide de [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Utiliser plusieurs colonnes d’emplacement**    
- Parfois, le fait de définir des catégories de données pour le mappage ne suffit pas à Bing pour deviner votre intention. Certaines désignations sont ambiguës, car l’emplacement existe dans plusieurs pays ou régions. Par exemple, il existe une ville appelée ***Southampton*** en Angleterre, et dans les États de Pennsylvanie et de New York.
+ Parfois, le fait de définir des catégories de données pour le mappage ne suffit pas à Bing pour deviner votre intention. Certaines désignations sont ambiguës, car l’emplacement existe dans plusieurs pays ou régions. Par exemple, il existe une ville de **_Southampton_* _ en Angleterre, en Pennsylvanie et dans l’État de New York.
 
 Power BI utilise le [service de modèle d’URL non structurée](/bingmaps/rest-services/locations/find-a-location-by-address) de Bing pour obtenir les coordonnées de latitude et de longitude en fonction d’un jeu de valeurs d’adresse pour n’importe quel pays. Si vos données ne contiennent pas suffisamment de données d’emplacement, ajoutez ces colonnes et classez-les de façon appropriée.
 
  Par exemple, si vous n’avez qu’une seule colonne Ville, Bing peut éprouver des difficultés à effectuer le géocodage. Ajoutez des colonnes géographiques supplémentaires pour lever toute ambiguïté concernant l’emplacement.  Il suffit parfois d’ajouter plusieurs colonnes d’emplacement au jeu de données, dans le cas présent, l’état/la province. Et n’oubliez pas de les classer correctement (voir le point 1 ci-dessus).
 
-Vérifiez que chaque champ est associé à une seule catégorie d’emplacement. Par exemple, votre champ de localisation Ville devrait être **Southampton**, non **Southampton, New York**.  Et votre champ de localisation Adresse devrait être **1 Microsoft Way**, non **1 Microsoft Way, Redmond, WA**.
+Vérifiez que chaque champ est associé à une seule catégorie d’emplacement. Par exemple, le champ de localisation de votre ville devrait indiquer _*Southampton**, et non **Southampton, New York**.  Et votre champ de localisation Adresse devrait être **1 Microsoft Way**, non **1 Microsoft Way, Redmond, WA**.
 
 **3. Utiliser des valeurs de latitude et de longitude spécifiques**
 

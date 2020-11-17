@@ -2,19 +2,20 @@
 title: Tutoriel Narrations intelligentes
 description: 'Tutoriel : Créer des visualisations récapitulatives de narration intelligente dans Power BI'
 author: aphilip94
-ms.reviewer: aphilip94
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 09/14/2020
+ms.date: 11/06/2020
 ms.author: anphil
+ms.custom: video
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4417d66b4afc3c3848667364bdca47150afdf04a
-ms.sourcegitcommit: 220427415e2fdc9337244b1ee23e734854179d43
+ms.openlocfilehash: 92ebd3015296dc0b6a61f3b7dd2a8b0d163a4383
+ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862922"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94397205"
 ---
 # <a name="create-smart-narrative-summaries-preview"></a>Créer des résumés de narration intelligente (préversion)
 
@@ -33,9 +34,12 @@ Utilisez les résumés de narration intelligente dans vos rapports pour répondr
 >
 >![Capture d’écran montrant les options de Power BI. L’option Visuel de narration intelligente est sélectionnée.](media/power-bi-visualization-smart-narratives/2.png)
 
-Pour suivre ce didacticiel, téléchargez l’[exemple de fichier](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) d’un scénario de vente en ligne.
 
-## <a name="get-started"></a>Commencer 
+
+## <a name="get-started"></a>Prise en main 
+Regardez Justyna vous montrer comment utiliser les narrations intelligentes, puis testez-les par vous-même à l’aide du tutoriel situé en dessous de la vidéo.  Pour suivre ce didacticiel, téléchargez l’[exemple de fichier](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix) d’un scénario de vente en ligne.
+
+> [!VIDEO https://youtu.be/01UrT-z37sw]
 
 Dans le volet **Visualisations**, sélectionnez l’icône de **Narration intelligente** pour générer automatiquement un résumé.
 
@@ -95,9 +99,10 @@ La fonctionnalité de narration intelligente ne prend pas en charge les fonction
 - Utilisation de valeurs dynamiques et de la mise en forme conditionnelle (par exemple, titre lié aux données)
 - Azure Analysis Services, AS local
 - Indicateurs de performance clés, cartes, cartes à plusieurs lignes, mappages, tables, matrices, visuels R ou visuels Python, visuels personnalisés 
-- Résumés des visuels dont les colonnes sont regroupées par d’autres colonnes et pour les visuels qui sont générés sur un champ Groupe de données 
+- Résumés des visuels dont les colonnes sont regroupées par d’autres colonnes et pour les visuels qui sont générés sur un champ Groupe de données 
 - Filtrage croisé en dehors d’un visuel
 - Renommage des valeurs dynamiques ou modification des valeurs dynamiques générées automatiquement
 - Résumés des visuels qui contiennent des calculs à la volée tels que l’arithmétique QnA et le pourcentage du total général 
+- [Groupes de calcul](/analysis-services/tabular-models/calculation-groups)
    
 

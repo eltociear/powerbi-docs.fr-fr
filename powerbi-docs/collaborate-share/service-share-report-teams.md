@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 LocalizationGroup: Share your work
 ms.date: 07/31/2020
-ms.openlocfilehash: 6f4f083f7ec36fff13624b6b0d28ffd810e0d62b
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: ae3f6b5f3026adf127b53dd07118fe05e4c06a00
+ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90964818"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348079"
 ---
 # <a name="share-directly-to-microsoft-teams-from-the-power-bi-service"></a>Partage direct dans Microsoft Teams à partir du service Power BI
 
@@ -43,7 +43,7 @@ Suivez ces étapes pour partager des liens vers des rapports, des tableaux de bo
     
       ![Capture d’écran du bouton Partager dans Teams dans le menu contextuel d’un visuel](media/service-share-report-teams/service-teams-share-to-teams-visual-context-menu.png)
 
-1. Dans la boîte de dialogue **Partager dans Microsoft Teams**, sélectionnez le canal ou les personnes devant recevoir le lien. Vous pouvez entrer un message si vous le souhaitez. Vous serez peut-être invité à vous connecter au préalable à Microsoft Teams.
+1. Dans la boîte de dialogue **Partager dans Microsoft Teams**, sélectionnez l’équipe ou le canal qui doit recevoir le lien. Vous pouvez entrer un message si vous le souhaitez. Vous serez peut-être invité à vous connecter au préalable à Microsoft Teams.
 
     ![Capture d’écran de la boîte de dialogue Partager dans Microsoft Teams avec les informations et le message](media/service-share-report-teams/service-teams-share-to-teams-dialog.png)
 
