@@ -99,6 +99,8 @@
           items:
             - name: Créer et utiliser des dataflows
               href: ./dataflows/dataflows-create.md
+            - name: Bonnes pratiques pour les dataflows
+              href: ./dataflows/dataflows-best-practices.md
             - name: Utiliser DirectQuery avec des dataflows dans Power BI (préversion)
               href: ./dataflows/dataflows-configure-consume.md
             - name: Utiliser le moteur de calcul amélioré avec des dataflows
