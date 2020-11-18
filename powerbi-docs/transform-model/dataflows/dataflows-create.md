@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 10b395cc14bf0aac97ead4b86c010109cfbc3703
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 5a75965bb236a1515274343e58668809f91cef7b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91638247"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669198"
 ---
 # <a name="creating-a-dataflow"></a>Création d’un flux de données
 Un **dataflow** est une collection d’entités (les entités sont similaires aux tables) créées et gérées dans des espaces de travail du service Power BI. Une **entité/table** est un ensemble de champs utilisés pour stocker des données, à l’instar d’une table dans une base de données. Vous pouvez ajouter et modifier des entités/tables dans votre dataflow, mais aussi gérer des planifications d’actualisation de données, directement dans l’espace de travail où votre dataflow a été créé.
@@ -133,3 +133,4 @@ Une fois que vous avez créé un flux de données, vous pouvez utiliser Power BI
 * [Fonctionnalités Premium des dataflows](dataflows-premium-features.md)
 * [IA et dataflows](dataflows-machine-learning-integration.md)
 * [Considérations et limitations des dataflows](dataflows-features-limitations.md)
+* [Bonnes pratiques pour les dataflows](dataflows-best-practices.md)

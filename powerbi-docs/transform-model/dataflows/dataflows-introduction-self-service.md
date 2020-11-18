@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 23ead6afd508cc0e61ae29d65926372561a6375a
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: d8315652883f644d5440c25e3203fdf004bac51c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396285"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669106"
 ---
 # <a name="introduction-to-dataflows-and-self-service-data-prep"></a>Introduction aux dataflows et à la préparation des données en libre-service
 
@@ -49,6 +49,7 @@ Les articles suivants vous permettront d’en savoir plus sur les dataflows et P
 * [Fonctionnalités Premium des dataflows](dataflows-premium-features.md)
 * [IA et dataflows](dataflows-machine-learning-integration.md)
 * [Considérations et limitations des dataflows](dataflows-features-limitations.md)
+* [Bonnes pratiques pour les dataflows](dataflows-best-practices.md)
 
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :

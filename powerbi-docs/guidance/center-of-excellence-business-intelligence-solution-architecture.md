@@ -6,14 +6,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 11/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fe55c789f5af644a802bc5c5f648315744a074be
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: d84f6a4fcf7ff531b76b6e731f165aa6e0df764f
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638648"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512122"
 ---
 # <a name="bi-solution-architecture-in-the-center-of-excellence"></a>Architecture de la solution décisionnelle dans le centre d’excellence
 
@@ -64,13 +64,13 @@ Les **modèles sémantiques BI** sont une couche sémantique résidant sur les m
 
 Les fonctionnalités métier ne sont pas activées uniquement par les données, mais par les modèles sémantiques BI qui décrivent les concepts, les relations, les règles et les standards. De cette façon, ils représentent des structures intuitives et faciles à comprendre qui définissent les relations entre les données et encapsulent les règles métier sous forme de calculs. Ils peuvent également appliquer des autorisations précises pour l’accès aux données, garantissant ainsi que les bonnes personnes ont accès aux bonnes données. Plus important encore, ils améliorent les performances des requêtes en fournissant une analytique interactive extrêmement réactive, même sur plusieurs téraoctets de données. Au même titre que les modèles métier, les modèles sémantiques BI adoptent des conventions de nommage qui garantissent la cohérence.
 
-Dans une plateforme décisionnelle cloud, les développeurs en décisionnel peuvent déployer des modèles sémantiques BI sur [Azure Analysis Services](/azure/analysis-services/) ou [Power BI Premium](../admin/service-premium-what-is.md#dedicated-capacities). Nous vous recommandons de déployer sur Power BI si vous vous en servez comme couche de création de rapports et d’analytique. Ces produits prennent en charge différents modes de stockage, ce qui permet aux tables de modèle de données de mettre en cache leurs données ou d’utiliser [DirectQuery](directquery-model-guidance.md), une technologie qui transmet les requêtes à la source de données sous-jacente. DirectQuery est le mode de stockage idéal quand les tables de modèle contiennent des volumes de données importants ou quand vous devez fournir des résultats en quasi-temps réel. Vous pouvez par ailleurs combiner ces deux modes de stockage : les [modèles composites](composite-model-guidance.md) combinent des tables qui utilisent différents modes de stockage en un seul modèle.
+Dans une plateforme décisionnelle cloud, les développeurs en décisionnel peuvent déployer des modèles sémantiques BI sur [Azure Analysis Services](/azure/analysis-services/) ou [Power BI Premium](../admin/service-premium-what-is.md#reserved-capacities). Nous vous recommandons de déployer sur Power BI si vous vous en servez comme couche de création de rapports et d’analytique. Ces produits prennent en charge différents modes de stockage, ce qui permet aux tables de modèle de données de mettre en cache leurs données ou d’utiliser [DirectQuery](directquery-model-guidance.md), une technologie qui transmet les requêtes à la source de données sous-jacente. DirectQuery est le mode de stockage idéal quand les tables de modèle contiennent des volumes de données importants ou quand vous devez fournir des résultats en quasi-temps réel. Vous pouvez par ailleurs combiner ces deux modes de stockage : les [modèles composites](composite-model-guidance.md) combinent des tables qui utilisent différents modes de stockage en un seul modèle.
 
 Pour les modèles faisant l’objet d’un grand nombre de requêtes, vous pouvez utiliser [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) pour répartir uniformément la charge des requêtes entre les réplicas de modèle. Il vous permet également de mettre à l’échelle vos applications et de créer des modèles sémantiques BI hautement disponibles.
 
 ### <a name="machine-learning-models"></a>Modèles Machine Learning
 
-Les [**modèles Machine Learning (ML)** ](/windows/ai/windows-ml/what-is-a-machine-learning-model) sont générés et gérés par des scientifiques des données. Ils sont principalement développés à partir de sources brutes dans le lac de données.
+Les [**modèles Machine Learning (ML)**](/windows/ai/windows-ml/what-is-a-machine-learning-model) sont générés et gérés par des scientifiques des données. Ils sont principalement développés à partir de sources brutes dans le lac de données.
 
 Les modèles ML entraînés peuvent révéler des modèles dans vos données. Dans de nombreuses circonstances, ces modèles peuvent être utilisés pour faire des prédictions qui peuvent servir à enrichir les données. Par exemple, vous pouvez utiliser le comportement d’achat pour prédire l’attrition clients ou segmenter les clients. Les résultats des prédictions peuvent être ajoutés aux modèles d’entreprise pour permettre l’analyse par segment de clientèle.
 

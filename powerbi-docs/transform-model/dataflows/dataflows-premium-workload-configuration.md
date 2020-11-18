@@ -6,18 +6,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 11/13/2020
 ms.author: davidi
 ms.custom: references_regions
 LocalizationGroup: Data from files
-ms.openlocfilehash: f2efd4410af62425f599b1addd0f792f495120e0
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: e5d2e1f65ef326ac12f15ff14c8d07c22c2950fe
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397251"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94667979"
 ---
-# <a name="configure-power-bi-premium-dataflow-workloads"></a>Configurer des charges de travail de dataflow Power BI Premium
+# <a name="configure-power-bi-premium-dataflow-workloads"></a>Configurer les charges de travails des dataflows Premium Power BI
 
 Vous pouvez créer des charges de travail de dataflow dans votre abonnement Power BI Premium. Power BI utilise le concept des *charges de travail* pour décrire le contenu Premium. Les charges de travail incluent les jeux de données, les rapports paginés, les dataflows et l’intelligence artificielle. La charge de travail des *dataflows* vous permet d’utiliser la préparation des données en libre-service des dataflows pour ingérer, transformer, intégrer et enrichir les données. Les dataflows Power BI Premium se gèrent dans le **portail d’administration**.
 
@@ -27,7 +27,7 @@ Les sections suivantes décrivent comment activer des dataflows dans votre organ
 
 ## <a name="enabling-dataflows-in-power-bi-premium"></a>Activation des dataflows dans Power BI Premium
 
-La première obligation pour utiliser des dataflows dans votre abonnement Power BI Premium consiste à activer la création et l’utilisation des dataflows pour votre organisation. Dans le **portail d’administration** , sélectionnez **Paramètres du client** et basculez le curseur **Paramètres de dataflow** sur **Activé** , comme illustré dans l’image ci-après.
+La première obligation pour utiliser des dataflows dans votre abonnement Power BI Premium consiste à activer la création et l’utilisation des dataflows pour votre organisation. Dans le **portail d’administration**, sélectionnez **Paramètres du client** et basculez le curseur **Paramètres de dataflow** sur **Activé**, comme illustré dans l’image ci-après.
 
 ![Portail d’administration pour les dataflows dans Power BI Premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
@@ -37,11 +37,11 @@ Une fois que la charge de travail Dataflows est activée, elle est configurée a
 
 Une fois les dataflows activés, vous pouvez utiliser le **portail d’administration** pour modifier ou ajuster la façon dont les dataflows sont créés et utilisent les ressources de votre abonnement Power BI Premium. Les étapes suivantes montrent comment ajuster vos paramètres de dataflow.
 
-1. Dans le **portail d’administration** , sélectionnez **Paramètres du client** pour lister toutes les capacités déjà créées. Sélectionnez une capacité pour gérer ses paramètres.
+1. Dans le **portail d’administration**, sélectionnez **Paramètres du client** pour lister toutes les capacités déjà créées. Sélectionnez une capacité pour gérer ses paramètres.
 
     ![Sélectionner une capacité pour gérer ses paramètres](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-02.png)
 
-2. Votre capacité Power BI Premium reflète les ressources disponibles pour vos dataflows. Vous pouvez modifier la taille de votre capacité en sélectionnant le bouton **Modifier la taille** , comme illustré dans l’image ci-après.
+2. Votre capacité Power BI Premium reflète les ressources disponibles pour vos dataflows. Vous pouvez modifier la taille de votre capacité en sélectionnant le bouton **Modifier la taille**, comme illustré dans l’image ci-après.
 
     ![Modifier la taille d’une capacité](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-03.png)
 
@@ -49,7 +49,7 @@ Une fois les dataflows activés, vous pouvez utiliser le **portail d’administr
 
     ![Développer la section Charges de travail](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-04.png)
 
-4. Dans la section **Charges de travail** , accédez à la zone **Dataflows**. L’image ci-après montre les paramètres que vous pouvez utiliser pour contrôler ou ajuster le comportement des charges de travail de dataflow pour votre capacité.
+4. Dans la section **Charges de travail**, accédez à la zone **Dataflows**. L’image ci-après montre les paramètres que vous pouvez utiliser pour contrôler ou ajuster le comportement des charges de travail de dataflow pour votre capacité.
 
     ![Paramètres des charges de travail de dataflow](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-05.png)
 
@@ -69,7 +69,7 @@ Dans les sections suivantes, nous examinons de près chacun des paramètres et l
 
 ### <a name="understanding-dataflow-workload-options"></a>Compréhension des options de charge de travail de dataflow
 
-Pour appréhender simplement les options de charge de travail de dataflow, nous allons utiliser une analogie. Considérons la *taille de la capacité* , ou le type d’instance Power BI Premium dont vous disposez, comme votre *restaurant*. Au sein de votre restaurant, vous avez la *mémoire de votre charge de travail* , qui correspond à votre *cuisine*. Le *moteur de calcul* est votre *four*. Enfin, le *conteneur* est le type de qualité de votre *chef*. Pour évaluer vos options de charge de travail de dataflow, imaginez que vous préparez un plat pour un important dîner. Vous allez recevoir des invités prestigieux et le dîner devra être servi à leur arrivée.
+Pour appréhender simplement les options de charge de travail de dataflow, nous allons utiliser une analogie. Considérons la *taille de la capacité*, ou le type d’instance Power BI Premium dont vous disposez, comme votre *restaurant*. Au sein de votre restaurant, vous avez la *mémoire de votre charge de travail*, qui correspond à votre *cuisine*. Le *moteur de calcul* est votre *four*. Enfin, le *conteneur* est le type de qualité de votre *chef*. Pour évaluer vos options de charge de travail de dataflow, imaginez que vous préparez un plat pour un important dîner. Vous allez recevoir des invités prestigieux et le dîner devra être servi à leur arrivée.
 
 Nous allons utiliser cette analogie du restaurant pour expliquer chacun des paramètres et donner les instructions qui les concernent. Nous allons commencer par le commencement : votre capacité Premium, car il s’agit du premier choix que vous faites quand vous utilisez Power BI Premium.
 
@@ -120,7 +120,7 @@ Les délais d’actualisation longs relèvent généralement d’un problème de
 
 ### <a name="out-of-memory-exceptions"></a>Exceptions de mémoire insuffisante
 
-Quand vous rencontrez des **exceptions de mémoire insuffisante** , vous devez augmenter les performances des conteneurs et de la mémoire. Effectuez les étapes suivantes.
+Quand vous rencontrez des **exceptions de mémoire insuffisante**, vous devez augmenter les performances des conteneurs et de la mémoire. Effectuez les étapes suivantes.
 
 1. Augmentez la mémoire sur le conteneur. Cela revient à avoir un seul chef étoilé plutôt qu’un grand nombre de chefs, comme décrit dans la section précédente.
 
@@ -134,7 +134,7 @@ Effectuez les étapes suivantes pour permettre aux charges de travail de déclen
 
 **Pour les entités calculées et liées dans le même espace de travail :**
 
-1. Pour l’ *ingestion* , concentrez-vous sur l’obtention aussi rapide que possible des données dans le stockage, en utilisant des filtres uniquement s’ils réduisent la taille globale du jeu de données. Une bonne pratique consiste à séparer votre logique de transformation de cette étape et à permettre au moteur de se concentrer sur la collecte initiale des ingrédients. Ensuite, séparez votre transformation et votre logique métier dans un dataflow distinct dans le même espace de travail, à l’aide d’entités liées ou calculées. Ainsi, le moteur peut activer et accélérer vos calculs. Dans notre analogie, il s’agit de la préparation des aliments dans la cuisine : la préparation des aliments constitue généralement une étape distincte de la sélection des ingrédients bruts et une condition préalable à leur cuisson dans le four. De même, votre logique a besoin d’être préparée séparément avant d’exploiter le moteur de calcul.
+1. Pour l’*ingestion*, concentrez-vous sur l’obtention aussi rapide que possible des données dans le stockage, en utilisant des filtres uniquement s’ils réduisent la taille globale du jeu de données. Une bonne pratique consiste à séparer votre logique de transformation de cette étape et à permettre au moteur de se concentrer sur la collecte initiale des ingrédients. Ensuite, séparez votre transformation et votre logique métier dans un dataflow distinct dans le même espace de travail, à l’aide d’entités liées ou calculées. Ainsi, le moteur peut activer et accélérer vos calculs. Dans notre analogie, il s’agit de la préparation des aliments dans la cuisine : la préparation des aliments constitue généralement une étape distincte de la sélection des ingrédients bruts et une condition préalable à leur cuisson dans le four. De même, votre logique a besoin d’être préparée séparément avant d’exploiter le moteur de calcul.
 
 2. Veillez à effectuer les opérations de repli, comme les fusions, les jointures, les conversions et [autres](/power-query/power-query-folding#transformations-that-can-achieve-folding).
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5834230a59f6473624e955827dad36cdd75c04e5
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 703e87847f2f6dfb24040cc6532052b17d39086c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668531"
 ---
 # <a name="ai-with-dataflows"></a>IA et dataflows
 
@@ -112,7 +112,7 @@ Les dataflows assurent une préparation des données en libre-service pour le Bi
 
 AutoML dans Power BI permet aux analystes de données d’utiliser les dataflows pour créer des modèles Machine Learning avec une expérience simplifiée, en utilisant uniquement des compétences Power BI. La science des données qui est utilisée dans le cadre de la création des modèles ML est en grande partie automatisée par Power BI. Elle comprend des systèmes qui garantissent la qualité du modèle créé, et permet de voir le processus qui est utilisé pour créer votre modèle ML.
 
-AutoML prend en charge la création de modèles de **Prédiction binaire** , de **Classification** et de **Régression** pour les dataflows. Il s’agit de techniques de Machine Learning supervisées qui s’entraînent à partir des résultats connus d’observations passées pour prédire les résultats d’autres observations. Le jeu de données d’entrée pour effectuer l'apprentissage d’un modèle AutoML est un ensemble d’enregistrements **étiquetés** avec les résultats connus.
+AutoML prend en charge la création de modèles de **Prédiction binaire**, de **Classification** et de **Régression** pour les dataflows. Il s’agit de techniques de Machine Learning supervisées qui s’entraînent à partir des résultats connus d’observations passées pour prédire les résultats d’autres observations. Le jeu de données d’entrée pour effectuer l'apprentissage d’un modèle AutoML est un ensemble d’enregistrements **étiquetés** avec les résultats connus.
 
 AutoML dans Power BI intègre le [machine learning automatisé](/azure/machine-learning/service/concept-automated-ml) d’[Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) pour créer vos modèles Machine Learning. Toutefois, vous n’avez pas besoin d’un abonnement Azure pour utiliser AutoML dans Power BI. Le processus de formation et d’hébergement des modèles Machine Learning est géré entièrement par le service Power BI.
 
@@ -220,7 +220,7 @@ Si vous êtes satisfait des performances du modèle Machine Learning créé, vou
 
 Pour appliquer le modèle Machine Learning, vous devez spécifier le nom de l’entité à laquelle il doit être appliqué et un préfixe pour les colonnes qui seront ajoutées à cette entité pour la sortie du modèle. Le préfixe par défaut des noms de colonne est le nom du modèle. La fonction _Appliquer_ peut inclure des paramètres supplémentaires spécifiques au type de modèle.
 
-L’application du modèle ML crée deux nouvelles entités de dataflow qui contiennent les prédictions et des explications individualisées pour chaque ligne à laquelle elle attribue un score dans l’entité de sortie. Par exemple, si vous appliquez le modèle _PurchaseIntent_ à l’entité _OnlineShoppers_ , la sortie génère les entités **PurchaseIntent enriched OnlineShoppers** et **OnlineShoppers enriched PurchaseIntent explanations**. Pour chaque ligne de l’entité enrichie, les **explications** sont réparties sur plusieurs lignes, en fonction de la caractéristique d’entrée. Une **ExplanationIndex** permet de mapper les lignes de l’entité d’explications enrichie avec celles de l’entité enrichie.
+L’application du modèle ML crée deux nouvelles entités de dataflow qui contiennent les prédictions et des explications individualisées pour chaque ligne à laquelle elle attribue un score dans l’entité de sortie. Par exemple, si vous appliquez le modèle _PurchaseIntent_ à l’entité _OnlineShoppers_, la sortie génère les entités **PurchaseIntent enriched OnlineShoppers** et **OnlineShoppers enriched PurchaseIntent explanations**. Pour chaque ligne de l’entité enrichie, les **explications** sont réparties sur plusieurs lignes, en fonction de la caractéristique d’entrée. Une **ExplanationIndex** permet de mapper les lignes de l’entité d’explications enrichie avec celles de l’entité enrichie.
 
 ![Éditeur de requête](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
@@ -234,7 +234,7 @@ Pour utiliser les insights et prédictions du modèle Machine Learning dans un r
 
 ### <a name="binary-prediction-models"></a>Modèles de prédiction binaire
 
-Les modèles de prédiction binaire, plus connus sous le nom de **modèles de classification binaire** , sont utilisés pour classer un jeu de données en deux groupes. Elles sont utilisées pour prédire les événements qui peuvent avoir un résultat binaire. Par exemple si une opportunité de vente sera convertie, si un client ne renouvellera pas, si une facture sera payée à temps, si une transaction sera frauduleuse, et ainsi de suite.
+Les modèles de prédiction binaire, plus connus sous le nom de **modèles de classification binaire**, sont utilisés pour classer un jeu de données en deux groupes. Elles sont utilisées pour prédire les événements qui peuvent avoir un résultat binaire. Par exemple si une opportunité de vente sera convertie, si un client ne renouvellera pas, si une facture sera payée à temps, si une transaction sera frauduleuse, et ainsi de suite.
 
 La sortie d’un modèle de prédiction binaire est un score de probabilité, qui identifie la probabilité que le résultat cible soit obtenu.
 
@@ -272,7 +272,7 @@ Pour appliquer un modèle de prédiction binaire, vous devez spécifier l’enti
 
 ![Entrées de prédiction](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-Lorsqu’un modèle de prédiction binaire est appliqué, celui-ci ajoute quatre colonnes de sortie à l’entité de sortie enrichie : **Outcome** , **PredictionScore** , **PredictionExplanation** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
+Lorsqu’un modèle de prédiction binaire est appliqué, celui-ci ajoute quatre colonnes de sortie à l’entité de sortie enrichie : **Outcome**, **PredictionScore**, **PredictionExplanation** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
 **PredictionScore** est un pourcentage de probabilité correspondant à la probabilité que le résultat cible soit obtenu.
 
@@ -314,7 +314,7 @@ Le rapport de modèle de classification comprend également une page de détails
 
 Pour appliquer un modèle de classification Machine Learning, vous devez spécifier l’entité avec les données d’entrée et le préfixe du nom de la colonne de sortie.
 
-Lorsqu’un modèle de classification est appliqué, il ajoute cinq colonnes de sortie à l’entité de sortie enrichie : **ClassificationScore** , **ClassificationResult** , **ClassificationExplanation** , **ClassProbabilities** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
+Lorsqu’un modèle de classification est appliqué, il ajoute cinq colonnes de sortie à l’entité de sortie enrichie : **ClassificationScore**, **ClassificationResult**, **ClassificationExplanation**, **ClassProbabilities** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
 La colonne **ClassProbabilities** contient la liste des scores de probabilité pour l’enregistrement de chaque classe possible.
 
@@ -358,7 +358,7 @@ Pour appliquer un modèle de régression Machine Learning, vous devez spécifier
 
 ![Appliquer une régression](media/service-machine-learning-automated/automated-machine-learning-power-bi-19.png)
 
-Lorsqu’un modèle de régression est appliqué, il ajoute trois colonnes de sortie à l’entité de sortie enrichie : **RegressionResult** , **RegressionExplanation** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
+Lorsqu’un modèle de régression est appliqué, il ajoute trois colonnes de sortie à l’entité de sortie enrichie : **RegressionResult**, **RegressionExplanation** et **ExplanationIndex**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
 La colonne **RegressionResult** contient la valeur prédite de l’enregistrement d’après les champs d’entrée. La colonne **RegressionExplanation** explique l’influence que les caractéristiques d’entrée ont eu sur **RegressionResult**.
 
@@ -466,3 +466,4 @@ Les articles suivants vous permettront d’en savoir plus sur les dataflows et P
 * [Configuration du stockage de dataflows pour utiliser Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Fonctionnalités Premium des dataflows](dataflows-premium-features.md)
 * [Considérations et limitations des dataflows](dataflows-features-limitations.md)
+* [Bonnes pratiques pour les dataflows](dataflows-best-practices.md)
