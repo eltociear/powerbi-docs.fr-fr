@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 697aa38a08acb561cca9b0ccba5656281157237e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: d08ddeddc0a0feee82b02549db819a901f944c2d
+ms.sourcegitcommit: 1b79577006a2f6583a0a249f1920ae1e2b6b0ace
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226419"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94529025"
 ---
 # <a name="data-lineage"></a>Traçabilité des données
 Dans les projets Business Intelligence (BI) modernes, il peut être difficile d’avoir une bonne compréhension du flux de données entre la source de données et la destination. C’est encore plus compliqué si vous avez créé des projets d’analytique avancée qui impliquent de multiples sources de données, artefacts et dépendances. Il peut alors être difficile de répondre à des questions telles que « Que se passe-t-il si je modifie ces données ? » ou « Pourquoi ce rapport n’est-il pas à jour ? ». Pour trouver les réponses, il faut parfois demander l’aide d’experts ou faire des recherches approfondies. Nous avons conçu une vue de traçabilité des données qui pourra vous aider à répondre à ce genre de questions.
@@ -23,7 +23,9 @@ Dans les projets Business Intelligence (BI) modernes, il peut être difficile d�
  
 Power BI fournit plusieurs types d’artefacts, comme des tableaux de bord, des rapports, des jeux de données et des dataflows. De nombreux jeux de données et dataflows se connectent à des sources de données externes telles que SQL Server et à des jeux de données externes dans d’autres espaces de travail. Quand un jeu de données est externe à un espace de travail dont vous êtes propriétaire, il peut se trouver dans un espace de travail détenu par un membre du service informatique ou par un autre analyste. Les sources de données et jeux de données externes rendent difficile de savoir d’où les données proviennent à l’origine. Dans vos projets, qu’ils soient complexes ou plus simples, vous pouvez utiliser la nouvelle vue de traçabilité.
 
-Dans la vue de traçabilité, vous voyez les relations de traçabilité entre tous les artefacts dans un espace de travail, et toutes leurs dépendances externes. Elle montre les connexions entre tous les artefacts de l’espace de travail, y compris les connexions aux dataflows, aussi bien en amont qu’en aval.
+Dans la vue de traçabilité, vous voyez les relations de traçabilité entre tous les artefacts dans un espace de travail, et toutes leurs dépendances externes. Elle montre les connexions entre tous les artefacts de l’espace de travail, y compris les connexions aux dataflows, aussi bien en amont qu’en aval.    
+
+> [!VIDEO https://youtu.be/rUj06dqB98g]
 
 ## <a name="explore-lineage-view"></a>Explorer la vue de traçabilité
 

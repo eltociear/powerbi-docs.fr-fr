@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
-ms.openlocfilehash: c831118a14c1dc453acb81b866013dcb085d9f6d
-ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
+ms.openlocfilehash: 0ef66f847485e066d6596c65b277f2d74699614d
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348194"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94559778"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds nationaux
 
@@ -78,7 +78,7 @@ Cet article présente le code utilisé dans l’[exemple L’application possèd
 3. Ajoutez les paramètres DoDCON dans le fichier web.config comme suit.
 
 ```xml
-<add key="authorityUrl" value="https://login.microsoftonlineS.us/common/" />
+<add key="authorityUrl" value="https://login.microsoftonline.us/common/" />
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Utilisez l’objet client Power BI pour récupérer une référence vers l’élément que vous souhaitez incorporer. Vous pouvez incorporer des tableaux de bord, des vignettes ou des rapports. Voici un exemple montrant comment récupérer le premier tableau de bord, rapport ou vignette à partir d’un espace de travail donné.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (L’application possède les données).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple App Owns Data sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (L’application possède les données).
 
 #### <a name="reports"></a>Rapports
 
@@ -238,12 +238,12 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
 
-En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est propre à l’élément incorporé. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez créer un jeton d’incorporation associé à cet élément. Pour en savoir plus, notamment sur les niveaux d’accès ( **accessLevel** ) à utiliser, consultez [Incorporer un jeton](/rest/api/power-bi/embedtoken).
+En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est propre à l’élément incorporé. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez créer un jeton d’incorporation associé à cet élément. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Étant donné que les jetons d’incorporation sont uniquement destinés aux tests de développeur, le nombre de jetons d’incorporation qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](./embedded-faq.md#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.
 
-Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’ [exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (Incorporation pour votre organisation).
+Un exemple est disponible dans le fichier **Controllers\HomeController.cs** de l’[exemple Embedding for your organization](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData) (Incorporation pour votre organisation).
 
 Une classe est créée pour **EmbedConfig** et **TileEmbedConfig**. Des exemples sont disponibles dans les fichiers **Models\EmbedConfig.cs** et **Models\TileEmbedConfig.cs**.
 

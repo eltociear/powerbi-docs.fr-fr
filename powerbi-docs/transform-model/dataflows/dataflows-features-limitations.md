@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 10/01/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 89de77e65d8eb675d9e80c3b2497f39af7c32d33
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 2d58fe71b7ceb27afe5d52a55ed57ae162622b06
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396584"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668163"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>Considérations et limitations des dataflows
 
@@ -75,7 +75,7 @@ Les dataflows qui existent en mode Premium présentent les limitations et consid
 
 * Une entité liée ne peut pas être jointe à une entité standard qui obtient ses données à partir d’une source de données locale
 
-* Quand une requête (par exemple, la requête *A* ) est utilisée dans le calcul d’une autre requête (requête *B* ) dans des dataflows, la requête *B* devient une entité calculée. Les entités calculées ne peuvent pas faire référence à des sources locales.
+* Quand une requête (par exemple, la requête *A*) est utilisée dans le calcul d’une autre requête (requête *B*) dans des dataflows, la requête *B* devient une entité calculée. Les entités calculées ne peuvent pas faire référence à des sources locales.
 
 
 **Moteur de calcul :**
@@ -111,3 +111,4 @@ Les articles suivants vous permettront d’en savoir plus sur les dataflows et P
 * [Configuration du stockage de dataflows pour utiliser Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Fonctionnalités Premium des dataflows](dataflows-premium-features.md)
 * [IA et dataflows](dataflows-machine-learning-integration.md)
+* [Bonnes pratiques pour les dataflows](dataflows-best-practices.md)
