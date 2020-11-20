@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 11/13/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4eae96dbdddae82a7f74f27c835874a19b04a69f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 624da63259dcb09d0ebbb35079ef0d8e1340b04c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256818"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668508"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Permettre aux utilisateurs de personnaliser les visuels dans un rapport
 
@@ -96,23 +96,23 @@ Une fois que vous avez défini la perspective pour la page de rapport, l’expé
 
 ## <a name="enable-personalization-in-a-report"></a>Activation de la personnalisation dans un rapport
 
-Vous pouvez activer la fonctionnalité dans Power BI Desktop ou dans le service Power BI.
+Vous pouvez activer la fonctionnalité dans Power BI Desktop ou dans le service Power BI. Vous pouvez également l’activer dans les rapports incorporés.
 
 ### <a name="in-power-bi-desktop"></a>Dans Power BI Desktop
 
 Pour activer la fonctionnalité dans Power BI Desktop, accédez à **Fichier** > **Options et paramètres** > **Options** > **Fichier actuel** > **Paramètres du rapport**. Activez **Personnaliser les visuels**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-desktop.png" alt-text="Activation de la personnalisation dans un rapport":::
 
 ### <a name="in-the-power-bi-service"></a>Dans le service Power BI
 
 Si vous souhaitez plutôt activer la fonctionnalité dans le service Power BI, accédez aux **Paramètres** de votre rapport.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Paramètres du rapport dans le service Power BI":::
 
 Activez **Personnaliser les visuels** > **Enregistrer**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-report-setting-service.png" alt-text="Activation de Personnaliser les visuels dans le service":::
 
 ## <a name="turn-the-feature-on-or-off-at-a-page-or-visual-level"></a>Activer ou désactiver la fonctionnalité au niveau d’une page ou d’un visuel
 
@@ -122,7 +122,7 @@ Lorsque vous activez Personnaliser les visuels pour un rapport donné, tous les 
 
 Sélectionnez l’onglet Page > sélectionnez **Mise en forme** dans le volet **Visualisations**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/personalize-page-level-setting.png" alt-text="Sélectionnez Personnaliser les visuels pour une page.":::
  
 Faites glisser **Personnaliser le visuel** >  **Activé** ou **Désactivé**.
 
@@ -130,11 +130,11 @@ Faites glisser **Personnaliser le visuel** >  **Activé** ou **Désactivé**.
 
 Sélectionnez le visuel > sélectionnez **Format** dans le volet **Visualisations** > développez **En-tête de visuel**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Sélection de En-tête de visuel":::
  
 Faites glisser **Personnaliser le visuel** >  **Activé** ou **Désactivé**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Curseur Personnaliser le visuel activé ou désactivé":::
 
 
 ## <a name="limitations"></a>Limites

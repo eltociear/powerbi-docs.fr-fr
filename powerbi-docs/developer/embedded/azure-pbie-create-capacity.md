@@ -8,14 +8,14 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
-ms.custom: subject-armqs
+ms.custom: subject-armqs, devx-track-azurecli
 ms.date: 08/02/2020
-ms.openlocfilehash: 0f7a6c72a393aa398996f7b4e818d6288b746583
-ms.sourcegitcommit: 383d87841d2509131fac7cc02c5c37c6a868144f
+ms.openlocfilehash: 42dfe1a2032c7afe9eff354829fcc564e69e0d36
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92025953"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718934"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -27,9 +27,9 @@ Pour suivre ce guide de démarrage rapide, vous avez besoin des éléments suiva
 
 * **Abonnement Azure :** Accédez à la page [Azure - Essai gratuit](https://azure.microsoft.com/free/) pour créer un compte.
 
-* **Azure Active Directory :** Votre abonnement doit être associé à un locataire Azure Active Directory (Azure AD). De plus, ***vous devez être connecté à Azure avec un compte relevant de ce locataire***. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](/azure/analysis-services/analysis-services-manage-users).
+* **Azure Active Directory :** Votre abonnement doit être associé à un locataire Azure Active Directory (Azure AD). De plus, **_vous devez vous connecter à Azure avec un compte relevant de ce locataire_* _. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](/azure/analysis-services/analysis-services-manage-users).
 
-* **Locataire Power BI :** Au moins un compte de votre locataire Azure AD doit avoir souscrit à Power BI.
+_ **Locataire Power BI :** Au moins un compte de votre locataire Azure AD doit avoir souscrit à Power BI.
 
 * **Groupe de ressources :** Utilisez un groupe de ressources que vous possédez déjà ou [créez-en un](/azure/azure-resource-manager/resource-group-overview).
 
