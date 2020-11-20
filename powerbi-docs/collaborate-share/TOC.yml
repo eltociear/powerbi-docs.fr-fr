@@ -99,8 +99,16 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-        - name: "Power Automate et Power\_BI"
-          href: service-flow-integration.md
+        - name: Power BI et Power Automate
+          items:
+            - name: Intégrer des alertes de données à Power Automate
+              href: service-flow-integration.md
+            - name: Exporter des rapports paginés avec Power Automate
+              href: service-automate-paginated-integration.md
+            - name: Enregistrer des rapports paginés sur OneDrive ou SharePoint Online
+              href: service-automate-paginated-onedrive-sharepoint.md
+            - name: Exporter des rapports paginés à partir d’Excel Online ou d’une liste SharePoint
+              href: service-automate-paginated-excel-sharepoint-list.md
         - name: Utiliser des applications tierces
           href: service-power-bi-get-started-third-party-apps.md
         - name: Packs de contenu d’organisation
