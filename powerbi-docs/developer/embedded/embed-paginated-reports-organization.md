@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 06/25/2020
-ms.openlocfilehash: 41c7ba43d16b6d77ecf6324d3cd175dbbabc51a1
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 447fad076d9d171a2bdcb8e9f5aafe9c63555d79
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983394"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668669"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-organization"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour votre organisation
 
@@ -44,6 +44,9 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Au moins une capacité P1. Consultez [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
+
+>[!NOTE]
+>[Premium par utilisateur (PPU)](../../admin/service-premium-per-user-faq.md) est pris en charge. Toutefois, si vous utilisez PPU, seuls les utilisateurs PPU de votre organisation pourront accéder à votre solution.
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 

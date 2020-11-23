@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f1a792c7ad25600f04ca9834b1e5019d4e27efb4
-ms.sourcegitcommit: 11deeccf596e9bb8f22615276a152614f7579f35
+ms.openlocfilehash: a8268af76472c91474f2f67bc256fcc0ddcc9768
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86409510"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669221"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Utilisation d’un segment et d’un filtre d’heure relative dans Power BI
 
@@ -90,10 +90,7 @@ Lorsqu’un filtre est appliqué au niveau de la page ou du rapport, tous les vi
 Voici les limitations et considérations qui s’appliquent actuellement au segment et au filtre d’heure relative.
 
 - **Considérations relatives aux fuseaux horaires** : les modèles de données de Power BI n’incluent pas d’informations de fuseau horaire. Ces modèles peuvent stocker des heures, mais sans indication de leur fuseau horaire. Le segment et le filtre sont toujours basés sur l’heure UTC (temps universel coordonné). Si vous définissez un filtre dans un rapport et que vous l’envoyez à un collègue qui se trouve dans un autre fuseau horaire, vous voyez tous les deux les mêmes données. Sauf si vous ou votre collègue vous situez dans le fuseau horaire UTC, vous devez tous deux tenir compte du décalage temporel que vous rencontrez. Utilisez l’éditeur de requêtes pour convertir à l’heure UTC les données capturées dans un fuseau horaire local.
-- Ce nouveau type de filtre est pris en charge dans Power BI Desktop, le service Power BI, Power BI Embedded et les applications mobiles Power BI. Toutefois, il existe quelques limitations de prise en charge connues :
-
-    - Il n’est pas pris en charge par le biais de l’API Incorporer.
-    - Il n’est pas pris en charge pour la publication sur le web.
+- Ce nouveau type de filtre est pris en charge dans Power BI Desktop, le service Power BI, Power BI Embedded et les applications mobiles Power BI. En revanche, il n’est pas pris en charge pour la publication sur le web.
 
 - **Mise en cache des requêtes** : Nous utilisons le cache du client. Supposons que vous spécifiiez « dernière minute », puis « 5 dernières minutes », puis que vous reveniez à « dernière minute ». Dans la situation actuelle, vous verrez alors les mêmes résultats qu’à la première exécution, sauf si vous actualisez la page ou qu’elle s’actualise automatiquement.
 

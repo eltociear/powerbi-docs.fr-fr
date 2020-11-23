@@ -7,19 +7,19 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 10/21/2020
+ms.date: 11/12/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 0166e7a452c01f7b9dbec294d8087fcd035cb586
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7faa8a360a30091c599e8b633fa8f03dc008a3ed
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349434"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668186"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Liaisons privées pour accéder à Power BI
 
-La mise en réseau Azure offre deux fonctionnalités de sécurité, les liaisons privées Azure et les points de terminaison privés, qui permettent à Power BI d’assurer un accès sécurisé. Avec les liaisons privées Azure et les points de terminaison privés, le trafic de données est envoyé en privé à l’aide de l’infrastructure réseau principale de Microsoft, ce qui signifie que les données ne transitent pas par Internet. 
+La mise en réseau Azure offre la fonctionnalité de liaisons privées Azure qui permet à Power BI de garantir un accès sécurisé par le biais de points de terminaison privés Azure Networking. Avec les liaisons privées Azure et les points de terminaison privés, le trafic de données est envoyé en privé à l’aide de l’infrastructure réseau principale de Microsoft, ce qui signifie que les données ne transitent pas par Internet. 
 
 Les liaisons privées garantissent que les utilisateurs Power BI utilisent le segment principal du réseau privé Microsoft pour accéder aux ressources du service Power BI.
 
@@ -64,7 +64,7 @@ Les sections suivantes fournissent des informations supplémentaires pour chaque
 
 ## <a name="enable-private-links-for-power-bi"></a>Activer des liaisons privées pour Power BI
 
-Pour commencer, connectez-vous à Power BI sur app.powerbi.com en tant qu’administrateur, puis accédez au portail d’administration. Sélectionnez **Paramètres du locataire** et faites défiler le contenu jusqu’à **Mise en réseau avancée** , puis activez la case d’option pour activer **Azure Private Link** , comme illustré dans l’image suivante. 
+Pour commencer, connectez-vous à Power BI sur app.powerbi.com en tant qu’administrateur, puis accédez au portail d’administration. Sélectionnez **Paramètres du locataire** et faites défiler le contenu jusqu’à **Mise en réseau avancée**, puis activez la case d’option pour activer **Azure Private Link**, comme illustré dans l’image suivante. 
 
 La configuration d’une liaison privée pour un locataire prend environ 15 minutes, ce qui comprend la configuration d’un nom de domaine complet distinct pour le locataire qui permet la communication en mode privé avec les services Power BI.
 
@@ -122,14 +122,14 @@ L’étape suivante consiste à créer un réseau virtuel et un sous-réseau. Re
 | ```<subnet-name>```   | mySubnet |
 | ```<subnet-address-range>```  | 10.1.0.0/24 |
 
-1. En haut à gauche de l’écran, sélectionnez **Créer une ressource > Réseau > Réseau virtuel** , ou recherchez **Réseau virtuel** à partir de la zone de recherche.
-2. Dans **Créer un réseau virtuel** , entrez ou sélectionnez les informations suivantes sous l’onglet **Général**  :
+1. En haut à gauche de l’écran, sélectionnez **Créer une ressource > Réseau > Réseau virtuel**, ou recherchez **Réseau virtuel** à partir de la zone de recherche.
+2. Dans **Créer un réseau virtuel**, entrez ou sélectionnez les informations suivantes sous l’onglet **Général** :
 
     |Paramètres | Valeur |
     |-------------------|---------|
     |**Détails du projet**|
     |Abonnement | Sélectionner votre abonnement Azure |
-    |Groupe de ressources |   Sélectionnez **Créer** , entrez ```<resource-group-name>```, puis sélectionnez **OK** , ou sélectionnez un ```<resource-group-name>``` existant en fonction des paramètres. |
+    |Groupe de ressources |   Sélectionnez **Créer**, entrez ```<resource-group-name>```, puis sélectionnez **OK**, ou sélectionnez un ```<resource-group-name>``` existant en fonction des paramètres. |
     |**Détails de l’instance** |
     | Nom  | Entrez ```<virtual-network-name>``` |
     |Region | Sélectionnez ```<region-name>``` |
@@ -139,7 +139,7 @@ L’étape suivante consiste à créer un réseau virtuel et un sous-réseau. Re
     ![Créer un réseau virtuel, onglet Général](media/service-security-private-links/service-private-links-03.png)
 
 
-3. Maintenant, sélectionnez l’onglet **Adresses IP** , ou sélectionnez le **bouton Suivant : Adresses IP** au bas du formulaire. Sous l’onglet Adresses IP, entrez les informations suivantes :
+3. Maintenant, sélectionnez l’onglet **Adresses IP**, ou sélectionnez le **bouton Suivant : Adresses IP** au bas du formulaire. Sous l’onglet Adresses IP, entrez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -148,7 +148,7 @@ L’étape suivante consiste à créer un réseau virtuel et un sous-réseau. Re
     ![Créer un réseau virtuel, onglet Adresses IP](media/service-security-private-links/service-private-links-04.png)
     
 
-4. Dans **Nom du sous-réseau** , sélectionnez le mot *par défaut* , puis dans **Modifier le sous-réseau** , entrez les informations suivantes :
+4. Dans **Nom du sous-réseau**, sélectionnez le mot *par défaut*, puis dans **Modifier le sous-réseau**, entrez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -158,7 +158,7 @@ L’étape suivante consiste à créer un réseau virtuel et un sous-réseau. Re
     
     ![Créer un réseau virtuel, onglet Modifier le sous-réseau](media/service-security-private-links/service-private-links-05.png)
 
-5. Sélectionnez **Enregistrer** , puis sélectionnez l’onglet **Vérifier + créer** , ou sélectionnez le bouton **Vérifier + créer**. 
+5. Sélectionnez **Enregistrer**, puis sélectionnez l’onglet **Vérifier + créer**, ou sélectionnez le bouton **Vérifier + créer**. 
 
 6. Sélectionnez ensuite **Create** (Créer).
 
@@ -171,7 +171,7 @@ L’étape suivante consiste à créer un réseau virtuel et le sous-réseau où
 
 1. En haut à gauche de l’écran dans le portail Azure, sélectionnez **Créer une ressource > Calcul > Machine virtuelle**.
 
-2. Dans **Créer une machine virtuelle - Général** , entrez ou sélectionnez les informations suivantes :
+2. Dans **Créer une machine virtuelle - Général**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -194,8 +194,8 @@ L’étape suivante consiste à créer un réseau virtuel et le sous-réseau où
     |Vous disposez déjà d’une licence Windows ? |  Conservez la valeur par défaut **Non** |
 
 3. Ensuite, sélectionnez **Next: Disques**
-4. Dans **Créer une machine virtuelle - Disks** , conservez les valeurs par défaut et sélectionnez **Suivant : Mise en réseau**.
-5. Dans **Créer une machine virtuelle - Mise en réseau** , sélectionnez les informations suivantes :
+4. Dans **Créer une machine virtuelle - Disks**, conservez les valeurs par défaut et sélectionnez **Suivant : Mise en réseau**.
+5. Dans **Créer une machine virtuelle - Mise en réseau**, sélectionnez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -215,8 +215,8 @@ L’étape suivante consiste à créer un réseau virtuel et le sous-réseau où
 L’étape suivante, qui est décrite dans cette section, consiste à créer un point de terminaison privé pour Power BI.
 
 1. En haut à gauche de l’écran dans le portail Azure, sélectionnez **Créer une ressource > Mise en réseau > Centre de liaisons privées (préversion)** .
-2. Dans **Centre de liaisons privées - Vue d’ensemble** , dans l’option pour **Générer une connexion privée à un service** , sélectionnez **Créer un point de terminaison privé**.
-3. Dans **Créer un point de terminaison privé (préversion) - Général** , entrez ou sélectionnez les informations suivantes :
+2. Dans **Centre de liaisons privées - Vue d’ensemble**, dans l’option pour **Générer une connexion privée à un service**, sélectionnez **Créer un point de terminaison privé**.
+3. Dans **Créer un point de terminaison privé (préversion) - Général**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -231,7 +231,7 @@ L’étape suivante, qui est décrite dans cette section, consiste à créer un 
     
     ![Créer un point de terminaison privé, général](media/service-security-private-links/service-private-links-06.png)
 
-4. Une fois ces informations renseignées, sélectionnez **Suivant : Ressource** et, dans la page **Créer un point de terminaison privé - Ressource** , entrez ou sélectionnez les informations suivantes :
+4. Une fois ces informations renseignées, sélectionnez **Suivant : Ressource** et, dans la page **Créer un point de terminaison privé - Ressource**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -245,7 +245,7 @@ L’étape suivante, qui est décrite dans cette section, consiste à créer un 
     
     ![Créer un point de terminaison privé, ressource](media/service-security-private-links/service-private-links-07.png)
 
-5. Après avoir entré ces informations correctement, sélectionnez **Suivant : Configuration** et, dans **Créer un point de terminaison privé (préversion) - Configuration** , entrez ou sélectionnez les informations suivantes :
+5. Après avoir entré ces informations correctement, sélectionnez **Suivant : Configuration** et, dans **Créer un point de terminaison privé (préversion) - Configuration**, entrez ou sélectionnez les informations suivantes :
 
     |Paramètres | Valeur |
     |-------------------|---------|
@@ -260,11 +260,11 @@ L’étape suivante, qui est décrite dans cette section, consiste à créer un 
     
     ![Créer un point de terminaison privé, configuration](media/service-security-private-links/service-private-links-08.png)
     
-    Sélectionnez ensuite **Vérifier + créer** , qui affiche la page **Vérifier + créer** dans laquelle Azure valide votre configuration. Lorsque le message **Validation passed** (Validation réussie) apparaît, sélectionnez **Créer**.
+    Sélectionnez ensuite **Vérifier + créer**, qui affiche la page **Vérifier + créer** dans laquelle Azure valide votre configuration. Lorsque le message **Validation passed** (Validation réussie) apparaît, sélectionnez **Créer**.
 
 ## <a name="connect-to-a-vm-using-remote-desktop-rdp"></a>Se connecter à une machine virtuelle à l’aide du Bureau à distance (RDP)
 
-Une fois que vous avez créé votre machine virtuelle, appelée **myVm** , connectez-la à partir d’Internet en effectuant les étapes ci-dessous :
+Une fois que vous avez créé votre machine virtuelle, appelée **myVm**, connectez-la à partir d’Internet en effectuant les étapes ci-dessous :
 
 1. Dans la barre de recherche du portail, entrez *myVm*.
 2. Sélectionnez le bouton **Connexion**. La sélection du bouton **Connexion** entraîne l’ouverture de la page **Se connecter à la machine virtuelle**.
@@ -298,7 +298,7 @@ L’étape suivante consiste à accéder à Power BI en mode privé, à partir d
 
 Enfin, vous devez désactiver l’accès public pour Power BI. 
 
-Connectez-vous à app.powerbi.com en tant qu’administrateur, puis accédez au **portail d’administration**. Sélectionnez **Paramètres du locataire** et faites défiler le contenu jusqu’à la section **Mise en réseau avancée**. Activez le bouton bascule dans la section **Bloquer l’accès Internet public** , comme indiqué dans l’image suivante. Il faut environ 15 minutes au système pour désactiver l’accès de votre organisation à Power BI à partir de l’Internet public.
+Connectez-vous à app.powerbi.com en tant qu’administrateur, puis accédez au **portail d’administration**. Sélectionnez **Paramètres du locataire** et faites défiler le contenu jusqu’à la section **Mise en réseau avancée**. Activez le bouton bascule dans la section **Bloquer l’accès Internet public**, comme indiqué dans l’image suivante. Il faut environ 15 minutes au système pour désactiver l’accès de votre organisation à Power BI à partir de l’Internet public.
 
 Vous avez terminé ces étapes. Votre organisation a maintenant accès à Power BI uniquement à partir de liaisons privées et plus à partir de l’Internet public. 
 
@@ -310,6 +310,8 @@ Il y a plusieurs points à prendre en compte si vous utilisez des liaisons priv�
 * Les services d’exportation, comme Exporter en PDF, l’exportation vers Excel à partir d’un rapport et d’autres services d’exportation ne fonctionnent pas dans un environnement de liaison privée
 * Les rapports SQL Server Reporting Services, communément appelés fichiers RDL (fichiers au format *.rdl), ne peuvent pas être visualisés dans les environnements de liaison privée
 * Si l’accès à Internet est désactivé et que le jeu de données ou le flux de données se connecte à un jeu de données ou à un flux de données Power BI comme source de données, la connexion échoue.
+* Les métriques d’utilisation *ne fonctionnent pas* quand des liaisons privées sont activées
+* La publication sur le web est grisée (ce qui signifie qu’elle n’est pas prise en charge) quand vous activez **Bloquer l’accès Internet public** dans Power BI
 
 
 ## <a name="next-steps"></a>Étapes suivantes

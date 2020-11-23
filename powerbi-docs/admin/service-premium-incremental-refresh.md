@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/22/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 0e55aa6fbfc1fadb529c6c321d7d97d3f48d569d
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 6ca4257f73837b68d76734ea503e8f83e0d5ba49
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599052"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512950"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 
@@ -27,6 +27,10 @@ L’actualisation incrémentielle permet d’utiliser de très grands jeux de do
 
 > [!NOTE]
 > L’actualisation incrémentielle est maintenant disponible pour les abonnements et jeux de données Power BI Pro, Premium et partagés.
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Premium Gen2 améliore considérablement l’actualisation planifiée en activant la mise à l’échelle automatique pour éviter les conflits d’actualisation. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 
 ## <a name="configure-incremental-refresh"></a>Configurer une actualisation incrémentielle
 
@@ -248,3 +252,14 @@ Téléchargez et installez la dernière version de ALM Toolkit à partir du [ré
 
 [Connectivité des jeux de données avec le point de terminaison XMLA](service-premium-connect-tools.md)   
 [Scénarios de résolution de problèmes liés à l’actualisation](../connect-data/refresh-troubleshooting-refresh-scenarios.md)
+
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

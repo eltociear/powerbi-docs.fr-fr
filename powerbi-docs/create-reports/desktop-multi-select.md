@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1e6ec9c6f6195f69af67da4ffbf1d0428b0fc2
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 7fcda945c374ba5384bd936b94db67a3ccd3ace1
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257050"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94559801"
 ---
 # <a name="multi-select-data-elements-data-points-and-visuals-in-power-bi-desktop"></a>Multisélection d’éléments de données, de points de données et de visuels à l’aide de Power BI Desktop
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur cette fonctionnalité, consultez le [billet de bl
 
 Il existe quelques limitations et considérations relatives à la sélection multiple de points de données dans un visuel :
 
-* Les graphiques en courbes, aires, nuages de points et treemaps prennent en charge la sélection par lasso
+* Les graphiques en courbes, aires, nuages de points, les treemaps et les cartes prennent en charge la sélection par lasso
 * Le nombre maximal de points de données que vous pouvez sélectionner simultanément est de 300
 * Lorsque vous affichez un rapport dans le service Power BI, le rectangle de sélection est activé uniquement si la fonctionnalité de sélection par lasso a été activée lors de l’enregistrement et de la publication du rapport
 

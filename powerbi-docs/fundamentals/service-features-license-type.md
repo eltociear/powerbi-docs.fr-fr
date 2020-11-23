@@ -6,28 +6,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 11/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: 8d173c622b47c2d0cc64fba118f168de7193541e
-ms.sourcegitcommit: 3f864ec22f99ca9e25cda3a5abda8a5f69ccfa8e
+ms.openlocfilehash: 48e382db2866187f4394cf8a60789604f3d900b7
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84160085"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512789"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Fonctionnalités du service Power BI par type de licence
 
-Il existe deux types de licences Power BI par utilisateur : gratuite et Pro. Le type de licence nécessaire pour un utilisateur est déterminé par l’endroit où le contenu est stocké et par les interactions souhaitées avec ce contenu. L’emplacement de stockage dépend du [type d’abonnement](#subscriptions-and-license-types) de l’organisation.
+Il existe deux types de licences Power BI par utilisateur : gratuite et Pro. Le type de licence nécessaire pour un utilisateur est déterminé par l’endroit où le contenu est stocké et par les interactions souhaitées avec ce contenu. L’emplacement de stockage dépend du [type de licence](#licenses-and-license-types) de l’organisation.
 
-## <a name="subscriptions-and-license-types"></a>Abonnements et types de licences
+## <a name="licenses-and-license-types"></a>Licences et types de licences
 
-Il existe un type d’abonnement, [Power BI Premium](../admin/service-admin-premium-purchase.md), qui permet aux utilisateurs disposant d’une licence gratuite d’agir sur le contenu des espaces de travail de capacité Premium. En dehors de la capacité Premium, un utilisateur disposant d’une licence gratuite ne peut utiliser le service Power BI que pour se connecter aux données et créer des rapports et des tableaux de bord dans **Mon espace de travail**. Il ne peut pas partager du contenu avec d’autres personnes ni en publier sur d’autres espaces de travail. Pour en savoir plus sur les types d’espaces de travail, consultez [Types des espaces de travail](../consumer/end-user-workspaces.md#types-of-workspaces). Pour découvrir plus d’informations sur Power BI Premium, consultez [Qu’est-ce que Power BI Premium ?](../admin/service-premium-what-is.md)
+La licence basée sur la capacité [Power BI Premium](../admin/service-admin-premium-purchase.md) permet aux utilisateurs disposant d’une licence gratuite d’agir sur le contenu dans les espaces de travail affectés à la capacité Premium. En dehors de la capacité Premium, un utilisateur disposant d’une licence gratuite ne peut utiliser le service Power BI que pour se connecter aux données et créer des rapports et des tableaux de bord dans **Mon espace de travail**. Il ne peut pas partager du contenu avec d’autres personnes ni en publier sur d’autres espaces de travail. Pour en savoir plus sur les types d’espaces de travail, consultez [Types des espaces de travail](../consumer/end-user-workspaces.md#types-of-workspaces). Pour découvrir plus d’informations sur Power BI Premium, consultez [Qu’est-ce que Power BI Premium ?](../admin/service-premium-what-is.md)
 
-Un abonnement Power BI standard utilise la capacité partagée. Si le contenu est stocké dans une capacité partagée, les utilisateurs disposant d’une licence Power BI Pro ne peuvent collaborer qu’avec d’autres utilisateurs Power BI Pro. Ils ont la possibilité de consommer du contenu publié par d’autres personnes, de publier du contenu sur des espaces de travail d’application, de partager des tableaux de bord et de s’abonner à des tableaux de bord et à des rapports.  Quand les espaces de travail sont en capacité Premium, les utilisateurs Pro peuvent distribuer du contenu à des utilisateurs dépourvus de licence Power BI Pro.
+Une licence Power BI avec des licences par utilisateur gratuites et Pro utilise uniquement une capacité partagée et limitée pour traiter le contenu. Si le contenu est stocké dans cette capacité partagée, les utilisateurs disposant d’une licence Power BI Pro ne peuvent collaborer qu’avec d’autres utilisateurs Power BI Pro. Ils ont la possibilité de consommer du contenu publié par d’autres personnes, de publier du contenu sur des espaces de travail d’application, de partager des tableaux de bord et de s’abonner à des tableaux de bord et à des rapports.  Quand les espaces de travail sont en capacité Premium, les utilisateurs Pro peuvent distribuer du contenu à des utilisateurs dépourvus de licence Power BI Pro.
 
-Le tableau ci-dessous récapitule les fonctionnalités de base de chaque type de licence.
+Si vous utilisez des licences Premium par utilisateur, le contenu créé par un utilisateur disposant d’une telle licence peut uniquement être partagé avec d’autres utilisateurs disposant d’une licence Premium, à moins que ce contenu soit spécifiquement placé dans un espace de travail hébergé sur une capacité Premium. Le tableau ci-dessous récapitule les fonctionnalités de base de chaque type de licence. 
 
 | Type de licence | Fonctionnalités lorsque l’espace de travail est en capacité partagée | Fonctionnalités supplémentaires lorsque l’espace de travail est en capacité Premium |
 | --------- | ----------- | ----------- |
@@ -42,3 +42,14 @@ Pour découvrir plus d’informations sur les fonctionnalités fournies par votr
 
 * [S’inscrire au service Power BI en tant que personne individuelle](service-self-service-signup-for-power-bi.md)
 * [Comparaison de Power BI Desktop et du service Power BI](service-service-vs-desktop.md)
+
+
+Introduit par Power BI sous forme d’offre en préversion, Power BI Premium Gen2 améliore l’expérience Power BI Premium dans les domaines suivants :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Réduction de la surcharge de gestion
+
+Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](../admin/service-premium-what-is.md#power-bi-premium-generation-2-preview).

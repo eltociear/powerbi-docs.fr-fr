@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/07/2020
+ms.date: 11/17/2020
 ms.author: davidi
-ms.openlocfilehash: 3cce51ad577c700a0f9595a2b92694e5e1b61cc5
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 11f9db0282cd0b302c5293ca59dd44c87dcdb955
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397389"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719049"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
@@ -62,7 +62,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Dossier | Oui | Oui | Non | Oui | Oui | Oui |
 | GitHub | Oui | Oui | Non | Non | Non | Non |
 | Google Analytics | Oui | Oui | Non | Non | Non | Non |
-| Google BigQuery | Oui | Oui | Oui | Non | Non | Oui |
+| Google BigQuery | Oui | Oui | Oui | Oui | Non | Oui |
 | Fichier Hadoop (HDFS) | Oui | Non | Non | Non | Non | Non |
 | LLAP Hive | Oui | Oui | Oui | Oui | Non | Non |
 | HDInsight Interactive Query | Oui | Oui | Oui | Non | Non | Non |
@@ -148,7 +148,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 
 <sup>6</sup> Requis pour les bases de données Access, .html et .xls
 
-<sup>7</sup> Le service Power BI ne prend pas en charge les flux OData qui requièrent une authentification.
+<sup>7</sup> Le service Power BI ne prend pas en charge le protocole OAuth2 générique.
 
 <sup>8</sup> Paxata est pris en charge dans la version de Power BI Desktop optimisée pour Power BI Report Server. Il n’est pas pris en charge dans les rapports Power Bi publiés sur le Power Bi Report Server. Pour obtenir une liste des sources de données prises en charge, consultez [Sources de données de rapports Power BI dans Power BI Report Server](../report-server/data-sources.md).
 

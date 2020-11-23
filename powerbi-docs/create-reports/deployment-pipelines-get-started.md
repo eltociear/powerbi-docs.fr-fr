@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
-ms.openlocfilehash: 8f486d1f872aec8eaec096bf01d5d36a314c5cef
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 11/11/2020
+ms.openlocfilehash: ca588c50052ed4950b2f283ee8294098dd36a8ef
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855759"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669129"
 ---
 # <a name="get-started-with-deployment-pipelines"></a>Bien démarrer avec les pipelines de déploiement
 
@@ -23,11 +23,13 @@ Cet article vous guide tout à travers les paramètres de base requis pour l’u
 
 Vous pouvez accéder à la fonctionnalité de pipelines de déploiement si les conditions suivantes sont remplies :
 
-* Vous êtes un [utilisateur Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md)
+* Vous disposez de l’une des licences Premium suivantes :
 
-* Vous appartenez à une organisation qui dispose d’une capacité Premium
+    * Vous êtes [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) de Power BI et vous appartenez à une organisation qui dispose d’une capacité Premium.
 
-* Vous êtes administrateur d’une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md)
+    * [Premium par utilisateur (PPU)](../admin/service-premium-per-user-faq.md).
+
+* Vous êtes administrateur d’une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > Vous pouvez également voir le bouton de pipelines de déploiement si vous avez déjà créé un pipeline ou si un pipeline a été partagé avec vous.
@@ -60,7 +62,7 @@ Il est possible de créer un pipeline à partir d’un espace de travail existan
 2. Dans la boîte de dialogue *Créer un pipeline de déploiement*, entrez un nom et une description pour le pipeline, puis sélectionnez **Créer**.
 
 >[!NOTE]
->Si l’espace de travail n’est pas affecté à la capacité Premium de votre organisation, vous recevrez une notification vous invitant à [l’affecter à une capacité](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
+>Si l’espace de travail n’est pas affecté à la capacité Premium de votre organisation ou à votre capacité PPU, vous recevrez une notification vous invitant à [l’affecter à une capacité](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## <a name="step-2---assign-a-workspace-to-a-deployment-pipeline"></a>Étape 2 : Affecter un espace de travail à un pipeline de déploiement
 
@@ -124,7 +126,7 @@ Pour déployer uniquement certains éléments, sélectionnez le lien **Afficher 
 
 Vous pouvez choisir de déployer à une étape précédente, par exemple dans un scénario où vous affectez un espace de travail existant à une étape de production, puis le déployez en arrière, d’abord sur l’étape de test, puis sur celle de développement.
 
-Le déploiement sur une étape précédente ne fonctionne que si l’étape précédente est vide de contenu. Lors du déploiement à l’étape précédente, vous ne pouvez pas sélectionner d’éléments spécifiques. Tout le contenu de la phase sera déployé.
+Le déploiement sur une étape précédente ne fonctionne que si l’étape précédente est vide. Lors du déploiement à une étape précédente, vous ne pouvez pas sélectionner d’éléments spécifiques. Tout le contenu de la phase sera déployé.
 
 [![Capture d’écran montrant le bouton Déployer sur une phase précédente, disponible dans les menus de la phase de test ou de production.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
@@ -134,7 +136,7 @@ Lorsque vous travaillez dans un pipeline de déploiement, différentes étapes p
 
 Lorsque vous déployez du contenu entre étapes du pipeline, la configuration des règles de jeu de données vous permet d’autoriser les modifications apportées au contenu, tout en conservant les paramètres intacts.
 
-Les règles de jeu de données sont définies sur les sources de données et les paramètres dans chaque jeu de données. Elles déterminent les valeurs des sources de données ou des paramètres pour un jeu de données spécifique. Par exemple, si vous souhaitez qu’un jeu de données dans une étape de production pointe vers une base de données de production, vous pouvez définir une règle pour cela. La règle est définie à l’étape de production, sous le jeu de données approprié. Une fois la règle définie, le contenu déployé du test en production hérite de la valeur telle qu’elle est définie dans les règles du jeu de données et s’applique toujours tant que la règle est inchangée et valide.
+Les règles de jeu de données sont définies sur les sources de données et les paramètres dans chaque jeu de données. Elles déterminent les valeurs des sources de données ou des paramètres pour un jeu de données spécifique. Par exemple, si vous souhaitez qu’un jeu de données dans une étape de production pointe vers une base de données de production, vous pouvez définir une règle pour cela. La règle est définie à l’étape de production, sous le jeu de données approprié. Une fois la règle définie, le contenu déployé du test en production hérite de la valeur telle qu’elle est définie dans la règle du jeu de données et s’applique toujours tant que la règle est inchangée et valide.
 
 >[!NOTE]
 > Les règles de jeu de données fonctionnent uniquement lorsque la source de données source et la source de données cible sont du même type.

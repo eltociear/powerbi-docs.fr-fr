@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 11/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05df39b58334b33046fde0f95b9f1ca596c1eec1
-ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
+ms.openlocfilehash: 0f6f4cdb221773218c945e7f800d569c73a9a130
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84120555"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718980"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>À propos de l’utilisation de DirectQuery dans Power BI
 
@@ -165,6 +165,7 @@ Presque toutes les fonctionnalités de rapports sont prises en charge pour les m
 * **Quick Insights n’est pas pris en charge :** Power BI Quick Insights effectue des recherches rapides dans différents sous-ensembles de votre jeu de données tout en appliquant un jeu d’algorithmes sophistiqués pour détecter les informations potentiellement intéressantes. Étant donné la nécessité de performances très élevées des requêtes, cette fonctionnalité n’est pas disponible sur des jeux de données en mode DirectQuery.
 * **La fonctionnalité Questions et réponses n’est pas pris en charge :** la fonctionnalité Questions et réponses de Power BI vous permet d’explorer vos données à l’aide de fonctionnalités intuitives du langage naturel et de recevoir des réponses sous la forme de graphiques et de diagrammes. Toutefois, elle n’est actuellement pas prise en charge sur des jeux de données en mode DirectQuery.
 * **L’exploration dans Excel risque d’entraîner une dégradation des performances :** vous pouvez explorer vos données en utilisant la fonctionnalité « Explorer dans Excel » sur un jeu de données. Cette approche permet de créer des tableaux croisés dynamiques et des graphiques croisés dynamiques dans Excel. Quand cette fonctionnalité est prise en charge sur des jeux de données en mode DirectQuery, les performances sont généralement plus lentes que celles de la création de visuels dans Power BI. Ainsi, si l’utilisation d’Excel est importante pour vos scénarios, vous devez en tenir compte avant de décider d’utiliser DirectQuery.
+* **Longueur maximale des colonnes de texte :** La longueur maximale des données dans une colonne de texte pour les jeux de données utilisant DirectQuery est de 32 764 caractères. La création de rapports sur des textes plus longs génère une erreur.
 
 ### <a name="security"></a>Sécurité
 

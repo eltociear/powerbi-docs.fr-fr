@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3454a10269937d6e03151a64bba6695cc37fcd66
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 36bbf9fcc8bcd74c46f15ebcf9bd04e86cc4a2c9
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396331"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512329"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
-Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour  **[IA (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** , **[Flux de données](../transform-model/dataflows/dataflows-introduction-self-service.md)** et **[Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
+Cet article décrit comment activer et configurer des charges de travail pour les capacités Power BI Premium. Par défaut, les capacités prennent en charge uniquement la charge de travail qui est associée aux requêtes Power BI en cours d’exécution. Vous pouvez également activer et configurer des charges de travail supplémentaires pour **[IA (Cognitive Services)](../transform-model/dataflows/dataflows-machine-learning-integration.md)** , **[Flux de données](../transform-model/dataflows/dataflows-introduction-self-service.md)** et **[Rapports paginés](../paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -31,7 +34,13 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 | **Dataflows**         | 40 % par défaut ; 40 % minimum  | 24 % par défaut ; 24 % minimum  | 20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum  | 20 % par défaut ; 2 % minimum   |
 | **Rapports paginés** | Non pris en charge               | Non pris en charge               | Non pris en charge               | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 2,5 % minimum |
 
+> [!NOTE]
+> **Premium Gen2**, actuellement en préversion, ne nécessite pas de modification des paramètres de mémoire. La mémoire dans Premium Gen2 est gérée automatiquement par le système sous-jacent. 
+
+
 ## <a name="workload-settings"></a>Paramètres de charge de travail
+
+Les sections suivantes traitent en détail des paramètres de charge de travail décrits dans le tableau précédent. 
 
 ### <a name="ai-preview"></a>IA (Préversion)
 
@@ -185,9 +194,9 @@ Optimisez les ressources disponibles de votre capacité en activant uniquement l
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Pour configurer des charges de travail dans le portail d’administration Power BI
 
-1. Dans **Paramètres de capacité** > **CAPACITÉS PREMIUM** , sélectionnez une capacité.
+1. Dans **Paramètres de capacité** > **CAPACITÉS PREMIUM**, sélectionnez une capacité.
 
-1. Sous **PLUS D’OPTIONS** , développez **Charges de travail**.
+1. Sous **PLUS D’OPTIONS**, développez **Charges de travail**.
 
 1. Activez une ou plusieurs charges de travail, puis définissez une valeur pour **Mémoire maximale** et d’autres paramètres.
 
@@ -214,3 +223,13 @@ L’[application Métriques de capacité Power BI Premium](service-admin-premium
 [Actualisation automatique des pages dans Power BI Desktop (préversion)](../create-reports/desktop-automatic-page-refresh.md)
 
 D’autres questions ? [Poser des questions à la communauté Power BI](https://community.powerbi.com/)
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

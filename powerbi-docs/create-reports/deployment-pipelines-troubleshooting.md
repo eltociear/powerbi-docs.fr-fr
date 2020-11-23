@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
-ms.openlocfilehash: 929a79d7e940f729b90d0cdf6d3ebd905a621f6a
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.date: 11/11/2020
+ms.openlocfilehash: 141364664b6608b252fc2be8620226ae8d9ce39b
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916817"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668623"
 ---
 # <a name="deployment-pipelines-troubleshooting"></a>Résolution des problèmes des pipelines de déploiement
 
@@ -20,7 +20,7 @@ Utilisez cet article pour résoudre les problèmes liés aux pipelines de déplo
 
 ## <a name="general"></a>Général
 
-### <a name="whats-deployment-pipelines-in-power-bi"></a>Pipelines de déploiement dans Power BI
+### <a name="whats-deployment-pipelines-in-power-bi"></a>Que sont les pipelines de déploiement dans Power BI ?
 
 Pour comprendre les pipelines de déploiement dans Power BI, reportez-vous à la [présentation des pipelines de déploiement](deployment-pipelines-overview.md).
 
@@ -32,15 +32,15 @@ Commencez à utiliser les pipelines de déploiement à l’aide de nos [instruct
 
 Si les conditions suivantes ne sont pas remplies, vous ne pourrez pas voir le bouton de pipelines de déploiement.
 
-* Vous êtes un [utilisateur Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md)
+* Vous disposez de l’une des licences Premium suivantes :
 
-* Vous appartenez à une organisation qui dispose d’une capacité Premium
+    * Vous êtes [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) de Power BI et vous appartenez à une organisation qui dispose d’une capacité Premium.
 
-* Un espace de travail ne peut être affecté qu’à un seul pipeline
+    * [Premium par utilisateur (PPU)](../admin/service-premium-per-user-faq.md).
 
-* Vous êtes administrateur d’un nouvel espace de travail
+* Vous êtes administrateur d’une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md).
 
-### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Pourquoi la balise de phase de pipeline n’apparaît-elle pas dans mon espace de travail ?
+### <a name="why-cant-i-see-the-pipeline-stage-tag-in-my-workspace"></a>Pourquoi la balise de phase de pipeline n’apparaît pas dans mon espace de travail ?
 
 Les pipelines de déploiement présentent une balise de phase de pipeline dans les espaces de travail qui leur sont affectés. Les balises des phases *Développement* et *Test* sont toujours visibles. Toutefois, la balise *Production* n’apparaît que si vous avez [accès au pipeline](deployment-pipelines-process.md#user-with-pipeline-access) ou si vous êtes [administrateur d’espace de travail](deployment-pipelines-process.md#workspace-admin).
 
@@ -51,15 +51,24 @@ Les pipelines de déploiement présentent une balise de phase de pipeline dans l
 
 ### <a name="what-licenses-are-needed-to-work-with-deployment-pipelines"></a>Quelles sont les licences nécessaires pour travailler avec les pipelines de déploiement ?
 
-Pour utiliser les pipelines de déploiement, vous devez être un [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) avec une [capacité Premium](../admin/service-premium-what-is.md). Pour plus d’informations, consultez [Accès aux pipelines de déploiement](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+Pour utiliser les pipelines de déploiement, vous devez disposer de l’une des licences suivantes :
+
+* Une licence d’[utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md), avec un espace de travail qui réside sur une [capacité Premium](../admin/service-premium-what-is.md).
+
+* [Premium par utilisateur (PPU)](../admin/service-premium-per-user-faq.md).
+
+Pour plus d’informations, consultez [Accès aux pipelines de déploiement](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
 
 ### <a name="what-type-of-capacity-can-i-assign-to-a-workspace-in-a-pipeline"></a>Quel type de capacité puis-je attribuer à un espace de travail dans un pipeline ?
 
 Tous les espaces de travail d’un pipeline de déploiement doivent se trouver dans une capacité pour que le pipeline soit fonctionnel. Toutefois, vous pouvez utiliser différentes capacités pour différents espaces de travail dans un pipeline. Vous pouvez également utiliser différents types de capacité pour différents espaces de travail dans le même pipeline.
 
-Pour le développement et les tests, vous pouvez utiliser une capacité A ou EM en plus d’un compte Power BI Pro pour chaque utilisateur.
+Pour le développement et les tests, vous pouvez utiliser une capacité A ou EM en plus d’un compte Power BI Pro pour chaque utilisateur. Vous pouvez également utiliser un PPU pour chaque utilisateur dans les étapes de développement et de test.
 
-Pour les espaces de travail de production, vous avez besoin d’une capacité P. Si vous êtes un éditeur de logiciels indépendant distribuant du contenu via des applications incorporées, vous pouvez également utiliser les capacités A ou EM pour la production.
+Pour les espaces de travail de production, vous avez besoin d’une capacité P. Si vous êtes un éditeur de logiciels indépendant distribuant du contenu via des applications incorporées, vous pouvez également utiliser les capacités A ou EM pour la production. Des PPU peuvent également être utilisés pour des espaces de travail de production.
+
+>[!NOTE]
+>Quand vous créez un espace de travail avec un PPU, seuls les autres utilisateurs PPU peuvent accéder à cet espace de travail et consommer son contenu.
 
 ## <a name="technical"></a>Technique
 
@@ -87,7 +96,7 @@ Votre premier déploiement peut avoir échoué pour plusieurs raisons. Certaines
 
 |Erreur  |Action  |
 |---------|---------|
-|Vous n’avez pas [d’autorisations de capacité Premium](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |Pour obtenir des autorisations de capacité Premium, demandez à un administrateur de capacité d’ajouter votre espace de travail à une capacité ou demandez l’attribution d’autorisations pour la capacité. Une fois que l’espace de travail est dans une capacité, redéployez-le.        |
+|Vous n’avez pas [d’autorisations de capacité Premium](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |Si vous travaillez dans une organisation qui dispose d’une capacité Premium, demandez à un administrateur de capacité d’ajouter votre espace de travail à une capacité ou demandez l’attribution d’autorisations pour la capacité. Une fois que l’espace de travail est dans une capacité, redéployez-le.</br></br>Si vous ne travaillez pas dans une organisation dotée d’une capacité Premium, envisagez l’achat de [Premium par utilisateur (PPU)](../admin/service-premium-per-user-faq.md).        |
 |Vous n’avez pas les autorisations d’espace de travail.     |Vous devez être membre de l’espace de travail pour pouvoir effectuer le déploiement. Demandez à votre administrateur d’espace de travail de vous accorder les autorisations appropriées.         |
 |Votre administrateur Power BI a désactivé la création d’espaces de travail.     |Contactez votre administrateur Power BI pour obtenir de l’aide.         |
 |Votre espace de travail n’est pas une [nouvelle expérience d’espace de travail](../collaborate-share/service-create-the-new-workspaces.md).     |Créez votre contenu dans la nouvelle expérience d’espace de travail. Si vous disposez de contenu dans un espace de travail classique, vous pouvez le [mettre à niveau](../collaborate-share/service-upgrade-workspaces.md) vers une nouvelle expérience d’espace de travail.         |
@@ -152,9 +161,9 @@ Le modèle d’autorisations de pipelines de déploiement est décrit dans la se
 
 Le contenu peut être déployé sur une étape vide ou une étape qui contient du contenu. Le contenu doit résider sur une [capacité Premium](../admin/service-premium-what-is.md).
 
-* **Déploiement sur une étape vide** : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre ou administrateur dans l’espace de travail source.
+* **Déploiement sur une étape vide** : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) ou utilisateur [PPU](../admin/service-premium-per-user-faq.md) qui est membre ou administrateur dans l’espace de travail source.
 
-* **Déploiement sur une étape avec du contenu**  : n’importe quel [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre ou administrateur des deux espaces de travail dans les étapes de déploiement source et cible.
+* **Déploiement sur une étape avec du contenu** : n’importe quel utilisateur [Pro](../admin/service-admin-purchasing-power-bi-pro.md) ou [PPU](../admin/service-premium-per-user-faq.md) qui est membre ou administrateur des deux espaces de travail dans les étapes de déploiement source et cible.
 
 * **Substitution d’un jeu de données** : le déploiement remplace chaque jeu de données inclus dans l’étape cible, même si le jeu de données n’a pas été modifié. L’utilisateur doit être le propriétaire de tous les jeux de données de la phase cible spécifiés dans le déploiement.
 

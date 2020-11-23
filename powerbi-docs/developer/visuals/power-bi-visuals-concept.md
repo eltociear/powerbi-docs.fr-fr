@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 94926ccf0fa214ca4c65808a7476842c22308359
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 8971c07b39de5b01b945218659fb8ead711c3f3c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92048852"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94511938"
 ---
 # <a name="power-bi-visuals-system-integration"></a>Intégration du système de visuels Power BI
 
@@ -92,7 +92,7 @@ Les actions et les mises à jour suivantes dans les visuels Power BI surviennen
 
 * Un utilisateur modifie les propriétés du visuel. (Par exemple, un utilisateur développe une arborescence et le visuel enregistre l’état dans ses propriétés.)
 
-    Un visuel peut enregistrer des valeurs de propriétés via l’API Power BI. Par exemple, lorsqu’un utilisateur interagit avec le visuel et que ce dernier doit enregistrer ou mettre à jour des valeurs de propriétés, le visuel peut appeler la méthode `presistProperties`.
+    Un visuel peut enregistrer des valeurs de propriétés par le biais de l’API Power BI. Par exemple, lorsqu’un utilisateur interagit avec le visuel et que ce dernier doit enregistrer ou mettre à jour des valeurs de propriétés, le visuel peut appeler la méthode `presistProperties`.
 
 * Un utilisateur sélectionne une URL.
 

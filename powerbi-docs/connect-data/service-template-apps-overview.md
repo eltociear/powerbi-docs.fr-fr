@@ -8,12 +8,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 432f05ed7efe8438d21a285b732ead08d93b8732
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 773f812ebaeabf02e9a21f09ac5a143d431fbeb0
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349388"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718911"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
@@ -111,7 +111,7 @@ Consultez [Conseils pour créer des applications modèles dans Power BI](service
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
 | Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
-| Paramètres de la requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
+| Paramètres de la requête | Non pris en charge : Les paramètres de type « Any », « Date » ou « Binary » bloquent l’opération d’actualisation pour le jeu de données |
 | Visuels Power BI | Seuls les visuels Power BI disponibles publiquement sont pris en charge. Les [visuels Power BI organisationnels](../developer/visuals/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 | Clouds souverains | Les applications modèles ne sont pas disponibles dans les clouds souverains |
 

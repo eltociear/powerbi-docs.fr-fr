@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/15/2019
+ms.date: 11/17/2020
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3f3dd39953ad382ab934bf87021123b949733fd
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: bb61f752891205a0e8997592d522efb2022a562b
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85237050"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94719026"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Gérer votre source de données – Importation/Actualisation planifiée
 
@@ -62,12 +62,11 @@ Si vous êtes listé sous l’onglet **Utilisateurs** de la source de données c
 
 ![Affichage des utilisateurs](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
+> [!IMPORTANT]
+> Après republication, le propriétaire du jeu de données doit réassocier le jeu de données à une passerelle et à la source de données correspondante. L’association précédente n’est pas conservée après la republication. 
+
 > [!WARNING]
 > Si votre jeu de données contient plusieurs sources de données, chaque source de données doit être ajoutée au sein de la passerelle. Si une ou plusieurs sources de données ne sont pas ajoutées à la passerelle, celle-ci n’apparaît pas comme disponible pour l’actualisation planifiée.
-
-## <a name="limitations"></a>Limites
-
-OAuth n’est pas un schéma d’authentification pris en charge avec la passerelle de données locale. Vous ne pouvez pas ajouter des sources de données qui nécessitent OAuth. Si votre jeu de données contient une source de données nécessitant OAuth, vous ne pourrez pas utiliser la passerelle pour une actualisation planifiée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

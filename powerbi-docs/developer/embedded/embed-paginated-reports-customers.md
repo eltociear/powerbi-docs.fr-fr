@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: 2c06464999192e71c2d398f41b7b96e8fa4a169b
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 58d1112dfccda798a32b2a3cb95d72c37b7a16ec
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983479"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668393"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients
 
@@ -40,6 +40,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 > [!IMPORTANT]
 > * Vous devez utiliser un **principal de service**. L’utilisateur maître n’est pas pris en charge.
+>* [Premium par utilisateur (PPU)](../../admin/service-premium-per-user-faq.md) n’est pas pris en charge. Vous pouvez utiliser PPU pour expérimenter la solution, mais vous ne pourrez pas [passer en production](embed-sample-for-customers.md#move-to-production).
 > * Les sources de données qui nécessitent l’authentification unique ne sont pas prises en charge. Pour obtenir la liste des jeux de données pris en charge et leurs méthodes d’authentification, consultez [Sources de données prises en charge pour les rapports paginés Power BI](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Un jeu de données Power BI n’est pas pris en charge comme [source de données](../../connect-data/service-get-data.md).
 
@@ -205,7 +206,7 @@ Même si les étapes permettant d’incorporer vos rapports paginés Power BI s
 
 L’incorporation de rapports paginés Power BI pour vos clients dans votre application vous demande de disposer d’un [principal de service](embed-service-principal.md) **Azure AD** et d’obtenir un [jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI, avant d’effectuer des appels aux [API REST Power BI](/rest/api/power-bi/).
 
-Pour créer le client Power BI avec votre **jeton d’accès**, créez un objet client Power BI pour interagir avec les [API REST Power BI](/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI ***Microsoft.Rest.TokenCredentials***.
+Pour créer le client Power BI avec votre **jeton d’accès**, créez un objet client Power BI pour interagir avec les [API REST Power BI](/rest/api/power-bi/). Pour cela, wrappez l’élément **AccessToken** avec un objet client Power BI **_Microsoft.Rest.TokenCredentials_* _.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -227,7 +228,7 @@ Vous pouvez utiliser l’objet client Power BI pour récupérer une référence 
 
 Voici un exemple de code montrant comment récupérer le premier rapport à partir d’un espace de travail donné.
 
-*Un exemple d’obtention d’un élément de contenu, qu’il s’agisse d’un rapport, d’un tableau de bord ou d’une vignette à incorporer, est disponible dans le fichier Services\EmbedService.cs dans l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+_Un exemple d’obtention d’un élément de contenu, qu’il s’agisse d’un rapport, d’un tableau de bord ou d’une vignette à incorporer, est disponible dans le fichier Services\EmbedService.cs dans l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -244,7 +245,7 @@ Report report = reports.Value.FirstOrDefault();
 
 Générez un jeton d’incorporation qui peut être utilisé à partir de l’API JavaScript. Pour créer un jeton incorporé pour l’incorporation de rapports paginés Power BI, utilisez l’API [GenerateTokenInGroup pour les rapports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
-Un exemple de création d’un jeton d’incorporation est disponible dans le fichier  *Services\EmbedService.cs* de l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).
+Un exemple de création d’un jeton d’incorporation est disponible dans le fichier *Services\EmbedService.cs* de l’[exemple d’application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;

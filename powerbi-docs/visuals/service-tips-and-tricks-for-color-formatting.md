@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/29/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bce798e07a3bdac0ba52f56e9ddf7eac72087924
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 6f64db7be452cf5873a862f378f558bc4f177c56
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483951"
+ms.locfileid: "94513072"
 ---
 # <a name="tips-and-tricks-for-formatting-in-reports"></a>Conseils et astuces pour la mise en forme dans les rapports
 
@@ -40,12 +40,12 @@ Pour apporter des changements, vous devez disposer d’autorisations de modifica
 
 Quand les volets **Filtres** et **Visualisations** s’affichent sur le côté droit du canevas de rapport, vous pouvez commencer la personnalisation. Si les volets ne s’affichent pas, sélectionnez la flèche située en haut à droite pour les ouvrir.
 
-![canevas de rapport en mode Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![canevas de rapport en mode Edition](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-filter.png)
 
 ## <a name="apply-a-theme"></a>Appliquer un thème
 Avec les thèmes de rapport, vous pouvez appliquer des changements de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en changeant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Quand vous appliquez un thème de rapport, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Pour en savoir plus, consultez [Utiliser les thèmes de rapport](../create-reports/desktop-report-themes.md).
 
-![Changer l’icône de thème dans la barre de menus](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
+![Changer l’icône de thème dans la barre de menus](media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png)
 
 Ici, nous avons appliqué le thème **Innover** au rapport Ventes et marketing.
 
@@ -56,13 +56,13 @@ Parfois, il peut être nécessaire de mettre en évidence un point de données p
 
 La visualisation suivante classe les unités vendues par segment de produit. 
 
-![Remplacer les couleurs des données par du gris](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
+![Remplacer les couleurs des données par du gris](media/service-tips-and-tricks-for-color-formatting/power-bi-format.png)
 
 Maintenant imaginez que vous souhaitez appeler le segment **Convenience** pour afficher les performances de ce tout nouveau segment, à l’aide de la couleur. Voici les étapes à suivre :
 
 Développez la carte **Couleurs des données**, puis positionnez le curseur **Tout afficher** sur Activé. Cela affiche les couleurs de chaque élément de données de la visualisation. Vous pouvez maintenant modifier les points de données de votre choix.
 
-![Volet Mise en forme avec Tout afficher activé](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Volet Mise en forme avec Tout afficher activé](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
 Définissez **Convenience** sur la couleur orange. 
 
@@ -84,9 +84,9 @@ Il est souvent utile de définir les couleurs d’une visualisation de façon dy
 Les sections suivantes présentent différentes manières de baser les couleurs sur une valeur numérique.
 
 ### <a name="base-the-color-of-data-points-on-a-value"></a>Baser la couleur des points de données sur une valeur
-Pour changer la couleur en fonction d’une valeur, sélectionnez une visualisation pour l’activer. Ouvrez le volet Mise en forme en sélectionnant l’icône représentant un rouleau, puis ouvrez la carte **Couleurs des données**. Pointez le curseur sur une carte, puis sélectionnez les trois points verticaux qui s’affichent et choisissez **Mise en forme conditionnelle**.  
+Pour changer la couleur en fonction d’une valeur, sélectionnez une visualisation pour l’activer. Ouvrez le volet Mise en forme en sélectionnant l’icône représentant un rouleau, puis choisissez la carte **Couleurs des données**. Sous **Couleur par défaut**, sélectionnez l’icône fx.  
 
-![sélectionner l’option de mise en forme conditionnelle en cliquant sur les trois points verticaux](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
+![sélectionner l’option de mise en forme conditionnelle en cliquant sur les trois points verticaux](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional.png)
 
 Dans le volet **Couleur par défaut**, utilisez les listes déroulantes pour identifier les champs à utiliser pour la mise en forme conditionnelle. Dans cet exemple, nous avons sélectionné le champ **Sales fact** > **Total Units**. Nous avons aussi choisi le bleu clair pour **Valeur la plus basse** et le bleu foncé pour **Valeur la plus élevée**. 
 

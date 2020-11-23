@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: 1bc11d94162ab2c6ed62de0825acd6e94db30291
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: a3835ff26bf86024b827edf69e19d6f603e66c2c
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599386"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512881"
 ---
 # <a name="premium-capacity-scenarios"></a>Scénarios de capacité Premium
 
@@ -28,6 +28,9 @@ Cet article décrit des scénarios réels où des capacités Premium de Power B
 - [Détermination du fait qu’il y a ou non suffisamment de processeur](#determining-whether-there-is-enough-cpu)
 
 Les étapes ainsi que les exemples de graphiques et de tableaux sont tirés de l’**application Métriques de capacité Power BI Premium** à laquelle un administrateur de Power BI aura accès.
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="keeping-datasets-up-to-date"></a>Tenir à jour les jeux de données
 
@@ -123,6 +126,9 @@ Dans une capacité saine, le visuel se présente comme ceci, montrant un écart 
 
 Dans une capacité soumise à une forte sollicitation de la mémoire, le même visuel montre clairement que la mémoire active et la mémoire totale convergent, ce qui signifie qu’il est alors impossible de charger des jeux de données supplémentaires dans la mémoire. Dans ce cas, l’administrateur Power BI peut cliquer sur **Redémarrage de la capacité** (dans **Options avancées** de la zone des paramètres de capacité du portail d’administration). Le redémarrage de la capacité entraîne le vidage de tous les jeux de données de la mémoire et leur permet d’y être rechargées en fonction des besoins (des requêtes ou de l’actualisation des données).
 
+> [!NOTE]
+> Avec Premium Gen2, la consommation de la mémoire n’a pas besoin d’être suivie. La seule limitation dans Premium Gen2 est l’empreinte mémoire d’un seul artefact. L’empreinte ne peut pas dépasser la mémoire disponible sur la capacité. Pour plus d’informations sur Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ![Mémoire **Active** convergeant avec la mémoire totale (**Toute**)](media/service-premium-capacity-scenarios/memory-unhealthy-capacity.png)
 
 ## <a name="determining-whether-there-is-enough-cpu"></a>Détermination du fait qu’il y a ou non suffisamment de processeur
@@ -141,6 +147,9 @@ Cet effet peut être particulièrement apparent quand un jeu de données est con
 
 Dans certains cas, les administrateurs Power BI peuvent demander aux propriétaires des jeux de données de créer une charge de travail de requêtes moins volatile en créant un tableau de bord (qui effectue périodiquement des requêtes avec une actualisation des jeux de données pour les vignettes mises en cache) au lieu d’un rapport. Ceci peut aider à éviter les pics quand un tableau de bord est chargé. Il se peut que cette solution ne soit pas toujours possible pour les besoins de l’entreprise, mais ce peut être un moyen efficace d’éviter la saturation du processeur sans qu’il soit nécessaire de modifier le jeu de données.
 
+> [!NOTE]
+> Avec Premium Gen2, l’utilisation du temps processeur est suivie par artefact et est visible dans l’application Utilisation de la capacité. Chaque artefact indique l’utilisation du temps processeur total sur une période donnée. Pour plus d’informations sur Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
 ## <a name="acknowledgments"></a>Remerciements
 
 Cet article a été écrit par Peter Myers, expert Data Plateform MVP et BI indépendant avec des solutions [Bitwise](https://www.bitwisesolutions.com.au/).
@@ -154,4 +163,13 @@ Cet article a été écrit par Peter Myers, expert Data Plateform MVP et BI ind�
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
-||||||
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+

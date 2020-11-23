@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 10/29/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 93d982c684014430009a80112da841820e7b0fc9
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: b0132996be1ed70f228ce96d413c4925dc1a3e48
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396386"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512766"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
@@ -34,6 +34,9 @@ La fonctionnalité de zones géographiques multiples de Power BI Premium permet 
 Les zones géographiques multiples ne sont pas disponibles pour Power BI Germany, Power BI Chine géré par 21Vianet, ou Power BI pour le gouvernement des États-Unis.
 
 Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. Pour en savoir plus, lisez [Prise en charge de plusieurs zones géographiques dans Power BI Embedded](../developer/embedded/embedded-multi-geo.md).
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="enable-and-configure"></a>Activer et configurer
 
@@ -107,3 +110,13 @@ Les jeux de données volumineux ne doivent pas être déplacés de la région o�
 - [Zones géographiques multiples pour des capacités Power BI Embedded](../developer/embedded/embedded-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/01/2020
+ms.date: 11/13/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e052816cb3d633ba5c01d0331e00572a9b51a579
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: eb5b4b37e59a771d65917df5706a7ebbca488d21
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397297"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94669083"
 ---
 # <a name="premium-features-of-dataflows"></a>Fonctionnalités Premium des dataflows
 
@@ -34,14 +34,14 @@ Les sections suivantes décrivent chacune de ces fonctionnalités en détail.
 
 Le moteur de calcul amélioré dans Power BI permet aux abonnés Power BI Premium d’utiliser leur capacité pour optimiser l’utilisation des dataflows. L’utilisation du moteur de calcul amélioré offre les avantages suivants :
 
-* Elle réduit considérablement le temps d’actualisation nécessaires aux étapes ETL de longue durée sur les entités calculées, comme l’exécution de *jointures* , le calcul de *distinctions* , les *filtres* et les *regroupements*.
+* Elle réduit considérablement le temps d’actualisation nécessaires aux étapes ETL de longue durée sur les entités calculées, comme l’exécution de *jointures*, le calcul de *distinctions*, les *filtres* et les *regroupements*.
 * Exécuter des requêtes DirectQuery sur les entités
 
-L’activation du moteur de calcul avancé est décrite à la suite, et vous trouverez également des réponses aux questions courantes.
+Par défaut, le moteur de calcul amélioré est **Activé**. Si le moteur de calcul amélioré n’est pas activé, consultez la section suivante dans laquelle sont décrites l’activation du moteur de calcul amélioré, ainsi que des réponses aux questions courantes.
 
 ### <a name="using-the-enhanced-compute-engine"></a>Utilisation du moteur de calcul amélioré
 
-Le moteur de calcul amélioré s’active à partir de la page **Paramètres de capacité** du service Power BI, dans la section **Dataflows**. Par défaut, le moteur de calcul amélioré est **Désactivé**. Pour activer le moteur de calcul avancé, faites passer le bouton bascule sur **Activé** , comme dans l’image suivante, puis enregistrez vos paramètres. 
+Le moteur de calcul amélioré s’active à partir de la page **Paramètres de capacité** du service Power BI, dans la section **Dataflows**. Par défaut, le moteur de calcul amélioré est **Désactivé**. Pour activer le moteur de calcul avancé, faites passer le bouton bascule sur **Activé**, comme dans l’image suivante, puis enregistrez vos paramètres. 
 
 ![Activer le moteur de calcul amélioré](media/dataflows-premium-features/compute-engine-settings.png)
 
@@ -52,8 +52,8 @@ Une fois le moteur de calcul avancé activé, revenez aux **dataflows**. Vous de
 
 Pour tirer le meilleur parti du moteur de calcul, divisez l’étape ETL en deux dataflows distincts de la façon suivante :
 
-* **Dataflow 1**  : ce dataflow doit uniquement ingérer tout ce qui est nécessaire d’une source de données et le placer dans le dataflow 2.
-* **Dataflow 2**  : effectuez toutes les opérations ETL dans ce second dataflow, mais vérifiez que vous référencez bien le dataflow 1, qui doit se trouver sur la même capacité. Veillez également à effectuer les opérations pliables (filtrer, grouper par, distinct, jointure) avant toutes les autres, pour veiller à ce que le moteur de calcul soit utilisé.
+* **Dataflow 1** : ce dataflow doit uniquement ingérer tout ce qui est nécessaire d’une source de données et le placer dans le dataflow 2.
+* **Dataflow 2** : effectuez toutes les opérations ETL dans ce second dataflow, mais vérifiez que vous référencez bien le dataflow 1, qui doit se trouver sur la même capacité. Veillez également à effectuer les opérations pliables (filtrer, grouper par, distinct, jointure) avant toutes les autres, pour veiller à ce que le moteur de calcul soit utilisé.
 
 ### <a name="common-questions-and-answers"></a>Questions et réponses courantes
 
@@ -88,9 +88,9 @@ Vous pouvez utiliser DirectQuery pour vous connecter directement des dataflows, 
 
 L’utilisation de DirectQuery avec des dataflows apporte les améliorations suivantes à Power BI et à vos processus de dataflows :
 
-* **Éviter les planifications d’actualisation distinctes**  : DirectQuery se connecte directement à un dataflow, ce qui élimine la nécessité de créer un jeu de données. Ainsi, l’utilisation de DirectQuery avec vos dataflows signifie que vous n’avez plus besoin de planifications d’actualisation distinctes pour le dataflow et pour le jeu de données pour garantir que vos données sont synchronisées.
+* **Éviter les planifications d’actualisation distinctes** : DirectQuery se connecte directement à un dataflow, ce qui élimine la nécessité de créer un jeu de données. Ainsi, l’utilisation de DirectQuery avec vos dataflows signifie que vous n’avez plus besoin de planifications d’actualisation distinctes pour le dataflow et pour le jeu de données pour garantir que vos données sont synchronisées.
 
-* **Filtrage des données**  : DirectQuery est pratique pour travailler sur une vue filtrée des données au sein d’un dataflow. Si vous voulez filtrer les données et ainsi travailler sur un sous-ensemble de données plus petit dans votre dataflow, vous pouvez utiliser DirectQuery (et le moteur de calcul) pour filtrer les données du dataflow et utiliser le sous-ensemble filtré dont vous avez besoin.
+* **Filtrage des données** : DirectQuery est pratique pour travailler sur une vue filtrée des données au sein d’un dataflow. Si vous voulez filtrer les données et ainsi travailler sur un sous-ensemble de données plus petit dans votre dataflow, vous pouvez utiliser DirectQuery (et le moteur de calcul) pour filtrer les données du dataflow et utiliser le sous-ensemble filtré dont vous avez besoin.
 
 
 ### <a name="using-directquery-for-dataflows"></a>Utilisation de DirectQuery pour les dataflows
@@ -158,6 +158,8 @@ Le fait de définir l’actualisation incrémentielle a pour effet d’ajouter d
 ## <a name="next-steps"></a>Étapes suivantes
 Les articles suivants vous permettront d’en savoir plus sur les dataflows et Power BI :
 
+* [Bonnes pratiques pour les dataflows](dataflows-best-practices.md)
+* [Configurer les charges de travails des dataflows Premium Power BI](dataflows-premium-workload-configuration.md)
 * [Introduction aux dataflows et à la préparation des données en libre-service](dataflows-introduction-self-service.md)
 * [Création d’un flux de données](dataflows-create.md)
 * [Configurer et consommer un dataflow](dataflows-configure-consume.md)

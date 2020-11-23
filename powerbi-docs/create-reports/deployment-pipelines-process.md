@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/22/2020
-ms.openlocfilehash: a364d3dd2d2175e4509d05f4c34eec31a1a371b6
-ms.sourcegitcommit: 37ec0e9e356b6d773d7d56133fb8ed6c06b65fd3
+ms.date: 10/21/2020
+ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91024032"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668600"
 ---
 # <a name="understand-the-deployment-process"></a>Comprendre le processus de déploiement
 
@@ -38,6 +38,8 @@ Lors du premier déploiement, les pipelines de déploiement vérifient si vous d
 Si vous disposez d’autorisations de capacité, le contenu de l’espace de travail est copié à l’étape vers laquelle vous effectuez le déploiement, et un nouvel espace de travail pour cette étape est créé sur la capacité Premium.
 
 Si vous n’avez pas d’autorisations de capacité, l’espace de travail est créé, mais le contenu n’est pas copié. Vous pouvez demander à un administrateur de capacité d’ajouter votre espace de travail à une capacité ou demander l’attribution d’autorisations pour la capacité. Plus tard, lorsque l’espace de travail est affecté à une capacité, vous pouvez déployer le contenu dans cet espace de travail.
+
+Si vous utilisez [Premium par utilisateur (PPU)](../admin/service-premium-per-user-faq.md), votre espace de travail est automatiquement créé dans la capacité associée à votre PPU. Dans ce cas, les autorisations de capacité ne sont pas nécessaires. En revanche, les espaces de travail créés par un utilisateur PPU sont uniquement accessibles par d’autres utilisateurs PPU. De plus, le contenu créé dans ces espaces de travail peut uniquement être consommé par des utilisateurs PPU.
 
 ### <a name="workspace-and-content-ownership"></a>Propriété de l’espace de travail et du contenu
 
@@ -67,7 +69,7 @@ Avec des modifications mineures, comme l’ajout d’une table ou de mesures, Po
 
 Tant que le contenu déployé réside sur une [capacité Premium](../admin/service-premium-what-is.md), un utilisateur qui remplit les conditions suivantes peut le déployer à une étape dans un espace de travail existant :
 
-* Un [utilisateur Pro](../admin/service-admin-purchasing-power-bi-pro.md) qui est membre des deux espaces de travail dans les étapes de déploiement source et cible.
+* Un utilisateur doté d’une [licence Pro](../admin/service-admin-purchasing-power-bi-pro.md) ou un [utilisateur PPU](../admin/service-premium-per-user-faq.md) membre des deux espaces de travail dans les étapes de déploiement source et cible.
 
 * Un propriétaire de tous les jeux de données de l’espace de travail cible qui vont être déployés.
 
@@ -87,7 +89,7 @@ Lorsque vous déployez du contenu d’une étape de pipeline vers une autre, le 
 
 Les pipelines de déploiement ne prennent pas en charge les éléments suivants :
 
-* Jeux de données qui ne proviennent pas d’un .pbix
+* Jeux de données qui ne proviennent pas d’un PBIX
 
 * Rapports basés sur des jeux de données non pris en charge
 

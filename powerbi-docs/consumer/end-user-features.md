@@ -10,18 +10,18 @@ ms.date: 09/16/2020
 ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: consumers
-ms.openlocfilehash: ddd63a4f18c9994e0a89f4028bcdec96eda21600
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 8bfdcd9ba87dd6a4fa12a3750b517a09844d3d6e
+ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94668485"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Liste des fonctionnalités de Power BI pour les *consommateurs* et autres personnes bénéficiant de licences gratuites
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-En tant *qu’utilisateur professionnel* , vous avez recours au service Power BI pour explorer des rapports et des tableaux de bord afin de prendre des décisions métier. Ces rapports et tableaux de bord sont créés par des *concepteurs* qui ont des licences *Pro* Power BI. Les utilisateurs Pro ont la possibilité de partager du contenu avec leurs collègues, et de contrôler ce que ceux-ci peuvent et ne peuvent pas faire avec ce contenu. Parfois, les concepteurs partagent du contenu en vous envoyant des liens et, parfois le contenu est installé automatiquement et s’affiche dans Power BI sous **Applications** ou **Partagé avec moi**.
+En tant *qu’utilisateur professionnel*, vous avez recours au service Power BI pour explorer des rapports et des tableaux de bord afin de prendre des décisions métier. Ces rapports et tableaux de bord sont créés par des *concepteurs* qui ont des licences *Pro* Power BI. Les utilisateurs Pro ont la possibilité de partager du contenu avec leurs collègues, et de contrôler ce que ceux-ci peuvent et ne peuvent pas faire avec ce contenu. Parfois, les concepteurs partagent du contenu en vous envoyant des liens et, parfois le contenu est installé automatiquement et s’affiche dans Power BI sous **Applications** ou **Partagé avec moi**.
 
 Les concepteurs peuvent partager du contenu de nombreuses façons différentes. Cet article étant destiné aux *utilisateurs professionnels* de Power BI, il décrit uniquement la façon dont ceux-ci reçoivent le contenu et interagissent avec. Pour plus d’informations sur d’autres façons de partager du contenu, consultez [Moyens de partager votre travail dans Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -47,11 +47,11 @@ Quand une organisation dispose d’un abonnement de capacité Premium, les admin
 ### <a name="licenses"></a>Licences 
 Chaque utilisateur du service Power BI a une licence gratuite ou une licence Pro. Les *utilisateurs professionnels* disposent de licences gratuites.
 
-- **Licence gratuite**  : généralement attribuées aux *utilisateurs professionnels* au sein d’une organisation (cf. la première image ci-dessous). Également attribuée à toute personne qui s’inscrit au service Power BI en tant qu’individu et qui veut essayer le [service Power BI en mode autonome](../fundamentals/service-self-service-signup-for-power-bi.md) (voir deuxième image ci-dessous). 
+- **Licence gratuite** : généralement attribuées aux *utilisateurs professionnels* au sein d’une organisation (cf. la première image ci-dessous). Également attribuée à toute personne qui s’inscrit au service Power BI en tant qu’individu et qui veut essayer le [service Power BI en mode autonome](../fundamentals/service-self-service-signup-for-power-bi.md) (voir deuxième image ci-dessous). 
 
     ![écran représentant un utilisateur Premium](media/end-user-features/power-bi-free-organization.png)
 
-    En tant qu’utilisateur gratuit, être membre d’une organisation disposant d’une capacité Premium est ce qui vous donne de super pouvoirs. Tant que leurs collègues Pro utilisent des espaces de travail de capacité Premium pour partager du contenu, les utilisateurs gratuits peuvent voir et collaborer avec ces collègues Pro.  **Les utilisateurs gratuits acquièrent ainsi la possibilité de consommer du contenu créé par d’autres. Avec leurs collègues, y compris les utilisateurs Pro, les utilisateurs professionnels reçoivent, partagent et utilisent les mêmes tableaux de bord, rapports et applications pour prendre des décisions métier.** 
+    En tant qu’utilisateur gratuit, être membre d’une organisation disposant d’une capacité Premium est ce qui vous donne de super pouvoirs. Tant que leurs collègues Pro utilisent des espaces de travail de capacité Premium pour partager du contenu, les utilisateurs gratuits peuvent voir et collaborer avec ces collègues Pro.  Les utilisateurs gratuits acquièrent ainsi la possibilité de consommer du contenu créé par d’autres. Avec ses collègues, y compris les utilisateurs Pro, l’utilisateur gratuit reçoit, partage et utilise les mêmes tableaux de bord, rapports et applications pour prendre des décisions métier. 
  
     ![écran montrant un utilisateur libre](media/end-user-features/power-bi-free-user.png)
 

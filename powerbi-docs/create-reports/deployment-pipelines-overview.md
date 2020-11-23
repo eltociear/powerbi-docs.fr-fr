@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
-ms.openlocfilehash: 58d1adef9a9b2a8a4f818f94da2cb34e6529db83
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.date: 10/21/2020
+ms.openlocfilehash: b0b8d61224a91cd069caf48a2d321979ac2d291d
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90855492"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94513295"
 ---
 # <a name="introduction-to-deployment-pipelines"></a>Présentation des pipelines de déploiement
 
 Dans le monde actuel, l’analytique est un élément essentiel de la prise de décision dans presque toutes les organisations. L’utilisation croissante de Power BI en tant qu’outil d’analyse exige qu’il utilise davantage de données, semble attrayant et soit convivial. Mais avant tout, Power BI se doit d’être toujours disponible et fiable. Pour répondre à ces exigences, les créateurs de BI doivent collaborer efficacement.
 
-L’outil Pipelines de déploiement permet aux créateurs de BI de gérer le cycle de vie du contenu de l’organisation. L’outil est performant et réutilisable pour les créateurs dans une entreprise avec une capacité Premium. Il permet aux créateurs de développer et de tester le contenu Power BI avant de le mettre à la disposition des consommateurs. Les types de contenu incluent les rapports, les tableaux de bord et les jeux de données.
+L’outil Pipelines de déploiement permet aux créateurs de BI de gérer le cycle de vie du contenu de l’organisation. Il s’agit d’un outil performant et réutilisable pour les créateurs dans une entreprise avec une capacité Premium. Les pipelines de déploiement permettent aux créateurs de développer et de tester le contenu Power BI avant de le mettre à la disposition des consommateurs. Les types de contenu incluent les rapports, les tableaux de bord et les jeux de données.
 
 L’outil est conçu comme un pipeline en trois étapes :
 
@@ -29,7 +29,7 @@ L’outil est conçu comme un pipeline en trois étapes :
 
 * **<a name="test"></a>Test**
 
-    Vous êtes prêt à lancer l’étape de test quand vous avez apporté toutes les modifications souhaitées au contenu. Vous chargez le contenu modifié afin de le passer à cette étape de test. Voici trois exemples d’actions possibles dans l’environnement de test :
+    Vous êtes prêt à lancer l’étape de test quand vous avez apporté toutes les modifications nécessaires au contenu. Vous chargez le contenu modifié afin de le passer à cette étape de test. Voici trois exemples d’actions possibles dans l’environnement de test :
 
     * Partager du contenu avec des testeurs et des réviseurs
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/23/2020
+ms.date: 11/11/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 358d0575c2de3297614bfed0656d953945b2ed13
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 653ab67828c055d2846a698bf12f14eec304a2bf
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502153"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560124"
 ---
 # <a name="design-filters-in-power-bi-reports"></a>Conception de filtres dans les rapports Power BI
 
@@ -75,7 +75,7 @@ Quand vous ajoutez un visuel à un canevas de rapport, Power BI ajoute automatiq
 
 ## <a name="hide-the-filters-pane-while-editing"></a>Masquer le volet de filtres lors de la modification
 
-Power BI Desktop a un nouveau ruban en préversion. Sous l’onglet **Affichage** , le bouton bascule **Filtres** vous permet d’afficher ou de masquer le volet Filtres. Cette fonctionnalité est utile lorsque vous n’utilisez pas le volet Filtres et que vous avez besoin d’espace supplémentaire sur l’écran. Cet ajout aligne le volet Filtres avec les autres volets que vous pouvez ouvrir et fermer, tels que les volets Signets et Sélection. 
+Power BI Desktop a un nouveau ruban en préversion. Sous l’onglet **Affichage**, le bouton bascule **Filtres** vous permet d’afficher ou de masquer le volet Filtres. Cette fonctionnalité est utile lorsque vous n’utilisez pas le volet Filtres et que vous avez besoin d’espace supplémentaire sur l’écran. Cet ajout aligne le volet Filtres avec les autres volets que vous pouvez ouvrir et fermer, tels que les volets Signets et Sélection. 
 
 ![Afficher ou masquer le volet Filtres lors de la modification](media/power-bi-report-filter/power-bi-filter-hide.png)
 
@@ -116,7 +116,7 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 
 ### <a name="format-the-filters-pane-and-cards"></a>Mettre en forme le volet Filtres et les cartes
 
-1. Dans le rapport, cliquez sur le rapport lui-même, ou l’arrière-plan ( *papier peint* ), puis dans le volet **Visualisations** , sélectionnez **Format**. 
+1. Dans le rapport, cliquez sur le rapport lui-même, ou l’arrière-plan (*papier peint*), puis dans le volet **Visualisations**, sélectionnez **Format**. 
     Les options de mise en forme de la page du rapport, du papier peint et également du volet Filtres et des cartes de filtre s’affichent.
 
 1. Développez le **volet Filtres** pour définir la couleur de l’arrière-plan, l’icône et la bordure gauche de la page du rapport.
@@ -234,7 +234,7 @@ Bien que cette fonctionnalité de recherche dans le volet Filtres soit activée 
 
 ## <a name="restrict-changes-to-filter-type"></a>Limiter les modifications au type de filtre
 
-Dans la section **Expérience de filtrage** des paramètres **Rapport** , une option vous permet de déterminer si les utilisateurs peuvent modifier le type de filtre.
+Dans la section **Expérience de filtrage** des paramètres **Rapport**, une option vous permet de déterminer si les utilisateurs peuvent modifier le type de filtre.
 
 ![Limiter les changements de type de filtre](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
@@ -242,17 +242,17 @@ Dans la section **Expérience de filtrage** des paramètres **Rapport** , une op
 
 Par défaut, vos lecteurs de rapports peuvent enregistrer des filtres pour votre rapport. Vous pouvez choisir de ne pas les autoriser à enregistrer des filtres.
 
-- De plus, dans les paramètres **Rapport** de la boîte de dialogue **Options** , sous **Filtres persistants** , sélectionnez **Ne pas autoriser les utilisateurs finaux à enregistrer des filtres sur ce rapport**.
+- De plus, dans les paramètres **Rapport** de la boîte de dialogue **Options**, sous **Filtres persistants**, sélectionnez **Ne pas autoriser les utilisateurs finaux à enregistrer des filtres sur ce rapport**.
 
     :::image type="content" source="media/power-bi-report-filter/power-bi-persistent-filters.png" alt-text="Capture d’écran de l’option Ne pas autoriser les utilisateurs finaux à enregistrer des filtres sur ce rapport.":::
 
-## <a name="apply-filters-apply-button-preview"></a>Bouton Appliquer des filtres (préversion)
+## <a name="apply-filters-button"></a>Bouton Appliquer des filtres
 
 Vous pouvez ajouter un bouton **Appliquer** unique au volet Filtre ; il vous permet à vous et à vos utilisateurs finaux d’appliquer toutes les modifications de filtre à la fois. Ce bouton peut être utile si vous souhaitez différer l’application des modifications de filtre. Vous n’avez à attendre qu’une seule fois, une fois que vous êtes prêt à appliquer toutes les modifications de filtre au rapport ou aux visuels.
 
 :::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Bouton Appliquer le filtre":::
 
-### <a name="turn-on-apply"></a>Activer Appliquer
+### <a name="turn-on-the-apply-button"></a>Activer le bouton Appliquer
 
 Vous pouvez définir cette fonctionnalité au niveau du rapport. Toutefois, la fonctionnalité est désactivée par défaut.
 
@@ -260,12 +260,13 @@ Vous pouvez définir cette fonctionnalité au niveau du rapport. Toutefois, la f
 
 1. Sélectionnez **Ajouter un seul bouton Appliquer au volet des filtres pour appliquer tous les changements à la fois**.
 
-    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Activer le bouton Appliquer le filtre":::
+    :::image type="content" source="media/power-bi-report-filter/apply-all-filters.png" alt-text="Activer le bouton Appliquer le filtre":::
 
 ### <a name="format-the-apply-button"></a>Mettre en forme le bouton Appliquer
 
-Actuellement, vous pouvez contrôler une partie de la mise en forme pour le texte **Appliquer** du bouton. Dans le volet **Filtre** du volet **Format** , définissez les options suivantes :
+Actuellement, vous pouvez contrôler une partie de la mise en forme pour le texte **Appliquer** du bouton. Dans le volet **Filtre** du volet **Format**, définissez les options suivantes :
 
+- **Couleur de la case et du texte Appliquer** contrôle la couleur de remplissage. 
 - **Couleur de police et d’icône** contrôle la couleur du texte.
 - **Taille du texte de l’en-tête** contrôle la taille du texte.
 - **Famille de polices** contrôle la police.

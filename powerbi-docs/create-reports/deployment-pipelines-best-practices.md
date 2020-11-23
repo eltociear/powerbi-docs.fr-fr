@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
-ms.openlocfilehash: 01cb4c5de2863250f083320e7005c0d589a2da0b
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.date: 10/21/2020
+ms.openlocfilehash: 9d78a4cd8beb84402a4b3b586df6998810d1c8f7
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116474"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512996"
 ---
 # <a name="deployment-pipelines-best-practices"></a>Meilleures pratiques pour les pipelines de déploiement
 
@@ -93,26 +93,26 @@ Cette section fournit des conseils pour travailler avec l’étape de développe
 
 ### <a name="use-power-bi-desktop-to-edit-your-reports-and-datasets"></a>Utiliser Power BI Desktop pour modifier vos rapports et jeux de données
 
-Considérez Power BI Desktop comme votre environnement de développement local. Power BI Desktop vous permet d’essayer, d’explorer et de vérifier les mises à jour de vos rapports et jeux de données. Une fois le travail terminé, vous pouvez télécharger votre nouvelle version à l’étape de développement. Pour les raisons suivantes, il est recommandé de modifier les fichiers .pbix dans la version Desktop (et non dans le service Power BI) :
+Considérez Power BI Desktop comme votre environnement de développement local. Power BI Desktop vous permet d’essayer, d’explorer et de vérifier les mises à jour de vos rapports et jeux de données. Une fois le travail terminé, vous pouvez télécharger votre nouvelle version à l’étape de développement. Pour les raisons suivantes, il est recommandé de modifier les fichiers PBIX dans la version Desktop (et non dans le service Power BI) :
 
-* Il est plus facile de collaborer avec les créateurs sur le même fichier .pbix, si toutes les modifications sont effectuées dans le même outil.
+* Il est plus facile de collaborer avec les créateurs sur le même fichier PBIX, si toutes les modifications sont effectuées dans le même outil.
 
- * Effectuer des modifications en ligne, télécharger le fichier .pbix, puis le charger à nouveau crée des doublons de rapports et de jeux de données.
+ * Effectuer des modifications en ligne, télécharger le fichier PBIX, puis le charger à nouveau crée des doublons de rapports et de jeux de données.
 
-* Vous pouvez utiliser le contrôle de version pour tenir à jour vos fichiers .pbix.
+* Vous pouvez utiliser le contrôle de version pour tenir à jour vos fichiers PBIX.
 
-### <a name="version-control-for-pbix-files"></a>Contrôle de version pour les fichiers .pbix
+### <a name="version-control-for-pbix-files"></a>Contrôle de version pour les fichiers PBIX
 
 Si vous souhaitez gérer l’historique des versions de vos rapports et jeux de données, utilisez [la synchronisation automatique Power BI avec OneDrive](../collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md). Vos fichiers seront mis à jour avec la version la plus récente. Cela vous permet également de récupérer des versions plus anciennes, si nécessaire.
 
 >[!NOTE]
->Utilisez la synchronisation automatique avec OneDrive (ou tout autre référentiel) uniquement avec les fichiers .pbix dans l’étape de développement du pipeline de déploiement. Ne synchronisez pas les fichiers .pbix dans les étapes de test et de production du pipeline de déploiement. Cela entraînerait des problèmes lors du déploiement de contenu dans le pipeline.
+>Utilisez la synchronisation automatique avec OneDrive (ou tout autre référentiel) uniquement avec les fichiers PBIX dans l’étape de développement du pipeline de déploiement. Ne synchronisez pas les fichiers PBIX dans les étapes de test et de production du pipeline de déploiement. Cela entraînerait des problèmes lors du déploiement de contenu dans le pipeline.
 
 ### <a name="separate-modeling-development-from-report-and-dashboard-development"></a>Développement de modélisation distinct du développement de rapports et tableaux de bord
 
 Pour les déploiements à l’échelle de l’entreprise, il est recommandé de séparer le développement de jeux de données et le développement de rapports et tableaux de bord. Pour promouvoir uniquement les modifications apportées à un rapport ou à un jeu de données, utilisez l’option de déploiement sélectif des pipelines de déploiement.  
 
-Cette approche doit commencer dans Power BI Desktop, en créant un fichier .pbix distinct pour les jeux de données et les rapports. Par exemple, vous pouvez créer un fichier jeu de données .pbix et le charger à l’étape de développement. Plus tard, vos auteurs de rapports peuvent créer un nouveau .pbix uniquement pour le rapport, et [le connecter au jeu de données publié](../connect-data/service-datasets-discover-across-workspaces.md) à l’aide d’une connexion active. Cette technique permet à différents créateurs de travailler séparément sur la modélisation et les visualisations, et de les déployer en production indépendamment.
+Cette approche doit commencer dans Power BI Desktop, en créant un fichier PBIX distinct pour les jeux de données et les rapports. Par exemple, vous pouvez créer un fichier jeu de données PBIX et le charger à l’étape de développement. Plus tard, vos auteurs de rapports peuvent créer un nouveau PBIX uniquement pour le rapport, et [le connecter au jeu de données publié](../connect-data/service-datasets-discover-across-workspaces.md) à l’aide d’une connexion active. Cette technique permet à différents créateurs de travailler séparément sur la modélisation et les visualisations, et de les déployer en production indépendamment.
 
 Avec les [jeux de données partagés](../connect-data/service-datasets-share.md), vous pouvez également utiliser cette méthode dans les espaces de travail.
 
@@ -195,7 +195,7 @@ Le déploiement dans un pipeline met à jour le contenu de l’espace de travail
 
 ### <a name="quick-fixes-to-content"></a>Correctifs rapides pour le contenu
 
-Dans le cas où il existe des bogues en production qui requièrent un correctif rapide, ne soyez pas tenté de charger une nouvelle version .pbix directement à l’étape de production ou d’effectuer une modification en ligne dans le service Power BI. Le déploiement vers l’arrière à des étapes de test et de développement n’est pas possible quand il existe déjà un contenu dans ces étapes. En outre, le déploiement d’un correctif sans le tester d’abord est une mauvaise pratique. Par conséquent, la bonne méthode pour traiter ce problème consiste à implémenter le correctif dans l’étape de développement et à le transmettre au reste des étapes du pipeline de déploiement. Cela permet de vérifier que le correctif fonctionne avant de le déployer en production. Le déploiement à travers le pipeline ne prend que quelques minutes.
+Dans le cas où il existe des bogues en production qui requièrent un correctif rapide, ne soyez pas tenté de charger une nouvelle version PBIX directement à l’étape de production ou d’effectuer une modification en ligne dans le service Power BI. Le déploiement vers l’arrière à des étapes de test et de développement n’est pas possible quand il existe déjà un contenu dans ces étapes. En outre, le déploiement d’un correctif sans le tester d’abord est une mauvaise pratique. Par conséquent, la bonne méthode pour traiter ce problème consiste à implémenter le correctif dans l’étape de développement et à le transmettre au reste des étapes du pipeline de déploiement. Cela permet de vérifier que le correctif fonctionne avant de le déployer en production. Le déploiement à travers le pipeline ne prend que quelques minutes.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 11/11/2020
 ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 86a28c1d89537a59bf96d82fb3df87a4a0ccf391
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 46d620df1140d4fea8ffb9b4bdb9dd292e3659cd
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916081"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512283"
 ---
 # <a name="licensing-the-power-bi-service-for-users-in-your-organization"></a>Gestion des licences du service Power BI pour les utilisateurs de votre organisation
 
-Ce qu’un utilisateur peut faire dans le service Power BI dépend du type de licence par utilisateur dont il dispose. Le niveau d’accès fourni par sa licence varie selon que l’espace de travail auquel vous accédez est attribué à la capacité Power BI Premium. Tous les utilisateurs du service Power BI doivent disposer d’une licence.
+Ce qu’un utilisateur peut faire dans le service Power BI dépend du type de licence par utilisateur dont il dispose. Le niveau d’accès fourni par sa licence varie selon que l’espace de travail auquel vous accédez est un espace de travail Premium ou non. Tous les utilisateurs du service Power BI doivent disposer d’une licence.
 
-Il existe deux moyens pour les utilisateurs d’obtenir une licence. Avec les fonctionnalités d’inscription en libre-service et leur compte professionnel ou scolaire, ils peuvent bénéficier de leur propre licence gratuite ou Pro. Sinon, les administrateurs peuvent acquérir un abonnement Power BI et affecter des licences aux utilisateurs.
+Il existe deux moyens pour les utilisateurs d’obtenir une licence. Avec les fonctionnalités d’inscription en libre-service et leur compte professionnel ou scolaire, les utilisateurs peuvent avoir leur propre licence gratuite, Pro ou Premium par utilisateur. Sinon, les administrateurs peuvent acquérir une licence Power BI et affecter des licences aux utilisateurs.
 
 Cet article porte sur l’achat de services et de licences par utilisateur du point de vue de l’administrateur. Pour savoir comment obtenir sa propre licence en tant qu’utilisateur, consultez [Inscription à Power BI à titre individuel](../fundamentals/service-self-service-signup-for-power-bi.md).
 
@@ -45,7 +45,7 @@ Un administrateur général ou un administrateur de facturation peut s’inscrir
 
 ## <a name="about-self-service-sign-up"></a>À propos de l’inscription en libre-service
 
-Un utilisateur individuel peuvent obtenir sa propre licence Power BI en s’inscrivant avec son compte professionnel ou scolaire. Dans le cadre d’une licence gratuite, il peut explorer Power BI pour la visualisation et l’analyse des données personnelles avec Mon espace de travail, mais pas partager avec d’autres utilisateurs. Une licence Power BI Pro est nécessaire pour partager du contenu. Les utilisateurs peuvent passer au type de licence Pro par le biais d’une mise à niveau ou s’inscrire directement à Pro, si l’organisation utilise le cloud commercial. Ni l’achat direct de Pro ni la mise à niveau vers Pro ne sont disponibles pour les établissements d’enseignement et les organisations déployées dans des clouds Azure Government, Azure Allemagne ou Azure China 21Vianet.
+Un utilisateur individuel peuvent obtenir sa propre licence Power BI en s’inscrivant avec son compte professionnel ou scolaire. Dans le cadre d’une licence gratuite, il peut explorer Power BI pour la visualisation et l’analyse des données personnelles avec Mon espace de travail, mais pas partager avec d’autres utilisateurs. Une licence Power BI Pro est nécessaire pour partager du contenu. Une licence Power BI Premium déverrouille l’accès à une variété de fonctionnalités, capacités et types de contenu qui ne sont disponibles que dans la version Premium. Une licence Premium par utilisateur limite l’accès à ces fonctionnalités aux utilisateurs qui disposent d’une licence Premium par utilisateur. Une licence Premium basée sur la capacité permet aux utilisateurs disposant de licences gratuites d’accéder à n’importe quel contenu, mais seuls les utilisateurs titulaires d’une licence Pro peuvent créer du contenu. Les utilisateurs peuvent passer au type de licence Pro par le biais d’une mise à niveau ou s’inscrire directement à Pro, si l’organisation utilise le cloud commercial. Ni l’achat direct de Pro ni la mise à niveau vers Pro ne sont disponibles pour les établissements d’enseignement et les organisations déployées dans des clouds Azure Government, Azure Allemagne ou Azure China 21Vianet.
 
 Si vous ne souhaitez pas que les utilisateurs de votre organisation utilisent l’inscription en libre-service, consultez [Activation et désactivation de l’inscription en libre-service](service-admin-disable-self-service.md) pour savoir comment la désactiver.
 
@@ -55,7 +55,7 @@ La désactivation de l’inscription en libre-service empêche les utilisateurs 
 1. Dans le menu encadré de gauche, sélectionnez **Facturation** > **Acheter des services**.
 1. Recherchez l’offre Power BI (gratuit) ou faites défiler la liste pour le trouver. Sélectionnez-la, puis **Obtenir maintenant**.
 1. Entrez le nombre de licences nécessaires pour couvrir tous vos utilisateurs.
-1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence** , puis validez.
+1. Sélectionnez **Attribuer automatiquement à tous les utilisateurs dépourvus de licence**, puis validez.
 
   ![Capture d’écran de l’abonnement gratuit auto-attribué, montrant l’inscription en libre-service.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
@@ -63,30 +63,30 @@ Si vous souhaitez voir quels utilisateurs de votre organisation disposent déjà
 
 ## <a name="license-types-and-capabilities"></a>Types de licences et fonctionnalités
 
-Il existe deux types de licences Power BI par utilisateur : gratuite et Pro. Le type de licence nécessaire pour un utilisateur est déterminé par l’endroit où le contenu est stocké et par les interactions souhaitées avec ce contenu. L’emplacement de stockage dépend du [type d’abonnement](#subscription-types) de l’organisation.
+Il existe trois types de licences Power BI par utilisateur : gratuite, Pro et Premium. Le type de licence dont un utilisateur a besoin est déterminé par l’endroit où le contenu est stocké, par les interactions souhaitées avec ce contenu et par l’utilisation ou non de fonctionnalités Premium dans ce contenu. L’emplacement de stockage dépend du [type de licence](#license-types) de l’organisation.
 
-Il existe un type d’abonnement, [Power BI Premium](service-admin-premium-purchase.md), qui permet aux utilisateurs disposant d’une licence gratuite d’agir sur le contenu des espaces de travail de capacité Premium. En dehors de la capacité Premium, un utilisateur disposant d’une licence gratuite ne peut utiliser le service Power BI que pour se connecter aux données et créer des rapports et des tableaux de bord dans **Mon espace de travail**. Il ne peut pas partager du contenu avec d’autres personnes ni en publier sur d’autres espaces de travail. Pour en savoir plus sur les types d’espaces de travail, consultez [Types des espaces de travail](../consumer/end-user-workspaces.md#types-of-workspaces).
+La licence basée sur la capacité [Power BI Premium](service-admin-premium-purchase.md) permet aux utilisateurs disposant d’une licence gratuite d’agir sur le contenu dans les espaces de travail affectés à la capacité Premium. En dehors de la capacité Premium, un utilisateur disposant d’une licence gratuite ne peut utiliser le service Power BI que pour se connecter aux données et créer des rapports et des tableaux de bord dans **Mon espace de travail**. Il ne peut pas partager du contenu avec d’autres personnes ni en publier sur d’autres espaces de travail. Pour en savoir plus sur les types d’espaces de travail, consultez [Types des espaces de travail](../consumer/end-user-workspaces.md#types-of-workspaces).
 
-Un abonnement Power BI standard utilise la capacité partagée. Si le contenu est stocké dans une capacité partagée, les utilisateurs disposant d’une licence Power BI Pro ne peuvent collaborer qu’avec d’autres utilisateurs Power BI Pro. Ils ont la possibilité de consommer du contenu publié par d’autres personnes, de publier du contenu sur des espaces de travail d’application, de partager des tableaux de bord et de s’abonner à des tableaux de bord et à des rapports.  Quand les espaces de travail sont en capacité Premium, les utilisateurs Pro peuvent distribuer du contenu à des utilisateurs dépourvus de licence Power BI Pro.
+Une licence Power BI avec des licences par utilisateur gratuites et Pro utilise uniquement une capacité partagée et limitée pour traiter le contenu. Si du contenu est stocké dans cette capacité partagée, les utilisateurs disposant d’une licence Power BI Pro ne peuvent collaborer qu’avec d’autres utilisateurs Power BI Pro. Ils ont la possibilité de consommer du contenu publié par d’autres personnes, de publier du contenu sur des espaces de travail d’application, de partager des tableaux de bord et de s’abonner à des tableaux de bord et à des rapports.  Quand les espaces de travail sont en capacité Premium, les utilisateurs Pro peuvent distribuer du contenu à des utilisateurs dépourvus de licence Power BI Pro.
 
-Le tableau ci-dessous récapitule les fonctionnalités de base de chaque type de licence. Pour une décomposition détaillée de la disponibilité des fonctionnalités par type de licence, consultez [Fonctionnalités par type de licence](../fundamentals/service-features-license-type.md).
+Quand vous utilisez des licences Premium par utilisateur, le contenu créé par un utilisateur disposant d’une licence Premium par utilisateur ne peut être partagé qu’avec d’autres utilisateurs titulaires d’une licence Premium, à moins que ce contenu soit spécifiquement placé dans un espace de travail hébergé sur une capacité Premium. Le tableau ci-dessous récapitule les fonctionnalités de base de chaque type de licence. Pour une décomposition détaillée de la disponibilité des fonctionnalités par type de licence, consultez [Fonctionnalités par type de licence](../fundamentals/service-features-license-type.md).
 
 | Type de licence | Fonctionnalités lorsque l’espace de travail est en capacité partagée | Fonctionnalités supplémentaires lorsque l’espace de travail est en capacité Premium |
 | --------- | ----------- | ----------- |
 | Power BI (gratuit) | Accès au contenu de Mon espace de travail | Consommation du contenu partagé avec l’utilisateur |
 | Power BI Pro | Publication de contenu sur d’autres espaces de travail, partage de tableaux de bord, abonnement à des tableaux de bord et à des rapports, partage avec des utilisateurs disposant d’une licence Pro | Distribution de contenu aux utilisateurs disposant de licences gratuites |
 
-## <a name="subscription-types"></a>Types d’abonnements
+## <a name="license-types"></a>Types de licences
 
-Tous les abonnements Microsoft de type licence commerciale basée sur l’utilisateur s’appuient sur des identités Azure Active Directory. Pour utiliser le service Power BI, vous devez vous connecter avec une identité prise en charge par Azure Active Directory pour les licences commerciales. Vous pouvez ajouter Power BI à n’importe quel abonnement Microsoft ayant recours à Azure Active Directory pour les services d’identité. Certains abonnements, comme Office 365 E5, incluent une licence Power BI Pro, de sorte qu’il n’est pas nécessaire de s’inscrire séparément à Power BI.
+Toutes les licences commerciales basées sur l’utilisateur de Microsoft s’appuient sur des identités Azure Active Directory. Pour utiliser le service Power BI, vous devez vous connecter avec une identité prise en charge par Azure Active Directory pour les licences commerciales. Vous pouvez ajouter Power BI à n’importe quelle licence Microsoft ayant recours à Azure Active Directory pour les services d’identité. Certaines licences, comme Office 365 E5, incluent une licence Power BI Pro, de sorte qu’il n’est pas nécessaire de s’inscrire séparément à Power BI.
 
-Il existe deux genres d’abonnements Power BI pour les organisations : standard et premium.
+Il existe deux types de licences Power BI pour les organisations : standard et premium.
 
-Avec un abonnement Power BI Pro standard en libre-service, les administrateurs affectent des licences par utilisateur. Des frais mensuels par utilisateur sont facturés pour les licences Power BI Pro. Ce type de licence permet la collaboration, la publication, le partage et l’analyse ad hoc. Le contenu est enregistré dans une capacité de stockage partagée complètement managée par Microsoft.
+Avec une licence Power BI Pro standard en libre-service, les administrateurs affectent des licences par utilisateur. Des frais mensuels par utilisateur sont facturés pour les licences Power BI Pro. Ce type de licence permet la collaboration, la publication, le partage et l’analyse ad hoc. Le contenu est enregistré dans une capacité de stockage partagée complètement managée par Microsoft.
 
-Un abonnement Power BI Premium alloue une capacité à une organisation. Adapté au décisionnel, à l’analytique Big Data et au reporting cloud et local des grandes entreprises, il fournit des contrôles avancés d’administration et de déploiement. Les ressources de calcul et de stockage dédiées sont gérées par les administrateurs de capacité de l’organisation. Cet environnement dédié fait l’objet d’un forfait mensuel. Entre autres avantages Premium, le contenu stocké dans une capacité Premium est accessible aux utilisateurs dépourvus de licences Power BI Pro et peut leur être distribué. La condition pour pouvoir utiliser Premium est qu’au moins un utilisateur dispose d’une licence Power BI Pro ; par ailleurs, les créateurs de contenu et les développeurs ont toujours besoin d’une licence Power BI Pro.
+Une licence Power BI Premium alloue une capacité à une organisation. Adapté au décisionnel, à l’analytique Big Data et au reporting cloud et local des grandes entreprises, il fournit des contrôles avancés d’administration et de déploiement. Les ressources de calcul et de stockage dédiées sont gérées par les administrateurs de capacité de l’organisation. Cet environnement dédié fait l’objet d’un forfait mensuel. Entre autres avantages Premium, le contenu stocké dans une capacité Premium est accessible aux utilisateurs dépourvus de licences Power BI Pro et peut leur être distribué. La condition pour pouvoir utiliser Premium est qu’au moins un utilisateur dispose d’une licence Power BI Pro ; par ailleurs, les créateurs de contenu et les développeurs ont toujours besoin d’une licence Power BI Pro.
 
-Les deux types d’abonnements ne s’excluent pas mutuellement. Il est possible de disposer à la fois de Power BI Premium et de Power BI Pro. Dans cette configuration, le contenu stocké dans la capacité Premium peut être partagé avec tous les utilisateurs ; la capacité partagée est également disponible. Pour plus d’informations sur les limites des capacités, consultez [Gestion du stockage de données dans les espaces de travail Power BI](service-admin-manage-your-data-storage-in-power-bi.md).
+Les deux types de licences ne s’excluent pas mutuellement. Il est possible de disposer à la fois de Power BI Premium et de Power BI Pro. Dans cette configuration, le contenu stocké dans la capacité Premium peut être partagé avec tous les utilisateurs ; la capacité partagée est également disponible. Pour plus d’informations sur les limites des capacités, consultez [Gestion du stockage de données dans les espaces de travail Power BI](service-admin-manage-your-data-storage-in-power-bi.md).
 
 Pour comparer les fonctionnalités et les tarifs des produits, consultez [Tarifs de Power BI](https://powerbi.microsoft.com/pricing).
 
@@ -108,7 +108,7 @@ Les administrateurs achètent des licences Power BI Pro par le biais de Microsof
 
 Il y a une période de grâce après l’expiration d’une licence Power BI Pro. Pour les licences qui font partie d’un achat de licences en volume, la période de grâce est de 90 jours. Si vous avez acheté directement la licence, la période de grâce dure 30 jours.
 
-L’abonnement Power BI Pro dispose du même cycle de vie que Microsoft 365. Pour plus d’informations, consultez [Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
+Le cycle de licence pour Power BI Pro et Microsoft 365 est le même. Pour plus d’informations, consultez [Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -117,3 +117,14 @@ L’abonnement Power BI Pro dispose du même cycle de vie que Microsoft 365. Po
 - [Documentation sur les abonnements et la facturation d’entreprise](/microsoft-365/commerce/?view=o365-worldwide)
 - [Trouver les utilisateurs Power BI qui se sont connectés](service-admin-access-usage.md)
 - D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

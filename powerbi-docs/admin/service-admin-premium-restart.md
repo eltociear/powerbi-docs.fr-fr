@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 03/12/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 0f237efece8403730ea7790d45bca6f5169e53fd
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: ac0935dd6f2239ab96b9e7689a4f8e5bc013efa1
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599528"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512513"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Redémarrer une capacité Power BI Premium
 
@@ -27,6 +27,9 @@ Power BI offre aux utilisateurs la possibilité d’effectuer des analyses compl
 La capacité partagée de Power BI assure une certaine protection contre de telles situations en imposant des limites sur les tailles de fichiers, les planifications d’actualisation et d’autres aspects du service. En revanche, dans une capacité Power BI Premium, la plupart de ces limites sont augmentées. Par conséquent, un seul rapport contenant une expression DAX incorrecte ou un modèle très complexe peut entraîner d’importants problèmes de performance. Lors de son traitement, le rapport peut consommer toutes les ressources disponibles sur la capacité. 
 
 Power BI s’améliore constamment dans la manière de protéger les utilisateurs de la capacité Premium contre ces problèmes. Nous mettons également à la disposition des administrateurs les outils nécessaires pour analyser à quels moments et pourquoi les capacités sont surchargées. Pour plus d’informations, consultez notre [session de formation courte](https://www.youtube.com/watch?v=UgsjMbhi_Bk&feature=youtu.be) et notre [session de formation longue](https://powerbi.tips/2018/07/). En même temps, vous avez besoin d’être en mesure d’atténuer ces problèmes majeurs dès qu’ils se produisent. Le moyen le plus rapide pour cela consiste à redémarrer la capacité.
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Les capacités de Gen2 en préversion ne nécessitant pas de redémarrages, cette fonctionnalité n’est pas disponible dans Premium Gen2.
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Le processus de redémarrage est-il sûr ? Vais-je perdre des données ?
 

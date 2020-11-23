@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/11/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 3948cca3a7e274c22ac1ea5cc80773edd0d5e451
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: b6f6b819b5c31f655d0c0dc43d8852cb34b5a7a2
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599781"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512053"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Superviser les capacités dans le portail d’administration
 
@@ -27,6 +27,8 @@ Si vous avez besoin de métriques plus complètes, utilisez l’application [Mé
 > [!IMPORTANT]
 > Si votre capacité Power BI Premium subit une utilisation intensive des ressources entraînant des problèmes de performances ou de fiabilité, vous pouvez recevoir des e-mails de notification pour identifier et résoudre le problème. Il peut s’agir d’un moyen simplifié de dépanner les capacités surchargées. Pour plus d’informations, consultez les [notifications de capacité et de fiabilité](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="system-metrics"></a>Métriques du système
 
@@ -124,3 +126,14 @@ Maintenant que vous avez compris comment surveiller les capacités de Power BI P
 
 > [!div class="nextstepaction"]
 > [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)
+
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 11/17/2020
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 8768801f2d704644c888a14caf9b930dcd27f8fa
-ms.sourcegitcommit: 54e571a10b0fdde5cd6036017eac9ef228de5116
+ms.openlocfilehash: 183885336f6f76304ba051599efa48d81111264a
+ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92501969"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94718957"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -58,13 +58,13 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 
 3. Renseignez les informations **Objet** et **Message** de l’e-mail.
 
-4. Sélectionnez une **Fréquence** pour votre abonnement :  **Quotidien** , **Toutes les heures** , **Hebdomadaire** , **Mensuel** ou **Après l’actualisation des données (une fois par jour)** . Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Toutes les heures** ou **Hebdomadaire** , puis choisissez les jours auxquels vous voulez le recevoir. Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** , puis décochez les cases **Sam** et **Dim**. Si vous sélectionnez **Mensuel** , entrez le ou les jours du mois auxquels vous souhaitez recevoir l’e-mail d’abonnement.
+4. Sélectionnez une **Fréquence** pour votre abonnement :  **Quotidien**, **Toutes les heures**, **Hebdomadaire**, **Mensuel** ou **Après l’actualisation des données (une fois par jour)** . Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Toutes les heures** ou **Hebdomadaire**, puis choisissez les jours auxquels vous voulez le recevoir. Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire**, puis décochez les cases **Sam** et **Dim**. Si vous sélectionnez **Mensuel**, entrez le ou les jours du mois auxquels vous souhaitez recevoir l’e-mail d’abonnement.
 
-5. Si vous choisissez **Quotidien** , **Toutes les heures** , **Mensuel** ou **Hebdomadaire** , vous pouvez également choisir une **Heure planifiée** pour l’abonnement. Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après. Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire. Si vous choisissez **Toutes les heures** , sélectionnez l’ **Heure planifiée** à laquelle vous voulez que l’abonnement démarre : il sera alors exécuté toutes les heures après cela.
+5. Si vous choisissez **Quotidien**, **Toutes les heures**, **Mensuel** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement. Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après. Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire. Si vous choisissez **Toutes les heures**, sélectionnez l’**Heure planifiée** à laquelle vous voulez que l’abonnement démarre : il sera alors exécuté toutes les heures après cela.
 
 6. Par défaut, la date de début de votre abonnement est la date de sa création. Vous pouvez sélectionner une date de fin. Si vous ne définissez pas de date de fin, la date de fin est automatiquement un an après la date de début. Vous pouvez la remplacer par n’importe quelle date dans le futur (jusqu’à l’année 9999) à tout moment avant la fin de l’abonnement. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez. Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.
 
-    Dans la capture d’écran ci-dessous, vous voyez que quand vous vous abonnez à un rapport, vous vous abonnez en fait à une _page_ de rapport. Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement** , puis sélectionnez une autre page.
+    Dans la capture d’écran ci-dessous, vous voyez que quand vous vous abonnez à un rapport, vous vous abonnez en fait à une _page_ de rapport. Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement**, puis sélectionnez une autre page.
      
     ![Volet S’abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)  
 
@@ -122,6 +122,7 @@ Les administrateurs Power BI peuvent utiliser les journaux d’audit Power BI 
 - Les abonnements ne prennent pas en charge les signets pour l’instant.
 - L’option permettant de fournir l’accès au rapport/tableau de bord s’affiche toujours comme étant activée quand vous modifiez un abonnement existant.  Si vous désactivez cette option et que vous enregistrez l’abonnement, il enregistre cet état. Cependant, quand vous modifiez à nouveau le rapport, elle est activée par défaut.
 - Si vous avez une adresse e-mail secondaire, mais pas d’adresse e-mail principale, Power BI l’utilise pour remettre l’abonnement.
+- Si vous abonnez des utilisateurs externes à un rapport ou à un tableau de bord, ils reçoivent une notification de partage dès que vous sélectionnez **Enregistrer et fermer** dans le volet d’abonnement. Cette notification est envoyée uniquement aux utilisateurs externes (pas aux utilisateurs internes), car ils ont besoin d’un lien d’invitation pour afficher le rapport ou le tableau de bord. 
 
 ### <a name="dashboards"></a>Tableaux de bord
 

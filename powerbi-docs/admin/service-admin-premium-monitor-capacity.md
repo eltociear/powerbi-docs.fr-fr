@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/18/2020
+ms.date: 11/11/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: e13e3ec52ab9eecf3f98b5610df9d83243d7c092
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 46e2684b468e480da5db5287ffc40466d71c8f22
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599812"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512214"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
@@ -24,6 +24,9 @@ L’application est mise à jour régulièrement avec de nouvelles fonctionnalit
 
 > [!IMPORTANT]
 > Si votre capacité Power BI Premium subit une utilisation intensive des ressources entraînant des problèmes de performances ou de fiabilité, vous pouvez recevoir des e-mails de notification pour identifier et résoudre le problème. Il peut s’agir d’un moyen simplifié de dépanner les capacités surchargées. Pour plus d’informations, consultez les [notifications de capacité et de fiabilité](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
 
 ## <a name="install-the-app"></a>Installer l’application
 
@@ -304,3 +307,15 @@ Vous pouvez également utiliser l’application Métriques de capacité Power B
 
 > [!div class="nextstepaction"]
 > [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)
+
+D’autres questions ? [Poser des questions à la communauté Power BI](https://community.powerbi.com/)
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

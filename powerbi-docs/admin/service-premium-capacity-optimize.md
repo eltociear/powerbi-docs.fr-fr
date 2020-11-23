@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 04/09/2019
-ms.custom: seodec18
+ms.date: 11/11/2020
+ms.custom: ''
 LocalizationGroup: Premium
-ms.openlocfilehash: 21aa643c82887ec9beaca659d9e2e97a0f1cdcc9
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: ec9ef81a4a8f4da0ffdf651d08b307e13212635a
+ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599304"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94512835"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimiser les capacités Premium
 
@@ -27,6 +27,11 @@ Quand une capacité Premium supplémentaire est exigée, deux options sont décr
 - Ajout d’une capacité Premium
 
 Enfin, les approches de test et le dimensionnement de la capacité Premium concluent cet article.
+
+> [!NOTE]
+> Une nouvelle version de Power BI Premium a récemment été publiée. Celle-ci, appelée **Premium Gen2**, est actuellement en préversion. Premium Gen2 vise à simplifier la gestion des capacités Premium et à réduire la charge de gestion. Pour plus d’informations, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).
+
+Les recommandations et bonnes pratiques présentées dans cet article visent à optimiser l’utilisation du processeur de chaque jeu de données et d’autres artefacts Power BI.
 
 ## <a name="best-practices"></a>Meilleures pratiques
 
@@ -97,7 +102,7 @@ Les tableaux suivants présentent les problèmes possibles et les moyens de les 
 | --- | --- | --- |
 | Temps d’attente des requêtes élevé.<br><br> Saturation de l’UC.<br><br> Les limites de connexion DQ/LC sont dépassées. | Surveillez l’utilisation de l’UC \[[4](#endnote-4)\], les temps d’attente des requêtes, et les métriques d’utilisation DQ/LC \[[5](#endnote-5)\] + les durées des requêtes. En cas de fluctuation, cela peut indiquer des problèmes d’accès concurrentiel. | Mettez à l’échelle la capacité ou attribuez le contenu à une capacité différente.<br><br> Remaniez les rapports avec moins d’éléments visuels par page. |
 
-**Notes :**    
+**Remarques :**    
 <a name="endnote-1"></a>\[1\] Utilisation moyenne de la mémoire (Go) et consommation de mémoire la plus élevée (Go).   
 <a name="endnote-2"></a>\[2\] Éviction de jeux de données.   
 <a name="endnote-3"></a>\[3\] Requêtes du jeu de données, durée moyenne des requêtes de jeu de données (ms), compteur d’attente du jeu de données et temps d’attente moyen du jeu de données (ms).   
@@ -226,7 +231,7 @@ Une considération supplémentaire pour les jeux de données hébergés en exter
 
 En outre, il peut être intéressant de noter que les bases de données Azure Analysis Services et les bases de données tabulaires SQL Server Analysis Services requièrent que leurs modèles soient entièrement chargés en mémoire et qu’ils y restent à tout moment pour prendre en charge l’interrogation. À l’instar du service Power BI, il doit y avoir suffisamment de mémoire pour l’actualisation si le modèle doit rester en ligne pendant l’actualisation. Contrairement au service Power BI, il n’existe aucun concept dans lequel les modèles sont automatiquement vieillis et sortis de la mémoire en fonction de leur utilisation. Par conséquent, Power BI Premium offre une approche plus efficace pour optimiser l’interrogation du modèle avec une utilisation plus faible de la mémoire.
 
-## <a name="capacity-planning"></a>Planification de la capacité
+## <a name="capacity-planning"></a>planification de la capacité
 
 La taille d’une capacité Premium détermine les ressources de mémoire et de processeur disponibles, ainsi que les limites imposées à la capacité. Le nombre de capacités Premium est également un facteur important, car la création de plusieurs capacités Premium peut aider à isoler les charges de travail les unes des autres. Notez que le stockage est de 100 To par nœud de capacité, ce qui est susceptible d’être plus que suffisant pour toute charge de travail.
 
@@ -258,7 +263,7 @@ Si vous disposez déjà d’une capacité et des rapports pour lesquels vous sou
 
 Pour générer un test plus complexe, envisagez de développer une application de test de charge simulant une charge de travail réaliste. Pour plus d’informations, consultez le webinaire [Applications Power BI de test de charge avec le test de charge Visual Studio](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
-## <a name="acknowledgements"></a>Accusés de réception
+## <a name="acknowledgments"></a>Remerciements
 
 Cet article a été écrit par Peter Myers, expert Data Plateform MVP et BI indépendant avec des solutions [Bitwise](https://www.bitwisesolutions.com.au/).
 
@@ -268,3 +273,13 @@ Cet article a été écrit par Peter Myers, expert Data Plateform MVP et BI ind�
 > [Scénarios de capacité Premium](service-premium-capacity-scenarios.md)   
   
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+
+Introduite par Power BI, l’offre en préversion Power BI Premium Gen2 apporte les améliorations suivantes à l’expérience Power BI Premium :
+* Performances
+* Licences par utilisateur
+* Mise à l’échelle supérieure
+* Métriques améliorées
+* Mise à l’échelle automatique
+* Charge de gestion réduite
+
+Pour plus d’informations sur Power BI Premium Gen2, consultez [Power BI Premium Generation 2 (préversion)](service-premium-what-is.md#power-bi-premium-generation-2-preview).

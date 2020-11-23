@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/12/2020
+ms.date: 11/11/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8565f6ef18192110688d01127129dcc19919cb0f
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: 143d4a51a403563b337c753055fa56e9c25edc26
+ms.sourcegitcommit: 029aacd09061a8aa45b57f05d0dc95c93dd16a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256548"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94560031"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 
@@ -90,7 +90,6 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Snowflake
 * Essbase
 * Cubes AtScale
-* Connecteur BI 
 * Data Virtuality LDW (bêta)
 * Denodo
 * Dremio
@@ -100,8 +99,10 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Jethro (bêta)
 * Kyligence
 * Bases de données Linkar de style choix / multivaleurs (bêta)
-* MarkLogic
 * MariaDB (bêta)
+* MarkLogic
+* Connecteur BI
+* Actian (bêta)
 
 > [!NOTE]
 > Certains connecteurs de base de données doivent être activés. Pour cela, sélectionnez **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en version préliminaire** et activez le connecteur. Si vous ne voyez pas certains des connecteurs mentionnés ci-dessus et que vous souhaitez les utiliser, vérifiez les paramètres **Fonctions en version préliminaire**. Notez également qu’une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
@@ -141,8 +142,8 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Cost Management
-* Azure Time Series Insights (bêta)
 * Azure Databricks
+* Azure Time Series Insights (bêta)
 
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
@@ -185,21 +186,21 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Emigo Data Source
 * Entersoft Business Suite (bêta)
 * FactSet Analytics
-* API Hexagon PPM Smart
+* Palantir Foundry
+* Industrial App Store
 * Intune Data Warehouse (bêta)
 * Microsoft Graph Security (Bêta)
+* Projectplace pour Power BI
 * Product Insights (bêta)
 * Quick Base
+* Spigit (bêta)
 * TeamDesk (bêta)
 * Webtrends Analytics (bêta)
 * Witivio (bêta)
 * Analyse du temps de travail (bêta)
 * Zoho Creator (bêta)
-* Palantir Foundry
-* Industrial App Store
-* Projectplace pour Power BI
 * eWay-CRM (bêta)
-* Spigit (bêta)
+* API Hexagon PPM Smart
 
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
@@ -217,7 +218,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Microsoft Exchange
 * Fichier Hadoop (HDFS)
 * Spark
-* LLAP Hive (bêta)
+* LLAP Hive
 * Script R
 * Script Python
 * ODBC
@@ -242,6 +243,8 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Vena (bêta)
 * Vessel Insight (bêta)
 * Zucchetti HR Infinity (Beta)
+* Anaplan Connector v1.0 (bêta)
+* Starburst Enterprise Presto (bêta)
 * Requête vide
 
 

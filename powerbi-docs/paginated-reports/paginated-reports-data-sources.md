@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/27/2020
-ms.openlocfilehash: d6f436477a8226dec870d039c8fe10491456a325
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.date: 11/12/2020
+ms.openlocfilehash: 263992e760afe01eb44f41b80c2297cbd4b34163
+ms.sourcegitcommit: 7ee9398b30ab4ba40459cbb97e129e7dc853c93c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298193"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575304"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -27,7 +27,7 @@ Les rapports paginés prennent en charge en mode natif la liste suivante de sour
 
 | Source de données | Authentification | Notes |
 | --- | --- | --- |
-| Azure SQL Database <br>Azure SQL Data Warehouse | De base, authentification unique (SSO), OAuth2 | Vous pouvez utiliser une passerelle Entreprise avec Azure SQL DB. Toutefois, vous ne pouvez pas utiliser l’authentification unique ou oAuth2 pour vous authentifier dans ces scénarios.   |
+| Azure SQL Database <br>Azure SQL Data Warehouse | De base, authentification unique (SSO), OAuth2 | Vous pouvez utiliser une passerelle d’entreprise avec Azure SQL Database. Toutefois, vous ne pouvez pas utiliser l’authentification unique ou oAuth2 pour vous authentifier dans ces scénarios.   |
 | Azure SQL Managed Instance | De base | via un point de terminaison public ou privé (le point de terminaison privé doit être routé via Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | Le pare-feu AAS doit être désactivé ou configuré pour autoriser toutes les plages d’adresses IP dans la région BlackForest. Cela s’applique uniquement dans la région BlackForest.  L’authentification unique à partir du locataire externe n’est pas prise en charge. |
 | Jeu de données Power BI | SSO | Jeux de données Power BI Premium et non Premium. Nécessite une autorisation de lecture |
@@ -40,14 +40,14 @@ Pour les sources de données Azure SQL Database, vous devez fournir plus d’inf
 
 ## <a name="other-data-sources"></a>Autres sources de données
 
-En plus des sources de données prises en charge en mode natif ci-dessus, les sources de données suivantes sont accessibles par le biais d’une [passerelle de données Power BI](../connect-data/service-gateway-onprem.md) :
+En plus des sources de données prises en charge en mode natif ci-dessus, les sources de données suivantes sont accessibles par le biais d’une [passerelle d’entreprise Power BI](../connect-data/service-gateway-onprem.md) :
 
 - SQL Server
 - SQL Server Analysis Services
 - Oracle
 - Teradata
 
-Pour les rapports paginés, Azure SQL Database et Azure Analysis Services ne sont pas accessibles actuellement par le biais d’une passerelle de données Power BI.
+Pour les rapports paginés, Azure Analysis Services n’est pas accessible actuellement par le biais d’une passerelle d’entreprise Power BI.
 
 ## <a name="azure-sql-database-authentication"></a>Authentification Azure SQL Database
 
@@ -59,7 +59,7 @@ Si vous ne fournissez pas d’informations d’identification, une erreur se pro
 
 ![Paramètres pour Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
 
-Sélectionnez le lien **Modifier les informations d’identification** pour une source de données donnée afin d’afficher la boîte de dialogue **Configurer**  :
+Sélectionnez le lien **Modifier les informations d’identification** pour une source de données donnée afin d’afficher la boîte de dialogue **Configurer** :
 
 ![Configurer Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
 
