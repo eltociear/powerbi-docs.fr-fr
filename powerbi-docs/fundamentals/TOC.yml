@@ -39,6 +39,10 @@
               href: service-self-service-purchase-help.md
             - name: Obtenir de l’aide pour s’inscrire à Power BI
               href: service-self-service-sign-up-help.md
+        - name: Sécurité
+          items:
+            - name: Base de référence de la sécurité
+              href: security-baseline.md
     - name: Guides pratiques
       items:
         - name: "Obtenir Power\_BI\_Desktop"
