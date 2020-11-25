@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.openlocfilehash: d2cd9786a635aed79f334706f53c21fe87e723a4
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: df5e82af012f4d85fd81399d6e31fde3b7539ce6
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748951"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95513823"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Configurer les informations d’identification par programmation pour Power BI
 
 Suivez les étapes de cet article afin de configurer programmatiquement les informations d’identification pour Power BI.
 
 >[!NOTE]
->* L’utilisateur appelant doit être propriétaire de jeu de données ou administrateur de passerelle. Vous pouvez également utiliser un [principal de service](../embedded/embed-service-principal-certificate.md). Par exemple, le principal de service peut être le propriétaire du jeu de données.
+>* L’utilisateur appelant doit être propriétaire de jeu de données ou administrateur de passerelle. Vous pouvez également utiliser un [principal de service](../embedded/embed-service-principal.md). Par exemple, le principal de service peut être le propriétaire du jeu de données.
 >* Les sources de données cloud et les informations d’identification correspondantes sont gérées au niveau utilisateur.
 
 ## <a name="update-credentials-flow-for-data-sources"></a>Mettre à jour un flux d’informations d’identification pour les sources de données

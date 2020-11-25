@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7fcef8294d1e4ba4b3336d4a2456e0ccac787fb
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: de9e2004d7802b5f3eb7684678984a84a077ce89
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412323"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893726"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "93412323"
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé (KPI). La ligne (ou *aiguille* ) représente l’objectif ou la valeur cible. L’ombrage représente la progression vers cet objectif. La valeur à l’intérieur de l’arc représente la valeur de la progression. Power BI répartit toutes les valeurs possibles uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
+Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé (KPI). La ligne (ou *aiguille*) représente l’objectif ou la valeur cible. L’ombrage représente la progression vers cet objectif. La valeur à l’intérieur de l’arc représente la valeur de la progression. Power BI répartit toutes les valeurs possibles uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
 
 ![Capture d’écran de la jauge radiale.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
@@ -46,11 +46,11 @@ Les graphiques en jauge radiale sont conseillés pour :
 
 ## <a name="prerequisites"></a>Prérequis
 
-Ce tutoriel utilise le [fichier Excel d’exemple financier](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier Excel d’exemple financier](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Obtenir les données** > **Excel**.
    
-2. Trouver votre copie de l’ **du fichier Excel d’exemple financier**
+2. Trouver votre copie de l’**du fichier Excel d’exemple financier**
 
 1. Ouvrez le **fichier Excel d’exemple financier** dans la vue Rapport ![Capture d’écran de l’icône Vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
@@ -83,7 +83,7 @@ Ce tutoriel utilise le [fichier Excel d’exemple financier](https://download.mi
     Selon le moment où vous téléchargez le fichier **Financial Sample** (exemple financier), les valeurs affichées peuvent ne pas correspondre à ces chiffres.
 
     > [!TIP]
-    > Par défaut, Power BI crée un graphique en jauge où la valeur actuelle (dans cet exemple, le **chiffre d’affaires brut moyen** ) est présumée être au milieu de la jauge. La valeur du **chiffre d’affaires brut moyen** étant de 182 760 $, la valeur de départ (Minimum) est définie sur 0 et la valeur de fin (Maximum) est définie sur le double de la valeur actuelle.
+    > Par défaut, Power BI crée un graphique en jauge où la valeur actuelle (dans cet exemple, le **chiffre d’affaires brut moyen**) est présumée être au milieu de la jauge. La valeur du **chiffre d’affaires brut moyen** étant de 182 760 $, la valeur de départ (Minimum) est définie sur 0 et la valeur de fin (Maximum) est définie sur le double de la valeur actuelle.
 
 ### <a name="step-3-set-a-target-value"></a>Étape 3 : Sélectionner la valeur cible
 
@@ -126,7 +126,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
    ![Capture d’écran du graphique en jauge et du volet Mise en forme avec l’icône en forme de rouleau.](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
 
-1. Développez l’ **axe de la jauge** et entrez des valeurs pour **Min** et **Max**.
+1. Développez l’**axe de la jauge** et entrez des valeurs pour **Min** et **Max**.
 
     ![Capture d’écran des options de l’axe de la jauge.](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-axis.png)
 
@@ -134,7 +134,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
     ![Capture d’écran de l’option COGS effacée.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
-1. Lorsque le champ **Cible** apparaît sous **Axe de la jauge** , entrez une valeur.
+1. Lorsque le champ **Cible** apparaît sous **Axe de la jauge**, entrez une valeur.
 
      ![Capture d’écran des options de l’axe de la jauge avec la cible affichée.](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-target.png)
 

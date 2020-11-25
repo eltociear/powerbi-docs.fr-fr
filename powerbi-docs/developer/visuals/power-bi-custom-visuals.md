@@ -10,18 +10,18 @@ ms.subservice: powerbi-desktop
 ms.topic: overview
 ms.date: 07/14/2020
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 62a88a8267ae38b1dbfc0bbb0ee1d9020e7f9408
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: 8ea72198ded59f3ce5dce1362ab9320fc119fac6
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049243"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514383"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
 Power BI est fourni avec de nombreux visuels Power BI prêts à l’emploi. Ces visuels sont disponibles dans le volet de visualisation de [Power BI Desktop](https://powerbi.microsoft.com/desktop/) et du [service Power BI](https://app.powerbi.com), et peuvent être utilisés pour la création et la modification de contenu Power BI.
 
-![Capture d’écran du volet de visualisation Power BI tel qu’il apparaît dans Power BI Desktop et le service Power BI.](media/power-bi-custom-visuals/power-bi-visualizations.png)
+:::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Capture d’écran du volet de visualisation Power BI tel qu’il apparaît dans Power BI Desktop et le service Power BI.":::
 
 De nombreux autres visuels Power BI sont disponibles à partir de Microsoft [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) ou par le biais de Power BI. Ces visuels sont créés par Microsoft et les partenaires Microsoft, et sont testés et validés par l’équipe de validation AppSource.
 
