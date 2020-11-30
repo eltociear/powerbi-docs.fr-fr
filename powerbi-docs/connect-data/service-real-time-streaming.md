@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/16/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8ec7b228f17fc87dcaac6ae5e278dd2c99ab036d
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 6543f1246a3462f02aaae7d22b11ba35d3725c01
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116635"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012058"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout visuel ou tableau de bord créé dans Power BI peut afficher et mettre à jour des données et des visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des métriques d’utilisation de service, ou d’autres dispositifs permettant de collecter ou transmettre des données.
@@ -101,7 +101,7 @@ Lorsque vous créez le jeu de données de streaming, vous pouvez choisir d’act
 Quand l’option **Analyse des données d’historique** est désactivée (c’est le cas par défaut), créez un **jeu de données de streaming**, comme décrit précédemment dans cet article. Lorsque l’option **Analyse des données d’historique** est *activée*, le jeu de données créé est à la fois un **jeu de données de streaming** et un **jeu de données de transmission**. Cela équivaut à utiliser les API REST Power BI pour créer un jeu de données dont l’indicateur *defaultMode* est défini sur *pushStreaming*, comme décrit précédemment dans cet article.
 
 > [!NOTE]
-> Pour les jeux de données en streaming créés à l’aide de l’interface utilisateur du service Power BI, comme décrit dans le paragraphe précédent, l’authentification Azure Active Directory n’est pas requise. Le propriétaire de ces jeux de données reçoit une URL avec une clé de ligne, qui autorise le demandeur à transmettre des données au jeu de données sans utiliser de jeton de porteur Azure AD OAuth. Notez toutefois que l’approche avec Azure AD (AAD) fonctionne également pour transmettre des données au jeu de données.
+> Pour les jeux de données en streaming créés à l’aide de l’interface utilisateur du service Power BI, comme décrit dans le paragraphe précédent, l’authentification Azure Active Directory n’est pas requise. Le propriétaire de ces jeux de données reçoit une URL avec une clé de ligne, qui autorise le demandeur à transmettre des données au jeu de données sans utiliser de jeton de porteur Azure AD OAuth. Notez toutefois que l’approche avec Azure AD (AAD) fonctionne également pour envoyer (push) des données au jeu de données.
 > 
 > 
 
@@ -150,7 +150,7 @@ Il existe deux façons de créer un flux de données de streaming en temps réel
 Les sections suivantes examinent successivement chaque option.
 
 ### <a name="using-the-power-bi-rest-api"></a>Utilisation de l’API REST Power BI
-**API REST Power BI**les récentes améliorations de l’API REST Power BI visent à faciliter le streaming en temps réel pour les développeurs. Lorsque vous sélectionnez **API** dans la fenêtre **Nouveau jeu de données de streaming**, vous devez fournir des entrées permettant à Power BI se connecter à votre point de terminaison et de l’utiliser :
+**API REST Power BI** les récentes améliorations de l’API REST Power BI visent à faciliter le streaming en temps réel pour les développeurs. Lorsque vous sélectionnez **API** dans la fenêtre **Nouveau jeu de données de streaming**, vous devez fournir des entrées permettant à Power BI se connecter à votre point de terminaison et de l’utiliser :
 
 ![Capture d’écran de la boîte de dialogue Nouveau jeu de données de streaming, montrant les entrées de l’API REST Power BI pour la connexion.](media/service-real-time-streaming/real-time-streaming_5.png)
 

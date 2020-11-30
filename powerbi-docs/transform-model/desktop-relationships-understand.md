@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 472f2ecce2e28fcb7d50356ec1322f67f2395411
-ms.sourcegitcommit: 701dd80661a63c76d37d1e4f159f90e3fc8c3160
+ms.openlocfilehash: d162f4c4bb481eadc01fc1fac09c8b25e084fdbf
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136002"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94946952"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Relations de modèle dans Power BI Desktop
 
@@ -32,7 +32,7 @@ Les chemins de relation sont déterministes, ce qui signifie que les filtres son
 
 Voyons comment les relations propagent les filtres à travers un exemple animé.
 
-![Exemple animé de propagation de filtres de relation](media/desktop-relationships-understand/animation-filter-propagation.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-filter-propagation.gif" alt-text="Exemple animé de propagation des filtres de relations.":::
 
 Dans cet exemple, le modèle se compose de quatre tables : **Category**, **Product**, **Year** et **Sales**. La table **Category** est associée à la table **Product**, et la table **Product** est associée à la table **Sales**. La table **Year** est également associée à la table **Sales**. Toutes les relations sont de type un-à-plusieurs (vous trouverez des détails à ce sujet plus loin dans cet article).
 
@@ -150,7 +150,7 @@ En revanche, un modèle Composite peut comprendre des tables qui utilisent diff�
 
 Penchons-nous sur un exemple de modèle Composite.
 
-![Exemple de modèle Composite constitué de deux îlots](media/desktop-relationships-understand/data-island-example.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example.png" alt-text="Exemple de modèle Composite constitué de deux îlots.":::
 
 Dans cet exemple, le modèle Composite se compose de deux îlots : un îlot de données Vertipaq et un îlot de données sources DirectQuery. L’îlot de données Vertipaq contient trois tables, tandis que l’îlot de données sources DirectQuery en contient deux. Il existe une relation inter-îlots pour associer une table de l’îlot de données Vertipaq à une table de l’îlot de données sources DirectQuery.
 
@@ -158,9 +158,9 @@ Dans cet exemple, le modèle Composite se compose de deux îlots : un îlot de 
 
 Une relation de modèle est dite _régulière_ quand le moteur de requête peut déterminer le côté « un » d’une relation. Il a la confirmation que la colonne du côté « un » contient des valeurs uniques. Toutes les relations intra-îlots Un-à-plusieurs sont des relations régulières.
 
-Dans l’exemple suivant, il existe deux relations régulières, toutes deux représentées par la lettre **S**. Les relations incluent la relation Un-à-plusieurs contenue dans l’îlot Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
+Dans l’exemple suivant, il existe deux relations régulières, toutes deux représentées par la lettre **R**. Les relations incluent la relation Un-à-plusieurs contenue dans l’îlot Vertipaq et la relation Un-à-plusieurs contenue dans la source DirectQuery.
 
-![Exemple de modèle Composite constitué de deux îlots avec indication de relations régulières](media/desktop-relationships-understand/data-island-example-strong.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example-regular.png" alt-text="Exemple de modèle Composite constitué de deux îlots avec indication de relations régulières.":::
 
 Pour les modèles Importer, où toutes les données sont stockées dans le cache Vertipaq, une structure de données est créée pour chaque relation régulière au moment où les données sont actualisées. Les structures de données sont constituées de mappages indexés de toutes les valeurs de colonne à colonne, et leur objectif est d’accélérer la jointure des tables au moment de la requête.
 
@@ -177,7 +177,7 @@ Les lignes virtuelles vides sont en fait des _membres inconnus_. Les membres inc
 
 Voyons comment l’extension de table fonctionne à travers un exemple animé.
 
-![Exemple animé d’extension de table](media/desktop-relationships-understand/animation-expanded-table.gif)
+:::image type="content" source="media/desktop-relationships-understand/animation-expanded-table.gif" alt-text="Exemple animé d’extension de table.":::
 
 Dans cet exemple, le modèle se compose de trois tables : **Category**, **Product** et **Sales**. La table **Category** est liée à la table **Product** par une relation Un-à-plusieurs, et la table **Product** est liée à la table **Sales** par une relation Un-à-plusieurs. La table **Category** contient deux lignes, la table **Product** en contient trois et la table **Sales** en contient cinq. Il existe des correspondances de valeurs des deux côtés des relations, ce qui signifie qu’il n’existe pas de violations d’intégrité référentielle. Une table étendue s’affiche au moment de la requête. La table est constituée des colonnes des trois tables. Il s’agit en fait d’une perspective dénormalisée des données contenues dans les trois tables. Une nouvelle ligne est ajoutée à la table **Sales** et sa valeur d’identificateur de production (9) n’a pas de correspondance dans la table **Product**. Il s’agit d’une violation d’intégrité référentielle. Dans la table étendue, la nouvelle ligne contient des valeurs (vides) pour les colonnes des tables **Category** et **Product**.
 
@@ -188,9 +188,9 @@ Une relation de modèle est dite _limitée_ quand le côté « un » n’est p
 - La relation utilise un type de cardinalité Plusieurs-à-plusieurs (même si une colonne ou les deux contiennent des valeurs uniques)
 - La relation est de type inter-îlot (ce qui ne peut être le cas que des modèles Composite)
 
-Dans l’exemple suivant, il existe deux relations limitées, toutes deux représentées par la lettre **W**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans l’îlot Vertipaq et la relation inter-ilôts Un-à-plusieurs.
+Dans l’exemple suivant, il existe deux relations limitées, toutes deux représentées par la lettre **L**. Les deux relations incluent la relation Plusieurs-à-plusieurs contenue dans l’îlot Vertipaq et la relation inter-ilôts Un-à-plusieurs.
 
-![Exemple de modèle Composite constitué de deux îlots avec indication de relations limitées](media/desktop-relationships-understand/data-island-example-weak.png)
+:::image type="content" source="media/desktop-relationships-understand/data-island-example-limited.png" alt-text="Exemple de modèle Composite constitué de deux îlots avec indication de relations limitées.":::
 
 Pour les modèles Importer, les relations limitées ne font jamais l’objet d’une création de structure de données. Cela signifie que les jointures de table doivent être résolues au moment de la requête.
 

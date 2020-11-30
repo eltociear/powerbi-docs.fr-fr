@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d218a0cfb66e57e6f52301f8c10bef5cfb137b4b
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 340a4739065716e67f9fd1a7d7b78f875805f12b
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361862"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94946906"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Navigateurs pris en charge pour Power BI
 
-Power BI est conçu pour fonctionner avec n’importe lequel des navigateurs pris en charge ci-après, mais les performances varient d’un navigateur à l’autre. En particulier, si vous utilisez Internet Explorer, vous risquez de connaître de mauvaises performances. Nous vous recommandons vivement d’opter pour un navigateur moderne, notamment Microsoft Edge, pour obtenir de meilleures performances. Nous pensons que les performances de Microsoft Edge continueront à s’améliorer avec Edge Chromium. Si les performances sont toujours inacceptables, testez d’autres navigateurs modernes pris en charge afin de voir s’ils fournissent de meilleurs résultats pour votre solution Power BI.
+Power BI est conçu pour fonctionner avec n’importe lequel des navigateurs pris en charge ci-après, mais les performances varient d’un navigateur à l’autre. En particulier, si vous utilisez Internet Explorer, vous risquez de connaître de mauvaises performances. Nous vous recommandons vivement de passer d’Internet Explorer à un navigateur moderne, par exemple Microsoft Edge. Si les performances sont toujours inacceptables, testez d’autres navigateurs modernes pris en charge afin de voir s’ils fournissent de meilleurs résultats pour votre solution Power BI.
 
 Power BI prend en charge ces navigateurs sur toutes les plateformes où ils sont disponibles :
 

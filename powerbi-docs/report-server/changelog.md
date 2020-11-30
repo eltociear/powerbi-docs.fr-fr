@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/29/2020
-ms.openlocfilehash: 3173108abe6082c199cbf6ff1229ca57fde31064
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.date: 11/18/2020
+ms.openlocfilehash: 2989436c2a501447cab2d95e0ac1d3fad1fd99b6
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044779"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947021"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -23,6 +23,12 @@ Pour plus d’informations sur les nouvelles fonctionnalités, consultez [Nouvea
 
 ## <a name="october-2020"></a>Octobre 2020
 - **Power BI Report Server**
+    - *Version : 1.9.7627.11028 (Build 15.0.1104.264), Date de publication : 18 novembre 2020*
+        - Résolution des bogues
+            - Correction du problème empêchant les utilisateurs de modifier des champs dans les paramètres du site via le portail.
+            - Correction du problème d’actualisation des rapports Power BI lors de l’utilisation de la source de données « EnterData ».
+            - Correction du problème d’actualisation de certains modèles utilisant des métadonnées de jeu de données avancées.
+            - Correction du problème où certains rapports de Power BI ne pouvaient pas être publiés sur le serveur de rapports.
     - *Version : 1.9.7604.41261 (build 15.0.1104.239), Date de publication : 27 octobre 2020*
          - Fonctionnalités
             - Ajout de la prise en charge des métadonnées de jeu de données avancées dans Power BI Report Server.

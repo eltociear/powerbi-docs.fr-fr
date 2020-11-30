@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.openlocfilehash: 1f7a04ca8920ef56e0e7de4efad47afa894e76d7
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d485c7ab7583d2604cd9da9e4c122c6cceeeb4fe
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861173"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012013"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Présentation du Manuel du développeur, Power BI Report Server
 
@@ -42,7 +42,13 @@ Vous disposez de plusieurs options d’API permettant d’interagir avec Power B
 Vous pouvez aussi utiliser des [utilitaires PowerShell](https://github.com/Microsoft/ReportingServicesTools) open source pour gérer votre serveur de rapports.
 
 > [!NOTE]
-> Les utilitaires PowerShell ne prennent actuellement pas en charge les fichiers Power BI Desktop (.pbix).
+> Les utilitaires PowerShell prennent en charge les fichiers Power BI Desktop (.pbix) via les commandes -RsRest*.
+
+Exécutez la commande suivante pour trouver les commandes du module PowerShell ReportingServicesTools qui prennent en charge les fichiers Power BI Desktop (.pbix).
+
+```powershell
+Get-Command -Module ReportingServicesTools -Noun RsRest*
+```
 
 ## <a name="custom-extensions"></a>Extensions personnalisées
 
@@ -50,7 +56,7 @@ La bibliothèque d’extensions est un ensemble de classes, d’interfaces et de
 
 Vous pouvez créer plusieurs types d’extensions.
 
-* Extensions de traitement des données
+* Extensions pour le traitement des données
 * Extensions de remise
 * Extensions de rendu pour les rapports paginés
 * Extensions de sécurité
@@ -60,7 +66,7 @@ Pour plus d’informations, voir [Bibliothèque d’extensions](/sql/reporting-s
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Prise en main du contrôle Visionneuse de rapports](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
-[Création d’Applications à l’aide du service web et de .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
+[Création d’applications à l’aide du service web et du .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
 [Accès URL](/sql/reporting-services/url-access-ssrs)  
 [Bibliothèque d’extensions](/sql/reporting-services/extensions/reporting-services-extension-library)  
 [Fournisseur WMI](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)

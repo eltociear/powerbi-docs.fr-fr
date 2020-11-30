@@ -1,18 +1,18 @@
 ---
 title: Créer un rapport paginé avec un jeu de données partagé Power BI – Power BI Report Builder
 description: Créez un rapport paginé dans Power BI Report Builder sur la base d’un jeu de données partagé Power BI.
-ms.date: 07/08/2020
+ms.date: 11/18/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 44f1c1280e176d99ab909402a77804074e7d8cbd
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 9b8e7ac37b42e74835cde120ad1465df586a8fe3
+ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298107"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94893703"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Créer un rapport paginé sur la base d’un jeu de données partagé Power BI
 
@@ -32,7 +32,7 @@ Voici une liste de ce dont vous avez besoin et ce dont vous n’avez pas besoin 
 - Pour accéder à un jeu de données Power BI, vous devez disposer de l’autorisation Build pour le jeu de données. En savoir plus sur [l’autorisation de génération](../connect-data/service-datasets-build-permissions.md).
 - Vous n’avez pas besoin d’une licence Power BI Pro pour créer un rapport paginé dans le générateur de rapports. 
 - Pour publier votre rapport paginé, vous avez besoin d’une licence Power BI Pro. Vous avez également besoin d’un rôle contributeur au minimum pour un espace de travail dans une capacité Premium. 
-- Facultatif : Si vous souhaitez suivre cet article, téléchargez le fichier exemple [Retail Analysis sample.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) de Power BI Desktop, ouvrez-le dans Power BI Desktop et ajoutez une table avec un grand nombre de colonnes. Dans le volet **Format** , désactivez **Totals**. Publiez-le ensuite dans un espace de travail du service Power BI.
+- Facultatif : Si vous souhaitez suivre cet article, téléchargez le fichier exemple [Retail Analysis sample.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) de Power BI Desktop, ouvrez-le dans Power BI Desktop et ajoutez une table avec un grand nombre de colonnes. Dans le volet **Format**, désactivez **Totals**. Publiez-le ensuite dans un espace de travail du service Power BI.
 
     ![Totals désactivé](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 
@@ -80,11 +80,11 @@ Voici à présent les étapes à suivre pour obtenir la requête.
 
         ![Icône de mesure](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
-1. Sur le ruban **Affichage** , sélectionnez **Analyseur de performances**.
+1. Sur le ruban **Affichage**, sélectionnez **Analyseur de performances**.
 
     ![Ouvrez l’analyseur de performances](media/report-builder-shared-datasets/power-bi-performance-analyzer.png)
 
-1. Dans le volet **Analyseur de performances** , sélectionnez **Démarrer l’enregistrement** , puis **Actualiser les éléments visuels**.
+1. Dans le volet **Analyseur de performances**, sélectionnez **Démarrer l’enregistrement**, puis **Actualiser les éléments visuels**.
 
     ![Actualiser les visuels](media/report-builder-shared-datasets/power-bi-performance-analyzer-refresh-visuals.png)
 
@@ -95,7 +95,7 @@ Voici à présent les étapes à suivre pour obtenir la requête.
 ## <a name="create-the-dataset-with-the-query"></a>Créer le jeu de données avec la requête
 
 1. Retournez au générateur de rapports Power BI.
-1. Faites un clic droit sur le jeu de données sous **Source de données** , puis sélectionnez **Ajouter un jeu de données**.
+1. Faites un clic droit sur le jeu de données sous **Source de données**, puis sélectionnez **Ajouter un jeu de données**.
 
     ![Ajouter un jeu de données](media/report-builder-shared-datasets/power-bi-report-builder-add-dataset.png)
 
@@ -134,7 +134,7 @@ Voici à présent les étapes à suivre pour obtenir la requête.
 
 Un moyen rapide de créer une table consiste à utiliser l’Assistant Table.
 
-1. Dans le ruban **Insertion** , sélectionnez **Table** > **Assistant Table**.
+1. Dans le ruban **Insertion**, sélectionnez **Table** > **Assistant Table**.
 
     ![Démarrer l’assistant Table](media/report-builder-shared-datasets/power-bi-report-builder-table-wizard.png)
 
@@ -173,10 +173,10 @@ Un moyen rapide de créer une table consiste à utiliser l’Assistant Table.
 
 Vous avez plusieurs options de mise en forme pour que votre tableau tienne sur une seule page. 
 
-1. Vous pouvez affiner les marges de page dans le volet Propriétés. Si vous ne voyez pas le volet Propriétés, dans le ruban **Affichage** , activez la case à cocher **Propriétés**.
+1. Vous pouvez affiner les marges de page dans le volet Propriétés. Si vous ne voyez pas le volet Propriétés, dans le ruban **Affichage**, activez la case à cocher **Propriétés**.
 
 1. Sélectionnez le rapport, et non la table ou le titre.
-1. Dans le volet **Propriétés du rapport** , sous **Page** , développez **Marges** et remplacez-les par **0,75 pouce**.
+1. Dans le volet **Propriétés du rapport**, sous **Page**, développez **Marges** et remplacez-les par **0,75 pouce**.
 
     ![Définir les marges de page](media/report-builder-shared-datasets/power-bi-report-builder-page-margins.png)
 
@@ -190,7 +190,7 @@ Vous avez plusieurs options de mise en forme pour que votre tableau tienne sur u
 
     ![Sélectionner plusieurs cellules](media/report-builder-shared-datasets/power-bi-report-builder-select-cells.png)
 
-1. Sur le ruban **Accueil** , dans la section **Nombre** , remplacez le format **Par défaut** par un format numérique tel que **Devise**.
+1. Sur le ruban **Accueil**, dans la section **Nombre**, remplacez le format **Par défaut** par un format numérique tel que **Devise**.
 
     ![Définir un format de nombre](media/report-builder-shared-datasets/power-bi-report-builder-number-format.png)
 
@@ -198,7 +198,7 @@ Vous avez plusieurs options de mise en forme pour que votre tableau tienne sur u
 
     ![Afficher les exemples de valeurs](media/report-builder-shared-datasets/power-bi-report-builder-sample-values.png)
 
-1. Le cas échéant, dans la section **Nombre** , diminuez les décimales pour économiser de l’espace.
+1. Le cas échéant, dans la section **Nombre**, diminuez les décimales pour économiser de l’espace.
 
 ### <a name="getting-rid-of-blank-pages"></a>Récupération des pages vides
 
@@ -211,7 +211,7 @@ Par exemple, imaginons que votre rapport a un format 8,5 pouces x 11 pouces et q
 1. Sélectionnez le bord droit de la surface de conception du rapport, puis faites-le glisser afin qu’il soit inférieur au nombre souhaité sur la règle. 
 
     > [!TIP]
-    > Vous pouvez le définir de manière plus précise dans les propriétés du **corps**. Sous **Taille** , définissez la propriété **largeur**.
+    > Vous pouvez le définir de manière plus précise dans les propriétés du **corps**. Sous **Taille**, définissez la propriété **largeur**.
 
     ![Définir la taille du corps](media/report-builder-shared-datasets/power-bi-report-builder-body-size.png)
 
@@ -222,6 +222,7 @@ Par exemple, imaginons que votre rapport a un format 8,5 pouces x 11 pouces et q
 ## <a name="limitations-and-considerations"></a>Considérations et limitations 
 
 - Pour les jeux de données qui utilisent une connexion active à Analysis Services, vous pouvez vous connecter directement à l’aide de la connexion Analysis Services sous-jacente au lieu d’un jeu de données partagé.
+- Si vous voulez utiliser un jeu de données Power BI qui utilise DirectQuery dans Power BI Report Builder, le jeu de données doit inclure une mesure, même si vous ne prévoyez pas d’utiliser la mesure dans votre rapport. Sans la mesure, le jeu de données ne retourne pas les données correctes dans les résultats.
 - Les jeux de données avec des mentions Promues ou Certifiées apparaissent dans la liste des jeux de données disponibles, mais ils ne sont pas marqués comme tels. 
 - Vous ne pouvez pas incorporer des rapports paginés basés sur des jeux de données partagés Power BI dans le scénario « App Owns Data ».
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 11/20/2020
 ms.custom: licensing support
 LocalizationGroup: Premium
-ms.openlocfilehash: d5879d6a8469b23f6e31e48345ac3ccb5f378cbb
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: fe1714fd0249bba429c705b70e9eb157bffae44b
+ms.sourcegitcommit: 8afdd3601209636c9ab92d75f967d4ee0a2cab26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668209"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95012033"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
-Vous pouvez utiliser Power BI Premium pour accéder aux fonctionnalités et aux capacités uniquement disponibles dans Premium, et offrir une mise à l’échelle et des performances supérieures pour le contenu Power BI de votre organisation. Power BI Premium permet à d’autres utilisateurs de votre organisation de tirer le meilleur parti de Power BI avec de meilleures performances et une plus grande réactivité. Par exemple, avec Power BI Premium, vous et les utilisateurs de votre organisation bénéficiez des avantages suivants :
+Vous pouvez utiliser Power BI Premium pour accéder aux fonctionnalités et aux capacités uniquement disponibles dans Premium, et offrir une mise à l’échelle et des performances supérieures pour le contenu Power BI de votre organisation. Power BI Premium permet à d’autres utilisateurs de votre organisation de tirer le meilleur parti de Power BI avec de meilleures performances et une plus grande réactivité. Par exemple, avec Power BI Premium, les utilisateurs de votre organisation et vous-même pouvez bénéficier des fonctionnalités suivantes :
 
 > [!div class="checklist"]
 > * Une mise à l’échelle et des performances améliorées pour vos rapports Power BI
@@ -50,16 +50,16 @@ Premium Gen2 offre les mises à jour ou expériences améliorées suivantes :
     * Moins de restrictions de mémoire
     * Séparation complète entre l’interaction avec les rapports et les actualisations planifiées
 
-* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent uniquement de la complexité des opérations d’analytique que la capacité effectue, et non de la taille, du niveau de charge sur le système lors de l’exécution, etc. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition et améliorées tout au long de la période de préversion. 
+* **Métriques améliorées** avec des données d’utilisation de capacité claires et normalisées, qui dépendent uniquement de la complexité des opérations d’analytique que la capacité effectue (et non de sa taille), du niveau de charge sur le système lors des opérations d’analytique, ainsi que d’autres facteurs. Grâce aux métriques améliorées, l’analyse de l’utilisation, la planification du budget, la facturation interne et le besoin de mise à niveau sont clairement visibles avec les rapports intégrés. Des métriques améliorées seront mises à disposition et améliorées tout au long de la période de préversion.
 
-* La **mise à l’échelle automatique** permet d’*ajouter automatiquement* 1 vCore à la fois pendant des périodes de 24 heures lorsque la charge sur la capacité dépasse les limites, evitant ainsi les ralentissements provoqués par la surcharge. Les vCores sont automatiquement supprimés si une durée d’inactivité est détectée. Des vCores supplémentaires sont facturés à votre abonnement Azure en fonction de l’utilisation. La mise à l’échelle automatique sera disponible au cours de la période de préversion. 
+* La **mise à l’échelle automatique** permet d’*ajouter automatiquement* 1 vCore à la fois par période de 24 heures, lorsque la charge sur la capacité dépasse les limites, évitant ainsi les ralentissements provoqués par la surcharge. Les vCores sont automatiquement supprimés si une durée d’inactivité est détectée. Des vCores supplémentaires sont facturés à votre abonnement Azure en fonction de l’utilisation. La mise à l’échelle automatique sera disponible au cours de la période de préversion. 
 
-* Une **charge de gestion considérablement réduite**, avec des notifications d’administration proactives et configurables concernant le niveau d’utilisation de la capacité et les hausses de charge.
+* Une **charge de gestion réduite**, avec des notifications d’administration proactives et configurables concernant le niveau d’utilisation de la capacité et les hausses de charge.
 
 
 ### <a name="using-premium-gen2"></a>Utilisation de Premium Gen2
 
-Vous devez activer Premium Gen2 pour tirer parti de ses mises à jour. Pour activer Premium Gen2, effectuez les étapes suivantes :
+Activez Premium Gen2 pour tirer parti de ses mises à jour. Pour activer Premium Gen2, effectuez les étapes suivantes :
 
 1. Dans le portail d’administration, accédez à **Paramètres de capacité**.
 2. Sélectionnez **Power BI Premium**.
@@ -74,14 +74,19 @@ L’image suivante montre comment activer Premium Gen2.
 
 Les limitations connues suivantes s’appliquent actuellement à Premium Gen2 :
 
-1.  L’utilisation de la capacité Premium Gen2 ne peut pas être suivie dans l’application de métriques.
+1.  L’utilisation de la capacité Premium Gen2 ne peut pas être suivie dans l’application de métriques.
 
-2.  Les paramètres de capacité Premium Gen2 pour des charges de travail spécifiques ne sont pas encore visibles dans la page des paramètres de capacité Premium Gen2 du portail d’administration. Pour changer des paramètres, faites passer la capacité à la version d’origine de Premium, changez les paramètres, puis redéfinissez la capacité sur Premium Gen2. Les paramètres d’allocation de mémoire ne s’appliquent pas aux capacités Premium Gen2.
+2.  Les paramètres de capacité Premium Gen2 pour des charges de travail spécifiques ne sont pas encore visibles dans la page des paramètres de capacité Premium Gen2 du portail d’administration. Pour changer des paramètres, faites passer la capacité à la version d’origine de Premium, changez les paramètres, puis redéfinissez la capacité sur Premium Gen2. Les paramètres d’allocation de mémoire ne s’appliquent pas aux capacités Premium Gen2.
 
-3.  Les dataflows avec des sources de données ADLS Gen2 ne sont pas actuellement fonctionnels sur les capacités Premium Gen2.  
+3.  Si vous utilisez XMLA sur Premium Gen2, vérifiez que vous utilisez les versions les plus récentes des [outils de modélisation et de gestion de données](service-premium-connect-tools.md#data-modeling-and-management-tools). 
 
-4.  Si vous utilisez XMLA sur Premium Gen2, vérifiez que vous utilisez les versions les plus récentes des [outils de modélisation et de gestion de données](service-premium-connect-tools.md#data-modeling-and-management-tools). 
+4.  Les fonctionnalités Analysis Services de Premium Gen2 sont uniquement prises en charge par les bibliothèques clientes les plus récentes. Voici les dates de publication estimées pour les outils dépendants qui répondent à cette exigence :
 
+    |Outil|Version minimale nécessaire|Date de publication estimée|
+    |---|---|---|
+    |SQL Server Management Studio (SSMS)|18,8|8 décembre 2020|
+    |SQL Server Data Tools (SSDT)|2.9.15|Disponibilité générale : 30 novembre 2020|
+    | AS PowerShell| Supérieure à 21.1.18229|26 novembre 2020|
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
@@ -92,7 +97,7 @@ Power BI Premium est un abonnement Microsoft 365 au niveau du locataire, dispo
 - Les références SKU **EM** (EM1-EM3), pour l’_incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
 
 ### <a name="updates-for-premium-gen2-preview"></a>Mises à jour pour Premium Gen2 (préversion)
-Premium Gen2 est actuellement disponible en tant que fonctionnalité de préversion entièrement prise en charge pour les références SKU **P** et **EM** uniquement. La capacité des références SKU **A** n’offre pas encore tous les avantages supplémentaires introduits dans la mise à jour de Premium Gen2 en préversion.
+Premium Gen2 est actuellement disponible sous la forme de fonctionnalité d’évaluation entièrement prise en charge pour les références SKU **P** et **EM** uniquement. La capacité des références SKU **A** n’offre pas encore tous les avantages supplémentaires compris dans la mise à jour de Premium Gen2 en préversion.
 
 
 ### <a name="purchasing"></a>Achat
@@ -101,12 +106,12 @@ Les abonnements Power BI Premium peuvent être achetés par les administrateurs
 
 #### <a name="power-bi-premium-per-user-preview"></a>Power BI Premium par utilisateur (préversion)
 
-Power BI **Premium par utilisateur** permet aux organisations d’octroyer des licences pour des fonctionnalités Premium, par utilisateur. Premium par utilisateur (PPU) inclut toutes les capacités de la licence Power BI Pro, ainsi que des fonctionnalités telles que les rapports paginés, l’intelligence artificielle et d’autres capacités réservées aux abonnés Premium. Premium par utilisateur est actuellement en préversion. Pour plus d’informations sur Premium par utilisateur, notamment une comparaison des fonctionnalités et d’autres détails sur la préversion, consultez l’article [Questions fréquentes (FAQ) sur Power BI Premium par utilisateur (préversion)](service-premium-per-user-faq.md). 
+Power BI **Premium par utilisateur** permet aux organisations d’octroyer des licences pour des fonctionnalités Premium, par utilisateur. Premium par utilisateur (PPU) inclut toutes les fonctionnalités de la licence Power BI Pro, ainsi que des fonctionnalités telles que les rapports paginés, l’intelligence artificielle et autres fonctionnalités réservées aux abonnés Premium. Premium par utilisateur est actuellement en préversion. Pour plus d’informations sur Premium par utilisateur, notamment une comparaison des fonctionnalités et d’autres détails sur la préversion, consultez l’article [Questions fréquentes (FAQ) sur Power BI Premium par utilisateur (préversion)](service-premium-per-user-faq.md). 
 
 
 ## <a name="reserved-capacities"></a>Capacités réservées
 
-Avec Power BI Premium, vous bénéficiez de *capacités réservées*. Contrairement à une capacité partagée où le traitement de l’analytique des charges de travail s’exécute sur des ressources de calcul partagées avec d’autres clients, une capacité réservée est utilisée exclusivement par une organisation. Celle-ci est isolée et comprend des ressources de calcul réservées qui offrent des performances fiables et constantes pour le contenu hébergé. Notez que le traitement des types de contenu de Power BI suivants est stocké dans une capacité partagée plutôt que dans votre capacité réservée :
+Avec Power BI Premium, vous bénéficiez de *capacités réservées*. Contrairement à une capacité partagée où le traitement de l’analytique des charges de travail s’exécute sur des ressources de calcul partagées avec d’autres clients, une capacité réservée est utilisée exclusivement par une organisation. Celle-ci est isolée et comprend des ressources de calcul réservées qui offrent des performances fiables et constantes pour le contenu hébergé. Notez que le traitement des types de contenu de Power BI suivants est stocké dans une capacité partagée plutôt que dans votre capacité réservée :
 
 * Classeurs Excel (sauf si les données sont d’abord importées dans Power BI Desktop)
 * [Transmettre des jeux de données](/rest/api/power-bi/pushdatasets)

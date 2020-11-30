@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 08/04/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 099e3aa11662232c5362895e93f0433620ce2ba9
-ms.sourcegitcommit: a7227f6d3236e6e0a7bc1f83ff6099b5cd58bff3
+ms.openlocfilehash: 42d7cae62084cf2cfbf6f10e49489d35e4557c85
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87768862"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947044"
 ---
 # <a name="access-power-bi-featured-tables-in-excel-preview"></a>Accéder aux tables recommandées Power BI dans Excel (préversion)
 
@@ -132,7 +132,7 @@ Si un jeu de données Power BI possède une sécurité au niveau des lignes ou u
 
 ## <a name="administrative-control"></a>Contrôle administratif
 
-Les administrateurs Power BI peuvent contrôler les utilisateurs de l’organisation qui peuvent utiliser les tables recommandées dans la galerie Types de données Excel. Pour plus d’informations, consultez [Paramètres des tables recommandées](../admin/service-admin-portal.md#featured-tables-settings) dans l’article du portail d’administration. 
+Les administrateurs Power BI peuvent contrôler les utilisateurs de l’organisation qui peuvent utiliser les tables recommandées dans la galerie Types de données Excel. Pour plus d’informations, consultez [Autoriser les connexions aux tables proposées](../admin/service-admin-portal.md#allow-connections-to-featured-tables) dans l’article du portail d’administration. 
  
 ### <a name="auditing"></a>Audit
 

@@ -10,12 +10,12 @@ ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 38df6680f2f4d0031ec26a1935e01c849c285909
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: 0abdaab48516b91624a0945d32c4f81ed024a468
+ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94719072"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94947248"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -272,6 +272,16 @@ Le paramètre **Inviter des utilisateurs externes dans votre organisation** perm
 
 Pour inviter des utilisateurs externes dans votre organisation, un utilisateur a également besoin du rôle Inviteur d’invités Azure Active Directory. Ce paramètre contrôle uniquement la possibilité d’inviter par le biais de Power BI. 
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation
+
+Les utilisateurs invités Azure AD B2B peuvent modifier et gérer le contenu de l’organisation. [En savoir plus](service-admin-azure-ad-b2b.md)
+
+L’image suivante présente l’option permettant d’autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation.
+
+![Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+Dans le portail d’administration, vous contrôlez également les utilisateurs qui disposent des autorisations nécessaires pour inviter des utilisateurs externes à l’organisation. Pour plus d’informations, consultez [Partager du contenu avec des utilisateurs externes](#export-and-sharing-settings) dans cet article.
+
 ### <a name="publish-to-web"></a>Publier sur le web
 
 En tant qu’administrateur Power BI, le paramètre **Publier sur le web** propose des options qui vous permettent de créer des codes incorporés pour publier des rapports sur le web. Cette fonctionnalité rend le rapport et ses données accessibles à n’importe qui sur le web. Découvrez plus d’informations sur la [publication sur le web](../collaborate-share/service-publish-to-web.md).
@@ -300,60 +310,73 @@ Les options présentées aux utilisateurs dans l’interface utilisateur varient
 |**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état indique **Enfreint**.|
 |Rapports publiés existants|Tout activé|Tout désactivé|Les rapports continuent à être restitués pour tous.|
 
-### <a name="export-data"></a>Exporter des données
+### <a name="copy-and-paste-visuals"></a>Copier et coller des visuels
 
-Les utilisateurs de l’organisation peuvent exporter des données à partir d’une vignette ou d’une visualisation. Ce paramètre contrôle la fonction Analyser dans Excel, l’exportation au format .csv, le téléchargement de jeux de données (.pbix) et les fonctionnalités Live Connect du service Power BI. Découvrez-en plus sur l’[exportation de données à partir d’une vignette ou d’un visuel](../visuals/power-bi-visualization-export-data.md).
+Les utilisateurs de l’organisation peuvent copier des visuels à partir d’un visuel de vignette ou de rapport et les coller sous forme d’images statiques dans des applications externes.
 
->[!NOTE]
-> Avant l’introduction du paramètre Exporter vers Excel, ce paramètre contrôlait également l’exportation des données vers des fichiers Excel. Pour plus d’informations, consultez la [remarque sous Exporter vers Excel](#export-to-excel).
-
-![Paramètre Exporter des données](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
-L’image suivante présente l’option d’exportation de données à partir d’une vignette.
-
-![Exporter des données à partir d’une vignette](media/service-admin-portal/powerbi-admin-export-data.png)
-
-> [!NOTE]
-> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité [Analyser dans Excel](../collaborate-share/service-analyze-in-excel.md) ainsi que la connexion active du service Power BI.
+![Capture d’écran du copier-coller des visuels.](media/service-admin-portal/powerbi-admin-portal-copy-paste-visuals-setting.png)
 
 ### <a name="export-to-excel"></a>Exporter vers Excel
 
 Les utilisateurs de l’organisation peuvent exporter les données à partir d’une visualisation dans un fichier Excel.
 
-![Paramètre Exporter vers Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+![Capture d’écran du paramètre Exporter vers Excel](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
->[!IMPORTANT]
-> Avant l’introduction du paramètre Exporter vers Excel, l’exportation vers un fichier Excel était contrôlée par le paramètre Exportation des données. Par conséquent, sur les locataires qui existaient avant l’introduction du paramètre Exporter vers Excel, les administrateurs Power BI qui découvrent le paramètre Exporter vers Excel pour la première fois trouvent la mention *Modifications non appliquées*. Ils doivent appliquer ces modifications pour que le nouveau paramètre prenne effet. Dans le cas contraire, l’exportation vers un fichier Excel continue d’être contrôlée par le paramètre Exporter des données.
+### <a name="export-to-csv"></a>Exporter au format .csv
+
+Les utilisateurs de l’organisation peuvent exporter les données d’une vignette, d’une visualisation ou d’un rapport paginé vers un fichier csv.
+
+![Capture d’écran du paramètre Exporter au format .csv](media/service-admin-portal/powerbi-admin-portal-export-to-csv-setting.png)
+
+### <a name="download-reports"></a>Rapports de téléchargement
+
+Les utilisateurs de l’organisation peuvent télécharger des fichiers .pbix et des rapports paginés.
+
+![Capture d’écran du paramètre Télécharger les rapports.](media/service-admin-portal/powerbi-admin-portal-download-reports-setting.png)
+
+### <a name="allow-live-connections"></a>Autoriser les connexions actives
+
+Les utilisateurs de l’organisation peuvent utiliser le service Power BI Live Connect. Cela comprend le service Analyse dans Excel.
+
+![Capture d’écran du paramètre Autoriser les connexions actives.](media/service-admin-portal/powerbi-admin-portal-allow-live-connections-setting.png)
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exporter les rapports comme présentations PowerPoint ou documents PDF
 
-Les utilisateurs de l’organisation peuvent exporter des rapports Power BI sous forme de fichiers PowerPoint ou de documents PDF. [En savoir plus](../consumer/end-user-powerpoint.md)
+Les utilisateurs de l’organisation peuvent exporter des rapports sous forme de fichiers PowerPoint ou de documents PDF.
 
-L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Exporter les rapports comme présentations PowerPoint ou documents PDF** est activé.
+![Capture d’écran de l’option Exporter les rapports comme présentations PowerPoint ou documents PDF](media/service-admin-portal/powerbi-admin-portal-export-pptx-pdf-setting.png)
 
-![Exporter les rapports comme présentations PowerPoint](media/service-admin-portal/powerbi-admin-powerpoint.png)
+### <a name="export-reports-as-mhtml-documents"></a>Exporter des rapports sous forme de documents MHTML
+
+Les utilisateurs de l’organisation peuvent exporter des rapports paginés sous forme de documents MHTML.
+
+![Capture d’écran du paramètre Exporter au format MHTML.](media/service-admin-portal/powerbi-admin-portal-export-mhtml-setting.png)
+
+### <a name="export-reports-as-word-documents"></a>Exporter des rapports sous forme de documents Word
+
+Les utilisateurs de l’organisation peuvent exporter des rapports paginés sous forme de documents Word.
+
+![Capture d’écran du paramètre Exporter au format Word.](media/service-admin-portal/powerbi-admin-portal-export-word-setting.png)
+
+### <a name="export-reports-as-xml-documents"></a>Exporter des rapports sous forme de documents XML
+
+Les utilisateurs de l’organisation peuvent exporter des rapports paginés sous forme de documents XML.
+
+![Capture d’écran du paramètre Exporter au format XML.](media/service-admin-portal/powerbi-admin-portal-export-xml-setting.png)
+
+### <a name="export-reports-as-image-files-preview"></a>Exporter des rapports sous forme de fichiers image (préversion)
+
+Les utilisateurs de l’organisation peuvent utiliser l’API Exporter le rapport vers un fichier pour exporter des rapports sous forme de fichiers image.
+
+![Capture d’écran du paramètre Exporter au format image.](media/service-admin-portal/powerbi-admin-portal-export-as-image-setting.png)
 
 ### <a name="print-dashboards-and-reports"></a>Imprimer des tableaux de bord et des rapports
 
-Les utilisateurs de l’organisation peuvent imprimer des tableaux de bord et des rapports. [En savoir plus](../consumer/end-user-print.md)
 
-L’image suivante présente l’option d’impression d’un tableau de bord.
+![Capture d’écran du paramètre Imprimer des tableaux de bord et des rapports.](media/service-admin-portal/powerbi-admin-portal-print-dashboards-reports-setting.png)
 
-![Imprimer le tableau de bord](media/service-admin-portal/powerbi-admin-print-dashboard.png)
-
-L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Imprimer des tableaux de bord et des rapports** est activé.
-
-![Imprimer le rapport](media/service-admin-portal/powerbi-admin-print-report.png)
-
-### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation
-
-Les utilisateurs invités Azure AD B2B peuvent modifier et gérer le contenu de l’organisation. [En savoir plus](service-admin-azure-ad-b2b.md)
-
-L’image suivante présente l’option permettant d’autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation.
-
-![Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
-
-Dans le portail d’administration, vous contrôlez également les utilisateurs qui disposent des autorisations nécessaires pour inviter des utilisateurs externes à l’organisation. Pour plus d’informations, consultez [Partager du contenu avec des utilisateurs externes](#export-and-sharing-settings) dans cet article.
+### <a name="certification"></a>Certification
+Autorisez les utilisateurs dans cette organisation à certifier les jeux de données, les dataflows, les rapports et les applications. Pour plus d’informations, consultez [Activer la certification de contenu](service-admin-setup-certification.md).
 
 ### <a name="email-subscriptions"></a>Abonnements par e-mail
 Les utilisateurs de l'organisation peuvent créer des abonnements par courrier. En savoir plus sur les [abonnements](../collaborate-share/service-publish-to-web.md).
@@ -367,6 +390,25 @@ Autorisez certains ou tous les auteurs de rapports de votre organisation à pré
 Nous vous recommandons de commencer avec un ensemble réduit d’approbateurs. Permettre à l’ensemble de l’organisation de présenter du contenu dans la page d’accueil peut compliquer le suivi de tout le contenu promu. 
 
 Une fois que vous avez activé le contenu proposé, vous pouvez également le gérer dans le portail d’administration. Consultez [Gérer le contenu proposé](#manage-featured-content) dans cet article pour en savoir plus sur le contrôle du contenu proposé dans votre domaine.
+
+### <a name="allow-connections-to-featured-tables"></a>Autoriser les connexions aux tables proposées
+
+Ce paramètre permet aux administrateurs Power BI de contrôler quels utilisateurs de l’organisation sont autorisés à utiliser les tables recommandées dans la galerie Types de données Excel. 
+
+![Capture d’écran du paramètre Autoriser les connexions aux tables proposées.](media/service-admin-portal/powerbi-admin-portal-allow-connections-featured-tables-setting.png)
+
+>[!NOTE]
+>Les connexions aux tables proposées sont également désactivées si le paramètre [Autoriser les connexions actives](#allow-live-connections) est défini sur Désactivé.
+
+En savoir plus sur [les tables Power BI dans Excel](../collaborate-share/service-excel-featured-tables.md).
+
+### <a name="share-to-teams"></a>Partager dans Teams
+
+Ce paramètre permet aux organisations de masquer les boutons **Partager dans Teams** dans le service Power BI. Quand l’option est désactivée, les utilisateurs ne voient pas les boutons **Partager dans Teams** dans la barre d’action ou les menus contextuels quand ils affichent des rapports et tableaux de bord dans le service Power BI.
+
+![Capture d’écran du paramètre de locataire Partager dans Teams dans le portail d’administration Power BI](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Découvrez plus d’informations sur le [partage de contenu Power BI dans Teams](../collaborate-share/service-share-report-teams.md).
 
 ## <a name="content-pack-and-app-settings"></a>Paramètres des applications et des packs de contenu
 
@@ -388,12 +430,9 @@ Les auteurs de rapports peuvent partager directement des applications avec les u
 
 ## <a name="integration-settings"></a>Paramètres d’intégration
 
-### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Utiliser Analyser dans Excel avec des jeux de données locaux
+### <a name="allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets"></a>Autoriser les points de terminaison XMLA et l’analyse dans Excel avec les jeux de données locaux
 
-Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et interagir avec des jeux de données Power BI locaux. [En savoir plus](../collaborate-share/service-analyze-in-excel.md)
-
-> [!NOTE]
-> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel**.
+Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et interagir avec des jeux de données Power BI locaux. Cela autorise également les connexions aux points de terminaison XMLA. [En savoir plus](../collaborate-share/service-analyze-in-excel.md)
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps for Power BI
 
@@ -402,24 +441,6 @@ Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Ma
 ### <a name="use-global-search-for-power-bi-preview"></a>Utiliser la recherche générale pour Power BI (préversion)
 
 Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de recherche externe qui reposent sur le service Recherche Azure.
-
-## <a name="featured-tables-settings"></a>Paramètres de tables recommandés
-
-Sous **Paramètres du client**, le paramètre **Autoriser les connexions aux tables proposées** permet aux administrateurs Power BI de contrôler qui, dans l’organisation, peut utiliser des tables proposées dans la Galerie des types de données Excel. 
-
-:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="Toutes les connexions aux tables proposées":::
-
-Les connexions aux tables proposées sont également désactivées si le paramètre **Exporter des données** est défini sur **Désactivé**.
-
-En savoir plus sur [les tables Power BI dans Excel](../collaborate-share/service-excel-featured-tables.md).
-
-## <a name="share-to-teams-tenant-setting"></a>Paramètre client Partager dans Teams
-
-Le paramètre **Partager dans Teams** se trouve dans la section **Paramètres du client** du portail d’administration Power BI. Le paramètre permet aux organisations de masquer les boutons **Partager dans Teams** dans le service Power BI. Quand l’option est désactivée, les utilisateurs ne voient pas les boutons **Partager dans Teams** dans la barre d’action ou les menus contextuels quand ils affichent des rapports et tableaux de bord dans le service Power BI.
-
-![Capture d’écran du paramètre de locataire Partager dans Teams dans le portail d’administration Power BI](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
-
-Découvrez plus d’informations sur le [partage de contenu Power BI dans Teams](../collaborate-share/service-share-report-teams.md).
 
 ## <a name="r-visuals-settings"></a>Paramètres des visuels R
 

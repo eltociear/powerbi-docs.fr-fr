@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
 ms.date: 10/21/2020
-ms.openlocfilehash: 6c1e4212cb991ff7eb3d0f8a5e336010499bcd1c
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 5799b0367c903eea55357969a2d4383a5f4c0c7b
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668600"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95514329"
 ---
 # <a name="understand-the-deployment-process"></a>Comprendre le processus de déploiement
 
@@ -286,6 +286,8 @@ Cette section répertorie la plupart des limitations dans les pipelines de dépl
 * Les éléments Power BI, tels que les rapports et les tableaux de bord qui ont des [étiquettes de sensibilité](../admin/service-security-sensitivity-label-overview.md) Power BI ne peuvent pas être déployés.
 
 * Le nombre maximal d’éléments Power BI pouvant être déployés dans un seul et même déploiement est 300.
+
+* Le téléchargement d’un fichier PBIX après le déploiement n’est pas pris en charge.
 
 * Pour obtenir la liste des limitations des espaces de travail, consultez [Limitations de l’affectation d’espaces de travail](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
