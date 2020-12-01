@@ -5,20 +5,20 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 432f8a7a39e6902c679c83d447039519f90d0dac
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: 879f931797786ee1bb9f12a56323c50642716afb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635697"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96398588"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
-**Résumé :** Power BI est une offre de service logiciel en ligne (*Saas*ou Software as a service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
+**Résumé :** Power BI est une offre de service logiciel en ligne (*Saas* ou Software as a service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
 **Enregistreur :** David Iseminger
 
@@ -91,7 +91,7 @@ Les métadonnées relatives à l’abonnement Power BI d’un utilisateur, telle
 
 ## <a name="tenant-creation"></a>Création de locataire
 
-Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et possède lorsqu’elle s’inscrit à un service Cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Microsoft 365. Chaque client Azure AD est distinct et indépendant des autres clients Azure AD.
+Un locataire est une instance dédiée du service Azure AD qu’une organisation reçoit et possède lorsqu’elle s’inscrit à un service Cloud Microsoft tel qu’Azure, Microsoft Intune, Power BI ou Microsoft 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
 
 Un client héberge les utilisateurs d'une entreprise et leurs informations, c’est-à-dire les mots de passe, les données de profil utilisateur, les autorisations, etc. Il contient également des groupes, des applications et d’autres informations relatives à une organisation et à sa sécurité. Pour plus d’informations, consultez [qu’est-ce qu’un locataire Azure ad](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
@@ -103,7 +103,7 @@ Certaines organisations ont besoin d’une présence Power BI dans plusieurs zon
 
 L’article le plus récent et le plus principal pour les informations sur les zones géographiques est l’article [configurer la prise en charge de plusieurs géo-géo pour Power bi Premium](../admin/service-admin-premium-multi-geo.md) . 
 
-Il existe plusieurs détails techniques qui doivent être évalués dans le contexte des lois et réglementations locales lorsque vous travaillez dans différentes zones géographiques. Ces informations sont les suivantes :
+Il existe plusieurs détails techniques qui doivent être évalués dans le contexte des lois et réglementations locales lorsque vous travaillez dans différentes zones géographiques. Ces détails comprennent ce qui suit :
 
 - Une couche d’exécution de requête distante est hébergée dans la région de capacité à distance, afin de garantir que le modèle de données, les caches et le traitement de la plupart des données restent dans la région de capacité distante. Il existe quelques exceptions, comme indiqué dans l’article [multi-géo pour Power bi Premium](../admin/service-admin-premium-multi-geo.md) .
 - Un texte de requête mis en cache et le résultat correspondant stocké dans une région distante restent dans cette région au repos, mais d’autres données en transit peuvent passer d’une zone géographique à une autre.
@@ -199,7 +199,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -290,7 +290,7 @@ Les données visuelles sont mises en cache dans différents emplacements selon q
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -356,7 +356,7 @@ Le tableau suivant indique la prise en charge de l’authentification basée sur
 | **Prise en charge de l’authentification basée sur les certificats** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
 | **Power BI** (connexion au service) | supported | supported | Non pris en charge |
-| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Pris en charge | Non pris en charge |
+| **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Prise en charge | Non pris en charge |
 
 Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune donnée personnelle n’est envoyée avec les données de télémétrie.
 

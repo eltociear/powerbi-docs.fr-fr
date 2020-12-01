@@ -2,19 +2,19 @@
 title: Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 description: Livre blanc décrivant comment utiliser Azure Active Directory B2B pour distribuer des Power BI à des utilisateurs invités externes
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: cc4387c3c1c0f83347823bbc6b95beb437b235e9
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: 9bf2d1ab3b782d0fbb201e203aa9bb2f2df4079d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916886"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416943"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -25,7 +25,7 @@ ms.locfileid: "92916886"
 **Réviseurs techniques :** Adam Wilson, Sheng Liu, Qian Liang, Sergei Gundorov, Jacob Grimm, Adam Saxton, Maya Shenhav, Nimrod Shalit, Elisabeth Olson
 
 > [!NOTE]
-> Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis en sélectionnant **enregistrer en tant que PDF** .
+> Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis en sélectionnant **enregistrer en tant que PDF**.
 
 ## <a name="introduction"></a>Introduction
 
@@ -331,7 +331,7 @@ L’intégration de Power BI avec Azure AD B2B fonctionne avec toutes les adress
 
 Il est important de reconnaître que le compte de Azure AD est utilisé ou créé dans le Azure AD du tiers externe, ce qui permet à Lucy d’utiliser leurs propres nom d’utilisateur et mot de passe, et leurs informations d’identification cessent de fonctionner dans d’autres locataires à chaque fois que Lucy quitte l’entreprise lorsque son organisation utilise également Azure AD.
 
-## <a name="licensing"></a>Licences
+## <a name="licensing"></a>Licence
 
 Contoso peut choisir l’une des trois approches suivantes : les utilisateurs invités titulaires d’une licence de leurs fournisseurs et organisations partenaires ont accès au contenu Power BI.
 
@@ -490,8 +490,8 @@ Les utilisateurs invités bénéficient de l’expérience par défaut en lectur
 
 Pour permettre à ces utilisateurs de se connecter à Power BI, fournissez-leur l’URL du locataire. Pour trouver l’URL de locataire, effectuez les étapes suivantes.
 
-1. Dans le service Power BI, dans le menu supérieur, sélectionnez aide ( **?** ), puis  **à propos de Power bi** .
-2. Recherchez la valeur en regard de  **URL de locataire** . Il s’agit de l’URL de locataire que vous pouvez partager avec vos utilisateurs invités.
+1. Dans le service Power BI, dans le menu supérieur, sélectionnez aide ( **?** ), puis  **à propos de Power bi**.
+2. Recherchez la valeur en regard de  **URL de locataire**. Il s’agit de l’URL de locataire que vous pouvez partager avec vos utilisateurs invités.
 
     ![URL de locataire](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
 
