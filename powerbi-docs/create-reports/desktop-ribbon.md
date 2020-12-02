@@ -2,19 +2,19 @@
 title: Utiliser le ruban mis à jour dans Power BI Desktop
 description: Naviguez facilement dans les menus et les commandes avec le nouveau ruban de Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/21/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3cc9277b567a58b60dc86c41b7ae56ad5c678d6b
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 517e1dcb84a9c716cdfc1f53febb743f4f59f5d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600599"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412825"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Utiliser le ruban mis à jour dans Power BI Desktop
 

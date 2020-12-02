@@ -2,19 +2,19 @@
 title: Actualisation incrémentielle dans Power BI
 description: Découvrez comment permettre l’utilisation de très grands jeux de données dans Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/11/2020
-ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 6ca4257f73837b68d76734ea503e8f83e0d5ba49
-ms.sourcegitcommit: cc20b476a45bccb870c9de1d0b384e2c39e25d24
+ms.openlocfilehash: 68d12c69afadb3d5d82782c239381844c1d58b5e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94512950"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413538"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Actualisation incrémentielle dans Power BI
 

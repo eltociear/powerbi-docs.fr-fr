@@ -2,18 +2,18 @@
 title: Activer la certification de contenu
 description: Découvrez comment activer la certification pour des jeux de données, des dataflows, des rapports et des applications.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4961f5f2b6364e06488baf32478b1f6e9338675e
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 17fc02131f13fe7fe7d8fb17af4380f6a013b9e7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680847"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413515"
 ---
 # <a name="enable-content-certification"></a>Activer la certification de contenu
 
@@ -28,7 +28,7 @@ En tant qu’administrateur Power BI, vous êtes responsable de l’activation 
 * Définition de la liste des groupes de sécurité dont les membres sont autorisés à certifier du contenu.
 * Indication d’une URL qui pointe vers la documentation du processus de certification de contenu de l’organisation, si une telle documentation existe.
 
-La certification fait partie de la fonctionnalité d’ *approbation* de Power BI. Reportez-vous à [Approbation : Promotion et certification de contenu Power BI](../collaborate-share/service-endorsement-overview.md) pour plus d’informations.
+La certification fait partie de la fonctionnalité d’*approbation* de Power BI. Reportez-vous à [Approbation : Promotion et certification de contenu Power BI](../collaborate-share/service-endorsement-overview.md) pour plus d’informations.
 
 ## <a name="set-up-certification"></a>Configurer la certification
 

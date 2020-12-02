@@ -2,19 +2,19 @@
 title: Utiliser le regroupement dans Power BI Desktop
 description: Découvrir comment regrouper des visuels dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 067a9cfc63b36f97716d61580f2e191756dbf0e6
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b74e06c076cd25132a6e3bfb8a12775d50b7263f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85233868"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412894"
 ---
 # <a name="group-visuals-in-power-bi-desktop-reports"></a>Regrouper des visuels dans les rapports Power BI Desktop
 Avec le **regroupement** dans **Power BI Desktop**, vous pouvez regrouper des visuels dans votre rapport, comme des boutons, des zones de texte, des images de formes et tout visuel que vous créez, tout comme vous regroupez des éléments dans PowerPoint. Le fait de regrouper des visuels dans un rapport vous permet de traiter le groupe comme un objet unique, ce qui rend le déplacement, le redimensionnement et l’utilisation de couches dans votre rapport plus faciles, plus rapides et plus intuitifs.
@@ -42,7 +42,7 @@ Pour dissocier un groupe, sélectionnez-le simplement, cliquez avec le bouton dr
 
 ## <a name="hide-and-show-visuals-or-groups"></a>Masquer et afficher des visuels ou des groupes
 
-Vous pouvez facilement masquer ou afficher des groupes à l’aide du volet **Sélection**. Pour masquer un groupe, sélectionnez le bouton représentant un œil en regard du nom du groupe (ou de tout visuel individuel) pour afficher ou masquer le visuel ou le groupe. Dans l’image suivante, le groupe*Australia* (Australie) est masqué et le reste des groupes imbriqués dans le groupe *Cards*  (Cartes) s’affichent.
+Vous pouvez facilement masquer ou afficher des groupes à l’aide du volet **Sélection**. Pour masquer un groupe, sélectionnez le bouton représentant un œil en regard du nom du groupe (ou de tout visuel individuel) pour afficher ou masquer le visuel ou le groupe. Dans l’image suivante, le groupe *Australia* (Australie) est masqué et le reste des groupes imbriqués dans le groupe *Cards*  (Cartes) s’affichent.
 
 
 ![masquer et afficher des groupes](media/desktop-grouping-visuals/grouping-visuals-05.png)

@@ -1,21 +1,21 @@
 ---
 title: Connectivité et gestion des jeux de données avec le point de terminaison XMLA dans Power BI
 description: Explique comment se connecter à des jeux de données dans Power BI Premium à partir d’outils et d’applications clientes.
-author: minewiskan
-ms.author: owend
+author: Minewiskan
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 11/05/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4645434e5d556695868d028a5694b6cd0b8bd68c
-ms.sourcegitcommit: 132b3f6ba6d2b1948ddc15969d64cf629f7fb280
+ms.openlocfilehash: 4e71580857827a370676c4d05274c4c57b1d56c5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94483762"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413492"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint"></a>Connectivité des jeux de données avec le point de terminaison XMLA
 

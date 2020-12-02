@@ -2,19 +2,19 @@
 title: Afficher les éléments sans données dans Power BI
 description: Découvrez comment Power BI gère et affiche les éléments sans données.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/16/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 89c4c9919ac5b47a1e3c20c786b239be44c4308b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3c65f7b18a7df70749c9374e1290313141244665
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238569"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412733"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Afficher les éléments sans données dans Power BI
 
@@ -159,7 +159,7 @@ Quand l’option **Afficher les éléments sans données** est activée sur un c
 
 ![Champs pour l’axe et la légende](media/desktop-show-items-no-data/show-items-no-data-04.png)
 
-Par exemple, sur un visuel Matrice ayant quatre champs dans le compartiment **Lignes**, si l’option **Afficher les éléments sans données** est activée pour un champ, elle l’est pour tous les éléments de la matrice. Dans l’image suivante, l’option **Afficher les éléments sans données** est activée pour le premier champ du compartiment **Lignes**, à savoir le champ*SupplierID*. Elle est aussi activée automatiquement pour les autres champs du compartiment **Lignes**.
+Par exemple, sur un visuel Matrice ayant quatre champs dans le compartiment **Lignes**, si l’option **Afficher les éléments sans données** est activée pour un champ, elle l’est pour tous les éléments de la matrice. Dans l’image suivante, l’option **Afficher les éléments sans données** est activée pour le premier champ du compartiment **Lignes**, à savoir le champ *SupplierID*. Elle est aussi activée automatiquement pour les autres champs du compartiment **Lignes**.
 
 ![L’option Afficher les éléments sans données est automatiquement activée pour les champs contenus dans le même visuel](media/desktop-show-items-no-data/show-items-no-data-05.png)
 

@@ -2,19 +2,19 @@
 title: Administration de Power BI - Forum Aux Questions (FAQ)
 description: Découvrez les réponses aux questions fréquemment posées sur l’inscription à Power BI, la gestion des locataires et d’autres tâches d’administration.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 3aa42394bb12078fb2abcf6574d04b8109a9c40c
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 5a30ff855616eef04db4827b4a25cb0facb9db1b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91981593"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413699"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 

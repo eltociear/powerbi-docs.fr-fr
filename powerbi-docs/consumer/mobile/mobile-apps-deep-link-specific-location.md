@@ -2,18 +2,18 @@
 title: Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 description: Apprenez à créer un lien ciblé qui pointe vers un rapport, une vignette ou un tableau de bord spécifique dans l’application mobile Power BI à l’aide d’un URI (Uniform Resource Identifier).
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 11/16/2020
-ms.author: painbar
-ms.openlocfilehash: 08ddac0cf407444b4a4c135494c5951bab515cdd
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 1c2260fdc3df201a655e6641c351319e366eac6b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94669060"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413124"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez utiliser des liens pour accéder directement à du contenu Power BI spécifique, comme un rapport spécifique, une page de rapport, un tableau de bord, une vignette, etc.

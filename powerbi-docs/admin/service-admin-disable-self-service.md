@@ -1,21 +1,21 @@
 ---
 title: Activer ou désactiver l’inscription et l’achat en libre-service
 description: Consignes destinées aux administrateurs afin de désactiver la possibilité pour les utilisateurs de s’inscrire au service Power BI ou de mettre à niveau une licence.
-author: kfollis
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/08/2020
-ms.author: kfollis
 ms.custom: licensing support
 LocalizationGroup: Administration
-ms.openlocfilehash: 966699f20e83a7ea34140486f97f4491c4ba35e2
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: ff695d49caeab7bed88b932cec6aaec11ec4df29
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90857447"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413676"
 ---
 # <a name="enable-or-disable-self-service-sign-up-and-purchasing"></a>Activer ou désactiver l’inscription et l’achat en libre-service
 
