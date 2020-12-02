@@ -2,20 +2,20 @@
 title: Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 description: Recherchez, installez et utilisez des applications dans le service Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Share your work
-ms.openlocfilehash: e0089d2492ad7a68aa2043cce4ca8677a0d276bb
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 7ee51cee6c79b55f746a4275fea5bb00a134e9c7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982281"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401325"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 

@@ -2,19 +2,19 @@
 title: Découvrir comment les boutons fonctionnent dans le service Power BI
 description: Les boutons peuvent servir à lancer diverses actions, notamment la navigation dans les rapports, l’extraction et l’extraction interrapport.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/10/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f0ddbbbce93a14c3468eacca130163758ca85c45
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 450c14d05f9a7855d51d7aa2f073e48a0b016013
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91982152"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400957"
 ---
 # <a name="buttons-in-the-power-bi-service"></a>Boutons dans le service Power BI
 Dans les rapports que vous recevez de vos collègues, vous avez peut-être remarqué des boutons et vous vous demandez comment les utiliser. Certains comportent des mots, d’autres des flèches, des graphiques et même des menus déroulants. Cet article va vous apprendre à reconnaître un bouton et à déterminer comment l’utiliser.

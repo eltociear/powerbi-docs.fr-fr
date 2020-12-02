@@ -2,18 +2,18 @@
 title: Exemples d’applications modèles
 description: Exemples pour une utilisation personnelle ou pour une redistribution en tant qu’applications modèles sur AppSource
 author: paulinbar
+ms.author: painbar
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 10/28/2020
-ms.author: painbar
-ms.openlocfilehash: da044d3507e649f8a1af4258506961d26aa4ab37
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 65c3ccf13bb63248c123c5c494b91ca742c77715
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045094"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401417"
 ---
 # <a name="template-apps-samples"></a>Exemples d’applications modèles
 

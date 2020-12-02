@@ -1,21 +1,21 @@
 ---
 title: Glossaire pour les utilisateurs professionnels de Power BI
 description: Power BI introduit de nombreux termes nouveaux, ainsi que de nouvelles utilisations de termes familiers. Utilisez notre glossaire pour bien comprendre la terminologie du service Power BI.
-services: power-bi
 author: mihart
+ms.author: mihart
+services: power-bi
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: reference
 ms.date: 11/21/2020
 ms.custom: contperfq1
-ms.author: mihart
-ms.openlocfilehash: c2da54406a01d5216355b8e0abc30ea63a6b2f5e
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 197ebcd029dbe6a6e87b1858da8f35325772237e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95514260"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400014"
 ---
 # <a name="glossary-for-business-users-of-the-power-bi-service"></a>Glossaire pour les utilisateurs professionnels du service Power BI    
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.

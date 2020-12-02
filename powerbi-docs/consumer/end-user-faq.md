@@ -2,20 +2,20 @@
 title: Questions fréquentes des utilisateurs finaux dans Power BI
 description: Parcourez la liste des questions fréquemment posées et des réponses concernant le service Power BI et les applications mobiles Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 09/02/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Get started
-ms.openlocfilehash: c604bec5213b14f91e514c9a1552acb99ac5d0aa
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: b872c42a9e8551b0750899632deb763a6446656f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916794"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96400382"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 
@@ -30,7 +30,7 @@ Le service Power BI est un service cloud d’analytique métier qui permet à ch
 
 ## <a name="what-is-a-power-bi-business-user"></a>Qu’est-ce qu’un *utilisateur métier* Power BI ?
 
-La façon dont vous interagissez avec Power BI dépend de votre travail. En tant qu’utilisateur final ou qu’ *utilisateur métier* , vous êtes la personne qui reçoit du contenu (des tableaux de bord, des rapports et des applications) de vos collègues. Vous travaillez dans la version en ligne ou mobile de Power BI, qui est appelée « Service Power BI », examinant et interagissant avec ce contenu, pour prendre des décisions métier.  Découvrez plus d’informations sur [Power BI pour les utilisateurs métier](index.yml).
+La façon dont vous interagissez avec Power BI dépend de votre travail. En tant qu’utilisateur final ou qu’*utilisateur métier*, vous êtes la personne qui reçoit du contenu (des tableaux de bord, des rapports et des applications) de vos collègues. Vous travaillez dans la version en ligne ou mobile de Power BI, qui est appelée « Service Power BI », examinant et interagissant avec ce contenu, pour prendre des décisions métier.  Découvrez plus d’informations sur [Power BI pour les utilisateurs métier](index.yml).
 
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Quelle est la différence entre Power BI Pro et Power BI Premium ?
@@ -49,7 +49,7 @@ Pour les questions relatives à Power BI Premium, consultez [Questions fréquen
 
 Power BI Desktop est une application gratuite que vous pouvez installer directement sur votre propre ordinateur. Power BI Desktop fonctionne en cohésion avec le service Power BI.  Les scientifiques des données, les concepteurs de rapports, les administrateurs et les développeurs utilisent Power BI Desktop pour produire des rapports et les mettre à la disposition des *utilisateurs métier* du service Power BI, comme vous. Pour en savoir plus, consultez [Qu’est-ce que Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
-## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>En tant qu’ *utilisateur métier* , de quoi ai-je besoin pour utiliser le service Power BI ?
+## <a name="as-a-business-user-what-do-i-need-to-use-the-power-bi-service"></a>En tant qu’*utilisateur métier*, de quoi ai-je besoin pour utiliser le service Power BI ?
 
 Si votre entreprise a acheté des licences Power BI ou un compte de capacité Premium, il vous suffit d’un navigateur web et d’informations d’identification. Pour vous connecter, vous allez utiliser votre adresse e-mail professionnelle et un mot de passe (défini par votre administrateur Power BI).  
 
@@ -84,7 +84,7 @@ Les ressources suivantes sont disponibles pour aider lors de votre prise en main
 * [Blog Power BI](https://powerbi.microsoft.com/blog/)
 * [Webinaires](../fundamentals/webinars.md)
 * Vidéos de prise en main sur notre [chaîne YouTube](https://www.youtube.com/user/mspowerbi)
-* Article [Bien démarrer avec Power BI en tant qu’ *utilisateur métier*](index.yml)
+* Article [Bien démarrer avec Power BI en tant qu’*utilisateur métier*](index.yml)
 * [Rejoindre notre communauté](https://community.powerbi.com/) et poser des questions
 * Consultez [10 conseils pour obtenir de l’aide](../fundamentals/service-tips-for-finding-help.md) pour plus de suggestions.
 

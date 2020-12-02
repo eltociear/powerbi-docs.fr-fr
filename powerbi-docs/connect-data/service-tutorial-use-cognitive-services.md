@@ -2,20 +2,20 @@
 title: 'Tutoriel : Utiliser Cognitive Services dans Power BI (préversion)'
 description: Dans ce tutoriel, vous utilisez Cognitive Services et des flux de données dans Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/20/2020
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 406a2aebbf5d043ce74ca189c18b384f6c70e716
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: f647bcafe035515a1d5d1438ed580cabea579134
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397182"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96401486"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Tutoriel : Utiliser Cognitive Services dans Power BI
 
@@ -76,7 +76,7 @@ Une fois que vous avez terminé les transformations, modifiez le nom de la requ�
 
 ![Capture d’écran montrant Modifier les requêtes avec Nom en évidence.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_07.png)
 
-Ensuite, **Enregistrez** le flux de données et nommez-le Fabrikam. Sélectionnez le bouton **Actualiser maintenant** , qui s’affiche après l’enregistrement du flux de données.
+Ensuite, **Enregistrez** le flux de données et nommez-le Fabrikam. Sélectionnez le bouton **Actualiser maintenant**, qui s’affiche après l’enregistrement du flux de données.
 
 ![Capture d’écran montrant le bouton Enregistrer.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_08.png)
 
@@ -86,7 +86,7 @@ Une fois que le flux de données est enregistré et actualisé, vous pouvez l’
 
 Ouvrez Power BI Desktop. Dans le ruban Accueil, sélectionnez **Obtenir des données**.
 
-Accédez au **flux de données Power BI (version bêta** ) dans la section Power BI et sélectionnez **Se connecter.**
+Accédez au **flux de données Power BI (version bêta**) dans la section Power BI et sélectionnez **Se connecter.**
 
 ![Capture d’écran montrant le volet Obtenir les données avec Dataflows Power BI sélectionné.](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_09.png)
 
