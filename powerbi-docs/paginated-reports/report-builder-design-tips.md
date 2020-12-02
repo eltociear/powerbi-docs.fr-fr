@@ -1,19 +1,19 @@
 ---
 title: Conseils pour la conception des rapports dans le Générateur de rapports Power BI
 description: Appliquez les conseils suivants pour concevoir vos rapports paginés dans Power BI Report Builder.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: dc8400361ca8d7bdd3713efa7bdf180578a597a2
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: fc43fd3b8cfa4aeace7ae2dd18e69958d241f83a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297925"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410042"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Conseils pour la conception des rapports dans le Générateur de rapports Power BI
 
@@ -128,7 +128,7 @@ Appliquez les conseils suivants pour concevoir vos rapports paginés dans Power 
   
     -   Les conteneurs s'étendent pour s'adapter au développement des éléments enfants. Pour un élément sélectionné, dans le volet Propriétés, la propriété Parent identifie le conteneur de l'élément. Vous pouvez également utiliser le volet Structure du document pour consulter la hiérarchie des relations contenant-contenu des éléments de rapport.  
   
-    -   La barre d'outils de **Disposition** fournit plusieurs boutons qui permettent d'aligner les bords, les centres et l'espacement des éléments de rapport. Pour activer la barre d'outils de **disposition** , dans le menu **Affichage** , pointez sur **Barres d'outils** , puis cliquez sur **Disposition**.  
+    -   La barre d'outils de **Disposition** fournit plusieurs boutons qui permettent d'aligner les bords, les centres et l'espacement des éléments de rapport. Pour activer la barre d'outils de **disposition** , dans le menu **Affichage** , pointez sur **Barres d'outils**, puis cliquez sur **Disposition**.  
   
 -   Si vous envisagez d'enregistrer le rapport en tant que fichier .pdf, la largeur du rapport doit être définie explicitement sur une valeur qui vous donne les résultats souhaités dans le format de fichier d'exportation. Par exemple, définissez la largeur de page du rapport sur exactement 7,9375 pouces et les marges droite et gauche sur 0,5 pouce.  
   

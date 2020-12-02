@@ -1,27 +1,27 @@
 ---
 title: Afficher les données utilisées pour créer la visualisation Power BI
 description: Ce document explique comment afficher les données utilisées pour créer un visuel dans Power BI et les exporter dans un fichier .csv.
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/4/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c3e996da62b71c008f4f7a5929cc8b91d38cc26e
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 960a3dec2276acba994190e73de671f2b071bc50
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412783"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409720"
 ---
 # <a name="display-a-visualizations-underlying-data"></a>Afficher les données sous-jacentes d’une visualisation
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 ## <a name="show-data"></a>Afficher les données
-Une visualisation Power BI est construite à l’aide des données de vos jeux de données. Si vous voulez voir les calculs sous-jacents, Power BI vous permet d’ *afficher* les données utilisées pour créer le visuel. Lorsque vous sélectionnez **Afficher les données** , Power BI affiche les données sous (ou à côté de) la visualisation.
+Une visualisation Power BI est construite à l’aide des données de vos jeux de données. Si vous voulez voir les calculs sous-jacents, Power BI vous permet d’*afficher* les données utilisées pour créer le visuel. Lorsque vous sélectionnez **Afficher les données**, Power BI affiche les données sous (ou à côté de) la visualisation.
 
 Vous pouvez également exporter les données utilisées pour créer la visualisation au format .xlsx ou .csv et les afficher dans Excel. Pour plus d’informations, consultez [Exporter des données à partir des visualisations Power BI](power-bi-visualization-export-data.md).
 
@@ -33,7 +33,7 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 ## <a name="using-show-data"></a>Utiliser *Afficher les données* 
 1. Dans Power BI Desktop, sélectionnez une visualisation pour l’activer.
 
-2. Sélectionnez **Autres actions**  (...) et choisissez **Afficher les données**. 
+2. Sélectionnez **Autres actions** (...) et choisissez **Afficher les données**. 
     ![option d’affichage pour Afficher les données](media/service-reports-show-data/power-bi-more-action.png)
 
 
@@ -54,7 +54,7 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 ## <a name="using-show-records"></a>Utiliser Afficher les enregistrements
 Vous pouvez également vous concentrer sur un enregistrement de données et explorer les données qui se trouvent derrière. 
 
-1. Pour utiliser **Afficher les enregistrements** , sélectionnez une visualisation pour l’activer. 
+1. Pour utiliser **Afficher les enregistrements**, sélectionnez une visualisation pour l’activer. 
 
 2. Dans le ruban Desktop, sélectionnez l’onglet **Outils pour les visuels** > **Données/Explorer** > **Afficher les enregistrements**. 
 

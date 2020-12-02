@@ -1,21 +1,21 @@
 ---
 title: Graphique combiné dans Power BI
 description: Ce didacticiel sur les graphiques combinés explique quand les utiliser et comment les créer dans le service Power BI et dans Power BI Desktop.
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89fdd0852db9560a6e2b0d43e03b9f89c61dd33e
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: f5731f8660fc27e6aef44878f5410819ce0c0eae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411564"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409927"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Créer et utiliser des graphiques combinés dans Power BI
 
@@ -71,12 +71,12 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
     c. Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**.
 
     ![Tutoriel sur les graphiques combinés - Exemple](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Sélectionnez **Autres options**  (...) en haut à droite de la visualisation, puis sélectionnez **Trier par > FiscalMonth** (MoisFiscal). Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**. Pour cet exemple, nous allons utiliser **Tri croissant**.
+5. Sélectionnez **Autres options** (...) en haut à droite de la visualisation, puis sélectionnez **Trier par > FiscalMonth** (MoisFiscal). Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**. Pour cet exemple, nous allons utiliser **Tri croissant**.
 
 6. Convertissez l’histogramme en graphique combiné. Deux graphiques combinés sont disponibles : **Graphique en courbes et histogramme empilé** et **Graphique en courbes et histogramme groupé**. Après avoir sélectionné l’histogramme, ouvrez le volet **Visualisations** et sélectionnez **Graphique en courbes et histogramme groupé**.
 
     ![Exemple de conversion d’un graphique combiné](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
-7. À partir du volet **Champs** , faites glisser **Sales** \> **Last Year Sales** (Ventes > Ventes de l’année dernière) vers **Valeurs de ligne**.
+7. À partir du volet **Champs**, faites glisser **Sales** \> **Last Year Sales** (Ventes > Ventes de l’année dernière) vers **Valeurs de ligne**.
 
    ![Zone de valeurs de ligne indiquant Ventes de l’année dernière](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
@@ -105,13 +105,13 @@ En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril
 ## <a name="add-titles-to-the-axes"></a>Ajouter des titres aux axes
 1. Sélectionnez l’icône de rouleau de peinture ![icône de rouleau de peinture](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) pour ouvrir le volet Mise en forme.
 1. Sélectionnez la flèche déroulante pour développer les options de l’ **axe Y** .
-1. Pour l’ **axe Y (colonne)** , définissez les valeurs suivantes : **Position** sur **Gauche** , **Titre** sur **Activé** , **Style** sur **Afficher le titre uniquement** et **Unités d’affichage** sur **Millions**.
+1. Pour l’**axe Y (colonne)** , définissez les valeurs suivantes : **Position** sur **Gauche**, **Titre** sur **Activé**, **Style** sur **Afficher le titre uniquement** et **Unités d’affichage** sur **Millions**.
 
    ![Graphique combiné - Exemple d’ouverture de l’axe Y](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
 4. Sous **Axe Y (colonne)** , faites défiler jusqu’à voir **Afficher l’élément secondaire**. Comme de très nombreuses options s’offrent à vous pour les axes Y, il peut être nécessaire d’utiliser les deux barres de défilement. La section Afficher l’élément secondaire contient des options de mise en forme de la partie « graphique en courbes » du graphique combiné.
 
    ![Graphique combiné - Exemple de graphique secondaire](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
-5. Pour l’ **axe Y (ligne)** , laissez **Position** sur **Droite** , définissez **Titre** sur **Activé** et **Style** sur **Afficher le titre uniquement**.
+5. Pour l’**axe Y (ligne)** , laissez **Position** sur **Droite**, définissez **Titre** sur **Activé** et **Style** sur **Afficher le titre uniquement**.
 
    Le graphique combiné affiche maintenant les deux axes, chacun avec un titre.
 

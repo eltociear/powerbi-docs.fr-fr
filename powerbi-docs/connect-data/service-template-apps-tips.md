@@ -2,25 +2,25 @@
 title: Conseils pour créer des applications modèles dans Power BI
 description: Conseils sur la création de requêtes, de modèles de données, de rapports et de tableaux de bord pour concevoir des applications modèles de qualité
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
-ms.openlocfilehash: 4530a6579a3109a2696c77a79a3a5a1c6b8092dd
-ms.sourcegitcommit: 1b3a626c5ca612a7f23058f8e5cc0147a94db51c
+ms.openlocfilehash: bb48b92df81a49ee687376ee9f53428c10171b80
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348056"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410111"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
 Quand [vous créez une application modèle](service-template-apps-create.md) dans Power BI, une partie du travail consiste à créer l’espace de travail associé, à tester l’application et à mettre l’application finalisée en production. L’autre part importante du travail est bien sûr la création du rapport et du tableau de bord de l’application. Nous pouvons décomposer le processus de création en quatre composants principaux. Bien définir ces composants vous aide à créer une application modèle de qualité :
 
-* Avec les **requêtes** , vous [connectez](desktop-connect-to-data.md) et [transformez](../transform-model/desktop-query-overview.md) les données, et vous définissez les [paramètres](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
-* Dans le **modèle de données** , vous créez les [relations](../transform-model/desktop-create-and-manage-relationships.md), les [mesures](../transform-model/desktop-measures.md) et les améliorations des questions et réponses.  
+* Avec les **requêtes**, vous [connectez](desktop-connect-to-data.md) et [transformez](../transform-model/desktop-query-overview.md) les données, et vous définissez les [paramètres](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
+* Dans le **modèle de données**, vous créez les [relations](../transform-model/desktop-create-and-manage-relationships.md), les [mesures](../transform-model/desktop-measures.md) et les améliorations des questions et réponses.  
 * Les **[pages de rapport](../create-reports/desktop-report-view.md)** comprennent des visuels et des filtres pour fournir des insights sur vos données.  
 * Les **[tableaux de bord](../consumer/end-user-dashboards.md)** et les [vignettes](../create-reports/service-dashboard-create.md) offrent une vue d’ensemble des insights inclus.
 * Des exemples de données rendent votre application détectable immédiatement après l’installation.

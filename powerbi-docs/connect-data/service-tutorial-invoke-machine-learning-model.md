@@ -2,20 +2,20 @@
 title: 'Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)'
 description: Dans ce tutoriel, vous appelez un modèle Machine Learning Studio (classique) dans Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: SarinaJoan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4124799f15bbccd7c82428d1290ae2ae6420311f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: c59e0fff95f611fbe84586af64db7a532285d72b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397113"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410203"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio (classique) dans Power BI (préversion)
 
@@ -43,11 +43,11 @@ Pour accéder à un modèle Azure ML à partir de Power BI, vous devez avoir un 
 
 Les étapes suivantes supposent que vous êtes le coadministrateur de l’abonnement Azure et du groupe de ressources dans lequel le modèle a été publié.
 
-Connectez-vous au [portail Azure](https://portal.azure.com) et accédez à la page **Abonnements** , que vous trouverez dans la liste **Tous les services** du volet de navigation.
+Connectez-vous au [portail Azure](https://portal.azure.com) et accédez à la page **Abonnements**, que vous trouverez dans la liste **Tous les services** du volet de navigation.
 
 ![Capture d’écran montrant le portail Azure avec Abonnements sélectionné.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Sélectionnez l’abonnement Azure que vous avez utilisé pour publier le modèle, puis **Access Control (IAM)** . Sélectionnez ensuite **Ajouter une attribution de rôle** , puis le rôle **Lecteur** et enfin, l’utilisateur de Power BI. Lorsque vous avez terminé, sélectionnez **Enregistrer**. L’image suivante montre ces sélections.
+Sélectionnez l’abonnement Azure que vous avez utilisé pour publier le modèle, puis **Access Control (IAM)** . Sélectionnez ensuite **Ajouter une attribution de rôle**, puis le rôle **Lecteur** et enfin, l’utilisateur de Power BI. Lorsque vous avez terminé, sélectionnez **Enregistrer**. L’image suivante montre ces sélections.
 
 ![Contrôle d'accès au portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -59,7 +59,7 @@ Répétez ensuite les étapes ci-dessus pour accorder l’accès du rôle **Cont
 
 Connectez-vous au service Power BI avec les informations d’identification de l’utilisateur auquel vous avez accordé l’accès au modèle Azure ML à l’étape précédente.
 
-Cette étape suppose que les données que vous souhaitez évaluer avec votre modèle Azure ML soient au format CSV.  Si vous avez utilisé l’ **expérience de tarification automobile** pour créer le modèle dans Machine Learning Studio (classique), le jeu de données est partagé dans le lien suivant :
+Cette étape suppose que les données que vous souhaitez évaluer avec votre modèle Azure ML soient au format CSV.  Si vous avez utilisé l’**expérience de tarification automobile** pour créer le modèle dans Machine Learning Studio (classique), le jeu de données est partagé dans le lien suivant :
 
 * [Exemple de modèle Azure Learning Studio (classique)](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
@@ -79,7 +79,7 @@ Sélectionnez l’onglet **Flux de données (préversion)** , puis sélectionnez
 
 ![Dataflows (préversion)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
 
-Sélectionnez **Ajouter de nouvelles entités** , qui lance l’ **Éditeur Power Query** dans le navigateur.
+Sélectionnez **Ajouter de nouvelles entités**, qui lance l’**Éditeur Power Query** dans le navigateur.
 
 ![Ajouter une nouvelle entité](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_06.png)
 
@@ -87,7 +87,7 @@ Sélectionnez **Texte/Fichier CSV** comme source de données.
 
 ![Choisir une source de données](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_07.png)
 
-Dans l’écran suivant, vous êtes invité à vous connecter à une source de données. Collez le lien vers les données que vous avez utilisées pour créer votre modèle Azure ML. Si vous avez utilisé les données de _tarification automobile_ , vous pouvez coller le lien suivant dans la zone **Chemin d’accès de fichier ou URL** , puis sélectionner **Suivant**.
+Dans l’écran suivant, vous êtes invité à vous connecter à une source de données. Collez le lien vers les données que vous avez utilisées pour créer votre modèle Azure ML. Si vous avez utilisé les données de _tarification automobile_, vous pouvez coller le lien suivant dans la zone **Chemin d’accès de fichier ou URL**, puis sélectionner **Suivant**.
 
 `https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
@@ -97,14 +97,14 @@ L’éditeur Power Query affiche un aperçu des données à partir du fichier CS
 
 ![Capture d’écran de l’éditeur Power Query présentant un aperçu des données.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
-Notre jeu de données source a des valeurs inconnues définies sur « ? ».  Pour y remédier, nous pouvons remplacer « ? » par « 0 » pour éviter des erreurs ultérieures et simplifier les choses.  Pour ce faire, sélectionnez les colonnes *normalized-losses* , *bore* , *stroke* , *compression-ratio* , *horsepower* , *peak-rpm* et *price* en cliquant sur leur nom dans les en-têtes de colonnes, puis sur « Transformer les colonnes », et sélectionnez « Remplacer les valeurs ».  Remplacer « ? » par « 0 ».
+Notre jeu de données source a des valeurs inconnues définies sur « ? ».  Pour y remédier, nous pouvons remplacer « ? » par « 0 » pour éviter des erreurs ultérieures et simplifier les choses.  Pour ce faire, sélectionnez les colonnes *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower* , *peak-rpm* et *price* en cliquant sur leur nom dans les en-têtes de colonnes, puis sur « Transformer les colonnes », et sélectionnez « Remplacer les valeurs ».  Remplacer « ? » par « 0 ».
 
 ![Remplacer les valeurs](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_10.png)
 
 Toutes les colonnes dans la table à partir d’une source de texte/CSV sont traitées comme des colonnes de texte.  Ensuite, nous devons transformer les colonnes numériques en types de données corrects.  Vous pouvez le faire dans Power Query en cliquant sur le symbole de type de données dans l’en-tête de colonne.  Transformer les colonnes en types ci-dessous :
 
-- **Nombre entier**  :  symboling, normalized-losses, curb-weight, engine-size, horsepower, peak-rpm, city-mpg, highway-mpg, price
-- **Nombre décimal**  :   wheel-base, length, width, height, bore, stroke, compression-ratio
+- **Nombre entier** :  symboling, normalized-losses, curb-weight, engine-size, horsepower, peak-rpm, city-mpg, highway-mpg, price
+- **Nombre décimal** :   wheel-base, length, width, height, bore, stroke, compression-ratio
 
 ![Modifier les colonnes](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_11.png)
 
@@ -126,7 +126,7 @@ Vous pouvez également actualiser votre flux de données avec les commandes **Ac
 
 ## <a name="apply-insights-from-your-azure-ml-model"></a>Appliquer des insights de votre modèle Azure ML
 
-Pour accéder au modèle Azure ML pour la _Prédiction du prix des automobiles_ , vous pouvez modifier l’entité _Tarification automobile_ pour laquelle nous souhaitons ajouter le prix prévu.
+Pour accéder au modèle Azure ML pour la _Prédiction du prix des automobiles_, vous pouvez modifier l’entité _Tarification automobile_ pour laquelle nous souhaitons ajouter le prix prévu.
 
 ![Modifier l'entité](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_15.png)
 
@@ -136,7 +136,7 @@ La sélection de l’icône **Modifier** ouvre l’éditeur Power Query pour les
 
 Sélectionnez le bouton **Insights IA** dans le ruban, puis sélectionnez le dossier _Modèles Azure Machine Learning_ dans le menu du volet de navigation.
 
-Les modèles Azure ML auxquels vous avez accès sont répertoriés en tant que fonctions de Power Query avec un préfixe *AzureML.*  Lorsque vous cliquez sur la fonction correspondant au modèle _AutomobilePricePrediction_ , les paramètres du service web du modèle sont répertoriés en tant que paramètres de fonction.
+Les modèles Azure ML auxquels vous avez accès sont répertoriés en tant que fonctions de Power Query avec un préfixe *AzureML.*  Lorsque vous cliquez sur la fonction correspondant au modèle _AutomobilePricePrediction_, les paramètres du service web du modèle sont répertoriés en tant que paramètres de fonction.
 
 Pour appeler un modèle Azure ML, vous pouvez définir une des colonnes de l’entité sélectionnée en tant qu’entrée dans la liste déroulante. Vous pouvez également spécifier une valeur constante à utiliser comme entrée en basculant l’icône de la colonne à gauche de la boîte de dialogue d’entrée. Lorsqu’un nom de colonne correspond à l’un des noms de paramètre de fonction, la colonne est automatiquement suggérée en tant qu’entrée.  Si le nom de colonne ne correspond pas, vous pouvez le sélectionner dans la liste déroulante.
 

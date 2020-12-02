@@ -1,20 +1,20 @@
 ---
 title: Se connecter à Snowflake avec Power BI
 description: Découvrez comment vous connecter à Snowflake pour Power BI à l’aide de l’authentification SSO.
-author: cpopell
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 06/26/2020
-ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 950868252bb1002a31cb0868308d2337e03d03e9
-ms.sourcegitcommit: 02b5d031d92ea5d7ffa70d5098ed15e4ef764f2a
+ms.openlocfilehash: 75d4a4db1d21297fcdfd675ca4eaaf82e5e611f5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91375209"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410571"
 ---
 # <a name="connect-to-snowflake-in-power-bi-service"></a>Connexion à Snowflake dans le service Power BI
 

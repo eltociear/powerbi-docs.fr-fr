@@ -1,20 +1,20 @@
 ---
 title: Copier et coller une visualisation dans Power BI
 description: Copier et coller une visualisation dans Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: maggie tsang
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/18/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd5fc361431268c37639a336923a4067176f1761
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: fda66910ac073421d4b17706dec70d6aa6e86499
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411058"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409881"
 ---
 # <a name="copy-and-paste-a-report-visualization"></a>Copier et coller une visualisation de rapport
 
@@ -99,11 +99,11 @@ Si vous ne souhaitez pas qu’un visuel puisse être copié par les utilisateurs
 1. Ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. 
 
 1. Ouvrez la carte **Mise en forme du visuel**.
-1. Faites défiler jusqu’à **En-tête du visuel** , développez la carte, puis désactivez l’ **icône de copie**.
+1. Faites défiler jusqu’à **En-tête du visuel**, développez la carte, puis désactivez l’**icône de copie**.
 
     ![rouleau de peinture sélectionné et icône de copie sélectionnée](media/power-bi-visualization-copy-paste/power-bi-visual-header.png)
 
-1. Si vous ne trouvez pas le paramètre **En-tête du visuel** , activez l’option d’en-tête visuel moderne sous **Paramètres du rapport**. 
+1. Si vous ne trouvez pas le paramètre **En-tête du visuel**, activez l’option d’en-tête visuel moderne sous **Paramètres du rapport**. 
 
     ![activer l’en-tête de visuel moderne sélectionnée](media/power-bi-visualization-copy-paste/power-bi-use-modern.png)
 
@@ -115,7 +115,7 @@ Si vous êtes le propriétaire du contenu ou un administrateur du locataire, vou
   
 1. Accédez au portail d’administration.
 
-1. Sous **Paramètres du client** , sélectionnez **Paramètres d’exportation et de partage**. 
+1. Sous **Paramètres du client**, sélectionnez **Paramètres d’exportation et de partage**. 
 
     ![activer Copier et coller des visuels](media/power-bi-visualization-copy-paste/power-bi-enable.png)
 

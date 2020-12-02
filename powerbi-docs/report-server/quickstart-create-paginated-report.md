@@ -2,18 +2,18 @@
 title: Créer un rapport paginé pour Power BI Report Server
 description: Découvrez comment créer un rapport paginé pour Power BI Report Server en quelques étapes simples.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 01/07/2020
-ms.author: maggies
-ms.openlocfilehash: cf205603a4807b814e56904151e0ce8db66cfab1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 72c52c5d9618411fcb696f5a1b6e2c9eddf81ded
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853537"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96409996"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Créer un rapport paginé pour Power BI Report Server
 Dans cet article, vous allez créer un rapport paginé pour Power BI Report Server en quelques étapes simples.

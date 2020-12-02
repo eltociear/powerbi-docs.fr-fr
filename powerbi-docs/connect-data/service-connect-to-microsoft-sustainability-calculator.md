@@ -1,19 +1,19 @@
 ---
 title: Connecter Microsoft Sustainability Calculator
 description: Microsoft Sustainability Calculator pour Power BI
-author: joshthor3222
+author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 01/06/2020
-ms.author: v-tikid
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cffb7ecc195f5ce803ec2dfc81c794bac75c9448
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 00c8ee0ff77d2253b1240c943261ab053f29765a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85230022"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410525"
 ---
 # <a name="connect-the-microsoft-sustainability-calculator"></a>Connecter Microsoft Sustainability Calculator
 Obtenez des informations sur les émissions de carbone de votre infrastructure informatique pour prendre des décisions de calcul plus durables
@@ -28,7 +28,7 @@ Cette version du connecteur prend en charge seulement les inscriptions d’entre
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Sélectionnez **Microsoft Sustainability Calculator** \> **Obtenir maintenant**.
-1. Dans **Installer cette application Power BI ?** , sélectionnez**Installer**.
+1. Dans **Installer cette application Power BI ?** , sélectionnez **Installer**.
 1. Dans le volet **Applications**, sélectionnez la vignette **Microsoft Sustainability Calculator**.
 1. Dans **Démarrer avec votre nouvelle application**, sélectionnez **Se connecter**.
 

@@ -2,19 +2,19 @@
 title: Obtenir des données de fichiers Power BI Desktop
 description: Découvrez comment obtenir des données et des rapports de Power BI Desktkop dans Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/26/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3022c43f4c1af3098b24148ccb0bdadf6e0da521
-ms.sourcegitcommit: a254f6e2453656f6783690669be8e881934e15ac
+ms.openlocfilehash: e89f45d302216af8193029cb613b4e7a54365b8d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363982"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410387"
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Obtenir des données de fichiers Power BI Desktop
 ![Icône de fichier Power BI Desktop](media/service-desktop-files/pbid_file_icon.png)

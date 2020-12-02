@@ -1,19 +1,19 @@
 ---
 title: Aide sur la sécurité au niveau des lignes (RLS) dans Power BI Desktop
 description: Conseils pour l’application de la sécurité au niveau des lignes (RLS) dans vos modèles de données avec Power BI Desktop.
-author: peter-myers
+author: paulinbar
+ms.author: painbar
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/18/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 644e4499a335f18febadf33c371bd15e01499701
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 3c8290391d549f4510b4f6ea6ee0fd596500045e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349618"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96410088"
 ---
 # <a name="row-level-security-rls-guidance-in-power-bi-desktop"></a>Aide sur la sécurité au niveau des lignes (RLS) dans Power BI Desktop
 
@@ -32,7 +32,7 @@ Il est possible de créer plusieurs rôles. Lorsque vous envisagez les besoins d
 
 Lorsqu’un utilisateur de rapport est affecté à plusieurs rôles, les filtres RLS deviennent additifs. Cela signifie que les utilisateurs de rapports peuvent voir les lignes de table qui représentent l’union de ces filtres. De plus, dans certains scénarios, il n’est pas possible de garantir qu’un utilisateur de rapport ne voit pas de lignes dans une table. Par conséquent, contrairement aux autorisations appliquées aux objets de base de données SQL Server (et aux autres modèles d’autorisation), le principe de « ce qui est refusé une fois est toujours refusé » ne s’applique pas.
 
-Prenons l’exemple d’un modèle avec deux rôles : Le premier rôle, nommé **Workers** , limite l’accès à toutes les lignes de la table **Payroll** à l’aide de l’expression de règle suivante :
+Prenons l’exemple d’un modèle avec deux rôles : Le premier rôle, nommé **Workers**, limite l’accès à toutes les lignes de la table **Payroll** à l’aide de l’expression de règle suivante :
 
 ```dax
 FALSE()
@@ -41,7 +41,7 @@ FALSE()
 > [!NOTE]
 > Une règle ne retourne pas de lignes de table lorsque son expression prend la valeur **false**.
 
-Pourtant, un deuxième rôle, nommé **Managers** , autorise l’accès à toutes les lignes de la table **Payroll** à l’aide de l’expression de règle suivante :
+Pourtant, un deuxième rôle, nommé **Managers**, autorise l’accès à toutes les lignes de la table **Payroll** à l’aide de l’expression de règle suivante :
 
 ```dax
 TRUE()
@@ -114,8 +114,8 @@ Voyons comment vous pourriez implémenter cette exigence de conception. Tout d�
 
 Le modèle comprend quatre tables :
 
-- La table **Salesperson** stocke une ligne par vendeur. Elle comprend la colonne **EmailAddress** , qui stocke l’adresse e-mail de chaque commercial. Cette table est masquée.
-- La table **Sales** stocke une ligne par commande. Elle comprend la mesure **Revenue % All Region** , qui est conçue pour renvoyer la proportion du chiffre d’affaires obtenu par la région de l’utilisateur du rapport par rapport au chiffre d’affaires réalisé par toutes les régions.
+- La table **Salesperson** stocke une ligne par vendeur. Elle comprend la colonne **EmailAddress**, qui stocke l’adresse e-mail de chaque commercial. Cette table est masquée.
+- La table **Sales** stocke une ligne par commande. Elle comprend la mesure **Revenue % All Region**, qui est conçue pour renvoyer la proportion du chiffre d’affaires obtenu par la région de l’utilisateur du rapport par rapport au chiffre d’affaires réalisé par toutes les régions.
 - La table **Date** stocke une ligne par date et permet de filtrer et de regrouper par année et par mois.
 - **SalesRevenueSummary** est une table calculée. Elle stocke le chiffre d’affaires total pour chaque date de commande. Cette table est masquée.
 
@@ -132,7 +132,7 @@ SUMMARIZECOLUMNS(
 > [!NOTE]
 > Une [table d’agrégation](../transform-model/desktop-aggregations.md) peut répondre aux mêmes exigences de conception.
 
-La règle RLS suivante est appliquée à la table **SalesPerson**  :
+La règle RLS suivante est appliquée à la table **SalesPerson** :
 
 ```dax
 [EmailAddress] = USERNAME()
