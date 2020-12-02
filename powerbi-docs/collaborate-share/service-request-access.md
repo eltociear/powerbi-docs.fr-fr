@@ -2,20 +2,20 @@
 title: Demande ou autorisation d’accès à des tableaux de bord ou des rapports
 description: Si quelqu’un vous envoie un lien vers un tableau de bord ou un rapport sans le partager avec vous, vous pouvez demander l’accès.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 06/23/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e55e5557d6cb262131a4d44f7d5f937d388fb737
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: b1b7408657dbf48fdee68518a885d5503a9d28da
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85486718"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96406454"
 ---
 # <a name="request-or-grant-access-to-shared-dashboards-or-reports"></a>Demande ou autorisation d’accès à des tableaux de bord ou des rapports partagés
 
