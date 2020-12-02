@@ -2,18 +2,18 @@
 title: Afficher les rapports Power BI optimisés pour votre téléphone
 description: En savoir plus sur l’interaction avec les pages de rapport optimisées pour l’affichage dans les applications Power BI pour téléphone.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: painbar
-ms.openlocfilehash: 9030d7ebacad92780a7dcafe33ae5bdded842b01
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6b2f8a7f7197d4027115266e8456cee01eb12a9f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856138"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397070"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 

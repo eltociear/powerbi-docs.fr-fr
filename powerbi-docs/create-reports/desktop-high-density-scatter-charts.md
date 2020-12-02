@@ -2,19 +2,19 @@
 title: Nuages de points à haute densité dans Power BI
 description: Nuages de points à haute densité dans Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c744b7b9b0ec15258214c9c7e27332eb4a49ead4
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: a3322a184d00c69e96878ccea6d59d0cb15b7e60
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86262923"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96396863"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points de Power BI
 À compter de la version de septembre 2017 de **Power BI Desktop** et des mises à jour apportées au **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.

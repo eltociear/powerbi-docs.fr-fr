@@ -2,19 +2,19 @@
 title: Utiliser un segment ou un filtre de date relative dans Power BI
 description: Découvrez comment utiliser un segment ou un filtre pour limiter les plages de dates relatives dans Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: rien
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/09/2020
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5599c26524ba296b7cd201467c48f124b9843b4d
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 8d83a2b655c7a4dd788e34ce5744daaac0f73f63
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412829"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397438"
 ---
 # <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Création d’un segment et d’un filtre de date relative dans Power BI
 
@@ -40,7 +40,7 @@ Pour le segment de date relative, sélectionnez *Relatif*.
 
 Vous pouvez ensuite sélectionner les paramètres.
 
-Pour le premier paramètre du *segment de date relative* , vos choix sont les suivants :
+Pour le premier paramètre du *segment de date relative*, vos choix sont les suivants :
 
 ![Capture d’écran des options de configuration Relatif avec le premier paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
@@ -64,7 +64,7 @@ Le troisième paramètre vous permet de choisir la mesure de la date. Vos choix 
 * Années
 * Années (civiles)
 
-Si vous sélectionnez **Mois** dans cette liste et entrez  *2* dans le paramètre du milieu, voici ce qui se produit :
+Si vous sélectionnez **Mois** dans cette liste et entrez *2* dans le paramètre du milieu, voici ce qui se produit :
 
 * Si la date du jour est le 20 juillet :
 
@@ -94,7 +94,7 @@ Les considérations et limitations suivantes s’appliquent actuellement à l’
 * Le type de données pour le champ dans le segment doit être une date et non le texte par défaut. Si ce n’est pas le cas, les options associées ne s’affichent pas dans le segment.
 * Les modèles de données dans **Power BI** n’incluent pas les informations de fuseau horaire. Ces modèles peuvent stocker des heures, mais sans indication de leur fuseau horaire.
 * Le segment et le filtre sont toujours basés sur l’heure UTC (temps universel coordonné). Si vous définissez un filtre dans un rapport et que vous l’envoyez à un collègue qui se trouve dans un autre fuseau horaire, vous voyez tous les deux les mêmes données. Sauf si vous vous situez dans le fuseau horaire UTC, votre collègue et vous devez tenir compte du décalage temporel que vous rencontrez.
-* Vous pouvez convertir à l’heure UTC les données capturées dans un fuseau horaire local en utilisant l’ **Éditeur de requête**.
+* Vous pouvez convertir à l’heure UTC les données capturées dans un fuseau horaire local en utilisant l’**Éditeur de requête**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
