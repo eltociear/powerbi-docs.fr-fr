@@ -2,19 +2,19 @@
 title: Utiliser des thèmes de tableau de bord dans le service Power BI
 description: Découvrez comment utiliser une palette de couleurs personnalisée et comment l’appliquer à tout un tableau de bord dans le service Power BI
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 08/22/2018
-ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 57331a49d5020308ebc39fbcb42a1728e6167593
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9167a5931976cdcec710ee79b347fcd0f33ba378
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236990"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96395299"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Utiliser des thèmes de tableau de bord dans le service Power BI
 Les **thèmes de tableau de bord** vous permettent d’appliquer un thème de couleur à l’intégralité d’un tableau de bord. Il peut s’agir des couleurs de votre organisation, de teintes liées à la saison ou de tout autre thème de votre choix. Quand vous appliquez un **thème de tableau de bord**, tous les visuels du tableau de bord utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).

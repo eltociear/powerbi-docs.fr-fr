@@ -2,18 +2,18 @@
 title: 'DAX : Références de colonne et de mesure'
 description: Aide sur les références de colonne et de mesure dans vos expressions DAX.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 12/18/2019
-ms.author: v-pemyer
-ms.openlocfilehash: d3a7c39d659dacb8a44728518e239cd481ba951d
-ms.sourcegitcommit: cff93e604e2c5f24e0f03d6dbdcd10c2332aa487
+ms.openlocfilehash: 861fd2d5c3d511358b508c7a0d6f7e96472e5aaf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90965228"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96394241"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX : Références de colonne et de mesure
 
