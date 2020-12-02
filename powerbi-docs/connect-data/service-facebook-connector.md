@@ -2,19 +2,19 @@
 title: 'Service tiers : Connecteur Facebook pour Power BI Desktop'
 description: 'Service tiers : Connecteur Facebook pour Power BI Desktop'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/20/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4dfdd21eebe0f8a66aea9dd3d30c38318e975daf
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4f1faf585643c593e194e965dff2bb29988e27d4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85236604"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402567"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Utiliser le connecteur Facebook pour Power BI Desktop
 Le connecteur Facebook de **Power BI Desktop** s’appuie sur l’API Graph de Facebook. Ses fonctionnalités et sa disponibilité peuvent donc varier au fil du temps.

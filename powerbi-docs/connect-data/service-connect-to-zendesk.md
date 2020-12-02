@@ -2,19 +2,19 @@
 title: Se connecter à Zendesk avec Power BI
 description: Zendesk pour Power BI
 author: paulinbar
+ms.author: painbar
 ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 05/04/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e32824a58faa3a6a98e4d38f7362c62ab13b069e
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: d5400830df44055a0f17de72385778a0c06fb06b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86034448"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403027"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Se connecter à Zendesk avec Power BI
 
@@ -37,7 +37,7 @@ Une fois l’application de modèle installée, vous pouvez modifier le tableau 
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Sélectionnez **Zendesk** \> **Obtenir maintenant**.
-4. Dans **Installer cette application Power BI ?** , sélectionnez**Installer**.
+4. Dans **Installer cette application Power BI ?** , sélectionnez **Installer**.
 4. Dans le volet **Applications**, sélectionnez la vignette **Zendesk**.
 
     ![Vignette de l’application Zendesk Power BI](media/service-connect-to-zendesk/power-bi-zendesk-tile.png)

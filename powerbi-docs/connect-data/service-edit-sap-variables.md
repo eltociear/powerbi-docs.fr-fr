@@ -1,20 +1,20 @@
 ---
 title: Modifier des variables SAP dans le service Power BI
 description: Azure et Power BI
-author: Sujata994
-ms.author: sunaraya
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: d1e3037bdc26af35d4b8392e151575049f85fa70
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 179e8740bed71d3d295cfc2fe5f103744e9dbd07
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284471"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96402728"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service"></a>Modifier des variables SAP dans le service Power BI
 
@@ -51,7 +51,7 @@ Pour activer la fonctionnalité de **modification de variables SAP**, dans Power
 
 ## <a name="use-sap-edit-variables-in-power-bi-desktop"></a>Utiliser la modification de variables SAP dans Power BI Desktop
 
-Quand vous utilisez la modification de variables SAP dans Power BI Desktop, vous pouvez modifier les variables en sélectionnant le lien Modifier les variables dans le menu**Modifier les requêtes** dans le ruban. C’est alors que la boîte de dialogue suivante s’affiche. Cette fonctionnalité est disponible dans Power BI Desktop depuis un certain temps. Les créateurs de rapports peuvent sélectionner des variables pour le rapport à partir de la boîte de dialogue suivante.
+Quand vous utilisez la modification de variables SAP dans Power BI Desktop, vous pouvez modifier les variables en sélectionnant le lien Modifier les variables dans le menu **Modifier les requêtes** dans le ruban. C’est alors que la boîte de dialogue suivante s’affiche. Cette fonctionnalité est disponible dans Power BI Desktop depuis un certain temps. Les créateurs de rapports peuvent sélectionner des variables pour le rapport à partir de la boîte de dialogue suivante.
 
 ![Ajouter des éléments](media/service-edit-sap-variables/sap-variables-add-items.png)
 

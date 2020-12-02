@@ -2,18 +2,18 @@
 title: Se connecter au Rapport de présence dans les communications de crise
 description: Comment obtenir et installer l’application modèle Rapport de présence dans les communications de crise dans le contexte du COVID-19 et comment se connecter aux données
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 97501fe6e5a3e12e1b6773ce1b3fd67b503bf0f1
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 7cce4f9e78fce27fedf795a4a0016593580f061a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860299"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403165"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Se connecter au Rapport de présence dans les communications de crise
 
