@@ -2,19 +2,19 @@
 title: Actualiser un jeu de données créé à partir d’un classeur Excel - local
 description: Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/28/2018
-ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ef9c39f6c00738718d88dd485430b150ad95ec50
-ms.sourcegitcommit: c83146ad008ce13bf3289de9b76c507be2c330aa
+ms.openlocfilehash: d2dd08d087b8c4f878d9f74946c77e84dd8ba9e0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86216349"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96403947"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
@@ -66,7 +66,7 @@ Pour plus d’informations sur la façon de planifier l’actualisation, consult
 ## <a name="when-things-go-wrong"></a>Quand des problèmes apparaissent
 Quand des problèmes apparaissent, ceux-ci sont souvent dus au fait que Power BI ne parvient pas à se connecter aux sources de données ou, si le jeu de données se connecte à une source de données locale, que la passerelle est hors connexion. Veuillez donc vous assurer que Power BI peut se connecter aux sources de données. Si vous modifiez le mot de passe que vous utilisez pour vous connecter à une source de données ou que Power BI est déconnecté d’une source de données, essayez de vous reconnecter à vos sources de données dans Informations d’identification de la source de données.
 
-Veillez à laisser l’option **M’envoyer une notification d’échec d’actualisation**activée. Vous voudrez en effet probablement être immédiatement informé en cas d’échec d’une actualisation planifiée.
+Veillez à laisser l’option **M’envoyer une notification d’échec d’actualisation** activée. Vous voudrez en effet probablement être immédiatement informé en cas d’échec d’une actualisation planifiée.
 
 >[!IMPORTANT]
 >L’actualisation n’est pas prise en charge pour les flux OData connectés à Power Pivot et interrogés à partir de Power Pivot. En cas d’utilisation d’un flux OData comme source de données, utilisez Power Query.

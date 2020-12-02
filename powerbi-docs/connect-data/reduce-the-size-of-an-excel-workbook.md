@@ -2,19 +2,19 @@
 title: Réduire la taille d’un classeur Excel pour l’afficher dans Power BI
 description: Réduire la taille d’un classeur Excel pour l’afficher dans Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/10/2019
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 7755834f5d76392f7212073f958d3c4070dcaca7
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9996b8e3f571a04dc41d138947532f3ab402057a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85234775"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96404085"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Réduire la taille d’un classeur Excel pour l’afficher dans Power BI
 Vous pouvez charger n’importe quel classeur Excel dans Power BI à condition que sa taille ne dépasse pas 1 Go. Un classeur Excel peut être constitué de deux parties : un modèle de données et le reste du rapport, c’est-à-dire, le contenu principal des feuilles de calcul. Dans la mesure où le rapport ne dépasse pas les tailles limites suivantes, vous pouvez l’enregistrer sur **OneDrive Entreprise**, vous y connecter à partir de Power BI et l’afficher dans Excel Online :
