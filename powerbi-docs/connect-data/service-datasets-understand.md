@@ -1,19 +1,19 @@
 ---
 title: Jeux de données dans le service Power BI
 description: Comprendre les jeux de données du service Power BI, qui représentent une source de données prêtes pour la création de rapports et la visualisation.
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: ecd683cf55b6198aed1bbc76f87646846bbf222f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: bff238fa0845c28f508a9abdda21b24f73dfb99f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83284770"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392424"
 ---
 # <a name="datasets-in-the-power-bi-service"></a>Jeux de données dans le service Power BI
 

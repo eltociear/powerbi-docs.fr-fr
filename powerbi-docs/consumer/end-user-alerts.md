@@ -2,20 +2,20 @@
 title: 'Tutoriel : Définir des alertes de données sur les tableaux de bord du service Power BI'
 description: Dans ce tutoriel, vous découvrez comment définir des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez dans le service Microsoft Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/05/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 22d9baaf50ce32c4a9d3644cff455b474bdd1549
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: be3ed6d8a836b626ba26e5e9acce7f0f2df3c6ea
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525310"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391987"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Tutoriel : Définir des alertes sur des tableaux de bord Power BI
 

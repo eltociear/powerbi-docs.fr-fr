@@ -2,20 +2,20 @@
 title: 'Tutoriel : Créer un modèle Machine Learning dans Power BI'
 description: Dans ce didacticiel, vous allez créer un modèle Machine Learning dans Power BI.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 08/03/2020
-ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 49f1b46e89fd05d05928de631b0ea42832801a05
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 31b56f4888393c12f94eb4e6d8f819d992a04029
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397228"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392332"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Tutoriel : Créer un modèle Machine Learning dans Power BI
 
@@ -66,7 +66,7 @@ Sélectionnez **Fichier texte/CSV** comme source de données, comme indiqué dan
 
 ![Fichier texte/CSV sélectionné](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)
 
-Dans la page **Connexion à une source de données** qui apparaît ensuite, collez le lien suivant dans le fichier _online_shoppers_intention.csv_ dans la zone **Chemin ou URL du fichier** , puis sélectionnez **Suivant**.
+Dans la page **Connexion à une source de données** qui apparaît ensuite, collez le lien suivant dans le fichier _online_shoppers_intention.csv_ dans la zone **Chemin ou URL du fichier**, puis sélectionnez **Suivant**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
@@ -118,7 +118,7 @@ Vous pouvez vérifier que le modèle est en cours de formation et de validation 
 
 ![Prêt pour l’apprentissage](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)
 
-Une fois l’apprentissage du modèle terminé, le dataflow affiche une date d’actualisation mise à jour. Vous pouvez vérifier que le modèle est formé en accédant à l’onglet **Modèles Machine Learning** dans le dataflow. Le modèle que vous avez créé doit afficher l’état **Entraîné** et l’ **Heure du dernier entraînement** doit être mise à jour.
+Une fois l’apprentissage du modèle terminé, le dataflow affiche une date d’actualisation mise à jour. Vous pouvez vérifier que le modèle est formé en accédant à l’onglet **Modèles Machine Learning** dans le dataflow. Le modèle que vous avez créé doit afficher l’état **Entraîné** et l’**Heure du dernier entraînement** doit être mise à jour.
 
 ![Dernier entraînement le](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png)
 
@@ -139,7 +139,7 @@ Le rapport comprend également une page de détails de formation qui décrit les
 
 ## <a name="apply-the-model-to-a-dataflow-entity"></a>Appliquer le modèle à une entité de dataflow
 
-Sélectionnez le bouton **Appliquer le modèle** en haut du rapport pour appeler ce modèle. Dans la boîte de dialogue **Appliquer** , vous pouvez spécifier l’entité cible qui contient les données source auxquelles le modèle doit être appliqué.
+Sélectionnez le bouton **Appliquer le modèle** en haut du rapport pour appeler ce modèle. Dans la boîte de dialogue **Appliquer**, vous pouvez spécifier l’entité cible qui contient les données source auxquelles le modèle doit être appliqué.
 
 ![Appliquer le modèle](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-19.png)
 

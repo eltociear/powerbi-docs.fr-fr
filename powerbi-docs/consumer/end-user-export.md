@@ -2,20 +2,20 @@
 title: Exporter des données à partir d’un visuel Power BI
 description: Exportez des données à partir d’un élément visuel de rapport et d’un élément visuel de tableau de bord et affichez-les dans Excel.
 author: mihart
+ms.author: mihart
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 08/28/2020
-ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 671bef8f00b79db87b11a059438d873a0641ef91
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 13d8eda142896b406269f940823e702b2ca7cb3e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462484"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96391021"
 ---
 # <a name="export-data-from-a-visual"></a>Exporter des données à partir d’un élément visuel
 
@@ -30,12 +30,12 @@ L’exportation de données requiert une licence Power BI Pro, ou que le tableau
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>À partir d’un élément visuel dans un tableau de bord Power BI
 
-1. Démarrer un tableau de bord Power BI. Ici, nous utilisons le tableau de bord de l’application * **Exemple Marketing et ventes** _. Vous pouvez [télécharger cette application sur AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
+1. Démarrer un tableau de bord Power BI. Ici, nous utilisons le tableau de bord de l’application ***Exemple Marketing et ventes** _. Vous pouvez [télécharger cette application sur AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample
 ).
 
     ![Tableau de bord de l’application](media/end-user-export/power-bi-dashboards.png)
 
-2. Placez le curseur sur un visuel pour afficher _ *Autres options* * (...) et cliquez pour afficher le menu Action.
+2. Placez le curseur sur un visuel pour afficher _ *Autres options** (...) et cliquez pour afficher le menu Action.
 
     ![Le menu qui s’affiche lorsque vous sélectionnez les points de suspension](media/end-user-export/power-bi-option-menu.png)
 
@@ -60,7 +60,7 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
     ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-tile.png)
 
-    Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes* , c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
+    Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes*, c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
 
 2. Sélectionnez le visuel dans le rapport. Remarquez le volet **Filtres** à droite. Des filtres sont appliqués à cet élément visuel. Pour en savoir plus sur les filtres, consultez [Utiliser les filtres dans un rapport](end-user-report-filter.md).
 
@@ -71,12 +71,12 @@ Vous pouvez exporter des données à partir d’un élément visuel dans un rapp
 
     ![Exporter les données sélectionnées à partir de la liste déroulante](media/end-user-export/power-bi-export-reports.png)
 
-4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes* , les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
+4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes*, les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
 
-    **Données résumées**  : sélectionnez cette option si vous voulez exporter les données pour ce que vous voyez actuellement dans le visuel.  Ce type d’exportation contient seulement les données qui ont été utilisées pour créer l’état actuel du visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées. Par exemple, pour cet élément visuel, votre exportation inclura uniquement les données pour 2014 et la région centrale, et uniquement les données pour quatre des fabricants : VanArsdel, Natura, Aliqui et Pirum. Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation est également agrégée. 
+    **Données résumées** : sélectionnez cette option si vous voulez exporter les données pour ce que vous voyez actuellement dans le visuel.  Ce type d’exportation contient seulement les données qui ont été utilisées pour créer l’état actuel du visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées. Par exemple, pour cet élément visuel, votre exportation inclura uniquement les données pour 2014 et la région centrale, et uniquement les données pour quatre des fabricants : VanArsdel, Natura, Aliqui et Pirum. Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation est également agrégée. 
   
 
-    **Données sous-jacentes**  : sélectionnez cette option si vous souhaitez exporter les données de ce que vous voyez dans l’élément visuel **plus** les données supplémentaires du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais qui ne sont pas utilisées dans l’élément visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées.  Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation supprime l’agrégation, essentiellement en mettant à plat les données. 
+    **Données sous-jacentes** : sélectionnez cette option si vous souhaitez exporter les données de ce que vous voyez dans l’élément visuel **plus** les données supplémentaires du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais qui ne sont pas utilisées dans l’élément visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées.  Si votre visuel comporte des agrégats (somme, moyenne, etc.), l’exportation supprime l’agrégation, essentiellement en mettant à plat les données. 
 
     ![Menu dans lequel vous choisissez sous-jacent ou résumé](media/end-user-export/power-bi-export-underlying.png)
 

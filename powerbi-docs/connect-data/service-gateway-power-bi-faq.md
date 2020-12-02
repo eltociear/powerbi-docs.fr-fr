@@ -2,19 +2,19 @@
 title: Forum aux questions sur la passerelle de données locale - Power BI
 description: Cet article contient des questions fréquemment posées au sujet de la passerelle de données locale pour Power BI. Il rassemble les questions fréquemment posées pour la passerelle utilisée dans Power BI.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: c4fe9f20e2b6b978479cfdad0651a96d6d322056
-ms.sourcegitcommit: a453ba52aafa012896f665660df7df7bc117ade5
+ms.openlocfilehash: f9a51e6150c7ae351cea968c0d7ea39d2d0d6c32
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85485642"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392217"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Forum aux questions sur la passerelle de données locale - Power BI
 

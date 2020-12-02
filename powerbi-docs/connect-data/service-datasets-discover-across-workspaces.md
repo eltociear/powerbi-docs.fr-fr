@@ -1,20 +1,20 @@
 ---
 title: Créer des rapports basés sur des jeux de données à partir de différents espaces de travail - Power BI
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
-author: maggiesMSFT
+author: paulinbar
+ms.author: painbar
 ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 04/30/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 59fc2d4be1336d9476c86e4204eeb23564ebe64e
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 3f1f689aa272ac98f4a3dd4aef7c2b2728fce41e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681140"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392493"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces"></a>Créer des rapports basés sur des jeux de données à partir de différents espaces de travail
 
@@ -40,7 +40,7 @@ Les jeux de données que vous voyez dans cette liste répondent à au moins l’
 > [!NOTE]
 > Si vous êtes un utilisateur gratuit, vous voyez uniquement les jeux de données de votre espace Mon espace de travail, ou les jeux de données pour lesquels vous disposez d’une autorisation de génération et qui se trouvent dans des espaces de travail de capacité Premium.
 
-Quand vous cliquez sur **Créer** , vous créez une connexion active au jeu de données et l’expérience de création de rapports s’ouvre avec le jeu de données complet disponible. Vous n’avez pas effectué de copie du jeu de données. Le jeu de données se trouve toujours dans son emplacement d’origine. Vous pouvez utiliser toutes les tables et mesures du jeu de données pour générer vos propres rapports. Comme les restrictions de sécurité au niveau des lignes (SNL) sur le jeu de données sont appliquées, vous voyez uniquement les données que vous êtes autorisé à afficher en fonction de votre rôle SNL.
+Quand vous cliquez sur **Créer**, vous créez une connexion active au jeu de données et l’expérience de création de rapports s’ouvre avec le jeu de données complet disponible. Vous n’avez pas effectué de copie du jeu de données. Le jeu de données se trouve toujours dans son emplacement d’origine. Vous pouvez utiliser toutes les tables et mesures du jeu de données pour générer vos propres rapports. Comme les restrictions de sécurité au niveau des lignes (SNL) sur le jeu de données sont appliquées, vous voyez uniquement les données que vous êtes autorisé à afficher en fonction de votre rôle SNL.
 
 Vous pouvez enregistrer le rapport dans l’espace de travail actuel dans le service Power BI ou publier le rapport à un espace de travail à partir de Power BI Desktop. Power BI crée automatiquement une entrée dans la liste des jeux de données si le rapport est basé sur un jeu de données se trouvant hors de l’espace de travail. L’icône de ce jeu de données est différente de l’icône des jeux de données dans l’espace de travail : ![Icône de jeu de données partagé](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
 
@@ -55,7 +55,7 @@ Il existe deux types de jeux de données approuvés différents. Les propriétai
 - Dans le service Power BI : **Obtenir les données** > **Jeux de données publiés**.
 - Dans Power BI Desktop : **Obtenir les données** > **Jeux de données Power BI**.
 
-    Dans la boîte de dialogue **Sélectionner un jeu de données** , les jeux de données approuvés s’affichent en haut de la liste par défaut. 
+    Dans la boîte de dialogue **Sélectionner un jeu de données**, les jeux de données approuvés s’affichent en haut de la liste par défaut. 
 
     ![Jeu de données promu](media/service-datasets-discover-across-workspaces/power-bi-dataset-promoted.png)
 
