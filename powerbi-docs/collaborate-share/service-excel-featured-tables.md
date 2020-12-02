@@ -2,19 +2,19 @@
 title: Accéder aux tables recommandées Power BI dans Excel (préversion)
 description: Dans Excel, vous pouvez rechercher des données à partir des tables recommandées dans les jeux de données Power BI dans la galerie Types de données.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/04/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 42d7cae62084cf2cfbf6f10e49489d35e4557c85
-ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
+ms.openlocfilehash: 95ccc80a37ad9703c60c82ce928d35b5e301947b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94947044"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407305"
 ---
 # <a name="access-power-bi-featured-tables-in-excel-preview"></a>Accéder aux tables recommandées Power BI dans Excel (préversion)
 

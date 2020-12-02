@@ -2,28 +2,28 @@
 title: Approuver votre contenu
 description: Découvrez comment promouvoir et certifier du contenu Power BI.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: 95e4f2e560ebbb7d97d011944e35344239d048f2
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 7232cad4fc1216ac6e1aa7c8a01136239a2f09d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681828"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407052"
 ---
 # <a name="endorse-your-content"></a>Approuver votre contenu
 
 Power BI propose deux méthodes pour approuver votre contenu à forte valeur ajoutée afin d’en augmenter la visibilité : la **promotion** et la **certification**.
 
-* **Promotion**  : La promotion est un moyen de mettre en exergue le contenu que vous estimez précieux et utile pour les autres utilisateurs. Elle encourage l’utilisation collaborative et la diffusion du contenu au sein d’une organisation.
+* **Promotion** : La promotion est un moyen de mettre en exergue le contenu que vous estimez précieux et utile pour les autres utilisateurs. Elle encourage l’utilisation collaborative et la diffusion du contenu au sein d’une organisation.
 
     Tout propriétaire de contenu, ainsi que tout membre disposant d’autorisations d’écriture sur l’espace de travail où se trouve le contenu, peut promouvoir le contenu dès lors qu’il pense que ce contenu est suffisamment adapté au partage.
 
-* **Certification**  : La certification signifie que le contenu répond aux normes de qualité de l’organisation et qu’il peut être considéré comme fiable, faisant autorité et prêt à être utilisé au sein de l’organisation.
+* **Certification** : La certification signifie que le contenu répond aux normes de qualité de l’organisation et qu’il peut être considéré comme fiable, faisant autorité et prêt à être utilisé au sein de l’organisation.
 
     Seuls des réviseurs autorisés peuvent certifier du contenu. Les propriétaires de contenu qui souhaitent voir leur contenu certifié et qui ne sont pas autorisés à le certifier eux-mêmes doivent suivre les instructions de leur organisation en matière de certification de contenu.
 
@@ -91,7 +91,7 @@ Si vous voulez certifier votre contenu, mais que vous n’y êtes pas autorisé,
 
 La boîte de dialogue Approbation est accessible par le biais des paramètres du contenu à approuver. Suivez les instructions ci-dessous pour accéder aux paramètres de chaque type de contenu.
 
-* **Jeux de données**  : En mode Liste, pointez sur le jeu de données à approuver, cliquez sur **Autres options (...)** , puis choisissez **Paramètres** dans le menu qui s’affiche.
+* **Jeux de données** : En mode Liste, pointez sur le jeu de données à approuver, cliquez sur **Autres options (...)** , puis choisissez **Paramètres** dans le menu qui s’affiche.
 * **Dataflows** (préversion) : En mode Liste, pointez sur le dataflow à approuver, cliquez sur **Autres options (...)** , puis choisissez **Paramètres** dans le menu qui s’affiche.
 
 

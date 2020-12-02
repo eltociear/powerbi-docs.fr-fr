@@ -2,19 +2,19 @@
 title: Enregistrer un rapport paginé dans OneDrive Entreprise ou SharePoint Online
 description: Dans cet article, vous allez utiliser Power Automate pour automatiser l’enregistrement d’un rapport paginé Power BI dans OneDrive Entreprise ou dans un dossier SharePoint Online.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 67f49d19e3488b80a980719220fcc4715a6952e7
-ms.sourcegitcommit: b2693047fce6a4e0c3ea07013404e99fc9cc1901
+ms.openlocfilehash: 4a0a504db15d78bec112aaafd2a972f066e88193
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904963"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407673"
 ---
 # <a name="save-a-paginated-report-to-onedrive-for-business-or-sharepoint-online"></a>Enregistrer un rapport paginé dans OneDrive Entreprise ou SharePoint Online
 

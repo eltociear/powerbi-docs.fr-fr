@@ -2,19 +2,19 @@
 title: Gérer votre espace de travail dans Power BI et Microsoft 365
 description: Les espaces de travail dans Power BI offrent une expérience collaborative basée sur les groupes Microsoft 365. Gérez vos espaces de travail dans Power BI ainsi que dans Microsoft 365.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 03/02/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c05cb79d0996ad1819f0145193760ab16a031ffb
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: bd1a5b0aaf694f41fdbfe4764e77c1138a57b082
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91526717"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407029"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-microsoft-365"></a>Gérer votre espace de travail dans Power BI et Microsoft 365
 

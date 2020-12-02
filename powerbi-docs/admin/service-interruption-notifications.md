@@ -2,18 +2,18 @@
 title: Notifications d’interruption de service
 description: Découvrez comment recevoir des notifications par e-mail en cas de perturbation ou de panne du service Power BI.
 author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2020
-ms.author: kfollis
-ms.openlocfilehash: 8b9c10c8b3faa87cfc19c3c1d8f87a36de0307dd
-ms.sourcegitcommit: 4ac9447d1607dfca2e60948589f36a3d64d31cb4
+ms.openlocfilehash: e5d8f43a8edb6dc05b58cb62836e98cf209c8b5c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92916127"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407811"
 ---
 # <a name="service-interruption-notifications"></a>Notifications d’interruption de service
 
@@ -59,7 +59,7 @@ Un administrateur Power BI active les notifications dans le portail d’adminis
 
 1. Identifiez ou créez un groupe de sécurité prenant en charge les e-mails qui doit recevoir des notifications.
 
-1. Dans le portail d’administration, sélectionnez **Paramètres du locataire**. Sous **Paramètres d’aide et de support** , développez **Recevoir des notifications par e-mail pour les pannes ou incidents du service**.
+1. Dans le portail d’administration, sélectionnez **Paramètres du locataire**. Sous **Paramètres d’aide et de support**, développez **Recevoir des notifications par e-mail pour les pannes ou incidents du service**.
 
 1. Activez les notifications, entrez un groupe de sécurité, puis sélectionnez **Appliquer**.
 

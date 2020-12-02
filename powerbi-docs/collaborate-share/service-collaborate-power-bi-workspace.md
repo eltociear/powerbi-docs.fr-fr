@@ -2,19 +2,19 @@
 title: Collaborer dans un espace de travail classique
 description: Consultez les informations relatives à la collaboration sur des fichiers Power BI Desktop dans votre espace de travail et avec des services Microsoft 365 tels que le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier et les tâches.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 07/25/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fdfe212825cc522aa7965f46d112ece4a1db35c
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 9017d5c938ec0382e2fb27b00e7fe08945e10a5b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85226807"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96407627"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Collaborer dans un espace de travail classique
 Les espaces de travail Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Cet article concerne les espaces de travail *classiques* originaux.  
