@@ -2,18 +2,18 @@
 title: 'Approbation : promotion et certification de contenu Power BI'
 description: Découvrez comment faciliter la recherche de contenu de qualité grâce à la promotion ou à la certification.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.date: 10/26/2020
-ms.author: painbar
 LocalizationGroup: Share your work
-ms.openlocfilehash: af222d1ebedf8e9afa2529d3d433da5d003a8059
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 65a83bf0e91d4f3004445ffcd8cd6f78d5a77fc3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92681838"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411836"
 ---
 # <a name="endorsement---promoting-and-certifying-power-bi-content"></a>Approbation : promotion et certification de contenu Power BI
 
@@ -23,11 +23,11 @@ Les organisations ont souvent de grandes quantités de contenu Power BI disponib
 
 Il existe deux types d’approbation : la **promotion** et la **certification**.
 
-* **Promotion**  : La promotion permet aux utilisateurs de mettre en exergue le contenu qu’ils estiment précieux, utiles et prêts à être utilisés par d’autres. Elle encourage la diffusion collaborative du contenu au sein de l’organisation.
+* **Promotion** : La promotion permet aux utilisateurs de mettre en exergue le contenu qu’ils estiment précieux, utiles et prêts à être utilisés par d’autres. Elle encourage la diffusion collaborative du contenu au sein de l’organisation.
 
     Tout propriétaire de contenu, ou tout membre disposant d’autorisations d’écriture sur l’espace de travail où se trouve le contenu, peut simplement promouvoir le contenu dès lors qu’il pense que ce contenu est suffisamment adapté au partage.
 
-* **Certification**  : La certification signifie que le contenu répond aux normes de qualité de l’organisation et qu’il peut être considéré comme fiable, faisant autorité et prêt à être utilisé au sein de l’organisation.
+* **Certification** : La certification signifie que le contenu répond aux normes de qualité de l’organisation et qu’il peut être considéré comme fiable, faisant autorité et prêt à être utilisé au sein de l’organisation.
 
     Seul un groupe sélectionné de réviseurs (défini par l’administrateur Power BI) est autorisé à certifier du contenu. Les propriétaires de contenu qui souhaitent voir leur contenu certifié et qui ne sont pas autorisés à le certifier eux-mêmes doivent suivre les instructions de leur organisation en matière de certification de contenu.
 

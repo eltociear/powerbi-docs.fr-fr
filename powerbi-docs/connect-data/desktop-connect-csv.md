@@ -2,20 +2,20 @@
 title: Se connecter à des fichiers CSV dans Power BI Desktop
 description: Se connecter à un fichier CSV et utiliser les données de ce fichier dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 08/29/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6d7d22ba9aad24ed9f1ac60314d18d16f22d7994
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: 3bb37d4ba3b3ca7d5fec3f8577b971432f5a9d0f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033804"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411376"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Se connecter à des fichiers CSV dans Power BI Desktop
 La connexion à un fichier *CSV* à partir de Power BI Desktop est très semblable à la connexion à un classeur Excel. Ces deux types de connexion sont faciles et cet article décrit pas à pas comment se connecter à un fichier CSV auquel vous avez accès.

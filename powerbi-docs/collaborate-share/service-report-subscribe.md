@@ -2,20 +2,20 @@
 title: Vous abonner vous-même et d’autres personnes à des rapports et des tableaux de bord
 description: Découvrez comment vous abonner vous et d’autres utilisateurs à un instantané d’une page de rapport Power BI, à un tableau de bord ou à un rapport paginé.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/17/2020
-ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 183885336f6f76304ba051599efa48d81111264a
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: 384ce5efc28355ea238d5782dd1553901097e0f2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94718957"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411675"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 

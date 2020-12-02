@@ -2,19 +2,19 @@
 title: Proposer du contenu dans la page d’accueil Power BI de collègues
 description: Guide pratique pour proposer des tableaux de bord et des rapports Power BI dans la page d’accueil Power BI de collègues dans votre organisation.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: nikhilga
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eef0ba24347bd46cc86325cac494937e3f95086a
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: c45eb2afdf028f9e3a4b213333a0028924858a09
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462446"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411813"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Proposer du contenu dans la page d’accueil Power BI de collègues
 
@@ -42,7 +42,7 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
     :::image type="content" source="media/service-featured-content/power-bi-settings-icon.png" alt-text="Icône Paramètres du rapport":::
 
-2. Dans le volet **Paramètres** , vérifiez ou modifiez le nom. Ajoutez une **description** et chargez un **instantané** , si vous le souhaitez. Ils sont utiles car ils aident vos utilisateurs à trouver votre contenu.
+2. Dans le volet **Paramètres**, vérifiez ou modifiez le nom. Ajoutez une **description** et chargez un **instantané**, si vous le souhaitez. Ils sont utiles car ils aident vos utilisateurs à trouver votre contenu.
 
 3. Sélectionnez **Proposé**.
 
@@ -50,13 +50,13 @@ La procédure de proposition d’un tableau de bord ou d’un rapport est simila
 
 4. Sélectionnez **Enregistrer**.
 
-    Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’ **accueil**.
+    Désormais, tous les utilisateurs qui ont accès à ce tableau de bord ou à ce rapport le voient dans la section **Proposé** de l’écran d’**accueil**.
 
 ## <a name="feature-an-app"></a>Proposer une application
 
 - Pour proposer une application, ouvrez l’espace de travail correspondant à l’application, sélectionnez le menu **Options** ( **...** ) > **Proposer cette application sur l’écran d’accueil**.
 
-Désormais, toutes les personnes qui ont accès à cette application la voient également dans la section **Proposé** de l’écran d’ **accueil**.
+Désormais, toutes les personnes qui ont accès à cette application la voient également dans la section **Proposé** de l’écran d’**accueil**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

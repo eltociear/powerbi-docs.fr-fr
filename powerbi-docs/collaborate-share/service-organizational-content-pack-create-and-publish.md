@@ -2,19 +2,19 @@
 title: Créer et publier un pack de contenu d’organisation - Power BI
 description: Dans ce tutoriel, vous allez créer un pack de contenu d’organisation, en restreindre l’accès à un groupe spécifique et le publier dans la bibliothèque de packs de contenu de votre organisation sur Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/06/2019
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9bb424e2e7f9e8bd32769813958d14a808339aa8
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 0a72582a54903c97dd9594f6a4a1c5980aea8e16
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225931"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411721"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Tutoriel : Créer et publier un pack de contenu d’organisation Power BI
 

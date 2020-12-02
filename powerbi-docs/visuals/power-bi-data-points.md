@@ -1,20 +1,20 @@
 ---
 title: Jeux de données volumineux, limites de point de données et stratégies de données
 description: Limites des données pour les visuels et stratégies de réduction des données
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: justyna
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89bfba0dc679ddb7a9142c83e863cddaf1400063
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 0feef179fddba93f192559c7ac7bed10c6fa5328
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412047"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412526"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Appliquer les limites et les stratégies par type de visuel du point de données
 

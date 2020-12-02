@@ -1,21 +1,21 @@
 ---
 title: Partie 1, Ajouter des visualisations à un rapport Power BI
 description: Partie 1, Ajouter des visualisations à un rapport Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3a2002c9f17428c84704d68f621cf18443252557
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 4d4b04b10e45d67fdd4d7cb183e300587d4f2cc6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411886"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412480"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-1"></a>Ajouter des visuels à un rapport Power BI (partie 1)
 
@@ -60,15 +60,15 @@ Ce tutoriel s’appuie sur le [fichier PBIX Vente et marketing](https://download
 
  Créez une visualisation, puis modifiez son type. 
  
- 1. Sélectionnez **Produit** > **Catégorie** , puis **Produit** > **Quantité de produit** pour ajouter ces éléments à la zone **Valeurs**.
+ 1. Sélectionnez **Produit** > **Catégorie**, puis **Produit** > **Quantité de produit** pour ajouter ces éléments à la zone **Valeurs**.
 
     ![Capture d’écran du volet Champs avec la zone Valeurs.](media/power-bi-report-add-visualizations-i/power-bi-create-visual.png)
 
-1. Changez la visualisation en histogramme en sélectionnant l’icône d’ **histogramme empilé**.
+1. Changez la visualisation en histogramme en sélectionnant l’icône d’**histogramme empilé**.
 
    ![Capture d’écran du volet Visualisation avec l’icône de l’histogramme empilé.](media/power-bi-report-add-visualizations-i/power-bi-convert.png)
 
-1. Pour changer le mode de tri du visuel, sélectionnez **Autres actions**  (...).  Utilisez les options de tri pour changer le sens du tri (croissant ou décroissant) et la colonne sur laquelle s’effectue le tri ( **Trier par** ).
+1. Pour changer le mode de tri du visuel, sélectionnez **Autres actions** (...).  Utilisez les options de tri pour changer le sens du tri (croissant ou décroissant) et la colonne sur laquelle s’effectue le tri (**Trier par**).
 
    ![Capture d’écran de la liste déroulante Autres actions.](media/power-bi-report-add-visualizations-i/power-bi-sort.png)
   

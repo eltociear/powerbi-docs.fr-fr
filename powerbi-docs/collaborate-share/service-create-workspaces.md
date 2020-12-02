@@ -2,23 +2,23 @@
 title: Créer des espaces de travail classiques dans Power BI
 description: 'Découvrez comment créer des espaces de travail classiques : collections de tableaux de bord, rapports et rapports paginés conçus pour fournir des métriques clés pour votre organisation.'
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/29/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5a5aced331ff8f66fdd0cb58fd7625a68acf9331
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.openlocfilehash: 024696aa69fc1c6e95b103a679b11de4fe468169
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132387"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411951"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Créer des espaces de travail classiques dans Power BI
 
-Dans Power BI, vous pouvez créer des *espaces de travail* , qui sont des endroits où collaborer avec des collègues pour créer et affiner des collections de tableaux de bord, de rapports et de rapports paginés. Power BI propose deux types d’espaces de travail : les *classiques* , ceux d’origine, et les nouveaux. Cet article explique comment créer un espace de travail classique.
+Dans Power BI, vous pouvez créer des *espaces de travail*, qui sont des endroits où collaborer avec des collègues pour créer et affiner des collections de tableaux de bord, de rapports et de rapports paginés. Power BI propose deux types d’espaces de travail : les *classiques*, ceux d’origine, et les nouveaux. Cet article explique comment créer un espace de travail classique.
 
 **Le saviez-vous ?** Power BI offre une nouvelle expérience de l’espace de travail, qui est désormais l’expérience par défaut. Consultez [Organiser le travail dans les nouveaux espaces de travail ](service-new-workspaces.md) pour plus d’informations sur les nouveaux espaces de travail. Prêt à migrer votre espace de travail classique ? Consultez [Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI](service-upgrade-workspaces.md) pour plus d’informations.
 
@@ -38,7 +38,7 @@ Quand vous le créez, vous devez attendre environ une heure pour qu’il se prop
 ### <a name="add-an-image-to-your-microsoft-365-workspace-optional"></a>Ajouter une image à votre espace de travail Microsoft 365 (facultatif)
 Par défaut, Power BI crée un petit cercle de couleur pour votre application, contenant les initiales de celle-ci. Vous pouvez le personnaliser avec une image. Pour ajouter une image, vous avez besoin d’une licence Exchange Online.
 
-1. Sélectionnez **Espaces de travail** , sélectionnez **Plus d’options** (...) en regard du nom de l’espace de travail, puis choisissez **Membres**. 
+1. Sélectionnez **Espaces de travail**, sélectionnez **Plus d’options** (...) en regard du nom de l’espace de travail, puis choisissez **Membres**. 
    
      ![Sélectionner les membres de l’espace de travail](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
@@ -52,7 +52,7 @@ Par défaut, Power BI crée un petit cercle de couleur pour votre application, c
 
      Les images peuvent être des fichiers .png, .jpg ou .bmp. Leur taille de fichier peut être importante, jusqu’à 3 Mo. 
 
-4. Sélectionnez **OK** , puis **Enregistrer**.
+4. Sélectionnez **OK**, puis **Enregistrer**.
    
     L’image remplace le cercle de couleur dans la fenêtre Microsoft 365 Outlook.
    
@@ -72,7 +72,7 @@ Dans les espaces de travail actuels, vous pouvez également vous connecter avec 
 
 ## <a name="distribute-an-app"></a>Distribuer une application
 
-Si vous voulez distribuer du contenu officiel à un large public au sein de votre organisation, vous pouvez publier une application à partir de votre espace de travail.  Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’ *application*. Vous pouvez créer une application à partir de chaque espace de travail.
+Si vous voulez distribuer du contenu officiel à un large public au sein de votre organisation, vous pouvez publier une application à partir de votre espace de travail.  Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’*application*. Vous pouvez créer une application à partir de chaque espace de travail.
 
 La liste Applications dans le volet de navigation présente toutes les applications que vous avez installées. Vos collègues peuvent obtenir votre application de différentes manières. 
 - Ils peuvent rechercher et installer votre application à partir de Microsoft AppSource.

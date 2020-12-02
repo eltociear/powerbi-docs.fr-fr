@@ -2,19 +2,19 @@
 title: Partager un tableau de bord lié à un fichier Excel dans OneDrive - Power BI
 description: Consultez les informations relatives au partage de tableaux de bord connectés à un classeur Excel sur OneDrive Entreprise, avec des vignettes épinglées de ce classeur.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 08/02/2018
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 997a96346a82d9f8c0edf0f19f45e5dc0a030d15
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: ee70a90ee104f1144595bd346b85d858f0aed49f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85225200"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411583"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Partager un tableau de bord Power BI avec des liens vers un fichier Excel dans OneDrive
 Dans Power BI, vous pouvez vous [connecter à des classeurs Excel sur OneDrive Entreprise](../connect-data/service-excel-workbook-files.md) et épingler des vignettes sur un tableau de bord à partir de ce classeur. Quand vous partagez ce tableau de bord, ou créez un pack de contenu qui l’inclut :

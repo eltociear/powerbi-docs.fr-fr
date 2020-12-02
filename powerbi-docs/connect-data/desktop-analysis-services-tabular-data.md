@@ -2,19 +2,19 @@
 title: Connexion aux données tabulaires Analysis Services dans Power BI Desktop
 description: 'Avec Power BI Desktop, vous pouvez vous connecter à vos modèles tabulaires SQL Server Analysis Services et en obtenir les données de deux façons : en utilisant une connexion active ou en sélectionnant les éléments à importer dans Power BI Desktop.'
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 01/28/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bb55342974bcd64e7d5871b7b84977105b7467fa
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 6c31079bc0ad517a1b2bb37f8da0c0ed5240595f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858689"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411514"
 ---
 # <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Connexion aux données tabulaires Analysis Services dans Power BI Desktop
 Avec Power BI Desktop, il existe deux moyens de se connecter aux modèles tabulaires SQL Server Analysis Services et d’en récupérer des données : les explorer à l’aide d’une connexion active ou sélectionner des éléments et les importer dans Power BI Desktop.

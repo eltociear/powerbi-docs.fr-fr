@@ -2,18 +2,19 @@
 title: Se connecter à des fichiers dans OneDrive pour un espace de travail Power BI
 description: Découvrez comment stocker vos fichiers Excel, CSV et Power BI Desktop dans OneDrive pour votre espace de travail Power BI et comment vous y connecter.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukasz
 ms.service: powerbi
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 10/15/2020
-ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 738ef62811ff510b20be60851cb6bd8225b1ad34
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: 6c3c43d8aad26249ac1b8afab09bdcbf1414f0cf
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116934"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411974"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail Power BI
 Lorsque vous [créez un espace de travail dans Power BI](service-create-workspaces.md), vous créez également un groupe Microsoft 365, avec un compte OneDrive Entreprise associé. Cet article explique comment stocker et mettre à jour vos fichiers Excel, CSV et Power BI Desktop sur OneDrive Entreprise. Ces mises à jour sont alors répercutées automatiquement dans les rapports et tableaux de bord Power BI basés sur les fichiers.
@@ -40,7 +41,7 @@ L’ajout de fichiers à votre espace de travail est un processus en deux étape
    > Si vous ne voyez pas **Fichiers** dans le menu de l’espace de travail, sélectionnez **Membres** pour ouvrir OneDrive Entreprise pour votre espace de travail. Sélectionnez ici **Fichiers**. Microsoft 365 définit un emplacement de stockage OneDrive pour les fichiers de l’espace de travail de groupe de votre application. Ce processus peut prendre un certain temps.
    > 
    > 
-3. Ici, vous pouvez charger des fichiers sur OneDrive Entreprise pour votre espace de travail. Sélectionnez **Charger**et accédez à vos fichiers.
+3. Ici, vous pouvez charger des fichiers sur OneDrive Entreprise pour votre espace de travail. Sélectionnez **Charger** et accédez à vos fichiers.
    
    ![Capture d’écran de OneDrive Entreprise, montrant comment naviguer pour charger un fichier.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 

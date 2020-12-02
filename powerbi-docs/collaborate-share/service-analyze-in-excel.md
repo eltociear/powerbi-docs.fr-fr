@@ -1,21 +1,21 @@
 ---
 title: Analyser dans Excel pour Power BI
 description: Analyser les jeux de données Power BI dans Microsoft Excel
-author: davidiseminger
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 09/22/2020
-ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 845fb523e9045e7a1062d11eebbb5e34bcc29ce3
-ms.sourcegitcommit: ff981839e805f523748b7e71474acccf7bdcb04f
+ms.openlocfilehash: 2f0d9dbec6c40b43a3b47f9cd698efed4a2899f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91020064"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412089"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Avec **Analyser dans Excel**, vous pouvez placer les jeux de données Power BI dans Excel, puis les afficher et interagir avec eux à l’aide de tableaux croisés dynamiques, de graphiques, de segments et d’autres fonctionnalités Excel. Pour utiliser **Analyser dans Excel** vous devez d’abord télécharger la fonctionnalité à partir de Power BI, l’installer, puis sélectionner un ou plusieurs jeux de données à utiliser dans Excel. 

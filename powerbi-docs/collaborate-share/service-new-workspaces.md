@@ -2,20 +2,20 @@
 title: Organiser le travail dans les nouveaux espaces de travail dans Power BI
 description: Découvrez les nouveaux espaces de travail, qui sont des collections de tableaux de bord et de rapports créés pour fournir des métriques clés sur votre organisation.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 10/21/2020
-ms.author: maggies
 ms.custom: contperfq4
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1ea5e7633fb81b2792459c3a428c9c43827a5137
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 43af5a2ea924ababdba7b328b814045b75be5316
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462216"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411744"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -32,12 +32,12 @@ Les espaces de travail nouveaux et mis à niveau peuvent coexister auprès des e
 Dans les nouveaux espaces de travail, certaines fonctionnalités ont été repensées. Voici les principales différences.
 
 - **La création de ces espaces de travail ne crée pas de groupes Microsoft 365** comme le font les espaces de travail classiques. Toute la nouvelle administration des espaces de travail se fait dans Power BI et non pas dans Office 365. Vous pouvez continuer à gérer l’accès des utilisateurs au contenu via les groupes Microsoft 365, si vous le souhaitez. Il vous suffit d’ajouter un groupe Microsoft 365 dans la liste d’accès de l’espace de travail.
-- **Utiliser des rôles d’espace de travail plus granulaires** , pour une gestion plus flexible des autorisations dans de nouveaux espaces de travail.  Dans les espaces de travail classiques, vous pouvez seulement ajouter des personnes individuelles aux listes de membres et d’administrateurs. 
-- **Affecter des groupes d’utilisateurs aux rôles de l’espace de travail**  : Dans les nouveaux espaces de travail, vous pouvez ajouter plusieurs groupes de sécurité Active Directory, des listes de distribution ou des groupes Microsoft 365 à ces rôles, ce qui facilite la gestion des utilisateurs. 
-- **Liste des contacts**  : Dans les nouveaux espaces de travail, vous pouvez spécifier qui reçoit la notification sur l’activité de l’espace de travail.
-- **Créer des applications modèles**  : Vous pouvez uniquement créer des *applications de modèle* dans les nouveaux espaces de travail. Les applications de modèle sont des applications que vous pouvez distribuer aux clients en dehors de votre organisation. Ces clients peuvent ensuite se connecter à leurs propres données avec votre application de modèle. En savoir plus sur les [applications de modèle](../connect-data/service-template-apps-overview.md).
-- **Partager des jeux de données**  : Pour partager un jeu de données en dehors d’un espace de travail spécifique, vous devez enregistrer le rapport qui contient le jeu de données dans l’un des nouveaux espaces de travail. Vous ne pouvez pas partager des jeux de données à partir d’espaces de travail classiques. En savoir plus sur les [jeux de données partagés](../connect-data/service-datasets-across-workspaces.md).
-- **Packs de contenu professionnels**  : Vous pouvez créer et utiliser des packs de contenu d’organisation dans des espaces de travail classiques. Vous ne pouvez pas les consommer ou les créer dans les nouveaux espaces de travail. Les applications et les applications de modèle remplacent les packs de contenu d’organisation dans les nouveaux espaces de travail.
+- **Utiliser des rôles d’espace de travail plus granulaires**, pour une gestion plus flexible des autorisations dans de nouveaux espaces de travail.  Dans les espaces de travail classiques, vous pouvez seulement ajouter des personnes individuelles aux listes de membres et d’administrateurs. 
+- **Affecter des groupes d’utilisateurs aux rôles de l’espace de travail** : Dans les nouveaux espaces de travail, vous pouvez ajouter plusieurs groupes de sécurité Active Directory, des listes de distribution ou des groupes Microsoft 365 à ces rôles, ce qui facilite la gestion des utilisateurs. 
+- **Liste des contacts** : Dans les nouveaux espaces de travail, vous pouvez spécifier qui reçoit la notification sur l’activité de l’espace de travail.
+- **Créer des applications modèles** : Vous pouvez uniquement créer des *applications de modèle* dans les nouveaux espaces de travail. Les applications de modèle sont des applications que vous pouvez distribuer aux clients en dehors de votre organisation. Ces clients peuvent ensuite se connecter à leurs propres données avec votre application de modèle. En savoir plus sur les [applications de modèle](../connect-data/service-template-apps-overview.md).
+- **Partager des jeux de données** : Pour partager un jeu de données en dehors d’un espace de travail spécifique, vous devez enregistrer le rapport qui contient le jeu de données dans l’un des nouveaux espaces de travail. Vous ne pouvez pas partager des jeux de données à partir d’espaces de travail classiques. En savoir plus sur les [jeux de données partagés](../connect-data/service-datasets-across-workspaces.md).
+- **Packs de contenu professionnels** : Vous pouvez créer et utiliser des packs de contenu d’organisation dans des espaces de travail classiques. Vous ne pouvez pas les consommer ou les créer dans les nouveaux espaces de travail. Les applications et les applications de modèle remplacent les packs de contenu d’organisation dans les nouveaux espaces de travail.
 
 Cet article explique plus en détail ces fonctionnalités.
 

@@ -2,19 +2,19 @@
 title: 'Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop'
 description: Ce tutoriel explique comment mettre en forme et combiner des données dans Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 10/18/2019
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b2cb9c9f9e7e168f0d095824aa42dd78eba5ba39
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: d45306776cb8f26af17208c3c57b44ffc65e20ac
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83347536"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411123"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
 
@@ -218,7 +218,7 @@ Pour mettre en forme les données, effectuez ces étapes :
     > [!NOTE]
     > Si Power BI importe accidentellement les en-têtes sous la forme d’une ligne dans votre table de données, vous pouvez sélectionner **Utiliser la première ligne comme en-tête** dans l’onglet **Accueil** ou dans l’onglet **Transformer** du ruban pour corriger votre table.
 
-1. Supprimez les 26 lignes du bas. Ces lignes correspondent à des territoires américains, que nous n’avons pas besoin d’inclure. Sous l’onglet **Accueil**du ruban, sélectionnez **Réduire les lignes \> Supprimer les lignes \> Supprimer les lignes du bas**.
+1. Supprimez les 26 lignes du bas. Ces lignes correspondent à des territoires américains, que nous n’avons pas besoin d’inclure. Sous l’onglet **Accueil** du ruban, sélectionnez **Réduire les lignes \> Supprimer les lignes \> Supprimer les lignes du bas**.
 
     ![Sélectionner Supprimer les lignes du bas](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 

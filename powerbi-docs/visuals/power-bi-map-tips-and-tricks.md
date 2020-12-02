@@ -1,21 +1,21 @@
 ---
 title: Conseils et astuces pour les cartes (y compris l’intégration Bing Maps)
 description: 'Conseils et astuces pour les visualisations de carte Power BI, visuels, emplacements, longitude et latitude et explication de leur fonctionnement avec Bing Cartes. '
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ec2e097dd829760c331ff8f045af00176b0c302b
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 8bbcd6eafc2a0b8eaac7424700bbbb68314730d2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93411863"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412503"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 

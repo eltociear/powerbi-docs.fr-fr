@@ -2,20 +2,20 @@
 title: Se connecter aux données d’Azure Cost Management dans Power BI Desktop
 description: Se connecter facilement à Azure pour obtenir des insights sur le coût et l’utilisation d’Azure avec Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eae8afc9db44b703ade1a9a4fcc28c24c3d72641
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: fa06b1d561c770c3b9e0535e94789931a74bd9df
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599885"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96411468"
 ---
 # <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Créer des visuels et des rapports avec le connecteur Azure Cost Management dans Power BI Desktop
 
@@ -52,7 +52,7 @@ Pour vous connecter avec un compte de **Contrat client Microsoft**, vous pouvez 
 3.  Sous **Paramètres** dans le menu, sélectionnez **Propriétés** dans la barre latérale.
 4.  Sous **Profil de facturation**, copiez **l’ID**. 
 5.  Pour **Choisir l’étendue**, sélectionnez **ID du profil de facturation** et collez l’ID du profil de facturation de l’étape précédente. 
-6.  Entrez le nombre de mois et sélectionnez **OK **.
+6.  Entrez le nombre de mois et sélectionnez **OK**.
 
     ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue ID du profil de facturation.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
@@ -67,7 +67,7 @@ Pour vous connecter avec un compte Contrat Entreprise, vous pouvez récupérer v
 2.  Sélectionnez votre compte de facturation.
 3.  Dans le menu **Vue d’ensemble**, copiez **l’ID de compte de facturation**.
 4.  Pour **Choisir l’étendue**, sélectionnez **Numéro d’inscription** et collez l’ID du compte de facturation de l’étape précédente. 
-5.  Entrez le nombre de mois, puis sélectionnez **OK **.
+5.  Entrez le nombre de mois, puis sélectionnez **OK**.
 
     ![Capture d’écran montrant les propriétés Azure Cost Management avec l’étendue Numéro d’inscription.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 

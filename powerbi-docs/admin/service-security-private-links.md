@@ -2,20 +2,20 @@
 title: Liaisons privées pour accéder à Power BI
 description: Comment configurer une liaison privée pour utiliser Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: pbi-security
 ms.topic: how-to
-ms.author: davidi
 ms.date: 11/12/2020
 ms.custom: ''
 LocalizationGroup: Administration
-ms.openlocfilehash: 7faa8a360a30091c599e8b633fa8f03dc008a3ed
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 446c3620cf3b2a7435897108cfcd9c8972ad8bb4
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668186"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96412158"
 ---
 # <a name="private-links-for-accessing-power-bi"></a>Liaisons privées pour accéder à Power BI
 
