@@ -2,18 +2,18 @@
 title: Gérer le contenu dans le portail web Power BI Report Server
 description: En savoir plus sur la gestion du contenu dans le portail web Power BI Report Server.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 05/24/2018
-ms.author: maggies
-ms.openlocfilehash: a42ffc2610021ec1f9b77fb5e950253ff8196e61
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f802a190d2175deaa3431b7377bc3847bf0e8d25
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90858781"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397737"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gérer le contenu dans le portail web 
 Le portail web Power BI Report Server est un emplacement local destiné à l’affichage, au stockage et à la gestion de vos rapports mobiles et paginés, ainsi que de vos indicateurs de performance clés Power BI.

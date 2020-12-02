@@ -1,21 +1,21 @@
 ---
 title: Interaction avec une carte ArcGIS partagée avec vous
 description: Utilisation d’un visuel ArcGIS Maps for Power BI en mode lecture comme consommateur de rapport
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: willt, lukasz
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/30/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7b81ecbc23418fec4bd264e5cb20126f871c7e52
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 33065a518f99cf7be6c8ea494088440e7ab45474
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413113"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96397944"
 ---
 # <a name="create-arcgis-maps-in-power-bi"></a>Créer des cartes ArcGIS dans Power BI
 
@@ -39,7 +39,7 @@ L’exemple ci-dessous utilise une zone de dessin gris foncé pour afficher les 
 ![Image d’ouverture d’ArcGIS](media/power-bi-visualizations-arcgis/arcgis-tutorial-01.png)
 
 > [!TIP]
-> Consultez la [**page d’Esri sur ArcGIS Maps for Power BI**](https://www.esri.com/powerbi) pour découvrir de nombreux exemples et lire des témoignages. Affichez également l’ **aide en ligne d’ [ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm)** d’Esri.
+> Consultez la [**page d’Esri sur ArcGIS Maps for Power BI**](https://www.esri.com/powerbi) pour découvrir de nombreux exemples et lire des témoignages. Affichez également l’**aide en ligne d’[ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm)** d’Esri.
 
 ## <a name="user-consent"></a>Consentement de l’utilisateur
 
@@ -51,7 +51,7 @@ Ce tutoriel utilise Power BI Desktop et le fichier PBIX de l’[exemple Analyse 
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir le rapport**.
 2. Recherchez le **fichier PBIX de l’exemple Analyse de la vente au détail** enregistré sur votre machine locale.
-3. Ouvrez l’ **Exemple Analyse de la vente au détail** dans la vue Rapport ![Icône Vue Rapport](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png).
+3. Ouvrez l’**Exemple Analyse de la vente au détail** dans la vue Rapport ![Icône Vue Rapport](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-01.png).
 4. Sélectionner ![Icône Ajouter une nouvelle page](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-02.png) pour ajouter une nouvelle page au rapport.
 
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>Créer une visualisation de carte ArcGIS Maps for Power BI
@@ -66,14 +66,14 @@ Pour ajouter une carte à un rapport, procédez comme suit :
 
     ![Connexion à ArcGIS](media/power-bi-visualizations-arcgis/arcgis-tutorial-03.png)
 
-3. Dans le volet **Champs** , faites glisser un champ de données vers le champ **Emplacement** , ou faites glisser les coordonnées dans les compartiments **Latitude** et/ou **Longitude** appropriés. Dans cet exemple, utilisez **Store > City** (Magasin > Ville).
+3. Dans le volet **Champs**, faites glisser un champ de données vers le champ **Emplacement**, ou faites glisser les coordonnées dans les compartiments **Latitude** et/ou **Longitude** appropriés. Dans cet exemple, utilisez **Store > City** (Magasin > Ville).
 
     > [!NOTE]
     > ArcGIS Maps pour Power BI détecte automatiquement si les champs que vous sélectionnez s’affichent mieux en tant que forme ou point sur une carte. Vous pouvez ajuster la valeur par défaut dans les paramètres (voir [Mettre en forme la visualisation ArcGIS Maps for Power BI](#format-the-arcgis-maps-for-power-bi-visualization)).
 
     ![Champ Ville d’ArcGIS](media/power-bi-visualizations-arcgis/arcgis-tutorial-04.png)
 
-4. À partir du volet **Champs** , faites glisser une mesure vers le compartiment **Taille** pour ajuster le mode d’affichage des données. Dans cet exemple, utilisez **Sales > Last Year Sales** (Ventes > Ventes de l’année dernière).
+4. À partir du volet **Champs**, faites glisser une mesure vers le compartiment **Taille** pour ajuster le mode d’affichage des données. Dans cet exemple, utilisez **Sales > Last Year Sales** (Ventes > Ventes de l’année dernière).
 
     ![Champ Taille d’ArcGIS](media/power-bi-visualizations-arcgis/arcgis-tutorial-05.png)
 
@@ -81,7 +81,7 @@ Vous avez créé votre première carte ArcGIS Maps for Power BI. À présent, n
 
 ## <a name="format-the-arcgis-maps-for-power-bi-visualization"></a>Mettre en forme la visualisation ArcGIS Maps for Power BI
 
-Pour accéder aux fonctionnalités de mise en forme d’ **ArcGIS Maps pour Power BI** :
+Pour accéder aux fonctionnalités de mise en forme d’**ArcGIS Maps pour Power BI**:
 
 1. Dans le volet Visualisations, cliquez sur l’onglet **Format** pour afficher les options de mise en forme.
 
@@ -114,7 +114,7 @@ Les outils de carte se développent pour afficher les fonctionnalités disponibl
 
 #### <a name="change-the-base-map"></a>Modifier la carte de base
 
-Une carte de base fournit un contexte d’arrière-plan ou visuel pour les données d’une carte. Par exemple, une carte de base qui présente des rues peut fournir un contexte pour vos données d’adresse. En utilisant le compte **Standard** , quatre cartes de base sont fournies : Dark Gray Canvas, Light Gray Canvas, OpenStreetMap et Streets.
+Une carte de base fournit un contexte d’arrière-plan ou visuel pour les données d’une carte. Par exemple, une carte de base qui présente des rues peut fournir un contexte pour vos données d’adresse. En utilisant le compte **Standard**, quatre cartes de base sont fournies : Dark Gray Canvas, Light Gray Canvas, OpenStreetMap et Streets.
 
 Pour modifier la carte de base, procédez comme suit :
 
@@ -174,7 +174,7 @@ Le volet Symbologie s’affiche avec la catégorie Thème de la carte développ�
 
 ##### <a name="change-the-map-theme"></a>Modifier le thème de la carte
 
-Dans cet exemple, étant donné que nous avons ajouté des valeurs à la fois aux champs **Emplacement** et **Taille** , la carte utilise le thème **Taille** par défaut.
+Dans cet exemple, étant donné que nous avons ajouté des valeurs à la fois aux champs **Emplacement** et **Taille**, la carte utilise le thème **Taille** par défaut.
 
 Pour modifier le thème de la carte, procédez comme suit :
 
@@ -192,7 +192,7 @@ Si votre carte contient plusieurs couches, il peut être utile d’afficher des 
 
 Pour définir la valeur de transparence de la couche, procédez comme suit :
 
-1. Dans le volet **Symbologie** , développez la catégorie **Transparence**.
+1. Dans le volet **Symbologie**, développez la catégorie **Transparence**.
 
 2. Entrez un pourcentage dans la zone de texte ou déplacez le curseur vers la gauche (moins transparent) ou vers la droite (plus transparent).
 
@@ -202,7 +202,7 @@ Les styles de symbole vous permettent de représenter les données sur la carte 
 
 Pour modifier le style de symbole, procédez comme suit :
 
-1. Dans le volet **Symbologie** , développez la catégorie **Style de symbole**.
+1. Dans le volet **Symbologie**, développez la catégorie **Style de symbole**.
 
 2. Modifiez les paramètres de symbole comme vous le souhaitez. Choisissez une forme, une couleur et une transparence de symbole, et une couleur, une épaisseur et une transparence de contour. Développez la catégorie Taille du symbole pour modifier ces options. Différentes options s’affichent en fonction de la nature de vos données et du thème de carte sélectionné.
 
@@ -232,7 +232,7 @@ Pour afficher les outils de sélection, procédez comme suit :
 
 1. Dans les outils de la carte, cliquez sur le bouton **Outils de sélection** ![outils de sélection](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-07.png) pour développer l’ensemble d’outils.
 
-    Quatre outils de sélection sont disponibles ; différents outils peuvent apparaître dans le menu **Outils de sélection** , selon le type de couche actuellement actif. Étant donné que la carte dans cet exemple contient uniquement une couche de données, seuls les outils **Sélection simple** et **Sélection de zone** s’affichent.
+    Quatre outils de sélection sont disponibles ; différents outils peuvent apparaître dans le menu **Outils de sélection**, selon le type de couche actuellement actif. Étant donné que la carte dans cet exemple contient uniquement une couche de données, seuls les outils **Sélection simple** et **Sélection de zone** s’affichent.
     
     | **Outil** | **Description** |
     | --- | --- |
@@ -256,7 +256,7 @@ Pour épingler un emplacement, procédez comme suit :
 
     Les mots clés peuvent inclure une adresse, un lieu ou un point d’intérêt. Au fur et à mesure que vous écrivez, les recherches récentes similaires ou les suggestions basées sur des mots clés similaires s’affichent.
 
-3. Dans la liste des résultats, choisissez **Aéroport international de Pittsburgh** , puis cliquez sur **Fermer**.
+3. Dans la liste des résultats, choisissez **Aéroport international de Pittsburgh**, puis cliquez sur **Fermer**.
 
     Un symbole apparaît sur la carte qui effectue automatiquement un zoom sur l’emplacement. Les épingles restent en place sur la carte uniquement pendant la session active ; vous ne pouvez pas enregistrer un emplacement épinglé avec la carte. L’emplacement épinglé apparaît également sous la forme d’une couche dans la liste Couches. Vous pouvez renommer la couche, l’afficher ou la masquer, ou la supprimer de la carte, comme vous pouvez le faire avec d’autres couches.
 
@@ -327,7 +327,7 @@ Pour rechercher des emplacements à une distance de trajet spécifique à partir
     Le volet **Temps de trajet** s’affiche.
 
 3. Cliquez sur l’outil de sélection unique et, sur la carte, sélectionnez l’emplacement **Aéroport international de Pittsburgh** que vous avez épinglé précédemment.
-4. Dans le menu déroulant **Zone de recherche** , choisissez **Rayon** et spécifiez une distance de **100** miles.
+4. Dans le menu déroulant **Zone de recherche**, choisissez **Rayon** et spécifiez une distance de **100** miles.
 5. Cliquez sur **OK**.
 
     La carte affiche un cercle entourant l’emplacement de l’aéroport épinglé. Le volet Temps de trajet se développe pour afficher les options de style pour la zone de distance de trajet.
@@ -354,7 +354,7 @@ Pour accéder à l’aide en ligne d’ArcGIS Maps for Power BI à partir de la 
 
 1. Dans les outils de mappage, cliquez sur le bouton **Paramètres** ![icône de paramètres](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-15.png).
 
-2. Dans le volet **Paramètres** , cliquez sur le bouton **Aide**.
+2. Dans le volet **Paramètres**, cliquez sur le bouton **Aide**.
 3. Cliquez sur **OK** dans la fenêtre de confirmation qui s’affiche.
 
     L’aide en ligne d’ArcGIS Maps for Power BI s’ouvre dans une fenêtre de navigateur.
@@ -369,7 +369,7 @@ Power BI permet aux concepteurs, aux administrateurs Power BI et aux administrat
 
 #### <a name="designer-options"></a>Options du concepteur
 
-Dans Power BI Desktop, les concepteurs peuvent désactiver ArcGIS Maps for Power BI sous l’onglet Sécurité. Sélectionnez **Fichier**  >  **Options et paramètres** , puis sélectionnez **Options**  >  **Sécurité**. Une fois désactivé, ArcGIS Maps n’est plus chargé par défaut.
+Dans Power BI Desktop, les concepteurs peuvent désactiver ArcGIS Maps for Power BI sous l’onglet Sécurité. Sélectionnez **Fichier**  >  **Options et paramètres**, puis sélectionnez **Options**  >  **Sécurité**. Une fois désactivé, ArcGIS Maps n’est plus chargé par défaut.
 
 ![Options du concepteur](media/power-bi-visualizations-arcgis/arcgis-tutorial-17.png)
 

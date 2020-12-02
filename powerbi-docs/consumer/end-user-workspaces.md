@@ -2,20 +2,20 @@
 title: Organisation du contenu dans les espaces de travail
 description: Découvrir plus d’informations sur les espaces de travail et les rôles d’espace de travail
 author: mihart
+ms.author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/09/2020
-ms.author: mihart
 ms.custom: licensing support
 LocalizationGroup: Consumers
-ms.openlocfilehash: 7e16b01508b74b8a91cc956be8a2942b2c0e89bc
-ms.sourcegitcommit: 02484b2d7a352e96213353702d60c21e8c07c6c0
+ms.openlocfilehash: 2341306672da4c1923dc5bc97f0d1537604a1a7c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91983728"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96398703"
 ---
 # <a name="collaborate-in-workspaces"></a>Collaborer dans des espaces de travail
 
