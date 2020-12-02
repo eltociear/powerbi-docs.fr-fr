@@ -1,18 +1,19 @@
 ---
 title: Base de référence de la sécurité Azure pour Power BI
 description: La base de référence de la sécurité Power BI fournit des procédures et des ressources pour l’implémentation des recommandations de sécurité spécifiées dans le benchmark de sécurité Azure.
-author: msmbaldwin
-ms.service: security
+author: mbaldwin
+ms.author: margoc
+ms.service: powerbi
+ms.subservice: pbi-security
 ms.topic: conceptual
 ms.date: 11/20/2020
-ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: b0eb2906463efa95615fa76f3f7dda2a91ef126a
-ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
+ms.openlocfilehash: 9e7aefba7a2e47fbf5249feaab3ac56057ac867c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95550381"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386260"
 ---
 # <a name="azure-security-baseline-for-power-bi"></a>Base de référence de la sécurité Azure pour Power BI
 
@@ -42,7 +43,7 @@ Pour voir comment Power BI correspond intégralement au Benchmark de sécurité
 
 **Instructions** : Power BI est intégré à Azure Active Directory (Azure AD), qui est le service de gestion des identités et des accès par défaut d’Azure. Vous devez vous aligner sur Azure AD pour la gouvernance de la gestion des identités et des accès dans votre organisation.
 
-La sécurisation d’Azure AD doit être d’une priorité élevée dans les pratiques de sécurité cloud de votre organisation. Azure AD fournit un score de sécurisation des identités pour vous aider à évaluer la posture de sécurité des identités par rapport aux recommandations des bonnes pratiques de Microsoft. Utilisez le score pour évaluer avec précision votre configuration par rapport aux meilleures pratiques recommandées et apporter des améliorations à votre posture de sécurité.
+La sécurisation d’Azure AD doit être d’une priorité élevée dans les pratiques de sécurité cloud de votre organisation. Azure AD fournit un score d'identité sécurisée pour vous aider à évaluer la sécurité des identités par rapport aux recommandations de Microsoft en matière de meilleures pratiques. Utilisez le score pour évaluer avec précision votre configuration par rapport aux meilleures pratiques recommandées et apporter des améliorations à votre posture de sécurité.
 
 Remarque : Azure AD prend en charge les identités externes qui permettent aux utilisateurs sans compte Microsoft de se connecter à leurs applications et ressources avec leur identité externe.
 
@@ -70,7 +71,7 @@ Automatiser les tâches d’espace de travail Premium et de jeu de données avec
 
 ### <a name="im-3-use-azure-ad-single-sign-on-sso-for-application-access"></a>IM-3 : Utiliser l’authentification unique Azure AD pour l’accès aux applications
 
-**Instructions** : Power BI utilise Azure Active Directory pour fournir une gestion des identités et des accès aux ressources Azure, aux applications cloud et aux applications locales. Cela inclut les identités d’entreprise, comme les employés, ainsi que les identités externes, comme les partenaires et les fournisseurs. Ceci permet l’authentification unique (SSO) pour gérer et sécuriser l’accès aux données et ressources de votre organisation localement et dans le cloud. Connectez l’ensemble de vos utilisateurs, applications et appareils à Azure AD pour un accès transparent et sécurisé, ainsi qu’une visibilité et un contrôle accrus.
+**Instructions** : Power BI utilise Azure Active Directory pour fournir une gestion des identités et des accès aux ressources Azure, aux applications cloud et aux applications locales. Cela inclut les identités d’entreprise, comme les employés, ainsi que les identités externes, comme les partenaires et les fournisseurs. Cela permet à l’authentification unique de gérer et sécuriser l’accès aux données et ressources de votre organisation localement et dans le cloud. Connectez l’ensemble de vos utilisateurs, applications et appareils à Azure AD pour un accès transparent et sécurisé, ainsi qu’une visibilité et un contrôle accrus.
 
 - [Comprendre l’authentification unique des applications avec Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
 
@@ -81,7 +82,7 @@ Automatiser les tâches d’espace de travail Premium et de jeu de données avec
 ### <a name="im-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access"></a>IM-4 : Utiliser des contrôles d’authentification renforcés pour tous les accès basés sur Azure Active Directory
 
 **Instructions** : Power BI est intégré à Azure AD, qui prend en charge des contrôles d’authentification forts via l’authentification multifacteur (MFA) et des méthodes sans mot de passe fort.
-- Authentification multifacteur : activez l’authentification multifacteur Azure AD et suivez les recommandations relatives à la gestion des identités et des accès d’Azure Security Center pour les bonnes pratiques de configuration de votre authentification multifacteur. L’authentification multifacteur peut être appliquée à tous les utilisateurs, à des utilisateurs sélectionnés ou au niveau de chaque utilisateur, en fonction de conditions de connexion et de facteurs de risque.
+- Authentification multifacteur : activez l’authentification multifacteur Azure AD et suivez les recommandations relatives à la gestion des identités et des accès d’Azure Security Center pour les bonnes pratiques de configuration de votre authentification multifacteur. L’authentification multifacteur peut être appliquée à tous les utilisateurs, à des utilisateurs sélectionnés ou au niveau de chaque utilisateur en fonction des conditions de connexion et des facteurs de risque.
 - Authentification sans mot de passe : trois options d’authentification par mot de passe sont disponibles : Windows Hello Entreprise, l’application Microsoft Authenticator et des méthodes d’authentification locales, comme des cartes à puce.
 
 Pour les administrateurs et les utilisateurs avec privilèges, vérifiez que le niveau d’authentification forte le plus élevé est utilisé, puis déployez la stratégie d’authentification forte appropriée pour les autres utilisateurs.
@@ -798,7 +799,7 @@ Pour plus d’informations, consultez les références suivantes :
 
 - [Mise à l’échelle, gestion et surveillance d’entreprise Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
-**Supervision d’Azure Security Center** : Non applicable
+**Supervision Azure Security Center** : Non applicable
 
 **Responsabilité** : Customer
 

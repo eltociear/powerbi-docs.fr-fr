@@ -1,20 +1,20 @@
 ---
 title: Arborescence hiérarchique
 description: "Tutoriel : Créer une visualisation de l'arborescence hiérarchique dans Power BI"
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a8bc86217dac8f0c2b70e300f08b1667ee63568
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: fd4f984be74c0408eae5c476fa30994de55961a0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413082"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386363"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi"></a>Créer et afficher des visuels d’arborescence hiérarchique dans Power BI
 
@@ -43,8 +43,8 @@ Sélectionnez l'icône de l'arborescence hiérarchique dans le volet Visualisati
 
 La visualisation nécessite deux types d’entrée :
 
- - **Analyser**  : la métrique que vous souhaitez analyser. Il doit s'agir d'une mesure ou d'un agrégat.  
- - **Expliquez par**  : une ou plusieurs dimensions que vous souhaitez explorer.
+ - **Analyser** : la métrique que vous souhaitez analyser. Il doit s'agir d'une mesure ou d'un agrégat.  
+ - **Expliquez par** : une ou plusieurs dimensions que vous souhaitez explorer.
 
 Une fois que vous avez déposé votre métrique dans le champ, les mises à jour des visuels présentent la métrique agrégée. Dans l’exemple ci-dessous, nous visualisons le pourcentage moyen de produits en rupture de stock (5,07 %).
 
@@ -78,8 +78,8 @@ Vous pouvez utiliser des « découpages IA » pour spécifier les prochaines d
 
 L'analyse peut fonctionner de deux façons, selon vos préférences. Le comportement par défaut est le suivant :
 
- - **Valeur élevée**  : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus haute de la métrique analysée.  
- - **Valeur basse**  : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus basse de la métrique analysée.  
+ - **Valeur élevée** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus haute de la métrique analysée.  
+ - **Valeur basse** : Considère tous les champs disponibles et détermine celui qu'il faut explorer pour obtenir la valeur la plus basse de la métrique analysée.  
 
 Si vous sélectionnez **Valeur élevée** dans l'exemple des produits en rupture de stock, vous obtenez les résultats suivants :
 
@@ -95,9 +95,9 @@ Le mode Relative recherche les valeurs hautes qui se démarquent (par rapport au
 
 ![Découpage absolu dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
-Dans la capture d'écran ci-dessus, nous examinons les ventes de jeux vidéo en Amérique du Nord. Nous divisons d'abord l'arborescence par **Nom de l'éditeur** , puis nous explorons le critère Nintendo. La sélection de l’option **Valeur élevée** entraîne l'expansion du champ **Platform is Nintendo** (Plate-forme Nintento). Étant donné que Nintendo (l'éditeur) développe uniquement des jeux pour les consoles Nintendo, il n'y a qu'une seule valeur présente, et c'est donc, sans surprise, la valeur la plus élevée.
+Dans la capture d'écran ci-dessus, nous examinons les ventes de jeux vidéo en Amérique du Nord. Nous divisons d'abord l'arborescence par **Nom de l'éditeur**, puis nous explorons le critère Nintendo. La sélection de l’option **Valeur élevée** entraîne l'expansion du champ **Platform is Nintendo** (Plate-forme Nintento). Étant donné que Nintendo (l'éditeur) développe uniquement des jeux pour les consoles Nintendo, il n'y a qu'une seule valeur présente, et c'est donc, sans surprise, la valeur la plus élevée.
 
-Néanmoins, il serait plus intéressant d'examiner quelle valeur élevée se démarque des autres valeurs de la même colonne. Si nous changeons le type d'analyse de **Absolute** à **Relative** , nous obtenons le résultat suivant pour Nintendo : ![Découpage relatif de l'arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
+Néanmoins, il serait plus intéressant d'examiner quelle valeur élevée se démarque des autres valeurs de la même colonne. Si nous changeons le type d'analyse de **Absolute** à **Relative**, nous obtenons le résultat suivant pour Nintendo : ![Découpage relatif de l'arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-relative.png)
 
 Cette fois, la valeur recommandée est **Platform within Game Genre** (Plate-forme dans Genre de jeu).  Le champ Platform (Plate-forme) ne génère aucune valeur absolue supérieure à celle de Nintendo (19 950 000 $ contre 46 950 000 $). Néanmoins, c'est une valeur qui se démarque.
 
@@ -115,7 +115,7 @@ Ce qui se traduit par :
 et  
 46,950,000/ (46,950,000/1) = 1x  
 
-Si vous préférez ne pas utiliser de découpages IA dans l'arborescence, vous pouvez également les désactiver dans les options de **formatage de l’analyse**   :  
+Si vous préférez ne pas utiliser de découpages IA dans l'arborescence, vous pouvez également les désactiver dans les options de **formatage de l’analyse**  :  
 
 ![Découpage IA dans l’arborescence hiérarchique](media/power-bi-visualization-decomposition-tree/tree-ai-disable.png)
 

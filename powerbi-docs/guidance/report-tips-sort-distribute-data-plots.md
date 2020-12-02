@@ -2,19 +2,19 @@
 title: Conseils pour trier et distribuer des tracés de données dans les rapports Power BI
 description: Neuf conseils pour trier et distribuer des tracés de données dans les visuels de rapports Power BI, dans Power BI Desktop ou dans le service Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 featuredvideoid: BnhA4qa-9Jk
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/25/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 639999044da94c3f31abdf63737a876b63dc83c9
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 1c954e2365ccf5cf12a1acd9f8c966885ce20324
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278902"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96385871"
 ---
 # <a name="tips-to-sort-and-distribute-data-plots-in-power-bi-reports"></a>Conseils pour trier et distribuer des tracés de données dans les rapports Power BI
 

@@ -1,21 +1,21 @@
 ---
 title: Graphiques en entonnoir
 description: Graphiques en entonnoir dans Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2719127825dc94f1f1bd83fe4d36dc47dfc355f7
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 3eae51d470fe2b25c5fdbb97f97ee6468900e32c
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412898"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386181"
 ---
 # <a name="create-and-use-funnel-charts"></a>Créer et utiliser des graphiques en entonnoir
 
@@ -82,7 +82,7 @@ Regardez cette vidéo pour voir comment créer un graphique en entonnoir avec l�
 
 1. Sélectionnez l’icône Entonnoir ![Icône Graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) pour convertir l’histogramme en graphique en entonnoir.
 
-2. Dans le volet **Champs** , sélectionnez **Fait** \> **Nombre d’opportunités**.
+2. Dans le volet **Champs**, sélectionnez **Fait** \> **Nombre d’opportunités**.
    
     ![générer le graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Placez le curseur sur une barre pour afficher diverses informations :

@@ -9,11 +9,11 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/30/2020
 ms.openlocfilehash: 14b629eed17eca2d1e016913dcfffb5858d4ddc3
-ms.sourcegitcommit: 8861dac6724202a5b3be456a6aff8f3584e0cccf
+ms.sourcegitcommit: 9d033abd9c01a01bba132972497dda428d7d5c12
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132410"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96120763"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -352,11 +352,11 @@ Pour plus d’informations sur toutes les nouvelles fonctionnalités, consultez 
 
 La mise à jour de septembre 2019 de Power BI Report Server inclut un grand nombre de fonctionnalités pour les rapports Power BI. En voici les principales :
 
-- **Filtres au niveau du visuel pour les sélecteurs**  : Vous pouvez ajouter aux sélecteurs un filtre au niveau du visuel. Il fonctionne comme n’importe quel autre filtre au niveau du visuel, en filtrant simplement le sélecteur lui-même et aucun autre visuel. Ce filtre est utile pour éliminer les éléments vides ou si vous voulez utiliser des filtres de mesure.
-- **Jeux d’icônes pour les tables et les matrices**  : Avec les icônes d’indicateur de performance clé, vous pouvez configurer des règles pour montrer différents jeux d’icônes dans votre tableau et votre matrice, de façon similaire aux jeux d’icônes dans Excel.
-- **Regroupement de visuels**  : Vous pouvez désormais regrouper des visuels, des formes, des zones de texte, des images et des boutons sur une page de rapport, tout comme dans PowerPoint. Quand vous regroupez des objets, vous pouvez les déplacer et les redimensionner tous ensemble. Le regroupement facilite le travail dans un rapport comportant de nombreux objets superposés sur chaque page.
-- **Nouveaux thèmes par défaut**  : Pour poursuivre avec les nouvelles options JSON des thèmes, nous mettons à jour les thèmes disponibles pour les rapports et nous changeons le thème par défaut pour les nouveaux rapports. Le nouveau thème par défaut est mieux adapté au langage de conception de Microsoft et suit les bonnes pratiques de conception pour les visuels. 
-- **Conception des volets mise à jour**  : Nous avons rafraîchi une grande partie de notre interface. Nous avons mis à jour tous les volets, le pied de page et le sélecteur de vue avec une couleur plus claire et un espacement mis à jour, et nous avons introduit de nouvelles icônes. La nouvelle conception est la première étape du rafraîchissement de l’intégralité de l’interface.
+- **Filtres au niveau du visuel pour les sélecteurs** : Vous pouvez ajouter aux sélecteurs un filtre au niveau du visuel. Il fonctionne comme n’importe quel autre filtre au niveau du visuel, en filtrant simplement le sélecteur lui-même et aucun autre visuel. Ce filtre est utile pour éliminer les éléments vides ou si vous voulez utiliser des filtres de mesure.
+- **Jeux d’icônes pour les tables et les matrices** : Avec les icônes d’indicateur de performance clé, vous pouvez configurer des règles pour montrer différents jeux d’icônes dans votre tableau et votre matrice, de façon similaire aux jeux d’icônes dans Excel.
+- **Regroupement de visuels** : Vous pouvez désormais regrouper des visuels, des formes, des zones de texte, des images et des boutons sur une page de rapport, tout comme dans PowerPoint. Quand vous regroupez des objets, vous pouvez les déplacer et les redimensionner tous ensemble. Le regroupement facilite le travail dans un rapport comportant de nombreux objets superposés sur chaque page.
+- **Nouveaux thèmes par défaut** : Pour poursuivre avec les nouvelles options JSON des thèmes, nous mettons à jour les thèmes disponibles pour les rapports et nous changeons le thème par défaut pour les nouveaux rapports. Le nouveau thème par défaut est mieux adapté au langage de conception de Microsoft et suit les bonnes pratiques de conception pour les visuels. 
+- **Conception des volets mise à jour** : Nous avons rafraîchi une grande partie de notre interface. Nous avons mis à jour tous les volets, le pied de page et le sélecteur de vue avec une couleur plus claire et un espacement mis à jour, et nous avons introduit de nouvelles icônes. La nouvelle conception est la première étape du rafraîchissement de l’intégralité de l’interface.
 
 Voici la liste complète des fonctionnalités. 
 
@@ -473,7 +473,7 @@ Nous avons ajouté la prise en charge des visuels approuvés pour Power BI Repor
 
 #### <a name="improved-security-features"></a>Fonctionnalités de sécurité améliorées
 
-**RestrictedResourceMimeTypeForUpload** , que les administrateurs peuvent utiliser pour spécifier une liste séparée par des virgules des types MIME interdits, par exemple text/html.
+**RestrictedResourceMimeTypeForUpload**, que les administrateurs peuvent utiliser pour spécifier une liste séparée par des virgules des types MIME interdits, par exemple text/html.
 
 ## <a name="january-2019"></a>Janvier 2019
 
@@ -786,7 +786,7 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 - Disponibilité de Power BI Report Server en version préliminaire
 - Possibilité de publier des rapports Power BI localement
   - Prise en charge des visuels Power BI
-  - Prise en charge prochaine des * *connexions directes Analysis Services* uniquement, avec plus de sources de données.
+  - Prise en charge prochaine des **connexions directes Analysis Services* uniquement, avec plus de sources de données.
   - Application mobile Power BI mise à jour pour afficher des rapports Power BI hébergés dans Power BI Report Server
 - Collaboration améliorée dans les rapports avec des commentaires
 

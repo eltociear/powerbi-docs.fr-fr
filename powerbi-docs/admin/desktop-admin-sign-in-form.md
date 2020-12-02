@@ -2,18 +2,18 @@
 title: Gestion du formulaire de connexion Power BI Desktop par les administrateurs
 description: Découvrez comment vous pouvez gérer le formulaire de connexion initial lors de l’ouverture de Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 04/15/2019
-ms.author: davidi
-ms.openlocfilehash: 44add6bf76e5bc4445df08a76859e05c8fa1638d
-ms.sourcegitcommit: c18130ea61e67ba111be870ddb971c6413a4b632
+ms.openlocfilehash: 633d71326009881b22b7b7d235316b4ebe5c132f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86160867"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96386878"
 ---
 # <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Administrateurs : Gérer le formulaire de connexion Power BI Desktop
 La première fois que Power BI Desktop est lancé, un formulaire de connexion s’affiche. Vous pouvez renseigner les informations demandées ou vous connecter à Power BI pour continuer. Les administrateurs gèrent ce formulaire avec une clé de Registre. 

@@ -2,20 +2,20 @@
 title: Définir des alertes de données dans le service Power BI
 description: Découvrez comment utiliser le service Microsoft Power BI afin de définir des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/02/2020
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 55d196a9b041f52632300f6e10c00d753ca02a14
-ms.sourcegitcommit: be424c5b9659c96fc40bfbfbf04332b739063f9c
+ms.openlocfilehash: cce9e351d468289b37f000159f846a5b2942b36a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91635076"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387732"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Alertes de données dans le service Power BI
 
