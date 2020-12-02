@@ -2,19 +2,19 @@
 title: Se connecter à des données créées par des dataflows Power Platform dans Power BI Desktop
 description: Se connecter et utiliser facilement des dataflows dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 24635df4a07f0f73a701fcb9d30b5db3ef678666
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 5d9f477c8b058dbe9a71eec1307b4a32863307a1
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668456"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96392953"
 ---
 # <a name="connect-to-data-created-by-power-platform-dataflows-in-power-bi-desktop"></a>Se connecter à des données créées par des dataflows Power Platform dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez vous connecter à des données créées par des **dataflows Power Platform** comme toute autre source de données dans Power BI Desktop.
