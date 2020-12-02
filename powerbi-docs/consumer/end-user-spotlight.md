@@ -2,19 +2,19 @@
 title: Utiliser À la une pour mettre en surbrillance
 description: Le mode À la une dans le service Power BI met en surbrillance des données et des informations importantes.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 51f98bd5bc22609aba01a775678c5dccf6cf0d0c
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: 87e5c69905bc034ff8a77357992404a19b5ceff9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830223"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389480"
 ---
 # <a name="add-spotlights-to-power-bi-reports"></a>Ajouter le mode À la une à des rapports Power BI
 

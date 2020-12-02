@@ -2,19 +2,19 @@
 title: Enregistrer un rapport dans Power BI
 description: Enregistrer un rapport dans le service Power BI et Power BI Desktop
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/01/2018
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c57c768e64171acd5c8246aad9faad304a355e2b
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c023b9badd9e6dcc904e201c09c77fbbe90cdb63
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218582"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96387870"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Enregistrer un rapport dans le service Power BI et Power BI Desktop
 Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enregistrer, l’enregistrer sous un autre nom ou le fermer sans enregistrer vos modifications. Supposons que vous ayez ouvert le rapport, créé une visualisation, puis épinglé cette visualisation au tableau de bord. Si vous le fermez sans enregistrer vos modifications, la vignette restera sur le tableau de bord, mais la visualisation ne sera pas enregistrée dans le rapport. Si vous cliquez sur cette vignette dans le tableau de bord, le rapport s’ouvre, mais la visualisation ne figure pas dans le rapport.

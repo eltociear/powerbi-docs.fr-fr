@@ -2,19 +2,19 @@
 title: Vignettes de tableau de bord dans Power BI pour les utilisateurs professionnels
 description: Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI pour les utilisateurs professionnels. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS).
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/06/2020
-ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab8cfefab74d3120451b56c3ea30518e538ad543
-ms.sourcegitcommit: d2f633b4bfa271051ba1d2ef0e6e8da7dcf42818
+ms.openlocfilehash: 67291ca77b161fab289ee0520287d832cce838f8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830503"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389503"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 

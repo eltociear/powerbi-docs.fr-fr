@@ -2,26 +2,26 @@
 title: S’inscrire pour accéder aux fonctionnalités de préversion
 description: Activez et désactivez les fonctionnalités en version préliminaire de Power BI.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 09/17/2020
-ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: a19be2d22802734964d96a93857f77e13c6c05c4
-ms.sourcegitcommit: cb606d3ae95300683caf1853e229d8981302a8e2
+ms.openlocfilehash: c650b7ea282d928af512ce7948902bc4fd72613f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90764229"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96389963"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Accéder aux fonctionnalités de préversion du service Power BI
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-## <a name="what-are-preview-features"></a>Que sont les*fonctionnalités en version préliminaire*?
+## <a name="what-are-preview-features"></a>Que sont les *fonctionnalités en version préliminaire*?
 Dans le cadre des améliorations que nous apportons à Power BI, nous allons publier certaines nouvelles fonctionnalités sous la forme de *fonctionnalités de préversion*. Vous pouvez activer et désactiver ces dernières afin de les essayer.
 
 Certaines fonctionnalités en préversion peuvent être activées ou désactivées à partir de votre tableau de bord Power BI, de votre page d’accueil ou de votre rapport lui-même. Vous pouvez activer ou désactiver la fonctionnalité d’évaluation **Nouvelle apparence** dans la barre de menus Power BI qui s’affiche au-dessus de l’Accueil, des rapports et des tableaux de bord. 

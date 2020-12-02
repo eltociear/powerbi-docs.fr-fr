@@ -2,19 +2,19 @@
 title: Utiliser la fonctionnalité Questions et réponses avec des connexions actives dans Power BI
 description: Documentation sur l’utilisation de requêtes en langage naturel dans Questions et réponses Power BI avec des connexions actives vers des données Analysis Services et la passerelle de données locale.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/29/2020
-ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 8137fa6bb10e20992547746bc6e91e001767c679
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 4e64121fdac63abe22d77818a0f91a860cac316f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218858"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388146"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Activer la fonctionnalité Questions et réponses pour les connexions actives dans Power BI
 

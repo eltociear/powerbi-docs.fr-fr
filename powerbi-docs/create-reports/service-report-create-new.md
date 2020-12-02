@@ -2,19 +2,19 @@
 title: 'Créer un rapport à partir d’un fichier Excel dans le service Power BI '
 description: Créez un rapport Power BI à partir d’un fichier Excel dans le service Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/14/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d6a52fd72ab96541eee621d6be6cb50005f293e2
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 806198b783785a06562411b53f7bd6f644b16918
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462703"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388192"
 ---
 # <a name="create-a-report-from-an-excel-file-in-the-power-bi-service"></a>Créer un rapport à partir d’un fichier Excel dans le service Power BI
 Vous avez lu [apports dans Power BI](../consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous commençons par créer un rapport de base dans le service Power BI à partir d’un fichier Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
@@ -32,7 +32,7 @@ Cette méthode de création d’un rapport démarre avec un fichier et un caneva
 2. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![Obtenir des données](media/service-report-create-new/power-bi-get-data3.png)
-3. Sélectionnez **Fichiers** , puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
+3. Sélectionnez **Fichiers**, puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
    
     ![sélectionner Fichiers](media/service-report-create-new/power-bi-select-files.png)
 4. Dans cet exercice, sélectionnez **Importer**.

@@ -2,19 +2,19 @@
 title: Optimiser vos données pour en avoir un aperçu rapide dans Power BI
 description: Optimisez vos données pour en avoir un aperçu rapide dans Power BI. Si Power BI ne trouve pas d’informations dans vos données, voici quelques opérations que vous pouvez effectuer.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/02/2017
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 277e160767f21fb221896015553e8d7dcfcf9567
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 41250b3d6de7708912b82376a2a5f07d2e686105
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238244"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388445"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimisez vos données pour en avoir un aperçu rapide dans Power BI
 Vous souhaitez améliorer les résultats d’un aperçu rapide ?  Si vous êtes propriétaire d’un jeu de données, essayez ceci :

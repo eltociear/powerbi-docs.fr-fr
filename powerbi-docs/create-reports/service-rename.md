@@ -2,19 +2,19 @@
 title: Renommer des tableaux de bord, rapports, espaces de travail, pages de rapport, jeu de données
 description: Renommez pratiquement tout élément dans le service Power BI.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/01/2018
-ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d37dfece5c7f181ddf55b58ea461e48fdd090d11
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: fc120b832fda05d822e57ace56b15fbd773a53ad
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85218743"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388031"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
 Cet article explique comment renommer un tableau de bord, un rapport, une page de rapport, un classeur, un jeu de données, une application et un espace de travail dans le service Power BI.

@@ -2,19 +2,19 @@
 title: 'Tutoriel : D’un classeur Excel au service Power BI vers Teams'
 description: Cet article explique comment créer rapidement un rapport exceptionnel dans le service Power BI à partir d’un classeur Excel, et le partager dans Teams.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
 ms.date: 07/30/2020
-ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ccf8b5fa8f1c4d18a25767ff11f035304b339de0
-ms.sourcegitcommit: d9d67ee47954379c2df8db8d0dc8302de4c9f1e5
+ms.openlocfilehash: 99f562ee315a74c9de6765308272e5e33153c4f0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87478127"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96388859"
 ---
 # <a name="tutorial-from-excel-workbook-to-a-report-in-the-power-bi-service-to-microsoft-teams"></a>Tutoriel : Générer un rapport à partir d’un classeur Excel dans le service Power BI vers Microsoft Teams
 Votre responsable souhaite voir un rapport sur vos derniers chiffres de ventes et bénéfices d’ici la fin de la journée. Toutefois, vos données les plus récentes sont stockées dans différents fichiers et systèmes tiers sur votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des visuels et mettre en forme un rapport. Vous êtes donc inquiet.
