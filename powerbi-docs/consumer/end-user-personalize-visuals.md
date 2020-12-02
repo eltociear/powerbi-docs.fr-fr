@@ -2,19 +2,19 @@
 title: Personnaliser les visuels dans un rapport
 description: Créez votre propre vue d’un rapport, sans modifier ce dernier.
 author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 10/13/2020
-ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 718363da3bd1f66de199db8d854d8d23d6de3eb5
-ms.sourcegitcommit: eab5a02520c421a57019595c03e9ecfdb41d52ad
+ms.openlocfilehash: aa94908c8601052c9cb8ac7cd4a6c0e895afeff6
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92256742"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96390147"
 ---
 # <a name="personalize-visuals-in-a-report"></a>Personnaliser les visuels dans un rapport
 
@@ -59,67 +59,67 @@ En personnalisant un visuel, vous pouvez explorer vos données de multiples faç
 
 Vous trouvez que les données s’afficheraient mieux sous la forme d’un histogramme empilé ? Modifiez le **type de visualisation**.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Modifier le type de visualisation":::
  
 ### <a name="swap-out-a-measure-or-dimension"></a>Permuter une mesure ou une dimension
 Remplacez le champ utilisé pour l’axe X en sélectionnant le champ que vous souhaitez remplacer, puis en sélectionnant un autre champ.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Modification de l’axe":::
  
 ### <a name="add-or-remove-a-legend"></a>Ajouter ou supprimer une légende
 En ajoutant une légende, vous pouvez attribuer un code de couleurs à un visuel selon la catégorie. Dans cet exemple, nous utilisons un code de couleurs basé sur le nom de la société. 
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Ajout ou suppression d’une légende":::
 
 ### <a name="change-the-placement-of-fields"></a>Modifier le positionnement des champs
 
 À l’aide de la fonction glisser-déposer, vous pouvez modifier le positionnement des champs dans la même propriété visuelle ou même entre différentes propriétés visuelles. Par exemple, vous pouvez rapidement déplacer un champ de la légende vers l’axe d’un visuel.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-drag-and-drop.png" alt-text="Capture d’écran du déplacement d’un champ dans un visuel.":::
 
 Vous pouvez également réorganiser rapidement les colonnes d’une table ou d’une matrice.
 
-:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/personalize-reorder-columns.png" alt-text="Capture d’écran de la réorganisation des colonnes dans une table.":::
 
 ### <a name="compare-two-or-more-different-measures"></a>Comparer deux ou plusieurs mesures différentes
 Comparez et confrontez des valeurs pour différentes mesures à l’aide de l’icône +, qui permet d’ajouter plusieurs mesures pour un visuel. Pour supprimer une mesure, sélectionnez **Plus d’options (...)** et choisissez **Supprimer le champ**.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Comparaison de mesures":::
 
 ### <a name="change-aggregations"></a>Modifier les agrégations
 Changez le mode de calcul d’une mesure en modifiant l’agrégation dans le volet **Personnaliser**. Sélectionnez **Plus d’options (...)** et choisissez l’agrégation à utiliser.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Modification des agrégations":::
 
 ### <a name="capture-changes"></a>Capturer les modifications 
 À l’aide des signets personnels, capturez vos modifications pour pouvoir revenir à votre affichage personnalisé. Sélectionnez **Signets** > **Signets personnels** et attribuez un nom au signet. 
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Création d’un signet":::
  
 Vous pouvez également faire du signet votre affichage par défaut.
 
 ### <a name="share-changes"></a>Partager les modifications 
 Si vous avez des autorisations de lecture et de repartage, vous pouvez choisir d’inclure vos modifications lorsque vous partagez le rapport.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Partage des modifications":::
  
 ### <a name="reset-all-your-changes-to-a-report"></a>Réinitialiser toutes les modifications dans un rapport
 
 Dans le coin supérieur droit de votre canevas de rapport, sélectionnez **Rétablir les valeurs par défaut**. Cela supprime toutes les modifications que vous avez apportées au rapport et revient au dernier affichage du rapport enregistré par l’auteur.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Réinitialisation de toutes les modifications":::
  
 ### <a name="reset-all-your-changes-to-a-visual"></a>Réinitialiser toutes les modifications dans un visuel
 
 À partir de la barre de menus pour le visuel, sélectionnez **Réinitialiser ce visuel** pour supprimer toutes les modifications que vous avez apportées à un visuel en particulier et revenir au dernier affichage du visuel enregistré par l’auteur.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Réinitialisation de toutes les modifications du visuel":::
  
 ### <a name="clear-recent-changes"></a>Effacer les modifications récentes
 
 Sélectionnez l’icône représentant une gomme pour effacer toutes les modifications récentes que vous avez effectuées depuis que vous avez ouvert le volet **Personnaliser**.  
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Personnalisation d’un visuel":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Restauration des modifications récentes":::
 
 ## <a name="limitations"></a>Limites
 
