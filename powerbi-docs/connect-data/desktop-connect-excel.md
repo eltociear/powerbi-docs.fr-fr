@@ -2,20 +2,20 @@
 title: Se connecter à Excel dans Power BI Desktop
 description: Se connecter à un classeur Excel et utiliser les données de ce fichier dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d0c7bf64eaae7467963ce1bfd7638e8eb87ae249
-ms.sourcegitcommit: 181679a50c9d7f7faebcca3a3fc55461f594d9e7
+ms.openlocfilehash: f6092e6324a0fa400458b8da0be8f41c366f85e0
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033873"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405902"
 ---
 # <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Se connecter à des classeurs Excel dans Power BI Desktop
 La connexion à un classeur Excel à partir de Power BI Desktop est simple. Cet article vous guide dans le processus.

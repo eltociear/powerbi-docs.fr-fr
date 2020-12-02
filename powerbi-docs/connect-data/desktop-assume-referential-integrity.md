@@ -2,19 +2,19 @@
 title: Paramètre Intégrité référentielle supposée dans Power BI Desktop
 description: Avec DirectQuery, apprendre à amener Power BI Desktop à supposer l’intégrité référentielle
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/07/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 698abf814b9b93635ba425b2c9d1d30a292714ab
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: 1b078f837efe0637a4ac7769ceb868af23c7a298
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91599892"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405925"
 ---
 # <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Appliquer le paramètre Intégrité référentielle supposée dans Power BI Desktop
 Lorsque vous vous connectez à une source de données à l’aide de **DirectQuery**, vous pouvez utiliser l’option **Intégrité référentielle supposée** pour exécuter des requêtes plus efficaces sur votre source de données. Cette fonctionnalité impose quelques exigences de données sous-jacentes, et n’est disponible qu’en utilisant **DirectQuery**.
@@ -24,7 +24,7 @@ Le paramètre **Intégrité référentielle supposée** permet aux requêtes sur
 ![Capture d’écran d’une boîte de dialogue Modifier la relation vous permettant de sélectionner Intégrité référentielle supposée.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 ## <a name="requirements-for-using-assume-referential-integrity"></a>Conditions d’utilisation du paramètre Intégrité référentielle supposée
-Il s’agit d’un paramètre avancé qui est activé uniquement en cas d’utilisation de **DirectQuery**pour la connexion aux données. Pour que le paramètre **Intégrité référentielle supposée** fonctionne correctement, les conditions suivantes sont requises :
+Il s’agit d’un paramètre avancé qui est activé uniquement en cas d’utilisation de **DirectQuery** pour la connexion aux données. Pour que le paramètre **Intégrité référentielle supposée** fonctionne correctement, les conditions suivantes sont requises :
 
 * Les données de la colonne **De** dans la relation ne peuvent jamais avoir de valeur *Null* ou *vide*
 * Pour chaque valeur dans la colonne **De**, une valeur correspondante doit figurer dans la colonne **À**

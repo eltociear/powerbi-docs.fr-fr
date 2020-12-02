@@ -2,25 +2,25 @@
 title: Se connecter à une base de données Google BigQuery dans Power BI Desktop
 description: Se connecter et utiliser facilement Google BigQuery dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 05/08/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 68698d51b074102a8d8e556101fcfaf6a39c2c62
-ms.sourcegitcommit: 3ddfd9ffe2ba334a6f9d60f17ac7243059cf945b
+ms.openlocfilehash: 7cffba9178d4eec0bfd468040b7551768aab7f1d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92349411"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96405879"
 ---
 # <a name="connect-to-a-google-bigquery-database-in-power-bi-desktop"></a>Se connecter à une base de données Google BigQuery dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à une base de données Google **BigQuery** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop.
 
 ## <a name="connect-to-google-bigquery"></a>Se connecter à Google BigQuery
-Pour vous connecter à une base de données Google **BigQuery** , sélectionnez **Obtenir des données** dans le ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Google BigQuery**.
+Pour vous connecter à une base de données Google **BigQuery**, sélectionnez **Obtenir des données** dans le ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Google BigQuery**.
 
 ![Obtenir la boîte de dialogue de données pour Google BigQuery](media/desktop-connect-bigquery/connect_bigquery_01.png)
 
@@ -37,13 +37,13 @@ Une fois que vous êtes connecté, une fenêtre **Navigateur** apparaît et affi
 ![Données de Google BigQuery](media/desktop-connect-bigquery/connect_bigquery_03.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
-Il existe quelques limites et considérations à prendre en compte pour le connecteur Google **BigQuery**  :
+Il existe quelques limites et considérations à prendre en compte pour le connecteur Google **BigQuery** :
 
 * Le connecteur Google BigQuery est disponible dans Power BI Desktop et dans le service Power BI. Dans le service Power BI, le connecteur est accessible à l’aide de la connexion cloud-à-cloud de Power BI à Google BigQuery.
 
 * Vous pouvez utiliser Power BI avec le **projet de facturation** Google BigQuery. Par défaut, Power BI utilise le premier projet de la liste retournée pour l’utilisateur. 
 
-  Pour personnaliser le comportement du projet de facturation quand vous l’utilisez avec Power BI, spécifiez l’option suivante dans le M sous-jacent à l’étape Source, qui peut être personnalisée à l’aide de l’ **éditeur Power Query** dans Power BI Desktop :
+  Pour personnaliser le comportement du projet de facturation quand vous l’utilisez avec Power BI, spécifiez l’option suivante dans le M sous-jacent à l’étape Source, qui peut être personnalisée à l’aide de l’**éditeur Power Query** dans Power BI Desktop :
 
   ```
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
