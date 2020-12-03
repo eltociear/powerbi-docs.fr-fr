@@ -1,19 +1,19 @@
 ---
 title: Afficher un aperçu des rapports dans le Générateur de rapports Power BI
 description: Quand vous créez un rapport paginé du Générateur de rapports, il est utile d’afficher régulièrement un aperçu du rapport pour vérifier qu’il affiche ce que vous voulez.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: b12937ec758202345166e520397a52e52b67165d
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: d982174d814b3f1042e02dc9beda762848c48086
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93298144"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416206"
 ---
 # <a name="previewing-reports-in-power-bi-report-builder"></a>Afficher un aperçu des rapports dans le Générateur de rapports Power BI
 

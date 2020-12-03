@@ -2,18 +2,18 @@
 title: Date/heure automatique dans Power BI Desktop
 description: Comprendre la fonctionnalité de date/heure automatique dans Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 10/23/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 0c62e423bdf357a5eee4ef5b03daa7ec145310e7
-ms.sourcegitcommit: 20cfd157af587b3910a2b6deec9518dca4105d71
+ms.openlocfilehash: 24972026d7121809ac71c6c8352a147af38ad5be
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85943055"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416022"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Appliquer l’option de date/heure automatique dans Power BI Desktop
 
@@ -29,7 +29,7 @@ Quand cette option est activée, Power BI Desktop crée une table de date/heure 
 
 ## <a name="how-it-works"></a>Fonctionnement
 
-En fait, chaque table de date/heure automatique est une [table calculée](desktop-calculated-tables.md) qui génère des lignes de données à l’aide de la fonction [CALENDAR](/dax/calendar-function-dax) DAX. Chaque table inclut également six colonnes calculées : **Jour**, **NoMois**, **Mois**, **NoTrimestre**, **Trimestre**et **Année**.
+En fait, chaque table de date/heure automatique est une [table calculée](desktop-calculated-tables.md) qui génère des lignes de données à l’aide de la fonction [CALENDAR](/dax/calendar-function-dax) DAX. Chaque table inclut également six colonnes calculées : **Jour**, **NoMois**, **Mois**, **NoTrimestre**, **Trimestre** et **Année**.
 
 > [!NOTE]
 > Power BI traduit et met en forme les noms et valeurs de colonnes selon la [langue du modèle](../fundamentals/supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop). Par exemple, si le modèle a été créé en anglais, il affichera encore les noms des mois, etc., en anglais, même s’il est visualisé par un client coréen.

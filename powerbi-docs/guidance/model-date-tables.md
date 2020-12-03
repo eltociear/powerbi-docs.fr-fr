@@ -2,18 +2,18 @@
 title: Création de tables de dates dans Power BI Desktop
 description: Techniques et conseils pour la création de tables de dates dans Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 06/24/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 350d4889643556d4e1c6389580415ccba46b55d4
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 9040fb54e51dfeecad853e5ba980f423ab48e908
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396630"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417839"
 ---
 # <a name="create-date-tables-in-power-bi-desktop"></a>Création de tables de dates dans Power BI Desktop
 
@@ -22,7 +22,7 @@ Cet article s’adresse principalement aux modélisateurs de données qui utilis
 Pour utiliser les [fonctions Time Intelligence](/dax/time-intelligence-functions-dax) DAX (Data Analysis Expressions), vous devez respecter un prérequis : votre modèle doit comporter au moins une _table de dates_. Une table de dates est une table qui répond aux exigences suivantes :
 
 > [!div class="checklist"]
-> - Elle doit avoir une colonne dont le type de données est **date** (ou **date/heure** ), appelée _colonne de dates_.
+> - Elle doit avoir une colonne dont le type de données est **date** (ou **date/heure**), appelée _colonne de dates_.
 > - La colonne de dates doit contenir des valeurs uniques.
 > - La colonne de dates ne doit pas contenir de valeurs vides.
 > - Il ne doit pas y avoir de dates manquantes dans la colonne de dates.

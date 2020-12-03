@@ -2,18 +2,18 @@
 title: Conseils sur les relations plusieurs-à-plusieurs
 description: Conseils relatifs au développement de relations de modèle plusieurs à plusieurs.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 3c94c25f5f1ba717f68a0c2a5ec661be10f70135
-ms.sourcegitcommit: 7e99e8af9caf9340958c4607a94728d43e8c3811
+ms.openlocfilehash: 95383581a258374f2757581e82fa0f2044dcae84
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91668525"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418621"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Conseils sur les relations plusieurs-à-plusieurs
 

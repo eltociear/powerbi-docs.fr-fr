@@ -1,20 +1,20 @@
 ---
 title: Paramètres de rapport dans le Générateur de rapports Power BI
 description: Cette rubrique décrit les utilisations courantes des paramètres des rapports Power BI Report Builder, les propriétés que l’on peut définir et plus encore.
+author: maggiesMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-author: maggiesMSFT
-ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 6c0a891257ae4e768c3952398eb8303906bf2ce4
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 77388e138451242ae54f4d1f0630599bbd9de829
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297796"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416275"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Paramètres de rapport dans le Générateur de rapports Power BI
 
@@ -52,7 +52,7 @@ Quand vous visualisez un rapport qui comporte des paramètres, la barre d’outi
   
 4. **Poignée Afficher ou masquer la zone de paramètres** : dans la barre d’outils de la visionneuse de rapports, cliquez sur cette flèche pour afficher ou masquer le volet Paramètres.  
   
-5. **@CategoryQuota paramètre** le paramètre @CategoryQuota est de type de données **Float** , ce qui prend une valeur numérique.  @CategoryQuota est défini pour autoriser les valeurs multiples.  
+5. **@CategoryQuota paramètre** le paramètre @CategoryQuota est de type de données **Float**, ce qui prend une valeur numérique.  @CategoryQuota est défini pour autoriser les valeurs multiples.  
   
 6. **Afficher le rapport**  : après avoir entré les valeurs des paramètres, cliquez sur **Afficher le rapport** pour exécuter le rapport. Si tous les paramètres possèdent des valeurs par défaut, le rapport s'exécute automatiquement au premier affichage.  
   
@@ -114,9 +114,9 @@ Créez manuellement un paramètre à partir du volet des données de rapport. Vo
 |Visible|Sélectionnez cette option pour afficher le paramètre de rapport en haut du rapport quand celui-ci est exécuté. Cette option permet aux utilisateurs de sélectionner des valeurs de paramètre au moment de l'exécution.|  
 |Hidden|Sélectionnez cette option pour masquer le paramètre de rapport dans le rapport publié. Les valeurs de paramètre de rapport peuvent toujours être définies sur une URL de rapport, dans une définition d'abonnement ou sur le serveur de rapports.|  
 |Interne|Sélectionnez cette option pour masquer le paramètre de rapport. Dans le rapport publié, le paramètre de rapport ne peut être affiché que dans la définition du rapport.|  
-|Valeurs disponibles|Si vous avez spécifié les valeurs disponibles d'un paramètre, les valeurs valides s'affichent toujours sous forme de liste déroulante. Par exemple, si vous fournissez des valeurs disponibles pour un paramètre **DateTime** , une liste déroulante de dates s’affiche dans le volet des paramètres à la place d’un contrôle calendrier.<br /><br /> Pour vous assurer qu'une liste de valeurs est cohérente parmi un rapport et des sous-rapports, vous pouvez définir une option sur la source de données afin d'utiliser une transaction unique pour toutes les requêtes des datasets associés à une source de données.<br /><br /> **Note de sécurité** Dans un rapport qui contient un paramètre de type de données **Text** , veillez à utiliser une liste de valeurs disponibles (également appelée liste de valeurs valides) et vérifiez que l’utilisateur qui exécute le rapport dispose uniquement des autorisations nécessaires pour voir les données dans le rapport.|  
+|Valeurs disponibles|Si vous avez spécifié les valeurs disponibles d'un paramètre, les valeurs valides s'affichent toujours sous forme de liste déroulante. Par exemple, si vous fournissez des valeurs disponibles pour un paramètre **DateTime** , une liste déroulante de dates s’affiche dans le volet des paramètres à la place d’un contrôle calendrier.<br /><br /> Pour vous assurer qu'une liste de valeurs est cohérente parmi un rapport et des sous-rapports, vous pouvez définir une option sur la source de données afin d'utiliser une transaction unique pour toutes les requêtes des datasets associés à une source de données.<br /><br /> **Note de sécurité** Dans un rapport qui contient un paramètre de type de données **Text**, veillez à utiliser une liste de valeurs disponibles (également appelée liste de valeurs valides) et vérifiez que l’utilisateur qui exécute le rapport dispose uniquement des autorisations nécessaires pour voir les données dans le rapport.|  
 |Valeurs par défaut|Définissez les valeurs par défaut à partir d'une requête ou d'une liste statique.<br /><br /> Lorsque chaque paramètre a une valeur par défaut, le rapport s'exécute automatiquement au premier affichage.|  
-|Avancé|Définissez l'attribut de définition de rapport **UsedInQuery** , valeur qui indique si ce paramètre affecte directement ou indirectement les données d'un rapport.<br /><br /> **Déterminer automatiquement le moment de l'actualisation**<br /> Choisissez cette option lorsque vous souhaitez que le processeur de rapports détermine un paramètre pour cette valeur. La valeur est **True** si le processeur de rapports détecte une requête de dataset avec une référence directe ou indirecte à ce paramètre ou si le rapport possède des sous-rapports.<br /><br /> **Toujours actualiser**<br /> Choisissez cette option lorsque le paramètre de rapport est utilisé directement ou indirectement dans une requête de dataset ou une expression de paramètre. Cette option affecte la valeur True à **UsedInQuery** .<br /><br /> **Ne jamais actualiser**<br /> Choisissez cette option quand le paramètre de rapport n'est pas utilisé directement ou indirectement dans une requête de dataset ou une expression de paramètre. Cette option affecte la valeur False à **UsedInQuery** .<br /><br /> **Attention** Utilisez **Ne jamais actualiser** avec précaution. Sur le serveur de rapports, **UsedInQuery** permet de contrôler les options de cache pour les données de rapports et les rapports rendus, ainsi que les options de paramètres des rapports d'instantané. Si vous définissez l'option **Ne jamais actualiser** de manière incorrecte, vous risquez de provoquer la mise en cache incorrecte de rapports ou de données de rapports ou de provoquer la présence de données incohérentes dans un rapport d'instantané. |  
+|Avancé|Définissez l'attribut de définition de rapport **UsedInQuery**, valeur qui indique si ce paramètre affecte directement ou indirectement les données d'un rapport.<br /><br /> **Déterminer automatiquement le moment de l'actualisation**<br /> Choisissez cette option lorsque vous souhaitez que le processeur de rapports détermine un paramètre pour cette valeur. La valeur est **True** si le processeur de rapports détecte une requête de dataset avec une référence directe ou indirecte à ce paramètre ou si le rapport possède des sous-rapports.<br /><br /> **Toujours actualiser**<br /> Choisissez cette option lorsque le paramètre de rapport est utilisé directement ou indirectement dans une requête de dataset ou une expression de paramètre. Cette option affecte la valeur True à **UsedInQuery** .<br /><br /> **Ne jamais actualiser**<br /> Choisissez cette option quand le paramètre de rapport n'est pas utilisé directement ou indirectement dans une requête de dataset ou une expression de paramètre. Cette option affecte la valeur False à **UsedInQuery** .<br /><br /> **Attention** Utilisez **Ne jamais actualiser** avec précaution. Sur le serveur de rapports, **UsedInQuery** permet de contrôler les options de cache pour les données de rapports et les rapports rendus, ainsi que les options de paramètres des rapports d'instantané. Si vous définissez l'option **Ne jamais actualiser** de manière incorrecte, vous risquez de provoquer la mise en cache incorrecte de rapports ou de données de rapports ou de provoquer la présence de données incohérentes dans un rapport d'instantané. |  
   
 ##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Requête de jeu de données  
  Pour filtrer les données dans la requête de dataset, vous pouvez inclure une clause de restriction qui limite les données récupérées en spécifiant les valeurs à inclure ou exclure dans le jeu de résultats.  
@@ -145,7 +145,7 @@ Créez manuellement un paramètre à partir du volet des données de rapport. Vo
 ##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Paramètres d’un abonnement  
  Vous pouvez définir un abonnement pour un rapport à la demande ou un rapport d'instantané et spécifier les valeurs de paramètres à utiliser lors du traitement de l'abonnement.  
   
--   **Rapports à la demande.**  Pour un rapport à la demande, vous pouvez spécifier une valeur de paramètre différente de la valeur publiée pour chaque paramètre listé pour le rapport. Prenons l'exemple d'un rapport Service d'appel qui utilise un paramètre *Période* pour retourner les demandes du service client de la journée, de la semaine ou du mois en cours. Si la valeur par défaut du paramètre du rapport est égale à **aujourd’hui** , votre abonnement peut utiliser une valeur de paramètre différente (par exemple, **semaine** ou **mois** ) pour produire un rapport contenant des chiffres hebdomadaires ou mensuels.  
+-   **Rapports à la demande.**  Pour un rapport à la demande, vous pouvez spécifier une valeur de paramètre différente de la valeur publiée pour chaque paramètre listé pour le rapport. Prenons l'exemple d'un rapport Service d'appel qui utilise un paramètre *Période* pour retourner les demandes du service client de la journée, de la semaine ou du mois en cours. Si la valeur par défaut du paramètre du rapport est égale à **aujourd’hui**, votre abonnement peut utiliser une valeur de paramètre différente (par exemple, **semaine** ou **mois**) pour produire un rapport contenant des chiffres hebdomadaires ou mensuels.  
   
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -2,18 +2,18 @@
 title: Séparer les rapports des modèles dans Power BI Desktop
 description: Conseils pour séparer les rapports des modèles dans Power BI Desktop.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 04/11/2020
-ms.author: v-pemyer
-ms.openlocfilehash: f2b9ee2093889fc9a60d621ad09b3b52d2e90474
-ms.sourcegitcommit: d153cfc0ce559480c53ec48153a7e131b7a31542
+ms.openlocfilehash: a45299015883615b4773fe5db1c9864e01a47c4b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91525935"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418352"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Séparer les rapports des modèles dans Power BI Desktop
 
@@ -37,7 +37,7 @@ Il est logique de séparer le développement du modèle et du rapport dans des f
 - Les modélisateurs des données et les auteurs des rapports sont des personnes différentes.
 - Il est entendu qu’un modèle sera la source de plusieurs rapports, maintenant ou ultérieurement.
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Un fichier unique contient un modèle et un rapport, développés par la même personne." border="true":::
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="Il existe trois fichiers PBIX. Le premier contient uniquement un modèle. Les deux autres contiennent uniquement des rapports, qui se connectent en direct au modèle hébergé dans le service Power BI. Les rapports sont développés par différentes personnes." border="true":::
 
 Les modélisateurs de données peuvent toujours utiliser la solution de création de rapports Power BI Desktop pour tester et valider leurs conceptions de modèles. Toutefois, juste après la publication de leur fichier dans le service Power BI, ils doivent supprimer le rapport de l’espace de travail. Ils doivent veiller à supprimer le rapport chaque fois qu’ils republient et remplacent le jeu de données.
 

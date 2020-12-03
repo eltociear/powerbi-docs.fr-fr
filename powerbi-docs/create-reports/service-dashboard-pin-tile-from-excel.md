@@ -2,20 +2,20 @@
 title: Guide pratique pour épingler une vignette à un tableau de bord Power BI à partir d’Excel
 description: Épinglez une vignette à un tableau de bord Power BI à partir d’Excel dans OneDrive Entreprise. Épingler des plages, des graphiques, des tableaux
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/02/2018
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2e47a09437bacfc905258bd6e23e82ff5554225
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b62a780bc504c0b2fc90aa368d8dc30ac745867e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85219295"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417402"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  

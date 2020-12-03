@@ -1,22 +1,22 @@
 ---
 title: Fondamentaux pour les concepteurs dans le service Power BI
 description: Capacités, espaces de travail, tableaux de bord, rapports, classeurs, jeux de données et dataflows du service Power BI.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 11/14/2019
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e4618988f743ba25795a2a3c3a0a55be1d80c6f
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 8da3446814d2c356acb24100eaa03df23be8f567
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397159"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416781"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
@@ -45,7 +45,7 @@ Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abo
 
 
 ## <a name="power-bi-concepts"></a>Concepts Power BI
-Les cinq principaux blocs de construction de Power BI sont les : *tableaux de bord* , *rapports* , *classeurs* , *jeux de données* et *dataflows*. Ils sont tous organisés en *espaces de travail* et ils sont créés sur des *capacités*.  Il est important de bien comprendre les capacités et espaces de travail avant d’étudier les cinq principaux blocs de construction. Nous allons donc commencer par cela.
+Les cinq principaux blocs de construction de Power BI sont les : *tableaux de bord*, *rapports*, *classeurs*, *jeux de données* et *dataflows*. Ils sont tous organisés en *espaces de travail* et ils sont créés sur des *capacités*.  Il est important de bien comprendre les capacités et espaces de travail avant d’étudier les cinq principaux blocs de construction. Nous allons donc commencer par cela.
 
 ## <a name="capacities"></a>Capacités
 Les capacités sont un concept fondamental de Power BI ; elles représentent un ensemble de ressources (stockage, processeur et mémoire) utilisées pour héberger et distribuer du contenu Power BI. Les capacités sont _partagées_ ou _dédiées_. Une capacité partagée l’est entre d’autres clients Microsoft, tandis qu’une capacité dédiée est entièrement consacrée à un seul client. Les capacités dédiées nécessitent un [abonnement](../admin/service-premium-what-is.md) et sont décrites en détail dans l’article [Gestion des capacités Premium](../admin/service-premium-capacity-manage.md).
@@ -61,7 +61,7 @@ Il existe deux types d’espaces de travail : *Mon espace de travail* et les *e
 
 -  Les *espaces de travail* permettent de collaborer et de partager du contenu avec vos collègues. Vous pouvez ajouter des collègues à vos espaces de travail et collaborer sur des tableaux de bord, rapports, classeurs et jeux de données. Avec une exception, tous les membres de l’espace de travail doivent disposer de licences Power BI Pro. En savoir plus sur les [nouveaux espaces de travail](../collaborate-share/service-create-the-new-workspaces.md). 
 
-    Les espaces de travail sont également là où vous créez, publiez et gérez des *applications* pour votre organisation. Considérez les espaces de travail comme des zones intermédiaires et des conteneurs pour le contenu d’une application Power BI. Qu’est-ce qu’une *application*  ? Il s’agit d’une collection de tableaux de bord et de rapports destinés à fournir des mesures clés aux consommateurs de Power BI pour votre organisation. Les applications sont interactives mais les consommateurs ne peuvent pas les modifier. Les consommateurs de l’application, les collègues qui ont accès aux applications, ne doivent pas nécessairement avoir des licences Pro.  
+    Les espaces de travail sont également là où vous créez, publiez et gérez des *applications* pour votre organisation. Considérez les espaces de travail comme des zones intermédiaires et des conteneurs pour le contenu d’une application Power BI. Qu’est-ce qu’une *application* ? Il s’agit d’une collection de tableaux de bord et de rapports destinés à fournir des mesures clés aux consommateurs de Power BI pour votre organisation. Les applications sont interactives mais les consommateurs ne peuvent pas les modifier. Les consommateurs de l’application, les collègues qui ont accès aux applications, ne doivent pas nécessairement avoir des licences Pro.  
 
 Pour en savoir plus sur le partage en général, commencez par [Méthodes pour partager votre travail via des tableaux de bord](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -70,7 +70,7 @@ Pour en savoir plus sur le partage en général, commencez par [Méthodes pour p
 ## <a name="dataflows"></a>Dataflows
 Un *dataflow* aide les organisations à unifier les données à partir de sources disparates. Ils sont facultatifs et sont souvent utilisés dans des projets complexes ou de plus grande taille. Elles représentent les données préparées et prédéfinies pour une utilisation par des jeux de données. Toutefois, ils ne peuvent pas être utilisés directement comme source pour la création de rapports. Ils tirent parti de la collection complète de connecteurs de données Microsoft, ce qui permet l’ingestion de données à partir de sources de données locales et basées sur le cloud.
 
-Les dataflows sont créés et gérés uniquement dans des espaces de travail (mais pas dans *mon espace de travail* ) et ils sont stockés sous forme d’entités dans le modèle de données commun (CDM) de Azure Data Lake Storage Gen2. Ils sont généralement planifiés pour s’actualiser sur une base récurrente et stocker les données à jour. Ils sont idéaux pour la préparation des données à utiliser (et la réutilisation potentielle) par vos jeux de données. Pour plus d’informations, consultez l’article [Préparation des données en libre-service dans Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md).
+Les dataflows sont créés et gérés uniquement dans des espaces de travail (mais pas dans *mon espace de travail*) et ils sont stockés sous forme d’entités dans le modèle de données commun (CDM) de Azure Data Lake Storage Gen2. Ils sont généralement planifiés pour s’actualiser sur une base récurrente et stocker les données à jour. Ils sont idéaux pour la préparation des données à utiliser (et la réutilisation potentielle) par vos jeux de données. Pour plus d’informations, consultez l’article [Préparation des données en libre-service dans Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
 Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous pouvez par contre avoir des tableaux de bord et des rapports vides, mais ils ne sont pas utiles tant qu’ils ne contiennent pas de données). Pour commencer, intéressons-nous aux **jeux de données**.
 
@@ -93,7 +93,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail « Vent
 
 Pour vous [connecter à un jeu de données ou en importer un](../connect-data/service-get-data.md), sélectionnez **Obtenir des données** au bas du volet de navigation. Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
 
-Les jeux de données ajoutés par un membre de cet espace de travail sont accessibles pour les autres membres de l’espace de travail avec un rôle *administrateur* , *membre* ou *contributeur*.
+Les jeux de données ajoutés par un membre de cet espace de travail sont accessibles pour les autres membres de l’espace de travail avec un rôle *administrateur*, *membre* ou *contributeur*.
 
 Les jeux de données peuvent être actualisés, renommés, explorés et supprimés. Utilisez un jeu de données pour créer un rapport à partir de zéro ou en exécutant [Informations rapides](../create-reports/service-insights.md).  Pour afficher les rapports et les tableaux de bord qui utilisent déjà un jeu de données, sélectionnez **Afficher les éléments associés**. Pour explorer un jeu de données, sélectionnez-le. En agissant ainsi, vous ouvrez le jeu de données dans l’éditeur de rapport, ce qui vous permet de vous pencher concrètement sur les données en créant des visualisations.
 
@@ -109,7 +109,7 @@ Intéressons-nous à présent à la rubrique suivante : les rapports.
 ## <a name="reports"></a>Rapports
 Un rapport Power BI correspond à une ou plusieurs pages de visualisations comme des graphiques en courbes, des cartes et des treemaps. Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Vous pouvez créer des rapports de toute pièce dans Power BI, les importer avec les tableaux de bord que des collègues partagent avec vous, ou Power BI peut les créer automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données et d’applications SaaS.  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
 
-Il existe deux modes d’affichage et d’interaction pour les rapports : *Mode Lecture* et *mode Édition*. Lorsque vous ouvrez un rapport, celui-ci s’ouvre en mode Lecture. Si vous disposez des autorisations de modification, vous voyez **Modifier le rapport** dans le coin supérieur gauche, et vous pouvez afficher le rapport en mode Édition.  Si un rapport se trouve dans un espace de travail, toute personne disposant d'un rôle *administrateur* , *membre* ou *contributeur* peut le modifier. Ces personnes ont accès à toutes les fonctionnalités d’exploration, de conception, de création et de partage du mode Édition pour ce rapport. Les personnes avec qui ils partagent le rapport peuvent l’explorer et interagir avec lui en mode Lecture.
+Il existe deux modes d’affichage et d’interaction pour les rapports : *Mode Lecture* et *mode Édition*. Lorsque vous ouvrez un rapport, celui-ci s’ouvre en mode Lecture. Si vous disposez des autorisations de modification, vous voyez **Modifier le rapport** dans le coin supérieur gauche, et vous pouvez afficher le rapport en mode Édition.  Si un rapport se trouve dans un espace de travail, toute personne disposant d'un rôle *administrateur*, *membre* ou *contributeur* peut le modifier. Ces personnes ont accès à toutes les fonctionnalités d’exploration, de conception, de création et de partage du mode Édition pour ce rapport. Les personnes avec qui ils partagent le rapport peuvent l’explorer et interagir avec lui en mode Lecture.
 
 Lorsque vous ouvrez un espace de travail, les rapports associés sont répertoriés sous l’onglet **Rapports**. Chaque rapport répertorié représente une ou plusieurs pages de visualisations basées sur un seul des jeux de données sous-jacents. Pour ouvrir un rapport, sélectionnez-le.
 
@@ -166,7 +166,7 @@ Il existe différentes manières de [partager un tableau de bord](../collaborate
 ## <a name="workbooks"></a>Classeurs
 Les classeurs sont un type spécial de jeu de données. Si vous avez lu la section **Jeux de données** ci-dessus, vous savez presque tout sur les classeurs. Mais vous vous demandez peut-être pourquoi Power BI considère parfois un classeur Excel comme un **jeu de données** et parfois comme un **classeur**.
 
-Lorsque vous utilisez **Obtenir des données** avec des fichiers Excel, vous avez la possibilité d’ *importer* un fichier ou de vous *connecter* au fichier. Lorsque vous choisissez Se connecter, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais, contrairement à Excel Online, vous disposez de caractéristiques utiles pour épingler des éléments directement de vos classeurs sur vos tableaux de bord.
+Lorsque vous utilisez **Obtenir des données** avec des fichiers Excel, vous avez la possibilité d’*importer* un fichier ou de vous *connecter* au fichier. Lorsque vous choisissez Se connecter, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais, contrairement à Excel Online, vous disposez de caractéristiques utiles pour épingler des éléments directement de vos classeurs sur vos tableaux de bord.
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous devez apporter des modifications, vous pouvez cliquer sur Modifier, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive.
 

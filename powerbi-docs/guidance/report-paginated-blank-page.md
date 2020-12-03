@@ -2,18 +2,18 @@
 title: Éviter les pages blanches lors de l’impression de rapports paginés
 description: Conseils pour la conception de rapports paginés afin d’éviter les pages vierges lors de l’impression.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: report-builder
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0fa886973105bdb4bc8a35f145168c1775ca12cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78920836"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418460"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Éviter les pages blanches lors de l’impression de rapports paginés
 
@@ -24,7 +24,7 @@ Cet article s’adresse à vous en tant qu’auteur de [rapports paginés](../pa
 Les propriétés de taille de page de rapport déterminent l’orientation, les dimensions et les marges de la page. Accédez à ces propriétés de rapport en procédant comme suit :
 
 - À l’aide de la **page de propriétés** du rapport : Cliquez avec le bouton droit sur la zone gris foncé à l’extérieur du canevas du rapport, puis sélectionnez _Propriétés du rapport_.
-- À l’aide du volet [**Propriétés** ](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Cliquez sur la zone gris foncé à l’extérieur du canevas du rapport pour sélectionner l’objet de rapport. Assurez-vous que le volet **Propriétés** est affiché.
+- À l’aide du volet [**Propriétés**](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Cliquez sur la zone gris foncé à l’extérieur du canevas du rapport pour sélectionner l’objet de rapport. Assurez-vous que le volet **Propriétés** est affiché.
 
 La page **Mise en page** de la **page des propriétés** du rapport fournit une interface conviviale pour afficher et mettre à jour les propriétés de mise en page.
 

@@ -1,21 +1,21 @@
 ---
 title: Graphiques en cascade dans Power BI
 description: Graphiques en cascade dans Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 12/5/2019
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ce3c52774326bd9fc66fecde7496fefb1cf6888c
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 1a651afd0aee0777f8f4c945f208eec8c46db047
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412116"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416666"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 
@@ -62,7 +62,7 @@ Vous allez créer un graphique en cascade qui affiche un écart sur les ventes (
 
 ### <a name="build-the-waterfall-chart"></a>Générer un graphique en cascade
 
-1. Dans le volet **Champs** , sélectionnez **Ventes** > **Écart sur volume des ventes totales**.
+1. Dans le volet **Champs**, sélectionnez **Ventes** > **Écart sur volume des ventes totales**.
 
    ![Capture d’écran du menu Sales (Ventes) > Total Sales Variance (Écart sur volume des ventes totales) sélectionné et du visuel qui en résulte.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
@@ -78,7 +78,7 @@ Vous allez créer un graphique en cascade qui affiche un écart sur les ventes (
 
 1. Vérifiez que Power BI trie le graphique en cascade dans l’ordre chronologique par mois. En haut à droite du graphique, sélectionnez **Autres options** (...).
 
-    Pour cet exemple, sélectionnez **Trier par** , puis choisissez **FiscalMonth** (MoisFiscal). Un indicateur jaune à côté de votre sélection indique que l’option de sélection est appliquée.
+    Pour cet exemple, sélectionnez **Trier par**, puis choisissez **FiscalMonth** (MoisFiscal). Un indicateur jaune à côté de votre sélection indique que l’option de sélection est appliquée.
 
     ![Sélectionnez Trier par > MoisFiscal](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
     
@@ -104,7 +104,7 @@ Approfondissez un peu plus pour voir ce qui contribue le plus aux changements mo
 
     Supposons que nous ne nous intéressons qu’aux deux premiers contributeurs.
 
-1. Dans le volet **Mise en forme** , sélectionnez **Répartition** , puis définissez **Décompositions maximales** sur  **2**.
+1. Dans le volet **Mise en forme**, sélectionnez **Répartition**, puis définissez **Décompositions maximales** sur **2**.
 
     ![Format > Décomposition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 

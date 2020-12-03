@@ -2,19 +2,19 @@
 title: Utiliser et gérer des agrégations dans Power BI Desktop
 description: Utilisez des agrégations pour effectuer une analyse interactive de Big Data dans Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 02/14/2020
-ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ffa26c0999857df1b249d2866eb5f327e600a82
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: a6adf2136cbff1df6e673de16fd1673127df0192
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600332"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416298"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Utiliser des agrégations dans Power BI Desktop
 

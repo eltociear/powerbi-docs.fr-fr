@@ -2,23 +2,23 @@
 title: Se connecter à Insights IA dans Power BI Desktop
 description: Se connecter et utiliser facilement les données d’Insights IA dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 06/10/2020
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8de033c673d9d08833fdc5a935b92490db369104
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: a3654bc77ebdbd41ef608378157bf0d24bb94c88
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396745"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416114"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop"></a>Utiliser Insights IA dans Power BI Desktop
 
-Dans Power BI, vous pouvez utiliser Insights IA pour accéder à une collection de modèles d'apprentissage machine préformés qui améliorent la préparation de vos données. Insights IA est accessible dans l'éditeur **Power Query** , et ses fonctionnalités et fonctions associées sont accessibles via les onglets **Accueil** et **Ajouter une colonne** dans l’ **éditeur Power Query**. 
+Dans Power BI, vous pouvez utiliser Insights IA pour accéder à une collection de modèles d'apprentissage machine préformés qui améliorent la préparation de vos données. Insights IA est accessible dans l'éditeur **Power Query**, et ses fonctionnalités et fonctions associées sont accessibles via les onglets **Accueil** et **Ajouter une colonne** dans l’**éditeur Power Query**. 
 
 ![Emplacement d’Insights IA dans le ruban](media/desktop-ai-insights/ai-insights-00.png)
 
@@ -26,7 +26,7 @@ Cet article décrit les fonctions Analyse de texte et Vision, toutes deux dispon
 
 ## <a name="how-to-enable-ai-insights"></a>Comment activer Insights IA
 
-Les Insights IA ont été mises à la disposition générale dans la version de juin 2020 de Power BI Desktop. Pour les versions antérieures de Power BI Desktop, les Insights IA dans Power BI doivent être activées en sélectionnant **Fichier > Options et paramètres > Options** , puis **Fonctionnalités en préversion** dans la colonne de gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
+Les Insights IA ont été mises à la disposition générale dans la version de juin 2020 de Power BI Desktop. Pour les versions antérieures de Power BI Desktop, les Insights IA dans Power BI doivent être activées en sélectionnant **Fichier > Options et paramètres > Options**, puis **Fonctionnalités en préversion** dans la colonne de gauche. Le volet droit affiche une sélection **Navigateur de fonctions Insights IA**. Cochez la case en regard de **Navigateur de fonctions Insights IA** pour activer la fonctionnalité en préversion. Vous devez redémarrer Power BI Desktop pour appliquer la fonctionnalité en préversion.
 
 > [!NOTE]
 > Les Insights IA sont généralement disponibles pour toutes les versions de Power BI Desktop à partir de la version de juin 2020, et pour ces versions, il n’est pas nécessaire d’activer cette fonctionnalité en tant que fonctionnalité en préversion.
@@ -91,7 +91,7 @@ Cette fonction requiert une URL de l’image ou un champ de base de données 64�
 
 ### <a name="invoking-text-analytics-or-vision-functions-in-power-query"></a>Appel des fonctions Analyse de texte ou Vision dans Power Query
 
-Pour enrichir vos données avec les fonctions Analyse de texte ou Vision, ouvrez l’ **éditeur Power Query**. Cet exemple montre comment noter le sentiment d'un texte. Les mêmes étapes peuvent être utilisées pour extraire des phrases clés, détecter la langue et baliser des images.
+Pour enrichir vos données avec les fonctions Analyse de texte ou Vision, ouvrez l’**éditeur Power Query**. Cet exemple montre comment noter le sentiment d'un texte. Les mêmes étapes peuvent être utilisées pour extraire des phrases clés, détecter la langue et baliser des images.
 
 Sélectionnez le bouton **Analytique de texte** dans le ruban **Accueil** ou **Ajouter une colonne**. Vous serez invité à vous connecter.
 

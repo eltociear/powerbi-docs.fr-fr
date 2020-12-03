@@ -2,18 +2,18 @@
 title: Sources de données de rapport Power BI dans Power BI Report Server
 description: Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/29/2020
-ms.author: maggies
-ms.openlocfilehash: 52d38fd0705a6f9335f0ddd965acb0d9f56d38ee
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 37b44df504d0263324186765d8426584288f005e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045076"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417977"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services. Certaines sources de données sont disponibles dans Power BI Desktop, optimisées pour Power BI Report Server, mais ne sont pas prises en charge lors de la publication dans Power BI Report Server.

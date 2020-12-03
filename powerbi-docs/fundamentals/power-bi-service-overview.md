@@ -1,20 +1,20 @@
 ---
 title: Qu’est-ce que le service Power BI ?
 description: Vue d’ensemble du service Power BI et de la façon dont il s’intègre aux autres parties de Power BI.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 featuredvideoid: B2vd4MQrz4M
 ms.topic: overview
 ms.date: 09/05/2019
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 818c101ae62c9c9a0fbd755dfa996aec10f3e3e5
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 02c274ab3e07c37797e5433aeb01a787934800fd
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361885"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416689"
 ---
 # <a name="what-is-the-power-bi-service"></a>Qu’est-ce que le service Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui fonctionnent ensemble pour permettre de créer, partager et consommer des insights métier de façon optimale selon vos besoins et ceux de votre entreprise. Le *service* Microsoft Power BI (app.powerbi.com), parfois appelé Power BI en ligne, est la partie SaaS (*logiciel en tant que service*) de Power BI. Dans le service Power BI, les *tableaux de bord* vous permettent de prendre le pouls de votre activité à tout moment. Les tableaux de bord contiennent des *vignettes* que vous pouvez sélectionner pour ouvrir des *rapports* plus détaillés. Les tableaux de bord et les rapports se connectent à des *jeux de données* qui rassemblent au même endroit toutes les données pertinentes. 

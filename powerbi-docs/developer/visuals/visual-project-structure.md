@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
+ms.topic: conceptual
 ms.date: 01/12/2020
-ms.openlocfilehash: 74fec4e7fae2fc8630592c435adb42b34c93ef43
-ms.sourcegitcommit: 50b21718a167c2b131313b4135c8034c6f027597
+ms.openlocfilehash: df7a2909e3ccd745fdaa990ba5281a723ef6360d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92049358"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416712"
 ---
 # <a name="power-bi-visual-project-structure"></a>Structure de projets de visuels Power BI
 
@@ -48,7 +48,7 @@ project
 
 ## <a name="folder-and-file-description"></a>Description des dossiers et fichiers
 
-Cette section fournit des informations pour chaque dossier et fichier du répertoire créés par l’outil des visuels**pbiciz** Power BI.  
+Cette section fournit des informations pour chaque dossier et fichier du répertoire créés par l’outil des visuels **pbiciz** Power BI.  
 
 ### <a name="vscode"></a>.vscode
 

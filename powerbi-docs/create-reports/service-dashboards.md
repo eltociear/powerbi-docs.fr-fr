@@ -2,19 +2,19 @@
 title: Introduction aux tableaux de bord pour les concepteurs Power BI
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI. Un tableau de bord est une page unique, souvent appelée canevas, qui raconte une histoire au moyen de visualisations.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 09/19/2019
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a9aa24145fc07841bc14980cb2ba02a4b45400a2
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 092ce10b527c6160cb27de5e3de0ed5852219f6a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85238334"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417287"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 

@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
+ms.topic: tutorial
 ms.date: 09/02/2020
-ms.openlocfilehash: 6c4b39fff9513143c946cc2e92294ae4cbe81427
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: ff73c07fb08e80938fae34c19205885722c33672
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397458"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418713"
 ---
 # <a name="tutorial-develop-a-power-bi-circle-card-visual"></a>Tutoriel : Développement d’un visuel de carte ronde Power BI
 
@@ -88,7 +88,7 @@ Vous pouvez également utiliser votre propre rapport pour tester les visuels de 
     >[!div class="mx-imgBorder"]
     >![Capture d’écran du bouton Nouvelle page dans le service Power BI.](media/develop-circle-card/new-page.png)
 
-4. Dans le volet **Visualisations** , sélectionnez **Visuel de développeur**.
+4. Dans le volet **Visualisations**, sélectionnez **Visuel de développeur**.
 
     >[!div class="mx-imgBorder"]
     >![Capture d’écran du visuel de développeur dans le volet Visualisations.](media/develop-circle-card/developer-visual.png)
@@ -107,7 +107,7 @@ Vous pouvez également utiliser votre propre rapport pour tester les visuels de 
     >
     >![Capture d’écran du nouveau visuel affichant une erreur de connexion.](media/develop-circle-card/connection-error.png)
 
-6. Lorsque le nouveau visuel est sélectionné, accédez au volet **Champs** , développez **Sales** , puis sélectionnez **Quantity**.
+6. Lorsque le nouveau visuel est sélectionné, accédez au volet **Champs**, développez **Sales**, puis sélectionnez **Quantity**.
 
     >[!div class="mx-imgBorder"]
     >![Capture d’écran du champ Quantity du service Power BI de la table Sales dans le rapport US Sales Analysis.](media/develop-circle-card/fields-sales-quantity.png)
@@ -128,9 +128,9 @@ Dans cette section, vous allez apprendre à transformer votre visuel en cercle e
 
 Configurez le fichier **visual.ts** en supprimant et en ajoutant quelques lignes de code.
 
-1. Ouvrez votre projet dans VS Code ( **Fichier** > **Ouvrir le dossier** ).
+1. Ouvrez votre projet dans VS Code (**Fichier** > **Ouvrir le dossier**).
 
-2. Dans le **volet Explorer** , développez le dossier **src** , puis sélectionnez le fichier **visual.ts**.
+2. Dans le **volet Explorer**, développez le dossier **src**, puis sélectionnez le fichier **visual.ts**.
 
     >[!div class="mx-imgBorder"]
     >![Capture d’écran de l’accès au fichier visual.ts dans VS Code.](media/develop-circle-card/visual-file.png)
@@ -151,7 +151,7 @@ Configurez le fichier **visual.ts** en supprimant et en ajoutant quelques lignes
 
     * Toutes les lignes de code à l’intérieur de la méthode *update*.
 
-    * Toutes les lignes de code restantes sous la méthode *update* , y compris les méthodes *parseSettings* et *enumerateObjectInstances*.
+    * Toutes les lignes de code restantes sous la méthode *update*, y compris les méthodes *parseSettings* et *enumerateObjectInstances*.
 
 4. À la fin de la section import, ajoutez les lignes de code suivantes :
 
@@ -171,7 +171,7 @@ Configurez le fichier **visual.ts** en supprimant et en ajoutant quelques lignes
         >[!NOTE]
         >Si vous n’avez pas installé cette bibliothèque dans le cadre de votre installation, [installez la bibliothèque JavaScript D3](environment-setup.md#d3-javascript-library).
 
-5. Sous la déclaration de classe *Visual* , insérez les propriétés de classe suivantes. Il vous suffit d’ajouter les lignes de code commençant par `private`.
+5. Sous la déclaration de classe *Visual*, insérez les propriétés de classe suivantes. Il vous suffit d’ajouter les lignes de code commençant par `private`.
 
     ```typescript
     export class Visual implements IVisual {
@@ -363,7 +363,7 @@ export class Visual implements IVisual {
 
 Supprimez les lignes de code inutiles du fichier de fonctionnalités.
 
-1. Ouvrez votre projet dans VS Code ( **Fichier** > **Ouvrir le dossier** ).
+1. Ouvrez votre projet dans VS Code (**Fichier** > **Ouvrir le dossier**).
 
 2. Sélectionnez le fichier **capabilities.json**.
 
@@ -398,7 +398,7 @@ Vérifiez que le visuel affiche les éléments qui viennent d’être ajoutés.
     >![Capture d’écran de la carte ronde mise en forme en tant que cercle.](media/develop-circle-card/circle.png)
 
     >[!NOTE]
-    >Si le visuel n’affiche rien, à partir du **volet Champs** , faites glisser le champ **Quantité** dans le visuel de développeur.
+    >Si le visuel n’affiche rien, à partir du **volet Champs**, faites glisser le champ **Quantité** dans le visuel de développeur.
 
 3. Redimensionnez le visuel.
 
@@ -433,7 +433,7 @@ Modifiez le fichier **capabilities.json** pour définir le rôle des données et
 
     2. Supprimez tout le contenu à l’intérieur du tableau **dataRoles** (lignes 3-12).
 
-    3. À l’intérieur du tableau **dataRoles** , insérez le code suivant.
+    3. À l’intérieur du tableau **dataRoles**, insérez le code suivant.
 
         ```json
         {
@@ -492,7 +492,7 @@ Vérifiez que le visuel de carte ronde affiche le champ *measure* et passez en r
     >[!div class="mx-imgBorder"]
     >![Capture d’écran de l’illustration de la valeur telle qu’elle est affichée dans l’option Afficher le Dataview de la carte ronde.](media/develop-circle-card/value.png)
 
-5. Développez **metadata** , puis le tableau **columns** et passez en revue les valeurs **format** et **displayName**.
+5. Développez **metadata**, puis le tableau **columns** et passez en revue les valeurs **format** et **displayName**.
 
     >[!div class="mx-imgBorder"]
     >![Capture d’écran des valeurs de format et de nom d’affichage comme indiqué dans l’option Afficher le Dataview de la carte ronde.](media/develop-circle-card/colunms.png)
@@ -501,7 +501,7 @@ Vérifiez que le visuel de carte ronde affiche le champ *measure* et passez en r
 
 ### <a name="configure-the-visual-to-consume-data"></a>Configurer le visuel pour consommer des données
 
-Apportez des modifications au fichier **visual.ts** , afin que le visuel de carte ronde puisse consommer des données.
+Apportez des modifications au fichier **visual.ts**, afin que le visuel de carte ronde puisse consommer des données.
 
 1. Ouvrez le fichier **visual.ts** dans VS Code.
 
@@ -511,7 +511,7 @@ Apportez des modifications au fichier **visual.ts** , afin que le visuel de cart
     import DataView = powerbi.DataView;
     ```
 
-3. Dans la méthode *update* , procédez comme suit :
+3. Dans la méthode *update*, procédez comme suit :
 
     * Ajoutez l’instruction suivante en tant que première instruction. L’instruction assigne *dataView* à une variable pour un accès facile et déclare la variable pour référencer l’objet *dataView*.
 

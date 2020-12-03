@@ -2,17 +2,17 @@
 title: Utiliser le langage naturel pour explorer vos données à l’aide de Questions et réponses dans Power BI
 description: Comment utiliser les questions et réponses Power BI pour explorer vos données et créer des visualisations à l’aide du langage naturel pour les requêtes.
 author: mohaali
+ms.author: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 07/01/2020
-ms.author: mohaali
-ms.openlocfilehash: d9339c0005f7f2af9fedd5cc5bfcce40469afb8c
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 71a78fe6b1af909079ca0a187ddb14d643c4e576
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749158"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416413"
 ---
 # <a name="intro-to-power-bi-qa"></a>Présentation de Questions et réponses dans Power BI
 

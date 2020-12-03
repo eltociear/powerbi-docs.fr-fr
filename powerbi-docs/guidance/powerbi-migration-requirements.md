@@ -2,22 +2,22 @@
 title: Collecter les exigences pour la migration vers Power BI
 description: Conseils sur la collecte et la hiérarchisation des exigences pour la migration vers Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 21d619c42648f90746af9961475bb531dc24d5ab
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 2aee1be1d5e221f8feaeae05f8284f0388b4b8af
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94396653"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418552"
 ---
 # <a name="gather-requirements-to-migrate-to-power-bi"></a>Collecter les exigences pour la migration vers Power BI
 
-Cet article décrit l’ **étape 1** , qui concerne la collecte et la hiérarchisation des exigences pour la migration vers Power BI.
+Cet article décrit l’**étape 1**, qui concerne la collecte et la hiérarchisation des exigences pour la migration vers Power BI.
 
 :::image type="content" source="media/powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Image illustrant les étapes d’une migration vers Power BI. Cet article se concentre sur l’étape 1.":::
 
@@ -46,12 +46,12 @@ Rassemblez des informations complètes et faciles à renseigner sur les rapports
 - **Mode d’utilisation du rapport par les consommateurs :** passez du temps auprès des consommateurs du rapport existant pour comprendre les usages qu’ils en font. Cela vous permet de voir si certains éléments du rapport pourraient être éliminés ou améliorés dans la nouvelle version de Power BI. Ce processus prend plus de temps, mais cet investissement vaut le coup pour les rapports critiques ou les rapports fréquemment utilisés.
 - **Propriétaire et expert technique :** identifiez le propriétaire du rapport et tous les experts techniques en lien avec le domaine du rapport ou des données. Ces experts sont susceptibles de devenir ultérieurement les propriétaires des nouveaux rapports Power BI. Prenez en compte les exigences propres à la gestion des changements (qui diffèrent généralement entre les solutions gérées par le service informatique et celles gérées par l’entreprise), ainsi que les approbations et les validations, qui seront nécessaires pour apporter des modifications plus tard.
 - **Méthode de livraison du contenu :** clarifiez les attentes des consommateurs du rapport en ce qui concerne la livraison du contenu. Il peut s’agir d’une exécution interactive, à la demande, incorporée dans une application personnalisée, ou d’une livraison planifiée avec un abonnement par e-mail. Il peut également y avoir des exigences pour le déclenchement des notifications d’alerte.
-- **Besoins d’interactivité :** déterminez les exigences d’interactivité _impératives_ et _souhaitables_ , comme les filtres, l’exploration ou l’extraction.
+- **Besoins d’interactivité :** déterminez les exigences d’interactivité _impératives_ et _souhaitables_, comme les filtres, l’exploration ou l’extraction.
 - **Sources de données :** assurez-vous que toutes les sources de données requises par le rapport sont connues et que les besoins en matière de latence des données (actualisation des données) sont évalués. Identifiez les exigences relatives aux données historiques, aux tendances et aux instantanés de données pour chaque rapport afin qu’elles soient alignées sur les exigences propres aux données. La documentation des sources de données peut également s’avérer utile plus tard, au moment de la validation des données d’un nouveau rapport avec ses données sources.
 - **Exigences de sécurité :** clarifiez les exigences de sécurité (par exemple, les liseurs autorisés, les éditeurs autorisés et les besoins de sécurité au niveau des lignes), y compris les exceptions à la sécurité habituelle de l’organisation. Documentez les exigences relatives au niveau de sensibilité des données, à la confidentialité des données ou à la réglementation/conformité.
 - **Calculs, indicateurs de performance clés et règles métier :** identifiez et documentez l’ensemble des calculs, des indicateurs de performance clés et des règles métier actuellement définis dans le rapport existant afin qu’ils soient alignés sur les exigences propres aux données.
 - **Exigences en matière de convivialité, de disposition et d’apparence :** identifiez les exigences de convivialité, de disposition et d’apparence en lien avec les exigences de visualisation, de regroupement et de tri des données, et la visibilité conditionnelle. Incluez les considérations particulières pour la livraison sur les appareils mobiles.
-- **Exigences relatives à l’impression et l’exportation :** déterminez s’il existe des exigences spécifiques pour l’impression, l’exportation ou le rendu parfait des pixels. Ces exigences conditionnent le type de rapport qui sera le plus approprié (par exemple, un rapport Power BI, Excel ou paginé). N’oubliez pas que les consommateurs de rapports ont tendance à attacher beaucoup d’importance à leurs habitudes de travail. N’ayez donc pas peur de remettre en question leurs modes de pensée. Parlez-leur d’ _améliorations_ plutôt que de _changements_.
+- **Exigences relatives à l’impression et l’exportation :** déterminez s’il existe des exigences spécifiques pour l’impression, l’exportation ou le rendu parfait des pixels. Ces exigences conditionnent le type de rapport qui sera le plus approprié (par exemple, un rapport Power BI, Excel ou paginé). N’oubliez pas que les consommateurs de rapports ont tendance à attacher beaucoup d’importance à leurs habitudes de travail. N’ayez donc pas peur de remettre en question leurs modes de pensée. Parlez-leur d’_améliorations_ plutôt que de _changements_.
 - **Risques ou préoccupations :** déterminez s’il existe d’autres exigences techniques ou opérationnelles pour les rapports, ou des risques ou des préoccupations quant aux informations présentées dans les rapports.
 - **Problèmes ouverts et éléments du backlog :** identifiez les opérations de maintenance futures, les problèmes connus ou les demandes différées à ajouter au backlog à ce stade.
 
@@ -65,7 +65,7 @@ Rassemblez des informations détaillées sur les données, comme celles-ci :
 - **Requêtes existantes :** déterminez s’il existe des requêtes de rapport ou des procédures stockées qui peuvent être utilisées par un [modèle DirectQuery](../connect-data/desktop-use-directquery.md) ou un [modèle Composite](../transform-model/desktop-composite-models.md), ou bien être converties en un modèle Import.
 - **Types de sources de données :** listez les types de sources de données requises, y compris les sources de données centralisées (par exemple, un entrepôt de données d’entreprise) et les sources de données non standard (comme les fichiers plats ou les fichiers Excel utilisés en complément des sources de données d’entreprise à des fins de création de rapports). Il est également important de localiser les sources de données pour assurer la connectivité de la [passerelle de données](../connect-data/service-gateway-onprem.md).
 - **Exigences en matière de structure et de nettoyage des données :** déterminez la structure de données pour chaque source de données requise et dans quelle mesure les activités de [nettoyage des données](../transform-model/desktop-query-overview.md) sont nécessaires.
-- **Intégration des données**  : déterminez comment gérer l’intégration des données en présence de sources de données multiples, et comment établir des [relations](../transform-model/desktop-create-and-manage-relationships.md) entre chaque table de modèle. Identifiez les éléments de données particuliers nécessaires pour simplifier le modèle et [réduire sa taille](import-modeling-data-reduction.md).
+- **Intégration des données** : déterminez comment gérer l’intégration des données en présence de sources de données multiples, et comment établir des [relations](../transform-model/desktop-create-and-manage-relationships.md) entre chaque table de modèle. Identifiez les éléments de données particuliers nécessaires pour simplifier le modèle et [réduire sa taille](import-modeling-data-reduction.md).
 - **Latence de données acceptable :** déterminez la latence de données requise pour chaque source de données. Cela conditionne les décisions concernant le [mode de stockage des données](../transform-model/desktop-storage-mode.md) à utiliser. La fréquence d’actualisation des données dans les tables du modèle Import est importante à connaître aussi.
 - **Volume de données et scalabilité :** évaluez le volume de données attendu, car cela impacte les décisions relatives à la [prise en charge de modèle de grande taille](../admin/service-premium-large-models.md) et à la conception de [modèles Composite](../transform-model/desktop-composite-models.md) ou DirectQuery. Les besoins en données historiques sont tout autant essentiels à connaître. Pour les jeux de données plus volumineux, il est également nécessaire de déterminer les règles d’[actualisation incrémentielle des données](../admin/service-premium-incremental-refresh.md).
 - **Mesures, indicateurs de performance clés et règles métier :** évaluez les besoins en ce qui concerne les mesures, les indicateurs de performance clés et les règles métier. Ils auront un impact sur les décisions concernant l’emplacement d’application de la logique : dans le jeu de données ou dans le processus d’intégration des données.

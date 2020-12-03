@@ -2,18 +2,18 @@
 title: Explorer les vignettes dans les applications mobiles Power BI
 description: Les vignettes sont des captures instantanées dynamiques de vos données qui sont épinglées dans un tableau de bord. En savoir plus sur l’interaction avec des vignettes dans les applications mobiles Power BI.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 1afde236dd4fc9698efe4391cb2d9e095ade37a4
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 74823845c73f02468d012c4518cdf111e84824c9
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683359"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417931"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -35,7 +35,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![Capture d’écran d’un graphique en courbes, montrant les valeurs sélectionnées pour les ventes de cette année et les ventes de l’année dernière.](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’ **août**.*  
+   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
    
    Dans un graphique en secteurs, appuyez sur un secteur du graphique pour afficher la valeur du segment en haut du graphique.  
    
@@ -73,7 +73,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    * Appuyer sur le graphique pour déplacer la barre dans un graphique en courbes, à barres, à colonnes ou en bulles, pour afficher les valeurs d’un point spécifique dans la visualisation.  
    * Appuyez sur l’icône de crayon ![icône de crayon](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) pour [annoter une vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), puis sur l’icône Partager un instantané ![icône Partager un instantané](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [la partager avec d’autres utilisateurs](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
    * Appuyez sur l’icône Ouvrir le rapport ![Icône Ouvrir le rapport dans Android.](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
-3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien**  ![icône de lien](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
+3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, quand vous appuyez sur les points de suspension verticaux ( **...** ), l’option **Ouvrir le lien** ![icône de lien](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) s’affiche :
    
     ![Capture d’écran d’un tableau de bord montrant les points de suspension verticaux pointant sur Ouvrir le lien.](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

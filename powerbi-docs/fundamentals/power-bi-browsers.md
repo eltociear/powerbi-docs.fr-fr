@@ -1,20 +1,20 @@
 ---
 title: Navigateurs pris en charge pour Power BI
 description: Afficher la liste des navigateurs qui prennent en charge Power BI
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 03/25/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 340a4739065716e67f9fd1a7d7b78f875805f12b
-ms.sourcegitcommit: 5bbe7725918a72919ba069c5f8a59e95453ec14c
+ms.openlocfilehash: 425a7561d33a96db7c9537a934d9707af6388f1e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94946906"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416735"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Navigateurs pris en charge pour Power BI
 

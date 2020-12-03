@@ -1,20 +1,20 @@
 ---
 title: 'Tutoriel : Bien démarrer avec la création dans le service Power BI'
 description: Bien démarrer avec le service en ligne Power BI (app.powerbi.com)
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 07/08/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: eeda30e5a075166af3718084c2c9f7737f876cbe
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 4e74bec243faad281c457caaa15a6edacf2b10cb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861104"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417126"
 ---
 # <a name="tutorial-get-started-creating-in-the-power-bi-service"></a>Tutoriel : Bien démarrer avec la création dans le service Power BI
 Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](power-bi-overview.md).

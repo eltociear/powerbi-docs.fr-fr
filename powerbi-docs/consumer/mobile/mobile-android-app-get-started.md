@@ -2,18 +2,18 @@
 title: Bien démarrer avec l’application mobile Power BI sur appareils Android
 description: Découvrez comment l’application mobile Android pour Microsoft Power BI apporte Power BI dans votre poche, avec un accès mobile aux informations métier locales et dans le cloud.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 06/06/2020
-ms.author: painbar
-ms.openlocfilehash: 941bd2adc63a06089ddf4fb79752557b8c688f71
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: d731651e85f8468038089f5d88e3e418f1a3c868
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90856803"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417770"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 

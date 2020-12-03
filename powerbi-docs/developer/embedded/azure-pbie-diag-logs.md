@@ -4,15 +4,16 @@ description: En savoir plus sur la configuration de la journalisation des diagno
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
-ms.service: power-bi-embedded
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: cc64338ed40fcdc6433fdcf231004b4946335c72
-ms.sourcegitcommit: 6bc66f9c0fac132e004d096cfdcc191a04549683
+ms.openlocfilehash: 4ab6a0d6135fcd2428df03e84596eebf6bba6704
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91748790"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417356"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 

@@ -2,19 +2,19 @@
 title: Optimiser un tableau de bord pour les téléphones mobiles - Power BI
 description: Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/18/2019
-ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: bc1c9987205e86ee9a123bf8ba9afd567c59ff52
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: b0bf14ec5229aae40ee4e3f43c65b6bef4a505ba
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264711"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417471"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
 Quand vous affichez les tableaux de bord en mode portrait sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour l’affichage en mode portrait sur les téléphones. Même si vous créez une vue téléphone, lorsque vous tournez le téléphone sur le côté, vous voyez le tableau de bord tel qu’il est disposé dans le service.

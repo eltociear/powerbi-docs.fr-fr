@@ -2,20 +2,20 @@
 title: Ajouter des liens hypertextes (URL) à une table ou à une matrice
 description: Cette rubrique explique comment ajouter des liens hypertextes (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertextes (URL) à un jeu de données. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertextes à vos matrices et tables de rapports.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/15/2020
-ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 824dc74d2461f9bbf6350694a48b00a327f3f13d
-ms.sourcegitcommit: 59d07be9c3e4a2067f6d42c3002a194371bc4341
+ms.openlocfilehash: c60c5824f20edd6d596d23fed56f8cdfaa19a01a
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116589"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418046"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Ajouter des liens hypertextes (URL) à une table ou à une matrice
 Cette rubrique explique comment ajouter des liens hypertextes (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertextes (URL) à un jeu de données. Vous pouvez ajouter des liens hypertextes à vos matrices et tables de rapports dans Power BI Desktop ou le service Power BI. Vous pouvez ensuite afficher l’URL ou une icône de lien, ou mettre en forme une autre colonne comme texte de lien.

@@ -1,20 +1,20 @@
 ---
 title: Types de visualisations dans Power BI
 description: Types de visualisations dans Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 24dce044cdd1c4eaef21f4d744ed672119241970
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 9f97db83f8793f251dc1d0d5c5b4133d7228022b
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412737"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418782"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -165,7 +165,7 @@ Pour plus d’informations, consultez [Visuels Questions et réponses dans Power
 ![Visuels R](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
 >[!TIP]
->Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R* , peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R. Des visuels R peuvent être créés dans Power BI Desktop et publiés dans le service Power BI.   
+>Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R. Des visuels R peuvent être créés dans Power BI Desktop et publiés dans le service Power BI.   
 
 Pour plus d’informations, consultez [Visuels R dans Power BI](service-r-visuals.md).
 

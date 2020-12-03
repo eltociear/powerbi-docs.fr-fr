@@ -2,19 +2,19 @@
 title: Créer et gérer des relations dans Power BI Desktop
 description: Créer et gérer des relations dans Power BI Desktop
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 05/28/2020
-ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 5b2e9cc5cb07eebf3befebd1be1686fdbb0f653b
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: f843d2642228c7fbf1394174fe4334a58f169e2f
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90861817"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415884"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses avec les données de toutes ces tables. Les relations entre ces tables sont nécessaires pour calculer des résultats précis et pour afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Vous pouvez cependant parfois être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -342,7 +342,7 @@ Il existe en fait ici deux relations :
 
  ![Exemple avec deux relations](media/desktop-create-and-manage-relationships/candmrel_activerelview.png)
 
-Si nous ajoutons les deux relations au modèle (**OpenedBy** en premier), la boîte de dialogue **Gérer les relations** indique que la relation **OpenedBy**est active :
+Si nous ajoutons les deux relations au modèle (**OpenedBy** en premier), la boîte de dialogue **Gérer les relations** indique que la relation **OpenedBy** est active :
 
  ![Relation OpenedBy active dans la boîte de dialogue Gérer les relations](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 

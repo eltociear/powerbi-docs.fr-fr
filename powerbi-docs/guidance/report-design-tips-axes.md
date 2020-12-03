@@ -2,19 +2,19 @@
 title: Conseils pour gérer les axes dans les rapports Power BI
 description: Huit conseils pour gérer efficacement les axes dans les visuels de rapports Power BI, dans Power BI Desktop ou dans le service Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 featuredvideoid: 3t9W7Xvpzo0
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 01/29/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 110aadce6bafd61b3c8b60a7370cedecf0d27ae0
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: f895ef50647f0755221b81205ba93547a2fdc4b2
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83278097"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419012"
 ---
 # <a name="tips-to-manage-axes-in-power-bi-reports"></a>Conseils pour gérer les axes dans les rapports Power BI
 

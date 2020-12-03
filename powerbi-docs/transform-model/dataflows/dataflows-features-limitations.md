@@ -2,19 +2,19 @@
 title: Limitations et restrictions des dataflows ; fonctionnalités et connecteurs pris en charge
 description: Vue d’ensemble de toutes les capacités des dataflows
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-dataflows
 ms.topic: how-to
 ms.date: 10/01/2020
-ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 2d58fe71b7ceb27afe5d52a55ed57ae162622b06
-ms.sourcegitcommit: bd133cb1fcbf4f6f89066165ce065b8df2b47664
+ms.openlocfilehash: 762a45dc48bd78ffebcbe68ef2f5ed216ec3cc51
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94668163"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96416091"
 ---
 # <a name="dataflows-limitations-and-considerations"></a>Considérations et limitations des dataflows
 

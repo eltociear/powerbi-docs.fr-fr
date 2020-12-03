@@ -1,21 +1,21 @@
 ---
 title: Visuels d’indicateur de performance clé (KPI)
 description: Créer des visuels d’indicateur de performance clé (KPI) dans Power BI
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/30/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f272a760c016fa0d5fcfc9849eaa2a01fc77b9f9
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 448115ea6cde6c85a7bd3386890f483d71882ad5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412856"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418920"
 ---
 # <a name="create-key-performance-indicator-kpi-visualizations"></a>Créer des visuels d’indicateur de performance clé (KPI)
 
@@ -59,7 +59,7 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
 Dans cet exemple, vous allez créer un indicateur de performance clé qui mesure votre progression réalisée en vue d’atteindre un objectif de vente.
 
-1. Dans le volet **Champs** , sélectionnez **Sales > This Year Sales (Ventes > Ventes de cette année)** .  Cette valeur servira d’indicateur.
+1. Dans le volet **Champs**, sélectionnez **Sales > This Year Sales (Ventes > Ventes de cette année)** .  Cette valeur servira d’indicateur.
 
 1. Ajoutez **Heure > MoisFiscal**.  Cette valeur représentera la tendance.
 
@@ -84,11 +84,11 @@ Dans cet exemple, vous allez créer un indicateur de performance clé qui mesure
 
 1. Vous pouvez aussi formater l’indicateur de performance clé en sélectionnant l’icône représentant un rouleau qui ouvre le volet de Mise en forme.
 
-    * **Indicateur**  : contrôle les unités d’affichage de l’indicateur et les décimales.
+    * **Indicateur** : contrôle les unités d’affichage de l’indicateur et les décimales.
 
-    * **Axe de tendance**  : quand il est **activé** , le visuel affiche l’axe de tendance en arrière-plan du visuel de l’indicateur de performance clé.  
+    * **Axe de tendance** : quand il est **activé**, le visuel affiche l’axe de tendance en arrière-plan du visuel de l’indicateur de performance clé.  
 
-    * **Objectifs**  : quand il est **activé** , le visuel affiche l’objectif et la distance restante pour atteindre l’objectif, sous forme de pourcentage.
+    * **Objectifs** : quand il est **activé**, le visuel affiche l’objectif et la distance restante pour atteindre l’objectif, sous forme de pourcentage.
 
     * **Code couleur > Direction** : certains indicateurs de performances clés sont considérés comme meilleurs pour des valeurs *plus élevées* et d’autres sont considérés comme meilleurs pour des valeurs *plus faibles*. Par exemple, les bénéfices par rapport au temps d’attente. De manière générale, une valeur plus élevée pour les bénéfices est mieux considérée qu’une valeur de temps d’attente élevée. Sélectionnez **Correct vers le haut** et modifiez éventuellement les paramètres de couleur.
 

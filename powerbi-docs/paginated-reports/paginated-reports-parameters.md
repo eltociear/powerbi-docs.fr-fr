@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 09/28/2020
-ms.openlocfilehash: 217c1b571c01068d64283df0b25b5e56bbc8b956
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 7d874f2c9a7b8381ece151a4ac113bed5662c2e7
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297213"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418161"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
 
@@ -40,13 +40,13 @@ L’illustration suivante montre le mode Design dans le Générateur de rapports
   
 1.  Ouvrez votre rapport paginé dans le Générateur de rapports Power BI.
 
-1. Dans le volet **Données de rapport** , cliquez avec le bouton droit le **Paramètres** nœud > **Ajouter un paramètre**. La boîte de dialogue **Propriétés du paramètre de rapport** s'ouvre.  
+1. Dans le volet **Données de rapport**, cliquez avec le bouton droit le **Paramètres** nœud > **Ajouter un paramètre**. La boîte de dialogue **Propriétés du paramètre de rapport** s'ouvre.  
   
-2.  Dans **Nom** , tapez un nom pour le paramètre ou acceptez le nom par défaut.  
+2.  Dans **Nom**, tapez un nom pour le paramètre ou acceptez le nom par défaut.  
   
-3.  Dans **Invite** , tapez le texte devant apparaître en regard de la zone de texte du paramètre lorsque l’utilisateur exécute le rapport.  
+3.  Dans **Invite**, tapez le texte devant apparaître en regard de la zone de texte du paramètre lorsque l’utilisateur exécute le rapport.  
   
-4.  Dans **Type de données** , sélectionnez le type de données pour la valeur du paramètre.  
+4.  Dans **Type de données**, sélectionnez le type de données pour la valeur du paramètre.  
   
 5.  Si le paramètre peut contenir une valeur vide, sélectionnez **Autoriser une valeur vide**.  
   

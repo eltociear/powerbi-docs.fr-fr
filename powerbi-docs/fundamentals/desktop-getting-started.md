@@ -2,20 +2,20 @@
 title: Bien démarrer avec Power BI Desktop
 description: Bien démarrer avec Power BI Desktop.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: contperfq1
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-fundamentals
 ms.topic: tutorial
 ms.date: 08/19/2020
-ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ec18bb94d7329d4b918f16465dd839a69c3fd973
-ms.sourcegitcommit: f73ea4b9116ad186817ec5cc5d5f487d49cc0cb0
+ms.openlocfilehash: a1fb3a76cc22bf4f22fc080bcde46ec40a3720bb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88638839"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418506"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Bien démarrer avec Power BI Desktop
 Bienvenue dans le guide de démarrage de Power BI Desktop ! Dans cette visite guidée, vous allez voir comment fonctionne Power BI Desktop, ce qu’il peut faire et comment créer des modèles de données fiables et des rapports incroyables pour améliorer votre prise de décision.
@@ -61,7 +61,7 @@ Dans l’**écran d’accueil**, vous pouvez **obtenir des données**, voir les 
 
 ![Capture d’écran de Power BI Desktop montrant l’écran d’accueil.](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-Sur le côté gauche se trouvent les icônes correspondant aux trois vues de Power BI Desktop : **Rapport**, **Données**et **Relations**(de haut en bas). La vue actuelle est indiquée par une barre jaune à gauche. Pour changer de vue, sélectionnez simplement l’une des icônes. 
+Sur le côté gauche se trouvent les icônes correspondant aux trois vues de Power BI Desktop : **Rapport**, **Données** et **Relations**(de haut en bas). La vue actuelle est indiquée par une barre jaune à gauche. Pour changer de vue, sélectionnez simplement l’une des icônes. 
 
 ![Capture d’écran de Power BI Desktop montrant les icônes Rapport, Données et Relations.](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
@@ -261,7 +261,7 @@ Faites glisser le champ **Weather** du volet **Champs** vers le champ **Par vale
 
 Seuls les 10 premiers États classés en fonction des conditions climatiques apparaissent sur la visualisation sous forme de carte. 
 
-Renommez votre visualisation. Pour cela, sélectionnez l’icône **Format** dans le volet**Visualisations**, sélectionnez **Titre**, puis tapez *Top 10 weather states* sous **Texte du titre**. 
+Renommez votre visualisation. Pour cela, sélectionnez l’icône **Format** dans le volet **Visualisations**, sélectionnez **Titre**, puis tapez *Top 10 weather states* sous **Texte du titre**. 
 
 ![Capture d’écran de Power BI Desktop montrant la modification du champ Titre dans le volet Visualisations.](media/desktop-getting-started/designer_gsg_report1.png)
 

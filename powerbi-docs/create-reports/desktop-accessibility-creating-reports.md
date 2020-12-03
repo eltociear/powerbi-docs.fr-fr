@@ -2,19 +2,19 @@
 title: Création de rapports accessibles dans Power BI
 description: Guide pratique pour créer des rapports Power BI Desktop accessibles
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/30/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13223b2ba9d5b50654c952da6b2517717103a724
-ms.sourcegitcommit: 51b965954377884bef7af16ef3031bf10323845f
+ms.openlocfilehash: d8ca43556cd01c5658574e8b42084c9db15d9206
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91600221"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96417724"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Concevoir des rapports Power BI pour l’accessibilité
 Vous pouvez concevoir et créer des rapports de haute qualité tout en favorisant leur accessibilité. Quel que soit le public concerné, vous devez veiller à ce que tous les rapports que vous créez puissent être utilisés par le plus grand nombre de personnes possible sans nécessiter ni adaptation, ni conception spéciale.

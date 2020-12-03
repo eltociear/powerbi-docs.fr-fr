@@ -2,18 +2,18 @@
 title: Préparer la migration vers Power BI
 description: Conseils sur les étapes de prémigration à effectuer dans le cadre d’une migration vers Power BI.
 author: peter-myers
+ms.author: v-pemyer
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi
 ms.topic: conceptual
 ms.date: 08/20/2020
-ms.author: v-pemyer
-ms.openlocfilehash: 01d1e48537b2d373be3897259f8ac6e97886f268
-ms.sourcegitcommit: 4e347efd132b48aaef6c21236c3a21e5fce285cc
+ms.openlocfilehash: 33bee844aced23973bd033cf0d9ae9d8caa4d267
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92680966"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96418575"
 ---
 # <a name="prepare-to-migrate-to-power-bi"></a>Préparer la migration vers Power BI
 
@@ -123,7 +123,7 @@ La première tâche consiste à savoir ce que l’on entend par « réussir »
 La préparation d’un inventaire des rapports existants dans la plateforme décisionnelle héritée est une étape essentielle pour savoir précisément ce qui existe déjà. La finalité de cette étape est d’obtenir des informations permettant d’évaluer le niveau d’effort associé à la migration. La préparation d’un inventaire peut inclure les activités suivantes :
 
 1. **Inventaire des rapports :** dressez une liste des rapports et des tableaux de bord susceptibles d’être migrés.
-2. **Inventaire des sources de données :** dressez une liste de toutes les sources de données auxquelles les rapports existants accèdent. Cet inventaire doit inclure aussi bien les sources de données générales de l’entreprise que les sources de données spécifiques des services et des utilisateurs. Ce processus peut découvrir des sources de données qui ne sont pas connues du service informatique (ce que l’on désigne souvent sous le terme de _Shadow IT_ ).
+2. **Inventaire des sources de données :** dressez une liste de toutes les sources de données auxquelles les rapports existants accèdent. Cet inventaire doit inclure aussi bien les sources de données générales de l’entreprise que les sources de données spécifiques des services et des utilisateurs. Ce processus peut découvrir des sources de données qui ne sont pas connues du service informatique (ce que l’on désigne souvent sous le terme de _Shadow IT_).
 3. **Journal d’audit :** récupérez les données du journal d’audit de la plateforme décisionnelle héritée pour comprendre les modèles d’usage et établir plus facilement les priorités. Les informations importantes à prendre du journal d’audit sont :
     - Le nombre moyen de fois où chaque rapport a été généré par semaine/mois/trimestre.
     - Le nombre moyen de consommateurs de chaque rapport par semaine/mois/trimestre.

@@ -1,20 +1,20 @@
 ---
 title: Tutoriel sur les visualisations d’influenceurs clés
 description: 'Tutoriel : Créer une visualisation d’influenceurs clés dans Power BI'
-author: msftrien
+author: mihart
+ms.author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 01/10/2020
-ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ff097de6cd957c5869809d09a23174dea604a07b
-ms.sourcegitcommit: 5ccab484cf3532ae3a16acd5fc954b7947bd543a
+ms.openlocfilehash: 598865676a4cb5ea5378937cebe75f76cc460ce3
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93412944"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96419081"
 ---
 # <a name="create-key-influencers-visualizations"></a>Créer des visualisations des influenceurs clés
 
@@ -33,21 +33,21 @@ Le visuel d’influenceurs clés constitue un excellent choix quand vous souhait
 
 ![Fonctionnalités numérotées](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-1. **Onglets**  : sélectionnez un onglet pour changer de vue. **Influenceurs clés** montre les principaux contributeurs à la valeur de métrique sélectionnée. **Top des segments** montre les principaux segments qui contribuent à la valeur de métrique sélectionnée. Un *segment* est composé d’une combinaison de valeurs. Par exemple, un segment peut représenter les consommateurs qui sont clients depuis au moins 20 ans et qui habitent dans la région Ouest. 
+1. **Onglets** : sélectionnez un onglet pour changer de vue. **Influenceurs clés** montre les principaux contributeurs à la valeur de métrique sélectionnée. **Top des segments** montre les principaux segments qui contribuent à la valeur de métrique sélectionnée. Un *segment* est composé d’une combinaison de valeurs. Par exemple, un segment peut représenter les consommateurs qui sont clients depuis au moins 20 ans et qui habitent dans la région Ouest. 
 
-2. **Zone de liste déroulante**  : valeur de la métrique étudiée. Dans cet exemple, examinez la métrique **Évaluation**. La valeur sélectionnée est **Faible**.
+2. **Zone de liste déroulante** : valeur de la métrique étudiée. Dans cet exemple, examinez la métrique **Évaluation**. La valeur sélectionnée est **Faible**.
 
-3. **Répétition**  : permet d’interpréter le visuel dans le volet gauche.
+3. **Répétition** : permet d’interpréter le visuel dans le volet gauche.
 
-4. **Volet gauche**  : le volet gauche contient un visuel. Ici, le volet gauche montre une liste des principaux influenceurs clés.
+4. **Volet gauche** : le volet gauche contient un visuel. Ici, le volet gauche montre une liste des principaux influenceurs clés.
 
-5. **Répétition**  : permet d’interpréter le visuel dans le volet droit.
+5. **Répétition** : permet d’interpréter le visuel dans le volet droit.
 
-6. **Volet droit**  : le volet droit contient un visuel. Ici, l’histogramme affiche toutes les valeurs pour l’influenceur clé **Thème** qui est sélectionné dans le volet gauche. La valeur spécifique ( **usage** ) dans le volet gauche est indiquée en vert. Toutes les autres valeurs pour **Thème** sont en noir.
+6. **Volet droit** : le volet droit contient un visuel. Ici, l’histogramme affiche toutes les valeurs pour l’influenceur clé **Thème** qui est sélectionné dans le volet gauche. La valeur spécifique (**usage**) dans le volet gauche est indiquée en vert. Toutes les autres valeurs pour **Thème** sont en noir.
 
-7. **Ligne moyenne**  : La moyenne est calculée pour toutes les autres valeurs possibles pour **Thème** sauf **usability** (utilisabilité) (qui est l’influenceur sélectionné). Le calcul s’applique donc à toutes les valeurs en noir. Il vous indique quel pourcentage des autres **Thèmes** a donné une évaluation faible. Dans ce cas, 11,35 % avait une évaluation faible (indiquée par la ligne en pointillés).
+7. **Ligne moyenne** : La moyenne est calculée pour toutes les autres valeurs possibles pour **Thème** sauf **usability** (utilisabilité) (qui est l’influenceur sélectionné). Le calcul s’applique donc à toutes les valeurs en noir. Il vous indique quel pourcentage des autres **Thèmes** a donné une évaluation faible. Dans ce cas, 11,35 % avait une évaluation faible (indiquée par la ligne en pointillés).
 
-8. **Case à cocher**  : Filtre le visuel dans le volet droit pour afficher uniquement les valeurs qui sont des influenceurs pour ce champ. Dans cet exemple, cela permet de filtrer le visuel sur l’utilisabilité, la sécurité et la navigation.
+8. **Case à cocher** : Filtre le visuel dans le volet droit pour afficher uniquement les valeurs qui sont des influenceurs pour ce champ. Dans cet exemple, cela permet de filtrer le visuel sur l’utilisabilité, la sécurité et la navigation.
 
 ## <a name="analyze-a-metric-that-is-categorical"></a>Analyser une métrique de catégorie
  
@@ -62,7 +62,7 @@ Regardez cette vidéo pour découvrir comment créer un visuel d’influenceurs 
 Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Sélectionnez l’un des liens, puis sélectionnez **Télécharger** dans la page GitHub qui s’ouvre.
 
 > [!NOTE]
-> Le jeu de données de commentaires clients est basé sur [Moro et al., 2014] S. Moro, P. Cortez et P. Rita. « A Data-Driven Approach to Predict the Success of Bank Telemarketing. » *Decision Support Systems* , Elsevier, 62:22-31, juin 2014. 
+> Le jeu de données de commentaires clients est basé sur [Moro et al., 2014] S. Moro, P. Cortez et P. Rita. « A Data-Driven Approach to Predict the Success of Bank Telemarketing. » *Decision Support Systems*, Elsevier, 62:22-31, juin 2014. 
 
 1. Ouvrez le rapport et sélectionnez l’icône **Influenceurs clés**. 
 
@@ -101,7 +101,7 @@ Dans cet exemple, le client peut avoir trois rôles : consommateur, administrat
 ![Sélectionner Rôle dans l’org est consommateur](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Plus précisément, vos consommateurs sont 2,57 fois plus susceptibles d’attribuer à votre service un score négatif. Le graphique d’influenceurs clés mentionne **Rôle dans l’org est consommateur** en premier dans la liste sur la gauche. En sélectionnant **Rôle dans l’org est consommateur** , Power BI affiche des détails supplémentaires dans le volet droit. L’effet comparatif de chaque rôle sur la probabilité d’une évaluation faible est indiqué.
+Plus précisément, vos consommateurs sont 2,57 fois plus susceptibles d’attribuer à votre service un score négatif. Le graphique d’influenceurs clés mentionne **Rôle dans l’org est consommateur** en premier dans la liste sur la gauche. En sélectionnant **Rôle dans l’org est consommateur**, Power BI affiche des détails supplémentaires dans le volet droit. L’effet comparatif de chaque rôle sur la probabilité d’une évaluation faible est indiqué.
   
 - 14,93 % des consommateurs attribuent un score faible. 
 - En moyenne, tous les autres rôles attribuent un score faible 5,78 % du temps.
@@ -151,7 +151,7 @@ Nous exécutons des tests de corrélation pour déterminer la linéarité de l�
  
 Vous pouvez utiliser des mesures et des agrégats comme facteurs explicatifs dans votre analyse. Par exemple, vous pouvez souhaiter connaître l’impact du nombre de tickets de support client ou de la durée moyenne d’un ticket ouvert sur le score que vous recevez. 
  
-Ici, vous voulez voir si le nombre de tickets de support d’un client a un impact sur le score qu’il attribue. Importez à présent l’ **ID de ticket de support** à partir de la table de ticket de support. Un client pouvant avoir plusieurs tickets de support, vous agrégez l’ID au niveau client. L’agrégation est importante car l’analyse s’exécute au niveau client, et tous les facteurs doivent donc être définis à ce niveau de granularité. 
+Ici, vous voulez voir si le nombre de tickets de support d’un client a un impact sur le score qu’il attribue. Importez à présent l’**ID de ticket de support** à partir de la table de ticket de support. Un client pouvant avoir plusieurs tickets de support, vous agrégez l’ID au niveau client. L’agrégation est importante car l’analyse s’exécute au niveau client, et tous les facteurs doivent donc être définis à ce niveau de granularité. 
  
 Examinons le nombre d’ID. Chaque ligne de client est donc associée à un nombre de tickets de support. Ici, à mesure que le nombre de tickets de support augmente, la probabilité de recevoir une évaluation faible est multipliée par 5,51. Le visuel de droite indique le nombre moyen de tickets de support en fonction de différentes valeurs **Évaluation** au niveau client. 
 
@@ -194,7 +194,7 @@ Si vous avez un anneau complet autour du cercle, cela signifie que l’influence
 
 ## <a name="analyze-a-metric-that-is-numeric"></a>Analyser une métrique numérique
 
-Si vous déplacez un champ numérique non synthétisé dans le champ **Analyser** , vous pouvez choisir comment gérer ce scénario. Pour changer le comportement du visuel, accédez au **volet de mise en forme** et basculez entre le type d’analyse **Catégorie** et le type d’analyse **Continu**.
+Si vous déplacez un champ numérique non synthétisé dans le champ **Analyser**, vous pouvez choisir comment gérer ce scénario. Pour changer le comportement du visuel, accédez au **volet de mise en forme** et basculez entre le type d’analyse **Catégorie** et le type d’analyse **Continu**.
 
 ![Remplacer Catégorie par Continu](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -247,7 +247,7 @@ Dans le cas de colonnes non synthétisées, l’analyse est toujours effectuée 
 
 ![Capture d’écran montrant l’analyse au niveau de la table pour l’exemple de prix des maisons.](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
-Pour les mesures et les colonnes synthétisées, nous ne savons pas immédiatement à quel niveau les analyser. Si **House Price** (Prix de la maison) était synthétisé sous forme de **Moyenne** , nous devrions déterminer à quel niveau nous voulons que le prix moyen d’une maison soit calculé. S’agit-il du prix moyen d’une maison au niveau du voisinage ? Ou peut-être au niveau régional ?
+Pour les mesures et les colonnes synthétisées, nous ne savons pas immédiatement à quel niveau les analyser. Si **House Price** (Prix de la maison) était synthétisé sous forme de **Moyenne**, nous devrions déterminer à quel niveau nous voulons que le prix moyen d’une maison soit calculé. S’agit-il du prix moyen d’une maison au niveau du voisinage ? Ou peut-être au niveau régional ?
 
 Les mesures et les colonnes synthétisées sont automatiquement analysées au niveau des champs **Expliquer par** utilisés. Imaginez que nous avons trois champs dans **Expliquer par** qui nous intéressent : **Kitchen Quality** (Qualité de la cuisine), **Building Type** (Type de construction) et **Air Conditioning** (Air conditionné). **Average House Price** (Prix moyen d’une maison) est calculé pour chaque combinaison unique de ces trois champs. Il est souvent utile de passer à une vue tabulaire pour voir à quoi ressemblent les données évaluées.
 
@@ -284,9 +284,9 @@ Le visuel Influenceur clés présente certaines limitations :
 ![Erreur : aucun influenceur trouvé](media/power-bi-visualization-influencers/power-bi-error1.png)
 
 
-Cette erreur se produit quand vous avez inclus des champs dans **Expliquer par** , mais qu’aucun influenceur n’a été trouvé. 
+Cette erreur se produit quand vous avez inclus des champs dans **Expliquer par**, mais qu’aucun influenceur n’a été trouvé. 
 - Vous avez inclus la métrique que vous analysiez à la fois dans **Analyser** et dans **Expliquer par**. Supprimez-la de **Expliquer par**. 
-- Vos champs explicatifs ont trop de catégories avec peu d’observations. La visualisation a donc plus de difficulté à déterminer quels facteurs sont des influenceurs. Il est difficile de généraliser d’après seulement quelques observations. Si vous analysez un champ numérique, vous pouvez passer de l’ **analyse par catégorie** à l’ **analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
+- Vos champs explicatifs ont trop de catégories avec peu d’observations. La visualisation a donc plus de difficulté à déterminer quels facteurs sont des influenceurs. Il est difficile de généraliser d’après seulement quelques observations. Si vous analysez un champ numérique, vous pouvez passer de l’**analyse par catégorie** à l’**analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
 - Vos facteurs explicatifs ont assez d’observations pour effectuer des généralisations, mais la visualisation n’a trouvé aucune corrélation significative à signaler.
  
 **Je reçois une erreur indiquant que la métrique que je suis en train d’analyser n’a pas suffisamment de données pour exécuter l’analyse. Pourquoi ?** 
@@ -297,7 +297,7 @@ La visualisation examine les tendances des données d’un groupe par rapport à
 
 Nous recommandons au moins 100 observations pour l’état sélectionné. Dans ce cas, l’état correspond aux clients qui renouvellent leur contrat. Vous avez également besoin d’au moins 10 observations pour les états que vous utilisez à des fins de comparaison. Dans ce cas, l’état de la comparaison correspond aux clients qui ne renouvellent pas leur contrat.
 
-Si vous analysez un champ numérique, vous pouvez passer de l’ **analyse par catégorie** à l’ **analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
+Si vous analysez un champ numérique, vous pouvez passer de l’**analyse par catégorie** à l’**analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
 
 **Je reçois une erreur indiquant que quand l’analyse n’est pas synthétisée, elle s’effectue toujours au niveau des lignes de sa table parente. La modification de ce niveau via des champs « Développer par» n’est pas autorisée. Pourquoi ?**
 
@@ -348,7 +348,7 @@ Si la table des clients n’a pas d’identificateur unique, vous ne pouvez pas 
 
 La visualisation d’intelligence artificielle peut analyser les champs de catégorie et les champs numériques. Dans le cas des champs de catégorie, vous pouvez avoir par exemple l’attrition (oui ou non) et la satisfaction du client (élevée, moyenne ou faible). L’augmentation du nombre de catégories à analyser signifie qu’il y a moins d’observations par catégorie. Dans cette situation, il est difficile pour la visualisation de trouver des tendances dans les données. 
 
-Quand vous analysez des champs numériques, vous avez l’option de les traiter comme du texte, auquel cas vous exécutez la même analyse que pour des données de catégorie ( **analyse par catégorie** ). Si vous avez beaucoup de valeurs distinctes, nous vous recommandons de passer à l’ **analyse continue** , ce qui signifie que nous pouvons déduire des tendances quand les nombres augmentent ou diminuent plutôt que de les traiter comme des valeurs distinctes. Vous pouvez passer de l’ **analyse par catégorie** à l’ **analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
+Quand vous analysez des champs numériques, vous avez l’option de les traiter comme du texte, auquel cas vous exécutez la même analyse que pour des données de catégorie (**analyse par catégorie**). Si vous avez beaucoup de valeurs distinctes, nous vous recommandons de passer à l’**analyse continue**, ce qui signifie que nous pouvons déduire des tendances quand les nombres augmentent ou diminuent plutôt que de les traiter comme des valeurs distinctes. Vous pouvez passer de l’**analyse par catégorie** à l’**analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
 
 Pour trouver des influenceurs plus forts, nous vous recommandons de regrouper les valeurs similaires dans une même unité. Par exemple, si vous avez une métrique pour le prix, vous obtiendrez sans doute de meilleurs résultats en regroupant les prix similaires dans des catégories comme « Élevé », « Moyen » et « Faible » au lieu d’utiliser des niveaux de prix individuels. 
 
@@ -394,7 +394,7 @@ Une fois que l’arbre de décision effectue une division, il prend le sous-grou
 
 Une fois l’exécution de l’arbre de décision terminée, il prend toutes les divisions (commentaires sur la sécurité et grande entreprise par exemple) et crée des filtres Power BI. Cette combinaison de filtres est empaqueté en tant que segment dans le visuel. 
  
-**Pourquoi certains facteurs deviennent des influenceurs ou cessent d’en être à mesure que je déplace davantage de champs dans le champ *Expliquer par*  ?**
+**Pourquoi certains facteurs deviennent des influenceurs ou cessent d’en être à mesure que je déplace davantage de champs dans le champ *Expliquer par* ?**
 
 La visualisation évalue tous les facteurs explicatifs ensemble. Un facteur peut être un influenceur en soi, mais il peut ne pas l’être quand il est considéré avec d’autres facteurs. Supposons que vous souhaitiez analyser les facteurs contribuant au prix élevé d’une maison, avec le nombre de chambres et la taille de la maison comme facteurs explicatifs :
 
