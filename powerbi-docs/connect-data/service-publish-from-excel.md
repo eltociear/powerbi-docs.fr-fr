@@ -17,7 +17,7 @@ ms.lasthandoff: 12/01/2020
 ms.locfileid: "96410180"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Publier sur Power BI à partir de Microsoft Excel
-Avec Micorsoft Excel 2016 et version ultérieure, vous pouvez publier vos classeurs Excel directement vers votre espace de travail [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports et des tableaux de bord hautement interactifs, basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.
+Avec Microsoft Excel 2016 et version ultérieure, vous pouvez publier vos classeurs Excel directement vers votre espace de travail [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports et des tableaux de bord hautement interactifs, basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.
 
 ![Publier un classeur dans Power BI](media/service-publish-from-excel/pbi_uploadexport2.png)
 
