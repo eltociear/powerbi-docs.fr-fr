@@ -2,18 +2,18 @@
 title: Résolution du problème des « échecs de communication » dans les applications mobiles iOS - Power BI
 description: Cet article peut vous aider si vous voyez le message « Nous avons rencontré des problèmes de communication. Les échecs peuvent être liés aux paramètres du proxy sur votre connexion Wi-Fi. »
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 0162d78fd4358f415ac52ea70bd3460d3c28b722
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1af46edad96ce191798502a1887c6c402a0e7319
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114899"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415332"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>Résolution du problème des « échecs de communication » dans les applications mobiles iOS - Power BI
 

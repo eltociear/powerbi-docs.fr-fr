@@ -1,26 +1,26 @@
 ---
 title: 'Nouvelle apparence : où sont passées les actions ?'
 description: Le service Power BI (app.powerbi.com) affiche une nouvelle présentation, et de nombreuses actions ont été déplacées. Cet article présente des tableaux montrant la correspondance entre les anciens et les nouveaux emplacements.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: maggies
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 572943a437ebf0380b254e8b659699d676e9001f
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: 1c16405ff211620580f739facda8556e81774935
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462162"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415125"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Nouvelle apparence : où sont passées les actions ?
 
 Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. En conséquence, de nombreuses actions de menu ont été déplacées. Les tableaux de cet article mettent en correspondance l'ancien et le nouvel emplacement. Pour plus de contexte, reportez-vous à la [nouvelle présentation du service Power BI](service-new-look.md).
 
-Vous recherchez des informations sur la nouvelle présentation de **Power BI Desktop**  ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md).
+Vous recherchez des informations sur la nouvelle présentation de **Power BI Desktop** ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 ## <a name="report-actions-in-the-new-look"></a>Actions de rapport dans la nouvelle présentation
 

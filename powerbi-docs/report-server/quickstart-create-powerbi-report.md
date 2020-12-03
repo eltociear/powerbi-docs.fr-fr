@@ -2,18 +2,18 @@
 title: Créer un rapport Power BI pour Power BI Report Server
 description: Découvrez comment créer un rapport Power BI pour Power BI Report Server en quelques étapes simples.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 07/24/2020
-ms.author: maggies
-ms.openlocfilehash: b41ca7c8a85a544afea84e7f19a06f91dc85f376
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 965c3837b2d0153716442ea37b52b468be9742fb
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045028"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414113"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Créer un rapport Power BI pour Power BI Report Server
 Vous pouvez stocker et gérer des rapports Power BI localement sur le portail web Power BI Report Server tout comme vous pouvez stocker des rapports Power BI dans le cloud, dans le service Power BI (https://powerbi.com) ). Créez et modifiez des rapports dans Power BI Desktop, puis publiez-les sur le portail web. Les lecteurs au sein de votre organisation peuvent alors les consulter dans un navigateur ou dans une application mobile Power BI sur un appareil mobile.
@@ -57,7 +57,7 @@ Vous pouvez vous connecter à un vaste éventail de sources de données. Pour en
 
 1. Dans l’écran de bienvenue, sélectionnez **Obtenir les données**.
    
-    Ou bien, sous l’onglet **Accueil** , sélectionnez **Obtenir les données**.
+    Ou bien, sous l’onglet **Accueil**, sélectionnez **Obtenir les données**.
 2. Sélectionnez votre source de données, en l’occurrence, **Analysis Services**.
    
     ![Sélectionner une source de données](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
@@ -75,7 +75,7 @@ Par exemple, vous pouvez créer un graphique en entonnoir de valeurs de clients 
 
 ![Concevoir un rapport](media/quickstart-create-powerbi-report/report-server-create-funnel.png)
 
-1. Dans **Visualisations** , sélectionnez **Graphique en entonnoir**.
+1. Dans **Visualisations**, sélectionnez **Graphique en entonnoir**.
 2. Faites glisser le champ à compter vers le puits **Valeurs**. S’il ne s’agit pas d’un champ numérique, Power BI Desktop le convertit automatiquement en valeur *Nombre de*.
 3. Faites glisser le champ à grouper vers puits **Groupe**.
 
@@ -84,7 +84,7 @@ En savoir plus sur la [conception d’un rapport Power BI](../create-reports/des
 ## <a name="step-4-save-your-report-to-the-report-server"></a>Étape 4 : Enregistrer votre rapport sur le serveur de rapports
 Une fois le rapport prêt, enregistrez-le sur le serveur de rapports Power BI Report Server que vous avez choisi à l’étape 2.
 
-1. Dans le menu **Fichier** , sélectionnez **Enregistrer sous** > **Power BI Report Server**.
+1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous** > **Power BI Report Server**.
    
     ![Enregistrer sur le serveur de rapports](media/quickstart-create-powerbi-report/report-server-save-as-powerbi-report-server.png)
 2. Vous pouvez à présent l’afficher dans le portail web.

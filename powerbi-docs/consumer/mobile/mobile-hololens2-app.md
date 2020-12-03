@@ -2,18 +2,18 @@
 title: Power BI pour HoloLens 2 (préversion)
 description: Affichez vos tableaux de bord et vos rapports dans l’application Power BI pour HoloLens 2.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.author: painbar
-ms.openlocfilehash: 8e9205ca12efebbfa5c0338e2f501e59aed779e8
-ms.sourcegitcommit: 5240990f998851c4854eb565de681099264c5a61
+ms.openlocfilehash: dffe3344fc10b0daceca629b5d5354f1b8419e81
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94718612"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414527"
 ---
 # <a name="power-bi-for-hololens-2-preview"></a>Power BI pour HoloLens 2 (préversion)
 L’application Power BI pour HoloLens 2 fusionne vos rapports et tableaux de bord Power BI avec votre environnement physique afin de créer une expérience 3D immersive sans assistance dans laquelle vous pouvez vous déplacer dans le monde physique tout en ayant accès aux données pertinentes quand vous en avez besoin.

@@ -2,18 +2,18 @@
 title: Authentification unique dans l’application Power BI Mobile Windows
 description: Découvrez l’authentification unique dans l’application Power BI Mobile Windows. Avec l’authentification unique, vous vous connectez une seule fois avec un seul et même compte d’utilisateur pour accéder à toutes les applications et les ressources dont vous avez besoin pour travailler.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: 41ddc6e0c9a4f4f2c9b5687194e043bb1ef80bec
-ms.sourcegitcommit: 6b436f6ed872cbc040ed6e2d3ac089c08fc78daf
+ms.openlocfilehash: b316c7b95b28ecb31561b3fbb99eeafa6ffabdb5
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928260"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415263"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Authentification unique dans l’application Power BI Mobile Windows
 

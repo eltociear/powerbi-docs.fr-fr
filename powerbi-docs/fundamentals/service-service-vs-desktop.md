@@ -1,21 +1,21 @@
 ---
 title: Comparaison de Power BI Desktop et du service Power BI
 description: Power BI Desktop est un outil complet de création de rapports et d’analyses de données. Le service Power BI est un service cloud en ligne qui permet aux équipes et aux entreprises d’apporter des modifications simples à des rapports et de collaborer.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 08/07/2020
-ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0b4a1275a3b50fbadd37d953b77316d6021c800c
-ms.sourcegitcommit: 37bd34053557089c4fbf0e05f78e959609966561
+ms.openlocfilehash: 41d3ebc8980dabcce4c104bca318770ecf482d3d
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94397090"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414090"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparaison de Power BI Desktop et du service Power BI
 
@@ -41,7 +41,7 @@ Les éditeurs de rapports dans Power BI Desktop et dans le service sont similair
 
 1. Les volets de navigation supérieurs, qui sont différents dans Power BI Desktop et le service    
 2. Canevas de rapport     
-3. Les volets **Champs** , **Visualisations** et **Filtres**
+3. Les volets **Champs**, **Visualisations** et **Filtres**
 
 Cette vidéo montre l’éditeur de rapports dans Power BI Desktop. 
 
@@ -51,7 +51,7 @@ Cette vidéo montre l’éditeur de rapports dans Power BI Desktop.
 
 ### <a name="collaborating"></a>Collaboration
 
-Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI** , là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Vous partagez ensuite ces tableaux de bord et ces rapports avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en *mode Lecture* , et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports.  Vous pouvez également partager vos jeux de données et permettre à d’autres utilisateurs de générer leurs propres rapports à partir de ceux-ci. Découvrez plus en détail comment [collaborer dans le service Power BI](../collaborate-share/service-new-workspaces.md).
+Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI**, là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Vous partagez ensuite ces tableaux de bord et ces rapports avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en *mode Lecture*, et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports.  Vous pouvez également partager vos jeux de données et permettre à d’autres utilisateurs de générer leurs propres rapports à partir de ceux-ci. Découvrez plus en détail comment [collaborer dans le service Power BI](../collaborate-share/service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Préparation des données en libre-service avec des dataflows
 

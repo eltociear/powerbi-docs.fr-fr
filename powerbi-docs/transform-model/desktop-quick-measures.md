@@ -2,20 +2,20 @@
 title: Utiliser les mesures rapides pour effectuer des calculs courants et puissants
 description: La fonctionnalité Mesures rapides fournit des formules DAX prêtes à l’emploi qui accélèrent l’exécution de calculs courants.
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 11/22/2019
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ba43290e0e076963a61a7211ad99e99636ebb2e
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 77f15cb0fcb92a895c92bd93d8fa18896dafc7f8
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90853377"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96413883"
 ---
 # <a name="use-quick-measures-for-common-calculations"></a>Utiliser les mesures rapides pour effectuer des calculs courants
 Les *Mesures rapides* permettent d’effectuer rapidement et facilement des calculs courants et puissants. Une mesure rapide exécute un ensemble de commandes DAX (Data Analysis Expressions) en arrière-plan, puis vous présente les résultats pour que vous puissiez les utiliser dans votre rapport. Vous n’avez pas à écrire les commandes DAX, car celles-ci sont créées automatiquement avec les informations que vous entrez dans la boîte de dialogue. Il existe de nombreuses catégories de calculs disponibles et différentes manières de modifier chacun d’entre eux selon vos besoins. Mieux encore, sans doute : vous pouvez voir la commande DAX exécutée par la mesure rapide, et ainsi vous lancer ou étendre vos propres connaissances concernant DAX.

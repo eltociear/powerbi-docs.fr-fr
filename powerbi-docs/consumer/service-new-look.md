@@ -1,26 +1,26 @@
 ---
 title: Nouvelle apparence du service Power BI
 description: Le service Power BI (app.powerbi.com) a une nouvelle présentation. Cet article explique comment parcourir les rapports dans la nouvelle présentation.
-author: maggiesMSFT
+author: mihart
+ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
-ms.subservice: powerbi-consumer
+ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f398b0b3331d5677419c824646108f8d04815338
-ms.sourcegitcommit: fddba666c6ea90d525a1c3188bbd3c4a03410cdc
+ms.openlocfilehash: ec7b24a4d8f2a94680444b4b9adf4612f1f1f474
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92462298"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415148"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
 Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est plus simple et s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. 
 
-Vous recherchez des informations sur la nouvelle apparence de **Power BI Desktop**  ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md).
+Vous recherchez des informations sur la nouvelle apparence de **Power BI Desktop** ? Consultez [Utiliser le ruban mis à jour dans Power BI Desktop](../create-reports/desktop-ribbon.md).
 
 Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
 

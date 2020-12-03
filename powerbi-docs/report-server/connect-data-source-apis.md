@@ -2,18 +2,18 @@
 title: Changer les chaînes de connexion de source de données avec PowerShell
 description: Modifiez les chaînes de connexion de la source de données à l’aide des API dans PowerShell - Power BI Report Server.
 author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 10/26/2020
-ms.author: maggies
-ms.openlocfilehash: 165d38c718377ff7e47442cdf0fe67173b610bd8
-ms.sourcegitcommit: a5fa368abad54feb44a267fe26c383a731c7ec0d
+ms.openlocfilehash: 4e1947abe0fa0f17e1db92619f0aa7fba5df5575
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044902"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415470"
 ---
 # <a name="change-data-source-connection-strings-in-power-bi-reports-with-powershell---power-bi-report-server"></a>Modifier les chaînes de connexion de la source de données dans les rapports Power BI avec PowerShell - Power BI Report Server
 
@@ -107,7 +107,7 @@ Depuis la version d’octobre 2020 de Power BI Report Server, nous fournissons 
     Set-RsRestItemDataModelParameters -RsItem '/executionlogparameter' -DataModelParameters $parameters
     ```
 
-7. Une fois les paramètres mis à jour, le serveur met à jour toutes les sources de données qui étaient liées aux paramètres. Dans la boîte de dialogue **Modifier la source de données** , vous devriez pouvoir définir les informations d’identification du serveur et de la base de données mis à jour.
+7. Une fois les paramètres mis à jour, le serveur met à jour toutes les sources de données qui étaient liées aux paramètres. Dans la boîte de dialogue **Modifier la source de données**, vous devriez pouvoir définir les informations d’identification du serveur et de la base de données mis à jour.
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="Définir les informations d’identification du serveur et de la base de données mis à jour.":::
 

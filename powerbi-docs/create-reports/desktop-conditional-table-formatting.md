@@ -2,19 +2,19 @@
 title: Mise en forme conditionnelle des tables dans Power BI Desktop
 description: Appliquer une mise en forme personnalisée aux tables
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 05/06/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1273030bc1fd8664e854eb2b59939cf271b017fa
-ms.sourcegitcommit: 9350f994b7f18b0a52a2e9f8f8f8e472c342ea42
+ms.openlocfilehash: 421ccbe08435e03fe43cf6f0e7f2b71c99ec6901
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90860023"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414389"
 ---
 # <a name="use-conditional-formatting-in-tables"></a>Utiliser la mise en forme conditionnelle dans les tables 
 

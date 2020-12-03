@@ -2,19 +2,19 @@
 title: Titres basés sur des expressions dans Power BI Desktop
 description: Créer des titres dynamiques dans Power BI Desktop qui changent en fonction d’expressions de programmation à l’aide de la mise en forme de programmation conditionnelle
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 04/10/2019
-ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e3b9e4fd1fea6c1fa76077b95ba6a93225753593
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: b7bcf06e075fc123a05cd7c184fbd9f12e006d24
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85222036"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414343"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Titres basés sur des expressions dans Power BI Desktop
 
@@ -56,7 +56,7 @@ Une fois que vous avez créé l’expression DAX pour le champ que vous créez d
 
 Pour sélectionner le champ et l’appliquer, accédez au volet **Visualisations**. Dans la zone **Format**, sélectionnez **Titre** pour afficher les options de titre du visuel. 
 
-Lorsque vous cliquez avec le bouton droit sur **Texte du titre**, un menu contextuel s’affiche pour vous permettre de sélectionner **Mise en forme conditionnelle<em>fx</em>** . Lorsque vous sélectionnez cet élément de menu, une boîte de dialogue **Texte du titre** s’affiche. 
+Lorsque vous cliquez avec le bouton droit sur **Texte du titre**, un menu contextuel s’affiche pour vous permettre de sélectionner **Mise en forme conditionnelle <em>fx</em>** . Lorsque vous sélectionnez cet élément de menu, une boîte de dialogue **Texte du titre** s’affiche. 
 
 ![Capture d’écran de la boîte de dialogue Texte du titre](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

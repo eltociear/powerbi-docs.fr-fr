@@ -2,18 +2,18 @@
 title: Scanner un code QR Power BI à partir de votre appareil mobile
 description: Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations décisionnelles connexes dans l’application mobile Power BI pour appareils iPhones et Android.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 12/02/2019
-ms.author: painbar
-ms.openlocfilehash: a551df2fb8ec668a9d8d29bdb8cdb37f9bb1652c
-ms.sourcegitcommit: e8ed3d120699911b0f2e508dc20bd6a9b5f00580
+ms.openlocfilehash: ab6d8f208300350a613cc63dab948f42376b905e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86264857"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414550"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :

@@ -2,18 +2,18 @@
 title: Intégration de la fonction de recherche des appareils iOS à Power BI
 description: Utiliser la fonction de recherche (Spotlight) pour accéder au contenu dont vous avez besoin
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 03/11/2020
-ms.author: painbar
-ms.openlocfilehash: f3832e3fa452c68e30852c476a5149ff7bc5e470
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: c289395e5d5529c7951b9102722999dfe22d699e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85232884"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414573"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>Intégration de la fonction de recherche d’iOS (Spotlight) à Power BI Mobile pour applications iOS (préversion)
 Utilisez la fonction de recherche d’iOS pour accéder au contenu dont vous avez besoin.

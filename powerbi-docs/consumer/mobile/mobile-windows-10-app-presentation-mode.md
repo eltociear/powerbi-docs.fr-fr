@@ -2,18 +2,18 @@
 title: Afficher le mode Présentation dans Surface Hub et Windows 10 - Power BI
 description: Découvrez comment afficher des rapports Power BI dans Surface Hub et comment afficher des vignettes, des rapports et des tableaux de bord Power BI en mode de présentation sur les appareils Windows 10.
 author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 08/12/2020
-ms.author: painbar
-ms.openlocfilehash: a982374bbf713d4e0c970da601fdca3249120cbe
-ms.sourcegitcommit: 5fdb45736ca0c8070124279fed4dab1ced8b7b27
+ms.openlocfilehash: 797b00210154e577275f486194f7e36f2cd0077e
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683313"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415447"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Afficher des rapports et des tableaux de bord dans le mode de présentation dans les appareils Surface Hub et Windows 10
 Vous pouvez utiliser le mode de présentation pour afficher des rapports et des tableaux de bord en plein écran sur les appareils Windows 10 et Surface Hub. Le mode Présentation est utile pour afficher Power BI lors de réunions ou de conférences ou sur un projecteur dédié au bureau ou pour optimiser l’espace sur un petit écran.
@@ -46,7 +46,7 @@ Dans la barre d’outils, vous pouvez appuyer pour effectuer les actions suivant
 |![Icône Réinitialiser](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-reset-icon.png)|**Rétablir l’affichage par défaut** et effacer tous les filtres, segments ou autres modifications apportées à l’affichage des données au cours de la présentation.|
 |![Icône de partage](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png)|**Partager** une image de la vue Présentation avec vos collègues. L’image inclut les annotations que vous avez éventuellement créées avec le stylet Surface pendant la présentation.|
 |![Icône d’actualisation](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png)|**Actualiser** le rapport.|
-|![Icône de lecture](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**Lire le diaporama** , en masquant la barre d’action et en démarrant le diaporama. Un sélecteur vous permet de choisir de naviguer automatiquement les pages, les signets ou entre les pages et les signets. Par défaut, le diaporama navigue automatiquement entre les pages toutes les 30 secondes. Vous pouvez modifier ces paramètres dans [**Paramètres > Options**](#slideshow-settings). Voir [plus de détails](#slideshows) sur les diaporamas|
+|![Icône de lecture](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**Lire le diaporama**, en masquant la barre d’action et en démarrant le diaporama. Un sélecteur vous permet de choisir de naviguer automatiquement les pages, les signets ou entre les pages et les signets. Par défaut, le diaporama navigue automatiquement entre les pages toutes les 30 secondes. Vous pouvez modifier ces paramètres dans [**Paramètres > Options**](#slideshow-settings). Voir [plus de détails](#slideshows) sur les diaporamas|
 |![Quitter le mode plein écran](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png)|**Quitter** le mode Présentation.|
 |![Icône de recherche](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png)|**Rechercher** d’autres artefacts dans Power BI.|
 
@@ -73,7 +73,7 @@ Vous pouvez configurer l’application mobile Power BI pour démarrer automatiqu
 
 ### <a name="slideshow-settings"></a>Paramètres du diaporama
 
-Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous pouvez modifier ce comportement par défaut en accédant à **Paramètres > Options** , comme illustré ci-dessous. Vous pouvez également activer l’exécution automatique et choisir un rapport à lire.
+Par défaut, un diaporama parcourt les pages uniquement, à raison d’une toutes les 30 secondes. Vous pouvez modifier ce comportement par défaut en accédant à **Paramètres > Options**, comme illustré ci-dessous. Vous pouvez également activer l’exécution automatique et choisir un rapport à lire.
 
 1. Sélectionnez l’icône Paramètres.
 

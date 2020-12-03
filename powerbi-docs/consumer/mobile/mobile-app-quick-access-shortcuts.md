@@ -2,17 +2,17 @@
 title: Utiliser des raccourcis d’application Android dans l’application Power BI pour Android
 description: Découvrez comment accéder rapidement au contenu consulté fréquemment à l’aide de raccourcis et de la recherche Google.
 author: paulinbar
+ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
 ms.date: 04/06/2020
-ms.author: painbar
-ms.openlocfilehash: ec4763118360ea02362e3f49fe9776224e9c087a
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 3231e896384f7d438f5448461bc4534532c04910
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85229390"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96414688"
 ---
 # <a name="use-android-app-shortcuts-in-the-power-bi-android-app"></a>Utiliser des raccourcis d’application Android dans l’application Power BI pour Android
 

@@ -1,25 +1,25 @@
 ---
 title: Tableaux, matrices et listes dans le Générateur de rapports Power BI
 description: Dans Power BI Report Builder, les tableaux, les matrices et les listes sont des régions de données qui montrent des données des rapports paginés dans des cellules organisées en lignes et en colonnes.
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
-author: maggiesMSFT
-ms.author: maggies
-ms.openlocfilehash: 3d22696168d8ae550238fab243110db357b39c22
-ms.sourcegitcommit: ccf53e87ff7cba1fcd9d2cca761a561e62933f90
+ms.openlocfilehash: 4b678bf3a11ab243aea8c2cc00fbf58c4ca8ffae
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93297698"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415608"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Tableaux, matrices et listes dans le Générateur de rapports Power BI
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
 
-Dans le Générateur de rapports, les tableaux, les matrices et les listes sont des *régions de données* qui montrent des données de rapports paginés dans des cellules organisées en lignes et en colonnes. Les cellules contiennent en général des données texte, telles que du texte, des dates et des nombres, mais elles peuvent également contenir des jauges, des graphiques ou des éléments de rapport, par exemple des images. Collectivement, les tableaux, les matrices et les listes sont fréquemment appelées des régions de données «  *tableau matriciel*  ».  
+Dans le Générateur de rapports, les tableaux, les matrices et les listes sont des *régions de données* qui montrent des données de rapports paginés dans des cellules organisées en lignes et en colonnes. Les cellules contiennent en général des données texte, telles que du texte, des dates et des nombres, mais elles peuvent également contenir des jauges, des graphiques ou des éléments de rapport, par exemple des images. Collectivement, les tableaux, les matrices et les listes sont fréquemment appelées des régions de données « *tableau matriciel* ».  
   
  Les modèles de table, de matrice et de liste sont basés sur la région de données de tableau matriciel, qui est une grille flexible pouvant afficher des données dans les cellules. Dans les modèles de table et de matrice, les cellules sont organisées en lignes et en colonnes. Étant donné que les modèles sont des variantes de la région de données de tableau matriciel générique sous-jacente, vous pouvez afficher des données dans une combinaison de formats de modèles et modifier la table, la matrice ou la liste pour inclure les fonctionnalités d’une autre région de données pendant que vous développez votre rapport. Par exemple, si vous ajoutez une table et trouvez qu'elle ne répond pas à vos besoins, vous pouvez ajouter des groupes de colonnes pour transformer la table en matrice.  
   
@@ -36,7 +36,7 @@ Dans le Générateur de rapports, les tableaux, les matrices et les listes sont 
 
 ![Modèle de tableau du Générateur de rapports sélectionné sur l’aire de conception](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
   
- Vous pouvez grouper des données selon un champ unique, selon plusieurs champs ou en écrivant votre propre expression. Vous pouvez créer des groupes imbriqués ou des groupes indépendants et adjacents, et afficher des valeurs agrégées pour les données groupées, ou ajouter des totaux aux groupes. Par exemple, si votre tableau a un groupe de lignes appelé **Catégorie** , vous pouvez ajouter un sous-total pour chaque groupe ainsi qu’un total général pour le rapport. Pour améliorer l'apparence de la table et mettre en surbrillance les données que vous souhaitez mettre en évidence, vous pouvez fusionner les cellules et appliquer une mise en forme aux données et titres de table.  
+ Vous pouvez grouper des données selon un champ unique, selon plusieurs champs ou en écrivant votre propre expression. Vous pouvez créer des groupes imbriqués ou des groupes indépendants et adjacents, et afficher des valeurs agrégées pour les données groupées, ou ajouter des totaux aux groupes. Par exemple, si votre tableau a un groupe de lignes appelé **Catégorie**, vous pouvez ajouter un sous-total pour chaque groupe ainsi qu’un total général pour le rapport. Pour améliorer l'apparence de la table et mettre en surbrillance les données que vous souhaitez mettre en évidence, vous pouvez fusionner les cellules et appliquer une mise en forme aux données et titres de table.  
   
  Vous pouvez au départ masquer les données groupées ou les données de détail et inclure des bascules d'extraction pour permettre à un utilisateur de choisir de manière interactive les données à afficher.  
   

@@ -2,20 +2,20 @@
 title: Utiliser des paramètres de scénario pour visualiser des variables
 description: Créer votre propre variable de scénario pour imaginer et visualiser des variables dans les rapports Power BI
 author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 01/21/2020
-ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 649e9198e5fe88d19f001a2e601e24535132d90e
-ms.sourcegitcommit: eef4eee24695570ae3186b4d8d99660df16bf54c
+ms.openlocfilehash: 2286edc16995e8fecc3b6ff65a53e2c4007ac470
+ms.sourcegitcommit: 653e18d7041d3dd1cf7a38010372366975a98eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85239230"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96415424"
 ---
 # <a name="create-and-use-what-if-parameters-to-visualize-variables-in-power-bi-desktop"></a>Créer et utiliser le paramètre what-if pour visualiser des variables dans Power BI Desktop
 
@@ -27,7 +27,7 @@ Créez un paramètre *Scénarios* sous l’onglet **Modélisation** dans Power B
 
 ## <a name="creating-a-what-if-parameter"></a>Création d’un paramètre de scénario
 
-Pour créer un paramètre de scénario, sélectionnez **Nouveau paramètre** sous l’onglet **Modélisation** dans Power BI Desktop. Dans l’image suivante, nous avons créé un paramètre appelé *Pourcentage de remise* et défini son type de données sur **Nombre décimal**. La valeur **Minimale** est zéro. La valeur**Maximale** est 0,50 (50 %). Nous avons également défini l’**Incrément** sur 0,05 (ou 5 %). Il s’agit de la valeur d’ajustement du paramètre lors de son utilisation dans un rapport.
+Pour créer un paramètre de scénario, sélectionnez **Nouveau paramètre** sous l’onglet **Modélisation** dans Power BI Desktop. Dans l’image suivante, nous avons créé un paramètre appelé *Pourcentage de remise* et défini son type de données sur **Nombre décimal**. La valeur **Minimale** est zéro. La valeur **Maximale** est 0,50 (50 %). Nous avons également défini l’**Incrément** sur 0,05 (ou 5 %). Il s’agit de la valeur d’ajustement du paramètre lors de son utilisation dans un rapport.
 
 ![Valeurs du paramètre de scénario](media/desktop-what-if/what-if_02.png)
 
