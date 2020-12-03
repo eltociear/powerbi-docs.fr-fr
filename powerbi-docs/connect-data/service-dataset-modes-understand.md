@@ -1,20 +1,20 @@
 ---
 title: Modes des jeux de données dans le service Power BI
 description: 'Comprendre les modes de jeux de données Power BI : Import, DirectQuery et Composite.'
-author: peter-myers
+author: davidiseminger
+ms.author: davidi
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/09/2019
-ms.author: v-pemyer
-ms.openlocfilehash: 4ec73f3dd09d1c83b07d1419256cd627a71ae2d4
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.date: 12/01/2020
+ms.openlocfilehash: 5b4c32296c7121fa3d161461af7e86caba617ee1
+ms.sourcegitcommit: 2fd64f96b5bfbc14ff47e5c892171e5c921fb525
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83332840"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501946"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Modes des jeux de données dans le service Power BI
 
@@ -102,8 +102,6 @@ Les modèles Composite s'efforcent d'offrir le meilleur des modes Import et Dire
 Les modélisateurs de données qui développent des modèles Composite peuvent configurer les tables de types de dimensions en mode Import ou Double, et les tables de types de faits en mode DirectQuery. Pour plus d'informations sur les rôles des tables de modèles, consultez [Comprendre le schéma en étoile et son importance pour Power BI](../guidance/star-schema.md).
 
 Par exemple, considérons un modèle avec une table de types de dimensions **Produit** en mode Double, et une table de types de faits **Ventes** en mode DirectQuery. La table **Produit** pourrait être interrogée efficacement et rapidement à partir de la mémoire pour générer un segment de rapport. La table **Sales** peut également être interrogée en mode DirectQuery avec la table **Product** correspondante. Cette dernière requête pourrait permettre la génération d'une seule requête SQL native efficace qui relie les tables **Produit** et **Ventes** et filtre les valeurs du segment.
-
-En général, pour les modèles Composite, les avantages et les inconvénients associés aux modes Import et DirectQuery varient selon la configuration de chaque table.
 
 Pour plus d’informations, consultez [Utiliser des modèles composites dans Power BI Desktop](../transform-model/desktop-composite-models.md).
 
